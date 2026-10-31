@@ -11,12 +11,12 @@ Unit 10 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: ae777d85fe3616fc8e065890201d40c241d113bc
-- Unit content-review SHA-256: 6845b398da6ad901b06443dd0f56ee6ace4ba4e2da6af9e36d33934dc286c526
+- Curriculum source commit: 85e7eaf21335a107d64b99a4f1969bab4f74670d
+- Unit content-review SHA-256: fcaebf8e496d486c9293d8e3a1a7f4f6b1401f0a1c90a3b8b637d79309cd1cd3
 - Mapping-package SHA-256: 57676882eb615fb046a9a5e2429f1d97bf6fcf54010d7ae287cdfc456bcfca52
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: a187e28833b31fbbc12be91c107ded3c7fb285d6417244abe0bf43a842add8c7
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: 8ed7942c853e1b761bf05af1cf6c5b070aac1eaaa58d382edb66974328b1b959
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=90
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4d367c8c4af3959bb87466d331271727745192a9b180ec770e5496b9ca79e63f
+- Content hash: 6b25c41ba136e8dc4f3ef5bd00664cdbb21415bb35b6841bb7409372447c6a0a
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=22
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u10-have`
@@ -283,12 +283,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b2dfa9f31a60d16c16a530537a09d43e2aa5e76e215bc54aa456a3ec2c1d99fe
+- Content hash: 28d1f761ecb4e5557b70972b9c75b659e38fdb8183c0c346cc75c31eaf5ab885
 
 title=Choose the admitted possession line
 estimatedMinutes=12
 objectives=obj-u10-have
-steps=u10-st-teach-have-1,u10-st-guided-have-1,u10-st-teach-have-2,u10-st-teach-have-3,u10-st-teach-have-4,u10-st-teach-have-5,u10-st-rem-have,u10-st-check-have
+steps=u10-st-teach-have-1,u10-st-teach-have-2,u10-st-teach-have-3,u10-st-teach-have-4,u10-st-teach-have-5,u10-st-guided-have-1,u10-st-rem-have,u10-st-check-have
 
 ### STEP `u10-st-teach-have-1`
 
@@ -298,11 +298,11 @@ steps=u10-st-teach-have-1,u10-st-guided-have-1,u10-st-teach-have-2,u10-st-teach-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 139b73b5e8a5a289f04fe56f88dfaed9a02f7fa61263e394d5ac2ecd19f5cde4
+- Content hash: 3560bcc03d71bb0a766f68cffae251c359c2f59d8ef8dde89ac86b054bae63a9
 
 kind=TEACH
-title=Admitted lines
-body=У меня есть Х — I have X. У вас есть сын? — Do you have a son? 
+title=The possessor and the possessed thing
+body=In the simple possession pattern shown here, the possessor after the possession preposition is genitive. The thing possessed is nominative. The schematic slot in the first example represents that possessed thing. У меня есть Х — I have X. У вас есть сын? — Do you have a son? 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -312,28 +312,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u10-st-guided-have-1`
-
-- Objectives: obj-u10-have
-- Sessions: u10-s-have
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3093aaac9cc8add2995e3103713ef2fe9a1931559f08c0791c2582267272e345
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u10-g-have-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u10-st-rem-have
-
 ### STEP `u10-st-teach-have-2`
 
 - Objectives: obj-u10-have
@@ -342,11 +320,11 @@ remediationStepId=u10-st-rem-have
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 24d264ce518fb46b7697e12056c2d62c8ae93362b8bd18f63993788c75bd4f84
+- Content hash: 2e37062b0a934bae6756e433233e0a9855b13cb82b86239dd1b6f8355ba7a463
 
 kind=TEACH
-title=Admitted instruction
-body=The thing that is possessed remains in the nominative
+title=Possession versus absence
+body=A simple positive possession line places the possessed thing in the nominative. An absence line places the absent thing in the genitive. Decide whether the whole shown line affirms or denies possession.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -364,11 +342,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 59975d46c1387d902bb5d94ec4978c1f6cfc34f2096e5e875760540653c3f07f
+- Content hash: a8ab4d4b588c4e9de762507895888f717a483512e371a45871b98cbeeaa15120
 
 kind=TEACH
-title=Admitted lines
-body=Да, у меня есть сын. — Yes, I have a son. У твоего́ му́жа есть оди́н друг — Your husband has one friend. 
+title=Positive statements and questions
+body=The son examples keep the same simple possession pattern in a statement or question: genitive possessor and nominative possessed thing. The form of a question does not turn the noun into an absence construction. Да, у меня есть сын. — Yes, I have a son. У твоего́ му́жа есть оди́н друг — Your husband has one friend. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -386,11 +364,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cad3d68d1237038a40c3a158d2f5da27587d4e1d4cfd353d3b5080722d0e3cdc
+- Content hash: 2ba9fd401c597b38cd525c63083fccc0e47994e284c5de019177efc8ba9af4a0
 
 kind=TEACH
-title=Admitted lines
-body=У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — No, I don't have a son. 
+title=Keep quantity and absence separate
+body=The many-friends example includes a quantity expression. Quantity patterns are separate from the simple nominative possessed thing in the son checks. The no-son example below denies possession and uses the genitive for the absent thing. У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — No, I don't have a son. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -408,11 +386,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 572a444a9afef4807bad6101f9402ff0b63094387e04b6e7a287db0498eb0297
+- Content hash: 5d07cf65fbd2ca7efb105650bfd239c19d5e34741693758ad637387839e5d980
 
 kind=TEACH
-title=Admitted lines
-body=У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+title=Another absence example
+body=The no-money example also denies possession. Choose the genitive absence explanation, rather than the simple positive possession explanation. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -422,6 +400,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u10-st-guided-have-1`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-have
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 290d3d187e114505d9719f7c1e0ac180c27f47ed97c04b0dbc59530a67402b70
+
+kind=GUIDED
+title=Guided practice
+body=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+dominantAction=Continue
+references=
+items=u10-g-have-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u10-st-rem-have
+
 ### STEP `u10-st-rem-have`
 
 - Objectives: obj-u10-have
@@ -430,15 +430,23 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a5376d5ede7613c142ad1f4240c56892e680eed2b7d43b52c9fbd8e270450a3e
+- Content hash: 3aa24b6258fb95141197510a8a0edaf827ffb127d3326c4a56e0f0831f9fe36c
 
 kind=REMEDIATE
-title=Remediation
-body=The thing that is possessed remains in the nominative
+title=Review the complete constructions
+body=In the simple possession pattern shown here, the possessor after the possession preposition is genitive. The thing possessed is nominative. The schematic slot in the first example represents that possessed thing. У меня есть Х — I have X. У вас есть сын? — Do you have a son? 
+
+A simple positive possession line places the possessed thing in the nominative. An absence line places the absent thing in the genitive. Decide whether the whole shown line affirms or denies possession.
+
+The son examples keep the same simple possession pattern in a statement or question: genitive possessor and nominative possessed thing. The form of a question does not turn the noun into an absence construction. Да, у меня есть сын. — Yes, I have a son. У твоего́ му́жа есть оди́н друг — Your husband has one friend. 
+
+The many-friends example includes a quantity expression. Quantity patterns are separate from the simple nominative possessed thing in the son checks. The no-son example below denies possession and uses the genitive for the absent thing. У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — No, I don't have a son. 
+
+The no-money example also denies possession. Choose the genitive absence explanation, rather than the simple positive possession explanation. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
 dominantAction=Continue
 references=
 items=
-examples=ex-u10-have-0,ex-u10-have-1
+examples=ex-u10-have-0,ex-u10-have-1,ex-u10-have-2,ex-u10-have-3,ex-u10-have-4,ex-u10-have-5,ex-u10-have-6
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -452,11 +460,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 146387ef280cb48a931512f1deece9845c6ccdd9d9614cb7eb50ee2230b9a366
+- Content hash: 2b4f92b9fdcab6b594d6f23a47a0dc893d53e7c29ecd90120d98902131f4cff0
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
 dominantAction=Continue
 references=
 items=u10-i-have-1,u10-i-have-2,u10-i-have-3,u10-i-have-4
@@ -474,12 +482,12 @@ remediationStepId=u10-st-rem-have
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 33fdc8bd2c50a06b83ff2e1ca57bc7f7f5c9488a38888d5e20c2dceedbd36729
+- Content hash: 7ce0c3e322c7b3366b23177052b773acade06e254285b39f3d433807cf2dc261
 
 title=Choose the admitted absence line
 estimatedMinutes=12
 objectives=obj-u10-absence
-steps=u10-st-teach-absence-1,u10-st-guided-absence-1,u10-st-teach-absence-2,u10-st-teach-absence-3,u10-st-teach-absence-4,u10-st-rem-absence,u10-st-check-absence
+steps=u10-st-teach-absence-1,u10-st-teach-absence-2,u10-st-teach-absence-3,u10-st-teach-absence-4,u10-st-guided-absence-1,u10-st-rem-absence,u10-st-check-absence
 
 ### STEP `u10-st-teach-absence-1`
 
@@ -489,11 +497,11 @@ steps=u10-st-teach-absence-1,u10-st-guided-absence-1,u10-st-teach-absence-2,u10-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8fff474b6608c5e430c907090e01d1d3d424890d1bd9a4d50ed213895b87f799
+- Content hash: d49342f8602dca9760bef5d0f1dd46a4171dc79e784858f78d7eae8abb3579a6
 
 kind=TEACH
-title=Admitted lines
-body=У меня́ нет сы́на — No, I don't have a son. Нет рестора́нов — There are no restaurants. 
+title=Identify absence
+body=In an absence line, the absent thing is genitive. An absence line may describe what a person does not have or what does not exist at a place. У меня́ нет сы́на — No, I don't have a son. Нет рестора́нов — There are no restaurants. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -503,28 +511,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u10-st-guided-absence-1`
-
-- Objectives: obj-u10-absence
-- Sessions: u10-s-absence
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f61a31e7b58d7b3d953b4fd561c71c134831a13a0853e34cecb2d94190e34485
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u10-g-absence-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u10-st-rem-absence
-
 ### STEP `u10-st-teach-absence-2`
 
 - Objectives: obj-u10-absence
@@ -533,11 +519,11 @@ remediationStepId=u10-st-rem-absence
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7db107ce1288401535b845c332c355f696fd6f160fff1cc74de905e5b43ddfdd
+- Content hash: 94df42d6caae653350296d17a6655bb9c4a590cb902fc0ea332782e7388262c6
 
 kind=TEACH
-title=Admitted instruction
-body=Conversely, to say 'There isn't...', 'There aren't...', we use the word
+title=Choose a complete case explanation
+body=The absence construction uses a genitive noun for the absent thing. The simple positive possession construction instead uses a genitive possessor and a nominative possessed thing. Choose from the meaning and construction of the whole supplied line.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -555,11 +541,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d434ae883f09dd393e83a689b621e162e854ebb0c3e68405e8662cd3248bcaa3
+- Content hash: 2b94a89034ecbc995bf53d6fb00d1fbf5e692e3df7885ed77389f1e2cddaa7d4
 
 kind=TEACH
-title=Admitted lines
-body=В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+title=Apply the absence pattern
+body=Both negative examples below use the genitive for the absent thing. Keep the absent thing separate from any possessor or place mentioned in the line. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -577,11 +563,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a8a20f0480e13db97f3efe297a2a2ed5476c5cb41d499ece7ff3589cab911c81
+- Content hash: afa4484ddb8a20ca46c1a03790e1b08f20074ddf2484cbd8b74f41aff391bc65
 
 kind=TEACH
-title=Admitted lines
-body=Да, у меня есть сын. — Yes, I have a son. 
+title=Compare with positive possession
+body=The positive son example below affirms possession. Its possessed noun is nominative, so the genitive absence explanation does not classify this line. Да, у меня есть сын. — Yes, I have a son. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -591,6 +577,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u10-st-guided-absence-1`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-absence
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 72ff8f311c95637762baaa331e8ee7bf4bfee5327f06e8ca5354804e692ee2df
+
+kind=GUIDED
+title=Guided practice
+body=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+dominantAction=Continue
+references=
+items=u10-g-absence-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u10-st-rem-absence
+
 ### STEP `u10-st-rem-absence`
 
 - Objectives: obj-u10-absence
@@ -599,15 +607,21 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bb62a969f1481784021e7a3dbfca061590017eaf1e4cfd4b2d549f5a54cf140c
+- Content hash: 6bb478321f446ae68b0edfa2483cf5f1e6b9399d185e16844d56a0b1c797127b
 
 kind=REMEDIATE
-title=Remediation
-body=Conversely, to say 'There isn't...', 'There aren't...', we use the word
+title=Review the complete constructions
+body=In an absence line, the absent thing is genitive. An absence line may describe what a person does not have or what does not exist at a place. У меня́ нет сы́на — No, I don't have a son. Нет рестора́нов — There are no restaurants. 
+
+The absence construction uses a genitive noun for the absent thing. The simple positive possession construction instead uses a genitive possessor and a nominative possessed thing. Choose from the meaning and construction of the whole supplied line.
+
+Both negative examples below use the genitive for the absent thing. Keep the absent thing separate from any possessor or place mentioned in the line. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+
+The positive son example below affirms possession. Its possessed noun is nominative, so the genitive absence explanation does not classify this line. Да, у меня есть сын. — Yes, I have a son. 
 dominantAction=Continue
 references=
 items=
-examples=ex-u10-absence-0,ex-u10-absence-1
+examples=ex-u10-absence-0,ex-u10-absence-1,ex-u10-absence-2,ex-u10-absence-3,ex-u10-absence-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -621,11 +635,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 93cc6d67d55fb2f5ac0abb20e789933b178bdda1cd1747d901be51c6a7140f1d
+- Content hash: fa312129beee477be4c206f6690b2e966e2f17c0f517316d0d584403afe7a498
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
 dominantAction=Continue
 references=
 items=u10-i-absence-1,u10-i-absence-2,u10-i-absence-3,u10-i-absence-4
@@ -1473,11 +1487,11 @@ steps=u10-st-teach-animate-1,u10-st-guided-animate-1,u10-st-teach-animate-2,u10-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 38f27eff9afc4792d8ff226f4e68fe7fa5a515f5b6f5fcf27c47d83a21576f53
+- Content hash: 292e0b04c431c820eac2444f745d6f5786b7e2deb658f1827a712d64420c0a87
 
 kind=TEACH
 title=Admitted lines
-body=этих женщин — I like these women. Эти женщины — These women like me. 
+body=этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1517,11 +1531,11 @@ remediationStepId=u10-st-rem-animate
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e0802414f9d2c1ed0e6a8b4e737151f24fd8947b81c4b3901c53efb795ef27a5
+- Content hash: ccf33e4dfa0a87c2ae44f86e3cc3a98573d091c262c7ae18282a805ede602ca9
 
 kind=TEACH
 title=Admitted instruction
-body=I like these women.
+body=A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1605,15 +1619,23 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cec124891d649f1a39283af91a8aff61f5702501937ba2723e68ac9419abf9b2
+- Content hash: 387c07293140f38d76f38b6ef0b90cbb2f887292a93074d413838014e3fa8a5f
 
 kind=REMEDIATE
 title=Remediation
-body=I like these women.
+body=этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
+
+A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
+
+же́нщин — woman. же́нщины — woman. 
+
+бра́тья — brother. бра́тьев — brother. 
+
+друзе́й — friend. 
 dominantAction=Continue
 references=
 items=
-examples=ex-u10-animate-0,ex-u10-animate-1
+examples=ex-u10-animate-0,ex-u10-animate-1,ex-or-u10-animate-2,ex-or-u10-animate-3,ex-or-u10-animate-4,ex-or-u10-animate-5,ex-or-u10-animate-6
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1649,12 +1671,12 @@ remediationStepId=u10-st-rem-animate
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 41d69327021b73e897a134d6795b560587fa86c1c904d76139ccb83d0d18da55
+- Content hash: 49d7d52a87846df618df97149ce73a9eff18b2601540e8b225265e04117b804a
 
 title=Self-attest Lesson 10
 estimatedMinutes=10
 objectives=obj-u10-book
-steps=u10-st-book-work,u10-st-book
+steps=u10-st-book-work,u10-st-book,u10-st-anki-direction,u10-st-binder-direction,u10-st-tutor-direction,u10-st-cumulative-direction
 
 ### STEP `u10-st-book-work`
 
@@ -1664,7 +1686,7 @@ steps=u10-st-book-work,u10-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c1b29ef0e81b3a077cc3d3037d3825f585862e92cc818f93ba2ba157e4c0253a
+- Content hash: c3810a42c0456e9527f2bc283b4269b1687906db0abda8918f635403890da619
 
 kind=BOOK
 title=Work Lesson 10 in your copy
@@ -1674,7 +1696,7 @@ references=ref-u610-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 10 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 10: printed pages 107-121. PDF indexes 119-133 are file locators, not printed pages. Observed section locators: §10.1 p107 (PDF 119); §10.2 p107 (PDF 119); §10.3 p108 (PDF 120); §10.4 p109 (PDF 121); §10.5 p109 (PDF 121); §10.6 p110 (PDF 122); §10.7 p111 (PDF 123); §10.8 p111 (PDF 123); §10.9 p112 (PDF 124); §10.10 p113 (PDF 125); §10.11 p113 (PDF 125); §10.12 p114 (PDF 126); §10.13 p114 (PDF 126); §10.14 p115 (PDF 127); §10.15 p115 (PDF 127); §10.16 p116 (PDF 128); §10.17 p117 (PDF 129); §10.18 p119 (PDF 131). Observed exercise locators: 10/2 p112/PDF124; 10/3 p114/PDF126; 10/4 p115/PDF127; 10/5 p119/PDF131; 10/6 p120/PDF132. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1686,7 +1708,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 216b0abdfca302104d5215285ef58bfb91c3a09e832b2d14bf71a46e5ab2b52e
+- Content hash: 95af70110c6eb1de75c379d142c0e008e14de6ae1aac59297e296c9049071130
 
 kind=BOOK
 title=Record Lesson 10 book work
@@ -1696,8 +1718,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 10 work in your copy.
+bookDirection=Owned-book assignment for Lesson 10: printed pages 107-121. PDF indexes 119-133 are file locators, not printed pages. Observed section locators: §10.1 p107 (PDF 119); §10.2 p107 (PDF 119); §10.3 p108 (PDF 120); §10.4 p109 (PDF 121); §10.5 p109 (PDF 121); §10.6 p110 (PDF 122); §10.7 p111 (PDF 123); §10.8 p111 (PDF 123); §10.9 p112 (PDF 124); §10.10 p113 (PDF 125); §10.11 p113 (PDF 125); §10.12 p114 (PDF 126); §10.13 p114 (PDF 126); §10.14 p115 (PDF 127); §10.15 p115 (PDF 127); §10.16 p116 (PDF 128); §10.17 p117 (PDF 129); §10.18 p119 (PDF 131). Observed exercise locators: 10/2 p112/PDF124; 10/3 p114/PDF126; 10/4 p115/PDF127; 10/5 p119/PDF131; 10/6 p120/PDF132. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u10-st-anki-direction`
+
+- Objectives: obj-u10-book
+- Sessions: u10-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c3ff930d407cd115f772143f732033a5879c1c798908e041d751d7db8a5db0c2
+
+kind=ANKI
+title=Unit 10 AnkiDroid direction
+body=Unit 10 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u10-st-binder-direction`
+
+- Objectives: obj-u10-book
+- Sessions: u10-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7b329ddc17daedcdf73463d618f22e16f1228e78b99e387752ba3bc7e9520e90
+
+kind=BINDER
+title=Unit 10 binder prompt
+body=Unit 10 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u10-st-tutor-direction`
+
+- Objectives: obj-u10-book
+- Sessions: u10-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 66a42d194faba88483040558cebe814b9d33818b18f6304e2af04eeff1cfca67
+
+kind=TUTOR
+title=Unit 10 optional tutor
+body=Unit 10 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u10-st-cumulative-direction`
+
+- Objectives: obj-u10-book
+- Sessions: u10-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b95a7b5e85eb7025632d80b4be84aa05a2dca896ab17535f633d1f803de62e33
+
+kind=ORIENT
+title=Unit 10 cumulative review
+body=Unit 10 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 10 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u10-have-0`
@@ -2694,12 +2804,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2746c21c91cdb67d1061acf484c6070dd09a068e82e5c48aed02f7fa4c531693
+- Content hash: 2ff7c389b74388a8cb12b9c487025e705c1dfcbff40d8ccde150879f05f1ed50
 
 kind=LEXICAL
 letterId=
 display=этих женщин
-note=I like these women.
+note=these women, accusative or genitive plural, context not a full sentence
 objectiveId=obj-u10-animate
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2711,12 +2821,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3da74ac0c6ac6db23e422437fd23e061ad7e66b92250a112c76dede986881777
+- Content hash: dfc0c54ea1c2daba01949fae8611db4dc08b7a77ad46d48471914b6c275c2e0f
 
 kind=LEXICAL
 letterId=
 display=Эти женщины
-note=These women like me.
+note=these women, nominative plural
 objectiveId=obj-u10-animate
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2809,69 +2919,69 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 - Objectives: obj-u10-have
 - Sessions: u10-s-have
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9e9aa2cdd8721a2a7236448bcb275ab715c56465048d583b8d1af8172fcb938a
+- Content hash: 3182bee6439523abb96b8ce4fc6c82a978dc6199b570418b6f1e941c3caaec99
 
-kind=FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=У меня есть Х
-options=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-answer=The thing that is possessed remains in the nominative
-feedback=Does the admitted record show the governed contrast? The thing that is possessed remains in the nominative.
+options=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+answer=In this line, the possessor is genitive and the possessed thing is nominative.
+feedback=У меня есть Х uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
 objectiveId=obj-u10-have
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the absence line, not the rule for the shown line.
+distractorRationales= | The other explanation describes absence rather than the presence or simple possession shown here.
 testedFeature=POSSESSION_EST
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u10-have-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-u10-have-rem
-distractorSourceIds= | prov-u10-have-x-1
-distractorDifference= | This admitted rule is the absence line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u10-have-0-ru | prov-u10-have-rem | prov-u10-have-x-1
+answerSourceIds=prov-ca-rule-u10-g-have-0-1
+distractorSourceIds= | prov-ca-rule-u10-g-have-0-2
+distractorDifference= | The other explanation describes absence rather than the presence or simple possession shown here.
+whyAnswerDemonstratesObjective=У меня есть Х uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+contrastMembers=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u10-g-have-0-0 | prov-ca-rule-u10-g-have-0-1 | prov-ca-rule-u10-g-have-0-2
 
 ### GUIDED_PRACTICE `u10-g-absence-0`
 
 - Objectives: obj-u10-absence
 - Sessions: u10-s-absence
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 224304b6530341b14a8659a69295431eca4e65d3b388fe0b90ea2fb0f3bc7e21
+- Content hash: 767421ea1542262b506e771b5315f12a842b571681a61be31fcc0dc01d06ce4f
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=У меня́ нет сы́на
-options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+options=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+answer=In this line, the absent thing is in the genitive case.
+feedback=У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
 objectiveId=obj-u10-absence
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
+distractorRationales=The other explanation asserts presence or simple possession rather than the absence shown here. | 
 testedFeature=ABSENCE_NET
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u10-absence-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-u10-absence-rem
-distractorSourceIds= | prov-u10-absence-x-0
-distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u10-absence-0-ru | prov-u10-absence-rem | prov-u10-absence-x-0
+answerSourceIds=prov-ca-rule-u10-g-absence-0-1
+distractorSourceIds=prov-ca-rule-u10-g-absence-0-2 | 
+distractorDifference=The other explanation asserts presence or simple possession rather than the absence shown here. | 
+whyAnswerDemonstratesObjective=У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+contrastMembers=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u10-g-absence-0-0 | prov-ca-rule-u10-g-absence-0-1 | prov-ca-rule-u10-g-absence-0-2
 
 ### GUIDED_PRACTICE `u10-g-pronoun-0`
 
@@ -2881,7 +2991,7 @@ relationParticipantIds=prov-ex-u10-absence-0-ru | prov-u10-absence-rem | prov-u1
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a2bb6515831bb4bfaf9681e5c6265d896aa0cd0008c4b3f980f89509936bf9f8
+- Content hash: 1c9e1e43e80aa842682ccfc972bb057ffba67e011adc80df85729f46c85387e8
 
 kind=FORM_SELECTION
 language=en
@@ -2889,11 +2999,11 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Я
 options=Меня́ | Нас
 answer=Меня́
-feedback=Does the admitted record show the governed contrast? Меня́.
+feedback=Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent when moving to the genitive row.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive cell of another row in the same frozen table.
+distractorRationales= | Нас belongs to Мы (we), first-person plural, rather than Я (I), first-person singular.
 testedFeature=GENITIVE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-0
@@ -2901,8 +3011,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u10-pronoun-2-ru
 distractorSourceIds= | prov-ex-u10-pronoun-7-ru
-distractorDifference= | This form is the genitive cell of another row in the same frozen table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Нас belongs to Мы (we), first-person plural, rather than Я (I), first-person singular.
+whyAnswerDemonstratesObjective=Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent when moving to the genitive row.
 contrastMembers=Меня́ | Нас
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-pronoun-5-ru | prov-ex-u10-pronoun-2-ru | prov-ex-u10-pronoun-7-ru
@@ -2915,19 +3025,19 @@ relationParticipantIds=prov-ex-u10-pronoun-5-ru | prov-ex-u10-pronoun-2-ru | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 37062579331bef0863b6bb5648c2d59b523038ab7fc4f40209178a20f4bf8a12
+- Content hash: 019aac38efb75a778b2a6e0c01fe1f01ee2729e155df6e166df7a4f7c6d3f4da
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the genitive row of the shown form?
+prompt=Which singular genitive form of the same noun corresponds to the shown form?
 promptLetter=молоко́
 options=молока́ | молоко́
 answer=молока́
-feedback=Does the admitted record show the governed contrast? молока́.
+feedback=молоко́ is the singular nominative form; молока́ is the singular genitive form of the same noun.
 objectiveId=obj-u10-preposition
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the genitive row.
+distractorRationales= | молоко́ is the singular nominative form, so it does not supply the requested singular genitive form.
 testedFeature=GENITIVE_PREPOSITION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-preposition-0
@@ -2935,8 +3045,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u10-preposition-12
 distractorSourceIds= | prov-ex-or-u10-preposition-11
-distractorDifference= | This form is the dictionary row of the same word, not the genitive row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | молоко́ is the singular nominative form, so it does not supply the requested singular genitive form.
+whyAnswerDemonstratesObjective=молоко́ is the singular nominative form; молока́ is the singular genitive form of the same noun.
 contrastMembers=молока́ | молоко́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-preposition-11 | prov-ex-or-u10-preposition-12 | prov-ex-or-u10-preposition-11
@@ -2949,19 +3059,19 @@ relationParticipantIds=prov-ex-or-u10-preposition-11 | prov-ex-or-u10-prepositio
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d39148569f66b040eca62eb9ffb3fcce374129d92bf9241b107f0f1fbba2f514
+- Content hash: b36f9d622006e33a2aacefed94652ab3431f6b1d66efb0328b0f3b708bd1a918
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the dictionary row of the shown form?
+prompt=Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
 promptLetter=но́вого
 options=но́вый | но́вой
 answer=но́вый
-feedback=Does the admitted record show the governed contrast? но́вый.
+feedback=но́вого is the masculine singular genitive form; но́вый is the masculine singular nominative form of the same adjective.
 objectiveId=obj-u10-adjective
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other genitive row of the same word.
+distractorRationales= | но́вой is the feminine singular genitive form, so it does not supply the requested masculine singular nominative form.
 testedFeature=GENITIVE_ADJECTIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-adjective-0
@@ -2969,8 +3079,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u10-adjective-3
 distractorSourceIds= | prov-ex-or-u10-adjective-5
-distractorDifference= | This form is the other genitive row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | но́вой is the feminine singular genitive form, so it does not supply the requested masculine singular nominative form.
+whyAnswerDemonstratesObjective=но́вого is the masculine singular genitive form; но́вый is the masculine singular nominative form of the same adjective.
 contrastMembers=но́вый | но́вой
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-adjective-4 | prov-ex-or-u10-adjective-3 | prov-ex-or-u10-adjective-5
@@ -2983,7 +3093,7 @@ relationParticipantIds=prov-ex-or-u10-adjective-4 | prov-ex-or-u10-adjective-3 |
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0caf8e458b0027a802bd6581b75f3f91d017d69585c4f16717ec24b2d618dac2
+- Content hash: c298acce83793163d5b678505527c89dba52b814acd4c5e6168df88fb10f1253
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2991,11 +3101,11 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Эти женщины
 options=этих женщин | Эти женщины
 answer=этих женщин
-feedback=Does the admitted record show the governed contrast? этих женщин.
+feedback=этих женщин is the animate plural accusative object phrase in the source example meaning I like these women. Its forms match the genitive plural. Эти женщины is the nominative subject phrase in the example meaning These women like me. Choose the object form, not the subject form.
 objectiveId=obj-u10-animate
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other row of the same word, not the object row.
+distractorRationales= | Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here.
 testedFeature=ANIMATE_PLURAL_OBJECT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-animate-0
@@ -3003,8 +3113,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u10-animate-0-ru
 distractorSourceIds= | prov-ex-u10-animate-1-ru
-distractorDifference= | This form is the other row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here.
+whyAnswerDemonstratesObjective=этих женщин is the animate plural accusative object phrase in the source example meaning I like these women. Its forms match the genitive plural. Эти женщины is the nominative subject phrase in the example meaning These women like me. Choose the object form, not the subject form.
 contrastMembers=этих женщин | Эти женщины
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-animate-1-ru | prov-ex-u10-animate-0-ru | prov-ex-u10-animate-1-ru
@@ -3013,273 +3123,273 @@ relationParticipantIds=prov-ex-u10-animate-1-ru | prov-ex-u10-animate-0-ru | pro
 
 - Objectives: obj-u10-have
 - Sessions: u10-s-have
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a83f4f4dce0f4977d93e1169ebf7c1e9631eb35ab0879106bee59a0f2d3d5633
+- Content hash: d1115c732363678c1406a89d65bbcd05dfbb7115462cd49fecea6a51e05a1a28
 
-kind=FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=Да, у меня есть сын.
-options=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-answer=The thing that is possessed remains in the nominative
-feedback=Does the admitted record show the governed contrast? The thing that is possessed remains in the nominative.
+options=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+answer=In this line, the possessor is genitive and the possessed thing is nominative.
+feedback=Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
 objectiveId=obj-u10-have
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the absence line, not the rule for the shown line.
+distractorRationales= | The other explanation describes absence rather than the presence or simple possession shown here.
 testedFeature=POSSESSION_EST
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u10-have-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-have-rem
-distractorSourceIds= | prov-u10-have-x-1
-distractorDifference= | This admitted rule is the absence line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u10-have-2-ru | prov-u10-have-rem | prov-u10-have-x-1
+answerSourceIds=prov-ca-rule-u10-i-have-1-1
+distractorSourceIds= | prov-ca-rule-u10-i-have-1-2
+distractorDifference= | The other explanation describes absence rather than the presence or simple possession shown here.
+whyAnswerDemonstratesObjective=Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+contrastMembers=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u10-i-have-1-0 | prov-ca-rule-u10-i-have-1-1 | prov-ca-rule-u10-i-have-1-2
 
 ### INDEPENDENT_CHECK `u10-i-have-2`
 
 - Objectives: obj-u10-have
 - Sessions: u10-s-have
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b6988499792508bea6b6faa659163af8857b129f25c67068eac642f548a49661
+- Content hash: 89cc50e1e3b5c67e38fc1479e2019c0bae5630eafc34f12e12ac2381c6b6f80a
 
-kind=FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=У вас есть сын?
-options=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-answer=The thing that is possessed remains in the nominative
-feedback=Does the admitted record show the governed contrast? The thing that is possessed remains in the nominative.
+options=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+answer=In this line, the possessor is genitive and the possessed thing is nominative.
+feedback=У вас есть сын? uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
 objectiveId=obj-u10-have
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the absence line, not the rule for the shown line.
+distractorRationales= | The other explanation describes absence rather than the presence or simple possession shown here.
 testedFeature=POSSESSION_EST
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u10-have-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-have-rem
-distractorSourceIds= | prov-u10-have-x-1
-distractorDifference= | This admitted rule is the absence line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u10-have-1-ru | prov-u10-have-rem | prov-u10-have-x-1
+answerSourceIds=prov-ca-rule-u10-i-have-2-1
+distractorSourceIds= | prov-ca-rule-u10-i-have-2-2
+distractorDifference= | The other explanation describes absence rather than the presence or simple possession shown here.
+whyAnswerDemonstratesObjective=У вас есть сын? uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+contrastMembers=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u10-i-have-2-0 | prov-ca-rule-u10-i-have-2-1 | prov-ca-rule-u10-i-have-2-2
 
 ### INDEPENDENT_CHECK `u10-i-have-3`
 
 - Objectives: obj-u10-have
 - Sessions: u10-s-have
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2c39e9a6701df04f21c2fdf9f3c9275d2b450e52347780757de0dbaff4505828
+- Content hash: 269f913ae69bf2183546ef0821177682c4efe85ea85cdec2469a7b86b6cef9f3
 
-kind=FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=У меня́ нет сы́на
-options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+options=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+answer=In this line, the absent thing is in the genitive case.
+feedback=У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
 objectiveId=obj-u10-have
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
+distractorRationales=The other explanation asserts presence or simple possession rather than the absence shown here. | 
 testedFeature=POSSESSION_EST
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u10-have-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-have-x-1
-distractorSourceIds= | prov-u10-have-rem
-distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u10-have-5-ru | prov-u10-have-x-1 | prov-u10-have-rem
+answerSourceIds=prov-ca-rule-u10-i-have-3-1
+distractorSourceIds=prov-ca-rule-u10-i-have-3-2 | 
+distractorDifference=The other explanation asserts presence or simple possession rather than the absence shown here. | 
+whyAnswerDemonstratesObjective=У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+contrastMembers=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u10-i-have-3-0 | prov-ca-rule-u10-i-have-3-1 | prov-ca-rule-u10-i-have-3-2
 
 ### INDEPENDENT_CHECK `u10-i-have-4`
 
 - Objectives: obj-u10-have
 - Sessions: u10-s-have
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 58994d5edb971917e43187d9e73e0df0a7546ff651fcf7b52677c5eabb6d56ab
+- Content hash: e610949a43ba07171fc0135cfba0a95d1b68c3a46b2c143559c231abf063166f
 
-kind=FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=У моего́ бра́та нет де́нег
-options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+options=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+answer=In this line, the absent thing is in the genitive case.
+feedback=У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
 objectiveId=obj-u10-have
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
+distractorRationales=The other explanation asserts presence or simple possession rather than the absence shown here. | 
 testedFeature=POSSESSION_EST
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u10-have-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-have-x-1
-distractorSourceIds= | prov-u10-have-rem
-distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u10-have-6-ru | prov-u10-have-x-1 | prov-u10-have-rem
+answerSourceIds=prov-ca-rule-u10-i-have-4-1
+distractorSourceIds=prov-ca-rule-u10-i-have-4-2 | 
+distractorDifference=The other explanation asserts presence or simple possession rather than the absence shown here. | 
+whyAnswerDemonstratesObjective=У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+contrastMembers=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u10-i-have-4-0 | prov-ca-rule-u10-i-have-4-1 | prov-ca-rule-u10-i-have-4-2
 
 ### INDEPENDENT_CHECK `u10-i-absence-1`
 
 - Objectives: obj-u10-absence
 - Sessions: u10-s-absence
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4117f7c2969107ee3fdc1df01c70554c2b4a6242f605c3615e455220b7c0f974
+- Content hash: cbf3d52265c6bd435cacd0d67c26adc8b843a53e5df19af86f04803cae2c75e4
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=Нет рестора́нов
-options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+options=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+answer=In this line, the absent thing is in the genitive case.
+feedback=Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
 objectiveId=obj-u10-absence
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
+distractorRationales=The other explanation asserts presence or simple possession rather than the absence shown here. | 
 testedFeature=ABSENCE_NET
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u10-absence-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-absence-rem
-distractorSourceIds= | prov-u10-absence-x-0
-distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u10-absence-1-ru | prov-u10-absence-rem | prov-u10-absence-x-0
+answerSourceIds=prov-ca-rule-u10-i-absence-1-1
+distractorSourceIds=prov-ca-rule-u10-i-absence-1-2 | 
+distractorDifference=The other explanation asserts presence or simple possession rather than the absence shown here. | 
+whyAnswerDemonstratesObjective=Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+contrastMembers=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u10-i-absence-1-0 | prov-ca-rule-u10-i-absence-1-1 | prov-ca-rule-u10-i-absence-1-2
 
 ### INDEPENDENT_CHECK `u10-i-absence-2`
 
 - Objectives: obj-u10-absence
 - Sessions: u10-s-absence
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 802092f9addb50b20b7692feb95178e8aad417131cbc252e991fc3213abccfd8
+- Content hash: da98f528c552bff9cd98bedfa6421e06576d374ca4246e2aa8a331afb18f3874
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=В Москве́ нет ста́рых зда́ний
-options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+options=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+answer=In this line, the absent thing is in the genitive case.
+feedback=В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
 objectiveId=obj-u10-absence
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
+distractorRationales=The other explanation asserts presence or simple possession rather than the absence shown here. | 
 testedFeature=ABSENCE_NET
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u10-absence-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-absence-rem
-distractorSourceIds= | prov-u10-absence-x-0
-distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u10-absence-2-ru | prov-u10-absence-rem | prov-u10-absence-x-0
+answerSourceIds=prov-ca-rule-u10-i-absence-2-1
+distractorSourceIds=prov-ca-rule-u10-i-absence-2-2 | 
+distractorDifference=The other explanation asserts presence or simple possession rather than the absence shown here. | 
+whyAnswerDemonstratesObjective=В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+contrastMembers=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u10-i-absence-2-0 | prov-ca-rule-u10-i-absence-2-1 | prov-ca-rule-u10-i-absence-2-2
 
 ### INDEPENDENT_CHECK `u10-i-absence-3`
 
 - Objectives: obj-u10-absence
 - Sessions: u10-s-absence
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7025a5fef2a08e0a978fd78c8b81c0f4bab8e11948c3b24a6b65fd9a69f318df
+- Content hash: 27060878e9280d72e1d6bbd60d0a7205341c2b41f41abec4e1aa7cb3c9041282
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=Да, у меня есть сын.
-options=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-answer=The thing that is possessed remains in the nominative
-feedback=Does the admitted record show the governed contrast? The thing that is possessed remains in the nominative.
+options=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+answer=In this line, the possessor is genitive and the possessed thing is nominative.
+feedback=Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
 objectiveId=obj-u10-absence
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the absence line, not the rule for the shown line.
+distractorRationales= | The other explanation describes absence rather than the presence or simple possession shown here.
 testedFeature=ABSENCE_NET
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u10-absence-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-absence-x-0
-distractorSourceIds= | prov-u10-absence-rem
-distractorDifference= | This admitted rule is the absence line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=The thing that is possessed remains in the nominative | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u10-absence-4-ru | prov-u10-absence-x-0 | prov-u10-absence-rem
+answerSourceIds=prov-ca-rule-u10-i-absence-3-1
+distractorSourceIds= | prov-ca-rule-u10-i-absence-3-2
+distractorDifference= | The other explanation describes absence rather than the presence or simple possession shown here.
+whyAnswerDemonstratesObjective=Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+contrastMembers=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u10-i-absence-3-0 | prov-ca-rule-u10-i-absence-3-1 | prov-ca-rule-u10-i-absence-3-2
 
 ### INDEPENDENT_CHECK `u10-i-absence-4`
 
 - Objectives: obj-u10-absence
 - Sessions: u10-s-absence
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 420e78421ca7b084c77874f02aa0ea75219560505aba5f820d44e93d6c9b80d6
+- Content hash: ed55fa68b66c2acee7078523802b3d38dd8f868bfe120b595da524accff7454e
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=У моего́ бра́та нет де́нег
-options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+options=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+answer=In this line, the absent thing is in the genitive case.
+feedback=У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
 objectiveId=obj-u10-absence
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the possession line, not the rule for the shown line.
+distractorRationales=The other explanation asserts presence or simple possession rather than the absence shown here. | 
 testedFeature=ABSENCE_NET
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u10-absence-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u10-absence-rem
-distractorSourceIds= | prov-u10-absence-x-0
-distractorDifference= | This admitted rule is the possession line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | The thing that is possessed remains in the nominative
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u10-absence-3-ru | prov-u10-absence-rem | prov-u10-absence-x-0
+answerSourceIds=prov-ca-rule-u10-i-absence-4-1
+distractorSourceIds=prov-ca-rule-u10-i-absence-4-2 | 
+distractorDifference=The other explanation asserts presence or simple possession rather than the absence shown here. | 
+whyAnswerDemonstratesObjective=У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+contrastMembers=In this line, the possessor is genitive and the possessed thing is nominative. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u10-i-absence-4-0 | prov-ca-rule-u10-i-absence-4-1 | prov-ca-rule-u10-i-absence-4-2
 
 ### INDEPENDENT_CHECK `u10-i-pronoun-1`
 
@@ -3289,7 +3399,7 @@ relationParticipantIds=prov-ex-u10-absence-3-ru | prov-u10-absence-rem | prov-u1
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7fc6e75e1d41dc0b17813747c8107efcba31d291c98d63324977c0fcdb0e10d6
+- Content hash: 902cfa5a9ecefbcea5b82587b54483ff90719fe9722aacec53d069b4a6a99ebf
 
 kind=FORM_SELECTION
 language=en
@@ -3297,11 +3407,11 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Мы
 options=Нас | Меня́
 answer=Нас
-feedback=Does the admitted record show the governed contrast? Нас.
+feedback=Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive cell of another row in the same frozen table.
+distractorRationales= | Меня́ belongs to Я (I), first-person singular, rather than Мы (we), first-person plural.
 testedFeature=GENITIVE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-1
@@ -3309,8 +3419,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-pronoun-7-ru
 distractorSourceIds= | prov-ex-u10-pronoun-2-ru
-distractorDifference= | This form is the genitive cell of another row in the same frozen table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Меня́ belongs to Я (I), first-person singular, rather than Мы (we), first-person plural.
+whyAnswerDemonstratesObjective=Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.
 contrastMembers=Нас | Меня́
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-pronoun-6-ru | prov-ex-u10-pronoun-7-ru | prov-ex-u10-pronoun-2-ru
@@ -3323,7 +3433,7 @@ relationParticipantIds=prov-ex-u10-pronoun-6-ru | prov-ex-u10-pronoun-7-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2f22f63d68ea2ef04ae943e784b4b84073a2640d6c863ff16895a8402ad56fd6
+- Content hash: ac5760c1200b9ee01979747db77f121c615f9f969ae72d28c4655d90dfd3e32b
 
 kind=FORM_SELECTION
 language=en
@@ -3331,11 +3441,11 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Ты
 options=Тебя́ | Вас
 answer=Тебя́
-feedback=Does the admitted record show the governed contrast? Тебя́.
+feedback=Тебя́ is the genitive form of Ты, the singular informal you. Вас belongs to Вы, used for plural you or polite address to one person. Match the shown pronoun, rather than replacing it with the other you form.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive cell of another row in the same frozen table.
+distractorRationales= | Вас belongs to Вы (plural or polite you), not the singular informal Ты shown here.
 testedFeature=GENITIVE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-2
@@ -3343,8 +3453,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-pronoun-10-ru
 distractorSourceIds= | prov-ex-u10-pronoun-11-ru
-distractorDifference= | This form is the genitive cell of another row in the same frozen table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Вас belongs to Вы (plural or polite you), not the singular informal Ты shown here.
+whyAnswerDemonstratesObjective=Тебя́ is the genitive form of Ты, the singular informal you. Вас belongs to Вы, used for plural you or polite address to one person. Match the shown pronoun, rather than replacing it with the other you form.
 contrastMembers=Тебя́ | Вас
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-pronoun-8-ru | prov-ex-u10-pronoun-10-ru | prov-ex-u10-pronoun-11-ru
@@ -3357,7 +3467,7 @@ relationParticipantIds=prov-ex-u10-pronoun-8-ru | prov-ex-u10-pronoun-10-ru | pr
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9dd17b84e4f504b0248c3d8d49e45f7e4dae1688ee1b8845a6552a3bc815b92b
+- Content hash: 4a36865b7f3b7c5c311fbe2a33725268c7b7d6d0310dae520a9931286957e613
 
 kind=FORM_SELECTION
 language=en
@@ -3365,11 +3475,11 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Вы
 options=Вас | Тебя́
 answer=Вас
-feedback=Does the admitted record show the governed contrast? Вас.
+feedback=Вас is the genitive form of Вы, used for plural you or polite address to one person. Тебя́ belongs to Ты, singular informal you. Preserve the shown pronoun and its form of address.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive cell of another row in the same frozen table.
+distractorRationales= | Тебя́ belongs to Ты (singular informal you), not the plural or polite Вы shown here.
 testedFeature=GENITIVE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-3
@@ -3377,8 +3487,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-pronoun-11-ru
 distractorSourceIds= | prov-ex-u10-pronoun-10-ru
-distractorDifference= | This form is the genitive cell of another row in the same frozen table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Тебя́ belongs to Ты (singular informal you), not the plural or polite Вы shown here.
+whyAnswerDemonstratesObjective=Вас is the genitive form of Вы, used for plural you or polite address to one person. Тебя́ belongs to Ты, singular informal you. Preserve the shown pronoun and its form of address.
 contrastMembers=Вас | Тебя́
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-pronoun-9-ru | prov-ex-u10-pronoun-11-ru | prov-ex-u10-pronoun-10-ru
@@ -3391,7 +3501,7 @@ relationParticipantIds=prov-ex-u10-pronoun-9-ru | prov-ex-u10-pronoun-11-ru | pr
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b8118fe33933b330ce3301b291b12665a86f3a4538293a5175ca6f890813331a
+- Content hash: 18d64bde0c2bfa04ef94d8a7ee14c9d9cd771cc6409e645d5d8d1c7b0973aa9b
 
 kind=FORM_SELECTION
 language=en
@@ -3399,11 +3509,11 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Они
 options=Их | Нас
 answer=Их
-feedback=Does the admitted record show the governed contrast? Их.
+feedback=Их is the bare genitive table form of Они, meaning they. Нас belongs to Мы, meaning we. Both refer to a plural group, but they is third person and we is first person. This checks the bare table form; third-person forms can change after prepositions.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive cell of another row in the same frozen table.
+distractorRationales= | Нас belongs to Мы (we), first-person plural, rather than Они (they), third-person plural.
 testedFeature=GENITIVE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-4
@@ -3411,8 +3521,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-pronoun-4-ru
 distractorSourceIds= | prov-ex-u10-pronoun-7-ru
-distractorDifference= | This form is the genitive cell of another row in the same frozen table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Нас belongs to Мы (we), first-person plural, rather than Они (they), third-person plural.
+whyAnswerDemonstratesObjective=Их is the bare genitive table form of Они, meaning they. Нас belongs to Мы, meaning we. Both refer to a plural group, but they is third person and we is first person. This checks the bare table form; third-person forms can change after prepositions.
 contrastMembers=Их | Нас
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-pronoun-12-ru | prov-ex-u10-pronoun-4-ru | prov-ex-u10-pronoun-7-ru
@@ -3425,19 +3535,19 @@ relationParticipantIds=prov-ex-u10-pronoun-12-ru | prov-ex-u10-pronoun-4-ru | pr
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7058e795b0f91db2ae1a4ba0c444d7ae032fa575929a3c1e70b6fa3163ab4e40
+- Content hash: 040baa06a87e9f0bbf3b94e47db041cfe24e620f5a272803cb6df1f8853527fc
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the genitive row of the shown form?
+prompt=Which singular genitive form of the same noun corresponds to the shown form?
 promptLetter=окно́
 options=окна́ | окно́
 answer=окна́
-feedback=Does the admitted record show the governed contrast? окна́.
+feedback=окно́ is the singular nominative form; окна́ is the singular genitive form of the same noun.
 objectiveId=obj-u10-preposition
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the genitive row.
+distractorRationales= | окно́ is the singular nominative form, so it does not supply the requested singular genitive form.
 testedFeature=GENITIVE_PREPOSITION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-preposition-1
@@ -3445,8 +3555,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-preposition-14
 distractorSourceIds= | prov-ex-or-u10-preposition-13
-distractorDifference= | This form is the dictionary row of the same word, not the genitive row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | окно́ is the singular nominative form, so it does not supply the requested singular genitive form.
+whyAnswerDemonstratesObjective=окно́ is the singular nominative form; окна́ is the singular genitive form of the same noun.
 contrastMembers=окна́ | окно́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-preposition-13 | prov-ex-or-u10-preposition-14 | prov-ex-or-u10-preposition-13
@@ -3459,19 +3569,19 @@ relationParticipantIds=prov-ex-or-u10-preposition-13 | prov-ex-or-u10-prepositio
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5bdd739e0cf6b9da29fba415e3b6c3a038cacfa8378c28553823a47939735bb3
+- Content hash: 7adfb388b673e7f294e489f947b4300c50ca0dd389d84abc7fe64fdefb47500f
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the genitive row of the shown form?
+prompt=Which singular genitive form of the same noun corresponds to the shown form?
 promptLetter=друг
 options=дру́га | друг
 answer=дру́га
-feedback=Does the admitted record show the governed contrast? дру́га.
+feedback=друг is the singular nominative form; дру́га is the singular genitive form of the same noun.
 objectiveId=obj-u10-preposition
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the genitive row.
+distractorRationales= | друг is the singular nominative form, so it does not supply the requested singular genitive form.
 testedFeature=GENITIVE_PREPOSITION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-preposition-2
@@ -3479,8 +3589,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-preposition-16
 distractorSourceIds= | prov-ex-or-u10-preposition-15
-distractorDifference= | This form is the dictionary row of the same word, not the genitive row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | друг is the singular nominative form, so it does not supply the requested singular genitive form.
+whyAnswerDemonstratesObjective=друг is the singular nominative form; дру́га is the singular genitive form of the same noun.
 contrastMembers=дру́га | друг
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-preposition-15 | prov-ex-or-u10-preposition-16 | prov-ex-or-u10-preposition-15
@@ -3493,19 +3603,19 @@ relationParticipantIds=prov-ex-or-u10-preposition-15 | prov-ex-or-u10-prepositio
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: fc065caad57cb6ae562e840aed5325b359d047e030bf22d389220668498b33af
+- Content hash: c991135e2cbc9e9e935149f8118aa4095176ddc0862c452f64b10285003646e3
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the genitive row of the shown form?
+prompt=Which masculine singular genitive form of the same adjective corresponds to the shown form?
 promptLetter=мо́й
 options=моего́ | моя́
 answer=моего́
-feedback=Does the admitted record show the governed contrast? моего́.
+feedback=мо́й is the masculine singular nominative form; моего́ is the masculine singular genitive form of the same adjective.
 objectiveId=obj-u10-preposition
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other agreement row of the same word, not the genitive row.
+distractorRationales= | моя́ is the feminine singular nominative form, so it does not supply the requested masculine singular genitive form.
 testedFeature=GENITIVE_PREPOSITION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-preposition-3
@@ -3513,8 +3623,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-preposition-18
 distractorSourceIds= | prov-ex-or-u10-preposition-19
-distractorDifference= | This form is the other agreement row of the same word, not the genitive row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | моя́ is the feminine singular nominative form, so it does not supply the requested masculine singular genitive form.
+whyAnswerDemonstratesObjective=мо́й is the masculine singular nominative form; моего́ is the masculine singular genitive form of the same adjective.
 contrastMembers=моего́ | моя́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-preposition-17 | prov-ex-or-u10-preposition-18 | prov-ex-or-u10-preposition-19
@@ -3527,19 +3637,19 @@ relationParticipantIds=prov-ex-or-u10-preposition-17 | prov-ex-or-u10-prepositio
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 19c7c6bad9492562c79429448974e29c3a08494896a5d3c5bdffc9ca3dd08542
+- Content hash: 75598b3767d4259cdf4fda05b3fb9ea7471161fbfd023190081f0b2dc202a492
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the dictionary row of the shown form?
+prompt=Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
 promptLetter=моего́
 options=мо́й | моего́ | моя́
 answer=мо́й
-feedback=Does the admitted record show the governed contrast? мо́й.
+feedback=моего́ is the masculine singular genitive form; мо́й is the masculine singular nominative form of the same adjective.
 objectiveId=obj-u10-preposition
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive row of the same word, not the dictionary row. | This form is the other agreement row of the same word, not the dictionary row.
+distractorRationales= | моего́ is the masculine singular genitive form, so it does not supply the requested masculine singular nominative form. | моя́ is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.
 testedFeature=GENITIVE_PREPOSITION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-preposition-4
@@ -3547,8 +3657,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-preposition-17
 distractorSourceIds= | prov-ex-or-u10-preposition-18 | prov-ex-or-u10-preposition-19
-distractorDifference= | This form is the genitive row of the same word, not the dictionary row. | This form is the other agreement row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | моего́ is the masculine singular genitive form, so it does not supply the requested masculine singular nominative form. | моя́ is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.
+whyAnswerDemonstratesObjective=моего́ is the masculine singular genitive form; мо́й is the masculine singular nominative form of the same adjective.
 contrastMembers=мо́й | моего́ | моя́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-preposition-18 | prov-ex-or-u10-preposition-17 | prov-ex-or-u10-preposition-18 | prov-ex-or-u10-preposition-19
@@ -3561,19 +3671,19 @@ relationParticipantIds=prov-ex-or-u10-preposition-18 | prov-ex-or-u10-prepositio
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9cd18c165f47d20edd299d00a23e31c6d45a1b36805a31f0a6b2c5d383aa5b4c
+- Content hash: 8446a52cdbbb52e8fb0f4cab8d06ce1e56c430e35e590552655ce1481206dc3c
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the dictionary row of the shown form?
+prompt=Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
 promptLetter=хоро́шего
 options=хоро́ший | хоро́шей
 answer=хоро́ший
-feedback=Does the admitted record show the governed contrast? хоро́ший.
+feedback=хоро́шего is the masculine singular genitive form; хоро́ший is the masculine singular nominative form of the same adjective.
 objectiveId=obj-u10-adjective
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other genitive row of the same word.
+distractorRationales= | хоро́шей is the feminine singular genitive form, so it does not supply the requested masculine singular nominative form.
 testedFeature=GENITIVE_ADJECTIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-adjective-1
@@ -3581,8 +3691,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-adjective-7
 distractorSourceIds= | prov-ex-or-u10-adjective-9
-distractorDifference= | This form is the other genitive row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | хоро́шей is the feminine singular genitive form, so it does not supply the requested masculine singular nominative form.
+whyAnswerDemonstratesObjective=хоро́шего is the masculine singular genitive form; хоро́ший is the masculine singular nominative form of the same adjective.
 contrastMembers=хоро́ший | хоро́шей
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-adjective-8 | prov-ex-or-u10-adjective-7 | prov-ex-or-u10-adjective-9
@@ -3595,19 +3705,19 @@ relationParticipantIds=prov-ex-or-u10-adjective-8 | prov-ex-or-u10-adjective-7 |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ec44ef65c3f00322466ab58e7085f5f41923aff0044e467d9bdb721107e3c91f
+- Content hash: 9bf28603d07f4cac21523777d216fdd05234903bb8ef4ed1d8408bb5d9520fc0
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the genitive row of the shown form?
+prompt=Which masculine singular genitive form of the same adjective corresponds to the shown form?
 promptLetter=но́вый
 options=но́вого | но́вой | но́вых
 answer=но́вого
-feedback=Does the admitted record show the governed contrast? но́вого.
+feedback=но́вый is the masculine singular nominative form; но́вого is the masculine singular genitive form of the same adjective.
 objectiveId=obj-u10-adjective
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other genitive row of the same word. | This form is the plural genitive row of the same word.
+distractorRationales= | но́вой is the feminine singular genitive form, so it does not supply the requested masculine singular genitive form. | но́вых is the plural genitive form, so it does not supply the requested masculine singular genitive form.
 testedFeature=GENITIVE_ADJECTIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-adjective-2
@@ -3615,8 +3725,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-adjective-4
 distractorSourceIds= | prov-ex-or-u10-adjective-5 | prov-ex-or-u10-adjective-6
-distractorDifference= | This form is the other genitive row of the same word. | This form is the plural genitive row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | но́вой is the feminine singular genitive form, so it does not supply the requested masculine singular genitive form. | но́вых is the plural genitive form, so it does not supply the requested masculine singular genitive form.
+whyAnswerDemonstratesObjective=но́вый is the masculine singular nominative form; но́вого is the masculine singular genitive form of the same adjective.
 contrastMembers=но́вого | но́вой | но́вых
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-adjective-3 | prov-ex-or-u10-adjective-4 | prov-ex-or-u10-adjective-5 | prov-ex-or-u10-adjective-6
@@ -3629,19 +3739,19 @@ relationParticipantIds=prov-ex-or-u10-adjective-3 | prov-ex-or-u10-adjective-4 |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: da56b546a1c5fd9daf3312d5321461906677ecfc64ce0990c885b601ae2fb088
+- Content hash: abf9e3a5dc7b5bc6519727f42e7e5aa1a9218f2558536ee10962cd5ca02bdb92
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the genitive row of the shown form?
+prompt=Which masculine singular genitive form of the same adjective corresponds to the shown form?
 promptLetter=хоро́ший
 options=хоро́шего | хоро́шей
 answer=хоро́шего
-feedback=Does the admitted record show the governed contrast? хоро́шего.
+feedback=хоро́ший is the masculine singular nominative form; хоро́шего is the masculine singular genitive form of the same adjective.
 objectiveId=obj-u10-adjective
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other genitive row of the same word.
+distractorRationales= | хоро́шей is the feminine singular genitive form, so it does not supply the requested masculine singular genitive form.
 testedFeature=GENITIVE_ADJECTIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-adjective-3
@@ -3649,8 +3759,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-adjective-8
 distractorSourceIds= | prov-ex-or-u10-adjective-9
-distractorDifference= | This form is the other genitive row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | хоро́шей is the feminine singular genitive form, so it does not supply the requested masculine singular genitive form.
+whyAnswerDemonstratesObjective=хоро́ший is the masculine singular nominative form; хоро́шего is the masculine singular genitive form of the same adjective.
 contrastMembers=хоро́шего | хоро́шей
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-adjective-7 | prov-ex-or-u10-adjective-8 | prov-ex-or-u10-adjective-9
@@ -3663,7 +3773,7 @@ relationParticipantIds=prov-ex-or-u10-adjective-7 | prov-ex-or-u10-adjective-8 |
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ea164ac4fa48647f3c5b01d65ed7ebe28f58f44ab3d3a7f54f64a6506b5d263c
+- Content hash: a7914a35773c1cb246b3da2d7a3d2d602f84694bb6749554eb691decd9b6036c
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3671,11 +3781,11 @@ prompt=Which admitted form is the other plural row of the shown form?
 promptLetter=этих женщин
 options=Эти женщины | этих женщин
 answer=Эти женщины
-feedback=Does the admitted record show the governed contrast? Эти женщины.
+feedback=Эти женщины is the nominative plural subject phrase in the source example meaning These women like me. The shown этих женщин is the animate plural accusative object phrase in I like these women, with genitive-like forms. The other row requested here is the nominative subject form.
 objectiveId=obj-u10-animate
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the object row of the same word, not the other plural row.
+distractorRationales= | этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested other row is the nominative subject phrase.
 testedFeature=ANIMATE_PLURAL_OBJECT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-animate-1
@@ -3683,8 +3793,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-animate-1-ru
 distractorSourceIds= | prov-ex-u10-animate-0-ru
-distractorDifference= | This form is the object row of the same word, not the other plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested other row is the nominative subject phrase.
+whyAnswerDemonstratesObjective=Эти женщины is the nominative plural subject phrase in the source example meaning These women like me. The shown этих женщин is the animate plural accusative object phrase in I like these women, with genitive-like forms. The other row requested here is the nominative subject form.
 contrastMembers=Эти женщины | этих женщин
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-animate-0-ru | prov-ex-u10-animate-1-ru | prov-ex-u10-animate-0-ru
@@ -3697,19 +3807,19 @@ relationParticipantIds=prov-ex-u10-animate-0-ru | prov-ex-u10-animate-1-ru | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a10e7f0d36d6688a69a0734f8ca437f95a816e77bbdf68aa260c4d572c773013
+- Content hash: 8fee71f773002b5f6c4616066180cd8fb925fe3258dfd4449a34893ae883e17e
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which plural accusative form of the same noun corresponds to the shown form?
 promptLetter=же́нщины
 options=же́нщин | же́нщины
 answer=же́нщин
-feedback=Does the admitted record show the governed contrast? же́нщин.
+feedback=же́нщины is the plural nominative form; же́нщин is the plural accusative form of the same noun.
 objectiveId=obj-u10-animate
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other plural row of the same word, not the object row.
+distractorRationales= | же́нщины is the plural nominative form, so it does not supply the requested plural accusative form.
 testedFeature=ANIMATE_PLURAL_OBJECT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-animate-2
@@ -3717,8 +3827,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-animate-2
 distractorSourceIds= | prov-ex-or-u10-animate-3
-distractorDifference= | This form is the other plural row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | же́нщины is the plural nominative form, so it does not supply the requested plural accusative form.
+whyAnswerDemonstratesObjective=же́нщины is the plural nominative form; же́нщин is the plural accusative form of the same noun.
 contrastMembers=же́нщин | же́нщины
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-animate-3 | prov-ex-or-u10-animate-2 | prov-ex-or-u10-animate-3
@@ -3731,19 +3841,19 @@ relationParticipantIds=prov-ex-or-u10-animate-3 | prov-ex-or-u10-animate-2 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b9f06b7548678cd61cb2eb57ff67cc23c1313ab73bd9624b4e7b8d26bd36a64f
+- Content hash: 7754e7d1936f10e81415947757542af77e3f7a199b12427ad23252e56fe46fe6
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which plural accusative form of the same noun corresponds to the shown form?
 promptLetter=бра́тья
 options=бра́тьев | бра́тья
 answer=бра́тьев
-feedback=Does the admitted record show the governed contrast? бра́тьев.
+feedback=бра́тья is the plural nominative form; бра́тьев is the plural accusative form of the same noun.
 objectiveId=obj-u10-animate
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other plural row of the same word, not the object row.
+distractorRationales= | бра́тья is the plural nominative form, so it does not supply the requested plural accusative form.
 testedFeature=ANIMATE_PLURAL_OBJECT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u10-animate-3
@@ -3751,8 +3861,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u10-animate-5
 distractorSourceIds= | prov-ex-or-u10-animate-4
-distractorDifference= | This form is the other plural row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | бра́тья is the plural nominative form, so it does not supply the requested plural accusative form.
+whyAnswerDemonstratesObjective=бра́тья is the plural nominative form; бра́тьев is the plural accusative form of the same noun.
 contrastMembers=бра́тьев | бра́тья
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u10-animate-4 | prov-ex-or-u10-animate-5 | prov-ex-or-u10-animate-4
@@ -3774,6 +3884,4250 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=6
 searchTerms=units 6-10 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-10-214`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a7e7a2bfa2ed302935f0a7b5ea66b711c259956b175e25415f7e12669088e71
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:ex-u10-animate-0:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+этих женщин
+shippedText=этих женщин
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e6b66a94cba5cebb8b5a08c77f3a28373d32fff3b930e8de29a10dfd7fdc1630
+contentHash=81735c19e06c3d8e652c4c2245f26b2a62b383425f0e799773eccd0c8123fa09
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-10-215`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a574aa52b3242e3102f4704ca824b880ddce3c3065385cb0a98a733deb231e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:ex-u10-animate-0:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+these women, accusative or genitive plural, context not a full sentence
+shippedText=these women, accusative or genitive plural, context not a full sentence
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=04af7a318b1ce6c23f6edd26c47cad56850a2f33781b8c19ed208d0de369287e
+contentHash=51a4c21cfa68bb97d5fc9e652f33560e84540491a51e2f7607cd90d9570ac2c8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-10-216`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c188b132cd5f5c06e465156399a053c59fb1ee6ea8cf23249d9c2f30a2ac739f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:ex-u10-animate-0:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+этих женщин — these women, accusative or genitive plural, context not a full sentence
+shippedText=этих женщин — these women, accusative or genitive plural, context not a full sentence
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a735be2ce27378d0759d985b23279511262e14d99c2591d6114d4c7a81d4a1bd
+contentHash=c5393f2a8f03904e48dc93f47b2dae8d5ed73fb9957f54a9fbce1d9886cdcf99
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-10-217`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d01bd45735bfbda1a911503b35af5b8c19194ca53692e441e1dabc0085c4138c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:ex-u10-animate-1:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Эти женщины
+shippedText=Эти женщины
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9d7b679b19d1ff136e8cf167df1f3d4f9f4e2e32d20995963304d9dda0468adf
+contentHash=e63eb84d750d37994e889baffeba699198fbc15d5b023583813b54a92b9b2e83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-10-218`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 28af278ce83998d29a8f9f34bedb2c6803009c344e3fb43b5a2f7f96ad75468c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:ex-u10-animate-1:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+these women, nominative plural
+shippedText=these women, nominative plural
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c1b979290a205c336e675b2cf57b8b3d7bed6d2e5acaa465f7a1b3bb193cc50c
+contentHash=1e5f62e2494989f69b417d1994e152b9e65b597b297260e55e2a3e595f30d3ee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-10-219`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb6f7ea55d144d0890acb69e569543ad34453df937828b1c984b1a3f444318d1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:ex-u10-animate-1:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Эти женщины — these women, nominative plural
+shippedText=Эти женщины — these women, nominative plural
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=966de219ee861d9bd8d6ba53d1c51b85e44d5c3a65b6c1ebbd5892e72d35d1b9
+contentHash=fc335a5bb77991acbf6415c72f3542aff9f7e70dbe8645d7dee627aec6fe7a0b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-10-43`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e1debd36d419709529d0059af2bd1d08c2b9b4707f2f476e90fcc747d6c4dbe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:u10-st-teach-animate-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-g-adjective-0-1`
+
+- Objectives: obj-u10-adjective
+- Sessions: u10-s-orient, u10-s-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61764534fb9cf5bcc2683483440a4e5af10fb3991cdbb52957ad466bac28f9e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-adjective:u10-g-adjective-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:новый#decl_m_gen; adjectives.csv:новый#decl_m_nom; adjectives.csv:новый#decl_f_gen. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+но́вого is the masculine singular genitive form; но́вый is the masculine singular nominative form of the same adjective.
+shippedText=но́вого is the masculine singular genitive form; но́вый is the masculine singular nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11bba0a6c2b61b26ee10e7491f7bc56b6313d6aea39f7bcb2351b8bb756a77ef
+contentHash=81ed597517ad7cdb5a7b543f2369bdeccdf6c35dc3b6ddef44af8ee6ef355e9e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-g-adjective-0-3`
+
+- Objectives: obj-u10-adjective
+- Sessions: u10-s-orient, u10-s-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: acef24c639d982c640649d211513c1b736d6b4ccf84163380e2609a373c42b94
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-adjective:u10-g-adjective-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:новый#decl_m_gen; adjectives.csv:новый#decl_m_nom; adjectives.csv:новый#decl_f_gen. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+но́вой is the feminine singular genitive form, so it does not supply the requested masculine singular nominative form.
+shippedText=но́вой is the feminine singular genitive form, so it does not supply the requested masculine singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25152b21f7eda7f6943e89f2a6a77a2c01999408789449d0afd56f8d5681ae81
+contentHash=02241e0a9ea71de150f777835709d05469f53b47fe901a7291c18ba4f7dde7cd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-g-preposition-0-0`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cc173d31f5af4f1c1e772e3be8a1be2c5222cea4907d7a8c52739ebf8220aae3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-g-preposition-0:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:молоко#sg_nom; nouns.csv:молоко#sg_gen; nouns.csv:молоко#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which singular genitive form of the same noun corresponds to the shown form?
+shippedText=Which singular genitive form of the same noun corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bed193be93d8f5d2d5327fbbe85b90c0da99aa811735a179f6f50a6ed9fd9219
+contentHash=e10a96308ef175b74f16f837d195679e783c31beb9e55369c1047e076d914b7d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-g-preposition-0-1`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b937fa93a24943add227137db53dee83f1ab65d9fdc234d0a72cb1fef498b736
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-g-preposition-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:молоко#sg_nom; nouns.csv:молоко#sg_gen; nouns.csv:молоко#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+молоко́ is the singular nominative form; молока́ is the singular genitive form of the same noun.
+shippedText=молоко́ is the singular nominative form; молока́ is the singular genitive form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf568fe4979c15c0feae30f30ac5d036f240c7bdf3ffc34ae4eeec922f216d1e
+contentHash=666a22970ee3522af1adb3b9cda770f0308d001792c8f5f7046042eeee48ab15
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-g-preposition-0-3`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 08f422a4401d4062b3f5e0394a40e6f821e843c7997a8bc81ff29b8a633e0297
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-g-preposition-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:молоко#sg_nom; nouns.csv:молоко#sg_gen; nouns.csv:молоко#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+молоко́ is the singular nominative form, so it does not supply the requested singular genitive form.
+shippedText=молоко́ is the singular nominative form, so it does not supply the requested singular genitive form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a328e2ed108487cd377516258248e51f0d573f85f5cf0957a0d67da444559633
+contentHash=8607b3b2da5e6fe9dbe4699221717bd55a8338dfb0c0382dcb4b93919371a257
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-adjective-1-1`
+
+- Objectives: obj-u10-adjective
+- Sessions: u10-s-orient, u10-s-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ba21eca5024dd21cc2979bb780191605fa8e182210854874b6a1c1ee85ca848
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-adjective:u10-i-adjective-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_m_gen; adjectives.csv:хороший#decl_m_nom; adjectives.csv:хороший#decl_f_gen. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шего is the masculine singular genitive form; хоро́ший is the masculine singular nominative form of the same adjective.
+shippedText=хоро́шего is the masculine singular genitive form; хоро́ший is the masculine singular nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d6e6a7c7da0cd80101fe8ffc98f9be04d1a82ed2c0094d944a47121e22cd6a7a
+contentHash=9f8fb884cf33d258a013b66ed1d14eff42bcdaf1ba344c3f978b04da32250e1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-adjective-1-3`
+
+- Objectives: obj-u10-adjective
+- Sessions: u10-s-orient, u10-s-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9961105169c668e2fafae8a6d100de56b1adaabf69f7e82a09b616016af05aa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-adjective:u10-i-adjective-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_m_gen; adjectives.csv:хороший#decl_m_nom; adjectives.csv:хороший#decl_f_gen. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шей is the feminine singular genitive form, so it does not supply the requested masculine singular nominative form.
+shippedText=хоро́шей is the feminine singular genitive form, so it does not supply the requested masculine singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=98afdf1b452dbf6985fa3bd479fac80cdc6a6dedfa6a27908ff58ed4f528011c
+contentHash=2ac691efc90a31699af9bd8efb08717c16f7e0447899ee6f585596f17bbc25bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-adjective-2-1`
+
+- Objectives: obj-u10-adjective
+- Sessions: u10-s-orient, u10-s-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45a7df611e06c53a43820f72fe6a0279dd9003453d73142fd799b83737329ed9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-adjective:u10-i-adjective-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:новый#decl_m_nom; adjectives.csv:новый#decl_m_gen; adjectives.csv:новый#decl_f_gen; adjectives.csv:новый#decl_pl_gen. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+но́вый is the masculine singular nominative form; но́вого is the masculine singular genitive form of the same adjective.
+shippedText=но́вый is the masculine singular nominative form; но́вого is the masculine singular genitive form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1019d99c28b6e4f1d091510743ed508d1b891084401691ea96723505021fa780
+contentHash=99b5831e91ed89f30ffc55eb03d39b7fa01a3cec2638ded415d169b34a9da57e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-adjective-2-3`
+
+- Objectives: obj-u10-adjective
+- Sessions: u10-s-orient, u10-s-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25b8a58e8c662d048e954dd171beee4bf7e54b9353440823dd2cd3d873cd7819
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-adjective:u10-i-adjective-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:новый#decl_m_nom; adjectives.csv:новый#decl_m_gen; adjectives.csv:новый#decl_f_gen; adjectives.csv:новый#decl_pl_gen. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+но́вой is the feminine singular genitive form, so it does not supply the requested masculine singular genitive form.
+shippedText=но́вой is the feminine singular genitive form, so it does not supply the requested masculine singular genitive form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=540efc3da61284c04880343a32e4a7d07c0ad1ef699ef7122b3770ddefaf0cca
+contentHash=eab4aee347ec74e61a683597d3abf26d884e4c1ce1c1d37cbcb680efffd0fe43
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-adjective-2-4`
+
+- Objectives: obj-u10-adjective
+- Sessions: u10-s-orient, u10-s-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b5f0a1e8391de79499ed3679d0b0cbdc090c4853317700532308d0b5b50d26c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-adjective:u10-i-adjective-2:declension-explanation:4
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:новый#decl_m_nom; adjectives.csv:новый#decl_m_gen; adjectives.csv:новый#decl_f_gen; adjectives.csv:новый#decl_pl_gen. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+но́вых is the plural genitive form, so it does not supply the requested masculine singular genitive form.
+shippedText=но́вых is the plural genitive form, so it does not supply the requested masculine singular genitive form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2475824add10e2499b05dd7a00402f106cf5af8afd6f6fc62aa3dcb27fa4e856
+contentHash=3abc8156c096bdf89d15fab6e80ad2c22b5ecfa4fd11529fc3cdfc0833a9f345
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-adjective-3-1`
+
+- Objectives: obj-u10-adjective
+- Sessions: u10-s-orient, u10-s-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1df8c481b970091bde87462ac9f81c34be7f803675c87d1af41e72276e76095
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-adjective:u10-i-adjective-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_m_nom; adjectives.csv:хороший#decl_m_gen; adjectives.csv:хороший#decl_f_gen. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́ший is the masculine singular nominative form; хоро́шего is the masculine singular genitive form of the same adjective.
+shippedText=хоро́ший is the masculine singular nominative form; хоро́шего is the masculine singular genitive form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=99a291a192019c24c972aeb07e602f1c9958229b34c0146293e7cb9210d3987c
+contentHash=fb8eb44e9472e8d9d4d66d072fdfbf6541e0ed061d5ed8a859d715219673ea9f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-adjective-3-3`
+
+- Objectives: obj-u10-adjective
+- Sessions: u10-s-orient, u10-s-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e33d182b6522fecc69340157ed403f68fee93686f79610d57c159b451de64c01
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-adjective:u10-i-adjective-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_m_nom; adjectives.csv:хороший#decl_m_gen; adjectives.csv:хороший#decl_f_gen. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шей is the feminine singular genitive form, so it does not supply the requested masculine singular genitive form.
+shippedText=хоро́шей is the feminine singular genitive form, so it does not supply the requested masculine singular genitive form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4fe7fdfd955b4b077b90c73ac7c4ad849c998679278278287ad909adbefd2c53
+contentHash=d09686cff0d067bc3620afa1ab9ad2eed363d48f75fe06cf0404c4213a0c51f7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-animate-2-0`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b21d9e8126187478c0eb9d21dee0b6e78088fcbb61c188b0fafc6b779ea4502f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:u10-i-animate-2:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:женщина#pl_nom; nouns.csv:женщина#pl_acc; nouns.csv:женщина#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which plural accusative form of the same noun corresponds to the shown form?
+shippedText=Which plural accusative form of the same noun corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b6acc9def7b08a50d9ccdf338d30fd34526905a473d89bbc457b172f3b417312
+contentHash=4ba77bafee26ce5b8f517561a2be6eba294222fcee45ccd45a9f6d462a3aff7a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-animate-2-1`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b566a021fbf122435193f2800d4e6c605ed67de6c8ff8a9384997bf1b1013fa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:u10-i-animate-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:женщина#pl_nom; nouns.csv:женщина#pl_acc; nouns.csv:женщина#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+же́нщины is the plural nominative form; же́нщин is the plural accusative form of the same noun.
+shippedText=же́нщины is the plural nominative form; же́нщин is the plural accusative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aba5037f43297c37d8c9e94d9550ffea25ea9b31a5a8c7effee16f142ad784e3
+contentHash=81b9d6b894e2d63ad775e15b4d29af5250b8f3358f6ce6570943a14d8004df0f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-animate-2-3`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b423e1450957d00dc8660d790f204c5a63191303130bd0abbb18ebb8cb38136
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:u10-i-animate-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:женщина#pl_nom; nouns.csv:женщина#pl_acc; nouns.csv:женщина#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+же́нщины is the plural nominative form, so it does not supply the requested plural accusative form.
+shippedText=же́нщины is the plural nominative form, so it does not supply the requested plural accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9c7179cf50974dbff80da560047b4a8db20175c557b9522f3c3a5e6bf171dece
+contentHash=9bf6de951418bc57ac63cdbd7b909dc9f9c27d413d818d14904de3e60ecc2bb2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-animate-3-1`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8363cc00c06a7906664961a71f34ea83a73adbd8048d620cd354b88be0ba34a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:u10-i-animate-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#pl_nom; nouns.csv:брат#pl_acc; nouns.csv:брат#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+бра́тья is the plural nominative form; бра́тьев is the plural accusative form of the same noun.
+shippedText=бра́тья is the plural nominative form; бра́тьев is the plural accusative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce94a81fe5c3adc8baea77b598b48dc2623679c1c8746ad71313c6ae4f18a428
+contentHash=09a2e93c5393dcf764dbc109e1e7590e4c5e2c5ad0e13381897fa0400f1c53c8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-animate-3-3`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1df34d1130f9f35d1c2a057326f12bd9b69f84a9f3a93d71fd4ee38c7235beea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:u10-i-animate-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#pl_nom; nouns.csv:брат#pl_acc; nouns.csv:брат#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+бра́тья is the plural nominative form, so it does not supply the requested plural accusative form.
+shippedText=бра́тья is the plural nominative form, so it does not supply the requested plural accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb91e3c344692ee73a793940fc459347dfa3cd90235d53a275de1098568d5748
+contentHash=5fcb7c2fb160bf782c45d45739cb9400550b8824aa1c0a60265bc8a3f2b953a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-1-1`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa714ff8f65a92d6ff47721d1caa24f3e3a619421a50383b6cbc3270bd72292f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:окно#sg_nom; nouns.csv:окно#sg_gen; nouns.csv:окно#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+окно́ is the singular nominative form; окна́ is the singular genitive form of the same noun.
+shippedText=окно́ is the singular nominative form; окна́ is the singular genitive form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=14bd6bfbfdfbd6ccf5ab685b1726275e60563fc3367ab3515f5bd3d4ed67010b
+contentHash=514b6af1ede988e5c5c9bf0dd4aac7198a4d6a6fd9a7561e5b608e9b0bbc6d9d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-1-3`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 779679c0edc8e7d9c58fb7b0e641b5f8d5fb170c0de36e575543121f5394a00a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:окно#sg_nom; nouns.csv:окно#sg_gen; nouns.csv:окно#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+окно́ is the singular nominative form, so it does not supply the requested singular genitive form.
+shippedText=окно́ is the singular nominative form, so it does not supply the requested singular genitive form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8c0cadcc5e75d629990595a90afa3cc8caa5872d015d4913211d1ec5ce323aed
+contentHash=13a7fd7d29f6db95fe158ceebae2cb1f28fb7dd490081c89f7dd66b514adc745
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-2-1`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a17c70bfa6ac37c43743c063dbd1399846bca6befcd2e070a38c75c44c0d26cf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#sg_gen; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+друг is the singular nominative form; дру́га is the singular genitive form of the same noun.
+shippedText=друг is the singular nominative form; дру́га is the singular genitive form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=94925a800dc9c379290a9c4bb0bd4304c5d946a540ce1b2850aecccf73edfbfc
+contentHash=99bf632e9707cd0efac28acc3e8ef5027db8edfc2bfbedeffee386cbca1e0e76
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-2-3`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd8c9470de71ab85057b3213b1ab09707b4db6e72391891710d45aa914256680
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#sg_gen; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+друг is the singular nominative form, so it does not supply the requested singular genitive form.
+shippedText=друг is the singular nominative form, so it does not supply the requested singular genitive form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f75ad6e392e7342a7d54c76978eb909cecfa0656d7584788a0fe3f36355597d5
+contentHash=4f454504ad94085997901728274fb91b877663c6fba81f25a384bb017ef8c60d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-3-0`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d60a2cdf81cf0d51a5236cb9359fded28b53147e9bd73b1c7a551fe42cb2819d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-3:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which masculine singular genitive form of the same adjective corresponds to the shown form?
+shippedText=Which masculine singular genitive form of the same adjective corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e91291453abcd1c096bd93e783a75b0388ded15574a12a4f07864a305b7095e0
+contentHash=c9f85d8390ad07f0d1b4e1950a04f93fdd3e43bfdf8573d834fd663bf385ea2d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-3-1`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f970a18b54fc4ac68be6eb5c45dad4f12e955c276d45a0c062bc171c208e8c19
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+мо́й is the masculine singular nominative form; моего́ is the masculine singular genitive form of the same adjective.
+shippedText=мо́й is the masculine singular nominative form; моего́ is the masculine singular genitive form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a385a9daf3b5f92a6288172d3fff8614e6bb89b28fcd05c3f05b09dca338c0d9
+contentHash=7df7c2836cd15fce449272cc217748b5003f8f6322960ddfe749ce9024ee8561
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-3-3`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: faf74a9f288451c7e860accbdff971765e8b88fe6c2a10ef99cb1f1e2bec6462
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+моя́ is the feminine singular nominative form, so it does not supply the requested masculine singular genitive form.
+shippedText=моя́ is the feminine singular nominative form, so it does not supply the requested masculine singular genitive form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d2997ecd588ad6507aa847ffeb3fb8b28fb272bd0872f9d591f9ab14ca3ddf17
+contentHash=4b50f95af1045f119b95c5f4295242ff13543e54f72e313adb90d5dead320e94
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-4-0`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4a7e3f4532ca6e7dabdb876cc0add025489566fd7cbe54bb3312d4569a78a38
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-4:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
+shippedText=Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=81d423896741dc3097f35e33e1642884d2bffc98f8fdbcca9f2d6a5748f9c8a6
+contentHash=52d076797bee9ff08907e23f4ed5ebee71db99d7d4d294ba32f8ee19797c3176
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-4-1`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e40291af8577828bea3278cf6184439e013e96c378920b6c0bf73a9bb95dd42
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-4:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+моего́ is the masculine singular genitive form; мо́й is the masculine singular nominative form of the same adjective.
+shippedText=моего́ is the masculine singular genitive form; мо́й is the masculine singular nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=09db90b9c8b4a78ffa4f96e6427daaed18b023097e9c45b168afb138f7aece2f
+contentHash=f0fd60d91f93a4fd5276c371619f500ae016dfb3280535604a8568f778ab5825
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-4-3`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4136c00d34ebd502e8e7e69518d343dfac99ad9ab91611156c9a1440118eb61d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-4:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+моего́ is the masculine singular genitive form, so it does not supply the requested masculine singular nominative form.
+shippedText=моего́ is the masculine singular genitive form, so it does not supply the requested masculine singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6d39c3a28aa0eeab1cb978ea8f5f6f0649fdd72aea29aaca5ace951ce29dae3b
+contentHash=29e29f31a9afd21b1ab793f31bae8514801efe0e70b7e07d107b2962cac57bf4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u10-i-preposition-4-4`
+
+- Objectives: obj-u10-preposition
+- Sessions: u10-s-orient, u10-s-preposition
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7430bef64cabf74ff07b42d8afa176b72d65627b95d56d41dc7f5a50a4e7b636
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-preposition:u10-i-preposition-4:declension-explanation:4
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_m_gen; adjectives.csv:мой#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+моя́ is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.
+shippedText=моя́ is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aeeacdfda1b3b6bafc2d728d9616c0894cc59c4d1dcf0d788f8740b8ab0a1490
+contentHash=372bc315f39466866b67284d7933bbf0d52fa44fd717f1fac3567f49e74491f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-absence-0-0`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 209184bb696fc678cdf1d0cb707d4eba39d61ee2c85cee4645b6e4b5243a5928
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-g-absence-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;31:У меня́ нет сы́на55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=У меня́ нет сы́на
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f
+contentHash=3271c3390c7fbe85fcd481027a6832e6c911f7da27f3b4cd88985887bf7232ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-absence-0-1`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 798fc2e69e385939fa7d948f416f844ae7ca192e14f50c6a72efbbc487340958
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-g-absence-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;31:У меня́ нет сы́на55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-absence-0-2`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d652ddb924193302fb74f7ea3e07afc312b6c3a9f7843edca871cbe4eac6dcd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-g-absence-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;31:У меня́ нет сы́на55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the possessor is genitive and the possessed thing is nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f
+contentHash=e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-absence-0-feedback`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 49dafbbd7a37015db318bc7be787832c17ee2e0686da1b22df9c3223eac7ff5b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-g-absence-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+shippedText=У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=69576087936b938032b2ee325e5606894fe9633b462dafe5de85589b6619ff94
+contentHash=a9194670044dfb9cd6e3cb163254ddebb569c6463ae83f56dcf1dd8817c5f927
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-absence-0-prompt`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9a5f2a7e91d521307c2670340c57adba0f60b9ccc4c80db47c2b4352edce81d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-g-absence-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-absence-0-rationale`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9de7816544e7043486c459e94509199c6fa2c73e484122695876add2a84a952
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-g-absence-0-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation asserts presence or simple possession rather than the absence shown here.
+shippedText=The other explanation asserts presence or simple possession rather than the absence shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d5c295d718c2b5ab4829c532093cf1e86abeae5a69bcb196f89eb062368f595
+contentHash=937e7014c6001cedb4050483baa44bf31c472952d4cd41b6e9d4e7f21176cb36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-have-0-0`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26768f324a1cc565e4be4e50353ff769b12aced5cf749962165367e57a4cd984
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-g-have-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У меня есть Х uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;23:У меня есть Х78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=У меня есть Х
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=491543136e5d0103914655386150d3d8968ef58b0be8ad34ea1cf897022fd1ea
+contentHash=7e62433c5fd78bb66f32c9c9cd53b463dcb7e74afa4fe51319582613f300be56
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-have-0-1`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fea008c8dc4dfcb7a999964753d848a436bf0542f463f6851ce73951938b388e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-g-have-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У меня есть Х uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;23:У меня есть Х78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the possessor is genitive and the possessed thing is nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=491543136e5d0103914655386150d3d8968ef58b0be8ad34ea1cf897022fd1ea
+contentHash=e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-have-0-2`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa8cecafff4e9d8fc4f766abf96dac56f89810611d41a301cac00947aaf103e7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-g-have-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У меня есть Х uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;23:У меня есть Х78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=491543136e5d0103914655386150d3d8968ef58b0be8ad34ea1cf897022fd1ea
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-have-0-feedback`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 961576c55152b53815c8f432c621e24247b6def0c877e109bf7902fe44e6224b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-g-have-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+У меня есть Х uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+shippedText=У меня есть Х uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=846a26e224b3e7aae9c3dca5d9d6d6fd54d8ab422c519beb2bfb2b4487853ec1
+contentHash=391c9a2b7d3d65b7919d1e8f8ffd72a63675da041384f8edc6919cf6c3d302f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-have-0-prompt`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd84cb00ee4ee880fed186b021028fa8245d33316d35f50388b5fc5e37957dcc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-g-have-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-g-have-0-rationale`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4dda91c02d4e1a962de27638d64b00f160eeb8bf6a3e6da8319a8fc21eecc08e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-g-have-0-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation describes absence rather than the presence or simple possession shown here.
+shippedText=The other explanation describes absence rather than the presence or simple possession shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adb6b0c59cb348ef16b6c824784fd6466e3ab2ca6da7ad850dfe5bfbf933cd33
+contentHash=b4600d802d7db3baff3ab7f4cb71aef97260fb953275ada54921983aa191e7ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-1-0`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4fb191e41986cdc5cb8e20df99e03edd7a8c6dcc49661062554243f760ab6b5c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;29:Нет рестора́нов55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=Нет рестора́нов
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b8d9bca0cf40ae4e8d7610a43c514c9fbe25a6b876729b74de4375f33a593b00
+contentHash=a297a66555ed1f3f1734bc4d6eb6dcc52e6b910186adf5c42f4d21b4358b1b05
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-1-1`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80d19e69d12ae968dfb0350d684c27628b012f24fe1b811b7d6914597d8d4c40
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;29:Нет рестора́нов55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b8d9bca0cf40ae4e8d7610a43c514c9fbe25a6b876729b74de4375f33a593b00
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-1-2`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66c762f8b7f35243cd4d5f760609b98eb6063aaf9aef4bd14b70a7fcfaa32e48
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;29:Нет рестора́нов55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the possessor is genitive and the possessed thing is nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b8d9bca0cf40ae4e8d7610a43c514c9fbe25a6b876729b74de4375f33a593b00
+contentHash=e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-1-feedback`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 426a8587b74c50d504d77a0e569c94f3c8b153e668f316d6deb917f1e82d0743
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+shippedText=Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f802030e6ac299975c131b59cbd3564b5cc353f2ed8c435530f9bf9df997f769
+contentHash=a1f961eed3056584b688faaead231dfcc272becf164d63a2de1963c4d8be7d4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-1-prompt`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c98136f0316cf606d657371fa7f46b6ac81c8ff876e6d20614d112a0093bed28
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-1-rationale`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00bbf44e528e672b892a56a727089e638fa5c7386bf8fffc73845186638c6044
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-1-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation asserts presence or simple possession rather than the absence shown here.
+shippedText=The other explanation asserts presence or simple possession rather than the absence shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d5c295d718c2b5ab4829c532093cf1e86abeae5a69bcb196f89eb062368f595
+contentHash=937e7014c6001cedb4050483baa44bf31c472952d4cd41b6e9d4e7f21176cb36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-2-0`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f52682c6bc622934f9fb8bc0991071f361ace026e3b0683ba431f17649f9daaa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;54:В Москве́ нет ста́рых зда́ний55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=В Москве́ нет ста́рых зда́ний
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f71fdb0cf1147171f2def872d028382337d74641aa2f94a4b20d0cb781bc51fc
+contentHash=71cfe1f3e16ccd19bb427a345fd4afd17d51554c2e2f7cdf6d5fe80cd9214b4f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-2-1`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d6b36216221df9af82eb7d5fa3dfebd855fb6de1a399116c5e5325852f2de6f1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;54:В Москве́ нет ста́рых зда́ний55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f71fdb0cf1147171f2def872d028382337d74641aa2f94a4b20d0cb781bc51fc
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-2-2`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97b80b63af724c6cadfe0307bb9526ccc0882c93e87cadf9fe8568c01aea66ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;54:В Москве́ нет ста́рых зда́ний55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the possessor is genitive and the possessed thing is nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f71fdb0cf1147171f2def872d028382337d74641aa2f94a4b20d0cb781bc51fc
+contentHash=e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-2-feedback`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 978e2b8b0a2b7b62d1728525573a3674662492bb69fec1db9f72db505ceb8e00
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+shippedText=В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f796652272a4b6dfac092ee8c4b549dd387f158c1d0bbeefb2023c745b03146
+contentHash=b55c3a6b7d90d224f2e7c47aec9b3cb00841868a9fc71ba60b83167d98fba4e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-2-prompt`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fdc31fe15ccb14ea4bfc3c7dfee61ab043a44b7eda15602cd6edc50c6a38f75
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-2-rationale`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 854c308996dfdf2e9aa3f6a13d49c292018d06c40ae5a57ddec753f4f0de643f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-2-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation asserts presence or simple possession rather than the absence shown here.
+shippedText=The other explanation asserts presence or simple possession rather than the absence shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d5c295d718c2b5ab4829c532093cf1e86abeae5a69bcb196f89eb062368f595
+contentHash=937e7014c6001cedb4050483baa44bf31c472952d4cd41b6e9d4e7f21176cb36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-3-0`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3f1f3ff6092cb945563056414bc537b3ab82eb2cc7e5e2fe5a005f0addc7816
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;34:Да, у меня есть сын.78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=Да, у меня есть сын.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97
+contentHash=09c888d1ad8439903b4973308cfe8eb3a03eed03e44b907bcb53fdbab5791947
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-3-1`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eba50b3b0b6784c5aa58726ccc0ca6f03b168965a46f1debe81450acbb0e5c6e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;34:Да, у меня есть сын.78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the possessor is genitive and the possessed thing is nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97
+contentHash=e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-3-2`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f055123c009c1f6618b9a1eb677a61c8d1d8f5128b3c853b58d4d047cfc77d5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;34:Да, у меня есть сын.78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-3-feedback`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f40fac8951ed12ba3ed6ed99725f9ba67af6414987ea1e661b4265dd73d956bb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-3-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+shippedText=Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=39a97843b424e1c5a1c463eed5905f150161a3baefe016458fe71bbe3cd98163
+contentHash=1b158f479e75de09017db00364b84743ed56cddb5d27b32d706d5710569402ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-3-prompt`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97f731150ee98e27eb755f277dc46efc507808c1d048f1172c8b493686df75a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-3-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-3-rationale`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfdd6415953f8596ca2c025d521c220445b699e2a6fffe11851049e949d3a627
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-3-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation describes absence rather than the presence or simple possession shown here.
+shippedText=The other explanation describes absence rather than the presence or simple possession shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adb6b0c59cb348ef16b6c824784fd6466e3ab2ca6da7ad850dfe5bfbf933cd33
+contentHash=b4600d802d7db3baff3ab7f4cb71aef97260fb953275ada54921983aa191e7ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-4-0`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b00882cff029cf86ffc4c9280aab78e252fbb37b31e280b7ecf727e7232ace6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-4
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;48:У моего́ бра́та нет де́нег55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=У моего́ бра́та нет де́нег
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8
+contentHash=15d48d5726b52a14f481d34df4793abdcbd549fb068426ca8772ec6cf5c6e03f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-4-1`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b6ae6b96c49a1cee93d18ec99b71d7af9696392ecb994231afb731743b114ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-4
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;48:У моего́ бра́та нет де́нег55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-4-2`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 192ce253ef67cec05a15142fbeadf747e893889265be20141d5a6489a1656f01
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-absence-4
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;48:У моего́ бра́та нет де́нег55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the possessor is genitive and the possessed thing is nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8
+contentHash=e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-4-feedback`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e9357f68d5b0957dd8e205b3c1dde517b079fcf1aed76923d1454d2b936a45e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-4-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+shippedText=У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=257cf1efad7b1b1590807cad531e8ed2daef6a54b66b0105a681c536cdf91453
+contentHash=25db6171074eb6ec10bbc3c4cdbc668372bb6f789c18a272b35de1d870e0299e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-4-prompt`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ffde13854f9d7a34fa55373352a7422380c03fea8277fc010cd9f31e7e1295b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-4-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-absence-4-rationale`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06204c4109772f56230b159fbf936f321bf5bd64e9a3539234bd69ee6e56cfeb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-i-absence-4-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation asserts presence or simple possession rather than the absence shown here.
+shippedText=The other explanation asserts presence or simple possession rather than the absence shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d5c295d718c2b5ab4829c532093cf1e86abeae5a69bcb196f89eb062368f595
+contentHash=937e7014c6001cedb4050483baa44bf31c472952d4cd41b6e9d4e7f21176cb36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-1-0`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e228cc226e18f49d6f1f36c106b33ebe465b5b605c4d3d89b58cbd6bd506580a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;34:Да, у меня есть сын.78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=Да, у меня есть сын.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97
+contentHash=09c888d1ad8439903b4973308cfe8eb3a03eed03e44b907bcb53fdbab5791947
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-1-1`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64de890cff6d6b60b0cce665f3b16dacc44a7d55803602080e83ce0c783051a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;34:Да, у меня есть сын.78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the possessor is genitive and the possessed thing is nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97
+contentHash=e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-1-2`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70618223780992baa0d6b07a2672789b1bbea48ed38096487637f06ea22d4c7e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;34:Да, у меня есть сын.78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-1-feedback`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e6eafa7df4da2b596c2a9692b31714a8802539e86f26508191656b1cb1dd778
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+shippedText=Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=39a97843b424e1c5a1c463eed5905f150161a3baefe016458fe71bbe3cd98163
+contentHash=1b158f479e75de09017db00364b84743ed56cddb5d27b32d706d5710569402ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-1-prompt`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be3b35c11389c58cc02f00adf08a703dd710fbe97e05ddb33e628ddccc028195
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-1-rationale`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9eb586244835c51ec2080e57297110f515ea4fe4311749ae8e806310fc39f608
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-1-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation describes absence rather than the presence or simple possession shown here.
+shippedText=The other explanation describes absence rather than the presence or simple possession shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adb6b0c59cb348ef16b6c824784fd6466e3ab2ca6da7ad850dfe5bfbf933cd33
+contentHash=b4600d802d7db3baff3ab7f4cb71aef97260fb953275ada54921983aa191e7ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-2-0`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 927167a43c98a805ae4db176dee55b16f64a071588a028bc739d702c76c04fc5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У вас есть сын? uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;26:У вас есть сын?78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=У вас есть сын?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=125f6734d187e827eaee0f761146d8f7d56f723213c353bc5dcbafd148df1082
+contentHash=a703190a745ab124225aab59b1f2a5ee6b216bab2cc57675a3824a66b70a2f52
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-2-1`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9c4c10e7d0aa7eb530152a21e3b04f19b732d0d793d36c0ef1312837c9b71f35
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У вас есть сын? uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;26:У вас есть сын?78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the possessor is genitive and the possessed thing is nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=125f6734d187e827eaee0f761146d8f7d56f723213c353bc5dcbafd148df1082
+contentHash=e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-2-2`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c94a977fd351cf0ea89dc3b54586f3447dbc3c45944a304ab40def1efa3493ff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У вас есть сын? uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+Tuple-v1:tuple-v1:1;26:У вас есть сын?78:In this line, the possessor is genitive and the possessed thing is nominative.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=125f6734d187e827eaee0f761146d8f7d56f723213c353bc5dcbafd148df1082
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-2-feedback`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42290eaf4ed6d5b758a9b0946059a7671aef7ee946db1424fd9df52a4eeaecc7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+У вас есть сын? uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+shippedText=У вас есть сын? uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d164bffc693f2bc37c4b28b4ccb6d6bc5ba548180a7f0a522c0562d736c7d135
+contentHash=3512e1908f8a848df265e1438cb1777b9d6f18b3e44e1a2801a79fb2daed5b20
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-2-prompt`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a91297b9d5b0e0a612ded50d3e273fc8a5e25c86282a4fe0fb715559ea5e3059
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-2-rationale`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3805a53423c0605dee4465e44c3805a8c2842407cd3b5f81c8ff1e9720cf5181
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-2-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation describes absence rather than the presence or simple possession shown here.
+shippedText=The other explanation describes absence rather than the presence or simple possession shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adb6b0c59cb348ef16b6c824784fd6466e3ab2ca6da7ad850dfe5bfbf933cd33
+contentHash=b4600d802d7db3baff3ab7f4cb71aef97260fb953275ada54921983aa191e7ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-3-0`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 632c07a9750a8f065e0343b4d55f63677672f4c937f0c6991e06a6850600ab22
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;31:У меня́ нет сы́на55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=У меня́ нет сы́на
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f
+contentHash=3271c3390c7fbe85fcd481027a6832e6c911f7da27f3b4cd88985887bf7232ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-3-1`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 10f1ed677fa36116f5e2d0a74aac9d962538ac54ad90182b31c3c45f39775399
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;31:У меня́ нет сы́на55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-3-2`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db534cdf332275e141ed0fb3e37ea26d9135cf85febfdb0714153d9b50a292fd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;31:У меня́ нет сы́на55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the possessor is genitive and the possessed thing is nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f
+contentHash=e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-3-feedback`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f9cee1bc4a0fd432e07b4cd2b66e0842df5eed2aed9eb8f10d02d75ae6a50fd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-3-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+shippedText=У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=69576087936b938032b2ee325e5606894fe9633b462dafe5de85589b6619ff94
+contentHash=a9194670044dfb9cd6e3cb163254ddebb569c6463ae83f56dcf1dd8817c5f927
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-3-prompt`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3dba0e6b6b2ac9e436e7862a183951b27e3a3aab0002e56d49e3cb4f6b758244
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-3-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-3-rationale`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70a682c6bf9c3a7de119f487a1ff0e396aff8f7ad8591b3e620dd1a550609ba8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-3-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation asserts presence or simple possession rather than the absence shown here.
+shippedText=The other explanation asserts presence or simple possession rather than the absence shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d5c295d718c2b5ab4829c532093cf1e86abeae5a69bcb196f89eb062368f595
+contentHash=937e7014c6001cedb4050483baa44bf31c472952d4cd41b6e9d4e7f21176cb36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-4-0`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbc3a78354550cc63563c66da46c98152929b1896ee56d769ed4e51c42ea5218
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-4
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;48:У моего́ бра́та нет де́нег55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=У моего́ бра́та нет де́нег
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8
+contentHash=15d48d5726b52a14f481d34df4793abdcbd549fb068426ca8772ec6cf5c6e03f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-4-1`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b6d8b5a0b3dd782779f94ac4c576fefc1782d32b3482dc4920b0807298f40b0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-4
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;48:У моего́ бра́та нет де́нег55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-4-2`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2646456f70f0e57481b7420bb651a2b8c1ea496ceee632b9578c334e650e278b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u10-i-have-4
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;48:У моего́ бра́та нет де́нег55:In this line, the absent thing is in the genitive case.1;78:In this line, the possessor is genitive and the possessed thing is nominative.
+shippedText=In this line, the possessor is genitive and the possessed thing is nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8
+contentHash=e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-4-feedback`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3dd7f807d196156779463f5533d3e6489da14a0a031a2a7d2d80b812da5c66c1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-4-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+shippedText=У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=257cf1efad7b1b1590807cad531e8ed2daef6a54b66b0105a681c536cdf91453
+contentHash=25db6171074eb6ec10bbc3c4cdbc668372bb6f789c18a272b35de1d870e0299e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-4-prompt`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84231b7a2ca4a40b374ac918a710a3340f910e0608e019e93c8a90eb6668d9f6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-4-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-i-have-4-rationale`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a9bdd28a6d88e7332ba60b2255e35504096c02f604b45f5714361d4cef9e60a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-i-have-4-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation asserts presence or simple possession rather than the absence shown here.
+shippedText=The other explanation asserts presence or simple possession rather than the absence shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d5c295d718c2b5ab4829c532093cf1e86abeae5a69bcb196f89eb062368f595
+contentHash=937e7014c6001cedb4050483baa44bf31c472952d4cd41b6e9d4e7f21176cb36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-check-absence-body`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d60747d95c1247f83208af8beaf8756cef79e45ae24ab95068a4cde02c6fe038
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-check-absence-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+shippedText=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ddf83b522615db9cf05d1c623bbc794d82a6138c3d337e6930368f4914f74678
+contentHash=2bba2029e4a3147972af9e245713669fe4179403756c71eb6df57373dc52d90f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-check-have-body`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3fad210484d4e8272ce5c1bc2d9fc862d8adca0e33ea15665dbb8f4b2614aa9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-check-have-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+shippedText=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ddf83b522615db9cf05d1c623bbc794d82a6138c3d337e6930368f4914f74678
+contentHash=2bba2029e4a3147972af9e245713669fe4179403756c71eb6df57373dc52d90f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-guided-absence-1-body`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b0e774f7d75a3f4aaacd95ee161cf85b98ffc88f9dae6ccb219c9d8b507786a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-guided-absence-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+shippedText=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ddf83b522615db9cf05d1c623bbc794d82a6138c3d337e6930368f4914f74678
+contentHash=2bba2029e4a3147972af9e245713669fe4179403756c71eb6df57373dc52d90f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-guided-have-1-body`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 344ffd34f5c8953314497f0ec7ee408d6e8c0e58063254485c7c68bc8f989f62
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-guided-have-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+shippedText=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ddf83b522615db9cf05d1c623bbc794d82a6138c3d337e6930368f4914f74678
+contentHash=2bba2029e4a3147972af9e245713669fe4179403756c71eb6df57373dc52d90f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-rem-absence-body`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e299285d303658a98d3c4f1d8d29e5c43a15f35fd529c64f7f0ae1159184ccb9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-rem-absence-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+In an absence line, the absent thing is genitive. An absence line may describe what a person does not have or what does not exist at a place. У меня́ нет сы́на — No, I don't have a son. Нет рестора́нов — There are no restaurants. 
+
+The absence construction uses a genitive noun for the absent thing. The simple positive possession construction instead uses a genitive possessor and a nominative possessed thing. Choose from the meaning and construction of the whole supplied line.
+
+Both negative examples below use the genitive for the absent thing. Keep the absent thing separate from any possessor or place mentioned in the line. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+
+The positive son example below affirms possession. Its possessed noun is nominative, so the genitive absence explanation does not classify this line. Да, у меня есть сын. — Yes, I have a son. 
+shippedText=In an absence line, the absent thing is genitive. An absence line may describe what a person does not have or what does not exist at a place. У меня́ нет сы́на — No, I don't have a son. Нет рестора́нов — There are no restaurants. 
+
+The absence construction uses a genitive noun for the absent thing. The simple positive possession construction instead uses a genitive possessor and a nominative possessed thing. Choose from the meaning and construction of the whole supplied line.
+
+Both negative examples below use the genitive for the absent thing. Keep the absent thing separate from any possessor or place mentioned in the line. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+
+The positive son example below affirms possession. Its possessed noun is nominative, so the genitive absence explanation does not classify this line. Да, у меня есть сын. — Yes, I have a son. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=71102b9351d5f3b9e3987a77d19684f4444094ed1fcb0d651444a2e71b675af2
+contentHash=43ba07f11005cdd3d8dcf8188453c9239327e59c54ff552e6881428045603a96
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-rem-absence-title`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfb6e38e07e5ca8b58f9317555cb5f09ab804c111ddbc0e12f8ec8302895be89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-rem-absence-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Review the complete constructions
+shippedText=Review the complete constructions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c212269f5208a8021d652c5ea4e710d39e0d888a4620364fa004ab10c5ab3310
+contentHash=cf811602a5863fec429443187e9a3d3e873e8f8096dd38d76471ca7edb6c3db5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-rem-have-body`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6246fa4db472a5275253f27d1f0e12c569b6e07dc3dd1a2fbde783d126be80d7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-rem-have-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+In the simple possession pattern shown here, the possessor after the possession preposition is genitive. The thing possessed is nominative. The schematic slot in the first example represents that possessed thing. У меня есть Х — I have X. У вас есть сын? — Do you have a son? 
+
+A simple positive possession line places the possessed thing in the nominative. An absence line places the absent thing in the genitive. Decide whether the whole shown line affirms or denies possession.
+
+The son examples keep the same simple possession pattern in a statement or question: genitive possessor and nominative possessed thing. The form of a question does not turn the noun into an absence construction. Да, у меня есть сын. — Yes, I have a son. У твоего́ му́жа есть оди́н друг — Your husband has one friend. 
+
+The many-friends example includes a quantity expression. Quantity patterns are separate from the simple nominative possessed thing in the son checks. The no-son example below denies possession and uses the genitive for the absent thing. У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — No, I don't have a son. 
+
+The no-money example also denies possession. Choose the genitive absence explanation, rather than the simple positive possession explanation. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+shippedText=In the simple possession pattern shown here, the possessor after the possession preposition is genitive. The thing possessed is nominative. The schematic slot in the first example represents that possessed thing. У меня есть Х — I have X. У вас есть сын? — Do you have a son? 
+
+A simple positive possession line places the possessed thing in the nominative. An absence line places the absent thing in the genitive. Decide whether the whole shown line affirms or denies possession.
+
+The son examples keep the same simple possession pattern in a statement or question: genitive possessor and nominative possessed thing. The form of a question does not turn the noun into an absence construction. Да, у меня есть сын. — Yes, I have a son. У твоего́ му́жа есть оди́н друг — Your husband has one friend. 
+
+The many-friends example includes a quantity expression. Quantity patterns are separate from the simple nominative possessed thing in the son checks. The no-son example below denies possession and uses the genitive for the absent thing. У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — No, I don't have a son. 
+
+The no-money example also denies possession. Choose the genitive absence explanation, rather than the simple positive possession explanation. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2d01c1166001c4637540c7403d2cca8be7b80b42b10a1122bdb108710531147
+contentHash=47b3d4d7affbd91a623d7ee2e5161c8fec2b8f39636e7937b74687205d7a5ca0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-rem-have-title`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0dd52f0d4d8b77ff8e4e2335c009ee6375be9d8160482dfae416def85f8066d8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-rem-have-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Review the complete constructions
+shippedText=Review the complete constructions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c212269f5208a8021d652c5ea4e710d39e0d888a4620364fa004ab10c5ab3310
+contentHash=cf811602a5863fec429443187e9a3d3e873e8f8096dd38d76471ca7edb6c3db5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-absence-1-body`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c848779d2ea48a4ddaf394b33861a4a0177f06da7f43f8cfb8de8b4379a101d7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-teach-absence-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+In an absence line, the absent thing is genitive. An absence line may describe what a person does not have or what does not exist at a place. У меня́ нет сы́на — No, I don't have a son. Нет рестора́нов — There are no restaurants. 
+shippedText=In an absence line, the absent thing is genitive. An absence line may describe what a person does not have or what does not exist at a place. У меня́ нет сы́на — No, I don't have a son. Нет рестора́нов — There are no restaurants. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e649fd39df8ec9b5ef96dff4ec051ecc3d1e9397de1de8317f5853e434dec753
+contentHash=745e5bfdc054084d2ed2833b53ef85d0b9975aec62ecefe32b02430b0e93b527
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-absence-1-title`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40dac3be172567a52ec195a6fe3d556a22e176cf35f05ba68f4c6e83dfdb1b25
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-teach-absence-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Identify absence
+shippedText=Identify absence
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3872a3794c23af2fdae913acb67a676f0dbfaa721b42feab9fecd8771a0eeb42
+contentHash=a7c8764dcd7b212abcdb1ad7cbf95c10a07a89970fb836cae807cd4a87ce289c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-absence-2-body`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 119aeac14b7e5607effc8c3df17960f4eb3472ba7a1ccfd6933bc59fc374689a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-teach-absence-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The absence construction uses a genitive noun for the absent thing. The simple positive possession construction instead uses a genitive possessor and a nominative possessed thing. Choose from the meaning and construction of the whole supplied line.
+shippedText=The absence construction uses a genitive noun for the absent thing. The simple positive possession construction instead uses a genitive possessor and a nominative possessed thing. Choose from the meaning and construction of the whole supplied line.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=36e2d1cbf87446bada0d543d2dfaba37d959b6e180a8abb5696909f71d70fde5
+contentHash=7b3028e69100bf2dee1abd12883cd924b17dd1f744a8d3181c2584dd41e9a9ca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-absence-2-title`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68c572d849dbde40618920de7ecd71cdca6d47356f717eceaf0646c7955a2b16
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-teach-absence-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Choose a complete case explanation
+shippedText=Choose a complete case explanation
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=512b200e0e7fee454d89ec739d47a46fdecee9238b323a59dd12031a4fbbb0a6
+contentHash=5975b0c5c37cfb574e7bb31903198372b3f6cca5fe76dff3fdb4f2e2d2306795
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-absence-3-body`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a3813afef5d0d08bc89800e4fda54d59fe6a3a2762aaee14c2e7d12ea3f4b7a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-teach-absence-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Both negative examples below use the genitive for the absent thing. Keep the absent thing separate from any possessor or place mentioned in the line. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+shippedText=Both negative examples below use the genitive for the absent thing. Keep the absent thing separate from any possessor or place mentioned in the line. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=82b45d8f3868af9a22a85d3fed92fa325ce93a20e5f20fae839bfe52dd42ac41
+contentHash=6f62ba87b84ece2634c2dd1d9e7141883cfdf0929d9ed094e79b7752427d149b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-absence-3-title`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4133fa28869b465d22c813d3eaf85a14f35eee75b34c87e1621bb8aef82ce7e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-teach-absence-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Apply the absence pattern
+shippedText=Apply the absence pattern
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2af3a7e59299f291035ced2e507c36290fcad1b9ab646b1e1fea56a00a96c65
+contentHash=e5e020115f99d9b47e9615049d5bc03d85a775e93c26790641b7dc2a426ce86e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-absence-4-body`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 321f83b3ea21b15b98d5d22d1edb2986cf4e91a2a20fd3b117faf078341f23ba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-teach-absence-4-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The positive son example below affirms possession. Its possessed noun is nominative, so the genitive absence explanation does not classify this line. Да, у меня есть сын. — Yes, I have a son. 
+shippedText=The positive son example below affirms possession. Its possessed noun is nominative, so the genitive absence explanation does not classify this line. Да, у меня есть сын. — Yes, I have a son. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f2775863e186b4b378863fdc538667a9b846b932d539e3f3c90181c313773a0
+contentHash=b21338957443998571c99871e304093962ab6d728e3eb0eec606332335e1ab7f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-absence-4-title`
+
+- Objectives: obj-u10-absence
+- Sessions: u10-s-orient, u10-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 482ae0491b551101e5435f7938984577602c93a2f7f90009ae47b2db160fa475
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-absence:complete-rule:u10-st-teach-absence-4-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Compare with positive possession
+shippedText=Compare with positive possession
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44f96efe132724459a9b546fca3039e6037a5cd20df33a48c4a16e139776b122
+contentHash=1b47bd75993fd59098071c0f65c1efe3dcec2927022a5492d1304929f1555956
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-have-1-body`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5eb015a401ef570c3f30cf19d593a13a645a4ca4c1fabd025cbc2c53669a7cfe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-teach-have-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+In the simple possession pattern shown here, the possessor after the possession preposition is genitive. The thing possessed is nominative. The schematic slot in the first example represents that possessed thing. У меня есть Х — I have X. У вас есть сын? — Do you have a son? 
+shippedText=In the simple possession pattern shown here, the possessor after the possession preposition is genitive. The thing possessed is nominative. The schematic slot in the first example represents that possessed thing. У меня есть Х — I have X. У вас есть сын? — Do you have a son? 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61aedf60e55220d5b465aa25184448806dbe681328b50f8553f33719d2bcfaaa
+contentHash=eed01af6a510a62dee8d581033cd35f9710192d11f3e97fb020fbb00421bc187
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-have-1-title`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97487605c4e633a241f59a7bb60ec2b797fe0d37697316e375a8b3dc2721c165
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-teach-have-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The possessor and the possessed thing
+shippedText=The possessor and the possessed thing
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8ddb2cd2e8cc48e4495dd2b77250da104ec991b6edf1271fb6d8c5dff210a664
+contentHash=2dc4ac9687a66fa1d895af4a4a5538ae11323afb0ba619939ce2e59d5fc6de68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-have-2-body`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 468ad18d6e16143626e886f2b5fdd33f265e8f2364623a1af467cefd61e30d49
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-teach-have-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+A simple positive possession line places the possessed thing in the nominative. An absence line places the absent thing in the genitive. Decide whether the whole shown line affirms or denies possession.
+shippedText=A simple positive possession line places the possessed thing in the nominative. An absence line places the absent thing in the genitive. Decide whether the whole shown line affirms or denies possession.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9a7824a06113b3979a5df98879c376138641a162826cdf36c17d33ef10ba11f
+contentHash=a6356b7ee95e4f38d9801feb54739b2f68c78e7b3cc188afb5ae13c45964ca40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-have-2-title`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38d9760de44f34cf5617917eec21c86fc875372b0396fef787b7b509a7abf914
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-teach-have-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Possession versus absence
+shippedText=Possession versus absence
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=33bacddd3b1f798c70df3d335793137039244c6a9986394ac71020501a11ae13
+contentHash=803cc89e54d1eec179fe9d62b9db8d575b766515dc71a23bba9c77cc9ec95899
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-have-3-body`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5c45425fdd2a4728bf755856f21467f9ff6d53f34d90aa670da7fe170994f57e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-teach-have-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The son examples keep the same simple possession pattern in a statement or question: genitive possessor and nominative possessed thing. The form of a question does not turn the noun into an absence construction. Да, у меня есть сын. — Yes, I have a son. У твоего́ му́жа есть оди́н друг — Your husband has one friend. 
+shippedText=The son examples keep the same simple possession pattern in a statement or question: genitive possessor and nominative possessed thing. The form of a question does not turn the noun into an absence construction. Да, у меня есть сын. — Yes, I have a son. У твоего́ му́жа есть оди́н друг — Your husband has one friend. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b67a8d255de13414259fc2e4fdc33ca0a93aad0da54d6522abdb7ea9b7acf1b2
+contentHash=88ad22e7dfe28fb89d3365a80e64dd9bd885154c25706d5f21d57497cc7fe79d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-have-3-title`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63b46b78d4049ea0178bff8350eda1a36d4f0a8821968de316f2107d2411559c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-teach-have-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Positive statements and questions
+shippedText=Positive statements and questions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95c56985d50063bd8b4b082bc2b089815ebb844cf10295dae737f80138201c1c
+contentHash=188efd016fdac22714d1c0fed483ccff09306f6a341bc30d784a78020c6095bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-have-4-body`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e437784a62872f1054b5d8dc61dca55761c1f006f551d10551059a0612754b3a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-teach-have-4-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The many-friends example includes a quantity expression. Quantity patterns are separate from the simple nominative possessed thing in the son checks. The no-son example below denies possession and uses the genitive for the absent thing. У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — No, I don't have a son. 
+shippedText=The many-friends example includes a quantity expression. Quantity patterns are separate from the simple nominative possessed thing in the son checks. The no-son example below denies possession and uses the genitive for the absent thing. У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — No, I don't have a son. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5ab1a37ed9a20898f8071bd0eee1710a02c7f264ce7e98c0f993366e12aad78
+contentHash=890d324b17a3a14ef067bb9c40655b9f158b2b34b57ba3a49ca7ad708f1d4d2b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-have-4-title`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 512663a79b893a109590717eedbdc7bfbe8e9b552c497de6736a16ed25fe6769
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-teach-have-4-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Keep quantity and absence separate
+shippedText=Keep quantity and absence separate
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=df7a5ababbdd3e6e9e7b56630feb13296ba532c5822cb2deb41d0d7db1a4cb1a
+contentHash=a97c8a635e90866fc9c29a74e9aefb3e235fd5edc92d2c94472d9c98bcd685ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-have-5-body`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70c49758c7203d852ae7f754d4c4bd4423bdd8679db3f2c86f4855f11c90e0e4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-teach-have-5-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The no-money example also denies possession. Choose the genitive absence explanation, rather than the simple positive possession explanation. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+shippedText=The no-money example also denies possession. Choose the genitive absence explanation, rather than the simple positive possession explanation. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a3594e367bd273f624e44a6093a7f69d25a6890e0779328098fba98bfdab65c2
+contentHash=545c9180e4fe8dd4335a0d1259225ad272014167f2affa4d284842971bc7f41b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u10-st-teach-have-5-title`
+
+- Objectives: obj-u10-have
+- Sessions: u10-s-orient, u10-s-have
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2406794c23f6cf4d5847c73997f091f055ab7614cdd80c148d09dc83d9c3da13
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-have:complete-rule:u10-st-teach-have-5-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Another absence example
+shippedText=Another absence example
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=66d276a879a3fe9ba9c24cdac0fef756b1fecfb0e04ea90a64f2b200a52bfbe1
+contentHash=259e99f10b51d2d59700d5199df477187c3ed6f9cf49ba8e95307d4c65061eab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-g-animate-0`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e0babb58bf6e420ab0af7e2467f41fe2a9b0cb8a6277a99f76840a29422fd3f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:feedback:u10-g-animate-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+этих женщин is the animate plural accusative object phrase in the source example meaning I like these women. Its forms match the genitive plural. Эти женщины is the nominative subject phrase in the example meaning These women like me. Choose the object form, not the subject form.
+shippedText=этих женщин is the animate plural accusative object phrase in the source example meaning I like these women. Its forms match the genitive plural. Эти женщины is the nominative subject phrase in the example meaning These women like me. Choose the object form, not the subject form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=31cc016932205ac074d70503eca55ee8a7d0e87d3841281cefc228e0062f2201
+contentHash=57d460cb33fbb2b65127db46bef8ff02618de65ba4ab457950b60c11f0066249
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-g-animate-0-distractor-1`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fdba6d84abf2ccb39fb699e7db2230238c78ccbeb9f01e296eea140bc9e90d1a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:feedback:u10-g-animate-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here.
+shippedText=Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8e14728ce52748dc7a254f5039e7d3bb701426ed3eb7a386797195d831ad9118
+contentHash=d76cbd6ecc2a86d242cfe622b8d29c3357da19ebb48e5c87a1392c3831d4dc4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-g-pronoun-0`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4d9eb5dfac4f7b7656fcff759ca97c8e05f77218b81ab968d1f83e0a3e4391d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-g-pronoun-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent when moving to the genitive row.
+shippedText=Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent when moving to the genitive row.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b923ccb627705045a97a1609ff252deb08e595c4dd47cff0031329440c581a5f
+contentHash=d9aa2f18cbd7d3044c645679b4395fe0bcaf737d9eb69375fdeda4d5c9d96ff4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-g-pronoun-0-distractor-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b57554da0ea333f5ec9b572d62d50e8d2a6c87c53bd98cc659ef64215d15f7d6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-g-pronoun-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Нас belongs to Мы (we), first-person plural, rather than Я (I), first-person singular.
+shippedText=Нас belongs to Мы (we), first-person plural, rather than Я (I), first-person singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=33b57195cad0d55550841378793737a2e5c656478a97e3f8bd33446a4b4bac8f
+contentHash=dbe85c3c68afd6a5b3fe001e136703d1bc4ffb834a7ed1625388646798dc0bca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-animate-1`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5eb6e4a3496160a0c4ff9c13834a5c0e1d749575316f5f95a9aee22c2c6f0780
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:feedback:u10-i-animate-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Эти женщины is the nominative plural subject phrase in the source example meaning These women like me. The shown этих женщин is the animate plural accusative object phrase in I like these women, with genitive-like forms. The other row requested here is the nominative subject form.
+shippedText=Эти женщины is the nominative plural subject phrase in the source example meaning These women like me. The shown этих женщин is the animate plural accusative object phrase in I like these women, with genitive-like forms. The other row requested here is the nominative subject form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=88722c696ef35c7ac479b802b70e0ef7a1ed8d29f12c19aad2c79945f6bb8f8f
+contentHash=96bf7d6f85075d4ac538c9324881c43647c24e9dc68d59cb50bbc243a68026a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-animate-1-distractor-1`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a38e351b9bbc28b7a15b68ace1700cda0db37f73a684cb51dbcf0f6d2d6c8411
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:feedback:u10-i-animate-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested other row is the nominative subject phrase.
+shippedText=этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested other row is the nominative subject phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=77969dd3d94da86116486036cf64e7dc3af4d17b6ed409b4eafcf282328fcf78
+contentHash=0bea846273eb8148c08a726f4825510711fd4ad37a4ca8e13063c351011936ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1457fc9c75543771dc2cae266b0352243ca83921c92488ffddc563698ffe24da
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.
+shippedText=Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff299b031ed6513e1cdae12888fff24a871e855e2378526e5e444aa01c337a0c
+contentHash=a311e135fed795fa7c4d14b7bfe611108e3738e0e32adfdf452c73b0a70be0b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-1-distractor-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78c816969958f4512db3a691be4a663758ad9c5c5812247767c818caaaaa5cc9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Меня́ belongs to Я (I), first-person singular, rather than Мы (we), first-person plural.
+shippedText=Меня́ belongs to Я (I), first-person singular, rather than Мы (we), first-person plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=081d3176698174248ac735c4a0b8e05a81122510e1f70ee40d4e09d54f38ea88
+contentHash=17a6c52d8ada94383ea15abb10cddce2f967ec992e2eac80a04a05cc6222effd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-2`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b0cf02cf85d5e47516abce936678a8761bd265a929f6bb984478ae8e2ea9eb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Тебя́ is the genitive form of Ты, the singular informal you. Вас belongs to Вы, used for plural you or polite address to one person. Match the shown pronoun, rather than replacing it with the other you form.
+shippedText=Тебя́ is the genitive form of Ты, the singular informal you. Вас belongs to Вы, used for plural you or polite address to one person. Match the shown pronoun, rather than replacing it with the other you form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=160a71f7c19c264daecf918e1234536aad82b88a02f71421128444dd6395d75c
+contentHash=b5dff5030fe7be23a211fc6ce6c53f464b0ee08561eb413a11360d2badad9801
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-2-distractor-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4301bf74ad61e3f0a517ce199e43f289332035ef86c72376c1152aba89822056
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Вас belongs to Вы (plural or polite you), not the singular informal Ты shown here.
+shippedText=Вас belongs to Вы (plural or polite you), not the singular informal Ты shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fad3655f67575d08f44b273c0864cd1ec41e75f4e7db6335ba18fcc1e384273a
+contentHash=4bcdfc06c0a47e1e8747218218b6acb04e90327269d373a730f98ad875357af1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-3`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1dc101bb0ec48e0e1afbaae81c2c2d3e47e8bf4c087bda917bdbc4e9020ad68b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-3
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Вас is the genitive form of Вы, used for plural you or polite address to one person. Тебя́ belongs to Ты, singular informal you. Preserve the shown pronoun and its form of address.
+shippedText=Вас is the genitive form of Вы, used for plural you or polite address to one person. Тебя́ belongs to Ты, singular informal you. Preserve the shown pronoun and its form of address.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80608baa1fb1b4319fd5c829070f5b8f20c07c84aa5a079c0dcbf2a20959e3f6
+contentHash=652cf49acf011286c943de531ea328211a89012d5776c93a055521a4e86300e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-3-distractor-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de81b63914aa81f406f8df77eecef1d67b722573d40cb434c4d5846c4f581352
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-3-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Тебя́ belongs to Ты (singular informal you), not the plural or polite Вы shown here.
+shippedText=Тебя́ belongs to Ты (singular informal you), not the plural or polite Вы shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dc78e1946fbb8e137759d8eea8ce60e5c9bc9eddc1759a70fecb602ef13663b6
+contentHash=d43497d24cf3c94e6a9bd2156f0d173030bb2ba49ba3bcb14b8b3fa429718ed1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-4`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bfcac8c5dad1dab9347478905d7a1410e224cfa876510ddba4bc1d9153300a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-4
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Их is the bare genitive table form of Они, meaning they. Нас belongs to Мы, meaning we. Both refer to a plural group, but they is third person and we is first person. This checks the bare table form; third-person forms can change after prepositions.
+shippedText=Их is the bare genitive table form of Они, meaning they. Нас belongs to Мы, meaning we. Both refer to a plural group, but they is third person and we is first person. This checks the bare table form; third-person forms can change after prepositions.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=983a0b148a1b91581b9ab07b58b77fc7c794c6f1093735bd35fe380e5aa0ae4d
+contentHash=be71dbd40405cfb76a8b496cfa23798e24d95c5fa55b41d559104df691a2cbf2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-4-distractor-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83ac1c07540312aba5a79c964c5563d252f7d24b2dd2ac0a9684a7c7ecb6dc98
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-4-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Нас belongs to Мы (we), first-person plural, rather than Они (they), third-person plural.
+shippedText=Нас belongs to Мы (we), first-person plural, rather than Они (they), third-person plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1b76c3db1afc9778680cc43bfcbb1079272e5ececa02f0279143282212faad05
+contentHash=6dfc264862efea096a619e5ab627fcbab81270389a07724487bf54413f4022cd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc016-u10-st-rem-animate`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a90beef4ceec67a1aef5699e1c7429d80c3103398e7b7250f5d0f080fff6618
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:cc016:u10-st-rem-animate
+originalSourceText=Retained complete Wikibooks Russian/Grammar/Accusative_case oldid4330404, including the original subject/object examples and animate plural case relation; Russian/Grammar/Adjectives oldid4292379 for the unchanged complete cat/dog and rabbit lines and agreement context. Existing Unit7/10 native fragments and corrected example notes retain their separate original provenance and CC BY-SA4.0 attribution. Independently authored English explanation and arrangement on2026-10-19, under governed research-source version2026-10-08. No expanded native clause, new Russian, stress, private Penguin prose or new native application. Qualified source/linguistic/rights review remains pending. Full source sentence meanings must not be assigned to isolated fragments.
+этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
+
+A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
+
+же́нщин — woman. же́нщины — woman. 
+
+бра́тья — brother. бра́тьев — brother. 
+
+друзе́й — friend. 
+shippedText=этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
+
+A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
+
+же́нщин — woman. же́нщины — woman. 
+
+бра́тья — brother. бра́тьев — brother. 
+
+друзе́й — friend. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=53039af702bd8f3b6a508fcaeb980e0bed291037108756c7209517b0d154c0cb
+contentHash=4e5c2b0b0258d7bedefad2f1c418d2eaf1f3bdbab71a09ba4f641bc2249e8e2a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc016-u10-st-teach-animate-1`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e5b3f3bc7224547b5706ded80798eff8364a0b2bb22a5b752b3e0c3a9416f9d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:cc016:u10-st-teach-animate-1
+originalSourceText=Retained complete Wikibooks Russian/Grammar/Accusative_case oldid4330404, including the original subject/object examples and animate plural case relation; Russian/Grammar/Adjectives oldid4292379 for the unchanged complete cat/dog and rabbit lines and agreement context. Existing Unit7/10 native fragments and corrected example notes retain their separate original provenance and CC BY-SA4.0 attribution. Independently authored English explanation and arrangement on2026-10-19, under governed research-source version2026-10-08. No expanded native clause, new Russian, stress, private Penguin prose or new native application. Qualified source/linguistic/rights review remains pending. Full source sentence meanings must not be assigned to isolated fragments.
+этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
+shippedText=этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc67699169fcb4903f85e8e5827da2181b40d8a3a60af07de63964c1dc6fee22
+contentHash=ed8526ac7f470683665db8c841469af4fd70f13adb76313a2d0e189162cc22ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc016-u10-st-teach-animate-2`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ffc69b74bdfa9de29801efa5964ff62ca5387893e21c2038c57a71b614a7276e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:cc016:u10-st-teach-animate-2
+originalSourceText=Retained complete Wikibooks Russian/Grammar/Accusative_case oldid4330404, including the original subject/object examples and animate plural case relation; Russian/Grammar/Adjectives oldid4292379 for the unchanged complete cat/dog and rabbit lines and agreement context. Existing Unit7/10 native fragments and corrected example notes retain their separate original provenance and CC BY-SA4.0 attribution. Independently authored English explanation and arrangement on2026-10-19, under governed research-source version2026-10-08. No expanded native clause, new Russian, stress, private Penguin prose or new native application. Qualified source/linguistic/rights review remains pending. Full source sentence meanings must not be assigned to isolated fragments.
+A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
+shippedText=A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d60e024e343a35c43e93f1663ed84ab225d91de58698183918654720160ff092
+contentHash=88d397778aac2c52389d191750cb752c0cd48bd45856ef571baf8001868f8886
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u10-adjective-3`
 
@@ -8862,6 +13216,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-10-11176`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bbe90fc5ef23fd06ebbe6d4fc4a7efa7c5c587898bea65489987cf93402a8fd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 10 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-10-11177`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 07dc4cff781cf5d4befb7411093ec50e1313b6010d42bba19fb2b57c9d7c6e18
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-10-11178`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7432436f426a2a9eb2d498ef4650ec503b1532d8a375184e7ab99f76e2a7b91a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 10 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-10-11179`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d7359d0e3650640dee235e74e4a8ce05eba8d495468639377db6e3ebb17f1ae
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-10-11180`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69c80e2ef18d2bff30b44d44414e9812f64d5107182f08fcc189b3e10a8355fd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 10 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-10-11181`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4a5f6b518e7af56cb245571a4227914d85ce83c5e436761df2daba824b867f3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-10-11182`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 473fc084ed7af12eeb2000b6d3739aa7e8cd70fd847e5f5f31e5794ed289f787
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 10 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-10-40`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 412c9a68f322089b7983bb8d012da8b89b3297f6d66f4be2ff92833afe0db156
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 10: printed pages 107-121. PDF indexes 119-133 are file locators, not printed pages. Observed section locators: §10.1 p107 (PDF 119); §10.2 p107 (PDF 119); §10.3 p108 (PDF 120); §10.4 p109 (PDF 121); §10.5 p109 (PDF 121); §10.6 p110 (PDF 122); §10.7 p111 (PDF 123); §10.8 p111 (PDF 123); §10.9 p112 (PDF 124); §10.10 p113 (PDF 125); §10.11 p113 (PDF 125); §10.12 p114 (PDF 126); §10.13 p114 (PDF 126); §10.14 p115 (PDF 127); §10.15 p115 (PDF 127); §10.16 p116 (PDF 128); §10.17 p117 (PDF 129); §10.18 p119 (PDF 131). Observed exercise locators: 10/2 p112/PDF124; 10/3 p114/PDF126; 10/4 p115/PDF127; 10/5 p119/PDF131; 10/6 p120/PDF132. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-10-41`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4230f0d7011e1ff02c63aa931f01d12f6cb2873a837c2c3b100db2afa7b08116
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 10 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-10-42`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 269d22a671e934623905932ecbb6b8f0b21733326cbfdadf8415c77159e484fb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u10-160`
 
 - Objectives: none
@@ -9347,6 +13831,21 @@ CC BY-SA 4.0
 Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 Selected rows, stress-mark formatting, and beginner sense selection. No generated forms.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -9388,6 +13887,20 @@ permitsAppUse=true
 
 src-openrussian-50e210c4
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -9565,8 +14078,6 @@ permitsAppUse=true
 - `u10-st-teach-have-1` EXAMPLE `ex-u10-have-0`
 - `u10-st-teach-have-1` EXAMPLE `ex-u10-have-1`
 - `u10-st-teach-have-1` REFERENCE `ref-u610-attribution`
-- `u10-st-guided-have-1` REMEDIATION `u10-st-rem-have`
-- `u10-st-guided-have-1` ITEM `u10-g-have-0`
 - `u10-st-teach-have-2` REFERENCE `ref-u610-attribution`
 - `u10-st-teach-have-3` EXAMPLE `ex-u10-have-2`
 - `u10-st-teach-have-3` EXAMPLE `ex-u10-have-3`
@@ -9576,8 +14087,15 @@ permitsAppUse=true
 - `u10-st-teach-have-4` REFERENCE `ref-u610-attribution`
 - `u10-st-teach-have-5` EXAMPLE `ex-u10-have-6`
 - `u10-st-teach-have-5` REFERENCE `ref-u610-attribution`
+- `u10-st-guided-have-1` REMEDIATION `u10-st-rem-have`
+- `u10-st-guided-have-1` ITEM `u10-g-have-0`
 - `u10-st-rem-have` EXAMPLE `ex-u10-have-0`
 - `u10-st-rem-have` EXAMPLE `ex-u10-have-1`
+- `u10-st-rem-have` EXAMPLE `ex-u10-have-2`
+- `u10-st-rem-have` EXAMPLE `ex-u10-have-3`
+- `u10-st-rem-have` EXAMPLE `ex-u10-have-4`
+- `u10-st-rem-have` EXAMPLE `ex-u10-have-5`
+- `u10-st-rem-have` EXAMPLE `ex-u10-have-6`
 - `u10-st-check-have` REMEDIATION `u10-st-rem-have`
 - `u10-st-check-have` ITEM `u10-i-have-1`
 - `u10-st-check-have` ITEM `u10-i-have-2`
@@ -9587,16 +14105,19 @@ permitsAppUse=true
 - `u10-st-teach-absence-1` EXAMPLE `ex-u10-absence-0`
 - `u10-st-teach-absence-1` EXAMPLE `ex-u10-absence-1`
 - `u10-st-teach-absence-1` REFERENCE `ref-u610-attribution`
-- `u10-st-guided-absence-1` REMEDIATION `u10-st-rem-absence`
-- `u10-st-guided-absence-1` ITEM `u10-g-absence-0`
 - `u10-st-teach-absence-2` REFERENCE `ref-u610-attribution`
 - `u10-st-teach-absence-3` EXAMPLE `ex-u10-absence-2`
 - `u10-st-teach-absence-3` EXAMPLE `ex-u10-absence-3`
 - `u10-st-teach-absence-3` REFERENCE `ref-u610-attribution`
 - `u10-st-teach-absence-4` EXAMPLE `ex-u10-absence-4`
 - `u10-st-teach-absence-4` REFERENCE `ref-u610-attribution`
+- `u10-st-guided-absence-1` REMEDIATION `u10-st-rem-absence`
+- `u10-st-guided-absence-1` ITEM `u10-g-absence-0`
 - `u10-st-rem-absence` EXAMPLE `ex-u10-absence-0`
 - `u10-st-rem-absence` EXAMPLE `ex-u10-absence-1`
+- `u10-st-rem-absence` EXAMPLE `ex-u10-absence-2`
+- `u10-st-rem-absence` EXAMPLE `ex-u10-absence-3`
+- `u10-st-rem-absence` EXAMPLE `ex-u10-absence-4`
 - `u10-st-check-absence` REMEDIATION `u10-st-rem-absence`
 - `u10-st-check-absence` ITEM `u10-i-absence-1`
 - `u10-st-check-absence` ITEM `u10-i-absence-2`
@@ -9720,12 +14241,155 @@ permitsAppUse=true
 - `u10-st-teach-animate-5` REFERENCE `ref-u610-attribution`
 - `u10-st-rem-animate` EXAMPLE `ex-u10-animate-0`
 - `u10-st-rem-animate` EXAMPLE `ex-u10-animate-1`
+- `u10-st-rem-animate` EXAMPLE `ex-or-u10-animate-2`
+- `u10-st-rem-animate` EXAMPLE `ex-or-u10-animate-3`
+- `u10-st-rem-animate` EXAMPLE `ex-or-u10-animate-4`
+- `u10-st-rem-animate` EXAMPLE `ex-or-u10-animate-5`
+- `u10-st-rem-animate` EXAMPLE `ex-or-u10-animate-6`
 - `u10-st-check-animate` REMEDIATION `u10-st-rem-animate`
 - `u10-st-check-animate` ITEM `u10-i-animate-1`
 - `u10-st-check-animate` ITEM `u10-i-animate-2`
 - `u10-st-check-animate` ITEM `u10-i-animate-3`
 - `u10-s-book` OBJECTIVE `obj-u10-book`
 - `u10-st-book-work` REFERENCE `ref-u610-attribution`
+- `obj-u10-animate` PROVENANCE `prov-ca-10-214`
+- `obj-u10-animate` PROVENANCE `prov-ca-10-215`
+- `obj-u10-animate` PROVENANCE `prov-ca-10-216`
+- `obj-u10-animate` PROVENANCE `prov-ca-10-217`
+- `obj-u10-animate` PROVENANCE `prov-ca-10-218`
+- `obj-u10-animate` PROVENANCE `prov-ca-10-219`
+- `obj-u10-animate` PROVENANCE `prov-ca-10-43`
+- `obj-u10-adjective` PROVENANCE `prov-ca-declension-u10-g-adjective-0-1`
+- `obj-u10-adjective` PROVENANCE `prov-ca-declension-u10-g-adjective-0-3`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-g-preposition-0-0`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-g-preposition-0-1`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-g-preposition-0-3`
+- `obj-u10-adjective` PROVENANCE `prov-ca-declension-u10-i-adjective-1-1`
+- `obj-u10-adjective` PROVENANCE `prov-ca-declension-u10-i-adjective-1-3`
+- `obj-u10-adjective` PROVENANCE `prov-ca-declension-u10-i-adjective-2-1`
+- `obj-u10-adjective` PROVENANCE `prov-ca-declension-u10-i-adjective-2-3`
+- `obj-u10-adjective` PROVENANCE `prov-ca-declension-u10-i-adjective-2-4`
+- `obj-u10-adjective` PROVENANCE `prov-ca-declension-u10-i-adjective-3-1`
+- `obj-u10-adjective` PROVENANCE `prov-ca-declension-u10-i-adjective-3-3`
+- `obj-u10-animate` PROVENANCE `prov-ca-declension-u10-i-animate-2-0`
+- `obj-u10-animate` PROVENANCE `prov-ca-declension-u10-i-animate-2-1`
+- `obj-u10-animate` PROVENANCE `prov-ca-declension-u10-i-animate-2-3`
+- `obj-u10-animate` PROVENANCE `prov-ca-declension-u10-i-animate-3-1`
+- `obj-u10-animate` PROVENANCE `prov-ca-declension-u10-i-animate-3-3`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-1-1`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-1-3`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-2-1`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-2-3`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-3-0`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-3-1`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-3-3`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-4-0`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-4-1`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-4-3`
+- `obj-u10-preposition` PROVENANCE `prov-ca-declension-u10-i-preposition-4-4`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-g-absence-0-0`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-g-absence-0-1`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-g-absence-0-2`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-g-absence-0-feedback`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-g-absence-0-prompt`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-g-absence-0-rationale`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-g-have-0-0`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-g-have-0-1`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-g-have-0-2`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-g-have-0-feedback`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-g-have-0-prompt`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-g-have-0-rationale`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-1-0`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-1-1`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-1-2`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-1-feedback`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-1-prompt`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-1-rationale`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-2-0`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-2-1`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-2-2`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-2-feedback`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-2-prompt`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-2-rationale`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-3-0`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-3-1`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-3-2`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-3-feedback`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-3-prompt`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-3-rationale`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-4-0`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-4-1`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-4-2`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-4-feedback`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-4-prompt`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-i-absence-4-rationale`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-1-0`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-1-1`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-1-2`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-1-feedback`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-1-prompt`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-1-rationale`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-2-0`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-2-1`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-2-2`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-2-feedback`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-2-prompt`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-2-rationale`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-3-0`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-3-1`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-3-2`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-3-feedback`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-3-prompt`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-3-rationale`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-4-0`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-4-1`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-4-2`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-4-feedback`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-4-prompt`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-i-have-4-rationale`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-check-absence-body`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-check-have-body`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-guided-absence-1-body`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-guided-have-1-body`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-rem-absence-body`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-rem-absence-title`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-rem-have-body`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-rem-have-title`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-teach-absence-1-body`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-teach-absence-1-title`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-teach-absence-2-body`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-teach-absence-2-title`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-teach-absence-3-body`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-teach-absence-3-title`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-teach-absence-4-body`
+- `obj-u10-absence` PROVENANCE `prov-ca-rule-u10-st-teach-absence-4-title`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-1-body`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-1-title`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-2-body`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-2-title`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-3-body`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-3-title`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-4-body`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-4-title`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-5-body`
+- `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-5-title`
+- `obj-u10-animate` PROVENANCE `prov-ca-u10-feedback-u10-g-animate-0`
+- `obj-u10-animate` PROVENANCE `prov-ca-u10-feedback-u10-g-animate-0-distractor-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-g-pronoun-0`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-g-pronoun-0-distractor-1`
+- `obj-u10-animate` PROVENANCE `prov-ca-u10-feedback-u10-i-animate-1`
+- `obj-u10-animate` PROVENANCE `prov-ca-u10-feedback-u10-i-animate-1-distractor-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-1-distractor-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-2`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-2-distractor-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-3`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-3-distractor-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-4`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-4-distractor-1`
+- `obj-u10-animate` PROVENANCE `prov-cc016-u10-st-rem-animate`
+- `obj-u10-animate` PROVENANCE `prov-cc016-u10-st-teach-animate-1`
+- `obj-u10-animate` PROVENANCE `prov-cc016-u10-st-teach-animate-2`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-3`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-3-gloss`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-4`

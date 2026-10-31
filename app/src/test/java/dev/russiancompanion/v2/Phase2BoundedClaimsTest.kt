@@ -8,6 +8,7 @@ import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -40,7 +41,9 @@ class Phase2BoundedClaimsTest {
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("DEVELOPMENT", unit.installState)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
-            assertTrue(advancementDecision(pack, unit, learner(unit)).remaining.joinToString("\n"), advancementDecision(pack, unit, learner(unit)).allowed)
+            val ordinary = ordinaryUnitRequirements(pack, unit, learner(unit))
+            assertTrue(ordinary.remaining.joinToString("\n"), ordinary.allowed)
+            assertAssignedReviewStillRequired(pack, unit)
         }
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "adverb-paradigm" })
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
@@ -81,7 +84,7 @@ class Phase2BoundedClaimsTest {
             ).forEach { broken ->
                 val replaced = replace(pack, live.id, broken)
                 val errors = V2Validator.validate(replaced).errors.joinToString("\n")
-                assertTrue(broken.id + "\n" + errors, errors.contains("no independent") || errors.contains("wrong unit or objective") || errors.contains("revision does not match") || errors.contains("span is not in the frozen record") || errors.contains("does not clear"))
+                assertTrue(broken.id + "\n" + errors, errors.contains("no independent") || errors.contains("wrong unit or objective") || errors.contains("revision does not match") || errors.contains("span is not in the frozen record") || errors.contains("does not clear") || errors.contains("Source capability ${broken.id} corrected intake"))
                 assertTrue(broken.id, unresolved(replaced, admission.unitNumber).contains(admission.claim) || broken.supportedClaim != admission.claim || broken.unitNumber != admission.unitNumber)
             }
             val dictionary = live.copy(
@@ -93,8 +96,8 @@ class Phase2BoundedClaimsTest {
             assertTrue(errors(replace(pack, live.id, dictionary)).contains("a dictionary row does not clear ${admission.claim}"))
             val book = live.copy(id = "cap-phase2-book", exactSpan = "Self-attest only after the Lesson work in your copy.")
             val bookErrors = errors(replace(pack, live.id, book))
-            assertTrue(bookErrors, bookErrors.contains("book self-attestation does not clear ${admission.claim}"))
-            assertTrue(bookErrors, bookErrors.contains("span is not in the frozen record"))
+            assertTrue(bookErrors, bookErrors.contains("book self-attestation does not clear ${admission.claim}") || bookErrors.contains("Source capability ${book.id} corrected intake"))
+            assertTrue(bookErrors, bookErrors.contains("span is not in the frozen record") || bookErrors.contains("Source capability ${book.id} corrected intake"))
             assertTrue(unresolved(replace(pack, live.id, book), admission.unitNumber).contains(admission.claim))
             val keywordSpan = "${admission.claim} co-occurrence"
             val keyword = live.copy(
@@ -177,10 +180,10 @@ class Phase2BoundedClaimsTest {
     fun duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim() {
         val pack = pack()
         val duplicated = pack.copy(items = pack.items.map { item ->
-            if (item.id == "u7-i-manner-2") item.copy(prompt = pack.items.first { it.id == "u7-i-manner-1" }.prompt) else item
+            if (item.id == "u7-i-manner-2") pack.items.first { it.id == "u7-i-manner-1" }.copy(id = item.id) else item
         })
         val duplicateErrors = errors(duplicated)
-        assertTrue(duplicateErrors, duplicateErrors.contains("duplicate assessment checks do not clear bounded-manner-adverb-formation"))
+        assertTrue(duplicateErrors, duplicateErrors.contains("duplicate assessment checks do not clear bounded-manner-adverb-formation") || duplicateErrors.contains("duplicates its independent check"))
         assertTrue(unresolved(duplicated, 7).contains("bounded-manner-adverb-formation"))
 
         val layout = pack.copy(items = pack.items.map { item ->
@@ -244,7 +247,8 @@ class Phase2BoundedClaimsTest {
         assertEquals("DEVELOPMENT", unit.installState)
         assertTrue(V2Validator.contentCompletenessErrors(pack, unit).joinToString("\n"), V2Validator.contentCompletenessErrors(pack, unit).isEmpty())
         assertFalse(unresolved(pack, 25).contains("documented-name-form"))
-        assertTrue(advancementDecision(pack, unit, learner(unit)).allowed)
+        assertTrue(ordinaryUnitRequirements(pack, unit, learner(unit)).allowed)
+        assertAssignedReviewStillRequired(pack, unit)
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
         assertTrue(pack.unit(25)!!.objectives.none { it.id == "obj-u25-productive-formation" })
         val governed = pack.provenanceRecords.single { it.itemId == "prov-ex-u25-nickname-rule-2-en" }
@@ -272,6 +276,7 @@ class Phase2BoundedClaimsTest {
         assertTrue(familiarErrors, familiarErrors.contains("conflicting governed descriptions"))
         assertTrue(unresolved(familiar, 25).contains("documented-name-form"))
         assertFalse(advancementDecision(familiar, familiar.unit(25)!!, learner(familiar.unit(25)!!)).allowed)
+        assertFalse(ordinaryUnitRequirements(familiar, familiar.unit(25)!!, learner(familiar.unit(25)!!)).allowed)
 
         val silentFeedback = replaceNameAnswer(pack, "u25-i-name-form-2", sashka.answer, feedback = "This reading is conventional.")
         assertTrue(errors(silentFeedback), errors(silentFeedback).contains("feedback does not agree with the keyed answer"))
@@ -323,6 +328,13 @@ class Phase2BoundedClaimsTest {
 
     private fun unresolved(pack: V2CurriculumPack, number: Int): Set<String> =
         V2Validator.unresolvedRequiredSourceCapabilities(pack, number).map { it.claim }.toSet()
+
+    /** Unit-local synthetic evidence has no assigned earlier-objective review. */
+    private fun assertAssignedReviewStillRequired(pack: V2CurriculumPack, unit: dev.russiancompanion.v2.curriculum.V2Unit) {
+        val decision = advancementDecision(pack, unit, learner(unit))
+        assertFalse(decision.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), decision.remaining)
+    }
 
     private fun learner(unit: dev.russiancompanion.v2.curriculum.V2Unit) = V2LearnerView(
         onboardingCompleted = true,

@@ -11,12 +11,12 @@ Unit 3 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86
+- Curriculum source commit: 057367e58751c4db86af05f5b84b463537ffa3c7
+- Unit content-review SHA-256: 28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300
 - Mapping-package SHA-256: e40e0ce030f9221b6e2fceba66fe946d85ad172703c47bd34d795e77e43120b4
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 504f29ea76d0a33c0c3171e3fd58e77caa1fd4e0389232abdf81d2cdc8228281
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: 0e2985b1929cf4286ea10dfa93e654cd107e3720d7eb00e3eff76c80010a94fe
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=54
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ff482051e4a685d7f61769a6676eeaa3f8395d4e9a2aca525f97f1c209780955
+- Content hash: 8f6463c19bf2802ebf2882d679c1143960d20c9d2d2fad1dcd8b3f9f48542689
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=12
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u3-gender`
@@ -113,13 +113,13 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b7e91492357d4d233cbc604beaadaf3aec5cd04db1e2086cef3b0e56b6d2d06e
+- Content hash: 0bb46cc46981c44f7fa03b91015892184667311c5eb1935a0a1201d75e9cb09f
 
 title=Recognize admitted noun genders
 kind=RECOGNITION
 unitNumber=3
 instruction=u3-st-orient,u3-st-teach-gender-1,u3-st-teach-gender-2,u3-st-teach-gender-3,u3-st-teach-gender-4,u3-st-teach-gender-5
-examples=ex-u3-стол,ex-u3-дом,ex-u3-город,ex-u3-брат,ex-u3-книга,ex-u3-вода,ex-u3-школа,ex-u3-работа,ex-u3-окно,ex-u3-письмо,ex-u3-молоко,ex-u3-море,ex-u3-мужчина,ex-u3-дядя
+examples=ex-u3-стол,ex-u3-дом,ex-u3-город,ex-u3-брат,ex-u3-книга,ex-u3-вода,ex-u3-школа,ex-u3-работа,ex-u3-окно,ex-u3-письмо,ex-u3-молоко,ex-u3-море,ex-u3-мужчина,ex-u3-дядя,ex-u3-друг,ex-u3-дверь
 practice=u3-st-guided-gender-2,u3-st-guided-gender-3,u3-st-guided-gender-4,u3-st-guided-gender-5
 checks=u3-i-gender-город,u3-i-gender-друг,u3-i-gender-дверь,u3-i-gender-море,u3-i-gender-дядя
 remediation=u3-st-rem-gender
@@ -263,15 +263,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1866eea25696819056a7e039893c56dfeecca62f5f13c1b113e68ed4c17d2d7a
+- Content hash: 381aeac9e390694b00a14aa3c753bed13c71b73dde3d53dffcc8e9eaed849e9b
 
 kind=TEACH
-title=Four records in the first group
-body=These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. 
+title=Recorded masculine nouns
+body=These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
-examples=ex-u3-стол,ex-u3-дом,ex-u3-город,ex-u3-брат
+examples=ex-u3-стол,ex-u3-дом,ex-u3-город,ex-u3-брат,ex-u3-друг
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -307,15 +307,15 @@ remediationStepId=u3-st-rem-gender
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: adcf124a83e0dbcaf1c2317ee31c5e984279ce59e8d5fc2aba323020a9925d4f
+- Content hash: b6735d51554908bd49d499174afeade90f957efd49db3afec9c39b92deffc635
 
 kind=TEACH
-title=Four records in the second group
-body=These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. 
+title=Recorded feminine nouns
+body=These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
-examples=ex-u3-книга,ex-u3-вода,ex-u3-школа,ex-u3-работа
+examples=ex-u3-книга,ex-u3-вода,ex-u3-школа,ex-u3-работа,ex-u3-дверь
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -395,11 +395,11 @@ remediationStepId=u3-st-rem-gender
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0fe39146ea3b8356ff33f38b52bfd01be5a3fa6bc8e2c8b93b9c4695d35e7d55
+- Content hash: b49dd2b7dad73eafd9af9b011d8851e4a12adef90b509df6f4bc2ccbd596b7bd
 
 kind=TEACH
 title=Two records the page still places in the first group
-body=These admitted records are listed as masculine. The frozen page says though it has a 'feminine' ending and conjugates like a feminine noun, 'uncle' is 'inherently' masculine. мужчи́на — man. дя́дя — uncle. 
+body=дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
@@ -439,15 +439,23 @@ remediationStepId=u3-st-rem-gender
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8a686f314ce7b920515ee508df638b72e2dcd139e5b3bf15be505ed11f503c7c
+- Content hash: 79c661f30b28926c92adcabcc2c22b5e35540d343d07c7b741ab119580aed1b6
 
 kind=REMEDIATE
-title=Remediation
-body=Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.
+title=Review the admitted noun genders
+body=The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.
+
+These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
+
+These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
+
+These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. 
+
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
 dominantAction=Continue
 references=
 items=
-examples=ex-u3-стол,ex-u3-дом
+examples=ex-u3-стол,ex-u3-дом,ex-u3-город,ex-u3-брат,ex-u3-друг,ex-u3-книга,ex-u3-вода,ex-u3-школа,ex-u3-работа,ex-u3-дверь,ex-u3-окно,ex-u3-письмо,ex-u3-молоко,ex-u3-море,ex-u3-мужчина,ex-u3-дядя
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -755,12 +763,12 @@ remediationStepId=u3-st-rem-naming
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ebc66d9d5ca16d9aca1578faf51fb948e17e729aa37e572116573a557593d030
+- Content hash: acdd90e17608398e7ccbc761714305e4dab6009bd800f4a2c1104000d943ae2a
 
 title=Self-attest Lesson 3
 estimatedMinutes=10
 objectives=obj-u3-book
-steps=u3-st-book-work,u3-st-book
+steps=u3-st-book-work,u3-st-book,u3-st-anki-direction,u3-st-binder-direction,u3-st-tutor-direction,u3-st-cumulative-direction
 
 ### STEP `u3-st-book-work`
 
@@ -770,7 +778,7 @@ steps=u3-st-book-work,u3-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1e0156e68e765c4df7317d5154d0c7d3302478445c6a9efb5f005e0031455fd7
+- Content hash: 394631eab3a6ffbe8dd958a9c19c8f632f13c31a963332e7a682db7b54dc5246
 
 kind=BOOK
 title=Work Lesson 3 in your copy
@@ -780,7 +788,7 @@ references=ref-book-topics,ref-u35-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 3 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -792,7 +800,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e9e711e8ec8c20fd5ec3eaa7aff0c55198db67c4bf307faf62a062239c0aa658
+- Content hash: 2e39422443ea578ac6c2ab2bcf9758d62470015f591f0f0462e1a002d9736b1b
 
 kind=BOOK
 title=Record Lesson 3 book work
@@ -802,8 +810,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 3 work in your copy.
+bookDirection=Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u3-st-anki-direction`
+
+- Objectives: obj-u3-book
+- Sessions: u3-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: dd6c006439f8febdd3829c88ccef3139fe6735fe56d165251ce0bc79ad246579
+
+kind=ANKI
+title=Unit 3 AnkiDroid direction
+body=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u3-st-binder-direction`
+
+- Objectives: obj-u3-book
+- Sessions: u3-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6c8d9b38456b3eff53f22827ff0f44e832f73abc50e189bfd06c87c5de9792a9
+
+kind=BINDER
+title=Unit 3 binder prompt
+body=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u3-st-tutor-direction`
+
+- Objectives: obj-u3-book
+- Sessions: u3-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: abda439968b4faf25764d507c1489678e6abddbc752104a4c6eb83492e540f10
+
+kind=TUTOR
+title=Unit 3 optional tutor
+body=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u3-st-cumulative-direction`
+
+- Objectives: obj-u3-book
+- Sessions: u3-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 41e7c9b1fc5aefc4e9ea07473cced477ee8e739e3715ef4d69944a5115e904c1
+
+kind=ORIENT
+title=Unit 3 cumulative review
+body=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u3-стол`
@@ -1041,6 +1137,40 @@ kind=LEXICAL
 letterId=
 display=дя́дя
 note=uncle
+objectiveId=obj-u3-gender
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u3-друг`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-gender
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 329a358b030e626f98d2c39eb655de6ff29fc28b9514432e0f94ad3f957652eb
+
+kind=LEXICAL
+letterId=
+display=друг
+note=friend
+objectiveId=obj-u3-gender
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u3-дверь`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-gender
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ece602b60a463fbc06275e9eb8b9c5e530e94264ee0b1146c529131ec7e46140
+
+kind=LEXICAL
+letterId=
+display=дверь
+note=door
 objectiveId=obj-u3-gender
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1704,6 +1834,292 @@ introducedInUnit=3
 searchTerms=where lesson bodies are packaged
 reviewStatus=NOT_REQUIRED
 
+### PROVENANCE `prov-ca-3-346`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7dd6b3ad60d5abfbeb810aee8f0dbaea396097979ec62ca0275e81e742c9f9f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-5
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+shippedText=дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9a328d2ff90e38c0621fc2504f544fd46075f780399c86c898f8876e8e88c0a8
+contentHash=ef2713a40b21643197b991e4ed4016f8564c9e57ab73a545e1d798930cbfd361
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-3-347`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1afce8070932cce2bd50a5a223d7fe5cec791c4bf984a0077622621837bf1a1a
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-5
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+shippedText=а,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9a328d2ff90e38c0621fc2504f544fd46075f780399c86c898f8876e8e88c0a8
+contentHash=3dcaa4fdd9e579c37782614b0e535a9f8171a9d26827cdb0d5bca63b55dabf06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-3-348`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5933153b10f3449fe39100f46c989212545a49d4495e9eb4f30a0fe7c1ffd2c1
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-5
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+shippedText=а
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9a328d2ff90e38c0621fc2504f544fd46075f780399c86c898f8876e8e88c0a8
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u3-gender-u3-st-rem-gender-complete-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eec8ff4fb1f31d41e07af5fad9d6972abc1d6a762f227fb052580b0e78cfa031
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-rem-gender:complete-recorded-contrast-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.
+
+These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
+
+These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
+
+These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. 
+
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+shippedText=The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.
+
+These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
+
+These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
+
+These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. 
+
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8409554ff1bd58cd26e7427b58363b08959141770aee4cba2da2241d265f70fd
+contentHash=50a917fb60bf244d3986689e787d06916920e17f4b5940c0cc9661293da0045c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u3-gender-u3-st-rem-gender-heading-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0120b4ae9670d027a30095f71cd95bda40795dbc12c317a8c0ebb23aa5053e55
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-rem-gender:heading-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+Review the admitted noun genders
+shippedText=Review the admitted noun genders
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5957cc796e4139df226b6cd10456082a02333fb30275d32ff8e3e1a484b4cf6d
+contentHash=ed08e5dca19f53625817df5610e8b0a4c2c616078f076d1cc2fd06729442913a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-2-complete-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f833361d0256c8a107ef62664c8bfe0db5ee8c3bc75dc34666af5ec552d4b07b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-2:complete-recorded-contrast-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
+shippedText=These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=38ee3ab88dd3486fb22290ba00dae596ca3cfbb1f29238831954614683b2e65f
+contentHash=feb0c9e5d2499ec419fcfd505ca61192ef7096c1a1edd45ff7fc1734f5acf57f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-2-heading-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a01ae74c8139b5d6f2889c6b88dee4fccc80dc55e9b8de27033a13de2a0f430
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-2:heading-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+Recorded masculine nouns
+shippedText=Recorded masculine nouns
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f47d5b9ffcf5de2ef55d78f403ca4221854319030e905953f94c201f5a5a8391
+contentHash=bd87142671092cbdc16a36b5572231dfaf2fac80f0b9a461e727246362e38d67
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-3-complete-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a0f64090996c52b3e183c141963db149dd1887242d70893f19d239c3105e0a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-3:complete-recorded-contrast-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
+shippedText=These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=26344347fb2404a8faa74db822cb90bc41cebbbb9249d314e63ec4ea0c10a2cd
+contentHash=5e6d0c97e1c1e2926876b4122cbde7a334788262d1fca8ad664b2b39016e2b37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-3-heading-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87e5509d798f1b5251a6c6984f5686ba43bc27dfd4fd2e21ca53e29cf60632f4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-3:heading-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+Recorded feminine nouns
+shippedText=Recorded feminine nouns
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1fbf7397277cf550f07193fb4edeb49465313e1641d48e794e3b9bcd14869166
+contentHash=0657ba96b6e572d668bac29bda63fbad60331a52f32bfea2baab3ca35d772dc7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u3-dyadya-note`
 
 - Objectives: obj-u3-gender
@@ -1727,6 +2143,64 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=77ddf6906536584b1db04d17b6ea8729c4b27f518bb6ac0ae49e0f59fcc8fb9d
 contentHash=77ddf6906536584b1db04d17b6ea8729c4b27f518bb6ac0ae49e0f59fcc8fb9d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u3-gender-field-дверь`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9243a2312eababca1f44cc8dbca81abc02435738c631b2c9975fe50df6d9b8bb
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:дверь#gender
+originalSourceText=f
+shippedText=feminine
+transformation=gender field label expansion
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111
+contentHash=584a6898b0a5a6131f4ed1c8c80a773d6a717aabbe86dcd4a9c6af40d893f212
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u3-gender-field-друг`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0987e0497064fa0a64a3be523952150e3f61274124f4b636a2e951638146d66
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:друг#gender
+originalSourceText=m
+shippedText=masculine
+transformation=gender field label expansion
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a
+contentHash=b01cc7b0a6012d960af4357a1e27f2d14f5b605c42d1d1372b0f2d7f6f328087
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3937,6 +4411,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-3-11124`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68277413165a79992a2cc0e39fc3af30321e24ff1e585ebb4d8e6f841fa13181
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 3 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-3-11125`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f298c576fb10addbf0cdba57b07339134c55cfb67e53ce8509151a5a245d483
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-3-11126`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b24cadeb04f9f126e017a8c397f0534715a5e175dc12fca12ac991c1eb62bc68
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 3 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-3-11127`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bdd2a04fa777039e1d069f79ccbf5b0e4c7bc97bc884d011a3acddd81cd6e4d7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-3-11128`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11391caa02f8fb8f663f2311a3d37c18c46e06195260d7dd8a5e7b98ea5b7f0b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 3 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-3-11129`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 053945b803b38f9dba9563d5c4177dacac1c63fce7a3849413ee1e9f4eabbc63
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-3-11130`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69d7a93ee7eb90d01273e51297a7227470ad469520cd6d05b50a3df42468241a
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 3 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-3-2`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 758647c43dfbe0127aea18d952b6af34a76cc52aa3e47142e59df421c2c2db17
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-3-3`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 15384c8e021227574d0fbb6195d770da033d419a55e08411735e7701b9b94eca
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-3-4`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1020177ef3a9abc16f1f99bf75cdbde6ddc161a4017ac2f6eda2636589047b7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u3-001`
 
 - Objectives: none
@@ -4528,6 +5132,21 @@ Original app text
 Russian Companion project
 Original
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### RIGHTS `rights-openrussian-50e210c4`
 
 - Objectives: none
@@ -4570,6 +5189,20 @@ src-app-english-v2
 Original app text
 permitsAppUse=true
 
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
+permitsAppUse=true
+
 ## Instructional relationships
 
 - `obj-u3-gender` INSTRUCTION `u3-st-orient`
@@ -4592,6 +5225,8 @@ permitsAppUse=true
 - `obj-u3-gender` EXAMPLE `ex-u3-море`
 - `obj-u3-gender` EXAMPLE `ex-u3-мужчина`
 - `obj-u3-gender` EXAMPLE `ex-u3-дядя`
+- `obj-u3-gender` EXAMPLE `ex-u3-друг`
+- `obj-u3-gender` EXAMPLE `ex-u3-дверь`
 - `obj-u3-gender` PRACTICE `u3-st-guided-gender-2`
 - `obj-u3-gender` PRACTICE `u3-st-guided-gender-3`
 - `obj-u3-gender` PRACTICE `u3-st-guided-gender-4`
@@ -4645,6 +5280,7 @@ permitsAppUse=true
 - `u3-st-teach-gender-2` EXAMPLE `ex-u3-дом`
 - `u3-st-teach-gender-2` EXAMPLE `ex-u3-город`
 - `u3-st-teach-gender-2` EXAMPLE `ex-u3-брат`
+- `u3-st-teach-gender-2` EXAMPLE `ex-u3-друг`
 - `u3-st-teach-gender-2` REFERENCE `ref-u35-attribution`
 - `u3-st-guided-gender-2` REMEDIATION `u3-st-rem-gender`
 - `u3-st-guided-gender-2` ITEM `u3-i-gender-стол`
@@ -4653,6 +5289,7 @@ permitsAppUse=true
 - `u3-st-teach-gender-3` EXAMPLE `ex-u3-вода`
 - `u3-st-teach-gender-3` EXAMPLE `ex-u3-школа`
 - `u3-st-teach-gender-3` EXAMPLE `ex-u3-работа`
+- `u3-st-teach-gender-3` EXAMPLE `ex-u3-дверь`
 - `u3-st-teach-gender-3` REFERENCE `ref-u35-attribution`
 - `u3-st-guided-gender-3` REMEDIATION `u3-st-rem-gender`
 - `u3-st-guided-gender-3` ITEM `u3-i-gender-книга`
@@ -4670,6 +5307,20 @@ permitsAppUse=true
 - `u3-st-guided-gender-5` ITEM `u3-i-gender-мужчина`
 - `u3-st-rem-gender` EXAMPLE `ex-u3-стол`
 - `u3-st-rem-gender` EXAMPLE `ex-u3-дом`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-город`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-брат`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-друг`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-книга`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-вода`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-школа`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-работа`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-дверь`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-окно`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-письмо`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-молоко`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-море`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-мужчина`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-дядя`
 - `u3-st-check-gender` REMEDIATION `u3-st-rem-gender`
 - `u3-st-check-gender` ITEM `u3-i-gender-город`
 - `u3-st-check-gender` ITEM `u3-i-gender-друг`
@@ -4716,7 +5367,18 @@ permitsAppUse=true
 - `u3-s-book` OBJECTIVE `obj-u3-book`
 - `u3-st-book-work` REFERENCE `ref-book-topics`
 - `u3-st-book-work` REFERENCE `ref-u35-attribution`
+- `obj-u3-gender` PROVENANCE `prov-ca-3-346`
+- `obj-u3-gender` PROVENANCE `prov-ca-3-347`
+- `obj-u3-gender` PROVENANCE `prov-ca-3-348`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-rem-gender-complete-v1`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-rem-gender-heading-v1`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-2-complete-v1`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-2-heading-v1`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-3-complete-v1`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-3-heading-v1`
 - `obj-u3-gender` PROVENANCE `prov-u3-dyadya-note`
+- `obj-u3-gender` PROVENANCE `prov-u3-gender-field-дверь`
+- `obj-u3-gender` PROVENANCE `prov-u3-gender-field-друг`
 - `obj-u3-gender` PROVENANCE `prov-u3-gender-sentence`
 - `obj-u3-gender` PROVENANCE `prov-u3-gloss-брат`
 - `obj-u3-gender` PROVENANCE `prov-u3-gloss-вода`

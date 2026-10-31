@@ -91,4 +91,15 @@ internal interface V2Dao {
 
     @Query("DELETE FROM v2_unit_completions")
     fun deleteUnitCompletions()
+
+    @Insert fun insertReviewAssignment(row: V2ReviewAssignmentEntity)
+    @Insert fun insertReviewAnswer(row: V2ReviewAnswerEntity)
+    @Query("SELECT * FROM v2_review_assignments ORDER BY id")
+    fun reviewAssignments(): List<V2ReviewAssignmentEntity>
+    @Query("SELECT * FROM v2_review_answers ORDER BY acceptedOrder")
+    fun reviewAnswers(): List<V2ReviewAnswerEntity>
+    @Query("SELECT COALESCE(MAX(acceptedOrder), 0) FROM v2_review_answers")
+    fun maxReviewOrder(): Long
+    @Query("DELETE FROM v2_review_answers") fun deleteReviewAnswers()
+    @Query("DELETE FROM v2_review_assignments") fun deleteReviewAssignments()
 }

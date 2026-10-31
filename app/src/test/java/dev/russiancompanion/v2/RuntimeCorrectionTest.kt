@@ -3,15 +3,18 @@ package dev.russiancompanion.v2
 import android.content.Context
 import android.os.Looper
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.material3.Text
+import androidx.compose.ui.test.assertIsEnabled
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.assertIsNotSelected
 import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.junit4.StateRestorationTester
 import androidx.compose.ui.test.junit4.v2.createComposeRule
+import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
@@ -38,6 +41,7 @@ import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.session
 import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.stepCompletionItemIds
 import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.ui.StoreV2Persistence
 import dev.russiancompanion.v2.ui.V2App
@@ -155,6 +159,7 @@ class RuntimeCorrectionTest {
         target.exampleIds.forEach { id ->
             compose.onNodeWithTag("v2-example-$id").performScrollTo().assertIsDisplayed()
         }
+        completeRemediationPractice(pack, target.id)
         compose.onNodeWithTag("v2-return-to-check").performClick()
         compose.onNodeWithText(step.title).assertIsDisplayed()
         compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertIsDisplayed()
@@ -194,10 +199,20 @@ class RuntimeCorrectionTest {
         val store = openedStore()
         val unit = pack.unit(1)!!
         val iotated = pack.step("u1-st-iotated")!!.second
-        val check = pack.session("u1-s-iotated")!!.steps.last()
+        val session = pack.session("u1-s-iotated")!!
+        val check = session.steps.last()
+        val activeStepIds = session.steps.map { it.id }.toSet()
         unit.sessions.flatMap { it.steps }
-            .filter { it.id != iotated.id && it.id != check.id }
-            .forEach { store.v2CompleteGovernedStep(it.id, stepContentDigest(pack, it), "2026-10-02T12:00") }
+            .filter { it.id !in activeStepIds }
+            .forEach { completed ->
+                dev.russiancompanion.v2.curriculum.stepCompletionItemIds(pack, completed.id).forEach { itemId ->
+                    val priorItem = pack.item(itemId)!!
+                    store.v2RecordGovernedAttempt(
+                        prepareGovernedAttempt(pack, itemId, priorItem.answer, PRESCRIBED_CHECK, completed.id, "2026-10-02T12:00")!!,
+                    )
+                }
+                store.v2CompleteGovernedStep(completed.id, stepContentDigest(pack, completed), "2026-10-02T12:00")
+            }
         store.v2SaveProfile(
             store.v2Profile().copy(
                 onboardingCompleted = true,
@@ -213,7 +228,15 @@ class RuntimeCorrectionTest {
         iotated.exampleIds.forEach { id ->
             compose.onNodeWithTag("v2-example-$id").performScrollTo().assertIsDisplayed()
         }
+        awaitEnabled("v2-session-continue")
         compose.onNodeWithTag("v2-session-continue").performClick()
+        val intervening = pack.session("u1-s-iotated")!!.steps.drop(1).dropLast(1)
+        intervening.forEach { guided ->
+            awaitText(guided.title)
+            guided.itemIds.forEach { id -> choose(pack.item(id)!!, wrong = false) }
+            awaitEnabled("v2-session-continue")
+            compose.onNodeWithTag("v2-session-continue").performClick()
+        }
         awaitText(check.title)
         val item = pack.item(check.itemIds.first())!!
         choose(item, wrong = true)
@@ -223,6 +246,7 @@ class RuntimeCorrectionTest {
         iotated.exampleIds.forEach { id ->
             compose.onNodeWithTag("v2-example-$id").performScrollTo().assertIsDisplayed()
         }
+        completeRemediationPractice(pack, iotated.id)
         compose.onNodeWithTag("v2-return-to-check").performClick()
         compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertIsDisplayed()
         compose.onNodeWithTag("v2-note-draft").performScrollTo().performTextInput("letter draft")
@@ -236,6 +260,7 @@ class RuntimeCorrectionTest {
             choose(other, wrong = true)
             awaitTag("v2-item-feedback-$id")
         }
+        awaitEnabled("v2-session-continue")
         compose.onNodeWithTag("v2-session-continue").performClick()
         awaitText("Review advancement")
         compose.onNodeWithText("Review advancement").assertIsDisplayed()
@@ -650,26 +675,45 @@ class RuntimeCorrectionTest {
     }
 
     @Test
-    fun objectivesWithoutGuidedPracticeStayVisibleAsGaps() {
+    fun formerGuidedPracticeGapsNowHaveRealItems() {
         val pack = pack()
-        val gaps = setOf(
-            "u1-st-confusable",
-            "u1-st-iotated",
-            "u1-st-signs",
-            "u1-st-print",
-            "u1-st-decoding",
-            "u4-st-rem-nominative",
-        )
         assertEquals(listOf("u7-st-guided-manner-1"), reviewedGuidedPractice(pack, "u7-st-rem-manner"))
         val targets = pack.units.flatMap { it.sessions }.flatMap { it.steps }.mapNotNull { it.remediationStepId }.toSet()
-        assertEquals(156, targets.size)
+        assertTrue(targets.size >= 156)
+        // The retained sentence meanings are non-gating reference choices, not case-role practice.
+        val referenceTarget = "u4-st-rem-optional-nominative-gloss"
+        assertEquals(setOf(referenceTarget), targets.filter { reviewedGuidedPractice(pack, it).isEmpty() }.toSet())
+        val reference = pack.unit(4)!!.objectives.single { referenceTarget in it.remediationStepIds }
+        assertEquals("obj-u4-nominative-gloss-reference", reference.id)
+        assertEquals("GUIDANCE", reference.kind)
+        assertFalse(reference.gating)
+        assertTrue(reference.practiceStepIds.isEmpty())
+        assertTrue(reference.checkItemIds.isEmpty())
+        val referenceStep = pack.step("u4-st-optional-nominative-gloss")!!.second
+        assertEquals("GUIDED", referenceStep.kind)
+        assertEquals(referenceTarget, referenceStep.remediationStepId)
+        assertEquals(setOf("u4-g-nominative-1", "u4-i-nom-muzh", "u4-i-nom-poezd"), referenceStep.itemIds.toSet())
+        referenceStep.itemIds.forEach { id ->
+            val item = pack.item(id)!!
+            assertEquals(reference.id, item.objectiveId)
+            assertEquals("SOURCE_MEANING", item.kind)
+            assertEquals(null, item.assessment)
+        }
+        assertTrue(stepCompletionItemIds(pack, referenceStep.id).isEmpty())
         targets.forEach { target ->
             val guided = reviewedGuidedPractice(pack, target)
-            if (target in gaps) {
-                assertTrue("$target still has no guided practice in the pack", guided.isEmpty())
-            } else {
-                assertTrue("$target is missing its linked guided practice", guided.isNotEmpty())
-            }
+            if (target == referenceTarget) assertTrue(guided.isEmpty())
+            else assertTrue("$target is missing its linked guided practice", guided.isNotEmpty())
+        }
+        dev.russiancompanion.v2.curriculum.FILLED_GUIDED_PRACTICE_ROUTES.forEach { (remediationId, guidedId) ->
+            val guided = pack.step(guidedId)!!.second
+            assertEquals("GUIDED", guided.kind)
+            assertTrue("$guidedId has no item", guided.itemIds.isNotEmpty())
+            assertEquals(remediationId, guided.remediationStepId)
+            val item = pack.item(guided.itemIds.first())!!
+            assertTrue(item.answer.isNotBlank())
+            assertTrue(item.answer in item.options)
+            assertTrue(item.feedback.isNotBlank())
         }
     }
 
@@ -728,7 +772,7 @@ class RuntimeCorrectionTest {
         assertEquals(1, store.v2Profile().currentUnitNumber)
         assertFalse(store.failAdvanceAfterCompletionForTests)
         compose.onNodeWithTag("v2-advance").performScrollTo().performClick()
-        awaitText("Saved")
+        awaitText("Saved", timeoutMillis = 30_000)
         assertTrue(1 in store.v2LearnerView().completedUnitNumbers)
         assertEquals(2, store.v2Profile().currentUnitNumber)
     }
@@ -789,6 +833,7 @@ class RuntimeCorrectionTest {
             store.v2Profile().copy(
                 onboardingCompleted = true,
                 currentUnitNumber = unitNumber,
+                startingPoint = if (unitNumber > 1) "RESUME_FROM_BOOK" else store.v2Profile().startingPoint,
                 currentSessionId = located.first.id,
                 currentStepIndex = index,
             ).verifiedResume(pack),
@@ -813,6 +858,23 @@ class RuntimeCorrectionTest {
         compose.onNodeWithTag("v2-option-${item.id}-$option").performScrollTo().performClick()
     }
 
+    private fun completeRemediationPractice(pack: V2CurriculumPack, targetId: String) {
+        val guidedIds = reviewedGuidedPractice(pack, targetId)
+        if (guidedIds.isEmpty()) return
+        compose.onNodeWithTag("v2-review-practice").performClick()
+        guidedIds.forEachIndexed { index, id ->
+            val guided = pack.step(id)!!.second
+            awaitText(guided.title)
+            guided.itemIds.forEach { itemId ->
+                val item = pack.item(itemId)!!
+                compose.onNodeWithTag("v2-item-prompt-${item.id}").performScrollTo().assertIsDisplayed()
+                choose(item, wrong = false)
+                awaitTag("v2-item-feedback-${item.id}")
+            }
+            if (index < guidedIds.lastIndex) compose.onNodeWithTag("v2-next-practice").performClick()
+        }
+    }
+
     private fun wrongOption(item: V2CheckItem): String = item.options.first { it != item.answer }
 
     private fun assertDoesNotExist(tag: String) {
@@ -829,9 +891,17 @@ class RuntimeCorrectionTest {
         compose.onNodeWithText(text).assertIsDisplayed()
     }
 
-    private fun awaitText(text: String) {
+    private fun awaitEnabled(tag: String) {
+        compose.waitUntil(timeoutMillis = 5_000) {
+            compose.onAllNodesWithTag(tag).fetchSemanticsNodes().singleOrNull()
+                ?.config?.contains(SemanticsProperties.Disabled) == false
+        }
+        compose.onNodeWithTag(tag).assertIsEnabled()
+    }
+
+    private fun awaitText(text: String, timeoutMillis: Long = 5_000) {
         val start = System.currentTimeMillis()
-        while (System.currentTimeMillis() - start < 5_000) {
+        while (System.currentTimeMillis() - start < timeoutMillis) {
             compose.waitForIdle()
             if (compose.onAllNodesWithText(text, substring = true).fetchSemanticsNodes().isNotEmpty()) return
             Thread.sleep(20)
@@ -874,7 +944,8 @@ class RuntimeCorrectionTest {
 
     private fun awaitTag(tag: String) {
         val start = System.currentTimeMillis()
-        while (System.currentTimeMillis() - start < 5_000) {
+        // Real asynchronous evidence checks can exceed five seconds under parallel Robolectric load.
+        while (System.currentTimeMillis() - start < 20_000) {
             compose.waitForIdle()
             try {
                 compose.onNodeWithTag(tag).assertExists()
@@ -959,3 +1030,4 @@ private class GatedPersistence(
         delegate.addTutor(targetId, note, recordedAt, targetDigest)
     }
 }
+

@@ -33,11 +33,11 @@ class Units1620SourceIntakeTest {
     )
 
     private val preservedContentDigests = mapOf(
-        11 to "7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324",
-        12 to "c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb",
-        13 to "e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5",
-        14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
-        15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
+        11 to "2a0b74e3722f0f0a1c2e0041c73c6654211eee81c918e44c1b23929fcf24672b",
+        12 to "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+        13 to "7102c47201a3d4973d781d315dbbb8ceccca3424174b9c90ad127bac037828df",
+        14 to "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
+        15 to "ea945a9c9cd01a30db3522794b9df36c5a4fc291092a153da0672bb4b8a9a6bd",
     )
 
     @Test
@@ -60,7 +60,8 @@ class Units1620SourceIntakeTest {
             assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
             assertEquals("UNRESOLVED", facts.isbnObservation)
             assertNull(facts.isbn)
-            assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
+            assertTrue(pack.ownedEditionMappings.filter { it.unitNumber == number }.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+            assertEquals(1, pack.ownedEditionMappings.count { it.unitNumber == number })
             assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.unitReviews.first { it.unitNumber == number }.status)
             assertTrue(pack.unitReviews.first { it.unitNumber == number }.reviewer.isNullOrBlank())
         }
@@ -69,7 +70,56 @@ class Units1620SourceIntakeTest {
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
         assertEquals(emptySet<Int>(), pack.units.filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
         preservedContentDigests.forEach { (number, digest) ->
-            assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+            if (number == 11) {
+                val beforeReviewAndRepair = historicalSourcePack("5e49fdd5727d933a68a94a0479ca95b9c5c14ea9")
+                assertEquals("historical unit11", digest, V2Validator.unitContentReviewDigest(beforeReviewAndRepair, 11))
+                val afterRepair = historicalSourcePack("37e6a0cbd7de30a539e90a0481f6ab8c5c562ed9")
+                // Original correction ledger's newUnit11Digest,not a freshly bumped snapshot.
+                val declaredAfterDigest = "35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69"
+                assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(afterRepair, 11))
+                // These original assertions name the repaired instruction before Unit11's later review declaration.
+                RecordedCurriculumConservationScope.beforeUnit11NounReview(repo(), pack).let { pack ->
+                    assertEquals(afterRepair.unit(11), pack.unit(11))
+                    assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), 11)
+                org.junit.Assert.assertNotEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
+            } else if (number == 15) {
+                // Keep the original pin on its recorded snapshot; preparation changed later.
+                val prior = historicalSourcePack("49a926c5ace0459edf7712ca5d90db4a63ff9d31")
+                assertEquals("historical unit $number", digest, V2Validator.unitContentReviewDigest(prior, number))
+                val correction = historicalSourcePack("0f8001a8ec2cb76a7bc994a2c8d77db09a272d04")
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, correction, number)
+                org.junit.Assert.assertNotEquals(digest, V2Validator.unitContentReviewDigest(pack, number))
+            } else if (number == 12) {
+                // The retained v1 digest belongs to the exact pre-Unit12 declaration.
+                RecordedCurriculumConservationScope.beforeUnit12GenderReview(repo(), pack).let { pack ->
+                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
+                org.junit.Assert.assertNotEquals("Current Unit12 versioned review identity", digest,
+                    V2Validator.unitContentReviewDigest(pack, number))
+            } else if (number == 13) {
+                // Retain the original v2 digest on its proven whole-pack source; never reset the pin.
+                RecordedCurriculumConservationScope.beforeUnit13PresentReview(repo(), pack).let { pack ->
+                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
+                org.junit.Assert.assertNotEquals("Current Unit13 v3 review identity", digest,
+                    V2Validator.unitContentReviewDigest(pack, number))
+            } else if (number == 14) {
+                // Retain the old v1 pin only on its proven whole-pack declaration scope.
+                RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(repo(), pack).let { pack ->
+                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
+                org.junit.Assert.assertNotEquals("Current Unit14 v2 review identity", digest, V2Validator.unitContentReviewDigest(pack, number))
+            } else {
+                assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+            }
         }
     }
 
@@ -157,6 +207,8 @@ class Units1620SourceIntakeTest {
                 } else {
                     assertTrue(record.itemId, page.contains(record.originalSourceText))
                 }
+            } else if (record.sourceId == "src-content-audit-research") {
+                assertContentAuditResearch(record)
             } else {
                 assertTrue(record.sourceRevision.startsWith("50e210c4803237779cb562bc1abcea529066031c"))
             }
@@ -180,7 +232,7 @@ class Units1620SourceIntakeTest {
         assertFalse(reason(pack, 20).contains("red link"))
         listOf(17).forEach { number ->
             val unit = pack.unit(number)!!
-            val decision = advancementDecision(
+            val decision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
                 pack,
                 unit,
                 learner(
@@ -191,11 +243,16 @@ class Units1620SourceIntakeTest {
                 ),
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            val full = advancementDecision(pack, unit, learner(number, book = true,
+                correct = (unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }).toSet(),
+                steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet()))
+            assertFalse(full.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
             assertFalse(decision.remaining.any { it.contains("not prepared") })
         }
         listOf(16, 18, 19, 20).forEach { number ->
             val unit = pack.unit(number)!!
-            val decision = advancementDecision(
+            val decision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
                 pack,
                 unit,
                 learner(
@@ -206,6 +263,11 @@ class Units1620SourceIntakeTest {
                 ),
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            val full = advancementDecision(pack, unit, learner(number, book = true,
+                correct = (unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }).toSet(),
+                steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet()))
+            assertFalse(full.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
         }
     }
 
@@ -317,7 +379,9 @@ class Units1620SourceIntakeTest {
         }
         val instrumental = pack.unit(16)!!.sessions.flatMap { it.steps }.first { it.body.contains("-ом") }.body
         assertFalse(mediaWiki(instrumental))
-        assertFalse(instrumental.contains("\u0301"))
+        // Whole-word stress marks are taught explicitly; the suffix itself is unstressed.
+        assertTrue(instrumental.contains("-ом"))
+        assertFalse(instrumental.contains("-о\u0301м"))
         assertTrue(instrumental.contains("\u043e"))
         listOf(16, 18, 20).forEach { number ->
             val unit = pack.unit(number)!!
@@ -398,6 +462,14 @@ class Units1620SourceIntakeTest {
         assertTrue(candidate.contains("\"frozen\": false"))
         assertTrue(candidate.contains("\"sourceCommit\": null"))
         assertTrue(candidate.contains("AT-031"))
+    }
+
+    private fun historicalSourcePack(commit: String): V2CurriculumPack {
+        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json")
+            .directory(repo()).start()
+        val historical = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
+        assertEquals(0, process.waitFor())
+        return historical
     }
 
     private fun withoutCapabilities(pack: V2CurriculumPack, number: Int) = pack.copy(

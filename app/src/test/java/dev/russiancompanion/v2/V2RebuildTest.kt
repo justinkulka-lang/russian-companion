@@ -1,6 +1,9 @@
 package dev.russiancompanion.v2
 
 import android.content.Context
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonPrimitive
+import kotlinx.serialization.json.jsonObject
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.getBoundsInRoot
 import androidx.compose.ui.test.getUnclippedBoundsInRoot
@@ -120,7 +123,8 @@ class V2RebuildTest {
         assertTrue(reviewObjective.remediationStepIds.isNotEmpty())
         assertEquals(0, pack.audioAssets.size)
         assertEquals(0, pack.handwritingAssets.size)
-        assertEquals(0, pack.ownedEditionMappings.size)
+        assertEquals(30, pack.ownedEditionMappings.size)
+        assertTrue(pack.ownedEditionMappings.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
         assertEquals("PENDING_CURRICULUM_REVIEWER", pack.unit(1)?.mappingStatus)
         val unit1Text = pack.unit(1)!!.topicSummary + pack.unit(1)!!.sessions.flatMap { it.steps }.joinToString(" ") { it.body }
         assertFalse(unit1Text.contains("Penguin-aligned"))
@@ -455,7 +459,7 @@ class V2RebuildTest {
         store.v2CompleteUnit(1, "2026-09-23T12:00")
         store.v2CompleteUnit(2, "2026-09-23T12:00")
         store.v2SaveProfile(store.v2Profile().copy(currentUnitNumber = 3, onboardingCompleted = true))
-        assertEquals(V2UnitState.CURRENT, unitState(pack, unit3, store.v2LearnerView()))
+        assertEquals("Unsupported historical prerequisite rows do not unlock current placement", V2UnitState.LOCKED, unitState(pack, unit3, store.v2LearnerView()))
         assertEquals(V2UnitState.LOCKED, unitState(pack, pack.unit(4)!!, store.v2LearnerView()))
         val attested = store.v2LearnerView().copy(
             completedStepIds = unit3.sessions.flatMap { it.steps }.map { it.id }.toSet(),
@@ -530,9 +534,10 @@ class V2RebuildTest {
         assertEquals("rev-pending-v2-curriculum", pack.linguisticReview.id)
         assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.linguisticReview.status)
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
-        assertTrue(seed.contains("\"packId\": \"v2-curriculum-foundation\""))
-        assertTrue(seed.contains("\"packVersion\": 3"))
-        assertTrue(seed.contains("\"id\": \"rev-pending-v2-curriculum\""))
+        val identity = Json.parseToJsonElement(seed).jsonObject
+        assertEquals(JsonPrimitive("v2-curriculum-foundation"), identity["packId"])
+        assertEquals(JsonPrimitive(3), identity["packVersion"])
+        assertEquals(JsonPrimitive("rev-pending-v2-curriculum"), identity["linguisticReview"]!!.jsonObject["id"])
         assertFalse(seed.contains("v2-units-1-2-foundation"))
         assertFalse(seed.contains("rev-pending-units-1-2"))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(1)!!.readiness)
@@ -691,6 +696,13 @@ class V2RebuildTest {
         assertEquals(V2UnitState.LOCKED, locked)
         store.v2CompleteUnit(1, "2026-09-22T12:00")
         store.v2SaveProfile(store.v2Profile().copy(currentUnitNumber = 2, onboardingCompleted = true))
+        assertEquals(V2UnitState.LOCKED, unitState(pack, pack.unit(2)!!, store.v2LearnerView()))
+        val firstUnit = pack.unit(1)!!
+        firstUnit.sessions.flatMap { it.steps }.forEach { step ->
+            store.v2CompleteGovernedStep(step.id, stepContentDigest(pack, step), "2026-09-22T12:01")
+            step.itemIds.forEach { id -> recordPrescribed(store, pack, pack.item(id)!!, "2026-09-22T12:01") }
+        }
+        store.v2AttestBook(1, "2026-09-22T12:01")
         assertEquals(V2UnitState.CURRENT, unitState(pack, pack.unit(2)!!, store.v2LearnerView()))
         assertTrue(pack.unit(1)!!.sessions.flatMap { it.steps }.none { it.unavailableReason != null })
         val unit2Steps = pack.unit(2)!!.sessions.flatMap { it.steps }
@@ -926,13 +938,29 @@ class V2RebuildTest {
     @Test
     fun structuralMappingSafeguardsRejectIncompleteOrInventedRecords() {
         val pack = pack()
-        assertEquals(0, pack.ownedEditionMappings.size)
-        assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", V2Validator.unitContentReviewDigest(pack, 1))
-        assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", V2Validator.unitContentReviewDigest(pack, 5))
-        assertEquals("ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1", V2Validator.contentReviewDigest(pack))
+        assertEquals(30, pack.ownedEditionMappings.size)
+        assertTrue(pack.ownedEditionMappings.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+        // Original foundation pins remain historical; mapping mutation safeguards below remain actual-current.
+        RecordedLiteracyEpochScope.beforeCorrection(repo(), pack).let { pack ->
+        assertEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", V2Validator.unitContentReviewDigest(pack, 1))
+        assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
+        }
+        assertNotEquals(V2Validator.unitContentReviewDigest(RecordedLiteracyEpochScope.beforeCorrection(repo(), pack), 1), V2Validator.unitContentReviewDigest(pack, 1))
+        assertNotEquals(V2Validator.unitContentReviewDigest(RecordedLiteracyEpochScope.beforeCorrection(repo(), pack), 2), V2Validator.unitContentReviewDigest(pack, 2))
+        assertEquals("28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300", V2Validator.unitContentReviewDigest(pack, 3))
+        val historical = RecordedCurriculumConservationScope.source(repo(), RecordedCurriculumConservationScope.priorSource)
+        assertEquals("1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11", V2Validator.unitContentReviewDigest(historical, 4))
+        RecordedCurriculumConservationScope.assertHistoricalPinsAndCurrentUnits(repo(), pack,
+            mapOf(4 to V2Validator.unitContentReviewDigest(historical, 4)))
+        // Preserve the original Unit5 pin on the exact, independently proven pre-review pack.
+        // The outer pack remains current for every mapping and mutation safeguard below.
+        val precedingReviews = RecordedCurriculumConservationScope.beforeUnit5GrammarReview(repo(), pack)
+        precedingReviews.let { pack ->
+            assertEquals("3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141", V2Validator.unitContentReviewDigest(pack, 5))
+        }
+        assertNotEquals(V2Validator.unitContentReviewDigest(precedingReviews, 5), V2Validator.unitContentReviewDigest(pack, 5))
+        assertEquals("e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4", V2Validator.contentReviewDigest(historical))
+        assertNotEquals(V2Validator.contentReviewDigest(historical), V2Validator.contentReviewDigest(pack))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)
@@ -1055,11 +1083,17 @@ class V2RebuildTest {
         val blocked = advancementDecision(pack, unit, learner)
         assertFalse(blocked.remaining.joinToString(), blocked.allowed)
         assertTrue(blocked.remaining.joinToString(), blocked.remaining.any { it.contains(skipped.title) })
+        val ordinaryBlocked = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(pack, unit, learner)
+        assertFalse(ordinaryBlocked.allowed)
+        assertTrue(ordinaryBlocked.remaining.any { it.contains(skipped.title) })
         pack.items.filter { it.id in skippedItems }.forEach { item ->
             recordPrescribed(store, pack, item, "2026-09-23T12:03")
         }
-        val ready = advancementDecision(pack, unit, store.v2LearnerView())
+        val ready = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(pack, unit, store.v2LearnerView())
         assertTrue(ready.remaining.joinToString(), ready.allowed)
+        val full = advancementDecision(pack, unit, store.v2LearnerView())
+        assertFalse(full.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
     }
 
     private fun assertAtContentInset(tag: String) {

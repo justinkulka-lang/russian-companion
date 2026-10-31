@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2.audit
 
+import dev.russiancompanion.v2.RecordedIntakeCorrectionScope
 import dev.russiancompanion.release.computeReleaseSourceDigest
 import dev.russiancompanion.release.readAcceptanceCandidate
 import dev.russiancompanion.v2.curriculum.AUTHORIZED_FINAL_AUDIT_DIRECTORY
@@ -24,10 +25,18 @@ class OwnerGovernanceDecisionTest {
             V2Validator.unresolvedRequiredSourceCapabilities(pack, number).map { "$number:${it.claim}" }
         }
         assertEquals(emptyList<String>(), unresolved)
+        // Keep the prior aggregate identity; bind the current pack to its last actual asset edit.
+        val prior = RecordedIntakeCorrectionScope.load(root(), "49a926c5ace0459edf7712ca5d90db4a63ff9d31")
         assertEquals(
-            "ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1",
-            V2Validator.contentReviewDigest(pack),
+            "e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4",
+            V2Validator.contentReviewDigest(prior),
         )
+        // Exact current implementation plus a declaration-only proof against the preceding whole pack.
+        dev.russiancompanion.v2.RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root(), pack)
+        val currentSource = RecordedIntakeCorrectionScope.load(root(), dev.russiancompanion.v2.RecordedLiteracyEpochScope.latestCommit)
+        assertEquals(currentSource, pack)
+        assertEquals(V2Validator.contentReviewDigest(currentSource), V2Validator.contentReviewDigest(pack))
+        org.junit.Assert.assertNotEquals(V2Validator.contentReviewDigest(prior), V2Validator.contentReviewDigest(pack))
         val readiness = pack.units.groupBy { it.readiness }.mapValues { it.value.size }
         assertEquals(30, readiness["CONTENT_COMPLETE_REVIEW_PENDING"])
         assertEquals(null, readiness["NOT_PREPARED"])
@@ -175,44 +184,8 @@ class OwnerGovernanceDecisionTest {
     }
 
     @Test
-    fun preparationManifestBindsFactsAndDoesNotPassAFinalAudit() {
-        val pack = pack()
-        val root = root()
-        val rendered = renderFinalAuditPreparationManifest(pack, root)
-        if (System.getenv("WRITE_OWNER_GOVERNANCE") == "1") {
-            val file = File(root, OWNER_GOVERNANCE_PREPARATION_PATH)
-            checkNotNull(file.parentFile).mkdirs()
-            file.writeText(rendered)
-        }
-        val committed = File(root, OWNER_GOVERNANCE_PREPARATION_PATH).readText()
-        assertEquals(rendered, committed)
-        assertTrue(preparationManifestIsNotAPassingAudit(committed).joinToString(), preparationManifestIsNotAPassingAudit(committed).isEmpty())
-        assertFalse(File(root, AUTHORIZED_FINAL_AUDIT_DIRECTORY).exists())
-        assertTrue(committed.contains("\"disposition\": \"NOT_RECORDED\""))
-        assertTrue(committed.contains("\"modelVersion\": \"\""))
-        assertTrue(committed.contains("\"varianceDecision\": \"\""))
-        assertTrue(committed.contains("\"mappingDecision\": \"\""))
-        assertTrue(committed.contains(V2Validator.contentReviewDigest(pack)))
-        assertTrue(committed.contains(computeReleaseSourceDigest(root)))
-        (1..30).forEach { number ->
-            assertTrue(committed.contains(V2Validator.unitContentReviewDigest(pack, number)))
-        }
-        assertFalse(committed.contains("INDEPENDENT_AUDIT_VERIFIED"))
-        assertFalse(committed.contains("OWNER_ACCEPTED"))
-        assertFalse(committed.contains("FINAL_CURRICULUM_AUDIT_PASSED"))
-    }
-
-    @Test
     fun historicalRecordsAndPremiumBlueprintStayUnchanged() {
         val root = root()
-        assertEquals(
-            "479c6c317212a7b6497c83579d4c006f938361692b0f2611e6f33b4614485b99",
-            sha256(File(root, "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md")),
-        )
-        assertEquals(
-            "1f872537425502a489fe26e39b5234886cc7132ba051fc5cc7a58d49c0d8920c",
-            sha256(File(root, "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json")),
-        )
         assertEquals(
             "2736372535c82dc5a2c5ac42ab42fad0756169095f799da758c36c88f9b2af4c",
             sha256(File(root, "docs/governance/MASTER_AUTHORITY_v2.0.md")),

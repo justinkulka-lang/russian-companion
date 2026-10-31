@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2.review
 
+import dev.russiancompanion.v2.RecordedIntakeCorrectionScope
 import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.unit
@@ -223,11 +224,38 @@ class UnitReviewPipelineTest {
         val prior = mappingPackageDigest(facts)
         val pending = buildUnitReviewPackage(pack, 1)
         assertEquals(prior, pending.mappingPackageDigest)
-        assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", pending.contentReviewDigest)
-        assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", V2Validator.unitContentReviewDigest(pack, 5))
+        val foundation = dev.russiancompanion.v2.RecordedLiteracyEpochScope.beforeCorrection(repo(), pack)
+        assertEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", V2Validator.unitContentReviewDigest(foundation, 1))
+        assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(foundation, 2))
+        assertEquals(V2Validator.unitContentReviewDigest(pack, 1), pending.contentReviewDigest)
+        assertNotEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", pending.contentReviewDigest)
+        assertNotEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
+        assertEquals("28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300", V2Validator.unitContentReviewDigest(pack, 3))
+        val priorUnit4 = RecordedIntakeCorrectionScope.load(repo(), "49a926c5ace0459edf7712ca5d90db4a63ff9d31")
+        assertEquals("1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11", V2Validator.unitContentReviewDigest(priorUnit4, 4))
+        val currentUnit4Source = RecordedIntakeCorrectionScope.load(repo(), "e6db0bdfe0bbb40edf190623e2123014946f305b")
+        RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, currentUnit4Source, 4)
+        assertNotEquals(V2Validator.unitContentReviewDigest(priorUnit4, 4), V2Validator.unitContentReviewDigest(pack, 4))
+        fun actualAsset(commit: String): dev.russiancompanion.v2.curriculum.V2CurriculumPack {
+            val command = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json").directory(repo()).start()
+            val asset = V2PackLoader.parse(command.inputStream.bufferedReader().readText())
+            assertEquals(0, command.waitFor())
+            return asset
+        }
+        val historical = actualAsset("ae5804bced1fc1641e4d57fdbd90bfde118e9d5f")
+        assertEquals("c2e405cf7081d673a39def8e26035bac7a65b608c57c5f4803ba832c2305c744", V2Validator.unitContentReviewDigest(historical, 5))
+        val activated = actualAsset("1e84576413cbd0e51cc07934baf416154e69bd0b")
+        // Original Unit5 activation ledger,not a freshly copied current snapshot.
+        val activatedDigest = "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141"
+        assertEquals(activatedDigest, V2Validator.unitContentReviewDigest(activated, 5))
+        val currentPack = pack
+        run {
+            // Preserve the original activation assertions in their historical declaration scope.
+            // The helper also binds the current pack to its real asset commit and permits only the policy-ID change.
+            val pack = dev.russiancompanion.v2.RecordedCurriculumConservationScope.beforeUnit5GrammarReview(repo(), currentPack)
+        assertEquals(activated.unit(5), pack.unit(5))
+        assertEquals(activatedDigest, V2Validator.unitContentReviewDigest(pack, 5))
+        }
         val mutations = listOf(
             "lesson number" to facts.copy(proposedLessonNumber = 9),
             "printed page start" to facts.copy(printedPageStart = 2),
@@ -285,7 +313,7 @@ class UnitReviewPipelineTest {
 
         val listed = ProcessBuilder(listOf("git", "ls-files", "*.pdf", "*.PDF"))
             .directory(repo())
-            .redirectError(File("/dev/null"))
+            .redirectError(File(if (System.getProperty("os.name").startsWith("Windows", ignoreCase = true)) "NUL" else "/dev/null"))
             .start()
             .let { process ->
                 val text = process.inputStream.bufferedReader().readText()
@@ -305,7 +333,7 @@ class UnitReviewPipelineTest {
         val root = repo()
         val head = ProcessBuilder("git", "rev-parse", "HEAD")
             .directory(root)
-            .redirectError(File("/dev/null"))
+            .redirectError(File(if (System.getProperty("os.name").startsWith("Windows", ignoreCase = true)) "NUL" else "/dev/null"))
             .start()
             .let { process ->
                 val text = process.inputStream.bufferedReader().readText().trim()
@@ -316,65 +344,28 @@ class UnitReviewPipelineTest {
         val predating = "08663616a79af9009c657ecfb66d7f6d42a531bf"
         val rejected = curriculumSourceCommitErrors(predating, root, 2)
         assertTrue(rejected.joinToString("\n"), rejected.any { it.contains("Unit 2 content-review digest") || it.contains("readable curriculum") })
-        (1..2).forEach { number ->
+        (1..30).forEach { number ->
+            val pin = curriculumCommitForUnit(number)
             val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
+            assertTrue(manifest.contains(pin))
             assertFalse(manifest.contains(predating))
-            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isEmpty())
+            val errors = curriculumSourceCommitErrors(pin, root, number)
+            assertTrue(errors.joinToString("\n"), errors.isEmpty())
         }
-        (3..5).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isNotEmpty())
+        // A reconstructed historical digest cannot relabel a current packet as current source evidence.
+        val currentFour = buildUnitReviewPackage(pack, 4)
+        val historicalFour = buildHistoricalUnitReviewPackage(pack, 4, UNIT4_CUMULATIVE_REVIEW_CURRICULUM_COMMIT)
+        assertNotEquals(currentFour.reviewPackageDigest, historicalFour.reviewPackageDigest)
+        val relabelled = renderUnitReviewFiles(pack, 4).files.mapValues { (_, text) ->
+            text.replace(currentFour.reviewPackageDigest, historicalFour.reviewPackageDigest)
+                .replace(curriculumCommitForUnit(4), UNIT4_CUMULATIVE_REVIEW_CURRICULUM_COMMIT)
         }
-        (6..10).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_6_10_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isNotEmpty())
-        }
-        assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, 10).isNotEmpty())
-        (11..15).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_6_10_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors("c9f23afd219681319554d90424f2d59fd550cadc", root, number).isNotEmpty())
-        }
-        listOf(16, 17, 18, 19, 20).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_16_20_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_16_20_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isNotEmpty())
-        }
-        listOf(21, 22, 23, 24, 25).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_21_25_CURRICULUM_COMMIT))
-            if (UNITS_21_25_CURRICULUM_COMMIT != UNITS_16_20_CURRICULUM_COMMIT) {
-                assertFalse(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))
-            }
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_21_25_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_21_25_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors("55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511", root, number).isNotEmpty())
-        }
+        val historicalErrors = validateUnitReviewFiles(pack, 4, relabelled)
+        assertTrue(historicalErrors.joinToString("\n"), historicalErrors.any { it.contains("curriculum source commit") })
+        assertTrue(historicalErrors.joinToString("\n"), historicalErrors.any { it.contains("Review package digest") })
+        assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, 1).isNotEmpty())
+        assertTrue(curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, 7).isNotEmpty())
+        assertTrue(curriculumSourceCommitErrors(UNITS_26_30_CURRICULUM_COMMIT, root, 27).isNotEmpty())
     }
 
     private fun reachableLetters(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, unitNumber: Int): Set<String> {

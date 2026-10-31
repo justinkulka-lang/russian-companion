@@ -11,12 +11,12 @@ Unit 2 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4a6c21da07b515df226a090cc0ff6b1ff4a78aa1
-- Unit content-review SHA-256: d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b
+- Curriculum source commit: 0107931bfee92fa932c93ae63d3f4a34080cb2bf
+- Unit content-review SHA-256: d90b27224f52723e33182e4962f581e8b12beb05ee5de06c55a4379382153df5
 - Mapping-package SHA-256: def2280a90229cec52750f12cb7dc2f7564df8508c113a69cf6ed585cee1c0c6
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 92aca982a0c0cea09f375adfe9ac9300c2351f930fde8cd9a3a7ce331b4262a5
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: bc1db13ae1d8795a7412ca484135e8a72c443b0666abfc476ca3f881f4e7d041
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,13 +113,13 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8ff9f77cc9e2ff815f9ddee8a587a65b63197e3f3c304c02586f7aeefa6dc43b
+- Content hash: 095bc0ede4788c4583d47a847a9c9728a91f4eaa61cb4dc72ff83a1953abd091
 
 title=Review Unit 1 printed letters
 kind=RECOGNITION
 unitNumber=2
 instruction=u2-st-review
-examples=ex-print-letter-0411,ex-letter-0412,ex-letter-0423,ex-letter-0425
+examples=ex-letter-0412,ex-letter-0423,ex-letter-0425,ex-print-letter-0411,ex-letter-042f
 practice=u2-st-review-guided
 checks=u2-i-в-not-b,u2-i-у-not-y,u2-i-х-not-x,u2-i-print-б,u2-i-я-identity
 remediation=u2-st-review
@@ -203,7 +203,7 @@ steps=u2-st-hw
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e64f77e7f73a718e6e7a38cf0e823858a1a87113f2f36b898f6e962f0315e1ca
+- Content hash: f8cbc09621d354fd9313aa268397cd006547c029c97a2efa0dd4279d266d0d3d
 
 kind=BOOK
 title=Handwritten forms stay in the owned book
@@ -213,7 +213,7 @@ references=ref-limits
 items=
 examples=
 unavailableReason=
-bookDirection=Copy the handwritten forms from Lesson 2 in your book onto paper. This app does not show or grade them.
+bookDirection=Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -240,15 +240,15 @@ steps=u2-st-review,u2-st-review-guided,u2-st-review-v,u2-st-review-u,u2-st-revie
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 070aaa18de576f506919cf847ad979fe8882f958068ddce3a7a94f86fdd3caca
+- Content hash: 4fa4ecf1db31f831803f3a1a0bd673f47c26e1184b36741bf754bfc43db205a8
 
 kind=TEACH
 title=Keep letter identities available
-body=Review the printed letters from Unit 1, especially Latin look-alikes and print pairs.
+body=Match each lowercase print form to its uppercase partner. Compare the strokes in both parts of each letter-board pair. A similar-looking letter from the Latin alphabet is not a substitute for a Cyrillic letter. Use the worked examples to practise the case pairs, then identify the pair for the form on the check card.
 dominantAction=Continue
 references=ref-cyrillic-print,ref-confusable
 items=
-examples=ex-letter-0412,ex-letter-0423,ex-letter-0425,ex-print-letter-0411
+examples=ex-letter-0412,ex-letter-0423,ex-letter-0425,ex-print-letter-0411,ex-letter-042f
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -365,7 +365,7 @@ steps=u2-st-pron
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5ce768069cd45ba5d00eb0f96235e44c830abd6223e15b1aa8d24b0936a7a4a0
+- Content hash: 9413f8d7a9619b204331397205271a6248df6df1085ef1ef204f2ca2acc704f8
 
 kind=BOOK
 title=Additional pronunciation stays in the owned book
@@ -375,7 +375,7 @@ references=ref-pronunciation
 items=
 examples=
 unavailableReason=
-bookDirection=Use the Lesson 2 pronunciation notes in your copy. Model audio is not in this app.
+bookDirection=Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -476,7 +476,7 @@ steps=u2-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 43a5767c597e0da2b2bbf0bdf264a92b6fd0ba2972d961a445d000ad00d6274e
+- Content hash: d7e0d6896b49bfc1a5ebf4bfa9e22faa0ac832618be0ac77867c78907ea1d641
 
 kind=BOOK
 title=Lesson 2 in your copy
@@ -486,34 +486,34 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Do Lesson 2 in your book, including handwritten-form practice.
+bookDirection=Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
 ### SESSION `u2-s-check`
 
-- Objectives: obj-u2-review
+- Objectives: obj-u2-review, obj-u2-book
 - Sessions: u2-s-check
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 408a0c5f5877aee1d7fb81a68502423f19a19aa08dabee826d535d466295a28a
+- Content hash: 55ff52850ce3938b8c08191effbc0430f81fb062980e50b8c34e7c4186184aa3
 
 title=Unit 2 letter check
 estimatedMinutes=8
-objectives=obj-u2-review
-steps=u2-st-check
+objectives=obj-u2-review,obj-u2-book
+steps=u2-st-check,u2-st-anki-direction,u2-st-binder-direction,u2-st-tutor-direction,u2-st-cumulative-direction
 
 ### STEP `u2-st-check`
 
-- Objectives: obj-u2-review
+- Objectives: obj-u2-review, obj-u2-book
 - Sessions: u2-s-check
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 42166e0f4ed6670adf09e0ec210ed6f13a8ea459b2511a568221003150915c95
+- Content hash: cadb1ec2ba8c4bf85309116626d341dbd4794f940bcaeac43a88ed2bc7828159
 
 kind=CHECK
 title=Reviewed letter identities
@@ -527,22 +527,93 @@ bookDirection=
 companionDirection=
 remediationStepId=u2-st-review
 
-### EXAMPLE `ex-print-letter-0411`
+### STEP `u2-st-anki-direction`
 
-- Objectives: obj-u2-review
-- Sessions: u2-s-review
-- Source: src-unicode-cyrillic
-- Rights: rights-unicode-cyrillic
+- Objectives: obj-u2-review, obj-u2-book
+- Sessions: u2-s-check
+- Source: none
+- Rights: none
 - Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 164f0102c86cb102e8b5b6fb4175132755f2e1110483b1fc64ce743ed5741c30
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: cb833212534ec577644b4fa8fd49830b1a09ea600922018d3d5a9bcefb4ecc82
 
-kind=PRINT_PAIR
-letterId=letter-0411
-display=Б / б
-note=Б and б are the same letter in two print cases.
-objectiveId=obj-u2-review
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+kind=ANKI
+title=Unit 2 AnkiDroid direction
+body=Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u2-st-binder-direction`
+
+- Objectives: obj-u2-review, obj-u2-book
+- Sessions: u2-s-check
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 842f86737871fda66460593a9ee898bcd30e39cc17d581ee44f16fa2593940ee
+
+kind=BINDER
+title=Unit 2 binder prompt
+body=Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u2-st-tutor-direction`
+
+- Objectives: obj-u2-review, obj-u2-book
+- Sessions: u2-s-check
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5b1148a44f8fb1355f056ba4865eb47ae118d7def938e8e23b65d37ea332b140
+
+kind=TUTOR
+title=Unit 2 optional tutor
+body=Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u2-st-cumulative-direction`
+
+- Objectives: obj-u2-review, obj-u2-book
+- Sessions: u2-s-check
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 253a49b6f9a660aa7b81dd8892da8edd098b772ec456924ed89cfbb292fb815e
+
+kind=ORIENT
+title=Unit 2 cumulative review
+body=Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+companionDirection=Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+remediationStepId=
 
 ### EXAMPLE `ex-letter-0412`
 
@@ -595,6 +666,40 @@ note=Printed pair Х х. Treat the Cyrillic identity, not a Latin look-alike.
 objectiveId=obj-u1-confusable
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-print-letter-0411`
+
+- Objectives: obj-u2-review
+- Sessions: u2-s-review
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 164f0102c86cb102e8b5b6fb4175132755f2e1110483b1fc64ce743ed5741c30
+
+kind=PRINT_PAIR
+letterId=letter-0411
+display=Б / б
+note=Б and б are the same letter in two print cases.
+objectiveId=obj-u2-review
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-letter-042f`
+
+- Objectives: obj-u1-iotated
+- Sessions: u2-s-review
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d59582728b90cbe971dc14cff1d8165ab5a3f80a422e841aba5bf4e2d031afd7
+
+kind=LETTER_FORM
+letterId=letter-042f
+display=Я / я
+note=Printed pair Я я.
+objectiveId=obj-u1-iotated
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### GUIDED_AND_INDEPENDENT_CHECK `u2-i-print-б`
 
 - Objectives: obj-u2-review
@@ -603,7 +708,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 000fe3bdfaf1e3375514d6e1088c019dc1385e3dabace00d18c4c3d162bdd107
+- Content hash: af6a3f8d0c42a37bc87d1062a8ca532bb4320344c6e63c928996473f8a6f16a8
 
 kind=PRINT_PAIR
 language=en
@@ -615,6 +720,7 @@ feedback=Б / б is one letter. В is a different letter.
 objectiveId=obj-u2-review
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | В pairs with в, not б. The lowercase б is the partner of Б. | Б pairs with б, not в. The lowercase в is the partner of В.
 
 ### INDEPENDENT_CHECK `u2-i-в-not-b`
 
@@ -624,18 +730,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: fb17d81342f0191fad32bde447c5ddc26c3e343607bae53fd4c1c4b107859413
+- Content hash: ad42dc4c57b2aaa5a12da2cc80dcab6ee0a68e0ea38059fe8120e959ab30f3a0
 
-kind=CONFUSABLE
+kind=PRINT_PAIR
 language=en
-prompt=This letter looks like Latin B. What is it?
-promptLetter=В
-options=Latin B | Cyrillic В | Cyrillic Б
+prompt=Which uppercase Cyrillic letter pairs with this lowercase print form?
+promptLetter=в
+options=Cyrillic Б | Cyrillic В | Cyrillic Р
 answer=Cyrillic В
-feedback=В is not Latin B and it is not Cyrillic Б.
+feedback=The lowercase and uppercase forms belong to the same Cyrillic letter. Compare both strokes and shape in the letter-board pair.
 objectiveId=obj-u2-review
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=Б pairs with б. The shown в pairs with В; compare the two bowls of в with the shape of б. |  | Р pairs with р, which has a stem and a loop. It does not pair with the two-bowl в.
 
 ### INDEPENDENT_CHECK `u2-i-у-not-y`
 
@@ -645,18 +752,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: bd27a652a7c60302217dfadc5a7c128f83b61fb5e7fe12c0e45b841ae1fe3a3b
+- Content hash: a851e16d3e1d643bfb9311d1f991891d5712cb455a6fccf8f50476003fcad67e
 
-kind=CONFUSABLE
+kind=PRINT_PAIR
 language=en
-prompt=This letter looks like Latin Y. What is it?
-promptLetter=У
-options=Latin Y | Cyrillic У | Cyrillic И
+prompt=Which uppercase Cyrillic letter pairs with this lowercase print form?
+promptLetter=у
+options=Cyrillic Ч | Cyrillic У | Cyrillic Ц
 answer=Cyrillic У
-feedback=У is a Cyrillic vowel letter, not Latin Y.
+feedback=The lowercase and uppercase forms belong to the same Cyrillic letter. Compare both strokes and shape in the letter-board pair.
 objectiveId=obj-u2-review
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=Ч pairs with ч. The shown у has the descending tail of the У / у pair. |  | Ц pairs with ц, with two uprights and a short lower extension. The shown у belongs to У / у.
 
 ### INDEPENDENT_CHECK `u2-i-х-not-x`
 
@@ -666,18 +774,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 611ad62524dc5b722ab5b92f29f0d3cca9333b5f4b4d59a3b6064d524598bdd6
+- Content hash: 4cdf07418181c8f474e242194f4ad3f3b87b7d4bd8d8636b9df5e8b709e84d7d
 
-kind=CONFUSABLE
+kind=PRINT_PAIR
 language=en
-prompt=This letter looks like Latin X. What is it?
-promptLetter=Х
-options=Latin X | Cyrillic Х | Cyrillic К
+prompt=Which uppercase Cyrillic letter pairs with this lowercase print form?
+promptLetter=х
+options=Cyrillic Ж | Cyrillic Х | Cyrillic К
 answer=Cyrillic Х
-feedback=Х is a Cyrillic letter, not Latin X.
+feedback=The lowercase and uppercase forms belong to the same Cyrillic letter. Compare both strokes and shape in the letter-board pair.
 objectiveId=obj-u2-review
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=Ж pairs with ж, whose strokes branch on both sides. The shown х has two crossing diagonals and pairs with Х. |  | К pairs with к, with arms extending from an upright. The shown х has two crossing diagonals.
 
 ### INDEPENDENT_CHECK `u2-i-я-identity`
 
@@ -687,18 +796,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cb94ce8360718ee0470122f1a64d5c9d62ae3baaa60f71ef8e0f5944567f6272
+- Content hash: 1ff8fceb7b1fb427af41fa5f2add0809c7f689ebd4a89f7ed0d7ffab599ac661
 
-kind=LETTER_IDENTITY
+kind=PRINT_PAIR
 language=en
-prompt=Which printed letter is shown?
-promptLetter=Я
-options=Cyrillic Я | Cyrillic Р | Cyrillic А
+prompt=Which uppercase Cyrillic letter pairs with this lowercase print form?
+promptLetter=я
+options=Cyrillic Р | Cyrillic Я | Cyrillic А
 answer=Cyrillic Я
-feedback=Я is an iotated vowel letter. It is not Р or А.
+feedback=The lowercase and uppercase forms belong to the same Cyrillic letter. Compare both strokes and shape in the letter-board pair.
 objectiveId=obj-u2-review
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=Р pairs with р. The loop and diagonal leg in я identify the Я / я pair. |  | А pairs with а. The shown я is the lowercase partner of Я.
 
 ### REFERENCE `ref-limits`
 
@@ -790,25 +900,6 @@ introducedInUnit=1
 searchTerms=staged decoding limits
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
-### LETTER `letter-0411`
-
-- Objectives: obj-u1-letter-identity, obj-u2-review
-- Sessions: u2-s-review
-- Source: src-unicode-cyrillic
-- Rights: rights-unicode-cyrillic
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8a8b44829b083405089bfd905a3fd1829fda225c27035ba6d18a7c9254b7a6b3
-
-uppercase=Б
-lowercase=б
-group=consonant-early
-englishNote=A voiced bilabial stop. Pending review.
-latinLookalike=
-audioAssetId=
-exampleWordId=
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-
 ### LETTER `letter-0412`
 
 - Objectives: obj-u1-confusable
@@ -862,6 +953,44 @@ lowercase=х
 group=confusable
 englishNote=Looks like Latin X. It is a voiceless velar fricative. Pending review.
 latinLookalike=X
+audioAssetId=
+exampleWordId=
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### LETTER `letter-0411`
+
+- Objectives: obj-u1-letter-identity, obj-u2-review, obj-u1-letter-names
+- Sessions: u2-s-review
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e41c73836ed5c94ecf519b81699cf11182d1825c44e9c3e8751cb8c2881fd60e
+
+uppercase=Б
+lowercase=б
+group=consonant-early
+englishNote=A voiced bilabial stop. Pending review.
+latinLookalike=
+audioAssetId=
+exampleWordId=
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### LETTER `letter-042f`
+
+- Objectives: obj-u1-iotated
+- Sessions: u2-s-review
+- Source: src-unicode-cyrillic
+- Rights: rights-unicode-cyrillic
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34f4d532d91b2c68b9645b5514259fba5a78c21292a38857e310dbf9e16a2f61
+
+uppercase=Я
+lowercase=я
+group=iotated
+englishNote=An iotated vowel letter. Pending review.
+latinLookalike=
 audioAssetId=
 exampleWordId=
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -927,10 +1056,11 @@ permitsAppUse=true
 ## Instructional relationships
 
 - `obj-u2-review` INSTRUCTION `u2-st-review`
-- `obj-u2-review` EXAMPLE `ex-print-letter-0411`
 - `obj-u2-review` EXAMPLE `ex-letter-0412`
 - `obj-u2-review` EXAMPLE `ex-letter-0423`
 - `obj-u2-review` EXAMPLE `ex-letter-0425`
+- `obj-u2-review` EXAMPLE `ex-print-letter-0411`
+- `obj-u2-review` EXAMPLE `ex-letter-042f`
 - `obj-u2-review` PRACTICE `u2-st-review-guided`
 - `obj-u2-review` CHECK `u2-i-в-not-b`
 - `obj-u2-review` CHECK `u2-i-у-not-y`
@@ -947,6 +1077,7 @@ permitsAppUse=true
 - `u2-st-review` EXAMPLE `ex-letter-0423`
 - `u2-st-review` EXAMPLE `ex-letter-0425`
 - `u2-st-review` EXAMPLE `ex-print-letter-0411`
+- `u2-st-review` EXAMPLE `ex-letter-042f`
 - `u2-st-review` REFERENCE `ref-cyrillic-print`
 - `u2-st-review` REFERENCE `ref-confusable`
 - `u2-st-review-guided` REMEDIATION `u2-st-review`
@@ -968,6 +1099,7 @@ permitsAppUse=true
 - `u2-s-record` OBJECTIVE `obj-u2-book`
 - `u2-s-book` OBJECTIVE `obj-u2-book`
 - `u2-s-check` OBJECTIVE `obj-u2-review`
+- `u2-s-check` OBJECTIVE `obj-u2-book`
 - `u2-st-check` REMEDIATION `u2-st-review`
 - `u2-st-check` ITEM `u2-i-в-not-b`
 - `u2-st-check` ITEM `u2-i-print-б`
@@ -980,6 +1112,7 @@ permitsAppUse=true
 - `u2-st-pron`
 - `u2-st-reading`
 - `u2-st-book`
+- `u2-st-cumulative-direction`
 
 ## Unavailable experiences
 

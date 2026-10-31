@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: ae777d85fe3616fc8e065890201d40c241d113bc
-- Unit content-review SHA-256: e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78
+- Curriculum source commit: 370d8716e2747c439da1a450a83b71b129a5c879
+- Unit content-review SHA-256: 78766389453733ed7337deb9d7495e1cdb393e71ffc73dd479bc3ca897085118
 - Mapping-package SHA-256: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 7a03fc91fa0e207544ffdad50ae43c62828234d0ad0ad2eb372eba83192f62b0
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: add044ba1cc2b7d1f4ef8ac0d65d9b8d123ad1ef8be39fd3368d8d7a9e0826e1
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=78
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0be3713e54996cc53576e4ab167105e900c7f8172cad36c58313f080b841f9d4
+- Content hash: ff503aa7f2e1860a730dbab616fbc4f5e8a455c23cfae5651c323954d23dcbdc
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=18
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u8-plural`
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b72e16579f46b53c7ad7f5f357eb069d4894fbdf05cc8c944c837110a4e4c5a0
+- Content hash: 9d6934a143dc26de2bcff97b538157fbe9fd5d0340c8f681e7e76f20095cd4ac
 
-title=Choose the admitted plural form
+title=Recognize supplied singular and plural nominative noun forms
 kind=RECOGNITION
 unitNumber=8
 instruction=u8-st-orient,u8-st-teach-plural-1,u8-st-teach-plural-2,u8-st-teach-plural-3,u8-st-teach-plural-4,u8-st-teach-plural-5,u8-st-teach-plural-6,u8-st-teach-plural-7,u8-st-teach-plural-8
@@ -132,9 +132,9 @@ remediation=u8-st-rem-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 626a941515f473e43e8ff54b586b4ee0bb6ab8d02b48393e635c128fb50a91ce
+- Content hash: 39a721d1f831daf41eff26389062acf0824d27010e2e532ca6322186c471ac2a
 
-title=Identify the admitted plural spelling
+title=Recognize nominative forms and plural spelling
 kind=RECOGNITION
 unitNumber=8
 instruction=u8-st-orient,u8-st-teach-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4,u8-st-teach-spelling-5
@@ -170,12 +170,12 @@ remediation=u8-st-rem-irregular
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 49adde990e643a56b88a5baaf190f154d6faa6182e6dbb84e1011481341caace
+- Content hash: 2ea041078c76ee9605dc8c29adc124e32971e821a0a315aec79d55f88ddfa71a
 
 title=Choose the admitted plural agreement form
 kind=RECOGNITION
 unitNumber=8
-instruction=u8-st-orient,u8-st-teach-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-teach-agreement-5
+instruction=u8-st-orient,u8-st-teach-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-teach-agreement-5,u8-st-teach-agreement-6
 examples=ex-u8-agreement-0,ex-u8-agreement-1,ex-or-u8-agreement-2,ex-or-u8-agreement-3,ex-or-u8-agreement-4,ex-or-u8-agreement-5,ex-or-u8-agreement-6,ex-or-u8-agreement-7
 practice=u8-st-guided-agreement-1
 checks=u8-i-agreement-1,u8-i-agreement-2,u8-i-agreement-3
@@ -189,13 +189,13 @@ remediation=u8-st-rem-agreement
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b2f8519ffa5e2c894cc8fcdfe34b5d93d42eb1659cd025a3d075ae77fac69e98
+- Content hash: 4ab74a29d70b7a32690a78e06b1cfa321f420d11776aea38b1fdbe894e219678
 
-title=Choose between the admitted existence and absence lines
+title=Recognize supplied positive existence statements
 kind=RECOGNITION
 unitNumber=8
 instruction=u8-st-orient,u8-st-teach-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3
-examples=ex-u8-availability-0,ex-u8-availability-1,ex-u8-availability-2,ex-u8-availability-3
+examples=ex-u8-availability-0,ex-u8-availability-1
 practice=u8-st-guided-availability-1
 checks=u8-i-availability-1,u8-i-availability-2,u8-i-availability-3
 remediation=u8-st-rem-availability
@@ -264,12 +264,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 89b6774eb2a4d6f130e36823f12ad1ee6c1756561e47be62a8f8424a12de3a5f
+- Content hash: 3e6891929ec1cbbd79ef9d72532433e312ea388b90cb5fad9e5cbfeccc7c0f75
 
 title=Choose the admitted plural form
 estimatedMinutes=12
 objectives=obj-u8-plural
-steps=u8-st-teach-plural-1,u8-st-guided-plural-1,u8-st-teach-plural-2,u8-st-teach-plural-3,u8-st-teach-plural-4,u8-st-teach-plural-5,u8-st-teach-plural-6,u8-st-teach-plural-7,u8-st-teach-plural-8,u8-st-rem-plural,u8-st-check-plural
+steps=u8-st-teach-plural-1,u8-st-teach-plural-2,u8-st-teach-plural-3,u8-st-teach-plural-4,u8-st-teach-plural-5,u8-st-teach-plural-6,u8-st-teach-plural-7,u8-st-teach-plural-8,u8-st-guided-plural-1,u8-st-rem-plural,u8-st-check-plural
 
 ### STEP `u8-st-teach-plural-1`
 
@@ -279,11 +279,11 @@ steps=u8-st-teach-plural-1,u8-st-guided-plural-1,u8-st-teach-plural-2,u8-st-teac
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cbe8cb1e3cc78933b96ce8ef44986638978ab624021df36044b9d9f40bb29975
+- Content hash: f3932657cd7a794954fa1082c45c65445bff36f6af012925a1bbf8452492c397
 
 kind=TEACH
-title=Admitted lines
-body=сто́л — table. столы́ — table. 
+title=Distinguish one table from tables
+body=сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -293,28 +293,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u8-st-guided-plural-1`
-
-- Objectives: obj-u8-plural
-- Sessions: u8-s-plural
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 26f13e9342a8d4d24a3323976dbc84c6a120432198429f2b827c3eeb5501a6b9
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u8-g-plural-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u8-st-rem-plural
-
 ### STEP `u8-st-teach-plural-2`
 
 - Objectives: obj-u8-plural
@@ -323,11 +301,11 @@ remediationStepId=u8-st-rem-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 066ebfcd6fffe444abaf357506b8f5de01489e95f8b55798523494637b6707f9
+- Content hash: 83427d27ff3dc4389a9325676a30b7beead2e12137f368e43fc008dd030979bd
 
 kind=TEACH
-title=Admitted instruction
-body=There's no 'masculine plural' and 'feminine plural' - there's just, 'plural'.
+title=Keep lexical gender separate from plural agreement
+body=These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -345,11 +323,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 790fddec282061c12773f596ae09a4764844e3d30d5e8e821c8debfb761916a7
+- Content hash: e451d362e2c843cc3c92b6506ba0933ce5667cf944be90725e87590a57c961eb
 
 kind=TEACH
-title=Admitted lines
-body=го́род — town. города́ — town. 
+title=Recognize the town pair
+body=го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -367,11 +345,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c879c6bf35f230105c98d84fe8dd777fd50c76ecc773d0f7d8c7ca7d4ae26d70
+- Content hash: db84b1f7a5bbdd6b52dc0aa352918146b87ec69dd7b00397f552b5a3bc1a0e9a
 
 kind=TEACH
-title=Admitted lines
-body=кни́га — book. кни́ги — book. 
+title=Recognize the book pair and its spelling
+body=кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -389,11 +367,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5a3448a229a5562c44783e36d087492f080f2744112e6cd218237c3f7fe2ac84
+- Content hash: ea37d21d822c301109f1f87a46a166e17ed5dcc949b84f211b7f2d553f82af23
 
 kind=TEACH
-title=Admitted lines
-body=окно́ — window. о́кна — window. 
+title=Recognize the window pair and shifted stress
+body=окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -411,11 +389,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ff27deae73e5f3fe914228cc68e95f71275312e0a9feded3921d761da260eb71
+- Content hash: 8994468a27ef5b3999862e1fca95169e3ee7ee53cad288373675b48c737cd9a6
 
 kind=TEACH
-title=Admitted lines
-body=ма́ма — mom. ма́мы — mom. 
+title=Recognize the mom pair
+body=ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -433,11 +411,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5371e2b96f75da7004fcecd27d2621a5efd20300719b7c834c6107f6d466e1e5
+- Content hash: b50a9c6ea90d6fc867a3ecedfc694b3225e7ae5118a1c7ed72afd49e055119b0
 
 kind=TEACH
-title=Admitted lines
-body=до́м — house. дома́ — house. 
+title=Recognize the house pair
+body=до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -455,11 +433,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: adaf74af6dec33c23baf6a12286abf8a179103f51114754d6ebf04ab440100e7
+- Content hash: 39ddb510e3c0c04d240bdde5c6cd71ce8367a6ae3c1762ff2252f75043fba0a5
 
 kind=TEACH
-title=Admitted lines
-body=сло́во — word. слова́ — word. 
+title=Recognize the word pair within the taught scope
+body=сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -469,6 +447,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u8-st-guided-plural-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f09da71659afdc14c1409ab584f40b724ff68d4d0fb31cccfa2f5bcf9ec23e88
+
+kind=GUIDED
+title=Guided practice
+body=Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
+dominantAction=Continue
+references=
+items=u8-g-plural-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u8-st-rem-plural
+
 ### STEP `u8-st-rem-plural`
 
 - Objectives: obj-u8-plural
@@ -477,15 +477,29 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1a075c0055e9d0d04afec83ae8537ba681f953c8edea08ab6ff989380016bc4b
+- Content hash: b4d99fe6d94dda68097db61305e287f140ec1a38193fe3022eb715a00508612c
 
 kind=REMEDIATE
-title=Remediation
-body=There's no 'masculine plural' and 'feminine plural' - there's just, 'plural'.
+title=Review all seven supplied nominative pairs
+body=сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
+
+These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
+
+го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
+
+кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
+
+окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
+
+ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
+
+до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
+
+сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
 dominantAction=Continue
 references=
 items=
-examples=ex-or-u8-plural-0,ex-or-u8-plural-1
+examples=ex-or-u8-plural-0,ex-or-u8-plural-1,ex-or-u8-plural-2,ex-or-u8-plural-3,ex-or-u8-plural-4,ex-or-u8-plural-5,ex-or-u8-plural-6,ex-or-u8-plural-7,ex-or-u8-plural-8,ex-or-u8-plural-9,ex-or-u8-plural-10,ex-or-u8-plural-11,ex-or-u8-plural-12,ex-or-u8-plural-13
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -499,11 +513,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: abcba5d179a63751222235bf2e940e215a0df7094d38c64f4a7dcc61214ab67c
+- Content hash: eeda0fa2338131158960a0b0c1b141576495fe543b2ab47ed7ee80f5905ebc6b
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
 dominantAction=Continue
 references=
 items=u8-i-plural-1,u8-i-plural-2,u8-i-plural-3,u8-i-plural-4,u8-i-plural-5,u8-i-plural-6
@@ -521,12 +535,12 @@ remediationStepId=u8-st-rem-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 40c6cee625742b417310b4a7741a8cd1a1056918f919209a7474ebb26aa0279f
+- Content hash: fb6f5cd080ff9537ecf09aba0d94652c3385b03bada87e5cc6c5077fccda2e30
 
-title=Identify the admitted plural spelling
+title=Recognize nominative forms and plural spelling
 estimatedMinutes=12
 objectives=obj-u8-spelling
-steps=u8-st-teach-spelling-1,u8-st-guided-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4,u8-st-teach-spelling-5,u8-st-rem-spelling,u8-st-check-spelling
+steps=u8-st-teach-spelling-1,u8-st-teach-spelling-2,u8-st-teach-spelling-3,u8-st-teach-spelling-4,u8-st-teach-spelling-5,u8-st-guided-spelling-1,u8-st-rem-spelling,u8-st-check-spelling
 
 ### STEP `u8-st-teach-spelling-1`
 
@@ -536,11 +550,11 @@ steps=u8-st-teach-spelling-1,u8-st-guided-spelling-1,u8-st-teach-spelling-2,u8-s
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ed79fb69671dbb80a1eef7387b2d7a66f589a8ff04797c02c27e7df8178f1fef
+- Content hash: 43846172be817f78b64b99e32da38ec246497773c73447ac90c1e13a28a4d894
 
 kind=TEACH
-title=Admitted lines
-body=хорошее письмо — good letter. хоро́ший — good. 
+title=Singular and plural forms
+body=Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -550,28 +564,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u8-st-guided-spelling-1`
-
-- Objectives: obj-u8-spelling
-- Sessions: u8-s-spelling
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 881e79f48a861dbbc56188f498846248f41968ec99a13d7bbdd90e729363422d
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u8-g-spelling-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u8-st-rem-spelling
-
 ### STEP `u8-st-teach-spelling-2`
 
 - Objectives: obj-u8-spelling
@@ -580,11 +572,11 @@ remediationStepId=u8-st-rem-spelling
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ed4ce468a646dfd841707c47e8ed319ddecf8f4a788e871b26bd821c75ae7d4c
+- Content hash: c7041944af2d3ca5551e8ef93a06ce9fa7be14ebbdb12582387d5a771611d49b
 
 kind=TEACH
-title=Admitted instruction
-body=you add '''и''', not '''ы'''
+title=The seven-letter spelling rule
+body=After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -602,11 +594,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b0c92f39defe4918f84a731890ae0a770b279e6ebbd08137be1f79018237fefc
+- Content hash: bcb0a9be317f23bedebe65536de1278b2b556a8f55e16b96d33ef49c87a16e8e
 
 kind=TEACH
-title=Admitted lines
-body=хоро́шие — good. кни́га — book. 
+title=A worked noun plural
+body=For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -624,11 +616,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9222e3d9aef92816cd8f48c375fa61b3f7e1c4eb55e64049f0c664827dccb9ae
+- Content hash: 3e85d1f7b9833e0ffc0e14d7468bb80eaa7906d20f179fc2a92a1be185d0f15a
 
 kind=TEACH
-title=Admitted lines
-body=кни́ги — book. дни — day. 
+title=Two plural forms, different patterns
+body=кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -646,11 +638,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d32c3cfb5df49fb11a9fb172378957f12d552c380752112d41e46b6fd212a29
+- Content hash: dd1488e0da99264fefce874ed9f32c2926f4314a69a1073bedfa36bc6483cf94
 
 kind=TEACH
-title=Admitted lines
-body=хоро́шее — good. 
+title=Adjective number and dictionary form
+body=хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -660,6 +652,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u8-st-guided-spelling-1`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-spelling
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5cbd7120f61c9682d24dce297e5ff60b46fced994eed17f84a98175d6359e7a3
+
+kind=GUIDED
+title=Guided practice
+body=Choose the requested singular or plural nominative form. Then read why the other form does not fit.
+dominantAction=Continue
+references=
+items=u8-g-spelling-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u8-st-rem-spelling
+
 ### STEP `u8-st-rem-spelling`
 
 - Objectives: obj-u8-spelling
@@ -668,15 +682,23 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3343526bf2d9881dd9443064ec6d096e8cd57e3848316c2e547928bd9c944516
+- Content hash: bf79e1c662b9bcfb9c8a8922e62b4155c86906b34f1252f3cf22b21d18d74ed8
 
 kind=REMEDIATE
-title=Remediation
-body=you add '''и''', not '''ы'''
+title=Review nominative forms and spelling
+body=Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
+
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
+
+For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
+
+кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
+
+хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
 dominantAction=Continue
 references=
 items=
-examples=ex-u8-spelling-0,ex-or-u8-spelling-1
+examples=ex-u8-spelling-0,ex-or-u8-spelling-1,ex-or-u8-spelling-2,ex-or-u8-spelling-3,ex-or-u8-spelling-4,ex-or-u8-spelling-5,ex-or-u8-spelling-6
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -690,11 +712,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 55d823bca13affca9612cd08e46a1ecfd4ba61d36f1d67df8fb0cd7666f3154d
+- Content hash: c2f0b1dfbf88790d1e2b926ca2037ed0230d8045e8cf0cd7f90cb3501b97d22f
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Choose the requested noun or adjective nominative form. A missed check returns to the explanations and examples.
 dominantAction=Continue
 references=
 items=u8-i-spelling-1,u8-i-spelling-2,u8-i-spelling-3,u8-i-spelling-4
@@ -727,11 +749,11 @@ steps=u8-st-teach-irregular-1,u8-st-guided-irregular-1,u8-st-teach-irregular-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 235615d254f023366d263a171525ec68534a5fc9773cc2d7f4104235ffe7e02a
+- Content hash: 3fd7fd870c432e009f0f8460fce26f75220fd20460c2d459fc36c4003f090c10
 
 kind=TEACH
 title=Admitted lines
-body=пять столов — five tables. брат — brother. 
+body=пять столов — five tables. брат — brother. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -925,12 +947,12 @@ remediationStepId=u8-st-rem-irregular
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 973be57984e207ac28c148fbe7789f32f3a058136aadf8a130895927db59d097
+- Content hash: dc2db700a9ca04bb31a4c1015c69ab02a3bc686cfb0479ba4e332cb91e7f2cec
 
 title=Choose the admitted plural agreement form
 estimatedMinutes=12
 objectives=obj-u8-agreement
-steps=u8-st-teach-agreement-1,u8-st-guided-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-teach-agreement-5,u8-st-rem-agreement,u8-st-check-agreement
+steps=u8-st-teach-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-teach-agreement-5,u8-st-teach-agreement-6,u8-st-guided-agreement-1,u8-st-rem-agreement,u8-st-check-agreement
 
 ### STEP `u8-st-teach-agreement-1`
 
@@ -940,15 +962,125 @@ steps=u8-st-teach-agreement-1,u8-st-guided-agreement-1,u8-st-teach-agreement-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8d5f94477db36a097aba39b5ad13237aedc3d2c8666733db6575f6719f7da457
+- Content hash: 8e2817ff42f1830d9c65d66863ad52c23a7e806fcc53bad26afc7ba3744dcf15
 
 kind=TEACH
-title=Admitted lines
-body=синие книги — the dark blue books. Наши — Our. 
+title=Recognize the supplied plural modifiers
+body=синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
 examples=ex-u8-agreement-0,ex-u8-agreement-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-2`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f87d3316e0b1f80ff33967809112a8c781159a0269685dc108e97445726fcfd3
+
+kind=TEACH
+title=Read the adjective with its noun
+body=In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-3`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a56949657ac1477cc82df4703b8c9d81f1b2a8605a3eee8f32e48bc360764cc8
+
+kind=TEACH
+title=Compare the possessive forms
+body=мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-agreement-2,ex-or-u8-agreement-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-4`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1908e64d6a8602e4437340cd623550e524dfac672e287af7ba8ead130b0d51f8
+
+kind=TEACH
+title=Work the guided adjective pair
+body=но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-agreement-4,ex-or-u8-agreement-5
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-5`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 44a4975d651f0b385aaee891345f8b1d2eb592170118a730202385794e8a93d3
+
+kind=TEACH
+title=Compare the demonstrative forms
+body=The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-agreement-6,ex-or-u8-agreement-7
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-6`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 14192e474205c5e39d350e76cd92b34d455b57f12743bbf1bc73bbc87a2465d8
+
+kind=TEACH
+title=Apply the distinction to a different adjective
+body=The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-u8-agreement-0
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -976,94 +1108,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u8-st-rem-agreement
 
-### STEP `u8-st-teach-agreement-2`
-
-- Objectives: obj-u8-agreement
-- Sessions: u8-s-agreement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0ae6fc69aa8032643ca74fdc94f77b610b85ad362fa645b80625b1227ec80d30
-
-kind=TEACH
-title=Admitted instruction
-body=the dark blue books - '''синие книги'''
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u8-st-teach-agreement-3`
-
-- Objectives: obj-u8-agreement
-- Sessions: u8-s-agreement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4d3da9c20c878dcb24a0857388b91347f8542ad7c382f355b05cc61435904ee6
-
-kind=TEACH
-title=Admitted lines
-body=мо́й — my. мои́ — my. 
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=ex-or-u8-agreement-2,ex-or-u8-agreement-3
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u8-st-teach-agreement-4`
-
-- Objectives: obj-u8-agreement
-- Sessions: u8-s-agreement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cde50575362ed205f61174a450ddbadfe426c3595064e774dd2396e653ffb6da
-
-kind=TEACH
-title=Admitted lines
-body=но́вый — new. но́вые — new. 
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=ex-or-u8-agreement-4,ex-or-u8-agreement-5
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u8-st-teach-agreement-5`
-
-- Objectives: obj-u8-agreement
-- Sessions: u8-s-agreement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 778067359f394e587a707e4ca4553aee89316302fa19a6cb330d276179b33f53
-
-kind=TEACH
-title=Admitted lines
-body=э́та — this. э́ти — this. 
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=ex-or-u8-agreement-6,ex-or-u8-agreement-7
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u8-st-rem-agreement`
 
 - Objectives: obj-u8-agreement
@@ -1072,15 +1116,25 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b3f47260b08fa1cd0d21d36f329765998f7bdd8a7cdd30c992c7b3083b899975
+- Content hash: c4a813bafca4fe8618924204c8734e807f997af3e08157a4bfa7c455be73cb96
 
 kind=REMEDIATE
 title=Remediation
-body=the dark blue books - '''синие книги'''
+body=синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
+
+In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+
+мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+
+но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+
+The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+
+The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
 dominantAction=Continue
 references=
 items=
-examples=ex-u8-agreement-0,ex-u8-agreement-1
+examples=ex-u8-agreement-0,ex-u8-agreement-1,ex-or-u8-agreement-2,ex-or-u8-agreement-3,ex-or-u8-agreement-4,ex-or-u8-agreement-5,ex-or-u8-agreement-6,ex-or-u8-agreement-7
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1116,12 +1170,12 @@ remediationStepId=u8-st-rem-agreement
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f7a7ad81db983fa5612489dfa5cdc2794c8860f47dcf30955b76533655a6b2da
+- Content hash: 9d6fd21d83cedd9e6d3d73b7c4a9b25cb3ef0bf3e43ba021adca266180c3b5a4
 
-title=Choose between the admitted existence and absence lines
+title=Recognize supplied positive existence statements
 estimatedMinutes=12
 objectives=obj-u8-availability
-steps=u8-st-teach-availability-1,u8-st-guided-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3,u8-st-rem-availability,u8-st-check-availability
+steps=u8-st-teach-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3,u8-st-guided-availability-1,u8-st-rem-availability,u8-st-check-availability
 
 ### STEP `u8-st-teach-availability-1`
 
@@ -1131,41 +1185,19 @@ steps=u8-st-teach-availability-1,u8-st-guided-availability-1,u8-st-teach-availab
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 887f240ae8964790cea593b7ca2fde9f8198e1082d39eddb7099cc1671093e62
+- Content hash: 373db6b455f6b5ceda3ad482928dc145f06a8bf456ca5c7f91fd166e438e7405
 
 kind=TEACH
-title=Admitted lines
-body=На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+title=Presence in the supplied street example
+body=На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-u8-availability-0,ex-u8-availability-1
+examples=ex-u8-availability-0
 unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u8-st-guided-availability-1`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-availability
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e80253a58d77dfd9c4f70655661b5252fa3290cda939f01906a9f409ec25f618
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u8-g-availability-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u8-st-rem-availability
 
 ### STEP `u8-st-teach-availability-2`
 
@@ -1175,15 +1207,15 @@ remediationStepId=u8-st-rem-availability
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a3bf9ca13286a8f7dcc0845295a5a89c3ce504efd643cd4bc0f86e0db7ea5e96
+- Content hash: 89fc4cca0592c40562deeaaa0c6c64b220e3d06c944308218ce25c0c19887e16
 
 kind=TEACH
-title=Admitted instruction
-body=Conversely, to say 'There isn't...', 'There aren't...', we use the word
+title=Read the supplied Moscow statement
+body=В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=
+examples=ex-u8-availability-1
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1197,19 +1229,41 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9655c7a486a9314c3c5f8f76c773444a4a39af4170efaa9437de64dcacd072c7
+- Content hash: 35784e983a55cb4ef128261b3b6f22ef65c3059a314538e83e0c85c9fad88067
 
 kind=TEACH
-title=Admitted lines
-body=Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+title=Identify the noun naming what exists
+body=In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-u8-availability-2,ex-u8-availability-3
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u8-st-guided-availability-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-availability
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 21816334f536500795d35981a90d0d4360212ff6e21d26638b78427635d6ff8d
+
+kind=GUIDED
+title=Guided practice
+body=Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
+dominantAction=Continue
+references=
+items=u8-g-availability-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u8-st-rem-availability
 
 ### STEP `u8-st-rem-availability`
 
@@ -1219,11 +1273,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b4a11016bffec565e63d46d8adfe267b1a700c47c9872fbb4bed382fc386cb8a
+- Content hash: a528a6ca325db43e8ed5f8fd8a8bd5c9f5beeac152965aba72a2a5562505cf7e
 
 kind=REMEDIATE
-title=Remediation
-body=Conversely, to say 'There isn't...', 'There aren't...', we use the word
+title=Review the supplied positive statements
+body=На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+
+В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
+
+In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
 dominantAction=Continue
 references=
 items=
@@ -1241,11 +1299,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f4c9fe183734544297047ba54432f49f3817ee9d2a5ebfef9f59925f0a8c27db
+- Content hash: 2b03b411995da271c4529d6ec7ca8e2cf388d7c32204809c170712ae557e1ed8
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
 dominantAction=Continue
 references=
 items=u8-i-availability-1,u8-i-availability-2,u8-i-availability-3
@@ -1263,12 +1321,12 @@ remediationStepId=u8-st-rem-availability
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8effa6ad4a01127bda80e6115b412daff6de03f05a449871eef78a16af1a22d1
+- Content hash: 3e4c39a4203964d2d42dc1c11192aac3e6bb16f9194639bb830ad6cf1916f935
 
 title=Self-attest Lesson 8
 estimatedMinutes=10
 objectives=obj-u8-book
-steps=u8-st-book-work,u8-st-book
+steps=u8-st-book-work,u8-st-book,u8-st-anki-direction,u8-st-binder-direction,u8-st-tutor-direction,u8-st-cumulative-direction
 
 ### STEP `u8-st-book-work`
 
@@ -1278,7 +1336,7 @@ steps=u8-st-book-work,u8-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 04882e3ae87e6caa321ab39de9d1ea228a2f0a8bc0357b3b27b920e5fd052a83
+- Content hash: 1a0a853f6c45452abdb85d839652ac6565cd19ebfa038e2819b38dd68cf5caa5
 
 kind=BOOK
 title=Work Lesson 8 in your copy
@@ -1288,7 +1346,7 @@ references=ref-u610-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 8 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 8: printed pages 81-91. PDF indexes 93-103 are file locators, not printed pages. Observed section locators: §8.1 p81 (PDF 93); §8.2 p81 (PDF 93); §8.3 p82 (PDF 94); §8.4 p82 (PDF 94); §8.5 p83 (PDF 95); §8.6 p83 (PDF 95); §8.7 p84 (PDF 96); §8.8 p84 (PDF 96); §8.9 p85 (PDF 97); §8.10 p86 (PDF 98); §8.11 p87 (PDF 99); §8.12 p88 (PDF 100). Observed exercise locators: 8/1 p85/PDF97; 8/2 p85/PDF97; 8/4 p89/PDF101. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1300,7 +1358,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 38cb0e086b848ddfd914b1c860c6649233f380e876e8bc3b83ce2ad775f9a740
+- Content hash: 15478266fe456b622f7a428e476da0d176863fe9a9a5ae1b7a2308d7fe4e04e6
 
 kind=BOOK
 title=Record Lesson 8 book work
@@ -1310,8 +1368,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 8 work in your copy.
+bookDirection=Owned-book assignment for Lesson 8: printed pages 81-91. PDF indexes 93-103 are file locators, not printed pages. Observed section locators: §8.1 p81 (PDF 93); §8.2 p81 (PDF 93); §8.3 p82 (PDF 94); §8.4 p82 (PDF 94); §8.5 p83 (PDF 95); §8.6 p83 (PDF 95); §8.7 p84 (PDF 96); §8.8 p84 (PDF 96); §8.9 p85 (PDF 97); §8.10 p86 (PDF 98); §8.11 p87 (PDF 99); §8.12 p88 (PDF 100). Observed exercise locators: 8/1 p85/PDF97; 8/2 p85/PDF97; 8/4 p89/PDF101. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u8-st-anki-direction`
+
+- Objectives: obj-u8-book
+- Sessions: u8-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9720d5fccffc6594deaf0f1c3948ee26d3c726b11215782518df9350c49b0f55
+
+kind=ANKI
+title=Unit 8 AnkiDroid direction
+body=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u8-st-binder-direction`
+
+- Objectives: obj-u8-book
+- Sessions: u8-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b7af733ae0bcf71a81fbc00c15b97ea99a4f4272a8f50e38df4db8f5a18ca8a9
+
+kind=BINDER
+title=Unit 8 binder prompt
+body=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u8-st-tutor-direction`
+
+- Objectives: obj-u8-book
+- Sessions: u8-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9443d0a5827aec4a81a37d412a5586442fa7c043fdc4b507787fb3faf684f3a5
+
+kind=TUTOR
+title=Unit 8 optional tutor
+body=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u8-st-cumulative-direction`
+
+- Objectives: obj-u8-book
+- Sessions: u8-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a1cdf44fd2856dc82cf87665f96e23eac71717e9a4c9d308eb4e83d5705ba0bc
+
+kind=ORIENT
+title=Unit 8 cumulative review
+body=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-or-u8-plural-0`
@@ -1994,40 +2140,6 @@ note=There are old buildings in Moscow
 objectiveId=obj-u8-availability
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
-### EXAMPLE `ex-u8-availability-2`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7a7000d9bedef997f960a4c59bc230df81f933deaf0c5dd777ab645985421ce5
-
-kind=LEXICAL
-letterId=
-display=Нет рестора́нов
-note=There are no restaurants
-objectiveId=obj-u8-availability
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-
-### EXAMPLE `ex-u8-availability-3`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7eddd1b1e1e0cce556f8bc47a78004c5f68994903c0215531aee7eff5223c5b4
-
-kind=LEXICAL
-letterId=
-display=В Москве́ нет ста́рых зда́ний
-note=There are no old buildings in Moscow
-objectiveId=obj-u8-availability
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-
 ### GUIDED_PRACTICE `u8-g-plural-0`
 
 - Objectives: obj-u8-plural
@@ -2036,19 +2148,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a84995cc519390388fe64a2ab0cc407c8f65e7fee9384222e9a0c766c6ebc65c
+- Content hash: 6d487eeafc686585063c554bd7c0edb805a1805608a95d4c821e1c83565fd168
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=сто́л
 options=столы́ | сто́л
 answer=столы́
-feedback=Does the admitted record show the governed contrast? столы́.
+feedback=сто́л is the singular nominative form; столы́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | сто́л is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-0
@@ -2056,8 +2168,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u8-plural-1
 distractorSourceIds= | prov-ex-or-u8-plural-0
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | сто́л is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=сто́л is the singular nominative form; столы́ is the plural nominative form of the same noun.
 contrastMembers=столы́ | сто́л
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-0 | prov-ex-or-u8-plural-1 | prov-ex-or-u8-plural-0
@@ -2070,28 +2182,28 @@ relationParticipantIds=prov-ex-or-u8-plural-0 | prov-ex-or-u8-plural-1 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cb4b49c93eae15f7530a13aa301d9831e3b4a3b9e5a4c05304ef8449563caf46
+- Content hash: 8687c633a00dad961a665fee789e5344c0dfc6b8ac76773d7d4c35f9c8387103
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=кни́га
 options=кни́ги | кни́га
 answer=кни́ги
-feedback=Does the admitted record show the governed contrast? кни́ги.
+feedback=кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
-testedFeature=PLURAL_SPELLING
+distractorRationales= | кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
+testedFeature=NOUN_NOMINATIVE_NUMBER_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-0
 cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u8-spelling-4
 distractorSourceIds= | prov-ex-or-u8-spelling-3
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
 contrastMembers=кни́ги | кни́га
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-spelling-3 | prov-ex-or-u8-spelling-4 | prov-ex-or-u8-spelling-3
@@ -2104,19 +2216,19 @@ relationParticipantIds=prov-ex-or-u8-spelling-3 | prov-ex-or-u8-spelling-4 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8855ef0f2bf23e796d4758bc8e7239f9682f3188706c9abaac27a84721c203c4
+- Content hash: a9ba0f0e7415b704b3f7697c0ab39d3c21105eea2131fcccf67c7496fb3a9ee4
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=брат
 options=бра́тья | брат
 answer=бра́тья
-feedback=Does the admitted record show the governed contrast? бра́тья.
+feedback=брат is the singular nominative form; бра́тья is the plural nominative form of the same noun.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | брат is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=IRREGULAR_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-0
@@ -2124,8 +2236,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u8-irregular-2
 distractorSourceIds= | prov-ex-or-u8-irregular-1
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | брат is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=брат is the singular nominative form; бра́тья is the plural nominative form of the same noun.
 contrastMembers=бра́тья | брат
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-irregular-1 | prov-ex-or-u8-irregular-2 | prov-ex-or-u8-irregular-1
@@ -2138,19 +2250,19 @@ relationParticipantIds=prov-ex-or-u8-irregular-1 | prov-ex-or-u8-irregular-2 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c0ccbb094f659420ab708bd67757f72e4dc27a2d56db40957783330887ba984e
+- Content hash: 45af40994a9f9a4382972d4eae42ae0a483819e36e0407982007cc9b623d5451
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same adjective corresponds to the shown form?
 promptLetter=но́вый
 options=но́вые | но́вый
 answer=но́вые
-feedback=Does the admitted record show the governed contrast? но́вые.
+feedback=но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_AGREEMENT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-0
@@ -2158,8 +2270,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u8-agreement-5
 distractorSourceIds= | prov-ex-or-u8-agreement-4
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
 contrastMembers=но́вые | но́вый
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | prov-ex-or-u8-agreement-4
@@ -2168,35 +2280,35 @@ relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | p
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 54a487de20ca1d1b3a2a479581df5046e277d9e415062f41de7870b03c2c9f7e
+- Content hash: afcf1bd5a3d5c43b03606a7e7f476e771e85e4641c92f0a9fc77f2f2e52291e0
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which function does the shown line have?
 promptLetter=На э́той у́лице есть францу́зы
-options=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-answer=It is followed by the nominative case
-feedback=Does the admitted record show the governed contrast? It is followed by the nominative case.
+options=The line states that something exists at the named place. | The line asks where something is.
+answer=The line states that something exists at the named place.
+feedback=The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the other construction in the same frozen span.
-testedFeature=EXISTENCE_ABSENCE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | This alternative describes a question, while the supplied line makes a positive statement.
+testedFeature=POSITIVE_EXISTENCE_FUNCTION
+evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-u8-availability-x-0
-distractorSourceIds= | prov-u8-availability-rem
-distractorDifference= | This admitted rule is the other construction in the same frozen span.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u8-availability-0-ru | prov-u8-availability-x-0 | prov-u8-availability-rem
+answerSourceIds=prov-cc012-u8-g-availability-0-1
+distractorSourceIds= | prov-cc012-u8-g-availability-0-2
+distractorDifference= | This alternative describes a question, while the supplied line makes a positive statement.
+whyAnswerDemonstratesObjective=The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+contrastMembers=The line states that something exists at the named place. | The line asks where something is.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-cc012-u8-g-availability-0-0 | prov-cc012-u8-g-availability-0-1 | prov-cc012-u8-g-availability-0-2
 
 ### INDEPENDENT_CHECK `u8-i-plural-1`
 
@@ -2206,19 +2318,19 @@ relationParticipantIds=prov-ex-u8-availability-0-ru | prov-u8-availability-x-0 |
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d75594e8fc52ba1507c5d803f1d8136bd3def1832ae347499e759dce841f6d19
+- Content hash: d5f9c1a2403196393e551ae951b35496bdb544bdbe7c9c4e1366b22bb0075709
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=го́род
 options=города́ | го́род
 answer=города́
-feedback=Does the admitted record show the governed contrast? города́.
+feedback=го́род is the singular nominative form; города́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | го́род is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-1
@@ -2226,8 +2338,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-3
 distractorSourceIds= | prov-ex-or-u8-plural-2
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | го́род is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=го́род is the singular nominative form; города́ is the plural nominative form of the same noun.
 contrastMembers=города́ | го́род
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-2 | prov-ex-or-u8-plural-3 | prov-ex-or-u8-plural-2
@@ -2240,19 +2352,19 @@ relationParticipantIds=prov-ex-or-u8-plural-2 | prov-ex-or-u8-plural-3 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 71a16f358419dca6779516360f59d2a0dd6d6cbd970ada8b49b0d1ea6a4c827c
+- Content hash: f19eda9527f1d37b933b154344b7c15f07fe056538d99bf58c182bd77cb0bfbc
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=окно́
 options=о́кна | окно́
 answer=о́кна
-feedback=Does the admitted record show the governed contrast? о́кна.
+feedback=окно́ is the singular nominative form; о́кна is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | окно́ is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-2
@@ -2260,8 +2372,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-7
 distractorSourceIds= | prov-ex-or-u8-plural-6
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | окно́ is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=окно́ is the singular nominative form; о́кна is the plural nominative form of the same noun.
 contrastMembers=о́кна | окно́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-6 | prov-ex-or-u8-plural-7 | prov-ex-or-u8-plural-6
@@ -2274,19 +2386,19 @@ relationParticipantIds=prov-ex-or-u8-plural-6 | prov-ex-or-u8-plural-7 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4ce9c9c4a83fb5e1381b585301d0e8f6b9de9face7f559a99d8ca5e0dc293398
+- Content hash: cb7e2dfe84ed1d67f0f93c6c8711e8de0761c96a6b168a4604a7741220109271
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=ма́ма
 options=ма́мы | ма́ма
 answer=ма́мы
-feedback=Does the admitted record show the governed contrast? ма́мы.
+feedback=ма́ма is the singular nominative form; ма́мы is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | ма́ма is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-3
@@ -2294,8 +2406,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-9
 distractorSourceIds= | prov-ex-or-u8-plural-8
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | ма́ма is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=ма́ма is the singular nominative form; ма́мы is the plural nominative form of the same noun.
 contrastMembers=ма́мы | ма́ма
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-8 | prov-ex-or-u8-plural-9 | prov-ex-or-u8-plural-8
@@ -2308,19 +2420,19 @@ relationParticipantIds=prov-ex-or-u8-plural-8 | prov-ex-or-u8-plural-9 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c68fbfa6b5542ad1012ef0803159d0c6ca56de3096f46daa304e3a20e689d842
+- Content hash: 3be961c32c7bee70c7e6e8e6afb2b7234316c48738da3f7633d9d976d53a65a2
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=до́м
 options=дома́ | до́м
 answer=дома́
-feedback=Does the admitted record show the governed contrast? дома́.
+feedback=до́м is the singular nominative form; дома́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | до́м is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-4
@@ -2328,8 +2440,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-11
 distractorSourceIds= | prov-ex-or-u8-plural-10
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | до́м is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=до́м is the singular nominative form; дома́ is the plural nominative form of the same noun.
 contrastMembers=дома́ | до́м
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-10 | prov-ex-or-u8-plural-11 | prov-ex-or-u8-plural-10
@@ -2342,19 +2454,19 @@ relationParticipantIds=prov-ex-or-u8-plural-10 | prov-ex-or-u8-plural-11 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8622b5b1f7ccd8a8125bb1f72244d3a1948312ebbda093b6d134070f30de689f
+- Content hash: 2ba25ae5ec56be263a62f5249f20863bd2c5f9fec07a5a56e0ccb7c80f4a3b9b
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=сло́во
 options=слова́ | сло́во
 answer=слова́
-feedback=Does the admitted record show the governed contrast? слова́.
+feedback=сло́во is the singular nominative form; слова́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | сло́во is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-5
@@ -2362,8 +2474,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-13
 distractorSourceIds= | prov-ex-or-u8-plural-12
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | сло́во is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=сло́во is the singular nominative form; слова́ is the plural nominative form of the same noun.
 contrastMembers=слова́ | сло́во
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-12 | prov-ex-or-u8-plural-13 | prov-ex-or-u8-plural-12
@@ -2376,19 +2488,19 @@ relationParticipantIds=prov-ex-or-u8-plural-12 | prov-ex-or-u8-plural-13 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 75a8492870f72c1bf33569ad8e737a5cea5862cd045572cc126719bd9f342e20
+- Content hash: 518086108a91b114e9cc79d6abf903804574c2a85faed04edf8cc2fb8ab1d725
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=кни́га
 options=кни́ги | кни́га
 answer=кни́ги
-feedback=Does the admitted record show the governed contrast? кни́ги.
+feedback=кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
 objectiveId=obj-u8-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_FORMATION
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-plural-6
@@ -2396,8 +2508,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-plural-5
 distractorSourceIds= | prov-ex-or-u8-plural-4
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
 contrastMembers=кни́ги | кни́га
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-plural-4 | prov-ex-or-u8-plural-5 | prov-ex-or-u8-plural-4
@@ -2410,28 +2522,28 @@ relationParticipantIds=prov-ex-or-u8-plural-4 | prov-ex-or-u8-plural-5 | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 560cd1c4b46316336714a84c7b1d9c3e982dcabfc36df5e5e86396e7a89bcced
+- Content hash: 2789204042f0864e071939f8519b2c2386e061093d418a08e0144b4f5b78c11f
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the dictionary row of the shown form?
+prompt=Which singular nominative form of the same noun corresponds to the shown form?
 promptLetter=кни́ги
 options=кни́га | кни́ги
 answer=кни́га
-feedback=Does the admitted record show the governed contrast? кни́га.
+feedback=кни́ги is the plural nominative form; кни́га is the singular nominative form of the same noun.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the plural row of the same word, not the dictionary row.
-testedFeature=PLURAL_SPELLING
+distractorRationales= | кни́ги is the plural nominative form, so it does not supply the requested singular nominative form.
+testedFeature=NOUN_NOMINATIVE_NUMBER_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-1
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-spelling-3
 distractorSourceIds= | prov-ex-or-u8-spelling-4
-distractorDifference= | This form is the plural row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | кни́ги is the plural nominative form, so it does not supply the requested singular nominative form.
+whyAnswerDemonstratesObjective=кни́ги is the plural nominative form; кни́га is the singular nominative form of the same noun.
 contrastMembers=кни́га | кни́ги
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-spelling-4 | prov-ex-or-u8-spelling-3 | prov-ex-or-u8-spelling-4
@@ -2444,28 +2556,28 @@ relationParticipantIds=prov-ex-or-u8-spelling-4 | prov-ex-or-u8-spelling-3 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d33723414c6e9adb799a1494d4cfbb4eb426e188a4187260b68afe4ea0b8da53
+- Content hash: 2cfe480bb4c613f98a63ac257d172542bebd3c7140e32d285fb4ce40ef9ca3e2
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same adjective corresponds to the shown form?
 promptLetter=хоро́шее
 options=хоро́шие | хоро́шее
 answer=хоро́шие
-feedback=Does the admitted record show the governed contrast? хоро́шие.
+feedback=хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other row of the same word, not the plural row.
-testedFeature=PLURAL_SPELLING
+distractorRationales= | хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.
+testedFeature=ADJECTIVE_NOMINATIVE_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-2
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-spelling-2
 distractorSourceIds= | prov-ex-or-u8-spelling-6
-distractorDifference= | This form is the other row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.
 contrastMembers=хоро́шие | хоро́шее
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-2 | prov-ex-or-u8-spelling-6
@@ -2478,28 +2590,28 @@ relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-2 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 45756a4f8079ce539d236dd4f0a375ddd90a13822a708538d3050f08509a1467
+- Content hash: 8fc580a4600f377816c6e6e07f7202054d74aec5a54a9bb09914252b0cd41a56
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the other row of the shown form?
+prompt=Which neuter singular nominative form of the same adjective corresponds to the shown form?
 promptLetter=хоро́шие
 options=хоро́шее | хоро́шие
 answer=хоро́шее
-feedback=Does the admitted record show the governed contrast? хоро́шее.
+feedback=хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the plural row of the same word, not the other row.
-testedFeature=PLURAL_SPELLING
+distractorRationales= | хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.
+testedFeature=ADJECTIVE_NOMINATIVE_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-3
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-spelling-6
 distractorSourceIds= | prov-ex-or-u8-spelling-2
-distractorDifference= | This form is the plural row of the same word, not the other row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.
+whyAnswerDemonstratesObjective=хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.
 contrastMembers=хоро́шее | хоро́шие
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-spelling-2 | prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-2
@@ -2512,28 +2624,28 @@ relationParticipantIds=prov-ex-or-u8-spelling-2 | prov-ex-or-u8-spelling-6 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 43182daf22424cf8adaceffd1df90199927e0a0ef9777ccf8638faef01641842
+- Content hash: cc41252bafa322e645aedbe453e601b18b13707cb4b5b2d14feb6fe36130411a
 
 kind=PATTERN_CLASSIFICATION
 language=en
-prompt=Which admitted form is the dictionary row of the shown form?
+prompt=Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
 promptLetter=хоро́шее
 options=хоро́ший | хоро́шие
 answer=хоро́ший
-feedback=Does the admitted record show the governed contrast? хоро́ший.
+feedback=хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.
 objectiveId=obj-u8-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the plural row of the same word, not the dictionary row.
-testedFeature=PLURAL_SPELLING
+distractorRationales= | хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.
+testedFeature=ADJECTIVE_NOMINATIVE_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-spelling-4
 cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-spelling-1
 distractorSourceIds= | prov-ex-or-u8-spelling-2
-distractorDifference= | This form is the plural row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.
+whyAnswerDemonstratesObjective=хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.
 contrastMembers=хоро́ший | хоро́шие
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-1 | prov-ex-or-u8-spelling-2
@@ -2546,19 +2658,19 @@ relationParticipantIds=prov-ex-or-u8-spelling-6 | prov-ex-or-u8-spelling-1 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8b6fb396a7fc386d8f234ebe9b36be20f911871c703561aa8ee49f1039a83d8d
+- Content hash: ca5d91e1a50f1c55981bd20081eccf8fe1c0d79e1412adc2c26ef73a6f9a2843
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=челове́к
 options=лю́ди | челове́к
 answer=лю́ди
-feedback=Does the admitted record show the governed contrast? лю́ди.
+feedback=челове́к is the singular nominative form; лю́ди is the plural nominative form of the same noun.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | челове́к is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=IRREGULAR_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-1
@@ -2566,8 +2678,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-irregular-6
 distractorSourceIds= | prov-ex-or-u8-irregular-5
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | челове́к is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=челове́к is the singular nominative form; лю́ди is the plural nominative form of the same noun.
 contrastMembers=лю́ди | челове́к
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-irregular-5 | prov-ex-or-u8-irregular-6 | prov-ex-or-u8-irregular-5
@@ -2580,19 +2692,19 @@ relationParticipantIds=prov-ex-or-u8-irregular-5 | prov-ex-or-u8-irregular-6 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 648ee7ebad995a9d9983a59581f0ec4635a8b8b0c72b3c2235d2c5b3590cd316
+- Content hash: e72971013a919e8ce12760c5bb23b5f12781b4e17547e80ec4e2f0ae3ddc8125
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=друг
 options=друзья́ | друг
 answer=друзья́
-feedback=Does the admitted record show the governed contrast? друзья́.
+feedback=друг is the singular nominative form; друзья́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | друг is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=IRREGULAR_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-2
@@ -2600,8 +2712,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-irregular-4
 distractorSourceIds= | prov-ex-or-u8-irregular-3
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | друг is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=друг is the singular nominative form; друзья́ is the plural nominative form of the same noun.
 contrastMembers=друзья́ | друг
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-irregular-3 | prov-ex-or-u8-irregular-4 | prov-ex-or-u8-irregular-3
@@ -2614,19 +2726,19 @@ relationParticipantIds=prov-ex-or-u8-irregular-3 | prov-ex-or-u8-irregular-4 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9c38dfeb87c37204384e789666c4dc4c9bb2a65ce8de2dc7c8cb503b167c3b8f
+- Content hash: 5f0961062c0bac56de2302a99197881058be302492327fc332d6d764e96cf233
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same noun corresponds to the shown form?
 promptLetter=сы́н
 options=сыновья́ | сы́н
 answer=сыновья́
-feedback=Does the admitted record show the governed contrast? сыновья́.
+feedback=сы́н is the singular nominative form; сыновья́ is the plural nominative form of the same noun.
 objectiveId=obj-u8-irregular
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | сы́н is the singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=IRREGULAR_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-irregular-3
@@ -2634,8 +2746,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-irregular-8
 distractorSourceIds= | prov-ex-or-u8-irregular-7
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | сы́н is the singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=сы́н is the singular nominative form; сыновья́ is the plural nominative form of the same noun.
 contrastMembers=сыновья́ | сы́н
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-irregular-7 | prov-ex-or-u8-irregular-8 | prov-ex-or-u8-irregular-7
@@ -2648,19 +2760,19 @@ relationParticipantIds=prov-ex-or-u8-irregular-7 | prov-ex-or-u8-irregular-8 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9cd3d284e5ce67b79e45d961996d0618e55b1cfb8711715c5a1f34d67115902d
+- Content hash: 90e3985d8840706585378430ca0339d05d8d03c18be0117e7482e3dd9a3bf401
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same adjective corresponds to the shown form?
 promptLetter=мо́й
 options=мои́ | мо́й
 answer=мои́
-feedback=Does the admitted record show the governed contrast? мои́.
+feedback=мо́й is the masculine singular nominative form; мои́ is the plural nominative form of the same adjective.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | мо́й is the masculine singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_AGREEMENT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-1
@@ -2668,8 +2780,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-agreement-3
 distractorSourceIds= | prov-ex-or-u8-agreement-2
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | мо́й is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=мо́й is the masculine singular nominative form; мои́ is the plural nominative form of the same adjective.
 contrastMembers=мои́ | мо́й
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-agreement-2 | prov-ex-or-u8-agreement-3 | prov-ex-or-u8-agreement-2
@@ -2682,19 +2794,19 @@ relationParticipantIds=prov-ex-or-u8-agreement-2 | prov-ex-or-u8-agreement-3 | p
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f53ec79cc20519777889c3dbce0dbf292e08794de58a5ae4564db1924bbbf991
+- Content hash: 866fcf843d408a48544dd13311c65319cc3c1a21254b67abdc4ea4d694884f77
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
+prompt=Which plural nominative form of the same adjective corresponds to the shown form?
 promptLetter=э́та
 options=э́ти | э́та
 answer=э́ти
-feedback=Does the admitted record show the governed contrast? э́ти.
+feedback=э́та is the feminine singular nominative form; э́ти is the plural nominative form of the same adjective.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other row of the same word, not the plural row.
+distractorRationales= | э́та is the feminine singular nominative form, so it does not supply the requested plural nominative form.
 testedFeature=PLURAL_AGREEMENT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u8-agreement-2
@@ -2702,8 +2814,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u8-agreement-7
 distractorSourceIds= | prov-ex-or-u8-agreement-6
-distractorDifference= | This form is the other row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | э́та is the feminine singular nominative form, so it does not supply the requested plural nominative form.
+whyAnswerDemonstratesObjective=э́та is the feminine singular nominative form; э́ти is the plural nominative form of the same adjective.
 contrastMembers=э́ти | э́та
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u8-agreement-6 | prov-ex-or-u8-agreement-7 | prov-ex-or-u8-agreement-6
@@ -2712,137 +2824,138 @@ relationParticipantIds=prov-ex-or-u8-agreement-6 | prov-ex-or-u8-agreement-7 | p
 
 - Objectives: obj-u8-agreement
 - Sessions: u8-s-agreement
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d9b7340c6fc6c4da4d27919780fc9f65f510877dcd96015248b0d73d8bf0067a
+- Content hash: 9717d138d58a36f7efa6dbb65a3040ded64d178aebc5403311b1bedc4980f338
 
-kind=FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the plural row of the shown form?
-promptLetter=но́вый
-options=но́вые | но́вый
-answer=но́вые
-feedback=Does the admitted record show the governed contrast? но́вые.
+prompt=Which plural nominative form of the same adjective corresponds to the shown form?
+promptLetter=синий
+options=синие | синий
+answer=синие
+feedback=синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the plural row.
+distractorRationales= | синий is the supplied masculine singular form, so it does not provide the requested plural nominative form.
 testedFeature=PLURAL_AGREEMENT
-evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
-contrastSetId=u8-agreement-3
+evidenceMode=STATED_APPLICATION
+contrastSetId=u8-i-agreement-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u8-agreement-5
-distractorSourceIds= | prov-ex-or-u8-agreement-4
-distractorDifference= | This form is the dictionary row of the same word, not the plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=но́вые | но́вый
-relationKind=SAME_LEMMA_DIFFERENT_FIELD
-relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | prov-ex-or-u8-agreement-4
+answerSourceIds=prov-ca-u8-agreement-transfer-u8-i-agreement-3-1
+distractorSourceIds= | prov-ca-u8-agreement-transfer-u8-i-agreement-3-2
+distractorDifference= | синий is the supplied masculine singular form, so it does not provide the requested plural nominative form.
+whyAnswerDemonstratesObjective=синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+contrastMembers=синие | синий
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u8-agreement-transfer-u8-i-agreement-3-0 | prov-ca-u8-agreement-transfer-u8-i-agreement-3-1 | prov-ca-u8-agreement-transfer-u8-i-agreement-3-2
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u8-i-availability-1`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 64494aee814d38cce7576c67e6433cc0554752ccd507819a1b0fff601a02ba48
+- Content hash: 6e93abc781c76e86a119c89bf0b0f72d776fb0619ae0214b30682f9ab63c9c37
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
-promptLetter=В Москве́ нет ста́рых зда́ний
-options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
-answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+prompt=Which function does the shown line have?
+promptLetter=В Москве́ есть ста́рые зда́ния
+options=The line states that something exists at the named place. | The line asks where something is.
+answer=The line states that something exists at the named place.
+feedback=The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the other construction in the same frozen span.
-testedFeature=EXISTENCE_ABSENCE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | This alternative describes a question, while the supplied line makes a positive statement.
+testedFeature=POSITIVE_EXISTENCE_FUNCTION
+evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u8-availability-rem
-distractorSourceIds= | prov-u8-availability-x-0
-distractorDifference= | This admitted rule is the other construction in the same frozen span.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u8-availability-3-ru | prov-u8-availability-rem | prov-u8-availability-x-0
+answerSourceIds=prov-cc012-u8-i-availability-1-1
+distractorSourceIds= | prov-cc012-u8-i-availability-1-2
+distractorDifference= | This alternative describes a question, while the supplied line makes a positive statement.
+whyAnswerDemonstratesObjective=The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+contrastMembers=The line states that something exists at the named place. | The line asks where something is.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-cc012-u8-i-availability-1-0 | prov-cc012-u8-i-availability-1-1 | prov-cc012-u8-i-availability-1-2
 
 ### INDEPENDENT_CHECK `u8-i-availability-2`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7760f0e01ff277ebebac30dc62abf0b7e0d8e22a737a5abb87f8ce6c355cb957
+- Content hash: a5c2e10a48ddbf9848ba1c24fe5d9142f9115efc660028208fcb6d457695b5c4
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
-promptLetter=Нет рестора́нов
-options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
-answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+prompt=Which supplied English meaning matches the whole line?
+promptLetter=На э́той у́лице есть францу́зы
+options=There are Frenchmen on this street | There are old buildings in Moscow
+answer=There are Frenchmen on this street
+feedback=The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the other construction in the same frozen span.
-testedFeature=EXISTENCE_ABSENCE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | The other supplied meaning concerns old buildings in Moscow rather than Frenchmen on this street.
+testedFeature=POSITIVE_EXISTENCE_MEANING
+evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u8-availability-rem
-distractorSourceIds= | prov-u8-availability-x-0
-distractorDifference= | This admitted rule is the other construction in the same frozen span.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u8-availability-2-ru | prov-u8-availability-rem | prov-u8-availability-x-0
+answerSourceIds=prov-cc012-u8-i-availability-2-1
+distractorSourceIds= | prov-cc012-u8-i-availability-2-2
+distractorDifference= | The other supplied meaning concerns old buildings in Moscow rather than Frenchmen on this street.
+whyAnswerDemonstratesObjective=The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+contrastMembers=There are Frenchmen on this street | There are old buildings in Moscow
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-cc012-u8-i-availability-2-0 | prov-cc012-u8-i-availability-2-1 | prov-cc012-u8-i-availability-2-2
 
 ### INDEPENDENT_CHECK `u8-i-availability-3`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2d07601369c67cea4fecdf3fb41a787a7302b6b037636698828d4dcc0dff6031
+- Content hash: 39a7c6e545e6f354dfd83d4d31272ee8599e23945a39295773d7b7aa7828fdc7
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which case names what exists in this supplied positive line?
 promptLetter=В Москве́ есть ста́рые зда́ния
-options=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-answer=It is followed by the nominative case
-feedback=Does the admitted record show the governed contrast? It is followed by the nominative case.
+options=The noun naming what exists is in the nominative case. | The noun naming what exists is in the prepositional case.
+answer=The noun naming what exists is in the nominative case.
+feedback=The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the other construction in the same frozen span.
-testedFeature=EXISTENCE_ABSENCE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | This alternative confuses the location phrase with the noun naming what exists.
+testedFeature=POSITIVE_EXISTENCE_NOMINATIVE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u8-availability-x-0
-distractorSourceIds= | prov-u8-availability-rem
-distractorDifference= | This admitted rule is the other construction in the same frozen span.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u8-availability-1-ru | prov-u8-availability-x-0 | prov-u8-availability-rem
+answerSourceIds=prov-cc012-u8-i-availability-3-1
+distractorSourceIds= | prov-cc012-u8-i-availability-3-2
+distractorDifference= | This alternative confuses the location phrase with the noun naming what exists.
+whyAnswerDemonstratesObjective=The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+contrastMembers=The noun naming what exists is in the nominative case. | The noun naming what exists is in the prepositional case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-cc012-u8-i-availability-3-0 | prov-cc012-u8-i-availability-3-1 | prov-cc012-u8-i-availability-3-2
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -2861,6 +2974,5741 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=6
 searchTerms=units 6-10 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-8-29`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50fbff37cfa1a4445d4ff932a50e66bab3219b99a162e45ee3f1db1ff1b13b06
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-30`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26878c69318dff758a2a87f5cab2a3d54f96860a277f99d084c912ac61de9752
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-st-teach-irregular-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-31`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2eef0f1a46ed3827b3cb629016131bbb62c8808300272df0d884255176ed3bb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-st-teach-agreement-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-324`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb7522890769a8be914d5a8a8e159e15268532055c03ef651ff1600a2cfcc349
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=560242bc7df3c242376f3e6c214e154b38dfcf71bfd2efb937eb3b4cc8ee3137
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-325`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26edb5fe398daf0919c46131e5652fefd7c9e2d51e61b6ed8e972f5b1ec1e130
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=г,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=1294886c60a57539ca543e806b6851b3b2515a0d0fa546a78f95a52324fd4c54
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-326`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbeed19adba31f3f584bf1f8a2f9bee434390d7b8fa6c45da2030745f5ec5a9b
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=г
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-327`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16b10cacbcbdd599c2c9d731e51be0d31387c00353119bb6e3755e6ee82b75f8
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=к,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=ac6f811664612349bd808b847f041bcbde99a6cf661ecc608415c049111574d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-328`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1075f615c8536535867312ceae346c20d93ca8d6ecf3aa1587839f13e70dc541
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=к
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=5225a95b111d47bf4c85281b89d99e31140bf124048d2b574b189225244da605
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-329`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69d1f871f62f251d1f748377ad433d62c3f4579abe962a42fa9d7c37a51ff3ba
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=х,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=3b5b81628f7ebb2701d49b211da82b158e13c4a1ddc903f90b0a27f314e16f96
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-330`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc64082848ef1dde06b41d4112bf3c61f3e633fd044cba293c5da1c88898ec76
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=х
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=bb69a96efca3303efa0b31c6438eb8da40b5fb4e785e01d07eb99b82aeb66520
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-331`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a87a80cbc10828275eb12b8474b099af1d595856f68ea03941d488c79ed9a1a2
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ж,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=477b354eb1509f9368409ea3324139bfe0c9c8a519ef0fed0ad85d39b13c7a6c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-332`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d49eeaceefae88699d6e144cca35f538de38fcad245ec6d68ebe15309ff774f7
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ж
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=dd591284d827e17f0f15706e4e430548c62b4f93d2847e0fcc7972b4aed83551
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-333`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b1bccca472390bc6632c6bce0339c4dd634660b41649bde54e2b264e989dc99
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ч,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=b9ce14dd963b907c3ec6979845d0a946a7cd443e68490406ba6095f8c1741c51
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-334`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ab6eba9d8da3fde21e75a0976e5731e90b9e0b9a97ca05fbccd701f56647ea2
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ч
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=40831c5d98a57dfcf5017bbb64925e863d0ed9396e3cc0517c23042a9e96ebc8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-335`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e28dbecd0bca85ed08f3b7866e83a458e1d85f9c1a026cd9c34dfa36d8113ab
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ш,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=68bd8326d8a787520847339b3a25efcae0145d822ddf2fc8f1b1421bde5fb07d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-336`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26e28a6e1e09ae2709fa670466f0ee7629f6091c8ccd7fda9cf1ade6f002893b
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ш
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=4f60bd4e24e7dc7f90c8a373bf18b38657abec5fcc8a6f9a3222815245e302de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-337`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e934292df348f476cb8e191cd599aa5d19d045abb0e84c3527d8e558abc7ceb
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=щ,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=a705cac2891687185695695dd28fdddfdcdc34a3680961dfca201e995eb2c1ae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-338`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f3ca99bf81426f78800c6f7f7c43aaab4e429a4031413d80ac51d3939fb7b6e3
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=щ
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=bbb369f210d2969fd1b4a6e940daaa7e201ebed37ec70dfc305bc4255328ac78
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-8-339`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9da7e38b27ebb776e18dda3d9566a195c63a437f8a21f22389b5bfcea0a09d9
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-st-teach-spelling-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required.
+shippedText=ы.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d576ec1c52376e7b0852ca24f247daf58488b12164d79127626a8a62b8d7a2b4
+contentHash=983f8a616b45626660859487c02a52b71e016b4d2c218006761578372ca318a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-agreement-0-1`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff452932b90ff57df3e3aa38030764ea065cdc24444ece8cc0713ff0982a4440
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-g-agreement-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:новый#decl_m_nom; adjectives.csv:новый#decl_pl_nom; adjectives.csv:новый#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
+shippedText=но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5eb0a9d4838fb7f152fc9dddaeac2ce28823d868ac1024ad26ac1d27961e7bda
+contentHash=0c63edf4287d415c186e068f75487151740c772f5630dad6a9c6772d7dd88cd6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-agreement-0-3`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b773c729ac32f38095f4884b6d69e18075f06441efcb6594e233801201ad783
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-g-agreement-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:новый#decl_m_nom; adjectives.csv:новый#decl_pl_nom; adjectives.csv:новый#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=109e7cd0026b9f920b304b8ec7607a3ad9b98592b4c9af218ced1c0ac4b4bcd3
+contentHash=bcd3973a1172752c1d2bab389a63aa8ed7c081c41c3c60f22aec8790dbb2d1e5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-irregular-0-1`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 88a3405c3327fcd3073f2f05fe42c5f3ce69e470fff626fcab6df89b99a23070
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-g-irregular-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#pl_nom; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+брат is the singular nominative form; бра́тья is the plural nominative form of the same noun.
+shippedText=брат is the singular nominative form; бра́тья is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0ef03ce56d70fef21f7f6a878d6f357310a05e1f4889af9f00bc967fcbf2e0e4
+contentHash=beba449ae8d1661b650b7934ed21bf6ee753e4ea0c9a3bb402156c0e586db03e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-irregular-0-3`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eea9628eee9fd5cc4f0a84cb69890ad9ab9a72b972ddd3907e252a718b5779de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-g-irregular-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#pl_nom; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+брат is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=брат is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2d7302d07c7cd7162ffd20b21aa44a90b4bcf7bf58d9ce6c14c1cef4b3419c9b
+contentHash=1b53b2a2bbead80b73c0f93394c40b95aeb727aaccae261f935a0f2d49e842f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-plural-0-0`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fef08fb11a5d69d06f724502bf71cb62d589bb5ff521d01c123391707e9416fe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-g-plural-0:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:стол#sg_nom; nouns.csv:стол#pl_nom; nouns.csv:стол#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which plural nominative form of the same noun corresponds to the shown form?
+shippedText=Which plural nominative form of the same noun corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61b3ed696f66f676f8def5ce61fcc4ec7f349cc426403ebe8266841fbead3762
+contentHash=63dad78d8f28e9f91cdb6055e229babc4af0575490f1dbd00ea7b61c8a243196
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-plural-0-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a96ad65f4ddab0755e3571619c124083d057d7c60a56060bc9d8490225679a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-g-plural-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:стол#sg_nom; nouns.csv:стол#pl_nom; nouns.csv:стол#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сто́л is the singular nominative form; столы́ is the plural nominative form of the same noun.
+shippedText=сто́л is the singular nominative form; столы́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=be27803904cfdb76f6000738fcbf9d7a1e0526f647f20ed9c8968d6233b8d961
+contentHash=8f88c50a9abecb53c88c5ed3da99bd115159c84bfd5d723804c085e11ff58b2c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-g-plural-0-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8989753bb1f88884b96189f4d6c6220d8f7b02d7d28ccdf981ed8e59e014d5f7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-g-plural-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:стол#sg_nom; nouns.csv:стол#pl_nom; nouns.csv:стол#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сто́л is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=сто́л is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1a1340fc31b00d7eeba96d1737b844ea6bc97ee1fcd8b87137f2981828f15cc6
+contentHash=042f52940612d6103eaed315c16ef8e46d535d78a949d9307bafb15ba5853e24
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-agreement-1-1`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c505517cb3c567b2a045a38e5f09ed7d5148d271c0c8d8d2d8de4f9b016a9f9c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-i-agreement-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_pl_nom; adjectives.csv:мой#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+мо́й is the masculine singular nominative form; мои́ is the plural nominative form of the same adjective.
+shippedText=мо́й is the masculine singular nominative form; мои́ is the plural nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9ed01a71fb62337227e35f9389fb16a063d57b603a15645c0956c8c2be96ef7
+contentHash=1ef1bf924222df7bfc4139f8a1674cdfdc65baff900df1a7d1de79f1f2c23dac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-agreement-1-3`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a98e0d6c0f78c02927b070a3f0888d87813462decf3f3d667dd65b97691fe21
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-i-agreement-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:мой#decl_m_nom; adjectives.csv:мой#decl_pl_nom; adjectives.csv:мой#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+мо́й is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=мо́й is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cd58589b81b3f494c5638e2fd2f51e7730af6dd4482a242aafd210d06164f8e7
+contentHash=b3488fbd11038658440539d5272572d01873b7f7cddf707903099395e9cb02ee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-agreement-2-1`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c95dd45841b06c576bd7a2737eb194ec2a92b8f98f63004d3860872e3626adb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-i-agreement-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:этот#decl_f_nom; adjectives.csv:этот#decl_pl_nom; adjectives.csv:этот#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+э́та is the feminine singular nominative form; э́ти is the plural nominative form of the same adjective.
+shippedText=э́та is the feminine singular nominative form; э́ти is the plural nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91468c68ac82b5498ebd4d757993ec41a83ff23d36ba623cb91faa58cac1e99c
+contentHash=23b97065eb682eb9b97370b59cf9e0299b89220987156fed08f3a45e9ecc1db7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-agreement-2-3`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0afb510e13a28fcc526066a532ce3487d20c24a582eace3777a491480d6c901b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:u8-i-agreement-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:этот#decl_f_nom; adjectives.csv:этот#decl_pl_nom; adjectives.csv:этот#decl_f_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+э́та is the feminine singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=э́та is the feminine singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3b61a0e53dcdc0b1d871d6cfa0d051a7df30daba21cbf3e9e28ee683537e851b
+contentHash=00852d48fce6df06e6c5a14ce41ff0cf2405f92e693162e91b20a29bd206943d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-1-1`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1d73ea0f3183c452eae566ef50d3c26d4e43c97d7c53b1ccdf4436b8a32109d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:человек#sg_nom; nouns.csv:человек#pl_nom; nouns.csv:человек#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+челове́к is the singular nominative form; лю́ди is the plural nominative form of the same noun.
+shippedText=челове́к is the singular nominative form; лю́ди is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf84478477aaf6e27fc036688cbad4d91ee38f6660dfef0a6a487c690f7bf276
+contentHash=2047298692a91e9c3edd84ee1eb93cb528a8d841ef6368095331cfbd657fcef7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-1-3`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ffe509772a0c49bb508f634737826620e3fbc0847453fee67c47d3606164bea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:человек#sg_nom; nouns.csv:человек#pl_nom; nouns.csv:человек#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+челове́к is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=челове́к is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa12939d10b6695ca921aa6a7692fdc67ff499ff67c38513b137d31a9df8385d
+contentHash=967017877e8c9dc9a7c57b0b58dddce904045bd42d563a0e31450d6f9c96548c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-2-1`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5aa4b387ae29aca29545dcb402ed9ee970c1516bc3d21bbf86973d5802c095d4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#pl_nom; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+друг is the singular nominative form; друзья́ is the plural nominative form of the same noun.
+shippedText=друг is the singular nominative form; друзья́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=553049ae42168986f5921731477a8a97dd7226efbc274e7e57f55b662e4e2b84
+contentHash=b618385f8fa04c7117055fc4a236db0c0fbec281585ba72b471c1778ae8c2f5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-2-3`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4bbc8b19c8d4041a2b050b1025eeca0cfa0a5956b081ab3bd1cb8a88e769395f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#pl_nom; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+друг is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=друг is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=65fb4f640e05241607f2ada158a0a71f283680f366b3cd1f039a8c79b83b1d3a
+contentHash=39e36baae7ba9eb58d481f7972afacc6eb4ae8be5f9930c18262eadbc8e9b81f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-3-1`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62eb23f7dcdc20dd3aaa078fac1a91f620414d037e1592eb8f4a1dffebfac05a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:сын#sg_nom; nouns.csv:сын#pl_nom; nouns.csv:сын#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сы́н is the singular nominative form; сыновья́ is the plural nominative form of the same noun.
+shippedText=сы́н is the singular nominative form; сыновья́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e5d538091ffd11638fe2e602681876b0c2ca436322d2186fa3c598acb6c9a316
+contentHash=04eb1022d313a7f951cfacb058c3f2dc9b3c7e03fbb09ec8b0ed397da0da299e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-irregular-3-3`
+
+- Objectives: obj-u8-irregular
+- Sessions: u8-s-orient, u8-s-irregular
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 91a363178422377bf8567a3f0867113221751ed390dcdf8d0a3f71ac49314300
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-irregular:u8-i-irregular-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:сын#sg_nom; nouns.csv:сын#pl_nom; nouns.csv:сын#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сы́н is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=сы́н is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=99e38c92d76757375bd38cc3309dd10666f88312e1d9d58b8796a4b521442fcb
+contentHash=4886de55de3e4af98a78374cc08782d4a51b0a09d2dd742b8a14a5bc1e9a68c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-1-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 88d86fc0f00d5a422d4e4f900e7700b1192d95f61ad5ddb49e62987301e03818
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:город#sg_nom; nouns.csv:город#pl_nom; nouns.csv:город#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+го́род is the singular nominative form; города́ is the plural nominative form of the same noun.
+shippedText=го́род is the singular nominative form; города́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d45978afacef5db026fb93b7362e93b539ffd6643dcc0f2b89acd18b65e7c994
+contentHash=b0520552b2bff6e63da6c2cece8eda97a59012ea537262995c0a3126e281a091
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-1-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0afc07190266c091d7b9f5740b816115c738313d34e46781ff304abd1ea86564
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:город#sg_nom; nouns.csv:город#pl_nom; nouns.csv:город#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+го́род is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=го́род is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=197a8f575bf6892259721529c0b1e717f7095d479d11767b093309a3c5a46005
+contentHash=130e24123795015a989a558abd602c8e6328dbcbdac988b03d3f6c324e96d919
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-2-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b66924ec2e0a68882dff7ecbc2785562d887e1d52da9aa7fdf374661001b7cdd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:окно#sg_nom; nouns.csv:окно#pl_nom; nouns.csv:окно#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+окно́ is the singular nominative form; о́кна is the plural nominative form of the same noun.
+shippedText=окно́ is the singular nominative form; о́кна is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a343478b952bd3ae259ab9277b80eef5052a454824d3af246efde094ec079a03
+contentHash=42e124231f0ff99d465a24bb1b5f5d2edc5333ef56883b52289b22aed98b4495
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-2-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f74d8ea1e0eddd4c9663fceb32d1cd12211385c417de068a30c419fb9ed444c6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:окно#sg_nom; nouns.csv:окно#pl_nom; nouns.csv:окно#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+окно́ is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=окно́ is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2557f82fb80f6fcd101d0e338a1155f923a0b9ddd7713c21ad3a1513cd79de8d
+contentHash=47c0ac9a1b93b545d63254f768daff44454165bdc3c34a792cadfbfe0b72fe4d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-3-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8133b44caa3418ab0e234ddd241b5197714c90c6264b9c37e946c703013f1c17
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:мама#sg_nom; nouns.csv:мама#pl_nom; nouns.csv:мама#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+ма́ма is the singular nominative form; ма́мы is the plural nominative form of the same noun.
+shippedText=ма́ма is the singular nominative form; ма́мы is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4118050fc9d52347b92fb4b2cbb5c27ff582b937e6dde419fec8611203a1c761
+contentHash=2f123c83635f1549f85af92892be033d0b4dee93fb913f17ec0c15bbe5b5fefb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-3-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5b808c004e246901481b8d91fde4261aba9798db57c9b5aa440cef95b8c3f48
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:мама#sg_nom; nouns.csv:мама#pl_nom; nouns.csv:мама#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+ма́ма is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=ма́ма is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8d3ec09e6a28bfe588c88097b43baccd306f38bbf2b0be5f8207532213a14224
+contentHash=f176800b7e772f4012219ed7a12d7c20ef9d71d309b133ae1b92c1696f3d178a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-4-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69294355a83f5b3015b7c5778796fef8c6cfc410c975d47f7a64d6b2d55ad4d2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-4:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:дом#sg_nom; nouns.csv:дом#pl_nom; nouns.csv:дом#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+до́м is the singular nominative form; дома́ is the plural nominative form of the same noun.
+shippedText=до́м is the singular nominative form; дома́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61dfbaf62bdb5d4289b66b5fd8fa9ff7f54a4452286f33b279a04a607329c122
+contentHash=7fe7d49cd34748e36c366fcff4838238de7ef0ac61b9b33336813243828dea4b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-4-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a9967b0ffd8ea5b0025549bebc14e1cda22ad1ca3c4432bc245e338a55550fe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-4:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:дом#sg_nom; nouns.csv:дом#pl_nom; nouns.csv:дом#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+до́м is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=до́м is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=41a3ea1a8b144add983d9e15e2b89640a40bd684209fa3205ac1047470de9c0d
+contentHash=14b12826a33c34d2d289e2fa5852851d7dfe3cfbf456906dc0b10b52610d5bba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-5-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05fff67cf13e7d1ad6e7e60afa3cac81d76649c10c597ce8d6c3fc0e441dd734
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-5:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:слово#sg_nom; nouns.csv:слово#pl_nom; nouns.csv:слово#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сло́во is the singular nominative form; слова́ is the plural nominative form of the same noun.
+shippedText=сло́во is the singular nominative form; слова́ is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f7b7a5d42af0d3604f3ada359c8538f83c807e556ff4e2754dd00e1863ae7445
+contentHash=ccdd07dc9dcb70c846f7315de538566adb4f380e517ae87740587f9ca9a21a88
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-5-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13e8f530894e54166b8c0cdb5f4c21c55aa62a73f9bfe48ef1096e37c8a0e0e4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-5:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:слово#sg_nom; nouns.csv:слово#pl_nom; nouns.csv:слово#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+сло́во is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=сло́во is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=82935750032d1ebd6256cb877eaeaacc95637e9b557a0c8f6ea98f94c69caca5
+contentHash=4a2149979b06d6110d12a776619ec0d7ba73dbea67bc8e76b31f8801c3224b27
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-6-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4ad95dd53415446e3753fccf437e2115676e454b447a4bbb9e9ae639852c46d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-6:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#sg_nom; nouns.csv:книга#pl_nom; nouns.csv:книга#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
+shippedText=кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=38eeee627701c29b41a32cbfa4d8f4f3349edd36951c53e25307799ef4d225e0
+contentHash=ad1cc0a443593fd6a1467847c08b030d7312c65109cfccd81c17880f942d8f3b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-plural-6-3`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f8ed364b4df77ef9b584c73e606618f0f4395f7410f248693e79d3360f69b44
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:u8-i-plural-6:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#sg_nom; nouns.csv:книга#pl_nom; nouns.csv:книга#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=кни́га is the singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8450f181b8bbf16ff65391ba417e33dd3e21c52fa28da39819ef049ef85a3751
+contentHash=2f8bd598faef291032725f1aa8c4813767294ea4d437cb8f1dbcac8f93be7009
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-1-0`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f967f2b14964938d32baade4000bc6d4f79504d90ad15a0e2d5e0b9fd9de2a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-1:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#pl_nom; nouns.csv:книга#sg_nom; nouns.csv:книга#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which singular nominative form of the same noun corresponds to the shown form?
+shippedText=Which singular nominative form of the same noun corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=480101a9315b328435bcddcdebb556799e965ebc69b35e892da0f42f5470400b
+contentHash=ebaeb143a7ea31323af2bdf4e6fa77acacde951b690415a47b04e803bb622da7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-1-1`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e8f87a50fec10b8f9a8bd3ee1906989120e698fe175c074cbadfd406830775f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#pl_nom; nouns.csv:книга#sg_nom; nouns.csv:книга#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́ги is the plural nominative form; кни́га is the singular nominative form of the same noun.
+shippedText=кни́ги is the plural nominative form; кни́га is the singular nominative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ed8119b2920e1642b8fbede309d99251048f266e19dccce8c50093fa6578a5f1
+contentHash=164df15d8c33f32311b613d9ca6f295f4ee9bebebd1a5f25aade10309f182007
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-1-3`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b7f56764362ce161ea18181d7865dc2a7de529dc4702abaa4550b1544c10d342
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#pl_nom; nouns.csv:книга#sg_nom; nouns.csv:книга#pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́ги is the plural nominative form, so it does not supply the requested singular nominative form.
+shippedText=кни́ги is the plural nominative form, so it does not supply the requested singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=819c91c9c5f6c6a12b67a53743d22943a2a89d6ff92c9e8afd5b58666729a627
+contentHash=0b55756f51d3f84ab81bb89b608d2ce4993e94cb282769725295bfb4937390a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-2-0`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e8c89556c511a09a139c504510e10320313af26611847a62ef34db8f8763e79
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-2:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which plural nominative form of the same adjective corresponds to the shown form?
+shippedText=Which plural nominative form of the same adjective corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c3fe7eba29b2d92087103e5efed1138ff79c4bd45a3e092a695e11a98ab2fbc2
+contentHash=357a5585c9b8542969f16cb41a54327157ad68d6e1ca3037b8512759ddabec71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-2-1`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6dfe364aff791ae72f929bf7bb6ef2421f2025e07d75fc49a2711f15fbc2e83f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.
+shippedText=хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=73cf3e2e9d002961859df5c0fc16eec0e74dc99f7977d05e9228761d7d608cf9
+contentHash=e0ca7c66a03cc2a061e5985826a06ae1112ca60725a7decedd11e9c1770827fe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-2-3`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16bd8d6835049ef24c34ca62d41a3d742f54e2ec101162d69d3aab0037b25297
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.
+shippedText=хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f26810291da6ceaa775c27ef6d922a1c5801e4b9c4deddb1bb116e41aaa93fb9
+contentHash=b3b34c3fa727684d49f8dc26d532dbdf75c60b8b8ebb488750359421b22bc21a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-3-0`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b153076e5497892fd344ddc433606b9953952f874009b88c6786aae046a550d5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-3:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which neuter singular nominative form of the same adjective corresponds to the shown form?
+shippedText=Which neuter singular nominative form of the same adjective corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=392aab164e218c9959387ce3d5d73d01a1b1849aa107da443ee78313641d39ef
+contentHash=03d4bc77a9ae90cb9cdaa652db06ed66ed7bfe86e67e954c1a177261ba1518ee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-3-1`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3b9179d90575d5e54a1334c811d3fbcd6e3ed87f7935e11602e880abae9ee3e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.
+shippedText=хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a347ecccf0deff12fc6b4eb14cd7f60e9b5fa3550fbfca66dc19ed44b28d4f77
+contentHash=9aed9c4841ecfd243993a11f76d348e6a41d28a9deb1764a8e3b5c04137aea86
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-3-3`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c84dc18c28a1c2d4d92354d88eef6f18b069da2e34d2b3bccc7b5001becaaa32
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_pl_nom; adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.
+shippedText=хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ca8e6599123a788a527e73e664a66b2d7baf53abf935b569f2f104a5a716dc1d
+contentHash=c53f0dc71edcfe3d49b3d801546bf83af6be6dab5a5b0a3bd5e272d8034ffab9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-4-0`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a723c763e3fa7187ad47721d7eb95d0dd238d1ab249f3a003da5b3e2ace4d06
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-4:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_m_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
+shippedText=Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3e9ead8cf7a1ec4c4c7b910aaecae4911712f041601513fc8f78a1d17761642d
+contentHash=52d076797bee9ff08907e23f4ed5ebee71db99d7d4d294ba32f8ee19797c3176
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-4-1`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93f65c9844e8f9d1513432ff16717f7751c830907fbefc2b6c3b7b16bc7ff0e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-4:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_m_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.
+shippedText=хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=50c943eacb99d44bb96c92bf27d20eb0311e15ca0506b472decb5f35d53f9113
+contentHash=0420df45dd3c502240af22bfa9bd396843764f004047514f6b0f61d1841bd7dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u8-i-spelling-4-3`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4429b2c7165f1cd79fb7e35689c49ac8b10c991b697a18a0a4fa6190cef90644
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:u8-i-spelling-4:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:хороший#decl_n_nom; adjectives.csv:хороший#decl_m_nom; adjectives.csv:хороший#decl_pl_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.
+shippedText=хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2359c20c6ef86fb2404e96b2e1c5c6de27cd108a072d6472039740fe2ca7369e
+contentHash=34edd732b8317165d3ca0a0e7a44f87572460756491e6bfcabcc599684922056
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63a2ebe8c4a36d620eb10edd4e27bf9dd7c747c09df12de2be52adad19dbe428
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=На э́той у́лице есть францу́зы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa53f98f2d74dc44f211c909b07e3ee46e9ce5b0b529f0f56cc0beb268970261
+contentHash=4ae3c622c2207d1f59d99e080540421c9e7b456ddbcf945f48be5fb0d6f3b8a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: faf4998f0bf392162c9c80a9322fb698eeaa575e6c77ba25ac0c181f04b60123
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the thing that exists is in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa53f98f2d74dc44f211c909b07e3ee46e9ce5b0b529f0f56cc0beb268970261
+contentHash=7db4955b4f44b5a33ed45a0d0c712c7cd3696a2c92fe4d8d3de9b268c464c43c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 170b156dabc1eeb55c12c993218e917a98e120f287efc85bbc77c1227fbd8a5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa53f98f2d74dc44f211c909b07e3ee46e9ce5b0b529f0f56cc0beb268970261
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9834e8adf5813ac185dbccee08bc7b62e863c1fc9c23e597885487e06f9ad32c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-g-availability-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+shippedText=На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a0ecf23e8e1b5be5dd4906a9145b5fa7548ad9bf01bdad169b919934e412694a
+contentHash=2999da4e60d0983f194da03f280f2963f1dc583c8b07af7c8725f6f8443434b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ab20eac5b67ab2d344c174dc26394e000f8403e4ba218e7dcb78c49d6486238
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-g-availability-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4753fef48225c17e174469a675f84d34dc60bd22f5083a4d84e18857ce782f1b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-g-availability-0-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation describes absence rather than the presence or simple possession shown here.
+shippedText=The other explanation describes absence rather than the presence or simple possession shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adb6b0c59cb348ef16b6c824784fd6466e3ab2ca6da7ad850dfe5bfbf933cd33
+contentHash=b4600d802d7db3baff3ab7f4cb71aef97260fb953275ada54921983aa191e7ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ccb033a1d46a3a3fc148dba534d370a318ba68c816ed347aebe84ee7b5e5bc8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;54:В Москве́ нет ста́рых зда́ний55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=В Москве́ нет ста́рых зда́ний
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3cb45ff87a2adfe6f189d6c615bd3158668075ed3af88bbd698163fed13dbe3f
+contentHash=71cfe1f3e16ccd19bb427a345fd4afd17d51554c2e2f7cdf6d5fe80cd9214b4f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1abddc5da7d180300faa9a36fa43ac4c022cd2eb883f3f6a08db9bd89701387
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;54:В Москве́ нет ста́рых зда́ний55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3cb45ff87a2adfe6f189d6c615bd3158668075ed3af88bbd698163fed13dbe3f
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d2c3836c3be551f5af35d83f8e082d4da8401edbc8e4d6256798a1693f9f8f4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;54:В Москве́ нет ста́рых зда́ний55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=In this line, the thing that exists is in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3cb45ff87a2adfe6f189d6c615bd3158668075ed3af88bbd698163fed13dbe3f
+contentHash=7db4955b4f44b5a33ed45a0d0c712c7cd3696a2c92fe4d8d3de9b268c464c43c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aff315f0cefe6ad30c6cca7ce85cbd92a67cd30ff065956f448af1d7c08b29d4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+shippedText=В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f796652272a4b6dfac092ee8c4b549dd387f158c1d0bbeefb2023c745b03146
+contentHash=b55c3a6b7d90d224f2e7c47aec9b3cb00841868a9fc71ba60b83167d98fba4e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14e27ee557dd02153ad995b5265be85b894b29582a0e308e9b974fd33a251bea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f9fa8082b4ffd2df5c1e6e138c79f518534ce4e9c32678c0048de3af2a7cdb0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-1-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation asserts presence or simple possession rather than the absence shown here.
+shippedText=The other explanation asserts presence or simple possession rather than the absence shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d5c295d718c2b5ab4829c532093cf1e86abeae5a69bcb196f89eb062368f595
+contentHash=937e7014c6001cedb4050483baa44bf31c472952d4cd41b6e9d4e7f21176cb36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9ceb6fcd70696184dd9ec84db081e2ec56bf5ea992f9d63468c7bf29e6ea4d1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;29:Нет рестора́нов55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=Нет рестора́нов
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff28331b1cc3029985fc4fb8e7ca84360912721429255ec9928c8b3b0473f2ad
+contentHash=a297a66555ed1f3f1734bc4d6eb6dcc52e6b910186adf5c42f4d21b4358b1b05
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a9a883a7201c411866aef85afe65a385b752d616779932a19cd7234d7683cb7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;29:Нет рестора́нов55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff28331b1cc3029985fc4fb8e7ca84360912721429255ec9928c8b3b0473f2ad
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99545d7d6cf1f7e93e424f52c1ff0eeec5937ccb00e63940b19891baacd8daaf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;29:Нет рестора́нов55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=In this line, the thing that exists is in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff28331b1cc3029985fc4fb8e7ca84360912721429255ec9928c8b3b0473f2ad
+contentHash=7db4955b4f44b5a33ed45a0d0c712c7cd3696a2c92fe4d8d3de9b268c464c43c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c8e0971ffe51d8d14f2fc1a12bef244656582efbfacd2d2faee39329194df08
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+shippedText=Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f802030e6ac299975c131b59cbd3564b5cc353f2ed8c435530f9bf9df997f769
+contentHash=a1f961eed3056584b688faaead231dfcc272becf164d63a2de1963c4d8be7d4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b720f374e3d8dae70f9a1c8abde167c0d41268d1399a4cffbba474ca92c240a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4271b15e4a40cfcbd86c339203f654562a24a84274a1ae91a6ff462cae6e448d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-2-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation asserts presence or simple possession rather than the absence shown here.
+shippedText=The other explanation asserts presence or simple possession rather than the absence shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d5c295d718c2b5ab4829c532093cf1e86abeae5a69bcb196f89eb062368f595
+contentHash=937e7014c6001cedb4050483baa44bf31c472952d4cd41b6e9d4e7f21176cb36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11a0d7e0b7a1595ed7b2e31bb7fe604488838668beaa1d16744e650318eab152
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=В Москве́ есть ста́рые зда́ния
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5b879fea6188ac65b04a9c9eaf1c982679ac5487e60ea64bbd50d02cf3b2774
+contentHash=9e41adcaeeb7f98bcb13bae6043f4a318fa45445d2eda87b0a519521468140bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f89dfc2cbc4632cb45d6cd20037da4f140ed676bedb3f3b380c349a5945e49e3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the thing that exists is in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5b879fea6188ac65b04a9c9eaf1c982679ac5487e60ea64bbd50d02cf3b2774
+contentHash=7db4955b4f44b5a33ed45a0d0c712c7cd3696a2c92fe4d8d3de9b268c464c43c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 517c1d64cdb6e3467e7fae2b55422b9fedf9325f50152b70fbe5513be5152049
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5b879fea6188ac65b04a9c9eaf1c982679ac5487e60ea64bbd50d02cf3b2774
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5caa8555471deb04ce8f59e643965c349647fe71c09b914c4eb7d93f46b5517
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-3-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+shippedText=В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc446b2c58a62105eba84bd3e278eddf1e4ad38a63dbb9917a2dfa2149240f39
+contentHash=db843013ba53130472fa03c2e195972ad3e54b3ac9d79feab56f2966cfea7609
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1525fe447b40362e75961e66e902699f0e749f663996c81b5c234a826598cac2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-3-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9067d8b35529bdece70467859663f60c218296e9285d3b8cd7e03a4761816fa5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-3-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation describes absence rather than the presence or simple possession shown here.
+shippedText=The other explanation describes absence rather than the presence or simple possession shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adb6b0c59cb348ef16b6c824784fd6466e3ab2ca6da7ad850dfe5bfbf933cd33
+contentHash=b4600d802d7db3baff3ab7f4cb71aef97260fb953275ada54921983aa191e7ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-check-availability-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9cdb22f8bdb740f9e5577bc21a68308bf77c35b194628abc9a4c732e6fc2b56
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-check-availability-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+shippedText=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ddf83b522615db9cf05d1c623bbc794d82a6138c3d337e6930368f4914f74678
+contentHash=2bba2029e4a3147972af9e245713669fe4179403756c71eb6df57373dc52d90f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-guided-availability-1-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d43cf0ef98eedfd22bf6ffb7495afa09981e1fef59e8582261b3f68d1a3ce7f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-guided-availability-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+shippedText=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ddf83b522615db9cf05d1c623bbc794d82a6138c3d337e6930368f4914f74678
+contentHash=2bba2029e4a3147972af9e245713669fe4179403756c71eb6df57373dc52d90f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-rem-availability-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bdf948d66aa8dee1fd8ae4464b88bfa66899fe87567474d034e24a65bd5cc75
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-rem-availability-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+
+Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+
+Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+shippedText=Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+
+Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+
+Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=82e018d07056c378489823d7986bc11f375e3c55e23646c14769741a8c99b911
+contentHash=2fc5f33cc3638018f8cea59478539a150ccaaf83584a2499e392dd373c0ee1d0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-rem-availability-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 650028d914c7ae09674bf5bd42ebed71e4f227e5423b2121323fc5ac63ad8977
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-rem-availability-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Review the complete constructions
+shippedText=Review the complete constructions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c212269f5208a8021d652c5ea4e710d39e0d888a4620364fa004ab10c5ab3310
+contentHash=cf811602a5863fec429443187e9a3d3e873e8f8096dd38d76471ca7edb6c3db5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-1-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5735c2ef734f3295172b3266392b19d0638f62a185cc358a5ad6dbd6bd2394c3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+shippedText=Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=12e52910156030b3a8a791c032ef57dfcc4f05afc31df719a4d886c00db25701
+contentHash=788faf74399394dfe7efb7795be6f52d72fe946f4e10e520dc92a7bda072d1ea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-1-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a829c03acfadf2ebe773b4825bc945a96ed96512f61e513ddf0c1be6919aa74d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Presence and the nominative
+shippedText=Presence and the nominative
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb6ab5b20f06b2e6ef586eefbf94a3a60fd523476c4d2e75ebe79fbb57ad1607
+contentHash=887ac2b4d922ac4c1f3b928970a4f6f0018d286ea41c00d58b77b9e5d1349928
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-2-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20107be47ace247a0f3f18666022985a1b0dcc00802f7ec879a686f9fb38a265
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+shippedText=Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c44cd7f56f27843bf2cb6702e4af5c8a7712ba6d9f2965988ea875337090ed0d
+contentHash=5f13e7468572dfe366aace8d1d6bc13e2d737cd07cec4a4fd9e68720bb497470
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-2-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: daa38ad42533ebac7e9276fbabbab346b426b0b77dc24b7da79877eb033f05ab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Absence and the genitive
+shippedText=Absence and the genitive
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc95cb7f5f5a8ad6d17c52512a44c7f14e529e8709edff036c4154c03567b1bb
+contentHash=f1af3bf9772ae3e07ab0d91e60e732aabaa7211b4e60fea96874ecdc8ea819d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-3-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b53d3bfe2ca94a501a9c6cb383fcdf6c778bce0f908c8aa8175f2d89e36c1a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+shippedText=Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2da651c91679e1afe56e8f2e076f2d5908cdf4657edaecbe2a0b0c835d6d2d97
+contentHash=3442cc11d67bc83cdba9afe2abb1634304d0b9ea3596937ad9373b3cdd36f116
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-3-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67bea9e606ecf431b95d09aeb4512a99acff59ce33ca4f63ae12e337ded427b4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Compare the complete examples
+shippedText=Compare the complete examples
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7b6a01d3a60fbd4e910d4e073326f03e136a739a1bc6e03224b891d72662cfae
+contentHash=bbcc7b48eff209d61c0835f7ae1e847071f1350521315f037dece3717cdb5135
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-item-feedback`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe7c30ef961a7687577f2594a0f75ae3fd1dee35a2ee9a2204101a271ace48dc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:item-feedback
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+shippedText=синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9448a901be14e333e8c7446a5ace511c44a3ec8aca938e53239f574ab8a639b0
+contentHash=ef2c111d3a83341a71395ebd58f5366c79441eec9d50ec1085e8a8ef9975efcf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-item-prompt`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a58fc4e8e13f2e7c53bb81b6218b7e9bcec36007ad9f7aeba9a6b590f98a135
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:item-prompt
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Which plural nominative form of the same adjective corresponds to the shown form?
+shippedText=Which plural nominative form of the same adjective corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=151a35572f2e1c3cd512315f7e067d9fdac83286e97e569f7561139b474b7509
+contentHash=357a5585c9b8542969f16cb41a54327157ad68d6e1ca3037b8512759ddabec71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-item-rationale`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d7dbc4810a0bcb88316de44679a9d913f7025b1372e6af46d4399417e0c505c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:item-rationale
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+синий is the supplied masculine singular form, so it does not provide the requested plural nominative form.
+shippedText=синий is the supplied masculine singular form, so it does not provide the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=68f10e10165e8778328fcd6a43e26c265b5acfdc93ecb0617132a08e80eb1c0b
+contentHash=39c98f8ccd5e7dfa9809de42a0da149742bde108a7c1cd471b930871fd370f18
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-remediation-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ce1afebf8e6e70ce1cca071a3e6099228f3c138df75d3e1374a53baec98b480
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:remediation-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
+
+In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+
+мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+
+но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+
+The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+
+The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
+shippedText=синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
+
+In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+
+мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+
+но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+
+The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+
+The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7aeb98e10c9ad98bff561e1027674ee83b9bcf1ed6191ba3437719e5e7ca8f46
+contentHash=7b11e0202ccc7ad409b9dd38f01a3d190a658476ad05e7c7208f73ec0e746ae0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-1-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f56d8ce0559f10d0b01637ed582a99093274f5cee5bd45202739a5c3cecd6a80
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-1-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
+shippedText=синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fb01b67c16adcf156d98181230bdbbcb65fa075f2a7868412712bd268e9a0ac4
+contentHash=3654bea4754c635ba57dc64917a0675b676b9f079384c0f31582a8661bc82035
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-1-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cc65f2e95a70d5cc18ae83c5324b7e5645f0459346d0743f5e80b93ffd9d60a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-1-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Recognize the supplied plural modifiers
+shippedText=Recognize the supplied plural modifiers
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fafb83b1dd1a3f64572d26b3ce2433aebd416013d460eee1f53529bdba98c05c
+contentHash=b092bc6abd58f344775715609d2ff954c3a527286c0a3271e510561f8dcefd19
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-2-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 609623fbbb76550f0d9e4d474c70a93f2a92dbf931a24b4b316655f0110869b2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-2-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+shippedText=In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7af2cf1dfe244f421ff034c544fc46fdb61db4ee27fb55c3db7732b845a4a968
+contentHash=b6d99d8207bbdfd9a84813e4f0c962840bf17613a67425f6c34c54b02c0d5745
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-2-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bd3dbff7a807c6ea627b9a1bb73640d45379a8c2be2210518d5d2c328b0c22c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-2-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Read the adjective with its noun
+shippedText=Read the adjective with its noun
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=df2e2dcc31bbcba0a57e3b779e186f72fbd914a2dd5aaf0f9232d8d20261a72d
+contentHash=ad88ad97823bad84e2202b916962d9bf991b7d6405f9ceac5c07da80c329c851
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-3-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84c3438b6857481672453a595249200e1d537c8488666f8240abb8f35846bd18
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-3-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+shippedText=мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ea23109fc4e52ebcbd9530290ebe3aff29cb2d10ed98a45da507fe719cd974b1
+contentHash=9b573cd8eb8dc3b7df229c5656c9df64efe41d24d3078119d29023534a03b0b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-3-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 441fa561c6615b3a30f086e7db90c7241c0809417cbea8d76368e0c3f7162417
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-3-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Compare the possessive forms
+shippedText=Compare the possessive forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97b837a0277f518202d4063cdf14da224e2ffd3c9a8cf57ebc96373530109bce
+contentHash=68ab03f60d1e28c938de58343f4a045a45c1076db03de4d9c2c7507ce02fd933
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-4-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b59ba72fac4006de283bb246e268189bf8c2cd489ed7a06dc30b3dbc74d7912b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-4-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+shippedText=но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=df7dcb7138a37322e631e360eac9a08e0474621cbd670ee0260c25619a6b595f
+contentHash=4fee0927bd52e735f6adc7b540e4974165eff0cdeb8d1bcfdd486bbb89dc35c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-4-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11f0e7057c4f3bc04bfdda2ee384795b967c3e54d1830965d93535d9cbf5323f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-4-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Work the guided adjective pair
+shippedText=Work the guided adjective pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f6f0bfb27bb25600d0c35667498eac3882761895d57eb681854434069a95931d
+contentHash=89aa3f208c8b2dfda1a42a5e7964fc87064ac2b04097aa5daa14be3417aea05c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-5-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d080614a2e112e168cfa0407c0179a9c3598da2dcdfe12bb2d746169c88d59a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-5-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+shippedText=The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c093786ad9c006131973e7438cc56eb1b2475c696fbb4ff0adbf958e5fbaf3d5
+contentHash=c29043d2a860424103cb1853107a568409bfdf1c335561bc25f907212c0dca3b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-5-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 889f248481bc8740b6812c8b1d97f076b2a8801c926260246bdf87dc1632d0bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-5-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Compare the demonstrative forms
+shippedText=Compare the demonstrative forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9959b1728a64b419592ee1d2e248f01c099caf9ceafab93df8b1846bd48afbbe
+contentHash=1601ac655b891a04a810c2891035f460def87683e30f96eb7a787ced08a46721
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-6-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 22ed96068b6e285682ac66336914d2562aec2c2437ca557c5662eaf7607c9821
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-6-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
+shippedText=The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fc6ce0cf69f863527b791cd236e33453373b66b116e446e3c0d5029570b14a1d
+contentHash=544201083859bfaf41846bc4f8a44d4b4e02e61a95da9603a257643bfff08d39
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-6-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 15c6e15a844a05104d87dadfde297847730e1fe1a946117b40e3fffe5fd327d9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-6-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Apply the distinction to a different adjective
+shippedText=Apply the distinction to a different adjective
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ea863de235f5d520fe81c3da8c0365267a389631c2359c17a662fa43f144c28d
+contentHash=5ebdc8c7577d6637499bcfb861fc4ebcce922a29c4e7846304c6a0d182e34e72
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-0`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78a9cc1c0d1e8fb8e1f08a6e7100a48d51fd040c0de324b6bafa0eb3cc5bce5f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-agreement-3
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+===Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+Context explanation:
+синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+Tuple-v1:tuple-v1:1;10:синий10:синие1;10:синий
+shippedText=синий
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0
+contentHash=c65b1a8fccbf3115732e93bc6aa7ee896d431417c4f15282fa659e68025e469c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-1`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a98ada5b3d98ab3efbd6341e0c191a4278d826975a3e9e163c60a31ac4adc1c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-agreement-3
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+===Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+Context explanation:
+синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+Tuple-v1:tuple-v1:1;10:синий10:синие1;10:синий
+shippedText=синие
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0
+contentHash=f6eb827345e7f8371429a0162da535ceaf5fecc606f5a4c7eeda5fa378cd1fd1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-2`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68e614f475d1875dda169ab05198bb6b4c8bd11756e83e4356c17f85c0f8d146
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-agreement-3
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+===Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+Context explanation:
+синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+Tuple-v1:tuple-v1:1;10:синий10:синие1;10:синий
+shippedText=синий
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0
+contentHash=c65b1a8fccbf3115732e93bc6aa7ee896d431417c4f15282fa659e68025e469c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-0-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b4abf1fab5f00dda43ddec632ecf0d48f65f8b1da607a88b4585f71c1c28b27
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:0-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
+shippedText=сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84c3190315e4f51c20fe3a30217adf8b7ada1b56be9f731e2641fb8db8ad4988
+contentHash=8dd0a9c7e78425ba7b900dc8d799000bd339fe4bac307b51936d19fa3954355c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-0-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6611d36e1bb41d52028cb551b2e2359b04be89833da4f6baa1d447e3a0559e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:0-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Distinguish one table from tables
+shippedText=Distinguish one table from tables
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=464411052ff6e79843f7466296919d20803529685ba3db86f4171d80f40f26ca
+contentHash=2ca3c4a26de5aed89c244c150d2dff9a34db668b4bbaed4723d4450fc3712bd7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-1-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0471cfeff056f8029d913fc479dc8a29307b8dc66da55d9a0fbf143b762ad5e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:1-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
+shippedText=These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f58b97bdc127a34e1d947add2d5a331b5b72ce0a26b51b7f8a7363dfab890676
+contentHash=17371f9b9a9c8e84f0c525369f0b1e909d4988273b47e691ed33ae13ebfbf1de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-1-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 016b6d3804175abe3ae5ce5d53bbdf515bf7074856373f15a1087d276571474e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:1-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Keep lexical gender separate from plural agreement
+shippedText=Keep lexical gender separate from plural agreement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=834c191f4852333da14e2e1b21ee2e54a15ca93ab693d7495beea228a137c7b9
+contentHash=5e05710eedc609e7e00d3742a44ffaa5fc154d3234cd1645ce2eaeba9378bb1f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-2-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20ff0cff551522a878d3a14b26705d6e3c4af8b3a623ddf1df7f23910a2569e7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:2-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
+shippedText=го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dafac8033dba5cda2a748de72bf441388b429c76090541c03184155ae1406f70
+contentHash=f5043c686d4f6a0e32d6d2937ae572d5a010fc84426fe71150d259a41b172ad9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-2-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6e466b6578efd63dc50c648bb56b3c7b2b2f46039d1434a11a8a894823da1b39
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:2-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the town pair
+shippedText=Recognize the town pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=62f4eda8f4cea10920abe38a93400062a826491e6800a3db4b10bfa3c86ef680
+contentHash=25ceabc54e38a83b767838c67bbb5db4aac0ec2eab71b7801e0d55facae75df6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-3-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b83bb463975afe022d30d9c205641954194f37698822735bdb3616cbff816e80
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:3-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
+shippedText=кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3a27a0e1587129bee2296e1f79228f2a782db9b25c2cdd10da19379c3a2a4f05
+contentHash=189b56a89d3524f77f7c8d00bb93a982355f533efd616322bd64896a749a9df7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-3-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d0bcf2218c89a8c602528eed3cc5a0cc41c5d67308fd5a2f157da7206f3ae68
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:3-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the book pair and its spelling
+shippedText=Recognize the book pair and its spelling
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3efc14dc0f1e77aaa95b562ad6a05903967211ea36044b1d006bcd90df950fb1
+contentHash=53234394b2bb70a3b40095583a9dfacdb1d6f482dfb8d61b69f84596074fa849
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-4-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 88ffaef0a5dc4ad4e0828a0d65f876da1df823d351ee7f5b84e4c72af1222767
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:4-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
+shippedText=окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=73ef64df98039db595fd6ca50eb45cf6e1298c9be80b152e41169a59a6d9616e
+contentHash=638f78a5c1fc703af12a4f0bb5f9222b49c1367f5c0072ffc455c24870d86b27
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-4-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ed8b741377d8c5f2d156bbf8b4be9bae2b8d83c68d9bfee7f8528fbfb790163
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:4-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the window pair and shifted stress
+shippedText=Recognize the window pair and shifted stress
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=78e86717d079aae504da071c4b400de53dde895cf02722daeb6b082775f0a9f4
+contentHash=1eff7cf4131c88f9c195158dbdff816bb7c5695f4fd5b2059af38baf067c1160
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-5-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f592484e66ec62bd428d0012f41282f8de9780ff13a099e4257ff5819864885
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:5-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
+shippedText=ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0fbc3003e21d63643e36641b725a8f708b9c977ca7f91855f03aa55bf6159ea0
+contentHash=497106c1f87fdd6b180b4eda1ee02e1f7032ac7f67d70888cd629f15333c9c3a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-5-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f6dd1f0e67f0c08831e3f7ef89b4a28f12463b558ac4877049c5fb6a48c4355
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:5-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the mom pair
+shippedText=Recognize the mom pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=968b4def3eea1c35d09544fc337c047e2c7508ec7eb8d79cd3dad082b1349c86
+contentHash=4e4d7e2f66ddf7755dbffa8a7ca4b2bd9140b1ef0378c33d1c66b899b899c481
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-6-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a0b2473055d4e3b5b2a02737b949ba505c5a2556407a541a8229a7873c33ec1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:6-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
+shippedText=до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=46afaebe2cde7abc1f74142f05b2aceaaf75fcc14d189fa5152c8fd30b7bf891
+contentHash=915ad68f946d6d862c40bfb7bdd8e204c4ee7358b48a2040436368f9c6a9902d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-6-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af65db929379d4bb7e1c13989e249942e3717bada3e8d28462964574e3b9a0dc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:6-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the house pair
+shippedText=Recognize the house pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e6906099572f5c774aa819b2c6f7f0063ebaa4e00be321b262f6f5e7b9355d47
+contentHash=a6df13ddfa761e9c6c64b2c7ccade338bc769d2833648dd7ab9078147a53f308
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-7-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a360190f22e6f091acd25ab0959945e1c9524d65d1dff0d7a46b15f04622e84
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:7-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
+shippedText=сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=837090ccdbffe978dba1b47f66556edd6d46a9fe5bd01f430a21d2bdffdb1988
+contentHash=3647d5770956241afcd1aeb7dfb01bd730876199f0a472d9b86728cd90e24c61
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-7-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e665de2ce0b93f157932345ce64c9fa749c5446ce07da3897bb734159575739d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:7-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the word pair within the taught scope
+shippedText=Recognize the word pair within the taught scope
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a45f89df9d5bd2e69f47c5290d9cd6afa100cf56e0379c4d355884c602e0c197
+contentHash=175736b8efb94e387283f6226cc3b75d11b677a151875de8ae754ac4957747ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-objective-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aedaf3a3b77c80ac3f8b454387a2fa8ab5c808a3700cfd89f25ae5e48a576992
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:objective-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize supplied singular and plural nominative noun forms
+shippedText=Recognize supplied singular and plural nominative noun forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7ae5af187c8c626f2ebf56ab501c78a3c1c2ba6be273ea3caa2b9f550a162e43
+contentHash=101348ee69ebd1856d272ee0f5c87c4ccb4b008dad5a4ab7c21f13deaaa679b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-rem-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e3a1faa40259fa7c043e9519adc88bbe7a159caaedc4194d99bd1fbfd677da7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:rem-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
+
+These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
+
+го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
+
+кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
+
+окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
+
+ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
+
+до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
+
+сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
+shippedText=сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
+
+These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
+
+го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
+
+кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
+
+окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
+
+ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
+
+до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
+
+сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6160e18eadab686f1177691748547a0e1c18b1ff14dd777ecf45101fe5e055c5
+contentHash=fcf7c279335254edd907d4aca7da7da3830dd09ecd64fcaa451fa817f7f8f0f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-rem-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 23de2b6663899e9e8b8bff25f9cf7205407bea61532ef5d23b7fe425e739d22f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:rem-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Review all seven supplied nominative pairs
+shippedText=Review all seven supplied nominative pairs
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae723b5585c3e73e0a79e99f45e16369957cdaa3d72db35d5b657d2adecf87dd
+contentHash=18d4d6c50b52c1bcf2917b2852d0f49e625981c4ebc4b256c7d8934b04c7c3b3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-u8-st-check-plural-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0677802a335a154a9a16a663cb34d4376b1f77176eaab74b7ee4965c01ffacf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:u8-st-check-plural-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
+shippedText=Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0d60fabb7fac398398c4f943c83ffd270a2ec8854ab404c490554b40b778ed0a
+contentHash=13cd0230376cf3511020fde6eaf4cbf3e547288c5766571026944ed5b847c978
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-u8-st-guided-plural-1-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 582eb335e37c60bef4e1da1133e9c966d71aabb1001bea65bb472804abc89293
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:u8-st-guided-plural-1-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
+shippedText=Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0d60fabb7fac398398c4f943c83ffd270a2ec8854ab404c490554b40b778ed0a
+contentHash=13cd0230376cf3511020fde6eaf4cbf3e547288c5766571026944ed5b847c978
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-adjective-feature`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d052e3ca10240a46a6c84af9fb76397c1a4acc4cce10691ef5ce1d5979e0906
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:adjective-feature
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+ADJECTIVE_NOMINATIVE_FORM
+shippedText=ADJECTIVE_NOMINATIVE_FORM
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03ebb496509046dd5e3d6e53c525f664265ab98559f140cdacee5fb4cdc2f809
+contentHash=eef3ac3332364c33e64121a97d481c1147eb015a82797fca89b0d1c5df615d9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-check-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61e97f0a23bf7b907256ac19b98b52c3a432a1d09129d64cd97c26d1dd908df9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:check-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Choose the requested noun or adjective nominative form. A missed check returns to the explanations and examples.
+shippedText=Choose the requested noun or adjective nominative form. A missed check returns to the explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58eb845264845a7ca997ac366cdd9de15626a04660ac117d5ecfe5b6b417ba79
+contentHash=22a97c8fec395e332f5004d1c8c4a5db2be21d90792c6c3280628fddf48bb11c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-guided-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1e7726daad5bc3f487014bb779962cc1b56c14eb9ded8f9b0a3feccd9dacd3e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:guided-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Choose the requested singular or plural nominative form. Then read why the other form does not fit.
+shippedText=Choose the requested singular or plural nominative form. Then read why the other form does not fit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d22e73af502328465f3a294ee8984bf8509fab603e79f77d4ecc2c7c03cb38ff
+contentHash=81d2400e584449c92ead65e43f24d66d2a2b3f6532f139164f83e299bfac8523
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-noun-feature`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea14189b74a1b1fd69df8e106b799c873fa6926ab8e3d168336f392bf740d936
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:noun-feature
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+NOUN_NOMINATIVE_NUMBER_FORM
+shippedText=NOUN_NOMINATIVE_NUMBER_FORM
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d9fe4737e57322c493462f85e9cf6ca59bb0e5368fb046ea3ebac817bd5676e9
+contentHash=792363e8ee9816e459ec4edfdc1444d1942271dd4b40da4e6f1ef573954bcaac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-objective-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c00481cb05921c80ed57c78fedae4f0dff4e0db307ab63d62ebaaa3387a89c9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:objective-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Recognize nominative forms and plural spelling
+shippedText=Recognize nominative forms and plural spelling
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b6f10337da17db01802492dc5cf9afeb9c38ac3b8f1ca89e3d5b7ac90af67a7f
+contentHash=b6865f67aa195628ab67ba26405911b06c263fefc731e6d43a89082fab0c5680
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-rem-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de99f154fc60d68f357cfdabf1eaaecfabcee7e40f9de7eb54ab1d682baece5d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:rem-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
+
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
+
+For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
+
+кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
+
+хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
+shippedText=Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
+
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
+
+For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
+
+кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
+
+хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e067528bfe4b4635c24627a13c43a92d61184a8eab273f4bb43b913eb3735d2f
+contentHash=aa6862bba3bda1335ee6504c631ec8d75d1f63bdf0e56e4e6f07608e7471579c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-rem-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48457f2f5c51d0fa1938fdc71b0143714f196a443206bd2edb32cfbd15a07f00
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:rem-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Review nominative forms and spelling
+shippedText=Review nominative forms and spelling
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03578b8b1be352ca8aebbc5afc43c181baf2c0c153ec41e57f463d5b0df82648
+contentHash=d2bf55cf1c7651783a80751b532286ca91c6c191226507406bef89ed13a746bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-1-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a986b0b9f4c80c047ba0b75e21ea8df57a378355ca7f698b9a4068e04f1ae011
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-1-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
+shippedText=Adjectives agree with their nouns in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. This lesson compares singular and plural nominative forms, then explains the spelling in the retained plurals.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3b97a20beae03dd3af4ccb8c7bb94e10477ffde3c95f152cd85747dbee8677f3
+contentHash=7b035403e82b2138bda9d5bdf229839bf333015e765f02852209d4c80b648ba1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-1-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1d206ead0e9ed28a9a31aa67f9d1b19094cb7df9b8590ba7f92252c86c9be04
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-1-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Singular and plural forms
+shippedText=Singular and plural forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=108b3bb48fdfb118968d157c44aec21bd6bd166e582e134eed0e859a2dda6ee8
+contentHash=7ef0f8783ed67a48ac377435b2dd5d46eb30d39344c3d636a5fefab92c2f3660
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-2-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff6e47d6b5e878265fa626138affe26ecb4c3ba65c170dd7b0ea46f7429e2bd2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-2-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
+shippedText=After г, к, х, ж, ч, ш, or щ, write и rather than ы. The seven-letter condition is required. This rule applies to the spelling of noun and adjective endings. In кни́ги, и follows г; in хоро́шие, и follows ш. The rule controls spelling, but the question determines the required gender, number and case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=abb2c10f7db1299677eb5724ed6357d67643ece6393112568bf36d9ca2b6f066
+contentHash=a0fd6bee82a447edba32e8396154742d54e1cd6863694930fe1cfcd920621ca7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-2-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d8205237f3b03d3e6b5451e037feb487297eef0bb4e517703c32dfcd9b77dc17
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-2-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+The seven-letter spelling rule
+shippedText=The seven-letter spelling rule
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=266be24ba05d0a0e7c5cce5b8b6d853a51df6eec9dd4ecc9a4f91366953727ac
+contentHash=91becfa09c99f7efebbd8cbefec62dfdebbdf4506c2f6bc8f34c0b5318b116dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-3-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 264834b8499091112e35067993a210729b091c4f3b2b1452b05828c7dfb5378e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-3-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
+shippedText=For these nominative checks, кни́га means book in the singular and кни́ги means books in the plural. To form this plural, replace the singular ending with the plural ending: кни́га becomes кни́ги. The stem ends in г, so the seven-letter rule requires и. To return to singular nominative, choose кни́га.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb4148ca585f601dbf997402d9433bba6e22850a96844f0787348ba6777a02c9
+contentHash=41f8cd774b7e30784c944a06fd73ac8ab81569b1a2f42e3a9acf4cc7977594ce
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-3-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33d2d47dca22f8ad475078c37320aa3ee44a2f0e56850789631b3adec8c21a13
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-3-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+A worked noun plural
+shippedText=A worked noun plural
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0653856a4c0fee4a30c5be2675000a7cd7806e4af08e3afbf20ae1bc5b877d10
+contentHash=3cbfc2e15f1b292eb59c5c1ba723e39d8d51a5121f6270eadc4ae6a73ab89172
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-4-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5c88a08fc6ee1dfb089aa9f9c22033e73961f46127e61735eb63873625fd2a1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-4-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
+shippedText=кни́ги is plural nominative in this lesson. дни is also plural nominative and means days. Its и does not follow a letter in the seven-letter set, so дни is not an example of that spelling replacement. Not every plural ending in и comes from the seven-letter rule. Identify number from the requested form and context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9b8feaa93afe69b4220a3fc96ed40de999b3dc6428ee930431bf299e060748d7
+contentHash=8faf6c59ebcea4fde7beeef995497e8455a87d5f7c1b93d01f643dad39f56b7d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-4-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 707442fd3bc9ec52b50665becd840a3d5d961f1818cef3b831a71f10b07cd586
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-4-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Two plural forms, different patterns
+shippedText=Two plural forms, different patterns
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4a1420f8014f011f2b9fb597dc0554171c71f07aed50b481213959868c192e9c
+contentHash=39ae1dfe97fc51d984cccbe8aec8ac13aa9335123ffe4f78d7a841ec6af4545f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-5-body`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c09539612666e1e452880bcb9e8089c4f7bca913cfa190527442a68513e525d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-5-body
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
+shippedText=хоро́шее is neuter singular nominative; хоро́шие is plural nominative. To change the neuter singular form to plural nominative, choose хоро́шие; to return to neuter singular, choose хоро́шее. For the masculine singular dictionary form, choose хоро́ший. All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa1729e72e74b480b1f3d11ae9bd4e16e9bcb98c4613ef78aa9ce7b356b28be2
+contentHash=27f6cad87b9e5e2dc0a6634eec84d115cc36929b7f3c6cc4ff9aa67c127f1c36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-worked-teach-5-title`
+
+- Objectives: obj-u8-spelling
+- Sessions: u8-s-orient, u8-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8daa2e5067efb9a1fdacb8b99e2269661a2ad8d8620f84a02925f70aac836c79
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-spelling:worked:teach-5-title
+originalSourceText=Cornell Russian Language Program, Spelling rules for case endings, https://russian.cornell.edu/grammar/html/spelling_rules.htm, Rule A; Nominative Plural, https://russian.cornell.edu/grammar/html/gr04_a.htm, noun/adjective endings and alternative soft-stem patterns. University of Kansas, Mezhdu nami, unit 1.8, https://mezhdunami.ku.edu/unit01/1_8/language.shtml, seven-letter spelling rule and worked book plural. Primary HTML text retrieved 2026-10-10 UTC (2026-10-09 America/Chicago). Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:хороший#decl_m_nom, #decl_pl_nom and #decl_n_nom; nouns.csv:книга#sg_nom, #pl_nom and nouns.csv:день#pl_nom. Existing form records: prov-ex-u8-spelling-0-ru, prov-ex-or-u8-spelling-1, prov-ex-or-u8-spelling-2, prov-ex-or-u8-spelling-3, prov-ex-or-u8-spelling-4, prov-ex-or-u8-spelling-5 and prov-ex-or-u8-spelling-6; existing rule record prov-ca-8-324. Application inference: explain those retained forms; selecting among correctly spelled nominative forms does not isolate spelling ability. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no primary prose or new Russian form copied. Final semantic audit pending.
+Adjective number and dictionary form
+shippedText=Adjective number and dictionary form
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=35909441b304d87259b7bc28c9741fbb56a1a9e0cf3b970d6a92b0ae73d87fdb
+contentHash=2c936cbc34245a8f07488b3bd3d9ece2f32adbb4916c8fffd9cf94b1230c027f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-check-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cdb141a37dea00916b1d3563e0301348f1b5165daef19f204e0d995ade6f8460
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:check-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
+shippedText=Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f37ddb8ff418f4597edd22a46841906699bb1a487b9059a172d9bb0e0a6927d3
+contentHash=3c353ad21f5c229cb6286eb8b7f1c4a11642068ad2d7b75a55eb77d5cedfbcfe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-guided-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94494ee4d4e71acb466cf2194f6bbf406d0392a71c0f2dc1cb3f89aef129531b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:guided-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
+shippedText=Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f37ddb8ff418f4597edd22a46841906699bb1a487b9059a172d9bb0e0a6927d3
+contentHash=3c353ad21f5c229cb6286eb8b7f1c4a11642068ad2d7b75a55eb77d5cedfbcfe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-objective-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 540f8de09bbe169622c9922dcbb3e744063f6f8d8a680592f1bccc8744d995e7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:objective-title
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Recognize supplied positive existence statements
+shippedText=Recognize supplied positive existence statements
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95edd08b55356c5f1902af0363a484ab50b21d856b3c6c02d253ff35d5619d96
+contentHash=d1bd1480508ffa0b40467c998f5c1b65767ede56d8b6cef851cb8a09af5d825f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-repair-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1fd2321660b0f95ccf923f961bca7e8700ee7a6295f77a2bea45ba01fd54127e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:repair-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+
+В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
+
+In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
+shippedText=На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+
+В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
+
+In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a06a7cf4eb757d5fb9880311046bd2dc3a72a2522719c303584d8ada6e0e7bb
+contentHash=83afc686a02d9c39d09f3e467aa7a8b82d40e0cc6f4c1e768ab581951f320c41
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-repair-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 696aec819805a973854efa7d6f4267805c7d380efce0e28bcc7cc55764c3d831
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:repair-title
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Review the supplied positive statements
+shippedText=Review the supplied positive statements
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=13f0773819892674f68e3cf1728d9cdff2edada640ff53f3d2b88973c26cf526
+contentHash=d68d74c6d339f04d9fff9deeec25c8716375993d103394321a695d05e12c62fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-1-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f65bfdb0edc78c98e350df43cf35807ba31deb9b5c6348d58ddc6e210563fb3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-1-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+shippedText=На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf7c8b3ac041c3be04600cad8ef2a41de7916fbfe6ceec36f8a1fda4381ce398
+contentHash=3144c5eb8cb95f8aa6d985afc5e1bbfe70f2d206b25e48d91bf4ffcd7efb232f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-1-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a6804fac8f305bb21fac70e979d8309d772018cbcfbabf8576876e644dad10d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-1-title
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Presence in the supplied street example
+shippedText=Presence in the supplied street example
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6ad43188a320a9553dd27237583db0b9691ef05119746f274a64ca6c3af37396
+contentHash=e313a10e380116ff9c415b3416cfd32fd911af79b8bbe4223ba61db167b49213
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-2-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21aca83577090aa4343a75f0d9a6b2e428f8bfaa571f142e0fc07838e1c05e9e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-2-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
+shippedText=В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=022a264c3efd096b231874a6ee95a53218355f12befc050646c08fdcdcdd70f7
+contentHash=1d77d51f9db7838d68cd7d442c03145790bfc642c203bf6f1ddc7bca9ffd090c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-2-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a756af658d527291b1fbe89190b2b205d0d08c017228b2f7766cdc6d4443362
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-2-title
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Read the supplied Moscow statement
+shippedText=Read the supplied Moscow statement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b6e5cabeb61194d851df49f8149b322c78ae83374ea170ecbeae5c276dc5cdf3
+contentHash=39b32ade51501eeec2a6e9141c7837f9aba6e285893cc0901052a87a4d113987
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-3-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45844d78ba57c6cb1bf87e43111584c98a1e3698755473e13ec0a7284508cdc6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-3-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
+shippedText=In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e54fcb36f727df11323e2d0d56a26c681fd9f1bc98ceab29e65cd892fdf9a228
+contentHash=859ec13e2764ab22bf90d5577678f00e8f51f87fe90787cf5d0949e60dbfc1ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-3-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6902385aee30dca0365034324fc0458ea689bc24af626d6c5b9190f5c3945c0c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-3-title
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Identify the noun naming what exists
+shippedText=Identify the noun naming what exists
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2630255decd010a12abb1f8370a0d4b0ca3817960e4c1c5bb87dc12d3bd4a28c
+contentHash=b814e6f29b781e6584b3616e528d3a60f511e0ceeeb0c8d313ca5198939832a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2abb0a995193fc586c0f48e6c0d0680ffc1312c0d867509bef30df7c5cbb8f98
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=На э́той у́лице есть францу́зы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=07d1f7bf3fb2cc4b57286264f39c4a3da3258faa97057b87d9a59fa37cfe0a4b
+contentHash=4ae3c622c2207d1f59d99e080540421c9e7b456ddbcf945f48be5fb0d6f3b8a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17cc0995314a9989db4c5be1c118b36f3635aaf36ec0cc12d1922af093ca226b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=The line states that something exists at the named place.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=07d1f7bf3fb2cc4b57286264f39c4a3da3258faa97057b87d9a59fa37cfe0a4b
+contentHash=15bbc13bff9d49331e605763538a7d18e36441aa9b82da183cdd1f26a9ffa955
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f38ac5194210033086da7fb311e15a30eca278a59d5cc95206f670629ca5990
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=The line asks where something is.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=07d1f7bf3fb2cc4b57286264f39c4a3da3258faa97057b87d9a59fa37cfe0a4b
+contentHash=6794816c09c70cfbb6e8877ed02ea6cb6952672871b14ea0c3034bc4b4ed61f1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05017003991a276fdff3e03dc364076a10ea96ae82cb90f67a15a71d4d04099c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-g-availability-0-feedback
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+shippedText=The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ffe1221f6370690564f877c2bde64597ca67827670ccf8f390681f88a5d8180f
+contentHash=84f04cdb0b7e84efabcca62401ff192e8347f62b04fe576a6df4ff5510ada7f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a2c91ee2325af5b88fbd57f8124518e8ac63ae6498e622a26116ca2fdb3d288
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-g-availability-0-prompt
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Which function does the shown line have?
+shippedText=Which function does the shown line have?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3e5d3fa8e4d56ccc312194fd11ff15eebb41f83683969906baf7eec1869c638a
+contentHash=1d4ced22e0ca2bbf8f1355ba4d67aa4013dd6c7c05b59d2d55ca15f24518d235
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d7fb262f2e545cdbe2d1cbf83264f43427301c938c56b6f0b61f0aa1c74906bb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-g-availability-0-rationale
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+This alternative describes a question, while the supplied line makes a positive statement.
+shippedText=This alternative describes a question, while the supplied line makes a positive statement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=24f01c9cab680b7ec472b2153908feaae6ddfd39c7008b4f08bc25cd019707d8
+contentHash=050c7e667e7d3e3654886171eb049bc5d90df3ebeab6bf7ba8df7e16d258863b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5573521e9b3af22baa2dffb0097923269eb65515dc550647775ea46ecaab532b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=В Москве́ есть ста́рые зда́ния
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=85ceb5fd845fd3d6c2803262f1ebbc7a5ea314accc4b257d1a3fff5853896732
+contentHash=9e41adcaeeb7f98bcb13bae6043f4a318fa45445d2eda87b0a519521468140bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87008d392677954f10d9f2b14957b85848ba12af15ea10c14583a27052842648
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=The line states that something exists at the named place.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=85ceb5fd845fd3d6c2803262f1ebbc7a5ea314accc4b257d1a3fff5853896732
+contentHash=15bbc13bff9d49331e605763538a7d18e36441aa9b82da183cdd1f26a9ffa955
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 37d8b5e4732eb76fbc913b7db0295a9c48627b30ffd9920f5bb644739417a872
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=The line asks where something is.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=85ceb5fd845fd3d6c2803262f1ebbc7a5ea314accc4b257d1a3fff5853896732
+contentHash=6794816c09c70cfbb6e8877ed02ea6cb6952672871b14ea0c3034bc4b4ed61f1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9aa4ec0cc29452f3f63db0f663c0290bd207f9decff13f018c8f76b9aaf6a132
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-1-feedback
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+shippedText=The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5aadd75d53ad09b71e6dddcbc5ebefe24e7868a272ddf55788758200d7e79f58
+contentHash=73a1795041ec72afb0d9fea2094ce4858fc3f1206671c275a852eeff9408f7f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e30177a18a7512a40b20c90b450f20af440cae79204491929cecffc5453a33b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-1-prompt
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Which function does the shown line have?
+shippedText=Which function does the shown line have?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3e5d3fa8e4d56ccc312194fd11ff15eebb41f83683969906baf7eec1869c638a
+contentHash=1d4ced22e0ca2bbf8f1355ba4d67aa4013dd6c7c05b59d2d55ca15f24518d235
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2cc8ebeb03d3b0f47665388c9b1c6a6779398c10859035569a109f18207bf7d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-1-rationale
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+This alternative describes a question, while the supplied line makes a positive statement.
+shippedText=This alternative describes a question, while the supplied line makes a positive statement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=24f01c9cab680b7ec472b2153908feaae6ddfd39c7008b4f08bc25cd019707d8
+contentHash=050c7e667e7d3e3654886171eb049bc5d90df3ebeab6bf7ba8df7e16d258863b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6a8c2d12eee1443012645063f78e5918498f63cef7a721062216fbd7ae05b5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы34:There are Frenchmen on this street1;33:There are old buildings in Moscow
+shippedText=На э́той у́лице есть францу́зы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bfcf99be6b0e7228c5ea9607a6de772dc56e75ea8362ce5e101bb99fb3dc5664
+contentHash=4ae3c622c2207d1f59d99e080540421c9e7b456ddbcf945f48be5fb0d6f3b8a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 146fde0b482e666bbde6562d87041f1b48d588000d9e23ac49c46ef283a0131f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы34:There are Frenchmen on this street1;33:There are old buildings in Moscow
+shippedText=There are Frenchmen on this street
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bfcf99be6b0e7228c5ea9607a6de772dc56e75ea8362ce5e101bb99fb3dc5664
+contentHash=69022a0642801a4d0f1d32ab645e55b4b5559963a2614d2711690d4f78ec7f38
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed978c7e35cdb4c63fc8028d1d250a326d5c1254bc2bba3e92ca1af30261408a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы34:There are Frenchmen on this street1;33:There are old buildings in Moscow
+shippedText=There are old buildings in Moscow
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bfcf99be6b0e7228c5ea9607a6de772dc56e75ea8362ce5e101bb99fb3dc5664
+contentHash=d258e0ca47506d48eea3aa5a34cbdad016788ca522f7004e11014e368d675e36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e89f2d78d80d1cda1f373d09ec35f6c34213c605a7257e43d901080add2d7da5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-2-feedback
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+shippedText=The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75f492e224252d90af42b89283aafc0746f76cce1e2e01a191a79953bc751a03
+contentHash=19c85c79a9c2ffd0ee98349c33c044f5061254f0f44cb5caa7599671486c8ccc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0793260a59be397873ddadc69d3b7d312d38779ed33cc6ac1ed325e8c88192d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-2-prompt
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Which supplied English meaning matches the whole line?
+shippedText=Which supplied English meaning matches the whole line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72d44c799fbf51948e08fa548121d8f45635b81cd762ad77765df337db815bd9
+contentHash=198764732543ad8b2b267568913885853646243b116cdddb25fc0ec1264df6a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbf3a6b6c4359a78fbac0522a9f57e8443950a2d1058fd9a130202759deaa127
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-2-rationale
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+The other supplied meaning concerns old buildings in Moscow rather than Frenchmen on this street.
+shippedText=The other supplied meaning concerns old buildings in Moscow rather than Frenchmen on this street.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f362d88f50f4eb66dd0573594e4f926563aacb76b89738c48d2ee95eecdc5eb
+contentHash=d9a4bfef37187218828035e371af86fcf691b29bd41b336f97c74b1b4712740e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a1f63cbc7c236a778fb7fa6d9f8094ab2bf9e59a8613af072900c9daa1e8103
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния54:The noun naming what exists is in the nominative case.1;57:The noun naming what exists is in the prepositional case.
+shippedText=В Москве́ есть ста́рые зда́ния
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f40fc9faaa639adf3f28daa857d4cab7ad324232d3ab97f8c8153d8616765685
+contentHash=9e41adcaeeb7f98bcb13bae6043f4a318fa45445d2eda87b0a519521468140bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c4242672e05492dae9d4776f359d5ef5280569e5a61bb5b4dd0de94a4e14f84
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния54:The noun naming what exists is in the nominative case.1;57:The noun naming what exists is in the prepositional case.
+shippedText=The noun naming what exists is in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f40fc9faaa639adf3f28daa857d4cab7ad324232d3ab97f8c8153d8616765685
+contentHash=4577aeba551e9505fc604f1bd293b13f8798e69f12c8de7c5658ea70c63001f7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8182534be1bb6a80f8c60f30e82d003d4088f11db108eb16590e3b60e6442bb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния54:The noun naming what exists is in the nominative case.1;57:The noun naming what exists is in the prepositional case.
+shippedText=The noun naming what exists is in the prepositional case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f40fc9faaa639adf3f28daa857d4cab7ad324232d3ab97f8c8153d8616765685
+contentHash=6d2d9ece8439c3bd93649b280e21de596665829a47234efb73a4b85083802b14
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 204cd848f2de4dd972e2fbd9340932583579adb1e93ef1e20d4e0d2b47ba7b99
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-3-feedback
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+shippedText=The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=06dc4edca73b43d1b0dc9763a561b5f2880271884c88c77927c505011fef731f
+contentHash=8e033c833619a8ee3de065ab5c60fe343230f76ffd132f76627cfb09d08a881d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 89f9fe373e5123d1f8b69f8efc710be1696650df955335fe8cafb1e6e8a86d35
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-3-prompt
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Which case names what exists in this supplied positive line?
+shippedText=Which case names what exists in this supplied positive line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1416e859444a94247b63fb59fec7b8ab9af4164187db4e4aab00176f78088a18
+contentHash=5cf81d3515e6e3ce819fd1324e4460f5ffc81b67f8641baa2cf2c57c90cae054
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84593f3a8adcedb69ab7e80e433d9b170c0230497b82d504b246949284a2160b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-3-rationale
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+This alternative confuses the location phrase with the noun naming what exists.
+shippedText=This alternative confuses the location phrase with the noun naming what exists.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b9bb5fe5215068c7ffdc156a93eadc3e96e3758efb61273099dff7587bda6711
+contentHash=568e2c766bca2b0341f42094e0ca16720facaa1798976715c35ba711b5a247a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u8-agreement-2`
 
@@ -5500,6 +11348,76 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u8-agreement-transfer-native-plural`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0956cf31b01f2f2085946111b44da8728693d6622feb73f90b96c940735377df
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379
+sourceRevision=4292379
+sourceRecordId=adjectives-independent-blue:===Soft endings===
+One rather rare exception to the above rules is if the adj
+originalSourceText====Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+shippedText=синие
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=472f310b08dfe456837a47126e81dc2a40dc0c19551245589230eba3b43ce894
+contentHash=f6eb827345e7f8371429a0162da535ceaf5fecc606f5a4c7eeda5fa378cd1fd1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u8-agreement-transfer-native-singular`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb6f23a918497c36a2dc37cd156807eaf0fc64eb1948d57ad74c752144034fcd
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379
+sourceRevision=4292379
+sourceRecordId=adjectives-independent-blue:===Soft endings===
+One rather rare exception to the above rules is if the adj
+originalSourceText====Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+shippedText=синий
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=472f310b08dfe456837a47126e81dc2a40dc0c19551245589230eba3b43ce894
+contentHash=c65b1a8fccbf3115732e93bc6aa7ee896d431417c4f15282fa659e68025e469c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u8-availability-rem`
 
 - Objectives: obj-u8-availability
@@ -5931,6 +11849,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-8-11162`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69fcd9a191951776c64e1d120b8b8a1cdb5ea0fe2c6cefe8d9d5ef4a81147b33
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 8 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-8-11163`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58a86c8b5e88702ec9fdd44528d1bc4a29ae00afe1aafbb7adf3e59eb97c42ca
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-8-11164`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4adbe3e3f7552d5a8cd5e47ed1d83efbe4b21a977b5a3bdf02eba0e2cefb7f1b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 8 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-8-11165`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9132eef5b084c85385596dd6c090e07f45f45ed37626319dfe629b56c19142d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-8-11166`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 883b7e5578f64b5a78a354dc1487b922d1fe7af82cdb0aad0604b5ed3b4b5f20
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 8 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-8-11167`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7abfedad01c419e435302cb96ddefc387a530184189c6078cbca5aa012c7439
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-8-11168`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd3d6f531e4216f0bbb60c2af8ceffcf90e8404b50b4ebdbfc48bd6f46052b9d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 8 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-8-26`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b92282da8891deb7fbba009e9e12e27049fea953c119ce7ef17f7a6f4c239bb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 8: printed pages 81-91. PDF indexes 93-103 are file locators, not printed pages. Observed section locators: §8.1 p81 (PDF 93); §8.2 p81 (PDF 93); §8.3 p82 (PDF 94); §8.4 p82 (PDF 94); §8.5 p83 (PDF 95); §8.6 p83 (PDF 95); §8.7 p84 (PDF 96); §8.8 p84 (PDF 96); §8.9 p85 (PDF 97); §8.10 p86 (PDF 98); §8.11 p87 (PDF 99); §8.12 p88 (PDF 100). Observed exercise locators: 8/1 p85/PDF97; 8/2 p85/PDF97; 8/4 p89/PDF101. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-8-27`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6a09367b5ebd24a938ee0737e666239bedd2321bcb4548d53ec262e4d3b525b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 8 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-8-28`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9048a3f41b69c3e0ef484b60e4d23a611a2b064f6b6a331fcf070941e723bd5e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u8-086`
 
 - Objectives: none
@@ -6312,6 +12360,21 @@ CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -6353,6 +12416,20 @@ permitsAppUse=true
 
 src-wikibooks-russian-cc-by-sa
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -6448,6 +12525,7 @@ permitsAppUse=true
 - `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-3`
 - `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-4`
 - `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-5`
+- `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-6`
 - `obj-u8-agreement` EXAMPLE `ex-u8-agreement-0`
 - `obj-u8-agreement` EXAMPLE `ex-u8-agreement-1`
 - `obj-u8-agreement` EXAMPLE `ex-or-u8-agreement-2`
@@ -6467,8 +12545,6 @@ permitsAppUse=true
 - `obj-u8-availability` INSTRUCTION `u8-st-teach-availability-3`
 - `obj-u8-availability` EXAMPLE `ex-u8-availability-0`
 - `obj-u8-availability` EXAMPLE `ex-u8-availability-1`
-- `obj-u8-availability` EXAMPLE `ex-u8-availability-2`
-- `obj-u8-availability` EXAMPLE `ex-u8-availability-3`
 - `obj-u8-availability` PRACTICE `u8-st-guided-availability-1`
 - `obj-u8-availability` CHECK `u8-i-availability-1`
 - `obj-u8-availability` CHECK `u8-i-availability-2`
@@ -6487,8 +12563,6 @@ permitsAppUse=true
 - `u8-st-teach-plural-1` EXAMPLE `ex-or-u8-plural-0`
 - `u8-st-teach-plural-1` EXAMPLE `ex-or-u8-plural-1`
 - `u8-st-teach-plural-1` REFERENCE `ref-u610-attribution`
-- `u8-st-guided-plural-1` REMEDIATION `u8-st-rem-plural`
-- `u8-st-guided-plural-1` ITEM `u8-g-plural-0`
 - `u8-st-teach-plural-2` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-plural-3` EXAMPLE `ex-or-u8-plural-2`
 - `u8-st-teach-plural-3` EXAMPLE `ex-or-u8-plural-3`
@@ -6508,8 +12582,22 @@ permitsAppUse=true
 - `u8-st-teach-plural-8` EXAMPLE `ex-or-u8-plural-12`
 - `u8-st-teach-plural-8` EXAMPLE `ex-or-u8-plural-13`
 - `u8-st-teach-plural-8` REFERENCE `ref-u610-attribution`
+- `u8-st-guided-plural-1` REMEDIATION `u8-st-rem-plural`
+- `u8-st-guided-plural-1` ITEM `u8-g-plural-0`
 - `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-0`
 - `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-1`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-2`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-3`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-4`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-5`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-6`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-7`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-8`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-9`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-10`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-11`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-12`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-13`
 - `u8-st-check-plural` REMEDIATION `u8-st-rem-plural`
 - `u8-st-check-plural` ITEM `u8-i-plural-1`
 - `u8-st-check-plural` ITEM `u8-i-plural-2`
@@ -6521,8 +12609,6 @@ permitsAppUse=true
 - `u8-st-teach-spelling-1` EXAMPLE `ex-u8-spelling-0`
 - `u8-st-teach-spelling-1` EXAMPLE `ex-or-u8-spelling-1`
 - `u8-st-teach-spelling-1` REFERENCE `ref-u610-attribution`
-- `u8-st-guided-spelling-1` REMEDIATION `u8-st-rem-spelling`
-- `u8-st-guided-spelling-1` ITEM `u8-g-spelling-0`
 - `u8-st-teach-spelling-2` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-spelling-3` EXAMPLE `ex-or-u8-spelling-2`
 - `u8-st-teach-spelling-3` EXAMPLE `ex-or-u8-spelling-3`
@@ -6532,8 +12618,15 @@ permitsAppUse=true
 - `u8-st-teach-spelling-4` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-spelling-5` EXAMPLE `ex-or-u8-spelling-6`
 - `u8-st-teach-spelling-5` REFERENCE `ref-u610-attribution`
+- `u8-st-guided-spelling-1` REMEDIATION `u8-st-rem-spelling`
+- `u8-st-guided-spelling-1` ITEM `u8-g-spelling-0`
 - `u8-st-rem-spelling` EXAMPLE `ex-u8-spelling-0`
 - `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-1`
+- `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-2`
+- `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-3`
+- `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-4`
+- `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-5`
+- `u8-st-rem-spelling` EXAMPLE `ex-or-u8-spelling-6`
 - `u8-st-check-spelling` REMEDIATION `u8-st-rem-spelling`
 - `u8-st-check-spelling` ITEM `u8-i-spelling-1`
 - `u8-st-check-spelling` ITEM `u8-i-spelling-2`
@@ -6567,8 +12660,6 @@ permitsAppUse=true
 - `u8-st-teach-agreement-1` EXAMPLE `ex-u8-agreement-0`
 - `u8-st-teach-agreement-1` EXAMPLE `ex-u8-agreement-1`
 - `u8-st-teach-agreement-1` REFERENCE `ref-u610-attribution`
-- `u8-st-guided-agreement-1` REMEDIATION `u8-st-rem-agreement`
-- `u8-st-guided-agreement-1` ITEM `u8-g-agreement-0`
 - `u8-st-teach-agreement-2` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-agreement-3` EXAMPLE `ex-or-u8-agreement-2`
 - `u8-st-teach-agreement-3` EXAMPLE `ex-or-u8-agreement-3`
@@ -6579,22 +12670,30 @@ permitsAppUse=true
 - `u8-st-teach-agreement-5` EXAMPLE `ex-or-u8-agreement-6`
 - `u8-st-teach-agreement-5` EXAMPLE `ex-or-u8-agreement-7`
 - `u8-st-teach-agreement-5` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-agreement-6` EXAMPLE `ex-u8-agreement-0`
+- `u8-st-teach-agreement-6` REFERENCE `ref-u610-attribution`
+- `u8-st-guided-agreement-1` REMEDIATION `u8-st-rem-agreement`
+- `u8-st-guided-agreement-1` ITEM `u8-g-agreement-0`
 - `u8-st-rem-agreement` EXAMPLE `ex-u8-agreement-0`
 - `u8-st-rem-agreement` EXAMPLE `ex-u8-agreement-1`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-2`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-3`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-4`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-5`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-6`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-7`
 - `u8-st-check-agreement` REMEDIATION `u8-st-rem-agreement`
 - `u8-st-check-agreement` ITEM `u8-i-agreement-1`
 - `u8-st-check-agreement` ITEM `u8-i-agreement-2`
 - `u8-st-check-agreement` ITEM `u8-i-agreement-3`
 - `u8-s-availability` OBJECTIVE `obj-u8-availability`
 - `u8-st-teach-availability-1` EXAMPLE `ex-u8-availability-0`
-- `u8-st-teach-availability-1` EXAMPLE `ex-u8-availability-1`
 - `u8-st-teach-availability-1` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-availability-2` EXAMPLE `ex-u8-availability-1`
+- `u8-st-teach-availability-2` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-availability-3` REFERENCE `ref-u610-attribution`
 - `u8-st-guided-availability-1` REMEDIATION `u8-st-rem-availability`
 - `u8-st-guided-availability-1` ITEM `u8-g-availability-0`
-- `u8-st-teach-availability-2` REFERENCE `ref-u610-attribution`
-- `u8-st-teach-availability-3` EXAMPLE `ex-u8-availability-2`
-- `u8-st-teach-availability-3` EXAMPLE `ex-u8-availability-3`
-- `u8-st-teach-availability-3` REFERENCE `ref-u610-attribution`
 - `u8-st-rem-availability` EXAMPLE `ex-u8-availability-0`
 - `u8-st-rem-availability` EXAMPLE `ex-u8-availability-1`
 - `u8-st-check-availability` REMEDIATION `u8-st-rem-availability`
@@ -6603,6 +12702,192 @@ permitsAppUse=true
 - `u8-st-check-availability` ITEM `u8-i-availability-3`
 - `u8-s-book` OBJECTIVE `obj-u8-book`
 - `u8-st-book-work` REFERENCE `ref-u610-attribution`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-29`
+- `obj-u8-irregular` PROVENANCE `prov-ca-8-30`
+- `obj-u8-agreement` PROVENANCE `prov-ca-8-31`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-324`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-325`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-326`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-327`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-328`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-329`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-330`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-331`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-332`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-333`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-334`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-335`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-336`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-337`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-338`
+- `obj-u8-spelling` PROVENANCE `prov-ca-8-339`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-g-agreement-0-1`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-g-agreement-0-3`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-g-irregular-0-1`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-g-irregular-0-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-g-plural-0-0`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-g-plural-0-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-g-plural-0-3`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-i-agreement-1-1`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-i-agreement-1-3`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-i-agreement-2-1`
+- `obj-u8-agreement` PROVENANCE `prov-ca-declension-u8-i-agreement-2-3`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-1-1`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-1-3`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-2-1`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-2-3`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-3-1`
+- `obj-u8-irregular` PROVENANCE `prov-ca-declension-u8-i-irregular-3-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-1-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-1-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-2-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-2-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-3-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-3-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-4-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-4-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-5-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-5-3`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-6-1`
+- `obj-u8-plural` PROVENANCE `prov-ca-declension-u8-i-plural-6-3`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-1-0`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-1-1`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-1-3`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-2-0`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-2-1`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-2-3`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-3-0`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-3-1`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-3-3`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-0`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-1`
+- `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-3`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-0`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-1`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-2`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-feedback`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-prompt`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-rationale`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-0`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-1`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-2`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-feedback`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-prompt`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-rationale`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-0`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-1`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-2`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-feedback`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-prompt`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-rationale`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-0`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-1`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-2`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-feedback`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-prompt`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-rationale`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-check-availability-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-guided-availability-1-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-rem-availability-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-rem-availability-title`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-1-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-1-title`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-2-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-2-title`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-3-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-3-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-item-feedback`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-item-prompt`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-item-rationale`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-remediation-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-1-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-1-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-2-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-2-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-3-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-3-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-4-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-4-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-5-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-5-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-6-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-6-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-0`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-1`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-2`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-0-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-0-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-1-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-1-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-2-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-2-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-3-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-3-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-4-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-4-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-5-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-5-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-6-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-6-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-7-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-7-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-objective-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-rem-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-rem-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-u8-st-check-plural-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-u8-st-guided-plural-1-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-adjective-feature`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-check-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-guided-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-noun-feature`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-objective-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-rem-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-rem-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-1-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-1-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-2-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-2-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-3-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-3-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-4-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-4-title`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-5-body`
+- `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-5-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-check-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-guided-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-objective-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-repair-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-repair-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-1-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-1-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-2-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-2-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-3-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-3-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-0`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-1`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-2`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-feedback`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-prompt`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-rationale`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-0`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-1`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-2`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-feedback`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-prompt`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-rationale`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-0`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-1`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-2`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-feedback`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-prompt`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-rationale`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-0`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-1`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-2`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-feedback`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-prompt`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-rationale`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-2`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-2-gloss`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-3`
@@ -6689,6 +12974,8 @@ permitsAppUse=true
 - `obj-u8-spelling` PROVENANCE `prov-ex-u8-spelling-0-ru`
 - `obj-u8-agreement` PROVENANCE `prov-u8-agreement-rem`
 - `obj-u8-agreement` PROVENANCE `prov-u8-agreement-rem-r0`
+- `obj-u8-agreement` PROVENANCE `prov-u8-agreement-transfer-native-plural`
+- `obj-u8-agreement` PROVENANCE `prov-u8-agreement-transfer-native-singular`
 - `obj-u8-availability` PROVENANCE `prov-u8-availability-rem`
 - `obj-u8-availability` PROVENANCE `prov-u8-availability-x-0`
 - `obj-u8-availability` PROVENANCE `prov-u8-availability-x-1`

@@ -11,12 +11,12 @@ Unit 4 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: 5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c
+- Curriculum source commit: e6db0bdfe0bbb40edf190623e2123014946f305b
+- Unit content-review SHA-256: c440d047f575da49ba463f026f0f66ebb7f953f38cccecc30b824add2396d395
 - Mapping-package SHA-256: 889c15ed7bf5d3189af391210f35bae5c57a9fd9c9dc3b3a439e8ebc1143b6fd
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 5c83907c84d7bb8caaced3455abde7e30c8c9e415c31c03d807ca67cc33cf5df
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: 52acf038bf862fed370d6e22c2a3de7783eaa18af2a310ee123c16fefeeafb73
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 4.
 
 ### UNIT `unit-4`
 
-- Objectives: obj-u4-pronouns, obj-u4-present, obj-u4-stress, obj-u4-nominative, obj-u4-book
+- Objectives: obj-u4-pronouns, obj-u4-present, obj-u4-stress, obj-u4-nominative, obj-u4-book, obj-u4-nominative-gloss-reference
 - Sessions: u4-s-orient, u4-s-pronouns, u4-s-present, u4-s-stress, u4-s-nominative, u4-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e90352df437fea9f534d48627e8c7b92d6582845a016a8f1af0a32553d073402
+- Content hash: 37d54f35160017ea881c86426339684a7b5e4a0ca92080296f2a956d7aec4077
 
 number=4
 title=Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases
@@ -96,13 +96,13 @@ estimatedMinutes=66
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7da0b4f2ceae8da0d7700b3f226da496d4e834c36b79b74acb737fa36ae8cdbd
+- Content hash: f8340af558dca392b8ed920a8995a2340f5256defcd5bd9a7bd7d00f2635067b
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=14
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u4-pronouns`
@@ -132,14 +132,14 @@ remediation=u4-st-rem-pronouns
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a45ffc99673943001bcfce2f2ced11552d8a483bb3ec9c9f1d341bbdf62a9651
+- Content hash: a0b48aa2057b8d3a04d33bd43584d2f44a06ba32a37efc99733304da82760451
 
 title=Recognize admitted present-tense forms
 kind=RECOGNITION
 unitNumber=4
-instruction=u4-st-orient,u4-st-teach-present-1,u4-st-teach-present-2,u4-st-teach-present-3,u4-st-teach-present-4,u4-st-teach-present-5,u4-st-teach-present-6,u4-st-teach-present-7
-examples=ex-u4-verb-читать,ex-u4-verb-делать
-practice=u4-st-guided-present-2,u4-st-guided-present-4
+instruction=u4-st-orient,u4-st-teach-present-1,u4-st-teach-present-2,u4-st-teach-present-3,u4-st-teach-present-4,u4-st-teach-present-5,u4-st-teach-present-6,u4-st-teach-present-7,u4-st-teach-present-говорить,u4-st-teach-present-видеть,u4-st-teach-present-писать,u4-st-teach-present-идти
+examples=ex-u4-verb-читать,ex-u4-verb-делать,ex-u4-present-говорить-мы,ex-u4-present-видеть-он,ex-u4-present-писать-вы,ex-u4-present-идти-они
+practice=u4-st-guided-present-2,u4-st-guided-present-4,u4-st-guided-present-говорить,u4-st-guided-present-видеть,u4-st-guided-present-писать,u4-st-guided-present-идти
 checks=u4-i-verb-говорить-мы,u4-i-verb-видеть-он,u4-i-verb-писать-вы,u4-i-verb-идти-они
 remediation=u4-st-rem-present
 
@@ -170,15 +170,15 @@ remediation=u4-st-rem-stress
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 22f10f19825ed15fe01616b7416d33797dbcb099623c916bc2e03698b7f7ee99
+- Content hash: e9b793b595259f7bff49303267091641d0922ee3dcf6dd32fed4280bb4e8b65d
 
-title=Recognize the admitted nominative role
+title=Recognize the nominative subject in supplied clauses
 kind=RECOGNITION
 unitNumber=4
 instruction=u4-st-orient,u4-st-teach-nominative-1,u4-st-teach-nominative-2,u4-st-teach-nominative-3
-examples=ex-u4-nom-muzh,ex-u4-nom-poezd
-practice=u4-st-teach-nominative-1
-checks=u4-i-nom-muzh,u4-i-nom-poezd
+examples=ex-u4-nom-muzh,ex-u4-nom-poezd,ex-u4-nom-student
+practice=u4-st-guided-nominative
+checks=u4-i-nom-role-train,u4-i-nom-role-student
 remediation=u4-st-rem-nominative
 
 ### OBJECTIVE `obj-u4-book`
@@ -199,6 +199,25 @@ examples=
 practice=
 checks=
 remediation=
+
+### OBJECTIVE `obj-u4-nominative-gloss-reference`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f344768ba26ed73b174d93aab7c051c8a0396d1d671cd5dcfbbb7acd290d92eb
+
+title=Optional sentence meanings
+kind=GUIDANCE
+unitNumber=4
+instruction=u4-st-teach-nominative-3
+examples=ex-u4-nom-muzh,ex-u4-nom-poezd,ex-u4-nom-student
+practice=
+checks=
+remediation=u4-st-rem-optional-nominative-gloss
 
 ### SESSION `u4-s-orient`
 
@@ -392,12 +411,12 @@ remediationStepId=u4-st-rem-pronouns
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e74668a5006c12f8d308fe4f5d243a467c7bcfe8679a5995ca347614f44befc8
+- Content hash: 282570c77cbff99c79c1c1df417d105c14ab9e1d56f7103deb301413fdb69f89
 
 title=Recognize admitted present-tense forms
 estimatedMinutes=12
 objectives=obj-u4-present
-steps=u4-st-teach-present-1,u4-st-teach-present-2,u4-st-guided-present-2,u4-st-teach-present-3,u4-st-teach-present-4,u4-st-guided-present-4,u4-st-teach-present-5,u4-st-teach-present-6,u4-st-teach-present-7,u4-st-rem-present,u4-st-check-present
+steps=u4-st-teach-present-1,u4-st-teach-present-2,u4-st-guided-present-2,u4-st-teach-present-3,u4-st-teach-present-4,u4-st-guided-present-4,u4-st-teach-present-5,u4-st-teach-present-6,u4-st-teach-present-7,u4-st-teach-present-говорить,u4-st-teach-present-видеть,u4-st-teach-present-писать,u4-st-teach-present-идти,u4-st-guided-present-говорить,u4-st-guided-present-видеть,u4-st-guided-present-писать,u4-st-guided-present-идти,u4-st-rem-present,u4-st-check-present
 
 ### STEP `u4-st-teach-present-1`
 
@@ -597,6 +616,182 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u4-st-teach-present-говорить`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e87e56651c7783f5a58e307a9d7882cce313a973efdd34f3af3eac9617da7e92
+
+kind=TEACH
+title=Match we in the supplied speaking forms
+body=The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+dominantAction=Continue
+references=ref-u35-attribution
+items=
+examples=ex-u4-present-говорить-мы
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u4-st-teach-present-видеть`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: bee14dbd9a0cc0cc4c9f0a1e4b5a41fcdbf162fac7df465d30958ddc698c9b50
+
+kind=TEACH
+title=Match he in the supplied seeing forms
+body=The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+dominantAction=Continue
+references=ref-u35-attribution
+items=
+examples=ex-u4-present-видеть-он
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u4-st-teach-present-писать`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 91f7351258223a341896cc5fe5b93b3759469e5da173c5d0460aed61382d0779
+
+kind=TEACH
+title=Match you (plural) in the supplied writing forms
+body=The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+dominantAction=Continue
+references=ref-u35-attribution
+items=
+examples=ex-u4-present-писать-вы
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u4-st-teach-present-идти`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5ca40052b98c65bb846ab101bb0127eecb7801f64e5be8e9ff40d84d00f1863e
+
+kind=TEACH
+title=Match they in the supplied going forms
+body=The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+dominantAction=Continue
+references=ref-u35-attribution
+items=
+examples=ex-u4-present-идти-они
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u4-st-guided-present-говорить`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 198c8cfbeac5c94d38db718042159e42f69cf9d2cfd91b945b68c1989efb851e
+
+kind=GUIDED
+title=Practise I before the independent we check
+body=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+dominantAction=Continue
+references=
+items=u4-g-present-говорить-я
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-present
+
+### STEP `u4-st-guided-present-видеть`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 09937345805c0cfaa242c504699f4bc1f1d700a73df20bbb036bdff6916a6f96
+
+kind=GUIDED
+title=Practise I before the independent he check
+body=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+dominantAction=Continue
+references=
+items=u4-g-present-видеть-я
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-present
+
+### STEP `u4-st-guided-present-писать`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 43185b313d807c94c76d823a886dff871966727834b623064d804b97b923b0ff
+
+kind=GUIDED
+title=Practise I before the independent you (plural) check
+body=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+dominantAction=Continue
+references=
+items=u4-g-present-писать-я
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-present
+
+### STEP `u4-st-guided-present-идти`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 47708436122c82cde5676cee0498cda4fa9e356f223c6f008b0602bbc2f06e4f
+
+kind=GUIDED
+title=Practise I before the independent they check
+body=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+dominantAction=Continue
+references=
+items=u4-g-present-идти-я
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-present
+
 ### STEP `u4-st-rem-present`
 
 - Objectives: obj-u4-present
@@ -605,15 +800,35 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bf53fd0beac00659da47faffd058bf0b9e9de45288b63c088cdabe7e7904341b
+- Content hash: 55cb693153a4506e7185f8e44226a620a2e42bd37aa8457eb71035e06d3b4e16
 
 kind=REMEDIATE
 title=Remediation
-body=Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.
+body=The frozen page says: So, to form the present tense, you simply take the ''imperfective aspect'' of the verb and add the appropriate endings.
+
+These fields are copied from the admitted чита́ть row. Row glossed I: чита́ю. Row glossed you: чита́ешь. Row glossed he: чита́ет. 
+
+These fields are copied from the admitted чита́ть row. Row glossed we: чита́ем. Row glossed you (plural): чита́ете. Row glossed they: чита́ют. 
+
+де́лать — make. The admitted row records де́лаю for the row glossed I.
+
+These infinitives are copied from admitted rows. знать — know. рабо́тать — work. понима́ть — understand. слу́шать — listen. 
+
+These infinitives are copied from admitted rows. жить — live. говори́ть — to speak. ви́деть — see. смотре́ть — look. 
+
+These infinitives are copied from admitted rows. писа́ть — write. идти́ — go. 
+
+The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
 dominantAction=Continue
 references=
 items=
-examples=ex-u4-verb-читать,ex-u4-verb-делать
+examples=ex-u4-verb-читать,ex-u4-verb-делать,ex-u4-present-говорить-мы,ex-u4-present-видеть-он,ex-u4-present-писать-вы,ex-u4-present-идти-они
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -746,32 +961,32 @@ remediationStepId=u4-st-rem-stress
 
 ### SESSION `u4-s-nominative`
 
-- Objectives: obj-u4-nominative
+- Objectives: obj-u4-nominative, obj-u4-nominative-gloss-reference
 - Sessions: u4-s-nominative
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8e8a3c8e79d2510edea61680999fa52ed4b098757bb9f56ff1b1c87d6f38b8a2
+- Content hash: de2ff59f82f20cc5bbc5f3e8934711cf0a2f9e9adb38a82ebaa789ebe12e766e
 
 title=Recognize the admitted nominative role
 estimatedMinutes=12
-objectives=obj-u4-nominative
-steps=u4-st-teach-nominative-1,u4-st-teach-nominative-2,u4-st-teach-nominative-3,u4-st-rem-nominative,u4-st-check-nominative
+objectives=obj-u4-nominative,obj-u4-nominative-gloss-reference
+steps=u4-st-teach-nominative-1,u4-st-teach-nominative-2,u4-st-teach-nominative-3,u4-st-guided-nominative,u4-st-rem-nominative,u4-st-check-nominative,u4-st-optional-nominative-gloss,u4-st-rem-optional-nominative-gloss
 
 ### STEP `u4-st-teach-nominative-1`
 
-- Objectives: obj-u4-nominative
+- Objectives: obj-u4-nominative, obj-u4-nominative-gloss-reference
 - Sessions: u4-s-nominative
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3494469bb822491bf998aa11d420528398525c38da6243223a45bf76b7ffcf2b
+- Content hash: e28067a50734cf29f7959839bc8a5abc5aca6a4ac3a35ba828fc427adc8793be
 
 kind=TEACH
-title=The count named on the frozen page
-body=The frozen page says: Russian has six cases.
+title=Identify the noun’s case role
+body=In the supplied Муж говорит, the husband is the subject and the talking verb states its action. The subject noun is nominative. Recognizing the English sentence meaning is useful, but the role check asks whether the noun is a subject or direct object. Do not guess nominative merely because a case is unfamiliar.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
@@ -783,17 +998,17 @@ remediationStepId=
 
 ### STEP `u4-st-teach-nominative-2`
 
-- Objectives: obj-u4-nominative
+- Objectives: obj-u4-nominative, obj-u4-nominative-gloss-reference
 - Sessions: u4-s-nominative
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 90755d3588407ca828e6d195456a0b0dd5f97cc3374157c6b7f97cb088bb35ca
+- Content hash: 9dacab699b8cdf62ca6e7d6b35c457783187f6aa57f9c0230224d547537fd2e1
 
 kind=TEACH
-title=The default form on the frozen page
-body=The frozen page says: The nominative case is the default case of a word, as found in dictionaries and when no other case is specifically used.
+title=Separate the subject from its description
+body=In Поезд старый, the train is the subject noun and old is its predicate description. This present property clause has no overt Russian copula. The noun’s case role is nominative subject, not accusative direct object. A dictionary-looking noun or familiar translation alone does not identify its role in every construction.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
@@ -805,43 +1020,69 @@ remediationStepId=
 
 ### STEP `u4-st-teach-nominative-3`
 
-- Objectives: obj-u4-nominative
+- Objectives: obj-u4-nominative, obj-u4-nominative-gloss-reference
 - Sessions: u4-s-nominative
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b8b274ecce985afcbdacf60956d6067c070a6703d7a8a562dcc069c134b58706
+- Content hash: 39622190fcdb9dd1c5609eb50ba009ed2745db4290ea34ef651f8332fb475d37
 
 kind=TEACH
-title=Two admitted examples
-body=These examples are exact frozen excerpts. Муж говорит — The husband is talking. Поезд старый — The train is old. 
+title=Apply the distinction to a different supplied noun
+body=Студент новый supplies a second independent property clause: the student is the subject noun, and new describes that subject. Its case role is nominative subject. Keep Муж говорит — The husband is talking and Поезд старый — The train is old as correct sentence meanings; the optional reference choices do not demonstrate this case role. These supplied examples are deliberately taught, not unseen evidence or unrestricted productive case use. Other constructions have nominative predicate nouns; not every nominative noun is a subject.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
-examples=ex-u4-nom-muzh,ex-u4-nom-poezd
+examples=ex-u4-nom-muzh,ex-u4-nom-poezd,ex-u4-nom-student
 unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u4-st-rem-nominative`
+### STEP `u4-st-guided-nominative`
 
-- Objectives: obj-u4-nominative
+- Objectives: obj-u4-nominative, obj-u4-nominative-gloss-reference
 - Sessions: u4-s-nominative
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3e1dea1e6004548eed82a9663939f1c82e92599174ce7188bd29676bd12ef067
+- Content hash: a3495f3e39920939bc177771ebeb67760de1beeb739a6f82b06ccbcff98af4cb
+
+kind=GUIDED
+title=Guided nominative subject
+body=Choose the subject noun’s case role in the supplied clause.
+dominantAction=Check
+references=
+items=u4-g-nom-role
+examples=ex-u4-nom-muzh,ex-u4-nom-poezd
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-nominative
+
+### STEP `u4-st-rem-nominative`
+
+- Objectives: obj-u4-nominative, obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d0a46f67be9fb4d18d3e39ffab19ee1967814aa05d2c5a807699aeb910431f25
 
 kind=REMEDIATE
-title=Remediation
-body=Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.
+title=Review the supplied nominative subjects
+body=In the supplied Муж говорит, the husband is the subject and the talking verb states its action. The subject noun is nominative. Recognizing the English sentence meaning is useful, but the role check asks whether the noun is a subject or direct object. Do not guess nominative merely because a case is unfamiliar.
+
+In Поезд старый, the train is the subject noun and old is its predicate description. This present property clause has no overt Russian copula. The noun’s case role is nominative subject, not accusative direct object. A dictionary-looking noun or familiar translation alone does not identify its role in every construction.
+
+Студент новый supplies a second independent property clause: the student is the subject noun, and new describes that subject. Its case role is nominative subject. Keep Муж говорит — The husband is talking and Поезд старый — The train is old as correct sentence meanings; the optional reference choices do not demonstrate this case role. These supplied examples are deliberately taught, not unseen evidence or unrestricted productive case use. Other constructions have nominative predicate nouns; not every nominative noun is a subject.
 dominantAction=Continue
 references=
 items=
-examples=ex-u4-nom-muzh,ex-u4-nom-poezd
+examples=ex-u4-nom-muzh,ex-u4-nom-poezd,ex-u4-nom-student
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -849,25 +1090,69 @@ remediationStepId=
 
 ### STEP `u4-st-check-nominative`
 
-- Objectives: obj-u4-nominative
+- Objectives: obj-u4-nominative, obj-u4-nominative-gloss-reference
 - Sessions: u4-s-nominative
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2ac8b94c051a80cc3894632ec3a398ed9feef3a2100a18dda45ea603e508a9bd
+- Content hash: b8015d1ba60af020439ba439ce367dac5ca36eeec6758b2ebaae86c05cb8b2b9
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Identify the case role in both supplied independent contexts. A miss returns to all teaching and examples.
 dominantAction=Continue
 references=
-items=u4-i-nom-muzh,u4-i-nom-poezd
+items=u4-i-nom-role-train,u4-i-nom-role-student
 examples=
 unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=u4-st-rem-nominative
+
+### STEP `u4-st-optional-nominative-gloss`
+
+- Objectives: obj-u4-nominative, obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: dd861dee0df2e42944d65158a3afa7e3df987b34422199b7b53bbb4651441080
+
+kind=GUIDED
+title=Optional sentence meanings
+body=Review the supplied sentence meanings alongside the case-role lesson.
+dominantAction=Continue
+references=
+items=u4-g-nominative-1,u4-i-nom-muzh,u4-i-nom-poezd
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-optional-nominative-gloss
+
+### STEP `u4-st-rem-optional-nominative-gloss`
+
+- Objectives: obj-u4-nominative, obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9bcccf1189e77623fa2e4dc50d27fbaeda8caae6e57e685550369be02956f520
+
+kind=REMEDIATE
+title=Review optional sentence meanings
+body=Муж говорит — The husband is talking. Поезд старый — The train is old.
+dominantAction=Continue
+references=
+items=
+examples=ex-u4-nom-muzh,ex-u4-nom-poezd
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
 
 ### SESSION `u4-s-book`
 
@@ -877,12 +1162,12 @@ remediationStepId=u4-st-rem-nominative
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bdb54047a22b73cd98e8942b8c71c64be6deeeb6a46bd29dcfb43cb26b422eb0
+- Content hash: b98e0ee6f85c53120fce704da62276ea37460d192ef61f83d0a8ded967f1444c
 
 title=Self-attest Lesson 4
 estimatedMinutes=10
 objectives=obj-u4-book
-steps=u4-st-book-work,u4-st-book
+steps=u4-st-book-work,u4-st-book,u4-st-anki-direction,u4-st-binder-direction,u4-st-tutor-direction,u4-st-cumulative-direction
 
 ### STEP `u4-st-book-work`
 
@@ -892,7 +1177,7 @@ steps=u4-st-book-work,u4-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cca59187e7b4689cd66b6855dae3d8bc3f3185cfd99347de5fe700ff8d9d2d96
+- Content hash: 56e11c43da3ff4ac7f92273e73e549dbc7d8b72c75dcc3b3bcf7605291708799
 
 kind=BOOK
 title=Work Lesson 4 in your copy
@@ -902,7 +1187,7 @@ references=ref-book-topics,ref-u35-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 4 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 4: printed pages 36-45. PDF indexes 48-57 are file locators, not printed pages. Observed section locators: §4.1 p36 (PDF 48); §4.2 p36 (PDF 48); §4.3 p37 (PDF 49); §4.4 p37 (PDF 49); §4.5 p38 (PDF 50); §4.6 p39 (PDF 51); §4.7 p40 (PDF 52); §4.8 p40 (PDF 52); §4.9 p41 (PDF 53); §4.10 p41 (PDF 53); §4.11 p42 (PDF 54); §4.12 p42 (PDF 54); §4.13 p43 (PDF 55). Observed exercise locators: 4/1 p44/PDF56; 4/2 p45/PDF57; 4/3 p45/PDF57. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -914,7 +1199,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b00c1e321c4a91179f7f9c8e9bba1a2a4ac67e869c7fcbdc0be04e1e1a5049b9
+- Content hash: 1705e496bc1ecd42b65a68b75f5928b751758b60f7f7e1b75645ef028ceb7a1b
 
 kind=BOOK
 title=Record Lesson 4 book work
@@ -924,8 +1209,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 4 work in your copy.
+bookDirection=Owned-book assignment for Lesson 4: printed pages 36-45. PDF indexes 48-57 are file locators, not printed pages. Observed section locators: §4.1 p36 (PDF 48); §4.2 p36 (PDF 48); §4.3 p37 (PDF 49); §4.4 p37 (PDF 49); §4.5 p38 (PDF 50); §4.6 p39 (PDF 51); §4.7 p40 (PDF 52); §4.8 p40 (PDF 52); §4.9 p41 (PDF 53); §4.10 p41 (PDF 53); §4.11 p42 (PDF 54); §4.12 p42 (PDF 54); §4.13 p43 (PDF 55). Observed exercise locators: 4/1 p44/PDF56; 4/2 p45/PDF57; 4/3 p45/PDF57. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u4-st-anki-direction`
+
+- Objectives: obj-u4-book
+- Sessions: u4-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8878a686fb0ecc1782d722f68be3d77b90b9233ade0aab3cf81ddeb7d37a9517
+
+kind=ANKI
+title=Unit 4 AnkiDroid direction
+body=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u4-st-binder-direction`
+
+- Objectives: obj-u4-book
+- Sessions: u4-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b063d879a6199e48d41aa461a2d11ddcc8b9db0d289d83803b0b2cf4c971ea57
+
+kind=BINDER
+title=Unit 4 binder prompt
+body=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u4-st-tutor-direction`
+
+- Objectives: obj-u4-book
+- Sessions: u4-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1b3e23aaebc2457a579c58e857a0e30bf723e9e0c4f192c18fc731d1c79ac974
+
+kind=TUTOR
+title=Unit 4 optional tutor
+body=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u4-st-cumulative-direction`
+
+- Objectives: obj-u4-book
+- Sessions: u4-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1658721277ac71fe41f07df6b8b3078fbab7b30cbe9367733387482c3cc9f8bc
+
+kind=ORIENT
+title=Unit 4 cumulative review
+body=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u4-я`
@@ -987,12 +1360,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 540ed5ccd950da18bcd7263e75c539d4371b437d4a6a4c4f3dcccff5ac6e6006
+- Content hash: 53c82dc67c3fd244476f0b0ace5e7ea768b4e09fa645a6204cafc422a4a1991b
 
 kind=LEXICAL
 letterId=
 display=вы
-note=you (plural)
+note=you, plural, and also the polite or formal singular
 objectiveId=obj-u4-pronouns
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1098,6 +1471,74 @@ note=make
 objectiveId=obj-u4-present
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u4-present-говорить-мы`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8671bdcd39f3f862685c7b68f1d0dd1bdeb5d329f1556b7d54133e797707b45a
+
+kind=LEXICAL
+letterId=
+display=говори́м
+note=we: the supplied form for this entry.
+objectiveId=obj-u4-present
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u4-present-видеть-он`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4795d6c339b14bafb0afeb6ae596d282a3026939bb96579ebaff78604eb0a1a1
+
+kind=LEXICAL
+letterId=
+display=ви́дит
+note=he: the supplied form for this entry.
+objectiveId=obj-u4-present
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u4-present-писать-вы`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93cd46a69054811a2518296399a1acaf209146f934bb9a1253997d87472abf6a
+
+kind=LEXICAL
+letterId=
+display=пи́шете
+note=you (plural): the supplied form for this entry.
+objectiveId=obj-u4-present
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u4-present-идти-они`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb8a5324fcd062ae8b8205421dc61a3db953826267ca004ed0e3d8991d3f241a
+
+kind=LEXICAL
+letterId=
+display=иду́т
+note=they: the supplied form for this entry.
+objectiveId=obj-u4-present
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### EXAMPLE `ex-u4-stress-6f15e9f1`
 
 - Objectives: obj-u4-stress
@@ -1180,6 +1621,23 @@ kind=LEXICAL
 letterId=
 display=Поезд старый
 note=The train is old
+objectiveId=obj-u4-nominative
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u4-nom-student`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-nominative
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0702a0c17adbf56e2d8fe493595c104875cfd159feba841d304fadf4aa6d271f
+
+kind=LEXICAL
+letterId=
+display=Студент новый
+note=The student is new
 objectiveId=obj-u4-nominative
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1267,6 +1725,94 @@ objectiveId=obj-u4-present
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### GUIDED_PRACTICE `u4-g-present-говорить-я`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c025e76729c65cbc60070b4724e1ae6d989fe65c06c664c552a3abf34dfa1a03
+
+kind=SOURCE_FORM
+language=en
+prompt=Which supplied present form belongs to I?
+promptLetter=говори́ть
+options=говори́м | говорю́ | говори́шь | говори́т
+answer=говорю́
+feedback=The supplied I form is говорю́. Compare it with the separately shown we form говори́м.
+objectiveId=obj-u4-present
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=This supplied form belongs to we, while this practice asks for I. |  | This supplied form belongs to you (one familiar person), while this practice asks for I. | This supplied form belongs to he, while this practice asks for I.
+
+### GUIDED_PRACTICE `u4-g-present-видеть-я`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b65e37bf944fa6a77e17cfea9a1553a80d929ffedc0749ad39ee9f254fc6a864
+
+kind=SOURCE_FORM
+language=en
+prompt=Which supplied present form belongs to I?
+promptLetter=ви́деть
+options=ви́дит | ви́жу | ви́дишь | ви́дим
+answer=ви́жу
+feedback=The supplied I form is ви́жу. Compare it with the separately shown he form ви́дит.
+objectiveId=obj-u4-present
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=This supplied form belongs to he, while this practice asks for I. |  | This supplied form belongs to you (one familiar person), while this practice asks for I. | This supplied form belongs to we, while this practice asks for I.
+
+### GUIDED_PRACTICE `u4-g-present-писать-я`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e56c80346b28bc73fafc2fe81b59f8be9a22ae6d6114751b2388b4071bdfd667
+
+kind=SOURCE_FORM
+language=en
+prompt=Which supplied present form belongs to I?
+promptLetter=писа́ть
+options=пи́шете | пишу́ | пи́шешь | пи́шет
+answer=пишу́
+feedback=The supplied I form is пишу́. Compare it with the separately shown you (plural) form пи́шете.
+objectiveId=obj-u4-present
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=This supplied form belongs to you (plural), while this practice asks for I. |  | This supplied form belongs to you (one familiar person), while this practice asks for I. | This supplied form belongs to he, while this practice asks for I.
+
+### GUIDED_PRACTICE `u4-g-present-идти-я`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6371bc2fbe53b475f5381cd1352775c1adbcdf437682e1a893a66b5834ca5f7
+
+kind=SOURCE_FORM
+language=en
+prompt=Which supplied present form belongs to I?
+promptLetter=идти́
+options=иду́т | иду́ | идёшь | идёт
+answer=иду́
+feedback=The supplied I form is иду́. Compare it with the separately shown they form иду́т.
+objectiveId=obj-u4-present
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=This supplied form belongs to they, while this practice asks for I. |  | This supplied form belongs to you (one familiar person), while this practice asks for I. | This supplied form belongs to he, while this practice asks for I.
+
 ### GUIDED_PRACTICE `u4-i-stress-6f15e9f1`
 
 - Objectives: obj-u4-stress
@@ -1285,6 +1831,104 @@ options=1 | 2 | 3 | 4
 answer=2
 feedback=The frozen accented field places the written mark on vowel 2.
 objectiveId=obj-u4-stress
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u4-g-nom-role`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7135e18376ac38165e21f51b3f6b79922a8a611a9918b65ed0c85db7a110cea8
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which case role does the noun naming the husband have in this supplied clause?
+promptLetter=Муж говорит
+options=The noun names the subject, in the nominative case. | The noun names a direct object, in the accusative case.
+answer=The noun names the subject, in the nominative case.
+feedback=In this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+objectiveId=obj-u4-nominative
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | The requested noun is the subject here; the clause does not present it as a direct object.
+testedFeature=NOMINATIVE_CASE_ROLE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u4-g-nom-role
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ca-u4-role-u4-g-nom-role-1
+distractorSourceIds= | prov-ca-u4-role-u4-g-nom-role-2
+distractorDifference= | The requested noun is the subject here; the clause does not present it as a direct object.
+whyAnswerDemonstratesObjective=In this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+contrastMembers=The noun names the subject, in the nominative case. | The noun names a direct object, in the accusative case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u4-role-u4-g-nom-role-0 | prov-ca-u4-role-u4-g-nom-role-1 | prov-ca-u4-role-u4-g-nom-role-2
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u4-g-nominative-1`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b10408b0d7f3aa8c694489244a5d6cba5c5d10936d3307564ac92d151ce9a0a
+
+kind=SOURCE_MEANING
+language=en
+prompt=Which admitted example is the shown sentence?
+promptLetter=Муж говорит
+options=The husband is talking | The train is old
+answer=The husband is talking
+feedback=Муж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.
+objectiveId=obj-u4-nominative-gloss-reference
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u4-i-nom-muzh`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3eed5f979eb6c64e75cd97a9d1f0788ae0b8e6eca7cff5487176d191c86ba86e
+
+kind=SOURCE_MEANING
+language=en
+prompt=Which admitted example is the shown sentence?
+promptLetter=Муж говорит
+options=The husband is talking | The train is old
+answer=The husband is talking
+feedback=The frozen page records this example as: The husband is talking.
+objectiveId=obj-u4-nominative-gloss-reference
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u4-i-nom-poezd`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a2e697d3a3b787c3456dd23a8f5fc38d6e2ba7a6047de9dee3e873662241256
+
+kind=SOURCE_MEANING
+language=en
+prompt=Which admitted example is the shown sentence?
+promptLetter=Поезд старый
+options=The husband is talking | The train is old
+answer=The train is old
+feedback=The frozen page records this example as: The train is old.
+objectiveId=obj-u4-nominative-gloss-reference
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1540,47 +2184,75 @@ objectiveId=obj-u4-stress
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
-### INDEPENDENT_CHECK `u4-i-nom-muzh`
+### INDEPENDENT_CHECK `u4-i-nom-role-train`
 
 - Objectives: obj-u4-nominative
 - Sessions: u4-s-nominative
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d994e57efbe67381f51dcbbcf215fc9fd812720da609ee8f9ec057fca09a1edd
+- Content hash: 3f653ed2530a0d87065ddc91281345e5693847b6e427ce5679cc770dafd25dd6
 
-kind=SOURCE_CASE
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted example is the shown sentence?
-promptLetter=Муж говорит
-options=The husband is talking | The train is old
-answer=The husband is talking
-feedback=The frozen page records this example as: The husband is talking.
-objectiveId=obj-u4-nominative
-containsGeneratedRussian=false
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-
-### INDEPENDENT_CHECK `u4-i-nom-poezd`
-
-- Objectives: obj-u4-nominative
-- Sessions: u4-s-nominative
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 055d0bdb5d8a843aa7554d3c63c8e4bfb6dc9e91702aca36920f91d25891fd78
-
-kind=SOURCE_CASE
-language=en
-prompt=Which admitted example is the shown sentence?
+prompt=Which case role does the noun naming the train have in this supplied clause?
 promptLetter=Поезд старый
-options=The husband is talking | The train is old
-answer=The train is old
-feedback=The frozen page records this example as: The train is old.
+options=The noun names the subject, in the nominative case. | The noun names a direct object, in the accusative case.
+answer=The noun names the subject, in the nominative case.
+feedback=In this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
 objectiveId=obj-u4-nominative
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | The requested noun is the subject here; the clause does not present it as a direct object.
+testedFeature=NOMINATIVE_CASE_ROLE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u4-i-nom-role-train
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u4-role-u4-i-nom-role-train-1
+distractorSourceIds= | prov-ca-u4-role-u4-i-nom-role-train-2
+distractorDifference= | The requested noun is the subject here; the clause does not present it as a direct object.
+whyAnswerDemonstratesObjective=In this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+contrastMembers=The noun names the subject, in the nominative case. | The noun names a direct object, in the accusative case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u4-role-u4-i-nom-role-train-0 | prov-ca-u4-role-u4-i-nom-role-train-1 | prov-ca-u4-role-u4-i-nom-role-train-2
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u4-i-nom-role-student`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc90135b4060d955d67bfd8424bd06d4a344f79325c32721a0d0db365bd3fa9a
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which case role does the noun naming the student have in this supplied clause?
+promptLetter=Студент новый
+options=The noun names the subject, in the nominative case. | The noun names a direct object, in the accusative case.
+answer=The noun names the subject, in the nominative case.
+feedback=In this supplied clause, the student is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+objectiveId=obj-u4-nominative
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | The requested noun is the subject here; the clause does not present it as a direct object.
+testedFeature=NOMINATIVE_CASE_ROLE
+evidenceMode=STATED_APPLICATION
+contrastSetId=u4-i-nom-role-student
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u4-role-u4-i-nom-role-student-1
+distractorSourceIds= | prov-ca-u4-role-u4-i-nom-role-student-2
+distractorDifference= | The requested noun is the subject here; the clause does not present it as a direct object.
+whyAnswerDemonstratesObjective=In this supplied clause, the student is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+contrastMembers=The noun names the subject, in the nominative case. | The noun names a direct object, in the accusative case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u4-role-u4-i-nom-role-student-0 | prov-ca-u4-role-u4-i-nom-role-student-1 | prov-ca-u4-role-u4-i-nom-role-student-2
+responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u35-attribution`
 
@@ -1617,6 +2289,3003 @@ classification=OPERATIONAL_GUIDANCE
 introducedInUnit=3
 searchTerms=where lesson bodies are packaged
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-4-1`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bad653cce13038a8e1171f9c2c188169dacee40713ba7426aa48c8f181f0368
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:guided-feedback
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Муж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.
+shippedText=Муж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bcef35940aded6f3fd7a42544a6821e5149d7d729e15d3434d1455a0283f9854
+contentHash=389b64f26cf6ec7eb8129512e7394680e788c7a8c2074731c8b15bbc3c0048b3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-4-229`
+
+- Objectives: obj-u4-pronouns
+- Sessions: u4-s-orient, u4-s-pronouns
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd9880a56c8497507126c6c7584b45f81937daef722a74e47b63e8c73054fce5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-pronouns:ex-u4-вы:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+вы
+shippedText=вы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb6d4d5f75b5dc4f3c106dfded1a628747b450b1dd67f18d1125d19419519ab9
+contentHash=36c93704471d664511dfff7d87fedf624f5706f63a285deaaccfe9c2b598c75d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-4-230`
+
+- Objectives: obj-u4-pronouns
+- Sessions: u4-s-orient, u4-s-pronouns
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a381101cab784276ba481cd10a5fdc7bc6f957a6764b85729a3247cb7c356c27
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-pronouns:ex-u4-вы:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+you, plural, and also the polite or formal singular
+shippedText=you, plural, and also the polite or formal singular
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=39e397d64a41f7a20fec39fdfc6bc1c57f27409cd48502be17f790b7fae31965
+contentHash=f7778721b50b8ca94ec9f16be1b1a20b56666a996f91c0030b5717314882f863
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-4-231`
+
+- Objectives: obj-u4-pronouns
+- Sessions: u4-s-orient, u4-s-pronouns
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 619656faa93eeb3982bf9134f4098bfe15dcf81c6d98709ca4a608ade1d79fb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-pronouns:ex-u4-вы:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+вы — you, plural, and also the polite or formal singular
+shippedText=вы — you, plural, and also the polite or formal singular
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cd1894f76d53d6a7d1b61eb448800151a0dfa62603d5eb5e8b77edfdefd80011
+contentHash=a248f30d62fc253c837e5fc69627813bcf983e373ab1979f99b0e84936371b48
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-4-11131`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c31ab7a8850b2c53c109e8c7a6a28b67af7a3e11f9da4a7550f819edf9b2321a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:u4-st-guided-nominative:title
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Guided nominative subject
+shippedText=Guided nominative subject
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=859851ade6148b0b5c440fb09df37c8267b6a28f132d11612076400000a5589b
+contentHash=363ad9db0ee37c9eda4986949650914165e2e0f37f4d4ffe3d153e1ff577763f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-4-11132`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63ffcc964deebc1650b3c7bf06a24ae32d6e1655bf78f1cc5fcb2485e1d8d0e2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:u4-st-guided-nominative:body
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+The nominative case is the default case of a word, as found in dictionaries and when no other case is specifically used. Use that subject form in Муж говорит — The husband is talking. Then answer the guided choice.
+shippedText=The nominative case is the default case of a word, as found in dictionaries and when no other case is specifically used. Use that subject form in Муж говорит — The husband is talking. Then answer the guided choice.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f2f6368761f2f6b94ce5cb926911134c54e6a22eb0d80291b62ec81a06126bde
+contentHash=7a1a69edc57500cc76ece5c06585deaa352a24e28ddd001f47ef0f8f11b07658
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-4-11133`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee20d8977d1daf2ab0636a0cb704338b1b347354ef5fb8318a1f03eb12e55978
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:u4-st-rem-nominative:return-direction
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Return to that subject contrast.
+shippedText=Return to that subject contrast.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a861b1fea6764af7cd81279d59cd4585927fc0642c7793d7896881a33f41d598
+contentHash=80fa8ad0c73701680053b21605d5276bc5226cfbc65c3e7c037a6b0e4e8a72a3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-check-body`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d74fc70cd0d2c1fc1dd72c55203049519b4ed8b4a8b648a7c5904beb7342f418
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:check-body
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Identify the case role in both supplied independent contexts. A miss returns to all teaching and examples.
+shippedText=Identify the case role in both supplied independent contexts. A miss returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7bb0dfc4487265a10e51e873e15223fa4cbf1dc5400e447353c7b413cbc3dd06
+contentHash=8c88f667141489bf85bf7653c6a4764d46329ba6a28739dda0359e56a00647d1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-guided-body`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2d5fc54fd23ebab43dc20da9cceaa5b13b42f5206fde50efb3c479910336929b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:guided-body
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Choose the subject noun’s case role in the supplied clause.
+shippedText=Choose the subject noun’s case role in the supplied clause.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8ed9d2e58feaa865fd66994b155e6fe719d330cbc057244c9a8f2ec8355a0dbe
+contentHash=cdebe24cfe64b4460ac353652b1bf552fe53252b82374d85eab445d8b5ce8081
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-objective-title`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0d4a99132a190e2a0dc2bc7eb1cb1af64c6f2c9526c2d9d044fcf9690282ed5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:objective-title
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Recognize the nominative subject in supplied clauses
+shippedText=Recognize the nominative subject in supplied clauses
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b5ecbaee39d284ceea238797cb8947416f95c6af92a25ba9a1c83b2ac5f618c
+contentHash=10b378438256d905acf5e6ef742965679b81f7963a0a32e4607ea14db6ca6b06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-optional-body`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 684f5ff0e62a5159cabc5040bb629e60da1b515fc4936931adc552d0b6d8cc44
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:optional-body
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Review the supplied sentence meanings alongside the case-role lesson.
+shippedText=Review the supplied sentence meanings alongside the case-role lesson.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=efe9515ce73c878789df70100d3ac65593ee95c23d23399843133dc424d05e42
+contentHash=778d8f607429018aa86849d80a03b7d872d48821de83d74d5562d2a3423997c7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-optional-rem-body`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1454ffa806c7527c00b846124b50aadf0472d9d34ede6fc6a0c919247ea9768
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:optional-rem-body
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Муж говорит — The husband is talking. Поезд старый — The train is old.
+shippedText=Муж говорит — The husband is talking. Поезд старый — The train is old.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4ba6d666e6980e6da0490f04f4aa86aababf00985feabae62207e53675f7e96a
+contentHash=a696f5a39113f0afac2d736551a564ae89920fefb7f8b8d822b94aa390e163ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-optional-rem-title`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: acdb1360353e1445f4870a51ab522ada42582bde3eac68a6e6aeadc236b0dc51
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:optional-rem-title
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Review optional sentence meanings
+shippedText=Review optional sentence meanings
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3247e43ea59f74c57ba32a9a605e6caff96b2553ab26183b18c6b33e32f6b124
+contentHash=559edf2bfb8eba00dac1cbf62bdd338d589c7567e192a0ce635c30fe90707ea6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-optional-title`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c24df0c04532a6186b66a1d3cd12ad4f557ff3ba379ba2b8ea696b3068ba6033
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:optional-title
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Optional sentence meanings
+shippedText=Optional sentence meanings
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37bd3573b32d4105d345deaf9e7c6e9204973061294b9c114448c8aad17ecceb
+contentHash=2913ca72cc7fd33d3d2151b1a2ea868b1ac7e35b02d8e4b5c979068ea439cac8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-reference-title`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8cbfda9329a2cd56c645e65a560a92ce0e46a1f18f0c33048c9608e62432781a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:reference-title
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Optional sentence meanings
+shippedText=Optional sentence meanings
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37bd3573b32d4105d345deaf9e7c6e9204973061294b9c114448c8aad17ecceb
+contentHash=2913ca72cc7fd33d3d2151b1a2ea868b1ac7e35b02d8e4b5c979068ea439cac8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-rem-body`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6ea421a791530a519bea424d3a2a762c7f9527a862495ae5a7d860a021d655c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:rem-body
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+In the supplied Муж говорит, the husband is the subject and the talking verb states its action. The subject noun is nominative. Recognizing the English sentence meaning is useful, but the role check asks whether the noun is a subject or direct object. Do not guess nominative merely because a case is unfamiliar.
+
+In Поезд старый, the train is the subject noun and old is its predicate description. This present property clause has no overt Russian copula. The noun’s case role is nominative subject, not accusative direct object. A dictionary-looking noun or familiar translation alone does not identify its role in every construction.
+
+Студент новый supplies a second independent property clause: the student is the subject noun, and new describes that subject. Its case role is nominative subject. Keep Муж говорит — The husband is talking and Поезд старый — The train is old as correct sentence meanings; the optional reference choices do not demonstrate this case role. These supplied examples are deliberately taught, not unseen evidence or unrestricted productive case use. Other constructions have nominative predicate nouns; not every nominative noun is a subject.
+shippedText=In the supplied Муж говорит, the husband is the subject and the talking verb states its action. The subject noun is nominative. Recognizing the English sentence meaning is useful, but the role check asks whether the noun is a subject or direct object. Do not guess nominative merely because a case is unfamiliar.
+
+In Поезд старый, the train is the subject noun and old is its predicate description. This present property clause has no overt Russian copula. The noun’s case role is nominative subject, not accusative direct object. A dictionary-looking noun or familiar translation alone does not identify its role in every construction.
+
+Студент новый supplies a second independent property clause: the student is the subject noun, and new describes that subject. Its case role is nominative subject. Keep Муж говорит — The husband is talking and Поезд старый — The train is old as correct sentence meanings; the optional reference choices do not demonstrate this case role. These supplied examples are deliberately taught, not unseen evidence or unrestricted productive case use. Other constructions have nominative predicate nouns; not every nominative noun is a subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8375bdab7b7208d3c349a6be31ace115e6bbe2a932a30a161a0ae8130e70d1a1
+contentHash=da447b8bfdb509ee40dc92d7fa8f9b17aea1d2a9978902979b1a3634e139b0fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-rem-title`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b921175bb7d1db407f8f7797733a45b90c5c353878855c2eee66e2bc14d6382
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:rem-title
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Review the supplied nominative subjects
+shippedText=Review the supplied nominative subjects
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ffdd6c6c2b6b7d99b58878d83e68d1a5c99563521b1556870ecf5c3f64f94068
+contentHash=3f6a61676c78edb60cdce5a7433df6c2d810ec280c7286a992be5d3e1766054d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-student-note`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87e7f87eaf9ffaa4cc1b734ff85b654d5cb99bd6833b44a256e452657eabfc22
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:student-note
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+The student is new
+shippedText=The student is new
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=24cb523d9925c823acfd44726a0e56dfefe876a7ef0343a7609d9154f9b0c6b2
+contentHash=cbd70222d49237531d7803458a7453eba84c8e39555b0dfc26d8dbbbc87aa5f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-teach-0-body`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d9684f6c84f717d98905450ee76fcec08f4753a9921a4bb3a65c6dae595e894
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:teach-0-body
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+In the supplied Муж говорит, the husband is the subject and the talking verb states its action. The subject noun is nominative. Recognizing the English sentence meaning is useful, but the role check asks whether the noun is a subject or direct object. Do not guess nominative merely because a case is unfamiliar.
+shippedText=In the supplied Муж говорит, the husband is the subject and the talking verb states its action. The subject noun is nominative. Recognizing the English sentence meaning is useful, but the role check asks whether the noun is a subject or direct object. Do not guess nominative merely because a case is unfamiliar.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fca17ddec574aff1a0f60cb9e50162d4c9fe3b8f7ba3f6e34d2968b2197e1cb9
+contentHash=1e6f4701bc5f5f556c1932878896ed830ce858a5f287bf8f43fbb10523e8ea28
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-teach-0-title`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 622665cd8261f357064b162f9584406375c259ffcf434077cb722741397caad9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:teach-0-title
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Identify the noun’s case role
+shippedText=Identify the noun’s case role
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2153c9258e4cf2d023f27255fca527112969285230e788d20ec385ace8871089
+contentHash=421e7debf47401b64ad8ba4f4f0b800658e4a1e2a89cece30777dc6f2f8f10c4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-teach-1-body`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 310c337144d27fe6b30b4ab40ac3c3627ca7b0d9200dd7bec1ef8da11dc8cd27
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:teach-1-body
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+In Поезд старый, the train is the subject noun and old is its predicate description. This present property clause has no overt Russian copula. The noun’s case role is nominative subject, not accusative direct object. A dictionary-looking noun or familiar translation alone does not identify its role in every construction.
+shippedText=In Поезд старый, the train is the subject noun and old is its predicate description. This present property clause has no overt Russian copula. The noun’s case role is nominative subject, not accusative direct object. A dictionary-looking noun or familiar translation alone does not identify its role in every construction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f7125c01c14e6e73b59d05dd7e2e1423ebf587bd825b5d73582a58bdfe8cb24f
+contentHash=52cbc9e6d1e82b8e3142a38502804e05908c62ae5381e1d4f1535daab141427b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-teach-1-title`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef98b77088dac8f4924b6d22372a48e166b5f4fe4f49c55eec5b77a6fd3eed63
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:teach-1-title
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Separate the subject from its description
+shippedText=Separate the subject from its description
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3e13c2a1b9c87351354feb70bdb753acbddf253b3f395bcbe5c363e681ded15c
+contentHash=6b693b28e39240a92636e7e2cb4ca2160a22f81a0e1a3ed1cc74f76a7b93c730
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-teach-2-body`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b13b2be3c467deb535f2cf0e64cc41003f2d3509e52b368ee2df35795ca44cb4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:teach-2-body
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Студент новый supplies a second independent property clause: the student is the subject noun, and new describes that subject. Its case role is nominative subject. Keep Муж говорит — The husband is talking and Поезд старый — The train is old as correct sentence meanings; the optional reference choices do not demonstrate this case role. These supplied examples are deliberately taught, not unseen evidence or unrestricted productive case use. Other constructions have nominative predicate nouns; not every nominative noun is a subject.
+shippedText=Студент новый supplies a second independent property clause: the student is the subject noun, and new describes that subject. Its case role is nominative subject. Keep Муж говорит — The husband is talking and Поезд старый — The train is old as correct sentence meanings; the optional reference choices do not demonstrate this case role. These supplied examples are deliberately taught, not unseen evidence or unrestricted productive case use. Other constructions have nominative predicate nouns; not every nominative noun is a subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=feedb192e28f8afdd8384f2144a29bca19792b7ff77691e0c9e8847f24fcb0c5
+contentHash=085cb027b08cb109a25907d632316de72ca3616d96a9c1e59625ed0e18b96672
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-teach-2-title`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bb577ad67ab73c571ca3e9cf2d62dd44681acbf49949cb8f8f6835f99053b32
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:teach-2-title
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Apply the distinction to a different supplied noun
+shippedText=Apply the distinction to a different supplied noun
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=df35b7e7caf967663ee5cc783a5c6c32732fa5c4a8ca1a61afce595ad1a8d2fe
+contentHash=9bb64a3b37ca375165041de23fc956134bf3e80476311b2ddcb505518bfa933a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-g-nom-role-0`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da131d0b5e69d33c767e4a36ff5f918cf9a6c3a6e34827866b713e1b0c95e20f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u4-g-nom-role
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Complete source context:
+The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+Case-role interpretation:
+In this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+Tuple-v1:tuple-v1:1;21:Муж говорит51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case.
+shippedText=Муж говорит
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b1bb5ece65bf72982b4d93da5295dfbc25b76cdeea69744c6423ae35f26cd2f0
+contentHash=ba3965803d5aecf88c4a13beb04c1183c54c54b3a1e7c3f61e5b6572f3b8e65c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-g-nom-role-1`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b6113c4ab94ed2c404461caf74582f8325457578ec1534a81b913037d5ab15c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u4-g-nom-role
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Complete source context:
+The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+Case-role interpretation:
+In this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+Tuple-v1:tuple-v1:1;21:Муж говорит51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case.
+shippedText=The noun names the subject, in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b1bb5ece65bf72982b4d93da5295dfbc25b76cdeea69744c6423ae35f26cd2f0
+contentHash=99332dd037505593036fa4630f7a21cc2e960d0e5478c470662a176da7e1f992
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-g-nom-role-2`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2fafd68572ec8401400aa3a94934eb9c7bec8595287db3ec4cda6940acabaaf1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u4-g-nom-role
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Complete source context:
+The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+Case-role interpretation:
+In this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+Tuple-v1:tuple-v1:1;21:Муж говорит51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case.
+shippedText=The noun names a direct object, in the accusative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b1bb5ece65bf72982b4d93da5295dfbc25b76cdeea69744c6423ae35f26cd2f0
+contentHash=3f2420cc359076dd14271025707d1d6fea89f9f7ee5db95826742438987b4fd8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-g-nom-role-feedback`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd1dc0eb6438e09cdc252cdfbdcc46ca62233022900a6ff5418596f05c5e7ed1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:u4-g-nom-role-feedback
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+In this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+shippedText=In this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c3376e92c7a078716e1456449da88bca85a9ab6e645cb32bf75c8d337250f858
+contentHash=5abf93de1df6e9e40794be5633aa91ad37d94222f99c3f047c6aea45bfcef74c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-g-nom-role-prompt`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ab908c804c46dcdaf6d938e2cb17d84d59d5b9ac6a6203ebcd1a3cffbb2e529
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:u4-g-nom-role-prompt
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Which case role does the noun naming the husband have in this supplied clause?
+shippedText=Which case role does the noun naming the husband have in this supplied clause?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ad49356f71e5900b6deba4bb4ee8975944f5bd82b5c533cf1f84f53f03e1b21
+contentHash=26ee87b91012c6ba3d59359ab843b65d9b4985eb6b614665e852f7942729e3ae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-g-nom-role-reason`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7780596cb7f7325abeee1b7b931e192dab06d2619094186b2a8539d863121651
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:u4-g-nom-role-reason
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+The requested noun is the subject here; the clause does not present it as a direct object.
+shippedText=The requested noun is the subject here; the clause does not present it as a direct object.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6048dcfa025642ee6a2db09a0845239c9ae3dfce4d0f311c4dcc6eecb6f711b9
+contentHash=fed947c47037e750ab4dc2d1e247b059f2032e66554b5ddae5ebee790c5b3a3d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-g-nominative-1-feedback`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ce3c7ff8bc6c52301e7f485875cd2cad7c31000e4a0741ce7fdfb807685be37
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:u4-g-nominative-1-feedback
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Муж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.
+shippedText=Муж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c87a8cde0349cfeb5db9a0c56513d5d6185a1e9a0251cc8b9d89fe728a661ec
+contentHash=389b64f26cf6ec7eb8129512e7394680e788c7a8c2074731c8b15bbc3c0048b3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-g-nominative-1-prompt`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b4f8ff21dff04ebe758fc6563754f4dc8bd58e36601949cc61ed6de3c1af282
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:u4-g-nominative-1-prompt
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Which admitted example is the shown sentence?
+shippedText=Which admitted example is the shown sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff5c2581055726ae8e30e02a41eaf9dc9d52eda5da446bbb4dda4ef3555665fc
+contentHash=907a84f52d69de582a3f33281761991389d1fabf2eaf90866dbdf8cc8586711b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-muzh-feedback`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25c3ae674234da0f982ea40f4761d51cd57e29c61d04dcd49b0f7ab5264f6fb3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:u4-i-nom-muzh-feedback
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+The frozen page records this example as: The husband is talking.
+shippedText=The frozen page records this example as: The husband is talking.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=793dedc0f5fe7df7031a30675dd501840d3411897e830d4c5545c22323a341b4
+contentHash=5c861704aa662f3701ed7b0e74443cca350c385d49875ddc010c900edf4fc293
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-muzh-prompt`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11a056dbdaa0cf2eef303b93980cc6458c1b752ef1dfb95bdf0ca7531201ed28
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:u4-i-nom-muzh-prompt
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Which admitted example is the shown sentence?
+shippedText=Which admitted example is the shown sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff5c2581055726ae8e30e02a41eaf9dc9d52eda5da446bbb4dda4ef3555665fc
+contentHash=907a84f52d69de582a3f33281761991389d1fabf2eaf90866dbdf8cc8586711b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-poezd-feedback`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db9323fbe535f20a5b3397d735fe4f32c93e563a54b53aba341660653e147155
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:u4-i-nom-poezd-feedback
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+The frozen page records this example as: The train is old.
+shippedText=The frozen page records this example as: The train is old.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7bf616d36a42327d459221f218813fd5e2fd0fe220f2e624b031e5c5332a126a
+contentHash=ed3308217c03971462ce292270acd1806096cb82b841a67ed56199473aa53229
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-poezd-prompt`
+
+- Objectives: obj-u4-nominative-gloss-reference
+- Sessions: u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bccb769f5a88fa419c4f544d40fddde17435397924245aa5fc12e836dbc657a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative-gloss-reference:role:u4-i-nom-poezd-prompt
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Which admitted example is the shown sentence?
+shippedText=Which admitted example is the shown sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff5c2581055726ae8e30e02a41eaf9dc9d52eda5da446bbb4dda4ef3555665fc
+contentHash=907a84f52d69de582a3f33281761991389d1fabf2eaf90866dbdf8cc8586711b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-0`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a37a617193aff555fc6f9a77483e796da68862f2034f3c07bf086c657643186b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u4-i-nom-role-student
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Complete source context:
+The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+Case-role interpretation:
+In this supplied clause, the student is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+Tuple-v1:tuple-v1:1;25:Студент новый51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case.
+shippedText=Студент новый
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=043790ba60a423453702eb228e2a3ad405ffd42778ff761d2613feae4adeede0
+contentHash=99f3043523af00251b4438628b02f31f267556c001102d87dd914250ee638561
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-1`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d21f46ac6f63e951d8ba23196269a14b5e27d23aed63484ba1a39a5397f54ce
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u4-i-nom-role-student
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Complete source context:
+The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+Case-role interpretation:
+In this supplied clause, the student is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+Tuple-v1:tuple-v1:1;25:Студент новый51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case.
+shippedText=The noun names the subject, in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=043790ba60a423453702eb228e2a3ad405ffd42778ff761d2613feae4adeede0
+contentHash=99332dd037505593036fa4630f7a21cc2e960d0e5478c470662a176da7e1f992
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-2`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da43b76225d199e06f0e02647813c305b6baeeef4e04e6772d6772374df61b3d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u4-i-nom-role-student
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Complete source context:
+The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+Case-role interpretation:
+In this supplied clause, the student is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+Tuple-v1:tuple-v1:1;25:Студент новый51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case.
+shippedText=The noun names a direct object, in the accusative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=043790ba60a423453702eb228e2a3ad405ffd42778ff761d2613feae4adeede0
+contentHash=3f2420cc359076dd14271025707d1d6fea89f9f7ee5db95826742438987b4fd8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-feedback`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0584127fc3b82382e03afdba42d66684ba6ee4a5a3fdb7f8f5049f4a785886d2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:u4-i-nom-role-student-feedback
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+In this supplied clause, the student is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+shippedText=In this supplied clause, the student is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f496f05b7332047c59a00254319eb28a080339a7224c5e9eb747f5557d1e5087
+contentHash=fa3849c6344a8308960d749f93cb6abc6fc00dbf42e5f4cb700d0925e7e8d61c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-prompt`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc7cca8b8416d21b389667ac5049a9c4c369d8a3bc30e752e83aeb12eadb7c2b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:u4-i-nom-role-student-prompt
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Which case role does the noun naming the student have in this supplied clause?
+shippedText=Which case role does the noun naming the student have in this supplied clause?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=730a5bdc2ebd4c18d8144aff7592c6f69b27151de5801c4ff4f5993267fc5ef2
+contentHash=22badb890e4c62eab86d8650427e7058115140ba6c0eb9153c8ac95174d37a63
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-reason`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b389c251df61cce06217fc8322ebf15425a6dead29c3521dc3160b3cc8c5eac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:u4-i-nom-role-student-reason
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+The requested noun is the subject here; the clause does not present it as a direct object.
+shippedText=The requested noun is the subject here; the clause does not present it as a direct object.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6048dcfa025642ee6a2db09a0845239c9ae3dfce4d0f311c4dcc6eecb6f711b9
+contentHash=fed947c47037e750ab4dc2d1e247b059f2032e66554b5ddae5ebee790c5b3a3d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-0`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 653c9507f72d6634f99913d425c3da94890e3b8ff0620bf82dc9c5b062a3ff2a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u4-i-nom-role-train
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Complete source context:
+The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+Case-role interpretation:
+In this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+Tuple-v1:tuple-v1:1;23:Поезд старый51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case.
+shippedText=Поезд старый
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dda4489bc809c77929b0faf6781fd81d77c3205eafbb0d60fcb1cb61c91523c7
+contentHash=593100e07231bc9baa2d67875b75a5ce1d54a6bc15287a3edcebcf8bd0350426
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-1`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ad4c6af7f33b046224128a210d30be140ff0893adcc0ccfd762572ad4d26095
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u4-i-nom-role-train
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Complete source context:
+The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+Case-role interpretation:
+In this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+Tuple-v1:tuple-v1:1;23:Поезд старый51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case.
+shippedText=The noun names the subject, in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dda4489bc809c77929b0faf6781fd81d77c3205eafbb0d60fcb1cb61c91523c7
+contentHash=99332dd037505593036fa4630f7a21cc2e960d0e5478c470662a176da7e1f992
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-2`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55a6d13a840c8263af9cb7999c036fc008b1c8c5e32a5940e9cef70c02b532b1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u4-i-nom-role-train
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Complete source context:
+The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+Case-role interpretation:
+In this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+Tuple-v1:tuple-v1:1;23:Поезд старый51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case.
+shippedText=The noun names a direct object, in the accusative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dda4489bc809c77929b0faf6781fd81d77c3205eafbb0d60fcb1cb61c91523c7
+contentHash=3f2420cc359076dd14271025707d1d6fea89f9f7ee5db95826742438987b4fd8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-feedback`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3289d61ffa76e1050d70f07a42132365357efa23df4fffc1983e68559e41e6b0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:u4-i-nom-role-train-feedback
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+In this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+shippedText=In this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=28e464b54910416eb48ac49c90ac70974e9c8ebdc9ca37a17e42fd83d03002a8
+contentHash=4e63e4345f0082c5f047389d982b76d75ab6512ea4e50c30c8de86d2219e2b2a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-prompt`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dee9a7c7d8548e4de873352ec66595585afb7c2211952ffa28da35871c7bcf2d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:u4-i-nom-role-train-prompt
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+Which case role does the noun naming the train have in this supplied clause?
+shippedText=Which case role does the noun naming the train have in this supplied clause?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bef67520f5950cd81f8eaf007e0798d526b9baccc2d44f4e91d17a6d35cb145f
+contentHash=2b7ce62e9749b5d4989b53113511aca7d0a22edaa9b7f097b9816ba9508edbca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-reason`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46d49ee4b428b095edc78a020715dcefc49d5ed23a1550fb699aafbae2ff28d7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-nominative:role:u4-i-nom-role-train-reason
+originalSourceText=Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.
+The requested noun is the subject here; the clause does not present it as a direct object.
+shippedText=The requested noun is the subject here; the clause does not present it as a direct object.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6048dcfa025642ee6a2db09a0845239c9ae3dfce4d0f311c4dcc6eecb6f711b9
+contentHash=fed947c47037e750ab4dc2d1e247b059f2032e66554b5ddae5ebee790c5b3a3d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-complete-repair`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a03d8f8a568677129a827f9916b37e1ee53f0a2c42a732ca39faa1c8f66cf9a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:complete-repair
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The frozen page says: So, to form the present tense, you simply take the ''imperfective aspect'' of the verb and add the appropriate endings.
+
+These fields are copied from the admitted чита́ть row. Row glossed I: чита́ю. Row glossed you: чита́ешь. Row glossed he: чита́ет. 
+
+These fields are copied from the admitted чита́ть row. Row glossed we: чита́ем. Row glossed you (plural): чита́ете. Row glossed they: чита́ют. 
+
+де́лать — make. The admitted row records де́лаю for the row glossed I.
+
+These infinitives are copied from admitted rows. знать — know. рабо́тать — work. понима́ть — understand. слу́шать — listen. 
+
+These infinitives are copied from admitted rows. жить — live. говори́ть — to speak. ви́деть — see. смотре́ть — look. 
+
+These infinitives are copied from admitted rows. писа́ть — write. идти́ — go. 
+
+The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+shippedText=The frozen page says: So, to form the present tense, you simply take the ''imperfective aspect'' of the verb and add the appropriate endings.
+
+These fields are copied from the admitted чита́ть row. Row glossed I: чита́ю. Row glossed you: чита́ешь. Row glossed he: чита́ет. 
+
+These fields are copied from the admitted чита́ть row. Row glossed we: чита́ем. Row glossed you (plural): чита́ете. Row glossed they: чита́ют. 
+
+де́лать — make. The admitted row records де́лаю for the row glossed I.
+
+These infinitives are copied from admitted rows. знать — know. рабо́тать — work. понима́ть — understand. слу́шать — listen. 
+
+These infinitives are copied from admitted rows. жить — live. говори́ть — to speak. ви́деть — see. смотре́ть — look. 
+
+These infinitives are copied from admitted rows. писа́ть — write. идти́ — go. 
+
+The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58acad32b8f872aee13751a8c5735509b7f05ed5b0ba2c846d8029a47bac0288
+contentHash=dee778ef9f6ffcae43290271ce53923d8ff80921f88bd03eb2b1d5f1f31f5fa7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc2d71dc3fb594452499b1c63b376142c5b6c024fbf6588f644e137c8a94aa0d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+shippedText=The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab1cc3523d38d721cf350bbead9560349dc8619f70160390b24837e0e37b2992
+contentHash=57b575b184d0d1730fde637ee99ca238d08fc261d5eaa15adf7b13fa42ce2d68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-example-note`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7ed0892a019ae4b2edf104a733d4c6f733003002097ce628a4ab9a638c7807f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-example-note
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+he: the supplied form for this entry.
+shippedText=he: the supplied form for this entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0cc6e074fd68878e008e31a720385f817c5e1665f7f1d341a86390d509ef9d3
+contentHash=fc7368f8db9f4a421793882e8c870ac2e99c3b7d405056b63df9b6d075b7e0c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-guide-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06b91fedb766f0d7dea90547cf0c47576f46d7900a63fce4e92c4742d38b424e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-guide-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+shippedText=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1765d9f00282a436b27badd148af8eb19a2a83f2e7eb8b313603f3c53d23fe40
+contentHash=6d74ef1987176ce11299cd35601664182db7022cced65d44538f6c90d6f3f01b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-guide-feedback`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67bed44d204a126f3eb62a1a4259112bf030613df73c576b9845b2366d1e7dfe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-guide-feedback
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The supplied I form is ви́жу. Compare it with the separately shown he form ви́дит.
+shippedText=The supplied I form is ви́жу. Compare it with the separately shown he form ви́дит.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad0a0a885f4316cfda61a4fb97a4f0a5ed68d2663bd0e60f85ed09b1e52dad58
+contentHash=bdc8040ced611229e80de9ff00358ffb4c5bb0250a05dd0a7f926cbfa0520d06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-guide-prompt`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e71375e58bc629856d037405a6d79b8b17491cb61ca8bc9e0887f44925f4a36
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-guide-prompt
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Which supplied present form belongs to I?
+shippedText=Which supplied present form belongs to I?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44f9aa55194463c2d6ffc1fa60ea5b209320c2e5c25344965b6b62df85f52561
+contentHash=f37e7009fdb18c95235de9b59a4052fda584a8cf4fdaa8f36fdc98e121b4412d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-guide-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42dd2d4c5bc7151a9323e18173f8886d87404b3eda4153dd080d2308ebebf64d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-guide-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Practise I before the independent he check
+shippedText=Practise I before the independent he check
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97cca8ef8e63c50aec39e374bd571a350851851af26abc893f69d79c6fe4811f
+contentHash=92c91f14a9e7d97867b873e98dda020872e6cf54d656cdef392a5c5286d1d4c8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-rationale-0`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 782b93a21222b6d0e82161934951a010df0f8652e13e2d97e018850ea2557642
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-rationale-0
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to he, while this practice asks for I.
+shippedText=This supplied form belongs to he, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b550e90e3592933e77a9f9ea54611389da52dda4b6e38829cf432d8cc3795307
+contentHash=7acdaea59520c1faad703bc5df0197dc1a34a55706ac448c04792cf349df01bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-rationale-2`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd362343c56d40f5c00f635069347a0745e847a5dcc92f98189c6271c61a3c1e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-rationale-2
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to you (one familiar person), while this practice asks for I.
+shippedText=This supplied form belongs to you (one familiar person), while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84bd002ad8456df0a91262b3994ebf6f499972e104a54baccb6046ce8367c2b5
+contentHash=e3449d0440dd164c8620beaa9975b704c65a7fbe80f8ff5275f0edfd80d2fe37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-rationale-3`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66102fd7919e8fa410029c5b8748ac54196336adfee87d80ded81593ee13192b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-rationale-3
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to we, while this practice asks for I.
+shippedText=This supplied form belongs to we, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ea6d1b47dccdc2f066d155819f1607878deef5f05ab6bb264ab3c76c6fed81c7
+contentHash=420033ada63b7428ad85426a8167a4eb9badc0c62d551ca2e1c6ce3acf758d68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46ba3ee00de45d7fe013c1175d2728f864838c0628aa10e421c0975141c3f063
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Match he in the supplied seeing forms
+shippedText=Match he in the supplied seeing forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=60c6ca7bd8b8f6d88b124a147689e8d7d8d5b798c3475b0ec5dcde686ccdf325
+contentHash=2d14f5e60c51fb0081bf05727b7dee70db60e8f328c35d33bc048cdd87a33764
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e35284add989b3e0af73a97b65c59d8430588d5a07c6f51598a46a8200989d5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+shippedText=The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bfb6a4307e5aba37594b9a3a37ac09dbc325f18c6e563caa31d94e557334cc0c
+contentHash=3f8caa0143b3ff66413f702933a30bec70c3695ef40fca2b291dba8eb209a72f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-example-note`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b81b3897c853cbe0ba79609b0ea6e310458b17e42f488c81e1317c01a7252a01
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-example-note
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+we: the supplied form for this entry.
+shippedText=we: the supplied form for this entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8a57708765c79623587fff7c049579c1c2856a2c46362a94bd6caef55b9e1753
+contentHash=815499a8e86a73db9ac71c59675557d0d4742e9cbb2627d0afba2410a47c87f0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-guide-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55398b2542abc2bec6adfad27a14b14667f1202d44a175a7f6ed68fce70d3de8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-guide-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+shippedText=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1765d9f00282a436b27badd148af8eb19a2a83f2e7eb8b313603f3c53d23fe40
+contentHash=6d74ef1987176ce11299cd35601664182db7022cced65d44538f6c90d6f3f01b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-guide-feedback`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2658e764233894202e93e1c5fd64afe6dee5189859132adfa799e7108b6c1f2e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-guide-feedback
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The supplied I form is говорю́. Compare it with the separately shown we form говори́м.
+shippedText=The supplied I form is говорю́. Compare it with the separately shown we form говори́м.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4ea559debb5fa251c94d95b5fb750f9489194f24cc91255a8e1bea7d3987a6fe
+contentHash=d896b406b269eefb1c3d7890b6deaf3e4d32d60bd43692bd40c5bc4da1c7646e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-guide-prompt`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 677016cee39bfbe98f529b8ab521a349118d39eac8bcbb3d0dbb9169daf7959f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-guide-prompt
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Which supplied present form belongs to I?
+shippedText=Which supplied present form belongs to I?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44f9aa55194463c2d6ffc1fa60ea5b209320c2e5c25344965b6b62df85f52561
+contentHash=f37e7009fdb18c95235de9b59a4052fda584a8cf4fdaa8f36fdc98e121b4412d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-guide-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03dde1cc540fdb5cce67663d05ef4e4a4402d6fe66c16407b888fcd6572a2c1c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-guide-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Practise I before the independent we check
+shippedText=Practise I before the independent we check
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7d3ec4b6878889d78bbc64120bba525f5a219cd52f750e42367e8bc37a2c341c
+contentHash=0830b03c0fc06a11e5eef15d1067d0b55b0559feab463c7a20ec79c0cbcf6444
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-rationale-0`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5de0d737a34aa97cf38c102a19eca3bbcff1f02a52ec4434793ba9ffbe514916
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-rationale-0
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to we, while this practice asks for I.
+shippedText=This supplied form belongs to we, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ea6d1b47dccdc2f066d155819f1607878deef5f05ab6bb264ab3c76c6fed81c7
+contentHash=420033ada63b7428ad85426a8167a4eb9badc0c62d551ca2e1c6ce3acf758d68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-rationale-2`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 140d3111f33d45e51a2851270b70465edd5ed7d918e9333353d2462cd1b22a1c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-rationale-2
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to you (one familiar person), while this practice asks for I.
+shippedText=This supplied form belongs to you (one familiar person), while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84bd002ad8456df0a91262b3994ebf6f499972e104a54baccb6046ce8367c2b5
+contentHash=e3449d0440dd164c8620beaa9975b704c65a7fbe80f8ff5275f0edfd80d2fe37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-rationale-3`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0347e0b31390fd2af578f274254fdbe8dca1a3781f87927a401e0cb64df25d28
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-rationale-3
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to he, while this practice asks for I.
+shippedText=This supplied form belongs to he, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b550e90e3592933e77a9f9ea54611389da52dda4b6e38829cf432d8cc3795307
+contentHash=7acdaea59520c1faad703bc5df0197dc1a34a55706ac448c04792cf349df01bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06f32659d9b373b7926378cfc899b53c198ec920322c92514b35bba40021de14
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Match we in the supplied speaking forms
+shippedText=Match we in the supplied speaking forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6e2587314373493e57288e278964327074c5c6ccb974780abb671dad134abb24
+contentHash=9c76ffc87b3c764a0fc33b2470280d89785429cde996639d4c7a468a1a7c355b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e57534934e98016f2de07862ca56731a5b08d32ab7e877bea2262bd7f8ac349
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+shippedText=The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f58baff377e902413e42fd4fd4a802c2c55cfb7c5078d70bfaba90231cc32bd1
+contentHash=993d21af0452ba240d11f0f5b15f604dcb1bad8e9b7d9fa42683ec75a6f63f24
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-example-note`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b04221be4623a5073f8499ef256b76f4d0eb3f877363c174fc1a5cb6c74e1af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-example-note
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+they: the supplied form for this entry.
+shippedText=they: the supplied form for this entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=692c04a591d953e129dd7b3cbd08bcd9ecc9611335a7f9724778c7d6468c5950
+contentHash=cded3c8df421425fd279469e6bcbb241d7df3ee54626eb81ec19a1525b91bd32
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-guide-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f3a4c743553873ac92d3e27ecd87fa5610832419ba17a891f5ffd23052030ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-guide-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+shippedText=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1765d9f00282a436b27badd148af8eb19a2a83f2e7eb8b313603f3c53d23fe40
+contentHash=6d74ef1987176ce11299cd35601664182db7022cced65d44538f6c90d6f3f01b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-guide-feedback`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6507dfe5cd3581df05dd0c4edb92000a17114844a016be24e650f4114c947e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-guide-feedback
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The supplied I form is иду́. Compare it with the separately shown they form иду́т.
+shippedText=The supplied I form is иду́. Compare it with the separately shown they form иду́т.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2cd96b8af15556ae3dd44e000eadaec2ff1c00a9e614b62db609e781a7776806
+contentHash=d6d776d81e912dc61f9b8f2dd5b64387b8c966bfaa55988f38920ddb7cd0120a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-guide-prompt`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b7121b0d038ec45ad4842786c08948b8d3e0e212c1abe3fdf7a09060e790617
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-guide-prompt
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Which supplied present form belongs to I?
+shippedText=Which supplied present form belongs to I?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44f9aa55194463c2d6ffc1fa60ea5b209320c2e5c25344965b6b62df85f52561
+contentHash=f37e7009fdb18c95235de9b59a4052fda584a8cf4fdaa8f36fdc98e121b4412d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-guide-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25041702a183338cdf95d21203a575a43317b20b12a3922463d01ce1977fda51
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-guide-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Practise I before the independent they check
+shippedText=Practise I before the independent they check
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f0257ef97e141ce5acb0592c1a8e33680288603b71f668fcbdb036bcfde91958
+contentHash=d29ebf97e8b105c018ffd3075699a6d4751f12bf08eb84da41cbe833e1ccda2a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-rationale-0`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8001410ff21dddd30f6e89d603f1352ae816b614fbf199f293eab35de6e46832
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-rationale-0
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to they, while this practice asks for I.
+shippedText=This supplied form belongs to they, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=542e08b1b52eb42488f1bdede355eef3d8fd9b7bca7a41bae68ad7a08d1d52bc
+contentHash=eb7595fcbcb741067cc05893bb5d2b3c4772414b9a13f9aa8ca6cca29a222b29
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-rationale-2`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 219925b67247e4129b91842b9e079c09146f7cfe51a2dc1a5f8d61b3a09bdd38
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-rationale-2
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to you (one familiar person), while this practice asks for I.
+shippedText=This supplied form belongs to you (one familiar person), while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84bd002ad8456df0a91262b3994ebf6f499972e104a54baccb6046ce8367c2b5
+contentHash=e3449d0440dd164c8620beaa9975b704c65a7fbe80f8ff5275f0edfd80d2fe37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-rationale-3`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4abb734d08d14ed255c391afd37b2f1fc2d7b7b32374479d34dc8c521481571
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-rationale-3
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to he, while this practice asks for I.
+shippedText=This supplied form belongs to he, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b550e90e3592933e77a9f9ea54611389da52dda4b6e38829cf432d8cc3795307
+contentHash=7acdaea59520c1faad703bc5df0197dc1a34a55706ac448c04792cf349df01bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87188b3faa749f0a8ca9d2477b68b1480fa1da2728f977e68aed044341e8704c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Match they in the supplied going forms
+shippedText=Match they in the supplied going forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=170f1bf64d10eb151f5c6491139d6b81745ca44c93529c0b564efb8805132d6d
+contentHash=95c9e9e95e04f63cd846e9760f3b30d580fd43bf687c1bca207a5073920a9e54
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f60062a5c821671267069a2391ea37b0c1c2b5dbc6e7133cbbcc2518d3f4dc92
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+shippedText=The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2370a699131bd53c4186bcdf9a9b582e028f1b6187c7f7164c660dfefc6e9771
+contentHash=6b8904796767aaeab9eff7753b30ec7b197e8d57e80ad71711dcae8e520a731e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-example-note`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bf2a0439f7afd84899fe6960cca9405cc745edd1f0b603b570f74a1af364573
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-example-note
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+you (plural): the supplied form for this entry.
+shippedText=you (plural): the supplied form for this entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=64c47cd3e41708f2cb2febac08645734a51a282ca0d3326184d7735a9cbbcd4b
+contentHash=42e36d861746e9e02bb38c7b3298f8953e02ae61541051e7915c16828c426608
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-guide-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41104f7ba9c67b5c1b569ac3bce2583fb523e5fb04d356cd18995da5817c0984
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-guide-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+shippedText=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1765d9f00282a436b27badd148af8eb19a2a83f2e7eb8b313603f3c53d23fe40
+contentHash=6d74ef1987176ce11299cd35601664182db7022cced65d44538f6c90d6f3f01b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-guide-feedback`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c70e1dd886b853f17471f7c07c48ab7fc892ff1fdb7af828553817eb9762c69
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-guide-feedback
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The supplied I form is пишу́. Compare it with the separately shown you (plural) form пи́шете.
+shippedText=The supplied I form is пишу́. Compare it with the separately shown you (plural) form пи́шете.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0eec8e6f0c68347ba621e6e607685ae26805e19925ed6d5d4114329dd4904f01
+contentHash=ae96a88766315f4d0cc8591c90a8ef722c1f8b8b33cd0962c41cda0223f53d4a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-guide-prompt`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85735c2efa4200f1039e6c4ee08cd78df373f11d0386453d5ba303865d6c1523
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-guide-prompt
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Which supplied present form belongs to I?
+shippedText=Which supplied present form belongs to I?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44f9aa55194463c2d6ffc1fa60ea5b209320c2e5c25344965b6b62df85f52561
+contentHash=f37e7009fdb18c95235de9b59a4052fda584a8cf4fdaa8f36fdc98e121b4412d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-guide-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ebdfac64a136430a1eb2b88709609f9f7c72264e85de02584f3db603b4465e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-guide-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Practise I before the independent you (plural) check
+shippedText=Practise I before the independent you (plural) check
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f3cc33d71d6720d31d8f4da47c96fdccd0957adf2994596449783232ec0e04c7
+contentHash=a217881e7d7c907d57c08a0aa9acc55e5bd562ab0437e6277ebc8777390c1ffc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-rationale-0`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76b70f969d6e37094e01cef9414a225ae517e43f6c08c30362182613d07743f6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-rationale-0
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to you (plural), while this practice asks for I.
+shippedText=This supplied form belongs to you (plural), while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8f37e434777ecc3891e4c05eb883cbdac3a1beeccb6d0d7be8865f6fc0b74239
+contentHash=e15c17dba3c029225c0f3038f315d995e06d7b3c5a43b8ab169292fab19ad783
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-rationale-2`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b3c79301bf3364f15e7de4e7a31806100a05792aa25ac8404cf58a2167620dd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-rationale-2
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to you (one familiar person), while this practice asks for I.
+shippedText=This supplied form belongs to you (one familiar person), while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84bd002ad8456df0a91262b3994ebf6f499972e104a54baccb6046ce8367c2b5
+contentHash=e3449d0440dd164c8620beaa9975b704c65a7fbe80f8ff5275f0edfd80d2fe37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-rationale-3`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8d8630db4957cad324b78f1e3fd4189958c0f000007ca8a2f86aba8fa16ee8e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-rationale-3
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to he, while this practice asks for I.
+shippedText=This supplied form belongs to he, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b550e90e3592933e77a9f9ea54611389da52dda4b6e38829cf432d8cc3795307
+contentHash=7acdaea59520c1faad703bc5df0197dc1a34a55706ac448c04792cf349df01bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a42ec2a8da161cd1eccbc496682675db5e6902ed80dd95018b7b3e927ded7eb8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Match you (plural) in the supplied writing forms
+shippedText=Match you (plural) in the supplied writing forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5431a95a9a637ea364a4cd1453e53d65c9cdb7192b20fccdbf6bfb5783a212ef
+contentHash=3ab5cc72952c23d71332a8338b461574491bb719573dc595e879809657169d37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-u4-cases-default`
 
@@ -4402,6 +8071,174 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u4-role-native-husband`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00f0af737e8e8f30a2ff39a776cb5e7604c111205d1fdd1a99085090eba0721a
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-subject-full-context:e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6
+originalSourceText=The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+shippedText=Муж говорит
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6
+contentHash=ba3965803d5aecf88c4a13beb04c1183c54c54b3a1e7c3f61e5b6572f3b8e65c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u4-role-native-student`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 127eda15982b916311e698532d793b9586d615374395ce0330ab9bd7026d766a
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-subject-full-context:e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6
+originalSourceText=The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+shippedText=Студент новый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6
+contentHash=99f3043523af00251b4438628b02f31f267556c001102d87dd914250ee638561
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u4-role-native-train`
+
+- Objectives: obj-u4-nominative
+- Sessions: u4-s-orient, u4-s-nominative
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: daa699cb950bff0d53b4d337da8142b5c9dffaf8e5011e24ac03349e80eeadf1
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-subject-full-context:e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6
+originalSourceText=The '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.
+
+== What is a case? ==
+The nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.
+
+So, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.
+
+The nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).
+
+== Usage ==
+The nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, "Peter is driving a car", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.
+
+One of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:
+* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').
+* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').
+* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').
+
+You may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).
+
+Finally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:
+* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, "What kind of X is Y?", and are constructed in Russian using the word '''что''': "Что Y за X", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.
+* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: "I became a worker", '''Я в рабочие'''.
+
+==Nouns==
+As stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:
+:The husband is talking - '''Муж говорит'''
+:The train is old - '''Поезд старый'''
+:The student is new - '''Студент новый'''
+shippedText=Поезд старый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6
+contentHash=593100e07231bc9baa2d67875b75a5ce1d54a6bc15287a3edcebcf8bd0350426
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u4-verb-gloss-видеть`
 
 - Objectives: obj-u4-present
@@ -5068,6 +8905,136 @@ reviewerIdentity=
 reviewerQualification=
 reviewDate=
 reviewedDigest=
+
+### AUTHORED_ENGLISH `en-ca-4-11134`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb51d1e9e1b540131319f22e7b219b0d02c5a6aa71c170e0fb922deb02979443
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 4 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-4-11135`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ce69ca555dd649ea4c3c6082639e0b9236898ef02619bc0e225c0d1cf0feb61
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-4-11136`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 309ba104e76951563a8235cd8deaa9c6bdce1d5a58ad002b16023436a363ff12
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 4 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-4-11137`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2fb116a7b658b7b54b6acc9d776c7dbc3daac32d51565be784c0a124c9c341d3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-4-11138`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0f8b0cb139a259fd74e5021a39d14b32ecef962f711a58d66e2d5ab26c9a475
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 4 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-4-11139`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9332cfce99d0ce67e680bcef805322d2b3412efdadf71eea33a112ca7e864ac
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-4-11140`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b0e7a0e361aee1cfdef78ce0971148477d384955cfca7fb58c53bf23820ddb2c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 4 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-4-5`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a83032fb8f07ea6d9eca8c748072e250351883d5a51d487c5ef92964322e70bb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 4: printed pages 36-45. PDF indexes 48-57 are file locators, not printed pages. Observed section locators: §4.1 p36 (PDF 48); §4.2 p36 (PDF 48); §4.3 p37 (PDF 49); §4.4 p37 (PDF 49); §4.5 p38 (PDF 50); §4.6 p39 (PDF 51); §4.7 p40 (PDF 52); §4.8 p40 (PDF 52); §4.9 p41 (PDF 53); §4.10 p41 (PDF 53); §4.11 p42 (PDF 54); §4.12 p42 (PDF 54); §4.13 p43 (PDF 55). Observed exercise locators: 4/1 p44/PDF56; 4/2 p45/PDF57; 4/3 p45/PDF57. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-4-6`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa38d97639fc20c6fcca8640b1aace0aadef39e36fdac640e17de67cbd4cd9e5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 4 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-4-7`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4fafafa63c1038375fcc3c12076ea2499cf1c628169582261dc22d761ae08088
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 
 ### AUTHORED_ENGLISH `en-u4-043`
 
@@ -5814,6 +9781,21 @@ CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -5855,6 +9837,20 @@ permitsAppUse=true
 
 src-wikibooks-russian-cc-by-sa
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -5901,10 +9897,22 @@ permitsAppUse=true
 - `obj-u4-present` INSTRUCTION `u4-st-teach-present-5`
 - `obj-u4-present` INSTRUCTION `u4-st-teach-present-6`
 - `obj-u4-present` INSTRUCTION `u4-st-teach-present-7`
+- `obj-u4-present` INSTRUCTION `u4-st-teach-present-говорить`
+- `obj-u4-present` INSTRUCTION `u4-st-teach-present-видеть`
+- `obj-u4-present` INSTRUCTION `u4-st-teach-present-писать`
+- `obj-u4-present` INSTRUCTION `u4-st-teach-present-идти`
 - `obj-u4-present` EXAMPLE `ex-u4-verb-читать`
 - `obj-u4-present` EXAMPLE `ex-u4-verb-делать`
+- `obj-u4-present` EXAMPLE `ex-u4-present-говорить-мы`
+- `obj-u4-present` EXAMPLE `ex-u4-present-видеть-он`
+- `obj-u4-present` EXAMPLE `ex-u4-present-писать-вы`
+- `obj-u4-present` EXAMPLE `ex-u4-present-идти-они`
 - `obj-u4-present` PRACTICE `u4-st-guided-present-2`
 - `obj-u4-present` PRACTICE `u4-st-guided-present-4`
+- `obj-u4-present` PRACTICE `u4-st-guided-present-говорить`
+- `obj-u4-present` PRACTICE `u4-st-guided-present-видеть`
+- `obj-u4-present` PRACTICE `u4-st-guided-present-писать`
+- `obj-u4-present` PRACTICE `u4-st-guided-present-идти`
 - `obj-u4-present` CHECK `u4-i-verb-говорить-мы`
 - `obj-u4-present` CHECK `u4-i-verb-видеть-он`
 - `obj-u4-present` CHECK `u4-i-verb-писать-вы`
@@ -5925,12 +9933,18 @@ permitsAppUse=true
 - `obj-u4-nominative` INSTRUCTION `u4-st-teach-nominative-3`
 - `obj-u4-nominative` EXAMPLE `ex-u4-nom-muzh`
 - `obj-u4-nominative` EXAMPLE `ex-u4-nom-poezd`
-- `obj-u4-nominative` PRACTICE `u4-st-teach-nominative-1`
-- `obj-u4-nominative` CHECK `u4-i-nom-muzh`
-- `obj-u4-nominative` CHECK `u4-i-nom-poezd`
+- `obj-u4-nominative` EXAMPLE `ex-u4-nom-student`
+- `obj-u4-nominative` PRACTICE `u4-st-guided-nominative`
+- `obj-u4-nominative` CHECK `u4-i-nom-role-train`
+- `obj-u4-nominative` CHECK `u4-i-nom-role-student`
 - `obj-u4-nominative` REMEDIATION `u4-st-rem-nominative`
 - `obj-u4-book` INSTRUCTION `u4-st-book-work`
 - `obj-u4-book` INSTRUCTION `u4-st-book`
+- `obj-u4-nominative-gloss-reference` INSTRUCTION `u4-st-teach-nominative-3`
+- `obj-u4-nominative-gloss-reference` EXAMPLE `ex-u4-nom-muzh`
+- `obj-u4-nominative-gloss-reference` EXAMPLE `ex-u4-nom-poezd`
+- `obj-u4-nominative-gloss-reference` EXAMPLE `ex-u4-nom-student`
+- `obj-u4-nominative-gloss-reference` REMEDIATION `u4-st-rem-optional-nominative-gloss`
 - `u4-s-orient` OBJECTIVE `obj-u4-pronouns`
 - `u4-s-orient` OBJECTIVE `obj-u4-present`
 - `u4-s-orient` OBJECTIVE `obj-u4-stress`
@@ -5975,8 +9989,28 @@ permitsAppUse=true
 - `u4-st-teach-present-5` REFERENCE `ref-u35-attribution`
 - `u4-st-teach-present-6` REFERENCE `ref-u35-attribution`
 - `u4-st-teach-present-7` REFERENCE `ref-u35-attribution`
+- `u4-st-teach-present-говорить` EXAMPLE `ex-u4-present-говорить-мы`
+- `u4-st-teach-present-говорить` REFERENCE `ref-u35-attribution`
+- `u4-st-teach-present-видеть` EXAMPLE `ex-u4-present-видеть-он`
+- `u4-st-teach-present-видеть` REFERENCE `ref-u35-attribution`
+- `u4-st-teach-present-писать` EXAMPLE `ex-u4-present-писать-вы`
+- `u4-st-teach-present-писать` REFERENCE `ref-u35-attribution`
+- `u4-st-teach-present-идти` EXAMPLE `ex-u4-present-идти-они`
+- `u4-st-teach-present-идти` REFERENCE `ref-u35-attribution`
+- `u4-st-guided-present-говорить` REMEDIATION `u4-st-rem-present`
+- `u4-st-guided-present-говорить` ITEM `u4-g-present-говорить-я`
+- `u4-st-guided-present-видеть` REMEDIATION `u4-st-rem-present`
+- `u4-st-guided-present-видеть` ITEM `u4-g-present-видеть-я`
+- `u4-st-guided-present-писать` REMEDIATION `u4-st-rem-present`
+- `u4-st-guided-present-писать` ITEM `u4-g-present-писать-я`
+- `u4-st-guided-present-идти` REMEDIATION `u4-st-rem-present`
+- `u4-st-guided-present-идти` ITEM `u4-g-present-идти-я`
 - `u4-st-rem-present` EXAMPLE `ex-u4-verb-читать`
 - `u4-st-rem-present` EXAMPLE `ex-u4-verb-делать`
+- `u4-st-rem-present` EXAMPLE `ex-u4-present-говорить-мы`
+- `u4-st-rem-present` EXAMPLE `ex-u4-present-видеть-он`
+- `u4-st-rem-present` EXAMPLE `ex-u4-present-писать-вы`
+- `u4-st-rem-present` EXAMPLE `ex-u4-present-идти-они`
 - `u4-st-check-present` REMEDIATION `u4-st-rem-present`
 - `u4-st-check-present` ITEM `u4-i-verb-говорить-мы`
 - `u4-st-check-present` ITEM `u4-i-verb-видеть-он`
@@ -5995,19 +10029,121 @@ permitsAppUse=true
 - `u4-st-check-stress` ITEM `u4-i-stress-1f37b6b2`
 - `u4-st-check-stress` ITEM `u4-i-stress-2114b12f`
 - `u4-s-nominative` OBJECTIVE `obj-u4-nominative`
+- `u4-s-nominative` OBJECTIVE `obj-u4-nominative-gloss-reference`
 - `u4-st-teach-nominative-1` REFERENCE `ref-u35-attribution`
 - `u4-st-teach-nominative-2` REFERENCE `ref-u35-attribution`
 - `u4-st-teach-nominative-3` EXAMPLE `ex-u4-nom-muzh`
 - `u4-st-teach-nominative-3` EXAMPLE `ex-u4-nom-poezd`
+- `u4-st-teach-nominative-3` EXAMPLE `ex-u4-nom-student`
 - `u4-st-teach-nominative-3` REFERENCE `ref-u35-attribution`
+- `u4-st-guided-nominative` REMEDIATION `u4-st-rem-nominative`
+- `u4-st-guided-nominative` EXAMPLE `ex-u4-nom-muzh`
+- `u4-st-guided-nominative` EXAMPLE `ex-u4-nom-poezd`
+- `u4-st-guided-nominative` ITEM `u4-g-nom-role`
 - `u4-st-rem-nominative` EXAMPLE `ex-u4-nom-muzh`
 - `u4-st-rem-nominative` EXAMPLE `ex-u4-nom-poezd`
+- `u4-st-rem-nominative` EXAMPLE `ex-u4-nom-student`
 - `u4-st-check-nominative` REMEDIATION `u4-st-rem-nominative`
-- `u4-st-check-nominative` ITEM `u4-i-nom-muzh`
-- `u4-st-check-nominative` ITEM `u4-i-nom-poezd`
+- `u4-st-check-nominative` ITEM `u4-i-nom-role-train`
+- `u4-st-check-nominative` ITEM `u4-i-nom-role-student`
+- `u4-st-optional-nominative-gloss` REMEDIATION `u4-st-rem-optional-nominative-gloss`
+- `u4-st-optional-nominative-gloss` ITEM `u4-g-nominative-1`
+- `u4-st-optional-nominative-gloss` ITEM `u4-i-nom-muzh`
+- `u4-st-optional-nominative-gloss` ITEM `u4-i-nom-poezd`
+- `u4-st-rem-optional-nominative-gloss` EXAMPLE `ex-u4-nom-muzh`
+- `u4-st-rem-optional-nominative-gloss` EXAMPLE `ex-u4-nom-poezd`
 - `u4-s-book` OBJECTIVE `obj-u4-book`
 - `u4-st-book-work` REFERENCE `ref-book-topics`
 - `u4-st-book-work` REFERENCE `ref-u35-attribution`
+- `obj-u4-nominative` PROVENANCE `prov-ca-4-1`
+- `obj-u4-pronouns` PROVENANCE `prov-ca-4-229`
+- `obj-u4-pronouns` PROVENANCE `prov-ca-4-230`
+- `obj-u4-pronouns` PROVENANCE `prov-ca-4-231`
+- `obj-u4-nominative` PROVENANCE `prov-ca-repair-4-11131`
+- `obj-u4-nominative` PROVENANCE `prov-ca-repair-4-11132`
+- `obj-u4-nominative` PROVENANCE `prov-ca-repair-4-11133`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-check-body`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-guided-body`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-objective-title`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-optional-body`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-optional-rem-body`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-optional-rem-title`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-optional-title`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-reference-title`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-rem-body`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-rem-title`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-student-note`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-teach-0-body`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-teach-0-title`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-teach-1-body`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-teach-1-title`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-teach-2-body`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-teach-2-title`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-g-nom-role-0`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-g-nom-role-1`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-g-nom-role-2`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-g-nom-role-feedback`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-g-nom-role-prompt`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-g-nom-role-reason`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-u4-g-nominative-1-feedback`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-u4-g-nominative-1-prompt`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-u4-i-nom-muzh-feedback`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-u4-i-nom-muzh-prompt`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-u4-i-nom-poezd-feedback`
+- `obj-u4-nominative-gloss-reference` PROVENANCE `prov-ca-u4-role-u4-i-nom-poezd-prompt`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-0`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-1`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-2`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-feedback`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-prompt`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-student-reason`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-0`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-1`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-2`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-feedback`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-prompt`
+- `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-reason`
+- `obj-u4-present` PROVENANCE `prov-cc015-complete-repair`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-example-note`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-guide-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-guide-feedback`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-guide-prompt`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-guide-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-rationale-0`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-rationale-2`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-rationale-3`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-example-note`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-guide-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-guide-feedback`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-guide-prompt`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-guide-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-rationale-0`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-rationale-2`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-rationale-3`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-example-note`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-guide-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-guide-feedback`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-guide-prompt`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-guide-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-rationale-0`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-rationale-2`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-rationale-3`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-example-note`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-guide-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-guide-feedback`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-guide-prompt`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-guide-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-rationale-0`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-rationale-2`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-rationale-3`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-title`
 - `obj-u4-nominative` PROVENANCE `prov-u4-cases-default`
 - `obj-u4-nominative` PROVENANCE `prov-u4-cases-six`
 - `obj-u4-present` PROVENANCE `prov-u4-form-видеть-вы`
@@ -6104,6 +10240,9 @@ permitsAppUse=true
 - `obj-u4-pronouns` PROVENANCE `prov-u4-pronoun-оно`
 - `obj-u4-pronouns` PROVENANCE `prov-u4-pronoun-ты`
 - `obj-u4-pronouns` PROVENANCE `prov-u4-pronoun-я`
+- `obj-u4-nominative` PROVENANCE `prov-u4-role-native-husband`
+- `obj-u4-nominative` PROVENANCE `prov-u4-role-native-student`
+- `obj-u4-nominative` PROVENANCE `prov-u4-role-native-train`
 - `obj-u4-present` PROVENANCE `prov-u4-verb-gloss-видеть`
 - `obj-u4-present` PROVENANCE `prov-u4-verb-gloss-делать`
 - `obj-u4-present` PROVENANCE `prov-u4-verb-gloss-жить`

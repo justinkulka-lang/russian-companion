@@ -1,5 +1,8 @@
 package dev.russiancompanion.data.local
 
+import dev.russiancompanion.v2.curriculum.*
+import dev.russiancompanion.v2.data.V2ReviewAssignmentEntity
+import dev.russiancompanion.v2.data.V2ReviewAnswerEntity
 import android.content.Context
 import androidx.room.Room
 import dev.russiancompanion.data.local.seed.BundledContentSeeder
@@ -874,6 +877,9 @@ internal class LocalStore private constructor(
             bookmarks = dao.bookmarks().map { it.toView() },
             notes = dao.notes().map { it.toView() },
             tutorItems = dao.tutorQueue().map { it.toView() },
+            reviewAssignments = readReviewAssignments(), reviewAnswers = readReviewAnswers(),
+            unitReviewCompletions = dao.unitCompletions().associate { it.unitNumber to CumulativeUnitCompletion(
+                it.preReviewActivation, it.reviewPolicyDigest, it.reviewAssignmentId, it.reviewCompletionOrder) },
         )
     }
 
@@ -1308,6 +1314,7 @@ internal class LocalStore private constructor(
         nextSessionId: String?,
         nextResumeDigest: String,
         nextResumeSchema: Int,
+        pack: V2CurriculumPack? = null,
     ) = v2AdvanceUnitIfCurrentAsync(
         learnerMutationEpoch(),
         unitNumber,
@@ -1316,6 +1323,7 @@ internal class LocalStore private constructor(
         nextSessionId,
         nextResumeDigest,
         nextResumeSchema,
+        pack,
     )
 
     internal suspend fun v2AdvanceUnitIfCurrentAsync(
@@ -1326,6 +1334,7 @@ internal class LocalStore private constructor(
         nextSessionId: String?,
         nextResumeDigest: String,
         nextResumeSchema: Int,
+        pack: V2CurriculumPack? = null,
     ): Boolean = withContext(ioDispatcher) {
         if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
         val digestGoverned = nextResumeDigest.length == 64 &&
@@ -1334,8 +1343,16 @@ internal class LocalStore private constructor(
             error("unverified position")
         }
         database.runInTransaction {
+            val latest = readV2Learner()
+            if (unitNumber in 3..30 && pack == null) error("Unit $unitNumber requires verified cumulative-review evidence")
+            if (pack != null && (!canOpenUnit(unitState(pack, pack.unit(unitNumber) ?: error("missing unit"), latest)) ||
+                !advancementDecision(pack, pack.unit(unitNumber)!!, latest).allowed))
+                error("current advancement evidence is incomplete")
+            val assignment = if (pack != null) currentCumulativeAssignment(pack, latest, unitNumber) else null
             database.v2().upsertUnitCompletion(
-                dev.russiancompanion.v2.data.V2UnitCompletionEntity(unitNumber, recordedAtLocal),
+                dev.russiancompanion.v2.data.V2UnitCompletionEntity(unitNumber, recordedAtLocal, false,
+                    assignment?.policyDigest.orEmpty(), assignment?.id.orEmpty(),
+                    if (assignment == null) 0 else database.v2().maxReviewOrder()),
             )
             if (failAdvanceAfterCompletionForTests) {
                 failAdvanceAfterCompletionForTests = false
@@ -1394,6 +1411,63 @@ internal class LocalStore private constructor(
         }
     }
 
+    private fun readReviewAssignments(): List<CumulativeReviewAssignment> = database.v2().reviewAssignments().map {
+        backupJson.decodeFromString(CumulativeReviewAssignment.serializer(), it.document)
+    }
+    private fun readReviewAnswers(): List<CumulativeReviewAnswer> = database.v2().reviewAnswers().map {
+        backupJson.decodeFromString(CumulativeReviewAnswer.serializer(), it.document)
+    }
+    internal fun cumulativeReviewHistory(): Pair<List<CumulativeReviewAssignment>, List<CumulativeReviewAnswer>> =
+        call { readReviewAssignments() to readReviewAnswers() }
+
+    /** Explicit mutating open; read-only progress never creates an assignment. */
+    internal fun openUnit3CumulativeReview(pack: V2CurriculumPack, epoch: Long): CumulativeReviewAssignment? =
+        openCumulativeReview(pack, 3, epoch)
+
+    internal fun openCumulativeReview(pack: V2CurriculumPack, targetUnit: Int, epoch: Long): CumulativeReviewAssignment? = call {
+        if (!learnerMutationCurrent(epoch)) return@call null
+        var result: CumulativeReviewAssignment? = null
+        database.runInTransaction {
+            val learner = readV2Learner()
+            val existing = readReviewAssignments().lastOrNull { it.targetUnit == targetUnit && reviewAssignmentCurrent(pack, it) }
+            if (existing != null) {
+                if (dev.russiancompanion.v2.curriculum.reviewAssignmentEligible(pack, learner, existing)) result = existing
+                return@runInTransaction
+            }
+            val boundary = database.v2().maxReviewOrder()
+            val candidate = createCumulativeReviewAssignment(pack, learner, targetUnit, java.util.UUID.randomUUID().toString(), boundary)
+                ?: return@runInTransaction
+            database.v2().insertReviewAssignment(V2ReviewAssignmentEntity(candidate.id, candidate.targetUnit,
+                backupJson.encodeToString(CumulativeReviewAssignment.serializer(), candidate)))
+            result = candidate
+        }
+        result
+    }
+
+    /** Only this API allocates review answer order; callers cannot supply a correct flag. */
+    internal fun answerCumulativeReview(pack: V2CurriculumPack, assignmentId: String, slotIndex: Int,
+                                       selected: String, epoch: Long): Boolean = call {
+        if (!learnerMutationCurrent(epoch)) return@call false
+        var saved = false
+        database.runInTransaction {
+            val a = readReviewAssignments().singleOrNull { it.id == assignmentId } ?: return@runInTransaction
+            if (!reviewAssignmentCurrent(pack, a) || slotIndex !in a.slots.indices) return@runInTransaction
+            if (!dev.russiancompanion.v2.curriculum.reviewAssignmentEligible(pack, readV2Learner(), a)) return@runInTransaction
+            val item = pack.item(a.slots[slotIndex].itemId) ?: return@runInTransaction
+            if (selected !in item.options) return@runInTransaction
+            val latest = readReviewAnswers().lastOrNull { it.assignmentId == a.id && it.slotIndex == slotIndex }
+            if (latest?.selected == selected) { saved = true; return@runInTransaction }
+            val max = database.v2().maxReviewOrder()
+            if (max == Long.MAX_VALUE) error("review-order-exhausted")
+            val answer = CumulativeReviewAnswer(java.util.UUID.randomUUID().toString(), a.id, a.digest,
+                slotIndex, selected, max + 1)
+            database.v2().insertReviewAnswer(V2ReviewAnswerEntity(answer.id, a.id, answer.acceptedOrder,
+                backupJson.encodeToString(CumulativeReviewAnswer.serializer(), answer)))
+            saved = true
+        }
+        saved
+    }
+
     internal fun governedLearnerDocument(): GovernedLearnerDocument = call { readGovernedLearnerDocument() }
 
     internal fun governedLearnerFingerprint(): String = call {
@@ -1413,7 +1487,11 @@ internal class LocalStore private constructor(
         document: GovernedLearnerDocument,
         recordings: List<StagedRecording>,
     ): GovernedReplaceOutcome = call {
-        if (acceptedOrderDefects(document.attempts) != null) return@call GovernedReplaceOutcome.UNCHANGED
+        if (document.schemaVersion !in 1..BACKUP_SCHEMA_VERSION ||
+            (document.schemaVersion == 1 && (document.reviewAssignments.isNotEmpty() || document.reviewAnswers.isNotEmpty())) ||
+            dev.russiancompanion.v2.backup.completionActivationDefects(document) != null ||
+            reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null ||
+            acceptedOrderDefects(document.attempts) != null) return@call GovernedReplaceOutcome.UNCHANGED
         val inputs = recordings.map { it.file }
         BackupWorkRegistry.holdRecordings(inputs)
         try {
@@ -1538,12 +1616,15 @@ internal class LocalStore private constructor(
         if (document.activityLogs.any { !known<ActivityCategory>(it.category) }) return false
         if (document.planInstances.any { !known<CompletionState>(it.completionState) }) return false
         if (document.recordings.any { recording ->
+                // Replacement cleanup reserves these suffixes for temporary swap files.
+                val name = File(recording.localFileReference).name
                 bundled.audio(recording.audioModelId) == null ||
                     !known<CompletionState>(recording.completionState) ||
                     (recording.activityLogId != null && recording.activityLogId !in activityIds) ||
                     recording.localFileReference.isBlank() ||
                     recording.localFileReference.contains("..") ||
-                    recording.localFileReference.startsWith("/")
+                    recording.localFileReference.startsWith("/") ||
+                    name.endsWith(".incoming") || name.endsWith(".retired")
             }
         ) {
             return false
@@ -1562,6 +1643,8 @@ internal class LocalStore private constructor(
         users.deleteAllPlanInstances()
         users.deleteLearnerState()
         users.deleteAllExports()
+        curriculum.deleteReviewAnswers()
+        curriculum.deleteReviewAssignments()
         curriculum.deleteAttempts()
         curriculum.deleteSteps()
         curriculum.deleteBookmarks()
@@ -1653,6 +1736,8 @@ internal class LocalStore private constructor(
                 ),
             )
         }
+        document.reviewAssignments.forEach { curriculum.insertReviewAssignment(V2ReviewAssignmentEntity(it.id, it.targetUnit, backupJson.encodeToString(CumulativeReviewAssignment.serializer(), it))) }
+        document.reviewAnswers.forEach { curriculum.insertReviewAnswer(V2ReviewAnswerEntity(it.id, it.assignmentId, it.acceptedOrder, backupJson.encodeToString(CumulativeReviewAnswer.serializer(), it))) }
         curriculum.upsertProfile(document.profile.toEntity())
         document.steps.forEach {
             curriculum.upsertStep(
@@ -1721,7 +1806,7 @@ internal class LocalStore private constructor(
             )
         }
         document.bookAttestations.forEach { curriculum.upsertBookAttestation(V2BookAttestationEntity(it.unitNumber, it.recordedAtLocal)) }
-        document.unitCompletions.forEach { curriculum.upsertUnitCompletion(V2UnitCompletionEntity(it.unitNumber, it.recordedAtLocal)) }
+        document.unitCompletions.forEach { curriculum.upsertUnitCompletion(V2UnitCompletionEntity(it.unitNumber, it.recordedAtLocal, it.preReviewActivation, it.reviewPolicyDigest, it.reviewAssignmentId, it.reviewCompletionOrder)) }
     }
 
     private fun BackupProfile.toEntity(): V2ProfileEntity {
@@ -2052,6 +2137,8 @@ internal class LocalStore private constructor(
         val profile = readV2Profile()
         return GovernedLearnerDocument(
             schemaVersion = BACKUP_SCHEMA_VERSION,
+            reviewAssignments = readReviewAssignments(),
+            reviewAnswers = readReviewAnswers(),
             profile = BackupProfile(
                 id = profile.id,
                 onboardingCompleted = profile.onboardingCompleted,
@@ -2110,7 +2197,7 @@ internal class LocalStore private constructor(
                 BackupBookAttestation(it.unitNumber, it.recordedAtLocal)
             },
             unitCompletions = curriculum.unitCompletions().sortedBy { it.unitNumber }.map {
-                BackupUnitCompletion(it.unitNumber, it.recordedAtLocal)
+                BackupUnitCompletion(it.unitNumber, it.recordedAtLocal, it.preReviewActivation, it.reviewPolicyDigest, it.reviewAssignmentId, it.reviewCompletionOrder)
             },
             learnerState = users.learner(LearnerStateEntity.LOCAL_ID)?.let {
                 BackupLearnerState(it.id, it.activeSegmentId, it.onboardingCompleted, it.planContext)
@@ -2207,7 +2294,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings"))
             store.applySeed(readSeed(appContext))
@@ -2225,7 +2312,7 @@ internal class LocalStore private constructor(
         fun openNamed(context: Context, name: String): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, name)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings-$name"))
             store.applySeed(null)

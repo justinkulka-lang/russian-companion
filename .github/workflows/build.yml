@@ -1,16 +1,47 @@
-name: Build
+name: Engineering verification
 
 on:
   push:
   pull_request:
 
 jobs:
-  assemble:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           fetch-depth: 0
+      - name: Archive exact verification source
+        run: |
+          mkdir -p verification-evidence
+          git archive --format=tar.gz HEAD > verification-evidence/source.tar.gz
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          import subprocess
+          from pathlib import Path
+          archive = Path("verification-evidence/source.tar.gz")
+          identity = {
+              "schemaVersion": 1,
+              "kind": "engineering-verification-source",
+              "checkoutCommit": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
+              "tree": subprocess.check_output(["git", "rev-parse", "HEAD^{tree}"], text=True).strip(),
+              "runId": os.environ["GITHUB_RUN_ID"],
+              "event": os.environ["GITHUB_EVENT_NAME"],
+              "archiveBytes": archive.stat().st_size,
+              "archiveSha256": hashlib.sha256(archive.read_bytes()).hexdigest(),
+              "publicRelease": "NOT_APPROVED",
+          }
+          Path("verification-evidence/source-identity.json").write_text(json.dumps(identity, indent=2) + "\n")
+          PY
+      - name: Retain exact verification source
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: engineering-verification-source
+          if-no-files-found: error
+          retention-days: 90
+          path: verification-evidence/
       - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4.9.1
         with:
           distribution: temurin
@@ -19,57 +50,30 @@ jobs:
         uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407 # v3.2.2
         with:
           packages: platform-tools
+          accept-android-sdk-licenses: 'true'
+          log-accepted-android-sdk-licenses: 'false'
       - name: Install SDK packages
         run: |
-          yes | sdkmanager --licenses >/dev/null || true
           sdkmanager --install "platforms;android-37.0" "build-tools;36.0.0"
-      - name: Assemble debug, lint, gate attachment, and unit tests
-        run: ./gradlew assembleDebug lintDebug verifyReleaseGateAttachment testDebugUnitTest --stacktrace
-      - name: Record acceptance-candidate APK identity
+      - name: Compile, lint, verify gate attachment, and run host tests
         run: |
-          python3 - <<'PY'
-          import hashlib
-          import json
-          import os
-          from pathlib import Path
-
-          apk = Path("app/build/outputs/apk/debug/app-debug.apk")
-          if not apk.is_file() or apk.stat().st_size == 0:
-              raise SystemExit(f"missing debug APK {apk}")
-          data = apk.read_bytes()
-          identity = {
-              "schemaVersion": 1,
-              "kind": "physical-device-acceptance-candidate",
-              "publicRelease": "NOT_APPROVED",
-              "frozen": False,
-              "gradleTask": "assembleDebug",
-              "apkFileName": "app-debug.apk",
-              "applicationId": "dev.russiancompanion",
-              "versionName": "2.0.0-dev",
-              "versionCode": 5,
-              "sourceCommit": os.environ["GITHUB_SHA"],
-              "sha256": hashlib.sha256(data).hexdigest(),
-              "apkBytes": len(data),
-              "runId": os.environ["GITHUB_RUN_ID"],
-              "runUrl": (
-                  f"{os.environ['GITHUB_SERVER_URL']}/"
-                  f"{os.environ['GITHUB_REPOSITORY']}/actions/runs/"
-                  f"{os.environ['GITHUB_RUN_ID']}"
-              ),
-              "artifactName": "acceptance-candidate-debug-apk",
+          cat > verification-evidence/exporter-exclusions.gradle <<'GRADLE'
+          allprojects {
+              tasks.withType(Test).configureEach {
+                  // These four exporters overwrite retained screenshot evidence (16 methods).
+                  exclude '**/VisualReviewCaptureTest*', '**/Units35ChunkCaptureTest*', '**/Units610ChunkCaptureTest*', '**/Units1115GapCaptureTest*'
+              }
           }
-          Path("artifact-identity.json").write_text(
-              json.dumps(identity, indent=2) + "\n",
-              encoding="utf-8",
-          )
-          print(json.dumps(identity, indent=2))
-          PY
-      - name: Upload acceptance-candidate debug APK
+          GRADLE
+          ./gradlew -I verification-evidence/exporter-exclusions.gradle compileDebugSources lintDebug verifyReleaseGateAttachment testDebugUnitTest --continue --stacktrace
+      - name: Retain test and lint reports
+        if: ${{ always() }}
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: acceptance-candidate-debug-apk
-          if-no-files-found: error
+          name: engineering-test-reports
+          if-no-files-found: warn
           retention-days: 90
           path: |
-            app/build/outputs/apk/debug/app-debug.apk
-            artifact-identity.json
+            app/build/test-results/testDebugUnitTest/
+            app/build/reports/tests/testDebugUnitTest/
+            app/build/reports/lint-results-debug.*

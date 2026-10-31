@@ -370,7 +370,7 @@ class Units610InstructionalValidityTest {
         val pack = pack()
         val replacement = "a different frozen span that keeps the truncated record id"
         val hash = sha256(replacement)
-        listOf("u6-i-third-1" to "SOURCE_SUPPLIED_PAIR", "u8-i-availability-2" to "RULE_CLASSIFIES_SOURCE_EXAMPLE").forEach { (itemId, kind) ->
+        listOf("u6-i-third-1" to "SOURCE_SUPPLIED_PAIR", "u8-i-availability-2" to "STATED_APPLICATION").forEach { (itemId, kind) ->
             val seed = pack.items.first { it.id == itemId }
             assertEquals(kind, seed.assessment!!.relationKind)
             val answerId = seed.assessment.relationParticipantIds[1]
@@ -469,16 +469,16 @@ class Units610InstructionalValidityTest {
         val pack = pack()
         data class Boundary(val feature: String, val shown: String, val answer: String)
         val required = listOf(
-            Boundary("FINAL_DIGIT_ONE", "сорок один год", "1 -> nominative"),
-            Boundary("COMPOUND_22", "двадцать два часа", "2, 3, 4 -> genitive singular"),
-            Boundary("FINAL_DIGIT_FIVE_PLUS", "пять часов", "5 and more -> genitive plural"),
-            Boundary("FINAL_ZERO_OR_TEN", "десять копеек", "5 and more -> genitive plural"),
-            Boundary("TEENS_OVERRIDE", "двести тринадцать собак", "5 and more -> genitive plural"),
-            Boundary("TEEN_VALUE", "шестнадцать рублей", "5 and more -> genitive plural"),
-            Boundary("COMPOUND_21", "двадцать один час", "1 -> nominative"),
+            Boundary("FINAL_DIGIT_ONE", "сорок один год", "In this basic counting phrase, the noun is nominative singular."),
+            Boundary("COMPOUND_22", "двадцать два часа", "In this basic counting phrase, the noun is genitive singular."),
+            Boundary("FINAL_DIGIT_FIVE_PLUS", "пять часов", "In this basic counting phrase, the noun is genitive plural."),
+            Boundary("FINAL_ZERO_OR_TEN", "десять копеек", "In this basic counting phrase, the noun is genitive plural."),
+            Boundary("TEENS_OVERRIDE", "двести тринадцать собак", "In this basic counting phrase, the noun is genitive plural."),
+            Boundary("TEEN_VALUE", "шестнадцать рублей", "In this basic counting phrase, the noun is genitive plural."),
+            Boundary("COMPOUND_21", "двадцать один час", "In this basic counting phrase, the noun is nominative singular."),
             Boundary("HUNDREDS_COMPOSITION", "215", "две́сти пятна́дцать"),
             Boundary("THOUSANDS_COMPOSITION", "1,984", "ты́сяча девятьсо́т во́семьдесят четы́ре"),
-            Boundary("ODIN_MASCULINE", "мальчик", "один"),
+            Boundary("ODIN_MASCULINE", "час", "один"),
             Boundary("ODIN_FEMININE", "девушка", "одна"),
             Boundary("ODIN_NEUTER", "животное", "одно"),
             Boundary("ODIN_PLURAL", "джинсы", "одни"),
@@ -502,7 +502,7 @@ class Units610InstructionalValidityTest {
             assertFalse(V2Validator.isDirectEnglishMatch(match))
         }
         val pattern = independent.filter { it.objectiveId == "obj-u9-pattern" }
-        assertTrue(pattern.any { it.answer.contains("must be declined") })
+        assertTrue(pattern.any { it.answer.contains("both numeral and noun are declined") })
         val unit7 = pack.unit(7)!!
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit7.readiness)
         val lesson = unit7.sessions.flatMap { it.steps }.joinToString("\n") { it.body + (it.bookDirection ?: "") }

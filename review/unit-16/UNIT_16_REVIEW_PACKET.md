@@ -11,12 +11,12 @@ Unit 16 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 100ed31a3e3a8fee3ce6b7f8fc186a7ff1422cee
-- Unit content-review SHA-256: 6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5
+- Curriculum source commit: 9ee2fa6bf235e6f310f8b5005a26644e57cddafc
+- Unit content-review SHA-256: 31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87
 - Mapping-package SHA-256: f74c6fa2206f8faad47ad15e91b8dce61f886293f64d9a3f2e47947b2d5db8e7
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 6635eeffba5ea18c45cd48727478968cc02671da1052d2aaf25e6b4eaaa4e6db
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: 0f4bc19b56328dc9eb27cc8e0453280f49cb774725c19ead3618e250290b77e1
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=90
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 65e7eb78d5faa17ce5694c924cbccdeaa1bb090c75946e850254562b70cd813a
+- Content hash: 7abb028ee10ebd360d4032fa9fb2daa418460b0981cee6c3941225353801ef47
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=10
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u16-inst-sg`
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 17949ea8cee45278f262c330c7ecfdd6329322cc27c0395833fe47ecd3c596e6
+- Content hash: a0ecbc8872b7ba7bc62d362a395938379eee2ea900280735cc88afea7379256f
 
-title=Choose the admitted instrumental singular row
+title=Recognize instrumental singular nouns
 kind=RECOGNITION
 unitNumber=16
 instruction=u16-st-orient,u16-st-teach-inst-sg-1,u16-st-teach-inst-sg-2,u16-st-teach-inst-sg-3,u16-st-teach-inst-sg-4,u16-st-teach-inst-sg-5,u16-st-teach-inst-sg-6,u16-st-teach-inst-sg-7
@@ -132,9 +132,9 @@ remediation=u16-st-rem-inst-sg
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1717306060e4fdd6c4e1cc708b9774340da2e41d06b441b609f42d856a666ffe
+- Content hash: d4c4e1e3dfdfd417676a6ee5da31a6c3f68a709d015d2c1af505ed69cf6ef953
 
-title=Choose the admitted instrumental plural row
+title=Recognize instrumental plural nouns
 kind=RECOGNITION
 unitNumber=16
 instruction=u16-st-orient,u16-st-teach-inst-pl-1,u16-st-teach-inst-pl-2,u16-st-teach-inst-pl-3,u16-st-teach-inst-pl-4,u16-st-teach-inst-pl-5,u16-st-teach-inst-pl-6,u16-st-teach-inst-pl-7
@@ -151,9 +151,9 @@ remediation=u16-st-rem-inst-pl
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 556c788488432d1f184b4a0a8fb27c85787667439b8a252a23a51b08dda4b6bf
+- Content hash: 73f64377f5b63f8525a00604ccecfe3e8400fe50a87ae4e44b728193d38a316b
 
-title=Choose the admitted instrumental adjective row
+title=Recognize instrumental adjective agreement
 kind=RECOGNITION
 unitNumber=16
 instruction=u16-st-orient,u16-st-teach-inst-adj-1,u16-st-teach-inst-adj-2,u16-st-teach-inst-adj-3,u16-st-teach-inst-adj-4
@@ -170,9 +170,9 @@ remediation=u16-st-rem-inst-adj
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cc7e846d93e6b1dbc60d160491f61e67c0628d1b5a64cfda67639ce69c6fb29b
+- Content hash: 52ab8e5e189b52ad2699099a87fdd645107fb7eef859050224c8766984635055
 
-title=Choose the admitted means or accompaniment line
+title=Distinguish means, accompaniment and location
 kind=RECOGNITION
 unitNumber=16
 instruction=u16-st-orient,u16-st-teach-inst-means-1,u16-st-teach-inst-means-2,u16-st-teach-inst-means-3
@@ -189,9 +189,9 @@ remediation=u16-st-rem-inst-means
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3032bd33a1bab9dfd0b546c244c78df4d049e0311b09f5ce26c6ce896b1a68b2
+- Content hash: 02826ae455d4fe09f5b0262a49c0268b2a5223afef3bbdafe10e1b09c1f13103
 
-title=Choose the admitted English label for the shown preposition
+title=Recognize selected instrumental preposition meanings
 kind=RECOGNITION
 unitNumber=16
 instruction=u16-st-orient,u16-st-teach-inst-prep-1,u16-st-teach-inst-prep-2,u16-st-teach-inst-prep-3
@@ -208,9 +208,9 @@ remediation=u16-st-rem-inst-prep
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8e9d356029b1fc4f8db3ef0c776870b69cc1eb426440c8b46ffa81439904ae5e
+- Content hash: e4088a5e18ae3ea799164400d69348fd101d31fe52706f35bf4258550df1ba6f
 
-title=Choose the admitted gloss beside the shown complement
+title=Recognize verbs used with instrumental complements
 kind=RECOGNITION
 unitNumber=16
 instruction=u16-st-orient,u16-st-teach-complements-1,u16-st-teach-complements-2,u16-st-teach-complements-3
@@ -283,12 +283,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0b68ed1bf329ca07aa6b71c487d655242f1c05a88307c51798c407ce5ba4cf10
+- Content hash: f0025d587fbce65367ca8db1b221fc7591f52a8b581e8e652a9e9e51dfebe5b4
 
-title=Choose the admitted instrumental singular row
+title=Recognize instrumental singular nouns
 estimatedMinutes=12
 objectives=obj-u16-inst-sg
-steps=u16-st-teach-inst-sg-1,u16-st-guided-inst-sg-1,u16-st-teach-inst-sg-2,u16-st-teach-inst-sg-3,u16-st-teach-inst-sg-4,u16-st-teach-inst-sg-5,u16-st-teach-inst-sg-6,u16-st-teach-inst-sg-7,u16-st-rem-inst-sg,u16-st-check-inst-sg
+steps=u16-st-teach-inst-sg-1,u16-st-teach-inst-sg-2,u16-st-teach-inst-sg-3,u16-st-teach-inst-sg-4,u16-st-teach-inst-sg-5,u16-st-teach-inst-sg-6,u16-st-teach-inst-sg-7,u16-st-guided-inst-sg-1,u16-st-rem-inst-sg,u16-st-check-inst-sg
 
 ### STEP `u16-st-teach-inst-sg-1`
 
@@ -298,11 +298,11 @@ steps=u16-st-teach-inst-sg-1,u16-st-guided-inst-sg-1,u16-st-teach-inst-sg-2,u16-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0116f7a337e94ec957379a4065bd59d671d71872eab97b4ff24e0a81cbd608ae
+- Content hash: de532c935ec878d6de6e196c33e22a3456f8791bcd420ff22d5aa3ea19c69caa
 
 kind=TEACH
-title=Admitted lines
-body=сто́л — table. столо́м — table. 
+title=One noun, different cases
+body=The instrumental case can mark the means used to do something. These checks first teach its forms. сто́л is the dictionary form, meaning table; столо́м is instrumental singular. The word still names a table: the ending marks its grammatical role, not a new vocabulary meaning.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -312,28 +312,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u16-st-guided-inst-sg-1`
-
-- Objectives: obj-u16-inst-sg
-- Sessions: u16-s-inst-sg
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9767038a3c6a40852818a4b0210cc1dc320ac55764af8c11d3e8c9ec515dc1fd
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u16-g-inst-sg-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u16-st-rem-inst-sg
-
 ### STEP `u16-st-teach-inst-sg-2`
 
 - Objectives: obj-u16-inst-sg
@@ -342,11 +320,11 @@ remediationStepId=u16-st-rem-inst-sg
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ec7fe3b94a0a4b3899b51c7ed706ca4796c40761128a374c4ea28061e3af2dcc
+- Content hash: abe2d28fe7e65a28fc48a311435ad8a13fec97ecfcec55b9419ff8832c058c7b
 
 kind=TEACH
-title=Admitted instruction
-body=Nouns ending in о or a consonant have -ом in the instrumental.
+title=A bounded noun ending
+body=The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal. Here, keep the stem of сто́л and add -ом to obtain столо́м. Learn the stress with the whole form.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -364,11 +342,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0b7381ad353f773c6b2b3d7750b75139df80fe56dac3803be26be87d12600f1c
+- Content hash: ad979461351342bcbd3af5a3a4e482c47097502b95c5a2de7b6794b3c40a96ef
 
 kind=TEACH
-title=Admitted lines
-body=столу́ — table. столе́ — table. 
+title=Compare the other cases
+body=столу́ is dative singular and столе́ is prepositional singular. Both belong to the same noun, but neither has the instrumental singular ending. For an instrumental singular request, select столо́м rather than selecting a form merely because its English gloss is table.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -386,11 +364,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 978e4470eb2d64c4e04cf2d61cf66e5431229ea4358c0c98e14b961da4335208
+- Content hash: d9637169d8f783264db635921e28d5c24c2e2f41e2b9d4bf98d6a7d29d3de034
 
 kind=TEACH
-title=Admitted lines
-body=до́м — house. до́мом — house. 
+title=Work the house form
+body=до́м means house in its dictionary form. до́мом is instrumental singular: keep the stem and add -ом. Given до́м and an instrumental singular request, choose до́мом. This is the same ending pattern as the table form.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -408,11 +386,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 465c5726609c8636c25f1ecc204b5c2cb5b7c03ee376a6d39dd8eb56c5601633
+- Content hash: 4d20e2f0504b37d5e258c6f6262e34f700a0303a831a4ae8690f2dcd7736de4f
 
 kind=TEACH
-title=Admitted lines
-body=до́му — house. до́ме — house. 
+title=Check case before choosing
+body=до́му is dative singular; до́ме is prepositional singular. They do not answer an instrumental singular request. Compare the entire ending with до́мом, and notice that this noun keeps its stem stress.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -430,11 +408,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a29be0db5914cf8649ccb0719233b5e17c3f9a196bec52de349e12ab5bf6e6ef
+- Content hash: 28f885ef2e1e848bfb3bf9cd100bf314f4975593740785d39f7a8eddef461236
 
 kind=TEACH
-title=Admitted lines
-body=поездом — Train. карандашом — Pencil. 
+title=Meaning and form together
+body=поездом is instrumental singular of the noun meaning train; карандашом is instrumental singular of the noun meaning pencil. The pencil check asks for that meaning as well as the case. Its other options refer to train and husband. A correct case alone does not identify the requested noun.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -452,11 +430,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6dced1423689bf8d9d731fbee5379a089eac4188eaf4abed647f029af85844a1
+- Content hash: b75f5f6d876a0ea4291f95712aca3f40f801df61b99d7345064502b44265f435
 
 kind=TEACH
-title=Admitted lines
-body=книгой — Book. 
+title=A different singular pattern
+body=книгой is the instrumental singular form for book. This noun has a different ending from the -ом shown for table and house. Do not attach the same ending to every noun. These examples introduce selected singular patterns, not the full instrumental paradigm.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -466,6 +444,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u16-st-guided-inst-sg-1`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-inst-sg
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f84e136d945e9257147f76f288a564f10f1f491d18ee5c6a5b983e330488fc85
+
+kind=GUIDED
+title=Guided practice
+body=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+dominantAction=Continue
+references=
+items=u16-g-inst-sg-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u16-st-rem-inst-sg
+
 ### STEP `u16-st-rem-inst-sg`
 
 - Objectives: obj-u16-inst-sg
@@ -474,15 +474,27 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1034ff2dbc3a027e44af8c7d28564595bb52d7fe6390068c2a5e1ff2cfab0ebf
+- Content hash: 1f36170a49bf61b87c019927403afb1eeed7fa00a1d8ad3d10eb57296cad0ba1
 
 kind=REMEDIATE
-title=Remediation
-body=Nouns ending in о or a consonant have -ом in the instrumental.
+title=Review the instrumental contrasts
+body=The instrumental case can mark the means used to do something. These checks first teach its forms. сто́л is the dictionary form, meaning table; столо́м is instrumental singular. The word still names a table: the ending marks its grammatical role, not a new vocabulary meaning.
+
+The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal. Here, keep the stem of сто́л and add -ом to obtain столо́м. Learn the stress with the whole form.
+
+столу́ is dative singular and столе́ is prepositional singular. Both belong to the same noun, but neither has the instrumental singular ending. For an instrumental singular request, select столо́м rather than selecting a form merely because its English gloss is table.
+
+до́м means house in its dictionary form. до́мом is instrumental singular: keep the stem and add -ом. Given до́м and an instrumental singular request, choose до́мом. This is the same ending pattern as the table form.
+
+до́му is dative singular; до́ме is prepositional singular. They do not answer an instrumental singular request. Compare the entire ending with до́мом, and notice that this noun keeps its stem stress.
+
+поездом is instrumental singular of the noun meaning train; карандашом is instrumental singular of the noun meaning pencil. The pencil check asks for that meaning as well as the case. Its other options refer to train and husband. A correct case alone does not identify the requested noun.
+
+книгой is the instrumental singular form for book. This noun has a different ending from the -ом shown for table and house. Do not attach the same ending to every noun. These examples introduce selected singular patterns, not the full instrumental paradigm.
 dominantAction=Continue
 references=
 items=
-examples=ex-or-u16-inst-sg-0,ex-or-u16-inst-sg-1
+examples=ex-or-u16-inst-sg-0,ex-or-u16-inst-sg-1,ex-or-u16-inst-sg-2,ex-or-u16-inst-sg-3,ex-or-u16-inst-sg-4,ex-or-u16-inst-sg-5,ex-or-u16-inst-sg-6,ex-or-u16-inst-sg-7,ex-u16-inst-sg-8,ex-u16-inst-sg-9,ex-u16-inst-sg-10
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -496,11 +508,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9d32a513f1390be30bf694e12ac6583523d3f9b9417d69422b65bfa6916ff1ab
+- Content hash: 3e554333b9ebe63e0f46b384bc4270ea14e37fb075e0b1496e9733f70b8892f7
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
 dominantAction=Continue
 references=
 items=u16-i-inst-sg-1,u16-i-inst-sg-2
@@ -518,12 +530,12 @@ remediationStepId=u16-st-rem-inst-sg
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b62b69133cb4163dd5442c5cc5636c9236cbeb0ac5596f91c0599c88a1dcdb3d
+- Content hash: 3c997d86f3f08d06bce12edda234343276713c3529abd744ba22deee2b40f48a
 
-title=Choose the admitted instrumental plural row
+title=Recognize instrumental plural nouns
 estimatedMinutes=12
 objectives=obj-u16-inst-pl
-steps=u16-st-teach-inst-pl-1,u16-st-guided-inst-pl-1,u16-st-teach-inst-pl-2,u16-st-teach-inst-pl-3,u16-st-teach-inst-pl-4,u16-st-teach-inst-pl-5,u16-st-teach-inst-pl-6,u16-st-teach-inst-pl-7,u16-st-rem-inst-pl,u16-st-check-inst-pl
+steps=u16-st-teach-inst-pl-1,u16-st-teach-inst-pl-2,u16-st-teach-inst-pl-3,u16-st-teach-inst-pl-4,u16-st-teach-inst-pl-5,u16-st-teach-inst-pl-6,u16-st-teach-inst-pl-7,u16-st-guided-inst-pl-1,u16-st-rem-inst-pl,u16-st-check-inst-pl
 
 ### STEP `u16-st-teach-inst-pl-1`
 
@@ -533,11 +545,11 @@ steps=u16-st-teach-inst-pl-1,u16-st-guided-inst-pl-1,u16-st-teach-inst-pl-2,u16-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cf5ab7dbc51d0cdd9b1f802af51c3880ada18b182d70c13a9b12824a60d0c8eb
+- Content hash: 863550f51002305bfcad2612602ff7f410a9f6491583a5e3f61bd7891e135ba8
 
 kind=TEACH
-title=Admitted lines
-body=кни́га — book. кни́гами — book. 
+title=Instrumental plural of book
+body=Instrumental plural refers to more than one. кни́га is the dictionary singular form for book; кни́гами is instrumental plural. Keep the stem and use -ами in this pattern. Given an instrumental plural request, choose кни́гами.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -547,28 +559,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u16-st-guided-inst-pl-1`
-
-- Objectives: obj-u16-inst-pl
-- Sessions: u16-s-inst-pl
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 365bd62f8fd14305a45c0af44027136d32b0f636140356e16f9ea2af1a21cbcf
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u16-g-inst-pl-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u16-st-rem-inst-pl
-
 ### STEP `u16-st-teach-inst-pl-2`
 
 - Objectives: obj-u16-inst-pl
@@ -577,11 +567,11 @@ remediationStepId=u16-st-rem-inst-pl
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bac30651c68679570f1876e44cfde703282a24fb915f0438b5b30afc57eb53ae
+- Content hash: f828be1918bb581c6d72d88d5f05921213d619947d30fb366fb00624b3b3c1fc
 
 kind=TEACH
-title=Admitted instruction
-body=There are two general endings for the instrumental plural: ами and ями.
+title=Plural noun endings
+body=Instrumental plural nouns commonly use -ами or -ями, with exceptions. The book, house and table forms shown here use -ами. This is a noun ending; adjectives have their own agreement endings. These checks ask you to recognize the displayed pattern, not derive every noun form.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -599,11 +589,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 80e5daaac9135a0210df9806a381fe2d06e5654c32a0f4924135da1e67179cb2
+- Content hash: 18dc7966af400d27b13d9f3e94259c697d4b3889df0d9fa89e8081cc28cd0194
 
 kind=TEACH
-title=Admitted lines
-body=кни́гам — book. кни́гах — book. 
+title=Compare plural cases
+body=кни́гам is dative plural; кни́гах is prepositional plural. Neither is instrumental plural. Compare their endings with кни́гами: the final vowel is part of the instrumental plural ending here.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -621,11 +611,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b00baf054f98ad97fc014e26228518261fe3c5ae6d3193a031a1e3eb44715f86
+- Content hash: 97d660dae73c079f347d60ad1a1826faf5989568b27ccb506e5e06194d5ca3b5
 
 kind=TEACH
-title=Admitted lines
-body=до́м — house. дома́ми — house. 
+title=Work the house plural
+body=до́м names a house in the dictionary singular. дома́ми is instrumental plural. For this plural case request choose дома́ми, including the stress shown in the retained form.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -643,11 +633,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 44dacf8f975006fadffb0a65c325d97327e1b202b9a46c6fe52b0eb515dd8c6c
+- Content hash: 3a7bd845bc5e6b3098a2f77630eff35efa87cc44a2e2ac01f4de14b7c3e6cd24
 
 kind=TEACH
-title=Admitted lines
-body=дома́м — house. до́мом — house. 
+title=Case and number both matter
+body=дома́м is dative plural. до́мом is instrumental singular. The first has the wrong case; the second has the right case but the wrong number for an instrumental plural request. дома́ми meets both requirements.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -665,11 +655,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ea2bd5eae3c2f79f62c76ffccbd8dfacd5b491ce09a22acd113cc30013c83f8f
+- Content hash: 4669da63a707ff3c9111ff4123401de0e4bd43451df169d2bf1c7422fa8d9c97
 
 kind=TEACH
-title=Admitted lines
-body=сто́л — table. стола́ми — table. 
+title=Work the table plural
+body=сто́л is the dictionary singular form for table. стола́ми is instrumental plural. For an instrumental plural request, select стола́ми and learn its stress with the ending.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -687,11 +677,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8e782d78d3f7d841813739a7814bba1aa9b02efd90f77e430b862bafca136228
+- Content hash: 8bfbde122d65011163bf677d5ec9760595671660fbfb55a662e808955224cd2d
 
 kind=TEACH
-title=Admitted lines
-body=стола́м — table. столо́м — table. 
+title=Reject a singular instrumental
+body=стола́м is dative plural; столо́м is instrumental singular. Neither meets both parts of an instrumental plural request. стола́ми supplies instrumental case and plural number together.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -701,6 +691,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u16-st-guided-inst-pl-1`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-inst-pl
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 23e09dd8dd4e7b98355cbfa3f8c15eac3deb8f23edae835b1f35487bc8f4ee23
+
+kind=GUIDED
+title=Guided practice
+body=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+dominantAction=Continue
+references=
+items=u16-g-inst-pl-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u16-st-rem-inst-pl
+
 ### STEP `u16-st-rem-inst-pl`
 
 - Objectives: obj-u16-inst-pl
@@ -709,15 +721,27 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 234a38ef70e7d42d91c3f88c492312a5059ceb29171cc9de84d13f0e08ec6e65
+- Content hash: af0afb2220c28097520158a23ce985f697ad3c5257005b7a4f53c625061ca53b
 
 kind=REMEDIATE
-title=Remediation
-body=There are two general endings for the instrumental plural: ами and ями.
+title=Review the instrumental contrasts
+body=Instrumental plural refers to more than one. кни́га is the dictionary singular form for book; кни́гами is instrumental plural. Keep the stem and use -ами in this pattern. Given an instrumental plural request, choose кни́гами.
+
+Instrumental plural nouns commonly use -ами or -ями, with exceptions. The book, house and table forms shown here use -ами. This is a noun ending; adjectives have their own agreement endings. These checks ask you to recognize the displayed pattern, not derive every noun form.
+
+кни́гам is dative plural; кни́гах is prepositional plural. Neither is instrumental plural. Compare their endings with кни́гами: the final vowel is part of the instrumental plural ending here.
+
+до́м names a house in the dictionary singular. дома́ми is instrumental plural. For this plural case request choose дома́ми, including the stress shown in the retained form.
+
+дома́м is dative plural. до́мом is instrumental singular. The first has the wrong case; the second has the right case but the wrong number for an instrumental plural request. дома́ми meets both requirements.
+
+сто́л is the dictionary singular form for table. стола́ми is instrumental plural. For an instrumental plural request, select стола́ми and learn its stress with the ending.
+
+стола́м is dative plural; столо́м is instrumental singular. Neither meets both parts of an instrumental plural request. стола́ми supplies instrumental case and plural number together.
 dominantAction=Continue
 references=
 items=
-examples=ex-or-u16-inst-pl-0,ex-or-u16-inst-pl-1
+examples=ex-or-u16-inst-pl-0,ex-or-u16-inst-pl-1,ex-or-u16-inst-pl-2,ex-or-u16-inst-pl-3,ex-or-u16-inst-pl-4,ex-or-u16-inst-pl-5,ex-or-u16-inst-pl-6,ex-or-u16-inst-pl-7,ex-or-u16-inst-pl-8,ex-or-u16-inst-pl-9,ex-or-u16-inst-pl-10,ex-or-u16-inst-pl-11
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -731,11 +755,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8f3e7df02510f456345a443842f935b2c73bacad41cff3533d33fa65e7e63bb6
+- Content hash: 785e19b3f1d9da73ab783fafe32f252ab2aed7bf969819edd76f22ec40239889
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
 dominantAction=Continue
 references=
 items=u16-i-inst-pl-1,u16-i-inst-pl-2
@@ -753,12 +777,12 @@ remediationStepId=u16-st-rem-inst-pl
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8c43d937b6dee6f5b86b074c6917c5c0e36a69996498b28fa2d402c96d480bb8
+- Content hash: 4a713fadeb3ca2d397778ff967abeb8244190e84477417e336f478c141ba4b72
 
-title=Choose the admitted instrumental adjective row
+title=Recognize instrumental adjective agreement
 estimatedMinutes=12
 objectives=obj-u16-inst-adj
-steps=u16-st-teach-inst-adj-1,u16-st-guided-inst-adj-1,u16-st-teach-inst-adj-2,u16-st-teach-inst-adj-3,u16-st-teach-inst-adj-4,u16-st-rem-inst-adj,u16-st-check-inst-adj
+steps=u16-st-teach-inst-adj-1,u16-st-teach-inst-adj-2,u16-st-teach-inst-adj-3,u16-st-teach-inst-adj-4,u16-st-guided-inst-adj-1,u16-st-rem-inst-adj,u16-st-check-inst-adj
 
 ### STEP `u16-st-teach-inst-adj-1`
 
@@ -768,11 +792,11 @@ steps=u16-st-teach-inst-adj-1,u16-st-guided-inst-adj-1,u16-st-teach-inst-adj-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e31467c4666de1d9cb176ce8d92f170ecb0779f105dfd3fe5d89ed6673c31b91
+- Content hash: b6ff5d5e514d262ff4c928efa189b56392eb6dfd18ca4b7364001499c6d30bfc
 
 kind=TEACH
-title=Admitted lines
-body=хоро́ший — good. хоро́шим — good. 
+title=Adjective agreement
+body=An adjective agrees with its noun in case and number, and in gender in the singular. хоро́ший is the masculine dictionary form for good. хоро́шим is its masculine or neuter instrumental singular form. Here the check requests masculine instrumental; it does not ask for an English gloss.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -782,28 +806,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u16-st-guided-inst-adj-1`
-
-- Objectives: obj-u16-inst-adj
-- Sessions: u16-s-inst-adj
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 18dff2502d6189d897ac37f50c1a7adec46850faebd661f840913032442d4a2d
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u16-g-inst-adj-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u16-st-rem-inst-adj
-
 ### STEP `u16-st-teach-inst-adj-2`
 
 - Objectives: obj-u16-inst-adj
@@ -812,11 +814,11 @@ remediationStepId=u16-st-rem-inst-adj
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 558a944bf3590e3735ae27071bd856824bdcba136f617b7927a0237694a6a7c6
+- Content hash: 89b4e8fbda22346707be3628cd18712e29b0ff8489b5a81818869a5a867624ff
 
 kind=TEACH
-title=Admitted instruction
-body=To form masculine and neuter adjectives, the ending is -ым.
+title=Adjective endings differ
+body=Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings. хоро́шим uses -им because of the spelling restriction after its stem-final consonant. Do not apply the noun ending -ом to this adjective.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -834,11 +836,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a8cd1f54385a907772ccac3a3c589d30c6a07c7362a93800ab26756de4fe681f
+- Content hash: c540063d4a087b21772148526182f8fd94378455229c686c98aae1a1b8b3f3c2
 
 kind=TEACH
-title=Admitted lines
-body=хоро́шему — good. хоро́шие — good. 
+title=Compare dative and plural
+body=хоро́шему is dative masculine or neuter singular. хоро́шие is nominative plural. Neither is the masculine instrumental singular form requested here. Work the choice by selecting хоро́шим.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -856,11 +858,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ba193d94e062e3124cde83777ecb1d4f84fb483a5ae844beaa0ad0061a38d197
+- Content hash: d7fca209b48f36d4fa5b8b4bcd41f1aa1e4810c6fae251f8db2e9eb2b14467e5
 
 kind=TEACH
-title=Admitted lines
-body=хоро́шими — good. хоро́шая — good. 
+title=Instrumental plural agreement
+body=хоро́шими is instrumental plural, with a plural adjective ending. хоро́шая is feminine nominative singular. For a plural instrumental request select хоро́шими; хоро́шим has singular number. Recognizing these forms does not by itself demonstrate using adjective agreement in a sentence.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -870,6 +872,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u16-st-guided-inst-adj-1`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-inst-adj
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 295c9a381b947a83865fe2918b29faef889bb17bc003b1febd3f6f27cdbf3f74
+
+kind=GUIDED
+title=Guided practice
+body=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+dominantAction=Continue
+references=
+items=u16-g-inst-adj-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u16-st-rem-inst-adj
+
 ### STEP `u16-st-rem-inst-adj`
 
 - Objectives: obj-u16-inst-adj
@@ -878,15 +902,21 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a266edaabb2b44498ca1bc133a56f7290193073863ad85a0fc79b527cef59f23
+- Content hash: f531b6aa302e618ac58c597255bf16d2ee111e9d56816593bd3277c53abcdcd2
 
 kind=REMEDIATE
-title=Remediation
-body=To form masculine and neuter adjectives, the ending is -ым.
+title=Review the instrumental contrasts
+body=An adjective agrees with its noun in case and number, and in gender in the singular. хоро́ший is the masculine dictionary form for good. хоро́шим is its masculine or neuter instrumental singular form. Here the check requests masculine instrumental; it does not ask for an English gloss.
+
+Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings. хоро́шим uses -им because of the spelling restriction after its stem-final consonant. Do not apply the noun ending -ом to this adjective.
+
+хоро́шему is dative masculine or neuter singular. хоро́шие is nominative plural. Neither is the masculine instrumental singular form requested here. Work the choice by selecting хоро́шим.
+
+хоро́шими is instrumental plural, with a plural adjective ending. хоро́шая is feminine nominative singular. For a plural instrumental request select хоро́шими; хоро́шим has singular number. Recognizing these forms does not by itself demonstrate using adjective agreement in a sentence.
 dominantAction=Continue
 references=
 items=
-examples=ex-or-u16-inst-adj-0,ex-or-u16-inst-adj-1
+examples=ex-or-u16-inst-adj-0,ex-or-u16-inst-adj-1,ex-or-u16-inst-adj-2,ex-or-u16-inst-adj-3,ex-or-u16-inst-adj-4,ex-or-u16-inst-adj-5
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -900,11 +930,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a5a4811f1b961c67736021c98b444150a3058b1439a4b07a51630c3c2bcfe14b
+- Content hash: 7879355784b8e81038f99de4df150e91ab143b4b9e22bf8e6f42279fefbf6436
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
 dominantAction=Continue
 references=
 items=u16-i-inst-adj-1,u16-i-inst-adj-2
@@ -922,12 +952,12 @@ remediationStepId=u16-st-rem-inst-adj
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 59ecec87da74a2b8c7d69565cf0b2a2dcf1174fa7690a81a40e11fc943d69e98
+- Content hash: 6f4e9e2661442b9ea51df130217dcf7c2616c4005660bca2c2c8d927646a1f0e
 
-title=Choose the admitted means or accompaniment line
+title=Distinguish means, accompaniment and location
 estimatedMinutes=12
 objectives=obj-u16-inst-means
-steps=u16-st-teach-inst-means-1,u16-st-guided-inst-means-1,u16-st-teach-inst-means-2,u16-st-teach-inst-means-3,u16-st-rem-inst-means,u16-st-check-inst-means
+steps=u16-st-teach-inst-means-1,u16-st-teach-inst-means-2,u16-st-teach-inst-means-3,u16-st-guided-inst-means-1,u16-st-rem-inst-means,u16-st-check-inst-means
 
 ### STEP `u16-st-teach-inst-means-1`
 
@@ -937,11 +967,11 @@ steps=u16-st-teach-inst-means-1,u16-st-guided-inst-means-1,u16-st-teach-inst-mea
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d7f68c77bde6e54a936718f26112ad06e4dd6fe50a40ebde3e3209f18dea4266
+- Content hash: 231615609204bf38e6453972b25a685d84a2ce77c083da99129a75c460dc43d3
 
 kind=TEACH
-title=Admitted lines
-body=Я написал хорошим новым карандашом — I wrote with a good new pencil. Я хочу встречу с интересной русской женщиной — I want a meeting with an interesting Russian woman. 
+title=Two meanings of with
+body=Я написал хорошим новым карандашом — I wrote with a good new pencil. The pencil is the tool used for writing: this is the means instrumental, without a preposition before the tool phrase. Я хочу встречу с интересной русской женщиной — I want a meeting with an interesting Russian woman. Here with introduces the person involved in the meeting: this is the accompaniment line, using a preposition followed by instrumental forms.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -951,28 +981,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u16-st-guided-inst-means-1`
-
-- Objectives: obj-u16-inst-means
-- Sessions: u16-s-inst-means
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3c9158de2c8d7f8fdd8cdc8ce74bd08ffbe7d99ce33b45f37bcc26be4809c747
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u16-g-inst-means-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u16-st-rem-inst-means
-
 ### STEP `u16-st-teach-inst-means-2`
 
 - Objectives: obj-u16-inst-means
@@ -981,11 +989,11 @@ remediationStepId=u16-st-rem-inst-means
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c504e60213ba24f988fa7b4f0017ec93031f68499b842dc06d6b7708c0d2c81e
+- Content hash: 576a1901a534b060f1a8d0ec14014ccdde5937cf99f050c2d2cc51c5630d11c3
 
 kind=TEACH
-title=Admitted instruction
-body=I wrote with a good new pencil
+title=Work the role contrast
+body=For a means instrumental request, choose the writing sentence because its pencil is the instrument. For an accompaniment line request, choose the meeting sentence because it describes being with a person. English with can express both roles; its presence alone does not decide which Russian construction is used. Read what the phrase contributes to the event.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1003,11 +1011,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 355ba751c5fd36ed5588f09ab4554fed54c96d7662a6b2d279d2779210b1510f
+- Content hash: 56e09c30d9bcb1a9cf7e91ecbcda167285b49039b7ffa1ca4efb640150cc6f84
 
 kind=TEACH
-title=Admitted lines
-body=Я живу́ ме́жду двумя но́выми дома́ми — I live between two new houses. 
+title=A separate spatial role
+body=Я живу́ ме́жду двумя но́выми дома́ми — I live between two new houses. This is the between line: the phrase locates the speaker relative to two houses. The houses are neither a writing tool nor a companion. Work the choice by identifying location rather than treating every instrumental phrase as a means phrase.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1017,6 +1025,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u16-st-guided-inst-means-1`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-inst-means
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b615fe40f2b1f0e0c51bbb3fa3c95b7821b6da4ee485cb6ee252ad201fd5b439
+
+kind=GUIDED
+title=Guided practice
+body=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u16-g-inst-means-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u16-st-rem-inst-means
+
 ### STEP `u16-st-rem-inst-means`
 
 - Objectives: obj-u16-inst-means
@@ -1025,15 +1055,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 87a5e31d9d784e81af6e39e7f15aecefc32bfb157151ecf752dbc8ecead0f7ce
+- Content hash: 92104fb4062b4b06b2df12ce8c06fa2c1deb5fe6584c1db0f306471912060a76
 
 kind=REMEDIATE
-title=Remediation
-body=I wrote with a good new pencil
+title=Review meanings and roles
+body=Я написал хорошим новым карандашом — I wrote with a good new pencil. The pencil is the tool used for writing: this is the means instrumental, without a preposition before the tool phrase. Я хочу встречу с интересной русской женщиной — I want a meeting with an interesting Russian woman. Here with introduces the person involved in the meeting: this is the accompaniment line, using a preposition followed by instrumental forms.
+
+For a means instrumental request, choose the writing sentence because its pencil is the instrument. For an accompaniment line request, choose the meeting sentence because it describes being with a person. English with can express both roles; its presence alone does not decide which Russian construction is used. Read what the phrase contributes to the event.
+
+Я живу́ ме́жду двумя но́выми дома́ми — I live between two new houses. This is the between line: the phrase locates the speaker relative to two houses. The houses are neither a writing tool nor a companion. Work the choice by identifying location rather than treating every instrumental phrase as a means phrase.
 dominantAction=Continue
 references=
 items=
-examples=ex-u16-inst-means-0,ex-u16-inst-means-1
+examples=ex-u16-inst-means-0,ex-u16-inst-means-1,ex-u16-inst-means-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1047,11 +1081,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 42fba342e8ef5b6100ee3e2868bc5fe68719dcfba411120c7ea624f407c41ed1
+- Content hash: b3f0c5d3a41441ecbc12e6cebaab45f3b78d9a991554e09e0be717a2c4464bb2
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u16-i-inst-means-1,u16-i-inst-means-2
@@ -1069,12 +1103,12 @@ remediationStepId=u16-st-rem-inst-means
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8c3e57f14e25a6773208b3865a03e1012378e09bf4bfded6da9eb5af22c492a8
+- Content hash: 6fe9db2c20ad23b0524fbea8a612408e83f79527c3b689eea6c6713db6026175
 
-title=Choose the admitted English label for the shown preposition
+title=Recognize selected instrumental preposition meanings
 estimatedMinutes=12
 objectives=obj-u16-inst-prep
-steps=u16-st-teach-inst-prep-1,u16-st-guided-inst-prep-1,u16-st-teach-inst-prep-2,u16-st-teach-inst-prep-3,u16-st-rem-inst-prep,u16-st-check-inst-prep
+steps=u16-st-teach-inst-prep-1,u16-st-teach-inst-prep-2,u16-st-teach-inst-prep-3,u16-st-guided-inst-prep-1,u16-st-rem-inst-prep,u16-st-check-inst-prep
 
 ### STEP `u16-st-teach-inst-prep-1`
 
@@ -1084,11 +1118,11 @@ steps=u16-st-teach-inst-prep-1,u16-st-guided-inst-prep-1,u16-st-teach-inst-prep-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9e0b6e34e7ed24c37cc11b1241e66daec22740621d1fdc98ce35f852d6301adb
+- Content hash: be2e93273d62c2c83f49e482c5a7d6da48098d71991ce7218e4eb20dd30955d6
 
 kind=TEACH
-title=Admitted lines
-body=над — over. под — under. 
+title=Above and below
+body=над — over. под — under. These spatial meanings contrast vertical positions. The over label belongs to the first preposition; the under label belongs to the second. In a location construction, both can govern instrumental forms. The questions here recognize meanings from isolated prepositions; they do not ask you to choose a noun ending.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1098,28 +1132,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u16-st-guided-inst-prep-1`
-
-- Objectives: obj-u16-inst-prep
-- Sessions: u16-s-inst-prep
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7dcc63d79d501e480ad73d124b1b84d777c5835667b93c0fc97bcbb9177bf249
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u16-g-inst-prep-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u16-st-rem-inst-prep
-
 ### STEP `u16-st-teach-inst-prep-2`
 
 - Objectives: obj-u16-inst-prep
@@ -1128,11 +1140,11 @@ remediationStepId=u16-st-rem-inst-prep
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 70847360a903bdbe9e426a0c17d23b743976b4d575ba5bb21f2521be64fd1c2e
+- Content hash: 65071b2bc7c277485ef4a49aee12a7db3a8e19b87365b9deb07a91c69122e226
 
 kind=TEACH
-title=Admitted instruction
-body=There are six in total:
+title=Case depends on the construction
+body=The same preposition can govern different cases in different uses. For the preposition meaning under, instrumental describes location, while accusative can describe a destination under something. Movement within a location does not by itself require accusative: distinguish where something is from where it is going. These isolated-word checks contain no movement context and therefore do not assess that case choice.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1150,11 +1162,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f282de0bbfb6d43fe2459965532e3288d344847b8f2f3ab9d244fc01a44fcbef
+- Content hash: 493ea96af70123f19dc7cb6ef2441b647679d0c55420260ca1a256978c5bb212
 
 kind=TEACH
-title=Admitted lines
-body=перед — before. между — between. 
+title=Before and between
+body=перед — before. между — between. In the spatial use introduced here, before means in front of; it is not a universal translation for every English time expression with before. Between places something relative to two things. When choosing a displayed English label, compare the specific spatial meaning, including the alternative behind. Learn the meaning first; sentence use still requires the appropriate case.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1164,6 +1176,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u16-st-guided-inst-prep-1`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-inst-prep
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 179bf6056c533a94880c1660e658359388b78402b5b01a7d46efbc88aacc75d1
+
+kind=GUIDED
+title=Guided practice
+body=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u16-g-inst-prep-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u16-st-rem-inst-prep
+
 ### STEP `u16-st-rem-inst-prep`
 
 - Objectives: obj-u16-inst-prep
@@ -1172,15 +1206,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1282f5b4cab6101f5f98a8e13943774942de5603e57f010aef66d6dfe6148e19
+- Content hash: fa4764934b5259ff588af52cda12e995cf45d367c7a59db03e874c1ba5cb0407
 
 kind=REMEDIATE
-title=Remediation
-body=There are six in total:
+title=Review meanings and roles
+body=над — over. под — under. These spatial meanings contrast vertical positions. The over label belongs to the first preposition; the under label belongs to the second. In a location construction, both can govern instrumental forms. The questions here recognize meanings from isolated prepositions; they do not ask you to choose a noun ending.
+
+The same preposition can govern different cases in different uses. For the preposition meaning under, instrumental describes location, while accusative can describe a destination under something. Movement within a location does not by itself require accusative: distinguish where something is from where it is going. These isolated-word checks contain no movement context and therefore do not assess that case choice.
+
+перед — before. между — between. In the spatial use introduced here, before means in front of; it is not a universal translation for every English time expression with before. Between places something relative to two things. When choosing a displayed English label, compare the specific spatial meaning, including the alternative behind. Learn the meaning first; sentence use still requires the appropriate case.
 dominantAction=Continue
 references=
 items=
-examples=ex-u16-inst-prep-0,ex-u16-inst-prep-1
+examples=ex-u16-inst-prep-0,ex-u16-inst-prep-1,ex-u16-inst-prep-2,ex-u16-inst-prep-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1194,11 +1232,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a0a4c4ada3307f3b757916e5e42bf2071680fa5c14b45661adf3e7f68e2d1a71
+- Content hash: a52f5ca7e631bbec56873e5b5825a7b2af07f8d683c40f6b2d964dc45d0ac555
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u16-i-inst-prep-1,u16-i-inst-prep-2
@@ -1216,12 +1254,12 @@ remediationStepId=u16-st-rem-inst-prep
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3758aaf511623d74bcb88cd7ba52c372576cb2011f43d5b6fbd4b550df416156
+- Content hash: 04eb1d24d564ccf9aa50c73291c8f57cb6c814f83b186569bcdaa77428a150d7
 
-title=Choose the admitted gloss beside the shown complement
+title=Recognize verbs used with instrumental complements
 estimatedMinutes=12
 objectives=obj-u16-complements
-steps=u16-st-teach-complements-1,u16-st-guided-complements-1,u16-st-teach-complements-2,u16-st-teach-complements-3,u16-st-rem-complements,u16-st-check-complements
+steps=u16-st-teach-complements-1,u16-st-teach-complements-2,u16-st-teach-complements-3,u16-st-guided-complements-1,u16-st-rem-complements,u16-st-check-complements
 
 ### STEP `u16-st-teach-complements-1`
 
@@ -1231,11 +1269,11 @@ steps=u16-st-teach-complements-1,u16-st-guided-complements-1,u16-st-teach-comple
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bdf22c5fd35092a2914e77c30ae4a9dea1553c497b564894532f538fd229ab1d
+- Content hash: 2e830f018d18b36d6b1d34ef4427c223a3423cc307581f824f358078899f76ea
 
 kind=TEACH
-title=Admitted lines
-body=стать — became. остаться — remain. 
+title=Becoming and remaining
+body=стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1245,28 +1283,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u16-st-guided-complements-1`
-
-- Objectives: obj-u16-complements
-- Sessions: u16-s-complements
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 92fceccbbef7688d82e445fbd9a7cd5a49ffd1feb24df25798eed042f87fd202
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u16-g-complements-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u16-st-rem-complements
-
 ### STEP `u16-st-teach-complements-2`
 
 - Objectives: obj-u16-complements
@@ -1275,11 +1291,11 @@ remediationStepId=u16-st-rem-complements
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c1c76ae06707b2787223c8817edfc82fb0c7785aed48119d9a2a325784fb5b0d
+- Content hash: 119555143ff315f6a108dd11743f9bf7eeabef6bf8e70738b23d88b71e0a5981
 
 kind=TEACH
-title=Admitted instruction
-body=associates of connective verbs
+title=What a complement describes
+body=An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1297,11 +1313,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ac7ac4a1ad85e8275e7352da9235674e3aa92418e7c1c8fcbfd68e96ef62a6f2
+- Content hash: a84d3057c378ef1108ed956504c91a6b6831b1ab13a8b21bedcbc8885d87b8a8
 
 kind=TEACH
-title=Admitted lines
-body=казаться — appear to be. оказаться — turn out to be. 
+title=Appearance and discovery
+body=казаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.
 dominantAction=Continue
 references=ref-u1620-attribution
 items=
@@ -1311,6 +1327,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u16-st-guided-complements-1`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-complements
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3bcd9ea5ce0db83d3d48c0f0edd281b2619d0be163afad741c9856a712397847
+
+kind=GUIDED
+title=Guided practice
+body=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u16-g-complements-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u16-st-rem-complements
+
 ### STEP `u16-st-rem-complements`
 
 - Objectives: obj-u16-complements
@@ -1319,15 +1357,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: baa7ac2be4d54d65b93eb54920839a6590bac11dc785a0e8060709904059f73f
+- Content hash: cf0aced7eccec408f9ab838496e658d3dc2c40a27f0665a04fcc56a87fc288a9
 
 kind=REMEDIATE
-title=Remediation
-body=associates of connective verbs
+title=Review meanings and roles
+body=стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.
+
+An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.
+
+казаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.
 dominantAction=Continue
 references=
 items=
-examples=ex-u16-complements-0,ex-u16-complements-1
+examples=ex-u16-complements-0,ex-u16-complements-1,ex-u16-complements-2,ex-u16-complements-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1341,11 +1383,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cea27f1c78662575043f396fda51439897e3190fbf0b27ffb6662102a1a25a0b
+- Content hash: 5e990b52e104e03719cb5f00c67fec7c5a881c1fd0e19c8466e100fc63ccce02
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u16-i-complements-1,u16-i-complements-2
@@ -1363,12 +1405,12 @@ remediationStepId=u16-st-rem-complements
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6982ccdae73c30fc0b6645a394bc321e06305a8fe0e83e99dc5b655cd26308f0
+- Content hash: 75ae74b298397da3e6718e23a6ca9ae18e04d38c6e97a1502577f569575cd13b
 
 title=Self-attest Lesson 16
 estimatedMinutes=10
 objectives=obj-u16-book
-steps=u16-st-book-work,u16-st-book
+steps=u16-st-book-work,u16-st-book,u16-st-anki-direction,u16-st-binder-direction,u16-st-tutor-direction,u16-st-cumulative-direction
 
 ### STEP `u16-st-book-work`
 
@@ -1378,7 +1420,7 @@ steps=u16-st-book-work,u16-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8a58291d5457930dd200e662d8c52300411acc969002467d9d87a078ea733a66
+- Content hash: 189779e5349e06cdd8b940abdbaaca039227199bf44b622c927ae91ca4be3dd2
 
 kind=BOOK
 title=Work Lesson 16 in your copy
@@ -1388,7 +1430,7 @@ references=ref-u1620-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 16 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 16: printed pages 188-200. PDF indexes 200-212 are file locators, not printed pages. Observed section locators: §16.1 p188 (PDF 200); §16.2 p188 (PDF 200); §16.3 p189 (PDF 201); §16.4 p190 (PDF 202); §16.5 p191 (PDF 203); §16.6 p192 (PDF 204); §16.7 p193 (PDF 205); §16.8 p194 (PDF 206); §16.9 p195 (PDF 207); §16.10 p195 (PDF 207); §16.11 p197 (PDF 209). Observed exercise locators: 16/1 p190/PDF202; 16/2 p191/PDF203; 16/3 p194/PDF206; 16/4 p198/PDF210. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1400,7 +1442,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 07231cdb70205ab3a10a552e73dcef05b5e31a95aa46b9167526416b20b9a3ed
+- Content hash: 4237855f1292aa0250f70d6a89098aebbb0e0c115919beb10a0a92f3418bc16d
 
 kind=BOOK
 title=Record Lesson 16 book work
@@ -1410,8 +1452,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 16 work in your copy.
+bookDirection=Owned-book assignment for Lesson 16: printed pages 188-200. PDF indexes 200-212 are file locators, not printed pages. Observed section locators: §16.1 p188 (PDF 200); §16.2 p188 (PDF 200); §16.3 p189 (PDF 201); §16.4 p190 (PDF 202); §16.5 p191 (PDF 203); §16.6 p192 (PDF 204); §16.7 p193 (PDF 205); §16.8 p194 (PDF 206); §16.9 p195 (PDF 207); §16.10 p195 (PDF 207); §16.11 p197 (PDF 209). Observed exercise locators: 16/1 p190/PDF202; 16/2 p191/PDF203; 16/3 p194/PDF206; 16/4 p198/PDF210. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u16-st-anki-direction`
+
+- Objectives: obj-u16-book
+- Sessions: u16-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3d865bd318fdfc06a5f66c72b5c90b91fd7d6e88f670946057cee28e8082fb05
+
+kind=ANKI
+title=Unit 16 AnkiDroid direction
+body=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u16-st-binder-direction`
+
+- Objectives: obj-u16-book
+- Sessions: u16-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 88bd23a54ca1c5e3aec5ac1d222ee54dc72b687c5ee3b88b75972f98dfbe10a9
+
+kind=BINDER
+title=Unit 16 binder prompt
+body=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u16-st-tutor-direction`
+
+- Objectives: obj-u16-book
+- Sessions: u16-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: faf231d480baa985e8d6a31bb6bf74bf22b6b1318138b39c3ba18c39609e3247
+
+kind=TUTOR
+title=Unit 16 optional tutor
+body=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u16-st-cumulative-direction`
+
+- Objectives: obj-u16-book
+- Sessions: u16-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a172b273ebe369d2363f4b1f7986d276519d1ac2ed630a7ca8ae08318036482e
+
+kind=ORIENT
+title=Unit 16 cumulative review
+body=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-or-u16-inst-sg-0`
@@ -2034,12 +2164,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7449e2fb76c03c072ac8866a1a133d31735a0bd56b874a250d8e5200b26e80bf
+- Content hash: 22e86eab9d7cdc7b8350df037b7186c17fd66c52620ee41cc856402d4b9787fa
 
 kind=LEXICAL
 letterId=
 display=стать
-note=became
+note=to become
 objectiveId=obj-u16-complements
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2102,19 +2232,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ca913778acfd1dbea5bece4acf80b579bffb3af1be0f84d43c2d0638e423eb4e
+- Content hash: 6637bfb916758e8f8d332376fc01ff9085459319cd4bb23a803107115ff9e13f
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the instrumental singular?
+prompt=Which form of the shown noun is instrumental singular?
 promptLetter=сто́л
 options=столо́м | столу́ | столе́
 answer=столо́м
-feedback=Does this answer show the instrumental singular? столо́м.
+feedback=столо́м is instrumental singular of the noun meaning table.
 objectiveId=obj-u16-inst-sg
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the instrumental singular? | Does this row fail the instrumental singular?
+distractorRationales= | столу́ is dative singular, not instrumental singular. | столе́ is prepositional singular, not instrumental singular.
 testedFeature=INSTRUMENTAL_SINGULAR
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u16-inst-sg-0
@@ -2122,8 +2252,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u16-inst-sg-1
 distractorSourceIds= | prov-ex-or-u16-inst-sg-2 | prov-ex-or-u16-inst-sg-3
-distractorDifference= | Does this row fail the instrumental singular? | Does this row fail the instrumental singular?
-whyAnswerDemonstratesObjective=Does this answer show the instrumental singular?
+distractorDifference= | столу́ is dative singular, not instrumental singular. | столе́ is prepositional singular, not instrumental singular.
+whyAnswerDemonstratesObjective=столо́м is instrumental singular of the noun meaning table.
 contrastMembers=столо́м | столу́ | столе́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u16-inst-sg-0 | prov-ex-or-u16-inst-sg-1 | prov-ex-or-u16-inst-sg-2 | prov-ex-or-u16-inst-sg-3
@@ -2137,19 +2267,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cda40f42380741b3e9d747f1a538ff77404db05093a715b022d5dc36c1ae8423
+- Content hash: 3bc6aeeefc27c536cdffb4fba767d63b9a498e889d47d9bb8ddbb9d4c42db457
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the instrumental plural?
+prompt=Which form of the shown noun is instrumental plural?
 promptLetter=кни́га
 options=кни́гами | кни́гам | кни́гах
 answer=кни́гами
-feedback=Does this answer show the instrumental plural? кни́гами.
+feedback=кни́гами is instrumental plural of the noun meaning book.
 objectiveId=obj-u16-inst-pl
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the instrumental plural? | Does this row fail the instrumental plural?
+distractorRationales= | кни́гам is dative plural, not instrumental plural. | кни́гах is prepositional plural, not instrumental plural.
 testedFeature=INSTRUMENTAL_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u16-inst-pl-0
@@ -2157,8 +2287,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u16-inst-pl-1
 distractorSourceIds= | prov-ex-or-u16-inst-pl-2 | prov-ex-or-u16-inst-pl-3
-distractorDifference= | Does this row fail the instrumental plural? | Does this row fail the instrumental plural?
-whyAnswerDemonstratesObjective=Does this answer show the instrumental plural?
+distractorDifference= | кни́гам is dative plural, not instrumental plural. | кни́гах is prepositional plural, not instrumental plural.
+whyAnswerDemonstratesObjective=кни́гами is instrumental plural of the noun meaning book.
 contrastMembers=кни́гами | кни́гам | кни́гах
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u16-inst-pl-0 | prov-ex-or-u16-inst-pl-1 | prov-ex-or-u16-inst-pl-2 | prov-ex-or-u16-inst-pl-3
@@ -2172,19 +2302,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4563231c7e0f0ddbfe5288684b521f7563a0c98421c4711f16201cdda7eb70c9
+- Content hash: 122343c689bb1fd4647bf4594a66e1f7357aa713b0dc78490e1428886ddcc57a
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the masculine instrumental?
+prompt=Which form of the shown adjective is masculine instrumental singular?
 promptLetter=хоро́ший
 options=хоро́шим | хоро́шему | хоро́шими
 answer=хоро́шим
-feedback=Does this answer show the masculine instrumental? хоро́шим.
+feedback=хоро́шим is masculine instrumental singular here; the same form also serves neuter instrumental singular.
 objectiveId=obj-u16-inst-adj
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the masculine instrumental? | Does this row fail the masculine instrumental?
+distractorRationales= | хоро́шему is dative singular, not masculine instrumental. | хоро́шими is instrumental plural, not masculine instrumental singular.
 testedFeature=MASCULINE_INSTRUMENTAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u16-inst-adj-0
@@ -2192,8 +2322,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u16-inst-adj-1
 distractorSourceIds= | prov-ex-or-u16-inst-adj-2 | prov-ex-or-u16-inst-adj-4
-distractorDifference= | Does this row fail the masculine instrumental? | Does this row fail the masculine instrumental?
-whyAnswerDemonstratesObjective=Does this answer show the masculine instrumental?
+distractorDifference= | хоро́шему is dative singular, not masculine instrumental. | хоро́шими is instrumental plural, not masculine instrumental singular.
+whyAnswerDemonstratesObjective=хоро́шим is masculine instrumental singular here; the same form also serves neuter instrumental singular.
 contrastMembers=хоро́шим | хоро́шему | хоро́шими
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u16-inst-adj-0 | prov-ex-or-u16-inst-adj-1 | prov-ex-or-u16-inst-adj-2 | prov-ex-or-u16-inst-adj-4
@@ -2207,19 +2337,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d25a1fe18785b598f8fb235b019f9f8745c3d600f03c2248cd9e20c620afb7af
+- Content hash: 9e93fafcb51b4b5dd68103a1b7f4ef8bdba55c2cc28f4194f96c8e95205aa9ca
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the accompaniment line?
+prompt=Which sentence is the accompaniment line, describing a meeting with a person?
 promptLetter=Я написал хорошим новым карандашом
 options=Я хочу встречу с интересной русской женщиной | Я живу́ ме́жду двумя но́выми дома́ми
 answer=Я хочу встречу с интересной русской женщиной
-feedback=Does this answer show the accompaniment line? Я хочу встречу с интересной русской женщиной.
+feedback=The accompaniment line describes a meeting with a person, not an instrument used to perform an action.
 objectiveId=obj-u16-inst-means
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the accompaniment line?
+distractorRationales= | The sentence about living between two houses describes location, not an accompaniment line.
 testedFeature=ACCOMPANIMENT_LINE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u16-inst-means-0
@@ -2227,8 +2357,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u16-inst-means-1-ru
 distractorSourceIds= | prov-ex-u16-inst-means-2-ru
-distractorDifference= | Does this row fail the accompaniment line?
-whyAnswerDemonstratesObjective=Does this answer show the accompaniment line?
+distractorDifference= | The sentence about living between two houses describes location, not an accompaniment line.
+whyAnswerDemonstratesObjective=The accompaniment line describes a meeting with a person, not an instrument used to perform an action.
 contrastMembers=Я хочу встречу с интересной русской женщиной | Я живу́ ме́жду двумя но́выми дома́ми
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u16-inst-means-0-ru | prov-ex-u16-inst-means-1-ru | prov-ex-u16-inst-means-2-ru
@@ -2242,19 +2372,19 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e7c57bef473b849575b81e361e1e31e42fc32601ace4c2641281c00edb15de89
+- Content hash: 2721d793799777201f1ac887efcc07cbae9d3ea5eafab7c8aa1a64ca6985d3e1
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is the over label?
+prompt=Which English spatial meaning fits the shown preposition?
 promptLetter=над
 options=over | under | before
 answer=over
-feedback=Does this answer show the over label? over.
+feedback=The over label identifies the meaning of the shown preposition: above something.
 objectiveId=obj-u16-inst-prep
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the over label? | Does this row fail the over label?
+distractorRationales= | The under label places something below, not above. | The before label describes being in front of, not above.
 testedFeature=OVER_LABEL
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-inst-prep-0
@@ -2262,8 +2392,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u16-inst-prep-0-en
 distractorSourceIds= | prov-ex-u16-inst-prep-1-en | prov-ex-u16-inst-prep-2-en
-distractorDifference= | Does this row fail the over label? | Does this row fail the over label?
-whyAnswerDemonstratesObjective=Does this answer show the over label?
+distractorDifference= | The under label places something below, not above. | The before label describes being in front of, not above.
+whyAnswerDemonstratesObjective=The over label identifies the meaning of the shown preposition: above something.
 contrastMembers=over | under | before
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-inst-prep-0-ru | prov-ex-u16-inst-prep-0-en | prov-ex-u16-inst-prep-1-en | prov-ex-u16-inst-prep-2-en
@@ -2273,35 +2403,35 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u16-complements
 - Sessions: u16-s-complements
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: dc8afc3287229853a74afdcbcacd6718924df2fe174d881c4fd073b5ea8b267f
+- Content hash: 9b0b3790c169d0f2ffd9bb7144211b67268bdd69847bf8cd9045458975d276ab
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Which English meaning fits the shown infinitive?
 promptLetter=стать
-options=became | remain | turn out to be
-answer=became
-feedback=The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs").
+options=to become | to remain | to turn out to be
+answer=to become
+feedback=стать means to become: the infinitive expresses a change without marking a past event.
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
-testedFeature=COMPLEMENT_BECAME
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+distractorRationales= | to remain expresses continuation, not a change of state. | to turn out to be expresses what something proves to be, not becoming.
+testedFeature=INFINITIVE_STAT
+evidenceMode=STATED_APPLICATION
 contrastSetId=u16-complements-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u16-complements-0-en
-distractorSourceIds= | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
-distractorDifference= | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs").
-contrastMembers=became | remain | turn out to be
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u16-complements-0-ru | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en | prov-ex-u16-complements-3-en
+answerSourceIds=prov-ca-repair-16-10742
+distractorSourceIds= | prov-ca-repair-16-10745 | prov-ca-repair-16-10746
+distractorDifference= | to remain expresses continuation, not a change of state. | to turn out to be expresses what something proves to be, not becoming.
+whyAnswerDemonstratesObjective=стать means to become: the infinitive expresses a change without marking a past event.
+contrastMembers=to become | to remain | to turn out to be
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-repair-16-10741 | prov-ca-repair-16-10742 | prov-ca-repair-16-10745 | prov-ca-repair-16-10746
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u16-i-inst-sg-1`
@@ -2312,19 +2442,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e5f9577ef82046449358703111e26790ec19dea7621c72475b9864f54e6600d6
+- Content hash: a6faab61c0b404f04dd8e1a9888e48ea054699a5f3aadbae7e223de0c71a3a52
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the instrumental singular?
+prompt=Which form of the shown noun is instrumental singular?
 promptLetter=до́м
 options=до́мом | до́му | до́ме
 answer=до́мом
-feedback=Does this answer show the instrumental singular? до́мом.
+feedback=до́мом is instrumental singular of the noun meaning house.
 objectiveId=obj-u16-inst-sg
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the instrumental singular? | Does this row fail the instrumental singular?
+distractorRationales= | до́му is dative singular, not instrumental singular. | до́ме is prepositional singular, not instrumental singular.
 testedFeature=INSTRUMENTAL_SINGULAR
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u16-inst-sg-1
@@ -2332,8 +2462,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u16-inst-sg-5
 distractorSourceIds= | prov-ex-or-u16-inst-sg-6 | prov-ex-or-u16-inst-sg-7
-distractorDifference= | Does this row fail the instrumental singular? | Does this row fail the instrumental singular?
-whyAnswerDemonstratesObjective=Does this answer show the instrumental singular?
+distractorDifference= | до́му is dative singular, not instrumental singular. | до́ме is prepositional singular, not instrumental singular.
+whyAnswerDemonstratesObjective=до́мом is instrumental singular of the noun meaning house.
 contrastMembers=до́мом | до́му | до́ме
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u16-inst-sg-4 | prov-ex-or-u16-inst-sg-5 | prov-ex-or-u16-inst-sg-6 | prov-ex-or-u16-inst-sg-7
@@ -2347,19 +2477,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 07c53e9aaf1bc6dcf6e2f8329c292e2396d4ffa4e2ebe30dfed30ee01d402d00
+- Content hash: c882df3434c834e63e40e9ea3e9e492c553a75451c3631a52266e86cbd4521d7
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted line is the pencil instrumental?
+prompt=Which instrumental singular noun means pencil?
 promptLetter=утром
 options=карандашом | поездом | мужем
 answer=карандашом
-feedback=Does this answer show the pencil instrumental? карандашом.
+feedback=карандашом is the instrumental singular form of the noun meaning pencil.
 objectiveId=obj-u16-inst-sg
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the pencil instrumental? | Does this row fail the pencil instrumental?
+distractorRationales= | поездом means train in instrumental singular; it does not identify pencil. | мужем means husband in instrumental singular; it does not identify pencil.
 testedFeature=PENCIL_INSTRUMENTAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u16-inst-sg-2
@@ -2367,8 +2497,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-inst-sg-9-ru
 distractorSourceIds= | prov-ex-u16-inst-sg-8-ru | prov-u16-inst-sg-x-1
-distractorDifference= | Does this row fail the pencil instrumental? | Does this row fail the pencil instrumental?
-whyAnswerDemonstratesObjective=Does this answer show the pencil instrumental?
+distractorDifference= | поездом means train in instrumental singular; it does not identify pencil. | мужем means husband in instrumental singular; it does not identify pencil.
+whyAnswerDemonstratesObjective=карандашом is the instrumental singular form of the noun meaning pencil.
 contrastMembers=карандашом | поездом | мужем
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u16-inst-sg-x-0 | prov-ex-u16-inst-sg-9-ru | prov-ex-u16-inst-sg-8-ru | prov-u16-inst-sg-x-1
@@ -2382,19 +2512,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9c1c94dc517a27505e04e57a7611fccb2bd00b795c5a5486b21061f6ac81a4be
+- Content hash: 62b8b8d6b0c243da13b6afe468ee97943185d788c9886968c4d443de9c21bcb5
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the instrumental plural?
+prompt=Which form of the shown noun is instrumental plural?
 promptLetter=до́м
 options=дома́ми | дома́м | до́мом
 answer=дома́ми
-feedback=Does this answer show the instrumental plural? дома́ми.
+feedback=дома́ми is instrumental plural of the noun meaning house.
 objectiveId=obj-u16-inst-pl
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the instrumental plural? | Does this row fail the instrumental plural?
+distractorRationales= | дома́м is dative plural, not instrumental plural. | до́мом is instrumental singular, not instrumental plural.
 testedFeature=INSTRUMENTAL_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u16-inst-pl-1
@@ -2402,8 +2532,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u16-inst-pl-5
 distractorSourceIds= | prov-ex-or-u16-inst-pl-6 | prov-ex-or-u16-inst-pl-7
-distractorDifference= | Does this row fail the instrumental plural? | Does this row fail the instrumental plural?
-whyAnswerDemonstratesObjective=Does this answer show the instrumental plural?
+distractorDifference= | дома́м is dative plural, not instrumental plural. | до́мом is instrumental singular, not instrumental plural.
+whyAnswerDemonstratesObjective=дома́ми is instrumental plural of the noun meaning house.
 contrastMembers=дома́ми | дома́м | до́мом
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u16-inst-pl-4 | prov-ex-or-u16-inst-pl-5 | prov-ex-or-u16-inst-pl-6 | prov-ex-or-u16-inst-pl-7
@@ -2417,19 +2547,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7460a45b0849ac7b6c08e27884a9eef166d8413c4dc66db3226baf46e4220969
+- Content hash: 9a95ef32bec80a9c8d2d9fe44aed4dbb8d51574c0e993f34c2b297c7bc921215
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the instrumental plural?
+prompt=Which form of the shown noun is instrumental plural?
 promptLetter=сто́л
 options=стола́ми | стола́м | столо́м
 answer=стола́ми
-feedback=Does this answer show the instrumental plural? стола́ми.
+feedback=стола́ми is instrumental plural of the noun meaning table.
 objectiveId=obj-u16-inst-pl
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the instrumental plural? | Does this row fail the instrumental plural?
+distractorRationales= | стола́м is dative plural, not instrumental plural. | столо́м is instrumental singular, not instrumental plural.
 testedFeature=INSTRUMENTAL_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u16-inst-pl-2
@@ -2437,8 +2567,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u16-inst-pl-9
 distractorSourceIds= | prov-ex-or-u16-inst-pl-10 | prov-ex-or-u16-inst-pl-11
-distractorDifference= | Does this row fail the instrumental plural? | Does this row fail the instrumental plural?
-whyAnswerDemonstratesObjective=Does this answer show the instrumental plural?
+distractorDifference= | стола́м is dative plural, not instrumental plural. | столо́м is instrumental singular, not instrumental plural.
+whyAnswerDemonstratesObjective=стола́ми is instrumental plural of the noun meaning table.
 contrastMembers=стола́ми | стола́м | столо́м
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u16-inst-pl-8 | prov-ex-or-u16-inst-pl-9 | prov-ex-or-u16-inst-pl-10 | prov-ex-or-u16-inst-pl-11
@@ -2452,19 +2582,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d37fef460c5c4cf333faeefac50a204ef7330b68096962ccd76dd0c6fd89a506
+- Content hash: b0bd42f13971bea39df05dae06c5cad7a77e2ec5b2304c7ab30a646db30e9bfa
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the plural instrumental?
+prompt=Which form of the shown adjective is plural instrumental?
 promptLetter=хоро́шие
 options=хоро́шими | хоро́шим | хоро́шая
 answer=хоро́шими
-feedback=Does this answer show the plural instrumental? хоро́шими.
+feedback=хоро́шими is plural instrumental of the adjective meaning good.
 objectiveId=obj-u16-inst-adj
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the plural instrumental? | Does this row fail the plural instrumental?
+distractorRationales= | хоро́шим is instrumental singular, not plural instrumental. | хоро́шая is feminine nominative singular, not plural instrumental.
 testedFeature=PLURAL_INSTRUMENTAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u16-inst-adj-1
@@ -2472,8 +2602,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u16-inst-adj-4
 distractorSourceIds= | prov-ex-or-u16-inst-adj-1 | prov-ex-or-u16-inst-adj-5
-distractorDifference= | Does this row fail the plural instrumental? | Does this row fail the plural instrumental?
-whyAnswerDemonstratesObjective=Does this answer show the plural instrumental?
+distractorDifference= | хоро́шим is instrumental singular, not plural instrumental. | хоро́шая is feminine nominative singular, not plural instrumental.
+whyAnswerDemonstratesObjective=хоро́шими is plural instrumental of the adjective meaning good.
 contrastMembers=хоро́шими | хоро́шим | хоро́шая
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u16-inst-adj-3 | prov-ex-or-u16-inst-adj-4 | prov-ex-or-u16-inst-adj-1 | prov-ex-or-u16-inst-adj-5
@@ -2487,19 +2617,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4524c03dd0d3e6b77980d362d6dd618744eee052236ee283a2aa48d0f69b4f30
+- Content hash: d341a6426b35ecff703887a1cbe4a5fb88fd306c70c5f7cb576aa490c1ce8f30
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted row is the masculine instrumental?
+prompt=Which form of the shown adjective is masculine instrumental singular?
 promptLetter=хоро́шему
 options=хоро́шим | хоро́шая | хоро́шие
 answer=хоро́шим
-feedback=Does this answer show the masculine instrumental? хоро́шим.
+feedback=хоро́шим is masculine instrumental singular here; the cue shows the dative form of the same adjective.
 objectiveId=obj-u16-inst-adj
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the masculine instrumental? | Does this row fail the masculine instrumental?
+distractorRationales= | хоро́шая is feminine nominative singular, not masculine instrumental. | хоро́шие is nominative plural, not masculine instrumental.
 testedFeature=MASCULINE_INSTRUMENTAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u16-inst-adj-2
@@ -2507,8 +2637,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u16-inst-adj-1
 distractorSourceIds= | prov-ex-or-u16-inst-adj-5 | prov-ex-or-u16-inst-adj-3
-distractorDifference= | Does this row fail the masculine instrumental? | Does this row fail the masculine instrumental?
-whyAnswerDemonstratesObjective=Does this answer show the masculine instrumental?
+distractorDifference= | хоро́шая is feminine nominative singular, not masculine instrumental. | хоро́шие is nominative plural, not masculine instrumental.
+whyAnswerDemonstratesObjective=хоро́шим is masculine instrumental singular here; the cue shows the dative form of the same adjective.
 contrastMembers=хоро́шим | хоро́шая | хоро́шие
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u16-inst-adj-2 | prov-ex-or-u16-inst-adj-1 | prov-ex-or-u16-inst-adj-5 | prov-ex-or-u16-inst-adj-3
@@ -2522,19 +2652,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 937106677ff59fa64ba6ccabcae4b4421d506b0f9dce95e70ed204c57ec3d77f
+- Content hash: e191d632db6566c91225067cfd29afdedcb2c1a961df8b8e1edb95a839be26c6
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the means instrumental?
+prompt=Which sentence uses the means instrumental to name a tool used for an action?
 promptLetter=Я хочу встречу с интересной русской женщиной
 options=Я написал хорошим новым карандашом | Я живу́ ме́жду двумя но́выми дома́ми
 answer=Я написал хорошим новым карандашом
-feedback=Does this answer show the means instrumental? Я написал хорошим новым карандашом.
+feedback=The means instrumental in the writing sentence names the pencil used as the tool.
 objectiveId=obj-u16-inst-means
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the means instrumental?
+distractorRationales= | The sentence about living between two houses describes location, not a means instrumental naming a tool.
 testedFeature=MEANS_INSTRUMENTAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u16-inst-means-1
@@ -2542,8 +2672,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-inst-means-0-ru
 distractorSourceIds= | prov-ex-u16-inst-means-2-ru
-distractorDifference= | Does this row fail the means instrumental?
-whyAnswerDemonstratesObjective=Does this answer show the means instrumental?
+distractorDifference= | The sentence about living between two houses describes location, not a means instrumental naming a tool.
+whyAnswerDemonstratesObjective=The means instrumental in the writing sentence names the pencil used as the tool.
 contrastMembers=Я написал хорошим новым карандашом | Я живу́ ме́жду двумя но́выми дома́ми
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u16-inst-means-1-ru | prov-ex-u16-inst-means-0-ru | prov-ex-u16-inst-means-2-ru
@@ -2557,19 +2687,19 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 93eb8a6cec02c2f98ea3cac9baa7fe27e85d595656d4f337751217093b441ab5
+- Content hash: 0d0cce9a3d5fcff82cd7d05e596c9198ae770bc0004f77038801badad90bc549
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the between line?
+prompt=Which sentence is the between line, describing a location relative to two houses?
 promptLetter=Я написал хорошим новым карандашом
 options=Я живу́ ме́жду двумя но́выми дома́ми | Я хочу встречу с интересной русской женщиной
 answer=Я живу́ ме́жду двумя но́выми дома́ми
-feedback=Does this answer show the between line? Я живу́ ме́жду двумя но́выми дома́ми.
+feedback=The between line locates the speaker relative to two houses.
 objectiveId=obj-u16-inst-means
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the between line?
+distractorRationales= | The meeting sentence is an accompaniment line describing a person involved in a meeting, not location between houses.
 testedFeature=BETWEEN_LINE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u16-inst-means-2
@@ -2577,8 +2707,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-inst-means-2-ru
 distractorSourceIds= | prov-ex-u16-inst-means-1-ru
-distractorDifference= | Does this row fail the between line?
-whyAnswerDemonstratesObjective=Does this answer show the between line?
+distractorDifference= | The meeting sentence is an accompaniment line describing a person involved in a meeting, not location between houses.
+whyAnswerDemonstratesObjective=The between line locates the speaker relative to two houses.
 contrastMembers=Я живу́ ме́жду двумя но́выми дома́ми | Я хочу встречу с интересной русской женщиной
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u16-inst-means-0-ru | prov-ex-u16-inst-means-2-ru | prov-ex-u16-inst-means-1-ru
@@ -2592,19 +2722,19 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9f2f901374351bf86bbd315f28d3142d5f904e08828c70158c7ee18a45b78b1e
+- Content hash: 0541cc75e168b08030f9da1daafd7db799258abec02e64e0c5beaa8386bd14e7
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is the under label?
+prompt=Which English spatial meaning fits the shown preposition?
 promptLetter=под
 options=under | over | behind
 answer=under
-feedback=Does this answer show the under label? under.
+feedback=The under label identifies the meaning of the shown preposition: below something.
 objectiveId=obj-u16-inst-prep
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the under label? | Does this row fail the under label?
+distractorRationales= | The over label places something above, not below. | The behind label places something at the back, not below.
 testedFeature=UNDER_LABEL
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-inst-prep-1
@@ -2612,8 +2742,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-inst-prep-1-en
 distractorSourceIds= | prov-ex-u16-inst-prep-0-en | prov-u16-inst-prep-x-0
-distractorDifference= | Does this row fail the under label? | Does this row fail the under label?
-whyAnswerDemonstratesObjective=Does this answer show the under label?
+distractorDifference= | The over label places something above, not below. | The behind label places something at the back, not below.
+whyAnswerDemonstratesObjective=The under label identifies the meaning of the shown preposition: below something.
 contrastMembers=under | over | behind
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-inst-prep-1-ru | prov-ex-u16-inst-prep-1-en | prov-ex-u16-inst-prep-0-en | prov-u16-inst-prep-x-0
@@ -2627,19 +2757,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 82078a2a541fb14d0f2c3591a7e07983462aa0f34f5ae4615c6b8033ededb17c
+- Content hash: deaca4242b5e5aa1eea6084e319987cab8cb93cb994dee32b0654d88b35b7818
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is the before label?
+prompt=Which English spatial meaning fits the shown preposition?
 promptLetter=перед
 options=before | over | between
 answer=before
-feedback=Does this answer show the before label? before.
+feedback=The before label identifies the spatial meaning of the shown preposition: in front of something.
 objectiveId=obj-u16-inst-prep
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the before label? | Does this row fail the before label?
+distractorRationales= | The over label places something above, not in front of. | The between label places something relative to two things, not in front of.
 testedFeature=BEFORE_LABEL
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-inst-prep-2
@@ -2647,8 +2777,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-inst-prep-2-en
 distractorSourceIds= | prov-ex-u16-inst-prep-0-en | prov-ex-u16-inst-prep-3-en
-distractorDifference= | Does this row fail the before label? | Does this row fail the before label?
-whyAnswerDemonstratesObjective=Does this answer show the before label?
+distractorDifference= | The over label places something above, not in front of. | The between label places something relative to two things, not in front of.
+whyAnswerDemonstratesObjective=The before label identifies the spatial meaning of the shown preposition: in front of something.
 contrastMembers=before | over | between
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-inst-prep-2-ru | prov-ex-u16-inst-prep-2-en | prov-ex-u16-inst-prep-0-en | prov-ex-u16-inst-prep-3-en
@@ -2662,19 +2792,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 02e781cb0d1ee1bb2c76dca7606a46e9145ff1f28a318ac825ea4f1263b5dece
+- Content hash: 78252073c1a1d20de6a5e9f3388b7daffb8b60d3c430be40676b3786faf9c232
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Which English meaning fits the shown infinitive?
 promptLetter=остаться
 options=remain | became | turn out to be
 answer=remain
-feedback=The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
+feedback=остаться means to remain; choose remain for continuation of a state. It belongs to the connective verbs introduced here.
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+distractorRationales= | became is an English past-tense word and does not correctly label the shown infinitive. | turn out to be expresses what something proves to be, not continuation.
 testedFeature=COMPLEMENT_REMAIN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-1
@@ -2682,8 +2812,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-complements-1-en
 distractorSourceIds= | prov-ex-u16-complements-0-en | prov-ex-u16-complements-3-en
-distractorDifference= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
+distractorDifference= | became is an English past-tense word and does not correctly label the shown infinitive. | turn out to be expresses what something proves to be, not continuation.
+whyAnswerDemonstratesObjective=остаться means to remain; choose remain for continuation of a state. It belongs to the connective verbs introduced here.
 contrastMembers=remain | became | turn out to be
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-1-ru | prov-ex-u16-complements-1-en | prov-ex-u16-complements-0-en | prov-ex-u16-complements-3-en
@@ -2697,19 +2827,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 367a56cae7830474c4d2db605404bff5768a83ee898122d700a03bb0867e396f
+- Content hash: f5afe65407d54bb573e2cc6b5c7cbbaa326070b7c8e337aa1b20d8df61963311
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss is written beside the shown form?
+prompt=Which English meaning fits the shown infinitive?
 promptLetter=оказаться
 options=turn out to be | became | remain
 answer=turn out to be
-feedback=The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+feedback=оказаться means to turn out to be: it describes what something proves to be.
 objectiveId=obj-u16-complements
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
+distractorRationales= | became is an English past-tense word and does not correctly label the shown infinitive. | remain expresses continuation of a state, not what something proves to be.
 testedFeature=COMPLEMENT_TURN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u16-complements-2
@@ -2717,8 +2847,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u16-complements-3-en
 distractorSourceIds= | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en
-distractorDifference= | The frozen source pairs the shown form "стать" with the admitted gloss "became" ("associates of connective verbs"). | The frozen source pairs the shown form "остаться" with the admitted gloss "remain" ("associates of connective verbs").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "оказаться" with the admitted gloss "turn out to be" ("associates of connective verbs").
+distractorDifference= | became is an English past-tense word and does not correctly label the shown infinitive. | remain expresses continuation of a state, not what something proves to be.
+whyAnswerDemonstratesObjective=оказаться means to turn out to be: it describes what something proves to be.
 contrastMembers=turn out to be | became | remain
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u16-complements-3-ru | prov-ex-u16-complements-3-en | prov-ex-u16-complements-0-en | prov-ex-u16-complements-1-en
@@ -2741,6 +2871,5972 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=16
 searchTerms=units 16-20 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-16-223`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e62baeebf91d6e4aa0136a8c213531f3b0763d8ffe3a2050f4d2f3b37d38c273
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:ex-u16-complements-0:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+shippedText=стать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb43e109c7a8f72800a6586cd4c57d1d387358a3857bb53c61a4516dac5a5420
+contentHash=42539956f4fc8a4056ae79896c3fc14251b7840dd1344224d2a30b2b98ee71ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-224`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 685b8eb555cd6a43d3c4a99722d7352f74da9434a4f98cdb429b9c9c73ff2261
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:ex-u16-complements-0:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+to become
+shippedText=to become
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b64ed72b0552e87321f7be9ceb671b294fe5b4d24ff6466095e8adda21eeeb2e
+contentHash=ad5d34d31abcc7440c74a7bcca0a3a4485f32cee52e92d484a260ecb203f3e68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-225`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7db52b8a104a6d6c6fdc9d0b574b126ca16e295d6f9ad2e010c8f74a6ac4ecef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:ex-u16-complements-0:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать — to become
+shippedText=стать — to become
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58a206289c3722d0e811104dbc42eade9c39bba3df80c273b73a3cbd4cefeec8
+contentHash=7dff15d641386fe165d7e7b15c7ec383a8baaefcc3558f6aad62fb23d8780967
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-237`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a847e4948813a2e04ec529e49c01956bc5465899b8547ca842c01870a5621a5d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:u16-st-teach-complements-1
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать means to become. остаться means to remain. The infinitive стать is not the past form became.
+shippedText=стать means to become. остаться means to remain. The infinitive стать is not the past form became.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=87cb771cf2a1cdec5400ce76f75c6c016374a14f59efbdf443ac9863f7b77407
+contentHash=41041d7f528415039587619ad2f2f5293ed4b9ab00b5fcf28038deb7d166dcae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-238`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87640c3e2ecd9f7d68a95324636d70bce2c28c76e3f630de776574f17aa7501e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=стать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=42539956f4fc8a4056ae79896c3fc14251b7840dd1344224d2a30b2b98ee71ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-239`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af44cb0a48cf4cf1e3fdfa62352902a9c073093d4e54d20bbfec4c3612a109b1
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=to become
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=ad5d34d31abcc7440c74a7bcca0a3a4485f32cee52e92d484a260ecb203f3e68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-240`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 098463d8fd31e078fb9b1a5f40395d1dd87870d109da6495f0c1074cf2bb739e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=Which infinitive meaning is written for the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=7d2da3ff7b3855c8408c3eaa39d4ce8226bb38ed6f33dcbc4f79e67d32a5f2ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-241`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4026001ad8968a8ede38e4aaeef72d10775174ffc295935a0b07ffc11e715869
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=стать means to become. It is an infinitive, not the past form became.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=2d44311154cf2e7ee0147a125dcad8a48644ca2393657274194105b35087a375
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-242`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42457cc3e384b6d3b70df873ca8e8f2c87d84faef89b4ae13dbcedbf23261ef5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=The infinitive стать means to become, while остаться means to remain.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=04e886d6356faf4d98ecf2f89a992548e7281bed3553263e2432e35e36cd0c5b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-243`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a19824db027298a6b76c0ab68d4e459bfb3229a27c137ec7a27ebb35500975c9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=to remain
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=3a976e7bc7419774f807f79549b9c264d85248dda6fd7aea7369c1a2f09a2061
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-244`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f6443ee78866956b845ce31713d67b904b32edfb3bdc98e5564e4e711bd61ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=to turn out to be
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=db6516887b6af68f40a555bf4a26aa633c5a3962370b91a788e6ce1daf9b0b9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-245`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 150899d54eb7b9edede64c85a5b3ff00039baf3388f08f98190d079a5234c814
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=to remain is the meaning of остаться, not стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=8e7e238f22f8607f5937274bf659d4039f4d335786fceaafd935715a84c04096
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-246`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d58a2a8709c7312e51691efa9f9aa7019c889f4c820ca13d6ef24733d7488a93
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=to turn out to be is a different complement verb, not стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=6aed32fa3a307edd54f40282b1fc99b92108fe41347ffcc643cb5d346587f48a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-247`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f3dcdeb2060b9d1383ab703198d445e4cd3809f0c405aac7762fb5ab7b6b5d0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=остаться
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=27ba7bc59b168bcd33285310bfc9517653ad3e8c9fdeb02c330b827e7995cd1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-248`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c22196829880dad54b4eee7f418e8a576d1ce88814b6c76f551e3987647526a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=остаться,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=2155ed2866e7fb115a8badbe6341ca0920b8d86a8aa5d82b02f371f6e7375f71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-249`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 873b9726fa60774af091d45f076767b2c1d3d4cd6b2b0244798bc44134d050a5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. It is an infinitive, not the past form became.
+The infinitive стать means to become, while остаться means to remain.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться
+остаться,
+стать.
+shippedText=стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1
+contentHash=f0ccf077a0015429a78a0e359dbb9a3e0f1f1d6235ae9ed45b5c213c8d11cebc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-353`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 703989e7e8070a18477d436d60de409beee5a1a8b6ff61b92dc564b7ad9b073a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:u16-st-teach-inst-sg-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal.
+shippedText=The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6922a1ca2a259bc1712ce96b7bfe720981c53d5ef4a9a807e0421164aa3f1db1
+contentHash=1ab18b49b2e462fd534d4eb73d566a1a70bd538f85ecd00d823fb696b7cd0638
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-354`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b72b6ff7bcc6448f2d0d165cc7ee26b774507f20521d3ee030c68981da775752
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:u16-st-teach-inst-adj-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.
+shippedText=Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19feaeacb1859b3934a7d2e8a0973bcae9177ff4c64f64a8834865a6d7529ba7
+contentHash=f7abbdf6a83101cd8122f4e4ad8c84e01b19fecdd6e8bdf829c88352db71676f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-355`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9c781093daf623294873a7cb8aec8ae252a95a1f5a045fae2457e671cf93c5a
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:u16-st-teach-inst-adj-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.
+shippedText=им.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19feaeacb1859b3934a7d2e8a0973bcae9177ff4c64f64a8834865a6d7529ba7
+contentHash=324170e91b77da2a2c860bf2a5cd2ba1564da866a8c043b21beb5a27a068f6ad
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-356`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3ba975930e7ed208dc19013b385f624b39782141fcd75f1a297d7fe81754816
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:u16-st-teach-inst-adj-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings.
+shippedText=им
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19feaeacb1859b3934a7d2e8a0973bcae9177ff4c64f64a8834865a6d7529ba7
+contentHash=0d3963c6db63123b42eb66e058981b9a982a7bb01c5c566ee07c8362a15aaf04
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-66`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dfce8f230dab0b2c5fe6be992cd57ffd4cce736471e929e2a46a10d46e9d34b7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:u16-st-teach-inst-adj-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-67`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3bb5437dcae3feb4c0563f691568286896cc58067576f8caf6d68bb1954ca1de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:u16-st-teach-inst-prep-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-16-68`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 684d7afbc8a43de572f9376bd2162e1aea051c6bace2fe890e58f582929266c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:u16-st-teach-complements-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10741`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4b645b07a5e7c5a8790ec58fc5fe42b272f19d300becb56eb1fe9d39a53a296
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=стать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=42539956f4fc8a4056ae79896c3fc14251b7840dd1344224d2a30b2b98ee71ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10742`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d6ad2a76c79b9f8262a836253633d8ff1f8d62de74c6777e3e271198f0daa5d
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=to become
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=ad5d34d31abcc7440c74a7bcca0a3a4485f32cee52e92d484a260ecb203f3e68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10743`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9276cb325caf27b4c5689823d16e77503a391e6ae582aa24583e46482e980c0e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=Which infinitive meaning is written for the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=7d2da3ff7b3855c8408c3eaa39d4ce8226bb38ed6f33dcbc4f79e67d32a5f2ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10744`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8830ab21f5a45df34a27f56c6aba1ea664cb42e709dd053a8009ffe9c39f1816
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=стать means to become. The infinitive names becoming; it does not mark a past event.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=5c6671503de2274344b3422b375366fd9b6aadf7de5c51c3317b0cfc1424b1a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10745`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 666e1d113772c639c575e954022dc47339c30bcd78238b007af4c3247c26a665
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=to remain
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=3a976e7bc7419774f807f79549b9c264d85248dda6fd7aea7369c1a2f09a2061
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10746`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6003bd30b478edecbe8841230f7c8266308e540f4e7c9998161414216dcdf280
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=to turn out to be
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=db6516887b6af68f40a555bf4a26aa633c5a3962370b91a788e6ce1daf9b0b9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10747`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ead523e368b99f4de3a9b6e80c4a4f444b724d1f9ca18039a556ec9cfa1e9c6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=to remain is the meaning of остаться, not стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=8e7e238f22f8607f5937274bf659d4039f4d335786fceaafd935715a84c04096
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10748`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f25ce1808450fa1abd13d5474fd5a0a55769f878b15d65fd9bd8b2651a2f84cd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=to turn out to be is a different complement verb, not стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=6aed32fa3a307edd54f40282b1fc99b92108fe41347ffcc643cb5d346587f48a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10749`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09d66296b9f8f3dec52030651a634b4a4221fa3b6ebf46771eaac487e4f71d8b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=остаться,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=2155ed2866e7fb115a8badbe6341ca0920b8d86a8aa5d82b02f371f6e7375f71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10750`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a86a5f5fb9a1062fa7dc7ad06ae4648f8e615d98c0bf450531297cabcdf43e92
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=остаться
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=27ba7bc59b168bcd33285310bfc9517653ad3e8c9fdeb02c330b827e7995cd1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-10751`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ae1fdf453dea0f670b1ae385d45129717657a37d4b307b6083e28449c9c4fd9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u16-g-complements-0
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+стать
+to become
+Which infinitive meaning is written for the shown form?
+стать means to become. The infinitive names becoming; it does not mark a past event.
+to remain
+to turn out to be
+to remain is the meaning of остаться, not стать.
+to turn out to be is a different complement verb, not стать.
+остаться,
+остаться
+стать.
+shippedText=стать.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=568d0f851b8179b5e4555c50cba16e36c5bcb648ea34b70ee18f0990d2e964cc
+contentHash=f0ccf077a0015429a78a0e359dbb9a3e0f1f1d6235ae9ed45b5c213c8d11cebc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-repair-16-11109`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e9e0cae7e8ddd88f67c3e0f02818fd2fef3613e00dd9b82c1cfd8cf51bb4c9b6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:u16-g-complements-0:prompt
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Choose the English description. Which infinitive meaning is written for the shown form?
+shippedText=Choose the English description. Which infinitive meaning is written for the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a33e24550813aac11c3a607b5eddc4e9c9284109f62457ff4965142e3c788eaf
+contentHash=ed9443b494f6983c073f14cf2feac8e901b15e4967af94ee3318fb87cee7b168
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-check-body`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b461318fc954e82f2153648667c171767ea4caaa6beb07e49c2f92c4b5773ba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-check-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a90ae936af3f0243fc3d487e8262b3fab92eb1a767a22ee3db165a3f1028f853
+contentHash=ce679ddbb304a30ea4409e746de6796ee32bbd60ae02345829c402232e110c9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-guided-body`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cab66df9a0918ecac6c7bdd0e7104d5259be80c8d2badcb174877c4239c620a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-guided-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a90ae936af3f0243fc3d487e8262b3fab92eb1a767a22ee3db165a3f1028f853
+contentHash=ce679ddbb304a30ea4409e746de6796ee32bbd60ae02345829c402232e110c9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-objective-title`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a757b16e933f7caa1a0d72efd6eee10727ecd3ca999710d9b3105fff4013a0b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-objective-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Recognize verbs used with instrumental complements
+shippedText=Recognize verbs used with instrumental complements
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6ef4f239756c0c09d59e04a2fda2792946e02d09433784f19f31d395689450da
+contentHash=7d85b7442752b7ae02eb19f5d20e69c2a4c91ed43108faf3fb5be7f35b9751b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-rem-body`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b55a84bbc2c18dd1af155b365e757edeb0335e25c4cc4a0c6d0581ae5b14c5b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-rem-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.
+
+An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.
+
+казаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.
+shippedText=стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.
+
+An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.
+
+казаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1ff458d3dc157775455ec0ba531dc239aa855592fc4dc2ffb3e9746315a92028
+contentHash=be78a1affa6697cefc7eeb6eb572ac83ebeb6859655344772230098f5bc33306
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-rem-title`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a65dd7bb547effb0b8b30793780a631a90820260b0aa70d632b0abd9c754278
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-rem-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Review meanings and roles
+shippedText=Review meanings and roles
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4fe7139f71d24803760da604044dcfa590d321521d5d42af0dc018353629e76
+contentHash=2a651e17144116dc65020f3bcbdf51db9eaead578549a0bad2327a1292eacefe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-teach-1-body`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9fb5bb3fb641b54083dbbf3d3fa88b6426d8df8ef5b7e85644279c1b32471413
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-teach-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.
+shippedText=стать means to become. остаться means to remain. Both are infinitives: they name an action or state without marking a past event. Becoming expresses a change; remaining expresses continuation. For the first form choose to become. For the second form choose remain among the displayed choices. The English past-tense word became does not correctly label either infinitive.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25aeb6fa76bf00e959fd4d5276aa0c3deb98aa6e7752ea94c8fba694e6dd8bb9
+contentHash=7a84492a4adf5f5056e855d7ed87ff66a40da22de93cd5c2b3f93f2c9531ef97
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-teach-1-title`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62eac28ca4bba1a8388eb26c724450a3c413182ec36d4584fc4ee785287d6f73
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-teach-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Becoming and remaining
+shippedText=Becoming and remaining
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1c1b097bf64584e32b1aaf613c79ba6c454ec28f5cf06441617cf3108db7e196
+contentHash=e41e2175fb86846a08b3d003163bab73086fd79c2e4135dc0dd9bdad79af189d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-teach-2-body`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd5d8053c21266fdeed56e2bbf530aa1dff980c0ae6f765ea5c9ee5b7319da09
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-teach-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.
+shippedText=An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action. The verbs shown in this lesson can occur in that construction. These checks show only the verbs and ask for their meanings. Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d94eeeafa0259352cb60e2927c58aab13848e15e01c436d33c3b9cee4b8f865
+contentHash=5922e49fe51ca54713b13756afa39f5d1d6580f3fe3701596b91b78f5e07dd4d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-teach-2-title`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0763137779592bccd1f178374896b27d9d466249bd1e6203e0f27f7d6fd4053e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-teach-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+What a complement describes
+shippedText=What a complement describes
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=df320030d0412f56ad9a25d7d5336caf2aa498fdfbd00c6205db23ff9f6d93db
+contentHash=039d745095f62d56fbc890216c6630f82421e9f6dfef1654f2d48aa55bbde91f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-teach-3-body`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68dba5e1d1ea2349f53bf817d606d63080693f3de68b88faff84edf566d3d412
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-teach-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+казаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.
+shippedText=казаться — appear to be. оказаться — turn out to be. The first concerns how something seems; the second concerns what it proves to be. Work the second choice by selecting turn out to be, rather than the meaning of continuation. A displayed infinitive still does not specify a past event. Keep these meanings distinct from becoming and remaining.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d3fa9fcc460cfbd97d45797d5c1c1f6aee9750f66279e9605c20918aaed10783
+contentHash=32daa76a59ee907af6f769644d7ff5b815ab47bd41a8d9e47d2ad533e18fcd09
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-complements-teach-3-title`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b5cebf0c90e0170b24c1335ca4764f509c17fa3750c41961c2d3174beb7d0ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:complements-teach-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Appearance and discovery
+shippedText=Appearance and discovery
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=193bc9ef9a575b034e131c781dc96f4c66a6ccbb4e9600c486f2dcfa95e791ec
+contentHash=aba0b005462083a1c9aa143dc292554bfbc3da36c18585c368bc317f963c7bbe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-check-body`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 90d78e56d7a7a4088f1c43b592598bd46744103ffd454b1cc13e01b194a1227c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-check-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a90ae936af3f0243fc3d487e8262b3fab92eb1a767a22ee3db165a3f1028f853
+contentHash=ce679ddbb304a30ea4409e746de6796ee32bbd60ae02345829c402232e110c9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-guided-body`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4ed0690adc54e83b61aad7b8008790870d07176f6c91295380c2818770a5118
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-guided-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a90ae936af3f0243fc3d487e8262b3fab92eb1a767a22ee3db165a3f1028f853
+contentHash=ce679ddbb304a30ea4409e746de6796ee32bbd60ae02345829c402232e110c9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-objective-title`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f57f8e0a91700f47fd2de86bd5d84e55a9d887e1c6f2882002fe5ea1b13ff6fa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-objective-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Distinguish means, accompaniment and location
+shippedText=Distinguish means, accompaniment and location
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dd44d34ef072eadc2ed6616f7653a8612e461a80ed76ab67e1ce62adfe605d28
+contentHash=3fe03ffa2dd3e7a6abd2609609a034c3090989af2fbe72cc55f6961e49f1eede
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-rem-body`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99296e1511d7906c04468790884632c9196525e3cc76251a08c41c7d736fdc16
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-rem-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Я написал хорошим новым карандашом — I wrote with a good new pencil. The pencil is the tool used for writing: this is the means instrumental, without a preposition before the tool phrase. Я хочу встречу с интересной русской женщиной — I want a meeting with an interesting Russian woman. Here with introduces the person involved in the meeting: this is the accompaniment line, using a preposition followed by instrumental forms.
+
+For a means instrumental request, choose the writing sentence because its pencil is the instrument. For an accompaniment line request, choose the meeting sentence because it describes being with a person. English with can express both roles; its presence alone does not decide which Russian construction is used. Read what the phrase contributes to the event.
+
+Я живу́ ме́жду двумя но́выми дома́ми — I live between two new houses. This is the between line: the phrase locates the speaker relative to two houses. The houses are neither a writing tool nor a companion. Work the choice by identifying location rather than treating every instrumental phrase as a means phrase.
+shippedText=Я написал хорошим новым карандашом — I wrote with a good new pencil. The pencil is the tool used for writing: this is the means instrumental, without a preposition before the tool phrase. Я хочу встречу с интересной русской женщиной — I want a meeting with an interesting Russian woman. Here with introduces the person involved in the meeting: this is the accompaniment line, using a preposition followed by instrumental forms.
+
+For a means instrumental request, choose the writing sentence because its pencil is the instrument. For an accompaniment line request, choose the meeting sentence because it describes being with a person. English with can express both roles; its presence alone does not decide which Russian construction is used. Read what the phrase contributes to the event.
+
+Я живу́ ме́жду двумя но́выми дома́ми — I live between two new houses. This is the between line: the phrase locates the speaker relative to two houses. The houses are neither a writing tool nor a companion. Work the choice by identifying location rather than treating every instrumental phrase as a means phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=972d8ea6653ea4dece50073bbf9dbc88f2f564181fc3fb7a252ff33acc5fe2cf
+contentHash=76c1878ba2dde9b120d62aa4b80cefca582cbfbba2b55de99c99661584864352
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-rem-title`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9b2ccd170cb2547edc0cc08cb20c60a9b26b4a2bc439ddda3d6c1e637865d20
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-rem-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Review meanings and roles
+shippedText=Review meanings and roles
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4fe7139f71d24803760da604044dcfa590d321521d5d42af0dc018353629e76
+contentHash=2a651e17144116dc65020f3bcbdf51db9eaead578549a0bad2327a1292eacefe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-teach-1-body`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6db5d188dcd08b8dee13c5dc5a5225370e907db6182b14daae1bff49ca881ba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-teach-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Я написал хорошим новым карандашом — I wrote with a good new pencil. The pencil is the tool used for writing: this is the means instrumental, without a preposition before the tool phrase. Я хочу встречу с интересной русской женщиной — I want a meeting with an interesting Russian woman. Here with introduces the person involved in the meeting: this is the accompaniment line, using a preposition followed by instrumental forms.
+shippedText=Я написал хорошим новым карандашом — I wrote with a good new pencil. The pencil is the tool used for writing: this is the means instrumental, without a preposition before the tool phrase. Я хочу встречу с интересной русской женщиной — I want a meeting with an interesting Russian woman. Here with introduces the person involved in the meeting: this is the accompaniment line, using a preposition followed by instrumental forms.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a4a5702e9bf437579c50721a42ab723dd353e8b81746b46eb3e27b4fa6af39cc
+contentHash=d0234bb98ea2b88fb44b11be269cd2c24cc483a512cdd3482014c62ea81c1fd0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-teach-1-title`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b83b8f87258e874d4e90f7d88b7c2fcbe8bef9326e52f1564adb5fe9247b51b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-teach-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Two meanings of with
+shippedText=Two meanings of with
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19db154800960baa66a820af559debae7c7f4ade89b64be6d41af89c8eba4259
+contentHash=6ac4aa12878bd99a5f36f6cbc1e06736b39e5036116f6e86c6e861642e2acafd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-teach-2-body`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 180ff1ff9f13b7a876d822825ca1b37a81541ff7af2e114802b292c8adab705b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-teach-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+For a means instrumental request, choose the writing sentence because its pencil is the instrument. For an accompaniment line request, choose the meeting sentence because it describes being with a person. English with can express both roles; its presence alone does not decide which Russian construction is used. Read what the phrase contributes to the event.
+shippedText=For a means instrumental request, choose the writing sentence because its pencil is the instrument. For an accompaniment line request, choose the meeting sentence because it describes being with a person. English with can express both roles; its presence alone does not decide which Russian construction is used. Read what the phrase contributes to the event.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9670f13e2822e410b394207eb1bf069a9b2e6849cf4d2b44f01ab1133b2d8f1e
+contentHash=5670165bf6f74105bd1d7a4aadd2564eb0a9dd6cec96c883c7464f1dd9adb768
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-teach-2-title`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d88b3404508f3a9d1041e433d5670e2de4d776e575dd0d203c8be445562fbf5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-teach-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Work the role contrast
+shippedText=Work the role contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=654e1667f64110359534c712e62d2b5bdbb866c7b8469179ea01b684ecaca821
+contentHash=e766914ffde220a5e57c830fee85cf8fa75cd5c7c019667b2daecd8e569f2048
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-teach-3-body`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d64196538ea5ca700452a80830b4ba8d8def9e4c616e63f64553f9eb42ecb347
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-teach-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Я живу́ ме́жду двумя но́выми дома́ми — I live between two new houses. This is the between line: the phrase locates the speaker relative to two houses. The houses are neither a writing tool nor a companion. Work the choice by identifying location rather than treating every instrumental phrase as a means phrase.
+shippedText=Я живу́ ме́жду двумя но́выми дома́ми — I live between two new houses. This is the between line: the phrase locates the speaker relative to two houses. The houses are neither a writing tool nor a companion. Work the choice by identifying location rather than treating every instrumental phrase as a means phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80dfc5d46e5a35f7d1f42e79cfd85f1475c1a06113d9b18005ec12ff5bddb9f8
+contentHash=0310c18f152af1115e2c7c560fa4461c5134b4b6d6d6219eacd59b2dd56d82d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-means-teach-3-title`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b21172d51268cf3e0565b19dc638c56465b3f424ba90b4b64b4e994b66ec7c89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:inst-means-teach-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+A separate spatial role
+shippedText=A separate spatial role
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce1e783128194f43b61a84dc631d318186104a146e3f466cf0252021b1dda924
+contentHash=f740cf566b47e636341354eec8147ec93378232cb0c773aa58c64ada9ae18ffe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-check-body`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3607156211152face13635b1ef8ab0a603302ebb3a07ef3ce560e6082862314e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-check-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a90ae936af3f0243fc3d487e8262b3fab92eb1a767a22ee3db165a3f1028f853
+contentHash=ce679ddbb304a30ea4409e746de6796ee32bbd60ae02345829c402232e110c9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-guided-body`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cc02e7da7ddc842cfe8f651fa5506985f62527d5cb91a1b282784a5a774e20b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-guided-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Compare the meanings and roles explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a90ae936af3f0243fc3d487e8262b3fab92eb1a767a22ee3db165a3f1028f853
+contentHash=ce679ddbb304a30ea4409e746de6796ee32bbd60ae02345829c402232e110c9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-objective-title`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e96e0a69786fe320aeb73dd96d1ff75dd77188001be3d1e624020bb0509ce57
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-objective-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Recognize selected instrumental preposition meanings
+shippedText=Recognize selected instrumental preposition meanings
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eabe6ee5e0e6a47b3d91513029800a193f54e47916535d955b75f280cb2bdc09
+contentHash=a827ebfeb4541732867bd19abccbef6962ed9d1ad45b7c7a254fb30921dab1fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-rem-body`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14b43a25dc160f09e37560901a97ed514b0409c2a9b701e2ce74d1d4f99b5e6c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-rem-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+над — over. под — under. These spatial meanings contrast vertical positions. The over label belongs to the first preposition; the under label belongs to the second. In a location construction, both can govern instrumental forms. The questions here recognize meanings from isolated prepositions; they do not ask you to choose a noun ending.
+
+The same preposition can govern different cases in different uses. For the preposition meaning under, instrumental describes location, while accusative can describe a destination under something. Movement within a location does not by itself require accusative: distinguish where something is from where it is going. These isolated-word checks contain no movement context and therefore do not assess that case choice.
+
+перед — before. между — between. In the spatial use introduced here, before means in front of; it is not a universal translation for every English time expression with before. Between places something relative to two things. When choosing a displayed English label, compare the specific spatial meaning, including the alternative behind. Learn the meaning first; sentence use still requires the appropriate case.
+shippedText=над — over. под — under. These spatial meanings contrast vertical positions. The over label belongs to the first preposition; the under label belongs to the second. In a location construction, both can govern instrumental forms. The questions here recognize meanings from isolated prepositions; they do not ask you to choose a noun ending.
+
+The same preposition can govern different cases in different uses. For the preposition meaning under, instrumental describes location, while accusative can describe a destination under something. Movement within a location does not by itself require accusative: distinguish where something is from where it is going. These isolated-word checks contain no movement context and therefore do not assess that case choice.
+
+перед — before. между — between. In the spatial use introduced here, before means in front of; it is not a universal translation for every English time expression with before. Between places something relative to two things. When choosing a displayed English label, compare the specific spatial meaning, including the alternative behind. Learn the meaning first; sentence use still requires the appropriate case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=42352f4cae043d5250f1b833b494f1dce06c4ecc53e1c33ec4dae58d52e21c7b
+contentHash=b9ae5c2ee7bc9e08bd6c1e2d37bf2a9425934200d23215d60638ae9855d9012f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-rem-title`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5df1e4cc5d49c7c65733e5811f470abdbaa01135fc08be8a70996186629b0875
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-rem-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Review meanings and roles
+shippedText=Review meanings and roles
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4fe7139f71d24803760da604044dcfa590d321521d5d42af0dc018353629e76
+contentHash=2a651e17144116dc65020f3bcbdf51db9eaead578549a0bad2327a1292eacefe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-teach-1-body`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf8ff7f7715ec3ecacd58bb9b2fd54374811e24c8cc0f343176516df6c5df621
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-teach-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+над — over. под — under. These spatial meanings contrast vertical positions. The over label belongs to the first preposition; the under label belongs to the second. In a location construction, both can govern instrumental forms. The questions here recognize meanings from isolated prepositions; they do not ask you to choose a noun ending.
+shippedText=над — over. под — under. These spatial meanings contrast vertical positions. The over label belongs to the first preposition; the under label belongs to the second. In a location construction, both can govern instrumental forms. The questions here recognize meanings from isolated prepositions; they do not ask you to choose a noun ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03837e1ee5880288c7190de759c2f021008ba408bab598a8ce7a70d622e4297d
+contentHash=c5b5f20de9b28ad8dbc84f446d087311049123e134f79074d8846acb1b0448a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-teach-1-title`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3ee227045e914709be48d12d808bc007d835ce2df2284d373fdc172ed40dc9c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-teach-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Above and below
+shippedText=Above and below
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4809b0dc835f159936b01557303330b2c26c92950e14c1b6db069ed794c18730
+contentHash=ed8204b4431cf81f26b377418f7074eababfe46b460646792643ac2f2267cf44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-teach-2-body`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f87af6e27ea44a553337f7af1cefa397802c0af2b0be17293ad139122787532
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-teach-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The same preposition can govern different cases in different uses. For the preposition meaning under, instrumental describes location, while accusative can describe a destination under something. Movement within a location does not by itself require accusative: distinguish where something is from where it is going. These isolated-word checks contain no movement context and therefore do not assess that case choice.
+shippedText=The same preposition can govern different cases in different uses. For the preposition meaning under, instrumental describes location, while accusative can describe a destination under something. Movement within a location does not by itself require accusative: distinguish where something is from where it is going. These isolated-word checks contain no movement context and therefore do not assess that case choice.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6d87ea9687d7c6f29077f735f156a39f28153c89c9a76161bcb2c9bab39c312f
+contentHash=d17be4e8173b2c4497413882877368f6a0ee442502f258953bb65d10cada7c28
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-teach-2-title`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4200d76db10a1717f599feeea9a738a6f7cacf2027b531e6a37397d0fc3da131
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-teach-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Case depends on the construction
+shippedText=Case depends on the construction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4fccf4bdf67f67c53fd588f180424cfe63284064c08b22591c3a3da08510252c
+contentHash=aaa3bb9f62edbd7e6aed01e449b3089f5cd0c2330555c90d0251f2d85e44fb3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-teach-3-body`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41608fb68973802a19ad4c19035d294757cab2a7d70971c2f91144e74137fbb4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-teach-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+перед — before. между — between. In the spatial use introduced here, before means in front of; it is not a universal translation for every English time expression with before. Between places something relative to two things. When choosing a displayed English label, compare the specific spatial meaning, including the alternative behind. Learn the meaning first; sentence use still requires the appropriate case.
+shippedText=перед — before. между — between. In the spatial use introduced here, before means in front of; it is not a universal translation for every English time expression with before. Between places something relative to two things. When choosing a displayed English label, compare the specific spatial meaning, including the alternative behind. Learn the meaning first; sentence use still requires the appropriate case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=819f56dafd2921e716f6273c89e9a59e79d2bf1aec4a3ba42582ec9a90b39cbb
+contentHash=764fee1aa2aa08288bf3a05b9764c8375cb2578e568b01b5816bcadd3a402e26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-inst-prep-teach-3-title`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a958dad955ab225a9216d5e6e5b6ce8546de836bf6617074eb87fde4eadc458
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:inst-prep-teach-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Before and between
+shippedText=Before and between
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9b30006c1baa22d7928bf33761bc8623bfeb70f1b1bc7fc59545ecd9875160e4
+contentHash=a859250e61a0000dbfde8e564af6de9a8577ebd26d3b1bf4ea0389af2adfb7a9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-complements-0-distractor-1`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 276c87207e2fd64b9bbb02fef512080609b414acd5f27ed94484c74a8f94851e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-g-complements-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+to remain expresses continuation, not a change of state.
+shippedText=to remain expresses continuation, not a change of state.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0d415248b1779ed5226a65b31393647d6111da23b18d873422dae209c2325f38
+contentHash=9f1312e497b097699a3644d90e0702deb6bc9a2b46496ad90fba61436b2307d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-complements-0-distractor-2`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34734bd79787d615f6c791ced0072b7e97e6776716ce4768d82e9353635defc4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-g-complements-0-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+to turn out to be expresses what something proves to be, not becoming.
+shippedText=to turn out to be expresses what something proves to be, not becoming.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=efa40866eb7dce927886edcb68527b36a152d75ac93c965e20dbb9246aedfadb
+contentHash=7dc35da8c1066c99fc962f1dfce8926f58cb2294f38397bc04469ffc8b17e21a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-complements-0-feedback`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 166488fb53305912342a263d585a224425a86ae4071b7c4b90fe520535fe42a7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-g-complements-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+стать means to become: the infinitive expresses a change without marking a past event.
+shippedText=стать means to become: the infinitive expresses a change without marking a past event.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4be44ebf50b2892219df62a300d7eb4c5a3681fc1438f9a51061cd41603e06c7
+contentHash=4583f664c68dc1846a386d109a012e964eff55b3435c7e59d59c3ad3fddc069f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-complements-0-prompt`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0a7f6f541c98c05624a80d8dc6ec6c1548bc9411257d37c0ee61e2a214976e2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-g-complements-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which English meaning fits the shown infinitive?
+shippedText=Which English meaning fits the shown infinitive?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=efdf194b4f73b40631876be944469385cf5b1f40ea96798b4dc3ba5b2d1a9b04
+contentHash=21a314972a584ea3633303fbba0624d6cf9c2d886bfb2a5eb47bb8641092d7d0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-inst-means-0-distractor-1`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32920e2cb0bf4e22bd04831895ebd8d856f71f6135c239094315c67c2eeadbaf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:u16-g-inst-means-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The sentence about living between two houses describes location, not an accompaniment line.
+shippedText=The sentence about living between two houses describes location, not an accompaniment line.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a81a74babd07c8f532d24f20b8e791e03241eca4e974d2ac8edaf6ccba1b4921
+contentHash=4992dee64b868b1a02fcd65229292ffd704b27d5cec6c3c95032d7ffe3138c99
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-inst-means-0-feedback`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 674a745cdec4c1279742761394bceea27e0438f797f6b9651a3b3832f44e190c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:u16-g-inst-means-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The accompaniment line describes a meeting with a person, not an instrument used to perform an action.
+shippedText=The accompaniment line describes a meeting with a person, not an instrument used to perform an action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=403c945427706f5be0a93216488560cc750c5d82961d81206248b684172c757b
+contentHash=d9cdc5872396339f36df03cb8e6026d348ba053439b0e376d6be3e423a7bb5e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-inst-means-0-prompt`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b27abd3ec674d3ee3a860365fe04226c75bba67cecbf70f7a663f9a04ee4accb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:u16-g-inst-means-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which sentence is the accompaniment line, describing a meeting with a person?
+shippedText=Which sentence is the accompaniment line, describing a meeting with a person?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb781874471c68af19f21ed14f9cb02eee4d7ddd7d43ad2271478c60a45cbb8f
+contentHash=6a8bc3feebab80b7b1126e9d24ff7f7c495f89367982ada7f6250db6fc1f5f7e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-inst-prep-0-distractor-1`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b7ea45037bb3f90edaacaa50a4b79b68d4fb5385a9c83e617154cfd6c032854
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-g-inst-prep-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The under label places something below, not above.
+shippedText=The under label places something below, not above.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=46f9c34f2e46bc8282e79a8f45f74c7acee732e9d5cecf899f77fd5211417d1a
+contentHash=b430c842899e0779adb57178976f85cdd0ca4800563657e52975d0396390be35
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-inst-prep-0-distractor-2`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cf1590aa28a7cbf81acbacbcd0a760bf4986e7f7dbd4f38cb8705ea604aac95
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-g-inst-prep-0-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The before label describes being in front of, not above.
+shippedText=The before label describes being in front of, not above.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=27c6bd6a9f0cc59c57f7eaf6f8dbb4290acba88fa2be7a223cb9f6e49dd3f4d3
+contentHash=d8a5779f1738de09f08dabe60d6a19083840cf23ae5e5d1e75bc172551f617d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-inst-prep-0-feedback`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bd33c46d2822d33e09507fa1aa5aa9bddd6a7e51d1fe96f8f51b4aa52ab902b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-g-inst-prep-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The over label identifies the meaning of the shown preposition: above something.
+shippedText=The over label identifies the meaning of the shown preposition: above something.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=995164e33bbabd2b829facc704d15c30eda2a21f35fe6b18bfaf8d5202420e38
+contentHash=4b3306b7bf6d2e69e9c18a3f0bf527e6e0d8614f70196262293fea59393fe497
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-g-inst-prep-0-prompt`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c68c3d5baa4d44696490e198939b9b82d84bb9b6d70f6ff0093314ea4c2bf78a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-g-inst-prep-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which English spatial meaning fits the shown preposition?
+shippedText=Which English spatial meaning fits the shown preposition?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95dd0bf9cf5e52af97e767b4c39adf31e981262b0e2674a549b45edf5adcbf05
+contentHash=7b3f9b7268ede48228246b67931390a12322a22dde1958b5f4aec86009a1997c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-complements-1-distractor-1`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e1b1db8ba702cabcfe99d594e81029bd63d5804cdd0734c3c4fa127e3aeb123
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-i-complements-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+became is an English past-tense word and does not correctly label the shown infinitive.
+shippedText=became is an English past-tense word and does not correctly label the shown infinitive.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=170298cf32ac602202c980a5b245552b734388765ff49de0fb7537ee198608e4
+contentHash=82edf177b3fac38022e6c7a96a1cc8b60774f1ca8020da8861dd24fce2f6146f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-complements-1-distractor-2`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42eba2ad99ba1dcf49d4fb2e3c901437a96962b0c09edeac2ecbb68934686dd6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-i-complements-1-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+turn out to be expresses what something proves to be, not continuation.
+shippedText=turn out to be expresses what something proves to be, not continuation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cd045fd4f413ae1b828385e3ddb82d761766a6f2aa8d7a4d6955b26548a1730e
+contentHash=085613287dbea2aa0687818b6c776e0e96b9216ebc588aeea2f29acd8a1ee0c9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-complements-1-feedback`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bad0778f7a39c56a5ff6319c972b840687504969a3622524976855f500a1115a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-i-complements-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+остаться means to remain; choose remain for continuation of a state. It belongs to the connective verbs introduced here.
+shippedText=остаться means to remain; choose remain for continuation of a state. It belongs to the connective verbs introduced here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=78a6632c2bbbf4e441d4c94aa45e653158e546ea6ae4f34c49c4f91286d9fc86
+contentHash=baef5bb6bab0a232c7a6ef1c154c97cc158e918a94c6878377ce95c464c13208
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-complements-1-prompt`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7648b6ead171385849c42f301e41c5dde81d120e96ff6f0b82b469e3975273c4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-i-complements-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which English meaning fits the shown infinitive?
+shippedText=Which English meaning fits the shown infinitive?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=efdf194b4f73b40631876be944469385cf5b1f40ea96798b4dc3ba5b2d1a9b04
+contentHash=21a314972a584ea3633303fbba0624d6cf9c2d886bfb2a5eb47bb8641092d7d0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-complements-2-distractor-1`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c5f6d139bb8009fa3753400df6cfb74381d0e6ead68a0a1db7d3db0f9cbc97f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-i-complements-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+became is an English past-tense word and does not correctly label the shown infinitive.
+shippedText=became is an English past-tense word and does not correctly label the shown infinitive.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=170298cf32ac602202c980a5b245552b734388765ff49de0fb7537ee198608e4
+contentHash=82edf177b3fac38022e6c7a96a1cc8b60774f1ca8020da8861dd24fce2f6146f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-complements-2-distractor-2`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2c1f582e53fb1ccc1ae40fbd3f460651f0f6e4443cdcbbe5e10763a0e3d4465
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-i-complements-2-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+remain expresses continuation of a state, not what something proves to be.
+shippedText=remain expresses continuation of a state, not what something proves to be.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3121457916a9b6d5824be434b075022ce746fe6935fc8978b1aa53780e7bb0ee
+contentHash=70ef4941811ba8655a974bdf37ac68c3420fa68a46967a56df0fb85855cf0578
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-complements-2-feedback`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a762649610e9bd63336588ce3cdd200ccbc5a740ddd5bc771b6f61c2767c367e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-i-complements-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+оказаться means to turn out to be: it describes what something proves to be.
+shippedText=оказаться means to turn out to be: it describes what something proves to be.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=616054607b54d039f3ad41c9f63bc937395d4f0df00fd4336ec8f5af863aac57
+contentHash=5bf8c049482d2a562e917989f069d9aac981cc21038731dd7afc1a753ed2fb4a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-complements-2-prompt`
+
+- Objectives: obj-u16-complements
+- Sessions: u16-s-orient, u16-s-complements
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a90632d186039a367c1dd29042fe85ecc04bf4fe8f14b01a7d403be3b60b1458
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-complements:uses:u16-i-complements-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which English meaning fits the shown infinitive?
+shippedText=Which English meaning fits the shown infinitive?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=efdf194b4f73b40631876be944469385cf5b1f40ea96798b4dc3ba5b2d1a9b04
+contentHash=21a314972a584ea3633303fbba0624d6cf9c2d886bfb2a5eb47bb8641092d7d0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-1-distractor-1`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d3793b0ff7c72ac8c029e364a21875b5f1668de1a2430ba90d2acd080fabe51
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:u16-i-inst-means-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The sentence about living between two houses describes location, not a means instrumental naming a tool.
+shippedText=The sentence about living between two houses describes location, not a means instrumental naming a tool.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=06d4f721716d130f3f065455ad4a1be77e93d2f30b12f6ad610e311be8b0896f
+contentHash=017610e1b2ff90b07fb6e2b4a3cd1d3de34f3d22de8144975428fe85520ae31e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-1-feedback`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6c0ad34c9ca6f8e862add9a0aa2bec1546c0810c230479af9e8886871d6fc82
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:u16-i-inst-means-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The means instrumental in the writing sentence names the pencil used as the tool.
+shippedText=The means instrumental in the writing sentence names the pencil used as the tool.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=459d60f7eb5002c5de556b680d5f811fbcc02d4842333504cf039cd55881d35c
+contentHash=3a8af3650bfa83bb8a871e3278cda9541afdf4ca3cc3b3b070e9e34fdeaaf6d0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-1-prompt`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b2d63128f74c069913aa3c9f0236b1f81dc63bcb13660d64012a8b6943fb966
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:u16-i-inst-means-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which sentence uses the means instrumental to name a tool used for an action?
+shippedText=Which sentence uses the means instrumental to name a tool used for an action?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f3d7035edc94a87f5522d71724b6530c533bd59c5cc673b815ede7a1bc3a786a
+contentHash=065cdf4f954814e99d429c3c2e090ba42b926013b97bfab8c4699c9e729a156e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-2-distractor-1`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fdaf7b6a4a2c03b67b84bd9df5363c517fbba1ac39db5534b7047b6e30c90372
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:u16-i-inst-means-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The meeting sentence is an accompaniment line describing a person involved in a meeting, not location between houses.
+shippedText=The meeting sentence is an accompaniment line describing a person involved in a meeting, not location between houses.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f5d34d488804fe064eab0d93b08bcc1112e51d0be293ee16fe689ea3fca0d83
+contentHash=48641bdd0b185f1a3d3fec84236ab7e9a861e6befa254627cf6606cdd828c2cd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-2-feedback`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fcc0d7e19cd9b85d351c9a468db73e0e6b686b9eb52f27f700a9e78badd6287
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:u16-i-inst-means-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The between line locates the speaker relative to two houses.
+shippedText=The between line locates the speaker relative to two houses.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb6fc55dc7dec1801dfb258dfde005c04598cf285bfb33b1f2a7f5afee1d8813
+contentHash=4171d4331bc0e5d88cef539738285bee9dc67f519345009c5c60ec53a59f2505
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-2-prompt`
+
+- Objectives: obj-u16-inst-means
+- Sessions: u16-s-orient, u16-s-inst-means
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5a9b1da45f3b92f5cb8d719346b01fe2ec40ee671cafcb7c6043f32c8aed3f4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-means:uses:u16-i-inst-means-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which sentence is the between line, describing a location relative to two houses?
+shippedText=Which sentence is the between line, describing a location relative to two houses?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=46b2e84b55374cd3d9540cc0a5965bf2e74df2a326f5cbb63d8c922527e5b1a5
+contentHash=f31a88098a4b061b57bef6f86cda8288dc0502754f56d06b1199cde239ddd344
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-1-distractor-1`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc62b1928b07cd81dd77aeae88f95bc8474b8ec46c87c1ad0ab8e100bb9a3869
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-i-inst-prep-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The over label places something above, not below.
+shippedText=The over label places something above, not below.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d1d8c93b5be205283847ff9b1a5857d7f519ebe267ef578eb2840ed45d221c09
+contentHash=18bb02b8f40830463b221901f56325decd64dff73519c0a547e27c1da3fdec7d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-1-distractor-2`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cb0872c39d096f231d03a19f8dcbf40fed0f31dcc0ad982ec7a4a208b3a01bf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-i-inst-prep-1-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The behind label places something at the back, not below.
+shippedText=The behind label places something at the back, not below.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dbdb6a4e84c0b4e864cc86367c3a6f04c9123a761908bbe3f8a97f1d4ca0be83
+contentHash=0fdf8ba8700eab7842c45186ae0312f80a86728c9615f427bea64fbf4065c568
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-1-feedback`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1375c65db26b6e28388d9d6ea8e54b65c21cd2797eca1d34ea0563ca5e46a683
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-i-inst-prep-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The under label identifies the meaning of the shown preposition: below something.
+shippedText=The under label identifies the meaning of the shown preposition: below something.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6bf806770a876dec4e0454840d8e0ca857354dfa9c97c0d316a19ed591a6a1be
+contentHash=6999f9d7fd5ee3da5033fb0c3baacf80391712ca101ddd5104b107c5699cd87a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-1-prompt`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7483d6c5f63eee775a2590f3832f8feeef51ca7ed50e42ce2899b8abfe430ca4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-i-inst-prep-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which English spatial meaning fits the shown preposition?
+shippedText=Which English spatial meaning fits the shown preposition?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95dd0bf9cf5e52af97e767b4c39adf31e981262b0e2674a549b45edf5adcbf05
+contentHash=7b3f9b7268ede48228246b67931390a12322a22dde1958b5f4aec86009a1997c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-2-distractor-1`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e75e6936cebb7fe059e5b9f224476832a6620a9792195aadb772f81628446f4b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-i-inst-prep-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The over label places something above, not in front of.
+shippedText=The over label places something above, not in front of.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61710923cb1fa5251978ed83022a9ab1d87f2b742402354e09c6bae27f571e5d
+contentHash=2e9d17def515bee3589d294ae42a7079b804fc3d78bcaab2aa5477cbdfa3b16e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-2-distractor-2`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5921fa3ea96d684183eebbbe22e3f51a1e707ea501128389dfc0275692349d0b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-i-inst-prep-2-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The between label places something relative to two things, not in front of.
+shippedText=The between label places something relative to two things, not in front of.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4983ec4f92218b2045e6ac0c26215a8fec1b0a5f60e4e13fda395f5cfc4b9f36
+contentHash=b4fcdf5b1da23b15c61610482c69ca99e7ed5f55da85deb3e7eff0f6050cec4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-2-feedback`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 524af26643e53338fe26380970d8b8d8d1ff0db615bb18a80f1b39f47b793f10
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-i-inst-prep-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The before label identifies the spatial meaning of the shown preposition: in front of something.
+shippedText=The before label identifies the spatial meaning of the shown preposition: in front of something.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7b77060e671558ee89666f005d6862f4fc502064eba5afa5a42ee4c94c7f3f93
+contentHash=d0d10f8723584ebd6d819030f9ccce7a5ba5bad4264974c9fe71ecfa035c271a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-2-prompt`
+
+- Objectives: obj-u16-inst-prep
+- Sessions: u16-s-orient, u16-s-inst-prep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0232763975cba8e65b1276e708228d8d32cb3dd663c2028054cbe74681b85166
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-prep:uses:u16-i-inst-prep-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt: means, accompaniment and spatial prepositions. Cornell Russian Language Program, The preposition s/so; Instrumental vs. Genitive, https://russian.cornell.edu/grammar/html/le41_50_d.htm, primary HTML consulted 2026-10-10 UTC: accompaniment distinction. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: connective-verb complements. Previously admitted Unit 16 corrected infinitive records supply to become. Application inference: explain the roles and gloss contrasts of existing records; retain the historical became option as an incorrect distractor, not a correct infinitive gloss. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which English spatial meaning fits the shown preposition?
+shippedText=Which English spatial meaning fits the shown preposition?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95dd0bf9cf5e52af97e767b4c39adf31e981262b0e2674a549b45edf5adcbf05
+contentHash=7b3f9b7268ede48228246b67931390a12322a22dde1958b5f4aec86009a1997c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-check-body`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fcaa6be54ce4de4e8989d53c0e81f8cf1254d10313ba48046a40c23a3970437
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-check-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+shippedText=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfa3e9c9fa288eec3f298357c41e185d607c6002924d9a0c72c5bfa6482d73cf
+contentHash=417c5707c964adccc8ba6bccf1bc94fb71d12f2a24350f20bd5d10d13232cd6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-guided-body`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 004fe28a92949213e10defc327016d38a73db7364fdd1b2eaf6d0ab778717195
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-guided-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+shippedText=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfa3e9c9fa288eec3f298357c41e185d607c6002924d9a0c72c5bfa6482d73cf
+contentHash=417c5707c964adccc8ba6bccf1bc94fb71d12f2a24350f20bd5d10d13232cd6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-objective-title`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc5ad83fcf72a1efa00f7c60c6929ab3027c1f067b3fbe03d50a6ef39ef38fb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-objective-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Recognize instrumental adjective agreement
+shippedText=Recognize instrumental adjective agreement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ec2af32768992f182ba1e1c15fb2d1787462053682e0a3bc68eaf6c380117a25
+contentHash=253ba18275dfd7d6ce9665850fc8fd7cbfb68e7899688ccabcbae425126c3ed9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-rem-body`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f79bcefbddacb9a506690c9a1624827ec1263a4c6ff47a010aa698f526606581
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-rem-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+An adjective agrees with its noun in case and number, and in gender in the singular. хоро́ший is the masculine dictionary form for good. хоро́шим is its masculine or neuter instrumental singular form. Here the check requests masculine instrumental; it does not ask for an English gloss.
+
+Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings. хоро́шим uses -им because of the spelling restriction after its stem-final consonant. Do not apply the noun ending -ом to this adjective.
+
+хоро́шему is dative masculine or neuter singular. хоро́шие is nominative plural. Neither is the masculine instrumental singular form requested here. Work the choice by selecting хоро́шим.
+
+хоро́шими is instrumental plural, with a plural adjective ending. хоро́шая is feminine nominative singular. For a plural instrumental request select хоро́шими; хоро́шим has singular number. Recognizing these forms does not by itself demonstrate using adjective agreement in a sentence.
+shippedText=An adjective agrees with its noun in case and number, and in gender in the singular. хоро́ший is the masculine dictionary form for good. хоро́шим is its masculine or neuter instrumental singular form. Here the check requests masculine instrumental; it does not ask for an English gloss.
+
+Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings. хоро́шим uses -им because of the spelling restriction after its stem-final consonant. Do not apply the noun ending -ом to this adjective.
+
+хоро́шему is dative masculine or neuter singular. хоро́шие is nominative plural. Neither is the masculine instrumental singular form requested here. Work the choice by selecting хоро́шим.
+
+хоро́шими is instrumental plural, with a plural adjective ending. хоро́шая is feminine nominative singular. For a plural instrumental request select хоро́шими; хоро́шим has singular number. Recognizing these forms does not by itself demonstrate using adjective agreement in a sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=06d131f188c434f851cadefc32e4c6d4f74c98fd8719883e23dc433115b88192
+contentHash=6d0eae4746be340188f279e0236e5835bed8002bad7d73c6fd1927b6372db72b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-rem-title`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aad35d10ee3efb69c3c900c21f8069a024be532022f6ac2d5fdee446df0bc179
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-rem-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Review the instrumental contrasts
+shippedText=Review the instrumental contrasts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03c050012d0788b5180cafdb83e6d4854abebd72b875df921ca23396334291a4
+contentHash=a79d27cb0b78ba3fd92375531f41cad30ebf2933ff4199b9e41ed5e14492ccf6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-teach-1-body`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 610cb6b7dd47f92ee7a413bca4f42b787e6817e690f5939e0a251dfc31a14970
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-teach-1-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+An adjective agrees with its noun in case and number, and in gender in the singular. хоро́ший is the masculine dictionary form for good. хоро́шим is its masculine or neuter instrumental singular form. Here the check requests masculine instrumental; it does not ask for an English gloss.
+shippedText=An adjective agrees with its noun in case and number, and in gender in the singular. хоро́ший is the masculine dictionary form for good. хоро́шим is its masculine or neuter instrumental singular form. Here the check requests masculine instrumental; it does not ask for an English gloss.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5dbb216d67f0f7d33836e50e505d417db7354780c65ae89cfc44247bc99a6e
+contentHash=fcdf4f1e0c76ca2fefe700bb9f3cc267e4abd1aea49d89a64d0f0bc278bc5968
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-teach-1-title`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed6bb57b2f4ac3bf350c8d2e6643580e9031022ca681211ca22beb6ca653c7b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-teach-1-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Adjective agreement
+shippedText=Adjective agreement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6c33fd6afe252bf9b2fe42cae6ee3503bb0173aa8427baef3f3bea4160164532
+contentHash=d3e1fb7a87abedbd257f2295295a1e0da56e785db71db66fb88c80443c01cb94
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-teach-2-body`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61ecc4c2c39b94703eea61a5c5f1ee876efbdf522b91e50f3b0573819bf8bcae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-teach-2-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings. хоро́шим uses -им because of the spelling restriction after its stem-final consonant. Do not apply the noun ending -ом to this adjective.
+shippedText=Hard-stem masculine and neuter adjectives take -ым in the instrumental, and the soft or spelling-restricted stems take -им. These are adjective declension endings. хоро́шим uses -им because of the spelling restriction after its stem-final consonant. Do not apply the noun ending -ом to this adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9223c319cf8593803f649abcc5593781ff3d4dc4ba184eb4f7ff941c2769e1d7
+contentHash=1e7fee4d3ed9e2dda2725a0e99ee2465fa852e59afe4aa0e05d8fedb41bfa260
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-teach-2-title`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56b6fddd46a6f836ec9d6ea5502c0e114672b7e536148f81ff5ccc5df491cb13
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-teach-2-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Adjective endings differ
+shippedText=Adjective endings differ
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f6a03d433fb27e799709f6598375fbd90d088976a19e58fb5c213083f5ec6580
+contentHash=8c683c7472f66cccc7833bdbd618993e42b64be7bf9d314fb643a2f8299b897d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-teach-3-body`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e359021839e00b06329c4746e80dcf40626cebd395276506d21dafc79ecdaed3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-teach-3-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шему is dative masculine or neuter singular. хоро́шие is nominative plural. Neither is the masculine instrumental singular form requested here. Work the choice by selecting хоро́шим.
+shippedText=хоро́шему is dative masculine or neuter singular. хоро́шие is nominative plural. Neither is the masculine instrumental singular form requested here. Work the choice by selecting хоро́шим.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c75a0983a2637c8a2ac2a7ccc3ac1c3c1240dc9b2b422cd363069975bf0000c8
+contentHash=0b04261be1344d6cfd2fb9ddb82d8bfcd461bdcecc9faf5a2327c6de9b29d29c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-teach-3-title`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0803efa8f3c0ca6dfc474160e4a90a2976b43c9973469a1d9bcf1b418f460af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-teach-3-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Compare dative and plural
+shippedText=Compare dative and plural
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=27e5b95d6322ef1a4c885c80981e747f341d063290b553f9bc69f61b50442173
+contentHash=f63289c33b9729877e3a780208824b4f264e46d268064ebeab1db2389f62530b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-teach-4-body`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0d4f34c2c9ae8cd6d28f223a0c8aa1b76d0c36ffe210dccfe0a3cdefae06451
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-teach-4-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шими is instrumental plural, with a plural adjective ending. хоро́шая is feminine nominative singular. For a plural instrumental request select хоро́шими; хоро́шим has singular number. Recognizing these forms does not by itself demonstrate using adjective agreement in a sentence.
+shippedText=хоро́шими is instrumental plural, with a plural adjective ending. хоро́шая is feminine nominative singular. For a plural instrumental request select хоро́шими; хоро́шим has singular number. Recognizing these forms does not by itself demonstrate using adjective agreement in a sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e45bcee488215798e8cefc5c9d3467470884cd410fe63457870f5a181e6ccfdd
+contentHash=6219c794ae31654162e289cb85d541d1f5a34b6c44149bc709deca5f5e09a562
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-adj-teach-4-title`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3493030216662652bd4eea5e3e614560ebb2466196f743d3234c78325e3df8e7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:inst-adj-teach-4-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Instrumental plural agreement
+shippedText=Instrumental plural agreement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=00b76ab9c95d90dd12e636bc8ce7083b98c3b2446ddda141f5047639fe7b96a0
+contentHash=f8467daf340268b137abbb5e5cde0555183cc760c792c72b385de9328dbbe89e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-check-body`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 637c23035796713d0c33a1e676557175a585f9665b25ae14758021e7bb19b648
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-check-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+shippedText=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfa3e9c9fa288eec3f298357c41e185d607c6002924d9a0c72c5bfa6482d73cf
+contentHash=417c5707c964adccc8ba6bccf1bc94fb71d12f2a24350f20bd5d10d13232cd6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-guided-body`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83304da0565d4e768a3dd8cb797697d19ac2bde2fa0a66fc5aec6a62f96d4014
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-guided-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+shippedText=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfa3e9c9fa288eec3f298357c41e185d607c6002924d9a0c72c5bfa6482d73cf
+contentHash=417c5707c964adccc8ba6bccf1bc94fb71d12f2a24350f20bd5d10d13232cd6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-objective-title`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fab982e85a3db88e7b10e7484b2637fde50e9291371a5b56e7ff805c989c9f5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-objective-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Recognize instrumental plural nouns
+shippedText=Recognize instrumental plural nouns
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80320e5cadeaa73bc72f2bd13dbde1f3ffba989ba5e6771e0db7d854819949e4
+contentHash=c6799f9e05dfc8dd133ed7a4e722a657d0dc3fd88ca3d5505987c1d960c2cf39
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-rem-body`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ac338a47748a3f0e18b3904bd35c2678491c075935398e5dd0ba6db5f37f8b5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-rem-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Instrumental plural refers to more than one. кни́га is the dictionary singular form for book; кни́гами is instrumental plural. Keep the stem and use -ами in this pattern. Given an instrumental plural request, choose кни́гами.
+
+Instrumental plural nouns commonly use -ами or -ями, with exceptions. The book, house and table forms shown here use -ами. This is a noun ending; adjectives have their own agreement endings. These checks ask you to recognize the displayed pattern, not derive every noun form.
+
+кни́гам is dative plural; кни́гах is prepositional plural. Neither is instrumental plural. Compare their endings with кни́гами: the final vowel is part of the instrumental plural ending here.
+
+до́м names a house in the dictionary singular. дома́ми is instrumental plural. For this plural case request choose дома́ми, including the stress shown in the retained form.
+
+дома́м is dative plural. до́мом is instrumental singular. The first has the wrong case; the second has the right case but the wrong number for an instrumental plural request. дома́ми meets both requirements.
+
+сто́л is the dictionary singular form for table. стола́ми is instrumental plural. For an instrumental plural request, select стола́ми and learn its stress with the ending.
+
+стола́м is dative plural; столо́м is instrumental singular. Neither meets both parts of an instrumental plural request. стола́ми supplies instrumental case and plural number together.
+shippedText=Instrumental plural refers to more than one. кни́га is the dictionary singular form for book; кни́гами is instrumental plural. Keep the stem and use -ами in this pattern. Given an instrumental plural request, choose кни́гами.
+
+Instrumental plural nouns commonly use -ами or -ями, with exceptions. The book, house and table forms shown here use -ами. This is a noun ending; adjectives have their own agreement endings. These checks ask you to recognize the displayed pattern, not derive every noun form.
+
+кни́гам is dative plural; кни́гах is prepositional plural. Neither is instrumental plural. Compare their endings with кни́гами: the final vowel is part of the instrumental plural ending here.
+
+до́м names a house in the dictionary singular. дома́ми is instrumental plural. For this plural case request choose дома́ми, including the stress shown in the retained form.
+
+дома́м is dative plural. до́мом is instrumental singular. The first has the wrong case; the second has the right case but the wrong number for an instrumental plural request. дома́ми meets both requirements.
+
+сто́л is the dictionary singular form for table. стола́ми is instrumental plural. For an instrumental plural request, select стола́ми and learn its stress with the ending.
+
+стола́м is dative plural; столо́м is instrumental singular. Neither meets both parts of an instrumental plural request. стола́ми supplies instrumental case and plural number together.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d1c48dfb7240fd0853fa46133aa682bb03e17d3a841dd363f4c2e76bf471a70c
+contentHash=9f04a3c5bb0916d261aa900d056104c6e71600131ef9f1ce933485d117a75ad0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-rem-title`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44e975a3a63d017f7c481e3137dbb78a0234598532754709b7fee5fdfefc2bc8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-rem-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Review the instrumental contrasts
+shippedText=Review the instrumental contrasts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03c050012d0788b5180cafdb83e6d4854abebd72b875df921ca23396334291a4
+contentHash=a79d27cb0b78ba3fd92375531f41cad30ebf2933ff4199b9e41ed5e14492ccf6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-1-body`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b07d6f350e53d10b152bed51dd33d23ff7947fe6cc8fdb4e7fad52625b3ca89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-1-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Instrumental plural refers to more than one. кни́га is the dictionary singular form for book; кни́гами is instrumental plural. Keep the stem and use -ами in this pattern. Given an instrumental plural request, choose кни́гами.
+shippedText=Instrumental plural refers to more than one. кни́га is the dictionary singular form for book; кни́гами is instrumental plural. Keep the stem and use -ами in this pattern. Given an instrumental plural request, choose кни́гами.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4ce6784cfb77cfc8906f528b2f92542274e28ce8faf213b223e1ccc71d195a4
+contentHash=a90d0f67d5bf43ae4cad51c96e93c6ca096e290084de9d72c673f3cf51c6e3a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-1-title`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c09e5d6fa4f24066bac9a4c0dca8ca787ad5eb9312f1e897461eb50c800dda5d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-1-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Instrumental plural of book
+shippedText=Instrumental plural of book
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=28681604ccca5ecb03160b1afd025f7bb393733d8c06b30a7c90f56b73592926
+contentHash=afd0ff40b7090b55be7892674efb713c984e0aa3dc4cc91f2049ad3592917e65
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-2-body`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be5aab0237c6d528b6875158fbab9cc833c15988875b876af1c87e0fafcdfa43
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-2-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Instrumental plural nouns commonly use -ами or -ями, with exceptions. The book, house and table forms shown here use -ами. This is a noun ending; adjectives have their own agreement endings. These checks ask you to recognize the displayed pattern, not derive every noun form.
+shippedText=Instrumental plural nouns commonly use -ами or -ями, with exceptions. The book, house and table forms shown here use -ами. This is a noun ending; adjectives have their own agreement endings. These checks ask you to recognize the displayed pattern, not derive every noun form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4f74adcce0ad2bc9510db0c9251bc3f9815b3aded193865427d0f6291662bade
+contentHash=b8cd4d247ca765b82815cadfcc209b372cc5766d687a4cbdf84bab12abb6c89b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-2-title`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bc56cd9a87959d41f1acb39b70c8cd8ff10bb924fa4e7bb5e17b0a7bde662de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-2-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Plural noun endings
+shippedText=Plural noun endings
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d00e91418dd05eca6e313b8e92ddd0f3c59a9eb1d45973558153c25099ff464c
+contentHash=2ecf3f4759e216d5ed18e9cf510e053b9d8f164e0e7f854fb8ffc0279f167e4f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-3-body`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b9efaeb6ba6664a706ecb2e2a767a5bc37925a69c6e0675891213b00644522e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-3-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+кни́гам is dative plural; кни́гах is prepositional plural. Neither is instrumental plural. Compare their endings with кни́гами: the final vowel is part of the instrumental plural ending here.
+shippedText=кни́гам is dative plural; кни́гах is prepositional plural. Neither is instrumental plural. Compare their endings with кни́гами: the final vowel is part of the instrumental plural ending here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a49fb62e4c46052acce3cc9c3d6fc8dac72211c72008cc3323d2ff43e54dd5d8
+contentHash=a31a7e739aa133ec0e69e6119111a9e58a5461962b30ed9d9d9a1afa26d432eb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-3-title`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec531ae8a775ed49504b1484cbea309f7fe6ac8478e1051fb03476fae6011893
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-3-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Compare plural cases
+shippedText=Compare plural cases
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d5e87f82f0f46975e220ea08e401fb0b29f69d63e51ffd3cd1599181c6082f96
+contentHash=0e0b7cde228cfb1556eac5bb1ca8262b426236723303bad07a998d2882d86a3b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-4-body`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 989fa5dffb1ac226ae17bfb460fd070444aea3a27f7a7c7b825fc6fd7bd4b011
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-4-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+до́м names a house in the dictionary singular. дома́ми is instrumental plural. For this plural case request choose дома́ми, including the stress shown in the retained form.
+shippedText=до́м names a house in the dictionary singular. дома́ми is instrumental plural. For this plural case request choose дома́ми, including the stress shown in the retained form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=18f0fd4dfa2f0aa223224eb938bee8f1daac63eff7a941e754d51d01ecdde5b6
+contentHash=d0c7ea7d3a1167afa46d64d33351e645cf59bc1ad1a31434968fc9a1923e139d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-4-title`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2013359fb1b5de74d33eec670694d3cd4f97444e69f9d77087f48ccef81ba599
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-4-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Work the house plural
+shippedText=Work the house plural
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a94927f110381f11d163ee3ac66aea9a7f2a0d378d9363c6f128711d3f7c6f80
+contentHash=ac0966fda765b6f499a1c81bc167842a4a9b1a3cad7ee144a3021df6008b5611
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-5-body`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e59ede3d1fe9db6884d8db5346a1101dd99eda2fe649fa3c9821de262c42b789
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-5-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+дома́м is dative plural. до́мом is instrumental singular. The first has the wrong case; the second has the right case but the wrong number for an instrumental plural request. дома́ми meets both requirements.
+shippedText=дома́м is dative plural. до́мом is instrumental singular. The first has the wrong case; the second has the right case but the wrong number for an instrumental plural request. дома́ми meets both requirements.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ef3aa3866cc84c89d6ea6ad767d3c666bbf6c46004a336955f4586e5ec7fa3ae
+contentHash=4b72f93d82e0e6d349beaf5dc429bb74d1fa5a5773748db00311f86bdcc9aab7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-5-title`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e84b39187fce1020d11d73fdc78bc8af04b059e5f4e3bb58c874d77058fcba3f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-5-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Case and number both matter
+shippedText=Case and number both matter
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61752cf3a2604668687b3a67cded82172151172e9635274765780f27523e8e9d
+contentHash=565fc574dde9d9a658af18d462dc2c09517c12a67f628be625f9a2237877059b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-6-body`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5bd1c8c087e27738c53fc39ad41821c57d3dce956aba6579f171887c2a2a5cc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-6-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+сто́л is the dictionary singular form for table. стола́ми is instrumental plural. For an instrumental plural request, select стола́ми and learn its stress with the ending.
+shippedText=сто́л is the dictionary singular form for table. стола́ми is instrumental plural. For an instrumental plural request, select стола́ми and learn its stress with the ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aa86899512621fc993d60edc9fa5decb73870ff1e915c490e6d7341cd089efba
+contentHash=5f0f0c6727bba0414aa612107b0df07bbc5b38b408eadc5551a402d759a77f55
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-6-title`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6313316be895af221414373c741699ea92254d934f2eba9023d882bf2d45cfc6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-6-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Work the table plural
+shippedText=Work the table plural
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=935675bc905bfd0b4e9133af348b7372f8baed995531bc2823d50588ecd36489
+contentHash=f3094c2c00571b64cd180dd9d82d57a2a138085cf61586b87682edc58e5db7d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-7-body`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e4d755249d656aef06eef11f1657242e3338f7df8006ff03bb30305fca85ba07
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-7-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+стола́м is dative plural; столо́м is instrumental singular. Neither meets both parts of an instrumental plural request. стола́ми supplies instrumental case and plural number together.
+shippedText=стола́м is dative plural; столо́м is instrumental singular. Neither meets both parts of an instrumental plural request. стола́ми supplies instrumental case and plural number together.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cbcd9e03a24692462d01ebb8c0462e1e9086859da44508e8f861c1c0ec246391
+contentHash=8ddf9005afdd8aa0d1be78f884eb176d7cd9d35a7f7f60e34c6d72d658b5fbcc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-pl-teach-7-title`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 180124b492c485e35b3f6a6b4ab4bf8256444ae47e1226481d65addc7af379bf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:inst-pl-teach-7-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Reject a singular instrumental
+shippedText=Reject a singular instrumental
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b8af2f5c678e197b1a532999e349560566803623266dbcbd9458fcc5458840cd
+contentHash=8601c62c0eeb7fa517a8477f3a6c12bf4f5d7393dfcaece69e0877722d8d1fe1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-check-body`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3037e981236bf7e23c849bbd4acb38b13a7e14c358386d14173ebc6caffce807
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-check-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+shippedText=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfa3e9c9fa288eec3f298357c41e185d607c6002924d9a0c72c5bfa6482d73cf
+contentHash=417c5707c964adccc8ba6bccf1bc94fb71d12f2a24350f20bd5d10d13232cd6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-guided-body`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94d85ab4fe35535f4ab7727dae5801c7114ae14499e907f9d886eb60681368e3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-guided-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+shippedText=Identify the requested case and number, then compare the displayed forms. A missed check returns to the full explanation and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfa3e9c9fa288eec3f298357c41e185d607c6002924d9a0c72c5bfa6482d73cf
+contentHash=417c5707c964adccc8ba6bccf1bc94fb71d12f2a24350f20bd5d10d13232cd6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-objective-title`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41737c64785fa76b2500a64313363882bc852d2a6361cc731d9d38262f120819
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-objective-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Recognize instrumental singular nouns
+shippedText=Recognize instrumental singular nouns
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=196171c2c9d4464bebe28107f7f971c36ad6401ead79734777b2168f0b717307
+contentHash=ac886141edf2c3659e2284c85c675d2f6b6be4bcd9a99aea361f05c787bf6f89
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-rem-body`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 01b969fccbb34ba207a4d28c509d4eeae6f528a55f0350175f35f161c97c1f96
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-rem-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The instrumental case can mark the means used to do something. These checks first teach its forms. сто́л is the dictionary form, meaning table; столо́м is instrumental singular. The word still names a table: the ending marks its grammatical role, not a new vocabulary meaning.
+
+The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal. Here, keep the stem of сто́л and add -ом to obtain столо́м. Learn the stress with the whole form.
+
+столу́ is dative singular and столе́ is prepositional singular. Both belong to the same noun, but neither has the instrumental singular ending. For an instrumental singular request, select столо́м rather than selecting a form merely because its English gloss is table.
+
+до́м means house in its dictionary form. до́мом is instrumental singular: keep the stem and add -ом. Given до́м and an instrumental singular request, choose до́мом. This is the same ending pattern as the table form.
+
+до́му is dative singular; до́ме is prepositional singular. They do not answer an instrumental singular request. Compare the entire ending with до́мом, and notice that this noun keeps its stem stress.
+
+поездом is instrumental singular of the noun meaning train; карандашом is instrumental singular of the noun meaning pencil. The pencil check asks for that meaning as well as the case. Its other options refer to train and husband. A correct case alone does not identify the requested noun.
+
+книгой is the instrumental singular form for book. This noun has a different ending from the -ом shown for table and house. Do not attach the same ending to every noun. These examples introduce selected singular patterns, not the full instrumental paradigm.
+shippedText=The instrumental case can mark the means used to do something. These checks first teach its forms. сто́л is the dictionary form, meaning table; столо́м is instrumental singular. The word still names a table: the ending marks its grammatical role, not a new vocabulary meaning.
+
+The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal. Here, keep the stem of сто́л and add -ом to obtain столо́м. Learn the stress with the whole form.
+
+столу́ is dative singular and столе́ is prepositional singular. Both belong to the same noun, but neither has the instrumental singular ending. For an instrumental singular request, select столо́м rather than selecting a form merely because its English gloss is table.
+
+до́м means house in its dictionary form. до́мом is instrumental singular: keep the stem and add -ом. Given до́м and an instrumental singular request, choose до́мом. This is the same ending pattern as the table form.
+
+до́му is dative singular; до́ме is prepositional singular. They do not answer an instrumental singular request. Compare the entire ending with до́мом, and notice that this noun keeps its stem stress.
+
+поездом is instrumental singular of the noun meaning train; карандашом is instrumental singular of the noun meaning pencil. The pencil check asks for that meaning as well as the case. Its other options refer to train and husband. A correct case alone does not identify the requested noun.
+
+книгой is the instrumental singular form for book. This noun has a different ending from the -ом shown for table and house. Do not attach the same ending to every noun. These examples introduce selected singular patterns, not the full instrumental paradigm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9d55ecab3eb3fbdbd0aa58658cd15e2fce517af87d73e63d5974e40ea06cb387
+contentHash=24e4eb14252d330d51d1272e4c2fd703ea166c966370c9ed48c8eae50e751e06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-rem-title`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c69510fdbaaac048b643d48ac691a4926df8caf6c4f685ca3fa291e3f178c076
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-rem-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Review the instrumental contrasts
+shippedText=Review the instrumental contrasts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03c050012d0788b5180cafdb83e6d4854abebd72b875df921ca23396334291a4
+contentHash=a79d27cb0b78ba3fd92375531f41cad30ebf2933ff4199b9e41ed5e14492ccf6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-1-body`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58a4d13cb4a69fe174153cf99f5b2112fd4608150d59183804fc41b6af6b9d29
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-1-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The instrumental case can mark the means used to do something. These checks first teach its forms. сто́л is the dictionary form, meaning table; столо́м is instrumental singular. The word still names a table: the ending marks its grammatical role, not a new vocabulary meaning.
+shippedText=The instrumental case can mark the means used to do something. These checks first teach its forms. сто́л is the dictionary form, meaning table; столо́м is instrumental singular. The word still names a table: the ending marks its grammatical role, not a new vocabulary meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d61c92c08b6584d8a88388ef80c8582d02df4264e45fa2911074a0a820633ec8
+contentHash=f4f765c978b058c2d24e4f83f2d704d60c00afad99bd0e80f26303c59499302e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-1-title`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b5e3fbdae9af526ee8732c8918ea47814d066df3c0417ea88f85a0dfc2be35c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-1-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+One noun, different cases
+shippedText=One noun, different cases
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e69da283bc196492d67b9825a4eff654a6c6a86721b11df6d87e9f472f1a7075
+contentHash=3e4b67c6cd1895c18e7848d4dde6c4e57986ae1b0923df75680aa147dfd3e9fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-2-body`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4803fd2ef66c76d60e22dc3c89c0fbe593f20af03217a196084b6ec63461e912
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-2-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal. Here, keep the stem of сто́л and add -ом to obtain столо́м. Learn the stress with the whole form.
+shippedText=The instrumental singular -ом fits the hard stem of the relevant noun class. Soft stems use their own instrumental ending, so -ом is not universal. Here, keep the stem of сто́л and add -ом to obtain столо́м. Learn the stress with the whole form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2006a8841e8cb375a7dfbaa40e3fab59220ce04910e95d35a019029f4020b253
+contentHash=5e9cc15404036e6773b1b47a873b7cef35392fe6836574da218d8150232b04d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-2-title`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77e5d52429c000c87b760f2d7bb06ff80ac55f05671b8c7062c4c93293c9cc8e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-2-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+A bounded noun ending
+shippedText=A bounded noun ending
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=db71ed6431b454f94aee5aa29669bd0d39e5d4125d847c508f8fcf0f5233e4ce
+contentHash=f1065541718c2138ff6ee3e3fc6a3cbb50a9931bb525344eb5220718a2d77281
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-3-body`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 007aa755e8ffb93ac5b07edbfbad8f134c53b2de0e317949ebf8c291f34dab54
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-3-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+столу́ is dative singular and столе́ is prepositional singular. Both belong to the same noun, but neither has the instrumental singular ending. For an instrumental singular request, select столо́м rather than selecting a form merely because its English gloss is table.
+shippedText=столу́ is dative singular and столе́ is prepositional singular. Both belong to the same noun, but neither has the instrumental singular ending. For an instrumental singular request, select столо́м rather than selecting a form merely because its English gloss is table.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1667f3a8d69c08bc808493f38b9836f964848a6dbd823e94564987dcbb299597
+contentHash=a2a36b5d20b2930ed4da3358a28b2613d6be309753f0c4faf52a0679ea7be1c4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-3-title`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed189692fc8bd29b01a50eb137526b2c812ad329a94c405b2d33d2149ecb178c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-3-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Compare the other cases
+shippedText=Compare the other cases
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=369b4b9aa346a63ecbb97fed4a47b8c35f39b3b5d5ee3a05c66db2092aec1588
+contentHash=22e87b96f317eb0bbe3daca156268cd6ac7f6cae5c50a240f15d3eda4df63994
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-4-body`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b3ba8dbe2552013de7f6f74179ffa18127d34c1b76f5ca40b1ef9e1d772e2b9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-4-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+до́м means house in its dictionary form. до́мом is instrumental singular: keep the stem and add -ом. Given до́м and an instrumental singular request, choose до́мом. This is the same ending pattern as the table form.
+shippedText=до́м means house in its dictionary form. до́мом is instrumental singular: keep the stem and add -ом. Given до́м and an instrumental singular request, choose до́мом. This is the same ending pattern as the table form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa85bbaed20367f70faa425989830fe159d47bd76d5e829902035d67ec6a815a
+contentHash=497ca1c115682066df4442bdfe6a93859752d68e95199c3948e487676e47c64e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-4-title`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f10ff6ce994a51731033445f37ee12d424f080d523016bede98a3bbd1a4bf91a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-4-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Work the house form
+shippedText=Work the house form
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7a54060e93a13df43653c8387e618f251b228ec469d2c143ac0501ef3ea4a155
+contentHash=ae0ec7d64287fff4ce9fe9604c7ecaa504f7b1b8a32c4e77798312a36ba819e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-5-body`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0728d116f4f747d7dae3a9230aaff4a6c74d083694c9f596b93d9fbaf2eb5778
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-5-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+до́му is dative singular; до́ме is prepositional singular. They do not answer an instrumental singular request. Compare the entire ending with до́мом, and notice that this noun keeps its stem stress.
+shippedText=до́му is dative singular; до́ме is prepositional singular. They do not answer an instrumental singular request. Compare the entire ending with до́мом, and notice that this noun keeps its stem stress.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=56a1a0d8b22688d0028bcee3bba93ec3555a83da2dfb1755a2e653b74ee1bb60
+contentHash=1ba80bcc0140af76adc4a57e44319d0954e3f9d95e0e4d12f8f5ac1ba017b031
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-5-title`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4b3a9d57443e1239cd0118f1db0349fcbd1b6ff10c82b01f5e3d5e55d486308
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-5-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Check case before choosing
+shippedText=Check case before choosing
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c3d2e7087d91c39423375fafd27778181ea83b7d5bff086b7b4d89f08af07f99
+contentHash=8ab878d118e7ec7751f6faadebd2a4027d38b9a87b60ec387e1711838069542d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-6-body`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 127cdcc9a57e0f8f60423e8828a277b8bf3fc0f21e0881c580c9c9f0c1ab2669
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-6-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+поездом is instrumental singular of the noun meaning train; карандашом is instrumental singular of the noun meaning pencil. The pencil check asks for that meaning as well as the case. Its other options refer to train and husband. A correct case alone does not identify the requested noun.
+shippedText=поездом is instrumental singular of the noun meaning train; карандашом is instrumental singular of the noun meaning pencil. The pencil check asks for that meaning as well as the case. Its other options refer to train and husband. A correct case alone does not identify the requested noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=26371002447ae5052c7ad92d4568fbee11e7d740d8f9aff403a4151d32780f03
+contentHash=d6bd94ac3e4658c7c4a8ad34b4020a3441fe74314f0ee60de0fac9a912c8519b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-6-title`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f7f26d66d405afbb1360daac43729dd36bfd5d5261067281b1bef1d2e69420e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-6-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Meaning and form together
+shippedText=Meaning and form together
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b99e49b345e5fa6c70f6418cd4ef27cba4734620b283a1a77134e46a62c6a1be
+contentHash=84a23d72eff10bd0241320d80dc61c861b046d5f68ad77690b0e342c6366fc2b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-7-body`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1dace2eda93300fc493f9a99ee2573616542a072fc332d15ce130cfbdedd9a03
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-7-body
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+книгой is the instrumental singular form for book. This noun has a different ending from the -ом shown for table and house. Do not attach the same ending to every noun. These examples introduce selected singular patterns, not the full instrumental paradigm.
+shippedText=книгой is the instrumental singular form for book. This noun has a different ending from the -ом shown for table and house. Do not attach the same ending to every noun. These examples introduce selected singular patterns, not the full instrumental paradigm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3854f62028889cff02e99b99e825b0a7e170e47f2a62b8f18afbde1a622377be
+contentHash=6339492329c53f72dbf06fb0bbd644d36056e769678fb0b57bc7020952defff2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-inst-sg-teach-7-title`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f70ed0ae4e8c3df0a0af587ecd9a5f6594e2deecc9b712d879be8d80aef8d4c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:inst-sg-teach-7-title
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+A different singular pattern
+shippedText=A different singular pattern
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a3ccf1972e85abf4e7fce0a024025a201c58d765fa73d141902086da7f92b537
+contentHash=cbf0f924e1c19a5e6809bb88053043f037944c2c8599eda5158c4a6e7abbb522
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-adj-0-distractor-1`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31ced0d1571dff32750614c4dff492332b0fd8981ba357e92aacea81680a806b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-g-inst-adj-0-distractor-1
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шему is dative singular, not masculine instrumental.
+shippedText=хоро́шему is dative singular, not masculine instrumental.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b53a9d764ec35e4408021684768981f1fbe5f7597acfac8ee2073ae7b47e1003
+contentHash=dfb5949e2ddd45097c9a5c345af513b6e7580ab401395fc0983c6fe40ea57744
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-adj-0-distractor-2`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47193cdd34c57e9a6ff93e8f85ceae0670e48cf729d45d60a8e463af21d4a4f1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-g-inst-adj-0-distractor-2
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шими is instrumental plural, not masculine instrumental singular.
+shippedText=хоро́шими is instrumental plural, not masculine instrumental singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4249461d80b1709c70e45a4c3169635b5fc40fe197edb3789c2847d36869605d
+contentHash=5f58da19bd8514b2a9f7e723bcf93a6e761f682f42f1654f19e228e0ab8b64ee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-adj-0-feedback`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e4fb38905f11a0c7acae55b349b81c9f95b7461910dc14f20e0485dbb40d2e39
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-g-inst-adj-0-feedback
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шим is masculine instrumental singular here; the same form also serves neuter instrumental singular.
+shippedText=хоро́шим is masculine instrumental singular here; the same form also serves neuter instrumental singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c6127ee1f644864b87019f4a09ac1e1802d74ba93285c815cdad5488b50e6951
+contentHash=272bea6ec497cf142af02a8c5fe5e20a84ba97d7e011ccb789c4a0074fc29ceb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-adj-0-prompt`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 240ea89e16e4052bb85f2b2b78260f4f09576ecbfdb7d1acdf9f20003d92e4f4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-g-inst-adj-0-prompt
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which form of the shown adjective is masculine instrumental singular?
+shippedText=Which form of the shown adjective is masculine instrumental singular?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a697fb4e7509d76cd4959ad7dcb22680f8d00060196ac27e70be3ea48fced289
+contentHash=b4acba08b3c4050953530b794d9de877bda0138aa057181a44a96dc301f15f11
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-pl-0-distractor-1`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc08f37652fde8754fb548523e021a5d7f46f263ac10342d4ea3c747f17ee62b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-g-inst-pl-0-distractor-1
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+кни́гам is dative plural, not instrumental plural.
+shippedText=кни́гам is dative plural, not instrumental plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2aa9ba6c03e1666336aded9c92742a31a3ebc9a175c9c2d35b2e61a26035a7ac
+contentHash=5c132aad72dd30f72589f3343f3f055ad06cc0a4eab167f747d783b2a85fdeeb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-pl-0-distractor-2`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 096c94e92014dc81d1da55ecbd3a5f9fbe85e557fae4c70898e01b263dd83ce0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-g-inst-pl-0-distractor-2
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+кни́гах is prepositional plural, not instrumental plural.
+shippedText=кни́гах is prepositional plural, not instrumental plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3aabb110d5f5adf998f0864b7ca6b945692913f3915d3f81ca9d07a37b528b3e
+contentHash=d5ff784a918eb84d61fc1e43d84ab196c2ba1497272252a9d95fbe4be2651b88
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-pl-0-feedback`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7706ccbcda13ccd3cd2cb2a19f1f098e9119b044a46cfb2f49415d53ec608c38
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-g-inst-pl-0-feedback
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+кни́гами is instrumental plural of the noun meaning book.
+shippedText=кни́гами is instrumental plural of the noun meaning book.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=172adeb545cc88e4fbc3f66c61bb472bb4e2c977ea13753cf9af0fe25df31930
+contentHash=4351d4fb71196014195b71fb2ff1e60b87ff02ded1a002b1a2e0335e112cdc7a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-pl-0-prompt`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 28a6b7ae433334355fdd2bee6b60809f3385203381206f523ea451339d8d6adf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-g-inst-pl-0-prompt
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which form of the shown noun is instrumental plural?
+shippedText=Which form of the shown noun is instrumental plural?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b0b019a6b83cf78360f419187fbc1a577142c542b73eb45ca4a83b67ebc58732
+contentHash=073ad19441d1132e4e855c6369a82ef384d21fb326a165f7b01072aa9b4943ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-sg-0-distractor-1`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5749ad17b820d332e8c852b1d1eef052598cf3a8190ac9a0e39d4b496d6114d8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-g-inst-sg-0-distractor-1
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+столу́ is dative singular, not instrumental singular.
+shippedText=столу́ is dative singular, not instrumental singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0db71a4aab0d744cb1c51d140d78c94a04e6ad0985319cbeef105c88db92b43
+contentHash=171634d85d367e52f29b1cf2fbd326cb46ddf4af9828935981628907ebd06bc3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-sg-0-distractor-2`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2053fe83553af7405501fde552642a6b4d8bd8d4b95562fe290e6d909d9fd529
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-g-inst-sg-0-distractor-2
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+столе́ is prepositional singular, not instrumental singular.
+shippedText=столе́ is prepositional singular, not instrumental singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b0c183f4b5f756da8f428030d039a43bbb40257211419109fb81de4f4d445794
+contentHash=447d78386ad540effe2968fae61ea743a2664024f4a4a1b86058b9d2b4a1be8e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-sg-0-feedback`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5c224cfe4269420dcfd75906768f3d4d780158b31e306c560fd8a769c6aaa86
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-g-inst-sg-0-feedback
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+столо́м is instrumental singular of the noun meaning table.
+shippedText=столо́м is instrumental singular of the noun meaning table.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b7b9861577922398280cdb3244b9b19eae20e4c75df5a9111f7b415025bd3a1d
+contentHash=923885daaf14d2158d2e34831ab1e881339ca13f4e0175e8824a131add897924
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-g-inst-sg-0-prompt`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9c0c4feaa2e7f40a8b0082e15c4f87539d5ba1a35b881ebea14ebf4a6d760d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-g-inst-sg-0-prompt
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which form of the shown noun is instrumental singular?
+shippedText=Which form of the shown noun is instrumental singular?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37db5d9bcd50dd78e96a5c91e9bb5ac2c4e7d973be69a73193d776a30ef20996
+contentHash=7b5555aab5872e86b767aa152eb2894e198f484711561055ba997dfc551ed0cd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-1-distractor-1`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5704f66cc8da0d5d90ee73f86d8c416a1474a1121900a825dea991785d03f69b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-i-inst-adj-1-distractor-1
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шим is instrumental singular, not plural instrumental.
+shippedText=хоро́шим is instrumental singular, not plural instrumental.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=46b78cfcef2cdfa47347c115641133efa1223c5e80dec3873c251588d4ee51cf
+contentHash=bc86233c32e8d55e102226c4d749c466e6cafd672ee06ff6b69ddc1f63626c77
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-1-distractor-2`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b02570ab4260584199e374d01edc0560ae579aa93329254f246425145feaf719
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-i-inst-adj-1-distractor-2
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шая is feminine nominative singular, not plural instrumental.
+shippedText=хоро́шая is feminine nominative singular, not plural instrumental.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b0b23d91130ff076cc3f1b5de1afa064b0ffbef8976951dbb69d52291fbc0c5b
+contentHash=46d80bdfb50f3ebcb718eef1f2ea82692c83c9c489cd9a2aaa313bb182d1c055
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-1-feedback`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1749ed5812fb7c82d6ebaf3f043d60d8c15941e2811184ae87b6eb1350b02c4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-i-inst-adj-1-feedback
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шими is plural instrumental of the adjective meaning good.
+shippedText=хоро́шими is plural instrumental of the adjective meaning good.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f3c06fd437ca6a5526b598bb90375ba6e7c25fd3e2f51cb5a1df400394ca344e
+contentHash=7a6fbfc9d94b579f3691776edad06ad57a40bb6a022454b444fe7beae7741b2b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-1-prompt`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48802e86c04672544bc7bf5a98f1d8b4b36fc78ead6368e82c12b419215aa37e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-i-inst-adj-1-prompt
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which form of the shown adjective is plural instrumental?
+shippedText=Which form of the shown adjective is plural instrumental?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e577f9a2d55a57172429e71009c54d8c2711ce45ee0f61c2d1576eb79048d8e6
+contentHash=f5b105df453d82d9ee568ca80771f59f47d3b0a14b8bcd8729a8bd9f4ed2fa3b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-2-distractor-1`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: afab8254cbebf03b7e746fbb3a457bd57b88db17c408cff705753f15cc7e3121
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-i-inst-adj-2-distractor-1
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шая is feminine nominative singular, not masculine instrumental.
+shippedText=хоро́шая is feminine nominative singular, not masculine instrumental.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f2b37395607b86ff310c3797bfaff2bdf6f9f5f615899cf4874cec21be949604
+contentHash=2aba87399d4f1f593d018c2ab43e4b3fa73736668ae639c89a1f2e7dc037d8cb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-2-distractor-2`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5311528a13f485a4029ec56fbb217ab1cb668643f3166441690f77a0baf0460c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-i-inst-adj-2-distractor-2
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шие is nominative plural, not masculine instrumental.
+shippedText=хоро́шие is nominative plural, not masculine instrumental.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=807725dbdf6f16a6c33aee7b6b34805fd654837b988c34e55c04cb6554edc9dc
+contentHash=ca5c7b4d3fd82378eca3177deec5237736a2ae99cad478fa4cd2515398310d9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-2-feedback`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 173ad893b9b1f8372b99c38561f0366faadafc1f65dc2ca968f5a20c80fa17d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-i-inst-adj-2-feedback
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+хоро́шим is masculine instrumental singular here; the cue shows the dative form of the same adjective.
+shippedText=хоро́шим is masculine instrumental singular here; the cue shows the dative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d2bde55c62fe25c2567b651e78dd91da314845519cae3df9652847253bf4c4bd
+contentHash=3e7d908c9ad626ba18290e537daee864bcf1c198da29a7fe4554028582f514e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-2-prompt`
+
+- Objectives: obj-u16-inst-adj
+- Sessions: u16-s-orient, u16-s-inst-adj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e9eaa42d985002eea26f37fccce26a914f5bec8317cf1a4f8aa2d0f8e3cab10
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-adj:worked:u16-i-inst-adj-2-prompt
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which form of the shown adjective is masculine instrumental singular?
+shippedText=Which form of the shown adjective is masculine instrumental singular?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a697fb4e7509d76cd4959ad7dcb22680f8d00060196ac27e70be3ea48fced289
+contentHash=b4acba08b3c4050953530b794d9de877bda0138aa057181a44a96dc301f15f11
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-1-distractor-1`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f786409d0560d6df5d47f6b2df6d2823e0a5896cdb699e17d2bc17d2a4cd8844
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-i-inst-pl-1-distractor-1
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+дома́м is dative plural, not instrumental plural.
+shippedText=дома́м is dative plural, not instrumental plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7cb000b1e0805616db0f4f49248647be33f81806b35925bf38224b62acc3d219
+contentHash=754eec23e884219fdb530d641b53e9953035f473e7924fd10230ba3e9bdca968
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-1-distractor-2`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e84d6e65e614a9c06a4d7e30aedc275604c8d4710d4d8b9b20a61c9d14831eb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-i-inst-pl-1-distractor-2
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+до́мом is instrumental singular, not instrumental plural.
+shippedText=до́мом is instrumental singular, not instrumental plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58f8fec41f65b85636ac2811a67594b23706ff32fe80e0918736ed3f8aae17a6
+contentHash=13ae31b3c59f06caf79e7463bb050de8f71943f6d9e5a8ab6ea138a85a672df9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-1-feedback`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82e42fc715ccc1e94b2162c7e56d401fe0bc31d8b26e131c7d0fe0f1630f4549
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-i-inst-pl-1-feedback
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+дома́ми is instrumental plural of the noun meaning house.
+shippedText=дома́ми is instrumental plural of the noun meaning house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a1ffd15a1ef858e02382c885e4244e30f25be44ac647c9ac33a0f8bf340189a9
+contentHash=c3ccdb39fa1e63c7968d77b439ea9ce9d70db63b7b70eb9b3f914f0b44991803
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-1-prompt`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf2b9310fa2ed40a617c4cffb6d4a82c5378252886ac7d1d2e5c7fd86c4d0c80
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-i-inst-pl-1-prompt
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which form of the shown noun is instrumental plural?
+shippedText=Which form of the shown noun is instrumental plural?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b0b019a6b83cf78360f419187fbc1a577142c542b73eb45ca4a83b67ebc58732
+contentHash=073ad19441d1132e4e855c6369a82ef384d21fb326a165f7b01072aa9b4943ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-2-distractor-1`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7279b04e3d0307eabdb5ef030e32875b1632f499d54f43aae1061a3ad8c40226
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-i-inst-pl-2-distractor-1
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+стола́м is dative plural, not instrumental plural.
+shippedText=стола́м is dative plural, not instrumental plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=287b713a8346fff278833084b3c2b9982378560f69ad82559628b7143fea50af
+contentHash=3adae0bd28c52a26d8821d2c8fa83875bd3cbbbb0064434ceaeb9ebc3d49d14f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-2-distractor-2`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b01d56a655512c0c04cb21c90e4746a5c8909462f5e6fb21f8be7943f6099c9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-i-inst-pl-2-distractor-2
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+столо́м is instrumental singular, not instrumental plural.
+shippedText=столо́м is instrumental singular, not instrumental plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4880ba5ec35adc25849a6a7429a340746848b3e619338bc5ca67c83fe28ef01f
+contentHash=0b39126a8a98dc759455606e8cba7e10ba221a7e716e4d564b6db20a50d9837f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-2-feedback`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42aa6a5c8d4149e3f6c9fb635e2b68f398baa2e2e82f99a228e0246a2d4da86f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-i-inst-pl-2-feedback
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+стола́ми is instrumental plural of the noun meaning table.
+shippedText=стола́ми is instrumental plural of the noun meaning table.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95e1ef50979e957226921a4aaf9a8c08af63455033ca1a5ae801d58560e08352
+contentHash=bc46cc5643404f785c8d32d52f9ea15d0336a0fef06f2082709e72f277645481
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-2-prompt`
+
+- Objectives: obj-u16-inst-pl
+- Sessions: u16-s-orient, u16-s-inst-pl
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2ec128d406c1eaaf6f6081992fc4928bc1f36b5758a631e64641ca4dd7fdd64
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-pl:worked:u16-i-inst-pl-2-prompt
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which form of the shown noun is instrumental plural?
+shippedText=Which form of the shown noun is instrumental plural?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b0b019a6b83cf78360f419187fbc1a577142c542b73eb45ca4a83b67ebc58732
+contentHash=073ad19441d1132e4e855c6369a82ef384d21fb326a165f7b01072aa9b4943ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-1-distractor-1`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16daa3b2ce52c9a8bd7011544517f7b6d915fca99621cf8a96f07774873be1ac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-i-inst-sg-1-distractor-1
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+до́му is dative singular, not instrumental singular.
+shippedText=до́му is dative singular, not instrumental singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=beeccb09184ddffc36d8fe84a96fdb9a8df61e0941bae5c23ba4a60fdc295ca6
+contentHash=e980786f6bfd9dbee4003c61ffdbc2c9b2a4c8f76679973f8f2970433363504c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-1-distractor-2`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 37c0388379d145ed752bb5a9ef031a4eb2b47efbfbf12767f913f7f962af2a5d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-i-inst-sg-1-distractor-2
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+до́ме is prepositional singular, not instrumental singular.
+shippedText=до́ме is prepositional singular, not instrumental singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4a388bed1225ff2af68a5ffc5c3e0a6fe93a9c9ab4da4241fa1bb17922e02dd8
+contentHash=c4820c3d641869b37a629c8f8f23dd7df71a6b53d5cf7f893bef7178b2803cfc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-1-feedback`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b9a1dc8f35f92de95d14d78d28a8a93389d94751230c6d5125493a476f49dcf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-i-inst-sg-1-feedback
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+до́мом is instrumental singular of the noun meaning house.
+shippedText=до́мом is instrumental singular of the noun meaning house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=808aa2b21499a10a6b7151e79b5050a58c2cd11cf003e0005c0f6ad0d37a8694
+contentHash=b1e15e6091d9e92643ac6a300f923b12d3c3e529e39c7efc8a8a7441e992f276
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-1-prompt`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 634c7338d4b90ddac51ebb5797b5634d0cea3c38a3b904e269cbc8c75f239867
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-i-inst-sg-1-prompt
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which form of the shown noun is instrumental singular?
+shippedText=Which form of the shown noun is instrumental singular?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37db5d9bcd50dd78e96a5c91e9bb5ac2c4e7d973be69a73193d776a30ef20996
+contentHash=7b5555aab5872e86b767aa152eb2894e198f484711561055ba997dfc551ed0cd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-2-distractor-1`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9644b7d065717f9e39a97c514d9c9d231cbce460790755b27a85bab926637e10
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-i-inst-sg-2-distractor-1
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+поездом means train in instrumental singular; it does not identify pencil.
+shippedText=поездом means train in instrumental singular; it does not identify pencil.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7ec2a044b38281f60257f81d2958f0d77f0c34d2ba1e2d10deb8ecc3e9934293
+contentHash=125f7990fa1ea5e8f048f1df4c380f519792171a7c1caec8b8d27b5610e07e1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-2-distractor-2`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5d1c3d04a11a016e8f8cdbe26f86f3e28c5c32246f8ba5357845dfdcfea931c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-i-inst-sg-2-distractor-2
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+мужем means husband in instrumental singular; it does not identify pencil.
+shippedText=мужем means husband in instrumental singular; it does not identify pencil.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=12264e5515a7c2cbe0d357f6c2372e1aae66bc26e25c0328a22a8c0be5729f95
+contentHash=864d506350a4f54a4903faa4fde7890be1d26ab3288737da2aaa77ab3c68ec68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-2-feedback`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4efc1ebe9cf3eba556a7c22020956cae58b3ea778c0f396d2c6819c2b5a6a09e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-i-inst-sg-2-feedback
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+карандашом is the instrumental singular form of the noun meaning pencil.
+shippedText=карандашом is the instrumental singular form of the noun meaning pencil.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7868067acaba8a8e681ae295d5f2b91862d1b6dd9c147111bcf052002a64c048
+contentHash=4d903931fa9d94e43c4d8bccd507e68986a4fc44d2214389d2e085ddf1db8f6e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-2-prompt`
+
+- Objectives: obj-u16-inst-sg
+- Sessions: u16-s-orient, u16-s-inst-sg
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ae59a190324acc5eb3ca1310511012dd27274303adf1e6374be806d01234962
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u16-inst-sg:worked:u16-i-inst-sg-2-prompt
+originalSourceText=Cornell Russian Language Program, Instrumental case forms (nouns and adjectives), https://russian.cornell.edu/grammar/html/gr06_a_1_a.htm, primary HTML consulted 2026-10-10 UTC. Retained Wikibooks Russian/Grammar/Instrumental case oldid 4219602, catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt, supplies noun/adjective rules and examples. Existing OpenRussian frozen 50e210c4 records supply the exact noun/adjective contrast fields. Application inference: label existing case/number contrasts and work choices from those retained records; no new Russian form or sentence. Independently authored English 2026-10-10 UTC; final linguistic audit pending.
+Which instrumental singular noun means pencil?
+shippedText=Which instrumental singular noun means pencil?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=897ecdd1844b3b179b01e67cc84468af9638682d2fadee2f716e58ea805ead9a
+contentHash=72013a9f5120fd4514e381b6e46ac9d10921089b05e97580f019d747e1b06d3a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u16-inst-adj-0`
 
@@ -5685,6 +11781,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-16-11218`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: baba50ae4e6177af334e535ad426bf38ebefe9e80b93c74fda7fb73aa6fdc710
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 16 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-16-11219`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69f8d8c2475d837b540efac6cf42daa359c5467377344af4a575e8e45bfcc0c5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-16-11220`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bff6a2bbb34f5c37bc76f0013e5a96d5dd7291b8648bd0e10ef600da65d0dbd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 16 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-16-11221`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd8a8e05f0d9da00b80ee767eadda266581ac668d2fff9f4efcf9145536dd262
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-16-11222`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1da8b07b09fd93aab4ab4ffe3e5b42fb338c99e7e20e05391d833833d5245f5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 16 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-16-11223`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f61cf46f198cd2fbcac6bd7b08226bedccbbdc27e602cd807166cec7eff51629
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-16-11224`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39beaeb2fad210f32e8cfc583ce8bb38b5ed67af050dc3c446210fd307827950
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 16 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-16-63`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5dc69b69acf7c9d2b3f15753c77bb6eef51d889e92c809515da9a1b9352cce01
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 16: printed pages 188-200. PDF indexes 200-212 are file locators, not printed pages. Observed section locators: §16.1 p188 (PDF 200); §16.2 p188 (PDF 200); §16.3 p189 (PDF 201); §16.4 p190 (PDF 202); §16.5 p191 (PDF 203); §16.6 p192 (PDF 204); §16.7 p193 (PDF 205); §16.8 p194 (PDF 206); §16.9 p195 (PDF 207); §16.10 p195 (PDF 207); §16.11 p197 (PDF 209). Observed exercise locators: 16/1 p190/PDF202; 16/2 p191/PDF203; 16/3 p194/PDF206; 16/4 p198/PDF210. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-16-64`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4f82dcec3da1498f3f761d310eec1d2c18b27f1d8bc5de99aa107ae5594542b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 16 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-16-65`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97498d7a353ebaf0b0349ecb324dca2d0ee8a71e86a67b7c92d528f23d2b6db4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u16-001`
 
 - Objectives: none
@@ -6406,6 +12632,21 @@ CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -6461,6 +12702,20 @@ permitsAppUse=true
 
 src-wikipedia-russian-grammar-1369617627
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -6590,8 +12845,6 @@ permitsAppUse=true
 - `u16-st-teach-inst-sg-1` EXAMPLE `ex-or-u16-inst-sg-0`
 - `u16-st-teach-inst-sg-1` EXAMPLE `ex-or-u16-inst-sg-1`
 - `u16-st-teach-inst-sg-1` REFERENCE `ref-u1620-attribution`
-- `u16-st-guided-inst-sg-1` REMEDIATION `u16-st-rem-inst-sg`
-- `u16-st-guided-inst-sg-1` ITEM `u16-g-inst-sg-0`
 - `u16-st-teach-inst-sg-2` REFERENCE `ref-u1620-attribution`
 - `u16-st-teach-inst-sg-3` EXAMPLE `ex-or-u16-inst-sg-2`
 - `u16-st-teach-inst-sg-3` EXAMPLE `ex-or-u16-inst-sg-3`
@@ -6607,8 +12860,19 @@ permitsAppUse=true
 - `u16-st-teach-inst-sg-6` REFERENCE `ref-u1620-attribution`
 - `u16-st-teach-inst-sg-7` EXAMPLE `ex-u16-inst-sg-10`
 - `u16-st-teach-inst-sg-7` REFERENCE `ref-u1620-attribution`
+- `u16-st-guided-inst-sg-1` REMEDIATION `u16-st-rem-inst-sg`
+- `u16-st-guided-inst-sg-1` ITEM `u16-g-inst-sg-0`
 - `u16-st-rem-inst-sg` EXAMPLE `ex-or-u16-inst-sg-0`
 - `u16-st-rem-inst-sg` EXAMPLE `ex-or-u16-inst-sg-1`
+- `u16-st-rem-inst-sg` EXAMPLE `ex-or-u16-inst-sg-2`
+- `u16-st-rem-inst-sg` EXAMPLE `ex-or-u16-inst-sg-3`
+- `u16-st-rem-inst-sg` EXAMPLE `ex-or-u16-inst-sg-4`
+- `u16-st-rem-inst-sg` EXAMPLE `ex-or-u16-inst-sg-5`
+- `u16-st-rem-inst-sg` EXAMPLE `ex-or-u16-inst-sg-6`
+- `u16-st-rem-inst-sg` EXAMPLE `ex-or-u16-inst-sg-7`
+- `u16-st-rem-inst-sg` EXAMPLE `ex-u16-inst-sg-8`
+- `u16-st-rem-inst-sg` EXAMPLE `ex-u16-inst-sg-9`
+- `u16-st-rem-inst-sg` EXAMPLE `ex-u16-inst-sg-10`
 - `u16-st-check-inst-sg` REMEDIATION `u16-st-rem-inst-sg`
 - `u16-st-check-inst-sg` ITEM `u16-i-inst-sg-1`
 - `u16-st-check-inst-sg` ITEM `u16-i-inst-sg-2`
@@ -6616,8 +12880,6 @@ permitsAppUse=true
 - `u16-st-teach-inst-pl-1` EXAMPLE `ex-or-u16-inst-pl-0`
 - `u16-st-teach-inst-pl-1` EXAMPLE `ex-or-u16-inst-pl-1`
 - `u16-st-teach-inst-pl-1` REFERENCE `ref-u1620-attribution`
-- `u16-st-guided-inst-pl-1` REMEDIATION `u16-st-rem-inst-pl`
-- `u16-st-guided-inst-pl-1` ITEM `u16-g-inst-pl-0`
 - `u16-st-teach-inst-pl-2` REFERENCE `ref-u1620-attribution`
 - `u16-st-teach-inst-pl-3` EXAMPLE `ex-or-u16-inst-pl-2`
 - `u16-st-teach-inst-pl-3` EXAMPLE `ex-or-u16-inst-pl-3`
@@ -6634,8 +12896,20 @@ permitsAppUse=true
 - `u16-st-teach-inst-pl-7` EXAMPLE `ex-or-u16-inst-pl-10`
 - `u16-st-teach-inst-pl-7` EXAMPLE `ex-or-u16-inst-pl-11`
 - `u16-st-teach-inst-pl-7` REFERENCE `ref-u1620-attribution`
+- `u16-st-guided-inst-pl-1` REMEDIATION `u16-st-rem-inst-pl`
+- `u16-st-guided-inst-pl-1` ITEM `u16-g-inst-pl-0`
 - `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-0`
 - `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-1`
+- `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-2`
+- `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-3`
+- `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-4`
+- `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-5`
+- `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-6`
+- `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-7`
+- `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-8`
+- `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-9`
+- `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-10`
+- `u16-st-rem-inst-pl` EXAMPLE `ex-or-u16-inst-pl-11`
 - `u16-st-check-inst-pl` REMEDIATION `u16-st-rem-inst-pl`
 - `u16-st-check-inst-pl` ITEM `u16-i-inst-pl-1`
 - `u16-st-check-inst-pl` ITEM `u16-i-inst-pl-2`
@@ -6643,8 +12917,6 @@ permitsAppUse=true
 - `u16-st-teach-inst-adj-1` EXAMPLE `ex-or-u16-inst-adj-0`
 - `u16-st-teach-inst-adj-1` EXAMPLE `ex-or-u16-inst-adj-1`
 - `u16-st-teach-inst-adj-1` REFERENCE `ref-u1620-attribution`
-- `u16-st-guided-inst-adj-1` REMEDIATION `u16-st-rem-inst-adj`
-- `u16-st-guided-inst-adj-1` ITEM `u16-g-inst-adj-0`
 - `u16-st-teach-inst-adj-2` REFERENCE `ref-u1620-attribution`
 - `u16-st-teach-inst-adj-3` EXAMPLE `ex-or-u16-inst-adj-2`
 - `u16-st-teach-inst-adj-3` EXAMPLE `ex-or-u16-inst-adj-3`
@@ -6652,8 +12924,14 @@ permitsAppUse=true
 - `u16-st-teach-inst-adj-4` EXAMPLE `ex-or-u16-inst-adj-4`
 - `u16-st-teach-inst-adj-4` EXAMPLE `ex-or-u16-inst-adj-5`
 - `u16-st-teach-inst-adj-4` REFERENCE `ref-u1620-attribution`
+- `u16-st-guided-inst-adj-1` REMEDIATION `u16-st-rem-inst-adj`
+- `u16-st-guided-inst-adj-1` ITEM `u16-g-inst-adj-0`
 - `u16-st-rem-inst-adj` EXAMPLE `ex-or-u16-inst-adj-0`
 - `u16-st-rem-inst-adj` EXAMPLE `ex-or-u16-inst-adj-1`
+- `u16-st-rem-inst-adj` EXAMPLE `ex-or-u16-inst-adj-2`
+- `u16-st-rem-inst-adj` EXAMPLE `ex-or-u16-inst-adj-3`
+- `u16-st-rem-inst-adj` EXAMPLE `ex-or-u16-inst-adj-4`
+- `u16-st-rem-inst-adj` EXAMPLE `ex-or-u16-inst-adj-5`
 - `u16-st-check-inst-adj` REMEDIATION `u16-st-rem-inst-adj`
 - `u16-st-check-inst-adj` ITEM `u16-i-inst-adj-1`
 - `u16-st-check-inst-adj` ITEM `u16-i-inst-adj-2`
@@ -6661,13 +12939,14 @@ permitsAppUse=true
 - `u16-st-teach-inst-means-1` EXAMPLE `ex-u16-inst-means-0`
 - `u16-st-teach-inst-means-1` EXAMPLE `ex-u16-inst-means-1`
 - `u16-st-teach-inst-means-1` REFERENCE `ref-u1620-attribution`
-- `u16-st-guided-inst-means-1` REMEDIATION `u16-st-rem-inst-means`
-- `u16-st-guided-inst-means-1` ITEM `u16-g-inst-means-0`
 - `u16-st-teach-inst-means-2` REFERENCE `ref-u1620-attribution`
 - `u16-st-teach-inst-means-3` EXAMPLE `ex-u16-inst-means-2`
 - `u16-st-teach-inst-means-3` REFERENCE `ref-u1620-attribution`
+- `u16-st-guided-inst-means-1` REMEDIATION `u16-st-rem-inst-means`
+- `u16-st-guided-inst-means-1` ITEM `u16-g-inst-means-0`
 - `u16-st-rem-inst-means` EXAMPLE `ex-u16-inst-means-0`
 - `u16-st-rem-inst-means` EXAMPLE `ex-u16-inst-means-1`
+- `u16-st-rem-inst-means` EXAMPLE `ex-u16-inst-means-2`
 - `u16-st-check-inst-means` REMEDIATION `u16-st-rem-inst-means`
 - `u16-st-check-inst-means` ITEM `u16-i-inst-means-1`
 - `u16-st-check-inst-means` ITEM `u16-i-inst-means-2`
@@ -6675,14 +12954,16 @@ permitsAppUse=true
 - `u16-st-teach-inst-prep-1` EXAMPLE `ex-u16-inst-prep-0`
 - `u16-st-teach-inst-prep-1` EXAMPLE `ex-u16-inst-prep-1`
 - `u16-st-teach-inst-prep-1` REFERENCE `ref-u1620-attribution`
-- `u16-st-guided-inst-prep-1` REMEDIATION `u16-st-rem-inst-prep`
-- `u16-st-guided-inst-prep-1` ITEM `u16-g-inst-prep-0`
 - `u16-st-teach-inst-prep-2` REFERENCE `ref-u1620-attribution`
 - `u16-st-teach-inst-prep-3` EXAMPLE `ex-u16-inst-prep-2`
 - `u16-st-teach-inst-prep-3` EXAMPLE `ex-u16-inst-prep-3`
 - `u16-st-teach-inst-prep-3` REFERENCE `ref-u1620-attribution`
+- `u16-st-guided-inst-prep-1` REMEDIATION `u16-st-rem-inst-prep`
+- `u16-st-guided-inst-prep-1` ITEM `u16-g-inst-prep-0`
 - `u16-st-rem-inst-prep` EXAMPLE `ex-u16-inst-prep-0`
 - `u16-st-rem-inst-prep` EXAMPLE `ex-u16-inst-prep-1`
+- `u16-st-rem-inst-prep` EXAMPLE `ex-u16-inst-prep-2`
+- `u16-st-rem-inst-prep` EXAMPLE `ex-u16-inst-prep-3`
 - `u16-st-check-inst-prep` REMEDIATION `u16-st-rem-inst-prep`
 - `u16-st-check-inst-prep` ITEM `u16-i-inst-prep-1`
 - `u16-st-check-inst-prep` ITEM `u16-i-inst-prep-2`
@@ -6690,19 +12971,209 @@ permitsAppUse=true
 - `u16-st-teach-complements-1` EXAMPLE `ex-u16-complements-0`
 - `u16-st-teach-complements-1` EXAMPLE `ex-u16-complements-1`
 - `u16-st-teach-complements-1` REFERENCE `ref-u1620-attribution`
-- `u16-st-guided-complements-1` REMEDIATION `u16-st-rem-complements`
-- `u16-st-guided-complements-1` ITEM `u16-g-complements-0`
 - `u16-st-teach-complements-2` REFERENCE `ref-u1620-attribution`
 - `u16-st-teach-complements-3` EXAMPLE `ex-u16-complements-2`
 - `u16-st-teach-complements-3` EXAMPLE `ex-u16-complements-3`
 - `u16-st-teach-complements-3` REFERENCE `ref-u1620-attribution`
+- `u16-st-guided-complements-1` REMEDIATION `u16-st-rem-complements`
+- `u16-st-guided-complements-1` ITEM `u16-g-complements-0`
 - `u16-st-rem-complements` EXAMPLE `ex-u16-complements-0`
 - `u16-st-rem-complements` EXAMPLE `ex-u16-complements-1`
+- `u16-st-rem-complements` EXAMPLE `ex-u16-complements-2`
+- `u16-st-rem-complements` EXAMPLE `ex-u16-complements-3`
 - `u16-st-check-complements` REMEDIATION `u16-st-rem-complements`
 - `u16-st-check-complements` ITEM `u16-i-complements-1`
 - `u16-st-check-complements` ITEM `u16-i-complements-2`
 - `u16-s-book` OBJECTIVE `obj-u16-book`
 - `u16-st-book-work` REFERENCE `ref-u1620-attribution`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-223`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-224`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-225`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-237`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-238`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-239`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-240`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-241`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-242`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-243`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-244`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-245`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-246`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-247`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-248`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-249`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-16-353`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-16-354`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-16-355`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-16-356`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-16-66`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-16-67`
+- `obj-u16-complements` PROVENANCE `prov-ca-16-68`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10741`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10742`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10743`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10744`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10745`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10746`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10747`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10748`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10749`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10750`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-10751`
+- `obj-u16-complements` PROVENANCE `prov-ca-repair-16-11109`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-check-body`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-guided-body`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-objective-title`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-rem-body`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-rem-title`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-teach-1-body`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-teach-1-title`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-teach-2-body`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-teach-2-title`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-teach-3-body`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-complements-teach-3-title`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-check-body`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-guided-body`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-objective-title`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-rem-body`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-rem-title`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-teach-1-body`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-teach-1-title`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-teach-2-body`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-teach-2-title`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-teach-3-body`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-inst-means-teach-3-title`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-check-body`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-guided-body`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-objective-title`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-rem-body`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-rem-title`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-teach-1-body`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-teach-1-title`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-teach-2-body`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-teach-2-title`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-teach-3-body`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-inst-prep-teach-3-title`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-g-complements-0-distractor-1`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-g-complements-0-distractor-2`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-g-complements-0-feedback`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-g-complements-0-prompt`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-u16-g-inst-means-0-distractor-1`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-u16-g-inst-means-0-feedback`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-u16-g-inst-means-0-prompt`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-g-inst-prep-0-distractor-1`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-g-inst-prep-0-distractor-2`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-g-inst-prep-0-feedback`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-g-inst-prep-0-prompt`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-i-complements-1-distractor-1`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-i-complements-1-distractor-2`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-i-complements-1-feedback`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-i-complements-1-prompt`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-i-complements-2-distractor-1`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-i-complements-2-distractor-2`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-i-complements-2-feedback`
+- `obj-u16-complements` PROVENANCE `prov-ca-u16-uses-u16-i-complements-2-prompt`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-1-distractor-1`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-1-feedback`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-1-prompt`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-2-distractor-1`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-2-feedback`
+- `obj-u16-inst-means` PROVENANCE `prov-ca-u16-uses-u16-i-inst-means-2-prompt`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-1-distractor-1`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-1-distractor-2`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-1-feedback`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-1-prompt`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-2-distractor-1`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-2-distractor-2`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-2-feedback`
+- `obj-u16-inst-prep` PROVENANCE `prov-ca-u16-uses-u16-i-inst-prep-2-prompt`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-check-body`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-guided-body`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-objective-title`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-rem-body`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-rem-title`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-teach-1-body`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-teach-1-title`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-teach-2-body`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-teach-2-title`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-teach-3-body`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-teach-3-title`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-teach-4-body`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-inst-adj-teach-4-title`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-check-body`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-guided-body`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-objective-title`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-rem-body`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-rem-title`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-1-body`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-1-title`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-2-body`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-2-title`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-3-body`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-3-title`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-4-body`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-4-title`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-5-body`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-5-title`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-6-body`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-6-title`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-7-body`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-inst-pl-teach-7-title`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-check-body`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-guided-body`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-objective-title`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-rem-body`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-rem-title`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-1-body`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-1-title`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-2-body`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-2-title`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-3-body`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-3-title`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-4-body`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-4-title`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-5-body`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-5-title`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-6-body`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-6-title`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-7-body`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-inst-sg-teach-7-title`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-g-inst-adj-0-distractor-1`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-g-inst-adj-0-distractor-2`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-g-inst-adj-0-feedback`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-g-inst-adj-0-prompt`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-g-inst-pl-0-distractor-1`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-g-inst-pl-0-distractor-2`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-g-inst-pl-0-feedback`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-g-inst-pl-0-prompt`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-g-inst-sg-0-distractor-1`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-g-inst-sg-0-distractor-2`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-g-inst-sg-0-feedback`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-g-inst-sg-0-prompt`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-1-distractor-1`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-1-distractor-2`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-1-feedback`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-1-prompt`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-2-distractor-1`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-2-distractor-2`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-2-feedback`
+- `obj-u16-inst-adj` PROVENANCE `prov-ca-u16-worked-u16-i-inst-adj-2-prompt`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-1-distractor-1`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-1-distractor-2`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-1-feedback`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-1-prompt`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-2-distractor-1`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-2-distractor-2`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-2-feedback`
+- `obj-u16-inst-pl` PROVENANCE `prov-ca-u16-worked-u16-i-inst-pl-2-prompt`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-1-distractor-1`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-1-distractor-2`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-1-feedback`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-1-prompt`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-2-distractor-1`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-2-distractor-2`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-2-feedback`
+- `obj-u16-inst-sg` PROVENANCE `prov-ca-u16-worked-u16-i-inst-sg-2-prompt`
 - `obj-u16-inst-adj` PROVENANCE `prov-ex-or-u16-inst-adj-0`
 - `obj-u16-inst-adj` PROVENANCE `prov-ex-or-u16-inst-adj-0-gloss`
 - `obj-u16-inst-adj` PROVENANCE `prov-ex-or-u16-inst-adj-1`

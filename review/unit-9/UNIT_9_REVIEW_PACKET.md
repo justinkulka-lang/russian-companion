@@ -11,12 +11,12 @@ Unit 9 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: ae777d85fe3616fc8e065890201d40c241d113bc
-- Unit content-review SHA-256: d0f135c408fc429392cf695a8122134013fca69637a4f9c1587db3fec6b3c65f
+- Curriculum source commit: 83a7b075983be5f7f9117e72d2967a9aaa06ce56
+- Unit content-review SHA-256: 58d61dfc4069f438487b9ad16623bb3a717ab9da8e55487b4d9083c28267bbd3
 - Mapping-package SHA-256: 44199859a34f129c83c22e0e058e305784913077a569025b871abdd1a6a707bf
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: b8cc87c5dc173f1ef8abe7edf1116daf1d316c5e31e7cf24e7d5abf02971bb6c
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: 286ab344a49b3357e29ca4d4d1879ac8ba2717b7f0422f4774f88e32ed8a6c44
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=114
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 985c3655fc3c1414e02f171478ba1f749e4f6cbe01428020756a5bd24991c938
+- Content hash: c3a35b75144d044bfbb1e913ae7160ea6ac7fe4902d957e80721f6245e95abc9
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=26
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u9-cardinal`
@@ -336,11 +336,11 @@ steps=u9-st-teach-cardinal-1,u9-st-guided-cardinal-1,u9-st-teach-cardinal-2,u9-s
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1d3c70129ee2badd3f91cf98ce6a06a8a1118233280b778bf3ca2dd709965392
+- Content hash: 611d5907c6c3a6c10c6429048d6e71e99541ba45b2adbb4a4230f2acab2b55aa
 
 kind=TEACH
 title=Admitted lines
-body=ноль — 0. оди́н — 1. 
+body=ноль — 0. оди́н — 1. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -571,11 +571,11 @@ steps=u9-st-teach-teens-1,u9-st-guided-teens-1,u9-st-teach-teens-2,u9-st-teach-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 02d3aa6ed9be8f3b6c78146bfde06d9b5fe4027306f45ad59e7884e48f1c6445
+- Content hash: d346046c5b001cb880b822bb7315cf5629d8a25a74e35484069c1716a75bc032
 
 kind=TEACH
 title=Admitted lines
-body=оди́ннадцать — 11. двена́дцать — 12. 
+body=оди́ннадцать — 11. двена́дцать — 12. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -784,11 +784,11 @@ steps=u9-st-teach-tens-1,u9-st-guided-tens-1,u9-st-teach-tens-2,u9-st-teach-tens
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4ee2bed0f8a4ea45cd5b659f3ba6fedb36385d256a8bab8faa75b3bbe1359589
+- Content hash: 7a2f68cb83d1546269e3880a0d7634832522613b1b2bb436a3d8ed8e9df50958
 
 kind=TEACH
 title=Admitted lines
-body=три́дцать — 30. со́рок — 40. 
+body=три́дцать — 30. со́рок — 40. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -975,11 +975,11 @@ steps=u9-st-teach-hundreds-1,u9-st-guided-hundreds-1,u9-st-teach-hundreds-2,u9-s
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3accf66601d336a311705f8a4ad46c8e3e959c7997069c7ba3f331224b1cffc1
+- Content hash: ee9a826b666bef1e7a69b74496de8c6a9281f100de0d5198bb9943350e0d214b
 
 kind=TEACH
 title=Admitted lines
-body=сто — 100. две́сти — 200. 
+body=сто — 100. две́сти — 200. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1188,11 +1188,11 @@ steps=u9-st-teach-thousands-1,u9-st-guided-thousands-1,u9-st-teach-thousands-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 690d69dc5a847451055eba5ffed7861d9fcac88df9417a88b7058230848482a9
+- Content hash: cf44029a39f935e65c88f5b80b785ea2ae8459da6695429a38efb84492485f46
 
 kind=TEACH
 title=Admitted lines
-body=ты́сяча — 1,000. два́дцать оди́н — 21. 
+body=ты́сяча — 1,000. два́дцать оди́н — 21. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1364,12 +1364,12 @@ remediationStepId=u9-st-rem-thousands
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9178f65761ffba18d78d729b7e68fab44061167b60f1b149286d2221cc16e78d
+- Content hash: 6610f18b657a2fc1083099b9d0f76430eef8ef534339a2bf93a34e15b5d9e295
 
 title=Choose the admitted form of one or two
 estimatedMinutes=12
 objectives=obj-u9-odindva
-steps=u9-st-teach-odindva-1,u9-st-guided-odindva-1,u9-st-teach-odindva-2,u9-st-teach-odindva-3,u9-st-teach-odindva-4,u9-st-teach-odindva-5,u9-st-teach-odindva-6,u9-st-rem-odindva,u9-st-check-odindva
+steps=u9-st-teach-odindva-1,u9-st-teach-odindva-2,u9-st-teach-odindva-3,u9-st-teach-odindva-4,u9-st-teach-odindva-5,u9-st-teach-odindva-6,u9-st-guided-odindva-1,u9-st-rem-odindva,u9-st-check-odindva
 
 ### STEP `u9-st-teach-odindva-1`
 
@@ -1379,11 +1379,11 @@ steps=u9-st-teach-odindva-1,u9-st-guided-odindva-1,u9-st-teach-odindva-2,u9-st-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8a8dd60236b5b985f9903864c280e36e318c8b4184bec624970b4646af5ea67d
+- Content hash: c1889cb1a1891fa348bb127ce60795238b92d940af1ec1a677c7fb8ce88c616c
 
 kind=TEACH
-title=Admitted lines
-body=один мальчик — one boy. одна девушка — one girl. 
+title=Choose one by gender
+body=один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1393,28 +1393,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u9-st-guided-odindva-1`
-
-- Objectives: obj-u9-odindva
-- Sessions: u9-s-odindva
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4127a07a16ef0a79fca27a93ed707a99f7c522a7904740e00fa7e14ab6164779
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u9-g-odindva-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u9-st-rem-odindva
-
 ### STEP `u9-st-teach-odindva-2`
 
 - Objectives: obj-u9-odindva
@@ -1423,11 +1401,11 @@ remediationStepId=u9-st-rem-odindva
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e600f021596ead125792ccce0d2abdcb9316c8cc354b9e965a826a0744a167f2
+- Content hash: 43be7972ab5f1e8e66e053b51be2412b78ca0dede8f6e08ab0c9ffb5bf8ef476
 
 kind=TEACH
-title=Admitted instruction
-body=The numeral два has two forms: два for masculine and neuter items and две for feminine items.
+title=Choose the form of two
+body=два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1445,11 +1423,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 32b8d5450cb658be1971c5daa9fa95dcd097ad9a19c72e6976d68f7da03fba93
+- Content hash: d59b5d6e1574c125efba7826e01faf10948f96898970bc37a95d8d441e3f80fb
 
 kind=TEACH
-title=Admitted lines
-body=одно животное — one animal. одни джинсы — one [pair of] jeans. 
+title=Recognize neuter and plural-form one
+body=одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1467,11 +1445,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b26e94d3fd93217404654e5f746d334dd1e7897a8a19abf84e62b9ae80a80a0c
+- Content hash: f1b3a89b3487435528e4ec4e66ea1f5a1e07f4c0311fa6e97be93f97af7d9e9a
 
 kind=TEACH
-title=Admitted lines
-body=одна́ — 1. одно́ — 1. 
+title=Keep the value while changing agreement
+body=одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1489,11 +1467,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e043cd124984f3b9b62cb7d4c1f41eafc83cf4c220f0db2f8fa1f729b91b54ce
+- Content hash: 590cd22df5a9efc633dd7964eaef680e266dda5ea0edda152c226802b25a0b5d
 
 kind=TEACH
-title=Admitted lines
-body=одни́ — 1. две — 2. 
+title=Distinguish plural one from feminine two
+body=одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1511,11 +1489,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f14c2140a01ec6bf4bef16c1a5b33820001a803d96c9851901f9f517d733f77d
+- Content hash: 698d0db03c313b388b33491ccc32c2332fe1263e525a676866e84c1a22b6ab99
 
 kind=TEACH
-title=Admitted lines
-body=оди́н — one. два — two. 
+title=Apply masculine one to a different noun
+body=оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1525,6 +1503,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u9-st-guided-odindva-1`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-odindva
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 876d81d130310a94bddceef4bacb184dabda7f3930959a066ae16f57a6905a3a
+
+kind=GUIDED
+title=Guided practice
+body=Choose the form of one that agrees with the shown noun in the supplied counting example.
+dominantAction=Continue
+references=
+items=u9-g-odindva-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u9-st-rem-odindva
+
 ### STEP `u9-st-rem-odindva`
 
 - Objectives: obj-u9-odindva
@@ -1533,15 +1533,25 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 683d79141c7d489d403f920160b3f96e266058321ff838994ee53ea58865c237
+- Content hash: aaa7f34a7ca8818c12a03151c3cb795dba13e6db5f8741eb9cf2f217e89e9270
 
 kind=REMEDIATE
 title=Remediation
-body=The numeral два has two forms: два for masculine and neuter items and две for feminine items.
+body=один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+
+два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+
+одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+
+одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
+
+одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+
+оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
 dominantAction=Continue
 references=
 items=
-examples=ex-u9-odindva-0,ex-u9-odindva-1
+examples=ex-u9-odindva-0,ex-u9-odindva-1,ex-u9-odindva-2,ex-u9-odindva-3,ex-u9-odindva-4,ex-u9-odindva-5,ex-u9-odindva-6,ex-u9-odindva-7,ex-or-u9-odindva-8,ex-or-u9-odindva-9
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1555,11 +1565,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a6a9151cf904cdb67d0721f20dea081d9e4c78418ff5272309d3f22118a0dd7d
+- Content hash: e5794ec957798283e7c25ee358a452adf5d5e44bd27cbf180e723755cf25e693
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Choose the supplied form of one or two for the noun and counting context. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u9-i-odindva-1,u9-i-odindva-2,u9-i-odindva-3,u9-i-odindva-4,u9-i-odindva-5
@@ -1577,12 +1587,12 @@ remediationStepId=u9-st-rem-odindva
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5debbda6da109cdd823fd09beb83f8756d5937f606cb9b0a9e0c3c8313505523
+- Content hash: 7011425ce23733fc7813847e5ad2e07a0f7de18600e5390e0b517c52dbdfb555
 
 title=Choose the admitted counted form
 estimatedMinutes=12
 objectives=obj-u9-quantity
-steps=u9-st-teach-quantity-1,u9-st-guided-quantity-1,u9-st-teach-quantity-2,u9-st-teach-quantity-3,u9-st-teach-quantity-4,u9-st-teach-quantity-5,u9-st-teach-quantity-6,u9-st-teach-quantity-7,u9-st-teach-quantity-8,u9-st-teach-quantity-9,u9-st-teach-quantity-10,u9-st-rem-quantity,u9-st-check-quantity
+steps=u9-st-teach-quantity-1,u9-st-teach-quantity-2,u9-st-teach-quantity-3,u9-st-teach-quantity-4,u9-st-teach-quantity-5,u9-st-teach-quantity-6,u9-st-teach-quantity-7,u9-st-teach-quantity-8,u9-st-teach-quantity-9,u9-st-teach-quantity-10,u9-st-guided-quantity-1,u9-st-rem-quantity,u9-st-check-quantity
 
 ### STEP `u9-st-teach-quantity-1`
 
@@ -1592,11 +1602,11 @@ steps=u9-st-teach-quantity-1,u9-st-guided-quantity-1,u9-st-teach-quantity-2,u9-s
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ca8a911eeb2913424cc93302c6d09d60a9434b805ef6fc02b00443d0d21414da
+- Content hash: cd684c980c9c471d5bdcb33e1d48b62cc1ef6f4e2c6a09a21c4ba8b2631f8eea
 
 kind=TEACH
-title=Admitted lines
-body=один час — один час. два часа — два часа. 
+title=Start with the construction
+body=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — один час. два часа — два часа. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1606,28 +1616,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u9-st-guided-quantity-1`
-
-- Objectives: obj-u9-quantity
-- Sessions: u9-s-quantity
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0ed69727d050d66fe233be2fa2604e3d4911493f92bf698d7b092a7be7349271
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u9-g-quantity-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u9-st-rem-quantity
-
 ### STEP `u9-st-teach-quantity-2`
 
 - Objectives: obj-u9-quantity
@@ -1636,11 +1624,11 @@ remediationStepId=u9-st-rem-quantity
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 77d4226ec3e8c707cce14750aae913c6f0ee6be6d50d2700e4f6bf5926c96336
+- Content hash: 284e9a96f9e9019801114eb07a66ebf519208ffb4cfe8b3ba7d5c2659617c3db
 
 kind=TEACH
-title=Admitted instruction
-body=Numerals larger than twenty follow the above rules using the last digit.
+title=Two, three and four
+body=A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction. This is a grammatical singular form even though the count is greater than one.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1658,11 +1646,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 787dba895306e1555bc4f787e866dbf887c5f550a29c265dc6b9b59fd810af89
+- Content hash: c56e30492d8eb7d43b96f64e98049c0a6bf072d5a4f761e00aa3d0288f7751c2
 
 kind=TEACH
-title=Admitted lines
-body=пять часов — пять часов. двадцать один час — двадцать один час. 
+title=Genitive plural counts
+body=Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — пять часов. двадцать один час — двадцать один час. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1680,11 +1668,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a7f9bb2ef462eaac5dfa0c09eef754da5e8fde65db3416ad00582b0306005fd1
+- Content hash: 4746e29f032735952e2af2247cb1c558cde80c89e052616b0a338183a68b4169
 
 kind=TEACH
-title=Admitted lines
-body=двадцать два часа — двадцать два часа. две девушки — two girls. 
+title=Compound counts
+body=For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — двадцать два часа. две девушки — two girls. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1702,11 +1690,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 85878e4da731ef9823ab49a88a991d1882f8b1b7d4ed5a244b22ce97a0a71552
+- Content hash: d8dd37aaf3a2a21dcc20d3b4511262f29ee667a688776a72695fde66774e0320
 
 kind=TEACH
-title=Admitted lines
-body=пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+title=Teen values and exceptions
+body=For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All counts from 11 through19 use genitive plural here. For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1724,11 +1712,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 143358078aee17c32dad5975545beae469d79c55c493bec2f776e9eaaa40e77a
+- Content hash: 8958c76947809715da8b8e22bbfdac3b4dd40c6118305bad8f71596a18485367
 
 kind=TEACH
-title=Admitted lines
-body=десять копеек — ten kopeks. сорок один год — forty-one years. 
+title=One and zero endings
+body=The example with 41 follows the final-one pattern and uses nominative singular for the counted noun. The example with 10 follows the zero-ending pattern and uses genitive plural. десять копеек — ten kopeks. сорок один год — forty-one years. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1746,11 +1734,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e9644d1844a403daf891189f1cf82001fb76bd0bba4d2802bee5218d136abe0e
+- Content hash: bfd226b534c1af0523d51647663508993349e2cc79cdaa25b53d4ee4a69fe286
 
 kind=TEACH
-title=Admitted lines
-body=пять лет — пять лет. двести три собаки — two hundred and three dogs. 
+title=Hundreds preserve the boundary
+body=The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — пять лет. двести три собаки — two hundred and three dogs. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1768,11 +1756,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 079cf2893ed197d714ebd75b3a1cef82b8e23ea6dc32d7e76b3d8f30aca8f30e
+- Content hash: 9a175ccf72f212b19edb9433cfa5b57623e2e8b4cb3e8a33b06da2b816e81905
 
 kind=TEACH
-title=Admitted lines
-body=двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. 
+title=Compare the supplied hundreds
+body=For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare the supplied 203 and 213 examples and the two kopeck examples. Count value and sentence construction govern the explanation. двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1790,11 +1778,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 71899c1f1d62ed08c1a528c7506a50391df9ec19f18aaf63f54870848552a5bb
+- Content hash: 643161cb22297ebfd527b81733e4046303f4b669e36a858f3d8314f3fbd922d3
 
 kind=TEACH
-title=Admitted lines
-body=Два́дцать пять копе́ек — 25 kopecks. стола́ — table. 
+title=Keep lexical forms separate
+body=The isolated table forms below illustrate genitive singular and genitive plural noun forms. They do not by themselves state a quantity or sentence context; apply the complete counted-noun rules to whole examples. Два́дцать пять копе́ек — 25 kopecks. стола́ — table. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1812,11 +1800,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 49c705e2e4e852556ada2b51627a03fb5161c1929740cd0ebf45f4c583f1658c
+- Content hash: a09111cd2c70f191f3318f2a25dbea4d9b82907b28669f6079c9dccdcb0b5150
 
 kind=TEACH
-title=Admitted lines
-body=столо́в — table. 
+title=Review the complete decision
+body=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. столо́в — table. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1826,6 +1814,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u9-st-guided-quantity-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-quantity
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 98f66d75c125a44bcf7db0958d3a2e9cd4ac82dbe414d05ba77b09e8f2b5f92e
+
+kind=GUIDED
+title=Guided practice
+body=Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
+dominantAction=Continue
+references=
+items=u9-g-quantity-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u9-st-rem-quantity
+
 ### STEP `u9-st-rem-quantity`
 
 - Objectives: obj-u9-quantity
@@ -1834,15 +1844,33 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b56ae70fc25562dff31282ea53bebfc09f058c4047425069b48b7fea2835123e
+- Content hash: 7a306cccbacd170c18d7ee42755055acdbd814679abc0165a0b43d351e02bf0a
 
 kind=REMEDIATE
-title=Remediation
-body=Numerals larger than twenty follow the above rules using the last digit.
+title=Review the complete counted-noun rules
+body=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — один час. два часа — два часа. 
+
+A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction. This is a grammatical singular form even though the count is greater than one.
+
+Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — пять часов. двадцать один час — двадцать один час. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — двадцать два часа. две девушки — two girls. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All counts from 11 through19 use genitive plural here. For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+
+The example with 41 follows the final-one pattern and uses nominative singular for the counted noun. The example with 10 follows the zero-ending pattern and uses genitive plural. десять копеек — ten kopeks. сорок один год — forty-one years. 
+
+The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — пять лет. двести три собаки — two hundred and three dogs. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare the supplied 203 and 213 examples and the two kopeck examples. Count value and sentence construction govern the explanation. двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. 
+
+The isolated table forms below illustrate genitive singular and genitive plural noun forms. They do not by themselves state a quantity or sentence context; apply the complete counted-noun rules to whole examples. Два́дцать пять копе́ек — 25 kopecks. стола́ — table. 
+
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. столо́в — table. 
 dominantAction=Continue
 references=
 items=
-examples=ex-u9-quantity-0,ex-u9-quantity-1
+examples=ex-u9-quantity-0,ex-u9-quantity-1,ex-u9-quantity-2,ex-u9-quantity-3,ex-u9-quantity-4,ex-u9-quantity-5,ex-u9-quantity-6,ex-u9-quantity-7,ex-u9-quantity-8,ex-u9-quantity-9,ex-u9-quantity-10,ex-u9-quantity-11,ex-u9-quantity-12,ex-u9-quantity-13,ex-u9-quantity-14,ex-or-u9-quantity-15,ex-or-u9-quantity-16
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1856,11 +1884,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fb3597f04f636253c01381b8a809e7b1b2e6a9ef741652800c9943677851baca
+- Content hash: a75c70b826559b05ba735c027e589f22fc6722622f0cc797ba8b1b0a0a8161bc
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
 dominantAction=Continue
 references=
 items=u9-i-quantity-1,u9-i-quantity-2,u9-i-quantity-3,u9-i-quantity-4,u9-i-quantity-5,u9-i-quantity-6,u9-i-quantity-7,u9-i-quantity-8,u9-i-quantity-9
@@ -1878,12 +1906,12 @@ remediationStepId=u9-st-rem-quantity
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1f6fb31423f2b31900bb29b9ffd96e54d8760d7619e311a5b0bcd972decbe1da
+- Content hash: 62663a45c7a887da03e77e628041a1b46359797f7ac756027999c8552d1c724e
 
 title=Identify the admitted quantity pattern
 estimatedMinutes=12
 objectives=obj-u9-pattern
-steps=u9-st-teach-pattern-1,u9-st-guided-pattern-1,u9-st-teach-pattern-2,u9-st-teach-pattern-3,u9-st-teach-pattern-4,u9-st-teach-pattern-5,u9-st-rem-pattern,u9-st-check-pattern
+steps=u9-st-teach-pattern-1,u9-st-teach-pattern-2,u9-st-teach-pattern-3,u9-st-teach-pattern-4,u9-st-teach-pattern-5,u9-st-guided-pattern-1,u9-st-rem-pattern,u9-st-check-pattern
 
 ### STEP `u9-st-teach-pattern-1`
 
@@ -1893,11 +1921,11 @@ steps=u9-st-teach-pattern-1,u9-st-guided-pattern-1,u9-st-teach-pattern-2,u9-st-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5a4de113613319d9979eb00684f74b5ae317abdc5942cf049fb5c0d8f76be97b
+- Content hash: baf5bfc16651684b0ec7d538a41e73af8335c0dce01e48a419f2791aa61743fb
 
 kind=TEACH
-title=Admitted lines
-body=один час — один час. три кошки — three cats. 
+title=Identify the counting context
+body=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — один час. три кошки — three cats. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1907,28 +1935,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u9-st-guided-pattern-1`
-
-- Objectives: obj-u9-pattern
-- Sessions: u9-s-pattern
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4c52e8ab8cefa756bee7397caff0b64d9b32d082fa74d8ad42d453b7d2bf98cd
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u9-g-pattern-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u9-st-rem-pattern
-
 ### STEP `u9-st-teach-pattern-2`
 
 - Objectives: obj-u9-pattern
@@ -1937,11 +1943,11 @@ remediationStepId=u9-st-rem-pattern
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 89d1f2eca4764b567a3f5be69255818622633c7aa0098b8895cb2ec2f03ffc1b
+- Content hash: b4832e5b1ddc40522d4825ba3b2c8d5b866f64f3e2644126aa3e323c6eef91b1
 
 kind=TEACH
-title=Admitted instruction
-body=Notice that for the ''teens'' (11, 12, 13, 14, ... 19) ending on ''-надцать'' always the last rule is to be applied, no matter what digit they end on.
+title=Check the teen exception
+body=For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All teen counts in the supplied basic examples take genitive plural.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1959,11 +1965,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 57a4b2c22650ac20bc89b50c440369cac7c752ed367ad55d1f8a1b1596988b93
+- Content hash: e953308152efb559c9c98ea015e87a0fd6b2c1a761236f8508b43eabc82ada31
 
 kind=TEACH
-title=Admitted lines
-body=пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+title=Genitive plural examples
+body=Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1981,11 +1987,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5346599145188fa616670ffc4b77ecd20d31fbc4de1cb9eae412db2d487f892f
+- Content hash: 5ea8409a47735fbbb306c85a9764442508f9603c3b3738f45adca6d8a3ca9901
 
 kind=TEACH
-title=Admitted lines
-body=Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. 
+title=A sentence outside the basic pattern
+body=The I saw two friends sentence has an animate accusative object. Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule. The one-cat example below instead states existence in the basic nominative context. Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -2003,11 +2009,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1187a6bc81559e7ac52dc52d8e42301ac33a5356dc89b4f9c39d1b93601879d6
+- Content hash: c5a4f1948d540d51ccf1f247545a7a7e610f088a4f465c6ea1640862f07836db
 
 kind=TEACH
-title=Admitted lines
-body=Пять рубле́й — Five roubles. 
+title=Review before practice
+body=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Пять рубле́й — Five roubles. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -2017,6 +2023,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u9-st-guided-pattern-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-pattern
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 64569b7e3ba5d202ee7ca5172962c2c8334b83ee92c27a802e2d50db58beb26a
+
+kind=GUIDED
+title=Guided practice
+body=Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
+dominantAction=Continue
+references=
+items=u9-g-pattern-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u9-st-rem-pattern
+
 ### STEP `u9-st-rem-pattern`
 
 - Objectives: obj-u9-pattern
@@ -2025,15 +2053,23 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6238da8f542db78a53ab992e554854f22146b0b3d4c174f402617d36fb4be34e
+- Content hash: be0756cf4131b8b23dc1b86710cd2f231cc105c690ebd17c68d0d20b87d38ec8
 
 kind=REMEDIATE
-title=Remediation
-body=Notice that for the ''teens'' (11, 12, 13, 14, ... 19) ending on ''-надцать'' always the last rule is to be applied, no matter what digit they end on.
+title=Review the complete counted-noun rules
+body=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — один час. три кошки — three cats. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All teen counts in the supplied basic examples take genitive plural.
+
+Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+
+The I saw two friends sentence has an animate accusative object. Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule. The one-cat example below instead states existence in the basic nominative context. Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. 
+
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Пять рубле́й — Five roubles. 
 dominantAction=Continue
 references=
 items=
-examples=ex-u9-pattern-0,ex-u9-pattern-1
+examples=ex-u9-pattern-0,ex-u9-pattern-1,ex-u9-pattern-2,ex-u9-pattern-3,ex-u9-pattern-4,ex-u9-pattern-5,ex-u9-pattern-6
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -2047,11 +2083,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7f7152969f79092963cb5af5bb18571cf7e2f3e8f404a99bc7df1a4524c4fb85
+- Content hash: 4bccb09552c0db3d273b054d933ae2abe664c715e1abb6f5fa90220f12a77e1c
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
 dominantAction=Continue
 references=
 items=u9-i-pattern-1,u9-i-pattern-2,u9-i-pattern-3,u9-i-pattern-4
@@ -2069,12 +2105,12 @@ remediationStepId=u9-st-rem-pattern
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3072ffd0db006e0e99d6118e4eea5c9c31ab7d28d45f74c97900b950153e283c
+- Content hash: bd6c4c2047471eb2173e376f38e3183dd23d744ae3482e2054f6ad35e8d04414
 
 title=Self-attest Lesson 9
 estimatedMinutes=10
 objectives=obj-u9-book
-steps=u9-st-book-work,u9-st-book
+steps=u9-st-book-work,u9-st-book,u9-st-anki-direction,u9-st-binder-direction,u9-st-tutor-direction,u9-st-cumulative-direction
 
 ### STEP `u9-st-book-work`
 
@@ -2084,7 +2120,7 @@ steps=u9-st-book-work,u9-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cde75c754e9eac0c6c2e12c2c2cdf803102f0d0014c4885e121ee7360a04acda
+- Content hash: e341a2451b9502b38d3573c0d30ab67148d67c495cbec67cacc4801497d78eb6
 
 kind=BOOK
 title=Work Lesson 9 in your copy
@@ -2094,7 +2130,7 @@ references=ref-u610-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 9 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 9: printed pages 92-106. PDF indexes 104-118 are file locators, not printed pages. Observed section locators: §9.1 p92 (PDF 104); §9.2 p92 (PDF 104); §9.3 p94 (PDF 106); §9.4 p94 (PDF 106); §9.5 p95 (PDF 107); §9.6 p97 (PDF 109); §9.7 p98 (PDF 110); §9.8 p99 (PDF 111); §9.9 p100 (PDF 112); §9.10 p101 (PDF 113); §9.11 p102 (PDF 114); §9.12 p102 (PDF 114); §9.13 p103 (PDF 115); §9.14 p104 (PDF 116). Observed exercise locators: 9/1 p96/PDF108; 9/2 p97/PDF109; 9/3 p101/PDF113; 9/4 p101/PDF113; 9/5 p102/PDF114; 9/6 p105/PDF117; 9/7 p105/PDF117. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -2106,7 +2142,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dfaacf72414a7ef728d2fbcc48a5da7e870bd4c09487b59739369c4d42a627a9
+- Content hash: f6478c49fa9f78f64b4b39921d462f10b883e8394a6582f9f8c1aabb96faec24
 
 kind=BOOK
 title=Record Lesson 9 book work
@@ -2116,8 +2152,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 9 work in your copy.
+bookDirection=Owned-book assignment for Lesson 9: printed pages 92-106. PDF indexes 104-118 are file locators, not printed pages. Observed section locators: §9.1 p92 (PDF 104); §9.2 p92 (PDF 104); §9.3 p94 (PDF 106); §9.4 p94 (PDF 106); §9.5 p95 (PDF 107); §9.6 p97 (PDF 109); §9.7 p98 (PDF 110); §9.8 p99 (PDF 111); §9.9 p100 (PDF 112); §9.10 p101 (PDF 113); §9.11 p102 (PDF 114); §9.12 p102 (PDF 114); §9.13 p103 (PDF 115); §9.14 p104 (PDF 116). Observed exercise locators: 9/1 p96/PDF108; 9/2 p97/PDF109; 9/3 p101/PDF113; 9/4 p101/PDF113; 9/5 p102/PDF114; 9/6 p105/PDF117; 9/7 p105/PDF117. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u9-st-anki-direction`
+
+- Objectives: obj-u9-book
+- Sessions: u9-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c0d3f0102bf2a846fef9feb43a8702283eb30fb80a62af1070eb23fadcb5b010
+
+kind=ANKI
+title=Unit 9 AnkiDroid direction
+body=Unit 9 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u9-st-binder-direction`
+
+- Objectives: obj-u9-book
+- Sessions: u9-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3bf5992da575a0e42ec2f4a050aa9abe50d827c9e60b00511f22c0b19810b0fc
+
+kind=BINDER
+title=Unit 9 binder prompt
+body=Unit 9 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u9-st-tutor-direction`
+
+- Objectives: obj-u9-book
+- Sessions: u9-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7b0aba45056126b8bd2f390a640e15c459557bb765f4e4ac477a2235f21f1fa3
+
+kind=TUTOR
+title=Unit 9 optional tutor
+body=Unit 9 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u9-st-cumulative-direction`
+
+- Objectives: obj-u9-book
+- Sessions: u9-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 20924ea7d0ba09a79279ee423ef99b706749670f64896f23572798278d1c81f6
+
+kind=ORIENT
+title=Unit 9 cumulative review
+body=Unit 9 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 9 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u9-cardinal-0`
@@ -3488,7 +3612,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 65851a6aad772d16a11a764ab3d3a200e8710ea6b4244f1e77204086a8be3d18
+- Content hash: 661ccb4f2f59f526feaa3cbb0560f045d2188ccb07ca7b8cad0582d152f901a2
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3496,11 +3620,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=0
 options=ноль | оди́н
 answer=ноль
-feedback=Does the admitted record show the governed contrast? ноль.
+feedback=ноль names zero (0), the value shown. оди́н names one (1), a different value. Zero counts no units; one counts a single unit.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | оди́н names one (1) instead of the shown value 0.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-0
@@ -3508,8 +3632,8 @@ cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-cardinal-0-ru
 distractorSourceIds= | prov-ex-u9-cardinal-1-ru
-distractorDifference= | This admitted form is a different number in the same table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | оди́н names one (1) instead of the shown value 0.
+whyAnswerDemonstratesObjective=ноль names zero (0), the value shown. оди́н names one (1), a different value. Zero counts no units; one counts a single unit.
 contrastMembers=ноль | оди́н
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-cardinal-0-en | prov-ex-u9-cardinal-0-ru | prov-ex-u9-cardinal-1-ru
@@ -3522,7 +3646,7 @@ relationParticipantIds=prov-ex-u9-cardinal-0-en | prov-ex-u9-cardinal-0-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cd2c0d61de9fde567c19ef9d64cde2e2c31a4350c1440116662f97f056946a9c
+- Content hash: 67c4139d00b352300480033311f58f303effa86496635932b65c87dce3e74620
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3530,11 +3654,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=11
 options=оди́ннадцать | двена́дцать
 answer=оди́ннадцать
-feedback=Does the admitted record show the governed contrast? оди́ннадцать.
+feedback=оди́ннадцать names eleven (11), the value shown. двена́дцать names twelve (12), a different value.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different teen.
+distractorRationales= | двена́дцать names twelve (12) instead of the shown value 11.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-0
@@ -3542,8 +3666,8 @@ cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-teens-0-ru
 distractorSourceIds= | prov-ex-u9-teens-1-ru
-distractorDifference= | This admitted form is a different teen.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | двена́дцать names twelve (12) instead of the shown value 11.
+whyAnswerDemonstratesObjective=оди́ннадцать names eleven (11), the value shown. двена́дцать names twelve (12), a different value.
 contrastMembers=оди́ннадцать | двена́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-teens-0-en | prov-ex-u9-teens-0-ru | prov-ex-u9-teens-1-ru
@@ -3556,7 +3680,7 @@ relationParticipantIds=prov-ex-u9-teens-0-en | prov-ex-u9-teens-0-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a026221066370d4a19a3126134ec512826412e3fccbb5efc240cf4b968a04995
+- Content hash: 4e35361a81219b04cbaf83464c842c11fd56a4511bc622e4cbe9c9a20658bcb9
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3564,11 +3688,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=30
 options=три́дцать | со́рок
 answer=три́дцать
-feedback=Does the admitted record show the governed contrast? три́дцать.
+feedback=три́дцать names thirty (30), the value shown. со́рок names forty (40), a different value.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different ten.
+distractorRationales= | со́рок names forty (40) instead of the shown value 30.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-0
@@ -3576,8 +3700,8 @@ cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-tens-0-ru
 distractorSourceIds= | prov-ex-u9-tens-1-ru
-distractorDifference= | This admitted form is a different ten.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | со́рок names forty (40) instead of the shown value 30.
+whyAnswerDemonstratesObjective=три́дцать names thirty (30), the value shown. со́рок names forty (40), a different value.
 contrastMembers=три́дцать | со́рок
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-tens-0-en | prov-ex-u9-tens-0-ru | prov-ex-u9-tens-1-ru
@@ -3590,7 +3714,7 @@ relationParticipantIds=prov-ex-u9-tens-0-en | prov-ex-u9-tens-0-ru | prov-ex-u9-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 30095b761e19767b3d32cac4816bff4374edc93c4822c5b9d27a560bf7fe466b
+- Content hash: a2acf282d3b3db4fcd908c61968a69b145e745e56c36bc23278ddd51dd11c3d8
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3598,11 +3722,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=100
 options=сто | две́сти
 answer=сто
-feedback=Does the admitted record show the governed contrast? сто.
+feedback=сто names one hundred (100), the value shown. две́сти names two hundred (200), a different value.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different hundred.
+distractorRationales= | две́сти names two hundred (200) instead of the shown value 100.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-0
@@ -3610,8 +3734,8 @@ cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-hundreds-0-ru
 distractorSourceIds= | prov-ex-u9-hundreds-1-ru
-distractorDifference= | This admitted form is a different hundred.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | две́сти names two hundred (200) instead of the shown value 100.
+whyAnswerDemonstratesObjective=сто names one hundred (100), the value shown. две́сти names two hundred (200), a different value.
 contrastMembers=сто | две́сти
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-hundreds-0-en | prov-ex-u9-hundreds-0-ru | prov-ex-u9-hundreds-1-ru
@@ -3624,7 +3748,7 @@ relationParticipantIds=prov-ex-u9-hundreds-0-en | prov-ex-u9-hundreds-0-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a409a26b8115fbe105e98cad0c31c21bf5f4bc0f84762ec834f13f1ab9821f4a
+- Content hash: 379b157252249b32b1072b4b4cfe4c9df9af4b9e95709b928e208b75026f5761
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3632,11 +3756,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=21
 options=два́дцать оди́н | два́дцать
 answer=два́дцать оди́н
-feedback=Does the admitted record show the governed contrast? два́дцать оди́н.
+feedback=два́дцать оди́н represents 21: 20 + 1. The other option gives only 20 and omits the final unit.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is only the ten, not the composed number.
+distractorRationales= | The shorter option gives 20 instead of 21; it omits the final unit.
 testedFeature=COMPOUND_21
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-0
@@ -3644,8 +3768,8 @@ cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-thousands-1-ru
 distractorSourceIds= | prov-u9-thousands-x-0
-distractorDifference= | This admitted form is only the ten, not the composed number.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | The shorter option gives 20 instead of 21; it omits the final unit.
+whyAnswerDemonstratesObjective=два́дцать оди́н represents 21: 20 + 1. The other option gives only 20 and omits the final unit.
 contrastMembers=два́дцать оди́н | два́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-thousands-1-en | prov-ex-u9-thousands-1-ru | prov-u9-thousands-x-0
@@ -3658,7 +3782,7 @@ relationParticipantIds=prov-ex-u9-thousands-1-en | prov-ex-u9-thousands-1-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a7af8b7d8811182987d1104e634ecf8553a249327deec63e5c9d3fed11757385
+- Content hash: 97fe9f1a4487db42fabcda344276203f2004c6f65d2aa98d4e1a855c67d4f1c1
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3666,11 +3790,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=мальчик
 options=один | одна
 answer=один
-feedback=Does the admitted record show the governed contrast? один.
+feedback=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen line.
+distractorRationales= | одна is feminine singular instead of the masculine singular agreement required by the shown noun.
 testedFeature=ODIN_MASCULINE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-0
@@ -3678,8 +3802,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-u9-odindva-x-4
 distractorSourceIds= | prov-u9-odindva-x-5
-distractorDifference= | This form is another admitted form in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+whyAnswerDemonstratesObjective=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
 contrastMembers=один | одна
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odindva-x-5
@@ -3688,69 +3812,69 @@ relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odind
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2e5c867c62f4dfe4d03b6c516b6d8919d008eec022679206e3dc28a1fa2eac2a
+- Content hash: b885b61c8ef2e0bbb483eafc9f21a0853505559b5128b4ba385da068e4ed4292
 
-kind=NUMBER_FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=один час
-options=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
-answer=1 -> nominative
-feedback=Does the admitted record show the governed contrast? 1 -> nominative.
+options=In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is genitive plural.
+answer=In this basic counting phrase, the noun is nominative singular.
+feedback=The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
+distractorRationales= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern. | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
 testedFeature=FINAL_DIGIT_ONE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-quantity-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-u9-quantity-x-0
-distractorSourceIds= | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
-distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-quantity-x-3 | prov-u9-quantity-x-0 | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
+answerSourceIds=prov-ca-u9-rule-u9-g-quantity-0-1
+distractorSourceIds= | prov-ca-u9-rule-u9-g-quantity-0-2 | prov-ca-u9-rule-u9-g-quantity-0-3
+distractorDifference= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern. | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is genitive plural.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-g-quantity-0-0 | prov-ca-u9-rule-u9-g-quantity-0-1 | prov-ca-u9-rule-u9-g-quantity-0-2 | prov-ca-u9-rule-u9-g-quantity-0-3
 
 ### GUIDED_PRACTICE `u9-g-pattern-0`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-pattern
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1b36837129a3fdc490add584fe87866cd054076d620e7011bac1f31ee395faea
+- Content hash: e5f54d8f07f2599fc5d14a5cf247552ea8802ae0397549efae9ea67fbb32d845
 
-kind=PATTERN_CLASSIFICATION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule applies to the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=один час
-options=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
-answer=1 -> nominative
-feedback=Does the admitted record show the governed contrast? 1 -> nominative.
+options=In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is genitive plural.
+answer=In this basic counting phrase, the noun is nominative singular.
+feedback=The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the two-to-four line. | This admitted rule is the five-and-more line.
+distractorRationales= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern. | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
 testedFeature=GOVERNED_FORM
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-pattern-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-u9-pattern-x-0
-distractorSourceIds= | prov-u9-pattern-x-1 | prov-u9-pattern-x-2
-distractorDifference= | This admitted rule is the two-to-four line. | This admitted rule is the five-and-more line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-pattern-x-5 | prov-u9-pattern-x-0 | prov-u9-pattern-x-1 | prov-u9-pattern-x-2
+answerSourceIds=prov-ca-u9-rule-u9-g-pattern-0-1
+distractorSourceIds= | prov-ca-u9-rule-u9-g-pattern-0-2 | prov-ca-u9-rule-u9-g-pattern-0-3
+distractorDifference= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern. | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is genitive plural.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-g-pattern-0-0 | prov-ca-u9-rule-u9-g-pattern-0-1 | prov-ca-u9-rule-u9-g-pattern-0-2 | prov-ca-u9-rule-u9-g-pattern-0-3
 
 ### INDEPENDENT_CHECK `u9-i-cardinal-1`
 
@@ -3760,7 +3884,7 @@ relationParticipantIds=prov-u9-pattern-x-5 | prov-u9-pattern-x-0 | prov-u9-patte
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a56540b78cf6f26833c3271ea662190252d240488d01bee8e57bb8fe58d2caa1
+- Content hash: 87d8f97c160b03257751d81b73f03bb7d497c2879405a3f40e794c4dc8fe337b
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3768,11 +3892,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=1
 options=оди́н | два
 answer=оди́н
-feedback=Does the admitted record show the governed contrast? оди́н.
+feedback=оди́н names one (1), the value shown. два names two (2), a different value.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | два names two (2) instead of the shown value 1.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-1
@@ -3780,8 +3904,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-1-ru
 distractorSourceIds= | prov-ex-u9-cardinal-2-ru
-distractorDifference= | This admitted form is a different number in the same table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | два names two (2) instead of the shown value 1.
+whyAnswerDemonstratesObjective=оди́н names one (1), the value shown. два names two (2), a different value.
 contrastMembers=оди́н | два
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-cardinal-1-en | prov-ex-u9-cardinal-1-ru | prov-ex-u9-cardinal-2-ru
@@ -3794,7 +3918,7 @@ relationParticipantIds=prov-ex-u9-cardinal-1-en | prov-ex-u9-cardinal-1-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d10d2755808b87944dde772b68e8a24e2ec87aa5b37725d93be9a648fa754062
+- Content hash: 2c2fb367de0da69ed761d1ed52ea1406f28bd4d36289b23d59e226f3ca3d3d12
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3802,11 +3926,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=5
 options=пять | шесть
 answer=пять
-feedback=Does the admitted record show the governed contrast? пять.
+feedback=пять names five (5), the value shown. шесть names six (6), a different value.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | шесть names six (6) instead of the shown value 5.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-2
@@ -3814,8 +3938,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-5-ru
 distractorSourceIds= | prov-ex-u9-cardinal-6-ru
-distractorDifference= | This admitted form is a different number in the same table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | шесть names six (6) instead of the shown value 5.
+whyAnswerDemonstratesObjective=пять names five (5), the value shown. шесть names six (6), a different value.
 contrastMembers=пять | шесть
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-cardinal-5-en | prov-ex-u9-cardinal-5-ru | prov-ex-u9-cardinal-6-ru
@@ -3828,7 +3952,7 @@ relationParticipantIds=prov-ex-u9-cardinal-5-en | prov-ex-u9-cardinal-5-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b2f18266ad03aa0962589e1191926cb2a016ee86cf581b5016b6ceb1f2c79354
+- Content hash: cf51e4e5435a4eb334680ecc0d1e3f5774968e2ea13db7e82381b2ee16cfeffa
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3836,11 +3960,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=10
 options=де́сять | де́вять
 answer=де́сять
-feedback=Does the admitted record show the governed contrast? де́сять.
+feedback=де́сять names ten (10), the value shown. де́вять names nine (9), a different value.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | де́вять names nine (9) instead of the shown value 10.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-3
@@ -3848,8 +3972,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-10-ru
 distractorSourceIds= | prov-ex-u9-cardinal-9-ru
-distractorDifference= | This admitted form is a different number in the same table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | де́вять names nine (9) instead of the shown value 10.
+whyAnswerDemonstratesObjective=де́сять names ten (10), the value shown. де́вять names nine (9), a different value.
 contrastMembers=де́сять | де́вять
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-cardinal-10-en | prov-ex-u9-cardinal-10-ru | prov-ex-u9-cardinal-9-ru
@@ -3862,7 +3986,7 @@ relationParticipantIds=prov-ex-u9-cardinal-10-en | prov-ex-u9-cardinal-10-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 62500b8e6bbe140ff4c80f7f278b80ae09e7e302a15d8cdb8826664b65710c5e
+- Content hash: 8bbe15e647e125fc5e39af8f9dcf259f0188d4a61dc567144e60ec6a4310db07
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3870,11 +3994,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=4
 options=четы́ре | три
 answer=четы́ре
-feedback=Does the admitted record show the governed contrast? четы́ре.
+feedback=четы́ре names four (4), the value shown. три names three (3), a different value.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | три names three (3) instead of the shown value 4.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-4
@@ -3882,8 +4006,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-4-ru
 distractorSourceIds= | prov-ex-u9-cardinal-3-ru
-distractorDifference= | This admitted form is a different number in the same table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | три names three (3) instead of the shown value 4.
+whyAnswerDemonstratesObjective=четы́ре names four (4), the value shown. три names three (3), a different value.
 contrastMembers=четы́ре | три
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-cardinal-4-en | prov-ex-u9-cardinal-4-ru | prov-ex-u9-cardinal-3-ru
@@ -3896,7 +4020,7 @@ relationParticipantIds=prov-ex-u9-cardinal-4-en | prov-ex-u9-cardinal-4-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 588e84100ce44b339005ea35c0c029aaf3ae8465e8c91908e2c9ea1a2c2f63ac
+- Content hash: 0b90857e52f8c42c5a6c4f7619e21d901ade6354922cc5cb83f0af316c403826
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3904,11 +4028,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=14
 options=четы́рнадцать | пятна́дцать
 answer=четы́рнадцать
-feedback=Does the admitted record show the governed contrast? четы́рнадцать.
+feedback=четы́рнадцать names fourteen (14), the value shown. пятна́дцать names fifteen (15), a different value.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different teen.
+distractorRationales= | пятна́дцать names fifteen (15) instead of the shown value 14.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-1
@@ -3916,8 +4040,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-teens-3-ru
 distractorSourceIds= | prov-ex-u9-teens-4-ru
-distractorDifference= | This admitted form is a different teen.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | пятна́дцать names fifteen (15) instead of the shown value 14.
+whyAnswerDemonstratesObjective=четы́рнадцать names fourteen (14), the value shown. пятна́дцать names fifteen (15), a different value.
 contrastMembers=четы́рнадцать | пятна́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-teens-3-en | prov-ex-u9-teens-3-ru | prov-ex-u9-teens-4-ru
@@ -3930,7 +4054,7 @@ relationParticipantIds=prov-ex-u9-teens-3-en | prov-ex-u9-teens-3-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 590ff30878ce68512982e1aded967c3c756b9551d08a44692dbca942ee4b37ec
+- Content hash: d79e3cad4cb39fa1cf485ca6e5efde41a319d9af21b099dcb9ded100e08a7531
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3938,11 +4062,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=19
 options=девятна́дцать | два́дцать
 answer=девятна́дцать
-feedback=Does the admitted record show the governed contrast? девятна́дцать.
+feedback=девятна́дцать names nineteen (19), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the following ten, not the teen.
+distractorRationales= | два́дцать names twenty (20) instead of the shown value 19.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-2
@@ -3950,8 +4074,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-teens-8-ru
 distractorSourceIds= | prov-ex-u9-teens-9-ru
-distractorDifference= | This admitted form is the following ten, not the teen.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | два́дцать names twenty (20) instead of the shown value 19.
+whyAnswerDemonstratesObjective=девятна́дцать names nineteen (19), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
 contrastMembers=девятна́дцать | два́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-teens-8-en | prov-ex-u9-teens-8-ru | prov-ex-u9-teens-9-ru
@@ -3964,7 +4088,7 @@ relationParticipantIds=prov-ex-u9-teens-8-en | prov-ex-u9-teens-8-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 022c0e8573120bd662f108425b604ed75b5c0c99016a44eb9d0b1a15eeca5ca4
+- Content hash: 06d9ad9027c3cfa01e2ed05d72d64c5dc4367b242d9367476f41faa73c1347bf
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3972,11 +4096,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=12
 options=двена́дцать | два́дцать
 answer=двена́дцать
-feedback=Does the admitted record show the governed contrast? двена́дцать.
+feedback=двена́дцать names twelve (12), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the ten, not the teen.
+distractorRationales= | два́дцать names twenty (20) instead of the shown value 12.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-3
@@ -3984,8 +4108,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-teens-1-ru
 distractorSourceIds= | prov-ex-u9-teens-9-ru
-distractorDifference= | This admitted form is the ten, not the teen.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | два́дцать names twenty (20) instead of the shown value 12.
+whyAnswerDemonstratesObjective=двена́дцать names twelve (12), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
 contrastMembers=двена́дцать | два́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-teens-1-en | prov-ex-u9-teens-1-ru | prov-ex-u9-teens-9-ru
@@ -3998,7 +4122,7 @@ relationParticipantIds=prov-ex-u9-teens-1-en | prov-ex-u9-teens-1-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c453f656d842fb5bbd83cb6f25971fa7228e20d2cd02c1845566a50119910d6e
+- Content hash: a05d7db15b05dd4bbc16d3d32b40334cf19b8a6650ade953a46b9c9e95607cee
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4006,11 +4130,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=50
 options=пятьдеся́т | шестьдеся́т
 answer=пятьдеся́т
-feedback=Does the admitted record show the governed contrast? пятьдеся́т.
+feedback=пятьдеся́т names fifty (50), the value shown. шестьдеся́т names sixty (60), a different value.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different ten.
+distractorRationales= | шестьдеся́т names sixty (60) instead of the shown value 50.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-1
@@ -4018,8 +4142,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-tens-2-ru
 distractorSourceIds= | prov-ex-u9-tens-3-ru
-distractorDifference= | This admitted form is a different ten.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | шестьдеся́т names sixty (60) instead of the shown value 50.
+whyAnswerDemonstratesObjective=пятьдеся́т names fifty (50), the value shown. шестьдеся́т names sixty (60), a different value.
 contrastMembers=пятьдеся́т | шестьдеся́т
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-tens-2-en | prov-ex-u9-tens-2-ru | prov-ex-u9-tens-3-ru
@@ -4032,7 +4156,7 @@ relationParticipantIds=prov-ex-u9-tens-2-en | prov-ex-u9-tens-2-ru | prov-ex-u9-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4b5dacf11333d1cb0be213931edde9922ef4f20a39304d68ac10dacfef327dea
+- Content hash: fc25a8d84d1443192b2d116411159e0946f6d7980850b06bfa73c2fee73eca82
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4040,11 +4164,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=90
 options=девяно́сто | во́семьдесят
 answer=девяно́сто
-feedback=Does the admitted record show the governed contrast? девяно́сто.
+feedback=девяно́сто names ninety (90), the value shown. во́семьдесят names eighty (80), a different value.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different ten.
+distractorRationales= | во́семьдесят names eighty (80) instead of the shown value 90.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-2
@@ -4052,8 +4176,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-tens-6-ru
 distractorSourceIds= | prov-ex-u9-tens-5-ru
-distractorDifference= | This admitted form is a different ten.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | во́семьдесят names eighty (80) instead of the shown value 90.
+whyAnswerDemonstratesObjective=девяно́сто names ninety (90), the value shown. во́семьдесят names eighty (80), a different value.
 contrastMembers=девяно́сто | во́семьдесят
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-tens-6-en | prov-ex-u9-tens-6-ru | prov-ex-u9-tens-5-ru
@@ -4066,7 +4190,7 @@ relationParticipantIds=prov-ex-u9-tens-6-en | prov-ex-u9-tens-6-ru | prov-ex-u9-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3ab35851d83d1f68fc022fa221ab6c54f066739d1d14eb32adb75cf7325fc5e9
+- Content hash: dddde3f6578bbde0a81705c458cf7e78efa51b55a04eaa9a28766b734f059904
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4074,11 +4198,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=20
 options=два́дцать | двена́дцать
 answer=два́дцать
-feedback=Does the admitted record show the governed contrast? два́дцать.
+feedback=два́дцать names twenty (20), the value shown. двена́дцать names twelve (12), a different value. Distinguish the teen value from a multiple of ten.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the teen, not the ten.
+distractorRationales= | двена́дцать names twelve (12) instead of the shown value 20.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-3
@@ -4086,8 +4210,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-tens-7-ru
 distractorSourceIds= | prov-u9-tens-x-0
-distractorDifference= | This admitted form is the teen, not the ten.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | двена́дцать names twelve (12) instead of the shown value 20.
+whyAnswerDemonstratesObjective=два́дцать names twenty (20), the value shown. двена́дцать names twelve (12), a different value. Distinguish the teen value from a multiple of ten.
 contrastMembers=два́дцать | двена́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-tens-7-en | prov-ex-u9-tens-7-ru | prov-u9-tens-x-0
@@ -4100,7 +4224,7 @@ relationParticipantIds=prov-ex-u9-tens-7-en | prov-ex-u9-tens-7-ru | prov-u9-ten
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f64e7f9ad1f54d196d98a5f151037caf6686b73a85d85dbee32fbd235c249000
+- Content hash: c037b6cabcd52de2630dacda36e826e190c89bb3700a7f0736d423321e96fa30
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4108,11 +4232,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=300
 options=три́ста | три́дцать
 answer=три́ста
-feedback=Does the admitted record show the governed contrast? три́ста.
+feedback=три́ста names three hundred (300), the value shown. три́дцать names thirty (30), a different value. Compare place value: 300 has three hundreds; 30 has three tens.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the ten, not the hundred.
+distractorRationales= | три́дцать names thirty (30) instead of the shown value 300.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-1
@@ -4120,8 +4244,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-hundreds-2-ru
 distractorSourceIds= | prov-u9-hundreds-x-0
-distractorDifference= | This admitted form is the ten, not the hundred.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | три́дцать names thirty (30) instead of the shown value 300.
+whyAnswerDemonstratesObjective=три́ста names three hundred (300), the value shown. три́дцать names thirty (30), a different value. Compare place value: 300 has three hundreds; 30 has three tens.
 contrastMembers=три́ста | три́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-hundreds-2-en | prov-ex-u9-hundreds-2-ru | prov-u9-hundreds-x-0
@@ -4134,7 +4258,7 @@ relationParticipantIds=prov-ex-u9-hundreds-2-en | prov-ex-u9-hundreds-2-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2ec2e333caa03fce42970cadc50ea8642d93d27919bba083d56b3b8fc8870a98
+- Content hash: 322dd4a28051f905c64649c2a6c667087d8cea3797300c6b4fc0ddd6be5e7113
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4142,11 +4266,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=500
 options=пятьсо́т | пять
 answer=пятьсо́т
-feedback=Does the admitted record show the governed contrast? пятьсо́т.
+feedback=пятьсо́т names five hundred (500), the value shown. пять names five (5), a different value. Compare place value: 500 has five hundreds; 5 has five single units.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the one-digit number, not the hundred.
+distractorRationales= | пять names five (5) instead of the shown value 500.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-2
@@ -4154,8 +4278,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-hundreds-4-ru
 distractorSourceIds= | prov-u9-hundreds-x-1
-distractorDifference= | This admitted form is the one-digit number, not the hundred.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | пять names five (5) instead of the shown value 500.
+whyAnswerDemonstratesObjective=пятьсо́т names five hundred (500), the value shown. пять names five (5), a different value. Compare place value: 500 has five hundreds; 5 has five single units.
 contrastMembers=пятьсо́т | пять
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-hundreds-4-en | prov-ex-u9-hundreds-4-ru | prov-u9-hundreds-x-1
@@ -4168,7 +4292,7 @@ relationParticipantIds=prov-ex-u9-hundreds-4-en | prov-ex-u9-hundreds-4-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c62e7a79248342d48b1c68529fb8f1096854adfbedb025a90a57cbfe286e02db
+- Content hash: 10ab0463ef11881d50632057050f10dc9c0157ba5b776d62d082e4989ace61de
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4176,11 +4300,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=900
 options=девятьсо́т | девяно́сто
 answer=девятьсо́т
-feedback=Does the admitted record show the governed contrast? девятьсо́т.
+feedback=девятьсо́т names nine hundred (900), the value shown. девяно́сто names ninety (90), a different value. Compare place value: 900 has nine hundreds; 90 has nine tens.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the ten, not the hundred.
+distractorRationales= | девяно́сто names ninety (90) instead of the shown value 900.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-3
@@ -4188,8 +4312,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-hundreds-8-ru
 distractorSourceIds= | prov-u9-hundreds-x-2
-distractorDifference= | This admitted form is the ten, not the hundred.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | девяно́сто names ninety (90) instead of the shown value 900.
+whyAnswerDemonstratesObjective=девятьсо́т names nine hundred (900), the value shown. девяно́сто names ninety (90), a different value. Compare place value: 900 has nine hundreds; 90 has nine tens.
 contrastMembers=девятьсо́т | девяно́сто
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-hundreds-8-en | prov-ex-u9-hundreds-8-ru | prov-u9-hundreds-x-2
@@ -4202,7 +4326,7 @@ relationParticipantIds=prov-ex-u9-hundreds-8-en | prov-ex-u9-hundreds-8-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 160883d26ee9741aeeda81b3799b6ae8fa0f682072e17f85ca29b8596ac89ffc
+- Content hash: f943c0257cf6d45d551da83f4c44fd49c2944f15956c9761ce24a1b4c3c3a942
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4210,11 +4334,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=101
 options=сто оди́н | сто
 answer=сто оди́н
-feedback=Does the admitted record show the governed contrast? сто оди́н.
+feedback=сто оди́н represents 101: 100 + 1. The other option gives only 100 and omits the final unit.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is only the hundred, not the composed number.
+distractorRationales= | The shorter option gives 100 instead of 101; it omits the final unit.
 testedFeature=HUNDREDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-1
@@ -4222,8 +4346,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-2-ru
 distractorSourceIds= | prov-u9-thousands-x-1
-distractorDifference= | This admitted form is only the hundred, not the composed number.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | The shorter option gives 100 instead of 101; it omits the final unit.
+whyAnswerDemonstratesObjective=сто оди́н represents 101: 100 + 1. The other option gives only 100 and omits the final unit.
 contrastMembers=сто оди́н | сто
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-thousands-2-en | prov-ex-u9-thousands-2-ru | prov-u9-thousands-x-1
@@ -4236,7 +4360,7 @@ relationParticipantIds=prov-ex-u9-thousands-2-en | prov-ex-u9-thousands-2-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: adf87d6d315271b9be83a77fc42cc00e0a8f71731a79bb1bc457d6dd5822e4e5
+- Content hash: ec92cb115ee44b0d08f342b8c8bbca6a839b0ef3c19fb765fbb152a902dbc0ba
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4244,11 +4368,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=215
 options=две́сти пятна́дцать | две́сти
 answer=две́сти пятна́дцать
-feedback=Does the admitted record show the governed contrast? две́сти пятна́дцать.
+feedback=две́сти пятна́дцать represents 215: 200 + 15. The other option gives only 200 and omits the final fifteen.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is only the hundred, not the composed number.
+distractorRationales= | The shorter option gives 200 instead of 215; it omits the final fifteen.
 testedFeature=HUNDREDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-2
@@ -4256,8 +4380,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-3-ru
 distractorSourceIds= | prov-u9-thousands-x-2
-distractorDifference= | This admitted form is only the hundred, not the composed number.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | The shorter option gives 200 instead of 215; it omits the final fifteen.
+whyAnswerDemonstratesObjective=две́сти пятна́дцать represents 215: 200 + 15. The other option gives only 200 and omits the final fifteen.
 contrastMembers=две́сти пятна́дцать | две́сти
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-thousands-3-en | prov-ex-u9-thousands-3-ru | prov-u9-thousands-x-2
@@ -4270,7 +4394,7 @@ relationParticipantIds=prov-ex-u9-thousands-3-en | prov-ex-u9-thousands-3-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ea9a6a3471baea3cdd7ffba5445bc6afc0579f4b30b2a2a7568bfc2cddfaf482
+- Content hash: 8ce46d1a33cf05628f539d3c7bca9b64ded9460aaed66bc6766a10ddbbeb5aaf
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4278,11 +4402,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=1,984
 options=ты́сяча девятьсо́т во́семьдесят четы́ре | ты́сяча
 answer=ты́сяча девятьсо́т во́семьдесят четы́ре
-feedback=Does the admitted record show the governed contrast? ты́сяча девятьсо́т во́семьдесят четы́ре.
+feedback=ты́сяча девятьсо́т во́семьдесят четы́ре represents 1,984: 1,000 + 900 + 80 + 4. The other option gives only 1,000 and omits the remaining 984.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is only the thousand, not the composed number.
+distractorRationales= | The shorter option gives 1,000 instead of 1,984; it omits the remaining 984.
 testedFeature=THOUSANDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-3
@@ -4290,8 +4414,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-5-ru
 distractorSourceIds= | prov-ex-u9-thousands-0-ru
-distractorDifference= | This admitted form is only the thousand, not the composed number.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | The shorter option gives 1,000 instead of 1,984; it omits the remaining 984.
+whyAnswerDemonstratesObjective=ты́сяча девятьсо́т во́семьдесят четы́ре represents 1,984: 1,000 + 900 + 80 + 4. The other option gives only 1,000 and omits the remaining 984.
 contrastMembers=ты́сяча девятьсо́т во́семьдесят четы́ре | ты́сяча
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-thousands-5-en | prov-ex-u9-thousands-5-ru | prov-ex-u9-thousands-0-ru
@@ -4304,7 +4428,7 @@ relationParticipantIds=prov-ex-u9-thousands-5-en | prov-ex-u9-thousands-5-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0430fefbfee01733dc0c605b9237007eb92bbfde2dee2f3dceb1698066dc2f49
+- Content hash: 1d9c64712540a4ceb4fd10043b059bfabb261b7a808555a78a8a05f277637478
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4312,11 +4436,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=2,000/3,000/4,000
 options=две/три/четы́ре ты́сячи | пять ~ де́вять ты́сяч
 answer=две/три/четы́ре ты́сячи
-feedback=Does the admitted record show the governed contrast? две/три/четы́ре ты́сячи.
+feedback=The shown group counts two, three or four thousands. In these whole-thousand examples, the counted word for thousand takes the genitive singular. The other option counts five through nine thousands and uses the genitive plural. These examples use the basic nominative or inanimate accusative counting construction.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the other thousands band.
+distractorRationales= | The other option counts five through nine thousands with genitive plural instead of the shown two, three or four thousands with genitive singular.
 testedFeature=THOUSANDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-4
@@ -4324,8 +4448,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-6-ru
 distractorSourceIds= | prov-ex-u9-thousands-7-ru
-distractorDifference= | This admitted form is the other thousands band.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | The other option counts five through nine thousands with genitive plural instead of the shown two, three or four thousands with genitive singular.
+whyAnswerDemonstratesObjective=The shown group counts two, three or four thousands. In these whole-thousand examples, the counted word for thousand takes the genitive singular. The other option counts five through nine thousands and uses the genitive plural. These examples use the basic nominative or inanimate accusative counting construction.
 contrastMembers=две/три/четы́ре ты́сячи | пять ~ де́вять ты́сяч
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-thousands-6-en | prov-ex-u9-thousands-6-ru | prov-ex-u9-thousands-7-ru
@@ -4338,7 +4462,7 @@ relationParticipantIds=prov-ex-u9-thousands-6-en | prov-ex-u9-thousands-6-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3b5b69ad55c3fbbe7d637b283eca1f3485e1da4f526832d3c09f93f8c7cdb0f1
+- Content hash: d56855075810daf85565f0dc8787a13d5f3a5cbab1fedc4a150b9b56dc8ca726
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4346,11 +4470,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=девушка
 options=одна | один
 answer=одна
-feedback=Does the admitted record show the governed contrast? одна.
+feedback=одна is the feminine singular form of one and agrees with the shown word for girl in this example. один is masculine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen line.
+distractorRationales= | один is masculine singular instead of the feminine singular agreement required by the shown noun.
 testedFeature=ODIN_FEMININE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-1
@@ -4358,8 +4482,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-odindva-x-5
 distractorSourceIds= | prov-u9-odindva-x-4
-distractorDifference= | This form is another admitted form in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | один is masculine singular instead of the feminine singular agreement required by the shown noun.
+whyAnswerDemonstratesObjective=одна is the feminine singular form of one and agrees with the shown word for girl in this example. один is masculine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
 contrastMembers=одна | один
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u9-odindva-x-1 | prov-u9-odindva-x-5 | prov-u9-odindva-x-4
@@ -4372,7 +4496,7 @@ relationParticipantIds=prov-u9-odindva-x-1 | prov-u9-odindva-x-5 | prov-u9-odind
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e310f613fc4818b787f22c144de45f24b325729217a15bb4139924b14506ca75
+- Content hash: 85bb3751475d66034b9bdfe139f56e633f14658faf49a0d70c19625a32966f56
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4380,11 +4504,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=животное
 options=одно | один
 answer=одно
-feedback=Does the admitted record show the governed contrast? одно.
+feedback=одно is the neuter singular form of one and agrees with the shown word for animal in this example. один is masculine singular instead. The retained lexical row classifies this noun as neuter; choose by that grammatical gender.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen line.
+distractorRationales= | один is masculine singular instead of the neuter singular agreement required by the shown noun.
 testedFeature=ODIN_NEUTER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-2
@@ -4392,8 +4516,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-odindva-x-6
 distractorSourceIds= | prov-u9-odindva-x-4
-distractorDifference= | This form is another admitted form in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | один is masculine singular instead of the neuter singular agreement required by the shown noun.
+whyAnswerDemonstratesObjective=одно is the neuter singular form of one and agrees with the shown word for animal in this example. один is masculine singular instead. The retained lexical row classifies this noun as neuter; choose by that grammatical gender.
 contrastMembers=одно | один
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u9-odindva-x-2 | prov-u9-odindva-x-6 | prov-u9-odindva-x-4
@@ -4406,7 +4530,7 @@ relationParticipantIds=prov-u9-odindva-x-2 | prov-u9-odindva-x-6 | prov-u9-odind
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: eb1a4eb67c20c49bf75a1e1b61fe9cad484c39d059e85ae0d82441a8044a710d
+- Content hash: 7fcb5a087c227875f32a9f711ed2df1fd99d8f611a74b58004e7be3a0892d214
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4414,11 +4538,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=джинсы
 options=одни | один
 answer=одни
-feedback=Does the admitted record show the governed contrast? одни.
+feedback=одни is the plural form of one used with the shown word for jeans. The retained example means one pair of jeans; plural grammatical agreement does not mean several pairs here. один is masculine singular and does not match this plural-form noun.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen line.
+distractorRationales= | один is masculine singular instead of the plural agreement used for one pair of jeans in the retained example.
 testedFeature=ODIN_PLURAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-3
@@ -4426,8 +4550,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-odindva-x-7
 distractorSourceIds= | prov-u9-odindva-x-4
-distractorDifference= | This form is another admitted form in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | один is masculine singular instead of the plural agreement used for one pair of jeans in the retained example.
+whyAnswerDemonstratesObjective=одни is the plural form of one used with the shown word for jeans. The retained example means one pair of jeans; plural grammatical agreement does not mean several pairs here. один is masculine singular and does not match this plural-form noun.
 contrastMembers=одни | один
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u9-odindva-x-3 | prov-u9-odindva-x-7 | prov-u9-odindva-x-4
@@ -4436,35 +4560,36 @@ relationParticipantIds=prov-u9-odindva-x-3 | prov-u9-odindva-x-7 | prov-u9-odind
 
 - Objectives: obj-u9-odindva
 - Sessions: u9-s-odindva
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 23763f5b436c31710b3d6fb7effb03ecb239bec1d747d145976551a3cb446cc0
+- Content hash: c85b083f838e62735090ac00a24079ecc19d0c31c54d8eea5039eab1a96ef3dc
 
 kind=CONTRAST_SELECTION
 language=en
 prompt=Which admitted form agrees with the shown word?
-promptLetter=мальчик
+promptLetter=час
 options=один | одна
 answer=один
-feedback=Does the admitted record show the governed contrast? один.
+feedback=The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen line.
+distractorRationales= | одна is the feminine singular form; the supplied example with час uses masculine singular один.
 testedFeature=ODIN_MASCULINE
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u9-odindva-4
+evidenceMode=STATED_APPLICATION
+contrastSetId=u9-i-odindva-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-odindva-x-4
-distractorSourceIds= | prov-u9-odindva-x-5
-distractorDifference= | This form is another admitted form in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+answerSourceIds=prov-ca-u9-agreement-transfer-u9-i-odindva-4-1
+distractorSourceIds= | prov-ca-u9-agreement-transfer-u9-i-odindva-4-2
+distractorDifference= | одна is the feminine singular form; the supplied example with час uses masculine singular один.
+whyAnswerDemonstratesObjective=The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
 contrastMembers=один | одна
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odindva-x-5
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-agreement-transfer-u9-i-odindva-4-0 | prov-ca-u9-agreement-transfer-u9-i-odindva-4-1 | prov-ca-u9-agreement-transfer-u9-i-odindva-4-2
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u9-i-odindva-5`
 
@@ -4474,7 +4599,7 @@ relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odind
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a6cb1a2aede6487625ae7fcbfb0a5857e36eda4695ff287631a03d1dccafd2ef
+- Content hash: 49c39e4591343617279a3806433660256250b04b047ce3780fe6e0cabc13366c
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4482,11 +4607,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=девушки
 options=две | два
 answer=две
-feedback=Does the admitted record show the governed contrast? две.
+feedback=две is the feminine form of two used in the retained phrase for two girls. два is used with masculine or neuter nouns instead. Choose by grammatical gender here; both options express the same numeric value.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other admitted form of two.
+distractorRationales= | два expresses two with masculine or neuter nouns instead of the feminine agreement used in the retained phrase.
 testedFeature=DVA_DVE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u9-odindva-5
@@ -4494,8 +4619,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u9-odindva-7-ru
 distractorSourceIds= | prov-u9-odindva-x-8
-distractorDifference= | This form is the other admitted form of two.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | два expresses two with masculine or neuter nouns instead of the feminine agreement used in the retained phrase.
+whyAnswerDemonstratesObjective=две is the feminine form of two used in the retained phrase for two girls. два is used with masculine or neuter nouns instead. Choose by grammatical gender here; both options express the same numeric value.
 contrastMembers=две | два
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u9-odindva-x-10 | prov-ex-u9-odindva-7-ru | prov-u9-odindva-x-8
@@ -4504,443 +4629,443 @@ relationParticipantIds=prov-u9-odindva-x-10 | prov-ex-u9-odindva-7-ru | prov-u9-
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 52c0118862ca50761ab18ddc6218b7dd3118eea21db1bb0ee61f403641daa688
+- Content hash: b094905fc400cc1bdb1cd75ee8f90171b08f6a1e7cd229712c00faeb8cd25b50
 
-kind=NUMBER_FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=двадцать два часа
-options=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
-answer=2, 3, 4 -> genitive singular
-feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
+options=In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive plural.
+answer=In this basic counting phrase, the noun is genitive singular.
+feedback=The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the one-item line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
+distractorRationales= | The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern. | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
 testedFeature=COMPOUND_22
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-quantity-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-quantity-x-1
-distractorSourceIds= | prov-u9-quantity-x-0 | prov-u9-quantity-x-2
-distractorDifference= | This admitted rule is the one-item line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-quantity-x-7 | prov-u9-quantity-x-1 | prov-u9-quantity-x-0 | prov-u9-quantity-x-2
+answerSourceIds=prov-ca-u9-rule-u9-i-quantity-1-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-quantity-1-2 | prov-ca-u9-rule-u9-i-quantity-1-3
+distractorDifference= | The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern. | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive plural.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-quantity-1-0 | prov-ca-u9-rule-u9-i-quantity-1-1 | prov-ca-u9-rule-u9-i-quantity-1-2 | prov-ca-u9-rule-u9-i-quantity-1-3
 
 ### INDEPENDENT_CHECK `u9-i-quantity-2`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 18329b2790fb9e12d7ae799ee61c4e7c216bd9f1cd2f0f069d5169bb38873aa2
+- Content hash: 4dddf0e457384b2923ec480dfc19a1a9748f0f488c78b8d338c59941bc7d682b
 
-kind=NUMBER_FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=пять часов
-options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
-answer=5 and more -> genitive plural
-feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
+options=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is genitive singular.
+answer=In this basic counting phrase, the noun is genitive plural.
+feedback=The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line.
+distractorRationales= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
 testedFeature=FINAL_DIGIT_FIVE_PLUS
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-quantity-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-quantity-x-2
-distractorSourceIds= | prov-u9-quantity-x-1
-distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-quantity-x-5 | prov-u9-quantity-x-2 | prov-u9-quantity-x-1
+answerSourceIds=prov-ca-u9-rule-u9-i-quantity-2-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-quantity-2-2
+distractorDifference= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is genitive singular.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-quantity-2-0 | prov-ca-u9-rule-u9-i-quantity-2-1 | prov-ca-u9-rule-u9-i-quantity-2-2
 
 ### INDEPENDENT_CHECK `u9-i-quantity-3`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: bf45686398c7b524671271abacd2c144fd844f363e38dfedb7b97e1b19b2dc08
+- Content hash: 7c06031c406e4b220f27e6310d4b18679fa3cc0f604a8b60525d06b3f39126c0
 
-kind=NUMBER_FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=двадцать один час
-options=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
-answer=1 -> nominative
-feedback=Does the admitted record show the governed contrast? 1 -> nominative.
+options=In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is genitive plural.
+answer=In this basic counting phrase, the noun is nominative singular.
+feedback=The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
+distractorRationales= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern. | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
 testedFeature=COMPOUND_21
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-quantity-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-quantity-x-0
-distractorSourceIds= | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
-distractorDifference= | This admitted rule is the two-to-four line, not the rule for the shown line. | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=1 -> nominative | 2, 3, 4 -> genitive singular | 5 and more -> genitive plural
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-quantity-x-6 | prov-u9-quantity-x-0 | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
+answerSourceIds=prov-ca-u9-rule-u9-i-quantity-3-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-quantity-3-2 | prov-ca-u9-rule-u9-i-quantity-3-3
+distractorDifference= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern. | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is genitive plural.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-quantity-3-0 | prov-ca-u9-rule-u9-i-quantity-3-1 | prov-ca-u9-rule-u9-i-quantity-3-2 | prov-ca-u9-rule-u9-i-quantity-3-3
 
 ### INDEPENDENT_CHECK `u9-i-quantity-4`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a4fd5dd6a059b96c64786409c585b1e95175b21500fc1dac8ac8dcdb01bdc52b
+- Content hash: f09826743cbccc066dbbfeb819f156e9a486a5738676827f2446f40da289c9bb
 
-kind=NUMBER_FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=шестнадцать рублей
-options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
-answer=5 and more -> genitive plural
-feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
+options=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is genitive singular.
+answer=In this basic counting phrase, the noun is genitive plural.
+feedback=The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
+distractorRationales= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
 testedFeature=TEEN_VALUE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-quantity-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-quantity-x-2
-distractorSourceIds= | prov-u9-quantity-x-1
-distractorDifference= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-quantity-x-8 | prov-u9-quantity-x-2 | prov-u9-quantity-x-1
+answerSourceIds=prov-ca-u9-rule-u9-i-quantity-4-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-quantity-4-2
+distractorDifference= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is genitive singular.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-quantity-4-0 | prov-ca-u9-rule-u9-i-quantity-4-1 | prov-ca-u9-rule-u9-i-quantity-4-2
 
 ### INDEPENDENT_CHECK `u9-i-quantity-5`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4c24d2bf9324eddb043648f1281dddf97d91457b5dbe74cc28a4f0f49a13c99a
+- Content hash: f31354fe7ab00597a551b573f49077898acf8faa6c3f1277de5ab1bbce811357
 
-kind=NUMBER_FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=сорок один год
-options=1 -> nominative | 5 and more -> genitive plural
-answer=1 -> nominative
-feedback=Does the admitted record show the governed contrast? 1 -> nominative.
+options=In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive plural.
+answer=In this basic counting phrase, the noun is nominative singular.
+feedback=The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
+distractorRationales= | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
 testedFeature=FINAL_DIGIT_ONE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-quantity-5
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-quantity-x-0
-distractorSourceIds= | prov-u9-quantity-x-2
-distractorDifference= | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=1 -> nominative | 5 and more -> genitive plural
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-quantity-x-9 | prov-u9-quantity-x-0 | prov-u9-quantity-x-2
+answerSourceIds=prov-ca-u9-rule-u9-i-quantity-5-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-quantity-5-2
+distractorDifference= | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive plural.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-quantity-5-0 | prov-ca-u9-rule-u9-i-quantity-5-1 | prov-ca-u9-rule-u9-i-quantity-5-2
 
 ### INDEPENDENT_CHECK `u9-i-quantity-6`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: dd27f9d286ed2e2abfde0652f3d6e93bba0d5f0603721720709c14650485241d
+- Content hash: dde691632d01c03d679a413213f4e433946ed0c194e8dfeb119d293052785dbd
 
-kind=NUMBER_FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=двести тринадцать собак
-options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
-answer=5 and more -> genitive plural
-feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
+options=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is genitive singular.
+answer=In this basic counting phrase, the noun is genitive plural.
+feedback=The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
+distractorRationales= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
 testedFeature=TEENS_OVERRIDE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-quantity-6
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-quantity-x-2
-distractorSourceIds= | prov-u9-quantity-x-1
-distractorDifference= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-quantity-x-10 | prov-u9-quantity-x-2 | prov-u9-quantity-x-1
+answerSourceIds=prov-ca-u9-rule-u9-i-quantity-6-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-quantity-6-2
+distractorDifference= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is genitive singular.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-quantity-6-0 | prov-ca-u9-rule-u9-i-quantity-6-1 | prov-ca-u9-rule-u9-i-quantity-6-2
 
 ### INDEPENDENT_CHECK `u9-i-quantity-7`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: fc01a2d3ec2800ef94bc4f2eae8ad35058d3ae9033f8d95fb898d2e32734ef6f
+- Content hash: 81ce8aba90369a6fd85f5d786d033d379dbc6c17f085f33535cdd24f48a205af
 
-kind=NUMBER_FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=десять копеек
-options=5 and more -> genitive plural | 1 -> nominative
-answer=5 and more -> genitive plural
-feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
+options=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is nominative singular.
+answer=In this basic counting phrase, the noun is genitive plural.
+feedback=The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the one-item line, not the rule for the shown line.
+distractorRationales= | The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
 testedFeature=FINAL_ZERO_OR_TEN
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-quantity-7
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-quantity-x-2
-distractorSourceIds= | prov-u9-quantity-x-0
-distractorDifference= | This admitted rule is the one-item line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=5 and more -> genitive plural | 1 -> nominative
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-quantity-x-11 | prov-u9-quantity-x-2 | prov-u9-quantity-x-0
+answerSourceIds=prov-ca-u9-rule-u9-i-quantity-7-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-quantity-7-2
+distractorDifference= | The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.
+contrastMembers=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is nominative singular.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-quantity-7-0 | prov-ca-u9-rule-u9-i-quantity-7-1 | prov-ca-u9-rule-u9-i-quantity-7-2
 
 ### INDEPENDENT_CHECK `u9-i-quantity-8`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5faf8a9aa87c3f6f449a2c6eee4e13db17c65aae5feb25904790a3f393cf3cf8
+- Content hash: 0ce2235b574d5d490d2b9057f0cd9655d3d55959a102c9999a3944752b1201c9
 
-kind=NUMBER_FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=два часа
-options=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
-answer=2, 3, 4 -> genitive singular
-feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
+options=In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is genitive plural.
+answer=In this basic counting phrase, the noun is genitive singular.
+feedback=The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
+distractorRationales= | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
 testedFeature=FINAL_DIGIT_TWO
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-quantity-8
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-quantity-x-1
-distractorSourceIds= | prov-u9-quantity-x-2
-distractorDifference= | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-quantity-x-4 | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
+answerSourceIds=prov-ca-u9-rule-u9-i-quantity-8-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-quantity-8-2
+distractorDifference= | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is genitive plural.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-quantity-8-0 | prov-ca-u9-rule-u9-i-quantity-8-1 | prov-ca-u9-rule-u9-i-quantity-8-2
 
 ### INDEPENDENT_CHECK `u9-i-quantity-9`
 
 - Objectives: obj-u9-quantity
 - Sessions: u9-s-quantity
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ca351b479f67a6c56465c0f21ffddfa6c76001891996a4a95d56fc3650caa42d
+- Content hash: 2fc9953f3972658922a19c840072e83fbfb60f9edb01b1930f48e5d961cf8415
 
-kind=NUMBER_FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=двести три собаки
-options=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
-answer=2, 3, 4 -> genitive singular
-feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
+options=In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is genitive plural.
+answer=In this basic counting phrase, the noun is genitive singular.
+feedback=The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-quantity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the five-and-more line, not the rule for the shown line.
+distractorRationales= | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
 testedFeature=HUNDREDS_COMPOSITION
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-quantity-9
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-quantity-x-1
-distractorSourceIds= | prov-u9-quantity-x-2
-distractorDifference= | This admitted rule is the five-and-more line, not the rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=2, 3, 4 -> genitive singular | 5 and more -> genitive plural
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-quantity-x-12 | prov-u9-quantity-x-1 | prov-u9-quantity-x-2
+answerSourceIds=prov-ca-u9-rule-u9-i-quantity-9-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-quantity-9-2
+distractorDifference= | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is genitive plural.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-quantity-9-0 | prov-ca-u9-rule-u9-i-quantity-9-1 | prov-ca-u9-rule-u9-i-quantity-9-2
 
 ### INDEPENDENT_CHECK `u9-i-pattern-1`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-pattern
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8da2d35f3f50881cb77f866586b6b12855aaec2b062f2c63eb0efdfa26205c5e
+- Content hash: b13b70b81fe528aa6f5080f4f6e6a3505d3640a681cc26818127330a77a43b75
 
-kind=PATTERN_CLASSIFICATION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule applies to the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=три кошки
-options=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
-answer=2, 3, 4 -> genitive singular
-feedback=Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.
+options=In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive plural.
+answer=In this basic counting phrase, the noun is genitive singular.
+feedback=The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the one-item line. | This admitted rule is the five-and-more line.
+distractorRationales= | The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern. | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
 testedFeature=GOVERNED_FORM
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-pattern-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-pattern-x-1
-distractorSourceIds= | prov-u9-pattern-x-0 | prov-u9-pattern-x-2
-distractorDifference= | This admitted rule is the one-item line. | This admitted rule is the five-and-more line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=2, 3, 4 -> genitive singular | 1 -> nominative | 5 and more -> genitive plural
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-pattern-x-6 | prov-u9-pattern-x-1 | prov-u9-pattern-x-0 | prov-u9-pattern-x-2
+answerSourceIds=prov-ca-u9-rule-u9-i-pattern-1-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-pattern-1-2 | prov-ca-u9-rule-u9-i-pattern-1-3
+distractorDifference= | The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern. | The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is nominative singular. | In this basic counting phrase, the noun is genitive plural.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-pattern-1-0 | prov-ca-u9-rule-u9-i-pattern-1-1 | prov-ca-u9-rule-u9-i-pattern-1-2 | prov-ca-u9-rule-u9-i-pattern-1-3
 
 ### INDEPENDENT_CHECK `u9-i-pattern-2`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-pattern
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cf77341930f1ff9c162c17d25a98c50192c832123aa9e55efbba648dcaeedcf0
+- Content hash: ad184ee8f48db385be05ec49bbdcc2514040f06c9a5b181d5f373114d56db5ee
 
-kind=PATTERN_CLASSIFICATION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule applies to the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=пять девушек
-options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
-answer=5 and more -> genitive plural
-feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
+options=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is genitive singular.
+answer=In this basic counting phrase, the noun is genitive plural.
+feedback=The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the two-to-four line.
+distractorRationales= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
 testedFeature=GOVERNED_FORM
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-pattern-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-pattern-x-2
-distractorSourceIds= | prov-u9-pattern-x-1
-distractorDifference= | This admitted rule is the two-to-four line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-pattern-x-7 | prov-u9-pattern-x-2 | prov-u9-pattern-x-1
+answerSourceIds=prov-ca-u9-rule-u9-i-pattern-2-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-pattern-2-2
+distractorDifference= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is genitive singular.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-pattern-2-0 | prov-ca-u9-rule-u9-i-pattern-2-1 | prov-ca-u9-rule-u9-i-pattern-2-2
 
 ### INDEPENDENT_CHECK `u9-i-pattern-3`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-pattern
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9555fead4b169d80c5190bd53243011271ac3a1cabc4447223a6693674e18682
+- Content hash: c775d6bd3995c73ad5cd8b342252b48900838800fd0bef9f79182d3bb44da25c
 
-kind=PATTERN_CLASSIFICATION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=шестнадцать рублей
-options=5 and more -> genitive plural | 2, 3, 4 -> genitive singular | 1 -> nominative
-answer=5 and more -> genitive plural
-feedback=Does the admitted record show the governed contrast? 5 and more -> genitive plural.
+options=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is nominative singular.
+answer=In this basic counting phrase, the noun is genitive plural.
+feedback=The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line. | This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
+distractorRationales= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern. | The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
 testedFeature=TEENS_OVERRIDE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-pattern-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-pattern-x-2
-distractorSourceIds= | prov-u9-pattern-x-1 | prov-u9-pattern-x-0
-distractorDifference= | This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line. | This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=5 and more -> genitive plural | 2, 3, 4 -> genitive singular | 1 -> nominative
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-pattern-x-8 | prov-u9-pattern-x-2 | prov-u9-pattern-x-1 | prov-u9-pattern-x-0
+answerSourceIds=prov-ca-u9-rule-u9-i-pattern-3-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-pattern-3-2 | prov-ca-u9-rule-u9-i-pattern-3-3
+distractorDifference= | The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern. | The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
+whyAnswerDemonstratesObjective=The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+contrastMembers=In this basic counting phrase, the noun is genitive plural. | In this basic counting phrase, the noun is genitive singular. | In this basic counting phrase, the noun is nominative singular.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-pattern-3-0 | prov-ca-u9-rule-u9-i-pattern-3-1 | prov-ca-u9-rule-u9-i-pattern-3-2 | prov-ca-u9-rule-u9-i-pattern-3-3
 
 ### INDEPENDENT_CHECK `u9-i-pattern-4`
 
 - Objectives: obj-u9-pattern
 - Sessions: u9-s-pattern
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: dc3e4f8980fa163081d7afdea4908773efeb35d305af6e9641d02a7a1580906e
+- Content hash: 890d48dd40515f13dc761f5ccffe86bdc5234ad89e0aff00f2c09060be8c59c2
 
-kind=PATTERN_CLASSIFICATION
+kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted scope sentence covers the shown line?
+prompt=Which complete case explanation fits the shown example?
 promptLetter=Я видел двух друзей
-options=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined | If the item needs to be in the nominative or inanimate accusative case, use the following rule.
-answer=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined
-feedback=Does the admitted record show the governed contrast? When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined.
+options=In this line, the animate object is accusative and both numeral and noun are declined. | In this line, use the basic nominative or inanimate accusative counting pattern.
+answer=In this line, the animate object is accusative and both numeral and noun are declined.
+feedback=The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.
 objectiveId=obj-u9-pattern
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted sentence is the other scope in the frozen paragraph.
+distractorRationales= | The basic nominative/inanimate accusative pattern omits the animate accusative object and declined numeral in this sentence.
 testedFeature=GOVERNED_FORM
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u9-pattern-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-pattern-x-3
-distractorSourceIds= | prov-u9-pattern-x-4
-distractorDifference= | This admitted sentence is the other scope in the frozen paragraph.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined | If the item needs to be in the nominative or inanimate accusative case, use the following rule.
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-u9-pattern-x-9 | prov-u9-pattern-x-3 | prov-u9-pattern-x-4
+answerSourceIds=prov-ca-u9-rule-u9-i-pattern-4-1
+distractorSourceIds= | prov-ca-u9-rule-u9-i-pattern-4-2
+distractorDifference= | The basic nominative/inanimate accusative pattern omits the animate accusative object and declined numeral in this sentence.
+whyAnswerDemonstratesObjective=The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.
+contrastMembers=In this line, the animate object is accusative and both numeral and noun are declined. | In this line, use the basic nominative or inanimate accusative counting pattern.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-rule-u9-i-pattern-4-0 | prov-ca-u9-rule-u9-i-pattern-4-1 | prov-ca-u9-rule-u9-i-pattern-4-2
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -4959,6 +5084,7005 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=6
 searchTerms=units 6-10 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-9-35`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80196129dd9027c63c8ad38678a27f8531b77cad4f1177d5c445711785da90d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:u9-st-teach-cardinal-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-9-36`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 677b6ffff66361b4c8d49b659db8d4d85b63953c90449dbf00eed334a3060c56
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:u9-st-teach-teens-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-9-37`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 467f2222efce08a66eeb9b0c3fa3035e6b5e6666bfd10a0240ffdfaf08a56d0b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:u9-st-teach-tens-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-9-38`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7a61e41ad7047fc54bc7c978fbf46397c86a5a6ea8ff4f946c25ef152666331
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:u9-st-teach-hundreds-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-9-39`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8fdcd274d4c29ee2880dde848d436431fa61fa3661c00da0b61d4477cbede72
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:u9-st-teach-thousands-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-check-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8388084624f6b555335a7e72983a8b38053d802578d97865fbc9e190c71eb080
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:check-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Choose the supplied form of one or two for the noun and counting context. A missed check returns to the complete explanation.
+shippedText=Choose the supplied form of one or two for the noun and counting context. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=579e4339757b6f427aa238e889d95a412a7d761feb039fe084a74f86fdcc0d53
+contentHash=38ef348d4397bb83427d770150d14261c3ba36cda0f89cb4d1b48686c107aaee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-guided-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3eecce3962c253f617838330b9a70ce0563b947a8a44362c3beddf6bd372ee80
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:guided-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Choose the form of one that agrees with the shown noun in the supplied counting example.
+shippedText=Choose the form of one that agrees with the shown noun in the supplied counting example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e6fdffc994a139b319d75f13e9128f3959fff566d13ca859ae873bee0ea87a20
+contentHash=e6debb6c11a655babd836b670da2078397c718fd77491c3caec4fe4cc7da3b2c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-item-feedback`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d44ebbe6d9a0f843b1e20e2be6836543af650729e6ceb8b996d61260f9de0332
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:item-feedback
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
+shippedText=The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=089dfd07fa0f8bf1f777123b5e9cc6264a9ff7e14ecb8e82675164c6c39e3df3
+contentHash=4dcbea794a4765c9eb7a9239ae8521d255b4d58f7ef61c7113a62045a8f14b4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-item-prompt`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4890606a1ac6d3f2d35fb8fc174de996e27317373b632f8cfe3e7ca572bde38f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:item-prompt
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Which admitted form agrees with the shown word?
+shippedText=Which admitted form agrees with the shown word?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=decd5340f36e36d08f73329ed28dd37a3e0b02c1b3aeaacdc64c549659dae53b
+contentHash=cfc874bbdcb4fdce91ce67b3ebfb2d74e8180162e3b2ce83da3bba96a3b0b2df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-item-rationale`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70bbddca618a58b625910eb0798f2b55754344b9360a535685c2d46d2f158056
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:item-rationale
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+одна is the feminine singular form; the supplied example with час uses masculine singular один.
+shippedText=одна is the feminine singular form; the supplied example with час uses masculine singular один.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e7a5d5ca798c97b60a4d896df11adaf0fad94b02ee4209f6c7dab92c79090f8b
+contentHash=52b2171f9e838ecf534bf331f4514324ee0f854b794566f49756bc3f20d19656
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-remediation-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a00b385cb31c29adef7bcec9e5dda7ddd16ae00de1e2e6cce0d90e3a5e0a0365
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:remediation-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+
+два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+
+одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+
+одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
+
+одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+
+оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
+shippedText=один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+
+два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+
+одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+
+одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
+
+одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+
+оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6b54290d4e23752a566a32407b10c633a8476d9162620d1336660dbf9becabac
+contentHash=9d0cab493fac8091fca42d31b9bfc0c482ec038bdab1d918721e3dd42cbdcc19
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-1-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65dbccf71dfd8ed0b895cdf53c4aa73d09c53d99eb0e93a7129fb36dd2be2fda
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-1-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+shippedText=один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3fac2434b91892402076e0bbb2767ec5634da92cc1207ba5dd2643468318be0c
+contentHash=eb34886ef3c0e54cb3d3dcdef754d8778691c205da283cce18b1e1b9b3360f6e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-1-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31328d438a9f27c2b8e0dc697b92beb9521f3860b1c878b5ca935401812efaf7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-1-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Choose one by gender
+shippedText=Choose one by gender
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=78f14d6f11621639bb55625b37844f96eae70703b8ea3f22903a41aeec55fa78
+contentHash=bd1885d3081d5cefc157eb4a0fa416a8fbfb148274064c81f85e83e5b18cea30
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-2-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 034e6718ee0e94c2b056ef811a1a5fdb0da0b36a498ed85375b648a691d20dce
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-2-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+shippedText=два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4a1cb4e87e81ffe60126c9de9e48593c32be086fc6efb9d8e8bd60948e3ae31
+contentHash=e851efcac53b275f5c6bbedbfbf7a1c2332831a9681d0c464f3ec7b05cd1b771
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-2-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9891638e699bdc8c1e25326a8df877feedfa174fe8e556408f1ecca5d1d188c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-2-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Choose the form of two
+shippedText=Choose the form of two
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c977b3c97d5efacc68a6d024c0eef445a138d798e65627cce2bc166d9b7af3c
+contentHash=a018dcbff67283a4a665a276d1913a45b1bc94a933bd671d4c4b6b9bd8829e71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-3-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7693f67cbaff8fcf294073a3df596a6a09f32539dfcda4d594401cc1bc35da59
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-3-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+shippedText=одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a47acffc31a23d1b4de6f5fc897be9c669bb2f47b2bf43887b1ae8220673eb47
+contentHash=f32c99344bb7972ff98606de2cf1fab96529b81122de0eefa7f7d2d2f750a153
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-3-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40454e5c22d4bc44a48c43f295fd0ff2fd4f550e2f2e083048119fa06be41569
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-3-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Recognize neuter and plural-form one
+shippedText=Recognize neuter and plural-form one
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1aa70523b38d2816f6139058b1b3ccf966b21849e63bcd3f50aecbad1181d8d7
+contentHash=412e15971c2dd030c46e8f8b679727c4bdd10e0f54e1d125f0bb753e5f224148
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-4-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5bfd712daca83dd670cbbc70d01bbeecb203949136afc8be30dfd7f868fec8c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-4-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
+shippedText=одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6ba651db5956316c41792ec7c4ed79cc8f4b4305500cf15de7e31c6b990c3158
+contentHash=e0b17c12aaa51b0700be2ff19ce891b4e9053363c3696ebad913b2f8faf77641
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-4-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7330f52e1fac27bcccd9a2a09d083965524faa0fed6063c0eaca8fdfcf600b4c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-4-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Keep the value while changing agreement
+shippedText=Keep the value while changing agreement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=15a12fb1008df27583b239fde8475bb8507f6ba6b84324c1bb0b7515a27d196d
+contentHash=1185c660656b652bf112d1af67ddb70c1bb964b5d8d086397872932a03d00ae8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-5-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7fecbbada33f41ce4e14cd06c9dd0c9d45afeea110dc601f749d85a1efba6ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-5-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+shippedText=одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba0cf65cacad7ea693c650e49a795f9dbe4699d53f8b6b7381c7e4e6045b5af1
+contentHash=53a7e841798205278f93083bc80c131e27482792506cd5cda2b7a0a49d46e05f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-5-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50e3abe08aa0ada34c9e0b36e88077abc69bb7a23363cded9df758e0dc0ac64a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-5-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Distinguish plural one from feminine two
+shippedText=Distinguish plural one from feminine two
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=965ba926036991b18669d2cb13fe00be7ad851f053a8b17081cc39a24588ef3f
+contentHash=18720da22af9628f92d10e4c205c95942b4318ba0f266be556767f522bbcdef4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-6-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e8cfeef40aecacc948d329c19b86b5e7730a41f2901f0eed99ae19debe1d02ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-6-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
+shippedText=оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b14e3b7bddd161bfd423ab3d23df76d9ca8add06b9737145c77b1096fc3ae746
+contentHash=96b8429c9b05adc1f4232e2812924ad57a40a560929ae2a6797f8fa164407eee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-6-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03de06ab9ef599cf8e2e3137e78db639f7f41a9fb5125f2109dd03a31c884100
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-6-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Apply masculine one to a different noun
+shippedText=Apply masculine one to a different noun
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=55d69caf8881c487d40c02966651c6bfbf5f298390cc136095e745c568ba77df
+contentHash=b400663b3d5d38acb128bc71e682fdc1ce0166c297972f2cb569a78abfaac439
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-0`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd651d5910a530c4ce8c46612858d3b9ea00c4163d4db8ae2e5a04e3812c9413
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-odindva-4
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+==Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+Context explanation:
+The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
+Tuple-v1:tuple-v1:1;6:час8:один1;8:одна
+shippedText=час
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0315d56ca1515ed2adec087f8fbaea9c4f2de720bef39caecaea3a2870e4a44b
+contentHash=3b717961ddfdfb919640a578d8ddb5b267fe8ece1b63aba1a1d98a589c07c7e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-1`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3aae40fe8d85fe321f78fcf81261b7028b5e5c16507e147081c34e1d517db1a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-odindva-4
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+==Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+Context explanation:
+The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
+Tuple-v1:tuple-v1:1;6:час8:один1;8:одна
+shippedText=один
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0315d56ca1515ed2adec087f8fbaea9c4f2de720bef39caecaea3a2870e4a44b
+contentHash=c5cffb9e60232cdf6f395101a5987dcb1b5df343397604bfeca92cba411c784f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-2`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27d5fe1b8952b052f21acc44967150e4aca2b30452eda832a0853b2de9173cf4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-odindva-4
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+==Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+Context explanation:
+The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
+Tuple-v1:tuple-v1:1;6:час8:один1;8:одна
+shippedText=одна
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0315d56ca1515ed2adec087f8fbaea9c4f2de720bef39caecaea3a2870e4a44b
+contentHash=4e469ca0a530b26d9b812df7a459753ef09873ea5aa9de32046b20b230d16bb5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-g-odindva-0`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c290d35672d5e650009baed9acfcd5fc464c29e37fbc43f9af75ae7dba98711
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-g-odindva-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+shippedText=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=140cf564d53c7ec9cf6c255063e3e36c3a5ebed4138a868f65b0c7beced7ba55
+contentHash=e7369ed9e32abf245ae9dde01b98487f7c730bcfdad5699842f5c5638c3a2096
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-g-odindva-0-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 154e31d8bd73e9572a786a638e5e4b597871dc46a77220a4960b116341bf21ff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-g-odindva-0-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+shippedText=одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b37cfea1e1c035f7192c75427099845efa2c51434819dc213ac39baf5970eba0
+contentHash=81b235475917ab82250ccee4626a03540fdc4ab5e3bb708df9447033494f4ecc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-g-thousands-0`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d374afe144b8692d3a6b48a3c7e0093fcd19ae5a90f74b5ccf5da9950bd6479f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-g-thousands-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два́дцать оди́н represents 21: 20 + 1. The other option gives only 20 and omits the final unit.
+shippedText=два́дцать оди́н represents 21: 20 + 1. The other option gives only 20 and omits the final unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cdde8f88ee7e312f5f4c9e0deb79fe15d48b53e142c5257a3d7c555746f31481
+contentHash=4da097c6a54226ed80b20814b952c098122fb524f226da0d2d40a40227636bce
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-g-thousands-0-distractor`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4021cbf26a8196d5be575b6d45c1e326ab2e6d2357d2bef87774c5975f36297b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-g-thousands-0-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shorter option gives 20 instead of 21; it omits the final unit.
+shippedText=The shorter option gives 20 instead of 21; it omits the final unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fd1a1fc5e69bb9f58e32b3b93d3485a63564756576f6f297189ddda67ffb7309
+contentHash=6cdaac597e46bb9ca45cbe59d46a1614f5370a2a9d8817f15f67537dd75d2130
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-1`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2dd549ca4ca3ae1b9b5e0dd11e65f4cd22eb861becb0e102d859a97490fe1e08
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+одна is the feminine singular form of one and agrees with the shown word for girl in this example. один is masculine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+shippedText=одна is the feminine singular form of one and agrees with the shown word for girl in this example. один is masculine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0f338d4b0c9998c844fb0bbbaee13d012203da4207327674cae27ffdb4dbf25
+contentHash=0fc025a39b3945ed6d22ac5b61fbc042a3e81434968f7c4461bb7450c88894b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-1-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8cd516c40216201145f6734953cf88cbaf818a4df83bb86625820fe9b0efbb50
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-1-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+один is masculine singular instead of the feminine singular agreement required by the shown noun.
+shippedText=один is masculine singular instead of the feminine singular agreement required by the shown noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=810a49273ea2311cc75eaf33e94238b5175cf106c9cbcb9b0325a704f58545e5
+contentHash=c12b331fe93730335571be59e7e55e22bf8a3bc39f6934fd3a429090cd0031fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-2`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef3099e20a8a1e195d77ef1a0c102b0fbfef01ff0a042430840a4f2a45c64499
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+одно is the neuter singular form of one and agrees with the shown word for animal in this example. один is masculine singular instead. The retained lexical row classifies this noun as neuter; choose by that grammatical gender.
+shippedText=одно is the neuter singular form of one and agrees with the shown word for animal in this example. один is masculine singular instead. The retained lexical row classifies this noun as neuter; choose by that grammatical gender.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=23aea22fc0f6c64538267a88cef286b8010436a5d9428116f1b1343f484bcc7c
+contentHash=1cc1baa7ccd67631722800518bd46c9a40523543199f9f8d8271881cc3472be8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-2-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bca78eb2875c070f55ca26f179714d1d6e5da770b3377b0596289dee6653a5c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-2-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+один is masculine singular instead of the neuter singular agreement required by the shown noun.
+shippedText=один is masculine singular instead of the neuter singular agreement required by the shown noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab778607055e397bdad943e9b03c2ba923f85988856ce4b5eb416bc6046a8871
+contentHash=2f1fe365ee24c5b9bc93204566086090d276f64c5cd061a8fe337bfa4fed167d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-3`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e2812c75f5935ab0e0c68e445233860be48ba987df28f11de691e841a3faeba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+одни is the plural form of one used with the shown word for jeans. The retained example means one pair of jeans; plural grammatical agreement does not mean several pairs here. один is masculine singular and does not match this plural-form noun.
+shippedText=одни is the plural form of one used with the shown word for jeans. The retained example means one pair of jeans; plural grammatical agreement does not mean several pairs here. один is masculine singular and does not match this plural-form noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f6bf7b8a4a319908513f16736629cec1a5f354c69b7405ed12c94d917ebebab6
+contentHash=5973706584ab8eeab230e24ca059743ac583d6fdf3a43f5c5728e708600294fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-3-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d7f6fa7d373b239aa08e73ded24b2433098fab877e991b3f9821af4cca3c3e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-3-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+один is masculine singular instead of the plural agreement used for one pair of jeans in the retained example.
+shippedText=один is masculine singular instead of the plural agreement used for one pair of jeans in the retained example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29effb68285ce27405d14badc66b444b16b178f80a1df2c2d9fde3515d2af8ab
+contentHash=fa8a9e00daf355bef8d45da719e93815c81489aeb6637b777028a66c72e02a2d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-4`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a44d3a6cd12b8de478cda086be64d13ac5e51f34a45ae60bc74a794cdf74d32
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+shippedText=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=140cf564d53c7ec9cf6c255063e3e36c3a5ebed4138a868f65b0c7beced7ba55
+contentHash=e7369ed9e32abf245ae9dde01b98487f7c730bcfdad5699842f5c5638c3a2096
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-4-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9677909d020a7d7867ff80f7d4193f6f15b06c2902be99a146ec6ed36caa2e0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-4-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+shippedText=одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b37cfea1e1c035f7192c75427099845efa2c51434819dc213ac39baf5970eba0
+contentHash=81b235475917ab82250ccee4626a03540fdc4ab5e3bb708df9447033494f4ecc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-5`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7fc7fda37ef15eb1212e7a9570761dd76e118ed930b4dd2a7bcc96e976ec745e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-5
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+две is the feminine form of two used in the retained phrase for two girls. два is used with masculine or neuter nouns instead. Choose by grammatical gender here; both options express the same numeric value.
+shippedText=две is the feminine form of two used in the retained phrase for two girls. два is used with masculine or neuter nouns instead. Choose by grammatical gender here; both options express the same numeric value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eb05db93e2134d4522deffcb5670f6d605e30b4878bb6e4338dcd6cb83c138ea
+contentHash=d4ae0413e60d56f5a7a74fad64ad6d13d6afab6c687bd1a0fd069dcc55140bda
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-5-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9baed80558a1bf122e9cf41365e4a5ce1fe27f03fcf2c876d3dbf6f74c128b6e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-5-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два expresses two with masculine or neuter nouns instead of the feminine agreement used in the retained phrase.
+shippedText=два expresses two with masculine or neuter nouns instead of the feminine agreement used in the retained phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad56023db2534b025477ffefd6bd208e3d6945a90fec819728f676ec2f43aa73
+contentHash=5213ceada1994134862410fb0ebbebdcfa2ab2a68d92a5f0030c6d6d2427625e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-1`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c5c647be6235d6ba064068d0adeb590db33237f9160efef7e59ae2a709494af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сто оди́н represents 101: 100 + 1. The other option gives only 100 and omits the final unit.
+shippedText=сто оди́н represents 101: 100 + 1. The other option gives only 100 and omits the final unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=553955c18ba650c202d290ed5b32100ba1dd1807283783378936801c9026f82a
+contentHash=f1a50cae2bb90aa5f1d33c2889772ffc308896c54dc5e8f18dbd06dc2d33df0e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-1-distractor`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7f639903c944b5f1b3fff9468b51d918202d230b7f9575a6571d65133e083ab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-1-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shorter option gives 100 instead of 101; it omits the final unit.
+shippedText=The shorter option gives 100 instead of 101; it omits the final unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0df40e262031aa1a884cb37a7999a63b011d16475fbbcea0d7839e7bf955ce0c
+contentHash=d3728898eee278e809d1e5c6af32361e604d572eb8b0226218949c1bb6915994
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-2`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f32cdf25827b46e4408d9fb86248f4a8f7977eb6d8f5dd684028aec0f6c9c2ea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+две́сти пятна́дцать represents 215: 200 + 15. The other option gives only 200 and omits the final fifteen.
+shippedText=две́сти пятна́дцать represents 215: 200 + 15. The other option gives only 200 and omits the final fifteen.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=59a5b8587c790f1e486760ee02ed0cd8dd514e465ca03b238666fda1b1884d21
+contentHash=d27bc05ce6734ba287cd49e3ab98ba125a6841b3809fd07ff37445d33f800b83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-2-distractor`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bbc94d5862181a6ed24344d64c54223bae0d33bfb214ba84bd2c345e0af8440
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-2-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shorter option gives 200 instead of 215; it omits the final fifteen.
+shippedText=The shorter option gives 200 instead of 215; it omits the final fifteen.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2c86559d8c3d988930048123edf8437112e3a095149c41d7be13fdb5b8653807
+contentHash=a1321fe0803ef77d32bde0e741e5b562e3c7556fb1f90903a284a80980afd1cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-3`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 017fd86d20e5f6a31df6b6961c3c089c351ffe6638a8c1bf4775b35ec32e8fe2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+ты́сяча девятьсо́т во́семьдесят четы́ре represents 1,984: 1,000 + 900 + 80 + 4. The other option gives only 1,000 and omits the remaining 984.
+shippedText=ты́сяча девятьсо́т во́семьдесят четы́ре represents 1,984: 1,000 + 900 + 80 + 4. The other option gives only 1,000 and omits the remaining 984.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3a44390aaada64e073504c61d3d6c229401c9edd649d58dd16783af332cb9e19
+contentHash=761aacc504537276d819b4fc85bcf1a4f571908a37989872c45a2e78c76a9f84
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-3-distractor`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae428cd1aed4a061f3a18303846b2d96047959fb7f0e7f19fbb395edd77e0358
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-3-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shorter option gives 1,000 instead of 1,984; it omits the remaining 984.
+shippedText=The shorter option gives 1,000 instead of 1,984; it omits the remaining 984.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4bf8ab14451689e83551deb7f8fcd58ae549e039d168461a2364fa20a10c0fb7
+contentHash=13d78be6519807b7a5479e94e66edbf8b3bdb75f5dbf7a0d511e3c8b7da7d662
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-4`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3af4a0d3807f8a100990b9e38938a2e4443fe89ea811a1ec71c86657afd7dd3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shown group counts two, three or four thousands. In these whole-thousand examples, the counted word for thousand takes the genitive singular. The other option counts five through nine thousands and uses the genitive plural. These examples use the basic nominative or inanimate accusative counting construction.
+shippedText=The shown group counts two, three or four thousands. In these whole-thousand examples, the counted word for thousand takes the genitive singular. The other option counts five through nine thousands and uses the genitive plural. These examples use the basic nominative or inanimate accusative counting construction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f295f1f445aaaaf524faf7f95f9efa5481a7dfb7d4c0243028bd7af6aa20db8
+contentHash=1c498660caa5cac0ab5d9cd1517cdcca1dcee3d899f915f8cbf67340ef953aaa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-4-distractor`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09af2abae9907b202e76b99df56afffe89ea18aa4f21763c0c0d49be26b04220
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-4-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The other option counts five through nine thousands with genitive plural instead of the shown two, three or four thousands with genitive singular.
+shippedText=The other option counts five through nine thousands with genitive plural instead of the shown two, three or four thousands with genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03af9e9f495f51c439fff310eb38d818ceb50773b2e9732fc74c60bf098202fa
+contentHash=b99ac977a8adaf4a9be2275d3b8863b26554ec51643ae68fa2fa11e89aaf5f99
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-0`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d8525c6653f3625b544111756c94ccce87fe4c321b70988fc85bd94b3daf3a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-g-pattern-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=один час
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a
+contentHash=914759c18921b7f23fa9d6be1c98f1b919a4ffb271c6b44b9219ab8e26b13fe3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5c1b6730d2056e6314dc87877346297f05ff5218394f07cb9c80ad5cf832c05
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-g-pattern-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is nominative singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a
+contentHash=b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-2`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d9ff76d151f5aa24952ea4545f6a701954fe1aae9be16e90859ec4315689fcb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-g-pattern-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-3`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2d376feeb6d803fa9153584e3eaf2902cfa725ed2ffaab6aa096385c5d117af2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-g-pattern-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-feedback`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb824a1600a75a56e1f80503cd0316fe72cd493641be40ac7c5cca88e1a51479
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-g-pattern-0-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfb4495232d7c91d60642e91c48cbaa2cc2b831b2ec654f91585a8f0479b517d
+contentHash=73c09ca091237c9f9570dbe1ae8fa8dd915c4783d0acd9cdb696ccc7d4efe8a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-prompt`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f03c29e3fc011d253d2abfb8b2f81f69acf99c6e37055ce28117a207fe24e00d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-g-pattern-0-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-rationale-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19d0456ee8a512253d0df802c01be8a02e657779c243be8e98aa3d763cf915dd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-g-pattern-0-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f09a0473c7b93dde0d33e90aa8876c538a508cc7a8c55e3f116727f126259f9
+contentHash=cc067f6646a554ec5655d8d0583e887eb16005eb51c32a14f0ac7edbf6fafb4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-rationale-2`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd8fb7343e1b8d24a762336e00bfc78ed6b1b8d0aa3455acd97673ff637273d5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-g-pattern-0-rationale-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5474be917d87f4a26cecd46ba1efb058e58732be26b83b76d8b9842edd015bd5
+contentHash=9d2bfcbc044ae4bef880f09ae71b95533db61386b49856722f30c26bd48f81da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-0`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd9f76d800a2675c4b341d92348b01aab9f32dda6f2ff45ed5bd7035aea12a15
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-g-quantity-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=один час
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a
+contentHash=914759c18921b7f23fa9d6be1c98f1b919a4ffb271c6b44b9219ab8e26b13fe3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47d1ad6c4de6353eb67f27227dc4f32f6e3336839a022f38ae3296ef3e1938e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-g-quantity-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is nominative singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a
+contentHash=b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e47098ea593fcb3f3fefd6f78c301822a169a78908bd4ee78440cc023473438f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-g-quantity-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-3`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e366267bd547232cae54daf44328e4534056a4f989e1146f579a10d9374ef29
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-g-quantity-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-feedback`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d6193b3ad6c85ff1c056a5942b1a74b6d1b1b1406b4e422d6a634fbc1901f839
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-g-quantity-0-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfb4495232d7c91d60642e91c48cbaa2cc2b831b2ec654f91585a8f0479b517d
+contentHash=73c09ca091237c9f9570dbe1ae8fa8dd915c4783d0acd9cdb696ccc7d4efe8a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-prompt`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef8739bbca4187845fc3116f170e57529bec1483ebf89edf692b2c96415f68db
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-g-quantity-0-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-rationale-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be9792c2774fee19fef0139471172ac211095157ca6c943f422b74b523e85255
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-g-quantity-0-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f09a0473c7b93dde0d33e90aa8876c538a508cc7a8c55e3f116727f126259f9
+contentHash=cc067f6646a554ec5655d8d0583e887eb16005eb51c32a14f0ac7edbf6fafb4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-rationale-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8823c7fbd9af46f3bf220f90a9245b5070b36246866caa120f8209e29e7f0e8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-g-quantity-0-rationale-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5474be917d87f4a26cecd46ba1efb058e58732be26b83b76d8b9842edd015bd5
+contentHash=9d2bfcbc044ae4bef880f09ae71b95533db61386b49856722f30c26bd48f81da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-0`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e0cc6e60a3fd4924501f72516b51bd9f56cd422e746a8e7b6e1f29c1adea135
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;17:три кошки61:In this basic counting phrase, the noun is genitive singular.2;63:In this basic counting phrase, the noun is nominative singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=три кошки
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b
+contentHash=c9112ceafd474abcd6eced8d52d2b5acce7f1ec3243ab6ab81fb0780acd93043
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e10080edd932084523011f84e07c6e34ad6e78c46376220453fe5cc4b83f1ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;17:три кошки61:In this basic counting phrase, the noun is genitive singular.2;63:In this basic counting phrase, the noun is nominative singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-2`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80bd1371ec27dc24fe69b8b96f887dc4f8fe2bfecfe81afd65edea558ace5eb7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;17:три кошки61:In this basic counting phrase, the noun is genitive singular.2;63:In this basic counting phrase, the noun is nominative singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is nominative singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b
+contentHash=b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-3`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3785492a8d8207b3ed6dda11e4910d3225b885d544b388b139d112764f9e72f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;17:три кошки61:In this basic counting phrase, the noun is genitive singular.2;63:In this basic counting phrase, the noun is nominative singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-feedback`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4062fd625515488404bb296b05314bcccbbf07fae3aac20d778b5cdf9f162cdd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-1-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=87195860bb3a3133f6f08e02b43732a8d11ddf8eb4da0d37d713023528bc42de
+contentHash=229c037cabacde225b83c08ffc0f6bb42c6e61dcc53885a637611be111fca6cb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-prompt`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ccee2c8cb4e242742f871c5fcb1420b50f0ddf3366cab8b8ad9724c1c9fb3d7a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-1-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-rationale-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d6ea2b61580e06e7976434fe17ed224c83cd2ea96608c0e2da323fd34e60cb28
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-1-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
+shippedText=The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ac8e754e5fb44ae038e4c433e6db15bee79947d80dda46a5031999ea79cc3f80
+contentHash=a1296939c0c3482de49b63f0b5ce53d8eebffeed58d6a4d3a73e757c6ef46f13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-rationale-2`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 310c67a8a232f1db565f77cda41be52a88b12e1045be5cb9dffc5ebf6074b58f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-1-rationale-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5474be917d87f4a26cecd46ba1efb058e58732be26b83b76d8b9842edd015bd5
+contentHash=9d2bfcbc044ae4bef880f09ae71b95533db61386b49856722f30c26bd48f81da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-0`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa4440d682881807b9f36174d6b002f7f778d4c85ae905c5fb8379faa835baa3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;23:пять девушек59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=пять девушек
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358
+contentHash=e4c87b9100f8ca3c3365928e83236cad3bd0636b45d00c3f9dedec28ffa0498b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 987e898e342fe529f6dfc223193063df840b09f99fd0e1b2c83638e43675a5fc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;23:пять девушек59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-2`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ffee5e9f1668e57cce111159b272272f396ece548127aacaa27cd210c152152
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;23:пять девушек59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-feedback`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6337b2d8f2e99c87d3f9d3d3c6fea2369dc18a42dce251086afe9a22671b98b4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-2-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dec8d4cbe33ed591b32cd8e7850d53e1739926815d95ec02ffc5871705f5b3f5
+contentHash=cd46c41a8a6fd66911699c65720acd097a79e35fbd0a7593709f2ae394356f6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-prompt`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72be9be6dc7c7e23b7f04ee80c0e917ba08e9f92a0cab7028ef5f21a2ef077f4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-2-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-rationale-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af32f3d915478a121fc14e7e650a0b6e221cb3b1fc61fda9a9f66ac3d05aa80b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-2-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f09a0473c7b93dde0d33e90aa8876c538a508cc7a8c55e3f116727f126259f9
+contentHash=cc067f6646a554ec5655d8d0583e887eb16005eb51c32a14f0ac7edbf6fafb4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-0`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f012407711499e679d90d855901c86bd1cd58ad8b136d9e99a706ca30e503229
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;35:шестнадцать рублей59:In this basic counting phrase, the noun is genitive plural.2;61:In this basic counting phrase, the noun is genitive singular.63:In this basic counting phrase, the noun is nominative singular.
+shippedText=шестнадцать рублей
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104
+contentHash=35a086e48347adc9066dca35a5970138aa5c4fde39b647171c05275a1b5d50bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3954b6b0a3bd5132b0f242ef0c7972a53aaa73b7574af265c795e7292741797
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;35:шестнадцать рублей59:In this basic counting phrase, the noun is genitive plural.2;61:In this basic counting phrase, the noun is genitive singular.63:In this basic counting phrase, the noun is nominative singular.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-2`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f57d73efe00e4e9179b76d40d726167e486be2d3002c7373c6a63ac1397766d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;35:шестнадцать рублей59:In this basic counting phrase, the noun is genitive plural.2;61:In this basic counting phrase, the noun is genitive singular.63:In this basic counting phrase, the noun is nominative singular.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-3`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a23fd45f8948646ca4930c59c39df28b5cd8ff071e4c92018a7e11515e7fd37
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;35:шестнадцать рублей59:In this basic counting phrase, the noun is genitive plural.2;61:In this basic counting phrase, the noun is genitive singular.63:In this basic counting phrase, the noun is nominative singular.
+shippedText=In this basic counting phrase, the noun is nominative singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104
+contentHash=b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-feedback`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7359fee11def0721146dc629d655759f1c167d8fc6ed612d0efada98e3d94b8b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-3-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=891f0ef3bb6850dc0a68d434d17533fb917dddb0c456eb3090e057c203640ab4
+contentHash=e480e2ea48522bc400a29653f845885b6bd2759dffe1be99470d5afcdf36a92d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-prompt`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cc0eef555af83576b01d0de2827fdeadc61cd960bc798ee8b76ed9b4584c794
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-3-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-rationale-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da300a111b4d366bd60feef507821ecc8d1f81799c25a5747faaea471968bb49
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-3-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f09a0473c7b93dde0d33e90aa8876c538a508cc7a8c55e3f116727f126259f9
+contentHash=cc067f6646a554ec5655d8d0583e887eb16005eb51c32a14f0ac7edbf6fafb4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-rationale-2`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d6fe70fd059acf7f04344ab70c1d99a711adfbda4c5fa4f1f0d7875ebe9ffa5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-3-rationale-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
+shippedText=The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ac8e754e5fb44ae038e4c433e6db15bee79947d80dda46a5031999ea79cc3f80
+contentHash=a1296939c0c3482de49b63f0b5ce53d8eebffeed58d6a4d3a73e757c6ef46f13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-0`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b24983b4123286c98eead3485fc0a5eea739d9b692edec66514f3fbaf2ce3aea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.
+Tuple-v1:tuple-v1:1;35:Я видел двух друзей86:In this line, the animate object is accusative and both numeral and noun are declined.1;80:In this line, use the basic nominative or inanimate accusative counting pattern.
+shippedText=Я видел двух друзей
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8d56873c882a2014e2dcf857c9562428754d792439c78a44ad661009309fa5cf
+contentHash=6ec2184264f7d117a594231af4caf40aa4f2d2bc1436def1bf5254c4fb4f7117
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e42e2593b7bfb088797f5bee56a27e3d3973290665f338d035f7469ecd4945b5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.
+Tuple-v1:tuple-v1:1;35:Я видел двух друзей86:In this line, the animate object is accusative and both numeral and noun are declined.1;80:In this line, use the basic nominative or inanimate accusative counting pattern.
+shippedText=In this line, the animate object is accusative and both numeral and noun are declined.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8d56873c882a2014e2dcf857c9562428754d792439c78a44ad661009309fa5cf
+contentHash=dd818a95e10067eecefea7637473fdd9f6d1cbb0fe1c73eaefb4bfb9f9e58531
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-2`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc38fff4569edcf6b299b09354171acd0b91715d5e84b7bb4754f64ecfc6842d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-pattern-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.
+Tuple-v1:tuple-v1:1;35:Я видел двух друзей86:In this line, the animate object is accusative and both numeral and noun are declined.1;80:In this line, use the basic nominative or inanimate accusative counting pattern.
+shippedText=In this line, use the basic nominative or inanimate accusative counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8d56873c882a2014e2dcf857c9562428754d792439c78a44ad661009309fa5cf
+contentHash=860535a4f60912530bc09a7a716586bcf4d87c9c4b36816f54e712581094209d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-feedback`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3ba17dd5adc9c6aff57a125077eb424e053b53183159a3b977fea31277838bf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-4-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.
+shippedText=The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=671242e41a99b3dbfc96c5b254149c9de00ff5f4b027c74019af1e3434ef92be
+contentHash=9238c38b4cfa23053abb91aacf60979072d868c26035db654fd32077cf57da77
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-prompt`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36001878fa33bd9cb8102c29a534b40298db0c91671be86770620dc493baeff1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-4-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-rationale-1`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 264196be4d130307e6334a742fdc9cbb8abcf1fa533444349ad75639e5b12f01
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-i-pattern-4-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The basic nominative/inanimate accusative pattern omits the animate accusative object and declined numeral in this sentence.
+shippedText=The basic nominative/inanimate accusative pattern omits the animate accusative object and declined numeral in this sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cfb10565acfc0afad45bd476c78dc41995bcb60a35d038047fdbc1798a96c247
+contentHash=09375f1dd921dd6f39561ecf63e53b27208596d12169efbfba7625fae99ff2d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-0`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03854a58a5f8e95cae6327906c9081111699a7a28c347be61c3ccf80aeb880a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двадцать два часа61:In this basic counting phrase, the noun is genitive singular.2;63:In this basic counting phrase, the noun is nominative singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=двадцать два часа
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690
+contentHash=74885decbdca27deb5edf5a88acf41150fc426948c474d6c00648a77ac075762
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bdc8c024b1019ab7c0074516fb792e48f4254c06f4fcb8a3ef77c3a4be263e01
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двадцать два часа61:In this basic counting phrase, the noun is genitive singular.2;63:In this basic counting phrase, the noun is nominative singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42688c24dcbb704325a80964eef6eb40d2a58f6c46a5b813e783ba70862473f6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двадцать два часа61:In this basic counting phrase, the noun is genitive singular.2;63:In this basic counting phrase, the noun is nominative singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is nominative singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690
+contentHash=b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-3`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7af0beba7c1e2fb164f6724a88d8398648c9a3aebc80ec384bb5edeb76e5702
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двадцать два часа61:In this basic counting phrase, the noun is genitive singular.2;63:In this basic counting phrase, the noun is nominative singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-feedback`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eefbb589d1abac1586816a53afc67f6bbf44d91739deb2be5626da63293af107
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-1-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=013178045310cb1ffcffc4ff060d09d9169ad1e9902a4c13e5b68d0743eb14f0
+contentHash=f34a5a0f31ba89b8e91dc133873e26424a8d4fade2de449fab59d7e9de5449f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-prompt`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b3557b0c7407dcfa8d6710a9417d58b06d82e2eb8926b8320bbcb282cd79ad6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-1-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-rationale-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 420b6894ef192d72157b55f275857462c0f9feff964ddb183aa54cf27e3a1c55
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-1-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
+shippedText=The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ac8e754e5fb44ae038e4c433e6db15bee79947d80dda46a5031999ea79cc3f80
+contentHash=a1296939c0c3482de49b63f0b5ce53d8eebffeed58d6a4d3a73e757c6ef46f13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-rationale-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f00633b5e9cfb08994e415f116e061a02852779e804961cd3ebf1049d52196ee
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-1-rationale-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5474be917d87f4a26cecd46ba1efb058e58732be26b83b76d8b9842edd015bd5
+contentHash=9d2bfcbc044ae4bef880f09ae71b95533db61386b49856722f30c26bd48f81da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-0`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f8ab2e29472ee9fd4cd72de50ab17d96df70a2fcdd1a844d24eeadc70a269b7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;19:пять часов59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=пять часов
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c7a0cc8ef8593c47555c350c46289dfec00a23853e8a1db1c5b61ba36568280
+contentHash=e323224d27d02edb9a7c35bd15e0919791e785100bbea36301b4d07c6ad191df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 502e244c759cd33a1dccae47f386d31247f07bbd981ef01f9c153dc9db4f95a7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;19:пять часов59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c7a0cc8ef8593c47555c350c46289dfec00a23853e8a1db1c5b61ba36568280
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86c236b8d2327ff86f919731e47aa30f3ddfd89edd5e053db75243b3b2176e89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;19:пять часов59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c7a0cc8ef8593c47555c350c46289dfec00a23853e8a1db1c5b61ba36568280
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-feedback`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 941518545a2224be6c0672a3a3cf3630a3a9f4ccfd73377229764bf81e229b77
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-2-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dec8d4cbe33ed591b32cd8e7850d53e1739926815d95ec02ffc5871705f5b3f5
+contentHash=cd46c41a8a6fd66911699c65720acd097a79e35fbd0a7593709f2ae394356f6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-prompt`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf271bf995b9a19f685dfe74246c1e34bae9a40d8727432644731fbfa6da7eac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-2-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-rationale-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b142900e682e7d61436f382a98be7eb03be7d1c1f68527fb2127f0fd1d767d0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-2-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f09a0473c7b93dde0d33e90aa8876c538a508cc7a8c55e3f116727f126259f9
+contentHash=cc067f6646a554ec5655d8d0583e887eb16005eb51c32a14f0ac7edbf6fafb4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-0`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78252dc92b44f310d534b69c076125d37628eaf39cb9b23c475b683ae3518520
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двадцать один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=двадцать один час
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=12ec03047cd976cdb3c6669b82e0dd04a6fd80aa0b408d3b9e5ad3194a68c82e
+contentHash=87bee02c1ecf4f5be986cd4c90129fe40aa3c0500a799c5404306c05bb01c8ea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 855104d56fe7d17e46ebf7c32f9a870c82139abf9a5b8b0c0f56770837d96de4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двадцать один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is nominative singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=12ec03047cd976cdb3c6669b82e0dd04a6fd80aa0b408d3b9e5ad3194a68c82e
+contentHash=b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 801aac91e781af85a7f5839093076730b5be930135f8b03c750a1acf525ef5bd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двадцать один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=12ec03047cd976cdb3c6669b82e0dd04a6fd80aa0b408d3b9e5ad3194a68c82e
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-3`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17eed1ffa349da4629f98091c5ee3db6d4b972e6073526e6115711fb8782a349
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двадцать один час63:In this basic counting phrase, the noun is nominative singular.2;61:In this basic counting phrase, the noun is genitive singular.59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=12ec03047cd976cdb3c6669b82e0dd04a6fd80aa0b408d3b9e5ad3194a68c82e
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-feedback`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34e81d1340eb2a61d2c1834575a94d605d3a43c998194d7704b7ccdf3ff4d210
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-3-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4e9e9419c7a2f78648b167cfb2bcc1c6547c157d22599737af165c883b61eebe
+contentHash=f9f6395ac02731cbe3426469e35d7d76922948649146be289d9715f124bc94fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-prompt`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3fcb7c1ce3d79fcc77b9467b3437c9dabd8db363f377bf9dc1777f368d88386e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-3-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-rationale-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e540eaa0771c42d74e4edd97097bdce63308dfd54a3110d087a5bde70bfaf44d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-3-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f09a0473c7b93dde0d33e90aa8876c538a508cc7a8c55e3f116727f126259f9
+contentHash=cc067f6646a554ec5655d8d0583e887eb16005eb51c32a14f0ac7edbf6fafb4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-rationale-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59d2390706ff009af20d0b6ea1000226194a2657b328079f9dd5857fa9c6091c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-3-rationale-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5474be917d87f4a26cecd46ba1efb058e58732be26b83b76d8b9842edd015bd5
+contentHash=9d2bfcbc044ae4bef880f09ae71b95533db61386b49856722f30c26bd48f81da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-0`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ccc33d325fa5b4f3c067c351a979d2773a3bef6fa0b6bdc5165415241ef5720
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;35:шестнадцать рублей59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=шестнадцать рублей
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c6ba353fe2d21c6f2ffc6bf5b1859f236b0d0e45486c6c2a422530858327e61f
+contentHash=35a086e48347adc9066dca35a5970138aa5c4fde39b647171c05275a1b5d50bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd7888efbb135c6e7f3ee7c97d75cd8572e6a48a6ef9c98a2e94d2d46fe9f67e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;35:шестнадцать рублей59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c6ba353fe2d21c6f2ffc6bf5b1859f236b0d0e45486c6c2a422530858327e61f
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27d0161fa488e192f34e801b4fd64077946bcafc823a332b6c5001379b0101c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;35:шестнадцать рублей59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c6ba353fe2d21c6f2ffc6bf5b1859f236b0d0e45486c6c2a422530858327e61f
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-feedback`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d276289e8e3c6b8ceb550a457d28b23a2a1328df805b6166312c6b738eb5ebb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-4-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=891f0ef3bb6850dc0a68d434d17533fb917dddb0c456eb3090e057c203640ab4
+contentHash=e480e2ea48522bc400a29653f845885b6bd2759dffe1be99470d5afcdf36a92d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-prompt`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 907c460478a82c2a6e4c6354d6a4d1c74ac8ea96d5522cf7e4cd155fcf872aea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-4-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-rationale-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8591f93efe02d14ed36cd5b25640d7593a4d5c47db461e1c7539aacde07d3336
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-4-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f09a0473c7b93dde0d33e90aa8876c538a508cc7a8c55e3f116727f126259f9
+contentHash=cc067f6646a554ec5655d8d0583e887eb16005eb51c32a14f0ac7edbf6fafb4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-0`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a6701a6c93b20eaef7dc9d3e3837a043b4d4e71434afc1f9699429e485ffc38
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-5
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;26:сорок один год63:In this basic counting phrase, the noun is nominative singular.1;59:In this basic counting phrase, the noun is genitive plural.
+shippedText=сорок один год
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5ce51dde3f3e428ef1d697cd1603f8faf28ba05f406f91c46c656debfd210707
+contentHash=ead90f0119bd544b8199f818c7a4b3d502850a583e85be600b0fe62de62f62a7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ca7e6e0ca000ca25d3cb56b9bc15243c0981417e945425e3f8dbc1fda1249bf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-5
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;26:сорок один год63:In this basic counting phrase, the noun is nominative singular.1;59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is nominative singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5ce51dde3f3e428ef1d697cd1603f8faf28ba05f406f91c46c656debfd210707
+contentHash=b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a17251fb30be23c4942e0bc38234e0c5c1c4cd406ceae7ede8291534682a5dc1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-5
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;26:сорок один год63:In this basic counting phrase, the noun is nominative singular.1;59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5ce51dde3f3e428ef1d697cd1603f8faf28ba05f406f91c46c656debfd210707
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-feedback`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 437342ad8c17c2fd4f74a51e7abffe081f0fe40630b27dac4e94b70ea4d8c583
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-5-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c7824c6019c941909acda66bd634c5c7ac5401420a1847ae504b9439b25ae42e
+contentHash=4843db1aabc708be4596bc91e9da8859ac63817e8a558beef3e9694f7ec95f36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-prompt`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cee001b5a582b99c3f652d6ebd59fa0582f21d786c281cea8e93f1bb1dc21b2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-5-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-rationale-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cbb934db4c314a6aae38d6f180bbb302942d52b146b4ded3a9a441a7859b349
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-5-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5474be917d87f4a26cecd46ba1efb058e58732be26b83b76d8b9842edd015bd5
+contentHash=9d2bfcbc044ae4bef880f09ae71b95533db61386b49856722f30c26bd48f81da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-0`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e82478e3a9d2856628f7c5c159ec6522e946d9b6e471535dce38e235250e781
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-6
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;44:двести тринадцать собак59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=двести тринадцать собак
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79329167565dcbb23404ccef54603e30f3e8f5fcff3272b77711da4fe22b1c03
+contentHash=c7ec9a2fd397fe4273cf455901fb9bb41c6000fdf342ffba7b6ab22fe6c23dda
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78c2056325ced901006f973836ce0cee99b798886325884911c6724b466c6d76
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-6
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;44:двести тринадцать собак59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79329167565dcbb23404ccef54603e30f3e8f5fcff3272b77711da4fe22b1c03
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db3976e38f72a169431ad18e8b739710073109fc191553a204d364b2dcf2681c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-6
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;44:двести тринадцать собак59:In this basic counting phrase, the noun is genitive plural.1;61:In this basic counting phrase, the noun is genitive singular.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79329167565dcbb23404ccef54603e30f3e8f5fcff3272b77711da4fe22b1c03
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-feedback`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea99af9de16bbdafe7aef13ea0b11cfdb1256e45edacfd452a4f7168a0b54563
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-6-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f9814a4f12712386775be2b3cfad6a0a1b6fc76c027d4150b7c35c2b15d70d67
+contentHash=46db4f2c02e515503f8cb685ae5a9a6ba64dd8dae737700fd3433776e2bffc5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-prompt`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71ea1ebdfa7238aaf7252a449e55c9777845928745a3eed502df27fbd4c948e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-6-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-rationale-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bd09c94ea822aeeb0a0bc675a8ae3ec7e271b9f844fae0c752cdd4973d5f6b4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-6-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f09a0473c7b93dde0d33e90aa8876c538a508cc7a8c55e3f116727f126259f9
+contentHash=cc067f6646a554ec5655d8d0583e887eb16005eb51c32a14f0ac7edbf6fafb4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-0`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38df8cc5ba70ab3b73b53494f2243aee189bd42e9564f9d2b9939e6a1d816c38
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-7
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.
+Tuple-v1:tuple-v1:1;25:десять копеек59:In this basic counting phrase, the noun is genitive plural.1;63:In this basic counting phrase, the noun is nominative singular.
+shippedText=десять копеек
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d47c4cb2b1cb8ec3eb22f758df601e0989ff2f12692c982358f8593ef1c08e0c
+contentHash=fb205d4acd981ae43cd813d92106e7e1c92225016c5a750dbfcd47851009f771
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2394000367d2ec16d5e9aa97878b37d5d9d26777cd6f02bbfb9c389f9f882b4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-7
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.
+Tuple-v1:tuple-v1:1;25:десять копеек59:In this basic counting phrase, the noun is genitive plural.1;63:In this basic counting phrase, the noun is nominative singular.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d47c4cb2b1cb8ec3eb22f758df601e0989ff2f12692c982358f8593ef1c08e0c
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d7f929ba9bc998aa1c0364c9d4f5bfacad5842594cc6a44e1c2c33caeae0d418
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-7
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.
+Tuple-v1:tuple-v1:1;25:десять копеек59:In this basic counting phrase, the noun is genitive plural.1;63:In this basic counting phrase, the noun is nominative singular.
+shippedText=In this basic counting phrase, the noun is nominative singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d47c4cb2b1cb8ec3eb22f758df601e0989ff2f12692c982358f8593ef1c08e0c
+contentHash=b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-feedback`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3efdd94ffc7c4fc77cb82d7a424757ff2612598f2393f381a7925cb1b7603fa8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-7-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.
+shippedText=The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=55019ef7ab74988c789defd7d36498e3030bf9794e5d0fa941bf81a2d2fa76c1
+contentHash=2f06f6a9b5e8c700947dd35bd5ed53123688515a1fd3adcf759c8935af59d611
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-prompt`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7b1e6a3c2e98a7f9c6b0f645e291f43f370946a8ee3b4f0cf7831de7326f350
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-7-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-rationale-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 048bac222de79fb3ac79d9a3eba52df2ef1576c81c9d65da410a6fca09d56be0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-7-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
+shippedText=The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ac8e754e5fb44ae038e4c433e6db15bee79947d80dda46a5031999ea79cc3f80
+contentHash=a1296939c0c3482de49b63f0b5ce53d8eebffeed58d6a4d3a73e757c6ef46f13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-0`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e499c2fa069e28f094dbb90c45921c28aa3dc6cf889dd996408d771c1ab861b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-8
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:два часа61:In this basic counting phrase, the noun is genitive singular.1;59:In this basic counting phrase, the noun is genitive plural.
+shippedText=два часа
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61b4c87827f1a7396c6f8fb99109088e6df85ce3a8ad363c7b3d87cefe01ac34
+contentHash=29effe1520939a15946d77aca610e86d5a33ff3cf747b6b653c5155a76805b1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d02057657b994f4c223ff81ec5d5e8cee9fc32cd6cc0bfe83e0a768891ca0b68
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-8
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:два часа61:In this basic counting phrase, the noun is genitive singular.1;59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61b4c87827f1a7396c6f8fb99109088e6df85ce3a8ad363c7b3d87cefe01ac34
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b77b432cdee046ca2c12775c5c7df71f5505a0448c5a087ea27fb540d3b833f4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-8
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;15:два часа61:In this basic counting phrase, the noun is genitive singular.1;59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61b4c87827f1a7396c6f8fb99109088e6df85ce3a8ad363c7b3d87cefe01ac34
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-feedback`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77ed4d58854332276d155638e2102db037e58037e7c6716a28c55969afbe6ca5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-8-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=56b50cff348839edaf02184f99046c08c9a9fdef4ce06e5778f8897b9ca0a1ee
+contentHash=abcf81687400d59655e434fc9e66f95912a95287ad3fca1d324b7f270823110d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-prompt`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5c8266aa1f207f515ff62002d7a6089cfab9d6f15527a5acccf7cee1c170869
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-8-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-rationale-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62dab130c012faa0c3f18b101bcfbb84b14b2b1264e93473ee6ca41453233b73
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-8-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5474be917d87f4a26cecd46ba1efb058e58732be26b83b76d8b9842edd015bd5
+contentHash=9d2bfcbc044ae4bef880f09ae71b95533db61386b49856722f30c26bd48f81da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-0`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 51da4e415e7c86d9678b60c86fe13722fd1ee7107d7b83cecf3dd9b99cfa5dbd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-9
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двести три собаки61:In this basic counting phrase, the noun is genitive singular.1;59:In this basic counting phrase, the noun is genitive plural.
+shippedText=двести три собаки
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4381b1e305641449e427937df95d0e97fb57fa537f894de2cc314e13b2b8a6c4
+contentHash=3378bc773e386356bbd40849fbc646c8fa242d9568c4da021e6b3aefcf006d1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb666a3451a4af02fee26370075fe09c2a3aefe748b6c1fdeb1a72e62c6ae65b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-9
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двести три собаки61:In this basic counting phrase, the noun is genitive singular.1;59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4381b1e305641449e427937df95d0e97fb57fa537f894de2cc314e13b2b8a6c4
+contentHash=db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-2`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c521604715954f75a3f11c22036479220b3414fc7ad6e6bd5944bb3f067c1715
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-quantity-9
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+Tuple-v1:tuple-v1:1;32:двести три собаки61:In this basic counting phrase, the noun is genitive singular.1;59:In this basic counting phrase, the noun is genitive plural.
+shippedText=In this basic counting phrase, the noun is genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4381b1e305641449e427937df95d0e97fb57fa537f894de2cc314e13b2b8a6c4
+contentHash=5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-feedback`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d394f41e1a2d205fba98322fd7b623eff43781b35423ae978481b2eb02c3b1b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-9-feedback
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+shippedText=The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c658c5c6f9d6f45669f927f9ecaa128ce0472373d347a3ce9064ae96909a9c5b
+contentHash=d6c410159f75517520d88bbd3c4dc452cb66b14cb6815c1af93e230df37ca9d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-prompt`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ee5af33196510ec2352bc2178bebc65bbeea8e0ef4c540461a73cffd3d3ef19
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-9-prompt
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Which complete case explanation fits the shown example?
+shippedText=Which complete case explanation fits the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a933435eaa2aed04bcbc614b811019a49de781110ddd463ddaa5f1aac871661b
+contentHash=d20b6a6370aa81652357aa477e2f170fb47118abc9f3ce31d6461329e8db99cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-rationale-1`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c84041946b041ca25a7c65f12d623c9a7224153ed530dd4411b2431a25469784
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-i-quantity-9-rationale-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+shippedText=The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5474be917d87f4a26cecd46ba1efb058e58732be26b83b76d8b9842edd015bd5
+contentHash=9d2bfcbc044ae4bef880f09ae71b95533db61386b49856722f30c26bd48f81da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-check-pattern-body`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5cb8c0dd26cb0618c076e7d411d6035537245a47b13610a7294fbc4712c81d6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-check-pattern-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
+shippedText=Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b2d92475227f523db1ba2061c5a7416d1d3f19763bdb7b11b6df5775d4bb948
+contentHash=1839766b7143883590dc49e4146c713e21b04f2ac43c901afd6cb842cc106c5c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-check-quantity-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26b6a113a793e8ad961dac1a9a70b1c262c4f4238b51eeda52521cff8006d68e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-check-quantity-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
+shippedText=Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b2d92475227f523db1ba2061c5a7416d1d3f19763bdb7b11b6df5775d4bb948
+contentHash=1839766b7143883590dc49e4146c713e21b04f2ac43c901afd6cb842cc106c5c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-guided-pattern-1-body`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 238fdd748d2827b167a644a1f3bfe059a870c4af68a0c6b4c12a6513b0bdb0a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-guided-pattern-1-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
+shippedText=Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b2d92475227f523db1ba2061c5a7416d1d3f19763bdb7b11b6df5775d4bb948
+contentHash=1839766b7143883590dc49e4146c713e21b04f2ac43c901afd6cb842cc106c5c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-guided-quantity-1-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c161a308c67c874c258e433f1b0f476a6ac8316ed10c91ef807b3ac394bc75ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-guided-quantity-1-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
+shippedText=Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b2d92475227f523db1ba2061c5a7416d1d3f19763bdb7b11b6df5775d4bb948
+contentHash=1839766b7143883590dc49e4146c713e21b04f2ac43c901afd6cb842cc106c5c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-rem-pattern-body`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbaa427cad576f24623311d634c442bdfd90bddbfc267746bad392cc93764545
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-rem-pattern-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — один час. три кошки — three cats. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All teen counts in the supplied basic examples take genitive plural.
+
+Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+
+The I saw two friends sentence has an animate accusative object. Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule. The one-cat example below instead states existence in the basic nominative context. Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. 
+
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Пять рубле́й — Five roubles. 
+shippedText=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — один час. три кошки — three cats. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All teen counts in the supplied basic examples take genitive plural.
+
+Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+
+The I saw two friends sentence has an animate accusative object. Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule. The one-cat example below instead states existence in the basic nominative context. Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. 
+
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Пять рубле́й — Five roubles. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fdee8d3246f14d3e8500a634c000955128d1e963363a309b93fa5d7a3c564fd6
+contentHash=a6d0ca2d777a81c930c6ac2a4dbf0595a02f5bfd25083fbf428d0b016eef1710
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-rem-pattern-title`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 43f7ab11e724a478a4a97a4e26a31f6698bf57eff2772d8d152b2e3e69934ddc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-rem-pattern-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Review the complete counted-noun rules
+shippedText=Review the complete counted-noun rules
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4264f9c317ae8969da4764f8c2cb1ce5895ab30f8e11e722c355f3f2e9d895e1
+contentHash=260bf0300639924c3c08f203504918b30d0d0f46e3ceab8c62fc187e67ae79f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-rem-quantity-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8ec1b2d778b1c146f3309024af11f04bfa3c6873e530362449a95a904d19419
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-rem-quantity-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — один час. два часа — два часа. 
+
+A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction. This is a grammatical singular form even though the count is greater than one.
+
+Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — пять часов. двадцать один час — двадцать один час. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — двадцать два часа. две девушки — two girls. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All counts from 11 through19 use genitive plural here. For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+
+The example with 41 follows the final-one pattern and uses nominative singular for the counted noun. The example with 10 follows the zero-ending pattern and uses genitive plural. десять копеек — ten kopeks. сорок один год — forty-one years. 
+
+The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — пять лет. двести три собаки — two hundred and three dogs. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare the supplied 203 and 213 examples and the two kopeck examples. Count value and sentence construction govern the explanation. двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. 
+
+The isolated table forms below illustrate genitive singular and genitive plural noun forms. They do not by themselves state a quantity or sentence context; apply the complete counted-noun rules to whole examples. Два́дцать пять копе́ек — 25 kopecks. стола́ — table. 
+
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. столо́в — table. 
+shippedText=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — один час. два часа — два часа. 
+
+A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction. This is a grammatical singular form even though the count is greater than one.
+
+Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — пять часов. двадцать один час — двадцать один час. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — двадцать два часа. две девушки — two girls. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All counts from 11 through19 use genitive plural here. For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+
+The example with 41 follows the final-one pattern and uses nominative singular for the counted noun. The example with 10 follows the zero-ending pattern and uses genitive plural. десять копеек — ten kopeks. сорок один год — forty-one years. 
+
+The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — пять лет. двести три собаки — two hundred and three dogs. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare the supplied 203 and 213 examples and the two kopeck examples. Count value and sentence construction govern the explanation. двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. 
+
+The isolated table forms below illustrate genitive singular and genitive plural noun forms. They do not by themselves state a quantity or sentence context; apply the complete counted-noun rules to whole examples. Два́дцать пять копе́ек — 25 kopecks. стола́ — table. 
+
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. столо́в — table. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e131b6ad6b5bed30e6e0e7c9aad2a014a456afb8a63608f5970a1ea313bb39c2
+contentHash=26672f31650e1742c78797d7ddb9b5f77c8bb9e97a0245098a529968bed80c8d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-rem-quantity-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8120e5f3d3286750837561631642f57b93930de02648dd0e979acba445920f5f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-rem-quantity-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Review the complete counted-noun rules
+shippedText=Review the complete counted-noun rules
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4264f9c317ae8969da4764f8c2cb1ce5895ab30f8e11e722c355f3f2e9d895e1
+contentHash=260bf0300639924c3c08f203504918b30d0d0f46e3ceab8c62fc187e67ae79f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-1-body`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f89f0ccabcecf1527e9f028f3fa96d9eb2ec32934504472e0131f27dac1a97bf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-teach-pattern-1-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — один час. три кошки — three cats. 
+shippedText=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — один час. три кошки — three cats. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad710f3d9dac4eb63e6dd4e958548551b3fc65db39653e66d53a743136c68bee
+contentHash=f3643b16ca365ae970bb9d76e639165d0feedbc6a7effb308760963c3cc076fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-1-title`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27930b07b9a21e70df5c88092135fb170a306d46a0814800db892166ddfdf1f3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-teach-pattern-1-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Identify the counting context
+shippedText=Identify the counting context
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8f30d1cefbe04e9ef96ee661fcf453abeb0b598f593fc0db18020ea49ef6a911
+contentHash=fd8342640a2ef2c4155bd1617b33000e5ef94caad8643270e1d58f87b32cc63f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-2-body`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fea1a71e60e8198736ea94820e7545147d94d8b11f65acea42bd695526412d55
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-teach-pattern-2-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All teen counts in the supplied basic examples take genitive plural.
+shippedText=For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All teen counts in the supplied basic examples take genitive plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=43eae83ef983289a5d2b26bc9cc18e8a94c085cae752dec5b6989f34cde8b1a8
+contentHash=644ce321160ffecae29c2e7a48154eabebc2c2312ff2ccbf0face8bfd3f9c8a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-2-title`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b49b14f0dbfd247e9c5fa3b301541aaa13449e4e7d3013f093dbbffd6499cc3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-teach-pattern-2-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Check the teen exception
+shippedText=Check the teen exception
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f011ff2eebb62bb55a66b8dc710cb806bf7284707d369a5210505c9b906959b
+contentHash=cccb24a0e154a6d3312d74af17249acbadd5f5d271b8a217dbb5c6380416f71d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-3-body`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 565d9ba247a6e992d93cc60ae95af6a4b0cb8fbc4c340350b5ac739f75350c01
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-teach-pattern-3-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+shippedText=Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d360bdaca029671d655ad39ef610b3f44ed54c666d27d94b1a2fdd04472cea71
+contentHash=7f41febf3fccbb85eb629fddf221d8f047c58f62164dfb47cf78145260c018d5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-3-title`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 165edfdf9fc1b392cd89510b34f054cc19ea28dbf158a226cc8b2a31b5e7a28f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-teach-pattern-3-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Genitive plural examples
+shippedText=Genitive plural examples
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc339b0dff8ff940ff985a4ffe37f25a3da40489f8f82987c7c5cb8065a30498
+contentHash=00a5ea2db48b81f96d79b8b02078a60b337b9de18a5ab4436d46a3d865851b0c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-4-body`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e927e4d00872d82fe981e9bf18097cc50a2c4b34727d0f6136b84b787fbce36
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-teach-pattern-4-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The I saw two friends sentence has an animate accusative object. Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule. The one-cat example below instead states existence in the basic nominative context. Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. 
+shippedText=The I saw two friends sentence has an animate accusative object. Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule. The one-cat example below instead states existence in the basic nominative context. Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=18ae75a4d2814bc183e0f3eb2717b3a42362ed88117dfa3e8b6b791bccd6f8ea
+contentHash=96f5d1507583f45f07114d4c28e145f290a350f7e6960816bbd0da0252985933
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-4-title`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f07fa64937e9252c450dd8f5220756c5b7d1f8bba0c1b4941c3ad1692ea0a653
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-teach-pattern-4-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+A sentence outside the basic pattern
+shippedText=A sentence outside the basic pattern
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80195dfdfdcebae2df4782ed9ff711aab1a09f5ae87d5482e46e649187a8be60
+contentHash=fa47e190531fd6ecafc24677a3af6951434a78c61c4b8d00785be84aea7272ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-5-body`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9677dd8cd20ea63472b419d35299eb3732cacd85df684b1837fb75b9b5922196
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-teach-pattern-5-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Пять рубле́й — Five roubles. 
+shippedText=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Пять рубле́й — Five roubles. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4a8e2c8979064669ce3d30a01f41c72e87b50adc325b254f26c352bb7997e7ba
+contentHash=03944cebf3d51a87a686b641605e0e19836b23aea473d78c2be04cb9e5f6ac6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-5-title`
+
+- Objectives: obj-u9-pattern
+- Sessions: u9-s-orient, u9-s-pattern
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c8ee794e81f5632da9de972f9edbe8475d5bf2ab30296de338f4357772be859
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-pattern:quantity-rule:u9-st-teach-pattern-5-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Review before practice
+shippedText=Review before practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bedc7fcff2396ad89841d3339bbb2bebbdd955c235759c7aea0c88723c218eda
+contentHash=f287d51159d2294d4e5614bb1a0b879ec556cf16016572dc5096e7d227a4aece
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-1-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6fbbb39d68ff9aa186687efce9257dbad6bbe0d461b0a6a7b4c6aa8909573619
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-1-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — один час. два часа — два часа. 
+shippedText=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — один час. два часа — два часа. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44d2dcac9906d575ec415635cfe930b8a06fbf5b3b18f261086b441b9299af98
+contentHash=91269e7557a1b5bf6caaadcef4f7c9095cb24668b9c619b0811c0df573547c31
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-1-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca816f194c98aedd02791df3b8cecc98f42f8a76ef81797360a0b647435a05e7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-1-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Start with the construction
+shippedText=Start with the construction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f304d26a9e682081a0fff3141eae0db46aa15cb2344b7f19f93bae8c11c09e9
+contentHash=78caa5a6ca4fc60313026c237607b0fd44ff6ab241e7bca87cb56daa4669eb3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-10-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bbabf15ad08915d51bc13ac6f7db8fdb826507c3313ac018600df901eaa9d12e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-10-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. столо́в — table. 
+shippedText=These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. столо́в — table. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ec1bf5592ff8f46d221696f51d6ea80e35d4d15caa1c2f58dcbd18c896a11a6
+contentHash=550145456f9980412012567fbef9529acc077cf0ef5c9ec008ab882fe6715169
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-10-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 95cbf31741cf9128a21c832af056ea51f88ea196b798b1f38dc93770545e3fee
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-10-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Review the complete decision
+shippedText=Review the complete decision
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=166832c374c1edb13c504a85a6d12cd249e9ef4f26bd569ab001b42aa772a372
+contentHash=f67fb897a1071a00f63236b4e4636e732cd186bd37112aed84f9d1cc79958dbc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-2-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b32b3546926375c1f0f8f4985a4b946cfd42a2187e108b3147f325771abce033
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-2-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction. This is a grammatical singular form even though the count is greater than one.
+shippedText=A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction. This is a grammatical singular form even though the count is greater than one.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=abb7c233c8cff0916bb9140b2a0363380a76770373bd7feac6b9081f897a87e6
+contentHash=8d34ffee9353ba76ae4339edc2cedee0fb894e9e0290074ff3597a14e0e86b41
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-2-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b17f7333ac731ba43a3a4fd4eeff286b805232c0e8be7b71d56940dda3962fb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-2-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Two, three and four
+shippedText=Two, three and four
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=be75eb70c08911f0bcfa4c25f63f0584caa29a9cefa6b3130fbbe9673aa83863
+contentHash=7c355e23f3b973e75f700f3b9a5889f728d1f6a5883fc2a6f217984c111d3424
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-3-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b12293d3d49756127ebccc592dd52a44eda8365ddf4ff46302abfb21b534c0f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-3-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — пять часов. двадцать один час — двадцать один час. 
+shippedText=Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — пять часов. двадцать один час — двадцать один час. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b7e2ec8171a01b88085f6f217818d0b3ae74a193d2911d6b5b77b7168a32c308
+contentHash=7380f529860663e6c9378a8ff99a958c09c769e178bb6c1022c6b3e9024b66e3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-3-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee19a6e3189dec1ad77e14d06a7a7e150504fc6ae8d76d4e6d1730fcec354c7e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-3-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Genitive plural counts
+shippedText=Genitive plural counts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=867bc64cc9e15b5aa592dcac024f428c22221cb63065dba05a334e79224359cd
+contentHash=bf2a68a85452821519bf1c65fde9f41e38cfd9df3415f103d3aaf73305b817f2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-4-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00bab3ef3a12f5a3ff8105f43680e983c4e86d2ee7070aef1f843c99d866811a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-4-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — двадцать два часа. две девушки — two girls. 
+shippedText=For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — двадцать два часа. две девушки — two girls. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dc5b3497f48718b4414733302c255dc18d9aa90d03b956d0a151b64ec614cc4a
+contentHash=b4b0d6e8e432225fef0e00e198ad8703258b5216d684ae71a15d110bf2233c95
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-4-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8979e7dce4371ebf3bea6d623082eb4764bd7bda25c2365022fa5ed71f62967b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-4-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Compound counts
+shippedText=Compound counts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e911bc6d831e8f94dab48a3fec964b5254cef2bf7a72752925c4ce811c98011a
+contentHash=4949d82cdc345ec31e644dbc38768722c40814152ac3b3a18bc94ad75cec0380
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-5-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42916a1851f10a8a96c7efc40be203ebd364e27084df3d61eb09652efda0ff99
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-5-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All counts from 11 through19 use genitive plural here. For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+shippedText=For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All counts from 11 through19 use genitive plural here. For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=04d220fb0f76d6a8af02ac699c03473db2ef9b1aaa5dc4cc4463a48b96576b73
+contentHash=20268760225d6030e7c52c761cdd2ae12eed183dd8cfff0fa60c3ef6297400f1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-5-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b416dbb932d584622a4b264bc4e2a18c9609b347a4b1a5909d47037eca2e27b2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-5-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Teen values and exceptions
+shippedText=Teen values and exceptions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0518982aebb7733527d7216e185e2b0471f4fdf1cfe0004823a13061c9bced82
+contentHash=2326b13ae11a0e484e8892052d6fcaa58fefdf2a09185919ea7b70ded8d27792
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-6-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b44ef93f05cd562da7695d0b73786108aee1fc86a45af22953eb34e5f0d9bca
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-6-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The example with 41 follows the final-one pattern and uses nominative singular for the counted noun. The example with 10 follows the zero-ending pattern and uses genitive plural. десять копеек — ten kopeks. сорок один год — forty-one years. 
+shippedText=The example with 41 follows the final-one pattern and uses nominative singular for the counted noun. The example with 10 follows the zero-ending pattern and uses genitive plural. десять копеек — ten kopeks. сорок один год — forty-one years. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6dc94a6bd4bdc15eddcf7fce200ca7c3b2bd67de34fdc180211162cc32b99a8d
+contentHash=ab81f55ea1fa838719b643b5c4032fc820a132f10ae285d96c6ce876af55d182
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-6-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d567e847176cdd38ec72123849bc1e9c9402bc86ae191e7957d45ed64e914983
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-6-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+One and zero endings
+shippedText=One and zero endings
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b3fba245d1a47012e1f6434734a4972510b161563e475d028450d698ef43ab78
+contentHash=10afb32f0276121981801448a581dd93cf5c40e30d839ba6795cb4edcb233d0c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-7-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2fe981b3f6e3cfce1f8a48c1c2cf16574b711dd0acb60bd743893c58d3a79af7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-7-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — пять лет. двести три собаки — two hundred and three dogs. 
+shippedText=The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — пять лет. двести три собаки — two hundred and three dogs. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aef55b0d9ec979333589de9009a4ed20c84cd5dfab0f2162c5b5edd24c290867
+contentHash=fc3a53399fc4f18c1b07169bb5747753cac82c72d7f5eef0fa153c6a5707bf41
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-7-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 458ac52e947bc903f4e1144a45f4cdfda03c173ae8b62517369f7efa5ebc4c5c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-7-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Hundreds preserve the boundary
+shippedText=Hundreds preserve the boundary
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5fd6bce2a9222864fc56c72889e9c241cfc60d25c57f3ab836d1241cb7408b89
+contentHash=77ba3584c357f56f4d639181a713f4da4071468df25101f66352ec0798332811
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-8-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2f769d90a8fe1527a2fbbfd40bf5b2d8970eec2fd91b9d60cff111a26ab7955
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-8-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare the supplied 203 and 213 examples and the two kopeck examples. Count value and sentence construction govern the explanation. двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. 
+shippedText=For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare the supplied 203 and 213 examples and the two kopeck examples. Count value and sentence construction govern the explanation. двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b604d33aa09a3fb69f70e222e6999b2507d0bc3f3f5806b72c2f68e7cdd0efb2
+contentHash=5be3d7642299b21e0700b689506cf99bd65d2aff602c69f926e33668fd2b3f17
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-8-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26cd2a554b4ebcaa023c14e580a4cee638fbcb68a6865dbe1c9dab8e0a6fa248
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-8-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Compare the supplied hundreds
+shippedText=Compare the supplied hundreds
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=66d77cb4be259e9fa1ef34410820dc347ac32a255e98cc6252f92e22f7c7f6ff
+contentHash=bc8a94f4e1dc832a79e6fe3d7ec59e7cc3087a909fe1976e3893a1e0a57bfd0a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-9-body`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c543d3ae16b492fd51a65441ef305607c61e390b8ea3faff0f7023be66ab4bd4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-9-body
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+The isolated table forms below illustrate genitive singular and genitive plural noun forms. They do not by themselves state a quantity or sentence context; apply the complete counted-noun rules to whole examples. Два́дцать пять копе́ек — 25 kopecks. стола́ — table. 
+shippedText=The isolated table forms below illustrate genitive singular and genitive plural noun forms. They do not by themselves state a quantity or sentence context; apply the complete counted-noun rules to whole examples. Два́дцать пять копе́ек — 25 kopecks. стола́ — table. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=64fa49f21aa5669b918ba6b28022b5418ede120ca72c132f3089f23ced345826
+contentHash=a00de9b2da5b54e8c97f93b92556dcef0f993f3c29bc11fcee08ea4584163c92
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-9-title`
+
+- Objectives: obj-u9-quantity
+- Sessions: u9-s-orient, u9-s-quantity
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58c21dd3e68cf4bc25a324ce14233412b4fcb1f2756fb3e35f1c79a295bdce07
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-quantity:quantity-rule:u9-st-teach-quantity-9-title
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.
+Keep lexical forms separate
+shippedText=Keep lexical forms separate
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3122fb826af59af8ba0e05d71ff7985ea95cdb024f9722aa38ff58fb165e1950
+contentHash=4624bcb86a78c1273b6d6cd40601f73167dbcdb344e0a9aa5b15a63371fea553
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-cardinal-0`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4669b43f1331113fac1fb0d0820d419f7045f6c0b0d562f29f0fd8dc9309c70f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-g-cardinal-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+ноль names zero (0), the value shown. оди́н names one (1), a different value. Zero counts no units; one counts a single unit.
+shippedText=ноль names zero (0), the value shown. оди́н names one (1), a different value. Zero counts no units; one counts a single unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=469575e840b8d6511ad802105e90f6c32215e9701a5e709c0deeb44d9c7b31f4
+contentHash=a5901e348efc93e98cf0aef32d2c81950482fa653bd0dee654f4a2e2b4b14c06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-cardinal-0-distractor-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 57e62dfd11d332d40455ba7e5f6295eaee3373b7f5eb098bcfeba8e41e6f7e2c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-g-cardinal-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+оди́н names one (1) instead of the shown value 0.
+shippedText=оди́н names one (1) instead of the shown value 0.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c8154d711f9cdc17defbad2f6259173cecc6c879cf0bcf5514c8ee6e0f9af2b
+contentHash=8d715962e152665be2a7b9dc52326e2395ca75170db99351b7b49df51195a749
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-hundreds-0`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd0aedbd60f68e5c81bfb35f28289bedd7760e8758bbe96d8426723dfa58bded
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-g-hundreds-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сто names one hundred (100), the value shown. две́сти names two hundred (200), a different value.
+shippedText=сто names one hundred (100), the value shown. две́сти names two hundred (200), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad8ca82007c523ae51d416a86fca98cc297363bc59c9da2ee5cd61c93343f68a
+contentHash=4c6ebeb913cdd51bde2ff05d25ee24e88c58cb9410fd3a5ff95c738f430d71e5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-hundreds-0-distractor-1`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a1af56821e6bc6bdc0e0567a6fa874c688bfa246a6247458407a7fb2343da82
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-g-hundreds-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+две́сти names two hundred (200) instead of the shown value 100.
+shippedText=две́сти names two hundred (200) instead of the shown value 100.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c1bcf5bb180e2e9982d182273cb58b428d1625445f12177387d30bee1056602
+contentHash=99931facc508d0ec763954cf60a64207595650f10a281080b6fec859a11bd0d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-teens-0`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f2f5b764bc99be383280705c7a54f02151ea8105bf8019c72fc6679f2cff415
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-g-teens-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+оди́ннадцать names eleven (11), the value shown. двена́дцать names twelve (12), a different value.
+shippedText=оди́ннадцать names eleven (11), the value shown. двена́дцать names twelve (12), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=85c13c5eb774cee0ece60a91588288dda3e02cfa1b310b832de4e14004658a80
+contentHash=d473d434073eb1194563a2408486a4fd02fc2808e3bc7d143ed8d188cc70379b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-teens-0-distractor-1`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c0a2fb49fe6c560a2da9a4eb6ca636124a352ac912b15421574473ede84fbb7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-g-teens-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+двена́дцать names twelve (12) instead of the shown value 11.
+shippedText=двена́дцать names twelve (12) instead of the shown value 11.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8fa7dd60d4019cbe0fca4867930b119d37661009b559fee6fb56e2961406f2d5
+contentHash=b20f9a7d26f5d98ccce01d329ff3c32691f4e44c716edb392d8306bad28db090
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-tens-0`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b6adee6f5f9042b9511c3806e0343b1a63355f1c0ec505c5476dc78ca839064
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-g-tens-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+три́дцать names thirty (30), the value shown. со́рок names forty (40), a different value.
+shippedText=три́дцать names thirty (30), the value shown. со́рок names forty (40), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f4951637358cd5b45e2621e2f7daaa04ed6f836e7533c21a20d7873362c37825
+contentHash=182e993a9a9d2daeffe388586b2643d32739e3bef44587787873e9c3fb2b6419
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-tens-0-distractor-1`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8fff2ff0036e57e2957a6f225604b7880da2f2ff764a8ea39b1e28a36bb4a37
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-g-tens-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+со́рок names forty (40) instead of the shown value 30.
+shippedText=со́рок names forty (40) instead of the shown value 30.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=563b5bbbccaf6b95dfe76c19ebf560d0ea3e9040a47d62230a21e9b098d27f5e
+contentHash=2e19682dd0ffd5eb279e68f37cdab14e0382fdcf10243934966fad9c1dc7f75f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb92d884d4eb3d44f7b02f4f68762bb55c47eedf4e909439e5c0f20636687bef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+оди́н names one (1), the value shown. два names two (2), a different value.
+shippedText=оди́н names one (1), the value shown. два names two (2), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75e8e95de809c8674ea923f18c222389278a7f0ed8e1128eb13034d03f5fbee4
+contentHash=7b9c461e1283a27eca6e27caf10438c33a627240fd8d61b0a75012820b817aac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-1-distractor-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fcb580fe8a5e2f9bc91ae4836d15fdf5886d9cdf73a783df8d5a371e760b22a4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два names two (2) instead of the shown value 1.
+shippedText=два names two (2) instead of the shown value 1.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=13bbfef7594df829129b3c0b3b3c2d3e549c0f5407b8ab0230feb928cd33a735
+contentHash=d5c4cc2847681187ae7b596d70b6c1102053b4155f8f989d03ce0f9717e9c6aa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-2`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9195b46d5f353c53689790e9a4dbf3e009bf9d5526112a5488cf798a6ed5ca1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+пять names five (5), the value shown. шесть names six (6), a different value.
+shippedText=пять names five (5), the value shown. шесть names six (6), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8ff913e84e62689dd4e6a3c4d850b7392f10ce2df11b438d0089baa7f88ed85e
+contentHash=eb741ed93b4fdbbb2eeba68d8d4a2a62a2e89e51a1adca63022a1a91c02df827
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-2-distractor-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a7ed9096171a2dec9933519dbc1856524183604d711a5a35a92d42d5fb8a6e3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+шесть names six (6) instead of the shown value 5.
+shippedText=шесть names six (6) instead of the shown value 5.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=149d091dc47746fcb02a297348afcf307fd3c1c8c819ece51a63a46ef5e8f77d
+contentHash=15dd447179a617628d70d1005ec1628f7b45675e17732831addfacf3ac01717e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-3`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cb7be4ca1e0c38de484f79a8837b1f438bf8aa440695e53c8fdff6ff1d8020b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+де́сять names ten (10), the value shown. де́вять names nine (9), a different value.
+shippedText=де́сять names ten (10), the value shown. де́вять names nine (9), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cce7ce950b43699bb0ea16192f8d0beb884bc32ae23bb654e0c7f575ef5ae455
+contentHash=32dc2d51342d018720d7d8e8cc11fac0cea56c759c306b9548c65cf725185464
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-3-distractor-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84f8bd4a7cd0352bb015584bf08eacdff79678f0b00ef4721ab38df52d8bfecf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+де́вять names nine (9) instead of the shown value 10.
+shippedText=де́вять names nine (9) instead of the shown value 10.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cbfa00920cfc66d901c28933f5959987da841c96ee3d1746323d51b71ef4a1d6
+contentHash=e948b187d6c58f2f3c9795abc66f3006531f2664ad6dbc657ebc5ca8a291eacb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-4`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54116675a26508f4ea0fa9e30a4ea6ecc69eb0de6763d27a205e4062ddf9daeb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+четы́ре names four (4), the value shown. три names three (3), a different value.
+shippedText=четы́ре names four (4), the value shown. три names three (3), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5dd5b74003e16723dd2e98390a10868f496c7105be28a0c825defc0e55378e70
+contentHash=e40881c8a9353b08ef0c408c26372a6cf1b685c870091e064584286f1e949131
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-4-distractor-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 367c80efd3e1c84bc571c1950b4cca010d934d1dc10b4843c674055526f04a8f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-4-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+три names three (3) instead of the shown value 4.
+shippedText=три names three (3) instead of the shown value 4.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=341ae1d658efa98aa4e310457483688ddc7dce61c7629334549ae278c74ddd78
+contentHash=6f34d218865bd80f51c948affd5286ed9c7a672123a8cd98de1fb3a5cd821787
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-1`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee760fadf8c3b1eca6bf04a204dadaf762a240df4799112554bfdac0c11c78b0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+три́ста names three hundred (300), the value shown. три́дцать names thirty (30), a different value. Compare place value: 300 has three hundreds; 30 has three tens.
+shippedText=три́ста names three hundred (300), the value shown. три́дцать names thirty (30), a different value. Compare place value: 300 has three hundreds; 30 has three tens.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=08dcb77e2febdb193e2da7bbcc9930f77f2a6c526a694a0582354d25300bdb81
+contentHash=93ccd0da2f66ff7d17fb74d1e1a46fd95f7551e38515b5e60a6f503854353300
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-1-distractor-1`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d0ca068bce1a6a773da340f75f36ead4d3679d25532df899f5d5e08357cb496
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+три́дцать names thirty (30) instead of the shown value 300.
+shippedText=три́дцать names thirty (30) instead of the shown value 300.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4b1238d945855dc8f0624c662096912e40a9ea91a0a392533a18b4cee96e6ac0
+contentHash=1e9898852bc25e2e4ab14d789fc93d36ed80a4accd783996b5a6f516a291f01a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-2`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69ac47dbc8e719cac16d6a957e9bec581307103d7f0cb4f945bd3a4237e858b6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+пятьсо́т names five hundred (500), the value shown. пять names five (5), a different value. Compare place value: 500 has five hundreds; 5 has five single units.
+shippedText=пятьсо́т names five hundred (500), the value shown. пять names five (5), a different value. Compare place value: 500 has five hundreds; 5 has five single units.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b2317356290a4ab917db013d3a18f89be063c0e52bc6c93f041259e0cfa51a61
+contentHash=7e51a0f88120b83d53f1c701dea899a573d1ec80c94711c3d55c49c5d4bfee1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-2-distractor-1`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62c4ccbf97a8ab5a59d5861b7ac32f0bdd2bf1aefb9e066d8c083f75c9e9d4ac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+пять names five (5) instead of the shown value 500.
+shippedText=пять names five (5) instead of the shown value 500.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47a86cea391b679389d866eda3e07cd2126ef7829d7ee8bde930a4dcb719bb03
+contentHash=b223fe9f8140e52b95f9448a4b477d515d26503a5ce4e3f565b7eaa353c12a06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-3`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c6594de08b53a77fe754ffe6acfdc9a5ca242a243b9afa070e6f47cf88cabce
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+девятьсо́т names nine hundred (900), the value shown. девяно́сто names ninety (90), a different value. Compare place value: 900 has nine hundreds; 90 has nine tens.
+shippedText=девятьсо́т names nine hundred (900), the value shown. девяно́сто names ninety (90), a different value. Compare place value: 900 has nine hundreds; 90 has nine tens.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=882e6f88d4e02f3768ff0a14222a333bb1e8e0e78d6a633481877a378e0150aa
+contentHash=eab73b726cc3a4e530a66530b15bc3034fe0c86fdec4d4f090a6e2790bf91f7b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-3-distractor-1`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2d4783ed565e41dbac2a6681a98cb108c021aa186bd38fb39e510202b49a178
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+девяно́сто names ninety (90) instead of the shown value 900.
+shippedText=девяно́сто names ninety (90) instead of the shown value 900.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6c040f5418c95ae12ca94fd980a119c3279a8e334786daf1e9272313b28fcd89
+contentHash=10132daef19cd67abe968b99b6aafdb6cdb1da697f7bfe167807c8cdd22c7b18
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-1`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8605225559f3eaa8f5e6f16b78106274fb4fe7f56d82611dfd621f2d503f84a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+четы́рнадцать names fourteen (14), the value shown. пятна́дцать names fifteen (15), a different value.
+shippedText=четы́рнадцать names fourteen (14), the value shown. пятна́дцать names fifteen (15), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4b5e45d41266cbbad4ca8f43c34c6f9d771f4069e5e8ee58a9e4ca1285293c3f
+contentHash=a25fcfdea76aef3cf35403eed0169da6e172758b1d4563846a90a988d66393da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-1-distractor-1`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f9a6098cce55d6992825b6d469e349f7f7ad0c0a40a8c8ca7a0e5ea7d6cfd7e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+пятна́дцать names fifteen (15) instead of the shown value 14.
+shippedText=пятна́дцать names fifteen (15) instead of the shown value 14.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=272b1d3e6967fbad9e49829198e8eaa33133323d73a426881f9eeca5d88b029f
+contentHash=6f73e788ecbcfa9083d4cbfe4925a1c4298aac7afa25903fbfe4792576bc81d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-2`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3429a4e11b8aef39c6acb6b2b36e51016cccb8c68472aeb111ac868b7600a87d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+девятна́дцать names nineteen (19), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
+shippedText=девятна́дцать names nineteen (19), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1eab9bbbfafab748f74e850c4999e39fe4994e0353b8c5413e858d543e7d12fb
+contentHash=ff20dddb366f27d69eb98b7cf508fac055f2b9f409dbbcbfa4f1e66a1382f307
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-2-distractor-1`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce4eb6029876db4118e5b58cab752c684368e0685e0fc86e644e3d2090961c06
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два́дцать names twenty (20) instead of the shown value 19.
+shippedText=два́дцать names twenty (20) instead of the shown value 19.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f3087ae921709615add5e35a9a76cd0f63f17ff62be59829f4420aae43b8b783
+contentHash=3f2d0e5b64314152c582117780199188837f5ba274e8d8c7d442e1f3e9167088
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-3`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d32908771511325fd4f0b3f774151ce876c8ccbb7aba752bcfedd542490fdf11
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+двена́дцать names twelve (12), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
+shippedText=двена́дцать names twelve (12), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6029b4378956d49d96d81c81d1babcfd5c4fe17bc20044ce097bbc7aa0a21170
+contentHash=e5374ce13d042cb044e603af03432d541c89c00054c565b953ecbec1de4b45ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-3-distractor-1`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e50c5594862d05d21c03d1fbc28b3cdb45b1e35ecbc6abe658040198b1c911eb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два́дцать names twenty (20) instead of the shown value 12.
+shippedText=два́дцать names twenty (20) instead of the shown value 12.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e0287293ab8395dc9529bcaf910d7c4907dd8269cd48dd26fa18804f67fc07f0
+contentHash=d55accc2570572c3d9af94564602c81d72c1bb7674e24424a61695b58b37e297
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-1`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6d0ecc449075f675d33644e36fee48e468a91622ac7c9601d7529d7348072cf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+пятьдеся́т names fifty (50), the value shown. шестьдеся́т names sixty (60), a different value.
+shippedText=пятьдеся́т names fifty (50), the value shown. шестьдеся́т names sixty (60), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a16d1cfef1d54f4e8be671fe07be4ff624c9bda0dd4e7e8c36e5eea7afa134f7
+contentHash=8b26d3670fefd40bcde08a01c5069f11111d7150cc755757bf8e7ac13e18fd21
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-1-distractor-1`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa996ca20234fd0643c892873f0d31b918567d20c8ca4fe6893767533f6741e0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+шестьдеся́т names sixty (60) instead of the shown value 50.
+shippedText=шестьдеся́т names sixty (60) instead of the shown value 50.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad9462a61a561c504a66baa00f8b0302cc177edd1e8cf7be42ec7deb1be3d2d5
+contentHash=766fd39d51bc087d0afa89b7fd74b268a1a65362ea79635ca07cd60cfcdd8e7d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-2`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0222ee119bd4e43682e126fe44600cb9215b9eafb8fdc8ece62edf1bd33d3665
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+девяно́сто names ninety (90), the value shown. во́семьдесят names eighty (80), a different value.
+shippedText=девяно́сто names ninety (90), the value shown. во́семьдесят names eighty (80), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2f5d42c1c0762aeb218a10f49dc77c5439cf8f6f83e08c720bcd080e3c33ac7
+contentHash=181d992b283b806117c84dc0e2e8105b1c711808f709f0d73b88902d37e71c77
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-2-distractor-1`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb807befe40cccea7fc86803c13b437403e8ed85f6089290ab80f141957309e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+во́семьдесят names eighty (80) instead of the shown value 90.
+shippedText=во́семьдесят names eighty (80) instead of the shown value 90.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6b3f4a3b642de311b99b37f066aaa5078babb1dbbaa3bcecc89f1b20c29083f1
+contentHash=746cd9391c1aab6c3a3001c7058a526a52c9e52711e8eefec80eccca831500ae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-3`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4ddf5cd03d29133fae6cf565b37c51f4bbec12357d4d1b19d815a8d4fa98818
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два́дцать names twenty (20), the value shown. двена́дцать names twelve (12), a different value. Distinguish the teen value from a multiple of ten.
+shippedText=два́дцать names twenty (20), the value shown. двена́дцать names twelve (12), a different value. Distinguish the teen value from a multiple of ten.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6d31331b06179fea9b64f6258e2849cfeab919561cd3931554dd4784bcfb309c
+contentHash=23c1f02c1e701fd0f83bcfdcb8e9df27252293ac591c8ce3e6ce343ad9e6e5c7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-3-distractor-1`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea0ae6b6424fbceb39080d3219cbc564346f292db8339e6c28eabd2fad0c5825
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+двена́дцать names twelve (12) instead of the shown value 20.
+shippedText=двена́дцать names twelve (12) instead of the shown value 20.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e2e83ec3e50ec8843c25a9d0add372310509dd68db3629ab2efbf1ecad9d2cc0
+contentHash=1beb82801beaa06f5d7210ab644bc9f13d595d6a323c3e37bd1735375434589b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u9-odindva-8`
 
@@ -9745,6 +16869,252 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u9-agreement-transfer-native-feminine`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f3d0c0a855629610c3e084a729dbe1125bf2c8801d3ef81cec4622c71a773f8
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers-independent-hour:==Use of numerals in context==
+
+In English (and in many other Indo-European l
+originalSourceText===Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+shippedText=одна
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e05d0a76571644c1d271afe936b827bee4829ffd63c0ea854f4fcbb5fbf95122
+contentHash=4e469ca0a530b26d9b812df7a459753ef09873ea5aa9de32046b20b230d16bb5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-agreement-transfer-native-masculine`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b6af1ea0a41d7e7ab4241cd0482d1cecb0378dbf702f713f14eb42212e36b28
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers-independent-hour:==Use of numerals in context==
+
+In English (and in many other Indo-European l
+originalSourceText===Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+shippedText=один
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e05d0a76571644c1d271afe936b827bee4829ffd63c0ea854f4fcbb5fbf95122
+contentHash=c5cffb9e60232cdf6f395101a5987dcb1b5df343397604bfeca92cba411c784f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-agreement-transfer-native-noun`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bff15b77b76d4f97113c0c402beb5584de87d6ad5c1ac467304e19ff558026a
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers-independent-hour:==Use of numerals in context==
+
+In English (and in many other Indo-European l
+originalSourceText===Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+shippedText=час
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e05d0a76571644c1d271afe936b827bee4829ffd63c0ea854f4fcbb5fbf95122
+contentHash=3b717961ddfdfb919640a578d8ddb5b267fe8ece1b63aba1a1d98a589c07c7e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u9-cardinal-rem`
 
 - Objectives: obj-u9-cardinal
@@ -12251,6 +19621,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-9-11169`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e77f14949be5e9a1d623ecfb0233a52f66f194e56349a6ad79215a68635e985e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 9 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-9-11170`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b68d682e5cb80429b34ec4383b0effa71953da0790ad12eb98cdfae008694876
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-9-11171`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3addfc6219f6daf58c901abf5703e05e0217142227c1a6adc034ae55bc4f71c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 9 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-9-11172`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ae1740ec1dbca7d35458e368a6c8cdbee901bc7aa0d23afd29ee483e49643c9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-9-11173`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83902b2ac4f429a80780f52b7cd8597afbc83ba59e8c395198f709dbf70d290b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 9 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-9-11174`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7e78f5f43b6867471fe4a01e8d227bfa4f394f8505086e9db014e302d4def43
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-9-11175`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cda0c71befcbdb41b5192a426efe52d436e396a6de566a276a5fa336eee19454
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 9 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-9-32`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 02c838edbb1e646ae89cfa6f318d8fda7d9157f27f1afad6ea642168464c4e87
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 9: printed pages 92-106. PDF indexes 104-118 are file locators, not printed pages. Observed section locators: §9.1 p92 (PDF 104); §9.2 p92 (PDF 104); §9.3 p94 (PDF 106); §9.4 p94 (PDF 106); §9.5 p95 (PDF 107); §9.6 p97 (PDF 109); §9.7 p98 (PDF 110); §9.8 p99 (PDF 111); §9.9 p100 (PDF 112); §9.10 p101 (PDF 113); §9.11 p102 (PDF 114); §9.12 p102 (PDF 114); §9.13 p103 (PDF 115); §9.14 p104 (PDF 116). Observed exercise locators: 9/1 p96/PDF108; 9/2 p97/PDF109; 9/3 p101/PDF113; 9/4 p101/PDF113; 9/5 p102/PDF114; 9/6 p105/PDF117; 9/7 p105/PDF117. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-9-33`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab47e079f44938b7832ffb85781dc00956dc4204c238357c46f53454a28f777f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 9 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-9-34`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99ca390f2e66dc0bb38ab3fbaefa508867856053d838915643987cc96fb5d347
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u9-113`
 
 - Objectives: none
@@ -12892,6 +20392,21 @@ CC BY-SA 4.0
 Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 Selected rows, stress-mark formatting, and beginner sense selection. No generated forms.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -12933,6 +20448,20 @@ permitsAppUse=true
 
 src-openrussian-50e210c4
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -13278,8 +20807,6 @@ permitsAppUse=true
 - `u9-st-teach-odindva-1` EXAMPLE `ex-u9-odindva-0`
 - `u9-st-teach-odindva-1` EXAMPLE `ex-u9-odindva-1`
 - `u9-st-teach-odindva-1` REFERENCE `ref-u610-attribution`
-- `u9-st-guided-odindva-1` REMEDIATION `u9-st-rem-odindva`
-- `u9-st-guided-odindva-1` ITEM `u9-g-odindva-0`
 - `u9-st-teach-odindva-2` REFERENCE `ref-u610-attribution`
 - `u9-st-teach-odindva-3` EXAMPLE `ex-u9-odindva-2`
 - `u9-st-teach-odindva-3` EXAMPLE `ex-u9-odindva-3`
@@ -13293,8 +20820,18 @@ permitsAppUse=true
 - `u9-st-teach-odindva-6` EXAMPLE `ex-or-u9-odindva-8`
 - `u9-st-teach-odindva-6` EXAMPLE `ex-or-u9-odindva-9`
 - `u9-st-teach-odindva-6` REFERENCE `ref-u610-attribution`
+- `u9-st-guided-odindva-1` REMEDIATION `u9-st-rem-odindva`
+- `u9-st-guided-odindva-1` ITEM `u9-g-odindva-0`
 - `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-0`
 - `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-1`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-2`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-3`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-4`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-5`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-6`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-7`
+- `u9-st-rem-odindva` EXAMPLE `ex-or-u9-odindva-8`
+- `u9-st-rem-odindva` EXAMPLE `ex-or-u9-odindva-9`
 - `u9-st-check-odindva` REMEDIATION `u9-st-rem-odindva`
 - `u9-st-check-odindva` ITEM `u9-i-odindva-1`
 - `u9-st-check-odindva` ITEM `u9-i-odindva-2`
@@ -13305,8 +20842,6 @@ permitsAppUse=true
 - `u9-st-teach-quantity-1` EXAMPLE `ex-u9-quantity-0`
 - `u9-st-teach-quantity-1` EXAMPLE `ex-u9-quantity-1`
 - `u9-st-teach-quantity-1` REFERENCE `ref-u610-attribution`
-- `u9-st-guided-quantity-1` REMEDIATION `u9-st-rem-quantity`
-- `u9-st-guided-quantity-1` ITEM `u9-g-quantity-0`
 - `u9-st-teach-quantity-2` REFERENCE `ref-u610-attribution`
 - `u9-st-teach-quantity-3` EXAMPLE `ex-u9-quantity-2`
 - `u9-st-teach-quantity-3` EXAMPLE `ex-u9-quantity-3`
@@ -13331,8 +20866,25 @@ permitsAppUse=true
 - `u9-st-teach-quantity-9` REFERENCE `ref-u610-attribution`
 - `u9-st-teach-quantity-10` EXAMPLE `ex-or-u9-quantity-16`
 - `u9-st-teach-quantity-10` REFERENCE `ref-u610-attribution`
+- `u9-st-guided-quantity-1` REMEDIATION `u9-st-rem-quantity`
+- `u9-st-guided-quantity-1` ITEM `u9-g-quantity-0`
 - `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-0`
 - `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-1`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-2`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-3`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-4`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-5`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-6`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-7`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-8`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-9`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-10`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-11`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-12`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-13`
+- `u9-st-rem-quantity` EXAMPLE `ex-u9-quantity-14`
+- `u9-st-rem-quantity` EXAMPLE `ex-or-u9-quantity-15`
+- `u9-st-rem-quantity` EXAMPLE `ex-or-u9-quantity-16`
 - `u9-st-check-quantity` REMEDIATION `u9-st-rem-quantity`
 - `u9-st-check-quantity` ITEM `u9-i-quantity-1`
 - `u9-st-check-quantity` ITEM `u9-i-quantity-2`
@@ -13347,8 +20899,6 @@ permitsAppUse=true
 - `u9-st-teach-pattern-1` EXAMPLE `ex-u9-pattern-0`
 - `u9-st-teach-pattern-1` EXAMPLE `ex-u9-pattern-1`
 - `u9-st-teach-pattern-1` REFERENCE `ref-u610-attribution`
-- `u9-st-guided-pattern-1` REMEDIATION `u9-st-rem-pattern`
-- `u9-st-guided-pattern-1` ITEM `u9-g-pattern-0`
 - `u9-st-teach-pattern-2` REFERENCE `ref-u610-attribution`
 - `u9-st-teach-pattern-3` EXAMPLE `ex-u9-pattern-2`
 - `u9-st-teach-pattern-3` EXAMPLE `ex-u9-pattern-3`
@@ -13358,8 +20908,15 @@ permitsAppUse=true
 - `u9-st-teach-pattern-4` REFERENCE `ref-u610-attribution`
 - `u9-st-teach-pattern-5` EXAMPLE `ex-u9-pattern-6`
 - `u9-st-teach-pattern-5` REFERENCE `ref-u610-attribution`
+- `u9-st-guided-pattern-1` REMEDIATION `u9-st-rem-pattern`
+- `u9-st-guided-pattern-1` ITEM `u9-g-pattern-0`
 - `u9-st-rem-pattern` EXAMPLE `ex-u9-pattern-0`
 - `u9-st-rem-pattern` EXAMPLE `ex-u9-pattern-1`
+- `u9-st-rem-pattern` EXAMPLE `ex-u9-pattern-2`
+- `u9-st-rem-pattern` EXAMPLE `ex-u9-pattern-3`
+- `u9-st-rem-pattern` EXAMPLE `ex-u9-pattern-4`
+- `u9-st-rem-pattern` EXAMPLE `ex-u9-pattern-5`
+- `u9-st-rem-pattern` EXAMPLE `ex-u9-pattern-6`
 - `u9-st-check-pattern` REMEDIATION `u9-st-rem-pattern`
 - `u9-st-check-pattern` ITEM `u9-i-pattern-1`
 - `u9-st-check-pattern` ITEM `u9-i-pattern-2`
@@ -13367,6 +20924,228 @@ permitsAppUse=true
 - `u9-st-check-pattern` ITEM `u9-i-pattern-4`
 - `u9-s-book` OBJECTIVE `obj-u9-book`
 - `u9-st-book-work` REFERENCE `ref-u610-attribution`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-9-35`
+- `obj-u9-teens` PROVENANCE `prov-ca-9-36`
+- `obj-u9-tens` PROVENANCE `prov-ca-9-37`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-9-38`
+- `obj-u9-thousands` PROVENANCE `prov-ca-9-39`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-check-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-guided-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-item-feedback`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-item-prompt`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-item-rationale`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-remediation-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-1-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-1-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-2-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-2-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-3-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-3-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-4-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-4-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-5-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-5-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-6-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-6-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-0`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-1`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-2`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-odindva-0`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-odindva-0-distractor`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-thousands-0`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-thousands-0-distractor`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-1`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-1-distractor`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-2`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-2-distractor`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-3`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-3-distractor`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-4`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-4-distractor`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-5`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-5-distractor`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-1`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-1-distractor`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-2`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-2-distractor`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-3`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-3-distractor`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-4`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-4-distractor`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-0`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-1`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-2`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-3`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-feedback`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-prompt`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-rationale-1`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-g-pattern-0-rationale-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-0`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-3`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-feedback`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-prompt`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-rationale-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-g-quantity-0-rationale-2`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-0`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-1`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-2`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-3`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-feedback`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-prompt`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-rationale-1`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-1-rationale-2`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-0`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-1`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-2`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-feedback`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-prompt`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-2-rationale-1`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-0`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-1`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-2`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-3`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-feedback`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-prompt`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-rationale-1`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-3-rationale-2`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-0`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-1`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-2`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-feedback`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-prompt`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-i-pattern-4-rationale-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-0`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-3`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-feedback`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-prompt`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-rationale-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-1-rationale-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-0`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-feedback`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-prompt`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-2-rationale-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-0`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-3`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-feedback`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-prompt`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-rationale-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-3-rationale-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-0`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-feedback`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-prompt`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-4-rationale-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-0`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-feedback`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-prompt`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-5-rationale-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-0`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-feedback`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-prompt`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-6-rationale-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-0`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-feedback`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-prompt`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-7-rationale-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-0`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-feedback`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-prompt`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-8-rationale-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-0`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-1`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-2`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-feedback`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-prompt`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-i-quantity-9-rationale-1`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-check-pattern-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-check-quantity-body`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-guided-pattern-1-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-guided-quantity-1-body`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-rem-pattern-body`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-rem-pattern-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-rem-quantity-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-rem-quantity-title`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-1-body`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-1-title`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-2-body`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-2-title`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-3-body`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-3-title`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-4-body`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-4-title`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-5-body`
+- `obj-u9-pattern` PROVENANCE `prov-ca-u9-rule-u9-st-teach-pattern-5-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-1-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-1-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-10-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-10-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-2-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-2-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-3-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-3-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-4-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-4-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-5-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-5-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-6-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-6-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-7-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-7-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-8-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-8-title`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-9-body`
+- `obj-u9-quantity` PROVENANCE `prov-ca-u9-rule-u9-st-teach-quantity-9-title`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-g-cardinal-0`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-g-cardinal-0-distractor-1`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-g-hundreds-0`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-g-hundreds-0-distractor-1`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-g-teens-0`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-g-teens-0-distractor-1`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-g-tens-0`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-g-tens-0-distractor-1`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-1`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-1-distractor-1`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-2`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-2-distractor-1`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-3`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-3-distractor-1`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-4`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-4-distractor-1`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-1`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-1-distractor-1`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-2`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-2-distractor-1`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-3`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-3-distractor-1`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-1`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-1-distractor-1`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-2`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-2-distractor-1`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-3`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-3-distractor-1`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-1`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-1-distractor-1`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-2`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-2-distractor-1`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-3`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-3-distractor-1`
 - `obj-u9-odindva` PROVENANCE `prov-ex-or-u9-odindva-8`
 - `obj-u9-odindva` PROVENANCE `prov-ex-or-u9-odindva-8-gloss`
 - `obj-u9-odindva` PROVENANCE `prov-ex-or-u9-odindva-9`
@@ -13532,6 +21311,9 @@ permitsAppUse=true
 - `obj-u9-thousands` PROVENANCE `prov-ex-u9-thousands-7-ru`
 - `obj-u9-thousands` PROVENANCE `prov-ex-u9-thousands-7-ru-r0`
 - `obj-u9-thousands` PROVENANCE `prov-ex-u9-thousands-7-ru-r1`
+- `obj-u9-odindva` PROVENANCE `prov-u9-agreement-transfer-native-feminine`
+- `obj-u9-odindva` PROVENANCE `prov-u9-agreement-transfer-native-masculine`
+- `obj-u9-odindva` PROVENANCE `prov-u9-agreement-transfer-native-noun`
 - `obj-u9-cardinal` PROVENANCE `prov-u9-cardinal-rem`
 - `obj-u9-cardinal` PROVENANCE `prov-u9-cardinal-rem-r0`
 - `obj-u9-cardinal` PROVENANCE `prov-u9-cardinal-rem-r1`

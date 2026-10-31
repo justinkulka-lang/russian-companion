@@ -1,6 +1,12 @@
 package dev.russiancompanion.v2.ui
 
+import dev.russiancompanion.v2.curriculum.cumulativeReviewPolicy
+import dev.russiancompanion.v2.curriculum.cumulativeReviewTitle
+import dev.russiancompanion.v2.curriculum.currentCumulativeAssignment
+
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -44,10 +50,12 @@ import dev.russiancompanion.v2.curriculum.governedSelectionKey
 import dev.russiancompanion.v2.curriculum.currentObjective
 import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
+import dev.russiancompanion.v2.curriculum.lessonPresentedOptions
 import dev.russiancompanion.v2.curriculum.objectiveState
 import dev.russiancompanion.v2.curriculum.practiceOffers
 import dev.russiancompanion.v2.curriculum.readinessLabel
 import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
+import dev.russiancompanion.v2.curriculum.stepCompletionItemIds
 import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
 import dev.russiancompanion.v2.curriculum.recordGovernedIdentityForTests
@@ -123,13 +131,13 @@ internal fun V2LocalDataScreen(message: String, onRetry: () -> Unit) {
 
 @Composable
 internal fun V2OnboardingScreen(saveFailed: Boolean, onFinished: (V2OnboardingDraft) -> Unit) {
-    var page by remember { mutableIntStateOf(0) }
-    var penguin by remember { mutableStateOf(true) }
-    var anki by remember { mutableStateOf(false) }
-    var binder by remember { mutableStateOf(false) }
-    var tutor by remember { mutableStateOf(false) }
-    var start by remember { mutableStateOf(V2StartingPoint.NEW_TO_CYRILLIC) }
-    var minutes by remember { mutableIntStateOf(35) }
+    var page by rememberSaveable { mutableIntStateOf(0) }
+    var penguin by rememberSaveable { mutableStateOf(true) }
+    var anki by rememberSaveable { mutableStateOf(false) }
+    var binder by rememberSaveable { mutableStateOf(false) }
+    var tutor by rememberSaveable { mutableStateOf(false) }
+    var start by rememberSaveable { mutableStateOf(V2StartingPoint.NEW_TO_CYRILLIC) }
+    var minutes by rememberSaveable { mutableIntStateOf(35) }
     val title = when (page) {
         0 -> "Welcome"
         1 -> "Study system"
@@ -172,12 +180,12 @@ internal fun V2OnboardingScreen(saveFailed: Boolean, onFinished: (V2OnboardingDr
                 CompanionToggle("I have a tutor now", tutor) { tutor = it }
             }
             2 -> {
-                Text("New to Cyrillic is the recommended start. Resume from a later book lesson is not available while Units 3–30 are not installed.")
+                Text("New to Cyrillic is the recommended start. These choices adjust guidance; you will still begin at Unit 1.")
                 StartingChoice(V2StartingPoint.NEW_TO_CYRILLIC, start) { start = it }
                 StartingChoice(V2StartingPoint.CAN_READ_CYRILLIC, start) { start = it }
                 StartingChoice(V2StartingPoint.RESUME_FROM_BOOK, start) { start = it }
                 if (start == V2StartingPoint.RESUME_FROM_BOOK) {
-                    V2Status("Later units are not yet installed. You will still begin at Unit 1.")
+                    V2Status("You will begin at Unit 1. Choosing a starting point does not record any completed work.")
                 }
             }
             3 -> {
@@ -201,14 +209,10 @@ private fun CompanionToggle(label: String, selected: Boolean, onChange: (Boolean
         modifier = Modifier
             .fillMaxWidth()
             .heightIn(min = 48.dp)
-            .semantics {
-                role = Role.Checkbox
-                this.selected = selected
-                stateDescription = if (selected) "Selected" else "Not selected"
-            },
+            .toggleable(value = selected, role = Role.Checkbox, onValueChange = onChange),
         verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
     ) {
-        androidx.compose.material3.Checkbox(checked = selected, onCheckedChange = onChange)
+        androidx.compose.material3.Checkbox(checked = selected, onCheckedChange = null)
         Text(label)
     }
 }
@@ -224,14 +228,11 @@ private fun StartingChoice(value: V2StartingPoint, selected: V2StartingPoint, on
         modifier = Modifier
             .fillMaxWidth()
             .heightIn(min = 48.dp)
-            .semantics {
-                role = Role.RadioButton
-                this.selected = value == selected
-                stateDescription = if (value == selected) "Selected" else "Not selected"
-            },
+            .selectable(selected = value == selected, role = Role.RadioButton,
+                onClick = { if (value != selected) onSelect(value) }),
         verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
     ) {
-        RadioButton(selected = value == selected, onClick = { onSelect(value) })
+        RadioButton(selected = value == selected, onClick = null)
         Text(label)
     }
 }
@@ -372,6 +373,7 @@ internal fun V2UnitScreen(
     onOpenSession: (String) -> Unit,
     onAttestBook: (Int) -> Unit,
     onAdvance: (Int) -> Unit,
+    onOpenCumulativeReview: () -> Unit = {},
 ) {
     val unit = pack.unit(unitNumber) ?: return
     val state = unitState(pack, unit, learner)
@@ -428,6 +430,12 @@ internal fun V2UnitScreen(
                 modifier = Modifier.semantics { testTag = "v2-advancement-rule" },
             )
         }
+        if (cumulativeReviewPolicy(unit.number) != null) {
+            Text("Before advancing, complete the assigned earlier-objective review. Earlier lesson answers and optional practice do not complete this review.")
+            val reviewPolicyId = currentCumulativeAssignment(pack, learner, unit.number)?.policyId
+                ?: unit.advancement?.cumulativeReviewPolicyId
+            V2SecondaryButton(cumulativeReviewTitle(unit.number, reviewPolicyId), onOpenCumulativeReview, tag = "v2-open-cumulative-review")
+        }
         if (decision == null) {
             V2Status("Preparing advancement")
         } else {
@@ -474,6 +482,7 @@ internal fun V2SessionScreen(
     val routeStep = session.steps[index]
     var shownStepId by rememberSaveable(routeStep.id) { mutableStateOf(routeStep.id) }
     val step = if (remedial) pack.step(shownStepId)?.second ?: routeStep else routeStep
+    val requiredItemIds = remember(pack, step.id) { stepCompletionItemIds(pack, step.id).toSet() }
     fun selectedAnswer(stepId: String, itemId: String): String? {
         return selections[governedSelectionKey(stepId, itemId)]
     }
@@ -516,11 +525,11 @@ internal fun V2SessionScreen(
                         tag = "v2-return-to-check",
                     )
                 } else {
-                    val unanswered = step.itemIds.any { selectedAnswer(step.id, it) == null }
+                    val unanswered = requiredItemIds.any { selectedAnswer(step.id, it) == null }
                     V2PrimaryButton(
                         text = if (index == session.steps.lastIndex) "Finish session" else step.dominantAction,
                         onClick = {
-                            if (step.itemIds.any { selectedAnswer(step.id, it) == null }) return@V2PrimaryButton
+                            if (requiredItemIds.any { selectedAnswer(step.id, it) == null }) return@V2PrimaryButton
                             val stepId = step.id
                             onCompleteStep(stepId) {
                                 if (!navigationOpen.value || !consumedSteps.add(stepId)) return@onCompleteStep
@@ -537,8 +546,12 @@ internal fun V2SessionScreen(
         Text(step.title, style = MaterialTheme.typography.headlineSmall, modifier = Modifier.semantics { heading(); testTag = "v2-step-title" })
         V2Status("Step ${index + 1} of ${session.steps.size} · ${step.kind}")
             Text(step.body)
-            if (step.itemIds.any { selectedAnswer(step.id, it) == null }) {
-                V2Status("Answer each item before this step is recorded.")
+            if (requiredItemIds.any { selectedAnswer(step.id, it) == null }) {
+                V2Status(if (requiredItemIds.size == step.itemIds.size) {
+                    "Answer each item before this step is recorded."
+                } else {
+                    "Answer each required item before this step is recorded."
+                })
             }
         step.exampleIds.forEach { exampleId ->
             val example = pack.example(exampleId) ?: return@forEach
@@ -562,35 +575,26 @@ internal fun V2SessionScreen(
         }
         step.itemIds.forEach { itemId ->
             val item = pack.item(itemId) ?: return@forEach
+            if (itemId !in requiredItemIds) V2Status("Optional practice · not required to complete this step")
             val selected = selectedAnswer(step.id, item.id)
             val locked = item.id in lockedItemIds
-            item.promptLetter?.let { glyph ->
-                Text(
-                    glyph,
-                    style = MaterialTheme.typography.displayLarge,
-                    modifier = Modifier.semantics { testTag = "v2-prompt-letter" },
-                )
-            }
+            V2QuestionCue(item, "v2-prompt-letter")
             Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-item-prompt-${item.id}" })
-            item.options.forEach { option ->
+            lessonPresentedOptions(item, step.id).forEach { option ->
                 androidx.compose.foundation.layout.Row(
                     modifier = Modifier
                         .fillMaxWidth()
                         .heightIn(min = 48.dp)
-                        .semantics {
-                            role = Role.RadioButton
-                            this.selected = selected == option
-                        },
+                        .selectable(selected = selected == option, enabled = !locked,
+                            role = Role.RadioButton,
+                            onClick = { if (selected != option) onAttempt(item.id, option, step.id) })
+                        .semantics { testTag = "v2-option-${item.id}-$option" },
                     verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
                 ) {
                     RadioButton(
                         selected = selected == option,
                         enabled = !locked,
-                        onClick = {
-                            if (selected == option) return@RadioButton
-                            onAttempt(item.id, option, step.id)
-                        },
-                        modifier = Modifier.semantics { testTag = "v2-option-${item.id}-$option" },
+                        onClick = null,
                     )
                     Text(option)
                 }
@@ -601,6 +605,9 @@ internal fun V2SessionScreen(
                     if (correct) "Recorded as correct. ${item.feedback}" else "Not the reviewed answer. ${item.feedback}",
                     modifier = Modifier.semantics { testTag = "v2-item-feedback-${item.id}" },
                 )
+                selectedWrongOptionRationale(item, selected)?.let { rationale ->
+                    Text(rationale, Modifier.semantics { testTag = "v2-item-rationale-${item.id}" })
+                }
                 if (!correct) {
                     step.remediationStepId?.let { target ->
                         V2SecondaryButton(
@@ -790,7 +797,12 @@ internal fun V2ProgressScreen(
             modifier = Modifier.semantics { testTag = "v2-progress-heading" },
         )
         V2Status("Current unit: ${unit?.title ?: "Unavailable"}")
-        V2Status("Completed units: ${learner.completedUnitNumbers.sorted().joinToString().ifBlank { "none" }}")
+        val currentCompletions = dev.russiancompanion.v2.curriculum.currentCompletedUnitNumbers(pack, learner)
+        V2Status("Completed units: ${currentCompletions.sorted().joinToString().ifBlank { "none" }}")
+        val historicalOnly = learner.completedUnitNumbers - currentCompletions
+        if (historicalOnly.isNotEmpty()) {
+            V2Status("Past completion records need current evidence: ${historicalOnly.sorted().joinToString()}")
+        }
         V2Status("Book self-attestations: ${learner.bookAttestedUnits.sorted().joinToString().ifBlank { "none" }}")
         V2Status("In-app checks marked correct: ${learner.correctItemIds.size}. This count includes historical rows and is not current prescribed credit.")
         if (objectiveLines == null) {
@@ -882,5 +894,18 @@ internal fun V2AttributionsScreen(pack: V2CurriculumPack, onBack: () -> Unit) {
                 Spacer(Modifier.height(12.dp))
             }
         }
+    }
+}
+
+/** Text semantics expose the same complete governed cue in lesson and optional practice. */
+@Composable
+internal fun V2QuestionCue(item: dev.russiancompanion.v2.curriculum.V2CheckItem, tag: String) {
+    if (item.promptLetterRole != "CUE") return
+    item.promptLetter?.takeIf { it.isNotBlank() }?.let { cue ->
+        Text(
+            cue,
+            style = if (cue.length <= 3) MaterialTheme.typography.displayLarge else MaterialTheme.typography.titleLarge,
+            modifier = Modifier.semantics { testTag = tag },
+        )
     }
 }

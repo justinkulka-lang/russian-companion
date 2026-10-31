@@ -8,6 +8,11 @@ import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.foundation.layout.ime
+import androidx.compose.foundation.layout.union
+import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -65,6 +70,8 @@ internal fun V2Scaffold(
     Scaffold(
         modifier = Modifier
             .fillMaxSize()
+            // Own safe drawing and keyboard insets once; child bars keep zero insets.
+            .windowInsetsPadding(WindowInsets.safeDrawing.union(WindowInsets.ime))
             .semantics { testTag = "v2-scaffold" },
         containerColor = MaterialTheme.colorScheme.background,
         contentColor = MaterialTheme.colorScheme.onBackground,
@@ -83,6 +90,7 @@ internal fun V2Scaffold(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
+                .consumeWindowInsets(padding)
                 .verticalScroll(rememberScrollState())
                 .padding(horizontal = V2ContentInset, vertical = 12.dp)
                 .semantics { testTag = "v2-content" },
@@ -113,6 +121,7 @@ internal fun V2LazyScaffold(
     Scaffold(
         modifier = Modifier
             .fillMaxSize()
+            .windowInsetsPadding(WindowInsets.safeDrawing.union(WindowInsets.ime))
             .semantics { testTag = "v2-scaffold" },
         containerColor = MaterialTheme.colorScheme.background,
         contentColor = MaterialTheme.colorScheme.onBackground,
@@ -129,6 +138,7 @@ internal fun V2LazyScaffold(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
+                .consumeWindowInsets(padding)
                 .semantics { testTag = "v2-content" },
             contentPadding = PaddingValues(horizontal = V2ContentInset, vertical = 8.dp),
             content = content,

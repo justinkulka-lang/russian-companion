@@ -11,12 +11,12 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb
+- Curriculum source commit: ca0fdaeca8de81ab6a5d4935fbcdcb068c4af913
+- Unit content-review SHA-256: 8c3ae9bbd682e069dbcd4dc579c30af36bbce321120ce7da804260e5a44d7033
 - Mapping-package SHA-256: 0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484324e37d3
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: b684bbaae8bb6ae71491ef82b8ce1b25f16a468abfc3016aec5d6eafbcc70771
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: 5d6f5564d271465deea96092437dbb8c8c63dd949220432f97efecffc9c94484
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=90
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c61c7f46f9979151085f3a52de248123dd34cdefc792dd7f14610c5182a625ca
+- Content hash: a111aea02cf3cc0d22a3383d17d354e6d47a742009b76bda3af6d15cd80f5573
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=12
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u12-future-imp`
@@ -151,9 +151,9 @@ remediation=u12-st-rem-future-perf
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3e78f93db42f6a520b7357c6acc0721cfe38b9f8b27312ded160c4c8c158aec0
+- Content hash: da1a0b06d27bd1a03eba5fb3df2125687354b79e7219dba8edf2d818c92c327e
 
-title=Choose the admitted aspect partner
+title=Recognize the two taught aspect pairs
 kind=RECOGNITION
 unitNumber=12
 instruction=u12-st-orient,u12-st-teach-aspect-1,u12-st-teach-aspect-2,u12-st-teach-aspect-3
@@ -342,11 +342,11 @@ remediationStepId=u12-st-rem-future-imp
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 046526b4738b3eed8b7504c249ff2559a9dd082a139b4b2407a9dc46c868549e
+- Content hash: 8606bdebcb1344cf25171267191a0394c856475da45f252842682646b27995cf
 
 kind=TEACH
 title=Admitted instruction
-body=Imperfective verbs form the future by preceding the imperfective infinitive with the appropriate conjugation of the perfective verb '''быть'''.
+body=быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -386,13 +386,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6d6a76f2ed2ee8c049bb1e3a1a3b8e9710598f71ec3677e45ceba7a9c667d026
+- Content hash: 5d2bda80711a8b7ce1771d5679b829bdb2f80ec4bd7d6bd4b36a93f43a760df2
 
 kind=REMEDIATE
 title=Remediation
-body=Imperfective verbs form the future by preceding the imperfective infinitive with the appropriate conjugation of the perfective verb '''быть'''.
+body=быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-u12-future-imp-0,ex-u12-future-imp-1
 unavailableReason=
@@ -555,13 +555,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 28c5b3865ab24266173dc9342915555397e9b92c6a24bb4ff7d55deb2181ab94
+- Content hash: 77eef2d30ce4551db118f8b71379a805c62d8ab6317971960ca669a69c14de60
 
 kind=REMEDIATE
 title=Remediation
 body=Forming the future tense with perfective verbs is relative straight-forward: just conjugate the verb according to the standard rules of verbal conjugation.
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-u12-future-perf-0,ex-u12-future-perf-1
 unavailableReason=
@@ -599,12 +599,12 @@ remediationStepId=u12-st-rem-future-perf
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d60dc560d5bf4261bf13add3331242e94d0d1580c13d90a21ddd10f36dde3416
+- Content hash: a3956c99af60fe4a8b3cf0a1c9eaf35bc68ecc8bbecd24adc2c9861f34e00a09
 
-title=Choose the admitted aspect partner
+title=Recognize the two taught aspect pairs
 estimatedMinutes=12
 objectives=obj-u12-aspect
-steps=u12-st-teach-aspect-1,u12-st-guided-aspect-1,u12-st-teach-aspect-2,u12-st-teach-aspect-3,u12-st-rem-aspect,u12-st-check-aspect
+steps=u12-st-teach-aspect-1,u12-st-teach-aspect-2,u12-st-teach-aspect-3,u12-st-guided-aspect-1,u12-st-rem-aspect,u12-st-check-aspect
 
 ### STEP `u12-st-teach-aspect-1`
 
@@ -614,11 +614,11 @@ steps=u12-st-teach-aspect-1,u12-st-guided-aspect-1,u12-st-teach-aspect-2,u12-st-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9cec20ef943069bb220d4dd5093e7f365e3b39b3cc07a77b8a55acac85f36b04
+- Content hash: 207bdd051cae9336dc389f42a7cb561e433376af9b5d33324aadec5f1f2d80ed
 
 kind=TEACH
-title=Admitted lines
-body=говори́ть — to speak. сказа́ть — to speak. 
+title=Aspect and time
+body=Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -628,28 +628,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u12-st-guided-aspect-1`
-
-- Objectives: obj-u12-aspect
-- Sessions: u12-s-aspect
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c356b7f1bc6cbb23f23a568b317f8fe0b5010c515154db4a787c291c13a5d5f5
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u12-g-aspect-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u12-st-rem-aspect
-
 ### STEP `u12-st-teach-aspect-2`
 
 - Objectives: obj-u12-aspect
@@ -658,11 +636,11 @@ remediationStepId=u12-st-rem-aspect
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b909718b8b94d6f7c113d5d60edabcde5fb74303c6aa2d5647316bfb1f64c75c
+- Content hash: 0d040dbf05fec8f26a88661585039280bdd3c0afb759640cd60e48e2d3f6f844
 
 kind=TEACH
-title=Admitted instruction
-body=So, verbs in Russian have two words: an ''imperfective'' and a ''perfective'' aspect.
+title=The saying and telling pair
+body=Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -680,11 +658,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a07b890f364cb45d6b42b7aca996a21610c3122f1cd4d5b16767561ec419926a
+- Content hash: d81c05d12e91853b8a60fd70af95a17496b6c815e5f4b10741e3a9699475f544
 
 kind=TEACH
-title=Admitted lines
-body=де́лать — to do. сде́лать — to do. 
+title=A worked doing and making pair
+body=де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -694,6 +672,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u12-st-guided-aspect-1`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-aspect
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 10227ba91623dbe273a1a65462cf05ba2786adde79d2a4d7c9ae3f1df5e1492d
+
+kind=GUIDED
+title=Guided practice
+body=Choose the counterpart from the saying/telling pair. Then compare its aspect and meaning with the other option.
+dominantAction=Continue
+references=
+items=u12-g-aspect-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u12-st-rem-aspect
+
 ### STEP `u12-st-rem-aspect`
 
 - Objectives: obj-u12-aspect
@@ -702,15 +702,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1b89319b7be58664bdfc5fd2608f66f87279dd72755602f6dd75563a8def3ee8
+- Content hash: 9159677e6209ff7fef324811f5e838e5b9fb57e05f4bd88f9f406b3cc718a336
 
 kind=REMEDIATE
-title=Remediation
-body=So, verbs in Russian have two words: an ''imperfective'' and a ''perfective'' aspect.
+title=Review the two aspect pairs
+body=Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
+
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
+
+де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
-examples=ex-u12-aspect-0,ex-u12-aspect-1
+examples=ex-u12-aspect-0,ex-u12-aspect-1,ex-u12-aspect-2,ex-u12-aspect-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -724,11 +728,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 878557fe7c93343dc1a54c157cd2c8292f1eca1a52b9dfe16c755cd0bc7b6e00
+- Content hash: 38ff45cfc754e7564e0802aaed0b9307f48a51171ba070948e860ddd6a650e45
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Recognize the two taught aspect pairs. A missed check returns to the explanations and examples.
 dominantAction=Continue
 references=
 items=u12-i-aspect-1,u12-i-aspect-2
@@ -915,13 +919,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1c3e61ad1b017807832c5c63419e0fea8aad43787ace58a7686926f9a67d7114
+- Content hash: 38be7f7e580cc537807d6d9bba5578139c872bde203a1ab09fad2969119117a9
 
 kind=REMEDIATE
 title=Remediation
 body=The '''dative case''' is traditionally the third grammatical case, and denotes the indirect object of a verb.
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-or-u12-dative-0,ex-or-u12-dative-1
 unavailableReason=
@@ -1062,13 +1066,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b7a62d4de28be1f08a3356b2ca8ea55575e7dc03afa6cac7ee22925131fece09
+- Content hash: 552c3a7dc4fd61330d55e62002a3d1d963332bdf3bb568d3597a3427c225bd33
 
 kind=REMEDIATE
 title=Remediation
 body=This states that, if the stem ends in '''ж, ц, ч, ш''', or '''щ''', any unstressed '''o''' in an ending is instead written as '''e'''. For example, 'the good letter' is written '''хорошее письмо''' (and ''not'' '''хорошое письмо''').
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-or-u12-spelling-0,ex-or-u12-spelling-1
 unavailableReason=
@@ -1275,13 +1279,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 65156a20077e666efa315b9532eca2e929ef090b24fe2fcb08fb7e9ac7855885
+- Content hash: 70debc2b50364ec663a8784d84ec22ffda4f4c9d72fe22234e202833c5366b61
 
 kind=REMEDIATE
 title=Remediation
 body=The two plural endings, '''ах''' and '''ях''', follow the same rules as the [[Russian/Grammar/Instrumental case|instrumental]] and [[Russian/Grammar/Dative case|dative]] plurals: after consonants, '''o''', or '''а''', use the ending '''ах'''.
 dominantAction=Continue
-references=
+references=ref-ca-aspect
 items=
 examples=ex-or-u12-prep-plural-0,ex-or-u12-prep-plural-1
 unavailableReason=
@@ -1319,12 +1323,12 @@ remediationStepId=u12-st-rem-prep-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 43e6a8687d7380078bc5b2d0a269a3e6a472e3c48655c3f7756392e7a796d077
+- Content hash: b06d35ed04da2424196d185aa64a917dfd2a507acae22fd8c1a6ced84a6700a9
 
 title=Self-attest Lesson 12
 estimatedMinutes=10
 objectives=obj-u12-book
-steps=u12-st-book-work,u12-st-book
+steps=u12-st-book-work,u12-st-book,u12-st-anki-direction,u12-st-binder-direction,u12-st-tutor-direction,u12-st-cumulative-direction
 
 ### STEP `u12-st-book-work`
 
@@ -1334,7 +1338,7 @@ steps=u12-st-book-work,u12-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dc212e8a13b2093b7120e8d488ab1a8ec0ee151d8fc857aac273a6766772c0f8
+- Content hash: 5a5994b69b6862b168007b751327c35b89b4dd9d28d9387d15c7fe94ca24fe71
 
 kind=BOOK
 title=Work Lesson 12 in your copy
@@ -1344,7 +1348,7 @@ references=ref-u1115-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 12 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 12: printed pages 133-148. PDF indexes 145-160 are file locators, not printed pages. Observed section locators: §12.1 p133 (PDF 145); §12.2 p133 (PDF 145); §12.3 p134 (PDF 146); §12.4 p134 (PDF 146); §12.5 p136 (PDF 148); §12.6 p137 (PDF 149); §12.7 p137 (PDF 149); §12.8 p138 (PDF 150); §12.9 p138 (PDF 150); §12.10 p139 (PDF 151); §12.11 p140 (PDF 152); §12.12 p140 (PDF 152); §12.13 p141 (PDF 153); §12.14 p142 (PDF 154); §12.15 p142 (PDF 154); §12.16 p143 (PDF 155); §12.17 p143 (PDF 155); §12.18 p144 (PDF 156); §12.19 p146 (PDF 158). Observed exercise locators: 12/1 p135/PDF147; 12/2 p137/PDF149; 12/3 p139/PDF151; 12/4 p143/PDF155; 12/5 p143/PDF155; 12/6 p144/PDF156; 12/7 p147/PDF159. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1356,7 +1360,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a8e059a5916a4e2b5e417ab9b58934360b040901c30aa77efc59e9758a5553cb
+- Content hash: ce4bba6ac9325a0b68ea69366b69a2d419de6a461c67753959af78dd26b0d327
 
 kind=BOOK
 title=Record Lesson 12 book work
@@ -1366,8 +1370,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 12 work in your copy.
+bookDirection=Owned-book assignment for Lesson 12: printed pages 133-148. PDF indexes 145-160 are file locators, not printed pages. Observed section locators: §12.1 p133 (PDF 145); §12.2 p133 (PDF 145); §12.3 p134 (PDF 146); §12.4 p134 (PDF 146); §12.5 p136 (PDF 148); §12.6 p137 (PDF 149); §12.7 p137 (PDF 149); §12.8 p138 (PDF 150); §12.9 p138 (PDF 150); §12.10 p139 (PDF 151); §12.11 p140 (PDF 152); §12.12 p140 (PDF 152); §12.13 p141 (PDF 153); §12.14 p142 (PDF 154); §12.15 p142 (PDF 154); §12.16 p143 (PDF 155); §12.17 p143 (PDF 155); §12.18 p144 (PDF 156); §12.19 p146 (PDF 158). Observed exercise locators: 12/1 p135/PDF147; 12/2 p137/PDF149; 12/3 p139/PDF151; 12/4 p143/PDF155; 12/5 p143/PDF155; 12/6 p144/PDF156; 12/7 p147/PDF159. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u12-st-anki-direction`
+
+- Objectives: obj-u12-book
+- Sessions: u12-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 09d9825f209fe5497f13b5bc8eabdd72738335ddae5cb93954eab68b6ddfc640
+
+kind=ANKI
+title=Unit 12 AnkiDroid direction
+body=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u12-st-binder-direction`
+
+- Objectives: obj-u12-book
+- Sessions: u12-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5303aeef337bb6077f1e5dbbf3d65ff9ca262deb917ce182e23951f38e9351d9
+
+kind=BINDER
+title=Unit 12 binder prompt
+body=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u12-st-tutor-direction`
+
+- Objectives: obj-u12-book
+- Sessions: u12-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0fc3c89ef8df5f7f253af4b1b5e6775b2744c5a5468e231f30c46b64a71f218e
+
+kind=TUTOR
+title=Unit 12 optional tutor
+body=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u12-st-cumulative-direction`
+
+- Objectives: obj-u12-book
+- Sessions: u12-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 73ff414df4c4d01668195f3838dd5dd0ca0f36ff3e13f4853286b0567b52567b
+
+kind=ORIENT
+title=Unit 12 cumulative review
+body=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u12-future-imp-0`
@@ -1973,7 +2065,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3462d5b3523661e4f1ca38570381907888f90f07e6343fa378ef68868b3e714a
+- Content hash: 9379f804ccaed7c98edff79336ec399736b65f612554e7e0d67617c2d76b0d75
 
 kind=FORM_SELECTION
 language=en
@@ -1981,11 +2073,11 @@ prompt=Which admitted line is the first-person plural future?
 promptLetter=We will be speaking
 options=Мы бу́дем говори́ть | Я бу́ду говори́ть
 answer=Мы бу́дем говори́ть
-feedback=Does this answer show the first-person plural future? Мы бу́дем говори́ть.
+feedback=Мы бу́дем говори́ть is the first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.
 objectiveId=obj-u12-future-imp
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the first-person plural future?
+distractorRationales= | Я бу́ду говори́ть has a first-person singular subject and auxiliary, rather than the requested first-person plural future.
 testedFeature=FIRST_PERSON_PLURAL_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-future-imp-0
@@ -1993,8 +2085,8 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u12-future-imp-1-ru
 distractorSourceIds= | prov-ex-u12-future-imp-0-ru
-distractorDifference= | Does this row fail the first-person plural future?
-whyAnswerDemonstratesObjective=Does this answer show the first-person plural future?
+distractorDifference= | Я бу́ду говори́ть has a first-person singular subject and auxiliary, rather than the requested first-person plural future.
+whyAnswerDemonstratesObjective=Мы бу́дем говори́ть is the first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.
 contrastMembers=Мы бу́дем говори́ть | Я бу́ду говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-future-imp-1-en | prov-ex-u12-future-imp-1-ru | prov-ex-u12-future-imp-0-ru
@@ -2008,7 +2100,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 967c9f8dd2353731ca0f0b5f7981aae6dcc249ec5ab3bb6ee18c98a913408781
+- Content hash: a9fb620df2a1fac5941f56a7080d2fd6a1d5e677c8f9ba81168d9d33095c8a13
 
 kind=FORM_SELECTION
 language=en
@@ -2016,11 +2108,11 @@ prompt=Which admitted line is the first-person plural future?
 promptLetter=We will speak
 options=Мы ска́жем | Я скажу́
 answer=Мы ска́жем
-feedback=Does this answer show the first-person plural future? Мы ска́жем.
+feedback=Мы ска́жем is the first-person plural future of the perfective verb in this table, agreeing with we. Я скажу́ is first-person singular, agreeing with I. These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.
 objectiveId=obj-u12-future-perf
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the first-person plural future?
+distractorRationales= | Я скажу́ is first-person singular future, not first-person plural future.
 testedFeature=FIRST_PERSON_PLURAL_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-future-perf-0
@@ -2028,8 +2120,8 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u12-future-perf-1-ru
 distractorSourceIds= | prov-ex-u12-future-perf-0-ru
-distractorDifference= | Does this row fail the first-person plural future?
-whyAnswerDemonstratesObjective=Does this answer show the first-person plural future?
+distractorDifference= | Я скажу́ is first-person singular future, not first-person plural future.
+whyAnswerDemonstratesObjective=Мы ска́жем is the first-person plural future of the perfective verb in this table, agreeing with we. Я скажу́ is first-person singular, agreeing with I. These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.
 contrastMembers=Мы ска́жем | Я скажу́
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-future-perf-1-en | prov-ex-u12-future-perf-1-ru | prov-ex-u12-future-perf-0-ru
@@ -2043,19 +2135,19 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 187f2552b396b043f55c1042ba0cb70318bd463c5e1df57e9ce566253ca50e41
+- Content hash: 18bb9352c7a0ed76b9a4847d917805418851abbe180b83d80345e7a6bb92de61
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the perfective partner?
+prompt=For the saying/telling pair shown here, which verb is the perfective partner?
 promptLetter=говори́ть
 options=сказа́ть | де́лать
 answer=сказа́ть
-feedback=Does this answer show the perfective partner? сказа́ть.
+feedback=сказа́ть is the perfective partner of говори́ть in the saying/telling pair shown here.
 objectiveId=obj-u12-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the perfective partner?
+distractorRationales= | де́лать is imperfective and concerns doing/making, not this saying/telling partner.
 testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-aspect-0
@@ -2063,8 +2155,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u12-aspect-1-ru
 distractorSourceIds= | prov-ex-u12-aspect-2-ru
-distractorDifference= | Does this row fail the perfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
+distractorDifference= | де́лать is imperfective and concerns doing/making, not this saying/telling partner.
+whyAnswerDemonstratesObjective=сказа́ть is the perfective partner of говори́ть in the saying/telling pair shown here.
 contrastMembers=сказа́ть | де́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-0-ru | prov-ex-u12-aspect-1-ru | prov-ex-u12-aspect-2-ru
@@ -2078,7 +2170,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 12072b11f07fb354ac63eab8c54904e5d190db167d05b3c1f7d5f93fc8c60a25
+- Content hash: 360fdcdbe02c7f135122644c79c21ebdb7af6774f3d186cf454ace925f42cc6e
 
 kind=CASE_RECOGNITION
 language=en
@@ -2086,11 +2178,11 @@ prompt=Which admitted row is the dative singular?
 promptLetter=кни́га
 options=кни́ге | кни́ги
 answer=кни́ге
-feedback=Does this answer show the dative singular? кни́ге.
+feedback=кни́ге is the recorded dative singular form of кни́га. кни́ги is the nominative plural option supplied here, so it changes the number and table row. This question asks for the dative singular row; the same spelling as the answer can also be prepositional singular in a sentence.
 objectiveId=obj-u12-dative
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the dative singular?
+distractorRationales= | кни́ги is the nominative plural option supplied here, not the requested dative singular table row.
 testedFeature=DATIVE_SINGULAR
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-dative-0
@@ -2098,8 +2190,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u12-dative-1
 distractorSourceIds= | prov-ex-or-u12-dative-2
-distractorDifference= | Does this row fail the dative singular?
-whyAnswerDemonstratesObjective=Does this answer show the dative singular?
+distractorDifference= | кни́ги is the nominative plural option supplied here, not the requested dative singular table row.
+whyAnswerDemonstratesObjective=кни́ге is the recorded dative singular form of кни́га. кни́ги is the nominative plural option supplied here, so it changes the number and table row. This question asks for the dative singular row; the same spelling as the answer can also be prepositional singular in a sentence.
 contrastMembers=кни́ге | кни́ги
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-dative-0 | prov-ex-or-u12-dative-1 | prov-ex-or-u12-dative-2
@@ -2113,7 +2205,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0d88d05c056d4c94e9632f797d389040d843ce6aeaae44dfee657d19475d5fa5
+- Content hash: 50c4678ee70b2225764f6ebd02aefa1380500b31c321d9e914de259652eecea9
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2121,11 +2213,11 @@ prompt=Which admitted line is the accepted spelling rather than the rejected exa
 promptLetter=the good letter
 options=хорошее письмо | хорошое письмо
 answer=хорошее письмо
-feedback=Does this answer show the accepted spelling? хорошее письмо.
+feedback=хорошее письмо is the accepted spelling in the source example. The adjective stem ends in the consonant transliterated sh; its unstressed neuter ending uses e rather than o under the five-letter spelling rule. хорошое письмо is the rejected counterexample and should not be used as correct Russian.
 objectiveId=obj-u12-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the accepted spelling?
+distractorRationales= | хорошое письмо is the rejected spelling: it uses o where this unstressed adjective ending requires e.
 testedFeature=ACCEPTED_SPELLING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-spelling-0
@@ -2133,8 +2225,8 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u12-spelling-3-ru
 distractorSourceIds= | prov-u12-spelling-rem-r6
-distractorDifference= | Does this row fail the accepted spelling?
-whyAnswerDemonstratesObjective=Does this answer show the accepted spelling?
+distractorDifference= | хорошое письмо is the rejected spelling: it uses o where this unstressed adjective ending requires e.
+whyAnswerDemonstratesObjective=хорошее письмо is the accepted spelling in the source example. The adjective stem ends in the consonant transliterated sh; its unstressed neuter ending uses e rather than o under the five-letter spelling rule. хорошое письмо is the rejected counterexample and should not be used as correct Russian.
 contrastMembers=хорошее письмо | хорошое письмо
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-spelling-3-en | prov-ex-u12-spelling-3-ru | prov-u12-spelling-rem-r6
@@ -2148,7 +2240,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b3b6f92d48b62c80f8aa75fd05e4121e214a0511bbfb12d77b414eceeaf21365
+- Content hash: ede712044c245483899bb13b3edaaf6d8133a186db26e030de79f2f1adb330f7
 
 kind=CASE_RECOGNITION
 language=en
@@ -2156,11 +2248,11 @@ prompt=Which admitted row is the prepositional plural?
 promptLetter=кни́ги
 options=кни́гах | кни́ге
 answer=кни́гах
-feedback=Does this answer show the prepositional plural? кни́гах.
+feedback=кни́гах is the recorded prepositional plural form of the shown noun. кни́ге is the dative singular option supplied here and can also be prepositional singular. Neither singular use matches the plural row requested. These are table forms; the prepositional case is used with a governing preposition in a sentence.
 objectiveId=obj-u12-prep-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the prepositional plural?
+distractorRationales= | кни́ге is singular, including the supplied dative singular row, rather than prepositional plural.
 testedFeature=PREPOSITIONAL_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-prep-plural-0
@@ -2168,8 +2260,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u12-prep-plural-1
 distractorSourceIds= | prov-ex-or-u12-prep-plural-2
-distractorDifference= | Does this row fail the prepositional plural?
-whyAnswerDemonstratesObjective=Does this answer show the prepositional plural?
+distractorDifference= | кни́ге is singular, including the supplied dative singular row, rather than prepositional plural.
+whyAnswerDemonstratesObjective=кни́гах is the recorded prepositional plural form of the shown noun. кни́ге is the dative singular option supplied here and can also be prepositional singular. Neither singular use matches the plural row requested. These are table forms; the prepositional case is used with a governing preposition in a sentence.
 contrastMembers=кни́гах | кни́ге
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-prep-plural-0 | prov-ex-or-u12-prep-plural-1 | prov-ex-or-u12-prep-plural-2
@@ -2183,7 +2275,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 390fe622566d4357b0f8f79f4b996849b7bb8e33aca25252237c39bf3003f86e
+- Content hash: 406a811ed3d2631b79655482d439209a3ec00580851f3b8e65d5417d7eccb549
 
 kind=FORM_SELECTION
 language=en
@@ -2191,11 +2283,11 @@ prompt=Which admitted line is the first-person singular future?
 promptLetter=I will be speaking
 options=Я бу́ду говори́ть | Мы бу́дем говори́ть
 answer=Я бу́ду говори́ть
-feedback=Does this answer show the first-person singular future? Я бу́ду говори́ть.
+feedback=Я бу́ду говори́ть is the first-person singular future: the subject means I, and the future auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. The imperfective infinitive stays the same while the subject and auxiliary change.
 objectiveId=obj-u12-future-imp
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the first-person singular future?
+distractorRationales= | Мы бу́дем говори́ть has a first-person plural subject and auxiliary, rather than the requested first-person singular future.
 testedFeature=FIRST_PERSON_SINGULAR_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-future-imp-1
@@ -2203,8 +2295,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u12-future-imp-0-ru
 distractorSourceIds= | prov-ex-u12-future-imp-1-ru
-distractorDifference= | Does this row fail the first-person singular future?
-whyAnswerDemonstratesObjective=Does this answer show the first-person singular future?
+distractorDifference= | Мы бу́дем говори́ть has a first-person plural subject and auxiliary, rather than the requested first-person singular future.
+whyAnswerDemonstratesObjective=Я бу́ду говори́ть is the first-person singular future: the subject means I, and the future auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. The imperfective infinitive stays the same while the subject and auxiliary change.
 contrastMembers=Я бу́ду говори́ть | Мы бу́дем говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-future-imp-0-en | prov-ex-u12-future-imp-0-ru | prov-ex-u12-future-imp-1-ru
@@ -2218,7 +2310,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9f0251e38a76385dc28548d4525ad0d3b7a985b8b2c1f1e22e740efde585e794
+- Content hash: ff1b2c1d4d76fad7a320ebd36f302f0d1fd948eac098ed712919313d1337678d
 
 kind=FORM_SELECTION
 language=en
@@ -2226,11 +2318,11 @@ prompt=Which admitted line is the second-person plural future?
 promptLetter=Ты бу́дешь говори́ть
 options=Вы бу́дете говори́ть | Я бу́ду говори́ть
 answer=Вы бу́дете говори́ть
-feedback=Does this answer show the second-person plural future? Вы бу́дете говори́ть.
+feedback=Вы бу́дете говори́ть is the second-person plural future row: the auxiliary agrees with you in that row. This form can also address one person politely. Я бу́ду говори́ть is first-person singular and changes the person as well as the table number. The same imperfective infinitive follows each auxiliary.
 objectiveId=obj-u12-future-imp
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the second-person plural future?
+distractorRationales= | Я бу́ду говори́ть is first-person singular future, not the requested second-person plural future row.
 testedFeature=SECOND_PERSON_PLURAL_FUTURE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u12-future-imp-2
@@ -2238,8 +2330,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u12-future-imp-x-0
 distractorSourceIds= | prov-ex-u12-future-imp-0-ru
-distractorDifference= | Does this row fail the second-person plural future?
-whyAnswerDemonstratesObjective=Does this answer show the second-person plural future?
+distractorDifference= | Я бу́ду говори́ть is first-person singular future, not the requested second-person plural future row.
+whyAnswerDemonstratesObjective=Вы бу́дете говори́ть is the second-person plural future row: the auxiliary agrees with you in that row. This form can also address one person politely. Я бу́ду говори́ть is first-person singular and changes the person as well as the table number. The same imperfective infinitive follows each auxiliary.
 contrastMembers=Вы бу́дете говори́ть | Я бу́ду говори́ть
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-ex-u12-future-imp-2-ru | prov-u12-future-imp-x-0 | prov-ex-u12-future-imp-0-ru
@@ -2253,7 +2345,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f95a9843b119652c545e0f7f3aa74f6576d6abd5b87c7cd09dd4112d8659b86a
+- Content hash: c3d2514939421e881d31fab73ef0912a597adf2b68f19a64c56f3d33cc24c60e
 
 kind=FORM_SELECTION
 language=en
@@ -2261,11 +2353,11 @@ prompt=Which admitted row is the first-person plural future?
 promptLetter=скажу́
 options=ска́жем | ска́жешь
 answer=ска́жем
-feedback=Does this answer show the first-person plural future? ска́жем.
+feedback=ска́жем is the first-person plural future form of this perfective verb, used with we. ска́жешь is second-person singular, used with singular informal you. The cue shows first-person singular, but the requested table row is first-person plural.
 objectiveId=obj-u12-future-perf
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the first-person plural future?
+distractorRationales= | ска́жешь is second-person singular future, rather than the first-person plural future requested here.
 testedFeature=FIRST_PERSON_PLURAL_FUTURE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-future-perf-1
@@ -2273,8 +2365,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-future-perf-3
 distractorSourceIds= | prov-ex-or-u12-future-perf-4
-distractorDifference= | Does this row fail the first-person plural future?
-whyAnswerDemonstratesObjective=Does this answer show the first-person plural future?
+distractorDifference= | ска́жешь is second-person singular future, rather than the first-person plural future requested here.
+whyAnswerDemonstratesObjective=ска́жем is the first-person plural future form of this perfective verb, used with we. ска́жешь is second-person singular, used with singular informal you. The cue shows first-person singular, but the requested table row is first-person plural.
 contrastMembers=ска́жем | ска́жешь
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-future-perf-2 | prov-ex-or-u12-future-perf-3 | prov-ex-or-u12-future-perf-4
@@ -2288,7 +2380,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6ad74c64a7ba2c951d9afc7fbdd5bb852f5de97f072b7bfc2b7dc50813d97bc3
+- Content hash: 5ff2bcf3bd82131dc9211af901aa73e02cc64b5c7becb6522e90e429f83eed6a
 
 kind=FORM_SELECTION
 language=en
@@ -2296,11 +2388,11 @@ prompt=Which admitted line is the first-person singular future?
 promptLetter=I will speak
 options=Я скажу́ | Мы ска́жем
 answer=Я скажу́
-feedback=Does this answer show the first-person singular future? Я скажу́.
+feedback=Я скажу́ is the first-person singular future of the perfective verb in the table, agreeing with I. Мы ска́жем is first-person plural, agreeing with we. Both refer to the future with a single conjugated perfective verb; the question asks for one speaker.
 objectiveId=obj-u12-future-perf
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the first-person singular future?
+distractorRationales= | Мы ска́жем is first-person plural future, not first-person singular future.
 testedFeature=FIRST_PERSON_SINGULAR_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-future-perf-2
@@ -2308,8 +2400,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u12-future-perf-0-ru
 distractorSourceIds= | prov-ex-u12-future-perf-1-ru
-distractorDifference= | Does this row fail the first-person singular future?
-whyAnswerDemonstratesObjective=Does this answer show the first-person singular future?
+distractorDifference= | Мы ска́жем is first-person plural future, not first-person singular future.
+whyAnswerDemonstratesObjective=Я скажу́ is the first-person singular future of the perfective verb in the table, agreeing with I. Мы ска́жем is first-person plural, agreeing with we. Both refer to the future with a single conjugated perfective verb; the question asks for one speaker.
 contrastMembers=Я скажу́ | Мы ска́жем
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-future-perf-0-en | prov-ex-u12-future-perf-0-ru | prov-ex-u12-future-perf-1-ru
@@ -2323,19 +2415,19 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 979dc875897371c79d1e0946ae0d17e80621501d1e74b029ee17ed0fad9ae532
+- Content hash: 27eab2cd53ad76cc07d88b203ad22be4e97887ce4a1ab5114746a680bc144da3
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the imperfective partner?
+prompt=For the saying/telling pair shown here, which verb is the imperfective partner?
 promptLetter=сказа́ть
 options=говори́ть | сде́лать
 answer=говори́ть
-feedback=Does this answer show the imperfective partner? говори́ть.
+feedback=говори́ть is the imperfective partner of сказа́ть in the saying/telling pair shown here.
 objectiveId=obj-u12-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the imperfective partner?
+distractorRationales= | сде́лать is perfective and concerns doing/making, not this saying/telling partner.
 testedFeature=IMPERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-aspect-1
@@ -2343,8 +2435,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u12-aspect-0-ru
 distractorSourceIds= | prov-ex-u12-aspect-3-ru
-distractorDifference= | Does this row fail the imperfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the imperfective partner?
+distractorDifference= | сде́лать is perfective and concerns doing/making, not this saying/telling partner.
+whyAnswerDemonstratesObjective=говори́ть is the imperfective partner of сказа́ть in the saying/telling pair shown here.
 contrastMembers=говори́ть | сде́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-1-ru | prov-ex-u12-aspect-0-ru | prov-ex-u12-aspect-3-ru
@@ -2358,19 +2450,19 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e9b09fc299397cff6fe8022d3046615461cddba38fae65ec7bc5771b818118ad
+- Content hash: b556374004db8287086d4ed936161405134e2321290fe98a5f8a1db65143dd54
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the perfective partner?
+prompt=For the doing/making pair shown here, which verb is the perfective partner?
 promptLetter=де́лать
 options=сде́лать | говори́ть
 answer=сде́лать
-feedback=Does this answer show the perfective partner? сде́лать.
+feedback=сде́лать is the perfective partner of де́лать in the doing/making pair shown here.
 objectiveId=obj-u12-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the perfective partner?
+distractorRationales= | говори́ть is imperfective and concerns speaking/saying, not this doing/making partner.
 testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-aspect-2
@@ -2378,8 +2470,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u12-aspect-3-ru
 distractorSourceIds= | prov-ex-u12-aspect-0-ru
-distractorDifference= | Does this row fail the perfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
+distractorDifference= | говори́ть is imperfective and concerns speaking/saying, not this doing/making partner.
+whyAnswerDemonstratesObjective=сде́лать is the perfective partner of де́лать in the doing/making pair shown here.
 contrastMembers=сде́лать | говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-aspect-2-ru | prov-ex-u12-aspect-3-ru | prov-ex-u12-aspect-0-ru
@@ -2393,7 +2485,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1bd988f1b4f12693339557930deb279c543187c861eb6440426d7aa417c3d926
+- Content hash: a22d5691c19f4856eee97b6d18a66cdd05b8c4863e381a522ad9ebe46a8bc4d9
 
 kind=CASE_RECOGNITION
 language=en
@@ -2401,11 +2493,11 @@ prompt=Which admitted row is the dative singular?
 promptLetter=сто́л
 options=столу́ | столы́
 answer=столу́
-feedback=Does this answer show the dative singular? столу́.
+feedback=столу́ is the recorded dative singular form of сто́л. столы́ is the nominative plural option supplied here. Keep the noun singular and select its dative row, rather than selecting the plural nominative row.
 objectiveId=obj-u12-dative
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the dative singular?
+distractorRationales= | столы́ is nominative plural, not the requested dative singular.
 testedFeature=DATIVE_SINGULAR
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-dative-1
@@ -2413,8 +2505,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-dative-4
 distractorSourceIds= | prov-ex-or-u12-dative-5
-distractorDifference= | Does this row fail the dative singular?
-whyAnswerDemonstratesObjective=Does this answer show the dative singular?
+distractorDifference= | столы́ is nominative plural, not the requested dative singular.
+whyAnswerDemonstratesObjective=столу́ is the recorded dative singular form of сто́л. столы́ is the nominative plural option supplied here. Keep the noun singular and select its dative row, rather than selecting the plural nominative row.
 contrastMembers=столу́ | столы́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-dative-3 | prov-ex-or-u12-dative-4 | prov-ex-or-u12-dative-5
@@ -2428,7 +2520,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3d5b457dac99538ad2cbf1815e5ce230a717a66e843a0e2e72b82ddac71d80fa
+- Content hash: 472131351804465ebd6d4ec0c6b053f505337409679806606ff431210227f571
 
 kind=CASE_RECOGNITION
 language=en
@@ -2436,11 +2528,11 @@ prompt=Which admitted row is the dative singular?
 promptLetter=до́м
 options=до́му | дома́
 answer=до́му
-feedback=Does this answer show the dative singular? до́му.
+feedback=до́му is the recorded dative singular form of до́м. дома́ is the nominative plural option supplied here. The requested row changes case while keeping the noun singular; the plural option changes number instead.
 objectiveId=obj-u12-dative
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the dative singular?
+distractorRationales= | дома́ is nominative plural, not the requested dative singular.
 testedFeature=DATIVE_SINGULAR
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-dative-2
@@ -2448,8 +2540,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-dative-7
 distractorSourceIds= | prov-ex-or-u12-dative-8
-distractorDifference= | Does this row fail the dative singular?
-whyAnswerDemonstratesObjective=Does this answer show the dative singular?
+distractorDifference= | дома́ is nominative plural, not the requested dative singular.
+whyAnswerDemonstratesObjective=до́му is the recorded dative singular form of до́м. дома́ is the nominative plural option supplied here. The requested row changes case while keeping the noun singular; the plural option changes number instead.
 contrastMembers=до́му | дома́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-dative-6 | prov-ex-or-u12-dative-7 | prov-ex-or-u12-dative-8
@@ -2463,7 +2555,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 81be454def5ea43b885f22974ab8aad6315c01a2efe29618adfea5ab925093e7
+- Content hash: 48891b170a8e3181ac56a3dff47953af0b67630c0d47517795ee0d73c5cdf98c
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2471,11 +2563,11 @@ prompt=Which admitted row is the neuter form?
 promptLetter=хоро́ший
 options=хоро́шее | хоро́шая
 answer=хоро́шее
-feedback=Does this answer show the neuter form? хоро́шее.
+feedback=хоро́шее is the nominative singular neuter form of this adjective. хоро́шая is feminine singular. The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.
 objectiveId=obj-u12-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the neuter form?
+distractorRationales= | хоро́шая is feminine singular, not the requested neuter form.
 testedFeature=NEUTER_FORM
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-spelling-1
@@ -2483,8 +2575,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-spelling-1
 distractorSourceIds= | prov-ex-or-u12-spelling-2
-distractorDifference= | Does this row fail the neuter form?
-whyAnswerDemonstratesObjective=Does this answer show the neuter form?
+distractorDifference= | хоро́шая is feminine singular, not the requested neuter form.
+whyAnswerDemonstratesObjective=хоро́шее is the nominative singular neuter form of this adjective. хоро́шая is feminine singular. The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.
 contrastMembers=хоро́шее | хоро́шая
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-spelling-0 | prov-ex-or-u12-spelling-1 | prov-ex-or-u12-spelling-2
@@ -2498,7 +2590,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e46e887d14331e58632b28f283af742ca2ce2157814c8b1d364e0e2314103fca
+- Content hash: fe748559914ef1e2f4bb1bca6a57b6a4d95f4478d71282e2b41e800f1168db49
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -2506,11 +2598,11 @@ prompt=Which admitted line is the rejected spelling rather than the accepted exa
 promptLetter=the good letter
 options=хорошое письмо | хорошее письмо
 answer=хорошое письмо
-feedback=Does this answer show the rejected spelling? хорошое письмо.
+feedback=хорошое письмо is the rejected spelling requested by this question. Its unstressed adjective ending uses o where the five-letter rule requires e after the stem-final consonant transliterated sh. хорошее письмо is the accepted spelling. The keyed counterexample is incorrect Russian, not a form to use.
 objectiveId=obj-u12-spelling
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the rejected spelling?
+distractorRationales= | хорошее письмо is the accepted spelling, while this question asks you to identify the rejected spelling.
 testedFeature=REJECTED_SPELLING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u12-spelling-2
@@ -2518,8 +2610,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-u12-spelling-rem-r6
 distractorSourceIds= | prov-ex-u12-spelling-3-ru
-distractorDifference= | Does this row fail the rejected spelling?
-whyAnswerDemonstratesObjective=Does this answer show the rejected spelling?
+distractorDifference= | хорошее письмо is the accepted spelling, while this question asks you to identify the rejected spelling.
+whyAnswerDemonstratesObjective=хорошое письмо is the rejected spelling requested by this question. Its unstressed adjective ending uses o where the five-letter rule requires e after the stem-final consonant transliterated sh. хорошее письмо is the accepted spelling. The keyed counterexample is incorrect Russian, not a form to use.
 contrastMembers=хорошое письмо | хорошее письмо
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u12-spelling-3-en | prov-u12-spelling-rem-r6 | prov-ex-u12-spelling-3-ru
@@ -2533,7 +2625,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c6d9c15e660b1cc9372b8d4fd556e4d94b5a3b3a786c0908f254ea216d55a01b
+- Content hash: 8d8c7dad4402bc48efe4ffda4c6378b67589e8c711e7ead7bdfb6e1b265acfef
 
 kind=CASE_RECOGNITION
 language=en
@@ -2541,11 +2633,11 @@ prompt=Which admitted row is the prepositional plural?
 promptLetter=столы́
 options=стола́х | столу́
 answer=стола́х
-feedback=Does this answer show the prepositional plural? стола́х.
+feedback=стола́х is the recorded prepositional plural form of the shown noun. столу́ is the supplied dative singular option. The question requires both prepositional case and plural number; the singular dative option changes both features. In a sentence the prepositional form follows a governing preposition.
 objectiveId=obj-u12-prep-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the prepositional plural?
+distractorRationales= | столу́ is the supplied dative singular form, not prepositional plural.
 testedFeature=PREPOSITIONAL_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-prep-plural-1
@@ -2553,8 +2645,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-prep-plural-4
 distractorSourceIds= | prov-ex-or-u12-prep-plural-5
-distractorDifference= | Does this row fail the prepositional plural?
-whyAnswerDemonstratesObjective=Does this answer show the prepositional plural?
+distractorDifference= | столу́ is the supplied dative singular form, not prepositional plural.
+whyAnswerDemonstratesObjective=стола́х is the recorded prepositional plural form of the shown noun. столу́ is the supplied dative singular option. The question requires both prepositional case and plural number; the singular dative option changes both features. In a sentence the prepositional form follows a governing preposition.
 contrastMembers=стола́х | столу́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-prep-plural-3 | prov-ex-or-u12-prep-plural-4 | prov-ex-or-u12-prep-plural-5
@@ -2568,7 +2660,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b7e717a8363a88e7634fb7fc081911f385752ee37ec545537163327fffa99eaa
+- Content hash: 6ee6880ba3c0d48e8b3e338e25ad0b8d166bd3ce7733946327ef9f13c4c7ac44
 
 kind=CASE_RECOGNITION
 language=en
@@ -2576,11 +2668,11 @@ prompt=Which admitted row is the prepositional plural?
 promptLetter=дома́
 options=дома́х | до́му
 answer=дома́х
-feedback=Does this answer show the prepositional plural? дома́х.
+feedback=дома́х is the recorded prepositional plural form of the shown noun. до́му is the supplied dative singular option. Select the prepositional plural row while keeping the plural number of the cue. These are table forms; a sentence uses the prepositional case after a governing preposition.
 objectiveId=obj-u12-prep-plural
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the prepositional plural?
+distractorRationales= | до́му is the supplied dative singular form, not prepositional plural.
 testedFeature=PREPOSITIONAL_PLURAL
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u12-prep-plural-2
@@ -2588,8 +2680,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u12-prep-plural-7
 distractorSourceIds= | prov-ex-or-u12-prep-plural-8
-distractorDifference= | Does this row fail the prepositional plural?
-whyAnswerDemonstratesObjective=Does this answer show the prepositional plural?
+distractorDifference= | до́му is the supplied dative singular form, not prepositional plural.
+whyAnswerDemonstratesObjective=дома́х is the recorded prepositional plural form of the shown noun. до́му is the supplied dative singular option. Select the prepositional plural row while keeping the plural number of the cue. These are table forms; a sentence uses the prepositional case after a governing preposition.
 contrastMembers=дома́х | до́му
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u12-prep-plural-6 | prov-ex-or-u12-prep-plural-7 | prov-ex-or-u12-prep-plural-8
@@ -2612,6 +2704,2012 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=11
 searchTerms=units 11-15 source notice
 reviewStatus=NOT_REQUIRED
+
+### REFERENCE `ref-ca-aspect`
+
+- Objectives: none
+- Sessions: u12-s-future-imp, u12-s-future-perf, u12-s-aspect, u12-s-dative, u12-s-spelling, u12-s-prep-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: LINGUISTIC_INSTRUCTION
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44968248a727e7ea9dd05307e8334cc0e09b5ce2be47ffa16e3ef4064eebb429
+
+title=Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.
+summary=Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.
+detail=Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.
+classification=LINGUISTIC_INSTRUCTION
+introducedInUnit=12
+searchTerms=ref-ca-aspect
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### PROVENANCE `prov-ca-12-357`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72f54baf85005886c870497d9f78a18e42fd8101891dcbb4ae17c978a31aed50
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=9407608e608f2d7b5d77f88601f417bfb884077cead8e95ce3907506a00c5b06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-358`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75622a6a3fcb6bbe404c03c6df949159aaa68b6d999d6f3f273fcdf230916c43
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=буду,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=f04b5deb24c5581697f01183b5dca60552e7713920472d342f0e50a9a1ce3ce2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-359`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d80df9893c8048d1e250abe00884faa21182b8b34dac53b672aa7277cc7decb4
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=буду
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=a69a88b459d4e648fbc99e27e9054d2430ce09ef0b37e6e195d726b03a4d643c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-360`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00f71032f70e67697971da2c8690a3bfe975070be5c2bbf56715e29eb94aaa03
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будешь,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=ff6fed455ca09ad9287ff1aed9b5267731d5f080a758de0e5d2b15929731736d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-361`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54ab7970bf7f4e40d2b62287d40fa91f57cbc375026dbf7bf656755afd5400c3
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будешь
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=3b533136d4b83563a005faf83117f1a237e4a5365faf77dba9208482c1179d96
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-362`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 482f8502ffaf7f9067112a4c011ed838b83a3c8072e70c2c71c904565fe6f8a9
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будет,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=4a31865ed51b239df12786a6890f910a38f75164d2b73b39e58ece3451df18e9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-363`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73ca15ed9c4738696ff5ca67bb7f14130e66abfa92eac8292d11c9a07fb04120
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будет
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=07a2e9c8c27b186700fce8661a708c76d6c8c27077bea84625db37a3a5468a4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-364`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b9d49000878a47a0ab510eaa31214aea68c9dac7a573d31c8341bd08f1f70ba
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будем,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=112d04362af5a8aa2c6720fb376e82820eb9dfa1406bfe67f7c27557e63c6a73
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-365`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58d74efce758f59fd270a8fc6490f2243721babe06901bc53e3f021a8d13492a
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будем
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=1817066a4be45fea847564678444681b56950f33f2258bb93ed45067720ffc3d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-366`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41fbfda3066b2dfd04a44460e815a6791ae9e3379753d39a39fd366cd0644351
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будете,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=7e97ca84d2e3181016b8315e997fb77d1d03412407610cf96b2cd9f760e1f67c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-367`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8dc024e66915ba1572cdc4729772cd4ca8ba47ae1ab965c9f7a5d8e884a0b281
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будете
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=cc399f45d2297d96940de1541b1eae325bef4181f10d445af6525a106ee36e95
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-368`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a64ca497d4f755ff78e8735bfd213558b64644707bf5b05f7c2986d20105e9b0
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:u12-st-teach-future-imp-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+shippedText=будут
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eab6acbaf0cfaa619fc1971c2cf80a8b34f849aa109ec98d2d78d12fb37caa48
+contentHash=d50e903dda6067445680e8d59c52627dd7afdd0c122556987a216682b19c84ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-371`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6716acbb3239b13302ca62314c9e2f9d7026c934f8a1c741e1367dc7064957ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:u12-st-teach-aspect-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
+shippedText=Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5c802ebb6ad077fbf0dd479a83ce404550b9962d8441767cfd926931fb8c76a4
+contentHash=43e3f83bc81b3c3d5ef52119477e07bad8d132f9613cb64c05ea0fc0e299c895
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-372`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d80db00574be9afd523ecc89968b8913ff478d1d99d50c57e7c74ccab7464d5
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:u12-st-teach-aspect-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
+shippedText=говорить
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5c802ebb6ad077fbf0dd479a83ce404550b9962d8441767cfd926931fb8c76a4
+contentHash=638abb44738563f127000abca4a2c8df1b89f93217b94b9019c567279b714f32
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-373`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7d9d7919de98ac7610440b59881d3c3021767da6cd4a143cd370dc1660b07ba
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:u12-st-teach-aspect-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak.
+shippedText=сказать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5c802ebb6ad077fbf0dd479a83ce404550b9962d8441767cfd926931fb8c76a4
+contentHash=5ebbc57b6eb689b5070333ba0842b800cb0dc075224d16dd1576acc33082d416
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-12-630`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b7506ff20b2b718bfa83b57502fe4ff59f75129cc519d491a748968aadfbf5ed
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:ref-ca-aspect
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.
+shippedText=Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=477e42e4d1a0a7531a248233b77a10fb0dad059f4c936a1342f85fb2437145d9
+contentHash=27a9b993e49a778d14f09347fd6f66be61a33535d6eac1aaae71196d01b07450
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-g-dative-0`
+
+- Objectives: obj-u12-dative
+- Sessions: u12-s-orient, u12-s-dative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 132efb8a739a6eff4fe2512b4849553cbeac4015a0fa2af82965b3843111c268
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-dative:feedback:u12-g-dative-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+кни́ге is the recorded dative singular form of кни́га. кни́ги is the nominative plural option supplied here, so it changes the number and table row. This question asks for the dative singular row; the same spelling as the answer can also be prepositional singular in a sentence.
+shippedText=кни́ге is the recorded dative singular form of кни́га. кни́ги is the nominative plural option supplied here, so it changes the number and table row. This question asks for the dative singular row; the same spelling as the answer can also be prepositional singular in a sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb3bb756fcdadb6d745b51cf844a735045201599bb1df0d78b563b02fab02cf7
+contentHash=8fce551e982f015713e26d2ae9c331b33c48dbfe6c3de5faf0fc7439b4bfb491
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-g-dative-0-distractor-1`
+
+- Objectives: obj-u12-dative
+- Sessions: u12-s-orient, u12-s-dative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e1313cb9a9c41cbfa3310012aaa7a52e44c0f995ed7eb804a6f5beb99811ad3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-dative:feedback:u12-g-dative-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+кни́ги is the nominative plural option supplied here, not the requested dative singular table row.
+shippedText=кни́ги is the nominative plural option supplied here, not the requested dative singular table row.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8f49bdbee5bbd4a81418026d910d14cf117dc086b03afafdad46f7cb29b0c68f
+contentHash=86e7476c7ca5a392b79ffa9e0accf2d921f483746c6f5f80cdb86903dac188d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-g-future-imp-0`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 237915dd5182653fa81e2559252af02942072d1d66d787d1f9c79233b9453e85
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:feedback:u12-g-future-imp-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Мы бу́дем говори́ть is the first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.
+shippedText=Мы бу́дем говори́ть is the first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab26b4368f4125a1e8d2e76cc7f980258f63b44854034111b194e986dd78fca4
+contentHash=1121d1cf16c47c3274a3117702f6335560f355a42fee2695928faa901fd4bcbb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-g-future-imp-0-distractor-1`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a4f22e1f878a42f4d9a82d785abc638e435b2ea5b0a9b8d67ae2ec63f000433
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:feedback:u12-g-future-imp-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я бу́ду говори́ть has a first-person singular subject and auxiliary, rather than the requested first-person plural future.
+shippedText=Я бу́ду говори́ть has a first-person singular subject and auxiliary, rather than the requested first-person plural future.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=398f03d8ded689891ae35c644bb44735617f7076939d1854626a85599b2e2fe6
+contentHash=8cca971549b751717ebf6b8b0bc2fc76d0edde2b0e799adaac2cef161c69ad9a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-g-future-perf-0`
+
+- Objectives: obj-u12-future-perf
+- Sessions: u12-s-orient, u12-s-future-perf
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86c6dbc022662f271acceadae79fb9ad3ad8b148cfef39ee8301d49215a7b952
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-perf:feedback:u12-g-future-perf-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Мы ска́жем is the first-person plural future of the perfective verb in this table, agreeing with we. Я скажу́ is first-person singular, agreeing with I. These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.
+shippedText=Мы ска́жем is the first-person plural future of the perfective verb in this table, agreeing with we. Я скажу́ is first-person singular, agreeing with I. These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0de225dbd281a11f308c876124be517c7a2e8667d1eefbb0e029b7bed0ec930b
+contentHash=4c12eeecac57655938b138c87e6fada95bc1cb77f345b8d93656ad714ae12ef8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-g-future-perf-0-distractor-1`
+
+- Objectives: obj-u12-future-perf
+- Sessions: u12-s-orient, u12-s-future-perf
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 374ef136fead589b047f228f3b50805128b4c19eb8048f82df77a2d8c068600a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-perf:feedback:u12-g-future-perf-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я скажу́ is first-person singular future, not first-person plural future.
+shippedText=Я скажу́ is first-person singular future, not first-person plural future.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=450f18fa0624f78645b23d2336cc9a4f9f1ea4fb124d18a960e3c7d7a861719e
+contentHash=086b87093db18b0a4d43c155bf8d95f9de636e1cc17b267a8abfe3df211ad76c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-g-prep-plural-0`
+
+- Objectives: obj-u12-prep-plural
+- Sessions: u12-s-orient, u12-s-prep-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ad5cf1cdbd98c6ded4018d13e0128fdc3f00b172dd50417b494f2c6656cd4ab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-prep-plural:feedback:u12-g-prep-plural-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+кни́гах is the recorded prepositional plural form of the shown noun. кни́ге is the dative singular option supplied here and can also be prepositional singular. Neither singular use matches the plural row requested. These are table forms; the prepositional case is used with a governing preposition in a sentence.
+shippedText=кни́гах is the recorded prepositional plural form of the shown noun. кни́ге is the dative singular option supplied here and can also be prepositional singular. Neither singular use matches the plural row requested. These are table forms; the prepositional case is used with a governing preposition in a sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e8ca3eaa6ef4aa8b2615bb82845cb781ef0fb18637a18e4c57dbb3b7f7bdfec
+contentHash=c752f750bbb07b689f67d5d8622bc8dba856562077d3965e7453d051aacfd3fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-g-prep-plural-0-distractor-1`
+
+- Objectives: obj-u12-prep-plural
+- Sessions: u12-s-orient, u12-s-prep-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 474c9f09395a9464e7408caaf34a68afdd3d2a9d25170da70a2d97f2617b9827
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-prep-plural:feedback:u12-g-prep-plural-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+кни́ге is singular, including the supplied dative singular row, rather than prepositional plural.
+shippedText=кни́ге is singular, including the supplied dative singular row, rather than prepositional plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4b91ee9b67f476e5d92cf811f6f2bec0e95b9ac303b1b7000d2a13af6a1f675d
+contentHash=5edee5563b5580ee80b24e44455073a4e5e447ad14f17a40511972417c49e4f0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-g-spelling-0`
+
+- Objectives: obj-u12-spelling
+- Sessions: u12-s-orient, u12-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0646c151cd32808244c3925a71a7aac1b42bdc6b30f97837836fb2cb8e023c97
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-spelling:feedback:u12-g-spelling-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+хорошее письмо is the accepted spelling in the source example. The adjective stem ends in the consonant transliterated sh; its unstressed neuter ending uses e rather than o under the five-letter spelling rule. хорошое письмо is the rejected counterexample and should not be used as correct Russian.
+shippedText=хорошее письмо is the accepted spelling in the source example. The adjective stem ends in the consonant transliterated sh; its unstressed neuter ending uses e rather than o under the five-letter spelling rule. хорошое письмо is the rejected counterexample and should not be used as correct Russian.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25f02c220998137152f188a62db3dedf2b09c00e53da366edc8da84ef11bb66e
+contentHash=468fbc0ead31b9765050f386cdeffd4f7700eab13e6c37b1d3e83a39871c5298
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-g-spelling-0-distractor-1`
+
+- Objectives: obj-u12-spelling
+- Sessions: u12-s-orient, u12-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b347810dd3eb6da38e1cc6d7f009a5c7f9ce1b85f3d834684dd9399a48fc1a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-spelling:feedback:u12-g-spelling-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+хорошое письмо is the rejected spelling: it uses o where this unstressed adjective ending requires e.
+shippedText=хорошое письмо is the rejected spelling: it uses o where this unstressed adjective ending requires e.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=01d861ee6a5c51d6d47a80002fbc7a2d66e9cefbcbd2f07ba847c4924e5469a1
+contentHash=ea2ea4674f3b93c668df325c860babab42e269c40cde3bcef9e08677ff345f02
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-dative-1`
+
+- Objectives: obj-u12-dative
+- Sessions: u12-s-orient, u12-s-dative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b792130c1877114285a1587452c383e73961f398dd902c59b46a03e8fdf58115
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-dative:feedback:u12-i-dative-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+столу́ is the recorded dative singular form of сто́л. столы́ is the nominative plural option supplied here. Keep the noun singular and select its dative row, rather than selecting the plural nominative row.
+shippedText=столу́ is the recorded dative singular form of сто́л. столы́ is the nominative plural option supplied here. Keep the noun singular and select its dative row, rather than selecting the plural nominative row.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c70367dab86f6a5fb8047c0300d140469945e9ec6d1d4ffaa8f9f4f0fa7e171a
+contentHash=33959f465072461be505e284a4c97455da377341eb2e066b3773b3bc6000c3c0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-dative-1-distractor-1`
+
+- Objectives: obj-u12-dative
+- Sessions: u12-s-orient, u12-s-dative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ecabdb4c5277e77ec5ef82880787aa9cd1b2629e507983b5623de15731e130fa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-dative:feedback:u12-i-dative-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+столы́ is nominative plural, not the requested dative singular.
+shippedText=столы́ is nominative plural, not the requested dative singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d560c124a9242e8ada17545f0f768e1412f0de544a394cf07a8137bd5c5c16cd
+contentHash=8c204e85acdc353e7212c3e35571ad57ef7e310cd6ee6349b8a3e25db9ff448d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-dative-2`
+
+- Objectives: obj-u12-dative
+- Sessions: u12-s-orient, u12-s-dative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee628aa36efd60ebcd1edb0817dd0ec828b355067260b36db6e2bacc0e55860c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-dative:feedback:u12-i-dative-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+до́му is the recorded dative singular form of до́м. дома́ is the nominative plural option supplied here. The requested row changes case while keeping the noun singular; the plural option changes number instead.
+shippedText=до́му is the recorded dative singular form of до́м. дома́ is the nominative plural option supplied here. The requested row changes case while keeping the noun singular; the plural option changes number instead.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a2aa17a8cadda3c70dc2b68878b60aa92d288601ccb07936e182e923c7cffb69
+contentHash=7d412c8831eedcfd531ed7ff20e8faf0d2dd9ec90b66f0f24c69f8e90ef62c26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-dative-2-distractor-1`
+
+- Objectives: obj-u12-dative
+- Sessions: u12-s-orient, u12-s-dative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cff651e226a97b85a16c980e1a7327b9f967d0a4a8c1ecca58056d51b4240768
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-dative:feedback:u12-i-dative-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+дома́ is nominative plural, not the requested dative singular.
+shippedText=дома́ is nominative plural, not the requested dative singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1c7b51bf5bf1691e4cb1317bff24fe55089fbf3ddb3aa31c2e3938e91446d0cc
+contentHash=ef4eb4279b04b6d370ed9e6f2172a867e856dcdd30032734ee7a8de9e3d1f076
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-future-imp-1`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b9d235b7fced4ee14f79bdbdba532e603f9596ddfc0781474ddd39d58141109e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:feedback:u12-i-future-imp-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я бу́ду говори́ть is the first-person singular future: the subject means I, and the future auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. The imperfective infinitive stays the same while the subject and auxiliary change.
+shippedText=Я бу́ду говори́ть is the first-person singular future: the subject means I, and the future auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. The imperfective infinitive stays the same while the subject and auxiliary change.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=013e4c61508baf47a0940cdcf28c416725de47b672fd6845814ae9d25a5999a1
+contentHash=aa00a49f9403add8c8f6bfe7471164f68e9fd8dff0d33bc5a8f88029b0292b91
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-future-imp-1-distractor-1`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46614d876a5bd5a57004bd302d9aa36f2562740a0690a1cf72e57db36b79d383
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:feedback:u12-i-future-imp-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Мы бу́дем говори́ть has a first-person plural subject and auxiliary, rather than the requested first-person singular future.
+shippedText=Мы бу́дем говори́ть has a first-person plural subject and auxiliary, rather than the requested first-person singular future.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=998d4ec8188105897b6f0ee9a2db3b57dcb9435dbf298364939fdc2bce6a7232
+contentHash=1d39fa4b66f7410bb5bf7e3eec842bfd7f8b80cb80ad6a1e97f1daa03acd9e4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-future-imp-2`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4191a6e23996bea9a12b209c2bde07125e3ab6d78f22b7bba45635ab3f4dde1d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:feedback:u12-i-future-imp-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Вы бу́дете говори́ть is the second-person plural future row: the auxiliary agrees with you in that row. This form can also address one person politely. Я бу́ду говори́ть is first-person singular and changes the person as well as the table number. The same imperfective infinitive follows each auxiliary.
+shippedText=Вы бу́дете говори́ть is the second-person plural future row: the auxiliary agrees with you in that row. This form can also address one person politely. Я бу́ду говори́ть is first-person singular and changes the person as well as the table number. The same imperfective infinitive follows each auxiliary.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f57df6b783ac00806614106f0d545eb01052432b9e87da42ba73fbb9f4e0430e
+contentHash=cf17942139f102e1230187333a3e7adf124a18cd2ffec2a1489268c20b3a8666
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-future-imp-2-distractor-1`
+
+- Objectives: obj-u12-future-imp
+- Sessions: u12-s-orient, u12-s-future-imp
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71ac8b3bcd58a0972e70521815ff5867b494a988921e59a6cc30761dd1f64f1b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-imp:feedback:u12-i-future-imp-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я бу́ду говори́ть is first-person singular future, not the requested second-person plural future row.
+shippedText=Я бу́ду говори́ть is first-person singular future, not the requested second-person plural future row.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e2d5dbda48d5b0b5694cb0c205b5e9fde430127653328a719e738fbb3ad7c72
+contentHash=4c28ba1aa6d16a8281fba421896f814250606e9f9fabaa064b5dbb85d2742adf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-future-perf-1`
+
+- Objectives: obj-u12-future-perf
+- Sessions: u12-s-orient, u12-s-future-perf
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d819529f8e931bbe8fbd25555dccbffa889b78e2cd6d2d09133c8c9f21ded3a5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-perf:feedback:u12-i-future-perf-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+ска́жем is the first-person plural future form of this perfective verb, used with we. ска́жешь is second-person singular, used with singular informal you. The cue shows first-person singular, but the requested table row is first-person plural.
+shippedText=ска́жем is the first-person plural future form of this perfective verb, used with we. ска́жешь is second-person singular, used with singular informal you. The cue shows first-person singular, but the requested table row is first-person plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=00a5c1b26e2b1232fb02ffb92df8a60c2d072f3ad595fc74b1325223051f56b9
+contentHash=78a1304c8c93c4a4f21ee99e65b975c936a63928d8fc37a7a5a3ec0244ffd8ea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-future-perf-1-distractor-1`
+
+- Objectives: obj-u12-future-perf
+- Sessions: u12-s-orient, u12-s-future-perf
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41d0831d2d85d0428e88b65d728a2f956a9a1a2f13d463236535823fac152ea7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-perf:feedback:u12-i-future-perf-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+ска́жешь is second-person singular future, rather than the first-person plural future requested here.
+shippedText=ска́жешь is second-person singular future, rather than the first-person plural future requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=92ef8698ba791e4599edb82597f613b7e8df81cd4cc8dfc4ef80b624bdbbe5f6
+contentHash=a6757ca1fa04d3c9f2f5290fa720beed07d347bdb5073a72b55dabc505a480d7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-future-perf-2`
+
+- Objectives: obj-u12-future-perf
+- Sessions: u12-s-orient, u12-s-future-perf
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83d933d64f7b1ee54a6ce434eafb35f2b8eff43146063b9cefa71db05a7e3f06
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-perf:feedback:u12-i-future-perf-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я скажу́ is the first-person singular future of the perfective verb in the table, agreeing with I. Мы ска́жем is first-person plural, agreeing with we. Both refer to the future with a single conjugated perfective verb; the question asks for one speaker.
+shippedText=Я скажу́ is the first-person singular future of the perfective verb in the table, agreeing with I. Мы ска́жем is first-person plural, agreeing with we. Both refer to the future with a single conjugated perfective verb; the question asks for one speaker.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9768c0191d765010b3e2a5d8f75bea405f3851897a523f68c196888dcaa538ba
+contentHash=cf2aa328a907703492452814018d118a2cd2b0951051371e8ec2e969eeb8e84f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-future-perf-2-distractor-1`
+
+- Objectives: obj-u12-future-perf
+- Sessions: u12-s-orient, u12-s-future-perf
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9550cb1ae5aebbcfb7d22621da66a31e2d5f09c61e5e9d59568774979c46739
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-future-perf:feedback:u12-i-future-perf-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Мы ска́жем is first-person plural future, not first-person singular future.
+shippedText=Мы ска́жем is first-person plural future, not first-person singular future.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb96fd4816ac21d660f6ca226df51116ccd1368d60dcbf9a15e8a7a54a5230a7
+contentHash=10b2c6a5f55778770587777858940b089b853c070859f7c63f02daee67ca4671
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-prep-plural-1`
+
+- Objectives: obj-u12-prep-plural
+- Sessions: u12-s-orient, u12-s-prep-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c7726ec88fc952eef384c5e5fb435b1cbff1ee4e0811d086c940a8525fa8736
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-prep-plural:feedback:u12-i-prep-plural-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+стола́х is the recorded prepositional plural form of the shown noun. столу́ is the supplied dative singular option. The question requires both prepositional case and plural number; the singular dative option changes both features. In a sentence the prepositional form follows a governing preposition.
+shippedText=стола́х is the recorded prepositional plural form of the shown noun. столу́ is the supplied dative singular option. The question requires both prepositional case and plural number; the singular dative option changes both features. In a sentence the prepositional form follows a governing preposition.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4e8ba1fc1c29548dde8949d1797c1ae2c38799bb92668ce06106e64e4f0fff
+contentHash=a02550f2007407fbc74921d098db1e9f512af31fb7bd308abc3439956cf4943c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-prep-plural-1-distractor-1`
+
+- Objectives: obj-u12-prep-plural
+- Sessions: u12-s-orient, u12-s-prep-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2dc223e233f3362d61e3c5c0c85bf05b3ed45a0afda0d90275d13d3ca667bf38
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-prep-plural:feedback:u12-i-prep-plural-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+столу́ is the supplied dative singular form, not prepositional plural.
+shippedText=столу́ is the supplied dative singular form, not prepositional plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fffae92a25d31b0451106c1926804492b893918b68031b3d40202389ff4bd24b
+contentHash=f8c1685479b0ec7b6eef60f35f8e82dbe06cfba49253ff76642d6edc59ad5fd5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-prep-plural-2`
+
+- Objectives: obj-u12-prep-plural
+- Sessions: u12-s-orient, u12-s-prep-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd09d28ae815c76ff25a234595cd8a33f29a13e9dbf0b1edeaf2b5c5d8bd49a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-prep-plural:feedback:u12-i-prep-plural-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+дома́х is the recorded prepositional plural form of the shown noun. до́му is the supplied dative singular option. Select the prepositional plural row while keeping the plural number of the cue. These are table forms; a sentence uses the prepositional case after a governing preposition.
+shippedText=дома́х is the recorded prepositional plural form of the shown noun. до́му is the supplied dative singular option. Select the prepositional plural row while keeping the plural number of the cue. These are table forms; a sentence uses the prepositional case after a governing preposition.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d6c6d5ced60e8d9a6e652a5032d9152040d1329e7d3f7c7764311d6d382ffed2
+contentHash=620874317501ab5630f1a3c670f703772c3a9e6d0f0c2a6c4b62a8c305a5d85e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-prep-plural-2-distractor-1`
+
+- Objectives: obj-u12-prep-plural
+- Sessions: u12-s-orient, u12-s-prep-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67f100381d9ab17e6e9e466a14faf58fbd21a8c7b17afcf0dd4ab7aade82624d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-prep-plural:feedback:u12-i-prep-plural-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+до́му is the supplied dative singular form, not prepositional plural.
+shippedText=до́му is the supplied dative singular form, not prepositional plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2f304afc2490802bc188baf92548d45e2531fe172b5cce341b1688dffe0ec00c
+contentHash=40fc6f3d3d91ebcaa48d4a2c7b65edc8f208f1141becc7faedd8c4891de28f5b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-spelling-1`
+
+- Objectives: obj-u12-spelling
+- Sessions: u12-s-orient, u12-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d8a5426a92c22120220b6be7cefdd9eb15cff4973e4de140a002b903f37a93a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-spelling:feedback:u12-i-spelling-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+хоро́шее is the nominative singular neuter form of this adjective. хоро́шая is feminine singular. The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.
+shippedText=хоро́шее is the nominative singular neuter form of this adjective. хоро́шая is feminine singular. The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1b62974018dbface9987e8ec32eb7a04e4d37ee46947279e8921fe8b6f4330c9
+contentHash=b1d229dabc4eaba7c85da317f5b62c0407d0acf9eff13ea4656cf8fff9fcd18f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-spelling-1-distractor-1`
+
+- Objectives: obj-u12-spelling
+- Sessions: u12-s-orient, u12-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8cfb0124284a6168b25a0f62252995436bc36092b5d4389d7097b5f5561f5935
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-spelling:feedback:u12-i-spelling-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+хоро́шая is feminine singular, not the requested neuter form.
+shippedText=хоро́шая is feminine singular, not the requested neuter form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=63d193ed5ae630b81a46235c1a4d02f908e9347f433d8f940a88d8973bcd1b8f
+contentHash=0b015133d78bdee0abe0438830a067019f579f230341850cf4840fcf011bf54e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-spelling-2`
+
+- Objectives: obj-u12-spelling
+- Sessions: u12-s-orient, u12-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c56feead0fff0611af8078cd6e1fe2ca341da43bf21d5d1dfb1054bc59c4ea25
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-spelling:feedback:u12-i-spelling-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+хорошое письмо is the rejected spelling requested by this question. Its unstressed adjective ending uses o where the five-letter rule requires e after the stem-final consonant transliterated sh. хорошее письмо is the accepted spelling. The keyed counterexample is incorrect Russian, not a form to use.
+shippedText=хорошое письмо is the rejected spelling requested by this question. Its unstressed adjective ending uses o where the five-letter rule requires e after the stem-final consonant transliterated sh. хорошее письмо is the accepted spelling. The keyed counterexample is incorrect Russian, not a form to use.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9fe980581b0d586f0d2e5925bb21e4b3376619a8edf2e9f6fd2cad3de00d86f
+contentHash=6b15c40a499b8cf473c9cccde00910a886ea82057331686d5b1aa8030faddaa6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-feedback-u12-i-spelling-2-distractor-1`
+
+- Objectives: obj-u12-spelling
+- Sessions: u12-s-orient, u12-s-spelling
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 948292705c59616a095ff9471bc566f50b4801d24df3dc31f83b99278635cf6e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-spelling:feedback:u12-i-spelling-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+хорошее письмо is the accepted spelling, while this question asks you to identify the rejected spelling.
+shippedText=хорошее письмо is the accepted spelling, while this question asks you to identify the rejected spelling.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7503471d0a7a8c957ff4c30083b8117c276c3866e13c7ba7dbcf4bac6c7b8008
+contentHash=8fc991e925026f0600e6c933ce7d4bf5f2f78d5ae1542a0314f248921a9618cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-check-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: afe084a70827f1d6685a856628a43ed1c2bc7658cd5be5ab8004e6e9370098c4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:check-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Recognize the two taught aspect pairs. A missed check returns to the explanations and examples.
+shippedText=Recognize the two taught aspect pairs. A missed check returns to the explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ca952ac7b398040f3da4d1db1d9cc2bc439b1eb2611192282a9524ae6c04ca79
+contentHash=4646e65f86d1096b7f275f634c67d29f689e05227559cc9ec6cebf0fc485b8b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-guided-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c3d53785e1ac6412ddf2a5d9d26534ad0e8f0b16b070e987144ec10a5c7beff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:guided-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Choose the counterpart from the saying/telling pair. Then compare its aspect and meaning with the other option.
+shippedText=Choose the counterpart from the saying/telling pair. Then compare its aspect and meaning with the other option.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=83fea5dbee5907d2f86ff6eb2325a590c982f64cd58daabb9572d896aa70e47d
+contentHash=71f1a3dc13d023e45dc858142f3dc2a855ee67c65a2498e61d573150ba220f2e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-objective-title`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e8d57f2eea94c4b9e9840e76e960730363c8611eb627dd6ed0719ae9aab40147
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:objective-title
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Recognize the two taught aspect pairs
+shippedText=Recognize the two taught aspect pairs
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a0d30c95948f43d647fbb321b5b4311a370f01c161276c3ffcde55042ae17db
+contentHash=2571ea9b85b3a4daebffd2746629d62c6b18971259e051ace0ed0275f7479d91
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-rem-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 905bdabf31ea7bf2de5edba2edba04780e5b47d2d677046fff54f82321baef2e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:rem-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
+
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
+
+де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
+shippedText=Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
+
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
+
+де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6e65666450481dd7e7444025f8bd23c8b7754a779a16d5ca0541654821b6274c
+contentHash=656b97a08b07f439b6609b7b80e1367ac363c77261af9cea43174d496c444719
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-rem-title`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e489253b78c912c199a173a3d0ec4e96c4eab957d232560d0107caee60edd821
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:rem-title
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Review the two aspect pairs
+shippedText=Review the two aspect pairs
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8eef80be31574cee16419eef35cc31915c91b4eb0c34ba41680601e0977223f1
+contentHash=da15237e365ba08f59474e623a956f6aa774b7fa3f86810668ea56386434efac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-1-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4317e9a3ba47e1ea0590411128a6aa87aa0d917844ad5de5fa3b242481fa4937
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-1-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
+shippedText=Aspect describes how an action is viewed, not when it happens. Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint. Perfective presents an event with its boundary or result. Imperfective does not by itself mean unfinished. говори́ть is imperfective; сказа́ть is perfective. These infinitives do not specify tense on their own.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=33ae34fa833c515fa0a10b0866348bbe70280676aa132e369c28ba03e581dcdc
+contentHash=0846b9e4c649e0078e9b03f87dc3662ea78f1befa2f8232209a8f66e9d541e60
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-1-title`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f38d526506e45163f6c822516612615b0e3111c9bcdc2ce8f5e32d686fd7cddc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-1-title
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Aspect and time
+shippedText=Aspect and time
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dcf76e05469b449942efe7d730e41ee8f7d928717073d7bd969390c3ca5f72a7
+contentHash=20631f88fe8e6cc227fb07229e512c3c295c900dd9d02b7b320a0d131e910889
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-2-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 251225281a69baa161952389d8fe79c4e301f94383560379347b36536dcd7d08
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-2-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
+shippedText=Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic. говорить and сказать are context-dependent counterparts, not a universal pair for the English verb speak. For the saying/telling pair shown here, the perfective counterpart of говори́ть is сказа́ть; the imperfective counterpart of сказа́ть is говори́ть. These checks ask you to recognize this vocabulary pair, not choose aspect in a sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=998cd09a44ad41240ae5a14fd7be3339adecd51b59130f3c349618230dfdbb84
+contentHash=390411581ba322a192646152d426eb1916ec6b767e62768edb546a4a35f124fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-2-title`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff7accfc28118bd9e9292bd89031c3b90d67d966fbd34fb587b54816d9d2711d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-2-title
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+The saying and telling pair
+shippedText=The saying and telling pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=45560d883126f529d8bf663d4d216afc990fc1a09fd6ce052a7785dd509d7292
+contentHash=8e75ca06599f175d7674c4b836278186afe504938838ab11489f1261abf17b93
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-3-body`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31f33f4ebfa56d5e26398df1042f505f6fccfc4a628fd35bacc9ab78adac3e89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-3-body
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
+shippedText=де́лать is imperfective; сде́лать is perfective. Both concern doing or making. The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus. Given де́лать and a request for its perfective counterpart, choose сде́лать. говори́ть concerns speaking or saying and belongs to the other pair. Learn the shown pair rather than assuming every prefix changes only aspect.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=389ea0abf2c381834db7af15be81397d50c38d4025680437f52de7823abd3ad3
+contentHash=ead32a9e67366d28da0608931b975538c3c886722a883223db89129557f0c793
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-teach-3-title`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40b76b4b3951d3c7d7c3ebdba594d6cadd7145c3d8a70cdd5d629daca4496dab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:teach-3-title
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+A worked doing and making pair
+shippedText=A worked doing and making pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3b077abe9554a66e8af0ae4ee9487cb44869c54cc78f1f1ced723d7d2fb596c4
+contentHash=146c37f4e8bddda19b9c9f43108706bb49fff76d60bd8ef84afb3a3af53ff547
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-distractor`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 427f6d1fd74352a597b1eb04e7386ec95f70091b0d7d9a86c8e749093fe32ee8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-g-aspect-0-distractor
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+де́лать is imperfective and concerns doing/making, not this saying/telling partner.
+shippedText=де́лать is imperfective and concerns doing/making, not this saying/telling partner.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=62ce59db8ed382d23edfd4e0e72859aa1484731b6ea32459a4c8089197e4eb85
+contentHash=11f565e79af27987553373c133b8b6557c11dc95d6e2329f17cc75956eb4e800
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-feedback`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e448a422862267e2e1a95c1172e5cb231a633667d0cfe9764c415c72f30d065
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-g-aspect-0-feedback
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+сказа́ть is the perfective partner of говори́ть in the saying/telling pair shown here.
+shippedText=сказа́ть is the perfective partner of говори́ть in the saying/telling pair shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cae377bd7e32db44857b4e415522606ca6eb0c46b3531cdb6e505f21a2daec84
+contentHash=c3e7720d8a4f4061e75a88b65dabf71673eb46777b84703def6534575bac3f1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-prompt`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0414ea0f14b72e506e18b43dafd4128975056362599282b2986a3ce97e96c468
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-g-aspect-0-prompt
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+For the saying/telling pair shown here, which verb is the perfective partner?
+shippedText=For the saying/telling pair shown here, which verb is the perfective partner?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb359933228e554b3f0e5fc12f659c467ed815627af7c729ea14199834cf873b
+contentHash=1a988c2edb6a5fb762217fab5da28853d0cbbeae531ea74a649a687f36781eec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-distractor`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1d8d633e808b447593f8053393ed52f77bbc3a2b55bcea89a8001dc5d14e016
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-1-distractor
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+сде́лать is perfective and concerns doing/making, not this saying/telling partner.
+shippedText=сде́лать is perfective and concerns doing/making, not this saying/telling partner.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8c6fb2e093fb9ffc222857e3b6ad448d19dd6807ab73f4f5483f43ca0225ecd6
+contentHash=2ba921018c14a4dd3a3bb76bd5de76920c524afaf7662ea07ee8a5fab092e3fe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-feedback`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb12d82225a9d1bdf62f212f0b5fc9f83c4aad14ed4a8789bfd0436969cc0b4d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-1-feedback
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+говори́ть is the imperfective partner of сказа́ть in the saying/telling pair shown here.
+shippedText=говори́ть is the imperfective partner of сказа́ть in the saying/telling pair shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2811699cdc38ec4a92d7554f2b3b79787f6e1cab204425fffbe3adcdf78b0e8a
+contentHash=83e9879a97b233ed5958f3ffaedf8578fe158f720e650c2253eb8b55709cb151
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-prompt`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21f81b31ea0ffa5a7761d309c097c5645ccb69ee3dfe0a39900d94b05378ee30
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-1-prompt
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+For the saying/telling pair shown here, which verb is the imperfective partner?
+shippedText=For the saying/telling pair shown here, which verb is the imperfective partner?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b1ccb182c72d7fb6ff726a80b53439d388cde0a6564817edeaf0a8857e1a47af
+contentHash=71d868740e888e4cceed0c8b66e3ebbe86b4dc999a1680a6af47a40c060abef1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-distractor`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7395eafbb76d10a51181f3ca23a511ea494c43a65f4793e6e076615890555db8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-2-distractor
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+говори́ть is imperfective and concerns speaking/saying, not this doing/making partner.
+shippedText=говори́ть is imperfective and concerns speaking/saying, not this doing/making partner.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=71e3db5e910c908ce73adbb3e202ca5682a27d7b2dc96ed9bf747770964e31dc
+contentHash=39c80e6943e296d15f1b9405d96adea90e09c42dd5eeee578e94ef286244ad57
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-feedback`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa30491588b696357a2b267c39e8cda5b249a3c97cc88d2d322d60efd1b18d64
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-2-feedback
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+сде́лать is the perfective partner of де́лать in the doing/making pair shown here.
+shippedText=сде́лать is the perfective partner of де́лать in the doing/making pair shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ac1812d577e37995306aca9db26828a07cb117ba9fe75ebf829189c01deb333b
+contentHash=2b9dd065f1a4cff8e7b3f1671467261a9f44ccda0a847c3d07a7990532232f0a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-prompt`
+
+- Objectives: obj-u12-aspect
+- Sessions: u12-s-orient, u12-s-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0feff9714895cc1b2cf5cecff80ff4cf547a0c79ea23242572c01406b2b3be72
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u12-aspect:worked:u12-i-aspect-2-prompt
+originalSourceText=Cornell Russian Language Program: Verbs, Aspect, https://russian.cornell.edu/grammar/html/gr04_d.htm; Aspect partners, https://russian.cornell.edu/grammar/html/gr08_b.htm. University of Kansas, Mezhdu nami units 6.1 and 6.2, https://mezhdunami.ku.edu/unit06/6_1/language.shtml and https://mezhdunami.ku.edu/unit06/6_2/language.shtml: aspect meanings, prefixed pairs and different-root pairs. Primary HTML retrieved 2026-10-10 UTC. Existing Wikibooks Russian/Verbal_Aspect oldid 4059032 supplies retained pair forms: prov-ex-u12-aspect-0-ru, prov-ex-u12-aspect-1-ru, prov-ex-u12-aspect-2-ru and prov-ex-u12-aspect-3-ru. Existing limitation record: prov-ca-12-371. Application inference: explain the retained saying/telling and doing/making counterpart checks; pair recognition does not establish sentence-context aspect selection. Independently authored English on 2026-10-10 UTC within content-audit-2026-10-08; no reference prose, exercise or new Russian form copied. Final semantic audit pending.
+For the doing/making pair shown here, which verb is the perfective partner?
+shippedText=For the doing/making pair shown here, which verb is the perfective partner?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8420276839dac58dd74171876b0c91c36c828654cbb42507acd6354d663a7035
+contentHash=60c0ae42dee1b8d4064b5359d2266bfae518e05d92bad6d1ccde692fb52d9f72
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u12-dative-0`
 
@@ -5397,6 +7495,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-12-11190`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 30eba62899536daf42fa2b8eae223d92aa1245bd570c6ce043de08953befe1c3
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 12 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-12-11191`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70fce0cd0d94f9142bbad7631bd44c05b0a60e7e568df67fd4a71da9a7b3f633
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-12-11192`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4dc5e0e87c28cf68da5f58bcdac8544c85445ce0a87070df1a0526216aa6b034
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 12 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-12-11193`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18fb9bd18325ed588fbd68a106bcfd7a9baf6e225cc7875051a1ef4b3fe447aa
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-12-11194`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b864c6a39b9313ad58d87e2a8ddf884b5c4b0498626954bab98397d0bd676992
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 12 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-12-11195`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f87700ab3a2d99c2f65427021a735f4fb4c4b74ecf1ba7e6c181bcb85da7592
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-12-11196`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 973aaa11a4dad9127b4b28b0c605eeda1c4e9cc4066bd23ffdd0396c0226d794
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 12 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-12-48`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8fa0d0ca10993b5b01ce30366e0482823e78105bfcac3c94e7d5701db1a9a86d
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 12: printed pages 133-148. PDF indexes 145-160 are file locators, not printed pages. Observed section locators: §12.1 p133 (PDF 145); §12.2 p133 (PDF 145); §12.3 p134 (PDF 146); §12.4 p134 (PDF 146); §12.5 p136 (PDF 148); §12.6 p137 (PDF 149); §12.7 p137 (PDF 149); §12.8 p138 (PDF 150); §12.9 p138 (PDF 150); §12.10 p139 (PDF 151); §12.11 p140 (PDF 152); §12.12 p140 (PDF 152); §12.13 p141 (PDF 153); §12.14 p142 (PDF 154); §12.15 p142 (PDF 154); §12.16 p143 (PDF 155); §12.17 p143 (PDF 155); §12.18 p144 (PDF 156); §12.19 p146 (PDF 158). Observed exercise locators: 12/1 p135/PDF147; 12/2 p137/PDF149; 12/3 p139/PDF151; 12/4 p143/PDF155; 12/5 p143/PDF155; 12/6 p144/PDF156; 12/7 p147/PDF159. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-12-49`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 632e7bb0eee8301fd67d17c82495e452a5136e3fec7345b367abd0c669c34dcb
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 12 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-12-50`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c460185ae4f2c61c3bbdea7467deefef10071c11f664b0a4f27954b0baea3c0
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u12-033`
 
 - Objectives: none
@@ -6038,6 +8266,21 @@ CC BY-SA 4.0
 Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 Selected rows, stress-mark formatting, and beginner sense selection. No generated forms.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -6079,6 +8322,20 @@ permitsAppUse=true
 
 src-openrussian-50e210c4
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -6209,6 +8466,7 @@ permitsAppUse=true
 - `u12-st-teach-future-imp-3` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-future-imp` EXAMPLE `ex-u12-future-imp-0`
 - `u12-st-rem-future-imp` EXAMPLE `ex-u12-future-imp-1`
+- `u12-st-rem-future-imp` REFERENCE `ref-ca-aspect`
 - `u12-st-check-future-imp` REMEDIATION `u12-st-rem-future-imp`
 - `u12-st-check-future-imp` ITEM `u12-i-future-imp-1`
 - `u12-st-check-future-imp` ITEM `u12-i-future-imp-2`
@@ -6226,6 +8484,7 @@ permitsAppUse=true
 - `u12-st-teach-future-perf-4` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-future-perf` EXAMPLE `ex-u12-future-perf-0`
 - `u12-st-rem-future-perf` EXAMPLE `ex-u12-future-perf-1`
+- `u12-st-rem-future-perf` REFERENCE `ref-ca-aspect`
 - `u12-st-check-future-perf` REMEDIATION `u12-st-rem-future-perf`
 - `u12-st-check-future-perf` ITEM `u12-i-future-perf-1`
 - `u12-st-check-future-perf` ITEM `u12-i-future-perf-2`
@@ -6233,14 +8492,17 @@ permitsAppUse=true
 - `u12-st-teach-aspect-1` EXAMPLE `ex-u12-aspect-0`
 - `u12-st-teach-aspect-1` EXAMPLE `ex-u12-aspect-1`
 - `u12-st-teach-aspect-1` REFERENCE `ref-u1115-attribution`
-- `u12-st-guided-aspect-1` REMEDIATION `u12-st-rem-aspect`
-- `u12-st-guided-aspect-1` ITEM `u12-g-aspect-0`
 - `u12-st-teach-aspect-2` REFERENCE `ref-u1115-attribution`
 - `u12-st-teach-aspect-3` EXAMPLE `ex-u12-aspect-2`
 - `u12-st-teach-aspect-3` EXAMPLE `ex-u12-aspect-3`
 - `u12-st-teach-aspect-3` REFERENCE `ref-u1115-attribution`
+- `u12-st-guided-aspect-1` REMEDIATION `u12-st-rem-aspect`
+- `u12-st-guided-aspect-1` ITEM `u12-g-aspect-0`
 - `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-0`
 - `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-1`
+- `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-2`
+- `u12-st-rem-aspect` EXAMPLE `ex-u12-aspect-3`
+- `u12-st-rem-aspect` REFERENCE `ref-ca-aspect`
 - `u12-st-check-aspect` REMEDIATION `u12-st-rem-aspect`
 - `u12-st-check-aspect` ITEM `u12-i-aspect-1`
 - `u12-st-check-aspect` ITEM `u12-i-aspect-2`
@@ -6264,6 +8526,7 @@ permitsAppUse=true
 - `u12-st-teach-dative-6` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-dative` EXAMPLE `ex-or-u12-dative-0`
 - `u12-st-rem-dative` EXAMPLE `ex-or-u12-dative-1`
+- `u12-st-rem-dative` REFERENCE `ref-ca-aspect`
 - `u12-st-check-dative` REMEDIATION `u12-st-rem-dative`
 - `u12-st-check-dative` ITEM `u12-i-dative-1`
 - `u12-st-check-dative` ITEM `u12-i-dative-2`
@@ -6279,6 +8542,7 @@ permitsAppUse=true
 - `u12-st-teach-spelling-3` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-spelling` EXAMPLE `ex-or-u12-spelling-0`
 - `u12-st-rem-spelling` EXAMPLE `ex-or-u12-spelling-1`
+- `u12-st-rem-spelling` REFERENCE `ref-ca-aspect`
 - `u12-st-check-spelling` REMEDIATION `u12-st-rem-spelling`
 - `u12-st-check-spelling` ITEM `u12-i-spelling-1`
 - `u12-st-check-spelling` ITEM `u12-i-spelling-2`
@@ -6302,11 +8566,78 @@ permitsAppUse=true
 - `u12-st-teach-prep-plural-6` REFERENCE `ref-u1115-attribution`
 - `u12-st-rem-prep-plural` EXAMPLE `ex-or-u12-prep-plural-0`
 - `u12-st-rem-prep-plural` EXAMPLE `ex-or-u12-prep-plural-1`
+- `u12-st-rem-prep-plural` REFERENCE `ref-ca-aspect`
 - `u12-st-check-prep-plural` REMEDIATION `u12-st-rem-prep-plural`
 - `u12-st-check-prep-plural` ITEM `u12-i-prep-plural-1`
 - `u12-st-check-prep-plural` ITEM `u12-i-prep-plural-2`
 - `u12-s-book` OBJECTIVE `obj-u12-book`
 - `u12-st-book-work` REFERENCE `ref-u1115-attribution`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-357`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-358`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-359`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-360`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-361`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-362`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-363`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-364`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-365`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-366`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-367`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-368`
+- `obj-u12-aspect` PROVENANCE `prov-ca-12-371`
+- `obj-u12-aspect` PROVENANCE `prov-ca-12-372`
+- `obj-u12-aspect` PROVENANCE `prov-ca-12-373`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-12-630`
+- `obj-u12-dative` PROVENANCE `prov-ca-u12-feedback-u12-g-dative-0`
+- `obj-u12-dative` PROVENANCE `prov-ca-u12-feedback-u12-g-dative-0-distractor-1`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-u12-feedback-u12-g-future-imp-0`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-u12-feedback-u12-g-future-imp-0-distractor-1`
+- `obj-u12-future-perf` PROVENANCE `prov-ca-u12-feedback-u12-g-future-perf-0`
+- `obj-u12-future-perf` PROVENANCE `prov-ca-u12-feedback-u12-g-future-perf-0-distractor-1`
+- `obj-u12-prep-plural` PROVENANCE `prov-ca-u12-feedback-u12-g-prep-plural-0`
+- `obj-u12-prep-plural` PROVENANCE `prov-ca-u12-feedback-u12-g-prep-plural-0-distractor-1`
+- `obj-u12-spelling` PROVENANCE `prov-ca-u12-feedback-u12-g-spelling-0`
+- `obj-u12-spelling` PROVENANCE `prov-ca-u12-feedback-u12-g-spelling-0-distractor-1`
+- `obj-u12-dative` PROVENANCE `prov-ca-u12-feedback-u12-i-dative-1`
+- `obj-u12-dative` PROVENANCE `prov-ca-u12-feedback-u12-i-dative-1-distractor-1`
+- `obj-u12-dative` PROVENANCE `prov-ca-u12-feedback-u12-i-dative-2`
+- `obj-u12-dative` PROVENANCE `prov-ca-u12-feedback-u12-i-dative-2-distractor-1`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-u12-feedback-u12-i-future-imp-1`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-u12-feedback-u12-i-future-imp-1-distractor-1`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-u12-feedback-u12-i-future-imp-2`
+- `obj-u12-future-imp` PROVENANCE `prov-ca-u12-feedback-u12-i-future-imp-2-distractor-1`
+- `obj-u12-future-perf` PROVENANCE `prov-ca-u12-feedback-u12-i-future-perf-1`
+- `obj-u12-future-perf` PROVENANCE `prov-ca-u12-feedback-u12-i-future-perf-1-distractor-1`
+- `obj-u12-future-perf` PROVENANCE `prov-ca-u12-feedback-u12-i-future-perf-2`
+- `obj-u12-future-perf` PROVENANCE `prov-ca-u12-feedback-u12-i-future-perf-2-distractor-1`
+- `obj-u12-prep-plural` PROVENANCE `prov-ca-u12-feedback-u12-i-prep-plural-1`
+- `obj-u12-prep-plural` PROVENANCE `prov-ca-u12-feedback-u12-i-prep-plural-1-distractor-1`
+- `obj-u12-prep-plural` PROVENANCE `prov-ca-u12-feedback-u12-i-prep-plural-2`
+- `obj-u12-prep-plural` PROVENANCE `prov-ca-u12-feedback-u12-i-prep-plural-2-distractor-1`
+- `obj-u12-spelling` PROVENANCE `prov-ca-u12-feedback-u12-i-spelling-1`
+- `obj-u12-spelling` PROVENANCE `prov-ca-u12-feedback-u12-i-spelling-1-distractor-1`
+- `obj-u12-spelling` PROVENANCE `prov-ca-u12-feedback-u12-i-spelling-2`
+- `obj-u12-spelling` PROVENANCE `prov-ca-u12-feedback-u12-i-spelling-2-distractor-1`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-check-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-guided-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-objective-title`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-rem-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-rem-title`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-1-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-1-title`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-2-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-2-title`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-3-body`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-teach-3-title`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-distractor`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-feedback`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-g-aspect-0-prompt`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-distractor`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-feedback`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-1-prompt`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-distractor`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-feedback`
+- `obj-u12-aspect` PROVENANCE `prov-ca-u12-worked-u12-i-aspect-2-prompt`
 - `obj-u12-dative` PROVENANCE `prov-ex-or-u12-dative-0`
 - `obj-u12-dative` PROVENANCE `prov-ex-or-u12-dative-0-gloss`
 - `obj-u12-dative` PROVENANCE `prov-ex-or-u12-dative-1`

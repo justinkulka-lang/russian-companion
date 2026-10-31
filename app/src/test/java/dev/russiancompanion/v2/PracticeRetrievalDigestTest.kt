@@ -25,6 +25,11 @@ import dev.russiancompanion.v2.backup.readGovernedBackup
 import dev.russiancompanion.v2.backup.BackupReadResult
 import dev.russiancompanion.v2.backup.restoreStoreBackup
 import dev.russiancompanion.v2.backup.writeStoreBackup
+import dev.russiancompanion.v2.curriculum.currentCompletedUnitNumbers
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
+import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.resumePositionDigest
+import kotlinx.coroutines.runBlocking
 import dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA
 import dev.russiancompanion.v2.curriculum.GUIDED_PRACTICE_GAP_STEP_IDS
 import dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
@@ -45,6 +50,7 @@ import dev.russiancompanion.v2.curriculum.practiceStepId
 import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
 import dev.russiancompanion.v2.curriculum.savedWorkEntries
 import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.curriculum.stepContentDigest
 import dev.russiancompanion.v2.curriculum.verifiedResume
 import dev.russiancompanion.v2.ui.V2App
@@ -85,10 +91,11 @@ class PracticeRetrievalDigestTest {
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithText("Practice").performClick()
         compose.onNodeWithText("Alphabet recognition").performScrollTo().performClick()
+        compose.onNodeWithTag("v2-lab-cue").assertTextEquals(requireNotNull(item.promptLetter)).assertIsDisplayed()
         compose.onNodeWithTag("v2-lab-prompt").assertIsDisplayed()
         compose.onNodeWithTag("v2-lab-option-$wrong").performScrollTo().performClick()
         compose.onNodeWithTag("v2-lab-submit").performClick()
-        compose.onNodeWithText("Not the reviewed answer.", substring = true).assertIsDisplayed()
+        compose.onNodeWithText("Not the reviewed answer.", substring = true).performScrollTo().assertIsDisplayed()
         assertEquals(1, store.v2Attempts().count { it.itemId == item.id })
         val row = store.v2Attempts().single { it.itemId == item.id }
         assertEquals(OPTIONAL_PRACTICE, row.attemptRole)
@@ -130,8 +137,11 @@ class PracticeRetrievalDigestTest {
         assertTrue(offers.all { !it.runnable })
         assertTrue(practiceQueue(pack.copy(schemaVersion = 2), store.v2LearnerView(), "alphabet").isEmpty())
         assertNull(prepareGovernedAttempt(pack, "missing", "x", OPTIONAL_PRACTICE, "practice:alphabet", "t"))
-        GUIDED_PRACTICE_GAP_STEP_IDS.forEach { id ->
-            assertTrue(pack.step(id)!!.second.itemIds.isEmpty())
+        assertTrue(GUIDED_PRACTICE_GAP_STEP_IDS.isEmpty())
+        dev.russiancompanion.v2.curriculum.FILLED_GUIDED_PRACTICE_ROUTES.values.forEach { id ->
+            val step = pack.step(id)!!.second
+            assertEquals("GUIDED", step.kind)
+            assertTrue(step.itemIds.isNotEmpty())
         }
     }
 
@@ -450,8 +460,60 @@ class PracticeRetrievalDigestTest {
         compose.onNodeWithText("Mixed review").performScrollTo().performClick()
         compose.onNodeWithTag("v2-lab-empty").assertIsDisplayed()
         assertEquals(1, store.v2Attempts().size)
+        store.v2SaveProfile(store.v2Profile().copy(startingPoint = "CAN_READ_CYRILLIC"))
+        pack.unit(3)!!.sessions.flatMap { it.steps }.forEach { step ->
+            step.itemIds.forEach { id ->
+                val item = pack.item(id)!!
+                store.v2RecordGovernedAttempt(prepareGovernedAttempt(pack, id, item.answer, PRESCRIBED_CHECK, step.id, "2026-10-04T04:00:00")!!)
+            }
+            store.v2CompleteGovernedStep(step.id,
+                governedStepCompletionDigest(pack, store.v2LearnerView(), step.id)!!, "2026-10-04T04:00:00")
+        }
+        store.v2AttestBook(3, "2026-10-04T04:00:00")
         store.v2CompleteUnit(3, "2026-10-04T04:00:00")
-        val mixed = practiceQueue(pack, store.v2LearnerView(), "mixed")
+        assertTrue(ordinaryUnitRequirements(pack, pack.unit(3)!!, store.v2LearnerView()).allowed)
+        assertFalse(3 in currentCompletedUnitNumbers(pack, store.v2LearnerView()))
+        assertTrue(practiceQueue(pack, store.v2LearnerView(), "mixed").isEmpty())
+        assertFalse(advancementDecision(pack, pack.unit(3)!!, store.v2LearnerView()).allowed)
+        // Unit3's real assigned review needs a genuinely completed Unit1 owner.
+        store.v2SaveProfile(store.v2Profile().copy(currentUnitNumber = 1, currentSessionId = null))
+        pack.unit(1)!!.sessions.flatMap { it.steps }.forEach { step ->
+            step.itemIds.forEach { id ->
+                store.v2RecordGovernedAttempt(prepareGovernedAttempt(pack, id, pack.item(id)!!.answer,
+                    PRESCRIBED_CHECK, step.id, "2026-10-18T20:00:00")!!)
+            }
+            store.v2CompleteGovernedStep(step.id,
+                governedStepCompletionDigest(pack, store.v2LearnerView(), step.id)!!, "2026-10-18T20:00:00")
+        }
+        store.v2AttestBook(1, "2026-10-18T20:00:00")
+        val next2 = pack.unit(2)!!.sessions.first().id
+        assertTrue(runBlocking { store.v2AdvanceUnitIfCurrentAsync(store.learnerMutationEpoch(), 1,
+            "2026-10-18T20:00:00", 2, next2, resumePositionDigest(pack, next2, 0)!!, GOVERNED_IDENTITY_SCHEMA, pack) })
+        assertEquals(setOf(1), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
+        // Preserve the explicit CAN_READ_CYRILLIC placement; Unit2 is unclaimed.
+        store.v2SaveProfile(store.v2Profile().copy(currentUnitNumber = 3, currentSessionId = null))
+        val assignment = store.openUnit3CumulativeReview(pack, store.learnerMutationEpoch())!!
+        assertFalse(advancementDecision(pack, pack.unit(3)!!, store.v2LearnerView()).allowed)
+        assignment.slots.indices.forEach { index ->
+            assertTrue(store.answerCumulativeReview(pack, assignment.id, index,
+                pack.item(assignment.slots[index].itemId)!!.answer, store.learnerMutationEpoch()))
+            if (index < assignment.slots.lastIndex)
+                assertFalse(advancementDecision(pack, pack.unit(3)!!, store.v2LearnerView()).allowed)
+        }
+        val next4 = pack.unit(4)!!.sessions.first().id
+        assertTrue(runBlocking { store.v2AdvanceUnitIfCurrentAsync(store.learnerMutationEpoch(), 3,
+            "2026-10-18T20:00:01", 4, next4, resumePositionDigest(pack, next4, 0)!!, GOVERNED_IDENTITY_SCHEMA, pack) })
+        assertEquals(setOf(1, 3), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
+        val completion = store.governedLearnerDocument().unitCompletions.single { it.unitNumber == 3 }
+        assertEquals(assignment.id, completion.reviewAssignmentId)
+        assertEquals(assignment.policyDigest, completion.reviewPolicyDigest)
+        assertTrue(completion.reviewCompletionOrder > assignment.boundary)
+        val allMixed = practiceQueue(pack, store.v2LearnerView(), "mixed")
+        val owners = pack.units.associate { unit -> unit.number to unit.objectives.map { it.id }.toSet() }
+        assertTrue(allMixed.all { it.objectiveId in owners.getValue(1) + owners.getValue(3) })
+        assertTrue(allMixed.any { it.objectiveId in owners.getValue(1) })
+        assertTrue(allMixed.none { it.id == reading.id })
+        val mixed = allMixed.filter { it.objectiveId in owners.getValue(3) }
         assertTrue(mixed.isNotEmpty())
         assertTrue(mixed.all { it.kind == "SOURCE_MEANING" || it.kind == "SOURCE_GENDER" })
         assertTrue(mixed.none { it.id == reading.id })

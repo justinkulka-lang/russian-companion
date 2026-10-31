@@ -11,12 +11,12 @@ Unit 23 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f8b8b09a3f82b14abbaa16f39ccbc514c1241fd7
-- Unit content-review SHA-256: c36a981c973461d21ecd043d5206e79176991693633eec901ee912442cc4ef89
+- Curriculum source commit: 0db5c4dc6278d119448ddc69b0bf82c0b7a73fbd
+- Unit content-review SHA-256: e7cf730b6ed8317979d7c9f59c23b360f28081d0461fe7a0864643a3d855f683
 - Mapping-package SHA-256: 968d763b963eb028d821bb426f6c906c079a6266184e4f89d79d21fa34699e95
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: ff10e28120109ef0591251d33ef3749fe01a37fa8235dd0f1b1fd2ab97a9aded
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: 234cdaf06edfbe6e93aba065e5b9cea8d7f68e23e2c062c3ea2b86e387c340b9
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=82
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b34c9b12eb90de70a0f99aac4b14e67abec625974873d2fc477d01208db7e6cc
+- Content hash: 595dd3b3acfb21f2387b7267363361eb2537ac1228991fa50b47380b73212088
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=10
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u23-ranges`
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 15111015298a4538a4816c66523133bdda88bf4fb5aa74f5bcf88f0ba8c8d793
+- Content hash: c702e9ce107f015276eea873a6f82b441b6be60f0de63a0aa0a3853ee7ea70c7
 
-title=Choose the English meaning of the shown decade range
+title=Read decade ranges in their century context
 kind=RECOGNITION
 unitNumber=23
 instruction=u23-st-orient,u23-st-teach-ranges-1,u23-st-teach-ranges-2
@@ -132,9 +132,9 @@ remediation=u23-st-rem-ranges
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 129070eac11fef74f0a4d8db2cb79447af83394aa3229e37d9ace48170fac7a8
+- Content hash: 402c6cec956ff00e21613fb8898a40b7fff86fb88d8b50e5b0521512256ce643
 
-title=Choose the English meaning of the shown beginning or middle expression
+title=Locate the beginning, middle or end of a period
 kind=RECOGNITION
 unitNumber=23
 instruction=u23-st-orient,u23-st-teach-beginning-1,u23-st-teach-beginning-2,u23-st-teach-beginning-3
@@ -151,9 +151,9 @@ remediation=u23-st-rem-beginning
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9e389de5999e774b283c3b0fad7c46b7185449caeaaa45cf69c7ffa5e626825e
+- Content hash: 87799fde5406c6df2705c557989ce3b3441531f9de55f4af2343aa04b9589e03
 
-title=Choose the English meaning of the shown during-an-event expression
+title=Place one action during another event
 kind=RECOGNITION
 unitNumber=23
 instruction=u23-st-orient,u23-st-teach-during-event-1,u23-st-teach-during-event-2
@@ -170,9 +170,9 @@ remediation=u23-st-rem-during-event
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d22b6345076e00d3e65738c1235e1b62527efcc20a7a59c2a87e8fd2b7c21b73
+- Content hash: 6e5c2e436c30eb7ed8b148298a6d4f6c146e9bd174cab65897ed19fea3366d6a
 
-title=Choose the English meaning of the shown duration expression
+title=Read the interval over which activity occurs
 kind=RECOGNITION
 unitNumber=23
 instruction=u23-st-orient,u23-st-teach-duration-1,u23-st-teach-duration-2
@@ -189,9 +189,9 @@ remediation=u23-st-rem-duration
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cbb108adedbcb4a156f2ffa1c91dd2a5eed9930424a9265fc353104863dfa08d
+- Content hash: f82e1ada26d72ea4abfa5a6ea6f03bf01a2dd344a99eb0c07e31f75338a41121
 
-title=Choose the English meaning of the shown before, after, in, or ago expression
+title=Distinguish before, after, in a period and ago
 kind=RECOGNITION
 unitNumber=23
 instruction=u23-st-orient,u23-st-teach-elapsed-1,u23-st-teach-elapsed-2,u23-st-teach-elapsed-3
@@ -227,9 +227,9 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0ae0dfd04b428ab37f1637b5bea25786066d55c499c1be95254523ef223aba7a
+- Content hash: fad7268c2b2defcd8d800472d432c6d37ff031963899b319ae52e981310b3c4a
 
-title=Duration versus completion within a period
+title=Distinguish time spent from completion within a period
 kind=RECOGNITION
 unitNumber=23
 instruction=u23-st-teach-completion-1,u23-st-teach-completion-2
@@ -261,11 +261,11 @@ steps=u23-st-orient
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 81882d90afb46815637dd79570db3dfd59a7a7f60af8cfe2ed72e654f565a79f
+- Content hash: 70c1f93faa66783f1859f5b7e6b4acd365c5992cb0ac284f53720ea989490290
 
 kind=ORIENT
 title=Admitted time expressions
-body=Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. Completion over a period stays in the copy you own. Qualified review is pending.
+body=Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. A bounded completion-over-a-period check is implemented here and remains review-pending. It does not cover every temporal clause. Qualified review is pending.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -283,12 +283,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b513b32a1cf6287c31638c363ec9552be64c488f02ec047c9925338a0d00c597
+- Content hash: 80c2a87a9f942f05dcb39cecd8c99dc997730d05273aa08fb6e59808ec8c76c8
 
-title=Choose the English meaning of the shown decade range
+title=Read decade ranges in their century context
 estimatedMinutes=12
 objectives=obj-u23-ranges
-steps=u23-st-teach-ranges-1,u23-st-guided-ranges-1,u23-st-teach-ranges-2,u23-st-rem-ranges,u23-st-check-ranges
+steps=u23-st-teach-ranges-1,u23-st-teach-ranges-2,u23-st-guided-ranges-1,u23-st-rem-ranges,u23-st-check-ranges
 
 ### STEP `u23-st-teach-ranges-1`
 
@@ -298,15 +298,37 @@ steps=u23-st-teach-ranges-1,u23-st-guided-ranges-1,u23-st-teach-ranges-2,u23-st-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 20b16040f065e88d824fce7fac127e1bc445f2709c82eb3270de3ebaf76854c8
+- Content hash: 2bfd15b517b43b73368b57301000c4861ce594d2bd4f9691c9f9ecdf2ad44c55
 
 kind=TEACH
-title=Admitted lines
-body=В шестидесятых годах — in the 1960s. В девяностых годах — in the 1990s. 
+title=A decade is a range of years
+body=В шестидесятых годах — in the 1960s. В девяностых годах — in the 1990s. These expressions refer to decade ranges rather than a single year. The ordinal describing the decade and the noun meaning years are in the prepositional plural. The two displayed choices distinguish the sixties from the nineties.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
 examples=ex-u23-ranges-0,ex-u23-ranges-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u23-st-teach-ranges-2`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-ranges
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0bf10c5a2bd35f9bec1a228d8ef49fc3ba6108649b738bde7cf36c29a61b0911
+
+kind=TEACH
+title=The century comes from context
+body=Here the supplied English glosses assume the twentieth century. A decade expression by itself does not fix the century in every context; an explicit century or the surrounding discussion can identify it. Read the decade word, not just the shared ending for years. The checks recognize these two supplied ranges; they do not test forming a new decade expression.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -320,11 +342,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b4169dacb06d7aa9c15787a6c830cd385abf22a2ccb8971c4605afb6371e7533
+- Content hash: 3a1345151f2c044d613abcb0f0400d6fec04ee00a390b84caf793b694eb682cc
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u23-g-ranges-0
@@ -334,28 +356,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u23-st-rem-ranges
 
-### STEP `u23-st-teach-ranges-2`
-
-- Objectives: obj-u23-ranges
-- Sessions: u23-s-ranges
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3d105a2c68f7c29512ba39900517b614f69337e80b8d217a520c69b89334ebf9
-
-kind=TEACH
-title=Admitted instruction
-body=in a certain decade
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u23-st-rem-ranges`
 
 - Objectives: obj-u23-ranges
@@ -364,11 +364,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3a6c1956020da0fdcb8da5fb466dc353a193b34097b3e424b0d91dcea133b59a
+- Content hash: 7bb6fe76a5175e22950d911a0ea1f899114b46b4710ec2a6d9cb1129ed8b0da0
 
 kind=REMEDIATE
-title=Remediation
-body=in a certain decade
+title=Review the complete time contrast
+body=В шестидесятых годах — in the 1960s. В девяностых годах — in the 1990s. These expressions refer to decade ranges rather than a single year. The ordinal describing the decade and the noun meaning years are in the prepositional plural. The two displayed choices distinguish the sixties from the nineties.
+
+Here the supplied English glosses assume the twentieth century. A decade expression by itself does not fix the century in every context; an explicit century or the surrounding discussion can identify it. Read the decade word, not just the shared ending for years. The checks recognize these two supplied ranges; they do not test forming a new decade expression.
 dominantAction=Continue
 references=
 items=
@@ -386,11 +388,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ae42458ccc101c51a15165193543017ce5d2f797d40338f696f764c34d71bbe5
+- Content hash: 0ec13e4ca4ee1fefca1ed0040fe2d0da04b78f31e36c7ac67c9f1e522554e5b9
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u23-i-ranges-1,u23-i-ranges-2
@@ -408,12 +410,12 @@ remediationStepId=u23-st-rem-ranges
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0e29c714e8547f7ab6075988831b6d84532784395e2286cf2e567a2b3b642e93
+- Content hash: 905916e2876c509c744ceaa00fcfd129b0851d8332363704ceb3286c4c9b1aec
 
-title=Choose the English meaning of the shown beginning or middle expression
+title=Locate the beginning, middle or end of a period
 estimatedMinutes=12
 objectives=obj-u23-beginning
-steps=u23-st-teach-beginning-1,u23-st-guided-beginning-1,u23-st-teach-beginning-2,u23-st-teach-beginning-3,u23-st-rem-beginning,u23-st-check-beginning
+steps=u23-st-teach-beginning-1,u23-st-teach-beginning-2,u23-st-teach-beginning-3,u23-st-guided-beginning-1,u23-st-rem-beginning,u23-st-check-beginning
 
 ### STEP `u23-st-teach-beginning-1`
 
@@ -423,11 +425,11 @@ steps=u23-st-teach-beginning-1,u23-st-guided-beginning-1,u23-st-teach-beginning-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f279a3087af2ebff6034bdb3c8a85164e7bb7515f010556d53e7c5aa4350c45b
+- Content hash: 97072ebe19490f1325be5293e5f748ffce9276ef55971cca5811d0c8335dd531
 
 kind=TEACH
-title=Admitted lines
-body=В конце года — at the end of the year. В начале века — at the beginning of the century. 
+title=The end of a year and the beginning of a century
+body=В конце года — at the end of the year. В начале века — at the beginning of the century. The position word identifies which part of the period is meant, while the following noun identifies the period. Both parts matter: an end is not a beginning, and a year is not a century.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -437,28 +439,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u23-st-guided-beginning-1`
-
-- Objectives: obj-u23-beginning
-- Sessions: u23-s-beginning
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a46d749b8afa798db56bb61a518959df19a2f3edda8febb44a1601e1ffc1fc95
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u23-g-beginning-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u23-st-rem-beginning
-
 ### STEP `u23-st-teach-beginning-2`
 
 - Objectives: obj-u23-beginning
@@ -467,11 +447,11 @@ remediationStepId=u23-st-rem-beginning
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 019f2598116bbf9e09e30397300598e260e80c72515df19bdaa8f6716fa23a42
+- Content hash: 5e5c2910971d679b5bbfd0443788b984577e09a65678f615c94e7d42157e5609
 
 kind=TEACH
-title=Admitted instruction
-body=at the end, at the beginning, in the middle of
+title=The two nouns have different case roles
+body=In these expressions, the location noun after the preposition is prepositional, and the noun naming the period is genitive. The English of relationship links the part to the larger period. Do not assign one case to both nouns simply because they appear in the same time phrase.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -489,11 +469,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9f2bc6cc5bb9b8cc3bd3f286a2ef1bea44375d2f0e9391a9939be9ded902f4bf
+- Content hash: 0cc71f811ee29168eabf5e88e5459dfe6dd6f795d155e591ac92b9b92cffdb0a
 
 kind=TEACH
-title=Admitted lines
-body=В середине недели — in the middle of the week. 
+title=The middle of the week
+body=В середине недели — in the middle of the week. This locates an event within the central part of a week; it does not mean the end of a year or the beginning of a century. The checks match complete supplied expressions, not independently produced period-and-position combinations.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -503,6 +483,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u23-st-guided-beginning-1`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-beginning
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c38dadd6d0bc950176f86d5cebb635e0683ed88f1e8eafbe3d63c8c3b89a0647
+
+kind=GUIDED
+title=Guided practice
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+dominantAction=Continue
+references=
+items=u23-g-beginning-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u23-st-rem-beginning
+
 ### STEP `u23-st-rem-beginning`
 
 - Objectives: obj-u23-beginning
@@ -511,15 +513,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 27648059aabeada5ca09a371514d6760cf12749af0f709f4f2f694e16f77777b
+- Content hash: 6342c26c772057c66d803518bd5c619fa8710e4e9777134a5d5626fd27acaaa6
 
 kind=REMEDIATE
-title=Remediation
-body=at the end, at the beginning, in the middle of
+title=Review the complete time contrast
+body=В конце года — at the end of the year. В начале века — at the beginning of the century. The position word identifies which part of the period is meant, while the following noun identifies the period. Both parts matter: an end is not a beginning, and a year is not a century.
+
+In these expressions, the location noun after the preposition is prepositional, and the noun naming the period is genitive. The English of relationship links the part to the larger period. Do not assign one case to both nouns simply because they appear in the same time phrase.
+
+В середине недели — in the middle of the week. This locates an event within the central part of a week; it does not mean the end of a year or the beginning of a century. The checks match complete supplied expressions, not independently produced period-and-position combinations.
 dominantAction=Continue
 references=
 items=
-examples=ex-u23-beginning-0,ex-u23-beginning-1
+examples=ex-u23-beginning-0,ex-u23-beginning-1,ex-u23-beginning-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -533,11 +539,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 407f52d0795f1e01c2807504e0a183015a524a3fd0267b552208c03aaeb912c3
+- Content hash: d4fc559070dd638f728120b7c1135609beb4e584af0d484c9e637f67b110b3bf
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u23-i-beginning-1,u23-i-beginning-2
@@ -555,12 +561,12 @@ remediationStepId=u23-st-rem-beginning
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0fca3041fba66faf7dd2a6360ecf65acc383258025d7761f0d86af8b4161e7cb
+- Content hash: 7c4e77c09c53a4674c22528ed80c713f3975ac515b1d23c0bca649d5f1cc4d19
 
-title=Choose the English meaning of the shown during-an-event expression
+title=Place one action during another event
 estimatedMinutes=12
 objectives=obj-u23-during-event
-steps=u23-st-teach-during-event-1,u23-st-guided-during-event-1,u23-st-teach-during-event-2,u23-st-rem-during-event,u23-st-check-during-event
+steps=u23-st-teach-during-event-1,u23-st-teach-during-event-2,u23-st-guided-during-event-1,u23-st-rem-during-event,u23-st-check-during-event
 
 ### STEP `u23-st-teach-during-event-1`
 
@@ -570,15 +576,37 @@ steps=u23-st-teach-during-event-1,u23-st-guided-during-event-1,u23-st-teach-duri
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fe01773a3b447bd90451c2c31845e961e35623f4e446e0c08d46e746a2afbf0f
+- Content hash: 0cc4839b1e36468fe5f65d0c4289e659590bfdb229aee6a49be3eee76456e540
 
 kind=TEACH
-title=Admitted lines
-body=Она родилась во время войны. — She was born during the war. Во время поездки я познакомился с новыми друзьями. — During the trip I met new friends. 
+title=An event supplies the time frame
+body=Она родилась во время войны. — She was born during the war. Во время поездки я познакомился с новыми друзьями. — During the trip I met new friends. The war and trip are the surrounding events during which the birth and meeting happen. During does not mean that the birth or meeting continued for the entire war or trip.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
 examples=ex-u23-during-event-0,ex-u23-during-event-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u23-st-teach-during-event-2`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-during-event
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c793b78d5ba6cb637a82fdc5c29ee7b8d9558ea98500917e319adf69bdfc5c86
+
+kind=TEACH
+title=Meaning and case of the surrounding event
+body=The compound preposition meaning during takes the event noun in the genitive. Match the whole sentence: birth during a war differs from meeting friends during a trip. This expresses when an event happens within another event, not the time needed to complete a task. The supplied translations do not demonstrate constructing every during-an-event sentence.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -592,11 +620,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c9491a302c2739de69b65e1df3c106e1992f9b059657712b5a47032db7220aab
+- Content hash: be2d5e7722ace4e8fbadabbcad10cf00351018933299de91b74a8abd91984f71
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u23-g-during-event-0
@@ -606,28 +634,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u23-st-rem-during-event
 
-### STEP `u23-st-teach-during-event-2`
-
-- Objectives: obj-u23-during-event
-- Sessions: u23-s-during-event
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0afe0ae6e2ca204b6d47627412d87c5c48502f1dd924e836062e19c9ced5836f
-
-kind=TEACH
-title=Admitted instruction
-body=during another event
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u23-st-rem-during-event`
 
 - Objectives: obj-u23-during-event
@@ -636,11 +642,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 928aed46c0013cfcf58cf3203535bc45b96b67145bfba0a047d04d3b7962cdca
+- Content hash: 3398bd32f2482168f1197e16131ce77dad878b41e3e9e97c9d333ceaac77351d
 
 kind=REMEDIATE
-title=Remediation
-body=during another event
+title=Review the complete time contrast
+body=Она родилась во время войны. — She was born during the war. Во время поездки я познакомился с новыми друзьями. — During the trip I met new friends. The war and trip are the surrounding events during which the birth and meeting happen. During does not mean that the birth or meeting continued for the entire war or trip.
+
+The compound preposition meaning during takes the event noun in the genitive. Match the whole sentence: birth during a war differs from meeting friends during a trip. This expresses when an event happens within another event, not the time needed to complete a task. The supplied translations do not demonstrate constructing every during-an-event sentence.
 dominantAction=Continue
 references=
 items=
@@ -658,11 +666,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d822d7612ab8ca7802303d2c0a4d954a857b180a5af6e1a8a29b1a64cb64a206
+- Content hash: 70641a719a3de9983907939cd0c3fff19dbfd0bbe9ee362c4bb1c6125d07f55a
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u23-i-during-event-1,u23-i-during-event-2
@@ -680,12 +688,12 @@ remediationStepId=u23-st-rem-during-event
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 64d41ed3fb963c96f5cc82e77716976bc7aaeb3eab9f4ee00b87f4b84cc9d7b4
+- Content hash: 576916a83c78bba5835e24517215b8373a354128069cdc0598c77aedb5be83e3
 
-title=Choose the English meaning of the shown duration expression
+title=Read the interval over which activity occurs
 estimatedMinutes=12
 objectives=obj-u23-duration
-steps=u23-st-teach-duration-1,u23-st-guided-duration-1,u23-st-teach-duration-2,u23-st-rem-duration,u23-st-check-duration
+steps=u23-st-teach-duration-1,u23-st-teach-duration-2,u23-st-guided-duration-1,u23-st-rem-duration,u23-st-check-duration
 
 ### STEP `u23-st-teach-duration-1`
 
@@ -695,15 +703,37 @@ steps=u23-st-teach-duration-1,u23-st-guided-duration-1,u23-st-teach-duration-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 491dcb89074fb453f0a8cb34cfee8dc7a62fb0d25b4a872b73165d7ca3ec0b23
+- Content hash: b29c70fa72699640997f67a24a3d382d88ad26c2400a2e6b2d1328121387b695
 
 kind=TEACH
-title=Admitted lines
-body=В течение урока ученики работали над проектом. — Throughout the lesson, the students worked on the project. В течение дня погода менялась несколько раз. — During the course of the day, the weather changed several times. 
+title=A lesson and a day as intervals
+body=В течение урока ученики работали над проектом. — Throughout the lesson, the students worked on the project. В течение дня погода менялась несколько раз. — During the course of the day, the weather changed several times. The interval contains the activity or repeated events. Project work over the lesson does not by itself assert that the project was finished.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
 examples=ex-u23-duration-0,ex-u23-duration-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u23-st-teach-duration-2`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-duration
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5d8f425929ff643a39abc36eb0dc5e72abb0a009b620d19d300d7df5648cdaa1
+
+kind=TEACH
+title=Duration does not require an unbroken event
+body=It emphasizes the duration over which something occurs. The compound preposition takes a genitive noun naming the interval. The weather example explicitly describes several changes during the day, so the expression need not mean one continuous unchanged action. Compare the whole proposition as well as the interval: students and a project differ from weather changes. These checks identify supplied meanings, not task-completion time.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -717,11 +747,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7f3469c908c4e241fbf29871bd0d330eef5ddeeeee4327e98e9832a9db02d830
+- Content hash: d559db8e8f1adae9fd6e0e858e4ba6a8dda18d0031fb21f1c8d13c9714388b52
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u23-g-duration-0
@@ -731,28 +761,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u23-st-rem-duration
 
-### STEP `u23-st-teach-duration-2`
-
-- Objectives: obj-u23-duration
-- Sessions: u23-s-duration
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: de70a45b583de8bcfdf0ab7e46e686028883a0c00bdc6e36a6bda98842621c8e
-
-kind=TEACH
-title=Admitted instruction
-body=It emphasizes the duration over which something occurs.
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u23-st-rem-duration`
 
 - Objectives: obj-u23-duration
@@ -761,11 +769,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: da93fd32d3ffede745c0f65f7aa4c479f0f4513b2396d4d772b89e6b57222969
+- Content hash: 3d11b2e6f89cd47b506f0baf89b120d3557f0bb0624c9ca8536645a70f44ee98
 
 kind=REMEDIATE
-title=Remediation
-body=It emphasizes the duration over which something occurs.
+title=Review the complete time contrast
+body=В течение урока ученики работали над проектом. — Throughout the lesson, the students worked on the project. В течение дня погода менялась несколько раз. — During the course of the day, the weather changed several times. The interval contains the activity or repeated events. Project work over the lesson does not by itself assert that the project was finished.
+
+It emphasizes the duration over which something occurs. The compound preposition takes a genitive noun naming the interval. The weather example explicitly describes several changes during the day, so the expression need not mean one continuous unchanged action. Compare the whole proposition as well as the interval: students and a project differ from weather changes. These checks identify supplied meanings, not task-completion time.
 dominantAction=Continue
 references=
 items=
@@ -783,11 +793,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 282a8c684f3ba37d73c8b504d35603a2b2d2fd4830dc47c1f4aac77b1a7af358
+- Content hash: 9abe56cb73e6bb7ce44242af348e5479db18b73582a37a77e3e08f962bb09629
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u23-i-duration-1,u23-i-duration-2
@@ -805,12 +815,12 @@ remediationStepId=u23-st-rem-duration
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ff2719562ac0dd909f3f2783d73876668875fb8ce1db8a2f85c02d8850a430ec
+- Content hash: c98eaba6e065c362cb0b0844c778541f1bbdbf1765d3cf4f5165b49619d9786b
 
-title=Choose the English meaning of the shown before, after, in, or ago expression
+title=Distinguish before, after, in a period and ago
 estimatedMinutes=12
 objectives=obj-u23-elapsed
-steps=u23-st-teach-elapsed-1,u23-st-guided-elapsed-1,u23-st-teach-elapsed-2,u23-st-teach-elapsed-3,u23-st-rem-elapsed,u23-st-check-elapsed
+steps=u23-st-teach-elapsed-1,u23-st-teach-elapsed-2,u23-st-teach-elapsed-3,u23-st-guided-elapsed-1,u23-st-rem-elapsed,u23-st-check-elapsed
 
 ### STEP `u23-st-teach-elapsed-1`
 
@@ -820,11 +830,11 @@ steps=u23-st-teach-elapsed-1,u23-st-guided-elapsed-1,u23-st-teach-elapsed-2,u23-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a72a7f28273eb4003793773463a7ea5d688d339a06fa886e9ba1a8a3e2b87255
+- Content hash: ffe5eaa418044a8f5716635eb51ac7ffd3ce28b8709c322a3e1e696cbf0c08b0
 
 kind=TEACH
-title=Admitted lines
-body=Перед ужином мы ходили в парк. — before. После работы я смотрела фильм. — after. 
+title=Before and after a reference event
+body=Перед ужином мы ходили в парк. — before. После работы я смотрела фильм. — after. The first places the park visit earlier than dinner; the second places watching a film later than work. The preposition meaning before takes an instrumental noun; the one meaning after takes a genitive noun. The English labels classify only this time relation, not the full sentence translation.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -834,28 +844,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u23-st-guided-elapsed-1`
-
-- Objectives: obj-u23-elapsed
-- Sessions: u23-s-elapsed
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cd5e426f496d893e36fe6730564a287b64001aa7d58caa9e984ac4e37ea3ce8b
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u23-g-elapsed-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u23-st-rem-elapsed
-
 ### STEP `u23-st-teach-elapsed-2`
 
 - Objectives: obj-u23-elapsed
@@ -864,11 +852,11 @@ remediationStepId=u23-st-rem-elapsed
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b382c5ea58a63c16f8068fd49a9c46ca1c246cf5cb6db7522aae9f030f2f4a03
+- Content hash: 0787b9e2f14b6feaec97decc9aa4fdff1fa748a3624ea88374d10a9479e7e77a
 
 kind=TEACH
-title=Admitted instruction
-body=relate events in time
+title=A time point is different from a duration
+body=The future-looking in expression locates an event after an interval from the reference time. Ago locates an event before the reference time. Neither meaning alone states how long the activity lasts or how long it takes to finish a task. Before and after a named event likewise express order relative to that event, not completion.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -886,11 +874,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: edf36ec1ddcd1a588a6fe42f3c8c4bf940b62b8dfb8e47dfa4d8194ddea48515
+- Content hash: 42fce46bb3a3efc24b638d6faf9b346910c4f28061483fd17e9d8046817bd0dd
 
 kind=TEACH
-title=Admitted lines
-body=Мы едем в Латвию через год. — in (a period of time). Мы ездили в Казахстан год назад. — ago. 
+title=The forward and backward interval examples
+body=Мы едем в Латвию через год. — in (a period of time). Мы ездили в Казахстан год назад. — ago. In the first sentence the planned Latvia journey is a year after the reference time; in the second the Kazakhstan journey was a year before it. The forward-looking time construction takes accusative, not genitive; the time noun here has the same surface form as nominative. Ago follows an accusative time expression. The choices classify the shown time relation, not independently produce the whole sentence.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -900,6 +888,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u23-st-guided-elapsed-1`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-elapsed
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fe7063cd0c46814928978d04e3bfea6855605e675d4fd13ca75dbd0f3624baa7
+
+kind=GUIDED
+title=Guided practice
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+dominantAction=Continue
+references=
+items=u23-g-elapsed-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u23-st-rem-elapsed
+
 ### STEP `u23-st-rem-elapsed`
 
 - Objectives: obj-u23-elapsed
@@ -908,15 +918,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 83b60f6da7dd36553053c96d63e7da9cb9174ed797b7fb9f178dce997bd62deb
+- Content hash: 7d2f1eb374f143a6998bf4ddfc5ed91035c3f78f079f8e4bfedb6ad661b89de6
 
 kind=REMEDIATE
-title=Remediation
-body=relate events in time
+title=Review the complete time contrast
+body=Перед ужином мы ходили в парк. — before. После работы я смотрела фильм. — after. The first places the park visit earlier than dinner; the second places watching a film later than work. The preposition meaning before takes an instrumental noun; the one meaning after takes a genitive noun. The English labels classify only this time relation, not the full sentence translation.
+
+The future-looking in expression locates an event after an interval from the reference time. Ago locates an event before the reference time. Neither meaning alone states how long the activity lasts or how long it takes to finish a task. Before and after a named event likewise express order relative to that event, not completion.
+
+Мы едем в Латвию через год. — in (a period of time). Мы ездили в Казахстан год назад. — ago. In the first sentence the planned Latvia journey is a year after the reference time; in the second the Kazakhstan journey was a year before it. The forward-looking time construction takes accusative, not genitive; the time noun here has the same surface form as nominative. Ago follows an accusative time expression. The choices classify the shown time relation, not independently produce the whole sentence.
 dominantAction=Continue
 references=
 items=
-examples=ex-u23-elapsed-0,ex-u23-elapsed-1
+examples=ex-u23-elapsed-0,ex-u23-elapsed-1,ex-u23-elapsed-2,ex-u23-elapsed-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -930,11 +944,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 10ed880e453d7d8c59489fc486b4d81872359a3e429950848525119a8ceb208f
+- Content hash: cda6ebf56554cdaceb1d84bc3d844987a0df4648d1ee85970ba5ec4672b47594
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u23-i-elapsed-1,u23-i-elapsed-2
@@ -967,7 +981,7 @@ steps=u23-st-book-work,u23-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d572309c72817e16742b8e87d45555f98c07c4f358cdf358348a8f06c12b5732
+- Content hash: 3486b356e6ef05b75356a6a0f2ce9a934fa1a4ab192d1e6f3f0f4821ae1e1f40
 
 kind=BOOK
 title=Work Lesson 23 in your copy
@@ -977,7 +991,7 @@ references=ref-u2125-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 23 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 23: printed pages 283-293. PDF indexes 295-305 are file locators, not printed pages. Observed section locators: §23.1 p283 (PDF 295); §23.2 p283 (PDF 295); §23.3 p284 (PDF 296); §23.4 p287 (PDF 299); §23.5 p288 (PDF 300); §23.6 p288 (PDF 300); §23.7 p289 (PDF 301); §23.8 p291 (PDF 303). Observed exercise locators: 23/1 p287/PDF299; 23/2 p288/PDF300; 23/3 p289/PDF301; 23/4 p289/PDF301; 23/5 p291/PDF303. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -989,7 +1003,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 955d650a3ee44f9c9bd8fa65d0855165c813a2988368e3e79ab2f7bf4ee4f5d7
+- Content hash: 95fb841b08704a0555101c0c9212c7832380cd615aea3ba52592d6d443eed231
 
 kind=BOOK
 title=Record Lesson 23 book work
@@ -999,38 +1013,38 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 23 work in your copy.
+bookDirection=Owned-book assignment for Lesson 23: printed pages 283-293. PDF indexes 295-305 are file locators, not printed pages. Observed section locators: §23.1 p283 (PDF 295); §23.2 p283 (PDF 295); §23.3 p284 (PDF 296); §23.4 p287 (PDF 299); §23.5 p288 (PDF 300); §23.6 p288 (PDF 300); §23.7 p289 (PDF 301); §23.8 p291 (PDF 303). Observed exercise locators: 23/1 p287/PDF299; 23/2 p288/PDF300; 23/3 p289/PDF301; 23/4 p289/PDF301; 23/5 p291/PDF303. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
 ### SESSION `u23-s-gap-completion`
 
-- Objectives: obj-u23-completion
+- Objectives: obj-u23-completion, obj-u23-book
 - Sessions: u23-s-gap-completion
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0de87bc9a422013712f0fb5060f917c5560e503c289e57461f0d9ad7b1b46a49
+- Content hash: 7499e43c7a1d378421b177e6a1ca5d1dbf0d5a6e4c14150fbf784a1226b7d46a
 
-title=Duration versus completion within a period
+title=Distinguish time spent from completion within a period
 estimatedMinutes=12
-objectives=obj-u23-completion
-steps=u23-st-teach-completion-1,u23-st-guided-completion-1,u23-st-teach-completion-2,u23-st-rem-completion,u23-st-check-completion
+objectives=obj-u23-completion,obj-u23-book
+steps=u23-st-teach-completion-1,u23-st-teach-completion-2,u23-st-guided-completion-1,u23-st-rem-completion,u23-st-check-completion,u23-st-anki-direction,u23-st-binder-direction,u23-st-tutor-direction,u23-st-cumulative-direction
 
 ### STEP `u23-st-teach-completion-1`
 
-- Objectives: obj-u23-completion
+- Objectives: obj-u23-completion, obj-u23-book
 - Sessions: u23-s-gap-completion
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6899beacc5ef3eaa42dfca00c5395fa620fd3976c594bdf129313b31c0bb5657
+- Content hash: d1686c4188ffac31a8b721e9851aaad5ccefdc99a3ada38467c28b2fb3be8aa2
 
 kind=TEACH
-title=Admitted instruction
-body=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+title=Time spent does not assert the task was finished
+body=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion. Анна читала статью два часа. — time spent reading without asserting completion. Борис писал письмо час. — time spent writing without asserting completion. These report time devoted to reading or writing. Not asserting completion does not mean asserting that the task was never finished.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1040,41 +1054,19 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u23-st-guided-completion-1`
-
-- Objectives: obj-u23-completion
-- Sessions: u23-s-gap-completion
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d88160c5b92a8d623015b683560f0ed355cb763f573c801333b9cd6fc692014d
-
-kind=GUIDED
-title=Guided practice
-body=The writing sentence states time spent writing and does not assert completion.
-dominantAction=Continue
-references=
-items=u23-g-completion-1
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u23-st-rem-completion
-
 ### STEP `u23-st-teach-completion-2`
 
-- Objectives: obj-u23-completion
+- Objectives: obj-u23-completion, obj-u23-book
 - Sessions: u23-s-gap-completion
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fea310cf3a80d4f4eac95fd404dc1d75a984ae8ba720d4c4167f2b0056a6a3a8
+- Content hash: 655d9a5daa766fe1af041976ad495a043114538af03c2fa3d48b7bfc368ae9ca
 
 kind=TEACH
-title=Admitted instruction
-body=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+title=The completed task and its time frame
+body=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed. Анна прочитала статью за два часа. — the article was finished within two hours. Here the perfective reading verb and the completion-time construction present the article as finished within the two-hour period. Contrast that with time spent reading without asserting completion. This completion interval differs from the forward-looking time until the Latvia journey. The current choices classify three supplied sentences; they do not test independently choosing aspect and constructing a time phrase.
 dominantAction=Continue
 references=
 items=
@@ -1084,19 +1076,43 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u23-st-rem-completion`
+### STEP `u23-st-guided-completion-1`
 
-- Objectives: obj-u23-completion
+- Objectives: obj-u23-completion, obj-u23-book
 - Sessions: u23-s-gap-completion
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f0df62cec784a92b995bc777b7b8f34bc2222b4f3a932dc850b8dcce4b83a059
+- Content hash: 829cf662607a3c13c470ea0a52f7f4ab1068a716517478a6e843c0384ca8fb2b
+
+kind=GUIDED
+title=Guided practice
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+dominantAction=Continue
+references=
+items=u23-g-completion-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u23-st-rem-completion
+
+### STEP `u23-st-rem-completion`
+
+- Objectives: obj-u23-completion, obj-u23-book
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 74940137e827f6709b5d189cda490b74dc1d96957b0969b324bc2dd218c88e0b
 
 kind=REMEDIATE
-title=Remediation
-body=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+title=Review the complete time contrast
+body=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion. Анна читала статью два часа. — time spent reading without asserting completion. Борис писал письмо час. — time spent writing without asserting completion. These report time devoted to reading or writing. Not asserting completion does not mean asserting that the task was never finished.
+
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed. Анна прочитала статью за два часа. — the article was finished within two hours. Here the perfective reading verb and the completion-time construction present the article as finished within the two-hour period. Contrast that with time spent reading without asserting completion. This completion interval differs from the forward-looking time until the Latvia journey. The current choices classify three supplied sentences; they do not test independently choosing aspect and constructing a time phrase.
 dominantAction=Continue
 references=
 items=
@@ -1108,17 +1124,17 @@ remediationStepId=
 
 ### STEP `u23-st-check-completion`
 
-- Objectives: obj-u23-completion
+- Objectives: obj-u23-completion, obj-u23-book
 - Sessions: u23-s-gap-completion
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e43264461e46c21d0ee87cf76aeed26d32a534a045a1aaef26439ece5c29bdd4
+- Content hash: 5c0953df62d56662f7e24a6279c5d18d4bd58cc7212692fdb0c8f13d7671f6c6
 
 kind=CHECK
 title=Independent checks
-body=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+body=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u23-i-completion-1,u23-i-completion-2
@@ -1127,6 +1143,94 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=u23-st-rem-completion
+
+### STEP `u23-st-anki-direction`
+
+- Objectives: obj-u23-completion, obj-u23-book
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2451c7d2bd85ee4b68b2ddc05b01c87535ea7ea868da94325c054ac529019b02
+
+kind=ANKI
+title=Unit 23 AnkiDroid direction
+body=Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u23-st-binder-direction`
+
+- Objectives: obj-u23-completion, obj-u23-book
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 643548555dee53bba21b38c29e94dc32f9524bc6608b6ddc89ccd6955ce9e060
+
+kind=BINDER
+title=Unit 23 binder prompt
+body=Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u23-st-tutor-direction`
+
+- Objectives: obj-u23-completion, obj-u23-book
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c344bb7f3d61ebfd764ca6315efc67837906b2126fb656e23d95b08814ac379f
+
+kind=TUTOR
+title=Unit 23 optional tutor
+body=Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u23-st-cumulative-direction`
+
+- Objectives: obj-u23-completion, obj-u23-book
+- Sessions: u23-s-gap-completion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0fe429316e67f61d43e88aa9ac0e4f4640420bf0e846ccc9d7a93ccd7ddf1c88
+
+kind=ORIENT
+title=Unit 23 cumulative review
+body=Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+remediationStepId=
 
 ### EXAMPLE `ex-u23-ranges-0`
 
@@ -1391,7 +1495,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d72704ba1ba8cbe21227625656a448c148fb87d5eac3306f7e2c63d5ea2c839f
+- Content hash: fe34f2f93b7272ad8157bb6ac220071541f723e4d7006f816d49fd7bb4ebdf61
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1400,10 +1504,11 @@ promptLetter=В шестидесятых годах
 options=in the 1960s | in the 1990s
 answer=in the 1960s
 feedback=The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
+В шестидесятых годах matches in the 1960s: the sixties, with the twentieth century assumed in this supplied gloss.
 objectiveId=obj-u23-ranges
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
+distractorRationales= | in the 1990s: the nineties, with the twentieth century assumed in this supplied gloss. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=DECADE_RANGE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-ranges-0
@@ -1411,8 +1516,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u23-ranges-0-en
 distractorSourceIds= | prov-ex-u23-ranges-1-en
-distractorDifference= | The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
+distractorDifference= | in the 1990s: the nineties, with the twentieth century assumed in this supplied gloss. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
+В шестидесятых годах matches in the 1960s: the sixties, with the twentieth century assumed in this supplied gloss.
 contrastMembers=in the 1960s | in the 1990s
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-ranges-0-ru | prov-ex-u23-ranges-0-en | prov-ex-u23-ranges-1-en
@@ -1426,7 +1532,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 874d38a300d202c02c408dfedda9a7cde79f8b94a2d8cee128fe7a04da57121c
+- Content hash: 4e35054851a9a0e8e91af0196f5986501629f12d7f1358d231bddf82127fa00a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1435,10 +1541,11 @@ promptLetter=В конце года
 options=at the end of the year | at the beginning of the century
 answer=at the end of the year
 feedback=The frozen source pairs the shown form "В конце года" with the admitted gloss "at the end of the year" ("at the end of the year").
+В конце года matches at the end of the year: the final part of a year.
 objectiveId=obj-u23-beginning
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "В начале века" with the admitted gloss "at the beginning of the century" ("at the beginning of the century").
+distractorRationales= | at the beginning of the century: the initial part of a century. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=BEGINNING_MIDDLE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-beginning-0
@@ -1446,8 +1553,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u23-beginning-0-en
 distractorSourceIds= | prov-ex-u23-beginning-1-en
-distractorDifference= | The frozen source pairs the shown form "В начале века" with the admitted gloss "at the beginning of the century" ("at the beginning of the century").
+distractorDifference= | at the beginning of the century: the initial part of a century. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "В конце года" with the admitted gloss "at the end of the year" ("at the end of the year").
+В конце года matches at the end of the year: the final part of a year.
 contrastMembers=at the end of the year | at the beginning of the century
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-beginning-0-ru | prov-ex-u23-beginning-0-en | prov-ex-u23-beginning-1-en
@@ -1461,7 +1569,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f2d123340e87c13f7f7b41f372d6214402a33ea85074e6d76babfc87db841a82
+- Content hash: 02446fbb6dd11cab8dd2cc599350c06809328d19f37e9c179803aa575797b080
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1470,10 +1578,11 @@ promptLetter=Она родилась во время войны.
 options=She was born during the war. | During the trip I met new friends.
 answer=She was born during the war.
 feedback=The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("during another event").
+Она родилась во время войны. matches She was born during the war.: birth within the war period.
 objectiveId=obj-u23-during-event
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("During the trip I met new friends.").
+distractorRationales= | During the trip I met new friends.: meeting friends within the trip period. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=DURING_EVENT
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-during-event-0
@@ -1481,8 +1590,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u23-during-event-0-en
 distractorSourceIds= | prov-ex-u23-during-event-1-en
-distractorDifference= | The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("During the trip I met new friends.").
+distractorDifference= | During the trip I met new friends.: meeting friends within the trip period. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("during another event").
+Она родилась во время войны. matches She was born during the war.: birth within the war period.
 contrastMembers=She was born during the war. | During the trip I met new friends.
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-during-event-0-ru | prov-ex-u23-during-event-0-en | prov-ex-u23-during-event-1-en
@@ -1496,7 +1606,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 385c773de5aaae5ad14e0298d54b2da242abdc5f0810d43a49c85b513915ab42
+- Content hash: 977a6092145510b7ecaec70769e74bcc4b890439c2cdf9cd7de3024468f8fa95
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1505,10 +1615,11 @@ promptLetter=В течение урока ученики работали над
 options=Throughout the lesson, the students worked on the project. | During the course of the day, the weather changed several times.
 answer=Throughout the lesson, the students worked on the project.
 feedback=The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("It emphasizes the duration over which something occurs.").
+В течение урока ученики работали над проектом. matches Throughout the lesson, the students worked on the project.: project work over the lesson interval without asserting project completion.
 objectiveId=obj-u23-duration
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("During the course of the day, the weather changed several times.").
+distractorRationales= | During the course of the day, the weather changed several times.: repeated weather changes within the day. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=ELAPSED_DURATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-duration-0
@@ -1516,8 +1627,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u23-duration-0-en
 distractorSourceIds= | prov-ex-u23-duration-1-en
-distractorDifference= | The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("During the course of the day, the weather changed several times.").
+distractorDifference= | During the course of the day, the weather changed several times.: repeated weather changes within the day. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("It emphasizes the duration over which something occurs.").
+В течение урока ученики работали над проектом. matches Throughout the lesson, the students worked on the project.: project work over the lesson interval without asserting project completion.
 contrastMembers=Throughout the lesson, the students worked on the project. | During the course of the day, the weather changed several times.
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-duration-0-ru | prov-ex-u23-duration-0-en | prov-ex-u23-duration-1-en
@@ -1531,7 +1643,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3da241fda6204d2f9bea972533c4871d805e2c00e5bdefa9ba49522eee808786
+- Content hash: a524670852938103cf96a5a923cc80167f9ebecaf1ac191d15293eb244c20222
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1540,10 +1652,11 @@ promptLetter=Перед ужином мы ходили в парк.
 options=before | after
 answer=before
 feedback=The frozen source pairs the shown form "Перед ужином мы ходили в парк." with the admitted gloss "before" ("relate events in time").
+Перед ужином мы ходили в парк. matches before: earlier than the named reference event.
 objectiveId=obj-u23-elapsed
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "После работы я смотрела фильм." with the admitted gloss "after" ("after").
+distractorRationales= | after: later than the named reference event. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=ELAPSED_RELATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-elapsed-0
@@ -1551,8 +1664,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u23-elapsed-0-en
 distractorSourceIds= | prov-ex-u23-elapsed-1-en
-distractorDifference= | The frozen source pairs the shown form "После работы я смотрела фильм." with the admitted gloss "after" ("after").
+distractorDifference= | after: later than the named reference event. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Перед ужином мы ходили в парк." with the admitted gloss "before" ("relate events in time").
+Перед ужином мы ходили в парк. matches before: earlier than the named reference event.
 contrastMembers=before | after
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-elapsed-0-ru | prov-ex-u23-elapsed-0-en | prov-ex-u23-elapsed-1-en
@@ -1566,7 +1680,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 00f9d574368531bb784789d155c8440ffc13476ae782dccc45f0eda2871845dc
+- Content hash: 77c29551cd0f693cacffd492152d156a9dffc0991cebf3639db28f638bc2eb46
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1575,10 +1689,11 @@ promptLetter=Борис писал письмо час.
 options=time spent writing without asserting completion | the article was finished within two hours
 answer=time spent writing without asserting completion
 feedback=The writing sentence states time spent writing and does not assert completion.
+Борис писал письмо час. matches time spent writing without asserting completion: imperfective writing with a bare accusative duration; completion is not asserted.
 objectiveId=obj-u23-completion
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+distractorRationales= | the article was finished within two hours: perfective reading with an accusative completion interval; the article is presented as finished. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=DURATION_WITHOUT_COMPLETION
 evidenceMode=STATED_APPLICATION
 contrastSetId=u23-g-completion-1
@@ -1586,8 +1701,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-u23-completion-10
 distractorSourceIds= | prov-u23-completion-9
-distractorDifference= | A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+distractorDifference= | the article was finished within two hours: perfective reading with an accusative completion interval; the article is presented as finished. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The writing sentence states time spent writing and does not assert completion.
+Борис писал письмо час. matches time spent writing without asserting completion: imperfective writing with a bare accusative duration; completion is not asserted.
 contrastMembers=time spent writing without asserting completion | the article was finished within two hours
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-u23-completion-7 | prov-u23-completion-10 | prov-u23-completion-9
@@ -1601,7 +1717,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c93fd05ec1713be176de054a2629f78ae218fa7453e2303b57bec3031c148512
+- Content hash: 833c3c7646be8522ca5b79140904484e8d54559b6d62213d8a82d625b886c8e9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1610,10 +1726,11 @@ promptLetter=В девяностых годах
 options=in the 1990s | in the 1960s
 answer=in the 1990s
 feedback=The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
+В девяностых годах matches in the 1990s: the nineties, with the twentieth century assumed in this supplied gloss.
 objectiveId=obj-u23-ranges
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
+distractorRationales= | in the 1960s: the sixties, with the twentieth century assumed in this supplied gloss. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=DECADE_RANGE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-ranges-1
@@ -1621,8 +1738,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u23-ranges-1-en
 distractorSourceIds= | prov-ex-u23-ranges-0-en
-distractorDifference= | The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
+distractorDifference= | in the 1960s: the sixties, with the twentieth century assumed in this supplied gloss. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
+В девяностых годах matches in the 1990s: the nineties, with the twentieth century assumed in this supplied gloss.
 contrastMembers=in the 1990s | in the 1960s
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-ranges-1-ru | prov-ex-u23-ranges-1-en | prov-ex-u23-ranges-0-en
@@ -1636,7 +1754,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6dd8d835b35bbb4e9428315f5aa843fb6b205ddeeb034c0fa1d474c4098bd37c
+- Content hash: a9ecac60a3f0985d4d068debc878e259aa27c6235dfe58b2758119f2969da9f4
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1645,10 +1763,11 @@ promptLetter=В шестидесятых годах
 options=in the 1960s | in the 1990s
 answer=in the 1960s
 feedback=The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
+В шестидесятых годах matches in the 1960s: the sixties, with the twentieth century assumed in this supplied gloss.
 objectiveId=obj-u23-ranges
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
+distractorRationales= | in the 1990s: the nineties, with the twentieth century assumed in this supplied gloss. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=DECADE_RANGE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-ranges-2
@@ -1656,8 +1775,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u23-ranges-0-en
 distractorSourceIds= | prov-ex-u23-ranges-1-en
-distractorDifference= | The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
+distractorDifference= | in the 1990s: the nineties, with the twentieth century assumed in this supplied gloss. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
+В шестидесятых годах matches in the 1960s: the sixties, with the twentieth century assumed in this supplied gloss.
 contrastMembers=in the 1960s | in the 1990s
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-ranges-0-ru | prov-ex-u23-ranges-0-en | prov-ex-u23-ranges-1-en
@@ -1671,7 +1791,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8f6f9539d96286d5a5e533d812ce4ea3ea055ff1cfbdea78c181d92b85d77cfb
+- Content hash: 6d7939b165f338912e22da9fcf98fabe5795a60cb82c1d3c32f8bab8869592d1
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1680,10 +1800,11 @@ promptLetter=В начале века
 options=at the beginning of the century | in the middle of the week
 answer=at the beginning of the century
 feedback=The frozen source pairs the shown form "В начале века" with the admitted gloss "at the beginning of the century" ("at the beginning of the century").
+В начале века matches at the beginning of the century: the initial part of a century.
 objectiveId=obj-u23-beginning
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "В середине недели" with the admitted gloss "in the middle of the week" ("in the middle of the week").
+distractorRationales= | in the middle of the week: the central part of a week. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=BEGINNING_MIDDLE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-beginning-1
@@ -1691,8 +1812,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u23-beginning-1-en
 distractorSourceIds= | prov-ex-u23-beginning-2-en
-distractorDifference= | The frozen source pairs the shown form "В середине недели" with the admitted gloss "in the middle of the week" ("in the middle of the week").
+distractorDifference= | in the middle of the week: the central part of a week. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "В начале века" with the admitted gloss "at the beginning of the century" ("at the beginning of the century").
+В начале века matches at the beginning of the century: the initial part of a century.
 contrastMembers=at the beginning of the century | in the middle of the week
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-beginning-1-ru | prov-ex-u23-beginning-1-en | prov-ex-u23-beginning-2-en
@@ -1706,7 +1828,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 775beaf30eb58b3463448e605bdccb76a10ea37cd2da96d8f219c6fe9195c5ec
+- Content hash: 46153f92b82bcf4005d338c49fc6f63fbc015c6d16ccba67ec397481b9520e18
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1715,10 +1837,11 @@ promptLetter=В середине недели
 options=in the middle of the week | at the end of the year
 answer=in the middle of the week
 feedback=The frozen source pairs the shown form "В середине недели" with the admitted gloss "in the middle of the week" ("in the middle of the week").
+В середине недели matches in the middle of the week: the central part of a week.
 objectiveId=obj-u23-beginning
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "В конце года" with the admitted gloss "at the end of the year" ("at the end of the year").
+distractorRationales= | at the end of the year: the final part of a year. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=BEGINNING_MIDDLE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-beginning-2
@@ -1726,8 +1849,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u23-beginning-2-en
 distractorSourceIds= | prov-ex-u23-beginning-0-en
-distractorDifference= | The frozen source pairs the shown form "В конце года" with the admitted gloss "at the end of the year" ("at the end of the year").
+distractorDifference= | at the end of the year: the final part of a year. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "В середине недели" with the admitted gloss "in the middle of the week" ("in the middle of the week").
+В середине недели matches in the middle of the week: the central part of a week.
 contrastMembers=in the middle of the week | at the end of the year
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-beginning-2-ru | prov-ex-u23-beginning-2-en | prov-ex-u23-beginning-0-en
@@ -1741,7 +1865,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5eccf52fc049aea438fc71110a88c286bf4776c9fe50eed57f125973fc129df7
+- Content hash: 93a0114c9d7d32e4bb447a678ef29f0f148ef28f96dff49d54c946decda8b995
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1750,10 +1874,11 @@ promptLetter=Во время поездки я познакомился с но�
 options=During the trip I met new friends. | She was born during the war.
 answer=During the trip I met new friends.
 feedback=The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("during another event").
+Во время поездки я познакомился с новыми друзьями. matches During the trip I met new friends.: meeting friends within the trip period.
 objectiveId=obj-u23-during-event
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("She was born during the war.").
+distractorRationales= | She was born during the war.: birth within the war period. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=DURING_EVENT
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-during-event-1
@@ -1761,8 +1886,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u23-during-event-1-en
 distractorSourceIds= | prov-ex-u23-during-event-0-en
-distractorDifference= | The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("She was born during the war.").
+distractorDifference= | She was born during the war.: birth within the war period. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("during another event").
+Во время поездки я познакомился с новыми друзьями. matches During the trip I met new friends.: meeting friends within the trip period.
 contrastMembers=During the trip I met new friends. | She was born during the war.
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-during-event-1-ru | prov-ex-u23-during-event-1-en | prov-ex-u23-during-event-0-en
@@ -1776,7 +1902,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e516c13e75a8868d6ccfceb92e5a4df1cb1241c485ee59395f6bb38f08d8f9aa
+- Content hash: bb11b8e268d9f9108b42ffdf84a15a5b135c150ff02e8167168fdd2bf7b4f9ef
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1785,10 +1911,11 @@ promptLetter=Она родилась во время войны.
 options=She was born during the war. | During the trip I met new friends.
 answer=She was born during the war.
 feedback=The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("during another event").
+Она родилась во время войны. matches She was born during the war.: birth within the war period.
 objectiveId=obj-u23-during-event
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("During the trip I met new friends.").
+distractorRationales= | During the trip I met new friends.: meeting friends within the trip period. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=DURING_EVENT
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-during-event-2
@@ -1796,8 +1923,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u23-during-event-0-en
 distractorSourceIds= | prov-ex-u23-during-event-1-en
-distractorDifference= | The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("During the trip I met new friends.").
+distractorDifference= | During the trip I met new friends.: meeting friends within the trip period. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("during another event").
+Она родилась во время войны. matches She was born during the war.: birth within the war period.
 contrastMembers=She was born during the war. | During the trip I met new friends.
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-during-event-0-ru | prov-ex-u23-during-event-0-en | prov-ex-u23-during-event-1-en
@@ -1811,7 +1939,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c2c61c269503ec1b82009fbcf8aad04ac1fc33160233daa0eb99bebf0b7bd6f6
+- Content hash: d044ca7825990aef71d273ec61a40be80be04a77262fb48be9e961b424522352
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1820,10 +1948,11 @@ promptLetter=В течение дня погода менялась нескол
 options=During the course of the day, the weather changed several times. | Throughout the lesson, the students worked on the project.
 answer=During the course of the day, the weather changed several times.
 feedback=The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("It emphasizes the duration over which something occurs.").
+В течение дня погода менялась несколько раз. matches During the course of the day, the weather changed several times.: repeated weather changes within the day.
 objectiveId=obj-u23-duration
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("Throughout the lesson, the students worked on the project.").
+distractorRationales= | Throughout the lesson, the students worked on the project.: project work over the lesson interval without asserting project completion. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=ELAPSED_DURATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-duration-1
@@ -1831,8 +1960,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u23-duration-1-en
 distractorSourceIds= | prov-ex-u23-duration-0-en
-distractorDifference= | The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("Throughout the lesson, the students worked on the project.").
+distractorDifference= | Throughout the lesson, the students worked on the project.: project work over the lesson interval without asserting project completion. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("It emphasizes the duration over which something occurs.").
+В течение дня погода менялась несколько раз. matches During the course of the day, the weather changed several times.: repeated weather changes within the day.
 contrastMembers=During the course of the day, the weather changed several times. | Throughout the lesson, the students worked on the project.
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-duration-1-ru | prov-ex-u23-duration-1-en | prov-ex-u23-duration-0-en
@@ -1846,7 +1976,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 627206215603d88547da544bdff1e45025291ba75c53c2813a448fc150029f5d
+- Content hash: 1816848735a15fb7d459c35c3ff85410e8597c5d6c95a534a7f4528b6733e75e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1855,10 +1985,11 @@ promptLetter=В течение урока ученики работали над
 options=Throughout the lesson, the students worked on the project. | During the course of the day, the weather changed several times.
 answer=Throughout the lesson, the students worked on the project.
 feedback=The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("It emphasizes the duration over which something occurs.").
+В течение урока ученики работали над проектом. matches Throughout the lesson, the students worked on the project.: project work over the lesson interval without asserting project completion.
 objectiveId=obj-u23-duration
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("During the course of the day, the weather changed several times.").
+distractorRationales= | During the course of the day, the weather changed several times.: repeated weather changes within the day. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=ELAPSED_DURATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-duration-2
@@ -1866,8 +1997,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u23-duration-0-en
 distractorSourceIds= | prov-ex-u23-duration-1-en
-distractorDifference= | The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("During the course of the day, the weather changed several times.").
+distractorDifference= | During the course of the day, the weather changed several times.: repeated weather changes within the day. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("It emphasizes the duration over which something occurs.").
+В течение урока ученики работали над проектом. matches Throughout the lesson, the students worked on the project.: project work over the lesson interval without asserting project completion.
 contrastMembers=Throughout the lesson, the students worked on the project. | During the course of the day, the weather changed several times.
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-duration-0-ru | prov-ex-u23-duration-0-en | prov-ex-u23-duration-1-en
@@ -1881,7 +2013,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: fe7bf6cbbd0e4d95c0e3a6688027ed2ec94b270eee2d778ef5060ad237833745
+- Content hash: 459e7229426c5be85e25c9f05764c169165dcf1f56eaa3eebb3aa8ecdffc1e87
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1890,10 +2022,11 @@ promptLetter=Мы едем в Латвию через год.
 options=in (a period of time) | ago
 answer=in (a period of time)
 feedback=The frozen source pairs the shown form "Мы едем в Латвию через год." with the admitted gloss "in (a period of time)" ("relate events in time").
+Мы едем в Латвию через год. matches in (a period of time): an event after the forward-looking interval, not the duration of the activity.
 objectiveId=obj-u23-elapsed
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Мы ездили в Казахстан год назад." with the admitted gloss "ago" ("ago").
+distractorRationales= | ago: an event before the reference time, not completion within a period. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=ELAPSED_RELATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-elapsed-1
@@ -1901,8 +2034,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u23-elapsed-2-en
 distractorSourceIds= | prov-ex-u23-elapsed-3-en
-distractorDifference= | The frozen source pairs the shown form "Мы ездили в Казахстан год назад." with the admitted gloss "ago" ("ago").
+distractorDifference= | ago: an event before the reference time, not completion within a period. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Мы едем в Латвию через год." with the admitted gloss "in (a period of time)" ("relate events in time").
+Мы едем в Латвию через год. matches in (a period of time): an event after the forward-looking interval, not the duration of the activity.
 contrastMembers=in (a period of time) | ago
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-elapsed-2-ru | prov-ex-u23-elapsed-2-en | prov-ex-u23-elapsed-3-en
@@ -1916,7 +2050,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-usa-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 45cfcbc8d767009ffc815990e7c39ef55b283a2aa8440cbb66636846eaa8df14
+- Content hash: 3aec5856984410836b94430fcc9429f609f5e5adc03d86c20f9511694cdba847
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1925,10 +2059,11 @@ promptLetter=Мы ездили в Казахстан год назад.
 options=ago | in (a period of time)
 answer=ago
 feedback=The frozen source pairs the shown form "Мы ездили в Казахстан год назад." with the admitted gloss "ago" ("relate events in time").
+Мы ездили в Казахстан год назад. matches ago: an event before the reference time, not completion within a period.
 objectiveId=obj-u23-elapsed
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Мы едем в Латвию через год." with the admitted gloss "in (a period of time)" ("in (a period of time)").
+distractorRationales= | in (a period of time): an event after the forward-looking interval, not the duration of the activity. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=ELAPSED_RELATION
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u23-elapsed-2
@@ -1936,8 +2071,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u23-elapsed-3-en
 distractorSourceIds= | prov-ex-u23-elapsed-2-en
-distractorDifference= | The frozen source pairs the shown form "Мы едем в Латвию через год." with the admitted gloss "in (a period of time)" ("in (a period of time)").
+distractorDifference= | in (a period of time): an event after the forward-looking interval, not the duration of the activity. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Мы ездили в Казахстан год назад." with the admitted gloss "ago" ("relate events in time").
+Мы ездили в Казахстан год назад. matches ago: an event before the reference time, not completion within a period.
 contrastMembers=ago | in (a period of time)
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u23-elapsed-3-ru | prov-ex-u23-elapsed-3-en | prov-ex-u23-elapsed-2-en
@@ -1951,7 +2087,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4278a043febba5e5f4dcc1c0e4237eae07a1f8593a60782c485fb5b3d5fb6433
+- Content hash: b9382f36f02c78521c2957a75cbb7edbd922b8f84a52ceb7d01666527574ee3d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1960,10 +2096,11 @@ promptLetter=Анна читала статью два часа.
 options=time spent reading without asserting completion | the article was finished within two hours
 answer=time spent reading without asserting completion
 feedback=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+Анна читала статью два часа. matches time spent reading without asserting completion: imperfective reading with a bare accusative duration; completion is not asserted.
 objectiveId=obj-u23-completion
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+distractorRationales= | the article was finished within two hours: perfective reading with an accusative completion interval; the article is presented as finished. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=DURATION_WITHOUT_COMPLETION
 evidenceMode=STATED_APPLICATION
 contrastSetId=u23-i-completion-1
@@ -1971,8 +2108,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u23-completion-8
 distractorSourceIds= | prov-u23-completion-9
-distractorDifference= | A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+distractorDifference= | the article was finished within two hours: perfective reading with an accusative completion interval; the article is presented as finished. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+Анна читала статью два часа. matches time spent reading without asserting completion: imperfective reading with a bare accusative duration; completion is not asserted.
 contrastMembers=time spent reading without asserting completion | the article was finished within two hours
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-u23-completion-5 | prov-u23-completion-8 | prov-u23-completion-9
@@ -1986,7 +2124,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c4c1dbce7293a1e1ad5d418327a7d98e618a4b1a063039d43abeb9acea7cef99
+- Content hash: b9110bcfb686c6fb80d75549fff3bea115352127b5d0f8aec8829e04d12dc2a0
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1995,10 +2133,11 @@ promptLetter=Анна прочитала статью за два часа.
 options=the article was finished within two hours | time spent reading without asserting completion
 answer=the article was finished within two hours
 feedback=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+Анна прочитала статью за два часа. matches the article was finished within two hours: perfective reading with an accusative completion interval; the article is presented as finished.
 objectiveId=obj-u23-completion
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+distractorRationales= | time spent reading without asserting completion: imperfective reading with a bare accusative duration; completion is not asserted. This is a different time relation, interval, event or completion claim from the requested meaning.
 testedFeature=COMPLETED_WITHIN_PERIOD
 evidenceMode=STATED_APPLICATION
 contrastSetId=u23-i-completion-2
@@ -2006,8 +2145,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u23-completion-9
 distractorSourceIds= | prov-u23-completion-8
-distractorDifference= | An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+distractorDifference= | time spent reading without asserting completion: imperfective reading with a bare accusative duration; completion is not asserted. This is a different time relation, interval, event or completion claim from the requested meaning.
 whyAnswerDemonstratesObjective=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+Анна прочитала статью за два часа. matches the article was finished within two hours: perfective reading with an accusative completion interval; the article is presented as finished.
 contrastMembers=the article was finished within two hours | time spent reading without asserting completion
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-u23-completion-6 | prov-u23-completion-9 | prov-u23-completion-8
@@ -2021,15 +2161,2687 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 13b5b0663d179bb047247c9503392313b7ed62264238e62a1d630d0b575774a4
+- Content hash: 21008c6a12371c6f7de004b80e3a68467c263ae4e7c0499981579c82839010ae
 
 title=Units 21–25 source notice
-summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence.
-detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A separate application chain on that same span uses only names already in the span. It is not a name generator. Completion over a period is not prepared. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Scope-sensitive placement is the ReadyRussian Language Generator 3 statement that the modifier negates the following word, and that page's two-sentence contrast, under the ReadyRussian CC BY-SA 4.0 route. Review is pending.
+summary=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+detail=Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A separate application chain on that same span uses only names already in the span. It is not a name generator. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Scope-sensitive placement is the ReadyRussian Language Generator 3 statement that the modifier negates the following word, and that page's two-sentence contrast, under the ReadyRussian CC BY-SA 4.0 route. Review is pending. Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=21
 searchTerms=units 21-25 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-23-106`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 297f7321ae2246c804e08bfd4bf84ae1b5da0c4ec6bfe93d1d5ac23b261508a4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:u23-st-teach-ranges-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-23-107`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 543582a4141973d3801f8a1e6c397fb8b3cdeff945c0220d855abe1a9d8cb018
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:u23-st-teach-during-event-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-23-108`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2dd2fb0b79bdb339c5e2d9229b4471de13909071b099bd34968c6ba76adaaee9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:u23-st-teach-elapsed-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-23-605`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bba10a64a4d9fe7e3b75838a707d2efc5616c5a429c2b97f4234fbbe327ac44
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:u23-st-orient
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. A bounded completion-over-a-period check is implemented here and remains review-pending. It does not cover every temporal clause. Qualified review is pending.
+shippedText=Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. A bounded completion-over-a-period check is implemented here and remains review-pending. It does not cover every temporal clause. Qualified review is pending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cac6de4f6edb18373e3c1b00fef9d4ded0e901bf787c6d19a2895b2d428ed624
+contentHash=c29eadfe3b1548888c62e2371e2650a2dca19a8941d8599e7ac9f1f8c77b5e80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-23-613`
+
+- Objectives: obj-u23-book
+- Sessions: u23-s-orient, u23-s-book, u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7e6815065d905f2dc93dfb14a9e25da2210ece2d2857ec55a70de26365e9751
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-book:u23:notice-2125
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
+shippedText=Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5582773b741ee53c022b9ba27c891d756dfae1d526d9150ba90a440b86145a00
+contentHash=cfa29fcc2b75e5259f19b25cdf8cd0acc40a91b5edf1c16bf0d642d4bf6d00d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-23-614`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99833942401e0cd0457fdec51239f4f91ef50b4a292703713f9d1e74b7207d03
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:u23:notice-2125-summary
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+shippedText=Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f1e5d4ee50b835be66e350280da1d9c2602f1e8394a669277be53ae13933a5c2
+contentHash=413a7a6cef6c60d2a828e503fe1158b52d1e907fcabe86e17a86091d81768bfa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-beginning-guided`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9759674334c642af491cc17661e02625950ac5fd113a70dd1ea4ef145ae90c4a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:beginning-guided
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+shippedText=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9b53274e065b09e9950b642b92ebe0a03fd9a3b23951bc285abf8181af2e918
+contentHash=6a0be549e2f529f70f5992c0409030d74c26a2ec255088765e8eba977344407b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-beginning-objective`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e76a1e24ea30447d96e177b3d27c26b96a98a9021fd644e3499f3984a29d2590
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:beginning-objective
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Locate the beginning, middle or end of a period
+shippedText=Locate the beginning, middle or end of a period
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a6570fd956d8cde4425c8da77535adc8f0d2343f190de99c67a9d5c29bc8fbf1
+contentHash=81342c73d2ba076ad8d0469be6a31aeedeae1b82c3077b482fbbe7e90ed09734
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-beginning-rem-body`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e20da10859aa65672e56a9b70612cab2cc59631ec777f91b73b711dfb03bfacc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:beginning-rem-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+В конце года — at the end of the year. В начале века — at the beginning of the century. The position word identifies which part of the period is meant, while the following noun identifies the period. Both parts matter: an end is not a beginning, and a year is not a century.
+
+In these expressions, the location noun after the preposition is prepositional, and the noun naming the period is genitive. The English of relationship links the part to the larger period. Do not assign one case to both nouns simply because they appear in the same time phrase.
+
+В середине недели — in the middle of the week. This locates an event within the central part of a week; it does not mean the end of a year or the beginning of a century. The checks match complete supplied expressions, not independently produced period-and-position combinations.
+shippedText=В конце года — at the end of the year. В начале века — at the beginning of the century. The position word identifies which part of the period is meant, while the following noun identifies the period. Both parts matter: an end is not a beginning, and a year is not a century.
+
+In these expressions, the location noun after the preposition is prepositional, and the noun naming the period is genitive. The English of relationship links the part to the larger period. Do not assign one case to both nouns simply because they appear in the same time phrase.
+
+В середине недели — in the middle of the week. This locates an event within the central part of a week; it does not mean the end of a year or the beginning of a century. The checks match complete supplied expressions, not independently produced period-and-position combinations.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=395cc1bc6400b2793db36bfae6a3cb374fc602194d43f39788ef626c46b9ac59
+contentHash=a6481c6186f0996209f3028b84bf752bbf60dbbeeba4d8a65581598af50135a6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-beginning-rem-title`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 425ab3b4b9509e0968fb6bca572f1753b83f2fd5503f8f9c965d99f03f6126e8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:beginning-rem-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete time contrast
+shippedText=Review the complete time contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11ccb90aca3ac634ace1ac557d7bfc42bec11167d1e3e5555c914e91840fa0a3
+contentHash=0e0e664eae97071e05fef1ff64375c463a800d10c09de61d6d7f9761d4dec20d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-beginning-teach-1-body`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a663f8fb781fd251e05a55e8ae17724d29fb093a18587ae8278f93253705dfbe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:beginning-teach-1-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+В конце года — at the end of the year. В начале века — at the beginning of the century. The position word identifies which part of the period is meant, while the following noun identifies the period. Both parts matter: an end is not a beginning, and a year is not a century.
+shippedText=В конце года — at the end of the year. В начале века — at the beginning of the century. The position word identifies which part of the period is meant, while the following noun identifies the period. Both parts matter: an end is not a beginning, and a year is not a century.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3bfb43f1670bd38722d6b710df501656da135ac03a0450333350ee6ad0297fd5
+contentHash=7b8fe37c61d203f9f475f0e99108efc8ddca2ed39ff1baf1d81edb0f25b42a4a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-beginning-teach-1-title`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac0ee6a7a07143dc536913ca3bfbd234d27e72b2bc1bf6468cdd34da819cd4e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:beginning-teach-1-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The end of a year and the beginning of a century
+shippedText=The end of a year and the beginning of a century
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ac79a731b51597211fc331daf1efef7208343073c4c3abb7b00ea51f740b9f39
+contentHash=c27216a9c80e086182911798cbb8b4364dc951491b3c3b97f929d169010996ae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-beginning-teach-2-body`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65dba82c810957720e6524738bd2ed1b1636ea4671634ea09d8b37055d12b7e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:beginning-teach-2-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+In these expressions, the location noun after the preposition is prepositional, and the noun naming the period is genitive. The English of relationship links the part to the larger period. Do not assign one case to both nouns simply because they appear in the same time phrase.
+shippedText=In these expressions, the location noun after the preposition is prepositional, and the noun naming the period is genitive. The English of relationship links the part to the larger period. Do not assign one case to both nouns simply because they appear in the same time phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f59596cb00d6e087af679630282ee73309fc318bbd4238843db94018c38d1ae
+contentHash=6bd90e5ce96310a40978a4419f56c7d3c6af1beceae87755de36caab222b2f68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-beginning-teach-2-title`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fbed9e4a93ee80146e0bbd5794f06859853c4cd4863b85cd936e69f220758868
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:beginning-teach-2-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The two nouns have different case roles
+shippedText=The two nouns have different case roles
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25509666e4e9e59687e752e346b63e5c861dd936672809d1844e29a6cfd74414
+contentHash=dc546bfa3520f3aa0cc7793f9dd28bc7957685c289c96cd34717bd24d674dc99
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-beginning-teach-3-body`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75f772bd31f95318c83a47f27b6d7b86ed83b798022cbbc0e385ed4dee87cbd0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:beginning-teach-3-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+В середине недели — in the middle of the week. This locates an event within the central part of a week; it does not mean the end of a year or the beginning of a century. The checks match complete supplied expressions, not independently produced period-and-position combinations.
+shippedText=В середине недели — in the middle of the week. This locates an event within the central part of a week; it does not mean the end of a year or the beginning of a century. The checks match complete supplied expressions, not independently produced period-and-position combinations.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c91317d1d08d068ef826ec1dcdde38663237e29e8579b086ea8a70c6459ec6f1
+contentHash=310ba6044c8bf8e728ba9668540cd44c0c54aa9fac6e2dfa86b3fef6ad97f551
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-beginning-teach-3-title`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36f0d536557694daf5e9ded12e62d13f459deb6fd85e9fbb1f943e692b3cc7b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:beginning-teach-3-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The middle of the week
+shippedText=The middle of the week
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6105fb576eb1537b9cc235b4d5f30a21da9a25243ddc10122cfda4743e5d46a3
+contentHash=f00108891c3e62905a08cf4c4fd3b0f8958081dd9571203abba867900dd51a9f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-completion-guided`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f709e03c815e7c1dc64565b19d3932bd92bdb5b4ea11215f482987fc16742caf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:completion-guided
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+shippedText=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9b53274e065b09e9950b642b92ebe0a03fd9a3b23951bc285abf8181af2e918
+contentHash=6a0be549e2f529f70f5992c0409030d74c26a2ec255088765e8eba977344407b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-completion-objective`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ecb27c0520aadddadff9c74c75abd4f55d26aed52e848fffc04bac75caa1ef2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:completion-objective
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Distinguish time spent from completion within a period
+shippedText=Distinguish time spent from completion within a period
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=150670fdd19d8ba046b73aed01d404f88418c5c4107f27afcde8707a97204d0b
+contentHash=4d7e2e82e0aa1bab6744c0ccba08945c3f82fd9c56a8f1818e67f61dd9eb8ff8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-completion-rem-body`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac87d38be36cf304ea3ca671854d893b600dea301e7d9b1a2fd89615d25e2392
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:completion-rem-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion. Анна читала статью два часа. — time spent reading without asserting completion. Борис писал письмо час. — time spent writing without asserting completion. These report time devoted to reading or writing. Not asserting completion does not mean asserting that the task was never finished.
+
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed. Анна прочитала статью за два часа. — the article was finished within two hours. Here the perfective reading verb and the completion-time construction present the article as finished within the two-hour period. Contrast that with time spent reading without asserting completion. This completion interval differs from the forward-looking time until the Latvia journey. The current choices classify three supplied sentences; they do not test independently choosing aspect and constructing a time phrase.
+shippedText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion. Анна читала статью два часа. — time spent reading without asserting completion. Борис писал письмо час. — time spent writing without asserting completion. These report time devoted to reading or writing. Not asserting completion does not mean asserting that the task was never finished.
+
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed. Анна прочитала статью за два часа. — the article was finished within two hours. Here the perfective reading verb and the completion-time construction present the article as finished within the two-hour period. Contrast that with time spent reading without asserting completion. This completion interval differs from the forward-looking time until the Latvia journey. The current choices classify three supplied sentences; they do not test independently choosing aspect and constructing a time phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8402352df2cbb081c91cab089e9483feb86feaecc5705125a0a1b8b4968ccc0c
+contentHash=eddae64d4b8c0068ee15950ee25f9a5b9cfae6c26f44784df49485880150d350
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-completion-rem-title`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17e96f02bb4c92348b1368b8062b4b2cf2d1fc9a3f4e3aa4a5dc8db7dc0c8602
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:completion-rem-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete time contrast
+shippedText=Review the complete time contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11ccb90aca3ac634ace1ac557d7bfc42bec11167d1e3e5555c914e91840fa0a3
+contentHash=0e0e664eae97071e05fef1ff64375c463a800d10c09de61d6d7f9761d4dec20d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-completion-teach-1-body`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5749e4e4751d67bacd70048762e83538d0196d5ec12ed97f534fc3f20bbbcf8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:completion-teach-1-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion. Анна читала статью два часа. — time spent reading without asserting completion. Борис писал письмо час. — time spent writing without asserting completion. These report time devoted to reading or writing. Not asserting completion does not mean asserting that the task was never finished.
+shippedText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion. Анна читала статью два часа. — time spent reading without asserting completion. Борис писал письмо час. — time spent writing without asserting completion. These report time devoted to reading or writing. Not asserting completion does not mean asserting that the task was never finished.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a2228acb016ee3c2041b5e1335947af36586580b59fcd77b58341003eeb00de0
+contentHash=3ab53a6f66cb698ecb3ed1f3eebfd8163aa1d7e76e6dacc6d8b84e1c13e7839e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-completion-teach-1-title`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bda124c3e1cfb7d587a36b0a145fb5206dfa321c565f543aee9b9a312a65701
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:completion-teach-1-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Time spent does not assert the task was finished
+shippedText=Time spent does not assert the task was finished
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f04f18518fe9acc6eeea0314ccbfbf1614ca253fdf6d039bbd83750418977a08
+contentHash=6b35f4362fd70559b6917b146d833d6011130c2bb7fd1a1d0312771ce5f9f752
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-completion-teach-2-body`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bedcdb15986e5330c92205716d009e41cba82e6e038c14f4948a8be3168197e7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:completion-teach-2-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed. Анна прочитала статью за два часа. — the article was finished within two hours. Here the perfective reading verb and the completion-time construction present the article as finished within the two-hour period. Contrast that with time spent reading without asserting completion. This completion interval differs from the forward-looking time until the Latvia journey. The current choices classify three supplied sentences; they do not test independently choosing aspect and constructing a time phrase.
+shippedText=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed. Анна прочитала статью за два часа. — the article was finished within two hours. Here the perfective reading verb and the completion-time construction present the article as finished within the two-hour period. Contrast that with time spent reading without asserting completion. This completion interval differs from the forward-looking time until the Latvia journey. The current choices classify three supplied sentences; they do not test independently choosing aspect and constructing a time phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2a91c74b8554edd374bd1a620eee50beeeb9d4414e87dda74caae4d21e46a157
+contentHash=cb58eacfcec4083a60bbe1b6e82864c72ddc36e53b51e53d3b88dcdc398ea99b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-completion-teach-2-title`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f16e2e19fed667d69d9ba025b721cbe294e0e2e199b55d28cba67fcc4784334f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:completion-teach-2-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The completed task and its time frame
+shippedText=The completed task and its time frame
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e31db4cbebea2e303772bac82d00faa70dd911c89a935fcd13cbd728e66d0189
+contentHash=1a85aa0fd4e5643076d30bdf1ec68d2bda52e5c952e3f30d7caf76d01354a16e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-duration-guided`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa4ab72bb0007ac1d90a8eaec67d18db34f6087682ef7472169fd4f62c2cb1bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:duration-guided
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+shippedText=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9b53274e065b09e9950b642b92ebe0a03fd9a3b23951bc285abf8181af2e918
+contentHash=6a0be549e2f529f70f5992c0409030d74c26a2ec255088765e8eba977344407b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-duration-objective`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 08322cdce36c6e470792fd2046025c1ab9b054820946d4c5ad82b4eadb88e0e8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:duration-objective
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Read the interval over which activity occurs
+shippedText=Read the interval over which activity occurs
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d4571d6a4159361262760d25209644f849d6184bf66d34ac9440edf97c662446
+contentHash=7f514a10ed7b503f4f0c122ced2e66d121923ba999c0e17c2f01318c9a7f5d67
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-duration-rem-body`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5749c052daccca617dec2d7a46d7165e0a95d0d053b97bd70c32669f2dcf5b5f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:duration-rem-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+В течение урока ученики работали над проектом. — Throughout the lesson, the students worked on the project. В течение дня погода менялась несколько раз. — During the course of the day, the weather changed several times. The interval contains the activity or repeated events. Project work over the lesson does not by itself assert that the project was finished.
+
+It emphasizes the duration over which something occurs. The compound preposition takes a genitive noun naming the interval. The weather example explicitly describes several changes during the day, so the expression need not mean one continuous unchanged action. Compare the whole proposition as well as the interval: students and a project differ from weather changes. These checks identify supplied meanings, not task-completion time.
+shippedText=В течение урока ученики работали над проектом. — Throughout the lesson, the students worked on the project. В течение дня погода менялась несколько раз. — During the course of the day, the weather changed several times. The interval contains the activity or repeated events. Project work over the lesson does not by itself assert that the project was finished.
+
+It emphasizes the duration over which something occurs. The compound preposition takes a genitive noun naming the interval. The weather example explicitly describes several changes during the day, so the expression need not mean one continuous unchanged action. Compare the whole proposition as well as the interval: students and a project differ from weather changes. These checks identify supplied meanings, not task-completion time.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fbb77ae446641f8e6e1f92ab561b50daff1481b46348348dd9e8f48537ba48b5
+contentHash=370a6f09632c32b6c18d834396010df29bfaf6ead5e4a9abf6b827724eb81f44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-duration-rem-title`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a338e76a8dabd985a538c65c7764a5bab1b0e807538a09fa1d848ef9b83a5d1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:duration-rem-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete time contrast
+shippedText=Review the complete time contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11ccb90aca3ac634ace1ac557d7bfc42bec11167d1e3e5555c914e91840fa0a3
+contentHash=0e0e664eae97071e05fef1ff64375c463a800d10c09de61d6d7f9761d4dec20d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-duration-teach-1-body`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8368fa1e30753aab5a7367bebc1319618d6a8845e90f60fc13bd740f0568eec1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:duration-teach-1-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+В течение урока ученики работали над проектом. — Throughout the lesson, the students worked on the project. В течение дня погода менялась несколько раз. — During the course of the day, the weather changed several times. The interval contains the activity or repeated events. Project work over the lesson does not by itself assert that the project was finished.
+shippedText=В течение урока ученики работали над проектом. — Throughout the lesson, the students worked on the project. В течение дня погода менялась несколько раз. — During the course of the day, the weather changed several times. The interval contains the activity or repeated events. Project work over the lesson does not by itself assert that the project was finished.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=82b67c4b20e00f2e9fb41c124aee5ca621bd570f5a311ecfe0ce31d3ccc105d9
+contentHash=ace6d3969d005ba5da15edefb718bc3829ff5120e56eee594c79343861e3a4b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-duration-teach-1-title`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 860cc6fb899f47114af834fb168cf545c42b9f418ab503a87961bd867b822cf4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:duration-teach-1-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+A lesson and a day as intervals
+shippedText=A lesson and a day as intervals
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d3ceca4142df42879e15c6d52561079ee3c1c7211dd63afe2ae4cd12ea541907
+contentHash=9f0f1290403315586bc444883cf83dd7d143d405ab395dba9cc2cc9a9276de19
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-duration-teach-2-body`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b733d5e9263cb1ac967fafc7cb9d5e81138acf714d8b1ec22b5b4eaaf59efe6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:duration-teach-2-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+It emphasizes the duration over which something occurs. The compound preposition takes a genitive noun naming the interval. The weather example explicitly describes several changes during the day, so the expression need not mean one continuous unchanged action. Compare the whole proposition as well as the interval: students and a project differ from weather changes. These checks identify supplied meanings, not task-completion time.
+shippedText=It emphasizes the duration over which something occurs. The compound preposition takes a genitive noun naming the interval. The weather example explicitly describes several changes during the day, so the expression need not mean one continuous unchanged action. Compare the whole proposition as well as the interval: students and a project differ from weather changes. These checks identify supplied meanings, not task-completion time.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2d474e6f72dc069fc7784aa662f1582447c2a7299e80c767cbba4ac04fecd50e
+contentHash=3c164c6eb2564e917e5b35bb8f669471761f9f3ae56d5329345e9cfb3eb29518
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-duration-teach-2-title`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 850e40a3c3bcccc088f1bfb933f85d959fa68f2ef8a58d337326a3f4d5f7f327
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:duration-teach-2-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Duration does not require an unbroken event
+shippedText=Duration does not require an unbroken event
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91eb772ca6968f30efbbb1ff96f168ddf7fdbdff279719f12c8f111dde5758d0
+contentHash=c716ec97a031d2a4f591dc6dd16f4f1a4a7d15f31e850c8e02d077644306a84c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-during-event-guided`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e3fdd02ffa1f110d82ed654f86dc1cb004b5c64fa92cac506a1cd1d690acda2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:during-event-guided
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+shippedText=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9b53274e065b09e9950b642b92ebe0a03fd9a3b23951bc285abf8181af2e918
+contentHash=6a0be549e2f529f70f5992c0409030d74c26a2ec255088765e8eba977344407b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-during-event-objective`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f7ac0d1e2c5e17ad75e533a4b5102e591632fdb0ed4bafc6cd4300bd5e9b5750
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:during-event-objective
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Place one action during another event
+shippedText=Place one action during another event
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cd109cf8056c854a77e2aad8d163980e5c483bfbbaf7fd3df86f5a2e2f981b63
+contentHash=7f54cda63bc3c18530b3f1cd14dd0f0f621b4cdeef848cb30f711e21b3d391e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-during-event-rem-body`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 227c22a307e4ff1e7340bfe57273246d6e873025e14a410abe888cd65ed00b23
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:during-event-rem-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Она родилась во время войны. — She was born during the war. Во время поездки я познакомился с новыми друзьями. — During the trip I met new friends. The war and trip are the surrounding events during which the birth and meeting happen. During does not mean that the birth or meeting continued for the entire war or trip.
+
+The compound preposition meaning during takes the event noun in the genitive. Match the whole sentence: birth during a war differs from meeting friends during a trip. This expresses when an event happens within another event, not the time needed to complete a task. The supplied translations do not demonstrate constructing every during-an-event sentence.
+shippedText=Она родилась во время войны. — She was born during the war. Во время поездки я познакомился с новыми друзьями. — During the trip I met new friends. The war and trip are the surrounding events during which the birth and meeting happen. During does not mean that the birth or meeting continued for the entire war or trip.
+
+The compound preposition meaning during takes the event noun in the genitive. Match the whole sentence: birth during a war differs from meeting friends during a trip. This expresses when an event happens within another event, not the time needed to complete a task. The supplied translations do not demonstrate constructing every during-an-event sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f243dc4bdf5b85cecb60532905123c0a7b6a49baaa51ec7f51e8617f882e29a0
+contentHash=0d22db605d9ff15d9b43ce201e4a6e9062cf824c8fea426cfc3ea4b6f7176ce4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-during-event-rem-title`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d802c09a93e378f4b83eeee74d961c48b66034d92c8fd8b80b90843eab839da
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:during-event-rem-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete time contrast
+shippedText=Review the complete time contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11ccb90aca3ac634ace1ac557d7bfc42bec11167d1e3e5555c914e91840fa0a3
+contentHash=0e0e664eae97071e05fef1ff64375c463a800d10c09de61d6d7f9761d4dec20d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-during-event-teach-1-body`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17df52a2bbfd2235b83a5cff20d337f4ad5ea75e3fa5bde0cdaa2f4fc287c8ba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:during-event-teach-1-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Она родилась во время войны. — She was born during the war. Во время поездки я познакомился с новыми друзьями. — During the trip I met new friends. The war and trip are the surrounding events during which the birth and meeting happen. During does not mean that the birth or meeting continued for the entire war or trip.
+shippedText=Она родилась во время войны. — She was born during the war. Во время поездки я познакомился с новыми друзьями. — During the trip I met new friends. The war and trip are the surrounding events during which the birth and meeting happen. During does not mean that the birth or meeting continued for the entire war or trip.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c93f3197ba6a9ecca4b5c4716658b7a221e88d42dd99f1c4ad1a09798b210143
+contentHash=39af5966adee86e243702c74161a159ade0a571eb439c60aaf5f7e2afbdb5577
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-during-event-teach-1-title`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 365a3c99c6c42ed0ca4ddb58c0fd308df92ed965fa543305be68056e6c57b9c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:during-event-teach-1-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+An event supplies the time frame
+shippedText=An event supplies the time frame
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f300b13a1e238f85012747cc7b9ce0273259ce888b552fa42af6cf2f71a9eee
+contentHash=f155ff9736e9f21ae19f3e5693cf7d364f733e0ffeabda7fb5bfbbed2cae7819
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-during-event-teach-2-body`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6ab9fac200201d145fc20f381161b58df763b67d0e1ff34fa512a5af1ac29c92
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:during-event-teach-2-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The compound preposition meaning during takes the event noun in the genitive. Match the whole sentence: birth during a war differs from meeting friends during a trip. This expresses when an event happens within another event, not the time needed to complete a task. The supplied translations do not demonstrate constructing every during-an-event sentence.
+shippedText=The compound preposition meaning during takes the event noun in the genitive. Match the whole sentence: birth during a war differs from meeting friends during a trip. This expresses when an event happens within another event, not the time needed to complete a task. The supplied translations do not demonstrate constructing every during-an-event sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b9193738c7fc8d36e3a25d64031cc438ff03f62bb1d329a938d96ffe7c1e3363
+contentHash=1ad2dfd65cadac38fc1b610fb19098774e31bcc54aa5dd7645012c247a2b5ff6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-during-event-teach-2-title`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8aa32ce2f80f46d17c0500fbd8373b8712989b196d4185d95ecf36a8aba2a4d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:during-event-teach-2-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Meaning and case of the surrounding event
+shippedText=Meaning and case of the surrounding event
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=011680e6e4ce32eeb269e3c5477b5b62c9a8057069cd7f8a42398879722e04c1
+contentHash=5a8a732d58fcf1b4c92d19438027a96d2eabc4db5f3d2c457e2e7d17a36d63ae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-elapsed-guided`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4296fcb1fb5eaa194b79a582f341ec0b2fe224f63fed887ec1f297c50dbcd124
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:elapsed-guided
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+shippedText=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9b53274e065b09e9950b642b92ebe0a03fd9a3b23951bc285abf8181af2e918
+contentHash=6a0be549e2f529f70f5992c0409030d74c26a2ec255088765e8eba977344407b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-elapsed-objective`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e31a26297abff22699d8c1730c4487868531b92eb373f3d41f2cc59f3a53749
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:elapsed-objective
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Distinguish before, after, in a period and ago
+shippedText=Distinguish before, after, in a period and ago
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0add7ff42ebe4486d11d624921a72c3b1e306eb452362764558dd5a9e6bf272b
+contentHash=38080131a2642945dcb492c9ed9a4472af3dec91e942851d7724a9c1af8759db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-elapsed-rem-body`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47ef5459c34cfaf14dd46aeef243d453c686baf24a699123b9c1b67df902d39f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:elapsed-rem-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Перед ужином мы ходили в парк. — before. После работы я смотрела фильм. — after. The first places the park visit earlier than dinner; the second places watching a film later than work. The preposition meaning before takes an instrumental noun; the one meaning after takes a genitive noun. The English labels classify only this time relation, not the full sentence translation.
+
+The future-looking in expression locates an event after an interval from the reference time. Ago locates an event before the reference time. Neither meaning alone states how long the activity lasts or how long it takes to finish a task. Before and after a named event likewise express order relative to that event, not completion.
+
+Мы едем в Латвию через год. — in (a period of time). Мы ездили в Казахстан год назад. — ago. In the first sentence the planned Latvia journey is a year after the reference time; in the second the Kazakhstan journey was a year before it. The forward-looking time construction takes accusative, not genitive; the time noun here has the same surface form as nominative. Ago follows an accusative time expression. The choices classify the shown time relation, not independently produce the whole sentence.
+shippedText=Перед ужином мы ходили в парк. — before. После работы я смотрела фильм. — after. The first places the park visit earlier than dinner; the second places watching a film later than work. The preposition meaning before takes an instrumental noun; the one meaning after takes a genitive noun. The English labels classify only this time relation, not the full sentence translation.
+
+The future-looking in expression locates an event after an interval from the reference time. Ago locates an event before the reference time. Neither meaning alone states how long the activity lasts or how long it takes to finish a task. Before and after a named event likewise express order relative to that event, not completion.
+
+Мы едем в Латвию через год. — in (a period of time). Мы ездили в Казахстан год назад. — ago. In the first sentence the planned Latvia journey is a year after the reference time; in the second the Kazakhstan journey was a year before it. The forward-looking time construction takes accusative, not genitive; the time noun here has the same surface form as nominative. Ago follows an accusative time expression. The choices classify the shown time relation, not independently produce the whole sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fc7e27b0b714cadb44b37aa78cf5750a822afaf7cc5cf51aa86493250be69346
+contentHash=319e3675debff1aba9d653934abaa0309083fb6fa18f3a584c43e8b323936225
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-elapsed-rem-title`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 79858656264ce1f266244e9bdc9a50994c47a7d6ce9a7955f522c5e4ec61e9fa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:elapsed-rem-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete time contrast
+shippedText=Review the complete time contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11ccb90aca3ac634ace1ac557d7bfc42bec11167d1e3e5555c914e91840fa0a3
+contentHash=0e0e664eae97071e05fef1ff64375c463a800d10c09de61d6d7f9761d4dec20d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-elapsed-teach-1-body`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82524fc4424d9f272303f385d70b6dce5cb7cdc0dfcd3b42ec2d570dd64673be
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:elapsed-teach-1-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Перед ужином мы ходили в парк. — before. После работы я смотрела фильм. — after. The first places the park visit earlier than dinner; the second places watching a film later than work. The preposition meaning before takes an instrumental noun; the one meaning after takes a genitive noun. The English labels classify only this time relation, not the full sentence translation.
+shippedText=Перед ужином мы ходили в парк. — before. После работы я смотрела фильм. — after. The first places the park visit earlier than dinner; the second places watching a film later than work. The preposition meaning before takes an instrumental noun; the one meaning after takes a genitive noun. The English labels classify only this time relation, not the full sentence translation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6f7b237a6122a443cfc5c3e6de485133a7793705d06b37c3999e26bfc753226f
+contentHash=588c3a05206891bb4071df45cb07a050767c4b801a2b19429e36535ab6193b07
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-elapsed-teach-1-title`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0f598a8f4e2e3aa801eb628e0e4aaa1b35b9e42ea6891573bd3dc43c1c85f71
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:elapsed-teach-1-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Before and after a reference event
+shippedText=Before and after a reference event
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fb6a62392abaca8ec567a4d819fcfa80cc51d5a925bfcefd6ce3e573e3187afd
+contentHash=aa502c0c7620a594dcebc867cd0ee9972195178f83127298170afe4ce0cee819
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-elapsed-teach-2-body`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67f7dbf1ad0a376af32deac4eb01e5501ad0b73b3e08b0d309b4698ea580c8cc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:elapsed-teach-2-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The future-looking in expression locates an event after an interval from the reference time. Ago locates an event before the reference time. Neither meaning alone states how long the activity lasts or how long it takes to finish a task. Before and after a named event likewise express order relative to that event, not completion.
+shippedText=The future-looking in expression locates an event after an interval from the reference time. Ago locates an event before the reference time. Neither meaning alone states how long the activity lasts or how long it takes to finish a task. Before and after a named event likewise express order relative to that event, not completion.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2b19985150188437cb2dd3a4141dacaaf120050b89d76afe448aa277b780e718
+contentHash=5fdf508c2a3acc6687c2cd1304dc46806785e30b9b3f5fd04ea0d7611ce9c8a6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-elapsed-teach-2-title`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0677bc322bc132a6e669a0dad7cc7aa09700a6578f28f2c305a14a35d8627de2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:elapsed-teach-2-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+A time point is different from a duration
+shippedText=A time point is different from a duration
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=57d6e9515f32e77fdd9532fc646a2ee7e270e7e3b57ef412af895c15124801f5
+contentHash=45dd93752ab67dc8fda8f80426d7a23dd966669f24582e2f7d514f8896a28d33
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-elapsed-teach-3-body`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5ae52ee899c924be720c9eb3271706bc22ddbd720a767f3eacef1bf9c81f1729
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:elapsed-teach-3-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Мы едем в Латвию через год. — in (a period of time). Мы ездили в Казахстан год назад. — ago. In the first sentence the planned Latvia journey is a year after the reference time; in the second the Kazakhstan journey was a year before it. The forward-looking time construction takes accusative, not genitive; the time noun here has the same surface form as nominative. Ago follows an accusative time expression. The choices classify the shown time relation, not independently produce the whole sentence.
+shippedText=Мы едем в Латвию через год. — in (a period of time). Мы ездили в Казахстан год назад. — ago. In the first sentence the planned Latvia journey is a year after the reference time; in the second the Kazakhstan journey was a year before it. The forward-looking time construction takes accusative, not genitive; the time noun here has the same surface form as nominative. Ago follows an accusative time expression. The choices classify the shown time relation, not independently produce the whole sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a28975d7d291ff20fce10e3fdc6feac375e634fb772b3c89951c24f42b8d75f8
+contentHash=3cfd5c3775f202112e342372cfa6528fc1c5274c80139e83c8387356fa73921a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-elapsed-teach-3-title`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a887f373b74d2bad7b6ec615c35faf2380488af93af23086e04f58ca1f2649d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:elapsed-teach-3-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The forward and backward interval examples
+shippedText=The forward and backward interval examples
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ea229aeff715a211b264c27612bec4b29b71aeaaf2ee6462764cb89d8b589e3
+contentHash=581905a199a918f051dc8bb629e202185268a0759d4083130cf6de2c852af1c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-ranges-guided`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b94053d7a74afa01d9dbab6ba70f96998f6864663b40af6019b08b55ebb38e6f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:ranges-guided
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+shippedText=Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9b53274e065b09e9950b642b92ebe0a03fd9a3b23951bc285abf8181af2e918
+contentHash=6a0be549e2f529f70f5992c0409030d74c26a2ec255088765e8eba977344407b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-ranges-objective`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8b30b8b8efbab18ed512fd99fea2fa46a6f76ec313b63e12b92cee075b32941
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:ranges-objective
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Read decade ranges in their century context
+shippedText=Read decade ranges in their century context
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=23df06b29233a89a275adbb5c3f8cc04da4d0392680700d66e883ed073127870
+contentHash=dd2ffd1b30d52dac57c876d0fa117e59d41330a25edda4d8f02f68ff9900fbfa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-ranges-rem-body`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5a29f6116f691dba0690294a710438af864a9a6dfc4240deccb12ea8ceecefe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:ranges-rem-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+В шестидесятых годах — in the 1960s. В девяностых годах — in the 1990s. These expressions refer to decade ranges rather than a single year. The ordinal describing the decade and the noun meaning years are in the prepositional plural. The two displayed choices distinguish the sixties from the nineties.
+
+Here the supplied English glosses assume the twentieth century. A decade expression by itself does not fix the century in every context; an explicit century or the surrounding discussion can identify it. Read the decade word, not just the shared ending for years. The checks recognize these two supplied ranges; they do not test forming a new decade expression.
+shippedText=В шестидесятых годах — in the 1960s. В девяностых годах — in the 1990s. These expressions refer to decade ranges rather than a single year. The ordinal describing the decade and the noun meaning years are in the prepositional plural. The two displayed choices distinguish the sixties from the nineties.
+
+Here the supplied English glosses assume the twentieth century. A decade expression by itself does not fix the century in every context; an explicit century or the surrounding discussion can identify it. Read the decade word, not just the shared ending for years. The checks recognize these two supplied ranges; they do not test forming a new decade expression.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=745482b9ad99bd5c4ae1b837376bdc1613599bbbf96611f255f49eae81188458
+contentHash=656271557f535ac1b5aa2d20c14e3c8558fbb140178995c19e9f7f0b414ab998
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-ranges-rem-title`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d28b44c3f81400f1b9da13d449bca255710b6ef869607e648639a4529f0b9dd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:ranges-rem-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete time contrast
+shippedText=Review the complete time contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11ccb90aca3ac634ace1ac557d7bfc42bec11167d1e3e5555c914e91840fa0a3
+contentHash=0e0e664eae97071e05fef1ff64375c463a800d10c09de61d6d7f9761d4dec20d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-ranges-teach-1-body`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd3c7695897754f40152c6a31935c61eb0740f06a749db83e0fa0879f8c32188
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:ranges-teach-1-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+В шестидесятых годах — in the 1960s. В девяностых годах — in the 1990s. These expressions refer to decade ranges rather than a single year. The ordinal describing the decade and the noun meaning years are in the prepositional plural. The two displayed choices distinguish the sixties from the nineties.
+shippedText=В шестидесятых годах — in the 1960s. В девяностых годах — in the 1990s. These expressions refer to decade ranges rather than a single year. The ordinal describing the decade and the noun meaning years are in the prepositional plural. The two displayed choices distinguish the sixties from the nineties.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d93a4f58b7c7c71104eea5621e65c4911553f108034bf814bdcb888482a48e7b
+contentHash=b4aba9f52d3d54c1158a3944b5a6de0093eef7c4ffd5549a1e83ce6f66e6fc6a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-ranges-teach-1-title`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b40f7eedf4bc8b756f7799bc41640dba4e4ad6d21bbeb9623e551e54a085d6e2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:ranges-teach-1-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+A decade is a range of years
+shippedText=A decade is a range of years
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5df4afbdfdd8639ab2454576b4595e4f5d89efa39055617e19ca81d076eb9429
+contentHash=da8c104298e4e46855d97634488be1a93e72a642ea3a48e6103c86d611974ee6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-ranges-teach-2-body`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34ee7f2abea2cc9797f305b998df3cc0a73267c1879517ae12e6d64b3be380b1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:ranges-teach-2-body
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Here the supplied English glosses assume the twentieth century. A decade expression by itself does not fix the century in every context; an explicit century or the surrounding discussion can identify it. Read the decade word, not just the shared ending for years. The checks recognize these two supplied ranges; they do not test forming a new decade expression.
+shippedText=Here the supplied English glosses assume the twentieth century. A decade expression by itself does not fix the century in every context; an explicit century or the surrounding discussion can identify it. Read the decade word, not just the shared ending for years. The checks recognize these two supplied ranges; they do not test forming a new decade expression.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6d098e2bd8a5fd423dd0a5b14dc080d04ddabec54fb57cd987eca8be2aa4ee59
+contentHash=eb0a2395217f1613022ec1314616e364f3fbcde80474085364208ec4644403e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-ranges-teach-2-title`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e15ac6c40f8a0777d9f371252f4ea6bda8189dd765d18fb85ab864e77c28fdfb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:ranges-teach-2-title
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The century comes from context
+shippedText=The century comes from context
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58c5efff1e1673be261ea8513e6c96a8c06cad960e3d560f5592a5067cdc9260
+contentHash=7c98fab86905d019d50bc7ce01df2225a851479eb5cf8a53b6a7fc9a36ba68f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-beginning-0-feedback`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f434a8ee56c318271e007de4cc50f7113da7ec75670770d3bef00ff5daec162f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:u23-g-beginning-0-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "В конце года" with the admitted gloss "at the end of the year" ("at the end of the year").
+В конце года matches at the end of the year: the final part of a year.
+shippedText=The frozen source pairs the shown form "В конце года" with the admitted gloss "at the end of the year" ("at the end of the year").
+В конце года matches at the end of the year: the final part of a year.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=300c79ae17ed3efe4aa8ad94c4be59b65b711d6fab691d19559f26a0aa92b456
+contentHash=9382d9da02f25e5964dcb712f904272d2173054069346081284ae6c91e10ceac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-beginning-0-wrong-0`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e4c5738b52531d2ecebdaf6f7948f28581f5b6c4d668a65c6711dad417130f51
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:u23-g-beginning-0-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+at the beginning of the century: the initial part of a century. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=at the beginning of the century: the initial part of a century. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ffd3b42e28340552d028b5fcd047cf60f837526445ce99c1f894f16ceac39704
+contentHash=9bec12997dc5e72930fd311c9c8fa5a836af04848167f0fd2d78d1fff764e258
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-completion-1-feedback`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93a999603213dfba0dcd23614afdcd158841ea3b974825e6244e3a3df3c6397e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:u23-g-completion-1-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The writing sentence states time spent writing and does not assert completion.
+Борис писал письмо час. matches time spent writing without asserting completion: imperfective writing with a bare accusative duration; completion is not asserted.
+shippedText=The writing sentence states time spent writing and does not assert completion.
+Борис писал письмо час. matches time spent writing without asserting completion: imperfective writing with a bare accusative duration; completion is not asserted.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f23bd7ad07e575abee6561a4e257eeb20dd05e74f6acbc9b1cac5af5324dcd47
+contentHash=e7cc3a326f040b2c56d4be247af23a4a6b49e66d3ce16adb689c8193c27f1d1a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-completion-1-wrong-0`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ddfb04143b0b6f04338fbdeccd3ad6db1a3dee6727c122936efe27a208c9ebd1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:u23-g-completion-1-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+the article was finished within two hours: perfective reading with an accusative completion interval; the article is presented as finished. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=the article was finished within two hours: perfective reading with an accusative completion interval; the article is presented as finished. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7a6b9f4469864140196b9c9bb5cc9de20ff70376e49057ec3837e85445cb931d
+contentHash=d84ca1860bb326e9a51cd1acd5a14f13eae8b26bb3bee4dcb62d90fbe26e6769
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-duration-0-feedback`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e84f04da52b0b4657d8ee6dba6781d0c5e6feb9d7c3b122135a7c3c150b2d623
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:u23-g-duration-0-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("It emphasizes the duration over which something occurs.").
+В течение урока ученики работали над проектом. matches Throughout the lesson, the students worked on the project.: project work over the lesson interval without asserting project completion.
+shippedText=The frozen source pairs the shown form "В течение урока ученики работали над проектом." with the admitted gloss "Throughout the lesson, the students worked on the project." ("It emphasizes the duration over which something occurs.").
+В течение урока ученики работали над проектом. matches Throughout the lesson, the students worked on the project.: project work over the lesson interval without asserting project completion.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f932cc1a5d663904c6647497ce8e89e9c0b320e25c8443368ced8cfa4d7e05db
+contentHash=8d49d8d0950f490c48fb07362e30fccdf6779c1ba8c2aa294b762501a2be9bcf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-duration-0-wrong-0`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d729d96c0c00a35751f9980af2f6bcc513dc025da736f4f250b5b5ab45f3370
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:u23-g-duration-0-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+During the course of the day, the weather changed several times.: repeated weather changes within the day. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=During the course of the day, the weather changed several times.: repeated weather changes within the day. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=201be3f5f4833fb568d1ac182edbaea5e77968caa0f9f967bcbaafe117190118
+contentHash=01676adff76d8c2f1b89bce192ff5e2b03764956b69017169bb377b4bc851eb9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-during-event-0-feedback`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c8e2d6072f26c9937d888016e66d1cb1367e86e6a56a9c2f14d24e1249fbed1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:u23-g-during-event-0-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("during another event").
+Она родилась во время войны. matches She was born during the war.: birth within the war period.
+shippedText=The frozen source pairs the shown form "Она родилась во время войны." with the admitted gloss "She was born during the war." ("during another event").
+Она родилась во время войны. matches She was born during the war.: birth within the war period.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f298da1e3aeacf5a586ca952c9d6d0c173f4fb6e370f90e5a97c29b9a640f65
+contentHash=e0f666a5a5d68d9386b39b4383246bdece5e2a6699aa0c85d91e335021a9df3e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-during-event-0-wrong-0`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9826facf5db5948c3c373bb531c394602ca8c0a4df025f9455e3a35b74bd0c81
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:u23-g-during-event-0-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+During the trip I met new friends.: meeting friends within the trip period. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=During the trip I met new friends.: meeting friends within the trip period. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=45678988c266724b2201f7d5d5dff9b88fb1fa9cb68147e5949dc877dfae7ec4
+contentHash=c48c73526030c1e2a84ae2a21d6906cec0961a3476a51651dccd2877bb65ff10
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-elapsed-0-feedback`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4dbc018b9f65eff3d6a863c7ce5d6d7e443ea4ecef9206b1011ceb0d3fd80231
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:u23-g-elapsed-0-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "Перед ужином мы ходили в парк." with the admitted gloss "before" ("relate events in time").
+Перед ужином мы ходили в парк. matches before: earlier than the named reference event.
+shippedText=The frozen source pairs the shown form "Перед ужином мы ходили в парк." with the admitted gloss "before" ("relate events in time").
+Перед ужином мы ходили в парк. matches before: earlier than the named reference event.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e76b04cf3bfb90926b01fdea486d5401e03eb66942179cd69b4aaf808e40fe24
+contentHash=9b76b54830f07f0a3d0f0d3d1d4520208dacabe5de66f6124284b1c9679e07da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-elapsed-0-wrong-0`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33d42c676f34a6123b5b36f7a3c62a7bcd3d2cdbc03c7b4e9d7d1b2aba7e2670
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:u23-g-elapsed-0-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+after: later than the named reference event. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=after: later than the named reference event. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=94991a744684d82e840a10302afa1e589b145545ae72daae2ebd0cd12f357fac
+contentHash=e048dbcb2b7eecd814b232a5e19d9e28d2e7cb91eb256645394f8a4d2ccdda0c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-ranges-0-feedback`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef9443835c0e51ba63ff20b72b01771645114d65261e47edfdca1b9e08b52af2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:u23-g-ranges-0-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
+В шестидесятых годах matches in the 1960s: the sixties, with the twentieth century assumed in this supplied gloss.
+shippedText=The frozen source pairs the shown form "В шестидесятых годах" with the admitted gloss "in the 1960s" ("in the 1960s").
+В шестидесятых годах matches in the 1960s: the sixties, with the twentieth century assumed in this supplied gloss.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d2ff6895e8e7219325b2d75f66d1ff42ee958ee6867df305908950581f2676db
+contentHash=04a5bc5083404d97f1fcd00f2cb4431148616870e8b702e73d712d075ec7835d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-g-ranges-0-wrong-0`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 292e8cfc85d05a9cb8fbd3467fd177dda2bd66c00f60264a1495841a41da7b47
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:u23-g-ranges-0-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+in the 1990s: the nineties, with the twentieth century assumed in this supplied gloss. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=in the 1990s: the nineties, with the twentieth century assumed in this supplied gloss. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d4b3e1b1cfd5cb2ce6b76b5b41fcf6745ab7cc6e6914147bd7730009ca998858
+contentHash=0abbe3a993bf6f1fb6b2de01a4b6655e7eb1df84348e46253ef7434fffd5f4f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-beginning-1-feedback`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ba446f957d96694f1f54915b59bd1dbf1a71df7d65f1012824b80693139e3ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:u23-i-beginning-1-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "В начале века" with the admitted gloss "at the beginning of the century" ("at the beginning of the century").
+В начале века matches at the beginning of the century: the initial part of a century.
+shippedText=The frozen source pairs the shown form "В начале века" with the admitted gloss "at the beginning of the century" ("at the beginning of the century").
+В начале века matches at the beginning of the century: the initial part of a century.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0d8e6bcc7d216f804fb80d7c5312340b3e759124d2e9020ed26de865696e0bc4
+contentHash=fbc459c8591ef7e70c974744b55d3d40acec0e943c1c4215e0d36dd7e62f63c7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-beginning-1-wrong-0`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9de2411871dc767405164a675812ac966b8b48bb1a7016276d908d100ebf84c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:u23-i-beginning-1-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+in the middle of the week: the central part of a week. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=in the middle of the week: the central part of a week. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8687998ab78608d91340a51690a3f784a53694a37382cd370f419298e2eb2e9e
+contentHash=aab96764545c1dabd4ff66ef273ec0aa270225f7f90e23c2537b0745726a3ca0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-beginning-2-feedback`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 118b56ee554ab7bc1ec937e860f74dc94d04e7b41fa9d6ba2158fd5907553bc2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:u23-i-beginning-2-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "В середине недели" with the admitted gloss "in the middle of the week" ("in the middle of the week").
+В середине недели matches in the middle of the week: the central part of a week.
+shippedText=The frozen source pairs the shown form "В середине недели" with the admitted gloss "in the middle of the week" ("in the middle of the week").
+В середине недели matches in the middle of the week: the central part of a week.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c84c1a4ef4fbf8a7984a61e33204c1f4fe5298c25b6b090a0b73b53987414e5e
+contentHash=55184f6fa3be7f9600a48e9dc214ce71d4168ec2e0141ba8fbb8577be92910bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-beginning-2-wrong-0`
+
+- Objectives: obj-u23-beginning
+- Sessions: u23-s-orient, u23-s-beginning
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86060109b754c8a3ddae172bb6b4f2edbcaacc42ac3565c2d16bf11df45f4f99
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-beginning:u23-i-beginning-2-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+at the end of the year: the final part of a year. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=at the end of the year: the final part of a year. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d417513224271b2c029eeccc11b65ef736a21816bc6b8d8a5487138b52e6f6b7
+contentHash=284ea685d0e55e27bbb11064ab7871bba1b4e952044e277f78847fb8c08a9419
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-completion-1-feedback`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bb5f936c32a5bff7ab75a095f30e931da1434915a37281605455e4571c804b5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:u23-i-completion-1-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+Анна читала статью два часа. matches time spent reading without asserting completion: imperfective reading with a bare accusative duration; completion is not asserted.
+shippedText=An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.
+Анна читала статью два часа. matches time spent reading without asserting completion: imperfective reading with a bare accusative duration; completion is not asserted.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=35bff2b3cdcfed48a27e525bd69856bbe849197aaa9b81a316012c25ea505429
+contentHash=34d961937279f40e3698f4af8ff3e6514411677a2c6d8166af73d13304e9807f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-completion-2-feedback`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66591980d016aa55d4691563fd7a9b2aa1795e9f4ec180a530c2449253bf7fc8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:u23-i-completion-2-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+Анна прочитала статью за два часа. matches the article was finished within two hours: perfective reading with an accusative completion interval; the article is presented as finished.
+shippedText=A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.
+Анна прочитала статью за два часа. matches the article was finished within two hours: perfective reading with an accusative completion interval; the article is presented as finished.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2e7665214a50359983170c9b1c11fdcc40a5539d723fbbcf66d4d389500fd68e
+contentHash=b95c7d27dcdae30b3d37177ae405aeb5bcfdda9348c124aaa4d601a3ab6d41eb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-completion-2-wrong-0`
+
+- Objectives: obj-u23-completion
+- Sessions: u23-s-gap-completion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39232fa922197ed84d4f465a952c70ccafde4f3e44431992de7e1d78c70a6fce
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-completion:u23-i-completion-2-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+time spent reading without asserting completion: imperfective reading with a bare accusative duration; completion is not asserted. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=time spent reading without asserting completion: imperfective reading with a bare accusative duration; completion is not asserted. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=52489aa2abebcebb42d387044cbebc4155059560578fa7011b69ae337d4420ed
+contentHash=1eb613e39e915840fd4084e99aeb37385a080695b7089700e3d6e8c5e6ab97b0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-duration-1-feedback`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd1b8ec44de718c927a1de28df3e3f3bc4584d277df3204f55b7ff162e860ce9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:u23-i-duration-1-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("It emphasizes the duration over which something occurs.").
+В течение дня погода менялась несколько раз. matches During the course of the day, the weather changed several times.: repeated weather changes within the day.
+shippedText=The frozen source pairs the shown form "В течение дня погода менялась несколько раз." with the admitted gloss "During the course of the day, the weather changed several times." ("It emphasizes the duration over which something occurs.").
+В течение дня погода менялась несколько раз. matches During the course of the day, the weather changed several times.: repeated weather changes within the day.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4abe7b9fed6850d89bf7f55a6fefe261409fe62f7ca869ec2ec23aaf3ba2e907
+contentHash=ad834d9e9c5cc90b7f0d8c57bdc9885f8c5b1507d89068c526632241b645fee5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-duration-1-wrong-0`
+
+- Objectives: obj-u23-duration
+- Sessions: u23-s-orient, u23-s-duration
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c1bcc2ae168e32a6933eb6c1ff0315fe79d403edcbb83ad9135c6e1b490a8a5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-duration:u23-i-duration-1-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+Throughout the lesson, the students worked on the project.: project work over the lesson interval without asserting project completion. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=Throughout the lesson, the students worked on the project.: project work over the lesson interval without asserting project completion. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6493e77c12c7a7ce98a1e97feaadecb8af16b02f119f2c1abc2a0affc9ad8b0b
+contentHash=a1d5f5a9cfc55371dbe517c00358904a7e3a962a21541c1c88d13b9aef36df50
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-during-event-1-feedback`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be9840367c75e05180bd9920f06fead9892736728800c3f09cf5dd2de4978326
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:u23-i-during-event-1-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("during another event").
+Во время поездки я познакомился с новыми друзьями. matches During the trip I met new friends.: meeting friends within the trip period.
+shippedText=The frozen source pairs the shown form "Во время поездки я познакомился с новыми друзьями." with the admitted gloss "During the trip I met new friends." ("during another event").
+Во время поездки я познакомился с новыми друзьями. matches During the trip I met new friends.: meeting friends within the trip period.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a2284fe94a90de6b55d10d202c02d208dda50d6ebcabd8ffb5a9825db20b8971
+contentHash=e606a87497b73015d1ec675806ab455dcb8194b3aa5bd2b91fa92777ee8c278b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-during-event-1-wrong-0`
+
+- Objectives: obj-u23-during-event
+- Sessions: u23-s-orient, u23-s-during-event
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7a7de739836551e3888bbd0df3c5220cf56da5782c5ed6264e89d0922a5e51f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-during-event:u23-i-during-event-1-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+She was born during the war.: birth within the war period. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=She was born during the war.: birth within the war period. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0195b4aa6ed3ffec2f2b27b158708d8cab0fad36839a56d4679630d76df4fac2
+contentHash=db5be4b4f3497d8f687772e01468d29a2b6acdb3b7f50dcd1e3530024736b453
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-elapsed-1-feedback`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: def0c3f696f3def4648aa9c20e7ca4efc56c57ac7deff2b0a627dd4354654ffa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:u23-i-elapsed-1-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "Мы едем в Латвию через год." with the admitted gloss "in (a period of time)" ("relate events in time").
+Мы едем в Латвию через год. matches in (a period of time): an event after the forward-looking interval, not the duration of the activity.
+shippedText=The frozen source pairs the shown form "Мы едем в Латвию через год." with the admitted gloss "in (a period of time)" ("relate events in time").
+Мы едем в Латвию через год. matches in (a period of time): an event after the forward-looking interval, not the duration of the activity.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=905ccbc8466b9bc63de6242c905dff6c0348c913bd6cf236e29341cd65f24815
+contentHash=c77bae3ca89d743f7c322e79e060a0fe306ad304377f1f376045cfd3e9ba83b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-elapsed-1-wrong-0`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2d32fadbb343055ad5ab6a0dd9626ecc4a172bb34c59c942f6e9ab33dafb109
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:u23-i-elapsed-1-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+ago: an event before the reference time, not completion within a period. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=ago: an event before the reference time, not completion within a period. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=306c578c11e234f21377e3467f6bef5c88322fe76cf9d40adbe80e957448e379
+contentHash=7f1e56f83e3a14f3df23d6f7b5976e55c64cdfa69ad1b124976107960c658988
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-elapsed-2-feedback`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bcc67bf8bddd904e1aa22103991d4b65d25c4d499375150c5b9319b16bf80a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:u23-i-elapsed-2-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "Мы ездили в Казахстан год назад." with the admitted gloss "ago" ("relate events in time").
+Мы ездили в Казахстан год назад. matches ago: an event before the reference time, not completion within a period.
+shippedText=The frozen source pairs the shown form "Мы ездили в Казахстан год назад." with the admitted gloss "ago" ("relate events in time").
+Мы ездили в Казахстан год назад. matches ago: an event before the reference time, not completion within a period.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=266f9269a989050dbc441b45e9da73cf075c484e77f94a291673c857a9c4a76a
+contentHash=de8dd63487778e0f3b9a2d533225e0c1233f5f1520348acaf840b359251b2176
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-elapsed-2-wrong-0`
+
+- Objectives: obj-u23-elapsed
+- Sessions: u23-s-orient, u23-s-elapsed
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb0dba90272a7ea491533c723f78bcace646480db518a08cee6d7bb4eea86876
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-elapsed:u23-i-elapsed-2-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+in (a period of time): an event after the forward-looking interval, not the duration of the activity. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=in (a period of time): an event after the forward-looking interval, not the duration of the activity. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97db74c4c61e672a2f9c93f28350925072f89180ae880ed9a4af279deafeae5f
+contentHash=a8cfb720c581de92a97c2004f9ffee261c097e57aa6e0629af69a1ab2a428562
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-ranges-1-feedback`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d6821c34decc8cce01504af789d99a0744b5750d205ac88a2ca50a0ccff0c1a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:u23-i-ranges-1-feedback
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
+В девяностых годах matches in the 1990s: the nineties, with the twentieth century assumed in this supplied gloss.
+shippedText=The frozen source pairs the shown form "В девяностых годах" with the admitted gloss "in the 1990s" ("in the 1990s").
+В девяностых годах matches in the 1990s: the nineties, with the twentieth century assumed in this supplied gloss.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2fb539a7317d72672ba8ebd96c76f5d6d096a7a57d3624c1b557331b89aae50d
+contentHash=59dab48847787c0167f76bb2d672052d4fc2910aca46e2f62e1c5f7fb9de9fdd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u23-u23-i-ranges-1-wrong-0`
+
+- Objectives: obj-u23-ranges
+- Sessions: u23-s-orient, u23-s-ranges
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a21d3e35d2e05afa4ee9697e2bc3c2a9d199bd8fb6b4bd826e6684db1ca6a584
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u23-ranges:u23-i-ranges-1-wrong-0
+originalSourceText=Retained licensed Pressbooks time spans and pending Phase2 completion evidence; Cornell grammar le103_110_f.htm, gr10_d_c.htm, le71_78_l.htm. Consulted 2026-10-11; independently authored English; review pending.
+in the 1960s: the sixties, with the twentieth century assumed in this supplied gloss. This is a different time relation, interval, event or completion claim from the requested meaning.
+shippedText=in the 1960s: the sixties, with the twentieth century assumed in this supplied gloss. This is a different time relation, interval, event or completion claim from the requested meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11cf3bc5dbf7d0453e6d9c6562ae20a55e12b4ffc1b9f2bf105434f37b1f3687
+contentHash=771abe9e757e42da30812228ffdd56a1a6ab5f6f95a682fc1620c73e4e9df219
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-u23-beginning-0-en`
 
@@ -4133,6 +6945,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-23-103`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55f260710f9f8e84583dd0bbc8902b1736131eeaf7dff5a12f763b75eee1aaf5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 23: printed pages 283-293. PDF indexes 295-305 are file locators, not printed pages. Observed section locators: §23.1 p283 (PDF 295); §23.2 p283 (PDF 295); §23.3 p284 (PDF 296); §23.4 p287 (PDF 299); §23.5 p288 (PDF 300); §23.6 p288 (PDF 300); §23.7 p289 (PDF 301); §23.8 p291 (PDF 303). Observed exercise locators: 23/1 p287/PDF299; 23/2 p288/PDF300; 23/3 p289/PDF301; 23/4 p289/PDF301; 23/5 p291/PDF303. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-23-104`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 786354120cf20954b1289b47048c82ce175afe53685a2ef0eee11f74cff71594
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-23-105`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6adf29e9a93c68ec0b27050526c9707da3cc51d0b13ffee255a0943b060d9a31
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-23-11267`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ebe1c1a846fb14f0c0d89f9cf48b23ff6ec21c0a5c55f3f7ebd1277e6f72ad41
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 23 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-23-11268`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5e631493b2eea401f7ca4ad207f020ad4730922a70cbacb11f4cb45be01c7cd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-23-11269`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0958fede14f24c5958fa381680949ebc7abd5e5a940b2d56ffb6a175b3cb6702
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 23 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-23-11270`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 100e9bd1cd4cba7f90ba61e16a2f4af81dcf456075bc2c40a19c6b28dd3638f4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-23-11271`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b59d601cdf7eb15eb64ae62fc53846cc867c8b9ee75e9359a635eb2e2559aa1f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 23 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-23-11272`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef11aadc78fe50e2f1bebc042fd88f64e22808e8a23637129581781a346e089e
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-23-11273`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 86eff4eb90166015becf5291aae6925f6e0e493b91ae09e72beb4b7fcd249262
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 23 cumulative review
+
 ### AUTHORED_ENGLISH `en-u23-101`
 
 - Objectives: none
@@ -4490,6 +7432,21 @@ CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -4545,6 +7502,20 @@ permitsAppUse=true
 
 src-wikibooks-russian-cc-by-sa
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -4634,9 +7605,9 @@ permitsAppUse=true
 - `u23-st-teach-ranges-1` EXAMPLE `ex-u23-ranges-0`
 - `u23-st-teach-ranges-1` EXAMPLE `ex-u23-ranges-1`
 - `u23-st-teach-ranges-1` REFERENCE `ref-u2125-attribution`
+- `u23-st-teach-ranges-2` REFERENCE `ref-u2125-attribution`
 - `u23-st-guided-ranges-1` REMEDIATION `u23-st-rem-ranges`
 - `u23-st-guided-ranges-1` ITEM `u23-g-ranges-0`
-- `u23-st-teach-ranges-2` REFERENCE `ref-u2125-attribution`
 - `u23-st-rem-ranges` EXAMPLE `ex-u23-ranges-0`
 - `u23-st-rem-ranges` EXAMPLE `ex-u23-ranges-1`
 - `u23-st-check-ranges` REMEDIATION `u23-st-rem-ranges`
@@ -4646,13 +7617,14 @@ permitsAppUse=true
 - `u23-st-teach-beginning-1` EXAMPLE `ex-u23-beginning-0`
 - `u23-st-teach-beginning-1` EXAMPLE `ex-u23-beginning-1`
 - `u23-st-teach-beginning-1` REFERENCE `ref-u2125-attribution`
-- `u23-st-guided-beginning-1` REMEDIATION `u23-st-rem-beginning`
-- `u23-st-guided-beginning-1` ITEM `u23-g-beginning-0`
 - `u23-st-teach-beginning-2` REFERENCE `ref-u2125-attribution`
 - `u23-st-teach-beginning-3` EXAMPLE `ex-u23-beginning-2`
 - `u23-st-teach-beginning-3` REFERENCE `ref-u2125-attribution`
+- `u23-st-guided-beginning-1` REMEDIATION `u23-st-rem-beginning`
+- `u23-st-guided-beginning-1` ITEM `u23-g-beginning-0`
 - `u23-st-rem-beginning` EXAMPLE `ex-u23-beginning-0`
 - `u23-st-rem-beginning` EXAMPLE `ex-u23-beginning-1`
+- `u23-st-rem-beginning` EXAMPLE `ex-u23-beginning-2`
 - `u23-st-check-beginning` REMEDIATION `u23-st-rem-beginning`
 - `u23-st-check-beginning` ITEM `u23-i-beginning-1`
 - `u23-st-check-beginning` ITEM `u23-i-beginning-2`
@@ -4660,9 +7632,9 @@ permitsAppUse=true
 - `u23-st-teach-during-event-1` EXAMPLE `ex-u23-during-event-0`
 - `u23-st-teach-during-event-1` EXAMPLE `ex-u23-during-event-1`
 - `u23-st-teach-during-event-1` REFERENCE `ref-u2125-attribution`
+- `u23-st-teach-during-event-2` REFERENCE `ref-u2125-attribution`
 - `u23-st-guided-during-event-1` REMEDIATION `u23-st-rem-during-event`
 - `u23-st-guided-during-event-1` ITEM `u23-g-during-event-0`
-- `u23-st-teach-during-event-2` REFERENCE `ref-u2125-attribution`
 - `u23-st-rem-during-event` EXAMPLE `ex-u23-during-event-0`
 - `u23-st-rem-during-event` EXAMPLE `ex-u23-during-event-1`
 - `u23-st-check-during-event` REMEDIATION `u23-st-rem-during-event`
@@ -4672,9 +7644,9 @@ permitsAppUse=true
 - `u23-st-teach-duration-1` EXAMPLE `ex-u23-duration-0`
 - `u23-st-teach-duration-1` EXAMPLE `ex-u23-duration-1`
 - `u23-st-teach-duration-1` REFERENCE `ref-u2125-attribution`
+- `u23-st-teach-duration-2` REFERENCE `ref-u2125-attribution`
 - `u23-st-guided-duration-1` REMEDIATION `u23-st-rem-duration`
 - `u23-st-guided-duration-1` ITEM `u23-g-duration-0`
-- `u23-st-teach-duration-2` REFERENCE `ref-u2125-attribution`
 - `u23-st-rem-duration` EXAMPLE `ex-u23-duration-0`
 - `u23-st-rem-duration` EXAMPLE `ex-u23-duration-1`
 - `u23-st-check-duration` REMEDIATION `u23-st-rem-duration`
@@ -4684,30 +7656,120 @@ permitsAppUse=true
 - `u23-st-teach-elapsed-1` EXAMPLE `ex-u23-elapsed-0`
 - `u23-st-teach-elapsed-1` EXAMPLE `ex-u23-elapsed-1`
 - `u23-st-teach-elapsed-1` REFERENCE `ref-u2125-attribution`
-- `u23-st-guided-elapsed-1` REMEDIATION `u23-st-rem-elapsed`
-- `u23-st-guided-elapsed-1` ITEM `u23-g-elapsed-0`
 - `u23-st-teach-elapsed-2` REFERENCE `ref-u2125-attribution`
 - `u23-st-teach-elapsed-3` EXAMPLE `ex-u23-elapsed-2`
 - `u23-st-teach-elapsed-3` EXAMPLE `ex-u23-elapsed-3`
 - `u23-st-teach-elapsed-3` REFERENCE `ref-u2125-attribution`
+- `u23-st-guided-elapsed-1` REMEDIATION `u23-st-rem-elapsed`
+- `u23-st-guided-elapsed-1` ITEM `u23-g-elapsed-0`
 - `u23-st-rem-elapsed` EXAMPLE `ex-u23-elapsed-0`
 - `u23-st-rem-elapsed` EXAMPLE `ex-u23-elapsed-1`
+- `u23-st-rem-elapsed` EXAMPLE `ex-u23-elapsed-2`
+- `u23-st-rem-elapsed` EXAMPLE `ex-u23-elapsed-3`
 - `u23-st-check-elapsed` REMEDIATION `u23-st-rem-elapsed`
 - `u23-st-check-elapsed` ITEM `u23-i-elapsed-1`
 - `u23-st-check-elapsed` ITEM `u23-i-elapsed-2`
 - `u23-s-book` OBJECTIVE `obj-u23-book`
 - `u23-st-book-work` REFERENCE `ref-u2125-attribution`
 - `u23-s-gap-completion` OBJECTIVE `obj-u23-completion`
+- `u23-s-gap-completion` OBJECTIVE `obj-u23-book`
 - `u23-st-teach-completion-1` EXAMPLE `ex-u23-completion-0`
 - `u23-st-teach-completion-1` REFERENCE `ref-u2125-attribution`
+- `u23-st-teach-completion-2` EXAMPLE `ex-u23-completion-1`
 - `u23-st-guided-completion-1` REMEDIATION `u23-st-rem-completion`
 - `u23-st-guided-completion-1` ITEM `u23-g-completion-1`
-- `u23-st-teach-completion-2` EXAMPLE `ex-u23-completion-1`
 - `u23-st-rem-completion` EXAMPLE `ex-u23-completion-0`
 - `u23-st-rem-completion` EXAMPLE `ex-u23-completion-1`
 - `u23-st-check-completion` REMEDIATION `u23-st-rem-completion`
 - `u23-st-check-completion` ITEM `u23-i-completion-1`
 - `u23-st-check-completion` ITEM `u23-i-completion-2`
+- `obj-u23-ranges` PROVENANCE `prov-ca-23-106`
+- `obj-u23-during-event` PROVENANCE `prov-ca-23-107`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-23-108`
+- `obj-u23-ranges` PROVENANCE `prov-ca-23-605`
+- `obj-u23-book` PROVENANCE `prov-ca-23-613`
+- `obj-u23-ranges` PROVENANCE `prov-ca-23-614`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-beginning-guided`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-beginning-objective`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-beginning-rem-body`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-beginning-rem-title`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-beginning-teach-1-body`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-beginning-teach-1-title`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-beginning-teach-2-body`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-beginning-teach-2-title`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-beginning-teach-3-body`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-beginning-teach-3-title`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-completion-guided`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-completion-objective`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-completion-rem-body`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-completion-rem-title`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-completion-teach-1-body`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-completion-teach-1-title`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-completion-teach-2-body`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-completion-teach-2-title`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-duration-guided`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-duration-objective`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-duration-rem-body`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-duration-rem-title`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-duration-teach-1-body`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-duration-teach-1-title`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-duration-teach-2-body`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-duration-teach-2-title`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-during-event-guided`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-during-event-objective`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-during-event-rem-body`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-during-event-rem-title`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-during-event-teach-1-body`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-during-event-teach-1-title`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-during-event-teach-2-body`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-during-event-teach-2-title`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-elapsed-guided`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-elapsed-objective`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-elapsed-rem-body`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-elapsed-rem-title`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-elapsed-teach-1-body`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-elapsed-teach-1-title`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-elapsed-teach-2-body`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-elapsed-teach-2-title`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-elapsed-teach-3-body`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-elapsed-teach-3-title`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-ranges-guided`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-ranges-objective`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-ranges-rem-body`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-ranges-rem-title`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-ranges-teach-1-body`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-ranges-teach-1-title`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-ranges-teach-2-body`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-ranges-teach-2-title`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-u23-g-beginning-0-feedback`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-u23-g-beginning-0-wrong-0`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-u23-g-completion-1-feedback`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-u23-g-completion-1-wrong-0`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-u23-g-duration-0-feedback`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-u23-g-duration-0-wrong-0`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-u23-g-during-event-0-feedback`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-u23-g-during-event-0-wrong-0`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-u23-g-elapsed-0-feedback`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-u23-g-elapsed-0-wrong-0`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-u23-g-ranges-0-feedback`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-u23-g-ranges-0-wrong-0`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-u23-i-beginning-1-feedback`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-u23-i-beginning-1-wrong-0`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-u23-i-beginning-2-feedback`
+- `obj-u23-beginning` PROVENANCE `prov-ca-u23-u23-i-beginning-2-wrong-0`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-u23-i-completion-1-feedback`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-u23-i-completion-2-feedback`
+- `obj-u23-completion` PROVENANCE `prov-ca-u23-u23-i-completion-2-wrong-0`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-u23-i-duration-1-feedback`
+- `obj-u23-duration` PROVENANCE `prov-ca-u23-u23-i-duration-1-wrong-0`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-u23-i-during-event-1-feedback`
+- `obj-u23-during-event` PROVENANCE `prov-ca-u23-u23-i-during-event-1-wrong-0`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-u23-i-elapsed-1-feedback`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-u23-i-elapsed-1-wrong-0`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-u23-i-elapsed-2-feedback`
+- `obj-u23-elapsed` PROVENANCE `prov-ca-u23-u23-i-elapsed-2-wrong-0`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-u23-i-ranges-1-feedback`
+- `obj-u23-ranges` PROVENANCE `prov-ca-u23-u23-i-ranges-1-wrong-0`
 - `obj-u23-beginning` PROVENANCE `prov-ex-u23-beginning-0-en`
 - `obj-u23-beginning` PROVENANCE `prov-ex-u23-beginning-0-ru`
 - `obj-u23-beginning` PROVENANCE `prov-ex-u23-beginning-1-en`

@@ -72,6 +72,28 @@ tasks.register<JavaExec>("checkReleaseGate") {
     }
 }
 
+// Explicit authoring checks, separate from startup validation and release acceptance.
+// A fresh output path prevents accidental replacement of retained verification evidence.
+for ((taskName, strict) in listOf("reportCurriculumDesign" to false, "checkCurriculumDesign" to true)) {
+    tasks.register<JavaExec>(taskName) {
+        group = "verification"
+        description = if (strict) "Reports curriculum design signals and fails while any remain unresolved."
+            else "Writes assessment/teaching diagnostics without claiming curriculum acceptance."
+        val compileKotlin = tasks.named("compileDebugKotlin")
+        dependsOn(compileKotlin)
+        workingDir = rootProject.layout.projectDirectory.asFile
+        mainClass.set("dev.russiancompanion.v2.curriculum.CurriculumDesignCliKt")
+        classpath(compileKotlin.map { it.outputs.files }, configurations.named("debugRuntimeClasspath"), androidComponents.sdkComponents.bootClasspath)
+        doFirst {
+            val reportPath = providers.gradleProperty("curriculumDesignOutput").orNull
+                ?: throw GradleException("Provide -PcurriculumDesignOutput=/absolute/fresh-report.json")
+            args("--input", rootProject.file("app/src/main/assets/content/v2-curriculum.json").absolutePath,
+                "--output", reportPath)
+            if (strict) args("--check")
+        }
+    }
+}
+
 fun isReleaseOutputTask(name: String): Boolean {
     if (name.isEmpty()) return false
     if (name.contains("Test") || name.contains("Lint") || name.startsWith("lint")) return false

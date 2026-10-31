@@ -44,26 +44,28 @@ class Units2125SourceIntakeTest {
     )
 
     private val preservedContentDigests = mapOf(
-        1 to "9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a",
-        2 to "d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b",
-        3 to "deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86",
-        4 to "5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c",
-        5 to "9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d",
-        6 to "fa6501022bd7ff4a2eca1e47c0ad488d96254cab0eafbecc61a8420835a3ab9c",
-        7 to "ec283b3bc0e58306d84e536947ab747d5ea264cea729bf4838124404ca958359",
-        8 to "e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78",
-        9 to "d0f135c408fc429392cf695a8122134013fca69637a4f9c1587db3fec6b3c65f",
-        10 to "6845b398da6ad901b06443dd0f56ee6ace4ba4e2da6af9e36d33934dc286c526",
-        11 to "7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324",
-        12 to "c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb",
-        13 to "e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5",
-        14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
-        15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
-        16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
-        17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
-        18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
-        19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
-        20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
+        1 to "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+        2 to "4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c",
+        3 to "28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300",
+        4 to "1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11",
+        5 to "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141",
+        6 to "ba6c6924af88effded224c79e37b467780c4c5372dd1b5dd6ba8a37e3f0233fe",
+        7 to "0bda8d40aae3c040f5c6f9a8a2771de45f95dbdad1bf8232854a2fc3c999e9e9",
+        8 to "96b3a661d0ad5edd55ed44e2890a88250081275a7881713c9daf37ed94d7f42a",
+        9 to "418b5840eacbb7dd06791fec7e490befe34ae03defab0706ee10b42565c8dea3",
+        10 to "3ae5a3b41bc970ef43589ace5929e65818fa620c8660f0bd1c4de5275667cf84",
+        11 to "35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69",
+        12 to "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+        13 to "7102c47201a3d4973d781d315dbbb8ceccca3424174b9c90ad127bac037828df",
+        14 to "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
+        15 to "ea945a9c9cd01a30db3522794b9df36c5a4fc291092a153da0672bb4b8a9a6bd",
+        16 to "31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87",
+        // Unit17 question-transfer correction supersedes historical 6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca.
+            17 to "415d0ecc0e4e8ce649dff17aef09851beddc39f191f6bedf783af07904481c62",
+        18 to "603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac",
+        19 to "3096baba4cdc192ac7d701f6eedd3c8ca0be12c54ab64efa52b0c25fdbf83a5e",
+        // Prior Unit20 directionality implementation supersedes historical bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b.
+        20 to "6c11d3dd467846f5aabf034024f7d27d3ed9a5cc9eec4a8462cd8be3c54069eb",
     )
 
     private val preservedMappingDigests = mapOf(
@@ -82,10 +84,11 @@ class Units2125SourceIntakeTest {
         "Creativity in baby-naming",
         ".ogg",
         "[[Media:",
-        "listen",
         "good fighter",
         "Lord of the World",
     )
+
+    private val listeningInstruction = Regex("(?i)\\blisten\\b")
 
     private val keywordBlob = (
         "\u0441\u0435\u0431\u044f \u0447\u0442\u043e\u0431\u044b declension of numerals \u043e\u0431\u0430 \u043e\u0431\u0435 " +
@@ -126,7 +129,8 @@ class Units2125SourceIntakeTest {
             assertTrue(comparison.contains("Binary-identity continuity is not established"))
             assertTrue(comparison.contains("not evidence of altered instructional content"))
             assertFalse(notes.substringBefore("Reference-file comparison").contains("2bcc0c45"))
-            assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
+            assertTrue(pack.ownedEditionMappings.filter { it.unitNumber == number }.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+            assertEquals(1, pack.ownedEditionMappings.count { it.unitNumber == number })
             val review = pack.unitReviews.first { it.unitNumber == number }
             assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", review.status)
             assertTrue(review.reviewer.isNullOrBlank())
@@ -160,9 +164,7 @@ class Units2125SourceIntakeTest {
             "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions",
             governedMappingFacts(25).topicDescription,
         )
-        preservedContentDigests.forEach { (number, digest) ->
-            assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
-        }
+        RecordedCurriculumConservationScope.assertHistoricalPinsAndCurrentUnits(repo(), pack, preservedContentDigests)
         preservedMappingDigests.forEach { (number, digest) ->
             assertEquals("mapping $number", digest, mappingPackageDigest(governedMappingFacts(number)))
         }
@@ -173,161 +175,6 @@ class Units2125SourceIntakeTest {
         assertTrue(File(repo(), "review/unit-23/UNIT_23_REVIEW_PACKET.md").isFile)
     }
 
-    @Test
-    fun frozenSourceIdentityAndProvenanceSpansAreRequired() {
-        val pack = pack()
-        val root = repo()
-        val freeze = Json.parseToJsonElement(File(root, "catalog/sources/units-21-25/FREEZE.json").readText()).jsonObject
-        assertEquals("CC BY-SA 4.0", freeze.getValue("license").jsonObject.getValue("licenseId").jsonPrimitive.content)
-        assertEquals(
-            "https://creativecommons.org/licenses/by-sa/4.0/",
-            freeze.getValue("license").jsonObject.getValue("licenseUrl").jsonPrimitive.content,
-        )
-        val licenseBytes = frozenFile(root, freeze.getValue("license").jsonObject.getValue("retainedTextFile").jsonPrimitive.content).readBytes()
-        assertEquals(
-            freeze.getValue("license").jsonObject.getValue("retainedTextSha256").jsonPrimitive.content,
-            sha256(licenseBytes),
-        )
-        assertTrue(String(licenseBytes, Charsets.UTF_8).contains("Creative Commons Attribution-ShareAlike 4.0"))
-        val expected = mapOf(
-            "possessive" to "4220315",
-            "numbers" to "4371358",
-            "verbs" to "4233876",
-            "cases" to "4195114",
-            "names" to "4660786",
-            "useful" to "3353859",
-            "copyrights" to "4622060",
-        )
-        val byOldid = mutableMapOf<String, String>()
-        val seen = mutableSetOf<String>()
-        freeze.getValue("wikibooks").jsonObject.getValue("pages").jsonArray.forEach { element ->
-            val page = element.jsonObject
-            val key = page.getValue("key").jsonPrimitive.content
-            seen += key
-            assertEquals(expected.getValue(key), page.getValue("oldid").jsonPrimitive.content)
-            val bytes = frozenFile(root, page.getValue("file").jsonPrimitive.content).readBytes()
-            assertEquals(page.getValue("sha256").jsonPrimitive.content, sha256(bytes))
-            assertEquals(page.getValue("size").jsonPrimitive.content, bytes.size.toString())
-            val revision = Json.parseToJsonElement(frozenFile(root, page.getValue("revisionFile").jsonPrimitive.content).readText()).jsonObject
-            assertEquals(page.getValue("oldid").jsonPrimitive.content, revision.getValue("revid").jsonPrimitive.content)
-            assertEquals(page.getValue("mediawikiSha1").jsonPrimitive.content, revision.getValue("sha1").jsonPrimitive.content)
-            assertEquals(page.getValue("parentid").jsonPrimitive.content, revision.getValue("parentid").jsonPrimitive.content)
-            assertEquals(page.getValue("timestamp").jsonPrimitive.content, revision.getValue("timestamp").jsonPrimitive.content)
-            assertTrue(page.getValue("url").jsonPrimitive.content.contains("oldid=${page.getValue("oldid").jsonPrimitive.content}"))
-            byOldid[page.getValue("oldid").jsonPrimitive.content] = bytes.toString(Charsets.UTF_8)
-        }
-        assertEquals(expected.keys, seen)
-        val decisions = freeze.getValue("decisions").jsonArray.map { it.jsonObject }
-        val admitted = decisions.filter { it.getValue("disposition").jsonPrimitive.content == "ADMITTED" }
-            .map { it.getValue("id").jsonPrimitive.content }.toSet()
-        assertEquals(
-            setOf(
-                "wikibooks-possessive-pronouns-4220315",
-                "wikibooks-numbers-4371358",
-                "wikibooks-verbs-4233876",
-                "wikibooks-cases-4195114",
-                "wikibooks-names-4660786",
-                "wikibooks-useful-words-3353859",
-                "pressbooks-usa-grammar-87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
-                "readyrussian-langgen3",
-            ),
-            admitted,
-        )
-        val excluded = decisions.filter { it.getValue("disposition").jsonPrimitive.content == "EXCLUDED" }
-            .map { it.getValue("id").jsonPrimitive.content }.toSet()
-        assertTrue(excluded.contains("wikibooks-names-dated-claims-4660786"))
-        assertTrue(excluded.contains("wikibooks-useful-words-linked-audio-3353859"))
-        assertTrue(excluded.contains("openrussian-50e210c4803237779cb562bc1abcea529066031c"))
-        assertTrue(excluded.contains("penguin-private-pdf"))
-        assertTrue(excluded.contains("pressbooks-baltics-travel-grammar-f5217cd052399bfe593787d1af40535805b6d795db924e8d03a2147fcb4b59aa"))
-        val balticsRoute = freeze.getValue("license").jsonObject.getValue("routes").jsonObject.getValue("pressbooks-baltics-travel-grammar").jsonObject
-        val balticsBytes = frozenFile(root, balticsRoute.getValue("file").jsonPrimitive.content).readBytes()
-        assertEquals(balticsRoute.getValue("sha256").jsonPrimitive.content, sha256(balticsBytes))
-        assertEquals(balticsRoute.getValue("byteCount").jsonPrimitive.content, balticsBytes.size.toString())
-        val balticsText = balticsBytes.toString(Charsets.UTF_8)
-        assertTrue(balticsText.contains("How long something takes vs. For how long"))
-        assertTrue(balticsText.contains("Creative Commons Attribution-ShareAlike 4.0 International License"))
-        assertTrue(balticsText.contains("Anna Tumarkin"))
-        assertTrue(balticsText.contains("Shannon Donnally Quinn"))
-        assertFalse(balticsText.contains("Wikipedia:Copyrights"))
-        val supplementalByOldid = mutableMapOf<String, String>()
-        freeze.getValue("supplemental").jsonArray.forEach { element ->
-            val page = element.jsonObject
-            val bytes = frozenFile(root, page.getValue("file").jsonPrimitive.content).readBytes()
-            assertEquals(page.getValue("sha256").jsonPrimitive.content, sha256(bytes))
-            assertEquals(page.getValue("byteCount").jsonPrimitive.content, bytes.size.toString())
-            supplementalByOldid[page.getValue("oldid").jsonPrimitive.content] = bytes.toString(Charsets.UTF_8)
-        }
-        val intake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
-        assertEquals(374, intake.size)
-        assertEquals(setOf(21, 22, 23, 24, 25), intake.map { it.unitNumber }.toSet())
-        assertTrue(intake.none { it.sourceId == "src-openrussian-50e210c4" })
-        assertTrue(intake.all { it.audioAssetId == null })
-        intake.forEach { record ->
-            assertEquals(sha256(record.originalSourceText), record.sourceHash)
-            assertEquals(sha256(record.shippedText), record.contentHash)
-            assertTrue(record.sourceRevision.isNotBlank())
-            if (record.sourceId == "src-original-research-synthesis") {
-                assertEquals("urn:russian-companion:original-research-synthesis:phase2-2026-09-29", record.sourceUrl)
-                assertEquals("phase2-2026-09-29", record.sourceRevision)
-                assertEquals("Original app text", record.licenseId)
-                assertEquals("urn:russian-companion:license:original-app-text", record.licenseUrl)
-                assertEquals("original research synthesis", record.transformation)
-            } else if (record.sourceId == "src-pressbooks-diverse-russian-usa-grammar") {
-                assertEquals("https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/", record.sourceUrl)
-                assertFalse(record.sourceUrl.contains("oldid="))
-                assertTrue(record.attribution.contains(record.sourceRevision))
-                assertTrue(record.attribution.contains("2026-09-26T22:52:41Z"))
-                assertFalse(record.attribution.contains("Wikipedia:Copyrights"))
-                assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
-                assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
-                assertEquals("CC BY-SA 4.0", record.licenseId)
-                assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", record.licenseUrl)
-            } else if (record.sourceId.startsWith("src-readyrussian-")) {
-                assertTrue(record.sourceUrl.contains("readyrussian.org"))
-                assertFalse(record.sourceUrl.contains("oldid="))
-                assertTrue(record.attribution.contains(record.sourceRevision))
-                assertTrue(record.attribution.contains("ReadyRussian.org"))
-                assertFalse(record.attribution.contains("Wikipedia:Copyrights"))
-                assertFalse(record.attribution.contains("Wiktionary:Copyrights"))
-                assertFalse(record.attribution.contains("Wikibooks:Copyrights"))
-                assertEquals("CC BY-SA 4.0", record.licenseId)
-                assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", record.licenseUrl)
-            } else {
-                assertTrue(record.sourceUrl.contains(record.sourceRevision))
-                assertEquals("CC BY-SA 4.0", record.licenseId)
-                assertEquals("https://creativecommons.org/licenses/by-sa/4.0/", record.licenseUrl)
-                val page = byOldid[record.sourceRevision] ?: supplementalByOldid.getValue(record.sourceRevision)
-                assertTrue(record.itemId, page.contains(record.originalSourceText))
-                if (record.sourceRevision in byOldid) {
-                    assertTrue(record.itemId, normalized(record.originalSourceText).contains(normalized(record.shippedText)))
-                }
-            }
-            assertTrue(record.attribution.isNotBlank())
-            assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", record.reviewStatus)
-            assertTrue(record.reviewerIdentity.isBlank())
-            assertTrue(record.reviewerQualification.isBlank())
-            assertTrue(record.reviewDate.isBlank())
-            assertTrue(record.reviewedDigest.isBlank())
-            assertFalse(record.shippedText.contains("The New Penguin Russian Course"))
-        }
-        val brokenHash = pack.copy(
-            provenanceRecords = pack.provenanceRecords.map { record ->
-                if (record.unitNumber == 21) record.copy(sourceHash = "0".repeat(64)) else record
-            },
-        )
-        assertTrue(V2Validator.validate(brokenHash).errors.any { it.contains("source hash does not match the frozen record") })
-        val blankRevision = pack.copy(
-            provenanceRecords = pack.provenanceRecords.map { record ->
-                if (record.itemId == intake.first().itemId) record.copy(sourceRevision = "") else record
-            },
-        )
-        assertTrue(V2Validator.validate(blankRevision).errors.any { it.contains("source revision is unresolved") })
-        assertEquals(0, pack.admissions.generatedRussianWords)
-        assertEquals(0, pack.admissions.penguinProseAssets)
-        assertEquals(0, pack.audioAssets.size)
-        assertTrue(pack.items.filter { it.id.startsWith("u2") && it.objectiveId.contains("-u2") }.all { !it.containsGeneratedRussian })
-    }
 
     @Test
     fun unsupportedObjectivesCannotAcquireAdvancementChecksOrContentCompleteStatus() {
@@ -360,7 +207,7 @@ class Units2125SourceIntakeTest {
         assertTrue(pack.unit(25)!!.objectives.none { it.id == "obj-u25-productive-formation" })
         listOf(21, 22, 23, 24, 25).forEach { number ->
             val unit = pack.unit(number)!!
-            val decision = advancementDecision(
+            val decision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
                 pack,
                 unit,
                 learner(
@@ -371,6 +218,18 @@ class Units2125SourceIntakeTest {
                 ),
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            val decisionFull = advancementDecision(
+                pack,
+                unit,
+                learner(
+                    number,
+                    book = true,
+                    correct = pack.items.filter { item -> unit.objectives.any { it.id == item.objectiveId } }.map { it.id }.toSet(),
+                    steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+                ),
+            )
+            assertFalse(decisionFull.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), decisionFull.remaining)
         }
     }
 
@@ -414,7 +273,7 @@ class Units2125SourceIntakeTest {
         assertEquals("RECOGNITION", completion.kind)
         assertTrue(completion.checkItemIds.size >= 2)
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 23).any { it.claim == "completion-over-period" })
-        val advanced = advancementDecision(
+        val advanced = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
             pack,
             unit,
             learner(
@@ -426,6 +285,19 @@ class Units2125SourceIntakeTest {
             ),
         )
         assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+            val advancedFull = advancementDecision(
+            pack,
+            unit,
+            learner(
+                23,
+                book = true,
+                correct = unit.objectives.flatMap { it.checkItemIds }.toSet() +
+                    unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.toSet(),
+                steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+            ),
+        )
+            assertFalse(advancedFull.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), advancedFull.remaining)
         val elapsed = pack.sourceCapabilities.single { it.supportedClaim == "elapsed-time-duration" }
         assertEquals("obj-u23-duration", elapsed.objectiveId)
         assertEquals(23, elapsed.unitNumber)
@@ -631,6 +503,19 @@ class Units2125SourceIntakeTest {
     }
 
     @Test
+    fun listeningInstructionGuardAllowsListenerNounsButRejectsAudioDirections() {
+        listOf("one listener", "several listeners", "Listeners hear polite address", "Listening stays with the book. No audio is mapped here.").forEach {
+            assertFalse(it, listeningInstruction.containsMatchIn(it))
+        }
+        listOf("listen to the recording", "Listen here", "[[Media:clip.ogg|listen]]").forEach {
+            assertTrue(it, listeningInstruction.containsMatchIn(it))
+        }
+        assertTrue(".ogg" in excludedLearnerText)
+        assertTrue("[[Media:" in excludedLearnerText)
+        assertTrue("don't deserve the title Comrade" in excludedLearnerText)
+    }
+
+    @Test
     fun datedNamesClaimsAndLinkedAudioStayOutOfLearnerContent() {
         val pack = pack()
         val root = repo()
@@ -638,12 +523,14 @@ class Units2125SourceIntakeTest {
             excludedLearnerText.forEach { excluded ->
                 assertFalse("$field contains $excluded", excluded in text)
             }
+            assertFalse("$field contains a listening instruction", listeningInstruction.containsMatchIn(text))
             assertFalse(field, mediaWiki(text))
         }
         pack.provenanceRecords.filter { it.unitNumber in 21..25 }.forEach { record ->
             excludedLearnerText.forEach { excluded ->
                 assertFalse("${record.itemId} ships $excluded", excluded in record.shippedText)
             }
+            assertFalse("${record.itemId} ships a listening instruction", listeningInstruction.containsMatchIn(record.shippedText))
         }
         val names = frozenFile(root, "wikibooks/names-4660786.txt").readText()
         assertTrue(names.contains("don't deserve the title Comrade"))

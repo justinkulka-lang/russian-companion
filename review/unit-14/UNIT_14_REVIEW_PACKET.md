@@ -11,12 +11,12 @@ Unit 14 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: 270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6
+- Curriculum source commit: d72afd1232857a857624c20c58f4bcd3cb5c8564
+- Unit content-review SHA-256: 5b42bce13ad71142cbd536373d7ac5a3906839e0bc61ed9a69abecb10bbca171
 - Mapping-package SHA-256: d59ce00b8c97b8610770ad1409daa9584e520ddab3c53a0b539e46b4a0162367
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 0789113aa820e364292d1225259c64fc1990d7e92053e37e359b233028d36d19
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: cd6164bc7f3f44d96ee6ccc476368a43e0c4410343860622ac5e263606763f57
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=54
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 76736d36a13b67514a2f0a7493dfe6a232037ddfb977428e040099b287076d57
+- Content hash: fa45e46fb8e3ac6bec2cbd257768afdd51d104694c369d275cb7cbe6a3c783ad
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=6
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u14-future-aspect`
@@ -542,12 +542,12 @@ remediationStepId=u14-st-rem-future-person
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: aa50e2022cd7e1710d934c7a96f946aef0c57c91b5289b2429f16ccdac95ad13
+- Content hash: a64ba28d9077dd36f41986b474dd47564b0f559fdae7e522a2e5ddd48eed512c
 
 title=Choose the admitted impersonal line
 estimatedMinutes=12
 objectives=obj-u14-impersonal
-steps=u14-st-teach-impersonal-1,u14-st-guided-impersonal-1,u14-st-teach-impersonal-2,u14-st-teach-impersonal-3,u14-st-rem-impersonal,u14-st-check-impersonal
+steps=u14-st-teach-impersonal-1,u14-st-teach-impersonal-2,u14-st-teach-impersonal-3,u14-st-guided-impersonal-1,u14-st-rem-impersonal,u14-st-check-impersonal
 
 ### STEP `u14-st-teach-impersonal-1`
 
@@ -557,11 +557,11 @@ steps=u14-st-teach-impersonal-1,u14-st-guided-impersonal-1,u14-st-teach-imperson
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cd78af339f88838a0d8ab47b093c700e9b430e88a4a953a08fa7f528e21fad19
+- Content hash: 698f1be899d1eeb7b5e39cf09a2d3fe9c0c357f108d8fc7be71763896ac8885d
 
 kind=TEACH
 title=Admitted lines
-body=Ему было холодно — He was cold. Им было скучно — They were bored. 
+body=Ему было холодно — He was cold. Им было скучно — They were bored. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -570,28 +570,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u14-st-guided-impersonal-1`
-
-- Objectives: obj-u14-impersonal
-- Sessions: u14-s-impersonal
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 16d26da402033e09bc9164e450f4e9815b2b5f60ad8456aab7ee02bdce9751ab
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u14-g-impersonal-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u14-st-rem-impersonal
 
 ### STEP `u14-st-teach-impersonal-2`
 
@@ -637,6 +615,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u14-st-guided-impersonal-1`
+
+- Objectives: obj-u14-impersonal
+- Sessions: u14-s-impersonal
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 16d26da402033e09bc9164e450f4e9815b2b5f60ad8456aab7ee02bdce9751ab
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u14-g-impersonal-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u14-st-rem-impersonal
+
 ### STEP `u14-st-rem-impersonal`
 
 - Objectives: obj-u14-impersonal
@@ -645,15 +645,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 88f7bde71c330684621e77c445fbfd248a8be5ffbed9bb67c8fe576ecde3cfb7
+- Content hash: ef0621e01e8240c949da38e5a9222bd5cdc17ad33566ce44196804d1c1fb49fd
 
 kind=REMEDIATE
 title=Remediation
-body=To refer to these states in the past tense, always use '''было'''
+body=Ему было холодно — He was cold. Им было скучно — They were bored. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
+To refer to these states in the past tense, always use '''было'''
+
+ей было холодно — she was cold. бы́ло — be. 
 dominantAction=Continue
 references=
 items=
-examples=ex-u14-impersonal-0,ex-u14-impersonal-1
+examples=ex-u14-impersonal-0,ex-u14-impersonal-1,ex-u14-impersonal-2,ex-or-u14-impersonal-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -689,12 +693,12 @@ remediationStepId=u14-st-rem-impersonal
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 640c6f1b284d8da0511b0b66bb2ad47bc23ffe2977bc3d41bef9c619bd073e69
+- Content hash: 25eb84707205b90ea380eca7c6249f9c65c718060a1ba3f7606fc46a1faec182
 
 title=Self-attest Lesson 14
 estimatedMinutes=10
 objectives=obj-u14-book
-steps=u14-st-book-work,u14-st-book
+steps=u14-st-book-work,u14-st-book,u14-st-anki-direction,u14-st-binder-direction,u14-st-tutor-direction,u14-st-cumulative-direction
 
 ### STEP `u14-st-book-work`
 
@@ -704,7 +708,7 @@ steps=u14-st-book-work,u14-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5ac827429979d42dad0f70c396db64c5bbe82bf12d66312af263b5c61e3f7387
+- Content hash: d2da232d90afe0f1355fd3febdc250c3a4b4e545230c811b769aaa50e75dc67e
 
 kind=BOOK
 title=Work Lesson 14 in your copy
@@ -714,7 +718,7 @@ references=ref-u1115-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 14 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 14: printed pages 162-170. PDF indexes 174-182 are file locators, not printed pages. Observed section locators: §14.1 p162 (PDF 174); §14.2 p162 (PDF 174); §14.3 p163 (PDF 175); §14.4 p163 (PDF 175); §14.5 p165 (PDF 177); §14.6 p165 (PDF 177); §14.7 p168 (PDF 180); §14.8 p169 (PDF 181). Observed exercise locators: 14/1 p163/PDF175; 14/2 p164/PDF176; 14/3 p168/PDF180; 14/4 p169/PDF181. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -726,7 +730,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1c38f09ec20b7518b092b4f49c93bb517ced4ab86a379d99f114d73554e3c705
+- Content hash: 751390a40a15bab01d99a9d0688d6d5c69db0a179920cfa1d480eebdb79be4fc
 
 kind=BOOK
 title=Record Lesson 14 book work
@@ -736,8 +740,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 14 work in your copy.
+bookDirection=Owned-book assignment for Lesson 14: printed pages 162-170. PDF indexes 174-182 are file locators, not printed pages. Observed section locators: §14.1 p162 (PDF 174); §14.2 p162 (PDF 174); §14.3 p163 (PDF 175); §14.4 p163 (PDF 175); §14.5 p165 (PDF 177); §14.6 p165 (PDF 177); §14.7 p168 (PDF 180); §14.8 p169 (PDF 181). Observed exercise locators: 14/1 p163/PDF175; 14/2 p164/PDF176; 14/3 p168/PDF180; 14/4 p169/PDF181. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u14-st-anki-direction`
+
+- Objectives: obj-u14-book
+- Sessions: u14-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 20a983b7894b8b03ceb426d2c77722368bdef82719fd759e7ce599819efeacd7
+
+kind=ANKI
+title=Unit 14 AnkiDroid direction
+body=Unit 14 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u14-st-binder-direction`
+
+- Objectives: obj-u14-book
+- Sessions: u14-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 23bd1c467c26d6e4cdcba87136cea839dca8103949db98208632c9b3d52291f1
+
+kind=BINDER
+title=Unit 14 binder prompt
+body=Unit 14 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u14-st-tutor-direction`
+
+- Objectives: obj-u14-book
+- Sessions: u14-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 035357c3edfdf95b2a37c0c4789cbf1e002cab95750573a7a98419ab038408fb
+
+kind=TUTOR
+title=Unit 14 optional tutor
+body=Unit 14 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u14-st-cumulative-direction`
+
+- Objectives: obj-u14-book
+- Sessions: u14-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2cf55f0e755c37c5950e62ac6cbcef81359c1ce81407f92b53d6a8a32eb48cc9
+
+kind=ORIENT
+title=Unit 14 cumulative review
+body=Unit 14 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 14 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u14-future-aspect-0`
@@ -969,7 +1061,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5c3e48a5cd48effaae353e623755f9db800c69d83920d98cb2192829be47abad
+- Content hash: 68b459026a0d0cd55c7ed47c342ebf06e5ece054c9413828fae92e723940df17
 
 kind=CONTRAST_SELECTION
 language=en
@@ -977,11 +1069,11 @@ prompt=Which admitted line is the bounded future?
 promptLetter=I will speak for 30 minutes
 options=Я поговорю три́дцать мину́т | Я бу́ду говори́ть
 answer=Я поговорю три́дцать мину́т
-feedback=Does this answer show the bounded future? Я поговорю три́дцать мину́т.
+feedback=Я поговорю три́дцать мину́т is the bounded future example here: its perfective verb presents a limited stretch of speaking, and the line states thirty minutes. Я бу́ду говори́ть uses a future auxiliary and imperfective infinitive without a stated duration in this option. Both refer to the future, not to an event already completed. A stated duration does not automatically require perfective aspect in every sentence.
 objectiveId=obj-u14-future-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the bounded future?
+distractorRationales= | Я бу́ду говори́ть is the supplied imperfective future option without the thirty-minute limit stated in the other line; it does not match this bounded future example.
 testedFeature=BOUNDED_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-future-aspect-0
@@ -989,8 +1081,8 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u14-future-aspect-1-ru
 distractorSourceIds= | prov-ex-u14-future-aspect-0-ru
-distractorDifference= | Does this row fail the bounded future?
-whyAnswerDemonstratesObjective=Does this answer show the bounded future?
+distractorDifference= | Я бу́ду говори́ть is the supplied imperfective future option without the thirty-minute limit stated in the other line; it does not match this bounded future example.
+whyAnswerDemonstratesObjective=Я поговорю три́дцать мину́т is the bounded future example here: its perfective verb presents a limited stretch of speaking, and the line states thirty minutes. Я бу́ду говори́ть uses a future auxiliary and imperfective infinitive without a stated duration in this option. Both refer to the future, not to an event already completed. A stated duration does not automatically require perfective aspect in every sentence.
 contrastMembers=Я поговорю три́дцать мину́т | Я бу́ду говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-future-aspect-1-en | prov-ex-u14-future-aspect-1-ru | prov-ex-u14-future-aspect-0-ru
@@ -1004,7 +1096,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0ee4bd378f03ea4f39e91e4d951acf2fdb09f6a272f08ccf245c315f72519b98
+- Content hash: c498b763f23a6ae70f7125046ae775f6cedbd45728b2d341fb4ebd5920753b6b
 
 kind=FORM_SELECTION
 language=en
@@ -1012,11 +1104,11 @@ prompt=Which admitted line is the first-person plural future?
 promptLetter=We will be speaking
 options=Мы бу́дем говори́ть | Я бу́ду говори́ть
 answer=Мы бу́дем говори́ть
-feedback=Does this answer show the first-person plural future? Мы бу́дем говори́ть.
+feedback=Мы бу́дем говори́ть is first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. The imperfective infinitive stays the same; the subject and auxiliary distinguish the number requested.
 objectiveId=obj-u14-future-person
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the first-person plural future?
+distractorRationales= | Я бу́ду говори́ть is first-person singular future, not the first-person plural future requested here.
 testedFeature=FIRST_PERSON_PLURAL_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-future-person-0
@@ -1024,8 +1116,8 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u14-future-person-1-ru
 distractorSourceIds= | prov-ex-u14-future-person-0-ru
-distractorDifference= | Does this row fail the first-person plural future?
-whyAnswerDemonstratesObjective=Does this answer show the first-person plural future?
+distractorDifference= | Я бу́ду говори́ть is first-person singular future, not the first-person plural future requested here.
+whyAnswerDemonstratesObjective=Мы бу́дем говори́ть is first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. The imperfective infinitive stays the same; the subject and auxiliary distinguish the number requested.
 contrastMembers=Мы бу́дем говори́ть | Я бу́ду говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-future-person-1-en | prov-ex-u14-future-person-1-ru | prov-ex-u14-future-person-0-ru
@@ -1039,7 +1131,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c59c03936592977f2ed78df8cc40ab34fca2274503d35371f49093947ac4f96f
+- Content hash: 7de3755a24280e9a8252393d8ab3650e906b3a37ddfdd93e21aee398a0f524d8
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1047,11 +1139,11 @@ prompt=Which admitted line is the impersonal past for one person who was cold?
 promptLetter=He was cold
 options=Ему было холодно | Им было скучно
 answer=Ему было холодно
-feedback=Does this answer show the impersonal past? Ему было холодно.
+feedback=Ему было холодно is the impersonal past example meaning he was cold: the experiencer is dative singular, while the verb is neuter singular. Им было скучно describes plural experiencers who were bored. Both options are impersonal past and keep the same neuter singular verb; the requested person and state distinguish them.
 objectiveId=obj-u14-impersonal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the impersonal past?
+distractorRationales= | Им было скучно is also impersonal past, but it describes plural experiencers who were bored, not the singular cold person requested here.
 testedFeature=IMPERSONAL_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-impersonal-0
@@ -1059,8 +1151,8 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u14-impersonal-0-ru
 distractorSourceIds= | prov-ex-u14-impersonal-1-ru
-distractorDifference= | Does this row fail the impersonal past?
-whyAnswerDemonstratesObjective=Does this answer show the impersonal past?
+distractorDifference= | Им было скучно is also impersonal past, but it describes plural experiencers who were bored, not the singular cold person requested here.
+whyAnswerDemonstratesObjective=Ему было холодно is the impersonal past example meaning he was cold: the experiencer is dative singular, while the verb is neuter singular. Им было скучно describes plural experiencers who were bored. Both options are impersonal past and keep the same neuter singular verb; the requested person and state distinguish them.
 contrastMembers=Ему было холодно | Им было скучно
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-impersonal-0-en | prov-ex-u14-impersonal-0-ru | prov-ex-u14-impersonal-1-ru
@@ -1074,7 +1166,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d9a1461471c17a4a273b8858d535081390839d01f15bfacfa4d5b3e85ba74fe6
+- Content hash: 6b3c2510abb7eb6d3c6a3ae61874612b9d86cd345a1d7ddb91d499b5681cd71a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1082,11 +1174,11 @@ prompt=Which admitted line is the bounded future?
 promptLetter=I will work for three hours
 options=Я порабо́таю три ча́са | Я бу́ду рабо́тать
 answer=Я порабо́таю три ча́са
-feedback=Does this answer show the bounded future? Я порабо́таю три ча́са.
+feedback=Я порабо́таю три ча́са is the bounded future example here: the perfective verb presents a limited stretch of work, and the line states three hours. Я бу́ду рабо́тать is the supplied auxiliary-plus-imperfective future without that stated duration. The limit describes this work period, not necessarily completion of a task. A definite time period does not by itself force perfective aspect.
 objectiveId=obj-u14-future-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the bounded future?
+distractorRationales= | Я бу́ду рабо́тать is the supplied imperfective future option without the three-hour limit stated in the other line; it does not match this bounded future example.
 testedFeature=BOUNDED_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-future-aspect-1
@@ -1094,8 +1186,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u14-future-aspect-3-ru
 distractorSourceIds= | prov-ex-u14-future-aspect-2-ru
-distractorDifference= | Does this row fail the bounded future?
-whyAnswerDemonstratesObjective=Does this answer show the bounded future?
+distractorDifference= | Я бу́ду рабо́тать is the supplied imperfective future option without the three-hour limit stated in the other line; it does not match this bounded future example.
+whyAnswerDemonstratesObjective=Я порабо́таю три ча́са is the bounded future example here: the perfective verb presents a limited stretch of work, and the line states three hours. Я бу́ду рабо́тать is the supplied auxiliary-plus-imperfective future without that stated duration. The limit describes this work period, not necessarily completion of a task. A definite time period does not by itself force perfective aspect.
 contrastMembers=Я порабо́таю три ча́са | Я бу́ду рабо́тать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-future-aspect-3-en | prov-ex-u14-future-aspect-3-ru | prov-ex-u14-future-aspect-2-ru
@@ -1109,7 +1201,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 330c6354b709907cffb4d28545e7d6635d1ff925c1fa85077784d695c95e9fa3
+- Content hash: 27ee29b4b7f9e0d552a531040e9e22004787731efdc9781f995592dc54c0884c
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1117,11 +1209,11 @@ prompt=Which admitted line is the unbounded future?
 promptLetter=I will speak
 options=Я бу́ду говори́ть | Я поговорю три́дцать мину́т
 answer=Я бу́ду говори́ть
-feedback=Does this answer show the unbounded future? Я бу́ду говори́ть.
+feedback=Я бу́ду говори́ть is the unbounded future example in this pair: the future auxiliary plus imperfective infinitive presents speaking without a stated duration. Я поговорю три́дцать мину́т presents a limited stretch and states thirty minutes. Unbounded here describes the supplied option; it does not mean the activity lasts forever or that imperfective future can never have a duration.
 objectiveId=obj-u14-future-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the unbounded future?
+distractorRationales= | Я поговорю три́дцать мину́т is the bounded future option with a stated thirty-minute limit, rather than the unbounded future example requested here.
 testedFeature=UNBOUNDED_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-future-aspect-2
@@ -1129,8 +1221,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u14-future-aspect-0-ru
 distractorSourceIds= | prov-ex-u14-future-aspect-1-ru
-distractorDifference= | Does this row fail the unbounded future?
-whyAnswerDemonstratesObjective=Does this answer show the unbounded future?
+distractorDifference= | Я поговорю три́дцать мину́т is the bounded future option with a stated thirty-minute limit, rather than the unbounded future example requested here.
+whyAnswerDemonstratesObjective=Я бу́ду говори́ть is the unbounded future example in this pair: the future auxiliary plus imperfective infinitive presents speaking without a stated duration. Я поговорю три́дцать мину́т presents a limited stretch and states thirty minutes. Unbounded here describes the supplied option; it does not mean the activity lasts forever or that imperfective future can never have a duration.
 contrastMembers=Я бу́ду говори́ть | Я поговорю три́дцать мину́т
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-future-aspect-0-en | prov-ex-u14-future-aspect-0-ru | prov-ex-u14-future-aspect-1-ru
@@ -1144,7 +1236,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7c58d7ec511bbdeeeea08fb6d8c593c6d74f612b72ab34d9c54ff6af45dd0f3a
+- Content hash: 3d507e976b353d20f84f625b8fb3fb29f8ceb87c6b1f8d9d227bed7184fc724f
 
 kind=FORM_SELECTION
 language=en
@@ -1152,11 +1244,11 @@ prompt=Which admitted row is the third-person plural future?
 promptLetter=ска́жет
 options=ска́жут | скажу́
 answer=ска́жут
-feedback=Does this answer show the third-person plural future? ска́жут.
+feedback=ска́жут is the third-person plural future form of this perfective verb, used with they. скажу́ is first-person singular, used with I. The cue shows third-person singular, but the question asks for third-person plural of the same verb. These forms refer to future events, not events already completed.
 objectiveId=obj-u14-future-person
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the third-person plural future?
+distractorRationales= | скажу́ is first-person singular future, not the requested third-person plural future.
 testedFeature=THIRD_PERSON_PLURAL_FUTURE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u14-future-person-1
@@ -1164,8 +1256,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u14-future-person-4
 distractorSourceIds= | prov-ex-or-u14-future-person-2
-distractorDifference= | Does this row fail the third-person plural future?
-whyAnswerDemonstratesObjective=Does this answer show the third-person plural future?
+distractorDifference= | скажу́ is first-person singular future, not the requested third-person plural future.
+whyAnswerDemonstratesObjective=ска́жут is the third-person plural future form of this perfective verb, used with they. скажу́ is first-person singular, used with I. The cue shows third-person singular, but the question asks for third-person plural of the same verb. These forms refer to future events, not events already completed.
 contrastMembers=ска́жут | скажу́
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u14-future-person-3 | prov-ex-or-u14-future-person-4 | prov-ex-or-u14-future-person-2
@@ -1179,7 +1271,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c94fdddf95048a31817cee8cb81124e145a83d6c36d3997a47551e4d7a9cbdee
+- Content hash: 0a4435c3b93ee6c63920d7bbac2b35e9b15c6abd27e66a910324117d75c161e2
 
 kind=FORM_SELECTION
 language=en
@@ -1187,11 +1279,11 @@ prompt=Which admitted line is the first-person singular future?
 promptLetter=I will be speaking
 options=Я бу́ду говори́ть | Мы бу́дем говори́ть
 answer=Я бу́ду говори́ть
-feedback=Does this answer show the first-person singular future? Я бу́ду говори́ть.
+feedback=Я бу́ду говори́ть is first-person singular future: the subject means I, and the auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. Both use the same imperfective infinitive after the future auxiliary; choose singular agreement.
 objectiveId=obj-u14-future-person
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the first-person singular future?
+distractorRationales= | Мы бу́дем говори́ть is first-person plural future, not the first-person singular future requested here.
 testedFeature=FIRST_PERSON_SINGULAR_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-future-person-2
@@ -1199,8 +1291,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u14-future-person-0-ru
 distractorSourceIds= | prov-ex-u14-future-person-1-ru
-distractorDifference= | Does this row fail the first-person singular future?
-whyAnswerDemonstratesObjective=Does this answer show the first-person singular future?
+distractorDifference= | Мы бу́дем говори́ть is first-person plural future, not the first-person singular future requested here.
+whyAnswerDemonstratesObjective=Я бу́ду говори́ть is first-person singular future: the subject means I, and the auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. Both use the same imperfective infinitive after the future auxiliary; choose singular agreement.
 contrastMembers=Я бу́ду говори́ть | Мы бу́дем говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-future-person-0-en | prov-ex-u14-future-person-0-ru | prov-ex-u14-future-person-1-ru
@@ -1214,7 +1306,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a8403c05cebcd6b81f6a50cae165daef80ce2a53cf0a22cf1053bddb5b532266
+- Content hash: 0183c243a4e7b0382472ce0529ae796df1a8e887a97d832a96b3579baa1c4207
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1222,11 +1314,11 @@ prompt=Which admitted line is the impersonal past for more than one bored person
 promptLetter=They were bored
 options=Им было скучно | Ему было холодно
 answer=Им было скучно
-feedback=Does this answer show the impersonal past? Им было скучно.
+feedback=Им было скучно is the impersonal past example meaning they were bored: the experiencers are dative plural, but the verb remains neuter singular. Ему было холодно describes one male experiencer who was cold. Both options are impersonal past; plural experiencers do not turn the verb into a plural form in this construction.
 objectiveId=obj-u14-impersonal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the impersonal past?
+distractorRationales= | Ему было холодно is also impersonal past, but it describes one male experiencer who was cold, not the plural bored experiencers requested here.
 testedFeature=IMPERSONAL_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-impersonal-1
@@ -1234,8 +1326,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u14-impersonal-1-ru
 distractorSourceIds= | prov-ex-u14-impersonal-0-ru
-distractorDifference= | Does this row fail the impersonal past?
-whyAnswerDemonstratesObjective=Does this answer show the impersonal past?
+distractorDifference= | Ему было холодно is also impersonal past, but it describes one male experiencer who was cold, not the plural bored experiencers requested here.
+whyAnswerDemonstratesObjective=Им было скучно is the impersonal past example meaning they were bored: the experiencers are dative plural, but the verb remains neuter singular. Ему было холодно describes one male experiencer who was cold. Both options are impersonal past; plural experiencers do not turn the verb into a plural form in this construction.
 contrastMembers=Им было скучно | Ему было холодно
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-impersonal-1-en | prov-ex-u14-impersonal-1-ru | prov-ex-u14-impersonal-0-ru
@@ -1249,7 +1341,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2fdcfd8f0cb5a84dbcddc3d9ec5555152f517f5473750aef1868d1076f51c6f9
+- Content hash: 34934fd9c608dfae80a5238a921331ac1a7d243126f70491fafcbe5f2b1c9966
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1257,11 +1349,11 @@ prompt=Which admitted line is the impersonal past for one woman who was cold?
 promptLetter=she was cold
 options=ей было холодно | Ему было холодно
 answer=ей было холодно
-feedback=Does this answer show the impersonal past? ей было холодно.
+feedback=ей было холодно is the impersonal past example meaning she was cold: the experiencer is feminine dative singular, while the verb remains neuter singular. Ему было холодно is the supplied he was cold example with a masculine dative experiencer. Both options are impersonal past; the woman in the question changes the experiencer pronoun, not the verb to feminine agreement.
 objectiveId=obj-u14-impersonal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the impersonal past?
+distractorRationales= | Ему было холодно is also impersonal past, but the supplied example refers to a male experiencer, not the woman requested here.
 testedFeature=IMPERSONAL_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u14-impersonal-2
@@ -1269,8 +1361,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u14-impersonal-2-ru
 distractorSourceIds= | prov-u14-impersonal-x-0
-distractorDifference= | Does this row fail the impersonal past?
-whyAnswerDemonstratesObjective=Does this answer show the impersonal past?
+distractorDifference= | Ему было холодно is also impersonal past, but the supplied example refers to a male experiencer, not the woman requested here.
+whyAnswerDemonstratesObjective=ей было холодно is the impersonal past example meaning she was cold: the experiencer is feminine dative singular, while the verb remains neuter singular. Ему было холодно is the supplied he was cold example with a masculine dative experiencer. Both options are impersonal past; the woman in the question changes the experiencer pronoun, not the verb to feminine agreement.
 contrastMembers=ей было холодно | Ему было холодно
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u14-impersonal-2-en | prov-ex-u14-impersonal-2-ru | prov-u14-impersonal-x-0
@@ -1293,6 +1385,576 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=11
 searchTerms=units 11-15 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-14-57`
+
+- Objectives: obj-u14-impersonal
+- Sessions: u14-s-orient, u14-s-impersonal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 507e4b855d067d8abccc382b01364ae0e26b4c30ccab92be4fd3ca5f88d76ea7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-impersonal:u14-st-teach-impersonal-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-g-future-aspect-0`
+
+- Objectives: obj-u14-future-aspect
+- Sessions: u14-s-orient, u14-s-future-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e809ba4295a88432b5e0c83aef2edb828880be8fa429064d41c0f97548717e37
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-aspect:feedback:u14-g-future-aspect-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я поговорю три́дцать мину́т is the bounded future example here: its perfective verb presents a limited stretch of speaking, and the line states thirty minutes. Я бу́ду говори́ть uses a future auxiliary and imperfective infinitive without a stated duration in this option. Both refer to the future, not to an event already completed. A stated duration does not automatically require perfective aspect in every sentence.
+shippedText=Я поговорю три́дцать мину́т is the bounded future example here: its perfective verb presents a limited stretch of speaking, and the line states thirty minutes. Я бу́ду говори́ть uses a future auxiliary and imperfective infinitive without a stated duration in this option. Both refer to the future, not to an event already completed. A stated duration does not automatically require perfective aspect in every sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a198bda5f10767eb2b54cb1baa840735117908ccd485d30f01c721a1e3cd5d61
+contentHash=b0bd0439f0eeaf41f439659a1c618d4cdd1974b24428e3ad710a4e83fc03c18b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-g-future-aspect-0-distractor-1`
+
+- Objectives: obj-u14-future-aspect
+- Sessions: u14-s-orient, u14-s-future-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 043260fc661f0bacd2aec512327b0914df019a3d182700fc953e8bf79ea063b1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-aspect:feedback:u14-g-future-aspect-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я бу́ду говори́ть is the supplied imperfective future option without the thirty-minute limit stated in the other line; it does not match this bounded future example.
+shippedText=Я бу́ду говори́ть is the supplied imperfective future option without the thirty-minute limit stated in the other line; it does not match this bounded future example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=01c37be359caa213aeae345ab80f3be75c092dcc68aacda13dcfd81d9db90174
+contentHash=3ef855982784fdb1faf8d5545078d9c9b1eb57ac38e10e255c76486aea222454
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-g-future-person-0`
+
+- Objectives: obj-u14-future-person
+- Sessions: u14-s-orient, u14-s-future-person
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f38afb83084c21d5e41061f3bc5f304cfcbf8f6f85b020ce1dd8eb0b95560cf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-person:feedback:u14-g-future-person-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Мы бу́дем говори́ть is first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. The imperfective infinitive stays the same; the subject and auxiliary distinguish the number requested.
+shippedText=Мы бу́дем говори́ть is first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. The imperfective infinitive stays the same; the subject and auxiliary distinguish the number requested.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aea338c079f94cbc6dbf3199bf93033dd75233c43dfc93d242466f501520d393
+contentHash=742194707263af34ea8a92e5ba76ab0eca61a643cc1ce809f7791cae6e531d71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-g-future-person-0-distractor-1`
+
+- Objectives: obj-u14-future-person
+- Sessions: u14-s-orient, u14-s-future-person
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d080201cb7943f29717d1c943538cb499c6e8fa3ccfef6060fd5fcc2f6de6da0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-person:feedback:u14-g-future-person-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я бу́ду говори́ть is first-person singular future, not the first-person plural future requested here.
+shippedText=Я бу́ду говори́ть is first-person singular future, not the first-person plural future requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad1243d705aaba9262f8e37158d02127361780df6ec528cb8017a91bd7bdcc0e
+contentHash=ee258daf3f78f414a523785fac40e60d59ee79186bd58f5dc6c7230fdce3aaae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-g-impersonal-0`
+
+- Objectives: obj-u14-impersonal
+- Sessions: u14-s-orient, u14-s-impersonal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0210cc81e5987d84976fb1f950cfc1cc7bdba59071fe67be8508f437c0dabf50
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-impersonal:feedback:u14-g-impersonal-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Ему было холодно is the impersonal past example meaning he was cold: the experiencer is dative singular, while the verb is neuter singular. Им было скучно describes plural experiencers who were bored. Both options are impersonal past and keep the same neuter singular verb; the requested person and state distinguish them.
+shippedText=Ему было холодно is the impersonal past example meaning he was cold: the experiencer is dative singular, while the verb is neuter singular. Им было скучно describes plural experiencers who were bored. Both options are impersonal past and keep the same neuter singular verb; the requested person and state distinguish them.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=424578a90719ab3a9cbcd243594533f91998310bbbfb5f6301de22751baf71e1
+contentHash=e42fd1204f2f33c267a29da1f4dad672b261127f9dd9c7bb063127b4560c6fb0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-g-impersonal-0-distractor-1`
+
+- Objectives: obj-u14-impersonal
+- Sessions: u14-s-orient, u14-s-impersonal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e77794075d7e08c3ce6ec0d9f419c6fe14231cacc23929d3c2ab2686641ce25f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-impersonal:feedback:u14-g-impersonal-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Им было скучно is also impersonal past, but it describes plural experiencers who were bored, not the singular cold person requested here.
+shippedText=Им было скучно is also impersonal past, but it describes plural experiencers who were bored, not the singular cold person requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c459620cd114d2fab4d958434937c0288dec5560402537954062fd2a284f24d2
+contentHash=eac2dae340a3c6d40130f9b3bc646c87909164f5f5991f2f9608500107df3317
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-future-aspect-1`
+
+- Objectives: obj-u14-future-aspect
+- Sessions: u14-s-orient, u14-s-future-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9422293cc2b78b90120a6915730778fb18bb2652787ac5f038c1cef575eb49b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-aspect:feedback:u14-i-future-aspect-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я порабо́таю три ча́са is the bounded future example here: the perfective verb presents a limited stretch of work, and the line states three hours. Я бу́ду рабо́тать is the supplied auxiliary-plus-imperfective future without that stated duration. The limit describes this work period, not necessarily completion of a task. A definite time period does not by itself force perfective aspect.
+shippedText=Я порабо́таю три ча́са is the bounded future example here: the perfective verb presents a limited stretch of work, and the line states three hours. Я бу́ду рабо́тать is the supplied auxiliary-plus-imperfective future without that stated duration. The limit describes this work period, not necessarily completion of a task. A definite time period does not by itself force perfective aspect.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=98e249b8367c2fb4cae44658baf6c064308739f1fb54e29bb751eeca85cb543f
+contentHash=dc5295ae2da7cd60fce7f0cf8cd287f59d22687a1f430d78282f41a78689bd95
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-future-aspect-1-distractor-1`
+
+- Objectives: obj-u14-future-aspect
+- Sessions: u14-s-orient, u14-s-future-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83f2df920f9d04ccbfaa9af358b693ccde5a8cfc54246f5cb97517f636257672
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-aspect:feedback:u14-i-future-aspect-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я бу́ду рабо́тать is the supplied imperfective future option without the three-hour limit stated in the other line; it does not match this bounded future example.
+shippedText=Я бу́ду рабо́тать is the supplied imperfective future option without the three-hour limit stated in the other line; it does not match this bounded future example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79dbaba816858dc0b7517e62bb9dc3fa207d2d1d803b9028f509335f31fbe456
+contentHash=8daacf2748f32b1530222cbded79f4ace1dfbed93fc9692538a8c70113caa51a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-future-aspect-2`
+
+- Objectives: obj-u14-future-aspect
+- Sessions: u14-s-orient, u14-s-future-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa8c4e2d55cbf41900cd9bcc4c9cdb7e202b514649f173d22cc2722133027cc9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-aspect:feedback:u14-i-future-aspect-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я бу́ду говори́ть is the unbounded future example in this pair: the future auxiliary plus imperfective infinitive presents speaking without a stated duration. Я поговорю три́дцать мину́т presents a limited stretch and states thirty minutes. Unbounded here describes the supplied option; it does not mean the activity lasts forever or that imperfective future can never have a duration.
+shippedText=Я бу́ду говори́ть is the unbounded future example in this pair: the future auxiliary plus imperfective infinitive presents speaking without a stated duration. Я поговорю три́дцать мину́т presents a limited stretch and states thirty minutes. Unbounded here describes the supplied option; it does not mean the activity lasts forever or that imperfective future can never have a duration.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=215726912c0b14db6bcc88cb302d71d03ba52c52aead7167c126563a41f3b77d
+contentHash=d87d47a02f63d2df2558f184f8147fd1c244c9bd90e8bc55fbe03fc7e638666f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-future-aspect-2-distractor-1`
+
+- Objectives: obj-u14-future-aspect
+- Sessions: u14-s-orient, u14-s-future-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a2464bbf09f6d527b92683579382bf76f2da561774b7a9c8db1766ae928302ee
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-aspect:feedback:u14-i-future-aspect-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я поговорю три́дцать мину́т is the bounded future option with a stated thirty-minute limit, rather than the unbounded future example requested here.
+shippedText=Я поговорю три́дцать мину́т is the bounded future option with a stated thirty-minute limit, rather than the unbounded future example requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2c794c770dd5fddd17d4365b27b9576b720e8522384c198c0b5cb12c81d1c72a
+contentHash=06c11169beab711e454121bd7db0e9fa2f2cfe73b31e2b6b18fcf777a46f8871
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-future-person-1`
+
+- Objectives: obj-u14-future-person
+- Sessions: u14-s-orient, u14-s-future-person
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b0fa8f283b44de509f9e060d1bd4c62c2c25e5759f2cce1d1756dc91722e883
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-person:feedback:u14-i-future-person-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+ска́жут is the third-person plural future form of this perfective verb, used with they. скажу́ is first-person singular, used with I. The cue shows third-person singular, but the question asks for third-person plural of the same verb. These forms refer to future events, not events already completed.
+shippedText=ска́жут is the third-person plural future form of this perfective verb, used with they. скажу́ is first-person singular, used with I. The cue shows third-person singular, but the question asks for third-person plural of the same verb. These forms refer to future events, not events already completed.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a997da512f9b44d603d6bbe3381bb213d7f61c3abea7cafa254fb2c803f177dd
+contentHash=604df316520d77cd6ff1fd683762fcec5cc6c6219c46fafae95d98f89d3bd743
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-future-person-1-distractor-1`
+
+- Objectives: obj-u14-future-person
+- Sessions: u14-s-orient, u14-s-future-person
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 422bf1b17832593dfc15e3c6e8e9d53546df8a337ea405cbe666b63b43e4f365
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-person:feedback:u14-i-future-person-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+скажу́ is first-person singular future, not the requested third-person plural future.
+shippedText=скажу́ is first-person singular future, not the requested third-person plural future.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2187452e4999447310bff30cce929baeb7905f14b3147cc614d70984af5ba4f8
+contentHash=62f7dd3f6974ca44712109af87c3cec0723102a42ac43146d2cf6c0bc43a1170
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-future-person-2`
+
+- Objectives: obj-u14-future-person
+- Sessions: u14-s-orient, u14-s-future-person
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce6675a7be43987c74ff1df23691d95214779eec108f9481d49ed17b93f206f5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-person:feedback:u14-i-future-person-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я бу́ду говори́ть is first-person singular future: the subject means I, and the auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. Both use the same imperfective infinitive after the future auxiliary; choose singular agreement.
+shippedText=Я бу́ду говори́ть is first-person singular future: the subject means I, and the auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. Both use the same imperfective infinitive after the future auxiliary; choose singular agreement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c242b4a84e2bd5d983bf6d4e085856d0e177615d377f73bd6fb2c6133249d7f2
+contentHash=cbbde0f854b59fc948cb6cf9c5d0b0213aec239406879e769b49ac365d691ea1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-future-person-2-distractor-1`
+
+- Objectives: obj-u14-future-person
+- Sessions: u14-s-orient, u14-s-future-person
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca635f4a08ee299da1b34ea08141151b25132c61893414ac6c3d2ffb38f41e26
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-future-person:feedback:u14-i-future-person-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Мы бу́дем говори́ть is first-person plural future, not the first-person singular future requested here.
+shippedText=Мы бу́дем говори́ть is first-person plural future, not the first-person singular future requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80ac942e269c2ba182ecd13708044c1c064414e6a0c04e25428daa46b52d668f
+contentHash=5e01b29b83a82a9d2416048ffdfd89db1f8c9e6b5142d61df08bce8cd871773d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-impersonal-1`
+
+- Objectives: obj-u14-impersonal
+- Sessions: u14-s-orient, u14-s-impersonal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb4bb8142d344da13662f1061690ab6fb7febfc2c61769fb25c830c30d10e01a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-impersonal:feedback:u14-i-impersonal-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Им было скучно is the impersonal past example meaning they were bored: the experiencers are dative plural, but the verb remains neuter singular. Ему было холодно describes one male experiencer who was cold. Both options are impersonal past; plural experiencers do not turn the verb into a plural form in this construction.
+shippedText=Им было скучно is the impersonal past example meaning they were bored: the experiencers are dative plural, but the verb remains neuter singular. Ему было холодно describes one male experiencer who was cold. Both options are impersonal past; plural experiencers do not turn the verb into a plural form in this construction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a8085f55c25906a36ed943c4e54773dcd23085a409b66dd25ef930e7fa330889
+contentHash=114abf4b14b859b5ce7590d08dd968f36a0ed1e9f9d5240af1e98dfaa8dffb22
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-impersonal-1-distractor-1`
+
+- Objectives: obj-u14-impersonal
+- Sessions: u14-s-orient, u14-s-impersonal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58f2fa17f0bfa0d51be178567deaaea51522057d058b332a6b8e23c4b825c917
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-impersonal:feedback:u14-i-impersonal-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Ему было холодно is also impersonal past, but it describes one male experiencer who was cold, not the plural bored experiencers requested here.
+shippedText=Ему было холодно is also impersonal past, but it describes one male experiencer who was cold, not the plural bored experiencers requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dd64eeb519fc8e7994d185ba4d9d188eefdbb80ec88db45452b4f01773f3918f
+contentHash=386581632f0e036d49fbbc26271335b957357a2f08f6473a907b473a2ab018f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-impersonal-2`
+
+- Objectives: obj-u14-impersonal
+- Sessions: u14-s-orient, u14-s-impersonal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44f4ae1746584a26c1f96c765c9aad6a151a76cb899145233d57dc075b79bb38
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-impersonal:feedback:u14-i-impersonal-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+ей было холодно is the impersonal past example meaning she was cold: the experiencer is feminine dative singular, while the verb remains neuter singular. Ему было холодно is the supplied he was cold example with a masculine dative experiencer. Both options are impersonal past; the woman in the question changes the experiencer pronoun, not the verb to feminine agreement.
+shippedText=ей было холодно is the impersonal past example meaning she was cold: the experiencer is feminine dative singular, while the verb remains neuter singular. Ему было холодно is the supplied he was cold example with a masculine dative experiencer. Both options are impersonal past; the woman in the question changes the experiencer pronoun, not the verb to feminine agreement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f5062e95e12541ff2f844f085e61b278fca96e6c48a74bfd39083c76535deff6
+contentHash=a7c3e38d1c494ba7a758055d9955a46a63885b453091924f80771182fcccf194
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u14-feedback-u14-i-impersonal-2-distractor-1`
+
+- Objectives: obj-u14-impersonal
+- Sessions: u14-s-orient, u14-s-impersonal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e5ef6366ea6efe319fa877a3cf41723715304abe0b8049e2e6287fc807547dc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u14-impersonal:feedback:u14-i-impersonal-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Imperfective or Perfective speaking/working duration examples and imperfective/perfective future tables; Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Imperfective past process/duration and impersonal cold/bored state contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction process/completed-action observation and Multi-aspect period-of-time context; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Personal pronouns singular/plural and feminine/masculine/neuter qualification. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: говорить/работать/поговорить/поработать/сказать/быть aspect, поговорить/поработать presfut_sg1, сказать presfut_sg3/presfut_pl3/presfut_sg1 and быть past_n. Bounded/unbounded labels describe the supplied examples, not a rule that every definite duration requires perfective aspect or that an imperfective action lasts forever. Future perfective does not mean an event has already occurred, and the selected limited stretch does not entail a finished task. Both impersonal options are grammatical impersonal past: dative experiencer person/gender/number and cold/bored state distinguish the requested example, while the verb remains neuter singular. Source overgeneralizations about finite-duration aspect and erroneous perfective classification of being are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Ему было холодно is also impersonal past, but the supplied example refers to a male experiencer, not the woman requested here.
+shippedText=Ему было холодно is also impersonal past, but the supplied example refers to a male experiencer, not the woman requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7599de58e64dc1793843c94f496d1a2aea3f2ba26a7f4c01320aed5aa2012565
+contentHash=3cdfbd51bb49282e9a00f9c4ecd438bc797b841d4e5fc7159945a8d31f683f53
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u14-future-person-2`
 
@@ -2252,6 +2914,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-14-11204`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d7e5a5e5fafdcd48ee458bb2fbb4c4cdaa27447eb33316f8cdc6c21260f4be7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 14 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-14-11205`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9cc98f11f80d6a1eea4decc744ff580fff813ab93fee5ab442da8952772fbc4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-14-11206`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ba9d45adb79870bcda5587ede62a6862d43dbe6379bfa706b83dcc801d21beb7
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 14 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-14-11207`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14c1af4e5031a51f25e45488dd7041b590d613c5ee18c5422dd06e82c24c95c2
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-14-11208`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ccd4fe4808dcbb19809e941e7b3f902a11e4ccc9c8c34d8494c9c9e84d28675
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 14 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-14-11209`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a929dab36de5489a2bfb6b50a9d23b69c452f4dba31ea97f06c6999de46c2da
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-14-11210`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b7cda4245c8f416466d50a9c677923db0d8fd48c71184095110a25a329caebd
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 14 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-14-54`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4529ad47c4dd5a941a10bcea880d7f5925d78bafcf143c5ad467aba575b9218f
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 14: printed pages 162-170. PDF indexes 174-182 are file locators, not printed pages. Observed section locators: §14.1 p162 (PDF 174); §14.2 p162 (PDF 174); §14.3 p163 (PDF 175); §14.4 p163 (PDF 175); §14.5 p165 (PDF 177); §14.6 p165 (PDF 177); §14.7 p168 (PDF 180); §14.8 p169 (PDF 181). Observed exercise locators: 14/1 p163/PDF175; 14/2 p164/PDF176; 14/3 p168/PDF180; 14/4 p169/PDF181. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-14-55`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4086df712557d0adf330b91cb958f017d5132b995d4042ee99a287868fa6b23b
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 14 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-14-56`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5094e5a2c8b7ac938cd758b6417edcd32b634a4c7ead2df038278cadfbe1029
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u14-126`
 
 - Objectives: none
@@ -2750,6 +3542,21 @@ CC BY-SA 4.0
 Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 Selected rows, stress-mark formatting, and beginner sense selection. No generated forms.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -2791,6 +3598,20 @@ permitsAppUse=true
 
 src-openrussian-50e210c4
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -2890,19 +3711,40 @@ permitsAppUse=true
 - `u14-st-teach-impersonal-1` EXAMPLE `ex-u14-impersonal-0`
 - `u14-st-teach-impersonal-1` EXAMPLE `ex-u14-impersonal-1`
 - `u14-st-teach-impersonal-1` REFERENCE `ref-u1115-attribution`
-- `u14-st-guided-impersonal-1` REMEDIATION `u14-st-rem-impersonal`
-- `u14-st-guided-impersonal-1` ITEM `u14-g-impersonal-0`
 - `u14-st-teach-impersonal-2` REFERENCE `ref-u1115-attribution`
 - `u14-st-teach-impersonal-3` EXAMPLE `ex-u14-impersonal-2`
 - `u14-st-teach-impersonal-3` EXAMPLE `ex-or-u14-impersonal-3`
 - `u14-st-teach-impersonal-3` REFERENCE `ref-u1115-attribution`
+- `u14-st-guided-impersonal-1` REMEDIATION `u14-st-rem-impersonal`
+- `u14-st-guided-impersonal-1` ITEM `u14-g-impersonal-0`
 - `u14-st-rem-impersonal` EXAMPLE `ex-u14-impersonal-0`
 - `u14-st-rem-impersonal` EXAMPLE `ex-u14-impersonal-1`
+- `u14-st-rem-impersonal` EXAMPLE `ex-u14-impersonal-2`
+- `u14-st-rem-impersonal` EXAMPLE `ex-or-u14-impersonal-3`
 - `u14-st-check-impersonal` REMEDIATION `u14-st-rem-impersonal`
 - `u14-st-check-impersonal` ITEM `u14-i-impersonal-1`
 - `u14-st-check-impersonal` ITEM `u14-i-impersonal-2`
 - `u14-s-book` OBJECTIVE `obj-u14-book`
 - `u14-st-book-work` REFERENCE `ref-u1115-attribution`
+- `obj-u14-impersonal` PROVENANCE `prov-ca-14-57`
+- `obj-u14-future-aspect` PROVENANCE `prov-ca-u14-feedback-u14-g-future-aspect-0`
+- `obj-u14-future-aspect` PROVENANCE `prov-ca-u14-feedback-u14-g-future-aspect-0-distractor-1`
+- `obj-u14-future-person` PROVENANCE `prov-ca-u14-feedback-u14-g-future-person-0`
+- `obj-u14-future-person` PROVENANCE `prov-ca-u14-feedback-u14-g-future-person-0-distractor-1`
+- `obj-u14-impersonal` PROVENANCE `prov-ca-u14-feedback-u14-g-impersonal-0`
+- `obj-u14-impersonal` PROVENANCE `prov-ca-u14-feedback-u14-g-impersonal-0-distractor-1`
+- `obj-u14-future-aspect` PROVENANCE `prov-ca-u14-feedback-u14-i-future-aspect-1`
+- `obj-u14-future-aspect` PROVENANCE `prov-ca-u14-feedback-u14-i-future-aspect-1-distractor-1`
+- `obj-u14-future-aspect` PROVENANCE `prov-ca-u14-feedback-u14-i-future-aspect-2`
+- `obj-u14-future-aspect` PROVENANCE `prov-ca-u14-feedback-u14-i-future-aspect-2-distractor-1`
+- `obj-u14-future-person` PROVENANCE `prov-ca-u14-feedback-u14-i-future-person-1`
+- `obj-u14-future-person` PROVENANCE `prov-ca-u14-feedback-u14-i-future-person-1-distractor-1`
+- `obj-u14-future-person` PROVENANCE `prov-ca-u14-feedback-u14-i-future-person-2`
+- `obj-u14-future-person` PROVENANCE `prov-ca-u14-feedback-u14-i-future-person-2-distractor-1`
+- `obj-u14-impersonal` PROVENANCE `prov-ca-u14-feedback-u14-i-impersonal-1`
+- `obj-u14-impersonal` PROVENANCE `prov-ca-u14-feedback-u14-i-impersonal-1-distractor-1`
+- `obj-u14-impersonal` PROVENANCE `prov-ca-u14-feedback-u14-i-impersonal-2`
+- `obj-u14-impersonal` PROVENANCE `prov-ca-u14-feedback-u14-i-impersonal-2-distractor-1`
 - `obj-u14-future-person` PROVENANCE `prov-ex-or-u14-future-person-2`
 - `obj-u14-future-person` PROVENANCE `prov-ex-or-u14-future-person-2-gloss`
 - `obj-u14-future-person` PROVENANCE `prov-ex-or-u14-future-person-3`

@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.v2.curriculum.CompleteRuleContextPins
+import dev.russiancompanion.v2.curriculum.Unit21ObjectPins
 import dev.russiancompanion.v2.curriculum.BatchBSources
 import dev.russiancompanion.v2.curriculum.GovernedSourceAdmission
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
@@ -10,6 +12,7 @@ import dev.russiancompanion.v2.curriculum.V2ProvenanceRecord
 import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -166,11 +169,13 @@ class BatchBUnits2125Test {
         assertNull(V2Validator.classifyRelation(isolated, myself, listOf(wifeGloss)))
         assertTrue(pack.items.none { it.promptLetter == BatchBSources.ISOLATED_REFLEXIVE })
 
-        val selfItem = pack.items.single {
-            it.objectiveId == "obj-u21-object-reference" &&
-                it.promptLetter == BatchBSources.SELF_SENTENCE &&
-                it.assessment?.independent == true
-        }
+        // Citation validation applies to the retained current guided sentence too.
+        // The independent slot now tests a distinct supplied reflexive context.
+        val selfItem = pack.items.single { it.id == "u21-g-object-reference-0" }
+        assertEquals("obj-u21-object-reference", selfItem.objectiveId)
+        assertEquals(BatchBSources.SELF_SENTENCE, selfItem.promptLetter)
+        assertEquals("CONTRAST_SELECTION", selfItem.kind)
+        assertEquals(false, selfItem.assessment!!.independent)
         val assessment = checkNotNull(selfItem.assessment)
         val why = assessment.whyAnswerDemonstratesObjective
         assertTrue(why, why.contains(BatchBSources.SELF_LINE_CITE))
@@ -188,6 +193,33 @@ class BatchBUnits2125Test {
         ).errors.joinToString("\n")
         assertTrue(swapped, swapped.contains("wife-line citation does not validate the self relationship"))
         assertTrue(swapped, swapped.contains("self relationship citation is not the self line"))
+    }
+
+    @Test
+    fun retainedCitationDonorStaysExactWhileIndependentObjectTransferKeepsItsRealContext() {
+        val live = pack()
+        val process = ProcessBuilder("git", "show",
+            "6434cd12cdb22d0bbf6f7f848191d46b46501fca:app/src/main/assets/content/v2-curriculum.json")
+            .directory(repo()).start()
+        val historical = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
+        assertEquals(0, process.waitFor())
+        for (id in listOf("u21-g-object-reference-0", "u21-i-object-reference-1")) {
+            assertEquals(id, historical.items.single { it.id == id }, live.items.single { it.id == id })
+        }
+        for (text in listOf(BatchBSources.SELF_SENTENCE, "I love myself", BatchBSources.WIFE_SENTENCE, "I love my wife")) {
+            assertEquals(shipped(historical, "obj-u21-object-reference", text), shipped(live, "obj-u21-object-reference", text))
+        }
+        val guided = live.items.single { it.id == "u21-g-object-reference-0" }
+        val independent = live.items.single { it.id == "u21-i-object-reference-2" }
+        assertEquals(true, independent.assessment!!.independent)
+        assertEquals("REFLEXIVE_MYSELF_SENTENCE", independent.assessment.testedFeature)
+        assertFalse(independent == historical.items.single { it.id == independent.id })
+        assertFalse(independent.promptLetter == guided.promptLetter)
+        assertTrue(Unit21ObjectPins.matches(live))
+        assertTrue(CompleteRuleContextPins.itemMatches(live, independent))
+        val natives = live.provenanceRecords.filter { it.itemId.startsWith("prov-u21-object-transfer-native-") }
+        assertEquals(4, natives.size)
+        assertTrue(natives.all { Unit21ObjectPins.admittedNative(it) })
     }
 
     @Test
@@ -773,7 +805,7 @@ class BatchBUnits2125Test {
         assertEquals(2, checks.count { it.assessment?.independent == true })
         assertTrue(checks.all { it.assessment!!.testedFeature == "DIMINUTIVE_FORM_CLASSIFICATION" })
         assertTrue(checks.all { BatchBSources.diminutiveClassificationLabel(it.answer) })
-        assertTrue(checks.all { it.prompt.contains("classifies") })
+        assertTrue(checks.all { Regex("(?i)\\bclassif(?:ies|ication)\\b").containsMatchIn(it.prompt) })
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).any { it.claim == "productive-diminutive" || it.claim == "documented-name-form" })
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(25)!!.readiness)
@@ -799,8 +831,11 @@ class BatchBUnits2125Test {
             bookAttestedUnits = setOf(25),
             completedUnitNumbers = emptySet(),
         )
-        val advanced = advancementDecision(pack, unit, preparedLearner)
+        val advanced = ordinaryUnitRequirements(pack, unit, preparedLearner)
         assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+        val full = advancementDecision(pack, unit, preparedLearner)
+        assertFalse(full.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
 
         val removed = pack.copy(
             sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "documented-name-form" },
@@ -816,6 +851,10 @@ class BatchBUnits2125Test {
         val flippedDecision = advancementDecision(removed, removed.unit(25)!!, preparedLearner)
         assertFalse(flippedDecision.allowed)
         assertTrue(flippedDecision.remaining.any { it.contains("documented-name-form") })
+        val ordinaryBlocked = ordinaryUnitRequirements(removed, removed.unit(25)!!, preparedLearner)
+        assertFalse(ordinaryBlocked.allowed)
+        assertTrue(ordinaryBlocked.remaining.any { it.contains("documented-name-form") })
+        assertEquals(ordinaryBlocked.remaining + "Complete the assigned earlier-objective review", flippedDecision.remaining)
 
         val bounded = pack.sourceCapabilities.single { it.supportedClaim == "diminutive-form-classification" }
         val relabeled = bounded.copy(supportedClaim = "productive-diminutive")
@@ -848,6 +887,9 @@ class BatchBUnits2125Test {
             admissions = pack.admissions.copy(penguinProseAssets = 9, generatedRussianWords = 4),
         )
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 25).any { it.claim == "productive-diminutive" || it.claim == "documented-name-form" })
+        val stampedErrors = V2Validator.validate(stamped).errors
+        assertTrue(stampedErrors.any { it.contains("Generated Russian words are forbidden") })
+        assertTrue(stampedErrors.any { it.contains("Penguin prose assets are forbidden") })
         val coOccurrence = overreach(
             pack,
             "productive diminutive co-occurrence",

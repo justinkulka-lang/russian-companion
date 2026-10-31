@@ -98,7 +98,8 @@ class Units2630StructuralMappingTest {
             assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
             assertEquals("UNRESOLVED", facts.isbnObservation)
             assertNull(facts.isbn)
-            assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
+            assertTrue(pack.ownedEditionMappings.filter { it.unitNumber == number }.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+            assertEquals(1, pack.ownedEditionMappings.count { it.unitNumber == number })
             val decision = advancementDecision(pack, unit, learner(number, book = true))
             assertFalse(decision.allowed)
             assertFalse(decision.remaining.any { it == "This unit is not prepared" })
@@ -118,14 +119,14 @@ class Units2630StructuralMappingTest {
     }
 
     @Test
-    fun packagedCurriculumOmitsUnits2630PageRanges() {
+    fun packagedCurriculumRecordsPendingPageRangesWithoutApprovingAssignments() {
         val root = repo()
         val curriculum = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
         val generator = File(root, "catalog/build_v2_curriculum.py").readText()
         val pack = pack()
         pages.forEach { (number, range) ->
             val unit = pack.unit(number)!!
-            assertFalse(curriculum.contains(range))
+            assertTrue(curriculum.contains(range))
             assertFalse(generator.contains(range))
             assertFalse(unit.mappingNote.contains(range))
             assertFalse(unit.title.contains(range))
@@ -276,10 +277,13 @@ class Units2630StructuralMappingTest {
                 number,
                 "CONTENT_COMPLETE_REVIEW_PENDING",
             )
-            val rangedDecision = advancementDecision(ranged, ranged.unit(number)!!, learner(number, book = true))
+            val rangedDecision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(ranged, ranged.unit(number)!!, learner(number, book = true))
             val rangedErrors = V2Validator.validate(ranged).errors
             assertTrue(rangedErrors.joinToString("\n"), rangedErrors.any { it.contains("structural page range is not linguistic evidence") })
             assertTrue(rangedDecision.remaining.joinToString("\n"), rangedDecision.allowed)
+            val rangedDecisionFull = advancementDecision(ranged, ranged.unit(number)!!, learner(number, book = true))
+            assertFalse(rangedDecisionFull.allowed)
+            assertEquals(listOf("The cumulative-review rule cannot be verified"), rangedDecisionFull.remaining)
             assertFalse(emptyDecision.remaining.any { it.contains("unresolved authority variance") })
             assertFalse(attestedDecision.remaining.any { it.contains("unresolved authority variance") })
             assertFalse(rangedDecision.remaining.any { it.contains("unresolved authority variance") })
@@ -297,9 +301,12 @@ class Units2630StructuralMappingTest {
             assertFalse(blocked.remaining.any { it.contains("not content-complete") })
             listOf("CONTENT_COMPLETE_REVIEW_PENDING", "INSTALLABLE").forEach { readiness ->
                 val prepared = permissiveAdvancement(pack, number, readiness)
-                val decision = advancementDecision(prepared, prepared.unit(number)!!, learner(number, book = false))
+                val decision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(prepared, prepared.unit(number)!!, learner(number, book = false))
                 assertFalse(decision.remaining.any { it == "This unit is not prepared" })
                 assertTrue("$number $readiness ${decision.remaining}", decision.allowed)
+                val decisionFull = advancementDecision(prepared, prepared.unit(number)!!, learner(number, book = false))
+                assertFalse(decisionFull.allowed)
+                assertEquals(listOf("The cumulative-review rule cannot be verified"), decisionFull.remaining)
                 assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
             }
         }
@@ -398,7 +405,21 @@ class Units2630StructuralMappingTest {
         assertEquals("", listed.trim())
         val curriculum = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(curriculum.contains("The New Penguin Russian Course"))
-        assertFalse(curriculum.contains(".pdf"))
+        // Bibliographic metadata does not redistribute the referenced PDF.
+        // Learner-facing PDF references and assets are also rejected by the source-intake test.
+        val cornellReference = "https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf"
+        val upuReference = "https://www.upu.int/UPU/media/upu/PostalEntitiesFiles/addressingUnit/rusEn.pdf"
+        assertFalse(curriculum.replace(cornellReference, "").replace(upuReference, "").contains(".pdf"))
+        assertTrue(pack.provenanceRecords.filter { it.originalSourceText.contains(upuReference) }.all {
+            it.itemId.startsWith("prov-ca-u26-postal-") && it.unitNumber == 26 &&
+                it.objectiveId == "obj-u26-postal-address" && it.sourceId == "src-content-audit-research"
+        })
+        assertTrue(pack.provenanceRecords.none { it.shippedText.contains(".pdf") })
+        assertTrue(pack.provenanceRecords.filter { it.originalSourceText.contains(cornellReference) }.all {
+            ((it.itemId.startsWith("prov-ca-u6-worked-") && it.unitNumber == 6 && it.objectiveId == "obj-u6-possessive") ||
+                (it.itemId.startsWith("prov-ca-u7-worked-") && it.unitNumber == 7 && it.objectiveId == "obj-u7-spelling")) &&
+                it.sourceId == "src-content-audit-research"
+        })
         assertEquals(0, pack.admissions.penguinProseAssets)
         assertEquals(0, pack.admissions.generatedRussianWords)
         val proposal = File(root, "docs/governance/UNITS_26_30_AUTHORITY_VARIANCE_PROPOSAL.md").readText()

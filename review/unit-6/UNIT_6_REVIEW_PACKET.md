@@ -11,12 +11,12 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: ae777d85fe3616fc8e065890201d40c241d113bc
-- Unit content-review SHA-256: fa6501022bd7ff4a2eca1e47c0ad488d96254cab0eafbecc61a8420835a3ab9c
+- Curriculum source commit: 53d9c292e1f32f204bdff2b09b8f10d02b6b28a6
+- Unit content-review SHA-256: b48de0c4df3d65c19eb8d8abef35bc7a2a8655884533aba7099d6cf97a301f10
 - Mapping-package SHA-256: f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 999f779ebea6e3bf9a1c887cc48d0944733214ff600e05cc01855187cc543e59
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: 7c1e6b5acef0a89d834d9c268f8e3bc14584917574ecafcc721ea94e61a1bbc1
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=102
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 85a665f92f48a20ffa80145ff9a567a59f696a7438f6e33f578705b045f5df59
+- Content hash: dc8d527fc3e53e2a819ecec02ca38f8af68002384ae8c111afd1be9d2b1155b1
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=18
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u6-possessive`
@@ -189,13 +189,13 @@ remediation=u6-st-rem-feminine
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b77269c4df329f03ef1884752e1ee9c3b2925286413f572f29a178d65922c4a6
+- Content hash: db869d2d86b627c340f2fa56c841daa19b4fb001a1b1208feebfa2d3621adbb0
 
-title=Choose the admitted animate or inanimate object form
+title=Recognize supplied masculine singular animate and inanimate accusatives
 kind=RECOGNITION
 unitNumber=6
 instruction=u6-st-orient,u6-st-teach-animacy-1,u6-st-teach-animacy-2,u6-st-teach-animacy-3,u6-st-teach-animacy-4,u6-st-teach-animacy-5,u6-st-teach-animacy-6
-examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1,ex-or-u6-animacy-2,ex-or-u6-animacy-3,ex-or-u6-animacy-4,ex-or-u6-animacy-5,ex-or-u6-animacy-6,ex-or-u6-animacy-7,ex-or-u6-animacy-8,ex-or-u6-animacy-9
+examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1,ex-or-u6-animacy-2,ex-or-u6-animacy-3,ex-or-u6-animacy-4,ex-or-u6-animacy-5,ex-or-u6-animacy-6,ex-or-u6-animacy-7,ex-or-u6-animacy-8,ex-or-u6-animacy-9,ex-u6-animacy-transfer-chair
 practice=u6-st-guided-animacy-1
 checks=u6-i-animacy-1,u6-i-animacy-2,u6-i-animacy-3
 remediation=u6-st-rem-animacy
@@ -302,12 +302,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1f665f525cf1a620f1b672d8c7ded41c840d516d7fb83886a53ea86ee851c238
+- Content hash: 74a5226ac5146add6528a1473bd5e3011e709c752ffcd6d25930dc67eefb7504
 
 title=Choose the admitted possessive form
 estimatedMinutes=12
 objectives=obj-u6-possessive
-steps=u6-st-teach-possessive-1,u6-st-guided-possessive-1,u6-st-teach-possessive-2,u6-st-teach-possessive-3,u6-st-teach-possessive-4,u6-st-teach-possessive-5,u6-st-teach-possessive-6,u6-st-rem-possessive,u6-st-check-possessive
+steps=u6-st-teach-possessive-1,u6-st-teach-possessive-2,u6-st-teach-possessive-3,u6-st-teach-possessive-4,u6-st-teach-possessive-5,u6-st-teach-possessive-6,u6-st-guided-possessive-1,u6-st-rem-possessive,u6-st-check-possessive
 
 ### STEP `u6-st-teach-possessive-1`
 
@@ -317,11 +317,11 @@ steps=u6-st-teach-possessive-1,u6-st-guided-possessive-1,u6-st-teach-possessive-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a3b5c3ad7b34b858384b956bdbe4df8e265f9c315c62561e0b86014d22b1c6cb
+- Content hash: a59976373bd4a5c281555e1acab5320849c21dd9e7c2ef84bf15eea488471aaa
 
 kind=TEACH
-title=Admitted lines
-body=мой стол — my table. моя собака — my dog. 
+title=My: agreement with the noun
+body=In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -331,28 +331,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u6-st-guided-possessive-1`
-
-- Objectives: obj-u6-possessive
-- Sessions: u6-s-possessive
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b6f77c830927f795a4d93865a4b85eab235c051062df73eed1d828f25f044d5e
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u6-g-possessive-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u6-st-rem-possessive
-
 ### STEP `u6-st-teach-possessive-2`
 
 - Objectives: obj-u6-possessive
@@ -361,11 +339,11 @@ remediationStepId=u6-st-rem-possessive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 22f6630135ab05503b3f58dbb40a1c872d45b0bff53208a365323b2e9fc5c0d1
+- Content hash: 7438660cb50656c8eba5b40134e2c63bbd6bfe8e10fd1211d73a13f50faef647
 
 kind=TEACH
-title=Admitted instruction
-body=the 'my' in 'my dog' ('''моя собака''') and 'my table' ('''мой стол''') are different
+title=Match gender, number and case
+body=Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -383,11 +361,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e140c84d960cfae346515d0d90aba008907bf26e14bab13567d2bf021794c7e2
+- Content hash: 5f9508627e4f50b01f84f5ce60ac6052b6c909319e72b210b91e30a316987ff9
 
 kind=TEACH
-title=Admitted lines
-body=Наш — Our. Ваш — Your. 
+title=Our: a worked case change
+body=Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -405,11 +383,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 46e04e78c8604cb8e0f3c32715a695a8004360b7d77a7df82c3a8688ce93dc51
+- Content hash: 50da710efe941f372179fef34ef26bc279db4d462e304cea90f9876aaac82c65
 
 kind=TEACH
-title=Admitted lines
-body=мо́й — my. моя́ — my. 
+title=Masculine and feminine forms
+body=In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -427,11 +405,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 654ab292bc918077edf882978b43635b74e40807a8b42f177f813d4b5ebbb725
+- Content hash: e1f247112366fcea634b8e6492fb251af86af52f901797729ee96ba02cafdd31
 
 kind=TEACH
-title=Admitted lines
-body=моё — my. мои́ — my. 
+title=Neuter and plural forms
+body=моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -449,11 +427,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c0f331e3023ffe522dbd4ae2376093a48947b55269d9f5c913dfda1e41031309
+- Content hash: e6d4aadbb5bde546b401ae66209c8a1f09176db895641d3e052d3ade02aeeaa5
 
 kind=TEACH
-title=Admitted lines
-body=тво́й — your. твоя́ — your. 
+title=Your: masculine and feminine
+body=тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -463,6 +441,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u6-st-guided-possessive-1`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-possessive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 938e558f551334cee2f77fa498f2dde37dd10ccd3f0a03f297e1da881d563bd9
+
+kind=GUIDED
+title=Guided practice
+body=Choose the form that matches the noun. Then read why the other forms do not fit.
+dominantAction=Continue
+references=
+items=u6-g-possessive-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u6-st-rem-possessive
+
 ### STEP `u6-st-rem-possessive`
 
 - Objectives: obj-u6-possessive
@@ -471,15 +471,25 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 18fd26ac7c8b817a8fe3fa09be28f1511a1c4228f585dd0ae3e3e307a330b9db
+- Content hash: a2d54a8a1882a6fefd8ed83751e886a5f2d2ef6713d416ca810fd220c3ec7d6d
 
 kind=REMEDIATE
-title=Remediation
-body=the 'my' in 'my dog' ('''моя собака''') and 'my table' ('''мой стол''') are different
+title=Review the agreement rule
+body=Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+
+In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+
+In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+
+моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+
+Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
+
+тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
-examples=ex-u6-possessive-0,ex-u6-possessive-1
+examples=ex-u6-possessive-0,ex-u6-possessive-1,ex-u6-possessive-2,ex-u6-possessive-3,ex-or-u6-possessive-4,ex-or-u6-possessive-5,ex-or-u6-possessive-6,ex-or-u6-possessive-7,ex-or-u6-possessive-8,ex-or-u6-possessive-9
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -493,11 +503,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dd5af19403a6b6c22bfc511be475300955d86ca002f7c21e11f3ff9e577ad6bf
+- Content hash: 122b4b44534dc3a018ff8313d515efc9605e22d04313a057a0a20de06071d0d9
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use gender, number and case to choose a form. If you miss a check, review the explanation.
 dominantAction=Continue
 references=
 items=u6-i-possessive-1,u6-i-possessive-2,u6-i-possessive-3
@@ -530,11 +540,11 @@ steps=u6-st-teach-third-1,u6-st-guided-third-1,u6-st-teach-third-2,u6-st-teach-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b7c725fa5cf406fab5788d669b0fa50576d91283cb9eab17591234251dc7228a
+- Content hash: cdc58636830d8990b5b8b095a32fc9e77435e8c2e7072452ef898493503a8b68
 
 kind=TEACH
 title=Admitted lines
-body=его — его. её — её. 
+body=его — его. её — её. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -618,13 +628,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 28f7f99a2376357b10ef57bff37d7d16749106ef31eac45df12d6cc07e73c931
+- Content hash: 666d2c654b8296abe5a22ce3f74f40f34b376c09e7bfc452516ef8de12cda0b3
 
 kind=REMEDIATE
 title=Remediation
 body=These do not decline according to the gender or number of the modified noun.
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-u6-third-0,ex-u6-third-1
 unavailableReason=
@@ -677,11 +687,11 @@ steps=u6-st-teach-object-1,u6-st-guided-object-1,u6-st-teach-object-2,u6-st-teac
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0a7277565472ea46cb48d4f5a7cf764d1f662a7f129ca189f729e6a1c82b3d59
+- Content hash: efd8a999a75871b8fa1005acd9f16adb8f4a5eb7a5c6742aa98afa5fea6781a6
 
 kind=TEACH
 title=Admitted lines
-body=Я люблю собак — I like dogs. Я тебя люблю — I love you. 
+body=Я люблю собак — I like dogs. Я тебя люблю — I love you. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -787,13 +797,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 427cb09c61cc37fb81eafe4158616c8539d52ca8e851c0d19d0f8ce757ba5f77
+- Content hash: 4215560b9ff86c8fe2740710c59ad7e7c59b07349cee8b194b02a2177fa7cc38
 
 kind=REMEDIATE
 title=Remediation
 body=I like dogs - '''Я люблю собак'''
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-u6-object-0,ex-u6-object-1
 unavailableReason=
@@ -831,12 +841,12 @@ remediationStepId=u6-st-rem-object
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 828934e500321e15e1962ffb956a14711f2fc3fe7ddf0d40919959c011a83269
+- Content hash: 60d30df5f12d0854a99ca9cafc4b53ec611534edf896e83c9a655231dc4c5cb8
 
 title=Choose the admitted object form
 estimatedMinutes=12
 objectives=obj-u6-feminine
-steps=u6-st-teach-feminine-1,u6-st-guided-feminine-1,u6-st-teach-feminine-2,u6-st-teach-feminine-3,u6-st-teach-feminine-4,u6-st-rem-feminine,u6-st-check-feminine
+steps=u6-st-teach-feminine-1,u6-st-teach-feminine-2,u6-st-teach-feminine-3,u6-st-teach-feminine-4,u6-st-guided-feminine-1,u6-st-rem-feminine,u6-st-check-feminine
 
 ### STEP `u6-st-teach-feminine-1`
 
@@ -860,28 +870,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u6-st-guided-feminine-1`
-
-- Objectives: obj-u6-feminine
-- Sessions: u6-s-feminine
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 69adfc0bd5b5c760e4e82a72a7b850ba365a11560c5b1e9a07990659083261a8
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u6-g-feminine-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u6-st-rem-feminine
-
 ### STEP `u6-st-teach-feminine-2`
 
 - Objectives: obj-u6-feminine
@@ -890,11 +878,11 @@ remediationStepId=u6-st-rem-feminine
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b842115468dc6d7fb527bca33cae9b7423bb91aafbdab9c2015baedba481c396
+- Content hash: d891ce4776fbd3ce228894e63418fb2c3ca6a132b53c6fdcde2540099523f7f2
 
 kind=TEACH
 title=Admitted instruction
-body=Feminine words are the only words to have their own accusative ending:
+body=Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -948,6 +936,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u6-st-guided-feminine-1`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-feminine
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 69adfc0bd5b5c760e4e82a72a7b850ba365a11560c5b1e9a07990659083261a8
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u6-g-feminine-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u6-st-rem-feminine
+
 ### STEP `u6-st-rem-feminine`
 
 - Objectives: obj-u6-feminine
@@ -956,13 +966,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c997409e291e5621de500ce60bfcaf55300b860430498d76194e45e74f7f2989
+- Content hash: 631002ab68ea905cad52da3f987697a3777e018b174854881816fd1156c07bb5
 
 kind=REMEDIATE
 title=Remediation
-body=Feminine words are the only words to have their own accusative ending:
+body=Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-or-u6-feminine-0,ex-or-u6-feminine-1
 unavailableReason=
@@ -1000,12 +1010,12 @@ remediationStepId=u6-st-rem-feminine
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d001a7e9b89f642e2b1aed8d5854baf8f66c076830156995625cd24464926005
+- Content hash: f4e9f3ab3fa51d9f0ef86f31e370e6733fcbe3c65b0aa7186cdf14f0f877e9b7
 
 title=Choose the admitted animate or inanimate object form
 estimatedMinutes=12
 objectives=obj-u6-animacy
-steps=u6-st-teach-animacy-1,u6-st-guided-animacy-1,u6-st-teach-animacy-2,u6-st-teach-animacy-3,u6-st-teach-animacy-4,u6-st-teach-animacy-5,u6-st-teach-animacy-6,u6-st-rem-animacy,u6-st-check-animacy
+steps=u6-st-teach-animacy-1,u6-st-teach-animacy-2,u6-st-teach-animacy-3,u6-st-teach-animacy-4,u6-st-teach-animacy-5,u6-st-teach-animacy-6,u6-st-guided-animacy-1,u6-st-rem-animacy,u6-st-check-animacy
 
 ### STEP `u6-st-teach-animacy-1`
 
@@ -1015,11 +1025,11 @@ steps=u6-st-teach-animacy-1,u6-st-guided-animacy-1,u6-st-teach-animacy-2,u6-st-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5478a2f88d21023f41ed15a6ce9514f0a4b9171998d0a830a1273066279fd0d3
+- Content hash: 042e635895db7284148ff0b622ff1073f74064f48d46fc9314482cfb42e21749
 
 kind=TEACH
-title=Admitted lines
-body=сто́л — table. сто́л — table. 
+title=Identify the inanimate table object
+body=сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1029,28 +1039,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u6-st-guided-animacy-1`
-
-- Objectives: obj-u6-animacy
-- Sessions: u6-s-animacy
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1da52bebf962541267d5fada514efc363ac22121aa17177941ba3f6af3de3a4f
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u6-g-animacy-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u6-st-rem-animacy
-
 ### STEP `u6-st-teach-animacy-2`
 
 - Objectives: obj-u6-animacy
@@ -1059,11 +1047,11 @@ remediationStepId=u6-st-rem-animacy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 93254c99c081b0e0b02a2ee7cc70d55613e054d39861b6451e5cc73186603635
+- Content hash: d95ee6a0a82b423a0a0eabd2ae0bfc9f311fe9b1bbdac16ba83c28db00213cda
 
 kind=TEACH
-title=Admitted instruction
-body=If they're animated nouns, they follow the genitive rules
+title=Contrast masculine singular animacy
+body=In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1081,11 +1069,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e01ed134e23f448984bbca064af7f641055b23861f56dfdac5600204eb8f5a9f
+- Content hash: 18d4e6001d217608ce02ac5406b4a3bd108688db398563f6d477dac3555299c9
 
 kind=TEACH
-title=Admitted lines
-body=до́м — house. до́м — house. 
+title=Keep the inanimate house form
+body=до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1103,11 +1091,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: eff86adb23faf9b12edcae11945db95ad2bc175c9a99206a5b5e87cd3637ef88
+- Content hash: 1dec93d7dd4bbf49468f37cdff6b09a1a55e74c8b180f8763c88c2fc3be3cf69
 
 kind=TEACH
-title=Admitted lines
-body=брат — brother. бра́та — brother. 
+title=Recognize the animate brother pair
+body=брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1125,11 +1113,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dd452f1126bc92f8f6d722499b96f98bb6068e2b152e3b7fff226a07ef6dec76
+- Content hash: 5fc29540dd5cb0922f2a868ea5e90153fc1d3439e4ab57324a7bd27eaa53933c
 
 kind=TEACH
-title=Admitted lines
-body=учи́тель — teacher. учи́теля — teacher. 
+title=Recognize the animate teacher pair
+body=учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1147,19 +1135,41 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e8f232b3aa4800607b8413888843ba0a45b6960a0e04021bcbfc1df92f366f9b
+- Content hash: 6c5c98b9bdbd9b2a5710c1381c46805d909c4897e220b2595212ef56aebff242
 
 kind=TEACH
-title=Admitted lines
-body=друг — friend. дру́га — friend. 
+title=Compare the friend with the source chair clause
+body=друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-or-u6-animacy-8,ex-or-u6-animacy-9
+examples=ex-or-u6-animacy-8,ex-or-u6-animacy-9,ex-u6-animacy-transfer-chair
 unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u6-st-guided-animacy-1`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-animacy
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9544c144006277f7527d6e3db3e868104e236220e3970e66a7f695cab57f257f
+
+kind=GUIDED
+title=Guided practice
+body=Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
+dominantAction=Continue
+references=
+items=u6-g-animacy-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u6-st-rem-animacy
 
 ### STEP `u6-st-rem-animacy`
 
@@ -1169,15 +1179,25 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c1fc5bf40d637ef062923f253b558277469e60262fd2a9eb8e25907f68a00aa2
+- Content hash: c4008fb331cf3f4f91a37367135300b5b2fd72db5cd3525f63f610c4ac04a439
 
 kind=REMEDIATE
-title=Remediation
-body=If they're animated nouns, they follow the genitive rules
+title=Review animate pairs and the inanimate chair
+body=сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
+
+In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
+
+до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
+
+брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+
+учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
+
+друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
-examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1
+examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1,ex-or-u6-animacy-2,ex-or-u6-animacy-3,ex-or-u6-animacy-4,ex-or-u6-animacy-5,ex-or-u6-animacy-6,ex-or-u6-animacy-7,ex-or-u6-animacy-8,ex-or-u6-animacy-9,ex-u6-animacy-transfer-chair
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1191,11 +1211,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9dd6fbf4ea794ac8b17b16c892fe9cc05558a5b891d3a66d529207c97c19ea3a
+- Content hash: a0fb5eb51cada3db43bff36b4e7354bc4e084b911cad23edbefeddc2f20125a4
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
 dominantAction=Continue
 references=
 items=u6-i-animacy-1,u6-i-animacy-2,u6-i-animacy-3
@@ -1228,11 +1248,11 @@ steps=u6-st-teach-pronoun-1,u6-st-guided-pronoun-1,u6-st-teach-pronoun-2,u6-st-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d656f792d7668fb2b20a4bb2a0d249663c0d0ae9edcebe1f75554e3140c2fec9
+- Content hash: 1a15900b503bcfe8ee9f7368cc032eaba8a2f8eabf988e426db650c72ae563ae
 
 kind=TEACH
 title=Admitted lines
-body=Меня — I/me. Нас — We/us. 
+body=Меня — I/me. Нас — We/us. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1360,13 +1380,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e589f83d502128476667e239b58d61b1e5756088ba737add88439d9610dcda44
+- Content hash: 88154d9d77f4a919512e53cbd468d8ecdff21e85169da1d6a40ca9711a71584c
 
 kind=REMEDIATE
 title=Remediation
 body=| I/me || Я || Меня
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-u6-pronoun-0,ex-u6-pronoun-1
 unavailableReason=
@@ -1529,13 +1549,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 60c8147821d1012250a2b4680afdd685992ac6501c9adcc973431a62e50269bc
+- Content hash: af545977c69c46fd019c191698b013a6fb66bc37d050e3e4e2970f687400e462
 
 kind=REMEDIATE
 title=Remediation
 body=generally the accusative case denotes ''direction''
 dominantAction=Continue
-references=
+references=ref-ca-cases
 items=
 examples=ex-u6-direction-0,ex-u6-direction-1
 unavailableReason=
@@ -1573,12 +1593,12 @@ remediationStepId=u6-st-rem-direction
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4ee9aefe8e9d38e1098b2082e8a1ed7d4526eaed951de614ec7b6e642769ef67
+- Content hash: 2689b743fd0239fb2bbde39dad25d482453db0fe7bff21134c10e2211df215ca
 
 title=Self-attest Lesson 6
 estimatedMinutes=10
 objectives=obj-u6-book
-steps=u6-st-book-work,u6-st-book
+steps=u6-st-book-work,u6-st-book,u6-st-anki-direction,u6-st-binder-direction,u6-st-tutor-direction,u6-st-cumulative-direction
 
 ### STEP `u6-st-book-work`
 
@@ -1588,7 +1608,7 @@ steps=u6-st-book-work,u6-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4a2f9bb1c11fb5ad10a26f9f851ffff41a07f6112c86c04472a3d9df5f78ea44
+- Content hash: 201146547ca64659274c6ff46615b5e30db46f18e91f395673f673956c35f571
 
 kind=BOOK
 title=Work Lesson 6 in your copy
@@ -1598,7 +1618,7 @@ references=ref-u610-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 6 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 6: printed pages 56-67. PDF indexes 68-79 are file locators, not printed pages. Observed section locators: §6.1 p56 (PDF 68); §6.2 p56 (PDF 68); §6.3 p57 (PDF 69); §6.4 p58 (PDF 70); §6.5 p58 (PDF 70); §6.6 p58 (PDF 70); §6.7 p59 (PDF 71); §6.8 p59 (PDF 71); §6.9 p60 (PDF 72); §6.10 p61 (PDF 73); §6.11 p62 (PDF 74); §6.12 p63 (PDF 75); §6.13 p63 (PDF 75); §6.14 p64 (PDF 76); §6.15 p64 (PDF 76); §6.16 p65 (PDF 77); §6.17 p66 (PDF 78). Observed exercise locators: 6/1 p61/PDF73; 6/2 p61/PDF73; 6/3 p67/PDF79; 6/4 p67/PDF79; 6/5 p67/PDF79. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1610,7 +1630,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 00ac0edad715903e44a16167346e9006ef6d1c16688a4299f353c13b5c7ba582
+- Content hash: 1467cad9ee97ec0bca842d2daaad8f89a25c2ea8648265b3563b58d8bd6e5885
 
 kind=BOOK
 title=Record Lesson 6 book work
@@ -1620,8 +1640,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 6 work in your copy.
+bookDirection=Owned-book assignment for Lesson 6: printed pages 56-67. PDF indexes 68-79 are file locators, not printed pages. Observed section locators: §6.1 p56 (PDF 68); §6.2 p56 (PDF 68); §6.3 p57 (PDF 69); §6.4 p58 (PDF 70); §6.5 p58 (PDF 70); §6.6 p58 (PDF 70); §6.7 p59 (PDF 71); §6.8 p59 (PDF 71); §6.9 p60 (PDF 72); §6.10 p61 (PDF 73); §6.11 p62 (PDF 74); §6.12 p63 (PDF 75); §6.13 p63 (PDF 75); §6.14 p64 (PDF 76); §6.15 p64 (PDF 76); §6.16 p65 (PDF 77); §6.17 p66 (PDF 78). Observed exercise locators: 6/1 p61/PDF73; 6/2 p61/PDF73; 6/3 p67/PDF79; 6/4 p67/PDF79; 6/5 p67/PDF79. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u6-st-anki-direction`
+
+- Objectives: obj-u6-book
+- Sessions: u6-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d13fae4efd0410595165c961698bce1a9147fe28561074ab87625e260438587a
+
+kind=ANKI
+title=Unit 6 AnkiDroid direction
+body=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u6-st-binder-direction`
+
+- Objectives: obj-u6-book
+- Sessions: u6-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 16bde176be98feafdd48c9387b08f16573fa86005541601e138e545c6fc2c648
+
+kind=BINDER
+title=Unit 6 binder prompt
+body=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u6-st-tutor-direction`
+
+- Objectives: obj-u6-book
+- Sessions: u6-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 972d6ca7ad4e76cb8ac73a1c47f7d607bb12c0aff3f36dd90d2abf8bdc2f771b
+
+kind=TUTOR
+title=Unit 6 optional tutor
+body=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u6-st-cumulative-direction`
+
+- Objectives: obj-u6-book
+- Sessions: u6-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4d9012dfe65f6141eea072e08b70a4f7387eb74f5e602810ac13fbd7bb3cacdf
+
+kind=ORIENT
+title=Unit 6 cumulative review
+body=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-u6-possessive-0`
@@ -2202,6 +2310,23 @@ note=friend
 objectiveId=obj-u6-animacy
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u6-animacy-transfer-chair`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-animacy
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41a2e6b8f310da467e7b8be56ca6b6930b13add25cef470231f6b2065e217f03
+
+kind=LEXICAL
+letterId=
+display=Я де́лал стул.
+note=The chair is the masculine inanimate direct object; its accusative form matches nominative.
+objectiveId=obj-u6-animacy
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### EXAMPLE `ex-u6-pronoun-0`
 
 - Objectives: obj-u6-pronoun
@@ -2329,12 +2454,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 889d11da376b7d7e7a1d2b318d6ef0bdbd04c3483760b87d629164cb6044dff4
+- Content hash: 9f408ea750b8cf40fd93dff47eeacc65611b4c02ab8ef790bb39d94623e0bc6b
 
 kind=LEXICAL
 letterId=
 display=Я шёл в дом
-note=the house
+note=I was walking into the house.
 objectiveId=obj-u6-direction
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2363,12 +2488,12 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e2769eb6cca194be2e6f4c55c96a5d6d271c2f126c04fcd76006436a18cbfd5b
+- Content hash: 67937becd999fe8c992e4932ff4bf0b95a6c58d28be09f5d2eedbeff3e0f62ea
 
 kind=LEXICAL
 letterId=
 display=Я шёл на улицу
-note=the street
+note=I was walking out into the street.
 objectiveId=obj-u6-direction
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -2414,19 +2539,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 677bc80edafc0fdb891d3c57db6fb350167808128f1ca0e720e897147a706ffd
+- Content hash: 5eddb7f4c888612b4ce46e1649f13e48bc71be6c4476738da20c35cde733780f
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form agrees with the shown word?
+prompt=Which nominative form meaning my agrees with the shown feminine singular noun?
 promptLetter=собака
 options=моя́ | мо́й | мои́
 answer=моя́
-feedback=Does the admitted record show the governed contrast? моя́.
+feedback=собака is feminine singular, so the nominative form is моя́.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other agreement row of the same word. | This form is the plural row of the same word.
+distractorRationales= | мо́й is masculine singular nominative; it does not agree with the feminine singular noun. | мои́ is plural nominative; the noun here is singular.
 testedFeature=POSSESSIVE_AGREEMENT
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-possessive-0
@@ -2434,8 +2559,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u6-possessive-5
 distractorSourceIds= | prov-ex-or-u6-possessive-4 | prov-ex-or-u6-possessive-7
-distractorDifference= | This form is the other agreement row of the same word. | This form is the plural row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | мо́й is masculine singular nominative; it does not agree with the feminine singular noun. | мои́ is plural nominative; the noun here is singular.
+whyAnswerDemonstratesObjective=собака is feminine singular, so the nominative form is моя́.
 contrastMembers=моя́ | мо́й | мои́
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-possessive-x-0 | prov-ex-or-u6-possessive-5 | prov-ex-or-u6-possessive-4 | prov-ex-or-u6-possessive-7
@@ -2448,7 +2573,7 @@ relationParticipantIds=prov-u6-possessive-x-0 | prov-ex-or-u6-possessive-5 | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 562d80ac0b78d5cf92efcc2800a8edbfe6a9d365dbf5352fac0098268659e97c
+- Content hash: 65fdd4787989bd1f6a7cc6541355d94a86c020fccf60510fb1187e38b2c45030
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2456,11 +2581,11 @@ prompt=Which admitted form matches the shown category?
 promptLetter=masculine and neuter possessive pronouns
 options=его | её | их
 answer=его
-feedback=Does the admitted record show the governed contrast? его.
+feedback=его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
 objectiveId=obj-u6-third
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
+distractorRationales= | её identifies her, a feminine singular possessor instead of the shown possessor category. | их identifies their, plural possessors instead of the shown possessor category.
 testedFeature=THIRD_PERSON_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-third-0
@@ -2468,8 +2593,8 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u6-third-0-ru
 distractorSourceIds= | prov-ex-u6-third-1-ru | prov-ex-u6-third-2-ru
-distractorDifference= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | её identifies her, a feminine singular possessor instead of the shown possessor category. | их identifies their, plural possessors instead of the shown possessor category.
+whyAnswerDemonstratesObjective=его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
 contrastMembers=его | её | их
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u6-third-x-0 | prov-ex-u6-third-0-ru | prov-ex-u6-third-1-ru | prov-ex-u6-third-2-ru
@@ -2482,7 +2607,7 @@ relationParticipantIds=prov-u6-third-x-0 | prov-ex-u6-third-0-ru | prov-ex-u6-th
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8132a2f0e3c71f64bc0ae84d52a905f295b591d2d2bf177fcaa2d737654d5ea4
+- Content hash: 4d4ff9adb2da353178303b3dfd7f4cb64e25da5a37bc1854bfbc11411fc657ca
 
 kind=FORM_SELECTION
 language=en
@@ -2490,11 +2615,11 @@ prompt=Which admitted line is the other order of the shown line?
 promptLetter=Я люблю тебя
 options=Я тебя люблю | Я люблю тебя
 answer=Я тебя люблю
-feedback=Does the admitted record show the governed contrast? Я тебя люблю.
+feedback=Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This line repeats the shown line, not the other order of the same words.
+distractorRationales= | This option repeats the shown order instead of moving the object before or after the verb.
 testedFeature=OBJECT_ORDER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-object-0
@@ -2502,8 +2627,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u6-object-1-ru
 distractorSourceIds= | prov-ex-u6-object-2-ru
-distractorDifference= | This line repeats the shown line, not the other order of the same words.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | This option repeats the shown order instead of moving the object before or after the verb.
+whyAnswerDemonstratesObjective=Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
 contrastMembers=Я тебя люблю | Я люблю тебя
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u6-object-2-ru | prov-ex-u6-object-1-ru | prov-ex-u6-object-2-ru
@@ -2516,19 +2641,19 @@ relationParticipantIds=prov-ex-u6-object-2-ru | prov-ex-u6-object-1-ru | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d80e9ca2117826f98f08be17ed942df9d12ea0f2b8b9228dae1b74ed92c300ac
+- Content hash: b45b76f0bd23c8c52b1bfe5e6a013996c33b86ed0ef0687f3b8ca17f4ebce9bc
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form of the same noun corresponds to the shown form?
 promptLetter=кни́га
 options=кни́гу | кни́га
 answer=кни́гу
-feedback=Does the admitted record show the governed contrast? кни́гу.
+feedback=кни́га is the singular nominative form; кни́гу is the singular accusative form of the same noun.
 objectiveId=obj-u6-feminine
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | кни́га is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=FEMININE_ACCUSATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-feminine-0
@@ -2536,8 +2661,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u6-feminine-1
 distractorSourceIds= | prov-ex-or-u6-feminine-0
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | кни́га is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=кни́га is the singular nominative form; кни́гу is the singular accusative form of the same noun.
 contrastMembers=кни́гу | кни́га
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-feminine-0 | prov-ex-or-u6-feminine-1 | prov-ex-or-u6-feminine-0
@@ -2550,19 +2675,19 @@ relationParticipantIds=prov-ex-or-u6-feminine-0 | prov-ex-or-u6-feminine-1 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: addbcb80fd4e44882683ef3ce91d07b503ce7cbf140559e6cb79784ec7d0e8cb
+- Content hash: d87184873ff723d712e9be5612423068b8707490cc667ca5312c653706ae5af2
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form is used when the shown masculine animate noun is the direct object?
 promptLetter=брат
 options=бра́та | брат
 answer=бра́та
-feedback=Does the admitted record show the governed contrast? бра́та.
+feedback=брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | брат is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=ANIMACY
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-animacy-0
@@ -2570,8 +2695,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u6-animacy-5
 distractorSourceIds= | prov-ex-or-u6-animacy-4
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | брат is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 contrastMembers=бра́та | брат
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-animacy-4 | prov-ex-or-u6-animacy-5 | prov-ex-or-u6-animacy-4
@@ -2584,7 +2709,7 @@ relationParticipantIds=prov-ex-or-u6-animacy-4 | prov-ex-or-u6-animacy-5 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9c050be074154321105c153b22cf6a37166acd4450db132780f254faf3254343
+- Content hash: 0404a1aa1bde86590bd805a474d62ee5af03e94b4697e3c137f6718228e8404a
 
 kind=FORM_SELECTION
 language=en
@@ -2592,11 +2717,11 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Я
 options=Меня | Нас
 answer=Меня
-feedback=Does the admitted record show the governed contrast? Меня.
+feedback=Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is not the object row of the shown line.
+distractorRationales= | Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form.
 testedFeature=PERSONAL_OBJECT_CASE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-pronoun-0
@@ -2604,8 +2729,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u6-pronoun-0-ru
 distractorSourceIds= | prov-ex-u6-pronoun-1-ru
-distractorDifference= | This form is not the object row of the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form.
+whyAnswerDemonstratesObjective=Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.
 contrastMembers=Меня | Нас
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-pronoun-rem-r0 | prov-ex-u6-pronoun-0-ru | prov-ex-u6-pronoun-1-ru
@@ -2618,7 +2743,7 @@ relationParticipantIds=prov-u6-pronoun-rem-r0 | prov-ex-u6-pronoun-0-ru | prov-e
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ac1869d21060926a73747e65fd6c5835c2a6bfbce0005047e547aa624ad15c09
+- Content hash: a054da8a2de1e55becd1c35b8ec0bbc44e7a024a375cacf62353c3cca8c5c7fa
 
 kind=CASE_RECOGNITION
 language=en
@@ -2626,11 +2751,11 @@ prompt=Which admitted function does the shown line use?
 promptLetter=Я шёл в дом
 options=direction | location
 answer=direction
-feedback=Does the admitted record show the governed contrast? direction.
+feedback=Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label names the other admitted function.
+distractorRationales= | Location describes being at a place instead of moving toward a destination in this example.
 testedFeature=DIRECTION_LOCATION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u6-direction-0
@@ -2638,8 +2763,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-u6-direction-x-0
 distractorSourceIds= | prov-u6-direction-x-1
-distractorDifference= | This label names the other admitted function.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Location describes being at a place instead of moving toward a destination in this example.
+whyAnswerDemonstratesObjective=Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
 contrastMembers=direction | location
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u6-direction-0-ru | prov-u6-direction-x-0 | prov-u6-direction-x-1
@@ -2652,19 +2777,19 @@ relationParticipantIds=prov-ex-u6-direction-0-ru | prov-u6-direction-x-0 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 52a04947ac905250ab6262fe0f4baba37f239d28388a05646641cfa599896b74
+- Content hash: 1bdeed8b09f7d634c25cbd94725a09e452dbcc22b21bb8e46ae8cc85dfca4f54
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form agrees with the shown word?
+prompt=Which nominative form meaning my agrees with the shown masculine singular noun?
 promptLetter=стол
 options=мо́й | моя́
 answer=мо́й
-feedback=Does the admitted record show the governed contrast? мо́й.
+feedback=стол is masculine singular, so the nominative form is мо́й.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other agreement row of the same word.
+distractorRationales= | моя́ is feminine singular nominative; it does not agree with the masculine singular noun.
 testedFeature=POSSESSIVE_AGREEMENT
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-possessive-1
@@ -2672,8 +2797,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-possessive-4
 distractorSourceIds= | prov-ex-or-u6-possessive-5
-distractorDifference= | This form is the other agreement row of the same word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | моя́ is feminine singular nominative; it does not agree with the masculine singular noun.
+whyAnswerDemonstratesObjective=стол is masculine singular, so the nominative form is мо́й.
 contrastMembers=мо́й | моя́
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-possessive-x-1 | prov-ex-or-u6-possessive-4 | prov-ex-or-u6-possessive-5
@@ -2682,35 +2807,36 @@ relationParticipantIds=prov-u6-possessive-x-1 | prov-ex-or-u6-possessive-4 | pro
 
 - Objectives: obj-u6-possessive
 - Sessions: u6-s-possessive
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f0be4001493546e76add8154c03966912bcd636610cd7453935950880df2f45a
+- Content hash: 3fa625112534e997422b4ff587dae9ff2f43a9ad9e59e9331ba151e17e5fe35b
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
-promptLetter=Наш
-options=нашу | Наш | Наши
-answer=нашу
-feedback=Does the admitted record show the governed contrast? нашу.
+prompt=Which object-row phrase agrees with the shown feminine noun phrase?
+promptLetter=на́ша сестра́
+options=на́шу сестру́ | на́шего бра́та | на́ши
+answer=на́шу сестру́
+feedback=на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row. | This form is the plural row of the same word, not the object row.
-testedFeature=POSSESSIVE_AGREEMENT
-evidenceMode=SOURCE_SUPPLIED_PAIR
+distractorRationales= | на́шего бра́та is a masculine animate object phrase, not the feminine phrase. | на́ши is plural and does not mark the feminine singular object row.
+testedFeature=FEMININE_POSSESSIVE_OBJECT
+evidenceMode=STATED_APPLICATION
 contrastSetId=u6-possessive-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u6-possessive-x-2
-distractorSourceIds= | prov-ex-u6-possessive-2-ru | prov-u6-possessive-x-3
-distractorDifference= | This form is the dictionary row of the same word, not the object row. | This form is the plural row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=нашу | Наш | Наши
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u6-possessive-2-ru | prov-u6-possessive-x-2 | prov-ex-u6-possessive-2-ru | prov-u6-possessive-x-3
+answerSourceIds=prov-ca-6-191
+distractorSourceIds= | prov-ca-6-195 | prov-ca-6-196
+distractorDifference= | на́шего бра́та is a masculine animate object phrase, not the feminine phrase. | на́ши is plural and does not mark the feminine singular object row.
+whyAnswerDemonstratesObjective=The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+contrastMembers=на́шу сестру́ | на́шего бра́та | на́ши
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-6-190 | prov-ca-6-191 | prov-ca-6-195 | prov-ca-6-196
+responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u6-i-possessive-3`
 
@@ -2720,19 +2846,19 @@ relationParticipantIds=prov-ex-u6-possessive-2-ru | prov-u6-possessive-x-2 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 126b4845f056743433e04098e8d56fcc32e5e2b936b72dd390f4000ae9d082ff
+- Content hash: f33fbe339ba8410c134db526bb9c61335d28cd253398418c35db978c4331b088
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the other agreement row of the shown form?
+prompt=Which feminine singular nominative form of the same adjective corresponds to the shown form?
 promptLetter=тво́й
 options=твоя́ | тво́й
 answer=твоя́
-feedback=Does the admitted record show the governed contrast? твоя́.
+feedback=тво́й is the masculine singular nominative form; твоя́ is the feminine singular nominative form of the same adjective.
 objectiveId=obj-u6-possessive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the other agreement row.
+distractorRationales= | тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form.
 testedFeature=POSSESSIVE_AGREEMENT
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-possessive-3
@@ -2740,8 +2866,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-possessive-9
 distractorSourceIds= | prov-ex-or-u6-possessive-8
-distractorDifference= | This form is the dictionary row of the same word, not the other agreement row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form.
+whyAnswerDemonstratesObjective=тво́й is the masculine singular nominative form; твоя́ is the feminine singular nominative form of the same adjective.
 contrastMembers=твоя́ | тво́й
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-possessive-8 | prov-ex-or-u6-possessive-9 | prov-ex-or-u6-possessive-8
@@ -2754,7 +2880,7 @@ relationParticipantIds=prov-ex-or-u6-possessive-8 | prov-ex-or-u6-possessive-9 |
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f8451f4659ce0b5145bbb2815967f6c23adccfd24f66c0ac72fa040d57abd970
+- Content hash: 93e2ef5b82bd09bdda40644d0d11ae837b871021f43858854ae06e3307be85ec
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2762,11 +2888,11 @@ prompt=Which admitted form matches the shown category?
 promptLetter=The feminine
 options=её | его | их
 answer=её
-feedback=Does the admitted record show the governed contrast? её.
+feedback=её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.
 objectiveId=obj-u6-third
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
+distractorRationales= | его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category. | их identifies their, plural possessors instead of the shown possessor category.
 testedFeature=THIRD_PERSON_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-third-1
@@ -2774,8 +2900,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u6-third-1-ru
 distractorSourceIds= | prov-ex-u6-third-0-ru | prov-ex-u6-third-2-ru
-distractorDifference= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category. | их identifies their, plural possessors instead of the shown possessor category.
+whyAnswerDemonstratesObjective=её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.
 contrastMembers=её | его | их
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u6-third-x-1 | prov-ex-u6-third-1-ru | prov-ex-u6-third-0-ru | prov-ex-u6-third-2-ru
@@ -2788,7 +2914,7 @@ relationParticipantIds=prov-u6-third-x-1 | prov-ex-u6-third-1-ru | prov-ex-u6-th
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 22022694d1d4e09725c588de7eeb4a5465c8a89a24bd2d4d08d2efd34e738fac
+- Content hash: 0f66beb889b53c239afb39edea185df60771ae80832a8596142f15863a362701
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2796,11 +2922,11 @@ prompt=Which admitted form matches the shown category?
 promptLetter=third-person plural
 options=их | его | её
 answer=их
-feedback=Does the admitted record show the governed contrast? их.
+feedback=их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
 objectiveId=obj-u6-third
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
+distractorRationales= | его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category. | её identifies her, a feminine singular possessor instead of the shown possessor category.
 testedFeature=THIRD_PERSON_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-third-2
@@ -2808,8 +2934,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u6-third-2-ru
 distractorSourceIds= | prov-ex-u6-third-0-ru | prov-ex-u6-third-1-ru
-distractorDifference= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category. | её identifies her, a feminine singular possessor instead of the shown possessor category.
+whyAnswerDemonstratesObjective=их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
 contrastMembers=их | его | её
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u6-third-x-2 | prov-ex-u6-third-2-ru | prov-ex-u6-third-0-ru | prov-ex-u6-third-1-ru
@@ -2822,7 +2948,7 @@ relationParticipantIds=prov-u6-third-x-2 | prov-ex-u6-third-2-ru | prov-ex-u6-th
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9111a5df4472a2e6faec196773d3a8d687b128284016f04c6497342c3e690eaf
+- Content hash: ad24c750436437ec200dd19fe0f1597548f2f3cd52f67817753db25955825cf0
 
 kind=FORM_SELECTION
 language=en
@@ -2830,11 +2956,11 @@ prompt=Which admitted line is the other order of the shown line?
 promptLetter=Я тебя люблю
 options=Я люблю тебя | Я тебя люблю
 answer=Я люблю тебя
-feedback=Does the admitted record show the governed contrast? Я люблю тебя.
+feedback=Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This line repeats the shown line, not the other order of the same words.
+distractorRationales= | This option repeats the shown order instead of moving the object before or after the verb.
 testedFeature=OBJECT_ORDER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-object-1
@@ -2842,8 +2968,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-object-2-ru
 distractorSourceIds= | prov-ex-u6-object-1-ru
-distractorDifference= | This line repeats the shown line, not the other order of the same words.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | This option repeats the shown order instead of moving the object before or after the verb.
+whyAnswerDemonstratesObjective=Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
 contrastMembers=Я люблю тебя | Я тебя люблю
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u6-object-1-ru | prov-ex-u6-object-2-ru | prov-ex-u6-object-1-ru
@@ -2856,7 +2982,7 @@ relationParticipantIds=prov-ex-u6-object-1-ru | prov-ex-u6-object-2-ru | prov-ex
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f1506ea5efd308aaa0c20bd673c3e53f5d4b7b1d7c3a9726f23c1f962d9ad0e8
+- Content hash: 10866ebfd51a63da77aa6bf9c6025d07205d47bd7251df13331757638f3fefe5
 
 kind=FORM_SELECTION
 language=en
@@ -2864,11 +2990,11 @@ prompt=Which admitted line reverses the object of the shown line?
 promptLetter=Собаки ненавидят котов.
 options=Коты ненавидят собак. | Собаки ненавидят котов.
 answer=Коты ненавидят собак.
-feedback=Does the admitted record show the governed contrast? Коты ненавидят собак.
+feedback=Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This line repeats the shown line, not the reversed object pair.
+distractorRationales= | This option repeats the shown subject and object roles instead of reversing who hates whom.
 testedFeature=ACCUSATIVE_OBJECT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-object-2
@@ -2876,8 +3002,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-object-4-ru
 distractorSourceIds= | prov-ex-u6-object-3-ru
-distractorDifference= | This line repeats the shown line, not the reversed object pair.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | This option repeats the shown subject and object roles instead of reversing who hates whom.
+whyAnswerDemonstratesObjective=Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.
 contrastMembers=Коты ненавидят собак. | Собаки ненавидят котов.
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u6-object-3-ru | prov-ex-u6-object-4-ru | prov-ex-u6-object-3-ru
@@ -2890,7 +3016,7 @@ relationParticipantIds=prov-ex-u6-object-3-ru | prov-ex-u6-object-4-ru | prov-ex
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 33ffec290ee8be8eb8b1e005c56198f4d8c74bc19d2104bc7d231190fd169b3a
+- Content hash: 91cbf97ed0ae0e3720cdf7e6dc18a7c5a5dc4505066724928131648d3cfe6eb5
 
 kind=FORM_SELECTION
 language=en
@@ -2898,11 +3024,11 @@ prompt=Which admitted line reverses the object of the shown line?
 promptLetter=Коты ненавидят собак.
 options=Собаки ненавидят котов. | Коты ненавидят собак.
 answer=Собаки ненавидят котов.
-feedback=Does the admitted record show the governed contrast? Собаки ненавидят котов.
+feedback=Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This line repeats the shown line, not the reversed object pair.
+distractorRationales= | This option repeats the shown subject and object roles instead of reversing who hates whom.
 testedFeature=ACCUSATIVE_OBJECT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-object-3
@@ -2910,8 +3036,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-object-3-ru
 distractorSourceIds= | prov-ex-u6-object-4-ru
-distractorDifference= | This line repeats the shown line, not the reversed object pair.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | This option repeats the shown subject and object roles instead of reversing who hates whom.
+whyAnswerDemonstratesObjective=Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.
 contrastMembers=Собаки ненавидят котов. | Коты ненавидят собак.
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u6-object-4-ru | prov-ex-u6-object-3-ru | prov-ex-u6-object-4-ru
@@ -2924,19 +3050,19 @@ relationParticipantIds=prov-ex-u6-object-4-ru | prov-ex-u6-object-3-ru | prov-ex
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 92523a6f315f9519bd7bfb9174778258a5c9ce9d89ba6315e85132f545161af4
+- Content hash: cf123145057c7b5f71f033f3b1b8376973f6933b7b29dab453c1667e4ad78ab4
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form of the same noun corresponds to the shown form?
 promptLetter=ма́ма
 options=ма́му | ма́ма
 answer=ма́му
-feedback=Does the admitted record show the governed contrast? ма́му.
+feedback=ма́ма is the singular nominative form; ма́му is the singular accusative form of the same noun.
 objectiveId=obj-u6-feminine
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | ма́ма is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=FEMININE_ACCUSATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-feminine-1
@@ -2944,8 +3070,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-feminine-3
 distractorSourceIds= | prov-ex-or-u6-feminine-2
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | ма́ма is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=ма́ма is the singular nominative form; ма́му is the singular accusative form of the same noun.
 contrastMembers=ма́му | ма́ма
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-feminine-2 | prov-ex-or-u6-feminine-3 | prov-ex-or-u6-feminine-2
@@ -2958,19 +3084,19 @@ relationParticipantIds=prov-ex-or-u6-feminine-2 | prov-ex-or-u6-feminine-3 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b6e1344f78def2810aa000c956af0b990e18ca1e8619fdedf2b390e57f9ad1eb
+- Content hash: 3cc342387f43adeefaf8be0da9ce4cf54609d2021535a0b485e2489e1e839720
 
 kind=FORM_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form of the same noun corresponds to the shown form?
 promptLetter=же́нщина
 options=же́нщину | же́нщина
 answer=же́нщину
-feedback=Does the admitted record show the governed contrast? же́нщину.
+feedback=же́нщина is the singular nominative form; же́нщину is the singular accusative form of the same noun.
 objectiveId=obj-u6-feminine
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | же́нщина is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=FEMININE_ACCUSATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-feminine-2
@@ -2978,8 +3104,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-feminine-5
 distractorSourceIds= | prov-ex-or-u6-feminine-4
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | же́нщина is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=же́нщина is the singular nominative form; же́нщину is the singular accusative form of the same noun.
 contrastMembers=же́нщину | же́нщина
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-feminine-4 | prov-ex-or-u6-feminine-5 | prov-ex-or-u6-feminine-4
@@ -2992,19 +3118,19 @@ relationParticipantIds=prov-ex-or-u6-feminine-4 | prov-ex-or-u6-feminine-5 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cc64236397fe214d3b4991c3d5307f1157e2994ad0efed9771c218f1131d08f0
+- Content hash: be2e6306a3f9ebbfa945a259d1324cfc65da347178f08681f4714a11acbb3fda
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form is used when the shown masculine animate noun is the direct object?
 promptLetter=учи́тель
 options=учи́теля | учи́тель
 answer=учи́теля
-feedback=Does the admitted record show the governed contrast? учи́теля.
+feedback=учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=ANIMACY
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-animacy-1
@@ -3012,8 +3138,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-animacy-7
 distractorSourceIds= | prov-ex-or-u6-animacy-6
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 contrastMembers=учи́теля | учи́тель
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-animacy-6 | prov-ex-or-u6-animacy-7 | prov-ex-or-u6-animacy-6
@@ -3026,19 +3152,19 @@ relationParticipantIds=prov-ex-or-u6-animacy-6 | prov-ex-or-u6-animacy-7 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6d19b1ba06da0768fe6acaa2eb9e0125c17d6f5772565bca43d83e098b4ae43a
+- Content hash: 5fe5a034346d47e2da1f867951c494389b363c9ff8b21b3c251cb9b6bef8d059
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
+prompt=Which singular accusative form is used when the shown masculine animate noun is the direct object?
 promptLetter=друг
 options=дру́га | друг
 answer=дру́га
-feedback=Does the admitted record show the governed contrast? дру́га.
+feedback=друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the dictionary row of the same word, not the object row.
+distractorRationales= | друг is the singular nominative form, so it does not supply the requested singular accusative form.
 testedFeature=ANIMACY
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u6-animacy-2
@@ -3046,8 +3172,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u6-animacy-9
 distractorSourceIds= | prov-ex-or-u6-animacy-8
-distractorDifference= | This form is the dictionary row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | друг is the singular nominative form, so it does not supply the requested singular accusative form.
+whyAnswerDemonstratesObjective=друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
 contrastMembers=дру́га | друг
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u6-animacy-8 | prov-ex-or-u6-animacy-9 | prov-ex-or-u6-animacy-8
@@ -3056,35 +3182,36 @@ relationParticipantIds=prov-ex-or-u6-animacy-8 | prov-ex-or-u6-animacy-9 | prov-
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-animacy
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e0deda75742bafa2584d3919e5813a8b4c7b14cc350339aa9cd5c5da88cebe7d
+- Content hash: dcf66b82def345e6d06344e0965f69aca487f4852811bc4f0f912956602da859
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted form is the object row of the shown form?
-promptLetter=учи́теля
-options=учи́тель | учи́теля
-answer=учи́тель
-feedback=Does the admitted record show the governed contrast? учи́тель.
+prompt=Which English classification explains the masculine inanimate direct object in the supplied chair clause?
+promptLetter=Я де́лал стул.
+options=The masculine inanimate direct object keeps the nominative form. | The masculine inanimate direct object takes the genitive form.
+answer=The masculine inanimate direct object keeps the nominative form.
+feedback=In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the object row of the same word, not the dictionary row.
-testedFeature=ANIMACY
-evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
-contrastSetId=u6-animacy-3
+distractorRationales= | The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.
+testedFeature=ANIMACY_INANIMATE_CONTEXT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u6-i-animacy-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u6-animacy-6
-distractorSourceIds= | prov-ex-or-u6-animacy-7
-distractorDifference= | This form is the object row of the same word, not the dictionary row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=учи́тель | учи́теля
-relationKind=SAME_LEMMA_DIFFERENT_FIELD
-relationParticipantIds=prov-ex-or-u6-animacy-7 | prov-ex-or-u6-animacy-6 | prov-ex-or-u6-animacy-7
+answerSourceIds=prov-ca-u6-animacy-transfer-item-1
+distractorSourceIds= | prov-ca-u6-animacy-transfer-item-2
+distractorDifference= | The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.
+whyAnswerDemonstratesObjective=In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+contrastMembers=The masculine inanimate direct object keeps the nominative form. | The masculine inanimate direct object takes the genitive form.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u6-animacy-transfer-item-0 | prov-ca-u6-animacy-transfer-item-1 | prov-ca-u6-animacy-transfer-item-2
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u6-i-pronoun-1`
 
@@ -3094,7 +3221,7 @@ relationParticipantIds=prov-ex-or-u6-animacy-7 | prov-ex-or-u6-animacy-6 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e27ade000b7665cffd9ed25e678711f1fb5742e66d53a8f7584678af4d20bbc1
+- Content hash: 5d77773fb03a6333798c8c0b07fe519ea64debea2a98ed58aee1adcbe5da29b6
 
 kind=FORM_SELECTION
 language=en
@@ -3102,11 +3229,11 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Мы
 options=Нас | Меня
 answer=Нас
-feedback=Does the admitted record show the governed contrast? Нас.
+feedback=Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is not the object row of the shown line.
+distractorRationales= | Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form.
 testedFeature=PERSONAL_OBJECT_CASE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-pronoun-1
@@ -3114,8 +3241,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-pronoun-1-ru
 distractorSourceIds= | prov-ex-u6-pronoun-0-ru
-distractorDifference= | This form is not the object row of the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form.
+whyAnswerDemonstratesObjective=Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.
 contrastMembers=Нас | Меня
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-pronoun-x-1 | prov-ex-u6-pronoun-1-ru | prov-ex-u6-pronoun-0-ru
@@ -3128,7 +3255,7 @@ relationParticipantIds=prov-u6-pronoun-x-1 | prov-ex-u6-pronoun-1-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 057006e7ae2e970192ad598e6ec36e24455bd49c3ed4dfdbc2c4da368b13e0d5
+- Content hash: 59d57c559f6b00385b3781fe745b20669e20f241d84c5de02ceddb5e2fa99cd0
 
 kind=FORM_SELECTION
 language=en
@@ -3136,11 +3263,11 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Она
 options=Её | Его
 answer=Её
-feedback=Does the admitted record show the governed contrast? Её.
+feedback=Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is not the object row of the shown line.
+distractorRationales= | Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form.
 testedFeature=PERSONAL_OBJECT_CASE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-pronoun-2
@@ -3148,8 +3275,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-pronoun-5-ru
 distractorSourceIds= | prov-ex-u6-pronoun-4-ru
-distractorDifference= | This form is not the object row of the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form.
+whyAnswerDemonstratesObjective=Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.
 contrastMembers=Её | Его
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-pronoun-x-2 | prov-ex-u6-pronoun-5-ru | prov-ex-u6-pronoun-4-ru
@@ -3162,7 +3289,7 @@ relationParticipantIds=prov-u6-pronoun-x-2 | prov-ex-u6-pronoun-5-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 812e4a3739931c1d36ecbc69a1dc2ef611dcbd2e0b9ccff9c85c3740479829de
+- Content hash: ad9389f0b0d9eada40fdc4f31c6101634c0866f265bb411b85eae3f10d2de2a1
 
 kind=FORM_SELECTION
 language=en
@@ -3170,11 +3297,11 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Они
 options=Их | Вас
 answer=Их
-feedback=Does the admitted record show the governed contrast? Их.
+feedback=Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is not the object row of the shown line.
+distractorRationales= | Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form.
 testedFeature=PERSONAL_OBJECT_CASE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-pronoun-3
@@ -3182,8 +3309,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-pronoun-6-ru
 distractorSourceIds= | prov-ex-u6-pronoun-3-ru
-distractorDifference= | This form is not the object row of the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form.
+whyAnswerDemonstratesObjective=Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.
 contrastMembers=Их | Вас
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-pronoun-x-3 | prov-ex-u6-pronoun-6-ru | prov-ex-u6-pronoun-3-ru
@@ -3196,7 +3323,7 @@ relationParticipantIds=prov-u6-pronoun-x-3 | prov-ex-u6-pronoun-6-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b6ad28c3311dae19018e8e3dd77df11f905c32ba8576d702bcd172b4d404c8bc
+- Content hash: da20dd02585d3b87669efbcbd744e67d483c96208f7c722610e2eb9b12712eae
 
 kind=CASE_RECOGNITION
 language=en
@@ -3204,11 +3331,11 @@ prompt=Which admitted function does the shown line use?
 promptLetter=Я жил в Лондоне
 options=location | direction
 answer=location
-feedback=Does the admitted record show the governed contrast? location.
+feedback=Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label names the other admitted function.
+distractorRationales= | Direction describes moving toward a destination instead of being at a place in this example.
 testedFeature=DIRECTION_LOCATION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u6-direction-1
@@ -3216,8 +3343,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u6-direction-x-1
 distractorSourceIds= | prov-u6-direction-x-0
-distractorDifference= | This label names the other admitted function.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Direction describes moving toward a destination instead of being at a place in this example.
+whyAnswerDemonstratesObjective=Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
 contrastMembers=location | direction
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u6-direction-1-ru | prov-u6-direction-x-1 | prov-u6-direction-x-0
@@ -3230,7 +3357,7 @@ relationParticipantIds=prov-ex-u6-direction-1-ru | prov-u6-direction-x-1 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: acef00bf6a6ed49c8e6d5f51f667a3204db1df9b82f80f88d15a8b3e2c315992
+- Content hash: df10f0cc72159e3726a497e4dc6e2489395cb78188d980383abb46bc052dee5b
 
 kind=CASE_RECOGNITION
 language=en
@@ -3238,11 +3365,11 @@ prompt=Which admitted function does the shown line use?
 promptLetter=Я шёл на улицу
 options=direction | location
 answer=direction
-feedback=Does the admitted record show the governed contrast? direction.
+feedback=Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label names the other admitted function.
+distractorRationales= | Location describes being at a place instead of moving toward a destination in this example.
 testedFeature=DIRECTION_LOCATION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u6-direction-2
@@ -3250,8 +3377,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u6-direction-x-0
 distractorSourceIds= | prov-u6-direction-x-1
-distractorDifference= | This label names the other admitted function.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Location describes being at a place instead of moving toward a destination in this example.
+whyAnswerDemonstratesObjective=Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
 contrastMembers=direction | location
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u6-direction-2-ru | prov-u6-direction-x-0 | prov-u6-direction-x-1
@@ -3264,7 +3391,7 @@ relationParticipantIds=prov-ex-u6-direction-2-ru | prov-u6-direction-x-0 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e65f71f440595dc76ee104b8f5742124f35b1844edf5648236185b4d747a1b57
+- Content hash: c964446677cd2905b39ee40ab995ba2bfbc96874886da3af24db85bc5aae1c6b
 
 kind=CASE_RECOGNITION
 language=en
@@ -3272,11 +3399,11 @@ prompt=Which admitted function does the shown line use?
 promptLetter=Оно на столе
 options=location | direction
 answer=location
-feedback=Does the admitted record show the governed contrast? location.
+feedback=Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label names the other admitted function.
+distractorRationales= | Direction describes moving toward a destination instead of being at a place in this example.
 testedFeature=DIRECTION_LOCATION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u6-direction-3
@@ -3284,8 +3411,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u6-direction-x-1
 distractorSourceIds= | prov-u6-direction-x-0
-distractorDifference= | This label names the other admitted function.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Direction describes moving toward a destination instead of being at a place in this example.
+whyAnswerDemonstratesObjective=Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
 contrastMembers=location | direction
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u6-direction-3-ru | prov-u6-direction-x-1 | prov-u6-direction-x-0
@@ -3307,6 +3434,3982 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=6
 searchTerms=units 6-10 source notice
 reviewStatus=NOT_REQUIRED
+
+### REFERENCE `ref-ca-cases`
+
+- Objectives: none
+- Sessions: u6-s-possessive, u6-s-third, u6-s-object, u6-s-feminine, u6-s-animacy, u6-s-pronoun, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: LINGUISTIC_INSTRUCTION
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3aeaff2fbf61ab903a79b78fe321547a3d9e547bc3acd38d56a9dfdfc13ab6bd
+
+title=Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.
+summary=Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.
+detail=Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.
+classification=LINGUISTIC_INSTRUCTION
+introducedInUnit=6
+searchTerms=ref-ca-cases
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### PROVENANCE `prov-ca-6-14`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7fef8a52d2eb46c2c31ca96fadb4da057a11431ac5f5365b43c602c116ef2c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:u6-st-teach-possessive-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-15`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e48d6e4aa3cd8bd655ef6046993ae0cfdb5dfb09612b9472279a57ed0505315
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:u6-st-teach-third-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-16`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ecd8b4124268f950022f95947eeb1a17ebc9d851517d2af6822a3a3f993ee4f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:u6-st-teach-object-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-17`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e99c9f3d70b1b9bbbc0cd8cc2423c1ac58c5f69c27c3eb08f0df9b31a2e0d0c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:u6-st-teach-pronoun-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-190`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40413c3220c4c647151ef8cd76762589911facbe1abd48f1f85138b375a181ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́ша сестра́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=e5497b8ac464b98373ff7cc9804adb769d077845735e6dbeb6eb698a889d8c9d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-191`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6e6ffbd97c82eedf417011146a7e667deb90cf7badc33cfc46b6a010e99ba245
+
+recordType=meaning
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́шу сестру́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=a57f7f1342241179831ff7814c9c5dc9952d126284af95a20e896943363047f7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-192`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5ce97111e503b9f3407b42ef58d9c3dfce0efcb3d57e14260cf5093ca325800
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=Which object-row phrase agrees with the shown feminine noun phrase?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=b3ea8e731a74efff1b2e914ae78c9fab0dccd9d864c9c2bd935d071d5eafc272
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-193`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53163a86d0188c79caa2b5a99fca8a3e351f2e87afdd013675a2e225d1e48fb6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=4c01b4d04b21d5e4332b3f6feadc4b9c5d8d8e05a040de6f2f2012942de0d7fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-194`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f52c723bc9962aafd593a678d3828ab663fcec9681e21d260c52bc292fbbde0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=a482df3bd8a42811306930b50d069d25b096786abf2f1589693065f9127e25ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-195`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da215e0a8d0834111c40809256e5feb5656393c08b3d03ba2439a1b483d182f3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́шего бра́та
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=9333f978191d50d4c9c84115f8d824324efbb7882d5570faec17110a72ceaf43
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-196`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 670e6c923f430ebc16902c6dd6d5de118e045714d6ad636e4573c61f6d08ff12
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́ши
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=c0eedf84d7b503ff3c810677f0ecd6e05dc49405fa09f3e5d115146b077a2585
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-197`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11de62272fe8013e7c11133d623a5f0fe08c1ed80b140d1de62b1033c95cd3a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=6067faafce573e3d1b672a6ed27270dd60259bda94e9ef2bc2a1d9094bf4cc0e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-198`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33d8f441cf463424a28b295d71af020c3bd10e6b7db4c6c30fc3af3f41168e23
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́ши is plural and does not mark the feminine singular object row.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=48d30cd2d6b0c75522be0e99ba788237a2201a6522337d8684b044f469dea0e6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-199`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54975563e70c265ac7799199b58b1683f427e9f21c8aeac734b47c36fe68a848
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-contrast:u6-i-possessive-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+на́ша сестра́
+на́шу сестру́
+Which object-row phrase agrees with the shown feminine noun phrase?
+на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.
+The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.
+на́шего бра́та
+на́ши
+на́шего бра́та is a masculine animate object phrase, not the feminine phrase.
+на́ши is plural and does not mark the feminine singular object row.
+на́шу сестру́.
+shippedText=на́шу сестру́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=488e94be9e325b6a06a768be08e58af3d75522f925ad10546f6aa4877e943a92
+contentHash=ae9d2f5a0b357d8ab149aea6f7f8d81cc7536ecbcc4cfe0b5642059cfe3fce97
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-205`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72f520d8ba955fc2657ab4a36c12eafb4347fe3a3bdc582a74a11d925da3188a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-0:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Я шёл в дом
+shippedText=Я шёл в дом
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5ac73b3a0203afac49a18b03a155d0add9242cf6bfc392a265df3edc61b59ea8
+contentHash=a11c3505f657e9f78aa8d69f4cef6641f6906a1530ca331821c851e3761028ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-206`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19d710be8b3577fc275b86a1a900b694c12ee2012f47f6ec26cd8788d7454b5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-0:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+I was walking into the house.
+shippedText=I was walking into the house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3f64c2fbda7be9d98c27051b04369598a3859477510aece78984e0a998620537
+contentHash=4c3701f815cfa14e5e44a3186857a45ce656ac9f642fb9316d64de26d212d9ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-207`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 079218ea56d70ecc7e3f8f50ec9a84793c1c846c86c97292a946543e7fdf002b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-0:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Я шёл в дом — I was walking into the house.
+shippedText=Я шёл в дом — I was walking into the house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c5c3ff7f595b96fb762cf4b4bca743463bd51c749337a12c8c748268dc3f8d22
+contentHash=21ed52b61511cb39385ed08fd1376a1f0bd0e63af018481eb235efe7937444ca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-208`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31c376312d81c94a3e9adfc09f2c446d4a733fc99cceb5e3236aa14105cd6219
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-2:display
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Я шёл на улицу
+shippedText=Я шёл на улицу
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4839bf99e1ff1929a99cdf74905586f1130d7f54808a09b31b8af4a36071c9e4
+contentHash=6bf26987047592ddac78fb3abe838bc26481495331269a8594e30aafa9bc170f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-209`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd9df5867c534d8dcac4db51501c6ae7d0580471a07e9106626b8f0e12921412
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-2:note
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+I was walking out into the street.
+shippedText=I was walking out into the street.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce348185aedede1ee34ec8fdceb84ce9decb32417cd9730e278e530df4ac61dd
+contentHash=4e7452815cd7b10d59d0d2ef14920226e82ce645f08a77764f32516d33611a29
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-210`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 632de01171bc5163658f4ebf5894e42c5156903ef17e2ebac8f2f7cda1d255f3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:ex-u6-direction-2:pair
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Я шёл на улицу — I was walking out into the street.
+shippedText=Я шёл на улицу — I was walking out into the street.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=14de4a43219338ac11c851fdcea3506617b4db0a42d051bbb1f5adf012965859
+contentHash=1cc99906133c57ac76639e69fb2a101f195a99a55e32320268a42ebd9075d5bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-340`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 447e59f975e616d8bd07ddd6a579cb9c29457f7382e17fa66915d9edac643d98
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=8a5dc8448f410cc0a293665b5f8b4ee5071c33a25f015cc9292507204e657f6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-341`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e184447ea3d3b29afc240419ce3d4d20903ae033c055582c5b8e331ac266075e
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=а
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-342`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c5ce46165b39f064ba124bf0564733f0f3b6b3a62020a50c19d5be710b5b7e0
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=я
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=9b21f5cf014c9efb35110dcccf3a74eab7fb903d1ca2f4054b3dad9ffabb7727
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-343`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6e38dee5149f35cefa55a260817606dd3fa4e02a9dc11724e4d4e9ba52e3f47
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=папа
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=8faf32f669661c73b40b3d6072b1cae3c95641d73a90cdeff2fa3078b4a3b52d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-344`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f8db612106d644c635a8ecc66ab1778ce4e7f315dad30a0b2a173f9731c5a72
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=дядя,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=ee3465bd74aaf9a0eb0ed20b992722a6477d26b2a3aab2de5a523dcdbbc1b6e9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-345`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a08f1c6420ea88c13e194d25805e5a15830481a6f0a6387550fdd1a7426f158
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-st-teach-feminine-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending. Feminine gender is not the only group with that ending.
+shippedText=дядя
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcf9f3149117cfad7e780d89bfa6ef9a2fe7189a29796d1a716f484171b88b16
+contentHash=a67573ca75737b9e0b9d00b9a59aaf183b5a158306b5602a1f2f5708a86d206b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-6-629`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b0b892d177c67ae17b8677643f68b0ffd1831dab7afe620fbf6571879a0297c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:ref-ca-cases
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.
+shippedText=Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6544c561da731711bdb1b3fb60517a939f5d4736efe62ca473f3330c4984fa45
+contentHash=eb2653460b15f43d7f85ba48f718005b3595d2b9fa1053c25c893f39499c48d0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-animacy-0-0`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c31a14048dacb73e24a04c1df0b52f4fcd9a3730ea4ff3c7ab677b39fcd4783
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-g-animacy-0:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which singular accusative form is used when the shown masculine animate noun is the direct object?
+shippedText=Which singular accusative form is used when the shown masculine animate noun is the direct object?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ee0a61182bcef6d9d32b9bf1afbdce6d4c822d3ec7e97e34e5a603152657bbab
+contentHash=103e38b146ac39f0b56994d99056ed51b70372fc37917792db6be3f448409516
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-animacy-0-1`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bbfb083aa0ab2d8a9b867276ba3026cc899016867ed9f47cb54621f2d1111d1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-g-animacy-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+shippedText=брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=22a027091c6f3216cec7d13b7a9f14634e264dbeb4e6f03f42361aaf2078df68
+contentHash=77ff91ad3ec9875895e2ee2ea5ebb89076a992d1c4f0bdd56d9e6de932e97c34
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-animacy-0-3`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72a5df8e05d7cf556e3f144bc25df9b12a4fd783433ff2fdbd459b5f17cad437
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-g-animacy-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+брат is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=брат is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bffda3214d60d4f3cad4f1edfda55be0a6d41c390c4bf72aeea61d5a3e2e937a
+contentHash=5b7dccf3c2a8d1284829478e141af7831a4268f124c95ea220c50d09f1fcced8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-feminine-0-0`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 815d4560d3c272deb5e88270001728bde160a320950f29a944196ca211fe2440
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-g-feminine-0:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#sg_nom; nouns.csv:книга#sg_acc; nouns.csv:книга#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which singular accusative form of the same noun corresponds to the shown form?
+shippedText=Which singular accusative form of the same noun corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7560b617e4498eb62e8762fd0dd61b966205c71298bf93069b60726f1243edc9
+contentHash=ecc998d54e93453b15d3407d1b3267034ffc064055b435d556766f9dd3932359
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-feminine-0-1`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bfee75426d47ccaf280c35e0e10e523767fb3ff952a31170c088781d99cdf85
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-g-feminine-0:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#sg_nom; nouns.csv:книга#sg_acc; nouns.csv:книга#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́га is the singular nominative form; кни́гу is the singular accusative form of the same noun.
+shippedText=кни́га is the singular nominative form; кни́гу is the singular accusative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=32d8c979155ced772a2da2590f6fa4e394583b969975bd46643bd03f21191016
+contentHash=4e5987ea4331fb61625e831a119baab5590f27794b7ebe31614b330e4bd09b1d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-g-feminine-0-3`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6333a991d07628ce11dcb81e875e423553234c4f2ecbe30dbc811379cd213602
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-g-feminine-0:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:книга#sg_nom; nouns.csv:книга#sg_acc; nouns.csv:книга#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+кни́га is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=кни́га is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=34a757d0a17bc9845a4f58d86812b80110c03cdafd5f495c307f8a2ee2fa1e23
+contentHash=9e23a0655beb4f2299beda5eba444460c830a8be3a5c00e90b7454623ff7f74e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-animacy-1-1`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53dbe6d81846cdd10948ab300755281def41cb81045e00d93857303fdca4f6b7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-i-animacy-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:учитель#sg_nom; nouns.csv:учитель#sg_acc; nouns.csv:учитель#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+shippedText=учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=66aed515eaeb4def382cfb7135a436ce7edc36ad8335ac16f369390b32090bc8
+contentHash=d96b48435ebc695e34e57047546ed1126a9ec16aeaeccf58eb20ee64f63fadf8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-animacy-1-3`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1146d4824e77b9debb7a79c964bd6fc59d28949fbed423b3e285f7169041e22b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-i-animacy-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:учитель#sg_nom; nouns.csv:учитель#sg_acc; nouns.csv:учитель#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=00c17f7a8fe4f38e1bf301cfb6d76d5c5fc2d0ab3517fae29eba8b12fd6e1010
+contentHash=a205e4b5966e4ca94c7342cfe47510936bf46f39cb107030842fff829897f17c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-animacy-2-1`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 420d946377e1925dd53df4784f0144323bc6b935a9e5c02b715d0310efc033d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-i-animacy-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#sg_acc; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+shippedText=друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2802eff92e8df93414f1b5a3316f7e2c4d36385dd9d417307e2e1e33bb149a99
+contentHash=82fcb6d797a8346a2e157fb66923e861da1fda304253ede65a78566e2ef0c334
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-animacy-2-3`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cfca65d818b710fe4918bff31a1ffc42f0a0680083fa6022b44783d006e7ed0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:u6-i-animacy-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#sg_acc; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+друг is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=друг is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e1bf4568eb34294084165d014647e6ac895be3966829c2d6a23544ffe23d2213
+contentHash=fbc84deea21d0e1e60bf2e263230b56671f10969b564814d7099484f15337355
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-feminine-1-1`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a89656692f2c4ec630d4efee3282697d2e6429d06526e4010064128670a211d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-i-feminine-1:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:мама#sg_nom; nouns.csv:мама#sg_acc; nouns.csv:мама#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+ма́ма is the singular nominative form; ма́му is the singular accusative form of the same noun.
+shippedText=ма́ма is the singular nominative form; ма́му is the singular accusative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=46d28940dff5067494011dfde2441874d733eefd9f6b500e47d80dd095ac2c22
+contentHash=365bf01ac0dafada3a4dc0f0a1f3bc6eaeaea023bede17031c7133c882d6cc60
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-feminine-1-3`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50541d2e7b98679a3b9604fa8903173781765d6dae9d8a32e0e11d9add08f818
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-i-feminine-1:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:мама#sg_nom; nouns.csv:мама#sg_acc; nouns.csv:мама#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+ма́ма is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=ма́ма is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c5270501fb250645fbbbacc30b89b63f136b4cfa6249bf4099b29f23633d8185
+contentHash=dd9e42b747a0a6db530ab3009decc533cb16cb00f1ce5b3ec20006ab188a5dbc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-feminine-2-1`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b485fa6043eb2abda87fb4d6031287f7d1080c658d5343e347561ce8ed0976d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-i-feminine-2:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:женщина#sg_nom; nouns.csv:женщина#sg_acc; nouns.csv:женщина#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+же́нщина is the singular nominative form; же́нщину is the singular accusative form of the same noun.
+shippedText=же́нщина is the singular nominative form; же́нщину is the singular accusative form of the same noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=607d86b4d24f4195c81aac9f061c3a27644a2055abe8a7b5bc1626ace980840b
+contentHash=3edd27811aa25c5ccce6de38fc3e93cc555f6cda01868a6f990fc16165c74853
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-feminine-2-3`
+
+- Objectives: obj-u6-feminine
+- Sessions: u6-s-orient, u6-s-feminine
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97b2640ec87070bf77fe3d07ccd92fefd341f70ff78a46864bdda26f45d5dc96
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-feminine:u6-i-feminine-2:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:женщина#sg_nom; nouns.csv:женщина#sg_acc; nouns.csv:женщина#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+же́нщина is the singular nominative form, so it does not supply the requested singular accusative form.
+shippedText=же́нщина is the singular nominative form, so it does not supply the requested singular accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7cb3f624deef808f1472027877ac6e04200a514e5027456d26b262160fc234be
+contentHash=7bd2fc98cbaa9c11110e41e49d7f40a52b5ed10f4160413387b99089ad7a6aa7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-possessive-3-0`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87483c19cadeb3f4562b1d8b2572556cbac281a805a4e55fafe02126792622d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:u6-i-possessive-3:declension-explanation:0
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:твой#decl_m_nom; adjectives.csv:твой#decl_f_nom; adjectives.csv:твой#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+Which feminine singular nominative form of the same adjective corresponds to the shown form?
+shippedText=Which feminine singular nominative form of the same adjective corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2611ffc6779280a04b1cb6c85fc7c3e3181f3bfefbdb813cff1ab40d5dece680
+contentHash=fb19218f7977dedc06e601cd85d900bb5f9e37bad12b8b7fb27ed3f9c8872fd5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-possessive-3-1`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6df6a790e1a78443b37274b5313ecc1318ef46a98f319916dbb2979a6012d58
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:u6-i-possessive-3:declension-explanation:1
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:твой#decl_m_nom; adjectives.csv:твой#decl_f_nom; adjectives.csv:твой#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+тво́й is the masculine singular nominative form; твоя́ is the feminine singular nominative form of the same adjective.
+shippedText=тво́й is the masculine singular nominative form; твоя́ is the feminine singular nominative form of the same adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0eae445bb625f5e18a30b5b388af02b24db7e1bdec16a8ac02a3d8aafd1ccdd2
+contentHash=dbea2f957b476ebf856a269ebd8828be6315ef931e2b26f51a6b85949fcd7e8a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-declension-u6-i-possessive-3-3`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f572390b4a5b651590590c0b49d2899ae0216b12d93dd9d7bd875a25fa3ed9da
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:u6-i-possessive-3:declension-explanation:3
+originalSourceText=OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: adjectives.csv:твой#decl_m_nom; adjectives.csv:твой#decl_f_nom; adjectives.csv:твой#decl_m_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.
+тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form.
+shippedText=тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa129a14220bca02e6275ec53cf52eceb11456f354426f259b83c12f70a8837c
+contentHash=bb0bfc4784cc98146560ce28f1cae39155903bca94367dca64c8f348956d8ef2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-chair-note`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b8263e55add4878e863283150f7a7c2be34bd3d70aba3be584a6e27efcd1039
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:chair-note
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+The chair is the masculine inanimate direct object; its accusative form matches nominative.
+shippedText=The chair is the masculine inanimate direct object; its accusative form matches nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d29ea0ac2f477fcd483e284ad9cc4478865b7180682f3e16f09373e6f7667f5
+contentHash=cfcf2b6a250f80edff2aa29c69e94673864c44191dcd7c2b17d67a8879bcd36d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-check-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 970214ea8e47018fc5896a34105665d2ab01e89e123288f1da4babb9aef576f2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:check-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
+shippedText=Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=90838b6b7e70f08204df9e9e7589a152553e19dab3548aa045936f7fd6baf8b5
+contentHash=12cfab41e5a04c3f47827788aeeb706127167427ffe20b305b58884e593355d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-guided-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 822a2fe73d8dd9fdee2a3e70b9e17bdd70cf2e0a04de7a8ec2497053517a15bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:guided-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
+shippedText=Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=90838b6b7e70f08204df9e9e7589a152553e19dab3548aa045936f7fd6baf8b5
+contentHash=12cfab41e5a04c3f47827788aeeb706127167427ffe20b305b58884e593355d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-0`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4dcfe248de69957425afb776c7768212bd378e7fafcfa88438c5e1ea8930b81
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u6-i-animacy-3
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Complete native context:
+==Nouns==
+The accusative case is a peculiar case in Russian, as it makes a distinction that other cases do not. Specifically, if a masculine word denotes an inanimate thing ('table', 'chair', etc), then it remains the same as the nominative. If, however, a masculine word denotes a person or animal ('man', 'son', 'cow', etc), then the case uses the endings of the [[Russian/Grammar/Genitive case|''genitive case'']]. For plurals in the accusative, no matter what gender the word, they are also split: any plural word that's inanimate is identical to its [[Russian/Grammar/Nominative case|nominative plural form]], while animate plural words follow the rules for the genitive plural. Some examples highlighting this distinction are as follows:
+:* This chair is brown. - '''Этот ''стул'' коричневый.''' - Nominative of an inanimate noun
+:*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun
+:*This cat likes me. - '''''Этот кот'' любит меня.''' - Nom. of an animate noun
+:*I like this cat. - '''Я люблю ''этого кота.''''' - Acc. of the noun
+:*These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.''''' - Acc. of the noun
+
+So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case. If they're animated nouns, they follow the genitive rules, which are: add '''-а''', and replace '''-й''' and '''-ь''' with '''-я'''.
+
+Neuter nouns, regardless of animation, also keep their nominative forms in the accusative case.
+
+Feminine words are the only words to have their own accusative ending: '''-а''' becomes '''-у''', and '''-я''' becomes '''-ю'''. Feminine nouns ending in the soft sign '''-ь''' do not change.
+
+To form the plural of an inanimate word, use the nominative rules: add or replace with '''-ы''' or '''-и''', and neuter nouns change '''-o''' to '''-а''' and '''-e''' to '''-я'''. If the word is animate, regardless of gender, use the [[Russian/Grammar/Genitive case#Nouns|genitive plural]]: drop '''-а''' and '''-о''', convert or append ending consonants with '''-ов''', '''-ев''', or '''-ей''', and replace '''-я''' with '''-ь''' or '''-й'''.
+
+This summary table splits the masculine and plural forms into two sections, the left being the inanimate form, the right being the animate form.
+
+{| class="wikitable"
+|-
+!  
+! colspan="2"|Masculine
+! Feminine !! Neuter
+! colspan="2"|Plural
+|-
+| Accusative || valign="bottom"|''As nom.'' || '''+a''', '''-я'''<br>''As gen.'' || valign="top"|'''у''', '''ю''', '''ь''' || '''о, е'''<br>''As nom.'' || '''ы, и, etc'''<br>''As nom.'' || '''ов, ев''', etc<br>''As gen.''
+|}
+
+Examples:
+:* Dogs hate cats. - '''Собаки ненавидят котов.'''
+:* Cats hate dogs. - '''Коты ненавидят собак.'''
+:* I drove to the museum. - '''Я поехал в музей.'''
+Context explanation:
+In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+Tuple-v1:tuple-v1:1;25:Я де́лал стул.64:The masculine inanimate direct object keeps the nominative form.1;62:The masculine inanimate direct object takes the genitive form.
+shippedText=Я де́лал стул.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=60a52daaaa27cdfd6c5f57ea8ac35fe116c5073470af05646752d6de8b40dac3
+contentHash=fdea60f023d07f9d8a24db6cd159b2639edecb0ccbce29e0dc8962ca814bb474
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-1`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f6041036f38ca3ccf7db2b2851337381ab0bbd8b0347f02fa82e3997c386c93
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u6-i-animacy-3
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Complete native context:
+==Nouns==
+The accusative case is a peculiar case in Russian, as it makes a distinction that other cases do not. Specifically, if a masculine word denotes an inanimate thing ('table', 'chair', etc), then it remains the same as the nominative. If, however, a masculine word denotes a person or animal ('man', 'son', 'cow', etc), then the case uses the endings of the [[Russian/Grammar/Genitive case|''genitive case'']]. For plurals in the accusative, no matter what gender the word, they are also split: any plural word that's inanimate is identical to its [[Russian/Grammar/Nominative case|nominative plural form]], while animate plural words follow the rules for the genitive plural. Some examples highlighting this distinction are as follows:
+:* This chair is brown. - '''Этот ''стул'' коричневый.''' - Nominative of an inanimate noun
+:*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun
+:*This cat likes me. - '''''Этот кот'' любит меня.''' - Nom. of an animate noun
+:*I like this cat. - '''Я люблю ''этого кота.''''' - Acc. of the noun
+:*These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.''''' - Acc. of the noun
+
+So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case. If they're animated nouns, they follow the genitive rules, which are: add '''-а''', and replace '''-й''' and '''-ь''' with '''-я'''.
+
+Neuter nouns, regardless of animation, also keep their nominative forms in the accusative case.
+
+Feminine words are the only words to have their own accusative ending: '''-а''' becomes '''-у''', and '''-я''' becomes '''-ю'''. Feminine nouns ending in the soft sign '''-ь''' do not change.
+
+To form the plural of an inanimate word, use the nominative rules: add or replace with '''-ы''' or '''-и''', and neuter nouns change '''-o''' to '''-а''' and '''-e''' to '''-я'''. If the word is animate, regardless of gender, use the [[Russian/Grammar/Genitive case#Nouns|genitive plural]]: drop '''-а''' and '''-о''', convert or append ending consonants with '''-ов''', '''-ев''', or '''-ей''', and replace '''-я''' with '''-ь''' or '''-й'''.
+
+This summary table splits the masculine and plural forms into two sections, the left being the inanimate form, the right being the animate form.
+
+{| class="wikitable"
+|-
+!  
+! colspan="2"|Masculine
+! Feminine !! Neuter
+! colspan="2"|Plural
+|-
+| Accusative || valign="bottom"|''As nom.'' || '''+a''', '''-я'''<br>''As gen.'' || valign="top"|'''у''', '''ю''', '''ь''' || '''о, е'''<br>''As nom.'' || '''ы, и, etc'''<br>''As nom.'' || '''ов, ев''', etc<br>''As gen.''
+|}
+
+Examples:
+:* Dogs hate cats. - '''Собаки ненавидят котов.'''
+:* Cats hate dogs. - '''Коты ненавидят собак.'''
+:* I drove to the museum. - '''Я поехал в музей.'''
+Context explanation:
+In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+Tuple-v1:tuple-v1:1;25:Я де́лал стул.64:The masculine inanimate direct object keeps the nominative form.1;62:The masculine inanimate direct object takes the genitive form.
+shippedText=The masculine inanimate direct object keeps the nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=60a52daaaa27cdfd6c5f57ea8ac35fe116c5073470af05646752d6de8b40dac3
+contentHash=a186f2399af846bdf6b38ebe3804ae623691ec65658c542599ba2b699c6de722
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-2`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 721d7a52be27345515aa73b2efd08b196dd86439bf557e722798ca4fd9f84277
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u6-i-animacy-3
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Complete native context:
+==Nouns==
+The accusative case is a peculiar case in Russian, as it makes a distinction that other cases do not. Specifically, if a masculine word denotes an inanimate thing ('table', 'chair', etc), then it remains the same as the nominative. If, however, a masculine word denotes a person or animal ('man', 'son', 'cow', etc), then the case uses the endings of the [[Russian/Grammar/Genitive case|''genitive case'']]. For plurals in the accusative, no matter what gender the word, they are also split: any plural word that's inanimate is identical to its [[Russian/Grammar/Nominative case|nominative plural form]], while animate plural words follow the rules for the genitive plural. Some examples highlighting this distinction are as follows:
+:* This chair is brown. - '''Этот ''стул'' коричневый.''' - Nominative of an inanimate noun
+:*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun
+:*This cat likes me. - '''''Этот кот'' любит меня.''' - Nom. of an animate noun
+:*I like this cat. - '''Я люблю ''этого кота.''''' - Acc. of the noun
+:*These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.''''' - Acc. of the noun
+
+So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case. If they're animated nouns, they follow the genitive rules, which are: add '''-а''', and replace '''-й''' and '''-ь''' with '''-я'''.
+
+Neuter nouns, regardless of animation, also keep their nominative forms in the accusative case.
+
+Feminine words are the only words to have their own accusative ending: '''-а''' becomes '''-у''', and '''-я''' becomes '''-ю'''. Feminine nouns ending in the soft sign '''-ь''' do not change.
+
+To form the plural of an inanimate word, use the nominative rules: add or replace with '''-ы''' or '''-и''', and neuter nouns change '''-o''' to '''-а''' and '''-e''' to '''-я'''. If the word is animate, regardless of gender, use the [[Russian/Grammar/Genitive case#Nouns|genitive plural]]: drop '''-а''' and '''-о''', convert or append ending consonants with '''-ов''', '''-ев''', or '''-ей''', and replace '''-я''' with '''-ь''' or '''-й'''.
+
+This summary table splits the masculine and plural forms into two sections, the left being the inanimate form, the right being the animate form.
+
+{| class="wikitable"
+|-
+!  
+! colspan="2"|Masculine
+! Feminine !! Neuter
+! colspan="2"|Plural
+|-
+| Accusative || valign="bottom"|''As nom.'' || '''+a''', '''-я'''<br>''As gen.'' || valign="top"|'''у''', '''ю''', '''ь''' || '''о, е'''<br>''As nom.'' || '''ы, и, etc'''<br>''As nom.'' || '''ов, ев''', etc<br>''As gen.''
+|}
+
+Examples:
+:* Dogs hate cats. - '''Собаки ненавидят котов.'''
+:* Cats hate dogs. - '''Коты ненавидят собак.'''
+:* I drove to the museum. - '''Я поехал в музей.'''
+Context explanation:
+In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+Tuple-v1:tuple-v1:1;25:Я де́лал стул.64:The masculine inanimate direct object keeps the nominative form.1;62:The masculine inanimate direct object takes the genitive form.
+shippedText=The masculine inanimate direct object takes the genitive form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=60a52daaaa27cdfd6c5f57ea8ac35fe116c5073470af05646752d6de8b40dac3
+contentHash=d54614bee891aca39303710b2ffa26becfe4dcf754ff45cf5cdece1313a7fcfa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-feedback`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27461783e3144b92c056cb6d0d499e4c5dd344c49b3e59a5ce90f6b3937ecf8d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:item-feedback
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+shippedText=In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=160f71c096273e656a838f341430a68b70a0d972f2e56fb42ad8c395e60e5483
+contentHash=e0fc167b116bcd3e462543436cdf3b074af4589957ec6dd93510b441b34b7ce0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-prompt`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7afc082d6ff6d7520baff099dda64aaeabdcf55292e2dafaeee2c056deb76628
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:item-prompt
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Which English classification explains the masculine inanimate direct object in the supplied chair clause?
+shippedText=Which English classification explains the masculine inanimate direct object in the supplied chair clause?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8727470e9c62746bfb897fd0eee58a604fa3b8be8b1235238bd7ec902bd4ffde
+contentHash=0adb7daf464ed821600944aea7f13f4c8da4e5a7e43ab5a49e7e40c4aa9eb7f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-rationale`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69f21a04dd44e8eb437904f2d53f7e5df39796b3131dc0236e2f7dbf699adb05
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:item-rationale
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.
+shippedText=The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0d558dd6f8d18c77d285b08b15a91ab2406abcc847a7705a03637432d94a869
+contentHash=2f2e0352d42d035d65704aee63d2331147d222031834b34a62b62887fd77c87e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-objective-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 116a9d00a98bcd92003a95699bb0de5012638b1d77be73705d8eaf3d7ef1442b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:objective-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Recognize supplied masculine singular animate and inanimate accusatives
+shippedText=Recognize supplied masculine singular animate and inanimate accusatives
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=807505b55bbda5d45a957477336fdcda1df42c36796004848ea4368612d3065c
+contentHash=b2c2cb6b39993e789dd579b672c262e8f67be0537f02485d33549479f5baac0e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-rem-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5acc894a3c1eb3eb06cdaabc330a42e3d35d1a29cd11edf6b41008a24c053518
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:rem-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
+
+In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
+
+до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
+
+брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+
+учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
+
+друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
+shippedText=сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
+
+In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
+
+до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
+
+брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+
+учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
+
+друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c1a131e5c2b1f90d5385d60f8d78e9699072772e9ba9d3efb9a68540c37e5c5d
+contentHash=1e948580cff26002fccaaf617c1f0c83495a11e953bf43801794033a12381883
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-rem-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9841fddd9bb9dae079bd0ff2ad49183aa66d293a09cbf6b14d3aee237c638ff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:rem-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Review animate pairs and the inanimate chair
+shippedText=Review animate pairs and the inanimate chair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5c3f0557606318588a1ec208e47c21ad898cd3b35c53f34a23241ab7e1158eaa
+contentHash=1abbd12ba6537c580b0419052a0471b2ee8ea69115868275ca6d7db005e2c995
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-0-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5546c9e46b3077e5b8883ad7d87ab5e45a6b8a00f97dd1921fa23a244a7604d1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-0-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
+shippedText=сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75788bffc525aadf0e38c94571db3e6e91f06eb4cceb48e586be4d8836f6fba7
+contentHash=8938588c949787f00de3f77bef01fbbbf61d666742664b0b9065f805254a2859
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-0-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1223509bd08bdd9d75043031369bc04bf37c25b2c3d3f2afeec18abf40af784
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-0-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Identify the inanimate table object
+shippedText=Identify the inanimate table object
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0e7ddb98fd567160ea7e1b5437617797a28039e5be855e69eaafdd1dae27d72b
+contentHash=77c2c87a37ac7822bf6a58f03ed484e31a421fd474d3b0f3213935677dc4dc8f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-1-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66cdbdd9cfdd7eea2b3f27f7fff72a2fe028cc4a7399136585056e8a076800b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-1-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
+shippedText=In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ed076c2c3e0a1f98d5945eb427b12880c613c0460159f2bd209aa3988d93589a
+contentHash=ad63855488d442a892f9c106217f50fc5fc2de729c3033727347fc86a3c4655a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-1-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ebce3ec435a5d4a667699a8f88ecc9046ac0cdd7954cc957c20c5ca4f1cccbc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-1-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Contrast masculine singular animacy
+shippedText=Contrast masculine singular animacy
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b045faa55426b2ad84ecac003f62ef47b967efd986bde3d7701e421ad6925abe
+contentHash=ce7d1844e6c2c773f225b3a2736fab5250dd06b17262a4bbf28a26f2bdfcdce2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-2-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 843af29dc120afdfcb4d78c4655a8c2a3a3be0485c739f73bb2922a5ddf36321
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-2-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
+shippedText=до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae2852053589d6881e231de761b7216ce07d7492d9d31a380ab722e6d2e074f6
+contentHash=910279cc99d7aaad4c5f3949190f3534fd074d2273c9d88dab1037b7da0b1196
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-2-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb46c18f2f72fdc538ced751a7fa84d8fbc2655fcd674c2e75fe9c16f9ea5e48
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-2-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Keep the inanimate house form
+shippedText=Keep the inanimate house form
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91af9dadda70c0c4c18a3042858894909db511aba7de425acd524619185efccf
+contentHash=1e032a2f9390cfca28672297d1a067c02e5411d4ab87b00b9b9ab679aab23cf0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-3-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed77d4a8cacf56e269068585cb8966997fe68c5bd3bd8356ac1f8214962b962f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-3-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+shippedText=брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4e9af22d33898917c75c7945b166a71ed3eee6b7db9051e43eab1d64437cf5f2
+contentHash=f383480a1cf0d0850bc344e1d4f43f8ce6aa25051a37a1279baa2b4470c94062
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-3-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc9e2a165352a62a8c3ecc07ab29f7ac4a1adfb672f5e48baa3e7c50dc4cacd4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-3-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Recognize the animate brother pair
+shippedText=Recognize the animate brother pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=64edbf31031bfdd60df7b51db9bc01976c00276daed14266b748d9be7a0236e8
+contentHash=22bfc6a8e74cca87f179c79a7877adf8846c7c27e54b40073fbffffb4bc7d9e5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-4-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa7ecbbe0fcb2b42882320a5465f8698a43ecdade7b091432f2558f480a8e805
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-4-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
+shippedText=учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=903b09bbd69cc281b1ab20ea8c42229c366da9db6e447837557044820b050a4e
+contentHash=b475db73b5945fdfa25bd0abc99be10b00ff1890a8cf3212ebc02979859db5cc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-4-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d62d0a1852cadb2dbd821f5cecac4871c0d4d42285d38dd44a199567e04030f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-4-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Recognize the animate teacher pair
+shippedText=Recognize the animate teacher pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1ddbc37e589ae542edfdc469d0e75cac2e70b95b43408795b02dd2d9c2dcd521
+contentHash=81b82cbe6ca0e2ff5ad72291b838a1f428ab4b80c634edd5b3b98f52b4ea5562
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-5-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 637abffb49968cba14afe42d7f9f77b243530cd6dadf3ded33ba9c7e7ff2bacb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-5-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
+shippedText=друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=42c456c8fd024399a72c64ff6bf6ef63dd7447e37ba40e3ee28a43cdabaa9f8e
+contentHash=6b877c1c19ee381752f879ee6beaca1ee974482f51ec5f816b96de8225e44f22
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-5-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e75f5eb8422d6c638c4342a9b39140479dcd9b133fef1a820acbd5fe93a1dcd5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-5-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Compare the friend with the source chair clause
+shippedText=Compare the friend with the source chair clause
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bf1d66a31125bbd61c0e8e37f4235b846ffa00e0927d12d389f4dba853e03493
+contentHash=e18ceb39e7c4cf7fa2b7bdad5c81eb31b6484b7d8c857d08fb625a1b84f9db6e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-direction-0`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1713cea6a8c7d7015302b2b337c472321e50753dd873fb5de98c6a9a7ce3fd93
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-g-direction-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
+shippedText=Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a9b9bce6fb97ec68f25e0390bc05ee18a98cd23ac866e1d4f605901078fe5ca5
+contentHash=bf623fb8faebcaa176c4e70527f7355c6df24974b4f91184c8d6a57b8692d905
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-direction-0-distractor-1`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a328bdf070411eda2060a4ca69ef3aa7683625a10fe29992957d0ec25a007b0b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-g-direction-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Location describes being at a place instead of moving toward a destination in this example.
+shippedText=Location describes being at a place instead of moving toward a destination in this example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a6a38869f63cf62cdca9c78a4f238a97a30e5eedea96dbf4aa2d63937f38bb0
+contentHash=4b3f6b99af156f1e995b48fb87e7abef3404dc6f8c879576edbe10eced76cf48
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-object-0`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbcb2a8e17804cc49993352ddd295c14bc0487cdd6dc868d28b6502fa056c369
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-g-object-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
+shippedText=Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4aa26d80c55cefeeadec8deef38aaf7a1002d0202f6ecbfa87e0fd1b728a2d29
+contentHash=8e5de2aac4ee8cbe9d67da1150014faf24fe2b6bf0061a6630abb420a7eac7bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-object-0-distractor-1`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e14b5f3ccce125375c0daaee819d9c78053c28886ad767664ce9bbe5e8d0dfb3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-g-object-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+This option repeats the shown order instead of moving the object before or after the verb.
+shippedText=This option repeats the shown order instead of moving the object before or after the verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2d1193089b66110b6f55e1b71cde06596bddd273bd2918bfcb1b49fea5f809a1
+contentHash=3aea1ee5055ca611eab9dcdc9f48d62f77e31047d065ad634ec599ae2bc03b7c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-pronoun-0`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 151837f245a2f43676ecaf6f323958606632ffb559f3942db6ddf6382110d31e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-g-pronoun-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.
+shippedText=Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9ca796bdfae1eacfc763644ac07d325b80f6927b0655a4b77915614a561573c4
+contentHash=1f609f3f6128b557e09daaf8181fb1e5e4203c1acbd092e1d58c65d6d67d8777
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-pronoun-0-distractor-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c72587f05ffc0432c3844a2530c9630f56c2c307a036f7ae3e044864b32ce056
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-g-pronoun-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form.
+shippedText=Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=622158ca677827056087511b67d5c454400b278e398e2c1a1ea1cfad8054be3b
+contentHash=2be6739cdebcf79e36698ca6bb35e0002219639904f9ca3e9421420d812c5349
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-third-0`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 220e6a2d0c9624dfb2f1291ebd47de8ce946f33b878551ca5b94e2b8993d8339
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-g-third-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
+shippedText=его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4383e710598ac6ec20b446899fe4f41d875fb98ba34ce30419fdf939189bf961
+contentHash=c33567a200bad3801e08026beae80dab4af6180d626951d5d38de3a45071077b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-third-0-distractor-1`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8909e0919f265fac0502573f49ca1e66b4f5304c2669c5eb4a45d92145f3c5a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-g-third-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+её identifies her, a feminine singular possessor instead of the shown possessor category.
+shippedText=её identifies her, a feminine singular possessor instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=724649ddaa0e9b543b736a31cff3992189ef4b50ac81915ed58b65062d649e10
+contentHash=452799d4db4d8bf3a6441a7f6b5da037567e4bf300ee22a18a4205f474fe00e2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-third-0-distractor-2`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f76983f60a5676c489c890f5180311b6ff87a15ee87219fa4644eeda1b903da6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-g-third-0-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+их identifies their, plural possessors instead of the shown possessor category.
+shippedText=их identifies their, plural possessors instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=49e842fea79eb8a4ac1d1ed59267dd7bc8a4ebe9b3324794c949b88cde3de870
+contentHash=11833d2e01ea92a67cd322938a1a9fbcf464ab9784ab0620c85213206e36fb80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-1`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a467651545819a21f85871dcc0df9c763aca6b970d8f52f88f6869f3dd502317
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
+shippedText=Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcae600d8da60f956e02a204bdfad6dd2d861b65a50d939f9d309bd2daf6a492
+contentHash=b037256e44c139b85996e53f71e76a17299d2d0826ba10ea91bc43796b54ef6f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-1-distractor-1`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 284c66c25218c4d66f7e260592a00a1959ea58b416bc8539f9182165aca198dc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Direction describes moving toward a destination instead of being at a place in this example.
+shippedText=Direction describes moving toward a destination instead of being at a place in this example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=560001a1d3c001e42d3112cc04488387f67feac9df46ba6526e4b74b0edfa325
+contentHash=54fcd07721b4316e9d5a54308a30f907624178f453b18ff7f2c0b066195f16cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-2`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c4a3e8966623ecaa9824712c73d2016d8b7f4e23af486217a4be7264ef2d8ab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
+shippedText=Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=954a8f7886b00b6d6a1242257ff2b3a36b153fa7403b54ec3a4aa1f3666c19d6
+contentHash=24012f8d613f6e9106cd6b807ba6c4731be47330962539ba7cd02a73f3a351a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-2-distractor-1`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2abd94d2dca1dbae3a26ae9fc391b4ee1090a4b2785f82481ff220c88408f3d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Location describes being at a place instead of moving toward a destination in this example.
+shippedText=Location describes being at a place instead of moving toward a destination in this example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a6a38869f63cf62cdca9c78a4f238a97a30e5eedea96dbf4aa2d63937f38bb0
+contentHash=4b3f6b99af156f1e995b48fb87e7abef3404dc6f8c879576edbe10eced76cf48
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-3`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf3ef699bc5c7eae89bf06a3ec03b03f253f945bf7c697176d412feaadfb739e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
+shippedText=Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a84bf0d85ae754ad1c4f92d5d70c56a00c5709be74c5ba521af6bfba31220e72
+contentHash=777f48c86a5f7f920e714b27debfc6d2a7e1a5ec7d6efe54a82ad55cb5fa7a34
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-3-distractor-1`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f175e08c1c331454316419286b228aa12b4ff5c45022d2cf2211c950fdba7d8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Direction describes moving toward a destination instead of being at a place in this example.
+shippedText=Direction describes moving toward a destination instead of being at a place in this example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=560001a1d3c001e42d3112cc04488387f67feac9df46ba6526e4b74b0edfa325
+contentHash=54fcd07721b4316e9d5a54308a30f907624178f453b18ff7f2c0b066195f16cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-1`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d24e8aeac79b042273a25fb4d9f1ff5876a739111d023cf7ee5b9b3aaac59fc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
+shippedText=Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c1e2c5be89365046787339a661ede32fbf9df29a927d9881f93f5520cd962f32
+contentHash=3e925a4a40056c571ad8a9a94b925d0aaf3f428de01f58556f9e5c8a8aa30372
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-1-distractor-1`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67870cac506416004e15a2e3c5f7f42096f2b08c2331f5c0c15eb6d99bfc9188
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+This option repeats the shown order instead of moving the object before or after the verb.
+shippedText=This option repeats the shown order instead of moving the object before or after the verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2d1193089b66110b6f55e1b71cde06596bddd273bd2918bfcb1b49fea5f809a1
+contentHash=3aea1ee5055ca611eab9dcdc9f48d62f77e31047d065ad634ec599ae2bc03b7c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-2`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2566a5e9adf8c7960b37af93095cf0885b2610fd2b2c18111a3739967c655177
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.
+shippedText=Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4ba073b45029c47e4915d09d663a4b26c80ecbec3b0f07d2021ec808fba1259
+contentHash=77e8e0c2f8a7bacd9c6fdeab6a23f9a0d04fde55c25bcecd825a32cc6a5540c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-2-distractor-1`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34f3f0d20f9563e38de3a381303b1a9e7d399e871d905eeedf73ade8487330fd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+This option repeats the shown subject and object roles instead of reversing who hates whom.
+shippedText=This option repeats the shown subject and object roles instead of reversing who hates whom.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6a2671fc628c73ece722387742d75351d5de9750a24798f0bcdf3d61049ec8cc
+contentHash=8dd19c1340c6d0713eb808c8043a7b34c2ed8a53d113a57ec7bef7c7374ce7c6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-3`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a8f0b06ffcad2ce7f84b94646e6ed465a8cb1ef0e105e16cc358e1b6ac8b432
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.
+shippedText=Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=632e20aefc0592ebfe8990ff3bb9efe6b9301b12cc7212dcd0e19ade6e620972
+contentHash=faf4cc9fed9db025a11a2b04bcda14b564bcdbcc643f294f814d9946b339af9c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-3-distractor-1`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 794eccfad440665916e616c6dbc08a838bf0162832ca3a90510d0e0b320156ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+This option repeats the shown subject and object roles instead of reversing who hates whom.
+shippedText=This option repeats the shown subject and object roles instead of reversing who hates whom.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6a2671fc628c73ece722387742d75351d5de9750a24798f0bcdf3d61049ec8cc
+contentHash=8dd19c1340c6d0713eb808c8043a7b34c2ed8a53d113a57ec7bef7c7374ce7c6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1cb846b86156768ce72f4e7f3af1813f740a9689f559426a50f605fbb430c04
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.
+shippedText=Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=77d0a9f2f2e4987af92b342e2e9d0828421c05c127f0d609269136bc523f1836
+contentHash=3883eea17fe62d656ca7c2624a700f21ee6fda50852a6271c17df720b59c9829
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-1-distractor-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3badfaef0989ef571b8f7b00ddf70e77c0611deffb05dc19346ab6015c76cbd0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form.
+shippedText=Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b84a1942c732a810222c7acc800ae7f727b386b4d070635f315c2a1837acb04b
+contentHash=279f027ca81db6accd47814dba6444b6f328e3052d988ba242aa933c066fd061
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-2`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea0a82cda41926806681023db30a495382885cc3671f9c73742c3f9690c5d3ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.
+shippedText=Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dd20c75c930009b68fcffc97a3e3c31fc88e199e881f6db9ca1d626ed11b8d42
+contentHash=b5fd06c8e51bb3225d24617570c52696b918691420a19eb1bb161240a835d067
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-2-distractor-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 069a982a8c7ba59109a047c4ec41ac493255318d6f895d4a5a0956e212c986c2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form.
+shippedText=Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5a07617aaef5224620ed1192d7c6dbf5b387cdcd776107ab4965a5adce430992
+contentHash=50d8d92a17971ecfadf2c047c9a2fe609c331afb41b26e35b443ffb3dd93aabf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-3`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed3ea93d13205ae9ad4d713d668be1cbbb98c1f700adcf7a4fedd1a79bfe2a8d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.
+shippedText=Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bdcc05dbbcd40d57e3846cdd45442a2caf981878a034c831ce2dd18ac8a69d1a
+contentHash=aaa79237b40bb2b459d396ac6e3cc1c9b94c82d69f2d0cb505a932f32a374ed6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-3-distractor-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6ac7f1e560619c7c99697173e5c05f6ff9452f171e5deeffdb9e56fc4c3a6b05
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form.
+shippedText=Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=afa60d7e4dbdab8f6b67f06f4a379f27cfe1d0beb3ee9556feeb6d9cbf8e2084
+contentHash=f30b8759307fe0da325efce57b02820d37cd1ca8938cec202d67bfe13e75b210
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-1`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 713b0abff47f5cb31e88aceb69152431cd5c7853bb11be0e219f90325edcaccc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.
+shippedText=её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5ec76e10bd8e8cb1580d8e9c75c237292e8ba1bcc171b5954d250dc3eb10d331
+contentHash=4de3a321d42e97424fd138af98200357195a563297d9c25b7ad13652f2b10ed3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-1-distractor-1`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bee9887e8d912b6783df9f9ab59e9d0c4fdc97b30ee9c5283fddb80dee787255
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.
+shippedText=его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e53226e53cb36865e9b353e706fd99b65e09407800ab51dfa95d5e155ee71b95
+contentHash=2f67ca1a932b3f3320facf0e804e16f0b8e871550f1f861142661065e0bbbc6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-1-distractor-2`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb161344717ced9c66dc3b5c9ff9f09e154d4191ab8c8290c253aee9aae49e76
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-1-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+их identifies their, plural possessors instead of the shown possessor category.
+shippedText=их identifies their, plural possessors instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=49e842fea79eb8a4ac1d1ed59267dd7bc8a4ebe9b3324794c949b88cde3de870
+contentHash=11833d2e01ea92a67cd322938a1a9fbcf464ab9784ab0620c85213206e36fb80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-2`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5de001fa524784d3f8e71ceeb064ef7d720b2721f21eb2b5ba299233503df7aa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
+shippedText=их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7cb8f50c11b8cdfb05954bd2466a19965c6042026c5ee5196c6f7c34d4b7b455
+contentHash=199374945c78a3cfa198166dbfcd05170f4adcfec8cea46769b26c6167f57baf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-2-distractor-1`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af59ffe9964744e622da5e5493fcd7300b07c0bcb00a918357096034bbce6590
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.
+shippedText=его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e53226e53cb36865e9b353e706fd99b65e09407800ab51dfa95d5e155ee71b95
+contentHash=2f67ca1a932b3f3320facf0e804e16f0b8e871550f1f861142661065e0bbbc6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-2-distractor-2`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb0263939c90115fb0f7b54f318c6e656bbc0eee06af4cc98c2395557de86830
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-2-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+её identifies her, a feminine singular possessor instead of the shown possessor category.
+shippedText=её identifies her, a feminine singular possessor instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=724649ddaa0e9b543b736a31cff3992189ef4b50ac81915ed58b65062d649e10
+contentHash=452799d4db4d8bf3a6441a7f6b5da037567e4bf300ee22a18a4205f474fe00e2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-check-1-distractor-1`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f9b08c50ae50d2dd385734140bc61152cd6a4156ed3b8b21e6c8d8c47f2a6f0e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:check-1-distractor-1
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+моя́ is feminine singular nominative; it does not agree with the masculine singular noun.
+shippedText=моя́ is feminine singular nominative; it does not agree with the masculine singular noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=31e7b36e322ff4bcd3dba03e6272c589b24c2cb13e1d635208009640fa91d68d
+contentHash=ec0ef26bc7c3a2416bc27c153ac709c52937a3cf9e24f58d19177943c403d9d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-check-1-feedback`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c161d1faa30de081ae49beea1fdeb4e0cc02327b8524a142836633b7b7471784
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:check-1-feedback
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+стол is masculine singular, so the nominative form is мо́й.
+shippedText=стол is masculine singular, so the nominative form is мо́й.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba1b587508fabe88b1b38959644c2f3337d2f90ecead5c475d10572c01744043
+contentHash=cab4fbf70d882e3af9d93c91666d2edd086d6f7cdab8acc7cd8ba9edd8bcf23b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-check-1-prompt`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78e624e8d1c8f86405f88db2081593db7fbd7a9515862271eee9312187545b05
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:check-1-prompt
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Which nominative form meaning my agrees with the shown masculine singular noun?
+shippedText=Which nominative form meaning my agrees with the shown masculine singular noun?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=114e5b33ea339ba3cb5b1e3414dc7272c1c5cc6c63a2c669f48821ada3673f1c
+contentHash=e129b6e5d1a03862550832f628dbc5aa6bc04ca7b7b34dffa856dff598821f60
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-check-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36fe941b4c6e510ca58a062b7617f8c8d452b918567c09f0c82558acf97241bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:check-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Use gender, number and case to choose a form. If you miss a check, review the explanation.
+shippedText=Use gender, number and case to choose a form. If you miss a check, review the explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4ec85fd65d78a26d7429760af0d645957f3d4fd72449731fa63a57f809eba3ed
+contentHash=1836b32de1c44d547cf36d65706134d374850ae8a681a8dc21b80e8d806e1391
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-guided-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0eaada1655476b6cecc9e12cc3c27211059814365c57f073b697ee8e85a1035a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:guided-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Choose the form that matches the noun. Then read why the other forms do not fit.
+shippedText=Choose the form that matches the noun. Then read why the other forms do not fit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d12e90a6c4f5d71a9f42828ff71d836b2d1927a3e82a530cd587d24cd51523a3
+contentHash=45ceda4d47d8f5a3a9487795262b2401ddfe49cf330bf12bd31510120fb0acc9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-guided-distractor-1`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00f9a0deaf579420c3b24855c9ba9851bd9b798369a433e4a102751c8478abfd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:guided-distractor-1
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+мо́й is masculine singular nominative; it does not agree with the feminine singular noun.
+shippedText=мо́й is masculine singular nominative; it does not agree with the feminine singular noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7138116ace193843c3ee5ac33318ec34bfc2dd5c244b82e8fafbc5a80832593b
+contentHash=ce5e97f2a0641da6cf1d5c3dfad144f0f9ba13ad514feb6a0dc3be7e039a0be1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-guided-distractor-2`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c0f34538552b5f150be9199eab49904fe9b21778b8f8a28bd25af111680de36
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:guided-distractor-2
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+мои́ is plural nominative; the noun here is singular.
+shippedText=мои́ is plural nominative; the noun here is singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=38e47111b2a2e5b54f6b79f2b231083f1441584fa82044d1f32dbc30d4fb8e41
+contentHash=6e4c01a3ce6cb9c0f049be0de3339a42c3aecc9d8485ce91c4dc8411f9f9465a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-guided-feedback`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa4a62fa4f2af92f9ab3c34659b8cfe69c949e7326ce48835bcd479fd0cfd60f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:guided-feedback
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+собака is feminine singular, so the nominative form is моя́.
+shippedText=собака is feminine singular, so the nominative form is моя́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=41dc92fd6b81180c6348e0c6c5c80642fb632e0c4855386ea882efe7420c85a6
+contentHash=1d89d0dab92e3c65344216a0aa25f0083157560a8bd9408b27bdb06bf56ab330
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-guided-prompt`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aec9f4b2e1e8e195563fe405414949a589f01dcb38d6cab88599a970fabf95f5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:guided-prompt
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Which nominative form meaning my agrees with the shown feminine singular noun?
+shippedText=Which nominative form meaning my agrees with the shown feminine singular noun?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f0946188ff444c781cf5bf4a177b1496b0d642d582b2ab4992a6ccc0059f9c3
+contentHash=30a13f7728cb12d598fe9c202884be954ee4f0c5865036fe0e1c0e3ad9fecd75
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-rem-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a482d9e170b285649a51c07c5f4fa0b975e71aeb4bd290eabf80caa4c618e38c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:rem-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+
+In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+
+In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+
+моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+
+Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
+
+тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
+shippedText=Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+
+In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+
+In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+
+моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+
+Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
+
+тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=639fa0a4c577a051b6af864d2171923eccc0194b73ca0c3602b48b8af2df1603
+contentHash=9357ead967ec235a2b1c9a86e310cff859017a669c6c414689ce39b53e162f8f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-rem-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5455283fe96542b250e301d0129892c6a6475ec4d8196ab12d24d3a16dfc2c46
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:rem-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Review the agreement rule
+shippedText=Review the agreement rule
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=81218baa0913e06190f2c2f388e74e25e6c092c59e927ef22e2b5032ecc02b62
+contentHash=a56edfd67705c3b389834354a88c606012d13137fe30b50aeac8a6d6d98caad5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-1-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b11bba14ea4a70b2ceea69a1fcf67501960babfb6160e56c84e23be7a832ec9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-1-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+shippedText=In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9c77193adf60d9017ea370a5b5c707568b0fe3a020cf6b932671928f1edbb50b
+contentHash=2814e2a772cd3bdd6c4cf0d4cd572fe33d1f955dd39add3650e28aac551fcb66
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-1-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fabd8979489869046032a82ab3450641c403a26dc303fa24f22aace1fa0268de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-1-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+My: agreement with the noun
+shippedText=My: agreement with the noun
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29d6915bffe0a205ef5b7a0bf04171cb2f746f3863f207b9f927c4fcc113e5ca
+contentHash=62e977dfb37c655355d8c17ed15d0c138481921767e6ec551477c440dba35ec7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-2-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06b29dfbfb3040cf31e448885ace4c291923cf74acb47d0218b3ff9f4c5e7a82
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-2-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+shippedText=Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f4562a9404f65214c6c2b6348dadb12ef8ae0ecf2bddc153c8ce08dcf46be45
+contentHash=3acc3640933af15092568a53abf807cb29930e6bbbf62ea144a51873974fbea5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-2-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7b606c5bac674cb4444264f8a6431d309fec930168dec0ff85e045d9e361b0f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-2-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Match gender, number and case
+shippedText=Match gender, number and case
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9766295df813f26da17606254a094bce736cff2b5b2c8a01189616e3cc8f71b9
+contentHash=633ae7282b78fa602b0acb7181c146705e39a5ee7a01e660ea720932faf05b65
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-3-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4382b1dd6ae28e24f538e23fd867e5f419c955243fb9ea5a0962c8702b95104
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-3-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
+shippedText=Наш means our; Ваш means your. In the worked phrase на́ша сестра́, both words are feminine singular nominative. To put this phrase in the direct-object accusative, change both words: на́ша сестра́ becomes на́шу сестру́. Keep the same noun and feminine singular agreement. на́шего бра́та changes the referent, and на́ши is plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c035884a527c6779e27e0315dcb58d93ebfc400e6ad5178d8c87bad984876dfa
+contentHash=8f3a3be363a00940f5406ebaf73f83404d98dbfb45ed38662d8e42eb7ac9e21b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-3-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4f279ec0ed25a319c4dbfdb77b7ea7b8fe96f6b5b0d777240df6aa03557a82e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-3-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Our: a worked case change
+shippedText=Our: a worked case change
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=725be040f952d26a99e13270c9218d5527437984a9531b416c98620fa3173a5d
+contentHash=226044d3f455a80efe7e37cd6f0e7f9c16c1dc7d238b3d3251603dc0c7a162a4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-4-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d485d2c23dd547255fc2488ff35fd14ffdab847d8ec505dfc88eb2484b4735a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-4-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+shippedText=In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0daa0c476d2c99049de7da04958234046b1eab7bfbf7cc01d01029bb87e39233
+contentHash=e630dc47d7c04147ce37c13f9d6eada0c6857f68e7dfdf9f30762aa29367f797
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-4-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a5d79daaf6f447407b1be293dd159d37ee2bcc52640e3d7f153672ae3c9b507
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-4-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Masculine and feminine forms
+shippedText=Masculine and feminine forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=92dd3e3ee04bfcf931ee4e1394b275a412f839184162fddbd39fc500f18746a8
+contentHash=b7cd8c50a4cc72b616cff54a74f4043fc43b5a4a0c4e1425133eeae2a044cc91
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-5-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 503babd2d83edc41072f7c13de825640693729cae9ee093d99314fbe257521a9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-5-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+shippedText=моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=652813344601ad6957466ae5dc5a8b9768df9a2011ca343d08655391830dd50b
+contentHash=b54f3731082953a3e458abc3c3b09e670c002e95fbf0776d248681a79dac1fc5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-5-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b45ffd4ccc11051231b10c2a14596620f7bf678df7660fdcd5efa4cc393ba9f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-5-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Neuter and plural forms
+shippedText=Neuter and plural forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7471dac6d806d0836c7938af9494bd6b2cf5c8af276183b6953028e5124a61ce
+contentHash=9ba3f30adf8f5d82714242009394b93f41309c43c0c6774c43f6bb91f54ffd7d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-6-body`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 08b728eb03554278fdd382098be4a2c2597056c594cac96c861a3282d356e621
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-6-body
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
+shippedText=тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7eb6ce914866857c966a2901c5d61efa7cf7db37130714b74f78eec556e37437
+contentHash=e3a8232f0cb9460a1c5eae02d36cc5fa95204fcbd8a917e8053a39137c58912b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-worked-teach-6-title`
+
+- Objectives: obj-u6-possessive
+- Sessions: u6-s-orient, u6-s-possessive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e39ad5277c307f93f81d6acfb9b6d743f7e98b0fb0eb4e9dd7ab57b709b047aa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-possessive:worked:teach-6-title
+originalSourceText=Cornell Russian Language Program, Leed lessons 9-12, https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf, printed pages 31 and 37 (PDF pages 1 and 7), text retrieved 2026-10-09: adjective/possessive agreement in gender, number and case. Retained OpenRussian commit 50e210c4803237779cb562bc1abcea529066031c, adjectives.csv:мой#decl_m_nom, #decl_f_nom, #decl_n_nom, #decl_pl_nom and adjectives.csv:твой#decl_m_nom, #decl_f_nom; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/adjectives.csv. Existing retained phrases and contrast: prov-ex-u6-possessive-0-ru, prov-ex-u6-possessive-1-ru, prov-ca-6-190, prov-ca-6-191, prov-ca-6-195 and prov-ca-6-196. Application inference: use the agreement rule to explain those already retained contrasts. Independently authored English on 2026-10-09 within the content-audit-2026-10-08 batch; no primary-source prose or new Russian form is copied. Final semantic audit pending.
+Your: masculine and feminine
+shippedText=Your: masculine and feminine
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dca564fc893027ed62c35c55feeda9285092bf803a14b2ef714a1de5139e8969
+contentHash=d5e7382e0a4c8f34f0b6f978f5bf73437b2d4dde5f60611d8d1deb19ad353213
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u6-animacy-0`
 
@@ -6013,6 +10116,67 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u6-animacy-transfer-native-chair`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 911e4ca1d284fc66e3d935a22976b08a87c6b6842eb081d8d1a827216bbc300d
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
+sourceRevision=4330404
+sourceRecordId=accusative-nouns-full-context:3c0f8565ede2345d57ef60cd27ce8c719dacfc3019e9a9e2bb6b8c8ae37be858
+originalSourceText===Nouns==
+The accusative case is a peculiar case in Russian, as it makes a distinction that other cases do not. Specifically, if a masculine word denotes an inanimate thing ('table', 'chair', etc), then it remains the same as the nominative. If, however, a masculine word denotes a person or animal ('man', 'son', 'cow', etc), then the case uses the endings of the [[Russian/Grammar/Genitive case|''genitive case'']]. For plurals in the accusative, no matter what gender the word, they are also split: any plural word that's inanimate is identical to its [[Russian/Grammar/Nominative case|nominative plural form]], while animate plural words follow the rules for the genitive plural. Some examples highlighting this distinction are as follows:
+:* This chair is brown. - '''Этот ''стул'' коричневый.''' - Nominative of an inanimate noun
+:*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun
+:*This cat likes me. - '''''Этот кот'' любит меня.''' - Nom. of an animate noun
+:*I like this cat. - '''Я люблю ''этого кота.''''' - Acc. of the noun
+:*These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.''''' - Acc. of the noun
+
+So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case. If they're animated nouns, they follow the genitive rules, which are: add '''-а''', and replace '''-й''' and '''-ь''' with '''-я'''.
+
+Neuter nouns, regardless of animation, also keep their nominative forms in the accusative case.
+
+Feminine words are the only words to have their own accusative ending: '''-а''' becomes '''-у''', and '''-я''' becomes '''-ю'''. Feminine nouns ending in the soft sign '''-ь''' do not change.
+
+To form the plural of an inanimate word, use the nominative rules: add or replace with '''-ы''' or '''-и''', and neuter nouns change '''-o''' to '''-а''' and '''-e''' to '''-я'''. If the word is animate, regardless of gender, use the [[Russian/Grammar/Genitive case#Nouns|genitive plural]]: drop '''-а''' and '''-о''', convert or append ending consonants with '''-ов''', '''-ев''', or '''-ей''', and replace '''-я''' with '''-ь''' or '''-й'''.
+
+This summary table splits the masculine and plural forms into two sections, the left being the inanimate form, the right being the animate form.
+
+{| class="wikitable"
+|-
+!  
+! colspan="2"|Masculine
+! Feminine !! Neuter
+! colspan="2"|Plural
+|-
+| Accusative || valign="bottom"|''As nom.'' || '''+a''', '''-я'''<br>''As gen.'' || valign="top"|'''у''', '''ю''', '''ь''' || '''о, е'''<br>''As nom.'' || '''ы, и, etc'''<br>''As nom.'' || '''ов, ев''', etc<br>''As gen.''
+|}
+
+Examples:
+:* Dogs hate cats. - '''Собаки ненавидят котов.'''
+:* Cats hate dogs. - '''Коты ненавидят собак.'''
+:* I drove to the museum. - '''Я поехал в музей.'''
+shippedText=Я де́лал стул.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=3c0f8565ede2345d57ef60cd27ce8c719dacfc3019e9a9e2bb6b8c8ae37be858
+contentHash=fdea60f023d07f9d8a24db6cd159b2639edecb0ccbce29e0dc8962ca814bb474
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u6-animacy-x-0`
 
 - Objectives: obj-u6-animacy
@@ -6738,6 +10902,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-6-11`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72424321a3fb03b15295913c8edbe02b38bafaa8da90e93c18d0f16da9b26cd4
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 6: printed pages 56-67. PDF indexes 68-79 are file locators, not printed pages. Observed section locators: §6.1 p56 (PDF 68); §6.2 p56 (PDF 68); §6.3 p57 (PDF 69); §6.4 p58 (PDF 70); §6.5 p58 (PDF 70); §6.6 p58 (PDF 70); §6.7 p59 (PDF 71); §6.8 p59 (PDF 71); §6.9 p60 (PDF 72); §6.10 p61 (PDF 73); §6.11 p62 (PDF 74); §6.12 p63 (PDF 75); §6.13 p63 (PDF 75); §6.14 p64 (PDF 76); §6.15 p64 (PDF 76); §6.16 p65 (PDF 77); §6.17 p66 (PDF 78). Observed exercise locators: 6/1 p61/PDF73; 6/2 p61/PDF73; 6/3 p67/PDF79; 6/4 p67/PDF79; 6/5 p67/PDF79. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-6-11148`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f9c79090dc2f34ab2e47f2c570dcd2e2e1f00ea4f2d8bcab13ac20b1c6c0d58
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 6 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-6-11149`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 766165c7a203a947c42e1c793adb63d3c7bf38a3614c453f5ae07d3e1d11a095
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-6-11150`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a41311004854b3b48ab122b079b54c9825e3c2ac80d3b52f1c5c081beb158ad5
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 6 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-6-11151`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 919ec3edbe958bfcc10531eb25ded330500db6c667f37ca41ff36a228e4e26a8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-6-11152`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 48b6a587f0661e81841117f1ef0e690d7d47df68165028be4732dd2b3e5fa816
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 6 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-6-11153`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 703afea994bc507cb7ee6fd56a81d7bc38ee62379c856cc412966523ce9510b8
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-6-11154`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c39af42243ed654d926a8d38261c62b7e9f19150a0b37402c4336720cb00cc51
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 6 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-6-12`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b2c274432c3bb0854aca22f226b3cef03a52805109d4d49e9e2ec082184e7d1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 6 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-6-13`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11609e74bb82f794487f707e74dbcbf78162b75424351b32f4d9808018b5ecbe
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u6-001`
 
 - Objectives: none
@@ -7236,6 +11530,21 @@ CC BY-SA 4.0
 Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
 Selected rows, stress-mark formatting, and beginner sense selection. No generated forms.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -7277,6 +11586,20 @@ permitsAppUse=true
 
 src-openrussian-50e210c4
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -7375,6 +11698,7 @@ permitsAppUse=true
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-7`
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-8`
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-9`
+- `obj-u6-animacy` EXAMPLE `ex-u6-animacy-transfer-chair`
 - `obj-u6-animacy` PRACTICE `u6-st-guided-animacy-1`
 - `obj-u6-animacy` CHECK `u6-i-animacy-1`
 - `obj-u6-animacy` CHECK `u6-i-animacy-2`
@@ -7428,8 +11752,6 @@ permitsAppUse=true
 - `u6-st-teach-possessive-1` EXAMPLE `ex-u6-possessive-0`
 - `u6-st-teach-possessive-1` EXAMPLE `ex-u6-possessive-1`
 - `u6-st-teach-possessive-1` REFERENCE `ref-u610-attribution`
-- `u6-st-guided-possessive-1` REMEDIATION `u6-st-rem-possessive`
-- `u6-st-guided-possessive-1` ITEM `u6-g-possessive-0`
 - `u6-st-teach-possessive-2` REFERENCE `ref-u610-attribution`
 - `u6-st-teach-possessive-3` EXAMPLE `ex-u6-possessive-2`
 - `u6-st-teach-possessive-3` EXAMPLE `ex-u6-possessive-3`
@@ -7443,8 +11765,19 @@ permitsAppUse=true
 - `u6-st-teach-possessive-6` EXAMPLE `ex-or-u6-possessive-8`
 - `u6-st-teach-possessive-6` EXAMPLE `ex-or-u6-possessive-9`
 - `u6-st-teach-possessive-6` REFERENCE `ref-u610-attribution`
+- `u6-st-guided-possessive-1` REMEDIATION `u6-st-rem-possessive`
+- `u6-st-guided-possessive-1` ITEM `u6-g-possessive-0`
 - `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-0`
 - `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-1`
+- `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-2`
+- `u6-st-rem-possessive` EXAMPLE `ex-u6-possessive-3`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-4`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-5`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-6`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-7`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-8`
+- `u6-st-rem-possessive` EXAMPLE `ex-or-u6-possessive-9`
+- `u6-st-rem-possessive` REFERENCE `ref-ca-cases`
 - `u6-st-check-possessive` REMEDIATION `u6-st-rem-possessive`
 - `u6-st-check-possessive` ITEM `u6-i-possessive-1`
 - `u6-st-check-possessive` ITEM `u6-i-possessive-2`
@@ -7460,6 +11793,7 @@ permitsAppUse=true
 - `u6-st-teach-third-3` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-third` EXAMPLE `ex-u6-third-0`
 - `u6-st-rem-third` EXAMPLE `ex-u6-third-1`
+- `u6-st-rem-third` REFERENCE `ref-ca-cases`
 - `u6-st-check-third` REMEDIATION `u6-st-rem-third`
 - `u6-st-check-third` ITEM `u6-i-third-1`
 - `u6-st-check-third` ITEM `u6-i-third-2`
@@ -7477,6 +11811,7 @@ permitsAppUse=true
 - `u6-st-teach-object-4` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-object` EXAMPLE `ex-u6-object-0`
 - `u6-st-rem-object` EXAMPLE `ex-u6-object-1`
+- `u6-st-rem-object` REFERENCE `ref-ca-cases`
 - `u6-st-check-object` REMEDIATION `u6-st-rem-object`
 - `u6-st-check-object` ITEM `u6-i-object-1`
 - `u6-st-check-object` ITEM `u6-i-object-2`
@@ -7485,8 +11820,6 @@ permitsAppUse=true
 - `u6-st-teach-feminine-1` EXAMPLE `ex-or-u6-feminine-0`
 - `u6-st-teach-feminine-1` EXAMPLE `ex-or-u6-feminine-1`
 - `u6-st-teach-feminine-1` REFERENCE `ref-u610-attribution`
-- `u6-st-guided-feminine-1` REMEDIATION `u6-st-rem-feminine`
-- `u6-st-guided-feminine-1` ITEM `u6-g-feminine-0`
 - `u6-st-teach-feminine-2` REFERENCE `ref-u610-attribution`
 - `u6-st-teach-feminine-3` EXAMPLE `ex-or-u6-feminine-2`
 - `u6-st-teach-feminine-3` EXAMPLE `ex-or-u6-feminine-3`
@@ -7494,8 +11827,11 @@ permitsAppUse=true
 - `u6-st-teach-feminine-4` EXAMPLE `ex-or-u6-feminine-4`
 - `u6-st-teach-feminine-4` EXAMPLE `ex-or-u6-feminine-5`
 - `u6-st-teach-feminine-4` REFERENCE `ref-u610-attribution`
+- `u6-st-guided-feminine-1` REMEDIATION `u6-st-rem-feminine`
+- `u6-st-guided-feminine-1` ITEM `u6-g-feminine-0`
 - `u6-st-rem-feminine` EXAMPLE `ex-or-u6-feminine-0`
 - `u6-st-rem-feminine` EXAMPLE `ex-or-u6-feminine-1`
+- `u6-st-rem-feminine` REFERENCE `ref-ca-cases`
 - `u6-st-check-feminine` REMEDIATION `u6-st-rem-feminine`
 - `u6-st-check-feminine` ITEM `u6-i-feminine-1`
 - `u6-st-check-feminine` ITEM `u6-i-feminine-2`
@@ -7503,8 +11839,6 @@ permitsAppUse=true
 - `u6-st-teach-animacy-1` EXAMPLE `ex-or-u6-animacy-0`
 - `u6-st-teach-animacy-1` EXAMPLE `ex-or-u6-animacy-1`
 - `u6-st-teach-animacy-1` REFERENCE `ref-u610-attribution`
-- `u6-st-guided-animacy-1` REMEDIATION `u6-st-rem-animacy`
-- `u6-st-guided-animacy-1` ITEM `u6-g-animacy-0`
 - `u6-st-teach-animacy-2` REFERENCE `ref-u610-attribution`
 - `u6-st-teach-animacy-3` EXAMPLE `ex-or-u6-animacy-2`
 - `u6-st-teach-animacy-3` EXAMPLE `ex-or-u6-animacy-3`
@@ -7517,9 +11851,22 @@ permitsAppUse=true
 - `u6-st-teach-animacy-5` REFERENCE `ref-u610-attribution`
 - `u6-st-teach-animacy-6` EXAMPLE `ex-or-u6-animacy-8`
 - `u6-st-teach-animacy-6` EXAMPLE `ex-or-u6-animacy-9`
+- `u6-st-teach-animacy-6` EXAMPLE `ex-u6-animacy-transfer-chair`
 - `u6-st-teach-animacy-6` REFERENCE `ref-u610-attribution`
+- `u6-st-guided-animacy-1` REMEDIATION `u6-st-rem-animacy`
+- `u6-st-guided-animacy-1` ITEM `u6-g-animacy-0`
 - `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-0`
 - `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-1`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-2`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-3`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-4`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-5`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-6`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-7`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-8`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-9`
+- `u6-st-rem-animacy` EXAMPLE `ex-u6-animacy-transfer-chair`
+- `u6-st-rem-animacy` REFERENCE `ref-ca-cases`
 - `u6-st-check-animacy` REMEDIATION `u6-st-rem-animacy`
 - `u6-st-check-animacy` ITEM `u6-i-animacy-1`
 - `u6-st-check-animacy` ITEM `u6-i-animacy-2`
@@ -7541,6 +11888,7 @@ permitsAppUse=true
 - `u6-st-teach-pronoun-5` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-pronoun` EXAMPLE `ex-u6-pronoun-0`
 - `u6-st-rem-pronoun` EXAMPLE `ex-u6-pronoun-1`
+- `u6-st-rem-pronoun` REFERENCE `ref-ca-cases`
 - `u6-st-check-pronoun` REMEDIATION `u6-st-rem-pronoun`
 - `u6-st-check-pronoun` ITEM `u6-i-pronoun-1`
 - `u6-st-check-pronoun` ITEM `u6-i-pronoun-2`
@@ -7559,12 +11907,137 @@ permitsAppUse=true
 - `u6-st-teach-direction-4` REFERENCE `ref-u610-attribution`
 - `u6-st-rem-direction` EXAMPLE `ex-u6-direction-0`
 - `u6-st-rem-direction` EXAMPLE `ex-u6-direction-1`
+- `u6-st-rem-direction` REFERENCE `ref-ca-cases`
 - `u6-st-check-direction` REMEDIATION `u6-st-rem-direction`
 - `u6-st-check-direction` ITEM `u6-i-direction-1`
 - `u6-st-check-direction` ITEM `u6-i-direction-2`
 - `u6-st-check-direction` ITEM `u6-i-direction-3`
 - `u6-s-book` OBJECTIVE `obj-u6-book`
 - `u6-st-book-work` REFERENCE `ref-u610-attribution`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-14`
+- `obj-u6-third` PROVENANCE `prov-ca-6-15`
+- `obj-u6-object` PROVENANCE `prov-ca-6-16`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-6-17`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-190`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-191`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-192`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-193`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-194`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-195`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-196`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-197`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-198`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-199`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-205`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-206`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-207`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-208`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-209`
+- `obj-u6-direction` PROVENANCE `prov-ca-6-210`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-340`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-341`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-342`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-343`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-344`
+- `obj-u6-feminine` PROVENANCE `prov-ca-6-345`
+- `obj-u6-possessive` PROVENANCE `prov-ca-6-629`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-g-animacy-0-0`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-g-animacy-0-1`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-g-animacy-0-3`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-g-feminine-0-0`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-g-feminine-0-1`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-g-feminine-0-3`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-i-animacy-1-1`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-i-animacy-1-3`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-i-animacy-2-1`
+- `obj-u6-animacy` PROVENANCE `prov-ca-declension-u6-i-animacy-2-3`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-i-feminine-1-1`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-i-feminine-1-3`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-i-feminine-2-1`
+- `obj-u6-feminine` PROVENANCE `prov-ca-declension-u6-i-feminine-2-3`
+- `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-0`
+- `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-1`
+- `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-3`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-chair-note`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-check-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-guided-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-0`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-1`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-2`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-feedback`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-prompt`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-rationale`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-objective-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-rem-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-rem-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-0-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-0-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-1-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-1-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-2-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-2-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-3-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-3-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-4-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-4-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-5-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-5-title`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-g-direction-0`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-g-direction-0-distractor-1`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-g-object-0`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-g-object-0-distractor-1`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-g-pronoun-0`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-g-pronoun-0-distractor-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-g-third-0`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-g-third-0-distractor-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-g-third-0-distractor-2`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-1`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-1-distractor-1`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-2`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-2-distractor-1`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-3`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-3-distractor-1`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-1`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-1-distractor-1`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-2`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-2-distractor-1`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-3`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-3-distractor-1`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-1`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-1-distractor-1`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-2`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-2-distractor-1`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-3`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-3-distractor-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-1-distractor-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-1-distractor-2`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-2`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-2-distractor-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-2-distractor-2`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-1-distractor-1`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-1-feedback`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-1-prompt`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-guided-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-guided-distractor-1`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-guided-distractor-2`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-guided-feedback`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-guided-prompt`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-rem-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-rem-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-1-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-1-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-2-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-2-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-3-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-3-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-4-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-4-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-5-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-5-title`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-6-body`
+- `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-teach-6-title`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-0`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-0-gloss`
 - `obj-u6-animacy` PROVENANCE `prov-ex-or-u6-animacy-1`
@@ -7658,6 +12131,7 @@ permitsAppUse=true
 - `obj-u6-third` PROVENANCE `prov-ex-u6-third-2-en`
 - `obj-u6-third` PROVENANCE `prov-ex-u6-third-2-ru`
 - `obj-u6-animacy` PROVENANCE `prov-u6-animacy-rem`
+- `obj-u6-animacy` PROVENANCE `prov-u6-animacy-transfer-native-chair`
 - `obj-u6-animacy` PROVENANCE `prov-u6-animacy-x-0`
 - `obj-u6-direction` PROVENANCE `prov-u6-direction-rem`
 - `obj-u6-direction` PROVENANCE `prov-u6-direction-x-0`

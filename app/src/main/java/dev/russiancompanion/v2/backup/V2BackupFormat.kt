@@ -1,8 +1,14 @@
 package dev.russiancompanion.v2.backup
 
+import dev.russiancompanion.v2.curriculum.CumulativeReviewAssignment
+import dev.russiancompanion.v2.curriculum.CumulativeReviewAnswer
+import dev.russiancompanion.v2.curriculum.reviewHistoryDefects
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import java.io.File
+import java.io.ByteArrayOutputStream
+import java.io.RandomAccessFile
+import java.security.DigestOutputStream
 import java.io.IOException
 import java.io.InputStream
 import java.io.OutputStream
@@ -14,14 +20,16 @@ import java.util.zip.ZipOutputStream
 import dev.russiancompanion.v2.curriculum.LEGACY_UNVERIFIED
 import dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY
 
-internal const val BACKUP_FORMAT_VERSION = 1
-internal const val BACKUP_SCHEMA_VERSION = 1
+internal const val BACKUP_FORMAT_VERSION = 3
+internal const val BACKUP_SCHEMA_VERSION = 3
 internal const val BACKUP_LEARNER_ENTRY = "learner.json"
 internal const val BACKUP_MANIFEST_ENTRY = "manifest.json"
 
 internal const val BACKUP_SAVED = "Backup saved. This device has a successful local backup."
 internal const val BACKUP_FAILED = "Backup failed. The records on this device are unchanged."
 internal const val BACKUP_CANCELLED = "Backup cancelled. The records on this device are unchanged."
+internal const val RESTORE_TOO_LARGE =
+    "This backup exceeds the supported import limits. The records on this device are unchanged."
 internal const val RESTORE_FAILED = "Restore failed. The records already on this device are unchanged."
 internal const val RESTORE_RECOVERY_REQUIRED =
     "Restore failed. Local recovery is still required. Open the app again to finish restoring the learner records from before this attempt."
@@ -58,6 +66,8 @@ internal data class BackupManifest(
     val activityCount: Int,
     val evidenceCount: Int,
     val files: List<BackupFileRecord>,
+    val reviewAssignmentCount: Int = 0,
+    val reviewAnswerCount: Int = 0,
 )
 
 @Serializable
@@ -85,6 +95,8 @@ internal data class GovernedLearnerDocument(
     val tutorRequirements: List<BackupTutorRequirement>,
     val decisions: List<BackupDecision>,
     val recordings: List<BackupRecording>,
+    val reviewAssignments: List<CumulativeReviewAssignment> = emptyList(),
+    val reviewAnswers: List<CumulativeReviewAnswer> = emptyList(),
 )
 
 @Serializable
@@ -165,7 +177,8 @@ internal data class BackupTutorItem(
 internal data class BackupBookAttestation(val unitNumber: Int, val recordedAtLocal: String)
 
 @Serializable
-internal data class BackupUnitCompletion(val unitNumber: Int, val recordedAtLocal: String)
+internal data class BackupUnitCompletion(val unitNumber: Int, val recordedAtLocal: String,
+    val preReviewActivation: Boolean = true, val reviewPolicyDigest: String = "", val reviewAssignmentId: String = "", val reviewCompletionOrder: Long = 0)
 
 @Serializable
 internal data class BackupLearnerState(
@@ -254,6 +267,8 @@ internal enum class GovernedReplaceOutcome {
 }
 
 internal enum class BackupRejection {
+    RESOURCE_LIMIT,
+    CANCELLED,
     MALFORMED,
     TRUNCATED,
     UNSUPPORTED_VERSION,
@@ -487,10 +502,19 @@ internal fun writeGovernedBackup(
     document: GovernedLearnerDocument,
     recordingFiles: List<Pair<BackupRecording, File>>,
     formatVersion: Int = BACKUP_FORMAT_VERSION,
+    limits: BackupImportLimits = BackupImportLimits(),
 ) {
     if (V2BackupFaults.failWrite) throw BackupWriteException()
     val learnerBytes = backupJson.encodeToString(GovernedLearnerDocument.serializer(), document).encodeToByteArray()
+    if (recordingFiles.size > limits.entryCount - 2) throw BackupWriteException("backup-size-limit")
+    var declaredExpanded = 0L
+    fun account(size: Long, maximum: Long) {
+        if (size < 0 || size > maximum || size > limits.expandedBytes - declaredExpanded) throw BackupWriteException("backup-size-limit")
+        declaredExpanded += size
+    }
+    account(learnerBytes.size.toLong(), limits.learnerBytes)
     val staged = recordingFiles.map { (recording, file) ->
+        account(file.length(), limits.recordingBytes)
         val path = recordingEntryPath(recording.id, recording.localFileReference)
         BackupFileRecord(path = path, sha256 = sha256(file), bytes = file.length()) to file
     }
@@ -511,18 +535,59 @@ internal fun writeGovernedBackup(
         activityCount = document.activityLogs.size,
         evidenceCount = document.evidence.size,
         files = files,
+        reviewAssignmentCount = document.reviewAssignments.size,
+        reviewAnswerCount = document.reviewAnswers.size,
     )
     val manifestBytes = backupJson.encodeToString(BackupManifest.serializer(), manifest).encodeToByteArray()
-    ZipOutputStream(output).use { zip ->
+    account(manifestBytes.size.toLong(), limits.manifestBytes)
+    val directorySize = (files.map { it.path } + BACKUP_MANIFEST_ENTRY).sumOf { 46L + it.toByteArray(Charsets.UTF_8).size }
+    if (directorySize > limits.directoryBytes) throw BackupWriteException("backup-size-limit")
+    val budget = ImportBudget(limits.expandedBytes).apply { used = learnerBytes.size.toLong() + manifestBytes.size }
+    ZipOutputStream(BackupOutputLimit(output, limits.inputBytes)).use { zip ->
         putBytes(zip, BACKUP_MANIFEST_ENTRY, manifestBytes)
         putBytes(zip, BACKUP_LEARNER_ENTRY, learnerBytes)
         staged.forEach { (record, file) ->
             zip.putNextEntry(ZipEntry(record.path))
-            file.inputStream().use { input -> input.copyTo(zip) }
+            try {
+                file.inputStream().use { input -> copyImport(input, zip, limits.recordingBytes, budget) { false } }
+            } catch (_: BackupImportAbort) { throw BackupWriteException("backup-size-limit") }
             zip.closeEntry()
         }
     }
 }
+
+private class BackupOutputLimit(private val output: OutputStream, private val maximum: Long) : OutputStream() {
+    private var written = 0L
+    override fun write(value: Int) {
+        if (written >= maximum) throw BackupWriteException("backup-size-limit")
+        written++; output.write(value)
+    }
+    override fun write(bytes: ByteArray, offset: Int, length: Int) {
+        if (length.toLong() > maximum - written) throw BackupWriteException("backup-size-limit")
+        written += length; output.write(bytes, offset, length)
+    }
+    override fun flush() = output.flush()
+    override fun close() = output.close()
+}
+
+/** Import policy, independent of archive format and legacy identity schemas. */
+internal data class BackupImportLimits(
+    val inputBytes: Long = 256L * 1024 * 1024,
+    val entryCount: Int = 2048,
+    val directoryBytes: Long = 1024L * 1024,
+    val manifestBytes: Long = 1024L * 1024,
+    val learnerBytes: Long = 16L * 1024 * 1024,
+    val recordingBytes: Long = 64L * 1024 * 1024,
+    val expandedBytes: Long = 512L * 1024 * 1024,
+) {
+    init {
+        require(inputBytes > 0 && entryCount > 0 && directoryBytes > 0 && manifestBytes > 0 && learnerBytes > 0 &&
+            recordingBytes > 0 && expandedBytes > 0)
+    }
+}
+
+private class BackupImportAbort(val reason: BackupRejection) : RuntimeException()
+private class ImportBudget(val maximum: Long) { var used: Long = 0 }
 
 internal fun readGovernedBackup(
     input: InputStream,
@@ -530,11 +595,43 @@ internal fun readGovernedBackup(
     expectedPackId: String,
     expectedPackVersion: Int,
     stagingDir: File,
+    limits: BackupImportLimits = BackupImportLimits(),
+    cancelled: () -> Boolean = { false },
 ): BackupReadResult {
+    val ownedFiles = mutableListOf<File>()
+    var accepted = false
+    try {
+        checkImportCancellation(cancelled)
+        val result = readBoundedBackup(input, expectedApplicationId, expectedPackId, expectedPackVersion,
+            stagingDir, limits, cancelled, ownedFiles)
+        accepted = result is BackupReadResult.Valid
+        return result
+    } catch (abort: BackupImportAbort) {
+        return BackupReadResult.Rejected(abort.reason)
+    } catch (_: IOException) {
+        return BackupReadResult.Rejected(BackupRejection.TRUNCATED)
+    } finally {
+        if (!accepted) ownedFiles.asReversed().forEach { it.delete() }
+    }
+}
+
+private fun readBoundedBackup(
+    input: InputStream,
+    expectedApplicationId: String,
+    expectedPackId: String,
+    expectedPackVersion: Int,
+    stagingDir: File,
+    limits: BackupImportLimits,
+    cancelled: () -> Boolean,
+    ownedFiles: MutableList<File>,
+): BackupReadResult {
+    val budget = ImportBudget(limits.expandedBytes)
     stagingDir.mkdirs()
     val zipFile = File(stagingDir, "incoming.zip")
+    if (!zipFile.createNewFile()) return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
+    ownedFiles += zipFile
     try {
-        zipFile.outputStream().use { destination -> input.copyTo(destination) }
+        zipFile.outputStream().use { destination -> copyImport(input, destination, limits.inputBytes, null, cancelled) }
     } catch (_: IOException) {
         return BackupReadResult.Rejected(BackupRejection.TRUNCATED)
     }
@@ -542,6 +639,7 @@ internal fun readGovernedBackup(
     val zipHeader = ByteArray(2)
     val headerBytes = zipFile.inputStream().use { it.read(zipHeader) }
     val looksLikeZip = headerBytes == 2 && zipHeader[0] == 'P'.code.toByte() && zipHeader[1] == 'K'.code.toByte()
+    checkZipDirectoryLimits(zipFile, limits, if (looksLikeZip) BackupRejection.TRUNCATED else BackupRejection.MALFORMED)
     val opened = try {
         ZipFile(zipFile)
     } catch (_: ZipException) {
@@ -550,19 +648,26 @@ internal fun readGovernedBackup(
         return BackupReadResult.Rejected(BackupRejection.MALFORMED)
     }
     opened.use { zip ->
-        val names = zip.entries().toList().map { it.name }
-        if (names.size != names.toSet().size) return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
-        if (names.any { !allowedBackupEntry(it) }) return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
+        val names = linkedSetOf<String>()
+        val entries = zip.entries()
+        while (entries.hasMoreElements()) {
+            checkImportCancellation(cancelled)
+            if (names.size >= limits.entryCount) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
+            val name = entries.nextElement().name
+            if (!allowedBackupEntry(name) || !names.add(name)) {
+                return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
+            }
+        }
         if (BACKUP_MANIFEST_ENTRY !in names || BACKUP_LEARNER_ENTRY !in names) {
             return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
         }
-        val manifestBytes = readEntry(zip, BACKUP_MANIFEST_ENTRY) ?: return BackupReadResult.Rejected(BackupRejection.TRUNCATED)
+        val manifestBytes = readEntry(zip, BACKUP_MANIFEST_ENTRY, limits.manifestBytes, budget, cancelled) ?: return BackupReadResult.Rejected(BackupRejection.TRUNCATED)
         val manifest = try {
             backupJson.decodeFromString(BackupManifest.serializer(), manifestBytes.toString(Charsets.UTF_8))
         } catch (_: Exception) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         }
-        if (manifest.formatVersion != BACKUP_FORMAT_VERSION) {
+        if (manifest.formatVersion !in 1..BACKUP_FORMAT_VERSION) {
             return BackupReadResult.Rejected(BackupRejection.UNSUPPORTED_VERSION)
         }
         if (manifest.applicationId != expectedApplicationId) {
@@ -574,22 +679,28 @@ internal fun readGovernedBackup(
         if (manifest.appearance != "DARK" && manifest.appearance != "FOLLOW_SYSTEM") {
             return BackupReadResult.Rejected(BackupRejection.INCOMPATIBLE)
         }
+        if (manifest.files.size >= limits.entryCount) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
         val declared = manifest.files.map { it.path }
+        if (declared.size != declared.toSet().size) return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
         if (BACKUP_LEARNER_ENTRY !in declared) return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
         val expectedNames = declared.toSet() + BACKUP_MANIFEST_ENTRY
         if (names.toSet() != expectedNames) return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
+        val jsonEntries = mutableMapOf(BACKUP_MANIFEST_ENTRY to manifestBytes)
         for (file in manifest.files) {
+            checkImportCancellation(cancelled)
             if (file.path.startsWith("recordings/")) continue
             val entry = zip.getEntry(file.path) ?: return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
             if (entry.size >= 0 && entry.size != file.bytes) return BackupReadResult.Rejected(BackupRejection.INTEGRITY)
-            val bytes = readEntry(zip, file.path) ?: return BackupReadResult.Rejected(BackupRejection.TRUNCATED)
+            val bytes = jsonEntries[file.path] ?: readEntry(zip, file.path, limits.learnerBytes, budget, cancelled)
+                ?.also { jsonEntries[file.path] = it } ?: return BackupReadResult.Rejected(BackupRejection.TRUNCATED)
             if (bytes.size.toLong() != file.bytes || sha256(bytes) != file.sha256) {
                 return BackupReadResult.Rejected(BackupRejection.INTEGRITY)
             }
         }
         val learnerRecord = manifest.files.firstOrNull { it.path == BACKUP_LEARNER_ENTRY }
             ?: return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
-        val learnerBytes = readEntry(zip, BACKUP_LEARNER_ENTRY) ?: return BackupReadResult.Rejected(BackupRejection.TRUNCATED)
+        val learnerBytes = jsonEntries[BACKUP_LEARNER_ENTRY]
+            ?: return BackupReadResult.Rejected(BackupRejection.TRUNCATED)
         if (learnerBytes.size.toLong() != learnerRecord.bytes || sha256(learnerBytes) != learnerRecord.sha256) {
             return BackupReadResult.Rejected(BackupRejection.INTEGRITY)
         }
@@ -598,10 +709,17 @@ internal fun readGovernedBackup(
         } catch (_: Exception) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         }
-        if (document.schemaVersion != BACKUP_SCHEMA_VERSION) {
+        if (document.schemaVersion !in 1..BACKUP_SCHEMA_VERSION || document.schemaVersion != manifest.formatVersion) {
             return BackupReadResult.Rejected(BackupRejection.UNSUPPORTED_VERSION)
         }
+        if (completionActivationDefects(document) != null) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        if ((document.schemaVersion == 1 && (document.reviewAssignments.isNotEmpty() || document.reviewAnswers.isNotEmpty())) ||
+            reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null) {
+            return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        }
         if (
+            document.reviewAssignments.size != manifest.reviewAssignmentCount ||
+            document.reviewAnswers.size != manifest.reviewAnswerCount ||
             document.attempts.size != manifest.attemptCount ||
             document.notes.size != manifest.noteCount ||
             document.bookmarks.size != manifest.bookmarkCount ||
@@ -629,24 +747,21 @@ internal fun readGovernedBackup(
         if (declaredRecordings != recordingPaths.toSet()) return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
         val declaredHashes = manifest.files.associate { it.path to it }
         for (recording in document.recordings) {
+            checkImportCancellation(cancelled)
             if (!safeRecordingId(recording.id)) return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
             val path = recordingEntryPath(recording.id, recording.localFileReference)
             val declaredFile = declaredHashes[path] ?: return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
             val target = File(stagingDir, "${recording.id}.bin")
+            if (!target.createNewFile()) return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
+            ownedFiles += target
             val entry = zip.getEntry(path) ?: return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
             val digest = MessageDigest.getInstance("SHA-256")
-            var size = 0L
+            val size: Long
             try {
+                if (entry.size > limits.recordingBytes) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
                 zip.getInputStream(entry).use { source ->
-                    target.outputStream().use { destination ->
-                        val buffer = ByteArray(8192)
-                        while (true) {
-                            val read = source.read(buffer)
-                            if (read < 0) break
-                            destination.write(buffer, 0, read)
-                            digest.update(buffer, 0, read)
-                            size += read
-                        }
+                    DigestOutputStream(target.outputStream(), digest).use { destination ->
+                        size = copyImport(source, destination, limits.recordingBytes, budget, cancelled)
                     }
                 }
             } catch (_: IOException) {
@@ -657,6 +772,7 @@ internal fun readGovernedBackup(
             }
             stagedRecordings += StagedRecording(recording, target)
         }
+        checkImportCancellation(cancelled)
         return BackupReadResult.Valid(ValidatedBackup(manifest, document, stagedRecordings))
     }
 }
@@ -728,13 +844,86 @@ private fun duplicateIds(document: GovernedLearnerDocument): Boolean {
         dup(document.recordings) { it.id }
 }
 
-private fun readEntry(zip: ZipFile, name: String): ByteArray? {
+private fun readEntry(zip: ZipFile, name: String, maximum: Long, budget: ImportBudget,
+    cancelled: () -> Boolean): ByteArray? {
     val entry = zip.getEntry(name) ?: return null
+    if (entry.size > maximum) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
     return try {
-        zip.getInputStream(entry).use { it.readBytes() }
+        zip.getInputStream(entry).use { source ->
+            val output = ByteArrayOutputStream()
+            copyImport(source, output, maximum, budget, cancelled)
+            output.toByteArray()
+        }
     } catch (_: IOException) {
         null
     }
+}
+
+/** Bound ZipFile's central-directory allocation before constructing it, including ZIP64. */
+private fun checkZipDirectoryLimits(file: File, limits: BackupImportLimits, missingEnd: BackupRejection) {
+    RandomAccessFile(file, "r").use { input ->
+        val tail = ByteArray(minOf(input.length(), 65557L).toInt())
+        input.seek(input.length() - tail.size); input.readFully(tail)
+        fun unsigned(bytes: ByteArray, at: Int, count: Int): Long {
+            var value = 0L
+            for (i in 0 until count) value = value or ((bytes[at + i].toLong() and 255) shl (8 * i))
+            if (value < 0) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
+            return value
+        }
+        val end = (tail.size - 22 downTo 0).firstOrNull { i ->
+            unsigned(tail, i, 4) == 0x06054b50L && i + 22 + unsigned(tail, i + 20, 2) == tail.size.toLong()
+        } ?: throw BackupImportAbort(missingEnd)
+        var count = unsigned(tail, end + 10, 2)
+        var bytes = unsigned(tail, end + 12, 4)
+        var offset = unsigned(tail, end + 16, 4)
+        val standardCount = count; val standardBytes = bytes; val standardOffset = offset
+        if ((count != 65535L && count > limits.entryCount) ||
+            (bytes != 0xffffffffL && bytes > limits.directoryBytes)) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
+        val endOffset = input.length() - tail.size + end
+        val locator = ByteArray(20)
+        if (endOffset >= 20) { input.seek(endOffset - 20); input.readFully(locator) }
+        if (unsigned(locator, 0, 4) == 0x07064b50L) {
+            val zip64Offset = unsigned(locator, 8, 8)
+            if (zip64Offset > input.length() - 56) throw BackupImportAbort(BackupRejection.TRUNCATED)
+            val record = ByteArray(56); input.seek(zip64Offset); input.readFully(record)
+            if (unsigned(record, 0, 4) != 0x06064b50L) throw BackupImportAbort(BackupRejection.TRUNCATED)
+            val recordSize = unsigned(record, 4, 8)
+            if (recordSize < 44) throw BackupImportAbort(BackupRejection.TRUNCATED)
+            if (recordSize > limits.directoryBytes) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
+            count = unsigned(record, 32, 8); bytes = unsigned(record, 40, 8); offset = unsigned(record, 48, 8)
+            // Reject ambiguous headers rather than letting ZipFile fall back to an unchecked representation.
+            if ((standardCount != 65535L && standardCount != count) ||
+                (standardBytes != 0xffffffffL && standardBytes != bytes) ||
+                (standardOffset != 0xffffffffL && standardOffset != offset)) throw BackupImportAbort(BackupRejection.TRUNCATED)
+        }
+        if (count > limits.entryCount || bytes > limits.directoryBytes) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
+        if (offset > input.length() || bytes > input.length() - offset) throw BackupImportAbort(BackupRejection.TRUNCATED)
+    }
+}
+
+private fun checkImportCancellation(cancelled: () -> Boolean) {
+    if (cancelled() || Thread.currentThread().isInterrupted) throw BackupImportAbort(BackupRejection.CANCELLED)
+}
+
+/** Read at most one byte past a limit and never write or allocate that excess. */
+private fun copyImport(source: InputStream, destination: OutputStream, maximum: Long,
+    budget: ImportBudget?, cancelled: () -> Boolean): Long {
+    val buffer = ByteArray(8192)
+    var copied = 0L
+    while (true) {
+        checkImportCancellation(cancelled)
+        val remaining = minOf(maximum - copied, budget?.let { it.maximum - it.used } ?: Long.MAX_VALUE)
+        val requested = if (remaining >= buffer.size) buffer.size else remaining.toInt() + 1
+        val count = source.read(buffer, 0, requested)
+        checkImportCancellation(cancelled)
+        if (count < 0) break
+        if (count.toLong() > remaining) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
+        if (count == 0) continue
+        destination.write(buffer, 0, count)
+        copied += count
+        budget?.let { it.used += count }
+    }
+    return copied
 }
 
 private fun putBytes(zip: ZipOutputStream, name: String, bytes: ByteArray) {
@@ -759,3 +948,21 @@ internal fun sha256(file: File): String {
 }
 
 private fun hex(bytes: ByteArray): String = bytes.joinToString("") { "%02x".format(it) }
+
+internal const val BACKUP_SAVED_WITH_LATER_CHANGES =
+    "Backup saved. Newer learner changes were not included. Back up again to save them."
+
+internal fun completionActivationDefects(document: GovernedLearnerDocument): String? {
+    for (row in document.unitCompletions) {
+        if ((document.schemaVersion < 3 || row.preReviewActivation) &&
+            (!row.preReviewActivation || row.reviewPolicyDigest.isNotEmpty() || row.reviewAssignmentId.isNotEmpty() || row.reviewCompletionOrder != 0L)) return "invalid pre-review completion"
+        if (!row.preReviewActivation &&
+            (row.reviewPolicyDigest.isNotEmpty() || row.reviewAssignmentId.isNotEmpty() || row.reviewCompletionOrder != 0L)) {
+            val a = document.reviewAssignments.singleOrNull { it.id == row.reviewAssignmentId } ?: return "missing completion assignment"
+            if (a.targetUnit != row.unitNumber || a.policyDigest != row.reviewPolicyDigest ||
+                row.reviewCompletionOrder <= a.boundary ||
+                row.reviewCompletionOrder > (document.reviewAnswers.maxOfOrNull { it.acceptedOrder } ?: 0)) return "invalid completion assignment link"
+        }
+    }
+    return null
+}

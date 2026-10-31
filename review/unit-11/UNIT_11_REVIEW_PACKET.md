@@ -11,12 +11,12 @@ Unit 11 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b22fa0cca895a677386a77d03a63301f7454aa07
-- Unit content-review SHA-256: 7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324
+- Curriculum source commit: c2d297e79fa677aa1375917cfbe052e4c0806633
+- Unit content-review SHA-256: 1d4c25c25e20b7fb6629995fcfb66e29f02554e276c5a7f5ec69fb5ac0a2ca5c
 - Mapping-package SHA-256: 61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b519db587
-- Pack content-review SHA-256: ff2d4cd848036f7b164f9a68d24ef3d26d3442f4673c2bf1cf560e8d1b8662f1
-- Review-package SHA-256: 431331904643089b964a235d5f6f6a138017959b2c48098c8d24abaad5401e7e
-- Repository source SHA-256: d4fb5db24b23a401a173e2b20b44486aa49c85552ff4b39ae2f7415f4c079914
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: 62ee25aa47fd9c75adcf2f16b408ced73fc38ca63e89ef28c9befd7d9f255e63
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=66
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e8b168939c02220e62d68f4141bded31d7fe6a2aaf409b25fab4dae1df2e7f8a
+- Content hash: fb5ba81b05349be9190edeb44b4cdd2f6b442eb3c2f891cf0f9b72ec090846ae
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=8
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u11-past-read`
@@ -151,13 +151,13 @@ remediation=u11-st-rem-past-be
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fe683925ca0b946624f2f3e84ecf167b8c2486cafa7b6c96035b69357ef7163b
+- Content hash: d3eb40a25d168eeb5fed4b7bb91b9a241488184d58557a8452e027af08c7fc47
 
-title=Choose the admitted completed past line
+title=Choose past-tense gender agreement
 kind=RECOGNITION
 unitNumber=11
 instruction=u11-st-orient,u11-st-teach-past-aspect-1,u11-st-teach-past-aspect-2,u11-st-teach-past-aspect-3,u11-st-teach-past-aspect-4
-examples=ex-u11-past-aspect-0,ex-u11-past-aspect-1,ex-or-u11-past-aspect-2,ex-or-u11-past-aspect-3,ex-or-u11-past-aspect-4
+examples=ex-or-u11-past-aspect-2,ex-or-u11-past-aspect-3,ex-or-u11-past-aspect-4
 practice=u11-st-guided-past-aspect-1
 checks=u11-i-past-aspect-1,u11-i-past-aspect-2
 remediation=u11-st-rem-past-aspect
@@ -304,11 +304,11 @@ remediationStepId=u11-st-rem-past-read
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1d65c7c17dc806ad9879d64cc441dfee58ad95841891d6cfb146432ec126886c
+- Content hash: a58dbf60800b43e60ee37fe74fff24d4ec8e07cc4b377740471d3544aa72d6e2
 
 kind=TEACH
 title=Admitted instruction
-body=To form the past tense of either aspect of a verb, remove the ending '''-ть''', and add '''-л'''.
+body=For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -370,11 +370,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2ca300283cd98e031767fb0e4eb63b42e536f301b26b3268ed9e492b02aa8db7
+- Content hash: 5625c78a2add593fb9b32eb121acf93ac37e329dbe35193b834ca6dd9ab14c19
 
 kind=REMEDIATE
 title=Remediation
-body=To form the past tense of either aspect of a verb, remove the ending '''-ть''', and add '''-л'''.
+body=For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
 dominantAction=Continue
 references=
 items=
@@ -429,11 +429,11 @@ steps=u11-st-teach-past-be-1,u11-st-guided-past-be-1,u11-st-teach-past-be-2,u11-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 011a7ecffeb3e8c16015c78a31139b2a70ecb1a5d5cbd859beb205d3f9abafcb
+- Content hash: b62037cd4d2f5710f5584b6bf1b3bc98bc305c99c0376df8ef80ce88bafef344
 
 kind=TEACH
 title=Admitted lines
-body=бы́л — be. была́ — be. 
+body=бы́л — be. была́ — be. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -583,12 +583,12 @@ remediationStepId=u11-st-rem-past-be
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b41c01ecc86944362820cf16c9193f11d838cab802152d64a12c55fbbedb9a79
+- Content hash: 0180940d5369ce37d512c2208300c41c01630be65889a204615f9c310fe94b90
 
-title=Choose the admitted completed past line
+title=Choose past-tense gender agreement
 estimatedMinutes=12
 objectives=obj-u11-past-aspect
-steps=u11-st-teach-past-aspect-1,u11-st-guided-past-aspect-1,u11-st-teach-past-aspect-2,u11-st-teach-past-aspect-3,u11-st-teach-past-aspect-4,u11-st-rem-past-aspect,u11-st-check-past-aspect
+steps=u11-st-teach-past-aspect-1,u11-st-teach-past-aspect-2,u11-st-teach-past-aspect-3,u11-st-teach-past-aspect-4,u11-st-guided-past-aspect-1,u11-st-rem-past-aspect,u11-st-check-past-aspect
 
 ### STEP `u11-st-teach-past-aspect-1`
 
@@ -598,15 +598,81 @@ steps=u11-st-teach-past-aspect-1,u11-st-guided-past-aspect-1,u11-st-teach-past-a
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 743c0cbbede7e8ce257e3048b66834e1c59b88c92f27c5ff313dc90a554366c5
+- Content hash: d5412c7501a3bd371e6b8c436e5da05fc676c7a36bdf5b154c74c47c0a3a2389
 
 kind=TEACH
 title=Admitted lines
-body=я читал — I was reading. я прочитал — I read. 
+body=In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
-examples=ex-u11-past-aspect-0,ex-u11-past-aspect-1
+examples=ex-or-u11-past-aspect-2,ex-or-u11-past-aspect-3,ex-or-u11-past-aspect-4
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u11-st-teach-past-aspect-2`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-past-aspect
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 93cd7d99e6d0995095c173f873f623b55ebd6f0ec42f14f02510e5eb0f3d2049
+
+kind=TEACH
+title=Admitted instruction
+body=Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u11-st-teach-past-aspect-3`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-past-aspect
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ca657644556b2e1b6c51f79198c31ed9f7e73de9a6b70b5aeded8fad3b72fd9d
+
+kind=TEACH
+title=Admitted lines
+body=The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=ex-or-u11-past-aspect-2,ex-or-u11-past-aspect-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u11-st-teach-past-aspect-4`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-past-aspect
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3eabf90e4e4a879095f0d8a969bdf1d1d4f58a7f6989a40e6c716ccc0dc99651
+
+kind=TEACH
+title=Admitted lines
+body=The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=ex-or-u11-past-aspect-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -634,72 +700,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u11-st-rem-past-aspect
 
-### STEP `u11-st-teach-past-aspect-2`
-
-- Objectives: obj-u11-past-aspect
-- Sessions: u11-s-past-aspect
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6982e8332a238e82bbdc94c2c3282ea1c38f35ac14485424e2890e66365a4c17
-
-kind=TEACH
-title=Admitted instruction
-body=So the English ''past progressive'' sentence  "I was reading" would correspond to the Russian imperfective ('''я читал'''), since it refers to an action that wasn't completed. Likewise, the English ''simple past'' sentence "I read" corresponds to the Russian perfective ('''я прочитал''')
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u11-st-teach-past-aspect-3`
-
-- Objectives: obj-u11-past-aspect
-- Sessions: u11-s-past-aspect
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5e81ffb0d079ad85fa36108000e184146f9763be4523a85027a090a224950e0d
-
-kind=TEACH
-title=Admitted lines
-body=прочита́л — read. прочита́ла — read. 
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=ex-or-u11-past-aspect-2,ex-or-u11-past-aspect-3
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u11-st-teach-past-aspect-4`
-
-- Objectives: obj-u11-past-aspect
-- Sessions: u11-s-past-aspect
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b19008eb21f1b303f1d084b4826d38bcaa69e89dcfe75377c4341c169e15fe59
-
-kind=TEACH
-title=Admitted lines
-body=прочита́ло — read. 
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=ex-or-u11-past-aspect-4
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u11-st-rem-past-aspect`
 
 - Objectives: obj-u11-past-aspect
@@ -708,15 +708,21 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5674550b600432df849967f0c0867082d3cce89b7677b4914dd4beab93225d0b
+- Content hash: d0b365f2bd1bfbff5e0f7447407fd602c05efa0b0d5c529619a69232b67488d7
 
 kind=REMEDIATE
 title=Remediation
-body=So the English ''past progressive'' sentence  "I was reading" would correspond to the Russian imperfective ('''я читал'''), since it refers to an action that wasn't completed. Likewise, the English ''simple past'' sentence "I read" corresponds to the Russian perfective ('''я прочитал''')
+body=In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.
+
+Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.
+
+The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.
+
+The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.
 dominantAction=Continue
 references=
 items=
-examples=ex-u11-past-aspect-0,ex-u11-past-aspect-1
+examples=ex-or-u11-past-aspect-2,ex-or-u11-past-aspect-3,ex-or-u11-past-aspect-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -811,11 +817,11 @@ remediationStepId=u11-st-rem-reflexive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 36ee7b640e3d0fd5e3fc567a6c8dbedc3af89a6ef855d363a04c36d391d8244a
+- Content hash: dc3897cc7b9ec8bdcda71c6ed4926798874c53b266391e43730322a90c16f9c5
 
 kind=TEACH
 title=Admitted instruction
-body=Some verbs, such as the imperfective '''улыба́ться''' ('to smile'), have the reflexive ending '''-сь/ся'''
+body=Keep the reflexive ending with the verb. The recorded infinitive is улыба́ться, to smile. Compare the past forms in the worked examples.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -921,11 +927,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a5421a7be92e0408e7adc1d21eda3639633474861a20ebc555948ede5a211a8a
+- Content hash: d286f675ac2b35d4cfc5cc0ef916b254f7f954c8d16359684409037d764923f2
 
 kind=REMEDIATE
 title=Remediation
-body=Some verbs, such as the imperfective '''улыба́ться''' ('to smile'), have the reflexive ending '''-сь/ся'''
+body=Keep the reflexive ending with the verb. The recorded infinitive is улыба́ться, to smile. Compare the past forms in the worked examples.
 dominantAction=Continue
 references=
 items=
@@ -965,12 +971,12 @@ remediationStepId=u11-st-rem-reflexive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d6ba0c2d82c7dd64a569af0e9b0ba5601001ad0e63ac922f03d4f9779aaef931
+- Content hash: f2565f4f28b77a2546d3684761deb48634b55e91f7cc0ae3a309d4d9ad96892d
 
 title=Self-attest Lesson 11
 estimatedMinutes=10
 objectives=obj-u11-book
-steps=u11-st-book-work,u11-st-book
+steps=u11-st-book-work,u11-st-book,u11-st-anki-direction,u11-st-binder-direction,u11-st-tutor-direction,u11-st-cumulative-direction
 
 ### STEP `u11-st-book-work`
 
@@ -980,7 +986,7 @@ steps=u11-st-book-work,u11-st-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ffc211847fb95ffb5ea32ebc81fc099047397ba8aec73f416085fb842503b94d
+- Content hash: a51a63d9d524025d3e077f8596c2751b2f49edf2247bc4471f88adc8bc402a27
 
 kind=BOOK
 title=Work Lesson 11 in your copy
@@ -990,7 +996,7 @@ references=ref-u1115-attribution
 items=
 examples=
 unavailableReason=
-bookDirection=Open Lesson 11 in your copy and complete its lesson work.
+bookDirection=Owned-book assignment for Lesson 11: printed pages 122-132. PDF indexes 134-144 are file locators, not printed pages. Observed section locators: §11.1 p122 (PDF 134); §11.2 p122 (PDF 134); §11.3 p124 (PDF 136); §11.4 p124 (PDF 136); §11.5 p125 (PDF 137); §11.6 p126 (PDF 138); §11.7 p128 (PDF 140); §11.8 p129 (PDF 141); §11.9 p130 (PDF 142). Observed exercise locators: 11/1 p125/PDF137; 11/2 p128/PDF140; 11/3 p131/PDF143. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
 remediationStepId=
 
@@ -1002,7 +1008,7 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8c015d7c2ec402cbd95769ce05a30cdf4c6812f219eabd9a022a43fd39f2b344
+- Content hash: 80877aec35e1097a4619308856194c8165d3cfeaec40727b1816103eb668772a
 
 kind=BOOK
 title=Record Lesson 11 book work
@@ -1012,8 +1018,96 @@ references=
 items=
 examples=
 unavailableReason=
-bookDirection=Self-attest only after the Lesson 11 work in your copy.
+bookDirection=Owned-book assignment for Lesson 11: printed pages 122-132. PDF indexes 134-144 are file locators, not printed pages. Observed section locators: §11.1 p122 (PDF 134); §11.2 p122 (PDF 134); §11.3 p124 (PDF 136); §11.4 p124 (PDF 136); §11.5 p125 (PDF 137); §11.6 p126 (PDF 138); §11.7 p128 (PDF 140); §11.8 p129 (PDF 141); §11.9 p130 (PDF 142). Observed exercise locators: 11/1 p125/PDF137; 11/2 p128/PDF140; 11/3 p131/PDF143. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
 companionDirection=
+remediationStepId=
+
+### STEP `u11-st-anki-direction`
+
+- Objectives: obj-u11-book
+- Sessions: u11-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 61938f6e6abbd46b758477b0c337c421b304b5d9ca524cdb7d0fadef1c750386
+
+kind=ANKI
+title=Unit 11 AnkiDroid direction
+body=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Self-attest
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+remediationStepId=
+
+### STEP `u11-st-binder-direction`
+
+- Objectives: obj-u11-book
+- Sessions: u11-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 49a773fc9cceaa261815ef6c3ff358ca7491aaacecad54b145abde1e37383a49
+
+kind=BINDER
+title=Unit 11 binder prompt
+body=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=A binder prompt is one specific note, not a score.
+remediationStepId=
+
+### STEP `u11-st-tutor-direction`
+
+- Objectives: obj-u11-book
+- Sessions: u11-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f8d24111a13e6f765d0f2de8f5c72771a042e22779e145b4eb18b4e4afe7edb0
+
+kind=TUTOR
+title=Unit 11 optional tutor
+body=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Tutor work is optional and does not count as demonstrated ability.
+remediationStepId=
+
+### STEP `u11-st-cumulative-direction`
+
+- Objectives: obj-u11-book
+- Sessions: u11-s-book
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fae78614e744c0cf0bd80f52a1ab3c5eedd3591f562ed5f060525c4e84d22657
+
+kind=ORIENT
+title=Unit 11 cumulative review
+body=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+dominantAction=Continue
+references=
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
 ### EXAMPLE `ex-or-u11-past-read-0`
@@ -1218,40 +1312,6 @@ letterId=
 display=Она была́ краси́вая
 note=She was beautiful
 objectiveId=obj-u11-past-be
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-
-### EXAMPLE `ex-u11-past-aspect-0`
-
-- Objectives: obj-u11-past-aspect
-- Sessions: u11-s-past-aspect
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9a916eff4ef7c157bdea558ba812523c1b8596da3824ef585fb17a302610ec2a
-
-kind=LEXICAL
-letterId=
-display=я читал
-note=I was reading
-objectiveId=obj-u11-past-aspect
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-
-### EXAMPLE `ex-u11-past-aspect-1`
-
-- Objectives: obj-u11-past-aspect
-- Sessions: u11-s-past-aspect
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: feac967ab86b8b185a7482527262f24cfab1fc029dfd787b67acb161b23e6918
-
-kind=LEXICAL
-letterId=
-display=я прочитал
-note=I read
-objectiveId=obj-u11-past-aspect
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### EXAMPLE `ex-or-u11-past-aspect-2`
@@ -1466,7 +1526,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 777d5b59b6eb166f1886f0b5c14de2cd4f3912f17c2c62ccc3af331d10732b63
+- Content hash: 6e1f05f3623f64c8d43523845e96180799ceadc272c8a04f00926594cc59c488
 
 kind=FORM_SELECTION
 language=en
@@ -1474,11 +1534,11 @@ prompt=Which admitted row is the feminine past?
 promptLetter=чита́л
 options=чита́ла | чита́ло | чита́ли
 answer=чита́ла
-feedback=Does this answer show the feminine past? чита́ла.
+feedback=чита́ла is the feminine past form for a singular subject of the verb meaning to read. чита́ло is neuter singular and чита́ли is plural. The past form matches the subject in gender and number; choose feminine singular for this question.
 objectiveId=obj-u11-past-read
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the feminine past? | Does this row fail the feminine past?
+distractorRationales= | чита́ло is neuter singular past, not feminine singular. | чита́ли is plural past, not feminine singular.
 testedFeature=FEMININE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-read-0
@@ -1486,8 +1546,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u11-past-read-1
 distractorSourceIds= | prov-ex-or-u11-past-read-2 | prov-ex-or-u11-past-read-3
-distractorDifference= | Does this row fail the feminine past? | Does this row fail the feminine past?
-whyAnswerDemonstratesObjective=Does this answer show the feminine past?
+distractorDifference= | чита́ло is neuter singular past, not feminine singular. | чита́ли is plural past, not feminine singular.
+whyAnswerDemonstratesObjective=чита́ла is the feminine past form for a singular subject of the verb meaning to read. чита́ло is neuter singular and чита́ли is plural. The past form matches the subject in gender and number; choose feminine singular for this question.
 contrastMembers=чита́ла | чита́ло | чита́ли
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-read-0 | prov-ex-or-u11-past-read-1 | prov-ex-or-u11-past-read-2 | prov-ex-or-u11-past-read-3
@@ -1501,7 +1561,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 72966ec0e3a3eebb7def2a1494de59bd4d09d4c3c02cb4e66799084ac6f660e4
+- Content hash: d22fb47f438fc3b47b51115bc48c1fa1388170d1fe995f5ad29e3f53b76ef118
 
 kind=FORM_SELECTION
 language=en
@@ -1509,11 +1569,11 @@ prompt=Which admitted row is the feminine past?
 promptLetter=бы́л
 options=была́ | бы́ло | бы́ли
 answer=была́
-feedback=Does this answer show the feminine past? была́.
+feedback=была́ is the feminine past form for a singular subject meaning was. бы́ло is neuter singular and бы́ли is plural. Choose the past form with the feminine singular agreement requested here.
 objectiveId=obj-u11-past-be
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the feminine past? | Does this row fail the feminine past?
+distractorRationales= | бы́ло is neuter singular past, not feminine singular. | бы́ли is plural past, not feminine singular.
 testedFeature=FEMININE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-be-0
@@ -1521,8 +1581,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u11-past-be-1
 distractorSourceIds= | prov-ex-or-u11-past-be-2 | prov-ex-or-u11-past-be-3
-distractorDifference= | Does this row fail the feminine past? | Does this row fail the feminine past?
-whyAnswerDemonstratesObjective=Does this answer show the feminine past?
+distractorDifference= | бы́ло is neuter singular past, not feminine singular. | бы́ли is plural past, not feminine singular.
+whyAnswerDemonstratesObjective=была́ is the feminine past form for a singular subject meaning was. бы́ло is neuter singular and бы́ли is plural. Choose the past form with the feminine singular agreement requested here.
 contrastMembers=была́ | бы́ло | бы́ли
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-be-0 | prov-ex-or-u11-past-be-1 | prov-ex-or-u11-past-be-2 | prov-ex-or-u11-past-be-3
@@ -1532,36 +1592,36 @@ responseKind=RUSSIAN_TOKEN
 
 - Objectives: obj-u11-past-aspect
 - Sessions: u11-s-past-aspect
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 62c6eda6dd958e1b1fc7923c81a7183f52e264a1f3804545ae1afc1a6708ff3c
+- Content hash: 4dcf10d2bc28b3bc46863ca06c5020365aacf345a0e18d56b9c6d66f931d010f
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the perfective past?
-promptLetter=I read
-options=я прочитал | я читал
-answer=я прочитал
-feedback=Does this answer show the perfective past? я прочитал.
+prompt=Which neuter past form (singular) of the same verb corresponds to the shown masculine form?
+promptLetter=прочита́л
+options=прочита́ло | прочита́ла
+answer=прочита́ло
+feedback=прочита́л is masculine past (singular); прочита́ло is neuter past (singular) of the same verb.
 objectiveId=obj-u11-past-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the perfective past?
-testedFeature=PERFECTIVE_PAST
-evidenceMode=SOURCE_SUPPLIED_PAIR
+distractorRationales= | прочита́ла is feminine past (singular), so it does not supply the requested neuter past form.
+testedFeature=NEUTER_PAST
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-aspect-0
-cueLanguage=rule
+cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u11-past-aspect-1-ru
-distractorSourceIds= | prov-ex-u11-past-aspect-0-ru
-distractorDifference= | Does this row fail the perfective past?
-whyAnswerDemonstratesObjective=Does this answer show the perfective past?
-contrastMembers=я прочитал | я читал
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u11-past-aspect-1-en | prov-ex-u11-past-aspect-1-ru | prov-ex-u11-past-aspect-0-ru
-responseKind=RUSSIAN_CLAUSE
+answerSourceIds=prov-ex-or-u11-past-aspect-4
+distractorSourceIds= | prov-ex-or-u11-past-aspect-3
+distractorDifference= | прочита́ла is feminine past (singular), so it does not supply the requested neuter past form.
+whyAnswerDemonstratesObjective=прочита́л is masculine past (singular); прочита́ло is neuter past (singular) of the same verb.
+contrastMembers=прочита́ло | прочита́ла
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u11-past-aspect-2 | prov-ex-or-u11-past-aspect-4 | prov-ex-or-u11-past-aspect-3
+responseKind=RUSSIAN_TOKEN
 
 ### GUIDED_PRACTICE `u11-g-reflexive-0`
 
@@ -1571,7 +1631,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 695cee45b944b5c5864e6b322b5093bdf0a917919a9251aca75b313f4c818453
+- Content hash: 7c59609f52cfaf4204d4560e1ff64871b15f758a51c89ff81360ee0e0a960734
 
 kind=FORM_SELECTION
 language=en
@@ -1579,11 +1639,11 @@ prompt=Which admitted row is the feminine past?
 promptLetter=улыба́лся
 options=улыба́лась | улыба́лись | улыба́ться
 answer=улыба́лась
-feedback=Does this answer show the feminine past? улыба́лась.
+feedback=улыба́лась is the feminine past form for a singular subject of the verb meaning to smile. улыба́лись is plural past, while улыба́ться is the infinitive, not a past form. The reflexive ending remains on the past verb; choose feminine singular agreement.
 objectiveId=obj-u11-reflexive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the feminine past? | Does this row fail the feminine past?
+distractorRationales= | улыба́лись is plural past, not feminine singular. | улыба́ться is the infinitive meaning to smile, not a past-tense form.
 testedFeature=FEMININE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-reflexive-0
@@ -1591,8 +1651,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u11-reflexive-2
 distractorSourceIds= | prov-ex-or-u11-reflexive-3 | prov-ex-or-u11-reflexive-0
-distractorDifference= | Does this row fail the feminine past? | Does this row fail the feminine past?
-whyAnswerDemonstratesObjective=Does this answer show the feminine past?
+distractorDifference= | улыба́лись is plural past, not feminine singular. | улыба́ться is the infinitive meaning to smile, not a past-tense form.
+whyAnswerDemonstratesObjective=улыба́лась is the feminine past form for a singular subject of the verb meaning to smile. улыба́лись is plural past, while улыба́ться is the infinitive, not a past form. The reflexive ending remains on the past verb; choose feminine singular agreement.
 contrastMembers=улыба́лась | улыба́лись | улыба́ться
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-reflexive-1 | prov-ex-or-u11-reflexive-2 | prov-ex-or-u11-reflexive-3 | prov-ex-or-u11-reflexive-0
@@ -1606,7 +1666,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7bce9b5915b2aed28e0eb75fbc618b72f6418935b4d59a71cb062028bbabafab
+- Content hash: 8cf10c97e5df89960ac2f2201e565d4d66605b30b9a0f4c4172f9837350b30e2
 
 kind=FORM_SELECTION
 language=en
@@ -1614,11 +1674,11 @@ prompt=Which admitted row is the masculine past?
 promptLetter=чита́ла
 options=чита́л | чита́ли
 answer=чита́л
-feedback=Does this answer show the masculine past? чита́л.
+feedback=чита́л is the masculine past form for a singular subject of the verb meaning to read. чита́ли is plural past. The cue shows the feminine singular form, but the question asks for masculine singular of the same verb.
 objectiveId=obj-u11-past-read
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the masculine past?
+distractorRationales= | чита́ли is plural past, not masculine singular.
 testedFeature=MASCULINE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-read-1
@@ -1626,8 +1686,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u11-past-read-0
 distractorSourceIds= | prov-ex-or-u11-past-read-3
-distractorDifference= | Does this row fail the masculine past?
-whyAnswerDemonstratesObjective=Does this answer show the masculine past?
+distractorDifference= | чита́ли is plural past, not masculine singular.
+whyAnswerDemonstratesObjective=чита́л is the masculine past form for a singular subject of the verb meaning to read. чита́ли is plural past. The cue shows the feminine singular form, but the question asks for masculine singular of the same verb.
 contrastMembers=чита́л | чита́ли
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-read-1 | prov-ex-or-u11-past-read-0 | prov-ex-or-u11-past-read-3
@@ -1641,7 +1701,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ba2754fb49905280a506663cedeb25951b360f281ea4cdea634db23db3907492
+- Content hash: 1c013bd68d42207e649757e0fab90bb87f05e94f78d4026c4d47ccdfe42177ad
 
 kind=FORM_SELECTION
 language=en
@@ -1649,11 +1709,11 @@ prompt=Which admitted line is the feminine past?
 promptLetter=Он чита́л
 options=Она чита́ла | Они чита́ли
 answer=Она чита́ла
-feedback=Does this answer show the feminine past? Она чита́ла.
+feedback=Она чита́ла means she was reading: the feminine singular subject matches the feminine past verb. Они чита́ли means they were reading and uses plural agreement. The question asks for the feminine singular line, not the plural line.
 objectiveId=obj-u11-past-read
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the feminine past?
+distractorRationales= | Они чита́ли has a plural subject and plural past verb, rather than feminine singular agreement.
 testedFeature=FEMININE_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u11-past-read-2
@@ -1661,8 +1721,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u11-past-read-5-ru
 distractorSourceIds= | prov-u11-past-read-x-0
-distractorDifference= | Does this row fail the feminine past?
-whyAnswerDemonstratesObjective=Does this answer show the feminine past?
+distractorDifference= | Они чита́ли has a plural subject and plural past verb, rather than feminine singular agreement.
+whyAnswerDemonstratesObjective=Она чита́ла means she was reading: the feminine singular subject matches the feminine past verb. Они чита́ли means they were reading and uses plural agreement. The question asks for the feminine singular line, not the plural line.
 contrastMembers=Она чита́ла | Они чита́ли
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u11-past-read-4-ru | prov-ex-u11-past-read-5-ru | prov-u11-past-read-x-0
@@ -1676,7 +1736,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 64e3e527536088e0c6a7eec08b573da8e12b2b107fce9200f84a50c511728ad7
+- Content hash: 5eaf605cb1b003f0224e1d1e53d8cd70ec24972510ba1800272ec1b0fbe5ffb4
 
 kind=FORM_SELECTION
 language=en
@@ -1684,11 +1744,11 @@ prompt=Which admitted row is the plural past?
 promptLetter=была́
 options=бы́ли | бы́л
 answer=бы́ли
-feedback=Does this answer show the plural past? бы́ли.
+feedback=бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows feminine singular, but the requested row is plural; past agreement follows the subject number.
 objectiveId=obj-u11-past-be
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the plural past?
+distractorRationales= | бы́л is masculine singular past, not the plural past requested here.
 testedFeature=PLURAL_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-be-1
@@ -1696,8 +1756,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u11-past-be-3
 distractorSourceIds= | prov-ex-or-u11-past-be-0
-distractorDifference= | Does this row fail the plural past?
-whyAnswerDemonstratesObjective=Does this answer show the plural past?
+distractorDifference= | бы́л is masculine singular past, not the plural past requested here.
+whyAnswerDemonstratesObjective=бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows feminine singular, but the requested row is plural; past agreement follows the subject number.
 contrastMembers=бы́ли | бы́л
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-be-1 | prov-ex-or-u11-past-be-3 | prov-ex-or-u11-past-be-0
@@ -1711,7 +1771,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8fd347afe54dd096427312249913cc5a31c1069c052a491c881f66a9e5385106
+- Content hash: cd264a68da70b6b54bc91de9d9012591a6b84209e4558e429c36583166809de6
 
 kind=FORM_SELECTION
 language=en
@@ -1719,11 +1779,11 @@ prompt=Which admitted row is the plural past?
 promptLetter=бы́ло
 options=бы́ли | бы́л
 answer=бы́ли
-feedback=Does this answer show the plural past? бы́ли.
+feedback=бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows neuter singular, but the question asks for the plural form of the same verb.
 objectiveId=obj-u11-past-be
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the plural past?
+distractorRationales= | бы́л is masculine singular past, not the plural past requested here.
 testedFeature=PLURAL_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-be-2
@@ -1731,8 +1791,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u11-past-be-3
 distractorSourceIds= | prov-ex-or-u11-past-be-0
-distractorDifference= | Does this row fail the plural past?
-whyAnswerDemonstratesObjective=Does this answer show the plural past?
+distractorDifference= | бы́л is masculine singular past, not the plural past requested here.
+whyAnswerDemonstratesObjective=бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows neuter singular, but the question asks for the plural form of the same verb.
 contrastMembers=бы́ли | бы́л
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-be-2 | prov-ex-or-u11-past-be-3 | prov-ex-or-u11-past-be-0
@@ -1742,36 +1802,36 @@ responseKind=RUSSIAN_TOKEN
 
 - Objectives: obj-u11-past-aspect
 - Sessions: u11-s-past-aspect
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d8b8381b8320417eef1a98d10532410e7e031943a39e77b3b2d8f7761e46ce6f
+- Content hash: 28e2d6b27a50ce9cb23cc0353d0977440fc30135813a904c481c3b8e5c6892d8
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the imperfective past?
-promptLetter=I was reading
-options=я читал | я прочитал
-answer=я читал
-feedback=Does this answer show the imperfective past? я читал.
+prompt=Which masculine past form (singular) of the same verb corresponds to the shown neuter form?
+promptLetter=прочита́ло
+options=прочита́л | прочита́ла
+answer=прочита́л
+feedback=прочита́ло is neuter past (singular); прочита́л is masculine past (singular) of the same verb.
 objectiveId=obj-u11-past-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the imperfective past?
-testedFeature=IMPERFECTIVE_PAST
-evidenceMode=SOURCE_SUPPLIED_PAIR
+distractorRationales= | прочита́ла is feminine past (singular), so it does not supply the requested masculine past form.
+testedFeature=MASCULINE_PAST
+evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-aspect-1
-cueLanguage=rule
+cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u11-past-aspect-0-ru
-distractorSourceIds= | prov-ex-u11-past-aspect-1-ru
-distractorDifference= | Does this row fail the imperfective past?
-whyAnswerDemonstratesObjective=Does this answer show the imperfective past?
-contrastMembers=я читал | я прочитал
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u11-past-aspect-0-en | prov-ex-u11-past-aspect-0-ru | prov-ex-u11-past-aspect-1-ru
-responseKind=RUSSIAN_CLAUSE
+answerSourceIds=prov-ex-or-u11-past-aspect-2
+distractorSourceIds= | prov-ex-or-u11-past-aspect-3
+distractorDifference= | прочита́ла is feminine past (singular), so it does not supply the requested masculine past form.
+whyAnswerDemonstratesObjective=прочита́ло is neuter past (singular); прочита́л is masculine past (singular) of the same verb.
+contrastMembers=прочита́л | прочита́ла
+relationKind=SAME_LEMMA_DIFFERENT_FIELD
+relationParticipantIds=prov-ex-or-u11-past-aspect-4 | prov-ex-or-u11-past-aspect-2 | prov-ex-or-u11-past-aspect-3
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u11-i-past-aspect-2`
 
@@ -1781,19 +1841,19 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3b056dfa43687b8dd815e4f2ea521bc111df1767cc12f4d61e0afb15517fc653
+- Content hash: 2dbacda49534d116e2018f60b0e742c562d5f36d771a7072a46ed765b10bf497
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted row is the feminine past?
+prompt=Which feminine past form (singular) of the same verb corresponds to the shown masculine form?
 promptLetter=прочита́л
 options=прочита́ла | прочита́ло
 answer=прочита́ла
-feedback=Does this answer show the feminine past? прочита́ла.
+feedback=прочита́л is masculine past (singular); прочита́ла is feminine past (singular) of the same verb.
 objectiveId=obj-u11-past-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the feminine past?
+distractorRationales= | прочита́ло is neuter past (singular), so it does not supply the requested feminine past form.
 testedFeature=FEMININE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-past-aspect-2
@@ -1801,8 +1861,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u11-past-aspect-3
 distractorSourceIds= | prov-ex-or-u11-past-aspect-4
-distractorDifference= | Does this row fail the feminine past?
-whyAnswerDemonstratesObjective=Does this answer show the feminine past?
+distractorDifference= | прочита́ло is neuter past (singular), so it does not supply the requested feminine past form.
+whyAnswerDemonstratesObjective=прочита́л is masculine past (singular); прочита́ла is feminine past (singular) of the same verb.
 contrastMembers=прочита́ла | прочита́ло
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-past-aspect-2 | prov-ex-or-u11-past-aspect-3 | prov-ex-or-u11-past-aspect-4
@@ -1816,7 +1876,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e9342eb057e85d988ba00c322c8b90567af07491ae91bd1570d3787ab9bbe151
+- Content hash: 2c3ef900b932d6e7dc78cb9916495c54efaed06e007c4408ef42c7898af6a24a
 
 kind=FORM_SELECTION
 language=en
@@ -1824,11 +1884,11 @@ prompt=Which admitted line is the feminine past?
 promptLetter=Он улыба́лся
 options=Она улыба́лась | Они улыба́лись
 answer=Она улыба́лась
-feedback=Does this answer show the feminine past? Она улыба́лась.
+feedback=Она улыба́лась means she was smiling, with feminine past agreement between the singular subject and verb. Они улыба́лись means they were smiling and has plural agreement. Both verbs keep their reflexive ending, but only the first line is feminine singular.
 objectiveId=obj-u11-reflexive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the feminine past?
+distractorRationales= | Они улыба́лись has a plural subject and plural past verb, rather than feminine singular agreement.
 testedFeature=FEMININE_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u11-reflexive-1
@@ -1836,8 +1896,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u11-reflexive-5-ru
 distractorSourceIds= | prov-u11-reflexive-x-0
-distractorDifference= | Does this row fail the feminine past?
-whyAnswerDemonstratesObjective=Does this answer show the feminine past?
+distractorDifference= | Они улыба́лись has a plural subject and plural past verb, rather than feminine singular agreement.
+whyAnswerDemonstratesObjective=Она улыба́лась means she was smiling, with feminine past agreement between the singular subject and verb. Они улыба́лись means they were smiling and has plural agreement. Both verbs keep their reflexive ending, but only the first line is feminine singular.
 contrastMembers=Она улыба́лась | Они улыба́лись
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u11-reflexive-4-ru | prov-ex-u11-reflexive-5-ru | prov-u11-reflexive-x-0
@@ -1851,7 +1911,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b16df5b9ebc3906d92ee5c514c14d00c625b2e5c80a445955182188457dec49c
+- Content hash: cedfc9551f2188d2aa505ce2439211fb74d538a1cd14370e2659ea7f5739f8ec
 
 kind=FORM_SELECTION
 language=en
@@ -1859,11 +1919,11 @@ prompt=Which admitted row is the feminine past?
 promptLetter=учи́лся
 options=учи́лась | учи́лись
 answer=учи́лась
-feedback=Does this answer show the feminine past? учи́лась.
+feedback=учи́лась is the feminine past form for a singular subject of the verb meaning to study. учи́лись is plural past. Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.
 objectiveId=obj-u11-reflexive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the feminine past?
+distractorRationales= | учи́лись is plural past, not feminine singular.
 testedFeature=FEMININE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u11-reflexive-2
@@ -1871,8 +1931,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u11-reflexive-7
 distractorSourceIds= | prov-ex-or-u11-reflexive-8
-distractorDifference= | Does this row fail the feminine past?
-whyAnswerDemonstratesObjective=Does this answer show the feminine past?
+distractorDifference= | учи́лись is plural past, not feminine singular.
+whyAnswerDemonstratesObjective=учи́лась is the feminine past form for a singular subject of the verb meaning to study. учи́лись is plural past. Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.
 contrastMembers=учи́лась | учи́лись
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u11-reflexive-6 | prov-ex-or-u11-reflexive-7 | prov-ex-or-u11-reflexive-8
@@ -1895,6 +1955,1308 @@ classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=11
 searchTerms=units 11-15 source notice
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-11-349`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eaa5751939c4c58ddc9fee76498f612243584713c9ce865d7bdb4fc2ce899d25
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:u11-st-teach-past-read-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
+shippedText=For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae727bad5723e6238c7babd49917129c78e27b78c56b874e1af6ac66a4cb1c74
+contentHash=b2e85bac9f2102ef31dff27b8b5d0d1dd4388283e8a06fabde5cb729e39c7bff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-11-350`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bf1a592591ee72865bfd96f1cc6ee9e7f0dfcf34ed16b7ef024174618a47d71
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:u11-st-teach-past-read-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
+shippedText=л,
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae727bad5723e6238c7babd49917129c78e27b78c56b874e1af6ac66a4cb1c74
+contentHash=ce1139143104ef235d69fd4d8547985239c3df5437fc8789f7e8c56ed31ba3b2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-11-351`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb5e623a6d03de566cf021406c436a736e79b9c853bcece4e5675d4488858740
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:u11-st-teach-past-read-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
+shippedText=идти
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae727bad5723e6238c7babd49917129c78e27b78c56b874e1af6ac66a4cb1c74
+contentHash=d230ab4b4139e1673f05ca28e9d8310196be5b411115d58d2e3e82eecff26d9f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-11-352`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af0d3e504ecf59cefa5f43c8e9a169329e5ceb069fd471c863c654456f31f655
+
+recordType=example
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:u11-st-teach-past-read-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+For a regular verb, the past tense removes -ть and adds -л, with gender endings. Irregulars such as идти and the past of быть are outside that recipe and must be learned as listed forms.
+shippedText=быть
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae727bad5723e6238c7babd49917129c78e27b78c56b874e1af6ac66a4cb1c74
+contentHash=8d16c1c96bb6353eeaf628a116fb3f18de40ec0a1e79c79b08fe681cb68390fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-11-369`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a65ebf04e269f35ea26d155e80d6a966e8cb4f0a4642dee1baf3b9c716dc1ce5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:u11-st-teach-past-aspect-2
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.
+shippedText=An English past progressive is not a categorical map onto the Russian imperfective, and a simple past is not a categorical map onto the perfective. An imperfective past can describe a completed event when the speaker does not assert completion. Unit 11 uses these past forms only. The aspect pairing lesson is Unit 12.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d1dce6e0675196107a66686ec78cdaea242d798adcd163c4de6dc0f9732e82bf
+contentHash=2aa8cd5167fa4b09ba575bba85229ed0a0c544ec52f109ce2500c6fb9a713b0e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-11-47`
+
+- Objectives: obj-u11-past-be
+- Sessions: u11-s-orient, u11-s-past-be
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e661f6fd44196efbf53004f2d2405b68446aacd3fbc4b7dc7212cf530244645f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-be:u11-st-teach-past-be-1:append
+originalSourceText=Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.
+Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+shippedText=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
+contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-reflexive`
+
+- Objectives: obj-u11-reflexive
+- Sessions: u11-s-orient, u11-s-reflexive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ebd5516bcfa9fb31438b2018a66b6284b8d8046db216265bdcbddbc6259a71d6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-reflexive:past-agreement:reflexive
+originalSourceText=OpenRussian frozen record verbs.csv:улыба'ться#accented and its translations_en cell; https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. The infinitive and its smile gloss are separately admitted records. Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch; final semantic review pending.
+Keep the reflexive ending with the verb. The recorded infinitive is улыба́ться, to smile. Compare the past forms in the worked examples.
+shippedText=Keep the reflexive ending with the verb. The recorded infinitive is улыба́ться, to smile. Compare the past forms in the worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f9c17dd1eed776c57a55145e7bc123834f34fdd5e49ce5ada1816208cb71394f
+contentHash=1e43f837fbfcbdc7d7e5c157df05e79afc9f4a889a33f20286c012ba68134b94
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-remediation-complete-v1`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bca1a651e0549ab0bba5adea0fd938cf8bd12b22bc32b82c7d26719d91c6278
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:agreement-remediation-complete-v1
+originalSourceText=Arrangement of unchanged previously authored Unit11 agreement explanations prov-ca-u11-agreement-teach-1..4. Frozen OpenRussian verbs.csv:прочита'ть#past_m,past_f,past_n at50e210c4803237779cb562bc1abcea529066031c retain separate CC BY-SA4.0 native provenance. Complete retained Wikibooks Past tense4567337 inspected for context; its aspect/English-tense equivalences and быть regularity claims are not newly admitted. No new rules, Russian, stress, scored tuples or private Penguin prose. Arrangement authored2026-10-14;qualified semantic and rights review pending.
+In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.
+
+Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.
+
+The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.
+
+The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.
+shippedText=In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.
+
+Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.
+
+The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.
+
+The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2cdc1ecefc8674c61c32377921a3e6ec3eb950afc413222bd98c729c6eb1245b
+contentHash=91840f73a3aa73e800e280267f602df808af2fc7c2138f391333bf2c250fae93
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-teach-1`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e7b63b3922eb1594962eec81cd953e9cb92a07dcc1e73e449b86611acfb778c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:teach-1
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.
+shippedText=In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1a0795ad45a3b2030bc85392890780caaa0a88bfbfed93c0ca4b0f98f0830b6c
+contentHash=0c7a1a324504a6af958e5fd9d53ab5059287bac2db98430b3ebca5ca7c80e6b6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-teach-2`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a04c504a067826c3180cadc638c52f3ff84b949aada38a8e03df3c62250ae40
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:teach-2
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.
+shippedText=Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4836856dc61876191c5b75b570efea3490da376e78b4bde75904cd39ffd7f93a
+contentHash=e052a6b073072b0a81b685429e862516059b305bda586fd6a0f96e4800a4c8cd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-teach-3`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a8b08c1631b046434342c281ededdad16f246343257d28411c5518bf29a1188
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:teach-3
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.
+shippedText=The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f183119255e49aafd0a446413f9df1af4fdc0598cd627850de0fb0193acca689
+contentHash=ba1e5d8fb4fe47c8b7355a6243381d17cd8a46f485ac9fd6ba94927ab0da60bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-teach-4`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8daeaeb7eb1307fcb90dd8bfbec0966dff359c2a41f28430e02e018cfcfc9f95
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:teach-4
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.
+shippedText=The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e8dc43731958cf97bf7f69b34a65efd1500706540fc406090912a27dab0079f7
+contentHash=bb6d37f7f4671ee856be487ff608d008150480ca7d8cf52826fbdae749035cf7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-title`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c35e80f36983d7eb82d93a8307c7fa8a00da94d770bb1c062eb1df310b5cc192
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:title
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+Choose past-tense gender agreement
+shippedText=Choose past-tense gender agreement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c131ec94df0cd439d279d8d7b6bdce40893a6fd12d4a904fefe9464a204096df
+contentHash=565b97b63d80fa787692fff3a0485d4594389e5062feb740bb646668c80d6ee1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-u11-g-past-aspect-0-distractor`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 066a5f87b79ad7d2a46a983a0f7edfd2dc07723fe92f373026cedd9d2d6359a2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:u11-g-past-aspect-0-distractor
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+прочита́ла is feminine past (singular), so it does not supply the requested neuter past form.
+shippedText=прочита́ла is feminine past (singular), so it does not supply the requested neuter past form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6e2d1afe05f64e28540805e6e4624c1c935dcb7915b5d499a5f36bb974829b25
+contentHash=9a3fa31891c54eece1fb3594a78bfeaabdc26a3a75b93aef9223a9cafd9de17b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-u11-g-past-aspect-0-feedback`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c162dbb1f6947ad84769c16d99080b6bd43b4a6858cab01fb39305f18af5e013
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:u11-g-past-aspect-0-feedback
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+прочита́л is masculine past (singular); прочита́ло is neuter past (singular) of the same verb.
+shippedText=прочита́л is masculine past (singular); прочита́ло is neuter past (singular) of the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9a494e45d96a1ec95cbc9d00910fa0d53a1b32631376bc69cfdcaeef1cb8f045
+contentHash=db194cfe91a42de2b10cf1693f4b0400e561f66fb37b152c6cc16bef0040c32d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-u11-g-past-aspect-0-prompt`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31e3ac9187cb733614510360d3a8e6270caff947efe8d53ddffc5567e8d2cdab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:u11-g-past-aspect-0-prompt
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+Which neuter past form (singular) of the same verb corresponds to the shown masculine form?
+shippedText=Which neuter past form (singular) of the same verb corresponds to the shown masculine form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0ae9e16c54fa90c548b9964f894a14a9092540164358d00448f977884a4534db
+contentHash=3d84b64f482af108ae28a587870b5872c3196429bdd128affea5d8faf6c55787
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-1-distractor`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dca872a199311ab7a3f070b1cd2d84140ca37ccb1d8bb45f14f5b3089380f05e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-1-distractor
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+прочита́ла is feminine past (singular), so it does not supply the requested masculine past form.
+shippedText=прочита́ла is feminine past (singular), so it does not supply the requested masculine past form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79926d5715c21ff8b291f1868200c9e64ff9bbb5d40032c3b4dc586301d1540c
+contentHash=b795acaf7b11c8e7109f22574718fe6b7c3f487ac5cf1be0729faae86e64625a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-1-feedback`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3bb066f44263d0cbd2910ad9fc1eb4d0d8371d6fade492e754c6c5258ab91360
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-1-feedback
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+прочита́ло is neuter past (singular); прочита́л is masculine past (singular) of the same verb.
+shippedText=прочита́ло is neuter past (singular); прочита́л is masculine past (singular) of the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=78cd557a2078f0716c9cc1a8088ce865b4faad9d1c4ae0db7e69d3c6dbc7bee6
+contentHash=8c21c8d231fcfcaa4a3da73b071d582531e7d45fdb811684174c25f6bd530fc3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-1-prompt`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33f76aacb41aacab02388689540582d8af80ac42cdb7cef213f2959dbc212b81
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-1-prompt
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+Which masculine past form (singular) of the same verb corresponds to the shown neuter form?
+shippedText=Which masculine past form (singular) of the same verb corresponds to the shown neuter form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d90b3c32dbebd6d6a404879304cb678463d8003dca44260e15a4d89a6e9e456b
+contentHash=5c1fb49511784273474a8df3e3fe62d0705927eb465dda6ece30cabd4f827a6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-2-distractor`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 10d80f5fcabc23a68c0d1c8ae8a0f6396062782f1fe5f8e4df42b6fd0db524f0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-2-distractor
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+прочита́ло is neuter past (singular), so it does not supply the requested feminine past form.
+shippedText=прочита́ло is neuter past (singular), so it does not supply the requested feminine past form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19a70f9b59d6efb2d2cb4d061b8b940e2171553f78cba3ec4cfd35ea8f9c508f
+contentHash=2e5d431cf4e3a3894add9c1f116742050b23638687b0821a5031f26ad46dccdc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-2-feedback`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a70de427d82d6d34c4d21035346ce2d33ea4a65b6b9ffafbc8c33a1fbc92a4a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-2-feedback
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+прочита́л is masculine past (singular); прочита́ла is feminine past (singular) of the same verb.
+shippedText=прочита́л is masculine past (singular); прочита́ла is feminine past (singular) of the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0ca79cea4275334feeb369463cc177536a16f46909587ab9d3f1257953ce31ff
+contentHash=04e582e5db69e9bd62179c9826bb85569f78f12e393fac9fbaaf1aac6eee556e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-2-prompt`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4367baad6678a4e6d0cb52b93b8cd762734176be173f0c355e9ff517547b943
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:past-agreement:u11-i-past-aspect-2-prompt
+originalSourceText=OpenRussian frozen verb cells, commit 50e210c4803237779cb562bc1abcea529066031c: verbs.csv:прочита'ть#past_m; verbs.csv:прочита'ть#past_f; verbs.csv:прочита'ть#past_n. Source: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv. Gender labels expand past_m, past_f and past_n; every Russian response is an existing admitted cell. Supplementary Gramota/Litnevskaya search evidence on gender and number: https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/rod-chislo-vzaimosvyaz-glagolnykh-kategoriy (search checked 2026-10-09; full-page retrieval returned 403). Follow-up authored 2026-10-09 within the existing content-audit-2026-10-08 research batch. No Penguin expression is reproduced; semantic acceptance remains pending.
+Which feminine past form (singular) of the same verb corresponds to the shown masculine form?
+shippedText=Which feminine past form (singular) of the same verb corresponds to the shown masculine form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=34f0e084f1ac41c9444b33f227a20be3a51049b43acfeb49c9f65ca8f8b1af20
+contentHash=04ab5dfbf585729152690d0d2eeea65f7592b91bbb202381ffed41c1558961db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-g-past-be-0`
+
+- Objectives: obj-u11-past-be
+- Sessions: u11-s-orient, u11-s-past-be
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68372a25a791b37afae4ba37e5856a7550570bf87c6d78f84c2f70b9ea0848b8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-be:feedback:u11-g-past-be-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+была́ is the feminine past form for a singular subject meaning was. бы́ло is neuter singular and бы́ли is plural. Choose the past form with the feminine singular agreement requested here.
+shippedText=была́ is the feminine past form for a singular subject meaning was. бы́ло is neuter singular and бы́ли is plural. Choose the past form with the feminine singular agreement requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d4cbc3cd134bc596f4674461cf04dfd6787505f375784b903d8b4590db7e8684
+contentHash=728881ae18f1867bbf3e143e56d649e31969aab5cb0d832dc7fb762443edc091
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-g-past-be-0-distractor-1`
+
+- Objectives: obj-u11-past-be
+- Sessions: u11-s-orient, u11-s-past-be
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbd8029796af1ee1b06f5c337b390618a725a8470ae8045ffe461d471799503f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-be:feedback:u11-g-past-be-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+бы́ло is neuter singular past, not feminine singular.
+shippedText=бы́ло is neuter singular past, not feminine singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=12c19e6f9ca2a3765dcb68cad3be4df0b36bdc5413bf6f3eaa04831600e95675
+contentHash=3251df98459f50c30f355e64f0e872cd81b3e8dce525880b5f6d47c785bbf20b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-g-past-be-0-distractor-2`
+
+- Objectives: obj-u11-past-be
+- Sessions: u11-s-orient, u11-s-past-be
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce502702d0a79d93f2b13bff69dcb66eb4033df59ea031eb4b6ed94c5c8d747a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-be:feedback:u11-g-past-be-0-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+бы́ли is plural past, not feminine singular.
+shippedText=бы́ли is plural past, not feminine singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c101d9cecfe613ff20f0a00b801c1acab5cb85e5587e84aede8134a354aeb8c2
+contentHash=61f99fb7538342400fffffd4ab4aa48082c281bccaf694884c735c1bb39d7d9c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-g-past-read-0`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3ecd3231c3349691be59c207939fa4ba4d567b4b134f7de9a191cda0da9a98f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:feedback:u11-g-past-read-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́ла is the feminine past form for a singular subject of the verb meaning to read. чита́ло is neuter singular and чита́ли is plural. The past form matches the subject in gender and number; choose feminine singular for this question.
+shippedText=чита́ла is the feminine past form for a singular subject of the verb meaning to read. чита́ло is neuter singular and чита́ли is plural. The past form matches the subject in gender and number; choose feminine singular for this question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a4ae7c6a6cef148a2c1bb641f331b5b03d0602c600fdb10514a7b9c50e6d3bdd
+contentHash=c1253c0fffcbe92bbd26650cd5ac17b98567337e87e204cc17a10d30bc8fb176
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-g-past-read-0-distractor-1`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cf5b90595f7106bda1db9fa5da35087e8cadb1628bfffa4ab7daf3ee01a95a2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:feedback:u11-g-past-read-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́ло is neuter singular past, not feminine singular.
+shippedText=чита́ло is neuter singular past, not feminine singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bde469dd4ece5e32c5af2a06b3320f687aaf96962e4f9988f9150425561012f2
+contentHash=6bf0ffca9c2040fc175fb8637a3ca9e4a6a9757ee15c554761a9c3e2a7c99d15
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-g-past-read-0-distractor-2`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8decc3ff7ea8076ea02a5f1532883ad3e8fabde669d007828d8791c2bea704e4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:feedback:u11-g-past-read-0-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́ли is plural past, not feminine singular.
+shippedText=чита́ли is plural past, not feminine singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d0f96c1d512e48599d737b8b206ee328065780bec98a2fc0b8b24f05cf3b0a6
+contentHash=394a45c1c8299ba33f4205f8a78d246e202355005d682f6a1661ea8db5a3893f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-g-reflexive-0`
+
+- Objectives: obj-u11-reflexive
+- Sessions: u11-s-orient, u11-s-reflexive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea7703a9173dbb742ff96ffbe1c88f82da1c72141ba4a6c7edda71320fbbde46
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-reflexive:feedback:u11-g-reflexive-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+улыба́лась is the feminine past form for a singular subject of the verb meaning to smile. улыба́лись is plural past, while улыба́ться is the infinitive, not a past form. The reflexive ending remains on the past verb; choose feminine singular agreement.
+shippedText=улыба́лась is the feminine past form for a singular subject of the verb meaning to smile. улыба́лись is plural past, while улыба́ться is the infinitive, not a past form. The reflexive ending remains on the past verb; choose feminine singular agreement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=36ee00e05a803523dc1dccb1b3f83a4c9ac82708a88754aef87fb4cc9749459a
+contentHash=4a8070cf591ae7adf4bda3efbd95f1907b1463b30c0e6ccae9a16f7d19c2d828
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-g-reflexive-0-distractor-1`
+
+- Objectives: obj-u11-reflexive
+- Sessions: u11-s-orient, u11-s-reflexive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2c6e4e07b94dbfa2395e76735dbf32dcc22654e98bfd236071d5e051cebe2ca
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-reflexive:feedback:u11-g-reflexive-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+улыба́лись is plural past, not feminine singular.
+shippedText=улыба́лись is plural past, not feminine singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9a17aadd85fbf45d52cb868c6a77b5d3086425848dc93548b62c44aba9dfc9c9
+contentHash=b6e635959002b41aba16e1fef1e20343b93afd385567656662c8b41ab6726cb9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-g-reflexive-0-distractor-2`
+
+- Objectives: obj-u11-reflexive
+- Sessions: u11-s-orient, u11-s-reflexive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b4a145de6b262e76a3f8826747bb921aa42aaca4222b76eeaf46c54083fd249
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-reflexive:feedback:u11-g-reflexive-0-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+улыба́ться is the infinitive meaning to smile, not a past-tense form.
+shippedText=улыба́ться is the infinitive meaning to smile, not a past-tense form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=da0d53f542c478f54b97264c40fe42f5e8c4d67b27ad23ebde5d07c06c0e9783
+contentHash=1402eadef49c22c2f3da5728fc24cc428c5bf32750c2b34c7972481d0652aacc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-past-be-1`
+
+- Objectives: obj-u11-past-be
+- Sessions: u11-s-orient, u11-s-past-be
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 027402d2d2fef82e21aec4c0a89e1b756af49bc0029d8f971550b73f2c2e0b33
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-be:feedback:u11-i-past-be-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows feminine singular, but the requested row is plural; past agreement follows the subject number.
+shippedText=бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows feminine singular, but the requested row is plural; past agreement follows the subject number.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7de85955d3dc8fa998fb65f6a3e3aff842d46fd08a9bc1aee5327b2af8c2fc50
+contentHash=6eb7b7e35ddf6e365f5bfee78ae60832e1e8aa5da20074a59546212b22991634
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-past-be-1-distractor-1`
+
+- Objectives: obj-u11-past-be
+- Sessions: u11-s-orient, u11-s-past-be
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1796731af28e25725af46ded1176606ed751de2ea1cd4151ebe2a090288cc338
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-be:feedback:u11-i-past-be-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+бы́л is masculine singular past, not the plural past requested here.
+shippedText=бы́л is masculine singular past, not the plural past requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e838ef8c9afc64a2b5af6f5f4e7f9466bd94dee15e14cd0e28d2f028dc7c5ae1
+contentHash=f4b2acc599c59ca163fcd35ce2f3833fcb03b5a79dd1a321ac391e23c113168a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-past-be-2`
+
+- Objectives: obj-u11-past-be
+- Sessions: u11-s-orient, u11-s-past-be
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7d6bc71690cab9ccc6e2157c8517de59af0332483a1de69404f15ea31bf2b3a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-be:feedback:u11-i-past-be-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows neuter singular, but the question asks for the plural form of the same verb.
+shippedText=бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows neuter singular, but the question asks for the plural form of the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d2d77d40205b7c5c01ec98e51b4bfdeb0397c1d2614c0a2a617b96822809cc36
+contentHash=085aad5ce56f3760da67d39e92bfefa835592e987cb833f50ec9e52bc3d467c3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-past-be-2-distractor-1`
+
+- Objectives: obj-u11-past-be
+- Sessions: u11-s-orient, u11-s-past-be
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e932748bf8f6db87b2246fb1073054278d9141e55516a15a5e4ceab950d01c77
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-be:feedback:u11-i-past-be-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+бы́л is masculine singular past, not the plural past requested here.
+shippedText=бы́л is masculine singular past, not the plural past requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e838ef8c9afc64a2b5af6f5f4e7f9466bd94dee15e14cd0e28d2f028dc7c5ae1
+contentHash=f4b2acc599c59ca163fcd35ce2f3833fcb03b5a79dd1a321ac391e23c113168a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-past-read-1`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fcabe2ef6c9edd75d95f3ee6ad81fff3a9869911d56970fb54e60b5932bcf89d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:feedback:u11-i-past-read-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́л is the masculine past form for a singular subject of the verb meaning to read. чита́ли is plural past. The cue shows the feminine singular form, but the question asks for masculine singular of the same verb.
+shippedText=чита́л is the masculine past form for a singular subject of the verb meaning to read. чита́ли is plural past. The cue shows the feminine singular form, but the question asks for masculine singular of the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f6fc234e2a96940c72bb207a325d75b8700c810782f43de79f678125c0d3ce8
+contentHash=857b4dcf34de4331ee4bd3cc667f901ea05060ee5f8dc12846db3121093086b6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-past-read-1-distractor-1`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0cba8ddc87f93ec2134fe42bc6efb9c98cd3af949ad7808d5a7d3926fc1642b9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:feedback:u11-i-past-read-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́ли is plural past, not masculine singular.
+shippedText=чита́ли is plural past, not masculine singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5432ee8cd6ab0f83e35fb9c233347db42773661141b73b05a69c0a2d1f6d8aa1
+contentHash=abc6d46d27538b58b2fa922ca58415033c9941268de0042a12501387f47fb095
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-past-read-2`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 04805c87148477e49da880c7fb5214e484f28afd6ea53942d1704bce4a771bca
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:feedback:u11-i-past-read-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Она чита́ла means she was reading: the feminine singular subject matches the feminine past verb. Они чита́ли means they were reading and uses plural agreement. The question asks for the feminine singular line, not the plural line.
+shippedText=Она чита́ла means she was reading: the feminine singular subject matches the feminine past verb. Они чита́ли means they were reading and uses plural agreement. The question asks for the feminine singular line, not the plural line.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b05d510288e0921c7be19199ca1e672772deac1a8e8aebe3dbd9b8e7522a58b9
+contentHash=1d72979ae381e74f972c1f4dd99c554f742560ac9fd41ed11ab25584433f5c50
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-past-read-2-distractor-1`
+
+- Objectives: obj-u11-past-read
+- Sessions: u11-s-orient, u11-s-past-read
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 185176af805844b83d02776eaa7a7b31a8c5a5e88426113efb3fd820bcc2a2d7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-read:feedback:u11-i-past-read-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Они чита́ли has a plural subject and plural past verb, rather than feminine singular agreement.
+shippedText=Они чита́ли has a plural subject and plural past verb, rather than feminine singular agreement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=49427680f83606ed558864a6ec205dd4be317464fa6f973d38ddf8d484deee13
+contentHash=4ffffce25a1be1a75e7465fffda783afe868ffad5931987f4b242e577c11b4ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-reflexive-1`
+
+- Objectives: obj-u11-reflexive
+- Sessions: u11-s-orient, u11-s-reflexive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd8b157559fea050a4bf8cc5a80a1f0e1879cadffea3b1dd95a2d149ef08106d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-reflexive:feedback:u11-i-reflexive-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Она улыба́лась means she was smiling, with feminine past agreement between the singular subject and verb. Они улыба́лись means they were smiling and has plural agreement. Both verbs keep their reflexive ending, but only the first line is feminine singular.
+shippedText=Она улыба́лась means she was smiling, with feminine past agreement between the singular subject and verb. Они улыба́лись means they were smiling and has plural agreement. Both verbs keep their reflexive ending, but only the first line is feminine singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adb6b677a549f45ea37a59239d0ad18d31c765d8e9e8901d450c32a408219540
+contentHash=ec6fee79ddf246ef2130e525d905e69b809bf76f0ec2e273bf12849bd1250267
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-reflexive-1-distractor-1`
+
+- Objectives: obj-u11-reflexive
+- Sessions: u11-s-orient, u11-s-reflexive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19c59bb5e2f675eff4e3b4c0229f3ed7a3504b5678a74eac5c1fcf178112a0e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-reflexive:feedback:u11-i-reflexive-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Они улыба́лись has a plural subject and plural past verb, rather than feminine singular agreement.
+shippedText=Они улыба́лись has a plural subject and plural past verb, rather than feminine singular agreement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=637bdbb78c1ba5ce0f2ff6aaac650a71aec8be0f01104c4fa41f964a6ca74966
+contentHash=96b11d28247f1bd4e1a4069afd9ac0887eef54d4f6ec9fbe34799c9386e2fb47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-reflexive-2`
+
+- Objectives: obj-u11-reflexive
+- Sessions: u11-s-orient, u11-s-reflexive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 025d4c4f3a30456417faa9751324e3c8932d810d328971afbfb0f31c53d9e882
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-reflexive:feedback:u11-i-reflexive-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+учи́лась is the feminine past form for a singular subject of the verb meaning to study. учи́лись is plural past. Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.
+shippedText=учи́лась is the feminine past form for a singular subject of the verb meaning to study. учи́лись is plural past. Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=949f305673dde70da02b1578a5873a190c5113743eca74669ad144e982c8e82d
+contentHash=4bdda636a9c7f715f47ef5097e141f3fee5d76f2f2bd62abe40b4faf0dab9f33
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-feedback-u11-i-reflexive-2-distractor-1`
+
+- Objectives: obj-u11-reflexive
+- Sessions: u11-s-orient, u11-s-reflexive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9d562c9131c2a298f95adc56b823a0351f5a2b347800e02e341ae9bb53767c4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-reflexive:feedback:u11-i-reflexive-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+учи́лись is plural past, not feminine singular.
+shippedText=учи́лись is plural past, not feminine singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=200c2baff498d1e8e9e3f1bdd18b02309d8cef31664f039ee9d8f413e5cc9e21
+contentHash=c5b4a1437caef433ea1fd6df19e0adcd6a3afd57b34508d1a255463350d75ffe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-ex-or-u11-past-aspect-2`
 
@@ -3980,6 +5342,136 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### AUTHORED_ENGLISH `en-ca-11-11183`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae412bdeb680148b099af8cfbf63bf6a6235290134d5c1d7a995dc1c4702fe95
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 11 AnkiDroid direction
+
+### AUTHORED_ENGLISH `en-ca-11-11184`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8cd1ecc393419932b866a65b497e995e632d068838c9b265135d62be3495143
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.
+
+### AUTHORED_ENGLISH `en-ca-11-11185`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 591b5c4af99115f96605ec84f948d2d36520358d4402a755edce8b0d70cca495
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 11 binder prompt
+
+### AUTHORED_ENGLISH `en-ca-11-11186`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c7c3a17d03d03c89079a3f35d15908f36024b9010b4e668ab3ea9cc20628452
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=A binder prompt is one specific note, not a score.
+
+### AUTHORED_ENGLISH `en-ca-11-11187`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4808433cca89cd6c6623adc5b478d9fab0477dccbf7946cfb1d775916056d49
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 11 optional tutor
+
+### AUTHORED_ENGLISH `en-ca-11-11188`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c360bd7e475ddbc55e3e122dc0b4bdf911d8b05b19f23d8a2711bbc02be50cf1
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Tutor work is optional and does not count as demonstrated ability.
+
+### AUTHORED_ENGLISH `en-ca-11-11189`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8d144bd22688cd5705ab05efbc1ff3dff2913e3a48cdaac7e153bfa3ed68796
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 11 cumulative review
+
+### AUTHORED_ENGLISH `en-ca-11-44`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a39b63853e2c9b215f4fdaf68fc0d142ef523b6e251990014e91b77b50d20d9
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Owned-book assignment for Lesson 11: printed pages 122-132. PDF indexes 134-144 are file locators, not printed pages. Observed section locators: §11.1 p122 (PDF 134); §11.2 p122 (PDF 134); §11.3 p124 (PDF 136); §11.4 p124 (PDF 136); §11.5 p125 (PDF 137); §11.6 p126 (PDF 138); §11.7 p128 (PDF 140); §11.8 p129 (PDF 141); §11.9 p130 (PDF 142). Observed exercise locators: 11/1 p125/PDF137; 11/2 p128/PDF140; 11/3 p131/PDF143. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.
+
+### AUTHORED_ENGLISH `en-ca-11-45`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be1d86e18bbf235c037814dc59abf78b9133f7116188e3d578ddc746814c8b2c
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Unit 11 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+
+### AUTHORED_ENGLISH `en-ca-11-46`
+
+- Objectives: none
+- Sessions: none
+- Source: src-app-english-v2
+- Rights: rights-app-english-v2
+- Classification: INDEPENDENTLY_AUTHORED_SCAFFOLD
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a45bf02411e4fd258452fa9e63f35868b55ee0395dec04fdb7528e9530d6629
+
+classification=INDEPENDENTLY_AUTHORED_SCAFFOLD
+text=Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
 ### AUTHORED_ENGLISH `en-u11-001`
 
 - Objectives: none
@@ -4426,6 +5918,21 @@ CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -4467,6 +5974,20 @@ permitsAppUse=true
 
 src-wikibooks-russian-cc-by-sa
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -4520,8 +6041,6 @@ permitsAppUse=true
 - `obj-u11-past-aspect` INSTRUCTION `u11-st-teach-past-aspect-2`
 - `obj-u11-past-aspect` INSTRUCTION `u11-st-teach-past-aspect-3`
 - `obj-u11-past-aspect` INSTRUCTION `u11-st-teach-past-aspect-4`
-- `obj-u11-past-aspect` EXAMPLE `ex-u11-past-aspect-0`
-- `obj-u11-past-aspect` EXAMPLE `ex-u11-past-aspect-1`
 - `obj-u11-past-aspect` EXAMPLE `ex-or-u11-past-aspect-2`
 - `obj-u11-past-aspect` EXAMPLE `ex-or-u11-past-aspect-3`
 - `obj-u11-past-aspect` EXAMPLE `ex-or-u11-past-aspect-4`
@@ -4594,19 +6113,21 @@ permitsAppUse=true
 - `u11-st-check-past-be` ITEM `u11-i-past-be-1`
 - `u11-st-check-past-be` ITEM `u11-i-past-be-2`
 - `u11-s-past-aspect` OBJECTIVE `obj-u11-past-aspect`
-- `u11-st-teach-past-aspect-1` EXAMPLE `ex-u11-past-aspect-0`
-- `u11-st-teach-past-aspect-1` EXAMPLE `ex-u11-past-aspect-1`
+- `u11-st-teach-past-aspect-1` EXAMPLE `ex-or-u11-past-aspect-2`
+- `u11-st-teach-past-aspect-1` EXAMPLE `ex-or-u11-past-aspect-3`
+- `u11-st-teach-past-aspect-1` EXAMPLE `ex-or-u11-past-aspect-4`
 - `u11-st-teach-past-aspect-1` REFERENCE `ref-u1115-attribution`
-- `u11-st-guided-past-aspect-1` REMEDIATION `u11-st-rem-past-aspect`
-- `u11-st-guided-past-aspect-1` ITEM `u11-g-past-aspect-0`
 - `u11-st-teach-past-aspect-2` REFERENCE `ref-u1115-attribution`
 - `u11-st-teach-past-aspect-3` EXAMPLE `ex-or-u11-past-aspect-2`
 - `u11-st-teach-past-aspect-3` EXAMPLE `ex-or-u11-past-aspect-3`
 - `u11-st-teach-past-aspect-3` REFERENCE `ref-u1115-attribution`
 - `u11-st-teach-past-aspect-4` EXAMPLE `ex-or-u11-past-aspect-4`
 - `u11-st-teach-past-aspect-4` REFERENCE `ref-u1115-attribution`
-- `u11-st-rem-past-aspect` EXAMPLE `ex-u11-past-aspect-0`
-- `u11-st-rem-past-aspect` EXAMPLE `ex-u11-past-aspect-1`
+- `u11-st-guided-past-aspect-1` REMEDIATION `u11-st-rem-past-aspect`
+- `u11-st-guided-past-aspect-1` ITEM `u11-g-past-aspect-0`
+- `u11-st-rem-past-aspect` EXAMPLE `ex-or-u11-past-aspect-2`
+- `u11-st-rem-past-aspect` EXAMPLE `ex-or-u11-past-aspect-3`
+- `u11-st-rem-past-aspect` EXAMPLE `ex-or-u11-past-aspect-4`
 - `u11-st-check-past-aspect` REMEDIATION `u11-st-rem-past-aspect`
 - `u11-st-check-past-aspect` ITEM `u11-i-past-aspect-1`
 - `u11-st-check-past-aspect` ITEM `u11-i-past-aspect-2`
@@ -4635,6 +6156,49 @@ permitsAppUse=true
 - `u11-st-check-reflexive` ITEM `u11-i-reflexive-2`
 - `u11-s-book` OBJECTIVE `obj-u11-book`
 - `u11-st-book-work` REFERENCE `ref-u1115-attribution`
+- `obj-u11-past-read` PROVENANCE `prov-ca-11-349`
+- `obj-u11-past-read` PROVENANCE `prov-ca-11-350`
+- `obj-u11-past-read` PROVENANCE `prov-ca-11-351`
+- `obj-u11-past-read` PROVENANCE `prov-ca-11-352`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-11-369`
+- `obj-u11-past-be` PROVENANCE `prov-ca-11-47`
+- `obj-u11-reflexive` PROVENANCE `prov-ca-u11-agreement-reflexive`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-remediation-complete-v1`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-teach-1`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-teach-2`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-teach-3`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-teach-4`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-title`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-u11-g-past-aspect-0-distractor`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-u11-g-past-aspect-0-feedback`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-u11-g-past-aspect-0-prompt`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-1-distractor`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-1-feedback`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-1-prompt`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-2-distractor`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-2-feedback`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-u11-i-past-aspect-2-prompt`
+- `obj-u11-past-be` PROVENANCE `prov-ca-u11-feedback-u11-g-past-be-0`
+- `obj-u11-past-be` PROVENANCE `prov-ca-u11-feedback-u11-g-past-be-0-distractor-1`
+- `obj-u11-past-be` PROVENANCE `prov-ca-u11-feedback-u11-g-past-be-0-distractor-2`
+- `obj-u11-past-read` PROVENANCE `prov-ca-u11-feedback-u11-g-past-read-0`
+- `obj-u11-past-read` PROVENANCE `prov-ca-u11-feedback-u11-g-past-read-0-distractor-1`
+- `obj-u11-past-read` PROVENANCE `prov-ca-u11-feedback-u11-g-past-read-0-distractor-2`
+- `obj-u11-reflexive` PROVENANCE `prov-ca-u11-feedback-u11-g-reflexive-0`
+- `obj-u11-reflexive` PROVENANCE `prov-ca-u11-feedback-u11-g-reflexive-0-distractor-1`
+- `obj-u11-reflexive` PROVENANCE `prov-ca-u11-feedback-u11-g-reflexive-0-distractor-2`
+- `obj-u11-past-be` PROVENANCE `prov-ca-u11-feedback-u11-i-past-be-1`
+- `obj-u11-past-be` PROVENANCE `prov-ca-u11-feedback-u11-i-past-be-1-distractor-1`
+- `obj-u11-past-be` PROVENANCE `prov-ca-u11-feedback-u11-i-past-be-2`
+- `obj-u11-past-be` PROVENANCE `prov-ca-u11-feedback-u11-i-past-be-2-distractor-1`
+- `obj-u11-past-read` PROVENANCE `prov-ca-u11-feedback-u11-i-past-read-1`
+- `obj-u11-past-read` PROVENANCE `prov-ca-u11-feedback-u11-i-past-read-1-distractor-1`
+- `obj-u11-past-read` PROVENANCE `prov-ca-u11-feedback-u11-i-past-read-2`
+- `obj-u11-past-read` PROVENANCE `prov-ca-u11-feedback-u11-i-past-read-2-distractor-1`
+- `obj-u11-reflexive` PROVENANCE `prov-ca-u11-feedback-u11-i-reflexive-1`
+- `obj-u11-reflexive` PROVENANCE `prov-ca-u11-feedback-u11-i-reflexive-1-distractor-1`
+- `obj-u11-reflexive` PROVENANCE `prov-ca-u11-feedback-u11-i-reflexive-2`
+- `obj-u11-reflexive` PROVENANCE `prov-ca-u11-feedback-u11-i-reflexive-2-distractor-1`
 - `obj-u11-past-aspect` PROVENANCE `prov-ex-or-u11-past-aspect-2`
 - `obj-u11-past-aspect` PROVENANCE `prov-ex-or-u11-past-aspect-2-gloss`
 - `obj-u11-past-aspect` PROVENANCE `prov-ex-or-u11-past-aspect-3`
