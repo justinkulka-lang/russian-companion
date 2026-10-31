@@ -76,7 +76,7 @@ Never:
 
 | ID | Type | Task | Done when | Needs | Status |
 |---|---|---|---|---|---|
-| T04 | CODEX | Move audio playback and recording into v2 (A2-19). Remove the legacy v1 UI, its tests and the release-gate legacy dependencies (A2-38, CC038, CC039, CC044). | v2 plays a bundled clip and records and replays a take in tests. No legacy UI code remains. | T03-n1 | IN_PROGRESS |
+| T04 | CODEX | Move audio playback and recording into v2 (A2-19). Remove the legacy v1 UI, its tests and the release-gate legacy dependencies (A2-38, CC038, CC039, CC044). | v2 plays a bundled clip and records and replays a take in tests. No legacy UI code remains. | T03-n1 | DONE — bd7d5fdb63707934927a2a22820572c2c1f30bd3; v2 clip playback, recording, and replay; legacy UI and release-gate pathway checks removed. |
 | T05 | CODEX | Replace the per-unit Kotlin pin files with data-driven validator checks (A2-16). | No Unit*Pins.kt files remain. Validator covers the same rules. CI passes. | T04 | TODO |
 | T06 | CODEX | Fix CC018 (safe insets), CC019 (TalkBack option labels), CC040 (state saving) and CC041 (main-thread work). | Robolectric/UI tests cover each fix. | T04 | TODO |
 | T07 | CODEX | Move hard-coded review text into the pack (CC043). Pin the Gradle wrapper checksum and fix the CI license step (CC042). Move non-runtime provenance out of the bundled pack (A2-15). | Pack loads. CI passes. | T05 | TODO |
@@ -158,6 +158,7 @@ MEDIUM and LOW findings for those units are fixed or given a written disposition
 - 2026-10-30 — T02 — 20d2f566bf1508aaa570d02f5e80f726094bb40f — DONE: historical audit tree removed using existing archive 231a2d31188b48afa256a759dec4389eaf5b44c3; full suite owed.
 - 2026-10-30 — T03 — 64eb5cb2ea55da2698dc03ac5f144d68dbb024c0 — DONE: one cumulative-review assignment schema; dev database migration discards learner rows; full suite owed.
 - 2026-10-31 — T03-n1 — a8ed2b72c12e5fd2fb5b4c0b2107cffd780cf0c2 — DONE: remaining baseline failures fixed without restoring schemas 2–16; full unit suite 1,397 passed, 0 failed, 1 physical skip, 0 errors.
+- 2026-10-31 — T04 — bd7d5fdb63707934927a2a22820572c2c1f30bd3 — DONE: v2 plays a bundled clip and records and replays a take; legacy UI, its tests, and release-gate pathway dependencies removed; full unit suite 1,359 passed, 0 failed, 1 physical skip, 0 errors.
 
 ### T02 baseline removals and filtered tests — 2026-10-30
 
