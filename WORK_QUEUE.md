@@ -76,7 +76,7 @@ Never:
 
 | ID | Type | Task | Done when | Needs | Status |
 |---|---|---|---|---|---|
-| T04 | CODEX | Move audio playback and recording into v2 (A2-19). Remove the legacy v1 UI, its tests and the release-gate legacy dependencies (A2-38, CC038, CC039, CC044). | v2 plays a bundled clip and records and replays a take in tests. No legacy UI code remains. | T03-n1 | TODO |
+| T04 | CODEX | Move audio playback and recording into v2 (A2-19). Remove the legacy v1 UI, its tests and the release-gate legacy dependencies (A2-38, CC038, CC039, CC044). | v2 plays a bundled clip and records and replays a take in tests. No legacy UI code remains. | T03-n1 | IN_PROGRESS |
 | T05 | CODEX | Replace the per-unit Kotlin pin files with data-driven validator checks (A2-16). | No Unit*Pins.kt files remain. Validator covers the same rules. CI passes. | T04 | TODO |
 | T06 | CODEX | Fix CC018 (safe insets), CC019 (TalkBack option labels), CC040 (state saving) and CC041 (main-thread work). | Robolectric/UI tests cover each fix. | T04 | TODO |
 | T07 | CODEX | Move hard-coded review text into the pack (CC043). Pin the Gradle wrapper checksum and fix the CI license step (CC042). Move non-runtime provenance out of the bundled pack (A2-15). | Pack loads. CI passes. | T05 | TODO |
