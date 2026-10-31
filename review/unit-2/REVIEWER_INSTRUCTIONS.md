@@ -2,14 +2,14 @@
 
 Schema version: 3
 Application: dev.russiancompanion 2.0.0-dev (5)
-Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-Unit content-review digest: 4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c
+Curriculum source commit: 0107931bfee92fa932c93ae63d3f4a34080cb2bf
+Unit content-review digest: d90b27224f52723e33182e4962f581e8b12beb05ee5de06c55a4379382153df5
 Mapping-package digest: def2280a90229cec52750f12cb7dc2f7564df8508c113a69cf6ed585cee1c0c6
-Pack content-review digest: 39c3563ba1b149b36977ae0fc2c0f920e282101e9e7870c06d141fe1a10e65ec
-Review-package digest: 0c6bbc7ac312c0ecab9426e24ac8b7401cb795aed937bb9357e3f548c58ef72b
-Repository source digest: bb0170d2224941d6d4351a50d411f2ef88814e8b872dd61e8b51604228270c87
+Pack content-review digest: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+Review-package digest: bc1db13ae1d8795a7412ca484135e8a72c443b0666abfc476ca3f881f4e7d041
+Repository source digest: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
-This packet was generated from the packaged curriculum at curriculum source commit 4f5cb8024d3f68a37052fdf85b5755bffa2a0904. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
+This packet was generated from the packaged curriculum at curriculum source commit 0107931bfee92fa932c93ae63d3f4a34080cb2bf. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
 
 ## Digests
 
@@ -37,7 +37,7 @@ The package marker scan detects only a fixed list of known prohibited mapping-in
 
 ## What approval means
 
-A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest 4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c, and mapping-package digest def2280a90229cec52750f12cb7dc2f7564df8508c113a69cf6ed585cee1c0c6, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest 0c6bbc7ac312c0ecab9426e24ac8b7401cb795aed937bb9357e3f548c58ef72b and curriculum source commit 4f5cb8024d3f68a37052fdf85b5755bffa2a0904 before relying on this packet. Any later substantive instructional change reachable from Unit 2 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
+A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest d90b27224f52723e33182e4962f581e8b12beb05ee5de06c55a4379382153df5, and mapping-package digest def2280a90229cec52750f12cb7dc2f7564df8508c113a69cf6ed585cee1c0c6, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest bc1db13ae1d8795a7412ca484135e8a72c443b0666abfc476ca3f881f4e7d041 and curriculum source commit 0107931bfee92fa932c93ae63d3f4a34080cb2bf before relying on this packet. Any later substantive instructional change reachable from Unit 2 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
 
 Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 2 reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 

@@ -18,7 +18,11 @@ import java.io.File
 class Unit7InvariancePreparationHistoryTest {
     @Test fun originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact() {
         val p=current();val old=previous()
-        assertEquals(old.items,p.items.take(old.items.size));assertEquals(old.examples,p.examples.take(old.examples.size))
+        val foundation = RecordedLiteracyEpochScope.beforeCorrection(root(), p)
+        fun core(item: V2CheckItem) = item.copy(distractorRationales = emptyList())
+        assertEquals(old.items.map(::core), foundation.items.map(::core))
+        assertEquals(old.items.map { it.id to it.answer }, p.items.map { it.id to it.answer })
+        assertEquals(old.examples,p.examples.take(old.examples.size))
         assertEquals(old.provenanceRecords,p.provenanceRecords.take(old.provenanceRecords.size))
         // Preserve the original Unit7-only transition before the later5/6 declarations.
         RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root(),p).let { p ->
@@ -35,7 +39,9 @@ class Unit7InvariancePreparationHistoryTest {
         assertEquals(a.objectives.filter { it.id!="obj-u7-adverb-invariance" },b.objectives.filter { it.id!="obj-u7-adverb-invariance" })
         assertEquals(a.sessions.filter { it.id!="u7-s-adverb-invariance" },b.sessions.filter { it.id!="u7-s-adverb-invariance" })
         assertEquals(old.sourceCapabilities,p.sourceCapabilities)
-        assertEquals(old.items,p.items);assertEquals(old.examples,p.examples)
+        val shifted = foundation.items.filter { core(it) != core(p.item(it.id)!!) }.map { it.id }.toSet()
+        assertEquals(setOf("u2-i-в-not-b", "u2-i-у-not-y", "u2-i-х-not-x", "u2-i-я-identity"), shifted)
+        assertEquals(old.examples,p.examples)
         assertNotEquals(V2Validator.unitContentReviewDigest(old,7),V2Validator.unitContentReviewDigest(p,7))
         val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
     }

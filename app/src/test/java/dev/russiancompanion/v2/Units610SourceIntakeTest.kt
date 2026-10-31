@@ -68,8 +68,11 @@ class Units610SourceIntakeTest {
         val pack = pack().also { V2PackIdentityIndex.warm(it) }
         // Retain the two original Unit4 pins on the exact snapshot that recorded them.
         val priorUnit4 = historicalPack("692e9eddeaef4d8f4ca9e85bf352983e3526e47c")
-        assertEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", V2Validator.unitContentReviewDigest(pack, 1))
-        assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
+        val foundation = RecordedLiteracyEpochScope.beforeCorrection(repo(), pack)
+        assertEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", V2Validator.unitContentReviewDigest(foundation, 1))
+        assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(foundation, 2))
+        assertNotEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", V2Validator.unitContentReviewDigest(pack, 1))
+        assertNotEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
         assertEquals("28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11", V2Validator.unitContentReviewDigest(priorUnit4, 4))
         RecordedCurriculumConservationScope.beforeUnit5GrammarReview(repo(),pack).let { pack ->
@@ -81,8 +84,12 @@ class Units610SourceIntakeTest {
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
-        assertEquals("f6717b08f757153c6e7008a184202f012592276036afddec6769e1232fb8ef4d", buildUnitReviewPackage(pack, 1).reviewPackageDigest)
-        assertEquals("0c6bbc7ac312c0ecab9426e24ac8b7401cb795aed937bb9357e3f548c58ef72b", buildUnitReviewPackage(pack, 2).reviewPackageDigest)
+        val historicalUnit1 = buildHistoricalUnitReviewPackage(foundation, 1, dev.russiancompanion.v2.review.CONTENT_AUDIT_CORRECTION_CURRICULUM_COMMIT)
+        val historicalUnit2 = buildHistoricalUnitReviewPackage(foundation, 2, dev.russiancompanion.v2.review.CONTENT_AUDIT_CORRECTION_CURRICULUM_COMMIT)
+        assertEquals("f6717b08f757153c6e7008a184202f012592276036afddec6769e1232fb8ef4d", historicalUnit1.reviewPackageDigest)
+        assertEquals("0c6bbc7ac312c0ecab9426e24ac8b7401cb795aed937bb9357e3f548c58ef72b", historicalUnit2.reviewPackageDigest)
+        assertNotEquals(historicalUnit1.reviewPackageDigest, buildUnitReviewPackage(pack, 1).reviewPackageDigest)
+        assertNotEquals(historicalUnit2.reviewPackageDigest, buildUnitReviewPackage(pack, 2).reviewPackageDigest)
         assertEquals("0e2985b1929cf4286ea10dfa93e654cd107e3720d7eb00e3eff76c80010a94fe", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         assertEquals("8494a75026860015f3f250707e15f0c61c1b2fb3b3fb64cd03d5b75c425a4ca5", buildHistoricalUnitReviewPackage(priorUnit4, 4, "a1e8f319b0b55f8e1dbcced680c34f32d240d217").reviewPackageDigest)
         // The original package pin includes its original source binding, not just Unit5 content.

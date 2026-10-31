@@ -14,9 +14,9 @@ Unit 25 remains in development. Its readiness is content-complete and review-pen
 - Curriculum source commit: 643faa96490c247d31e9080a32b274cc09a1df14
 - Unit content-review SHA-256: 57470dadfa8a6184a38538a4bae84430e8e6d6ba2ad491d1e926690777050142
 - Mapping-package SHA-256: 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31
-- Pack content-review SHA-256: 39c3563ba1b149b36977ae0fc2c0f920e282101e9e7870c06d141fe1a10e65ec
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
 - Review-package SHA-256: 0aa1e793c0d42a3059fba3fd9e45aabcdcb7502833e7f30ab6e23c0f9945fc7f
-- Repository source SHA-256: bb0170d2224941d6d4351a50d411f2ef88814e8b872dd61e8b51604228270c87
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

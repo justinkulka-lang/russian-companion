@@ -21,7 +21,9 @@ class Unit13BindingConservationTest {
             assertEquals(pack.units.filter { it.number != 13 }, before13.units.filter { it.number != 13 })
         }
         RecordedCurriculumConservationScope.assertCurrent(root, pack)
-        assertEquals(pack.items, before13.items); assertEquals(pack.provenanceRecords, before13.provenanceRecords)
+        assertEquals(RecordedLiteracyEpochScope.beforeCorrection(root, pack).items, before13.items)
+        assertEquals(pack.items.map { it.id to it.answer }, before13.items.map { it.id to it.answer })
+        assertEquals(pack.provenanceRecords, before13.provenanceRecords)
         assertNotEquals(V2Validator.unitContentReviewDigest(before13, 13), V2Validator.unitContentReviewDigest(pack, 13))
         assertEquals(RecordedIntakeCorrectionScope.load(root, "23b9179eaf54844f0b38074b2db56c7113c38c00"),
             RecordedCurriculumConservationScope.beforeUnit12GenderReview(root, pack))

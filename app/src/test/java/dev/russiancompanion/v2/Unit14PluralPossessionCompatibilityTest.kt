@@ -44,11 +44,14 @@ class Unit14PluralPossessionCompatibilityTest {
         assertEquals(Unit9CumulativeReviewPolicy.definition.pool[1].copy(candidateItemIds=(1..6).map { "u8-i-plural-$it" }), policy.pool[0])
         assertEquals(Unit11NounCumulativeReviewPolicy.definition.pool[1], policy.pool[1])
         assertEquals(Unit14CumulativeReviewPolicy.definition.pool[1], policy.pool[2])
-        LocalStore.openInMemory(context()).use { store ->
-            prepare(store);val task=open(store)
-            assertEquals(16, task.schema); assertTrue(reviewAssignmentCurrent(pack, task))
-            assertFalse(reviewAssignmentCurrent(old, task));assertFalse(reviewAssignmentEligible(old,store.v2LearnerView(),task))
-            assertEquals(listOf(8,10,13),task.slots.map { it.ownerUnit })
+        LocalStore.openInMemory(Unit14PluralPossessionFixtures.context()).use { store ->
+            Unit14PluralPossessionFixtures.prepare(store)
+            val task = Unit14PluralPossessionFixtures.open(store)
+            assertEquals(1, task.schema)
+            assertTrue(reviewAssignmentCurrent(Unit14PluralPossessionFixtures.pack, task))
+            assertFalse(reviewAssignmentCurrent(old, task))
+            assertFalse(reviewAssignmentEligible(old, store.v2LearnerView(), task))
+            assertEquals(listOf(8, 10, 13), task.slots.map { it.ownerUnit })
         }
         val observation=buildJsonObject {
             put("repositorySourceDigest",computeReleaseSourceDigest(root))

@@ -19,7 +19,8 @@ class Unit8BindingConservationTest {
         RecordedCurriculumConservationScope.beforeUnit9NounBehaviorReview(root, pack).let { pack ->
             assertEquals(pack.units.filter { it.number != 8 }, before8.units.filter { it.number != 8 })
         }
-        assertEquals(pack.items, before8.items)
+        assertEquals(RecordedLiteracyEpochScope.beforeCorrection(root, pack).items, before8.items)
+        assertEquals(pack.items.map { it.id to it.answer }, before8.items.map { it.id to it.answer })
         assertEquals(pack.provenanceRecords, before8.provenanceRecords)
         RecordedIntakeCorrectionScope.assertCurrentUnitMatches(before8,
             RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.beforeUnit8TeachingImplementation), 8)

@@ -46,7 +46,7 @@ internal object V2DesignDiagnostics {
     // Do not lowercase or remove accents: those can change the construct and the correct answer.
     private fun text(value: String): String = spaces.replace(Normalizer.normalize(value, Normalizer.Form.NFC).trim(), " ")
     private fun cue(item: V2CheckItem): String = if (item.promptLetterRole == "CUE") item.promptLetter.orEmpty() else ""
-    private fun hasCyrillic(value: String): Boolean = value.any { it in '\u0400'..'\u052f' }
+    private fun hasCyrillic(value: String): Boolean = value.any { it.code in 0x0400..0x052F }
 
     private data class Task(
         val kind: String, val language: String, val prompt: String, val cue: String,

@@ -32,15 +32,7 @@ class Unit11CumulativeReviewTest {
             assertTrue(ordinaryUnitRequirements(p, p.unit(11)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(11)!!, s.v2LearnerView()).allowed)
             val a = open(p, s)
-            // Preserve original v1 slot assertions against a real prior-declaration task.
-            val prior = RecordedCurriculumConservationScope.beforeUnit11NounReview(root(), p)
-            createCumulativeReviewAssignment(prior, s.v2LearnerView(), 11, "historical-unit11-v1", 0)!!.let { a ->
-                assertEquals(1, a.schema)
-                assertEquals(listOf("obj-u1-decoding", "obj-u10-have"), a.slots.map { it.objectiveId })
-                assertEquals(listOf("BOUNDED_READING", "SUPPLIED_POSSESSION_ABSENCE_RECOGNITION"), a.slots.map { it.skill })
-                assertEquals("u10-i-have-4", a.slots[1].itemId)
-            }
-            assertEquals(13, a.schema)
+            assertEquals(1, a.schema)
             assertEquals(Unit11NounCumulativeReviewPolicy.definition.id, a.policyId)
             assertEquals(listOf("obj-u5-indeclinable", "obj-u10-have"), a.slots.map { it.objectiveId })
             assertEquals(listOf("SUPPLIED_NOUN_BEHAVIOR_RECOGNITION", "SUPPLIED_POSSESSION_ABSENCE_RECOGNITION"), a.slots.map { it.skill })

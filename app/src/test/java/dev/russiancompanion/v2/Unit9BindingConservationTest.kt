@@ -20,7 +20,9 @@ class Unit9BindingConservationTest {
         RecordedCurriculumConservationScope.beforeUnit10PresentReview(root, pack).let { pack ->
             assertEquals(pack.units.filter { it.number != 9 }, before9.units.filter { it.number != 9 })
         }
-        assertEquals(pack.items, before9.items); assertEquals(pack.provenanceRecords, before9.provenanceRecords)
+        assertEquals(RecordedLiteracyEpochScope.beforeCorrection(root, pack).items, before9.items)
+        assertEquals(pack.items.map { it.id to it.answer }, before9.items.map { it.id to it.answer })
+        assertEquals(pack.provenanceRecords, before9.provenanceRecords)
         assertNotEquals(V2Validator.unitContentReviewDigest(before9, 9), V2Validator.unitContentReviewDigest(pack, 9))
         assertEquals(RecordedIntakeCorrectionScope.load(root, "6fd0406da6dd687196eea76ff56ad7cadc06087d"),
             RecordedCurriculumConservationScope.beforeUnit8PresentReview(root, pack))

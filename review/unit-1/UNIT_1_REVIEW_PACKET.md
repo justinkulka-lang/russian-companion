@@ -11,12 +11,12 @@ Unit 1 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: 161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7
+- Curriculum source commit: 0107931bfee92fa932c93ae63d3f4a34080cb2bf
+- Unit content-review SHA-256: 759ae979b4101044396a4ea69c2a697832e6f3b80cd2e69efda28d3f0954c434
 - Mapping-package SHA-256: b85c056f7c940f045fcb9270edcfda31371ae36f7277c75b673158fcc52872d0
-- Pack content-review SHA-256: 39c3563ba1b149b36977ae0fc2c0f920e282101e9e7870c06d141fe1a10e65ec
-- Review-package SHA-256: f6717b08f757153c6e7008a184202f012592276036afddec6769e1232fb8ef4d
-- Repository source SHA-256: bb0170d2224941d6d4351a50d411f2ef88814e8b872dd61e8b51604228270c87
+- Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
+- Review-package SHA-256: f78edd7c0bbb674eaeaf889205acff704c34fed1bc6df1fb98107080ad1fe466
+- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2081,7 +2081,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d17171564f49ccf2c0063f73770c26f51dd37af2d5ca96b784f834db61c5c2c7
+- Content hash: a7ddfbdc5efeabfa4ded0d5a80c7c4e75afc2a69bb85bc91e1f494c71ac1a01f
 
 kind=LETTER_IDENTITY
 language=en
@@ -2093,6 +2093,7 @@ feedback=The printed shape can match Latin A. In this course it is the Cyrillic 
 objectiveId=obj-u1-letter-identity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=The capital shapes can look the same, but this card belongs to the Cyrillic alphabet. Latin A is a letter of a different alphabet. |  | Р has a vertical stem and an upper loop. А has two sloping sides and a crossbar.
 
 ### GUIDED_PRACTICE `u1-i-м-identity`
 
@@ -2102,7 +2103,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a28826087e6459a6dbd8b33f697952af95756523d8ebe2bd3eec8363dd4cb56e
+- Content hash: c4b6d230e68255b901b1cb1d3cbe521e07090145359e9239bf56f805d1da0a66
 
 kind=LETTER_IDENTITY
 language=en
@@ -2114,6 +2115,7 @@ feedback=М is an early consonant letter. It is not Н.
 objectiveId=obj-u1-letter-identity
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Н has two upright strokes joined by a horizontal crossbar. М has inner diagonal strokes. | Т has a top bar and a central stem. It does not have the inner diagonal strokes of М.
 
 ### GUIDED_PRACTICE `u1-g-guided-confusable`
 
@@ -2249,7 +2251,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0fbff81b247c4e0890c58122f56d06f68de91a4af9f05d27944606384b14257f
+- Content hash: b2b64b0a894f14ecae74259be8ce253c5691771d951ec2c61fe638792b7d24ab
 
 kind=CONFUSABLE
 language=en
@@ -2261,6 +2263,7 @@ feedback=Shape overlap with Latin P is a recognition trap. This is Cyrillic Р, 
 objectiveId=obj-u1-confusable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=The capital shapes can look the same, but this is a Cyrillic letter card. The Latin name P does not name the Russian letter. |  | П has two uprights joined across the top. Р has an upper loop attached to its stem.
 
 ### INDEPENDENT_CHECK `u1-i-н-not-h`
 
@@ -2270,7 +2273,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: aafa7022761fdfc057bc98875dbf93a681e52e2fd5f05b4140138199b90ab568
+- Content hash: 931d034e08f5c97c4c7ff6029e1d4d295db003c8f01bff330e94dfa75b99d229
 
 kind=CONFUSABLE
 language=en
@@ -2282,6 +2285,7 @@ feedback=Do not read Н as English H. It is a Cyrillic letter.
 objectiveId=obj-u1-confusable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=The similar capital shape does not give this Cyrillic letter the Latin name H. Identify it within the Russian alphabet. |  | И joins its uprights with a diagonal. Н uses a horizontal crossbar instead.
 
 ### INDEPENDENT_CHECK `u1-i-с-not-c`
 
@@ -2291,7 +2295,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b2aed5584b72d1da7913feefc3242d7fb5f3d28aa4b06c7980fa79e26f1e6ee5
+- Content hash: 45de47509666f6449218faa1aa2071b2de96f30d94e9bb242192794ed276e10c
 
 kind=CONFUSABLE
 language=en
@@ -2303,6 +2307,7 @@ feedback=С is a Cyrillic letter. Do not treat the Latin look-alike as the ident
 objectiveId=obj-u1-confusable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=The similar capital shapes belong to different alphabets. The Latin name C does not identify this Cyrillic letter. |  | К has diagonal arms extending from a straight stem. С is an open curved shape.
 
 ### INDEPENDENT_CHECK `u1-i-в-not-b`
 
@@ -2312,7 +2317,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 33fa310917e35876620b5a9dc4a2e8fdda544c646e1b7ccd80f5e373980c0a1e
+- Content hash: aea571b8f5064278947b30d221d9ab351745eb4e8acb7ab2e0d59617fc7cba6b
 
 kind=CONFUSABLE
 language=en
@@ -2324,6 +2329,7 @@ feedback=В is not Latin B and it is not Cyrillic Б.
 objectiveId=obj-u1-confusable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=The Latin capital B looks similar, but this is a Cyrillic letter card. A Latin letter name does not identify it. |  | Б has a top horizontal stroke and one lower bowl. В has two bowls.
 
 ### INDEPENDENT_CHECK `u1-i-у-not-y`
 
@@ -2333,7 +2339,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d3345f42e60aabc9d906bf09e205fbc310a1246f9d1b14cfebf1c5fa1e6e9d41
+- Content hash: d7a72b37f862c2154b4f9523a4812322f7fdfc3e0d71590b4aca4756413f5c11
 
 kind=CONFUSABLE
 language=en
@@ -2345,6 +2351,7 @@ feedback=У is a Cyrillic vowel letter, not Latin Y.
 objectiveId=obj-u1-confusable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=The Latin capital Y may look similar, but this card belongs to the Cyrillic alphabet. Use the Cyrillic identity. |  | И has two upright strokes joined diagonally. У has an upper fork and a descending tail.
 
 ### INDEPENDENT_CHECK `u1-i-х-not-x`
 
@@ -2354,7 +2361,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 735d879fbd2e4a240397051990d7d6a543911b6de1449bfbb478cd3abcd9e2f9
+- Content hash: e29d3ce4470119ece77dcedd507a03b31020f0161006138e3bfc4db4007f37e3
 
 kind=CONFUSABLE
 language=en
@@ -2366,6 +2373,7 @@ feedback=Х is a Cyrillic letter, not Latin X.
 objectiveId=obj-u1-confusable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=The matching shape does not make this the Latin letter X. This card belongs to the Cyrillic alphabet. |  | К has a vertical stem with two arms. Х consists of two crossing diagonal strokes.
 
 ### INDEPENDENT_CHECK `u1-i-е-identity`
 
@@ -2375,7 +2383,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4eb9dd2ba7664a67e6784b9cc2eadadf7eda30757f0b806d5d7f69fe123224c5
+- Content hash: 69331c0f1e79ff5bc26519f233d9ef27c34dbf31067cfc1bd673a3aeaf1d60d7
 
 kind=LETTER_IDENTITY
 language=en
@@ -2387,6 +2395,7 @@ feedback=Е is an iotated vowel letter. Э and Ё are different letters.
 objectiveId=obj-u1-iotated
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Э opens toward the left. Е has its upright stroke on the left and its horizontal strokes extend to the right. | Ё has two dots above the Е shape. The shown Е has no dots.
 
 ### INDEPENDENT_CHECK `u1-i-ё-identity`
 
@@ -2396,7 +2405,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e5daf3478caa617c0d279c338d053dcd30d25c48041a43bf5ba6aeaaf4a80c6a
+- Content hash: 821abb0c6f774815e61bb1a0a560130f9a89fed35b44a7dbc03f247bda9340de
 
 kind=LETTER_IDENTITY
 language=en
@@ -2408,6 +2417,7 @@ feedback=Ё is its own letter. Е and Э are different letters.
 objectiveId=obj-u1-iotated
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Е has the same main shape but no dots. The two dots distinguish the shown Ё. | Э opens toward the left and has no dots. Ё has the Е shape with two dots above it.
 
 ### INDEPENDENT_CHECK `u1-i-ю-identity`
 
@@ -2417,7 +2427,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3c3df14b56a11471430fa56e258e2ae9f175ec62999a428bb1fdeae5401a2de0
+- Content hash: 2412939a27dcb3ff6b014a5e0dedf7beddb4dfd2db2e8d759d671d209ef66a57
 
 kind=LETTER_IDENTITY
 language=en
@@ -2429,6 +2439,7 @@ feedback=Ю is an iotated vowel letter. У and Я are different letters.
 objectiveId=obj-u1-iotated
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | У has an upper fork and a descending tail. Ю has an upright joined to a rounded part. | Я has a loop and a diagonal leg. Ю has an upright and a rounded part side by side.
 
 ### INDEPENDENT_CHECK `u1-i-я-identity`
 
@@ -2438,7 +2449,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f1d8479d54654f91cab6576b7857a8fb5c76308188cc6f266f742eb508b17402
+- Content hash: b1d60a5ced278cf450c0a91cda42fb420ba6eff23901e238deae760546258526
 
 kind=LETTER_IDENTITY
 language=en
@@ -2450,6 +2461,7 @@ feedback=Я is an iotated vowel letter. It is not Р or А.
 objectiveId=obj-u1-iotated
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Р has its loop on the right of the stem. Я has a loop on the left and a diagonal leg. | А has two sloping sides and a crossbar. Я combines a stem, a loop and a diagonal leg.
 
 ### INDEPENDENT_CHECK `u1-i-ь-not-vowel`
 
@@ -2459,7 +2471,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8d8b685e86ecf1c2c0f746dd9f9bb7da3d9ce6f7143444c990b5afa9d1c686c2
+- Content hash: 127810f5c069c214d34487c136a9549d3364fffacfecf6eac09d9b8ef1baebc5
 
 kind=SIGN
 language=en
@@ -2471,6 +2483,7 @@ feedback=Ь is a sign, not a vowel letter you read alone.
 objectiveId=obj-u1-signs
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=The soft sign does not supply a separate vowel sound. Compare it with the vowel letters in the signs explanation. |  | Ъ is the hard sign. Ь is the soft sign; they are different letters with different functions.
 
 ### INDEPENDENT_CHECK `u1-i-ъ-not-vowel`
 
@@ -2480,7 +2493,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 35d21f53f5fbd7e9b238af3a6fbebd1d0c832557fe979e20c2e1b0bcaec8e260
+- Content hash: f5e51d313485d1c2b2cdd9cb3ed96664ac36bdf4d3d14d27d4916c6a956d115c
 
 kind=SIGN
 language=en
@@ -2492,6 +2505,7 @@ feedback=Ъ is the hard sign. It is not a spoken vowel and it is not Ь.
 objectiveId=obj-u1-signs
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=The hard sign does not supply a separate vowel sound. It is distinct from the vowel letters. |  | Ь is the soft sign. The shown Ъ has an additional upper stroke and is the hard sign.
 
 ### INDEPENDENT_CHECK `u1-i-й-not-vowel`
 
@@ -2501,7 +2515,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f806dd86d612d94d9106f8f74d6c04e9b8a36a6ee3f6a2f849b2ce3b6a0c3112
+- Content hash: c068c89535d2c778bd48b2e3a2bf7de29631586a4978ce8b319d257576cbdc82
 
 kind=SIGN
 language=en
@@ -2513,6 +2527,7 @@ feedback=Й is not a vowel you read alone and it is not the soft sign.
 objectiveId=obj-u1-signs
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=Й is short I and is classified here as a consonant. It is distinct from the vowel И. |  | Ь is the soft sign. Й has a short mark above the И shape and is a different letter.
 
 ### INDEPENDENT_CHECK `u1-i-print-pair`
 
@@ -2522,7 +2537,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 89154b3972479d556984b4cf3c9d8e414a5d348a48e8292cbc33f03c64868bbf
+- Content hash: 272777e88ee27a83ae8c7f34b1a569cf38a9f28a54ead3a7cd2b3ac9b7c9b7dd
 
 kind=PRINT_PAIR
 language=en
@@ -2534,6 +2549,7 @@ feedback=Print pairs are one letter in two cases. Р / п and Н / и are differ
 objectiveId=obj-u1-print-forms
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Р pairs with р; п pairs with П. This option joins two different letters. | Н pairs with н; и pairs with И. The diagonal in и is different from the crossbar of н.
 
 ### INDEPENDENT_CHECK `u1-i-decode-pair`
 
@@ -2543,7 +2559,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-app-english-v2
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 455678bd09981ada59773d80047ba392e01a01a547fcbcf6084b0866e2c9ab5f
+- Content hash: 67ed05f24b312db1a8c3a617367d00258a23981bd582b2274e9eb93c349d22cb
 
 kind=PRINT_PAIR
 language=en
@@ -2555,6 +2571,7 @@ feedback=А / а is one letter. The other lines are two different letters.
 objectiveId=obj-u1-decoding
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | А and О are different letters. Changing the case of А produces а, not О. | М and Т are different letters. Their lowercase partners are м and т, respectively.
 
 ### INDEPENDENT_CHECK `u1-i-name-be`
 
@@ -2564,7 +2581,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-unicode-cyrillic
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7199daf378b78cf0d5573aa308856bee21779a8b35dbe282dcb8798df0137189
+- Content hash: 7c4017bbd1838f78b8be75fd373f09571bea20837a85a5bdfd3418400394c56d
 
 kind=LETTER_IDENTITY
 language=en
@@ -2576,6 +2593,7 @@ feedback=The printed letter Б is named бэ.
 objectiveId=obj-u1-letter-names
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | This is the name of В (VE), not Б (BE). The printed card shows Б. | This names П (PE), whose capital has two uprights and a top bar. The printed card shows Б (BE).
 
 ### REFERENCE `ref-transliteration`
 

@@ -194,6 +194,10 @@ internal object RecordedCurriculumConservationScope {
             } else if (number in setOf(4, 7, 8, 10, 15)) {
                 RecordedIntakeCorrectionScope.assertCurrentUnitMatches(current, source(root, currentUnitSources.getValue(number)), number)
                 assertNotEquals("Declared correction must differ from its prior pin for Unit $number", digest, V2Validator.unitContentReviewDigest(current, number))
+            } else if (number in setOf(1, 2)) {
+                val preceding = RecordedLiteracyEpochScope.beforeCorrection(root, current)
+                assertEquals("pre-explanation unit $number", digest, V2Validator.unitContentReviewDigest(preceding, number))
+                assertNotEquals("Literacy option explanations changed Unit $number", digest, V2Validator.unitContentReviewDigest(current, number))
             } else {
                 // Keep the original unchanged-unit pin in its exact prior declaration scope.
                 (when (number) {

@@ -16,8 +16,11 @@ class Unit14BindingConservationTest {
         val before14 = RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(root, pack)
         assertEquals(RecordedIntakeCorrectionScope.load(root, "9101af8c182b3415426ed9226cb211a707a2c393"), before14)
         assertEquals(Unit14CumulativeReviewPolicy.definition.id, before14.unit(14)!!.advancement!!.cumulativeReviewPolicyId)
-        assertEquals(pack.units.filter { it.number != 14 }, before14.units.filter { it.number != 14 })
-        assertEquals(pack.items, before14.items); assertEquals(pack.provenanceRecords, before14.provenanceRecords)
+        val foundation = RecordedLiteracyEpochScope.beforeCorrection(root, pack)
+        assertEquals(foundation.units.filter { it.number != 14 }, before14.units.filter { it.number != 14 })
+        assertEquals(foundation.items, before14.items)
+        assertEquals(pack.items.map { it.id to it.answer }, before14.items.map { it.id to it.answer })
+        assertEquals(pack.provenanceRecords, before14.provenanceRecords)
         assertNotEquals(V2Validator.unitContentReviewDigest(before14, 14), V2Validator.unitContentReviewDigest(pack, 14))
         assertEquals(RecordedIntakeCorrectionScope.load(root, "31ac807387253082c44bd2f6d67021478f0df66e"),
             RecordedCurriculumConservationScope.beforeUnit13PresentReview(root, pack))

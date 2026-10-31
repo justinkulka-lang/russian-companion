@@ -609,6 +609,10 @@ class Units2630SourceIntakeTest {
                     }
                     RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
                     assertNotEquals("Current Unit14 v2 review identity", digest, V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number in setOf(1, 2)) {
+                    val foundation = RecordedLiteracyEpochScope.beforeCorrection(root, pack)
+                    assertEquals("pre-explanation unit $number", digest, V2Validator.unitContentReviewDigest(foundation, number))
+                    assertNotEquals("Literacy option explanations changed Unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
                 } else {
                     assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
                 }

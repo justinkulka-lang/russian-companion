@@ -33,9 +33,14 @@ class OptionPresentationTest {
             .flatMap { it.checkItemIds }.distinct().map { beforeExistence.item(it)!! }
         assertEquals(429, originalRequired.size)
         assertEquals(379, originalRequired.count { it.options.first() == it.answer })
-        // Every current item must match the exact declared positive-existence correction.
-        assertEquals(positiveExistence.items, p.items)
-        assertEquals(563, p.items.count { it.options.first() == it.answer })
+        // Answers stay on the positive-existence source. Four Unit 2 review items later became print pairs.
+        assertEquals(positiveExistence.items.map { it.id to it.answer }, p.items.map { it.id to it.answer })
+        val shifted = positiveExistence.items.filter { historical ->
+            val live = p.item(historical.id)!!
+            historical.kind != live.kind || historical.options != live.options
+        }.map { it.id }.toSet()
+        assertEquals(setOf("u2-i-в-not-b", "u2-i-у-not-y", "u2-i-х-not-x", "u2-i-я-identity"), shifted)
+        assertEquals(562, p.items.count { it.options.first() == it.answer })
         val routes = p.units.flatMap { it.sessions }.flatMap { it.steps }
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
         for ((name, displays) in listOf(
@@ -50,7 +55,7 @@ class OptionPresentationTest {
         )) {
             if (name == "required") {
                 assertEquals(429, displays.size)
-                assertEquals(381, displays.count { (item, _) -> item.options.first() == item.answer })
+                assertEquals(380, displays.count { (item, _) -> item.options.first() == item.answer })
             }
             displays.forEach { (item, order) ->
                 assertEquals(item.id, item.options.sorted(), order.sorted())

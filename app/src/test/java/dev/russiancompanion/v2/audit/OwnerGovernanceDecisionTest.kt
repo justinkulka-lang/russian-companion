@@ -33,7 +33,7 @@ class OwnerGovernanceDecisionTest {
         )
         // Exact current implementation plus a declaration-only proof against the preceding whole pack.
         dev.russiancompanion.v2.RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root(), pack)
-        val currentSource = RecordedIntakeCorrectionScope.load(root(), dev.russiancompanion.v2.RecordedCurriculumConservationScope.currentPackImplementation)
+        val currentSource = RecordedIntakeCorrectionScope.load(root(), dev.russiancompanion.v2.RecordedLiteracyEpochScope.latestCommit)
         assertEquals(currentSource, pack)
         assertEquals(V2Validator.contentReviewDigest(currentSource), V2Validator.contentReviewDigest(pack))
         org.junit.Assert.assertNotEquals(V2Validator.contentReviewDigest(prior), V2Validator.contentReviewDigest(pack))
