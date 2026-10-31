@@ -172,7 +172,7 @@ class CumulativeReviewStorageTest {
         }
     }
 
-    @Test fun realVersionNineDatabaseMigratesWithoutRewritingHistoricalRowsOrInventingCredit() {
+    @Test fun devVersionNineLearnerRowsAreDiscardedWithoutInventingReviewCredit() {
         val name = "review-migrate-${System.nanoTime()}.db"
         val schema = JSONObject(File(root(), "app/schemas/dev.russiancompanion.data.local.AppDatabase/9.json").readText()).getJSONObject("database")
         val helper = FrameworkSQLiteOpenHelperFactory().create(SupportSQLiteOpenHelper.Configuration.builder(context()).name(name)
@@ -193,9 +193,8 @@ class CumulativeReviewStorageTest {
         try {
             helper.writableDatabase; helper.close()
             LocalStore.openNamed(context(), name).use { s ->
-                val old = s.v2Attempts().single(); assertEquals("historical", old.id); assertEquals(99, old.acceptedOrder)
-                assertEquals("old-time", old.recordedAtLocal); assertEquals("old-answer", old.selected)
-                assertEquals(setOf(3), s.v2LearnerView().completedUnitNumbers)
+                assertTrue(s.v2Attempts().isEmpty())
+                assertTrue(s.v2LearnerView().completedUnitNumbers.isEmpty())
                 assertTrue(s.cumulativeReviewHistory().first.isEmpty()); assertTrue(s.cumulativeReviewHistory().second.isEmpty())
             }
         } finally { helper.close(); context().deleteDatabase(name) }

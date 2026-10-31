@@ -102,41 +102,16 @@ class Unit21CumulativeReviewTest {
         }
     }
 
-    @Test fun schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot() {
-        val old = oldPack("d9ed23eb733e6bf068b11dc38a33d3e46debafbd")
-        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() /* Historical activation-only source; current changed-teaching refusal has separate coverage. */; val name = "unit21-old-${System.nanoTime()}.db"
-        try {
-            LocalStore.openNamed(context(), name).use { s ->
-                prepare(old, s); s.v2CompleteUnit(21, "old-completion")
-                val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 21 }
-                assertFalse(row.preReviewActivation); assertEquals("", row.reviewAssignmentId)
-                s.v2SaveProfile(s.v2Profile().copy(currentUnitNumber = 22))
-            }
-            LocalStore.openNamed(context(), name).use { s ->
-                assertEquals((1..21).toSet(), currentCompletedUnitNumbers(p, s.v2LearnerView()))
-                assertTrue(canOpenUnit(unitState(p, p.unit(22)!!, s.v2LearnerView())))
-                assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 21 })
-                assertFalse(advancementDecision(p, p.unit(21)!!, s.v2LearnerView()).allowed)
-                val oldAssignments = s.cumulativeReviewHistory().first
-                oldAssignments.forEach { assertTrue(reviewAssignmentCurrent(p, it)) }
-                val before = s.governedLearnerFingerprint(); val a = open(p, s)
-                assertNotEquals(before, s.governedLearnerFingerprint())
-                answer(p, s, a, 0); answer(p, s, a, 1); assertTrue(advance(p, s))
-                assertTrue(21 in currentCompletedUnitNumbers(p, s.v2LearnerView()))
-                assertTrue(s.cumulativeReviewHistory().first.containsAll(oldAssignments))
-                val altered = p.copy(items = p.items.map { if (it.id == "u21-i-svoy-1") it.copy(feedback = it.feedback + " changed") else it })
-                V2PackIdentityIndex.warm(altered)
-                assertFalse(21 in currentCompletedUnitNumbers(altered, s.v2LearnerView()))
-            }
-            ready(p).use { fresh ->
+    @Test fun rawCurrentCompletionAndForgedPreReviewActivationDoNotCreditThisUnit() {
+        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack()
+        ready(p).use { fresh ->
                 fresh.v2CompleteUnit(21, "raw-current-source")
                 assertFalse(21 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
                 val fake = fresh.governedLearnerDocument().copy(unitCompletions = fresh.governedLearnerDocument().unitCompletions.map {
                     if (it.unitNumber == 21) it.copy(preReviewActivation = true) else it })
                 assertEquals(GovernedReplaceOutcome.REPLACED, fresh.replaceGovernedLearner(fake, emptyList()))
                 assertFalse(21 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-            }
-        } finally { context().deleteDatabase(name) }
+        }
     }
 
     @Test fun oldFormatOneAndTwoKeepRawUnit21HistoryWithoutInventingCreditOrRepairingUnit11() {

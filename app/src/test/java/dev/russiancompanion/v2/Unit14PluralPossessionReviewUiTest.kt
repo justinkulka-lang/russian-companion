@@ -74,7 +74,7 @@ class Unit14PluralPossessionReviewUiTest {
             waitTag("v2-review-start");compose.onNodeWithTag("v2-review-start").performScrollTo().performClick()
             waitTag("v2-review-count")
             val task=store.cumulativeReviewHistory().first.single { it.targetUnit==14 };val item=pack.item(itemId)!!
-            assertEquals(16,task.schema);assertEquals(3,task.slots.size);assertEquals(itemId,task.slots[slotIndex].itemId)
+            assertEquals(1, task.schema);assertEquals(3,task.slots.size);assertEquals(itemId,task.slots[slotIndex].itemId)
             val options=reviewPresentedOptions(item,task,slotIndex)
             assertEquals(options,reviewPresentedOptions(item.copy(answer=item.options.first { it!=item.answer }),task,slotIndex))
             assertEquals(item.options.size,compose.onAllNodes(hasTestTagPrefix("v2-review-option-$slotIndex-")).fetchSemanticsNodes().size)

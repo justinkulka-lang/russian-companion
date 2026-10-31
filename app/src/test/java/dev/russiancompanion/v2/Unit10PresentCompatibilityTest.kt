@@ -28,8 +28,8 @@ class Unit10PresentCompatibilityTest {
         LocalStore.openInMemory(context()).use { store ->
             prepare(store)
             val task = open(store)
-            assertEquals(12, task.schema)
-            for (schema in (1..11) + 13) {
+            assertEquals(1, task.schema)
+            for (schema in 2..17) {
                 val bad = task.copy(schema = schema).let { it.copy(digest = reviewAssignmentDigest(it)) }
                 assertFalse("schema $schema", reviewAssignmentCurrent(pack, bad))
                 assertNotNull(reviewHistoryDefects(listOf(bad.copy(boundary = 0).let { it.copy(digest = reviewAssignmentDigest(it)) }), emptyList()))

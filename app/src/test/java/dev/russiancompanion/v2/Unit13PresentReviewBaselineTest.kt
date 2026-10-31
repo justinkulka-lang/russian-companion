@@ -43,11 +43,11 @@ class Unit13PresentReviewBaselineTest {
                 assertEquals((1..12).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 val prerequisites = store.cumulativeReviewHistory().first
                 assertEquals("unit11-prior-noun-behavior-possession-absence-v2", prerequisites.single { it.targetUnit == 11 }.policyId)
-                assertEquals(13, prerequisites.single { it.targetUnit == 11 }.schema)
+                assertEquals(1, prerequisites.single { it.targetUnit == 11 }.schema)
                 assertEquals("unit12-prior-gender-past-gender-v2", prerequisites.single { it.targetUnit == 12 }.policyId)
-                assertEquals(14, prerequisites.single { it.targetUnit == 12 }.schema)
+                assertEquals(1, prerequisites.single { it.targetUnit == 12 }.schema)
                 val task = open(store, pack)
-                assertEquals(v2, task.policyId); assertEquals(6, task.schema)
+                assertEquals(v2, task.policyId); assertEquals(1, task.schema)
                 assertEquals(3, task.slots.size)
                 assertEquals(listOf("obj-u1-decoding", "obj-u12-aspect", "obj-u11-past-aspect"), task.slots.map { it.objectiveId })
                 assertEquals(listOf(1, 12, 11), task.slots.map { it.ownerUnit })
@@ -131,7 +131,7 @@ class Unit13PresentReviewBaselineTest {
             // Intentional failure on legitimate current v2: no present-form slot is declared.
             assertFalse("The proposed Unit13 obligation must refuse advancement without its fresh assigned present-form answer", advancedWithoutPresent)
             assertEquals("unit13-prior-present-aspect-past-gender-v3", task.policyId)
-            assertEquals(15, task.schema)
+            assertEquals(1, task.schema)
             val policy = cumulativeReviewDeclaredPolicy(pack, 13)!!
             assertEquals(listOf("obj-u4-present", "obj-u12-aspect", "obj-u11-past-aspect"), policy.pool.map { it.objectiveId })
             assertEquals(listOf("u4-i-verb-говорить-мы", "u4-i-verb-видеть-он", "u4-i-verb-писать-вы", "u4-i-verb-идти-они"), policy.pool[0].candidateItemIds)

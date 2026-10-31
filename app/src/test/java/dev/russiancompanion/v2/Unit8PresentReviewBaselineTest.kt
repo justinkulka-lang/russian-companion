@@ -50,7 +50,7 @@ class Unit8PresentReviewBaselineTest {
                 "objectives=${task.slots.map { it.objectiveId }} actualAdvanceWithoutPresent=$advancedWithoutPresent")
             assertFalse("Unit8 must refuse actual advancement without its assigned supplied-present-form answer", advancedWithoutPresent)
             assertEquals("unit8-prior-present-nominative-agreement-v2", task.policyId)
-            assertEquals(10, task.schema)
+            assertEquals(1, task.schema)
             assertEquals(listOf("obj-u4-present", "obj-u7-endings"), task.slots.map { it.objectiveId })
             assertEquals(listOf(4, 7), task.slots.map { it.ownerUnit })
             assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })

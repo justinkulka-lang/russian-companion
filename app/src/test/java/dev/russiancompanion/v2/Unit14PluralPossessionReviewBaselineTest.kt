@@ -40,9 +40,9 @@ class Unit14PluralPossessionReviewBaselineTest {
                 assertEquals((1..13).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
                 val prior = store.cumulativeReviewHistory().first
                 for ((unit, policy, schema) in listOf(
-                    Triple(11, "unit11-prior-noun-behavior-possession-absence-v2", 13),
-                    Triple(12, "unit12-prior-gender-past-gender-v2", 14),
-                    Triple(13, "unit13-prior-present-aspect-past-gender-v3", 15))) {
+                    Triple(11, "unit11-prior-noun-behavior-possession-absence-v2", 1),
+                    Triple(12, "unit12-prior-gender-past-gender-v2", 1),
+                    Triple(13, "unit13-prior-present-aspect-past-gender-v3", 1))) {
                     val task = prior.single { it.targetUnit == unit }
                     assertEquals(policy, task.policyId); assertEquals(schema, task.schema)
                     assertTrue(cumulativeReviewComplete(p, store.v2LearnerView(), unit))
@@ -160,7 +160,7 @@ class Unit14PluralPossessionReviewBaselineTest {
                 // Expected failure on valid v1: these proposed assignment-bound slots do not exist.
                 assertFalse("The proposed Unit14 obligation must refuse advancement without its fresh assigned plural and possession answers", advancedWithoutNewAnswers)
                 assertEquals("unit14-prior-plural-possession-reported-time-v2", task.policyId)
-                assertEquals(16, task.schema)
+                assertEquals(1, task.schema)
                 assertEquals(listOf("obj-u8-plural", "obj-u10-have", "obj-u13-reported"), task.slots.map { it.objectiveId })
                 assertEquals(listOf(8, 10, 13), task.slots.map { it.ownerUnit })
                 answer(store, p, task, 0); answer(store, p, task, 1)

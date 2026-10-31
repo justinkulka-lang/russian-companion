@@ -33,7 +33,7 @@ class CurrentFoundationHistoryTest {
             FreshCurrentPrerequisiteHistory.ordinary(store, current, 14)
             assertTrue(ordinaryUnitRequirements(current, current.unit(14)!!, store.v2LearnerView()).allowed)
             val task = store.openCumulativeReview(current, 14, store.learnerMutationEpoch())!!
-            assertEquals(16, task.schema)
+            assertEquals(1, task.schema)
             assertTrue(reviewAssignmentCurrent(current, task))
         }
     }

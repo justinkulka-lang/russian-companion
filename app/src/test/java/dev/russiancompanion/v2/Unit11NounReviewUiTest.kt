@@ -74,7 +74,7 @@ class Unit11NounReviewUiTest {
             waitTag("v2-review-start"); compose.onNodeWithTag("v2-review-start").performScrollTo().performClick()
             waitTag("v2-review-count")
             val task = store.cumulativeReviewHistory().first.single { it.targetUnit == 11 }
-            assertEquals(13, task.schema); assertEquals(item.id, task.slots[slotIndex].itemId)
+            assertEquals(1, task.schema); assertEquals(item.id, task.slots[slotIndex].itemId)
             assertEquals(2, task.slots.size)
             val options = reviewPresentedOptions(item, task, slotIndex)
             assertEquals(options, reviewPresentedOptions(item.copy(answer = item.options.first { it != item.answer }), task, slotIndex))

@@ -38,7 +38,7 @@ class Unit5GrammarReviewTest {
                 advancementDecision(p, p.unit(5)!!, s.v2LearnerView()).allowed)
             assertTrue(runCatching { advance(p, s, 5) }.isFailure)
             assertEquals(newPolicy, a.policyId)
-            assertEquals(7, a.schema)
+            assertEquals(1, a.schema)
             assertEquals(listOf("obj-u3-gender", "obj-u4-nominative"), a.slots.map { it.objectiveId })
             assertEquals(listOf(3, 4), a.slots.map { it.ownerUnit })
             assertTrue(a.slots.none { it.itemId == "u1-i-decode-pair" })
@@ -68,7 +68,7 @@ class Unit5GrammarReviewTest {
                 item.options.first { it != item.answer }, PRESCRIBED_CHECK,
                 "u3-st-check-gender", "test")!!)
             val a = open(p, store)
-            assertEquals(7, a.schema)
+            assertEquals(1, a.schema)
             assertEquals(item.id, a.slots.first().itemId)
             store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, item.id, item.answer,
                 PRESCRIBED_CHECK, "u3-st-check-gender", "test")!!)
@@ -102,7 +102,7 @@ class Unit5GrammarReviewTest {
         LocalStore.openInMemory(context()).use { s ->
             prepare(p, s)
             val a = open(p, s)
-            for (schema in listOf(1, 2, 3, 4, 5, 6, 8)) {
+            for (schema in 2..17) {
                 val bad = a.copy(schema = schema).let { it.copy(digest = reviewAssignmentDigest(it)) }
                 assertFalse("schema $schema cannot acquire the new policy", reviewAssignmentCurrent(p, bad))
                 assertNotNull(reviewHistoryDefects(listOf(bad.copy(boundary = 0).let { it.copy(digest = reviewAssignmentDigest(it)) }), emptyList()))

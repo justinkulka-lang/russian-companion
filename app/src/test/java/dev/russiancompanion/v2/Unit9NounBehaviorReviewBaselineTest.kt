@@ -54,7 +54,7 @@ class Unit9NounBehaviorReviewBaselineTest {
             assertFalse("The proposed Unit9 obligation must refuse actual advancement without its assigned noun-behavior answer",
                 advancedWithoutNounBehavior)
             assertEquals("unit9-prior-noun-behavior-plural-gender-v3", task.policyId)
-            assertEquals(11, task.schema)
+            assertEquals(1, task.schema)
             assertEquals(listOf("obj-u5-indeclinable", "obj-u8-plural", "obj-u3-gender"), task.slots.map { it.objectiveId })
             assertEquals(listOf(5, 8, 3), task.slots.map { it.ownerUnit })
             assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })
@@ -90,7 +90,7 @@ class Unit9NounBehaviorReviewBaselineTest {
                 assertEquals("unit6-prior-present-subject-noun-behavior-v3", prerequisites.single { it.targetUnit == 6 }.policyId)
                 assertEquals("unit7-prior-gender-inanimate-case-v2", prerequisites.single { it.targetUnit == 7 }.policyId)
                 assertEquals("unit8-prior-present-nominative-agreement-v2", prerequisites.single { it.targetUnit == 8 }.policyId)
-                assertEquals(10, prerequisites.single { it.targetUnit == 8 }.schema)
+                assertEquals(1, prerequisites.single { it.targetUnit == 8 }.schema)
                 answer(store, task, 0)
                 assertEquals(setOf(0), completedReviewSlots(pack, task, store.v2LearnerView().reviewAnswers))
                 assertFalse(advancementDecision(pack, pack.unit(9)!!, store.v2LearnerView()).allowed)
@@ -131,7 +131,7 @@ class Unit9NounBehaviorReviewBaselineTest {
     private fun captureLegacy(task: CumulativeReviewAssignment, document: GovernedLearnerDocument, bytes: ByteArray) {
         val path = System.getProperty("audit.unit9.capture.dir") ?: return
         if (task.policyId != "unit9-prior-reading-plural-gender-v2") return
-        assertEquals(5, task.schema)
+        assertEquals(1, task.schema)
         assertEquals(listOf("obj-u1-decoding", "obj-u8-plural", "obj-u3-gender"), task.slots.map { it.objectiveId })
         assertEquals(listOf(1, 8, 3), task.slots.map { it.ownerUnit })
         require(path.startsWith("/workspace/artifacts/"))

@@ -85,35 +85,16 @@ class Unit4CumulativeReviewTest {
         }
     }
 
-    @Test fun schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview() {
-        val old = oldPack("73a8f9ad447fe86ed334671277a86be0d790ec2f")
-        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack(); val name = "unit4-old-${System.nanoTime()}.db"
-        try {
-            LocalStore.openNamed(context(), name).use { s ->
-                prepare(old, s); s.v2CompleteUnit(4, "old-completion")
-                val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 4 }
-                assertFalse(row.preReviewActivation); assertEquals("", row.reviewAssignmentId)
-                s.v2SaveProfile(s.v2Profile().copy(currentUnitNumber = 5))
-            }
-            LocalStore.openNamed(context(), name).use { s ->
-                assertEquals(setOf(1, 2, 3, 4), currentCompletedUnitNumbers(p, s.v2LearnerView()))
-                assertTrue(canOpenUnit(unitState(p, p.unit(5)!!, s.v2LearnerView())))
-                assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 4 })
-                assertFalse(advancementDecision(p, p.unit(4)!!, s.v2LearnerView()).allowed)
-                val altered = p.copy(items = p.items.map { if (it.id == "u4-i-pronoun-ты") it.copy(feedback = it.feedback + " changed") else it })
-                assertFalse(4 in currentCompletedUnitNumbers(altered, s.v2LearnerView()))
-                val before = s.governedLearnerFingerprint(); val a = open(p, s)
-                assertEquals(4, a.targetUnit); assertNotEquals(before, s.governedLearnerFingerprint())
-            }
-            ready(p).use { fresh ->
+    @Test fun rawCurrentCompletionAndForgedPreReviewActivationDoNotCreditThisUnit() {
+        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack()
+        ready(p).use { fresh ->
                 fresh.v2CompleteUnit(4, "raw-current-source")
                 assertFalse(4 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
                 val fake = fresh.governedLearnerDocument().copy(unitCompletions = fresh.governedLearnerDocument().unitCompletions.map {
                     if (it.unitNumber == 4) it.copy(preReviewActivation = true) else it })
                 assertEquals(GovernedReplaceOutcome.REPLACED, fresh.replaceGovernedLearner(fake, emptyList()))
                 assertFalse(4 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-            }
-        } finally { context().deleteDatabase(name) }
+        }
     }
 
     @Test fun oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit() {

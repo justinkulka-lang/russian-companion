@@ -50,7 +50,7 @@ class Unit7GenderReviewBaselineTest {
                 "objectives=${task.slots.map { it.objectiveId }} actualAdvanceWithoutGender=$advancedWithoutGender")
             assertFalse("Unit7 must refuse actual advancement without its assigned noun-gender answer", advancedWithoutGender)
             assertEquals("unit7-prior-gender-inanimate-case-v2", task.policyId)
-            assertEquals(9, task.schema)
+            assertEquals(1, task.schema)
             assertEquals(listOf("obj-u3-gender", "obj-u6-animacy"), task.slots.map { it.objectiveId })
             assertEquals(listOf(3, 6), task.slots.map { it.ownerUnit })
             assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })

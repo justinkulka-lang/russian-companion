@@ -56,35 +56,16 @@ class Unit6CumulativeReviewTest {
         }
     }
 
-    @Test fun schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview() {
-        val old = oldPack("56c227f280a3b90ff670b1c73607b83ad1ea4e2f")
-        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() /* Historical activation-only source; current changed-teaching refusal has separate coverage. */; val name = "unit6-old-${System.nanoTime()}.db"
-        try {
-            LocalStore.openNamed(context(), name).use { s ->
-                prepare(old, s); s.v2CompleteUnit(6, "old-completion")
-                val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 6 }
-                assertFalse(row.preReviewActivation); assertEquals("", row.reviewAssignmentId)
-                s.v2SaveProfile(s.v2Profile().copy(currentUnitNumber = 7))
-            }
-            LocalStore.openNamed(context(), name).use { s ->
-                assertEquals(setOf(1, 2, 3, 4, 5, 6), currentCompletedUnitNumbers(p, s.v2LearnerView()))
-                assertTrue(canOpenUnit(unitState(p, p.unit(7)!!, s.v2LearnerView())))
-                assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 6 })
-                assertFalse(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
-                val altered = p.copy(items = p.items.map { if (it.id == "u6-i-animacy-3") it.copy(feedback = it.feedback + " changed") else it })
-                assertFalse(6 in currentCompletedUnitNumbers(altered, s.v2LearnerView()))
-                val before = s.governedLearnerFingerprint(); val a = open(p, s)
-                assertEquals(6, a.targetUnit); assertNotEquals(before, s.governedLearnerFingerprint())
-            }
-            ready(p).use { fresh ->
+    @Test fun rawCurrentCompletionAndForgedPreReviewActivationDoNotCreditThisUnit() {
+        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack()
+        ready(p).use { fresh ->
                 fresh.v2CompleteUnit(6, "raw-current-source")
                 assertFalse(6 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
                 val fake = fresh.governedLearnerDocument().copy(unitCompletions = fresh.governedLearnerDocument().unitCompletions.map {
                     if (it.unitNumber == 6) it.copy(preReviewActivation = true) else it })
                 assertEquals(GovernedReplaceOutcome.REPLACED, fresh.replaceGovernedLearner(fake, emptyList()))
                 assertFalse(6 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-            }
-        } finally { context().deleteDatabase(name) }
+        }
     }
 
     @Test fun oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit() {

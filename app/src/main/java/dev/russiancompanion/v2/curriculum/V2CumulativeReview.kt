@@ -3,38 +3,8 @@ package dev.russiancompanion.v2.curriculum
 import kotlinx.serialization.Serializable
 import java.security.MessageDigest
 
-// Keep schema1 defaults for decoding historical documents and for unchanged answers.
+// One assignment schema. Schemas 2–16 are not supported. Answers use the same schema.
 internal const val CUMULATIVE_REVIEW_SCHEMA = 1
-// New Unit3 assignments use governed latest-miss/least-recent selection; pools stay v1.
-internal const val UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA = 2
-// Separate extension: schema2 remains Unit3-only, schema3 allocates Units5/6.
-internal const val UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA = 3
-// New Unit6 v2 obligations only; legacy Unit6 schema1/3 meanings remain unchanged.
-internal const val UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA = 4
-// Unit9 v2 only; all earlier assignment version meanings remain unchanged.
-internal const val UNIT9_WIDER_REVIEW_ASSIGNMENT_SCHEMA = 5
-// Unit13 v2 only; schemas1–5 retain their exact meanings.
-internal const val UNIT13_WIDER_REVIEW_ASSIGNMENT_SCHEMA = 6
-// Unit5 gender/subject obligation only; schemas1-6 retain their exact meanings.
-internal const val UNIT5_GRAMMAR_REVIEW_ASSIGNMENT_SCHEMA = 7
-// Unit6 supplied-present v3 only; all saved schema1-7 obligations remain immutable.
-internal const val UNIT6_PRESENT_REVIEW_ASSIGNMENT_SCHEMA = 8
-// Unit7 lexical gender/inanimate v2 only; saved schema1-8 meanings remain unchanged.
-internal const val UNIT7_GENDER_REVIEW_ASSIGNMENT_SCHEMA = 9
-// Unit8 supplied-present/agreement v2 only; saved schema1-9 meanings stay exact.
-internal const val UNIT8_PRESENT_REVIEW_ASSIGNMENT_SCHEMA = 10
-// Fresh Unit9 noun-behavior v3 only; schemas1-10 retain their exact meanings.
-internal const val UNIT9_NOUN_BEHAVIOR_REVIEW_ASSIGNMENT_SCHEMA = 11
-// Fresh Unit10 supplied-present v2 only; schemas1-11 retain their exact meanings.
-internal const val UNIT10_PRESENT_REVIEW_ASSIGNMENT_SCHEMA = 12
-// Fresh Unit11 noun/possession v2 only; schemas1-12 retain their meanings.
-internal const val UNIT11_NOUN_REVIEW_ASSIGNMENT_SCHEMA = 13
-// Fresh Unit12 lexical/past-gender v2 only; schemas1-13 retain their meanings.
-internal const val UNIT12_GENDER_REVIEW_ASSIGNMENT_SCHEMA = 14
-// Fresh Unit13 supplied-present/aspect/past v3 only; schemas1-14 stay immutable.
-internal const val UNIT13_PRESENT_REVIEW_ASSIGNMENT_SCHEMA = 15
-// Fresh Unit14 supplied-plural/possession/reported-time v2 only; schemas1-15 stay exact.
-internal const val UNIT14_PLURAL_POSSESSION_REVIEW_ASSIGNMENT_SCHEMA = 16
 internal const val CUMULATIVE_REVIEW_ROLE = "CUMULATIVE_REVIEW"
 
 @Serializable
@@ -565,86 +535,9 @@ private fun teachingDigest(pack: V2CurriculumPack, objective: V2Objective): Stri
     },
 ))
 
-private fun newReviewAssignmentSchema(policy: CumulativeReviewPolicy): Int = when (policy.targetUnit) {
-    3 -> UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA
-    5 -> if (policy.id == Unit5GrammarCumulativeReviewPolicy.definition.id) UNIT5_GRAMMAR_REVIEW_ASSIGNMENT_SCHEMA
-        else UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA
-    6 -> when (policy.id) {
-        Unit6PresentCumulativeReviewPolicy.definition.id -> UNIT6_PRESENT_REVIEW_ASSIGNMENT_SCHEMA
-        Unit6WiderCumulativeReviewPolicy.definition.id -> UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA
-        else -> UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA
-    }
-    7 -> if (policy.id == Unit7GenderCumulativeReviewPolicy.definition.id) UNIT7_GENDER_REVIEW_ASSIGNMENT_SCHEMA
-        else CUMULATIVE_REVIEW_SCHEMA
-    8 -> if (policy.id == Unit8PresentCumulativeReviewPolicy.definition.id) UNIT8_PRESENT_REVIEW_ASSIGNMENT_SCHEMA
-        else CUMULATIVE_REVIEW_SCHEMA
-    9 -> when (policy.id) {
-        Unit9NounBehaviorCumulativeReviewPolicy.definition.id -> UNIT9_NOUN_BEHAVIOR_REVIEW_ASSIGNMENT_SCHEMA
-        Unit9WiderCumulativeReviewPolicy.definition.id -> UNIT9_WIDER_REVIEW_ASSIGNMENT_SCHEMA
-        else -> CUMULATIVE_REVIEW_SCHEMA
-    }
-    10 -> if (policy.id == Unit10PresentCumulativeReviewPolicy.definition.id) UNIT10_PRESENT_REVIEW_ASSIGNMENT_SCHEMA
-        else CUMULATIVE_REVIEW_SCHEMA
-    11 -> if (policy.id == Unit11NounCumulativeReviewPolicy.definition.id) UNIT11_NOUN_REVIEW_ASSIGNMENT_SCHEMA
-        else CUMULATIVE_REVIEW_SCHEMA
-    12 -> if (policy.id == Unit12GenderCumulativeReviewPolicy.definition.id) UNIT12_GENDER_REVIEW_ASSIGNMENT_SCHEMA
-        else CUMULATIVE_REVIEW_SCHEMA
-    13 -> when (policy.id) {
-        Unit13PresentCumulativeReviewPolicy.definition.id -> UNIT13_PRESENT_REVIEW_ASSIGNMENT_SCHEMA
-        Unit13WiderCumulativeReviewPolicy.definition.id -> UNIT13_WIDER_REVIEW_ASSIGNMENT_SCHEMA
-        else -> CUMULATIVE_REVIEW_SCHEMA
-    }
-    14 -> if (policy.id == Unit14PluralPossessionCumulativeReviewPolicy.definition.id) UNIT14_PLURAL_POSSESSION_REVIEW_ASSIGNMENT_SCHEMA
-        else CUMULATIVE_REVIEW_SCHEMA
-    else -> CUMULATIVE_REVIEW_SCHEMA
-}
-
-/** Preserve each version's target scope; unknown combinations cannot acquire credit. */
-private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Boolean = when (a.schema) {
-    CUMULATIVE_REVIEW_SCHEMA -> a.policyId != Unit5GrammarCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit6WiderCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit6PresentCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit7GenderCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit8PresentCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit9WiderCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit9NounBehaviorCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit10PresentCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit11NounCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit12GenderCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit13WiderCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit13PresentCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit14PluralPossessionCumulativeReviewPolicy.definition.id
-    UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA -> a.targetUnit == 3
-    UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA -> (a.targetUnit == 5 && a.policyId == Unit5CumulativeReviewPolicy.definition.id) ||
-        (a.targetUnit == 6 && a.policyId == Unit6CumulativeReviewPolicy.definition.id)
-    UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 6 &&
-        a.policyId == Unit6WiderCumulativeReviewPolicy.definition.id
-    UNIT9_WIDER_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 9 &&
-        a.policyId == Unit9WiderCumulativeReviewPolicy.definition.id
-    UNIT13_WIDER_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 13 &&
-        a.policyId == Unit13WiderCumulativeReviewPolicy.definition.id
-    UNIT5_GRAMMAR_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 5 &&
-        a.policyId == Unit5GrammarCumulativeReviewPolicy.definition.id
-    UNIT6_PRESENT_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 6 &&
-        a.policyId == Unit6PresentCumulativeReviewPolicy.definition.id
-    UNIT7_GENDER_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 7 &&
-        a.policyId == Unit7GenderCumulativeReviewPolicy.definition.id
-    UNIT8_PRESENT_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 8 &&
-        a.policyId == Unit8PresentCumulativeReviewPolicy.definition.id
-    UNIT9_NOUN_BEHAVIOR_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 9 &&
-        a.policyId == Unit9NounBehaviorCumulativeReviewPolicy.definition.id
-    UNIT10_PRESENT_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 10 &&
-        a.policyId == Unit10PresentCumulativeReviewPolicy.definition.id
-    UNIT11_NOUN_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 11 &&
-        a.policyId == Unit11NounCumulativeReviewPolicy.definition.id
-    UNIT12_GENDER_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 12 &&
-        a.policyId == Unit12GenderCumulativeReviewPolicy.definition.id
-    UNIT13_PRESENT_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 13 &&
-        a.policyId == Unit13PresentCumulativeReviewPolicy.definition.id
-    UNIT14_PLURAL_POSSESSION_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 14 &&
-        a.policyId == Unit14PluralPossessionCumulativeReviewPolicy.definition.id
-    else -> false
-}
+/** One schema. Any other number is unsupported dev data. */
+private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Boolean =
+    a.schema == CUMULATIVE_REVIEW_SCHEMA
 
 /** Explicit history registry: an unknown policy/version never supplies current credit. */
 internal fun cumulativeReviewAssignmentPolicy(a: CumulativeReviewAssignment): CumulativeReviewPolicy? {
@@ -695,13 +588,11 @@ internal fun createUnit3ReviewAssignment(pack: V2CurriculumPack, learner: V2Lear
 internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V2LearnerView,
                                              targetUnit: Int, id: String, boundary: Long): CumulativeReviewAssignment? {
     val policy = cumulativeReviewDeclaredPolicy(pack, targetUnit) ?: return null
-    val assignmentSchema = newReviewAssignmentSchema(policy)
     if (id.isBlank() || boundary < 0 || pack.schemaVersion != 1 ||
         !cumulativeReviewDeclarationValid(pack, targetUnit)) return null
     val candidates = eligibleReviewCandidates(pack, learner, policy) ?: return null
     val slots = policy.pool.zip(candidates).map { (spec, eligible) ->
-        val item = (if (assignmentSchema != CUMULATIVE_REVIEW_SCHEMA) recentReviewCandidate(pack, learner, eligible)
-            else eligible.firstOrNull()) ?: return null
+        val item = recentReviewCandidate(pack, learner, eligible) ?: return null
         val unit = pack.units.single { u -> u.objectives.any { it.id == spec.objectiveId } }
         val o = unit.objectives.single { it.id == spec.objectiveId }
         CumulativeReviewSlot(o.id, spec.skill.name, item.id, unit.number, V2Validator.checkItemContentDigest(item),
@@ -709,7 +600,7 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
     }
     val a = CumulativeReviewAssignment(id, targetUnit, policy.id,
         policy.digest, presentedReviewResponseRuleDigest(), boundary, slots, "",
-        schema = assignmentSchema)
+        schema = CUMULATIVE_REVIEW_SCHEMA)
     return a.copy(digest = reviewAssignmentDigest(a))
 }
 
@@ -749,32 +640,7 @@ internal fun reviewAssignmentEligible(pack: V2CurriculumPack, learner: V2Learner
 internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReviewAssignment): Boolean {
     val policy = cumulativeReviewAssignmentPolicy(a) ?: return false
     val declared = cumulativeReviewDeclaredPolicy(pack, a.targetUnit) ?: return false
-    if (policy.id != declared.id && !(a.targetUnit == 5 &&
-        declared.id == Unit5GrammarCumulativeReviewPolicy.definition.id && policy.id == Unit5CumulativeReviewPolicy.definition.id) &&
-        !(a.targetUnit == 6 && (
-        declared.id == Unit6WiderCumulativeReviewPolicy.definition.id && policy.id == Unit6CumulativeReviewPolicy.definition.id ||
-        declared.id == Unit6PresentCumulativeReviewPolicy.definition.id && policy.id in setOf(
-            Unit6CumulativeReviewPolicy.definition.id, Unit6WiderCumulativeReviewPolicy.definition.id))) &&
-        !(a.targetUnit == 7 && declared.id == Unit7GenderCumulativeReviewPolicy.definition.id &&
-            policy.id == Unit7CumulativeReviewPolicy.definition.id) &&
-        !(a.targetUnit == 8 && declared.id == Unit8PresentCumulativeReviewPolicy.definition.id &&
-            policy.id == Unit8CumulativeReviewPolicy.definition.id) &&
-        !(a.targetUnit == 9 && (
-            declared.id == Unit9WiderCumulativeReviewPolicy.definition.id && policy.id == Unit9CumulativeReviewPolicy.definition.id ||
-            declared.id == Unit9NounBehaviorCumulativeReviewPolicy.definition.id && policy.id in setOf(
-                Unit9CumulativeReviewPolicy.definition.id, Unit9WiderCumulativeReviewPolicy.definition.id))) &&
-        !(a.targetUnit == 10 && declared.id == Unit10PresentCumulativeReviewPolicy.definition.id &&
-            policy.id == Unit10CumulativeReviewPolicy.definition.id) &&
-        !(a.targetUnit == 11 && declared.id == Unit11NounCumulativeReviewPolicy.definition.id &&
-            policy.id == Unit11CumulativeReviewPolicy.definition.id) &&
-        !(a.targetUnit == 12 && declared.id == Unit12GenderCumulativeReviewPolicy.definition.id &&
-            policy.id == Unit12CumulativeReviewPolicy.definition.id) &&
-        !(a.targetUnit == 13 && (
-            declared.id == Unit13WiderCumulativeReviewPolicy.definition.id && policy.id == Unit13CumulativeReviewPolicy.definition.id ||
-            declared.id == Unit13PresentCumulativeReviewPolicy.definition.id && policy.id in setOf(
-                Unit13CumulativeReviewPolicy.definition.id, Unit13WiderCumulativeReviewPolicy.definition.id))) &&
-        !(a.targetUnit == 14 && declared.id == Unit14PluralPossessionCumulativeReviewPolicy.definition.id &&
-            policy.id == Unit14CumulativeReviewPolicy.definition.id)) return false
+    if (policy.id != declared.id) return false
     if (!cumulativeReviewDeclarationValid(pack, a.targetUnit) || pack.schemaVersion != 1 ||
         !reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.boundary < 0 ||
         a.policyId != policy.id || a.policyDigest != policy.digest ||

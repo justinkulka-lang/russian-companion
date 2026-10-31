@@ -95,7 +95,7 @@ class CumulativeReviewGateTest {
         }
     }
 
-    @Test fun migratedVersionTenKeepsRawHistoryButChangedGenderTeachingRejectsOldLessonCredit() {
+    @Test fun devVersionTenLearnerRowsAreDiscardedWithoutInventingReviewCredit() {
         // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
         with(RecordedLiteracyEpochScope.context(pack(), 3)) {
         val p = pack(); val old = legacyPack(); val name = "review-activation-${System.nanoTime()}.db"
@@ -124,14 +124,14 @@ class CumulativeReviewGateTest {
         try {
             helper.writableDatabase; helper.close()
             LocalStore.openNamed(context(), name).use { s ->
-                assertEquals(document.attempts.map { it.id }, s.v2Attempts().map { it.id })
-                assertEquals(setOf(1, 2), currentCompletedUnitNumbers(p, s.v2LearnerView()))
+                assertTrue(s.v2Attempts().isEmpty())
+                assertTrue(s.v2LearnerView().completedUnitNumbers.isEmpty())
+                assertTrue(currentCompletedUnitNumbers(p, s.v2LearnerView()).isEmpty())
                 assertFalse(canOpenUnit(unitState(p, p.unit(4)!!, s.v2LearnerView())))
-                assertTrue(s.governedLearnerDocument().unitCompletions.all { it.preReviewActivation })
+                assertTrue(s.governedLearnerDocument().unitCompletions.isEmpty())
                 assertTrue(s.cumulativeReviewHistory().first.isEmpty())
+                assertTrue(s.cumulativeReviewHistory().second.isEmpty())
                 assertFalse(unit3ReviewComplete(p, s.v2LearnerView()))
-                val changed = p.copy(items = p.items.map { if (it.objectiveId == "obj-u3-gender") it.copy(feedback = it.feedback + " changed") else it })
-                assertFalse(3 in currentCompletedUnitNumbers(changed, s.v2LearnerView()))
             }
         } finally { helper.close(); context().deleteDatabase(name) }
         }
