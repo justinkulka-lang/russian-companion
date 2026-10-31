@@ -676,6 +676,7 @@ internal fun V2PracticeScreen(
         )
         V2Card("Alphabet Lab", "Letter board, print pairs, and confusable forms.", "Available", onAlphabet)
         V2SecondaryButton("Saved work", onSavedWork, tag = "v2-open-saved-work")
+        V2ListenPanel(modelReference = null, audio = null)
         if (offers == null) {
             V2Status("Preparing practice")
             return@V2Scaffold

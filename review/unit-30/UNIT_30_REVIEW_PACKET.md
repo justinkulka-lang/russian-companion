@@ -16,7 +16,7 @@ Unit 30 remains in development. Its readiness is content-complete and review-pen
 - Mapping-package SHA-256: 97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2
 - Pack content-review SHA-256: 7bd16001345d89747af711cac155f66feeb69f5f4c27c541de75b73540b9c74a
 - Review-package SHA-256: 8149ea09748db14078ae984a2d0ae9847afb64a2341d2a427ce2e0c2c486137c
-- Repository source SHA-256: adde376ac1bbbd36cf95ac8917413c06cdcd4bcf2738b33151d49b97e79418e3
+- Repository source SHA-256: 882999fbc04fee6a57a8bc998c4a40c18e3842697b8e4b069d420502e7d0900c
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

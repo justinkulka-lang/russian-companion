@@ -1,4 +1,4 @@
-package dev.russiancompanion.presentation.theme
+package dev.russiancompanion.v2.ui
 
 import android.app.Activity
 import androidx.compose.foundation.isSystemInDarkTheme

@@ -20,8 +20,6 @@ import androidx.navigation.compose.rememberNavController
 import dev.russiancompanion.data.appearance.AppearanceStore
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.domain.appearance.defaultAppearancePreference
-import dev.russiancompanion.presentation.navigation.snapshotDispatcher
-import dev.russiancompanion.presentation.theme.CompanionTheme
 import dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA
 import dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
 import dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK
