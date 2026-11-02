@@ -15,17 +15,12 @@ import org.robolectric.annotation.Config
 import java.io.ByteArrayOutputStream
 import java.io.File
 
-/** Synthetic ordinary answers; genuine current store/backup APIs. No device acceptance.
- * Positive baseline deliberately preserves the full pre-v3 production pack, not an older Unit13
- * fixture. At first execution that pack equals the actual current producer's entire curriculum.
- * The separate contrast always uses current production and is expected to fail before v3.
- */
+/** Fresh current learner records through governed progression, backup and named-store APIs. */
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
-class Unit13PresentReviewBaselineTest {
-    @Test fun actualCurrentV2PartialTaskRoundtripsReopensAndCompletesItsOwnObligation() {
-        val pack = baselinePack
-        if (currentPack.unit(13)!!.advancement!!.cumulativeReviewPolicyId == v2) assertEquals(currentPack, pack)
+class Unit13PresentReviewPersistenceTest {
+    @Test fun currentPartialAndCompletedTasksRestoreReopenAndKeepTheirOwnObligation() {
+        val pack = currentPack
         val context = context()
         val name = "unit13-current-partial-${System.nanoTime()}"
         val stage = File(context.cacheDir, name)
@@ -45,11 +40,12 @@ class Unit13PresentReviewBaselineTest {
                 assertEquals("unit12-prior-gender-past-gender-v2", prerequisites.single { it.targetUnit == 12 }.policyId)
                 assertEquals(1, prerequisites.single { it.targetUnit == 12 }.schema)
                 val task = open(store, pack)
-                assertEquals(v2, task.policyId); assertEquals(1, task.schema)
+                assertEquals("unit13-prior-present-aspect-past-gender-v3", task.policyId); assertEquals(1, task.schema)
                 assertEquals(3, task.slots.size)
-                assertEquals(listOf("obj-u1-decoding", "obj-u12-aspect", "obj-u11-past-aspect"), task.slots.map { it.objectiveId })
-                assertEquals(listOf(1, 12, 11), task.slots.map { it.ownerUnit })
-                assertEquals("u1-i-decode-pair", task.slots[0].itemId)
+                assertEquals(listOf("obj-u4-present", "obj-u12-aspect", "obj-u11-past-aspect"), task.slots.map { it.objectiveId })
+                assertEquals(listOf(4, 12, 11), task.slots.map { it.ownerUnit })
+                assertTrue(task.slots[0].itemId in cumulativeReviewDeclaredPolicy(pack, 13)!!.pool[0].candidateItemIds)
+                assertTrue(reviewAssignmentCurrent(pack, task))
                 assertEquals("u12-i-aspect-1", task.slots[1].itemId)
                 assertTrue(task.slots[2].itemId in listOf("u11-i-past-aspect-1", "u11-i-past-aspect-2"))
                 task.slots.forEach { assertEquals(V2Validator.unitContentReviewDigest(pack, it.ownerUnit), it.unitDigest) }
@@ -60,6 +56,7 @@ class Unit13PresentReviewBaselineTest {
                 assertTrue(partial!!.unitCompletions.none { it.unitNumber == 13 })
                 assertTrue(partial!!.recordings.isEmpty())
                 val bytes = archive(store, pack)
+                restoreAndReopen(context, pack, partial!!, bytes, task)
                 val read = readGovernedBackup(bytes.inputStream(), "dev.russiancompanion", pack.packId, pack.packVersion, stage)
                 assertTrue(read is BackupReadResult.Valid)
                 assertEquals(partial, (read as BackupReadResult.Valid).backup.document)
@@ -82,6 +79,7 @@ class Unit13PresentReviewBaselineTest {
                 val row = completed!!.unitCompletions.single { it.unitNumber == 13 }
                 assertEquals(task.id, row.reviewAssignmentId); assertEquals(task.policyDigest, row.reviewPolicyDigest)
                 assertTrue(row.reviewCompletionOrder > task.boundary)
+                restoreAndReopen(context, pack, completed!!, archive(store, pack), task)
             }
             LocalStore.openNamed(context, name).use { store ->
                 assertEquals(completed, store.governedLearnerDocument())
@@ -100,8 +98,7 @@ class Unit13PresentReviewBaselineTest {
             prepare(store, pack)
             assertTrue(ordinaryUnitRequirements(pack, pack.unit(13)!!, store.v2LearnerView()).allowed)
             val task = open(store, pack)
-            // Earlier present knowledge is already demonstrated; this is a new assignment-bound
-            // proposed requirement, not a missing ordinary prerequisite or existing gate bypass.
+            // Earlier practice cannot satisfy this new assignment-bound obligation.
             assertTrue(store.cumulativeReviewHistory().first.single { it.targetUnit == 10 }
                 .slots.any { it.objectiveId == "obj-u4-present" })
             task.slots.forEach { slot ->
@@ -120,9 +117,7 @@ class Unit13PresentReviewBaselineTest {
                 false
             }
             if (!advancedWithoutPresent) assertEquals(before, store.governedLearnerDocument())
-            println("UNIT13_BASELINE_OBSERVATION policy=${task.policyId} schema=${task.schema} objectives=${task.slots.map { it.objectiveId }} actualAdvanceWithoutPresent=$advancedWithoutPresent")
-            // Intentional failure on legitimate current v2: no present-form slot is declared.
-            assertFalse("The proposed Unit13 obligation must refuse advancement without its fresh assigned present-form answer", advancedWithoutPresent)
+            assertFalse("The current Unit13 obligation must refuse advancement without its fresh assigned present-form answer", advancedWithoutPresent)
             assertEquals("unit13-prior-present-aspect-past-gender-v3", task.policyId)
             assertEquals(1, task.schema)
             val policy = cumulativeReviewDeclaredPolicy(pack, 13)!!
@@ -165,6 +160,32 @@ class Unit13PresentReviewBaselineTest {
         store.v2AdvanceUnitIfCurrentAsync(store.learnerMutationEpoch(), n, "unit13-present", n + 1,
             session, resumePositionDigest(pack, session, 0)!!, GOVERNED_IDENTITY_SCHEMA, pack)
     }
+    private fun restoreAndReopen(context: Context, pack: V2CurriculumPack,
+                                 document: GovernedLearnerDocument, bytes: ByteArray,
+                                 task: CumulativeReviewAssignment) {
+        val name = "unit13-import-${System.nanoTime()}"; val stage = File(context.cacheDir, name)
+        try {
+            val read = readGovernedBackup(bytes.inputStream(), "dev.russiancompanion", pack.packId, pack.packVersion, stage)
+            assertTrue(read is BackupReadResult.Valid)
+            assertEquals(document, (read as BackupReadResult.Valid).backup.document)
+            LocalStore.openNamed(context, name).use { target ->
+                assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
+                assertEquals(document, target.governedLearnerDocument())
+            }
+            LocalStore.openNamed(context, name).use { target ->
+                assertEquals(document, target.governedLearnerDocument())
+                assertEquals(task, open(target, pack))
+                task.slots.forEach { assertEquals(V2Validator.unitContentReviewDigest(pack, it.ownerUnit), it.unitDigest) }
+                val completed = document.unitCompletions.any { it.unitNumber == 13 }
+                assertEquals(completed, cumulativeReviewComplete(pack, target.v2LearnerView(), 13))
+                assertEquals(completed, 13 in currentCompletedUnitNumbers(pack, target.v2LearnerView()))
+                assertEquals(document, target.governedLearnerDocument())
+            }
+        } finally {
+            stage.deleteRecursively(); context.deleteDatabase(name)
+            File(context.filesDir, "recordings-$name").deleteRecursively()
+        }
+    }
     private fun archive(store: LocalStore, pack: V2CurriculumPack): ByteArray = ByteArrayOutputStream().also {
         writeGovernedBackup(it, "dev.russiancompanion", pack.packId, pack.packVersion, "DARK", store.governedLearnerDocument(), emptyList())
     }.toByteArray()
@@ -172,10 +193,7 @@ class Unit13PresentReviewBaselineTest {
         (it.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
     }
     companion object {
-        private const val baselineCommit = "31ac807387253082c44bd2f6d67021478f0df66e"
-        private const val v2 = "unit13-prior-reading-aspect-past-gender-v2"
         private val root = File(if (File("app").isDirectory) "." else "..")
         private val currentPack by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
-        private val baselinePack by lazy { RecordedIntakeCorrectionScope.load(root, baselineCommit) }
     }
 }
