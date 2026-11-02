@@ -44,10 +44,8 @@ class DeviceAcceptancePackageTest {
             "acceptance-candidate-debug-apk", "artifact-identity.json", "|| true").forEach {
             assertFalse("Engineering CI must not create or hide failure for $it", currentWorkflow.contains(it))
         }
-        listOf("VisualReviewCaptureTest", "Units35ChunkCaptureTest", "Units610ChunkCaptureTest",
-            "Units1115GapCaptureTest").forEach {
-            assertTrue("Retained-evidence exporter must stay excluded: $it", currentWorkflow.contains("**/$it*"))
-        }
+        assertFalse("Host CI must run the full suite without test-name inclusion filters",
+            currentWorkflow.contains("--tests"))
         val formPaths = listOf(
             "release/acceptance/forms/AT-001.md",
             "release/acceptance/forms/AT-002.md",

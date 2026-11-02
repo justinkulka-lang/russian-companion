@@ -23,7 +23,7 @@ Engineering verification (APK creation is deferred until after the final indepen
 ANDROID_HOME=$HOME/android-sdk ./gradlew compileDebugSources lintDebug verifyReleaseGateAttachment --offline
 ```
 
-CI also runs host tests with the four screenshot exporters explicitly excluded (16 methods): `VisualReviewCaptureTest`, `Units35ChunkCaptureTest`, `Units610ChunkCaptureTest`, and `Units1115GapCaptureTest`. Those exporters overwrite retained evidence and are outside environment verification. CI archives source and test/lint reports; it does not assemble or sign an APK. Host verification does not replace the final independent comprehensive audit or subsequent physical-device acceptance.
+CI also runs the full host unit-test suite. The former screenshot exporters are retired; their current layout checks render in memory without writing screenshot artifacts. CI archives source and test/lint reports; it does not assemble or sign an APK. Host verification does not replace the final independent comprehensive audit or subsequent physical-device acceptance.
 
 `assembleRelease` stays fail-closed until v2 content, rights, review, and
 acceptance requirements are actually satisfied.
