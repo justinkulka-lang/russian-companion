@@ -1596,9 +1596,9 @@ private fun renderInstructions(review: Unit1ReviewPackage): String {
 
         Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit ${review.unitNumber} reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 
-        ## Generator
+        ## In-memory validation fixture
 
-        The deterministic generator and validator live in `app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt` and accept a unit number from 1 through 30. Regenerate the files in `review/unit-${review.unitNumber}/` from the packaged curriculum after any instructional change, then review the new digest.
+        This rendering supports current traversal, source/rights, digest and validator checks in memory. It does not authorize a per-unit approval workflow or regeneration of historical `review/unit-*` files. Amendment 2 limits governance bundles to the final audit, delta audits, independent verification, user test and owner acceptance stages. Historical packets are not current approval evidence.
     """.trimIndent() + "\n"
 }
 

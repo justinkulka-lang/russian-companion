@@ -14,22 +14,6 @@ import java.io.File
 
 class Unit1ReviewPackageTest {
     @Test
-    fun committedPackageMatchesTheCurriculumTraversal() {
-        val pack = pack()
-        val rendered = renderUnit1ReviewFiles(pack)
-        val dir = File(repo(), "review/unit-1")
-        if (System.getenv("WRITE_UNIT1_REVIEW") == "1" || System.getenv("WRITE_UNIT_REVIEW") == "1") {
-            dir.mkdirs()
-            rendered.files.forEach { (name, text) -> File(dir, name).writeText(text) }
-        }
-        val committed = UNIT1_REVIEW_FILE_NAMES.associateWith { name -> File(dir, name).readText() }
-        val errors = validateUnit1ReviewFiles(pack, committed)
-        assertTrue(errors.joinToString("\n"), errors.isEmpty())
-        assertEquals(rendered.files, committed)
-        assertEquals(rendered.files, renderUnit1ReviewFiles(pack).files)
-    }
-
-    @Test
     fun packageDigestIsTheInstructionalContentDigest() {
         val pack = pack()
         val review = buildUnit1ReviewPackage(pack)
