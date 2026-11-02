@@ -96,11 +96,10 @@ class CumulativeReviewGateTest {
     }
 
     @Test fun devVersionTenLearnerRowsAreDiscardedWithoutInventingReviewCredit() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack(), 3)) {
-        val p = pack(); val old = legacyPack(); val name = "review-activation-${System.nanoTime()}.db"
+        // Populate a real version-10 database with fresh records, then verify the reset.
+        val p = pack(); val name = "review-activation-${System.nanoTime()}.db"
         val schema = JSONObject(File(root(), "app/schemas/dev.russiancompanion.data.local.AppDatabase/10.json").readText()).getJSONObject("database")
-        val document = ready(old).use { s -> s.v2CompleteUnit(3, "historical-completion"); s.governedLearnerDocument() }
+        val document = ready(p).use { s -> s.v2CompleteUnit(3, "historical-completion"); s.governedLearnerDocument() }
         val helper = FrameworkSQLiteOpenHelperFactory().create(SupportSQLiteOpenHelper.Configuration.builder(context()).name(name)
             .callback(object : SupportSQLiteOpenHelper.Callback(10) {
                 override fun onCreate(db: SupportSQLiteDatabase) {
@@ -134,7 +133,6 @@ class CumulativeReviewGateTest {
                 assertFalse(unit3ReviewComplete(p, s.v2LearnerView()))
             }
         } finally { helper.close(); context().deleteDatabase(name) }
-        }
     }
 
     @Test fun versionThreeBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks() {
@@ -250,10 +248,6 @@ class CumulativeReviewGateTest {
     private fun context():Context=ApplicationProvider.getApplicationContext()
     private fun root()=File(if(File("app").isDirectory)"." else "..")
     private fun pack()=sharedPack
-    private fun legacyPack():V2CurriculumPack {
-        val p=ProcessBuilder("git","show","20a227817562e3a8645488fd52db2e7589713a7a:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val result=V2PackLoader.parse(p.inputStream.bufferedReader().readText());assertEquals(0,p.waitFor());V2PackIdentityIndex.warm(result);return result
-    }
     companion object { private val sharedPack by lazy {
         val root=File(if(File("app").isDirectory)"." else "..")
         V2PackLoader.parse(File(root,"app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) }

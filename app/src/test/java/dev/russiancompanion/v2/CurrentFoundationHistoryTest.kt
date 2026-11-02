@@ -6,17 +6,14 @@ import dev.russiancompanion.RussianCompanionApplication
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.v2.backup.*
 import dev.russiancompanion.v2.curriculum.*
-import kotlinx.serialization.json.*
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import java.io.File
-import java.security.MessageDigest
-import java.util.zip.ZipFile
 
-/** Actual current-source controls alongside separately scoped historical contracts. */
+/** Fresh current-source prerequisites and invalidation checks; no historical pack dependency. */
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
 class CurrentFoundationHistoryTest {
@@ -38,19 +35,47 @@ class CurrentFoundationHistoryTest {
         }
     }
 
-    @Test fun historicalEpochProofCannotAcceptUnrelatedCurrentTeachingChanges() {
-        val before = RecordedLiteracyEpochScope.beforeCorrection(root, current)
-        val changed = current.copy(units = current.units.map { u -> if (u.number != 4) u else
-            u.copy(sessions = u.sessions.map { session -> session.copy(steps = session.steps.map { step ->
-                if (step.kind == "TEACH") step.copy(body = step.body + " changed") else step
-            }) }) })
-        assertTrue(runCatching { RecordedLiteracyEpochScope.beforeCorrection(root, changed) }.exceptionOrNull() is AssertionError)
-        assertTrue(runCatching { RecordedCurriculumConservationScope.assertCurrent(root, before) }.exceptionOrNull() is AssertionError)
+    @Test fun changedCurrentInstructionInvalidatesCreditStepAndResumeUntilFreshWork() {
+        val p = current
+        val unit = p.unit(1)!!
+        val session = unit.sessions.first { it.steps.any { step -> step.kind == "TEACH" } }
+        val step = session.steps.first { it.kind == "TEACH" }
+        val check = unit.sessions.flatMap { it.steps }.first { it.kind == "CHECK" && it.itemIds.isNotEmpty() }
+        val item = p.item(check.itemIds.first())!!
+        val changed = p.copy(units = p.units.map { u ->
+            if (u.number != 1) u else u.copy(sessions = u.sessions.map { s ->
+                if (s.id != session.id) s else s.copy(steps = s.steps.map {
+                    if (it.id == step.id) it.copy(body = it.body + " Synthetic instruction change.") else it
+                })
+            })
+        })
+        LocalStore.openInMemory(context()).use { store ->
+            store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true,
+                currentSessionId = session.id, currentStepIndex = session.steps.indexOf(step)).verifiedResume(p))
+            store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, item.id, item.answer,
+                PRESCRIBED_CHECK, check.id, "current-work")!!)
+            store.v2CompleteGovernedStep(step.id, governedStepCompletionDigest(p, store.v2LearnerView(), step.id)!!, "current-work")
+            assertTrue(item.id in creditItemIds(p, store.v2LearnerView()))
+            assertTrue(completedStepCounts(p, store.v2LearnerView(), step.id))
+            assertTrue(resumeIsCurrent(p, store.v2LearnerView()))
+            val before = store.governedLearnerDocument()
+            assertFalse(item.id in creditItemIds(changed, store.v2LearnerView()))
+            assertFalse(completedStepCounts(changed, store.v2LearnerView(), step.id))
+            assertFalse(resumeIsCurrent(changed, store.v2LearnerView()))
+            assertEquals(before, store.governedLearnerDocument())
+            store.v2RecordGovernedAttempt(prepareGovernedAttempt(changed, item.id, item.answer,
+                PRESCRIBED_CHECK, check.id, "fresh-work")!!)
+            store.v2CompleteGovernedStep(step.id, governedStepCompletionDigest(changed, store.v2LearnerView(), step.id)!!, "fresh-work")
+            store.v2SaveProfile(store.v2Profile().verifiedResume(changed))
+            assertTrue(item.id in creditItemIds(changed, store.v2LearnerView()))
+            assertTrue(completedStepCounts(changed, store.v2LearnerView(), step.id))
+            assertTrue(resumeIsCurrent(changed, store.v2LearnerView()))
+            assertEquals(before.attempts.size + 1, store.governedLearnerDocument().attempts.size)
+        }
     }
     private fun context(): Context = ApplicationProvider.getApplicationContext<Context>().also {
         (it.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
     }
-    private fun hash(bytes: ByteArray) = MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
     companion object {
         private val root = File(if (File("app").isDirectory) "." else "..")
         private val current by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }

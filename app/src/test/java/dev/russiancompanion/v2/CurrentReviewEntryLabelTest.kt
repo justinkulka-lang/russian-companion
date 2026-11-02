@@ -25,16 +25,26 @@ import java.util.concurrent.atomic.AtomicInteger
 class CurrentReviewEntryLabelTest {
     @get:Rule val compose = createComposeRule()
 
-    @Test fun unstartedReviewUsesCurrentLabelAndCallbackWithoutChangingLearnerState() {
+    @Test fun unstartedReviewUsesCurrentLabelAndCallbackWithoutChangingLearnerState() = assertEntry(placed = true)
+
+    @Test fun earnedCurrentPrerequisitesUseTheSameEntryWithoutCreatingAnAssignment() = assertEntry(placed = false)
+
+    private fun assertEntry(placed: Boolean) {
         val context = ApplicationProvider.getApplicationContext<Context>()
         (context.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
         LocalStore.openInMemory(context).use { store ->
-            // Explicit placement opens the current unit without importing or inventing prior work.
-            store.v2SaveProfile(store.v2Profile().copy(
-                onboardingCompleted = true,
-                currentUnitNumber = 5,
-                startingPoint = "RESUME_FROM_BOOK",
-            ))
+            if (placed) {
+                store.v2SaveProfile(store.v2Profile().copy(
+                    onboardingCompleted = true,
+                    currentUnitNumber = 5,
+                    startingPoint = "RESUME_FROM_BOOK",
+                ))
+            } else {
+                val document = FreshCurrentPrerequisiteHistory.document(pack, 5, context)
+                assertEquals(dev.russiancompanion.v2.backup.GovernedReplaceOutcome.REPLACED,
+                    store.replaceGovernedLearner(document, emptyList()))
+                assertEquals((1..4).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
+            }
             val learner = store.v2LearnerView()
             assertEquals(V2UnitState.CURRENT, unitState(pack, pack.unit(5)!!, learner))
             assertNull(currentCumulativeAssignment(pack, learner, 5))
