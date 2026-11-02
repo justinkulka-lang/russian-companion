@@ -459,3 +459,12 @@ T02-n1a-n1 records the two non-heap assertions for controlled investigation afte
 Unblock by prioritizing T03-n4 and the residual-assertion investigation, then obtaining a passing full configured suite on the resulting exact source commit. WORK_QUEUE's blocked-task rule prevents silently skipping this task. T02-n1b and T05 were not started; no evidence bundle, baseline capture or historical packet was generated.
 
 - 2026-11-02 — Owner direction — remote ff05f671 is authoritative; parallel session closed; local duplicate work discarded. Priority is T03-n4, T02-n1a-n1, then required CI/closure of T02-n1a, one task per session.
+
+
+### T03-n4 committed resource configuration — 2026-11-02
+
+The committed Gradle path now uses a 3 GiB Gradle heap, one Gradle worker, disabled cross-project parallel execution and in-process Kotlin compilation. Every host Test task uses a 3 GiB test-worker heap, one fork at a time, JVM recycling after eight classes and fail-fast disabled. The test task logs these effective settings once before execution. This moves the previously external resource controls into the same path invoked by GitHub CI.
+
+No test source, behavior assertion, test-name filter, exclusion, skip, retry or generation switch is changed. The current unit/layout suite and existing physical-device skip remain. Only the current, unfrozen, unrecorded candidate's top-level sourceDigest was refreshed for the changed build inputs; every prior/failed/frozen candidate identity and all approval/artifact statuses are unchanged. No historical review packets or evidence bundles were regenerated.
+
+Development smoke validation compiled the Kotlin build configuration and passed the current candidate-identity and CI-wiring checks: 2 tests, 0 failures/errors/skips, Gradle success in 1m 57s. Its task log confirms heap=3g, forks=1 and recycling after eight classes, without external heap/fork overrides. Local repository/proxy setup is external. This targeted local check is not the A2-13 acceptance evidence. The full unfiltered GitHub push workflow on the exact resource-fix commit is required; T03-n4 stays IN_PROGRESS until that result is known. The later assertion investigation and T02-n1a closure are not performed in this task.

@@ -50,6 +50,18 @@ android {
     }
 }
 
+// Robolectric loads the full curriculum and retains Android sandboxes between
+// classes. Give each worker room for those fixtures and bound sandbox retention.
+tasks.withType<Test>().configureEach {
+    maxHeapSize = "3g"
+    maxParallelForks = 1
+    forkEvery = 8L
+    failFast = false
+    doFirst {
+        logger.lifecycle("Host test resources: heap=$maxHeapSize, forks=$maxParallelForks, recycle after $forkEvery classes")
+    }
+}
+
 tasks.register<JavaExec>("checkReleaseGate") {
     group = "verification"
     description = "Refuses a public release until the packaged catalog and retained-evidence manifest clear the release gate."
