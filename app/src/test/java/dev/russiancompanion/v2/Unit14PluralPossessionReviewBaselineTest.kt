@@ -7,7 +7,6 @@ import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.v2.backup.*
 import dev.russiancompanion.v2.curriculum.*
 import kotlinx.coroutines.runBlocking
-import kotlinx.serialization.json.*
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -15,7 +14,6 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import java.io.ByteArrayOutputStream
 import java.io.File
-import java.security.MessageDigest
 
 /** Synthetic answers and book attestations, with genuine governed progression and backup APIs.
  * The positive preserves the full actual-current-at-capture pack, not an ordinal-only fixture.
@@ -60,7 +58,7 @@ class Unit14PluralPossessionReviewBaselineTest {
                 partial14 = store.governedLearnerDocument()
                 assertTrue(partial14!!.unitCompletions.none { it.unitNumber == 14 })
                 assertTrue(partial14!!.recordings.isEmpty())
-                val bytes = capture("PARTIAL_UNIT14_V1", store, p, task)
+                val bytes = archive(store, p)
                 roundtripNamed(context, p, partial14!!, bytes, task)
             }
             LocalStore.openNamed(context, name).use { store ->
@@ -76,7 +74,7 @@ class Unit14PluralPossessionReviewBaselineTest {
                 val row = completed14.unitCompletions.single { it.unitNumber == 14 }
                 assertEquals(task.id, row.reviewAssignmentId); assertEquals(task.policyDigest, row.reviewPolicyDigest)
                 assertTrue(row.reviewCompletionOrder > task.boundary)
-                val completedBytes = capture("COMPLETED_UNIT14_V1", store, p, task)
+                val completedBytes = archive(store, p)
                 roundtripNamed(context, p, completed14, completedBytes, null)
 
                 ordinary(store, p, 15)
@@ -94,7 +92,7 @@ class Unit14PluralPossessionReviewBaselineTest {
                 partial15 = store.governedLearnerDocument()
                 assertTrue(partial15!!.unitCompletions.none { it.unitNumber == 15 })
                 assertEquals(completed14.unitCompletions, partial15!!.unitCompletions)
-                val bytes = capture("PARTIAL_UNIT15_OWNER14_V1", store, p, downstream)
+                val bytes = archive(store, p)
                 roundtripNamed(context, p, partial15!!, bytes, downstream)
             }
             LocalStore.openNamed(context, name).use { store ->
@@ -115,17 +113,6 @@ class Unit14PluralPossessionReviewBaselineTest {
                 assertEquals(completed15, store.governedLearnerDocument())
                 assertEquals(16, store.v2Profile().currentUnitNumber)
                 assertEquals((1..15).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
-                captureDirectory()?.let { directory ->
-                    File(directory, "COMPLETED_UNIT15_V1.json").writeText(
-                        backupJson.encodeToString(GovernedLearnerDocument.serializer(), completed15!!))
-                    File(directory, "LIFECYCLE_VERIFIED.json").writeText(buildJsonObject {
-                        put("producerCommit", producerCommit()); put("curriculumSourceCommit", baselineCommit)
-                        put("partial14ReadReplaceNamedReopen", true); put("completed14ReadReplaceNamedReopen", true)
-                        put("partial15ReadReplaceNamedReopen", true); put("actualAdvance14To15", true)
-                        put("actualAdvance15To16", true); put("completed15NamedReopen", true)
-                        put("physicalAcceptance", "NOT_EXECUTED_OUTSTANDING_LAST")
-                    }.toString() + "\n")
-                }
             }
         } finally { deleteStore(context, name) }
     }
@@ -234,34 +221,9 @@ class Unit14PluralPossessionReviewBaselineTest {
             }
         } finally { stage.deleteRecursively(); deleteStore(context, name) }
     }
-    private fun capture(name: String, store: LocalStore, p: V2CurriculumPack, task: CumulativeReviewAssignment): ByteArray {
-        val document = store.governedLearnerDocument()
-        val bytes = ByteArrayOutputStream().also {
-            writeGovernedBackup(it, "dev.russiancompanion", p.packId, p.packVersion, "DARK", document, emptyList())
-        }.toByteArray()
-        captureDirectory()?.let { directory ->
-            File(directory, "$name.zip").writeBytes(bytes)
-            File(directory, "$name.IDENTITY.json").writeText(buildJsonObject {
-                put("producerCommit", producerCommit()); put("curriculumSourceCommit", baselineCommit)
-                put("targetUnit", task.targetUnit); put("policyId", task.policyId); put("assignmentSchema", task.schema)
-                put("policyDigest", task.policyDigest); put("assignmentDigest", task.digest)
-                put("backupFormatVersion", BACKUP_FORMAT_VERSION); put("documentSchemaVersion", document.schemaVersion)
-                put("recordingCount", document.recordings.size); put("profileUnit", document.profile.currentUnitNumber)
-                put("rawCurriculumSHA256", hash(File(root, "app/src/main/assets/content/v2-curriculum.json").readBytes()))
-                put("zipSHA256", hash(bytes)); put("zipBytes", bytes.size)
-                put("syntheticLearner", true); put("oldArchiveRelabelled", false)
-            }.toString() + "\n")
-        }
-        return bytes
-    }
-    private fun captureDirectory(): File? = System.getProperty("audit.unit14.capture.dir")?.let {
-        require(it.startsWith("/workspace/artifacts/"))
-        File(it).also { directory -> check(directory.isDirectory || directory.mkdirs()) }
-    }
-    private fun producerCommit(): String {
-        val git = ProcessBuilder("git", "rev-parse", "HEAD").directory(root).start()
-        return git.inputStream.bufferedReader().readText().trim().also { check(git.waitFor() == 0) }
-    }
+    private fun archive(store: LocalStore, p: V2CurriculumPack): ByteArray = ByteArrayOutputStream().also {
+        writeGovernedBackup(it, "dev.russiancompanion", p.packId, p.packVersion, "DARK", store.governedLearnerDocument(), emptyList())
+    }.toByteArray()
     private fun context(): Context = ApplicationProvider.getApplicationContext<Context>().also {
         (it.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
     }
@@ -274,6 +236,5 @@ class Unit14PluralPossessionReviewBaselineTest {
         private val root = File(if (File("app").isDirectory) "." else "..")
         private val currentPack by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
         private val baselinePack by lazy { RecordedIntakeCorrectionScope.load(root, baselineCommit) }
-        private fun hash(bytes: ByteArray) = MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
     }
 }

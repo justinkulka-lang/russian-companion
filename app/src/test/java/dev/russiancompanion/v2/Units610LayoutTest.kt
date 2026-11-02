@@ -36,7 +36,7 @@ import java.io.File
 @RunWith(RobolectricTestRunner::class)
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi")
-class Units610ChunkCaptureTest {
+class Units610LayoutTest {
     @get:Rule
     val compose = createComposeRule()
 
@@ -48,43 +48,43 @@ class Units610ChunkCaptureTest {
     }
 
     @Test
-    fun unitSixConceptCardAtNormalFont() = openAndCapture(6, "unit6-concept-card-normal")
+    fun unitSixConceptCardAtNormalFont() = openAndCheckLayout(6, "unit6-concept-card-normal")
 
     @Test
-    fun unitSevenConceptCardAtNormalFont() = openAndCapture(7, "unit7-concept-card-normal")
+    fun unitSevenConceptCardAtNormalFont() = openAndCheckLayout(7, "unit7-concept-card-normal")
 
     @Test
-    fun unitEightConceptCardAtNormalFont() = openAndCapture(8, "unit8-concept-card-normal")
+    fun unitEightConceptCardAtNormalFont() = openAndCheckLayout(8, "unit8-concept-card-normal")
 
     @Test
-    fun unitNineConceptCardAtNormalFont() = openAndCapture(9, "unit9-concept-card-normal")
+    fun unitNineConceptCardAtNormalFont() = openAndCheckLayout(9, "unit9-concept-card-normal")
 
     @Test
-    fun unitTenConceptCardAtNormalFont() = openAndCapture(10, "unit10-concept-card-normal")
-
-    @Test
-    @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
-    fun unitSixConceptCardAtLargeFont() = openAndCapture(6, "unit6-concept-card-large-font")
+    fun unitTenConceptCardAtNormalFont() = openAndCheckLayout(10, "unit10-concept-card-normal")
 
     @Test
     @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
-    fun unitSevenConceptCardAtLargeFont() = openAndCapture(7, "unit7-concept-card-large-font")
+    fun unitSixConceptCardAtLargeFont() = openAndCheckLayout(6, "unit6-concept-card-large-font")
 
     @Test
     @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
-    fun unitEightConceptCardAtLargeFont() = openAndCapture(8, "unit8-concept-card-large-font")
+    fun unitSevenConceptCardAtLargeFont() = openAndCheckLayout(7, "unit7-concept-card-large-font")
 
     @Test
     @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
-    fun unitNineConceptCardAtLargeFont() = openAndCapture(9, "unit9-concept-card-large-font")
+    fun unitEightConceptCardAtLargeFont() = openAndCheckLayout(8, "unit8-concept-card-large-font")
 
     @Test
     @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
-    fun unitTenConceptCardAtLargeFont() = openAndCapture(10, "unit10-concept-card-large-font")
+    fun unitNineConceptCardAtLargeFont() = openAndCheckLayout(9, "unit9-concept-card-large-font")
 
-    private fun openAndCapture(number: Int, name: String) {
+    @Test
+    @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
+    fun unitTenConceptCardAtLargeFont() = openAndCheckLayout(10, "unit10-concept-card-large-font")
+
+    private fun openAndCheckLayout(number: Int, name: String) {
         openFirstConcept(number)
-        capture(name)
+        assertRenderedContentGutter(name)
     }
 
     private fun openFirstConcept(number: Int) {
@@ -95,7 +95,7 @@ class Units610ChunkCaptureTest {
         val session = unit.sessions.first { it.steps.any { step -> step.kind == "TEACH" } }
         val card = session.steps.first { it.kind == "TEACH" }
         assertTrue(card.body.length < 500)
-        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = number))
+        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = number, startingPoint = "RESUME_FROM_BOOK"))
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithText("Course").performClick()
         openUnitRow(number)
@@ -121,19 +121,10 @@ class Units610ChunkCaptureTest {
         }
     }
 
-    private fun capture(name: String) {
+    private fun assertRenderedContentGutter(name: String) {
         compose.waitForIdle()
         val bitmap = compose.onRoot().captureToImage().asAndroidBitmap()
         assertBitmapContentGutter(name, bitmap)
-        val destinations = listOf(File(repo(), "release/acceptance/visual-review"), File("/opt/cursor/artifacts/screenshots"))
-        for (dir in destinations) {
-            dir.mkdirs()
-            val file = File(dir, "$name.png")
-            file.outputStream().use { stream ->
-                assertTrue(name, bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream))
-            }
-            assertTrue(file.length() > 0)
-        }
     }
 
     private fun assertBitmapContentGutter(name: String, bitmap: Bitmap) {

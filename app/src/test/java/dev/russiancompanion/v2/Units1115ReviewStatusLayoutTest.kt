@@ -31,7 +31,7 @@ import java.io.File
 @RunWith(RobolectricTestRunner::class)
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi")
-class Units1115GapCaptureTest {
+class Units1115ReviewStatusLayoutTest {
     @get:Rule
     val compose = createComposeRule()
 
@@ -43,17 +43,17 @@ class Units1115GapCaptureTest {
     }
 
     @Test
-    fun unitElevenGapAtNormalFont() = openAndCapture("unit11-mapping-gap-normal")
+    fun unitElevenGapAtNormalFont() = openAndCheckLayout("unit11-mapping-gap-normal")
 
     @Test
     @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
-    fun unitElevenGapAtLargeFont() = openAndCapture("unit11-mapping-gap-large-font")
+    fun unitElevenGapAtLargeFont() = openAndCheckLayout("unit11-mapping-gap-large-font")
 
-    private fun openAndCapture(name: String) {
+    private fun openAndCheckLayout(name: String) {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val store = LocalStore.openInMemory(context).also { stores += it }
         val pack = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
-        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 11))
+        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 11, startingPoint = "RESUME_FROM_BOOK"))
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithText("Course").performClick()
         compose.onNodeWithTag("v2-content").performScrollToIndex(11)
@@ -63,22 +63,13 @@ class Units1115GapCaptureTest {
         compose.onNodeWithTag("v2-mapping-pending").assertIsDisplayed()
         compose.onNodeWithText("printed pages 122-132", substring = true).assertIsDisplayed()
         compose.onNodeWithText("PENDING_CURRICULUM_REVIEWER", substring = true).assertIsDisplayed()
-        capture(name)
+        assertRenderedContentGutter(name)
     }
 
-    private fun capture(name: String) {
+    private fun assertRenderedContentGutter(name: String) {
         compose.waitForIdle()
         val bitmap = compose.onRoot().captureToImage().asAndroidBitmap()
         assertBitmapContentGutter(name, bitmap)
-        val destinations = listOf(File(repo(), "release/acceptance/visual-review"), File("/opt/cursor/artifacts/screenshots"))
-        for (dir in destinations) {
-            dir.mkdirs()
-            val file = File(dir, "$name.png")
-            file.outputStream().use { stream ->
-                assertTrue(name, bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream))
-            }
-            assertTrue(file.length() > 0)
-        }
     }
 
     private fun assertBitmapContentGutter(name: String, bitmap: Bitmap) {

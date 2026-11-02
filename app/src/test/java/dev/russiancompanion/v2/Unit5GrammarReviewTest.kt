@@ -121,7 +121,6 @@ class Unit5GrammarReviewTest {
         }
     }
 
-    /** Baseline-only capture is opt-in; later runs consume those exact pre-change bytes. */
 
     private fun prepare(p: V2CurriculumPack, s: LocalStore) {
         for (n in 1..5) {

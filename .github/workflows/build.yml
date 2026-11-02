@@ -57,15 +57,7 @@ jobs:
           sdkmanager --install "platforms;android-37.0" "build-tools;36.0.0"
       - name: Compile, lint, verify gate attachment, and run host tests
         run: |
-          cat > verification-evidence/exporter-exclusions.gradle <<'GRADLE'
-          allprojects {
-              tasks.withType(Test).configureEach {
-                  // These four exporters overwrite retained screenshot evidence (16 methods).
-                  exclude '**/VisualReviewCaptureTest*', '**/Units35ChunkCaptureTest*', '**/Units610ChunkCaptureTest*', '**/Units1115GapCaptureTest*'
-              }
-          }
-          GRADLE
-          ./gradlew -I verification-evidence/exporter-exclusions.gradle compileDebugSources lintDebug verifyReleaseGateAttachment testDebugUnitTest --continue --stacktrace
+          ./gradlew compileDebugSources lintDebug verifyReleaseGateAttachment testDebugUnitTest --continue --stacktrace
       - name: Retain test and lint reports
         if: ${{ always() }}
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2

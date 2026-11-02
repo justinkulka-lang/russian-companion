@@ -7,7 +7,6 @@ import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.v2.backup.*
 import dev.russiancompanion.v2.curriculum.*
 import kotlinx.coroutines.runBlocking
-import kotlinx.serialization.json.*
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -15,7 +14,6 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import java.io.ByteArrayOutputStream
 import java.io.File
-import java.security.MessageDigest
 
 /** Synthetic ordinary work; actual current assignments, store advancement and backup APIs. */
 @RunWith(RobolectricTestRunner::class)
@@ -102,7 +100,6 @@ class Unit10PresentReviewBaselineTest {
                 assertTrue(partial!!.unitCompletions.none { it.unitNumber == 10 })
                 assertTrue(partial!!.recordings.isEmpty())
                 val bytes = archive(store)
-                captureLegacy(task, partial!!, bytes)
                 val decoded = readGovernedBackup(bytes.inputStream(), "dev.russiancompanion", pack.packId, pack.packVersion, stage)
                 assertTrue(decoded is BackupReadResult.Valid)
                 assertEquals(partial, (decoded as BackupReadResult.Valid).backup.document)
@@ -132,31 +129,6 @@ class Unit10PresentReviewBaselineTest {
         }
     }
 
-    private fun captureLegacy(task: CumulativeReviewAssignment, document: GovernedLearnerDocument, bytes: ByteArray) {
-        val path = System.getProperty("audit.unit10.capture.dir") ?: return
-        if (task.policyId != "unit10-prior-reading-numeral-gender-v1") return
-        assertEquals(1, task.schema)
-        assertEquals(listOf("obj-u1-decoding", "obj-u9-odindva"), task.slots.map { it.objectiveId })
-        assertEquals(listOf(1, 9), task.slots.map { it.ownerUnit })
-        require(path.startsWith("/workspace/artifacts/"))
-        val directory = File(path).also { check(it.mkdirs()) }
-        val documentText = backupJson.encodeToString(GovernedLearnerDocument.serializer(), document)
-        File(directory, "PARTIAL_UNIT10_V1.zip").writeBytes(bytes)
-        File(directory, "PARTIAL_UNIT10_V1.json").writeText(documentText)
-        val git = ProcessBuilder("git", "rev-parse", "HEAD").directory(root).start()
-        val commit = git.inputStream.bufferedReader().readText().trim()
-        check(git.waitFor() == 0)
-        File(directory, "IDENTITY.json").writeText(buildJsonObject {
-            put("producerCommit", commit); put("policyId", task.policyId); put("schema", task.schema)
-            put("policyDigest", task.policyDigest); put("assignmentDigest", task.digest)
-            put("documentSchemaVersion", document.schemaVersion)
-            put("recordingCount", document.recordings.size)
-            put("rawCurriculumSHA256", hash(File(root, "app/src/main/assets/content/v2-curriculum.json").readBytes()))
-            put("zipSHA256", hash(bytes)); put("zipBytes", bytes.size)
-            put("documentSHA256", hash(documentText.toByteArray()))
-            put("syntheticLearner", true); put("originalAllowlistReplaced", false)
-        }.toString() + "\n")
-    }
 
     private fun prepare(store: LocalStore) {
         for (n in 1..10) {
@@ -196,6 +168,5 @@ class Unit10PresentReviewBaselineTest {
     companion object {
         private val root = File(if (File("app").isDirectory) "." else "..")
         private val pack by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
-        private fun hash(bytes: ByteArray) = MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
     }
 }

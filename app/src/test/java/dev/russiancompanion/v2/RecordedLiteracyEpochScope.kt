@@ -4,7 +4,6 @@ import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.v2.backup.*
 import dev.russiancompanion.v2.curriculum.*
 import kotlinx.coroutines.runBlocking
-import kotlinx.serialization.json.*
 import org.junit.Assert.*
 import java.io.ByteArrayOutputStream
 import java.io.File
@@ -68,13 +67,6 @@ internal object RecordedLiteracyEpochScope {
         fun archive(store: LocalStore): ByteArray = ByteArrayOutputStream().also {
             writeGovernedBackup(it, "dev.russiancompanion", pack.packId, pack.packVersion, "DARK", store.governedLearnerDocument(), emptyList())
         }.toByteArray()
-        fun record(value: JsonObject) {
-            System.getProperty("audit.history.output")?.let { path ->
-                require(path.startsWith("/workspace/artifacts/"))
-                val scoped = JsonObject(value + mapOf("modelCurriculumSource" to JsonPrimitive(beforeCommit),
-                    "scope" to JsonPrimitive("HISTORICAL_PRE_LITERACY_CORRECTION")))
-                File(path).appendText(scoped.toString() + "\n")
-            }
-        }
+
     }
 }

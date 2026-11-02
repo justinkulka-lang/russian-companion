@@ -36,7 +36,7 @@ import java.io.File
 @RunWith(RobolectricTestRunner::class)
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi")
-class Units35ChunkCaptureTest {
+class Units35LayoutTest {
     @get:Rule
     val compose = createComposeRule()
 
@@ -50,14 +50,14 @@ class Units35ChunkCaptureTest {
     @Test
     fun genderCardIsShortAtNormalFont() {
         openFirstGenderCard()
-        capture("unit3-gender-card-normal")
+        assertRenderedContentGutter("unit3-gender-card-normal")
     }
 
     @Test
     @Config(sdk = [33], qualifiers = "w411dp-h914dp-xxhdpi", fontScale = 2.0f)
     fun genderCardStaysInsetAtLargeFont() {
         openFirstGenderCard()
-        capture("unit3-gender-card-large-font")
+        assertRenderedContentGutter("unit3-gender-card-large-font")
     }
 
     private fun openFirstGenderCard() {
@@ -68,9 +68,7 @@ class Units35ChunkCaptureTest {
         assertEquals("TEACH", card.kind)
         assertTrue(card.body.length < 500)
         assertFalse(card.body.contains("хлеб"))
-        store.v2CompleteUnit(1, "2026-09-23T12:00")
-        store.v2CompleteUnit(2, "2026-09-23T12:00")
-        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 3))
+        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 3, startingPoint = "RESUME_FROM_BOOK"))
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithText("Course").performClick()
         compose.onNodeWithText("Unit 3 · Everyday phrases", substring = true).performScrollTo().performClick()
@@ -93,19 +91,10 @@ class Units35ChunkCaptureTest {
         }
     }
 
-    private fun capture(name: String) {
+    private fun assertRenderedContentGutter(name: String) {
         compose.waitForIdle()
         val bitmap = compose.onRoot().captureToImage().asAndroidBitmap()
         assertBitmapContentGutter(name, bitmap)
-        val destinations = listOf(File(repo(), "release/acceptance/visual-review"), File("/opt/cursor/artifacts/screenshots"))
-        for (dir in destinations) {
-            dir.mkdirs()
-            val file = File(dir, "$name.png")
-            file.outputStream().use { stream ->
-                assertTrue(name, bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream))
-            }
-            assertTrue(file.length() > 0)
-        }
     }
 
     private fun assertBitmapContentGutter(name: String, bitmap: Bitmap) {

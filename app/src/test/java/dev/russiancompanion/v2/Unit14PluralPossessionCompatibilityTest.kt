@@ -69,10 +69,6 @@ class Unit14PluralPossessionCompatibilityTest {
             }) } })
         }
         println("UNIT14_COMPILED_OBSERVATION $observation")
-        System.getProperty("audit.unit14.observation")?.let { path ->
-            require(path.startsWith("/workspace/artifacts/"));check(!File(path).exists())
-            File(path).writeText(observation.toString()+"\n")
-        }
         }
     }
 
