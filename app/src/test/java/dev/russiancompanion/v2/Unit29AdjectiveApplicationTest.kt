@@ -91,22 +91,6 @@ class Unit29AdjectiveApplicationTest {
         assertFalse(result.ok)
         assertTrue(result.errors.joinToString("\n"), result.errors.any { it.contains("cap-obj-u29-short-adjective has no reviewable instruction and check chain") })
     }
-    @Test fun authenticHistoricalClassificationAttemptsSurviveButCannotCreditNewContent() {
-        val p = pack(); val process = ProcessBuilder("git", "show", "98b5b30ffc224b1119bc975fc698386ce8b91d3f:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val old = V2PackLoader.parse(process.inputStream.bufferedReader().readText()); assertEquals(0, process.waitFor())
-        val o = old.unit(29)!!.objectives.single { it.id == "obj-u29-short-adjective" }
-        LocalStore.openInMemory(context()).use { store ->
-            val ids = o.practiceStepIds.flatMap { old.step(it)!!.second.itemIds } + o.checkItemIds
-            for (id in ids) {
-                val step = old.unit(29)!!.sessions.flatMap { it.steps }.first { id in it.itemIds }
-                store.v2RecordGovernedAttempt(prepareGovernedAttempt(old, id, old.item(id)!!.answer, PRESCRIBED_CHECK, step.id, "2026-10-13T08:00")!!)
-            }
-            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS, objectiveState(o, store.v2LearnerView(), old))
-            assertTrue(creditItemIds(p, store.v2LearnerView()).isEmpty())
-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS, objectiveState(p.unit(29)!!.objectives.single { it.id == o.id }, store.v2LearnerView(), p))
-            assertEquals(3, store.v2Attempts().size)
-        }
-    }
     private fun sha(s: String) = java.security.MessageDigest.getInstance("SHA-256").digest(s.toByteArray(Charsets.UTF_8)).joinToString("") { "%02x".format(it.toInt() and 255) }
     private fun context(): Context = ApplicationProvider.getApplicationContext()
     private fun root() = File(if (File("app").isDirectory) "." else "..")

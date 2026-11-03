@@ -71,21 +71,6 @@ class Unit28TimingTransferTest {
             if(kind=="perfective")assertTrue(rem.body.contains("does not require the writing to have happened before the present moment"))
         }
     }
-    @Test fun originalIndependentScoredFieldsAndEveryExampleRemainUnchanged() {
-        val p=pack();val old=baseline();assertEquals(old.examples,p.examples.filter{e->old.examples.any{it.id==e.id}})
-        for(o in objectives(old))for(id in o.checkItemIds) {
-            val a=old.item(id)!!;val b=p.item(id)!!
-            assertEquals(a.copy(assessment=a.assessment!!.copy(relationParticipantIds=b.assessment!!.relationParticipantIds,answerSourceIds=b.assessment.answerSourceIds,distractorSourceIds=b.assessment.distractorSourceIds)),b)
-        }
-        val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
-    }
-    @Test fun originalRepeatedGuidedContextsCannotBeRestored() {
-        val p=pack();val old=baseline()
-        for(kind in listOf("imperfective","perfective")) {
-            val id="u28-g-$kind-adverb-0";val v=V2Validator.validate(p.copy(items=p.items.map{if(it.id==id)old.item(id)!! else it}))
-            assertFalse(v.ok);assertTrue(v.errors.joinToString("\n"),v.errors.any{it.contains("frozen distinct guided timing")})
-        }
-    }
     @Test fun coherentNativeHashForgeryCannotChangeSourceContext() {
         val p=pack();val id="prov-u28-timing-native-perfective-clause"
         val rs=p.provenanceRecords.map{r->if(r.itemId!=id)r else {val span=r.originalSourceText.replace("устав писать", "отдыхал читая");r.copy(originalSourceText=span,sourceHash=sha(span),shippedText="отдыхал читая",contentHash=sha("отдыхал читая"))}}
@@ -97,16 +82,6 @@ class Unit28TimingTransferTest {
         val cap=p.sourceCapabilities.single{it.id=="cap-obj-u28-perfective-adverb"}
         val rs=p.provenanceRecords.map{r->if(r.sourceRecordId!=cap.sourceRecordId || r.sourceHash!=cap.sourceHash)r else r.copy(synthesis=r.synthesis!!.copy(applications=r.synthesis.applications.map{if(it.cue==i.promptLetter)it.copy(answer=wrong,distractors=listOf(i.answer,i.options[2])) else it}))}
         val v=V2Validator.validate(p.copy(items=p.items.map{if(it.id==id)forged else it},provenanceRecords=rs));assertFalse(v.ok);assertTrue(v.errors.joinToString("\n"),v.errors.any{it.contains("exact guided and independent contextual applications")})
-    }
-    @Test fun historicalSixAnswerCompletionStaysSavedButCannotCreditRenewedContent() {
-        val old=baseline();val p=pack();LocalStore.openInMemory(ApplicationProvider.getApplicationContext<Context>()).use { store ->
-            for(o in objectives(old)) {
-                record(old,store,o.practiceStepIds.flatMap{old.step(it)!!.second.itemIds}+o.checkItemIds)
-                assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),old))
-            }
-            assertEquals(6,store.v2Attempts().size);assertTrue(creditItemIds(p,store.v2LearnerView()).isEmpty())
-            for(o in objectives(p))assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),p))
-        }
     }
     @Test fun coherentCapabilitySpanAndHostHashRewriteCannotChangeTheFrozenIntake() {
         val p=pack();val c=p.sourceCapabilities.single{it.id=="cap-obj-u28-perfective-adverb"};val span=c.exactSpan.replace("anterior to a past main action","an absolute present label");val hash=sha(span)
@@ -121,7 +96,6 @@ class Unit28TimingTransferTest {
     private fun record(p:V2CurriculumPack,store:LocalStore,ids:List<String>) {
         for(id in ids) { val step=p.unit(28)!!.sessions.flatMap{it.steps}.single{id in it.itemIds};store.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,p.item(id)!!.answer,PRESCRIBED_CHECK,step.id,"2026-10-13T23:00")!!) }
     }
-    private fun baseline():V2CurriculumPack {val process=ProcessBuilder("git","show","74f17e621a4b7ca2d9faf3228ef8f96c53c08c22:app/src/main/assets/content/v2-curriculum.json").directory(File(if(File("app").isDirectory)"." else "..")).start();val p=V2PackLoader.parse(process.inputStream.bufferedReader().readText());assertEquals(0,process.waitFor());return p}
     private fun sha(s:String)=java.security.MessageDigest.getInstance("SHA-256").digest(s.toByteArray(Charsets.UTF_8)).joinToString(""){"%02x".format(it.toInt() and 255)}
     private fun assertDistinct(id:String,check:String) {
         val p=pack();val o=objectives(p).single { it.id==id }

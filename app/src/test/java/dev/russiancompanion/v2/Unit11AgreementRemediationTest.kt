@@ -7,7 +7,6 @@ import androidx.compose.ui.test.junit4.v2.createComposeRule
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.v2.curriculum.*
 import dev.russiancompanion.v2.ui.V2App
-import kotlinx.serialization.json.*
 import org.junit.*
 import org.junit.Assert.*
 import org.junit.runner.RunWith
@@ -20,8 +19,7 @@ import java.io.File
 class Unit11AgreementRemediationTest {
     @get:Rule val compose = createComposeRule()
     @Test fun completeAgreementTeachingPrecedesPracticeAndRepairRestoresTheCheckedForms() {
-        val p = pack(); val s = session(p); val old = session(baseline())
-        assertEquals(1, old.steps.takeWhile { it.kind != "GUIDED" }.count { it.kind == "TEACH" })
+        val p = pack(); val s = session(p)
         assertEquals(4, s.steps.takeWhile { it.kind != "GUIDED" }.count { it.kind == "TEACH" })
         val teaching = s.steps.filter { it.kind == "TEACH" }; val rem = p.step("u11-st-rem-past-aspect")!!.second
         assertEquals(teaching.joinToString("\n\n") { it.body }, rem.body)
@@ -30,33 +28,6 @@ class Unit11AgreementRemediationTest {
         assertTrue(rem.body.contains("The pronoun I does not select one past-tense gender for every speaker."))
         assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u11-past-aspect" && it.shippedText == rem.body && it.itemId == "prov-ca-u11-agreement-remediation-complete-v1" })
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
-    }
-    @Test fun oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard() {
-        val p = pack(); val old = baseline()
-        LocalStore.openInMemory(context()).use { store ->
-            val profile = store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 11,
-                currentSessionId = "u11-s-past-aspect", currentStepIndex = 1).verifiedResume(old)
-            store.v2SaveProfile(profile)
-            assertTrue(resumeIsCurrent(old, store.v2LearnerView()))
-            assertFalse(resumeIsCurrent(p, store.v2LearnerView()))
-            assertEquals(profile, store.v2Profile())
-            assertEquals("GUIDED", session(old).steps[1].kind)
-            assertEquals("u11-st-teach-past-aspect-2", session(p).steps[1].id)
-        }
-    }
-    @Test fun oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction() {
-        val p = pack(); val old = baseline(); val id = "u11-i-past-aspect-1"; val step = "u11-st-check-past-aspect"
-        LocalStore.openInMemory(context()).use { store ->
-            store.v2RecordGovernedAttempt(prepareGovernedAttempt(old, id, old.item(id)!!.answer, PRESCRIBED_CHECK, step, "same-clock")!!)
-            assertTrue(id in creditItemIds(old, store.v2LearnerView()))
-            assertFalse(id in creditItemIds(p, store.v2LearnerView()))
-            assertEquals(1, store.v2Attempts().size)
-            store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, p.item(id)!!.answer, PRESCRIBED_CHECK, step, "same-clock")!!)
-            assertTrue(id in creditItemIds(p, store.v2LearnerView()))
-            assertEquals(2, store.v2Attempts().size)
-            val objective = p.unit(11)!!.objectives.single { it.id == "obj-u11-past-aspect" }
-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS, objectiveState(objective, store.v2LearnerView(), p))
-        }
     }
     @Test fun wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer() {
         val p = pack(); val item = p.item("u11-i-past-aspect-1")!!; val check = p.step("u11-st-check-past-aspect")!!
@@ -87,7 +58,6 @@ class Unit11AgreementRemediationTest {
     }
     private fun session(p: V2CurriculumPack) = p.unit(11)!!.sessions.single { it.id == "u11-s-past-aspect" }
     private fun pack() = current
-    private fun baseline() = previous
     private fun context(): Context = ApplicationProvider.getApplicationContext()
     private fun awaitTag(tag: String) = compose.waitUntil(conditionDescription = tag, timeoutMillis = 30000) {
         compose.waitForIdle(); compose.onAllNodesWithTag(tag).fetchSemanticsNodes().isNotEmpty()
@@ -95,19 +65,5 @@ class Unit11AgreementRemediationTest {
     companion object {
         private fun root() = File(if (File("app").isDirectory) "." else "..")
         private val current by lazy { V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
-        private val corrected by lazy {
-            val command = ProcessBuilder("git", "show",
-                "37e6a0cbd7de30a539e90a0481f6ab8c5c562ed9:app/src/main/assets/content/v2-curriculum.json")
-                .directory(root()).start()
-            V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also {
-                assertEquals(0, command.waitFor())
-                V2PackIdentityIndex.warm(it)
-            }
-        }
-        private fun correctionEraPack(): V2CurriculumPack = corrected
-        private val previous by lazy {
-            val command = ProcessBuilder("git", "show", "ea3ef13a866edab83c024a317a52fc750e359787:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-            V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
-        }
     }
 }

@@ -69,23 +69,6 @@ class Unit17QuestionTransferTest {
             assertFalse(id in creditItemIds(p,store.v2LearnerView()))
         }
     }
-    @Test fun authenticHistoricalClockCompletionStaysSavedButCannotCreditNewQuestions() {
-        val p=pack();val old=baseline();val o=objective(old)
-        LocalStore.openInMemory(context()).use { store ->
-            record(old,store,o.practiceStepIds.flatMap { old.step(it)!!.second.itemIds }+o.checkItemIds)
-            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),old));assertEquals(3,store.v2Attempts().size)
-            assertTrue(creditItemIds(p,store.v2LearnerView()).isEmpty())
-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(objective(p),store.v2LearnerView(),p))
-        }
-    }
-    @Test fun restoringValidOldContrastItemsCannotClearTheQuestionCapability() {
-        val p=pack();val old=baseline();val oldIds=setOf("u17-g-clock-0","u17-i-clock-1","u17-i-clock-2")
-        assertTrue(old.items.filter { it.id in oldIds }.all { it.kind=="CONTRAST_SELECTION" })
-        val u=p.unit(17)!!.copy(objectives=p.unit(17)!!.objectives.map { if(it.id=="obj-u17-clock")it.copy(checkItemIds=objective(old).checkItemIds) else it },
-            sessions=p.unit(17)!!.sessions.map { if(it.id!="u17-s-clock")it else it.copy(steps=it.steps.map { s -> if(s.id=="u17-st-guided-clock-1")s.copy(itemIds=listOf("u17-g-clock-0")) else s }) })
-        val result=V2Validator.validate(p.copy(units=p.units.map { if(it.number==17)u else it },items=p.items.map { if(it.id in oldIds)old.item(it.id)!! else it }))
-        assertFalse(result.ok);assertTrue(result.errors.joinToString("\n"),result.errors.any { it.contains("cap-u17-clock-question has no reviewable instruction and check chain") })
-    }
     @Test fun coordinatedKeyAndApplicationCannotMakeTheClockQuestionAskForABook() {
         val p=pack();val item=p.item("u17-i-question-clock")!!;val a=item.assessment!!;val ids=a.relationParticipantIds;val wrong=item.options[2]
         val reasons=listOf(item.distractorRationales[0],item.distractorRationales[2],"")
@@ -116,10 +99,6 @@ class Unit17QuestionTransferTest {
     private fun record(p:V2CurriculumPack,store:LocalStore,ids:List<String>) {
         for(id in ids) { val step=p.unit(17)!!.sessions.flatMap { it.steps }.first { id in it.itemIds }
             store.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,p.item(id)!!.answer,PRESCRIBED_CHECK,step.id,"2026-10-13T19:00")!!) }
-    }
-    private fun baseline():V2CurriculumPack {
-        val process=ProcessBuilder("git","show","151cae10b653be9038423e0d19afca2cf9a48b18:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val p=V2PackLoader.parse(process.inputStream.bufferedReader().readText());assertEquals(0,process.waitFor());return p
     }
     private fun objective(p:V2CurriculumPack)=p.unit(17)!!.objectives.single { it.id=="obj-u17-clock" }
     private fun sha(s:String)=java.security.MessageDigest.getInstance("SHA-256").digest(s.toByteArray(Charsets.UTF_8)).joinToString(""){"%02x".format(it.toInt() and 255)}

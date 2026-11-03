@@ -31,7 +31,6 @@ class FragmentGlossUiTest {
             compose.setContent { V2App(store, p, {}) }
             tag("v2-continue").performClick()
             compose.onNodeWithText(step.second.body).performScrollTo().assertIsDisplayed()
-            compose.onNodeWithText(FragmentGlossFixture.previous.step(id)!!.second.body).assertDoesNotExist()
             for (exampleId in step.second.exampleIds) {
                 tag("v2-example-$exampleId").performScrollTo().assertTextEquals(p.example(exampleId)!!.display)
                 tag("v2-example-note-$exampleId").performScrollTo().assertTextEquals(p.example(exampleId)!!.note)

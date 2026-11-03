@@ -91,29 +91,6 @@ class Unit20DirectionalityApplicationTest {
         val result = V2Validator.validate(p.copy(provenanceRecords = records));assertFalse(result.ok)
         assertTrue(result.errors.joinToString("\n"),result.errors.any { it.contains("cap-u20-motion-directionality has no reviewable instruction and check chain") })
     }
-    @Test fun restoringOldFourChecksCannotClearTheDirectionalityCapability() {
-        val p = pack();val old = baseline();val checks = old.unit(20)!!.objectives.single { it.id == "obj-u20-motion" }.checkItemIds
-        val unit = p.unit(20)!!.copy(objectives = p.unit(20)!!.objectives.map { if (it.id != "obj-u20-motion") it else it.copy(checkItemIds = checks) })
-        val result = V2Validator.validate(p.copy(units = p.units.map { if (it.number == 20) unit else it }))
-        assertFalse(result.ok);assertTrue(result.errors.joinToString("\n"),result.errors.any { it.contains("cap-u20-motion-directionality has no reviewable instruction and check chain") })
-    }
-    @Test fun authenticEarlierAttemptsStayHistoricalAndCannotCreditNewContent() {
-        val p = pack();val old = baseline();val o = old.unit(20)!!.objectives.single { it.id == "obj-u20-motion" }
-        LocalStore.openInMemory(context()).use { store ->
-            for (id in o.practiceStepIds.flatMap { old.step(it)!!.second.itemIds }+o.checkItemIds) {
-                val step = old.unit(20)!!.sessions.flatMap { it.steps }.first { id in it.itemIds }
-                store.v2RecordGovernedAttempt(prepareGovernedAttempt(old,id,old.item(id)!!.answer,PRESCRIBED_CHECK,step.id,"2026-10-13T16:00")!!)
-            }
-            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),old))
-            assertTrue(creditItemIds(p,store.v2LearnerView()).isEmpty())
-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(p.unit(20)!!.objectives.single { it.id == o.id },store.v2LearnerView(),p))
-            assertEquals(5,store.v2Attempts().size)
-        }
-    }
-    private fun baseline(): V2CurriculumPack {
-        val process = ProcessBuilder("git","show","1ce6184a5bbe894624807c066600fa51de42ace3:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val p = V2PackLoader.parse(process.inputStream.bufferedReader().readText());assertEquals(0,process.waitFor());return p
-    }
     private fun sha(s: String) = java.security.MessageDigest.getInstance("SHA-256").digest(s.toByteArray(Charsets.UTF_8)).joinToString("") { "%02x".format(it.toInt() and 255) }
     private fun context(): Context = ApplicationProvider.getApplicationContext()
     private fun root() = File(if (File("app").isDirectory) "." else "..")

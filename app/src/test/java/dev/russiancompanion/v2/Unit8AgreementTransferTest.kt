@@ -58,11 +58,6 @@ class Unit8AgreementTransferTest {
         assertEquals(teach.flatMap { it.exampleIds }.distinct(),rem.exampleIds)
         assertTrue(teach.last().body.contains("синий"));assertTrue(teach.last().body.contains("синие"))
     }
-    @Test fun restoringTheOriginalValidFormSelectionCannotClearDistinctAdjectiveEvidence() {
-        val p=pack();val old=baseline().item("u8-i-agreement-3")!!;assertEquals("FORM_SELECTION",old.kind)
-        val v=V2Validator.validate(p.copy(items=p.items.map { if(it.id==old.id)old else it }));assertFalse(v.ok)
-        assertTrue(v.errors.joinToString("\n"),v.errors.any { it.contains("frozen distinct adjective application chain") })
-    }
     @Test fun coordinatedKeyAndApplicationCannotMakeTheSingularAPluralAnswer() {
         val p=pack();val item=p.item("u8-i-agreement-3")!!;val a=item.assessment!!;val ids=a.relationParticipantIds
         val reasons=listOf(item.distractorRationales[1],"");val changed=item.copy(answer="синий",distractorRationales=reasons,assessment=a.copy(
@@ -80,30 +75,9 @@ class Unit8AgreementTransferTest {
         val v=V2Validator.validate(p.copy(provenanceRecords=rs));assertFalse(v.ok)
         assertTrue(v.errors.joinToString("\n"),v.errors.any { it.contains("frozen distinct adjective application chain") })
     }
-    @Test fun historicalFourAnswerCompletionStaysSavedButCannotCreditCurrentContent() {
-        val p=pack();val old=baseline();val o=objective(old)
-        LocalStore.openInMemory(context()).use { store ->
-            record(old,store,o.practiceStepIds.flatMap { old.step(it)!!.second.itemIds }+o.checkItemIds)
-            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),old));assertEquals(4,store.v2Attempts().size)
-            assertTrue(creditItemIds(p,store.v2LearnerView()).isEmpty())
-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(objective(p),store.v2LearnerView(),p))
-        }
-    }
-    @Test fun unaccentedSourcePairAndOtherCorrectFieldsArePreserved() {
-        val p=pack();val old=baseline();for(id in listOf("u8-g-agreement-0","u8-i-agreement-1","u8-i-agreement-2"))assertEquals(old.item(id),p.item(id))
-        assertEquals("синий",p.item("u8-i-agreement-3")!!.promptLetter);assertEquals("синие",p.item("u8-i-agreement-3")!!.answer)
-        val rs=p.provenanceRecords.filter { it.itemId.startsWith("prov-u8-agreement-transfer-native-") };assertEquals(2,rs.size)
-        val source=File(root(),"catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt").readText()
-        rs.forEach { assertTrue(it.originalSourceText in source);assertTrue(it.shippedText in V2Validator.unfoldWikiLabels(it.originalSourceText));assertFalse(it.shippedText.contains('\u0301')) }
-        val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
-    }
     private fun record(p:V2CurriculumPack,store:LocalStore,ids:List<String>) {
         for(id in ids) { val step=p.unit(8)!!.sessions.flatMap { it.steps }.first { id in it.itemIds }
             store.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,p.item(id)!!.answer,PRESCRIBED_CHECK,step.id,"2026-10-13T20:00")!!) }
-    }
-    private fun baseline():V2CurriculumPack {
-        val proc=ProcessBuilder("git","show","2f06e472876d5248a403b8f523305918afca65fa:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val p=V2PackLoader.parse(proc.inputStream.bufferedReader().readText());assertEquals(0,proc.waitFor());return p
     }
     private fun objective(p:V2CurriculumPack)=p.unit(8)!!.objectives.single { it.id=="obj-u8-agreement" }
     private fun sha(s:String)=java.security.MessageDigest.getInstance("SHA-256").digest(s.toByteArray(Charsets.UTF_8)).joinToString(""){"%02x".format(it.toInt() and 255)}

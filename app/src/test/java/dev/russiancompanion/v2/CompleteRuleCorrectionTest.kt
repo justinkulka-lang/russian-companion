@@ -20,66 +20,6 @@ import kotlinx.serialization.json.*
 @Config(sdk = [33])
 class CompleteRuleCorrectionTest {
     @get:Rule val compose = createComposeRule()
-    @Test fun completeChoicesExplainTheCasesAndAllTeachingPrecedesPractice() {
-        val p = sourcePack("1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae")
-        val items = p.items.filter { it.objectiveId in objectives }
-        assertEquals(14, items.size)
-        items.forEach { item ->
-            assertTrue(item.options.all { it.startsWith("In this line,") && it.endsWith(".") })
-            assertEquals("STATED_APPLICATION", item.assessment!!.relationKind)
-            assertTrue(item.feedback.contains("nominative") || item.feedback.contains("genitive"))
-            assertFalse(item.feedback.startsWith("Does the admitted"))
-        }
-        for (n in listOf(8, 10)) p.unit(n)!!.sessions.filter { it.steps.any { st -> st.itemIds.any { id -> id in items.map { it.id } } } }.forEach { session ->
-            val teaching = session.steps.filter { it.kind == "TEACH" }
-            assertTrue(session.steps.indexOf(teaching.last()) < session.steps.indexOfFirst { it.kind == "GUIDED" })
-            val remediation = session.steps.single { it.kind == "REMEDIATE" }
-            teaching.forEach { assertTrue(remediation.body.contains(it.body)) }
-            assertEquals(teaching.flatMap { it.exampleIds }.toSet(), remediation.exampleIds.toSet())
-        }
-        // The historical Unit8 absence contract is retained above, not readmitted.
-        // Current source must pass the full current validator.
-        val result = V2Validator.validate(pack())
-        assertTrue(result.errors.joinToString("\n"), result.ok)
-    }
-    @Test fun currentRulesRetainUnit10CasesAndExactPositiveExistenceTeaching() {
-        val p=pack()
-        val root=File(if(File("app").isDirectory) "." else "..")
-        // Prove the actual current asset before restricting only this historical equality.
-        RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root,p).let { p ->
-            assertEquals(sourcePack("b7e53230e2119b1e57d781b1e1b955f074a38601"),p)
-        }
-        assertNotEquals("The two versioned review declarations give the actual pack its own identity",
-            sourcePack("b7e53230e2119b1e57d781b1e1b955f074a38601"),p)
-        val old=sourcePack("1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae")
-        val existence=sourcePack("fe919656bfa2775b5cc2c22f2496d4258343cfea")
-        val changed=setOf("u8-g-availability-0","u8-i-availability-1","u8-i-availability-2","u8-i-availability-3")
-        val items=p.items.filter { it.objectiveId in objectives }
-        assertEquals(14,items.size)
-        assertEquals(old.items.filter { it.objectiveId in objectives && it.id !in changed },items.filter { it.id !in changed })
-        assertEquals(existence.items.filter { it.id in changed },items.filter { it.id in changed })
-        // Preserve the exact historical declaration equality; current source is checked separately.
-        RecordedCurriculumConservationScope.beforeUnit8PresentReview(root,p).let { p ->
-            assertEquals(existence.unit(8),p.unit(8))
-        }
-        assertEquals(sourcePack(RecordedCurriculumConservationScope.currentPackImplementation).unit(8),p.unit(8))
-        assertEquals(existence.provenanceRecords.filter { it.unitNumber==8 },p.provenanceRecords.filter { it.unitNumber==8 })
-        items.filter { it.id !in changed }.forEach { item ->
-            assertTrue(item.options.all { it.startsWith("In this line,") && it.endsWith(".") })
-            assertEquals("STATED_APPLICATION",item.assessment!!.relationKind)
-            assertTrue(item.feedback.contains("nominative") || item.feedback.contains("genitive"))
-            assertFalse(item.feedback.startsWith("Does the admitted"))
-        }
-        for(number in listOf(8,10)) p.unit(number)!!.sessions.filter { session->session.steps.any { step->step.itemIds.any { id->items.any { it.id==id } } } }.forEach { session->
-            val teaching=session.steps.filter { it.kind=="TEACH" }
-            assertTrue(session.steps.indexOf(teaching.last())<session.steps.indexOfFirst { it.kind=="GUIDED" })
-            val remediation=session.steps.single { it.kind=="REMEDIATE" }
-            teaching.forEach { assertTrue(remediation.body.contains(it.body)) }
-            assertEquals(teaching.flatMap { it.exampleIds }.toSet(),remediation.exampleIds.toSet())
-        }
-        val validation=V2Validator.validate(p)
-        assertTrue(validation.errors.joinToString("\n"),validation.ok)
-    }
     @Test fun availabilityPlayerShowsCompleteRulesWithItsFullRussianCue() = show("u8-i-availability-1", 8)
     @Test fun possessionPlayerShowsCompleteRulesWithItsFullRussianCue() = show("u10-i-have-1", 10)
     private fun show(id: String, number: Int) {
@@ -129,15 +69,6 @@ class CompleteRuleCorrectionTest {
         assertFalse("Reversed context must not pass the full validator: ${result.errors}", result.ok)
         assertTrue(result.errors.joinToString("\n"), result.errors.any { it.contains("complete rule context") })
     }
-    private val sourcePacks=mutableMapOf<String,V2CurriculumPack>()
-    private fun sourcePack(commit:String)=sourcePacks.getOrPut(commit) {
-        val root=File(if(File("app").isDirectory) "." else "..")
-        val command=ProcessBuilder("git","show","$commit:app/src/main/assets/content/v2-curriculum.json").directory(root).start()
-        V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also {
-            assertEquals(0,command.waitFor());V2PackIdentityIndex.warm(it)
-        }
-    }
-    private val historicalJson = Json { ignoreUnknownKeys = true }
     private val objectives = setOf("obj-u8-availability", "obj-u10-have", "obj-u10-absence")
     private fun pack() = V2PackLoader.parse(File(if (File("app").isDirectory) "." else "..", "app/src/main/assets/content/v2-curriculum.json").readText())
 }

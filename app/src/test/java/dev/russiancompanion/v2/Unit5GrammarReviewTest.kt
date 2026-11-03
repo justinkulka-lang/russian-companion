@@ -154,9 +154,5 @@ class Unit5GrammarReviewTest {
         private const val newPolicy = "unit5-prior-gender-subject-v2"
         private val root = File(if (File("app").isDirectory) "." else "..")
         private val current by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
-        private val historical by lazy {
-            val process = ProcessBuilder("git", "show", "b869da02869840b575b7a803fdeebb27eaabb5d6:app/src/main/assets/content/v2-curriculum.json").directory(root).start()
-            V2PackLoader.parse(process.inputStream.bufferedReader().readText()).also { assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(it) }
-        }
     }
 }

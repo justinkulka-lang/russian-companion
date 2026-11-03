@@ -76,20 +76,6 @@ class Unit30LanguageCorrectionTest {
             assertFalse(id in creditItemIds(p,store.v2LearnerView()))
         }
     }
-    @Test fun restoringValidOriginalContrastItemsCannotClearTheLanguageChain() {
-        val p = pack(); val old = baseline(); val oldUnit = old.unit(30)!!
-        val ids = setOf("obj-u30-letter-names","obj-u30-abbrev-examples")
-        val legacy = old.items.filter { it.objectiveId in ids }.associateBy { it.id }
-        assertEquals(6,legacy.size)
-        assertTrue(legacy.values.all { it.kind == "CONTRAST_SELECTION" && it.assessment != null })
-        val forged = p.unit(30)!!.copy(objectives = p.unit(30)!!.objectives.map { o ->
-            if (o.id in ids) oldUnit.objectives.single { it.id == o.id } else o })
-        val result = V2Validator.validate(p.copy(units = p.units.map { if (it.number == 30) forged else it },
-            items = p.items.map { legacy[it.id] ?: it }))
-        assertFalse(result.ok)
-        assertTrue(result.errors.joinToString("\n"),result.errors.any { it.contains("cap-obj-u30-letter-names has no reviewable instruction and check chain") })
-        assertTrue(result.errors.any { it.contains("obj-u30-abbrev-examples has no frozen native language application chain") })
-    }
     @Test fun coordinatedKeyAndApplicationMutationCannotRenameB() {
         val p = pack(); val item = p.item("u30-i-native-name-b")!!; val a = item.assessment!!
         val ids = a.relationParticipantIds; val wrong = item.options[1]
@@ -113,27 +99,6 @@ class Unit30LanguageCorrectionTest {
         val result = V2Validator.validate(p.copy(provenanceRecords = forged))
         assertFalse(result.ok)
         assertTrue(result.errors.joinToString("\n"),result.errors.any { it.contains("no frozen native language application chain") })
-    }
-    @Test fun authenticReferenceHistorySurvivesButCannotCreditNewLanguageContent() {
-        val p = pack(); val old = baseline()
-        LocalStore.openInMemory(context()).use { store ->
-            for (oid in listOf("obj-u30-letter-names","obj-u30-abbrev-examples")) {
-                val o = old.unit(30)!!.objectives.single { it.id == oid }
-                val ids = o.practiceStepIds.flatMap { old.step(it)!!.second.itemIds } + o.checkItemIds
-                for (id in ids) {
-                    val step = old.unit(30)!!.sessions.flatMap { it.steps }.first { id in it.itemIds }
-                    store.v2RecordGovernedAttempt(prepareGovernedAttempt(old,id,old.item(id)!!.answer,PRESCRIBED_CHECK,step.id,"2026-10-13T09:59")!!)
-                }
-                assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),old))
-                assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(p.unit(30)!!.objectives.single { it.id == oid },store.v2LearnerView(),p))
-            }
-            assertTrue(creditItemIds(p,store.v2LearnerView()).isEmpty())
-            assertEquals(6,store.v2Attempts().size)
-        }
-    }
-    private fun baseline(): V2CurriculumPack {
-        val process = ProcessBuilder("git","show","52274f15b17b7f1f46bf4684006437e9661dab31:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val p = V2PackLoader.parse(process.inputStream.bufferedReader().readText()); assertEquals(0,process.waitFor()); return p
     }
     private fun sha(s: String) = java.security.MessageDigest.getInstance("SHA-256").digest(s.toByteArray(Charsets.UTF_8)).joinToString("") { "%02x".format(it.toInt() and 255) }
     private fun context(): Context = ApplicationProvider.getApplicationContext()

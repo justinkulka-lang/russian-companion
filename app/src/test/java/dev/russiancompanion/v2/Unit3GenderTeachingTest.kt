@@ -44,10 +44,6 @@ class Unit3GenderTeachingTest {
         val validation = V2Validator.validate(p); assertTrue(validation.errors.joinToString("\n"), validation.ok)
     }
 
-
-
-
-
     @Test fun wrongDoorAnswerRestoresTheFullContrastAndStillNeedsFreshIndependentWork() = repairUi("u3-i-gender-дверь")
     @Test fun wrongNeuterAnswerRestoresTheFullContrastAndStillNeedsFreshIndependentWork() = repairUi("u3-i-gender-море")
 
@@ -99,14 +95,5 @@ class Unit3GenderTeachingTest {
     companion object {
         private fun root() = File(if (File("app").isDirectory) "." else "..")
         private val current by lazy { V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
-        private val previous by lazy {
-            val command = ProcessBuilder("git", "show", "547457b63b317dea560e4bdc36083c1a4dce315e:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-            V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
-        }
-        private val postTeachingCorrection by lazy {
-            val command = ProcessBuilder("git", "show", "61c68cfcf20cd92a4b6c310c4abf8ff2284e36e5:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-            V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
-        }
-        internal fun preTeachingCorrectionPack(): V2CurriculumPack = previous
     }
 }

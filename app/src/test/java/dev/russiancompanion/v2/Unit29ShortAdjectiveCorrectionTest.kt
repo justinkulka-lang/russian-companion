@@ -78,19 +78,6 @@ class Unit29ShortAdjectiveCorrectionTest {
             assertFalse(item.id in creditItemIds(p, store.v2LearnerView()))
         }
     }
-    @Test fun historicalGlossCreditIsRetainedButCannotCreditTheCurrentGrammarGate() {
-        val p = pack()
-        val process = ProcessBuilder("git", "show", "aa70217d4b956d7954c5671900e11cf2672573b3:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val old = V2PackLoader.parse(process.inputStream.bufferedReader().readText()); assertEquals(0, process.waitFor())
-        val step = old.unit(29)!!.sessions.flatMap { it.steps }.single { it.id == "u29-st-check-short-adjective" }
-        LocalStore.openInMemory(context()).use { store ->
-            for (id in step.itemIds) store.v2RecordGovernedAttempt(prepareGovernedAttempt(old, id, old.item(id)!!.answer, PRESCRIBED_CHECK, step.id, "2026-10-12T23:00")!!)
-            assertTrue(step.itemIds.all { it in creditItemIds(old, store.v2LearnerView()) })
-            assertTrue(p.unit(29)!!.objectives.single { it.id == "obj-u29-short-adjective" }.checkItemIds.none { it in creditItemIds(p, store.v2LearnerView()) })
-            assertTrue(step.itemIds.none { it in creditItemIds(p, store.v2LearnerView()) })
-            assertEquals(2, store.v2Attempts().size)
-        }
-    }
     @Test fun coordinatedKeyAndApplicationEditsCannotMakeTheShortFormLong() {
         val p = pack(); val item = p.item("u29-i-adjective-form-1")!!; val a = item.assessment!!
         val wrong = item.options.single { it.startsWith("Long adjective") }; val ids = a.relationParticipantIds

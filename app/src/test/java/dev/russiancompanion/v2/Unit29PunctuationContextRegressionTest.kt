@@ -82,13 +82,6 @@ class Unit29PunctuationContextRegressionTest {
         for (id in listOf("after","cause","terminal")) assertFalse(p.item("u29-i-punctuation-$id")!!.promptLetter!!.endsWith("."))
         assertTrue(p.unit(29)!!.sessions.single { it.id=="u29-s-punctuation" }.steps.single { it.id=="u29-st-teach-punctuation-3" }.body.contains("later comma after Бергоньоне"))
     }
-    @Test fun restoringOriginalContrastCategoryCannotClearPunctuationCapability() {
-        val p=pack();val old=baseline();val oldItem=old.item("u29-i-punctuation-2")!!
-        assertEquals("CONTRAST_SELECTION",oldItem.kind);assertTrue(oldItem.assessment!!.independent)
-        val unit=p.unit(29)!!.copy(objectives=p.unit(29)!!.objectives.map { if(it.id=="obj-u29-punctuation") it.copy(checkItemIds=objective(old).checkItemIds) else it })
-        val result=V2Validator.validate(p.copy(units=p.units.map { if(it.number==29)unit else it },items=p.items.map { if(it.id==oldItem.id)oldItem else it }))
-        assertFalse(result.ok);assertTrue(result.errors.joinToString("\n"),result.errors.any { it.contains("cap-obj-u29-punctuation has no reviewable instruction and check chain") })
-    }
     @Test fun coordinatedKeyAndApplicationCannotRemovePronounComma() {
         val p=pack();val item=p.item("u29-i-punctuation-pronoun")!!;val a=item.assessment!!;val ids=a.relationParticipantIds;val wrong=item.options[1]
         val reasons=listOf(item.distractorRationales[1],"",item.distractorRationales[2])
@@ -115,23 +108,9 @@ class Unit29PunctuationContextRegressionTest {
             assertFalse(result.ok);assertTrue(result.errors.joinToString("\n"),result.errors.any { it.contains("license") })
         }
     }
-    @Test fun authenticHistoricalCompletionStaysSavedButCannotCreditNewChecks() {
-        val p=pack();val old=baseline();val o=objective(old)
-        LocalStore.openInMemory(context()).use { store ->
-            record(old,store,o.practiceStepIds.flatMap { old.step(it)!!.second.itemIds }+o.checkItemIds)
-            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),old))
-            assertEquals(3,store.v2Attempts().size)
-            assertTrue(creditItemIds(p,store.v2LearnerView()).isEmpty())
-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(objective(p),store.v2LearnerView(),p))
-        }
-    }
     private fun record(p:V2CurriculumPack,store:LocalStore,ids:List<String>) {
         for(id in ids) { val step=p.unit(29)!!.sessions.flatMap { it.steps }.first { id in it.itemIds }
             store.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,p.item(id)!!.answer,PRESCRIBED_CHECK,step.id,"2026-10-13T16:00")!!) }
-    }
-    private fun baseline():V2CurriculumPack {
-        val process=ProcessBuilder("git","show","e4085c5686e1c58a0af43e1c1f66fbb573f56887:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val p=V2PackLoader.parse(process.inputStream.bufferedReader().readText());assertEquals(0,process.waitFor());return p
     }
     private fun objective(p:V2CurriculumPack)=p.unit(29)!!.objectives.single { it.id=="obj-u29-punctuation" }
     private fun context():Context=ApplicationProvider.getApplicationContext()

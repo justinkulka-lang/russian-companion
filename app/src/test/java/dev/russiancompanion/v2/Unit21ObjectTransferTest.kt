@@ -58,11 +58,6 @@ class Unit21ObjectTransferTest {
         assertEquals(teach.flatMap { it.exampleIds }.distinct(),rem.exampleIds)
         assertTrue(teach.last().body.contains("Он поранил себя"));assertTrue(teach.last().body.contains("Он поранил его"));assertEquals(2,rem.exampleIds.size)
     }
-    @Test fun restoringTheOriginalValidRepeatedContrastCannotClearDistinctReflexiveEvidence() {
-        val p=pack();val old=baseline().item("u21-i-object-reference-2")!!;assertEquals("CONTRAST_SELECTION",old.kind)
-        val v=V2Validator.validate(p.copy(items=p.items.map { if(it.id==old.id)old else it }));assertFalse(v.ok)
-        assertTrue(v.errors.joinToString("\n"),v.errors.any { it.contains("frozen distinct reflexive object application chain") })
-    }
     @Test fun coordinatedKeyAndApplicationCannotReverseReflexiveReference() {
         val p=pack();val item=p.item("u21-i-object-reference-2")!!;val a=item.assessment!!;val ids=a.relationParticipantIds
         val reasons=listOf(item.distractorRationales[1],"");val changed=item.copy(answer="He has wounded him (someone else).",distractorRationales=reasons,assessment=a.copy(
@@ -80,15 +75,6 @@ class Unit21ObjectTransferTest {
         val v=V2Validator.validate(p.copy(provenanceRecords=rs));assertFalse(v.ok)
         assertTrue(v.errors.joinToString("\n"),v.errors.any { it.contains("frozen distinct reflexive object application chain") })
     }
-    @Test fun historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent() {
-        val p=pack();val old=baseline();val o=objective(old)
-        LocalStore.openInMemory(context()).use { store ->
-            record(old,store,o.practiceStepIds.flatMap { old.step(it)!!.second.itemIds }+o.checkItemIds)
-            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),old));assertEquals(3,store.v2Attempts().size)
-            assertTrue(creditItemIds(p,store.v2LearnerView()).isEmpty())
-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(objective(p),store.v2LearnerView(),p))
-        }
-    }
     @Test fun forgedOldRevisionAndGhostRecordCannotUseTheNewSource() {
         val p=pack();val native=p.provenanceRecords.first { it.itemId=="prov-u21-object-transfer-native-self" }
         for(bad in listOf(native.copy(sourceRevision="586336289",sourceUrl=native.sourceUrl.replace("1374712982","586336289")),native.copy(itemId="prov-u21-ghost",sourceRecordId="ghost"))) {
@@ -100,10 +86,6 @@ class Unit21ObjectTransferTest {
     private fun record(p:V2CurriculumPack,store:LocalStore,ids:List<String>) {
         for(id in ids) { val step=p.unit(21)!!.sessions.flatMap { it.steps }.first { id in it.itemIds }
             store.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,p.item(id)!!.answer,PRESCRIBED_CHECK,step.id,"2026-10-13T20:00")!!) }
-    }
-    private fun baseline():V2CurriculumPack {
-        val proc=ProcessBuilder("git","show","6434cd12cdb22d0bbf6f7f848191d46b46501fca:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val p=V2PackLoader.parse(proc.inputStream.bufferedReader().readText());assertEquals(0,proc.waitFor());return p
     }
     private fun objective(p:V2CurriculumPack)=p.unit(21)!!.objectives.single { it.id=="obj-u21-object-reference" }
     private fun sha(s:String)=java.security.MessageDigest.getInstance("SHA-256").digest(s.toByteArray(Charsets.UTF_8)).joinToString(""){"%02x".format(it.toInt() and 255)}

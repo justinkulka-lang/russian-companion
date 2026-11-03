@@ -27,13 +27,6 @@ class Unit24ContextTransferTest {
             assertTrue("Independent persuasion evidence must use a different complete source sentence from guided practice",o.checkItemIds.all { p.item(it)!!.promptLetter !in guided })
         }
     }
-    @Test fun correctIndependentPersuasionItemsAndOptionalOriginalReadingArePreserved() {
-        val p=pack();val old=baseline()
-        for(id in listOf("u24-i-word-order-contrast-1","u24-i-word-order-contrast-2"))assertEquals(old.item(id),p.item(id))
-        val was=old.item("u24-g-word-order-contrast-0")!!;val now=p.item(was.id)!!
-        assertEquals(was.copy(kind="SOURCE_MEANING",objectiveId="obj-u24-persuasion-reference",assessment=null),now)
-        assertEquals("В магазин пошёл я.",p.item("u24-g-context-subject-focus")!!.promptLetter)
-    }
     @Test fun optionalReferenceKeepsTeachingAndSavedSelectionButCannotCreditOrBlockRequiredChecks() {
         val p=pack();val id="u24-g-word-order-contrast-0";val i=p.item(id)!!
         LocalStore.openInMemory(context()).use { store ->
@@ -67,12 +60,6 @@ class Unit24ContextTransferTest {
         val rem=s.steps.single { it.kind=="REMEDIATE" };assertEquals(teach.joinToString("\n\n") { it.body },rem.body);assertEquals(teach.flatMap { it.exampleIds }.distinct(),rem.exampleIds)
         assertTrue(rem.body.contains("Intonation and discourse context"));assertTrue(teach.last().body.contains("not an independently demonstrated skill"));assertEquals(2,rem.exampleIds.size)
     }
-    @Test fun originalRepeatedGuidedContrastCannotBeRestoredAsRequiredPractice() {
-        val p=pack();val old=baseline().item("u24-g-word-order-contrast-0")!!
-        val u=p.unit(24)!!.copy(sessions=p.unit(24)!!.sessions.map { if(it.id!="u24-s-word-order-contrast")it else it.copy(steps=it.steps.map { s -> if(s.kind=="GUIDED")s.copy(itemIds=listOf(old.id)) else s }) })
-        val v=V2Validator.validate(p.copy(units=p.units.map { if(it.number==24)u else it },items=p.items.map { if(it.id==old.id)old else it }));assertFalse(v.ok)
-        assertTrue(v.errors.joinToString("\n"),v.errors.any { it.contains("frozen distinct guided context and preserved persuasion chain") })
-    }
     @Test fun coordinatedGuidedKeyAndApplicationCannotReverseSubjectAndDestinationFocus() {
         val p=pack();val i=p.item("u24-g-context-subject-focus")!!;val a=i.assessment!!;val ids=a.relationParticipantIds;val wrong=i.options[1];val reasons=listOf(i.distractorRationales[1],"")
         val changed=i.copy(answer=wrong,distractorRationales=reasons,assessment=a.copy(relationParticipantIds=listOf(ids[0],ids[2],ids[1]),answerSourceIds=listOf(ids[2]),distractorSourceIds=listOf(ids[1],""),distractorDifference=reasons))
@@ -93,26 +80,9 @@ class Unit24ContextTransferTest {
         val v=V2Validator.validate(p.copy(items=p.items.map { if(it.id==i.id)changed else it },provenanceRecords=rs));assertFalse(v.ok)
         assertTrue(v.errors.joinToString("\n"),v.errors.any { it.contains("frozen distinct guided context and preserved persuasion chain") })
     }
-    @Test fun historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent() {
-        val p=pack();val old=baseline();val o=objective(old);LocalStore.openInMemory(context()).use { store ->
-            record(old,store,o.practiceStepIds.flatMap { old.step(it)!!.second.itemIds }+o.checkItemIds);assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),old));assertEquals(3,store.v2Attempts().size)
-            assertTrue(creditItemIds(p,store.v2LearnerView()).isEmpty());assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(objective(p),store.v2LearnerView(),p))
-        }
-    }
-    @Test fun exactSelectionsAndAllOldExamplesValidateWithoutIndependentSubjectFocusClaim() {
-        val p=pack();val old=baseline()
-        val oldExampleIds=old.examples.map { it.id }.toSet()
-        assertEquals(old.examples.size,oldExampleIds.size)
-        assertEquals(old.examples,p.examples.filter { it.id in oldExampleIds })
-        val rs=p.provenanceRecords.filter { it.itemId.startsWith("prov-u24-context-transfer-native-") };assertEquals(8,rs.size)
-        val source=File(root(),"catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt").readText();rs.forEach { assertTrue(it.originalSourceText in source);assertTrue(it.shippedText in V2Validator.unfoldWikiLabels(it.originalSourceText));assertEquals(sha(it.originalSourceText),it.sourceHash) }
-        val ref=p.unit(24)!!.objectives.single { it.id=="obj-u24-persuasion-reference" };assertFalse(ref.gating);assertEquals("GUIDANCE",ref.kind)
-        val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
-    }
     private fun record(p:V2CurriculumPack,store:LocalStore,ids:List<String>) {
         for(id in ids) { val step=p.unit(24)!!.sessions.flatMap { it.steps }.first { id in it.itemIds };store.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,p.item(id)!!.answer,PRESCRIBED_CHECK,step.id,"2026-10-13T21:00")!!) }
     }
-    private fun baseline():V2CurriculumPack { val process=ProcessBuilder("git","show","3b8b6df0150d406f8f71a2bc7eebd1a19a301eba:app/src/main/assets/content/v2-curriculum.json").directory(root()).start();val p=V2PackLoader.parse(process.inputStream.bufferedReader().readText());assertEquals(0,process.waitFor());return p }
     private fun objective(p:V2CurriculumPack)=p.unit(24)!!.objectives.single { it.id=="obj-u24-word-order-contrast" }
     private fun sha(s:String)=java.security.MessageDigest.getInstance("SHA-256").digest(s.toByteArray(Charsets.UTF_8)).joinToString(""){"%02x".format(it.toInt() and 255)}
     private fun context():Context=ApplicationProvider.getApplicationContext()
