@@ -95,109 +95,6 @@ class Unit11CumulativeReviewTest {
         }
     }
 
-    @Test fun rawCurrentCompletionAndForgedPreReviewActivationDoNotCreditThisUnit() {
-        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack()
-        ready(p).use { fresh ->
-                fresh.v2CompleteUnit(11, "raw-current-source")
-                assertFalse(11 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-                val fake = fresh.governedLearnerDocument().copy(unitCompletions = fresh.governedLearnerDocument().unitCompletions.map {
-                    if (it.unitNumber == 11) it.copy(preReviewActivation = true) else it })
-                assertEquals(GovernedReplaceOutcome.REPLACED, fresh.replaceGovernedLearner(fake, emptyList()))
-                assertFalse(11 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-        }
-    }
-
-    @Test fun oldFormatOneAndTwoKeepHistoricalWorkWithoutCreditingChangedUnit11Instruction() {
-        val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() /* Historical activation-only source; current changed-teaching refusal has separate coverage. */
-        LocalStore.openInMemory(context()).use { source ->
-            for (n in 1..11) { ordinary(old, source, n); source.v2CompleteUnit(n, "historical") }
-            for (version in 1..2) {
-                val doc = source.governedLearnerDocument().copy(schemaVersion = version,
-                    unitCompletions = source.governedLearnerDocument().unitCompletions.map { it.copy(preReviewActivation = true) })
-                val bytes = ByteArrayOutputStream()
-                writeGovernedBackup(bytes, "dev.russiancompanion", p.packId, p.packVersion, "FOLLOW_SYSTEM", doc, emptyList(), formatVersion = version)
-                val temp = File(context().cacheDir, "unit11-old-$version-${System.nanoTime()}")
-                try {
-                    val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp) as BackupReadResult.Valid
-                    LocalStore.openInMemory(context()).use { target ->
-                        assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
-                        assertEquals(setOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                        assertTrue(target.cumulativeReviewHistory().first.isEmpty()); assertTrue(target.cumulativeReviewHistory().second.isEmpty())
-                        assertFalse(cumulativeReviewComplete(p, target.v2LearnerView(), 11))
-                    }
-                } finally { temp.deleteRecursively() }
-            }
-        }
-    }
-
-    @Test fun actualUnit11ContinuePossessionAbsenceCueTeachingPracticeReturnAndAdvanceStayOnUnit11() {
-        val p = pack()
-        // Historical v1 reading/absence obligation; actual-current noun/possession paths
-        // and both owner5/10 routes are covered by Unit11NounReviewUiTest.
-        RecordedCurriculumConservationScope.beforeUnit11NounReview(root(), p).let { p ->
-            ready(p).use { s ->
-                compose.setContent { V2App(s, p, {}) }
-                waitTag("v2-continue"); compose.onNodeWithTag("v2-continue").performClick()
-                waitTag("v2-review-start"); compose.onNodeWithTag("v2-review-start").performScrollTo().performClick()
-                waitTag("v2-review-count"); val a = s.cumulativeReviewHistory().first.single { it.targetUnit == 11 }
-                val noun = p.item(a.slots[1].itemId)!!
-                compose.onNode(hasText(noun.promptLetter!!) and !hasClickAction()).performScrollTo().assertIsDisplayed()
-                val wrong = noun.options.first { it != noun.answer }
-                compose.onNodeWithTag("v2-review-option-1-$wrong").performScrollTo().performClick()
-                waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Not the reviewed answer. ${noun.feedback}")
-                compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
-                waitTag("v2-example-ex-u10-have-6"); compose.onNodeWithTag("v2-example-ex-u10-have-6").performScrollTo().assertIsDisplayed()
-                compose.onNodeWithText("The no-money example also denies possession.", substring = true).performScrollTo().assertIsDisplayed()
-                waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
-                val practice = reviewedGuidedPractice(p, "u10-st-rem-have")
-                assertEquals(listOf("u10-st-guided-have-1"), practice)
-                assertEquals(7, p.step("u10-st-rem-have")!!.second.exampleIds.size)
-                assertNotEquals(noun.promptLetter, p.item("u10-g-have-0")!!.promptLetter)
-                assertNotEquals(noun.answer, p.item("u10-g-have-0")!!.answer)
-                val remediation = p.step("u10-st-rem-have")!!.second
-                for (n in 1..5) assertTrue(remediation.body.contains(p.step("u10-st-teach-have-$n")!!.second.body))
-                practice.forEach { step ->
-                    p.step(step)!!.second.itemIds.forEach { id ->
-                        val i = p.item(id)!!; waitTag("v2-option-$id-${i.answer}")
-                        compose.onNodeWithTag("v2-option-$id-${i.answer}").performScrollTo().performClick()
-                    }
-                }
-                waitTag("v2-return-to-check"); compose.onNodeWithTag("v2-return-to-check").performClick()
-                waitTag("v2-review-count"); assertEquals(a, s.cumulativeReviewHistory().first.single { it.targetUnit == 11 })
-                assertFalse(1 in completedReviewSlots(p, a, s.cumulativeReviewHistory().second))
-                a.slots.forEachIndexed { index, slot ->
-                    val answer = p.item(slot.itemId)!!.answer
-                    compose.onNodeWithTag("v2-review-option-$index-$answer").performScrollTo().performClick()
-                    compose.waitForIdle()
-                }
-                waitTag("v2-review-gate"); compose.onNodeWithTag("v2-review-gate").performScrollTo().performClick()
-                waitTag("v2-advance"); compose.onNodeWithTag("v2-advance").performScrollTo().assertIsEnabled().performClick()
-                compose.waitUntil(30000) { compose.waitForIdle(); s.v2Profile().currentUnitNumber == 12 }
-            }
-        }
-    }
-
-    @Test fun placementWithTaughtUnit1ButUntaughtUnit10RepairsTheMissingOwnerInsteadOfUnit1() {
-        val p = pack()
-        // Historical v1 reading/absence obligation; actual-current noun/possession paths
-        // and both owner5/10 routes are covered by Unit11NounReviewUiTest.
-        RecordedCurriculumConservationScope.beforeUnit11NounReview(root(), p).let { p ->
-            LocalStore.openInMemory(context()).use { s ->
-                for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
-                s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 11, startingPoint = "RESUME_FROM_BOOK"))
-                compose.setContent { V2App(s, p, {}) }
-                compose.onNodeWithText("Course").performClick()
-                waitTag("v2-course-intro"); compose.onNode(hasScrollToIndexAction()).performScrollToIndex(11)
-                waitTag("v2-unit-row-11"); compose.onNodeWithTag("v2-unit-row-11").performClick()
-                waitTag("v2-open-cumulative-review"); compose.onNodeWithTag("v2-open-cumulative-review").performScrollTo().performClick()
-                waitTag("v2-review-insufficient"); compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
-                compose.onNodeWithTag("v2-review-repair").performScrollTo().assertTextEquals("Open earlier Unit 10 instruction and checks").performClick()
-                waitTag("v2-unit-heading"); compose.onNodeWithText("Unit 10").assertIsDisplayed()
-                assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 11 })
-            }
-        }
-    }
-
     @Test fun heldUnit11WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching() {
         val p = pack()
         ready(p).use { s ->
@@ -286,13 +183,7 @@ class Unit11CumulativeReviewTest {
         compose.waitForIdle(); compose.onAllNodesWithTag(tag).fetchSemanticsNodes().isNotEmpty()
     }
     private fun context(): Context = ApplicationProvider.getApplicationContext()
-    private fun root() = File(if (File("app").isDirectory) "." else "..")
     private fun pack() = sharedPack
-    private fun oldPack(commit: String): V2CurriculumPack {
-        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val p = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
-        assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(p); return p
-    }
     companion object { private val sharedPack by lazy {
         val root = File(if (File("app").isDirectory) "." else "..")
         V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) }

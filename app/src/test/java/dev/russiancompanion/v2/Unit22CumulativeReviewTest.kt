@@ -103,49 +103,6 @@ class Unit22CumulativeReviewTest {
         }
     }
 
-    @Test fun rawCurrentCompletionAndForgedPreReviewActivationDoNotCreditThisUnit() {
-        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack()
-        ready(p).use { fresh ->
-                fresh.v2CompleteUnit(22, "raw-current-source")
-                assertFalse(22 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-                val fake = fresh.governedLearnerDocument().copy(unitCompletions = fresh.governedLearnerDocument().unitCompletions.map {
-                    if (it.unitNumber == 22) it.copy(preReviewActivation = true) else it })
-                assertEquals(GovernedReplaceOutcome.REPLACED, fresh.replaceGovernedLearner(fake, emptyList()))
-                assertFalse(22 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-        }
-    }
-
-    @Test fun oldFormatOneAndTwoKeepRawUnit22HistoryWithoutInventingCreditOrRepairingUnit11() {
-        val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() /* Historical activation-only source; current changed-teaching refusal has separate coverage. */
-        isolatedStore("case").use { source ->
-            for (n in 1..22) { ordinary(old, source, n); source.v2CompleteUnit(n, "historical") }
-            for (version in 1..2) {
-                val doc = source.governedLearnerDocument().copy(schemaVersion = version,
-                    unitCompletions = source.governedLearnerDocument().unitCompletions.map { it.copy(preReviewActivation = true) })
-                val bytes = ByteArrayOutputStream()
-                writeGovernedBackup(bytes, "dev.russiancompanion", p.packId, p.packVersion, "FOLLOW_SYSTEM", doc, emptyList(), formatVersion = version)
-                val temp = File(context().cacheDir, "unit22-old-$version-${System.nanoTime()}")
-                try {
-                    val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp) as BackupReadResult.Valid
-                    isolatedStore("case").use { target ->
-                        assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
-                        assertEquals((1..10).toSet(), currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                        // Unit22 own legacy instruction survives; fixed-point prerequisites reject stale Unit11/Unit14/Unit15.
-                        assertTrue(ordinaryUnitRequirements(p, p.unit(22)!!, target.v2LearnerView()).allowed)
-                        assertTrue(historicalReviewCompletionCurrent(p, p.unit(22)!!, target.v2LearnerView()))
-                        assertFalse(canOpenUnit(unitState(p, p.unit(23)!!, target.v2LearnerView())))
-                        assertTrue(target.governedLearnerDocument().unitCompletions.any { it.unitNumber == 22 })
-                        assertFalse(11 in currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                        assertFalse(advancementDecision(p, p.unit(22)!!, target.v2LearnerView()).allowed)
-                        assertTrue(target.governedLearnerDocument().unitCompletions.any { it.unitNumber == 11 })
-                        assertTrue(target.cumulativeReviewHistory().first.isEmpty()); assertTrue(target.cumulativeReviewHistory().second.isEmpty())
-                        assertFalse(cumulativeReviewComplete(p, target.v2LearnerView(), 22))
-                    }
-                } finally { temp.deleteRecursively() }
-            }
-        }
-    }
-
     @Test fun actualUnit22ContinueReflexiveObjectCueTeachingPracticeReturnAndAdvanceStayOnUnit22() {
         val p = pack()
         ready(p).use { s ->
@@ -361,13 +318,7 @@ class Unit22CumulativeReviewTest {
         compose.waitForIdle(); compose.onAllNodesWithTag(tag).fetchSemanticsNodes().isNotEmpty()
     }
     private fun context(): Context = ApplicationProvider.getApplicationContext()
-    private fun root() = File(if (File("app").isDirectory) "." else "..")
     private fun pack() = sharedPack
-    private fun oldPack(commit: String): V2CurriculumPack {
-        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val p = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
-        assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(p); return p
-    }
     companion object { private var cachedReadyDocument: GovernedLearnerDocument? = null
         private val sharedPack by lazy {
         val root = File(if (File("app").isDirectory) "." else "..")

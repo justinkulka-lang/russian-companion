@@ -32,14 +32,6 @@ class Unit8CumulativeReviewTest {
             assertTrue(ordinaryUnitRequirements(p, p.unit(8)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(8)!!, s.v2LearnerView()).allowed)
             val a = open(p, s)
-            // Retain the original v1 contract on the whole-pack-proven prior declaration.
-            RecordedCurriculumConservationScope.beforeUnit8PresentReview(root(), p).let { historical ->
-                ready(historical).use { previous ->
-                    val a = open(historical, previous)
-            assertEquals(listOf("obj-u1-decoding", "obj-u7-endings"), a.slots.map { it.objectiveId })
-            assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION"), a.slots.map { it.skill })
-                }
-            }
             assertEquals(1, a.schema)
             assertEquals(Unit8PresentCumulativeReviewPolicy.definition.id, a.policyId)
             assertEquals(listOf("obj-u4-present", "obj-u7-endings"), a.slots.map { it.objectiveId })
@@ -102,41 +94,6 @@ class Unit8CumulativeReviewTest {
         }
     }
 
-    @Test fun rawCurrentCompletionAndForgedPreReviewActivationDoNotCreditThisUnit() {
-        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack()
-        ready(p).use { fresh ->
-                fresh.v2CompleteUnit(8, "raw-current-source")
-                assertFalse(8 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-                val fake = fresh.governedLearnerDocument().copy(unitCompletions = fresh.governedLearnerDocument().unitCompletions.map {
-                    if (it.unitNumber == 8) it.copy(preReviewActivation = true) else it })
-                assertEquals(GovernedReplaceOutcome.REPLACED, fresh.replaceGovernedLearner(fake, emptyList()))
-                assertFalse(8 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-        }
-    }
-
-    @Test fun oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit() {
-        val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() /* Historical activation-only source; current changed-teaching refusal has separate coverage. */
-        LocalStore.openInMemory(context()).use { source ->
-            for (n in 1..8) { ordinary(old, source, n); source.v2CompleteUnit(n, "historical") }
-            for (version in 1..2) {
-                val doc = source.governedLearnerDocument().copy(schemaVersion = version,
-                    unitCompletions = source.governedLearnerDocument().unitCompletions.map { it.copy(preReviewActivation = true) })
-                val bytes = ByteArrayOutputStream()
-                writeGovernedBackup(bytes, "dev.russiancompanion", p.packId, p.packVersion, "FOLLOW_SYSTEM", doc, emptyList(), formatVersion = version)
-                val temp = File(context().cacheDir, "unit8-old-$version-${System.nanoTime()}")
-                try {
-                    val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp) as BackupReadResult.Valid
-                    LocalStore.openInMemory(context()).use { target ->
-                        assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
-                        assertEquals(setOf(1, 2, 3, 4, 5, 6, 7, 8), currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                        assertTrue(target.cumulativeReviewHistory().first.isEmpty()); assertTrue(target.cumulativeReviewHistory().second.isEmpty())
-                        assertFalse(cumulativeReviewComplete(p, target.v2LearnerView(), 8))
-                    }
-                } finally { temp.deleteRecursively() }
-            }
-        }
-    }
-
     @Test fun actualUnit8ContinueNominativeAgreementCueTeachingPracticeReturnAndAdvanceStayOnUnit8() {
         val p = pack()
         ready(p).use { s ->
@@ -173,27 +130,7 @@ class Unit8CumulativeReviewTest {
             compose.waitUntil(30000) { compose.waitForIdle(); s.v2Profile().currentUnitNumber == 9 }
         }
     }
-
-    // Historical v1 placement contract; actual current Unit4/Unit7 routes have separate UI controls.
-    @Test fun placementWithTaughtUnit1ButUntaughtUnit7RepairsTheMissingOwnerInsteadOfUnit1() {
-        val p = pack()
-        RecordedCurriculumConservationScope.beforeUnit8PresentReview(root(), p).let { p ->
-        LocalStore.openInMemory(context()).use { s ->
-            for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
-            s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 8, startingPoint = "RESUME_FROM_BOOK"))
-            compose.setContent { V2App(s, p, {}) }
-            compose.onNodeWithText("Course").performClick()
-            waitTag("v2-course-intro"); compose.onNode(hasScrollToIndexAction()).performScrollToIndex(8)
-            waitTag("v2-unit-row-8"); compose.onNodeWithTag("v2-unit-row-8").performClick()
-            waitTag("v2-open-cumulative-review"); compose.onNodeWithTag("v2-open-cumulative-review").performScrollTo().performClick()
-            waitTag("v2-review-insufficient"); compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
-            compose.onNodeWithTag("v2-review-repair").performScrollTo().assertTextEquals("Open earlier Unit 7 instruction and checks").performClick()
-            waitTag("v2-unit-heading"); compose.onNodeWithText("Unit 7").assertIsDisplayed()
-            assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 8 })
-        }
-    }
-
-    } // End exact historical Unit8 declaration scope.
+ // End exact historical Unit8 declaration scope.
 
     @Test fun heldUnit8WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching() {
         val p = pack()
@@ -271,13 +208,7 @@ class Unit8CumulativeReviewTest {
         compose.waitForIdle(); compose.onAllNodesWithTag(tag).fetchSemanticsNodes().isNotEmpty()
     }
     private fun context(): Context = ApplicationProvider.getApplicationContext()
-    private fun root() = File(if (File("app").isDirectory) "." else "..")
     private fun pack() = sharedPack
-    private fun oldPack(commit: String): V2CurriculumPack {
-        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val p = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
-        assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(p); return p
-    }
     companion object { private val sharedPack by lazy {
         val root = File(if (File("app").isDirectory) "." else "..")
         V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) }

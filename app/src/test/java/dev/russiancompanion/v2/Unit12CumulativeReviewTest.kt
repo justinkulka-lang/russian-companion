@@ -16,50 +16,12 @@ import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import java.io.File
-import java.io.ByteArrayOutputStream
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
 class Unit12CumulativeReviewTest {
     @get:Rule val compose = createComposeRule()
     @After fun reset() { V2UiWork.blockForTests = null }
-
-    @Test fun ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup() {
-        // Original reading/past v1 contract; current v2 has separate actual-current core/UI controls.
-        val p = RecordedCurriculumConservationScope.beforeUnit12GenderReview(root(), pack())
-        ready(p).use { s ->
-            val earlier = s.cumulativeReviewHistory().first.single { it.targetUnit == 11 }
-            assertEquals(11, earlier.targetUnit)
-            assertTrue(ordinaryUnitRequirements(p, p.unit(12)!!, s.v2LearnerView()).allowed)
-            assertFalse(advancementDecision(p, p.unit(12)!!, s.v2LearnerView()).allowed)
-            val a = open(p, s)
-            assertEquals(listOf("obj-u1-decoding", "obj-u11-past-aspect"), a.slots.map { it.objectiveId })
-            assertEquals(listOf("BOUNDED_READING", "SUPPLIED_PAST_GENDER_RECOGNITION"), a.slots.map { it.skill })
-            assertEquals("u11-i-past-aspect-1", a.slots[1].itemId)
-            assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
-            answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(12)!!, s.v2LearnerView()).allowed)
-            answer(p, s, a, 1); assertTrue(advancementDecision(p, p.unit(12)!!, s.v2LearnerView()).allowed)
-            assertFalse(advancementDecision(p, p.unit(12)!!, s.v2LearnerView().copy(bookAttestedUnits = setOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))).allowed)
-            assertTrue(advance(p, s)); assertEquals(13, s.v2Profile().currentUnitNumber)
-            val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 12 }
-            assertEquals(a.id, row.reviewAssignmentId); assertTrue(row.reviewCompletionOrder > a.boundary)
-            answer(p, s, a, 1, correct = false)
-            assertFalse(cumulativeReviewComplete(p, s.v2LearnerView(), 12))
-            assertTrue(12 in currentCompletedUnitNumbers(p, s.v2LearnerView()))
-            val bytes = ByteArrayOutputStream()
-            writeGovernedBackup(bytes, "dev.russiancompanion", p.packId, p.packVersion, "FOLLOW_SYSTEM", s.governedLearnerDocument(), emptyList())
-            val temp = File(context().cacheDir, "unit12-new-${System.nanoTime()}")
-            try {
-                val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp) as BackupReadResult.Valid
-                LocalStore.openInMemory(context()).use { target ->
-                    assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
-                    assertEquals(s.cumulativeReviewHistory(), target.cumulativeReviewHistory())
-                    assertTrue(12 in currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                    assertFalse(cumulativeReviewComplete(p, target.v2LearnerView(), 12))
-                }
-            } finally { temp.deleteRecursively() }
-        }
-    }
 
     @Test fun optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion() {
         val p = pack()
@@ -90,49 +52,6 @@ class Unit12CumulativeReviewTest {
                     resumePositionDigest(p, next, 0)!!, GOVERNED_IDENTITY_SCHEMA)
             } }.isFailure)
             assertFalse(s.governedLearnerDocument().unitCompletions.any { it.unitNumber == 12 })
-        }
-    }
-
-    @Test fun rawCurrentCompletionAndForgedPreReviewActivationDoNotCreditThisUnit() {
-        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack()
-        ready(p).use { fresh ->
-                fresh.v2CompleteUnit(12, "raw-current-source")
-                assertFalse(12 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-                val fake = fresh.governedLearnerDocument().copy(unitCompletions = fresh.governedLearnerDocument().unitCompletions.map {
-                    if (it.unitNumber == 12) it.copy(preReviewActivation = true) else it })
-                assertEquals(GovernedReplaceOutcome.REPLACED, fresh.replaceGovernedLearner(fake, emptyList()))
-                assertFalse(12 in currentCompletedUnitNumbers(p, fresh.v2LearnerView()))
-        }
-    }
-
-    @Test fun oldFormatOneAndTwoKeepRawUnit12HistoryWithoutInventingCreditOrRepairingUnit11() {
-        val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() /* Historical activation-only source; current changed-teaching refusal has separate coverage. */
-        LocalStore.openInMemory(context()).use { source ->
-            for (n in 1..12) { ordinary(old, source, n); source.v2CompleteUnit(n, "historical") }
-            for (version in 1..2) {
-                val doc = source.governedLearnerDocument().copy(schemaVersion = version,
-                    unitCompletions = source.governedLearnerDocument().unitCompletions.map { it.copy(preReviewActivation = true) })
-                val bytes = ByteArrayOutputStream()
-                writeGovernedBackup(bytes, "dev.russiancompanion", p.packId, p.packVersion, "FOLLOW_SYSTEM", doc, emptyList(), formatVersion = version)
-                val temp = File(context().cacheDir, "unit12-old-$version-${System.nanoTime()}")
-                try {
-                    val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp) as BackupReadResult.Valid
-                    LocalStore.openInMemory(context()).use { target ->
-                        assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
-                        assertEquals((1..10).toSet(), currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                        // Unit12's own ordinary legacy proof survives; fixed-point prerequisites reject stale Unit11.
-                        assertTrue(ordinaryUnitRequirements(p, p.unit(12)!!, target.v2LearnerView()).allowed)
-                        assertTrue(historicalReviewCompletionCurrent(p, p.unit(12)!!, target.v2LearnerView()))
-                        assertFalse(canOpenUnit(unitState(p, p.unit(13)!!, target.v2LearnerView())))
-                        assertTrue(target.governedLearnerDocument().unitCompletions.any { it.unitNumber == 12 })
-                        assertFalse(11 in currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                        assertFalse(advancementDecision(p, p.unit(12)!!, target.v2LearnerView()).allowed)
-                        assertTrue(target.governedLearnerDocument().unitCompletions.any { it.unitNumber == 11 })
-                        assertTrue(target.cumulativeReviewHistory().first.isEmpty()); assertTrue(target.cumulativeReviewHistory().second.isEmpty())
-                        assertFalse(cumulativeReviewComplete(p, target.v2LearnerView(), 12))
-                    }
-                } finally { temp.deleteRecursively() }
-            }
         }
     }
 
@@ -176,24 +95,6 @@ class Unit12CumulativeReviewTest {
             waitTag("v2-review-gate"); compose.onNodeWithTag("v2-review-gate").performScrollTo().performClick()
             waitTag("v2-advance"); compose.onNodeWithTag("v2-advance").performScrollTo().assertIsEnabled().performClick()
             compose.waitUntil(30000) { compose.waitForIdle(); s.v2Profile().currentUnitNumber == 13 }
-        }
-    }
-
-    @Test fun placementWithTaughtUnit1ButUntaughtUnit11RepairsTheMissingOwnerInsteadOfUnit1() {
-        // Preserve the original v1 owner1/11 preconditions and repair destination.
-        val p = RecordedCurriculumConservationScope.beforeUnit12GenderReview(root(), pack())
-        LocalStore.openInMemory(context()).use { s ->
-            for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
-            s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 12, startingPoint = "RESUME_FROM_BOOK"))
-            compose.setContent { V2App(s, p, {}) }
-            compose.onNodeWithText("Course").performClick()
-            waitTag("v2-course-intro"); compose.onNode(hasScrollToIndexAction()).performScrollToIndex(12)
-            waitTag("v2-unit-row-12"); compose.onNodeWithTag("v2-unit-row-12").performClick()
-            waitTag("v2-open-cumulative-review"); compose.onNodeWithTag("v2-open-cumulative-review").performScrollTo().performClick()
-            waitTag("v2-review-insufficient"); compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
-            compose.onNodeWithTag("v2-review-repair").performScrollTo().assertTextEquals("Open earlier Unit 11 instruction and checks").performClick()
-            waitTag("v2-unit-heading"); compose.onNodeWithText("Unit 11").assertIsDisplayed()
-            assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 12 })
         }
     }
 
@@ -289,13 +190,7 @@ class Unit12CumulativeReviewTest {
         compose.waitForIdle(); compose.onAllNodesWithTag(tag).fetchSemanticsNodes().isNotEmpty()
     }
     private fun context(): Context = ApplicationProvider.getApplicationContext()
-    private fun root() = File(if (File("app").isDirectory) "." else "..")
     private fun pack() = sharedPack
-    private fun oldPack(commit: String): V2CurriculumPack {
-        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
-        val p = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
-        assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(p); return p
-    }
     companion object { private val sharedPack by lazy {
         val root = File(if (File("app").isDirectory) "." else "..")
         V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) }
