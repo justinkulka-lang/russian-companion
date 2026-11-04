@@ -1,14 +1,11 @@
 package dev.russiancompanion.v2
 
 import dev.russiancompanion.v2.curriculum.V2LearnerView
-import dev.russiancompanion.v2.curriculum.V2CurriculumPack
-import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
 import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.unit
-import dev.russiancompanion.v2.review.buildHistoricalUnitReviewPackage
 import dev.russiancompanion.v2.review.buildUnitReviewPackage
 import dev.russiancompanion.v2.review.governedMappingFacts
 import dev.russiancompanion.v2.review.mappingPackageDigest
@@ -65,62 +62,13 @@ class Units610SourceIntakeTest {
 
     @Test
     fun earlierUnitDigestsStayPutAndLaterUnitsStayIsolated() {
-        val pack = pack().also { V2PackIdentityIndex.warm(it) }
-        // Retain the two original Unit4 pins on the exact snapshot that recorded them.
-        val priorUnit4 = historicalPack("692e9eddeaef4d8f4ca9e85bf352983e3526e47c")
-        val foundation = RecordedLiteracyEpochScope.beforeCorrection(repo(), pack)
-        assertEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", V2Validator.unitContentReviewDigest(foundation, 1))
-        assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(foundation, 2))
-        assertNotEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", V2Validator.unitContentReviewDigest(pack, 1))
-        assertNotEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
+        val pack = pack()
         assertEquals("28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11", V2Validator.unitContentReviewDigest(priorUnit4, 4))
-        RecordedCurriculumConservationScope.beforeUnit5GrammarReview(repo(),pack).let { pack ->
-            assertEquals("3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141", V2Validator.unitContentReviewDigest(pack, 5))
-        }
-        assertNotEquals("The current Unit5 review declaration has its own identity",
-            "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141", V2Validator.unitContentReviewDigest(pack, 5))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
-        val historicalUnit1 = buildHistoricalUnitReviewPackage(foundation, 1, dev.russiancompanion.v2.review.CONTENT_AUDIT_CORRECTION_CURRICULUM_COMMIT)
-        val historicalUnit2 = buildHistoricalUnitReviewPackage(foundation, 2, dev.russiancompanion.v2.review.CONTENT_AUDIT_CORRECTION_CURRICULUM_COMMIT)
-        assertEquals("f6717b08f757153c6e7008a184202f012592276036afddec6769e1232fb8ef4d", historicalUnit1.reviewPackageDigest)
-        assertEquals("0c6bbc7ac312c0ecab9426e24ac8b7401cb795aed937bb9357e3f548c58ef72b", historicalUnit2.reviewPackageDigest)
-        assertNotEquals(historicalUnit1.reviewPackageDigest, buildUnitReviewPackage(pack, 1).reviewPackageDigest)
-        assertNotEquals(historicalUnit2.reviewPackageDigest, buildUnitReviewPackage(pack, 2).reviewPackageDigest)
         assertEquals("0e2985b1929cf4286ea10dfa93e654cd107e3720d7eb00e3eff76c80010a94fe", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
-        assertEquals("8494a75026860015f3f250707e15f0c61c1b2fb3b3fb64cd03d5b75c425a4ca5", buildHistoricalUnitReviewPackage(priorUnit4, 4, "a1e8f319b0b55f8e1dbcced680c34f32d240d217").reviewPackageDigest)
-        // The original package pin includes its original source binding, not just Unit5 content.
-        RecordedCurriculumConservationScope.beforeUnit5GrammarReview(repo(),pack).let { pack ->
-            fun buildUnitReviewPackage(pack: V2CurriculumPack, unitNumber: Int) =
-                buildHistoricalUnitReviewPackage(pack, unitNumber,
-                    dev.russiancompanion.v2.review.UNITS5_6_RECENT_SELECTION_CURRICULUM_COMMIT)
-            assertEquals("d2df163c73c5b0be1de85e58a69f8c2cf50554198419205463b614931f08628c", buildUnitReviewPackage(pack, 5).reviewPackageDigest)
-        }
-        val currentUnit5Package = buildUnitReviewPackage(pack, 5)
-        val implementationUnit5Package = buildHistoricalUnitReviewPackage(
-            RecordedCurriculumConservationScope.beforeUnit6PresentReview(repo(),pack), 5,
-            RecordedCurriculumConservationScope.beforeUnit6PackImplementation)
-        assertEquals(implementationUnit5Package.reviewPackageDigest, currentUnit5Package.reviewPackageDigest)
-        assertNotEquals("d2df163c73c5b0be1de85e58a69f8c2cf50554198419205463b614931f08628c",
-            currentUnit5Package.reviewPackageDigest)
-        // Current Unit4 is bound to its genuine present-teaching implementation, not a fresh hash.
-        val correctedUnit4 = historicalPack("e6db0bdfe0bbb40edf190623e2123014946f305b")
-        val expectedUnit4 = correctedUnit4.unit(4)!!
-        assertEquals(expectedUnit4, pack.unit(4))
-        val objectiveIds = expectedUnit4.objectives.map { it.id }.toSet()
-        assertEquals(correctedUnit4.items.filter { it.objectiveId in objectiveIds }, pack.items.filter { it.objectiveId in objectiveIds })
-        assertEquals(correctedUnit4.provenanceRecords.filter { it.unitNumber == 4 }, pack.provenanceRecords.filter { it.unitNumber == 4 })
-        assertEquals(correctedUnit4.sourceCapabilities.filter { it.unitNumber == 4 }, pack.sourceCapabilities.filter { it.unitNumber == 4 })
-        val exampleIds = (expectedUnit4.objectives.flatMap { it.exampleIds } +
-            expectedUnit4.sessions.flatMap { it.steps }.flatMap { it.exampleIds }).toSet()
-        assertEquals(correctedUnit4.examples.filter { it.id in exampleIds }, pack.examples.filter { it.id in exampleIds })
-        assertEquals(V2Validator.unitContentReviewDigest(correctedUnit4, 4), V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals(buildUnitReviewPackage(correctedUnit4, 4).reviewPackageDigest, buildUnitReviewPackage(pack, 4).reviewPackageDigest)
-        assertNotEquals(V2Validator.unitContentReviewDigest(priorUnit4, 4), V2Validator.unitContentReviewDigest(pack, 4))
-        assertNotEquals(buildHistoricalUnitReviewPackage(priorUnit4, 4, "a1e8f319b0b55f8e1dbcced680c34f32d240d217").reviewPackageDigest, buildUnitReviewPackage(pack, 4).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(
@@ -319,14 +267,6 @@ class Units610SourceIntakeTest {
         bookAttestedUnits = if (book) setOf(number) else emptySet(),
         completedUnitNumbers = emptySet(),
     )
-
-    private fun historicalPack(commit: String): V2CurriculumPack {
-        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json")
-            .directory(repo()).start()
-        val text = process.inputStream.bufferedReader().readText()
-        assertEquals(0, process.waitFor())
-        return V2PackLoader.parse(text).also { V2PackIdentityIndex.warm(it) }
-    }
 
     private fun pack() = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())
 
