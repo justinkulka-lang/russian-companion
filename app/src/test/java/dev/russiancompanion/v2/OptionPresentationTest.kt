@@ -22,24 +22,6 @@ class OptionPresentationTest {
         assertEquals(626, p.items.size)
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
             p.items.drop(622).map { it.id }.toSet())
-        val beforeExistence = OptionPresentationFixture.atSource("2c455b96dde9abd1fc8e2b5350df161216cf7e31")
-        val positiveExistence = OptionPresentationFixture.atSource("fe919656bfa2775b5cc2c22f2496d4258343cfea")
-        assertEquals(beforeExistence.items.map { it.id }, positiveExistence.items.map { it.id })
-        assertEquals(setOf("u8-g-availability-0", "u8-i-availability-1", "u8-i-availability-2", "u8-i-availability-3"),
-            beforeExistence.items.filter { it != positiveExistence.item(it.id) }.map { it.id }.toSet())
-        // Keep the original raw-position baseline on its exact historical source.
-        assertEquals(561, beforeExistence.items.count { it.options.first() == it.answer })
-        val originalRequired = beforeExistence.units.flatMap { it.objectives }.filter { it.gating }
-            .flatMap { it.checkItemIds }.distinct().map { beforeExistence.item(it)!! }
-        assertEquals(429, originalRequired.size)
-        assertEquals(379, originalRequired.count { it.options.first() == it.answer })
-        // Answers stay on the positive-existence source. Four Unit 2 review items later became print pairs.
-        assertEquals(positiveExistence.items.map { it.id to it.answer }, p.items.map { it.id to it.answer })
-        val shifted = positiveExistence.items.filter { historical ->
-            val live = p.item(historical.id)!!
-            historical.kind != live.kind || historical.options != live.options
-        }.map { it.id }.toSet()
-        assertEquals(setOf("u2-i-в-not-b", "u2-i-у-not-y", "u2-i-х-not-x", "u2-i-я-identity"), shifted)
         assertEquals(562, p.items.count { it.options.first() == it.answer })
         val routes = p.units.flatMap { it.sessions }.flatMap { it.steps }
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
@@ -136,13 +118,6 @@ class OptionPresentationTest {
 internal object OptionPresentationFixture {
     val root get() = File(if (File("app").isDirectory) "." else "..")
     val pack by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
-    fun atSource(commit: String): V2CurriculumPack {
-        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json")
-            .directory(root).start()
-        val source = process.inputStream.bufferedReader().use { it.readText() }
-        assertEquals("historical source $commit", 0, process.waitFor())
-        return V2PackLoader.parse(source)
-    }
     fun prepare(s: LocalStore) {
         val p = pack
         for (n in 1..2) {

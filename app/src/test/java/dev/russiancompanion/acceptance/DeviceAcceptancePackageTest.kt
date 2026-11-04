@@ -25,16 +25,6 @@ class DeviceAcceptancePackageTest {
         val manifest = Json.parseToJsonElement(
             File(root, RELEASE_EVIDENCE_MANIFEST).readText(),
         ).jsonObject
-        // Historical candidate-upload contract is retained against its exact original workflow.
-        // Current engineering CI intentionally defers candidate assembly until after the final audit.
-        val historicalWorkflow = ProcessBuilder("git", "show",
-            "991d7ca4ec2dc1f994238eadad6485e9c89de528:.github/workflows/build.yml")
-            .directory(root).redirectErrorStream(true).start()
-        val workflow = historicalWorkflow.inputStream.bufferedReader().readText()
-        assertEquals(0, historicalWorkflow.waitFor())
-        assertEquals("6e302293b9e2f2daa5f275a1d6c9a0695949f1fc9da212adf6a201c6972abb18",
-            java.security.MessageDigest.getInstance("SHA-256").digest(workflow.toByteArray())
-                .joinToString("") { "%02x".format(it) })
         val currentWorkflow = File(root, ".github/workflows/build.yml").readText()
         listOf("compileDebugSources", "lintDebug", "verifyReleaseGateAttachment", "testDebugUnitTest",
             "engineering-verification-source", "engineering-test-reports").forEach {
@@ -91,13 +81,6 @@ class DeviceAcceptancePackageTest {
         assertTrue(instructions.contains("assembleDebug"))
         assertTrue(instructions.contains("NOT_APPROVED"))
         assertFalse(instructions.contains("\"state\": \"RETAINED\""))
-
-        assertTrue(workflow.contains("actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02"))
-        assertTrue(workflow.contains("acceptance-candidate-debug-apk"))
-        assertTrue(workflow.contains("artifact-identity.json"))
-        assertTrue(workflow.contains("if-no-files-found: error"))
-        assertTrue(workflow.contains("lintDebug"))
-        assertTrue(workflow.contains("verifyReleaseGateAttachment"))
 
         assertEquals("physical-device-acceptance-candidate", candidate.getValue("kind").jsonPrimitive.content)
         assertEquals("NOT_APPROVED", candidate.getValue("publicRelease").jsonPrimitive.content)

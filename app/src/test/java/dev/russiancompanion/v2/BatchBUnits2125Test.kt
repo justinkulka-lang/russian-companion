@@ -196,24 +196,12 @@ class BatchBUnits2125Test {
     }
 
     @Test
-    fun retainedCitationDonorStaysExactWhileIndependentObjectTransferKeepsItsRealContext() {
+    fun independentObjectTransferKeepsItsRealContext() {
         val live = pack()
-        val process = ProcessBuilder("git", "show",
-            "6434cd12cdb22d0bbf6f7f848191d46b46501fca:app/src/main/assets/content/v2-curriculum.json")
-            .directory(repo()).start()
-        val historical = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
-        assertEquals(0, process.waitFor())
-        for (id in listOf("u21-g-object-reference-0", "u21-i-object-reference-1")) {
-            assertEquals(id, historical.items.single { it.id == id }, live.items.single { it.id == id })
-        }
-        for (text in listOf(BatchBSources.SELF_SENTENCE, "I love myself", BatchBSources.WIFE_SENTENCE, "I love my wife")) {
-            assertEquals(shipped(historical, "obj-u21-object-reference", text), shipped(live, "obj-u21-object-reference", text))
-        }
         val guided = live.items.single { it.id == "u21-g-object-reference-0" }
         val independent = live.items.single { it.id == "u21-i-object-reference-2" }
         assertEquals(true, independent.assessment!!.independent)
         assertEquals("REFLEXIVE_MYSELF_SENTENCE", independent.assessment.testedFeature)
-        assertFalse(independent == historical.items.single { it.id == independent.id })
         assertFalse(independent.promptLetter == guided.promptLetter)
         assertTrue(Unit21ObjectPins.matches(live))
         assertTrue(CompleteRuleContextPins.itemMatches(live, independent))

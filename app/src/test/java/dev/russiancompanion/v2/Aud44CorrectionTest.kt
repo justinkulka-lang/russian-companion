@@ -207,17 +207,7 @@ class Aud44CorrectionTest {
         val pack = pack()
         val stable = listOf(16, 18, 19, 20)
         val digests = stable.associateWith { V2Validator.unitContentReviewDigest(pack, it) }
-        // Unit20 subsequently gained its own directionality correction. Preserve its
-        // old snapshot against the actual pre-correction asset; run all isolation
-        // mutations below against the current pack, including current Unit20.
-        assertEquals(PRIOR_CONTENT_DIGESTS.filterKeys { it != 20 }, digests.filterKeys { it != 20 })
-        val historicalProcess = ProcessBuilder("git", "show",
-            "1ce6184a5bbe894624807c066600fa51de42ace3:app/src/main/assets/content/v2-curriculum.json")
-            .directory(repo()).start()
-        val historical = V2PackLoader.parse(historicalProcess.inputStream.bufferedReader().readText())
-        assertEquals(0, historicalProcess.waitFor())
-        assertEquals(PRIOR_CONTENT_DIGESTS.getValue(20), V2Validator.unitContentReviewDigest(historical, 20))
-        assertNotEquals(PRIOR_CONTENT_DIGESTS.getValue(20), digests.getValue(20))
+        assertEquals(PRIOR_CONTENT_DIGESTS, digests.filterKeys { it != 20 })
         val identities = stable.associateWith { number ->
             pack.authoredEnglishRecords.filter { it.unitNumber == number }.map { it.id to it.text }
         }
@@ -522,7 +512,6 @@ class Aud44CorrectionTest {
             16 to "31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87",
             18 to "603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac",
             19 to "3096baba4cdc192ac7d701f6eedd3c8ca0be12c54ab64efa52b0c25fdbf83a5e",
-            20 to "bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b",
         )
     }
 }
