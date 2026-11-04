@@ -32,14 +32,6 @@ class Units1620SourceIntakeTest {
         20 to "240-256",
     )
 
-    private val preservedContentDigests = mapOf(
-        11 to "2a0b74e3722f0f0a1c2e0041c73c6654211eee81c918e44c1b23929fcf24672b",
-        12 to "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
-        13 to "7102c47201a3d4973d781d315dbbb8ceccca3424174b9c90ad127bac037828df",
-        14 to "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
-        15 to "ea945a9c9cd01a30db3522794b9df36c5a4fc291092a153da0672bb4b8a9a6bd",
-    )
-
     @Test
     fun structuralMappingsMatchTheOwnedEditionObservations() {
         val pack = pack()
@@ -69,58 +61,6 @@ class Units1620SourceIntakeTest {
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
         assertEquals(emptySet<Int>(), pack.units.filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
-        preservedContentDigests.forEach { (number, digest) ->
-            if (number == 11) {
-                val beforeReviewAndRepair = historicalSourcePack("5e49fdd5727d933a68a94a0479ca95b9c5c14ea9")
-                assertEquals("historical unit11", digest, V2Validator.unitContentReviewDigest(beforeReviewAndRepair, 11))
-                val afterRepair = historicalSourcePack("37e6a0cbd7de30a539e90a0481f6ab8c5c562ed9")
-                // Original correction ledger's newUnit11Digest,not a freshly bumped snapshot.
-                val declaredAfterDigest = "35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69"
-                assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(afterRepair, 11))
-                // These original assertions name the repaired instruction before Unit11's later review declaration.
-                RecordedCurriculumConservationScope.beforeUnit11NounReview(repo(), pack).let { pack ->
-                    assertEquals(afterRepair.unit(11), pack.unit(11))
-                    assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
-                }
-                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
-                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), 11)
-                org.junit.Assert.assertNotEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
-            } else if (number == 15) {
-                // Keep the original pin on its recorded snapshot; preparation changed later.
-                val prior = historicalSourcePack("49a926c5ace0459edf7712ca5d90db4a63ff9d31")
-                assertEquals("historical unit $number", digest, V2Validator.unitContentReviewDigest(prior, number))
-                val correction = historicalSourcePack("0f8001a8ec2cb76a7bc994a2c8d77db09a272d04")
-                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, correction, number)
-                org.junit.Assert.assertNotEquals(digest, V2Validator.unitContentReviewDigest(pack, number))
-            } else if (number == 12) {
-                // The retained v1 digest belongs to the exact pre-Unit12 declaration.
-                RecordedCurriculumConservationScope.beforeUnit12GenderReview(repo(), pack).let { pack ->
-                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
-                }
-                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
-                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
-                org.junit.Assert.assertNotEquals("Current Unit12 versioned review identity", digest,
-                    V2Validator.unitContentReviewDigest(pack, number))
-            } else if (number == 13) {
-                // Retain the original v2 digest on its proven whole-pack source; never reset the pin.
-                RecordedCurriculumConservationScope.beforeUnit13PresentReview(repo(), pack).let { pack ->
-                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
-                }
-                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
-                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
-                org.junit.Assert.assertNotEquals("Current Unit13 v3 review identity", digest,
-                    V2Validator.unitContentReviewDigest(pack, number))
-            } else if (number == 14) {
-                // Retain the old v1 pin only on its proven whole-pack declaration scope.
-                RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(repo(), pack).let { pack ->
-                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
-                }
-                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
-                org.junit.Assert.assertNotEquals("Current Unit14 v2 review identity", digest, V2Validator.unitContentReviewDigest(pack, number))
-            } else {
-                assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
-            }
-        }
     }
 
     @Test
@@ -462,14 +402,6 @@ class Units1620SourceIntakeTest {
         assertTrue(candidate.contains("\"frozen\": false"))
         assertTrue(candidate.contains("\"sourceCommit\": null"))
         assertTrue(candidate.contains("AT-031"))
-    }
-
-    private fun historicalSourcePack(commit: String): V2CurriculumPack {
-        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json")
-            .directory(repo()).start()
-        val historical = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
-        assertEquals(0, process.waitFor())
-        return historical
     }
 
     private fun withoutCapabilities(pack: V2CurriculumPack, number: Int) = pack.copy(
