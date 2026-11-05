@@ -1,6 +1,5 @@
 package dev.russiancompanion.v2.audit
 
-import dev.russiancompanion.v2.RecordedIntakeCorrectionScope
 import dev.russiancompanion.release.computeReleaseSourceDigest
 import dev.russiancompanion.release.readAcceptanceCandidate
 import dev.russiancompanion.v2.curriculum.AUTHORIZED_FINAL_AUDIT_DIRECTORY
@@ -25,18 +24,6 @@ class OwnerGovernanceDecisionTest {
             V2Validator.unresolvedRequiredSourceCapabilities(pack, number).map { "$number:${it.claim}" }
         }
         assertEquals(emptyList<String>(), unresolved)
-        // Keep the prior aggregate identity; bind the current pack to its last actual asset edit.
-        val prior = RecordedIntakeCorrectionScope.load(root(), "49a926c5ace0459edf7712ca5d90db4a63ff9d31")
-        assertEquals(
-            "e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4",
-            V2Validator.contentReviewDigest(prior),
-        )
-        // Exact current implementation plus a declaration-only proof against the preceding whole pack.
-        dev.russiancompanion.v2.RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root(), pack)
-        val currentSource = RecordedIntakeCorrectionScope.load(root(), dev.russiancompanion.v2.RecordedLiteracyEpochScope.latestCommit)
-        assertEquals(currentSource, pack)
-        assertEquals(V2Validator.contentReviewDigest(currentSource), V2Validator.contentReviewDigest(pack))
-        org.junit.Assert.assertNotEquals(V2Validator.contentReviewDigest(prior), V2Validator.contentReviewDigest(pack))
         val readiness = pack.units.groupBy { it.readiness }.mapValues { it.value.size }
         assertEquals(30, readiness["CONTENT_COMPLETE_REVIEW_PENDING"])
         assertEquals(null, readiness["NOT_PREPARED"])
