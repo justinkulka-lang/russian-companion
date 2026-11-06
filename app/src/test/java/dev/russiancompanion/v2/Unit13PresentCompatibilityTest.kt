@@ -20,7 +20,6 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import java.io.File
 import kotlinx.serialization.json.*
-import dev.russiancompanion.v2.Unit13PresentFixtures.before13
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])

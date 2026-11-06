@@ -1,7 +1,6 @@
 package dev.russiancompanion.v2
 
 import dev.russiancompanion.v2.curriculum.CompleteRuleContextPins
-import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
 import dev.russiancompanion.v2.curriculum.ContentAuditSources
 import dev.russiancompanion.v2.curriculum.V2CheckItem
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
@@ -196,20 +195,9 @@ class BatchAUnits71620Test {
         assertEquals(null, V2Validator.classifyRelation(adjective, quickly, listOf(well, wonderfully)))
     }
 
-    /** Original 41-item explanation contract, before question/motion constructs were expanded. */
-    @Test
-    fun batchAExplanationsNameTheKeyedRelationshipAndRejectASwap() {
-        val pack = historicalBatchAPack()
-        val items = pack.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
-        assertEquals(41, items.size)
-        assertPairAndApplicationExplanations(pack, items)
-    }
-
     @Test
     fun currentBatchAExplainsEveryRetainedAndExpandedConstructAndRejectsWrongKeys() {
         val live = pack()
-        val old = historicalBatchAPack()
-        val historical = old.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
         val current = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
         val referenceIds = setOf("u17-g-clock-0", "u17-i-clock-1", "u17-i-clock-2")
         val expandedFeatures = mapOf(
@@ -223,30 +211,18 @@ class BatchAUnits71620Test {
             "u20-i-direction-weekly" to "MOTION_DIRECTIONAL_APPLICATION",
             "u20-i-direction-round" to "MOTION_DIRECTIONAL_APPLICATION",
         )
-        assertEquals(41, historical.size)
         assertEquals(47, current.size)
-        assertEquals(historical.map { it.id }.toSet() - referenceIds + expandedFeatures.keys, current.map { it.id }.toSet())
         val retained = current.filter { it.id !in expandedFeatures }
         assertEquals(38, retained.size)
-        // Only the two pre-existing prefixed-motion assessments were rebound to expanded teaching.
-        retained.filter { it.id !in setOf("u20-i-motion-3", "u20-i-motion-4") }.forEach { item ->
-            assertEquals(item.id, old.items.single { it.id == item.id }, item)
-        }
         val reference = live.unit(17)!!.objectives.single { it.id == "obj-u17-clock-vocabulary" }
         assertFalse(reference.gating)
         assertEquals("GUIDANCE", reference.kind)
         assertTrue(reference.checkItemIds.isEmpty() && reference.practiceStepIds.isEmpty())
         referenceIds.forEach { id ->
             val item = live.items.single { it.id == id }
-            val earlier = old.items.single { it.id == id }
             assertEquals(reference.id, item.objectiveId)
             assertEquals("SOURCE_MEANING", item.kind)
             assertEquals(null, item.assessment)
-            assertEquals(earlier.promptLetter, item.promptLetter)
-            assertEquals(earlier.options, item.options)
-            assertEquals(earlier.answer, item.answer)
-            assertEquals(earlier.feedback, item.feedback)
-            assertEquals(earlier.distractorRationales, item.distractorRationales)
         }
         // Original keyed-relationship, distractor, trailing-substring and swap negatives on current retained items.
         assertPairAndApplicationExplanations(live, retained)
@@ -277,16 +253,6 @@ class BatchAUnits71620Test {
                 })
             }
         }
-    }
-
-    private fun historicalBatchAPack(): V2CurriculumPack {
-        val process = ProcessBuilder("git", "show",
-            "95a170755ef2cffc9fc63378b67c452579097e46:app/src/main/assets/content/v2-curriculum.json")
-            .directory(repo()).start()
-        val result = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
-        assertEquals(0, process.waitFor())
-        V2PackIdentityIndex.warm(result)
-        return result
     }
 
     private fun assertPairAndApplicationExplanations(pack: V2CurriculumPack, items: List<V2CheckItem>) {

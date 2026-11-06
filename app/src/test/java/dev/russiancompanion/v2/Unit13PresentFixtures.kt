@@ -13,7 +13,6 @@ import java.io.File
 
 internal object Unit13PresentFixtures {
     val root = File(if (File("app").isDirectory) "." else "..")
-    val before13 by lazy { RecordedIntakeCorrectionScope.load(root, "31ac807387253082c44bd2f6d67021478f0df66e") }
     val pack by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
     fun context(): Context = ApplicationProvider.getApplicationContext<Context>().also {
         (it.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
