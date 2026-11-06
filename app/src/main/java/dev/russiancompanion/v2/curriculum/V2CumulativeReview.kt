@@ -476,41 +476,12 @@ internal fun cumulativeReviewTitle(targetUnit: Int, policyId: String? = null): S
     else -> "Review earlier objectives"
 }
 
-/** Explicit supported declarations, including genuine prior source packs. */
+/** The current authored policy only. An older policy id is not a current declaration. */
 internal fun cumulativeReviewDeclaredPolicy(pack: V2CurriculumPack, targetUnit: Int): CumulativeReviewPolicy? {
     val rule = pack.unit(targetUnit)?.advancement ?: return null
     if (!rule.requireDueReview) return null
     val active = cumulativeReviewPolicy(targetUnit) ?: return null
-    return when {
-        rule.cumulativeReviewPolicyId == active.id -> active
-        targetUnit == 5 && rule.cumulativeReviewPolicyId == Unit5CumulativeReviewPolicy.definition.id ->
-            Unit5CumulativeReviewPolicy.definition
-        targetUnit == 6 && rule.cumulativeReviewPolicyId == Unit6WiderCumulativeReviewPolicy.definition.id ->
-            Unit6WiderCumulativeReviewPolicy.definition
-        targetUnit == 6 && rule.cumulativeReviewPolicyId == Unit6CumulativeReviewPolicy.definition.id ->
-            Unit6CumulativeReviewPolicy.definition
-        targetUnit == 7 && rule.cumulativeReviewPolicyId == Unit7CumulativeReviewPolicy.definition.id ->
-            Unit7CumulativeReviewPolicy.definition
-        targetUnit == 8 && rule.cumulativeReviewPolicyId == Unit8CumulativeReviewPolicy.definition.id ->
-            Unit8CumulativeReviewPolicy.definition
-        targetUnit == 9 && rule.cumulativeReviewPolicyId == Unit9WiderCumulativeReviewPolicy.definition.id ->
-            Unit9WiderCumulativeReviewPolicy.definition
-        targetUnit == 9 && rule.cumulativeReviewPolicyId == Unit9CumulativeReviewPolicy.definition.id ->
-            Unit9CumulativeReviewPolicy.definition
-        targetUnit == 10 && rule.cumulativeReviewPolicyId == Unit10CumulativeReviewPolicy.definition.id ->
-            Unit10CumulativeReviewPolicy.definition
-        targetUnit == 11 && rule.cumulativeReviewPolicyId == Unit11CumulativeReviewPolicy.definition.id ->
-            Unit11CumulativeReviewPolicy.definition
-        targetUnit == 12 && rule.cumulativeReviewPolicyId == Unit12CumulativeReviewPolicy.definition.id ->
-            Unit12CumulativeReviewPolicy.definition
-        targetUnit == 13 && rule.cumulativeReviewPolicyId == Unit13WiderCumulativeReviewPolicy.definition.id ->
-            Unit13WiderCumulativeReviewPolicy.definition
-        targetUnit == 13 && rule.cumulativeReviewPolicyId == Unit13CumulativeReviewPolicy.definition.id ->
-            Unit13CumulativeReviewPolicy.definition
-        targetUnit == 14 && rule.cumulativeReviewPolicyId == Unit14CumulativeReviewPolicy.definition.id ->
-            Unit14CumulativeReviewPolicy.definition
-        else -> null
-    }
+    return active.takeIf { rule.cumulativeReviewPolicyId == active.id }
 }
 
 internal fun cumulativeReviewDeclarationValid(pack: V2CurriculumPack, targetUnit: Int): Boolean =
@@ -539,24 +510,11 @@ private fun teachingDigest(pack: V2CurriculumPack, objective: V2Objective): Stri
 private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Boolean =
     a.schema == CUMULATIVE_REVIEW_SCHEMA
 
-/** Explicit history registry: an unknown policy/version never supplies current credit. */
+/** The current policy only. An older policy id or digest supplies no current credit. */
 internal fun cumulativeReviewAssignmentPolicy(a: CumulativeReviewAssignment): CumulativeReviewPolicy? {
     if (!reviewAssignmentSchemaSupported(a)) return null
-    val definitions = listOfNotNull(cumulativeReviewPolicy(a.targetUnit)) +
-        when (a.targetUnit) {
-            5 -> listOf(Unit5CumulativeReviewPolicy.definition)
-            6 -> listOf(Unit6CumulativeReviewPolicy.definition, Unit6WiderCumulativeReviewPolicy.definition)
-            7 -> listOf(Unit7CumulativeReviewPolicy.definition)
-            8 -> listOf(Unit8CumulativeReviewPolicy.definition)
-            9 -> listOf(Unit9CumulativeReviewPolicy.definition, Unit9WiderCumulativeReviewPolicy.definition)
-            10 -> listOf(Unit10CumulativeReviewPolicy.definition)
-            11 -> listOf(Unit11CumulativeReviewPolicy.definition)
-            12 -> listOf(Unit12CumulativeReviewPolicy.definition)
-            13 -> listOf(Unit13CumulativeReviewPolicy.definition, Unit13WiderCumulativeReviewPolicy.definition)
-            14 -> listOf(Unit14CumulativeReviewPolicy.definition)
-            else -> emptyList()
-        }
-    return definitions.singleOrNull { it.id == a.policyId && it.digest == a.policyDigest }
+    val active = cumulativeReviewPolicy(a.targetUnit) ?: return null
+    return active.takeIf { it.id == a.policyId && it.digest == a.policyDigest }
 }
 
 /** Allocation only: these attempts never supply assignment-bound due credit. */
@@ -655,7 +613,7 @@ internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReview
             (spec.remediationStepId == null || spec.remediationStepId in o.instructionStepIds + o.remediationStepIds) &&
             s.itemId in o.checkItemIds && item.objectiveId == o.id &&
             s.itemDigest == V2Validator.checkItemContentDigest(item) &&
-            currentOrPriorActiveReviewUnitIdentityMatches(pack, s.ownerUnit, s.unitDigest) &&
+            prescribedUnitIdentityMatches(pack, s.ownerUnit, s.unitDigest) &&
             s.teachingDigest == teachingDigest(pack, o)
     }
 }
@@ -714,156 +672,20 @@ internal fun cumulativeReviewComplete(pack: V2CurriculumPack, learner: V2Learner
 }
 internal fun unit3ReviewComplete(pack: V2CurriculumPack, learner: V2LearnerView): Boolean = cumulativeReviewComplete(pack, learner, 3)
 
-/** No learner/prerequisite recursion: validate only ordinary old proof or a recorded review snapshot. */
+/** A review unit counts only from its recorded current assignment. Empty and pre-activation links do not. */
 internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): Boolean {
     if (cumulativeReviewPolicy(unit.number) == null) return true
     if (!cumulativeReviewDeclarationValid(pack, unit.number)) return false
     val record = learner.unitReviewCompletions[unit.number] ?: return false
-    val emptyLink = record.policyDigest.isEmpty() && record.assignmentId.isEmpty() && record.completionOrder == 0L
-    // Schema11 already wrote ordinary Unit4–30 rows with preActivation=false before their activation.
-    // Only exact pre-policy governed work may preserve them; current-source raw flags cannot.
-    if (emptyLink && (record.preActivation || unit.number in 4..30)) {
-        val legacy = preReviewUnitDigest(pack, unit.number)
-        val oldEvidence = learner.copy(governedAttempts = learner.governedAttempts?.filter {
-            it.unitNumber != unit.number || it.unitContentDigest == legacy
-        })
-        return ordinaryUnitRequirements(pack, unit, oldEvidence).allowed
-    }
-    if (record.preActivation) return false
+    if (record.preActivation || record.policyDigest.isEmpty() || record.assignmentId.isEmpty() || record.completionOrder == 0L) return false
     val a = learner.reviewAssignments.singleOrNull { it.id == record.assignmentId } ?: return false
     if (record.policyDigest != a.policyDigest) return false
     return a.targetUnit == unit.number && record.completionOrder > a.boundary &&
         completedReviewSlots(pack, a, learner.reviewAnswers.filter { it.acceptedOrder <= record.completionOrder }).size == a.slots.size
 }
 
-/** Exact pre-activation rule identity, with every current item/source/teaching field retained. */
-private val preReviewUnitDigests = IdentityWeakCache<Map<Int, String>>()
+/** Current unit content only. Prior-policy and pre-activation digests do not match. */
 internal fun prescribedUnitIdentityMatches(pack: V2CurriculumPack, number: Int, recorded: String): Boolean {
-    if (currentOrPriorActiveReviewUnitIdentityMatches(pack, number, recorded)) return true
-    if (cumulativeReviewPolicy(number) == null || !cumulativeReviewDeclarationValid(pack, number)) return false
-    return recorded == preReviewUnitDigest(pack, number)
-}
-
-/** Unlike prescribed work, review owner bindings do not accept pre-activation identities. */
-private fun currentOrPriorActiveReviewUnitIdentityMatches(pack: V2CurriculumPack, number: Int, recorded: String): Boolean {
     val current = V2PackIdentityIndex.unitDigest(pack, number) ?: V2Validator.unitContentReviewDigest(pack, number)
-    if (recorded == current) return true
-    return when (number) {
-        5 -> cumulativeReviewDeclarationValid(pack, 5) && recorded == priorActiveUnit5Digest(pack)
-        6 -> cumulativeReviewDeclarationValid(pack, 6) && recorded in priorActiveUnit6Digests(pack)
-        7 -> cumulativeReviewDeclarationValid(pack, 7) && recorded == priorActiveUnit7Digest(pack)
-        8 -> cumulativeReviewDeclarationValid(pack, 8) && recorded == priorActiveUnit8Digest(pack)
-        9 -> cumulativeReviewDeclarationValid(pack, 9) && recorded in priorActiveUnit9Digests(pack)
-        10 -> cumulativeReviewDeclarationValid(pack, 10) && recorded == priorActiveUnit10Digest(pack)
-        11 -> cumulativeReviewDeclarationValid(pack, 11) && recorded == priorActiveUnit11Digest(pack)
-        12 -> cumulativeReviewDeclarationValid(pack, 12) && recorded == priorActiveUnit12Digest(pack)
-        13 -> cumulativeReviewDeclarationValid(pack, 13) && recorded in priorActiveUnit13Digests(pack)
-        14 -> cumulativeReviewDeclarationValid(pack, 14) && recorded == priorActiveUnit14Digest(pack)
-        else -> false
-    }
+    return recorded == current
 }
-
-private val priorActiveUnit5Digests = IdentityWeakCache<String>()
-private fun priorActiveUnit5Digest(pack: V2CurriculumPack): String = priorActiveUnit5Digests.get(pack) ?: run {
-    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 5) unit.copy(
-        advancement = unit.advancement!!.copy(requireDueReview = true,
-            cumulativeReviewPolicyId = Unit5CumulativeReviewPolicy.definition.id)) else unit })
-    V2Validator.unitContentReviewDigest(old, 5).also { priorActiveUnit5Digests.put(pack, it) }
-}
-
-private val priorActiveUnit6DigestCache = IdentityWeakCache<Set<String>>()
-private fun priorActiveUnit6Digests(pack: V2CurriculumPack): Set<String> = priorActiveUnit6DigestCache.get(pack) ?: run {
-    val ids = listOf(Unit6CumulativeReviewPolicy.definition.id) +
-        if (pack.unit(6)?.advancement?.cumulativeReviewPolicyId == Unit6PresentCumulativeReviewPolicy.definition.id)
-            listOf(Unit6WiderCumulativeReviewPolicy.definition.id) else emptyList()
-    ids.map { policyId ->
-        val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 6) unit.copy(
-            advancement = unit.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = policyId)) else unit })
-        V2Validator.unitContentReviewDigest(old, 6)
-    }.toSet().also { priorActiveUnit6DigestCache.put(pack, it) }
-}
-
-private val priorActiveUnit7Digests = IdentityWeakCache<String>()
-private fun priorActiveUnit7Digest(pack: V2CurriculumPack): String = priorActiveUnit7Digests.get(pack) ?: run {
-    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 7) unit.copy(
-        advancement = unit.advancement!!.copy(requireDueReview = true,
-            cumulativeReviewPolicyId = Unit7CumulativeReviewPolicy.definition.id)) else unit })
-    V2Validator.unitContentReviewDigest(old, 7).also { priorActiveUnit7Digests.put(pack, it) }
-}
-
-private val priorActiveUnit8Digests = IdentityWeakCache<String>()
-private fun priorActiveUnit8Digest(pack: V2CurriculumPack): String = priorActiveUnit8Digests.get(pack) ?: run {
-    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 8) unit.copy(
-        advancement = unit.advancement!!.copy(requireDueReview = true,
-            cumulativeReviewPolicyId = Unit8CumulativeReviewPolicy.definition.id)) else unit })
-    V2Validator.unitContentReviewDigest(old, 8).also { priorActiveUnit8Digests.put(pack, it) }
-}
-
-private val priorActiveUnit9DigestCache = IdentityWeakCache<Set<String>>()
-private fun priorActiveUnit9Digests(pack: V2CurriculumPack): Set<String> = priorActiveUnit9DigestCache.get(pack) ?: run {
-    val ids = listOf(Unit9CumulativeReviewPolicy.definition.id) +
-        if (pack.unit(9)?.advancement?.cumulativeReviewPolicyId == Unit9NounBehaviorCumulativeReviewPolicy.definition.id)
-            listOf(Unit9WiderCumulativeReviewPolicy.definition.id) else emptyList()
-    ids.map { policyId ->
-        val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 9) unit.copy(
-            advancement = unit.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = policyId)) else unit })
-        V2Validator.unitContentReviewDigest(old, 9)
-    }.toSet().also { priorActiveUnit9DigestCache.put(pack, it) }
-}
-
-private val priorActiveUnit10Digests = IdentityWeakCache<String>()
-private fun priorActiveUnit10Digest(pack: V2CurriculumPack): String = priorActiveUnit10Digests.get(pack) ?: run {
-    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 10) unit.copy(
-        advancement = unit.advancement!!.copy(requireDueReview = true,
-            cumulativeReviewPolicyId = Unit10CumulativeReviewPolicy.definition.id)) else unit })
-    V2Validator.unitContentReviewDigest(old, 10).also { priorActiveUnit10Digests.put(pack, it) }
-}
-
-private val priorActiveUnit11Digests = IdentityWeakCache<String>()
-private fun priorActiveUnit11Digest(pack: V2CurriculumPack): String = priorActiveUnit11Digests.get(pack) ?: run {
-    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 11) unit.copy(
-        advancement = unit.advancement!!.copy(requireDueReview = true,
-            cumulativeReviewPolicyId = Unit11CumulativeReviewPolicy.definition.id)) else unit })
-    V2Validator.unitContentReviewDigest(old, 11).also { priorActiveUnit11Digests.put(pack, it) }
-}
-
-private val priorActiveUnit12Digests = IdentityWeakCache<String>()
-private fun priorActiveUnit12Digest(pack: V2CurriculumPack): String = priorActiveUnit12Digests.get(pack) ?: run {
-    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 12) unit.copy(
-        advancement = unit.advancement!!.copy(requireDueReview = true,
-            cumulativeReviewPolicyId = Unit12CumulativeReviewPolicy.definition.id)) else unit })
-    V2Validator.unitContentReviewDigest(old, 12).also { priorActiveUnit12Digests.put(pack, it) }
-}
-
-private val priorActiveUnit13DigestCache = IdentityWeakCache<Set<String>>()
-private fun priorActiveUnit13Digests(pack: V2CurriculumPack): Set<String> = priorActiveUnit13DigestCache.get(pack) ?: run {
-    // Restore only earlier declarations against all CURRENT content/teaching/rule fields.
-    // A recorded historical hash alone never authorizes unrelated content changes.
-    val ids = listOf(Unit13CumulativeReviewPolicy.definition.id) +
-        if (pack.unit(13)?.advancement?.cumulativeReviewPolicyId == Unit13PresentCumulativeReviewPolicy.definition.id)
-            listOf(Unit13WiderCumulativeReviewPolicy.definition.id) else emptyList()
-    ids.map { policyId ->
-        val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 13) unit.copy(
-            advancement = unit.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = policyId)) else unit })
-        V2Validator.unitContentReviewDigest(old, 13)
-    }.toSet().also { priorActiveUnit13DigestCache.put(pack, it) }
-}
-
-private val priorActiveUnit14Digests = IdentityWeakCache<String>()
-private fun priorActiveUnit14Digest(pack: V2CurriculumPack): String = priorActiveUnit14Digests.get(pack) ?: run {
-    // Exact prior declaration against CURRENT teaching/items/rules, never a historical-hash allowlist.
-    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 14) unit.copy(
-        advancement = unit.advancement!!.copy(requireDueReview = true,
-            cumulativeReviewPolicyId = Unit14CumulativeReviewPolicy.definition.id)) else unit })
-    V2Validator.unitContentReviewDigest(old, 14).also { priorActiveUnit14Digests.put(pack, it) }
-}
-
-private fun preReviewUnitDigest(pack: V2CurriculumPack, number: Int): String =
-    preReviewUnitDigests.get(pack)?.get(number) ?: run {
-        val unit = pack.unit(number)!!
-        val old = pack.copy(units = pack.units.map { if (it.number == number) unit.copy(advancement = unit.advancement!!.copy(
-            requireDueReview = false, cumulativeReviewPolicyId = null)) else it })
-        V2Validator.unitContentReviewDigest(old, number).also { digest ->
-            preReviewUnitDigests.put(pack, preReviewUnitDigests.get(pack).orEmpty() + (number to digest))
-        }
-    }

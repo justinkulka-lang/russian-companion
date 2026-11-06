@@ -96,6 +96,44 @@ class Unit5GrammarReviewTest {
         }
     }
 
+    @Test fun priorPolicyAndPreActivationIdentitiesDoNotSupplyCurrentCredit() {
+        val p = current
+        val prior = p.copy(units = p.units.map { unit ->
+            if (unit.number == 5) unit.copy(advancement = unit.advancement!!.copy(
+                requireDueReview = true, cumulativeReviewPolicyId = Unit5CumulativeReviewPolicy.definition.id)) else unit
+        })
+        val preReview = p.copy(units = p.units.map { unit ->
+            if (unit.number == 5) unit.copy(advancement = unit.advancement!!.copy(
+                requireDueReview = false, cumulativeReviewPolicyId = null)) else unit
+        })
+        assertNull(cumulativeReviewDeclaredPolicy(prior, 5))
+        assertFalse(cumulativeReviewDeclarationValid(prior, 5))
+        val currentDigest = V2Validator.unitContentReviewDigest(p, 5)
+        val priorDigest = V2Validator.unitContentReviewDigest(prior, 5)
+        val preDigest = V2Validator.unitContentReviewDigest(preReview, 5)
+        assertTrue(prescribedUnitIdentityMatches(p, 5, currentDigest))
+        assertFalse(prescribedUnitIdentityMatches(p, 5, priorDigest))
+        assertFalse(prescribedUnitIdentityMatches(p, 5, preDigest))
+        val old = Unit5CumulativeReviewPolicy.definition
+        val forged = CumulativeReviewAssignment("old-policy", 5, old.id, old.digest, "ab".repeat(32), 0, emptyList(), "")
+            .let { it.copy(digest = reviewAssignmentDigest(it)) }
+        assertNull(cumulativeReviewAssignmentPolicy(forged))
+        LocalStore.openInMemory(context()).use { s ->
+            prepare(p, s)
+            val base = s.v2LearnerView()
+            val rewritten = base.copy(
+                completedUnitNumbers = base.completedUnitNumbers + 5,
+                governedAttempts = base.governedAttempts!!.map { attempt ->
+                    if (attempt.unitNumber == 5) attempt.copy(unitContentDigest = preDigest) else attempt
+                },
+                unitReviewCompletions = base.unitReviewCompletions +
+                    (5 to CumulativeUnitCompletion(false, "", "", 0)),
+            )
+            assertEquals(setOf(1, 2, 3, 4), currentCompletedUnitNumbers(p, rewritten))
+            assertFalse(historicalReviewCompletionCurrent(p, p.unit(5)!!, rewritten))
+        }
+    }
+
     @Test fun wrongSchemaAndUntaughtOwnerCannotBorrowFreshCredit() {
         val p = current
         assertEquals(newPolicy, cumulativeReviewDeclaredPolicy(p, 5)!!.id)

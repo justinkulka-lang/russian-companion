@@ -2054,7 +2054,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "83a2ad815a4024b06eea81a628f0fce5e11da40186d188e890f85e933de1339b",
+      "sha256": "23cd89633432d1e710824d68e3f6edbe2fa7c7ea6d00b398f204df7e3f8f50d5",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
