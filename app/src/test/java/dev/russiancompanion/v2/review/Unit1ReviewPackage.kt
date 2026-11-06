@@ -1,6 +1,5 @@
 package dev.russiancompanion.v2.review
 
-import dev.russiancompanion.v2.RecordedLiteracyEpochScope
 import dev.russiancompanion.v2.curriculum.V2CheckItem
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2Example
@@ -27,6 +26,8 @@ internal const val UNIT1_REVIEW_SCHEMA_VERSION = 3
  * Commit that contains the curriculum, validators, and review pipeline.
  * Review packets are generated in a later commit, so this value is not HEAD.
  */
+internal const val UNITS_1_2_LITERACY_CURRICULUM_COMMIT = "0107931bfee92fa932c93ae63d3f4a34080cb2bf"
+
 internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
 
 internal const val UNITS_6_10_CURRICULUM_COMMIT = "ae777d85fe3616fc8e065890201d40c241d113bc"
@@ -196,7 +197,7 @@ internal fun curriculumCommitForUnit(unitNumber: Int): String =
     else if (unitNumber == 28) UNIT28_TIMING_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 24) UNIT24_CONTEXT_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 21) UNIT21_OBJECT_TRANSFER_CURRICULUM_COMMIT
-    else if (unitNumber == 1 || unitNumber == 2) RecordedLiteracyEpochScope.latestCommit
+    else if (unitNumber == 1 || unitNumber == 2) UNITS_1_2_LITERACY_CURRICULUM_COMMIT
     else if (unitNumber in 1..30) CONTENT_AUDIT_CORRECTION_CURRICULUM_COMMIT else UNITS_11_15_CURRICULUM_COMMIT
 
 internal const val CURRICULUM_SOURCE_COMMIT = UNITS_6_10_CURRICULUM_COMMIT
