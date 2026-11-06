@@ -32,6 +32,36 @@ internal interface V2Dao {
     @Query("SELECT * FROM v2_attempts ORDER BY acceptedOrder ASC, id ASC")
     fun attempts(): List<V2AttemptEntity>
 
+    @Query("SELECT EXISTS(SELECT 1 FROM v2_attempts WHERE id = :id)")
+    fun attemptIdExists(id: String): Boolean
+
+    @Query(
+        """
+        SELECT * FROM v2_attempts
+        WHERE acceptedOrder > 0
+        AND itemId = :itemId
+        AND attemptRole = :attemptRole
+        AND stepId = :stepId
+        AND identitySchema = :identitySchema
+        AND itemDigest = :itemDigest
+        AND ruleDigest = :ruleDigest
+        AND unitContentDigest = :unitContentDigest
+        AND unitNumber = :unitNumber
+        ORDER BY acceptedOrder DESC, id DESC
+        LIMIT 1
+        """,
+    )
+    fun latestMatchingGovernedAttempt(
+        itemId: String,
+        attemptRole: String,
+        stepId: String,
+        identitySchema: Int,
+        itemDigest: String,
+        ruleDigest: String,
+        unitContentDigest: String,
+        unitNumber: Int,
+    ): V2AttemptEntity?
+
     @Query("SELECT COALESCE(MAX(acceptedOrder), 0) FROM v2_attempts")
     fun maxAcceptedOrder(): Long
 

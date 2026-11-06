@@ -410,9 +410,17 @@ internal fun attemptGrantsPrescribedCredit(attempt: GovernedAttemptView, pack: V
     return prescribedUnitIdentityMatches(pack, attempt.unitNumber, attempt.unitContentDigest)
 }
 
+private val creditByPack = IdentityWeakCache<IdentityWeakCache<Set<String>>>(8)
+
+internal fun clearCreditCacheForTests() = creditByPack.clear()
+
 internal fun creditItemIds(pack: V2CurriculumPack, learner: V2LearnerView): Set<String> {
     val attempts = learner.governedAttempts ?: return learner.correctItemIds
-    return attempts.filter { attemptGrantsPrescribedCredit(it, pack) }.map { it.itemId }.toSet()
+    val byLearner = creditByPack.get(pack) ?: IdentityWeakCache<Set<String>>(4).also { creditByPack.put(pack, it) }
+    byLearner.get(learner)?.let { return it }
+    val computed = attempts.filter { attemptGrantsPrescribedCredit(it, pack) }.map { it.itemId }.toSet()
+    byLearner.put(learner, computed)
+    return computed
 }
 
 internal fun completedStepCounts(pack: V2CurriculumPack, learner: V2LearnerView, stepId: String): Boolean {
@@ -797,6 +805,8 @@ internal object V2PackIdentityIndex {
 
     fun clearForTests() {
         V2CompletionEvidence.clearForTests()
+        clearCreditCacheForTests()
+        V2Validator.clearCachedDigestsForTests()
         steps.clear()
         units.clear()
     }

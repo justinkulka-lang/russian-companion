@@ -979,19 +979,16 @@ internal class LocalStore private constructor(
         ) {
             error("unverified attempt")
         }
-        val latest = database.v2().attempts()
-            .filter { existing ->
-                existing.acceptedOrder > 0 &&
-                    existing.itemId == write.itemId &&
-                    existing.attemptRole == write.attemptRole &&
-                    existing.stepId == write.stepId &&
-                    existing.identitySchema == write.identitySchema &&
-                    existing.itemDigest == write.itemDigest &&
-                    existing.ruleDigest == write.ruleDigest &&
-                    existing.unitContentDigest == write.unitContentDigest &&
-                    existing.unitNumber == write.unitNumber
-            }
-            .maxByOrNull { it.acceptedOrder }
+        val latest = database.v2().latestMatchingGovernedAttempt(
+            itemId = write.itemId,
+            attemptRole = write.attemptRole,
+            stepId = write.stepId,
+            identitySchema = write.identitySchema,
+            itemDigest = write.itemDigest,
+            ruleDigest = write.ruleDigest,
+            unitContentDigest = write.unitContentDigest,
+            unitNumber = write.unitNumber,
+        )
         return latest != null && latest.selected == write.selected
     }
 
@@ -1046,7 +1043,7 @@ internal class LocalStore private constructor(
             if (next <= 0L) error("accepted-order-exhausted")
             // The content key repeats when the same selection is accepted again at the
             // same wall-clock time. A colliding id gains the accepted-write sequence.
-            val id = if (database.v2().attempts().any { it.id == write.id }) "${write.id}:$next" else write.id
+            val id = if (database.v2().attemptIdExists(write.id)) "${write.id}:$next" else write.id
             database.v2().insertAttempt(
                 dev.russiancompanion.v2.data.V2AttemptEntity(
                     id = id,

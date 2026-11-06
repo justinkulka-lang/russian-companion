@@ -67,7 +67,10 @@ internal object V2Validator {
             validateReadiness(pack, unit, errors)
         }
         validateReachableSessions(pack, errors)
-        pack.items.forEach { item -> validateItem(pack, item, errors) }
+        val objectiveIds = HashSet<String>()
+        pack.units.forEach { unit -> unit.objectives.forEach { objectiveIds += it.id } }
+        val sourceIds = pack.sources.mapTo(HashSet()) { it.id }
+        pack.items.forEach { item -> validateItem(pack, item, errors, objectiveIds, sourceIds) }
         pack.examples.forEach { example -> validateExample(pack, example, errors) }
         pack.letters.forEach { letter -> validateLetter(pack, letter, errors) }
         pack.references.forEach { entry ->
@@ -92,7 +95,29 @@ internal object V2Validator {
      * record when one exists. Approval status and the reviewer signature on
      * that record stay outside.
      */
-    internal fun contentReviewDigest(pack: V2CurriculumPack): String = sha256(canonicalInstructionalDocument(pack))
+    private val cachedPackDigests = IdentityWeakCache<String>()
+    private val cachedUnitDigests = IdentityWeakCache<MutableMap<Int, String>>()
+    private val cachedItemDigests = IdentityWeakCache<String>(4096)
+    private val cachedProvenanceHashes = IdentityWeakCache<Pair<String, String>>(16384)
+    private val provenanceBySource = IdentityWeakCache<Map<String, List<V2ProvenanceRecord>>>(8)
+
+    internal fun clearCachedDigestsForTests() {
+        cachedPackDigests.clear()
+        cachedUnitDigests.clear()
+        cachedItemDigests.clear()
+        cachedProvenanceHashes.clear()
+        provenanceBySource.clear()
+    }
+
+    internal fun contentReviewDigest(pack: V2CurriculumPack): String {
+        cachedPackDigests.get(pack)?.let { return it }
+        val digest = sha256(canonicalInstructionalDocument(pack))
+        synchronized(cachedPackDigests) {
+            cachedPackDigests.get(pack)?.let { return it }
+            cachedPackDigests.put(pack, digest)
+        }
+        return digest
+    }
 
     /**
      * SHA-256 of the unit-scoped content-review digest. It covers that unit and
@@ -107,9 +132,17 @@ internal object V2Validator {
     internal var unitDigestExecutionThreadForTests: Thread? = null
 
     internal fun unitContentReviewDigest(pack: V2CurriculumPack, unitNumber: Int): String {
-        unitDigestExecutionsForTests.incrementAndGet()
-        unitDigestExecutionThreadForTests = Thread.currentThread()
-        return sha256(canonicalUnitInstructionalDocument(pack, unitNumber))
+        cachedUnitDigests.get(pack)?.get(unitNumber)?.let { return it }
+        val digest = sha256(canonicalUnitInstructionalDocument(pack, unitNumber))
+        synchronized(cachedUnitDigests) {
+            cachedUnitDigests.get(pack)?.get(unitNumber)?.let { return it }
+            unitDigestExecutionsForTests.incrementAndGet()
+            unitDigestExecutionThreadForTests = Thread.currentThread()
+            val stored = cachedUnitDigests.get(pack)?.toMutableMap() ?: mutableMapOf()
+            stored[unitNumber] = digest
+            cachedUnitDigests.put(pack, stored)
+        }
+        return digest
     }
 
     internal fun instructionalContentDigest(pack: V2CurriculumPack): String = contentReviewDigest(pack)
@@ -118,7 +151,26 @@ internal object V2Validator {
      * SHA-256 of the canonical check item. Attempt rows store this value at
      * creation so a later edit of the item cannot be treated as the same key.
      */
-    internal fun checkItemContentDigest(item: V2CheckItem): String = sha256(canonicalCheckItem(item))
+    internal fun checkItemContentDigest(item: V2CheckItem): String {
+        cachedItemDigests.get(item)?.let { return it }
+        val digest = sha256(canonicalCheckItem(item))
+        cachedItemDigests.put(item, digest)
+        return digest
+    }
+
+    private fun provenanceContentAndSourceHash(record: V2ProvenanceRecord): Pair<String, String> {
+        cachedProvenanceHashes.get(record)?.let { return it }
+        val hashes = sha256(record.shippedText) to sha256(record.originalSourceText)
+        cachedProvenanceHashes.put(record, hashes)
+        return hashes
+    }
+
+    private fun provenanceSharingSource(records: List<V2ProvenanceRecord>): Map<String, List<V2ProvenanceRecord>> {
+        provenanceBySource.get(records)?.let { return it }
+        val grouped = records.groupBy { it.sourceId }
+        provenanceBySource.put(records, grouped)
+        return grouped
+    }
 
     /**
      * Release acceptance for the pack-wide linguistic review and every unit.
@@ -157,9 +209,20 @@ internal object V2Validator {
         }
     }
 
+    private val sha256Digest = ThreadLocal.withInitial { MessageDigest.getInstance("SHA-256") }
+    private val hexDigits = "0123456789abcdef".toCharArray()
+
     private fun sha256(text: String): String {
-        val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))
-        return digest.joinToString("") { byte -> "%02x".format(byte) }
+        val digest = sha256Digest.get() ?: error("SHA-256")
+        digest.reset()
+        val bytes = digest.digest(text.toByteArray(Charsets.UTF_8))
+        val encoded = CharArray(bytes.size * 2)
+        for (index in bytes.indices) {
+            val value = bytes[index].toInt() and 0xff
+            encoded[index * 2] = hexDigits[value ushr 4]
+            encoded[index * 2 + 1] = hexDigits[value and 0x0f]
+        }
+        return String(encoded)
     }
 
     internal const val CONTENT_REVIEW_DIGEST_SCHEMA = 3
@@ -1264,12 +1327,11 @@ internal object V2Validator {
             errors += "Source capability ${capability.id} revision does not match the frozen record"
             return errors
         }
-        val frozen = pack.provenanceRecords.filter {
-            it.sourceId == capability.sourceId &&
-                it.sourceRevision == capability.sourceRevision &&
+        val frozen = provenanceSharingSource(pack.provenanceRecords)[capability.sourceId].orEmpty().filter {
+            it.sourceRevision == capability.sourceRevision &&
                 it.sourceRecordId == capability.sourceRecordId &&
                 it.sourceHash == capability.sourceHash &&
-                it.sourceHash == sha256(it.originalSourceText) &&
+                it.sourceHash == provenanceContentAndSourceHash(it).second &&
                 retainedWorkLicense(it.licenseId, it.sourceId)
         }
         if (frozen.isEmpty()) {
@@ -4667,7 +4729,13 @@ internal object V2Validator {
         ) errors += "Item ${item.id} indeclinability binding does not match the frozen noun and definition"
     }
 
-    private fun validateItem(pack: V2CurriculumPack, item: V2CheckItem, errors: MutableList<String>) {
+    private fun validateItem(
+        pack: V2CurriculumPack,
+        item: V2CheckItem,
+        errors: MutableList<String>,
+        objectiveIds: Set<String>,
+        sourceIds: Set<String>,
+    ) {
         if (CompleteRuleContextPins.required(item.id) && !CompleteRuleContextPins.itemMatches(pack, item)) {
             errors += "Item ${item.id} complete rule context does not match its frozen application"
         }
@@ -4686,10 +4754,10 @@ internal object V2Validator {
             errors += "Item ${item.id} has no usable answer key"
         }
         if (item.feedback.isBlank()) errors += "Item ${item.id} has no feedback"
-        if (pack.units.flatMap { it.objectives }.none { it.id == item.objectiveId }) {
+        if (item.objectiveId !in objectiveIds) {
             errors += "Item ${item.id} objective is missing"
         }
-        if (pack.sources.none { it.id == item.sourceId }) {
+        if (item.sourceId !in sourceIds) {
             errors += "Item ${item.id} source ${item.sourceId} is missing"
         }
         if (item.reviewStatus !in CLOSED_REVIEW_STATES) {
@@ -4973,6 +5041,11 @@ internal object V2Validator {
             }
         }
         val seen = mutableSetOf<String>()
+        val sourceIds = pack.sources.mapTo(HashSet()) { it.id }
+        val appRightsBySource = pack.rights.filter { it.permitsAppUse }.groupBy { it.sourceId }
+        val objectiveKeys = HashSet<Pair<String, Int>>()
+        pack.units.forEach { unit -> unit.objectives.forEach { objectiveKeys += it.id to it.unitNumber } }
+        val shippedByUnit = pack.provenanceRecords.groupBy { it.unitNumber }.mapValues { (_, rows) -> rows.map { it.shippedText } }
         pack.provenanceRecords.forEach { record ->
             if (!seen.add(record.itemId)) {
                 errors += "Provenance ${record.itemId} is duplicated"
@@ -5066,7 +5139,8 @@ internal object V2Validator {
             if (isExcludedProvenance(record)) {
                 errors += "Provenance ${record.itemId} excluded source cannot enter the seed"
             }
-            if (record.contentHash != sha256(record.shippedText) || record.sourceHash != sha256(record.originalSourceText)) {
+            val (contentHash, sourceHash) = provenanceContentAndSourceHash(record)
+            if (record.contentHash != contentHash || record.sourceHash != sourceHash) {
                 errors += "Provenance ${record.itemId} source hash does not match the frozen record"
             }
             if (record.sourceId == Phase2Sources.SOURCE_ID || record.transformation == Phase2Sources.TRANSFORMATION) {
@@ -5084,10 +5158,10 @@ internal object V2Validator {
             if (record.sourceId == "src-openrussian-50e210c4" && "/blob/" !in record.sourceUrl) {
                 errors += "Provenance ${record.itemId} source URL is not an exact file link"
             }
-            if (pack.sources.none { it.id == record.sourceId }) {
+            if (record.sourceId !in sourceIds) {
                 errors += "Provenance ${record.itemId} source does not resolve"
             }
-            val rights = pack.rights.filter { it.sourceId == record.sourceId && it.permitsAppUse }
+            val rights = appRightsBySource[record.sourceId].orEmpty()
             if (rights.isEmpty() || rights.any { !retainedWorkLicense(it.license, record.sourceId) }) {
                 errors += "Provenance ${record.itemId} rights do not resolve"
             }
@@ -5100,12 +5174,12 @@ internal object V2Validator {
             if (record.unitNumber !in 3..30) {
                 errors += "Provenance ${record.itemId} is outside the proposed Units 3-30 source intake"
             }
-            if (pack.units.flatMap { it.objectives }.none { it.id == record.objectiveId && it.unitNumber == record.unitNumber }) {
+            if ((record.objectiveId to record.unitNumber) !in objectiveKeys) {
                 errors += "Provenance ${record.itemId} objective is missing"
             }
         }
-        pack.units.filter { unit -> pack.provenanceRecords.any { it.unitNumber == unit.number } }.forEach { unit ->
-            val shipped = pack.provenanceRecords.filter { it.unitNumber == unit.number }.map { it.shippedText }.toSet()
+        pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
+            val shipped = shippedByUnit.getValue(unit.number).toSet()
             val hosts = mutableListOf(unit.topicSummary, unit.mappingNote, unit.title)
             unit.objectives.forEach { objective ->
                 hosts += objective.title
@@ -5171,6 +5245,8 @@ internal object V2Validator {
 
     private fun validateAuthoredEnglish(pack: V2CurriculumPack, errors: MutableList<String>) {
         val seen = mutableSetOf<String>()
+        val shippedByUnit = pack.provenanceRecords.groupBy { it.unitNumber }.mapValues { (_, rows) -> rows.map { it.shippedText } }
+        val shippedSetByUnit = shippedByUnit.mapValues { it.value.toSet() }
         pack.authoredEnglishRecords.forEach { record ->
             if (!seen.add(record.id)) {
                 errors += "Authored English ${record.id} is duplicated"
@@ -5184,10 +5260,7 @@ internal object V2Validator {
             if (record.unitNumber !in 3..30) {
                 errors += "Authored English ${record.id} is outside the proposed Units 3-30 source intake"
             }
-            val shippedForUnit = pack.provenanceRecords
-                .filter { it.unitNumber == record.unitNumber }
-                .map { it.shippedText }
-                .toSet()
+            val shippedForUnit = shippedSetByUnit[record.unitNumber].orEmpty()
             val quoted = cyrillicRegions(record.text)
             if (quoted.any { !admittedRegion(it, shippedForUnit) } ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||
@@ -5196,8 +5269,8 @@ internal object V2Validator {
                 errors += "independently authored English makes a linguistic claim"
             }
         }
-        pack.units.filter { unit -> pack.provenanceRecords.any { it.unitNumber == unit.number } }.forEach { unit ->
-            val shipped = pack.provenanceRecords.filter { it.unitNumber == unit.number }.map { it.shippedText }
+        pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
+            val shipped = shippedByUnit.getValue(unit.number)
             val scaffolds = pack.authoredEnglishRecords.filter { it.unitNumber == unit.number }.map { it.text }
             val spans = shipped + scaffolds
             val hosts = mutableListOf<String>()
