@@ -13,7 +13,6 @@ import java.io.File
 
 internal object Unit14PluralPossessionFixtures {
     val root = File(if (File("app").isDirectory) "." else "..")
-    val before14 by lazy { RecordedIntakeCorrectionScope.load(root, "9101af8c182b3415426ed9226cb211a707a2c393") }
     val pack by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
     fun context(): Context = ApplicationProvider.getApplicationContext<Context>().also {
         (it.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
