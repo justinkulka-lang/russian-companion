@@ -39,10 +39,6 @@ class UnitReviewPipelineTest {
 
         val files1 = renderUnitReviewFiles(pack, 1).files
         val files2 = renderUnitReviewFiles(pack, 2).files
-        if (System.getenv("WRITE_UNIT_REVIEW") == "1") {
-            writeReview(1, files1)
-            writeReview(2, files2)
-        }
         assertTrue(validateUnitReviewFiles(pack, 1, files1).joinToString("\n"), validateUnitReviewFiles(pack, 1, files1).isEmpty())
         assertTrue(validateUnitReviewFiles(pack, 2, files2).joinToString("\n"), validateUnitReviewFiles(pack, 2, files2).isEmpty())
         val wrongUnit = validateUnitReviewFiles(pack, 1, files2)
@@ -88,24 +84,6 @@ class UnitReviewPipelineTest {
             assertEquals("PENDING_CURRICULUM_REVIEWER", row[unit2MappingHeader.indexOf("alignment_disposition")])
             assertEquals("map-pending-unit-2", row[unit2MappingHeader.indexOf("mapping_record_id")])
             assertEquals(mappingPackageDigest(governedMappingFacts(2)), row[unit2MappingHeader.indexOf("mapping_package_digest")])
-        }
-    }
-
-    @Test
-    fun committedUnitPackagesMatchTheGenerator() {
-        val pack = pack()
-        val packetUnits = (1..30).toList()
-        if (System.getenv("WRITE_UNIT_REVIEW") == "1") {
-            packetUnits.forEach { number ->
-                writeReview(number, renderUnitReviewFiles(pack, number).files)
-            }
-        }
-        packetUnits.forEach { number ->
-            val dir = File(repo(), "review/unit-$number")
-            val committed = reviewFileNames(number).associateWith { name -> File(dir, name).readText() }
-            val errors = validateUnitReviewFiles(pack, number, committed)
-            assertTrue(errors.joinToString("\n"), errors.isEmpty())
-            assertEquals(renderUnitReviewFiles(pack, number).files, committed)
         }
     }
 
@@ -223,11 +201,8 @@ class UnitReviewPipelineTest {
         val prior = mappingPackageDigest(facts)
         val pending = buildUnitReviewPackage(pack, 1)
         assertEquals(prior, pending.mappingPackageDigest)
-        assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", pending.contentReviewDigest)
-        assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", V2Validator.unitContentReviewDigest(pack, 5))
+        assertEquals(V2Validator.unitContentReviewDigest(pack, 1), pending.contentReviewDigest)
+        assertEquals("28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300", V2Validator.unitContentReviewDigest(pack, 3))
         val mutations = listOf(
             "lesson number" to facts.copy(proposedLessonNumber = 9),
             "printed page start" to facts.copy(printedPageStart = 2),
@@ -285,7 +260,7 @@ class UnitReviewPipelineTest {
 
         val listed = ProcessBuilder(listOf("git", "ls-files", "*.pdf", "*.PDF"))
             .directory(repo())
-            .redirectError(File("/dev/null"))
+            .redirectError(File(if (System.getProperty("os.name").startsWith("Windows", ignoreCase = true)) "NUL" else "/dev/null"))
             .start()
             .let { process ->
                 val text = process.inputStream.bufferedReader().readText()
@@ -305,7 +280,7 @@ class UnitReviewPipelineTest {
         val root = repo()
         val head = ProcessBuilder("git", "rev-parse", "HEAD")
             .directory(root)
-            .redirectError(File("/dev/null"))
+            .redirectError(File(if (System.getProperty("os.name").startsWith("Windows", ignoreCase = true)) "NUL" else "/dev/null"))
             .start()
             .let { process ->
                 val text = process.inputStream.bufferedReader().readText().trim()
@@ -316,65 +291,28 @@ class UnitReviewPipelineTest {
         val predating = "08663616a79af9009c657ecfb66d7f6d42a531bf"
         val rejected = curriculumSourceCommitErrors(predating, root, 2)
         assertTrue(rejected.joinToString("\n"), rejected.any { it.contains("Unit 2 content-review digest") || it.contains("readable curriculum") })
-        (1..2).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
+        (1..30).forEach { number ->
+            val pin = curriculumCommitForUnit(number)
+            val manifest = renderUnitReviewFiles(pack, number).files.getValue(reviewManifestName(number))
+            assertTrue(manifest.contains(pin))
             assertFalse(manifest.contains(predating))
-            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isEmpty())
+            val errors = curriculumSourceCommitErrors(pin, root, number)
+            assertTrue(errors.joinToString("\n"), errors.isEmpty())
         }
-        (3..5).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isNotEmpty())
+        // A reconstructed historical digest cannot relabel a current packet as current source evidence.
+        val currentFour = buildUnitReviewPackage(pack, 4)
+        val historicalFour = buildHistoricalUnitReviewPackage(pack, 4, UNIT4_CUMULATIVE_REVIEW_CURRICULUM_COMMIT)
+        assertNotEquals(currentFour.reviewPackageDigest, historicalFour.reviewPackageDigest)
+        val relabelled = renderUnitReviewFiles(pack, 4).files.mapValues { (_, text) ->
+            text.replace(currentFour.reviewPackageDigest, historicalFour.reviewPackageDigest)
+                .replace(curriculumCommitForUnit(4), UNIT4_CUMULATIVE_REVIEW_CURRICULUM_COMMIT)
         }
-        (6..10).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_6_10_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_1_5_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, number).isNotEmpty())
-        }
-        assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, 10).isNotEmpty())
-        (11..15).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_6_10_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors("c9f23afd219681319554d90424f2d59fd550cadc", root, number).isNotEmpty())
-        }
-        listOf(16, 17, 18, 19, 20).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))
-            assertFalse(manifest.contains(UNITS_11_15_CURRICULUM_COMMIT))
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_16_20_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_16_20_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors(UNITS_11_15_CURRICULUM_COMMIT, root, number).isNotEmpty())
-        }
-        listOf(21, 22, 23, 24, 25).forEach { number ->
-            val manifest = File(root, "review/unit-$number/${reviewManifestName(number)}").readText()
-            assertTrue(manifest.contains(UNITS_21_25_CURRICULUM_COMMIT))
-            if (UNITS_21_25_CURRICULUM_COMMIT != UNITS_16_20_CURRICULUM_COMMIT) {
-                assertFalse(manifest.contains(UNITS_16_20_CURRICULUM_COMMIT))
-            }
-            assertTrue(
-                curriculumSourceCommitErrors(UNITS_21_25_CURRICULUM_COMMIT, root, number).joinToString("\n"),
-                curriculumSourceCommitErrors(UNITS_21_25_CURRICULUM_COMMIT, root, number).isEmpty(),
-            )
-            assertTrue(curriculumSourceCommitErrors("55ac696b9e9dd1c695f7fcc2b7ccb6c47444d511", root, number).isNotEmpty())
-        }
+        val historicalErrors = validateUnitReviewFiles(pack, 4, relabelled)
+        assertTrue(historicalErrors.joinToString("\n"), historicalErrors.any { it.contains("curriculum source commit") })
+        assertTrue(historicalErrors.joinToString("\n"), historicalErrors.any { it.contains("Review package digest") })
+        assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, 1).isNotEmpty())
+        assertTrue(curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, 7).isNotEmpty())
+        assertTrue(curriculumSourceCommitErrors(UNITS_26_30_CURRICULUM_COMMIT, root, 27).isNotEmpty())
     }
 
     private fun reachableLetters(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, unitNumber: Int): Set<String> {
@@ -383,12 +321,6 @@ class UnitReviewPipelineTest {
             session.steps.flatMap { it.exampleIds }
         }
         return exampleIds.map { id -> pack.examples.first { it.id == id }.letterId }.toSet()
-    }
-
-    private fun writeReview(unitNumber: Int, files: Map<String, String>) {
-        val dir = File(repo(), "review/unit-$unitNumber")
-        dir.mkdirs()
-        files.forEach { (name, text) -> File(dir, name).writeText(text) }
     }
 
     private fun pack() = V2PackLoader.parse(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText())

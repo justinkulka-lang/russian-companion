@@ -12,6 +12,7 @@ import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.distinctCorrectCheckCount
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
@@ -24,6 +25,7 @@ import java.io.File
  * AUD-53 corrections: distractor rationales cite real source relationships,
  * ReadyRussian spans stay free of embedded media, and listed-pair, category,
  * field-label, or greeting recognition cannot clear a broader capability.
+ * Ordinary source requirements and the additional assigned-review gate are distinct.
  */
 class Aud53CorrectionTest {
     @Test
@@ -349,8 +351,15 @@ class Aud53CorrectionTest {
         assertFalse(unresolved(stamped, 27).contains("participle-stress"))
         assertFalse(unresolved(stamped, 30).contains("dictionary-use"))
         assertEquals("DEVELOPMENT", stamped.unit(25)!!.installState)
-        val decision = advancementDecision(stamped, stamped.unit(25)!!, learner(stamped, 25))
+        val currentLearner = learner(stamped, 25)
+        val decision = ordinaryUnitRequirements(stamped, stamped.unit(25)!!, currentLearner)
         assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+        val advancement = advancementDecision(stamped, stamped.unit(25)!!, currentLearner)
+        assertFalse(advancement.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), advancement.remaining)
+        val stampedErrors = errors(stamped)
+        assertTrue(stampedErrors.contains("Generated Russian words are forbidden"))
+        assertTrue(stampedErrors.contains("Penguin prose assets are forbidden"))
 
         val keyword = pack.copy(
             sourceCapabilities = pack.sourceCapabilities + clock.copy(

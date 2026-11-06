@@ -436,3 +436,49 @@ private fun loadRuleConditions(
     }
     return conditions
 }
+
+/** Additive review storage. Existing evidence is never converted to review credit. */
+internal val MIGRATION_9_10 = object : Migration(9, 10) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL("CREATE TABLE IF NOT EXISTS `v2_review_assignments` (`id` TEXT NOT NULL, `targetUnit` INTEGER NOT NULL, `document` TEXT NOT NULL, PRIMARY KEY(`id`))")
+        db.execSQL("CREATE TABLE IF NOT EXISTS `v2_review_answers` (`id` TEXT NOT NULL, `assignmentId` TEXT NOT NULL, `acceptedOrder` INTEGER NOT NULL, `document` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`assignmentId`) REFERENCES `v2_review_assignments`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT)")
+        db.execSQL("CREATE INDEX IF NOT EXISTS `index_v2_review_answers_assignmentId` ON `v2_review_answers` (`assignmentId`)")
+        db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_v2_review_answers_acceptedOrder` ON `v2_review_answers` (`acceptedOrder`)")
+    }
+}
+
+/** Existing completions predate the required review; they are not review evidence. */
+internal val MIGRATION_10_11 = object : Migration(10, 11) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL("ALTER TABLE `v2_unit_completions` ADD COLUMN `preReviewActivation` INTEGER NOT NULL DEFAULT 1")
+        db.execSQL("ALTER TABLE `v2_unit_completions` ADD COLUMN `reviewPolicyDigest` TEXT NOT NULL DEFAULT ''")
+        db.execSQL("ALTER TABLE `v2_unit_completions` ADD COLUMN `reviewAssignmentId` TEXT NOT NULL DEFAULT ''")
+        db.execSQL("ALTER TABLE `v2_unit_completions` ADD COLUMN `reviewCompletionOrder` INTEGER NOT NULL DEFAULT 0")
+    }
+}
+
+/** Dev installs drop learner rows. Old review-assignment documents are not converted. */
+internal val MIGRATION_11_12 = object : Migration(11, 12) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        listOf(
+            "v2_review_answers",
+            "v2_review_assignments",
+            "v2_step_progress",
+            "v2_attempts",
+            "v2_bookmarks",
+            "v2_notes",
+            "v2_tutor_queue",
+            "v2_book_attestations",
+            "v2_unit_completions",
+            "v2_profiles",
+            "recording_records",
+            "activity_logs",
+            "plan_instances",
+            "learner_state",
+            "gate_evidence",
+            "gate_tutor_requirements",
+            "gate_decisions",
+            "export_records",
+        ).forEach { table -> db.execSQL("DELETE FROM `$table`") }
+    }
+}

@@ -25,6 +25,9 @@ internal data class V2LearnerView(
     val bookmarks: List<GovernedBookmarkView> = emptyList(),
     val notes: List<GovernedNoteView> = emptyList(),
     val tutorItems: List<GovernedTutorView> = emptyList(),
+    val reviewAssignments: List<CumulativeReviewAssignment> = emptyList(),
+    val reviewAnswers: List<CumulativeReviewAnswer> = emptyList(),
+    val unitReviewCompletions: Map<Int, CumulativeUnitCompletion> = emptyMap(),
 )
 
 internal data class V2ContinueTarget(
@@ -35,6 +38,7 @@ internal data class V2ContinueTarget(
     val unitNumber: Int,
     val unavailable: Boolean = false,
     val opensUnitReview: Boolean = false,
+    val opensCumulativeReview: Boolean = false,
 )
 
 internal fun unitState(
@@ -43,10 +47,9 @@ internal fun unitState(
     learner: V2LearnerView,
 ): V2UnitState {
     if (!unit.openable()) return V2UnitState.NOT_YET_INSTALLED
-    if (unit.number in learner.completedUnitNumbers) return V2UnitState.COMPLETED
-    if (unit.number == learner.currentUnitNumber) return V2UnitState.CURRENT
-    val prereqs = unit.prerequisiteUnitNumbers
-    return if (prereqs.all { it in learner.completedUnitNumbers }) {
+    if (unit.number in currentCompletedUnitNumbers(pack, learner)) return V2UnitState.COMPLETED
+    if (unit.number == learner.currentUnitNumber && unmetCurrentPrerequisites(pack, unit, learner).isEmpty()) return V2UnitState.CURRENT
+    return if (unmetCurrentPrerequisites(pack, unit, learner).isEmpty()) {
         V2UnitState.AVAILABLE
     } else {
         V2UnitState.LOCKED
@@ -69,8 +72,16 @@ internal fun readinessLabel(unit: V2Unit): String = when (unit.readiness) {
 }
 
 internal fun todaysSession(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): V2Session? {
-    return unit.sessions.firstOrNull { session ->
+    return requiredPathSessions(unit).firstOrNull { session ->
         session.steps.any { !completedStepCounts(pack, learner, it.id) }
+    }
+}
+
+/** Unknown or shared objective ownership remains on the required path. */
+internal fun requiredPathSessions(unit: V2Unit): List<V2Session> {
+    val optionalIds = unit.objectives.filter { !it.gating }.map { it.id }.toSet()
+    return unit.sessions.filter { session ->
+        session.objectiveIds.isEmpty() || session.objectiveIds.any { it !in optionalIds }
     }
 }
 
@@ -79,13 +90,14 @@ internal fun currentObjective(
     unit: V2Unit,
     learner: V2LearnerView,
 ): V2Objective? {
-    return unit.objectives.firstOrNull { objective ->
+    val requiredObjectives = unit.objectives.filter { it.gating }
+    return requiredObjectives.firstOrNull { objective ->
         objectiveState(objective, learner, pack) in setOf(
             V2ObjectiveState.NOT_STARTED,
             V2ObjectiveState.LEARNING,
             V2ObjectiveState.REVIEW_REQUIRED,
         )
-    } ?: unit.objectives.lastOrNull()
+    } ?: requiredObjectives.lastOrNull()
 }
 
 internal fun recordedSessionCount(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): Int {
@@ -115,6 +127,25 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
             unavailable = true,
         )
     }
+    val missingPrerequisites = unmetCurrentPrerequisites(pack, unit, learner)
+    if (missingPrerequisites.isNotEmpty()) {
+        var review = pack.unit(missingPrerequisites.first())
+        val visited = mutableSetOf<Int>()
+        while (review != null && visited.add(review.number)) {
+            val earlier = unmetCurrentPrerequisites(pack, review, learner).firstOrNull() ?: break
+            review = pack.unit(earlier)
+        }
+        val reviewable = review != null && unmetCurrentPrerequisites(pack, review, learner).isEmpty()
+        return V2ContinueTarget(
+            title = "Review earlier completion",
+            reason = "Current prerequisite evidence is needed before Unit ${unit.number} can open.",
+            sessionId = null,
+            stepIndex = 0,
+            unitNumber = review?.number ?: unit.number,
+            unavailable = !reviewable,
+            opensUnitReview = reviewable,
+        )
+    }
     val sessions = unit.sessions
     if (!learner.currentSessionId.isNullOrBlank() && !resumeIsCurrent(pack, learner)) {
         val mismatch = learner.resumeIdentitySchema == GOVERNED_IDENTITY_SCHEMA
@@ -132,7 +163,16 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
         )
     }
     val resumeId = learner.currentSessionId
-    val resumeSession = sessions.firstOrNull { it.id == resumeId } ?: sessions.first()
+    val resumeSession = sessions.firstOrNull { it.id == resumeId }
+        ?: requiredPathSessions(unit).firstOrNull()
+        ?: return V2ContinueTarget(
+            title = "Review advancement",
+            reason = "This unit has no required sessions. Check advancement before moving on.",
+            sessionId = null,
+            stepIndex = 0,
+            unitNumber = unit.number,
+            opensUnitReview = true,
+        )
     val resumeIndex = learner.currentStepIndex.coerceIn(0, resumeSession.steps.lastIndex)
     val remaining = resumeSession.steps.drop(resumeIndex).firstOrNull { !completedStepCounts(pack, learner, it.id) }
     if (remaining != null) {
@@ -144,7 +184,7 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
             unitNumber = unit.number,
         )
     }
-    val nextSession = sessions.firstOrNull { session -> session.steps.any { !completedStepCounts(pack, learner, it.id) } }
+    val nextSession = requiredPathSessions(unit).firstOrNull { session -> session.steps.any { !completedStepCounts(pack, learner, it.id) } }
     if (nextSession != null) {
         val step = nextSession.steps.first { !completedStepCounts(pack, learner, it.id) }
         return V2ContinueTarget(
@@ -155,6 +195,11 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
             unitNumber = unit.number,
         )
     }
+    if (cumulativeReviewPolicy(unit.number) != null && !cumulativeReviewComplete(pack, learner, unit.number)) return V2ContinueTarget(
+        title = cumulativeReviewTitle(unit.number, currentCumulativeAssignment(pack, learner, unit.number)?.policyId
+            ?: unit.advancement?.cumulativeReviewPolicyId), reason = "Complete the assigned review before advancement.",
+        sessionId = null, stepIndex = 0, unitNumber = unit.number, opensCumulativeReview = true,
+    )
     return V2ContinueTarget(
         title = "Review advancement",
         reason = "Required Unit ${unit.number} steps are recorded. Check advancement before moving on.",
@@ -171,8 +216,11 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
  * to the failed check.
  */
 internal fun reviewedGuidedPractice(pack: V2CurriculumPack, remediationStepId: String): List<String> {
+    val explicitReviewTeaching = listOfNotNull(cumulativeReviewPolicy(3), cumulativeReviewPolicy(4), cumulativeReviewPolicy(5), cumulativeReviewPolicy(6), cumulativeReviewPolicy(7), cumulativeReviewPolicy(8), cumulativeReviewPolicy(9), cumulativeReviewPolicy(10), cumulativeReviewPolicy(11), cumulativeReviewPolicy(12), cumulativeReviewPolicy(13), cumulativeReviewPolicy(14), cumulativeReviewPolicy(15), cumulativeReviewPolicy(16), cumulativeReviewPolicy(17), cumulativeReviewPolicy(18), cumulativeReviewPolicy(19), cumulativeReviewPolicy(20), cumulativeReviewPolicy(21), cumulativeReviewPolicy(22), cumulativeReviewPolicy(23), cumulativeReviewPolicy(24), cumulativeReviewPolicy(25), cumulativeReviewPolicy(26), cumulativeReviewPolicy(27), cumulativeReviewPolicy(28), cumulativeReviewPolicy(29), cumulativeReviewPolicy(30))
+        .any { policy -> policy.pool.any { it.remediationStepId == remediationStepId } }
     val practiceIds = pack.units.flatMap { it.objectives }
-        .filter { remediationStepId in it.remediationStepIds }
+        .filter { remediationStepId in it.remediationStepIds ||
+            (explicitReviewTeaching && remediationStepId in it.instructionStepIds) }
         .flatMap { it.practiceStepIds }
         .distinct()
     return practiceIds.filter { id ->
@@ -255,7 +303,48 @@ internal fun distinctCorrectCheckCount(
         .size
 }
 
+/**
+ * Orient and teach steps that gate advancement.
+ * A step listed only on a non-gating objective is optional and does not block the unit.
+ */
+internal fun requiredInstructionSteps(unit: V2Unit): List<V2Step> {
+    val requiredIds = unit.objectives.filter { it.gating }.flatMap { it.instructionStepIds }.toSet()
+    val optionalOnly = unit.objectives.filter { !it.gating }.flatMap { it.instructionStepIds }.toSet() - requiredIds
+    return unit.sessions.flatMap { it.steps }.filter { step ->
+        step.kind in setOf("ORIENT", "TEACH") && step.id !in optionalOnly
+    }
+}
+
 internal fun advancementDecision(
+    pack: V2CurriculumPack,
+    unit: V2Unit,
+    learner: V2LearnerView,
+): V2AdvancementDecision {
+    val requirements = currentUnitRequirements(pack, unit, learner)
+    val missing = unmetCurrentPrerequisites(pack, unit, learner).filter { it in learner.completedUnitNumbers }
+    val remaining = requirements.remaining + missing.map { "Review current evidence for prerequisite Unit $it" }
+    return V2AdvancementDecision(remaining.isEmpty(), remaining)
+}
+
+internal fun currentUnitRequirements(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): V2AdvancementDecision {
+    val base = ordinaryUnitRequirements(pack, unit, learner)
+    val review = if (cumulativeReviewPolicy(unit.number) != null) {
+        when {
+            !cumulativeReviewDeclarationValid(pack, unit.number) -> listOf("The cumulative-review rule cannot be verified")
+            !cumulativeReviewComplete(pack, learner, unit.number) -> listOf("Complete the assigned earlier-objective review")
+            else -> emptyList()
+        }
+    } else if ((unit.advancement?.cumulativeReviewPolicyId != null ||
+        (unit.number != 2 && unit.advancement?.requireDueReview == true)) &&
+        !cumulativeReviewDeclarationValid(pack, unit.number)) {
+        listOf("The cumulative-review rule cannot be verified")
+    } else emptyList()
+    val remaining = base.remaining + review
+    return V2AdvancementDecision(remaining.isEmpty(), remaining)
+}
+
+/** Does not call completion/prerequisite derivation, avoiding recursive evidence evaluation. */
+internal fun ordinaryUnitRequirements(
     pack: V2CurriculumPack,
     unit: V2Unit,
     learner: V2LearnerView,
@@ -270,7 +359,7 @@ internal fun advancementDecision(
     }
     remaining += V2Validator.unresolvedPartialUnitAdvancementBlockers(pack, unit)
     if (rule.requireInstruction) {
-        val instructionSteps = unit.sessions.flatMap { it.steps }.filter { it.kind in setOf("ORIENT", "TEACH") }
+        val instructionSteps = requiredInstructionSteps(unit)
         if (instructionSteps.any { !completedStepCounts(pack, learner, it.id) }) {
             remaining += "Finish the required instruction steps"
         }
@@ -279,7 +368,9 @@ internal fun advancementDecision(
         remaining += "Self-attest the book work for this unit"
     }
     if (rule.requireAppChecks) {
+        val requiredObjectiveIds = unit.objectives.filter { it.gating }.map { it.id }.toSet()
         val checkIds = unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.distinct()
+            .filter { pack.item(it)?.objectiveId in requiredObjectiveIds }
         val correct = distinctCorrectCheckCount(pack, checkIds, creditItemIds(pack, learner))
         if (correct < rule.minimumDistinctChecks) {
             remaining += "Demonstrate at least ${rule.minimumDistinctChecks} distinct in-app checks"
@@ -290,7 +381,7 @@ internal fun advancementDecision(
             }
         }
     }
-    if (rule.requireDueReview) {
+    if (rule.requireDueReview && cumulativeReviewPolicy(unit.number) == null) {
         val reviewSteps = unit.sessions.flatMap { it.steps }.filter { step ->
             pack.items.any { it.id in step.itemIds && it.objectiveId == "obj-u2-review" } ||
                 step.id.contains("review")
@@ -303,7 +394,7 @@ internal fun advancementDecision(
 }
 
 internal fun visibleReferences(pack: V2CurriculumPack, learner: V2LearnerView): List<V2ReferenceEntry> {
-    val reached = (learner.completedUnitNumbers + learner.currentUnitNumber).maxOrNull() ?: 1
+    val reached = (currentCompletedUnitNumbers(pack, learner) + learner.currentUnitNumber).maxOrNull() ?: 1
     return pack.references.filter { it.introducedInUnit <= reached }
 }
 
@@ -311,8 +402,10 @@ internal fun searchReferences(entries: List<V2ReferenceEntry>, query: String): L
     val needle = query.trim().lowercase()
     if (needle.isEmpty()) return entries
     return entries.filter { entry ->
-        entry.title.lowercase().contains(needle) ||
-            entry.summary.lowercase().contains(needle) ||
-            entry.searchTerms.any { it.contains(needle) }
+        entry.title.contains(needle, ignoreCase = true) ||
+            entry.summary.contains(needle, ignoreCase = true) ||
+            entry.detail.contains(needle, ignoreCase = true) ||
+            entry.searchTerms.any { it.contains(needle, ignoreCase = true) }
     }
 }
+

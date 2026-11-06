@@ -1,6 +1,7 @@
 package dev.russiancompanion.v2.ui
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -29,6 +30,10 @@ import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.practiceLabSnapshot
 import dev.russiancompanion.v2.curriculum.savedWorkEntries
+import dev.russiancompanion.v2.curriculum.V2CheckItem
+import dev.russiancompanion.v2.curriculum.V2Step
+import dev.russiancompanion.v2.curriculum.example
+import dev.russiancompanion.v2.curriculum.labPresentedOptions
 
 @Composable
 internal fun V2SavedWorkScreen(
@@ -92,6 +97,7 @@ internal fun V2LabScreen(
     val item = items.getOrNull(index.coerceAtMost(items.lastIndex.coerceAtLeast(0)))
     val recorded = item?.let { snapshot?.recordedByItem[it.id] }
     val itemId = item?.id
+    var explanationOpen by rememberSaveable(labId, index, itemId) { mutableStateOf(false) }
     val pending = itemId != null && pendingKeys.any { it.startsWith("practice:$labId:$itemId:") }
     V2Scaffold(
         title = offer?.title ?: "Practice",
@@ -147,23 +153,23 @@ internal fun V2LabScreen(
             modifier = Modifier.semantics { heading(); testTag = "v2-lab-progress" },
         )
         Spacer(Modifier.height(8.dp))
+        V2QuestionCue(item, "v2-lab-cue")
         Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-lab-prompt" })
-        item.options.forEach { option ->
+        labPresentedOptions(item, labId).forEach { option ->
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
                     .heightIn(min = 48.dp)
-                    .semantics {
-                        role = Role.RadioButton
-                        this.selected = (chosen ?: recorded?.selected) == option
-                    },
+                    .selectable(selected = (chosen ?: recorded?.selected) == option,
+                        enabled = !pending, role = Role.RadioButton,
+                        onClick = { chosen = option })
+                    .semantics { testTag = "v2-lab-option-$option" },
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 RadioButton(
                     selected = (chosen ?: recorded?.selected) == option,
                     enabled = !pending,
-                    onClick = { chosen = option },
-                    modifier = Modifier.semantics { testTag = "v2-lab-option-$option" },
+                    onClick = null,
                 )
                 Text(option)
             }
@@ -177,6 +183,41 @@ internal fun V2LabScreen(
                 },
                 modifier = Modifier.semantics { testTag = "v2-lab-feedback" },
             )
+            selectedWrongOptionRationale(item, recorded.selected)?.let { rationale ->
+                Text(rationale, Modifier.semantics { testTag = "v2-lab-rationale" })
+            }
+            val teaching = labExplanationSteps(pack, item)
+            if (teaching.isNotEmpty()) {
+                V2SecondaryButton(
+                    text = if (explanationOpen) "Close explanation" else "Review explanation",
+                    onClick = { explanationOpen = !explanationOpen },
+                    tag = if (explanationOpen) "v2-lab-close-explanation" else "v2-lab-review",
+                )
+                if (explanationOpen) {
+                    teaching.forEach { step ->
+                        Text(step.title, style = MaterialTheme.typography.titleMedium)
+                        Text(step.body, modifier = Modifier.semantics { testTag = "v2-lab-explanation-${step.id}" })
+                    }
+                    teaching.flatMap { it.exampleIds }.distinct().forEach { id ->
+                        pack.example(id)?.let { example ->
+                            Text(example.display, style = MaterialTheme.typography.titleLarge,
+                                modifier = Modifier.semantics { testTag = "v2-lab-explanation-example-$id" })
+                            if (example.note.isNotBlank()) Text(example.note)
+                        }
+                    }
+                }
+            }
         }
+    }
+}
+
+/** Only the queued item's own declared teaching; no navigation or progress write is available. */
+internal fun labExplanationSteps(pack: V2CurriculumPack, item: V2CheckItem): List<V2Step> {
+    val unit = pack.units.firstOrNull { u -> u.objectives.any { it.id == item.objectiveId } } ?: return emptyList()
+    val objective = unit.objectives.singleOrNull { it.id == item.objectiveId } ?: return emptyList()
+    val steps = unit.sessions.flatMap { it.steps }
+    val teaching = objective.instructionStepIds.mapNotNull { id -> steps.firstOrNull { it.id == id && it.kind == "TEACH" } }
+    return teaching.ifEmpty {
+        objective.remediationStepIds.mapNotNull { id -> steps.firstOrNull { it.id == id && it.kind == "REMEDIATE" } }
     }
 }

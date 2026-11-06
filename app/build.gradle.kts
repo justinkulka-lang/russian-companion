@@ -50,6 +50,18 @@ android {
     }
 }
 
+// Robolectric loads the full curriculum and retains Android sandboxes between
+// classes. Give each worker room for those fixtures and bound sandbox retention.
+tasks.withType<Test>().configureEach {
+    maxHeapSize = "3g"
+    maxParallelForks = 1
+    forkEvery = 8L
+    failFast = false
+    doFirst {
+        logger.lifecycle("Host test resources: heap=$maxHeapSize, forks=$maxParallelForks, recycle after $forkEvery classes")
+    }
+}
+
 tasks.register<JavaExec>("checkReleaseGate") {
     group = "verification"
     description = "Refuses a public release until the packaged catalog and retained-evidence manifest clear the release gate."
@@ -68,6 +80,28 @@ tasks.register<JavaExec>("checkReleaseGate") {
         val text = report.readText().trim()
         if (exitValue != 0 || !text.startsWith("APPROVED")) {
             throw GradleException("Public release is not approved.\n$text")
+        }
+    }
+}
+
+// Explicit authoring checks, separate from startup validation and release acceptance.
+// A fresh output path prevents accidental replacement of retained verification evidence.
+for ((taskName, strict) in listOf("reportCurriculumDesign" to false, "checkCurriculumDesign" to true)) {
+    tasks.register<JavaExec>(taskName) {
+        group = "verification"
+        description = if (strict) "Reports curriculum design signals and fails while any remain unresolved."
+            else "Writes assessment/teaching diagnostics without claiming curriculum acceptance."
+        val compileKotlin = tasks.named("compileDebugKotlin")
+        dependsOn(compileKotlin)
+        workingDir = rootProject.layout.projectDirectory.asFile
+        mainClass.set("dev.russiancompanion.v2.curriculum.CurriculumDesignCliKt")
+        classpath(compileKotlin.map { it.outputs.files }, configurations.named("debugRuntimeClasspath"), androidComponents.sdkComponents.bootClasspath)
+        doFirst {
+            val reportPath = providers.gradleProperty("curriculumDesignOutput").orNull
+                ?: throw GradleException("Provide -PcurriculumDesignOutput=/absolute/fresh-report.json")
+            args("--input", rootProject.file("app/src/main/assets/content/v2-curriculum.json").absolutePath,
+                "--output", reportPath)
+            if (strict) args("--check")
         }
     }
 }

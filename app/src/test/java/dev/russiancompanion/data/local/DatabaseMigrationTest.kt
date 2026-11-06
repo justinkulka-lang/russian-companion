@@ -951,6 +951,66 @@ class DatabaseMigrationTest {
         helper.close()
     }
 
+    @Test
+    fun version11DevLearnerRowsAreDiscarded() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        context.deleteDatabase("dev-reset-v11.db")
+        val helper = FrameworkSQLiteOpenHelperFactory().create(
+            SupportSQLiteOpenHelper.Configuration.builder(context)
+                .name("dev-reset-v11.db")
+                .callback(object : SupportSQLiteOpenHelper.Callback(11) {
+                    override fun onCreate(db: SupportSQLiteDatabase) {
+                        db.execSQL("CREATE TABLE `course_segments` (`id` TEXT NOT NULL, PRIMARY KEY(`id`))")
+                        listOf(
+                            "v2_review_answers",
+                            "v2_review_assignments",
+                            "v2_step_progress",
+                            "v2_attempts",
+                            "v2_bookmarks",
+                            "v2_notes",
+                            "v2_tutor_queue",
+                            "v2_book_attestations",
+                            "v2_unit_completions",
+                            "v2_profiles",
+                            "recording_records",
+                            "activity_logs",
+                            "plan_instances",
+                            "learner_state",
+                            "gate_evidence",
+                            "gate_tutor_requirements",
+                            "gate_decisions",
+                            "export_records",
+                        ).forEach { table ->
+                            db.execSQL("CREATE TABLE `$table` (`id` TEXT NOT NULL, PRIMARY KEY(`id`))")
+                        }
+                    }
+
+                    override fun onUpgrade(db: SupportSQLiteDatabase, oldVersion: Int, newVersion: Int) = Unit
+                })
+                .build(),
+        )
+        val db = helper.writableDatabase
+        db.execSQL("INSERT INTO course_segments (id) VALUES ('kept')")
+        db.execSQL("INSERT INTO v2_review_assignments (id) VALUES ('old-assignment')")
+        db.execSQL("INSERT INTO v2_review_answers (id) VALUES ('old-answer')")
+        db.execSQL("INSERT INTO v2_profiles (id) VALUES ('local')")
+        db.execSQL("INSERT INTO learner_state (id) VALUES ('local')")
+        MIGRATION_11_12.migrate(db)
+        fun count(table: String): Int {
+            val cursor = db.query("SELECT COUNT(*) FROM `$table`")
+            cursor.moveToFirst()
+            val rows = cursor.getInt(0)
+            cursor.close()
+            return rows
+        }
+        assertEquals(1, count("course_segments"))
+        assertEquals(0, count("v2_review_assignments"))
+        assertEquals(0, count("v2_review_answers"))
+        assertEquals(0, count("v2_profiles"))
+        assertEquals(0, count("learner_state"))
+        helper.close()
+    }
+
     private data class MigratedDecision(
         val snapshot: String,
         val evidenceIds: List<String>,

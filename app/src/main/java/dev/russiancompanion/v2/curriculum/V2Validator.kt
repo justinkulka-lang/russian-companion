@@ -6,6 +6,15 @@ import java.security.MessageDigest
 internal object V2Validator {
     fun validate(pack: V2CurriculumPack, repositoryRoot: File? = null): V2Validation {
         val errors = mutableListOf<String>()
+        for (number in listOf(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30)) if (!cumulativeReviewDeclarationValid(pack, number))
+            errors += "Unit $number requires the versioned cumulative-review declaration"
+        for (unit in pack.units.filter { cumulativeReviewPolicy(it.number) == null }) {
+            if ((unit.advancement?.cumulativeReviewPolicyId != null ||
+                (unit.number != 2 && unit.advancement?.requireDueReview == true)) &&
+                !cumulativeReviewDeclarationValid(pack, unit.number)) {
+                errors += "Unit ${unit.number} has no verified cumulative-review policy"
+            }
+        }
         if (pack.schemaVersion != 1) errors += "Unsupported curriculum schema ${pack.schemaVersion}"
         if (pack.units.size != 30) errors += "The map must contain exactly 30 Penguin-aligned units"
         if (pack.units.map { it.number } != (1..30).toList()) {
@@ -58,7 +67,10 @@ internal object V2Validator {
             validateReadiness(pack, unit, errors)
         }
         validateReachableSessions(pack, errors)
-        pack.items.forEach { item -> validateItem(pack, item, errors) }
+        val objectiveIds = HashSet<String>()
+        pack.units.forEach { unit -> unit.objectives.forEach { objectiveIds += it.id } }
+        val sourceIds = pack.sources.mapTo(HashSet()) { it.id }
+        pack.items.forEach { item -> validateItem(pack, item, errors, objectiveIds, sourceIds) }
         pack.examples.forEach { example -> validateExample(pack, example, errors) }
         pack.letters.forEach { letter -> validateLetter(pack, letter, errors) }
         pack.references.forEach { entry ->
@@ -83,7 +95,29 @@ internal object V2Validator {
      * record when one exists. Approval status and the reviewer signature on
      * that record stay outside.
      */
-    internal fun contentReviewDigest(pack: V2CurriculumPack): String = sha256(canonicalInstructionalDocument(pack))
+    private val cachedPackDigests = IdentityWeakCache<String>()
+    private val cachedUnitDigests = IdentityWeakCache<MutableMap<Int, String>>()
+    private val cachedItemDigests = IdentityWeakCache<String>(4096)
+    private val cachedProvenanceHashes = IdentityWeakCache<Pair<String, String>>(16384)
+    private val provenanceBySource = IdentityWeakCache<Map<String, List<V2ProvenanceRecord>>>(8)
+
+    internal fun clearCachedDigestsForTests() {
+        cachedPackDigests.clear()
+        cachedUnitDigests.clear()
+        cachedItemDigests.clear()
+        cachedProvenanceHashes.clear()
+        provenanceBySource.clear()
+    }
+
+    internal fun contentReviewDigest(pack: V2CurriculumPack): String {
+        cachedPackDigests.get(pack)?.let { return it }
+        val digest = sha256(canonicalInstructionalDocument(pack))
+        synchronized(cachedPackDigests) {
+            cachedPackDigests.get(pack)?.let { return it }
+            cachedPackDigests.put(pack, digest)
+        }
+        return digest
+    }
 
     /**
      * SHA-256 of the unit-scoped content-review digest. It covers that unit and
@@ -98,9 +132,17 @@ internal object V2Validator {
     internal var unitDigestExecutionThreadForTests: Thread? = null
 
     internal fun unitContentReviewDigest(pack: V2CurriculumPack, unitNumber: Int): String {
-        unitDigestExecutionsForTests.incrementAndGet()
-        unitDigestExecutionThreadForTests = Thread.currentThread()
-        return sha256(canonicalUnitInstructionalDocument(pack, unitNumber))
+        cachedUnitDigests.get(pack)?.get(unitNumber)?.let { return it }
+        val digest = sha256(canonicalUnitInstructionalDocument(pack, unitNumber))
+        synchronized(cachedUnitDigests) {
+            cachedUnitDigests.get(pack)?.get(unitNumber)?.let { return it }
+            unitDigestExecutionsForTests.incrementAndGet()
+            unitDigestExecutionThreadForTests = Thread.currentThread()
+            val stored = cachedUnitDigests.get(pack)?.toMutableMap() ?: mutableMapOf()
+            stored[unitNumber] = digest
+            cachedUnitDigests.put(pack, stored)
+        }
+        return digest
     }
 
     internal fun instructionalContentDigest(pack: V2CurriculumPack): String = contentReviewDigest(pack)
@@ -109,7 +151,26 @@ internal object V2Validator {
      * SHA-256 of the canonical check item. Attempt rows store this value at
      * creation so a later edit of the item cannot be treated as the same key.
      */
-    internal fun checkItemContentDigest(item: V2CheckItem): String = sha256(canonicalCheckItem(item))
+    internal fun checkItemContentDigest(item: V2CheckItem): String {
+        cachedItemDigests.get(item)?.let { return it }
+        val digest = sha256(canonicalCheckItem(item))
+        cachedItemDigests.put(item, digest)
+        return digest
+    }
+
+    private fun provenanceContentAndSourceHash(record: V2ProvenanceRecord): Pair<String, String> {
+        cachedProvenanceHashes.get(record)?.let { return it }
+        val hashes = sha256(record.shippedText) to sha256(record.originalSourceText)
+        cachedProvenanceHashes.put(record, hashes)
+        return hashes
+    }
+
+    private fun provenanceSharingSource(records: List<V2ProvenanceRecord>): Map<String, List<V2ProvenanceRecord>> {
+        provenanceBySource.get(records)?.let { return it }
+        val grouped = records.groupBy { it.sourceId }
+        provenanceBySource.put(records, grouped)
+        return grouped
+    }
 
     /**
      * Release acceptance for the pack-wide linguistic review and every unit.
@@ -148,12 +209,23 @@ internal object V2Validator {
         }
     }
 
+    private val sha256Digest = ThreadLocal.withInitial { MessageDigest.getInstance("SHA-256") }
+    private val hexDigits = "0123456789abcdef".toCharArray()
+
     private fun sha256(text: String): String {
-        val digest = MessageDigest.getInstance("SHA-256").digest(text.toByteArray(Charsets.UTF_8))
-        return digest.joinToString("") { byte -> "%02x".format(byte) }
+        val digest = sha256Digest.get() ?: error("SHA-256")
+        digest.reset()
+        val bytes = digest.digest(text.toByteArray(Charsets.UTF_8))
+        val encoded = CharArray(bytes.size * 2)
+        for (index in bytes.indices) {
+            val value = bytes[index].toInt() and 0xff
+            encoded[index * 2] = hexDigits[value ushr 4]
+            encoded[index * 2 + 1] = hexDigits[value and 0x0f]
+        }
+        return String(encoded)
     }
 
-    internal const val CONTENT_REVIEW_DIGEST_SCHEMA = 2
+    internal const val CONTENT_REVIEW_DIGEST_SCHEMA = 3
 
     internal const val INSTRUCTIONAL_DIGEST_SCHEMA = CONTENT_REVIEW_DIGEST_SCHEMA
 
@@ -463,6 +535,7 @@ internal object V2Validator {
                     "practiceStepIds" to canonArr(objective.practiceStepIds.map(::canonStr)),
                     "checkItemIds" to canonArr(objective.checkItemIds.map(::canonStr)),
                     "remediationStepIds" to canonArr(objective.remediationStepIds.map(::canonStr)),
+                    "gating" to canonBool(objective.gating),
                 )
             }),
             "sessions" to canonArr(unit.sessions.map { session ->
@@ -497,6 +570,7 @@ internal object V2Validator {
                     "minimumDistinctChecks" to canonNum(rule.minimumDistinctChecks),
                     "requireDueReview" to canonBool(rule.requireDueReview),
                     "tutorOptional" to canonBool(rule.tutorOptional),
+                    *rule.cumulativeReviewPolicyId?.let { arrayOf("cumulativeReviewPolicyId" to canonStr(it)) }.orEmpty(),
                 )
             } ?: "null"),
         )
@@ -522,6 +596,9 @@ internal object V2Validator {
             "sourceId" to canonStr(item.sourceId),
             "containsGeneratedRussian" to canonBool(item.containsGeneratedRussian),
         )
+        if (item.promptLetterRole != "CUE") {
+            fields += "promptLetterRole" to canonStr(item.promptLetterRole)
+        }
         if (item.distractorRationales.isNotEmpty()) {
             fields += "distractorRationales" to canonArr(item.distractorRationales.map(::canonStr))
         }
@@ -1166,7 +1243,19 @@ internal object V2Validator {
      * governed claim. Keyword text in an unrelated licensed record does not.
      */
     private fun capabilityDefects(pack: V2CurriculumPack, capability: V2SourceCapability): List<String> {
+        if (capability.sourceId == ContentAuditSources.SOURCE_ID) {
+            return correctedCapabilityDefects(pack, capability)
+        }
         val errors = mutableListOf<String>()
+        if (capability.supportedClaim == "letter-writing" && capability.exactSpan == RemainingSources.LETTER_SPAN) {
+            errors += "Source capability ${capability.id} retired universal letter-writing intake requires the exact pending correction"
+        }
+        if (capability.supportedClaim == "word-order" && capability.sourceHash == "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6") {
+            errors += "Source capability ${capability.id} historical word-order labels require contextual application correction"
+        }
+        if (capability.supportedClaim == "postal-address" && capability.sourceHash == "546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97") {
+            errors += "Source capability ${capability.id} retired universal postal-order intake requires the exact contextual correction"
+        }
         val binding = REQUIRED_SOURCE_CAPABILITIES[capability.unitNumber].orEmpty().firstOrNull {
             it.objectiveId == capability.objectiveId && it.claim == capability.supportedClaim
         }
@@ -1238,12 +1327,11 @@ internal object V2Validator {
             errors += "Source capability ${capability.id} revision does not match the frozen record"
             return errors
         }
-        val frozen = pack.provenanceRecords.filter {
-            it.sourceId == capability.sourceId &&
-                it.sourceRevision == capability.sourceRevision &&
+        val frozen = provenanceSharingSource(pack.provenanceRecords)[capability.sourceId].orEmpty().filter {
+            it.sourceRevision == capability.sourceRevision &&
                 it.sourceRecordId == capability.sourceRecordId &&
                 it.sourceHash == capability.sourceHash &&
-                it.sourceHash == sha256(it.originalSourceText) &&
+                it.sourceHash == provenanceContentAndSourceHash(it).second &&
                 retainedWorkLicense(it.licenseId, it.sourceId)
         }
         if (frozen.isEmpty()) {
@@ -1521,6 +1609,9 @@ internal object V2Validator {
         val id = capability.id
         val claim = admission.claim
         val synthesis = spanHost.synthesis
+        if (!OriginalApplicationTuplePins.matchesIfPinned(spanHost)) {
+            errors += "Source capability $id immutable application tuple identity does not match"
+        }
         if (synthesis == null || synthesis.objectiveOrClaimBinding != admission.binding) {
             errors += "Source capability $id synthesis binding does not match"
         }
@@ -2089,6 +2180,54 @@ internal object V2Validator {
         ) {
             return false
         }
+        if (capability.unitNumber == 17 && capability.objectiveId == "obj-u17-clock") {
+            return capability.supportedClaim == "clock-question" && capability.sourceId == "src-wikibooks-russian-cc-by-sa" &&
+                capability.sourceRevision == "4220316" && capability.sourceHash == "5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd" &&
+                spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
+                verifiedFrozen(spanHost) && Unit17QuestionPins.matches(pack)
+        }
+        if (capability.unitNumber == 29 && capability.objectiveId == "obj-u29-short-adjective") {
+            // This claim requires curated grammar contrasts; vocabulary glosses cannot clear it.
+            if (capability.supportedClaim != "short-form-adjective" ||
+                capability.sourceId != "src-wikipedia-russian-grammar-1369617627" ||
+                capability.sourceRevision != "1369617627" ||
+                capability.sourceHash != "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8" ||
+                spanHost.sourceHash != capability.sourceHash || spanHost.originalSourceText != capability.exactSpan ||
+                !verifiedFrozen(spanHost) || objective.checkItemIds != Unit29AdjectiveNativePins.checkIds || !Unit29AdjectiveNativePins.matches(pack)) return false
+            val checks = objective.checkItemIds.mapNotNull { pack.item(it) }
+            val practice = objective.practiceStepIds.flatMap { id -> pack.step(id)?.second?.itemIds.orEmpty() }
+            val guided = Unit29AdjectiveNativePins.guidedIds.mapNotNull(pack::item)
+            return checks.size == Unit29AdjectiveNativePins.checkIds.size && checks.all {
+                it.assessment?.independent == true && it.assessment.testedFeature == Unit29AdjectiveNativePins.feature(it.id) &&
+                    CompleteRuleContextPins.itemMatches(pack, it) && structureValid(pack, it).isEmpty()
+            } && guided.size == Unit29AdjectiveNativePins.guidedIds.size && guided.all {
+                it.id in practice && it.assessment?.independent == false &&
+                    it.assessment.testedFeature == Unit29AdjectiveNativePins.feature(it.id) &&
+                    CompleteRuleContextPins.itemMatches(pack, it) && structureValid(pack, it).isEmpty()
+            }
+        }
+        if (capability.unitNumber == 29 && capability.objectiveId == "obj-u29-punctuation") {
+            return capability.supportedClaim == "participle-punctuation" &&
+                capability.sourceId == "src-ruwiki-prichastie-153078996" && capability.sourceRevision == "153078996" &&
+                capability.sourceHash == "821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a" &&
+                spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
+                verifiedFrozen(spanHost) && Unit29PunctuationPins.matches(pack)
+        }
+        if (capability.unitNumber == 20 && capability.supportedClaim == "motion-directionality") {
+            return capability.objectiveId == "obj-u20-motion" &&
+                capability.sourceId == "src-wikipedia-russian-grammar-1369617627" &&
+                capability.sourceRevision == "1369617627" &&
+                capability.sourceHash == "72b5e9d7c0791a6d33f232a67ef4670b1b13a796de487690fe4d4a646bb60e74" &&
+                spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
+                verifiedFrozen(spanHost) && Unit20DirectionalityPins.matches(pack)
+        }
+        if (capability.unitNumber == 30 && capability.objectiveId == "obj-u30-letter-names") {
+            return capability.sourceId == "src-wikipedia-russian-alphabet-1371795481" &&
+                capability.sourceRevision == "1371795481" && capability.supportedClaim == "letter-name-review" &&
+                capability.sourceHash == "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526" &&
+                spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
+                verifiedFrozen(spanHost) && Unit30LanguagePins.matches(pack,objective)
+        }
         return objective.checkItemIds.mapNotNull { pack.item(it) }.any { item ->
             val participants = item.assessment?.relationParticipantIds.orEmpty().mapNotNull { id ->
                 pack.provenanceRecords.firstOrNull { it.itemId == id }
@@ -2543,6 +2682,9 @@ internal object V2Validator {
         if (unit.sessions.isEmpty()) errors += "Development unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Development unit ${unit.number} has no objectives"
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
+        if (unit.number == 4 && !Unit4NominativeRolePins.matches(pack)) {
+            errors += "Unit 4 nominative objective has no frozen distinct subject-role evidence chain"
+        }
         if (unit.number in 6..30) validateGovernedChecks(pack, unit, errors)
     }
 
@@ -2586,6 +2728,39 @@ internal object V2Validator {
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            if (objective.id == "obj-u6-animacy" && !Unit6AnimacyPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct animate and inanimate application chain"
+            }
+            if (objective.id == "obj-u13-reported" && !Unit13ReportedPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen supplied reported-context interpretation chain"
+            }
+            if (objective.id in setOf("obj-u28-imperfective-adverb", "obj-u28-perfective-adverb") && !Unit28TimingPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct guided timing and preserved independent chain"
+            }
+            if (objective.id == "obj-u24-word-order-contrast" && !Unit24ContextPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct guided context and preserved persuasion chain"
+            }
+            if (objective.id == "obj-u21-object-reference" && !Unit21ObjectPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct reflexive object application chain"
+            }
+            if (objective.id == "obj-u9-odindva" && !Unit9AgreementPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct masculine numeral application chain"
+            }
+            if (objective.id == "obj-u8-agreement" && !Unit8AgreementPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct adjective application chain"
+            }
+            if (objective.id == "obj-u17-clock" && !Unit17QuestionPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct question application chain"
+            }
+            if (objective.id == "obj-u29-punctuation" && !Unit29PunctuationPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen native punctuation application chain"
+            }
+            if (objective.id == "obj-u20-motion" && !Unit20DirectionalityPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen native directionality application chain"
+            }
+            if (Unit30LanguagePins.governs(objective.id) && !Unit30LanguagePins.matches(pack,objective)) {
+                errors += "Objective ${objective.id} has no frozen native language application chain"
+            }
             val checks = objective.checkItemIds.mapNotNull { pack.item(it) }
             if (checks.none { it.kind in GRAMMAR_ITEM_KINDS }) {
                 errors += "Unit ${unit.number} objective ${objective.id} has no check of its grammatical distinction"
@@ -3158,6 +3333,40 @@ internal object V2Validator {
     }
 
     /**
+     * Content-audit synthesis states each corrected cue, answer, and distractor set.
+     * Null means the cue is not a content-audit record. Empty means the proposed
+     * relationship is not one of the stated applications.
+     */
+    private fun contentAuditRelation(
+        cue: V2ProvenanceRecord,
+        answer: V2ProvenanceRecord,
+        distractors: List<V2ProvenanceRecord>,
+    ): String? {
+        if (cue.transformation != ContentAuditSources.TRANSFORMATION) return null
+        if (cue.sourceId != ContentAuditSources.SOURCE_ID) return ""
+        val applications = cue.synthesis?.applications.orEmpty()
+        if (applications.isEmpty()) return ""
+        val group = listOf(cue, answer) + distractors
+        val distractorTexts = distractors.map { it.shippedText }.toSet()
+        if (!group.all { CompleteRuleContextPins.matchesIfPinned(it) }) return ""
+        val spec = applications.firstOrNull {
+            it.cue == cue.shippedText && it.answer == answer.shippedText &&
+                it.distractors.toSet() == distractorTexts
+        } ?: return ""
+        if (
+            answer.shippedText == spec.answer &&
+            distractorTexts == spec.distractors.toSet() &&
+            spec.distractors.isNotEmpty() &&
+            spec.answer !in distractorTexts &&
+            group.all { sameFrozenSpan(cue, it) } &&
+            group.all { displayedInFrozen(it) }
+        ) {
+            return "STATED_APPLICATION"
+        }
+        return ""
+    }
+
+    /**
      * Original synthesis states each cue, answer, and distractor set.
      * Co-occurrence on the same span is not that application.
      * Null means the cue is not original synthesis. Empty means the proposed
@@ -3170,6 +3379,7 @@ internal object V2Validator {
     ): String? {
         if (cue.transformation != Phase2Sources.TRANSFORMATION) return null
         if (cue.sourceId != Phase2Sources.SOURCE_ID) return ""
+        if (!(listOf(cue, answer) + distractors).all { OriginalApplicationTuplePins.matchesIfPinned(it) }) return ""
         val applications = cue.synthesis?.applications.orEmpty()
         if (applications.isEmpty()) return ""
         val spec = applications.firstOrNull { it.cue == cue.shippedText } ?: return ""
@@ -3252,6 +3462,9 @@ internal object V2Validator {
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
     ): String? {
+        val audit = contentAuditRelation(cue, answer, distractors)
+        if (audit == "") return null
+        if (audit != null) return audit
         val synthesis = originalSynthesisRelation(cue, answer, distractors)
         if (synthesis == "") return null
         if (synthesis != null) return synthesis
@@ -3366,7 +3579,7 @@ internal object V2Validator {
         return null
     }
 
-    private fun structureValid(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
+    internal fun structureValid(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
         val errors = mutableListOf<String>()
         val assessment = item.assessment
         if (item.kind !in GRAMMAR_ITEM_KINDS) {
@@ -3487,6 +3700,10 @@ internal object V2Validator {
         "IMPERFECTIVE_PARTNER" to "imperfective partner",
         "PERFECTIVE_PAST" to "perfective past",
         "IMPERFECTIVE_PAST" to "imperfective past",
+        "REPORTED_NATIONALITY_GUIDED" to "nationality statement",
+        "REPORTED_FRAME_EMBEDDED_TIME" to "reporting verb",
+        "ANIMACY_INANIMATE_CONTEXT" to "masculine inanimate direct object",
+        "NOMINATIVE_CASE_ROLE" to "case role",
         "REPORTED_EVENING" to "reported evening",
         "DIRECT_EVENING" to "direct evening",
         "MOSCOW_FUTURE" to "Moscow",
@@ -3613,8 +3830,10 @@ internal object V2Validator {
         "obj-u25-nickname-rule",
         "obj-u25-productive-formation",
         "obj-u26-indefinite",
+        "obj-u26-word-order",
         "obj-u26-letter-writing",
         "obj-u26-correspondence",
+        "obj-u27-passive",
         "obj-u27-stress",
         "obj-u29-punctuation",
         "obj-u28-imperfective-adverb",
@@ -4228,8 +4447,19 @@ internal object V2Validator {
             errors += observableDistinctionErrors(pack, item)
         } else {
             val phrase = TARGET_PHRASES[feature]
-            if (feature.isBlank() || phrase == null || !item.prompt.contains(phrase)) {
+            // A meaning check must not reveal its English answer in the question.
+            // Keep this alternative limited to the three source-bound Unit 16 prepositions.
+            val prepositionMeaningTarget = item.objectiveId == "obj-u16-inst-prep" &&
+                feature in setOf("OVER_LABEL", "UNDER_LABEL", "BEFORE_LABEL") &&
+                item.prompt == "Which English spatial meaning fits the shown preposition?"
+            val prefixMeaningTarget = item.objectiveId == "obj-u19-prefix-caution" &&
+                feature in setOf("DISSUADE_MEANING", "AGREE_MEANING") &&
+                item.prompt == "Which English meaning matches the shown Russian verb?"
+            if (feature.isBlank() || phrase == null || (!item.prompt.contains(phrase) && !prepositionMeaningTarget && !prefixMeaningTarget)) {
                 errors += "Item ${item.id} has no explicit target"
+            }
+            if (item.objectiveId == "obj-u16-inst-prep" && item.prompt.contains(item.answer, ignoreCase = true)) {
+                errors += "Item ${item.id} prompt discloses the preposition meaning"
             }
             if (phrase != null && !assessment.whyAnswerDemonstratesObjective.contains(phrase)) {
                 errors += "Item ${item.id} answer rationale is not tied to the target"
@@ -4318,11 +4548,12 @@ internal object V2Validator {
         val answerAt = original.indexOf(answer)
         val distractorAt = original.indexOf(distractor)
         if (answerAt < 0 || distractorAt < 0) return false
-        val between = if (answerAt < distractorAt) {
-            original.substring(answerAt + answer.length, distractorAt)
-        } else {
-            original.substring(distractorAt + distractor.length, answerAt)
-        }
+        // Overlapping occurrences (for example perfective inside imperfective) are not
+        // two distinct glosses joined by an alternative marker.
+        val from = if (answerAt < distractorAt) answerAt + answer.length else distractorAt + distractor.length
+        val until = maxOf(answerAt, distractorAt)
+        if (from > until) return false
+        val between = original.substring(from, until)
         return between.length <= 24 && Regex("(?i)\\bor\\b").containsMatchIn(between)
     }
 
@@ -4464,17 +4695,69 @@ internal object V2Validator {
         }
     }
 
-    private fun validateItem(pack: V2CurriculumPack, item: V2CheckItem, errors: MutableList<String>) {
+    /** Curated interpretation of the retained lexical field; mutable synthesis cannot reverse it. */
+    private fun validateIndeclinabilityBinding(pack: V2CurriculumPack, item: V2CheckItem, errors: MutableList<String>) {
+        val cues = mapOf(
+            "u5-i-indecl-радио" to "ра́дио", "u5-i-indecl-такси" to "такси́",
+            "u5-i-indecl-метро" to "метро́", "u5-i-indecl-кино" to "кино́",
+            "u5-i-decl-книга" to "кни́га", "u5-i-decl-окно" to "окно́",
+        )
+        val cue = cues[item.id]
+        if (cue == null) {
+            if (item.kind == "SOURCE_INDECLINABLE") errors += "Item ${item.id} has no curated indeclinability binding"
+            return
+        }
+        val unchanged = "Indeclinable: unchanged for case or number"
+        val changeable = "Declinable: can change for case"
+        val flag = if (item.id.startsWith("u5-i-indecl-")) "1" else "0"
+        val lemma = item.id.substringAfterLast('-')
+        fun admittedCell(field: String, original: String, shown: String) = pack.provenanceRecords.any {
+            it.sourceId == OPENRUSSIAN_SOURCE && it.sourceRevision == "50e210c4803237779cb562bc1abcea529066031c" &&
+                it.unitNumber == 5 && it.objectiveId == "obj-u5-indeclinable" &&
+                it.sourceRecordId == "nouns.csv:$lemma#$field" && it.originalSourceText == original &&
+                it.shippedText == shown && verifiedFrozen(it)
+        }
+        val definitionBound = pack.provenanceRecords.any {
+            it.itemId == "prov-u5-indecl-rule" && it.sourceRevision == "4213267" &&
+                it.sourceId == "src-wikibooks-russian-cc-by-sa" &&
+                it.sourceHash == "6bec55fd46db6aa454810912d195369f920b099dcfa87cd2b1992b0ed7ec95d6" && verifiedFrozen(it)
+        }
+        if (item.kind != "SOURCE_INDECLINABLE" || item.objectiveId != "obj-u5-indeclinable" ||
+            item.sourceId != OPENRUSSIAN_SOURCE || item.promptLetter != cue ||
+            item.options != listOf(unchanged, changeable) || item.answer != (if (flag == "1") unchanged else changeable) ||
+            !admittedCell("indeclinable", flag, flag) || !admittedCell("accented", cue.replace("́", "'"), cue) || !definitionBound
+        ) errors += "Item ${item.id} indeclinability binding does not match the frozen noun and definition"
+    }
+
+    private fun validateItem(
+        pack: V2CurriculumPack,
+        item: V2CheckItem,
+        errors: MutableList<String>,
+        objectiveIds: Set<String>,
+        sourceIds: Set<String>,
+    ) {
+        if (CompleteRuleContextPins.required(item.id) && !CompleteRuleContextPins.itemMatches(pack, item)) {
+            errors += "Item ${item.id} complete rule context does not match its frozen application"
+        }
+        validateIndeclinabilityBinding(pack, item, errors)
+        if (item.promptLetterRole !in setOf("CUE", "ANSWER_REFERENCE") ||
+            (item.promptLetterRole == "ANSWER_REFERENCE" &&
+                (item.kind != "SOURCE_QUESTION" || item.promptLetter != item.answer))) {
+            errors += "Item ${item.id} has an invalid cue role"
+        }
+        if (item.kind == "SOURCE_QUESTION" && item.promptLetter == item.answer && item.promptLetterRole == "CUE") {
+            errors += "Item ${item.id} discloses its answer as a question cue"
+        }
         if (item.containsGeneratedRussian) errors += "Item ${item.id} marks generated Russian"
         if (item.language != "en") errors += "Item ${item.id} is not independently authored English"
         if (item.options.isEmpty() || item.answer !in item.options) {
             errors += "Item ${item.id} has no usable answer key"
         }
         if (item.feedback.isBlank()) errors += "Item ${item.id} has no feedback"
-        if (pack.units.flatMap { it.objectives }.none { it.id == item.objectiveId }) {
+        if (item.objectiveId !in objectiveIds) {
             errors += "Item ${item.id} objective is missing"
         }
-        if (pack.sources.none { it.id == item.sourceId }) {
+        if (item.sourceId !in sourceIds) {
             errors += "Item ${item.id} source ${item.sourceId} is missing"
         }
         if (item.reviewStatus !in CLOSED_REVIEW_STATES) {
@@ -4505,7 +4788,8 @@ internal object V2Validator {
                 }
             }
             val governedUnit = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-            if (governedUnit in 6..15 || governedUnit in 21..30 || item.objectiveId in BATCH_A_OBJECTIVES) {
+            if (governedUnit in 6..15 || governedUnit in 21..30 || item.objectiveId in BATCH_A_OBJECTIVES ||
+                item.objectiveId == "obj-u16-inst-prep") {
                 errors += structureValid(pack, item)
             }
         }
@@ -4757,6 +5041,11 @@ internal object V2Validator {
             }
         }
         val seen = mutableSetOf<String>()
+        val sourceIds = pack.sources.mapTo(HashSet()) { it.id }
+        val appRightsBySource = pack.rights.filter { it.permitsAppUse }.groupBy { it.sourceId }
+        val objectiveKeys = HashSet<Pair<String, Int>>()
+        pack.units.forEach { unit -> unit.objectives.forEach { objectiveKeys += it.id to it.unitNumber } }
+        val shippedByUnit = pack.provenanceRecords.groupBy { it.unitNumber }.mapValues { (_, rows) -> rows.map { it.shippedText } }
         pack.provenanceRecords.forEach { record ->
             if (!seen.add(record.itemId)) {
                 errors += "Provenance ${record.itemId} is duplicated"
@@ -4800,10 +5089,17 @@ internal object V2Validator {
                     errors += "Provenance ${record.itemId} Wikipedia license route is missing"
                 }
             }
+            if (record.sourceId == Unit21ObjectPins.SOURCE && !Unit21ObjectPins.admittedNative(record)) {
+                errors += "Provenance ${record.itemId} distinct reflexive object source identity is not admitted"
+            }
             if (record.sourceId.startsWith("src-ruwiki-")) {
                 val copyright = "\u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u044f:\u0410\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0435 \u043f\u0440\u0430\u0432\u0430 oldid ${BatchARemainingSources.RU_COPYRIGHT_OLDID}"
-                val revisionAllowed = record.sourceRevision == BatchARemainingSources.RU_REVISION ||
-                    record.sourceRevision in BatchBSources.RU_REVISIONS
+                val revisionAllowed = if (Unit29PunctuationPins.ownsSource(record.sourceId)) {
+                    Unit29PunctuationPins.admittedNative(record)
+                } else {
+                    record.sourceRevision == BatchARemainingSources.RU_REVISION ||
+                        record.sourceRevision in BatchBSources.RU_REVISIONS
+                }
                 if (!revisionAllowed ||
                     !record.sourceUrl.contains("oldid=${record.sourceRevision}") ||
                     !record.attribution.contains(copyright) ||
@@ -4843,11 +5139,15 @@ internal object V2Validator {
             if (isExcludedProvenance(record)) {
                 errors += "Provenance ${record.itemId} excluded source cannot enter the seed"
             }
-            if (record.contentHash != sha256(record.shippedText) || record.sourceHash != sha256(record.originalSourceText)) {
+            val (contentHash, sourceHash) = provenanceContentAndSourceHash(record)
+            if (record.contentHash != contentHash || record.sourceHash != sourceHash) {
                 errors += "Provenance ${record.itemId} source hash does not match the frozen record"
             }
             if (record.sourceId == Phase2Sources.SOURCE_ID || record.transformation == Phase2Sources.TRANSFORMATION) {
                 errors += originalSynthesisProvenanceErrors(record)
+            }
+            if (record.sourceId == ContentAuditSources.SOURCE_ID || record.transformation == ContentAuditSources.TRANSFORMATION) {
+                errors += contentAuditProvenanceErrors(record)
             }
             if (record.transformation == "sense selection" && !isDelimitedSense(record.originalSourceText, record.shippedText)) {
                 errors += "Provenance ${record.itemId} sense selection is not a delimited source sense"
@@ -4858,10 +5158,10 @@ internal object V2Validator {
             if (record.sourceId == "src-openrussian-50e210c4" && "/blob/" !in record.sourceUrl) {
                 errors += "Provenance ${record.itemId} source URL is not an exact file link"
             }
-            if (pack.sources.none { it.id == record.sourceId }) {
+            if (record.sourceId !in sourceIds) {
                 errors += "Provenance ${record.itemId} source does not resolve"
             }
-            val rights = pack.rights.filter { it.sourceId == record.sourceId && it.permitsAppUse }
+            val rights = appRightsBySource[record.sourceId].orEmpty()
             if (rights.isEmpty() || rights.any { !retainedWorkLicense(it.license, record.sourceId) }) {
                 errors += "Provenance ${record.itemId} rights do not resolve"
             }
@@ -4874,12 +5174,12 @@ internal object V2Validator {
             if (record.unitNumber !in 3..30) {
                 errors += "Provenance ${record.itemId} is outside the proposed Units 3-30 source intake"
             }
-            if (pack.units.flatMap { it.objectives }.none { it.id == record.objectiveId && it.unitNumber == record.unitNumber }) {
+            if ((record.objectiveId to record.unitNumber) !in objectiveKeys) {
                 errors += "Provenance ${record.itemId} objective is missing"
             }
         }
-        pack.units.filter { unit -> pack.provenanceRecords.any { it.unitNumber == unit.number } }.forEach { unit ->
-            val shipped = pack.provenanceRecords.filter { it.unitNumber == unit.number }.map { it.shippedText }.toSet()
+        pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
+            val shipped = shippedByUnit.getValue(unit.number).toSet()
             val hosts = mutableListOf(unit.topicSummary, unit.mappingNote, unit.title)
             unit.objectives.forEach { objective ->
                 hosts += objective.title
@@ -4945,6 +5245,8 @@ internal object V2Validator {
 
     private fun validateAuthoredEnglish(pack: V2CurriculumPack, errors: MutableList<String>) {
         val seen = mutableSetOf<String>()
+        val shippedByUnit = pack.provenanceRecords.groupBy { it.unitNumber }.mapValues { (_, rows) -> rows.map { it.shippedText } }
+        val shippedSetByUnit = shippedByUnit.mapValues { it.value.toSet() }
         pack.authoredEnglishRecords.forEach { record ->
             if (!seen.add(record.id)) {
                 errors += "Authored English ${record.id} is duplicated"
@@ -4958,10 +5260,7 @@ internal object V2Validator {
             if (record.unitNumber !in 3..30) {
                 errors += "Authored English ${record.id} is outside the proposed Units 3-30 source intake"
             }
-            val shippedForUnit = pack.provenanceRecords
-                .filter { it.unitNumber == record.unitNumber }
-                .map { it.shippedText }
-                .toSet()
+            val shippedForUnit = shippedSetByUnit[record.unitNumber].orEmpty()
             val quoted = cyrillicRegions(record.text)
             if (quoted.any { !admittedRegion(it, shippedForUnit) } ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||
@@ -4970,8 +5269,8 @@ internal object V2Validator {
                 errors += "independently authored English makes a linguistic claim"
             }
         }
-        pack.units.filter { unit -> pack.provenanceRecords.any { it.unitNumber == unit.number } }.forEach { unit ->
-            val shipped = pack.provenanceRecords.filter { it.unitNumber == unit.number }.map { it.shippedText }
+        pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
+            val shipped = shippedByUnit.getValue(unit.number)
             val scaffolds = pack.authoredEnglishRecords.filter { it.unitNumber == unit.number }.map { it.text }
             val spans = shipped + scaffolds
             val hosts = mutableListOf<String>()
@@ -5048,6 +5347,67 @@ internal object V2Validator {
     }
 
     /**
+     * A content-audit correction keeps its research note frozen for this revision
+     * and does not record a final audit. Coverage spans may omit applications.
+     * A contrast cue must state the application inside that same note.
+     */
+    private fun contentAuditProvenanceErrors(record: V2ProvenanceRecord): List<String> {
+        val errors = mutableListOf<String>()
+        if (!CompleteRuleContextPins.matchesIfPinned(record)) {
+            errors += "Provenance ${record.itemId} complete rule context does not match its frozen application"
+        }
+        if (record.sourceId != ContentAuditSources.SOURCE_ID ||
+            record.transformation != ContentAuditSources.TRANSFORMATION ||
+            record.sourceRevision != ContentAuditSources.REVISION ||
+            record.licenseId != ContentAuditSources.LICENSE ||
+            record.shippedText.isBlank() ||
+            record.shippedText !in record.originalSourceText
+        ) {
+            errors += "Provenance ${record.itemId} content-audit identity does not match"
+        }
+        val synthesis = record.synthesis
+            ?: return errors + "Provenance ${record.itemId} content-audit evidence is incomplete"
+        if (synthesis.bibliography.isBlank() ||
+            synthesis.authorshipDeclaration.isBlank() ||
+            synthesis.objectiveOrClaimBinding.isBlank()
+        ) {
+            errors += "Provenance ${record.itemId} content-audit evidence is incomplete"
+        }
+        if (synthesis.sourceDateOrVersion != ContentAuditSources.DATE) {
+            errors += "Provenance ${record.itemId} content-audit date does not match"
+        }
+        if (!synthesis.objectiveOrClaimBinding.startsWith(record.objectiveId + ":")) {
+            errors += "Provenance ${record.itemId} content-audit binding does not match"
+        }
+        val audit = synthesis.finalAudit
+        if (audit.artifactIdentity.isNotBlank() ||
+            audit.artifactDigest.isNotBlank() ||
+            audit.auditedContentDigest.isNotBlank() ||
+            audit.disposition.isNotBlank() ||
+            audit.modelVersion.isNotBlank() ||
+            audit.date.isNotBlank()
+        ) {
+            errors += "Provenance ${record.itemId} records a final audit before the final audit"
+        }
+        val coverageOnly = record.sourceRecordId.startsWith("ca-coverage:${record.objectiveId}:")
+        if (synthesis.applications.isEmpty() && !coverageOnly) {
+            errors += "Provenance ${record.itemId} content-audit contrast has no stated applications"
+        }
+        synthesis.applications.forEach { application ->
+            val outside = application.cue.isBlank() ||
+                application.answer.isBlank() ||
+                application.distractors.isEmpty() ||
+                application.cue !in record.originalSourceText ||
+                application.answer !in record.originalSourceText ||
+                application.distractors.any { it !in record.originalSourceText }
+            if (outside) {
+                errors += "Provenance ${record.itemId} content-audit application is outside the research note"
+            }
+        }
+        return errors
+    }
+
+    /**
      * Original synthesis is admitted only for the Phase 2 source identity.
      * A quoted page cannot borrow the transformation, and the synthesis cannot
      * record a final audit that has not happened.
@@ -5079,6 +5439,9 @@ internal object V2Validator {
         if (synthesis == null) {
             errors += "Provenance ${record.itemId} original synthesis evidence is missing"
             return errors
+        }
+        if (!OriginalApplicationTuplePins.matchesIfPinned(record)) {
+            errors += "Provenance ${record.itemId} immutable application tuple identity does not match"
         }
         if (synthesis.bibliography.isBlank() ||
             synthesis.authorshipDeclaration.isBlank() ||
@@ -5130,6 +5493,7 @@ internal object V2Validator {
     private fun retainedWorkLicense(license: String, sourceId: String): Boolean {
         if (isShareAlikeLicense(license)) return sourceId != RemainingSources.VECHERA_SOURCE
         if (license == "Original app text" && sourceId == Phase2Sources.SOURCE_ID) return true
+        if (license == "Original app text" && sourceId == ContentAuditSources.SOURCE_ID) return true
         return license == "Public domain" && sourceId == RemainingSources.VECHERA_SOURCE
     }
 

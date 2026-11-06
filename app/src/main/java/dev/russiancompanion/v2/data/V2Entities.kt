@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2.data
 
+import androidx.room.ForeignKey
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Index
@@ -112,4 +113,19 @@ internal data class V2BookAttestationEntity(
 internal data class V2UnitCompletionEntity(
     @PrimaryKey val unitNumber: Int,
     val recordedAtLocal: String,
+    @ColumnInfo(defaultValue = "1") val preReviewActivation: Boolean = false,
+    @ColumnInfo(defaultValue = "''") val reviewPolicyDigest: String = "",
+    @ColumnInfo(defaultValue = "''") val reviewAssignmentId: String = "",
+    @ColumnInfo(defaultValue = "0") val reviewCompletionOrder: Long = 0,
 )
+
+/** Immutable serialized assignment/answer identities; no UPDATE/REPLACE write API. */
+@Entity(tableName = "v2_review_assignments")
+internal data class V2ReviewAssignmentEntity(@PrimaryKey val id: String, val targetUnit: Int, val document: String)
+
+@Entity(tableName = "v2_review_answers",
+    foreignKeys = [ForeignKey(entity = V2ReviewAssignmentEntity::class, parentColumns = ["id"],
+        childColumns = ["assignmentId"], onDelete = ForeignKey.RESTRICT)],
+    indices = [Index("assignmentId"), Index(value = ["acceptedOrder"], unique = true)])
+internal data class V2ReviewAnswerEntity(@PrimaryKey val id: String, val assignmentId: String,
+    val acceptedOrder: Long, val document: String)
