@@ -13,6 +13,7 @@ import json
 import re
 from copy import deepcopy
 from pathlib import Path
+from provenance_metadata import separate, read_metadata, write_metadata
 
 ROOT = Path(__file__).resolve().parents[1]
 PACK_PATH = ROOT / "app/src/main/assets/content/v2-curriculum.json"
@@ -1467,6 +1468,8 @@ def main():
     apply_corrections(pack)
     if pack.items["u24-i-stand-ins-2"]["answer"] == "не́кто":
         raise SystemExit("negative pronoun key was not replaced")
+    data, metadata = separate(data, read_metadata())
+    write_metadata(metadata)
     PACK_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("items", len(data["items"]), "provenance", len(data["provenanceRecords"]), "mappings", len(data["ownedEditionMappings"]))
 

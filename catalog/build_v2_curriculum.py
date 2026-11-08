@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from provenance_metadata import separate, read_metadata, write_metadata
 
 from units_3_5_intake import build_units_3_5
 from units_6_10_intake import build_units_6_10
@@ -1763,8 +1764,9 @@ def build() -> dict:
 
 
 def main() -> None:
-    pack = build()
+    pack, metadata = separate(build(), read_metadata())
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    write_metadata(metadata)
     OUT.write_text(json.dumps(pack, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(
         f"wrote {OUT} units={len(pack['units'])} letters={len(pack['letters'])} "
