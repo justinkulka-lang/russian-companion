@@ -65,6 +65,36 @@ class Unit4PresentTeachingTest {
         }
     }
 
+    @Test fun correctTargetsCannotWaiveCurrentRequiredPresentTeaching() {
+        val p = current
+        val unit = p.unit(4)!!
+        val presentIds = present(p).steps.filter { it.kind == "TEACH" }.map { it.id }.toSet()
+        val teaching = requiredInstructionSteps(unit).filter { it.id in presentIds }
+        assertTrue(teaching.isNotEmpty())
+        assertEquals(presentIds, teaching.map { it.id }.toSet())
+        LocalStore.openInMemory(context()).use { s ->
+            s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 4))
+            for (step in unit.sessions.flatMap { it.steps }) {
+                for (id in step.itemIds) s.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id,
+                    p.item(id)!!.answer, PRESCRIBED_CHECK, step.id, "current-check")!!)
+                if (step !in teaching) s.v2CompleteGovernedStep(step.id,
+                    governedStepCompletionDigest(p, s.v2LearnerView(), step.id)!!, "current-instruction")
+            }
+            s.v2AttestBook(4, "current-host-attestation")
+            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,
+                objectiveState(objective(p), s.v2LearnerView(), p))
+            assertEquals(listOf("Finish the required instruction steps"),
+                ordinaryUnitRequirements(p, unit, s.v2LearnerView()).remaining)
+            for (step in teaching) s.v2CompleteGovernedStep(step.id,
+                governedStepCompletionDigest(p, s.v2LearnerView(), step.id)!!, "current-instruction")
+            assertTrue(ordinaryUnitRequirements(p, unit, s.v2LearnerView()).allowed)
+            assertFalse(cumulativeReviewComplete(p, s.v2LearnerView(), 4))
+            assertEquals(listOf("Complete the assigned earlier-objective review"),
+                currentUnitRequirements(p, unit, s.v2LearnerView()).remaining)
+            assertFalse(advancementDecision(p, unit, s.v2LearnerView()).allowed)
+        }
+    }
+
     private fun record(s: LocalStore, p: V2CurriculumPack, id: String, answer: String) {
         val step = present(p).steps.single { id in it.itemIds }
         s.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, answer, PRESCRIBED_CHECK, step.id, "row-${s.v2Attempts().size}")!!)

@@ -23,5 +23,19 @@ class Unit15AspectPreparationTest {
         assertTrue(p.step("u15-st-teach-aspect-consolidate-3")!!.second.body.contains("does not demonstrate that contextual skill"))
         assertEquals(6,p.unit(15)!!.advancement!!.minimumDistinctChecks)
     }
+    @Test fun overlappingEnglishLabelsRejectWithoutThrowingAndDoNotBecomeNativeEvidence() {
+        val p = pack()
+        val id = "u15-i-aspect-consolidate-1"
+        val item = p.item(id)!!
+        val options = listOf("imperfective", "perfective")
+        val bad = item.copy(answer = "perfective", options = options,
+            assessment = item.assessment!!.copy(contrastMembers = options))
+        val validation = V2Validator.validate(p.copy(items = p.items.map { if (it.id == id) bad else it }))
+        assertFalse(validation.ok)
+        assertTrue(validation.errors.joinToString("\n"), validation.errors.any {
+            it.contains(id) && (it.contains("response type") || it.contains("explicit target"))
+        })
+    }
+
     private fun pack()=V2PackLoader.parse(File(if(File("app").isDirectory)"." else "..","app/src/main/assets/content/v2-curriculum.json").readText())
 }
