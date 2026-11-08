@@ -114,7 +114,7 @@ Never:
 | ID | Type | Task | Done when | Needs | Status |
 |---|---|---|---|---|---|
 | T04 | CODEX | Move audio playback and recording into v2 (A2-19). Remove the legacy v1 UI, its tests and the release-gate legacy dependencies (A2-38, CC038, CC039, CC044). | v2 plays a bundled clip and records and replays a take in tests. No legacy UI code remains. | T03-n1 | DONE — bd7d5fdb63707934927a2a22820572c2c1f30bd3; v2 clip playback, recording, and replay; legacy UI and release-gate pathway checks removed. |
-| T05 | CODEX | Replace the per-unit Kotlin pin files with data-driven validator checks (A2-16). | No Unit*Pins.kt files remain. Validator covers the same rules. CI passes. | T04 | BLOCKED — attached execution environment became unavailable during VERIFY-CURSOR-2-n2 CI; exec_command reports no usable environment. Restore a usable attached executor, fetch the authoritative branch head, then resume. No T05 implementation was started. |
+| T05 | CODEX | Replace the per-unit Kotlin pin files with data-driven validator checks (A2-16). | No Unit*Pins.kt files remain. Validator covers the same rules. CI passes. | T04 | TODO |
 | T06 | CODEX | Fix CC018 (safe insets), CC019 (TalkBack option labels), CC040 (state saving) and CC041 (main-thread work). | Robolectric/UI tests cover each fix. | T04 | TODO |
 | T07 | CODEX | Move hard-coded review text into the pack (CC043). Pin the Gradle wrapper checksum and fix the CI license step (CC042). Move non-runtime provenance out of the bundled pack (A2-15). | Pack loads. CI passes. | T05 | TODO |
 | T07-n1 | CODEX | Cut full unit-test run time without removing behavior checks. Profile repeated fixture/setup and computation costs; compare with the VERIFY-CURSOR run at 712fff3e (4h 0m 51s unit-suite window). Do not implement this during VERIFY-CURSOR. | A completed passing full-suite run is measurably faster on a documented comparable runner, targeting 90 minutes or less. Behavior checks remain; no added exclusions/skips, narrowed test filters or weakened assertions. Record before/after scope and timings in this Log. | — | DONE — 9f217f857062221d4ca9116f47067aa9ca388813; exact-commit CI 42284640468 passed in 1h 20m 16s. |
@@ -924,3 +924,8 @@ Completed implementation tasks in this run:
 - VERIFY-CURSOR-2-n2: **968a90508f77f31b3627eaa70c18f0a5551887df**, CI **42461548472**, closure is this commit.
 
 Stopped after three completed tasks at the operational blocker, below the five-task cap. Next task: **T05 — CODEX — BLOCKED (executor required)**. No owner curriculum/device/listen-check approval is requested.
+
+
+### 2026-11-08 — Owner resumes continuous mode in restored executor
+
+Fetched and reset to authoritative remote d0674b3b2eafc1f82b2cccb6ba5181a3753687fe. Commands work in the restored executor. T05 operational blocker cleared and status returned to TODO. Owner authorizes up to five consecutive completed tasks with exact-commit CI per task, stopping at the next STOP-OWNER/STOP-CLAUDE, BLOCKED task, CI failure after one fix attempt, completion of T04-n1/T08/T12/T14/T15–T19, low session capacity or environment loss. At a stop, push available work and record exactly where the run stopped. No previous-run task counts carry forward. Three-part/no-recursive-split and all behavior/source/evidence constraints remain unchanged.
