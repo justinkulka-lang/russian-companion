@@ -48,6 +48,7 @@ import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.semantics.testTag
+import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.PaddingValues
 import dev.russiancompanion.v2.curriculum.V2Letter
@@ -327,7 +328,10 @@ internal fun V2LetterTile(
         },
         modifier = Modifier
             .size(width = 64.dp, height = 72.dp)
-            .semantics { testTag = "v2-letter-${letter.uppercase}" },
+            .semantics {
+                testTag = "v2-letter-${letter.uppercase}"
+                if (onClick != null) this.selected = selected
+            },
     ) {
         Column(
             modifier = Modifier.fillMaxSize(),

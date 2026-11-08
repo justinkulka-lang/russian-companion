@@ -269,7 +269,7 @@ internal fun V2TodayScreen(
     val objective = governed.first
     val today = governed.second
     val recorded = governed.third
-    var showPlan by remember { mutableStateOf(false) }
+    var showPlan by rememberSaveable(learner.currentUnitNumber) { mutableStateOf(false) }
     V2Scaffold(
         title = "Today",
         tab = V2Tab.TODAY,
@@ -698,7 +698,7 @@ internal fun V2AlphabetLabScreen(
     onBack: () -> Unit,
     onRecognition: () -> Unit = {},
 ) {
-    var selectedId by remember { mutableStateOf<String?>(null) }
+    var selectedId by rememberSaveable(pack.packId, pack.packVersion) { mutableStateOf<String?>(null) }
     val selected = pack.letters.firstOrNull { it.id == selectedId }
     val confusable = pack.letters.filter { !it.latinLookalike.isNullOrBlank() }
     V2Scaffold(title = "Alphabet Lab", tab = null, onTab = {}, onBack = onBack) {
@@ -736,7 +736,7 @@ internal fun V2ReferenceScreen(
     onTab: (V2Tab) -> Unit,
     onOpen: (String) -> Unit,
 ) {
-    var query by remember { mutableStateOf("") }
+    var query by rememberSaveable(pack.packId, pack.packVersion) { mutableStateOf("") }
     val entries = searchReferences(visibleReferences(pack, learner), query)
     V2LazyScaffold(title = "Reference", tab = V2Tab.REFERENCE, onTab = onTab) {
         item {
