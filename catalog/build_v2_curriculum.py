@@ -1757,6 +1757,7 @@ def build() -> dict:
             "mappedPronunciationAudio": 0,
         },
     }
+    pack["contentChecks"] = json.loads(Path(__file__).with_name("content-checks.json").read_text(encoding="utf-8"))
     return pack
 
 

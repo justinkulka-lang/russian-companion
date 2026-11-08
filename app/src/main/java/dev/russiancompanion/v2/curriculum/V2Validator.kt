@@ -242,6 +242,8 @@ internal object V2Validator {
     private fun canonicalInstructionalDocument(pack: V2CurriculumPack): String {
         return canonObj(
             "digestSchema" to canonNum(CONTENT_REVIEW_DIGEST_SCHEMA),
+            "contentChecks" to canonArr(pack.contentChecks.map { canonStr(
+                kotlinx.serialization.json.Json.encodeToString(V2ContentCheck.serializer(), it)) }),
             "schemaVersion" to canonNum(pack.schemaVersion),
             "packId" to canonStr(pack.packId),
             "packVersion" to canonNum(pack.packVersion),
@@ -2682,7 +2684,7 @@ internal object V2Validator {
         if (unit.sessions.isEmpty()) errors += "Development unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Development unit ${unit.number} has no objectives"
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
-        if (unit.number == 4 && !Unit4NominativeRolePins.matches(pack)) {
+        if (unit.number == 4 && !V2ContentChecks.matches(pack, "obj-u4-nominative")) {
             errors += "Unit 4 nominative objective has no frozen distinct subject-role evidence chain"
         }
         if (unit.number in 6..30) validateGovernedChecks(pack, unit, errors)
@@ -2728,10 +2730,10 @@ internal object V2Validator {
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
-            if (objective.id == "obj-u6-animacy" && !Unit6AnimacyPins.matches(pack)) {
+            if (objective.id == "obj-u6-animacy" && !V2ContentChecks.matches(pack, "obj-u6-animacy")) {
                 errors += "Objective ${objective.id} has no frozen distinct animate and inanimate application chain"
             }
-            if (objective.id == "obj-u13-reported" && !Unit13ReportedPins.matches(pack)) {
+            if (objective.id == "obj-u13-reported" && !V2ContentChecks.matches(pack, "obj-u13-reported")) {
                 errors += "Objective ${objective.id} has no frozen supplied reported-context interpretation chain"
             }
             if (objective.id in setOf("obj-u28-imperfective-adverb", "obj-u28-perfective-adverb") && !Unit28TimingPins.matches(pack)) {
@@ -2743,10 +2745,10 @@ internal object V2Validator {
             if (objective.id == "obj-u21-object-reference" && !Unit21ObjectPins.matches(pack)) {
                 errors += "Objective ${objective.id} has no frozen distinct reflexive object application chain"
             }
-            if (objective.id == "obj-u9-odindva" && !Unit9AgreementPins.matches(pack)) {
+            if (objective.id == "obj-u9-odindva" && !V2ContentChecks.matches(pack, "obj-u9-odindva")) {
                 errors += "Objective ${objective.id} has no frozen distinct masculine numeral application chain"
             }
-            if (objective.id == "obj-u8-agreement" && !Unit8AgreementPins.matches(pack)) {
+            if (objective.id == "obj-u8-agreement" && !V2ContentChecks.matches(pack, "obj-u8-agreement")) {
                 errors += "Objective ${objective.id} has no frozen distinct adjective application chain"
             }
             if (objective.id == "obj-u17-clock" && !Unit17QuestionPins.matches(pack)) {

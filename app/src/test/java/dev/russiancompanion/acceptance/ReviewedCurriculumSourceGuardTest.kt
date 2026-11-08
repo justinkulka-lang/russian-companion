@@ -10,9 +10,9 @@ class ReviewedCurriculumSourceGuardTest {
     @Test fun exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus() {
         val pack = ReviewedCurriculumSourceGuard.pack()
         val entries = ReviewedCurriculumSourceGuard.entries
-        assertEquals(19, entries.size)
+        assertEquals(14, entries.size)
         val currentBindings = entries.flatMap { it["bindings"]!!.jsonArray }.map { it.jsonObject }
-        assertEquals(292, currentBindings.size)
+        assertEquals(280, currentBindings.size)
         assertEquals(26, currentBindings.count { it.text("kind") == "ITEM_ID" })
         assertEquals(2, currentBindings.count { it.text("purpose") == "EXISTING_RESEARCH_CUE_COMPARISON_PENDING_SOURCE_REVIEW" })
         assertEquals(emptyList<String>(), ReviewedCurriculumSourceGuard.offenders(ReviewedCurriculumSourceGuard.sources(), pack))

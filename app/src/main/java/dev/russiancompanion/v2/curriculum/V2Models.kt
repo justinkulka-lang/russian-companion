@@ -98,6 +98,7 @@ internal data class V2CurriculumPack(
     val references: List<V2ReferenceEntry>,
     val units: List<V2Unit>,
     val sourceCapabilities: List<V2SourceCapability> = emptyList(),
+    val contentChecks: List<V2ContentCheck> = emptyList(),
     val admissions: V2Admissions,
 )
 
