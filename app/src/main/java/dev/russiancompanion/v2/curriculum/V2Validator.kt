@@ -2186,7 +2186,7 @@ internal object V2Validator {
             return capability.supportedClaim == "clock-question" && capability.sourceId == "src-wikibooks-russian-cc-by-sa" &&
                 capability.sourceRevision == "4220316" && capability.sourceHash == "5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd" &&
                 spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
-                verifiedFrozen(spanHost) && Unit17QuestionPins.matches(pack)
+                verifiedFrozen(spanHost) && V2ContentChecks.matches(pack, "obj-u17-clock")
         }
         if (capability.unitNumber == 29 && capability.objectiveId == "obj-u29-short-adjective") {
             // This claim requires curated grammar contrasts; vocabulary glosses cannot clear it.
@@ -2221,7 +2221,7 @@ internal object V2Validator {
                 capability.sourceRevision == "1369617627" &&
                 capability.sourceHash == "72b5e9d7c0791a6d33f232a67ef4670b1b13a796de487690fe4d4a646bb60e74" &&
                 spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
-                verifiedFrozen(spanHost) && Unit20DirectionalityPins.matches(pack)
+                verifiedFrozen(spanHost) && V2ContentChecks.matches(pack, "obj-u20-motion")
         }
         if (capability.unitNumber == 30 && capability.objectiveId == "obj-u30-letter-names") {
             return capability.sourceId == "src-wikipedia-russian-alphabet-1371795481" &&
@@ -2736,13 +2736,13 @@ internal object V2Validator {
             if (objective.id == "obj-u13-reported" && !V2ContentChecks.matches(pack, "obj-u13-reported")) {
                 errors += "Objective ${objective.id} has no frozen supplied reported-context interpretation chain"
             }
-            if (objective.id in setOf("obj-u28-imperfective-adverb", "obj-u28-perfective-adverb") && !Unit28TimingPins.matches(pack)) {
+            if (objective.id in setOf("obj-u28-imperfective-adverb", "obj-u28-perfective-adverb") && !V2ContentChecks.matches(pack, "unit28-timing")) {
                 errors += "Objective ${objective.id} has no frozen distinct guided timing and preserved independent chain"
             }
-            if (objective.id == "obj-u24-word-order-contrast" && !Unit24ContextPins.matches(pack)) {
+            if (objective.id == "obj-u24-word-order-contrast" && !V2ContentChecks.matches(pack, "obj-u24-word-order-contrast")) {
                 errors += "Objective ${objective.id} has no frozen distinct guided context and preserved persuasion chain"
             }
-            if (objective.id == "obj-u21-object-reference" && !Unit21ObjectPins.matches(pack)) {
+            if (objective.id == "obj-u21-object-reference" && !V2ContentChecks.matches(pack, "obj-u21-object-reference")) {
                 errors += "Objective ${objective.id} has no frozen distinct reflexive object application chain"
             }
             if (objective.id == "obj-u9-odindva" && !V2ContentChecks.matches(pack, "obj-u9-odindva")) {
@@ -2751,13 +2751,13 @@ internal object V2Validator {
             if (objective.id == "obj-u8-agreement" && !V2ContentChecks.matches(pack, "obj-u8-agreement")) {
                 errors += "Objective ${objective.id} has no frozen distinct adjective application chain"
             }
-            if (objective.id == "obj-u17-clock" && !Unit17QuestionPins.matches(pack)) {
+            if (objective.id == "obj-u17-clock" && !V2ContentChecks.matches(pack, "obj-u17-clock")) {
                 errors += "Objective ${objective.id} has no frozen distinct question application chain"
             }
             if (objective.id == "obj-u29-punctuation" && !Unit29PunctuationPins.matches(pack)) {
                 errors += "Objective ${objective.id} has no frozen native punctuation application chain"
             }
-            if (objective.id == "obj-u20-motion" && !Unit20DirectionalityPins.matches(pack)) {
+            if (objective.id == "obj-u20-motion" && !V2ContentChecks.matches(pack, "obj-u20-motion")) {
                 errors += "Objective ${objective.id} has no frozen native directionality application chain"
             }
             if (Unit30LanguagePins.governs(objective.id) && !Unit30LanguagePins.matches(pack,objective)) {
@@ -5091,7 +5091,8 @@ internal object V2Validator {
                     errors += "Provenance ${record.itemId} Wikipedia license route is missing"
                 }
             }
-            if (record.sourceId == Unit21ObjectPins.SOURCE && !Unit21ObjectPins.admittedNative(record)) {
+            if (record.sourceId == "src-enwiki-reflexive-pronoun-1374712982" &&
+                !V2ContentChecks.admittedNative(pack, "obj-u21-object-reference", record)) {
                 errors += "Provenance ${record.itemId} distinct reflexive object source identity is not admitted"
             }
             if (record.sourceId.startsWith("src-ruwiki-")) {

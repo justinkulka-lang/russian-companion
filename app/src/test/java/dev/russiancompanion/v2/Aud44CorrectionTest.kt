@@ -2,7 +2,7 @@ package dev.russiancompanion.v2
 
 import dev.russiancompanion.release.readAcceptanceCandidate
 import dev.russiancompanion.v2.curriculum.CompleteRuleContextPins
-import dev.russiancompanion.v2.curriculum.Unit17QuestionPins
+import dev.russiancompanion.v2.curriculum.V2ContentChecks
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
@@ -175,7 +175,7 @@ class Aud44CorrectionTest {
         val donor = live.items.single { it.id == "u17-i-question-clock" }
         val source = live.sourceCapabilities.single { it.supportedClaim == "clock-question" }
         val records = donor.assessment!!.relationParticipantIds.map { id -> live.provenanceRecords.single { it.itemId == id } }
-        assertTrue(Unit17QuestionPins.matches(live))
+        assertTrue(V2ContentChecks.matches(live, "obj-u17-clock"))
         assertTrue(CompleteRuleContextPins.itemMatches(live, donor))
         assertTrue(records.none { it.originalSourceText == source.exactSpan })
         val forged = impersonateProductiveClock(live, "clock-question", fabricateRecordId = false)
@@ -354,7 +354,7 @@ class Aud44CorrectionTest {
         // while the other donors still use direct participants from their public span.
         val questionPacket = sourceClaim == "clock-question"
         val template = if (questionPacket) {
-            assertTrue(Unit17QuestionPins.matches(pack))
+            assertTrue(V2ContentChecks.matches(pack, "obj-u17-clock"))
             pack.items.single { it.id == "u17-i-question-clock" }.also {
                 assertEquals(source.objectiveId, it.objectiveId)
                 assertTrue(it.assessment!!.independent)

@@ -357,5 +357,909 @@
         "testedFeature": "REPORTED_FRAME_EMBEDDED_TIME"
       }
     ]
+  },
+  {
+    "id": "obj-u17-clock",
+    "sources": [
+      {
+        "unitNumber": 17,
+        "objectiveId": "obj-u17-clock",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4220316",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+        "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+        "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+        "shippedText": "Которое яблоко моё?",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u17-question-native-apple-ru"
+      },
+      {
+        "unitNumber": 17,
+        "objectiveId": "obj-u17-clock",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4220316",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+        "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+        "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+        "shippedText": "Which apple is mine?",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u17-question-native-apple-en"
+      },
+      {
+        "unitNumber": 17,
+        "objectiveId": "obj-u17-clock",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4220316",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+        "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+        "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+        "shippedText": "Который час?",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u17-question-native-clock-ru"
+      },
+      {
+        "unitNumber": 17,
+        "objectiveId": "obj-u17-clock",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4220316",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+        "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+        "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+        "shippedText": "What time is it?",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u17-question-native-clock-en"
+      },
+      {
+        "unitNumber": 17,
+        "objectiveId": "obj-u17-clock",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4220316",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+        "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+        "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+        "shippedText": "который",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u17-question-native-clock-word"
+      },
+      {
+        "unitNumber": 17,
+        "objectiveId": "obj-u17-clock",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4220316",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+        "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+        "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+        "shippedText": "Которую книгу вы хотите?",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u17-question-native-book-ru"
+      },
+      {
+        "unitNumber": 17,
+        "objectiveId": "obj-u17-clock",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4220316",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+        "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+        "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+        "shippedText": "Which book do you want?",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u17-question-native-book-en"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj-u17-clock",
+        "unitNumber": 17,
+        "kind": "RECOGNITION",
+        "gating": true,
+        "checkItemIds": [
+          "u17-i-question-clock",
+          "u17-i-question-book"
+        ],
+        "guidedItemIds": [
+          "u17-g-question-apple"
+        ]
+      },
+      {
+        "id": "obj-u17-clock-vocabulary",
+        "unitNumber": 17,
+        "kind": "GUIDANCE",
+        "gating": false,
+        "checkItemIds": [],
+        "practiceStepIds": []
+      }
+    ],
+    "items": [
+      {
+        "id": "u17-g-question-apple",
+        "objectiveId": "obj-u17-clock",
+        "independent": false,
+        "testedFeature": "QUESTION_OBJECT_SELECTION_GUIDED"
+      },
+      {
+        "id": "u17-i-question-clock",
+        "objectiveId": "obj-u17-clock",
+        "independent": true,
+        "testedFeature": "QUESTION_CLOCK_RECOGNITION",
+        "differentPromptItemId": "u17-g-question-apple"
+      },
+      {
+        "id": "u17-i-question-book",
+        "objectiveId": "obj-u17-clock",
+        "independent": true,
+        "testedFeature": "QUESTION_BOOK_SELECTION",
+        "differentPromptItemId": "u17-g-question-apple"
+      }
+    ]
+  },
+  {
+    "id": "obj-u20-motion",
+    "sources": [
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "Мы идём в библиотеку.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-library-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "We are headed to the library.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-library-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "Ребёнок ходит шесть месяцев.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-ability-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "The child has been walking for six months.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-ability-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "Птицы летят на юг.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-birds-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "The birds are flying south.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-birds-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "Мы ходили по городу весь день.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-city-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "We walked around the city all day.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-city-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "Она ходит в супермаркет каждую неделю.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-weekly-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "She goes to the supermarket every week.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-weekly-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "В прошлом году я ездил в Россию.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-round-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 20,
+        "objectiveId": "obj-u20-motion",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+        "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+        "shippedText": "I went to Russia (and returned) last year.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u20-direction-native-round-en",
+        "textMatch": "CONTAINS"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj-u20-motion",
+        "unitNumber": 20,
+        "kind": "RECOGNITION",
+        "gating": true,
+        "checkItemIds": [
+          "u20-i-motion-1",
+          "u20-i-motion-2",
+          "u20-i-motion-3",
+          "u20-i-motion-4",
+          "u20-i-direction-birds",
+          "u20-i-direction-city",
+          "u20-i-direction-weekly",
+          "u20-i-direction-round"
+        ],
+        "requiredGuidedItemIds": [
+          "u20-g-direction-library",
+          "u20-g-direction-ability"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "u20-i-direction-birds",
+        "objectiveId": "obj-u20-motion",
+        "independent": true,
+        "testedFeature": "MOTION_DIRECTIONAL_APPLICATION"
+      },
+      {
+        "id": "u20-i-direction-city",
+        "objectiveId": "obj-u20-motion",
+        "independent": true,
+        "testedFeature": "MOTION_DIRECTIONAL_APPLICATION"
+      },
+      {
+        "id": "u20-i-direction-weekly",
+        "objectiveId": "obj-u20-motion",
+        "independent": true,
+        "testedFeature": "MOTION_DIRECTIONAL_APPLICATION"
+      },
+      {
+        "id": "u20-i-direction-round",
+        "objectiveId": "obj-u20-motion",
+        "independent": true,
+        "testedFeature": "MOTION_DIRECTIONAL_APPLICATION"
+      },
+      {
+        "id": "u20-g-direction-library",
+        "objectiveId": "obj-u20-motion",
+        "independent": false,
+        "testedFeature": "MOTION_DIRECTIONAL_APPLICATION"
+      },
+      {
+        "id": "u20-g-direction-ability",
+        "objectiveId": "obj-u20-motion",
+        "independent": false,
+        "testedFeature": "MOTION_DIRECTIONAL_APPLICATION"
+      }
+    ]
+  },
+  {
+    "id": "obj-u21-object-reference",
+    "sources": [
+      {
+        "unitNumber": 21,
+        "objectiveId": "obj-u21-object-reference",
+        "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+        "sourceRevision": "1374712982",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+        "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|себя}",
+        "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+        "shippedText": "Он поранил себя",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u21-object-transfer-native-self",
+        "textMatch": "CONTAINS",
+        "attributionContains": [
+          "Wikipedia:Copyrights oldid 1369466282"
+        ],
+        "requireNoAudio": true
+      },
+      {
+        "unitNumber": 21,
+        "objectiveId": "obj-u21-object-reference",
+        "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+        "sourceRevision": "1374712982",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+        "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|себя}",
+        "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+        "shippedText": "Он поранил его",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u21-object-transfer-native-other",
+        "textMatch": "CONTAINS",
+        "attributionContains": [
+          "Wikipedia:Copyrights oldid 1369466282"
+        ],
+        "requireNoAudio": true
+      },
+      {
+        "unitNumber": 21,
+        "objectiveId": "obj-u21-object-reference",
+        "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+        "sourceRevision": "1374712982",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+        "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|себя}",
+        "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+        "shippedText": "себя",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u21-object-transfer-native-reflexive",
+        "textMatch": "CONTAINS",
+        "attributionContains": [
+          "Wikipedia:Copyrights oldid 1369466282"
+        ],
+        "requireNoAudio": true
+      },
+      {
+        "unitNumber": 21,
+        "objectiveId": "obj-u21-object-reference",
+        "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+        "sourceRevision": "1374712982",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+        "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|себя}",
+        "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+        "shippedText": "его",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u21-object-transfer-native-personal",
+        "textMatch": "CONTAINS",
+        "attributionContains": [
+          "Wikipedia:Copyrights oldid 1369466282"
+        ],
+        "requireNoAudio": true
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj-u21-object-reference",
+        "unitNumber": 21,
+        "kind": "RECOGNITION",
+        "gating": true,
+        "checkItemIds": [
+          "u21-i-object-reference-1",
+          "u21-i-object-reference-2"
+        ],
+        "guidedItemIds": [
+          "u21-g-object-reference-0"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "u21-i-object-reference-2",
+        "independent": true,
+        "testedFeature": "REFLEXIVE_MYSELF_SENTENCE",
+        "differentPromptItemId": "u21-g-object-reference-0"
+      }
+    ],
+    "rights": [
+      {
+        "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "id": "obj-u24-word-order-contrast",
+    "sources": [
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-word-order-contrast",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "context-guided-subject-focus:== Syntax ==\nBasic word order, both in conversation and written language, is ",
+        "sourceHash": "de21f95b9b994a9013d8f6d9796ffde4c38648b48c3156fce81fb66427522205",
+        "shippedText": "В магазин пошёл я.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u24-context-transfer-native-guide-ru"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-word-order-contrast",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "context-guided-subject-focus:== Syntax ==\nBasic word order, both in conversation and written language, is ",
+        "sourceHash": "de21f95b9b994a9013d8f6d9796ffde4c38648b48c3156fce81fb66427522205",
+        "shippedText": "It was me who went to the shop.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u24-context-transfer-native-guide-en"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-word-order-contrast",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "context-guided-subject-focus:== Syntax ==\nBasic word order, both in conversation and written language, is ",
+        "sourceHash": "de21f95b9b994a9013d8f6d9796ffde4c38648b48c3156fce81fb66427522205",
+        "shippedText": "В магазин я пошёл.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u24-context-transfer-native-destination-ru"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-word-order-contrast",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "context-guided-subject-focus:== Syntax ==\nBasic word order, both in conversation and written language, is ",
+        "sourceHash": "de21f95b9b994a9013d8f6d9796ffde4c38648b48c3156fce81fb66427522205",
+        "shippedText": "To the shop—that's where I went.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u24-context-transfer-native-destination-en"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-persuasion-reference",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+        "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+        "shippedText": "Не надо меня уговаривать.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-0-ru"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-persuasion-reference",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+        "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+        "shippedText": "One should not persuade me",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-0-en"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-persuasion-reference",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+        "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+        "shippedText": "Меня не надо уговаривать.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-1-ru"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-persuasion-reference",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+        "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+        "shippedText": "There is no need to persuade me",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-1-en"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-word-order-contrast",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+        "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+        "shippedText": "Не надо меня уговаривать.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-ex-u24-word-order-contrast-0-ru"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-word-order-contrast",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+        "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+        "shippedText": "One should not persuade me",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-ex-u24-word-order-contrast-0-en"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-word-order-contrast",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+        "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+        "shippedText": "Меня не надо уговаривать.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-ex-u24-word-order-contrast-1-ru"
+      },
+      {
+        "unitNumber": 24,
+        "objectiveId": "obj-u24-word-order-contrast",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+        "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+        "shippedText": "There is no need to persuade me",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-ex-u24-word-order-contrast-1-en"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj-u24-word-order-contrast",
+        "unitNumber": 24,
+        "kind": "RECOGNITION",
+        "gating": true,
+        "checkItemIds": [
+          "u24-i-word-order-contrast-1",
+          "u24-i-word-order-contrast-2"
+        ],
+        "guidedItemIds": [
+          "u24-g-context-subject-focus"
+        ]
+      },
+      {
+        "id": "obj-u24-persuasion-reference",
+        "unitNumber": 24,
+        "kind": "GUIDANCE",
+        "gating": false,
+        "checkItemIds": [],
+        "practiceStepIds": []
+      }
+    ],
+    "items": [
+      {
+        "id": "u24-g-word-order-contrast-0",
+        "objectiveId": "obj-u24-persuasion-reference",
+        "kind": "SOURCE_MEANING",
+        "noAssessment": true,
+        "prompt": "Не надо меня уговаривать.",
+        "answer": "One should not persuade me",
+        "options": [
+          "One should not persuade me",
+          "There is no need to persuade me"
+        ],
+        "requireContext": false,
+        "requireStructure": false
+      },
+      {
+        "id": "u24-i-word-order-contrast-1",
+        "prompt": "Меня не надо уговаривать.",
+        "answer": "There is no need to persuade me",
+        "independent": true,
+        "requireContext": false
+      },
+      {
+        "id": "u24-i-word-order-contrast-2",
+        "prompt": "Не надо меня уговаривать.",
+        "answer": "One should not persuade me",
+        "independent": true,
+        "requireContext": false
+      },
+      {
+        "id": "u24-g-context-subject-focus",
+        "independent": false,
+        "testedFeature": "WORD_ORDER_SUBJECT_FOCUS_GUIDED",
+        "differentPromptItemIds": [
+          "u24-i-word-order-contrast-1",
+          "u24-i-word-order-contrast-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "unit28-timing",
+    "sources": [
+      {
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "sourceId": "src-ruwikisource-vechera-5336197",
+        "sourceRevision": "5336197",
+        "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+        "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+        "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+        "shippedText": "отдыхал читая",
+        "transformation": "selection",
+        "licenseId": "Public domain",
+        "id": "prov-u28-timing-native-imperfective-clause",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "sourceId": "src-ruwikisource-vechera-5336197",
+        "sourceRevision": "5336197",
+        "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+        "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+        "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+        "shippedText": "Павел Сергеич Вязовский",
+        "transformation": "selection",
+        "licenseId": "Public domain",
+        "id": "prov-u28-timing-native-imperfective-actor",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "sourceId": "src-openrussian-50e210c4",
+        "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+        "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+        "sourceRecordId": "verbs.csv:читать#timing-context",
+        "sourceHash": "db48a48e370520d2f199cdf3647c2a7bbd98760401eee7722c22c0e27eafb05d",
+        "shippedText": "читать",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u28-timing-native-imperfective-verb",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "sourceId": "src-openrussian-50e210c4",
+        "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+        "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+        "sourceRecordId": "verbs.csv:читать#timing-context",
+        "sourceHash": "db48a48e370520d2f199cdf3647c2a7bbd98760401eee7722c22c0e27eafb05d",
+        "shippedText": "imperfective",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u28-timing-native-imperfective-aspect",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-perfective-adverb",
+        "sourceId": "src-ruwikisource-vechera-5336197",
+        "sourceRevision": "5336197",
+        "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+        "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+        "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+        "shippedText": "устав писать ложился на диван",
+        "transformation": "selection",
+        "licenseId": "Public domain",
+        "id": "prov-u28-timing-native-perfective-clause",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-perfective-adverb",
+        "sourceId": "src-ruwikisource-vechera-5336197",
+        "sourceRevision": "5336197",
+        "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+        "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+        "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+        "shippedText": "Павел Сергеич Вязовский",
+        "transformation": "selection",
+        "licenseId": "Public domain",
+        "id": "prov-u28-timing-native-perfective-actor",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-perfective-adverb",
+        "sourceId": "src-openrussian-50e210c4",
+        "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+        "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+        "sourceRecordId": "verbs.csv:устать#timing-context",
+        "sourceHash": "4b77e66fd55de22edba1168e4be7de68d6222fbeeb2b789be1e39952aed0d225",
+        "shippedText": "устать",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u28-timing-native-perfective-verb",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-perfective-adverb",
+        "sourceId": "src-openrussian-50e210c4",
+        "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+        "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+        "sourceRecordId": "verbs.csv:устать#timing-context",
+        "sourceHash": "4b77e66fd55de22edba1168e4be7de68d6222fbeeb2b789be1e39952aed0d225",
+        "shippedText": "perfective",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u28-timing-native-perfective-aspect",
+        "textMatch": "CONTAINS"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj-u28-imperfective-adverb",
+        "unitNumber": 28,
+        "kind": "RECOGNITION",
+        "gating": true,
+        "checkItemIds": [
+          "u28-i-imperfective-adverb-1",
+          "u28-i-imperfective-adverb-2"
+        ],
+        "guidedItemIds": [
+          "u28-g-imperfective-adverb-0"
+        ]
+      },
+      {
+        "id": "obj-u28-perfective-adverb",
+        "unitNumber": 28,
+        "kind": "RECOGNITION",
+        "gating": true,
+        "checkItemIds": [
+          "u28-i-perfective-adverb-1",
+          "u28-i-perfective-adverb-2"
+        ],
+        "guidedItemIds": [
+          "u28-g-perfective-adverb-0"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "u28-g-imperfective-adverb-0",
+        "prompt": "отдыхал читая",
+        "answer": "simultaneous with the main predicate",
+        "options": [
+          "simultaneous with the main predicate",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "testedFeature": "IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+        "independent": false,
+        "requireContext": false
+      },
+      {
+        "id": "u28-i-imperfective-adverb-1",
+        "prompt": "читая письмо, он улыбался",
+        "answer": "simultaneous with the main predicate",
+        "independent": true,
+        "requireContext": false
+      },
+      {
+        "id": "u28-i-imperfective-adverb-2",
+        "prompt": "читая письмо, он улыбался",
+        "answer": "the reader and the person smiling are the same person",
+        "independent": true,
+        "requireContext": false
+      },
+      {
+        "id": "u28-g-perfective-adverb-0",
+        "prompt": "устав писать ложился на диван",
+        "answer": "anterior to a past main action",
+        "options": [
+          "anterior to a past main action",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "testedFeature": "PERFECTIVE_ADVERB_ANTERIOR",
+        "independent": false,
+        "requireContext": false
+      },
+      {
+        "id": "u28-i-perfective-adverb-1",
+        "prompt": "написав письмо, она отправит его завтра",
+        "answer": "anterior to a future main action",
+        "independent": true,
+        "requireContext": false
+      },
+      {
+        "id": "u28-i-perfective-adverb-2",
+        "prompt": "написав письмо, она отправит его завтра",
+        "answer": "the writer and sender are the same person",
+        "independent": true,
+        "requireContext": false
+      }
+    ]
   }
 ]

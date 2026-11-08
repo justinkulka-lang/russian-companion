@@ -1,7 +1,7 @@
 package dev.russiancompanion.v2
 
 import dev.russiancompanion.v2.curriculum.CompleteRuleContextPins
-import dev.russiancompanion.v2.curriculum.Unit21ObjectPins
+import dev.russiancompanion.v2.curriculum.V2ContentChecks
 import dev.russiancompanion.v2.curriculum.BatchBSources
 import dev.russiancompanion.v2.curriculum.GovernedSourceAdmission
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
@@ -203,11 +203,11 @@ class BatchBUnits2125Test {
         assertEquals(true, independent.assessment!!.independent)
         assertEquals("REFLEXIVE_MYSELF_SENTENCE", independent.assessment.testedFeature)
         assertFalse(independent.promptLetter == guided.promptLetter)
-        assertTrue(Unit21ObjectPins.matches(live))
+        assertTrue(V2ContentChecks.matches(live, "obj-u21-object-reference"))
         assertTrue(CompleteRuleContextPins.itemMatches(live, independent))
         val natives = live.provenanceRecords.filter { it.itemId.startsWith("prov-u21-object-transfer-native-") }
         assertEquals(4, natives.size)
-        assertTrue(natives.all { Unit21ObjectPins.admittedNative(it) })
+        assertTrue(natives.all { V2ContentChecks.admittedNative(live, "obj-u21-object-reference", it) })
     }
 
     @Test

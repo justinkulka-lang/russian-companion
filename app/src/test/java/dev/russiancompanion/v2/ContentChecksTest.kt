@@ -16,7 +16,7 @@ class ContentChecksTest {
         val data = Json.decodeFromString(ListSerializer(V2ContentCheck.serializer()),
             File(root, "catalog/content-checks.json").readText())
         assertEquals(data, p.contentChecks)
-        assertEquals(5, data.size)
+        assertEquals(10, data.size)
         assertNotEquals(V2Validator.contentReviewDigest(p),
             V2Validator.contentReviewDigest(p.copy(contentChecks = emptyList())))
         for (rule in data) {
@@ -36,7 +36,9 @@ class ContentChecksTest {
                     r.copy(sourceUrl = "https://example.invalid/changed"), r.copy(sourceRecordId = "changed"),
                     r.copy(sourceHash = "0".repeat(64)), r.copy(originalSourceText = "changed"),
                     r.copy(shippedText = "changed"), r.copy(contentHash = "0".repeat(64)),
-                    r.copy(transformation = "changed"), r.copy(licenseId = "changed"))
+                    r.copy(transformation = "changed"), r.copy(licenseId = "changed")) +
+                    (if (bound.requireNoAudio) listOf(r.copy(audioAssetId = "changed")) else emptyList()) +
+                    (if (bound.attributionContains.isNotEmpty()) listOf(r.copy(attribution = "changed")) else emptyList())
                 for ((index, changed) in bad.withIndex()) assertFalse("${rule.id} ${bound.id} field $index",
                     V2ContentChecks.matches(p.copy(provenanceRecords = p.provenanceRecords.map {
                         if (it.itemId == bound.id) changed else it
@@ -47,7 +49,7 @@ class ContentChecksTest {
                 val o = p.unit(bound.unitNumber)!!.objectives.single { it.id == bound.id }
                 val bad = mutableListOf(o.copy(kind = "changed"), o.copy(gating = !o.gating),
                     o.copy(checkItemIds = o.checkItemIds + "changed"))
-                if (bound.practiceStepIds != null || bound.guidedItemIds != null)
+                if (bound.practiceStepIds != null || bound.guidedItemIds != null || bound.requiredGuidedItemIds.isNotEmpty())
                     bad += o.copy(practiceStepIds = listOf("changed"))
                 for (changed in bad) assertFalse("${rule.id} ${bound.id}", V2ContentChecks.matches(
                     p.copy(units = p.units.map { u -> u.copy(objectives = u.objectives.map {
@@ -67,10 +69,74 @@ class ContentChecksTest {
             if (bound.testedFeature != null) bad += item.copy(assessment = item.assessment!!.copy(testedFeature = "changed"))
             if (bound.promptSourceId != null) bad += item.copy(promptLetter = "changed")
             if (bound.differentPromptItemId != null) bad += item.copy(promptLetter = p.item(bound.differentPromptItemId)!!.promptLetter)
+            if (bound.prompt != null) bad += item.copy(promptLetter = "changed")
+            if (bound.answer != null) bad += item.copy(answer = "changed")
+            if (bound.options != null) bad += item.copy(options = listOf("changed"))
+            for (id in bound.differentPromptItemIds) bad += item.copy(promptLetter = p.item(id)!!.promptLetter)
             if (bound.kind != null) bad += item.copy(kind = "changed")
             if (bound.noAssessment) bad += item.copy(assessment = p.items.first { it.assessment != null }.assessment)
             for (changed in bad) assertFalse("${rule.id} ${bound.id}", V2ContentChecks.matches(
                 p.copy(items = p.items.map { if (it.id == bound.id) changed else it }), rule.id))
         }
     }
+
+    @Test fun declaredRightsAndStandaloneNativeAdmissionRemainRequired() {
+        val p = pack()
+        for (rule in p.contentChecks) for (right in rule.rights) {
+            assertFalse(V2ContentChecks.matches(p.copy(sources = p.sources.filter { it.id != right.sourceId }), rule.id))
+            assertFalse(V2ContentChecks.matches(p.copy(sources = p.sources.map {
+                if (it.id == right.sourceId) it.copy(license = "changed") else it
+            }), rule.id))
+            assertFalse(V2ContentChecks.matches(p.copy(rights = p.rights.filter { it.sourceId != right.sourceId }), rule.id))
+            assertFalse(V2ContentChecks.matches(p.copy(rights = p.rights.map {
+                if (it.sourceId == right.sourceId) it.copy(license = "changed") else it
+            }), rule.id))
+            assertFalse(V2ContentChecks.matches(p.copy(rights = p.rights.map {
+                if (it.sourceId == right.sourceId) it.copy(permitsAppUse = false) else it
+            }), rule.id))
+            for (source in rule.sources) {
+                val r = p.provenanceRecords.single { it.itemId == source.id }
+                assertTrue(V2ContentChecks.admittedNative(p, rule.id, r))
+                assertFalse(V2ContentChecks.admittedNative(p, rule.id, r.copy(itemId = "changed")))
+                assertFalse(V2ContentChecks.admittedNative(p, rule.id, r.copy(attribution = "changed")))
+                assertFalse(V2ContentChecks.admittedNative(p, rule.id, r.copy(audioAssetId = "changed")))
+            }
+        }
+    }
+
+    @Test fun sourceTextMatchingModesRemainDistinctAndUnknownModesFailClosed() {
+        val p = pack()
+        val rule = p.contentChecks.first()
+        val source = rule.sources.first()
+        val text = "[[target|reviewed]]"
+        fun sha(value: String) = java.security.MessageDigest.getInstance("SHA-256")
+            .digest(value.toByteArray()).joinToString("") { "%02x".format(it.toInt() and 255) }
+        val r = p.provenanceRecords.single { it.itemId == source.id }.copy(
+            originalSourceText = text, sourceHash = sha(text), shippedText = text, contentHash = sha(text))
+        fun admitted(mode: String): Boolean {
+            val changed = rule.copy(sources = listOf(source.copy(sourceHash = sha(text), shippedText = text, textMatch = mode)))
+            return V2ContentChecks.admittedNative(p.copy(contentChecks = listOf(changed)), rule.id, r)
+        }
+        assertTrue(admitted("CONTAINS"))
+        assertFalse(admitted("WIKI_LABELS"))
+        assertFalse(admitted("unknown"))
+    }
+
+    @Test fun requiredGuidedMembershipDoesNotBecomeAnExactListConstraint() {
+        val p = pack()
+        val rule = p.contentChecks.single { it.id == "obj-u20-motion" }
+        val bound = rule.objectives.single()
+        assertNull(bound.guidedItemIds)
+        assertEquals(2, bound.requiredGuidedItemIds.size)
+        val unit = p.unit(bound.unitNumber)!!
+        val objective = unit.objectives.single { it.id == bound.id }
+        val withExtraTraversal = objective.copy(practiceStepIds = objective.practiceStepIds + objective.practiceStepIds.first())
+        val changed = p.copy(units = p.units.map { u ->
+            if (u.number != unit.number) u else u.copy(objectives = u.objectives.map {
+                if (it.id == objective.id) withExtraTraversal else it
+            })
+        })
+        assertTrue(V2ContentChecks.matches(changed, rule.id))
+    }
+
 }
