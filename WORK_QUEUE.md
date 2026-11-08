@@ -877,3 +877,10 @@ Read the uploaded engineering-test-reports artifact (13604913282): **1,210 tests
 ### 2026-11-08 — Owner-directed continuous mode
 
 Owner authorized consecutive eligible tasks, each with fetched remote ancestry, one-task implementation, push, passing exact-commit CI and queue closure before the next. Stop at the next STOP-OWNER/STOP-CLAUDE, BLOCKED task, failed exact-commit CI after one fix attempt, completion of T04-n1/T08/T12/T14/T15–T19, five completed tasks, or low session capacity (finish or cleanly park and push the current task, recording the exact stopping point). Three-part/no-recursive-split rule and all behavior/source/evidence constraints remain in force. This overrides only the per-task stop/wait-for-continue steps for this run. Starting T03-n2-c from eb1bcb4f1e3fa7bed00fe0b54a5df11e578d0135.
+
+
+### 2026-11-08 — T03-n2-c implementation; exact-commit CI pending
+
+Removed MIGRATION_1_2 through MIGRATION_10_11 and their historical-only row-preservation tests. Kept MIGRATION_11_12 unchanged. Both persistent LocalStore builders now use that migration and Room's all-table destructive reset explicitly for development versions 1–10; current databases are not reset. The new reset test opens every exported schema 1–11, verifies development exports/history are discarded, then writes current progress and verifies it survives reopen. The existing real version-9 reset/review-credit check remains. Exported schema files are unchanged.
+
+Retired only the migration-specific method/helper and source-string expectation from PracticeRetrievalDigestTest, ReauditCorrectionTest and V2RebuildTest; current retrieval, scoring, accepted order, backward/equal-clock writes, backup, named reopen and onboarding checks remain. Refreshed only the unfrozen NOT_APPROVED candidate's current sourceDigest; preserved candidates, source/rights records, CI and test configuration are unchanged. Targeted development checks passed (BUILD SUCCESSFUL in 2m 25s); exact-commit CI is still required. No later task was started.

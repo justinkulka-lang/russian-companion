@@ -2290,7 +2290,9 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12)
+                .addMigrations(MIGRATION_11_12)
+                // Pre-acceptance databases before v11 have no supported learner schema.
+                .fallbackToDestructiveMigrationFrom(true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings"))
             store.applySeed(readSeed(appContext))
@@ -2308,7 +2310,9 @@ internal class LocalStore private constructor(
         fun openNamed(context: Context, name: String): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, name)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12)
+                .addMigrations(MIGRATION_11_12)
+                // Pre-acceptance databases before v11 have no supported learner schema.
+                .fallbackToDestructiveMigrationFrom(true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings-$name"))
             store.applySeed(null)

@@ -1025,14 +1025,13 @@ class V2RebuildTest {
     }
 
     @Test
-    fun upgradeKeepsExportAndRecordingRows() {
+    fun currentProfileCanCompleteOnboarding() {
         val store = LocalStore.openInMemory(context()).also { stores += it }
         store.applySeed(LocalStore.readPackagedSeed(context()))
         val before = store.v2LearnerView()
         assertFalse(before.onboardingCompleted)
         store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 1))
         assertTrue(store.v2LearnerView().onboardingCompleted)
-        assertTrue(File(repo(), "app/src/main/java/dev/russiancompanion/data/local/DatabaseMigrations.kt").readText().contains("MIGRATION_6_7"))
     }
 
     private fun recordPrescribed(store: LocalStore, pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, item: V2CheckItem, at: String) {

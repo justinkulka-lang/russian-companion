@@ -13,12 +13,8 @@ import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
-import androidx.sqlite.db.SupportSQLiteOpenHelper
-import androidx.sqlite.db.framework.FrameworkSQLiteOpenHelperFactory
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.local.LocalStore
-import dev.russiancompanion.data.local.MIGRATION_6_7
-import dev.russiancompanion.data.local.MIGRATION_7_8
 import dev.russiancompanion.v2.backup.backupJson
 import dev.russiancompanion.v2.backup.BackupAttempt
 import dev.russiancompanion.v2.backup.readGovernedBackup
@@ -393,39 +389,6 @@ class PracticeRetrievalDigestTest {
         assertEquals(UNRECOVERABLE_GOVERNED_IDENTITY, old.itemDigest)
         assertEquals(0, old.identitySchema)
         assertEquals("LEGACY_UNVERIFIED", old.attemptRole)
-    }
-
-    @Test
-    fun migrationMarksExistingAttemptIdentityUnrecoverable() {
-        val context = ApplicationProvider.getApplicationContext<Context>()
-        val helper = FrameworkSQLiteOpenHelperFactory().create(
-            SupportSQLiteOpenHelper.Configuration.builder(context)
-                .name("practice-migration-${System.nanoTime()}.db")
-                .callback(object : SupportSQLiteOpenHelper.Callback(6) {
-                    override fun onCreate(db: androidx.sqlite.db.SupportSQLiteDatabase) = Unit
-
-                    override fun onUpgrade(db: androidx.sqlite.db.SupportSQLiteDatabase, oldVersion: Int, newVersion: Int) = Unit
-                })
-                .build(),
-        )
-        val db = helper.writableDatabase
-        MIGRATION_6_7.migrate(db)
-        db.execSQL("INSERT INTO v2_attempts (id, itemId, selected, correct, recordedAtLocal) VALUES ('a', 'item', 'yes', 1, 't')")
-        db.execSQL("INSERT INTO v2_step_progress (stepId, completedAtLocal) VALUES ('u1-st-orient', 't')")
-        MIGRATION_7_8.migrate(db)
-        db.query("SELECT itemDigest, ruleDigest, identitySchema, attemptRole FROM v2_attempts").use { cursor ->
-            assertTrue(cursor.moveToFirst())
-            assertEquals(UNRECOVERABLE_GOVERNED_IDENTITY, cursor.getString(0))
-            assertEquals(UNRECOVERABLE_GOVERNED_IDENTITY, cursor.getString(1))
-            assertEquals(0, cursor.getInt(2))
-            assertEquals("LEGACY_UNVERIFIED", cursor.getString(3))
-        }
-        db.query("SELECT contentDigest, identitySchema FROM v2_step_progress").use { cursor ->
-            assertTrue(cursor.moveToFirst())
-            assertEquals(UNRECOVERABLE_GOVERNED_IDENTITY, cursor.getString(0))
-            assertEquals(0, cursor.getInt(1))
-        }
-        helper.close()
     }
 
     @Test
