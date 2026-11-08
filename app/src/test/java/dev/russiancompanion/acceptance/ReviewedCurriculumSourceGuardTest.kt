@@ -10,9 +10,9 @@ class ReviewedCurriculumSourceGuardTest {
     @Test fun exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus() {
         val pack = ReviewedCurriculumSourceGuard.pack()
         val entries = ReviewedCurriculumSourceGuard.entries
-        assertEquals(9, entries.size)
+        assertEquals(6, entries.size)
         val currentBindings = entries.flatMap { it["bindings"]!!.jsonArray }.map { it.jsonObject }
-        assertEquals(249, currentBindings.size)
+        assertEquals(189, currentBindings.size)
         assertEquals(26, currentBindings.count { it.text("kind") == "ITEM_ID" })
         assertEquals(0, currentBindings.count { it.text("purpose") == "EXISTING_RESEARCH_CUE_COMPARISON_PENDING_SOURCE_REVIEW" })
         assertEquals(emptyList<String>(), ReviewedCurriculumSourceGuard.offenders(ReviewedCurriculumSourceGuard.sources(), pack))
@@ -44,8 +44,11 @@ class ReviewedCurriculumSourceGuardTest {
     @Test fun coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted() {
         val sources = ReviewedCurriculumSourceGuard.sources()
         val pack = ReviewedCurriculumSourceGuard.pack()
-        val entry = ReviewedCurriculumSourceGuard.entries.first()
-        val expected = entry["bindings"]!!.jsonArray.first().jsonObject["record"]!!.jsonObject
+        val entry = ReviewedCurriculumSourceGuard.entries.first { row ->
+            row["bindings"]!!.jsonArray.any { "record" in it.jsonObject }
+        }
+        val expected = entry["bindings"]!!.jsonArray.map { it.jsonObject }
+            .first { "record" in it }["record"]!!.jsonObject
         val id = expected.text("itemId")
         val changed = pack.copy(provenanceRecords = pack.provenanceRecords.map { r ->
             if (r.itemId != id) r else r.copy(originalSourceText = r.originalSourceText + "!",

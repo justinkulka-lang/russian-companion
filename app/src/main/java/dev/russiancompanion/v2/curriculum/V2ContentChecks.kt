@@ -65,17 +65,17 @@ internal data class V2ContentItemCheck(
 )
 
 internal object V2ContentChecks {
-    fun matches(pack: V2CurriculumPack, id: String): Boolean {
+    fun matches(pack: V2CurriculumPack, id: String, objectiveOverride: V2Objective? = null): Boolean {
         val check = pack.contentChecks.singleOrNull { it.id == id } ?: return false
         if (check.sources.isEmpty() || check.objectives.isEmpty() || check.items.isEmpty()) return false
-        if (!check.sources.all { pin -> pack.provenanceRecords.singleOrNull { it.itemId == pin.id }
-                ?.let { sourceMatches(it, pin) } == true }) return false
+        if (!sourcesMatch(pack, id)) return false
         if (!check.rights.all { pin ->
             pack.sources.any { it.id == pin.sourceId && it.license == pin.license } &&
                 pack.rights.any { it.sourceId == pin.sourceId && it.license == pin.license && it.permitsAppUse }
         }) return false
         if (!check.objectives.all { pin ->
-            pack.unit(pin.unitNumber)?.objectives?.singleOrNull { it.id == pin.id }?.let { o ->
+            (objectiveOverride?.takeIf { it.id == pin.id } ?: pack.unit(pin.unitNumber)?.objectives
+                ?.singleOrNull { it.id == pin.id })?.let { o ->
                 o.kind == pin.kind && o.gating == pin.gating && o.checkItemIds == pin.checkItemIds &&
                     (pin.practiceStepIds == null || o.practiceStepIds == pin.practiceStepIds) &&
                     (pin.guidedItemIds == null || o.practiceStepIds.flatMap {
@@ -104,6 +104,22 @@ internal object V2ContentChecks {
             } == true
         }
     }
+
+    fun sourcesMatch(pack: V2CurriculumPack, id: String): Boolean {
+        val check = pack.contentChecks.singleOrNull { it.id == id } ?: return false
+        return check.sources.isNotEmpty() && check.sources.all { pin ->
+            pack.provenanceRecords.singleOrNull { it.itemId == pin.id }?.let { sourceMatches(it, pin) } == true
+        }
+    }
+
+    fun checkItemIds(pack: V2CurriculumPack, id: String): List<String>? =
+        pack.contentChecks.singleOrNull { it.id == id }?.objectives?.singleOrNull()?.checkItemIds
+
+    fun requiredGuidedItemIds(pack: V2CurriculumPack, id: String): List<String>? =
+        pack.contentChecks.singleOrNull { it.id == id }?.objectives?.singleOrNull()?.requiredGuidedItemIds
+
+    fun testedFeature(pack: V2CurriculumPack, id: String, itemId: String): String? =
+        pack.contentChecks.singleOrNull { it.id == id }?.items?.singleOrNull { it.id == itemId }?.testedFeature
 
     fun admittedNative(pack: V2CurriculumPack, id: String, record: V2ProvenanceRecord): Boolean =
         pack.contentChecks.singleOrNull { it.id == id }?.sources?.singleOrNull { it.id == record.itemId }

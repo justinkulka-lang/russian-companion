@@ -1261,5 +1261,990 @@
         "requireContext": false
       }
     ]
+  },
+  {
+    "id": "obj-u29-short-adjective",
+    "sources": [
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+        "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+        "shippedText": "нова́",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-f-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+        "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+        "shippedText": "new",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-f-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+        "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+        "shippedText": "но́во",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-n-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+        "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+        "shippedText": "new",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-n-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+        "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+        "shippedText": "новы́",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-pl-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+        "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+        "shippedText": "new",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-pl-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context::The train is old - '''Поезд старый'''",
+        "sourceHash": "60bd8d99d502785ffccdde598aef375531b1e928d99fc14f563221e75399c600",
+        "shippedText": "Поезд старый",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-train-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context::The train is old - '''Поезд старый'''",
+        "sourceHash": "60bd8d99d502785ffccdde598aef375531b1e928d99fc14f563221e75399c600",
+        "shippedText": "The train is old",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-train-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:Adjectives modifying masculine nouns in the nominative case keep their defaul",
+        "sourceHash": "f2fd9de60a4f9debb3fa937d64b624e9e68eca93cc5e81a24981ca7308a8fcd3",
+        "shippedText": "новый карандаш",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-pencil-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:Adjectives modifying masculine nouns in the nominative case keep their defaul",
+        "sourceHash": "f2fd9de60a4f9debb3fa937d64b624e9e68eca93cc5e81a24981ca7308a8fcd3",
+        "shippedText": "new pencil",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-pencil-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context::The student is new - '''Студент новый'''",
+        "sourceHash": "dbfbf0e198229f249dcac80a39eb9cc1027f7f3cdfea7e732d3475ea389af395",
+        "shippedText": "Студент новый",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-student-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context::The student is new - '''Студент новый'''",
+        "sourceHash": "dbfbf0e198229f249dcac80a39eb9cc1027f7f3cdfea7e732d3475ea389af395",
+        "shippedText": "The student is new",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-student-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''",
+        "sourceHash": "a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec",
+        "shippedText": "новое письмо",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-letter-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''",
+        "sourceHash": "a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec",
+        "shippedText": "new letter",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-letter-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i",
+        "sourceHash": "894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea",
+        "shippedText": "новая книга",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-book-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i",
+        "sourceHash": "894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea",
+        "shippedText": "new book",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-book-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:Adjectives also change according to number, so when modifying a plural noun, ",
+        "sourceHash": "e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515",
+        "shippedText": "новые книги",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-books-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:Adjectives also change according to number, so when modifying a plural noun, ",
+        "sourceHash": "e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515",
+        "shippedText": "new books",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-books-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i",
+        "sourceHash": "894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea",
+        "shippedText": "книга",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-book-subject",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''",
+        "sourceHash": "a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec",
+        "shippedText": "письмо",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-letter-subject",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-short-adjective",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "sourceRevision": "4213267",
+        "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+        "sourceRecordId": "nominative-context:Adjectives also change according to number, so when modifying a plural noun, ",
+        "sourceHash": "e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515",
+        "shippedText": "книги",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-adjective-native-books-subject",
+        "textMatch": "CONTAINS"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj-u29-short-adjective",
+        "unitNumber": 29,
+        "kind": "RECOGNITION",
+        "gating": true,
+        "checkItemIds": [
+          "u29-i-adjective-form-1",
+          "u29-i-adjective-form-2",
+          "u29-i-short-agreement-f",
+          "u29-i-short-agreement-n",
+          "u29-i-short-agreement-pl",
+          "u29-i-adjective-function-p",
+          "u29-i-adjective-function-a"
+        ],
+        "requiredGuidedItemIds": [
+          "u29-g-adjective-form-0",
+          "u29-g-short-agreement-m",
+          "u29-g-short-agreement-n",
+          "u29-g-adjective-function-p",
+          "u29-g-adjective-function-a"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "u29-i-adjective-form-1",
+        "independent": true,
+        "testedFeature": "SHORT_FORM"
+      },
+      {
+        "id": "u29-i-adjective-form-2",
+        "independent": true,
+        "testedFeature": "SHORT_FORM"
+      },
+      {
+        "id": "u29-i-short-agreement-f",
+        "independent": true,
+        "testedFeature": "SHORT_AGREEMENT"
+      },
+      {
+        "id": "u29-i-short-agreement-n",
+        "independent": true,
+        "testedFeature": "SHORT_AGREEMENT"
+      },
+      {
+        "id": "u29-i-short-agreement-pl",
+        "independent": true,
+        "testedFeature": "SHORT_AGREEMENT"
+      },
+      {
+        "id": "u29-i-adjective-function-p",
+        "independent": true,
+        "testedFeature": "ADJECTIVE_FUNCTION"
+      },
+      {
+        "id": "u29-i-adjective-function-a",
+        "independent": true,
+        "testedFeature": "ADJECTIVE_FUNCTION"
+      },
+      {
+        "id": "u29-g-adjective-form-0",
+        "independent": false,
+        "testedFeature": "SHORT_FORM"
+      },
+      {
+        "id": "u29-g-short-agreement-m",
+        "independent": false,
+        "testedFeature": "SHORT_AGREEMENT"
+      },
+      {
+        "id": "u29-g-short-agreement-n",
+        "independent": false,
+        "testedFeature": "SHORT_AGREEMENT"
+      },
+      {
+        "id": "u29-g-adjective-function-p",
+        "independent": false,
+        "testedFeature": "ADJECTIVE_FUNCTION"
+      },
+      {
+        "id": "u29-g-adjective-function-a",
+        "independent": false,
+        "testedFeature": "ADJECTIVE_FUNCTION"
+      }
+    ]
+  },
+  {
+    "id": "obj-u29-punctuation",
+    "sources": [
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+        "sourceHash": "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d",
+        "shippedText": "Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-after-ru"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+        "sourceHash": "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d",
+        "shippedText": "Туча",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-after-head"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+        "sourceHash": "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d",
+        "shippedText": "нависшая над высокими вершинами тополей,",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-after-region-1"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+        "sourceHash": "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d",
+        "shippedText": "уже сыпала дождиком",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-after-region-2"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-boltraffio-149826784",
+        "sourceRevision": "149826784",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+        "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+        "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+        "shippedText": "Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-pronoun-ru"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-boltraffio-149826784",
+        "sourceRevision": "149826784",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+        "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+        "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+        "shippedText": "он",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-pronoun-head"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-boltraffio-149826784",
+        "sourceRevision": "149826784",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+        "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+        "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+        "shippedText": "Воспитанный в традициях Фоппы,",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-pronoun-region-0"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-boltraffio-149826784",
+        "sourceRevision": "149826784",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+        "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+        "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+        "shippedText": "Бернардо Дзенале и Амброджо Бергоньоне,",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-pronoun-region-1"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-boltraffio-149826784",
+        "sourceRevision": "149826784",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+        "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+        "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+        "shippedText": "он прошёл обучение в мастерской Леонардо.",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-pronoun-region-2"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-boltraffio-149826784",
+        "sourceRevision": "149826784",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+        "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+        "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+        "shippedText": "Фоппы",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-pronoun-list-foppa"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-boltraffio-149826784",
+        "sourceRevision": "149826784",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+        "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+        "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+        "shippedText": "Бергоньоне",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-pronoun-boundary-bergognone"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+        "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+        "shippedText": "Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-cause-ru"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+        "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+        "shippedText": "Павел",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-cause-head"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+        "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+        "shippedText": "Изумлённый этим хохотом,",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-cause-region-0"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+        "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+        "shippedText": "Павел сел на пол и смотрел куда",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-cause-region-1"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+        "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+        "shippedText": "то в угол",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-cause-region-2"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''",
+        "sourceHash": "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e",
+        "shippedText": "Вдали виднеется маяк, стоящий у моря",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-terminal-ru"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''",
+        "sourceHash": "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e",
+        "shippedText": "маяк",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-terminal-head"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''",
+        "sourceHash": "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e",
+        "shippedText": "Вдали виднеется маяк,",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-terminal-region-0"
+      },
+      {
+        "unitNumber": 29,
+        "objectiveId": "obj-u29-punctuation",
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "sourceRevision": "144053197",
+        "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+        "sourceRecordId": "punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''",
+        "sourceHash": "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e",
+        "shippedText": "стоящий у моря",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u29-punctuation-native-terminal-region-1"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj-u29-punctuation",
+        "unitNumber": 29,
+        "kind": "RECOGNITION",
+        "gating": true,
+        "checkItemIds": [
+          "u29-i-punctuation-1",
+          "u29-i-punctuation-after",
+          "u29-i-punctuation-pronoun",
+          "u29-i-punctuation-cause",
+          "u29-i-punctuation-terminal"
+        ],
+        "requiredGuidedItemIds": [
+          "u29-g-punctuation-0"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "u29-i-punctuation-1",
+        "independent": true,
+        "prompt": "Написанная в спешке программа выполнила недопустимую операцию.",
+        "answer": "запятые не ставятся",
+        "requireContext": false,
+        "options": [
+          "запятые не ставятся",
+          "выделяется запятыми с двух сторон",
+          "запятая ставится только перед причастным оборотом"
+        ]
+      },
+      {
+        "id": "u29-g-punctuation-0",
+        "independent": false,
+        "prompt": "Программа, написанная в спешке, выполнила недопустимую операцию.",
+        "answer": "выделяется запятыми с двух сторон",
+        "requireContext": false
+      },
+      {
+        "id": "u29-i-punctuation-after",
+        "objectiveId": "obj-u29-punctuation",
+        "independent": true,
+        "testedFeature": "PUNCTUATION_CONTINUING_BOUNDARIES"
+      },
+      {
+        "id": "u29-i-punctuation-pronoun",
+        "objectiveId": "obj-u29-punctuation",
+        "independent": true,
+        "testedFeature": "PUNCTUATION_PERSONAL_PRONOUN"
+      },
+      {
+        "id": "u29-i-punctuation-cause",
+        "objectiveId": "obj-u29-punctuation",
+        "independent": true,
+        "testedFeature": "PUNCTUATION_CAUSE_EXCEPTION"
+      },
+      {
+        "id": "u29-i-punctuation-terminal",
+        "objectiveId": "obj-u29-punctuation",
+        "independent": true,
+        "testedFeature": "PUNCTUATION_TERMINAL_BOUNDARY"
+      }
+    ],
+    "rights": [
+      {
+        "sourceId": "src-ruwiki-obosoblenie-144053197",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "sourceId": "src-ruwiki-boltraffio-149826784",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "id": "obj-u30-letter-names",
+    "sources": [
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-letter-names",
+        "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+        "sourceRevision": "1371795481",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+        "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[А]]а}}</big>\n| [[File:01-Rus",
+        "sourceHash": "b7c684b44a2b49fa2822121d673e95925f67672be42b057df8b674de67b8da5b",
+        "shippedText": "А",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-a-glyph",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-letter-names",
+        "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+        "sourceRevision": "1371795481",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+        "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[А]]а}}</big>\n| [[File:01-Rus",
+        "sourceHash": "b7c684b44a2b49fa2822121d673e95925f67672be42b057df8b674de67b8da5b",
+        "shippedText": "а",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-a-name",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-letter-names",
+        "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+        "sourceRevision": "1371795481",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+        "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[Б]]б}}</big>\n| [[File:02-Rus",
+        "sourceHash": "b9aa27ea4b93b0341a01fdece40fd014ab718f99875672c24fbed7c54319cdfd",
+        "shippedText": "Б",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-b-glyph",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-letter-names",
+        "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+        "sourceRevision": "1371795481",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+        "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[Б]]б}}</big>\n| [[File:02-Rus",
+        "sourceHash": "b9aa27ea4b93b0341a01fdece40fd014ab718f99875672c24fbed7c54319cdfd",
+        "shippedText": "бэ",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-b-name",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-letter-names",
+        "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+        "sourceRevision": "1371795481",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+        "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[В]]в}}</big>\n| [[File:03-Rus",
+        "sourceHash": "901123d470de234ddb4417cc787b1b42f7c88c220d043584c9e2b331a79f5fbb",
+        "shippedText": "В",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-v-glyph",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-letter-names",
+        "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+        "sourceRevision": "1371795481",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+        "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[В]]в}}</big>\n| [[File:03-Rus",
+        "sourceHash": "901123d470de234ddb4417cc787b1b42f7c88c220d043584c9e2b331a79f5fbb",
+        "shippedText": "вэ",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-v-name",
+        "textMatch": "CONTAINS"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj-u30-letter-names",
+        "unitNumber": 30,
+        "kind": "RECOGNITION",
+        "gating": true,
+        "checkItemIds": [
+          "u30-i-native-name-b",
+          "u30-i-native-name-v"
+        ],
+        "requiredGuidedItemIds": [
+          "u30-g-native-name-a"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "u30-i-native-name-b",
+        "objectiveId": "obj-u30-letter-names",
+        "independent": true,
+        "testedFeature": "LETTER_NAME"
+      },
+      {
+        "id": "u30-i-native-name-v",
+        "objectiveId": "obj-u30-letter-names",
+        "independent": true,
+        "testedFeature": "LETTER_NAME"
+      },
+      {
+        "id": "u30-g-native-name-a",
+        "objectiveId": "obj-u30-letter-names",
+        "independent": false,
+        "testedFeature": "LETTER_NAME"
+      }
+    ]
+  },
+  {
+    "id": "obj-u30-abbrev-examples",
+    "sources": [
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-abbrev-examples",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:* Abbreviations:\n** СССР ([ɛs ɛs ɛs ˈɛr] \"USSR\", masculine);\n** США ([sɛ ʂɛ ˈa] ",
+        "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
+        "shippedText": "СССР",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-ussr-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-abbrev-examples",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:* Abbreviations:\n** СССР ([ɛs ɛs ɛs ˈɛr] \"USSR\", masculine);\n** США ([sɛ ʂɛ ˈa] ",
+        "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
+        "shippedText": "США",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-usa-ru",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-abbrev-examples",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:* Abbreviations:\n** СССР ([ɛs ɛs ɛs ˈɛr] \"USSR\", masculine);\n** США ([sɛ ʂɛ ˈa] ",
+        "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
+        "shippedText": "USSR",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-ussr-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-abbrev-examples",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:* Abbreviations:\n** СССР ([ɛs ɛs ɛs ˈɛr] \"USSR\", masculine);\n** США ([sɛ ʂɛ ˈa] ",
+        "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
+        "shippedText": "USA",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-usa-en",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-abbrev-examples",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:* Abbreviations:\n** СССР ([ɛs ɛs ɛs ˈɛr] \"USSR\", masculine);\n** США ([sɛ ʂɛ ˈa] ",
+        "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
+        "shippedText": "masculine",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-masculine-flag",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-abbrev-examples",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar:* Abbreviations:\n** СССР ([ɛs ɛs ɛs ˈɛr] \"USSR\", masculine);\n** США ([sɛ ʂɛ ˈa] ",
+        "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
+        "shippedText": "plural",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-plural-flag",
+        "textMatch": "CONTAINS"
+      },
+      {
+        "unitNumber": 30,
+        "objectiveId": "obj-u30-abbrev-examples",
+        "sourceId": "src-wikipedia-russian-grammar-1369617627",
+        "sourceRevision": "1369617627",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+        "sourceRecordId": "grammar-native:=== Indeclinable nouns ===\nSome nouns (such as borrowings from other language",
+        "sourceHash": "782228a7d5e2e45a791dd0e185c6e0e23a6b430f5af014d75e0972bde2ecab89",
+        "shippedText": "not modified when they change number and case",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "id": "prov-u30-language-native-indeclinable-flag",
+        "textMatch": "CONTAINS"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "obj-u30-abbrev-examples",
+        "unitNumber": 30,
+        "kind": "RECOGNITION",
+        "gating": true,
+        "checkItemIds": [
+          "u30-i-initialism-ussr",
+          "u30-i-initialism-usa"
+        ],
+        "requiredGuidedItemIds": [
+          "u30-g-initialism-use"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "u30-i-initialism-ussr",
+        "objectiveId": "obj-u30-abbrev-examples",
+        "independent": true,
+        "testedFeature": "ABBREVIATION_TREATMENT"
+      },
+      {
+        "id": "u30-i-initialism-usa",
+        "objectiveId": "obj-u30-abbrev-examples",
+        "independent": true,
+        "testedFeature": "ABBREVIATION_TREATMENT"
+      },
+      {
+        "id": "u30-g-initialism-use",
+        "objectiveId": "obj-u30-abbrev-examples",
+        "independent": false,
+        "testedFeature": "ABBREVIATION_TREATMENT"
+      }
+    ]
   }
 ]

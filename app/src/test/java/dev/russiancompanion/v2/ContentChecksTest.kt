@@ -16,7 +16,10 @@ class ContentChecksTest {
         val data = Json.decodeFromString(ListSerializer(V2ContentCheck.serializer()),
             File(root, "catalog/content-checks.json").readText())
         assertEquals(data, p.contentChecks)
-        assertEquals(10, data.size)
+        assertEquals(14, data.size)
+        assertEquals(emptyList<String>(), File(root, "app/src/main").walkTopDown()
+            .filter { it.isFile && it.name.matches(Regex("Unit.*Pins\\.kt")) }
+            .map { it.relativeTo(root).path }.toList())
         assertNotEquals(V2Validator.contentReviewDigest(p),
             V2Validator.contentReviewDigest(p.copy(contentChecks = emptyList())))
         for (rule in data) {
@@ -98,8 +101,10 @@ class ContentChecksTest {
                 val r = p.provenanceRecords.single { it.itemId == source.id }
                 assertTrue(V2ContentChecks.admittedNative(p, rule.id, r))
                 assertFalse(V2ContentChecks.admittedNative(p, rule.id, r.copy(itemId = "changed")))
-                assertFalse(V2ContentChecks.admittedNative(p, rule.id, r.copy(attribution = "changed")))
-                assertFalse(V2ContentChecks.admittedNative(p, rule.id, r.copy(audioAssetId = "changed")))
+                if (source.attributionContains.isNotEmpty())
+                    assertFalse(V2ContentChecks.admittedNative(p, rule.id, r.copy(attribution = "changed")))
+                if (source.requireNoAudio)
+                    assertFalse(V2ContentChecks.admittedNative(p, rule.id, r.copy(audioAssetId = "changed")))
             }
         }
     }
@@ -137,6 +142,61 @@ class ContentChecksTest {
             })
         })
         assertTrue(V2ContentChecks.matches(changed, rule.id))
+    }
+
+    @Test fun adjectiveSourceMatchingStaysSeparateFromItsItemContract() {
+        val p = pack()
+        val id = "obj-u29-short-adjective"
+        val rule = p.contentChecks.single { it.id == id }
+        val itemId = rule.items.first().id
+        val changed = p.copy(items = p.items.map {
+            if (it.id == itemId) it.copy(assessment = it.assessment!!.copy(testedFeature = "changed")) else it
+        })
+        assertTrue(V2ContentChecks.sourcesMatch(changed, id))
+        assertFalse(V2ContentChecks.matches(changed, id))
+        assertEquals(rule.objectives.single().checkItemIds, V2ContentChecks.checkItemIds(p, id))
+        assertEquals(rule.objectives.single().requiredGuidedItemIds, V2ContentChecks.requiredGuidedItemIds(p, id))
+        assertEquals(rule.items.first().testedFeature, V2ContentChecks.testedFeature(p, id, itemId))
+        val missing = p.copy(contentChecks = p.contentChecks - rule)
+        assertFalse(V2ContentChecks.sourcesMatch(missing, id))
+        assertNull(V2ContentChecks.checkItemIds(missing, id))
+        assertNull(V2ContentChecks.requiredGuidedItemIds(missing, id))
+        assertNull(V2ContentChecks.testedFeature(missing, id, itemId))
+    }
+
+    @Test fun languageObjectivesValidateIndependentlyAndUseTheSuppliedObjective() {
+        val p = pack()
+        val letters = "obj-u30-letter-names"
+        val abbreviations = "obj-u30-abbrev-examples"
+        val source = p.contentChecks.single { it.id == letters }.sources.first().id
+        val changed = p.copy(provenanceRecords = p.provenanceRecords.map {
+            if (it.itemId == source) it.copy(sourceHash = "changed") else it
+        })
+        assertFalse(V2ContentChecks.matches(changed, letters))
+        assertTrue(V2ContentChecks.matches(changed, abbreviations))
+        val objective = p.unit(30)!!.objectives.single { it.id == letters }
+        assertTrue(V2ContentChecks.matches(p, letters, objective))
+        assertFalse(V2ContentChecks.matches(p, letters, objective.copy(checkItemIds = listOf("changed"))))
+    }
+
+    @Test fun punctuationStandaloneAdmissionDoesNotReplaceTheGlobalLicenseRoute() {
+        val p = pack()
+        val id = "obj-u29-punctuation"
+        val rule = p.contentChecks.single { it.id == id }
+        for (right in rule.rights) {
+            val source = rule.sources.first { it.sourceId == right.sourceId }
+            val r = p.provenanceRecords.single { it.itemId == source.id }
+            for (changed in listOf(r.copy(audioAssetId = "changed"), r.copy(attribution = "changed"))) {
+                assertTrue(V2ContentChecks.admittedNative(p, id, changed))
+                val validation = V2Validator.validate(p.copy(provenanceRecords = p.provenanceRecords.map {
+                    if (it.itemId == changed.itemId) changed else it
+                }))
+                assertFalse(validation.ok)
+                assertTrue(validation.errors.joinToString("\n"), validation.errors.any {
+                    it.contains(changed.itemId) && it.contains("Russian Wikipedia license route is missing")
+                })
+            }
+        }
     }
 
 }

@@ -2190,21 +2190,23 @@ internal object V2Validator {
         }
         if (capability.unitNumber == 29 && capability.objectiveId == "obj-u29-short-adjective") {
             // This claim requires curated grammar contrasts; vocabulary glosses cannot clear it.
+            val governedChecks = V2ContentChecks.checkItemIds(pack, "obj-u29-short-adjective") ?: return false
+            val governedGuided = V2ContentChecks.requiredGuidedItemIds(pack, "obj-u29-short-adjective") ?: return false
             if (capability.supportedClaim != "short-form-adjective" ||
                 capability.sourceId != "src-wikipedia-russian-grammar-1369617627" ||
                 capability.sourceRevision != "1369617627" ||
                 capability.sourceHash != "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8" ||
                 spanHost.sourceHash != capability.sourceHash || spanHost.originalSourceText != capability.exactSpan ||
-                !verifiedFrozen(spanHost) || objective.checkItemIds != Unit29AdjectiveNativePins.checkIds || !Unit29AdjectiveNativePins.matches(pack)) return false
+                !verifiedFrozen(spanHost) || objective.checkItemIds != governedChecks || !V2ContentChecks.sourcesMatch(pack, "obj-u29-short-adjective")) return false
             val checks = objective.checkItemIds.mapNotNull { pack.item(it) }
             val practice = objective.practiceStepIds.flatMap { id -> pack.step(id)?.second?.itemIds.orEmpty() }
-            val guided = Unit29AdjectiveNativePins.guidedIds.mapNotNull(pack::item)
-            return checks.size == Unit29AdjectiveNativePins.checkIds.size && checks.all {
-                it.assessment?.independent == true && it.assessment.testedFeature == Unit29AdjectiveNativePins.feature(it.id) &&
+            val guided = governedGuided.mapNotNull(pack::item)
+            return checks.size == governedChecks.size && checks.all {
+                it.assessment?.independent == true && it.assessment.testedFeature == V2ContentChecks.testedFeature(pack, "obj-u29-short-adjective", it.id) &&
                     CompleteRuleContextPins.itemMatches(pack, it) && structureValid(pack, it).isEmpty()
-            } && guided.size == Unit29AdjectiveNativePins.guidedIds.size && guided.all {
+            } && guided.size == governedGuided.size && guided.all {
                 it.id in practice && it.assessment?.independent == false &&
-                    it.assessment.testedFeature == Unit29AdjectiveNativePins.feature(it.id) &&
+                    it.assessment.testedFeature == V2ContentChecks.testedFeature(pack, "obj-u29-short-adjective", it.id) &&
                     CompleteRuleContextPins.itemMatches(pack, it) && structureValid(pack, it).isEmpty()
             }
         }
@@ -2213,7 +2215,7 @@ internal object V2Validator {
                 capability.sourceId == "src-ruwiki-prichastie-153078996" && capability.sourceRevision == "153078996" &&
                 capability.sourceHash == "821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a" &&
                 spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
-                verifiedFrozen(spanHost) && Unit29PunctuationPins.matches(pack)
+                verifiedFrozen(spanHost) && V2ContentChecks.matches(pack, "obj-u29-punctuation")
         }
         if (capability.unitNumber == 20 && capability.supportedClaim == "motion-directionality") {
             return capability.objectiveId == "obj-u20-motion" &&
@@ -2228,7 +2230,7 @@ internal object V2Validator {
                 capability.sourceRevision == "1371795481" && capability.supportedClaim == "letter-name-review" &&
                 capability.sourceHash == "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526" &&
                 spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
-                verifiedFrozen(spanHost) && Unit30LanguagePins.matches(pack,objective)
+                verifiedFrozen(spanHost) && V2ContentChecks.matches(pack, objective.id, objective)
         }
         return objective.checkItemIds.mapNotNull { pack.item(it) }.any { item ->
             val participants = item.assessment?.relationParticipantIds.orEmpty().mapNotNull { id ->
@@ -2754,13 +2756,13 @@ internal object V2Validator {
             if (objective.id == "obj-u17-clock" && !V2ContentChecks.matches(pack, "obj-u17-clock")) {
                 errors += "Objective ${objective.id} has no frozen distinct question application chain"
             }
-            if (objective.id == "obj-u29-punctuation" && !Unit29PunctuationPins.matches(pack)) {
+            if (objective.id == "obj-u29-punctuation" && !V2ContentChecks.matches(pack, "obj-u29-punctuation")) {
                 errors += "Objective ${objective.id} has no frozen native punctuation application chain"
             }
             if (objective.id == "obj-u20-motion" && !V2ContentChecks.matches(pack, "obj-u20-motion")) {
                 errors += "Objective ${objective.id} has no frozen native directionality application chain"
             }
-            if (Unit30LanguagePins.governs(objective.id) && !Unit30LanguagePins.matches(pack,objective)) {
+            if (objective.id in setOf("obj-u30-letter-names", "obj-u30-abbrev-examples") && !V2ContentChecks.matches(pack, objective.id, objective)) {
                 errors += "Objective ${objective.id} has no frozen native language application chain"
             }
             val checks = objective.checkItemIds.mapNotNull { pack.item(it) }
@@ -5097,8 +5099,8 @@ internal object V2Validator {
             }
             if (record.sourceId.startsWith("src-ruwiki-")) {
                 val copyright = "\u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u044f:\u0410\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0435 \u043f\u0440\u0430\u0432\u0430 oldid ${BatchARemainingSources.RU_COPYRIGHT_OLDID}"
-                val revisionAllowed = if (Unit29PunctuationPins.ownsSource(record.sourceId)) {
-                    Unit29PunctuationPins.admittedNative(record)
+                val revisionAllowed = if (record.sourceId in setOf("src-ruwiki-obosoblenie-144053197", "src-ruwiki-boltraffio-149826784")) {
+                    V2ContentChecks.admittedNative(pack, "obj-u29-punctuation", record)
                 } else {
                     record.sourceRevision == BatchARemainingSources.RU_REVISION ||
                         record.sourceRevision in BatchBSources.RU_REVISIONS
