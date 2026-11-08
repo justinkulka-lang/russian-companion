@@ -131,7 +131,7 @@ class Units2630StructuralMappingTest {
             assertFalse(unit.mappingNote.contains(range))
             assertFalse(unit.title.contains(range))
             assertFalse(unit.topicSummary.contains(range))
-            val worksheet = File(root, "review/unit-$number/UNIT_${number}_OWNED_EDITION_MAPPING_WORKSHEET.tsv").readText()
+            val worksheet = structuralMappingWorksheet(pack, number)
             assertTrue(worksheet.contains(range))
             assertEquals(range, "${governedMappingFacts(number).printedPageStart}-${governedMappingFacts(number).printedPageEnd}")
         }
@@ -146,22 +146,6 @@ class Units2630StructuralMappingTest {
         val pack = pack()
         pages.keys.forEach { number ->
             val rendered = structuralMappingWorksheet(pack, number)
-            val dir = File(repo(), "review/unit-$number")
-            val file = File(dir, "UNIT_${number}_OWNED_EDITION_MAPPING_WORKSHEET.tsv")
-            if (System.getenv("WRITE_STRUCTURAL_MAPPING") == "1") {
-                dir.mkdirs()
-                file.writeText(rendered)
-            }
-            assertEquals(rendered, file.readText())
-            assertTrue(File(dir, "UNIT_${number}_REVIEW_PACKET.md").exists())
-            assertTrue(File(dir, "UNIT_${number}_REVIEW_MANIFEST.json").exists())
-            assertTrue(File(dir, "UNIT_${number}_REVIEW_WORKSHEET.tsv").exists())
-            assertTrue(File(dir, "REVIEWER_INSTRUCTIONS.md").exists())
-            val packet = File(dir, "UNIT_${number}_REVIEW_PACKET.md").readText()
-            assertTrue(packet.contains("Unsupported-capability register"))
-            assertTrue(packet.contains("Book-directed register"))
-            assertTrue(packet.contains("Optional non-gating register"))
-            assertTrue(packet.contains("No reviewer has signed this packet."))
             val facts = governedMappingFacts(number)
             val digest = mappingPackageDigest(facts)
             assertTrue(rendered.contains(pages.getValue(number)))

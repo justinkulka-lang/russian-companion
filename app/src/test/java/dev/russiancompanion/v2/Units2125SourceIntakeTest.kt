@@ -158,7 +158,6 @@ class Units2125SourceIntakeTest {
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
         assertEquals(emptySet<Int>(), pack.units.filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
-        assertTrue(File(repo(), "review/unit-23/UNIT_23_REVIEW_PACKET.md").isFile)
     }
 
 

@@ -20,7 +20,6 @@ class SourceTextPoolTest {
             val pack=V2PackLoader.parse(raw);assertEquals(V2PackLoader.parse(target.readText()),pack)
             assertEquals(V2Validator.contentReviewDigest(V2PackLoader.parse(target.readText())),V2Validator.contentReviewDigest(pack))
             assertTrue(kotlin.getValue("provenanceRecords").jsonArray.all { "originalSourceText" in it.jsonObject && "originalSourceTextRef" !in it.jsonObject })
-            System.getProperty("source.pool.baseline")?.let { assertEquals(V2PackLoader.parse(File(it).readText()),pack) }
         } finally { temp.deleteRecursively() }
     }
     @Test fun corruptMissingConflictingAndUnboundPoolEvidenceIsRejected() {

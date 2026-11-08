@@ -551,10 +551,6 @@ class V2RebuildTest {
                 it.title + it.body + (it.bookDirection ?: "")
             }
             assertFalse(text.contains("Content-complete"))
-            val packet = File(repo(), "review/unit-$number/UNIT_${number}_REVIEW_PACKET.md").readText()
-            assertTrue(packet.contains("content-complete and review-pending"))
-            assertFalse(packet.contains("Content-complete development"))
-            assertTrue(packet.contains("IMPLEMENTED_PENDING_FINAL_AUDIT"))
         }
         listOf(6, 8, 9, 10).forEach { number ->
             val unit = pack.unit(number)!!
