@@ -431,10 +431,8 @@ internal fun V2UnitScreen(
             )
         }
         if (cumulativeReviewPolicy(unit.number) != null) {
-            Text("Before advancing, complete the assigned earlier-objective review. Earlier lesson answers and optional practice do not complete this review.")
-            val reviewPolicyId = currentCumulativeAssignment(pack, learner, unit.number)?.policyId
-                ?: unit.advancement?.cumulativeReviewPolicyId
-            V2SecondaryButton(cumulativeReviewTitle(unit.number, reviewPolicyId), onOpenCumulativeReview, tag = "v2-open-cumulative-review")
+            Text(pack.reviewCopy.text("beforeAdvancing"))
+            V2SecondaryButton(cumulativeReviewTitle(pack, unit.number), onOpenCumulativeReview, tag = "v2-open-cumulative-review")
         }
         if (decision == null) {
             V2Status("Preparing advancement")

@@ -153,6 +153,11 @@ class RequiredPathProgressTest {
         )
         return V2CurriculumPack(1, "english-test-fixture", 1, false, V2ReviewRecord("pending", IMPLEMENTED_PENDING_FINAL_AUDIT),
             sources = emptyList(), letters = emptyList(), items = listOf(item("required-item", "required"), item("optional-item", "optional")),
-            references = emptyList(), units = listOf(unit), admissions = V2Admissions(0, 0, 0, 0))
+            references = emptyList(), units = listOf(unit), admissions = V2Admissions(0, 0, 0, 0),
+            reviewCopy = V2ReviewCopy(titles = mapOf(3 to "English fixture review"), messages = mapOf(
+                "continueReason" to "Complete the assigned review before advancement.",
+                "unverifiedRule" to "The cumulative-review rule cannot be verified",
+                "required" to "Complete the assigned earlier-objective review",
+            )))
     }
 }

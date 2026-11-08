@@ -430,51 +430,7 @@ internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = 
     else -> null
 }
 
-internal fun cumulativeReviewTitle(targetUnit: Int, policyId: String? = null): String = when (targetUnit) {
-    3 -> "Review earlier reading and letters"
-    4 -> "Review earlier reading and noun genders"
-    5 -> if (policyId == Unit5CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied subjects"
-        else "Review earlier noun genders and supplied subjects"
-    6 -> if (policyId == Unit6CumulativeReviewPolicy.definition.id || policyId == Unit6WiderCumulativeReviewPolicy.definition.id)
-        "Review earlier reading and nouns"
-        else "Review supplied present forms, noun behavior and subjects"
-    7 -> if (policyId == Unit7CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied object forms"
-        else "Review noun genders and supplied object classification"
-    8 -> if (policyId == Unit8CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied agreement"
-        else "Review supplied present forms and nominative agreement"
-    9 -> if (policyId == Unit9CumulativeReviewPolicy.definition.id || policyId == Unit9WiderCumulativeReviewPolicy.definition.id)
-        "Review earlier reading, supplied plurals and noun genders"
-        else "Review supplied noun behavior, plurals and noun genders"
-    10 -> if (policyId == Unit10CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied numeral agreement"
-        else "Review supplied present forms and numeral agreement"
-    11 -> if (policyId == Unit11CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied possession or absence"
-        else "Review noun behavior and possession or absence"
-    12 -> if (policyId == Unit12CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied past gender"
-        else "Review noun genders and supplied past agreement"
-    13 -> if (policyId == Unit13PresentCumulativeReviewPolicy.definition.id)
-        "Review supplied present forms, aspect partners and past agreement"
-        else "Review earlier reading, supplied aspect partners and past agreement"
-    14 -> if (policyId == Unit14PluralPossessionCumulativeReviewPolicy.definition.id)
-        "Review supplied plurals, possession and reported time"
-        else "Review earlier reading and supplied reporting times"
-    15 -> "Review earlier reading and supplied impersonal states"
-    16 -> "Review earlier reading and supplied imperative forms"
-    17 -> "Review earlier reading and supplied instrumental plurals"
-    18 -> "Review earlier reading and supplied question meanings"
-    19 -> "Review earlier reading and supplied relative-clause meanings"
-    20 -> "Review earlier reading and supplied conditional agreement"
-    21 -> "Review earlier reading and supplied motion contexts"
-    22 -> "Review earlier reading and supplied reflexive objects"
-    23 -> "Review earlier reading and supplied quantity phrases"
-    24 -> "Review earlier reading and supplied time expressions"
-    25 -> "Review earlier reading and supplied negative sentences"
-    26 -> "Review earlier reading and supplied conversation formulas"
-    27 -> "Review earlier reading and supplied address components"
-    28 -> "Review earlier reading and supplied past passive meanings"
-    29 -> "Review earlier reading and supplied relative timing"
-    30 -> "Review earlier reading and supplied active participle forms"
-    else -> "Review earlier objectives"
-}
+
 
 /** The current authored policy only. An older policy id is not a current declaration. */
 internal fun cumulativeReviewDeclaredPolicy(pack: V2CurriculumPack, targetUnit: Int): CumulativeReviewPolicy? {

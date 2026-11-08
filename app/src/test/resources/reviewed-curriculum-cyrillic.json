@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "23cd89633432d1e710824d68e3f6edbe2fa7c7ea6d00b398f204df7e3f8f50d5",
+      "sha256": "0e85e26099dcd985d593c4ffc6c7eff883da1b338641b50e83f1d03050ec1837",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -113,7 +113,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "e64986ee9459ef0407527df3054cae668a041db5d8d87a5cfab66ffb9502800f",
+      "sha256": "e24f920e31857d7c70c4e80991bdd05b252be8719bbf1388a31ac6c695dead13",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {

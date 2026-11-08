@@ -1758,6 +1758,7 @@ def build() -> dict:
         },
     }
     pack["contentChecks"] = json.loads(Path(__file__).with_name("content-checks.json").read_text(encoding="utf-8"))
+    pack["reviewCopy"] = json.loads(Path(__file__).with_name("review-copy.json").read_text(encoding="utf-8"))
     return pack
 
 

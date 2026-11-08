@@ -99,6 +99,7 @@ internal data class V2CurriculumPack(
     val units: List<V2Unit>,
     val sourceCapabilities: List<V2SourceCapability> = emptyList(),
     val contentChecks: List<V2ContentCheck> = emptyList(),
+    val reviewCopy: V2ReviewCopy = V2ReviewCopy(),
     val admissions: V2Admissions,
 )
 

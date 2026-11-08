@@ -6,6 +6,7 @@ import java.security.MessageDigest
 internal object V2Validator {
     fun validate(pack: V2CurriculumPack, repositoryRoot: File? = null): V2Validation {
         val errors = mutableListOf<String>()
+        errors += reviewCopyDefects(pack.reviewCopy)
         for (number in listOf(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30)) if (!cumulativeReviewDeclarationValid(pack, number))
             errors += "Unit $number requires the versioned cumulative-review declaration"
         for (unit in pack.units.filter { cumulativeReviewPolicy(it.number) == null }) {
@@ -242,6 +243,7 @@ internal object V2Validator {
     private fun canonicalInstructionalDocument(pack: V2CurriculumPack): String {
         return canonObj(
             "digestSchema" to canonNum(CONTENT_REVIEW_DIGEST_SCHEMA),
+            "reviewCopy" to canonStr(kotlinx.serialization.json.Json.encodeToString(V2ReviewCopy.serializer(), pack.reviewCopy)),
             "contentChecks" to canonArr(pack.contentChecks.map { canonStr(
                 kotlinx.serialization.json.Json.encodeToString(V2ContentCheck.serializer(), it)) }),
             "schemaVersion" to canonNum(pack.schemaVersion),

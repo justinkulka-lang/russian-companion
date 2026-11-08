@@ -196,8 +196,7 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
         )
     }
     if (cumulativeReviewPolicy(unit.number) != null && !cumulativeReviewComplete(pack, learner, unit.number)) return V2ContinueTarget(
-        title = cumulativeReviewTitle(unit.number, currentCumulativeAssignment(pack, learner, unit.number)?.policyId
-            ?: unit.advancement?.cumulativeReviewPolicyId), reason = "Complete the assigned review before advancement.",
+        title = cumulativeReviewTitle(pack, unit.number), reason = pack.reviewCopy.text("continueReason"),
         sessionId = null, stepIndex = 0, unitNumber = unit.number, opensCumulativeReview = true,
     )
     return V2ContinueTarget(
@@ -330,14 +329,14 @@ internal fun currentUnitRequirements(pack: V2CurriculumPack, unit: V2Unit, learn
     val base = ordinaryUnitRequirements(pack, unit, learner)
     val review = if (cumulativeReviewPolicy(unit.number) != null) {
         when {
-            !cumulativeReviewDeclarationValid(pack, unit.number) -> listOf("The cumulative-review rule cannot be verified")
-            !cumulativeReviewComplete(pack, learner, unit.number) -> listOf("Complete the assigned earlier-objective review")
+            !cumulativeReviewDeclarationValid(pack, unit.number) -> listOf(pack.reviewCopy.text("unverifiedRule"))
+            !cumulativeReviewComplete(pack, learner, unit.number) -> listOf(pack.reviewCopy.text("required"))
             else -> emptyList()
         }
     } else if ((unit.advancement?.cumulativeReviewPolicyId != null ||
         (unit.number != 2 && unit.advancement?.requireDueReview == true)) &&
         !cumulativeReviewDeclarationValid(pack, unit.number)) {
-        listOf("The cumulative-review rule cannot be verified")
+        listOf(pack.reviewCopy.text("unverifiedRule"))
     } else emptyList()
     val remaining = base.remaining + review
     return V2AdvancementDecision(remaining.isEmpty(), remaining)
