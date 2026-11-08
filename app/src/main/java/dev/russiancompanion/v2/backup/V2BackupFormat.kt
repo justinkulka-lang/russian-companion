@@ -501,10 +501,10 @@ internal fun writeGovernedBackup(
     appearance: String,
     document: GovernedLearnerDocument,
     recordingFiles: List<Pair<BackupRecording, File>>,
-    formatVersion: Int = BACKUP_FORMAT_VERSION,
     limits: BackupImportLimits = BackupImportLimits(),
 ) {
     if (V2BackupFaults.failWrite) throw BackupWriteException()
+    if (document.schemaVersion != BACKUP_SCHEMA_VERSION) throw BackupWriteException("unsupported-backup-schema")
     val learnerBytes = backupJson.encodeToString(GovernedLearnerDocument.serializer(), document).encodeToByteArray()
     if (recordingFiles.size > limits.entryCount - 2) throw BackupWriteException("backup-size-limit")
     var declaredExpanded = 0L
@@ -521,7 +521,7 @@ internal fun writeGovernedBackup(
     val files = mutableListOf(BackupFileRecord(BACKUP_LEARNER_ENTRY, sha256(learnerBytes), learnerBytes.size.toLong()))
     files += staged.map { it.first }
     val manifest = BackupManifest(
-        formatVersion = formatVersion,
+        formatVersion = BACKUP_FORMAT_VERSION,
         applicationId = applicationId,
         packId = packId,
         packVersion = packVersion,
@@ -667,7 +667,7 @@ private fun readBoundedBackup(
         } catch (_: Exception) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         }
-        if (manifest.formatVersion !in 1..BACKUP_FORMAT_VERSION) {
+        if (manifest.formatVersion != BACKUP_FORMAT_VERSION) {
             return BackupReadResult.Rejected(BackupRejection.UNSUPPORTED_VERSION)
         }
         if (manifest.applicationId != expectedApplicationId) {
@@ -709,12 +709,11 @@ private fun readBoundedBackup(
         } catch (_: Exception) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         }
-        if (document.schemaVersion !in 1..BACKUP_SCHEMA_VERSION || document.schemaVersion != manifest.formatVersion) {
+        if (document.schemaVersion != BACKUP_SCHEMA_VERSION) {
             return BackupReadResult.Rejected(BackupRejection.UNSUPPORTED_VERSION)
         }
         if (completionActivationDefects(document) != null) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
-        if ((document.schemaVersion == 1 && (document.reviewAssignments.isNotEmpty() || document.reviewAnswers.isNotEmpty())) ||
-            reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null) {
+        if (reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         }
         if (
@@ -953,9 +952,10 @@ internal const val BACKUP_SAVED_WITH_LATER_CHANGES =
     "Backup saved. Newer learner changes were not included. Back up again to save them."
 
 internal fun completionActivationDefects(document: GovernedLearnerDocument): String? {
+    if (document.schemaVersion != BACKUP_SCHEMA_VERSION) return "unsupported learner schema"
     for (row in document.unitCompletions) {
-        if ((document.schemaVersion < 3 || row.preReviewActivation) &&
-            (!row.preReviewActivation || row.reviewPolicyDigest.isNotEmpty() || row.reviewAssignmentId.isNotEmpty() || row.reviewCompletionOrder != 0L)) return "invalid pre-review completion"
+        if (row.preReviewActivation &&
+            (row.reviewPolicyDigest.isNotEmpty() || row.reviewAssignmentId.isNotEmpty() || row.reviewCompletionOrder != 0L)) return "invalid pre-review completion"
         if (!row.preReviewActivation &&
             (row.reviewPolicyDigest.isNotEmpty() || row.reviewAssignmentId.isNotEmpty() || row.reviewCompletionOrder != 0L)) {
             val a = document.reviewAssignments.singleOrNull { it.id == row.reviewAssignmentId } ?: return "missing completion assignment"

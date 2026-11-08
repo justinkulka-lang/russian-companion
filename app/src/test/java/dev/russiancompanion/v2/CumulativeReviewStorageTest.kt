@@ -139,21 +139,24 @@ class CumulativeReviewStorageTest {
         }
     }
 
-    @Test fun schemaOneBackupRestoresNoSyntheticReviewAndClearsReplacedLearnerHistory() {
+    @Test fun obsoleteDocumentSchemasCannotReplaceCurrentReviewHistoryOrBeExported() {
         val p = pack()
         prepared(p).use { s ->
             val a = open(p, s); answer(p, s, a, 0, true)
-            val old = s.governedLearnerDocument().copy(schemaVersion = 1, reviewAssignments = emptyList(), reviewAnswers = emptyList(),
-                unitCompletions = s.governedLearnerDocument().unitCompletions.map { it.copy(preReviewActivation = true) })
-            val bytes = ByteArrayOutputStream(); writeGovernedBackup(bytes, "dev.russiancompanion", p.packId, p.packVersion, "FOLLOW_SYSTEM", old, emptyList(), formatVersion = 1)
-            val temp = File(context().cacheDir, "review-old-${System.nanoTime()}")
-            try {
-                val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp)
-                assertTrue(read is BackupReadResult.Valid)
-                assertEquals(GovernedReplaceOutcome.REPLACED, s.replaceGovernedLearner((read as BackupReadResult.Valid).backup.document, emptyList()))
-                assertTrue(s.cumulativeReviewHistory().first.isEmpty()); assertTrue(s.cumulativeReviewHistory().second.isEmpty())
-                assertEquals(setOf(1, 2), currentCompletedUnitNumbers(p, s.v2LearnerView()))
-            } finally { temp.deleteRecursively() }
+            val document = s.governedLearnerDocument()
+            val fingerprint = s.governedLearnerFingerprint()
+            for (version in listOf(Int.MIN_VALUE, 0, 1, 2, BACKUP_SCHEMA_VERSION + 1, Int.MAX_VALUE)) {
+                val old = document.copy(schemaVersion = version)
+                assertNotNull(completionActivationDefects(old))
+                assertEquals(GovernedReplaceOutcome.UNCHANGED, s.replaceGovernedLearner(old, emptyList()))
+                assertEquals(fingerprint, s.governedLearnerFingerprint())
+                assertEquals(document, s.governedLearnerDocument())
+                val bytes = ByteArrayOutputStream()
+                try {
+                    writeGovernedBackup(bytes, "dev.russiancompanion", p.packId, p.packVersion, "FOLLOW_SYSTEM", old, emptyList())
+                    fail("unsupported learner schema $version was exported")
+                } catch (_: BackupWriteException) { assertEquals(0, bytes.size()) }
+            }
         }
     }
 
@@ -200,7 +203,7 @@ class CumulativeReviewStorageTest {
         } finally { helper.close(); context().deleteDatabase(name) }
     }
 
-    @Test fun legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows() {
+    @Test fun legacyDocumentWithoutReviewFieldsCannotReplaceCurrentLearner() {
         // A unique journal root isolates this restore from rollback fixtures using in-memory stores.
         val name = "legacy-review-fields-${System.nanoTime()}.db"
         try {
@@ -213,9 +216,10 @@ class CumulativeReviewStorageTest {
                 s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 2))
                 s.v2AttestBook(2, "target-before-legacy-restore")
                 assertEquals(setOf(2), s.v2LearnerView().bookAttestedUnits)
-                assertEquals(GovernedReplaceOutcome.REPLACED, s.replaceGovernedLearner(old, emptyList()))
-                assertEquals(old.profile, s.governedLearnerDocument().profile)
-                assertTrue(s.v2LearnerView().bookAttestedUnits.isEmpty())
+                val before = s.governedLearnerDocument()
+                assertEquals(GovernedReplaceOutcome.UNCHANGED, s.replaceGovernedLearner(old, emptyList()))
+                assertEquals(before, s.governedLearnerDocument())
+                assertEquals(setOf(2), s.v2LearnerView().bookAttestedUnits)
                 assertTrue(s.cumulativeReviewHistory().first.isEmpty()); assertTrue(s.cumulativeReviewHistory().second.isEmpty())
             }
         } finally {

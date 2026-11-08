@@ -1484,8 +1484,7 @@ internal class LocalStore private constructor(
         document: GovernedLearnerDocument,
         recordings: List<StagedRecording>,
     ): GovernedReplaceOutcome = call {
-        if (document.schemaVersion !in 1..BACKUP_SCHEMA_VERSION ||
-            (document.schemaVersion == 1 && (document.reviewAssignments.isNotEmpty() || document.reviewAnswers.isNotEmpty())) ||
+        if (document.schemaVersion != BACKUP_SCHEMA_VERSION ||
             dev.russiancompanion.v2.backup.completionActivationDefects(document) != null ||
             reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null ||
             acceptedOrderDefects(document.attempts) != null) return@call GovernedReplaceOutcome.UNCHANGED
