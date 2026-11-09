@@ -31,15 +31,22 @@ internal class V2ClipSession(
     }
 
     fun recordStart(): Boolean {
-        val reference = audio.startCapture() ?: return false
-        takeReference = reference
-        return true
+        takeReference = null
+        takeHeard = false
+        compared = false
+        return audio.startCapture() != null
     }
 
     fun recordStop(): String? {
-        val kept = audio.stopCapture(keep = true) ?: return null
-        takeReference = kept
-        return kept
+        takeReference = audio.stopCapture(keep = true)?.takeIf(audio::recordingReadable)
+        return takeReference
+    }
+
+    fun release() {
+        audio.releaseForBackground()
+        takeReference = null
+        takeHeard = false
+        compared = false
     }
 
     fun replay(onFinished: (Boolean) -> Unit = {}) {
