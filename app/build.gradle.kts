@@ -57,7 +57,20 @@ tasks.withType<Test>().configureEach {
     maxParallelForks = 1
     forkEvery = 8L
     failFast = false
+    val configuredTemp = providers.gradleProperty("hostTestTempRoot")
+        .orElse(providers.environmentVariable("RC_TEST_TEMP")).orNull
+    val shortTemp = configuredTemp?.let { rootProject.file(it) }
+        ?: if (System.getProperty("os.name").startsWith("Windows"))
+            File(System.getProperty("java.io.tmpdir")).toPath().root.resolve("rc-test-tmp").toFile()
+        else null
+    if (shortTemp != null) systemProperty("java.io.tmpdir", shortTemp.absolutePath)
     doFirst {
+        if (shortTemp != null) {
+            check(shortTemp.isDirectory || shortTemp.mkdirs()) {
+                "Cannot create short host test temp root $shortTemp; set -PhostTestTempRoot to a writable short path"
+            }
+            logger.lifecycle("Host test temp root: ${shortTemp.absolutePath}")
+        }
         logger.lifecycle("Host test resources: heap=$maxHeapSize, forks=$maxParallelForks, recycle after $forkEvery classes")
     }
 }

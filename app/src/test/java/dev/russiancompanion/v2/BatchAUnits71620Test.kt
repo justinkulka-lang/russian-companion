@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.testing.pythonProcess
+
 import dev.russiancompanion.v2.curriculum.CompleteRuleContextPins
 import dev.russiancompanion.v2.curriculum.ContentAuditSources
 import dev.russiancompanion.v2.curriculum.V2CheckItem
@@ -45,7 +47,7 @@ class BatchAUnits71620Test {
             assert any('only Wikipedia license evidence' in error for error in wikipedia_errors), wikipedia_errors
             print('ok')
         """.trimIndent()
-        val process = ProcessBuilder("python3", "-c", script)
+        val process = pythonProcess("-c", script)
             .directory(File(root, "catalog"))
             .redirectErrorStream(true)
             .start()

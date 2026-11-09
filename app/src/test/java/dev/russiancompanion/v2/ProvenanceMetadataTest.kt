@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.testing.pythonProcess
+
 import dev.russiancompanion.v2.curriculum.*
 import dev.russiancompanion.v2.notices.offlineNoticeCatalog
 import kotlinx.serialization.json.*
@@ -50,7 +52,7 @@ class ProvenanceMetadataTest {
     }
 
     @Test fun authoringProjectionPreservesDataAndRejectsConflictingIdentities() {
-        val process = ProcessBuilder("python3", File(root, "catalog/test_provenance_metadata.py").path)
+        val process = pythonProcess(File(root, "catalog/test_provenance_metadata.py").path)
             .redirectErrorStream(true).start()
         val output = process.inputStream.bufferedReader().readText()
         assertEquals(output, 0, process.waitFor())

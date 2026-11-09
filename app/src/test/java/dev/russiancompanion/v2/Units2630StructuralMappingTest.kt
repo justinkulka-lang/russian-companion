@@ -379,7 +379,7 @@ class Units2630StructuralMappingTest {
         val root = repo()
         val listed = ProcessBuilder(listOf("git", "ls-files", "*.pdf", "*.PDF"))
             .directory(root)
-            .redirectError(File("/dev/null"))
+            .redirectErrorStream(true)
             .start()
             .let { process ->
                 val text = process.inputStream.bufferedReader().readText()

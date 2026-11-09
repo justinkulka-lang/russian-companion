@@ -1,6 +1,7 @@
 package dev.russiancompanion.v2
 
 import dev.russiancompanion.v2.curriculum.*
+import dev.russiancompanion.testing.pythonProcess
 import kotlinx.serialization.json.*
 import org.junit.Assert.*
 import org.junit.Test
@@ -13,7 +14,7 @@ class SourceTextPoolTest {
         val root=root();val raw=file().readText();val temp=Files.createTempDirectory("source-pool-").toFile()
         try {
             val target=File(temp,"expanded.json")
-            val process=ProcessBuilder("python3",File(root,"catalog/curriculum_storage.py").path,"expand",file().path,target.path).redirectErrorStream(true).start()
+            val process=pythonProcess(File(root,"catalog/curriculum_storage.py").path,"expand",file().path,target.path).redirectErrorStream(true).start()
             val output=process.inputStream.bufferedReader().readText();assertEquals(output,0,process.waitFor())
             val kotlin=V2PackLoader.expandedDocument(raw);val python=Json.parseToJsonElement(target.readText())
             assertEquals(python,kotlin)

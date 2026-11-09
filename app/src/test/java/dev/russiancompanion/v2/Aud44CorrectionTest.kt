@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.testing.pythonProcess
+
 import dev.russiancompanion.release.readAcceptanceCandidate
 import dev.russiancompanion.v2.curriculum.CompleteRuleContextPins
 import dev.russiancompanion.v2.curriculum.V2ContentChecks
@@ -237,7 +239,7 @@ class Aud44CorrectionTest {
         assertTrue(pack.authoredEnglishRecords.any { it.id == "en-u18-112" })
         val byId = pack.authoredEnglishRecords.groupBy { it.id }
         assertTrue(byId.all { (_, records) -> records.map { it.text }.distinct().size == 1 })
-        val process = ProcessBuilder("python3", "-c", "from authored_identity import isolation_errors; errors = isolation_errors(); assert not errors, errors; print('ok')")
+        val process = pythonProcess("-c", "from authored_identity import isolation_errors; errors = isolation_errors(); assert not errors, errors; print('ok')")
             .directory(File(repo(), "catalog"))
             .redirectErrorStream(true)
             .start()

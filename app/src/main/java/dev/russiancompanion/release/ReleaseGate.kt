@@ -15,6 +15,8 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationException
 import kotlinx.serialization.json.Json
 import java.io.File
+import java.io.IOException
+import java.nio.file.InvalidPathException
 import kotlin.system.exitProcess
 
 internal enum class ReleaseDecision {
@@ -538,17 +540,23 @@ private fun readProcedureEvidence(
     }
 }
 
-private fun resolveEvidenceFile(repositoryRoot: File, relative: String): File? {
+internal fun resolveEvidenceFile(repositoryRoot: File, relative: String): File? {
     if (relative.isBlank()) return null
     if (relative.startsWith("/") || relative.startsWith("\\") || relative.contains('\\')) return null
     if (relative.contains(':')) return null
     val parts = relative.split('/')
     if (parts.any { it.isBlank() || it == "." || it == ".." }) return null
-    val root = repositoryRoot.canonicalFile
-    val candidate = File(root, relative).canonicalFile
-    val rootPath = root.path.trimEnd('/') + "/"
-    if (!candidate.path.startsWith(rootPath)) return null
-    return candidate
+    return try {
+        val root = repositoryRoot.toPath().toRealPath()
+        val candidate = root.resolve(relative).toRealPath()
+        if (candidate == root || !candidate.startsWith(root)) null else candidate.toFile()
+    } catch (_: IOException) {
+        null
+    } catch (_: InvalidPathException) {
+        null
+    } catch (_: SecurityException) {
+        null
+    }
 }
 
 internal val V2_RELEASE_BLOCKERS = listOf(

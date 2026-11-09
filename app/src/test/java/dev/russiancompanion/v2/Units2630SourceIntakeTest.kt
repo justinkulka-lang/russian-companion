@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.testing.pythonProcess
+
 import dev.russiancompanion.release.ReleaseDecision
 import dev.russiancompanion.release.assessRepositoryRelease
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
@@ -334,7 +336,7 @@ class Units2630SourceIntakeTest {
             assert any('does not state CC BY-SA 4.0' in error for error in missing_statement), missing_statement
             print('ok')
         """.trimIndent()
-        val process = ProcessBuilder("python3", "-c", script)
+        val process = pythonProcess("-c", script)
             .directory(File(root, "catalog"))
             .redirectErrorStream(true)
             .start()
@@ -376,7 +378,7 @@ class Units2630SourceIntakeTest {
             assert admitted.startswith('Basic word order')
             print('ok')
         """.trimIndent()
-        val process = ProcessBuilder("python3", "-c", script)
+        val process = pythonProcess("-c", script)
             .directory(File(root, "catalog"))
             .redirectErrorStream(true)
             .start()
