@@ -125,6 +125,21 @@ class TypedResponseIntegrationTest {
         }
     }
 
+    @Test fun aValidResubmissionRepairsAnIncorrectStoredFlagInsteadOfBeingDiscardedAsADuplicate() {
+        val p = fixture(); val id = typed(p).id
+        for (defect in listOf("correct", "objective")) LocalStore.openInMemory(context).use { s ->
+            s.v2RecordGovernedAttempt(write(p, "Hi"))
+            val document = s.governedLearnerDocument()
+            s.replaceGovernedLearner(document.copy(attempts = document.attempts.map {
+                if (defect == "correct") it.copy(correct = false) else it.copy(objectiveId = "unrelated-objective")
+            }), emptyList())
+            assertFalse(id in creditItemIds(p, s.v2LearnerView()))
+            assertTrue(governedSessionSelections(p, s.v2LearnerView()).isEmpty())
+            s.v2RecordGovernedAttempt(write(p, "Hi", time = "repair"))
+            assertTrue(id in creditItemIds(p, s.v2LearnerView()))
+        }
+    }
+
     @Test fun optionalLabSubmitsTypedVariantsWithoutGrantingRequiredCredit() {
         val p = fixture(); val id = typed(p).id
         LocalStore.openInMemory(context).use { s ->

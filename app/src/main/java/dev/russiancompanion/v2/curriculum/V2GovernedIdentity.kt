@@ -310,7 +310,7 @@ internal fun attemptSuppliesStepSelection(
     val item = pack.item(attempt.itemId) ?: return false
     if (attempt.ruleDigest != responseRuleDigest(item)) return false
     val scored = scoreCheckedResponse(item, attempt.selected) ?: return false
-    if (item.isTypedResponse() && attempt.correct != scored) return false
+    if (item.isTypedResponse() && (attempt.correct != scored || attempt.objectiveId != item.objectiveId)) return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     val unitNumber = itemUnitNumber(pack, item) ?: return false
     if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
@@ -602,7 +602,7 @@ internal fun attemptMatchesCurrentOptional(
     val item = pack.item(attempt.itemId) ?: return false
     if (attempt.ruleDigest != responseRuleDigest(item)) return false
     val scored = scoreCheckedResponse(item, attempt.selected) ?: return false
-    if (item.isTypedResponse() && attempt.correct != scored) return false
+    if (item.isTypedResponse() && (attempt.correct != scored || attempt.objectiveId != item.objectiveId)) return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     val unitNumber = itemUnitNumber(pack, item) ?: return false
     if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false

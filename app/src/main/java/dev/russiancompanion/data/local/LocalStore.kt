@@ -990,7 +990,9 @@ internal class LocalStore private constructor(
             unitContentDigest = write.unitContentDigest,
             unitNumber = write.unitNumber,
         )
-        return latest != null && latest.selected == write.selected
+        return latest != null && latest.selected == write.selected &&
+            (write.ruleDigest != dev.russiancompanion.v2.curriculum.typedResponseRuleDigest() ||
+                (latest.correct == write.correct && latest.objectiveId == write.objectiveId && latest.acceptedOrder > 0))
     }
 
     private val acceptedOrderLock = Any()
