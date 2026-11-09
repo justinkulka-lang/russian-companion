@@ -51,6 +51,8 @@ import dev.russiancompanion.v2.curriculum.currentObjective
 import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.lessonPresentedOptions
+import dev.russiancompanion.v2.curriculum.isTypedResponse
+import dev.russiancompanion.v2.curriculum.scoreCheckedResponse
 import dev.russiancompanion.v2.curriculum.objectiveState
 import dev.russiancompanion.v2.curriculum.practiceOffers
 import dev.russiancompanion.v2.curriculum.readinessLabel
@@ -578,7 +580,9 @@ internal fun V2SessionScreen(
             val locked = item.id in lockedItemIds
             V2QuestionCue(item, "v2-prompt-letter")
             Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-item-prompt-${item.id}" })
-            lessonPresentedOptions(item, step.id).forEach { option ->
+            if (item.isTypedResponse()) {
+                V2TypedResponseInput(item, step.id, selected, !locked) { value -> onAttempt(item.id, value, step.id) }
+            } else lessonPresentedOptions(item, step.id).forEach { option ->
                 androidx.compose.foundation.layout.Row(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -598,7 +602,7 @@ internal fun V2SessionScreen(
                 }
             }
             if (selected != null) {
-                val correct = selected == item.answer
+                val correct = scoreCheckedResponse(item, selected) == true
                 Text(
                     if (correct) "Recorded as correct. ${item.feedback}" else "Not the reviewed answer. ${item.feedback}",
                     modifier = Modifier.semantics { testTag = "v2-item-feedback-${item.id}" },

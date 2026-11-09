@@ -258,19 +258,20 @@ internal fun prepareGovernedAttempt(
     if (role != PRESCRIBED_CHECK && role != OPTIONAL_PRACTICE) return null
     if (stepId.isBlank() || recordedAt.isBlank() || selected.isBlank()) return null
     val item = pack.item(itemId) ?: return null
-    if (item.options.isEmpty() || selected !in item.options || item.answer !in item.options) return null
+    val correct = scoreCheckedResponse(item, selected) ?: return null
     val unitNumber = itemUnitNumber(pack, item) ?: return null
     val unit = pack.unit(unitNumber) ?: return null
     if (!unit.openable()) return null
     val itemDigest = V2Validator.checkItemContentDigest(item)
     val unitDigest = V2PackIdentityIndex.unitDigest(pack, unitNumber)
         ?: V2Validator.unitContentReviewDigest(pack, unitNumber)
-    val ruleDigest = closedResponseRuleDigest()
+    val ruleDigest = responseRuleDigest(item)
+    val responseIdentity = if (item.isTypedResponse()) sha256Hex(canonicalParts(listOf(selected, itemDigest, ruleDigest))) else selected.hashCode().toString()
     return GovernedAttemptWrite(
-        id = "$itemId:$role:$stepId:$recordedAt:${selected.hashCode()}",
+        id = "$itemId:$role:$stepId:$recordedAt:$responseIdentity",
         itemId = itemId,
         selected = selected,
-        correct = selected == item.answer,
+        correct = correct,
         recordedAtLocal = recordedAt,
         itemDigest = itemDigest,
         unitContentDigest = unitDigest,
@@ -306,9 +307,10 @@ internal fun attemptSuppliesStepSelection(
     ) {
         return false
     }
-    if (attempt.ruleDigest != closedResponseRuleDigest()) return false
     val item = pack.item(attempt.itemId) ?: return false
-    if (attempt.selected !in item.options) return false
+    if (attempt.ruleDigest != responseRuleDigest(item)) return false
+    val scored = scoreCheckedResponse(item, attempt.selected) ?: return false
+    if (item.isTypedResponse() && attempt.correct != scored) return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     val unitNumber = itemUnitNumber(pack, item) ?: return false
     if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
@@ -401,11 +403,11 @@ internal fun attemptGrantsPrescribedCredit(attempt: GovernedAttemptView, pack: V
     ) {
         return false
     }
-    if (attempt.ruleDigest != closedResponseRuleDigest()) return false
     val item = pack.item(attempt.itemId) ?: return false
+    if (attempt.ruleDigest != responseRuleDigest(item)) return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     if (pack.unit(attempt.unitNumber) == null) return false
-    if (attempt.selected != item.answer || attempt.objectiveId != item.objectiveId ||
+    if (scoreCheckedResponse(item, attempt.selected) != true || attempt.objectiveId != item.objectiveId ||
         itemUnitNumber(pack, item) != attempt.unitNumber) return false
     return prescribedUnitIdentityMatches(pack, attempt.unitNumber, attempt.unitContentDigest)
 }
@@ -505,7 +507,9 @@ internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId
         val unitNumber = itemUnitNumber(pack, item) ?: return@mapNotNull null
         val unit = pack.unit(unitNumber) ?: return@mapNotNull null
         if (!unit.openable() || unitNumber !in reached) return@mapNotNull null
-        if (item.options.isEmpty() || item.answer !in item.options) return@mapNotNull null
+        if (item.isTypedResponse()) {
+            if (scoreCheckedResponse(item, item.answer) != true) return@mapNotNull null
+        } else if (item.options.isEmpty() || item.answer !in item.options) return@mapNotNull null
         if (!itemKindMatchesLab(item.kind, labId, unitNumber, learner, pack)) return@mapNotNull null
         if (itemOnlyOnGapSteps(pack, item.id)) return@mapNotNull null
         item
@@ -595,9 +599,10 @@ internal fun attemptMatchesCurrentOptional(
     ) {
         return false
     }
-    if (attempt.ruleDigest != closedResponseRuleDigest()) return false
     val item = pack.item(attempt.itemId) ?: return false
-    if (attempt.selected !in item.options) return false
+    if (attempt.ruleDigest != responseRuleDigest(item)) return false
+    val scored = scoreCheckedResponse(item, attempt.selected) ?: return false
+    if (item.isTypedResponse() && attempt.correct != scored) return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     val unitNumber = itemUnitNumber(pack, item) ?: return false
     if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
@@ -740,7 +745,7 @@ private fun itemKindMatchesLab(kind: String, labId: String, unitNumber: Int, lea
     return when (labId) {
         "alphabet" -> kind in setOf("LETTER_IDENTITY", "CONFUSABLE", "SIGN", "PRINT_PAIR")
         "reading" -> kind == "SOURCE_STRESS"
-        "grammar" -> kind in setOf(
+        "grammar" -> kind in setOf("TYPED_FORM", "TYPED_TRANSFORMATION") || kind in setOf(
             "FORM_SELECTION",
             "CASE_RECOGNITION",
             "PATTERN_CLASSIFICATION",
@@ -749,7 +754,7 @@ private fun itemKindMatchesLab(kind: String, labId: String, unitNumber: Int, lea
             "SOURCE_INDECLINABLE",
             "CONTRAST_SELECTION",
         )
-        "vocabulary" -> kind in setOf("SOURCE_MEANING", "SOURCE_FORM", "SOURCE_GENDER", "SOURCE_QUESTION")
+        "vocabulary" -> kind in setOf("TYPED_TRANSLATION", "SOURCE_MEANING", "SOURCE_FORM", "SOURCE_GENDER", "SOURCE_QUESTION")
         "mixed" -> unitNumber in currentCompletedUnitNumbers(pack, learner)
         else -> false
     }

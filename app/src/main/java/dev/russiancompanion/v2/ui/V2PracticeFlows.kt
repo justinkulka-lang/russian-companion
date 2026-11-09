@@ -34,6 +34,7 @@ import dev.russiancompanion.v2.curriculum.V2CheckItem
 import dev.russiancompanion.v2.curriculum.V2Step
 import dev.russiancompanion.v2.curriculum.example
 import dev.russiancompanion.v2.curriculum.labPresentedOptions
+import dev.russiancompanion.v2.curriculum.isTypedResponse
 
 @Composable
 internal fun V2SavedWorkScreen(
@@ -108,7 +109,7 @@ internal fun V2LabScreen(
             Box(Modifier.padding(16.dp)) {
                 val differentAnswer = chosen != null && chosen != recorded?.selected
                 val showSubmit = item != null && (recorded == null || differentAnswer)
-                if (!showSubmit) {
+                if (item?.isTypedResponse() == true || !showSubmit) {
                     val atEnd = items.isEmpty() || index >= items.lastIndex
                     V2PrimaryButton(
                         text = if (items.isEmpty() || atEnd) "Done" else "Next item",
@@ -117,6 +118,7 @@ internal fun V2LabScreen(
                             else onBack()
                         },
                         tag = "v2-lab-next",
+                        enabled = item?.isTypedResponse() != true || (recorded != null && !pending),
                     )
                 } else {
                     V2PrimaryButton(
@@ -155,7 +157,10 @@ internal fun V2LabScreen(
         Spacer(Modifier.height(8.dp))
         V2QuestionCue(item, "v2-lab-cue")
         Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-lab-prompt" })
-        labPresentedOptions(item, labId).forEach { option ->
+        if (item.isTypedResponse()) {
+            V2TypedResponseInput(item, "$labId:$index", recorded?.selected, !pending,
+                tag = "v2-lab-typed-${item.id}") { value -> onSubmit(item.id, value) }
+        } else labPresentedOptions(item, labId).forEach { option ->
             Row(
                 modifier = Modifier
                     .fillMaxWidth()

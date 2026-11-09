@@ -48,12 +48,15 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
             val item = pack.item(slot.itemId) ?: return@forEachIndexed
             Text(item.prompt)
             if (item.promptLetterRole == "CUE") item.promptLetter?.let { Text(it) }
-            reviewPresentedOptions(item, a, index).forEach { option ->
+            val latest = learner.reviewAnswers.filter { it.assignmentId == a.id && it.slotIndex == index }
+                .maxByOrNull { it.acceptedOrder }
+            if (item.isTypedResponse()) {
+                V2TypedResponseInput(item, "${a.id}:$index", latest?.selected, !busy,
+                    tag = "v2-review-typed-$index") { value -> onAnswer(a.id, index, value) }
+            } else reviewPresentedOptions(item, a, index).forEach { option ->
                 V2SecondaryButton(option, { onAnswer(a.id, index, option) }, enabled = !busy,
                     tag = "v2-review-option-$index-$option")
             }
-            val latest = learner.reviewAnswers.filter { it.assignmentId == a.id && it.slotIndex == index }
-                .maxByOrNull { it.acceptedOrder }
             if (latest != null) {
                 Text(if (index in state.completed) pack.reviewCopy.text("correctFeedback", "feedback" to item.feedback) else pack.reviewCopy.text("wrongFeedback", "feedback" to item.feedback),
                     Modifier.semantics { testTag = "v2-review-feedback-$index" })

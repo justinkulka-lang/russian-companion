@@ -18,6 +18,9 @@ internal data class V2TypedAnswerKey(
 
 internal fun V2CheckItem.isTypedResponse(): Boolean = kind in TYPED_ITEM_KINDS
 
+internal fun responseRuleDigest(item: V2CheckItem): String =
+    if (item.isTypedResponse()) typedResponseRuleDigest() else closedResponseRuleDigest()
+
 /** Review signatures/status stay outside the content they sign. */
 internal fun typedAnswerKeyContent(key: V2TypedAnswerKey): String = canonicalParts(listOf(
     "typed-answer-key", key.schema.toString(), key.id, key.version.toString(),

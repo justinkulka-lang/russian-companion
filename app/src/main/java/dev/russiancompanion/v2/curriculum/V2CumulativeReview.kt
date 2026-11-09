@@ -484,7 +484,7 @@ internal fun recentReviewCandidate(pack: V2CurriculumPack, learner: V2LearnerVie
         a.itemId in ids && a.acceptedOrder > 0 && a.acceptedOrder !in ambiguous &&
             pack.step(a.stepId)?.second?.kind == "CHECK" &&
             attemptSuppliesStepSelection(a, pack, a.stepId) &&
-            pack.item(a.itemId)?.let { a.objectiveId == it.objectiveId && a.correct == (a.selected == it.answer) } == true
+            pack.item(a.itemId)?.let { a.objectiveId == it.objectiveId && a.correct == scoreCheckedResponse(it, a.selected) } == true
     }.groupBy { it.itemId }.mapValues { (_, rows) -> rows.maxBy { it.acceptedOrder } }
     return candidates.withIndex().minWithOrNull(compareBy<IndexedValue<V2CheckItem>>(
         { if (latest[it.value.id]?.correct == false) 0 else 1 },
@@ -513,7 +513,8 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
             reviewUnitDigest(pack, unit.number), teachingDigest(pack, o))
     }
     val a = CumulativeReviewAssignment(id, targetUnit, policy.id,
-        policy.digest, presentedReviewResponseRuleDigest(), boundary, slots, "",
+        policy.digest, if (slots.any { pack.item(it.itemId)?.isTypedResponse() == true }) typedReviewResponseRuleDigest()
+            else presentedReviewResponseRuleDigest(), boundary, slots, "",
         schema = CUMULATIVE_REVIEW_SCHEMA)
     return a.copy(digest = reviewAssignmentDigest(a))
 }
@@ -536,7 +537,8 @@ private fun eligibleReviewCandidates(pack: V2CurriculumPack, learner: V2LearnerV
             (o.instructionStepIds + o.practiceStepIds).any { !completedStepCounts(pack, learner, it) } ||
             objectiveState(o, learner, pack) != V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS) return null
         val eligible = candidates.mapNotNull { pack.item(it) }.filter {
-            it.id in o.checkItemIds && it.objectiveId == o.id && it.options.size >= 2 && it.answer in it.options
+            it.id in o.checkItemIds && it.objectiveId == o.id &&
+                (if (it.isTypedResponse()) scoreCheckedResponse(it, it.answer) == true else it.options.size >= 2 && it.answer in it.options)
         }
         if (eligible.isEmpty()) return null
         eligible
@@ -555,6 +557,8 @@ internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReview
     val policy = cumulativeReviewAssignmentPolicy(a) ?: return false
     val declared = cumulativeReviewDeclaredPolicy(pack, a.targetUnit) ?: return false
     if (policy.id != declared.id) return false
+    val containsTyped = a.slots.any { pack.item(it.itemId)?.isTypedResponse() == true }
+    if (containsTyped != (a.responseRuleDigest == typedReviewResponseRuleDigest())) return false
     if (!cumulativeReviewDeclarationValid(pack, a.targetUnit) || pack.schemaVersion != 1 ||
         !reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.boundary < 0 ||
         a.policyId != policy.id || a.policyDigest != policy.digest ||
@@ -568,6 +572,7 @@ internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReview
             s.objectiveId == spec.objectiveId && s.skill == spec.skill.name && s.itemId in spec.candidateItemIds &&
             (spec.remediationStepId == null || spec.remediationStepId in o.instructionStepIds + o.remediationStepIds) &&
             s.itemId in o.checkItemIds && item.objectiveId == o.id &&
+            (!item.isTypedResponse() || scoreCheckedResponse(item, item.answer) == true) &&
             s.itemDigest == V2Validator.checkItemContentDigest(item) &&
             prescribedUnitIdentityMatches(pack, s.ownerUnit, s.unitDigest) &&
             s.teachingDigest == teachingDigest(pack, o)
@@ -582,7 +587,7 @@ internal fun completedReviewSlots(pack: V2CurriculumPack, a: CumulativeReviewAss
         val answer = answers.filter { it.assignmentId == a.id && it.assignmentDigest == a.digest &&
             it.slotIndex == index && it.schema == CUMULATIVE_REVIEW_SCHEMA && it.role == CUMULATIVE_REVIEW_ROLE &&
             it.acceptedOrder > a.boundary }.maxByOrNull { it.acceptedOrder } ?: return@filter false
-        answer.selected == pack.item(a.slots[index].itemId)?.answer
+        pack.item(a.slots[index].itemId)?.let { scoreCheckedResponse(it, answer.selected) == true } == true
     }.toSet()
 }
 

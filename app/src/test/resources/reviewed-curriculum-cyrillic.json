@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "0e85e26099dcd985d593c4ffc6c7eff883da1b338641b50e83f1d03050ec1837",
+      "sha256": "1f983abd8fd19317dac73000bfbd7e8986ea746bd14c3707e4b617cc0078bade",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {

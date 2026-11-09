@@ -20,12 +20,17 @@ internal fun presentedReviewResponseRuleDigest(): String = reviewHash(canonicalP
 )))
 
 internal fun reviewResponseRuleSupported(digest: String): Boolean =
-    digest == closedResponseRuleDigest() || digest == presentedReviewResponseRuleDigest()
+    digest == closedResponseRuleDigest() || digest == presentedReviewResponseRuleDigest() || digest == typedReviewResponseRuleDigest()
+
+internal fun typedReviewResponseRuleDigest(): String = reviewHash(canonicalParts(listOf(
+    "mixed-choice-and-typed-review-v1", presentedReviewResponseRuleDigest(), typedResponseRuleDigest(),
+)))
 
 internal fun reviewPresentedOptions(item: V2CheckItem, assignment: CumulativeReviewAssignment,
                                     slotIndex: Int): List<String> = when (assignment.responseRuleDigest) {
     closedResponseRuleDigest() -> item.options // Preserve every saved legacy assignment.
     presentedReviewResponseRuleDigest() -> presentedOptions(item, reviewOptionContext(assignment.id, slotIndex))
+    typedReviewResponseRuleDigest() -> presentedOptions(item, reviewOptionContext(assignment.id, slotIndex))
     else -> emptyList() // Unknown rules must not silently acquire current presentation semantics.
 }
 

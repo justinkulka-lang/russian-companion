@@ -975,7 +975,8 @@ internal class LocalStore private constructor(
         if (write.itemDigest == dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY ||
             write.ruleDigest == dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY ||
             write.unitContentDigest == dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY ||
-            write.ruleDigest != dev.russiancompanion.v2.curriculum.closedResponseRuleDigest()
+            (write.ruleDigest != dev.russiancompanion.v2.curriculum.closedResponseRuleDigest() &&
+                write.ruleDigest != dev.russiancompanion.v2.curriculum.typedResponseRuleDigest())
         ) {
             error("unverified attempt")
         }
@@ -1451,7 +1452,7 @@ internal class LocalStore private constructor(
             if (!reviewAssignmentCurrent(pack, a) || slotIndex !in a.slots.indices) return@runInTransaction
             if (!dev.russiancompanion.v2.curriculum.reviewAssignmentEligible(pack, readV2Learner(), a)) return@runInTransaction
             val item = pack.item(a.slots[slotIndex].itemId) ?: return@runInTransaction
-            if (selected !in item.options) return@runInTransaction
+            if (dev.russiancompanion.v2.curriculum.scoreCheckedResponse(item, selected) == null) return@runInTransaction
             val latest = readReviewAnswers().lastOrNull { it.assignmentId == a.id && it.slotIndex == slotIndex }
             if (latest?.selected == selected) { saved = true; return@runInTransaction }
             val max = database.v2().maxReviewOrder()
