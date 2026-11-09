@@ -20,13 +20,16 @@ internal data class V2DesignSignal(
 @Serializable
 internal data class V2DesignReport(
     val reportSchemaVersion: Int = 1,
-    val diagnosticVersion: String = "assessment-teaching-v1",
+    val diagnosticVersion: String = "assessment-teaching-a2-v2",
     val verdict: String,
     val counts: Map<String, Int>,
     val authoredRequiredKeyPositions: Map<Int, Int>,
     val signals: List<V2DesignSignal>,
+    val unitAssessments: List<V2UnitAssessmentSummary> = emptyList(),
     val limitations: List<String> = listOf(
         "Review signals are not confirmed linguistic or pedagogical defects.",
+        "A2-23 shortfalls require a recorded Product Owner acceptance; the report does not grant a variance.",
+        "Catalog audio is not verified audio. Conditional dictation checks require the per-unit verified clip registry (T13); no owner-verified clips are registered yet.",
         "Lexical absence may be legitimate transfer; lexical presence does not prove adequate teaching.",
         "Authored key positions do not establish displayed positions after runtime permutation.",
         "This report neither replaces runtime validation nor grants review, rights or release approval.",
@@ -154,12 +157,14 @@ internal object V2DesignDiagnostics {
             inspectMarkup(entry.id, entry.introducedInUnit, "summary", entry.summary)
             inspectMarkup(entry.id, entry.introducedInUnit, "detail", entry.detail)
         }
+        val (unitAssessments, assessmentSignals) = V2AssessmentDiagnostics.audit(pack)
+        signals += assessmentSignals
         val sorted = signals.distinct().sortedWith(compareBy({ it.rule }, { it.entityIds.joinToString("\u0000") }, { it.field }))
         return V2DesignReport(verdict = if (sorted.isEmpty()) "NO_MECHANICAL_SIGNALS_NOT_ACCEPTANCE" else "NEEDS_CORRECTION_OR_REVIEW",
             counts = linkedMapOf("units" to pack.units.size, "objectives" to pack.units.sumOf { it.objectives.size },
                 "items" to pack.items.size, "requiredChecks" to required.size, "structuralErrors" to sorted.count { it.kind == V2DesignSignalKind.STRUCTURAL_ERROR },
                 "reviewSignals" to sorted.count { it.kind == V2DesignSignalKind.REVIEW_SIGNAL }),
             authoredRequiredKeyPositions = required.values.groupingBy { it.options.indexOf(it.answer) }.eachCount().toSortedMap(),
-            signals = sorted)
+            signals = sorted, unitAssessments = unitAssessments)
     }
 }

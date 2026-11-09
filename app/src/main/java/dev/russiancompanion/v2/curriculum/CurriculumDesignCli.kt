@@ -42,9 +42,15 @@ fun main(args: Array<String>) {
         appendLine("| --- | ---: |")
         report.signals.groupingBy { it.rule }.eachCount().toSortedMap().forEach { (rule, count) -> appendLine("| $rule | $count |") }
         appendLine(); report.limitations.forEach { appendLine("- $it") }
-        appendLine(); appendLine("## Located signals")
-        report.signals.forEach { signal ->
-            appendLine(); appendLine("- ${signal.kind} / ${signal.rule}: ${signal.entityIds.joinToString(", ")} (${signal.field}). ${signal.explanation}")
+        appendLine(); appendLine("## Per-unit assessment minimums (A2-23)")
+        appendLine(); appendLine("| Unit | Checked (20 minimum) | Required | Typed required (30% from Unit 3) | Verified clips | Bound dictation |")
+        appendLine("| --- | ---: | ---: | ---: | ---: | ---: |")
+        report.unitAssessments.forEach { row ->
+            appendLine("| ${row.unit} | ${row.checkedItems} | ${row.requiredChecks} | ${row.typedRequiredChecks} | ${row.verifiedAudioClips} | ${row.boundDictationItems} |")
+        }
+        appendLine(); appendLine("## Located signals by unit")
+        report.signals.sortedWith(compareBy({ it.unit ?: Int.MAX_VALUE }, { it.rule }, { it.entityIds.joinToString() })).forEach { signal ->
+            appendLine(); appendLine("- Unit ${signal.unit ?: "cross-unit"}: ${signal.kind} / ${signal.rule}: ${signal.entityIds.joinToString(", ")} (${signal.field}). ${signal.explanation}")
             if (signal.relatedStepIds.isNotEmpty()) appendLine("  Steps: ${signal.relatedStepIds.joinToString(", ")}")
         }
     })
