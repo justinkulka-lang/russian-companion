@@ -132,7 +132,7 @@ Never:
 
 | ID | Type | Task | Done when | Needs | Status |
 |---|---|---|---|---|---|
-| T08 | CODEX | Add typed-response items: schema, input UI, exact-match scoring with accepted variants and only the A2-21 normalization (A2-21, A2-22). | Tests cover correct, variant, stress-stripped, ё/е and wrong input. | T07 | TODO |
+| T08 | CODEX | Add typed-response items: schema, input UI, exact-match scoring with accepted variants and only the A2-21 normalization (A2-21, A2-22). | Tests cover correct, variant, stress-stripped, ё/е and wrong input. | T07 | IN_PROGRESS |
 | T09 | CODEX | Add the A2-24 item-validity checks and the A2-23 per-unit minimum checks to the validator. In report mode they list violations per unit and do not fail the build. | Report lists violations per unit. | T08 | TODO |
 | T10 | CODEX | Show distractor rationales on wrong answers (A2-25). Add a validator lint for governance terms and raw markup in learner text (A2-26), in report mode. | Wrong answer shows its own rationale. Lint report produced. | T09 | TODO |
 | T11 | CODEX | Add the in-app spaced review queue (A2-27) and the due-review size rules (A2-28). | Tests cover missed-item return, interval growth, the 8-item / 3-objective rule and the repeat limit. | T08 | TODO |
