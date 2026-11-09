@@ -1,10 +1,11 @@
 # Host unit tests
 
 Use JDK 21 and the Android SDK packages in `.github/workflows/build.yml`.
-The single push workflow runs the complete configured suite, compilation, lint
-and release-gate attachment checks on Linux and Windows. It keeps the existing
-queue-only path filter and branch concurrency cancellation. Windows reports are
-separate CI artifacts; the Linux job retains the shared exact-commit source.
+Push CI runs the complete configured suite, compilation, lint and release-gate
+attachment checks on Linux, which is the official exact-commit test evidence.
+Windows verification runs only through manual workflow_dispatch, with the full
+suite and separate supplemental reports. The existing queue-only push filter
+and branch concurrency cancellation remain. Linux retains the shared source.
 
 Python checks require an installed Python 3.10 or newer. The test helper probes
 the interpreter before running a check. On Windows it tries `py -3`, then

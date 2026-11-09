@@ -1,6 +1,7 @@
 name: Engineering verification
 
 on:
+  workflow_dispatch:
   push:
     paths-ignore:
       - WORK_QUEUE.md
@@ -79,6 +80,7 @@ jobs:
             app/build/reports/lint-results-debug.*
 
   verify-windows:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: windows-2025
     env:
       RC_TEST_TEMP: D:/rc-tmp

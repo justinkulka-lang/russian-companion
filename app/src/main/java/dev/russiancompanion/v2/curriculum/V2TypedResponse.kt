@@ -21,15 +21,15 @@ internal fun V2CheckItem.isTypedResponse(): Boolean = kind in TYPED_ITEM_KINDS
 /** Review signatures/status stay outside the content they sign. */
 internal fun typedAnswerKeyContent(key: V2TypedAnswerKey): String = canonicalParts(listOf(
     "typed-answer-key", key.schema.toString(), key.id, key.version.toString(),
-    "a2-21-normalization-v1", typedResponseRuleDigest(), canonicalParts(key.acceptedAnswers),
+    "a2-21-owner-trim-v2", typedResponseRuleDigest(), canonicalParts(key.acceptedAnswers),
 ))
 
 internal fun typedAnswerKeyDigest(key: V2TypedAnswerKey): String = reviewHash(typedAnswerKeyContent(key))
 
 internal fun typedResponseRuleDigest(): String = reviewHash(canonicalParts(listOf(
-    "closed-typed-response-v1", "finite reviewed versioned key; exact membership",
+    "closed-typed-response-v2", "finite reviewed versioned key; exact membership; trim response leading/trailing whitespace before comparison",
     "only first-letter simple case, combining acute U+0301 removal, and U+0401/U+0451 to U+0415/U+0435",
-    "no whitespace, punctuation, other-letter case, Unicode decomposition, spelling, synonym or fuzzy normalization",
+    "no inner-whitespace, punctuation, other-letter case, Unicode decomposition, spelling, synonym or fuzzy normalization",
 )))
 
 /** Only A2-21's three permitted changes; preserve every other character. */
@@ -91,6 +91,6 @@ internal fun scoreCheckedResponse(item: V2CheckItem, response: String): Boolean?
         return response == item.answer
     }
     if (typedItemDefects(item).isNotEmpty()) return null
-    val submitted = normalizeTypedResponse(response)
+    val submitted = normalizeTypedResponse(response.trim())
     return item.typedAnswerKey!!.acceptedAnswers.any { normalizeTypedResponse(it) == submitted }
 }

@@ -26,7 +26,7 @@ class TypedResponseTest {
         val i = item()
         assertTrue(typedItemDefects(i).isEmpty())
         for (answer in listOf("Hello", "hello", "Hi", "hi", "He\u0301llo")) assertEquals(answer, true, scoreCheckedResponse(i, answer))
-        for (answer in listOf("HELLO", "hEllo", " Hello", "Hello ", "Hello!", "Hell o", "Hello\n", "Helo", "Hey"))
+        for (answer in listOf("HELLO", "hEllo", "Hello!", "Hell o", "Helo", "Hey"))
             assertEquals(answer, false, scoreCheckedResponse(i, answer))
         assertNull(scoreCheckedResponse(i, ""))
         assertNull(scoreCheckedResponse(i, "  "))
@@ -35,6 +35,18 @@ class TypedResponseTest {
         assertEquals(false, scoreCheckedResponse(item(listOf("two words")), "two  words"))
         assertEquals(false, scoreCheckedResponse(item(listOf("café")), "cafe"))
         assertEquals(false, scoreCheckedResponse(item(listOf("test")), "te\u0300st"))
+    }
+
+    @Test fun leadingAndTrailingWhitespaceAreTrimmedButInnerSpacesAreNotCollapsed() {
+        val i = item()
+        assertEquals(true, scoreCheckedResponse(i, " Hello"))
+        assertEquals(true, scoreCheckedResponse(i, "Hello "))
+        assertEquals(true, scoreCheckedResponse(i, "\tHello\r\n"))
+        assertEquals(true, scoreCheckedResponse(item(listOf("two words")), " Two words "))
+        assertEquals(false, scoreCheckedResponse(item(listOf("two words")), " Two  words "))
+        assertEquals(false, scoreCheckedResponse(i, " Hel lo "))
+        assertEquals(false, scoreCheckedResponse(i, " HELLO "))
+        assertEquals(false, scoreCheckedResponse(i, " Hello! "))
     }
 
     @Test fun alphabetVariantsAndStressAreAllowedWithoutUnicodeDecompositionOrOtherCaseFolding() {
