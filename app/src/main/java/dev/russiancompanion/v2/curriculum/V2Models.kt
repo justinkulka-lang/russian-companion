@@ -28,7 +28,7 @@ internal val CLOSED_ITEM_KINDS = setOf(
     "SOURCE_QUESTION",
     "SOURCE_CASE",
     "SOURCE_INDECLINABLE",
-) + GRAMMAR_ITEM_KINDS
+) + GRAMMAR_ITEM_KINDS + TYPED_ITEM_KINDS
 
 internal val LINGUISTIC_REFERENCE_CLASSIFICATION = "LINGUISTIC_INSTRUCTION"
 
@@ -334,6 +334,8 @@ internal data class V2CheckItem(
     val containsGeneratedRussian: Boolean = false,
     val distractorRationales: List<String> = emptyList(),
     val assessment: V2Assessment? = null,
+    val typedAnswerKey: V2TypedAnswerKey? = null,
+    val dictationAudioAssetId: String? = null,
 )
 
 @Serializable

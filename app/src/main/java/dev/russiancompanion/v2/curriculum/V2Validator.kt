@@ -607,6 +607,8 @@ internal object V2Validator {
             fields += "distractorRationales" to canonArr(item.distractorRationales.map(::canonStr))
         }
         item.assessment?.let { assessment -> fields += "assessment" to canonicalAssessment(assessment) }
+        item.typedAnswerKey?.let { key -> fields += "typedAnswerKey" to canonStr(typedAnswerKeyContent(key)) }
+        item.dictationAudioAssetId?.let { fields += "dictationAudioAssetId" to canonStr(it) }
         return canonObj(*fields.toTypedArray())
     }
 
@@ -2157,6 +2159,7 @@ internal object V2Validator {
         pack.items.filter { it.objectiveId in objectiveIds }.forEach { item ->
             texts += item.prompt
             texts += item.answer
+            texts += item.typedAnswerKey?.acceptedAnswers.orEmpty()
             texts += item.feedback
             texts += item.options
             texts += item.distractorRationales
@@ -2942,6 +2945,7 @@ internal object V2Validator {
             reject("item ${item.id} prompt", item.prompt)
             reject("item ${item.id} promptLetter", item.promptLetter)
             reject("item ${item.id} answer", item.answer)
+            item.typedAnswerKey?.acceptedAnswers?.forEach { reject("item ${item.id} accepted answer", it) }
             reject("item ${item.id} feedback", item.feedback)
             item.options.forEach { reject("item ${item.id} option", it) }
             item.distractorRationales.forEach { reject("item ${item.id} rationale", it) }
@@ -4301,6 +4305,7 @@ internal object V2Validator {
             reject("item ${item.id}", item.prompt)
             reject("item ${item.id}", item.promptLetter)
             reject("item ${item.id}", item.answer)
+            item.typedAnswerKey?.acceptedAnswers?.forEach { reject("item ${item.id}", it) }
             reject("item ${item.id}", item.feedback)
             item.options.forEach { reject("item ${item.id}", it) }
             item.distractorRationales.forEach { reject("item ${item.id}", it) }
@@ -4748,7 +4753,7 @@ internal object V2Validator {
         validateIndeclinabilityBinding(pack, item, errors)
         if (item.promptLetterRole !in setOf("CUE", "ANSWER_REFERENCE") ||
             (item.promptLetterRole == "ANSWER_REFERENCE" &&
-                (item.kind != "SOURCE_QUESTION" || item.promptLetter != item.answer))) {
+                ((item.kind != "SOURCE_QUESTION" && !item.isTypedResponse()) || item.promptLetter != item.answer))) {
             errors += "Item ${item.id} has an invalid cue role"
         }
         if (item.kind == "SOURCE_QUESTION" && item.promptLetter == item.answer && item.promptLetterRole == "CUE") {
@@ -4756,7 +4761,18 @@ internal object V2Validator {
         }
         if (item.containsGeneratedRussian) errors += "Item ${item.id} marks generated Russian"
         if (item.language != "en") errors += "Item ${item.id} is not independently authored English"
-        if (item.options.isEmpty() || item.answer !in item.options) {
+        errors += typedItemDefects(item)
+        item.typedAnswerKey?.acceptedAnswers?.forEach { answer ->
+            if (hasCyrillic(answer)) {
+                val sourceBound = pack.provenanceRecords.any { record ->
+                    record.sourceId == item.sourceId && record.objectiveId == item.objectiveId && record.shippedText == answer
+                } || pack.letters.any { letter ->
+                    letter.sourceId == item.sourceId && answer in listOf(letter.uppercase, letter.lowercase)
+                }
+                if (!sourceBound) errors += "Typed item ${item.id} accepted answer has no admitted source binding"
+            }
+        }
+        if (!item.isTypedResponse() && (item.options.isEmpty() || item.answer !in item.options)) {
             errors += "Item ${item.id} has no usable answer key"
         }
         if (item.feedback.isBlank()) errors += "Item ${item.id} has no feedback"
@@ -4775,7 +4791,7 @@ internal object V2Validator {
         if (item.options.size != item.options.toSet().size) {
             errors += "Item ${item.id} options are not distinct"
         }
-        if (item.options.count { it == item.answer } != 1) {
+        if (!item.isTypedResponse() && item.options.count { it == item.answer } != 1) {
             errors += "Item ${item.id} repeats the answer in the options"
         }
         if (item.kind in GRAMMAR_ITEM_KINDS) {
@@ -4802,7 +4818,7 @@ internal object V2Validator {
         if (item.isGovernancePrompt()) {
             errors += "Item ${item.id} is a governance or policy prompt, not a Russian-learning check"
         }
-        if (item.promptLetter.isNullOrBlank()) {
+        if (!item.isTypedResponse() && item.promptLetter.isNullOrBlank()) {
             errors += "Item ${item.id} has no prompt letter"
         }
     }
@@ -5228,6 +5244,7 @@ internal object V2Validator {
         hosts += item.prompt
         item.promptLetter?.let { hosts += it }
         hosts += item.answer
+        hosts += item.typedAnswerKey?.acceptedAnswers.orEmpty()
         hosts += item.feedback
         hosts += item.options
         hosts += item.distractorRationales
@@ -5309,7 +5326,7 @@ internal object V2Validator {
             val itemIds = (unit.sessions.flatMap { it.steps }.flatMap { it.itemIds } + unit.objectives.flatMap { it.checkItemIds }).toSet()
             itemIds.forEach { itemId ->
                 val item = pack.item(itemId) ?: return@forEach
-                (listOf(item.answer) + item.options).forEach { text ->
+                (listOf(item.answer) + item.options + item.typedAnswerKey?.acceptedAnswers.orEmpty()).forEach { text ->
                     if (text !in allowed) {
                         errors += "English linguistic claim has no admitted source record: $text"
                     }
