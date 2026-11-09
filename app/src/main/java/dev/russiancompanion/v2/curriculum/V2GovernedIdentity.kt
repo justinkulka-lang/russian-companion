@@ -425,6 +425,24 @@ internal fun creditItemIds(pack: V2CurriculumPack, learner: V2LearnerView): Set<
     return computed
 }
 
+/**
+ * First-attempt credit is distinct from eventual completion credit. Reveal is offered only after
+ * a durable wrong submission, so no UI flag, retry, clock change, or reopen can convert it to a first hit.
+ * Optional practice is included in the history so revealing there cannot earn first credit in a lesson.
+ * Unsequenced or tied histories cannot establish an unambiguous first successful attempt.
+ */
+internal fun firstAttemptCorrectItemIds(pack: V2CurriculumPack, learner: V2LearnerView): Set<String> =
+    learner.governedAttempts.orEmpty()
+        .filter { attemptSuppliesStepSelection(it, pack, it.stepId) || attemptMatchesCurrentOptional(it, pack, it.stepId) }
+        .groupBy { it.itemId }
+        .filterValues { history ->
+            history.none { it.acceptedOrder <= 0 } &&
+                history.minOfOrNull { it.acceptedOrder }?.let { first ->
+                    val earliest = history.filter { it.acceptedOrder == first }
+                    earliest.size == 1 && attemptGrantsPrescribedCredit(earliest.single(), pack)
+                } == true
+        }.keys
+
 internal fun completedStepCounts(pack: V2CurriculumPack, learner: V2LearnerView, stepId: String): Boolean {
     val digests = learner.governedStepDigests ?: return stepId in learner.completedStepIds
     val recorded = digests[stepId] ?: return false

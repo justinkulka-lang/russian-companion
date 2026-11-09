@@ -2,6 +2,7 @@ package dev.russiancompanion.v2
 
 import android.content.Context
 import androidx.compose.foundation.layout.Column
+import androidx.compose.ui.input.key.Key
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.StateRestorationTester
@@ -122,6 +123,88 @@ class TypedResponseIntegrationTest {
             assertEquals(2, s.v2Attempts().size)
             input.assertTextContains(" Hi ")
             compose.onNodeWithTag("v2-typed-${item.id}-submit").assertIsNotEnabled()
+        }
+    }
+
+    @Test fun typedWrongAnswerCanRetryWithoutRevealAndEnterDoesNotRestoreFirstAttemptCredit() = retryOrReveal(false)
+
+    @Test fun typedWrongAnswerRevealsFirstAcceptedAnswerAndDoneDoesNotRestoreFirstAttemptCredit() = retryOrReveal(true)
+
+    private fun retryOrReveal(reveal: Boolean) {
+        // Primary scoring answer differs from the first accepted answer, which Show answer must use.
+        val base = fixture()
+        val p = base.copy(items = base.items.map { if (it.isTypedResponse()) it.copy(answer = "Hi") else it })
+        val item = typed(p); val step = check(p)
+        val session = p.units.flatMap { it.sessions }.first { step in it.steps }
+        val name = "typed-feedback-${System.nanoTime()}.db"
+        try {
+            LocalStore.openNamed(context, name).use { s ->
+                val selections = mutableStateOf<Map<String, String>>(emptyMap())
+                val restoration = StateRestorationTester(compose)
+                restoration.setContent {
+                    V2SessionScreen(p, s.v2LearnerView(), session.id, session.steps.indexOf(step), false, selections.value,
+                        emptySet(), emptySet(), emptyMap(), {}, { _, _ -> }, { id, response, stepId ->
+                            s.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, response, PRESCRIBED_CHECK, stepId, "now-${s.v2Attempts().size}")!!)
+                            selections.value = governedSessionSelections(p, s.v2LearnerView()); true
+                        }, { _, _ -> }, { _, _ -> }, { _, _ -> }, { _, _ -> }, {}, {}, {}, { _, _ -> }, {})
+                }
+                val tag = "v2-typed-${item.id}"
+                val input = compose.onNodeWithTag("$tag-input")
+                compose.onNodeWithTag("$tag-reveal").assertDoesNotExist()
+                input.performScrollTo().performClick().performImeAction()
+                assertTrue(s.v2Attempts().isEmpty())
+                input.performScrollTo().performTextInput("Wrong")
+                compose.onNodeWithTag("$tag-submit").performScrollTo().performClick()
+                compose.onNodeWithTag("$tag-retry").assertExists()
+                compose.onNodeWithTag("$tag-reveal").assertExists()
+                if (reveal) {
+                    compose.onNodeWithTag("$tag-reveal").performScrollTo().performClick()
+                    compose.onNodeWithTag("$tag-answer").assertTextEquals("Answer: Hello")
+                    compose.onNodeWithTag("$tag-first-attempt").assertTextContains("do not earn first-attempt credit", substring = true)
+                    assertEquals(1, s.v2Attempts().size) // Looking at the answer is never a submission.
+                    restoration.emulateSavedInstanceStateRestore()
+                    compose.onNodeWithTag("$tag-answer").assertTextEquals("Answer: Hello")
+                } else compose.onNodeWithTag("$tag-answer").assertDoesNotExist()
+                compose.onNodeWithTag("$tag-retry").performScrollTo().performClick()
+                input.assert(androidx.compose.ui.test.SemanticsMatcher.expectValue(
+                    androidx.compose.ui.semantics.SemanticsProperties.EditableText, androidx.compose.ui.text.AnnotatedString("")))
+                input.performScrollTo().performTextInput("Hi")
+                if (reveal) input.performImeAction() else input.performKeyInput { pressKey(Key.Enter) }
+                compose.waitUntil { s.v2Attempts().size == 2 }
+                assertTrue(s.v2Attempts().last().correct)
+                input.performScrollTo().performImeAction()
+                input.performKeyInput { pressKey(Key.Enter) }
+                assertEquals(2, s.v2Attempts().size)
+                assertTrue(item.id in creditItemIds(p, s.v2LearnerView())) // Eventual completion remains possible.
+                assertFalse(item.id in firstAttemptCorrectItemIds(p, s.v2LearnerView()))
+                restoration.emulateSavedInstanceStateRestore()
+                assertEquals(2, s.v2Attempts().size)
+                assertFalse(item.id in firstAttemptCorrectItemIds(p, s.v2LearnerView()))
+            }
+            LocalStore.openNamed(context, name).use { s ->
+                assertEquals(2, s.v2Attempts().size)
+                assertFalse(item.id in firstAttemptCorrectItemIds(p, s.v2LearnerView()))
+            }
+        } finally { context.deleteDatabase(name) }
+    }
+
+    @Test fun firstAttemptUsesDurableOrderNotClockAndRejectsOptionalOrUnsequencedCredit() {
+        val p = fixture(); val id = typed(p).id
+        LocalStore.openInMemory(context).use { s ->
+            s.v2RecordGovernedAttempt(write(p, "Hi", time = "later-clock"))
+            assertTrue(id in firstAttemptCorrectItemIds(p, s.v2LearnerView()))
+            val first = s.v2LearnerView().governedAttempts!!.single()
+            val learner = s.v2LearnerView()
+            assertFalse(id in firstAttemptCorrectItemIds(p, learner.copy(governedAttempts = listOf(first.copy(acceptedOrder = 0)))))
+            assertFalse(id in firstAttemptCorrectItemIds(p, learner.copy(governedAttempts = listOf(first.copy(attemptRole = OPTIONAL_PRACTICE)))))
+            assertFalse(id in firstAttemptCorrectItemIds(p, learner.copy(governedAttempts = listOf(first, first.copy(id = "tied")))))
+            val priorOptionalMiss = first.copy(id = "optional-miss", selected = "Wrong", correct = false,
+                attemptRole = OPTIONAL_PRACTICE, stepId = practiceStepId("grammar"), acceptedOrder = 1)
+            assertFalse(id in firstAttemptCorrectItemIds(p, learner.copy(governedAttempts =
+                listOf(priorOptionalMiss, first.copy(acceptedOrder = 2)))))
+            s.v2RecordGovernedAttempt(write(p, "Wrong", time = "earlier-clock"))
+            assertTrue(id in firstAttemptCorrectItemIds(p, s.v2LearnerView()))
+            assertFalse(id in firstAttemptCorrectItemIds(fixture(2), s.v2LearnerView()))
         }
     }
 

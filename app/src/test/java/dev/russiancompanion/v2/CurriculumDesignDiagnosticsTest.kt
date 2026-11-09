@@ -142,6 +142,59 @@ class CurriculumDesignDiagnosticsTest {
         assertTrue(first.limitations.any { it.contains("runtime permutation") })
     }
 
+    @Test fun governanceTermsAndExactSourceIdsAreLocatedInLearnerTextOnly() {
+        val base = scenario(listOf(question("english").copy(prompt = "Use the admitted form", promptLetter = null)))
+        val source = base.sources.first().copy(id = "synthetic-source", title = "Frozen source metadata")
+        val unit = base.units.single()
+        val p = base.copy(sources = listOf(source), units = listOf(unit.copy(
+            title = "Retained lesson", topicSummary = "review-pending summary",
+            sessions = unit.sessions.map { session -> session.copy(steps = session.steps.map { step ->
+                if (step.id == "teach") step.copy(body = "Read synthetic-source", dominantAction = "Open frozen explanation") else step
+            }) })))
+        val report = V2DesignDiagnostics.audit(p)
+        for ((id, field) in listOf("english" to "prompt", unit.id to "title", unit.id to "topicSummary",
+            "teach" to "body", "teach" to "dominantAction")) {
+            assertTrue("$id / $field", report.signals.any { it.rule == "LEARNER_GOVERNANCE_TERM" && id in it.entityIds && it.field == field && it.unit == 3 })
+        }
+        assertFalse(report.signals.any { it.rule == "LEARNER_GOVERNANCE_TERM" && source.id in it.entityIds })
+    }
+
+    @Test fun allSelectedOptionRationalesAndRevealedTypedKeysAreLinted() {
+        val key = V2TypedAnswerKey("fixture", 1, listOf("retained answer"))
+        val a = question("choice").copy(prompt = "Use the rule", options = listOf("key", "wrong"), answer = "key",
+            distractorRationales = listOf("", "This frozen source ID is wrong"))
+        val b = a.copy(id = "typed", kind = "TYPED_FORM", options = emptyList(), distractorRationales = emptyList(),
+            typedAnswerKey = key)
+        val report = audit(listOf(a, b))
+        assertTrue(report.signals.any { it.rule == "LEARNER_GOVERNANCE_TERM" && it.entityIds == listOf("choice") && it.field == "distractorRationales[1]" })
+        assertTrue(report.signals.any { it.rule == "LEARNER_GOVERNANCE_TERM" && it.entityIds == listOf("typed") && it.field == "acceptedAnswers[0]" })
+    }
+
+    @Test fun rawHtmlEntitiesAndWikiMarkupAreReportedButOrdinaryPunctuationIsNot() {
+        for (body in listOf("Use <em>this form</em>", "Read &eacute; here", "Read &#123; here", "Read [[noun|form]]", "[https://example.org noun]", "== Source heading ==")) {
+            assertTrue(body, audit(listOf(question("a")), teaching = body).signals.any { it.rule == "LEARNER_MARKUP" && it.entityIds == listOf("teach") })
+        }
+        val ordinary = audit(listOf(question("a")), teaching = "A learner's result: 2 < 3 and 4 > 3; {count} forms.")
+        assertFalse(ordinary.signals.any { it.rule == "LEARNER_MARKUP" })
+    }
+
+    @Test fun sourceIdSubstringsAndHiddenProvenanceAreNotLearnerLeaks() {
+        val item = question("english").copy(prompt = "Use the pattern", promptLetter = "retained synthetic-source", promptLetterRole = "ANSWER_PROVENANCE")
+        val p = scenario(listOf(item), teaching = "Read xsynthetic-source-y as an English engineering token.")
+        val report = V2DesignDiagnostics.audit(p.copy(sources = listOf(p.sources.first().copy(id = "synthetic-source", title = "Frozen metadata"))))
+        assertFalse(report.signals.any { it.rule == "LEARNER_GOVERNANCE_TERM" && it.entityIds.any { id -> id in setOf("english", "teach", "synthetic-source") } })
+    }
+
+    @Test fun reviewCopyAndLetterNotesAreAlsoLearnerText() {
+        val p = scenario(listOf(question("a")))
+        val report = V2DesignDiagnostics.audit(p.copy(reviewCopy = p.reviewCopy.copy(
+            titles = mapOf(3 to "Frozen review"), messages = mapOf("example" to "Read <b>this</b>")),
+            letters = p.letters.take(1).map { it.copy(englishNote = "Retained example") }))
+        assertTrue(report.signals.any { it.rule == "LEARNER_GOVERNANCE_TERM" && it.entityIds == listOf("review-title-3") })
+        assertTrue(report.signals.any { it.rule == "LEARNER_MARKUP" && it.entityIds == listOf("review-message-example") })
+        assertTrue(report.signals.any { it.rule == "LEARNER_GOVERNANCE_TERM" && it.entityIds == listOf(p.letters.first().id) })
+    }
+
     private fun question(id: String): V2CheckItem = current.item("u8-i-plural-1")!!.copy(
         id = id, objectiveId = objectiveId, prompt = "Choose the plural", promptLetter = "го́род",
         options = listOf("города́", "го́род"), answer = "города́",

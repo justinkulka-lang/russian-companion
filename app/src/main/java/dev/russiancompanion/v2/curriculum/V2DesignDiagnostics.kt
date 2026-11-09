@@ -20,7 +20,7 @@ internal data class V2DesignSignal(
 @Serializable
 internal data class V2DesignReport(
     val reportSchemaVersion: Int = 1,
-    val diagnosticVersion: String = "assessment-teaching-a2-v2",
+    val diagnosticVersion: String = "assessment-teaching-a2-lint-v3",
     val verdict: String,
     val counts: Map<String, Int>,
     val authoredRequiredKeyPositions: Map<Int, Int>,
@@ -43,6 +43,9 @@ internal data class V2DesignReport(
 internal object V2DesignDiagnostics {
     private val spaces = Regex("\\s+")
     private val markup = Regex("'{2,}|\\[\\[|\\]\\]|\\{\\{|\\}\\}|\\{\\||\\|\\}|</?(?:ref|br|span|div|small|sup|sub|nowiki)\\b|&(?:nbsp|amp|lt|gt|quot);", RegexOption.IGNORE_CASE)
+    private val sourceLink = Regex("\\[(?:https?://|mailto:)|^={2,}.*={2,}\\s*$", setOf(RegexOption.IGNORE_CASE, RegexOption.MULTILINE))
+    private val rawHtml = Regex("</?[a-z][^>]*>|&(?:#[0-9]+|#x[0-9a-f]+|[a-z][a-z0-9]+);", RegexOption.IGNORE_CASE)
+    private val governance = Regex("\\b(?:admitted|frozen|retained|review[- _]pending|CONTENT_COMPLETE_REVIEW_PENDING|IMPLEMENTED_PENDING_FINAL_AUDIT|RESEARCH_VERIFIED|OWNER_ACCEPTED)\\b", RegexOption.IGNORE_CASE)
     private val answerInstruction = Regex("\\b(?:choose|select|selecting|the answer|matching description|is the matching)\\b", RegexOption.IGNORE_CASE)
     private val sentenceBreak = Regex("(?<=[.;!?])\\s+")
 
@@ -70,9 +73,15 @@ internal object V2DesignDiagnostics {
                 explanation: String, linked: List<String> = emptyList()) {
             signals += V2DesignSignal(rule, kind, unit, ids.sorted(), field, linked.distinct().sorted(), explanation)
         }
-        fun inspectMarkup(id: String, unit: Int?, field: String, value: String?) {
-            if (value != null && markup.containsMatchIn(value)) add("LEARNER_MARKUP", V2DesignSignalKind.STRUCTURAL_ERROR,
+        val sourceIds = pack.sources.map { it.id }.filter { it.isNotBlank() }.map {
+            Regex("(?<![a-zA-Z0-9_-])${Regex.escape(it)}(?![a-zA-Z0-9_-])")
+        }
+        fun inspectLearnerText(id: String, unit: Int?, field: String, value: String?) {
+            if (value != null && (markup.containsMatchIn(value) || rawHtml.containsMatchIn(value) || sourceLink.containsMatchIn(value))) add("LEARNER_MARKUP", V2DesignSignalKind.STRUCTURAL_ERROR,
                 unit, listOf(id), field, "A learner text field contains source-markup syntax; inspect the rendering and correct the governed text.")
+            if (value != null && (governance.containsMatchIn(value) || sourceIds.any { it.containsMatchIn(value) }))
+                add("LEARNER_GOVERNANCE_TERM", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
+                    "Learner text contains a governance term or source ID prohibited by A2-26.")
         }
         fun stepText(step: V2Step): String = buildString {
             append(step.body); append('\n'); append(step.bookDirection.orEmpty()); append('\n'); append(step.companionDirection.orEmpty())
@@ -136,26 +145,41 @@ internal object V2DesignDiagnostics {
         required.values.groupBy { Task(it.kind, it.language, text(it.prompt), text(cue(it)), it.options.map(::text).sorted(), text(it.answer)) }
             .values.filter { it.size > 1 }.forEach { group -> add("IDENTICAL_REQUIRED_DISPLAY_TASK", V2DesignSignalKind.REVIEW_SIGNAL,
                 null, group.map { it.id }, "prompt/cue/options/key", "Required items have identical visible task signatures. Review context and construct before declaring a duplicate.") }
+        for (unit in pack.units) {
+            inspectLearnerText(unit.id, unit.number, "title", unit.title)
+            inspectLearnerText(unit.id, unit.number, "shortLabel", unit.shortLabel)
+            inspectLearnerText(unit.id, unit.number, "topicSummary", unit.topicSummary)
+            unit.objectives.forEach { inspectLearnerText(it.id, unit.number, "title", it.title) }
+            unit.sessions.forEach { inspectLearnerText(it.id, unit.number, "title", it.title) }
+        }
+        for (letter in pack.letters) {
+            inspectLearnerText(letter.id, null, "englishNote", letter.englishNote)
+        }
+        pack.reviewCopy.titles.forEach { (unit, value) -> inspectLearnerText("review-title-$unit", unit, "title", value) }
+        pack.reviewCopy.introductions.forEach { (unit, value) -> inspectLearnerText("review-introduction-$unit", unit, "introduction", value) }
+        pack.reviewCopy.messages.forEach { (key, value) -> inspectLearnerText("review-message-$key", null, "message", value) }
         for ((number, step) in stepRows) {
-            inspectMarkup(step.id, number, "title", step.title); inspectMarkup(step.id, number, "body", step.body)
-            inspectMarkup(step.id, number, "bookDirection", step.bookDirection); inspectMarkup(step.id, number, "companionDirection", step.companionDirection)
-            inspectMarkup(step.id, number, "unavailableReason", step.unavailableReason)
+            inspectLearnerText(step.id, number, "title", step.title); inspectLearnerText(step.id, number, "body", step.body)
+            inspectLearnerText(step.id, number, "bookDirection", step.bookDirection); inspectLearnerText(step.id, number, "companionDirection", step.companionDirection)
+            inspectLearnerText(step.id, number, "unavailableReason", step.unavailableReason)
+            inspectLearnerText(step.id, number, "dominantAction", step.dominantAction)
         }
         for (example in pack.examples) {
-            inspectMarkup(example.id, owner[example.objectiveId], "display", example.display)
-            inspectMarkup(example.id, owner[example.objectiveId], "note", example.note)
+            inspectLearnerText(example.id, owner[example.objectiveId], "display", example.display)
+            inspectLearnerText(example.id, owner[example.objectiveId], "note", example.note)
         }
         for (item in pack.items) {
             val number = owner[item.objectiveId]
-            inspectMarkup(item.id, number, "prompt", item.prompt); inspectMarkup(item.id, number, "visibleCue", cue(item))
-            inspectMarkup(item.id, number, "feedback", item.feedback)
-            item.options.forEachIndexed { n, value -> inspectMarkup(item.id, number, "options[$n]", value) }
-            item.distractorRationales.forEachIndexed { n, value -> inspectMarkup(item.id, number, "distractorRationales[$n]", value) }
+            inspectLearnerText(item.id, number, "prompt", item.prompt); inspectLearnerText(item.id, number, "visibleCue", cue(item))
+            inspectLearnerText(item.id, number, "feedback", item.feedback)
+            item.typedAnswerKey?.acceptedAnswers?.forEachIndexed { n, value -> inspectLearnerText(item.id, number, "acceptedAnswers[$n]", value) }
+            item.options.forEachIndexed { n, value -> inspectLearnerText(item.id, number, "options[$n]", value) }
+            item.distractorRationales.forEachIndexed { n, value -> inspectLearnerText(item.id, number, "distractorRationales[$n]", value) }
         }
         for (entry in pack.references) {
-            inspectMarkup(entry.id, entry.introducedInUnit, "title", entry.title)
-            inspectMarkup(entry.id, entry.introducedInUnit, "summary", entry.summary)
-            inspectMarkup(entry.id, entry.introducedInUnit, "detail", entry.detail)
+            inspectLearnerText(entry.id, entry.introducedInUnit, "title", entry.title)
+            inspectLearnerText(entry.id, entry.introducedInUnit, "summary", entry.summary)
+            inspectLearnerText(entry.id, entry.introducedInUnit, "detail", entry.detail)
         }
         val (unitAssessments, assessmentSignals) = V2AssessmentDiagnostics.audit(pack)
         signals += assessmentSignals
