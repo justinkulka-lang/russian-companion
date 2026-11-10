@@ -130,5 +130,8 @@ internal data class V2ReviewAssignmentEntity(@PrimaryKey val id: String, val tar
 internal data class V2ReviewAnswerEntity(@PrimaryKey val id: String, val assignmentId: String,
     val acceptedOrder: Long, val document: String)
 
+@Entity(tableName = "v2_unit_targets")
+internal data class V2UnitTargetEntity(@PrimaryKey val unitNumber: Int, val targetEpochDay: Long)
+
 @Entity(tableName = "v2_spaced_reviews")
 internal data class V2SpacedReviewEntity(@PrimaryKey val itemId: String, val document: String)

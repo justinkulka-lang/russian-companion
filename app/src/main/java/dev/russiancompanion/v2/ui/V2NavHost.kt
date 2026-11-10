@@ -33,6 +33,7 @@ internal fun V2NavHost(
     onNote: (String, String) -> Unit,
     onTutor: (String, String) -> Unit,
     onAttestBook: (Int) -> Unit,
+    onSetUnitTarget: (Int, Long?) -> Unit = { _, _ -> },
     onAdvance: (Int) -> Unit,
     onResumeAt: (String, Int) -> Unit,
     onTransliteration: (Boolean) -> Unit,
@@ -81,6 +82,7 @@ internal fun V2NavHost(
                     target = target,
                     onTab = ::goTab,
                     onSavedWork = { navController.navigate(V2SavedWorkRoute) },
+                    onSetUnitTarget = onSetUnitTarget,
                     onContinue = { target ->
                         if (target.opensCumulativeReview) {
                             navController.navigate(V2CumulativeReviewRoute(target.unitNumber))

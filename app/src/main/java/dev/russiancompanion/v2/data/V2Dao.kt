@@ -8,6 +8,18 @@ import androidx.room.Update
 
 @Dao
 internal interface V2Dao {
+    @Query("SELECT * FROM v2_unit_targets ORDER BY unitNumber")
+    fun unitTargets(): List<V2UnitTargetEntity>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun upsertUnitTarget(target: V2UnitTargetEntity)
+
+    @Query("DELETE FROM v2_unit_targets WHERE unitNumber = :unitNumber")
+    fun deleteUnitTarget(unitNumber: Int)
+
+    @Query("DELETE FROM v2_unit_targets")
+    fun deleteUnitTargets()
+
     @Query("SELECT * FROM v2_spaced_reviews ORDER BY itemId")
     fun spacedReviews(): List<V2SpacedReviewEntity>
 

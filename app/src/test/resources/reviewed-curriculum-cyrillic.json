@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "fc8596159636d68008b3161b64779d861293c5f28ceecc2d6c29ec3550c24412",
+      "sha256": "2af190dedb1af64301bb4db7efc0118268d758484fd63a4fa75c8103beb0224d",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3291,6 +3291,17 @@
       ],
       "allExistingBindingsUnchanged": true,
       "scope": "A2-28 allocation: anchors unchanged; earlier-unit registry reuses existing declarations and adds references to the four existing obj-u1-iotated check-item IDs from the current pack. No new Cyrillic text, Russian construction, linguistic acceptance or rights approval.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T12-a",
+      "previousRecordedSha256": "fc8596159636d68008b3161b64779d861293c5f28ceecc2d6c29ec3550c24412",
+      "sha256": "2af190dedb1af64301bb4db7efc0118268d758484fd63a4fa75c8103beb0224d",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Binds optional named book exercises (A2-30) into the edition-mapping identity only when present. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

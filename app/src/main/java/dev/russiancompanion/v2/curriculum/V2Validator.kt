@@ -514,6 +514,9 @@ internal object V2Validator {
             "observationSource" to canonStrOrNull(mapping.observationSource),
             "isbnObservation" to canonStr(mapping.isbnObservation),
             "isbn" to canonStrOrNull(mapping.isbn),
+            // Bound only when present, so mappings without named exercises keep their identity.
+            *(if (mapping.assignedExercises.isEmpty()) emptyArray() else
+                arrayOf("assignedExercises" to canonArr(mapping.assignedExercises.map(::canonStr)))),
         )
     }
 

@@ -235,6 +235,8 @@ internal data class V2OwnedEditionMapping(
     val observationSource: String? = null,
     val isbn: String? = null,
     val isbnObservation: String = "UNRESOLVED",
+    /** Named book exercises assigned for the unit (A2-30). Empty until a reviewed assignment is supplied. */
+    val assignedExercises: List<String> = emptyList(),
 )
 
 @Serializable

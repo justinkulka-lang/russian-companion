@@ -881,6 +881,7 @@ internal class LocalStore private constructor(
             reviewAssignments = readReviewAssignments(), reviewAnswers = readReviewAnswers(), spacedReviews = readSpacedReviews(), storageEpoch = learnerMutationEpoch(),
             unitReviewCompletions = dao.unitCompletions().associate { it.unitNumber to CumulativeUnitCompletion(
                 it.preReviewActivation, it.reviewPolicyDigest, it.reviewAssignmentId, it.reviewCompletionOrder) },
+            unitTargets = readUnitTargets().associate { it.unitNumber to it.targetEpochDay },
         )
     }
 
@@ -1307,6 +1308,28 @@ internal class LocalStore private constructor(
         )
     }
 
+    /** Sets or clears (null) the learner's own target date; out-of-range values are refused. */
+    internal fun v2SetUnitTarget(unitNumber: Int, targetEpochDay: Long?): Boolean = call {
+        writeUnitTarget(unitNumber, targetEpochDay)
+    }
+
+    internal suspend fun v2SetUnitTargetIfCurrent(capturedEpoch: Long, unitNumber: Int, targetEpochDay: Long?): Boolean =
+        withContext(ioDispatcher) {
+            if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
+            writeUnitTarget(unitNumber, targetEpochDay)
+        }
+
+    private fun writeUnitTarget(unitNumber: Int, targetEpochDay: Long?): Boolean {
+        if (unitNumber !in 1..30) return false
+        if (targetEpochDay == null) { database.v2().deleteUnitTarget(unitNumber); return true }
+        if (unitTargetDefect(V2UnitTarget(unitNumber, targetEpochDay)) != null) return false
+        database.v2().upsertUnitTarget(dev.russiancompanion.v2.data.V2UnitTargetEntity(unitNumber, targetEpochDay))
+        return true
+    }
+
+    private fun readUnitTargets(): List<V2UnitTarget> =
+        database.v2().unitTargets().map { V2UnitTarget(it.unitNumber, it.targetEpochDay) }
+
     fun v2CompleteUnit(unitNumber: Int, recordedAtLocal: String) = call {
         database.v2().upsertUnitCompletion(
             dev.russiancompanion.v2.data.V2UnitCompletionEntity(unitNumber, recordedAtLocal),
@@ -1529,7 +1552,8 @@ internal class LocalStore private constructor(
             dev.russiancompanion.v2.backup.completionActivationDefects(document) != null ||
             reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null ||
             acceptedOrderDefects(document.attempts) != null ||
-            dev.russiancompanion.v2.backup.spacedReviewBackupDefects(document) != null) return@call GovernedReplaceOutcome.UNCHANGED
+            dev.russiancompanion.v2.backup.spacedReviewBackupDefects(document) != null ||
+            unitTargetsDefect(document.unitTargets) != null) return@call GovernedReplaceOutcome.UNCHANGED
         val inputs = recordings.map { it.file }
         BackupWorkRegistry.holdRecordings(inputs)
         try {
@@ -1682,6 +1706,7 @@ internal class LocalStore private constructor(
         users.deleteLearnerState()
         users.deleteAllExports()
         curriculum.deleteSpacedReviews()
+        curriculum.deleteUnitTargets()
         curriculum.deleteReviewAnswers()
         curriculum.deleteReviewAssignments()
         curriculum.deleteAttempts()
@@ -1777,6 +1802,7 @@ internal class LocalStore private constructor(
         }
         document.reviewAssignments.forEach { curriculum.insertReviewAssignment(V2ReviewAssignmentEntity(it.id, it.targetUnit, backupJson.encodeToString(CumulativeReviewAssignment.serializer(), it))) }
         document.reviewAnswers.forEach { curriculum.insertReviewAnswer(V2ReviewAnswerEntity(it.id, it.assignmentId, it.acceptedOrder, backupJson.encodeToString(CumulativeReviewAnswer.serializer(), it))) }
+        document.unitTargets.forEach { curriculum.upsertUnitTarget(dev.russiancompanion.v2.data.V2UnitTargetEntity(it.unitNumber, it.targetEpochDay)) }
         document.spacedReviews.forEach { record -> database.v2().upsertSpacedReview(
             dev.russiancompanion.v2.data.V2SpacedReviewEntity(record.itemId, backupJson.encodeToString(V2SpacedReviewRecord.serializer(), record))) }
         curriculum.upsertProfile(document.profile.toEntity())
@@ -2181,6 +2207,7 @@ internal class LocalStore private constructor(
             reviewAssignments = readReviewAssignments(),
             reviewAnswers = readReviewAnswers(),
             spacedReviews = readSpacedReviews(),
+            unitTargets = readUnitTargets(),
             profile = BackupProfile(
                 id = profile.id,
                 onboardingCompleted = profile.onboardingCompleted,
@@ -2336,7 +2363,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_11_12, MIGRATION_12_13)
+                .addMigrations(MIGRATION_11_12, MIGRATION_12_13, MIGRATION_13_14)
                 // Pre-acceptance databases before v11 have no supported learner schema.
                 .fallbackToDestructiveMigrationFrom(true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .build()
@@ -2356,7 +2383,7 @@ internal class LocalStore private constructor(
         fun openNamed(context: Context, name: String): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, name)
-                .addMigrations(MIGRATION_11_12, MIGRATION_12_13)
+                .addMigrations(MIGRATION_11_12, MIGRATION_12_13, MIGRATION_13_14)
                 // Pre-acceptance databases before v11 have no supported learner schema.
                 .fallbackToDestructiveMigrationFrom(true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .build()

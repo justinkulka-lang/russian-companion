@@ -372,6 +372,13 @@ internal fun V2App(
                         }
                         Unit
                     },
+                    onSetUnitTarget = { unit, day ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("target:$unit") {
+                            withCapturedLearnerEpoch(epoch) { api.setUnitTarget(unit, day) }
+                        }
+                        Unit
+                    },
                     onAdvance = { unit ->
                         val epoch = store.learnerMutationEpoch()
                         writes.submit("advance:$unit") {

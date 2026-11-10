@@ -25,6 +25,8 @@ internal interface V2Persistence {
     suspend fun addNote(targetId: String, text: String, recordedAt: String, targetDigest: String)
     suspend fun addTutor(targetId: String, note: String, recordedAt: String, targetDigest: String)
     suspend fun attestBook(unitNumber: Int, recordedAt: String)
+    /** Sets or clears (null) the learner's own target date for a unit (A2-31). */
+    suspend fun setUnitTarget(unitNumber: Int, targetEpochDay: Long?) { error("Target persistence unavailable") }
     suspend fun completeUnit(unitNumber: Int, recordedAt: String)
     suspend fun advanceUnit(
         unitNumber: Int,
@@ -150,6 +152,11 @@ internal class StoreV2Persistence(private val store: LocalStore, private val pac
         } else if (!store.v2AttestBookIfCurrent(epoch, unitNumber, recordedAt)) {
             error("stale attestation")
         }
+    }
+
+    override suspend fun setUnitTarget(unitNumber: Int, targetEpochDay: Long?) {
+        val epoch = coroutineContext[CapturedLearnerEpoch]?.epoch ?: store.learnerMutationEpoch()
+        if (!store.v2SetUnitTargetIfCurrent(epoch, unitNumber, targetEpochDay)) error("stale or invalid target date")
     }
 
     override suspend fun completeUnit(unitNumber: Int, recordedAt: String) {

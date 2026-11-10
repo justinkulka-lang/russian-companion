@@ -41,6 +41,11 @@ import dev.russiancompanion.v2.curriculum.V2ContinueTarget
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
+import dev.russiancompanion.v2.curriculum.V2AssignmentStatus
+import dev.russiancompanion.v2.curriculum.unitAssignmentChecklist
+import dev.russiancompanion.v2.curriculum.unitTargetLabel
+import dev.russiancompanion.v2.curriculum.dueSpacedReviews
+import dev.russiancompanion.v2.curriculum.currentCompletedUnitNumbers
 import dev.russiancompanion.v2.curriculum.V2UnitState
 import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.advancementRuleSummary
@@ -248,8 +253,17 @@ internal fun V2TodayScreen(
     onTab: (V2Tab) -> Unit,
     onContinue: (V2ContinueTarget) -> Unit,
     onSavedWork: () -> Unit,
+    onSetUnitTarget: (Int, Long?) -> Unit = { _, _ -> },
 ) {
     val unit = pack.unit(learner.currentUnitNumber)
+    val minute = rememberReviewMinute()
+    val checklist = rememberGoverned(pack, learner, label = "today-checklist", refreshKey = minute) {
+        unit?.let { current ->
+            val reached = currentCompletedUnitNumbers(pack, learner) + learner.currentUnitNumber
+            val due = dueSpacedReviews(pack, learner.spacedReviews, reached, minute * 60_000).size
+            unitAssignmentChecklist(pack, current, learner, due)
+        }
+    }
     val governed = rememberGoverned(pack, learner, label = "today") {
         val current = unit
         Triple(
@@ -316,6 +330,24 @@ internal fun V2TodayScreen(
                 unit.sessions.forEach { session ->
                     val done = doneSteps?.get(session.id) == true
                     V2Status("${session.title} — ${if (done) "Recorded" else "Not finished"} · ${session.estimatedMinutes} min")
+                }
+            }
+        }
+        if (unit != null) {
+            Spacer(Modifier.height(12.dp))
+            V2UnitTargetControl(unit.number, learner.unitTargets[unit.number], onSetUnitTarget)
+            Spacer(Modifier.height(12.dp))
+            Text("Unit assignments", style = MaterialTheme.typography.titleMedium,
+                modifier = Modifier.semantics { heading(); testTag = "v2-checklist" })
+            checklist.orEmpty().forEach { entry ->
+                val mark = when (entry.status) {
+                    V2AssignmentStatus.DONE -> "Done"
+                    V2AssignmentStatus.TODO -> "To do"
+                    V2AssignmentStatus.NOT_ASSIGNED -> "Not yet assigned"
+                }
+                Column(Modifier.padding(vertical = 4.dp).semantics(mergeDescendants = true) { testTag = "v2-checklist-${entry.id}" }) {
+                    Text("$mark · ${entry.label}")
+                    entry.detail?.let { V2Status(it) }
                 }
             }
         }
@@ -912,5 +944,45 @@ internal fun V2QuestionCue(item: dev.russiancompanion.v2.curriculum.V2CheckItem,
             style = if (cue.length <= 3) MaterialTheme.typography.displayLarge else MaterialTheme.typography.titleLarge,
             modifier = Modifier.semantics { testTag = tag },
         )
+    }
+}
+
+
+/** Today's date for target-date display; tests may pin it. */
+internal object V2TodayClock {
+    @Volatile var epochDayForTests: Long? = null
+    fun epochDay(): Long = epochDayForTests ?: java.time.LocalDate.now().toEpochDay()
+}
+
+/** A2-31: an optional learner-set date with days remaining. Missing it changes nothing. */
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
+@Composable
+internal fun V2UnitTargetControl(unitNumber: Int, targetEpochDay: Long?, onSetUnitTarget: (Int, Long?) -> Unit) {
+    val today = V2TodayClock.epochDay()
+    var picking by rememberSaveable(unitNumber) { mutableStateOf(false) }
+    Text(unitTargetLabel(targetEpochDay, today), modifier = Modifier.semantics { testTag = "v2-today-target" })
+    V2SecondaryButton(if (targetEpochDay == null) "Set a target date" else "Change target date", { picking = true },
+        tag = "v2-target-set")
+    if (targetEpochDay != null) {
+        V2SecondaryButton("Clear target date", { onSetUnitTarget(unitNumber, null) }, tag = "v2-target-clear")
+    }
+    if (picking) {
+        val initial = (targetEpochDay ?: (today + 14)) * 86_400_000L
+        val state = androidx.compose.material3.rememberDatePickerState(initialSelectedDateMillis = initial)
+        androidx.compose.material3.DatePickerDialog(
+            onDismissRequest = { picking = false },
+            confirmButton = {
+                androidx.compose.material3.TextButton(
+                    onClick = {
+                        state.selectedDateMillis?.let { onSetUnitTarget(unitNumber, Math.floorDiv(it, 86_400_000L)) }
+                        picking = false
+                    },
+                    modifier = Modifier.semantics { testTag = "v2-target-save" },
+                ) { Text("Save") }
+            },
+            dismissButton = {
+                androidx.compose.material3.TextButton(onClick = { picking = false }) { Text("Cancel") }
+            },
+        ) { androidx.compose.material3.DatePicker(state = state) }
     }
 }

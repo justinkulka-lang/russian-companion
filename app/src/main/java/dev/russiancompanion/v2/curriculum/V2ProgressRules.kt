@@ -31,6 +31,8 @@ internal data class V2LearnerView(
     /** Runtime replacement generation, never exported as learner evidence. */
     val storageEpoch: Long = 0,
     val unitReviewCompletions: Map<Int, CumulativeUnitCompletion> = emptyMap(),
+    /** Learner-set target dates (A2-31), unit number to epoch day. */
+    val unitTargets: Map<Int, Long> = emptyMap(),
 )
 
 internal data class V2ContinueTarget(
