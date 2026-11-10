@@ -42,9 +42,12 @@ class Unit26CumulativeReviewTest {
             assertTrue(ordinaryUnitRequirements(p, p.unit(26)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(26)!!, s.v2LearnerView()).allowed)
             val a = open(p, s)
-            assertEquals(listOf("obj-u1-decoding", "obj-u25-name-question"), a.slots.take(2).map { it.objectiveId })
-            assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NAME_REPLY_RECOGNITION"), a.slots.take(2).map { it.skill })
-            assertEquals("u25-i-name-question-2", a.slots[1].itemId)
+            // A2-28: the single decoding anchor was in the three preceding unit reviews, so it is barred here.
+            assertTrue("u1-i-decode-pair" in cumulativeReviewRepeatExcluded(s.v2LearnerView(), 26))
+            assertTrue(a.slots.none { it.itemId == "u1-i-decode-pair" })
+            assertEquals(listOf("obj-u25-name-question"), a.slots.take(1).map { it.objectiveId })
+            assertEquals(listOf("SUPPLIED_NAME_REPLY_RECOGNITION"), a.slots.take(1).map { it.skill })
+            assertEquals("u25-i-name-question-2", a.slots[0].itemId)
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(26)!!, s.v2LearnerView()).allowed)
             (1..a.slots.lastIndex).forEach { answer(p, s, a, it) }; assertTrue(advancementDecision(p, p.unit(26)!!, s.v2LearnerView()).allowed)
@@ -110,12 +113,12 @@ class Unit26CumulativeReviewTest {
             waitTag("v2-continue"); compose.onNodeWithTag("v2-continue").performClick()
             waitTag("v2-review-start"); compose.onNodeWithTag("v2-review-start").performScrollTo().performClick()
             waitTag("v2-review-count"); val a = s.cumulativeReviewHistory().first.single { it.targetUnit == 26 }
-            val noun = p.item(a.slots[1].itemId)!!
+            val noun = p.item(a.slots[0].itemId)!!
             compose.onNode(hasText(noun.promptLetter!!) and !hasClickAction()).performScrollTo().assertIsDisplayed()
             val wrong = noun.options.first { it != noun.answer }
-            compose.onNodeWithTag("v2-review-option-1-$wrong").performScrollTo().performClick()
-            waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Not the reviewed answer. ${noun.feedback}")
-            compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
+            compose.onNodeWithTag("v2-review-option-0-$wrong").performScrollTo().performClick()
+            waitTag("v2-review-feedback-0"); compose.onNodeWithTag("v2-review-feedback-0").assertTextEquals("Not the reviewed answer. ${noun.feedback}")
+            compose.onNodeWithTag("v2-review-remediate-0").performScrollTo().performClick()
             waitTag("v2-example-ex-u25-name-question-3"); compose.onNodeWithTag("v2-example-ex-u25-name-question-3").performScrollTo().assertIsDisplayed()
             compose.onNodeWithText("It starts the name reply and must be followed by a name", substring = true).performScrollTo().assertIsDisplayed()
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
@@ -139,7 +142,7 @@ class Unit26CumulativeReviewTest {
             }
             waitTag("v2-return-to-check"); compose.onNodeWithTag("v2-return-to-check").performClick()
             waitTag("v2-review-count"); assertEquals(a, s.cumulativeReviewHistory().first.single { it.targetUnit == 26 })
-            assertFalse(1 in completedReviewSlots(p, a, s.cumulativeReviewHistory().second))
+            assertFalse(0 in completedReviewSlots(p, a, s.cumulativeReviewHistory().second))
             a.slots.forEachIndexed { index, slot ->
                 val answer = p.item(slot.itemId)!!.answer
                 compose.onNodeWithTag("v2-review-option-$index-$answer").performScrollTo().performClick()

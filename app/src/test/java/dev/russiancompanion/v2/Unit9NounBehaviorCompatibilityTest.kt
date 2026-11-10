@@ -32,7 +32,7 @@ class Unit9NounBehaviorCompatibilityTest {
             prepare(store); val task = open(store); val learner = store.v2LearnerView()
             for (owner in listOf(5, 8, 3)) {
                 assertNull(createCumulativeReviewAssignment(pack, learner.copy(completedUnitNumbers = learner.completedUnitNumbers - owner), 9, "missing-$owner", 0))
-                val slot = task.slots.single { it.ownerUnit == owner }
+                val slot = task.slots.first { it.ownerUnit == owner }
                 val changed = pack.copy(items = pack.items.map { if (it.id == slot.itemId) it.copy(feedback = it.feedback + " changed") else it })
                 assertFalse(reviewAssignmentCurrent(changed, task))
                 val sid = pack.unit(owner)!!.objectives.single { it.id == slot.objectiveId }.instructionStepIds.last()

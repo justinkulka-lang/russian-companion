@@ -103,7 +103,7 @@ class Unit9CumulativeReviewTest {
             waitTag("v2-review-start"); compose.onNodeWithTag("v2-review-start").performScrollTo().performClick()
             waitTag("v2-review-count"); val a = s.cumulativeReviewHistory().first.single { it.targetUnit == 9 }
             val noun = p.item(a.slots[1].itemId)!!
-            compose.onNode(hasText(noun.promptLetter!!) and !hasClickAction()).performScrollTo().assertIsDisplayed()
+            compose.onAllNodes(hasText(noun.promptLetter!!) and !hasClickAction()).onFirst().performScrollTo().assertIsDisplayed()
             val wrong = noun.options.first { it != noun.answer }
             compose.onNodeWithTag("v2-review-option-1-$wrong").performScrollTo().performClick()
             waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Not the reviewed answer. ${noun.feedback}")

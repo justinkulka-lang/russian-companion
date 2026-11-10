@@ -12,8 +12,8 @@ class ReviewedCurriculumSourceGuardTest {
         val entries = ReviewedCurriculumSourceGuard.entries
         assertEquals(6, entries.size)
         val currentBindings = entries.flatMap { it["bindings"]!!.jsonArray }.map { it.jsonObject }
-        assertEquals(189, currentBindings.size)
-        assertEquals(26, currentBindings.count { it.text("kind") == "ITEM_ID" })
+        assertEquals(193, currentBindings.size)
+        assertEquals(30, currentBindings.count { it.text("kind") == "ITEM_ID" })
         assertEquals(0, currentBindings.count { it.text("purpose") == "EXISTING_RESEARCH_CUE_COMPARISON_PENDING_SOURCE_REVIEW" })
         assertEquals(emptyList<String>(), ReviewedCurriculumSourceGuard.offenders(ReviewedCurriculumSourceGuard.sources(), pack))
         val result = V2Validator.validate(pack)
@@ -80,7 +80,8 @@ class ReviewedCurriculumSourceGuardTest {
         val path = "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt"
         val reviewed = ReviewedCurriculumSourceGuard.entries.associateBy { it.text("path") }.getValue(path)
         val bindings = reviewed.getValue("bindings").jsonArray.map { it.jsonObject }
-        val expected = setOf("u4-i-verb-говорить-мы", "u4-i-verb-видеть-он", "u4-i-verb-писать-вы", "u4-i-verb-идти-они")
+        val expected = setOf("u4-i-verb-говорить-мы", "u4-i-verb-видеть-он", "u4-i-verb-писать-вы", "u4-i-verb-идти-они",
+            "u1-i-е-identity", "u1-i-ё-identity", "u1-i-ю-identity", "u1-i-я-identity")
         val present = bindings.filter { it.text("value") in expected }
         assertEquals(expected, present.map { it.text("value") }.toSet())
         assertTrue(present.all { it.text("kind") == "ITEM_ID" && it.text("purpose") == "PERSISTED_ITEM_ID_REFERENCE" })

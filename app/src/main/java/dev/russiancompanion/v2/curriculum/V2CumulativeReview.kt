@@ -540,7 +540,7 @@ internal fun recentReviewCandidate(pack: V2CurriculumPack, learner: V2LearnerVie
                                   candidates: List<V2CheckItem>): V2CheckItem? =
     rankedReviewCandidates(pack, learner, candidates).firstOrNull()
 
-/** Missed items first, then the oldest correct, then authored order. */
+/** Missed items first (most recent miss first), then the least recently reviewed and oldest correct, then authored order. */
 private fun rankedReviewCandidates(pack: V2CurriculumPack, learner: V2LearnerView,
                                    candidates: List<V2CheckItem>, recentUse: Map<String, Int> = emptyMap()): List<V2CheckItem> {
     val attempts = learner.governedAttempts.orEmpty()
@@ -555,7 +555,8 @@ private fun rankedReviewCandidates(pack: V2CurriculumPack, learner: V2LearnerVie
     }.groupBy { it.itemId }.mapValues { (_, rows) -> rows.maxBy { it.acceptedOrder } }
     return candidates.withIndex().sortedWith(compareBy<IndexedValue<V2CheckItem>>(
         { if (latest[it.value.id]?.correct == false) 0 else 1 },
-        { recentUse[it.value.id] ?: 0 },
+        // Missed items keep the most-recent-miss order; others prefer items absent from recent reviews.
+        { if (latest[it.value.id]?.correct == false) 0 else recentUse[it.value.id] ?: 0 },
         { latest[it.value.id]?.let { a -> if (a.correct) a.acceptedOrder else -a.acceptedOrder } ?: 0L },
         { it.index },
     )).map { it.value }

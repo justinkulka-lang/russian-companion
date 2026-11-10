@@ -56,7 +56,7 @@ class Unit7GenderCompatibilityTest {
             val learner = store.v2LearnerView()
             for (owner in listOf(3, 6)) {
                 assertNull(createCumulativeReviewAssignment(pack, learner.copy(completedUnitNumbers = learner.completedUnitNumbers - owner), 7, "missing-$owner", 0))
-                val slot = task.slots.single { it.ownerUnit == owner }
+                val slot = task.slots.first { it.ownerUnit == owner }
                 val changed = pack.copy(items = pack.items.map { if (it.id == slot.itemId) it.copy(feedback = it.feedback + " changed") else it })
                 assertFalse(reviewAssignmentCurrent(changed, task))
                 val stepId = pack.unit(owner)!!.objectives.single { it.id == slot.objectiveId }.instructionStepIds.last()

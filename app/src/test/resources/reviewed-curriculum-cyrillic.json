@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "1f983abd8fd19317dac73000bfbd7e8986ea746bd14c3707e4b617cc0078bade",
+      "sha256": "f6999032810e713e8d33d103e6ca21ac2ff1a3cde9b9e6b2cb108988711d29df",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -107,6 +107,26 @@
         {
           "kind": "ITEM_ID",
           "value": "u4-i-verb-идти-они",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u1-i-е-identity",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u1-i-ё-identity",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u1-i-ю-identity",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u1-i-я-identity",
           "purpose": "PERSISTED_ITEM_ID_REFERENCE"
         }
       ]
@@ -3254,6 +3274,23 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Reuses existing supplied nominative plurals, possession/absence and reported-frame-time pools; separate Unit14v2/schema16, exact oldv1 and downstream owner14 bridge, English labels only. No new Cyrillic literal,item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "task": "T11-c",
+      "sourceCommit": "de699760dfb3",
+      "previousRecordedSha256": "1f983abd8fd19317dac73000bfbd7e8986ea746bd14c3707e4b617cc0078bade",
+      "sha256": "f6999032810e713e8d33d103e6ca21ac2ff1a3cde9b9e6b2cb108988711d29df",
+      "additionalExistingItemReferences": [
+        "u1-i-е-identity",
+        "u1-i-ё-identity",
+        "u1-i-ю-identity",
+        "u1-i-я-identity"
+      ],
+      "allExistingBindingsUnchanged": true,
+      "scope": "A2-28 allocation: anchors unchanged; earlier-unit registry reuses existing declarations and adds references to the four existing obj-u1-iotated check-item IDs from the current pack. No new Cyrillic text, Russian construction, linguistic acceptance or rights approval.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }
