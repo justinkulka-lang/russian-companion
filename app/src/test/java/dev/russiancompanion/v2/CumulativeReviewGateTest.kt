@@ -135,7 +135,7 @@ class CumulativeReviewGateTest {
         } finally { helper.close(); context().deleteDatabase(name) }
     }
 
-    @Test fun versionThreeBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks() {
+    @Test fun currentBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks() {
         val p = pack()
         ready(p).use { s ->
             val a = s.openUnit3CumulativeReview(p, s.learnerMutationEpoch())!!; answer(p,s,a,0); answer(p,s,a,1); advance(p,s)
@@ -154,7 +154,11 @@ class CumulativeReviewGateTest {
                     assertEquals(before,target.governedLearnerFingerprint())
                     val fakePre=d.copy(reviewAssignments=emptyList(),reviewAnswers=emptyList(),unitCompletions=d.unitCompletions.map {
                         if(it.unitNumber==3) it.copy(preReviewActivation=true,reviewPolicyDigest="",reviewAssignmentId="",reviewCompletionOrder=0) else it })
-                    assertEquals(GovernedReplaceOutcome.REPLACED,target.replaceGovernedLearner(fakePre,emptyList()))
+                    // Removing accepted history must also remove queue rows derived from that history.
+                    assertEquals(GovernedReplaceOutcome.UNCHANGED,target.replaceGovernedLearner(fakePre,emptyList()))
+                    assertEquals(before,target.governedLearnerFingerprint())
+                    val consistentPre = fakePre.copy(spacedReviews = fakePre.spacedReviews.filterNot { it.lastEventId.startsWith("review:") })
+                    assertEquals(GovernedReplaceOutcome.REPLACED,target.replaceGovernedLearner(consistentPre,emptyList()))
                     assertFalse(3 in currentCompletedUnitNumbers(p,target.v2LearnerView()))
                 }
             } finally { temp.deleteRecursively() }
