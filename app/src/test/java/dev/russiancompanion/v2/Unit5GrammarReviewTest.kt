@@ -39,7 +39,7 @@ class Unit5GrammarReviewTest {
             assertTrue(runCatching { advance(p, s, 5) }.isFailure)
             assertEquals(newPolicy, a.policyId)
             assertEquals(1, a.schema)
-            assertEquals(listOf("obj-u3-gender", "obj-u4-nominative"), a.slots.map { it.objectiveId })
+            assertEquals(listOf("obj-u3-gender", "obj-u4-nominative"), a.slots.take(2).map { it.objectiveId })
             assertEquals(listOf(3, 4), a.slots.map { it.ownerUnit })
             assertTrue(a.slots.none { it.itemId == "u1-i-decode-pair" })
             answer(p, s, a, 0)

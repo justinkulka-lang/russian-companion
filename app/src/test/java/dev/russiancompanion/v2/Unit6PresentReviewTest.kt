@@ -42,7 +42,7 @@ class Unit6PresentReviewTest {
             assertFalse("Unit6 must refuse actual advancement without its assigned present-form answer", advancedWithoutPresent)
             assertEquals("unit6-prior-present-subject-noun-behavior-v3", task.policyId)
             assertEquals(1, task.schema)
-            assertEquals(listOf("obj-u4-present", "obj-u5-indeclinable", "obj-u4-nominative"), task.slots.map { it.objectiveId })
+            assertEquals(listOf("obj-u4-present", "obj-u5-indeclinable", "obj-u4-nominative"), task.slots.take(3).map { it.objectiveId })
             assertEquals(listOf(4, 5, 4), task.slots.map { it.ownerUnit })
             assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })
             assertFalse(advancementDecision(pack, pack.unit(6)!!, store.v2LearnerView()).allowed)
@@ -69,7 +69,7 @@ class Unit6PresentReviewTest {
             LocalStore.openNamed(context, name).use { store ->
                 prepare(store)
                 val task = open(store)
-                assertEquals(3, task.slots.size)
+                assertTrue(task.slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS); assertEquals(3, cumulativeReviewPolicy(task.targetUnit)!!.anchorCount)
                 assertEquals(cumulativeReviewDeclaredPolicy(pack, 6)!!.id, task.policyId)
                 assertEquals(setOf(1, 2, 3, 4, 5), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 assertEquals("unit5-prior-gender-subject-v2", store.cumulativeReviewHistory().first.single { it.targetUnit == 5 }.policyId)

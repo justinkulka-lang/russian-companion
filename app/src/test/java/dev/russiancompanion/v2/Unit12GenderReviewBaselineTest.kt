@@ -58,7 +58,7 @@ class Unit12GenderReviewBaselineTest {
                 advancedWithoutNounGender)
             assertEquals("unit12-prior-gender-past-gender-v2", task.policyId)
             assertEquals(1, task.schema)
-            assertEquals(listOf("obj-u3-gender", "obj-u11-past-aspect"), task.slots.map { it.objectiveId })
+            assertEquals(listOf("obj-u3-gender", "obj-u11-past-aspect"), task.slots.take(2).map { it.objectiveId })
             assertEquals(listOf(3, 11), task.slots.map { it.ownerUnit })
             assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })
             assertFalse(advancementDecision(pack, pack.unit(12)!!, store.v2LearnerView()).allowed)
@@ -87,7 +87,7 @@ class Unit12GenderReviewBaselineTest {
             LocalStore.openNamed(context, name).use { store ->
                 prepare(store)
                 val task = open(store)
-                assertEquals(2, task.slots.size)
+                assertTrue(task.slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS); assertEquals(2, cumulativeReviewPolicy(task.targetUnit)!!.anchorCount)
                 assertEquals(cumulativeReviewDeclaredPolicy(pack, 12)!!.id, task.policyId)
                 assertEquals((1..11).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 val prerequisites = store.cumulativeReviewHistory().first

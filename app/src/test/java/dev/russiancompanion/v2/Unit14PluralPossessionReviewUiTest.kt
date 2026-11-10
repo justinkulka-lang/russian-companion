@@ -103,7 +103,7 @@ class Unit14PluralPossessionReviewUiTest {
             assertEquals(task,store.cumulativeReviewHistory().first.single { it.targetUnit==14 })
             assertTrue(completedReviewSlots(pack,task,store.v2LearnerView().reviewAnswers).isEmpty())
             assertEquals(options,reviewPresentedOptions(item,task,slotIndex))
-            compose.onNodeWithTag("v2-review-count").assertTextEquals("0 of 3 review checks recorded")
+            compose.onNodeWithTag("v2-review-count").assertTextEquals("0 of ${task.slots.size} review checks recorded")
             for((index,slot) in task.slots.withIndex()) {
                 compose.onNodeWithTag("v2-review-option-$index-${pack.item(slot.itemId)!!.answer}").performScrollTo().performClick()
                 compose.waitUntil(30_000) { index in completedReviewSlots(pack,task,store.v2LearnerView().reviewAnswers) }

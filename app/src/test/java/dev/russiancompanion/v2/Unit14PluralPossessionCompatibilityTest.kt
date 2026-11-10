@@ -24,7 +24,7 @@ import java.io.File
 @Config(sdk = [33])
 class Unit14PluralPossessionCompatibilityTest {
     @Test fun boundedPoolsAndCurrentAssignmentStayOnTheLivePack() {
-        val policies = (3..30).map { cumulativeReviewPolicy(it)!! }
+        val policies = (3..30).map { cumulativeReviewAnchorPolicy(it)!! }
         assertEquals(28, policies.size); assertEquals(60, policies.sumOf { it.pool.size })
         assertEquals(121, policies.sumOf { p -> p.pool.sumOf { it.candidateItemIds.size } })
         assertEquals(57, policies.flatMap { it.pool }.flatMap { it.candidateItemIds }.distinct().size)
@@ -96,7 +96,7 @@ class Unit14PluralPossessionCompatibilityTest {
         try {
             LocalStore.openNamed(context,name).use { store ->
                 prepare(store);miss(store,"u8-i-plural-6");miss(store,"u10-i-have-4")
-                val task=open(store);assertEquals(listOf("u8-i-plural-6","u10-i-have-4","u13-i-report-frame-time"),task.slots.map { it.itemId })
+                val task=open(store);assertEquals(listOf("u8-i-plural-6","u10-i-have-4","u13-i-report-frame-time"),task.slots.take(3).map { it.itemId })
                 ordinary(store,8);ordinary(store,10)
                 assertEquals(task,open(store));assertTrue(completedReviewSlots(pack,task,store.v2LearnerView().reviewAnswers).isEmpty())
                 task.slots.indices.forEach { answer(store,task,it) }
@@ -129,7 +129,7 @@ class Unit14PluralPossessionCompatibilityTest {
             for(plural in policy.pool[0].candidateItemIds) for(possession in policy.pool[1].candidateItemIds) {
                 miss(store,plural);miss(store,possession)
                 val task=createCumulativeReviewAssignment(pack,store.v2LearnerView(),14,"variant-$plural-$possession",0)!!
-                assertEquals(listOf(plural,possession,"u13-i-report-frame-time"),task.slots.map { it.itemId })
+                assertEquals(listOf(plural,possession,"u13-i-report-frame-time"),task.slots.take(3).map { it.itemId })
                 seen+=task.slots.map { it.itemId }
                 task.slots.forEachIndexed { index,slot ->
                     val item=pack.item(slot.itemId)!!;val order=reviewPresentedOptions(item,task,index)

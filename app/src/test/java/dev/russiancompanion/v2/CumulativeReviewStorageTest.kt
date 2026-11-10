@@ -35,7 +35,9 @@ class CumulativeReviewStorageTest {
         val p = pack()
         prepared(p).use { s ->
             val a = open(p, s)
-            assertEquals(listOf("obj-u1-decoding", "obj-u1-confusable"), a.slots.map { it.objectiveId })
+            assertEquals(listOf("obj-u1-decoding", "obj-u1-confusable"), a.slots.take(2).map { it.objectiveId })
+            assertEquals(setOf("obj-u1-decoding", "obj-u1-confusable", "obj-u1-iotated"), a.slots.map { it.objectiveId }.toSet())
+            assertTrue(a.slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS)
             assertEquals(2, a.slots.map { it.skill }.distinct().size)
             assertTrue(reviewAssignmentCurrent(p, a))
             answer(p, s, a, 0, false)
@@ -249,7 +251,9 @@ class CumulativeReviewStorageTest {
         )
         val legacyDigest = reviewHash(canonicalParts(listOf("unit3-prior-literacy-v1", "target:3", "slots:2") +
             legacyPool.map { canonicalParts(listOf(it.first, it.second, canonicalParts(it.third))) }))
-        assertEquals(legacyDigest, cumulativeReviewPolicy(3)!!.digest)
+        assertEquals(legacyDigest, cumulativeReviewAnchorPolicy(3)!!.digest)
+        assertEquals(cumulativeReviewAnchorPolicy(3)!!.pool, cumulativeReviewPolicy(3)!!.anchors)
+        assertNotEquals(legacyDigest, cumulativeReviewPolicy(3)!!.digest)
         prepared(p).use { s ->
             val original = createUnit3ReviewAssignment(p, s.v2LearnerView(), "same-id", 0)!!
             assertEquals(original, createCumulativeReviewAssignment(p, s.v2LearnerView(), 3, "same-id", 0))

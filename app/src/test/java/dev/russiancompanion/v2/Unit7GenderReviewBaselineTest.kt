@@ -49,7 +49,7 @@ class Unit7GenderReviewBaselineTest {
             assertFalse("Unit7 must refuse actual advancement without its assigned noun-gender answer", advancedWithoutGender)
             assertEquals("unit7-prior-gender-inanimate-case-v2", task.policyId)
             assertEquals(1, task.schema)
-            assertEquals(listOf("obj-u3-gender", "obj-u6-animacy"), task.slots.map { it.objectiveId })
+            assertEquals(listOf("obj-u3-gender", "obj-u6-animacy"), task.slots.take(2).map { it.objectiveId })
             assertEquals(listOf(3, 6), task.slots.map { it.ownerUnit })
             assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })
             assertFalse(advancementDecision(pack, pack.unit(7)!!, store.v2LearnerView()).allowed)
@@ -76,7 +76,7 @@ class Unit7GenderReviewBaselineTest {
             LocalStore.openNamed(context, name).use { store ->
                 prepare(store)
                 val task = open(store)
-                assertEquals(2, task.slots.size)
+                assertTrue(task.slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS); assertEquals(2, cumulativeReviewPolicy(task.targetUnit)!!.anchorCount)
                 assertEquals(cumulativeReviewDeclaredPolicy(pack, 7)!!.id, task.policyId)
                 assertEquals((1..6).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 assertEquals("unit5-prior-gender-subject-v2", store.cumulativeReviewHistory().first.single { it.targetUnit == 5 }.policyId)

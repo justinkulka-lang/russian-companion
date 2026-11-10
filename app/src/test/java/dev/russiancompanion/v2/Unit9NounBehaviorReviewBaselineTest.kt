@@ -53,7 +53,7 @@ class Unit9NounBehaviorReviewBaselineTest {
                 advancedWithoutNounBehavior)
             assertEquals("unit9-prior-noun-behavior-plural-gender-v3", task.policyId)
             assertEquals(1, task.schema)
-            assertEquals(listOf("obj-u5-indeclinable", "obj-u8-plural", "obj-u3-gender"), task.slots.map { it.objectiveId })
+            assertEquals(listOf("obj-u5-indeclinable", "obj-u8-plural", "obj-u3-gender"), task.slots.take(3).map { it.objectiveId })
             assertEquals(listOf(5, 8, 3), task.slots.map { it.ownerUnit })
             assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })
             assertFalse(advancementDecision(pack, pack.unit(9)!!, store.v2LearnerView()).allowed)
@@ -80,7 +80,7 @@ class Unit9NounBehaviorReviewBaselineTest {
             LocalStore.openNamed(context, name).use { store ->
                 prepare(store)
                 val task = open(store)
-                assertEquals(3, task.slots.size)
+                assertTrue(task.slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS); assertEquals(3, cumulativeReviewPolicy(task.targetUnit)!!.anchorCount)
                 assertEquals(cumulativeReviewDeclaredPolicy(pack, 9)!!.id, task.policyId)
                 assertEquals((1..8).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 val prerequisites = store.cumulativeReviewHistory().first

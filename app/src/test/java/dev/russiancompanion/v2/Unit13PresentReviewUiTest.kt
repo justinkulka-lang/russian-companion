@@ -80,7 +80,7 @@ class Unit13PresentReviewUiTest {
             waitTag("v2-review-count")
             val task = store.cumulativeReviewHistory().first.single { it.targetUnit == 13 }
             assertEquals(1, task.schema); assertEquals(item.id, task.slots[slotIndex].itemId)
-            assertEquals(3, task.slots.size)
+            assertTrue(task.slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS); assertEquals(3, cumulativeReviewPolicy(task.targetUnit)!!.anchorCount)
             val options = reviewPresentedOptions(item, task, slotIndex)
             assertEquals(options, reviewPresentedOptions(item.copy(answer = item.options.first { it != item.answer }), task, slotIndex))
             val beforeTags = compose.onAllNodes(hasTestTagPrefix("v2-review-option-$slotIndex-")).fetchSemanticsNodes().map { it.id }
@@ -119,7 +119,7 @@ class Unit13PresentReviewUiTest {
             assertEquals(task, store.cumulativeReviewHistory().first.single { it.targetUnit == 13 })
             assertTrue(completedReviewSlots(pack, task, store.v2LearnerView().reviewAnswers).isEmpty())
             assertEquals(options, reviewPresentedOptions(item, task, slotIndex))
-            compose.onNodeWithTag("v2-review-count").assertTextEquals("0 of 3 review checks recorded")
+            compose.onNodeWithTag("v2-review-count").assertTextEquals("0 of ${task.slots.size} review checks recorded")
             task.slots.forEachIndexed { index, slot ->
                 val answer = pack.item(slot.itemId)!!.answer
                 compose.onNodeWithTag("v2-review-option-$index-$answer").performScrollTo().performClick()

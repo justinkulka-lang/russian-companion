@@ -138,7 +138,7 @@ class CumulativeReviewGateTest {
     @Test fun currentBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks() {
         val p = pack()
         ready(p).use { s ->
-            val a = s.openUnit3CumulativeReview(p, s.learnerMutationEpoch())!!; answer(p,s,a,0); answer(p,s,a,1); advance(p,s)
+            val a = s.openUnit3CumulativeReview(p, s.learnerMutationEpoch())!!; a.slots.indices.forEach { answer(p,s,a,it) }; advance(p,s)
             val d = s.governedLearnerDocument(); val bytes = ByteArrayOutputStream()
             writeGovernedBackup(bytes,"dev.russiancompanion",p.packId,p.packVersion,"DARK",d,emptyList())
             val temp = File(context().cacheDir,"review-gate-backup-${System.nanoTime()}")
@@ -181,8 +181,11 @@ class CumulativeReviewGateTest {
             waitTag("v2-review-count"); assertEquals(a, s.cumulativeReviewHistory().first.single())
             compose.onNodeWithTag("v2-review-option-0-${first.answer}").performScrollTo().performClick()
             compose.waitUntil(30000) { s.cumulativeReviewHistory().second.lastOrNull()?.selected == first.answer }
-            val second=p.item(a.slots[1].itemId)!!
-            compose.onNodeWithTag("v2-review-option-1-${second.answer}").performScrollTo().performClick()
+            for (index in 1..a.slots.lastIndex) {
+                val next=p.item(a.slots[index].itemId)!!
+                compose.onNodeWithTag("v2-review-option-$index-${next.answer}").performScrollTo().performClick()
+                compose.waitUntil(30000) { index in completedReviewSlots(p, a, s.cumulativeReviewHistory().second) }
+            }
             waitTag("v2-review-gate"); compose.onNodeWithTag("v2-review-gate").performScrollTo().performClick()
             waitTag("v2-advance"); compose.onNodeWithTag("v2-advance").performScrollTo().assertIsEnabled().performClick()
             compose.waitUntil(30000) { s.v2Profile().currentUnitNumber==4 }

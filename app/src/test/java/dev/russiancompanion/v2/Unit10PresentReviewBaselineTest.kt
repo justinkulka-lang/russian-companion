@@ -55,7 +55,7 @@ class Unit10PresentReviewBaselineTest {
                 advancedWithoutPresent)
             assertEquals("unit10-prior-present-numeral-gender-v2", task.policyId)
             assertEquals(1, task.schema)
-            assertEquals(listOf("obj-u4-present", "obj-u9-odindva"), task.slots.map { it.objectiveId })
+            assertEquals(listOf("obj-u4-present", "obj-u9-odindva"), task.slots.take(2).map { it.objectiveId })
             assertEquals(listOf(4, 9), task.slots.map { it.ownerUnit })
             assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })
             assertFalse(advancementDecision(pack, pack.unit(10)!!, store.v2LearnerView()).allowed)
@@ -82,7 +82,7 @@ class Unit10PresentReviewBaselineTest {
             LocalStore.openNamed(context, name).use { store ->
                 prepare(store)
                 val task = open(store)
-                assertEquals(2, task.slots.size)
+                assertTrue(task.slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS); assertEquals(2, cumulativeReviewPolicy(task.targetUnit)!!.anchorCount)
                 assertEquals(cumulativeReviewDeclaredPolicy(pack, 10)!!.id, task.policyId)
                 assertEquals((1..9).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 val prerequisites = store.cumulativeReviewHistory().first

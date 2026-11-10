@@ -55,7 +55,7 @@ class Unit11NounReviewBaselineTest {
                 advancedWithoutNounBehavior)
             assertEquals("unit11-prior-noun-behavior-possession-absence-v2", task.policyId)
             assertEquals(1, task.schema)
-            assertEquals(listOf("obj-u5-indeclinable", "obj-u10-have"), task.slots.map { it.objectiveId })
+            assertEquals(listOf("obj-u5-indeclinable", "obj-u10-have"), task.slots.take(2).map { it.objectiveId })
             assertEquals(listOf(5, 10), task.slots.map { it.ownerUnit })
             assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })
             assertFalse(advancementDecision(pack, pack.unit(11)!!, store.v2LearnerView()).allowed)
@@ -84,7 +84,7 @@ class Unit11NounReviewBaselineTest {
             LocalStore.openNamed(context, name).use { store ->
                 prepare(store)
                 val task = open(store)
-                assertEquals(2, task.slots.size)
+                assertTrue(task.slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS); assertEquals(2, cumulativeReviewPolicy(task.targetUnit)!!.anchorCount)
                 assertEquals(cumulativeReviewDeclaredPolicy(pack, 11)!!.id, task.policyId)
                 assertEquals((1..10).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 val prerequisites = store.cumulativeReviewHistory().first
