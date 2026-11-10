@@ -43,7 +43,7 @@ class Unit13PresentReviewPersistenceTest {
                 assertEquals("unit13-prior-present-aspect-past-gender-v3", task.policyId); assertEquals(1, task.schema)
                 assertTrue(task.slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS); assertEquals(3, cumulativeReviewPolicy(task.targetUnit)!!.anchorCount)
                 assertEquals(listOf("obj-u4-present", "obj-u12-aspect", "obj-u11-past-aspect"), task.slots.take(3).map { it.objectiveId })
-                assertEquals(listOf(4, 12, 11), task.slots.map { it.ownerUnit })
+                assertEquals(listOf(4, 12, 11), task.slots.take(3).map { it.ownerUnit })
                 assertTrue(task.slots[0].itemId in cumulativeReviewDeclaredPolicy(pack, 13)!!.pool[0].candidateItemIds)
                 assertTrue(reviewAssignmentCurrent(pack, task))
                 assertEquals("u12-i-aspect-1", task.slots[1].itemId)
@@ -121,11 +121,11 @@ class Unit13PresentReviewPersistenceTest {
             assertEquals("unit13-prior-present-aspect-past-gender-v3", task.policyId)
             assertEquals(1, task.schema)
             val policy = cumulativeReviewDeclaredPolicy(pack, 13)!!
-            assertEquals(listOf("obj-u4-present", "obj-u12-aspect", "obj-u11-past-aspect"), policy.pool.map { it.objectiveId })
+            assertEquals(listOf("obj-u4-present", "obj-u12-aspect", "obj-u11-past-aspect"), policy.anchors.map { it.objectiveId })
             assertEquals(listOf("u4-i-verb-говорить-мы", "u4-i-verb-видеть-он", "u4-i-verb-писать-вы", "u4-i-verb-идти-они"), policy.pool[0].candidateItemIds)
             assertEquals(listOf("u12-i-aspect-1", "u12-i-aspect-2"), policy.pool[1].candidateItemIds)
             assertEquals(listOf("u11-i-past-aspect-1", "u11-i-past-aspect-2"), policy.pool[2].candidateItemIds)
-            assertEquals(listOf(4, 12, 11), task.slots.map { it.ownerUnit })
+            assertEquals(listOf(4, 12, 11), task.slots.take(3).map { it.ownerUnit })
             answer(store, task, 0, pack = pack)
             assertTrue(advance(store, 13, pack))
         }

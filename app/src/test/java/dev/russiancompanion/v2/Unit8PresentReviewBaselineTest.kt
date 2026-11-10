@@ -50,10 +50,10 @@ class Unit8PresentReviewBaselineTest {
             assertEquals("unit8-prior-present-nominative-agreement-v2", task.policyId)
             assertEquals(1, task.schema)
             assertEquals(listOf("obj-u4-present", "obj-u7-endings"), task.slots.take(2).map { it.objectiveId })
-            assertEquals(listOf(4, 7), task.slots.map { it.ownerUnit })
-            assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })
+            assertEquals(listOf(4, 7), task.slots.take(2).map { it.ownerUnit })
+            assertFalse(task.slots.take(cumulativeReviewPolicy(task.targetUnit)!!.anchorCount).any { it.itemId == "u1-i-decode-pair" })
             assertFalse(advancementDecision(pack, pack.unit(8)!!, store.v2LearnerView()).allowed)
-            answer(store, task, 0)
+            task.slots.indices.filter { task.slots[it].objectiveId == "obj-u4-present" }.forEach { answer(store, task, it) }
             assertTrue(advancementDecision(pack, pack.unit(8)!!, store.v2LearnerView()).allowed)
             assertTrue(advance(store, 8))
             val completion = store.governedLearnerDocument().unitCompletions.single { it.unitNumber == 8 }

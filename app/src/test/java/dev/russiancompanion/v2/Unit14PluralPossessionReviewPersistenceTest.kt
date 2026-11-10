@@ -44,10 +44,10 @@ class Unit14PluralPossessionReviewPersistenceTest {
                 val task = open(store, p, 14)
                 assertEquals("unit14-prior-plural-possession-reported-time-v2", task.policyId); assertEquals(1, task.schema)
                 assertEquals(listOf("obj-u8-plural", "obj-u10-have", "obj-u13-reported"), task.slots.take(3).map { it.objectiveId })
-                assertEquals(listOf(8, 10, 13), task.slots.map { it.ownerUnit })
+                assertEquals(listOf(8, 10, 13), task.slots.take(3).map { it.ownerUnit })
                 val policy = cumulativeReviewDeclaredPolicy(p, 14)!!
                 task.slots.forEachIndexed { index, slot ->
-                    assertTrue(slot.itemId in policy.pool[index].candidateItemIds)
+                    assertTrue(slot.itemId in policy.pool.single { it.objectiveId == slot.objectiveId }.candidateItemIds)
                 }
                 assertOwnerDigests(p, task)
                 answer(store, p, task, 0)
@@ -81,7 +81,7 @@ class Unit14PluralPossessionReviewPersistenceTest {
                 assertEquals("unit15-prior-reading-impersonal-state-v1", downstream.policyId)
                 assertEquals(1, downstream.schema)
                 assertEquals(listOf("obj-u1-decoding", "obj-u14-impersonal"), downstream.slots.take(2).map { it.objectiveId })
-                assertEquals(listOf(1, 14), downstream.slots.map { it.ownerUnit })
+                assertEquals(listOf(1, 14), downstream.slots.take(2).map { it.ownerUnit })
                 assertEquals("u14-i-impersonal-2", downstream.slots[1].itemId)
                 assertOwnerDigests(p, downstream)
                 answer(store, p, downstream, 0)
@@ -146,7 +146,7 @@ class Unit14PluralPossessionReviewPersistenceTest {
                 assertEquals("unit14-prior-plural-possession-reported-time-v2", task.policyId)
                 assertEquals(1, task.schema)
                 assertEquals(listOf("obj-u8-plural", "obj-u10-have", "obj-u13-reported"), task.slots.take(3).map { it.objectiveId })
-                assertEquals(listOf(8, 10, 13), task.slots.map { it.ownerUnit })
+                assertEquals(listOf(8, 10, 13), task.slots.take(3).map { it.ownerUnit })
                 task.slots.indices.forEach { answer(store, p, task, it) }
                 assertTrue(advance(store, p, 14))
             }

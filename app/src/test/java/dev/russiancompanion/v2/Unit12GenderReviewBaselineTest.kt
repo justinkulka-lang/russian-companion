@@ -59,12 +59,12 @@ class Unit12GenderReviewBaselineTest {
             assertEquals("unit12-prior-gender-past-gender-v2", task.policyId)
             assertEquals(1, task.schema)
             assertEquals(listOf("obj-u3-gender", "obj-u11-past-aspect"), task.slots.take(2).map { it.objectiveId })
-            assertEquals(listOf(3, 11), task.slots.map { it.ownerUnit })
-            assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })
+            assertEquals(listOf(3, 11), task.slots.take(2).map { it.ownerUnit })
+            assertFalse(task.slots.take(cumulativeReviewPolicy(task.targetUnit)!!.anchorCount).any { it.itemId == "u1-i-decode-pair" })
             assertFalse(advancementDecision(pack, pack.unit(12)!!, store.v2LearnerView()).allowed)
             assertEquals(listOf("u11-i-past-aspect-1", "u11-i-past-aspect-2"),
                 cumulativeReviewDeclaredPolicy(pack, 12)!!.pool[1].candidateItemIds)
-            answer(store, task, 0)
+            task.slots.indices.filter { task.slots[it].objectiveId == "obj-u3-gender" }.forEach { answer(store, task, it) }
             assertTrue(advancementDecision(pack, pack.unit(12)!!, store.v2LearnerView()).allowed)
             assertTrue(advance(store, 12))
             val completion = store.governedLearnerDocument().unitCompletions.single { it.unitNumber == 12 }

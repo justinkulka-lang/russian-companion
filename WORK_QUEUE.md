@@ -161,7 +161,7 @@ MEDIUM and LOW findings for those units are fixed or given a written disposition
 |---|---|---|---|---|---|
 | T14 | CODEX | Block 1, Units 1–5. Includes CC002 foundation content (pronunciation, listening, handwriting recognition) and CC015. | Block 1 meets A2-01. Validity and lint reports are clean for Units 1–5. | T12, T10 | TODO |
 | T14-A | CODEX | Bind the clips marked Match in block1-results.json to Units 1–2. Add dictation items (A2-20, A2-23). | Units 1–2 play verified audio. The Listen panel in the app receives the real audio engine and a bound clip. It is not called with null. | T14, T13-O, T04-n1 | TODO |
-| T15 | CODEX | Block 2, Units 6–10. | Block 2 meets A2-01. | T14 | TODO |
+| T15 | CODEX | Block 2, Units 6–10. Owner TODO (2026-11-10): Check Unit 9 cumulative review: two items show the same cue; make sure neither gives away the other's answer. | Block 2 meets A2-01. | T14 | TODO |
 | T16 | CODEX | Block 3, Units 11–15. Includes CC003. | Block 3 meets A2-01. | T15 | TODO |
 | T17 | CODEX | Block 4, Units 16–20. Includes CC005 and CC007. | Block 4 meets A2-01. | T16 | TODO |
 | T18 | CODEX | Block 5, Units 21–25. Includes CC004 and CC006. | Block 5 meets A2-01. | T17 | TODO |

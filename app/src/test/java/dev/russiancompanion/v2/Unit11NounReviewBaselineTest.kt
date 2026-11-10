@@ -56,12 +56,12 @@ class Unit11NounReviewBaselineTest {
             assertEquals("unit11-prior-noun-behavior-possession-absence-v2", task.policyId)
             assertEquals(1, task.schema)
             assertEquals(listOf("obj-u5-indeclinable", "obj-u10-have"), task.slots.take(2).map { it.objectiveId })
-            assertEquals(listOf(5, 10), task.slots.map { it.ownerUnit })
-            assertFalse(task.slots.any { it.itemId == "u1-i-decode-pair" })
+            assertEquals(listOf(5, 10), task.slots.take(2).map { it.ownerUnit })
+            assertFalse(task.slots.take(cumulativeReviewPolicy(task.targetUnit)!!.anchorCount).any { it.itemId == "u1-i-decode-pair" })
             assertFalse(advancementDecision(pack, pack.unit(11)!!, store.v2LearnerView()).allowed)
             assertEquals(listOf("u10-i-have-1", "u10-i-have-2", "u10-i-have-3", "u10-i-have-4"),
                 cumulativeReviewDeclaredPolicy(pack, 11)!!.pool[1].candidateItemIds)
-            answer(store, task, 0)
+            task.slots.indices.filter { task.slots[it].objectiveId == "obj-u5-indeclinable" }.forEach { answer(store, task, it) }
             assertTrue(advancementDecision(pack, pack.unit(11)!!, store.v2LearnerView()).allowed)
             assertTrue(advance(store, 11))
             val completion = store.governedLearnerDocument().unitCompletions.single { it.unitNumber == 11 }

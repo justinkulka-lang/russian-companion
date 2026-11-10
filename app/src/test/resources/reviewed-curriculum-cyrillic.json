@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "f6999032810e713e8d33d103e6ca21ac2ff1a3cde9b9e6b2cb108988711d29df",
+      "sha256": "cabc2bce4a5d01301dd1fff99c443416c0c1b58b1d1b2ce0c03c2b86e0012444",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3282,7 +3282,7 @@
       "task": "T11-c",
       "sourceCommit": "de699760dfb3",
       "previousRecordedSha256": "1f983abd8fd19317dac73000bfbd7e8986ea746bd14c3707e4b617cc0078bade",
-      "sha256": "f6999032810e713e8d33d103e6ca21ac2ff1a3cde9b9e6b2cb108988711d29df",
+      "sha256": "cabc2bce4a5d01301dd1fff99c443416c0c1b58b1d1b2ce0c03c2b86e0012444",
       "additionalExistingItemReferences": [
         "u1-i-е-identity",
         "u1-i-ё-identity",

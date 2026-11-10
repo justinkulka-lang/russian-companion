@@ -39,7 +39,7 @@ class Unit14PluralPossessionCompatibilityTest {
             val task = open(store)
             assertEquals(1, task.schema)
             assertTrue(reviewAssignmentCurrent(pack, task))
-            assertEquals(listOf(8, 10, 13), task.slots.map { it.ownerUnit })
+            assertEquals(listOf(8, 10, 13), task.slots.take(3).map { it.ownerUnit })
         }
     }
 

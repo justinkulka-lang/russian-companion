@@ -34,15 +34,17 @@ class Unit5GrammarReviewTest {
             if (glyph >= 0) answer(p, s, a, glyph)
             val subject = a.slots.indexOfFirst { it.objectiveId == "obj-u4-nominative" }
             answer(p, s, a, subject)
+            // A2-28 supplements: every non-gender slot answered still cannot replace the gender answers.
+            a.slots.indices.filter { a.slots[it].objectiveId != "obj-u3-gender" && it != glyph && it != subject }.forEach { answer(p, s, a, it) }
             assertFalse("Subject plus print matching must not replace a gender review answer",
                 advancementDecision(p, p.unit(5)!!, s.v2LearnerView()).allowed)
             assertTrue(runCatching { advance(p, s, 5) }.isFailure)
             assertEquals(newPolicy, a.policyId)
             assertEquals(1, a.schema)
             assertEquals(listOf("obj-u3-gender", "obj-u4-nominative"), a.slots.take(2).map { it.objectiveId })
-            assertEquals(listOf(3, 4), a.slots.map { it.ownerUnit })
-            assertTrue(a.slots.none { it.itemId == "u1-i-decode-pair" })
-            answer(p, s, a, 0)
+            assertEquals(listOf(3, 4), a.slots.take(2).map { it.ownerUnit })
+            assertTrue(a.slots.take(cumulativeReviewPolicy(5)!!.anchorCount).none { it.itemId == "u1-i-decode-pair" })
+            a.slots.indices.filter { a.slots[it].objectiveId == "obj-u3-gender" }.forEach { answer(p, s, a, it) }
             assertTrue(advancementDecision(p, p.unit(5)!!, s.v2LearnerView()).allowed)
             assertTrue(advance(p, s, 5))
             val completion = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 5 }

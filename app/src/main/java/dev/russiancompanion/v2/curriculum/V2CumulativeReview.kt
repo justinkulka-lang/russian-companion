@@ -540,23 +540,25 @@ internal fun recentReviewCandidate(pack: V2CurriculumPack, learner: V2LearnerVie
                                   candidates: List<V2CheckItem>): V2CheckItem? =
     rankedReviewCandidates(pack, learner, candidates).firstOrNull()
 
-/** Missed items first (most recent miss first), then the least recently reviewed and oldest correct, then authored order. */
+/** The latest valid prescribed CHECK attempt per item; malformed or ambiguous order rows never count. */
+private fun latestReviewAttempts(pack: V2CurriculumPack, learner: V2LearnerView, ids: Set<String>) =
+    learner.governedAttempts.orEmpty().let { attempts ->
+        // Malformed duplicate sequence numbers have no deterministic insertion order.
+        val ambiguous = attempts.groupingBy { it.acceptedOrder }.eachCount().filterValues { it > 1 }.keys
+        attempts.filter { a ->
+            a.itemId in ids && a.acceptedOrder > 0 && a.acceptedOrder !in ambiguous &&
+                pack.step(a.stepId)?.second?.kind == "CHECK" &&
+                attemptSuppliesStepSelection(a, pack, a.stepId) &&
+                pack.item(a.itemId)?.let { a.objectiveId == it.objectiveId && a.correct == scoreCheckedResponse(it, a.selected) } == true
+        }.groupBy { it.itemId }.mapValues { (_, rows) -> rows.maxBy { it.acceptedOrder } }
+    }
+
+/** Missed items first (most recent miss first), then the oldest correct, then authored order. */
 private fun rankedReviewCandidates(pack: V2CurriculumPack, learner: V2LearnerView,
-                                   candidates: List<V2CheckItem>, recentUse: Map<String, Int> = emptyMap()): List<V2CheckItem> {
-    val attempts = learner.governedAttempts.orEmpty()
-    // Malformed duplicate sequence numbers have no deterministic insertion order.
-    val ambiguous = attempts.groupingBy { it.acceptedOrder }.eachCount().filterValues { it > 1 }.keys
-    val ids = candidates.map { it.id }.toSet()
-    val latest = attempts.filter { a ->
-        a.itemId in ids && a.acceptedOrder > 0 && a.acceptedOrder !in ambiguous &&
-            pack.step(a.stepId)?.second?.kind == "CHECK" &&
-            attemptSuppliesStepSelection(a, pack, a.stepId) &&
-            pack.item(a.itemId)?.let { a.objectiveId == it.objectiveId && a.correct == scoreCheckedResponse(it, a.selected) } == true
-    }.groupBy { it.itemId }.mapValues { (_, rows) -> rows.maxBy { it.acceptedOrder } }
+                                   candidates: List<V2CheckItem>): List<V2CheckItem> {
+    val latest = latestReviewAttempts(pack, learner, candidates.map { it.id }.toSet())
     return candidates.withIndex().sortedWith(compareBy<IndexedValue<V2CheckItem>>(
         { if (latest[it.value.id]?.correct == false) 0 else 1 },
-        // Missed items keep the most-recent-miss order; others prefer items absent from recent reviews.
-        { if (latest[it.value.id]?.correct == false) 0 else recentUse[it.value.id] ?: 0 },
         { latest[it.value.id]?.let { a -> if (a.correct) a.acceptedOrder else -a.acceptedOrder } ?: 0L },
         { it.index },
     )).map { it.value }
@@ -605,10 +607,17 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
     val excluded = cumulativeReviewRepeatExcluded(learner, targetUnit)
     val previous = precedingUnitReviews(learner, targetUnit).filterNotNull()
     val recentUse = previous.flatMap { a -> a.slots.map { it.itemId } }.groupingBy { it }.eachCount()
-    // Per objective: eligible, not barred by the repeat limit, ranked missed-first then least recently reviewed.
+    // Per objective: eligible, not barred by the repeat limit, ranked missed-first then oldest correct.
     val ranked = policy.pool.indices.mapNotNull { index ->
         val eligible = candidates[index] ?: return@mapNotNull null
-        val open = rankedReviewCandidates(pack, learner, eligible.filter { it.id !in excluded }, recentUse)
+        val ranked = rankedReviewCandidates(pack, learner, eligible.filter { it.id !in excluded })
+        // Supplements rotate: among items not missed, those least used in the preceding reviews come first.
+        // Anchor items keep the original missed-first, oldest-correct order.
+        val missed = latestReviewAttempts(pack, learner, ranked.map { it.id }.toSet()).filterValues { !it.correct }.keys
+        val open = if (index < policy.anchorCount) ranked else ranked.withIndex().sortedWith(compareBy(
+            { (_, item) -> if (item.id in missed) 0 else 1 },
+            { (_, item) -> if (item.id in missed) 0 else recentUse[item.id] ?: 0 },
+            { (order, _) -> order })).map { it.value }
         if (open.isEmpty()) null else Triple(index, policy.pool[index], open.toMutableList())
     }
     val anchors = ranked.filter { it.first < policy.anchorCount }
