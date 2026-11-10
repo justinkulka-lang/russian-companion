@@ -80,10 +80,11 @@ internal fun <T> rememberGoverned(
     pack: V2CurriculumPack,
     learner: V2LearnerView,
     label: String = "",
+    refreshKey: Any? = null,
     compute: () -> T,
 ): T? {
     val inline = V2UiWork.blocking()
-    val inlineValue = remember(pack, learner, inline, label) {
+    val inlineValue = remember(pack, learner, inline, label, refreshKey) {
         if (inline) {
             V2PackIdentityIndex.warm(pack)
             compute()
@@ -94,7 +95,7 @@ internal fun <T> rememberGoverned(
     // Keep the last worker snapshot so a learner refresh does not blank the screen.
     var published by remember { mutableStateOf<T?>(null) }
     val generation = remember { java.util.concurrent.atomic.AtomicLong(0) }
-    LaunchedEffect(pack, learner, inline, label) {
+    LaunchedEffect(pack, learner, inline, label, refreshKey) {
         if (inline) return@LaunchedEffect
         val token = generation.incrementAndGet()
         recordGovernedIdentityForTests(if (label.isEmpty()) "scheduled" else "$label:scheduled")
@@ -668,7 +669,8 @@ internal fun V2PracticeScreen(
     onLab: (String) -> Unit,
     onSavedWork: () -> Unit,
 ) {
-    val offers = rememberGoverned(pack, learner, label = "practice") {
+    val minute = rememberReviewMinute()
+    val offers = rememberGoverned(pack, learner, label = "practice", refreshKey = minute) {
         practiceOffers(pack, learner)
     }
     V2Scaffold(title = "Practice", tab = V2Tab.PRACTICE, onTab = onTab) {

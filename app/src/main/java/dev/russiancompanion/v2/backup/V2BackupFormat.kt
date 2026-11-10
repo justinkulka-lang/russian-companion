@@ -20,8 +20,8 @@ import java.util.zip.ZipOutputStream
 import dev.russiancompanion.v2.curriculum.LEGACY_UNVERIFIED
 import dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY
 
-internal const val BACKUP_FORMAT_VERSION = 3
-internal const val BACKUP_SCHEMA_VERSION = 3
+internal const val BACKUP_FORMAT_VERSION = 4
+internal const val BACKUP_SCHEMA_VERSION = 4
 internal const val BACKUP_LEARNER_ENTRY = "learner.json"
 internal const val BACKUP_MANIFEST_ENTRY = "manifest.json"
 
@@ -68,6 +68,7 @@ internal data class BackupManifest(
     val files: List<BackupFileRecord>,
     val reviewAssignmentCount: Int = 0,
     val reviewAnswerCount: Int = 0,
+    val spacedReviewCount: Int = 0,
 )
 
 @Serializable
@@ -97,6 +98,7 @@ internal data class GovernedLearnerDocument(
     val recordings: List<BackupRecording>,
     val reviewAssignments: List<CumulativeReviewAssignment> = emptyList(),
     val reviewAnswers: List<CumulativeReviewAnswer> = emptyList(),
+    val spacedReviews: List<dev.russiancompanion.v2.curriculum.V2SpacedReviewRecord> = emptyList(),
 )
 
 @Serializable
@@ -537,6 +539,7 @@ internal fun writeGovernedBackup(
         files = files,
         reviewAssignmentCount = document.reviewAssignments.size,
         reviewAnswerCount = document.reviewAnswers.size,
+        spacedReviewCount = document.spacedReviews.size,
     )
     val manifestBytes = backupJson.encodeToString(BackupManifest.serializer(), manifest).encodeToByteArray()
     account(manifestBytes.size.toLong(), limits.manifestBytes)
@@ -712,6 +715,7 @@ private fun readBoundedBackup(
         if (document.schemaVersion != BACKUP_SCHEMA_VERSION) {
             return BackupReadResult.Rejected(BackupRejection.UNSUPPORTED_VERSION)
         }
+        if (spacedReviewBackupDefects(document) != null) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         if (completionActivationDefects(document) != null) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         if (reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
@@ -719,6 +723,7 @@ private fun readBoundedBackup(
         if (
             document.reviewAssignments.size != manifest.reviewAssignmentCount ||
             document.reviewAnswers.size != manifest.reviewAnswerCount ||
+            document.spacedReviews.size != manifest.spacedReviewCount ||
             document.attempts.size != manifest.attemptCount ||
             document.notes.size != manifest.noteCount ||
             document.bookmarks.size != manifest.bookmarkCount ||

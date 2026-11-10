@@ -28,3 +28,11 @@ internal val MIGRATION_11_12 = object : Migration(11, 12) {
         ).forEach { table -> db.execSQL("DELETE FROM `$table`") }
     }
 }
+
+/** New development queue schema starts with fresh learner data, never converted schedules. */
+internal val MIGRATION_12_13 = object : Migration(12, 13) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        MIGRATION_11_12.migrate(db)
+        db.execSQL("CREATE TABLE IF NOT EXISTS `v2_spaced_reviews` (`itemId` TEXT NOT NULL, `document` TEXT NOT NULL, PRIMARY KEY(`itemId`))")
+    }
+}

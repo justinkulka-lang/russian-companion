@@ -776,18 +776,19 @@ internal class LocalStore private constructor(
         recordedAtLocal: String,
     ) = withContext(ioDispatcher) { writeV2Attempt(itemId, selected, correct, recordedAtLocal) }
 
-    fun v2RecordGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) = call {
-        writeGovernedAttempt(write)
+    fun v2RecordGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite, pack: V2CurriculumPack? = null) = call {
+        writeGovernedAttempt(write, pack)
     }
 
     internal suspend fun v2RecordGovernedAttemptAsync(
         write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite,
+        pack: V2CurriculumPack? = null,
     ) {
-        val duplicate = withContext(ioDispatcher) { governedAttemptIsDuplicate(write) }
+        val duplicate = withContext(ioDispatcher) { validateCheckedWrite(write, pack); governedAttemptIsDuplicate(write) }
         if (duplicate) return
         holdGovernedAttemptForTests?.await()
         withContext(ioDispatcher) {
-            if (!governedAttemptIsDuplicate(write)) insertGovernedAttempt(write)
+            if (!governedAttemptIsDuplicate(write)) insertGovernedAttempt(write, pack)
         }
     }
 
@@ -877,7 +878,7 @@ internal class LocalStore private constructor(
             bookmarks = dao.bookmarks().map { it.toView() },
             notes = dao.notes().map { it.toView() },
             tutorItems = dao.tutorQueue().map { it.toView() },
-            reviewAssignments = readReviewAssignments(), reviewAnswers = readReviewAnswers(),
+            reviewAssignments = readReviewAssignments(), reviewAnswers = readReviewAnswers(), spacedReviews = readSpacedReviews(), storageEpoch = learnerMutationEpoch(),
             unitReviewCompletions = dao.unitCompletions().associate { it.unitNumber to CumulativeUnitCompletion(
                 it.preReviewActivation, it.reviewPolicyDigest, it.reviewAssignmentId, it.reviewCompletionOrder) },
         )
@@ -912,8 +913,9 @@ internal class LocalStore private constructor(
         )
     }
 
-    private fun writeGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
-        if (!governedAttemptIsDuplicate(write)) insertGovernedAttempt(write)
+    private fun writeGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite, pack: V2CurriculumPack? = null) {
+        validateCheckedWrite(write, pack)
+        if (!governedAttemptIsDuplicate(write)) insertGovernedAttempt(write, pack)
     }
 
     internal suspend fun v2SaveProfileIfCurrentAsync(
@@ -940,8 +942,10 @@ internal class LocalStore private constructor(
     internal suspend fun v2RecordGovernedAttemptIfCurrentAsync(
         capturedEpoch: Long,
         write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite,
+        pack: V2CurriculumPack? = null,
     ): Boolean {
         val decision = withContext(ioDispatcher) {
+            if (learnerMutationCurrent(capturedEpoch)) validateCheckedWrite(write, pack)
             when {
                 !learnerMutationCurrent(capturedEpoch) -> "stale"
                 governedAttemptIsDuplicate(write) -> "duplicate"
@@ -954,7 +958,7 @@ internal class LocalStore private constructor(
         holdGovernedAttemptForTests?.await()
         return withContext(ioDispatcher) {
             if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
-            if (!governedAttemptIsDuplicate(write)) insertGovernedAttempt(write)
+            if (!governedAttemptIsDuplicate(write)) insertGovernedAttempt(write, pack)
             true
         }
     }
@@ -963,6 +967,11 @@ internal class LocalStore private constructor(
         attempt: dev.russiancompanion.v2.data.V2AttemptEntity,
     ) = call {
         database.v2().insertAttempt(attempt.copy(acceptedOrder = 0))
+    }
+
+    private fun validateCheckedWrite(write: GovernedAttemptWrite, pack: V2CurriculumPack?) {
+        if (pack != null) require(prepareGovernedAttempt(pack, write.itemId, write.selected, write.attemptRole,
+            write.stepId, write.recordedAtLocal) == write) { "Changed or invalid checked response" }
     }
 
     private fun governedAttemptIsDuplicate(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite): Boolean {
@@ -980,6 +989,7 @@ internal class LocalStore private constructor(
         ) {
             error("unverified attempt")
         }
+        if (write.stepId == practiceStepId("spaced") && (readSpacedReview(write.itemId)?.dueAtEpochMillis ?: Long.MAX_VALUE) <= spacedNow()) return false
         val latest = database.v2().latestMatchingGovernedAttempt(
             itemId = write.itemId,
             attemptRole = write.attemptRole,
@@ -1033,38 +1043,42 @@ internal class LocalStore private constructor(
         rows.forEach { database.v2().insertAttempt(it) }
     }
 
-    private fun insertGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
+    private fun insertGovernedAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite, pack: V2CurriculumPack? = null) {
         synchronized(acceptedOrderLock) {
-            val max = database.v2().maxAcceptedOrder()
-            acceptedOrderReadEnteredForTests?.countDown()
-            val hold = acceptedOrderReadHoldForTests
-            if (hold != null && !hold.await(10, java.util.concurrent.TimeUnit.SECONDS)) {
-                error("accepted-order-hold")
+            database.runInTransaction {
+                validateCheckedWrite(write, pack)
+                val max = database.v2().maxAcceptedOrder()
+                acceptedOrderReadEnteredForTests?.countDown()
+                val hold = acceptedOrderReadHoldForTests
+                if (hold != null && !hold.await(10, java.util.concurrent.TimeUnit.SECONDS)) {
+                    error("accepted-order-hold")
+                }
+                if (max == Long.MAX_VALUE) error("accepted-order-exhausted")
+                val next = max + 1L
+                if (next <= 0L) error("accepted-order-exhausted")
+                // The content key repeats when the same selection is accepted again at the
+                // same wall-clock time. A colliding id gains the accepted-write sequence.
+                val id = if (database.v2().attemptIdExists(write.id)) "${write.id}:$next" else write.id
+                database.v2().insertAttempt(
+                    dev.russiancompanion.v2.data.V2AttemptEntity(
+                        id = id,
+                        itemId = write.itemId,
+                        selected = write.selected,
+                        correct = write.correct,
+                        recordedAtLocal = write.recordedAtLocal,
+                        itemDigest = write.itemDigest,
+                        unitContentDigest = write.unitContentDigest,
+                        ruleDigest = write.ruleDigest,
+                        identitySchema = write.identitySchema,
+                        attemptRole = write.attemptRole,
+                        objectiveId = write.objectiveId,
+                        unitNumber = write.unitNumber,
+                        stepId = write.stepId,
+                        acceptedOrder = next,
+                    ),
+                )
+                if (pack != null) updateSpacedReview(pack, write.itemId, write.selected, "attempt:$id")
             }
-            if (max == Long.MAX_VALUE) error("accepted-order-exhausted")
-            val next = max + 1L
-            if (next <= 0L) error("accepted-order-exhausted")
-            // The content key repeats when the same selection is accepted again at the
-            // same wall-clock time. A colliding id gains the accepted-write sequence.
-            val id = if (database.v2().attemptIdExists(write.id)) "${write.id}:$next" else write.id
-            database.v2().insertAttempt(
-                dev.russiancompanion.v2.data.V2AttemptEntity(
-                    id = id,
-                    itemId = write.itemId,
-                    selected = write.selected,
-                    correct = write.correct,
-                    recordedAtLocal = write.recordedAtLocal,
-                    itemDigest = write.itemDigest,
-                    unitContentDigest = write.unitContentDigest,
-                    ruleDigest = write.ruleDigest,
-                    identitySchema = write.identitySchema,
-                    attemptRole = write.attemptRole,
-                    objectiveId = write.objectiveId,
-                    unitNumber = write.unitNumber,
-                    stepId = write.stepId,
-                    acceptedOrder = next,
-                ),
-            )
         }
     }
 
@@ -1463,9 +1477,33 @@ internal class LocalStore private constructor(
                 slotIndex, selected, max + 1)
             database.v2().insertReviewAnswer(V2ReviewAnswerEntity(answer.id, a.id, answer.acceptedOrder,
                 backupJson.encodeToString(CumulativeReviewAnswer.serializer(), answer)))
+            updateSpacedReview(pack, item.id, selected, "review:${answer.id}")
             saved = true
         }
         saved
+    }
+
+    @Volatile internal var spacedReviewTimeForTests: Long? = null
+    @Volatile internal var failSpacedReviewForTests: Boolean = false
+    private fun spacedNow(): Long = spacedReviewTimeForTests ?: System.currentTimeMillis()
+
+    private fun readSpacedReviews(): List<V2SpacedReviewRecord> = database.v2().spacedReviews().map {
+        backupJson.decodeFromString(V2SpacedReviewRecord.serializer(), it.document)
+    }
+
+    private fun readSpacedReview(itemId: String): V2SpacedReviewRecord? = database.v2().spacedReview(itemId)?.let {
+        backupJson.decodeFromString(V2SpacedReviewRecord.serializer(), it.document)
+    }
+
+    private fun updateSpacedReview(pack: V2CurriculumPack, itemId: String, response: String, event: String) {
+        val previous = readSpacedReview(itemId)
+        if (previous != null && spacedReviewRecordDefect(previous) != null) error("invalid-stored-spaced-review")
+        if (previous?.acceptedOrder == Long.MAX_VALUE) error("spaced-review-order-exhausted")
+        val next = scheduleSpacedReviewAnswer(pack, previous, itemId, response, event,
+            (previous?.acceptedOrder ?: 0) + 1, spacedNow()) ?: return
+        if (failSpacedReviewForTests) error("spaced-review-write-failed")
+        database.v2().upsertSpacedReview(dev.russiancompanion.v2.data.V2SpacedReviewEntity(itemId,
+            backupJson.encodeToString(V2SpacedReviewRecord.serializer(), next)))
     }
 
     internal fun governedLearnerDocument(): GovernedLearnerDocument = call { readGovernedLearnerDocument() }
@@ -1490,7 +1528,8 @@ internal class LocalStore private constructor(
         if (document.schemaVersion != BACKUP_SCHEMA_VERSION ||
             dev.russiancompanion.v2.backup.completionActivationDefects(document) != null ||
             reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null ||
-            acceptedOrderDefects(document.attempts) != null) return@call GovernedReplaceOutcome.UNCHANGED
+            acceptedOrderDefects(document.attempts) != null ||
+            dev.russiancompanion.v2.backup.spacedReviewBackupDefects(document) != null) return@call GovernedReplaceOutcome.UNCHANGED
         val inputs = recordings.map { it.file }
         BackupWorkRegistry.holdRecordings(inputs)
         try {
@@ -1642,6 +1681,7 @@ internal class LocalStore private constructor(
         users.deleteAllPlanInstances()
         users.deleteLearnerState()
         users.deleteAllExports()
+        curriculum.deleteSpacedReviews()
         curriculum.deleteReviewAnswers()
         curriculum.deleteReviewAssignments()
         curriculum.deleteAttempts()
@@ -1737,6 +1777,8 @@ internal class LocalStore private constructor(
         }
         document.reviewAssignments.forEach { curriculum.insertReviewAssignment(V2ReviewAssignmentEntity(it.id, it.targetUnit, backupJson.encodeToString(CumulativeReviewAssignment.serializer(), it))) }
         document.reviewAnswers.forEach { curriculum.insertReviewAnswer(V2ReviewAnswerEntity(it.id, it.assignmentId, it.acceptedOrder, backupJson.encodeToString(CumulativeReviewAnswer.serializer(), it))) }
+        document.spacedReviews.forEach { record -> database.v2().upsertSpacedReview(
+            dev.russiancompanion.v2.data.V2SpacedReviewEntity(record.itemId, backupJson.encodeToString(V2SpacedReviewRecord.serializer(), record))) }
         curriculum.upsertProfile(document.profile.toEntity())
         document.steps.forEach {
             curriculum.upsertStep(
@@ -2138,6 +2180,7 @@ internal class LocalStore private constructor(
             schemaVersion = BACKUP_SCHEMA_VERSION,
             reviewAssignments = readReviewAssignments(),
             reviewAnswers = readReviewAnswers(),
+            spacedReviews = readSpacedReviews(),
             profile = BackupProfile(
                 id = profile.id,
                 onboardingCompleted = profile.onboardingCompleted,
@@ -2293,7 +2336,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_11_12)
+                .addMigrations(MIGRATION_11_12, MIGRATION_12_13)
                 // Pre-acceptance databases before v11 have no supported learner schema.
                 .fallbackToDestructiveMigrationFrom(true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .build()
@@ -2313,7 +2356,7 @@ internal class LocalStore private constructor(
         fun openNamed(context: Context, name: String): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, name)
-                .addMigrations(MIGRATION_11_12)
+                .addMigrations(MIGRATION_11_12, MIGRATION_12_13)
                 // Pre-acceptance databases before v11 have no supported learner schema.
                 .fallbackToDestructiveMigrationFrom(true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .build()

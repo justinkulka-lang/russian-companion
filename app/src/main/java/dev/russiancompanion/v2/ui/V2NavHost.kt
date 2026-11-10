@@ -207,14 +207,16 @@ internal fun V2NavHost(
             val learner = state.learner
             if (pack == null || learner == null) return@composable
             val labId = entry.toRoute<V2LabRoute>().labId
-            V2LabScreen(
-                pack = pack,
-                learner = learner,
-                labId = labId,
-                pendingKeys = pendingKeys,
-                onBack = { navController.popBackStack() },
-                onSubmit = { itemId, selected -> onPracticeAttempt(labId, itemId, selected) },
-            )
+            androidx.compose.runtime.key(learner.storageEpoch) {
+                V2LabScreen(
+                    pack = pack,
+                    learner = learner,
+                    labId = labId,
+                    pendingKeys = pendingKeys,
+                    onBack = { navController.popBackStack() },
+                    onSubmit = { itemId, selected -> onPracticeAttempt(labId, itemId, selected) },
+                )
+            }
         }
         composable<V2AlphabetLabRoute> {
             val pack = state.pack

@@ -98,5 +98,8 @@ private fun learnerRecords(document: GovernedLearnerDocument): Map<String, Strin
     document.reviewAnswers.forEach {
         records["review-answer:${it.id}"] = backupJson.encodeToString(CumulativeReviewAnswer.serializer(), it)
     }
+    document.spacedReviews.forEach {
+        records["spaced-review:${it.itemId}"] = backupJson.encodeToString(dev.russiancompanion.v2.curriculum.V2SpacedReviewRecord.serializer(), it)
+    }
     return records
 }

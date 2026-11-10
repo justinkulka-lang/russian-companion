@@ -88,17 +88,25 @@ internal fun V2LabScreen(
     onBack: () -> Unit,
     onSubmit: (String, String) -> Boolean,
 ) {
-    val snapshot = rememberGoverned(pack, learner, label = "practice-lab") {
-        practiceLabSnapshot(pack, learner, labId)
+    var spacedIds by rememberSaveable(labId, learner.storageEpoch) { mutableStateOf<List<String>?>(null) }
+    val boundary = rememberSaveable(labId, learner.storageEpoch) { learner.governedAttempts.orEmpty().maxOfOrNull { it.acceptedOrder } ?: 0L }
+    val minute = rememberReviewMinute()
+    val capturedIds = spacedIds
+    val published = rememberGoverned(pack, learner, label = "practice-lab", refreshKey = listOf(labId, learner.storageEpoch, capturedIds, minute)) {
+        practiceLabSnapshot(pack, learner, labId, capturedIds)
+    }
+    val snapshot = published?.takeIf { it.storageEpoch == learner.storageEpoch }
+    androidx.compose.runtime.LaunchedEffect(labId, learner.storageEpoch, snapshot) {
+        if (labId == "spaced" && spacedIds == null && snapshot?.offer?.id == "spaced" && snapshot.items.isNotEmpty()) spacedIds = snapshot.items.map { it.id }
     }
     val offer = snapshot?.offer
     val items = snapshot?.items.orEmpty()
-    var index by rememberSaveable(labId) { mutableIntStateOf(0) }
-    var chosen by rememberSaveable(labId, index) { mutableStateOf<String?>(null) }
+    var index by rememberSaveable(labId, learner.storageEpoch) { mutableIntStateOf(0) }
+    var chosen by rememberSaveable(labId, learner.storageEpoch, index) { mutableStateOf<String?>(null) }
     val item = items.getOrNull(index.coerceAtMost(items.lastIndex.coerceAtLeast(0)))
-    val recorded = item?.let { snapshot?.recordedByItem[it.id] }
+    val recorded = item?.let { snapshot?.recordedByItem[it.id] }?.takeIf { labId != "spaced" || it.acceptedOrder > boundary }
     val itemId = item?.id
-    var explanationOpen by rememberSaveable(labId, index, itemId) { mutableStateOf(false) }
+    var explanationOpen by rememberSaveable(labId, learner.storageEpoch, index, itemId) { mutableStateOf(false) }
     val pending = itemId != null && pendingKeys.any { it.startsWith("practice:$labId:$itemId:") }
     V2Scaffold(
         title = offer?.title ?: "Practice",
@@ -145,7 +153,7 @@ internal fun V2LabScreen(
         }
         if (item == null) {
             Text(
-                "No closed-response items are available for the units you have reached. Nothing was marked complete.",
+                if (labId == "spaced") "No app review items are due. Required unit reviews still apply." else "No closed-response items are available for the units you have reached. Nothing was marked complete.",
                 modifier = Modifier.semantics { testTag = "v2-lab-empty" },
             )
             return@V2Scaffold
@@ -158,7 +166,7 @@ internal fun V2LabScreen(
         V2QuestionCue(item, "v2-lab-cue")
         Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-lab-prompt" })
         if (item.isTypedResponse()) {
-            V2TypedResponseInput(item, "$labId:$index", recorded?.selected, !pending,
+            V2TypedResponseInput(item, "$labId:${learner.storageEpoch}:$index", recorded?.selected, !pending,
                 tag = "v2-lab-typed-${item.id}") { value -> onSubmit(item.id, value) }
         } else labPresentedOptions(item, labId).forEach { option ->
             Row(

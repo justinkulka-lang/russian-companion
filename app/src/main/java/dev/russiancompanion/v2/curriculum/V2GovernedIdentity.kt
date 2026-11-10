@@ -460,7 +460,9 @@ internal fun practiceOffers(pack: V2CurriculumPack, learner: V2LearnerView): Lis
             return PracticeOffer(id, title, "This curriculum version is not supported.", false, "UNSUPPORTED_VERSION")
         }
         val count = practiceQueue(pack, learner, id).size
-        val body = if (count == 0) {
+        val body = if (id == "spaced") {
+            "$detail $count items due. This practice does not replace required unit review."
+        } else if (count == 0) {
             "$detail No closed-response items are available for the units you have reached."
         } else {
             "$detail $count closed-response items. Optional practice does not complete a required check."
@@ -468,6 +470,7 @@ internal fun practiceOffers(pack: V2CurriculumPack, learner: V2LearnerView): Lis
         return PracticeOffer(id, title, body, true, null)
     }
     return listOf(
+        runnable("spaced", "Due review", "Spaced practice of app-checked items. AnkiDroid remains the default for long-term vocabulary decks."),
         runnable(
             "alphabet",
             "Alphabet recognition",
@@ -517,10 +520,17 @@ internal fun practiceOffers(pack: V2CurriculumPack, learner: V2LearnerView): Lis
     )
 }
 
-internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId: String): List<V2CheckItem> {
+internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId: String,
+    spacedIds: List<String>? = null, nowEpochMillis: Long = System.currentTimeMillis()): List<V2CheckItem> {
     if (pack.schemaVersion != 1) return emptyList()
     if (labId in setOf("listening", "pronunciation", "handwriting")) return emptyList()
     val reached = currentCompletedUnitNumbers(pack, learner) + learner.currentUnitNumber
+    if (labId == "spaced") {
+        val records = if (spacedIds == null) dueSpacedReviews(pack, learner.spacedReviews, reached, nowEpochMillis)
+            else spacedIds.distinct().mapNotNull { id -> learner.spacedReviews.singleOrNull { it.itemId == id } }
+                .filter { it.unitNumber in reached && spacedReviewRecordCurrent(pack, it) }
+        return records.mapNotNull { pack.item(it.itemId) }
+    }
     val pool = pack.items.mapNotNull { item ->
         val unitNumber = itemUnitNumber(pack, item) ?: return@mapNotNull null
         val unit = pack.unit(unitNumber) ?: return@mapNotNull null
@@ -555,6 +565,7 @@ internal data class PracticeLabSnapshot(
     val offer: PracticeOffer?,
     val items: List<V2CheckItem>,
     val recordedByItem: Map<String, GovernedAttemptView>,
+    val storageEpoch: Long = 0,
 )
 
 /** Offers, ranking, and current selections for one lab. Call off the main thread. */
@@ -562,8 +573,10 @@ internal fun practiceLabSnapshot(
     pack: V2CurriculumPack,
     learner: V2LearnerView,
     labId: String,
+    spacedIds: List<String>? = null,
+    nowEpochMillis: Long = System.currentTimeMillis(),
 ): PracticeLabSnapshot {
-    val items = practiceQueue(pack, learner, labId)
+    val items = practiceQueue(pack, learner, labId, spacedIds, nowEpochMillis)
     val recorded = linkedMapOf<String, GovernedAttemptView>()
     items.forEach { item ->
         optionalPracticeSelection(pack, learner, labId, item.id)?.let { recorded[item.id] = it }
@@ -572,6 +585,7 @@ internal fun practiceLabSnapshot(
         offer = practiceOffers(pack, learner).firstOrNull { it.id == labId },
         items = items,
         recordedByItem = recorded,
+        storageEpoch = learner.storageEpoch,
     )
 }
 

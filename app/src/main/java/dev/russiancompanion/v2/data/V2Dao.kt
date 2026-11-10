@@ -8,6 +8,18 @@ import androidx.room.Update
 
 @Dao
 internal interface V2Dao {
+    @Query("SELECT * FROM v2_spaced_reviews ORDER BY itemId")
+    fun spacedReviews(): List<V2SpacedReviewEntity>
+
+    @Query("SELECT * FROM v2_spaced_reviews WHERE itemId = :itemId")
+    fun spacedReview(itemId: String): V2SpacedReviewEntity?
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun upsertSpacedReview(record: V2SpacedReviewEntity)
+
+    @Query("DELETE FROM v2_spaced_reviews")
+    fun deleteSpacedReviews()
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun upsertProfile(profile: V2ProfileEntity)
 

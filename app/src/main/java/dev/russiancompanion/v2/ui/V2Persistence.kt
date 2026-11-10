@@ -86,8 +86,8 @@ internal class StoreV2Persistence(private val store: LocalStore, private val pac
     override suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
         val epoch = coroutineContext[CapturedLearnerEpoch]?.epoch
         if (epoch == null) {
-            store.v2RecordGovernedAttemptAsync(write)
-        } else if (!store.v2RecordGovernedAttemptIfCurrentAsync(epoch, write)) {
+            store.v2RecordGovernedAttemptAsync(write, pack)
+        } else if (!store.v2RecordGovernedAttemptIfCurrentAsync(epoch, write, pack)) {
             error("stale attempt")
         }
     }

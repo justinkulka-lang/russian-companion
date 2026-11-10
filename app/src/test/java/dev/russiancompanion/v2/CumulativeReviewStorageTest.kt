@@ -125,7 +125,7 @@ class CumulativeReviewStorageTest {
                 val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp)
                 assertTrue(read is BackupReadResult.Valid)
                 val document = (read as BackupReadResult.Valid).backup.document
-                assertEquals(3, document.schemaVersion)
+                assertEquals(dev.russiancompanion.v2.backup.BACKUP_SCHEMA_VERSION, document.schemaVersion)
                 LocalStore.openInMemory(context()).use { target ->
                     assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(document, emptyList()))
                     assertEquals(source.cumulativeReviewHistory(), target.cumulativeReviewHistory())
@@ -145,7 +145,7 @@ class CumulativeReviewStorageTest {
             val a = open(p, s); answer(p, s, a, 0, true)
             val document = s.governedLearnerDocument()
             val fingerprint = s.governedLearnerFingerprint()
-            for (version in listOf(Int.MIN_VALUE, 0, 1, 2, BACKUP_SCHEMA_VERSION + 1, Int.MAX_VALUE)) {
+            for (version in listOf(Int.MIN_VALUE, 0, 1, 2, 3, BACKUP_SCHEMA_VERSION + 1, Int.MAX_VALUE)) {
                 val old = document.copy(schemaVersion = version)
                 assertNotNull(completionActivationDefects(old))
                 assertEquals(GovernedReplaceOutcome.UNCHANGED, s.replaceGovernedLearner(old, emptyList()))

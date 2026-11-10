@@ -27,6 +27,9 @@ internal data class V2LearnerView(
     val tutorItems: List<GovernedTutorView> = emptyList(),
     val reviewAssignments: List<CumulativeReviewAssignment> = emptyList(),
     val reviewAnswers: List<CumulativeReviewAnswer> = emptyList(),
+    val spacedReviews: List<V2SpacedReviewRecord> = emptyList(),
+    /** Runtime replacement generation, never exported as learner evidence. */
+    val storageEpoch: Long = 0,
     val unitReviewCompletions: Map<Int, CumulativeUnitCompletion> = emptyMap(),
 )
 

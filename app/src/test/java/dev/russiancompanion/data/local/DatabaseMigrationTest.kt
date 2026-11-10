@@ -23,7 +23,7 @@ class DatabaseMigrationTest {
         (context.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
         val root = generateSequence(File(System.getProperty("user.dir"))) { it.parentFile }
             .first { File(it, "settings.gradle.kts").isFile }
-        for (version in 1..11) {
+        for (version in 1..12) {
             val name = "dev-reset-$version-${System.nanoTime()}.db"
             val schema = JSONObject(File(root,
                 "app/schemas/dev.russiancompanion.data.local.AppDatabase/$version.json").readText())
@@ -73,11 +73,12 @@ class DatabaseMigrationTest {
                 }
                 android.database.sqlite.SQLiteDatabase.openDatabase(context.getDatabasePath(name).path,
                     null, android.database.sqlite.SQLiteDatabase.OPEN_READONLY).use { db ->
-                    assertEquals(12, db.version)
+                    assertEquals(13, db.version)
                     db.rawQuery("SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='retired_dev_rows'",
                         null).use { cursor ->
                         assertTrue(cursor.moveToFirst())
-                        assertEquals(if (version == 11) 1 else 0, cursor.getInt(0))
+                        // Both explicit migration paths retain unrelated tables while discarding learner rows.
+                        assertEquals(if (version >= 11) 1 else 0, cursor.getInt(0))
                     }
                 }
             } finally {
