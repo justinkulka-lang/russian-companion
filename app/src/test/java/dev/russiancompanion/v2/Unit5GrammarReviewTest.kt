@@ -87,7 +87,7 @@ class Unit5GrammarReviewTest {
                 assertEquals(before, target.cumulativeReviewHistory())
                 assertEquals(a, open(p, target))
                 assertFalse(advancementDecision(p, p.unit(5)!!, target.v2LearnerView()).allowed)
-                answer(p, target, a, 1)
+                (1..a.slots.lastIndex).forEach { answer(p, target, a, it) }
                 assertTrue(advance(p, target, 5))
             }
         } finally {

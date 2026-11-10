@@ -47,7 +47,7 @@ class Unit30CumulativeReviewTest {
             assertEquals("u29-i-active-2", a.slots[1].itemId)
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(30)!!, s.v2LearnerView()).allowed)
-            answer(p, s, a, 1); assertTrue(advancementDecision(p, p.unit(30)!!, s.v2LearnerView()).allowed)
+            (1..a.slots.lastIndex).forEach { answer(p, s, a, it) }; assertTrue(advancementDecision(p, p.unit(30)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(30)!!, s.v2LearnerView().copy(bookAttestedUnits = (1..29).toSet())).allowed)
             assertTrue(advance(p, s)); assertEquals(30, s.v2Profile().currentUnitNumber)
             val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 30 }
@@ -79,12 +79,12 @@ class Unit30CumulativeReviewTest {
                 s.v2RecordGovernedAttempt(prepareGovernedAttempt(p, i.id, i.answer, OPTIONAL_PRACTICE, practiceStepId("mixed"), "replay")!!)
             }
             assertFalse(cumulativeReviewComplete(p, s.v2LearnerView(), 30))
-            answer(p, s, a, 0); answer(p, s, a, 1)
+            a.slots.indices.forEach { answer(p, s, a, it) }
             assertTrue(advancementDecision(p, p.unit(30)!!, s.v2LearnerView()).allowed)
             answer(p, s, a, 1, correct = false)
             assertTrue(runCatching { advance(p, s) }.isFailure)
             assertFalse(s.governedLearnerDocument().unitCompletions.any { it.unitNumber == 30 })
-            answer(p, s, a, 1)
+            (1..a.slots.lastIndex).forEach { answer(p, s, a, it) }
             s.failAdvanceAfterCompletionForTests = true
             assertTrue(runCatching { advance(p, s) }.isFailure)
             assertEquals(30, s.v2Profile().currentUnitNumber)
@@ -224,15 +224,15 @@ class Unit30CumulativeReviewTest {
         for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
         ordinary(p, s, 3)
         val a = s.openUnit3CumulativeReview(p, s.learnerMutationEpoch())!!
-        answer(p, s, a, 0); answer(p, s, a, 1)
+        a.slots.indices.forEach { answer(p, s, a, it) }
         runBlocking { advanceFrom(p, s, 3) }
         ordinary(p, s, 4)
         val previous = s.openCumulativeReview(p, 4, s.learnerMutationEpoch())!!
-        answer(p, s, previous, 0); answer(p, s, previous, 1)
+        previous.slots.indices.forEach { answer(p, s, previous, it) }
         runBlocking { advanceFrom(p, s, 4) }
         ordinary(p, s, 5)
         val fifth = s.openCumulativeReview(p, 5, s.learnerMutationEpoch())!!
-        answer(p, s, fifth, 0); answer(p, s, fifth, 1)
+        fifth.slots.indices.forEach { answer(p, s, fifth, it) }
         runBlocking { advanceFrom(p, s, 5) }
         ordinary(p, s, 6)
         val sixth = s.openCumulativeReview(p, 6, s.learnerMutationEpoch())!!
@@ -240,11 +240,11 @@ class Unit30CumulativeReviewTest {
         runBlocking { advanceFrom(p, s, 6) }
         ordinary(p, s, 7)
         val seventh = s.openCumulativeReview(p, 7, s.learnerMutationEpoch())!!
-        answer(p, s, seventh, 0); answer(p, s, seventh, 1)
+        seventh.slots.indices.forEach { answer(p, s, seventh, it) }
         runBlocking { advanceFrom(p, s, 7) }
         ordinary(p, s, 8)
         val eighth = s.openCumulativeReview(p, 8, s.learnerMutationEpoch())!!
-        answer(p, s, eighth, 0); answer(p, s, eighth, 1)
+        eighth.slots.indices.forEach { answer(p, s, eighth, it) }
         runBlocking { advanceFrom(p, s, 8) }
         ordinary(p, s, 9)
         val ninth = s.openCumulativeReview(p, 9, s.learnerMutationEpoch())!!
@@ -252,15 +252,15 @@ class Unit30CumulativeReviewTest {
         runBlocking { advanceFrom(p, s, 9) }
         ordinary(p, s, 10)
         val tenth = s.openCumulativeReview(p, 10, s.learnerMutationEpoch())!!
-        answer(p, s, tenth, 0); answer(p, s, tenth, 1)
+        tenth.slots.indices.forEach { answer(p, s, tenth, it) }
         runBlocking { advanceFrom(p, s, 10) }
         ordinary(p, s, 11)
         val eleventh = s.openCumulativeReview(p, 11, s.learnerMutationEpoch())!!
-        answer(p, s, eleventh, 0); answer(p, s, eleventh, 1)
+        eleventh.slots.indices.forEach { answer(p, s, eleventh, it) }
         runBlocking { advanceFrom(p, s, 11) }
         ordinary(p, s, 12)
         val twelfth = s.openCumulativeReview(p, 12, s.learnerMutationEpoch())!!
-        answer(p, s, twelfth, 0); answer(p, s, twelfth, 1)
+        twelfth.slots.indices.forEach { answer(p, s, twelfth, it) }
         runBlocking { advanceFrom(p, s, 12) }
         ordinary(p, s, 13)
         val thirteenth = s.openCumulativeReview(p, 13, s.learnerMutationEpoch())!!
@@ -268,68 +268,68 @@ class Unit30CumulativeReviewTest {
         runBlocking { advanceFrom(p, s, 13) }
         ordinary(p, s, 14)
         val fourteenth = s.openCumulativeReview(p, 14, s.learnerMutationEpoch())!!
-        answer(p, s, fourteenth, 0); answer(p, s, fourteenth, 1)
+        fourteenth.slots.indices.forEach { answer(p, s, fourteenth, it) }
         fourteenth.slots.indices.drop(2).forEach { answer(p, s, fourteenth, it) }
         runBlocking { advanceFrom(p, s, 14) }
         ordinary(p, s, 15)
         val fifteenth = s.openCumulativeReview(p, 15, s.learnerMutationEpoch())!!
-        answer(p, s, fifteenth, 0); answer(p, s, fifteenth, 1)
+        fifteenth.slots.indices.forEach { answer(p, s, fifteenth, it) }
         runBlocking { advanceFrom(p, s, 15) }
         ordinary(p, s, 16)
         val sixteenth = s.openCumulativeReview(p, 16, s.learnerMutationEpoch())!!
-        answer(p, s, sixteenth, 0); answer(p, s, sixteenth, 1)
+        sixteenth.slots.indices.forEach { answer(p, s, sixteenth, it) }
         runBlocking { advanceFrom(p, s, 16) }
         ordinary(p, s, 17)
         val seventeenth = s.openCumulativeReview(p, 17, s.learnerMutationEpoch())!!
-        answer(p, s, seventeenth, 0); answer(p, s, seventeenth, 1)
+        seventeenth.slots.indices.forEach { answer(p, s, seventeenth, it) }
         runBlocking { advanceFrom(p, s, 17) }
         ordinary(p, s, 18)
         val eighteenth = s.openCumulativeReview(p, 18, s.learnerMutationEpoch())!!
-        answer(p, s, eighteenth, 0); answer(p, s, eighteenth, 1)
+        eighteenth.slots.indices.forEach { answer(p, s, eighteenth, it) }
         runBlocking { advanceFrom(p, s, 18) }
         ordinary(p, s, 19)
         val nineteenth = s.openCumulativeReview(p, 19, s.learnerMutationEpoch())!!
-        answer(p, s, nineteenth, 0); answer(p, s, nineteenth, 1)
+        nineteenth.slots.indices.forEach { answer(p, s, nineteenth, it) }
         runBlocking { advanceFrom(p, s, 19) }
         ordinary(p, s, 20)
         val twentieth = s.openCumulativeReview(p, 20, s.learnerMutationEpoch())!!
-        answer(p, s, twentieth, 0); answer(p, s, twentieth, 1)
+        twentieth.slots.indices.forEach { answer(p, s, twentieth, it) }
         runBlocking { advanceFrom(p, s, 20) }
         ordinary(p, s, 21)
         val twentyFirst = s.openCumulativeReview(p, 21, s.learnerMutationEpoch())!!
-        answer(p, s, twentyFirst, 0); answer(p, s, twentyFirst, 1)
+        twentyFirst.slots.indices.forEach { answer(p, s, twentyFirst, it) }
         runBlocking { advanceFrom(p, s, 21) }
         ordinary(p, s, 22)
         val twentySecond = s.openCumulativeReview(p, 22, s.learnerMutationEpoch())!!
-        answer(p, s, twentySecond, 0); answer(p, s, twentySecond, 1)
+        twentySecond.slots.indices.forEach { answer(p, s, twentySecond, it) }
         runBlocking { advanceFrom(p, s, 22) }
         ordinary(p, s, 23)
         val twentyThird = s.openCumulativeReview(p, 23, s.learnerMutationEpoch())!!
-        answer(p, s, twentyThird, 0); answer(p, s, twentyThird, 1)
+        twentyThird.slots.indices.forEach { answer(p, s, twentyThird, it) }
         runBlocking { advanceFrom(p, s, 23) }
         ordinary(p, s, 24)
         val twentyFourth = s.openCumulativeReview(p, 24, s.learnerMutationEpoch())!!
-        answer(p, s, twentyFourth, 0); answer(p, s, twentyFourth, 1)
+        twentyFourth.slots.indices.forEach { answer(p, s, twentyFourth, it) }
         runBlocking { advanceFrom(p, s, 24) }
         ordinary(p, s, 25)
         val twentyFifth = s.openCumulativeReview(p, 25, s.learnerMutationEpoch())!!
-        answer(p, s, twentyFifth, 0); answer(p, s, twentyFifth, 1)
+        twentyFifth.slots.indices.forEach { answer(p, s, twentyFifth, it) }
         runBlocking { advanceFrom(p, s, 25) }
         ordinary(p, s, 26)
         val twentySixth = s.openCumulativeReview(p, 26, s.learnerMutationEpoch())!!
-        answer(p, s, twentySixth, 0); answer(p, s, twentySixth, 1)
+        twentySixth.slots.indices.forEach { answer(p, s, twentySixth, it) }
         runBlocking { advanceFrom(p, s, 26) }
         ordinary(p, s, 27)
         val twentySeventh = s.openCumulativeReview(p, 27, s.learnerMutationEpoch())!!
-        answer(p, s, twentySeventh, 0); answer(p, s, twentySeventh, 1)
+        twentySeventh.slots.indices.forEach { answer(p, s, twentySeventh, it) }
         runBlocking { advanceFrom(p, s, 27) }
         ordinary(p, s, 28)
         val twentyEighth = s.openCumulativeReview(p, 28, s.learnerMutationEpoch())!!
-        answer(p, s, twentyEighth, 0); answer(p, s, twentyEighth, 1)
+        twentyEighth.slots.indices.forEach { answer(p, s, twentyEighth, it) }
         runBlocking { advanceFrom(p, s, 28) }
         ordinary(p, s, 29)
         val twentyNinth = s.openCumulativeReview(p, 29, s.learnerMutationEpoch())!!
-        answer(p, s, twentyNinth, 0); answer(p, s, twentyNinth, 1)
+        twentyNinth.slots.indices.forEach { answer(p, s, twentyNinth, it) }
         runBlocking { advanceFrom(p, s, 29) }
         ordinary(p, s, 30)
         assertEquals((1..29).toSet(), currentCompletedUnitNumbers(p, s.v2LearnerView()))

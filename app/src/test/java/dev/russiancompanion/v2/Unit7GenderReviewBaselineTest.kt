@@ -99,7 +99,7 @@ class Unit7GenderReviewBaselineTest {
                 assertEquals(partial, store.governedLearnerDocument())
                 val task = open(store)
                 assertEquals(partial!!.reviewAssignments.single { it.targetUnit == 7 }, task)
-                answer(store, task, 1)
+                (1..task.slots.lastIndex).forEach { answer(store, task, it) }
                 assertTrue(advance(store, 7))
                 assertEquals((1..7).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 completed = store.governedLearnerDocument()

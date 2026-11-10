@@ -37,7 +37,7 @@ class Unit6CumulativeReviewTest {
             answer(p, s, a, 1, correct = false)
             assertTrue(runCatching { advance(p, s) }.isFailure)
             assertFalse(s.governedLearnerDocument().unitCompletions.any { it.unitNumber == 6 })
-            answer(p, s, a, 1)
+            (1..a.slots.lastIndex).forEach { answer(p, s, a, it) }
             s.failAdvanceAfterCompletionForTests = true
             assertTrue(runCatching { advance(p, s) }.isFailure)
             assertEquals(6, s.v2Profile().currentUnitNumber)
@@ -171,15 +171,15 @@ class Unit6CumulativeReviewTest {
         for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
         ordinary(p, s, 3)
         val a = s.openUnit3CumulativeReview(p, s.learnerMutationEpoch())!!
-        answer(p, s, a, 0); answer(p, s, a, 1)
+        a.slots.indices.forEach { answer(p, s, a, it) }
         runBlocking { advanceFrom(p, s, 3) }
         ordinary(p, s, 4)
         val previous = s.openCumulativeReview(p, 4, s.learnerMutationEpoch())!!
-        answer(p, s, previous, 0); answer(p, s, previous, 1)
+        previous.slots.indices.forEach { answer(p, s, previous, it) }
         runBlocking { advanceFrom(p, s, 4) }
         ordinary(p, s, 5)
         val fifth = s.openCumulativeReview(p, 5, s.learnerMutationEpoch())!!
-        answer(p, s, fifth, 0); answer(p, s, fifth, 1)
+        fifth.slots.indices.forEach { answer(p, s, fifth, it) }
         runBlocking { advanceFrom(p, s, 5) }
         ordinary(p, s, 6)
         assertEquals(setOf(1, 2, 3, 4, 5), currentCompletedUnitNumbers(p, s.v2LearnerView()))

@@ -35,20 +35,38 @@ internal data class CumulativeReviewObjectivePool(
     val remediationStepId: String? = null,
 )
 
-/** Explicit declarations only; adding a type or passing a target number never activates a gate. */
+/** A2-28 due cumulative-review size and repeat rules. */
+internal const val CUMULATIVE_REVIEW_MINIMUM_ITEMS = 8
+internal const val CUMULATIVE_REVIEW_MINIMUM_OBJECTIVES = 3
+internal const val CUMULATIVE_REVIEW_CONSECUTIVE_LIMIT = 3
+/** Structural bound only; it keeps stored histories finite. */
+internal const val CUMULATIVE_REVIEW_MAXIMUM_SLOTS = 64
+internal const val CUMULATIVE_REVIEW_ALLOCATION_RULE = "a2-28-min8-objectives3-skills2-repeat3-v1"
+
+/**
+ * Explicit declarations only; adding a type or passing a target number never activates a gate.
+ * The first [anchorCount] pools are the unit's authored anchors and must all be eligible. Later
+ * pools are earlier-unit supplements from the shared reviewed registry; an ineligible supplement
+ * is skipped, never invented.
+ */
 internal data class CumulativeReviewPolicy(
     val id: String, val targetUnit: Int, val pool: List<CumulativeReviewObjectivePool>,
+    val anchorCount: Int = pool.size, val allocationRule: String? = null,
 ) {
     init {
         require(id.isNotBlank() && targetUnit in 3..30)
-        require(pool.size in 2..6 && pool.map { it.objectiveId }.distinct().size == pool.size)
+        require(anchorCount in 2..6 && anchorCount <= pool.size && pool.size <= CUMULATIVE_REVIEW_MAXIMUM_SLOTS &&
+            pool.map { it.objectiveId }.distinct().size == pool.size)
+        require(allocationRule != null || anchorCount == pool.size)
         require(pool.all { it.objectiveId.isNotBlank() && it.candidateItemIds.isNotEmpty() &&
             it.candidateItemIds.all(String::isNotBlank) &&
             it.candidateItemIds.distinct().size == it.candidateItemIds.size })
     }
-    // Keep the original Unit3 canonical form: persisted policy/assignment identities remain valid.
+    val anchors: List<CumulativeReviewObjectivePool> get() = pool.take(anchorCount)
+    // Anchor-only definitions keep the original canonical form; A2-28 policies add the rule and anchor count.
     val digest by lazy {
-        reviewHash(canonicalParts(listOf(id, "target:$targetUnit", "slots:${pool.size}") + pool.map {
+        reviewHash(canonicalParts(listOf(id, "target:$targetUnit", "slots:${pool.size}") +
+            listOfNotNull(allocationRule?.let { "rule:$it" }, allocationRule?.let { "anchors:$anchorCount" }) + pool.map {
             canonicalParts(listOf(it.objectiveId, it.skill.name, canonicalParts(it.candidateItemIds)) +
                 listOfNotNull(it.remediationStepId))
         }))
@@ -397,8 +415,52 @@ internal object Unit30CumulativeReviewPolicy {
     ))
 }
 
+/**
+ * Shared earlier-unit registry for A2-28 supplements. It reuses only objective/skill/candidate
+ * declarations already authored in an anchor policy, plus the Unit 1 iotated-letter identity
+ * checks, which are needed because Units 1–2 otherwise supply two reviewed objectives.
+ * Candidate lists are the union of the anchor declarations; the remediation is the latest declared.
+ */
+internal object CumulativeReviewRegistry {
+    private val unit1Iotated = CumulativeReviewObjectivePool("obj-u1-iotated", CumulativeReviewSkill.PRINTED_LETTER_RECOGNITION,
+        listOf("u1-i-е-identity", "u1-i-ё-identity", "u1-i-ю-identity", "u1-i-я-identity"))
+
+    val entries: List<CumulativeReviewObjectivePool> by lazy {
+        val merged = linkedMapOf<String, CumulativeReviewObjectivePool>()
+        for (target in 3..30) for (spec in cumulativeReviewAnchorPolicy(target)?.pool.orEmpty()) {
+            val prior = merged[spec.objectiveId]
+            if (prior == null) { merged[spec.objectiveId] = spec; continue }
+            check(prior.skill == spec.skill) { "conflicting review skill for ${spec.objectiveId}" }
+            merged[spec.objectiveId] = prior.copy(
+                candidateItemIds = (prior.candidateItemIds + spec.candidateItemIds).distinct(),
+                remediationStepId = spec.remediationStepId ?: prior.remediationStepId)
+        }
+        if (unit1Iotated.objectiveId !in merged) merged[unit1Iotated.objectiveId] = unit1Iotated
+        merged.values.toList()
+    }
+
+    /** Objective-id owner unit read from the id ("obj-u12-…" → 12); the pack check still applies. */
+    fun declaredUnit(objectiveId: String): Int? =
+        Regex("^obj-u(\\d+)-").find(objectiveId)?.groupValues?.get(1)?.toIntOrNull()
+}
+
+/** The current A2-28 obligation: authored anchors first, then earlier registry supplements. */
+internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = a228Policies[targetUnit]
+
+private val a228Policies: Map<Int, CumulativeReviewPolicy> by lazy {
+    (3..30).mapNotNull { target ->
+        val anchor = cumulativeReviewAnchorPolicy(target) ?: return@mapNotNull null
+        val anchorIds = anchor.pool.map { it.objectiveId }.toSet()
+        val supplements = CumulativeReviewRegistry.entries.filter {
+            it.objectiveId !in anchorIds && (CumulativeReviewRegistry.declaredUnit(it.objectiveId) ?: Int.MAX_VALUE) < target
+        }
+        target to CumulativeReviewPolicy(anchor.id, target, anchor.pool + supplements,
+            anchorCount = anchor.pool.size, allocationRule = CUMULATIVE_REVIEW_ALLOCATION_RULE)
+    }.toMap()
+}
+
 /** Authored engineering slices only; every remaining target has no policy. */
-internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = when (targetUnit) {
+internal fun cumulativeReviewAnchorPolicy(targetUnit: Int): CumulativeReviewPolicy? = when (targetUnit) {
     3 -> Unit3CumulativeReviewPolicy.definition
     4 -> Unit4CumulativeReviewPolicy.definition
     5 -> Unit5GrammarCumulativeReviewPolicy.definition
@@ -475,7 +537,12 @@ internal fun cumulativeReviewAssignmentPolicy(a: CumulativeReviewAssignment): Cu
 
 /** Allocation only: these attempts never supply assignment-bound due credit. */
 internal fun recentReviewCandidate(pack: V2CurriculumPack, learner: V2LearnerView,
-                                  candidates: List<V2CheckItem>): V2CheckItem? {
+                                  candidates: List<V2CheckItem>): V2CheckItem? =
+    rankedReviewCandidates(pack, learner, candidates).firstOrNull()
+
+/** Missed items first, then the oldest correct, then authored order. */
+private fun rankedReviewCandidates(pack: V2CurriculumPack, learner: V2LearnerView,
+                                   candidates: List<V2CheckItem>, recentUse: Map<String, Int> = emptyMap()): List<V2CheckItem> {
     val attempts = learner.governedAttempts.orEmpty()
     // Malformed duplicate sequence numbers have no deterministic insertion order.
     val ambiguous = attempts.groupingBy { it.acceptedOrder }.eachCount().filterValues { it > 1 }.keys
@@ -486,12 +553,41 @@ internal fun recentReviewCandidate(pack: V2CurriculumPack, learner: V2LearnerVie
             attemptSuppliesStepSelection(a, pack, a.stepId) &&
             pack.item(a.itemId)?.let { a.objectiveId == it.objectiveId && a.correct == scoreCheckedResponse(it, a.selected) } == true
     }.groupBy { it.itemId }.mapValues { (_, rows) -> rows.maxBy { it.acceptedOrder } }
-    return candidates.withIndex().minWithOrNull(compareBy<IndexedValue<V2CheckItem>>(
+    return candidates.withIndex().sortedWith(compareBy<IndexedValue<V2CheckItem>>(
         { if (latest[it.value.id]?.correct == false) 0 else 1 },
+        { recentUse[it.value.id] ?: 0 },
         { latest[it.value.id]?.let { a -> if (a.correct) a.acceptedOrder else -a.acceptedOrder } ?: 0L },
         { it.index },
-    ))?.value
+    )).map { it.value }
 }
+
+/**
+ * The assignments that stand for the immediately preceding unit reviews, nearest first: the
+ * one linked by that unit's completion record, else its latest recorded assignment.
+ */
+private fun precedingUnitReviews(learner: V2LearnerView, targetUnit: Int): List<CumulativeReviewAssignment?> =
+    (1..CUMULATIVE_REVIEW_CONSECUTIVE_LIMIT).map { back ->
+        val unit = targetUnit - back
+        val linked = learner.unitReviewCompletions[unit]?.assignmentId?.takeIf { it.isNotEmpty() }
+        linked?.let { id -> learner.reviewAssignments.singleOrNull { it.id == id } }
+            ?: learner.reviewAssignments.lastOrNull { it.targetUnit == unit }
+    }
+
+/** Items already in each of the three preceding unit reviews; a fourth consecutive use is refused (A2-28). */
+internal fun cumulativeReviewRepeatExcluded(learner: V2LearnerView, targetUnit: Int): Set<String> {
+    val previous = precedingUnitReviews(learner, targetUnit)
+    if (previous.any { it == null }) return emptySet()
+    return previous.map { a -> a!!.slots.map { it.itemId }.toSet() }.reduce { x, y -> x intersect y }
+}
+
+/** True when the slots meet the A2-28 size, objective and repeat rules for this learner history. */
+internal fun cumulativeReviewSlotsMeetA228(slots: List<CumulativeReviewSlot>, availableSkills: Int,
+                                          excluded: Set<String>): Boolean =
+    slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS && slots.size <= CUMULATIVE_REVIEW_MAXIMUM_SLOTS &&
+        slots.map { it.itemId }.distinct().size == slots.size &&
+        slots.map { it.objectiveId }.distinct().size >= CUMULATIVE_REVIEW_MINIMUM_OBJECTIVES &&
+        slots.map { it.skill }.distinct().size >= minOf(2, availableSkills) &&
+        slots.none { it.itemId in excluded }
 
 /** Requires actual taught evidence; placement and bare historical completion are insufficient. */
 internal fun createUnit3ReviewAssignment(pack: V2CurriculumPack, learner: V2LearnerView,
@@ -505,13 +601,50 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
     if (id.isBlank() || boundary < 0 || pack.schemaVersion != 1 ||
         !cumulativeReviewDeclarationValid(pack, targetUnit)) return null
     val candidates = eligibleReviewCandidates(pack, learner, policy) ?: return null
-    val slots = policy.pool.zip(candidates).map { (spec, eligible) ->
-        val item = recentReviewCandidate(pack, learner, eligible) ?: return null
+    val excluded = cumulativeReviewRepeatExcluded(learner, targetUnit)
+    val previous = precedingUnitReviews(learner, targetUnit).filterNotNull()
+    val recentUse = previous.flatMap { a -> a.slots.map { it.itemId } }.groupingBy { it }.eachCount()
+    // Per objective: eligible, not barred by the repeat limit, ranked missed-first then least recently reviewed.
+    val ranked = policy.pool.indices.mapNotNull { index ->
+        val eligible = candidates[index] ?: return@mapNotNull null
+        val open = rankedReviewCandidates(pack, learner, eligible.filter { it.id !in excluded }, recentUse)
+        if (open.isEmpty()) null else Triple(index, policy.pool[index], open.toMutableList())
+    }
+    val anchors = ranked.filter { it.first < policy.anchorCount }
+    // Supplements least used in the preceding reviews first, then the most recently taught unit.
+    val supplements = ranked.filter { it.first >= policy.anchorCount }.sortedWith(compareBy(
+        { (_, spec, _) -> spec.candidateItemIds.sumOf { recentUse[it] ?: 0 } },
+        { (_, spec, _) -> -(CumulativeReviewRegistry.declaredUnit(spec.objectiveId) ?: 0) },
+        { (index, _, _) -> index },
+    ))
+    val order = anchors + supplements
+    val chosen = mutableListOf<Pair<CumulativeReviewObjectivePool, V2CheckItem>>()
+    // One item from every open anchor, then round-robin across anchors and supplements to the minimum.
+    for ((_, spec, open) in anchors) chosen += spec to open.removeAt(0)
+    while (chosen.size < CUMULATIVE_REVIEW_MINIMUM_ITEMS || chosen.map { it.first.objectiveId }.distinct().size < CUMULATIVE_REVIEW_MINIMUM_OBJECTIVES) {
+        val needObjectives = chosen.map { it.first.objectiveId }.distinct().size < CUMULATIVE_REVIEW_MINIMUM_OBJECTIVES
+        val needSkill = chosen.map { it.first.skill }.distinct().size < 2
+        val steered = if (!needObjectives && !needSkill) null else
+            order.firstOrNull { (_, spec, open) -> open.isNotEmpty() &&
+                (!needObjectives || chosen.none { it.first.objectiveId == spec.objectiveId }) &&
+                (!needSkill || chosen.none { it.first.skill == spec.skill }) }
+                ?: order.firstOrNull { (_, spec, open) -> open.isNotEmpty() &&
+                    chosen.none { it.first.objectiveId == spec.objectiveId } }
+        // Otherwise the open objective used least so far, earliest in order: a deterministic round-robin.
+        val next = steered
+            ?: order.filter { it.third.isNotEmpty() }.minByOrNull { (_, spec, _) -> chosen.count { it.first.objectiveId == spec.objectiveId } }
+            ?: break
+        chosen += next.second to next.third.removeAt(0)
+    }
+    val slots = chosen.map { (spec, item) ->
         val unit = pack.units.single { u -> u.objectives.any { it.id == spec.objectiveId } }
         val o = unit.objectives.single { it.id == spec.objectiveId }
         CumulativeReviewSlot(o.id, spec.skill.name, item.id, unit.number, V2Validator.checkItemContentDigest(item),
             reviewUnitDigest(pack, unit.number), teachingDigest(pack, o))
     }
+    val availableSkills = ranked.map { it.second.skill }.distinct().size
+    // Insufficient pools are refused: no shorter task and no repeated item stands in for A2-28.
+    if (!cumulativeReviewSlotsMeetA228(slots, availableSkills, excluded)) return null
     val a = CumulativeReviewAssignment(id, targetUnit, policy.id,
         policy.digest, if (slots.any { pack.item(it.itemId)?.isTypedResponse() == true }) typedReviewResponseRuleDigest()
             else presentedReviewResponseRuleDigest(), boundary, slots, "",
@@ -519,28 +652,33 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
     return a.copy(digest = reviewAssignmentDigest(a))
 }
 
-/** Shared taught eligibility, evaluated against the task's own registered obligation. */
+/**
+ * Shared taught eligibility, evaluated against the task's own registered obligation. Index-aligned
+ * with the policy pool. Any ineligible anchor refuses the whole task; an ineligible supplement is null.
+ */
 private fun eligibleReviewCandidates(pack: V2CurriculumPack, learner: V2LearnerView,
-                                     policy: CumulativeReviewPolicy): List<List<V2CheckItem>>? {
+                                     policy: CumulativeReviewPolicy): List<List<V2CheckItem>?>? {
     if (pack.schemaVersion != 1 || !cumulativeReviewDeclarationValid(pack, policy.targetUnit)) return null
     V2PackIdentityIndex.warm(pack)
     val target = pack.unit(policy.targetUnit) ?: return null
     if (!target.openable() || unmetCurrentPrerequisites(pack, target, learner).isNotEmpty()) return null
     val taught = currentCompletedUnitNumbers(pack, learner)
-    return policy.pool.map { (objectiveId, _, candidates, remediationStepId) ->
-        val unit = pack.units.singleOrNull { u -> u.objectives.any { it.id == objectiveId } } ?: return null
-        val o = unit.objectives.single { it.id == objectiveId }
-        if (remediationStepId != null && (remediationStepId !in o.instructionStepIds + o.remediationStepIds ||
-            pack.step(remediationStepId) == null)) return null
-        if (unit.number !in taught || !unit.openable() || unit.number >= policy.targetUnit || !o.gating ||
-            o.kind != "RECOGNITION" || o.instructionStepIds.isEmpty() || o.practiceStepIds.isEmpty() ||
-            (o.instructionStepIds + o.practiceStepIds).any { !completedStepCounts(pack, learner, it) } ||
-            objectiveState(o, learner, pack) != V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS) return null
-        val eligible = candidates.mapNotNull { pack.item(it) }.filter {
-            it.id in o.checkItemIds && it.objectiveId == o.id &&
-                (if (it.isTypedResponse()) scoreCheckedResponse(it, it.answer) == true else it.options.size >= 2 && it.answer in it.options)
+    return policy.pool.mapIndexed { index, (objectiveId, _, candidates, remediationStepId) ->
+        val eligible = run {
+            val unit = pack.units.singleOrNull { u -> u.objectives.any { it.id == objectiveId } } ?: return@run null
+            val o = unit.objectives.single { it.id == objectiveId }
+            if (remediationStepId != null && (remediationStepId !in o.instructionStepIds + o.remediationStepIds ||
+                pack.step(remediationStepId) == null)) return@run null
+            if (unit.number !in taught || !unit.openable() || unit.number >= policy.targetUnit || !o.gating ||
+                o.kind != "RECOGNITION" || o.instructionStepIds.isEmpty() || o.practiceStepIds.isEmpty() ||
+                (o.instructionStepIds + o.practiceStepIds).any { !completedStepCounts(pack, learner, it) } ||
+                objectiveState(o, learner, pack) != V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS) return@run null
+            candidates.mapNotNull { pack.item(it) }.filter {
+                it.id in o.checkItemIds && it.objectiveId == o.id &&
+                    (if (it.isTypedResponse()) scoreCheckedResponse(it, it.answer) == true else it.options.size >= 2 && it.answer in it.options)
+            }.ifEmpty { null }
         }
-        if (eligible.isEmpty()) return null
+        if (eligible == null && index < policy.anchorCount) return null
         eligible
     }
 }
@@ -550,7 +688,8 @@ internal fun reviewAssignmentEligible(pack: V2CurriculumPack, learner: V2Learner
     if (!reviewAssignmentCurrent(pack, a)) return false
     val policy = cumulativeReviewAssignmentPolicy(a) ?: return false
     val eligible = eligibleReviewCandidates(pack, learner, policy) ?: return false
-    return a.slots.zip(eligible).all { (slot, items) -> items.any { it.id == slot.itemId } }
+    val byObjective = policy.pool.map { it.objectiveId }.zip(eligible).toMap()
+    return a.slots.all { slot -> byObjective[slot.objectiveId]?.any { it.id == slot.itemId } == true }
 }
 
 internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReviewAssignment): Boolean {
@@ -562,9 +701,13 @@ internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReview
     if (!cumulativeReviewDeclarationValid(pack, a.targetUnit) || pack.schemaVersion != 1 ||
         !reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.boundary < 0 ||
         a.policyId != policy.id || a.policyDigest != policy.digest ||
-        !reviewResponseRuleSupported(a.responseRuleDigest) ||
-        a.slots.size != policy.pool.size || a.digest != reviewAssignmentDigest(a)) return false
-    return a.slots.zip(policy.pool).all { (s, spec) ->
+        !reviewResponseRuleSupported(a.responseRuleDigest) || a.digest != reviewAssignmentDigest(a)) return false
+    // A2-28 size/objective shape. Skill diversity and the repeat limit depend on the learner's
+    // open pool and history, so they are enforced when the task is allocated.
+    if (!cumulativeReviewSlotsMeetA228(a.slots, 1, emptySet())) return false
+    val specs = policy.pool.associateBy { it.objectiveId }
+    return a.slots.all { s ->
+        val spec = specs[s.objectiveId] ?: return@all false
         val unit = pack.unit(s.ownerUnit) ?: return@all false
         val o = unit.objectives.singleOrNull { it.id == s.objectiveId } ?: return@all false
         val item = pack.item(s.itemId) ?: return@all false
@@ -601,7 +744,7 @@ internal fun reviewHistoryDefects(assignments: List<CumulativeReviewAssignment>,
     val hashValid: (String) -> Boolean = { it.length == 64 && it.all { c -> c in '0'..'9' || c in 'a'..'f' } }
     for (a in assignments) {
         if (!reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.targetUnit !in 1..30 ||
-            a.boundary < 0 || a.boundary > maximum || a.policyId.isBlank() || !hashValid(a.policyDigest) || !hashValid(a.responseRuleDigest) || a.slots.size !in 2..6 || a.slots.map { it.objectiveId }.distinct().size != a.slots.size ||
+            a.boundary < 0 || a.boundary > maximum || a.policyId.isBlank() || !hashValid(a.policyDigest) || !hashValid(a.responseRuleDigest) || a.slots.size !in 2..CUMULATIVE_REVIEW_MAXIMUM_SLOTS || a.slots.map { it.itemId }.distinct().size != a.slots.size ||
             a.digest != reviewAssignmentDigest(a) || a.slots.any { it.ownerUnit !in 1 until a.targetUnit ||
                 !hashValid(it.itemDigest) || !hashValid(it.unitDigest) || !hashValid(it.teachingDigest) ||
                 it.skill.isBlank() || it.itemId.isBlank() || it.objectiveId.isBlank() }) return "invalid review assignment"

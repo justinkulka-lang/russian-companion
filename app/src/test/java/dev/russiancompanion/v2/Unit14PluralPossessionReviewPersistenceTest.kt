@@ -98,7 +98,7 @@ class Unit14PluralPossessionReviewPersistenceTest {
                 val task = open(store, p, 15)
                 assertEquals(partial15!!.reviewAssignments.single { it.targetUnit == 15 }, task)
                 assertEquals(setOf(0), completedReviewSlots(p, task, store.v2LearnerView().reviewAnswers))
-                answer(store, p, task, 1)
+                (1..task.slots.lastIndex).forEach { answer(store, p, task, it) }
                 assertTrue(advance(store, p, 15))
                 assertEquals(16, store.v2Profile().currentUnitNumber)
                 assertEquals((1..15).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
@@ -147,7 +147,7 @@ class Unit14PluralPossessionReviewPersistenceTest {
                 assertEquals(1, task.schema)
                 assertEquals(listOf("obj-u8-plural", "obj-u10-have", "obj-u13-reported"), task.slots.map { it.objectiveId })
                 assertEquals(listOf(8, 10, 13), task.slots.map { it.ownerUnit })
-                answer(store, p, task, 0); answer(store, p, task, 1)
+                task.slots.indices.forEach { answer(store, p, task, it) }
                 assertTrue(advance(store, p, 14))
             }
         } finally { deleteStore(context, name) }

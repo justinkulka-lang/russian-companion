@@ -41,7 +41,7 @@ class CumulativeReviewGateTest {
             val a = s.openUnit3CumulativeReview(p, s.learnerMutationEpoch())!!
             answer(p, s, a, 0)
             assertFalse(advancementDecision(p, p.unit(3)!!, s.v2LearnerView()).allowed)
-            answer(p, s, a, 1)
+            (1..a.slots.lastIndex).forEach { answer(p, s, a, it) }
             assertTrue(advancementDecision(p, p.unit(3)!!, s.v2LearnerView()).allowed)
             val learner=s.v2LearnerView()
             assertFalse(advancementDecision(p,p.unit(3)!!,learner.copy(bookAttestedUnits=learner.bookAttestedUnits-3)).allowed)
@@ -69,7 +69,7 @@ class CumulativeReviewGateTest {
             }
             assertFalse(advancementDecision(p, p.unit(3)!!, s.v2LearnerView()).allowed)
             assertTrue(runCatching { advance(p, s) }.isFailure)
-            answer(p, s, a, 0); answer(p, s, a, 1)
+            a.slots.indices.forEach { answer(p, s, a, it) }
             val captured = s.v2LearnerView(); assertTrue(advancementDecision(p, p.unit(3)!!, captured).allowed)
             val item = p.item(a.slots[1].itemId)!!
             assertTrue(s.answerCumulativeReview(p, a.id, 1, item.options.first { it != item.answer }, s.learnerMutationEpoch()))
@@ -83,7 +83,7 @@ class CumulativeReviewGateTest {
         val p = pack()
         ready(p).use { s ->
             val a = s.openUnit3CumulativeReview(p, s.learnerMutationEpoch())!!
-            answer(p, s, a, 0); answer(p, s, a, 1)
+            a.slots.indices.forEach { answer(p, s, a, it) }
             s.failAdvanceAfterCompletionForTests = true
             assertTrue(runCatching { advance(p, s) }.isFailure)
             assertFalse(3 in s.v2LearnerView().completedUnitNumbers); assertEquals(3, s.v2Profile().currentUnitNumber)

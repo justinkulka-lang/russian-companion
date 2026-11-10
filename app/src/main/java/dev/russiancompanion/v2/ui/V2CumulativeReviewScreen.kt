@@ -21,7 +21,7 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
         val eligible = if (a != null) reviewAssignmentEligible(pack, learner, a) else
             createCumulativeReviewAssignment(pack, learner, targetUnit, "eligibility-preview", 0) != null
         ReviewScreenState(a, eligible, a?.let { completedReviewSlots(pack, it, learner.reviewAnswers) }.orEmpty(),
-            a == null && learner.reviewAssignments.any { it.targetUnit == targetUnit }, (a?.let(::cumulativeReviewAssignmentPolicy) ?: declaredPolicy)?.pool.orEmpty().mapNotNull { spec ->
+            a == null && learner.reviewAssignments.any { it.targetUnit == targetUnit }, (a?.let(::cumulativeReviewAssignmentPolicy) ?: declaredPolicy)?.anchors.orEmpty().mapNotNull { spec ->
                 pack.units.firstOrNull { u -> u.objectives.any { it.id == spec.objectiveId } }?.number
             }.distinct().filter { it !in currentCompletedUnitNumbers(pack, learner) })
     }

@@ -91,7 +91,7 @@ class Unit6PresentReviewTest {
                 assertEquals(partial, store.governedLearnerDocument())
                 val task = open(store)
                 assertEquals(partial!!.reviewAssignments.single { it.targetUnit == 6 }, task)
-                answer(store, task, 1); answer(store, task, 2)
+                (1..task.slots.lastIndex).forEach { answer(store, task, it) }
                 assertTrue(advance(store, 6))
                 assertEquals((1..6).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 completed = store.governedLearnerDocument()

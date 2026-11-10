@@ -37,7 +37,7 @@ class Unit4CumulativeReviewTest {
             assertEquals("u3-i-gender-город", a.slots[1].itemId)
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(4)!!, s.v2LearnerView()).allowed)
-            answer(p, s, a, 1); assertTrue(advancementDecision(p, p.unit(4)!!, s.v2LearnerView()).allowed)
+            (1..a.slots.lastIndex).forEach { answer(p, s, a, it) }; assertTrue(advancementDecision(p, p.unit(4)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(4)!!, s.v2LearnerView().copy(bookAttestedUnits = setOf(1, 2, 3))).allowed)
             assertTrue(advance(p, s)); assertEquals(5, s.v2Profile().currentUnitNumber)
             val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 4 }
@@ -69,12 +69,12 @@ class Unit4CumulativeReviewTest {
                 s.v2RecordGovernedAttempt(prepareGovernedAttempt(p, i.id, i.answer, OPTIONAL_PRACTICE, practiceStepId("mixed"), "replay")!!)
             }
             assertFalse(cumulativeReviewComplete(p, s.v2LearnerView(), 4))
-            answer(p, s, a, 0); answer(p, s, a, 1)
+            a.slots.indices.forEach { answer(p, s, a, it) }
             assertTrue(advancementDecision(p, p.unit(4)!!, s.v2LearnerView()).allowed)
             answer(p, s, a, 1, correct = false)
             assertTrue(runCatching { advance(p, s) }.isFailure)
             assertFalse(s.governedLearnerDocument().unitCompletions.any { it.unitNumber == 4 })
-            answer(p, s, a, 1)
+            (1..a.slots.lastIndex).forEach { answer(p, s, a, it) }
             s.failAdvanceAfterCompletionForTests = true
             assertTrue(runCatching { advance(p, s) }.isFailure)
             assertEquals(4, s.v2Profile().currentUnitNumber)
@@ -171,7 +171,7 @@ class Unit4CumulativeReviewTest {
         for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
         ordinary(p, s, 3)
         val a = s.openUnit3CumulativeReview(p, s.learnerMutationEpoch())!!
-        answer(p, s, a, 0); answer(p, s, a, 1)
+        a.slots.indices.forEach { answer(p, s, a, it) }
         runBlocking { advanceFrom(p, s, 3) }
         ordinary(p, s, 4)
         assertEquals(setOf(1, 2, 3), currentCompletedUnitNumbers(p, s.v2LearnerView()))
