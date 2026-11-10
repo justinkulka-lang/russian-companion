@@ -26,6 +26,8 @@ import androidx.room.TypeConverters
         ExportRecordEntity::class,
         dev.russiancompanion.v2.data.V2SpacedReviewEntity::class,
         dev.russiancompanion.v2.data.V2UnitTargetEntity::class,
+        dev.russiancompanion.v2.data.V2UnitTestAttemptEntity::class,
+        dev.russiancompanion.v2.data.V2BinderSelfCheckEntity::class,
         dev.russiancompanion.v2.data.V2ReviewAssignmentEntity::class,
         dev.russiancompanion.v2.data.V2ReviewAnswerEntity::class,
         dev.russiancompanion.v2.data.V2ProfileEntity::class,
@@ -37,7 +39,7 @@ import androidx.room.TypeConverters
         dev.russiancompanion.v2.data.V2BookAttestationEntity::class,
         dev.russiancompanion.v2.data.V2UnitCompletionEntity::class,
     ],
-    version = 14,
+    version = 15,
     exportSchema = true,
 )
 @TypeConverters(StoredValueConverters::class)

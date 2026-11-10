@@ -130,6 +130,12 @@ internal data class V2ReviewAssignmentEntity(@PrimaryKey val id: String, val tar
 internal data class V2ReviewAnswerEntity(@PrimaryKey val id: String, val assignmentId: String,
     val acceptedOrder: Long, val document: String)
 
+@Entity(tableName = "v2_unit_test_attempts")
+internal data class V2UnitTestAttemptEntity(@PrimaryKey val id: String, val unitNumber: Int, val document: String)
+
+@Entity(tableName = "v2_binder_self_checks")
+internal data class V2BinderSelfCheckEntity(@PrimaryKey val unitNumber: Int, val document: String)
+
 @Entity(tableName = "v2_unit_targets")
 internal data class V2UnitTargetEntity(@PrimaryKey val unitNumber: Int, val targetEpochDay: Long)
 

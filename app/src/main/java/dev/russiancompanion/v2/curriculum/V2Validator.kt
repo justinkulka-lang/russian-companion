@@ -7,6 +7,7 @@ internal object V2Validator {
     fun validate(pack: V2CurriculumPack, repositoryRoot: File? = null): V2Validation {
         val errors = mutableListOf<String>()
         errors += reviewCopyDefects(pack.reviewCopy)
+        errors += courseworkDefects(pack)
         for (number in listOf(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30)) if (!cumulativeReviewDeclarationValid(pack, number))
             errors += "Unit $number requires the versioned cumulative-review declaration"
         for (unit in pack.units.filter { cumulativeReviewPolicy(it.number) == null }) {
@@ -580,6 +581,13 @@ internal object V2Validator {
                     *rule.cumulativeReviewPolicyId?.let { arrayOf("cumulativeReviewPolicyId" to canonStr(it)) }.orEmpty(),
                 )
             } ?: "null"),
+            // Bound only when present, so units without these assignments keep their identity.
+            *unit.binderTask?.let { task -> arrayOf("binderTask" to canonObj(
+                "id" to canonStr(task.id), "prompt" to canonStr(task.prompt),
+                "objectiveIds" to canonArr(task.objectiveIds.map(::canonStr)),
+                "modelAnswer" to canonStrOrNull(task.modelAnswer))) }.orEmpty(),
+            *unit.tutorTask?.let { task -> arrayOf("tutorTask" to canonObj(
+                "id" to canonStr(task.id), "bring" to canonStr(task.bring))) }.orEmpty(),
         )
     }
 

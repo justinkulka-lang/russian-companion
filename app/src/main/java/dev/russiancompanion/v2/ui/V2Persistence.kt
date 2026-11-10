@@ -27,6 +27,10 @@ internal interface V2Persistence {
     suspend fun attestBook(unitNumber: Int, recordedAt: String)
     /** Sets or clears (null) the learner's own target date for a unit (A2-31). */
     suspend fun setUnitTarget(unitNumber: Int, targetEpochDay: Long?) { error("Target persistence unavailable") }
+    suspend fun startUnitTest(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, unitNumber: Int) { error("Unit test persistence unavailable") }
+    suspend fun answerUnitTest(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, attemptId: String, index: Int, selected: String) { error("Unit test persistence unavailable") }
+    suspend fun submitUnitTest(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, attemptId: String) { error("Unit test persistence unavailable") }
+    suspend fun recordBinderSelfCheck(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, unitNumber: Int, recordedAt: String) { error("Binder persistence unavailable") }
     suspend fun completeUnit(unitNumber: Int, recordedAt: String)
     suspend fun advanceUnit(
         unitNumber: Int,
@@ -157,6 +161,26 @@ internal class StoreV2Persistence(private val store: LocalStore, private val pac
     override suspend fun setUnitTarget(unitNumber: Int, targetEpochDay: Long?) {
         val epoch = coroutineContext[CapturedLearnerEpoch]?.epoch ?: store.learnerMutationEpoch()
         if (!store.v2SetUnitTargetIfCurrent(epoch, unitNumber, targetEpochDay)) error("stale or invalid target date")
+    }
+
+    override suspend fun startUnitTest(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, unitNumber: Int) {
+        val epoch = coroutineContext[CapturedLearnerEpoch]?.epoch ?: store.learnerMutationEpoch()
+        store.awaitStore { store.startUnitTest(pack, unitNumber, epoch) } ?: error("Unit test unavailable or the learner changed")
+    }
+
+    override suspend fun answerUnitTest(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, attemptId: String, index: Int, selected: String) {
+        val epoch = coroutineContext[CapturedLearnerEpoch]?.epoch ?: store.learnerMutationEpoch()
+        if (!store.awaitStore { store.answerUnitTest(pack, attemptId, index, selected, epoch) }) error("stale unit-test answer")
+    }
+
+    override suspend fun submitUnitTest(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, attemptId: String) {
+        val epoch = coroutineContext[CapturedLearnerEpoch]?.epoch ?: store.learnerMutationEpoch()
+        store.awaitStore { store.submitUnitTest(pack, attemptId, epoch) } ?: error("Unit test is incomplete or stale")
+    }
+
+    override suspend fun recordBinderSelfCheck(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, unitNumber: Int, recordedAt: String) {
+        val epoch = coroutineContext[CapturedLearnerEpoch]?.epoch ?: store.learnerMutationEpoch()
+        if (!store.awaitStore { store.recordBinderSelfCheck(pack, unitNumber, recordedAt, epoch) }) error("stale binder self-check")
     }
 
     override suspend fun completeUnit(unitNumber: Int, recordedAt: String) {

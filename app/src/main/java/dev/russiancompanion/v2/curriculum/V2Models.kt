@@ -370,7 +370,23 @@ internal data class V2Unit(
     val objectives: List<V2Objective> = emptyList(),
     val sessions: List<V2Session> = emptyList(),
     val advancement: V2AdvancementRule? = null,
+    /** A2-32: the unit's own binder assignment; the result is SELF_CHECK, never demonstrated ability. */
+    val binderTask: V2BinderTask? = null,
+    /** A2-33: optional; names the specific thing to bring to a tutor. */
+    val tutorTask: V2TutorTask? = null,
 )
+
+@Serializable
+internal data class V2BinderTask(
+    val id: String,
+    val prompt: String,
+    val objectiveIds: List<String>,
+    /** Shown only after the learner records their own attempt, for comparison. */
+    val modelAnswer: String? = null,
+)
+
+@Serializable
+internal data class V2TutorTask(val id: String, val bring: String)
 
 @Serializable
 internal data class V2Objective(

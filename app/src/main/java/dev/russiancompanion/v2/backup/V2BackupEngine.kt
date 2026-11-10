@@ -98,6 +98,12 @@ private fun learnerRecords(document: GovernedLearnerDocument): Map<String, Strin
     document.reviewAnswers.forEach {
         records["review-answer:${it.id}"] = backupJson.encodeToString(CumulativeReviewAnswer.serializer(), it)
     }
+    document.unitTestAttempts.forEach {
+        records["unit-test:${it.id}"] = backupJson.encodeToString(dev.russiancompanion.v2.curriculum.V2UnitTestAttempt.serializer(), it)
+    }
+    document.binderSelfChecks.forEach {
+        records["binder-self-check:${it.unitNumber}"] = backupJson.encodeToString(dev.russiancompanion.v2.curriculum.V2BinderSelfCheck.serializer(), it)
+    }
     document.unitTargets.forEach {
         records["unit-target:${it.unitNumber}"] = backupJson.encodeToString(dev.russiancompanion.v2.curriculum.V2UnitTarget.serializer(), it)
     }

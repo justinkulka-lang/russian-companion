@@ -20,8 +20,8 @@ import java.util.zip.ZipOutputStream
 import dev.russiancompanion.v2.curriculum.LEGACY_UNVERIFIED
 import dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY
 
-internal const val BACKUP_FORMAT_VERSION = 5
-internal const val BACKUP_SCHEMA_VERSION = 5
+internal const val BACKUP_FORMAT_VERSION = 6
+internal const val BACKUP_SCHEMA_VERSION = 6
 internal const val BACKUP_LEARNER_ENTRY = "learner.json"
 internal const val BACKUP_MANIFEST_ENTRY = "manifest.json"
 
@@ -70,6 +70,8 @@ internal data class BackupManifest(
     val reviewAnswerCount: Int = 0,
     val spacedReviewCount: Int = 0,
     val unitTargetCount: Int = 0,
+    val unitTestAttemptCount: Int = 0,
+    val binderSelfCheckCount: Int = 0,
 )
 
 @Serializable
@@ -101,6 +103,8 @@ internal data class GovernedLearnerDocument(
     val reviewAnswers: List<CumulativeReviewAnswer> = emptyList(),
     val spacedReviews: List<dev.russiancompanion.v2.curriculum.V2SpacedReviewRecord> = emptyList(),
     val unitTargets: List<dev.russiancompanion.v2.curriculum.V2UnitTarget> = emptyList(),
+    val unitTestAttempts: List<dev.russiancompanion.v2.curriculum.V2UnitTestAttempt> = emptyList(),
+    val binderSelfChecks: List<dev.russiancompanion.v2.curriculum.V2BinderSelfCheck> = emptyList(),
 )
 
 @Serializable
@@ -543,6 +547,8 @@ internal fun writeGovernedBackup(
         reviewAnswerCount = document.reviewAnswers.size,
         spacedReviewCount = document.spacedReviews.size,
         unitTargetCount = document.unitTargets.size,
+        unitTestAttemptCount = document.unitTestAttempts.size,
+        binderSelfCheckCount = document.binderSelfChecks.size,
     )
     val manifestBytes = backupJson.encodeToString(BackupManifest.serializer(), manifest).encodeToByteArray()
     account(manifestBytes.size.toLong(), limits.manifestBytes)
@@ -720,6 +726,8 @@ private fun readBoundedBackup(
         }
         if (spacedReviewBackupDefects(document) != null) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         if (dev.russiancompanion.v2.curriculum.unitTargetsDefect(document.unitTargets) != null) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        if (dev.russiancompanion.v2.curriculum.unitTestAttemptsDefect(document.unitTestAttempts) != null ||
+            dev.russiancompanion.v2.curriculum.binderSelfChecksDefect(document.binderSelfChecks) != null) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         if (completionActivationDefects(document) != null) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         if (reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
@@ -729,6 +737,8 @@ private fun readBoundedBackup(
             document.reviewAnswers.size != manifest.reviewAnswerCount ||
             document.spacedReviews.size != manifest.spacedReviewCount ||
             document.unitTargets.size != manifest.unitTargetCount ||
+            document.unitTestAttempts.size != manifest.unitTestAttemptCount ||
+            document.binderSelfChecks.size != manifest.binderSelfCheckCount ||
             document.attempts.size != manifest.attemptCount ||
             document.notes.size != manifest.noteCount ||
             document.bookmarks.size != manifest.bookmarkCount ||

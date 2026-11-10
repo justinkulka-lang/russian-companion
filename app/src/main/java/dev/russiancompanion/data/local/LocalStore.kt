@@ -882,6 +882,8 @@ internal class LocalStore private constructor(
             unitReviewCompletions = dao.unitCompletions().associate { it.unitNumber to CumulativeUnitCompletion(
                 it.preReviewActivation, it.reviewPolicyDigest, it.reviewAssignmentId, it.reviewCompletionOrder) },
             unitTargets = readUnitTargets().associate { it.unitNumber to it.targetEpochDay },
+            unitTestAttempts = readUnitTestAttempts(),
+            binderSelfChecks = readBinderSelfChecks(),
         )
     }
 
@@ -1327,6 +1329,81 @@ internal class LocalStore private constructor(
         return true
     }
 
+    private fun readUnitTestAttempts(): List<V2UnitTestAttempt> = database.v2().unitTestAttempts().map {
+        backupJson.decodeFromString(V2UnitTestAttempt.serializer(), it.document)
+    }
+
+    private fun readBinderSelfChecks(): List<V2BinderSelfCheck> = database.v2().binderSelfChecks().map {
+        backupJson.decodeFromString(V2BinderSelfCheck.serializer(), it.document)
+    }
+
+    private fun writeUnitTestAttempt(attempt: V2UnitTestAttempt) = database.v2().upsertUnitTestAttempt(
+        dev.russiancompanion.v2.data.V2UnitTestAttemptEntity(attempt.id, attempt.unitNumber,
+            backupJson.encodeToString(V2UnitTestAttempt.serializer(), attempt)))
+
+    /** Opens the unit's current test, reusing an open current attempt; a stale open attempt is discarded. */
+    internal fun startUnitTest(pack: V2CurriculumPack, unitNumber: Int, epoch: Long): V2UnitTestAttempt? = call {
+        if (!learnerMutationCurrent(epoch)) return@call null
+        val unit = pack.unit(unitNumber) ?: return@call null
+        val plan = unitTestPlan(pack, unit) ?: return@call null
+        var result: V2UnitTestAttempt? = null
+        database.runInTransaction {
+            val open = readUnitTestAttempts().filter { it.unitNumber == unitNumber && it.submittedOrder == 0L }
+            val current = open.singleOrNull { unitTestAttemptCurrent(pack, it) }
+            if (current != null) { result = current; return@runInTransaction }
+            open.forEach { database.v2().deleteUnitTestAttempt(it.id) }
+            val attempt = V2UnitTestAttempt(java.util.UUID.randomUUID().toString(), unitNumber, plan.digest, plan.itemIds, plan.passMarkPercent)
+            writeUnitTestAttempt(attempt)
+            result = attempt
+        }
+        result
+    }
+
+    /** Records or replaces one answer on an open, current attempt; unscorable input is refused. */
+    internal fun answerUnitTest(pack: V2CurriculumPack, attemptId: String, index: Int, selected: String, epoch: Long): Boolean = call {
+        if (!learnerMutationCurrent(epoch)) return@call false
+        var saved = false
+        database.runInTransaction {
+            val attempt = readUnitTestAttempts().singleOrNull { it.id == attemptId } ?: return@runInTransaction
+            if (attempt.submittedOrder != 0L || !unitTestAttemptCurrent(pack, attempt) || index !in attempt.itemIds.indices) return@runInTransaction
+            val item = pack.item(attempt.itemIds[index]) ?: return@runInTransaction
+            if (selected.isBlank() || scoreCheckedResponse(item, selected) == null) return@runInTransaction
+            writeUnitTestAttempt(attempt.copy(answers = (attempt.answers.filter { it.index != index } +
+                V2UnitTestAnswer(index, selected)).sortedBy { it.index }))
+            saved = true
+        }
+        saved
+    }
+
+    /** Scores a fully answered open attempt once; a submitted attempt is never changed. */
+    internal fun submitUnitTest(pack: V2CurriculumPack, attemptId: String, epoch: Long): V2UnitTestAttempt? = call {
+        if (!learnerMutationCurrent(epoch)) return@call null
+        var result: V2UnitTestAttempt? = null
+        database.runInTransaction {
+            val all = readUnitTestAttempts()
+            val attempt = all.singleOrNull { it.id == attemptId } ?: return@runInTransaction
+            if (attempt.submittedOrder != 0L || !unitTestAttemptCurrent(pack, attempt) ||
+                attempt.answers.map { it.index }.toSet() != attempt.itemIds.indices.toSet()) return@runInTransaction
+            val order = (all.maxOfOrNull { it.submittedOrder } ?: 0L) + 1
+            val correct = scoreUnitTest(pack, attempt)
+            val submitted = attempt.copy(submittedOrder = order, correctCount = correct,
+                passed = unitTestPasses(correct, attempt.itemIds.size, attempt.passMarkPercent))
+            writeUnitTestAttempt(submitted)
+            result = submitted
+        }
+        result
+    }
+
+    /** The learner's own record that they did and compared the binder task (SELF_CHECK). */
+    internal fun recordBinderSelfCheck(pack: V2CurriculumPack, unitNumber: Int, recordedAtLocal: String, epoch: Long): Boolean = call {
+        if (!learnerMutationCurrent(epoch) || recordedAtLocal.isBlank()) return@call false
+        val task = pack.unit(unitNumber)?.binderTask ?: return@call false
+        val check = V2BinderSelfCheck(unitNumber, binderTaskDigest(task), recordedAtLocal)
+        database.v2().upsertBinderSelfCheck(dev.russiancompanion.v2.data.V2BinderSelfCheckEntity(unitNumber,
+            backupJson.encodeToString(V2BinderSelfCheck.serializer(), check)))
+        true
+    }
+
     private fun readUnitTargets(): List<V2UnitTarget> =
         database.v2().unitTargets().map { V2UnitTarget(it.unitNumber, it.targetEpochDay) }
 
@@ -1553,7 +1630,9 @@ internal class LocalStore private constructor(
             reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null ||
             acceptedOrderDefects(document.attempts) != null ||
             dev.russiancompanion.v2.backup.spacedReviewBackupDefects(document) != null ||
-            unitTargetsDefect(document.unitTargets) != null) return@call GovernedReplaceOutcome.UNCHANGED
+            unitTargetsDefect(document.unitTargets) != null ||
+            unitTestAttemptsDefect(document.unitTestAttempts) != null ||
+            binderSelfChecksDefect(document.binderSelfChecks) != null) return@call GovernedReplaceOutcome.UNCHANGED
         val inputs = recordings.map { it.file }
         BackupWorkRegistry.holdRecordings(inputs)
         try {
@@ -1707,6 +1786,8 @@ internal class LocalStore private constructor(
         users.deleteAllExports()
         curriculum.deleteSpacedReviews()
         curriculum.deleteUnitTargets()
+        curriculum.deleteUnitTestAttempts()
+        curriculum.deleteBinderSelfChecks()
         curriculum.deleteReviewAnswers()
         curriculum.deleteReviewAssignments()
         curriculum.deleteAttempts()
@@ -1802,6 +1883,9 @@ internal class LocalStore private constructor(
         }
         document.reviewAssignments.forEach { curriculum.insertReviewAssignment(V2ReviewAssignmentEntity(it.id, it.targetUnit, backupJson.encodeToString(CumulativeReviewAssignment.serializer(), it))) }
         document.reviewAnswers.forEach { curriculum.insertReviewAnswer(V2ReviewAnswerEntity(it.id, it.assignmentId, it.acceptedOrder, backupJson.encodeToString(CumulativeReviewAnswer.serializer(), it))) }
+        document.unitTestAttempts.forEach { writeUnitTestAttempt(it) }
+        document.binderSelfChecks.forEach { curriculum.upsertBinderSelfCheck(dev.russiancompanion.v2.data.V2BinderSelfCheckEntity(it.unitNumber,
+            backupJson.encodeToString(V2BinderSelfCheck.serializer(), it))) }
         document.unitTargets.forEach { curriculum.upsertUnitTarget(dev.russiancompanion.v2.data.V2UnitTargetEntity(it.unitNumber, it.targetEpochDay)) }
         document.spacedReviews.forEach { record -> database.v2().upsertSpacedReview(
             dev.russiancompanion.v2.data.V2SpacedReviewEntity(record.itemId, backupJson.encodeToString(V2SpacedReviewRecord.serializer(), record))) }
@@ -2208,6 +2292,8 @@ internal class LocalStore private constructor(
             reviewAnswers = readReviewAnswers(),
             spacedReviews = readSpacedReviews(),
             unitTargets = readUnitTargets(),
+            unitTestAttempts = readUnitTestAttempts(),
+            binderSelfChecks = readBinderSelfChecks(),
             profile = BackupProfile(
                 id = profile.id,
                 onboardingCompleted = profile.onboardingCompleted,
@@ -2363,7 +2449,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_11_12, MIGRATION_12_13, MIGRATION_13_14)
+                .addMigrations(MIGRATION_11_12, MIGRATION_12_13, MIGRATION_13_14, MIGRATION_14_15)
                 // Pre-acceptance databases before v11 have no supported learner schema.
                 .fallbackToDestructiveMigrationFrom(true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .build()
@@ -2383,7 +2469,7 @@ internal class LocalStore private constructor(
         fun openNamed(context: Context, name: String): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, name)
-                .addMigrations(MIGRATION_11_12, MIGRATION_12_13, MIGRATION_13_14)
+                .addMigrations(MIGRATION_11_12, MIGRATION_12_13, MIGRATION_13_14, MIGRATION_14_15)
                 // Pre-acceptance databases before v11 have no supported learner schema.
                 .fallbackToDestructiveMigrationFrom(true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .build()

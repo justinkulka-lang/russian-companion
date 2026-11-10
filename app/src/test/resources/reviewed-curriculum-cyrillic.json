@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "2af190dedb1af64301bb4db7efc0118268d758484fd63a4fa75c8103beb0224d",
+      "sha256": "0b94c9b27487ce29ae387800489db13cda1b4f7c95b7b9f900b7fc1c8ef97764",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3302,6 +3302,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Binds optional named book exercises (A2-30) into the edition-mapping identity only when present. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T12-b",
+      "previousRecordedSha256": "2af190dedb1af64301bb4db7efc0118268d758484fd63a4fa75c8103beb0224d",
+      "sha256": "0b94c9b27487ce29ae387800489db13cda1b4f7c95b7b9f900b7fc1c8ef97764",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Adds the validator hook for optional binder and tutor task declarations (A2-32, A2-33) and binds them into unit identity only when present. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

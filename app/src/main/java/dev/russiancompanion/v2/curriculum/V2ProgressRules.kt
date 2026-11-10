@@ -33,6 +33,10 @@ internal data class V2LearnerView(
     val unitReviewCompletions: Map<Int, CumulativeUnitCompletion> = emptyMap(),
     /** Learner-set target dates (A2-31), unit number to epoch day. */
     val unitTargets: Map<Int, Long> = emptyMap(),
+    /** A2-34 unit-test attempts, open and submitted. */
+    val unitTestAttempts: List<V2UnitTestAttempt> = emptyList(),
+    /** A2-32 binder self-checks, never demonstrated ability. */
+    val binderSelfChecks: List<V2BinderSelfCheck> = emptyList(),
 )
 
 internal data class V2ContinueTarget(

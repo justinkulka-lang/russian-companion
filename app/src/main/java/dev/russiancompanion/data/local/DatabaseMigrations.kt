@@ -45,3 +45,14 @@ internal val MIGRATION_13_14 = object : Migration(13, 14) {
         db.execSQL("CREATE TABLE IF NOT EXISTS `v2_unit_targets` (`unitNumber` INTEGER NOT NULL, `targetEpochDay` INTEGER NOT NULL, PRIMARY KEY(`unitNumber`))")
     }
 }
+
+/** Unit-test attempts and binder self-checks (A2-32, A2-34) start empty with fresh development learner data. */
+internal val MIGRATION_14_15 = object : Migration(14, 15) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        MIGRATION_11_12.migrate(db)
+        db.execSQL("DELETE FROM `v2_spaced_reviews`")
+        db.execSQL("DELETE FROM `v2_unit_targets`")
+        db.execSQL("CREATE TABLE IF NOT EXISTS `v2_unit_test_attempts` (`id` TEXT NOT NULL, `unitNumber` INTEGER NOT NULL, `document` TEXT NOT NULL, PRIMARY KEY(`id`))")
+        db.execSQL("CREATE TABLE IF NOT EXISTS `v2_binder_self_checks` (`unitNumber` INTEGER NOT NULL, `document` TEXT NOT NULL, PRIMARY KEY(`unitNumber`))")
+    }
+}

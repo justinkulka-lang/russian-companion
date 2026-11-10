@@ -372,6 +372,26 @@ internal fun V2App(
                         }
                         Unit
                     },
+                    onStartUnitTest = { unit ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("unit-test:start:$unit") { withCapturedLearnerEpoch(epoch) { api.startUnitTest(pack, unit) } }
+                        Unit
+                    },
+                    onUnitTestAnswer = { attempt, index, value ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("unit-test:answer:$attempt:$index") { withCapturedLearnerEpoch(epoch) { api.answerUnitTest(pack, attempt, index, value) } }
+                        Unit
+                    },
+                    onSubmitUnitTest = { attempt ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("unit-test:submit:$attempt") { withCapturedLearnerEpoch(epoch) { api.submitUnitTest(pack, attempt) } }
+                        Unit
+                    },
+                    onBinderSelfCheck = { unit ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("binder:$unit") { withCapturedLearnerEpoch(epoch) { api.recordBinderSelfCheck(pack, unit, recordedAt()) } }
+                        Unit
+                    },
                     onSetUnitTarget = { unit, day ->
                         val epoch = store.learnerMutationEpoch()
                         writes.submit("target:$unit") {

@@ -8,6 +8,27 @@ import androidx.room.Update
 
 @Dao
 internal interface V2Dao {
+    @Query("SELECT * FROM v2_unit_test_attempts ORDER BY unitNumber, id")
+    fun unitTestAttempts(): List<V2UnitTestAttemptEntity>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun upsertUnitTestAttempt(attempt: V2UnitTestAttemptEntity)
+
+    @Query("DELETE FROM v2_unit_test_attempts")
+    fun deleteUnitTestAttempts()
+
+    @Query("DELETE FROM v2_unit_test_attempts WHERE id = :id")
+    fun deleteUnitTestAttempt(id: String)
+
+    @Query("SELECT * FROM v2_binder_self_checks ORDER BY unitNumber")
+    fun binderSelfChecks(): List<V2BinderSelfCheckEntity>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun upsertBinderSelfCheck(check: V2BinderSelfCheckEntity)
+
+    @Query("DELETE FROM v2_binder_self_checks")
+    fun deleteBinderSelfChecks()
+
     @Query("SELECT * FROM v2_unit_targets ORDER BY unitNumber")
     fun unitTargets(): List<V2UnitTargetEntity>
 

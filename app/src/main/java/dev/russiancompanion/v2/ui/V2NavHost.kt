@@ -34,6 +34,10 @@ internal fun V2NavHost(
     onTutor: (String, String) -> Unit,
     onAttestBook: (Int) -> Unit,
     onSetUnitTarget: (Int, Long?) -> Unit = { _, _ -> },
+    onStartUnitTest: (Int) -> Unit = {},
+    onUnitTestAnswer: (String, Int, String) -> Unit = { _, _, _ -> },
+    onSubmitUnitTest: (String) -> Unit = {},
+    onBinderSelfCheck: (Int) -> Unit = {},
     onAdvance: (Int) -> Unit,
     onResumeAt: (String, Int) -> Unit,
     onTransliteration: (Boolean) -> Unit,
@@ -125,7 +129,21 @@ internal fun V2NavHost(
                 onAttestBook = onAttestBook,
                 onAdvance = onAdvance,
                 onOpenCumulativeReview = { navController.navigate(V2CumulativeReviewRoute(number)) },
+                onOpenUnitTest = { navController.navigate(V2UnitTestRoute(number)) },
+                onBinderSelfCheck = { onBinderSelfCheck(number) },
             )
+        }
+        composable<V2UnitTestRoute> { entry ->
+            val number = entry.toRoute<V2UnitTestRoute>().unitNumber
+            val pack = state.pack ?: return@composable
+            val learner = state.learner ?: return@composable
+            V2UnitTestScreen(pack, learner, number, pendingKeys.any { it.startsWith("unit-test:") },
+                onBack = { navController.popBackStack() }, onTab = ::goTab,
+                onStart = { onStartUnitTest(number) }, onAnswer = onUnitTestAnswer, onSubmit = onSubmitUnitTest,
+                onRemediate = { step ->
+                    val located = pack.step(step) ?: return@V2UnitTestScreen
+                    navController.navigate(V2SessionRoute(located.first.id, located.first.steps.indexOf(located.second), remedial = true))
+                })
         }
         composable<V2CumulativeReviewRoute> { entry ->
             val targetUnit = entry.toRoute<V2CumulativeReviewRoute>().unitNumber

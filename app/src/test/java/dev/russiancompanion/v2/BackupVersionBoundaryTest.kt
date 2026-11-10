@@ -37,7 +37,7 @@ class BackupVersionBoundaryTest {
     @Test fun obsoleteFutureAndMismatchedVersionsAreRejectedWithCorrectHashes() {
         withCurrentDocument { document ->
             val valid = archive(document)
-            val unsupported = listOf(Int.MIN_VALUE, 0, 1, 2, 3, 4, BACKUP_FORMAT_VERSION + 1, Int.MAX_VALUE)
+            val unsupported = listOf(Int.MIN_VALUE, 0, 1, 2, 3, 4, 5, BACKUP_FORMAT_VERSION + 1, Int.MAX_VALUE)
             for (version in unsupported) {
                 val combinations = listOf(
                     version to BACKUP_SCHEMA_VERSION,

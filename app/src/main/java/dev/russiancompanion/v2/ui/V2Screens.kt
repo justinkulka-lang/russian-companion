@@ -409,6 +409,8 @@ internal fun V2UnitScreen(
     onAttestBook: (Int) -> Unit,
     onAdvance: (Int) -> Unit,
     onOpenCumulativeReview: () -> Unit = {},
+    onOpenUnitTest: () -> Unit = {},
+    onBinderSelfCheck: () -> Unit = {},
 ) {
     val unit = pack.unit(unitNumber) ?: return
     val state = unitState(pack, unit, learner)
@@ -481,6 +483,8 @@ internal fun V2UnitScreen(
             )
             V2PrimaryButton("Advance if requirements are met", { onAdvance(unit.number) }, enabled = decision.allowed, tag = "v2-advance")
         }
+        Spacer(Modifier.height(12.dp))
+        V2UnitCourseworkSection(pack, learner, unit, onOpenUnitTest, onBinderSelfCheck)
     }
 }
 

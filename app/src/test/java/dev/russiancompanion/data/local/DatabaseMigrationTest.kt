@@ -23,7 +23,7 @@ class DatabaseMigrationTest {
         (context.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
         val root = generateSequence(File(System.getProperty("user.dir"))) { it.parentFile }
             .first { File(it, "settings.gradle.kts").isFile }
-        for (version in 1..13) {
+        for (version in 1..14) {
             val name = "dev-reset-$version-${System.nanoTime()}.db"
             val schema = JSONObject(File(root,
                 "app/schemas/dev.russiancompanion.data.local.AppDatabase/$version.json").readText())
@@ -73,7 +73,7 @@ class DatabaseMigrationTest {
                 }
                 android.database.sqlite.SQLiteDatabase.openDatabase(context.getDatabasePath(name).path,
                     null, android.database.sqlite.SQLiteDatabase.OPEN_READONLY).use { db ->
-                    assertEquals(14, db.version)
+                    assertEquals(15, db.version)
                     db.rawQuery("SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='retired_dev_rows'",
                         null).use { cursor ->
                         assertTrue(cursor.moveToFirst())

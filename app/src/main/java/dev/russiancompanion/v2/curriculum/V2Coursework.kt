@@ -90,7 +90,13 @@ internal fun unitAssignmentChecklist(pack: V2CurriculumPack, unit: V2Unit, learn
             if (done) V2AssignmentStatus.DONE else V2AssignmentStatus.TODO)
     }
     val binder = unit.sessions.flatMap { it.steps }.filter { it.kind == "BINDER" }
-    if (binder.isEmpty()) {
+    val binderTask = unit.binderTask
+    if (binderTask != null) {
+        val checked = learner.binderSelfChecks.any { it.unitNumber == unit.number && binderSelfCheckCurrent(pack, it) }
+        entries += V2AssignmentEntry("binder-task-${binderTask.id}", V2AssignmentKind.BINDER_TASK, "Binder task: ${binderTask.prompt}",
+            if (checked) V2AssignmentStatus.DONE else V2AssignmentStatus.TODO,
+            "Self-check only; not shown as demonstrated ability.")
+    } else if (binder.isEmpty()) {
         entries += V2AssignmentEntry("binder", V2AssignmentKind.BINDER_TASK, "Binder task",
             V2AssignmentStatus.NOT_ASSIGNED, "No binder task is assigned for this unit yet.")
     } else binder.forEach { step ->
