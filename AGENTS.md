@@ -24,6 +24,7 @@ NEXT_TASK.md and the old checkpoint notes are retired and archived (A2-41). Do n
 - Evidence is limited to A2-12 bundles. Do not create baseline captures, conserved-binding inventories or interrupted-run folders.
 - Report blockers. Do not narrow a requirement to make a task pass.
 - No user-testing tasks before the final audit and independent verification are DONE.
+- Audio needs are tracked only in docs/audio/. After any content change, re-run python3 -I catalog/build_audio_manifest.py app/src/main/assets/content/v2-curriculum.json app/src/main/assets/content/bundled-content.json docs/audio/audio-manifest.csv and commit the updated manifest.
 
 ## Roles
 
