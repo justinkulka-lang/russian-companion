@@ -26,12 +26,14 @@ class UnitTestAndBinderTest {
 
     @Test fun currentPackReportsWhyNoUnitTestExistsInsteadOfNarrowingTheRule() {
         val p = pack()
+        // T14-b: Units 1-2 carry typed items (owner decision), so each has a unit test meeting A2-34.
         for (unit in p.units) {
-            assertNull(unitTestPlan(p, unit))
-            assertNotNull(unitTestUnavailableReason(p, unit))
+            if (unit.number <= 2) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
+            else { assertNull(unitTestPlan(p, unit)); assertNotNull(unitTestUnavailableReason(p, unit)) }
         }
-        // T14-a: Unit 2 has 20 closed checked items and no typed items.
-        assertTrue(unitTestUnavailableReason(p, p.unit(2)!!)!!.contains("0 typed items"))
+        unitTestPlan(p, p.unit(1)!!)!!.let { assertEquals(10, it.itemIds.size); assertEquals(3, it.typedCount) }
+        unitTestPlan(p, p.unit(2)!!)!!.let { assertEquals(16, it.itemIds.size); assertEquals(5, it.typedCount) }
+        assertTrue(unitTestUnavailableReason(p, p.unit(3)!!)!!.contains("0 typed items"))
         assertTrue(unitTestUnavailableReason(p, p.unit(4)!!)!!.contains("0 typed items"))
         val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })
         assertTrue(unitTestUnavailableReason(few, few.unit(2)!!)!!.contains("at least 10 are needed"))

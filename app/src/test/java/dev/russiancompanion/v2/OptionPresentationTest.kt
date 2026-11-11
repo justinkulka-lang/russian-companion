@@ -19,11 +19,12 @@ class OptionPresentationTest {
     @Test fun currentCorpusPreservesEveryOptionAndDispersesCorrectPositionsInAllThreeRoutes() {
         val p = OptionPresentationFixture.pack
         // CC015 adds four guided targets; CC012 later changes exactly four availability items.
-        // T14-a appends 18 Units 1-2 items after them (17 checked print pairs and one guided item).
-        assertEquals(644, p.items.size)
+        // T14-a appends 18 Units 1-2 items after them (17 checked print pairs and one guided item);
+        // T14-b adds nine typed items with no options (eight checked, one guided).
+        assertEquals(653, p.items.size)
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
             p.items.drop(622).take(4).map { it.id }.toSet())
-        assertEquals(567, p.items.count { it.options.first() == it.answer })
+        assertEquals(562, p.items.count { it.options.firstOrNull() == it.answer })
         val routes = p.units.flatMap { it.sessions }.flatMap { it.steps }
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
         for ((name, displays) in listOf(
@@ -37,8 +38,8 @@ class OptionPresentationTest {
             "review" to p.items.map { it to presentedOptions(it, reviewOptionContext("corpus-distribution", 0)) },
         )) {
             if (name == "required") {
-                assertEquals(446, displays.size)
-                assertEquals(385, displays.count { (item, _) -> item.options.first() == item.answer })
+                assertEquals(454, displays.size)
+                assertEquals(380, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
             }
             displays.forEach { (item, order) ->
                 assertEquals(item.id, item.options.sorted(), order.sorted())

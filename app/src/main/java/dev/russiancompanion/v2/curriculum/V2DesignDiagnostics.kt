@@ -119,7 +119,8 @@ internal object V2DesignDiagnostics {
                 if (shownCue.isNotEmpty() && item.options.any { it != item.answer && text(it) == shownCue }) add("CUE_AS_DISTRACTOR",
                     V2DesignSignalKind.REVIEW_SIGNAL, unit.number, listOf(item.id), "options",
                     "A distractor exactly repeats the visible cue. Inspect whether rejecting the cue alone gives away the answer.")
-                if (item.options.size < 3) add("FEWER_THAN_THREE_OPTIONS", V2DesignSignalKind.REVIEW_SIGNAL,
+                // Typed items have no options by design (A2-22); the option-count review applies to closed choices.
+                if (!item.isTypedResponse() && item.options.size < 3) add("FEWER_THAN_THREE_OPTIONS", V2DesignSignalKind.REVIEW_SIGNAL,
                     unit.number, listOf(item.id), "options", "Review diagnostic value and a bounded justification; option count alone does not prove invalidity.")
                 if (!hasCyrillic(item.prompt + shownCue + item.options.joinToString(" "))) add("NO_CYRILLIC_IN_REQUIRED_DISPLAY",
                     V2DesignSignalKind.REVIEW_SIGNAL, unit.number, listOf(item.id), "prompt/cue/options",

@@ -40,7 +40,8 @@ class TypedResponseIntegrationTest {
             feedback = "Compare with the taught response.", distractorRationales = emptyList(), assessment = null,
             typedAnswerKey = reviewed) else it })
     }
-    private fun typed(p: V2CurriculumPack) = p.items.single { it.isTypedResponse() }
+    // The course itself now has typed items (T14-b); the fixture converts one more item and tracks it by key id.
+    private fun typed(p: V2CurriculumPack) = p.items.single { it.typedAnswerKey?.id == "english-fixture-key" }
     private fun check(p: V2CurriculumPack) = p.units.flatMap { it.sessions }.flatMap { it.steps }
         .first { it.kind == "CHECK" && typed(p).id in it.itemIds }
     private fun write(p: V2CurriculumPack, value: String, role: String = PRESCRIBED_CHECK, time: String = "fixed") =
@@ -133,7 +134,7 @@ class TypedResponseIntegrationTest {
     private fun retryOrReveal(reveal: Boolean) {
         // Primary scoring answer differs from the first accepted answer, which Show answer must use.
         val base = fixture()
-        val p = base.copy(items = base.items.map { if (it.isTypedResponse()) it.copy(answer = "Hi") else it })
+        val p = base.copy(items = base.items.map { if (it.typedAnswerKey?.id == "english-fixture-key") it.copy(answer = "Hi") else it })
         val item = typed(p); val step = check(p)
         val session = p.units.flatMap { it.sessions }.first { step in it.steps }
         val name = "typed-feedback-${System.nanoTime()}.db"
