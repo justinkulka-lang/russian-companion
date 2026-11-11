@@ -854,6 +854,32 @@ internal fun V2ProgressScreen(
         Text("A local backup is saved only after you start it and it finishes. The app does not claim these records are protected unless that backup succeeded.")
         V2SecondaryButton("Back up or restore", onBackup, tag = "v2-open-backup")
         V2SecondaryButton("Settings, appearance, and attributions", onSettings)
+        V2GradebookSection(pack, learner)
+    }
+}
+
+/** A2-35: per unit and objective, from recorded evidence only; labels follow MA2-083/084. */
+@Composable
+internal fun V2GradebookSection(pack: V2CurriculumPack, learner: V2LearnerView) {
+    val book = rememberGoverned(pack, learner, label = "gradebook") { dev.russiancompanion.v2.curriculum.gradebook(pack, learner) }
+    Spacer(Modifier.height(12.dp))
+    Text("Gradebook", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { heading(); testTag = "v2-gradebook" })
+    Text(dev.russiancompanion.v2.curriculum.GRADEBOOK_NOTE, modifier = Modifier.semantics { testTag = "v2-gradebook-note" })
+    if (book == null) { V2Status("Preparing gradebook"); return }
+    book.forEach { unit ->
+        Column(Modifier.padding(vertical = 6.dp).semantics(mergeDescendants = true) { testTag = "v2-gradebook-unit-${unit.unitNumber}" }) {
+            Text("Unit ${unit.unitNumber} · ${unit.title}", style = MaterialTheme.typography.titleSmall)
+            Text("Check attempts: ${unit.attempts.label()}")
+            Text("Unit test: " + (unit.unitTests.lastOrNull()?.let { last ->
+                "${unitTestResult(last)} ${unit.unitTests.size} ${if (unit.unitTests.size == 1) "attempt" else "attempts"}."
+            } ?: "none recorded"))
+            Text("Review accuracy: ${unit.review.label()}")
+            Text("Items in review queue: ${unit.queueItems}")
+        }
+        unit.objectives.forEach { o ->
+            Text("${o.title}: ${o.stateLabel}. Attempts ${o.attempts.label()}. Review ${o.review.label()}. Queue ${o.queueItems}.",
+                modifier = Modifier.padding(start = 12.dp).semantics { testTag = "v2-gradebook-objective-${o.objectiveId}" })
+        }
     }
 }
 
