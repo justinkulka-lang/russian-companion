@@ -26,7 +26,11 @@ fun main(args: Array<String>) {
     val markdown = File(output.parentFile, output.nameWithoutExtension + ".md")
     require(!markdown.exists()) { "The companion Markdown report already exists" }
     val bytes = input.readBytes()
-    val report = V2DesignDiagnostics.audit(V2PackLoader.parse(bytes.toString(Charsets.UTF_8)))
+    // A2-17: only the per-clip verification registry establishes verified audio, never catalog flags.
+    val registryFile = File(input.parentFile, "audio-verification.json")
+    val verified = if (!registryFile.isFile) emptyMap() else dev.russiancompanion.v2.audio.verifiedAudioByUnit(
+        Json.decodeFromString(dev.russiancompanion.v2.audio.V2AudioVerificationRegistry.serializer(), registryFile.readText()))
+    val report = V2DesignDiagnostics.audit(V2PackLoader.parse(bytes.toString(Charsets.UTF_8)), verified)
     val digest = MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
     val json = Json { prettyPrint = true; encodeDefaults = true }
     output.parentFile.mkdirs()

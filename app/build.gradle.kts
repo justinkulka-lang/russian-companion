@@ -119,6 +119,21 @@ for ((taskName, strict) in listOf("reportCurriculumDesign" to false, "checkCurri
     }
 }
 
+tasks.register<JavaExec>("generateListenCheckSheet") {
+    group = "verification"
+    description = "Writes the offline A2-18 listen-check sheet for one block (-PlistenCheckBlock=1)."
+    val compileKotlin = tasks.named("compileDebugKotlin")
+    dependsOn(compileKotlin)
+    workingDir = rootProject.layout.projectDirectory.asFile
+    mainClass.set("dev.russiancompanion.v2.audio.ListenCheckCliKt")
+    classpath(compileKotlin.map { it.outputs.files }, configurations.named("debugRuntimeClasspath"), androidComponents.sdkComponents.bootClasspath)
+    doFirst {
+        val block = providers.gradleProperty("listenCheckBlock").orNull ?: throw GradleException("Provide -PlistenCheckBlock=1")
+        args("--repo", rootProject.projectDir.absolutePath, "--block", block,
+            "--output", rootProject.file("audit/listen-check/block$block.html").absolutePath)
+    }
+}
+
 fun isReleaseOutputTask(name: String): Boolean {
     if (name.isEmpty()) return false
     if (name.contains("Test") || name.contains("Lint") || name.startsWith("lint")) return false

@@ -59,7 +59,7 @@ internal object V2DesignDiagnostics {
         val options: List<String>, val key: String,
     )
 
-    fun audit(pack: V2CurriculumPack): V2DesignReport {
+    fun audit(pack: V2CurriculumPack, verifiedAudioByUnit: Map<Int, Set<String>> = emptyMap()): V2DesignReport {
         val signals = mutableListOf<V2DesignSignal>()
         val items = pack.items.associateBy { it.id }
         val examples = pack.examples.associateBy { it.id }
@@ -181,7 +181,7 @@ internal object V2DesignDiagnostics {
             inspectLearnerText(entry.id, entry.introducedInUnit, "summary", entry.summary)
             inspectLearnerText(entry.id, entry.introducedInUnit, "detail", entry.detail)
         }
-        val (unitAssessments, assessmentSignals) = V2AssessmentDiagnostics.audit(pack)
+        val (unitAssessments, assessmentSignals) = V2AssessmentDiagnostics.audit(pack, verifiedAudioByUnit)
         signals += assessmentSignals
         val sorted = signals.distinct().sortedWith(compareBy({ it.rule }, { it.entityIds.joinToString("\u0000") }, { it.field }))
         return V2DesignReport(verdict = if (sorted.isEmpty()) "NO_MECHANICAL_SIGNALS_NOT_ACCEPTANCE" else "NEEDS_CORRECTION_OR_REVIEW",
