@@ -5205,13 +5205,15 @@ internal object V2Validator {
             if (record.reviewStatus !in CLOSED_REVIEW_STATES) {
                 errors += "Provenance ${record.itemId} has unrecognized review status ${record.reviewStatus}"
             }
-            if (record.unitNumber !in 3..30) {
-                errors += "Provenance ${record.itemId} is outside the proposed Units 3-30 source intake"
+            // Unit 2 carries the owner's 2026-11-11 stress and final-consonant pairs (T14-a).
+            if (record.unitNumber !in 2..30) {
+                errors += "Provenance ${record.itemId} is outside the proposed Units 2-30 source intake"
             }
             if ((record.objectiveId to record.unitNumber) !in objectiveKeys) {
                 errors += "Provenance ${record.itemId} objective is missing"
             }
         }
+        val letterForms = unicodeLetterForms(pack)
         pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
             val shipped = shippedByUnit.getValue(unit.number).toSet()
             val hosts = mutableListOf(unit.topicSummary, unit.mappingNote, unit.title)
@@ -5242,7 +5244,7 @@ internal object V2Validator {
                 CYRILLIC_REGION.findAll(host).forEach { match ->
                     val text = match.value.trim()
                     val trimmed = text.trimEnd { it == '?' || it == '!' || it == '.' || it == ',' }
-                    if (text !in shipped && trimmed !in shipped) {
+                    if (text !in shipped && trimmed !in shipped && !(unit.number <= 2 && letterFormRegion(text, letterForms))) {
                         errors += "Russian text has no admitted source record: $text"
                     }
                 }
@@ -5282,6 +5284,7 @@ internal object V2Validator {
         val seen = mutableSetOf<String>()
         val shippedByUnit = pack.provenanceRecords.groupBy { it.unitNumber }.mapValues { (_, rows) -> rows.map { it.shippedText } }
         val shippedSetByUnit = shippedByUnit.mapValues { it.value.toSet() }
+        val letterForms = unicodeLetterForms(pack)
         pack.authoredEnglishRecords.forEach { record ->
             if (!seen.add(record.id)) {
                 errors += "Authored English ${record.id} is duplicated"
@@ -5292,12 +5295,12 @@ internal object V2Validator {
             if (record.text.isBlank()) {
                 errors += "Authored English ${record.id} is blank"
             }
-            if (record.unitNumber !in 3..30) {
-                errors += "Authored English ${record.id} is outside the proposed Units 3-30 source intake"
+            if (record.unitNumber !in 2..30) {
+                errors += "Authored English ${record.id} is outside the proposed Units 2-30 source intake"
             }
             val shippedForUnit = shippedSetByUnit[record.unitNumber].orEmpty()
             val quoted = cyrillicRegions(record.text)
-            if (quoted.any { !admittedRegion(it, shippedForUnit) } ||
+            if (quoted.any { !admittedRegion(it, shippedForUnit) && !(record.unitNumber <= 2 && letterFormRegion(it, letterForms)) } ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||
                 (GRAMMAR_TERM.containsMatchIn(record.text) && '?' !in record.text)
             ) {
@@ -5344,6 +5347,16 @@ internal object V2Validator {
                 }
             }
         }
+    }
+
+    /** Unicode letter identities: writing-system facts that Units 1-2 show without a source record. */
+    private fun unicodeLetterForms(pack: V2CurriculumPack): Set<String> =
+        pack.letters.filter { it.sourceId == "src-unicode-cyrillic" }.flatMap { listOf(it.uppercase, it.lowercase) }.toSet()
+
+    /** A Cyrillic region made only of whole letter forms separated by spaces, such as a capital followed by its lowercase form. */
+    private fun letterFormRegion(region: String, forms: Set<String>): Boolean {
+        val parts = region.trimEnd { it == '?' || it == '!' || it == '.' || it == ',' }.split(Regex("[ \\t]+")).filter { it.isNotEmpty() }
+        return parts.isNotEmpty() && parts.all { it in forms }
     }
 
     private fun unboundLetters(host: String, spans: List<String>): String {

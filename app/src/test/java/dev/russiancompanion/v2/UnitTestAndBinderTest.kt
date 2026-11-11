@@ -30,8 +30,11 @@ class UnitTestAndBinderTest {
             assertNull(unitTestPlan(p, unit))
             assertNotNull(unitTestUnavailableReason(p, unit))
         }
-        assertTrue(unitTestUnavailableReason(p, p.unit(2)!!)!!.contains("at least 10 are needed"))
+        // T14-a: Unit 2 has 20 closed checked items and no typed items.
+        assertTrue(unitTestUnavailableReason(p, p.unit(2)!!)!!.contains("0 typed items"))
         assertTrue(unitTestUnavailableReason(p, p.unit(4)!!)!!.contains("0 typed items"))
+        val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })
+        assertTrue(unitTestUnavailableReason(few, few.unit(2)!!)!!.contains("at least 10 are needed"))
         assertTrue(courseworkDefects(p).isEmpty())
     }
 

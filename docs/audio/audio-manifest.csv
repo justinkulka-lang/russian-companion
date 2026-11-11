@@ -32,16 +32,16 @@ L-042c,P1,1,1,LETTER,Ь ь (name: мягкий знак),NEEDS_RECORDING,,,"reco
 L-042d,P1,1,1,LETTER,Э э (name: э),NEEDS_RECORDING,,,"record letter name, then its sound",letters
 L-042e,P1,1,1,LETTER,Ю ю (name: ю),NEEDS_RECORDING,,,"record letter name, then its sound",letters
 L-042f,P1,1,1,LETTER,Я я (name: я),NEEDS_RECORDING,rus-a4fd7810,я,"record letter name, then its sound; existing word clip covers the sound only",letters
-A02-001,P1,2,2,WORD,за́мок,PLANNED_T14,,,planned addition: castle (stress on first syllable),planned
-A02-002,P1,2,2,WORD,замо́к,PLANNED_T14,,,planned addition: lock (stress on second syllable),planned
-A02-003,P1,2,2,WORD,код,PLANNED_T14,,,planned addition: code: sounds like кот (final devoicing),planned
-A02-004,P1,2,2,WORD,кот,PLANNED_T14,rus-8b8ad1e8,кот,planned addition: cat; existing clip candidate,planned
-A02-005,P1,2,2,WORD,луг,PLANNED_T14,,,planned addition: meadow: sounds like лук (final devoicing),planned
-A02-006,P1,2,2,WORD,лук,PLANNED_T14,,,planned addition: onion,planned
-A02-007,P1,2,2,WORD,му́ка,PLANNED_T14,,,planned addition: torment,planned
-A02-008,P1,2,2,WORD,мука́,PLANNED_T14,,,planned addition: flour,planned
-A02-009,P1,2,2,WORD,плод,PLANNED_T14,,,planned addition: fruit: sounds like плот (final devoicing),planned
-A02-010,P1,2,2,WORD,плот,PLANNED_T14,,,planned addition: raft,planned
+A02-001,P1,2,2,WORD,за́мок,NEEDS_RECORDING,,,HOMOGRAPH: stress variants in course,"example,reference,teaching"
+A02-002,P1,2,2,WORD,замо́к,NEEDS_RECORDING,,,HOMOGRAPH: stress variants in course,"example,reference,teaching"
+A02-003,P1,2,2,WORD,код,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,reference,teaching"
+A02-004,P1,2,2,WORD,кот,EXISTING_CLIP_CANDIDATE,rus-8b8ad1e8,кот,,"example,reference,teaching"
+A02-005,P1,2,2,WORD,луг,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,reference,teaching"
+A02-006,P1,2,2,WORD,лук,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,reference,teaching"
+A02-007,P1,2,2,WORD,му́ка,NEEDS_RECORDING,,,HOMOGRAPH: stress variants in course,"example,reference,teaching"
+A02-008,P1,2,2,WORD,мука́,NEEDS_RECORDING,,,HOMOGRAPH: stress variants in course,"example,reference,teaching"
+A02-009,P1,2,2,WORD,плод,NEEDS_RECORDING,,,,"example,reference,teaching"
+A02-010,P1,2,2,WORD,плот,NEEDS_RECORDING,,,,"example,reference,teaching"
 A03-001,P1,3,"3,6,8",WORD,брат,EXISTING_CLIP_CANDIDATE,rus-f526c3a2,брат,,"example,item,teaching"
 A03-002,P1,3,3,WORD,вода́,NEEDS_RECORDING,,,,"example,teaching"
 A03-003,P1,3,"3,8",WORD,го́род,NEEDS_RECORDING,,,,"example,item,teaching"

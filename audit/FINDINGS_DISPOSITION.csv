@@ -1,0 +1,9 @@
+finding_id,scope,disposition,task,decided_by,date,note
+CC002,Units 1-2 handwriting recognition,OWNER_ACCEPTED_VARIANCE,T14-a,Product Owner,2026-11-11,"The owned Penguin book teaches cursive and the owner practises it on paper, so the app adds no handwriting-recognition content (owner decision 2026-11-11, WORK_QUEUE Log)."
+CC002,Units 1-2 letter and word audio (A2-20),OPEN,T14-A,,,"Audio binding stays in T14-A after the owner's Block 1 listen-check (T13-O). Units 1-2 ship no bound audio."
+CC023,Units 1-2 learner text (A2-26),FIXED,T14-a,,2026-11-11,"Removed review-pending wording from u1-st-confusable, u1-st-iotated, u1-st-signs, u1-st-teach-letter-names and ref-ca-letter-names. reportCurriculumDesign shows no LEARNER_GOVERNANCE_TERM signal in Units 1-2."
+A2-23,Units 1-2 checked-item minimum,FIXED,T14-a,,2026-11-11,"Unit 1: 18 to 20 checked items (print pairs О and Т). Unit 2: 5 to 20 (fifteen print-pair checks across the rest of the alphabet). Unicode letter facts only."
+A2-24,"u1-i-decode-pair, u1-i-print-pair, u2-i-print-б exact key in teaching",FIXED,T14-a,,2026-11-11,"Teaching now shows М / м and Е / е instead of the checked pairs; Unit 2 review teaching no longer shows Б / б."
+A2-24,u1-i-name-be exact key in teaching,OWNER_DECISION_NEEDED,T14-a,,2026-11-11,"A letter-name check can only test a name the teaching states (Б is named бэ). Options: accept as recall of taught letter names, or remove the check (Unit 1 would fall to 19). Not changed."
+TRANSFER_GAP,"u1-i-ё-identity, u1-i-ю-identity teaching and remediation",FIXED,T14-a,,2026-11-11,"u1-st-iotated now names Е, Ё, Ю and Я and shows Ё and Ю."
+OWNER-2026-11-11,Unit 2 stress and final-devoicing pairs,FIXED,T14-a,,2026-11-11,"за́мок/замо́к, му́ка/мука́, луг/лук, код/кот, плод/плот from the frozen OpenRussian snapshot (commit 50e210c4, CC BY-SA 4.0) with English explanations. Taught, not checked: a check on these words would repeat the explained meaning (A2-24)."

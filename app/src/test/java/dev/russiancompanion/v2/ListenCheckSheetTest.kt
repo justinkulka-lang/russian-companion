@@ -18,7 +18,7 @@ class ListenCheckSheetTest {
 
     @Test fun block1CandidatesAreExactTextMatchesShownInUnitsOneToFive() {
         assertEquals(1..5, blockUnits(1)); assertEquals(26..30, blockUnits(6))
-        assertEquals(16, candidates.size)
+        assertEquals(17, candidates.size)
         assertEquals(candidates.map { it.clipId }.distinct(), candidates.map { it.clipId })
         val byId = clips.associateBy { it.id }
         for (c in candidates) {
