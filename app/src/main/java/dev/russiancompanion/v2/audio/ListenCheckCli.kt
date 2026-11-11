@@ -23,6 +23,19 @@ internal fun loadCatalogClips(assets: File): List<V2CatalogClip> {
 
 internal fun clipFile(assets: File, clipId: String): File = File(assets, "audio/$clipId.ogg")
 
+/** Developer-only: decodes one clip to 16-bit PCM WAV with ffmpeg, without metadata. */
+internal fun ffmpegWav(source: File): ByteArray {
+    val out = File.createTempFile("listen-check-", ".wav")
+    try {
+        val process = ProcessBuilder("ffmpeg", "-v", "error", "-y", "-i", source.path, "-map_metadata", "-1",
+            "-fflags", "+bitexact", "-flags:a", "+bitexact", "-c:a", "pcm_s16le", out.path)
+            .redirectErrorStream(true).start()
+        val log = process.inputStream.bufferedReader().readText()
+        check(process.waitFor() == 0) { "ffmpeg could not decode $source: $log" }
+        return out.readBytes()
+    } finally { out.delete() }
+}
+
 /** Block number to its units (A2-01). */
 internal fun blockUnits(block: Int): IntRange {
     require(block in 1..6) { "Blocks are 1 to 6" }
@@ -43,6 +56,7 @@ fun main(args: Array<String>) {
     val sheet = "block$block"
     val candidates = listenCheckCandidates(pack, blockUnits(block), loadCatalogClips(assets))
     output.parentFile.mkdirs()
-    output.writeText(listenCheckSheetHtml(sheet, "Block $block listen-check", candidates) { clipFile(assets, it).readBytes() })
+    output.writeText(listenCheckSheetHtml(sheet, "Block $block listen-check", candidates,
+        { clipFile(assets, it).readBytes() }, { ffmpegWav(clipFile(assets, it)) }))
     println("Wrote ${candidates.size} candidate clips to $output")
 }

@@ -35,9 +35,31 @@ class ListenCheckSheetTest {
 
     @Test fun committedSheetIsCurrentOfflineAndOffersMatchNoMatchUnsureAndExport() {
         val committed = File(root, "audit/listen-check/block1.html").readText()
-        val fresh = listenCheckSheetHtml("block1", "Block 1 listen-check", candidates) { clipFile(assets, it).readBytes() }
+        // WAV copies are made by ffmpeg at generation time; here each one must have its Ogg clip's shape.
+        val wavs = Regex("src=\"data:audio/wav;base64,([A-Za-z0-9+/=]+)\"").findAll(committed).map { Base64.getDecoder().decode(it.groupValues[1]) }.toList()
+        assertEquals(candidates.size, wavs.size)
+        val wavById = candidates.map { it.clipId }.zip(wavs).toMap()
+        for (c in candidates) {
+            val shape = oggVorbisShape(clipFile(assets, c.clipId).readBytes())
+            assertNotNull(c.clipId, shape)
+            assertEquals(c.clipId, shape, wavPcm16Shape(wavById.getValue(c.clipId)))
+        }
+        val ogg = { id: String -> clipFile(assets, id).readBytes() }
+        val fresh = listenCheckSheetHtml("block1", "Block 1 listen-check", candidates, ogg) { wavById.getValue(it) }
         assertEquals("audit/listen-check/block1.html is stale; run generateListenCheckSheet -PlistenCheckBlock=1", fresh, committed)
-        assertEquals(fresh, listenCheckSheetHtml("block1", "Block 1 listen-check", candidates) { clipFile(assets, it).readBytes() })
+        assertEquals(fresh, listenCheckSheetHtml("block1", "Block 1 listen-check", candidates, ogg) { wavById.getValue(it) })
+        // A WAV copy with another rate or length, or a non-PCM file, is refused.
+        val first = wavById.getValue(candidates.first().clipId)
+        val otherRate = first.copyOf().also { it[24] = (it[24] + 1).toByte() }
+        // A well-formed WAV one sample short is refused for its length alone.
+        val shorter = first.copyOf(first.size - 2).also { w ->
+            fun put(at: Int, v: Int) { for (i in 0..3) w[at + i] = (v shr (8 * i)).toByte() }
+            put(4, w.size - 8); put(40, w.size - 44) }
+        assertNotNull(wavPcm16Shape(shorter))
+        for (bad in listOf(shorter, otherRate, first.copyOf(first.size - 2), clipFile(assets, candidates.first().clipId).readBytes()))
+            assertThrows(IllegalArgumentException::class.java) {
+                listenCheckSheetHtml("block1", "Block 1 listen-check", candidates, ogg) { if (it == candidates.first().clipId) bad else wavById.getValue(it) }
+            }
         assertFalse(Regex("(https?:|<link|<script\\s+src|@import|\\burl\\()", RegexOption.IGNORE_CASE).findAll(committed)
             .any { it.value != "URL(" })
         assertTrue(committed.contains("default-src 'none'"))

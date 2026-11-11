@@ -73,23 +73,63 @@ internal fun listenCheckCandidatesDigest(sheet: String, candidates: List<ListenC
     sha256Hex((listOf("listen-check", sheet) + candidates.map { "${it.clipId}|${it.clipSha256}|${it.text}|" +
         it.uses.joinToString(";") { u -> "${u.unitNumber}:${u.targetKind}:${u.targetId}" } }).joinToString("\n").toByteArray())
 
+/** Channel count, sample rate and length in samples of one clip. */
+internal data class PcmShape(val channels: Int, val sampleRate: Int, val samples: Long)
+
+private fun le(bytes: ByteArray, at: Int, size: Int): Long =
+    (0 until size).fold(0L) { acc, i -> acc or ((bytes[at + i].toLong() and 255) shl (8 * i)) }
+
+private fun indexOf(bytes: ByteArray, pattern: ByteArray, last: Boolean = false): Int {
+    val range = 0..bytes.size - pattern.size
+    val match = { i: Int -> pattern.indices.all { bytes[i + it] == pattern[it] } }
+    return (if (last) range.reversed().firstOrNull(match) else range.firstOrNull(match)) ?: -1
+}
+
+/** Shape of an Ogg Vorbis clip: identification header, and the final page's granule position as its length. */
+internal fun oggVorbisShape(bytes: ByteArray): PcmShape? {
+    val id = indexOf(bytes, byteArrayOf(1) + "vorbis".toByteArray())
+    val page = indexOf(bytes, "OggS".toByteArray(), last = true)
+    if (id < 0 || page < 0 || id + 16 > bytes.size || page + 14 > bytes.size) return null
+    return PcmShape(bytes[id + 11].toInt() and 255, le(bytes, id + 12, 4).toInt(), le(bytes, page + 6, 8))
+}
+
+/** Shape of a canonical 44-byte-header 16-bit PCM WAV file, or null for anything else. */
+internal fun wavPcm16Shape(bytes: ByteArray): PcmShape? {
+    if (bytes.size < 44) return null
+    fun tag(at: Int, value: String) = String(bytes, at, 4, Charsets.US_ASCII) == value
+    if (!tag(0, "RIFF") || !tag(8, "WAVE") || !tag(12, "fmt ") || !tag(36, "data")) return null
+    val channels = le(bytes, 22, 2).toInt()
+    val rate = le(bytes, 24, 4).toInt()
+    val ok = le(bytes, 4, 4) == bytes.size - 8L && le(bytes, 16, 4) == 16L && le(bytes, 20, 2) == 1L &&
+        le(bytes, 34, 2) == 16L && channels > 0 && le(bytes, 32, 2) == 2L * channels &&
+        le(bytes, 28, 4) == 2L * channels * rate && le(bytes, 40, 4) == bytes.size - 44L
+    return if (ok) PcmShape(channels, rate, (bytes.size - 44L) / (2 * channels)) else null
+}
+
 private fun html(text: String): String = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;")
 
 /**
  * A single offline HTML file: each clip plays beside its proposed text with Match / No match /
  * Unsure, and Export writes the results as JSON (A2-18). No network access, fonts or scripts from
- * elsewhere. Deterministic for the same inputs.
+ * elsewhere. Deterministic for the same inputs. Each clip also carries a 16-bit PCM WAV copy, decoded
+ * from the same Ogg file, as a second source for browsers without Ogg support; the copy must have the
+ * clip's channels, sample rate and length or the sheet is not written.
  */
 internal fun listenCheckSheetHtml(sheet: String, title: String, candidates: List<ListenCheckCandidate>,
-                                  audio: (String) -> ByteArray): String {
+                                  audio: (String) -> ByteArray, wav: (String) -> ByteArray): String {
     val digest = listenCheckCandidatesDigest(sheet, candidates)
     val rows = candidates.mapIndexed { index, c ->
         val uses = c.uses.joinToString("; ") { "Unit ${it.unitNumber} ${it.targetKind.lowercase()} ${it.targetId}" }
-        val data = Base64.getEncoder().encodeToString(audio(c.clipId))
+        val ogg = audio(c.clipId)
+        val copy = wav(c.clipId)
+        val shape = oggVorbisShape(ogg)
+        require(shape != null && wavPcm16Shape(copy) == shape) { "WAV copy of ${c.clipId} does not match its Ogg clip" }
+        val data = Base64.getEncoder().encodeToString(ogg)
+        val wavData = Base64.getEncoder().encodeToString(copy)
         """
 <tr data-clip="${html(c.clipId)}" data-sha="${c.clipSha256}" data-text="${html(c.text)}">
   <td>${index + 1}</td>
-  <td><audio controls preload="none" src="data:audio/ogg;base64,$data"></audio><div class="id">${html(c.clipId)}</div></td>
+  <td><audio controls preload="none"><source src="data:audio/ogg;base64,$data" type="audio/ogg"><source src="data:audio/wav;base64,$wavData" type="audio/wav"></audio><div class="id">${html(c.clipId)}</div></td>
   <td class="text" lang="ru">${html(c.text)}</td>
   <td class="uses">${html(uses)}</td>
   <td class="choice">
@@ -120,6 +160,7 @@ textarea { width: 100%; height: 12em; }
 <body>
 <h1>${html(title)}</h1>
 <p>Play each clip and decide whether it says exactly the text beside it. Choose Match only when you are sure. Only clips marked Match can be bound to app text. Nothing here is sent anywhere; Export saves a file on this computer.</p>
+<p>Each clip also includes a WAV copy made from the same recording, so the sheet plays in browsers that cannot play Ogg. Your decision applies to the recording, whichever copy plays.</p>
 <p class="id">Sheet ${html(sheet)} · ${candidates.size} clips · candidates ${digest}</p>
 <table>
 <thead><tr><th>#</th><th>Clip</th><th>Proposed text</th><th>Where the app shows it</th><th>Your decision</th></tr></thead>
