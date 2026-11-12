@@ -53,6 +53,10 @@ class CourseworkChecklistTest {
             assertEquals(V2Validator.unitContentReviewDigest(p, 5), V2Validator.unitContentReviewDigest(fixture, 5))
 
             ordinary(p, s, 4)
+            // T14-b: Unit 4 carries its own binder task, which only the learner's self-check marks done.
+            assertEquals(V2AssignmentStatus.TODO, unitAssignmentChecklist(p, unit, s.v2LearnerView())
+                .single { it.kind == V2AssignmentKind.BINDER_TASK }.status)
+            assertTrue(s.recordBinderSelfCheck(p, 4, "now", s.learnerMutationEpoch()))
             val after = unitAssignmentChecklist(p, unit, s.v2LearnerView(), dueSpacedItems = 2)
             assertEquals(V2AssignmentStatus.DONE, after.single { it.kind == V2AssignmentKind.BOOK_PAGES }.status)
             assertTrue(after.filter { it.kind == V2AssignmentKind.APP_SESSION }.all { it.status == V2AssignmentStatus.DONE })

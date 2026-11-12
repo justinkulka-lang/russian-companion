@@ -68,7 +68,7 @@ class Units1115MappingGapTest {
     fun preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded() {
         val pack = pack()
         assertEquals(
-            "28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300",
+            "5a774809093a407672a9668f5560607d2904fddc6d074d35819f6210edaad4a4",
             V2Validator.unitContentReviewDigest(pack, 3),
         )
         val shifted = pack.copy(

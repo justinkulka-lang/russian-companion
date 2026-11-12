@@ -57,7 +57,8 @@ class Unit12GenderReviewUiTest {
     }
 
     @Test fun actualFreshReviewRepairsNounGenderTeachingWithoutPracticeCreditAndAdvances() =
-        freshRepair(0, 3, "u3-i-gender-дверь", "u3-st-rem-gender", 5, 16)
+        // T14-b adds учитель and мама to the Unit 3 gender teaching (16 to 18 examples).
+        freshRepair(0, 3, "u3-i-gender-дверь", "u3-st-rem-gender", 5, 18)
 
     @Test fun actualFreshReviewRepairsPastGenderTeachingWithoutPracticeCreditAndAdvances() =
         freshRepair(1, 11, "u11-i-past-aspect-2", "u11-st-rem-past-aspect", 4, 3)

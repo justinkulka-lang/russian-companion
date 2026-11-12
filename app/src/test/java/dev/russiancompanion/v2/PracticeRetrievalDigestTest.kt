@@ -478,7 +478,8 @@ class PracticeRetrievalDigestTest {
         assertTrue(allMixed.none { it.id == reading.id })
         val mixed = allMixed.filter { it.objectiveId in owners.getValue(3) }
         assertTrue(mixed.isNotEmpty())
-        assertTrue(mixed.all { it.kind == "SOURCE_MEANING" || it.kind == "SOURCE_GENDER" })
+        // T14-b: Unit 3 also has typed recall items (type a taught word from its meaning).
+        assertTrue(mixed.all { it.kind == "SOURCE_MEANING" || it.kind == "SOURCE_GENDER" || it.kind == "TYPED_FORM" })
         assertTrue(mixed.none { it.id == reading.id })
     }
 

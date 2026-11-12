@@ -10,8 +10,8 @@ class CurriculumDesignDiagnosticsTest {
     @Test fun currentCorpusHasLocatedSignalsWhileCompatibilityValidationStillPasses() {
         val report = V2DesignDiagnostics.audit(current)
         assertEquals(30, report.counts["units"])
-        assertEquals(653, report.counts["items"])
-        assertEquals(454, report.counts["requiredChecks"])
+        assertEquals(669, report.counts["items"])
+        assertEquals(468, report.counts["requiredChecks"])
         assertEquals("NEEDS_CORRECTION_OR_REVIEW", report.verdict)
         assertTrue(report.signals.any { it.rule == "LEARNER_MARKUP" && "u14-st-teach-impersonal-2" in it.entityIds })
         assertTrue(report.signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" && "u13-i-tense-keep-2" in it.entityIds })
@@ -86,6 +86,13 @@ class CurriculumDesignDiagnosticsTest {
         // A typed item has no options by design; the option-count review does not apply to it.
         val typed = a.copy(id = "t", kind = "TYPED_FORM", options = emptyList())
         assertFalse(audit(listOf(typed)).signals.any { it.rule == "FEWER_THAN_THREE_OPTIONS" })
+        // English-to-Russian typing shows no Cyrillic but checks the Russian the learner types (T14-b).
+        val toRussian = typed.copy(id = "r", prompt = "Type the word that has this meaning.", promptLetter = "book",
+            answer = "книга", typedAnswerKey = V2TypedAnswerKey("k-r", 1, listOf("книга")))
+        assertFalse(audit(listOf(toRussian)).signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" })
+        val englishOnly = typed.copy(id = "e", prompt = "Type the word that has this meaning.", promptLetter = "book",
+            answer = "book", typedAnswerKey = V2TypedAnswerKey("k-e", 1, listOf("book")))
+        assertTrue(audit(listOf(englishOnly)).signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" })
     }
 
     @Test fun aWorkedExampleContainingTheAnswerIsNotAutomaticallyAnAnswerScript() {

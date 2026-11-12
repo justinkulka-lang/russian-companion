@@ -122,7 +122,9 @@ internal object V2DesignDiagnostics {
                 // Typed items have no options by design (A2-22); the option-count review applies to closed choices.
                 if (!item.isTypedResponse() && item.options.size < 3) add("FEWER_THAN_THREE_OPTIONS", V2DesignSignalKind.REVIEW_SIGNAL,
                     unit.number, listOf(item.id), "options", "Review diagnostic value and a bounded justification; option count alone does not prove invalidity.")
-                if (!hasCyrillic(item.prompt + shownCue + item.options.joinToString(" "))) add("NO_CYRILLIC_IN_REQUIRED_DISPLAY",
+                // A typed item asks for Russian: its accepted answers count as the Russian it checks.
+                val typedRussian = if (item.isTypedResponse()) item.typedAnswerKey?.acceptedAnswers.orEmpty().joinToString(" ") else ""
+                if (!hasCyrillic(item.prompt + shownCue + item.options.joinToString(" ") + typedRussian)) add("NO_CYRILLIC_IN_REQUIRED_DISPLAY",
                     V2DesignSignalKind.REVIEW_SIGNAL, unit.number, listOf(item.id), "prompt/cue/options",
                     "The question displays no Cyrillic. Review the Russian-learning construct or make orientation explicitly nongating.")
                 val scripts = teaching.filter { step -> stepText(step).split(sentenceBreak).any { sentence ->

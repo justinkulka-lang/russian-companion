@@ -34,7 +34,11 @@ class Unit4PresentTeachingTest {
             assertNotEquals(item.answer, guide.answer)
             assertEquals(item.promptLetter, guide.promptLetter)
             assertTrue(session.steps.indexOf(teaching) < session.steps.indexOfFirst { guide.id in it.itemIds })
-            assertTrue(session.steps.indexOfFirst { guide.id in it.itemIds } < session.steps.indexOfFirst { id in it.itemIds })
+            // Guided work precedes the independent check in the unit's step order; since T14-b the check sits in
+            // the end-of-unit check session (owner's narrowed A2-24 reading).
+            val order = p.unit(4)!!.sessions.flatMap { it.steps }
+            assertTrue(order.indexOfFirst { guide.id in it.itemIds } >= 0)
+            assertTrue(order.indexOfFirst { guide.id in it.itemIds } < order.indexOfFirst { id in it.itemIds })
             assertTrue(guide.distractorRationales.filter { it.isNotBlank() }.size == 3)
         }
         val rem = p.step("u4-st-rem-present")!!.second
@@ -96,7 +100,8 @@ class Unit4PresentTeachingTest {
     }
 
     private fun record(s: LocalStore, p: V2CurriculumPack, id: String, answer: String) {
-        val step = present(p).steps.single { id in it.itemIds }
+        // Since T14-b the independent checks sit in the end-of-unit check session; search the whole unit.
+        val step = p.unit(4)!!.sessions.flatMap { it.steps }.single { id in it.itemIds }
         s.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, answer, PRESCRIBED_CHECK, step.id, "row-${s.v2Attempts().size}")!!)
     }
     private fun context(): Context = ApplicationProvider.getApplicationContext()

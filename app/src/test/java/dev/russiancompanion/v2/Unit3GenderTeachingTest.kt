@@ -59,7 +59,7 @@ class Unit3GenderTeachingTest {
             awaitTag("v2-option-$id-$wrong"); compose.onNodeWithTag("v2-option-$id-$wrong").performScrollTo().performClick()
             awaitTag("v2-item-feedback-$id"); compose.onNodeWithTag("v2-item-feedback-$id").performScrollTo().assertTextEquals("Not the reviewed answer. ${item.feedback}")
             compose.onNodeWithTag("v2-remediation-$id").performScrollTo().performClick()
-            awaitTag("v2-step-title"); compose.onNodeWithTag("v2-step-title").assertTextEquals("Review the admitted noun genders")
+            awaitTag("v2-step-title"); compose.onNodeWithTag("v2-step-title").assertTextEquals("Review the three groups")
             for (example in listOf("ex-u3-друг", "ex-u3-дверь", "ex-u3-море", "ex-u3-дядя")) compose.onNodeWithTag("v2-example-$example").performScrollTo().assertIsDisplayed()
             compose.onNodeWithTag("v2-review-practice").performClick()
             val guides = reviewedGuidedPractice(p, "u3-st-rem-gender")

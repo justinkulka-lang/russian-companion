@@ -72,7 +72,7 @@ class Units35LayoutTest {
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithText("Course").performClick()
         compose.onNodeWithText("Unit 3 · Everyday phrases", substring = true).performScrollTo().performClick()
-        compose.onNodeWithText("Recognize admitted noun genders").performScrollTo().performClick()
+        compose.onNodeWithText("Recognize noun genders").performScrollTo().performClick()
         compose.onNodeWithTag("v2-step-title").assertIsDisplayed()
         compose.onNodeWithText("three types", substring = true).assertIsDisplayed()
         compose.onNodeWithText("хлеб").assertDoesNotExist()

@@ -43,7 +43,7 @@ A02-008,P1,2,2,WORD,мука́,NEEDS_RECORDING,,,HOMOGRAPH: stress variants in c
 A02-009,P1,2,2,WORD,плод,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A02-010,P1,2,2,WORD,плот,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A03-001,P1,3,"3,6,8",WORD,брат,EXISTING_CLIP_CANDIDATE,rus-f526c3a2,брат,,"example,item,teaching"
-A03-002,P1,3,3,WORD,вода́,NEEDS_RECORDING,,,,"example,teaching"
+A03-002,P1,3,3,WORD,вода́,NEEDS_RECORDING,,,,"example,item,teaching"
 A03-003,P1,3,"3,8",WORD,го́род,NEEDS_RECORDING,,,,"example,item,teaching"
 A03-004,P1,3,"3,10,24",WORD,Да,EXISTING_CLIP_CANDIDATE,rus-8f1e46da,да,,"example,item,teaching"
 A03-005,P1,3,3,WORD,дверь,NEEDS_RECORDING,,,,"example,item,teaching"
@@ -52,24 +52,26 @@ A03-007,P1,3,"3,6,8,10",WORD,друг,EXISTING_CLIP_CANDIDATE,rus-714ae1d2,др�
 A03-008,P1,3,"3,6",WORD,дя́дя,NEEDS_RECORDING,,,,"example,item,teaching"
 A03-009,P1,3,"3,26",WORD,здра́вствуйте,NEEDS_RECORDING,,,,"example,item,teaching"
 A03-010,P1,3,"3,5,6,8,12,16,29",WORD,кни́га,NEEDS_RECORDING,,,,"example,item,teaching"
-A03-011,P1,3,"3,10",WORD,молоко́,NEEDS_RECORDING,,,,"example,item,teaching"
-A03-012,P1,3,3,WORD,мо́ре,NEEDS_RECORDING,,,,"example,item,teaching"
-A03-013,P1,3,3,WORD,мужчи́на,NEEDS_RECORDING,,,,"example,item,teaching"
-A03-014,P1,3,"3,24",WORD,нет,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
-A03-015,P1,3,"3,5,8,10",WORD,окно́,NEEDS_RECORDING,,,,"example,item,teaching"
-A03-016,P1,3,"3,5,27,29",WORD,письмо́,NEEDS_RECORDING,,,,"example,item,teaching"
-A03-017,P1,3,"3,15,25",WORD,пожа́луйста,NEEDS_RECORDING,,,,"example,item,teaching"
-A03-018,P1,3,3,WORD,рабо́та,NEEDS_RECORDING,,,,"example,teaching"
-A03-019,P1,3,"3,25",WORD,спаси́бо,NEEDS_RECORDING,,,,"example,item,teaching"
-A03-020,P1,3,"3,6,8,12,16,30",WORD,сто́л,EXISTING_CLIP_CANDIDATE,rus-a7afa14d,стол,,"example,item,teaching"
-A03-021,P1,3,3,WORD,шко́ла,NEEDS_RECORDING,,,,"example,teaching"
-A03-022,P1,3,"3,7",WORD,э́то,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
-A03-023,P1,3,"3,6",PHRASE,мой стол,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A03-024,P1,3,"3,6",PHRASE,моя собака,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A03-025,P1,3,3,SENTENCE,Где вы,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
-A03-026,P1,3,"3,5,25",SENTENCE,Как дела́,NEEDS_RECORDING,,,,"example,item,teaching"
-A03-027,P1,3,"3,5",SENTENCE,Кто это,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A03-028,P1,3,"3,5",SENTENCE,Что это,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A03-011,P1,3,"3,6,8",WORD,ма́ма,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-012,P1,3,"3,10",WORD,молоко́,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-013,P1,3,3,WORD,мо́ре,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-014,P1,3,3,WORD,мужчи́на,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-015,P1,3,"3,24",WORD,нет,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
+A03-016,P1,3,"3,5,8,10",WORD,окно́,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-017,P1,3,"3,5,27,29",WORD,письмо́,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-018,P1,3,"3,15,25",WORD,пожа́луйста,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-019,P1,3,3,WORD,рабо́та,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-020,P1,3,"3,25",WORD,спаси́бо,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-021,P1,3,"3,6,8,12,16,30",WORD,сто́л,EXISTING_CLIP_CANDIDATE,rus-a7afa14d,стол,,"example,item,teaching"
+A03-022,P1,3,"3,6",WORD,учи́тель,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-023,P1,3,3,WORD,шко́ла,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-024,P1,3,"3,7",WORD,э́то,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
+A03-025,P1,3,"3,6",PHRASE,мой стол,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A03-026,P1,3,"3,6",PHRASE,моя собака,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A03-027,P1,3,3,SENTENCE,Где вы,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
+A03-028,P1,3,"3,5,25",SENTENCE,Как дела́,NEEDS_RECORDING,,,,"example,item,teaching"
+A03-029,P1,3,"3,5",SENTENCE,Кто это,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A03-030,P1,3,"3,5",SENTENCE,Что это,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A04-001,P1,4,4,WORD,ви́деть,NEEDS_RECORDING,,,,"item,teaching"
 A04-002,P1,4,4,WORD,ви́дим,NEEDS_RECORDING,,,,teaching
 A04-003,P1,4,4,WORD,ви́дит,NEEDS_RECORDING,,,,"example,item,teaching"
@@ -81,40 +83,47 @@ A04-008,P1,4,4,WORD,говори́т,NEEDS_RECORDING,,,,teaching
 A04-009,P1,4,"4,12,13,15",WORD,говори́ть,NEEDS_RECORDING,,,,"example,item,teaching"
 A04-010,P1,4,4,WORD,говори́шь,NEEDS_RECORDING,,,,teaching
 A04-011,P1,4,"4,24",WORD,говорю́,NEEDS_RECORDING,,,,"example,item,teaching"
-A04-012,P1,4,"4,12,13,15",WORD,де́лать,NEEDS_RECORDING,,,,"example,item,teaching"
-A04-013,P1,4,4,WORD,де́лаю,NEEDS_RECORDING,,,,"item,teaching"
-A04-014,P1,4,4,WORD,жить,EXISTING_CLIP_CANDIDATE,rus-1267a652,жить,,teaching
-A04-015,P1,4,4,WORD,знать,EXISTING_CLIP_CANDIDATE,rus-d5ac2c6b,знать,,"example,teaching"
-A04-016,P1,4,"4,11,20",WORD,идти́,NEEDS_RECORDING,,,,"example,item,teaching"
-A04-017,P1,4,4,WORD,иду́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","item,teaching"
-A04-018,P1,4,4,WORD,иду́т,NEEDS_RECORDING,,,,"example,item,teaching"
-A04-019,P1,4,4,WORD,идёт,NEEDS_RECORDING,,,,teaching
-A04-020,P1,4,4,WORD,идёшь,NEEDS_RECORDING,,,,teaching
-A04-021,P1,4,"4,6,10",WORD,Мы,EXISTING_CLIP_CANDIDATE,rus-291dcf07,мы,,"example,item,teaching"
-A04-022,P1,4,"4,29",WORD,он,EXISTING_CLIP_CANDIDATE,rus-fc38bfb1,он,,"example,item,teaching"
-A04-023,P1,4,"4,6",WORD,она́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
-A04-024,P1,4,"4,6,10",WORD,они́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
-A04-025,P1,4,4,WORD,оно́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
-A04-026,P1,4,4,WORD,писа́ть,NEEDS_RECORDING,,,,"example,item,teaching"
-A04-027,P1,4,4,WORD,пи́шет,NEEDS_RECORDING,,,,teaching
-A04-028,P1,4,4,WORD,пи́шете,NEEDS_RECORDING,,,,"example,item,teaching"
-A04-029,P1,4,4,WORD,пи́шешь,NEEDS_RECORDING,,,,teaching
-A04-030,P1,4,4,WORD,пишу́,NEEDS_RECORDING,,,,"item,teaching"
-A04-031,P1,4,4,WORD,понима́ть,NEEDS_RECORDING,,,,teaching
-A04-032,P1,4,4,WORD,рабо́тать,NEEDS_RECORDING,,,,"example,teaching"
-A04-033,P1,4,4,WORD,слу́шать,NEEDS_RECORDING,,,,teaching
-A04-034,P1,4,4,WORD,смотре́ть,NEEDS_RECORDING,,,,teaching
-A04-035,P1,4,"4,10",WORD,ты,EXISTING_CLIP_CANDIDATE,rus-bf5460f8,ты,,"example,item,teaching"
-A04-036,P1,4,4,WORD,чита́ем,NEEDS_RECORDING,,,,teaching
-A04-037,P1,4,4,WORD,чита́ет,NEEDS_RECORDING,,,,teaching
-A04-038,P1,4,4,WORD,чита́ете,NEEDS_RECORDING,,,,teaching
-A04-039,P1,4,4,WORD,чита́ешь,NEEDS_RECORDING,,,,"item,teaching"
-A04-040,P1,4,"4,13,15,28",WORD,чита́ть,NEEDS_RECORDING,,,,"example,item,teaching"
-A04-041,P1,4,4,WORD,чита́ю,NEEDS_RECORDING,,,,teaching
-A04-042,P1,4,4,WORD,чита́ют,NEEDS_RECORDING,,,,teaching
-A04-043,P1,4,4,PHRASE,Муж говорит,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A04-044,P1,4,"4,29",PHRASE,Поезд старый,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A04-045,P1,4,"4,29",PHRASE,Студент новый,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A04-012,P1,4,4,WORD,де́лаем,NEEDS_RECORDING,,,,item
+A04-013,P1,4,"4,12,13,15",WORD,де́лать,NEEDS_RECORDING,,,,"example,item,teaching"
+A04-014,P1,4,4,WORD,де́лаю,NEEDS_RECORDING,,,,"item,teaching"
+A04-015,P1,4,4,WORD,жить,EXISTING_CLIP_CANDIDATE,rus-1267a652,жить,,teaching
+A04-016,P1,4,4,WORD,знать,EXISTING_CLIP_CANDIDATE,rus-d5ac2c6b,знать,,"example,item,teaching"
+A04-017,P1,4,4,WORD,зна́ю,NEEDS_RECORDING,,,,item
+A04-018,P1,4,4,WORD,зна́ют,NEEDS_RECORDING,,,,item
+A04-019,P1,4,"4,11,20",WORD,идти́,NEEDS_RECORDING,,,,"example,item,teaching"
+A04-020,P1,4,4,WORD,иду́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","item,teaching"
+A04-021,P1,4,4,WORD,иду́т,NEEDS_RECORDING,,,,"example,item,teaching"
+A04-022,P1,4,4,WORD,идёт,NEEDS_RECORDING,,,,teaching
+A04-023,P1,4,4,WORD,идёшь,NEEDS_RECORDING,,,,teaching
+A04-024,P1,4,"4,6,10",WORD,мы,EXISTING_CLIP_CANDIDATE,rus-291dcf07,мы,,"example,item,teaching"
+A04-025,P1,4,"4,29",WORD,он,EXISTING_CLIP_CANDIDATE,rus-fc38bfb1,он,,"example,item,teaching"
+A04-026,P1,4,"4,6",WORD,она́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
+A04-027,P1,4,"4,6,10",WORD,они́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
+A04-028,P1,4,4,WORD,оно́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
+A04-029,P1,4,4,WORD,писа́ть,NEEDS_RECORDING,,,,"example,item,teaching"
+A04-030,P1,4,4,WORD,пи́шет,NEEDS_RECORDING,,,,teaching
+A04-031,P1,4,4,WORD,пи́шете,NEEDS_RECORDING,,,,"example,item,teaching"
+A04-032,P1,4,4,WORD,пи́шешь,NEEDS_RECORDING,,,,teaching
+A04-033,P1,4,4,WORD,пишу́,NEEDS_RECORDING,,,,"item,teaching"
+A04-034,P1,4,4,WORD,понима́ешь,NEEDS_RECORDING,,,,item
+A04-035,P1,4,4,WORD,понима́ть,NEEDS_RECORDING,,,,"item,teaching"
+A04-036,P1,4,4,WORD,рабо́таем,NEEDS_RECORDING,,,,item
+A04-037,P1,4,4,WORD,рабо́тать,NEEDS_RECORDING,,,,"example,item,teaching"
+A04-038,P1,4,4,WORD,слу́шает,NEEDS_RECORDING,,,,item
+A04-039,P1,4,4,WORD,слу́шаете,NEEDS_RECORDING,,,,item
+A04-040,P1,4,4,WORD,слу́шать,NEEDS_RECORDING,,,,"item,teaching"
+A04-041,P1,4,4,WORD,смотре́ть,NEEDS_RECORDING,,,,teaching
+A04-042,P1,4,"4,10",WORD,ты,EXISTING_CLIP_CANDIDATE,rus-bf5460f8,ты,,"example,item,teaching"
+A04-043,P1,4,4,WORD,чита́ем,NEEDS_RECORDING,,,,teaching
+A04-044,P1,4,4,WORD,чита́ет,NEEDS_RECORDING,,,,teaching
+A04-045,P1,4,4,WORD,чита́ете,NEEDS_RECORDING,,,,teaching
+A04-046,P1,4,4,WORD,чита́ешь,NEEDS_RECORDING,,,,"item,teaching"
+A04-047,P1,4,"4,13,15,28",WORD,чита́ть,NEEDS_RECORDING,,,,"example,item,teaching"
+A04-048,P1,4,4,WORD,чита́ю,NEEDS_RECORDING,,,,teaching
+A04-049,P1,4,4,WORD,чита́ют,NEEDS_RECORDING,,,,teaching
+A04-050,P1,4,4,PHRASE,Муж говорит,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A04-051,P1,4,"4,29",PHRASE,Поезд старый,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A04-052,P1,4,"4,29",PHRASE,Студент новый,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A05-001,P1,5,5,WORD,Где,EXISTING_CLIP_CANDIDATE,rus-2aaba201,где,,"example,item,teaching"
 A05-002,P1,5,5,WORD,Как,EXISTING_CLIP_CANDIDATE,rus-b00d753d,как,,"example,item,teaching"
 A05-003,P1,5,"5,7",WORD,како́й,NEEDS_RECORDING,,,,"example,item,teaching"
@@ -155,37 +164,35 @@ A06-007,P2,6,"6,18",WORD,же́нщина,NEEDS_RECORDING,,,,"example,item,teach
 A06-008,P2,6,6,WORD,же́нщину,NEEDS_RECORDING,,,,"example,item,teaching"
 A06-009,P2,6,"6,10",WORD,их,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
 A06-010,P2,6,6,WORD,кни́гу,NEEDS_RECORDING,,,,"example,item,teaching"
-A06-011,P2,6,"6,8",WORD,ма́ма,NEEDS_RECORDING,,,,"example,item,teaching"
-A06-012,P2,6,6,WORD,ма́му,NEEDS_RECORDING,,,,"example,item,teaching"
-A06-013,P2,6,"6,10",WORD,Меня́,NEEDS_RECORDING,,,,"example,item,teaching"
-A06-014,P2,6,"6,8",WORD,мои́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
-A06-015,P2,6,"6,8,10",WORD,мо́й,EXISTING_CLIP_CANDIDATE,rus-acdafc2d,мой,,"example,item,teaching"
-A06-016,P2,6,"6,10",WORD,моя́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
-A06-017,P2,6,6,WORD,моё,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,teaching"
-A06-018,P2,6,"6,10",WORD,Нас,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
-A06-019,P2,6,6,WORD,Наш,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,teaching"
-A06-020,P2,6,"6,8",WORD,на́ши,NEEDS_RECORDING,,,,"example,teaching"
-A06-021,P2,6,6,WORD,папа,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A06-022,P2,6,6,WORD,собака,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
-A06-023,P2,6,6,WORD,тво́й,EXISTING_CLIP_CANDIDATE,rus-1234b1df,твой,,"example,item,teaching"
-A06-024,P2,6,6,WORD,твоя́,NEEDS_RECORDING,,,,"example,item,teaching"
-A06-025,P2,6,"6,10",WORD,Тебя́,NEEDS_RECORDING,,,,"example,item,teaching"
-A06-026,P2,6,6,WORD,учи́тель,NEEDS_RECORDING,,,,"example,item,teaching"
-A06-027,P2,6,6,WORD,учи́теля,NEEDS_RECORDING,,,,"example,item,teaching"
-A06-028,P2,6,6,PHRASE,на́ша сестра́,NEEDS_RECORDING,,,,"item,teaching"
-A06-029,P2,6,6,PHRASE,на́шего бра́та,NEEDS_RECORDING,,,,teaching
-A06-030,P2,6,6,PHRASE,Оно на столе,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A06-031,P2,6,6,PHRASE,Я жил в Лондоне,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A06-032,P2,6,6,PHRASE,Я люблю собак,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
-A06-033,P2,6,6,PHRASE,Я люблю тебя,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A06-034,P2,6,6,PHRASE,Я тебя люблю,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A06-035,P2,6,6,PHRASE,Я шёл в дом,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A06-036,P2,6,6,PHRASE,Я шёл на улицу,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A06-037,P2,6,6,SENTENCE,Коты ненавидят собак,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A06-038,P2,6,6,SENTENCE,на́шу сестру́,NEEDS_RECORDING,,,,"item,teaching"
-A06-039,P2,6,6,SENTENCE,Собаки ненавидят котов,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A06-040,P2,6,6,SENTENCE,Я де́лал стул,NEEDS_RECORDING,,,,"example,item,teaching"
-A06-041,P2,6,6,SENTENCE,Я поехал в музей,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
+A06-011,P2,6,6,WORD,ма́му,NEEDS_RECORDING,,,,"example,item,teaching"
+A06-012,P2,6,"6,10",WORD,Меня́,NEEDS_RECORDING,,,,"example,item,teaching"
+A06-013,P2,6,"6,8",WORD,мои́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
+A06-014,P2,6,"6,8,10",WORD,мо́й,EXISTING_CLIP_CANDIDATE,rus-acdafc2d,мой,,"example,item,teaching"
+A06-015,P2,6,"6,10",WORD,моя́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
+A06-016,P2,6,6,WORD,моё,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,teaching"
+A06-017,P2,6,"6,10",WORD,Нас,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
+A06-018,P2,6,6,WORD,Наш,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,teaching"
+A06-019,P2,6,"6,8",WORD,на́ши,NEEDS_RECORDING,,,,"example,teaching"
+A06-020,P2,6,6,WORD,папа,NEEDS_RECORDING,,,course text has no stress mark,teaching
+A06-021,P2,6,6,WORD,собака,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
+A06-022,P2,6,6,WORD,тво́й,EXISTING_CLIP_CANDIDATE,rus-1234b1df,твой,,"example,item,teaching"
+A06-023,P2,6,6,WORD,твоя́,NEEDS_RECORDING,,,,"example,item,teaching"
+A06-024,P2,6,"6,10",WORD,Тебя́,NEEDS_RECORDING,,,,"example,item,teaching"
+A06-025,P2,6,6,WORD,учи́теля,NEEDS_RECORDING,,,,"example,item,teaching"
+A06-026,P2,6,6,PHRASE,на́ша сестра́,NEEDS_RECORDING,,,,"item,teaching"
+A06-027,P2,6,6,PHRASE,на́шего бра́та,NEEDS_RECORDING,,,,teaching
+A06-028,P2,6,6,PHRASE,Оно на столе,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A06-029,P2,6,6,PHRASE,Я жил в Лондоне,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A06-030,P2,6,6,PHRASE,Я люблю собак,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
+A06-031,P2,6,6,PHRASE,Я люблю тебя,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A06-032,P2,6,6,PHRASE,Я тебя люблю,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A06-033,P2,6,6,PHRASE,Я шёл в дом,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A06-034,P2,6,6,PHRASE,Я шёл на улицу,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A06-035,P2,6,6,SENTENCE,Коты ненавидят собак,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A06-036,P2,6,6,SENTENCE,на́шу сестру́,NEEDS_RECORDING,,,,"item,teaching"
+A06-037,P2,6,6,SENTENCE,Собаки ненавидят котов,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A06-038,P2,6,6,SENTENCE,Я де́лал стул,NEEDS_RECORDING,,,,"example,item,teaching"
+A06-039,P2,6,6,SENTENCE,Я поехал в музей,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
 A07-001,P2,7,7,WORD,бы́стро,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A07-002,P2,7,7,WORD,бы́стрый,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A07-003,P2,7,7,WORD,кака́я,NEEDS_RECORDING,,,,"example,item,teaching"
