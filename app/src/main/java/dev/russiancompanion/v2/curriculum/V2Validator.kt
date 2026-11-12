@@ -17,6 +17,7 @@ internal object V2Validator {
                 errors += "Unit ${unit.number} has no verified cumulative-review policy"
             }
         }
+        errors += typedFloorDefects(pack)
         if (pack.schemaVersion != 1) errors += "Unsupported curriculum schema ${pack.schemaVersion}"
         if (pack.units.size != 30) errors += "The map must contain exactly 30 Penguin-aligned units"
         if (pack.units.map { it.number } != (1..30).toList()) {
@@ -5347,6 +5348,19 @@ internal object V2Validator {
                 }
             }
         }
+    }
+
+    /**
+     * A2-23 floor for the completed Block 1 units (owner direction, T14-n2 verify): Units 3-5 keep at least 30 percent
+     * of their required checks as available typed items. Integer arithmetic avoids rounding 29.9 percent up.
+     */
+    internal fun typedFloorDefects(pack: V2CurriculumPack): List<String> = (3..5).mapNotNull { number ->
+        val unit = pack.unit(number) ?: return@mapNotNull null
+        val required = unit.objectives.filter { it.gating }.flatMap { it.checkItemIds }.distinct().mapNotNull { pack.item(it) }
+        val typed = required.count { it.isTypedResponse() && typedItemDefects(it).isEmpty() }
+        if (required.isEmpty() || typed * 10 < required.size * 3)
+            "Unit $number has $typed of ${required.size} required checks as available typed items; A2-23 requires at least 30 percent"
+        else null
     }
 
     /** Unicode letter identities: writing-system facts that Units 1-2 show without a source record. */

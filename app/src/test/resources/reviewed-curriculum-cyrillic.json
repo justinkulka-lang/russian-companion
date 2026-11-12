@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "b9516250c2d886b1a0e9094268529d2af5b41b49b2b3300d5b65881f75ff4e74",
+      "sha256": "0189f5b2e9958a87fa346c8ba9e53315f5915d66f8b705180539bf824a0b7b6a",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3324,6 +3324,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Lets Unit 2 carry source records for the owner's 2026-11-11 stress and final-consonant pairs (provenance and authored-English bounds 2-30) and accepts Unicode letter identities, alone or space-separated, as admitted Cyrillic in Units 1-2. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T14-n2 verify",
+      "previousRecordedSha256": "b9516250c2d886b1a0e9094268529d2af5b41b49b2b3300d5b65881f75ff4e74",
+      "sha256": "0189f5b2e9958a87fa346c8ba9e53315f5915d66f8b705180539bf824a0b7b6a",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Adds the A2-23 typed floor for Units 3-5 (at least 30 percent of required checks available as typed items). No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

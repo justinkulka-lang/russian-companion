@@ -118,6 +118,20 @@ class AssessmentDiagnosticsTest {
         assertFalse(V2AssessmentDiagnostics.audit(p, mapOf(4 to setOf("other-clip"))).second.any { it.rule == "A2_23_DICTATION_MINIMUM" })
     }
 
+    @Test fun validatorFailsWhenAnyOfUnitsThreeToFiveDropsBelowThirtyPercentTyped() {
+        // T14-n2 verify: Units 3-5 sit exactly at 6 typed of 20 required checks.
+        assertEquals(emptyList<String>(), V2Validator.typedFloorDefects(current))
+        for (number in 3..5) {
+            val unit = current.unit(number)!!
+            val oneTyped = unit.objectives.flatMap { it.checkItemIds }.first { current.item(it)!!.isTypedResponse() }
+            val dropped = current.copy(units = current.units.map { u -> if (u.number != number) u else
+                u.copy(objectives = u.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds - oneTyped) }) })
+            assertEquals(1, V2Validator.typedFloorDefects(dropped).size)
+            assertTrue(V2Validator.typedFloorDefects(dropped).single().startsWith("Unit $number has 5 of 19"))
+            assertFalse(V2Validator.validate(dropped).ok)
+        }
+    }
+
     @Test fun fullReportHasEveryUnitAndDoesNotFailCompatibilityOrMutatePack() {
         val before = current.items.map { it.id to it.answer }
         val report = V2DesignDiagnostics.audit(current)
