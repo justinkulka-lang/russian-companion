@@ -10,13 +10,25 @@ class CurriculumDesignDiagnosticsTest {
     @Test fun currentCorpusHasLocatedSignalsWhileCompatibilityValidationStillPasses() {
         val report = V2DesignDiagnostics.audit(current)
         assertEquals(30, report.counts["units"])
-        assertEquals(676, report.counts["items"])
+        assertEquals(677, report.counts["items"])
         assertEquals(474, report.counts["requiredChecks"])
         assertEquals("NEEDS_CORRECTION_OR_REVIEW", report.verdict)
         assertTrue(report.signals.any { it.rule == "LEARNER_MARKUP" && "u14-st-teach-impersonal-2" in it.entityIds })
         assertTrue(report.signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" && "u13-i-tense-keep-2" in it.entityIds })
         // New authoring standards do not silently change app startup or claim the course is good.
         assertTrue(V2Validator.validate(current).ok)
+    }
+
+    @Test fun learnerVoiceLintFindsProvenanceNarrationAndCheckTalk() {
+        // T14-n2: Units 1-5 teach in plain English; attribution stays in the provenance records.
+        assertTrue(V2DesignDiagnostics.audit(current).signals.none { it.rule == "LEARNER_PROVENANCE_NARRATION" && (it.unit ?: 0) in 1..5 })
+        for (text in listOf("The dictionary gives this meaning: yes.", "Form glossed I: read.", "These examples are quoted exactly.",
+                "When the check requests we, choose the form.", "the role check asks whether it is a subject", "Whither, where to")) {
+            val narrated = current.copy(units = current.units.map { u -> if (u.number != 3) u else u.copy(topicSummary = text) })
+            assertTrue(text, V2DesignDiagnostics.audit(narrated).signals.any { it.rule == "LEARNER_PROVENANCE_NARRATION" && it.unit == 3 })
+        }
+        val plain = current.copy(units = current.units.map { u -> if (u.number != 3) u else u.copy(topicSummary = "These words are masculine.") })
+        assertFalse(V2DesignDiagnostics.audit(plain).signals.any { it.rule == "LEARNER_PROVENANCE_NARRATION" && it.unit == 3 })
     }
 
     @Test fun identicalRequiredDisplaysAreLocatedWithoutRewritingTheirKeys() {

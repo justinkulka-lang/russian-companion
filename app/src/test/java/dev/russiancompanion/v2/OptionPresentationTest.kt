@@ -22,8 +22,9 @@ class OptionPresentationTest {
         // T14-a appends 18 Units 1-2 items after them (17 checked print pairs and one guided item);
         // T14-b adds nine typed items with no options (eight checked, one guided) for Units 1-2, then two
         // closed gender checks and fourteen typed items (twelve checked, two guided) for Units 3-4;
-        // T14-c adds seven typed question-word items (six checked, one guided) for Unit 5.
-        assertEquals(676, p.items.size)
+        // T14-c adds seven typed question-word items (six checked, one guided) for Unit 5; T14-n2 replaces six
+        // Unit 2 print pairs with six concept checks and adds one guided concept item.
+        assertEquals(677, p.items.size)
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
             p.items.drop(622).take(4).map { it.id }.toSet())
         assertEquals(562, p.items.count { it.options.firstOrNull() == it.answer })

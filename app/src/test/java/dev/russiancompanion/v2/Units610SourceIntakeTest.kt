@@ -63,7 +63,7 @@ class Units610SourceIntakeTest {
     @Test
     fun earlierUnitDigestsStayPutAndLaterUnitsStayIsolated() {
         val pack = pack()
-        assertEquals("f2d406eb220b39241f53877f996cb6d27f015c4122dc382ea139d39becd3c504", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("e6159274fd83c366053845d10053c7775b7f78ae798b784e2b929cb0a67f89d0", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,

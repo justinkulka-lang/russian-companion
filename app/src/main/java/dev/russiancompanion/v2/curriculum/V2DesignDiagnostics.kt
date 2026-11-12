@@ -46,6 +46,14 @@ internal object V2DesignDiagnostics {
     private val sourceLink = Regex("\\[(?:https?://|mailto:)|^={2,}.*={2,}\\s*$", setOf(RegexOption.IGNORE_CASE, RegexOption.MULTILINE))
     private val rawHtml = Regex("</?[a-z][^>]*>|&(?:#[0-9]+|#x[0-9a-f]+|[a-z][a-z0-9]+);", RegexOption.IGNORE_CASE)
     private val governance = Regex("\\b(?:admitted|frozen|retained|review[- _]pending|CONTENT_COMPLETE_REVIEW_PENDING|IMPLEMENTED_PENDING_FINAL_AUDIT|RESEARCH_VERIFIED|OWNER_ACCEPTED)\\b", RegexOption.IGNORE_CASE)
+    // A2-26 learner voice (owner direction, T14-n2): learner text teaches; it does not narrate where a fact came from
+    // or talk about the app's checks. Attribution stays in the source and provenance records.
+    private val provenanceNarration = Regex(
+        "\\bthe dictionary (?:gives|lists|places|records)\\b|\\bdictionary entr(?:y|ies)\\b|\\bthe grammar (?:page|table) (?:says|gives|records)\\b|" +
+            "\\b(?:form|row) glossed\\b|\\bquoted exactly\\b|\\bcomes? from the (?:dictionary|grammar)\\b|\\bfrom the grammar (?:page|table)\\b|" +
+            "\\bchecks? (?:asks?|requests?)\\b|\\bwhen the check\\b|\\bwhither\\b|\\bwhence\\b",
+        RegexOption.IGNORE_CASE,
+    )
     private val answerInstruction = Regex("\\b(?:choose|select|selecting|the answer|matching description|is the matching)\\b", RegexOption.IGNORE_CASE)
     private val sentenceBreak = Regex("(?<=[.;!?])\\s+")
 
@@ -82,6 +90,9 @@ internal object V2DesignDiagnostics {
             if (value != null && (governance.containsMatchIn(value) || sourceIds.any { it.containsMatchIn(value) }))
                 add("LEARNER_GOVERNANCE_TERM", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
                     "Learner text contains a governance term or source ID prohibited by A2-26.")
+            if (value != null && provenanceNarration.containsMatchIn(value))
+                add("LEARNER_PROVENANCE_NARRATION", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
+                    "Learner text narrates provenance or talks about the app's checks (A2-26 learner voice); keep attribution in the records.")
         }
         fun stepText(step: V2Step): String = buildString {
             append(step.body); append('\n'); append(step.bookDirection.orEmpty()); append('\n'); append(step.companionDirection.orEmpty())

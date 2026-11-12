@@ -936,7 +936,7 @@ class V2RebuildTest {
         val pack = pack()
         assertEquals(30, pack.ownedEditionMappings.size)
         assertTrue(pack.ownedEditionMappings.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
-        assertEquals("f2d406eb220b39241f53877f996cb6d27f015c4122dc382ea139d39becd3c504", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("e6159274fd83c366053845d10053c7775b7f78ae798b784e2b929cb0a67f89d0", V2Validator.unitContentReviewDigest(pack, 3))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)
