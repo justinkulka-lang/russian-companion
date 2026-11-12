@@ -30,7 +30,7 @@ import java.security.MessageDigest
 
 class Units2630SourceIntakeTest {
     private val preservedContentDigests = mapOf(
-        3 to "5a774809093a407672a9668f5560607d2904fddc6d074d35819f6210edaad4a4",
+        3 to "f2d406eb220b39241f53877f996cb6d27f015c4122dc382ea139d39becd3c504",
         16 to "31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87",
         17 to "415d0ecc0e4e8ce649dff17aef09851beddc39f191f6bedf783af07904481c62",
         18 to "603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac",

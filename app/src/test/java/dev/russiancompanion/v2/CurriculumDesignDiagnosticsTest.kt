@@ -10,8 +10,8 @@ class CurriculumDesignDiagnosticsTest {
     @Test fun currentCorpusHasLocatedSignalsWhileCompatibilityValidationStillPasses() {
         val report = V2DesignDiagnostics.audit(current)
         assertEquals(30, report.counts["units"])
-        assertEquals(669, report.counts["items"])
-        assertEquals(468, report.counts["requiredChecks"])
+        assertEquals(676, report.counts["items"])
+        assertEquals(474, report.counts["requiredChecks"])
         assertEquals("NEEDS_CORRECTION_OR_REVIEW", report.verdict)
         assertTrue(report.signals.any { it.rule == "LEARNER_MARKUP" && "u14-st-teach-impersonal-2" in it.entityIds })
         assertTrue(report.signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" && "u13-i-tense-keep-2" in it.entityIds })

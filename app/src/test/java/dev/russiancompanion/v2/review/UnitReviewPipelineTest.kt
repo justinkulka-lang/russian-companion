@@ -202,7 +202,7 @@ class UnitReviewPipelineTest {
         val pending = buildUnitReviewPackage(pack, 1)
         assertEquals(prior, pending.mappingPackageDigest)
         assertEquals(V2Validator.unitContentReviewDigest(pack, 1), pending.contentReviewDigest)
-        assertEquals("5a774809093a407672a9668f5560607d2904fddc6d074d35819f6210edaad4a4", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("f2d406eb220b39241f53877f996cb6d27f015c4122dc382ea139d39becd3c504", V2Validator.unitContentReviewDigest(pack, 3))
         val mutations = listOf(
             "lesson number" to facts.copy(proposedLessonNumber = 9),
             "printed page start" to facts.copy(printedPageStart = 2),
