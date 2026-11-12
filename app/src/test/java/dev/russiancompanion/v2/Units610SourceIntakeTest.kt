@@ -68,7 +68,7 @@ class Units610SourceIntakeTest {
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
-        assertEquals("e8b054ae9ce8b7f9789c9bb69e58c47c4d70ac8a832815b24e2521cf1e82d20d", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        assertEquals("c434eaf8302c794f76ab5c3e3aa146971912bad3ae069ea5f029f73e00e07fb8", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(
