@@ -62,12 +62,41 @@ class AssessmentDiagnosticsTest {
         val b = choice("cue").copy(options = listOf("key", "cue"))
         val c = choice("label").copy(prompt = "Which label is in the first option?")
         val d = typed("typed").copy(prompt = "Enter variant")
-        val signals = V2AssessmentDiagnostics.audit(pack(listOf(a, b, c, d), teaching = "The exact form is key.")).second
+        // The checks sit in the teaching step's own session (T14-n1 placement rule).
+        val signals = V2AssessmentDiagnostics.audit(pack(listOf(a, b, c, d), teaching = "The exact form is key.",
+            practice = listOf(a, b, c, d).map { it.id })).second
         assertEquals(listOf("prompt", "typed"), signals.filter { it.rule == "A2_24_KEY_IN_PROMPT" }.flatMap { it.entityIds }.sorted())
         assertEquals(listOf("cue"), signals.single { it.rule == "A2_24_ONLY_DISTRACTOR_IS_CUE" }.entityIds)
         assertEquals(listOf("label"), signals.single { it.rule == "A2_24_LABEL_OR_POSITION" }.entityIds)
         assertEquals(4, signals.count { it.rule == "A2_24_EXACT_KEY_IN_TEACHING" && it.relatedStepIds == listOf("teach") })
         assertTrue(signals.all { it.unit == 3 })
+    }
+
+    @Test fun exactKeyInTeachingFlagsOnlyThePrecedingStepOrTheSameSession() {
+        val item = choice("item")
+        fun placed(vararg sessions: List<V2Step>): V2CurriculumPack {
+            val objective = V2Objective("objective", 3, "Engineering fixture", "PRODUCTION",
+                checkItemIds = listOf("item"), instructionStepIds = listOf("teach"))
+            return current.copy(units = listOf(current.unit(3)!!.copy(objectives = listOf(objective), sessions = sessions.mapIndexed { n, steps ->
+                V2Session("session-$n", "Fixture $n", 1, objectiveIds = listOf("objective"), steps = steps) })),
+                items = listOf(item), examples = emptyList(), references = emptyList())
+        }
+        fun flagged(p: V2CurriculumPack) = V2AssessmentDiagnostics.audit(p).second
+            .filter { it.rule == "A2_24_EXACT_KEY_IN_TEACHING" }.flatMap { it.relatedStepIds }
+        val teach = V2Step("teach", "TEACH", "Pattern", "The exact form is key.")
+        val other = V2Step("other", "TEACH", "Other", "A different rule.")
+        val book = V2Step("book", "BOOK", "Book", "Work the lesson in your copy.")
+        val check = V2Step("check", "CHECK", "Check", "Independent check.", itemIds = listOf("item"))
+        // Same session: the teaching step states the key.
+        assertEquals(listOf("teach"), flagged(placed(listOf(teach, check))))
+        // Directly preceding step, across a session boundary.
+        assertEquals(listOf("teach"), flagged(placed(listOf(teach), listOf(check))))
+        // Taught in an earlier session and recalled after other work: no signal.
+        assertEquals(emptyList<String>(), flagged(placed(listOf(teach), listOf(book, check))))
+        // Teaching in the same session that does not state the key: no signal.
+        assertEquals(emptyList<String>(), flagged(placed(listOf(teach), listOf(other, book, check))))
+        // An item no step presents is not disclosed by any teaching step.
+        assertEquals(emptyList<String>(), flagged(placed(listOf(teach, book))))
     }
 
     @Test fun hiddenCueExtraDistractorAndSubstringDoNotGiveFalseMechanicalDisclosure() {

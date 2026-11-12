@@ -32,6 +32,7 @@ internal object V2AssessmentDiagnostics {
         val examples = pack.examples.associateBy { it.id }
         for (unit in pack.units.sortedBy { it.number }) {
             val steps = unit.sessions.flatMap { it.steps }.associateBy { it.id }
+            val ordered = unit.sessions.flatMap { session -> session.steps.map { session to it } }
             val requiredIds = unit.objectives.filter { it.gating }.flatMap { it.checkItemIds }.toSet()
             val checkedIds = (unit.objectives.flatMap { it.checkItemIds } + steps.values
                 .filter { it.kind in setOf("CHECK", "PRACTICE") }.flatMap { it.itemIds }).toSet()
@@ -70,8 +71,14 @@ internal object V2AssessmentDiagnostics {
                 if (!item.isTypedResponse() && distractors.size == 1 && item.promptLetterRole == "CUE" &&
                     distractors.single() == item.promptLetter) add("A2_24_ONLY_DISTRACTOR_IS_CUE", listOf(id), "options",
                     "The only distractor is the displayed cue; rejecting that cue gives away the key.")
-                val teaching = unit.objectives.filter { id in it.checkItemIds }.flatMap { it.instructionStepIds }
-                    .distinct().mapNotNull(steps::get).filter { it.kind == "TEACH" }
+                // T14-n1 (owner direction 2026-11-11): a key counts as stated by teaching only when it appears in
+                // the teaching step directly before a step that presents the item, or in a teaching step of that
+                // step's own session. A word taught in an earlier session and recalled later does not flag.
+                val teaching = ordered.withIndex().filter { (_, placed) -> id in placed.second.itemIds }
+                    .flatMap { (index, placed) ->
+                        listOfNotNull(ordered.getOrNull(index - 1)?.second?.takeIf { it.kind == "TEACH" }) +
+                            placed.first.steps.filter { it.kind == "TEACH" }
+                    }.distinctBy { it.id }
                 val revealing = teaching.filter { step ->
                     val displayed = listOf(step.title, step.body, step.bookDirection.orEmpty(), step.companionDirection.orEmpty()) +
                         step.exampleIds.mapNotNull(examples::get).flatMap { listOf(it.display, it.note) }
