@@ -37,6 +37,8 @@ internal const val UNITS_1_5_T14B_CURRICULUM_COMMIT = "c39ee5840159c7aad24445f33
 internal const val UNITS_1_5_T14C_CURRICULUM_COMMIT = "29feecfb7f2f16d105803f7005abbfa411254e1d"
 // T14-n2 Unit 2 concept checks and Units 1-5 learner voice: Units 1-5 bind here; earlier pins stay historical.
 internal const val UNITS_1_5_T14N2_CURRICULUM_COMMIT = "714970263fd2f4860a3dd8bab5d100ba3310a372"
+// T14-n2 verify (CC021 Unit 4 key sentence): Units 1-5 bind here; earlier pins stay historical.
+internal const val UNITS_1_5_T14N2_VERIFY_CURRICULUM_COMMIT = "4d7bf44aeee231b7695960fc24c5e32abdeb2e0c"
 
 internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
 
@@ -170,7 +172,7 @@ internal const val UNIT13_PRESENT_REVIEW_CURRICULUM_COMMIT = "bd00e5082c9f31d2ae
 internal const val UNIT14_PLURAL_POSSESSION_REVIEW_CURRICULUM_COMMIT = "d72afd1232857a857624c20c58f4bcd3cb5c8564"
 
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
-    if (unitNumber in 1..5) UNITS_1_5_T14N2_CURRICULUM_COMMIT
+    if (unitNumber in 1..5) UNITS_1_5_T14N2_VERIFY_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNIT5_GRAMMAR_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 3) UNIT3_GENDER_TEACHING_CURRICULUM_COMMIT
     else if (unitNumber == 4) UNIT4_PRESENT_TEACHING_CURRICULUM_COMMIT
