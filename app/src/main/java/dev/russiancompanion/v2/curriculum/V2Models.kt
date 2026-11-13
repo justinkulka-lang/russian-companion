@@ -338,6 +338,11 @@ internal data class V2CheckItem(
     val assessment: V2Assessment? = null,
     val typedAnswerKey: V2TypedAnswerKey? = null,
     val dictationAudioAssetId: String? = null,
+    /**
+     * The "russian-fact" marker (T15-n0, owner ruling 11/12/2026): sentences of [feedback] or [distractorRationales]
+     * that state a fact about Russian in English. A marked sentence needs a source record like any other Russian fact.
+     */
+    val russianFacts: List<String> = emptyList(),
 )
 
 @Serializable
@@ -425,6 +430,8 @@ internal data class V2Step(
     val bookDirection: String? = null,
     val companionDirection: String? = null,
     val remediationStepId: String? = null,
+    /** The "russian-fact" marker (T15-n0): sentences of a REMEDIATE [body] that state a fact about Russian in English. */
+    val russianFacts: List<String> = emptyList(),
 )
 
 @Serializable

@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "0189f5b2e9958a87fa346c8ba9e53315f5915d66f8b705180539bf824a0b7b6a",
+      "sha256": "a428485d2be2b4bc532ac9ae700db13bbf32df29cb931d5ea13284af4295c7a3",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3335,6 +3335,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Adds the A2-23 typed floor for Units 3-5 (at least 30 percent of required checks available as typed items). No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T15-n0",
+      "previousRecordedSha256": "0189f5b2e9958a87fa346c8ba9e53315f5915d66f8b705180539bf824a0b7b6a",
+      "sha256": "a428485d2be2b4bc532ac9ae700db13bbf32df29cb931d5ea13284af4295c7a3",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Owner ruling 11/12/2026 and owner correction: the English source-record rule reads hosts by field. Prompts, step titles, step directions and instruction-step bodies need a source only for Cyrillic; feedback, remediation and distractor-rationale sentences need one only when they contain Cyrillic, quote a pack gloss, answer, option or cue, or carry the new russian-fact marker (schema field russianFacts on items and steps, unused in content). Teaching bodies, glosses, answers, options, accepted answers, cues and examples keep the full requirement; the Russian-string check is unchanged. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

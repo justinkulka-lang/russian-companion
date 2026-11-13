@@ -555,6 +555,7 @@ internal object V2Validator {
                     "objectiveIds" to canonArr(session.objectiveIds.map(::canonStr)),
                     "steps" to canonArr(session.steps.map { step ->
                         canonObj(
+                            *listOfNotNull(step.russianFacts.takeIf { it.isNotEmpty() }?.let { "russianFacts" to canonArr(it.map(::canonStr)) }).toTypedArray(),
                             "id" to canonStr(step.id),
                             "kind" to canonStr(step.kind),
                             "title" to canonStr(step.title),
@@ -621,6 +622,7 @@ internal object V2Validator {
         item.assessment?.let { assessment -> fields += "assessment" to canonicalAssessment(assessment) }
         item.typedAnswerKey?.let { key -> fields += "typedAnswerKey" to canonStr(typedAnswerKeyContent(key)) }
         item.dictationAudioAssetId?.let { fields += "dictationAudioAssetId" to canonStr(it) }
+        if (item.russianFacts.isNotEmpty()) fields += "russianFacts" to canonArr(item.russianFacts.map(::canonStr))
         return canonObj(*fields.toTypedArray())
     }
 
@@ -5308,31 +5310,15 @@ internal object V2Validator {
                 errors += "independently authored English makes a linguistic claim"
             }
         }
+        val quoteTargets = englishQuoteTargets(pack)
+        errors += russianFactMarkerErrors(pack)
+        val hostsByUnit = englishProvenanceHosts(pack).groupBy { it.unitNumber }
         pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
             val shipped = shippedByUnit.getValue(unit.number)
             val scaffolds = pack.authoredEnglishRecords.filter { it.unitNumber == unit.number }.map { it.text }
             val spans = shipped + scaffolds
-            val hosts = mutableListOf<String>()
-            unit.sessions.forEach { session ->
-                session.steps.forEach { step ->
-                    hosts += step.title
-                    hosts += step.body
-                    step.bookDirection?.let { hosts += it }
-                    step.companionDirection?.let { hosts += it }
-                    step.exampleIds.forEach { id ->
-                        pack.example(id)?.let { hosts += it.display; hosts += it.note }
-                    }
-                    step.itemIds.forEach { id -> addItemHosts(pack, id, hosts) }
-                }
-            }
-            unit.objectives.forEach { objective ->
-                objective.exampleIds.forEach { id ->
-                    pack.example(id)?.let { hosts += it.display; hosts += it.note }
-                }
-                objective.checkItemIds.forEach { id -> addItemHosts(pack, id, hosts) }
-            }
-            hosts.forEach { host ->
-                val leftover = unboundLetters(host, spans)
+            hostsByUnit[unit.number].orEmpty().forEach { host ->
+                val leftover = unboundLetters(host.text, spans, exemptEnglishRanges(host, quoteTargets))
                 if (leftover.isNotEmpty()) {
                     errors += "English linguistic claim has no admitted source record: ${leftover.take(120)}"
                 }
@@ -5373,7 +5359,11 @@ internal object V2Validator {
         return parts.isNotEmpty() && parts.all { it in forms }
     }
 
-    private fun unboundLetters(host: String, spans: List<String>): String {
+    /**
+     * [exempt] ranges are applied after span coverage, so they can only remove leftovers that span coverage alone
+     * would report; they never change how source spans bind.
+     */
+    private fun unboundLetters(host: String, spans: List<String>, exempt: List<IntRange> = emptyList()): String {
         val covered = BooleanArray(host.length)
         spans.filter { it.isNotEmpty() }.distinct().sortedByDescending { it.length }.forEach { span ->
             var start = 0
@@ -5387,8 +5377,152 @@ internal object V2Validator {
                 start = index + 1
             }
         }
+        exempt.forEach { range -> for (cursor in range) covered[cursor] = true }
         return host.filterIndexed { index, char -> !covered[index] && char.isLetter() }
     }
+
+    /** How the T15-n0 owner ruling (11/12/2026) treats an English host string. */
+    internal enum class EnglishProvenanceMode {
+        /** Teaching bodies, glosses, meanings, answers, options, accepted answers, cues and examples: every letter needs a source. */
+        FULL,
+        /** Prompts, step titles, step directions and instruction-step bodies: authored English; only Cyrillic needs a source. */
+        FIELD_EXEMPT,
+        /**
+         * Feedback, remediation bodies and distractor rationales: a sentence is authored English unless it contains Cyrillic,
+         * quotes a pack gloss, answer, option or cue, or overlaps a "russian-fact" marker.
+         */
+        SENTENCE_EXEMPT,
+    }
+
+    internal data class EnglishProvenanceHost(
+        val unitNumber: Int,
+        val field: String,
+        val text: String,
+        val mode: EnglishProvenanceMode,
+        val russianFacts: List<String> = emptyList(),
+        val ownerId: String = "",
+    )
+
+    /** Step kinds whose bodies are instructions rather than teaching. Any other kind keeps the full requirement. */
+    private val INSTRUCTION_STEP_KINDS = setOf("GUIDED", "CHECK", "ORIENT", "BOOK", "ANKI", "BINDER", "TUTOR", "SPEAK")
+
+    /** Every English host the source-record rule reads, in the same order and with the same coverage as before T15-n0. */
+    internal fun englishProvenanceHosts(pack: V2CurriculumPack): List<EnglishProvenanceHost> {
+        val units = pack.provenanceRecords.map { it.unitNumber }.toSet()
+        val result = mutableListOf<EnglishProvenanceHost>()
+        pack.units.filter { it.number in units }.forEach { unit ->
+            var owner = ""
+            fun add(field: String, text: String, mode: EnglishProvenanceMode, facts: List<String> = emptyList()) {
+                result += EnglishProvenanceHost(unit.number, field, text, mode, facts, owner)
+            }
+            fun addExample(id: String) {
+                owner = id
+                pack.example(id)?.let {
+                    add("example display", it.display, EnglishProvenanceMode.FULL)
+                    add("example note", it.note, EnglishProvenanceMode.FULL)
+                }
+            }
+            fun addItem(id: String) {
+                val item = pack.item(id) ?: return
+                owner = id
+                add("item prompt", item.prompt, EnglishProvenanceMode.FIELD_EXEMPT)
+                item.promptLetter?.let { add("item cue", it, EnglishProvenanceMode.FULL) }
+                add("item answer", item.answer, EnglishProvenanceMode.FULL)
+                item.typedAnswerKey?.acceptedAnswers.orEmpty().forEach { add("item accepted answer", it, EnglishProvenanceMode.FULL) }
+                add("item feedback", item.feedback, EnglishProvenanceMode.SENTENCE_EXEMPT, item.russianFacts)
+                item.options.forEach { add("item option", it, EnglishProvenanceMode.FULL) }
+                item.distractorRationales.forEach { add("item distractor rationale", it, EnglishProvenanceMode.SENTENCE_EXEMPT, item.russianFacts) }
+                item.assessment?.let { assessment ->
+                    add("assessment why", assessment.whyAnswerDemonstratesObjective, EnglishProvenanceMode.FULL)
+                    assessment.distractorDifference.forEach { add("assessment distractor difference", it, EnglishProvenanceMode.FULL) }
+                }
+            }
+            unit.sessions.forEach { session ->
+                session.steps.forEach { step ->
+                    owner = step.id
+                    add("step title", step.title, EnglishProvenanceMode.FIELD_EXEMPT)
+                    when {
+                        step.kind == "REMEDIATE" -> add("remediation body", step.body, EnglishProvenanceMode.SENTENCE_EXEMPT, step.russianFacts)
+                        step.kind in INSTRUCTION_STEP_KINDS -> add("instruction body", step.body, EnglishProvenanceMode.FIELD_EXEMPT)
+                        else -> add("teaching body", step.body, EnglishProvenanceMode.FULL)
+                    }
+                    step.bookDirection?.let { add("step book direction", it, EnglishProvenanceMode.FIELD_EXEMPT) }
+                    step.companionDirection?.let { add("step companion direction", it, EnglishProvenanceMode.FIELD_EXEMPT) }
+                    owner = step.id
+                    step.exampleIds.forEach(::addExample)
+                    step.itemIds.forEach(::addItem)
+                }
+            }
+            unit.objectives.forEach { objective ->
+                objective.exampleIds.forEach(::addExample)
+                objective.checkItemIds.forEach(::addItem)
+            }
+        }
+        return result
+    }
+
+    /** Ranges of [host] that the owner ruling exempts. Applied after source spans, so they only remove leftovers. */
+    internal fun exemptEnglishRanges(host: EnglishProvenanceHost, quoteTargets: Set<String>): List<IntRange> = when (host.mode) {
+        EnglishProvenanceMode.FULL -> emptyList()
+        EnglishProvenanceMode.FIELD_EXEMPT -> host.text.indices.filter { !hasCyrillic(host.text[it].toString()) }.map { it..it }
+        EnglishProvenanceMode.SENTENCE_EXEMPT -> {
+            val marked = host.russianFacts.filter { it.isNotBlank() }.flatMap { fact ->
+                Regex(Regex.escape(fact)).findAll(host.text).map { it.range }.toList()
+            }
+            englishSentenceRanges(host.text).filter { range ->
+                val sentence = host.text.substring(range.first, range.last + 1)
+                !hasCyrillic(sentence) &&
+                    quotedSegments(sentence).none { normalizedQuote(it) in quoteTargets } &&
+                    marked.none { it.first <= range.last && range.first <= it.last }
+            }
+        }
+    }
+
+    internal fun englishSentenceRanges(text: String): List<IntRange> = ENGLISH_SENTENCE.findAll(text).mapNotNull { match ->
+        val first = match.value.indexOfFirst { !it.isWhitespace() }
+        if (first < 0) null else (match.range.first + first)..(match.range.first + match.value.indexOfLast { !it.isWhitespace() })
+    }.toList()
+
+    /** Strings the pack shows as a gloss, answer, option, accepted answer, cue or example, normalized for quote matching. */
+    internal fun englishQuoteTargets(pack: V2CurriculumPack): Set<String> {
+        val texts = pack.items.flatMap { item ->
+            listOf(item.answer) + item.options + item.typedAnswerKey?.acceptedAnswers.orEmpty() + listOfNotNull(item.promptLetter)
+        } + pack.examples.flatMap { listOf(it.display, it.note) } + pack.provenanceRecords.map { it.shippedText }
+        return texts.flatMap { text ->
+            val normalized = normalizedQuote(text)
+            listOf(normalized, normalized.replace(Regex("^(to|a|an|the)\\s+"), ""))
+        }.filter { it.isNotEmpty() }.toSet()
+    }
+
+    private fun quotedSegments(sentence: String): List<String> = QUOTED.findAll(sentence).map { match ->
+        match.groupValues.drop(1).first { it.isNotEmpty() }
+    }.toList()
+
+    private fun normalizedQuote(text: String): String =
+        text.trim().lowercase().trim { it.isWhitespace() || it in ".,;:!?" }
+
+    /** Each "russian-fact" marker must quote a sentence of the feedback, rationale or remediation body it marks. */
+    internal fun russianFactMarkerErrors(pack: V2CurriculumPack): List<String> {
+        val errors = mutableListOf<String>()
+        pack.items.forEach { item ->
+            item.russianFacts.forEach { fact ->
+                if (fact.isBlank() || (fact !in item.feedback && item.distractorRationales.none { fact in it })) {
+                    errors += "russian-fact marker on item ${item.id} does not match its feedback or rationales: ${fact.take(80)}"
+                }
+            }
+        }
+        pack.units.flatMap { it.sessions }.flatMap { it.steps }.forEach { step ->
+            step.russianFacts.forEach { fact ->
+                if (fact.isBlank() || step.kind != "REMEDIATE" || fact !in step.body) {
+                    errors += "russian-fact marker on step ${step.id} does not match a remediation body: ${fact.take(80)}"
+                }
+            }
+        }
+        return errors
+    }
+
+    private val ENGLISH_SENTENCE = Regex("[^.!?\\n]+[.!?]*")
+    private val QUOTED = Regex("\"([^\"]+)\"|\u201c([^\u201d]+)\u201d|\u2018([^\u2019]+)\u2019|\u00ab([^\u00bb]+)\u00bb|(?<![A-Za-z])'([^']+)'(?![A-Za-z])")
 
     private fun englishSpanBoundary(host: String, index: Int, end: Int): Boolean {
         val span = host.substring(index, end)
