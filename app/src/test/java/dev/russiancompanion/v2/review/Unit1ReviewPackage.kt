@@ -171,8 +171,12 @@ internal const val UNIT13_PRESENT_REVIEW_CURRICULUM_COMMIT = "bd00e5082c9f31d2ae
 // Actual verified Unit14 supplied-plural/possession/reported-time core; older sources stay historical.
 internal const val UNIT14_PLURAL_POSSESSION_REVIEW_CURRICULUM_COMMIT = "d72afd1232857a857624c20c58f4bcd3cb5c8564"
 
+// T15-n1 corrects Unit 5 stress provenance; this is the genuine content ancestor.
+internal const val UNIT5_T15N1_CURRICULUM_COMMIT = "792344b957ad174cebc1e9907411d344df3de0d1"
+
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
-    if (unitNumber in 1..5) UNITS_1_5_T14N2_VERIFY_CURRICULUM_COMMIT
+    if (unitNumber == 5) UNIT5_T15N1_CURRICULUM_COMMIT
+    else if (unitNumber in 1..4) UNITS_1_5_T14N2_VERIFY_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNIT5_GRAMMAR_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 3) UNIT3_GENDER_TEACHING_CURRICULUM_COMMIT
     else if (unitNumber == 4) UNIT4_PRESENT_TEACHING_CURRICULUM_COMMIT
