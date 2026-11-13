@@ -11,6 +11,17 @@ import java.nio.file.Files
 
 class ReleaseSourceDigestTest {
     @Test
+    fun audioPlanningDocumentsAreOutsideTheReleaseDigest() {
+        val root = repositoryRoot()
+        val paths = listOf("docs/audio", "docs/audio/AUDIO_PLAN.md", "docs/audio/audio-manifest.csv", "docs/audio/TUTOR_READING_LIST.md")
+        paths.forEach { assertFalse(it, isReleaseSourceRelative(it)) }
+        assertFalse(listReleaseSourceRelatives(root).any { it == "docs/audio" || it.startsWith("docs/audio/") })
+        val before = computeReleaseSourceDigest(root)
+        val replacements = paths.associateWith { "changed planning document\n".toByteArray() }
+        assertEquals(before, computeReleaseSourceDigest(root, replacements))
+    }
+
+    @Test
     fun committedCandidateRecordsTheCurrentSourceDigestAndIdentity() {
         val root = repositoryRoot()
         val binding = currentReleaseBinding(root)

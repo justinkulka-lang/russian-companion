@@ -21,7 +21,8 @@ class Unit4NominativeRoleTest {
  @Test fun twoDistinctIndependentSubjectsAndFullTeachingAreRequired() {
   val p=pack();val o=obj(p);assertEquals(listOf("u4-i-nom-role-train","u4-i-nom-role-student"),o.checkItemIds)
   val s=p.unit(4)!!.sessions.single{it.id=="u4-s-nominative"};val t=s.steps.filter{it.kind=="TEACH"};val r=s.steps.single{it.id=="u4-st-rem-nominative"};assertEquals(3,t.size);assertEquals(3,s.steps.takeWhile{it.kind!="GUIDED"}.count{it.kind=="TEACH"});assertEquals(t.joinToString("\n\n"){it.body},r.body);assertEquals(o.exampleIds,r.exampleIds);assertEquals(3,r.exampleIds.size)
-  assertTrue(r.body.contains("not every nominative noun is a subject"));assertFalse(r.body.contains("check"));o.checkItemIds.forEach{id->val i=p.item(id)!!;assertTrue(id,r.body.contains(i.promptLetter!!));assertTrue(id,r.body.contains(i.answer))} // CC021: remediation shows each cue and keyassertEquals(listOf("Поезд старый","Студент новый"),o.checkItemIds.map{p.item(it)!!.promptLetter});assertTrue(o.checkItemIds.all{V2Validator.featureValid(p,p.item(it)!!)})
+  assertTrue(r.body.contains("not every nominative noun is a subject"));assertFalse(r.body.contains("check"));o.checkItemIds.forEach{id->val i=p.item(id)!!;assertTrue(id,r.body.contains(i.promptLetter!!));assertTrue(id,r.body.contains(i.answer))} // CC021: remediation shows each cue and key
+  assertEquals(listOf("Поезд старый","Студент новый"),o.checkItemIds.map{p.item(it)!!.promptLetter});assertTrue(o.checkItemIds.joinToString("\n"){ id -> V2Validator.structureValid(p,p.item(id)!!).joinToString("; ") },o.checkItemIds.all{V2Validator.featureValid(p,p.item(it)!!)})
   val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
  }
  @Test fun coordinatedRoleKeyAndCanonicalTupleHashReversalIsRejected() {
