@@ -20,8 +20,6 @@ import androidx.navigation.compose.rememberNavController
 import dev.russiancompanion.data.appearance.AppearanceStore
 import dev.russiancompanion.data.local.LocalStore
 import dev.russiancompanion.domain.appearance.defaultAppearancePreference
-import dev.russiancompanion.presentation.navigation.snapshotDispatcher
-import dev.russiancompanion.presentation.theme.CompanionTheme
 import dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA
 import dev.russiancompanion.v2.curriculum.OPTIONAL_PRACTICE
 import dev.russiancompanion.v2.curriculum.PRESCRIBED_CHECK
@@ -140,7 +138,7 @@ internal fun V2App(
     onRetryOpen: () -> Unit,
     appearanceStore: AppearanceStore = AppearanceStore.memory(defaultAppearancePreference()),
     recordedAt: () -> String = { LocalDateTime.now().toString() },
-    persistence: V2Persistence? = store?.let { StoreV2Persistence(it) },
+    persistence: V2Persistence? = store?.let { StoreV2Persistence(it, pack) },
 ) {
     val dispatcher = snapshotDispatcher()
     val scope = androidx.compose.runtime.rememberCoroutineScope()
@@ -157,8 +155,16 @@ internal fun V2App(
             appearanceStore.preference.collect { appearance = it }
         }
     }
-    val learner = writes?.learner
-    val ready = learner != null && pack != null
+    val rawLearner = writes?.learner
+    val completionSnapshot = if (pack != null && rawLearner != null) {
+        rememberGoverned(pack, rawLearner, label = "completion-evidence") {
+            dev.russiancompanion.v2.curriculum.currentCompletedUnitNumbers(pack, rawLearner)
+            pack to rawLearner
+        }
+    } else null
+    // Publish only after worker-side verification; a different pack cannot reuse old evidence.
+    val learner = completionSnapshot?.takeIf { it.first === pack }?.second
+    val ready = learner != null && pack != null && writes != null
     val banner = when {
         !ready && writes?.loadFailed == true -> "Saved progress could not be read."
         !ready && pack != null && store != null -> "Loading saved progress"
@@ -282,6 +288,21 @@ internal fun V2App(
                             withCapturedLearnerEpoch(epoch) { api.recordAttempt(write) }
                         }
                     },
+                    onOpenCumulativeReview = { targetUnit ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("review:open:$targetUnit") {
+                            withContext(Dispatchers.Default) { V2PackIdentityIndex.warm(pack) }
+                            withCapturedLearnerEpoch(epoch) { api.openCumulativeReview(pack, targetUnit) }
+                        }
+                        Unit
+                    },
+                    onCumulativeAnswer = { assignment, slot, selected ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("review:answer:$assignment:$slot") {
+                            withCapturedLearnerEpoch(epoch) { api.answerCumulativeReview(pack, assignment, slot, selected) }
+                        }
+                        Unit
+                    },
                     onPracticeAttempt = { labId, itemId, selected ->
                         if (writes.pending.any { it.startsWith("practice:$labId:$itemId:") }) {
                             return@V2NavHost false
@@ -351,9 +372,46 @@ internal fun V2App(
                         }
                         Unit
                     },
+                    onStartUnitTest = { unit ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("unit-test:start:$unit") { withCapturedLearnerEpoch(epoch) { api.startUnitTest(pack, unit) } }
+                        Unit
+                    },
+                    onUnitTestAnswer = { attempt, index, value ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("unit-test:answer:$attempt:$index") { withCapturedLearnerEpoch(epoch) { api.answerUnitTest(pack, attempt, index, value) } }
+                        Unit
+                    },
+                    onSubmitUnitTest = { attempt ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("unit-test:submit:$attempt") { withCapturedLearnerEpoch(epoch) { api.submitUnitTest(pack, attempt) } }
+                        Unit
+                    },
+                    onBinderSelfCheck = { unit ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("binder:$unit") { withCapturedLearnerEpoch(epoch) { api.recordBinderSelfCheck(pack, unit, recordedAt()) } }
+                        Unit
+                    },
+                    onSetUnitTarget = { unit, day ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("target:$unit") {
+                            withCapturedLearnerEpoch(epoch) { api.setUnitTarget(unit, day) }
+                        }
+                        Unit
+                    },
                     onAdvance = { unit ->
                         val epoch = store.learnerMutationEpoch()
                         writes.submit("advance:$unit") {
+                            val latest = api.learner()
+                            withContext(Dispatchers.Default) {
+                                V2PackIdentityIndex.warm(pack)
+                                val candidate = pack.unit(unit) ?: error("missing unit")
+                                if (!dev.russiancompanion.v2.curriculum.canOpenUnit(
+                                        dev.russiancompanion.v2.curriculum.unitState(pack, candidate, latest)) ||
+                                    !dev.russiancompanion.v2.curriculum.advancementDecision(pack, candidate, latest).allowed) {
+                                    error("current advancement evidence is incomplete")
+                                }
+                            }
                             val nextUnit = (unit + 1).coerceAtMost(30)
                             val nextSessionId = pack.unit(nextUnit)?.sessions?.firstOrNull()?.id
                             val digest = withContext(Dispatchers.Default) {

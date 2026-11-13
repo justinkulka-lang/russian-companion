@@ -28,7 +28,7 @@ internal val CLOSED_ITEM_KINDS = setOf(
     "SOURCE_QUESTION",
     "SOURCE_CASE",
     "SOURCE_INDECLINABLE",
-) + GRAMMAR_ITEM_KINDS
+) + GRAMMAR_ITEM_KINDS + TYPED_ITEM_KINDS
 
 internal val LINGUISTIC_REFERENCE_CLASSIFICATION = "LINGUISTIC_INSTRUCTION"
 
@@ -98,6 +98,8 @@ internal data class V2CurriculumPack(
     val references: List<V2ReferenceEntry>,
     val units: List<V2Unit>,
     val sourceCapabilities: List<V2SourceCapability> = emptyList(),
+    val contentChecks: List<V2ContentCheck> = emptyList(),
+    val reviewCopy: V2ReviewCopy = V2ReviewCopy(),
     val admissions: V2Admissions,
 )
 
@@ -233,6 +235,8 @@ internal data class V2OwnedEditionMapping(
     val observationSource: String? = null,
     val isbn: String? = null,
     val isbnObservation: String = "UNRESOLVED",
+    /** Named book exercises assigned for the unit (A2-30). Empty until a reviewed assignment is supplied. */
+    val assignedExercises: List<String> = emptyList(),
 )
 
 @Serializable
@@ -321,6 +325,8 @@ internal data class V2CheckItem(
     val language: String,
     val prompt: String,
     val promptLetter: String? = null,
+    /** Answer/provenance-only data is retained but never rendered as a question cue. */
+    val promptLetterRole: String = "CUE",
     val options: List<String>,
     val answer: String,
     val feedback: String,
@@ -330,6 +336,13 @@ internal data class V2CheckItem(
     val containsGeneratedRussian: Boolean = false,
     val distractorRationales: List<String> = emptyList(),
     val assessment: V2Assessment? = null,
+    val typedAnswerKey: V2TypedAnswerKey? = null,
+    val dictationAudioAssetId: String? = null,
+    /**
+     * The "russian-fact" marker (T15-n0, owner ruling 11/12/2026): sentences of [feedback] or [distractorRationales]
+     * that state a fact about Russian in English. A marked sentence needs a source record like any other Russian fact.
+     */
+    val russianFacts: List<String> = emptyList(),
 )
 
 @Serializable
@@ -362,7 +375,23 @@ internal data class V2Unit(
     val objectives: List<V2Objective> = emptyList(),
     val sessions: List<V2Session> = emptyList(),
     val advancement: V2AdvancementRule? = null,
+    /** A2-32: the unit's own binder assignment; the result is SELF_CHECK, never demonstrated ability. */
+    val binderTask: V2BinderTask? = null,
+    /** A2-33: optional; names the specific thing to bring to a tutor. */
+    val tutorTask: V2TutorTask? = null,
 )
+
+@Serializable
+internal data class V2BinderTask(
+    val id: String,
+    val prompt: String,
+    val objectiveIds: List<String>,
+    /** Shown only after the learner records their own attempt, for comparison. */
+    val modelAnswer: String? = null,
+)
+
+@Serializable
+internal data class V2TutorTask(val id: String, val bring: String)
 
 @Serializable
 internal data class V2Objective(
@@ -401,6 +430,8 @@ internal data class V2Step(
     val bookDirection: String? = null,
     val companionDirection: String? = null,
     val remediationStepId: String? = null,
+    /** The "russian-fact" marker (T15-n0): sentences of a REMEDIATE [body] that state a fact about Russian in English. */
+    val russianFacts: List<String> = emptyList(),
 )
 
 @Serializable
@@ -411,6 +442,7 @@ internal data class V2AdvancementRule(
     val minimumDistinctChecks: Int,
     val requireDueReview: Boolean,
     val tutorOptional: Boolean,
+    val cumulativeReviewPolicyId: String? = null,
 )
 
 @Serializable

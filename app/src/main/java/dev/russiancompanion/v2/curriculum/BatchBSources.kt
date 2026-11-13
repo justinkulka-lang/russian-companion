@@ -10,7 +10,7 @@ internal object BatchBSources {
     const val SELF_SENTENCE = "\u042f \u043b\u044e\u0431\u043b\u044e\u0301 \u0441\u0435\u0431\u044f\u0301"
     const val WIFE_SENTENCE = "\u042f \u043b\u044e\u0431\u043b\u044e\u0301 (\u0441\u0432\u043e\u044e\u0301) \u0436\u0435\u043d\u0443\u0301"
     const val SELF_LINE_CITE = "\u042f \u043b\u044e\u0431\u043b\u044e\u0301 \u0441\u0435\u0431\u044f\u0301 = I love myself"
-    const val WIFE_LINE_CITE = "\u0436\u0435\u043d\u0443\u0301 = I love"
+    const val WIFE_LINE_CITE = WIFE_SENTENCE + " = I love my wife"
     const val ISOLATED_REFLEXIVE = "\u0441\u0435\u0431\u044f\u0301"
     val RU_REVISIONS = setOf(
         "148939075",

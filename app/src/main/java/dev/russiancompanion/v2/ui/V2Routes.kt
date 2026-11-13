@@ -25,6 +25,12 @@ internal data class V2SessionRoute(
 )
 
 @Serializable
+internal data class V2CumulativeReviewRoute(val unitNumber: Int = 3)
+
+@Serializable
+internal data class V2UnitTestRoute(val unitNumber: Int)
+
+@Serializable
 internal data object V2PracticeRoute
 
 @Serializable

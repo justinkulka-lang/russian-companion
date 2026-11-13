@@ -1,0 +1,238 @@
+package dev.russiancompanion.v2
+
+import android.content.Context
+import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.RussianCompanionApplication
+import dev.russiancompanion.data.local.LocalStore
+import dev.russiancompanion.v2.backup.*
+import dev.russiancompanion.v2.curriculum.*
+import kotlinx.coroutines.runBlocking
+import org.junit.Assert.*
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
+import java.io.ByteArrayOutputStream
+import java.io.File
+
+/** Fresh current Unit14/15 learner records; no historical pack or learner archive fixture. */
+@RunWith(RobolectricTestRunner::class)
+@Config(sdk = [33])
+class Unit14PluralPossessionReviewPersistenceTest {
+    @Test fun currentUnit14AndDownstreamUnit15RestoreReopenAndCompleteTheirOwnObligations() {
+        val p = currentPack
+        val context = context()
+        val name = "unit14-current-${System.nanoTime()}.db"
+        var partial14: GovernedLearnerDocument? = null
+        var partial15: GovernedLearnerDocument? = null
+        var completed15: GovernedLearnerDocument? = null
+        try {
+            LocalStore.openNamed(context, name).use { store ->
+                prepareThrough14(store, p)
+                assertEquals(14, store.v2Profile().currentUnitNumber)
+                assertEquals((1..13).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
+                val prior = store.cumulativeReviewHistory().first
+                for ((unit, policy, schema) in listOf(
+                    Triple(11, "unit11-prior-noun-behavior-possession-absence-v2", 1),
+                    Triple(12, "unit12-prior-gender-past-gender-v2", 1),
+                    Triple(13, "unit13-prior-present-aspect-past-gender-v3", 1))) {
+                    val task = prior.single { it.targetUnit == unit }
+                    assertEquals(policy, task.policyId); assertEquals(schema, task.schema)
+                    assertTrue(cumulativeReviewComplete(p, store.v2LearnerView(), unit))
+                }
+                assertOrdinary14(store, p)
+                val task = open(store, p, 14)
+                assertEquals("unit14-prior-plural-possession-reported-time-v2", task.policyId); assertEquals(1, task.schema)
+                assertEquals(listOf("obj-u8-plural", "obj-u10-have", "obj-u13-reported"), task.slots.take(3).map { it.objectiveId })
+                assertEquals(listOf(8, 10, 13), task.slots.take(3).map { it.ownerUnit })
+                val policy = cumulativeReviewDeclaredPolicy(p, 14)!!
+                task.slots.forEachIndexed { index, slot ->
+                    assertTrue(slot.itemId in policy.pool.single { it.objectiveId == slot.objectiveId }.candidateItemIds)
+                }
+                assertOwnerDigests(p, task)
+                answer(store, p, task, 0)
+                assertEquals(setOf(0), completedReviewSlots(p, task, store.v2LearnerView().reviewAnswers))
+                assertFalse(advancementDecision(p, p.unit(14)!!, store.v2LearnerView()).allowed)
+                partial14 = store.governedLearnerDocument()
+                assertTrue(partial14!!.unitCompletions.none { it.unitNumber == 14 })
+                assertTrue(partial14!!.recordings.isEmpty())
+                val bytes = archive(store, p)
+                roundtripNamed(context, p, partial14!!, bytes, task)
+            }
+            LocalStore.openNamed(context, name).use { store ->
+                assertEquals(partial14, store.governedLearnerDocument())
+                val task = open(store, p, 14)
+                assertEquals(partial14!!.reviewAssignments.single { it.targetUnit == 14 }, task)
+                assertEquals(setOf(0), completedReviewSlots(p, task, store.v2LearnerView().reviewAnswers))
+                for (index in 1 until task.slots.size) answer(store, p, task, index)
+                assertTrue(advance(store, p, 14))
+                assertEquals(15, store.v2Profile().currentUnitNumber)
+                assertEquals((1..14).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
+                val completed14 = store.governedLearnerDocument()
+                val row = completed14.unitCompletions.single { it.unitNumber == 14 }
+                assertEquals(task.id, row.reviewAssignmentId); assertEquals(task.policyDigest, row.reviewPolicyDigest)
+                assertTrue(row.reviewCompletionOrder > task.boundary)
+                val completedBytes = archive(store, p)
+                roundtripNamed(context, p, completed14, completedBytes, task)
+
+                ordinary(store, p, 15)
+                assertTrue(ordinaryUnitRequirements(p, p.unit(15)!!, store.v2LearnerView()).allowed)
+                val downstream = open(store, p, 15)
+                assertEquals("unit15-prior-reading-impersonal-state-v1", downstream.policyId)
+                assertEquals(1, downstream.schema)
+                assertEquals(listOf("obj-u1-decoding", "obj-u14-impersonal"), downstream.slots.take(2).map { it.objectiveId })
+                assertEquals(listOf(1, 14), downstream.slots.take(2).map { it.ownerUnit })
+                assertEquals("u14-i-impersonal-2", downstream.slots[1].itemId)
+                assertOwnerDigests(p, downstream)
+                answer(store, p, downstream, 0)
+                assertEquals(setOf(0), completedReviewSlots(p, downstream, store.v2LearnerView().reviewAnswers))
+                assertFalse(advancementDecision(p, p.unit(15)!!, store.v2LearnerView()).allowed)
+                partial15 = store.governedLearnerDocument()
+                assertTrue(partial15!!.unitCompletions.none { it.unitNumber == 15 })
+                assertEquals(completed14.unitCompletions, partial15!!.unitCompletions)
+                val bytes = archive(store, p)
+                roundtripNamed(context, p, partial15!!, bytes, downstream)
+            }
+            LocalStore.openNamed(context, name).use { store ->
+                assertEquals(partial15, store.governedLearnerDocument())
+                val task = open(store, p, 15)
+                assertEquals(partial15!!.reviewAssignments.single { it.targetUnit == 15 }, task)
+                assertEquals(setOf(0), completedReviewSlots(p, task, store.v2LearnerView().reviewAnswers))
+                (1..task.slots.lastIndex).forEach { answer(store, p, task, it) }
+                assertTrue(advance(store, p, 15))
+                assertEquals(16, store.v2Profile().currentUnitNumber)
+                assertEquals((1..15).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
+                completed15 = store.governedLearnerDocument()
+                val row = completed15!!.unitCompletions.single { it.unitNumber == 15 }
+                assertEquals(task.id, row.reviewAssignmentId); assertEquals(task.policyDigest, row.reviewPolicyDigest)
+                assertTrue(row.reviewCompletionOrder > task.boundary)
+                roundtripNamed(context, p, completed15!!, archive(store, p), task)
+            }
+            LocalStore.openNamed(context, name).use { store ->
+                assertEquals(completed15, store.governedLearnerDocument())
+                assertEquals(16, store.v2Profile().currentUnitNumber)
+                assertEquals((1..15).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
+            }
+        } finally { deleteStore(context, name) }
+    }
+
+    @Test fun earlierPluralPossessionAndOptionalAnswersCannotReplaceFreshAssignedDueAnswers() {
+        val p = currentPack
+        val context = context(); val name = "unit14-current-gate-${System.nanoTime()}.db"
+        try {
+            LocalStore.openNamed(context, name).use { store ->
+                prepareThrough14(store, p)
+                assertOrdinary14(store, p)
+                val prior = store.cumulativeReviewHistory().first
+                assertTrue(prior.single { it.targetUnit == 9 }.slots.any { it.objectiveId == "obj-u8-plural" })
+                assertTrue(prior.single { it.targetUnit == 11 }.slots.any { it.objectiveId == "obj-u10-have" })
+                val task = open(store, p, 14)
+                for (id in (1..6).map { "u8-i-plural-$it" } + (1..4).map { "u10-i-have-$it" }) {
+                    store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, p.item(id)!!.answer,
+                        OPTIONAL_PRACTICE, practiceStepId("mixed"), "unit14-current-gate")!!)
+                }
+                assertTrue(completedReviewSlots(p, task, store.v2LearnerView().reviewAnswers).isEmpty())
+                assertFalse(advancementDecision(p, p.unit(14)!!, store.v2LearnerView()).allowed)
+                task.slots.forEachIndexed { index, slot ->
+                    if (slot.objectiveId !in setOf("obj-u8-plural", "obj-u10-have")) answer(store, p, task, index)
+                }
+                val before = store.governedLearnerDocument()
+                val advancedWithoutNewAnswers = try { advance(store, p, 14) } catch (refusal: IllegalStateException) {
+                    if (refusal.message != "current advancement evidence is incomplete") throw refusal
+                    false
+                }
+                if (!advancedWithoutNewAnswers) assertEquals(before, store.governedLearnerDocument())
+                assertFalse("The current Unit14 obligation must refuse advancement without its fresh assigned plural and possession answers", advancedWithoutNewAnswers)
+                assertEquals("unit14-prior-plural-possession-reported-time-v2", task.policyId)
+                assertEquals(1, task.schema)
+                assertEquals(listOf("obj-u8-plural", "obj-u10-have", "obj-u13-reported"), task.slots.take(3).map { it.objectiveId })
+                assertEquals(listOf(8, 10, 13), task.slots.take(3).map { it.ownerUnit })
+                task.slots.indices.forEach { answer(store, p, task, it) }
+                assertTrue(advance(store, p, 14))
+            }
+        } finally { deleteStore(context, name) }
+    }
+
+    private fun prepareThrough14(store: LocalStore, p: V2CurriculumPack) {
+        assertEquals(1, store.v2Profile().currentUnitNumber)
+        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true))
+        for (n in 1..14) {
+            assertEquals(n, store.v2Profile().currentUnitNumber)
+            ordinary(store, p, n)
+            assertTrue(ordinaryUnitRequirements(p, p.unit(n)!!, store.v2LearnerView()).allowed)
+            if (n < 14) {
+                if (n >= 3) {
+                    val task = open(store, p, n)
+                    task.slots.indices.forEach { answer(store, p, task, it) }
+                }
+                assertTrue(advance(store, p, n))
+            }
+        }
+    }
+    private fun ordinary(store: LocalStore, p: V2CurriculumPack, n: Int) {
+        for (step in p.unit(n)!!.sessions.flatMap { it.steps }) {
+            step.itemIds.forEach { id -> store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id,
+                p.item(id)!!.answer, PRESCRIBED_CHECK, step.id, "unit14-current")!!) }
+            store.v2CompleteGovernedStep(step.id,
+                governedStepCompletionDigest(p, store.v2LearnerView(), step.id)!!, "unit14-current")
+        }
+        store.v2AttestBook(n, "unit14-current")
+    }
+    private fun assertOrdinary14(store: LocalStore, p: V2CurriculumPack) {
+        val unit = p.unit(14)!!; val steps = unit.sessions.flatMap { it.steps }
+        assertEquals(6, unit.advancement!!.minimumDistinctChecks)
+        assertEquals(6, steps.filter { it.kind == "CHECK" }.flatMap { it.itemIds }.distinct().size)
+        assertEquals(3, steps.filter { it.kind == "GUIDED" }.flatMap { it.itemIds }.distinct().size)
+        assertTrue(ordinaryUnitRequirements(p, unit, store.v2LearnerView()).allowed)
+    }
+    private fun assertOwnerDigests(p: V2CurriculumPack, task: CumulativeReviewAssignment) {
+        task.slots.forEach { assertEquals(V2Validator.unitContentReviewDigest(p, it.ownerUnit), it.unitDigest) }
+        assertTrue(reviewAssignmentCurrent(p, task))
+    }
+    private fun open(store: LocalStore, p: V2CurriculumPack, n: Int) =
+        store.openCumulativeReview(p, n, store.learnerMutationEpoch())!!
+    private fun answer(store: LocalStore, p: V2CurriculumPack, task: CumulativeReviewAssignment, index: Int) {
+        assertTrue(store.answerCumulativeReview(p, task.id, index,
+            p.item(task.slots[index].itemId)!!.answer, store.learnerMutationEpoch()))
+    }
+    private fun advance(store: LocalStore, p: V2CurriculumPack, n: Int): Boolean = runBlocking {
+        val next = p.unit(n + 1)!!.sessions.first().id
+        store.v2AdvanceUnitIfCurrentAsync(store.learnerMutationEpoch(), n, "unit14-current", n + 1,
+            next, resumePositionDigest(p, next, 0)!!, GOVERNED_IDENTITY_SCHEMA, p)
+    }
+    private fun roundtripNamed(context: Context, p: V2CurriculumPack, document: GovernedLearnerDocument,
+                               bytes: ByteArray, task: CumulativeReviewAssignment) {
+        val name = "unit14-import-${System.nanoTime()}.db"; val stage = File(context.cacheDir, name)
+        try {
+            val read = readGovernedBackup(bytes.inputStream(), "dev.russiancompanion", p.packId, p.packVersion, stage)
+            assertTrue(read is BackupReadResult.Valid)
+            assertEquals(document, (read as BackupReadResult.Valid).backup.document)
+            LocalStore.openNamed(context, name).use { target ->
+                assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
+                assertEquals(document, target.governedLearnerDocument())
+            }
+            LocalStore.openNamed(context, name).use { target ->
+                assertEquals(document, target.governedLearnerDocument())
+                assertEquals(task, open(target, p, task.targetUnit))
+                assertOwnerDigests(p, task)
+                val completed = document.unitCompletions.any { it.unitNumber == task.targetUnit }
+                assertEquals(completed, cumulativeReviewComplete(p, target.v2LearnerView(), task.targetUnit))
+                assertEquals(completed, task.targetUnit in currentCompletedUnitNumbers(p, target.v2LearnerView()))
+                assertEquals(document, target.governedLearnerDocument())
+            }
+        } finally { stage.deleteRecursively(); deleteStore(context, name) }
+    }
+    private fun archive(store: LocalStore, p: V2CurriculumPack): ByteArray = ByteArrayOutputStream().also {
+        writeGovernedBackup(it, "dev.russiancompanion", p.packId, p.packVersion, "DARK", store.governedLearnerDocument(), emptyList())
+    }.toByteArray()
+    private fun context(): Context = ApplicationProvider.getApplicationContext<Context>().also {
+        (it.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
+    }
+    private fun deleteStore(context: Context, name: String) {
+        context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively()
+    }
+    companion object {
+        private val root = File(if (File("app").isDirectory) "." else "..")
+        private val currentPack by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+    }
+}

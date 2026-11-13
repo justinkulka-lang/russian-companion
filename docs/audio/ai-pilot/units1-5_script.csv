@@ -1,0 +1,157 @@
+id,unit,kind,course_text,spoken,note
+L-0410,1,LETTER,А а (name: а),а,letter name only (sound not generated)
+L-0411,1,LETTER,Б б (name: бэ),бэ,letter name only (sound not generated)
+L-0412,1,LETTER,В в (name: вэ),вэ,letter name only (sound not generated)
+L-0413,1,LETTER,Г г (name: гэ),гэ,letter name only (sound not generated)
+L-0414,1,LETTER,Д д (name: дэ),дэ,letter name only (sound not generated)
+L-0415,1,LETTER,Е е (name: е),е,letter name only (sound not generated)
+L-0401,1,LETTER,Ё ё (name: ё),ё,letter name only (sound not generated)
+L-0416,1,LETTER,Ж ж (name: жэ),жэ,letter name only (sound not generated)
+L-0417,1,LETTER,З з (name: зэ),зэ,letter name only (sound not generated)
+L-0418,1,LETTER,И и (name: и),и,letter name only (sound not generated)
+L-0419,1,LETTER,Й й (name: и краткое),и краткое,letter name only (sound not generated)
+L-041a,1,LETTER,К к (name: ка),ка,letter name only (sound not generated)
+L-041b,1,LETTER,Л л (name: эль),эль,letter name only (sound not generated)
+L-041c,1,LETTER,М м (name: эм),эм,letter name only (sound not generated)
+L-041d,1,LETTER,Н н (name: эн),эн,letter name only (sound not generated)
+L-041e,1,LETTER,О о (name: о),о,letter name only (sound not generated)
+L-041f,1,LETTER,П п (name: пэ),пэ,letter name only (sound not generated)
+L-0420,1,LETTER,Р р (name: эр),эр,letter name only (sound not generated)
+L-0421,1,LETTER,С с (name: эс),эс,letter name only (sound not generated)
+L-0422,1,LETTER,Т т (name: тэ),тэ,letter name only (sound not generated)
+L-0423,1,LETTER,У у (name: у),у,letter name only (sound not generated)
+L-0424,1,LETTER,Ф ф (name: эф),эф,letter name only (sound not generated)
+L-0425,1,LETTER,Х х (name: ха),ха,letter name only (sound not generated)
+L-0426,1,LETTER,Ц ц (name: цэ),цэ,letter name only (sound not generated)
+L-0427,1,LETTER,Ч ч (name: че),че,letter name only (sound not generated)
+L-0428,1,LETTER,Ш ш (name: ша),ша,letter name only (sound not generated)
+L-0429,1,LETTER,Щ щ (name: ща),ща,letter name only (sound not generated)
+L-042a,1,LETTER,Ъ ъ (name: твёрдый знак),твёрдый знак,letter name only (sound not generated)
+L-042b,1,LETTER,Ы ы (name: ы),ы,letter name only (sound not generated)
+L-042c,1,LETTER,Ь ь (name: мягкий знак),мягкий знак,letter name only (sound not generated)
+L-042d,1,LETTER,Э э (name: э),э,letter name only (sound not generated)
+L-042e,1,LETTER,Ю ю (name: ю),ю,letter name only (sound not generated)
+L-042f,1,LETTER,Я я (name: я),я,letter name only (sound not generated)
+A02-001,2,WORD,за́мок,за́мок,
+A02-002,2,WORD,замо́к,замо́к,
+A02-003,2,WORD,код,код,
+A02-004,2,WORD,кот,кот,
+A02-005,2,WORD,луг,луг,
+A02-006,2,WORD,лук,лук,
+A02-007,2,WORD,му́ка,му́ка,
+A02-008,2,WORD,мука́,мука́,
+A02-009,2,WORD,плод,плод,
+A02-010,2,WORD,плот,плот,
+A03-001,3,WORD,брат,брат,
+A03-002,3,WORD,вода́,вода́,
+A03-003,3,WORD,го́род,го́род,
+A03-004,3,WORD,Да,Да,
+A03-005,3,WORD,дверь,дверь,
+A03-006,3,WORD,до́м,до́м,
+A03-007,3,WORD,друг,друг,
+A03-008,3,WORD,дя́дя,дя́дя,
+A03-009,3,WORD,здра́вствуйте,здра́вствуйте,
+A03-010,3,WORD,кни́га,кни́га,
+A03-011,3,WORD,ма́ма,ма́ма,
+A03-012,3,WORD,молоко́,молоко́,
+A03-013,3,WORD,мо́ре,мо́ре,
+A03-014,3,WORD,мужчи́на,мужчи́на,
+A03-015,3,WORD,нет,нет,
+A03-016,3,WORD,окно́,окно́,
+A03-017,3,WORD,письмо́,письмо́,
+A03-018,3,WORD,пожа́луйста,пожа́луйста,
+A03-019,3,WORD,рабо́та,рабо́та,
+A03-020,3,WORD,спаси́бо,спаси́бо,
+A03-021,3,WORD,сто́л,сто́л,
+A03-022,3,WORD,учи́тель,учи́тель,
+A03-023,3,WORD,шко́ла,шко́ла,
+A03-024,3,WORD,э́то,э́то,
+A03-025,3,PHRASE,мой стол,мой сто́л,stress/punctuation added by Claude
+A03-026,3,PHRASE,моя собака,моя́ соба́ка,stress/punctuation added by Claude
+A03-027,3,SENTENCE,Где вы,Где вы?,stress/punctuation added by Claude
+A03-028,3,SENTENCE,Как дела́,Как дела́?,stress/punctuation added by Claude
+A03-029,3,SENTENCE,Кто это,Кто э́то?,stress/punctuation added by Claude
+A03-030,3,SENTENCE,Что это,Что э́то?,stress/punctuation added by Claude
+A04-001,4,WORD,ви́деть,ви́деть,
+A04-002,4,WORD,ви́дим,ви́дим,
+A04-003,4,WORD,ви́дит,ви́дит,
+A04-004,4,WORD,ви́дишь,ви́дишь,
+A04-005,4,WORD,ви́жу,ви́жу,
+A04-006,4,WORD,Вы,Вы,
+A04-007,4,WORD,говори́м,говори́м,
+A04-008,4,WORD,говори́т,говори́т,
+A04-009,4,WORD,говори́ть,говори́ть,
+A04-010,4,WORD,говори́шь,говори́шь,
+A04-011,4,WORD,говорю́,говорю́,
+A04-012,4,WORD,де́лаем,де́лаем,
+A04-013,4,WORD,де́лать,де́лать,
+A04-014,4,WORD,де́лаю,де́лаю,
+A04-015,4,WORD,жить,жить,
+A04-016,4,WORD,знать,знать,
+A04-017,4,WORD,зна́ю,зна́ю,
+A04-018,4,WORD,зна́ют,зна́ют,
+A04-019,4,WORD,идти́,идти́,
+A04-020,4,WORD,иду́,иду́,
+A04-021,4,WORD,иду́т,иду́т,
+A04-022,4,WORD,идёт,идёт,
+A04-023,4,WORD,идёшь,идёшь,
+A04-024,4,WORD,мы,мы,
+A04-025,4,WORD,он,он,
+A04-026,4,WORD,она́,она́,
+A04-027,4,WORD,они́,они́,
+A04-028,4,WORD,оно́,оно́,
+A04-029,4,WORD,писа́ть,писа́ть,
+A04-030,4,WORD,пи́шет,пи́шет,
+A04-031,4,WORD,пи́шете,пи́шете,
+A04-032,4,WORD,пи́шешь,пи́шешь,
+A04-033,4,WORD,пишу́,пишу́,
+A04-034,4,WORD,понима́ешь,понима́ешь,
+A04-035,4,WORD,понима́ть,понима́ть,
+A04-036,4,WORD,рабо́таем,рабо́таем,
+A04-037,4,WORD,рабо́тать,рабо́тать,
+A04-038,4,WORD,слу́шает,слу́шает,
+A04-039,4,WORD,слу́шаете,слу́шаете,
+A04-040,4,WORD,слу́шать,слу́шать,
+A04-041,4,WORD,смотре́ть,смотре́ть,
+A04-042,4,WORD,ты,ты,
+A04-043,4,WORD,чита́ем,чита́ем,
+A04-044,4,WORD,чита́ет,чита́ет,
+A04-045,4,WORD,чита́ете,чита́ете,
+A04-046,4,WORD,чита́ешь,чита́ешь,
+A04-047,4,WORD,чита́ть,чита́ть,
+A04-048,4,WORD,чита́ю,чита́ю,
+A04-049,4,WORD,чита́ют,чита́ют,
+A04-050,4,PHRASE,Муж говорит,Муж говори́т,stress/punctuation added by Claude
+A04-051,4,PHRASE,Поезд старый,По́езд ста́рый,stress/punctuation added by Claude
+A04-052,4,PHRASE,Студент новый,Студе́нт но́вый,stress/punctuation added by Claude
+A04-053,4,SENTENCE,"я, ты, он, она́, оно́, мы, вы","я, ты, он, она́, оно́, мы, вы",
+A05-001,5,WORD,Где,Где,
+A05-002,5,WORD,Как,Как,
+A05-003,5,WORD,како́й,како́й,
+A05-004,5,WORD,кафе́,кафе́,
+A05-005,5,WORD,кино́,кино́,
+A05-006,5,WORD,кни́ге,кни́ге,
+A05-007,5,WORD,Когда,Когда́,stress/punctuation added by Claude
+A05-008,5,WORD,ко́фе,ко́фе,
+A05-009,5,WORD,Кто,Кто,
+A05-010,5,WORD,Куда́,Куда́,
+A05-011,5,WORD,меню́,меню́,
+A05-012,5,WORD,метро́,метро́,
+A05-013,5,WORD,на,на,
+A05-014,5,WORD,Отку́да,Отку́да,
+A05-015,5,WORD,пальто́,пальто́,
+A05-016,5,WORD,письме́,письме́,
+A05-017,5,WORD,Почему,Почему́,stress/punctuation added by Claude
+A05-018,5,WORD,ра́дио,ра́дио,
+A05-019,5,WORD,Ско́лько,Ско́лько,
+A05-020,5,WORD,такси́,такси́,
+A05-021,5,WORD,Что,Что,
+A05-022,5,PHRASE,О книге,О кни́ге,stress/punctuation added by Claude
+A05-023,5,PHRASE,О письме,О письме́,stress/punctuation added by Claude
+A05-024,5,PHRASE,О саде,О са́де,stress/punctuation added by Claude
+A05-025,5,PHRASE,Он в театре,Он в теа́тре,stress/punctuation added by Claude
+A05-026,5,PHRASE,Он на крыше,Он на кры́ше,stress/punctuation added by Claude
+A05-027,5,PHRASE,я в Москве,Я в Москве́,stress/punctuation added by Claude
+A05-028,5,SENTENCE,Ваза стоит на столе,Ва́за стои́т на столе́,stress/punctuation added by Claude
+A05-029,5,SENTENCE,Где вы живёте,Где вы живёте?,stress/punctuation added by Claude
+A05-030,5,SENTENCE,Картина висит на стене,Карти́на виси́т на стене́,stress/punctuation added by Claude

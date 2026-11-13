@@ -1,0 +1,313 @@
+unit,take,id,spoken,start,end,dur,gap,flags,generation_id
+1,1,L-0410,а,0.0,0.4,0.4,,,dZyNgCzztpYLijMwc73i
+1,1,L-0411,бэ,1.91,3.44,1.53,1.51,,dZyNgCzztpYLijMwc73i
+1,1,L-0412,вэ,3.65,3.92,0.27,0.21,runs into previous item (hard to split),dZyNgCzztpYLijMwc73i
+1,1,L-0413,гэ,5.64,6.52,0.88,1.72,,dZyNgCzztpYLijMwc73i
+1,1,L-0414,дэ,7.48,8.36,0.88,0.96,,dZyNgCzztpYLijMwc73i
+1,1,L-0415,е,9.39,10.24,0.85,1.03,,dZyNgCzztpYLijMwc73i
+1,1,L-0401,ё,11.36,11.41,0.05,1.12,very short (possible clip/drop),dZyNgCzztpYLijMwc73i
+1,1,L-0416,жэ,12.88,13.92,1.04,1.47,,dZyNgCzztpYLijMwc73i
+1,1,L-0417,зэ,14.84,15.8,0.96,0.92,,dZyNgCzztpYLijMwc73i
+1,1,L-0418,и,16.69,16.76,0.07,0.89,very short (possible clip/drop),dZyNgCzztpYLijMwc73i
+1,1,L-0419,и краткое,17.14,18.48,1.34,0.38,,dZyNgCzztpYLijMwc73i
+1,1,L-041a,ка,19.93,20.08,0.15,1.45,very short (possible clip/drop),dZyNgCzztpYLijMwc73i
+1,1,L-041b,эль,21.57,22.6,1.03,1.49,,dZyNgCzztpYLijMwc73i
+1,1,L-041c,эм,23.42,24.2,0.78,0.82,,dZyNgCzztpYLijMwc73i
+1,1,L-041d,эн,25.06,26.08,1.02,0.86,,dZyNgCzztpYLijMwc73i
+1,1,L-041e,о,27.0,27.12,0.12,0.92,very short (possible clip/drop),dZyNgCzztpYLijMwc73i
+1,1,L-041f,пэ,28.63,29.68,1.05,1.51,,dZyNgCzztpYLijMwc73i
+1,1,L-0420,эр,30.55,31.52,0.97,0.87,,dZyNgCzztpYLijMwc73i
+1,1,L-0421,эс,32.39,32.72,0.33,0.87,,dZyNgCzztpYLijMwc73i
+1,1,L-0422,тэ,34.07,34.41,0.33,1.35,,dZyNgCzztpYLijMwc73i
+1,1,L-0423,у,36.27,37.12,0.85,1.87,,dZyNgCzztpYLijMwc73i
+1,1,L-0424,эф,38.11,38.92,0.81,0.99,,dZyNgCzztpYLijMwc73i
+1,1,L-0425,ха,39.75,40.08,0.33,0.83,,dZyNgCzztpYLijMwc73i
+1,1,L-0426,цэ,41.73,42.85,1.12,1.64,,dZyNgCzztpYLijMwc73i
+1,1,L-0427,че,43.67,44.69,1.01,0.83,,dZyNgCzztpYLijMwc73i
+1,1,L-0428,ша,45.57,46.65,1.08,0.88,,dZyNgCzztpYLijMwc73i
+1,1,L-0429,ща,47.5,47.81,0.31,0.85,,dZyNgCzztpYLijMwc73i
+1,1,L-042a,твёрдый знак,48.78,49.61,0.83,0.97,,dZyNgCzztpYLijMwc73i
+1,1,L-042b,ы,50.85,50.97,0.12,1.24,very short (possible clip/drop),dZyNgCzztpYLijMwc73i
+1,1,L-042c,мягкий знак,52.27,53.49,1.22,1.3,,dZyNgCzztpYLijMwc73i
+1,1,L-042d,э,54.44,55.21,0.77,0.95,,dZyNgCzztpYLijMwc73i
+1,1,L-042e,ю,56.26,56.41,0.15,1.05,very short (possible clip/drop),dZyNgCzztpYLijMwc73i
+1,1,L-042f,я,58.29,58.41,0.12,1.88,very short (possible clip/drop),dZyNgCzztpYLijMwc73i
+1,2,L-0410,а,0.0,1.08,1.08,,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0411,бэ,1.99,3.36,1.37,0.91,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0412,вэ,3.75,5.2,1.45,0.39,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0413,гэ,5.27,5.56,0.29,0.07,runs into previous item (hard to split),Zr7oZvY56aqXkTaZcuAP
+1,2,L-0414,дэ,6.73,7.88,1.15,1.17,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0415,е,8.83,8.96,0.13,0.95,very short (possible clip/drop),Zr7oZvY56aqXkTaZcuAP
+1,2,L-0401,ё,10.64,11.65,1.01,1.68,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0416,жэ,12.31,12.48,0.17,0.66,very short (possible clip/drop),Zr7oZvY56aqXkTaZcuAP
+1,2,L-0417,зэ,13.99,14.24,0.25,1.51,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0418,и,15.87,16.68,0.81,1.63,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0419,и краткое,17.5,18.24,0.74,0.82,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-041a,ка,19.63,19.84,0.21,1.39,very short (possible clip/drop),Zr7oZvY56aqXkTaZcuAP
+1,2,L-041b,эль,21.27,22.28,1.01,1.43,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-041c,эм,23.09,24.09,1.0,0.8,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-041d,эн,25.01,25.85,0.84,0.92,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-041e,о,27.01,28.09,1.08,1.16,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-041f,пэ,28.42,29.25,0.83,0.33,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0420,эр,30.0,31.01,1.01,0.75,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0421,эс,31.84,32.17,0.33,0.83,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0422,тэ,33.55,33.85,0.3,1.38,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0423,у,35.34,35.45,0.11,1.49,very short (possible clip/drop),Zr7oZvY56aqXkTaZcuAP
+1,2,L-0424,эф,37.3,38.13,0.83,1.85,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0425,ха,38.95,39.29,0.33,0.83,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0426,цэ,40.77,41.13,0.36,1.48,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0427,че,42.62,42.89,0.27,1.49,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0428,ша,44.47,45.49,1.03,1.57,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-0429,ща,46.32,46.57,0.25,0.83,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-042a,твёрдый знак,47.58,48.89,1.32,1.0,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-042b,ы,49.77,50.57,0.8,0.88,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-042c,мягкий знак,51.41,52.61,1.2,0.84,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-042d,э,53.41,53.53,0.12,0.8,very short (possible clip/drop),Zr7oZvY56aqXkTaZcuAP
+1,2,L-042e,ю,55.25,56.09,0.84,1.72,,Zr7oZvY56aqXkTaZcuAP
+1,2,L-042f,я,56.95,57.05,0.1,0.86,very short (possible clip/drop),Zr7oZvY56aqXkTaZcuAP
+2,1,A02-001,за́мок,0.0,0.56,0.56,,,5509GjjLvAL11oXw6JL4
+2,1,A02-002,замо́к,2.34,3.64,1.3,1.78,,5509GjjLvAL11oXw6JL4
+2,1,A02-003,код,4.8,6.4,1.6,1.16,,5509GjjLvAL11oXw6JL4
+2,1,A02-004,кот,6.68,6.96,0.28,0.28,,5509GjjLvAL11oXw6JL4
+2,1,A02-005,луг,9.0,9.2,0.2,2.04,very short (possible clip/drop),5509GjjLvAL11oXw6JL4
+2,1,A02-006,лук,10.53,10.88,0.35,1.33,,5509GjjLvAL11oXw6JL4
+2,1,A02-007,му́ка,12.54,13.48,0.94,1.66,,5509GjjLvAL11oXw6JL4
+2,1,A02-008,мука́,14.2,14.64,0.44,0.72,,5509GjjLvAL11oXw6JL4
+2,1,A02-009,плод,16.32,16.52,0.2,1.68,very short (possible clip/drop),5509GjjLvAL11oXw6JL4
+2,1,A02-010,плот,17.83,18.16,0.34,1.3,,5509GjjLvAL11oXw6JL4
+2,2,A02-001,за́мок,0.0,0.56,0.56,,,P9qsORleVNgJxcELpUy3
+2,2,A02-002,замо́к,2.34,2.8,0.46,1.78,,P9qsORleVNgJxcELpUy3
+2,2,A02-003,код,4.64,4.8,0.16,1.84,very short (possible clip/drop),P9qsORleVNgJxcELpUy3
+2,2,A02-004,кот,6.58,6.72,0.14,1.78,very short (possible clip/drop),P9qsORleVNgJxcELpUy3
+2,2,A02-005,луг,8.63,8.8,0.17,1.91,very short (possible clip/drop),P9qsORleVNgJxcELpUy3
+2,2,A02-006,лук,10.37,11.12,0.75,1.57,,P9qsORleVNgJxcELpUy3
+2,2,A02-007,му́ка,12.4,12.92,0.52,1.28,,P9qsORleVNgJxcELpUy3
+2,2,A02-008,мука́,14.21,15.52,1.31,1.29,,P9qsORleVNgJxcELpUy3
+2,2,A02-009,плод,16.64,18.16,1.52,1.12,,P9qsORleVNgJxcELpUy3
+2,2,A02-010,плот,18.55,18.8,0.25,0.39,very short (possible clip/drop),P9qsORleVNgJxcELpUy3
+3,1,A03-001,брат,0.0,0.48,0.48,,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-002,вода́,2.56,3.68,1.12,2.08,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-003,го́род,4.63,5.12,0.49,0.95,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-004,Да,7.87,8.84,0.97,2.75,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-005,дверь,9.89,11.0,1.11,1.05,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-006,до́м,12.27,13.52,1.25,1.27,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-007,друг,15.36,16.56,1.2,1.84,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-008,дя́дя,18.22,19.6,1.38,1.66,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-009,здра́вствуйте,20.88,21.92,1.04,1.28,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-010,кни́га,23.87,24.48,0.61,1.95,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-011,ма́ма,26.93,28.8,1.87,2.45,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-012,молоко́,29.95,31.92,1.97,1.15,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-013,мо́ре,33.24,34.72,1.48,1.32,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-014,мужчи́на,36.28,37.6,1.32,1.56,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-015,нет,39.86,41.08,1.22,2.26,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-016,окно́,42.64,44.0,1.36,1.56,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-017,письмо́,45.89,47.36,1.47,1.89,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-018,пожа́луйста,49.4,50.64,1.24,2.04,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-019,рабо́та,52.82,53.68,0.86,2.18,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-020,спаси́бо,56.24,58.16,1.92,2.56,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-021,сто́л,60.08,61.6,1.52,1.92,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-022,учи́тель,63.58,65.36,1.78,1.98,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-023,шко́ла,67.09,69.12,2.03,1.73,long (possible drawl/extra sound),gWpkmqpFpKEHNAyWhTKy
+3,1,A03-024,э́то,70.45,71.56,1.11,1.33,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-025,мой сто́л,73.39,74.16,0.77,1.83,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-026,моя́ соба́ка,76.7,77.76,1.06,2.54,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-027,Где вы?,80.94,81.6,0.66,3.18,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-028,Как дела́?,84.16,86.08,1.92,2.56,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-029,Кто э́то?,88.24,89.84,1.6,2.16,,gWpkmqpFpKEHNAyWhTKy
+3,1,A03-030,Что э́то?,92.06,92.96,0.9,2.22,,gWpkmqpFpKEHNAyWhTKy
+3,2,A03-001,брат,0.0,2.0,2.0,,,XtG4AZENRyQvvhANr1MW
+3,2,A03-002,вода́,2.19,4.24,2.05,0.19,long (possible drawl/extra sound); runs into previous item (hard to split),XtG4AZENRyQvvhANr1MW
+3,2,A03-003,го́род,4.39,7.52,3.13,0.15,long (possible drawl/extra sound); runs into previous item (hard to split),XtG4AZENRyQvvhANr1MW
+3,2,A03-004,Да,8.77,9.96,1.19,1.25,,XtG4AZENRyQvvhANr1MW
+3,2,A03-005,дверь,11.1,12.56,1.46,1.14,,XtG4AZENRyQvvhANr1MW
+3,2,A03-006,до́м,13.26,14.64,1.38,0.7,,XtG4AZENRyQvvhANr1MW
+3,2,A03-007,друг,15.76,17.52,1.76,1.12,,XtG4AZENRyQvvhANr1MW
+3,2,A03-008,дя́дя,18.54,19.12,0.58,1.02,,XtG4AZENRyQvvhANr1MW
+3,2,A03-009,здра́вствуйте,21.09,24.0,2.91,1.97,long (possible drawl/extra sound),XtG4AZENRyQvvhANr1MW
+3,2,A03-010,кни́га,25.9,27.12,1.22,1.9,,XtG4AZENRyQvvhANr1MW
+3,2,A03-011,ма́ма,28.78,29.44,0.67,1.66,,XtG4AZENRyQvvhANr1MW
+3,2,A03-012,молоко́,31.08,33.28,2.2,1.64,long (possible drawl/extra sound),XtG4AZENRyQvvhANr1MW
+3,2,A03-013,мо́ре,34.8,36.4,1.6,1.52,,XtG4AZENRyQvvhANr1MW
+3,2,A03-014,мужчи́на,37.54,39.6,2.06,1.14,long (possible drawl/extra sound),XtG4AZENRyQvvhANr1MW
+3,2,A03-015,нет,41.43,43.36,1.93,1.83,,XtG4AZENRyQvvhANr1MW
+3,2,A03-016,окно́,44.52,45.93,1.41,1.15,,XtG4AZENRyQvvhANr1MW
+3,2,A03-017,письмо́,47.69,49.53,1.84,1.76,,XtG4AZENRyQvvhANr1MW
+3,2,A03-018,пожа́луйста,51.11,52.17,1.06,1.58,,XtG4AZENRyQvvhANr1MW
+3,2,A03-019,рабо́та,54.16,55.77,1.61,1.99,,XtG4AZENRyQvvhANr1MW
+3,2,A03-020,спаси́бо,57.44,59.53,2.09,1.67,long (possible drawl/extra sound),XtG4AZENRyQvvhANr1MW
+3,2,A03-021,сто́л,60.97,61.53,0.56,1.44,,XtG4AZENRyQvvhANr1MW
+3,2,A03-022,учи́тель,63.82,65.53,1.71,2.29,,XtG4AZENRyQvvhANr1MW
+3,2,A03-023,шко́ла,67.26,68.89,1.63,1.73,,XtG4AZENRyQvvhANr1MW
+3,2,A03-024,э́то,70.95,72.41,1.46,2.06,,XtG4AZENRyQvvhANr1MW
+3,2,A03-025,мой сто́л,74.25,76.25,2.0,1.84,,XtG4AZENRyQvvhANr1MW
+3,2,A03-026,моя́ соба́ка,77.93,79.85,1.92,1.68,,XtG4AZENRyQvvhANr1MW
+3,2,A03-027,Где вы?,82.07,83.77,1.7,2.22,,XtG4AZENRyQvvhANr1MW
+3,2,A03-028,Как дела́?,85.46,87.53,2.07,1.69,,XtG4AZENRyQvvhANr1MW
+3,2,A03-029,Кто э́то?,89.37,91.45,2.08,1.84,,XtG4AZENRyQvvhANr1MW
+3,2,A03-030,Что э́то?,93.77,94.73,0.96,2.32,,XtG4AZENRyQvvhANr1MW
+4,1,A04-001,ви́деть,0.0,0.56,0.56,,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-002,ви́дим,2.3,3.92,1.62,1.74,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-003,ви́дит,4.14,4.56,0.42,0.22,runs into previous item (hard to split),IL4Co6ofs9vyZa3cAlio
+4,1,A04-004,ви́дишь,6.06,6.48,0.42,1.5,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-005,ви́жу,7.8,8.16,0.36,1.32,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-006,Вы,9.77,9.92,0.15,1.61,very short (possible clip/drop),IL4Co6ofs9vyZa3cAlio
+4,1,A04-007,говори́м,11.35,11.68,0.33,1.43,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-008,говори́т,13.11,13.52,0.41,1.43,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-009,говори́ть,14.87,15.28,0.41,1.35,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-010,говори́шь,16.63,17.12,0.49,1.35,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-011,говорю́,18.45,18.72,0.27,1.33,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-012,де́лаем,20.11,21.2,1.09,1.39,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-013,де́лать,21.87,22.8,0.93,0.67,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-014,де́лаю,23.49,24.56,1.08,0.68,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-015,жить,25.34,26.32,0.99,0.77,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-016,знать,27.33,28.08,0.75,1.01,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-017,зна́ю,28.9,29.92,1.02,0.82,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-018,зна́ют,30.68,31.8,1.12,0.76,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-019,идти́,32.61,33.56,0.96,0.8,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-020,иду́,34.3,34.64,0.35,0.73,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-021,иду́т,35.84,36.8,0.96,1.2,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-022,идёт,37.49,38.44,0.96,0.68,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-023,идёшь,39.17,40.2,1.04,0.72,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-024,мы,41.13,41.28,0.15,0.93,very short (possible clip/drop),IL4Co6ofs9vyZa3cAlio
+4,1,A04-025,он,42.65,42.8,0.15,1.37,very short (possible clip/drop),IL4Co6ofs9vyZa3cAlio
+4,1,A04-026,она́,44.08,44.41,0.32,1.28,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-027,они́,45.67,46.52,0.85,1.27,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-028,оно́,47.3,48.16,0.86,0.78,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-029,писа́ть,48.98,49.44,0.46,0.82,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-030,пи́шет,50.79,51.2,0.42,1.34,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-031,пи́шете,52.47,52.97,0.5,1.26,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-032,пи́шешь,54.15,54.64,0.5,1.18,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-033,пишу́,55.97,56.4,0.44,1.32,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-034,понима́ешь,57.59,58.73,1.14,1.18,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-035,понима́ть,59.49,59.85,0.35,0.77,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-036,рабо́таем,61.22,62.33,1.1,1.38,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-037,рабо́тать,63.14,64.21,1.06,0.82,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-038,слу́шает,64.99,65.53,0.54,0.78,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-039,слу́шаете,66.85,67.53,0.68,1.32,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-040,слу́шать,68.67,69.13,0.46,1.14,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-041,смотре́ть,70.21,71.37,1.16,1.08,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-042,ты,72.12,72.21,0.09,0.75,very short (possible clip/drop),IL4Co6ofs9vyZa3cAlio
+4,1,A04-043,чита́ем,72.98,74.25,1.27,0.77,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-044,чита́ет,74.96,76.13,1.17,0.71,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-045,чита́ете,76.93,77.45,0.52,0.8,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-046,чита́ешь,78.72,79.37,0.65,1.27,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-047,чита́ть,80.64,81.69,1.05,1.27,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-048,чита́ю,82.31,83.41,1.1,0.62,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-049,чита́ют,84.0,85.17,1.17,0.59,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-050,Муж говори́т,85.84,86.57,0.73,0.67,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-051,По́езд ста́рый,87.52,88.41,0.9,0.94,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-052,Студе́нт но́вый,89.48,91.13,1.65,1.07,,IL4Co6ofs9vyZa3cAlio
+4,1,A04-053,"я, ты, он, она́, оно́, мы, вы",91.89,96.33,4.44,0.76,,IL4Co6ofs9vyZa3cAlio
+4,2,A04-001,ви́деть,0.0,1.6,1.6,,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-002,ви́дим,3.13,3.6,0.47,1.53,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-003,ви́дит,6.35,7.04,0.69,2.75,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-004,ви́дишь,9.84,11.6,1.76,2.8,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-005,ви́жу,12.99,13.44,0.45,1.39,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-006,Вы,16.37,17.52,1.15,2.93,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-007,говори́м,18.76,20.28,1.52,1.24,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-008,говори́т,22.07,23.84,1.77,1.79,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-009,говори́ть,25.39,25.84,0.45,1.55,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-010,говори́шь,28.55,29.6,1.05,2.71,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-011,говорю́,31.96,32.48,0.52,2.36,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-012,де́лаем,35.15,35.92,0.77,2.67,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-013,де́лать,38.11,39.64,1.53,2.19,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-014,де́лаю,40.77,41.92,1.16,1.12,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-015,жить,44.38,44.96,0.58,2.46,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-016,знать,47.57,49.08,1.51,2.61,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-017,зна́ю,50.86,51.44,0.58,1.78,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-018,зна́ют,54.19,54.88,0.69,2.75,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-019,идти́,57.82,58.48,0.67,2.93,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-020,иду́,60.9,61.72,0.82,2.42,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-021,иду́т,62.8,63.92,1.12,1.08,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-022,идёт,64.06,66.44,2.39,0.13,long (possible drawl/extra sound); runs into previous item (hard to split),qUTl9ayxG5FsMfX09DPa
+4,2,A04-023,идёшь,67.68,68.32,0.64,1.24,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-024,мы,71.02,71.36,0.35,2.69,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-025,он,73.99,74.16,0.17,2.63,very short (possible clip/drop),qUTl9ayxG5FsMfX09DPa
+4,2,A04-026,она́,76.54,78.48,1.94,2.38,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-027,они́,79.66,80.72,1.06,1.18,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-028,оно́,82.73,83.12,0.39,2.01,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-029,писа́ть,85.93,87.56,1.63,2.81,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-030,пи́шет,88.96,89.6,0.64,1.4,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-031,пи́шете,92.14,92.8,0.67,2.53,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-032,пи́шешь,95.63,97.24,1.61,2.83,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-033,пишу́,99.18,99.84,0.67,1.93,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-034,понима́ешь,102.24,103.12,0.88,2.4,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-035,понима́ть,105.35,106.64,1.29,2.23,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-036,рабо́таем,109.31,110.08,0.77,2.67,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-037,рабо́тать,112.77,114.16,1.39,2.69,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-038,слу́шает,116.28,118.12,1.84,2.12,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-039,слу́шаете,119.52,120.32,0.8,1.4,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-040,слу́шать,122.76,123.6,0.84,2.44,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-041,смотре́ть,126.0,128.0,2.0,2.4,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-042,ты,129.66,130.0,0.35,1.65,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-043,чита́ем,131.96,132.64,0.68,1.96,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-044,чита́ет,135.27,136.92,1.65,2.63,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-045,чита́ете,138.66,139.36,0.7,1.74,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-046,чита́ешь,142.12,142.88,0.76,2.76,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-047,чита́ть,145.6,146.32,0.72,2.72,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-048,чита́ю,149.02,149.84,0.82,2.7,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-049,чита́ют,152.23,152.96,0.73,2.39,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-050,Муж говори́т,155.8,157.68,1.88,2.84,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-051,По́езд ста́рый,159.36,161.36,2.0,1.68,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-052,Студе́нт но́вый,162.94,166.16,3.23,1.57,,qUTl9ayxG5FsMfX09DPa
+4,2,A04-053,"я, ты, он, она́, оно́, мы, вы",168.18,172.96,4.78,2.02,,qUTl9ayxG5FsMfX09DPa
+5,1,A05-001,Где,0.0,0.48,0.48,,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-002,Как,2.08,2.92,0.84,1.6,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-003,како́й,3.8,4.92,1.12,0.88,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-004,кафе́,5.83,6.24,0.41,0.91,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-005,кино́,7.73,9.07,1.34,1.48,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-006,кни́ге,9.78,10.84,1.06,0.71,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-007,Когда́,11.83,12.88,1.05,0.99,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-008,ко́фе,13.74,14.16,0.42,0.86,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-009,Кто,14.89,15.93,1.04,0.73,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-010,Куда́,17.68,18.61,0.93,1.75,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-011,меню́,19.55,20.61,1.06,0.94,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-012,метро́,21.49,22.69,1.2,0.88,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-013,на,23.64,24.49,0.85,0.95,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-014,Отку́да,25.41,26.65,1.24,0.92,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-015,пальто́,27.57,28.69,1.12,0.92,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-016,письме́,29.57,30.69,1.12,0.88,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-017,Почему́,31.51,32.77,1.26,0.82,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-018,ра́дио,33.6,34.81,1.22,0.82,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-019,Ско́лько,35.68,36.97,1.29,0.87,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-020,такси́,37.89,39.09,1.2,0.92,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-021,Что,40.09,40.25,0.16,1.0,very short (possible clip/drop),GdMgcSF45aLXqL6eWpaF
+5,1,A05-022,О кни́ге,41.94,43.14,1.2,1.68,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-023,О письме́,43.84,45.14,1.29,0.71,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-024,О са́де,45.99,47.22,1.23,0.85,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-025,Он в теа́тре,47.98,48.74,0.76,0.76,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-026,Он на кры́ше,50.08,51.74,1.67,1.34,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-027,Я в Москве́,52.55,53.38,0.83,0.81,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-028,Ва́за стои́т на столе́,54.75,56.11,1.36,1.36,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-029,Где вы живёте?,57.37,58.87,1.49,1.27,,GdMgcSF45aLXqL6eWpaF
+5,1,A05-030,Карти́на виси́т на стене́,59.67,60.91,1.24,0.8,,GdMgcSF45aLXqL6eWpaF
+5,2,A05-001,Где,0.0,0.48,0.48,,,F1vzAsbNknkvtRnevLrw
+5,2,A05-002,Как,1.98,2.76,0.78,1.5,,F1vzAsbNknkvtRnevLrw
+5,2,A05-003,како́й,3.62,4.0,0.38,0.86,,F1vzAsbNknkvtRnevLrw
+5,2,A05-004,кафе́,5.43,6.44,1.01,1.43,,F1vzAsbNknkvtRnevLrw
+5,2,A05-005,кино́,7.17,8.28,1.12,0.72,,F1vzAsbNknkvtRnevLrw
+5,2,A05-006,кни́ге,9.08,10.2,1.12,0.8,,F1vzAsbNknkvtRnevLrw
+5,2,A05-007,Когда́,11.14,11.44,0.31,0.93,,F1vzAsbNknkvtRnevLrw
+5,2,A05-008,ко́фе,12.95,14.08,1.14,1.5,,F1vzAsbNknkvtRnevLrw
+5,2,A05-009,Кто,14.85,16.01,1.16,0.76,,F1vzAsbNknkvtRnevLrw
+5,2,A05-010,Куда́,16.88,17.85,0.97,0.87,,F1vzAsbNknkvtRnevLrw
+5,2,A05-011,меню́,18.75,19.73,0.98,0.9,,F1vzAsbNknkvtRnevLrw
+5,2,A05-012,метро́,20.65,21.85,1.2,0.92,,F1vzAsbNknkvtRnevLrw
+5,2,A05-013,на,22.9,23.73,0.83,1.05,,F1vzAsbNknkvtRnevLrw
+5,2,A05-014,Отку́да,24.55,25.77,1.22,0.82,,F1vzAsbNknkvtRnevLrw
+5,2,A05-015,пальто́,26.74,27.93,1.18,0.98,,F1vzAsbNknkvtRnevLrw
+5,2,A05-016,письме́,28.82,29.29,0.46,0.9,,F1vzAsbNknkvtRnevLrw
+5,2,A05-017,Почему́,30.61,31.21,0.6,1.32,,F1vzAsbNknkvtRnevLrw
+5,2,A05-018,ра́дио,32.69,33.89,1.2,1.48,,F1vzAsbNknkvtRnevLrw
+5,2,A05-019,Ско́лько,34.78,36.09,1.31,0.89,,F1vzAsbNknkvtRnevLrw
+5,2,A05-020,такси́,37.01,38.17,1.16,0.92,,F1vzAsbNknkvtRnevLrw
+5,2,A05-021,Что,39.39,40.29,0.9,1.22,,F1vzAsbNknkvtRnevLrw
+5,2,A05-022,О кни́ге,41.13,42.45,1.32,0.84,,F1vzAsbNknkvtRnevLrw
+5,2,A05-023,О письме́,43.46,44.65,1.19,1.01,,F1vzAsbNknkvtRnevLrw
+5,2,A05-024,О са́де,45.52,46.69,1.17,0.87,,F1vzAsbNknkvtRnevLrw
+5,2,A05-025,Он в теа́тре,47.5,49.17,1.68,0.8,,F1vzAsbNknkvtRnevLrw
+5,2,A05-026,Он на кры́ше,49.94,51.66,1.72,0.76,,F1vzAsbNknkvtRnevLrw
+5,2,A05-027,Я в Москве́,52.6,54.34,1.73,0.95,,F1vzAsbNknkvtRnevLrw
+5,2,A05-028,Ва́за стои́т на столе́,55.22,56.82,1.6,0.88,,F1vzAsbNknkvtRnevLrw
+5,2,A05-029,Где вы живёте?,58.33,59.86,1.53,1.51,,F1vzAsbNknkvtRnevLrw
+5,2,A05-030,Карти́на виси́т на стене́,60.7,62.34,1.64,0.84,,F1vzAsbNknkvtRnevLrw

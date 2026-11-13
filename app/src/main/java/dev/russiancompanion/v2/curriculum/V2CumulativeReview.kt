@@ -1,0 +1,805 @@
+package dev.russiancompanion.v2.curriculum
+
+import kotlinx.serialization.Serializable
+import java.security.MessageDigest
+
+// One assignment schema. Schemas 2–16 are not supported. Answers use the same schema.
+internal const val CUMULATIVE_REVIEW_SCHEMA = 1
+internal const val CUMULATIVE_REVIEW_ROLE = "CUMULATIVE_REVIEW"
+
+@Serializable
+internal data class CumulativeReviewSlot(
+    val objectiveId: String, val skill: String, val itemId: String,
+    val ownerUnit: Int, val itemDigest: String, val unitDigest: String, val teachingDigest: String,
+)
+
+@Serializable
+internal data class CumulativeReviewAssignment(
+    val id: String, val targetUnit: Int, val policyId: String, val policyDigest: String,
+    val responseRuleDigest: String, val boundary: Long, val slots: List<CumulativeReviewSlot>, val digest: String,
+    val schema: Int = CUMULATIVE_REVIEW_SCHEMA,
+)
+
+@Serializable
+internal data class CumulativeReviewAnswer(
+    val id: String, val assignmentId: String, val assignmentDigest: String,
+    val slotIndex: Int, val selected: String, val acceptedOrder: Long,
+    val role: String = CUMULATIVE_REVIEW_ROLE, val schema: Int = CUMULATIVE_REVIEW_SCHEMA,
+)
+
+/** Skill labels describe only the bounded evidence supported by the authored checks. */
+internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION, SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION, SUPPLIED_NOUN_BEHAVIOR_RECOGNITION, SUPPLIED_PRESENT_FORM_RECOGNITION, SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION, SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION, SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION, SUPPLIED_NUMERAL_GENDER_RECOGNITION, SUPPLIED_POSSESSION_ABSENCE_RECOGNITION, SUPPLIED_PAST_GENDER_RECOGNITION, SUPPLIED_ASPECT_PARTNER_RECOGNITION, SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION, SUPPLIED_IMPERSONAL_STATE_RECOGNITION, SUPPLIED_IMPERATIVE_FORM_RECOGNITION, SUPPLIED_INSTRUMENTAL_PLURAL_RECOGNITION, SUPPLIED_QUESTION_INTERPRETATION, SUPPLIED_RELATIVE_CLAUSE_RECOGNITION, SUPPLIED_CONDITIONAL_AGREEMENT_RECOGNITION, SUPPLIED_MOTION_CONTEXT_RECOGNITION, SUPPLIED_REFLEXIVE_OBJECT_RECOGNITION, SUPPLIED_HALF_QUANTITY_PHRASE_RECOGNITION, SUPPLIED_PERIOD_POSITION_PHRASE_RECOGNITION, SUPPLIED_NEGATIVE_SENTENCE_RECOGNITION, SUPPLIED_NAME_REPLY_RECOGNITION, SUPPLIED_ADDRESS_COMPONENT_RECOGNITION, SUPPLIED_PAST_PASSIVE_MEANING_RECOGNITION, SUPPLIED_RELATIVE_FUTURE_TIMING_RECOGNITION, SUPPLIED_ACTIVE_PARTICIPLE_TIME_RECOGNITION }
+
+internal data class CumulativeReviewObjectivePool(
+    val objectiveId: String, val skill: CumulativeReviewSkill, val candidateItemIds: List<String>,
+    val remediationStepId: String? = null,
+)
+
+/** A2-28 due cumulative-review size and repeat rules. */
+internal const val CUMULATIVE_REVIEW_MINIMUM_ITEMS = 8
+internal const val CUMULATIVE_REVIEW_MINIMUM_OBJECTIVES = 3
+internal const val CUMULATIVE_REVIEW_CONSECUTIVE_LIMIT = 3
+/** Structural bound only; it keeps stored histories finite. */
+internal const val CUMULATIVE_REVIEW_MAXIMUM_SLOTS = 64
+internal const val CUMULATIVE_REVIEW_ALLOCATION_RULE = "a2-28-min8-objectives3-skills2-repeat3-v1"
+
+/**
+ * Explicit declarations only; adding a type or passing a target number never activates a gate.
+ * The first [anchorCount] pools are the unit's authored anchors and must all be eligible. Later
+ * pools are earlier-unit supplements from the shared reviewed registry; an ineligible supplement
+ * is skipped, never invented.
+ */
+internal data class CumulativeReviewPolicy(
+    val id: String, val targetUnit: Int, val pool: List<CumulativeReviewObjectivePool>,
+    val anchorCount: Int = pool.size, val allocationRule: String? = null,
+) {
+    init {
+        require(id.isNotBlank() && targetUnit in 3..30)
+        require(anchorCount in 2..6 && anchorCount <= pool.size && pool.size <= CUMULATIVE_REVIEW_MAXIMUM_SLOTS &&
+            pool.map { it.objectiveId }.distinct().size == pool.size)
+        require(allocationRule != null || anchorCount == pool.size)
+        require(pool.all { it.objectiveId.isNotBlank() && it.candidateItemIds.isNotEmpty() &&
+            it.candidateItemIds.all(String::isNotBlank) &&
+            it.candidateItemIds.distinct().size == it.candidateItemIds.size })
+    }
+    val anchors: List<CumulativeReviewObjectivePool> get() = pool.take(anchorCount)
+    // Anchor-only definitions keep the original canonical form; A2-28 policies add the rule and anchor count.
+    val digest by lazy {
+        reviewHash(canonicalParts(listOf(id, "target:$targetUnit", "slots:${pool.size}") +
+            listOfNotNull(allocationRule?.let { "rule:$it" }, allocationRule?.let { "anchors:$anchorCount" }) + pool.map {
+            canonicalParts(listOf(it.objectiveId, it.skill.name, canonicalParts(it.candidateItemIds)) +
+                listOfNotNull(it.remediationStepId))
+        }))
+    }
+}
+
+internal object Unit3CumulativeReviewPolicy {
+    const val id = "unit3-prior-literacy-v1"
+    val definition = CumulativeReviewPolicy(id, 3, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u1-confusable", CumulativeReviewSkill.PRINTED_LETTER_RECOGNITION, listOf(
+            "u1-i-р-not-p", "u1-i-н-not-h", "u1-i-с-not-c", "u1-i-в-not-b", "u1-i-у-not-y", "u1-i-х-not-x")),
+    ))
+    val digest get() = definition.digest
+}
+
+internal object Unit4CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit4-prior-reading-gender-v1", 4, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u3-gender", CumulativeReviewSkill.NOUN_GENDER_RECOGNITION,
+            listOf("u3-i-gender-город"), "u3-st-teach-gender-2"),
+    ))
+}
+
+internal object Unit5CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit5-prior-reading-subject-v1", 5, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u4-nominative", CumulativeReviewSkill.SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION,
+            listOf("u4-i-nom-role-train", "u4-i-nom-role-student"), "u4-st-rem-nominative"),
+    ))
+}
+
+/** Reuses taught lexical gender and supplied subject-role evidence; not a reading claim. */
+internal object Unit5GrammarCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit5-prior-gender-subject-v2", 5, listOf(
+        CumulativeReviewObjectivePool("obj-u3-gender", CumulativeReviewSkill.NOUN_GENDER_RECOGNITION,
+            listOf("u3-i-gender-город", "u3-i-gender-друг", "u3-i-gender-дверь", "u3-i-gender-море", "u3-i-gender-дядя"),
+            "u3-st-rem-gender"),
+        Unit5CumulativeReviewPolicy.definition.pool[1],
+    ))
+}
+
+internal object Unit6CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit6-prior-reading-noun-behavior-v1", 6, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u5-indeclinable", CumulativeReviewSkill.SUPPLIED_NOUN_BEHAVIOR_RECOGNITION,
+            listOf("u5-i-indecl-такси", "u5-i-indecl-метро", "u5-i-indecl-кино", "u5-i-decl-книга", "u5-i-decl-окно"),
+            "u5-st-rem-indeclinable"),
+    ))
+}
+
+/** Separate authored obligation; retain the v1 definition and all its saved tasks. */
+internal object Unit6WiderCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit6-prior-reading-subject-noun-behavior-v2", 6,
+        Unit6CumulativeReviewPolicy.definition.pool + Unit5CumulativeReviewPolicy.definition.pool[1])
+}
+
+/** Finite supplied-form/person recognition; not productive conjugation or reading. */
+internal object Unit6PresentCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit6-prior-present-subject-noun-behavior-v3", 6, listOf(
+        CumulativeReviewObjectivePool("obj-u4-present", CumulativeReviewSkill.SUPPLIED_PRESENT_FORM_RECOGNITION,
+            listOf("u4-i-verb-говорить-мы", "u4-i-verb-видеть-он", "u4-i-verb-писать-вы", "u4-i-verb-идти-они"),
+            "u4-st-rem-present"),
+        Unit6CumulativeReviewPolicy.definition.pool[1],
+        Unit5CumulativeReviewPolicy.definition.pool[1],
+    ))
+}
+
+internal object Unit7CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit7-prior-reading-inanimate-case-v1", 7, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u6-animacy", CumulativeReviewSkill.SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION,
+            listOf("u6-i-animacy-3"), "u6-st-rem-animacy"),
+    ))
+}
+
+/** Recorded noun gender and supplied inanimate classification; not productive agreement. */
+internal object Unit7GenderCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit7-prior-gender-inanimate-case-v2", 7, listOf(
+        Unit5GrammarCumulativeReviewPolicy.definition.pool[0],
+        Unit7CumulativeReviewPolicy.definition.pool[1],
+    ))
+}
+
+internal object Unit8CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit8-prior-reading-nominative-agreement-v1", 8, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u7-endings", CumulativeReviewSkill.SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION,
+            listOf("u7-i-endings-4"), "u7-st-teach-endings-1"),
+    ))
+}
+
+/** Finite supplied person/form and nominative adjective agreement; not productive grammar. */
+internal object Unit8PresentCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit8-prior-present-nominative-agreement-v2", 8, listOf(
+        Unit6PresentCumulativeReviewPolicy.definition.pool[0],
+        Unit8CumulativeReviewPolicy.definition.pool[1],
+    ))
+}
+
+internal object Unit9CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit9-prior-reading-nominative-plural-v1", 9, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u8-plural", CumulativeReviewSkill.SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION,
+            listOf("u8-i-plural-2"), "u8-st-rem-plural"),
+    ))
+}
+
+/** Revisits supplied lexical gender in the later numeral-agreement context. */
+internal object Unit9WiderCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit9-prior-reading-plural-gender-v2", 9,
+        Unit9CumulativeReviewPolicy.definition.pool + CumulativeReviewObjectivePool(
+            "obj-u3-gender", CumulativeReviewSkill.NOUN_GENDER_RECOGNITION,
+            listOf("u3-i-gender-город", "u3-i-gender-друг", "u3-i-gender-дверь", "u3-i-gender-море", "u3-i-gender-дядя"),
+            "u3-st-rem-gender"))
+}
+
+/** Supplied noun classification, nominative plural and lexical gender; not productive inflection. */
+internal object Unit9NounBehaviorCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit9-prior-noun-behavior-plural-gender-v3", 9, listOf(
+        Unit6CumulativeReviewPolicy.definition.pool[1],
+        Unit9WiderCumulativeReviewPolicy.definition.pool[1],
+        Unit9WiderCumulativeReviewPolicy.definition.pool[2],
+    ))
+}
+
+internal object Unit10CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit10-prior-reading-numeral-gender-v1", 10, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u9-odindva", CumulativeReviewSkill.SUPPLIED_NUMERAL_GENDER_RECOGNITION,
+            listOf("u9-i-odindva-4"), "u9-st-rem-odindva"),
+    ))
+}
+
+/** Finite supplied form/person and numeral agreement; not productive grammar. */
+internal object Unit10PresentCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit10-prior-present-numeral-gender-v2", 10, listOf(
+        Unit6PresentCumulativeReviewPolicy.definition.pool[0],
+        Unit10CumulativeReviewPolicy.definition.pool[1],
+    ))
+}
+
+internal object Unit11CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit11-prior-reading-possession-absence-v1", 11, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u10-have", CumulativeReviewSkill.SUPPLIED_POSSESSION_ABSENCE_RECOGNITION,
+            listOf("u10-i-have-4"), "u10-st-rem-have"),
+    ))
+}
+
+/** Supplied noun behavior and possession/absence classification; not productive grammar. */
+internal object Unit11NounCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit11-prior-noun-behavior-possession-absence-v2", 11, listOf(
+        Unit6CumulativeReviewPolicy.definition.pool[1],
+        CumulativeReviewObjectivePool("obj-u10-have", CumulativeReviewSkill.SUPPLIED_POSSESSION_ABSENCE_RECOGNITION,
+            listOf("u10-i-have-1", "u10-i-have-2", "u10-i-have-3", "u10-i-have-4"), "u10-st-rem-have"),
+    ))
+}
+
+internal object Unit12CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit12-prior-reading-past-gender-v1", 12, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u11-past-aspect", CumulativeReviewSkill.SUPPLIED_PAST_GENDER_RECOGNITION,
+            listOf("u11-i-past-aspect-1"), "u11-st-rem-past-aspect"),
+    ))
+}
+
+internal object Unit13CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit13-prior-reading-aspect-partner-v1", 13, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u12-aspect", CumulativeReviewSkill.SUPPLIED_ASPECT_PARTNER_RECOGNITION,
+            listOf("u12-i-aspect-1"), "u12-st-rem-aspect"),
+    ))
+}
+
+/** Revisits already-taught past agreement in the later past/aspect context. */
+internal object Unit13WiderCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit13-prior-reading-aspect-past-gender-v2", 13,
+        Unit13CumulativeReviewPolicy.definition.pool + CumulativeReviewObjectivePool(
+            "obj-u11-past-aspect", CumulativeReviewSkill.SUPPLIED_PAST_GENDER_RECOGNITION,
+            listOf("u11-i-past-aspect-1", "u11-i-past-aspect-2"), "u11-st-rem-past-aspect"))
+}
+
+/** Reuses finite taught present forms, lexical aspect partners and past-gender forms. */
+internal object Unit13PresentCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit13-prior-present-aspect-past-gender-v3", 13, listOf(
+        Unit6PresentCumulativeReviewPolicy.definition.pool[0],
+        Unit13CumulativeReviewPolicy.definition.pool[1].copy(
+            candidateItemIds = listOf("u12-i-aspect-1", "u12-i-aspect-2")),
+        Unit13WiderCumulativeReviewPolicy.definition.pool[2],
+    ))
+}
+
+/** Recorded noun labels and supplied singular past forms; not productive agreement. */
+internal object Unit12GenderCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit12-prior-gender-past-gender-v2", 12, listOf(
+        Unit5GrammarCumulativeReviewPolicy.definition.pool[0],
+        Unit13WiderCumulativeReviewPolicy.definition.pool[2],
+    ))
+}
+
+internal object Unit14CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit14-prior-reading-reported-time-v1", 14, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u13-reported", CumulativeReviewSkill.SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION,
+            listOf("u13-i-report-frame-time"), "u13-st-rem-reported"),
+    ))
+}
+
+/** Finite supplied forms and interpretations; not productive or unseen transfer. */
+internal object Unit14PluralPossessionCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit14-prior-plural-possession-reported-time-v2", 14, listOf(
+        Unit9CumulativeReviewPolicy.definition.pool[1].copy(
+            candidateItemIds = listOf("u8-i-plural-1", "u8-i-plural-2", "u8-i-plural-3",
+                "u8-i-plural-4", "u8-i-plural-5", "u8-i-plural-6")),
+        Unit11NounCumulativeReviewPolicy.definition.pool[1],
+        Unit14CumulativeReviewPolicy.definition.pool[1],
+    ))
+}
+
+internal object Unit15CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit15-prior-reading-impersonal-state-v1", 15, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u14-impersonal", CumulativeReviewSkill.SUPPLIED_IMPERSONAL_STATE_RECOGNITION,
+            listOf("u14-i-impersonal-2"), "u14-st-rem-impersonal"),
+    ))
+}
+
+internal object Unit16CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit16-prior-reading-imperative-form-v1", 16, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u15-imperative", CumulativeReviewSkill.SUPPLIED_IMPERATIVE_FORM_RECOGNITION,
+            listOf("u15-i-imperative-1"), "u15-st-rem-imperative"),
+    ))
+}
+
+internal object Unit17CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit17-prior-reading-instrumental-plural-v1", 17, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u16-inst-pl", CumulativeReviewSkill.SUPPLIED_INSTRUMENTAL_PLURAL_RECOGNITION,
+            listOf("u16-i-inst-pl-1"), "u16-st-rem-inst-pl"),
+    ))
+}
+
+internal object Unit18CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit18-prior-reading-question-meaning-v1", 18, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u17-clock", CumulativeReviewSkill.SUPPLIED_QUESTION_INTERPRETATION,
+            listOf("u17-i-question-book"), "u17-st-rem-clock"),
+    ))
+}
+
+internal object Unit19CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit19-prior-reading-relative-meaning-v1", 19, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u18-relative", CumulativeReviewSkill.SUPPLIED_RELATIVE_CLAUSE_RECOGNITION,
+            listOf("u18-i-relative-1"), "u18-st-rem-relative"),
+    ))
+}
+
+internal object Unit20CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit20-prior-reading-conditional-agreement-v1", 20, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u19-conditional", CumulativeReviewSkill.SUPPLIED_CONDITIONAL_AGREEMENT_RECOGNITION,
+            listOf("u19-i-conditional-1"), "u19-st-rem-conditional"),
+    ))
+}
+
+internal object Unit21CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit21-prior-reading-motion-context-v1", 21, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u20-motion", CumulativeReviewSkill.SUPPLIED_MOTION_CONTEXT_RECOGNITION,
+            listOf("u20-i-direction-city"), "u20-st-rem-motion"),
+    ))
+}
+
+internal object Unit22CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit22-prior-reading-reflexive-object-v1", 22, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u21-object-reference", CumulativeReviewSkill.SUPPLIED_REFLEXIVE_OBJECT_RECOGNITION,
+            listOf("u21-i-object-reference-2"), "u21-st-rem-object-reference"),
+    ))
+}
+
+internal object Unit23CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit23-prior-reading-half-quantity-phrase-v1", 23, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u22-half-forms", CumulativeReviewSkill.SUPPLIED_HALF_QUANTITY_PHRASE_RECOGNITION,
+            listOf("u22-i-half-forms-2"), "u22-st-rem-half-forms"),
+    ))
+}
+
+internal object Unit24CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit24-prior-reading-period-position-v1", 24, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u23-beginning", CumulativeReviewSkill.SUPPLIED_PERIOD_POSITION_PHRASE_RECOGNITION,
+            listOf("u23-i-beginning-2"), "u23-st-rem-beginning"),
+    ))
+}
+
+internal object Unit25CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit25-prior-reading-negative-sentence-v1", 25, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u24-verbal-ne", CumulativeReviewSkill.SUPPLIED_NEGATIVE_SENTENCE_RECOGNITION,
+            listOf("u24-i-verbal-ne-2"), "u24-st-rem-verbal-ne"),
+    ))
+}
+
+internal object Unit26CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit26-prior-reading-name-reply-v1", 26, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u25-name-question", CumulativeReviewSkill.SUPPLIED_NAME_REPLY_RECOGNITION,
+            listOf("u25-i-name-question-2"), "u25-st-rem-name-question"),
+    ))
+}
+
+internal object Unit27CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit27-prior-reading-address-component-v1", 27, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u26-address-notation", CumulativeReviewSkill.SUPPLIED_ADDRESS_COMPONENT_RECOGNITION,
+            listOf("u26-i-address-notation-2"), "u26-st-rem-address-notation"),
+    ))
+}
+
+internal object Unit28CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit28-prior-reading-past-passive-meaning-v1", 28, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u27-passive", CumulativeReviewSkill.SUPPLIED_PAST_PASSIVE_MEANING_RECOGNITION,
+            listOf("u27-i-passive-1"), "u27-st-rem-passive"),
+    ))
+}
+
+internal object Unit29CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit29-prior-reading-relative-future-timing-v1", 29, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u28-perfective-adverb", CumulativeReviewSkill.SUPPLIED_RELATIVE_FUTURE_TIMING_RECOGNITION,
+            listOf("u28-i-perfective-adverb-1"), "u28-st-rem-perfective-adverb"),
+    ))
+}
+
+internal object Unit30CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit30-prior-reading-active-participle-time-v1", 30, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u29-active", CumulativeReviewSkill.SUPPLIED_ACTIVE_PARTICIPLE_TIME_RECOGNITION,
+            listOf("u29-i-active-2"), "u29-st-rem-active"),
+    ))
+}
+
+/**
+ * Shared earlier-unit registry for A2-28 supplements. It reuses only objective/skill/candidate
+ * declarations already authored in an anchor policy, plus the Unit 1 iotated-letter identity
+ * checks, which are needed because Units 1–2 otherwise supply two reviewed objectives.
+ * Candidate lists are the union of the anchor declarations; the remediation is the latest declared.
+ */
+internal object CumulativeReviewRegistry {
+    private val unit1Iotated = CumulativeReviewObjectivePool("obj-u1-iotated", CumulativeReviewSkill.PRINTED_LETTER_RECOGNITION,
+        listOf("u1-i-е-identity", "u1-i-ё-identity", "u1-i-ю-identity", "u1-i-я-identity"))
+
+    val entries: List<CumulativeReviewObjectivePool> by lazy {
+        val merged = linkedMapOf<String, CumulativeReviewObjectivePool>()
+        for (target in 3..30) for (spec in cumulativeReviewAnchorPolicy(target)?.pool.orEmpty()) {
+            val prior = merged[spec.objectiveId]
+            if (prior == null) { merged[spec.objectiveId] = spec; continue }
+            check(prior.skill == spec.skill) { "conflicting review skill for ${spec.objectiveId}" }
+            merged[spec.objectiveId] = prior.copy(
+                candidateItemIds = (prior.candidateItemIds + spec.candidateItemIds).distinct(),
+                remediationStepId = spec.remediationStepId ?: prior.remediationStepId)
+        }
+        if (unit1Iotated.objectiveId !in merged) merged[unit1Iotated.objectiveId] = unit1Iotated
+        merged.values.toList()
+    }
+
+    /** Objective-id owner unit read from the id ("obj-u12-…" → 12); the pack check still applies. */
+    fun declaredUnit(objectiveId: String): Int? =
+        Regex("^obj-u(\\d+)-").find(objectiveId)?.groupValues?.get(1)?.toIntOrNull()
+}
+
+/** The current A2-28 obligation: authored anchors first, then earlier registry supplements. */
+internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = a228Policies[targetUnit]
+
+private val a228Policies: Map<Int, CumulativeReviewPolicy> by lazy {
+    (3..30).mapNotNull { target ->
+        val anchor = cumulativeReviewAnchorPolicy(target) ?: return@mapNotNull null
+        val anchorIds = anchor.pool.map { it.objectiveId }.toSet()
+        val supplements = CumulativeReviewRegistry.entries.filter {
+            it.objectiveId !in anchorIds && (CumulativeReviewRegistry.declaredUnit(it.objectiveId) ?: Int.MAX_VALUE) < target
+        }
+        target to CumulativeReviewPolicy(anchor.id, target, anchor.pool + supplements,
+            anchorCount = anchor.pool.size, allocationRule = CUMULATIVE_REVIEW_ALLOCATION_RULE)
+    }.toMap()
+}
+
+/** Authored engineering slices only; every remaining target has no policy. */
+internal fun cumulativeReviewAnchorPolicy(targetUnit: Int): CumulativeReviewPolicy? = when (targetUnit) {
+    3 -> Unit3CumulativeReviewPolicy.definition
+    4 -> Unit4CumulativeReviewPolicy.definition
+    5 -> Unit5GrammarCumulativeReviewPolicy.definition
+    6 -> Unit6PresentCumulativeReviewPolicy.definition
+    7 -> Unit7GenderCumulativeReviewPolicy.definition
+    8 -> Unit8PresentCumulativeReviewPolicy.definition
+    9 -> Unit9NounBehaviorCumulativeReviewPolicy.definition
+    10 -> Unit10PresentCumulativeReviewPolicy.definition
+    11 -> Unit11NounCumulativeReviewPolicy.definition
+    12 -> Unit12GenderCumulativeReviewPolicy.definition
+    13 -> Unit13PresentCumulativeReviewPolicy.definition
+    14 -> Unit14PluralPossessionCumulativeReviewPolicy.definition
+    15 -> Unit15CumulativeReviewPolicy.definition
+    16 -> Unit16CumulativeReviewPolicy.definition
+    17 -> Unit17CumulativeReviewPolicy.definition
+    18 -> Unit18CumulativeReviewPolicy.definition
+    19 -> Unit19CumulativeReviewPolicy.definition
+    20 -> Unit20CumulativeReviewPolicy.definition
+    21 -> Unit21CumulativeReviewPolicy.definition
+    22 -> Unit22CumulativeReviewPolicy.definition
+    23 -> Unit23CumulativeReviewPolicy.definition
+    24 -> Unit24CumulativeReviewPolicy.definition
+    25 -> Unit25CumulativeReviewPolicy.definition
+    26 -> Unit26CumulativeReviewPolicy.definition
+    27 -> Unit27CumulativeReviewPolicy.definition
+    28 -> Unit28CumulativeReviewPolicy.definition
+    29 -> Unit29CumulativeReviewPolicy.definition
+    30 -> Unit30CumulativeReviewPolicy.definition
+    else -> null
+}
+
+
+
+/** The current authored policy only. An older policy id is not a current declaration. */
+internal fun cumulativeReviewDeclaredPolicy(pack: V2CurriculumPack, targetUnit: Int): CumulativeReviewPolicy? {
+    val rule = pack.unit(targetUnit)?.advancement ?: return null
+    if (!rule.requireDueReview) return null
+    val active = cumulativeReviewPolicy(targetUnit) ?: return null
+    return active.takeIf { rule.cumulativeReviewPolicyId == active.id }
+}
+
+internal fun cumulativeReviewDeclarationValid(pack: V2CurriculumPack, targetUnit: Int): Boolean =
+    cumulativeReviewDeclaredPolicy(pack, targetUnit) != null
+
+internal fun reviewHash(text: String): String = MessageDigest.getInstance("SHA-256")
+    .digest(text.toByteArray()).joinToString("") { "%02x".format(it.toInt() and 255) }
+
+internal fun reviewAssignmentDigest(a: CumulativeReviewAssignment): String = reviewHash(canonicalParts(
+    listOf(a.schema.toString(), a.id, a.targetUnit.toString(), a.policyId, a.policyDigest, a.responseRuleDigest, a.boundary.toString()) +
+        a.slots.map { s -> canonicalParts(listOf(s.objectiveId, s.skill, s.itemId, s.ownerUnit.toString(),
+            s.itemDigest, s.unitDigest, s.teachingDigest)) },
+))
+
+private fun reviewUnitDigest(pack: V2CurriculumPack, unit: Int): String =
+    V2PackIdentityIndex.unitDigest(pack, unit) ?: V2Validator.unitContentReviewDigest(pack, unit)
+
+private fun teachingDigest(pack: V2CurriculumPack, objective: V2Objective): String = reviewHash(canonicalParts(
+    (objective.instructionStepIds + objective.practiceStepIds).map { id ->
+        val step = pack.step(id)?.second ?: return ""
+        stepContentDigest(pack, step)
+    },
+))
+
+/** One schema. Any other number is unsupported dev data. */
+private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Boolean =
+    a.schema == CUMULATIVE_REVIEW_SCHEMA
+
+/** The current policy only. An older policy id or digest supplies no current credit. */
+internal fun cumulativeReviewAssignmentPolicy(a: CumulativeReviewAssignment): CumulativeReviewPolicy? {
+    if (!reviewAssignmentSchemaSupported(a)) return null
+    val active = cumulativeReviewPolicy(a.targetUnit) ?: return null
+    return active.takeIf { it.id == a.policyId && it.digest == a.policyDigest }
+}
+
+/** Allocation only: these attempts never supply assignment-bound due credit. */
+internal fun recentReviewCandidate(pack: V2CurriculumPack, learner: V2LearnerView,
+                                  candidates: List<V2CheckItem>): V2CheckItem? =
+    rankedReviewCandidates(pack, learner, candidates).firstOrNull()
+
+/** The latest valid prescribed CHECK attempt per item; malformed or ambiguous order rows never count. */
+private fun latestReviewAttempts(pack: V2CurriculumPack, learner: V2LearnerView, ids: Set<String>) =
+    learner.governedAttempts.orEmpty().let { attempts ->
+        // Malformed duplicate sequence numbers have no deterministic insertion order.
+        val ambiguous = attempts.groupingBy { it.acceptedOrder }.eachCount().filterValues { it > 1 }.keys
+        attempts.filter { a ->
+            a.itemId in ids && a.acceptedOrder > 0 && a.acceptedOrder !in ambiguous &&
+                pack.step(a.stepId)?.second?.kind == "CHECK" &&
+                attemptSuppliesStepSelection(a, pack, a.stepId) &&
+                pack.item(a.itemId)?.let { a.objectiveId == it.objectiveId && a.correct == scoreCheckedResponse(it, a.selected) } == true
+        }.groupBy { it.itemId }.mapValues { (_, rows) -> rows.maxBy { it.acceptedOrder } }
+    }
+
+/** Missed items first (most recent miss first), then the oldest correct, then authored order. */
+private fun rankedReviewCandidates(pack: V2CurriculumPack, learner: V2LearnerView,
+                                   candidates: List<V2CheckItem>): List<V2CheckItem> {
+    val latest = latestReviewAttempts(pack, learner, candidates.map { it.id }.toSet())
+    return candidates.withIndex().sortedWith(compareBy<IndexedValue<V2CheckItem>>(
+        { if (latest[it.value.id]?.correct == false) 0 else 1 },
+        { latest[it.value.id]?.let { a -> if (a.correct) a.acceptedOrder else -a.acceptedOrder } ?: 0L },
+        { it.index },
+    )).map { it.value }
+}
+
+/**
+ * The assignments that stand for the immediately preceding unit reviews, nearest first: the
+ * one linked by that unit's completion record, else its latest recorded assignment.
+ */
+private fun precedingUnitReviews(learner: V2LearnerView, targetUnit: Int): List<CumulativeReviewAssignment?> =
+    (1..CUMULATIVE_REVIEW_CONSECUTIVE_LIMIT).map { back ->
+        val unit = targetUnit - back
+        val linked = learner.unitReviewCompletions[unit]?.assignmentId?.takeIf { it.isNotEmpty() }
+        linked?.let { id -> learner.reviewAssignments.singleOrNull { it.id == id } }
+            ?: learner.reviewAssignments.lastOrNull { it.targetUnit == unit }
+    }
+
+/** Items already in each of the three preceding unit reviews; a fourth consecutive use is refused (A2-28). */
+internal fun cumulativeReviewRepeatExcluded(learner: V2LearnerView, targetUnit: Int): Set<String> {
+    val previous = precedingUnitReviews(learner, targetUnit)
+    if (previous.any { it == null }) return emptySet()
+    return previous.map { a -> a!!.slots.map { it.itemId }.toSet() }.reduce { x, y -> x intersect y }
+}
+
+/** True when the slots meet the A2-28 size, objective and repeat rules for this learner history. */
+internal fun cumulativeReviewSlotsMeetA228(slots: List<CumulativeReviewSlot>, availableSkills: Int,
+                                          excluded: Set<String>): Boolean =
+    slots.size >= CUMULATIVE_REVIEW_MINIMUM_ITEMS && slots.size <= CUMULATIVE_REVIEW_MAXIMUM_SLOTS &&
+        slots.map { it.itemId }.distinct().size == slots.size &&
+        slots.map { it.objectiveId }.distinct().size >= CUMULATIVE_REVIEW_MINIMUM_OBJECTIVES &&
+        slots.map { it.skill }.distinct().size >= minOf(2, availableSkills) &&
+        slots.none { it.itemId in excluded }
+
+/** Requires actual taught evidence; placement and bare historical completion are insufficient. */
+internal fun createUnit3ReviewAssignment(pack: V2CurriculumPack, learner: V2LearnerView,
+                                       id: String, boundary: Long): CumulativeReviewAssignment? {
+    return createCumulativeReviewAssignment(pack, learner, 3, id, boundary)
+}
+
+internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V2LearnerView,
+                                             targetUnit: Int, id: String, boundary: Long): CumulativeReviewAssignment? {
+    val policy = cumulativeReviewDeclaredPolicy(pack, targetUnit) ?: return null
+    if (id.isBlank() || boundary < 0 || pack.schemaVersion != 1 ||
+        !cumulativeReviewDeclarationValid(pack, targetUnit)) return null
+    val candidates = eligibleReviewCandidates(pack, learner, policy) ?: return null
+    val excluded = cumulativeReviewRepeatExcluded(learner, targetUnit)
+    val previous = precedingUnitReviews(learner, targetUnit).filterNotNull()
+    val recentUse = previous.flatMap { a -> a.slots.map { it.itemId } }.groupingBy { it }.eachCount()
+    // Per objective: eligible, not barred by the repeat limit, ranked missed-first then oldest correct.
+    val ranked = policy.pool.indices.mapNotNull { index ->
+        val eligible = candidates[index] ?: return@mapNotNull null
+        val ranked = rankedReviewCandidates(pack, learner, eligible.filter { it.id !in excluded })
+        // Supplements rotate: among items not missed, those least used in the preceding reviews come first.
+        // Anchor items keep the original missed-first, oldest-correct order.
+        val missed = latestReviewAttempts(pack, learner, ranked.map { it.id }.toSet()).filterValues { !it.correct }.keys
+        val open = if (index < policy.anchorCount) ranked else ranked.withIndex().sortedWith(compareBy(
+            { (_, item) -> if (item.id in missed) 0 else 1 },
+            { (_, item) -> if (item.id in missed) 0 else recentUse[item.id] ?: 0 },
+            { (order, _) -> order })).map { it.value }
+        if (open.isEmpty()) null else Triple(index, policy.pool[index], open.toMutableList())
+    }
+    val anchors = ranked.filter { it.first < policy.anchorCount }
+    // Supplements least used in the preceding reviews first, then the most recently taught unit.
+    val supplements = ranked.filter { it.first >= policy.anchorCount }.sortedWith(compareBy(
+        { (_, spec, _) -> spec.candidateItemIds.sumOf { recentUse[it] ?: 0 } },
+        { (_, spec, _) -> -(CumulativeReviewRegistry.declaredUnit(spec.objectiveId) ?: 0) },
+        { (index, _, _) -> index },
+    ))
+    val order = anchors + supplements
+    val chosen = mutableListOf<Pair<CumulativeReviewObjectivePool, V2CheckItem>>()
+    // One item from every open anchor, then round-robin across anchors and supplements to the minimum.
+    for ((_, spec, open) in anchors) chosen += spec to open.removeAt(0)
+    while (chosen.size < CUMULATIVE_REVIEW_MINIMUM_ITEMS || chosen.map { it.first.objectiveId }.distinct().size < CUMULATIVE_REVIEW_MINIMUM_OBJECTIVES) {
+        val needObjectives = chosen.map { it.first.objectiveId }.distinct().size < CUMULATIVE_REVIEW_MINIMUM_OBJECTIVES
+        val needSkill = chosen.map { it.first.skill }.distinct().size < 2
+        val steered = if (!needObjectives && !needSkill) null else
+            order.firstOrNull { (_, spec, open) -> open.isNotEmpty() &&
+                (!needObjectives || chosen.none { it.first.objectiveId == spec.objectiveId }) &&
+                (!needSkill || chosen.none { it.first.skill == spec.skill }) }
+                ?: order.firstOrNull { (_, spec, open) -> open.isNotEmpty() &&
+                    chosen.none { it.first.objectiveId == spec.objectiveId } }
+        // Otherwise the open objective used least so far, earliest in order: a deterministic round-robin.
+        val next = steered
+            ?: order.filter { it.third.isNotEmpty() }.minByOrNull { (_, spec, _) -> chosen.count { it.first.objectiveId == spec.objectiveId } }
+            ?: break
+        chosen += next.second to next.third.removeAt(0)
+    }
+    val slots = chosen.map { (spec, item) ->
+        val unit = pack.units.single { u -> u.objectives.any { it.id == spec.objectiveId } }
+        val o = unit.objectives.single { it.id == spec.objectiveId }
+        CumulativeReviewSlot(o.id, spec.skill.name, item.id, unit.number, V2Validator.checkItemContentDigest(item),
+            reviewUnitDigest(pack, unit.number), teachingDigest(pack, o))
+    }
+    val availableSkills = ranked.map { it.second.skill }.distinct().size
+    // Insufficient pools are refused: no shorter task and no repeated item stands in for A2-28.
+    if (!cumulativeReviewSlotsMeetA228(slots, availableSkills, excluded)) return null
+    val a = CumulativeReviewAssignment(id, targetUnit, policy.id,
+        policy.digest, if (slots.any { pack.item(it.itemId)?.isTypedResponse() == true }) typedReviewResponseRuleDigest()
+            else presentedReviewResponseRuleDigest(), boundary, slots, "",
+        schema = CUMULATIVE_REVIEW_SCHEMA)
+    return a.copy(digest = reviewAssignmentDigest(a))
+}
+
+/**
+ * Shared taught eligibility, evaluated against the task's own registered obligation. Index-aligned
+ * with the policy pool. Any ineligible anchor refuses the whole task; an ineligible supplement is null.
+ */
+private fun eligibleReviewCandidates(pack: V2CurriculumPack, learner: V2LearnerView,
+                                     policy: CumulativeReviewPolicy): List<List<V2CheckItem>?>? {
+    if (pack.schemaVersion != 1 || !cumulativeReviewDeclarationValid(pack, policy.targetUnit)) return null
+    V2PackIdentityIndex.warm(pack)
+    val target = pack.unit(policy.targetUnit) ?: return null
+    if (!target.openable() || unmetCurrentPrerequisites(pack, target, learner).isNotEmpty()) return null
+    val taught = currentCompletedUnitNumbers(pack, learner)
+    return policy.pool.mapIndexed { index, (objectiveId, _, candidates, remediationStepId) ->
+        val eligible = run {
+            val unit = pack.units.singleOrNull { u -> u.objectives.any { it.id == objectiveId } } ?: return@run null
+            val o = unit.objectives.single { it.id == objectiveId }
+            if (remediationStepId != null && (remediationStepId !in o.instructionStepIds + o.remediationStepIds ||
+                pack.step(remediationStepId) == null)) return@run null
+            if (unit.number !in taught || !unit.openable() || unit.number >= policy.targetUnit || !o.gating ||
+                o.kind != "RECOGNITION" || o.instructionStepIds.isEmpty() || o.practiceStepIds.isEmpty() ||
+                (o.instructionStepIds + o.practiceStepIds).any { !completedStepCounts(pack, learner, it) } ||
+                objectiveState(o, learner, pack) != V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS) return@run null
+            candidates.mapNotNull { pack.item(it) }.filter {
+                it.id in o.checkItemIds && it.objectiveId == o.id &&
+                    (if (it.isTypedResponse()) scoreCheckedResponse(it, it.answer) == true else it.options.size >= 2 && it.answer in it.options)
+            }.ifEmpty { null }
+        }
+        if (eligible == null && index < policy.anchorCount) return null
+        eligible
+    }
+}
+
+internal fun reviewAssignmentEligible(pack: V2CurriculumPack, learner: V2LearnerView,
+                                      a: CumulativeReviewAssignment): Boolean {
+    if (!reviewAssignmentCurrent(pack, a)) return false
+    val policy = cumulativeReviewAssignmentPolicy(a) ?: return false
+    val eligible = eligibleReviewCandidates(pack, learner, policy) ?: return false
+    val byObjective = policy.pool.map { it.objectiveId }.zip(eligible).toMap()
+    return a.slots.all { slot -> byObjective[slot.objectiveId]?.any { it.id == slot.itemId } == true }
+}
+
+internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReviewAssignment): Boolean {
+    val policy = cumulativeReviewAssignmentPolicy(a) ?: return false
+    val declared = cumulativeReviewDeclaredPolicy(pack, a.targetUnit) ?: return false
+    if (policy.id != declared.id) return false
+    val containsTyped = a.slots.any { pack.item(it.itemId)?.isTypedResponse() == true }
+    if (containsTyped != (a.responseRuleDigest == typedReviewResponseRuleDigest())) return false
+    if (!cumulativeReviewDeclarationValid(pack, a.targetUnit) || pack.schemaVersion != 1 ||
+        !reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.boundary < 0 ||
+        a.policyId != policy.id || a.policyDigest != policy.digest ||
+        !reviewResponseRuleSupported(a.responseRuleDigest) || a.digest != reviewAssignmentDigest(a)) return false
+    // A2-28 size/objective shape. Skill diversity and the repeat limit depend on the learner's
+    // open pool and history, so they are enforced when the task is allocated.
+    if (!cumulativeReviewSlotsMeetA228(a.slots, 1, emptySet())) return false
+    val specs = policy.pool.associateBy { it.objectiveId }
+    return a.slots.all { s ->
+        val spec = specs[s.objectiveId] ?: return@all false
+        val unit = pack.unit(s.ownerUnit) ?: return@all false
+        val o = unit.objectives.singleOrNull { it.id == s.objectiveId } ?: return@all false
+        val item = pack.item(s.itemId) ?: return@all false
+        unit.openable() && unit.number < a.targetUnit && o.gating && o.kind == "RECOGNITION" &&
+            s.objectiveId == spec.objectiveId && s.skill == spec.skill.name && s.itemId in spec.candidateItemIds &&
+            (spec.remediationStepId == null || spec.remediationStepId in o.instructionStepIds + o.remediationStepIds) &&
+            s.itemId in o.checkItemIds && item.objectiveId == o.id &&
+            (!item.isTypedResponse() || scoreCheckedResponse(item, item.answer) == true) &&
+            s.itemDigest == V2Validator.checkItemContentDigest(item) &&
+            prescribedUnitIdentityMatches(pack, s.ownerUnit, s.unitDigest) &&
+            s.teachingDigest == teachingDigest(pack, o)
+    }
+}
+
+internal fun completedReviewSlots(pack: V2CurriculumPack, a: CumulativeReviewAssignment,
+                                 answers: List<CumulativeReviewAnswer>): Set<Int> {
+    if (!reviewAssignmentCurrent(pack, a) ||
+        reviewHistoryDefects(listOf(a), answers.filter { it.assignmentId == a.id }) != null) return emptySet()
+    return a.slots.indices.filter { index ->
+        val answer = answers.filter { it.assignmentId == a.id && it.assignmentDigest == a.digest &&
+            it.slotIndex == index && it.schema == CUMULATIVE_REVIEW_SCHEMA && it.role == CUMULATIVE_REVIEW_ROLE &&
+            it.acceptedOrder > a.boundary }.maxByOrNull { it.acceptedOrder } ?: return@filter false
+        pack.item(a.slots[index].itemId)?.let { scoreCheckedResponse(it, answer.selected) == true } == true
+    }.toSet()
+}
+
+/** Structural backup validation preserves stale histories but refuses forged links/order/hash. */
+internal fun reviewHistoryDefects(assignments: List<CumulativeReviewAssignment>,
+                                 answers: List<CumulativeReviewAnswer>): String? {
+    if (assignments.map { it.id }.distinct().size != assignments.size ||
+        answers.map { it.id }.distinct().size != answers.size ||
+        answers.map { it.acceptedOrder }.distinct().size != answers.size) return "duplicate review identity/order"
+    val maximum = answers.maxOfOrNull { it.acceptedOrder } ?: 0
+    val hashValid: (String) -> Boolean = { it.length == 64 && it.all { c -> c in '0'..'9' || c in 'a'..'f' } }
+    for (a in assignments) {
+        if (!reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.targetUnit !in 1..30 ||
+            a.boundary < 0 || a.boundary > maximum || a.policyId.isBlank() || !hashValid(a.policyDigest) || !hashValid(a.responseRuleDigest) || a.slots.size !in 2..CUMULATIVE_REVIEW_MAXIMUM_SLOTS || a.slots.map { it.itemId }.distinct().size != a.slots.size ||
+            a.digest != reviewAssignmentDigest(a) || a.slots.any { it.ownerUnit !in 1 until a.targetUnit ||
+                !hashValid(it.itemDigest) || !hashValid(it.unitDigest) || !hashValid(it.teachingDigest) ||
+                it.skill.isBlank() || it.itemId.isBlank() || it.objectiveId.isBlank() }) return "invalid review assignment"
+    }
+    for (answer in answers) {
+        val a = assignments.singleOrNull { it.id == answer.assignmentId } ?: return "missing review assignment"
+        if (answer.schema != CUMULATIVE_REVIEW_SCHEMA || answer.role != CUMULATIVE_REVIEW_ROLE ||
+            answer.assignmentDigest != a.digest || answer.slotIndex !in a.slots.indices ||
+            answer.acceptedOrder <= a.boundary || answer.selected.isBlank() || answer.id.isBlank()) return "invalid review answer"
+    }
+    return null
+}
+
+internal data class CumulativeUnitCompletion(val preActivation: Boolean, val policyDigest: String, val assignmentId: String, val completionOrder: Long)
+
+internal fun unit3ReviewDeclarationValid(pack: V2CurriculumPack): Boolean = cumulativeReviewDeclarationValid(pack, 3)
+
+internal fun currentCumulativeAssignment(pack: V2CurriculumPack, learner: V2LearnerView, targetUnit: Int): CumulativeReviewAssignment? =
+    learner.reviewAssignments.lastOrNull { it.targetUnit == targetUnit && reviewAssignmentCurrent(pack, it) }
+
+internal fun currentUnit3Assignment(pack: V2CurriculumPack, learner: V2LearnerView): CumulativeReviewAssignment? =
+    currentCumulativeAssignment(pack, learner, 3)
+
+internal fun cumulativeReviewComplete(pack: V2CurriculumPack, learner: V2LearnerView, targetUnit: Int): Boolean {
+    if (!cumulativeReviewDeclarationValid(pack, targetUnit)) return false
+    val a = currentCumulativeAssignment(pack, learner, targetUnit) ?: return false
+    if (!reviewAssignmentEligible(pack, learner, a)) return false
+    return completedReviewSlots(pack, a, learner.reviewAnswers).size == a.slots.size
+}
+internal fun unit3ReviewComplete(pack: V2CurriculumPack, learner: V2LearnerView): Boolean = cumulativeReviewComplete(pack, learner, 3)
+
+/** A review unit counts only from its recorded current assignment. Empty and pre-activation links do not. */
+internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): Boolean {
+    if (cumulativeReviewPolicy(unit.number) == null) return true
+    if (!cumulativeReviewDeclarationValid(pack, unit.number)) return false
+    val record = learner.unitReviewCompletions[unit.number] ?: return false
+    if (record.preActivation || record.policyDigest.isEmpty() || record.assignmentId.isEmpty() || record.completionOrder == 0L) return false
+    val a = learner.reviewAssignments.singleOrNull { it.id == record.assignmentId } ?: return false
+    if (record.policyDigest != a.policyDigest) return false
+    return a.targetUnit == unit.number && record.completionOrder > a.boundary &&
+        completedReviewSlots(pack, a, learner.reviewAnswers.filter { it.acceptedOrder <= record.completionOrder }).size == a.slots.size
+}
+
+/** Current unit content only. Prior-policy and pre-activation digests do not match. */
+internal fun prescribedUnitIdentityMatches(pack: V2CurriculumPack, number: Int, recorded: String): Boolean {
+    val current = V2PackIdentityIndex.unitDigest(pack, number) ?: V2Validator.unitContentReviewDigest(pack, number)
+    return recorded == current
+}

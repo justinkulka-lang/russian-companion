@@ -49,7 +49,6 @@ internal object Phase3Sources {
         claim = "participle-stress",
         binding = "obj-u27-stress:participle-stress",
         independentFeatures = setOf(
-            "STRESS_OBSUZHDAEMY",
             "STRESS_NAPISANNY",
             "STRESS_PROCHITANNY",
             "REJECTED_PRODUCTIVE_STRESS",

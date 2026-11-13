@@ -1,6 +1,12 @@
 package dev.russiancompanion.v2.ui
 
+import dev.russiancompanion.v2.curriculum.cumulativeReviewPolicy
+import dev.russiancompanion.v2.curriculum.cumulativeReviewTitle
+import dev.russiancompanion.v2.curriculum.currentCumulativeAssignment
+
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -35,6 +41,11 @@ import dev.russiancompanion.v2.curriculum.V2ContinueTarget
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
+import dev.russiancompanion.v2.curriculum.V2AssignmentStatus
+import dev.russiancompanion.v2.curriculum.unitAssignmentChecklist
+import dev.russiancompanion.v2.curriculum.unitTargetLabel
+import dev.russiancompanion.v2.curriculum.dueSpacedReviews
+import dev.russiancompanion.v2.curriculum.currentCompletedUnitNumbers
 import dev.russiancompanion.v2.curriculum.V2UnitState
 import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.advancementRuleSummary
@@ -44,10 +55,14 @@ import dev.russiancompanion.v2.curriculum.governedSelectionKey
 import dev.russiancompanion.v2.curriculum.currentObjective
 import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
+import dev.russiancompanion.v2.curriculum.lessonPresentedOptions
+import dev.russiancompanion.v2.curriculum.isTypedResponse
+import dev.russiancompanion.v2.curriculum.scoreCheckedResponse
 import dev.russiancompanion.v2.curriculum.objectiveState
 import dev.russiancompanion.v2.curriculum.practiceOffers
 import dev.russiancompanion.v2.curriculum.readinessLabel
 import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
+import dev.russiancompanion.v2.curriculum.stepCompletionItemIds
 import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
 import dev.russiancompanion.v2.curriculum.recordGovernedIdentityForTests
@@ -70,10 +85,11 @@ internal fun <T> rememberGoverned(
     pack: V2CurriculumPack,
     learner: V2LearnerView,
     label: String = "",
+    refreshKey: Any? = null,
     compute: () -> T,
 ): T? {
     val inline = V2UiWork.blocking()
-    val inlineValue = remember(pack, learner, inline, label) {
+    val inlineValue = remember(pack, learner, inline, label, refreshKey) {
         if (inline) {
             V2PackIdentityIndex.warm(pack)
             compute()
@@ -84,7 +100,7 @@ internal fun <T> rememberGoverned(
     // Keep the last worker snapshot so a learner refresh does not blank the screen.
     var published by remember { mutableStateOf<T?>(null) }
     val generation = remember { java.util.concurrent.atomic.AtomicLong(0) }
-    LaunchedEffect(pack, learner, inline, label) {
+    LaunchedEffect(pack, learner, inline, label, refreshKey) {
         if (inline) return@LaunchedEffect
         val token = generation.incrementAndGet()
         recordGovernedIdentityForTests(if (label.isEmpty()) "scheduled" else "$label:scheduled")
@@ -123,13 +139,13 @@ internal fun V2LocalDataScreen(message: String, onRetry: () -> Unit) {
 
 @Composable
 internal fun V2OnboardingScreen(saveFailed: Boolean, onFinished: (V2OnboardingDraft) -> Unit) {
-    var page by remember { mutableIntStateOf(0) }
-    var penguin by remember { mutableStateOf(true) }
-    var anki by remember { mutableStateOf(false) }
-    var binder by remember { mutableStateOf(false) }
-    var tutor by remember { mutableStateOf(false) }
-    var start by remember { mutableStateOf(V2StartingPoint.NEW_TO_CYRILLIC) }
-    var minutes by remember { mutableIntStateOf(35) }
+    var page by rememberSaveable { mutableIntStateOf(0) }
+    var penguin by rememberSaveable { mutableStateOf(true) }
+    var anki by rememberSaveable { mutableStateOf(false) }
+    var binder by rememberSaveable { mutableStateOf(false) }
+    var tutor by rememberSaveable { mutableStateOf(false) }
+    var start by rememberSaveable { mutableStateOf(V2StartingPoint.NEW_TO_CYRILLIC) }
+    var minutes by rememberSaveable { mutableIntStateOf(35) }
     val title = when (page) {
         0 -> "Welcome"
         1 -> "Study system"
@@ -172,12 +188,12 @@ internal fun V2OnboardingScreen(saveFailed: Boolean, onFinished: (V2OnboardingDr
                 CompanionToggle("I have a tutor now", tutor) { tutor = it }
             }
             2 -> {
-                Text("New to Cyrillic is the recommended start. Resume from a later book lesson is not available while Units 3–30 are not installed.")
+                Text("New to Cyrillic is the recommended start. These choices adjust guidance; you will still begin at Unit 1.")
                 StartingChoice(V2StartingPoint.NEW_TO_CYRILLIC, start) { start = it }
                 StartingChoice(V2StartingPoint.CAN_READ_CYRILLIC, start) { start = it }
                 StartingChoice(V2StartingPoint.RESUME_FROM_BOOK, start) { start = it }
                 if (start == V2StartingPoint.RESUME_FROM_BOOK) {
-                    V2Status("Later units are not yet installed. You will still begin at Unit 1.")
+                    V2Status("You will begin at Unit 1. Choosing a starting point does not record any completed work.")
                 }
             }
             3 -> {
@@ -201,14 +217,10 @@ private fun CompanionToggle(label: String, selected: Boolean, onChange: (Boolean
         modifier = Modifier
             .fillMaxWidth()
             .heightIn(min = 48.dp)
-            .semantics {
-                role = Role.Checkbox
-                this.selected = selected
-                stateDescription = if (selected) "Selected" else "Not selected"
-            },
+            .toggleable(value = selected, role = Role.Checkbox, onValueChange = onChange),
         verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
     ) {
-        androidx.compose.material3.Checkbox(checked = selected, onCheckedChange = onChange)
+        androidx.compose.material3.Checkbox(checked = selected, onCheckedChange = null)
         Text(label)
     }
 }
@@ -224,14 +236,11 @@ private fun StartingChoice(value: V2StartingPoint, selected: V2StartingPoint, on
         modifier = Modifier
             .fillMaxWidth()
             .heightIn(min = 48.dp)
-            .semantics {
-                role = Role.RadioButton
-                this.selected = value == selected
-                stateDescription = if (value == selected) "Selected" else "Not selected"
-            },
+            .selectable(selected = value == selected, role = Role.RadioButton,
+                onClick = { if (value != selected) onSelect(value) }),
         verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
     ) {
-        RadioButton(selected = value == selected, onClick = { onSelect(value) })
+        RadioButton(selected = value == selected, onClick = null)
         Text(label)
     }
 }
@@ -244,8 +253,17 @@ internal fun V2TodayScreen(
     onTab: (V2Tab) -> Unit,
     onContinue: (V2ContinueTarget) -> Unit,
     onSavedWork: () -> Unit,
+    onSetUnitTarget: (Int, Long?) -> Unit = { _, _ -> },
 ) {
     val unit = pack.unit(learner.currentUnitNumber)
+    val minute = rememberReviewMinute()
+    val checklist = rememberGoverned(pack, learner, label = "today-checklist", refreshKey = minute) {
+        unit?.let { current ->
+            val reached = currentCompletedUnitNumbers(pack, learner) + learner.currentUnitNumber
+            val due = dueSpacedReviews(pack, learner.spacedReviews, reached, minute * 60_000).size
+            unitAssignmentChecklist(pack, current, learner, due)
+        }
+    }
     val governed = rememberGoverned(pack, learner, label = "today") {
         val current = unit
         Triple(
@@ -268,7 +286,7 @@ internal fun V2TodayScreen(
     val objective = governed.first
     val today = governed.second
     val recorded = governed.third
-    var showPlan by remember { mutableStateOf(false) }
+    var showPlan by rememberSaveable(learner.currentUnitNumber) { mutableStateOf(false) }
     V2Scaffold(
         title = "Today",
         tab = V2Tab.TODAY,
@@ -312,6 +330,24 @@ internal fun V2TodayScreen(
                 unit.sessions.forEach { session ->
                     val done = doneSteps?.get(session.id) == true
                     V2Status("${session.title} — ${if (done) "Recorded" else "Not finished"} · ${session.estimatedMinutes} min")
+                }
+            }
+        }
+        if (unit != null) {
+            Spacer(Modifier.height(12.dp))
+            V2UnitTargetControl(unit.number, learner.unitTargets[unit.number], onSetUnitTarget)
+            Spacer(Modifier.height(12.dp))
+            Text("Unit assignments", style = MaterialTheme.typography.titleMedium,
+                modifier = Modifier.semantics { heading(); testTag = "v2-checklist" })
+            checklist.orEmpty().forEach { entry ->
+                val mark = when (entry.status) {
+                    V2AssignmentStatus.DONE -> "Done"
+                    V2AssignmentStatus.TODO -> "To do"
+                    V2AssignmentStatus.NOT_ASSIGNED -> "Not yet assigned"
+                }
+                Column(Modifier.padding(vertical = 4.dp).semantics(mergeDescendants = true) { testTag = "v2-checklist-${entry.id}" }) {
+                    Text("$mark · ${entry.label}")
+                    entry.detail?.let { V2Status(it) }
                 }
             }
         }
@@ -372,6 +408,9 @@ internal fun V2UnitScreen(
     onOpenSession: (String) -> Unit,
     onAttestBook: (Int) -> Unit,
     onAdvance: (Int) -> Unit,
+    onOpenCumulativeReview: () -> Unit = {},
+    onOpenUnitTest: () -> Unit = {},
+    onBinderSelfCheck: () -> Unit = {},
 ) {
     val unit = pack.unit(unitNumber) ?: return
     val state = unitState(pack, unit, learner)
@@ -428,6 +467,10 @@ internal fun V2UnitScreen(
                 modifier = Modifier.semantics { testTag = "v2-advancement-rule" },
             )
         }
+        if (cumulativeReviewPolicy(unit.number) != null) {
+            Text(pack.reviewCopy.text("beforeAdvancing"))
+            V2SecondaryButton(cumulativeReviewTitle(pack, unit.number), onOpenCumulativeReview, tag = "v2-open-cumulative-review")
+        }
         if (decision == null) {
             V2Status("Preparing advancement")
         } else {
@@ -440,6 +483,8 @@ internal fun V2UnitScreen(
             )
             V2PrimaryButton("Advance if requirements are met", { onAdvance(unit.number) }, enabled = decision.allowed, tag = "v2-advance")
         }
+        Spacer(Modifier.height(12.dp))
+        V2UnitCourseworkSection(pack, learner, unit, onOpenUnitTest, onBinderSelfCheck)
     }
 }
 
@@ -474,6 +519,7 @@ internal fun V2SessionScreen(
     val routeStep = session.steps[index]
     var shownStepId by rememberSaveable(routeStep.id) { mutableStateOf(routeStep.id) }
     val step = if (remedial) pack.step(shownStepId)?.second ?: routeStep else routeStep
+    val requiredItemIds = remember(pack, step.id) { stepCompletionItemIds(pack, step.id).toSet() }
     fun selectedAnswer(stepId: String, itemId: String): String? {
         return selections[governedSelectionKey(stepId, itemId)]
     }
@@ -516,11 +562,11 @@ internal fun V2SessionScreen(
                         tag = "v2-return-to-check",
                     )
                 } else {
-                    val unanswered = step.itemIds.any { selectedAnswer(step.id, it) == null }
+                    val unanswered = requiredItemIds.any { selectedAnswer(step.id, it) == null }
                     V2PrimaryButton(
                         text = if (index == session.steps.lastIndex) "Finish session" else step.dominantAction,
                         onClick = {
-                            if (step.itemIds.any { selectedAnswer(step.id, it) == null }) return@V2PrimaryButton
+                            if (requiredItemIds.any { selectedAnswer(step.id, it) == null }) return@V2PrimaryButton
                             val stepId = step.id
                             onCompleteStep(stepId) {
                                 if (!navigationOpen.value || !consumedSteps.add(stepId)) return@onCompleteStep
@@ -537,8 +583,12 @@ internal fun V2SessionScreen(
         Text(step.title, style = MaterialTheme.typography.headlineSmall, modifier = Modifier.semantics { heading(); testTag = "v2-step-title" })
         V2Status("Step ${index + 1} of ${session.steps.size} · ${step.kind}")
             Text(step.body)
-            if (step.itemIds.any { selectedAnswer(step.id, it) == null }) {
-                V2Status("Answer each item before this step is recorded.")
+            if (requiredItemIds.any { selectedAnswer(step.id, it) == null }) {
+                V2Status(if (requiredItemIds.size == step.itemIds.size) {
+                    "Answer each item before this step is recorded."
+                } else {
+                    "Answer each required item before this step is recorded."
+                })
             }
         step.exampleIds.forEach { exampleId ->
             val example = pack.example(exampleId) ?: return@forEach
@@ -562,45 +612,41 @@ internal fun V2SessionScreen(
         }
         step.itemIds.forEach { itemId ->
             val item = pack.item(itemId) ?: return@forEach
+            if (itemId !in requiredItemIds) V2Status("Optional practice · not required to complete this step")
             val selected = selectedAnswer(step.id, item.id)
             val locked = item.id in lockedItemIds
-            item.promptLetter?.let { glyph ->
-                Text(
-                    glyph,
-                    style = MaterialTheme.typography.displayLarge,
-                    modifier = Modifier.semantics { testTag = "v2-prompt-letter" },
-                )
-            }
+            V2QuestionCue(item, "v2-prompt-letter")
             Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-item-prompt-${item.id}" })
-            item.options.forEach { option ->
+            if (item.isTypedResponse()) {
+                V2TypedResponseInput(item, step.id, selected, !locked) { value -> onAttempt(item.id, value, step.id) }
+            } else lessonPresentedOptions(item, step.id).forEach { option ->
                 androidx.compose.foundation.layout.Row(
                     modifier = Modifier
                         .fillMaxWidth()
                         .heightIn(min = 48.dp)
-                        .semantics {
-                            role = Role.RadioButton
-                            this.selected = selected == option
-                        },
+                        .selectable(selected = selected == option, enabled = !locked,
+                            role = Role.RadioButton,
+                            onClick = { if (selected != option) onAttempt(item.id, option, step.id) })
+                        .semantics { testTag = "v2-option-${item.id}-$option" },
                     verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
                 ) {
                     RadioButton(
                         selected = selected == option,
                         enabled = !locked,
-                        onClick = {
-                            if (selected == option) return@RadioButton
-                            onAttempt(item.id, option, step.id)
-                        },
-                        modifier = Modifier.semantics { testTag = "v2-option-${item.id}-$option" },
+                        onClick = null,
                     )
                     Text(option)
                 }
             }
             if (selected != null) {
-                val correct = selected == item.answer
+                val correct = scoreCheckedResponse(item, selected) == true
                 Text(
                     if (correct) "Recorded as correct. ${item.feedback}" else "Not the reviewed answer. ${item.feedback}",
                     modifier = Modifier.semantics { testTag = "v2-item-feedback-${item.id}" },
                 )
+                selectedWrongOptionRationale(item, selected)?.let { rationale ->
+                    Text(rationale, Modifier.semantics { testTag = "v2-item-rationale-${item.id}" })
+                }
                 if (!correct) {
                     step.remediationStepId?.let { target ->
                         V2SecondaryButton(
@@ -659,7 +705,8 @@ internal fun V2PracticeScreen(
     onLab: (String) -> Unit,
     onSavedWork: () -> Unit,
 ) {
-    val offers = rememberGoverned(pack, learner, label = "practice") {
+    val minute = rememberReviewMinute()
+    val offers = rememberGoverned(pack, learner, label = "practice", refreshKey = minute) {
         practiceOffers(pack, learner)
     }
     V2Scaffold(title = "Practice", tab = V2Tab.PRACTICE, onTab = onTab) {
@@ -669,6 +716,7 @@ internal fun V2PracticeScreen(
         )
         V2Card("Alphabet Lab", "Letter board, print pairs, and confusable forms.", "Available", onAlphabet)
         V2SecondaryButton("Saved work", onSavedWork, tag = "v2-open-saved-work")
+        V2ListenPanel(modelReference = null, audio = null)
         if (offers == null) {
             V2Status("Preparing practice")
             return@V2Scaffold
@@ -690,7 +738,7 @@ internal fun V2AlphabetLabScreen(
     onBack: () -> Unit,
     onRecognition: () -> Unit = {},
 ) {
-    var selectedId by remember { mutableStateOf<String?>(null) }
+    var selectedId by rememberSaveable(pack.packId, pack.packVersion) { mutableStateOf<String?>(null) }
     val selected = pack.letters.firstOrNull { it.id == selectedId }
     val confusable = pack.letters.filter { !it.latinLookalike.isNullOrBlank() }
     V2Scaffold(title = "Alphabet Lab", tab = null, onTab = {}, onBack = onBack) {
@@ -728,7 +776,7 @@ internal fun V2ReferenceScreen(
     onTab: (V2Tab) -> Unit,
     onOpen: (String) -> Unit,
 ) {
-    var query by remember { mutableStateOf("") }
+    var query by rememberSaveable(pack.packId, pack.packVersion) { mutableStateOf("") }
     val entries = searchReferences(visibleReferences(pack, learner), query)
     V2LazyScaffold(title = "Reference", tab = V2Tab.REFERENCE, onTab = onTab) {
         item {
@@ -790,7 +838,12 @@ internal fun V2ProgressScreen(
             modifier = Modifier.semantics { testTag = "v2-progress-heading" },
         )
         V2Status("Current unit: ${unit?.title ?: "Unavailable"}")
-        V2Status("Completed units: ${learner.completedUnitNumbers.sorted().joinToString().ifBlank { "none" }}")
+        val currentCompletions = dev.russiancompanion.v2.curriculum.currentCompletedUnitNumbers(pack, learner)
+        V2Status("Completed units: ${currentCompletions.sorted().joinToString().ifBlank { "none" }}")
+        val historicalOnly = learner.completedUnitNumbers - currentCompletions
+        if (historicalOnly.isNotEmpty()) {
+            V2Status("Past completion records need current evidence: ${historicalOnly.sorted().joinToString()}")
+        }
         V2Status("Book self-attestations: ${learner.bookAttestedUnits.sorted().joinToString().ifBlank { "none" }}")
         V2Status("In-app checks marked correct: ${learner.correctItemIds.size}. This count includes historical rows and is not current prescribed credit.")
         if (objectiveLines == null) {
@@ -801,6 +854,32 @@ internal fun V2ProgressScreen(
         Text("A local backup is saved only after you start it and it finishes. The app does not claim these records are protected unless that backup succeeded.")
         V2SecondaryButton("Back up or restore", onBackup, tag = "v2-open-backup")
         V2SecondaryButton("Settings, appearance, and attributions", onSettings)
+        V2GradebookSection(pack, learner)
+    }
+}
+
+/** A2-35: per unit and objective, from recorded evidence only; labels follow MA2-083/084. */
+@Composable
+internal fun V2GradebookSection(pack: V2CurriculumPack, learner: V2LearnerView) {
+    val book = rememberGoverned(pack, learner, label = "gradebook") { dev.russiancompanion.v2.curriculum.gradebook(pack, learner) }
+    Spacer(Modifier.height(12.dp))
+    Text("Gradebook", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { heading(); testTag = "v2-gradebook" })
+    Text(dev.russiancompanion.v2.curriculum.GRADEBOOK_NOTE, modifier = Modifier.semantics { testTag = "v2-gradebook-note" })
+    if (book == null) { V2Status("Preparing gradebook"); return }
+    book.forEach { unit ->
+        Column(Modifier.padding(vertical = 6.dp).semantics(mergeDescendants = true) { testTag = "v2-gradebook-unit-${unit.unitNumber}" }) {
+            Text("Unit ${unit.unitNumber} · ${unit.title}", style = MaterialTheme.typography.titleSmall)
+            Text("Check attempts: ${unit.attempts.label()}")
+            Text("Unit test: " + (unit.unitTests.lastOrNull()?.let { last ->
+                "${unitTestResult(last)} ${unit.unitTests.size} ${if (unit.unitTests.size == 1) "attempt" else "attempts"}."
+            } ?: "none recorded"))
+            Text("Review accuracy: ${unit.review.label()}")
+            Text("Items in review queue: ${unit.queueItems}")
+        }
+        unit.objectives.forEach { o ->
+            Text("${o.title}: ${o.stateLabel}. Attempts ${o.attempts.label()}. Review ${o.review.label()}. Queue ${o.queueItems}.",
+                modifier = Modifier.padding(start = 12.dp).semantics { testTag = "v2-gradebook-objective-${o.objectiveId}" })
+        }
     }
 }
 
@@ -882,5 +961,58 @@ internal fun V2AttributionsScreen(pack: V2CurriculumPack, onBack: () -> Unit) {
                 Spacer(Modifier.height(12.dp))
             }
         }
+    }
+}
+
+/** Text semantics expose the same complete governed cue in lesson and optional practice. */
+@Composable
+internal fun V2QuestionCue(item: dev.russiancompanion.v2.curriculum.V2CheckItem, tag: String) {
+    if (item.promptLetterRole != "CUE") return
+    item.promptLetter?.takeIf { it.isNotBlank() }?.let { cue ->
+        Text(
+            cue,
+            style = if (cue.length <= 3) MaterialTheme.typography.displayLarge else MaterialTheme.typography.titleLarge,
+            modifier = Modifier.semantics { testTag = tag },
+        )
+    }
+}
+
+
+/** Today's date for target-date display; tests may pin it. */
+internal object V2TodayClock {
+    @Volatile var epochDayForTests: Long? = null
+    fun epochDay(): Long = epochDayForTests ?: java.time.LocalDate.now().toEpochDay()
+}
+
+/** A2-31: an optional learner-set date with days remaining. Missing it changes nothing. */
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
+@Composable
+internal fun V2UnitTargetControl(unitNumber: Int, targetEpochDay: Long?, onSetUnitTarget: (Int, Long?) -> Unit) {
+    val today = V2TodayClock.epochDay()
+    var picking by rememberSaveable(unitNumber) { mutableStateOf(false) }
+    Text(unitTargetLabel(targetEpochDay, today), modifier = Modifier.semantics { testTag = "v2-today-target" })
+    V2SecondaryButton(if (targetEpochDay == null) "Set a target date" else "Change target date", { picking = true },
+        tag = "v2-target-set")
+    if (targetEpochDay != null) {
+        V2SecondaryButton("Clear target date", { onSetUnitTarget(unitNumber, null) }, tag = "v2-target-clear")
+    }
+    if (picking) {
+        val initial = (targetEpochDay ?: (today + 14)) * 86_400_000L
+        val state = androidx.compose.material3.rememberDatePickerState(initialSelectedDateMillis = initial)
+        androidx.compose.material3.DatePickerDialog(
+            onDismissRequest = { picking = false },
+            confirmButton = {
+                androidx.compose.material3.TextButton(
+                    onClick = {
+                        state.selectedDateMillis?.let { onSetUnitTarget(unitNumber, Math.floorDiv(it, 86_400_000L)) }
+                        picking = false
+                    },
+                    modifier = Modifier.semantics { testTag = "v2-target-save" },
+                ) { Text("Save") }
+            },
+            dismissButton = {
+                androidx.compose.material3.TextButton(onClick = { picking = false }) { Text("Cancel") }
+            },
+        ) { androidx.compose.material3.DatePicker(state = state) }
     }
 }

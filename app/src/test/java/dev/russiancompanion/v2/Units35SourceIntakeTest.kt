@@ -53,10 +53,16 @@ class Units35SourceIntakeTest {
             "src-enwiktionary-russian-entry-guidelines-92541199",
             "src-ruwikisource-vechera-5336197",
             "src-original-research-synthesis",
+            "src-content-audit-research",
+            "src-enwiki-reflexive-pronoun-1374712982",
+            "src-ruwiki-obosoblenie-144053197",
+            "src-ruwiki-boltraffio-149826784",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)
-            if (record.sourceId.startsWith("src-readyrussian-")) {
+            if (record.sourceId == "src-content-audit-research") {
+                assertContentAuditResearch(record)
+            } else if (record.sourceId.startsWith("src-readyrussian-")) {
                 assertTrue(record.itemId, record.sourceUrl.contains("readyrussian.org"))
             } else if (record.sourceId == "src-original-research-synthesis") {
                 assertEquals(
@@ -64,6 +70,14 @@ class Units35SourceIntakeTest {
                     "urn:russian-companion:original-research-synthesis:${record.sourceRevision}",
                     record.sourceUrl,
                 )
+            } else if (record.sourceId == "src-enwiki-reflexive-pronoun-1374712982") {
+                assertEquals(record.itemId, "1374712982", record.sourceRevision)
+                assertEquals(record.itemId, "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982", record.sourceUrl)
+            } else if (record.sourceId == "src-openrussian-50e210c4") {
+                assertEquals(record.itemId, "50e210c4803237779cb562bc1abcea529066031c", record.sourceRevision)
+                assertTrue(record.itemId, record.sourceUrl in listOf("nouns.csv", "adjectives.csv", "others.csv", "verbs.csv").map {
+                    "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/$it"
+                })
             } else if (record.unitNumber in 26..30) {
                 assertTrue(record.itemId, record.sourceUrl.contains("oldid=${record.sourceRevision}"))
             }
@@ -72,7 +86,7 @@ class Units35SourceIntakeTest {
             assertTrue(record.attribution.isNotBlank())
             if (record.sourceId == "src-ruwikisource-vechera-5336197") {
                 assertEquals("Public domain", record.licenseId)
-            } else if (record.sourceId == "src-original-research-synthesis") {
+            } else if (record.sourceId in setOf("src-original-research-synthesis", "src-content-audit-research")) {
                 assertEquals("Original app text", record.licenseId)
                 assertEquals("urn:russian-companion:license:original-app-text", record.licenseUrl)
             } else {
@@ -85,7 +99,7 @@ class Units35SourceIntakeTest {
             assertEquals(null, record.audioAssetId)
             val expectedLicense = when (record.sourceId) {
                 "src-ruwikisource-vechera-5336197" -> "Public domain"
-                "src-original-research-synthesis" -> "Original app text"
+                "src-original-research-synthesis", "src-content-audit-research" -> "Original app text"
                 else -> "CC BY-SA 4.0"
             }
             assertTrue(pack.sources.any { it.id == record.sourceId && it.license == expectedLicense })

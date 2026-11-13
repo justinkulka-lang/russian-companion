@@ -16,6 +16,7 @@ import dev.russiancompanion.domain.progress.ExportCounts
 import dev.russiancompanion.v2.backup.BACKUP_CANCELLED
 import dev.russiancompanion.v2.backup.BACKUP_FAILED
 import dev.russiancompanion.v2.backup.BACKUP_SAVED
+import dev.russiancompanion.v2.backup.BACKUP_SAVED_WITH_LATER_CHANGES
 import dev.russiancompanion.v2.backup.GovernedReplaceOutcome
 import dev.russiancompanion.v2.backup.BackupWorkRegistry
 import dev.russiancompanion.v2.backup.RESTORE_CANCELLED
@@ -70,6 +71,7 @@ internal class V2BackupCoordinator(
     private val packVersion: Int,
     private val appearanceStore: AppearanceStore,
     private val recoveryDir: File,
+    private val importLimits: dev.russiancompanion.v2.backup.BackupImportLimits = dev.russiancompanion.v2.backup.BackupImportLimits(),
 ) : ViewModel() {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
     private val running = AtomicBoolean(false)
@@ -115,11 +117,12 @@ internal class V2BackupCoordinator(
         if (phase != V2BackupPhase.PREPARING || !running.get()) return
         phase = V2BackupPhase.WRITING
         scope.launch {
+            var laterChanges = false
             val outcome = withContext(Dispatchers.IO) {
                 runCatching {
                     if (cancelRequested) return@runCatching false
                     val stream = openOutput() ?: return@runCatching false
-                    stream.use { output ->
+                    val document = stream.use { output ->
                         if (cancelRequested) return@runCatching false
                         writeStoreBackup(
                             store = store,
@@ -131,11 +134,11 @@ internal class V2BackupCoordinator(
                         )
                     }
                     if (cancelRequested) return@runCatching false
-                    val document = store.governedLearnerDocument()
+                    laterChanges = store.governedLearnerDocument() != document
                     val counts = ExportCounts(
                         logCount = document.activityLogs.size,
-                        evidenceCount = document.evidence.size + document.attempts.size,
-                        progressCount = document.steps.size + document.unitCompletions.size,
+                        evidenceCount = document.evidence.size + document.attempts.size + document.reviewAnswers.size,
+                        progressCount = document.steps.size + document.unitCompletions.size + document.reviewAssignments.size,
                         recordingCount = document.recordings.size,
                     )
                     store.saveExport(
@@ -156,7 +159,7 @@ internal class V2BackupCoordinator(
                 }
             }
             val succeeded = outcome.getOrNull() == true && !cancelRequested
-            finish(succeeded, BACKUP_FAILED, BACKUP_CANCELLED, BACKUP_SAVED)
+            finish(succeeded, BACKUP_FAILED, BACKUP_CANCELLED, if (laterChanges) BACKUP_SAVED_WITH_LATER_CHANGES else BACKUP_SAVED)
             onFinished()
         }
     }
@@ -175,7 +178,9 @@ internal class V2BackupCoordinator(
                         val staging = File(recoveryDir, "incoming-${System.nanoTime()}")
                         acquireStaging(staging)
                         usingStaging {
-                            readGovernedBackup(input, applicationId, packId, packVersion, staging)
+                            readGovernedBackup(input, applicationId, packId, packVersion, staging, importLimits) {
+                                cancelRequested || !scope.isActive
+                            }
                         }
                     }
                 }
@@ -187,7 +192,8 @@ internal class V2BackupCoordinator(
                     is dev.russiancompanion.v2.backup.BackupReadResult.Rejected -> {
                         validated = null
                         preview = null
-                        message = RESTORE_FAILED
+                        message = if (opened.reason == dev.russiancompanion.v2.backup.BackupRejection.RESOURCE_LIMIT)
+                            dev.russiancompanion.v2.backup.RESTORE_TOO_LARGE else RESTORE_FAILED
                         phase = V2BackupPhase.FAILED
                         running.set(false)
                     }

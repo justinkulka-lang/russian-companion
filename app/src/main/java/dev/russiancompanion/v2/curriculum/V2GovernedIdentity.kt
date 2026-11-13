@@ -29,15 +29,20 @@ internal const val LEGACY_UNVERIFIED = "LEGACY_UNVERIFIED"
 internal const val CLOSED_RESPONSE_RULE_ID = "closed-response-exact-option"
 
 /**
- * The six guided-practice curriculum gaps. Practice must not invent items for them.
+ * Guided-practice routes that still have no reviewed item.
+ * The six foundation and nominative gaps now have their own guided steps, so this set is empty.
+ * Do not put a step here to hide a missing item.
  */
-internal val GUIDED_PRACTICE_GAP_STEP_IDS = setOf(
-    "u1-st-confusable",
-    "u1-st-iotated",
-    "u1-st-signs",
-    "u1-st-print",
-    "u1-st-decoding",
-    "u4-st-rem-nominative",
+internal val GUIDED_PRACTICE_GAP_STEP_IDS = emptySet<String>()
+
+/** Concepts that previously had no guided route. Tests require a real guided item for each. */
+internal val FILLED_GUIDED_PRACTICE_ROUTES = mapOf(
+    "u1-st-confusable" to "u1-st-guided-confusable",
+    "u1-st-iotated" to "u1-st-guided-iotated",
+    "u1-st-signs" to "u1-st-guided-signs",
+    "u1-st-print" to "u1-st-guided-print",
+    "u1-st-decoding" to "u1-st-guided-decoding",
+    "u4-st-rem-nominative" to "u4-st-guided-nominative",
 )
 
 private const val CLOSED_RESPONSE_RULE_DOCUMENT =
@@ -253,19 +258,20 @@ internal fun prepareGovernedAttempt(
     if (role != PRESCRIBED_CHECK && role != OPTIONAL_PRACTICE) return null
     if (stepId.isBlank() || recordedAt.isBlank() || selected.isBlank()) return null
     val item = pack.item(itemId) ?: return null
-    if (item.options.isEmpty() || selected !in item.options || item.answer !in item.options) return null
+    val correct = scoreCheckedResponse(item, selected) ?: return null
     val unitNumber = itemUnitNumber(pack, item) ?: return null
     val unit = pack.unit(unitNumber) ?: return null
     if (!unit.openable()) return null
     val itemDigest = V2Validator.checkItemContentDigest(item)
     val unitDigest = V2PackIdentityIndex.unitDigest(pack, unitNumber)
         ?: V2Validator.unitContentReviewDigest(pack, unitNumber)
-    val ruleDigest = closedResponseRuleDigest()
+    val ruleDigest = responseRuleDigest(item)
+    val responseIdentity = if (item.isTypedResponse()) sha256Hex(canonicalParts(listOf(selected, itemDigest, ruleDigest))) else selected.hashCode().toString()
     return GovernedAttemptWrite(
-        id = "$itemId:$role:$stepId:$recordedAt:${selected.hashCode()}",
+        id = "$itemId:$role:$stepId:$recordedAt:$responseIdentity",
         itemId = itemId,
         selected = selected,
-        correct = selected == item.answer,
+        correct = correct,
         recordedAtLocal = recordedAt,
         itemDigest = itemDigest,
         unitContentDigest = unitDigest,
@@ -301,13 +307,14 @@ internal fun attemptSuppliesStepSelection(
     ) {
         return false
     }
-    if (attempt.ruleDigest != closedResponseRuleDigest()) return false
     val item = pack.item(attempt.itemId) ?: return false
-    if (attempt.selected !in item.options) return false
+    if (attempt.ruleDigest != responseRuleDigest(item)) return false
+    val scored = scoreCheckedResponse(item, attempt.selected) ?: return false
+    if (item.isTypedResponse() && (attempt.correct != scored || attempt.objectiveId != item.objectiveId)) return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     val unitNumber = itemUnitNumber(pack, item) ?: return false
     if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
-    if (attempt.unitContentDigest != currentUnitDigest(pack, unitNumber)) return false
+    if (!prescribedUnitIdentityMatches(pack, unitNumber, attempt.unitContentDigest)) return false
     val step = pack.step(stepId)?.second ?: return false
     return attempt.itemId in step.itemIds
 }
@@ -335,9 +342,20 @@ internal fun stepReadyForGovernedCompletion(
     stepId: String,
 ): Boolean {
     val step = pack.step(stepId)?.second ?: return false
-    if (step.itemIds.isEmpty()) return true
+    val requiredItemIds = stepCompletionItemIds(pack, stepId)
+    if (requiredItemIds.isEmpty()) return true
     val selections = governedSessionSelections(pack, learner)
-    return step.itemIds.all { itemId -> governedSelectionKey(stepId, itemId) in selections }
+    return requiredItemIds.all { itemId -> governedSelectionKey(stepId, itemId) in selections }
+}
+
+/** Optional questions in a required session do not become a step-completion obligation. */
+internal fun stepCompletionItemIds(pack: V2CurriculumPack, stepId: String): List<String> {
+    val (session, step) = pack.step(stepId) ?: return emptyList()
+    val unit = pack.units.firstOrNull { candidate -> candidate.sessions.any { it.id == session.id } }
+        ?: return step.itemIds
+    val optionalIds = unit.objectives.filter { !it.gating }.map { it.id }.toSet()
+    if (session.objectiveIds.isNotEmpty() && session.objectiveIds.all { it in optionalIds }) return step.itemIds
+    return step.itemIds.filter { pack.item(it)?.objectiveId !in optionalIds }
 }
 
 /** Set by governed completion so tests can see that identity work left the UI thread. */
@@ -385,17 +403,45 @@ internal fun attemptGrantsPrescribedCredit(attempt: GovernedAttemptView, pack: V
     ) {
         return false
     }
-    if (attempt.ruleDigest != closedResponseRuleDigest()) return false
     val item = pack.item(attempt.itemId) ?: return false
+    if (attempt.ruleDigest != responseRuleDigest(item)) return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     if (pack.unit(attempt.unitNumber) == null) return false
-    return attempt.unitContentDigest == currentUnitDigest(pack, attempt.unitNumber)
+    if (scoreCheckedResponse(item, attempt.selected) != true || attempt.objectiveId != item.objectiveId ||
+        itemUnitNumber(pack, item) != attempt.unitNumber) return false
+    return prescribedUnitIdentityMatches(pack, attempt.unitNumber, attempt.unitContentDigest)
 }
+
+private val creditByPack = IdentityWeakCache<IdentityWeakCache<Set<String>>>(8)
+
+internal fun clearCreditCacheForTests() = creditByPack.clear()
 
 internal fun creditItemIds(pack: V2CurriculumPack, learner: V2LearnerView): Set<String> {
     val attempts = learner.governedAttempts ?: return learner.correctItemIds
-    return attempts.filter { attemptGrantsPrescribedCredit(it, pack) }.map { it.itemId }.toSet()
+    val byLearner = creditByPack.get(pack) ?: IdentityWeakCache<Set<String>>(4).also { creditByPack.put(pack, it) }
+    byLearner.get(learner)?.let { return it }
+    val computed = attempts.filter { attemptGrantsPrescribedCredit(it, pack) }.map { it.itemId }.toSet()
+    byLearner.put(learner, computed)
+    return computed
 }
+
+/**
+ * First-attempt credit is distinct from eventual completion credit. Reveal is offered only after
+ * a durable wrong submission, so no UI flag, retry, clock change, or reopen can convert it to a first hit.
+ * Optional practice is included in the history so revealing there cannot earn first credit in a lesson.
+ * Unsequenced or tied histories cannot establish an unambiguous first successful attempt.
+ */
+internal fun firstAttemptCorrectItemIds(pack: V2CurriculumPack, learner: V2LearnerView): Set<String> =
+    learner.governedAttempts.orEmpty()
+        .filter { attemptSuppliesStepSelection(it, pack, it.stepId) || attemptMatchesCurrentOptional(it, pack, it.stepId) }
+        .groupBy { it.itemId }
+        .filterValues { history ->
+            history.none { it.acceptedOrder <= 0 } &&
+                history.minOfOrNull { it.acceptedOrder }?.let { first ->
+                    val earliest = history.filter { it.acceptedOrder == first }
+                    earliest.size == 1 && attemptGrantsPrescribedCredit(earliest.single(), pack)
+                } == true
+        }.keys
 
 internal fun completedStepCounts(pack: V2CurriculumPack, learner: V2LearnerView, stepId: String): Boolean {
     val digests = learner.governedStepDigests ?: return stepId in learner.completedStepIds
@@ -414,7 +460,9 @@ internal fun practiceOffers(pack: V2CurriculumPack, learner: V2LearnerView): Lis
             return PracticeOffer(id, title, "This curriculum version is not supported.", false, "UNSUPPORTED_VERSION")
         }
         val count = practiceQueue(pack, learner, id).size
-        val body = if (count == 0) {
+        val body = if (id == "spaced") {
+            "$detail $count items due. This practice does not replace required unit review."
+        } else if (count == 0) {
             "$detail No closed-response items are available for the units you have reached."
         } else {
             "$detail $count closed-response items. Optional practice does not complete a required check."
@@ -422,6 +470,7 @@ internal fun practiceOffers(pack: V2CurriculumPack, learner: V2LearnerView): Lis
         return PracticeOffer(id, title, body, true, null)
     }
     return listOf(
+        runnable("spaced", "Due review", "Spaced practice of app-checked items. AnkiDroid remains the default for long-term vocabulary decks."),
         runnable(
             "alphabet",
             "Alphabet recognition",
@@ -471,16 +520,25 @@ internal fun practiceOffers(pack: V2CurriculumPack, learner: V2LearnerView): Lis
     )
 }
 
-internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId: String): List<V2CheckItem> {
+internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId: String,
+    spacedIds: List<String>? = null, nowEpochMillis: Long = System.currentTimeMillis()): List<V2CheckItem> {
     if (pack.schemaVersion != 1) return emptyList()
     if (labId in setOf("listening", "pronunciation", "handwriting")) return emptyList()
-    val reached = learner.completedUnitNumbers + learner.currentUnitNumber
+    val reached = currentCompletedUnitNumbers(pack, learner) + learner.currentUnitNumber
+    if (labId == "spaced") {
+        val records = if (spacedIds == null) dueSpacedReviews(pack, learner.spacedReviews, reached, nowEpochMillis)
+            else spacedIds.distinct().mapNotNull { id -> learner.spacedReviews.singleOrNull { it.itemId == id } }
+                .filter { it.unitNumber in reached && spacedReviewRecordCurrent(pack, it) }
+        return records.mapNotNull { pack.item(it.itemId) }
+    }
     val pool = pack.items.mapNotNull { item ->
         val unitNumber = itemUnitNumber(pack, item) ?: return@mapNotNull null
         val unit = pack.unit(unitNumber) ?: return@mapNotNull null
         if (!unit.openable() || unitNumber !in reached) return@mapNotNull null
-        if (item.options.isEmpty() || item.answer !in item.options) return@mapNotNull null
-        if (!itemKindMatchesLab(item.kind, labId, unitNumber, learner)) return@mapNotNull null
+        if (item.isTypedResponse()) {
+            if (scoreCheckedResponse(item, item.answer) != true) return@mapNotNull null
+        } else if (item.options.isEmpty() || item.answer !in item.options) return@mapNotNull null
+        if (!itemKindMatchesLab(item.kind, labId, unitNumber, learner, pack)) return@mapNotNull null
         if (itemOnlyOnGapSteps(pack, item.id)) return@mapNotNull null
         item
     }
@@ -507,6 +565,7 @@ internal data class PracticeLabSnapshot(
     val offer: PracticeOffer?,
     val items: List<V2CheckItem>,
     val recordedByItem: Map<String, GovernedAttemptView>,
+    val storageEpoch: Long = 0,
 )
 
 /** Offers, ranking, and current selections for one lab. Call off the main thread. */
@@ -514,8 +573,10 @@ internal fun practiceLabSnapshot(
     pack: V2CurriculumPack,
     learner: V2LearnerView,
     labId: String,
+    spacedIds: List<String>? = null,
+    nowEpochMillis: Long = System.currentTimeMillis(),
 ): PracticeLabSnapshot {
-    val items = practiceQueue(pack, learner, labId)
+    val items = practiceQueue(pack, learner, labId, spacedIds, nowEpochMillis)
     val recorded = linkedMapOf<String, GovernedAttemptView>()
     items.forEach { item ->
         optionalPracticeSelection(pack, learner, labId, item.id)?.let { recorded[item.id] = it }
@@ -524,6 +585,7 @@ internal fun practiceLabSnapshot(
         offer = practiceOffers(pack, learner).firstOrNull { it.id == labId },
         items = items,
         recordedByItem = recorded,
+        storageEpoch = learner.storageEpoch,
     )
 }
 
@@ -569,9 +631,10 @@ internal fun attemptMatchesCurrentOptional(
     ) {
         return false
     }
-    if (attempt.ruleDigest != closedResponseRuleDigest()) return false
     val item = pack.item(attempt.itemId) ?: return false
-    if (attempt.selected !in item.options) return false
+    if (attempt.ruleDigest != responseRuleDigest(item)) return false
+    val scored = scoreCheckedResponse(item, attempt.selected) ?: return false
+    if (item.isTypedResponse() && (attempt.correct != scored || attempt.objectiveId != item.objectiveId)) return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     val unitNumber = itemUnitNumber(pack, item) ?: return false
     if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
@@ -710,11 +773,11 @@ private fun itemOnlyOnGapSteps(pack: V2CurriculumPack, itemId: String): Boolean 
     return steps.isNotEmpty() && steps.all { it.id in GUIDED_PRACTICE_GAP_STEP_IDS }
 }
 
-private fun itemKindMatchesLab(kind: String, labId: String, unitNumber: Int, learner: V2LearnerView): Boolean {
+private fun itemKindMatchesLab(kind: String, labId: String, unitNumber: Int, learner: V2LearnerView, pack: V2CurriculumPack): Boolean {
     return when (labId) {
         "alphabet" -> kind in setOf("LETTER_IDENTITY", "CONFUSABLE", "SIGN", "PRINT_PAIR")
         "reading" -> kind == "SOURCE_STRESS"
-        "grammar" -> kind in setOf(
+        "grammar" -> kind in setOf("TYPED_FORM", "TYPED_TRANSFORMATION") || kind in setOf(
             "FORM_SELECTION",
             "CASE_RECOGNITION",
             "PATTERN_CLASSIFICATION",
@@ -723,8 +786,8 @@ private fun itemKindMatchesLab(kind: String, labId: String, unitNumber: Int, lea
             "SOURCE_INDECLINABLE",
             "CONTRAST_SELECTION",
         )
-        "vocabulary" -> kind in setOf("SOURCE_MEANING", "SOURCE_FORM", "SOURCE_GENDER", "SOURCE_QUESTION")
-        "mixed" -> unitNumber in learner.completedUnitNumbers
+        "vocabulary" -> kind in setOf("TYPED_TRANSLATION", "SOURCE_MEANING", "SOURCE_FORM", "SOURCE_GENDER", "SOURCE_QUESTION")
+        "mixed" -> unitNumber in currentCompletedUnitNumbers(pack, learner)
         else -> false
     }
 }
@@ -749,11 +812,14 @@ internal object V2PackIdentityIndex {
     private val units = IdentityWeakCache<Map<Int, String>>()
 
     fun warm(pack: V2CurriculumPack) {
-        if (steps.get(pack) != null && units.get(pack) != null) return
+        val cachedUnits = units.get(pack)
+        if (steps.get(pack) != null && cachedUnits != null &&
+            pack.units.all { it.number in cachedUnits }) return
         val stepMap = pack.units.flatMap { it.sessions }.flatMap { it.steps }
             .associate { step -> step.id to rawStepContentDigest(pack, step) }
         val unitMap = pack.units.associate { unit ->
-            unit.number to V2Validator.unitContentReviewDigest(pack, unit.number)
+            unit.number to (cachedUnits?.get(unit.number)
+                ?: V2Validator.unitContentReviewDigest(pack, unit.number))
         }
         steps.put(pack, stepMap)
         units.put(pack, unitMap)
@@ -761,9 +827,23 @@ internal object V2PackIdentityIndex {
 
     fun stepDigest(pack: V2CurriculumPack, stepId: String): String? = steps.get(pack)?.get(stepId)
 
-    fun unitDigest(pack: V2CurriculumPack, unitNumber: Int): String? = units.get(pack)?.get(unitNumber)
+    /** A cold or evicted immutable pack must not rehash a unit for every recorded attempt. */
+    fun unitDigest(pack: V2CurriculumPack, unitNumber: Int): String? {
+        units.get(pack)?.get(unitNumber)?.let { return it }
+        if (pack.units.none { it.number == unitNumber }) return null
+        return synchronized(units) {
+            units.get(pack)?.get(unitNumber) ?: run {
+                val computed = V2Validator.unitContentReviewDigest(pack, unitNumber)
+                units.put(pack, units.get(pack).orEmpty() + (unitNumber to computed))
+                computed
+            }
+        }
+    }
 
     fun clearForTests() {
+        V2CompletionEvidence.clearForTests()
+        clearCreditCacheForTests()
+        V2Validator.clearCachedDigestsForTests()
         steps.clear()
         units.clear()
     }
