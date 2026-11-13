@@ -1,5 +1,7 @@
 # T15-n0 unmarked Russian factual-claim inventory
 
+This is the T15-n0 baseline inventory at 9decefb2, not a list regenerated after later content corrections. Subsequent per-entry dispositions are recorded in WORK_QUEUE.md. Unit 6 entries are retained here to make its marker/disposition regression checks independent of inventory deletion.
+
 Scope: all item feedback and distractor rationales (including optional reference items), and all REMEDIATE step bodies, in shipped Units 1–30. The [CSV](T15-n0-unmarked-russian-facts.csv) contains 4,353 entries copied verbatim from the pack. It records concrete glosses/translations, form identities, grammar/usage claims, and instructions that themselves encode a linguistic rule. Pure directions, app normalization, task-scope statements and source-layout/position-only claims are excluded. Claims are recorded for review, not certified as true, licensed independently, or unsourced. English-only entries can already be protected by the quotation rule.
 
 Cyrillic-bearing entries carry the exact label “already protected by the Cyrillic rule”. The inventory includes Unit 1 and optional items outside the legacy English-host traversal. It does not inventory prompts, teaching bodies, references or example fields. No marker or content change is made by this inventory.
