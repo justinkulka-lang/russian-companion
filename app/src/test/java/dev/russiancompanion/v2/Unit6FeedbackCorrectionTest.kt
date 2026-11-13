@@ -22,8 +22,10 @@ class Unit6FeedbackCorrectionTest {
     @get:Rule val compose = createComposeRule()
     @Test fun feedbackExplainsPossessorRolesPersonNumberAndDestinationCase() {
         val p = pack()
-        val items = p.items.filter { it.objectiveId in objectives }
-        assertEquals(15, items.size)
+        // T15a: three cue-only closed items in these objectives became typed items (no options or assessment).
+        assertEquals(3, p.items.count { it.objectiveId in objectives && it.isTypedResponse() })
+        val items = p.items.filter { it.objectiveId in objectives && !it.isTypedResponse() }
+        assertEquals(12, items.size)
         items.forEach { item ->
             assertFalse(item.id, item.feedback.startsWith("Does"))
             assertEquals(item.feedback, item.assessment!!.whyAnswerDemonstratesObjective)

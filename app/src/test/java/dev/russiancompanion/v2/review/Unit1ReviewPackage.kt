@@ -42,6 +42,9 @@ internal const val UNITS_1_5_T14N2_VERIFY_CURRICULUM_COMMIT = "4d7bf44aeee231b76
 
 internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
 
+// T15a Unit 6 (A2-23/24/26): Unit 6 binds here; earlier pins stay historical.
+internal const val UNIT6_T15A_CURRICULUM_COMMIT = "454c1d94c0ba61cb3713269de6c3a49421786128"
+
 internal const val UNITS_6_10_CURRICULUM_COMMIT = "ae777d85fe3616fc8e065890201d40c241d113bc"
 
 internal const val UNITS_11_15_CURRICULUM_COMMIT = "b22fa0cca895a677386a77d03a63301f7454aa07"
@@ -175,7 +178,9 @@ internal const val UNIT14_PLURAL_POSSESSION_REVIEW_CURRICULUM_COMMIT = "d72afd12
 internal const val UNIT5_T15N1_CURRICULUM_COMMIT = "792344b957ad174cebc1e9907411d344df3de0d1"
 
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
-    if (unitNumber == 5) UNIT5_T15N1_CURRICULUM_COMMIT
+    // T15a also rewords the Units 6-10 attribution reference, so Units 7-10 bind to the same commit.
+    if (unitNumber in 6..10) UNIT6_T15A_CURRICULUM_COMMIT
+    else if (unitNumber == 5) UNIT5_T15N1_CURRICULUM_COMMIT
     else if (unitNumber in 1..4) UNITS_1_5_T14N2_VERIFY_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNIT5_GRAMMAR_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 3) UNIT3_GENDER_TEACHING_CURRICULUM_COMMIT
