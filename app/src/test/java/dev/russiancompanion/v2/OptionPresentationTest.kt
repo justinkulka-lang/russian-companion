@@ -23,11 +23,12 @@ class OptionPresentationTest {
         // T14-b adds nine typed items with no options (eight checked, one guided) for Units 1-2, then two
         // closed gender checks and fourteen typed items (twelve checked, two guided) for Units 3-4;
         // T14-c adds seven typed question-word items (six checked, one guided) for Unit 5; T14-n2 replaces six
-        // Unit 2 print pairs with six concept checks and adds one guided concept item.
-        assertEquals(677, p.items.size)
+        // Unit 2 print pairs with six concept checks and adds one guided concept item. T15a removes four Unit 6
+        // cue-only items (earlier in the list) and appends eight typed Unit 6 items.
+        assertEquals(681, p.items.size)
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
-            p.items.drop(622).take(4).map { it.id }.toSet())
-        assertEquals(562, p.items.count { it.options.firstOrNull() == it.answer })
+            p.items.drop(618).take(4).map { it.id }.toSet())
+        assertEquals(558, p.items.count { it.options.firstOrNull() == it.answer })
         val routes = p.units.flatMap { it.sessions }.flatMap { it.steps }
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
         for ((name, displays) in listOf(
@@ -41,8 +42,8 @@ class OptionPresentationTest {
             "review" to p.items.map { it to presentedOptions(it, reviewOptionContext("corpus-distribution", 0)) },
         )) {
             if (name == "required") {
-                assertEquals(474, displays.size)
-                assertEquals(380, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
+                assertEquals(478, displays.size)
+                assertEquals(376, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
             }
             displays.forEach { (item, order) ->
                 assertEquals(item.id, item.options.sorted(), order.sorted())

@@ -127,7 +127,8 @@ class Units610InstructionalValidityTest {
         val objective = pack.unit(6)!!.objectives.first { it.id == "obj-u6-possessive" }
         val guidedOnly = pack.copy(
             items = pack.items.map { item ->
-                if (item.id in objective.checkItemIds) {
+                // T15a: typed items have no assessment and are never feature-valid closed checks.
+                if (item.id in objective.checkItemIds && item.assessment != null) {
                     item.copy(assessment = item.assessment!!.copy(independent = false))
                 } else {
                     item

@@ -120,12 +120,16 @@ class ContentAuditCorrectionTest {
         assertTrue(session.steps.drop(guidedIndex).none { it.kind == "TEACH" })
         assertEquals((1..teachingCount).map { "u$number-st-teach-$topic-$it" } + additionalTeachingIds,
             session.steps.take(guidedIndex).map { it.id })
-        assertEquals(listOf("GUIDED", "REMEDIATE", "CHECK"), session.steps.drop(guidedIndex).map { it.kind })
+        val objectiveForCheck = unit.objectives.single { it.id == "obj-u$number-$topic" }
+        val checkStep = unit.sessions.flatMap { it.steps }.single { it.kind == "CHECK" && objectiveForCheck.checkItemIds.any { id -> id in it.itemIds } }
+        // T15a: Unit 6 checks sit in an end-of-unit check session (A2-24); other units keep the check in the topic session.
+        val expectedKinds = if (checkStep in session.steps) listOf("GUIDED", "REMEDIATE", "CHECK") else listOf("GUIDED", "REMEDIATE")
+        assertEquals(expectedKinds, session.steps.drop(guidedIndex).map { it.kind })
         assertEquals(listOf("u$number-g-$topic-0"), session.steps[guidedIndex].itemIds)
         val objective = unit.objectives.single { it.id == "obj-u$number-$topic" }
         assertTrue(objective.gating)
         assertTrue(objective.checkItemIds.isNotEmpty())
-        assertTrue(objective.checkItemIds.all { id -> session.steps.last().itemIds.contains(id) })
+        assertTrue(objective.checkItemIds.all { id -> checkStep.itemIds.contains(id) })
     }
 
     @Test

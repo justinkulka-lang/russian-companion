@@ -6,6 +6,7 @@ import dev.russiancompanion.v2.curriculum.V2Validator
 import org.junit.Assert.*
 import org.junit.Test
 import java.io.File
+import kotlinx.serialization.json.*
 
 /** Owner step 7: every Unit 6 fact is marked; whole non-fact directions are reviewed explicitly.
  * This is a content review check, not a word classifier or a change to the field-based validator.
@@ -20,6 +21,8 @@ class Unit6FactProvenanceTest {
         "The independent teacher check retains this exact pair.",
         "The new independent check classifies that inanimate context rather than repeating the teacher answer.",
         "The other option repeats the shown order.",
+        "Compare your answer with the worked examples for this form, then try again.",
+        "Stress marks are optional when you type.",
     )
 
     @Test
@@ -29,15 +32,41 @@ class Unit6FactProvenanceTest {
     }
 
     @Test
-    fun everyBaselineInventoryEntryHasAMarkerIncludingAllEnglishOnlyEntries() {
+    fun everyEnglishOnlyBaselineFactHasAVerifiedCurrentDisposition() {
         val pack = pack()
-        val entries = inventory().filter { it[0] == "6" }
-        assertEquals("Do not make the check pass by deleting baseline inventory entries", 145, entries.size)
-        assertEquals(67, entries.count { it[4].startsWith("English-only") })
+        val all = inventory().filter { it[0] == "6" }
+        assertEquals("Do not hide entries by deleting baseline inventory rows", 145, all.size)
+        val entries = all.filter { it[4].startsWith("English-only") }
+        assertEquals(67, entries.size)
+        val dispositions = Json.parseToJsonElement(File(repo(), "app/src/test/resources/unit6-fact-dispositions.json").readText())
+            .jsonObject.getValue("entries").jsonArray.map { it.jsonObject }
+        fun JsonObject.string(key: String) = getValue(key).jsonPrimitive.content
+        assertEquals(67, dispositions.size)
+        assertEquals(entries.map { listOf(it[1], it[2], it[3]) }.toSet(), dispositions.map {
+            listOf(it.string("ownerId"), it.string("field"), it.string("baselineSentence"))
+        }.toSet())
         val hosts = hosts(pack)
-        entries.forEach { row ->
-            val host = hosts.single { it.ownerId == row[1] && it.field == row[2] && row[3] in it.text }
-            assertTrue("Missing marker on ${row[1]} ${row[2]}: ${row[3]}", row[3] in host.russianFacts)
+        dispositions.forEach { disposition ->
+            val matching = hosts.filter { it.ownerId == disposition.string("ownerId") && it.field == disposition.string("field") }
+            val baseline = disposition.string("baselineSentence")
+            val currentSentences = matching.flatMap { host -> V2Validator.englishSentenceRanges(host.text).map {
+                host.text.substring(it.first, it.last + 1)
+            } }
+            when (disposition.string("disposition")) {
+                "MARKED" -> {
+                    assertTrue(baseline in currentSentences)
+                    assertTrue(matching.any { baseline in it.russianFacts })
+                    assertTrue(disposition.getValue("sourceRecordIds").jsonArray.isNotEmpty())
+                }
+                "REMOVED" -> assertFalse("Removed standalone sentence survives unaccounted: $baseline", baseline in currentSentences)
+                else -> fail("Unknown disposition: $disposition")
+            }
+            // Rewording/removal is allowed; every surviving replacement fact still needs an actual source and marker.
+            disposition.getValue("sourceRecordIds").jsonArray.forEach { source ->
+                val record = pack.provenanceRecords.single { it.itemId == source.jsonPrimitive.content }
+                assertEquals(6, record.unitNumber)
+                assertTrue(matching.any { record.shippedText in it.russianFacts && record.shippedText in it.text })
+            }
         }
     }
 

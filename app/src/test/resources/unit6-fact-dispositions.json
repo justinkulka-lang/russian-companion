@@ -1,0 +1,750 @@
+{
+  "baselineCommit": "9decefb23cd1cdb2ee780e79f5964a54944554fd",
+  "upstreamCommit": "5d6d9d37",
+  "scope": "All 67 English-only Unit 6 entries from the immutable T15-n0 inventory. Removed entries stay absent; replacement facts are independently required to be marked and sourced.",
+  "entries": [
+    {
+      "entry": "U6-E01",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "Choose the form from the noun, not from the gender of its owner.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-002"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E02",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-005"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E03",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "The form follows the noun being described.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-008"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E04",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "A singular noun does not take the plural form in these choices.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-011"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E05",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "Keep the same noun and feminine singular agreement.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-015"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E06",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "Both mean your.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-018"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E07",
+      "ownerId": "u6-g-third-0",
+      "field": "item feedback",
+      "baselineSentence": "These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-022"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E08",
+      "ownerId": "u6-st-rem-third",
+      "field": "remediation body",
+      "baselineSentence": "These do not decline according to the gender or number of the modified noun.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-third-rem"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E09",
+      "ownerId": "u6-i-third-1",
+      "field": "item feedback",
+      "baselineSentence": "These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-022"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E10",
+      "ownerId": "u6-i-third-2",
+      "field": "item feedback",
+      "baselineSentence": "These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-022"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E11",
+      "ownerId": "u6-g-object-0",
+      "field": "item feedback",
+      "baselineSentence": "Both have the same meaning, I love you: the subject and object keep their roles and forms.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-025"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E12",
+      "ownerId": "u6-g-object-0",
+      "field": "item distractor rationale",
+      "baselineSentence": "This option repeats the shown order instead of moving the object before or after the verb.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ca-u6-feedback-u6-g-object-0-distractor-1"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E13",
+      "ownerId": "u6-i-object-1",
+      "field": "item feedback",
+      "baselineSentence": "Both have the same meaning, I love you: the subject and object keep their roles and forms.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Removed by upstream typed-item replacement."
+    },
+    {
+      "entry": "U6-E14",
+      "ownerId": "u6-i-object-1",
+      "field": "item distractor rationale",
+      "baselineSentence": "This option repeats the shown order instead of moving the object before or after the verb.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Removed by upstream typed-item replacement."
+    },
+    {
+      "entry": "U6-E15",
+      "ownerId": "u6-i-object-2",
+      "field": "item feedback",
+      "baselineSentence": "means cats hate dogs.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-060",
+        "prov-u6-current-fact-061"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E16",
+      "ownerId": "u6-i-object-2",
+      "field": "item feedback",
+      "baselineSentence": "The cats are the subject and the dogs the accusative object.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-060",
+        "prov-u6-current-fact-061"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E17",
+      "ownerId": "u6-i-object-2",
+      "field": "item feedback",
+      "baselineSentence": "Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-060",
+        "prov-u6-current-fact-061"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E18",
+      "ownerId": "u6-i-object-2",
+      "field": "item feedback",
+      "baselineSentence": "The other option repeats dogs hate cats.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-060",
+        "prov-u6-current-fact-061"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E19",
+      "ownerId": "u6-i-object-2",
+      "field": "item distractor rationale",
+      "baselineSentence": "This option repeats the shown subject and object roles instead of reversing who hates whom.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-t15a-u6-i-object-2-distractor-1"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E20",
+      "ownerId": "u6-i-object-3",
+      "field": "item feedback",
+      "baselineSentence": "means dogs hate cats.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-061",
+        "prov-u6-current-fact-062"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E21",
+      "ownerId": "u6-i-object-3",
+      "field": "item feedback",
+      "baselineSentence": "The dogs are the subject and the cats the accusative object.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-061",
+        "prov-u6-current-fact-062"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E22",
+      "ownerId": "u6-i-object-3",
+      "field": "item feedback",
+      "baselineSentence": "Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-061",
+        "prov-u6-current-fact-062"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E23",
+      "ownerId": "u6-i-object-3",
+      "field": "item feedback",
+      "baselineSentence": "The other option repeats cats hate dogs.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-061",
+        "prov-u6-current-fact-062"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E24",
+      "ownerId": "u6-i-object-3",
+      "field": "item distractor rationale",
+      "baselineSentence": "This option repeats the shown subject and object roles instead of reversing who hates whom.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-t15a-u6-i-object-2-distractor-1"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E25",
+      "ownerId": "u6-st-rem-feminine",
+      "field": "remediation body",
+      "baselineSentence": "Feminine gender is not the only group with that ending.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-027"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E26",
+      "ownerId": "u6-g-animacy-0",
+      "field": "item feedback",
+      "baselineSentence": "For this masculine animate noun, the singular accusative has the same form as the genitive.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-029"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E27",
+      "ownerId": "u6-g-animacy-0",
+      "field": "item feedback",
+      "baselineSentence": "The nominative names the subject or dictionary entry.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-028",
+        "prov-u6-current-fact-029",
+        "prov-u6-current-fact-030"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E28",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Its singular nominative and accusative have the same spelling and stress.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-032"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E29",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "A direct object can be accusative even when its form matches nominative.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-033"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E30",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Dictionary English notes name a sense; they are not complete sentence translations.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-034"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E31",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-035"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E32",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Matching a genitive form does not change the accusative syntactic role.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-036"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E33",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-037"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E34",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Its singular accusative matches its singular nominative.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-039"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E35",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-040"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E36",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Brother is masculine animate; this accusative is genitive-shaped.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-042"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E37",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Teacher is masculine animate; its singular accusative has the same form as its singular genitive.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-044"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E38",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Do not treat form syncretism as two different semantic case roles being interchangeable.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-045"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E39",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "instead contains a masculine inanimate chair as direct object: its accusative matches nominative.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-048"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E40",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "The imperfective verb does not establish completed action; no aspect or full-translation claim is tested.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-049"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E41",
+      "ownerId": "u6-i-animacy-1",
+      "field": "item feedback",
+      "baselineSentence": "For this masculine animate noun, the singular accusative has the same form as the genitive.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-029"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E42",
+      "ownerId": "u6-i-animacy-1",
+      "field": "item feedback",
+      "baselineSentence": "The nominative names the subject or dictionary entry.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-029",
+        "prov-u6-current-fact-030",
+        "prov-u6-current-fact-063"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E43",
+      "ownerId": "u6-i-animacy-2",
+      "field": "item feedback",
+      "baselineSentence": "For this masculine animate noun, the singular accusative has the same form as the genitive.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-029"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E44",
+      "ownerId": "u6-i-animacy-2",
+      "field": "item feedback",
+      "baselineSentence": "The nominative names the subject or dictionary entry.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-029",
+        "prov-u6-current-fact-030",
+        "prov-u6-current-fact-064"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E45",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item feedback",
+      "baselineSentence": "In the supplied chair clause, the direct object is masculine singular and inanimate.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-065"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E46",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item feedback",
+      "baselineSentence": "The masculine inanimate direct object keeps the nominative form.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ca-u6-animacy-transfer-item-1"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E47",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item feedback",
+      "baselineSentence": "The accusative role does not require a different spelling here.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-066"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E48",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item feedback",
+      "baselineSentence": "The teacher and friend examples are animate and instead have genitive-shaped singular accusatives.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-067"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E49",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item feedback",
+      "baselineSentence": "Form identity does not turn the chair into a subject or change this into a genitive case.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-068"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E50",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item distractor rationale",
+      "baselineSentence": "The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ca-u6-animacy-transfer-item-rationale"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E51",
+      "ownerId": "u6-g-pronoun-0",
+      "field": "item feedback",
+      "baselineSentence": "Match the same person and number across the nominative and accusative table columns.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-052"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E52",
+      "ownerId": "u6-i-pronoun-1",
+      "field": "item feedback",
+      "baselineSentence": "Match the same person and number across the nominative and accusative table columns.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Removed by upstream typed-item replacement."
+    },
+    {
+      "entry": "U6-E53",
+      "ownerId": "u6-i-pronoun-2",
+      "field": "item feedback",
+      "baselineSentence": "Match the same person, number and gender across the nominative and accusative table columns.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-071"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E54",
+      "ownerId": "u6-i-pronoun-3",
+      "field": "item feedback",
+      "baselineSentence": "Match the same person and number across the nominative and accusative table columns.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Removed by upstream typed-item replacement."
+    },
+    {
+      "entry": "U6-E55",
+      "ownerId": "u6-g-direction-0",
+      "field": "item feedback",
+      "baselineSentence": "Here the preposition takes the accusative, so the function is direction.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-054"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E56",
+      "ownerId": "u6-g-direction-0",
+      "field": "item feedback",
+      "baselineSentence": "Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-055"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E57",
+      "ownerId": "u6-g-direction-0",
+      "field": "item distractor rationale",
+      "baselineSentence": "Location describes being at a place instead of moving toward a destination in this example.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ca-u6-feedback-u6-g-direction-0-distractor-1"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E58",
+      "ownerId": "u6-st-rem-direction",
+      "field": "remediation body",
+      "baselineSentence": "generally the accusative case denotes ''direction''",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [
+        "prov-u6-direction-rem"
+      ],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E59",
+      "ownerId": "u6-i-direction-1",
+      "field": "item feedback",
+      "baselineSentence": "Here the preposition takes the prepositional case.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-073"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E60",
+      "ownerId": "u6-i-direction-1",
+      "field": "item feedback",
+      "baselineSentence": "Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-074"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E61",
+      "ownerId": "u6-i-direction-1",
+      "field": "item distractor rationale",
+      "baselineSentence": "Direction describes moving toward a destination instead of being at a place in this example.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ca-u6-feedback-u6-i-direction-1-distractor-1"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E62",
+      "ownerId": "u6-i-direction-2",
+      "field": "item feedback",
+      "baselineSentence": "Here the preposition takes the accusative, so the function is direction.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-054"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E63",
+      "ownerId": "u6-i-direction-2",
+      "field": "item feedback",
+      "baselineSentence": "Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-055"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E64",
+      "ownerId": "u6-i-direction-2",
+      "field": "item distractor rationale",
+      "baselineSentence": "Location describes being at a place instead of moving toward a destination in this example.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ca-u6-feedback-u6-g-direction-0-distractor-1"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E65",
+      "ownerId": "u6-i-direction-3",
+      "field": "item feedback",
+      "baselineSentence": "Here the preposition takes the prepositional case.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-073"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E66",
+      "ownerId": "u6-i-direction-3",
+      "field": "item feedback",
+      "baselineSentence": "Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-current-fact-074"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    },
+    {
+      "entry": "U6-E67",
+      "ownerId": "u6-i-direction-3",
+      "field": "item distractor rationale",
+      "baselineSentence": "Direction describes moving toward a destination instead of being at a place in this example.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ca-u6-feedback-u6-i-direction-1-distractor-1"
+      ],
+      "reason": "Retained exact sentence; marker and actual source present."
+    }
+  ]
+}

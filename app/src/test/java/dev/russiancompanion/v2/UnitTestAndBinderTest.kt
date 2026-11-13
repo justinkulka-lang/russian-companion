@@ -28,7 +28,7 @@ class UnitTestAndBinderTest {
         val p = pack()
         // T14-b: Units 1-2 carry typed items (owner decision), so each has a unit test meeting A2-34.
         for (unit in p.units) {
-            if (unit.number <= 5) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
+            if (unit.number <= 6) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
             else { assertNull(unitTestPlan(p, unit)); assertNotNull(unitTestUnavailableReason(p, unit)) }
         }
         unitTestPlan(p, p.unit(1)!!)!!.let { assertEquals(10, it.itemIds.size); assertEquals(3, it.typedCount) }
@@ -36,7 +36,9 @@ class UnitTestAndBinderTest {
         // T14-b: Units 3-4 reach 20 checked items with 6 typed.
         // T14-c: Unit 5 likewise; later blocks have no typed items yet.
         for (n in 3..5) unitTestPlan(p, p.unit(n)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(6, it.typedCount) }
-        assertTrue(unitTestUnavailableReason(p, p.unit(6)!!)!!.contains("0 typed items"))
+        // T15a: Unit 6 reaches 23 checked items with 8 typed.
+        unitTestPlan(p, p.unit(6)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(8, it.typedCount) }
+        assertTrue(unitTestUnavailableReason(p, p.unit(7)!!)!!.contains("0 typed items"))
         val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })
         assertTrue(unitTestUnavailableReason(few, few.unit(2)!!)!!.contains("at least 10 are needed"))
         assertTrue(courseworkDefects(p).isEmpty())

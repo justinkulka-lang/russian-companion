@@ -10,8 +10,8 @@ class CurriculumDesignDiagnosticsTest {
     @Test fun currentCorpusHasLocatedSignalsWhileCompatibilityValidationStillPasses() {
         val report = V2DesignDiagnostics.audit(current)
         assertEquals(30, report.counts["units"])
-        assertEquals(677, report.counts["items"])
-        assertEquals(474, report.counts["requiredChecks"])
+        assertEquals(681, report.counts["items"])
+        assertEquals(478, report.counts["requiredChecks"])
         assertEquals("NEEDS_CORRECTION_OR_REVIEW", report.verdict)
         assertTrue(report.signals.any { it.rule == "LEARNER_MARKUP" && "u14-st-teach-impersonal-2" in it.entityIds })
         assertTrue(report.signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" && "u13-i-tense-keep-2" in it.entityIds })
@@ -42,8 +42,9 @@ class CurriculumDesignDiagnosticsTest {
     }
 
     @Test fun sameSurfaceFormsInDifferentGrammaticalQuestionsAreNotIdenticalTasks() {
-        val a = current.item("u6-i-animacy-2")!!.copy(id = "a", objectiveId = objectiveId)
         val b = current.item("u10-i-preposition-2")!!.copy(id = "b", objectiveId = objectiveId)
+        // T15a gave u6-i-animacy-2 a third sourced option; compare the shared two-form surface.
+        val a = current.item("u6-i-animacy-2")!!.copy(id = "a", objectiveId = objectiveId, options = b.options)
         assertEquals(a.promptLetter, b.promptLetter)
         assertEquals(a.options, b.options)
         assertEquals(a.answer, b.answer)
