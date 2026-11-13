@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "a428485d2be2b4bc532ac9ae700db13bbf32df29cb931d5ea13284af4295c7a3",
+      "sha256": "8d066a47967ba9546952eefb3a53edecb7a25a0f2e9852463ded99febfc926d5",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {

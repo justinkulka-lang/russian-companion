@@ -2,6 +2,7 @@ package dev.russiancompanion.v2
 
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2PackLoader
+import dev.russiancompanion.v2.curriculum.V2AuthoredEnglishRecord
 import dev.russiancompanion.v2.curriculum.V2Step
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.V2Validator.EnglishProvenanceMode
@@ -44,7 +45,7 @@ class EnglishProvenanceRulingTest {
     }
 
     @Test
-    fun unsourcedGlossFails() {
+    fun unsourcedCueAndTeachingGlossFail() {
         val pack = pack()
         val item = unitItem(pack, 3)
         val cue = pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(promptLetter = "towns and villages") else it })
@@ -136,20 +137,91 @@ class EnglishProvenanceRulingTest {
     }
 
     @Test
-    fun nothingThatPassesTodayStartsFailing() {
+    fun unsourcedInstructionActuallyUsesTheFieldExemption() {
         val pack = pack()
-        val targets = V2Validator.englishQuoteTargets(pack)
-        val hosts = V2Validator.englishProvenanceHosts(pack)
-        assertTrue(hosts.isNotEmpty())
-        hosts.forEach { host ->
-            val ranges = V2Validator.exemptEnglishRanges(host, targets)
-            if (host.mode == EnglishProvenanceMode.FULL) assertTrue(ranges.isEmpty())
-            ranges.forEach { range -> assertTrue(range.first >= 0 && range.last < host.text.length) }
+        val instruction = "Take your time and think about the situation first."
+        val changed = withStep(pack, 3, "GUIDED") { it.copy(body = instruction) }
+        val host = V2Validator.englishProvenanceHosts(changed).first { it.field == "instruction body" && it.text == instruction }
+        val spans = pack.provenanceRecords.filter { it.unitNumber == 3 }.map { it.shippedText } +
+            pack.authoredEnglishRecords.filter { it.unitNumber == 3 }.map { it.text }
+        // The pre-T15-n0 span-only rule rejects this exact unsourced fixture.
+        assertTrue(V2Validator.unboundLetters(instruction, spans).isNotEmpty())
+        val exemptions = V2Validator.exemptEnglishRanges(host, V2Validator.englishQuoteTargets(changed))
+        assertTrue(instruction.indices.filter { instruction[it].isLetter() }.all { i -> exemptions.any { i in it } })
+        assertEquals("", V2Validator.unboundLetters(instruction, spans, exemptions))
+        assertEquals(errors(pack), errors(changed))
+        // The same wording remains unsourced when placed in teaching rather than an instruction field.
+        assertTrue(errors(withStep(pack, 3, "TEACH") { it.copy(body = instruction) }).any { it.contains(englishError) })
+    }
+
+    @Test
+    fun feedbackQuotingPunctuatedOptionOrCueFails() {
+        val pack = pack()
+        val option = pack.items.flatMap { it.options }.first { it.endsWith(".") && it.all { c -> c.code < 128 } && it.length > 15 }
+        val cue = pack.items.mapNotNull { it.promptLetter }.first { '?' in it && it.all { c -> c.code < 128 } }
+        assertTrue(cue in pack.items.mapNotNull { it.promptLetter })
+        val contraction = pack.items.flatMap { it.options }.first {
+            '\'' in it && it.last() in ".!?" && it.all { c -> c.code < 128 }
         }
-        // Exempt ranges are added after source spans, so they can only remove leftovers: the committed pack, which passed
-        // before T15-n0, still has no English provenance error, and every teaching body keeps the full requirement.
-        assertTrue(errors(pack).none { it.contains(englishError) })
-        assertTrue(hosts.filter { it.field == "teaching body" }.all { it.mode == EnglishProvenanceMode.FULL })
+        val item = unitItem(pack, 3)
+        // A punctuation-only English fixture also covers exclamation marks without adding Russian content.
+        val exclamation = "Fixture choice!"
+        val withOption = pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(options = it.options + exclamation) else it })
+        listOf(option to pack, cue to pack, contraction to pack, exclamation to withOption).forEach { (target, fixture) ->
+            listOf("\"$target\"", "“$target”", "'$target'").forEach { quote ->
+                val text = "Consider $quote before continuing."
+                val changed = fixture.copy(items = fixture.items.map { if (it.id == item.id) it.copy(feedback = text) else it })
+                assertTrue("Missing source error for $quote", errors(changed).any { it.contains(englishError) && "Consider" in it })
+            }
+        }
+    }
+
+    @Test
+    fun feedbackQuotingANonTargetHeadingPasses() {
+        val pack = pack()
+        val heading = pack.provenanceRecords.first { it.shippedText == "Recorded masculine nouns" }.shippedText
+        assertTrue(heading.lowercase() !in V2Validator.englishQuoteTargets(pack))
+        val item = unitItem(pack, 3)
+        val changed = pack.copy(items = pack.items.map {
+            if (it.id == item.id) it.copy(feedback = "Consider \"$heading\" before continuing.") else it
+        })
+        assertEquals(errors(pack), errors(changed))
+    }
+
+    @Test
+    fun scaffoldCoveredRussianFactMarkerStillNeedsSource() {
+        val pack = pack()
+        val sentence = "Consider this assertion before continuing."
+        val item = unitItem(pack, 3)
+        val scaffold = V2AuthoredEnglishRecord("test-marked-scaffold", 3, sentence, "INDEPENDENTLY_AUTHORED_SCAFFOLD")
+        val fixture = pack.copy(authoredEnglishRecords = pack.authoredEnglishRecords + scaffold)
+        val unmarked = fixture.copy(items = fixture.items.map { if (it.id == item.id) it.copy(feedback = sentence) else it })
+        assertEquals(errors(pack), errors(unmarked))
+        val marked = unmarked.copy(items = unmarked.items.map { if (it.id == item.id) it.copy(russianFacts = listOf(sentence)) else it })
+        assertTrue(errors(marked).any { it.contains(englishError) && "marked sentence" in it })
+    }
+
+    @Test
+    fun unitOneRussianFactMarkerStillNeedsSource() {
+        val pack = pack()
+        val item = unitItem(pack, 1)
+        val sentence = "Consider this assertion before continuing."
+        val unmarked = pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(feedback = sentence) else it })
+        assertEquals(errors(pack), errors(unmarked))
+        val marked = unmarked.copy(items = unmarked.items.map { if (it.id == item.id) it.copy(russianFacts = listOf(sentence)) else it })
+        assertTrue(errors(marked).any { it.contains(englishError) && "marked sentence in unit 1" in it })
+    }
+
+    @Test
+    fun optionalReferenceItemMarkerStillNeedsSource() {
+        val pack = pack()
+        val item = pack.items.first { it.id == "u30-i-letter-names-1" }
+        val sentence = "Consider this assertion before continuing."
+        assertTrue(V2Validator.englishProvenanceHosts(pack).none { it.ownerId == item.id })
+        val changed = pack.copy(items = pack.items.map {
+            if (it.id == item.id) it.copy(feedback = sentence, russianFacts = listOf(sentence)) else it
+        })
+        assertTrue(errors(changed).any { it.contains(englishError) && "marked sentence in unit 30" in it })
     }
 
     private fun errors(pack: V2CurriculumPack): List<String> = V2Validator.validate(pack).errors

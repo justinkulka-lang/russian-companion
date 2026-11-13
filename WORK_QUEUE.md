@@ -1477,244 +1477,238 @@ The existing English validator checks units with provenance (Units 2–30); Unit
 
 Uncovered fields measured by Kotlin: ref-pronunciation title, summary and detail (detail has 2 failing sentences); ref-u2-pairs title, summary and detail (detail has 2 failing sentences); ref-u3-gender title and summary; ref-u4-pronouns title and summary; ref-u4-present title and summary; ref-u4-nominative title and summary; ref-u5-questions title and summary; ref-u5-prepositional title and summary; ref-u5-indeclinable title and summary. There are 20 field occurrences and 22 failing sentence fragments.
 
-Candidate-only English exemption measurement (not shipped or accepted): the attempted Kotlin field/sentence rule measured the following strings/sentences by unit and field, once per owner/field per unit. A partially exempt string counts once, with only its exempt sentences counted. This reports removal of the English wording requirement, not exemption of Cyrillic provenance. Unit 1 counts are descriptive only: that unit was already outside the old span-based English validator. The complete unmarked-fact list is not accepted or completed while T15-n0 remains blocked; no markers were added to content. T15a–T15e cannot start until this dependency is DONE with CI passed.
+Applied T15-n0 English exemption measurement — refreshed by the Kotlin validator after the 2026-11-13 verification corrections. This replaces the earlier prototype table. Scope is the existing English-span traversal in Units 2–30; Unit 1 was already outside that traversal, so its applied English exemption effect is zero. Reference coverage is unchanged. Cyrillic is never counted as exempt. Fields absent from the table have zero exemptions.
 
-| Unit | Field | Strings exempted | Sentences exempted |
-|---:|---|---:|---:|
-| 1 | item.distractor-rationale | 10 | 19 |
-| 1 | item.feedback | 13 | 15 |
-| 1 | item.prompt | 29 | 37 |
-| 1 | step.body | 30 | 71 |
-| 1 | step.bookDirection | 8 | 22 |
-| 1 | step.companionDirection | 7 | 15 |
-| 1 | step.remediation | 1 | 2 |
-| 1 | step.title | 43 | 43 |
-| 2 | item.feedback | 11 | 15 |
-| 2 | item.prompt | 28 | 29 |
-| 2 | step.body | 22 | 56 |
-| 2 | step.bookDirection | 6 | 31 |
-| 2 | step.companionDirection | 4 | 10 |
-| 2 | step.title | 28 | 28 |
-| 3 | item.feedback | 29 | 29 |
-| 3 | item.prompt | 29 | 29 |
-| 3 | step.body | 18 | 54 |
-| 3 | step.bookDirection | 3 | 16 |
-| 3 | step.companionDirection | 4 | 10 |
-| 3 | step.remediation | 4 | 17 |
-| 3 | step.title | 33 | 33 |
-| 4 | item.distractor-rationale | 15 | 15 |
-| 4 | item.feedback | 23 | 38 |
-| 4 | item.prompt | 34 | 37 |
-| 4 | step.body | 23 | 63 |
-| 4 | step.bookDirection | 3 | 16 |
-| 4 | step.companionDirection | 4 | 10 |
-| 4 | step.remediation | 4 | 22 |
-| 4 | step.title | 47 | 47 |
-| 5 | item.feedback | 21 | 25 |
-| 5 | item.prompt | 29 | 29 |
-| 5 | step.body | 17 | 53 |
-| 5 | step.bookDirection | 3 | 16 |
-| 5 | step.companionDirection | 4 | 10 |
-| 5 | step.remediation | 3 | 14 |
-| 5 | step.title | 35 | 35 |
-| 6 | item.distractor-rationale | 9 | 9 |
-| 6 | item.feedback | 19 | 39 |
-| 6 | item.prompt | 26 | 26 |
-| 6 | step.body | 21 | 63 |
-| 6 | step.bookDirection | 3 | 16 |
-| 6 | step.companionDirection | 4 | 10 |
-| 6 | step.remediation | 4 | 26 |
-| 6 | step.title | 60 | 60 |
-| 7 | item.distractor-rationale | 8 | 8 |
-| 7 | item.feedback | 9 | 10 |
-| 7 | item.prompt | 44 | 44 |
-| 7 | step.body | 29 | 77 |
-| 7 | step.bookDirection | 3 | 16 |
-| 7 | step.companionDirection | 4 | 10 |
-| 7 | step.remediation | 7 | 34 |
-| 7 | step.title | 85 | 85 |
-| 8 | item.distractor-rationale | 4 | 4 |
-| 8 | item.feedback | 5 | 7 |
-| 8 | item.prompt | 24 | 24 |
-| 8 | step.body | 17 | 55 |
-| 8 | step.bookDirection | 3 | 16 |
-| 8 | step.companionDirection | 4 | 10 |
-| 8 | step.remediation | 4 | 59 |
-| 8 | step.title | 50 | 50 |
-| 9 | item.distractor-rationale | 26 | 26 |
-| 9 | item.feedback | 33 | 67 |
-| 9 | item.prompt | 43 | 43 |
-| 9 | step.body | 23 | 66 |
-| 9 | step.bookDirection | 3 | 16 |
-| 9 | step.companionDirection | 4 | 10 |
-| 9 | step.remediation | 3 | 59 |
-| 9 | step.title | 81 | 81 |
-| 10 | item.distractor-rationale | 10 | 10 |
-| 10 | item.feedback | 17 | 32 |
-| 10 | item.prompt | 28 | 28 |
-| 10 | step.body | 19 | 59 |
-| 10 | step.bookDirection | 3 | 16 |
-| 10 | step.companionDirection | 4 | 10 |
-| 10 | step.remediation | 3 | 36 |
-| 10 | step.title | 65 | 65 |
-| 11 | item.feedback | 9 | 9 |
-| 11 | item.prompt | 12 | 12 |
-| 11 | step.body | 15 | 50 |
-| 11 | step.bookDirection | 3 | 16 |
-| 11 | step.companionDirection | 4 | 10 |
-| 11 | step.remediation | 2 | 7 |
-| 11 | step.title | 37 | 37 |
-| 12 | item.feedback | 15 | 20 |
-| 12 | item.prompt | 18 | 18 |
-| 12 | step.body | 19 | 58 |
-| 12 | step.bookDirection | 3 | 16 |
-| 12 | step.companionDirection | 4 | 10 |
-| 12 | step.remediation | 3 | 12 |
-| 12 | step.title | 50 | 50 |
-| 13 | item.distractor-rationale | 5 | 7 |
-| 13 | item.feedback | 13 | 26 |
-| 13 | item.prompt | 13 | 13 |
-| 13 | step.body | 15 | 50 |
-| 13 | step.bookDirection | 3 | 16 |
-| 13 | step.companionDirection | 4 | 10 |
-| 13 | step.remediation | 4 | 43 |
-| 13 | step.title | 32 | 32 |
-| 14 | item.feedback | 9 | 12 |
-| 14 | item.prompt | 9 | 9 |
-| 14 | step.body | 13 | 46 |
-| 14 | step.bookDirection | 3 | 16 |
-| 14 | step.companionDirection | 4 | 10 |
-| 14 | step.remediation | 2 | 5 |
-| 14 | step.title | 26 | 26 |
-| 15 | item.feedback | 9 | 11 |
-| 15 | item.prompt | 9 | 9 |
-| 15 | step.body | 13 | 46 |
-| 15 | step.bookDirection | 3 | 16 |
-| 15 | step.companionDirection | 4 | 10 |
-| 15 | step.remediation | 2 | 17 |
-| 15 | step.title | 27 | 27 |
-| 16 | item.distractor-rationale | 15 | 15 |
-| 16 | item.feedback | 7 | 7 |
-| 16 | item.prompt | 18 | 18 |
-| 16 | step.body | 19 | 58 |
-| 16 | step.bookDirection | 3 | 16 |
-| 16 | step.companionDirection | 4 | 10 |
-| 16 | step.remediation | 6 | 57 |
-| 16 | step.title | 52 | 52 |
-| 17 | item.distractor-rationale | 42 | 48 |
-| 17 | item.feedback | 37 | 68 |
-| 17 | item.prompt | 37 | 40 |
-| 17 | step.body | 31 | 82 |
-| 17 | step.bookDirection | 3 | 16 |
-| 17 | step.companionDirection | 4 | 10 |
-| 17 | step.remediation | 12 | 120 |
-| 17 | step.title | 78 | 78 |
-| 18 | item.distractor-rationale | 12 | 15 |
-| 18 | item.feedback | 6 | 7 |
-| 18 | item.prompt | 6 | 6 |
-| 18 | step.body | 11 | 42 |
-| 18 | step.bookDirection | 3 | 16 |
-| 18 | step.companionDirection | 4 | 10 |
-| 18 | step.remediation | 2 | 26 |
-| 18 | step.title | 19 | 19 |
-| 19 | item.distractor-rationale | 19 | 21 |
-| 19 | item.feedback | 10 | 17 |
-| 19 | item.prompt | 12 | 13 |
-| 19 | step.body | 15 | 50 |
-| 19 | step.bookDirection | 3 | 16 |
-| 19 | step.companionDirection | 4 | 10 |
-| 19 | step.remediation | 4 | 43 |
-| 19 | step.title | 30 | 30 |
-| 20 | item.distractor-rationale | 21 | 35 |
-| 20 | item.feedback | 8 | 26 |
-| 20 | item.prompt | 11 | 13 |
-| 20 | step.body | 9 | 38 |
-| 20 | step.bookDirection | 3 | 16 |
-| 20 | step.companionDirection | 4 | 10 |
-| 20 | step.remediation | 1 | 34 |
-| 20 | step.title | 17 | 17 |
-| 21 | item.distractor-rationale | 15 | 15 |
-| 21 | item.feedback | 4 | 4 |
-| 21 | item.prompt | 9 | 9 |
-| 21 | step.body | 13 | 46 |
-| 21 | step.bookDirection | 3 | 16 |
-| 21 | step.companionDirection | 4 | 10 |
-| 21 | step.remediation | 3 | 39 |
-| 21 | step.title | 26 | 26 |
-| 22 | item.distractor-rationale | 40 | 48 |
-| 22 | item.feedback | 6 | 12 |
-| 22 | item.prompt | 20 | 23 |
-| 22 | step.body | 19 | 71 |
-| 22 | step.bookDirection | 3 | 16 |
-| 22 | step.companionDirection | 4 | 10 |
-| 22 | step.remediation | 6 | 59 |
-| 22 | step.title | 44 | 44 |
-| 23 | item.distractor-rationale | 18 | 36 |
-| 23 | item.feedback | 12 | 15 |
-| 23 | item.prompt | 18 | 18 |
-| 23 | step.body | 19 | 61 |
-| 23 | step.bookDirection | 3 | 16 |
-| 23 | step.companionDirection | 4 | 10 |
-| 23 | step.remediation | 6 | 57 |
-| 23 | step.title | 39 | 39 |
-| 24 | item.distractor-rationale | 35 | 66 |
-| 24 | item.feedback | 21 | 40 |
-| 24 | item.prompt | 21 | 27 |
-| 24 | step.body | 21 | 76 |
-| 24 | step.bookDirection | 3 | 16 |
-| 24 | step.companionDirection | 4 | 10 |
-| 24 | step.remediation | 7 | 68 |
-| 24 | step.title | 47 | 47 |
-| 25 | item.distractor-rationale | 48 | 92 |
-| 25 | item.feedback | 12 | 25 |
-| 25 | item.prompt | 23 | 24 |
-| 25 | step.body | 21 | 63 |
-| 25 | step.bookDirection | 3 | 16 |
-| 25 | step.companionDirection | 4 | 10 |
-| 25 | step.remediation | 7 | 56 |
-| 25 | step.title | 49 | 49 |
-| 26 | item.distractor-rationale | 45 | 63 |
-| 26 | item.feedback | 29 | 63 |
-| 26 | item.prompt | 30 | 31 |
-| 26 | step.body | 21 | 64 |
-| 26 | step.bookDirection | 3 | 16 |
-| 26 | step.companionDirection | 4 | 10 |
-| 26 | step.remediation | 7 | 124 |
-| 26 | step.title | 47 | 47 |
-| 27 | item.distractor-rationale | 21 | 21 |
-| 27 | item.feedback | 11 | 25 |
-| 27 | item.prompt | 16 | 17 |
-| 27 | step.body | 15 | 58 |
-| 27 | step.bookDirection | 3 | 16 |
-| 27 | step.companionDirection | 4 | 10 |
-| 27 | step.remediation | 4 | 49 |
-| 27 | step.title | 30 | 30 |
-| 28 | item.distractor-rationale | 12 | 12 |
-| 28 | item.feedback | 5 | 10 |
-| 28 | item.prompt | 9 | 10 |
-| 28 | step.body | 13 | 46 |
-| 28 | step.bookDirection | 3 | 16 |
-| 28 | step.companionDirection | 4 | 10 |
-| 28 | step.remediation | 3 | 33 |
-| 28 | step.title | 25 | 25 |
-| 29 | item.distractor-rationale | 50 | 58 |
-| 29 | item.feedback | 32 | 75 |
-| 29 | item.prompt | 34 | 38 |
-| 29 | step.body | 19 | 59 |
-| 29 | step.bookDirection | 3 | 16 |
-| 29 | step.companionDirection | 4 | 10 |
-| 29 | step.remediation | 6 | 60 |
-| 29 | step.title | 44 | 44 |
-| 30 | item.distractor-rationale | 23 | 23 |
-| 30 | item.feedback | 15 | 33 |
-| 30 | item.prompt | 24 | 26 |
-| 30 | step.body | 21 | 67 |
-| 30 | step.bookDirection | 3 | 16 |
-| 30 | step.companionDirection | 4 | 10 |
-| 30 | step.remediation | 7 | 51 |
-| 30 | step.title | 46 | 46 |
+A string counts if at least one ASCII English letter is exempt. A sentence counts if it has ASCII English letters and all of those letters are exempt, using the validator's quote-preserving sentence ranges. Primary string counts deduplicate by (unit, owner ID, field, complete host text). Primary sentence counts independently deduplicate by (unit, owner ID, field, sentence text), including repetitions within one host or across multiple rationales on the same item. Secondary figures retain repeated visits from session steps and objective links. Partial strings count once, but only wholly exempt sentences count. These are exemption ranges, including already source-covered wording, not counts of missing sources or newly validated content.
 
-Candidate totals: 3817 string occurrences and 7223 sentences (including the already-excluded Unit 1 description above). These are not implementation effect numbers on the remote branch: shipped effect is zero.
+| Unit | Field | Strings (deduplicated) | Sentences (deduplicated) | Strings (repeated visits) | Sentences (repeated visits) |
+|---:|---|---:|---:|---:|---:|
+| 2 | instruction body | 22 | 56 | 22 | 56 |
+| 2 | item feedback | 11 | 15 | 21 | 30 |
+| 2 | item prompt | 28 | 29 | 55 | 56 |
+| 2 | step book direction | 6 | 79 | 6 | 79 |
+| 2 | step companion direction | 4 | 10 | 4 | 10 |
+| 2 | step title | 28 | 28 | 28 | 28 |
+| 3 | instruction body | 18 | 54 | 18 | 54 |
+| 3 | item feedback | 29 | 29 | 49 | 49 |
+| 3 | item prompt | 29 | 29 | 49 | 49 |
+| 3 | remediation body | 4 | 17 | 4 | 17 |
+| 3 | step book direction | 3 | 40 | 3 | 40 |
+| 3 | step companion direction | 4 | 10 | 4 | 10 |
+| 3 | step title | 33 | 33 | 33 | 33 |
+| 4 | instruction body | 23 | 63 | 23 | 63 |
+| 4 | item distractor rationale | 15 | 15 | 17 | 17 |
+| 4 | item feedback | 23 | 38 | 39 | 64 |
+| 4 | item prompt | 34 | 37 | 54 | 59 |
+| 4 | remediation body | 4 | 22 | 4 | 22 |
+| 4 | step book direction | 3 | 42 | 3 | 42 |
+| 4 | step companion direction | 4 | 10 | 4 | 10 |
+| 4 | step title | 47 | 47 | 47 | 47 |
+| 5 | instruction body | 17 | 53 | 17 | 53 |
+| 5 | item feedback | 21 | 26 | 37 | 46 |
+| 5 | item prompt | 29 | 29 | 49 | 49 |
+| 5 | remediation body | 3 | 14 | 3 | 14 |
+| 5 | step book direction | 3 | 40 | 3 | 40 |
+| 5 | step companion direction | 4 | 10 | 4 | 10 |
+| 5 | step title | 35 | 35 | 35 | 35 |
+| 6 | instruction body | 21 | 63 | 21 | 63 |
+| 6 | item distractor rationale | 9 | 9 | 16 | 16 |
+| 6 | item feedback | 19 | 39 | 33 | 70 |
+| 6 | item prompt | 26 | 26 | 45 | 45 |
+| 6 | remediation body | 4 | 26 | 4 | 26 |
+| 6 | step book direction | 3 | 50 | 3 | 50 |
+| 6 | step companion direction | 4 | 10 | 4 | 10 |
+| 6 | step title | 60 | 60 | 60 | 60 |
+| 7 | instruction body | 29 | 77 | 29 | 77 |
+| 7 | item distractor rationale | 8 | 8 | 13 | 13 |
+| 7 | item feedback | 9 | 10 | 15 | 16 |
+| 7 | item prompt | 44 | 44 | 77 | 77 |
+| 7 | remediation body | 7 | 34 | 7 | 34 |
+| 7 | step book direction | 3 | 52 | 3 | 52 |
+| 7 | step companion direction | 4 | 10 | 4 | 10 |
+| 7 | step title | 85 | 85 | 85 | 85 |
+| 8 | instruction body | 17 | 55 | 17 | 55 |
+| 8 | item distractor rationale | 4 | 4 | 7 | 7 |
+| 8 | item feedback | 5 | 7 | 9 | 13 |
+| 8 | item prompt | 24 | 24 | 43 | 43 |
+| 8 | remediation body | 4 | 59 | 4 | 59 |
+| 8 | step book direction | 3 | 40 | 3 | 40 |
+| 8 | step companion direction | 4 | 10 | 4 | 10 |
+| 8 | step title | 50 | 50 | 50 | 50 |
+| 9 | instruction body | 23 | 66 | 23 | 66 |
+| 9 | item distractor rationale | 26 | 26 | 47 | 47 |
+| 9 | item feedback | 33 | 67 | 61 | 125 |
+| 9 | item prompt | 43 | 43 | 78 | 78 |
+| 9 | remediation body | 3 | 41 | 3 | 59 |
+| 9 | step book direction | 3 | 44 | 3 | 44 |
+| 9 | step companion direction | 4 | 10 | 4 | 10 |
+| 9 | step title | 81 | 81 | 81 | 81 |
+| 10 | instruction body | 19 | 59 | 19 | 59 |
+| 10 | item distractor rationale | 10 | 10 | 18 | 18 |
+| 10 | item feedback | 17 | 32 | 30 | 57 |
+| 10 | item prompt | 28 | 28 | 50 | 50 |
+| 10 | remediation body | 3 | 36 | 3 | 36 |
+| 10 | step book direction | 3 | 52 | 3 | 52 |
+| 10 | step companion direction | 4 | 10 | 4 | 10 |
+| 10 | step title | 65 | 65 | 65 | 65 |
+| 11 | instruction body | 15 | 50 | 15 | 50 |
+| 11 | item feedback | 9 | 9 | 15 | 15 |
+| 11 | item prompt | 12 | 12 | 20 | 20 |
+| 11 | remediation body | 2 | 7 | 2 | 7 |
+| 11 | step book direction | 3 | 34 | 3 | 34 |
+| 11 | step companion direction | 4 | 10 | 4 | 10 |
+| 11 | step title | 37 | 37 | 37 | 37 |
+| 12 | instruction body | 19 | 58 | 19 | 58 |
+| 12 | item feedback | 15 | 20 | 25 | 34 |
+| 12 | item prompt | 18 | 18 | 30 | 30 |
+| 12 | remediation body | 3 | 12 | 3 | 12 |
+| 12 | step book direction | 3 | 54 | 3 | 54 |
+| 12 | step companion direction | 4 | 10 | 4 | 10 |
+| 12 | step title | 50 | 50 | 50 | 50 |
+| 13 | instruction body | 15 | 50 | 15 | 50 |
+| 13 | item distractor rationale | 5 | 7 | 7 | 10 |
+| 13 | item feedback | 13 | 26 | 22 | 44 |
+| 13 | item prompt | 13 | 13 | 22 | 22 |
+| 13 | remediation body | 4 | 43 | 4 | 43 |
+| 13 | step book direction | 3 | 34 | 3 | 34 |
+| 13 | step companion direction | 4 | 10 | 4 | 10 |
+| 13 | step title | 32 | 32 | 32 | 32 |
+| 14 | instruction body | 13 | 46 | 13 | 46 |
+| 14 | item feedback | 9 | 12 | 15 | 20 |
+| 14 | item prompt | 9 | 9 | 15 | 15 |
+| 14 | remediation body | 2 | 5 | 2 | 5 |
+| 14 | step book direction | 3 | 32 | 3 | 32 |
+| 14 | step companion direction | 4 | 10 | 4 | 10 |
+| 14 | step title | 26 | 26 | 26 | 26 |
+| 15 | instruction body | 13 | 46 | 13 | 46 |
+| 15 | item feedback | 9 | 11 | 15 | 18 |
+| 15 | item prompt | 9 | 9 | 15 | 15 |
+| 15 | remediation body | 3 | 18 | 3 | 18 |
+| 15 | step book direction | 3 | 42 | 3 | 42 |
+| 15 | step companion direction | 4 | 10 | 4 | 10 |
+| 15 | step title | 27 | 27 | 27 | 27 |
+| 16 | instruction body | 19 | 58 | 19 | 58 |
+| 16 | item distractor rationale | 15 | 15 | 25 | 25 |
+| 16 | item feedback | 7 | 7 | 12 | 12 |
+| 16 | item prompt | 18 | 18 | 30 | 30 |
+| 16 | remediation body | 6 | 57 | 6 | 57 |
+| 16 | step book direction | 3 | 38 | 3 | 38 |
+| 16 | step companion direction | 4 | 10 | 4 | 10 |
+| 16 | step title | 52 | 52 | 52 | 52 |
+| 17 | instruction body | 31 | 82 | 31 | 82 |
+| 17 | item distractor rationale | 42 | 45 | 70 | 80 |
+| 17 | item feedback | 37 | 71 | 62 | 120 |
+| 17 | item prompt | 37 | 40 | 62 | 66 |
+| 17 | remediation body | 12 | 119 | 12 | 120 |
+| 17 | step book direction | 3 | 46 | 3 | 46 |
+| 17 | step companion direction | 4 | 10 | 4 | 10 |
+| 17 | step title | 78 | 78 | 78 | 78 |
+| 18 | instruction body | 11 | 42 | 11 | 42 |
+| 18 | item distractor rationale | 12 | 15 | 20 | 25 |
+| 18 | item feedback | 6 | 7 | 10 | 11 |
+| 18 | item prompt | 6 | 6 | 10 | 10 |
+| 18 | remediation body | 2 | 26 | 2 | 26 |
+| 18 | step book direction | 3 | 40 | 3 | 40 |
+| 18 | step companion direction | 4 | 10 | 4 | 10 |
+| 18 | step title | 19 | 19 | 19 | 19 |
+| 19 | instruction body | 15 | 50 | 15 | 50 |
+| 19 | item distractor rationale | 19 | 21 | 31 | 35 |
+| 19 | item feedback | 10 | 17 | 17 | 29 |
+| 19 | item prompt | 12 | 13 | 20 | 22 |
+| 19 | remediation body | 4 | 43 | 4 | 43 |
+| 19 | step book direction | 3 | 34 | 3 | 34 |
+| 19 | step companion direction | 4 | 10 | 4 | 10 |
+| 19 | step title | 30 | 30 | 30 | 30 |
+| 20 | instruction body | 9 | 38 | 9 | 38 |
+| 20 | item distractor rationale | 21 | 34 | 37 | 61 |
+| 20 | item feedback | 8 | 26 | 13 | 43 |
+| 20 | item prompt | 11 | 13 | 19 | 23 |
+| 20 | remediation body | 1 | 34 | 1 | 34 |
+| 20 | step book direction | 3 | 38 | 3 | 38 |
+| 20 | step companion direction | 4 | 10 | 4 | 10 |
+| 20 | step title | 17 | 17 | 17 | 17 |
+| 21 | instruction body | 13 | 46 | 13 | 46 |
+| 21 | item distractor rationale | 15 | 15 | 25 | 25 |
+| 21 | item feedback | 4 | 4 | 7 | 7 |
+| 21 | item prompt | 9 | 9 | 15 | 15 |
+| 21 | remediation body | 3 | 39 | 3 | 39 |
+| 21 | step book direction | 3 | 36 | 3 | 36 |
+| 21 | step companion direction | 4 | 10 | 4 | 10 |
+| 21 | step title | 26 | 26 | 26 | 26 |
+| 22 | instruction body | 19 | 71 | 19 | 71 |
+| 22 | item distractor rationale | 40 | 32 | 68 | 90 |
+| 22 | item feedback | 10 | 16 | 17 | 27 |
+| 22 | item prompt | 20 | 23 | 34 | 39 |
+| 22 | remediation body | 6 | 64 | 6 | 64 |
+| 22 | step book direction | 3 | 46 | 3 | 46 |
+| 22 | step companion direction | 4 | 10 | 4 | 10 |
+| 22 | step title | 44 | 44 | 44 | 44 |
+| 23 | instruction body | 19 | 61 | 19 | 61 |
+| 23 | item distractor rationale | 18 | 42 | 30 | 70 |
+| 23 | item feedback | 12 | 21 | 20 | 35 |
+| 23 | item prompt | 18 | 18 | 30 | 30 |
+| 23 | remediation body | 6 | 57 | 6 | 57 |
+| 23 | step book direction | 3 | 32 | 3 | 32 |
+| 23 | step companion direction | 4 | 10 | 4 | 10 |
+| 23 | step title | 39 | 39 | 39 | 39 |
+| 24 | instruction body | 21 | 76 | 21 | 76 |
+| 24 | item distractor rationale | 35 | 57 | 58 | 116 |
+| 24 | item feedback | 21 | 41 | 35 | 67 |
+| 24 | item prompt | 21 | 27 | 35 | 45 |
+| 24 | remediation body | 7 | 68 | 7 | 68 |
+| 24 | step book direction | 3 | 36 | 3 | 36 |
+| 24 | step companion direction | 4 | 10 | 4 | 10 |
+| 24 | step title | 47 | 47 | 47 | 47 |
+| 25 | instruction body | 21 | 63 | 21 | 63 |
+| 25 | item distractor rationale | 48 | 69 | 81 | 160 |
+| 25 | item feedback | 12 | 25 | 20 | 41 |
+| 25 | item prompt | 23 | 24 | 39 | 41 |
+| 25 | remediation body | 7 | 57 | 7 | 57 |
+| 25 | step book direction | 3 | 30 | 3 | 30 |
+| 25 | step companion direction | 4 | 10 | 4 | 10 |
+| 25 | step title | 49 | 49 | 49 | 49 |
+| 26 | instruction body | 21 | 64 | 21 | 64 |
+| 26 | item distractor rationale | 46 | 43 | 83 | 117 |
+| 26 | item feedback | 29 | 63 | 51 | 112 |
+| 26 | item prompt | 30 | 31 | 53 | 54 |
+| 26 | remediation body | 7 | 100 | 7 | 136 |
+| 26 | step book direction | 3 | 42 | 3 | 42 |
+| 26 | step companion direction | 4 | 10 | 4 | 10 |
+| 26 | step title | 47 | 47 | 47 | 47 |
+| 27 | instruction body | 15 | 58 | 15 | 58 |
+| 27 | item distractor rationale | 21 | 21 | 36 | 36 |
+| 27 | item feedback | 11 | 25 | 19 | 43 |
+| 27 | item prompt | 16 | 17 | 27 | 29 |
+| 27 | remediation body | 4 | 49 | 4 | 49 |
+| 27 | step book direction | 3 | 34 | 3 | 34 |
+| 27 | step companion direction | 4 | 10 | 4 | 10 |
+| 27 | step title | 30 | 30 | 30 | 30 |
+| 28 | instruction body | 13 | 46 | 13 | 46 |
+| 28 | item distractor rationale | 12 | 12 | 20 | 20 |
+| 28 | item feedback | 5 | 10 | 7 | 14 |
+| 28 | item prompt | 9 | 10 | 15 | 17 |
+| 28 | remediation body | 3 | 33 | 3 | 33 |
+| 28 | step book direction | 3 | 36 | 3 | 36 |
+| 28 | step companion direction | 4 | 10 | 4 | 10 |
+| 28 | step title | 25 | 25 | 25 | 25 |
+| 29 | instruction body | 19 | 59 | 19 | 59 |
+| 29 | item distractor rationale | 50 | 58 | 88 | 104 |
+| 29 | item feedback | 32 | 75 | 55 | 128 |
+| 29 | item prompt | 34 | 38 | 58 | 66 |
+| 29 | remediation body | 6 | 63 | 6 | 63 |
+| 29 | step book direction | 3 | 34 | 3 | 34 |
+| 29 | step companion direction | 4 | 10 | 4 | 10 |
+| 29 | step title | 44 | 44 | 44 | 44 |
+| 30 | instruction body | 21 | 67 | 21 | 67 |
+| 30 | item distractor rationale | 23 | 23 | 41 | 41 |
+| 30 | item feedback | 15 | 33 | 26 | 56 |
+| 30 | item prompt | 24 | 26 | 41 | 45 |
+| 30 | remediation body | 7 | 51 | 7 | 51 |
+| 30 | step book direction | 3 | 28 | 3 | 28 |
+| 30 | step companion direction | 4 | 10 | 4 | 10 |
+| 30 | step title | 46 | 46 | 46 | 46 |
+
+**Applied totals: 3,682 strings / 7,621 sentences deduplicated; 4,798 strings / 9,269 sentences with repeated visits.** Quote-preserving segmentation and independent sentence-text deduplication change the sentence totals from the read-only audit; the same string totals remain. Secondary counts include all visits and repeated sentence text (7,760 sentence occurrences remain if only host strings are deduplicated). The bundled pack has zero validator errors.
 
 T15-n1 is independent of T15-n0 and depends on completed T14-n2. Its row is added as a dependency of T15a–T15e under the overnight owner direction. Proceed to T15-n1; do not start dependent unit tasks.
 
@@ -1755,9 +1749,7 @@ Official exact-commit evidence: **Linux CI 43404812544 PASSED** on **7c205f2c9f7
 
 T15-n1's audio manifest was regenerated and is byte-identical to the already committed file; no audio use, clip binding or AI-AUDIO task changed. The docs/audio planning-document exclusion, T19 boundaries/book-directed limitations, and the owner's CC BY-SA attribution-screen decision are recorded above.
 
-T15-n0 remains **BLOCKED_OWNER**, with its exact question above corrected to distinguish 20 reference-field occurrences from 22 failing sentence fragments. No validator/schema change shipped. Its **applied exemption effect is 0 strings and 0 sentences**. Prototype-only Kotlin measurement was 3,817 string occurrences / 7,223 sentences including already-excluded Unit 1; the per-unit/per-field table above is descriptive, not a released validator result. The unmarked-fact inventory remains unfinished with the blocked task.
-
-For Units 2–30, which were in the existing English-span validator scope, the same Kotlin table totals **3676 string occurrences / 6999 sentences** under the unshipped candidate rule. Unit 1 was already outside that scope and is not a new exemption.
+Historical stopping status (superseded by the owner decision and verification corrections below): T15-n0 was BLOCKED_OWNER on the reference question. The unshipped prototype numbers and unfinished inventory have been replaced above with the fresh applied Kotlin measurement and below with the completed inventory. The owner resolved reference coverage without extending or reducing it; T15-n2 carries the separate reference correction.
 
 Requested unit tasks remain dependency-pending, with no implementation commits or CI runs: **T15a/U6 19/0; T15b/U7 33/0; T15c/U8 19/0; T15d/U9 35/0; T15e/U10 22/0** checked/typed. Unit 4 and Unit 5 remain 20/6 each. T15f is TODO because T15a–T15e are not DONE. These are dependency holds, not assertions that an inventory search for typed items has been completed for those units.
 
@@ -1771,3 +1763,33 @@ Owner decision 11/13/2026 (option 1): rebase Claude Code's T15-n0 work onto orig
 ### 2026-11-13 — T15-n0 verification corrections (Codex)
 
 Owner directs follow-up commits from origin 0d8180c7, without amend or force push. T15-n0 remains IN_PROGRESS. Correct punctuated quotation matching, restrict quote targets to answer/gloss/meaning/accepted-answer/option/cue fields, and require actual source provenance for marked sentences in every unit independently of authored scaffolds. Add behavioral regressions, replace prototype measurements with fresh Kotlin counts, and complete the unmarked-fact inventory including Cyrillic-bearing facts. Recompute guard/digest, run the full suite, await exact-code CI, then close in a queue-only commit. No other task is authorized in this run.
+
+#### T15-n0 applied fixes and unmarked-fact inventory — 2026-11-13
+
+Quote matching now preserves quoted spans across sentence punctuation and considers only checked answer/gloss/meaning, accepted-answer, option and cue fields. Provenance shipped text, headings, example notes and article-stripped variants are not targets. Marked sentences need actual source provenance independently of authored scaffold coverage, the legacy unit filter and optional-reference-item traversal. Content and reference-entry coverage remain unchanged.
+
+Regression names: `feedbackQuotingPunctuatedOptionOrCueFails` (period, question mark, exclamation mark; straight/curly/single quotes), `feedbackQuotingANonTargetHeadingPasses`, `scaffoldCoveredRussianFactMarkerStillNeedsSource`, `unitOneRussianFactMarkerStillNeedsSource`, `optionalReferenceItemMarkerStillNeedsSource`. `unsourcedInstructionActuallyUsesTheFieldExemption` replaces the ineffective invariant test: span-only coverage rejects the fixture, exemptions cover its letters, real validation accepts it, and teaching-field placement rejects it. `unsourcedGlossFails` is renamed `unsourcedCueAndTeachingGlossFail` to describe its actual cue and teaching-gloss mutations. The initial 14-test focused run passed; final expanded coverage is included in the full suite.
+
+##### Completed inventory scope: unmarked Russian factual claims in feedback and remediation
+
+[Inventory and scope header](audit/T15-n0-unmarked-russian-facts.md); [complete sentence list](audit/T15-n0-unmarked-russian-facts.csv). Scope: all shipped item feedback and distractor rationales, including optional reference items, and all REMEDIATE bodies in Units 1–30. Entries include concrete glosses/translations, form identities, grammar/usage assertions and imperatives that encode a linguistic rule. Pure directions, app normalization, task-scope statements and source-layout/position-only claims are excluded. This records claims for later correction; it does not certify their truth or sourcing. All wording is copied verbatim from the existing licensed pack. No content marker or Russian content was added.
+
+There are **4,353 entries**: **1,442 item-feedback**, **1,196 distractor-rationale**, **1,715 remediation**; **2,063 contain Cyrillic**, explicitly labelled **already protected by the Cyrillic rule**, and **2,290 are English-only** (some already protected by quotations). Deduplication is by unit, owner, field and sentence; identical claims in different owners remain separate actionable entries. The two pure directions “Compare both strokes...” and “Choose the Russian name...” are absent. The feedback facts for `u6-i-possessive-1`, `u6-i-feminine-1` and `u5-i-type-kuda` are present and labelled already protected by the Cyrillic rule. Unit 1 and previously unvisited optional items are included.
+
+Validation: fresh Kotlin `V2Validator.validate(pack)` returned zero errors; its release-source digest agrees with the recomputed candidate digest. Full suite and exact-commit CI closure are pending; T15-n0 stays IN_PROGRESS.
+
+Measurement convention check: the fresh Kotlin engine yields 3,682 strings / 7,621 sentences when strings and sentence text are deduplicated independently by unit, owner and field; 4,798 / 9,269 with repeated visits. Host-only deduplication would retain 7,760 sentence occurrences and is not the primary figure. The complete per-unit/per-field table above uses the independent convention. A separate real-validator positive probe with a marker covered by an actual source record returned zero errors, confirming that source-backed markers remain accepted.
+
+Local verification environment: the first full command without the host setup encountered a Robolectric Maven dependency-fetch IOException in AcceptanceBehaviorTest before its Android behavior could execute. That run was interrupted; it is not a completed-suite result. The complete command is rerunning with the existing external host setup (`/tmp/t15-host.gradle`: cached Maven location, repo.maven.apache.org, proxy/trust settings). No test, assertion, inclusion filter or exclusion changed.
+
+Additional quote regression: the existing pack has a punctuated option containing an internal apostrophe. A direct Kotlin-engine probe found that single-quoting it still split the span. Quote recognition now preserves internal word apostrophes; `feedbackQuotingPunctuatedOptionOrCueFails` also exercises that actual pack option in each tested quote style. The direct probe now returns no exempt ranges for it. The earlier full run was stopped before completion to apply this correction, and the complete suite restarted on the final source. Fresh Kotlin counts remain 3,682 / 7,621 deduplicated and 4,798 / 9,269 repeated; all 4,353 inventory entries remain exact current spans. Final validator SHA-256: `8d066a47967ba9546952eefb3a53edecb7a25a0f2e9852463ded99febfc926d5`; final source digest: `261e8072b52f46a103d327c9d8b1e485a0ccee89fc646e3d758d1cb864347945`.
+
+Local resource interruption: the final full run's Gradle daemon disappeared while the separate final regression JVM was running. The session has an 8 GiB cgroup memory limit and reports OOM kills. Overlapping JVM runs was an execution mistake; no assertion failure was reported before interruption. The focused regression run will finish first, then the complete suite will rerun alone with a single-use Gradle daemon. No test heap, assertion, filter, exclusion or committed build setting is reduced.
+
+Final focused regression result: JUnitCore ran `EnglishProvenanceRulingTest` against the final compiled source: **15 tests, all passed**, 100.914 seconds. This includes the additional contraction-containing option and optional-reference-item marker. The complete unfiltered compile/lint/gate/host command now runs sequentially with `--no-daemon -Dorg.gradle.jvmargs='-Xmx2g -Dfile.encoding=UTF-8' -I /tmp/t15-host.gradle`; the configured 3 GiB test worker, one fork and eight-class recycling remain unchanged.
+
+Final complete local verification PASSED: `./gradlew --no-daemon -Dorg.gradle.jvmargs='-Xmx2g -Dfile.encoding=UTF-8' -I /tmp/t15-host.gradle compileDebugSources lintDebug verifyReleaseGateAttachment testDebugUnitTest --continue --stacktrace --console=plain`, 1h 33m 8s, completed 2026-11-13 17:45 UTC. **1,321 tests across 257 classes: 0 failures, 0 errors, 1 existing physical-device-only skip (1,320 passed)**. The 15 English provenance regressions passed in the full run as well (98.529 seconds). No inclusion filter, assertion weakening, new exclusion or skip was used. Validator hash, candidate digest, inventory verbatim spans, required inventory entries, and unchanged T15-n1 files were checked again.
+
+Prior exact-code CI **43444948252 PASSED** on **0d8180c7f7f774d1ba744610f06c6c8fac358ff8**, Linux verify completed 2026-11-13 16:32:37 UTC. Windows is manual-only and skipped on this push. This confirms the earlier run's conclusion; the follow-up still needs its own exact-commit CI before DONE.
+
+Remote advanced to b81e1ba7 during local testing. That commit changes only WORK_QUEUE.md and records the original implementation's closure. It will be retained by merge; the current owner direction reopens T15-n0 as IN_PROGRESS until these verification corrections pass exact-commit CI. Tested application/test sources and digest roots are unchanged by that queue merge, so no additional full run is needed for the queue-only integration.

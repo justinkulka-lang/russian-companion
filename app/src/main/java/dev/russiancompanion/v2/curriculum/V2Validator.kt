@@ -5312,6 +5312,7 @@ internal object V2Validator {
         }
         val quoteTargets = englishQuoteTargets(pack)
         errors += russianFactMarkerErrors(pack)
+        errors += markedSentenceSourceErrors(pack)
         val hostsByUnit = englishProvenanceHosts(pack).groupBy { it.unitNumber }
         pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
             val shipped = shippedByUnit.getValue(unit.number)
@@ -5363,7 +5364,7 @@ internal object V2Validator {
      * [exempt] ranges are applied after span coverage, so they can only remove leftovers that span coverage alone
      * would report; they never change how source spans bind.
      */
-    private fun unboundLetters(host: String, spans: List<String>, exempt: List<IntRange> = emptyList()): String {
+    internal fun unboundLetters(host: String, spans: List<String>, exempt: List<IntRange> = emptyList()): String {
         val covered = BooleanArray(host.length)
         spans.filter { it.isNotEmpty() }.distinct().sortedByDescending { it.length }.forEach { span ->
             var start = 0
@@ -5407,10 +5408,10 @@ internal object V2Validator {
     private val INSTRUCTION_STEP_KINDS = setOf("GUIDED", "CHECK", "ORIENT", "BOOK", "ANKI", "BINDER", "TUTOR", "SPEAK")
 
     /** Every English host the source-record rule reads, in the same order and with the same coverage as before T15-n0. */
-    internal fun englishProvenanceHosts(pack: V2CurriculumPack): List<EnglishProvenanceHost> {
+    internal fun englishProvenanceHosts(pack: V2CurriculumPack, includeAllUnits: Boolean = false): List<EnglishProvenanceHost> {
         val units = pack.provenanceRecords.map { it.unitNumber }.toSet()
         val result = mutableListOf<EnglishProvenanceHost>()
-        pack.units.filter { it.number in units }.forEach { unit ->
+        pack.units.filter { includeAllUnits || it.number in units }.forEach { unit ->
             var owner = ""
             fun add(field: String, text: String, mode: EnglishProvenanceMode, facts: List<String> = emptyList()) {
                 result += EnglishProvenanceHost(unit.number, field, text, mode, facts, owner)
@@ -5457,6 +5458,12 @@ internal object V2Validator {
                 objective.exampleIds.forEach(::addExample)
                 objective.checkItemIds.forEach(::addItem)
             }
+            // Marked facts also require sources on optional reference items that are not linked as checked work.
+            // The default traversal retains exactly the legacy English-span coverage.
+            if (includeAllUnits) {
+                val objectives = unit.objectives.map { it.id }.toSet()
+                pack.items.filter { it.objectiveId in objectives }.forEach { addItem(it.id) }
+            }
         }
         return result
     }
@@ -5478,20 +5485,51 @@ internal object V2Validator {
         }
     }
 
-    internal fun englishSentenceRanges(text: String): List<IntRange> = ENGLISH_SENTENCE.findAll(text).mapNotNull { match ->
-        val first = match.value.indexOfFirst { !it.isWhitespace() }
-        if (first < 0) null else (match.range.first + first)..(match.range.first + match.value.indexOfLast { !it.isWhitespace() })
-    }.toList()
+    internal fun englishSentenceRanges(text: String): List<IntRange> {
+        // Segment around whole quotations: sentence punctuation inside a quoted target cannot separate it from
+        // its closing quote. Keep character offsets unchanged so source/exemption ranges still address the host.
+        val segmentationText = text.toCharArray()
+        QUOTED.findAll(text).forEach { quote ->
+            quote.range.forEach { index ->
+                if (segmentationText[index] in ".!?\n") segmentationText[index] = '_'
+            }
+        }
+        return ENGLISH_SENTENCE.findAll(String(segmentationText)).mapNotNull { match ->
+            val first = match.value.indexOfFirst { !it.isWhitespace() }
+            if (first < 0) null else (match.range.first + first)..(match.range.first + match.value.indexOfLast { !it.isWhitespace() })
+        }.toList()
+    }
 
-    /** Strings the pack shows as a gloss, answer, option, accepted answer, cue or example, normalized for quote matching. */
-    internal fun englishQuoteTargets(pack: V2CurriculumPack): Set<String> {
-        val texts = pack.items.flatMap { item ->
-            listOf(item.answer) + item.options + item.typedAnswerKey?.acceptedAnswers.orEmpty() + listOfNotNull(item.promptLetter)
-        } + pack.examples.flatMap { listOf(it.display, it.note) } + pack.provenanceRecords.map { it.shippedText }
-        return texts.flatMap { text ->
-            val normalized = normalizedQuote(text)
-            listOf(normalized, normalized.replace(Regex("^(to|a|an|the)\\s+"), ""))
-        }.filter { it.isNotEmpty() }.toSet()
+    /** Only answer/gloss/meaning, option, accepted-answer and cue fields are quotation targets.
+     * This schema stores English glosses and meanings in the same answer/cue fields as other checked keys.
+     * Provenance wording, headings and example notes do not become targets merely by occurring in the pack.
+     */
+    internal fun englishQuoteTargets(pack: V2CurriculumPack): Set<String> = pack.items.flatMap { item ->
+        listOf(item.answer) + item.options + item.typedAnswerKey?.acceptedAnswers.orEmpty() + listOfNotNull(item.promptLetter)
+    }.map(::normalizedQuote).filter { it.isNotEmpty() }.toSet()
+
+    /** A marked sentence needs actual source provenance, even outside the legacy English-host scope.
+     * Authored scaffold records intentionally never enter this coverage set. Existing provenance validation
+     * separately checks the source records' hashes, inventory identities, rights and transformations.
+     */
+    private fun markedSentenceSourceErrors(pack: V2CurriculumPack): List<String> {
+        val sourceIds = pack.sources.map { it.id }.toSet()
+        val sourcedByUnit = pack.provenanceRecords.filter { it.sourceId in sourceIds && it.sourceRecordId.isNotBlank() }
+            .groupBy { it.unitNumber }.mapValues { (_, rows) -> rows.map { it.shippedText } }
+        return englishProvenanceHosts(pack, includeAllUnits = true).filter { it.russianFacts.isNotEmpty() }
+            .distinct().flatMap { host ->
+                val marked = host.russianFacts.filter { it.isNotBlank() }.flatMap { fact ->
+                    Regex(Regex.escape(fact)).findAll(host.text).map { it.range }.toList()
+                }
+                englishSentenceRanges(host.text).filter { range ->
+                    marked.any { it.first <= range.last && range.first <= it.last }
+                }.mapNotNull { range ->
+                    val sentence = host.text.substring(range.first, range.last + 1)
+                    val leftover = unboundLetters(sentence, sourcedByUnit[host.unitNumber].orEmpty())
+                    if (leftover.isEmpty()) null else
+                        "English linguistic claim has no admitted source record: ${leftover.take(120)} (marked sentence in unit ${host.unitNumber}, ${host.ownerId})"
+                }
+            }
     }
 
     private fun quotedSegments(sentence: String): List<String> = QUOTED.findAll(sentence).map { match ->
@@ -5522,7 +5560,7 @@ internal object V2Validator {
     }
 
     private val ENGLISH_SENTENCE = Regex("[^.!?\\n]+[.!?]*")
-    private val QUOTED = Regex("\"([^\"]+)\"|\u201c([^\u201d]+)\u201d|\u2018([^\u2019]+)\u2019|\u00ab([^\u00bb]+)\u00bb|(?<![A-Za-z])'([^']+)'(?![A-Za-z])")
+    private val QUOTED = Regex("\"([^\"]+)\"|\u201c([^\u201d]+)\u201d|\u2018((?:[^\u2019]|(?<=[A-Za-z])\u2019(?=[A-Za-z]))+)\u2019|\u00ab([^\u00bb]+)\u00bb|(?<![A-Za-z])'((?:[^']|(?<=[A-Za-z])'(?=[A-Za-z]))+)'(?![A-Za-z])")
 
     private fun englishSpanBoundary(host: String, index: Int, end: Int): Boolean {
         val span = host.substring(index, end)
