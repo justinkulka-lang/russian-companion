@@ -42,6 +42,9 @@ internal const val UNITS_1_5_T14N2_VERIFY_CURRICULUM_COMMIT = "4d7bf44aeee231b76
 
 internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b1ff4a78aa1"
 
+// Owner step 7: bind Unit 6 to the retained merged fact-marker source; Units 7-10 keep the upstream pin.
+internal const val UNIT6_T15A_FACTS_CURRICULUM_COMMIT = "a7d75356dde08bb8172d221f1a69cab25cd10d7b"
+
 // T15a Unit 6 (A2-23/24/26): Unit 6 binds here; earlier pins stay historical.
 internal const val UNIT6_T15A_CURRICULUM_COMMIT = "454c1d94c0ba61cb3713269de6c3a49421786128"
 
@@ -179,7 +182,8 @@ internal const val UNIT5_T15N1_CURRICULUM_COMMIT = "792344b957ad174cebc1e9907411
 
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
     // T15a also rewords the Units 6-10 attribution reference, so Units 7-10 bind to the same commit.
-    if (unitNumber in 6..10) UNIT6_T15A_CURRICULUM_COMMIT
+    if (unitNumber == 6) UNIT6_T15A_FACTS_CURRICULUM_COMMIT
+    else if (unitNumber in 7..10) UNIT6_T15A_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNIT5_T15N1_CURRICULUM_COMMIT
     else if (unitNumber in 1..4) UNITS_1_5_T14N2_VERIFY_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNIT5_GRAMMAR_REVIEW_CURRICULUM_COMMIT
