@@ -175,12 +175,13 @@ MEDIUM and LOW findings for those units are fixed or given a written disposition
 | T14-n2 | CODEX | Owner direction after the T14 checkpoint (2026-11-12), single part, no split: (1) Unit 2: replace at least six of the fifteen uppercase/lowercase print-pair checks with checks on Unit 2's own concepts using only words already in the unit (stress-pair meanings, same final sound); Unit 2 keeps 20 or more checked items. (2) Learner voice: rewrite the eight Block 1 reference entries and any Units 1–5 teaching that narrates provenance ("The dictionary gives…", "The grammar page says…", "Form glossed…", "quoted exactly…") or talks about the app's checks; attribution stays in the source and provenance records; "Whither"/"Whence" become "where to"/"where from"; add these phrase patterns to the A2-26 learner-text lint. (3) Unit 5 question-word keys list stressed forms first (Куда́, Отку́да, Ско́лько, Како́й); Unit 3's cue for письмо́ becomes "letter (mail)". Re-run the audio manifest. | Unit 2 has six or more concept checks and 20 or more checked items; no Units 1–5 learner text or Block 1 reference matches the learner-voice lint; Unit 5 keys and the Unit 3 cue as directed; full exact-commit Linux CI passes. | T14 | DONE — 71497026 (content), 81bee901 (pin), 46009fe5 (test); CI 43279728115. See Log 2026-11-12 T14-n2. |
 | T14-A | CODEX | Bind the clips marked Match in block1-results.json to Units 1–2. Add dictation items (A2-20, A2-23). | Units 1–2 play verified audio. The Listen panel in the app receives the real audio engine and a bound clip. It is not called with null. Word clips marked Match bind only to their word items. No word clip (а, в, и, к or any other) is bound to a letter row: letters wait for the tutor recordings (docs/audio/AUDIO_PLAN.md section 4). | T14, T13-O, T04-n1 | TODO |
 | T15 | CODEX | Block 2, Units 6–10. Owner TODO (2026-11-10): Check Unit 9 cumulative review: two items show the same cue; make sure neither gives away the other's answer. | Block 2 meets A2-01. | T15a, T15b, T15c, T15d, T15e, T15f | TODO — split under Continue step 5 into T15a–T15f (2026-11-12); parts may not split again. |
-| T15-n0 | CODEX | Change the validator to match the owner ruling of 11/12/2026 on English provenance: English instructional text (prompts, instructions, feedback and remediation wording) is authored text and needs no source record; English glosses or meanings of Russian words, and any English statement of a fact about Russian, must trace to a source record. The validator requires provenance only for Russian strings, glosses and stated Russian facts. | Tests cover: an unsourced English prompt passing; an unsourced gloss failing; an unsourced Russian string failing. Full exact-commit Linux CI passes. | T14 | IN_PROGRESS |
-| T15a | CODEX | Unit 6. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 19 checked, 0 typed. A2-24: 8 shown-cue-only, 7 label/position (12 unique items), 16 exact-key-in-session. A2-26 lint: 69 governance, 4 markup, 3 narration. Typed needed: at least 13 (closed checks after removing invalid items: 7; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 9. | Unit 6 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0 | TODO |
-| T15b | CODEX | Unit 7. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 33 checked, 0 typed. A2-24: 11 shown-cue-only, 4 label/position (15 unique items), 30 exact-key-in-session. A2-26 lint: 129 governance, 8 markup, 4 narration. Typed needed: at least 8 (closed checks after removing invalid items: 18; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. | Unit 7 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0 | TODO |
-| T15c | CODEX | Unit 8. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 19 checked, 0 typed. A2-24: 15 shown-cue-only (15 unique items), 17 exact-key-in-session. A2-26 lint: 26 governance, 2 markup. Typed needed: at least 16 (closed checks after removing invalid items: 4; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 9. | Unit 8 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0 | TODO |
-| T15d | CODEX | Unit 9. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 35 checked, 0 typed. A2-24: no shown-cue-only or label items, 22 exact-key-in-session; owner TODO: Unit 9 cumulative review shows two items with the same cue, and neither may give away the other's answer. A2-26 lint: 102 governance. Typed needed: at least 15 (closed checks after removing invalid items: 35; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. | Unit 9 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0 | TODO |
-| T15e | CODEX | Unit 10. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 22 checked, 0 typed. A2-24: 5 shown-cue-only, 5 label/position (9 unique items), 14 exact-key-in-session. A2-26 lint: 65 governance, 6 markup. Typed needed: at least 7 (closed checks after removing invalid items: 13; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 10. | Unit 10 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0 | TODO |
+| T15-n0 | CODEX | Change the validator to match the owner ruling of 11/12/2026 on English provenance: English instructional text (prompts, instructions, feedback and remediation wording) is authored text and needs no source record; English glosses or meanings of Russian words, and any English statement of a fact about Russian, must trace to a source record. The validator requires provenance only for Russian strings, glosses and stated Russian facts. | Tests cover: an unsourced English prompt passing; an unsourced gloss failing; an unsourced Russian string failing. Full exact-commit Linux CI passes. | T14 | BLOCKED_OWNER — full reference coverage exposes 22 previously passing reference-field gaps; see Log 2026-11-13 T15-n0. |
+| T15-n1 | CODEX | Restore Unit 4 expected-cue and feature-validity assertions from 4d7bf44a; resolve only T14-n2-directed expectation differences. Verify Unit 5 question-word stress against existing inventory, or restore sourced unstressed keys; refresh manifest. Record docs/audio digest exclusion and test it. Record T19 governance/source boundaries and the CC BY-SA attribution decision. | Restored assertions and stress provenance are correct; full exact-commit Linux CI passes; owner notes recorded. | T14-n2 | TODO |
+| T15a | CODEX | Unit 6. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 19 checked, 0 typed. A2-24: 8 shown-cue-only, 7 label/position (12 unique items), 16 exact-key-in-session. A2-26 lint: 69 governance, 4 markup, 3 narration. Typed needed: at least 13 (closed checks after removing invalid items: 7; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 9. | Unit 6 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | TODO |
+| T15b | CODEX | Unit 7. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 33 checked, 0 typed. A2-24: 11 shown-cue-only, 4 label/position (15 unique items), 30 exact-key-in-session. A2-26 lint: 129 governance, 8 markup, 4 narration. Typed needed: at least 8 (closed checks after removing invalid items: 18; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. | Unit 7 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | TODO |
+| T15c | CODEX | Unit 8. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 19 checked, 0 typed. A2-24: 15 shown-cue-only (15 unique items), 17 exact-key-in-session. A2-26 lint: 26 governance, 2 markup. Typed needed: at least 16 (closed checks after removing invalid items: 4; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 9. | Unit 8 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | TODO |
+| T15d | CODEX | Unit 9. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 35 checked, 0 typed. A2-24: no shown-cue-only or label items, 22 exact-key-in-session; owner TODO: Unit 9 cumulative review shows two items with the same cue, and neither may give away the other's answer. A2-26 lint: 102 governance. Typed needed: at least 15 (closed checks after removing invalid items: 35; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. | Unit 9 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | TODO |
+| T15e | CODEX | Unit 10. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 22 checked, 0 typed. A2-24: 5 shown-cue-only, 5 label/position (9 unique items), 14 exact-key-in-session. A2-26 lint: 65 governance, 6 markup. Typed needed: at least 7 (closed checks after removing invalid items: 13; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 10. | Unit 10 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | TODO |
 | T15f | CODEX | Block 2 close-out: A2-36 reference entries for grammar first taught in Units 6–10; A2-28 cumulative review for Units 6–10; block-wide validity (A2-23/24) and learner-text lint (A2-26) reports clean for Units 6–10; audit/FINDINGS_DISPOSITION.csv entries for every MEDIUM and LOW finding scoped to Units 6–10. | Block 2 meets A2-01; full exact-commit Linux CI passes. | T15a, T15b, T15c, T15d, T15e | TODO |
 | T16 | CODEX | Block 3, Units 11–15. Includes CC003. | Block 3 meets A2-01. | T15 | TODO |
 | T17 | CODEX | Block 4, Units 16–20. Includes CC005 and CC007. | Block 4 meets A2-01. | T16 | TODO |
@@ -1464,3 +1465,254 @@ Stopping point: setup at a339fc7a, preservation unresolved. Next step: obtain an
 ### 2026-11-13 — Overnight owner setup override (Codex)
 
 Owner explicitly waived preservation of fdb0bccd: it holds no owner work. The missing object requires no further recovery or preservation. Commits 9c4d40f1 and 4c34b866 are lost and withdrawn; do not seek or use them. Starting branch is origin head df033124. T15-n0 returns to TODO and starts fresh. The overnight protocol permits moving past a BLOCKED_OWNER task only to tasks whose dependencies are DONE with CI passed.
+
+### 2026-11-13 — T15-n0 blocked on reference coverage conflict (Codex)
+
+Start commit ced445a3; setup waiver 8454c805. No implementation or content change is pushed for this task. The attempted validator and its new tests were rolled back as an incomplete, failing implementation; no pre-existing test or assertion was changed, skipped, deleted or weakened. No CI run was triggered. The sequential local focused check executed 2 tests: the Kotlin measurement passed, and the unchanged-pack compatibility assertion failed. Earlier local compiler failures occurred before test execution (overlapping Gradle invocations; then a corrected test-loader API call). These were not CI failures.
+
+The existing English validator checks units with provenance (Units 2–30); Unit 1 has its separate existing source/letter checks. Keeping that scope and sentence coverage from whole source spans leaves **22 reference-field failures** on the unchanged pack. They are titles/summary prose and portions of ref-u2-pairs detail; reference source-ID/classification checks previously passed without this English-span coverage. No grandfather exception, word whitelist or new source was added. Full reference-field provenance and the no-new-failures requirement cannot both be claimed on the current pack without additional reference provenance/content work.
+
+**Exact owner question:** How should T15-n0 reconcile full reference-field provenance with "nothing that passes today starts failing" for these 22 currently uncovered fields: authorize an inventory-backed reference provenance/content correction prerequisite (including resolution of any unsupported final-devoicing claim), or provide another explicit disposition? No exemption or unsupported source attribution will be assumed.
+
+Uncovered fields measured by Kotlin: ref-pronunciation title, summary and detail (detail has 2 failing sentences); ref-u2-pairs title, summary and detail (detail has 2 failing sentences); ref-u3-gender title and summary; ref-u4-pronouns title and summary; ref-u4-present title and summary; ref-u4-nominative title and summary; ref-u5-questions title and summary; ref-u5-prepositional title and summary; ref-u5-indeclinable title and summary. There are 20 field occurrences and 22 failing sentence fragments.
+
+Candidate-only English exemption measurement (not shipped or accepted): the attempted Kotlin field/sentence rule measured the following strings/sentences by unit and field, once per owner/field per unit. A partially exempt string counts once, with only its exempt sentences counted. This reports removal of the English wording requirement, not exemption of Cyrillic provenance. Unit 1 counts are descriptive only: that unit was already outside the old span-based English validator. The complete unmarked-fact list is not accepted or completed while T15-n0 remains blocked; no markers were added to content. T15a–T15e cannot start until this dependency is DONE with CI passed.
+
+| Unit | Field | Strings exempted | Sentences exempted |
+|---:|---|---:|---:|
+| 1 | item.distractor-rationale | 10 | 19 |
+| 1 | item.feedback | 13 | 15 |
+| 1 | item.prompt | 29 | 37 |
+| 1 | step.body | 30 | 71 |
+| 1 | step.bookDirection | 8 | 22 |
+| 1 | step.companionDirection | 7 | 15 |
+| 1 | step.remediation | 1 | 2 |
+| 1 | step.title | 43 | 43 |
+| 2 | item.feedback | 11 | 15 |
+| 2 | item.prompt | 28 | 29 |
+| 2 | step.body | 22 | 56 |
+| 2 | step.bookDirection | 6 | 31 |
+| 2 | step.companionDirection | 4 | 10 |
+| 2 | step.title | 28 | 28 |
+| 3 | item.feedback | 29 | 29 |
+| 3 | item.prompt | 29 | 29 |
+| 3 | step.body | 18 | 54 |
+| 3 | step.bookDirection | 3 | 16 |
+| 3 | step.companionDirection | 4 | 10 |
+| 3 | step.remediation | 4 | 17 |
+| 3 | step.title | 33 | 33 |
+| 4 | item.distractor-rationale | 15 | 15 |
+| 4 | item.feedback | 23 | 38 |
+| 4 | item.prompt | 34 | 37 |
+| 4 | step.body | 23 | 63 |
+| 4 | step.bookDirection | 3 | 16 |
+| 4 | step.companionDirection | 4 | 10 |
+| 4 | step.remediation | 4 | 22 |
+| 4 | step.title | 47 | 47 |
+| 5 | item.feedback | 21 | 25 |
+| 5 | item.prompt | 29 | 29 |
+| 5 | step.body | 17 | 53 |
+| 5 | step.bookDirection | 3 | 16 |
+| 5 | step.companionDirection | 4 | 10 |
+| 5 | step.remediation | 3 | 14 |
+| 5 | step.title | 35 | 35 |
+| 6 | item.distractor-rationale | 9 | 9 |
+| 6 | item.feedback | 19 | 39 |
+| 6 | item.prompt | 26 | 26 |
+| 6 | step.body | 21 | 63 |
+| 6 | step.bookDirection | 3 | 16 |
+| 6 | step.companionDirection | 4 | 10 |
+| 6 | step.remediation | 4 | 26 |
+| 6 | step.title | 60 | 60 |
+| 7 | item.distractor-rationale | 8 | 8 |
+| 7 | item.feedback | 9 | 10 |
+| 7 | item.prompt | 44 | 44 |
+| 7 | step.body | 29 | 77 |
+| 7 | step.bookDirection | 3 | 16 |
+| 7 | step.companionDirection | 4 | 10 |
+| 7 | step.remediation | 7 | 34 |
+| 7 | step.title | 85 | 85 |
+| 8 | item.distractor-rationale | 4 | 4 |
+| 8 | item.feedback | 5 | 7 |
+| 8 | item.prompt | 24 | 24 |
+| 8 | step.body | 17 | 55 |
+| 8 | step.bookDirection | 3 | 16 |
+| 8 | step.companionDirection | 4 | 10 |
+| 8 | step.remediation | 4 | 59 |
+| 8 | step.title | 50 | 50 |
+| 9 | item.distractor-rationale | 26 | 26 |
+| 9 | item.feedback | 33 | 67 |
+| 9 | item.prompt | 43 | 43 |
+| 9 | step.body | 23 | 66 |
+| 9 | step.bookDirection | 3 | 16 |
+| 9 | step.companionDirection | 4 | 10 |
+| 9 | step.remediation | 3 | 59 |
+| 9 | step.title | 81 | 81 |
+| 10 | item.distractor-rationale | 10 | 10 |
+| 10 | item.feedback | 17 | 32 |
+| 10 | item.prompt | 28 | 28 |
+| 10 | step.body | 19 | 59 |
+| 10 | step.bookDirection | 3 | 16 |
+| 10 | step.companionDirection | 4 | 10 |
+| 10 | step.remediation | 3 | 36 |
+| 10 | step.title | 65 | 65 |
+| 11 | item.feedback | 9 | 9 |
+| 11 | item.prompt | 12 | 12 |
+| 11 | step.body | 15 | 50 |
+| 11 | step.bookDirection | 3 | 16 |
+| 11 | step.companionDirection | 4 | 10 |
+| 11 | step.remediation | 2 | 7 |
+| 11 | step.title | 37 | 37 |
+| 12 | item.feedback | 15 | 20 |
+| 12 | item.prompt | 18 | 18 |
+| 12 | step.body | 19 | 58 |
+| 12 | step.bookDirection | 3 | 16 |
+| 12 | step.companionDirection | 4 | 10 |
+| 12 | step.remediation | 3 | 12 |
+| 12 | step.title | 50 | 50 |
+| 13 | item.distractor-rationale | 5 | 7 |
+| 13 | item.feedback | 13 | 26 |
+| 13 | item.prompt | 13 | 13 |
+| 13 | step.body | 15 | 50 |
+| 13 | step.bookDirection | 3 | 16 |
+| 13 | step.companionDirection | 4 | 10 |
+| 13 | step.remediation | 4 | 43 |
+| 13 | step.title | 32 | 32 |
+| 14 | item.feedback | 9 | 12 |
+| 14 | item.prompt | 9 | 9 |
+| 14 | step.body | 13 | 46 |
+| 14 | step.bookDirection | 3 | 16 |
+| 14 | step.companionDirection | 4 | 10 |
+| 14 | step.remediation | 2 | 5 |
+| 14 | step.title | 26 | 26 |
+| 15 | item.feedback | 9 | 11 |
+| 15 | item.prompt | 9 | 9 |
+| 15 | step.body | 13 | 46 |
+| 15 | step.bookDirection | 3 | 16 |
+| 15 | step.companionDirection | 4 | 10 |
+| 15 | step.remediation | 2 | 17 |
+| 15 | step.title | 27 | 27 |
+| 16 | item.distractor-rationale | 15 | 15 |
+| 16 | item.feedback | 7 | 7 |
+| 16 | item.prompt | 18 | 18 |
+| 16 | step.body | 19 | 58 |
+| 16 | step.bookDirection | 3 | 16 |
+| 16 | step.companionDirection | 4 | 10 |
+| 16 | step.remediation | 6 | 57 |
+| 16 | step.title | 52 | 52 |
+| 17 | item.distractor-rationale | 42 | 48 |
+| 17 | item.feedback | 37 | 68 |
+| 17 | item.prompt | 37 | 40 |
+| 17 | step.body | 31 | 82 |
+| 17 | step.bookDirection | 3 | 16 |
+| 17 | step.companionDirection | 4 | 10 |
+| 17 | step.remediation | 12 | 120 |
+| 17 | step.title | 78 | 78 |
+| 18 | item.distractor-rationale | 12 | 15 |
+| 18 | item.feedback | 6 | 7 |
+| 18 | item.prompt | 6 | 6 |
+| 18 | step.body | 11 | 42 |
+| 18 | step.bookDirection | 3 | 16 |
+| 18 | step.companionDirection | 4 | 10 |
+| 18 | step.remediation | 2 | 26 |
+| 18 | step.title | 19 | 19 |
+| 19 | item.distractor-rationale | 19 | 21 |
+| 19 | item.feedback | 10 | 17 |
+| 19 | item.prompt | 12 | 13 |
+| 19 | step.body | 15 | 50 |
+| 19 | step.bookDirection | 3 | 16 |
+| 19 | step.companionDirection | 4 | 10 |
+| 19 | step.remediation | 4 | 43 |
+| 19 | step.title | 30 | 30 |
+| 20 | item.distractor-rationale | 21 | 35 |
+| 20 | item.feedback | 8 | 26 |
+| 20 | item.prompt | 11 | 13 |
+| 20 | step.body | 9 | 38 |
+| 20 | step.bookDirection | 3 | 16 |
+| 20 | step.companionDirection | 4 | 10 |
+| 20 | step.remediation | 1 | 34 |
+| 20 | step.title | 17 | 17 |
+| 21 | item.distractor-rationale | 15 | 15 |
+| 21 | item.feedback | 4 | 4 |
+| 21 | item.prompt | 9 | 9 |
+| 21 | step.body | 13 | 46 |
+| 21 | step.bookDirection | 3 | 16 |
+| 21 | step.companionDirection | 4 | 10 |
+| 21 | step.remediation | 3 | 39 |
+| 21 | step.title | 26 | 26 |
+| 22 | item.distractor-rationale | 40 | 48 |
+| 22 | item.feedback | 6 | 12 |
+| 22 | item.prompt | 20 | 23 |
+| 22 | step.body | 19 | 71 |
+| 22 | step.bookDirection | 3 | 16 |
+| 22 | step.companionDirection | 4 | 10 |
+| 22 | step.remediation | 6 | 59 |
+| 22 | step.title | 44 | 44 |
+| 23 | item.distractor-rationale | 18 | 36 |
+| 23 | item.feedback | 12 | 15 |
+| 23 | item.prompt | 18 | 18 |
+| 23 | step.body | 19 | 61 |
+| 23 | step.bookDirection | 3 | 16 |
+| 23 | step.companionDirection | 4 | 10 |
+| 23 | step.remediation | 6 | 57 |
+| 23 | step.title | 39 | 39 |
+| 24 | item.distractor-rationale | 35 | 66 |
+| 24 | item.feedback | 21 | 40 |
+| 24 | item.prompt | 21 | 27 |
+| 24 | step.body | 21 | 76 |
+| 24 | step.bookDirection | 3 | 16 |
+| 24 | step.companionDirection | 4 | 10 |
+| 24 | step.remediation | 7 | 68 |
+| 24 | step.title | 47 | 47 |
+| 25 | item.distractor-rationale | 48 | 92 |
+| 25 | item.feedback | 12 | 25 |
+| 25 | item.prompt | 23 | 24 |
+| 25 | step.body | 21 | 63 |
+| 25 | step.bookDirection | 3 | 16 |
+| 25 | step.companionDirection | 4 | 10 |
+| 25 | step.remediation | 7 | 56 |
+| 25 | step.title | 49 | 49 |
+| 26 | item.distractor-rationale | 45 | 63 |
+| 26 | item.feedback | 29 | 63 |
+| 26 | item.prompt | 30 | 31 |
+| 26 | step.body | 21 | 64 |
+| 26 | step.bookDirection | 3 | 16 |
+| 26 | step.companionDirection | 4 | 10 |
+| 26 | step.remediation | 7 | 124 |
+| 26 | step.title | 47 | 47 |
+| 27 | item.distractor-rationale | 21 | 21 |
+| 27 | item.feedback | 11 | 25 |
+| 27 | item.prompt | 16 | 17 |
+| 27 | step.body | 15 | 58 |
+| 27 | step.bookDirection | 3 | 16 |
+| 27 | step.companionDirection | 4 | 10 |
+| 27 | step.remediation | 4 | 49 |
+| 27 | step.title | 30 | 30 |
+| 28 | item.distractor-rationale | 12 | 12 |
+| 28 | item.feedback | 5 | 10 |
+| 28 | item.prompt | 9 | 10 |
+| 28 | step.body | 13 | 46 |
+| 28 | step.bookDirection | 3 | 16 |
+| 28 | step.companionDirection | 4 | 10 |
+| 28 | step.remediation | 3 | 33 |
+| 28 | step.title | 25 | 25 |
+| 29 | item.distractor-rationale | 50 | 58 |
+| 29 | item.feedback | 32 | 75 |
+| 29 | item.prompt | 34 | 38 |
+| 29 | step.body | 19 | 59 |
+| 29 | step.bookDirection | 3 | 16 |
+| 29 | step.companionDirection | 4 | 10 |
+| 29 | step.remediation | 6 | 60 |
+| 29 | step.title | 44 | 44 |
+| 30 | item.distractor-rationale | 23 | 23 |
+| 30 | item.feedback | 15 | 33 |
+| 30 | item.prompt | 24 | 26 |
+| 30 | step.body | 21 | 67 |
+| 30 | step.bookDirection | 3 | 16 |
+| 30 | step.companionDirection | 4 | 10 |
+| 30 | step.remediation | 7 | 51 |
+| 30 | step.title | 46 | 46 |
+
+Candidate totals: 3817 string occurrences and 7223 sentences (including the already-excluded Unit 1 description above). These are not implementation effect numbers on the remote branch: shipped effect is zero.
+
+T15-n1 is independent of T15-n0 and depends on completed T14-n2. Its row is added as a dependency of T15a–T15e under the overnight owner direction. Proceed to T15-n1; do not start dependent unit tasks.
