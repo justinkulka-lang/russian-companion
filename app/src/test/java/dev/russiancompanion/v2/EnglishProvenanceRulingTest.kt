@@ -7,6 +7,7 @@ import dev.russiancompanion.v2.curriculum.V2Step
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.V2Validator.EnglishProvenanceMode
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
@@ -90,7 +91,9 @@ class EnglishProvenanceRulingTest {
         val marked = pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(feedback = it.feedback + " $fact", russianFacts = listOf(fact)) else it })
         val markedErrors = errors(marked)
         assertTrue(markedErrors.any { it.contains(englishError) })
-        assertTrue(markedErrors.none { it.contains("russian-fact marker") })
+        assertTrue(markedErrors.none { it.contains("russian-fact marker") && it.contains("does not match") })
+        // T15a-n1: the marker also needs frozen-source provenance; this fixture names none.
+        assertTrue(markedErrors.any { it.contains("russian-fact marker on item ${item.id} has no frozen source") })
         // Without the marker the same sentence is authored feedback; the owner decides which sentences to mark.
         val unmarked = pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(feedback = it.feedback + " $fact") else it })
         assertEquals(errors(pack), errors(unmarked))
@@ -222,6 +225,52 @@ class EnglishProvenanceRulingTest {
             if (it.id == item.id) it.copy(feedback = sentence, russianFacts = listOf(sentence)) else it
         })
         assertTrue(errors(changed).any { it.contains(englishError) && "marked sentence in unit 30" in it })
+    }
+
+    @Test
+    fun markerCoveredOnlyByACoverageRecordFails() {
+        // T15a-n1 (owner decision 11/14/2026): content-audit coverage records may cover the wording but never satisfy a marker.
+        val pack = pack()
+        val item = pack.items.single { it.id == "u6-i-type-pronoun-my" }
+        val fact = item.russianFacts.single()
+        val coverage = pack.provenanceRecords.single { it.shippedText == fact && it.sourceRecordId.startsWith("ca-coverage:") }
+        assertFalse(V2Validator.isFrozenSourceRecord(pack, coverage))
+        val noSources = pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(russianFactSources = emptyMap()) else it })
+        assertTrue(errors(noSources).any { it.contains("russian-fact marker on item ${item.id} has no frozen source") })
+        val coverageCited = pack.copy(items = pack.items.map {
+            if (it.id == item.id) it.copy(russianFactSources = mapOf(fact to listOf(coverage.itemId))) else it
+        })
+        assertTrue(errors(coverageCited).any { it.contains("cites ${coverage.itemId}, which is not frozen-source provenance of its unit") })
+    }
+
+    @Test
+    fun markerCoveredByAFrozenSourceRowPasses() {
+        val pack = pack()
+        assertTrue(errors(pack).isEmpty())
+        val item = pack.items.single { it.id == "u6-i-type-pronoun-my" }
+        val cited = item.russianFactSources.getValue(item.russianFacts.single())
+        assertTrue(cited.isNotEmpty())
+        cited.forEach { id -> assertTrue(id, V2Validator.isFrozenSourceRecord(pack, pack.provenanceRecords.single { it.itemId == id })) }
+        // A marked sentence that is itself a frozen Wikibooks span needs no separate citation.
+        val frozen = "These do not decline according to the gender or number of the modified noun."
+        val record = pack.provenanceRecords.single { it.unitNumber == 6 && it.shippedText == frozen }
+        assertTrue(V2Validator.isFrozenSourceRecord(pack, record))
+        val target = pack.items.single { it.id == "u6-i-third-2" }
+        val verbatim = pack.copy(items = pack.items.map {
+            if (it.id == target.id) it.copy(feedback = it.feedback + " " + frozen, russianFacts = it.russianFacts + frozen) else it
+        })
+        assertEquals(errors(pack), errors(verbatim))
+        // Citing the frozen row explicitly also passes; citing a record of another unit does not.
+        val explicit = pack.copy(items = pack.items.map {
+            if (it.id == target.id) it.copy(feedback = it.feedback + " " + frozen, russianFacts = it.russianFacts + frozen,
+                russianFactSources = it.russianFactSources + (frozen to listOf(record.itemId))) else it
+        })
+        assertEquals(errors(pack), errors(explicit))
+        val otherUnit = pack.provenanceRecords.first { it.unitNumber == 7 && V2Validator.isFrozenSourceRecord(pack, it) }
+        val wrongUnit = pack.copy(items = pack.items.map {
+            if (it.id == item.id) it.copy(russianFactSources = mapOf(item.russianFacts.single() to listOf(otherUnit.itemId))) else it
+        })
+        assertTrue(errors(wrongUnit).any { it.contains("cites ${otherUnit.itemId}") })
     }
 
     private fun errors(pack: V2CurriculumPack): List<String> = V2Validator.validate(pack).errors

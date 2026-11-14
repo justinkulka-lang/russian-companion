@@ -111,8 +111,9 @@ class ContentAuditCorrectionTest {
         topic: String,
         teachingCount: Int,
         additionalTeachingIds: List<String> = emptyList(),
+        pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack = pack(),
     ) {
-        val unit = pack().unit(number)!!
+        val unit = pack.unit(number)!!
         val session = unit.sessions.single { it.id == "u$number-s-$topic" }
         val guidedIndex = session.steps.indexOfFirst { it.kind == "GUIDED" }
         assertEquals("Prerequisite teaching still follows guided practice in ${session.id}",
@@ -122,14 +123,43 @@ class ContentAuditCorrectionTest {
             session.steps.take(guidedIndex).map { it.id })
         val objectiveForCheck = unit.objectives.single { it.id == "obj-u$number-$topic" }
         val checkStep = unit.sessions.flatMap { it.steps }.single { it.kind == "CHECK" && objectiveForCheck.checkItemIds.any { id -> id in it.itemIds } }
-        // T15a: Unit 6 checks sit in an end-of-unit check session (A2-24); other units keep the check in the topic session.
-        val expectedKinds = if (checkStep in session.steps) listOf("GUIDED", "REMEDIATE", "CHECK") else listOf("GUIDED", "REMEDIATE")
-        assertEquals(expectedKinds, session.steps.drop(guidedIndex).map { it.kind })
+        // The topic session holds GUIDED then REMEDIATE, and the topic's CHECK follows both in the unit's step order:
+        // at the end of that session or in a later end-of-unit check session (A2-24, T15a; T15a-n1 order rule).
+        val topicTail = session.steps.drop(guidedIndex).map { it.kind }
+        assertEquals(if (checkStep in session.steps) listOf("GUIDED", "REMEDIATE", "CHECK") else listOf("GUIDED", "REMEDIATE"), topicTail)
+        val order = unit.sessions.flatMap { it.steps }.map { it.id }
+        val guidedAt = order.indexOf(session.steps[guidedIndex].id)
+        val remediationAt = order.indexOf(session.steps.single { it.kind == "REMEDIATE" }.id)
+        val teachingAt = session.steps.take(guidedIndex).map { order.indexOf(it.id) }
+        val checkAt = order.indexOf(checkStep.id)
+        assertTrue("${checkStep.id} must follow ${session.id} guided practice and remediation", checkAt > guidedAt && checkAt > remediationAt)
+        assertTrue("${checkStep.id} must follow the topic teaching", teachingAt.all { checkAt > it })
         assertEquals(listOf("u$number-g-$topic-0"), session.steps[guidedIndex].itemIds)
         val objective = unit.objectives.single { it.id == "obj-u$number-$topic" }
         assertTrue(objective.gating)
         assertTrue(objective.checkItemIds.isNotEmpty())
         assertTrue(objective.checkItemIds.all { id -> checkStep.itemIds.contains(id) })
+    }
+
+    @Test
+    fun aUnitSevenCheckPlacedBeforeItsTeachingFails() {
+        // T15a-n1 regression: moving the Unit 7 spelling CHECK into an earlier session, ahead of its teaching, must fail.
+        val pack = pack()
+        val unit = pack.unit(7)!!
+        val objective = unit.objectives.single { it.id == "obj-u7-spelling" }
+        val check = unit.sessions.flatMap { it.steps }.single { it.kind == "CHECK" && objective.checkItemIds.any { id -> id in it.itemIds } }
+        val first = unit.sessions.first()
+        val moved = pack.copy(units = pack.units.map { u ->
+            if (u.number != 7) u else u.copy(sessions = u.sessions.map { s ->
+                when {
+                    s.id == first.id -> s.copy(steps = listOf(check) + s.steps.filter { it.id != check.id })
+                    else -> s.copy(steps = s.steps.filter { it.id != check.id })
+                }
+            })
+        })
+        assertPrerequisiteTeachingBeforeGuided(7, "spelling", 4)
+        val failure = runCatching { assertPrerequisiteTeachingBeforeGuided(7, "spelling", 4, pack = moved) }.exceptionOrNull()
+        assertTrue("A CHECK before its teaching must fail the order check", failure is AssertionError)
     }
 
     @Test

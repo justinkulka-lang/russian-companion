@@ -343,6 +343,12 @@ internal data class V2CheckItem(
      * that state a fact about Russian in English. A marked sentence needs a source record like any other Russian fact.
      */
     val russianFacts: List<String> = emptyList(),
+    /**
+     * T15a-n1 (owner decision 11/14/2026): for each marked sentence, the provenance records of a frozen file of a licensed
+     * source under catalog/sources/ (an OpenRussian row cell or a Wikibooks span) that state the claim. Content-audit
+     * coverage records may cover the wording but never satisfy a marker.
+     */
+    val russianFactSources: Map<String, List<String>> = emptyMap(),
 )
 
 @Serializable
@@ -432,6 +438,12 @@ internal data class V2Step(
     val remediationStepId: String? = null,
     /** The "russian-fact" marker (T15-n0): sentences of a REMEDIATE [body] that state a fact about Russian in English. */
     val russianFacts: List<String> = emptyList(),
+    /**
+     * T15a-n1 (owner decision 11/14/2026): for each marked sentence, the provenance records of a frozen file of a licensed
+     * source under catalog/sources/ (an OpenRussian row cell or a Wikibooks span) that state the claim. Content-audit
+     * coverage records may cover the wording but never satisfy a marker.
+     */
+    val russianFactSources: Map<String, List<String>> = emptyMap(),
 )
 
 @Serializable

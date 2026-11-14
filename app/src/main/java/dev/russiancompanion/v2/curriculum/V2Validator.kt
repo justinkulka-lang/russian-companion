@@ -555,7 +555,8 @@ internal object V2Validator {
                     "objectiveIds" to canonArr(session.objectiveIds.map(::canonStr)),
                     "steps" to canonArr(session.steps.map { step ->
                         canonObj(
-                            *listOfNotNull(step.russianFacts.takeIf { it.isNotEmpty() }?.let { "russianFacts" to canonArr(it.map(::canonStr)) }).toTypedArray(),
+                            *listOfNotNull(step.russianFacts.takeIf { it.isNotEmpty() }?.let { "russianFacts" to canonArr(it.map(::canonStr)) },
+                                canonFactSources(step.russianFactSources)).toTypedArray(),
                             "id" to canonStr(step.id),
                             "kind" to canonStr(step.kind),
                             "title" to canonStr(step.title),
@@ -599,6 +600,11 @@ internal object V2Validator {
 
     private fun canonArr(values: List<String>): String = values.joinToString(prefix = "[", postfix = "]")
 
+    private fun canonFactSources(sources: Map<String, List<String>>): Pair<String, String>? =
+        sources.takeIf { it.isNotEmpty() }?.let { map ->
+            "russianFactSources" to canonArr(map.keys.sorted().map { key -> canonArr(listOf(canonStr(key)) + map.getValue(key).map(::canonStr)) })
+        }
+
     private fun canonicalCheckItem(item: V2CheckItem): String {
         val fields = mutableListOf(
             "id" to canonStr(item.id),
@@ -623,6 +629,7 @@ internal object V2Validator {
         item.typedAnswerKey?.let { key -> fields += "typedAnswerKey" to canonStr(typedAnswerKeyContent(key)) }
         item.dictationAudioAssetId?.let { fields += "dictationAudioAssetId" to canonStr(it) }
         if (item.russianFacts.isNotEmpty()) fields += "russianFacts" to canonArr(item.russianFacts.map(::canonStr))
+        canonFactSources(item.russianFactSources)?.let { fields += it }
         return canonObj(*fields.toTypedArray())
     }
 
@@ -5313,6 +5320,7 @@ internal object V2Validator {
         val quoteTargets = englishQuoteTargets(pack)
         errors += russianFactMarkerErrors(pack)
         errors += markedSentenceSourceErrors(pack)
+        errors += frozenFactSourceErrors(pack)
         val hostsByUnit = englishProvenanceHosts(pack).groupBy { it.unitNumber }
         pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
             val shipped = shippedByUnit.getValue(unit.number)
@@ -5512,6 +5520,55 @@ internal object V2Validator {
      * Authored scaffold records intentionally never enter this coverage set. Existing provenance validation
      * separately checks the source records' hashes, inventory identities, rights and transformations.
      */
+    /**
+     * A provenance record of a frozen file of a licensed source under catalog/sources/: an OpenRussian row cell or a
+     * Wikibooks span, with a verified source hash. Content-audit research synthesis, coverage records and original app
+     * text are never frozen-source provenance (owner decision 11/14/2026, T15a-n1).
+     */
+    internal fun isFrozenSourceRecord(pack: V2CurriculumPack, record: V2ProvenanceRecord): Boolean =
+        record.sourceId != ContentAuditSources.SOURCE_ID &&
+            record.licenseId != ContentAuditSources.LICENSE &&
+            record.transformation != ContentAuditSources.TRANSFORMATION &&
+            record.synthesis == null &&
+            !record.sourceRecordId.startsWith("ca-coverage:") &&
+            record.sourceRevision.isNotBlank() &&
+            verifiedFrozen(record) &&
+            pack.sources.any { it.id == record.sourceId } &&
+            pack.rights.any { it.sourceId == record.sourceId && it.permitsAppUse }
+
+    /**
+     * Every russian-fact marker is satisfied only by frozen-source provenance: either the marked sentence is wholly
+     * covered by frozen-source spans of its unit, or russianFactSources names frozen-source records of that unit for it.
+     */
+    internal fun frozenFactSourceErrors(pack: V2CurriculumPack): List<String> {
+        val records = pack.provenanceRecords.associateBy { it.itemId }
+        val frozenByUnit = pack.provenanceRecords.filter { isFrozenSourceRecord(pack, it) }
+            .groupBy { it.unitNumber }.mapValues { (_, rows) -> rows.map { it.shippedText } }
+        val objectiveUnit = pack.units.flatMap { unit -> unit.objectives.map { it.id to unit.number } }.toMap()
+        val errors = mutableListOf<String>()
+        fun check(owner: String, unitNumber: Int?, facts: List<String>, sources: Map<String, List<String>>) {
+            sources.keys.filter { it !in facts }.forEach { errors += "russian-fact sources on $owner name an unmarked sentence: ${it.take(80)}" }
+            facts.filter { it.isNotBlank() }.forEach { fact ->
+                val cited = sources[fact].orEmpty()
+                val verbatim = unitNumber != null && unboundLetters(fact, frozenByUnit[unitNumber].orEmpty()).isEmpty()
+                if (cited.isEmpty() && !verbatim) {
+                    errors += "russian-fact marker on $owner has no frozen source: ${fact.take(80)}"
+                }
+                cited.forEach { id ->
+                    val record = records[id]
+                    if (record == null || record.unitNumber != unitNumber || !isFrozenSourceRecord(pack, record)) {
+                        errors += "russian-fact marker on $owner cites $id, which is not frozen-source provenance of its unit"
+                    }
+                }
+            }
+        }
+        pack.items.forEach { item -> check("item ${item.id}", objectiveUnit[item.objectiveId], item.russianFacts, item.russianFactSources) }
+        pack.units.forEach { unit ->
+            unit.sessions.flatMap { it.steps }.forEach { step -> check("step ${step.id}", unit.number, step.russianFacts, step.russianFactSources) }
+        }
+        return errors
+    }
+
     private fun markedSentenceSourceErrors(pack: V2CurriculumPack): List<String> {
         val sourceIds = pack.sources.map { it.id }.toSet()
         val sourcedByUnit = pack.provenanceRecords.filter { it.sourceId in sourceIds && it.sourceRecordId.isNotBlank() }

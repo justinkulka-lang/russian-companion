@@ -61,13 +61,51 @@ class Unit6FactProvenanceTest {
                 "REMOVED" -> assertFalse("Removed standalone sentence survives unaccounted: $baseline", baseline in currentSentences)
                 else -> fail("Unknown disposition: $disposition")
             }
-            // Rewording/removal is allowed; every surviving replacement fact still needs an actual source and marker.
-            disposition.getValue("sourceRecordIds").jsonArray.forEach { source ->
-                val record = pack.provenanceRecords.single { it.itemId == source.jsonPrimitive.content }
+            // T15a-n1: a MARKED entry cites exactly the frozen-source records its marker names (owner decision 11/14/2026).
+            val cited = disposition.getValue("sourceRecordIds").jsonArray.map { it.jsonPrimitive.content }
+            if (disposition.string("disposition") == "MARKED") {
+                assertEquals(baseline, factSources(pack, disposition.string("ownerId")).getValue(baseline).toSet(), cited.toSet())
+            } else assertTrue(cited.isEmpty())
+            cited.forEach { source ->
+                val record = pack.provenanceRecords.single { it.itemId == source }
                 assertEquals(6, record.unitNumber)
-                assertTrue(matching.any { record.shippedText in it.russianFacts && record.shippedText in it.text })
+                assertTrue(source, V2Validator.isFrozenSourceRecord(pack, record))
             }
         }
+    }
+
+    @Test
+    fun everyUnitSixMarkerCitesRecordsOfAFrozenFileUnderCatalogSources() {
+        // T15a-n1 (owner decision 11/14/2026): each cited record's original text occurs in a frozen file of a licensed source.
+        val pack = pack()
+        val frozenFiles = File(repo(), "catalog/sources").walkTopDown().filter { it.isFile && it.extension in setOf("csv", "txt") }
+            .map { it.readText() }.toList()
+        val owners = pack.items.filter { it.objectiveId.startsWith("obj-u6-") }.map { it.id to (it.russianFacts to it.russianFactSources) } +
+            pack.units.single { it.number == 6 }.sessions.flatMap { it.steps }.map { it.id to (it.russianFacts to it.russianFactSources) }
+        var markers = 0
+        owners.forEach { (owner, marks) ->
+            val (facts, sources) = marks
+            facts.forEach { fact ->
+                markers++
+                val cited = sources[fact].orEmpty()
+                assertTrue("$owner: $fact", cited.isNotEmpty())
+                cited.forEach { id ->
+                    val record = pack.provenanceRecords.single { it.itemId == id }
+                    assertTrue(id, V2Validator.isFrozenSourceRecord(pack, record))
+                    assertTrue("$id is not in a frozen file", frozenFiles.any { record.originalSourceText in it })
+                    // An OpenRussian cell must be the named field of the named row in the frozen CSV.
+                    Regex("^(nouns|adjectives)\\.csv:([^#]+)#(.+)$").find(record.sourceRecordId)?.let { match ->
+                        val (file, bare, field) = match.destructured
+                        val csv = File(repo(), "catalog/sources").walkTopDown().first { it.isFile && it.name == "$file.csv" &&
+                            it.readLines().drop(1).any { line -> line.substringBefore('\t') == bare } }.readLines()
+                        val header = csv.first().split('\t')
+                        val row = csv.drop(1).first { it.substringBefore('\t') == bare }.split('\t')
+                        assertEquals(id, record.originalSourceText, row[header.indexOf(field)].trim())
+                    }
+                }
+            }
+        }
+        assertTrue(markers > 100)
     }
 
     @Test
@@ -106,6 +144,10 @@ class Unit6FactProvenanceTest {
         })
         assertTrue(unmarkedSentences(changed).any { item.id in it && fact in it })
     }
+
+    private fun factSources(pack: V2CurriculumPack, owner: String): Map<String, List<String>> =
+        pack.items.firstOrNull { it.id == owner }?.russianFactSources
+            ?: pack.units.flatMap { it.sessions }.flatMap { it.steps }.single { it.id == owner }.russianFactSources
 
     private fun hosts(pack: V2CurriculumPack) = V2Validator.englishProvenanceHosts(pack, includeAllUnits = true)
         .filter { it.unitNumber == 6 && it.field in fields }

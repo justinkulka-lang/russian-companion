@@ -42,12 +42,16 @@ class CurriculumDesignDiagnosticsTest {
     }
 
     @Test fun sameSurfaceFormsInDifferentGrammaticalQuestionsAreNotIdenticalTasks() {
+        val a = current.item("u6-i-animacy-2")!!.copy(id = "a", objectiveId = objectiveId)
         val b = current.item("u10-i-preposition-2")!!.copy(id = "b", objectiveId = objectiveId)
-        // T15a gave u6-i-animacy-2 a third sourced option; compare the shared two-form surface.
-        val a = current.item("u6-i-animacy-2")!!.copy(id = "a", objectiveId = objectiveId, options = b.options)
+        // Expected values are stated independently (T15a-n1): T15a added the frozen dative дру́гу to the Unit 6 item.
+        assertEquals(listOf("дру́га", "друг", "дру́гу"), a.options)
+        assertEquals(listOf("дру́га", "друг"), b.options)
+        assertEquals("друг", a.promptLetter)
         assertEquals(a.promptLetter, b.promptLetter)
-        assertEquals(a.options, b.options)
+        assertEquals("дру́га", a.answer)
         assertEquals(a.answer, b.answer)
+        assertTrue(b.options.all { it in a.options })
         assertNotEquals(a.prompt, b.prompt)
         assertFalse(audit(listOf(a, b)).signals.any { it.rule == "IDENTICAL_REQUIRED_DISPLAY_TASK" })
     }

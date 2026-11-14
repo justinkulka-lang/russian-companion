@@ -499,8 +499,7 @@ class Units2630SourceIntakeTest {
         })
         assertTrue(pack.provenanceRecords.filter { it.originalSourceText.contains(cornellReference) }.all {
             ((it.itemId.startsWith("prov-ca-u6-worked-") && it.unitNumber == 6 && it.objectiveId == "obj-u6-possessive") ||
-                (it.itemId.startsWith("prov-ca-u7-worked-") && it.unitNumber == 7 && it.objectiveId == "obj-u7-spelling") ||
-                (it.itemId.startsWith("prov-u6-current-fact-") && it.unitNumber == 6 && it.objectiveId == "obj-u6-possessive")) &&
+                (it.itemId.startsWith("prov-ca-u7-worked-") && it.unitNumber == 7 && it.objectiveId == "obj-u7-spelling")) &&
                 it.sourceId == "src-content-audit-research"
         })
         assertTrue(pack.provenanceRecords.none { it.shippedText.contains(".pdf") })

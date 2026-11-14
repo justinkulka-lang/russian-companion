@@ -23,7 +23,23 @@ class Unit6FeedbackCorrectionTest {
     @Test fun feedbackExplainsPossessorRolesPersonNumberAndDestinationCase() {
         val p = pack()
         // T15a: three cue-only closed items in these objectives became typed items (no options or assessment).
-        assertEquals(3, p.items.count { it.objectiveId in objectives && it.isTypedResponse() })
+        val typed = p.items.filter { it.objectiveId in objectives && it.isTypedResponse() }
+        assertEquals(3, typed.size)
+        // T15a-n1: typed feedback meets the closed items' standard; every fact sentence is a marked, frozen-sourced fact.
+        typed.forEach { item ->
+            assertFalse(item.id, item.feedback.startsWith("Does"))
+            assertTrue(item.id, item.feedback.endsWith("Stress marks are optional when you type."))
+            val facts = item.feedback.removeSuffix("Stress marks are optional when you type.").trim()
+            assertEquals(item.id, facts, item.russianFacts.joinToString(" "))
+            assertTrue(item.id, item.russianFacts.all { item.russianFactSources[it].orEmpty().isNotEmpty() })
+            assertTrue(item.id, item.feedback.contains(item.answer))
+            when (item.objectiveId) {
+                "obj-u6-object" -> assertTrue(item.feedback.contains("subject") && item.feedback.contains("object") && item.feedback.contains("same meaning"))
+                "obj-u6-pronoun" -> assertTrue(item.feedback.contains("accusative") && item.feedback.contains("person") &&
+                    item.feedback.contains(item.promptLetter!!))
+                else -> fail("Unexpected typed objective ${item.objectiveId}")
+            }
+        }
         val items = p.items.filter { it.objectiveId in objectives && !it.isTypedResponse() }
         assertEquals(12, items.size)
         items.forEach { item ->
