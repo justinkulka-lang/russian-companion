@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "8d066a47967ba9546952eefb3a53edecb7a25a0f2e9852463ded99febfc926d5",
+      "sha256": "e2086262fd356e655c1ddaf19c0ceeb466a1b76fd819ed30a2e1716f065f5099",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3346,6 +3346,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Owner ruling 11/12/2026 and owner correction: the English source-record rule reads hosts by field. Prompts, step titles, step directions and instruction-step bodies need a source only for Cyrillic; feedback, remediation and distractor-rationale sentences need one only when they contain Cyrillic, quote a pack gloss, answer, option or cue, or carry the new russian-fact marker (schema field russianFacts on items and steps, unused in content). Teaching bodies, glosses, answers, options, accepted answers, cues and examples keep the full requirement; the Russian-string check is unchanged. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T15a-n1",
+      "previousRecordedSha256": "8d066a47967ba9546952eefb3a53edecb7a25a0f2e9852463ded99febfc926d5",
+      "sha256": "e2086262fd356e655c1ddaf19c0ceeb466a1b76fd819ed30a2e1716f065f5099",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Owner decision 11/14/2026: a russian-fact marker is satisfied only by frozen-source provenance (OpenRussian row cells or Wikibooks spans with verified hashes from licensed sources) named in russianFactSources or covering the sentence verbatim; content-audit coverage records never satisfy a marker. Adds russianFactSources to the canonical item and step forms when present. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }
