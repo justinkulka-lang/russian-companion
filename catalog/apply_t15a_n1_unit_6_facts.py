@@ -212,17 +212,24 @@ REWORD = {  # owner -> [(old sentence, new sentence)]; teaching bodies that repe
     "u6-st-teach-feminine-2": [("Nouns in the а or я declension, including masculine nouns such as папа and дядя, have their own accusative singular ending.",
                                 "Nouns in the а or я declension, including the masculine noun папа, have their own accusative singular ending.")],
 }
-REMOVE = {  # owner -> sentences no frozen file states (removed from feedback/remediation; teaching unchanged)
+REMOVE = {  # owner -> sentences no frozen file states (removed from item feedback)
     "u6-g-animacy-0": ["The nominative names the subject."],
     "u6-i-animacy-1": ["The nominative names the subject."],
     "u6-i-animacy-2": ["The nominative names the subject."],
-    "u6-st-rem-animacy": [
-        "Dictionary English notes name a sense; they are not complete sentence translations.",
-        "This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.",
-        "This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.",
-        "Do not treat form syncretism as two different semantic case roles being interchangeable.",
-        "The imperfective verb does not establish completed action; no aspect or full-translation claim is tested.",
-    ],
+}
+# The animacy remediation repeats its six teaching steps exactly, so a claim no frozen file states is reworded to
+# instruction or scope text that states no Russian fact, identically in the remediation and in its teaching step.
+NONFACT_REWORD = {  # teaching step -> (old sentence, new sentence)
+    "u6-st-teach-animacy-1": ("Dictionary English notes name a sense; they are not complete sentence translations.",
+                              "Treat the English notes as dictionary senses, not full sentence translations."),
+    "u6-st-teach-animacy-2": ("This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.",
+                              "These steps ask you to recognize the supplied forms only, not to produce endings for other nouns."),
+    "u6-st-teach-animacy-3": ("This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.",
+                              "Use the requested case or the supplied context to decide a word’s sentence role."),
+    "u6-st-teach-animacy-5": ("Do not treat form syncretism as two different semantic case roles being interchangeable.",
+                              "Answer with the case the task names."),
+    "u6-st-teach-animacy-6": ("The imperfective verb does not establish completed action; no aspect or full-translation claim is tested.",
+                              "This check does not establish completed action; no aspect or full-translation claim is tested."),
 }
 REMOVED_RECORDS = {"prov-u6-current-fact-030", "prov-u6-current-fact-034", "prov-u6-current-fact-037",
                    "prov-u6-current-fact-040", "prov-u6-current-fact-045", "prov-u6-current-fact-049"}
@@ -326,6 +333,20 @@ def apply(pack: dict) -> dict:
     if steps["u6-st-rem-feminine"]["body"] != steps["u6-st-teach-feminine-2"]["body"]:
         raise SystemExit("Feminine remediation no longer repeats its teaching step")
     coverage("obj-u6-feminine", "u6-feminine-remediation-body", steps["u6-st-rem-feminine"]["body"])
+    rem_animacy = steps["u6-st-rem-animacy"]
+    teaching = [s for s in next(se for se in unit["sessions"] if se["id"] == "u6-s-animacy")["steps"] if s["kind"] == "TEACH"]
+    if rem_animacy["body"] != "\n\n".join(s["body"] for s in teaching):
+        raise SystemExit("Animacy remediation no longer repeats its teaching steps")
+    for owner, (old, newer) in NONFACT_REWORD.items():
+        for host in (steps[owner], rem_animacy):
+            if host["body"].count(old) != 1:
+                raise SystemExit(f"{host['id']}: non-fact reword baseline changed")
+            host["body"] = host["body"].replace(old, newer)
+            host["russianFacts"] = [f for f in host.get("russianFacts", []) if f != old]
+        coverage("obj-u6-animacy", f"{owner}-body", steps[owner]["body"])
+    if rem_animacy["body"] != "\n\n".join(s["body"] for s in teaching):
+        raise SystemExit("Animacy remediation must still repeat its teaching steps")
+    coverage("obj-u6-animacy", "u6-animacy-remediation-body", rem_animacy["body"])
     for owner, sentences in REMOVE.items():
         host = steps.get(owner) or items[owner]
         for sentence in sentences:

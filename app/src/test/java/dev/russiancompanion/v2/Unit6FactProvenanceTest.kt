@@ -23,6 +23,12 @@ class Unit6FactProvenanceTest {
         "The other option repeats the shown order.",
         "Compare your answer with the worked examples for this form, then try again.",
         "Stress marks are optional when you type.",
+        // T15a-n1: unsourced animacy claims reworded to instruction or scope text, identically in teaching and remediation.
+        "Treat the English notes as dictionary senses, not full sentence translations.",
+        "These steps ask you to recognize the supplied forms only, not to produce endings for other nouns.",
+        "Use the requested case or the supplied context to decide a word’s sentence role.",
+        "Answer with the case the task names.",
+        "This check does not establish completed action; no aspect or full-translation claim is tested.",
     )
 
     @Test
