@@ -115,6 +115,121 @@ class Unit6FactProvenanceTest {
     }
 
     @Test
+    fun everyUnitSixMarkerWithoutCyrillicHasAReviewNamingAFrozenLineThatStatesIt() {
+        // T15a-n2 (owner direction 11/15/2026): a marked sentence with no Cyrillic word cannot be checked mechanically,
+        // so each has a review entry naming the frozen file, line and exact quote; one evidence line holds a cited record.
+        val pack = pack()
+        val reviews = Json.parseToJsonElement(File(repo(), "app/src/test/resources/unit6-fact-dispositions.json").readText())
+            .jsonObject.getValue("markerReviews").jsonArray.map { it.jsonObject }
+        fun JsonObject.string(key: String) = getValue(key).jsonPrimitive.content
+        val owners = pack.items.filter { it.objectiveId.startsWith("obj-u6-") }.map { Triple(it.id, it.russianFacts, it.russianFactSources) } +
+            pack.units.single { it.number == 6 }.sessions.flatMap { it.steps }.map { Triple(it.id, it.russianFacts, it.russianFactSources) }
+        val needed = owners.flatMap { (owner, facts, _) -> facts.filter { fact -> fact.none { it in 'Ѐ'..'ӿ' } }.map { owner to it } }
+        assertTrue(needed.size >= 50)
+        assertEquals(needed.toSet(), reviews.map { it.string("ownerId") to it.string("sentence") }.toSet())
+        assertEquals(needed.size, reviews.size)
+        val records = pack.provenanceRecords.associateBy { it.itemId }
+        reviews.forEach { review ->
+            val owner = review.string("ownerId")
+            val sentence = review.string("sentence")
+            val cited = owners.single { it.first == owner }.third.getValue(sentence).map { records.getValue(it) }
+            val evidence = review.getValue("evidence").jsonArray.map { it.jsonObject }
+            assertTrue("$owner: $sentence", evidence.isNotEmpty())
+            val lines = evidence.map { entry ->
+                val path = entry.string("file")
+                assertTrue(path, path.startsWith("catalog/sources/"))
+                val file = File(repo(), path)
+                assertTrue(path, file.isFile)
+                val number = entry.string("line").toInt()
+                val all = file.readLines()
+                assertTrue("$path:$number does not exist", number in 1..all.size)
+                val line = all[number - 1]
+                assertTrue("$path:$number does not contain the quote", entry.string("quote") in line)
+                path to line
+            }
+            assertTrue("$owner: no evidence line holds a cited record: $sentence", lines.any { (path, line) ->
+                cited.any { record ->
+                    val cell = Regex("^(\\w+\\.csv):([^#]+)#").find(record.sourceRecordId)
+                    if (cell != null) path.endsWith("/" + cell.groupValues[1]) && line.substringBefore('\t') == cell.groupValues[2]
+                    else record.originalSourceText.lines().any { it.isNotBlank() && it in line }
+                }
+            })
+        }
+    }
+
+    @Test
+    fun everyMultiWordRussianPhraseUnitSixShowsIsAttestedVerbatimInAFrozenFile() {
+        // T15a-n2 (owner decision 11/15/2026): attested single forms do not attest a phrase built from them.
+        val json = Json.parseToJsonElement(File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()).jsonObject
+        val shown = shownPhrases(json, 6)
+        val listed = Json.parseToJsonElement(File(repo(), "app/src/test/resources/unit6-phrase-attestations.json").readText())
+            .jsonObject.getValue("phrases").jsonArray.map { it.jsonObject }
+        assertEquals(shown, listed.map { it.getValue("phrase").jsonPrimitive.content }.toSet())
+        assertTrue(shown.size >= 10)
+        listed.forEach { entry ->
+            val phrase = entry.getValue("phrase").jsonPrimitive.content
+            val path = entry.getValue("file").jsonPrimitive.content
+            val number = entry.getValue("line").jsonPrimitive.content.toInt()
+            assertTrue(path, path.startsWith("catalog/sources/"))
+            val all = File(repo(), path).readLines()
+            assertTrue("$path:$number", number in 1..all.size)
+            assertTrue("$phrase is not verbatim at $path:$number", attests(all[number - 1], phrase))
+        }
+        // A worked phrase assembled from attested forms is not attested by them.
+        val built = "на́шу сестру́"
+        assertTrue(frozenLines().none { attests(it, built) })
+        val units = json.getValue("units").jsonArray.map { unit ->
+            val obj = unit.jsonObject
+            if (obj.getValue("number").jsonPrimitive.content != "6") unit else JsonObject(obj + ("title" to JsonPrimitive("${obj.getValue("title").jsonPrimitive.content} $built")))
+        }
+        assertTrue(built in shownPhrases(JsonObject(json + ("units" to JsonArray(units))), 6) - shown)
+    }
+
+    private val skippedKeys = setOf("id", "sourceId", "reviewStatus", "kind", "language", "objectiveId", "letterId", "installState",
+        "readiness", "mappingStatus", "classification", "russianFactSources", "assessment", "containsGeneratedRussian", "penguinLesson",
+        "mappingNote", "bookDirection", "advancement", "prerequisiteUnitNumbers", "searchTerms")
+    private val cyr = "\\u0400-\\u04FF"
+    private val phraseRegex = Regex("[$cyr][$cyr\\u0301]*(?:-[$cyr][$cyr\\u0301]*)?(?:[ \\u00a0]+[$cyr][$cyr\\u0301]*(?:-[$cyr][$cyr\\u0301]*)?)+")
+
+    /** Runs of two or more space-separated Cyrillic words in the learner-visible text of a unit. */
+    private fun shownPhrases(pack: JsonObject, number: Int): Set<String> {
+        val unit = pack.getValue("units").jsonArray.map { it.jsonObject }.single { it.getValue("number").jsonPrimitive.content == number.toString() }
+        val objects = mutableListOf<JsonElement>(JsonObject(unit - "sessions"))
+        val exampleIds = mutableSetOf<String>()
+        val referenceIds = mutableSetOf<String>()
+        fun ids(element: JsonObject, key: String) = (element[key] as? JsonArray).orEmpty().map { it.jsonPrimitive.content }
+        unit.getValue("sessions").jsonArray.map { it.jsonObject }.forEach { session ->
+            objects += JsonObject(session - "steps")
+            session.getValue("steps").jsonArray.map { it.jsonObject }.forEach { step ->
+                objects += step; exampleIds += ids(step, "exampleIds"); referenceIds += ids(step, "referenceIds")
+            }
+        }
+        pack.getValue("items").jsonArray.map { it.jsonObject }.filter { it.getValue("objectiveId").jsonPrimitive.content.startsWith("obj-u$number-") }
+            .forEach { objects += it; exampleIds += ids(it, "exampleIds") }
+        objects += pack.getValue("examples").jsonArray.filter { it.jsonObject.getValue("id").jsonPrimitive.content in exampleIds }
+        objects += pack.getValue("references").jsonArray.filter { it.jsonObject.getValue("id").jsonPrimitive.content in referenceIds }
+        val strings = mutableListOf<String>()
+        fun walk(element: JsonElement) {
+            when (element) {
+                is JsonObject -> element.forEach { (key, value) -> if (key !in skippedKeys && !key.endsWith("Id") && !key.endsWith("Ids")) walk(value) }
+                is JsonArray -> element.forEach(::walk)
+                is JsonPrimitive -> if (element.isString) strings += element.content
+            }
+        }
+        objects.forEach(::walk)
+        return strings.flatMap { text -> phraseRegex.findAll(text).map { it.value } }.toSet()
+    }
+
+    /** The frozen line, without wiki or HTML markup, contains the phrase as whole words (case-insensitive, stress kept). */
+    private fun attests(line: String, phrase: String): Boolean {
+        val clean = Regex("\\s+").replace(Regex("'{2,}|\\[\\[|\\]\\]").replace(Regex("<[^>]+>").replace(line, " "), ""), " ").lowercase()
+        return Regex("(?<![$cyr\\u0301])${Regex.escape(phrase.lowercase())}(?![$cyr\\u0301])").containsMatchIn(clean)
+    }
+
+    private fun frozenLines(): List<String> = File(repo(), "catalog/sources").walkTopDown()
+        .filter { it.isFile && it.extension in setOf("txt", "csv", "html") }.flatMap { it.readLines() }.toList()
+
+    @Test
     fun markedUnitSixFactsHaveActualProvenanceAndCannotUseScaffoldsInstead() {
         val pack = pack()
         val errors = V2Validator.validate(pack).errors

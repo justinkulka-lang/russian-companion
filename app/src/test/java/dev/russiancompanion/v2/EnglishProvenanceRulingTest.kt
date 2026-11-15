@@ -273,6 +273,34 @@ class EnglishProvenanceRulingTest {
         assertTrue(errors(wrongUnit).any { it.contains("cites ${otherUnit.itemId}") })
     }
 
+    @Test
+    fun markerCitingRecordsThatLackItsCyrillicFormsFails() {
+        // T15a-n2 (owner direction 11/15/2026): a frozen citation must contain every Cyrillic form the marker shows.
+        val pack = pack()
+        assertFalse(errors(pack).any { it.contains("shows Cyrillic forms") })
+        val item = pack.items.single { it.id == "u6-i-type-pronoun-my" }
+        val fact = item.russianFacts.single()
+        assertTrue(fact, fact.startsWith("Нас ") && "Мы" in fact)
+        val unrelated = pack.provenanceRecords.single { it.itemId == "prov-ex-or-u6-animacy-0" }
+        assertTrue(V2Validator.isFrozenSourceRecord(pack, unrelated))
+        val wrong = pack.copy(items = pack.items.map {
+            if (it.id == item.id) it.copy(russianFactSources = mapOf(fact to listOf(unrelated.itemId))) else it
+        })
+        assertTrue(errors(wrong).joinToString("\n"), errors(wrong).any {
+            it.contains("item ${item.id} shows Cyrillic forms its cited frozen sources do not contain") && it.contains("нас") && it.contains("мы")
+        })
+        // A stressed form needs a citation that shows the same stress: the unstressed Wikibooks cell нашу does not
+        // attest на́шу (the lesson3 line supplies на́ша and the Wikibooks row supplies наш, so only the stress is missing).
+        val possessive = pack.items.single { it.id == "u6-i-possessive-2" }
+        val feedback = possessive.feedback
+        assertTrue(feedback in possessive.russianFacts && "на́шу" in feedback)
+        val unstressed = pack.copy(items = pack.items.map {
+            if (it.id == possessive.id) it.copy(russianFactSources = it.russianFactSources +
+                (feedback to listOf("prov-u6-possessive-x-2", "prov-t15an2-u6-lesson3-nasha"))) else it
+        })
+        assertTrue(errors(unstressed).any { it.contains("item ${possessive.id} shows Cyrillic forms") && it.contains("на́шу") })
+    }
+
     private fun errors(pack: V2CurriculumPack): List<String> = V2Validator.validate(pack).errors
 
     private fun unitItemIds(pack: V2CurriculumPack, number: Int): Set<String> =

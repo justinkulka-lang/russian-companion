@@ -176,10 +176,12 @@ class ContentAuditCorrectionTest {
         assertTrue(forms.contains("мои́ is the plural nominative"))
         assertTrue(forms.contains("тво́й is masculine singular nominative; твоя́ is feminine singular nominative"))
         val worked = session.steps.single { it.id == "u6-st-teach-possessive-3" }
-        assertTrue(worked.body.contains("на́ша сестра́ becomes на́шу сестру́"))
-        assertTrue(worked.body.contains("change both words"))
-        assertTrue(worked.body.contains("на́шего бра́та changes the referent"))
+        // T15a-n2: the worked change shows single attested forms, not an unattested phrase.
+        assertTrue(worked.body.contains("change both words: на́ша becomes на́шу, and сестра́ becomes сестру́"))
+        assertTrue(worked.body.contains("на́ша is the feminine singular nominative form of наш"))
+        assertTrue(worked.body.contains("на́шего is the masculine and neuter genitive form"))
         assertTrue(worked.body.contains("на́ши is plural"))
+        assertFalse(worked.body.contains("на́шу сестру́"))
         assertTrue(session.steps.indexOf(worked) < session.steps.indexOfFirst { it.kind == "GUIDED" })
         assertEquals(18, unit.advancement!!.minimumDistinctChecks)
     }
@@ -206,7 +208,8 @@ class ContentAuditCorrectionTest {
         assertTrue(teaching.all { rem.body.contains(it.body) })
         assertEquals(unit.objectives.single { it.id == "obj-u6-possessive" }.exampleIds.toSet(), rem.exampleIds.toSet())
         assertTrue(session.steps.filter { it.kind == "GUIDED" || it.kind == "CHECK" }.all { it.remediationStepId == rem.id })
-        assertEquals("на́шу сестру́", pack.item("u6-i-possessive-2")!!.answer)
+        assertEquals("на́шу", pack.item("u6-i-possessive-2")!!.answer)
+        assertEquals("на́ша", pack.item("u6-i-possessive-2")!!.promptLetter)
         assertEquals("твоя́", pack.item("u6-i-possessive-3")!!.answer)
     }
 
@@ -620,7 +623,7 @@ class ContentAuditCorrectionTest {
         assertNotEquals("не́кто", pack.item("u24-i-stand-ins-2")!!.answer)
         assertEquals("there is nobody to ask", pack.item("u24-i-stand-ins-2")!!.answer)
         assertEquals("учи́теля", pack.item("u6-i-animacy-1")!!.answer)
-        assertEquals("на́шу сестру́", pack.item("u6-i-possessive-2")!!.answer)
+        assertEquals("на́шу", pack.item("u6-i-possessive-2")!!.answer)
         assertEquals("но́вую", pack.item("u7-i-objectadj-3")!!.answer)
         assertFalse(pack.item("u27-i-comp-2")!!.answer.contains("she had read"))
         assertEquals("to become", pack.item("u16-g-complements-0")!!.answer)

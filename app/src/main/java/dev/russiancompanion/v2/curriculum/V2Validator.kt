@@ -5540,6 +5540,13 @@ internal object V2Validator {
      * Every russian-fact marker is satisfied only by frozen-source provenance: either the marked sentence is wholly
      * covered by frozen-source spans of its unit, or russianFactSources names frozen-source records of that unit for it.
      */
+    private val FACT_STRESS_APOSTROPHE = Regex("(?<=[\\u0400-\\u04FF])'(?!')")
+    private val FACT_FORM = Regex("[\\u0400-\\u04FF][\\u0400-\\u04FF\\u0301]*")
+
+    /** Lower-case Cyrillic word forms of a text; an OpenRussian stress apostrophe becomes a combining acute. */
+    internal fun factWordForms(text: String): Set<String> =
+        FACT_FORM.findAll(FACT_STRESS_APOSTROPHE.replace(text, "́")).map { it.value.lowercase() }.toSet()
+
     internal fun frozenFactSourceErrors(pack: V2CurriculumPack): List<String> {
         val records = pack.provenanceRecords.associateBy { it.itemId }
         val frozenByUnit = pack.provenanceRecords.filter { isFrozenSourceRecord(pack, it) }
@@ -5558,6 +5565,16 @@ internal object V2Validator {
                     val record = records[id]
                     if (record == null || record.unitNumber != unitNumber || !isFrozenSourceRecord(pack, record)) {
                         errors += "russian-fact marker on $owner cites $id, which is not frozen-source provenance of its unit"
+                    }
+                }
+                // T15a-n2 (owner direction 11/15/2026): the cited frozen text must contain every Cyrillic form the
+                // marker shows, compared without stress marks; a form shown with a stress mark needs that stress.
+                if (cited.isNotEmpty()) {
+                    val cover = cited.mapNotNull { records[it]?.originalSourceText }.flatMap { factWordForms(it) }.toSet()
+                    val bare = cover.map { it.replace("́", "") }.toSet()
+                    val missing = factWordForms(fact).filter { form -> form.replace("́", "") !in bare || ('́' in form && form !in cover) }
+                    if (missing.isNotEmpty()) {
+                        errors += "russian-fact marker on $owner shows Cyrillic forms its cited frozen sources do not contain: ${missing.joinToString(", ")} (${fact.take(80)})"
                     }
                 }
             }

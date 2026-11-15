@@ -1,0 +1,174 @@
+{
+  "task": "T15a-n2 (owner decision 11/15/2026)",
+  "rule": "Every run of two or more space-separated Cyrillic words in learner-visible Unit 6 text (unit, sessions, steps, Unit 6 items, their examples and references) must appear verbatim in a frozen file under catalog/sources/: the named line, without wiki or HTML markup, contains the phrase as whole words, stress marks kept, case ignored. Individually attested forms do not attest a phrase built from them.",
+  "replaced": [
+    {
+      "phrase": "на́ша сестра́",
+      "status": "UNATTESTED; replaced by the single forms на́ша and сестра́"
+    },
+    {
+      "phrase": "на́шу сестру́",
+      "status": "UNATTESTED; replaced by the single forms на́шу and сестру́"
+    },
+    {
+      "phrase": "на́шего бра́та",
+      "status": "UNATTESTED; replaced by the single form на́шего"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Коты ненавидят собак",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 53,
+      "shownIn": [
+        "example:ex-u6-object-4:display",
+        "item:u6-i-object-3:promptLetter",
+        "step:u6-st-teach-object-4:body"
+      ]
+    },
+    {
+      "phrase": "Оно на столе",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 15,
+      "shownIn": [
+        "example:ex-u6-direction-3:display",
+        "item:u6-i-direction-3:feedback",
+        "item:u6-i-direction-3:promptLetter",
+        "item:u6-i-direction-3:russianFacts",
+        "step:u6-st-teach-direction-3:body"
+      ]
+    },
+    {
+      "phrase": "Собаки ненавидят котов",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 52,
+      "shownIn": [
+        "example:ex-u6-object-3:display",
+        "item:u6-i-object-2:promptLetter",
+        "step:u6-st-teach-object-3:body"
+      ]
+    },
+    {
+      "phrase": "Я де́лал стул",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 25,
+      "shownIn": [
+        "example:ex-u6-animacy-transfer-chair:display",
+        "item:u6-i-animacy-3:promptLetter",
+        "step:u6-st-rem-animacy:body",
+        "step:u6-st-rem-animacy:russianFacts",
+        "step:u6-st-teach-animacy-6:body"
+      ]
+    },
+    {
+      "phrase": "Я жил в Лондоне",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 15,
+      "shownIn": [
+        "example:ex-u6-direction-1:display",
+        "item:u6-i-direction-1:feedback",
+        "item:u6-i-direction-1:promptLetter",
+        "item:u6-i-direction-1:russianFacts",
+        "step:u6-st-teach-direction-1:body"
+      ]
+    },
+    {
+      "phrase": "Я люблю собак",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 10,
+      "shownIn": [
+        "example:ex-u6-object-0:display",
+        "step:u6-st-rem-object:body",
+        "step:u6-st-rem-object:russianFacts",
+        "step:u6-st-teach-object-1:body",
+        "step:u6-st-teach-object-2:body"
+      ]
+    },
+    {
+      "phrase": "Я люблю тебя",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 6,
+      "shownIn": [
+        "example:ex-u6-object-2:display",
+        "item:u6-g-object-0:feedback",
+        "item:u6-g-object-0:options",
+        "item:u6-g-object-0:promptLetter",
+        "item:u6-g-object-0:russianFacts",
+        "item:u6-i-type-object-order:acceptedAnswers",
+        "item:u6-i-type-object-order:answer",
+        "item:u6-i-type-object-order:feedback",
+        "item:u6-i-type-object-order:russianFacts",
+        "step:u6-st-teach-object-3:body"
+      ]
+    },
+    {
+      "phrase": "Я поехал в музей",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 54,
+      "shownIn": [
+        "example:ex-u6-direction-4:display",
+        "step:u6-st-teach-direction-4:body"
+      ]
+    },
+    {
+      "phrase": "Я тебя люблю",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 6,
+      "shownIn": [
+        "example:ex-u6-object-1:display",
+        "item:u6-g-object-0:answer",
+        "item:u6-g-object-0:feedback",
+        "item:u6-g-object-0:options",
+        "item:u6-g-object-0:russianFacts",
+        "item:u6-i-type-object-order:promptLetter",
+        "step:u6-st-teach-object-1:body"
+      ]
+    },
+    {
+      "phrase": "Я шёл в дом",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 15,
+      "shownIn": [
+        "example:ex-u6-direction-0:display",
+        "item:u6-g-direction-0:feedback",
+        "item:u6-g-direction-0:promptLetter",
+        "item:u6-g-direction-0:russianFacts",
+        "step:u6-st-teach-direction-1:body"
+      ]
+    },
+    {
+      "phrase": "Я шёл на улицу",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 15,
+      "shownIn": [
+        "example:ex-u6-direction-2:display",
+        "item:u6-i-direction-2:feedback",
+        "item:u6-i-direction-2:promptLetter",
+        "item:u6-i-direction-2:russianFacts",
+        "step:u6-st-teach-direction-3:body"
+      ]
+    },
+    {
+      "phrase": "мой стол",
+      "file": "catalog/sources/units-3-5/wikibooks/gender-4310736.txt",
+      "line": 12,
+      "shownIn": [
+        "example:ex-u6-possessive-0:display",
+        "step:u6-st-rem-possessive:body",
+        "step:u6-st-rem-possessive:russianFacts",
+        "step:u6-st-teach-possessive-1:body"
+      ]
+    },
+    {
+      "phrase": "моя собака",
+      "file": "catalog/sources/units-3-5/wikibooks/gender-4310736.txt",
+      "line": 12,
+      "shownIn": [
+        "example:ex-u6-possessive-1:display",
+        "step:u6-st-rem-possessive:body",
+        "step:u6-st-rem-possessive:russianFacts",
+        "step:u6-st-teach-possessive-1:body"
+      ]
+    }
+  ]
+}
