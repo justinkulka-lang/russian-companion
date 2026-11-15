@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "e2086262fd356e655c1ddaf19c0ceeb466a1b76fd819ed30a2e1716f065f5099",
+      "sha256": "7fad56119975b5c143d0119e1a433081f992e3bb6ec0ee5ab701cad3ef5fe424",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3357,6 +3357,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Owner decision 11/14/2026: a russian-fact marker is satisfied only by frozen-source provenance (OpenRussian row cells or Wikibooks spans with verified hashes from licensed sources) named in russianFactSources or covering the sentence verbatim; content-audit coverage records never satisfy a marker. Adds russianFactSources to the canonical item and step forms when present. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T15a-n2",
+      "previousRecordedSha256": "e2086262fd356e655c1ddaf19c0ceeb466a1b76fd819ed30a2e1716f065f5099",
+      "sha256": "7fad56119975b5c143d0119e1a433081f992e3bb6ec0ee5ab701cad3ef5fe424",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Owner direction 11/15/2026: the frozen text cited by a russian-fact marker must contain every Cyrillic word form the marked sentence shows, compared without stress marks, and a form shown with a stress mark must appear with that stress (OpenRussian stress apostrophes read as acute accents). No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

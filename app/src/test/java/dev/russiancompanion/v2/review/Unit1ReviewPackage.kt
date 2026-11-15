@@ -46,6 +46,8 @@ internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b
 internal const val UNIT6_T15A_FACTS_CURRICULUM_COMMIT = "a7d75356dde08bb8172d221f1a69cab25cd10d7b"
 // T15a-n1 Unit 6 frozen fact sources and the shared ref-ca-cases rewording: Units 6-10 bind here; earlier pins stay historical.
 internal const val UNITS_6_10_T15A_N1_CURRICULUM_COMMIT = "4e1b095b977414fc9c5cb338aa74fb13207100d4"
+// T15a-n2 Unit 6 verbatim phrases and frozen-form citations: Units 6-10 bind here (the validator is shared); earlier pins stay historical.
+internal const val UNITS_6_10_T15A_N2_CURRICULUM_COMMIT = "6bc25704502f1e759caa7af50579a70ec87a8e3f"
 
 // T15a Unit 6 (A2-23/24/26): Unit 6 binds here; earlier pins stay historical.
 internal const val UNIT6_T15A_CURRICULUM_COMMIT = "454c1d94c0ba61cb3713269de6c3a49421786128"
@@ -184,7 +186,7 @@ internal const val UNIT5_T15N1_CURRICULUM_COMMIT = "792344b957ad174cebc1e9907411
 
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
     // T15a also rewords the Units 6-10 attribution reference, so Units 7-10 bind to the same commit.
-    if (unitNumber in 6..10) UNITS_6_10_T15A_N1_CURRICULUM_COMMIT
+    if (unitNumber in 6..10) UNITS_6_10_T15A_N2_CURRICULUM_COMMIT
     else if (unitNumber == 6) UNIT6_T15A_FACTS_CURRICULUM_COMMIT
     else if (unitNumber in 7..10) UNIT6_T15A_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNIT5_T15N1_CURRICULUM_COMMIT
