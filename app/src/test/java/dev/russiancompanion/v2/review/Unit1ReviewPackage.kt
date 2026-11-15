@@ -45,7 +45,7 @@ internal const val UNITS_1_5_CURRICULUM_COMMIT = "4a6c21da07b515df226a090cc0ff6b
 // Owner step 7: bind Unit 6 to the retained merged fact-marker source; Units 7-10 keep the upstream pin.
 internal const val UNIT6_T15A_FACTS_CURRICULUM_COMMIT = "a7d75356dde08bb8172d221f1a69cab25cd10d7b"
 // T15a-n1 Unit 6 frozen fact sources and the shared ref-ca-cases rewording: Units 6-10 bind here; earlier pins stay historical.
-internal const val UNITS_6_10_T15A_N1_CURRICULUM_COMMIT = "028dc10030299c8c9622f672241d2eb85e34d51b"
+internal const val UNITS_6_10_T15A_N1_CURRICULUM_COMMIT = "4e1b095b977414fc9c5cb338aa74fb13207100d4"
 
 // T15a Unit 6 (A2-23/24/26): Unit 6 binds here; earlier pins stay historical.
 internal const val UNIT6_T15A_CURRICULUM_COMMIT = "454c1d94c0ba61cb3713269de6c3a49421786128"
