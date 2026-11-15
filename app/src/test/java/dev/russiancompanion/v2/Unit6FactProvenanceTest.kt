@@ -173,7 +173,7 @@ class Unit6FactProvenanceTest {
             assertTrue(path, path.startsWith("catalog/sources/"))
             val all = File(repo(), path).readLines()
             assertTrue("$path:$number", number in 1..all.size)
-            assertTrue("$phrase is not verbatim at $path:$number", attests(all[number - 1], phrase))
+            assertTrue("$phrase is not attested at $path:$number", attests(all[number - 1], phrase))
         }
         // A worked phrase assembled from attested forms is not attested by them.
         val built = "на́шу сестру́"
@@ -220,11 +220,48 @@ class Unit6FactProvenanceTest {
         return strings.flatMap { text -> phraseRegex.findAll(text).map { it.value } }.toSet()
     }
 
-    /** The frozen line, without wiki or HTML markup, contains the phrase as whole words (case-insensitive, stress kept). */
-    private fun attests(line: String, phrase: String): Boolean {
-        val clean = Regex("\\s+").replace(Regex("'{2,}|\\[\\[|\\]\\]").replace(Regex("<[^>]+>").replace(line, " "), ""), " ").lowercase()
-        return Regex("(?<![$cyr\\u0301])${Regex.escape(phrase.lowercase())}(?![$cyr\\u0301])").containsMatchIn(clean)
+    @Test
+    fun phraseAttestationNeedsPhrasePresenceAndFrozenStressEvidence() {
+        // T15a-n3 owner decision: presence is compared without stress marks; each stressed word needs its exact stress in
+        // some frozen row or line. gender-4310736.txt:12 has мой стол unstressed; the OpenRussian мой row
+        // (units-6-10/openrussian/adjectives.csv:8, мо'й) is frozen stress evidence for мо́й.
+        val gender = File(repo(), "catalog/sources/units-3-5/wikibooks/gender-4310736.txt").readLines()[11]
+        assertTrue("мой стол" in gender)
+        val row = File(repo(), "catalog/sources/units-6-10/openrussian/adjectives.csv").readLines()[7]
+        assertTrue("мо́й" in V2Validator.factWordForms(row))
+        assertTrue(attests(gender, "мо́й стол", frozenStressForms))
+        // With no frozen stress evidence for мо́й, the same phrase fails.
+        assertFalse(attests(gender, "мо́й стол", frozenStressForms - "мо́й"))
+        assertTrue(attests(gender, "мой стол"))
+        // ё and е stay distinct: vechera-5336197.txt:723 has мое письмо, which does not attest моё письмо.
+        val vechera = File(repo(), "catalog/sources/units-26-30/wikisource/vechera-5336197.txt").readLines()[722]
+        assertTrue("мое письмо" in vechera)
+        assertTrue(attests(vechera, "мое письмо"))
+        assertFalse(attests(vechera, "моё письмо"))
+        assertTrue(frozenLines().none { attests(it, "моё письмо") })
+        // A phrase absent from every frozen file fails even when each of its words is attested.
+        assertTrue(frozenLines().none { attests(it, "на́шу сестру́") })
     }
+
+    /**
+     * T15a-n3 owner decision (11/15/2026). A shown phrase is attested by a frozen line only if both hold:
+     * (a) presence: after stripping wiki and HTML markup, collapsing whitespace, ignoring case and removing stress marks
+     * (U+0301 and OpenRussian apostrophes), the line contains the phrase as whole words; ё and е stay distinct;
+     * (b) stress: every stressed word of the phrase has that exact stress in some frozen row or line, compared as the B3
+     * marker check compares forms (V2Validator.factWordForms).
+     */
+    private fun attests(line: String, phrase: String, stressForms: Set<String> = frozenStressForms): Boolean {
+        val present = Regex("(?<![$cyr])${Regex.escape(unstressed(phrase))}(?![$cyr])").containsMatchIn(unstressed(line))
+        return present && V2Validator.factWordForms(phrase).filter { '\u0301' in it }.all { it in stressForms }
+    }
+
+    private fun unstressed(text: String): String {
+        val noMarkup = Regex("'{2,}|\\[\\[|\\]\\]").replace(Regex("<[^>]+>").replace(text, " "), "")
+        val stressMarks = Regex("(?<=[$cyr])'(?!')").replace(noMarkup, "\u0301").replace("\u0301", "")
+        return Regex("[\\s\\u00a0\\u2009\\u202f]+").replace(stressMarks, " ").lowercase()
+    }
+
+    private val frozenStressForms: Set<String> by lazy { frozenLines().flatMap { V2Validator.factWordForms(it) }.toSet() }
 
     private fun frozenLines(): List<String> = File(repo(), "catalog/sources").walkTopDown()
         .filter { it.isFile && it.extension in setOf("txt", "csv", "html") }.flatMap { it.readLines() }.toList()

@@ -1,6 +1,6 @@
 {
-  "task": "T15a-n2 (owner decision 11/15/2026)",
-  "rule": "Every run of two or more space-separated Cyrillic words in learner-visible Unit 6 text (unit, sessions, steps, Unit 6 items, their examples and references) must appear verbatim in a frozen file under catalog/sources/: the named line, without wiki or HTML markup, contains the phrase as whole words, stress marks kept, case ignored. Individually attested forms do not attest a phrase built from them.",
+  "task": "T15a-n2; matching rule revised by T15a-n3 (owner decisions 11/15/2026)",
+  "rule": "Every run of two or more space-separated Cyrillic words in learner-visible Unit 6 text (unit, sessions, steps, Unit 6 items, their examples and references) must be attested by a frozen file under catalog/sources/. T15a-n3 (owner decision 11/15/2026): (a) presence: the named line, after stripping wiki and HTML markup, collapsing whitespace, ignoring case and removing stress marks, contains the phrase as whole words, with ё and е kept distinct; (b) stress: every stressed word of the phrase has that exact stress in some frozen row or line (the B3 marker comparison). Individually attested forms do not attest a phrase built from them.",
   "replaced": [
     {
       "phrase": "на́ша сестра́",

@@ -23,7 +23,8 @@ import java.security.MessageDigest
  * catalog/sources/. The app does not ship catalog/sources, so this is a JVM test, not a validator rule.
  *
  * A record that names a licensed (not original-app-text) source must resolve, through the FREEZE.json manifests, to a
- * frozen file at its named revision (the oldid, the retained HTML sha256, or the OpenRussian commit and file). That
+ * frozen file that the manifest binds to that same source ID at the named revision (the oldid, the retained HTML sha256,
+ * or the OpenRussian commit and file); T15a-n3: a revision alone does not select a file for a different source. That
  * file's bytes must match the manifest hash, its originalSourceText must occur verbatim in the file, and the record's
  * sourceHash must equal the hash recomputed from the span found in the file. "readyrussian text extraction" records
  * hold the visible text of the frozen HTML (BatchARemainingSources.htmlVisible), so they are found in that text.
@@ -31,29 +32,64 @@ import java.security.MessageDigest
 class FrozenSourceBindingTest {
     private data class FrozenFile(val file: File, val sha256: String)
 
-    /** Sources with records but no frozen file under catalog/sources/; reported to the owner, Units 21 and 29 only. */
-    private val unfrozenSources = setOf(
-        "src-ruwiki-obosoblenie-144053197",
-        "src-ruwiki-boltraffio-149826784",
-        "src-enwiki-reflexive-pronoun-1374712982",
-    )
+    /**
+     * T15a-n3: the exact records whose source has no frozen file under catalog/sources/ (reported to the owner; Units 21
+     * and 29), each pinned to its source and to the SHA-256 of its originalSourceText. Any other unbound record fails,
+     * including a new record under one of these source IDs, and so does a listed record whose text changes.
+     */
+    private val unfrozenRecords: Map<String, Pair<String, String>> = run {
+        val reflexive = "src-enwiki-reflexive-pronoun-1374712982" to "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50"
+        val obosoblenieAfter = "src-ruwiki-obosoblenie-144053197" to "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d"
+        val obosoblenieCause = "src-ruwiki-obosoblenie-144053197" to "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd"
+        val boltraffio = "src-ruwiki-boltraffio-149826784" to "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf"
+        val obosoblenieTerminal = "src-ruwiki-obosoblenie-144053197" to "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e"
+        listOf("other", "personal", "reflexive", "self").associate { "prov-u21-object-transfer-native-$it" to reflexive } +
+            listOf("head", "region-1", "region-2", "ru").associate { "prov-u29-punctuation-native-after-$it" to obosoblenieAfter } +
+            listOf("head", "region-0", "region-1", "region-2", "ru").associate { "prov-u29-punctuation-native-cause-$it" to obosoblenieCause } +
+            listOf("boundary-bergognone", "head", "list-foppa", "region-0", "region-1", "region-2", "ru")
+                .associate { "prov-u29-punctuation-native-pronoun-$it" to boltraffio } +
+            listOf("head", "region-0", "region-1", "ru").associate { "prov-u29-punctuation-native-terminal-$it" to obosoblenieTerminal }
+    }
 
     @Test
     fun everyRecordNamingAFrozenSourceIsBoundToTheNamedFrozenFile() {
         val pack = pack()
-        val errors = bindingErrors(pack, pack.provenanceRecords)
-        val unbound = errors.filter { it.contains("names no frozen file") }
-        val other = errors - unbound.toSet()
-        assertTrue(other.joinToString("\n"), other.isEmpty())
-        // The only records naming a source with no frozen file belong to the three listed sources, in Units 21 and 29,
-        // and no russian-fact marker cites them. This set may not grow.
-        val unboundRecords = pack.provenanceRecords.filter { record -> unbound.any { it.startsWith(record.itemId + ":") } }
-        assertEquals(unfrozenSources, unboundRecords.map { it.sourceId }.toSet())
-        assertEquals(setOf(21, 29), unboundRecords.map { it.unitNumber }.toSet())
+        assertEquals(24, unfrozenRecords.size)
+        val errors = violations(pack, pack.provenanceRecords)
+        assertTrue(errors.joinToString("\n"), errors.isEmpty())
+        // Every allowlisted record is present, unbound, unchanged, and cited by no russian-fact marker.
+        val listed = pack.provenanceRecords.filter { it.itemId in unfrozenRecords }
+        assertEquals(unfrozenRecords.keys, listed.map { it.itemId }.toSet())
+        assertTrue(bindingErrors(pack, listed).all { it.contains("names no frozen file") })
+        assertEquals(24, bindingErrors(pack, listed).size)
         val cited = (pack.items.flatMap { it.russianFactSources.values.flatten() } +
             pack.units.flatMap { it.sessions }.flatMap { it.steps }.flatMap { it.russianFactSources.values.flatten() }).toSet()
-        assertTrue(unboundRecords.none { it.itemId in cited })
+        assertTrue(listed.none { it.itemId in cited })
         assertTrue(pack.provenanceRecords.count { !isOriginal(pack, it) } > 2000)
+    }
+
+    @Test
+    fun aGenuineRecordRelabelledToAnotherFrozenSourceFails() {
+        val pack = pack()
+        val record = pack.provenanceRecords.first { it.sourceId == "src-wikibooks-russian-cc-by-sa" && it.sourceRevision == "4330404" }
+        assertTrue(violations(pack, listOf(record)).isEmpty())
+        // src-ruwiki-narechie-152437423 is itself frozen, but not at 4330404: the revision alone must not bind it to the
+        // Wikibooks accusative page.
+        assertTrue(pack.sources.any { it.id == "src-ruwiki-narechie-152437423" })
+        val relabelled = record.copy(sourceId = "src-ruwiki-narechie-152437423")
+        assertTrue(violations(pack, listOf(relabelled)).any { it.contains("names no frozen file") })
+    }
+
+    @Test
+    fun aTwentyFifthRecordUnderAnAllowedUnfrozenSourceFails() {
+        val pack = pack()
+        val listed = pack.provenanceRecords.single { it.itemId == "prov-u29-punctuation-native-pronoun-head" }
+        assertTrue(violations(pack, listOf(listed)).isEmpty())
+        val extra = listed.copy(itemId = "prov-u29-punctuation-native-pronoun-extra")
+        assertTrue(violations(pack, listOf(extra)).any { it.contains("names no frozen file") })
+        // A listed record whose text changes no longer matches its pinned hash.
+        val changed = listed.copy(originalSourceText = listed.originalSourceText + " ")
+        assertTrue(violations(pack, listOf(changed)).any { it.contains("names no frozen file") })
     }
 
     @Test
@@ -82,14 +118,25 @@ class FrozenSourceBindingTest {
         assertTrue(bindingErrors(pack, listOf(wrongHash)).any { it.contains("recomputed from the frozen file") })
     }
 
+    /** Binding errors, less the 24 allowlisted unfrozen records, each matched by ID, source and text hash. */
+    private fun violations(pack: V2CurriculumPack, records: List<V2ProvenanceRecord>): List<String> {
+        val byId = records.associateBy { it.itemId }
+        return bindingErrors(pack, records).filterNot { error ->
+            val record = byId.getValue(error.substringBefore(": "))
+            error.contains("names no frozen file") &&
+                unfrozenRecords[record.itemId] == (record.sourceId to sha256(record.originalSourceText))
+        }
+    }
+
     private fun bindingErrors(pack: V2CurriculumPack, records: List<V2ProvenanceRecord>): List<String> {
-        val (byRevision, openRussian) = manifests()
+        val (bySourceRevision, openRussian) = manifests()
         val errors = mutableListOf<String>()
         records.filterNot { isOriginal(pack, it) }.forEach { record ->
             val candidates = if (record.sourceId.startsWith("src-openrussian-")) {
                 val (commit, files) = openRussian
-                if (record.sourceRevision == commit) listOfNotNull(files[record.sourceRecordId.substringBefore(':')]) else emptyList()
-            } else byRevision[record.sourceRevision].orEmpty()
+                if (record.sourceId == "src-openrussian-${commit.take(8)}" && record.sourceRevision == commit)
+                    listOfNotNull(files[record.sourceRecordId.substringBefore(':')]) else emptyList()
+            } else bySourceRevision[record.sourceId to record.sourceRevision].orEmpty()
             if (candidates.isEmpty()) {
                 errors += "${record.itemId}: ${record.sourceId} at ${record.sourceRevision} names no frozen file"
                 return@forEach
@@ -123,29 +170,42 @@ class FrozenSourceBindingTest {
     private fun isOriginal(pack: V2CurriculumPack, record: V2ProvenanceRecord): Boolean =
         pack.sources.single { it.id == record.sourceId }.license in setOf("Original app text", "Public domain writing-system facts")
 
-    /** Revision (oldid or retained HTML sha256) -> frozen files, and the OpenRussian commit with its files by name. */
-    private fun manifests(): Pair<Map<String, List<FrozenFile>>, Pair<String, Map<String, FrozenFile>>> {
-        val byRevision = mutableMapOf<String, MutableSet<FrozenFile>>()
+    /**
+     * (source ID, revision) -> frozen files, and the OpenRussian commit with its files by name. A content entry is bound to
+     * the source ID it names; entries of a manifest's "wikibooks" section that name none are pages of the Wikibooks
+     * Russian book (src-wikibooks-russian-cc-by-sa). License-route pages, OpenRussian rows, decisions and exclusions
+     * are not content files for any source.
+     */
+    private fun manifests(): Pair<Map<Pair<String, String>, List<FrozenFile>>, Pair<String, Map<String, FrozenFile>>> {
+        val bySourceRevision = mutableMapOf<Pair<String, String>, MutableSet<FrozenFile>>()
         var commit = ""
         val openRussian = mutableMapOf<String, FrozenFile>()
-        fun walk(element: JsonElement, base: File) {
+        fun walk(element: JsonElement, base: File, implicitSource: String?) {
             when (element) {
                 is JsonObject -> {
-                    val file = (element["file"] ?: element["path"]) as? JsonPrimitive
+                    val file = element["file"] as? JsonPrimitive
                     val sha = element["sha256"] as? JsonPrimitive
-                    if (file != null && file.isString && sha != null) {
-                        val key = (element["oldid"] as? JsonPrimitive)?.content ?: sha.content
-                        byRevision.getOrPut(key) { mutableSetOf() } += FrozenFile(File(base, file.content).canonicalFile, sha.content)
+                    val source = (element["sourceId"] as? JsonPrimitive)?.content ?: implicitSource
+                    if (file != null && file.isString && sha != null && source != null) {
+                        val revision = (element["oldid"] as? JsonPrimitive)?.content ?: sha.content
+                        bySourceRevision.getOrPut(source to revision) { mutableSetOf() } +=
+                            FrozenFile(File(base, file.content).canonicalFile, sha.content)
                     }
-                    element.values.forEach { walk(it, base) }
+                    element.values.forEach { walk(it, base, implicitSource) }
                 }
-                is JsonArray -> element.forEach { walk(it, base) }
+                is JsonArray -> element.forEach { walk(it, base, implicitSource) }
                 else -> Unit
             }
         }
         File(repo(), "catalog/sources").listFiles()!!.mapNotNull { File(it, "FREEZE.json").takeIf(File::isFile) }.forEach { manifest ->
             val json = Json.parseToJsonElement(manifest.readText())
-            walk(json, manifest.parentFile)
+            json.jsonObject.forEach { (section, value) ->
+                when (section) {
+                    "license", "openrussian", "decisions", "excluded", "retrieved" -> Unit
+                    "wikibooks" -> walk(value, manifest.parentFile, WIKIBOOKS_BOOK_SOURCE)
+                    else -> walk(value, manifest.parentFile, null)
+                }
+            }
             json.jsonObject["openrussian"]?.jsonObject?.let { block ->
                 commit = block.getValue("commit").jsonPrimitive.content
                 block.getValue("files").jsonObject.forEach { (name, value) ->
@@ -156,7 +216,11 @@ class FrozenSourceBindingTest {
             }
         }
         assertTrue(commit.isNotEmpty())
-        return byRevision.mapValues { it.value.toList() } to (commit to openRussian)
+        return bySourceRevision.mapValues { it.value.toList() } to (commit to openRussian)
+    }
+
+    private companion object {
+        const val WIKIBOOKS_BOOK_SOURCE = "src-wikibooks-russian-cc-by-sa"
     }
 
     private fun frozenTexts(): List<String> = File(repo(), "catalog/sources").walkTopDown()
