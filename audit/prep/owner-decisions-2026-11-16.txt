@@ -1,0 +1,18 @@
+Owner decisions, 11/16/2026 (Justin). Approved: yes to all four.
+
+D1. Unit 17: the validator may change the six count questions that currently require "two-hour row" wording, so they check the meaning instead of the layout. Make this change only inside the Unit 17 task. Report the new validator hash.
+
+D2. Unit 19: the validator may change how the probability capability is bound (currently W:39-41), so the questions can add competing meanings from frozen sources. Make this change only inside the Unit 19 task. Report the new binding.
+
+D3. Add these pages to the S1 source intake, alongside the 4 Units 12-14 pages and the 3 Unit 21/29 pages:
+  - Wiktionary "под"
+  - ReadyRussian "Grammar 24 - Capitalization". Freeze only the parts marked CC BY-SA. If no licence marking can be confirmed, do not freeze it; report it instead.
+  - Wikipedia (ru) "Сослагательное наклонение"
+  - Wiktionary "бы"
+  For each page, record the oldid or revision ID and add a FREEZE.json, following the existing intake pattern.
+
+D4. Unit 15: accept the gap on aspect in requests (imperatives) as directed by the book. Record it as a documented gap. No new content is needed for it.
+
+Also approved: the Unit 20 typed-check expansion. Updating the checked-item list in catalog/content-checks.json is a data update and is allowed. The six pinned directionality tuples must be kept.
+
+Coordinator note: the phrase-matcher fix task now also covers the bold-prefix stress bug. In catalog/units_3_5_intake.py:196, the formatter reads a bold vowel inside a word as a stress mark (Unit 20, G:1383: у́летят should be улетят / улетя́т). Before T17, scan every unit for the same misreading.

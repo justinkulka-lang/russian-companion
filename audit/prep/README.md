@@ -11,4 +11,5 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - unit-18-prep-at-20bfde5c.txt: Unit 18 (T17), report 1 of 3 for Units 18-20.
 - unit-19-prep-at-20bfde5c.txt: Unit 19 (T17), report 2 of 3. Note: phrase matcher piped-link bug; probability capability binding constraint; intake candidates Wikipedia "Сослагательное наклонение" and Wiktionary "бы".
 - unit-20-prep-at-20bfde5c.txt: Unit 20 (T17), report 3 of 3. Note: the one failing phrase is a stress-extraction bug (bold prefix у read as stress in "улетят", G:1383), not the piped-link bug; fix the formatter selection in units_16_20_batch_a.py without discarding real stress. Adding typed checks needs the catalog/content-checks.json checked-list pin updated.
+- owner-decisions-2026-11-16.txt: owner decisions D1-D4 (Unit 17 and Unit 19 validator changes, S1 additions, Unit 15 gap) and the scope of the phrase-matcher plus stress-extraction fix.
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
