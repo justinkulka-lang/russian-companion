@@ -1,0 +1,72 @@
+{
+ "task": "T15c (Claude Code, owner direction 11/16/2026)",
+ "rule": "Every run of two or more space-separated Cyrillic words in learner-visible Unit 8 text (unit, sessions, steps, Unit 8 items, their examples and references) must pass the T15a-n3 two-part rule: (a) presence: the named frozen line, after stripping wiki and HTML markup, collapsing whitespace, ignoring case and removing stress marks, contains the phrase as whole words, with ё and е kept distinct; (b) stress: every stressed word of the phrase has that exact stress in some frozen row or line (the B3 marker comparison). Individually attested forms do not attest a phrase built from them.",
+ "phrases": [
+  {
+   "phrase": "В Москве́ есть ста́рые зда́ния",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 51,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
+  },
+  {
+   "phrase": "На э́той у́лице есть францу́зы",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 50,
+   "shownIn": [
+    "example:ex-u8-availability-0:display",
+    "item:u8-g-availability-0:promptLetter",
+    "item:u8-i-availability-2:feedback",
+    "item:u8-i-availability-2:promptLetter",
+    "item:u8-i-availability-2:russianFacts",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-1:body"
+   ]
+  },
+  {
+   "phrase": "пять столов",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 99,
+   "shownIn": [
+    "example:ex-u8-irregular-0:display",
+    "step:u8-st-rem-irregular:body",
+    "step:u8-st-rem-irregular:russianFacts",
+    "step:u8-st-teach-irregular-1:body",
+    "step:u8-st-teach-irregular-2:body"
+   ]
+  },
+  {
+   "phrase": "синие книги",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 21,
+   "shownIn": [
+    "example:ex-u8-agreement-0:display",
+    "item:u8-i-agreement-3:feedback",
+    "item:u8-i-agreement-3:russianFacts",
+    "step:u8-st-rem-agreement:body",
+    "step:u8-st-rem-agreement:russianFacts",
+    "step:u8-st-teach-agreement-1:body",
+    "step:u8-st-teach-agreement-2:body",
+    "step:u8-st-teach-agreement-6:body"
+   ]
+  },
+  {
+   "phrase": "хорошее письмо",
+   "file": "catalog/sources/units-3-5/wikibooks/nominative-4213267.txt",
+   "line": 93,
+   "shownIn": [
+    "example:ex-u8-spelling-0:display",
+    "step:u8-st-rem-spelling:body",
+    "step:u8-st-rem-spelling:russianFacts",
+    "step:u8-st-teach-spelling-1:body"
+   ]
+  }
+ ]
+}

@@ -325,7 +325,9 @@ class ContentAuditCorrectionTest {
         assertTrue(text.contains("дни is also plural nominative and means days"))
         assertTrue(text.contains("и does not follow a letter in the seven-letter set"))
         assertTrue(text.contains("Not every plural ending in и comes from the seven-letter rule"))
-        assertTrue(text.contains("All these options are correctly spelled"))
+        // T15c: inventory entry 847 (assessment commentary) is reworded to an instruction.
+        assertFalse(text.contains("All these options are correctly spelled"))
+        assertTrue(text.contains("Choose the requested form."))
         assertEquals(18, unit.advancement!!.minimumDistinctChecks)
     }
 

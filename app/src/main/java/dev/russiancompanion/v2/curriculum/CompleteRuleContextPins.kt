@@ -70,7 +70,9 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u17-g-question-apple" to "9231fda6efc41c119d4d7a461fe3ceaf05624ea22d46932db105c24d1deb95c8",
         "ca-rule-context:u17-i-question-clock" to "1e08ca44ff016f4e586fce390cd4179327551136457884e4ba631968921554d5",
         "ca-rule-context:u17-i-question-book" to "2e97b3bb0ea7fe5acd37c9de42693036da3c226ca2348af65f4ef27d9737ea61",
-        "ca-rule-context:u8-i-agreement-3" to "c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0",
+        // T15c, owner decision 11/16/2026: re-pinned for the A2-24 third option, the OpenRussian feminine singular
+        // nominative cell of the same adjective row (was c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0).
+        "ca-rule-context:u8-i-agreement-3" to "4a541c59e2211af5de2dc25b7e65c6d4cb306fed5b4ae0d2a51beef04c8ec191",
         "ca-rule-context:u9-i-odindva-4" to "0315d56ca1515ed2adec087f8fbaea9c4f2de720bef39caecaea3a2870e4a44b",
         "ca-rule-context:u21-i-object-reference-2" to "79cfe271dbde889ae4299b784c697f533b8b7f98a24076a73db60071a8f17480",
         "ca-rule-context:u24-g-context-subject-focus" to "7a075170a10d222fa2221ec794f0f5b0bf69a647ecd0c9202e8a3a5683642bef",

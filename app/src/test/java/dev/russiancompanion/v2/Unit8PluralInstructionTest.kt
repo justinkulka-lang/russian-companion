@@ -20,13 +20,16 @@ class Unit8PluralInstructionTest {
  @Test fun everyPluralCardPrecedesPracticeAndFullRemediationRestoresFourteenForms() {
   val p=pack();val s=p.unit(8)!!.sessions.single{it.id=="u8-s-plural"};val t=s.steps.filter{it.kind=="TEACH"};val rem=s.steps.single{it.kind=="REMEDIATE"}
   assertEquals(8,t.size);assertEquals(8,s.steps.takeWhile{it.kind!="GUIDED"}.count{it.kind=="TEACH"});assertEquals(t.joinToString("\n\n"){it.body},rem.body);assertEquals(t.flatMap{it.exampleIds}.distinct(),rem.exampleIds);assertEquals(14,rem.exampleIds.size)
-  assertTrue(rem.body.contains("dictionary labels, not plural English translations"));assertTrue(rem.body.contains("retains its dictionary gender"));assertTrue(rem.body.contains("not establish an unrestricted productive plural algorithm"))
+  // T15c: the dictionary-label commentary (inventory entry 791) is removed and the algorithm-scope claim (812) is
+  // reworded to an instruction; the gender teaching (793) is kept and marked.
+  assertFalse(rem.body.contains("dictionary labels, not plural English translations"));assertTrue(rem.body.contains("retains its dictionary gender"));assertFalse(rem.body.contains("not establish an unrestricted productive plural algorithm"));assertTrue(rem.body.contains("Review these seven pairs."))
+  assertTrue("retains its dictionary gender" in rem.russianFacts.single{it.startsWith("Each noun retains its dictionary gender")})
  }
  @Test fun earlierSevenAnswerPluralCompletionCannotCreditLaterSpellingReinforcement() {
   val p=pack();val u=p.unit(8)!!;assertTrue(u.sessions.indexOfFirst{it.id=="u8-s-plural"}<u.sessions.indexOfFirst{it.id=="u8-s-spelling"});val o=objective(p,"plural")
   assertEquals(p.item("u8-i-plural-6")!!.promptLetter,p.item("u8-g-spelling-0")!!.promptLetter)
   LocalStore.openInMemory(context()).use { store ->
-   record(p,store,o.practiceStepIds.flatMap{p.step(it)!!.second.itemIds}+o.checkItemIds);assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),p));assertEquals(7,creditItemIds(p,store.v2LearnerView()).size)
+   record(p,store,o.practiceStepIds.flatMap{p.step(it)!!.second.itemIds}+o.checkItemIds);assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),p));assertEquals(13,creditItemIds(p,store.v2LearnerView()).size) /* T15c: 1 guided + 6 closed + 6 typed plural checks */
    assertFalse("u8-g-spelling-0" in creditItemIds(p,store.v2LearnerView()));assertTrue(objective(p,"spelling").checkItemIds.none{it in creditItemIds(p,store.v2LearnerView())});assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(objective(p,"spelling"),store.v2LearnerView(),p))
   }
  }
