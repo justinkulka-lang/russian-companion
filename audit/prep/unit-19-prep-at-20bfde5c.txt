@@ -1,0 +1,181 @@
+**Unit 19 — report 2 of 3**
+
+Read-only preparation at **`20bfde5c7e6648986ee908b1b68bda6d4d8bd6e8`**, the same snapshot as Unit 18. No tracked files changed; nothing committed or pushed.
+
+**Frozen-source aliases**
+
+All paths are under `catalog/sources/`.
+
+| Alias | Frozen file |
+|---|---|
+| G | `units-26-30/wikipedia/russian-grammar-1369617627.txt` |
+| VA | `units-11-15/wikibooks/verbal-aspect-4059032.txt` |
+| L | `units-16-20/wikibooks/lesson3-4460699.txt` |
+| W | `units-16-20/wiktionary/dolzhen-84965088.txt` |
+| V | `units-3-5/openrussian/verbs.csv` |
+| N | `units-3-5/openrussian/nouns.csv` |
+| MOR | `units-21-25/supplemental/morfologiya-148939075.txt` |
+
+**1. A2-24 items**
+
+Kotlin diagnostics report:
+
+- **8** exact-key teaching exposures;
+- **3** label/position findings;
+- **0** shown-cue-only findings;
+- **2** additional fewer-than-three-options findings.
+
+Every required item below has an exact-key exposure. Move independent checks into later retrieval sessions, preserving their teaching.
+
+| Item ID | Additional flag | Fix candidate and frozen evidence |
+|---|---|---|
+| `u19-i-prefix-caution-1` | — | Preserve the meaning contrast; move retrieval later. VA:23,25 supplies agreeing, dissuading and doing. |
+| `u19-i-prefix-caution-2` | — | Preserve the aspect-partner check; remove the teaching’s answer-selection script. VA:25,27; V:5440,5917 confirms the pair. |
+| `u19-i-conditional-1` | — | Move later; remove the selection script naming the feminine answer. G:1215 supplies the contrasted forms and speaker descriptions. |
+| `u19-i-conditional-2` | — | Move later; retain the distinction between first-person reference and feminine agreement. G:1215. |
+| `u19-i-obligation-1` | Label/position | Ask “Which subject matches the shown agreement form?” Use feminine, neuter and plural subject descriptions, replacing the competing phrase translation. L:723 supplies all three. |
+| `u19-i-obligation-2` | Label/position | Same semantic agreement question and parallel alternatives. L:723. |
+| `u19-i-probability-1` | Two options | Keep the eclipse translation as key. Replace the dictionary-description distractor with the employee translation from W:38; add the debt-sentence translation from W:35. W:41 supplies the key. Binding constraint: section 8. |
+| `u19-i-probability-2` | Label/position; two options | Ask “What does the adjective express in this sentence?” Use **obligation / likelihood / indebtedness** from W:36,39,33. Introduce the third sense before practice. |
+
+For the conditional checks, competing agreement descriptions would be stronger than mixing agreement labels with a whole-sentence translation. MOR:903–906 supplies the conditional agreement framework.
+
+The guided item `u19-g-probability-0` also has two options. It is outside the required-item counts above and has a specially constrained source relationship.
+
+**2. A2-23 and typed candidates**
+
+Current: **8 checked, 0 typed**.
+
+Retain all eight closed checks and add **12 typed checks**: **20 checked, 12 typed, 60% typed**.
+
+All twelve keys below match their cited frozen text character for character.
+
+| Typed-key candidate | Frozen citation | Exact stress result |
+|---|---|---|
+| отговорить | VA:25 | PASS; preserve unstressed spelling |
+| отговаривать | VA:25 | PASS; preserve unstressed spelling |
+| договориться | VA:25 | PASS; preserve unstressed spelling |
+| написать | VA:23 | PASS; preserve unstressed spelling |
+| сделать | VA:23 | PASS; preserve unstressed spelling |
+| я спал бы | G:1215 | PASS |
+| я спала́ бы | G:1215 | PASS |
+| я бы поспа́л | G:1215 | PASS |
+| я бы поспала́ | G:1215 | PASS |
+| должна | L:723 | PASS; preserve unstressed spelling |
+| должно | L:723 | PASS; preserve unstressed spelling |
+| должны | L:723 | PASS; preserve unstressed spelling |
+
+All are already displayed in teaching. No invented forms or new Russian phrases are needed.
+
+**Teaching needed first:** add bounded production practice for the five verbs, the four complete conditional expressions and the three obligation-agreement forms. The current explanations principally prepare recognition. For conditional phrase recall, specify the particular taught construction rather than treating the two constructions as interchangeable aspect variants.
+
+Keep production teaching and guided practice in earlier sessions; accepted keys must not appear in the retrieval session. Do not add stress or accepted variants without separate frozen evidence.
+
+**3. English-only fact inventory**
+
+Scope: every English-only Unit 19 entry in `audit/T15-n0-unmarked-russian-facts.csv`: **67 entries, 64 distinct sentences**.
+
+Recommended totals: **58 MARK, 2 REWORD, 5 REMOVE, 0 PENDING-S1, 2 PENDING-INTAKE**.
+
+MARK means retain the supported claim, remove provenance narration, and bind the final sentence to frozen evidence. It does not preserve words such as “retained source.”
+
+| CSV lines | MARK evidence |
+|---|---|
+| 2195–2215, except 2202 and 2209 | Verb meanings, lexical changes and aspect partnerships: VA:23–29; V:567,5440,5917. |
+| 2218–2241, except 2225,2227,2229,2234 | Conditional examples, agreement and hypothetical/wish interpretations: G:1215; past agreement: L:580–582; conditional formation: MOR:901,903. |
+| 2242–2263 | Obligation meanings and agreement: L:723; obligation versus likelihood: W:36–41; nominative subject: G:17–18; infinitive categories: MOR:838. |
+| 2264–2284, except 2279–2281 | Likelihood and obligation examples: W:36–41; agreement forms: L:723; eclipse noun gender: N:7748. |
+
+| CSV lines | Other disposition |
+|---|---|
+| 2209 | **REWORD:** “Read the question, then review the verb meanings above.” This is an instruction rather than a Russian fact. |
+| 2227 | **REWORD:** “Review the agreement examples before retrying.” Remove the answer-selection script. |
+| 2202 | **REMOVE:** “The retained source explicitly identifies this pair.” Keep the actual pair explanation and its provenance instead. |
+| 2229 | **REMOVE:** commentary distinguishing two kinds of assessment question. |
+| 2279–2281 | **REMOVE:** obsolete dictionary-description distractor explanation when probability-1 receives competing complete translations. Keep the likelihood definition in teaching with W:39 provenance. |
+| 2225 | **PENDING-INTAKE:** “Context supplies the time reference.” Needed page: **Wikipedia, “Сослагательное наклонение”**, with explicit support for temporal interpretation. The frozen examples alone do not establish that general rule. |
+| 2234 | **PENDING-INTAKE:** “It cannot begin its clause.” Needed page: **Wiktionary, “бы”**, with explicit placement usage notes. No supporting frozen statement found. |
+
+The two pending entries belong to `u19-st-rem-conditional`; their teaching repetitions also require resolution.
+
+CSV fragments such as lines 2268 and 2274 must be reunited with their original complete sentences before marking. Coverage records cannot support markers alone.
+
+**4. Teaching errors and qualifications**
+
+- **Conditional formation:** G:1215’s description of particle placement is too restrictive if read as a universal rule. MOR:903 explicitly gives placements before and after the verb. Teach those attested constructions without deriving a universal placement rule from them.
+- **Clause-initial prohibition:** the current “cannot begin its clause” sentence lacks frozen support. This is the pending placement claim above.
+- **Aspect distinction:** the two conditional constructions in G:1215 use different verbs/aspects as well as different particle positions. Do not describe the difference as word order alone or teach free substitution.
+- **Prefix teaching:** VA:25 supports the warning that prefixes can change lexical meaning. Avoid extending VA:20’s broad claims into a rule that every verb has a predictable aspect partner. V:3,6 also shows the speaking pair is not a universal one-to-one mapping.
+- **Obligation forms:** L:723 supplies agreement descriptions, not literal translations of each isolated form. Retain that distinction while replacing layout-style questions.
+- **Likelihood:** W:36 and W:39 both permit English *should*. Teach the complete example and its intended sense; *should* by itself does not distinguish obligation from likelihood.
+
+**5. A2-26 lint**
+
+Counts are owner-field hits.
+
+| Category | Hits |
+|---|---:|
+| Governance | **21**, across 19 owners |
+| Markup | **0** |
+| Narration | **2** |
+
+Governance owners:
+
+- `ref-u19-wiktionary-attribution` — summary and detail;
+- `u19-g-obligation-0`;
+- `u19-i-obligation-1–2`, `u19-i-prefix-caution-2`;
+- `u19-s-orient`;
+- `u19-st-orient` — title and body;
+- `u19-st-rem-{conditional,obligation,prefix-caution,probability}`;
+- `u19-st-teach-conditional-2–3`;
+- `u19-st-teach-obligation-1–3`;
+- `u19-st-teach-prefix-caution-2`;
+- `u19-st-teach-probability-1`;
+- `unit-19`.
+
+Narration owners: `u19-st-rem-probability`, `u19-st-teach-probability-2`.
+
+**6. Phrases: presence, stress and the two failures**
+
+The existing phrase matcher reports **5 PASS / 2 UNATTESTED**, with **no missing frozen stress evidence**.
+
+The five passes are the four conditional phrases at G:1215 and `я должен`.
+
+Both flagged sentences are already frozen Wiktionary examples:
+
+| Flagged phrase | Frozen evidence and replacement finding |
+|---|---|
+| Затме́ние должно́ наступи́ть в три часа́ | **W:41.** Standard Wiktionary link rendering produces the existing complete sentence, including every stress mark. Retain that sourced wording if the matcher is corrected. No different complete equivalent passing the unchanged matcher was found. |
+| Слу́жащие должны́ во́время явля́ться на рабо́ту | **W:38.** Rendering likewise produces the existing complete sentence exactly. Retain that sourced wording if the matcher is corrected. No different complete equivalent passing the unchanged matcher was found. |
+
+The problem is the matcher’s treatment of piped links. For example, `[[час|часа́]]` must render as its displayed label; removing only the brackets leaves `час|часа́`.
+
+Read-only extraction probes returned exact display-text matches for **both sentences**, including punctuation and stress. Their current matcher failures remain unresolved until proper link rendering is tested. No replacement assembled from separately attested words is needed.
+
+**7. Shared references**
+
+- `ref-u1620-attribution` is shared with **Units 16, 18 and 20**.
+- `ref-u19-wiktionary-attribution` is linked only by Unit 19.
+
+**8. Validator constraints**
+
+There is no Unit 17-style mandatory “row” wording blocking the semantic prompt rewrites.
+
+There is, however, a **probability source-binding constraint**:
+
+- The existing explicit-pair path requires participants to share the governed frozen span: [V2Validator.kt:3352](/tmp/codex-prep1820/app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt:3352).
+- The probability capability is admitted specifically against **W:39–41**.
+- Its check chain requires an independent, structurally valid check containing that exact source anchor: [V2Validator.kt:2260](/tmp/codex-prep1820/app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt:2260).
+
+An isolated probe using the broader **W:33–41** span returned:
+
+```text
+u19-i-probability-1 classify=RULE_CLASSIFIES_SOURCE_EXAMPLE
+u19-i-probability-2 classify=RULE_CLASSIFIES_SOURCE_EXAMPLE
+```
+
+That confirms the proposed three-way contrasts can be classified. **It does not establish a complete passing fix:** rebinding both checks to the broader span removes the existing capability’s exact anchor.
+
+The implementer needs a reviewed binding extension that preserves the likelihood evidence while allowing competing meanings from the same frozen revision. Simply appending an option, changing the admitted span, or dropping the capability check is insufficient. The phrase matcher’s piped-link handling also needs correction.
+
+**Feasibility: YES for sourced A2-23 material — 20 checked/12 typed; PENDING-S1 0, PENDING-INTAKE 2. Blockers before completion: resolve the two conditional claims, correct phrase-link rendering, and preserve the probability capability while repairing its option sets.**
