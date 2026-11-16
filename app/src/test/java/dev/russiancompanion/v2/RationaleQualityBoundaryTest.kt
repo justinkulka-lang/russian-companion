@@ -23,9 +23,13 @@ class RationaleQualityBoundaryTest {
     }
 
     @Test fun differentShownFormMustNotBePresentedAsTheDisplayedCue() {
-        val item = pack.item("u7-g-adverb-0")!!
-        val wrong = item.options.first { it != item.answer }
+        // T15b rewrote the live u7-g-adverb-0 rationales; the boundary keeps the retired pair-frame rationale as a fixture.
+        val live = pack.item("u7-g-adverb-0")!!
+        val wrong = live.options.first { it != live.answer }
+        val retired = "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\")."
+        val item = live.copy(distractorRationales = live.options.map { if (it == wrong) retired else "" })
         val rationale = item.distractorRationales[item.options.indexOf(wrong)]
+        assertEquals(live.distractorRationales[live.options.indexOf(wrong)], selectedWrongOptionRationale(live, wrong))
         assertTrue(rationale.contains("pairs the shown form"))
         assertFalse(rationale.contains("\"${item.promptLetter}\""))
         assertNull(selectedWrongOptionRationale(item, wrong))

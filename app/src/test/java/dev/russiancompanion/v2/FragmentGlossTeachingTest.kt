@@ -25,7 +25,8 @@ class FragmentGlossTeachingTest {
         }
         assertEquals("Obsolete whole-sentence meanings on displayed fragments", emptyList<String>(), bad)
         assertTrue(p.step("u7-st-teach-objectadj-3")!!.second.body.contains("accusative or genitive"))
-        assertTrue(p.step("u7-st-teach-objectadj-3")!!.second.body.contains("not a complete sentence"))
+        // T15b: the fragment analysis no frozen source states is reworded to an instruction.
+        assertTrue(p.step("u7-st-teach-objectadj-3")!!.second.body.contains("not as a complete sentence"))
         assertTrue(p.step("u10-st-teach-animate-1")!!.second.body.contains("nominative plural"))
         assertTrue(p.step("u10-st-teach-animate-1")!!.second.body.contains("no predicate"))
         assertTrue(p.step("u10-st-teach-animate-2")!!.second.body.contains("only the noun phrases"))

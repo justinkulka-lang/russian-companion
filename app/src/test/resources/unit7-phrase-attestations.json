@@ -1,0 +1,301 @@
+{
+ "task": "T15b (Claude Code, owner direction 11/16/2026)",
+ "rule": "Every run of two or more space-separated Cyrillic words in learner-visible Unit 7 text (unit, sessions, steps, Unit 7 items, their examples and references) must pass the T15a-n3 two-part rule: (a) presence: the named frozen line, after stripping wiki and HTML markup, collapsing whitespace, ignoring case and removing stress marks, contains the phrase as whole words, with ё and е kept distinct; (b) stress: every stressed word of the phrase has that exact stress in some frozen row or line (the B3 marker comparison). Individually attested forms do not attest a phrase built from them.",
+ "replaced": [
+  {
+   "phrase": "Она говорит быстро",
+   "status": "UNATTESTED (T15a-n3); replaced by the adverb быстро alone (u7-i-manner-2 cue, ex-u7-manner-1)"
+  },
+  {
+   "phrase": "но́вого друга",
+   "status": "UNATTESTED (T15a-n3); replaced by single forms; u7-g-endings-0 now uses си́няя → си́нюю"
+  },
+  {
+   "phrase": "но́вого окна",
+   "status": "UNATTESTED (T15a-n3); replaced by the single forms но́вого and окна́ (u7-i-endings-1, endings teaching)"
+  },
+  {
+   "phrase": "но́вое окно",
+   "status": "UNATTESTED (T15a-n3); replaced by the single forms но́вое and окно́"
+  },
+  {
+   "phrase": "но́вую книгу",
+   "status": "UNATTESTED (T15a-n3); replaced by the single forms но́вую and кни́гу"
+  },
+  {
+   "phrase": "но́вый дом",
+   "status": "UNATTESTED (T15a-n3); replaced by the single form но́вый"
+  },
+  {
+   "phrase": "хоро́шая книга",
+   "status": "UNATTESTED (T15a-n3); replaced by the single forms хоро́шая and кни́га (u7-i-spelling-3, spelling teaching)"
+  },
+  {
+   "phrase": "хоро́шего друга",
+   "status": "UNATTESTED (T15a-n3); replaced by the single form хоро́шего"
+  },
+  {
+   "phrase": "хоро́шую книгу",
+   "status": "UNATTESTED (T15a-n3); replaced by the single forms хоро́шую and кни́гу"
+  }
+ ],
+ "phrases": [
+  {
+   "phrase": "Моя русская кошка любит мою новую собаку",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 33,
+   "shownIn": [
+    "example:ex-u7-objectadj-2:display",
+    "step:u7-st-rem-objectadj:body",
+    "step:u7-st-rem-objectadj:russianFacts",
+    "step:u7-st-teach-objectadj-3:body"
+   ]
+  },
+  {
+   "phrase": "Они были в старой русской школе",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 111,
+   "shownIn": [
+    "example:ex-u7-place-1:display",
+    "step:u7-st-teach-place-1:body"
+   ]
+  },
+  {
+   "phrase": "Они говорили о хорошем новом кино",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 109,
+   "shownIn": [
+    "example:ex-u7-place-0:display",
+    "step:u7-st-rem-place:body",
+    "step:u7-st-rem-place:russianFacts",
+    "step:u7-st-teach-place-1:body",
+    "step:u7-st-teach-place-2:body"
+   ]
+  },
+  {
+   "phrase": "Я хочу нового кролика",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 31,
+   "shownIn": [
+    "example:ex-u7-objectadj-1:display",
+    "step:u7-st-rem-objectadj:body",
+    "step:u7-st-rem-objectadj:russianFacts",
+    "step:u7-st-teach-objectadj-1:body",
+    "step:u7-st-teach-objectadj-2:body"
+   ]
+  },
+  {
+   "phrase": "Я хочу новый стул и новое письмо",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 31,
+   "shownIn": [
+    "example:ex-u7-objectadj-0:display",
+    "step:u7-st-rem-objectadj:body",
+    "step:u7-st-rem-objectadj:russianFacts",
+    "step:u7-st-teach-objectadj-1:body"
+   ]
+  },
+  {
+   "phrase": "Я хочу́ жить в чи́стом но́вом го́роде",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 123,
+   "shownIn": [
+    "example:ex-u7-place-2:display",
+    "step:u7-st-teach-place-3:body"
+   ]
+  },
+  {
+   "phrase": "не изменяются по родам и числам",
+   "file": "catalog/sources/units-6-10/ruwiki/narechie-152437423.txt",
+   "line": 8,
+   "shownIn": [
+    "step:u7-st-rem-adverb-invariance:body",
+    "step:u7-st-rem-adverb-invariance:russianFacts",
+    "step:u7-st-teach-adverb-invariance-2:body"
+   ]
+  },
+  {
+   "phrase": "не имеют окончаний",
+   "file": "catalog/sources/units-6-10/ruwiki/narechie-152437423.txt",
+   "line": 8,
+   "shownIn": [
+    "item:u7-i-adverb-invariance-2:distractorRationales",
+    "item:u7-i-adverb-invariance-2:options",
+    "item:u7-i-adverb-invariance-2:russianFacts",
+    "step:u7-st-rem-adverb-invariance:body",
+    "step:u7-st-rem-adverb-invariance:russianFacts",
+    "step:u7-st-teach-adverb-invariance-2:body"
+   ]
+  },
+  {
+   "phrase": "не склоняются",
+   "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+   "line": 331,
+   "shownIn": [
+    "item:u7-g-adverb-invariance-0:distractorRationales",
+    "item:u7-g-adverb-invariance-0:options",
+    "item:u7-g-adverb-invariance-0:russianFacts"
+   ]
+  },
+  {
+   "phrase": "не спрягаются",
+   "file": "catalog/sources/units-6-10/ruwiki/narechie-152437423.txt",
+   "line": 8,
+   "shownIn": [
+    "item:u7-i-adverb-invariance-1:distractorRationales",
+    "item:u7-i-adverb-invariance-1:options",
+    "item:u7-i-adverb-invariance-1:russianFacts"
+   ]
+  },
+  {
+   "phrase": "неизменяемые слова",
+   "file": "catalog/sources/units-6-10/ruwiki/narechie-152437423.txt",
+   "line": 8,
+   "shownIn": [
+    "example:ex-u7-adverb-invariance-0:note",
+    "example:ex-u7-adverb-invariance-1:note",
+    "item:u7-g-adverb-invariance-0:answer",
+    "item:u7-g-adverb-invariance-0:feedback",
+    "item:u7-g-adverb-invariance-0:options",
+    "item:u7-g-adverb-invariance-0:russianFacts",
+    "item:u7-i-adverb-invariance-1:answer",
+    "item:u7-i-adverb-invariance-1:feedback",
+    "item:u7-i-adverb-invariance-1:options",
+    "item:u7-i-adverb-invariance-1:russianFacts",
+    "item:u7-i-adverb-invariance-2:answer",
+    "item:u7-i-adverb-invariance-2:feedback",
+    "item:u7-i-adverb-invariance-2:options",
+    "item:u7-i-adverb-invariance-2:russianFacts",
+    "step:u7-st-rem-adverb-invariance:body",
+    "step:u7-st-rem-adverb-invariance:russianFacts",
+    "step:u7-st-teach-adverb-invariance-1:body",
+    "step:u7-st-teach-adverb-invariance-2:body"
+   ]
+  },
+  {
+   "phrase": "новая машина",
+   "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+   "line": 502,
+   "shownIn": [
+    "example:ex-u7-endings-1:display",
+    "item:u7-i-endings-4:feedback",
+    "item:u7-i-endings-4:russianFacts",
+    "step:u7-st-rem-endings:body",
+    "step:u7-st-rem-endings:russianFacts",
+    "step:u7-st-teach-endings-1:body",
+    "step:u7-st-teach-endings-7:body"
+   ]
+  },
+  {
+   "phrase": "новое платье",
+   "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+   "line": 504,
+   "shownIn": [
+    "example:ex-u7-endings-2:display",
+    "step:u7-st-rem-endings:body",
+    "step:u7-st-rem-endings:russianFacts",
+    "step:u7-st-teach-endings-3:body"
+   ]
+  },
+  {
+   "phrase": "новый карандаш",
+   "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+   "line": 500,
+   "shownIn": [
+    "example:ex-u7-endings-0:display",
+    "step:u7-st-rem-endings:body",
+    "step:u7-st-rem-endings:russianFacts",
+    "step:u7-st-teach-endings-1:body"
+   ]
+  },
+  {
+   "phrase": "они не склоняются и не спрягаются",
+   "file": "catalog/sources/units-6-10/ruwiki/narechie-152437423.txt",
+   "line": 8,
+   "shownIn": [
+    "step:u7-st-rem-adverb-invariance:body",
+    "step:u7-st-rem-adverb-invariance:russianFacts",
+    "step:u7-st-teach-adverb-invariance-2:body"
+   ]
+  },
+  {
+   "phrase": "синее письмо",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 20,
+   "shownIn": [
+    "example:ex-u7-endings-5:display",
+    "step:u7-st-rem-endings:body",
+    "step:u7-st-rem-endings:russianFacts",
+    "step:u7-st-teach-endings-4:body"
+   ]
+  },
+  {
+   "phrase": "синие книги",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 21,
+   "shownIn": [
+    "example:ex-u7-endings-6:display",
+    "step:u7-st-rem-endings:body",
+    "step:u7-st-rem-endings:russianFacts",
+    "step:u7-st-teach-endings-5:body"
+   ]
+  },
+  {
+   "phrase": "синий стол",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 18,
+   "shownIn": [
+    "example:ex-u7-endings-3:display",
+    "step:u7-st-rem-endings:body",
+    "step:u7-st-rem-endings:russianFacts",
+    "step:u7-st-teach-endings-3:body"
+   ]
+  },
+  {
+   "phrase": "синяя книга",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 19,
+   "shownIn": [
+    "example:ex-u7-endings-4:display",
+    "step:u7-st-rem-endings:body",
+    "step:u7-st-rem-endings:russianFacts",
+    "step:u7-st-teach-endings-4:body"
+   ]
+  },
+  {
+   "phrase": "хорошее письмо",
+   "file": "catalog/sources/units-3-5/wikibooks/nominative-4213267.txt",
+   "line": 93,
+   "shownIn": [
+    "example:ex-u7-spelling-0:display",
+    "step:u7-st-rem-spelling:body",
+    "step:u7-st-rem-spelling:russianFacts",
+    "step:u7-st-teach-spelling-1:body"
+   ]
+  },
+  {
+   "phrase": "эти хорошие новые студенты",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 14,
+   "shownIn": [
+    "example:ex-u7-demonstrative-0:display",
+    "item:u7-g-demonstrative-0:promptLetter",
+    "step:u7-st-rem-demonstrative:body",
+    "step:u7-st-rem-demonstrative:russianFacts",
+    "step:u7-st-teach-demonstrative-1:body",
+    "step:u7-st-teach-demonstrative-2:body"
+   ]
+  },
+  {
+   "phrase": "этих женщин",
+   "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+   "line": 29,
+   "shownIn": [
+    "example:ex-u7-objectadj-3:display",
+    "step:u7-st-rem-objectadj:body",
+    "step:u7-st-rem-objectadj:russianFacts",
+    "step:u7-st-teach-objectadj-3:body"
+   ]
+  }
+ ]
+}

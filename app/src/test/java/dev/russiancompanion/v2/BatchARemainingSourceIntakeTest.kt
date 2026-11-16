@@ -211,14 +211,19 @@ class BatchARemainingSourceIntakeTest {
         val wording = BatchARemainingSources.dashColonWording(span)
         assertEquals(BatchARemainingSources.INVARIANCE_ANSWER, wording)
         items.forEach { item ->
-            assertTrue(item.prompt.contains(BatchARemainingSources.INVARIANCE_RELATION))
+            // T15b owner decision (11/16/2026): a meaning prompt replaces the dash-colon position prompt.
+            assertTrue(item.prompt.contains(BatchARemainingSources.INVARIANCE_MEANING))
+            assertFalse(item.prompt.contains(BatchARemainingSources.INVARIANCE_RELATION))
             assertTrue(item.assessment!!.whyAnswerDemonstratesObjective.contains(BatchARemainingSources.INVARIANCE_DASH_LINE))
             assertEquals(listOf(wording), item.options.filter { it == wording })
             assertEquals(wording, item.answer)
             val distractor = item.options.single { it != item.answer }
             val continuation = BatchARemainingSources.INVARIANCE_POST_COLON.getValue(distractor)
             assertTrue(span.indexOf(distractor) > span.indexOf(':'))
-            assertTrue(item.distractorRationales.any { it.contains(continuation) && it.contains("after the colon") && !it.contains(wording!!) })
+            assertTrue(span.contains(continuation))
+            assertTrue(item.distractorRationales.any {
+                it.contains(distractor) && it.contains(BatchARemainingSources.INVARIANCE_DISTRACTOR_REASON) && !it.contains(wording!!)
+            })
             val cue = record(pack, "obj-u7-adverb-invariance", BatchARemainingSources.INVARIANCE_SHOWN)
             val answer = record(pack, "obj-u7-adverb-invariance", wording!!)
             val competing = record(pack, "obj-u7-adverb-invariance", distractor)
@@ -272,7 +277,7 @@ class BatchARemainingSourceIntakeTest {
             val assessment = item.assessment!!
             val withoutPrompt = replaceItem(
                 pack,
-                item.copy(prompt = item.prompt.replace(BatchARemainingSources.INVARIANCE_RELATION, "beside the shown form")),
+                item.copy(prompt = item.prompt.replace(BatchARemainingSources.INVARIANCE_MEANING, "is written beside the shown form")),
             )
             val promptErrors = V2Validator.validate(withoutPrompt).errors.joinToString("\n")
             assertFalse(V2Validator.validate(withoutPrompt).ok)

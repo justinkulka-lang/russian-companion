@@ -24,8 +24,9 @@ class OptionPresentationTest {
         // closed gender checks and fourteen typed items (twelve checked, two guided) for Units 3-4;
         // T14-c adds seven typed question-word items (six checked, one guided) for Unit 5; T14-n2 replaces six
         // Unit 2 print pairs with six concept checks and adds one guided concept item. T15a removes four Unit 6
-        // cue-only items (earlier in the list) and appends eight typed Unit 6 items.
-        assertEquals(681, p.items.size)
+        // cue-only items (earlier in the list) and appends eight typed Unit 6 items. T15b appends fifteen typed
+        // Unit 7 items with no options.
+        assertEquals(696, p.items.size)
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
             p.items.drop(618).take(4).map { it.id }.toSet())
         assertEquals(558, p.items.count { it.options.firstOrNull() == it.answer })
@@ -42,7 +43,7 @@ class OptionPresentationTest {
             "review" to p.items.map { it to presentedOptions(it, reviewOptionContext("corpus-distribution", 0)) },
         )) {
             if (name == "required") {
-                assertEquals(478, displays.size)
+                assertEquals(493, displays.size) // T15b: fifteen typed Unit 7 checks, no options
                 assertEquals(376, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
             }
             displays.forEach { (item, order) ->

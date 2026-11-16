@@ -253,7 +253,8 @@ class ContentAuditCorrectionTest {
         assertTrue(text.contains("хоро́шие is plural nominative"))
         assertTrue(text.contains("an unstressed о in an ending is written е"))
         assertTrue(text.contains("write и rather than ы after ш"))
-        assertTrue(text.contains("хоро́шая книга becomes хоро́шую книгу"))
+        // T15b: the unattested phrases хоро́шая книга / хоро́шую книгу become single sourced forms.
+        assertTrue(text.contains("the adjective хоро́шая becomes хоро́шую, and the noun кни́га becomes кни́гу"))
         assertTrue(text.contains("change both words"))
         assertTrue(text.contains("all the options are already correctly spelled"))
         assertEquals(22, unit.advancement!!.minimumDistinctChecks)
@@ -272,10 +273,13 @@ class ContentAuditCorrectionTest {
         assertTrue(item.prompt.contains("feminine singular accusative"))
         assertTrue(item.feedback.contains("Both words change"))
         assertEquals(item.feedback, item.assessment!!.whyAnswerDemonstratesObjective)
-        assertEquals("хоро́шая книга", item.promptLetter)
-        assertEquals("хоро́шую книгу", item.answer)
-        assertEquals(listOf("хоро́шую книгу", "хоро́шего друга", "хоро́шие книги"), item.options)
-        assertEquals(listOf("prov-ca-7-489", "prov-ca-7-490", "prov-ca-7-494", "prov-ca-7-495"), item.assessment!!.relationParticipantIds)
+        // T15b: single OpenRussian forms of хороший replace the unattested phrase options.
+        assertEquals("SAME_LEMMA_DIFFERENT_FIELD", item.assessment!!.relationKind)
+        assertEquals("хоро́шая", item.promptLetter)
+        assertEquals("хоро́шую", item.answer)
+        assertEquals(listOf("хоро́шую", "хоро́шего", "хоро́шие"), item.options)
+        assertEquals(listOf("prov-ex-or-u7-spelling-2", "prov-t15b-u7-spelling-khoroshiy-decl-f-acc",
+            "prov-t15b-u7-spelling-khoroshiy-decl-m-gen", "prov-ex-or-u7-spelling-4"), item.assessment!!.relationParticipantIds)
         val unit = pack.unit(7)!!
         val session = unit.sessions.single { it.id == "u7-s-spelling" }
         val remediation = session.steps.single { it.kind == "REMEDIATE" }

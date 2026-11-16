@@ -109,13 +109,23 @@ class SelectedOptionRationaleUiTest {
     }
 
     @Test fun optionalPracticeBadRationaleFallsBackToItsExplanationLink() {
-        val p = Unit8PresentFixtures.pack
+        val live = Unit8PresentFixtures.pack
         LocalStore.openInMemory(context()).use { store ->
             // A placed current unit is available for optional practice without fabricated earlier credit.
             store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 7))
             val learner = mutableStateOf(store.v2LearnerView())
-            val item = practiceQueue(p, learner.value, "grammar").first()
-            val wrong = item.options.first { it != item.answer }
+            val first = practiceQueue(live, learner.value, "grammar").first()
+            val firstWrong = first.options.first { it != first.answer }
+            // T15b rewrote the live Unit 7 pair-frame rationales; a retired pair-frame rationale naming a different
+            // shown form is the fixture for the fallback.
+            val other = if (first.promptLetter == "хорошо") "быстро" else "хорошо"
+            val retired = "The frozen source pairs the shown form \"$other\" with the admitted gloss \"$firstWrong\"."
+            val p = live.copy(items = live.items.map { candidate ->
+                if (candidate.id != first.id) candidate
+                else candidate.copy(distractorRationales = candidate.options.map { if (it == firstWrong) retired else "" })
+            })
+            val item = p.item(first.id)!!
+            val wrong = firstWrong
             assertTrue(diagnosticRationale(item, wrong).contains("pairs the shown form"))
             compose.setContent {
                 V2LabScreen(p, learner.value, "grammar", emptySet(), {}, { id, value ->

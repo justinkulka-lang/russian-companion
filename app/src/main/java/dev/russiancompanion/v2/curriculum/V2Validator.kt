@@ -4433,8 +4433,10 @@ internal object V2Validator {
         val errors = mutableListOf<String>()
         val assessment = item.assessment
         val why = assessment?.whyAnswerDemonstratesObjective.orEmpty()
+        // T15b owner decision (11/16/2026): the prompt asks what the dash-colon wording names (a meaning question)
+        // instead of where it is written; the answer, citation and distractor rules below are unchanged in strength.
         if (
-            !item.prompt.contains(BatchARemainingSources.INVARIANCE_RELATION) ||
+            !item.prompt.contains(BatchARemainingSources.INVARIANCE_MEANING) ||
             !why.contains(BatchARemainingSources.INVARIANCE_DASH_LINE) ||
             !item.feedback.contains(BatchARemainingSources.INVARIANCE_DASH_LINE)
         ) {
@@ -4457,12 +4459,16 @@ internal object V2Validator {
                 val continuation = BatchARemainingSources.INVARIANCE_POST_COLON[option] ?: return@forEachIndexed
                 val rationale = item.distractorRationales.getOrElse(index) { "" }
                 val difference = assessment.distractorDifference.getOrElse(index) { "" }
+                // The rationale names its post-colon distractor and says why it is not the classification the
+                // dash-colon wording names (T15b owner decision 11/16/2026; previously it named the colon position).
                 if (
-                    !rationale.contains(continuation) ||
-                    !difference.contains(continuation) ||
-                    !rationale.contains("after the colon")
+                    continuation !in BatchARemainingSources.INVARIANCE_SPAN ||
+                    !rationale.contains(option) ||
+                    !difference.contains(option) ||
+                    !rationale.contains(BatchARemainingSources.INVARIANCE_DISTRACTOR_REASON) ||
+                    !difference.contains(BatchARemainingSources.INVARIANCE_DISTRACTOR_REASON)
                 ) {
-                    errors += "Item ${item.id} distractor rationale does not explain the post-colon position"
+                    errors += "Item ${item.id} distractor rationale does not explain why it does not name the kind of words"
                 }
             }
         }

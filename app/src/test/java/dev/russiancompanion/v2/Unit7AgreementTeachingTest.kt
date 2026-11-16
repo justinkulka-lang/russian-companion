@@ -26,8 +26,9 @@ class Unit7AgreementTeachingTest {
         val examples = p.unit(7)!!.objectives.single { it.id == "obj-u7-endings" }.exampleIds
         assertEquals(11, examples.size)
         assertEquals(examples, rem.exampleIds)
-        assertTrue(s.steps[0].body.contains("но́вая книга") && s.steps[0].body.contains("но́вую книгу"))
-        assertTrue(s.steps[1].body.contains("но́вое окно") && s.steps[1].body.contains("но́вого окна"))
+        // T15b: the unattested book and window phrases become single sourced adjective and noun forms.
+        assertTrue(s.steps[0].body.contains("но́вая becomes но́вую") && s.steps[0].body.contains("кни́га becomes кни́гу"))
+        assertTrue(s.steps[1].body.contains("но́вое becomes но́вого") && s.steps[1].body.contains("окно́ becomes окна́"))
         assertTrue(rem.body.contains("Both words change in these supplied case pairs."))
         assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u7-endings" && it.shippedText == rem.body && it.itemId == "prov-ca-u7-agreement-u7-st-rem-endings-complete-v1" })
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
