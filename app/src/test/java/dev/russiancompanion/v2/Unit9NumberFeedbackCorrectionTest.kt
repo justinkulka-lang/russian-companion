@@ -23,7 +23,10 @@ class Unit9NumberFeedbackCorrectionTest {
     @Test fun numberFeedbackDistinguishesActualValuesAndPlaceValue() {
         val p = pack()
         val objectives = setOf("obj-u9-cardinal", "obj-u9-teens", "obj-u9-tens", "obj-u9-hundreds")
-        val items = p.items.filter { it.objectiveId in objectives }
+        // T15d adds thirteen typed checks to these objectives; the closed feedback checks below are unchanged.
+        val all = p.items.filter { it.objectiveId in objectives }
+        assertEquals(13, all.count { it.kind == "TYPED_FORM" })
+        val items = all.filter { it.kind != "TYPED_FORM" }
         assertEquals(17, items.size)
         for (item in items) {
             assertFalse(item.id, item.feedback.startsWith("Does"))

@@ -25,7 +25,8 @@ class Unit9ReinforcementReviewTest {
  }
  @Test fun repeatedGuideAndBasicCountsCannotReplaceRequiredAnimateAccusativeContext() {
   val p=pack();val o=objective(p,"pattern");val guided=o.practiceStepIds.flatMap{p.step(it)!!.second.itemIds};assertEquals(listOf("u9-g-pattern-0"),guided)
-  assertEquals(listOf("три кошки","пять девушек","шестнадцать рублей","Я видел двух друзей"),o.checkItemIds.map{p.item(it)!!.promptLetter})
+  // T15d: u9-i-pattern-3 shows пять лет so it no longer repeats u9-i-quantity-4 (шестнадцать рублей).
+  assertEquals(listOf("три кошки","пять девушек","пять лет","Я видел двух друзей"),o.checkItemIds.map{p.item(it)!!.promptLetter})
   assertTrue(o.checkItemIds.all{p.item(it)!!.promptLetter!=p.item(guided.single())!!.promptLetter})
   LocalStore.openInMemory(context()).use { store ->
    record(p,store,guided+o.checkItemIds.dropLast(1));assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),p))
@@ -47,7 +48,7 @@ class Unit9ReinforcementReviewTest {
   val p=pack()
   for(kind in listOf("quantity","pattern")) {
    val s=p.unit(9)!!.sessions.single{it.id=="u9-s-$kind"};val t=s.steps.filter{it.kind=="TEACH"};val r=s.steps.single{it.kind=="REMEDIATE"}
-   assertEquals(if(kind=="quantity")10 else 5,t.size);assertEquals(t.size,s.steps.takeWhile{it.kind!="GUIDED"}.count{it.kind=="TEACH"});assertEquals(t.joinToString("\n\n"){it.body},r.body);assertEquals(t.flatMap{it.exampleIds}.distinct(),r.exampleIds);assertEquals(if(kind=="quantity")17 else 7,r.exampleIds.size)
+   assertEquals(if(kind=="quantity")10 else 5,t.size);assertEquals(t.size,s.steps.takeWhile{it.kind!="GUIDED"}.count{it.kind=="TEACH"});assertEquals(t.joinToString("\n\n"){it.body},r.body);assertEquals(t.flatMap{it.exampleIds}.distinct(),r.exampleIds);assertEquals(if(kind=="quantity")17 else 8,r.exampleIds.size) // T15d: pattern teaching adds the taught пять лет example
   }
   val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
  }

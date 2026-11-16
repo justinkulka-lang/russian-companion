@@ -279,7 +279,7 @@ A09-006,P2,9,9,WORD,два́дцать,NEEDS_RECORDING,,,,"example,item,teaching
 A09-007,P2,9,9,WORD,две,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
 A09-008,P2,9,9,WORD,двена́дцать,NEEDS_RECORDING,,,,"example,item,teaching"
 A09-009,P2,9,9,WORD,две́сти,NEEDS_RECORDING,,,,"example,teaching"
-A09-010,P2,9,9,WORD,девушка,NEEDS_RECORDING,,,course text has no stress mark,item
+A09-010,P2,9,9,WORD,девушка,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
 A09-011,P2,9,9,WORD,девушки,NEEDS_RECORDING,,,course text has no stress mark,item
 A09-012,P2,9,9,WORD,девяно́сто,NEEDS_RECORDING,,,,"example,item,teaching"
 A09-013,P2,9,9,WORD,девятна́дцать,NEEDS_RECORDING,,,,"example,item,teaching"

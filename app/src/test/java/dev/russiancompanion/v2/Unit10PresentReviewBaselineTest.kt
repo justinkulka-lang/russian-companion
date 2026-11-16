@@ -91,7 +91,7 @@ class Unit10PresentReviewBaselineTest {
                 assertEquals("unit7-prior-gender-inanimate-case-v2", prerequisites.single { it.targetUnit == 7 }.policyId)
                 assertEquals("unit8-prior-present-nominative-agreement-v2", prerequisites.single { it.targetUnit == 8 }.policyId)
                 assertEquals(1, prerequisites.single { it.targetUnit == 8 }.schema)
-                assertEquals("unit9-prior-noun-behavior-plural-gender-v3", prerequisites.single { it.targetUnit == 9 }.policyId)
+                assertEquals("unit9-prior-noun-behavior-plural-gender-v4", prerequisites.single { it.targetUnit == 9 }.policyId)
                 assertEquals(1, prerequisites.single { it.targetUnit == 9 }.schema)
                 answer(store, task, 0)
                 assertEquals(setOf(0), completedReviewSlots(pack, task, store.v2LearnerView().reviewAnswers))

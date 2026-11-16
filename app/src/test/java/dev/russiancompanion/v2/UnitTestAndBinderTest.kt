@@ -30,7 +30,8 @@ class UnitTestAndBinderTest {
         for (unit in p.units) {
             // T15b: Unit 7 reaches 48 checked items with 15 typed, so it also has a unit test.
             // T15c: Unit 8 reaches 28 checked items with 9 typed, so it also has a unit test.
-            if (unit.number <= 8) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
+            // T15d: Unit 9 reaches 50 checked items with 15 typed, so it also has a unit test.
+            if (unit.number <= 9) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
             else { assertNull(unitTestPlan(p, unit)); assertNotNull(unitTestUnavailableReason(p, unit)) }
         }
         unitTestPlan(p, p.unit(1)!!)!!.let { assertEquals(10, it.itemIds.size); assertEquals(3, it.typedCount) }
@@ -42,8 +43,9 @@ class UnitTestAndBinderTest {
         unitTestPlan(p, p.unit(6)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(8, it.typedCount) }
         unitTestPlan(p, p.unit(7)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(15, it.typedCount) }
         unitTestPlan(p, p.unit(8)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(9, it.typedCount) }
-        // T15b: Unit 7 now has typed items. T15c: Unit 8 too; Unit 9 is the first unit with none.
-        assertTrue(unitTestUnavailableReason(p, p.unit(9)!!)!!.contains("0 typed items"))
+        unitTestPlan(p, p.unit(9)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(15, it.typedCount) }
+        // T15b: Unit 7 now has typed items. T15c: Unit 8 too. T15d: Unit 9 too; Unit 10 is the first unit with none.
+        assertTrue(unitTestUnavailableReason(p, p.unit(10)!!)!!.contains("0 typed items"))
         val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })
         assertTrue(unitTestUnavailableReason(few, few.unit(2)!!)!!.contains("at least 10 are needed"))
         assertTrue(courseworkDefects(p).isEmpty())

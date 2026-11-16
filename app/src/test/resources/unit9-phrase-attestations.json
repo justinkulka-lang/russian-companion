@@ -1,0 +1,406 @@
+{
+ "task": "T15d (Claude Code, owner direction 11/16/2026)",
+ "rule": "Every run of two or more space-separated Cyrillic words in learner-visible Unit 9 text (unit, sessions, steps, Unit 9 items, their examples and references) must pass the T15a-n3 two-part rule: (a) presence: the named frozen line, after stripping wiki and HTML markup, collapsing whitespace, ignoring case and removing stress marks, contains the phrase as whole words, with ё and е kept distinct; (b) stress: every stressed word of the phrase has that exact stress in some frozen row or line (the B3 marker comparison). Individually attested forms do not attest a phrase built from them.",
+ "phrases": [
+  {
+   "phrase": "Два́дцать две копе́йки",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 13,
+   "shownIn": [
+    "example:ex-u9-quantity-13:display",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-8:body"
+   ]
+  },
+  {
+   "phrase": "Два́дцать пять копе́ек",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 16,
+   "shownIn": [
+    "example:ex-u9-quantity-14:display",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-9:body"
+   ]
+  },
+  {
+   "phrase": "Есть оди́н кот",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 9,
+   "shownIn": [
+    "example:ex-u9-pattern-5:display",
+    "step:u9-st-rem-pattern:body",
+    "step:u9-st-rem-pattern:russianFacts",
+    "step:u9-st-teach-pattern-4:body"
+   ]
+  },
+  {
+   "phrase": "Пять рубле́й",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 15,
+   "shownIn": [
+    "example:ex-u9-pattern-6:display",
+    "step:u9-st-rem-pattern:body",
+    "step:u9-st-rem-pattern:russianFacts",
+    "step:u9-st-teach-pattern-5:body"
+   ]
+  },
+  {
+   "phrase": "Я видел двух друзей",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 98,
+   "shownIn": [
+    "example:ex-u9-pattern-4:display",
+    "item:u9-i-pattern-4:promptLetter",
+    "step:u9-st-rem-pattern:body",
+    "step:u9-st-rem-pattern:russianFacts",
+    "step:u9-st-teach-pattern-4:body"
+   ]
+  },
+  {
+   "phrase": "два часа",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 110,
+   "shownIn": [
+    "example:ex-u9-quantity-1:display",
+    "example:ex-u9-quantity-1:note",
+    "item:u9-i-quantity-8:promptLetter",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-1:body"
+   ]
+  },
+  {
+   "phrase": "два́дцать оди́н",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 73,
+   "shownIn": [
+    "example:ex-u9-thousands-1:display",
+    "item:u9-g-thousands-0:answer",
+    "item:u9-g-thousands-0:feedback",
+    "item:u9-g-thousands-0:options",
+    "item:u9-g-thousands-0:russianFacts",
+    "item:u9-i-type-21:acceptedAnswers",
+    "item:u9-i-type-21:answer",
+    "step:u9-st-rem-thousands:body",
+    "step:u9-st-rem-thousands:russianFacts",
+    "step:u9-st-teach-thousands-1:body"
+   ]
+  },
+  {
+   "phrase": "двадцать два часа",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 113,
+   "shownIn": [
+    "example:ex-u9-quantity-4:display",
+    "example:ex-u9-quantity-4:note",
+    "item:u9-i-quantity-1:promptLetter",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-4:body"
+   ]
+  },
+  {
+   "phrase": "двадцать один час",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 112,
+   "shownIn": [
+    "example:ex-u9-quantity-3:display",
+    "example:ex-u9-quantity-3:note",
+    "item:u9-i-quantity-3:promptLetter",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-3:body"
+   ]
+  },
+  {
+   "phrase": "две девушки",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 90,
+   "shownIn": [
+    "example:ex-u9-quantity-5:display",
+    "step:u9-st-rem-odindva:body",
+    "step:u9-st-rem-odindva:russianFacts",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-odindva-2:body",
+    "step:u9-st-teach-odindva-5:body",
+    "step:u9-st-teach-quantity-4:body"
+   ]
+  },
+  {
+   "phrase": "две́сти пятна́дцать",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 75,
+   "shownIn": [
+    "example:ex-u9-thousands-3:display",
+    "item:u9-i-thousands-2:answer",
+    "item:u9-i-thousands-2:feedback",
+    "item:u9-i-thousands-2:options",
+    "item:u9-i-thousands-2:russianFacts",
+    "step:u9-st-rem-thousands:body",
+    "step:u9-st-rem-thousands:russianFacts",
+    "step:u9-st-teach-thousands-3:body"
+   ]
+  },
+  {
+   "phrase": "двести три собаки",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 96,
+   "shownIn": [
+    "example:ex-u9-quantity-11:display",
+    "item:u9-i-quantity-9:promptLetter",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-7:body"
+   ]
+  },
+  {
+   "phrase": "двести тринадцать собак",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 96,
+   "shownIn": [
+    "example:ex-u9-quantity-12:display",
+    "item:u9-i-quantity-6:promptLetter",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-8:body"
+   ]
+  },
+  {
+   "phrase": "де́вять ты́сяч",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 79,
+   "shownIn": [
+    "example:ex-u9-thousands-7:display",
+    "item:u9-i-thousands-4:options",
+    "step:u9-st-rem-thousands:body",
+    "step:u9-st-rem-thousands:russianFacts",
+    "step:u9-st-teach-thousands-5:body"
+   ]
+  },
+  {
+   "phrase": "десять копеек",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 92,
+   "shownIn": [
+    "example:ex-u9-quantity-8:display",
+    "item:u9-i-quantity-7:promptLetter",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-6:body"
+   ]
+  },
+  {
+   "phrase": "один мальчик",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 88,
+   "shownIn": [
+    "example:ex-u9-odindva-0:display",
+    "step:u9-st-rem-odindva:body",
+    "step:u9-st-rem-odindva:russianFacts",
+    "step:u9-st-teach-odindva-1:body"
+   ]
+  },
+  {
+   "phrase": "один час",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 109,
+   "shownIn": [
+    "example:ex-u9-pattern-0:display",
+    "example:ex-u9-pattern-0:note",
+    "example:ex-u9-quantity-0:display",
+    "example:ex-u9-quantity-0:note",
+    "item:u9-g-pattern-0:promptLetter",
+    "item:u9-g-quantity-0:promptLetter",
+    "item:u9-i-odindva-4:feedback",
+    "item:u9-i-odindva-4:russianFacts",
+    "step:u9-st-rem-odindva:body",
+    "step:u9-st-rem-odindva:russianFacts",
+    "step:u9-st-rem-pattern:body",
+    "step:u9-st-rem-pattern:russianFacts",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-odindva-6:body",
+    "step:u9-st-teach-pattern-1:body",
+    "step:u9-st-teach-quantity-1:body"
+   ]
+  },
+  {
+   "phrase": "одна девушка",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 88,
+   "shownIn": [
+    "example:ex-u9-odindva-1:display",
+    "step:u9-st-rem-odindva:body",
+    "step:u9-st-rem-odindva:russianFacts",
+    "step:u9-st-teach-odindva-1:body"
+   ]
+  },
+  {
+   "phrase": "одни джинсы",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 88,
+   "shownIn": [
+    "example:ex-u9-odindva-3:display",
+    "step:u9-st-rem-odindva:body",
+    "step:u9-st-rem-odindva:russianFacts",
+    "step:u9-st-teach-odindva-3:body",
+    "step:u9-st-teach-odindva-5:body"
+   ]
+  },
+  {
+   "phrase": "одно животное",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 88,
+   "shownIn": [
+    "example:ex-u9-odindva-2:display",
+    "step:u9-st-rem-odindva:body",
+    "step:u9-st-rem-odindva:russianFacts",
+    "step:u9-st-teach-odindva-3:body"
+   ]
+  },
+  {
+   "phrase": "пять девушек",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 92,
+   "shownIn": [
+    "example:ex-u9-pattern-2:display",
+    "example:ex-u9-quantity-6:display",
+    "item:u9-i-pattern-2:promptLetter",
+    "step:u9-st-rem-pattern:body",
+    "step:u9-st-rem-pattern:russianFacts",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-pattern-3:body",
+    "step:u9-st-teach-quantity-5:body"
+   ]
+  },
+  {
+   "phrase": "пять лет",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 121,
+   "shownIn": [
+    "example:ex-u9-quantity-10:display",
+    "example:ex-u9-quantity-10:note",
+    "item:u9-i-pattern-3:promptLetter",
+    "step:u9-st-rem-pattern:body",
+    "step:u9-st-rem-pattern:russianFacts",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-pattern-3:body",
+    "step:u9-st-teach-quantity-7:body"
+   ]
+  },
+  {
+   "phrase": "пять часов",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 111,
+   "shownIn": [
+    "example:ex-u9-quantity-2:display",
+    "example:ex-u9-quantity-2:note",
+    "item:u9-i-quantity-2:promptLetter",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-3:body"
+   ]
+  },
+  {
+   "phrase": "сорок один год",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 94,
+   "shownIn": [
+    "example:ex-u9-quantity-9:display",
+    "item:u9-i-quantity-5:promptLetter",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-6:body"
+   ]
+  },
+  {
+   "phrase": "сто оди́н",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 74,
+   "shownIn": [
+    "example:ex-u9-thousands-2:display",
+    "item:u9-i-thousands-1:answer",
+    "item:u9-i-thousands-1:feedback",
+    "item:u9-i-thousands-1:options",
+    "item:u9-i-thousands-1:russianFacts",
+    "item:u9-i-type-101:acceptedAnswers",
+    "item:u9-i-type-101:answer",
+    "step:u9-st-rem-thousands:body",
+    "step:u9-st-rem-thousands:russianFacts",
+    "step:u9-st-teach-thousands-3:body"
+   ]
+  },
+  {
+   "phrase": "три кошки",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 90,
+   "shownIn": [
+    "example:ex-u9-pattern-1:display",
+    "item:u9-i-pattern-1:promptLetter",
+    "step:u9-st-rem-pattern:body",
+    "step:u9-st-rem-pattern:russianFacts",
+    "step:u9-st-teach-pattern-1:body"
+   ]
+  },
+  {
+   "phrase": "три́ста три́дцать три",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 76,
+   "shownIn": [
+    "example:ex-u9-thousands-4:display",
+    "step:u9-st-rem-thousands:body",
+    "step:u9-st-rem-thousands:russianFacts",
+    "step:u9-st-teach-thousands-4:body"
+   ]
+  },
+  {
+   "phrase": "ты́сяча девятьсо́т во́семьдесят четы́ре",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 77,
+   "shownIn": [
+    "example:ex-u9-thousands-5:display",
+    "item:u9-i-thousands-3:answer",
+    "item:u9-i-thousands-3:feedback",
+    "item:u9-i-thousands-3:options",
+    "item:u9-i-thousands-3:russianFacts",
+    "step:u9-st-rem-thousands:body",
+    "step:u9-st-rem-thousands:russianFacts",
+    "step:u9-st-teach-thousands-4:body"
+   ]
+  },
+  {
+   "phrase": "четы́ре ты́сячи",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 78,
+   "shownIn": [
+    "example:ex-u9-thousands-6:display",
+    "item:u9-i-thousands-4:answer",
+    "item:u9-i-thousands-4:options",
+    "step:u9-st-rem-thousands:body",
+    "step:u9-st-rem-thousands:russianFacts",
+    "step:u9-st-teach-thousands-5:body"
+   ]
+  },
+  {
+   "phrase": "шестнадцать рублей",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 92,
+   "shownIn": [
+    "example:ex-u9-pattern-3:display",
+    "example:ex-u9-quantity-7:display",
+    "item:u9-i-quantity-4:promptLetter",
+    "step:u9-st-rem-pattern:body",
+    "step:u9-st-rem-pattern:russianFacts",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-pattern-3:body",
+    "step:u9-st-teach-quantity-5:body"
+   ]
+  }
+ ]
+}

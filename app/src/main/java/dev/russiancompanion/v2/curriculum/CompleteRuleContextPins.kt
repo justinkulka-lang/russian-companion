@@ -36,7 +36,9 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u9-g-pattern-0" to "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
         "ca-rule-context:u9-i-pattern-1" to "37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b",
         "ca-rule-context:u9-i-pattern-2" to "40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358",
-        "ca-rule-context:u9-i-pattern-3" to "c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104",
+        // T15d, owner direction 11/16/2026: re-pinned because the cue is now the frozen five-years example at
+        // numbers-4371358.txt:121, so this check no longer repeats u9-i-quantity-4; answer and distractors unchanged.
+        "ca-rule-context:u9-i-pattern-3" to "4868dc23d9e0eb24c0e09696e6e002bc2a1c73c36536a272f279437626467311",
         "ca-rule-context:u9-i-pattern-4" to "8d56873c882a2014e2dcf857c9562428754d792439c78a44ad661009309fa5cf",
         "ca-rule-context:u29-i-active-2" to "95d18c3e8285debf878068b03f7d3429ef4cb0f537d062dfe3ab1a2f9f83bf99",
         "ca-rule-context:u29-g-adjective-form-0" to "e0cf5eb7be494b7ce79111cf1675317ddfe1b91e1739eb00c0f5ea01af8b8efd",

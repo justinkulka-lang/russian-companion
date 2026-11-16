@@ -22,7 +22,10 @@ class Unit9CompositionFeedbackCorrectionTest {
     @get:Rule val compose = createComposeRule()
     @Test fun compositionAndAgreementFeedbackExplainsTheSourceDistinctions() {
         val p = pack()
-        val items = p.items.filter { it.objectiveId in setOf("obj-u9-thousands", "obj-u9-odindva") }
+        // T15d adds two typed thousands checks (u9-i-type-21, u9-i-type-101); the closed feedback checks below are unchanged.
+        val all = p.items.filter { it.objectiveId in setOf("obj-u9-thousands", "obj-u9-odindva") }
+        assertEquals(listOf("u9-i-type-21", "u9-i-type-101"), all.filter { it.kind == "TYPED_FORM" }.map { it.id })
+        val items = all.filter { it.kind != "TYPED_FORM" }
         assertEquals(11, items.size)
         items.forEach { item ->
             assertFalse(item.id, item.feedback.startsWith("Does"))

@@ -184,11 +184,14 @@ internal object Unit9WiderCumulativeReviewPolicy {
             "u3-st-rem-gender"))
 }
 
-/** Supplied noun classification, nominative plural and lexical gender; not productive inflection. */
+/** Supplied noun classification, nominative plural and lexical gender; not productive inflection.
+ * T15d (owner direction 11/16/2026): the plural anchor is u8-i-plural-3, whose cue no noun-behavior or gender candidate
+ * shows; u8-i-plural-2 shared its window cue with the Unit 5 window noun-behavior item, and its feedback showed that
+ * the noun changes form. */
 internal object Unit9NounBehaviorCumulativeReviewPolicy {
-    val definition = CumulativeReviewPolicy("unit9-prior-noun-behavior-plural-gender-v3", 9, listOf(
+    val definition = CumulativeReviewPolicy("unit9-prior-noun-behavior-plural-gender-v4", 9, listOf(
         Unit6CumulativeReviewPolicy.definition.pool[1],
-        Unit9WiderCumulativeReviewPolicy.definition.pool[1],
+        Unit9WiderCumulativeReviewPolicy.definition.pool[1].copy(candidateItemIds = listOf("u8-i-plural-3")),
         Unit9WiderCumulativeReviewPolicy.definition.pool[2],
     ))
 }

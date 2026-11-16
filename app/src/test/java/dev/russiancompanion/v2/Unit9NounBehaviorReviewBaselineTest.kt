@@ -51,7 +51,7 @@ class Unit9NounBehaviorReviewBaselineTest {
             // Intentionally fails on valid v2: it does not declare this proposed new slot.
             assertFalse("The proposed Unit9 obligation must refuse actual advancement without its assigned noun-behavior answer",
                 advancedWithoutNounBehavior)
-            assertEquals("unit9-prior-noun-behavior-plural-gender-v3", task.policyId)
+            assertEquals("unit9-prior-noun-behavior-plural-gender-v4", task.policyId)
             assertEquals(1, task.schema)
             assertEquals(listOf("obj-u5-indeclinable", "obj-u8-plural", "obj-u3-gender"), task.slots.take(3).map { it.objectiveId })
             assertEquals(listOf(5, 8, 3), task.slots.take(3).map { it.ownerUnit })

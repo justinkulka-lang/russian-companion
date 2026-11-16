@@ -108,7 +108,8 @@ class Unit10CumulativeReviewTest {
             waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Not the reviewed answer. ${noun.feedback}")
             compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
             waitTag("v2-example-ex-or-u9-odindva-8"); compose.onNodeWithTag("v2-example-ex-or-u9-odindva-8").performScrollTo().assertIsDisplayed()
-            compose.onNodeWithText("The additional source example один час supplies masculine singular один with час.", substring = true).performScrollTo().assertIsDisplayed()
+            // T15d: the teaching states the forms instead of a "Choose один rather than одна" script (ANSWER_IN_INSTRUCTION).
+            compose.onNodeWithText("The additional source example один час uses masculine singular один with час;", substring = true).performScrollTo().assertIsDisplayed()
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
             val practice = reviewedGuidedPractice(p, "u9-st-rem-odindva")
             assertEquals(listOf("u9-st-guided-odindva-1"), practice)
