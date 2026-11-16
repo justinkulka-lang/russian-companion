@@ -25,7 +25,7 @@ When the owner says "continue":
    - Otherwise stop.
 4. If it is CODEX, set it IN_PROGRESS and commit that change. Do only what the task says.
 5. If the task is too big for one session, split it into at most three parts (-a, -b, -c) in this file. Do the first part and treat it as the task. A part may not split again. If a part is still too big, report it as BLOCKED with what remains.
-6. Run the full unit-test suite. A task is not DONE with failing tests unless the task says otherwise. The owner-directed transitional exceptions below apply only to T01, T01-n1, T02 and T03; T03-n1 and T04 onward require a passing suite.
+6. Before pushing, run the targeted tests for the change: the touched units, validator, provenance, phrase, pin and digest tests. The exact-commit CI run is the full-suite gate; do not wait on local full-suite runs (owner decision 11/16/2026). A task is not DONE with failing tests unless the task says otherwise. The owner-directed transitional exceptions below apply only to T01, T01-n1, T02 and T03; T03-n1 and T04 onward require a passing suite.
 7. Commit with a plain message that starts with the task ID.
    - Before every push, fetch `origin/cursor/content-audit-corrections-964f` into its remote-tracking ref and confirm that the current remote head is an ancestor of the local branch. Do not push a branch that lacks the fetched remote head.
 8. Update this file:
@@ -183,7 +183,7 @@ MEDIUM and LOW findings for those units are fixed or given a written disposition
 | T15a-n2 | CODEX | Owner direction 11/15/2026: corrections from Codex's verification of T15a-n1 at 8c5966c2. Every multi-word Russian phrase shown to the learner must appear verbatim in a frozen file under catalog/sources/; individually attested word forms do not attest a phrase built from them. (A) A build-time test checks every provenance record that names a frozen source: its originalSourceText appears verbatim in the named frozen file at the named revision, and its hash is recomputed from that file; regressions for absent Wikibooks text and a self-consistent fabricated text/hash pair. (B) Every Cyrillic word form of a russian-fact marker (stress-normalised) appears in the originalSourceText of a record it cites (regression: the Нас … Мы marker citing only prov-ex-or-u6-animacy-0 fails); every Unit 6 marker without Cyrillic has a review entry in unit6-fact-dispositions.json naming a frozen file and an existing line. (C) 014 and 016 cite frozen evidence for every stressed form shown; correct the T15a-n1 statement on 013 (the source exists). (D) List every multi-word Russian phrase Unit 6 shows, with its verbatim frozen file and line or UNATTESTED; replace each UNATTESTED phrase with single attested forms or a verbatim-attested phrase, keeping every contrast-rule check and A2-23 (else BLOCKED_OWNER with the affected items); list UNATTESTED phrases in Units 7–10 in a queue note without changing those units. Recompute pins, validator hash and release digest. | Source-binding, citation and phrase tests pass; every Unit 6 phrase is attested verbatim; Units 7–10 phrase note recorded; full exact-commit Linux CI passes. | T15a-n1 | DONE — e02ec150 (queue), 6bc25704 (binding test, validator, Unit 6 content, tests), 4d563691 (pins, validator hash, digest); Full local suite on 4d563691 passed (1340 tests, 0 failures, 0 errors, 1 skipped); exact-commit Linux CI 43732409135 passed. See Log 2026-11-15 T15a-n2. |
 | T15a-n3 | CODEX | Owner direction 11/15/2026: corrections from Codex's verification of T15a-n2 at 9a9b9760. (1) FrozenSourceBindingTest binds source ID, revision and frozen file together through the FREEZE.json manifest index, not by revision alone; regression: a genuine Wikibooks 4330404 record relabelled src-ruwiki-narechie-152437423 fails. (2) The unfrozen allowlist is the exact 24 record IDs, each pinned to its originalSourceText hash; regression: a 25th record under an allowed source ID fails. (3) Owner decision on phrase matching: a shown phrase is attested only if (a) it appears in a frozen file after stripping markup, collapsing whitespace, ignoring case and removing stress marks, with ё and е kept distinct, and (b) every stressed word in it has that exact stress in some frozen source row or line, using the B3 marker comparison; regressions for мо́й стол with and without stress evidence, моё/мое письмо and an absent phrase; re-run the Unit 6 and Units 7–10 phrase counts and record changes. Recompute pins, validator hash and release digest; targeted tests, one full suite, push, exact-commit CI, DONE in a queue-only commit. | Binding, allowlist and phrase tests pass; full suite and exact-commit CI pass. | T15a-n2 | DONE — 87b7fe17 (queue), 4c402ef7 (binding, allowlist and phrase-rule tests); Full local suite on 4c402ef7 passed (1343 tests, 0 failures, 0 errors, 1 skipped); exact-commit Linux CI 43768082496 passed. See Log 2026-11-15 T15a-n3. |
 | T15b | CODEX | Unit 7. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 33 checked, 0 typed. A2-24: 11 shown-cue-only, 4 label/position (15 unique items), 30 exact-key-in-session. A2-26 lint: 129 governance, 8 markup, 4 narration. Typed needed: at least 8 (closed checks after removing invalid items: 18; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. T15a-n2 note (2026-11-15): 12 Unit 7 phrases are UNATTESTED in any frozen file; see Log 2026-11-15 T15a-n2. T15a-n3 note (2026-11-15): under the two-part phrase rule 9 Unit 7 phrases are UNATTESTED (no longer но́вая книга, но́вые книги, хоро́шие книги); see Log 2026-11-15 T15a-n3. | Unit 7 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1, T15a-n1, T15a-n2, T15a-n3 | DONE — bce23c99 (queue), 0dfb44f4 (Unit 7 content, invariance rule, tests), ce5e3265 (pins, validator hash, digest); Full local suite on ce5e3265 passed (1349 tests, 0 failures, 0 errors, 1 skipped); exact-commit Linux CI 43806052387 passed. See Log 2026-11-16 T15b. |
-| T15c | CODEX | Unit 8. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 19 checked, 0 typed. A2-24: 15 shown-cue-only (15 unique items), 17 exact-key-in-session. A2-26 lint: 26 governance, 2 markup. Typed needed: at least 16 (closed checks after removing invalid items: 4; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 9. | Unit 8 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | IN_PROGRESS |
+| T15c | CODEX | Unit 8. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 19 checked, 0 typed. A2-24: 15 shown-cue-only (15 unique items), 17 exact-key-in-session. A2-26 lint: 26 governance, 2 markup. Typed needed: at least 16 (closed checks after removing invalid items: 4; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 9. | Unit 8 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | DONE — 3e1be30c (queue), 481f749f (Unit 8 content, agreement-3 re-pin, tests, T15f note), 4de56cde (pins, digest), d4a635ed (existence test scope); Targeted T15c tests on d4a635ed passed (35 classes, 297 tests, 0 failures, 0 errors, 0 skipped); local full suite not run under the owner decision of 11/16/2026; exact-commit Linux CI 43930703388 passed. See Log 2026-11-16 T15c. |
 | T15d | CODEX | Unit 9. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 35 checked, 0 typed. A2-24: no shown-cue-only or label items, 22 exact-key-in-session; owner TODO: Unit 9 cumulative review shows two items with the same cue, and neither may give away the other's answer. A2-26 lint: 102 governance. Typed needed: at least 15 (closed checks after removing invalid items: 35; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. | Unit 9 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | TODO |
 | T15e | CODEX | Unit 10. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 22 checked, 0 typed. A2-24: 5 shown-cue-only, 5 label/position (9 unique items), 14 exact-key-in-session. A2-26 lint: 65 governance, 6 markup. Typed needed: at least 7 (closed checks after removing invalid items: 13; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 10. | Unit 10 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | TODO |
 | T15f | CODEX | Block 2 close-out: A2-36 reference entries for grammar first taught in Units 6–10; A2-28 cumulative review for Units 6–10; block-wide validity (A2-23/24) and learner-text lint (A2-26) reports clean for Units 6–10; audit/FINDINGS_DISPOSITION.csv entries for every MEDIUM and LOW finding scoped to Units 6–10. T15c note (2026-11-16): under the two-part phrase rule, T15b replaced Unit 7's complete case-phrase examples (adjective and noun changing case together, such as the book and window pairs) with single forms. The close-out should search the frozen files under catalog/sources/ for attested adjective–noun case phrases and restore Unit 7 examples where they exist; see Log 2026-11-16 T15b. | Block 2 meets A2-01; full exact-commit Linux CI passes. | T15a, T15b, T15c, T15d, T15e | TODO |
@@ -2342,3 +2342,119 @@ Test expectation changes (old → new, reason):
 - UnitTestAndBinderTest: Units ≤ 6 have unit tests, Unit 7 has none ("0 typed items") → Units ≤ 7 have unit tests (Unit 7: 20 items, 15 typed) and Unit 8 is the "0 typed items" example; Unit 7 now meets A2-23.
 - RationaleQualityBoundaryTest.differentShownFormMustNotBePresentedAsTheDisplayedCue and SelectedOptionRationaleUiTest.optionalPracticeBadRationaleFallsBackToItsExplanationLink: the live u7 pair-frame rationale ("The frozen source pairs the shown form …") → a fixture copy carrying that retired rationale (assertions unchanged); the live rationale was rewritten for A2-26, and the boundary test also asserts the new live rationale is displayed.
 No test or assertion was deleted or skipped.
+
+### 2026-11-16 — T15c DONE: Unit 8 meets A2-23/24/26 with frozen-source facts and attested phrases (Claude Code)
+
+Owner direction 11/16/2026. Plan: Codex prep report audit/prep/unit-08-prep-at-9a9b9760.txt (branch owner/prep-reports, not merged). Every cited file and line was re-checked against 5c9bd9d6: the frozen lines (N:2, 14, 15, 16, 24, 32, 51, 60, 74, 83; A:4, 8, 18, 109; G:49–51, 55, 99; W:1, 14, 21, 24, 26; D:9, 17; pronouns-4585698.txt:81), the A2-24 counts (19 checked, 15 cue-only, 17 exact-key, 0 label/position), the lint counts (26 governance, 2 markup) and all 47 inventory lines (audit/T15-n0-unmarked-russian-facts.csv 790–909) still match; **no cited line differs**. Commits **3e1be30c** (queue IN_PROGRESS), **481f749f** (content, transformer catalog/apply_t15c_unit_8.py, rule-context re-pin, tests, T15f note), **4de56cde** (pins, digest), **d4a635ed** (existence test scope). Targeted T15c tests on d4a635ed passed (35 classes, 297 tests, 0 failures, 0 errors, 0 skipped); local full suite not run under the owner decision of 11/16/2026. Exact-commit Linux CI **43930703388** passed (2026-11-16 18:37–19:49 UTC). No force push.
+
+Unit 8 now: 28 checked, 28 required, 9 typed (32.1 percent); A2-24 signals 0 (was 15 cue-only, 17 exact-key); ANSWER_IN_INSTRUCTION 0 (was 4); A2-26 lint 0 governance, 0 markup, 0 narration (was 26/2/0); all 5 shown phrases pass the two-part rule. Full validator passes. Remaining Unit 8 review signals: CUE_AS_DISTRACTOR on the 15 form checks (the contrast rule keeps the cue in the set) and FEWER_THAN_THREE_OPTIONS on u8-i-availability-1/2/3 (positive-existence tuples are hash-pinned, and the only frozen alternatives are absence lines, which Unit8ExistenceSequenceTest forbids in Unit 8; the prep report's "There are no old buildings in Moscow" for availability-2 was therefore not added; that item's only A2-24 flag, exact-key, is fixed by placement). The only cross-unit design change: IDENTICAL_REQUIRED_DISPLAY_TASK 8 → 7.
+
+1 — A2-24. Every Unit 8 CHECK step moves to a new session u8-s-checks after all teaching (before the book session); each keeps its remediation link. Cue-only checks get a third form from the same OpenRussian row (prep report section 1):
+
+| Item | Third option | Frozen source |
+|---|---|---|
+| u8-i-plural-1 | го́роду | units-3-5/openrussian/nouns.csv:24 sg_dat |
+| u8-i-plural-2 | окну́ | units-3-5/openrussian/nouns.csv:51 sg_dat |
+| u8-i-plural-3 | ма́ме | units-3-5/openrussian/nouns.csv:83 sg_dat |
+| u8-i-plural-4 | до́му | units-3-5/openrussian/nouns.csv:15 sg_dat |
+| u8-i-plural-5 | сло́ву | units-3-5/openrussian/nouns.csv:16 sg_dat |
+| u8-i-plural-6 | кни́ге | units-3-5/openrussian/nouns.csv:60 sg_dat |
+| u8-i-spelling-1 | кни́ге | units-3-5/openrussian/nouns.csv:60 sg_dat |
+| u8-i-spelling-2 | хоро́шая | units-6-10/openrussian/adjectives.csv:18 decl_f_nom |
+| u8-i-spelling-3 | хоро́ший | units-6-10/openrussian/adjectives.csv:18 decl_m_nom |
+| u8-i-spelling-4 | хоро́шая | units-6-10/openrussian/adjectives.csv:18 decl_f_nom |
+| u8-i-irregular-1 | челове́ку | units-3-5/openrussian/nouns.csv:2 sg_dat |
+| u8-i-irregular-2 | дру́гу | units-3-5/openrussian/nouns.csv:14 sg_dat |
+| u8-i-irregular-3 | сы́ну | units-3-5/openrussian/nouns.csv:74 sg_dat |
+| u8-i-agreement-1 | моя́ | units-6-10/openrussian/adjectives.csv:8 decl_f_nom |
+| u8-i-agreement-2 | э́то | units-6-10/openrussian/adjectives.csv:4 decl_n_nom |
+| u8-i-agreement-3 | си́няя | units-6-10/openrussian/adjectives.csv:109 decl_f_nom |
+
+u8-g-spelling-0 (guided) repeats u8-i-plural-6's task (RepeatedTaskCreditTest pairs them), so it shows the same third form кни́ге. **Owner decision 11/16/2026** (asked before the change): u8-i-agreement-3's cue/key/distractor tuple is hash-pinned in CompleteRuleContextPins.kt; the tuple now has the third form си́няя and its four content-audit context records carry the new tuple and a dated note; only the pin hash changed (c2531b06… → 4a541c59…), no validator logic. Spelling teaching (u8-st-teach-spelling-3/-5) states the forms ("кни́ги becomes кни́га in the singular nominative"; "The masculine singular dictionary form is хоро́ший") instead of "choose X" scripts, which cleared the four ANSWER_IN_INSTRUCTION signals; placement alone had not.
+
+2 — Typed checks (A2-23), keys are the taught pl_nom cells (prep report section 2); prompt "Type the plural nominative form of the shown noun.":
+
+| Item | Cue → key | Frozen source |
+|---|---|---|
+| u8-i-type-goroda | го́род → города́ | units-3-5/openrussian/nouns.csv:24 pl_nom |
+| u8-i-type-okna | окно́ → о́кна | units-3-5/openrussian/nouns.csv:51 pl_nom |
+| u8-i-type-mamy | ма́ма → ма́мы | units-3-5/openrussian/nouns.csv:83 pl_nom |
+| u8-i-type-doma | до́м → дома́ | units-3-5/openrussian/nouns.csv:15 pl_nom |
+| u8-i-type-slova | сло́во → слова́ | units-3-5/openrussian/nouns.csv:16 pl_nom |
+| u8-i-type-knigi | кни́га → кни́ги | units-3-5/openrussian/nouns.csv:60 pl_nom |
+| u8-i-type-lyudi | челове́к → лю́ди | units-3-5/openrussian/nouns.csv:2 pl_nom |
+| u8-i-type-druzya | друг → друзья́ | units-3-5/openrussian/nouns.csv:14 pl_nom |
+| u8-i-type-synovya | сы́н → сыновья́ | units-3-5/openrussian/nouns.csv:74 pl_nom |
+
+3 — Fact inventory: 47 English-only Unit 8 entries → **27 MARK, 15 REWORD, 5 REMOVE**, as the prep report recommends (its 904 and 905 MARK-with-rewording are REWORD (MARKED): the baseline wording "The source pairs…" / "other source translation" is gone and the replacements are marked with G:50–51). Dispositions with reasons: app/src/test/resources/unit8-fact-dispositions.json. Every MARK cites frozen-source records that contain its Cyrillic forms; the 28 markers with no Cyrillic have review entries naming a frozen file, line and quote. Every Unit 8 feedback, rationale and remediation sentence is marked or is a reviewed instruction (Unit8FactProvenanceTest.unitEightFeedbackAndRemediationHaveNoUnmarkedFactSentences; regression addingAnUnmarkedFactSentenceToUnitEightFails adds removed entry 798 to item feedback and to a remediation body, and removes a marker; each is reported). Remediation in every Unit 8 session repeats that session's teaching (irregular remediation was one wiki line).
+
+| CSV line | Owner | Disposition | Cited records / replacement |
+|---|---|---|---|
+| 790 | u8-st-rem-plural | MARK | prov-ex-or-u8-plural-1, prov-ex-or-u8-plural-1-gloss |
+| 791 | u8-st-rem-plural | REMOVE | — |
+| 792 | u8-st-rem-plural | REWORD (INSTRUCTION) | → "Copy the displayed form carefully." |
+| 793 | u8-st-rem-plural | MARK | prov-t15c-u8-d9, prov-t15c-u8-d17, prov-u8-plural-rem, prov-t15c-u8-w14 |
+| 794 | u8-st-rem-plural | REMOVE | — |
+| 795 | u8-st-rem-plural | REWORD (INSTRUCTION) | → "Use the forms taught here." |
+| 797 | u8-st-rem-plural | MARK | prov-ex-or-u8-plural-3, prov-ex-or-u8-plural-1 |
+| 798 | u8-st-rem-plural | REWORD (INSTRUCTION) | → "Practise the displayed pairs." |
+| 800 | u8-st-rem-plural | MARK | prov-ex-or-u8-plural-4, prov-ex-or-u8-plural-5 |
+| 801 | u8-st-rem-plural | MARK | prov-ex-or-u8-plural-5, prov-t15c-u8-w24 |
+| 803 | u8-st-rem-plural | MARK | prov-ex-or-u8-plural-6, prov-ex-or-u8-plural-7 |
+| 804 | u8-st-rem-plural | REWORD (INSTRUCTION) | → "Copy the whole displayed form." |
+| 806 | u8-st-rem-plural | MARK | prov-ex-or-u8-plural-8, prov-ex-or-u8-plural-9 |
+| 807 | u8-st-rem-plural | REWORD (INSTRUCTION) | → "Use this taught pair for the item." |
+| 809 | u8-st-rem-plural | REMOVE | — |
+| 811 | u8-st-rem-plural | REWORD (INSTRUCTION) | → "Copy the displayed form carefully." |
+| 812 | u8-st-rem-plural | REWORD (INSTRUCTION) | → "Review these seven pairs." |
+| 813 | u8-st-rem-plural | REMOVE | — |
+| 828 | u8-st-rem-spelling | MARK | prov-t15c-u8-w1 |
+| 832 | u8-st-rem-spelling | MARK | prov-t15c-u8-w24 |
+| 833 | u8-st-rem-spelling | MARK | prov-t15c-u8-w24 |
+| 835 | u8-st-rem-spelling | REWORD (INSTRUCTION) | → "Read the requested form before answering." |
+| 847 | u8-st-rem-spelling | REWORD (INSTRUCTION) | → "Choose the requested form." |
+| 869 | u8-st-rem-agreement | REWORD (INSTRUCTION) | → "Compare the examples." |
+| 871 | u8-st-rem-agreement | REWORD (INSTRUCTION) | → "Read the whole phrase before answering." |
+| 874 | u8-st-rem-agreement | MARK | prov-ex-or-u8-agreement-2-gloss, prov-ex-or-u8-agreement-3, prov-ex-or-u8-agreement-3-gloss, prov-t15c-u8-p81 |
+| 878 | u8-st-rem-agreement | MARK | prov-ex-or-u8-agreement-7, prov-t15c-u8-w14b |
+| 880 | u8-st-rem-agreement | MARK | prov-t15c-u8-w14, prov-ex-or-u8-agreement-7 |
+| 882 | u8-st-rem-agreement | REMOVE | — |
+| 883 | u8-st-rem-agreement | REWORD (INSTRUCTION) | → "Practise the shown forms." |
+| 890 | u8-i-agreement-3 | REWORD (INSTRUCTION) | → "Compare the shown singular and plural forms." |
+| 892 | u8-g-availability-0 | MARK | prov-t15c-u8-g49, prov-t15c-u8-g50 |
+| 893 | u8-g-availability-0 | MARK | prov-t15c-u8-g49, prov-t15c-u8-g50 |
+| 895 | u8-st-rem-availability | MARK | prov-t15c-u8-g49, prov-t15c-u8-g50 |
+| 896 | u8-st-rem-availability | MARK | prov-t15c-u8-g49, prov-t15c-u8-g50 |
+| 898 | u8-st-rem-availability | MARK | prov-t15c-u8-g51 |
+| 899 | u8-st-rem-availability | MARK | prov-t15c-u8-g50, prov-t15c-u8-g51 |
+| 900 | u8-st-rem-availability | MARK | prov-t15c-u8-g49, prov-t15c-u8-g50, prov-t15c-u8-g51 |
+| 901 | u8-st-rem-availability | MARK | prov-t15c-u8-g49, prov-t15c-u8-g51 |
+| 902 | u8-i-availability-1 | MARK | prov-t15c-u8-g49, prov-t15c-u8-g51 |
+| 903 | u8-i-availability-1 | MARK | prov-t15c-u8-g49, prov-t15c-u8-g51 |
+| 904 | u8-i-availability-2 | REWORD (MARKED) | → "На э́той у́лице есть францу́зы means There are Frenchmen on this street."; prov-t15c-u8-g50, prov-ex-u8-availability-0-ru |
+| 905 | u8-i-availability-2 | REWORD (MARKED) | → "The other meaning concerns different things in a different place."; prov-t15c-u8-g50, prov-t15c-u8-g51 |
+| 906 | u8-i-availability-2 | MARK | prov-t15c-u8-g50, prov-t15c-u8-g51 |
+| 907 | u8-i-availability-3 | MARK | prov-t15c-u8-g49, prov-t15c-u8-g51 |
+| 908 | u8-i-availability-3 | MARK | prov-t15c-u8-g49, prov-t15c-u8-g51 |
+| 909 | u8-i-availability-3 | MARK | prov-t15c-u8-g49, prov-t15c-u8-g51 |
+
+4 — Phrase test: Unit8FactProvenanceTest.everyMultiWordRussianPhraseUnitEightShowsPassesTheTwoPartPhraseRule (same walk and matcher as Units 6–7) lists the 5 shown phrases (unit8-phrase-attestations.json: В Москве́ есть ста́рые зда́ния G:51, На э́той у́лице есть францу́зы G:50, пять столов G:99, синие книги W:21, хорошее письмо nominative-4213267.txt:93); its regression shows that мои́ дома́, built from attested forms, is unattested and is caught once shown. The agreement topic keeps the attested adjective–noun example синие книги (teaching cards 1, 2 and 6, ex-u8-agreement-0, u8-i-agreement-3 feedback).
+
+5 — A2-26: objective, session and step titles, the orient card, topic summary, guided and check bodies, teaching boilerplate and u8-i-agreement-3 feedback reworded; markup leaves the shipped span of prov-u8-irregular-rem (frozen original unchanged). Shared reference ref-u610-attribution: **not edited**.
+
+6 — T15f row note: Unit 7's complete adjective–noun case phrases were replaced by single forms under the phrase rule; the close-out should search frozen files for attested case phrases and restore Unit 7 examples where they exist.
+
+7 — Pins: Units 6–10 review pin 481f749f (UNITS_6_10_T15C_CURRICULUM_COMMIT; CompleteRuleContextPins.kt is shared); release source digest 5fb992c1… → 0d9b41be… (candidate.json). CompleteRuleContextPins.kt has no Cyrillic literal and is not listed in reviewed-curriculum-cyrillic.json. Audio manifest regenerated.
+
+Test expectation changes (old → new, reason):
+- Unit8PluralInstructionTest.everyPluralCardPrecedesPracticeAndFullRemediationRestoresFourteenForms: remediation contains "dictionary labels, not plural English translations" and "not establish an unrestricted productive plural algorithm" → it contains neither, contains "Review these seven pairs." and marks the kept gender sentence; entries 791 (REMOVE) and 812 (REWORD).
+- Unit8PluralInstructionTest.earlierSevenAnswerPluralCompletionCannotCreditLaterSpellingReinforcement: credited items after completing the plural objective 7 → 13; six typed plural checks join the objective (the spelling assertions are unchanged).
+- ContentAuditCorrectionTest.unitEightTeachingWorksTheNounPluralAndSeparatesOtherPatterns: teaching contains "All these options are correctly spelled" → does not, and contains "Choose the requested form."; entry 847 (REWORD).
+- CurriculumDesignDiagnosticsTest: items 696 → 705, requiredChecks 493 → 502; OptionPresentationTest: items 696 → 705, required displays 493 → 502 (first-option counts 558 and 376 unchanged); nine typed Unit 8 checks.
+- UnitTestAndBinderTest: Units ≤ 7 have unit tests and Unit 8 is the "0 typed items" example → Units ≤ 8 have unit tests (Unit 8: 20 items, 9 typed) and Unit 9 is the example; Unit 8 now meets A2-23.
+- Unit8ExistenceSequenceTest.activeAvailabilityChainDoesNotTeachOrScoreLaterAbsenceGrammar: the scan covered the items of the availability session's steps → also the objective's check items, which moved to u8-s-checks (scope kept, not narrowed).
+No test or assertion was deleted or skipped.
+
+### 2026-11-16 — QUEUE owner decision: targeted tests before push; exact-commit CI is the full-suite gate (Claude Code)
+
+Owner decision 11/16/2026, changing Continue protocol step 6: before pushing, run the targeted tests for the change (the touched units, validator, provenance, phrase, pin and digest tests). The exact-commit CI run is the full-suite gate; do not wait on local full-suite runs. Monitor the exact-commit CI run every 15 minutes until it finishes; on a pass, mark the task DONE in a queue-only commit; on a failure, report the failing tests from the CI log, fix them, push and monitor again; stop if the same task fails CI twice. Context: two local full-suite runs on T15c's d4a635ed did not finish (one stopped at the two-hour background limit on its last of 33 test forks; one ended when the container restarted), so T15c was pushed on targeted tests under this decision.
