@@ -1,0 +1,160 @@
+**Unit 18 — report 1 of 3**
+
+Read-only preparation at **`20bfde5c7e6648986ee908b1b68bda6d4d8bd6e8`**, the fetched branch head. No tracked files changed; nothing committed or pushed.
+
+**Frozen-source aliases**
+
+All paths are under `catalog/sources/`.
+
+| Alias | Frozen file |
+|---|---|
+| G | `units-26-30/wikipedia/russian-grammar-1369617627.txt` |
+| Q | `units-3-5/wikibooks/interrogative-4220316.txt` |
+| AD | `units-6-10/openrussian/adjectives.csv` |
+| N | `units-3-5/openrussian/nouns.csv` |
+| MOR | `units-21-25/supplemental/morfologiya-148939075.txt` |
+
+**1. A2-24 items**
+
+Kotlin diagnostics report **4 exact-key teaching exposures**, **0 label/position findings**, **0 shown-cue-only findings** and **0 fewer-than-three-options findings**.
+
+| Item ID | Flag | Fix candidate and frozen evidence |
+|---|---|---|
+| `u18-i-comparison-1` | `EXACT_KEY_IN_TEACHING` | Move to a later retrieval session, preserving the existing three-way meaning contrast. G:301 supplies the superlative and its gloss; G:303 supplies the competing meanings. |
+| `u18-i-comparison-2` | `EXACT_KEY_IN_TEACHING` | Move to later retrieval. G:303 supplies the complete analytic comparative; G:301,303 supply competing meanings. |
+| `u18-i-relative-1` | `EXACT_KEY_IN_TEACHING` | Move to later retrieval. Preserve the woman/man/direct-question contrast. Q:168,172–173. |
+| `u18-i-relative-2` | `EXACT_KEY_IN_TEACHING` | Move to later retrieval. Preserve the man/woman/book-question contrast. Q:170,172–173. |
+
+The two comparison checks also have `ANSWER_IN_INSTRUCTION_SIGNAL`: teaching explicitly tells the learner which answer to select. Remove those selection scripts while retaining explanations and examples.
+
+No new third options are needed.
+
+**2. A2-23 and typed candidates**
+
+Current: **4 checked, 0 typed**.
+
+Retaining all four closed checks requires **16 additions** to reach the minimum: **20 checked, 16 typed, 80% typed**.
+
+Every candidate below occurs verbatim in its cited frozen line, including its existing stress marks, capitalization and punctuation.
+
+| Typed-key candidate | Frozen citation | Exact stress |
+|---|---|---|
+| бо́льший | G:301 | PASS |
+| лу́чший | G:301 | PASS |
+| красне́е | G:301 | PASS |
+| наибо́льший | G:301 | PASS |
+| бо́лее | G:303 | PASS |
+| ме́нее | G:303 | PASS |
+| наиме́нее | G:303 | PASS |
+| бо́лее до́брый | G:303 | PASS |
+| Которое яблоко моё? | Q:168 | PASS; preserve unstressed words and ё |
+| Которую книгу вы хотите? | Q:170 | PASS; preserve unstressed spelling |
+| Же́нщина, с кото́рой я дружу́ | Q:172 | PASS |
+| Человек, который изменил мир | Q:173 | PASS; preserve unstressed spelling |
+| Которое | Q:168 | PASS; no stress added |
+| Которую | Q:170 | PASS; no stress added |
+| кото́рой | Q:172 | PASS |
+| который | Q:173 | PASS; no stress added |
+
+Suggested uses:
+
+- The first eight: bounded recall of the already taught comparison forms. Specify **full adjective** where necessary to distinguish a requested form from another comparative construction.
+- The four complete questions/clauses: recall from their taught English meanings.
+- The final four: complete the corresponding frozen example with its pronoun omitted. Keep every remaining Russian word unchanged.
+
+**Teaching needed first:** all these strings are already displayed, but exposure alone is insufficient preparation for typed production. Add explicit, bounded production practice covering the comparison forms, the four complete expressions, and pronoun selection by gender/case. Q:40 supplies the pronoun agreement/case rule; AD:5 supplies its paradigm.
+
+Keep that teaching and guided practice in earlier sessions. The later typed-check session must not display its accepted keys. Do not add inferred stress or unsourced accepted variants.
+
+**3. English-only fact inventory**
+
+Scope: every English-only Unit 18 entry in `audit/T15-n0-unmarked-russian-facts.csv`: **45 entries, 44 distinct sentences**.
+
+Recommended dispositions: **44 MARK, 1 REMOVE, 0 REWORD-only, 0 PENDING-S1, 0 PENDING-INTAKE**.
+
+Here, MARK means preserve the supported claim, remove provenance narration where necessary, and bind the final sentence to actual frozen-source records. It does not mean retaining wording such as “retained” or “source gloss.”
+
+| CSV lines | Disposition and evidence |
+|---|---|
+| 2132–2140 | **MARK**. Comparison meanings/full adjective forms: G:301; contextual *better/best* qualification: AD:64; full-form declension: AD:64,255; invariant comparative distinction: MOR:488. |
+| 2143–2146 | **MARK**. Simple comparative and analytic construction: G:301,303; invariance: MOR:488; adjective agreement: G:249 and AD:72. |
+| 2148–2160 | **MARK**. Superlative and more/less/least distinctions: G:301,303. |
+| 2162–2171 | **MARK**. Direct-question and relative-clause meanings: Q:168,170–173. |
+| 2172–2173 | **MARK**. Pronoun agreement/case: Q:40; forms: AD:5; noun gender: N:1090 and N:60; subject/direct-object case functions: G:17–22. |
+| 2174 | **MARK**. Apple ownership versus wanting a book: Q:168,170. |
+| 2176–2178 | **MARK**. Relative-clause interpretation and pronoun rule: Q:40,173; masculine antecedent: N:2; subject case: G:17–18. |
+| 2180–2182 | **MARK**. Woman example and its displayed preposition placement: Q:172; feminine noun: N:36; pronoun instrumental form: AD:5; instrumental accompaniment: G:42,49. Keep the word-order statement explicitly limited to this example. |
+| 2185–2193 | **MARK**. The four competing interpretations: Q:168,170,172–173; case explanation additionally Q:40 and G:17–22,49. |
+| 2183 | **REMOVE**. “Recognizing these meanings does not demonstrate…” describes assessment limitations rather than teaching Russian. |
+
+Some CSV entries are fragments split at punctuation—for example 2162, 2164, 2168 and 2170. Rejoin the original complete sentence before attaching a marker; do not mark a detached quotation fragment as a standalone claim.
+
+Coverage records alone cannot support any of these markers.
+
+**4. Teaching errors and qualifications**
+
+- **лу́чший:** avoid teaching “better” as its universal translation. AD:64 explicitly supplies both *better* and *best*. The current qualification is supportable; its reference to pending review belongs outside learner text.
+- **Simple comparative terminology:** prefer “simple comparative” over an unexplained “short form.” The latter can be confused with ordinary short adjectives. G:301 and MOR:488 support the comparative construction and its invariance.
+- **бо́лее до́брый:** it is an attested example at G:303, but that same line says the analytic construction is rarely used when a special comparative exists. Do not present it as the default way to form every comparison. AD:72 also contains the synthetic comparative.
+- **наибо́льший:** “the biggest” is the frozen example gloss, not a restriction to physical size in every context. AD:1017 also gives *the greatest/the largest*.
+- **Relative pronouns:** the teaching correctly separates antecedent gender/number from the pronoun’s role-dependent case. Preserve this explanation when cleaning wording; meaning recognition alone does not exercise that distinction.
+- Remove “Qualified review of the contextual gloss remains pending” from learner teaching. It is workflow narration.
+
+No additional unfrozen grammar page is necessary for the bounded teaching proposed here.
+
+**5. A2-26 lint**
+
+Counts are owner-field hits.
+
+| Category | Hits | Owners |
+|---|---:|---|
+| Governance | **12** | Listed below |
+| Markup | **0** | — |
+| Narration | **0** | — |
+
+Governance owners:
+
+- `obj-u18-comparison`
+- `u18-g-comparison-0`
+- `u18-s-comparison`, `u18-s-orient`
+- `u18-st-orient` — body and title
+- `u18-st-rem-{comparison,relative}`
+- `u18-st-teach-comparison-{1,3}`
+- `u18-st-teach-relative-3`
+- `unit-18`
+
+The zero narration count is the regex result; it does not excuse the pending-review sentence identified above.
+
+**6. Phrases: presence and stress**
+
+**5/5 PASS**, with no missing frozen stress evidence.
+
+The count follows the existing phrase test’s maximal runs of space-separated Cyrillic words; commas divide the two relative examples.
+
+| Learner-visible phrase | Frozen presence |
+|---|---|
+| бо́лее до́брый | G:303 |
+| Которое яблоко моё | Q:168 |
+| Которую книгу вы хотите | Q:170 |
+| с кото́рой я дружу́ | Q:172 |
+| который изменил мир | Q:173 |
+
+Both complete comma-containing examples are also present verbatim at Q:172–173. Matching ignored case and stress for presence, retained **ё/е**, and independently checked every stressed word.
+
+**7. Shared references**
+
+`ref-u1620-attribution` is shared with **Units 16, 19 and 20**. Editing that reference affects all four units.
+
+**8. Validator constraints**
+
+No Unit 17-style mandatory “row” wording blocks the proposed Unit 18 fixes. Both objectives use the semantic distinction path in [V2Validator.kt:3923](/tmp/codex-prep1820/app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt:3923).
+
+Preserve:
+
+- the closed checks needed for `structureValid`/`featureValid`;
+- frozen evidence and named-answer feedback requirements;
+- accepted-answer provenance bindings enforced at [V2Validator.kt:4792](/tmp/codex-prep1820/app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt:4792).
+
+Typed additions supplement those closed checks.
+
+**Feasibility: YES — 20 checked/16 typed using frozen sources; PENDING-S1 0, PENDING-INTAKE 0. Remaining work is production teaching, delayed retrieval, fact bindings and learner-wording cleanup; no frozen-source blocker identified.**
