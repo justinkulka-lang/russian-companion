@@ -12,7 +12,8 @@ class Unit8ExistenceSequenceTest {
         val o = u.objectives.single { it.id == "obj-u8-availability" }
         val session = u.sessions.single { it.id == "u8-s-availability" }
         val text = (listOf(o.title, session.title) + session.steps.flatMap { listOf(it.title,it.body) } +
-            session.steps.flatMap { it.itemIds }.distinct().map { p.item(it)!! }.flatMap {
+            // T15c: the checks moved to the end-of-unit session u8-s-checks; the objective's check items stay in scope.
+            (session.steps.flatMap { it.itemIds } + o.checkItemIds).distinct().map { p.item(it)!! }.flatMap {
                 listOf(it.prompt,it.promptLetter.orEmpty(),it.answer,it.feedback) + it.options + it.distractorRationales +
                     listOf(it.assessment!!.testedFeature,it.assessment.whyAnswerDemonstratesObjective) + it.assessment.distractorDifference
             }).joinToString("\n")
