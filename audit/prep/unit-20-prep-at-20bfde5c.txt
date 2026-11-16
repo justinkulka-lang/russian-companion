@@ -1,0 +1,191 @@
+**Unit 20 — report 3 of 3**
+
+Read-only preparation at **`20bfde5c7e6648986ee908b1b68bda6d4d8bd6e8`**, the same snapshot as Units 18–19. No tracked files changed; nothing committed or pushed.
+
+**Frozen-source aliases**
+
+All paths are under `catalog/sources/`.
+
+| Alias | Frozen file |
+|---|---|
+| G | `units-26-30/wikipedia/russian-grammar-1369617627.txt` |
+| V | `units-3-5/openrussian/verbs.csv` |
+
+**1. A2-24 items**
+
+Kotlin diagnostics report **8 exact-key teaching exposures**, **0 label/position findings**, **0 shown-cue-only findings** and **0 fewer-than-three-options findings** among required checks.
+
+Every required check below needs later retrieval, separated from teaching that displays its key.
+
+| Item ID | Flag | Fix candidate and frozen evidence |
+|---|---|---|
+| `u20-i-motion-1` | `EXACT_KEY_IN_TEACHING` | Move later; preserve the walking/vehicle/carrying meaning contrast. G:1266,1268,1276. |
+| `u20-i-motion-2` | Same | Move later; remove “For … choose …” from teaching. Carrying, leading and conveying: G:1260,1262,1276; fuller distinctions at G:1316,1321,1327. |
+| `u20-i-motion-3` | Same | Move later; retain the setting-out contrast and correct the duration rationale described in section 4. G:1302,1305–1307. |
+| `u20-i-motion-4` | Same | Move later; retain the bounded translation of the displayed matrix clause. G:1395 supplies it; competing sentences are at G:1383,1415. |
+| `u20-i-direction-birds` | Same | Move later; preserve the whole-context directionality/aspect contrast. G:1248,1286,1289. |
+| `u20-i-direction-city` | Same | Move later; preserve the various-directions interpretation. G:1294–1295. |
+| `u20-i-direction-weekly` | Same | Move later; preserve the repeated-trips interpretation. G:1296–1297. |
+| `u20-i-direction-round` | Same | Move later; preserve the supplied completed-round-trip interpretation and imperfective classification. G:1248,1298–1299. |
+
+`u20-i-motion-2` also has `ANSWER_IN_INSTRUCTION_SIGNAL`.
+
+Outside those required-check counts, `u20-g-motion-0` remains a two-option, isolated-infinitive directionality question. A stronger replacement keeps its ID but uses the whole context at **G:1288**, with competing contextual interpretations from G:1286–1298. Teach that context before guided practice.
+
+**2. A2-23 and typed candidates**
+
+Current: **8 checked, 0 typed**.
+
+Retain all eight closed checks and add **12 typed checks**: **20 checked, 12 typed, 60% typed**.
+
+| Typed-key candidate | Frozen citation/field | Exact stress result |
+|---|---|---|
+| идти́ | V:10 `accented`; G:1268 | PASS |
+| е́хать | V:108 `accented`; G:1266 | PASS |
+| нести́ | V:202 `accented`; G:1276 | PASS |
+| вести́ | V:64 `accented`; G:1262 | PASS |
+| везти́ | V:474 `accented`; G:1260 | PASS |
+| пошёл | V:27 `past_m` | PASS; ё retained |
+| шёл | V:10 `past_m` | PASS; ё retained |
+| отошёл | V:417 `past_m` | PASS; ё retained |
+| идём | V:10 `presfut_pl1` | PASS; ё retained |
+| летят | G:1289 | PASS, unstressed verbatim |
+| ходит | G:1292 | PASS, unstressed verbatim |
+| ездил | G:1299 | PASS, unstressed verbatim |
+
+OpenRussian comparisons converted its stress apostrophe to U+0301 only.
+
+All twelve forms already occur in Unit 20 teaching. **Production teaching must be added first:** explicitly identify the contextual forms’ person, number or past agreement and practise the bounded forms before later typed retrieval. Their occurrence inside a sentence does not by itself prepare isolated production.
+
+No stress should be added to the final three keys without separate frozen stress evidence. No unsourced accepted variants are needed.
+
+**3. English-only fact inventory**
+
+Scope: every English-only Unit 20 entry in `audit/T15-n0-unmarked-russian-facts.csv`: **89 entries, 66 distinct sentences**.
+
+Recommended totals: **75 MARK, 13 REWORD, 1 REMOVE, 0 PENDING-S1, 0 PENDING-INTAKE**.
+
+MARK means retain the supported claim, remove provenance narration where necessary, and bind the final sentence to frozen evidence. Exclude the explicitly listed REWORD/REMOVE entries from the ranges below.
+
+| CSV lines | MARK evidence |
+|---|---|
+| 2286–2303 | Unprefixed aspect and contextual directionality: G:1248,1286–1299. |
+| 2306–2315 | Walking/vehicle distinctions and carrying/leading/conveying: G:1260–1276,1313–1327. |
+| 2319–2324 | Setting out versus motion already in progress: G:1302,1305–1307. |
+| 2326–2333 | Selected paths, subjects and accompanying phrases: G:1335,1382–1383,1394–1395,1415. |
+| 2335–2356 | The six supplied directionality contexts and their aspect: G:1248,1286–1302. |
+| 2358–2362 | Lexical meanings: G:1260–1276,1316,1321,1327. |
+| 2366–2371 | Setting-out and bounded sentence interpretations: G:1302,1305,1383,1395,1415. |
+| 2373–2403 | Contextual classifications and imperfective forms: G:1248,1286–1299. |
+
+| CSV lines | Other disposition |
+|---|---|
+| 2291,2299,2375,2383,2391,2399 | **REWORD:** “Review the complete example before answering.” Replace repetitive commentary about “supplied interpretations” and labels. Preserve the actual scope explanations elsewhere in teaching. |
+| 2294,2302,2378,2394,2402 | **REWORD the complete rationale**, rather than marking the detached false-option quotation. Suggested supported wording: “These unprefixed motion forms are imperfective; completing a trip does not by itself change that classification.” G:1248,1298–1299. Mark that factual explanation. |
+| 2322 | **REWORD:** correct the English rendering to “He was on his way to a friend's place.” G:1307. |
+| 2365 | **REWORD:** “This choice adds a long duration that the sentence does not state.” G:1302,1305–1307. |
+| 2317 | **REMOVE:** commentary about the difference between two kinds of question. |
+
+Entries such as “The answer is …” should retain only their supported explanatory content. Rejoin quotation and punctuation fragments before marking; disposition totals count CSV entries, not the eventual number of markers.
+
+Coverage records alone cannot support the retained facts.
+
+**4. Teaching errors and qualifications**
+
+- **Incorrect stress:** `у́летят` is unsupported. G:1383 bolds the prefix; it does not mark that vowel as stressed. V:1177 gives the stressed inflection **улетя́т**.
+- **Incorrect source rendering:** `u20-st-teach-motion-4` pairs `Он шёл к другу` with “He went to a friend's place.” The actual corresponding rendering at G:1307 is **“He was on his way to a friend's place.”**
+- **Duration overstatement:** the rationale at CSV:2365 calls “already on the way for a long time” an imperfective duration reading. Neither the imperfective form nor G:1307 supplies “for a long time.” Explain that this choice adds unsupported duration.
+- **Setting out:** preserve the explanation that the prefixed form presents the journey’s beginning without asserting arrival. Do not extend G:1302’s “has not yet returned” wording into an unconditional rule about every use.
+- **Round trips:** keep the qualification that the completed-return interpretation belongs to the supplied example at G:1299. Do not generalize it to every occurrence of the multidirectional past form.
+- **Leading/conveying:** teach the selected meanings without implying that each verb has only one English gloss. G:1321 also includes driving a vehicle among uses of the leading pair.
+
+These corrections have frozen support; no additional grammar page is needed.
+
+**5. A2-26 lint**
+
+Counts are owner-field hits.
+
+| Category | Hits |
+|---|---:|
+| Governance | **12**, across 9 owners |
+| Markup | **0** |
+| Narration | **0** |
+
+Governance owners:
+
+- `ref-ca-motion` — title, summary and detail;
+- `u20-g-motion-0`;
+- `u20-i-direction-round`;
+- `u20-s-orient`;
+- `u20-st-orient` — title and body;
+- `u20-st-rem-motion`;
+- `u20-st-teach-direction-return`;
+- `u20-st-teach-motion-4`;
+- `unit-20`.
+
+**6. Phrases: presence, stress and the failure**
+
+Current result: **11 PASS / 1 FAIL** among 12 distinct phrases.
+
+The failure is **not another piped-link result**. Phrase presence passes; exact frozen stress fails:
+
+```text
+Они у́летят из Владивостока через месяц
+presence: PASS at G:1383
+missing frozen stress evidence: у́летят
+```
+
+G:1383 contains:
+
+```text
+Они '''у'''летят из Владивостока через месяц.
+```
+
+The bold single-vowel **prefix** was interpreted as stress emphasis.
+
+**Sourced replacement:**
+
+> Они улетят из Владивостока через месяц.
+
+This preserves the frozen sentence after removing formatting, without adding stress. If stress is displayed on that verb, cite **V:1177 `presfut_pl3`**, which supplies **улетя́т**.
+
+A temporary, untracked probe replacing only the unsupported stress produced:
+
+```text
+UNIT 20 phrases 12
+PASS 12 FAIL 0
+```
+
+The other phrase witnesses are:
+
+| Phrase/context | Frozen citation |
+|---|---|
+| Library; birds flying south | G:1287,1289 |
+| Child’s walking ability; city walking | G:1292,1295 |
+| Weekly supermarket trips; Russia round trip | G:1297,1299 |
+| Setting out; being on the way; `к другу` | G:1305,1307 |
+| Boy stepping back | G:1395 |
+| Ball reaching the roof | G:1415 |
+
+Correct the learner example, teaching/remediation and copied provenance/coverage text consistently.
+
+**7. Shared references**
+
+- `ref-u1620-attribution` is shared with **Units 16, 18 and 19**.
+- `ref-ca-motion` is linked only by Unit 20.
+
+**8. Validator constraints**
+
+There is no mandatory layout wording blocking these prompt fixes. Two existing safeguards must be handled explicitly:
+
+1. **Exact checked-item list.**  
+   [V2ContentChecks.kt:79](/tmp/codex-prep1820/app/src/main/java/dev/russiancompanion/v2/curriculum/V2ContentChecks.kt:79) compares the objective’s checked-item list exactly. Adding 12 typed checks requires updating the data pin in `catalog/content-checks.json` and the generated pack, retaining all eight closed checks and both required guided contexts.
+
+2. **Pinned directionality tuples.**  
+   The four independent directionality contexts and two guided contexts have protected cue/key/distractor tuples. Moving retrieval and cleaning explanations should preserve those contrasts and their source anchors.
+
+The stress defect also exposes an extraction problem: [the formatter](/tmp/codex-prep1820/catalog/units_3_5_intake.py:196), called by [the Unit 16–20 selector](/tmp/codex-prep1820/catalog/units_16_20_batch_a.py:48), treats an intra-word bold vowel as stress. That interpretation is inappropriate for G:1383’s highlighted prefix. Correct this selection without globally discarding genuine stress evidence.
+
+No stress-check exemption or relaxed provenance rule is needed.
+
+**Feasibility: YES — 20 checked/12 typed using frozen sources; PENDING-S1 0, PENDING-INTAKE 0. Remaining blockers are the unsupported stress, incorrect English rendering/duration explanation, teaching-session exposures, fact bindings and corresponding data-pin updates.**

@@ -10,4 +10,5 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - units-16-17-prep-at-20bfde5c.txt: Units 16, 17 (T17). Note the Unit 17 validator conflict on six "row" prompts and the new intake candidates (Wiktionary "под"; ReadyRussian Grammar 24 Capitalization).
 - unit-18-prep-at-20bfde5c.txt: Unit 18 (T17), report 1 of 3 for Units 18-20.
 - unit-19-prep-at-20bfde5c.txt: Unit 19 (T17), report 2 of 3. Note: phrase matcher piped-link bug; probability capability binding constraint; intake candidates Wikipedia "Сослагательное наклонение" and Wiktionary "бы".
+- unit-20-prep-at-20bfde5c.txt: Unit 20 (T17), report 3 of 3. Note: the one failing phrase is a stress-extraction bug (bold prefix у read as stress in "улетят", G:1383), not the piped-link bug; fix the formatter selection in units_16_20_batch_a.py without discarding real stress. Adding typed checks needs the catalog/content-checks.json checked-list pin updated.
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
