@@ -184,7 +184,7 @@ MEDIUM and LOW findings for those units are fixed or given a written disposition
 | T15a-n3 | CODEX | Owner direction 11/15/2026: corrections from Codex's verification of T15a-n2 at 9a9b9760. (1) FrozenSourceBindingTest binds source ID, revision and frozen file together through the FREEZE.json manifest index, not by revision alone; regression: a genuine Wikibooks 4330404 record relabelled src-ruwiki-narechie-152437423 fails. (2) The unfrozen allowlist is the exact 24 record IDs, each pinned to its originalSourceText hash; regression: a 25th record under an allowed source ID fails. (3) Owner decision on phrase matching: a shown phrase is attested only if (a) it appears in a frozen file after stripping markup, collapsing whitespace, ignoring case and removing stress marks, with ё and е kept distinct, and (b) every stressed word in it has that exact stress in some frozen source row or line, using the B3 marker comparison; regressions for мо́й стол with and without stress evidence, моё/мое письмо and an absent phrase; re-run the Unit 6 and Units 7–10 phrase counts and record changes. Recompute pins, validator hash and release digest; targeted tests, one full suite, push, exact-commit CI, DONE in a queue-only commit. | Binding, allowlist and phrase tests pass; full suite and exact-commit CI pass. | T15a-n2 | DONE — 87b7fe17 (queue), 4c402ef7 (binding, allowlist and phrase-rule tests); Full local suite on 4c402ef7 passed (1343 tests, 0 failures, 0 errors, 1 skipped); exact-commit Linux CI 43768082496 passed. See Log 2026-11-15 T15a-n3. |
 | T15b | CODEX | Unit 7. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 33 checked, 0 typed. A2-24: 11 shown-cue-only, 4 label/position (15 unique items), 30 exact-key-in-session. A2-26 lint: 129 governance, 8 markup, 4 narration. Typed needed: at least 8 (closed checks after removing invalid items: 18; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. T15a-n2 note (2026-11-15): 12 Unit 7 phrases are UNATTESTED in any frozen file; see Log 2026-11-15 T15a-n2. T15a-n3 note (2026-11-15): under the two-part phrase rule 9 Unit 7 phrases are UNATTESTED (no longer но́вая книга, но́вые книги, хоро́шие книги); see Log 2026-11-15 T15a-n3. | Unit 7 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1, T15a-n1, T15a-n2, T15a-n3 | DONE — bce23c99 (queue), 0dfb44f4 (Unit 7 content, invariance rule, tests), ce5e3265 (pins, validator hash, digest); Full local suite on ce5e3265 passed (1349 tests, 0 failures, 0 errors, 1 skipped); exact-commit Linux CI 43806052387 passed. See Log 2026-11-16 T15b. |
 | T15c | CODEX | Unit 8. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 19 checked, 0 typed. A2-24: 15 shown-cue-only (15 unique items), 17 exact-key-in-session. A2-26 lint: 26 governance, 2 markup. Typed needed: at least 16 (closed checks after removing invalid items: 4; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 9. | Unit 8 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | DONE — 3e1be30c (queue), 481f749f (Unit 8 content, agreement-3 re-pin, tests, T15f note), 4de56cde (pins, digest), d4a635ed (existence test scope); Targeted T15c tests on d4a635ed passed (35 classes, 297 tests, 0 failures, 0 errors, 0 skipped); local full suite not run under the owner decision of 11/16/2026; exact-commit Linux CI 43930703388 passed. See Log 2026-11-16 T15c. |
-| T15d | CODEX | Unit 9. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 35 checked, 0 typed. A2-24: no shown-cue-only or label items, 22 exact-key-in-session; owner TODO: Unit 9 cumulative review shows two items with the same cue, and neither may give away the other's answer. A2-26 lint: 102 governance. Typed needed: at least 15 (closed checks after removing invalid items: 35; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. | Unit 9 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | IN_PROGRESS |
+| T15d | CODEX | Unit 9. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 35 checked, 0 typed. A2-24: no shown-cue-only or label items, 22 exact-key-in-session; owner TODO: Unit 9 cumulative review shows two items with the same cue, and neither may give away the other's answer. A2-26 lint: 102 governance. Typed needed: at least 15 (closed checks after removing invalid items: 35; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. | Unit 9 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | DONE — 4e7eb1c9 (queue), 50f77c28 (Unit 9 content, review anchor, pattern-3 cue and re-pin, tests), 7d6e66e1 (pins, reviewed-source hash, digest); Targeted T15d tests passed (batches of 29, 31 and 16 classes; final run at 7d6e66e1: 118 tests, 0 failures, 0 errors, 0 skipped; every earlier failure re-run and passing); exact-commit Linux CI 43965724334 passed. See Log 2026-11-16 T15d. |
 | T15e | CODEX | Unit 10. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 22 checked, 0 typed. A2-24: 5 shown-cue-only, 5 label/position (9 unique items), 14 exact-key-in-session. A2-26 lint: 65 governance, 6 markup. Typed needed: at least 7 (closed checks after removing invalid items: 13; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 10. | Unit 10 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | TODO |
 | T15f | CODEX | Block 2 close-out: A2-36 reference entries for grammar first taught in Units 6–10; A2-28 cumulative review for Units 6–10; block-wide validity (A2-23/24) and learner-text lint (A2-26) reports clean for Units 6–10; audit/FINDINGS_DISPOSITION.csv entries for every MEDIUM and LOW finding scoped to Units 6–10. T15c note (2026-11-16): under the two-part phrase rule, T15b replaced Unit 7's complete case-phrase examples (adjective and noun changing case together, such as the book and window pairs) with single forms. The close-out should search the frozen files under catalog/sources/ for attested adjective–noun case phrases and restore Unit 7 examples where they exist; see Log 2026-11-16 T15b. | Block 2 meets A2-01; full exact-commit Linux CI passes. | T15a, T15b, T15c, T15d, T15e | TODO |
 | T16 | CODEX | Block 3, Units 11–15. Includes CC003. | Block 3 meets A2-01. | T15 | TODO |
@@ -2458,3 +2458,169 @@ No test or assertion was deleted or skipped.
 ### 2026-11-16 — QUEUE owner decision: targeted tests before push; exact-commit CI is the full-suite gate (Claude Code)
 
 Owner decision 11/16/2026, changing Continue protocol step 6: before pushing, run the targeted tests for the change (the touched units, validator, provenance, phrase, pin and digest tests). The exact-commit CI run is the full-suite gate; do not wait on local full-suite runs. Monitor the exact-commit CI run every 15 minutes until it finishes; on a pass, mark the task DONE in a queue-only commit; on a failure, report the failing tests from the CI log, fix them, push and monitor again; stop if the same task fails CI twice. Context: two local full-suite runs on T15c's d4a635ed did not finish (one stopped at the two-hour background limit on its last of 33 test forks; one ended when the container restarted), so T15c was pushed on targeted tests under this decision.
+
+### 2026-11-16 — T15d DONE: Unit 9 meets A2-23/24/26 with frozen-source facts and attested phrases (Claude Code)
+
+Owner direction 11/16/2026. Plan: Codex prep report audit/prep/units-09-10-prep-at-9a9b9760.txt (branch owner/prep-reports, not merged), Unit 9 section only. Every cited file and line was re-checked against 20bfde5c: the 22 exact-key items and their key lines (numbers-4371358.txt:12, 19, 20, 27, 30, 31, 36, 38, 39, 61, 62, 63, 65, 74, 75, 77, 78–79, 88, 90, 109), the 15 typed keys, nouns.csv:32 and :14496, genitive-4567338.txt:8–9, 13, 15–16, numbers:121 (пять лет), V2CumulativeReview.kt:170–193, 470 and 590, the A2-24 counts (35 checked, 22 exact-key, 0 cue-only, 0 label), the lint count (102 governance) and all 112 inventory lines (audit/T15-n0-unmarked-russian-facts.csv 912–1135); **no cited line differs**. Commits **4e7eb1c9** (queue IN_PROGRESS), **50f77c28** (content, transformer catalog/apply_t15d_unit_9.py, review anchor, pattern-3 re-pin, tests), **7d6e66e1** (pins, reviewed-source hash, digest). Targeted T15d tests passed (batches of 29, 31 and 16 classes; final run at 7d6e66e1: 118 tests, 0 failures, 0 errors, 0 skipped; every earlier failure re-run and passing). Exact-commit Linux CI **43965724334** passed (2026-11-16 22:00–23:28 UTC). No force push.
+
+Unit 9 now: 50 checked, 50 required, 15 typed (30.0 percent); A2-24 signals 0 (was 22 exact-key); ANSWER_IN_INSTRUCTION 0 (was 2); A2-26 lint 0 (was 102 governance); REMEDIATION_TRANSFER_OR_GAP 0 (was 15). Full validator passes. The only remaining Unit 9 review signal is FEWER_THAN_THREE_OPTIONS on the 31 two-option checks (advisory; the report keeps those closed checks). No other unit's design signals changed.
+
+1 — A2-24. Every Unit 9 CHECK step moves to a new session u9-s-checks after all teaching (before the book session); each keeps its remediation link. "Which admitted form …" prompts become "Which form matches the shown number?" and "Which form agrees with the shown word?". The odindva-6 teaching states the forms ("…один час uses masculine singular один with час; feminine singular одна is the form shown with девушка.") instead of the "Choose один rather than одна" script, which cleared the two ANSWER_IN_INSTRUCTION signals; placement alone had not. Remediation in every Unit 9 session repeats that session's teaching (the five table sessions showed one table line).
+
+2 — Typed checks (A2-23), prompt "Type the shown number in Russian words."; each key is the taught answer of the matching closed check (report section 2):
+
+| Item | Cue → key | Frozen source |
+|---|---|---|
+| u9-i-type-1 | 1 → оди́н | numbers-4371358.txt:12 |
+| u9-i-type-5 | 5 → пять | numbers-4371358.txt:36 |
+| u9-i-type-10 | 10 → де́сять | numbers-4371358.txt:65 |
+| u9-i-type-4 | 4 → четы́ре | numbers-4371358.txt:30 |
+| u9-i-type-14 | 14 → четы́рнадцать | numbers-4371358.txt:31 |
+| u9-i-type-19 | 19 → девятна́дцать | numbers-4371358.txt:61 |
+| u9-i-type-12 | 12 → двена́дцать | numbers-4371358.txt:19 |
+| u9-i-type-50 | 50 → пятьдеся́т | numbers-4371358.txt:38 |
+| u9-i-type-90 | 90 → девяно́сто | numbers-4371358.txt:62 |
+| u9-i-type-20 | 20 → два́дцать | numbers-4371358.txt:20 |
+| u9-i-type-300 | 300 → три́ста | numbers-4371358.txt:27 |
+| u9-i-type-500 | 500 → пятьсо́т | numbers-4371358.txt:39 |
+| u9-i-type-900 | 900 → девятьсо́т | numbers-4371358.txt:63 |
+| u9-i-type-21 | 21 → два́дцать оди́н | numbers-4371358.txt:73 |
+| u9-i-type-101 | 101 → сто оди́н | numbers-4371358.txt:74 |
+
+3 — Cumulative review (owner TODO). Unit9NounBehaviorCumulativeReviewPolicy is now **unit9-prior-noun-behavior-plural-gender-v4**; its plural anchor is u8-i-plural-3 (ма́ма → ма́мы, nouns.csv:83) instead of u8-i-plural-2 (окно́, the same cue as u5-i-decl-окно). u8-i-plural-2 stays a Unit 8 check and the noun-behavior pool is unchanged; the Unit 9 advancement declares v4. New Unit9ReviewSharedCueTest checks every eligible candidate of the active A2-28 policy (3 anchor pools and 7 supplement pools, 30 items): no two share a cue (ignoring case and stress); its regression shows that the v3 anchor shares its cue with the noun-behavior pool; it also checks that no two Unit 9 checks repeat one task and that u9-i-pattern-3 no longer repeats u9-i-quantity-4.
+
+4 — Within-unit duplicate: u9-i-pattern-3 shows пять лет (numbers-4371358.txt:121, the taught example ex-u9-quantity-10) instead of шестнадцать рублей; its feedback states value 5 (marked with numbers:92), testedFeature FINAL_DIGIT_FIVE_PLUS; the pattern teaching shows that example. Its CompleteRuleContextPins.kt tuple is re-pinned (c0d8f40c… → 4868dc23…) with a dated note in its four rule-context records; answer and distractors unchanged; no validator logic changed.
+
+5 — Fact inventory: 112 English-only Unit 9 entries (75 distinct sentences) → **107 MARK, 3 REWORD, 2 REMOVE**, as the report recommends. Three MARK entries keep the marker on revised learner wording: 1009 and 1012 drop "retained" narration (A2-26), and 1128 states the new pattern-3 value; each records currentSentence. Dispositions with reasons and record IDs: app/src/test/resources/unit9-fact-dispositions.json; its 107 marker reviews name a frozen file, line and quote for every English-only marker. Every Unit 9 feedback, rationale and remediation sentence is marked or is a reviewed instruction (Unit9FactProvenanceTest; regression adds removed entry 912 to item feedback and to a remediation body, and removes a marker). R = numbers-4371358.txt, G = genitive-4567338.txt, N = units-3-5/openrussian/nouns.csv:
+
+| CSV line | Owner | Disposition | Frozen lines cited / replacement |
+|---|---|---|---|
+| 912 | u9-g-cardinal-0 | REMOVE | — |
+| 967 | u9-g-thousands-0 | MARK | R:20, R:73 |
+| 968 | u9-g-thousands-0 | MARK | R:20, R:73 |
+| 971 | u9-i-thousands-1 | MARK | R:15, R:74 |
+| 972 | u9-i-thousands-1 | MARK | R:15, R:74 |
+| 974 | u9-i-thousands-2 | MARK | R:21, R:75 |
+| 975 | u9-i-thousands-2 | MARK | R:21, R:75 |
+| 977 | u9-i-thousands-3 | MARK | R:16, R:77 |
+| 978 | u9-i-thousands-3 | MARK | R:16, R:77 |
+| 979 | u9-i-thousands-4 | MARK | R:78 |
+| 980 | u9-i-thousands-4 | MARK | R:78 |
+| 981 | u9-i-thousands-4 | MARK | R:79 |
+| 982 | u9-i-thousands-4 | MARK | R:78, R:79, R:86 |
+| 983 | u9-i-thousands-4 | MARK | R:78, R:79 |
+| 989 | u9-st-rem-odindva | MARK | R:12, R:88 |
+| 992 | u9-st-rem-odindva | MARK | R:90 |
+| 995 | u9-st-rem-odindva | MARK | R:88 |
+| 997 | u9-st-rem-odindva | MARK | R:12, R:88 |
+| 998 | u9-st-rem-odindva | REMOVE | — |
+| 1009 | u9-i-odindva-2 | MARK | N:14496 gender; now "The dictionary classifies this noun as neuter; choose by that grammatical gender." |
+| 1012 | u9-i-odindva-3 | MARK | R:88; now "The example means one pair of jeans; plural grammatical agreement does not mean several pairs here." |
+| 1017 | u9-i-odindva-4 | MARK | R:12, R:88 |
+| 1018 | u9-i-odindva-4 | REWORD | → "Use the displayed counting example." |
+| 1022 | u9-i-odindva-5 | MARK | R:18, R:90 |
+| 1024 | u9-g-quantity-0 | MARK | R:94, R:102, R:109 |
+| 1025 | u9-g-quantity-0 | MARK | R:86, R:100, R:102 |
+| 1026 | u9-g-quantity-0 | MARK | R:90, R:92, R:94, R:104 |
+| 1027 | u9-g-quantity-0 | MARK | R:92, R:94, R:106 |
+| 1028 | u9-st-rem-quantity | MARK | R:86, R:100 |
+| 1029 | u9-st-rem-quantity | MARK | R:86, R:100 |
+| 1030 | u9-st-rem-quantity | MARK | R:98 |
+| 1031 | u9-st-rem-quantity | MARK | R:92, R:94, R:102 |
+| 1034 | u9-st-rem-quantity | MARK | R:90, R:92, R:94, R:104 |
+| 1035 | u9-st-rem-quantity | MARK | R:90 |
+| 1036 | u9-st-rem-quantity | MARK | R:92, R:94, R:106 |
+| 1037 | u9-st-rem-quantity | MARK | R:92 |
+| 1038 | u9-st-rem-quantity | MARK | R:92 |
+| 1041 | u9-st-rem-quantity | MARK | R:96 |
+| 1042 | u9-st-rem-quantity | MARK | R:92, R:96 |
+| 1043 | u9-st-rem-quantity | MARK | R:94, R:102, R:104, R:106 |
+| 1044 | u9-st-rem-quantity | MARK | R:94, R:112, R:113 |
+| 1047 | u9-st-rem-quantity | MARK | R:92 |
+| 1048 | u9-st-rem-quantity | MARK | R:92, R:94, R:96 |
+| 1051 | u9-st-rem-quantity | MARK | R:94 |
+| 1052 | u9-st-rem-quantity | MARK | R:92, R:94 |
+| 1055 | u9-st-rem-quantity | MARK | R:96 |
+| 1056 | u9-st-rem-quantity | MARK | R:96 |
+| 1059 | u9-st-rem-quantity | REWORD | → "Read the whole example before answering." |
+| 1062 | u9-st-rem-quantity | MARK | N:32 sg_gen, N:32 pl_gen |
+| 1063 | u9-st-rem-quantity | REWORD | → "Read the complete counting example." |
+| 1067 | u9-i-quantity-1 | MARK | R:94, R:113 |
+| 1068 | u9-i-quantity-1 | MARK | R:90, R:104 |
+| 1069 | u9-i-quantity-1 | MARK | R:92, R:94, R:102 |
+| 1070 | u9-i-quantity-1 | MARK | R:92, R:94, R:106 |
+| 1071 | u9-i-quantity-2 | MARK | R:92 |
+| 1072 | u9-i-quantity-2 | MARK | R:92, R:106 |
+| 1073 | u9-i-quantity-2 | MARK | R:90, R:92, R:94, R:104 |
+| 1074 | u9-i-quantity-3 | MARK | R:94, R:112 |
+| 1075 | u9-i-quantity-3 | MARK | R:86, R:100, R:102 |
+| 1076 | u9-i-quantity-3 | MARK | R:90, R:92, R:94, R:104 |
+| 1077 | u9-i-quantity-3 | MARK | R:92, R:94, R:106 |
+| 1078 | u9-i-quantity-4 | MARK | R:92 |
+| 1079 | u9-i-quantity-4 | MARK | R:92, R:106 |
+| 1080 | u9-i-quantity-4 | MARK | R:90, R:92, R:94, R:104 |
+| 1081 | u9-i-quantity-5 | MARK | R:94 |
+| 1082 | u9-i-quantity-5 | MARK | R:86, R:100, R:102 |
+| 1083 | u9-i-quantity-5 | MARK | R:92, R:94, R:106 |
+| 1084 | u9-i-quantity-6 | MARK | R:96 |
+| 1085 | u9-i-quantity-6 | MARK | R:92, R:106 |
+| 1086 | u9-i-quantity-6 | MARK | R:90, R:92, R:94, R:104 |
+| 1087 | u9-i-quantity-7 | MARK | R:92, R:94 |
+| 1088 | u9-i-quantity-7 | MARK | R:92, R:106 |
+| 1089 | u9-i-quantity-7 | MARK | R:94 |
+| 1090 | u9-i-quantity-7 | MARK | R:92, R:94, R:102 |
+| 1091 | u9-i-quantity-8 | MARK | R:90, R:110 |
+| 1092 | u9-i-quantity-8 | MARK | R:90, R:104 |
+| 1093 | u9-i-quantity-8 | MARK | R:92, R:94, R:106 |
+| 1094 | u9-i-quantity-9 | MARK | R:96 |
+| 1095 | u9-i-quantity-9 | MARK | R:90, R:104 |
+| 1096 | u9-i-quantity-9 | MARK | R:92, R:94, R:106 |
+| 1097 | u9-g-pattern-0 | MARK | R:94, R:102, R:109 |
+| 1098 | u9-g-pattern-0 | MARK | R:86, R:100, R:102 |
+| 1099 | u9-g-pattern-0 | MARK | R:90, R:92, R:94, R:104 |
+| 1100 | u9-g-pattern-0 | MARK | R:92, R:94, R:106 |
+| 1101 | u9-st-rem-pattern | MARK | R:86, R:100 |
+| 1102 | u9-st-rem-pattern | MARK | R:86, R:100 |
+| 1103 | u9-st-rem-pattern | MARK | R:98 |
+| 1104 | u9-st-rem-pattern | MARK | R:94, R:102, R:104 |
+| 1107 | u9-st-rem-pattern | MARK | R:96 |
+| 1108 | u9-st-rem-pattern | MARK | R:92, R:96 |
+| 1109 | u9-st-rem-pattern | MARK | R:94, R:102, R:104, R:106 |
+| 1110 | u9-st-rem-pattern | MARK | R:92 |
+| 1111 | u9-st-rem-pattern | MARK | R:92 |
+| 1112 | u9-st-rem-pattern | MARK | R:94 |
+| 1115 | u9-st-rem-pattern | MARK | R:98 |
+| 1116 | u9-st-rem-pattern | MARK | R:98 |
+| 1117 | u9-st-rem-pattern | MARK | G:8, G:9 |
+| 1121 | u9-i-pattern-1 | MARK | R:90 |
+| 1122 | u9-i-pattern-1 | MARK | R:90, R:104 |
+| 1123 | u9-i-pattern-1 | MARK | R:92, R:94, R:102 |
+| 1124 | u9-i-pattern-1 | MARK | R:92, R:94, R:106 |
+| 1125 | u9-i-pattern-2 | MARK | R:92 |
+| 1126 | u9-i-pattern-2 | MARK | R:92, R:106 |
+| 1127 | u9-i-pattern-2 | MARK | R:90, R:92, R:94, R:104 |
+| 1128 | u9-i-pattern-3 | MARK | R:92; now "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5." |
+| 1129 | u9-i-pattern-3 | MARK | R:92, R:106 |
+| 1130 | u9-i-pattern-3 | MARK | R:90, R:92, R:94, R:104 |
+| 1131 | u9-i-pattern-3 | MARK | R:92, R:94, R:102 |
+| 1132 | u9-i-pattern-4 | MARK | R:98 |
+| 1133 | u9-i-pattern-4 | MARK | R:98 |
+| 1134 | u9-i-pattern-4 | MARK | R:98 |
+| 1135 | u9-i-pattern-4 | MARK | R:98 |
+
+Phrase test: Unit9FactProvenanceTest.everyMultiWordRussianPhraseUnitNineShowsPassesTheTwoPartPhraseRule lists all 30 shown phrases with their frozen lines (unit9-phrase-attestations.json); its regression shows that три́ста пятна́дцать, built from attested forms, is unattested and is caught once shown.
+
+6 — A2-26: objective, session and step titles, prompts, the orient card, topic summary, guided and check bodies, the book card, feedback and rationales reworded; 102 → 0. Shared reference ref-u610-attribution: **not edited** (no Unit 9 lint hit was in it).
+
+7 — Pins: Units 6–10 review pin 50f77c28 (UNITS_6_10_T15D_CURRICULUM_COMMIT; CompleteRuleContextPins.kt and V2CumulativeReview.kt are shared); V2CumulativeReview.kt reviewed-source hash cabc2bce… → 0e659540… with a T15d review entry; release source digest 0d9b41be… → dff78412… (candidate.json). No new Cyrillic literal in main Kotlin. Audio manifest regenerated.
+
+Test expectation changes (old → new, reason):
+- Unit9NounBehaviorReviewBaselineTest, Unit10PresentReviewBaselineTest, Unit11NounReviewBaselineTest, Unit12GenderReviewBaselineTest: Unit 9 policy id unit9-prior-noun-behavior-plural-gender-v3 → v4; owner-directed review anchor change.
+- Unit9CumulativeReviewTest: plural anchor slot u8-i-plural-2 → u8-i-plural-3, and its remediation example tag ex-or-u8-plural-7 (о́кна) → ex-or-u8-plural-9 (ма́мы); same reason.
+- Unit10CumulativeReviewTest: remediation text "…один час supplies masculine singular один with час." → "…один час uses masculine singular один with час;"; odindva-6 rewording (ANSWER_IN_INSTRUCTION).
+- Unit9NumberFeedbackCorrectionTest: 17 items in the cardinal/teens/tens/hundreds objectives → 17 closed items (all assertions unchanged) plus 13 typed items asserted separately; typed checks added.
+- Unit9CompositionFeedbackCorrectionTest: 11 items in the thousands/one-two objectives → 11 closed items (unchanged assertions) plus u9-i-type-21 and u9-i-type-101 asserted separately; typed checks added.
+- Unit9ReinforcementReviewTest: pattern check cues […, шестнадцать рублей, …] → […, пять лет, …] (owner-directed cue); pattern remediation examples 7 → 8 (the taught пять лет example joins the pattern teaching).
+- CurriculumDesignDiagnosticsTest: items 705 → 720, requiredChecks 502 → 517; OptionPresentationTest: items 705 → 720, required displays 502 → 517 (first-option count 558 unchanged); fifteen typed Unit 9 checks.
+- UnitTestAndBinderTest: Units ≤ 8 have unit tests and Unit 9 is the "0 typed items" example → Units ≤ 9 (Unit 9: 20 items, 15 typed) and Unit 10 is the example; Unit 9 now meets A2-23.
+No test or assertion was deleted or skipped.
