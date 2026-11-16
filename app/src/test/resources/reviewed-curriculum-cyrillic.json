@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "cabc2bce4a5d01301dd1fff99c443416c0c1b58b1d1b2ce0c03c2b86e0012444",
+      "sha256": "0e6595401fb4ddc1183f557007368d5f4214aec9e47bb2c7eaced55e3bc09b5e",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3390,6 +3390,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Owner decision 11/16/2026: adds the English meaning-prompt and distractor-reason constants for the Unit 7 invariance checks. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "task": "T15d",
+      "previousRecordedSha256": "cabc2bce4a5d01301dd1fff99c443416c0c1b58b1d1b2ce0c03c2b86e0012444",
+      "sha256": "0e6595401fb4ddc1183f557007368d5f4214aec9e47bb2c7eaced55e3bc09b5e",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Owner direction 11/16/2026: Unit9NounBehaviorCumulativeReviewPolicy becomes v4 and anchors its plural review on u8-i-plural-3 instead of u8-i-plural-2 (shared review cue); an ASCII comment explains it. No new Cyrillic literal, item reference with Cyrillic or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }
