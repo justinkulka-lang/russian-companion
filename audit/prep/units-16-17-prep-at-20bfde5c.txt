@@ -1,0 +1,286 @@
+Read-only preparation at **`20bfde5c7e6648986ee908b1b68bda6d4d8bd6e8`**, confirmed as the remote head. No tracked files changed; nothing committed or pushed.
+
+Both units have enough frozen material to reach A2-23. Unit 16 has **one PENDING-INTAKE claim**; Unit 17 has **three**, plus a validator conflict affecting six count-check prompts.
+
+**Frozen-file aliases**
+
+All paths below are under `catalog/sources/`. Citations such as `I:15` refer to these exact files and lines.
+
+| Alias | Frozen file |
+|---|---|
+| I | `units-16-20/wikibooks/instrumental-4219602.txt` |
+| A | `units-6-10/wikibooks/adjectives-4292379.txt` |
+| N | `units-3-5/openrussian/nouns.csv` |
+| AD | `units-6-10/openrussian/adjectives.csv` |
+| V | `units-3-5/openrussian/verbs.csv` |
+| R | `units-6-10/wikibooks/numbers-4371358.txt` |
+| G | `units-26-30/wikipedia/russian-grammar-1369617627.txt` |
+| MOR | `units-21-25/supplemental/morfologiya-148939075.txt` |
+| D | `units-16-20/wikibooks/days-3594124.txt` |
+| M | `units-16-20/wikibooks/months-4376719.txt` |
+| Q | `units-3-5/wikibooks/interrogative-4220316.txt` |
+| P | `units-16-20/pressbooks/russia-traditions-grammar.html` |
+| T | `readyrussian/grammar20.html` |
+| F | `units-16-20/wikipedia/date-notation-russia-1357134172.txt` |
+| C | `units-16-20/wikipedia/date-time-country-1366690592.txt` |
+
+OpenRussian stress comparisons below convert its stress apostrophe to U+0301; they do not infer stress from transliteration.
+
+**Unit 16**
+
+**1. A2-24 items**
+
+Kotlin diagnostics report **12 exact-key teaching exposures**, no label/position findings and no shown-cue-only findings.
+
+Every ID in these ranges has `A2_24_EXACT_KEY_IN_TEACHING`:
+
+| Item IDs | Fix candidate; frozen evidence |
+|---|---|
+| `u16-i-inst-sg-1–2` | Move independent checks into a later retrieval session, preserving teaching. House forms: N:15; pencil/train/husband forms and meanings: I:25–28. |
+| `u16-i-inst-pl-1–2` | Later retrieval session. N:15 and N:32 supply the complete competing forms. |
+| `u16-i-inst-adj-1–2` | Later retrieval session. AD:18 supplies every displayed adjective form. |
+| `u16-i-inst-means-1–2` | Later retrieval session; complete the three-way tool/accompaniment/location contrast described below. |
+| `u16-i-inst-prep-1–2` | Later retrieval session; retain meaning questions. I:15–16 supplies the meanings. |
+| `u16-i-complements-1–2` | Later retrieval session. V:28 and V:32 supply the verb meanings; G:48 supplies their connective-verb context. |
+
+Two additional option-count findings need attention:
+
+| Item | Candidate |
+|---|---|
+| `u16-i-inst-means-1` | Add `Я хочу встречу с интересной русской женщиной` from A:69 as the third option. Remove its redundant cue presentation. |
+| `u16-i-inst-means-2` | Add `Я написал хорошим новым карандашом` from A:67. Rewrite the prompt as “Which sentence describes the speaker’s location between two houses?” The key is attested at A:81. |
+
+These changes retain all closed checks and their substantive contrasts.
+
+**2. A2-23 and typed candidates**
+
+Current: **12 checked, 0 typed**. Add **8 typed checks**: **20 checked, 8 typed, 40% typed**.
+
+| Typed key | Frozen field/line | Exact stress result |
+|---|---|---|
+| до́мом | N:15 `sg_inst` | PASS |
+| столо́м | N:32 `sg_inst` | PASS |
+| кни́гами | N:60 `pl_inst` | PASS |
+| дома́ми | N:15 `pl_inst` | PASS |
+| стола́ми | N:32 `pl_inst` | PASS |
+| хоро́шим | AD:18 `decl_m_inst` | PASS |
+| хоро́шими | AD:18 `decl_pl_inst` | PASS |
+| карандашом | I:27 | PASS, verbatim unstressed form |
+
+All eight are already taught. No additional Russian forms are needed. Put their checks after the relevant teaching sessions, without reproducing accepted keys in the check session.
+
+**3. English-only fact inventory**
+
+Scope: every English-only Unit 16 entry in `audit/T15-n0-unmarked-russian-facts.csv`: **66 entries, 65 distinct sentences**.
+
+Ranges below select only those English-only entries. The recommendations account for all 66: **54 MARK, 9 REWORD, 2 REMOVE, 1 PENDING-INTAKE**.
+
+| CSV lines | Recommendation |
+|---|---|
+| 1656–1674 | **MARK**: instrumental meaning and noun contrasts. I:4,25–28; N:15,32. |
+| 1694–1729 | **MARK**: noun/adjective endings, case, number and agreement. I:51–53,76–78; N:15,32,60; AD:18; G:249. |
+| 1740–1755 | **MARK**: tool, accompaniment and location interpretations. A:67,69,81; I:14,17. |
+| 1756–1765 | **MARK**: bounded preposition meanings and case distinctions. I:13–18. Do not reproduce that source’s blanket motion rule. |
+| 1769–1777, except 1771 | **MARK**: spatial meanings. I:15–18. |
+| 1779–1784 | **MARK**: verb meanings and infinitive distinction. V:28,32,14828; MOR:838. |
+| 1788–1789 | **MARK**: instrumental connective-verb complements. G:42–48. |
+| 1793–1796 | **MARK**: seeming/turning out and infinitive distinction. G:48; V:23,32; MOR:838. |
+| 1798,1801 | **MARK**: remaining versus turning out to be. V:28,32. |
+| 1677–1678 | **REWORD**: “Review the noun forms above before retrying.” These are instructional scope statements. |
+| 1688 | **REWORD**: “Compare the singular and plural forms above before retrying.” Avoid the unrestricted “plural refers to more than one” formulation. |
+| 1771 | **REWORD**: “Review these examples before trying again.” |
+| 1785–1787,1797,1800 | **REWORD**: “Review the verb meanings above before retrying.” Remove answer-selection scripts. |
+| 1733,1790 | **REMOVE**: commentary about what app recognition demonstrates, rather than Russian teaching. |
+| 1766 | **PENDING-INTAKE**: movement within a location does not itself require accusative. Intake candidate: **Wiktionary, “под”**, with explicit case-governance usage evidence. |
+
+The pending entry belongs to `u16-st-rem-inst-prep`; the same claim also needs resolution wherever repeated in teaching. Coverage bibliography references alone do not support it.
+
+**4. Teaching errors and qualifications**
+
+- **Wikibooks’ motion rule is overstated.** I:15 says to use accusative whenever motion is involved. The needed distinction is location versus destination; movement inside a location can retain instrumental. The app already gives that correction, but I did not find adequate frozen support for its full wording. This is the pending claim above.
+- **“стать — became” is an erroneous infinitive gloss in G:48.** The app’s “to become” correction is supportable through V:14828. Bind that correction to the dictionary row rather than relying on G:48 alone. MOR:838 explicitly distinguishes the infinitive from finite time reference.
+- Agreement remains illustrated by attested sentences, including A:67,69,81; it need not be reduced to isolated endings.
+
+**5. A2-26 lint**
+
+Counts are diagnostic **owner-field hits**, not matched-word occurrences.
+
+| Category | Hits | Owner IDs |
+|---|---:|---|
+| Governance | **7** | `unit-16`; `ref-u1620-attribution`; `u16-s-orient`; `u16-st-orient` (two fields); `u16-st-rem-inst-pl`; `u16-st-teach-inst-pl-4` |
+| Markup | **0** | — |
+| Narration | **6** | `u16-st-rem-inst-{sg,pl,adj}`; `u16-st-teach-inst-sg-6`; `u16-st-teach-inst-pl-2`; `u16-st-teach-inst-adj-1` |
+
+Keep attribution/provenance in records while rewriting learner-facing narration.
+
+**6. Phrases**
+
+**3/3 PASS** for presence and exact frozen stress:
+
+| Phrase | Presence |
+|---|---|
+| Я написал хорошим новым карандашом | A:67 |
+| Я хочу встречу с интересной русской женщиной | A:69 |
+| Я живу́ ме́жду двумя но́выми дома́ми | A:81 |
+
+No stressed word lacks frozen stress evidence.
+
+**7. Shared references**
+
+`ref-u1620-attribution` is also linked by **Units 18, 19 and 20**. Editing that reference affects those units.
+
+---
+
+**Unit 17**
+
+**1. A2-24 items**
+
+Kotlin diagnostics report:
+
+- **25** exact-key teaching exposures;
+- **20** label/position findings;
+- **0** shown-cue-only findings;
+- **10** additional fewer-than-three-options findings.
+
+Every required item below has an exact-key exposure. Move independent retrieval into a later session while retaining its earlier teaching.
+
+| Item IDs | Additional flag; fix candidate and frozen evidence |
+|---|---|
+| `u17-i-ordinals-1–2` | **Label/position**. Use “Which Russian form is the second ordinal?” / “…third ordinal?” Remove “admitted line.” G:713,723,726; AD:21 for second. |
+| `u17-i-hours-1–2` | **Label/position; two options**. Ask for the phrase meaning two/five hours; add `один час` as third option. R:109–111. See validator conflict below. |
+| `u17-i-years-1–2` | **Label/position; two options**. Ask for two/five years; add `один год`. R:117–121. Same conflict. |
+| `u17-i-minutes-1–2` | **Label/position; two options**. Ask for two/five minutes; add `одна минута`. R:126–130. Same conflict. |
+| `u17-i-age-1` | **Label/position; two options**. Ask what the complete statement means. Use the existing guided alternatives “I own 20 summers” and “20 people asked me”; G:38 supports the correct age reading. |
+| `u17-i-age-2` | **Label/position; two options**. Ask which quantity the phrase expresses. Replace the category label with competing quantities “two years” and “five years.” G:38; R:118,121. |
+| `u17-i-weekdays-1–2` | **Label/position**. Ask “Which English weekday does this word name?” D:41,59; distractors at D:23,47,53. |
+| `u17-i-months-1–2` | **Label/position**. Ask “Which English month does this word name?” M:39,63; distractors at M:19,31,43,47. |
+| `u17-i-clock-answers-1–2` | **Label/position**. Ask “What clock time does this expression describe?” C:41 supplies all three interpretations. |
+| `u17-i-quarter-hour-1–3` | **Label/position**. Ask what time the event happens, removing source/line language. P:230,241,252 supplies each complete sentence and reading. |
+| `u17-i-clock-productive-1` | **Two options**. Ask which expression counts minutes remaining before the next hour; add `в пятнадцать минут второго` from T:127. Correct remaining-time form: T:151. |
+| `u17-i-clock-productive-2` | **Two options**. Ask which expression states whole hours first, then minutes; add `без двадцати пяти два` from T:151. Key: T:118; existing alternative: T:119. |
+| `u17-i-calendar-date-1` | **Label/position**. Ask which ordering of date components the shown date uses. Use competing DMY/MDY/YMD descriptions. F:10. |
+| `u17-i-calendar-date-2` | Exposure only. Preserve the whole-date interpretation; bind the month form to N:989 and the date convention to F:10–12. |
+| `u17-i-question-clock`, `u17-i-question-book` | Exposure only. Preserve their genuine meaning contrasts and existing pinned question tuples. Q:168–170. |
+
+The optional `u17-i-clock-1–2` also retain layout wording and two options, although they are outside the required-item findings above. Rewrite their meaning prompts and add the already taught apple-question interpretation from Q:168 as a third alternative.
+
+**Validator compatibility conflict:** [V2Validator.kt:3764](/tmp/codex-prep1617/app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt:3764) requires the literal phrases “two-hour row,” “five-hour row,” and corresponding year/minute phrases. [Its target check](/tmp/codex-prep1617/app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt:4478) does not give these six items a semantic-prompt alternative. Removing “row” therefore conflicts with current validation. A reviewed semantic-target correction is needed; preserving layout wording would leave A2-24 unresolved.
+
+**2. A2-23 and typed candidates**
+
+Current: **25 checked, 0 typed**. Keeping all 25 closed checks requires **11 typed additions**:
+
+**36 checked, 11 typed = 30.56%.** Ten additions would reach only 28.57%.
+
+| Typed key | Frozen field/line | Exact stress result |
+|---|---|---|
+| пе́рвый | AD:14 `decl_m_nom`; also G:720 | PASS |
+| второ́й | AD:21 `decl_m_nom`; also G:723 | PASS |
+| один час | R:109 | PASS, unstressed verbatim |
+| два часа | R:110 | PASS, unstressed verbatim |
+| пять часов | R:111 | PASS, unstressed verbatim |
+| один год | R:117 | PASS, unstressed verbatim |
+| два года | R:118 | PASS, unstressed verbatim |
+| пять лет | R:121 | PASS, unstressed verbatim |
+| одна минута | R:126 | PASS, unstressed verbatim |
+| две минуты | R:127 | PASS, unstressed verbatim |
+| пять минут | R:130 | PASS, unstressed verbatim |
+
+All are already taught in the ordinal/hour/year/minute teaching sessions. No new teaching forms are necessary for this minimum plan. Do not add stress to the nine unstressed phrases without separately citing exact frozen stress for each word.
+
+**3. English-only fact inventory**
+
+Scope: every English-only Unit 17 entry in the CSV: **197 entries, 154 distinct sentences**.
+
+The disposition totals are **181 MARK, 7 REWORD, 6 REMOVE, 3 PENDING-INTAKE**. These count inventory entries, including repeated sentences and sentence-splitting fragments—not 197 independent grammatical claims.
+
+In the MARK table, exclude the specific REWORD/REMOVE/PENDING entries listed afterward.
+
+| CSV lines | MARK evidence |
+|---|---|
+| 1803–1823 | Ordinal forms/agreement: G:713,720–726; R:139–143; G:249. |
+| 1827–1887 | Counts, gender, noun cases and teen exceptions: R:86–106,109–135. |
+| 1890–1904 | Complete age statement, dative person and quantity distinction: G:35–38. |
+| 1906–1931 | Weekday names and competing meanings: D:23–59. |
+| 1933–1958 | Month meanings/spelling: M:19–63; date-case distinction: F:12. |
+| 1960–2000 | Apple/book/clock question interpretations: Q:168–170. |
+| 2002–2024 | Quarter/half/remaining-time readings: C:41; T:104–110,182; P:229,240,251. |
+| 2026–2072 | Event-time constructions and readings: P:223–253; AM/PM qualification: T:180–182. |
+| 2073–2087 | Hour in progress, minutes remaining and dial reading: T:104–110,118–151,180–182; genitive ordinal explanation: P:229. |
+| 2093–2115 | Date order, year abbreviation and month case: F:10–12; May form: N:989. |
+| 2117–2130 | Complete clock/book question meanings: Q:169–170. |
+
+Several CSV entries split decimal clock readings or quoted questions into fragments—for example lines 2026, 2038 and 2056. **Rejoin the original complete sentence before marking it**; do not create markers for fragments such as “corresponds to 18.”
+
+| CSV lines | Other disposition |
+|---|---|
+| 1810 | **REWORD**: “Compare the number forms above before retrying.” Removes the unsupported general-definition wording while retaining sourced ordinal teaching. |
+| 1814 | **REWORD**: “Review the complete example above.” Removes commentary about how much of a sentence a fragment translates. |
+| 1899 | **REWORD**: “Review the complete example above.” Removes the answer-selection script. |
+| 1923 | **REWORD**: “Practise the seven isolated names here.” Removes the unsupported general weekday-construction claim. |
+| 1940 | **REWORD**: “Practise the names shown above.” |
+| 2012 | **REWORD**: “Match the complete expression to a clock reading.” |
+| 2105 | **REWORD**: “Practise these standalone dates here.” Removes the unsupported general claim about ordinal case in event-date sentences. |
+| 1840,1900,1963,1976,1987,1996 | **REMOVE**: assessment commentary, irrelevant English distractor commentary, or descriptions of supplied/guided responses rather than necessary Russian facts. |
+| 1920 | **PENDING-INTAKE**: weekday lowercase **plus sentence-initial capitalization**. D:7 supports the weekday clause alone. Needed page: **ReadyRussian, “Grammar 24—Capitalization.”** |
+| 1947 | **PENDING-INTAKE**: lowercase month names. Same page. |
+| 1948 | **PENDING-INTAKE**: capitalized vocabulary labels do not establish ordinary month-capitalization rules. Same page. |
+
+Pending owners are `u17-st-rem-weekdays` and `u17-st-rem-months`; resolve the corresponding teaching repetitions too. The frozen ReadyRussian homepage links to Grammar 24, but that does **not** freeze the handout.
+
+**4. Teaching errors and qualifications**
+
+- **Counting rules:** the app correctly restricts the basic rule to nominative/inanimate-accusative counts and retains the 11–14 exception. Preserve those qualifications; R:86–98 supports them.
+- **Capitalization:** uppercase month labels in M:19–63 are not evidence that Russian month names normally take capitals. The app’s qualification is sensible but needs the intake identified above.
+- **Clock interpretation:** P:224 assigns its concert example `18.00`; the bare six-o’clock expression does not itself encode evening. Preserve the contextual qualification supported by T:180–182.
+- **Dates:** F:12’s “neutral grammatical gender” should be understood as **neuter**. The app already uses “neuter.” Do not generalize standalone date naming to every event-date construction.
+- **Production claims:** closed selection of a clock expression is recognition. Avoid learner-facing claims that those closed checks demonstrate independent clock-time production.
+
+**5. A2-26 lint**
+
+| Category | Hits |
+|---|---:|
+| Governance | **69**, across 61 owners |
+| Markup | **0** |
+| Narration | **0** |
+
+Governance owners, grouped:
+
+- Objectives: `obj-u17-{calendar-date,clock-productive,quarter-hour,weekdays}`.
+- References: `ref-u17-attribution`, `ref-u17-pressbooks-attribution`.
+- Guided items: `u17-g-{clock,clock-answers,clock-productive,hours,minutes,months,ordinals,quarter-hour,weekdays,years}-0`.
+- Independent items: `u17-i-{age,clock,clock-answers,clock-productive,hours,minutes,months,ordinals,weekdays,years}-1–2`; `u17-i-calendar-date-1`; `u17-i-quarter-hour-1–3`.
+- Sessions: `u17-s-{calendar-date,clock-productive,orient,quarter-hour,weekdays}`.
+- Orientation: `u17-st-orient`; `unit-17`.
+- Remediation: `u17-st-rem-{clock,clock-answers,months,ordinals,quarter-hour}`.
+- Teaching: `u17-st-teach-clock-1`; `u17-st-teach-clock-answers-2`; `u17-st-teach-months-1–3`; `u17-st-teach-ordinals-2`; `u17-st-teach-quarter-hour-{1,2,4}`.
+
+**6. Phrases**
+
+**33/33 PASS** under the two-part rule. No phrase is absent, and no stressed word lacks exact frozen stress evidence.
+
+The frozen witnesses cover:
+
+| Phrase group | Evidence |
+|---|---|
+| Three complete questions | Q:168–170 |
+| Hour/year/minute counts and compound year example | R:94,109–135 |
+| Complete age phrase and its quantity fragment | G:38 |
+| Quarter/half/remaining-time expressions | C:41 |
+| Complete event-time sentences | P:224–253 |
+| Productive clock expressions | T:118–151 |
+| Ordinal–noun example | R:139 |
+| Spoken standalone date | F:12 |
+
+Comparison ignored case and stress only; **ё remained distinct from е**.
+
+**7. Shared references**
+
+Unit 17 links `ref-u17-attribution` and `ref-u17-pressbooks-attribution`. Neither is linked by another unit. Their underlying frozen sources may be reused elsewhere.
+
+**Feasibility**
+
+| Unit | A2-23 using frozen sources | PENDING count | Blockers before completion |
+|---|---|---:|---|
+| **16** | **Yes:** retain 12 closed checks, add 8 sourced typed checks → 20/8. | **1 PENDING-INTAKE; 0 PENDING-S1** | Resolve the motion-within-location claim; separate teaching from retrieval; repair two option sets and A2-26 wording. |
+| **17** | **Yes:** retain 25 closed checks, add 11 sourced typed checks → 36/11. | **3 PENDING-INTAKE; 0 PENDING-S1** | Resolve capitalization claims; reconcile six mandatory “row” targets with semantic prompts; repair option sets, session exposures and A2-26 wording. |
