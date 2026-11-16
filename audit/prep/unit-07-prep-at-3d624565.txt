@@ -1,0 +1,200 @@
+Read-only snapshot: 3d62456575de7a8fa6a6fe84daf09239cbc100e6, still origin head when verification finished. No tracked changes, commits or pushes; T15a-n1 was untouched.
+
+Source abbreviations below identify exact frozen files under catalog/sources/:
+
+Alias	Frozen file
+
+D	units-6-10/openrussian/adjectives.csv
+N	units-3-5/openrussian/nouns.csv
+A	units-6-10/wikibooks/adjectives-4292379.txt
+B	units-6-10/wikibooks/adverbs-3197995.txt
+C	units-6-10/wikibooks/accusative-4330404.txt
+R	units-6-10/ruwiki/narechie-152437423.txt
+W	units-6-10/wikipedia/adverb-1374548415.txt
+S	units-3-5/wikibooks/nominative-4213267.txt
+
+
+1. A2-24: 30 affected required items
+
+Fresh Kotlin results: 11 shown-cue-only, 4 label/position, 30 exact-key-in-session hits, covering 30 distinct items.
+
+Manual review adds two position-based prompts: u7-i-adverb-invariance-1 and u7-i-adverb-invariance-2 ask what appears “after the dash and before the colon.” The label/position regex misses “written immediately after.”
+
+Flags: C = cue-only distractor; L = label/position; E = exact key in the presentation session; L* = manually identified.
+
+Every E item also needs its check presentation moved after teaching into a separate check session. Prompt rewriting or adding an option alone does not fix E. Preserve instruction links, closed checks and checks-after-teaching assertions.
+
+Item ID	Flags	One fix candidate and frozen evidence
+
+u7-i-default-1	C,E	Third option но́вая — D:16, decl_f_nom.
+u7-i-default-2	C,E	Third option хоро́шее — D:18, decl_n_nom.
+u7-i-default-3	C,E	Third option си́нее — D:109, decl_n_nom.
+u7-i-default-4	C,E	Third option како́е — D:7, decl_n_nom.
+u7-i-endings-1	E	Rewrite as an adjective-only neuter nominative→genitive check: но́вое → но́вого, D:16, decl_n_nom/decl_n_gen. The current complete window phrases have no located frozen occurrence.
+u7-i-endings-2	E	“Which plural nominative form belongs to this adjective?” Existing key но́вые — D:16, decl_pl_nom.
+u7-i-endings-3	E	“Which masculine singular nominative form belongs to this adjective?” Existing key но́вый — D:16, decl_m_nom.
+u7-i-endings-4	E	“Which form supplies nominative feminine singular agreement with the shown noun?” но́вая — D:16; the noun and feminine example are in A:12.
+u7-i-spelling-1	C,E	Third option хоро́шая — D:18, decl_f_nom.
+u7-i-spelling-2	E	Ask for masculine singular nominative. Existing key хоро́ший — D:18, decl_m_nom.
+u7-i-spelling-3	E	Replace the unsupported complete book phrases with an adjective-only feminine nominative→accusative check: хоро́шая → хоро́шую — D:18, decl_f_nom/decl_f_acc.
+u7-i-question-1	C,E	Third option кака́я — D:7, decl_f_nom.
+u7-i-question-2	E	Ask for feminine singular nominative. Existing key кака́я — D:7, decl_f_nom.
+u7-i-question-3	E	Ask for masculine singular nominative. Existing key како́й — D:7, decl_m_nom.
+u7-i-demonstrative-1	C,E	Third option э́ти — D:4, decl_pl_nom.
+u7-i-demonstrative-2	C,E	Third option э́та — D:4, decl_f_nom.
+u7-i-demonstrative-3	C,E	Third option э́ти — D:4, decl_pl_nom.
+u7-i-place-1	E	Ask for the adjective’s dictionary form. Existing key но́вый — D:16, decl_m_nom.
+u7-i-place-2	C,E	Third option хоро́шая — D:18, decl_f_nom.
+u7-i-place-3	C,E	Third option хоро́шая — D:18, decl_f_nom.
+u7-i-objectadj-1	E	Ask for masculine singular nominative. Existing key но́вый — D:16, decl_m_nom.
+u7-i-objectadj-2	E	Same form-retrieval rewrite; но́вый — D:16, decl_m_nom.
+u7-i-objectadj-3	E	Ask for feminine singular accusative. Existing key но́вую — D:16, decl_f_acc.
+u7-i-adverb-1	L,E	“What does the shown Russian adverb mean?” Existing Russian form and English gloss are paired in W:79.
+u7-i-adverb-2	L,E	Same meaning question; form and gloss in W:79.
+u7-i-adverb-invariance-1	L*,E	Replace layout recall with Russian comprehension: “Which expression means words that do not change form?” Existing Russian expression — R:8.
+u7-i-adverb-invariance-2	L*,E	Same semantic target with its distinct existing distractor, rather than asking about punctuation position — R:8.
+u7-i-adverb-pairs-1	L,E	“Which manner adverb belongs to the shown adjective in this pair?” Existing pair — R:44.
+u7-i-adverb-pairs-2	L,E	Same relationship question for the other documented pair — R:44.
+u7-i-manner-2	E	Replace the unsourced complete-sentence cue with быстро, W:79/R:44; ask what an adverb describes, supported by B:1 and R:3. Adjust the speaker-dependent distractor accordingly.
+
+
+The proposed Russian forms come directly from the cited fields or spans. These are preparation candidates, not claims that their future assessment metadata has already passed validation.
+
+2. Fifteen typed-key candidates
+
+Keeping all 33 closed checks requires at least 15 additional typed checks:
+
+- 12 added: 12/45 = 26.7% — insufficient.
+- 15 added: 15/48 = 31.25% — sufficient.
+
+All fifteen below already occur in Unit 7 teaching text or displayed teaching examples. Each matches the frozen field character by character after the declared apostrophe→U+0301 stress-format conversion. No stress was inferred from transliteration.
+
+Typed key	Frozen row and field	Existing teaching witness
+
+но́вая	D:16 decl_f_nom	u7-st-teach-default-1
+но́вое	D:16 decl_n_nom	u7-st-teach-default-3
+но́вые	D:16 decl_pl_nom	u7-st-teach-default-3
+но́вого	D:16 decl_m_gen	u7-st-teach-objectadj-4
+но́вую	D:16 decl_f_acc	u7-st-teach-place-4
+но́вом	D:16 decl_m_prep	u7-st-teach-place-3
+хоро́шая	D:18 decl_f_nom	u7-st-teach-default-4
+хоро́шее	D:18 decl_n_nom	u7-st-teach-spelling-2
+хоро́шие	D:18 decl_pl_nom	u7-st-teach-spelling-2
+хоро́шем	D:18 decl_m_prep	u7-st-teach-place-5
+кака́я	D:7 decl_f_nom	u7-st-teach-question-1
+како́е	D:7 decl_n_nom	u7-st-teach-question-3
+э́та	D:4 decl_f_nom	u7-st-teach-demonstrative-1
+э́ту	D:4 decl_f_acc	u7-st-teach-demonstrative-4
+э́ти	D:4 decl_pl_nom	u7-st-teach-demonstrative-3
+
+
+3. All 38 English-only fact-inventory entries
+
+Numbers are physical lines in audit/T15-n0-unmarked-russian-facts.csv at the audited head.
+
+MARK means add the marker with provenance to the frozen evidence specified—not another “Original app text” record. Dictionary fields substantiate individual word-form facts; they do not attest newly assembled Russian phrases.
+
+For REWORD, replace the unsupported assertion with procedural guidance, such as “Review the worked examples, then try again,” or a similarly fact-free instruction preserving the exercise’s purpose.
+
+CSV line	Owner and sentence identification	Recommendation
+
+606	u7-st-rem-default: “The default form…”	MARK — A:6, which states the dictionary-form convention explicitly.
+621	u7-st-rem-endings: “Both words change…”	MARK — A:1; D:16; N:60/51, using the relevant nominative/accusative/genitive fields. Repair the unsupported phrase displays separately.
+624	Same owner: “A phrase can need another gender…”	MARK — A:1 and A:6.
+626	Same owner: “Both adjective and noun change case…”	MARK — D:16 decl_n_nom/decl_n_gen; N:51 sg_nom/sg_gen, gender n; A:1.
+629	Same owner: “Compare the adjective…noun controls…”	MARK — A:1,11,12, for agreement and the pencil/car examples.
+631	Same owner: “Learn each recorded adjective family…”	REWORD. A:17 documents a particular exception, not the sentence’s broad claim about meanings and every inflection.
+633	Same owner: “These are supplied nominative examples…”	REWORD. No frozen source states this claim about what the app’s particular examples answer.
+637	Same owner: “The comparison changes number…”	MARK — D:16 decl_m_nom/decl_pl_nom. Both forms belong to the same frozen lexical row.
+641	Same owner: “All these options are recorded forms…”	REWORD. This combines app-inventory and answer-strategy assertions not stated by a frozen source.
+645	Same owner: “Case changes in the book and window pairs…”	REMOVE. Redundant app-specific narration tied to phrase combinations needing repair.
+655	u7-i-endings-4, feedback: “Choose the form that matches…”	REWORD. Treat it as procedural guidance rather than marking an app-choice instruction as a sourced fact.
+660	u7-st-rem-spelling: “An adjective agrees…”	MARK — A:1.
+663	Same owner: “The following forms belong…”	MARK — D:18, including its English gloss and inflection columns.
+668	Same owner: “Spelling limits the letters…”	MARK — A:1,24,26, separating agreement from spelling restrictions.
+672	Same owner: “Keep the same noun…”	REWORD. It is exercise guidance; the particular complete book pair is not attested in the frozen files.
+678	Same owner: “These choices test the requested form…”	MARK — D:18 and A:24/26, for the adjective forms, after rebuilding the unsupported phrase choices as sourced forms.
+684	u7-i-spelling-3, feedback: “Both words change…”	MARK — A:1; D:18 feminine nominative/accusative fields; N:60 singular nominative/accusative fields. Phrase attestation remains separate.
+689	u7-st-rem-question: “The default form…”	MARK — A:6.
+696	u7-g-demonstrative-0, feedback: “The shown line means…”	MARK — A:14, which supplies the complete example and English meaning.
+717	u7-g-objectadj-0, feedback: “It has the same form…”	MARK — A:31, explicitly connecting masculine animate accusative with genitive.
+718	Same owner: “Feminine agreement uses…”	MARK — A:29,31,33.
+722	u7-st-rem-objectadj: “— I want a new rabbit.”	MARK — A:31, containing that English translation.
+726	Same owner: “Its plural forms can be accusative…”	MARK — C:29; D:4 plural accusative/genitive; N:36 plural accusative/genitive.
+727	Same owner: “The fragment alone is not a complete sentence…”	REWORD. C:29 supplies the complete source sentence, not this decontextualized fragment analysis.
+728	Same owner: “The preceding complete cat and dog sentence…”	REWORD. No frozen source states the app-specific relationship between these displayed excerpts.
+737	u7-i-objectadj-3, feedback: “Keep feminine singular agreement…”	MARK — A:6,33; D:16 feminine accusative/masculine nominative.
+753	u7-st-rem-adverb-invariance: “Adverbs do not decline…”	MARK — R:8, explicitly stating those invariance properties.
+754	Same owner: “This grammatical invariance does not mean…”	MARK — R:8 and R:32, which distinguish invariance from comparison.
+755	Same owner: “The retained explanation treats…”	REMOVE. Provenance narration; the preceding sourced comparison explanation already carries the useful fact.
+770	u7-g-manner-1, feedback: “The documented creative pair…”	MARK — R:44; D:374; B:1, for the pair, lexical meaning and grammatical roles.
+771	Same owner, rationale: “The documented fast pair…”	REWORD. R:44 gives examples; it does not state the claimed general restriction on every adjective.
+772	Same owner, rationale: “Adding an adverb ending…”	REWORD. No frozen source states this app-specific unsupported-form assertion.
+773	u7-st-rem-manner: “Lexical availability, stem behavior…”	REWORD. No located frozen Russian source states this complete conversion checklist.
+775	u7-i-manner-1, rationale: “two forms of the same noun…”	MARK — R:44; W:79; B:1, supporting the adjective/adverb classification of the pair.
+776	Same owner, rationale: “an unrestricted rule…”	REWORD. The source examples do not themselves state this claim about the limits of proof.
+781	u7-i-manner-3, feedback: “They have different grammatical jobs.”	MARK — B:1, distinguishing what adjectives and adverbs describe.
+785	u7-i-manner-4, feedback: “This is a statement about the supplied evidence…”	REWORD. An app-inventory boundary is not stated in a frozen linguistic source.
+786	Same owner, rationale: “the unit establishes a general conversion rule…”	REWORD. No frozen file makes that statement about this unit; retain the restriction as an instruction to use supplied examples.
+
+
+Accounting: 23 MARK, 13 REWORD, 2 REMOVE = 38 entries.
+
+4. A2-26 lint: 129 governance, 8 markup, 4 narration hits
+
+Counts are owner/field hits, not word occurrences. Governance spans 97 distinct owners.
+
+For compact exact-ID lists, let:
+
+T = {adverb, adverb-invariance, adverb-pairs, default, demonstrative, endings, objectadj, place, question}
+
+Brace lists expand literally; numeric ranges are inclusive.
+
+Governance — 129 hits:
+
+Field	Count	Exact owners
+
+Titles	60	obj-u7-{T}; u7-s-{T,orient}; u7-st-orient; u7-st-teach-{default-1..6,endings-1..7,demonstrative-1..4,question-1..3,place-1..5,objectadj-1..5,adverb-1..3,adverb-invariance-1..2,adverb-pairs-1..2,manner-1..3}
+Bodies	31	u7-st-check-{T}; u7-st-guided-{T,manner}-1; u7-st-orient; u7-st-rem-{adverb-invariance,endings}; u7-st-teach-{adverb-1,adverb-invariance-1,adverb-invariance-english,adverb-pairs-1,demonstrative-1,endings-1,endings-3,endings-4,endings-5}
+Prompts	11	u7-g-{adverb-0,adverb-invariance-0,adverb-pairs-0,demonstrative-0}; u7-i-{adverb-1,adverb-2,adverb-invariance-1,adverb-invariance-2,adverb-pairs-1,adverb-pairs-2,endings-4}
+Feedback	11	Same owners as the prompt row, except replace u7-g-demonstrative-0 with u7-g-manner-1.
+distractorRationales[1]	7	u7-g-{adverb-0,adverb-pairs-0,manner-1}; u7-i-{adverb-1,adverb-2,adverb-pairs-1,adverb-pairs-2}
+distractorRationales[2]	3	u7-g-adverb-0; u7-i-adverb-{1,2}
+options[0], options[1]	2	u7-g-manner-1
+Reference summary/detail	2	ref-u7-ruwiki-attribution
+Example note	1	ex-u7-manner-0
+Topic summary	1	unit-7
+
+
+Markup — eight body hits:
+
+- u7-st-teach-{adverb-pairs,demonstrative,objectadj,place}-2
+- u7-st-rem-{adverb-pairs,demonstrative,objectadj,place}
+
+Narration — four body hits:
+
+- u7-st-rem-endings
+- u7-st-teach-endings-{2,5,7}
+
+5. Shared references
+
+Reference	Explicitly linked units	Implication
+
+ref-u610-attribution	6, 7, 8, 9, 10	Shared content: edits extend beyond Unit 7 and need corresponding review-digest scrutiny.
+ref-u7-ruwiki-attribution	7 only	Not a shared step reference at this head; its summary/detail account for two governance hits.
+
+
+No other reference IDs are explicitly linked from Unit 7’s steps.
+
+Summary
+
+Unit 7 can reach A2-23 using frozen sources only: retain 33 closed checks and add the 15 sourced, already-taught typed keys above, producing 48 checks, 15 typed, 31.25% typed. None of those typed-key candidates is source-blocked.
+
+It cannot retain every current item unchanged under the stricter source rule:
+
+- u7-i-endings-1: no frozen occurrence located for its complete window phrases.
+- u7-i-spelling-3: no frozen occurrence located for its complete good-book phrases.
+- u7-i-manner-2: no frozen occurrence located for its complete sentence cue.
+- u7-g-endings-0: its complete accusative book phrase likewise needs replacement. The unstressed nominative phrase exists at S:73, but that does not attest the accusative phrase.
+
+Use the sourced single-form alternatives above; do not let content-audit coverage records stand in for those missing native spans. The unsupported broad formation and app-scope assertions in the inventory should be reworded or removed rather than marked against coverage alone.

@@ -1,0 +1,383 @@
+Prepared against 4c402ef7338091f6c24e1907a58794d8225e99e7, the current remote head at the final check. No tracked files changed; nothing was committed or pushed.
+
+Source abbreviations—all under catalog/sources/:
+
+Code	Frozen file
+
+P	units-11-15/wikibooks/past-tense-4567337.txt
+F	units-11-15/wikibooks/future-tense-3353822.txt
+B	units-11-15/wikibooks/verbal-aspect-4059032.txt
+V	units-3-5/openrussian/verbs.csv
+C	units-6-10/wikibooks/accusative-4330404.txt
+RG	units-26-30/wikipedia/russian-grammar-1369617627.txt
+
+
+OpenRussian is frozen at 50e210c4803237779cb562bc1abcea529066031c.
+
+PENDING-S1 identifies an unresolved citation requirement, not necessarily an incorrect claim. The proposed intake page must supply a verified span before the claim becomes MARK.
+
+Unit 13
+
+1. A2-24 items
+
+Fresh Kotlin diagnostics:
+
+9 checked / 9 required / 0 typed
+9 EXACT_KEY_IN_TEACHING
+8 LABEL_OR_POSITION
+0 ONLY_DISTRACTOR_IS_CUE
+0 KEY_IN_PROMPT
+9 FEWER_THAN_THREE_OPTIONS advisories
+
+All nine required checks currently pass structureValid and featureValid.
+
+K = teaching-key exposure; L = label/position wording. Retain teaching and move every K item to later retrieval.
+
+Item ID	Flags	Fix candidate and frozen evidence
+
+u13-i-past-aspect-1	K, L	Ask for the imperfective past example, removing “admitted line.” Preserve the bounded supplied contrast. P:4; B:12.
+u13-i-past-aspect-2	K, L	Ask for the masculine singular past form, removing “admitted row.” V:62.
+u13-i-tense-keep-1	K, L	Ask which supplied sentence reports the evening statement. F:29–30.
+u13-i-tense-keep-2	K, L	Replace English-label selection with selection between the two Russian nationality reports already printed at F:22. Ask which preserves the original present nationality statement. Keep the item ID and a closed contrast.
+u13-i-infinitive-1	K, L	Request the perfective partner of the shown doing/making verb. B:7,23; V:19–20.
+u13-i-infinitive-2	K, L	Request the imperfective member of the shown saying/telling pair. B:42; V:3,6.
+u13-i-reported-1	K, L	Request the direct evening statement without “admitted line.” Use the nationality report at F:22 as its contrasting foil, rather than duplicating the other item’s option pair. Target: F:29.
+u13-i-reported-2	K, L	Request the Russian future-time-clause example. Use the reported evening sentence as its foil. F:30–31.
+u13-i-report-frame-time	K	Retain its two-verb tense interpretation and move to later retrieval. F:30.
+
+
+Additional findings:
+
+- u13-i-tense-keep-2 also receives NO_CYRILLIC_IN_REQUIRED_DISPLAY. Merely removing “admitted label” would not repair its English-only task.
+- u13-i-infinitive-1 and -2 also receive ANSWER_IN_INSTRUCTION_SIGNAL.
+- u13-i-reported-1 and -2 currently share the same cue and option pair, with complementary keys. Different foils, as proposed above, reduce answer-sharing.
+- Fewer than three options is advisory here; it is not a current structure failure.
+
+2. A2-23 additions
+
+Keep nine closed checks and add 11 typed checks:
+
+20 checked / 11 typed = 55%
+
+Typed key	Frozen source	Unit 13 teaching status
+
+чита́л	V:62, past_m	Already taught
+чита́ла	V:62, past_f	Already taught
+чита́ло	V:62, past_n	Add explicit review teaching first
+чита́ли	V:62, past_pl	Add explicit review teaching first
+прочита́л	V:353, past_m	Add explicit stressed-form review first
+прочита́ла	V:353, past_f	Add review teaching first
+прочита́ло	V:353, past_n	Add review teaching first
+говори́ть	V:6, accented	Already taught
+сказа́ть	V:3, accented	Already taught
+де́лать	V:19, accented	Already taught
+сде́лать	V:20, accented	Already taught
+
+
+All eleven returned exact spelling/stress matches, converting only OpenRussian apostrophe notation to combining acute. The five additional review forms were taught earlier in Unit 11, but should be explicitly reviewed before Unit 13 production checks.
+
+3. English-only fact inventory
+
+There are 68 entries, 66 distinct sentences in audit/T15-n0-unmarked-russian-facts.csv.
+
+The following are PENDING-S1:
+
+CSV lines	Claim requiring intake	Page
+
+1443	Imperfective can describe an ended activity with process/general-occurrence focus rather than endpoint focus	Вид (лингвистика) / Grammatical aspect, particularly the general-occurrence clause
+1462	The supplied example does not establish universal preservation of every tense or word	Sequence of tenses
+1470	English backshift is not mandatory in every report	Sequence of tenses
+1482	English backshift after past reporting is optional rather than universal	Sequence of tenses
+1508,1543	English backshift and Russian tense/pronoun choices are not automatic universal rules	Sequence of tenses
+1511	Reported tense is interpreted from the reported speaker’s perspective	Sequence of tenses
+1517	The past-copula alternative can be grammatical in another context	Sequence of tenses; verify this particular application, not merely the general definition
+1523	Embedded future need not be future relative to the present reporting moment	Sequence of tenses
+1528	Backshift is optional and source readings do not establish universal word/tense preservation	Sequence of tenses
+1542	Reported future is relative to reported content, not necessarily after the present moment	Sequence of tenses
+
+
+That is 11 inventory entries representing ten distinct claims: ten entries need sequence-of-tenses intake; one needs aspect intake.
+
+Dispositions for every remaining English-only entry follow. Ranges include only the relevant English-only entries.
+
+CSV lines	Recommendation
+
+1433	MARK, P:4 and V:62,353: both supplied forms are past.
+1434,1436,1439–1442,1453	MARK, P:4,14–17 and B:6,12. These support the bounded examples, completed activity expressed imperfectively, and the failure of a fixed English-tense/aspect code.
+1445	REMOVE dictionary-label commentary. Preserve actual gloss provenance.
+1449,1457	MARK, V:62: gender changes within the same imperfective verb.
+1450	MARK, P:62,65: first-person past forms and gender.
+1459,1461,1463,1465	MARK, F:22,30: the supplied nationality comparison and mixed past/future report.
+1467	MARK, F:29: the direct future evening statement.
+1468–1469,1471	MARK, F:22: the bounded English/Russian comparison.
+1473	REWORD: “Compare the supplied direct and reported evening examples.” The broader speaker-dependent pronoun rule lacks an explicit frozen explanation located here.
+1476–1477	MARK, F:30–31: evening-report tense forms versus the Moscow plan.
+1478	REWORD: “Compare the supplied examples.” Remove the unsourced general pronoun rule.
+1480–1481,1483	MARK, F:22, as descriptions of that specific comparison.
+1486,1489	REWORD: “Use the saying/telling pair shown here.” The broader all-senses exclusion is not explicitly established by the frozen pair citation.
+1490	REWORD: “Learn the supplied infinitives.” No explicit frozen statement was located for the full tense-free formulation.
+1491–1492,1503	REWORD: “Use the requested pair and aspect.” These are exercise directions rather than additional teaching claims.
+1496,1499	MARK, B:25–29: prefixes can change lexical meaning and the partner is not mechanically predictable.
+1506	MARK, F:22: past reporting verb and no past copula in the target.
+1509–1510	MARK the complete rejecting explanation, F:22 and P:68. Do not mark the isolated wrong alternative as a positive assertion.
+1513–1514,1516	MARK, F:22: original statement and the source’s contrasted reading.
+1515	REMOVE the fragment “is the matching description.”
+1518	REMOVE assessment-history commentary.
+1521–1522,1541	MARK, F:30: past reporting verb and future embedded verb.
+1524	REWORD: “Use the supplied examples for this exercise.” Remove source narration and the generalized pronoun instruction.
+1526	MARK, F:31: the Moscow example has no past reporting frame.
+1527,1529	REMOVE assessment-scope commentary.
+1531–1533	MARK, F:29–31: direct statement, reported statement and different plan.
+1536,1538	MARK, F:24,29–31: future time clause and supplied alternatives.
+1544–1545	MARK the complete rejecting explanation, F:30. Keep the reversed-tense label explicitly rejected rather than marking it independently.
+
+
+Apply the same dispositions to teaching duplicates.
+
+4. Teaching and Wikibooks overstatements
+
+The current teaching correctly avoids two known frozen-source overstatements:
+
+- It rejects a fixed English simple-past/perfective versus progressive/imperfective code.
+- It bounds the “keep the same tense” comparison instead of presenting F:22’s “whatever tense…is kept” as a universal transformation rule.
+
+I found no clear repetition of those errors in the selected teaching, but the broader corrective claims need the S1 evidence listed above.
+
+Two coverage limits remain:
+
+- Infinitive checks retrieve lexical aspect partners; they do not establish contextual infinitive-aspect selection.
+- Reported-speech checks recognize supplied contexts; they do not demonstrate unrestricted report transformation. The teaching acknowledges this limitation.
+
+5. A2-26 lint
+
+Governance: 46
+Markup:      1
+Narration:   2
+
+Numeric ranges enumerate IDs inclusively.
+
+Field	Governance owner IDs
+
+Titles — 19	obj-u13-{infinitive,past-aspect,tense-keep}; u13-s-{infinitive,orient,past-aspect,reported,tense-keep}; u13-st-orient; u13-st-teach-infinitive-1..3; u13-st-teach-past-aspect-1..4; u13-st-teach-tense-keep-1..3
+Prompts — 11	u13-g-{infinitive,past-aspect,tense-keep}-0; u13-i-{infinitive,past-aspect,reported,tense-keep}-1..2
+Feedback — 1	u13-i-infinitive-1
+Bodies — 14	u13-st-check-{infinitive,past-aspect,tense-keep}; u13-st-guided-{infinitive,past-aspect,tense-keep}-1; u13-st-orient; u13-st-rem-{infinitive,past-aspect,tense-keep}; u13-st-teach-infinitive-2; u13-st-teach-past-aspect-1; u13-st-teach-tense-keep-{1,3}
+Topic summary — 1	unit-13
+
+
+Markup: ex-u13-reported-3, display.
+
+Narration: u13-st-rem-past-aspect and u13-st-teach-past-aspect-4, bodies.
+
+6. Phrases
+
+PASS: ten distinct extracted Russian phrase spans; all have frozen evidence at P:4 and F:22,29–31. The complete nationality alternative is also present at F:22 after unfolding its wiki emphasis.
+
+All 20 stressed word forms have exact frozen stress; missing: []. Comparison ignored case/stress for presence while preserving ё/е.
+
+7. Shared references
+
+ref-u1115-attribution is shared by Units 11–15. No other Unit 13 reference link was found.
+
+Unit 14
+
+1. A2-24 items
+
+6 checked / 6 required / 0 typed
+6 EXACT_KEY_IN_TEACHING
+6 LABEL_OR_POSITION
+0 ONLY_DISTRACTOR_IS_CUE
+6 FEWER_THAN_THREE_OPTIONS advisories
+
+All six pass structure and feature validation. Move each independent check to later retrieval and remove “admitted line/row.”
+
+Item ID	Fix candidate and evidence
+
+u14-i-future-aspect-1	Ask which sentence describes the stated three-hour work period. Avoid implying duration always selects perfective. F:16.
+u14-i-future-aspect-2	Ask which sentence uses a future auxiliary plus an imperfective infinitive, rather than treating “unbounded” as an unrestricted semantic rule. F:17,34,41; V:6.
+u14-i-future-person-1	Request third-person plural future. V:3; F:66.
+u14-i-future-person-2	Request first-person singular compound future. F:41.
+u14-i-impersonal-1	Request the sentence about multiple bored experiencers. P:24,26.
+u14-i-impersonal-2	Request the supplied sentence about a woman who was cold. P:24–25.
+
+
+All six have K and L. Their option-count signals are advisory.
+
+2. Typed additions and required teaching
+
+Keep six closed checks and add 14 typed checks:
+
+20 checked / 14 typed = 70%
+
+Typed keys	Frozen source	Exact stress result
+
+бу́ду, бу́дем	F:41	Both exact
+бу́дешь, бу́дете	F:44	Both exact
+бу́дет, бу́дут	F:47	Both exact
+скажу́, ска́жешь, ска́жет, ска́жем, ска́жете, ска́жут	V:3, six presfut fields; F:60,63,66	All exact
+поговорю́	V:245, presfut_sg1	Exact
+порабо́таю	V:1485, presfut_sg1	Exact
+
+
+All fourteen comparisons passed. OpenRussian apostrophes were converted mechanically to combining acute.
+
+The current cards do not teach both complete paradigms. Add or expand these cards before production checks:
+
+Teaching card content	Frozen evidence
+
+First-person singular/plural compound future	F:41
+Second-person singular/plural compound future	F:44
+Third-person singular/plural compound future	F:47
+First-person singular/plural forms of the perfective verb	F:60; V:3
+Second-person singular/plural forms	F:63; V:3
+Third-person singular/plural forms	F:66; V:3
+Review the two supplied bounded-period examples and their isolated verb forms/stress	F:16,18; V:245,1485
+
+
+Keep the correct imperfective classification of быть, supported by V:2. Do not copy the erroneous “perfective быть” clause surrounding F’s otherwise useful paradigm.
+
+3. English-only fact inventory
+
+There are 13 entries, all distinct.
+
+CSV line	Recommendation
+
+1548	MARK, F:15–18: both supplied statements refer to future situations.
+1549	MARK, P:16–17: attested duration examples expressed imperfectively disprove a universal duration → perfective rule.
+1551	REWORD: “Read the two future examples.” Avoid an unqualified definition that ignores relative-time contexts.
+1554	PENDING-S1 — Grammatical aspect / Вид (лингвистика): bounding a work period does not necessarily assert completion of a task. The frozen examples show the period but do not explicitly state this distinction.
+1555	MARK, P:16–17, for the non-universal duration claim.
+1559	PENDING-S1 — Grammatical aspect / Вид (лингвистика): the complete statement about “unbounded” and duration in imperfective future needs explicit evidence, beyond the supplied contrast.
+1563	MARK, F:41: same infinitive, different subject/auxiliary number.
+1568	MARK, V:3, presfut_sg3/pl3.
+1569	MARK, F:60–66: future reference of the supplied perfective forms.
+1573	MARK, F:41.
+1577	MARK, P:24–26 and V:2, past_n.
+1586	MARK, P:24–26: plural experiencers retain the displayed neuter singular verb.
+1590	MARK, P:24–25: experiencer pronoun changes, not feminine verbal agreement.
+
+
+PENDING-S1: two claims.
+
+4. Teaching errors and qualifications
+
+- The “bounded/unbounded” terminology needs the qualifications and citations above. The examples alone do not establish that every definite duration requires perfective.
+- u14-st-teach-future-aspect-2 gives an overly broad introductory future-time definition. Bound it to the supplied statements; reported future can require a different reference point.
+- “Always use было” is defensible for the cold/bored constructions shown, not all impersonal constructions. Make that scope explicit, using P:24–26.
+- No current Unit 14 teaching calls быть perfective. The main instructional omission is the incomplete paradigms, not that classification error.
+
+5. A2-26 lint
+
+Governance: 37
+Markup:      4
+Narration:   0
+
+Field	Governance owner IDs
+
+Titles — 18	obj-u14-{future-aspect,future-person,impersonal}; u14-s-{future-aspect,future-person,impersonal,orient}; u14-st-orient; u14-st-teach-future-aspect-1..3; u14-st-teach-future-person-1..4; u14-st-teach-impersonal-1..3
+Prompts — 9	u14-g-{future-aspect,future-person,impersonal}-0; u14-i-{future-aspect,future-person,impersonal}-1..2
+Bodies — 9	u14-st-check-{future-aspect,future-person,impersonal}; u14-st-guided-{future-aspect,future-person,impersonal}-1; u14-st-orient; u14-st-rem-impersonal; u14-st-teach-impersonal-1
+Topic summary — 1	unit-14
+
+
+Markup owners, all bodies:
+
+u14-st-rem-future-person
+u14-st-rem-impersonal
+u14-st-teach-future-person-2
+u14-st-teach-impersonal-2
+
+6. Phrases
+
+PASS: all eight phrases are attested at F:15–18,41 and P:24–26.
+
+All 12 currently stressed word forms have exact frozen stress; missing: []. The proposed additional paradigm keys also passed separate exact-stress checks.
+
+7. Shared references
+
+ref-u1115-attribution, shared by Units 11–15.
+
+Unit 15
+
+1. A2-24 items
+
+6 checked / 6 required / 0 typed
+6 EXACT_KEY_IN_TEACHING
+6 LABEL_OR_POSITION
+0 ONLY_DISTRACTOR_IS_CUE
+6 FEWER_THAN_THREE_OPTIONS advisories
+1 CONSTANT_REQUIRED_KEY advisory
+
+All six pass structure and feature validation. Move checks to later retrieval and remove “admitted row/line.”
+
+Item ID	Fix candidate and evidence
+
+u15-i-imperative-1	Request the singular imperative form. V:62, imperative_sg.
+u15-i-imperative-2	Repair the constant key: request the plural imperative from the shown infinitive, key чита́йте, retaining the singular form as a distractor. V:62. Update its feature metadata.
+u15-i-say-request-1	Request the plural imperative of the shown giving verb. V:30.
+u15-i-say-request-2	Request the singular imperative of the shown saying/telling verb. V:3.
+u15-i-aspect-consolidate-1	Request the imperfective member of the supplied saying/telling pair. B:42; V:3,6.
+u15-i-aspect-consolidate-2	Request the perfective member of the supplied doing/making pair. B:7,23; V:19–20.
+
+
+All six have K and L. The constant-key advisory concerns u15-i-imperative-1 and -2, both currently keyed to the singular form.
+
+2. Typed additions and teaching cards
+
+Keep six closed checks and add 14 typed checks:
+
+20 checked / 14 typed = 70%
+
+Typed keys	Frozen source	Teaching status
+
+чита́й, чита́йте	V:62, imperative fields	Already taught
+скажи́, скажи́те	V:3, imperative fields	Already taught
+да́й, да́йте	V:30, imperative fields	Already taught
+говори́ть	V:6, accented	Already taught
+сказа́ть	V:3, accented	Already taught
+де́лать	V:19, accented	Already taught
+сде́лать	V:20, accented	Already taught
+де́лай, де́лайте	V:19, imperative fields	Teaching needed first
+сде́лай, сде́лайте	V:20, imperative fields	Teaching needed first
+
+
+All fourteen have exact character/stress matches after mechanical apostrophe conversion.
+
+Add two worked cards:
+
+1. The singular/plural imperative forms from V:19, retaining its imperfective classification.
+2. The singular/plural imperative forms from V:20, retaining its perfective classification.
+
+For the plural/polite formation explanation, RG:1169 supplies the rule. These cards establish forms and aspect membership; they do not by themselves establish when each aspect should be used in a request.
+
+3. English-only fact inventory
+
+There are 21 entries, 17 distinct sentences.
+
+CSV lines	Recommendation
+
+1593,1600	MARK, RG:1169 and V:62: plural/polite extension of the singular form.
+1595,1602	REWORD: “Use the imperative form requested here.” Remove assessment-scope commentary.
+1605,1614	REWORD: “Choose the requested singular form.” Remove table-row narration.
+1608,1618	MARK, RG:1169 and V:62: singular versus plural/polite form, without inferring listener count from the plural form alone.
+1611	MARK, C:81–82: the supplied request and translation.
+1622	REWORD: “Copy the displayed stress.” This removes the additional generalized pragmatics claim about context. Exact imperative stress is in V:3.
+1625	REMOVE the malformed standalone gloss fragment; preserve the complete sourced pairing/gloss from B:42.
+1627	MARK, RG:1169: plural form and polite address.
+1632	MARK, V:3: same verb/aspect across its imperative forms.
+1636,1639	REWORD: “Use the saying/telling pair shown here.” The frozen pair citation does not explicitly establish the broader all-senses exclusion.
+1641	REWORD: “Copy each displayed form carefully.” Keep a pure instruction.
+1642	MARK, B:25–29: prefixes do not automatically produce the required lexical partner.
+1643	REWORD: “Choose the requested partner.”
+1644	REMOVE assessment-scope commentary. Record the actual contextual-skill gap in the queue instead.
+1647	REWORD: “Use the requested pair and aspect.”
+1651	MARK, B:25–29.
+
+
+PENDING-S1 among existing inventory claims: zero.
+
+The current unit makes no substantive rule choosing aspect for requests or prohibitions. It explicitly says those choices are not being tested. Therefore there is no existing aspect-in-requests sentence to mark PENDING-S1.
+
+That is a coverage gap, not evidence that the contextual skill is complete. Any new request/prohibition aspect rule or contextual examples requiring Повелительное наклонение must remain PENDING-S1 until an exact supporting span is frozen and admitted. The previously researched page supports formation but was not shown to supply a complete Russian aspect-in-requests treatment.
+
+4. Teaching errors and q

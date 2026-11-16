@@ -1,0 +1,35 @@
+Same reviewed head: 4c402ef7. No changes, commits or pushes.
+
+Unit 15 — 4. Teaching errors and qualifications
+
+- No clear repeated Wikibooks factual error was found in the selected imperative teaching.
+- Singular/plural/polite distinctions have frozen support at catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt:1169.
+- u15-i-imperative-1 and u15-i-imperative-2 currently share the singular key. Proposed repair: make the second request plural imperative, using the existing frozen form at units-3-5/openrussian/verbs.csv:62.
+- Add worked teaching for the singular/plural imperative forms in verb rows 19 and 20 before their typed checks.
+- Lexical aspect partners do not establish contextual aspect choice in requests or prohibitions. The current teaching acknowledges that gap. Any new rule requiring Повелительное наклонение remains PENDING-S1 until its supporting span is frozen and admitted.
+
+5. A2-26 lint
+
+36 governance, two markup, zero narration hits.
+
+- Titles — 16: obj-u15-{aspect-consolidate,imperative,say-request}; u15-s-{aspect-consolidate,imperative,orient,say-request}; u15-st-orient; u15-st-teach-imperative-1..3; u15-st-teach-imperative-contrast; u15-st-teach-say-request-1..4.
+- Prompts — 9: u15-g-{aspect-consolidate,imperative,say-request}-0; u15-i-{aspect-consolidate,imperative,say-request}-1..2.
+- Bodies — 10: u15-st-check-{aspect-consolidate,imperative,say-request}; u15-st-guided-{aspect-consolidate,imperative,say-request}-1; u15-st-orient; u15-st-rem-imperative; u15-st-teach-imperative-1; u15-st-teach-say-request-1.
+- Topic summary — 1: unit-15.
+
+Markup owners, both body fields: u15-st-rem-say-request, u15-st-teach-say-request-2.
+
+6. Phrases
+
+PASS. The one maximal multi-word Cyrillic run, свежие фрукты, and its complete punctuated request are present at catalog/sources/units-6-10/wikibooks/accusative-4330404.txt:81.
+All 11 currently stressed word forms have exact frozen stress; missing: []. Proposed additional imperative keys also passed exact-stress comparisons.
+
+7. Shared references
+
+ref-u1115-attribution is shared by Units 11–15.
+
+Feasibility summary
+
+13: Yes — nine retained closed checks + eleven typed = 20, 55% typed. PENDING-S1: 11 inventory entries, ten distinct claims. Broader backshift/reported-time claims need S1. Add form-review teaching; repair label-only checking, teaching exposure and shared-option exposure. Contextual infinitive-aspect skill remains unestablished.
+14: Yes — six retained closed + fourteen typed = 20, 70% typed. PENDING-S1: two claims. Teach both complete future paradigms first. Support bounded/unbounded qualifications and repair the overly broad future definition.
+15: Yes — six retained closed + fourteen typed = 20, 70% typed. PENDING-S1: zero existing inventory claims. Add the two imperative teaching cards; repair the constant key, exposure and lint. Full aspect-in-requests coverage still needs source research and teaching; meeting the numerical floor does not close that gap.

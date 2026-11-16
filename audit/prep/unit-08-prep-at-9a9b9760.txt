@@ -1,0 +1,210 @@
+Verified 9a9b9760, the current remote head, in an isolated temporary checkout. No tracked files changed; nothing was committed or pushed.
+
+1. A2-24 items
+
+Kotlin reports:
+
+19 checked / 19 required / 0 typed
+15 ONLY_DISTRACTOR_IS_CUE
+17 EXACT_KEY_IN_TEACHING
+0 LABEL_OR_POSITION
+0 KEY_IN_PROMPT
+
+There are 17 distinct required items with A2-24 flags. All 19 additionally receive the FEWER_THAN_THREE_OPTIONS review signal. That signal alone currently does not fail structureValid; all 19 return structure=[], feature=true.
+
+Source abbreviations used below:
+
+- N — catalog/sources/units-3-5/openrussian/nouns.csv
+- A — catalog/sources/units-6-10/openrussian/adjectives.csv
+- G — catalog/sources/units-6-10/wikibooks/genitive-4567338.txt
+- W — catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt
+- D — catalog/sources/units-3-5/wikibooks/gender-4310736.txt
+
+Flags: C = shown-cue-only; K = exact key in teaching; F = fewer than three options.
+
+For every K item, retain the teaching but place its independent check in a later retrieval session, outside the session containing its answer-bearing teaching. Adding an option does not resolve K.
+
+Item ID	Flags	Additional fix candidate
+
+u8-i-plural-1	C, K, F	Add го́роду — N:24, singular dative.
+u8-i-plural-2	C, K, F	Add окну́ — N:51, singular dative.
+u8-i-plural-3	C, K, F	Add ма́ме — N:83, singular dative/prepositional.
+u8-i-plural-4	C, K, F	Add до́му — N:15, singular dative.
+u8-i-plural-5	C, K, F	Add сло́ву — N:16, singular dative.
+u8-i-plural-6	C, K, F	Add кни́ге — N:60, singular dative/prepositional.
+u8-i-spelling-1	C, K, F	Add кни́ге — N:60.
+u8-i-spelling-2	C, K, F	Add хоро́шая — A:18, feminine singular nominative.
+u8-i-spelling-3	C, K, F	Add хоро́ший — A:18, masculine singular nominative.
+u8-i-spelling-4	K, F	Add хоро́шая — A:18.
+u8-i-irregular-1	C, K, F	Add челове́ку — N:2, singular dative.
+u8-i-irregular-2	C, K, F	Add дру́гу — N:14, singular dative.
+u8-i-irregular-3	C, K, F	Add сы́ну — N:74, singular dative.
+u8-i-agreement-1	C, K, F	Add моя́ — A:8, feminine singular nominative.
+u8-i-agreement-2	C, K, F	Add э́то — A:4, neuter singular nominative.
+u8-i-agreement-3	C, K, F	Add си́няя — A:109, feminine singular nominative.
+u8-i-availability-2	K, F	Add the English alternative “There are no old buildings in Moscow” — G:55. Existing street/buildings meanings are G:50–51.
+u8-i-availability-1	F only	Add a denial-of-existence alternative; support the positive/negative distinction with G:49–55.
+u8-i-availability-3	F only	Add a genitive-case alternative, supported by the explicit positive/negative contrast at G:49–55.
+
+
+The spelling items also receive ANSWER_IN_INSTRUCTION_SIGNAL; the same retrieval-placement repair addresses that exposure.
+
+Every proposed Russian third option is a single frozen form. Add genuine row-backed provenance and update the contrast metadata/rationales before validating the implementation. The five guided items remain teaching scaffolds, separate from the 19 required checks.
+
+2. Typed additions
+
+Keeping all 19 required closed checks requires nine typed additions:
+
+8 / (19 + 8) = 29.63% — insufficient
+9 / (19 + 9) = 32.14% — sufficient
+
+Result: 28 checked, nine typed.
+
+These nine keys are already taught in Unit 8. Each is the row’s pl_nom field:
+
+Typed key	Frozen source	Source spelling	Character comparison
+
+города́	N:24	города'	Exact after apostrophe → combining acute
+о́кна	N:51	о'кна	Exact
+ма́мы	N:83	ма'мы	Exact
+дома́	N:15	дома'	Exact
+слова́	N:16	слова'	Exact
+кни́ги	N:60	кни'ги	Exact
+лю́ди	N:2	лю'ди	Exact
+друзья́	N:14	друзья'	Exact
+сыновья́	N:74	сыновья'	Exact
+
+
+The automated comparisons returned EXACT=True for all nine, without moving, adding or dropping stress relative to the source notation. Use later retrieval sessions so these additions do not create fresh teaching-key flags.
+
+3. English-only fact inventory
+
+There are 47 Unit 8 entries without Cyrillic in audit/T15-n0-unmarked-russian-facts.csv.
+
+Each row below identifies an existing CSV entry by line and opening wording. MARK means add the marker and real frozen-source provenance. Coverage records alone are insufficient.
+
+For REWORD recommendations, the proposed wording is an instruction containing no Russian claim. REMOVE recommendations concern redundant source/app commentary; the underlying teaching and remediation routing should remain.
+
+CSV line	Entry	Recommendation
+
+790	“In the selected table sense…”	MARK, N:32: table gloss and nominative plural field.
+791	“The English notes beside these examples…”	REMOVE dictionary/source commentary.
+792	“Both the ending and the supplied stress matter…”	REWORD: “Copy the displayed form carefully.” Retain instruction without an additional linguistic assertion.
+793	“Each noun retains its dictionary gender…”	MARK, D:9,17 and W:14.
+794	“The source’s single plural agreement category…”	REMOVE source commentary; line 793 retains the teaching.
+795	“Gender alone is not a complete algorithm…”	REWORD: “Use the forms taught here.” Finite rows do not establish the unrestricted algorithm claim.
+797	“The plural ending differs from the table pair…”	MARK, N:24 and N:32. Both endings and stress are explicit.
+798	“These patterns are word-specific recognition evidence…”	REWORD: “Practise the displayed pairs.” Remove assessment/provenance commentary.
+800	“The supplied plural retains its stress.”	MARK, N:60.
+801	“Its final vowel follows the stem’s last consonant…”	MARK, N:60 and W:24.
+803	“Notice the supplied stress moves…”	MARK, N:51.
+804	“An ending-only guess would lose…”	REWORD: “Copy the whole displayed form.” Avoid an unsupported general algorithm discussion.
+806	“The ending changes while the supplied stress stays…”	MARK, N:83.
+807	“A feminine dictionary label alone…”	REWORD: “Use this taught pair for the item.” Avoid generalizing beyond the cited pair.
+809	“The dictionary’s English house/home labels…”	REMOVE source/gloss-format commentary.
+811	“Preserve its final stress.”	REWORD: “Copy the displayed form carefully.” Keep a pure instruction.
+812	“The seven pairs in this lesson cover…”	REWORD: “Review these seven pairs.” Remove scope/algorithm commentary.
+813	“A missed choice returns to all cards…”	REMOVE app/check narration.
+828	“Adjectives agree with their nouns…”	MARK, W:1.
+832	“The seven-letter condition is required.”	MARK, W:24.
+833	“This rule applies to the spelling of noun and adjective endings.”	MARK, W:24.
+835	“The rule controls spelling, but the question determines…”	REWORD: “Read the requested form before answering.” Separate the instruction from the sourced rule.
+847	“All these options are correctly spelled…”	REWORD: “Choose the requested form.” Remove assessment commentary; keep the actual form contrasts elsewhere.
+869	“These supplied examples introduce plural modifiers…”	REWORD: “Compare the examples.” The existing Cyrillic explanations can retain the sourced classifications.
+871	“The complete phrase provides the plural reading…”	REWORD: “Read the whole phrase before answering.” Avoid the additional universal-case warning.
+874	“The requested plural is a number distinction…”	MARK, A:8 and pronouns-4585698.txt:81 under units-3-5/wikibooks/.
+878	“In ordinary English the plural demonstrative reading is these.”	MARK, A:4 plus W:14’s explicit English/Russian demonstrative example.
+880	“The plural does not have a feminine-only gender.”	MARK, W:14 and A:4.
+882	“This source prints these words without written stress…”	REMOVE source-printing commentary. Preserve the actual supplied forms.
+883	“These examples are bounded nominative recognition…”	REWORD: “Practise the shown forms.” Remove assessment-scope commentary.
+890	“The source supplies these words without written stress…”	REWORD: “Compare the shown singular and plural forms.” Remove source and assessment narration.
+892	“The supplied line states that Frenchmen exist…”	MARK, G:49–50.
+893	“This alternative describes a question…”	MARK, G:49–50.
+895	“This positive line states that something exists…”	MARK, G:49–50.
+896	“It is a statement, not a question…”	MARK, G:50.
+898	“This line states that old buildings exist…”	MARK, G:51.
+899	“Compare its full meaning with the street example…”	MARK, G:50–51; both things and locations are explicit.
+900	“In both supplied positive statements…”	MARK, G:49–51.
+901	“The previously introduced prepositional case…”	MARK, G:49–51, which explicitly identifies the existence noun as nominative.
+902	“The supplied line states that old buildings exist…”	MARK, G:49,51.
+903	“This alternative describes a question…”	MARK, G:49,51.
+904	“The source pairs this line with…”	MARK, G:50; also remove “The source pairs…” from learner wording.
+905	“The other source translation concerns…”	MARK, G:50–51; remove the source-narration phrasing.
+906	“The other supplied meaning concerns old buildings…”	MARK, G:50–51.
+907	“The noun naming the old buildings is nominative…”	MARK, G:49,51.
+908	“The location phrase is a separate part…”	MARK, G:49,51.
+909	“This alternative confuses the location phrase…”	MARK, G:49,51.
+
+
+Lines 790–813 belong to u8-st-rem-plural; 828–847 to u8-st-rem-spelling; 869–883 to u8-st-rem-agreement. The later rows identify the agreement/availability feedback and rationales. Apply equivalent dispositions to duplicated teaching sentences as appropriate.
+
+4. A2-26 lint
+
+Fresh Kotlin output:
+
+Category	Hits	Distinct owners
+
+Governance	26	24
+Markup	2	2
+Narration	0	0
+
+
+Governance owners and fields:
+
+obj-u8-agreement                         title
+obj-u8-irregular                         title
+u8-i-agreement-3                         feedback
+u8-s-agreement                          title
+u8-s-irregular                          title
+u8-s-orient                             title
+u8-s-plural                             title
+u8-st-check-agreement                   body
+u8-st-check-irregular                   body
+u8-st-guided-agreement-1                 body
+u8-st-guided-irregular-1                 body
+u8-st-orient                            title, body
+u8-st-rem-agreement                     body
+u8-st-rem-spelling                      body
+u8-st-teach-agreement-2                  body
+u8-st-teach-agreement-6                  body
+u8-st-teach-irregular-1                  title, body
+u8-st-teach-irregular-2                  title
+u8-st-teach-irregular-3                  title
+u8-st-teach-irregular-4                  title
+u8-st-teach-irregular-5                  title
+u8-st-teach-irregular-6                  title
+u8-st-teach-spelling-1                   body
+unit-8                                  topicSummary
+
+Markup owners:
+
+u8-st-rem-irregular       body
+u8-st-teach-irregular-2   body
+
+Zero narration hits means the current regex found none; several fact-inventory entries still contain source or assessment commentary worth removing.
+
+5. Multi-word phrases
+
+PASS. All five distinct phrases extracted from Unit 8 learner text have frozen attestations:
+
+Phrase	Frozen attestation
+
+В Москве́ есть ста́рые зда́ния	G:51
+На э́той у́лице есть францу́зы	G:50
+пять столов	G:99
+синие книги	W:21
+хорошее письмо	W:26
+
+
+Comparison ignored case and combining stress marks, while retaining the ё/е distinction. Separately, all 35 distinct stressed word forms extracted from the unit have exact stress attestation in frozen sources. No missing stress form was found.
+
+6. Shared references
+
+Unit 8 links to one shared reference:
+
+ref-u610-attribution — “Units 6–10 source notice”
+Linked by Units 6, 7, 8, 9 and 10.
+
+No other Unit 8 reference link was found. Editing that shared notice affects all five units.
+
+Unit 8 can reach A2-23 using frozen sources only: retain and repair the 19 closed checks, then add the nine sourced typed checks for 28 total / nine typed / 32.1%. No source-shortage blocker was found. The remaining work is item repair, retrieval placement, genuine fact-marker provenance, lint cleanup and implementation validation.

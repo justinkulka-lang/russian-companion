@@ -1,0 +1,326 @@
+Verified 9a9b9760, still the remote head at the final check. No tracked files changed; nothing was committed or pushed.
+
+Source abbreviations—all under catalog/sources/:
+
+Code	Frozen file
+
+P	units-11-15/wikibooks/past-tense-4567337.txt
+F	units-11-15/wikibooks/future-tense-3353822.txt
+B	units-11-15/wikibooks/verbal-aspect-4059032.txt
+D	units-11-15/wikibooks/dative-case-4289617.txt
+Q	units-3-5/wikibooks/prepositional-4567336.txt
+W	units-6-10/wikibooks/adjectives-4292379.txt
+V	units-3-5/openrussian/verbs.csv
+N	units-3-5/openrussian/nouns.csv
+
+
+The OpenRussian files are frozen at 50e210c4803237779cb562bc1abcea529066031c.
+
+Unit 11
+
+1. A2-24 items
+
+Fresh Kotlin output:
+
+8 checked / 8 required / 0 typed
+8 EXACT_KEY_IN_TEACHING
+6 LABEL_OR_POSITION
+0 ONLY_DISTRACTOR_IS_CUE
+0 KEY_IN_PROMPT
+8 FEWER_THAN_THREE_OPTIONS advisories
+1 CONSTANT_REQUIRED_KEY advisory
+
+All eight required closed checks currently return structure=[], feature=true.
+
+K means teaching-key exposure; L means label/position wording. For every K item, retain its teaching and move the independent check to a later retrieval session.
+
+Item ID	Flags	Fix candidate and frozen evidence
+
+u11-i-past-read-1	K, L	Ask for the masculine singular past form, removing “admitted row.” Existing key: V:62, past_m.
+u11-i-past-read-2	K, L	Ask which sentence has a feminine singular subject and agreeing past verb. Existing sentences: P:56.
+u11-i-past-be-1	K, L	Ask for the plural past form, removing “admitted row.” Existing key: V:2, past_pl.
+u11-i-past-be-2	K, L	Also repair the constant-key problem: use the shown infinitive быть, request masculine singular past, key бы́л. Retain the existing two forms and optionally add бы́ло. All are V:2. Update its tested feature and explanations accordingly.
+u11-i-past-aspect-1	K	Move to later retrieval; preserve the masculine/neuter contrast. Forms: V:353, past_m/f/n.
+u11-i-past-aspect-2	K	Move to later retrieval; preserve the feminine/neuter contrast. Same row.
+u11-i-reflexive-1	K, L	Ask which sentence has feminine singular past agreement, removing “admitted line.” Sentences: P:106–109.
+u11-i-reflexive-2	K, L	Ask for the feminine singular past form, removing “admitted row.” Forms: V:209, past_f/pl.
+
+
+The constant-key advisory concerns u11-i-past-be-1 and u11-i-past-be-2: both currently key бы́ли. The proposed second-item change retains both closed checks and gives them different targets.
+
+Fewer than three options is advisory here. None of these items has the displayed cue as its only distractor.
+
+2. A2-23 additions
+
+Keeping eight closed checks leaves a shortfall of 12 checked items. Adding twelve typed checks produces:
+
+20 checked / 12 typed = 60%
+
+All twelve candidates are already taught; none needs additional form teaching first.
+
+Typed key	Frozen source/field	Source stress notation
+
+чита́л	V:62, past_m	чита'л
+чита́ла	V:62, past_f	чита'ла
+чита́ло	V:62, past_n	чита'ло
+чита́ли	V:62, past_pl	чита'ли
+бы́л	V:2, past_m	бы'л
+была́	V:2, past_f	была'
+прочита́л	V:353, past_m	прочита'л
+прочита́ла	V:353, past_f	прочита'ла
+прочита́ло	V:353, past_n	прочита'ло
+улыба́лась	V:142, past_f	улыба'лась
+учи́лся	V:209, past_m	учи'лся
+учи́лась	V:209, past_f	учи'лась
+
+
+Character comparisons returned EXACT=True for all twelve, converting only the dictionary’s apostrophe notation to combining acute. Place the typed checks in later retrieval sessions.
+
+3. English-only fact inventory
+
+There are 12 English-only entries in audit/T15-n0-unmarked-russian-facts.csv.
+
+CSV line	Entry	Recommendation
+
+1283	Past form matches subject gender/number	MARK, P:38,56.
+1290	Cue is feminine; requested form masculine	MARK, V:62, past_f/m.
+1294	Question requests feminine rather than plural line	REWORD: “Choose the requested sentence.” This is item-direction commentary rather than needed teaching.
+1303	Feminine cue, plural target; agreement follows number	MARK, V:2 and P:38,65. Remove “row” wording.
+1307	Neuter cue, plural target	REWORD: “Check the requested gender and number.” The existing wording would become stale under the proposed constant-key repair.
+1311	Singular past agrees with subject gender	MARK, P:38,65 and V:353.
+1313	First-person pronoun does not fix one past gender	MARK, P:62,65: first-person examples with gender alternatives and the person/gender distinction.
+1315	Listed forms are masculine/feminine/neuter	MARK, V:353, past_m/f/n.
+1326	Reflexive ending remains on past verb	MARK, P:104,107.
+1329	“Keep the reflexive ending with the verb.”	REWORD: “Copy the whole form.” Keep a pure instruction; the actual formation explanation remains sourced elsewhere.
+1333	Both retain reflexive ending; first is feminine singular	MARK, P:107,109.
+1337	Ending alone does not distinguish feminine/plural	MARK, V:209, past_f/pl.
+
+
+PENDING-S1: zero. These dispositions use existing frozen evidence.
+
+4. Wikibooks errors and overstatements
+
+- Actual inconsistency: u11-st-teach-past-read-2 and its remediation put “the past of быть” outside the regular remove-infinitive-ending/add-past-ending recipe. The listed past forms themselves follow that formation pattern. Correct this to distinguish an irregular verb overall from the supplied past formation. V:2 and P:68 supply the forms.
+- Overbroad wording: u11-st-teach-past-be-2 and its remediation say, “It conjugates as all regular verbs do…”. Bound this explicitly to the listed past forms, rather than implying regular conjugation throughout the paradigm. V:2 provides the exact past forms.
+- The known “быть is perfective” error is not repeated in current Unit 11 teaching. It remains in the frozen source at P:68, but the selected teaching omitted that clause. The correct classification is imperfective, V:2.
+
+Neither correction needs S1.
+
+5. A2-26 lint
+
+Governance: 47 hits
+Markup:      2 hits
+Narration:   0
+
+Ranges below enumerate owner IDs inclusively.
+
+Field	Governance owners
+
+Titles — 26	obj-u11-{past-be,past-read,reflexive}; u11-s-{orient,past-be,past-read,reflexive}; u11-st-orient; u11-st-teach-past-aspect-1..4; u11-st-teach-past-be-1..4; u11-st-teach-past-read-1..4; u11-st-teach-reflexive-1..6
+Prompts — 9	u11-g-{past-be,past-read,reflexive}-0; u11-i-past-be-1..2; u11-i-past-read-1..2; u11-i-reflexive-1..2
+Bodies — 10	u11-st-check-{past-aspect,past-be,past-read,reflexive}; u11-st-guided-{past-aspect,past-be,past-read,reflexive}-1; u11-st-orient; u11-st-teach-past-be-1
+Detail — 1	ref-u1115-attribution
+Topic summary — 1	unit-11
+
+
+Markup owners, both body fields:
+
+u11-st-teach-past-be-2
+u11-st-rem-past-be
+
+The attribution-detail hit is in a licence notice. Preserve required attribution information when addressing that signal.
+
+6. Phrases
+
+PASS: all eight distinct multi-word phrases have frozen attestations. All 20 extracted stressed word forms have exact frozen stress; missing forms: [].
+
+Phrase	Frozen evidence
+
+Он чита́л	P:56
+Она чита́ла	P:56
+Они чита́ли	P:56
+Он был в Москве́	P:69
+Она была́ краси́вая	P:71
+Он улыба́лся	P:106
+Она улыба́лась	P:107
+Они улыба́лись	P:109
+
+
+Phrase comparison ignored case and stress, retaining ё/е; exact stress was checked separately.
+
+7. Shared references
+
+ref-u1115-attribution is shared by Units 11–15. No other Unit 11 reference link was found.
+
+Unit 12
+
+1. A2-24 items
+
+Fresh Kotlin output:
+
+12 checked / 12 required / 0 typed
+11 EXACT_KEY_IN_TEACHING
+10 LABEL_OR_POSITION
+0 ONLY_DISTRACTOR_IS_CUE
+0 KEY_IN_PROMPT
+12 FEWER_THAN_THREE_OPTIONS advisories
+
+All twelve required closed checks currently return structure=[], feature=true.
+
+For every K item, retain teaching and move its independent check to later retrieval.
+
+Item ID	Flags	Fix candidate and frozen evidence
+
+u12-i-future-imp-1	K, L	Request the first-person singular future sentence without “admitted line.” F:41.
+u12-i-future-imp-2	L	Request the second-person plural future sentence. Add an explicit worked example of the target sentence before guided work, then check it later. Exact sentence: F:44.
+u12-i-future-perf-1	K, L	Request the first-person plural future form without “table row.” F:60; V:3.
+u12-i-future-perf-2	K, L	Request the first-person singular future sentence. F:60.
+u12-i-aspect-1	K	Retain the bounded saying/telling partner question; move to later retrieval. B:7,42; V:3,6.
+u12-i-aspect-2	K	Retain the doing/making partner question; move to later retrieval. B:7,23; V:19–20.
+u12-i-dative-1	K, L	Request the singular dative form without “admitted row.” N:32.
+u12-i-dative-2	K, L	Same prompt repair. N:15.
+u12-i-spelling-1	K, L	Request the neuter singular nominative adjective form. W:26 and adjective row 18 in units-6-10/openrussian/adjectives.csv.
+u12-i-spelling-2	K, L	Ask which phrase uses the wrong unstressed vowel in the adjective ending, rather than which “admitted line” was rejected. The exact negative example is W:26.
+u12-i-prep-plural-1	K, L	Request the prepositional plural form without “admitted row.” N:32.
+u12-i-prep-plural-2	K, L	Same prompt repair. N:15.
+
+
+u12-i-aspect-2 also receives ANSWER_IN_INSTRUCTION_SIGNAL.
+
+The intentionally incorrect spelling in u12-i-spelling-2 is explicitly printed as incorrect in W:26. Keep it confined to error recognition; do not make it an accepted production key.
+
+2. A2-23 additions
+
+Keeping twelve closed checks leaves a shortfall of eight checked items. Eight typed additions produce:
+
+20 checked / 8 typed = 40%
+
+All eight candidates are already taught; none needs added form teaching first.
+
+Typed key	Frozen source/field	Source stress notation
+
+кни́ге	N:60, sg_dat	кни'ге
+столу́	N:32, sg_dat	столу'
+до́му	N:15, sg_dat	до'му
+кни́гах	N:60, pl_prep	кни'гах
+стола́х	N:32, pl_prep	стола'х
+дома́х	N:15, pl_prep	дома'х
+скажу́	V:3, presfut_sg1	скажу'
+ска́жешь	V:3, presfut_sg2	ска'жешь
+
+
+All eight comparisons returned EXACT=True, converting only apostrophe stress notation.
+
+The additional teaching needed for the existing second-person-plural sentence check is separate from this typed-key list.
+
+3. English-only fact inventory
+
+There are 30 English-only entries. Three require conservative PENDING-S1 treatment: their wording extends beyond the explicit frozen evidence identified here. The named intake pages are candidates requiring exact-span verification before admission.
+
+CSV line	Entry	Recommendation
+
+1341	Auxiliary plus same imperfective infinitive	MARK, F:34,41.
+1347	Infinitive unchanged while subject/auxiliary change	MARK, F:41–47.
+1350	Plural-address form can address one person politely	MARK, units-3-5/wikibooks/verbs-4233876.txt:8.
+1352	Same infinitive follows each auxiliary	MARK, F:41–47.
+1356	Perfective future uses a single conjugated verb	MARK, F:53,60.
+1358	“Just conjugate…according to standard rules”	REWORD: “Use the person forms taught here.” Remove the unrestricted recipe; retain the corrected formation teaching described below.
+1361	Singular cue versus plural table row	REWORD: “Choose the requested person and number.” Remove table-position commentary.
+1365	Single conjugated perfective verb; one-speaker target	MARK, F:53,60.
+1369	Aspect describes how an action is viewed, rather than when	PENDING-S1 — Grammatical aspect, researched revision 1384289498, especially its explicit tense/aspect distinction.
+1370	Activity, repetition, or general fact of occurrence without endpoint focus	PENDING-S1 — Вид (лингвистика), researched revision 153277825, and Grammatical aspect. The process/repetition portions have existing support; the complete general-occurrence formulation needs an explicit reviewed span.
+1371	Perfective boundary/result	MARK, B:6,17: completion/outcome distinction.
+1372	Imperfective does not itself mean unfinished	MARK, B:12: the process example explicitly leaves completion outside its focus.
+1374	Infinitives do not specify tense on their own	REWORD: “Learn the two supplied infinitives.” I did not locate an explicit frozen statement supporting the full tense-free formulation; the forms themselves remain sourced.
+1375	Pairs are not universally automatic	MARK, B:6,25–29. Do not adopt the page’s conflicting universal statements.
+1379	Both verbs concern doing/making	MARK, B:7 and V:19–20.
+1380	Accomplishment versus activity or general occurrence	PENDING-S1 — Вид (лингвистика) / Grammatical aspect for the general-occurrence clause. B:6,12 supports the narrower process/outcome contrast.
+1383	Do not assume every prefix changes only aspect	MARK, B:25–29.
+1390	Dative singular spelling also occurs as prepositional singular	MARK, N:60, sg_dat/sg_prep.
+1392	Dative traditionally third case; indirect object	MARK, D:1,5–7. Remove wiki emphasis markup.
+1395	Singular dative rather than plural nominative	MARK, N:32, sg_dat/pl_nom; remove “row” wording.
+1399	Case changes while number remains singular	MARK, N:15, sg_nom/sg_dat/pl_nom.
+1402	Unstressed ending after the consonant transliterated “sh”	MARK, W:26; the transliteration is explicit in units-26-30/wikipedia/russian-alphabet-1371795481.txt:154–156.
+1409	Adjective agreement and neuter good-letter example	MARK, W:1,26.
+1412	Incorrect unstressed vowel in the negative example	MARK, W:26; same alphabet evidence for “sh.”
+1414	Keyed counterexample is incorrect Russian	MARK, W:26, which explicitly labels it incorrect.
+1418	Singular alternatives do not satisfy plural target	MARK, N:60, singular and plural fields.
+1419	Prepositional form requires a governing preposition in a sentence	MARK, Q:4.
+1424	Prepositional plural versus singular dative	MARK, N:32, pl_prep/sg_dat.
+1425	Prepositional form follows a governing preposition	MARK, Q:4.
+1429	Same governing-preposition distinction	MARK, Q:4.
+
+
+The three PENDING-S1 entries are remediation sentences duplicated in teaching: u12-st-teach-aspect-1 contains the first two; u12-st-teach-aspect-3 contains the third. Thus there are three inventory claims and six live teaching/remediation occurrences to resolve.
+
+No English-only inventory entry here needs Sequence of tenses or Повелительное наклонение.
+
+4. Wikibooks errors and overstatements
+
+- The perfective classification of быть is already corrected in the pack. u12-st-teach-future-imp-2 says imperfective. Correct evidence is V:2. The frozen source still misclassifies it at F:34,50 and B:45; those clauses must not be reintroduced.
+- Overbroad perfective-future recipe: u12-st-teach-future-perf-2 and its remediation repeat “just conjugate…according to standard rules.” Replace this with the bounded claim that the listed perfective person forms have future meaning. F:53,60–66, V:3, and frozen units-26-30/wikipedia/russian-grammar-1369617627.txt:786,821 support that distinction without promising a universally regular stem.
+- Truncated plural-prepositional rule: u12-st-teach-prep-plural-2 and its remediation quote only the first sentence of Q:55, omitting that line’s soft/irregular exceptions. “After consonants…use ах” is unsafe by itself. Teach the recorded forms of the three current nouns and preserve the distinction between the two endings. Q:55 supplies the qualification; N:14 provides a concrete irregular-plural counterexample. This correction needs no S1.
+- The current pack does not repeat the frozen pages’ universal “every verb has two words” or “imperfective always means unfinished” formulations. Its corrective wording still needs the provenance dispositions above.
+
+5. A2-26 lint
+
+Governance: 64 hits
+Markup:      6 hits
+Narration:   2 hits
+
+Field	Governance owners
+
+Titles — 35	obj-u12-{dative,future-imp,future-perf,prep-plural,spelling}; ref-ca-aspect; u12-s-{dative,future-imp,future-perf,orient,prep-plural,spelling}; u12-st-orient; u12-st-teach-dative-1..6; u12-st-teach-future-imp-1..3; u12-st-teach-future-perf-1..4; u12-st-teach-prep-plural-1..6; u12-st-teach-spelling-1..3
+Prompts — 15	u12-g-{dative,future-imp,future-perf,prep-plural,spelling}-0; u12-i-{dative,future-imp,future-perf,prep-plural,spelling}-1..2
+Bodies — 11	u12-st-check-{dative,future-imp,future-perf,prep-plural,spelling}; u12-st-guided-{dative,future-imp,future-perf,prep-plural,spelling}-1; u12-st-orient
+Summary/detail — 2	ref-ca-aspect, one hit in each field
+Topic summary — 1	unit-12
+
+
+Markup, all body fields:
+
+u12-st-rem-dative
+u12-st-rem-prep-plural
+u12-st-rem-spelling
+u12-st-teach-dative-2
+u12-st-teach-prep-plural-2
+u12-st-teach-spelling-2
+
+Narration, both body fields:
+
+u12-st-rem-aspect
+u12-st-teach-aspect-2
+
+6. Phrases
+
+PASS: all nine distinct multi-word phrases have frozen attestations. All 27 extracted stressed word forms have exact frozen stress; missing forms: [].
+
+Phrase	Frozen evidence
+
+Я бу́ду говори́ть	F:41
+Мы бу́дем говори́ть	F:41
+Ты бу́дешь говори́ть	F:44
+Вы бу́дете говори́ть	F:44
+Он бу́дет говори́ть	F:47
+Я скажу́	F:60
+Мы ска́жем	F:60
+хорошее письмо	W:26
+хорошое письмо	W:26, explicitly incorrect
+
+
+Presence of the last phrase establishes its attestation as a negative example, not its correctness.
+
+7. Shared references
+
+- ref-u1115-attribution is shared by Units 11–15.
+- ref-ca-aspect is linked by Unit 12 only in the current unit-reference graph. It contains linguistic instruction, so its claims and learner wording need attention alongside the unit.
+
+Feasibility
+
+Unit	A2-23 using frozen forms	PENDING-S1	Remaining blockers
+
+11	Yes: eight retained closed checks plus twelve typed → 20 total, 60% typed.	0	Teaching exposure, label wording, constant key, the past-formation inconsistency, provenance and lint repairs. No source shortage found.
+12	Yes: twelve retained closed checks plus eight typed → 20 total, 40% typed.	3 claims	The numerical floor needs no new source. Completing the identified aspect wording requires S1 span verification/admission; other work includes placement, missing worked sentence, rule qualifications, provenance and lint.
+
+
+These are preparation findings and sourced candidates, not implemented or CI-verified fixes.

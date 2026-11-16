@@ -1,0 +1,169 @@
+Read-only research completed against 9a9b9760, which remained the remote head at the final check. The working branch was untouched; nothing was committed or pushed.
+
+1. OpenRussian row gaps
+
+No missing lexical rows found. The frozen files contain the full datasets, not merely the rows enumerated in each block’s manifest:
+
+Frozen file	Lines, including header
+
+units-3-5/openrussian/nouns.csv	26,983
+units-3-5/openrussian/verbs.csv	14,872
+units-3-5/openrussian/others.csv	5,032
+units-6-10/openrussian/adjectives.csv	11,942
+
+
+All paths above are under catalog/sources/. Their frozen dictionary revision is 50e210c4803237779cb562bc1abcea529066031c.
+
+I checked the Russian in Unit 11–15 teaching, linked examples, checks and options against the frozen lexical forms. Relevant existing rows include:
+
+Unit	Existing rows and needed fields
+
+11	Verbs: читать:62, быть:2, прочитать:353, улыбаться:142, учиться:209. Past masculine/feminine/neuter/plural and stress are present.
+12	Verbs: сказать:3, говорить:6, делать:19, сделать:20. Nouns: книга:60, стол:32, дом:15. Adjective: хороший:18. These supply conjugation, aspect partners, dative singular, prepositional plural and stress.
+13	The same reading and aspect-pair verb rows supply the needed past forms, infinitives, conjugation and stress. The nationality and Moscow vocabulary also has frozen rows.
+14	Verbs: говорить:6, работать:31, поговорить:245, поработать:1485, сказать:3. Required conjugations and stress are present.
+15	Verbs: читать:62, сказать:3, дать:30, делать:19, сделать:20, говорить:6. Singular/plural imperatives, aspect labels and stress are present. The request sentence’s other words also have rows.
+
+
+Three distinctions matter:
+
+- быть is present, but its OpenRussian row does not supply the future paradigm. The frozen Wikibooks future page supplies it.
+- The deliberately incorrect хорошое is not a dictionary-row gap. Its explicit negative example is frozen in units-6-10/wikibooks/adjectives-4292379.txt:26.
+- Letters and endings discussed by spelling/formation rules require grammar passages, not dictionary entries.
+
+Some additional rows would need provenance records or block-manifest selections. Their underlying frozen files already exist; no dictionary download is needed.
+
+2. A2-23 shortfall plan
+
+Fresh Kotlin diagnostic output:
+
+Unit 11: checkedItems=8,  requiredChecks=8,  typedRequiredChecks=0
+Unit 12: checkedItems=12, requiredChecks=12, typedRequiredChecks=0
+Unit 13: checkedItems=9,  requiredChecks=9,  typedRequiredChecks=0
+Unit 14: checkedItems=6,  requiredChecks=6,  typedRequiredChecks=0
+Unit 15: checkedItems=6,  requiredChecks=6,  typedRequiredChecks=0
+
+One conservative plan retains and repairs the existing required closed checks, then adds typed checks:
+
+Unit	Additional checks	Suggested additions	Result
+
+11	12	Twelve typed checks	20 total; 60% typed
+12	8	Eight typed checks	20 total; 40% typed
+13	11	Eleven typed checks	20 total; 55% typed
+14	14	Fourteen typed checks	20 total; 70% typed
+15	14	Fourteen typed checks	20 total; 70% typed
+
+
+Candidate keys, copied from frozen forms:
+
+- Unit 11: чита́л, чита́ла, чита́ло, чита́ли; бы́л, была́; прочита́л, прочита́ла, прочита́ло; улыба́лась, учи́лся, учи́лась.
+  Supplied by verb rows 62, 2, 353, 142 and 209. These forms are already taught.
+
+- Unit 12: кни́ге, столу́, до́му, кни́гах, стола́х, дома́х, скажу́, ска́жешь.
+  Supplied by noun rows 60, 32 and 15 and verb row 3. These forms are already taught.
+
+- Unit 13: the four past forms of читать; masculine/feminine/neuter past forms of прочитать; and говори́ть, сказа́ть, де́лать, сде́лать.
+  Supplied by verb rows 62, 353, 6, 3, 19 and 20. Some forms need explicit Unit 13 teaching before their checks.
+
+- Unit 14: the six future forms of быть; the six future forms of сказать; поговорю́ and порабо́таю.
+  The auxiliary paradigm is in units-11-15/wikibooks/future-tense-3353822.txt:34–48; the remaining forms are in verb rows 3, 245 and 1485. Extend teaching to the complete paradigms first.
+
+- Unit 15: чита́й, чита́йте, скажи́, скажи́те, да́й, да́йте; the four taught aspect-pair infinitives; and де́лай, де́лайте, сде́лай, сде́лайте.
+  All are in the existing verb rows. The final four imperative forms need teaching cards.
+
+These are form-production candidates, not authored item specifications. Their prompts, placement and feedback still need A2-24 validation. The current checks have label/position and teaching-key signals that must be repaired without removing required contrasts. Dictation remains conditional on verified audio.
+
+3. Sentence and grammar-page intake
+
+I found no missing frozen attestation among the current multi-word Russian phrases scanned:
+
+Unit	Distinct phrases within the unit
+
+11	8
+12	9
+13	10
+14	8
+15	1
+
+
+This establishes phrase presence, not complete semantic support for every English explanation.
+
+The useful grammar-intake targets are:
+
+Need	Specific page candidate	Research result
+
+Units 12–14: clearer boundedness/process explanation, avoiding “imperfective means unfinished”	English Wikipedia Grammatical aspect, revision 1384289498	Retrieved. Contains bounded-event and process/habit distinctions.
+Units 12–14: Russian aspect explanation	Russian Wikipedia Вид (лингвистика), revision 153277825	Retrieved. Contains the whole-event/process distinction and tense relationship.
+Unit 13: explicit support for optional English backshift and Russian natural tense sequence	English Wikipedia Sequence of tenses, revision 1363198135	Retrieved. English natural-sequence discussion and a Russian section are present.
+Unit 13: fuller reported-speech examples and relative-time explanation	English Wikipedia Indirect speech, Russian section	Request blocked with HTTP 403; revision unknown.
+Units 12–14: explicit treatment of completed events expressed imperfectively	English Wikipedia Imperfective aspect	Request blocked with HTTP 403; revision unknown.
+Unit 15: imperative formation and request context	Russian Wikipedia Повелительное наклонение, revision 152579064	Retrieved. Supports formation; it does not establish a complete Russian rule for aspect choice in requests/prohibitions.
+Unit 15: broader imperative/aspect usage	English Wikipedia Imperative mood, Russian section	Request blocked with HTTP 403; revision unknown.
+
+
+The existing Wikibooks pages already supply the current past, future, dative, spelling and impersonal examples. They also contain known overstatements—for example, misclassifying быть as perfective. Intake should provide precise replacement evidence, rather than adopting those pages’ explanations wholesale.
+
+For A2-23’s numerical floor, new grammar pages are not essential. For the full mapped scope—especially infinitive-aspect use and contextual aspect choice in requests—additional example-level evidence remains advisable. The retrieved imperative page alone does not close that gap.
+
+4. Unit 21 and Unit 29: the 24 unstored records
+
+Source	Exact page/revision to freeze	Records addressed
+
+src-enwiki-reflexive-pronoun-1374712982	English Wikipedia Reflexive pronoun, oldid 1374712982	4
+src-ruwiki-obosoblenie-144053197	Russian Wikipedia Обособление, oldid 144053197	13
+src-ruwiki-boltraffio-149826784	Russian Wikipedia Больтраффио, Джованни, oldid 149826784	7
+
+
+Exact record groups:
+
+- Prefix prov-u21-object-transfer-native-: self, other, reflexive, personal.
+- Prefix prov-u29-punctuation-native-:
+  - after-ru, after-head, after-region-1, after-region-2;
+  - cause-ru, cause-head, cause-region-0, cause-region-1, cause-region-2;
+  - terminal-ru, terminal-head, terminal-region-0, terminal-region-1;
+  - pronoun-ru, pronoun-head, pronoun-region-0, pronoun-region-1, pronoun-region-2, pronoun-list-foppa, pronoun-boundary-bergognone.
+
+The first two historical pages were retrieved into temporary research files. All 4 and all 13 original source texts match their respective pages verbatim. SHA-256 of the retrieved UTF-8 wikitext:
+
+Reflexive pronoun:
+0d3aa40c1f8ccc9b3468b0d36273a104360640af336a598d31dda0eaffbdb12d
+
+Обособление:
+0f5a33ffba100e7a6d5bf2c80987ce72f69e970f004b09e815ebf73ebe3ed638
+
+Boltraffio retrieval returned HTTP 429. Its seven records are identified, but their complete frozen-file binding remains unverified. Storing the correct pages would address the missing-file gaps; source-identity/revision binding must still be enforced.
+
+5. Licensing and attribution
+
+Source family	Text/data licence	Attribution required
+
+Frozen OpenRussian/Badestrand dictionary	CC BY-SA 4.0	Credit the dictionary project/contributors, identify repository and commit, link the licence, describe selections or modifications, and retain share-alike treatment of adapted data.
+Wikibooks text	CC BY-SA 4.0 route; much text also dual-licensed under GFDL	Credit page contributors through page/history links or an author list; identify revision, link licence, indicate changes and preserve share-alike.
+English/Russian Wikipedia text	CC BY-SA 4.0 route, subject to page-specific notices	Credit article contributors through article/history links; retain revision and licence, indicate changes and preserve share-alike. Additional imported-text notices must be checked.
+
+
+Repository licence evidence includes:
+
+- units-3-5/openrussian/LICENSE;
+- units-3-5/wikibooks/copyrights-4622060.txt:6,35–39;
+- units-26-30/wikipedia/copyrights-1369466282.txt;
+- units-6-10/ruwiki/copyrights-154562152.txt.
+
+The live licence-information API returned HTTP 403. These findings use the frozen policy evidence; a future intake must still inspect each selected page’s notices. No proposed page has been admitted by this research.
+
+Intake list and feasibility
+
+Intake	Revision	Licence
+
+OpenRussian rows needed for the plans above	Already frozen at 50e210c…; add row-level selections/provenance as needed	CC BY-SA 4.0
+Grammatical aspect	1384289498	CC BY-SA 4.0 text route
+Вид (лингвистика)	153277825	CC BY-SA 4.0 text route
+Sequence of tenses	1363198135	CC BY-SA 4.0 text route
+Indirect speech, Imperfective aspect, Imperative mood	Unknown; retrieval blocked	CC BY-SA 4.0 text route, notices to verify
+Повелительное наклонение	152579064	CC BY-SA 4.0 text route
+Reflexive pronoun	1374712982	CC BY-SA 4.0 text route
+Обособление	144053197	CC BY-SA 4.0 text route
+Больтраффио, Джованни	149826784; retrieval rate-limited	CC BY-SA 4.0 text route
+
+
+Estimate: all five units can reach 20 checks and at least 30% typed using forms already frozen. Additional intake chiefly strengthens grammar-claim support and contextual teaching. Reaching the numerical floor alone would not establish that the full Block 3 curriculum scope is complete.

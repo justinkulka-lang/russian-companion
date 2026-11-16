@@ -1,0 +1,360 @@
+Read-only preparation completed at 9a9b9760, which remained the remote head. No tracked files changed; nothing was committed or pushed.
+
+Source abbreviations below:
+
+Code	Frozen file under catalog/sources/
+
+R	units-6-10/wikibooks/numbers-4371358.txt
+G	units-6-10/wikibooks/genitive-4567338.txt
+C	units-6-10/wikibooks/accusative-4330404.txt
+W	units-6-10/wikibooks/adjectives-4292379.txt
+N	units-3-5/openrussian/nouns.csv
+A	units-6-10/openrussian/adjectives.csv
+
+
+The dictionary files are frozen at 50e210c4803237779cb562bc1abcea529066031c.
+
+Unit 9 — T15d
+
+1. A2-24 items
+
+Fresh Kotlin output:
+
+35 checked / 35 required / 0 typed
+22 EXACT_KEY_IN_TEACHING
+0 ONLY_DISTRACTOR_IS_CUE
+0 LABEL_OR_POSITION
+0 KEY_IN_PROMPT
+31 FEWER_THAN_THREE_OPTIONS review signals
+
+All 35 required closed checks currently return structure=[], feature=true. The option-count signal is advisory; it does not itself invalidate these checks.
+
+For each of the following 22 flagged items, the fix candidate is to retain its teaching and move its independent check into a later retrieval session, outside its answer-bearing teaching session. Also replace “admitted form” wording with ordinary instructional wording. No new Russian is needed.
+
+Item ID	Flag	Existing key’s frozen evidence
+
+u9-i-cardinal-1	K	R:12
+u9-i-cardinal-2	K	R:36
+u9-i-cardinal-3	K	R:65
+u9-i-cardinal-4	K	R:30
+u9-i-teens-1	K	R:31
+u9-i-teens-2	K	R:61
+u9-i-teens-3	K	R:19
+u9-i-tens-1	K	R:38
+u9-i-tens-2	K	R:62
+u9-i-tens-3	K	R:20
+u9-i-hundreds-1	K	R:27
+u9-i-hundreds-2	K	R:39
+u9-i-hundreds-3	K	R:63
+u9-i-thousands-1	K	R:74
+u9-i-thousands-2	K	R:75
+u9-i-thousands-3	K	R:77
+u9-i-thousands-4	K	R:78–79
+u9-i-odindva-1	K	R:88
+u9-i-odindva-2	K	R:88
+u9-i-odindva-3	K	R:88
+u9-i-odindva-4	K	R:109
+u9-i-odindva-5	K	R:90
+
+
+K means EXACT_KEY_IN_TEACHING. All these items also have the fewer-than-three-options advisory. u9-i-odindva-1 and u9-i-odindva-4 additionally receive ANSWER_IN_INSTRUCTION_SIGNAL; the placement repair addresses that exposure.
+
+The nine other option-count advisories are:
+
+u9-i-quantity-2
+u9-i-quantity-4
+u9-i-quantity-5
+u9-i-quantity-6
+u9-i-quantity-7
+u9-i-quantity-8
+u9-i-quantity-9
+u9-i-pattern-2
+u9-i-pattern-4
+
+These have no reported A2-24 violation. If adding a third case explanation, R:86–106 supplies the nominative/genitive counting contrasts; R:98 supplies the animate-accusative contrast. Preserve the existing closed checks.
+
+2. Typed additions
+
+Keeping 35 closed checks requires 15 typed additions:
+
+14 / 49 = 28.57% — insufficient
+15 / 50 = 30.00% — sufficient
+
+All these candidates are already taught. Their complete spelling and stress match the named frozen lines character for character:
+
+Typed key	Source	Stress comparison
+
+оди́н	R:12	Exact
+пять	R:36	Exact; no stress mark
+де́сять	R:65	Exact
+четы́ре	R:30	Exact
+четы́рнадцать	R:31	Exact
+девятна́дцать	R:61	Exact
+двена́дцать	R:19	Exact
+пятьдеся́т	R:38	Exact
+девяно́сто	R:62	Exact
+два́дцать	R:20	Exact
+три́ста	R:27	Exact
+пятьсо́т	R:39	Exact
+девятьсо́т	R:63	Exact
+два́дцать оди́н	R:73	Exact whole phrase
+сто оди́н	R:74	Exact whole phrase
+
+
+Probe output returned EXACT True for all 15. Place these checks after teaching, in retrieval sessions that do not disclose their keys.
+
+3. English-only fact inventory
+
+There are 112 entries, representing 75 distinct sentences, without Cyrillic.
+
+The table dispositions every entry through CSV line addresses in audit/T15-n0-unmarked-russian-facts.csv. Ranges mean only the English-only Unit 9 entries within that range, including repeated sentences. MARK requires an actual frozen-source citation, not coverage alone.
+
+CSV lines	Recommendation and evidence
+
+912	REMOVE. “Zero counts no units…” is arithmetic commentary, not a Russian fact requiring this inventory entry.
+967–968	MARK, R:20,73: 20 versus 21.
+971–972	MARK, R:15,74: 100 versus 101.
+974–975	MARK, R:21,75: 200 versus 215.
+977–978	MARK, R:16,77: 1,000 versus 1,984.
+979–983	MARK, R:78–79 and 86–98: thousand forms and the bounded counting construction.
+989	MARK, R:88: gender forms of one.
+992	MARK, R:90: feminine two and genitive singular counted noun.
+995	MARK, R:88: one pair of jeans and plural agreement.
+997	MARK, R:12,88: feminine and neuter forms.
+998	REMOVE. Source-printing/stress-preservation commentary; retain the actual attested forms.
+1009	MARK, N:14496: the noun’s neuter classification. Remove “retained lexical row” narration from learner wording.
+1012	MARK, R:88: the explicit one-pair-of-jeans example.
+1017	MARK, R:88,109: masculine/feminine forms of one.
+1018	REWORD: “Use the displayed counting example.” The existing sentence describes assessment scope rather than teaching a needed fact.
+1022	MARK, R:18,90: the two gender forms express the same value.
+1024–1056	MARK, R:86–113, particularly 88–96: counting construction, final-digit/teen distinctions and the supplied examples.
+1059	REWORD: “Read the whole example before answering.” This retains the instruction without another generalized claim.
+1062	MARK, N:32, sg_gen and pl_gen fields: the isolated table forms.
+1063	REWORD: “Read the complete counting example.” Remove commentary about what isolated source forms establish.
+1067–1112	MARK, R:86–113: the stated values, noun-case classifications and numeral-declension distinctions.
+1115–1116	MARK, R:98: the animate accusative example and declined numeral/noun.
+1117	MARK, G:8–9: the one-cat existence example.
+1121–1131	MARK, R:86–113: three, five and sixteen and their case contrasts.
+1132–1135	MARK, R:98: translation and animate-object analysis.
+
+
+That is 107 MARK, three REWORD and two REMOVE dispositions. Equivalent teaching duplicates need consistent treatment.
+
+4. A2-26 lint
+
+Governance: 102 hits
+Markup:       0
+Narration:    0
+
+Owner IDs are grouped below; numeric ranges enumerate the IDs inclusively.
+
+Field	Owners
+
+Titles — 47 hits	obj-u9-{cardinal,hundreds,odindva,pattern,quantity,teens,tens,thousands}; u9-s-{cardinal,hundreds,odindva,orient,pattern,quantity,teens,tens,thousands}; u9-st-orient; u9-st-teach-cardinal-1..7; u9-st-teach-hundreds-1..6; u9-st-teach-teens-1..6; u9-st-teach-tens-1..5; u9-st-teach-thousands-1..5
+Prompts — 28 hits	u9-g-{cardinal,hundreds,odindva,teens,tens,thousands}-0; u9-i-cardinal-1..4; u9-i-hundreds-1..3; u9-i-odindva-1..5; u9-i-teens-1..3; u9-i-tens-1..3; u9-i-thousands-1..4
+Feedback — five hits	u9-g-odindva-0; u9-i-odindva-{1,2,3,5}
+distractorRationales[1] — two hits	u9-i-odindva-3; u9-i-odindva-5
+Bodies — 19 hits	u9-st-book-work; u9-st-check-{cardinal,hundreds,teens,tens,thousands}; u9-st-guided-{cardinal,hundreds,teens,tens,thousands}-1; u9-st-orient; u9-st-rem-odindva; u9-st-teach-{cardinal,hundreds,teens,tens,thousands}-1; u9-st-teach-odindva-4
+Topic summary — one hit	unit-9
+
+
+Zero regex narration hits does not make the source commentary identified above suitable learner wording.
+
+5. Phrases
+
+PASS: all 30 distinct multi-word phrases have frozen attestations. All 41 extracted stressed word forms have exact frozen stress; missing forms: [].
+
+The phrase evidence covers:
+
+- R:73–79 — compound numbers and thousand expressions.
+- R:88 — the four one/noun examples.
+- R:90 — the two-girls and three-cats examples.
+- R:92 — five girls, ten kopeks and sixteen rubles.
+- R:94,96 — the 41, 203 and 213 examples.
+- R:98 — the two-friends sentence.
+- R:109–113,121 — the hour expressions and five-years expression.
+- G:9,13,15–16 — the cat, kopeck and ruble examples.
+
+Comparison ignored case and stress while retaining ё/е. Stress attestation was checked separately.
+
+6. Shared references
+
+ref-u610-attribution is linked by Units 6, 7, 8, 9 and 10. No other Unit 9 reference link was found.
+
+Unit 9 cumulative-review TODO
+
+The actual review pair is:
+
+Item	Cue	Task/key
+
+u5-i-decl-окно	окно́	Classify noun behavior → “Declinable: can change for case”
+u8-i-plural-2	окно́	Select nominative plural → о́кна
+
+
+Evidence: V2CumulativeReview.kt:170–193,470. Unit 9’s active policy includes the Unit 5 noun-behavior pool and the fixed Unit 8 plural item. Assignment validation requires distinct item IDs, not distinct cues (:590).
+
+Leakage exists: the plural item’s feedback explicitly shows different singular/plural forms, demonstrating that the noun is not unchanged for case or number. The declinability item does not directly supply the plural key.
+
+Proposed fix: use u8-i-plural-3 as Unit 9’s plural-review anchor instead. Its cue/key pair is attested at N:83. Keep u8-i-plural-2 as a Unit 8 check, preserve the noun-behavior pool, and update the review policy identity/digest and exact anchor assertions. Check all eligible review candidates for renewed cue overlap.
+
+There is also an additional within-unit duplicate:
+
+- u9-i-quantity-4
+- u9-i-pattern-3
+
+Both show шестнадцать рублей, ask the same question, use the same genitive-plural key and have identical feedback. Either reveals the other’s answer. Replace u9-i-pattern-3’s cue with the already taught пять лет, R:121, and update its value-specific feedback/provenance. This preserves a genitive-plural closed check while retaining the sixteen-rubles check elsewhere.
+
+Unit 10 — T15e
+
+1. A2-24 items
+
+Fresh Kotlin output:
+
+22 checked / 22 required / 0 typed
+14 EXACT_KEY_IN_TEACHING
+5 ONLY_DISTRACTOR_IS_CUE
+5 LABEL_OR_POSITION
+0 KEY_IN_PROMPT
+20 FEWER_THAN_THREE_OPTIONS review signals
+
+All 22 required closed checks currently return structure=[], feature=true.
+
+Flags: K = teaching-key exposure; C = shown-cue-only; L = label/position wording; F = option-count advisory.
+
+For every K item, move its independent check to later retrieval, retaining the teaching.
+
+Item ID	Flags	Fix candidate and frozen evidence
+
+u10-i-pronoun-1	K, L, F	Ask for the genitive form of the shown pronoun, removing “admitted” and “row.” Optional third form Их, G:138.
+u10-i-pronoun-2	K, L, F	Same prompt repair; optional third form Нас, G:138.
+u10-i-pronoun-3	K, L, F	Same prompt repair; optional third form Их, G:138.
+u10-i-pronoun-4	K, L, F	Same prompt repair; optional third form Вас, G:138.
+u10-i-preposition-1	K, C, F	Add окну́, N:51, as a non-genitive third option.
+u10-i-preposition-2	K, C, F	Add дру́гу, N:14.
+u10-i-preposition-3	K, F	Move to retrieval; optional third form мои́х, A:8, contrasts plural with the requested singular.
+u10-i-preposition-4	K	Move to retrieval. Existing forms are A:8; retain its three-option contrast.
+u10-i-adjective-1	K, F	Move to retrieval; optional third form хоро́шее, A:18.
+u10-i-adjective-2	K	Move to retrieval; retain the three-option contrast, A:16.
+u10-i-adjective-3	K, F	Move to retrieval; optional third form хоро́шее, A:18.
+u10-i-animate-1	K, C, L, F	Ask for the nominative plural phrase referring to the same women, replacing “other plural row.” Add the attested different-referent phrase эти хорошие новые студенты, W:14. Existing women phrases: C:28–29.
+u10-i-animate-2	K, C, F	Add же́нщине, N:36.
+u10-i-animate-3	K, C, F	Add бра́ту, N:99.
+
+
+For the phrase distractor, keep its frozen wording; do not construct a new demonstrative/noun phrase from separately attested words. Update provenance and contrast metadata before testing the implementation.
+
+The eight remaining option-count advisories are u10-i-have-1..4 and u10-i-absence-1..4. They have no reported A2-24 violation. Their existing construction contrasts are supported by G:42–60; F alone does not require deleting or replacing these checks.
+
+2. Typed additions
+
+Keeping 22 closed checks requires 10 typed additions:
+
+9 / 31 = 29.03% — insufficient
+10 / 32 = 31.25% — sufficient
+
+All ten forms are already taught:
+
+Typed key	Frozen source	Character/stress check
+
+Нас	G:138	Exact; no stress mark
+Тебя́	G:138	Exact
+Вас	G:138	Exact; no stress mark
+Их	G:138	Exact; no stress mark
+окна́	N:51, sg_gen	окна' → exact
+дру́га	N:14, sg_gen	дру'га → exact
+моего́	A:8, decl_m_gen	моего' → exact
+но́вого	A:16, decl_m_gen	но'вого → exact
+хоро́шего	A:18, decl_m_gen	хоро'шего → exact
+бра́тьев	N:99, pl_acc	бра'тьев → exact
+
+
+Only the source’s apostrophe stress notation was converted to combining acute. All ten probes returned EXACT True.
+
+3. English-only fact inventory
+
+There are 68 entries, representing 41 distinct sentences, without Cyrillic.
+
+As above, ranges address every English-only Unit 10 entry within the stated CSV lines.
+
+CSV lines	Recommendation and evidence
+
+1137–1149	MARK, G:42–46,53,59: possession, the schematic slot, statement/question examples and absence contrast.
+1151	MARK, G:46: the supplied positive translation.
+1153–1154	MARK, W:59 and G:21,43: the quantity expression versus the simple possession pattern.
+1155	MARK, G:59: no-son example.
+1158	MARK, G:60: no-money example.
+1161–1169	MARK, G:43–46,53: positive possession and the contrasting absence explanation.
+1171–1188	MARK, G:42–60: absent genitive, positive nominative and the supplied negative examples.
+1191–1192	MARK, G:43,46: positive possession and nominative possessed noun.
+1194	MARK, G:46: the supplied translation.
+1196–1211	MARK, G:43–46,53–60: the respective positive and negative constructions.
+1214	MARK, G:132,135,138: first-person singular correspondence.
+1219	MARK, G:132,135,138: first-person singular/plural distinction.
+1229	MARK, G:132,135,138: first- versus third-person plural.
+1230	MARK, G:138,141–143. Retain the prepositional-form fact; drop “This checks the bare table form” narration.
+1255	MARK, C:23,29: animate plural accusative/genitive correspondence.
+1259	REWORD: “Compare the two displayed phrases.” Remove the mixed source/display commentary; retain the sourced case teaching elsewhere.
+1261	REWORD: “Read the displayed phrase carefully.” The subject-role teaching is retained explicitly at line 1265.
+1262	REMOVE. Governance/assessment commentary: “Guided work and independent checks…”
+1263	REMOVE. Commentary about what the source and display establish.
+1264	MARK, C:23,28–29: animate plural forms.
+1265	MARK, C:28: nominative subject phrase in the complete source example.
+1266	REMOVE. Source-context commentary.
+1267	REMOVE. Dictionary-gloss formatting commentary; retain genuine gloss provenance.
+1275	MARK, C:28. Align the wording with the repaired nominative-plural prompt instead of “other row.”
+
+
+That is 62 MARK, two REWORD and four REMOVE dispositions. MARK entries need actual frozen-backed records; content-audit coverage is insufficient.
+
+4. A2-26 lint
+
+Governance: 65 hits
+Markup:      6 hits
+Narration:   0
+
+Field	Governance owners
+
+Titles — 45 hits	obj-u10-{absence,adjective,animate,have,preposition,pronoun}; u10-s-{absence,adjective,animate,have,orient,preposition,pronoun}; u10-st-orient; u10-st-teach-adjective-1..6; u10-st-teach-animate-1..5; u10-st-teach-preposition-1..11; u10-st-teach-pronoun-1..9
+Prompts — seven hits	u10-g-animate-0; u10-g-pronoun-0; u10-i-animate-1; u10-i-pronoun-1..4
+Bodies — 12 hits	u10-st-book-work; u10-st-check-{adjective,animate,preposition,pronoun}; u10-st-guided-{adjective,animate,preposition,pronoun}-1; u10-st-orient; u10-st-rem-animate; u10-st-teach-animate-1
+Topic summary — one hit	unit-10
+
+
+All six markup hits are in bodies:
+
+u10-st-rem-adjective
+u10-st-rem-preposition
+u10-st-rem-pronoun
+u10-st-teach-adjective-2
+u10-st-teach-preposition-2
+u10-st-teach-pronoun-2
+
+5. Phrases
+
+PASS: all 22 distinct multi-word phrases have frozen attestations. All 45 extracted stressed word forms have exact frozen stress; missing forms: [].
+
+Attestation locations:
+
+- G:42,45–46 — schematic/positive possession phrases.
+- G:54–55,59–60 — absence phrases.
+- G:65,68–70,73,75,78 — prepositional examples.
+- G:122–123 — the two quantity/adjective phrases.
+- G:142–143 — prepositional pronouns.
+- W:59,62 — the many-friends and old-house examples.
+- C:28–29 — the two women phrases.
+
+Case and stress were ignored for phrase presence; ё/е remained distinct. Exact word stress was checked separately.
+
+6. Shared references
+
+ref-u610-attribution is shared by Units 6–10. No other Unit 10 reference link was found.
+
+Feasibility
+
+Unit	Frozen-source path to A2-23	Remaining work/blockers
+
+9	Yes: retain 35 closed checks and add 15 typed → 50 total, 30% typed.	Repair teaching exposure, the cumulative-review cue overlap, the additional within-unit duplicate, fact provenance and lint. No source shortage found.
+10	Yes: retain 22 closed checks and add 10 typed → 32 total, 31.25% typed.	Repair five cue-only and five label/position flags, teaching exposure, fact provenance and lint. No source shortage found.
+
+
+These are sourced preparation candidates, not implemented or CI-verified fixes.
