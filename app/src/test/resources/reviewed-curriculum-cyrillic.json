@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "7fad56119975b5c143d0119e1a433081f992e3bb6ec0ee5ab701cad3ef5fe424",
+      "sha256": "13c6d54c72d8370b42543e37bda8102f5215694f626c402dacd0350bbd304d74",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -284,7 +284,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/BatchARemainingSources.kt",
-      "sha256": "f6f55d4b788733aabd1e8f9a242a5d1900fde2080d66f2385a7f4a8b02a4de0a",
+      "sha256": "65ffe8bbecee62e33294661b12a98f8ab657191643d9f6e7a9c13c2f85d89b18",
       "purpose": "Exact existing escaped source comparison implementation; no directory exemption or source acceptance",
       "bindings": [
         {
@@ -3368,6 +3368,28 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Owner direction 11/15/2026: the frozen text cited by a russian-fact marker must contain every Cyrillic word form the marked sentence shows, compared without stress marks, and a form shown with a stress mark must appear with that stress (OpenRussian stress apostrophes read as acute accents). No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+        },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T15b",
+      "previousRecordedSha256": "7fad56119975b5c143d0119e1a433081f992e3bb6ec0ee5ab701cad3ef5fe424",
+      "sha256": "13c6d54c72d8370b42543e37bda8102f5215694f626c402dacd0350bbd304d74",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Owner decision 11/16/2026: the Unit 7 adverb invariance checks ask what the dash-colon wording names (a meaning prompt) instead of where it is written; the keyed answer, the dash-line citation and the post-colon distractor anchors are unchanged, and each distractor rationale must name its distractor and say why it is not that classification. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/BatchARemainingSources.kt",
+      "task": "T15b",
+      "previousRecordedSha256": "f6f55d4b788733aabd1e8f9a242a5d1900fde2080d66f2385a7f4a8b02a4de0a",
+      "sha256": "65ffe8bbecee62e33294661b12a98f8ab657191643d9f6e7a9c13c2f85d89b18",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Owner decision 11/16/2026: adds the English meaning-prompt and distractor-reason constants for the Unit 7 invariance checks. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }
