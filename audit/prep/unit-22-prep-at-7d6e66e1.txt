@@ -1,0 +1,197 @@
+Head: 7d6e66e143bfc21fb5ff737456faaa4a4d04a5bf
+
+Unit 22 — read-only preparation. No tracked files changed; nothing committed or pushed.
+
+Frozen-source aliases
+
+All paths are under catalog/sources/.
+
+Alias	Frozen file
+
+R	units-6-10/wikibooks/numbers-4371358.txt
+M	units-21-25/supplemental/morfologiya-148939075.txt
+W	units-21-25/supplemental/poltora-89737719.txt
+G	units-26-30/wikipedia/russian-grammar-1369617627.txt
+O	units-3-5/openrussian/others.csv
+I	units-16-20/wikibooks/instrumental-4219602.txt
+
+
+1. A2-24 items
+
+Kotlin diagnostics report 14 exact-key teaching exposures, 5 label/position findings, and 0 shown-cue-only findings.
+
+Move all required checks into later retrieval sessions while retaining their teaching.
+
+Item IDs	Additional flag	Fix candidate and evidence
+
+u22-i-noun-forms-1–2	—	Later retrieval; preserve the noun-case grouping contrasts. R:88–92.
+u22-i-compounds-1–2	Advisory CUE_AS_DISTRACTOR	Later retrieval; preserve the final-component distinctions. R:94. Three options remain, so rejecting the cue alone does not identify the answer.
+u22-i-declension-1	Label/position	Ask “Which case does this numeral form have?” M:580–582.
+u22-i-declension-2	Label/position	Ask “Which case do the numerals have after the shown prepositions?” M:584–586.
+u22-i-both-forms-1–3	Label/position	Ask “Which case does this numeral form have?” Preserve the gender/case distinctions. M:567–569,580–582.
+u22-i-half-forms-1–3	—	Later retrieval; preserve quantity-unit and complete prepositional-phrase meanings. W:15–18,23.
+u22-i-collective-1–2	—	Later retrieval; preserve collective/cardinal/ordinal quantity contrasts. G:723–729.
+
+
+A temporary probe of the five semantic prompt rewrites returned no structureValid errors and featureValid=true for every item.
+
+2. A2-23 and typed candidates
+
+Current: 14 checked, 0 typed.
+
+Retain all fourteen closed checks and add 6 typed checks: 20 checked, 6 typed = 30% typed.
+
+Typed-key candidate	Frozen citation	Exact stress result
+
+двум	M:568	PASS, unstressed verbatim
+двумя	M:581	PASS, unstressed verbatim
+обеим	M:569	PASS, unstressed verbatim
+обоим	M:568	PASS, unstressed verbatim
+обеими	M:582	PASS, unstressed verbatim
+обоими	M:581	PASS, unstressed verbatim
+
+
+All six are already taught. Add explicit production practice before retrieval:
+
+- dative versus instrumental of two;
+- feminine versus masculine/neuter dative of both;
+- feminine versus masculine/neuter instrumental of both.
+
+Specify gender and case in each request. Keep accepted keys out of the retrieval session. These citations are unstressed: do not add inferred stress or unsourced accepted variants.
+
+3. English-only fact inventory
+
+Scope: every English-only Unit 22 entry in audit/T15-n0-unmarked-russian-facts.csv: 103 entries, 75 distinct sentences.
+
+Recommended totals: 72 MARK, 3 REWORD, 25 REMOVE, 0 PENDING-S1, 3 PENDING-INTAKE.
+
+MARK preserves the supported claim, removes source narration, and binds the final sentence to frozen evidence. Exclude the overrides listed below from these ranges.
+
+CSV lines	MARK evidence
+
+2500–2536	Agreement and basic noun-case groups: R:86–98; M:498.
+2538–2571	Compound counts and teen exception: R:94–98.
+2576–2601	Declined numeral forms: M:567–586; case functions: G:34–49 and I:14.
+2606–2635	Both: gender and case forms, M:556–582; lexical meaning, O:125.
+2639–2682	One-and-a-half meanings, gender and noun government: W:11–26.
+2686–2709	Cardinal/ordinal/collective distinctions and attested forms: G:708–729; O:181,227,378.
+
+
+CSV lines	Other disposition
+
+2587	REWORD, then mark the supported claim: “In the oblique constructions shown here, the numeral and counted noun take the case required by the construction.” R:98; W:23. Avoid implying that every oblique numeral construction necessarily has a plural noun.
+2658–2659	REWORD the complete sentence: “Here ‘with’ gives the preposition’s meaning, and the noun is instrumental plural.” W:18,23. The source does not establish the existing “accompaniment/means” interpretation.
+2694–2696	PENDING-INTAKE. General restrictions on collective numerals; permitted noun/pronoun groups; ordinary cardinals with female-person nouns. Intake candidates: Wiktionary “двое,” usage notes, or Wikipedia “Имя числительное в русском языке.” Verify the actual claims before admission.
+2511,2548,2553,2558,2592	REMOVE. Exercise descriptions, source-workflow disclaimers and statements about what recognition demonstrates.
+2505,2529,2536,2543,2564,2571,2576,2596,2601,2606,2625,2630,2635,2641,2665,2672,2680,2686,2704,2709	REMOVE the repeated generic sentence “It does not match the category or whole-phrase meaning requested here.” Retain each substantive explanation preceding it.
+
+
+Decimal-fragment warning: the inventory splits some 1.5 expressions into fragments such as “5 roubles” and “with 1.” Rejoin the original complete sentences before marking. The learner-facing quantities are not five.
+
+The three pending entries concern one collective-usage intake topic. The existing frozen form table does not establish those usage restrictions, and coverage bibliography references do not supply frozen evidence.
+
+4. Teaching errors and qualifications
+
+- Collective usage: the restrictions in u22-st-teach-collective-2 and its remediation lack explicit frozen support. Keep them pending until intake; a table of forms alone is insufficient.
+- Oblique noun number: narrow the plural-noun statement to the constructions actually demonstrated. Numeral one is an immediate reason not to generalize this wording to all numeral phrases.
+- “With” interpretation: W:18 supplies a prepositional phrase and its translation, not an identified action establishing means. Teach its preposition and instrumental plural without inventing a more specific semantic role.
+- Basic counting scope: retain the existing qualifications for nominative-compatible accusatives, animate accusatives and other declined constructions. R:86–98 supports these distinctions.
+- Same shape, different cases: retain the explanation that the shared one-and-a-half oblique form cannot identify case without its construction. W:23,26 supports it.
+- Collective versus ordinal: retain the quantity distinction. A collective for four remains wrong when three is requested; its category alone is insufficient.
+
+5. A2-26 lint and manual omissions
+
+Automatic counts:
+
+Category	Hits
+
+Governance	31
+Markup	0
+Narration	4
+
+
+The 20 guided/independent item feedback fields all have governance hits. These are:
+
+- u22-g-{noun-forms,compounds,declension,both-forms,half-forms,collective}-0.feedback
+- u22-i-{noun-forms,compounds,declension,collective}-1–2.feedback
+- u22-i-{both-forms,half-forms}-1–3.feedback
+
+Other governance fields:
+
+- unit-22.topicSummary
+- u22-s-orient.title
+- u22-st-orient.title, .body
+- u22-st-rem-{both-forms,declension,half-forms}.body
+- u22-st-teach-both-forms-2.body
+- u22-st-teach-declension-2.body
+- u22-st-teach-half-forms-{1,3}.body
+
+Automatic narration hits:
+
+- u22-st-rem-half-forms.body
+- u22-st-rem-noun-forms.body
+- u22-st-teach-half-forms-3.body
+- u22-st-teach-noun-forms-3.body
+
+Source narration missed by the narration pattern: all twenty feedback fields above use “The frozen note says…” or “The frozen source pairs…”. Governance catches those fields, but the narration pattern misses that source framing. Replace it with direct explanations.
+
+Additional wholly unflagged assessment/source-workflow narration:
+
+Owner and field	Wording to remove or rewrite
+
+u22-st-teach-noun-forms-1.body	“The guided choice asks…”
+u22-st-teach-noun-forms-4.body	“These choices recognize…”
+u22-st-teach-compounds-1.body	“The choice may ask…”
+u22-st-teach-compounds-2.body	“These are numeric rule comparisons, not newly supplied Russian phrases.”
+u22-st-rem-compounds.body	Both preceding kinds of commentary.
+u22-st-teach-declension-3.body	“Recognizing this row does not demonstrate…”
+u22-st-teach-both-forms-3.body	“The current choices check…”
+u22-st-teach-collective-3.body	“Selecting the collective column does not demonstrate…”
+u22-st-rem-collective.body	The same collective-column commentary.
+
+
+Raw markup missed: despite the zero markup counter, feedback contains quoted table-cell fragments such as "| Дательный" at:
+
+- u22-g-declension-0.feedback
+- u22-i-declension-1–2.feedback
+- u22-g-both-forms-0.feedback
+- u22-i-both-forms-1–3.feedback
+
+Remove those raw-cell quotations while preserving the case explanation and its provenance.
+
+6. Phrases and extraction bugs
+
+Current matcher: 10 PASS / 3 UNATTESTED, with no missing frozen stress evidence.
+
+Flagged phrase	Frozen witness	Cause and remedy
+
+полтора́ рубля́	W:14	Piped-link bug: `[[рубль
+из полу́тора рубле́й	W:16	Same bug: `[[рубль
+к полу́тора рубля́м	W:17	Same bug: `[[рубль
+
+
+These are already sourced phrases. No Russian replacement is necessary.
+
+A temporary probe correcting only piped-link rendering returned:
+
+UNIT 22 phrases 13
+PASS 13 FAIL 0
+
+Exact display-text extraction also matched all four existing examples at W:14–17, including their stress.
+
+Bold-vowel bug: no Unit 22 learner-facing stress mark was found to originate from that conversion. The relevant source words already have explicit acute marks or ё. The three failures are all piped-link handling failures.
+
+7. Shared references
+
+ref-u2125-attribution is shared with Units 21, 23, 24 and 25. Editing it affects all five units.
+
+8. Validator constraints
+
+- No mandatory “row” wording blocks the five prompt fixes. The semantic replacements passed structureValid and featureValid in the read-only probe.
+- Retain all fourteen closed checks. Typed items supplement their grammatical contrasts.
+- Preserve the four source capabilities: declined numerals, both, one-and-a-half, and collective numerals. Their frozen form evidence does not automatically support additional usage restrictions.
+- The explicit-pair checks require feedback to identify the keyed form/meaning and assessment metadata to preserve frozen evidence. Direct learner feedback can be written separately from source quotations; removing narration need not remove provenance.
+- Correct piped-link rendering without relaxing phrase presence, stress matching, or the distinction between ё and е.
+- Do not satisfy new fact markers with coverage records or cite the collective table as evidence for unsupported noun-selection rules.
+
+Feasibility: YES for A2-23 — 20 checked/6 typed using frozen forms. PENDING-S1 0; PENDING-INTAKE 3 claims concerning collective usage. Completion also requires session separation, wording/markup cleanup, fact bindings and the piped-link matcher correction; the proposed semantic prompts require no validator relaxation.
