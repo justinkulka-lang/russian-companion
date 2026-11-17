@@ -26,7 +26,7 @@ class OptionPresentationTest {
         // Unit 2 print pairs with six concept checks and adds one guided concept item. T15a removes four Unit 6
         // cue-only items (earlier in the list) and appends eight typed Unit 6 items. T15b appends fifteen typed
         // Unit 7 items with no options.
-        assertEquals(720, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks
+        assertEquals(730, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
             p.items.drop(618).take(4).map { it.id }.toSet())
         assertEquals(558, p.items.count { it.options.firstOrNull() == it.answer })
@@ -43,7 +43,7 @@ class OptionPresentationTest {
             "review" to p.items.map { it to presentedOptions(it, reviewOptionContext("corpus-distribution", 0)) },
         )) {
             if (name == "required") {
-                assertEquals(517, displays.size) // T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks
+                assertEquals(527, displays.size) // T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
                 assertEquals(376, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
             }
             displays.forEach { (item, order) ->

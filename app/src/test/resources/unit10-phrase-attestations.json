@@ -1,0 +1,321 @@
+{
+ "task": "T15e (Claude Code, owner direction 11/17/2026)",
+ "rule": "Every run of two or more space-separated Cyrillic words in learner-visible Unit 10 text (unit, sessions, steps, Unit 10 items, their examples and references) must pass the T15a-n3 two-part rule: (a) presence: the named frozen line, after stripping wiki and HTML markup, collapsing whitespace, ignoring case and removing stress marks, contains the phrase as whole words, with ё and е kept distinct; (b) stress: every stressed word of the phrase has that exact stress in some frozen row or line (the B3 marker comparison). Individually attested forms do not attest a phrase built from them.",
+ "phrases": [
+  {
+   "phrase": "Без неё",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 143,
+   "shownIn": [
+    "example:ex-u10-pronoun-1:display",
+    "step:u10-st-rem-pronoun:body",
+    "step:u10-st-rem-pronoun:russianFacts",
+    "step:u10-st-teach-pronoun-1:body"
+   ]
+  },
+  {
+   "phrase": "В Москве́ нет ста́рых зда́ний",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 55,
+   "shownIn": [
+    "example:ex-u10-absence-2:display",
+    "item:u10-i-absence-2:feedback",
+    "item:u10-i-absence-2:promptLetter",
+    "item:u10-i-absence-2:russianFacts",
+    "step:u10-st-rem-absence:body",
+    "step:u10-st-rem-absence:russianFacts",
+    "step:u10-st-teach-absence-3:body"
+   ]
+  },
+  {
+   "phrase": "Для него́",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 142,
+   "shownIn": [
+    "example:ex-u10-pronoun-0:display",
+    "step:u10-st-rem-pronoun:body",
+    "step:u10-st-rem-pronoun:russianFacts",
+    "step:u10-st-teach-pronoun-1:body",
+    "step:u10-st-teach-pronoun-2:body"
+   ]
+  },
+  {
+   "phrase": "Кило́ хоро́шего ру́сского сы́ра",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 122,
+   "shownIn": [
+    "example:ex-u10-adjective-0:display",
+    "step:u10-st-rem-adjective:body",
+    "step:u10-st-rem-adjective:russianFacts",
+    "step:u10-st-teach-adjective-1:body",
+    "step:u10-st-teach-adjective-2:body"
+   ]
+  },
+  {
+   "phrase": "Кило́ хоро́шей ру́сской колбасы́",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 123,
+   "shownIn": [
+    "example:ex-u10-adjective-1:display",
+    "step:u10-st-rem-adjective:body",
+    "step:u10-st-rem-adjective:russianFacts",
+    "step:u10-st-teach-adjective-1:body"
+   ]
+  },
+  {
+   "phrase": "Ко́фе без молока́",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 73,
+   "shownIn": [
+    "example:ex-u10-preposition-1:display",
+    "step:u10-st-rem-preposition:body",
+    "step:u10-st-rem-preposition:russianFacts",
+    "step:u10-st-teach-preposition-1:body"
+   ]
+  },
+  {
+   "phrase": "Нет рестора́нов",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 54,
+   "shownIn": [
+    "example:ex-u10-absence-1:display",
+    "item:u10-i-absence-1:feedback",
+    "item:u10-i-absence-1:promptLetter",
+    "item:u10-i-absence-1:russianFacts",
+    "step:u10-st-rem-absence:body",
+    "step:u10-st-rem-absence:russianFacts",
+    "step:u10-st-teach-absence-1:body"
+   ]
+  },
+  {
+   "phrase": "Она сидит у окна́",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 69,
+   "shownIn": [
+    "example:ex-u10-preposition-5:display",
+    "step:u10-st-rem-preposition:body",
+    "step:u10-st-rem-preposition:russianFacts",
+    "step:u10-st-teach-preposition-4:body"
+   ]
+  },
+  {
+   "phrase": "Отойти от травы",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 78,
+   "shownIn": [
+    "example:ex-u10-preposition-3:display",
+    "step:u10-st-rem-preposition:body",
+    "step:u10-st-rem-preposition:russianFacts",
+    "step:u10-st-teach-preposition-3:body"
+   ]
+  },
+  {
+   "phrase": "У вас есть сын",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 45,
+   "shownIn": [
+    "example:ex-u10-have-1:display",
+    "item:u10-i-have-2:feedback",
+    "item:u10-i-have-2:promptLetter",
+    "item:u10-i-have-2:russianFacts",
+    "step:u10-st-rem-have:body",
+    "step:u10-st-rem-have:russianFacts",
+    "step:u10-st-teach-have-1:body"
+   ]
+  },
+  {
+   "phrase": "У меня есть Х",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 42,
+   "shownIn": [
+    "example:ex-u10-have-0:display",
+    "item:u10-g-have-0:feedback",
+    "item:u10-g-have-0:promptLetter",
+    "item:u10-g-have-0:russianFacts",
+    "step:u10-st-rem-have:body",
+    "step:u10-st-rem-have:russianFacts",
+    "step:u10-st-teach-have-1:body"
+   ]
+  },
+  {
+   "phrase": "У меня́ нет сы́на",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 59,
+   "shownIn": [
+    "example:ex-u10-absence-0:display",
+    "example:ex-u10-have-5:display",
+    "item:u10-g-absence-0:feedback",
+    "item:u10-g-absence-0:promptLetter",
+    "item:u10-g-absence-0:russianFacts",
+    "item:u10-i-have-3:feedback",
+    "item:u10-i-have-3:promptLetter",
+    "item:u10-i-have-3:russianFacts",
+    "step:u10-st-rem-absence:body",
+    "step:u10-st-rem-absence:russianFacts",
+    "step:u10-st-rem-have:body",
+    "step:u10-st-rem-have:russianFacts",
+    "step:u10-st-teach-absence-1:body",
+    "step:u10-st-teach-have-4:body"
+   ]
+  },
+  {
+   "phrase": "У моего нового мужа есть много друзе́й",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 59,
+   "shownIn": [
+    "example:ex-u10-have-4:display",
+    "step:u10-st-rem-have:body",
+    "step:u10-st-rem-have:russianFacts",
+    "step:u10-st-teach-have-4:body"
+   ]
+  },
+  {
+   "phrase": "У моего́ бра́та нет де́нег",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 60,
+   "shownIn": [
+    "example:ex-u10-absence-3:display",
+    "example:ex-u10-have-6:display",
+    "item:u10-i-absence-4:feedback",
+    "item:u10-i-absence-4:promptLetter",
+    "item:u10-i-absence-4:russianFacts",
+    "item:u10-i-have-4:feedback",
+    "item:u10-i-have-4:promptLetter",
+    "item:u10-i-have-4:russianFacts",
+    "step:u10-st-rem-absence:body",
+    "step:u10-st-rem-absence:russianFacts",
+    "step:u10-st-rem-have:body",
+    "step:u10-st-rem-have:russianFacts",
+    "step:u10-st-teach-absence-3:body",
+    "step:u10-st-teach-have-5:body"
+   ]
+  },
+  {
+   "phrase": "У твоего́ му́жа есть оди́н друг",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 70,
+   "shownIn": [
+    "example:ex-u10-have-3:display",
+    "step:u10-st-rem-have:body",
+    "step:u10-st-rem-have:russianFacts",
+    "step:u10-st-teach-have-3:body"
+   ]
+  },
+  {
+   "phrase": "Эти женщины",
+   "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+   "line": 28,
+   "shownIn": [
+    "example:ex-u10-animate-1:display",
+    "item:u10-g-animate-0:distractorRationales",
+    "item:u10-g-animate-0:feedback",
+    "item:u10-g-animate-0:options",
+    "item:u10-g-animate-0:promptLetter",
+    "item:u10-g-animate-0:russianFacts",
+    "item:u10-i-animate-1:answer",
+    "item:u10-i-animate-1:feedback",
+    "item:u10-i-animate-1:options",
+    "item:u10-i-animate-1:russianFacts",
+    "step:u10-st-rem-animate:body",
+    "step:u10-st-rem-animate:russianFacts",
+    "step:u10-st-teach-animate-1:body"
+   ]
+  },
+  {
+   "phrase": "Я из А́нглии",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 75,
+   "shownIn": [
+    "example:ex-u10-preposition-2:display",
+    "step:u10-st-rem-preposition:body",
+    "step:u10-st-rem-preposition:russianFacts",
+    "step:u10-st-teach-preposition-3:body"
+   ]
+  },
+  {
+   "phrase": "Я пришёл из моего старого дома",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 62,
+   "shownIn": [
+    "example:ex-u10-adjective-2:display",
+    "step:u10-st-rem-adjective:body",
+    "step:u10-st-rem-adjective:russianFacts",
+    "step:u10-st-teach-adjective-3:body"
+   ]
+  },
+  {
+   "phrase": "Я стою́ у забо́ра",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 68,
+   "shownIn": [
+    "example:ex-u10-preposition-4:display",
+    "step:u10-st-rem-preposition:body",
+    "step:u10-st-rem-preposition:russianFacts",
+    "step:u10-st-teach-preposition-4:body"
+   ]
+  },
+  {
+   "phrase": "Я хочу́ пода́рок для моего́ дру́га",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 65,
+   "shownIn": [
+    "example:ex-u10-preposition-0:display",
+    "step:u10-st-rem-preposition:body",
+    "step:u10-st-rem-preposition:russianFacts",
+    "step:u10-st-teach-preposition-1:body",
+    "step:u10-st-teach-preposition-2:body"
+   ]
+  },
+  {
+   "phrase": "любят меня",
+   "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+   "line": 28,
+   "shownIn": [
+    "item:u10-i-animate-1:distractorRationales",
+    "item:u10-i-animate-1:options",
+    "item:u10-i-animate-1:russianFacts"
+   ]
+  },
+  {
+   "phrase": "у меня есть сын",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 46,
+   "shownIn": [
+    "example:ex-u10-absence-4:display",
+    "example:ex-u10-have-2:display",
+    "item:u10-i-absence-3:feedback",
+    "item:u10-i-absence-3:promptLetter",
+    "item:u10-i-absence-3:russianFacts",
+    "item:u10-i-have-1:feedback",
+    "item:u10-i-have-1:promptLetter",
+    "item:u10-i-have-1:russianFacts",
+    "step:u10-st-rem-absence:body",
+    "step:u10-st-rem-absence:russianFacts",
+    "step:u10-st-rem-have:body",
+    "step:u10-st-rem-have:russianFacts",
+    "step:u10-st-teach-absence-4:body",
+    "step:u10-st-teach-have-3:body"
+   ]
+  },
+  {
+   "phrase": "этих женщин",
+   "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+   "line": 29,
+   "shownIn": [
+    "example:ex-u10-animate-0:display",
+    "item:u10-g-animate-0:answer",
+    "item:u10-g-animate-0:feedback",
+    "item:u10-g-animate-0:options",
+    "item:u10-g-animate-0:russianFacts",
+    "item:u10-i-animate-1:distractorRationales",
+    "item:u10-i-animate-1:feedback",
+    "item:u10-i-animate-1:options",
+    "item:u10-i-animate-1:promptLetter",
+    "item:u10-i-animate-1:russianFacts",
+    "step:u10-st-rem-animate:body",
+    "step:u10-st-rem-animate:russianFacts",
+    "step:u10-st-teach-animate-1:body"
+   ]
+  }
+ ]
+}

@@ -28,8 +28,11 @@ class FragmentGlossTeachingTest {
         // T15b: the fragment analysis no frozen source states is reworded to an instruction.
         assertTrue(p.step("u7-st-teach-objectadj-3")!!.second.body.contains("not as a complete sentence"))
         assertTrue(p.step("u10-st-teach-animate-1")!!.second.body.contains("nominative plural"))
-        assertTrue(p.step("u10-st-teach-animate-1")!!.second.body.contains("no predicate"))
-        assertTrue(p.step("u10-st-teach-animate-2")!!.second.body.contains("only the noun phrases"))
+        // T15e: the source/display commentary (inventory 1261 REWORD, 1263 REMOVE) leaves the teaching; the fragment caveat
+        // stays in the kept instruction, and no whole-sentence meaning returns.
+        assertTrue(p.step("u10-st-teach-animate-1")!!.second.body.contains("rather than translating either phrase as a whole sentence"))
+        assertTrue(p.step("u10-st-teach-animate-2")!!.second.body.contains("the accusative object form matches the genitive plural form"))
+        assertFalse(p.step("u10-st-teach-animate-2")!!.second.body.contains("Full sentence meanings"))
         assertEquals("these women, accusative or genitive plural, context not a full sentence", p.example("ex-u7-objectadj-3")!!.note)
         assertEquals(p.example("ex-u7-objectadj-3")!!.note, p.example("ex-u10-animate-0")!!.note)
         assertEquals("these women, nominative plural", p.example("ex-u10-animate-1")!!.note)

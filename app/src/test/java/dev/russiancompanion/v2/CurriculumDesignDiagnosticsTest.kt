@@ -10,8 +10,8 @@ class CurriculumDesignDiagnosticsTest {
     @Test fun currentCorpusHasLocatedSignalsWhileCompatibilityValidationStillPasses() {
         val report = V2DesignDiagnostics.audit(current)
         assertEquals(30, report.counts["units"])
-        assertEquals(720, report.counts["items"]) // T15b appends 15 typed Unit 7 checks; T15c 9 typed Unit 8 checks; T15d 15 typed Unit 9 checks
-        assertEquals(517, report.counts["requiredChecks"])
+        assertEquals(730, report.counts["items"]) // T15b appends 15 typed Unit 7 checks; T15c 9 typed Unit 8 checks; T15d 15 typed Unit 9 checks; T15e 10 typed Unit 10 checks
+        assertEquals(527, report.counts["requiredChecks"])
         assertEquals("NEEDS_CORRECTION_OR_REVIEW", report.verdict)
         assertTrue(report.signals.any { it.rule == "LEARNER_MARKUP" && "u14-st-teach-impersonal-2" in it.entityIds })
         assertTrue(report.signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" && "u13-i-tense-keep-2" in it.entityIds })
@@ -46,7 +46,8 @@ class CurriculumDesignDiagnosticsTest {
         val b = current.item("u10-i-preposition-2")!!.copy(id = "b", objectiveId = objectiveId)
         // Expected values are stated independently (T15a-n1): T15a added the frozen dative дру́гу to the Unit 6 item.
         assertEquals(listOf("дру́га", "друг", "дру́гу"), a.options)
-        assertEquals(listOf("дру́га", "друг"), b.options)
+        // T15e adds the frozen dative дру́гу (nouns.csv:14) to the Unit 10 item as its A2-24 third option.
+        assertEquals(listOf("дру́га", "друг", "дру́гу"), b.options)
         assertEquals("друг", a.promptLetter)
         assertEquals(a.promptLetter, b.promptLetter)
         assertEquals("дру́га", a.answer)

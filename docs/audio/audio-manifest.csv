@@ -113,7 +113,7 @@ A04-038,P1,4,4,WORD,слу́шает,NEEDS_RECORDING,,,,item
 A04-039,P1,4,4,WORD,слу́шаете,NEEDS_RECORDING,,,,item
 A04-040,P1,4,4,WORD,слу́шать,NEEDS_RECORDING,,,,"item,teaching"
 A04-041,P1,4,4,WORD,смотре́ть,NEEDS_RECORDING,,,,teaching
-A04-042,P1,4,"4,10",WORD,ты,EXISTING_CLIP_CANDIDATE,rus-bf5460f8,ты,,"example,item,reference,teaching"
+A04-042,P1,4,"4,10",WORD,Ты,EXISTING_CLIP_CANDIDATE,rus-bf5460f8,ты,,"example,item,reference,teaching"
 A04-043,P1,4,4,WORD,чита́ем,NEEDS_RECORDING,,,,"reference,teaching"
 A04-044,P1,4,4,WORD,чита́ет,NEEDS_RECORDING,,,,"reference,teaching"
 A04-045,P1,4,4,WORD,чита́ете,NEEDS_RECORDING,,,,"reference,teaching"
@@ -163,7 +163,7 @@ A06-005,P2,6,"6,10",WORD,Его́,NEEDS_RECORDING,,,"short: check it is a word, 
 A06-006,P2,6,"6,10",WORD,её,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
 A06-007,P2,6,"6,18",WORD,же́нщина,NEEDS_RECORDING,,,,"example,item,teaching"
 A06-008,P2,6,6,WORD,же́нщину,NEEDS_RECORDING,,,,"example,item,teaching"
-A06-009,P2,6,"6,10",WORD,их,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
+A06-009,P2,6,"6,10",WORD,Их,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
 A06-010,P2,6,"6,7",WORD,кни́гу,NEEDS_RECORDING,,,,"example,item,teaching"
 A06-011,P2,6,6,WORD,ма́му,NEEDS_RECORDING,,,,"example,item,teaching"
 A06-012,P2,6,"6,10",WORD,Меня́,NEEDS_RECORDING,,,,"example,item,teaching"

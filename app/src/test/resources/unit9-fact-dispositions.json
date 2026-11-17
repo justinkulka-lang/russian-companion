@@ -254,11 +254,11 @@
    "field": "item feedback",
    "baselineSentence": "The retained lexical row classifies this noun as neuter; choose by that grammatical gender.",
    "disposition": "MARK",
-   "currentSentence": "The dictionary classifies this noun as neuter; choose by that grammatical gender.",
+   "currentSentence": "This noun is neuter; choose by its grammatical gender.",
    "sourceRecordIds": [
     "prov-t15d-u9-zhivotnoe-gender"
    ],
-   "reason": "Prep report: MARK with nouns.csv:14496 (животное, gender n); the A2-26 term 'retained lexical row' leaves the learner wording."
+   "reason": "Prep report: MARK with nouns.csv:14496 (животное, gender n); the A2-26 term 'retained lexical row' leaves the learner wording. T15e (Codex check of T15d, owner direction 11/17/2026): learner wording no longer narrates the dictionary; marker and nouns.csv:14496 citation kept."
   },
   {
    "entry": "U9-E021",
@@ -1697,7 +1697,7 @@
   },
   {
    "ownerId": "u9-i-odindva-2",
-   "sentence": "The dictionary classifies this noun as neuter; choose by that grammatical gender.",
+   "sentence": "This noun is neuter; choose by its grammatical gender.",
    "evidence": [
     {
      "file": "catalog/sources/units-3-5/openrussian/nouns.csv",

@@ -33,7 +33,7 @@ class Unit10FeedbackCorrectionTest {
         assertTrue(p.item("u10-i-pronoun-1")!!.distractorRationales[1].contains("first-person singular"))
         assertTrue(p.item("u10-i-pronoun-2")!!.feedback.contains("singular informal"))
         assertTrue(p.item("u10-i-pronoun-3")!!.feedback.contains("polite address to one person"))
-        assertTrue(p.item("u10-i-pronoun-4")!!.feedback.contains("third-person forms can change after prepositions"))
+        assertTrue(p.item("u10-i-pronoun-4")!!.feedback.contains("Third-person forms can change after prepositions")) // T15e: the "This checks the bare table form" narration (inventory 1230) leaves the sentence
         for (id in ids.takeLast(2)) {
             val feedback = p.item(id)!!.feedback
             assertTrue(feedback.contains("accusative object") && feedback.contains("nominative"))
