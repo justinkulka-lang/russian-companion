@@ -54,6 +54,10 @@ internal const val UNITS_6_10_T15B_CURRICULUM_COMMIT = "0dfb44f47002f374a30dee48
 internal const val UNITS_6_10_T15C_CURRICULUM_COMMIT = "481f749f71811cb7b677af626a9228a3ad8477c9"
 // T15d: Unit 9 content and the shared CompleteRuleContextPins.kt and V2CumulativeReview.kt changes; Units 6-10 bind to this commit.
 internal const val UNITS_6_10_T15D_CURRICULUM_COMMIT = "50f77c2819fbf06eadf091b03320890718ca8c32"
+// T15e: Unit 10 content and the Unit 9 learner-voice fix; Units 6-10 bind to this commit.
+internal const val UNITS_6_10_T15E_CURRICULUM_COMMIT = "baa055b809c7c947702ce3897789b475af5f0b6a"
+// T15e: the Unit 3 gender prompts no longer narrate the dictionary; Unit 3 binds here, Units 1, 2 and 4 keep T14-n2.
+internal const val UNIT3_T15E_CURRICULUM_COMMIT = "baa055b809c7c947702ce3897789b475af5f0b6a"
 
 // T15a Unit 6 (A2-23/24/26): Unit 6 binds here; earlier pins stay historical.
 internal const val UNIT6_T15A_CURRICULUM_COMMIT = "454c1d94c0ba61cb3713269de6c3a49421786128"
@@ -192,7 +196,8 @@ internal const val UNIT5_T15N1_CURRICULUM_COMMIT = "792344b957ad174cebc1e9907411
 
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
     // T15a also rewords the Units 6-10 attribution reference, so Units 7-10 bind to the same commit.
-    if (unitNumber in 6..10) UNITS_6_10_T15D_CURRICULUM_COMMIT
+    if (unitNumber in 6..10) UNITS_6_10_T15E_CURRICULUM_COMMIT
+    else if (unitNumber == 3) UNIT3_T15E_CURRICULUM_COMMIT
     else if (unitNumber == 6) UNIT6_T15A_FACTS_CURRICULUM_COMMIT
     else if (unitNumber in 7..10) UNIT6_T15A_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNIT5_T15N1_CURRICULUM_COMMIT
