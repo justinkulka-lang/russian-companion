@@ -1,0 +1,190 @@
+Head: 7d6e66e143bfc21fb5ff737456faaa4a4d04a5bf
+
+Unit 21 — read-only preparation. No tracked files changed; nothing committed or pushed. This report stops after Unit 21, as requested.
+
+Frozen-source aliases
+
+All paths are under catalog/sources/.
+
+Alias	Frozen file
+
+P	units-21-25/wikibooks/possessive-pronouns-4220315.txt
+G	units-26-30/wikipedia/russian-grammar-1369617627.txt
+N	units-3-5/openrussian/nouns.csv
+
+
+R — pending source, not a frozen alias: Wikipedia “Reflexive pronoun,” oldid 1374712982, source ID src-enwiki-reflexive-pronoun-1374712982. Its cached provenance text does not constitute a frozen file.
+
+1. A2-24 items
+
+Kotlin diagnostics report 6 exact-key teaching exposures, 0 label/position findings, 0 shown-cue-only findings, and 2 fewer-than-three-options findings.
+
+Item ID	Flags	Fix candidate and evidence
+
+u21-i-svoy-1	Exact-key teaching exposure	Move to later retrieval; retain the jeans-object/changed-subject contrast. P:207,214,220–221.
+u21-i-svoy-2	Same	Move later; retain the book-object/changed-subject contrast. P:207,213–214,221.
+u21-i-object-reference-1	Exposure; two options	Move later. A parallel third translation is “He loves his (own) wife”, from G:506. Its binding needs review: section 8.
+u21-i-object-reference-2	Exposure; two options	PENDING-S1. Its wounded-object contrast depends on R. Freeze and verify that revision before retaining its claims. A third competing translation could come from G:509, but adding it also changes the pinned contrast.
+u21-i-purpose-1	Exposure	Move later; preserve the condition/purpose/reason contrast. G:2476–2479.
+u21-i-purpose-2	Exposure	Move later; preserve reason/concession/time distinctions. G:2477,2480–2481.
+
+
+The guided u21-g-object-reference-0 also has two options. It is outside the required-check findings above and shares the narrow frozen source-pair constraint.
+
+2. A2-23 and typed candidates
+
+Current: 6 checked, 0 typed.
+
+Keeping all six checks, 14 typed additions reaches 20 checked / 14 typed — 70% typed. However, one existing check is pending frozen intake; those numbers must not be reported as a frozen-compliant completed unit.
+
+There is sufficient independent frozen material for these 15 candidates, none requiring R:
+
+Typed-key candidate	Frozen citation	Exact stress result
+
+свой	P:203	PASS; unstressed verbatim
+своя	P:203	PASS; unstressed verbatim
+своё	P:203	PASS; ё retained
+своём	P:206	PASS; ё retained
+Свое́й	P:213	PASS; capitalization and acute retained
+свои́	P:220	PASS
+свою́	G:508	PASS
+себя́	G:509	PASS
+жену́	G:508	PASS
+чтобы	G:2479	PASS; unstressed verbatim
+если	G:2476	PASS; unstressed verbatim
+потому что	G:2477	PASS; unstressed verbatim
+хотя	G:2481	PASS; unstressed verbatim
+рассказа́ла	P:207	PASS
+наде́ла	P:221	PASS
+
+
+All occur in existing teaching. Add bounded production teaching first:
+
+- identify the possessive forms’ agreement features;
+- distinguish the reflexive object from the possessed noun;
+- practise conjunction recall;
+- explicitly identify the contextual past forms before asking learners to produce them.
+
+Put retrieval in later sessions without displaying accepted keys. Do not count stressed and unstressed spellings of the same form as separate assessment additions merely to increase totals.
+
+Without the four unfrozen records: there is enough frozen material for the numerical assessment target. The unchanged curriculum cannot become a complete, validator-valid unit without resolving its mandatory wounded-object check. Typed additions do not replace or waive that check.
+
+3. English-only fact inventory
+
+Scope: every English-only Unit 21 entry in audit/T15-n0-unmarked-russian-facts.csv: 50 entries, 49 distinct sentences.
+
+Dispositions: 43 MARK, 3 REMOVE, 3 PENDING-S1, 1 PENDING-INTAKE. No REWORD-only entries are proposed in this CSV accounting.
+
+MARK means retain the supported claim, remove provenance narration, and bind the final sentence to frozen evidence.
+
+CSV lines	Disposition and evidence
+
+2406–2449, except 2422 and 2435	MARK. Subject-owned possession and possessed-noun agreement: G:502–503; paired movie/book/jeans examples: P:203–221; book forms: N:60.
+2452–2459	MARK. Wife versus reflexive object: G:508–509; accusative wife form: N:50. These claims have frozen support independent of R.
+2472	MARK. The reflexive object in the love example: G:509.
+2479–2499, except 2484	MARK. Conjunction meanings and contrasts: G:2476–2481. G:2478 explicitly supports causal English since.
+2422,2435	REMOVE. Commentary describing what the exercise asks the learner to preserve. The prompts already provide that instruction.
+2469	REMOVE. Assessment/scope commentary covering production, case forms, emphasis and reflexive-verb interpretation.
+2466–2467,2476	PENDING-S1. Other-person reference, the two wounded-object readings, and their translation depend on R.
+2484	PENDING-INTAKE. Same-subject purpose construction with an infinitive. No explicit supporting rule was found in the frozen files. Intake candidate: Wiktionary “чтобы,” Russian usage notes; verify the claim before admission.
+
+
+Rejoin punctuation fragments—particularly the parenthesized English translations—before attaching markers.
+
+All four unfrozen records
+
+These remain PENDING-S1:
+
+- prov-u21-object-transfer-native-self
+- prov-u21-object-transfer-native-other
+- prov-u21-object-transfer-native-reflexive
+- prov-u21-object-transfer-native-personal
+
+All name R and share cached source-text hash 0111295b…. The exact allowlist is at FrozenSourceBindingTest.kt:40.
+
+The following dependent claims must also remain PENDING-S1, including occurrences containing Cyrillic that are outside the English-only CSV:
+
+Owner	Dependent claims
+
+u21-i-object-reference-2	The wounded-self translation; identity of subject and wounded object; the contrasting other-person translation/reference. This covers cue, options, feedback, rationale and assessment explanations.
+u21-st-teach-object-reference-3	Both wounded-sentence translations; same-person versus different-person object reference; comparison of their subjects/objects.
+u21-st-rem-object-reference	Repeated wounded-sentence claims from that teaching.
+Associated prov-ca-u21-object-transfer-* records	Their restatements do not supply independent frozen provenance.
+
+
+The separate wife/love claims in those bodies can retain their G:508–509 bindings. Frozen attestations of the bare pronoun forms do not attest the wounded sentences.
+
+4. Teaching errors and qualifications
+
+- Unfrozen transfer example: the wounded contrast currently has an exact allowlist exception, not frozen-file support. S1 must verify and freeze the named revision before those claims are treated as supported.
+- Purpose infinitive: G:2476–2481 supplies conjunction meanings, but does not state the same-subject infinitive rule. The rule needs intake or a supported rewrite.
+- Register claim — additional PENDING-INTAKE outside the English-only CSV: u21-st-teach-purpose-2 and its remediation assert that one conjunction is ordinary and that the bookish qualifier belongs exclusively to the other. G:2479 places the qualifier after the latter entry, but does not explicitly establish the full register explanation. Obtain explicit usage/register evidence, preferably from the “чтобы” and “дабы” Wiktionary entries, rather than expanding that punctuation into a stronger rule.
+- Parentheses removed: teaching introduces Я люблю́ свою́ жену́, whereas the frozen example at G:508 contains parentheses around the possessive. Restore the frozen displayed form; section 6.
+- Possessive terminology: P:203 says “possessive nouns” and discusses gender/quantity. Use G:502–503 for the precise pronoun and case-agreement explanation.
+- Do not import the cached R paragraph’s reflexive-suffix/accidentality statements into teaching before their source and scope are reviewed.
+
+5. A2-26 lint
+
+Counts are owner-field hits.
+
+Category	Hits
+
+Governance	14, across 12 owners
+Markup	0
+Narration	0
+
+
+Governance owners:
+
+- ref-u2125-attribution — summary and detail;
+- u21-g-object-reference-0;
+- u21-i-object-reference-1;
+- u21-s-orient;
+- u21-st-orient — title and body;
+- u21-st-rem-{object-reference,purpose,svoy};
+- u21-st-teach-object-reference-3;
+- u21-st-teach-purpose-2;
+- u21-st-teach-svoy-1;
+- unit-21.
+
+6. Phrases, extraction bugs and stress
+
+Current audit: 9 PASS / 3 UNATTESTED among 12 phrases. No stressed word was flagged for missing frozen stress evidence.
+
+Failing phrase	Cause	Sourced remedy
+
+Он поранил себя	No frozen-file witness. Neither extraction bug.	PENDING-S1: verify/freeze R. No frozen witness for this exact sentence found.
+Он поранил его	Same. Neither extraction bug.	Same intake dependency.
+Я люблю́ свою́ жену́	Parentheses were removed from the frozen example. Neither extraction bug.	Restore Я люблю́ (свою́) жену́, exactly as G:508.
+
+
+The six possession sentences pass at P:206–207,213–214,220–221. The love-self example passes at G:509; the causal conjunction at G:2477.
+
+Bold-formatting audit: no Unit 21 learner-facing stress mark was found to originate from the bold-single-vowel conversion. The relevant source examples already contain their acute marks or ё. No Unit 20-style prefix-emphasis error was found.
+
+The piped-link bug does not explain any of Unit 21’s three failures. Restoring parentheses resolves only the third; it does not resolve the two missing-source witnesses.
+
+7. Shared references
+
+ref-u2125-attribution is shared with Units 22, 23, 24 and 25. Editing it affects all five units.
+
+8. Validator constraints
+
+Several safeguards prevent treating these repairs as simple option edits:
+
+1. Mandatory native-source check and four source identities.
+   obj-u21-object-reference pins its two required checks and all four R records. The provenance guard also requires those records to match the admitted native source: V2Validator.kt:5141. The allowlist does not establish frozen provenance.
+
+2. Protected wounded-object tuple.
+   u21-i-object-reference-2 has a complete-context pin: CompleteRuleContextPins.kt:79. Replacing its cue or adding a third option needs a reviewed pin update, retaining the intended reflexive-reference distinction.
+
+3. Narrow frozen love-example pair.
+   The admitted reflexive span contains only G:508–509. The proposed third full translation comes from G:506. Adding it requires source-binding work; it cannot simply be appended to the existing two-line relationship while assuming the capability anchor survives.
+
+4. Relationship-specific citations.
+   V2Validator.kt:4399 requires the self cue to cite the self line and the wife cue to cite the wife line. Preserve those protections.
+
+5. Typed additions and exact check-list pins.
+   Update the data pin alongside any added required items, preserving the existing closed checks. Neither typed additions nor a narrower objective can bypass the pending native check.
+
+Feasibility: frozen material is sufficient for the A2-23 count target, but Unit 21 cannot complete under its unchanged mandatory check without S1. Pending: one S1 source dependency affecting four records and all wounded-object claims—including three CSV entries—and two intake grammar claims. Additional repairs: parentheses, third-option bindings, delayed retrieval, fact markers and data pins.
