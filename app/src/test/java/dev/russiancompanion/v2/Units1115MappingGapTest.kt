@@ -68,7 +68,8 @@ class Units1115MappingGapTest {
     fun preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded() {
         val pack = pack()
         assertEquals(
-            "e6159274fd83c366053845d10053c7775b7f78ae798b784e2b929cb0a67f89d0",
+            // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
+            "9c2ab4f1f11a7e813be0779b5b512d4fc398274271eae5937581f1566ab1488c",
             V2Validator.unitContentReviewDigest(pack, 3),
         )
         val shifted = pack.copy(

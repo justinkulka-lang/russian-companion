@@ -936,7 +936,8 @@ class V2RebuildTest {
         val pack = pack()
         assertEquals(30, pack.ownedEditionMappings.size)
         assertTrue(pack.ownedEditionMappings.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
-        assertEquals("e6159274fd83c366053845d10053c7775b7f78ae798b784e2b929cb0a67f89d0", V2Validator.unitContentReviewDigest(pack, 3))
+        // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
+        assertEquals("9c2ab4f1f11a7e813be0779b5b512d4fc398274271eae5937581f1566ab1488c", V2Validator.unitContentReviewDigest(pack, 3))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)
