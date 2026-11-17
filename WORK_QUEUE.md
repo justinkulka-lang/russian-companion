@@ -185,7 +185,7 @@ MEDIUM and LOW findings for those units are fixed or given a written disposition
 | T15b | CODEX | Unit 7. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 33 checked, 0 typed. A2-24: 11 shown-cue-only, 4 label/position (15 unique items), 30 exact-key-in-session. A2-26 lint: 129 governance, 8 markup, 4 narration. Typed needed: at least 8 (closed checks after removing invalid items: 18; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. T15a-n2 note (2026-11-15): 12 Unit 7 phrases are UNATTESTED in any frozen file; see Log 2026-11-15 T15a-n2. T15a-n3 note (2026-11-15): under the two-part phrase rule 9 Unit 7 phrases are UNATTESTED (no longer но́вая книга, но́вые книги, хоро́шие книги); see Log 2026-11-15 T15a-n3. | Unit 7 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1, T15a-n1, T15a-n2, T15a-n3 | DONE — bce23c99 (queue), 0dfb44f4 (Unit 7 content, invariance rule, tests), ce5e3265 (pins, validator hash, digest); Full local suite on ce5e3265 passed (1349 tests, 0 failures, 0 errors, 1 skipped); exact-commit Linux CI 43806052387 passed. See Log 2026-11-16 T15b. |
 | T15c | CODEX | Unit 8. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 19 checked, 0 typed. A2-24: 15 shown-cue-only (15 unique items), 17 exact-key-in-session. A2-26 lint: 26 governance, 2 markup. Typed needed: at least 16 (closed checks after removing invalid items: 4; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 9. | Unit 8 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | DONE — 3e1be30c (queue), 481f749f (Unit 8 content, agreement-3 re-pin, tests, T15f note), 4de56cde (pins, digest), d4a635ed (existence test scope); Targeted T15c tests on d4a635ed passed (35 classes, 297 tests, 0 failures, 0 errors, 0 skipped); local full suite not run under the owner decision of 11/16/2026; exact-commit Linux CI 43930703388 passed. See Log 2026-11-16 T15c. |
 | T15d | CODEX | Unit 9. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 35 checked, 0 typed. A2-24: no shown-cue-only or label items, 22 exact-key-in-session; owner TODO: Unit 9 cumulative review shows two items with the same cue, and neither may give away the other's answer. A2-26 lint: 102 governance. Typed needed: at least 15 (closed checks after removing invalid items: 35; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 15. | Unit 9 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | DONE — 4e7eb1c9 (queue), 50f77c28 (Unit 9 content, review anchor, pattern-3 cue and re-pin, tests), 7d6e66e1 (pins, reviewed-source hash, digest); Targeted T15d tests passed (batches of 29, 31 and 16 classes; final run at 7d6e66e1: 118 tests, 0 failures, 0 errors, 0 skipped; every earlier failure re-run and passing); exact-commit Linux CI 43965724334 passed. See Log 2026-11-16 T15d. |
-| T15e | CODEX | Unit 10. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 22 checked, 0 typed. A2-24: 5 shown-cue-only, 5 label/position (9 unique items), 14 exact-key-in-session. A2-26 lint: 65 governance, 6 markup. Typed needed: at least 7 (closed checks after removing invalid items: 13; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 10. | Unit 10 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | IN_PROGRESS |
+| T15e | CODEX | Unit 10. Fix the unit's A2-24 invalid items; reach A2-23 (at least 20 checked, at least 30 percent typed), keeping every closed check the Units 6–30 contrast rule requires (V2Validator.structureValid/featureValid) and adding typed items alongside; clear the unit's A2-26 lint. New Russian (third options, typed keys, accepted variants) only from licensed inventory sources with provenance. Current: 22 checked, 0 typed. A2-24: 5 shown-cue-only, 5 label/position (9 unique items), 14 exact-key-in-session. A2-26 lint: 65 governance, 6 markup. Typed needed: at least 7 (closed checks after removing invalid items: 13; typed ≥ 3/7 of that, and the unit total ≥ 20); if every invalid closed item is repaired and kept instead, at least 10. | Unit 10 meets A2-23/24/26; unit test available; full exact-commit Linux CI passes. | T14, T15-n0, T15-n1 | DONE — 18a7bcec (queue), baa055b8 (Unit 10 content, Unit 9 voice fix, Unit 3 prompts, tests), 023f55bc (pins, digest), d834cb4f (Unit 3 review digest expectation), c773acd6 (Unit 3 digest pins after CI 43993881265 failed); Targeted T15e tests passed (batches of 44, 23 and 14 classes; every failure fixed and re-run); exact-commit CI 43993881265 on d834cb4f failed on five Unit 3 digest pins, fixed in c773acd6 and the six classes re-run locally; exact-commit Linux CI 44010475272 passed. See Log 2026-11-17 T15e. |
 | T15f | CODEX | Block 2 close-out: A2-36 reference entries for grammar first taught in Units 6–10; A2-28 cumulative review for Units 6–10; block-wide validity (A2-23/24) and learner-text lint (A2-26) reports clean for Units 6–10; audit/FINDINGS_DISPOSITION.csv entries for every MEDIUM and LOW finding scoped to Units 6–10. T15c note (2026-11-16): under the two-part phrase rule, T15b replaced Unit 7's complete case-phrase examples (adjective and noun changing case together, such as the book and window pairs) with single forms. The close-out should search the frozen files under catalog/sources/ for attested adjective–noun case phrases and restore Unit 7 examples where they exist; see Log 2026-11-16 T15b. | Block 2 meets A2-01; full exact-commit Linux CI passes. | T15a, T15b, T15c, T15d, T15e | TODO |
 | T16 | CODEX | Block 3, Units 11–15. Includes CC003. | Block 3 meets A2-01. | T15 | TODO |
 | T17 | CODEX | Block 4, Units 16–20. Includes CC005 and CC007. | Block 4 meets A2-01. | T16 | TODO |
@@ -2623,4 +2623,134 @@ Test expectation changes (old → new, reason):
 - Unit9ReinforcementReviewTest: pattern check cues […, шестнадцать рублей, …] → […, пять лет, …] (owner-directed cue); pattern remediation examples 7 → 8 (the taught пять лет example joins the pattern teaching).
 - CurriculumDesignDiagnosticsTest: items 705 → 720, requiredChecks 502 → 517; OptionPresentationTest: items 705 → 720, required displays 502 → 517 (first-option count 558 unchanged); fifteen typed Unit 9 checks.
 - UnitTestAndBinderTest: Units ≤ 8 have unit tests and Unit 9 is the "0 typed items" example → Units ≤ 9 (Unit 9: 20 items, 15 typed) and Unit 10 is the example; Unit 9 now meets A2-23.
+No test or assertion was deleted or skipped.
+
+### 2026-11-17 — T15e DONE: Unit 10 meets A2-23/24/26 with frozen-source facts; source-narration sweep (Claude Code)
+
+Owner direction 11/17/2026, plus the owner's addition from Codex's T15d check. Plan: Codex prep report audit/prep/units-09-10-prep-at-9a9b9760.txt (branch owner/prep-reports, not merged), Unit 10 section only. Every cited file and line was re-checked against 19608a79: genitive-4567338.txt:21, 42–46, 53–55, 59–60, 65, 68–70, 73, 75, 78, 122–123, 132, 135, 138, 141–143; nouns.csv:14, 36, 51, 99; adjectives.csv:8, 16, 18; adjectives-4292379.txt:14, 59, 62; accusative-4330404.txt:23, 28–29; the A2-24 counts (22 checked, 14 exact-key, 5 cue-only, 5 label), the lint counts (65 governance, 6 markup) and all 68 inventory lines (1137–1275); **no cited line differs**. Unit 10's cumulative-review baselines already assert the Unit 9 policy v4 (T15d). Commits **18a7bcec** (queue IN_PROGRESS), **baa055b8** (content, transformer catalog/apply_t15e_unit_10.py, tests), **023f55bc** (pins, digest), **d834cb4f** (Unit 3 review digest expectation), **c773acd6** (Unit 3 digest pins in five tests after exact-commit CI 43993881265 failed on them). Targeted T15e tests passed (batches of 44, 23 and 14 classes; every failure fixed and re-run); exact-commit CI 43993881265 on d834cb4f failed on five Unit 3 digest pins, fixed in c773acd6 and the six classes re-run locally. Exact-commit Linux CI **44010475272** passed (2026-11-17 03:28–04:56 UTC). No force push.
+
+Unit 10 now: 32 checked, 32 required, 10 typed (31.25 percent); A2-24 signals 0 (was 14 exact-key, 5 cue-only, 5 label); A2-26 lint 0 (was 65 governance, 6 markup); REMEDIATION_TRANSFER_OR_GAP 0 (was 6). Full validator passes. Remaining Unit 10 review signals: FEWER_THAN_THREE_OPTIONS on 15 two-option checks (advisory) and CUE_AS_DISTRACTOR on 6 form checks (the contrast rule keeps the cue in the set; baseline 6). No other unit's design signals changed.
+
+Departures from the report, both to avoid a validator-rule change: (1) u10-i-animate-1's third option is любят меня from its cue's own frozen span (accusative-4330404.txt:28); the report's эти хорошие новые студенты (adjectives-4292379.txt:14) is on another page, and V2Validator.classifyRelation then rejects the SOURCE_SUPPLIED_PAIR item ("distractor is unrelated to the governed feature"). (2) The typed key но́вого would repeat u7-i-type-novogo exactly (new IDENTICAL_REQUIRED_DISPLAY_TASK); же́нщин (taught by u10-i-animate-2) replaces it. The report's optional third forms for the pronoun, preposition-3 and adjective checks were not added.
+
+1 — A2-24. Every Unit 10 CHECK step moves to a new session u10-s-checks after all teaching; prompts "Which admitted form is the genitive/object/other plural row of the shown form?" become "Which genitive form belongs to the shown pronoun?", "Which phrase is the object form of the shown phrase?" and "Which nominative plural phrase refers to the same women as the shown phrase?". Third options: u10-i-preposition-1 окну́ (nouns.csv:51 sg_dat), u10-i-preposition-2 дру́гу (nouns.csv:14 sg_dat), u10-i-animate-2 же́нщине (nouns.csv:36 sg_dat), u10-i-animate-3 бра́ту (nouns.csv:99 sg_dat), u10-i-animate-1 любят меня (accusative:28). Remediation in every Unit 10 session repeats that session's teaching.
+
+2 — Typed checks (A2-23); each key is the answer of the closed check with the same cue:
+
+| Item | Cue → key | Frozen source |
+|---|---|---|
+| u10-i-type-nas | Мы → Нас | genitive-4567338.txt:138 |
+| u10-i-type-tebya | Ты → Тебя́ | genitive-4567338.txt:138 |
+| u10-i-type-vas | Вы → Вас | genitive-4567338.txt:138 |
+| u10-i-type-ikh | Они → Их | genitive-4567338.txt:138 |
+| u10-i-type-okna | окно́ → окна́ | nouns.csv:51 sg_gen |
+| u10-i-type-druga | друг → дру́га | nouns.csv:14 sg_gen |
+| u10-i-type-moego | мо́й → моего́ | adjectives.csv:8 decl_m_gen |
+| u10-i-type-khoroshego | хоро́ший → хоро́шего | adjectives.csv:18 decl_m_gen |
+| u10-i-type-zhenshchin | же́нщины → же́нщин | nouns.csv:36 pl_acc |
+| u10-i-type-bratev | бра́тья → бра́тьев | nouns.csv:99 pl_acc |
+
+3 — Fact inventory: 68 English-only Unit 10 entries (41 distinct sentences) → **62 MARK, 2 REWORD, 4 REMOVE**, as the report recommends; 1230 and 1275 keep the marker on wording without "bare table form" / "other row" (currentSentence). app/src/test/resources/unit10-fact-dispositions.json (62 marker reviews). G = genitive-4567338.txt, C = accusative-4330404.txt, W = adjectives-4292379.txt:
+
+| CSV line | Owner | Disposition | Frozen lines cited / replacement |
+|---|---|---|---|
+| 1137 | u10-g-have-0 | MARK | G:42, G:43 |
+| 1138 | u10-g-have-0 | MARK | G:43, G:53 |
+| 1139 | u10-g-have-0 | MARK | G:43, G:53 |
+| 1140 | u10-st-rem-have | MARK | G:43 |
+| 1141 | u10-st-rem-have | MARK | G:43 |
+| 1142 | u10-st-rem-have | MARK | G:42, G:43 |
+| 1145 | u10-st-rem-have | MARK | G:44 |
+| 1146 | u10-st-rem-have | MARK | G:43 |
+| 1147 | u10-st-rem-have | MARK | G:53 |
+| 1148 | u10-st-rem-have | MARK | G:43, G:44, G:46 |
+| 1149 | u10-st-rem-have | MARK | G:44, G:53 |
+| 1151 | u10-st-rem-have | MARK | G:46 |
+| 1153 | u10-st-rem-have | MARK | W:59, G:21 |
+| 1154 | u10-st-rem-have | MARK | G:21, G:43 |
+| 1155 | u10-st-rem-have | MARK | G:53, G:59 |
+| 1158 | u10-st-rem-have | MARK | G:53, G:60 |
+| 1161 | u10-i-have-1 | MARK | G:43, G:44, G:46 |
+| 1162 | u10-i-have-1 | MARK | G:42, G:43 |
+| 1163 | u10-i-have-1 | MARK | G:43, G:53 |
+| 1164 | u10-i-have-1 | MARK | G:43, G:53 |
+| 1166 | u10-i-have-2 | MARK | G:43, G:44, G:46 |
+| 1167 | u10-i-have-2 | MARK | G:42, G:43 |
+| 1168 | u10-i-have-2 | MARK | G:43, G:53 |
+| 1169 | u10-i-have-2 | MARK | G:43, G:53 |
+| 1171 | u10-i-have-3 | MARK | G:53 |
+| 1172 | u10-i-have-3 | MARK | G:43, G:53 |
+| 1173 | u10-i-have-3 | MARK | G:43, G:53 |
+| 1175 | u10-i-have-4 | MARK | G:53 |
+| 1176 | u10-i-have-4 | MARK | G:43, G:53 |
+| 1177 | u10-i-have-4 | MARK | G:43, G:53 |
+| 1179 | u10-g-absence-0 | MARK | G:53 |
+| 1180 | u10-g-absence-0 | MARK | G:43, G:53 |
+| 1181 | u10-g-absence-0 | MARK | G:43, G:53 |
+| 1182 | u10-st-rem-absence | MARK | G:53 |
+| 1183 | u10-st-rem-absence | MARK | G:53, G:54, G:59 |
+| 1186 | u10-st-rem-absence | MARK | G:53 |
+| 1187 | u10-st-rem-absence | MARK | G:43 |
+| 1188 | u10-st-rem-absence | MARK | G:53, G:55, G:60 |
+| 1191 | u10-st-rem-absence | MARK | G:46 |
+| 1192 | u10-st-rem-absence | MARK | G:43, G:46 |
+| 1194 | u10-st-rem-absence | MARK | G:46 |
+| 1196 | u10-i-absence-1 | MARK | G:53 |
+| 1197 | u10-i-absence-1 | MARK | G:43, G:53 |
+| 1198 | u10-i-absence-1 | MARK | G:43, G:53 |
+| 1200 | u10-i-absence-2 | MARK | G:53 |
+| 1201 | u10-i-absence-2 | MARK | G:43, G:53 |
+| 1202 | u10-i-absence-2 | MARK | G:43, G:53 |
+| 1204 | u10-i-absence-3 | MARK | G:43, G:44, G:46 |
+| 1205 | u10-i-absence-3 | MARK | G:42, G:43 |
+| 1206 | u10-i-absence-3 | MARK | G:43, G:53 |
+| 1207 | u10-i-absence-3 | MARK | G:43, G:53 |
+| 1209 | u10-i-absence-4 | MARK | G:53 |
+| 1210 | u10-i-absence-4 | MARK | G:43, G:53 |
+| 1211 | u10-i-absence-4 | MARK | G:43, G:53 |
+| 1214 | u10-g-pronoun-0 | MARK | G:132, G:135, G:138 |
+| 1219 | u10-i-pronoun-1 | MARK | G:132, G:135, G:138 |
+| 1229 | u10-i-pronoun-4 | MARK | G:132, G:135, G:138 |
+| 1230 | u10-i-pronoun-4 | MARK | G:138, G:141, G:142, G:143; now "Third-person forms can change after prepositions." |
+| 1255 | u10-g-animate-0 | MARK | C:23, C:29 |
+| 1259 | u10-st-rem-animate | REWORD | → "Compare the two displayed phrases." |
+| 1261 | u10-st-rem-animate | REWORD | → "Read the displayed phrase carefully." |
+| 1262 | u10-st-rem-animate | REMOVE | — |
+| 1263 | u10-st-rem-animate | REMOVE | — |
+| 1264 | u10-st-rem-animate | MARK | C:23, C:28, C:29 |
+| 1265 | u10-st-rem-animate | MARK | C:28 |
+| 1266 | u10-st-rem-animate | REMOVE | — |
+| 1267 | u10-st-rem-animate | REMOVE | — |
+| 1275 | u10-i-animate-1 | MARK | C:28; now "The phrase requested here is the nominative subject form." |
+
+Phrases: all 23 shown phrases pass the two-part rule (unit10-phrase-attestations.json); the regression У вас нет сы́на, built from attested forms, is unattested and is caught once shown. Unit10FactProvenanceTest regression adds removed entry 1266 to item feedback and to a remediation body, and removes a marker.
+
+4 — A2-26: titles, prompts, orient card, topic summary, guided and check bodies, the book card, feedback and rationales reworded; wiki markup leaves the shipped spans prov-u10-pronoun-rem, prov-u10-preposition-rem and prov-u10-adjective-rem (frozen originals unchanged). Shared reference ref-u610-attribution: **not edited**.
+
+5 — Source-narration sweep of Units 1–10 learner fields (Codex check of T15d; owner direction 11/17/2026). Pattern: dictionary/source/table/page/entry (also row, line, record, gloss) followed by classifies/lists/gives/shows/records/marks/states and similar verbs. Changed:
+
+| Owner | Field | Old | New |
+|---|---|---|---|
+| u9-i-odindva-2 | feedback | The dictionary classifies this noun as neuter; choose by that grammatical gender. | This noun is neuter; choose by its grammatical gender. (marker kept, nouns.csv:14496) |
+| u3-i-gender-стол, -дом, -город, -друг, -книга, -дверь, -окно, -море, -мужчина, -дядя, -учитель, -мама (12) | prompt | Which group does the dictionary give for the shown word? | Which gender does the shown word have? |
+
+Reviewed, not changed: unit-1 and unit-4 tutorTask.bring and u1-st-stress bookDirection (the learner's own binder and book pages); u1-i-decode-pair prompt ("Which line is one letter…", a choice); u5-st-teach-prepositional-6 title and ref-u5-prepositional summary ("dictionary form pairs", a noun phrase); u8-st-teach-plural-3 / u8-st-rem-plural ("the table pair", the стол pair); u8 availability "line states" sentences and options (they state the example's meaning; the options are pinned tuples); ref-u610-attribution detail (the shared source notice). The lint pattern is unchanged (T15f).
+
+Test and pin expectation changes (old → new, reason):
+
+| Test or pin | Old | New | Reason |
+|---|---|---|---|
+| Unit1ReviewPackage.curriculumCommitForUnit, Units 6–10 | UNITS_6_10_T15D 50f77c28 | UNITS_6_10_T15E baa055b8 | Unit 10 content and the Unit 9 voice fix |
+| Unit1ReviewPackage.curriculumCommitForUnit, Unit 3 | UNITS_1_5_T14N2_VERIFY 4d7bf44a | UNIT3_T15E baa055b8 | Unit 3 gender prompts (Units 1, 2, 4 unchanged) |
+| release/acceptance/candidate.json sourceDigest | dff78412… | d6bb511c… | recomputed on this tree |
+| UnitReviewPipelineTest: unitContentReviewDigest(pack, 3) | e6159274… | 9c2ab4f1… | Unit 3 gender prompts reworded (sweep) |
+| Units1115MappingGapTest, Units2125SourceIntakeTest, Units2630SourceIntakeTest, Units610SourceIntakeTest, V2RebuildTest: Unit 3 content-review digest | e6159274… | 9c2ab4f1… | same; found by exact-commit CI 43993881265 (first T15e CI failure), not in the local targeted batches |
+| Units610SourceIntakeTest: buildUnitReviewPackage(pack, 3).reviewPackageDigest | a4d2462a… | 9a3c5bfe… | follows the Unit 3 content-review digest |
+| CompleteRuleContextPins / reviewed-curriculum-cyrillic.json | — | unchanged | no tuple or main-source change |
+| Unit10FeedbackCorrectionTest | pronoun-4 feedback contains "third-person forms can change after prepositions" | "Third-person forms can change after prepositions" | inventory 1230: the "This checks the bare table form;" prefix leaves the sentence |
+| FragmentGlossTeachingTest | animate-1 contains "no predicate"; animate-2 contains "only the noun phrases" | animate-1 contains "rather than translating either phrase as a whole sentence"; animate-2 contains "the accusative object form matches the genitive plural form" and not "Full sentence meanings" | inventory 1261 REWORD and 1263/1266 REMOVE; the fragment caveat stays in the kept instruction |
+| CurriculumDesignDiagnosticsTest | items 720, requiredChecks 517; u10-i-preposition-2 options [дру́га, друг] | 730, 527; [дру́га, друг, дру́гу] | ten typed Unit 10 checks; A2-24 third option |
+| OptionPresentationTest | items 720, required displays 517 | 730, 527 (first-option count 558 unchanged) | ten typed Unit 10 checks |
+| UnitTestAndBinderTest | Units ≤ 9 have unit tests; Unit 10 is the "0 typed items" example | Units ≤ 10 (Unit 10: 20 items, 10 typed); Unit 12 is the example (Unit 11 has 8 checks, so its reason is the 10-check minimum) | Unit 10 now meets A2-23 |
+| unit9-fact-dispositions.json | 1009 currentSentence and marker review "The dictionary classifies this noun as neuter; …" | "This noun is neuter; choose by its grammatical gender." | sweep item above |
 No test or assertion was deleted or skipped.
