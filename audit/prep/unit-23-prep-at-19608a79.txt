@@ -1,0 +1,220 @@
+Head: 19608a79c9e653cdc45c216beb57e39e23f85969
+
+Unit 23 — read-only preparation. No tracked files changed; nothing committed or pushed. This report covers Unit 23 only.
+
+Frozen-source aliases
+
+All paths are under catalog/sources/.
+
+Alias	Frozen file
+
+U	units-21-25/pressbooks/usa-grammar.html
+B	units-21-25/pressbooks/baltics-travel-grammar.html
+VA	units-11-15/wikibooks/verbal-aspect-4059032.txt
+G	units-26-30/wikipedia/russian-grammar-1369617627.txt
+N	units-3-5/openrussian/nouns.csv
+
+
+1. A2-24 items
+
+Kotlin diagnostics report 12 exact-key teaching exposures, 0 label/position findings, 0 shown-cue-only findings, and 12 two-option advisory findings.
+
+Move every required check into later retrieval, retaining its earlier teaching and substantive contrast.
+
+Item IDs	Fix candidate and frozen evidence
+
+u23-i-ranges-1–2	Later retrieval; preserve decade interpretation and explicit century context. U:212–222.
+u23-i-beginning-1–2	Later retrieval. The unused third position/period translation is available within U:306–311.
+u23-i-during-event-1–2	Later retrieval; preserve complete-sentence meanings. U:313–318. A third complete translation is available at U:325, subject to the binding constraint below.
+u23-i-duration-1–2	Later retrieval; preserve activity/repetition over an interval. U:320–325. U:318 supplies a possible third complete translation, requiring a reviewed binding extension.
+u23-i-elapsed-1–2	Later retrieval. U:387–408 supplies additional temporal alternatives: before for item 1 and after for item 2.
+u23-i-completion-1–2	Blocked by source evidence. Their reading examples are not attested in frozen files. Intake must supply lawful examples preserving duration versus completion-within-a-period.
+
+
+The two-option findings are advisory, not proof by themselves that a check is invalid. Adding options across frozen slices must preserve source relationships and capability anchors.
+
+2. A2-23 and typed candidates
+
+Current: 12 checked, 0 typed.
+
+Keeping all twelve checks, 8 typed additions reaches 20 checked / 8 typed = 40%. The two completion checks remain source-blocked; this numerical result would not establish a compliant completed unit.
+
+Typed-key candidate	Frozen citation	Exact stress result
+
+В шестидесятых годах	U:215	PASS, unstressed verbatim
+В девяностых годах	U:216	PASS, unstressed verbatim
+В конце года	U:309	PASS, unstressed verbatim
+В начале века	U:310	PASS, unstressed verbatim
+В середине недели	U:311	PASS, unstressed verbatim
+Перед ужином	U:390	PASS, unstressed verbatim
+После работы	U:396	PASS, unstressed verbatim
+через год	U:402	PASS, unstressed verbatim
+
+
+Two additional frozen candidates demonstrate capacity independent of the unsupported completion examples:
+
+Candidate	Citation	Result
+
+год назад	U:408	PASS, unstressed verbatim
+во время войны	U:317	PASS, unstressed verbatim
+
+
+All occur in existing teaching. Add bounded production practice first, then delayed retrieval. Specify the taught full prepositional-plural pattern and twentieth-century assumption for decade questions. Do not infer stress or add unsourced accepted variants.
+
+These additions do not replace or waive the mandatory completion checks.
+
+3. English-only fact inventory
+
+Scope: every English-only Unit 23 entry in audit/T15-n0-unmarked-russian-facts.csv: 111 entries, 78 distinct sentences.
+
+Recommended totals: 74 MARK, 2 REWORD, 19 REMOVE, 3 PENDING-S1, 13 PENDING-INTAKE.
+
+MARK retains the supported claim while removing source narration and binding the final wording to actual frozen evidence.
+
+CSV lines	MARK evidence, excluding overrides below
+
+2713–2729	Decade forms and bounded century interpretations: U:212–222.
+2732–2750	Period positions and following genitives: U:306–311; location-noun prepositional forms: N:23,383,700.
+2753–2780	Events occurring during another event: U:313–318.
+2783–2810	Activity/repetition during an interval: U:320–325; imperfective process interpretation: VA:12.
+2813–2843	Before/after/forward interval/ago meanings: U:387–408. Correct accusative government of через: G:21–25.
+2849,2855,2861	General duration and non-assertion of completion: B:368–369 and VA:12. These do not attest the invented reading/writing examples.
+
+
+CSV lines	Other disposition
+
+2720	REWORD: “For these examples, assume the twentieth century.” Preserve the context without narrating supplied glosses.
+2822	REWORD: “Identify the time relationship expressed.”
+2719	REMOVE: commentary about the two displayed choices.
+2714,2725,2729,2733,2746,2750,2757,2773,2780,2787,2803,2810,2815,2838,2843,2848,2865,2870	REMOVE the repeated generic “This is a different time relation, interval, event or completion claim…” sentence. Keep each substantive preceding explanation.
+2856,2860,2866	PENDING-S1: completion-within-a-period construction and its distinction from forward-looking time. Needed pages: “Grammatical aspect” / “Вид (лингвистика)”, with explicit evidence for the construction.
+2833	PENDING-INTAKE: general accusative-government claim for назад. U:407–408 supplies order and an example, but does not state the case rule. Candidate: Wiktionary “назад,” usage notes.
+2844,2846–2847,2851,2853–2854,2858–2859,2863–2864,2868–2869	PENDING-INTAKE: interpretations of the three unattested reading/writing examples. Obtain attested replacement examples; do not reconstruct them from dictionary forms.
+
+
+The completion records cite src-original-research-synthesis, not a licensed source frozen under catalog/sources/. Their Cornell consultation bibliography does not supply frozen inventory evidence.
+
+S1 intake must establish the grammar claim. It must not be assumed to license the existing three Russian sentences.
+
+4. Teaching errors and qualifications
+
+- Three unsupported Russian examples: the two Anna reading sentences and Boris writing sentence have no frozen phrase witnesses. They appear in synthesis records and Kotlin application data; that does not meet the frozen-source rule.
+- Completion grammar: the existing duration page cannot clear completion within a bounded period. B:368 explains accusative duration; it does not establish the required perfective construction with за.
+- Incorrect Pressbooks case label: U:401 says через + genitive. The app’s accusative correction is supportable through G:21–25. Preserve the correction and cite that evidence.
+- Ago case rule: the example at U:408 has a noun whose nominative and accusative shapes coincide. That example alone does not establish the general case rule.
+- Century assumption: U:218 states an unconditional twentieth-century default. Keep the app’s bounded context instead; U:221–222 supplies explicit examples from other centuries.
+- Continuous duration: U:321 overstates continuous occurrence. Its own weather example at U:325 describes several changes. Preserve the app’s qualification that the interval can contain repeated events.
+- Completion versus non-completion: do not turn “completion is not asserted” into “the task was never finished.”
+
+5. A2-26 lint and manual omissions
+
+Automatic Unit 23 counts:
+
+Category	Hits
+
+Governance	19
+Markup	0
+Narration	0
+
+
+Governance hits are the fifteen non-completion feedback fields, plus:
+
+- unit-23.topicSummary
+- u23-s-orient.title
+- u23-st-orient.title
+- u23-st-orient.body
+
+The shared reference is attributed to Unit 21 by the diagnostic, rather than counted again against Unit 23.
+
+The manual scan covered Unit 23 items, examples, steps and directions, its review introduction, and its linked reference. Assessment metadata and provenance originals were excluded.
+
+(a) Source narration missed by the narration pattern
+
+Owner and field	Text/pattern
+
+u23-g-{ranges,beginning,during-event,duration,elapsed}-0.feedback	“The frozen source pairs the shown form…”
+u23-i-{ranges,beginning,during-event,duration,elapsed}-1–2.feedback	Same source-pair narration.
+u23-st-teach-ranges-2.body	“Here the supplied English glosses assume the twentieth century.”
+u23-st-rem-ranges.body	Same gloss-framing sentence.
+u23-st-book-work.body	“The proposed records…are a separate licensed set and do not copy the book.”
+unit-23.topicSummary	Source/review-status description of admitted spans and the original contrast.
+u23-st-orient.body	Development/source/review narration about frozen spans and the implemented check.
+
+
+The first fifteen fields are already caught under governance. Their source narration is nevertheless missed by the narration pattern. Rewrite grammar feedback directly; preserve necessary licensing notices in the appropriate source notice.
+
+(b) Exercise/assessment commentary missed
+
+Owner and field	Text/pattern
+
+u23-st-teach-ranges-1.body; u23-st-rem-ranges.body	“The two displayed choices distinguish…”
+u23-st-teach-ranges-2.body; u23-st-rem-ranges.body	“The checks recognize…they do not test forming…”
+u23-st-teach-beginning-3.body; u23-st-rem-beginning.body	“The checks match complete supplied expressions…”
+u23-st-teach-during-event-2.body; u23-st-rem-during-event.body	“The supplied translations do not demonstrate constructing…”
+u23-st-teach-duration-2.body; u23-st-rem-duration.body	“These checks identify supplied meanings…”
+u23-st-teach-elapsed-3.body; u23-st-rem-elapsed.body	“The choices classify…not independently produce…”
+u23-st-teach-completion-2.body; u23-st-rem-completion.body	“The current choices classify three supplied sentences…”
+
+
+Additional matching fields:
+
+- All eighteen u23-{g,i}-… item distractorRationales[1] fields contain the generic requested-meaning commentary listed for removal in section 3. This includes u23-g-completion-1.
+
+- u23-st-guided-{ranges,beginning,during-event,duration,elapsed,completion}-1.body
+
+- u23-st-check-{ranges,beginning,during-event,duration,elapsed,completion}.body
+
+  These twelve bodies say: “A missed check returns to the complete explanation.”
+
+Ancillary activity/status wording also matches pattern (b):
+
+Owner and field	Commentary
+
+review-introduction-23.introduction	Repair-card counts, guided practice versus fresh checks, and recognition-versus-production limitations.
+unit-23.topicSummary; u23-st-orient.body	Implementation, review, mapping and assessment-status commentary.
+u23-st-book-work.body	App/book separation and activity-status notices.
+u23-st-book.body	Attestation records a report and does not grade or approve mappings.
+u23-st-book-work.bookDirection; u23-st-book.bookDirection	Mapping/reviewer status; book activity versus demonstrated app checks.
+u23-st-{anki-direction,binder-direction,tutor-direction,cumulative-direction}.body	Repeated descriptions of self-attestation, optional tutoring, review and demonstrated ability.
+Those four owners’ .companionDirection fields	Self-report, scoring or demonstrated-ability descriptions.
+ref-u2125-attribution.summary; .detail	Completion-review, scope and approval commentary alongside the legitimate attribution text.
+
+
+Some ancillary statements explain necessary self-attestation/review behavior. Their presence is listed separately from unwanted grammar-card commentary; they should not be deleted indiscriminately. Keep legitimate author/licence attribution.
+
+(c) Raw table-cell markup
+
+None found in Unit 23 learner fields. No equivalent of "| Дательный" was found.
+
+6. Phrases and extraction bugs
+
+Current result: 13 PASS / 3 UNATTESTED. No stress-FAIL phrases were found.
+
+Unattested phrase	Piped-link bug?	Bold-vowel bug?	Replacement finding
+
+Анна читала статью два часа	No	No	No frozen replacement preserving this specific bare-accusative reading-duration example was found.
+Анна прочитала статью за два часа	No	No	No frozen replacement establishing the required completed-reading/time-to-completion contrast was found.
+Борис писал письмо час	No	No	No frozen replacement preserving this writing/bare-accusative-duration example was found.
+
+
+These are source-attestation failures, not extraction failures.
+
+The thirteen passing phrases are the Pressbooks examples at U:215–216,309–311,317–318,324–325,390,396,402,408.
+
+No Unit 23 learner-facing word acquired a stress mark from bold formatting. Its displayed Russian is unstressed.
+
+7. Shared references
+
+ref-u2125-attribution is shared with Units 21, 22, 24 and 25. Changes affect all five units.
+
+8. Validator constraints
+
+- Legacy synthesis exception: V2Validator.kt:3106 accepts the Phase 2 completion capability. That exception does not satisfy the owner’s frozen-source rule.
+- No admitted frozen completion replacement: BatchBSources.kt:264 currently defines an empty frozen completion-admission set.
+- Pinned applications: OriginalApplicationTuplePins.kt:11 protects the existing completion application tuple. Replacing its sentences requires reviewed admission/application updates.
+- Required explanation: completion distractors must explain aspect and accusative construction. Preserve that requirement.
+- Duration cannot substitute for completion: existing guards explicitly reject duration, ago, range and intended-trip-length evidence as completion evidence.
+- Optional third options: beginning and elapsed alternatives are within their existing slices. Options drawn across Pressbooks slices require reviewed binding changes; the duration capability’s exact source anchor must survive.
+- Keep all twelve required closed checks. Typed additions cannot waive the completion objective or its source gate.
+
+Feasibility: enough frozen material exists for the A2-23 count target, but Unit 23 cannot complete under the frozen-source rule yet. PENDING-S1: 3 CSV entries; PENDING-INTAKE: 13 entries covering the three unattested examples and the ago case claim. Completion intake/admission, narration cleanup, delayed retrieval and fact bindings remain blockers.
