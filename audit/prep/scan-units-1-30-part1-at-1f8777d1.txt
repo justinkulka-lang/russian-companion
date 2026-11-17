@@ -1,0 +1,23 @@
+Codex read-only scan for Russian with no frozen witness, Part 1 (Units 1-15). Head 1f8777d1 (content ancestor c773acd6 passed CI 44010475272). The piped-link and bold-vowel bugs were treated as fixed.
+
+Result: Units 1-15 contain no lexical phrase failures and no missing-stress failures. All 378 stressed-form checks passed.
+
+The scan found 4 literal failures, all alphabet enumerations (letter lists, not Russian phrases):
+- Unit 1, "Е Ё Ю Я": obj-u1-iotated.title; u1-st-iotated.title; ref-iotated.summary
+- Unit 1, "Ь Ъ Й": obj-u1-signs.title
+- Unit 1, "В Н Р С У Х": ref-confusable.summary
+- Unit 2, "В Н Р С У Х": ref-confusable.summary
+
+Admission: Unit 1 has no provenance records, so V2Validator.kt:5233 skips it. In Unit 2, the letter-identity exception at V2Validator.kt:5263/5372 lets these through. None of the four is in a required check or a pinned tuple. There is no verbatim replacement.
+
+Units 21-24 were reconfirmed at this head:
+- U21: 3 UNATTESTED
+- U22: 0 real failures (3 FALSE-FAIL, piped-link)
+- U23: 3 UNATTESTED
+- U24: 4 UNATTESTED and 2 missing-stress forms
+
+Per-unit counts (phrase spans / stressed forms / real failures):
+U1 39/0/3; U2 5/4/1; U3 6/17/0; U4 3/43/0; U5 12/17/0; U6 13/28/0; U7 22/37/0; U8 5/48/0; U9 30/42/0; U10 23/51/0; U11 8/20/0; U12 9/27/0; U13 10/21/0; U14 8/12/0; U15 1/11/0.
+Total: 194 spans, 378 stressed forms, 4 failures.
+
+Candidate intake pages for Units 1-15: none.
