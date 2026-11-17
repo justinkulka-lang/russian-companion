@@ -18,3 +18,11 @@ Also approved: the Unit 20 typed-check expansion. Updating the checked-item list
 Coordinator note: the phrase-matcher fix task now also covers the bold-prefix stress bug. In catalog/units_3_5_intake.py:196, the formatter reads a bold vowel inside a word as a stress mark (Unit 20, G:1383: у́летят should be улетят / улетя́т). Before T17, scan every unit for the same misreading.
 
 D5 (approved 11/16, 18:15). Add Wiktionary "чтобы" and Wiktionary "дабы" to S1, so S1 now adds six pages. Purpose: frozen support for Unit 21's same-subject infinitive rule with чтобы and its claim that дабы is bookish (Unit 21 prep, sections 3-4). Verify each claim against the frozen text before admitting it. If a claim isn't supported, report it rather than rewording it.
+
+D6 (11/16, 19:19). Owner standing instruction: from here on, the coordinator's recommendations are approved. Each is recorded here as it is made.
+
+D6a. Add these pages to S1: Wiktionary "двое", Wikipedia (ru) "Имя числительное в русском языке", Wiktionary "назад" and Wiktionary "за". They give frozen support to Unit 22's three collective-usage claims, Unit 23's case rule for назад, and its completion-within-a-period construction. For each claim, check the frozen text before admitting it; if a claim isn't supported, report it. Don't reword it to fit.
+
+D6b. During S1, search the frozen aspect pages and the D6a pages for an attested sentence pair that contrasts duration (imperfective + bare accusative) with completion within a period (perfective + за + accusative). The pair must be used verbatim to replace the three unattested Unit 23 sentences (Анна читала статью два часа / Анна прочитала статью за два часа / Борис писал письмо час). The legacy synthesis exception at V2Validator.kt:3106 doesn't satisfy the strict phrase rule. If no attested pair exists, report it; the completion check stays blocked.
+
+D6c. T15f lint widening covers source narration ("the frozen note says", "the dictionary classifies", "the source pairs"), commentary about how exercises and assessments work, and raw table-cell markup. Legitimate self-attestation, licence and attribution notices are exempt.
