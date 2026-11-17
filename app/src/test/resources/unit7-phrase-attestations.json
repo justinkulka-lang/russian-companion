@@ -296,6 +296,50 @@
     "step:u7-st-rem-objectadj:russianFacts",
     "step:u7-st-teach-objectadj-3:body"
    ]
+  },
+  {
+   "phrase": "Анна встретила новую учительницу",
+   "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+   "line": 79,
+   "shownIn": [
+    "example:ex-u7-endings-11:display",
+    "step:u7-st-teach-endings-1:body",
+    "step:u7-st-rem-endings:body",
+    "step:u7-st-rem-endings:russianFacts"
+   ]
+  },
+  {
+   "phrase": "Я пришёл из моего старого дома",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 62,
+   "shownIn": [
+    "example:ex-u7-endings-12:display",
+    "step:u7-st-teach-endings-2:body",
+    "step:u7-st-rem-endings:body",
+    "step:u7-st-rem-endings:russianFacts"
+   ]
+  },
+  {
+   "phrase": "моего старого дома",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 62,
+   "shownIn": [
+    "step:u7-st-teach-endings-2:body",
+    "step:u7-st-rem-endings:body",
+    "step:u7-st-rem-endings:russianFacts"
+   ]
+  },
+  {
+   "phrase": "Оно́ под хоро́шими кни́гами",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 82,
+   "shownIn": [
+    "example:ex-u7-spelling-5:display",
+    "step:u7-st-teach-spelling-3:body",
+    "step:u7-st-rem-spelling:body",
+    "step:u7-st-rem-spelling:russianFacts"
+   ]
   }
- ]
+ ],
+ "restoredT15f": "T15f Part C (owner direction 11/17/2026): complete adjective-noun case phrases restored from verbatim frozen lines (C:79, W:62, W:82). No frozen file attests a neuter adjective-noun case phrase, so the window pair stays as single forms."
 }

@@ -14,7 +14,10 @@ class Unit7InvariancePreparationTest {
         val body = teaching.joinToString("\n") { it.body }
         assertTrue(body.contains("do not decline or conjugate"))
         assertTrue(body.contains("does not mean that comparative forms cannot exist"))
-        assertTrue(body.contains("wording task does not demonstrate applying invariance"))
+        // T15f (owner decision D6c): commentary about what the choices ask and do not demonstrate is gone.
+        assertFalse(body.contains("does not demonstrate"))
+        assertFalse(body.contains("choices below ask"))
+        assertTrue(body.contains("do not infer a general adverb-formation rule"))
         assertEquals(listOf("u7-i-adverb-invariance-1", "u7-i-adverb-invariance-2"),
             p.unit(7)!!.objectives.single { it.id == "obj-u7-adverb-invariance" }.checkItemIds)
     }

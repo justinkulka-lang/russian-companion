@@ -78,7 +78,9 @@ class Unit7FactProvenanceTest {
             listOf(it.string("ownerId"), it.string("field"), it.string("baselineSentence"))
         }.toSet())
         val totals = dispositions.groupingBy { it.string("disposition") }.eachCount()
-        assertEquals(mapOf("MARK" to 21, "REWORD" to 15, "REMOVE" to 2), totals)
+        // T15f: U7-E16 drops its assessment commentary (D6c) and U7-E23 its source framing (D8); both keep their marked
+        // facts and records: MARK 21 -> 19, REWORD 15 -> 17.
+        assertEquals(mapOf("MARK" to 19, "REWORD" to 17, "REMOVE" to 2), totals)
         assertEquals(totals, json.getValue("totals").jsonObject.mapValues { it.value.jsonPrimitive.int })
         val hosts = hosts(pack)
         dispositions.forEach { disposition ->
@@ -264,11 +266,8 @@ class Unit7FactProvenanceTest {
         return present && V2Validator.factWordForms(phrase).filter { '́' in it }.all { it in stressForms }
     }
 
-    private fun unstressed(text: String): String {
-        val noMarkup = Regex("'{2,}|\\[\\[|\\]\\]").replace(Regex("<[^>]+>").replace(text, " "), "")
-        val stressMarks = Regex("(?<=[$cyr])'(?!')").replace(noMarkup, "́").replace("́", "")
-        return Regex("[\\s\\u00a0\\u2009\\u202f]+").replace(stressMarks, " ").lowercase()
-    }
+    /** T15f: the shared rule; a Wiktionary piped link reads as its display text. */
+    private fun unstressed(text: String): String = TwoPartPhraseRule.unstressed(text)
 
     private val frozenStressForms: Set<String> by lazy { frozenLines().flatMap { V2Validator.factWordForms(it) }.toSet() }
 

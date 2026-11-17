@@ -181,12 +181,13 @@
    "ownerId": "u10-st-rem-have",
    "field": "remediation body",
    "baselineSentence": "Quantity patterns are separate from the simple nominative possessed thing in the son checks.",
+   "currentSentence": "Quantity patterns are separate from the simple nominative possessed thing.",
    "disposition": "MARK",
    "sourceRecordIds": [
     "prov-t15e-u10-g21",
     "prov-t15e-u10-g43"
    ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g21, prov-t15e-u10-g43."
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g21, prov-t15e-u10-g43. T15f (owner decision D8): source framing leaves the wording; currentSentence is the marked learner wording, with the same records."
   },
   {
    "entry": "U10-E015",
@@ -708,13 +709,14 @@
    "ownerId": "u10-g-pronoun-0",
    "field": "item feedback",
    "baselineSentence": "Keep the same first-person singular referent when moving to the genitive row.",
+   "currentSentence": "Keep the same first-person singular referent in the genitive.",
    "disposition": "MARK",
    "sourceRecordIds": [
     "prov-t15e-u10-g132",
     "prov-t15e-u10-g135",
     "prov-t15e-u10-g138"
    ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g132, prov-t15e-u10-g135, prov-t15e-u10-g138."
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g132, prov-t15e-u10-g135, prov-t15e-u10-g138. T15f (owner decision D8): source framing leaves the wording; currentSentence is the marked learner wording, with the same records."
   },
   {
    "entry": "U10-E056",
@@ -837,11 +839,12 @@
    "ownerId": "u10-st-rem-animate",
    "field": "remediation body",
    "baselineSentence": "The nominative phrase names the subject in the source example.",
+   "currentSentence": "The nominative phrase names the subject in the example.",
    "disposition": "MARK",
    "sourceRecordIds": [
     "prov-t15e-u10-c28"
    ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-c28."
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-c28. T15f (owner decision D8): source framing leaves the wording; currentSentence is the marked learner wording, with the same records."
   },
   {
    "entry": "U10-E066",
@@ -1457,7 +1460,7 @@
   },
   {
    "ownerId": "u10-g-pronoun-0",
-   "sentence": "Keep the same first-person singular referent when moving to the genitive row.",
+   "sentence": "Keep the same first-person singular referent in the genitive.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
@@ -1745,7 +1748,7 @@
   },
   {
    "ownerId": "u10-st-rem-have",
-   "sentence": "Quantity patterns are separate from the simple nominative possessed thing in the son checks.",
+   "sentence": "Quantity patterns are separate from the simple nominative possessed thing.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
@@ -1949,7 +1952,7 @@
   },
   {
    "ownerId": "u10-st-rem-animate",
-   "sentence": "The nominative phrase names the subject in the source example.",
+   "sentence": "The nominative phrase names the subject in the example.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",

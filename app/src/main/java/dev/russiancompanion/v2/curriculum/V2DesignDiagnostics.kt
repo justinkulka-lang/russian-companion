@@ -54,6 +54,41 @@ internal object V2DesignDiagnostics {
             "\\bchecks? (?:asks?|requests?)\\b|\\bwhen the check\\b|\\bwhither\\b|\\bwhence\\b",
         RegexOption.IGNORE_CASE,
     )
+    // T15f (owner decisions D6c and D8, approved rule changes): the narration lint also catches source narration and
+    // source framing, commentary about how exercises, assessment and the course records work, and raw table-cell markup.
+    // Short operating instructions ("A miss returns to the explanation", retry wording) stay allowed (D8). Sentences
+    // that are self-attestation, licence or attribution notices, or the learner's own book and binder directions, are
+    // exempt from these added patterns only.
+    private val sourceNarration = Regex(
+        "\\bthe (?:frozen|retained|current) (?:note|source|example|line|page|table|text|entry|row|record|span|paragraph)s?\\b|" +
+            "\\bthe (?:note|source|dictionary|grammar|page|table|entry|record|wordlist|glossary)s? (?:says|said|pairs|classif(?:y|ies)|lists?|gives?|" +
+            "records?|places?|shows?|marks?|states?|labels?|glosses|spells?|translates?|writes|names|uses|illustrates|introduces|identifies)\\b|" +
+            "\\bsource (?:example|line|row|table|text|note|span|entry|page)s?\\b|\\btable forms?\\b|" +
+            "\\b(?:nominative|genitive|dative|accusative|instrumental|prepositional|plural|singular|table|other|same|bare) (?:table )?rows?\\b|" +
+            "\\bproposed records?\\b|\\blicensed set\\b|\\baudio is mapped\\b",
+        RegexOption.IGNORE_CASE,
+    )
+    private val assessmentCommentary = Regex(
+        "\\b(?:the|these|this|that) (?:guided |typed |closed |review |later |unit |final |wording )?(?:choice|check|question|exercise|task|item|test|quiz)" +
+            "(?:e?s)? (?:below |above )?(?:asks?|requests?|recogni[sz]es?|accepts?|tests?|scores?|counts?|marks?|wants?|expects?|keys?|practi[sc]es?)\\b|" +
+            "\\bchecks? recogni[sz]e\\b|\\bdoes(?: not|n't) demonstrate\\b|\\bseparate from\\b[^.]*\\bchecks?\\b|" +
+            "\\b(?:this|the) unit does(?: not|n't) teach\\b|\\bstays? out of this unit\\b|" +
+            "\\bdemonstrated (?:app |in-app )?(?:check|ability)\\b|\\bpending reviewer\\b|\\breviewer assignment\\b|" +
+            "\\bapproved mapping\\b|\\bapprove (?:a|the) (?:mapping|proposed records)\\b|\\bdo(?:es)? not replace (?:that|the|this) lesson\\b",
+        RegexOption.IGNORE_CASE,
+    )
+    private val tableCell = Regex("\\|{1,2}[ \\t]*\\p{L}")
+    private val narrationExempt = Regex(
+        "\\bself-attest|\\buser-reported\\b|\\blicen[cs]e (?:notice|terms|route)\\b|\\bCC BY\\b|\\battribution\\b|\\bcontributors\\b|" +
+            "\\byour (?:own )?(?:book|binder|textbook|course book)\\b",
+        RegexOption.IGNORE_CASE,
+    )
+    // The batch and page attribution notices (ref-*-attribution) are licence notices, exempt from the added patterns.
+    private val attributionNotice = Regex("ref-.*-attribution")
+    private fun widenedNarration(value: String): Boolean = value.split(sentenceBreak).filterNot { narrationExempt.containsMatchIn(it) }
+        .any { sourceNarration.containsMatchIn(it) || assessmentCommentary.containsMatchIn(it) }
+    private fun tableCellMarkup(value: String): Boolean = value.split(sentenceBreak).filterNot { narrationExempt.containsMatchIn(it) }
+        .any { tableCell.containsMatchIn(it) }
     private val answerInstruction = Regex("\\b(?:choose|select|selecting|the answer|matching description|is the matching)\\b", RegexOption.IGNORE_CASE)
     private val sentenceBreak = Regex("(?<=[.;!?])\\s+")
 
@@ -90,9 +125,12 @@ internal object V2DesignDiagnostics {
             if (value != null && (governance.containsMatchIn(value) || sourceIds.any { it.containsMatchIn(value) }))
                 add("LEARNER_GOVERNANCE_TERM", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
                     "Learner text contains a governance term or source ID prohibited by A2-26.")
-            if (value != null && provenanceNarration.containsMatchIn(value))
+            if (value != null && (provenanceNarration.containsMatchIn(value) || (!attributionNotice.matches(id) && widenedNarration(value))))
                 add("LEARNER_PROVENANCE_NARRATION", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
                     "Learner text narrates provenance or talks about the app's checks (A2-26 learner voice); keep attribution in the records.")
+            if (value != null && tableCellMarkup(value))
+                add("LEARNER_TABLE_CELL_MARKUP", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
+                    "Learner text contains a raw table-cell separator (A2-26 learner voice); present the forms as plain teaching text.")
         }
         fun stepText(step: V2Step): String = buildString {
             append(step.body); append('\n'); append(step.bookDirection.orEmpty()); append('\n'); append(step.companionDirection.orEmpty())

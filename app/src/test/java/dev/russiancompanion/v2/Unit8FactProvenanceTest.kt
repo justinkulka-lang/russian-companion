@@ -33,6 +33,8 @@ class Unit8FactProvenanceTest {
         "Compare the shown singular and plural forms.",
         "Recognize what exists and where the line places it.",
         "Keep each whole source line with its own supplied translation.",
+        // T15f (owner decision D8): the same instruction without source framing.
+        "Keep each whole line with its own translation.",
         "Distinguish that noun from the location phrase.",
         "These two supplied examples do not establish an unrestricted sentence-generation rule.",
     )
@@ -262,11 +264,8 @@ class Unit8FactProvenanceTest {
         return present && V2Validator.factWordForms(phrase).filter { '́' in it }.all { it in stressForms }
     }
 
-    private fun unstressed(text: String): String {
-        val noMarkup = Regex("'{2,}|\\[\\[|\\]\\]").replace(Regex("<[^>]+>").replace(text, " "), "")
-        val stressMarks = Regex("(?<=[$cyr])'(?!')").replace(noMarkup, "́").replace("́", "")
-        return Regex("[\\s\\u00a0\\u2009\\u202f]+").replace(stressMarks, " ").lowercase()
-    }
+    /** T15f: the shared rule; a Wiktionary piped link reads as its display text. */
+    private fun unstressed(text: String): String = TwoPartPhraseRule.unstressed(text)
 
     private val frozenStressForms: Set<String> by lazy { frozenLines().flatMap { V2Validator.factWordForms(it) }.toSet() }
 

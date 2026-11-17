@@ -4,8 +4,8 @@
  "inventory": "audit/T15-n0-unmarked-russian-facts.csv (T15-n0 baseline at 9decefb2); csvLine is the physical line",
  "scope": "All 38 English-only Unit 7 entries of the T15-n0 inventory. MARK: the exact baseline sentence is kept and its russian-fact marker cites frozen-source records. REWORD: the baseline sentence is gone and its replacement is either marked with frozen-source records (MARKED) or is a reviewed instruction that states no Russian fact (INSTRUCTION). REMOVE: the sentence is gone. Content-audit coverage records never satisfy a marker.",
  "totals": {
-  "MARK": 21,
-  "REWORD": 15,
+  "MARK": 19,
+  "REWORD": 17,
   "REMOVE": 2
  },
  "entries": [
@@ -216,7 +216,9 @@
    "ownerId": "u7-st-rem-spelling",
    "field": "remediation body",
    "baselineSentence": "These choices test the requested form of the adjective; all the options are already correctly spelled.",
-   "disposition": "MARK",
+   "disposition": "REWORD",
+   "replacement": "All the options are already correctly spelled.",
+   "replacementKind": "MARKED",
    "sourceRecordIds": [
     "prov-ex-or-u7-spelling-1",
     "prov-ex-or-u7-spelling-2",
@@ -225,7 +227,7 @@
     "prov-t15b-u7-a24",
     "prov-t15b-u7-a26"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-t15b-u7-a24, prov-t15b-u7-a26."
+   "reason": "T15f (owner decision D6c): the widened A2-26 lint flags the assessment commentary \"These choices test the requested form of the adjective\"; the sentence keeps only its fact, marked with the same frozen-source records: prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-t15b-u7-a24, prov-t15b-u7-a26."
   },
   {
    "entry": "U7-E17",
@@ -314,14 +316,16 @@
    "ownerId": "u7-st-rem-objectadj",
    "field": "remediation body",
    "baselineSentence": "Its plural forms can be accusative or genitive; the source illustrates an animate accusative object.",
-   "disposition": "MARK",
+   "disposition": "REWORD",
+   "replacement": "Its plural forms can be accusative or genitive; the example illustrates an animate accusative object.",
+   "replacementKind": "MARKED",
    "sourceRecordIds": [
     "prov-ex-u7-objectadj-3-ru",
     "prov-t15b-u7-objectadj-zhenshchina-pl-acc",
     "prov-t15b-u7-objectadj-zhenshchina-pl-gen",
     "prov-t15b-u7-objectadj-zhenshchina-animate"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-ex-u7-objectadj-3-ru, prov-t15b-u7-objectadj-zhenshchina-pl-acc, prov-t15b-u7-objectadj-zhenshchina-pl-gen, prov-t15b-u7-objectadj-zhenshchina-animate."
+   "reason": "T15f (owner decision D8): \"the source illustrates\" becomes \"the example illustrates\"; the marker keeps the same frozen-source records: prov-ex-u7-objectadj-3-ru, prov-t15b-u7-objectadj-zhenshchina-pl-acc, prov-t15b-u7-objectadj-zhenshchina-pl-gen, prov-t15b-u7-objectadj-zhenshchina-animate."
   },
   {
    "entry": "U7-E24",
@@ -940,7 +944,7 @@
   },
   {
    "ownerId": "u7-st-rem-spelling",
-   "sentence": "These choices test the requested form of the adjective; all the options are already correctly spelled.",
+   "sentence": "All the options are already correctly spelled.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
@@ -1012,7 +1016,7 @@
   },
   {
    "ownerId": "u7-st-rem-objectadj",
-   "sentence": "Its plural forms can be accusative or genitive; the source illustrates an animate accusative object.",
+   "sentence": "Its plural forms can be accusative or genitive; the example illustrates an animate accusative object.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",

@@ -507,7 +507,8 @@ class Units610InstructionalValidityTest {
         val unit7 = pack.unit(7)!!
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit7.readiness)
         val lesson = unit7.sessions.flatMap { it.steps }.joinToString("\n") { it.body + (it.bookDirection ?: "") }
-        assertTrue(lesson.contains("short-form adjective section stays out"))
+        // T15f (owner decision D8): what the unit does not teach leaves the book direction.
+        assertFalse(lesson.contains("short-form adjective section stays out"))
         assertTrue(lesson.contains("the correspondence is not a universal generator"))
         assertFalse(lesson.contains("most adverbs are formed"))
         assertFalse(lesson.contains("хорошое"))

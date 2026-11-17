@@ -880,7 +880,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt",
-      "sha256": "0ce2d5922bef7d95fb77500974c515b544327be40c493481219083c7f07c3ca4",
+      "sha256": "ad55643c3c65d2219799cfce47ffafee1a7550f1c4b7e59c11661fa803a6a44b",
       "purpose": "Exact existing escaped source comparison implementation; no directory exemption or source acceptance",
       "bindings": [
         {
@@ -1761,7 +1761,7 @@
         },
         {
           "kind": "PROVENANCE_FIELD",
-          "value": "Они у́летят из Владивостока через месяц.",
+          "value": "Они улетят из Владивостока через месяц.",
           "field": "shippedText",
           "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
           "record": {
@@ -1771,10 +1771,10 @@
             "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
             "sourceRecordId": "grammar:They will leave Vladivostok in a month.<br />Они '''у'''летят из Владивостока че",
             "sourceHash": "91e79ac2824455369290c1a4f7179c1cc8aa815773495fe8b13c924530082d0e",
-            "contentHash": "e0c776290550379273b2fbe7535b2a95c31c95a47ea7b54d0ccbff3ae966a50c",
+            "contentHash": "b618d28c8aba1674183042b22b265655ef1e3cff0fa45895b1d91cf65af28338",
             "transformation": "wikibooks emphasis formatting",
             "licenseId": "CC BY-SA 4.0",
-            "shippedText": "Они у́летят из Владивостока через месяц.",
+            "shippedText": "Они улетят из Владивостока через месяц.",
             "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
           }
         },
@@ -3401,6 +3401,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Owner direction 11/16/2026: Unit9NounBehaviorCumulativeReviewPolicy becomes v4 and anchors its plural review on u8-i-plural-3 instead of u8-i-plural-2 (shared review cue); an ASCII comment explains it. No new Cyrillic literal, item reference with Cyrillic or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt",
+      "task": "T15f",
+      "previousRecordedSha256": "0ce2d5922bef7d95fb77500974c515b544327be40c493481219083c7f07c3ca4",
+      "sha256": "ad55643c3c65d2219799cfce47ffafee1a7550f1c4b7e59c11661fa803a6a44b",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": false,
+      "scope": "T15f Part A2 (owner direction 11/17/2026): the AGO_SPAN shipped-pair key spells the Unit 20 sentence as the frozen line does (russian-grammar-1369617627.txt:1383 bolds the prefix letter, not stress), so the escaped acute after the first letter of the verb is removed. The prov-ex-u20-motion-6-ru binding value, shippedText and contentHash follow. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

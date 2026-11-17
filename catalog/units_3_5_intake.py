@@ -193,6 +193,28 @@ def text_in_frozen(original: str, shipped: str) -> bool:
     return shipped in unfold_wiki_labels(original)
 
 
+_OPENRUSSIAN_STRESSED: set[str] | None = None
+
+
+def _openrussian_stressed_forms() -> set[str]:
+    """Every stressed form in the frozen OpenRussian CSVs, with acute accents, lowercased."""
+    global _OPENRUSSIAN_STRESSED
+    if _OPENRUSSIAN_STRESSED is None:
+        forms: set[str] = set()
+        root = Path(__file__).resolve().parent / "sources"
+        for path in sorted(root.glob("*/openrussian/*.csv")):
+            for line in path.read_text(encoding="utf-8").splitlines():
+                for token in re.split(r"[\t,;()\s]+", line):
+                    if "'" not in token:
+                        continue
+                    try:
+                        forms.add(format_stress(token).lower())
+                    except SystemExit:
+                        continue  # a malformed mark, such as мя''тно, attests nothing
+        _OPENRUSSIAN_STRESSED = forms
+    return _OPENRUSSIAN_STRESSED
+
+
 def format_wikibooks_emphasis(text: str) -> str:
     """Turn admitted Wikibooks emphasis into learner-facing text.
 
@@ -207,8 +229,19 @@ def format_wikibooks_emphasis(text: str) -> str:
         after = text[end] if end < len(text) else ""
         if vowel in "ёЁ":
             return vowel
-        if _wiki_word_char(before) or _wiki_word_char(after):
+        if _wiki_word_char(before):
             return vowel + "\u0301"
+        if _wiki_word_char(after):
+            # T15f: a bold word-initial vowel is also how the source emphasises a prefix or a letter
+            # (russian-grammar-1369617627.txt:1383 '''у'''летят). It is stress only when a frozen
+            # OpenRussian form gives that word with that stress.
+            rest = ""
+            for char in text[end:]:
+                if not _wiki_word_char(char):
+                    break
+                rest += char
+            if (vowel + "\u0301" + rest).lower() in _openrussian_stressed_forms():
+                return vowel + "\u0301"
         return vowel
 
     cleaned = _WIKI_STRESS.sub(mark, text)

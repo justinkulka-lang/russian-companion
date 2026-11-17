@@ -632,12 +632,13 @@
    "ownerId": "u9-st-rem-quantity",
    "field": "remediation body",
    "baselineSentence": "The isolated table forms below illustrate genitive singular and genitive plural noun forms.",
+   "currentSentence": "The isolated forms below illustrate genitive singular and genitive plural noun forms.",
    "disposition": "MARK",
    "sourceRecordIds": [
     "prov-ex-or-u9-quantity-15",
     "prov-ex-or-u9-quantity-16"
    ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-ex-or-u9-quantity-15, prov-ex-or-u9-quantity-16."
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-ex-or-u9-quantity-15, prov-ex-or-u9-quantity-16. T15f (owner decision D8): source framing leaves the wording; currentSentence is the marked learner wording, with the same records."
   },
   {
    "entry": "U9-E050",
@@ -3233,7 +3234,7 @@
   },
   {
    "ownerId": "u9-st-rem-quantity",
-   "sentence": "The isolated table forms below illustrate genitive singular and genitive plural noun forms.",
+   "sentence": "The isolated forms below illustrate genitive singular and genitive plural noun forms.",
    "evidence": [
     {
      "file": "catalog/sources/units-3-5/openrussian/nouns.csv",

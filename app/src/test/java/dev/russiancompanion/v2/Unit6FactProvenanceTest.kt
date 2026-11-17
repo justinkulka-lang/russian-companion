@@ -255,11 +255,8 @@ class Unit6FactProvenanceTest {
         return present && V2Validator.factWordForms(phrase).filter { '\u0301' in it }.all { it in stressForms }
     }
 
-    private fun unstressed(text: String): String {
-        val noMarkup = Regex("'{2,}|\\[\\[|\\]\\]").replace(Regex("<[^>]+>").replace(text, " "), "")
-        val stressMarks = Regex("(?<=[$cyr])'(?!')").replace(noMarkup, "\u0301").replace("\u0301", "")
-        return Regex("[\\s\\u00a0\\u2009\\u202f]+").replace(stressMarks, " ").lowercase()
-    }
+    /** T15f: the shared rule; a Wiktionary piped link reads as its display text. */
+    private fun unstressed(text: String): String = TwoPartPhraseRule.unstressed(text)
 
     private val frozenStressForms: Set<String> by lazy { frozenLines().flatMap { V2Validator.factWordForms(it) }.toSet() }
 

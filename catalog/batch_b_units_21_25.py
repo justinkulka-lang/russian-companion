@@ -251,7 +251,7 @@ OFFICIAL_CITE = _require(ADDRESS_SPAN, "отстранённо-официаль�
 
 AGO_RU = _ship(AGO_SPAN, "Он приехал в Москву неделю назад")
 AGO_EN = _ship(AGO_SPAN, "He arrived in Moscow a week ago.")
-MONTH_RU = _ship(AGO_SPAN, "Они у́летят из Владивостока через месяц.")
+MONTH_RU = _ship(AGO_SPAN, "Они улетят из Владивостока через месяц.")
 MONTH_EN = _ship(AGO_SPAN, "They will leave Vladivostok in a month.")
 AGO_BIT = _ship(AGO_SPAN, "неделю назад")
 
