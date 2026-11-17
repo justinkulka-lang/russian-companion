@@ -1,0 +1,263 @@
+Head: 19608a79c9e653cdc45c216beb57e39e23f85969. Read-only inspection; tracked files remain unchanged. No commits or pushes.
+
+Unit 24 can reach the numerical A2-23 floor with six sourced typed checks. It is not ready for implementation without resolving unsupported Russian examples and stress, described below.
+
+Source aliases are relative to catalog/sources/:
+
+Alias	Frozen file	Relevant lines
+
+V	units-3-5/wikibooks/verbs-4233876.txt	18–19, 26–33
+G	units-26-30/wikipedia/russian-grammar-1369617627.txt	55; 2335–2348
+O	units-21-25/supplemental/otritsatelnye-141256493.txt	1, 15–21, 53–55, 65–86, 97–104
+I	units-26-30/ruwiki/neopredelennoe-mestoimenie-149963314.txt	15–18, 127
+R	readyrussian/langgen3.html	210–222
+OR	units-3-5/openrussian/others.csv	4, 41, 51, 72, 451, 4992
+N	units-3-5/openrussian/nouns.csv	60
+
+
+The OpenRussian files belong to the frozen 50e210c… dataset.
+
+1. A2-24 items
+
+Fresh diagnostics report 14 exact-key teaching-exposure findings, zero label/position findings, and zero shown-cue-only findings.
+
+Every listed pair currently encounters its answer in teaching in its own session. Move the retained independent checks into a later check session; keep the teaching and guided work earlier.
+
+Required item IDs	Finding and additional concern	Fix candidate; frozen evidence
+
+u24-i-verbal-ne-1–2	Exact-key exposure	Retain the noun-predicate/Boris-coming distinctions, with independent checks after teaching. V:26–31 supplies all Russian.
+u24-i-absence-1–2	Exact-key exposure	Retain existence versus absence versus predicate negation; check later. V:26,33; OR:4,41,4992.
+u24-i-alternation-1–2	Exact-key exposure; item 2 uses an unwitnessed sentence	Item 1’s sentence is witnessed at G:55. A frozen replacement for item 2’s exact explicit-plural sentence was not found. See section 6.
+u24-i-stand-ins-1–2	Exact-key exposure; item 1 asks what is “called predicative”; item 2 has an unwitnessed phrase	Reword item 1 to ask which form means “nothing,” rather than an unspecified thing: O:19–21; OR:51. For item 2, the single form не́кого is sourced at O:55 and OR:451; a replacement check still needs a valid frozen contrast binding.
+u24-i-concord-1–2	Exact-key exposure; both also have ANSWER_IN_INSTRUCTION_SIGNAL	Ask for the predicate particle using the taught concord distinction, without repeating its answer in the check’s instruction session. O:97.
+u24-i-word-order-contrast-1–2	Exact-key exposure	Retain the two explicit speaker contexts and conduct the checks later. G:2347–2348 supplies both sentences and contextual readings.
+u24-i-placement-1–2	Exact-key exposure; both have the same key	Retain the state/experiencer distinction and check later. Remove “admitted” from the prompts. R:217–222.
+
+
+Additional diagnostics:
+
+- Five two-option advisories: u24-i-alternation-1, u24-i-word-order-contrast-1–2, u24-i-placement-1–2.
+- Two constant-key advisories: obj-u24-concord, obj-u24-placement.
+- The two-option findings do not themselves require adding unsupported third options.
+
+Current Kotlin probe:
+
+All 14 u24-i-* items:
+structure=[] feature=true
+
+That structural acceptance does not establish frozen-source attestation.
+
+2. A2-23 and typed candidates
+
+Current: 14 checked; 0 typed. Retaining every closed check and adding six required typed checks gives 20 checked; 6 typed = 30%.
+
+These six forms are already taught and have exact frozen evidence:
+
+Typed key	Frozen evidence	Exact stress result
+
+не	V:26; OR:4	PASS — unstressed in source and proposed key
+нет	V:33; OR:41	PASS — unstressed
+есть	V:33; OR:4992	PASS — unstressed
+никто́	O:16; OR:72, никто'	PASS — acute after final о
+ничто́	O:20; OR:51, ничто'	PASS — acute after final о
+не́кого	O:55; OR:451, не'кого	PASS — acute after initial е
+
+
+No new Russian teaching form is needed for these candidates. Use distinct English prompts testing the taught distinctions, place them after teaching in a separate check session, and give every key its frozen provenance.
+
+Do not use не́кому or не́кем as currently displayed. No exact stressed witness for either was found anywhere in the frozen text/CSV/HTML files. Both appear in u24-st-teach-stand-ins-3.body and u24-st-rem-stand-ins.body.
+
+3. English-only fact inventory
+
+Scope: English-only Unit 24 rows in audit/T15-n0-unmarked-russian-facts.csv, including feedback, rationales and remediation. There are 157 entries representing 126 distinct sentence texts.
+
+Recommended dispositions:
+
+CSV range¹	MARK	REWORD	REMOVE	PENDING-INTAKE	Evidence for MARK
+
+2871–2915: predicate negation	22	3	3	0	V:18–19,26–31
+2916–2951: existence/absence	16	1	3	0	V:26,28,33
+2953–2989: case/number	6	0	12	8	G:55; N:60; V:26
+2992–3027: negative/indefinite forms	7	1	3	4	O:1,15–21,55; I:15–18; OR:51,72,451
+3031–3057: concord	5	1	3	0	O:97–104
+3062–3097: contextual readings	16	3	8	0	G:2339–2348; R:211
+3101–3138: placement	18	1	9	0	R:211,217–222
+3141–3144: optional persuasion reference	2	0	2	0	G:2347–2348
+Total	92	10	43	12	PENDING-S1: 0
+
+
+¹ Only the English-only inventory entries within each range are counted.
+
+PENDING-INTAKE — exact rows
+
+- 2953, 2956, 2957, 2963, 2966, 2967, 2981, 2984: meanings or morphology tied to the unsupported singular-demonstrative/plural sentences. N:60 attests individual noun forms; it does not attest those sentences. Intake needs an actual sentence witness; a candidate page must be checked rather than assumed to contain it.
+- 3006, 3010, 3023, 3027: claims about the constructed infinitive example and its case-dependent alternatives. A frozen Wiktionary некого entry, or equivalent licensed grammar page containing the construction and paradigm, is needed before marking these claims as written. O:55 establishes the missing nominative, not the complete currently taught paradigm or example.
+
+REWORD — exact rows and replacements
+
+Rows	Replacement	Reason
+
+2876, 2899	“Compare the two sentence structures.”	The current wording says the example itself is omitted; the intended omitted element is the copula.
+2885	“Compare the affirmative and negative replies.”	Exercise commentary.
+2932	“Review the existence and absence patterns.”	Instruction, not a fact needing inventory treatment.
+3002	“Compare the meanings before choosing.”	Instruction.
+3041	“Check both parts of the sentence.”	Avoid the broad English “two negatives cancel” explanation.
+3075, 3076, 3084	“Use the context supplied with each example.”	Avoid unsupported generalizations and narration about the source.
+3118	“Compare the two complete sentences.”	Avoid extending the bounded placement example into a general interpretation rule.
+
+
+REMOVE — exact rows
+
+2875, 2904, 2912, 2920, 2939, 2948, 2955, 2958, 2960–2961, 2973–2974, 2979, 2983, 2985–2986, 2988–2989, 2994, 3016, 3025, 3033, 3049, 3057, 3064, 3072, 3082–3083, 3087, 3090, 3094, 3097, 3101–3102, 3106, 3121–3122, 3126, 3131–3132, 3136, 3141, 3144.
+
+These are repetitive assessment narration, generic mismatch statements, or explanations of English answer wording. Retain the underlying sourced Russian teaching.
+
+MARK applies to the remaining 92 entries. Remove source narration while retaining and marking the supported claim; do not mark “the frozen source says…” as learner wording. For example, row 2972 needs N:60’s case fields, not G:55 alone.
+
+4. Teaching errors and qualifications
+
+- Case/number repair introduced unsupported Russian. G:55 contains Я не ви́жу кни́ги; it does not contain Я не ви́жу книг or the demonstrative sentence. N:60 distinguishes the noun’s genitive singular, plural and accusative forms, but does not license composing replacement sentences.
+- Missing stress evidence: не́кому and не́кем need source intake or a sourced replacement. Their coverage records do not supply evidence.
+- Indefinite versus negative: O’s table contains не́кто/не́что, but these must not be taught as predicative negatives merely because of that table’s placement. I:15–18 supplies their indefinite classification.
+- Omitted copula: fix the feedback saying the example is “omitted”; V:30 explains omission of the present-tense copula.
+- Concord: keep O:97’s requirement for the predicate particle. Avoid making a universal claim about English negative combinations.
+- Placement: R:211 states an adjacency rule, but teach its witnessed pair as a bounded contrast rather than a complete rule for all Russian negation.
+- Word order: the current explicit persuasion contexts are appropriate to G:2347–2348. Preserve them. Do not import G:2344’s broad present-time claim into teaching of the past-form examples.
+- V:33’s wording calls existential есть an infinitive. The app should not import that terminology.
+
+5. A2-26 and missed-lint tables
+
+Automatic findings: 57 governance, 0 markup, 4 narration.
+
+The four narration owners are:
+
+- u24-st-teach-verbal-ne-3.body
+- u24-st-rem-verbal-ne.body
+- u24-st-teach-placement-2.body
+- u24-st-rem-placement.body
+
+The 57 governance findings comprise:
+
+Owners	Fields
+
+Verbal-ne and absence: g-…-0, i-…-1–2	Feedback; rationales [1–2]
+u24-i-alternation-1	Feedback
+Stand-ins: g-…-0, i-…-1	Feedback; rationales [1–2]
+Concord: g-…-0, i-…-1–2	Feedback; rationales [1–2]
+Word-order-contrast: g-…-0, i-…-1–2	Feedback; rationale [1]
+Placement: g-…-0, i-…-1–2	Prompt, feedback, rationale [1]
+unit-24; u24-s-orient; u24-st-orient	topicSummary; session title; step title/body
+u24-st-teach-absence-3, u24-st-rem-absence, u24-st-teach-alternation-2, u24-st-rem-alternation	Body
+
+
+All abbreviated item IDs above begin u24-.
+
+The following tables identify missed narration/commentary patterns. Some fields already receive a governance finding; that does not mean their narration was detected.
+
+(a) Source narration
+
+Owners and fields	Missed wording
+
+The feedback/rationale fields in the governance groups above	“The frozen example…”, “The frozen note…”, “The frozen source pairs…”
+u24-st-teach-absence-3.body; u24-st-rem-absence.body	“in the retained example”
+u24-st-teach-alternation-2.body; u24-st-rem-alternation.body	“the retained source”; “the repaired check”
+u24-st-teach-word-order-contrast-2.body; u24-st-rem-word-order-contrast.body	“The current source illustrates…”
+u24-st-teach-word-order-contrast-3.body; same remediation	“in the source’s destination-response context”
+u24-g-context-subject-focus.distractorRationales[1]	“the source’s destination-focus interpretation”
+
+
+(b) Commentary about exercises or assessment
+
+Owners and fields	Missed commentary
+
+All 21 original u24-g-*/u24-i-* item feedback fields, excluding u24-g-context-subject-focus	“is the reference cue”; “matches the requested meaning or structure”
+Those items’ nonempty rationale fields	Generic “differs from the meaning or structure requested…” wording
+u24-g-context-subject-focus.feedback	“introductory supplied example”; “independent … mastery”
+u24-g-context-subject-focus.distractorRationales[1]	“…reading requested here”
+Teach verbal-ne -1, -4; remediation verbal-ne	“guided choice”; “These choices recognize…”
+Teach absence -2–3; remediation absence	“The checks identify…”; “A reference cue can be shown…”
+Teach alternation -2; remediation alternation	“worked example…repaired check”; “These choices distinguish…”
+Teach stand-ins -3; remediation stand-ins	“The current checks recognize…”
+Teach concord -2; remediation concord	“The choices recognize…”; production/exception coverage commentary
+Teach word-order-contrast -1–3; remediation word-order-contrast	Questions providing contexts; checks recognizing readings; guided versus independent requirements; mastery/credit/prevention commentary
+Every u24-st-guided-{topic}-1.body and u24-st-check-{topic}.body across the seven topics	“A missed check returns to that full explanation.”
+u24-st-book-work.bookDirection; u24-st-book.bookDirection	Pending mapping/reviewer language; “not a demonstrated app check”
+u24-st-anki-direction.companionDirection; u24-st-tutor-direction.companionDirection; u24-st-cumulative-direction.companionDirection	Repeated discussion of what does or does not demonstrate ability
+u24-st-binder-direction.companionDirection	“not a score”
+
+
+Necessary learner instructions can remain. Remove the implementation, evidence and mastery commentary rather than treating every instruction as prohibited.
+
+(c) Raw table-cell markup
+
+None found in Unit 24 learner fields. No learner-facing | Дательный-style remnants were found.
+
+6. Phrases, extraction bugs and synthesis-only Russian
+
+Two-part audit: 20 distinct phrase spans; 16 PASS; 4 UNATTESTED. None of the four has missing individual-word stress evidence.
+
+Failing span	Witness	Piped-link bug?	Bold-vowel bug?	Replacement
+
+Я не ви́жу книг	None	No	No	No frozen equivalent found preserving this explicit-plural sentence.
+Я не ви́жу э́ту кни́гу	None	No	No	G:55 supplies Я не ви́жу кни́гу; using it would require redesigning the demonstrative-specific check.
+не́кого спросить	None	No	No	O:55/OR:451 supply the single form не́кого, not this construction.
+э́ту кни́гу	None	No	No	Individual forms are insufficient phrase evidence. No frozen witness found.
+
+
+A second scan resolving piped links correctly still returned no witnesses for all four.
+
+The passing spans are witnessed at V:18,29–31; G:55,2340–2341,2347–2348; O:1,97; and R:210–222. The narration fragments such as Основным правилом count among those 16 passes but should be removed from learner feedback.
+
+Bold-vowel check: no Unit 24 learner stress was identified as coming from a bold vowel inside a word. The unsupported не́кому/не́кем stresses are synthesis-backed gaps, not identified extraction artifacts.
+
+Unsupported Russian admitted through synthesis
+
+The pack is minified: owner/field and record IDs below identify locations within app/src/main/assets/content/v2-curriculum.json:1.
+
+Owner and field	Unsupported Russian	Record used
+
+u24-g-alternation-0.promptLetter	Demonstrative sentence	prov-ca-repair-24-10815
+Same owner, feedback	Same sentence and demonstrative phrase	prov-ca-u24-instruction-u24-g-alternation-0-feedback
+Same owner, rationale [1]	Demonstrative phrase	prov-ca-u24-instruction-u24-g-alternation-0-wrong-0
+u24-i-alternation-1.distractorRationales[1]	Explicit-plural sentence	prov-ca-u24-instruction-u24-i-alternation-1-wrong-0
+u24-i-alternation-2.promptLetter	Explicit-plural sentence	prov-ca-repair-24-10827
+Same owner, feedback	Same sentence	prov-ca-u24-instruction-u24-i-alternation-2-feedback
+Same owner, rationale [1]	Demonstrative phrase	prov-ca-u24-instruction-u24-i-alternation-2-wrong-0
+u24-st-teach-alternation-1.body; u24-st-rem-alternation.body	Both unsupported sentences	prov-ca-u24-instruction-alternation-teach-1-body; prov-ca-u24-instruction-alternation-rem-body
+ex-u24-alternation-0.display	Explicit-plural sentence	No owner-bound record ID; admitted by the unit-wide span set containing prov-ca-repair-24-10827/10835
+u24-i-stand-ins-2.promptLetter	Infinitive construction	prov-ca-u24-absence-participant-0
+Same owner, feedback	Same construction	prov-ca-u24-instruction-u24-i-stand-ins-2-feedback
+u24-st-teach-stand-ins-2.body; u24-st-rem-stand-ins.body	Same construction	prov-ca-u24-instruction-stand-ins-teach-2-body; prov-ca-u24-instruction-stand-ins-rem-body
+ex-u24-stand-ins-2.display	Same construction	Unit-wide coverage includes prov-ca-24-170; the example itself names the Wikipedia source, whose frozen file lacks the phrase
+
+
+The additional unsupported single forms не́кому and не́кем occur in teaching step stand-ins-3 and remediation. Coverage includes prov-ca-24-166, prov-ca-24-167, and prov-ca-u24-absence-explanation.
+
+Exact admission paths in V2Validator.kt:
+
+- Lines 5233–5264: Russian coverage accepts a match in any provenance shippedText for the unit. It does not require that matching record to be a licensed frozen-file record.
+- Lines 5673–5678, 5707–5718: content-audit synthesis accepts its identity and text/application containment in its own research note.
+- Line 5810: explicitly permits Original app text for the content-audit source.
+- Lines 3372–3395: synthesis applications qualify as STATED_APPLICATION.
+- Lines 3496–3498: that relation is returned before other relation routes.
+- Lines 2849–2855: verifiedFrozen checks identity fields and a text hash; the name does not mean filesystem attestation.
+- FrozenSourceBindingTest.kt:134,170–171 excludes original-app-text sources from licensed-source file binding.
+
+These explain why the affected checks return structure=[] feature=true. A russian-fact marker cannot use this shortcut: V2Validator.kt:5534–5539 explicitly excludes content-audit synthesis.
+
+7. Shared references
+
+Unit 24 links to ref-u2125-attribution, also linked by Units 21, 22, 23 and 25.
+
+It is an attribution/reference entry, not a frozen witness for synthesized Russian. Any edit affects all five units.
+
+8. Validator constraints
+
+- Preserve all 14 closed checks and their valid structural distinctions while moving independent work after teaching.
+- The word-order objective is guarded at V2Validator.kt:2770–2771 by V2ContentChecks; its guided context tuple is pinned at CompleteRuleContextPins.kt:80. Preserve the persuasion requirements and the distinct guided subject-focus example.
+- Replacing synthesis-backed cues requires updating their complete provenance/application bindings. Changing only displayed text will break structureValid.
+- Marked sentences containing не́кому/не́кем cannot be supported by the existing coverage records. Their exact forms need frozen evidence first.
+- Correcting the piped-link matcher would not clear Unit 24’s four phrase failures.
+- The current Russian coverage path is more permissive than the owner’s frozen-source rule. Its acceptance must not be treated as evidence that a proposed replacement is lawful.
+
+Feasibility: A2-23’s 20/30% floor is achievable with six already taught, frozen typed keys. Full Unit 24 preparation remains blocked by four unwitnessed phrase spans, two unsupported displayed stresses, and 12 PENDING-INTAKE inventory entries; PENDING-S1: 0.

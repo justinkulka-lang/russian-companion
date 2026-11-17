@@ -26,3 +26,11 @@ D6a. Add these pages to S1: Wiktionary "двое", Wikipedia (ru) "Имя чис
 D6b. During S1, search the frozen aspect pages and the D6a pages for an attested sentence pair that contrasts duration (imperfective + bare accusative) with completion within a period (perfective + за + accusative). The pair must be used verbatim to replace the three unattested Unit 23 sentences (Анна читала статью два часа / Анна прочитала статью за два часа / Борис писал письмо час). The legacy synthesis exception at V2Validator.kt:3106 doesn't satisfy the strict phrase rule. If no attested pair exists, report it; the completion check stays blocked.
 
 D6c. T15f lint widening covers source narration ("the frozen note says", "the dictionary classifies", "the source pairs"), commentary about how exercises and assessments work, and raw table-cell markup. Legitimate self-attestation, licence and attribution notices are exempt.
+
+D7 (11/16, 21:05, under the D6 standing approval). Unit 24 prep shows a systemic gap. The validator's Russian coverage path (V2Validator.kt:5233-5264), together with the content-audit synthesis routes (5673-5678, 5707-5718, 5810, 3372-3395), accepts learner-facing Russian that appears in no frozen file. That conflicts with the owner's strict phrase rule.
+
+D7a. Codex runs a read-only scan of Units 1-30. It lists every learner-facing Russian phrase or stressed form that has no frozen witness and that passes only through those routes.
+
+D7b. Code then runs a hardening task, which is an approved validator rule change. The two-part phrase audit becomes a blocking test for every unit. Its allowlist starts as exactly the D7a list, and entries may only be removed, never added. The coverage and synthesis routes must stop admitting Russian that has no frozen witness. Do this after the piped-link and bold-vowel extraction fix, so the allowlist isn't inflated by false failures.
+
+D7c. Unit 24 fixes. Rebuild the alternation check around the attested sentence Я не ви́жу кни́ги (G:55). Drop the demonstrative and explicit-plural sentences unless an attested witness turns up. Add Wiktionary "некого" to S1, to support не́кому and не́кем and the не́кого + infinitive construction. Verify each claim against the frozen text before admitting it.
