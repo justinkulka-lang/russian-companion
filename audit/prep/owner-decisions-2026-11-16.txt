@@ -16,3 +16,5 @@ D4. Unit 15: accept the gap on aspect in requests (imperatives) as directed by t
 Also approved: the Unit 20 typed-check expansion. Updating the checked-item list in catalog/content-checks.json is a data update and is allowed. The six pinned directionality tuples must be kept.
 
 Coordinator note: the phrase-matcher fix task now also covers the bold-prefix stress bug. In catalog/units_3_5_intake.py:196, the formatter reads a bold vowel inside a word as a stress mark (Unit 20, G:1383: у́летят should be улетят / улетя́т). Before T17, scan every unit for the same misreading.
+
+D5 (approved 11/16, 18:15). Add Wiktionary "чтобы" and Wiktionary "дабы" to S1, so S1 now adds six pages. Purpose: frozen support for Unit 21's same-subject infinitive rule with чтобы and its claim that дабы is bookish (Unit 21 prep, sections 3-4). Verify each claim against the frozen text before admitting it. If a claim isn't supported, report it rather than rewording it.
