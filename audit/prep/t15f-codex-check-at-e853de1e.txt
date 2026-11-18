@@ -1,0 +1,157 @@
+Verified **e853de1e7748eb94e18a1389c8b2e435188a9866** read-only. No tracked files changed, committed or pushed.
+
+CI [44300113105](https://github.com/justinkulka-lang/russian-companion/actions/runs/44300113105) passed on exactly **bdb0b1625338fb319244dd17a1bb275ede59622f**. Locally, all **13 new tests** and the **five existing Unit 6–10 phrase checks** passed.
+
+1. **Extraction fixes — FAIL overall: (a) PASS, (b) PASS, (c) FAIL.**
+
+   **Piped links:** Unit 19 and Unit 22 cases pass. Bare targets, incorrect stress and е substituted for ё fail. The regressions assert these behaviours in [TwoPartPhraseRuleTest.kt:34](/tmp/codex-t15f-check/app/src/test/java/dev/russiancompanion/v2/TwoPartPhraseRuleTest.kt:34).
+
+   **Bold vowels:** Comparing the old and new formatter across every frozen line found exactly these changes:
+
+   | Frozen file and line | Old → new |
+   |---|---|
+   | `units-26-30/wikipedia/russian-grammar-1369617627.txt:1383` | у́летят → улетят; у́шёл → ушёл |
+   | `units-26-30/wikipedia/russian-alphabet-1371795481.txt:116` | о́н → он |
+   | Same file, `:283` | я́зык → язык |
+
+   These remove accents inferred from prefix or letter emphasis. OpenRussian corroborates `улетя'т` (`verbs.csv:1177`), `ушёл` (`verbs.csv:53`), `он` (`others.csv:5`) and `язы'к` (`nouns.csv:82`). Genuine initial stress in е́здят remains, matching `verbs.csv:307`. No accents were added. **Zero occurrences of у́летят remain anywhere in the pack**, including provenance and pooled copies. Formatter: [units_3_5_intake.py:225](/tmp/codex-t15f-check/catalog/units_3_5_intake.py:225).
+
+   **Inline HTML:** The learner-phrase comparison found only **Уважаемый Иван Иванович** changing from failure to success. However, block separation is incomplete. [TwoPartPhraseRule.kt:21](/tmp/codex-t15f-check/app/src/test/java/dev/russiancompanion/v2/TwoPartPhraseRule.kt:21) omits block elements including `pre`, `header`, `main` and `aside`.
+
+   Fresh probes produced:
+
+   ```text
+   <p>Уважаемый</p><p>Иван</p>       → joined=false
+   <pre>Уважаемый</pre><pre>Иван</pre> → joined=true
+   <header>…</header><header>…</header> → joined=true
+   <main>…</main><main>…</main>       → joined=true
+   <aside>…</aside><aside>…</aside>    → joined=true
+   ```
+
+   **Needed:** preserve boundaries for all block elements and extend the regression beyond its current five-tag list.
+
+2. **Lint widening — FAIL.**
+
+   Units 1–10 have zero automatic hits, enforced by [WidenedLearnerVoiceLintTest.kt:88](/tmp/codex-t15f-check/app/src/test/java/dev/russiancompanion/v2/WidenedLearnerVoiceLintTest.kt:88). Units 11–30 are reported without blocking.
+
+   However, the exemptions are broader than legitimate notices. [V2DesignDiagnostics.kt:81](/tmp/codex-t15f-check/app/src/main/java/dev/russiancompanion/v2/curriculum/V2DesignDiagnostics.kt:81) exempts an entire sentence whenever it contains words such as **contributors**:
+
+   ```text
+   The source pairs this answer with this cue.
+     → caught
+
+   The source pairs this answer with this cue for contributors.
+     → missed
+
+   The guided choice asks which form matches and credits the contributors.
+     → missed
+   ```
+
+   The manual scan also found residual source or assessment framing. All fields below are in `app/src/main/assets/content/v2-curriculum.json:1`; paired owners contain the same wording.
+
+   | Owner(s) and field | Missed wording |
+   |---|---|
+   | `u6-st-teach-animacy-6.title` | “Compare the friend with the source chair clause” |
+   | `u6-st-teach-animacy-2.body`; `u6-st-rem-animacy.body` | “These steps ask you to recognize the supplied forms only, not to produce endings for other nouns.” |
+   | `u6-st-teach-animacy-4.body`; same remediation | “Guided practice chooses the supplied object form, without inventing a sentence or new stress.” |
+   | `u6-st-teach-animacy-5.body`; same remediation | “The independent teacher check retains this exact pair.” |
+   | `u6-st-teach-animacy-6.body`; same remediation | “The new independent check classifies that inanimate context rather than repeating the teacher answer.” |
+   | Same two owners | “This check does not establish completed action; no aspect or full-translation claim is tested.” |
+   | Same two owners | “Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.” |
+   | `u6-i-animacy-3.feedback` | “Recognize these supplied contexts; no universal all-case or completed-action claim.” |
+   | `u6-st-teach-possessive-5.body`; `u6-st-rem-possessive.body` | “…in these choices.” |
+   | `u6-i-possessive-2.distractorRationales[2]` | “…the feminine singular object row.” |
+   | `u7-st-teach-endings-6.body`; `u7-st-rem-endings.body` | “When the task shows но́вая and asks for that dictionary form, choose но́вый rather than neuter но́вое.” |
+   | `u7-st-teach-spelling-4.body`; `u7-st-rem-spelling.body` | “All the options are already correctly spelled.” |
+   | `u7-st-teach-adverb-invariance-english.body`; `u7-st-rem-adverb-invariance.body` | “…do not infer a general adverb-formation rule from these choices.” |
+   | `u7-i-manner-1.distractorRationales[2]` | “…goes beyond this check; it asks only about the pair shown.” |
+   | `u8-st-teach-availability-3.body`; `u8-st-rem-availability.body` | “These two supplied examples do not establish an unrestricted sentence-generation rule.” |
+   | `u9-st-teach-odindva-1.body`; `u9-st-rem-odindva.body` | “Guided practice uses мальчик.” |
+
+   No additional prohibited source narration, assessment commentary or raw table-cell markup was found in Unit 10. Ordinary “dictionary form” terminology and retry instructions were excluded.
+
+   **Needed:** narrow exemptions to actual notices and directions; rewrite the remaining framing as direct teaching or remove it.
+
+3. **D8 direction templates — PASS.**
+
+   Across all 30 units, each applicable direction keeps at most one neutral self-attestation sentence. No pending-reviewer or approval wording remains in those directions. The notices are tied to MA2-076, MA2-082 and A2-32.
+
+   The licensing sentence occurs only in the six batch attribution notices. Evidence: [WidenedLearnerVoiceLintTest.kt:100](/tmp/codex-t15f-check/app/src/test/java/dev/russiancompanion/v2/WidenedLearnerVoiceLintTest.kt:100), [WORK_QUEUE.md:2766](/tmp/codex-t15f-check/WORK_QUEUE.md:2766).
+
+4. **Previously listed Unit 8 and Unit 10 wording — PASS.**
+
+   The identified source-example titles, source-line instruction, genitive-row wording, exercise-coverage commentary and “son checks” wording were changed as requested. The replacements are explicitly enumerated in [apply_t15f_units_1_10.py:39](/tmp/codex-t15f-check/catalog/apply_t15f_units_1_10.py:39).
+
+   This passes the specific earlier list; the additional missed wording appears under item 2.
+
+5. **Unit 7 restored phrases — PASS.**
+
+   Each is an exact contiguous substring of its cited frozen line:
+
+   | Phrase | Witness |
+   |---|---|
+   | Анна встретила новую учительницу | `accusative-4330404.txt:79` |
+   | Я пришёл из моего старого дома | `adjectives-4292379.txt:62` |
+   | Оно́ под хоро́шими кни́гами | `adjectives-4292379.txt:82` |
+
+   All pass presence and exact-stress checks. Because each complete phrase is contiguous on one frozen line, they also satisfy D15c. Bindings: [apply_t15f_units_1_10.py:102](/tmp/codex-t15f-check/catalog/apply_t15f_units_1_10.py:102).
+
+6. **Units 6–10 automated results — PASS.**
+
+   Fresh full-validator output:
+
+   ```text
+   V2Validation(ok=true, errors=[])
+   ```
+
+   Each unit has zero A2-24 findings on required checks and zero automatic widened-lint hits.
+
+   | Unit | Checked / typed | Shown phrases passing |
+   |---|---:|---:|
+   | 6 | 23 / 8 | 13/13 |
+   | 7 | 48 / 15 | 26/26 |
+   | 8 | 28 / 9 | 5/5 |
+   | 9 | 50 / 15 | 30/30 |
+   | 10 | 32 / 10 | 23/23 |
+
+   The five existing phrase checks passed, and independent comparisons confirmed that their phrase manifests equal the extracted shown sets. Zero automatic lint hits do not resolve the manual misses in item 2.
+
+7. **Pins and hashes — FAIL only on the “wording changes only” qualification; numerical checks PASS.**
+
+   Every value in the queue’s table recomputes correctly:
+
+   | Value | Recomputed prefix |
+   |---|---|
+   | Unit 20 setting-out capability | `b157fc48` |
+   | Unit 20 prefixed-path capability | `8c781f66` |
+   | `BatchBSources.kt` | `ad55643c` |
+   | `prov-ex-u20-motion-6-ru.contentHash` | `b618d28c` |
+   | Unit 3 content / review package | `6bab7d2e` / `7a95a65d` |
+   | Units 16–20 content | `502ce558`, `7498ced5`, `3c4ae8dd`, `d7452437`, `2d112655` |
+   | Units 21–25 content | `85c0e292`, `3af10509`, `817b1d8f`, `cd335d5c`, `404a2ea4` |
+
+   Release digest recomputes to **8959aecffaa85f69e04013acefbb35cee22e7613c8df162a02bc945951f4b9b6**, matching [candidate.json:11](/tmp/codex-t15f-check/release/acceptance/candidate.json:11). All six source-guard file hashes match.
+
+   The wording-only qualification holds for Unit 3 and Units 16–19 and 21–25. **Unit 20 additionally contains the authorized у́летят → улетят correction and corresponding provenance/capability changes.** Its accounting must retain that exception.
+
+   The consolidated pin points to `420f55e1`, whose pack is byte-identical to head. Per-unit content and mapping checks remain; only the source-commit selection changed. See [Unit1ReviewPackage.kt:199](/tmp/codex-t15f-check/app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt:199).
+
+8. **Tests — FAIL on completeness of the new coverage.**
+
+   The expectation-change table is complete. No test or assertion was deleted or skipped; the changed expectations correspond to the disclosed content, digest and pin changes.
+
+   However, passing new tests do not establish the full claims:
+   
+   - The HTML test checks only five block tags, missing the failures in item 1.
+   - The lint tests do not reject the exemption-word bypass in item 2.
+   - `ContentAuditCorrectionTest` explicitly requires the surviving exercise commentary “All the options are already correctly spelled.” See [ContentAuditCorrectionTest.kt:259](/tmp/codex-t15f-check/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:259).
+
+   **Needed:** add the failing regressions and update the commentary assertion alongside its content cleanup.
+
+9. **Changed-field CSV — PASS.**
+
+   The CSV covers every learner-field difference found between `1f8777d1` and `bdb0b162`: **438 changed text values**, plus seven changed `exampleIds` fields. Three new examples combine display and note changes into aggregate rows, yielding the reported **442 rows**. No learner owner IDs were removed; no changed learner field was missing.
+
+   Evidence: `owner/prep-reports:audit/prep/t15f-changed-learner-fields.csv:1` and [WORK_QUEUE.md:2760](/tmp/codex-t15f-check/WORK_QUEUE.md:2760). Commit `e853de1e` changes only `WORK_QUEUE.md`.
+
+**Overall: FAIL.** Fix block-boundary handling, narrow lint exemptions, clean up the remaining assessment/source framing, and add regressions for those gaps. The numerical pins, hashes, CSV coverage and exact-commit CI all check out.
