@@ -1,0 +1,10 @@
+T15g prep, remainder (Codex, head e853de1e). Completes the truncated CSV rows and adds the Unit 1 recommendation.
+
+WC011,Units 6-10 companion directions,OPEN,T15g,,2026-11-18,"34d23e50 removes governance-heavy boilerplate; disposition generic binder/tutor bodies against unit-specific task requirements."
+IA008,Units 8 and 10 incomplete option fragments,FIXED,T15g,,2026-11-18,"481f749f and baa055b8 replace the reported fragments with complete bounded explanations."
+IA009,Units 6-10 feedback and lab repair routes,OPEN,T15g,,2026-11-18,"Old literal-feedback wording is absent; verify current explanations and lab remediation/reference links before closure."
+IA016,Units 8 and 10 guided-independent duplication,OPEN,T15g,,2026-11-18,"Four reported groups remain; reconcile the disposition with CC010."
+
+No further proposed rows followed IA016.
+
+Unit 1 "Qualified review is still pending." (u1-st-orient.body): remove or rewrite it. Do not exempt it, because it narrates review status and the D8 exemptions don't cover that. Keep the truthful review status in the course/status interface and in the governed review metadata. Orientation can instead give a direct instruction, e.g. "Start with the printed letters." A2-02 places the final curriculum review after block completion.
