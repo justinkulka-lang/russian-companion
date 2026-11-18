@@ -50,6 +50,31 @@ android {
     }
 }
 
+// D7b (owner decision D18c): the phrase-audit allowlist is one file, audit/d7b-phrase-allowlist.txt. It is packaged
+// as a Java resource of V2Validator's package (not an asset, string or screen), so the runtime validator reads the
+// same bytes the blocking audit test reads. Learners never see it.
+abstract class CopyPhraseAllowlist : DefaultTask() {
+    @get:InputFile abstract val allowlist: RegularFileProperty
+    @get:OutputDirectory abstract val outputDir: DirectoryProperty
+
+    @TaskAction
+    fun copy() {
+        val target = outputDir.get().asFile.resolve("dev/russiancompanion/v2/curriculum")
+        target.deleteRecursively()
+        target.mkdirs()
+        allowlist.get().asFile.copyTo(target.resolve("d7b-phrase-allowlist.txt"), overwrite = true)
+    }
+}
+
+androidComponents {
+    onVariants { variant ->
+        val copy = tasks.register<CopyPhraseAllowlist>("copy${variant.name.replaceFirstChar { it.uppercase() }}PhraseAllowlist") {
+            allowlist.set(rootProject.layout.projectDirectory.file("audit/d7b-phrase-allowlist.txt"))
+        }
+        variant.sources.resources?.addGeneratedSourceDirectory(copy, CopyPhraseAllowlist::outputDir)
+    }
+}
+
 // Robolectric loads the full curriculum and retains Android sandboxes between
 // classes. Give each worker room for those fixtures and bound sandbox retention.
 tasks.withType<Test>().configureEach {

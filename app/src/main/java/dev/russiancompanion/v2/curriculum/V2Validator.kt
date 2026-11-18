@@ -5230,8 +5230,11 @@ internal object V2Validator {
             }
         }
         val letterForms = unicodeLetterForms(pack)
+        // D7b (approved rule change): Russian coverage counts only frozen-file records (isFrozenSourceRecord) and the
+        // D7b allowlist. Content-audit and original synthesis records no longer admit Russian through their shippedText.
+        val frozenShippedByUnit = frozenShippedTextByUnit(pack)
         pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
-            val shipped = shippedByUnit.getValue(unit.number).toSet()
+            val shipped = frozenShippedByUnit[unit.number].orEmpty()
             val hosts = mutableListOf(unit.topicSummary, unit.mappingNote, unit.title)
             unit.objectives.forEach { objective ->
                 hosts += objective.title
@@ -5260,13 +5263,20 @@ internal object V2Validator {
                 CYRILLIC_REGION.findAll(host).forEach { match ->
                     val text = match.value.trim()
                     val trimmed = text.trimEnd { it == '?' || it == '!' || it == '.' || it == ',' }
-                    if (text !in shipped && trimmed !in shipped && !(unit.number <= 2 && letterFormRegion(text, letterForms))) {
+                    if (text !in shipped && trimmed !in shipped && !PhraseAllowlist.exempts(unit.number, trimmed) &&
+                        !(unit.number <= 2 && letterFormRegion(text, letterForms))
+                    ) {
                         errors += "Russian text has no admitted source record: $text"
                     }
                 }
             }
         }
     }
+
+    /** D7b: per unit, the shippedText of frozen-file records only (licensed, hash-verified, never synthesis or coverage). */
+    private fun frozenShippedTextByUnit(pack: V2CurriculumPack): Map<Int, Set<String>> =
+        pack.provenanceRecords.filter { isFrozenSourceRecord(pack, it) }.groupBy { it.unitNumber }
+            .mapValues { (_, rows) -> rows.mapTo(HashSet()) { it.shippedText } }
 
     private fun addItemHosts(pack: V2CurriculumPack, itemId: String, hosts: MutableList<String>) {
         val item = pack.item(itemId) ?: return
@@ -5300,6 +5310,7 @@ internal object V2Validator {
         val seen = mutableSetOf<String>()
         val shippedByUnit = pack.provenanceRecords.groupBy { it.unitNumber }.mapValues { (_, rows) -> rows.map { it.shippedText } }
         val shippedSetByUnit = shippedByUnit.mapValues { it.value.toSet() }
+        val frozenShippedByUnit = frozenShippedTextByUnit(pack)
         val letterForms = unicodeLetterForms(pack)
         pack.authoredEnglishRecords.forEach { record ->
             if (!seen.add(record.id)) {
@@ -5314,9 +5325,13 @@ internal object V2Validator {
             if (record.unitNumber !in 2..30) {
                 errors += "Authored English ${record.id} is outside the proposed Units 2-30 source intake"
             }
-            val shippedForUnit = shippedSetByUnit[record.unitNumber].orEmpty()
+            // D7b: Cyrillic quoted in authored English is admitted only by frozen-file records or the D7b allowlist.
+            val shippedForUnit = frozenShippedByUnit[record.unitNumber].orEmpty()
             val quoted = cyrillicRegions(record.text)
-            if (quoted.any { !admittedRegion(it, shippedForUnit) && !(record.unitNumber <= 2 && letterFormRegion(it, letterForms)) } ||
+            if (quoted.any {
+                    !admittedRegion(it, shippedForUnit) && !PhraseAllowlist.exempts(record.unitNumber, it.trimEnd { c -> c == '?' || c == '!' || c == '.' || c == ',' }) &&
+                        !(record.unitNumber <= 2 && letterFormRegion(it, letterForms))
+                } ||
                 LINGUISTIC_CLAIM.containsMatchIn(record.text) ||
                 (GRAMMAR_TERM.containsMatchIn(record.text) && '?' !in record.text)
             ) {
