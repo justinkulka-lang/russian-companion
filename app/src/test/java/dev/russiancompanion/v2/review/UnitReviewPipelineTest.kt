@@ -203,7 +203,7 @@ class UnitReviewPipelineTest {
         assertEquals(prior, pending.mappingPackageDigest)
         assertEquals(V2Validator.unitContentReviewDigest(pack, 1), pending.contentReviewDigest)
         // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
-        assertEquals("6bab7d2e2ce96eaf3df9de6de69c05d38c757059b9788e4f4f033ddf8a88d485", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("b1986b784279091d9183563d38c06aa0eacb60fa3aff196a5d2faf86f3083540", V2Validator.unitContentReviewDigest(pack, 3))
         val mutations = listOf(
             "lesson number" to facts.copy(proposedLessonNumber = 9),
             "printed page start" to facts.copy(printedPageStart = 2),

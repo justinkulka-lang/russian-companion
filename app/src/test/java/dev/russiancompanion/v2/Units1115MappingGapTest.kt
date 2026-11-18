@@ -69,7 +69,7 @@ class Units1115MappingGapTest {
         val pack = pack()
         assertEquals(
             // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
-            "6bab7d2e2ce96eaf3df9de6de69c05d38c757059b9788e4f4f033ddf8a88d485",
+            "b1986b784279091d9183563d38c06aa0eacb60fa3aff196a5d2faf86f3083540",
             V2Validator.unitContentReviewDigest(pack, 3),
         )
         val shifted = pack.copy(

@@ -511,9 +511,9 @@ class Aud44CorrectionTest {
 
     private companion object {
         val PRIOR_CONTENT_DIGESTS = mapOf(
-            16 to "502ce558a34b9c17a702bf987750167fb8f83f5e52ea78a2ec84b6e647ed1d8a",
+            16 to "17e7a6412dacd4644ddc4376bdba627fc7d9d28540ce0de69a1124b71cc878b7",
             18 to "3c4ae8dd52293871574a5968c224388e31eb8c838e61a63dc2271fdb3e79073a",
-            19 to "d74524375d589637d9e00d0ba079fc53c771599cadcd1f559bb57e8bc6e7a684",
+            19 to "fddd2ad0d2c32ba669c53effb93929f8e2a527e0b5a8e8251922756b0b1bd969",
         )
     }
 }

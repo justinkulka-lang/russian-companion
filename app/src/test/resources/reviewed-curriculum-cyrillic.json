@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "13c6d54c72d8370b42543e37bda8102f5215694f626c402dacd0350bbd304d74",
+      "sha256": "ebd140ac6b314ec4b8a1e8dc5326fc6049c1af81c1faf2b1fb87810a7f0130bc",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3412,6 +3412,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": false,
       "scope": "T15f Part A2 (owner direction 11/17/2026): the AGO_SPAN shipped-pair key spells the Unit 20 sentence as the frozen line does (russian-grammar-1369617627.txt:1383 bolds the prefix letter, not stress), so the escaped acute after the first letter of the verb is removed. The prov-ex-u20-motion-6-ru binding value, shippedText and contentHash follow. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "D7b",
+      "previousRecordedSha256": "13c6d54c72d8370b42543e37bda8102f5215694f626c402dacd0350bbd304d74",
+      "sha256": "ebd140ac6b314ec4b8a1e8dc5326fc6049c1af81c1faf2b1fb87810a7f0130bc",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "D7b (approved rule change, owner decisions D7b, D18, D19): Russian region coverage and Cyrillic quoted in authored English count only frozen-file records (isFrozenSourceRecord) and the packaged D7b phrase allowlist (PhraseAllowlist, by unit and whole words). No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

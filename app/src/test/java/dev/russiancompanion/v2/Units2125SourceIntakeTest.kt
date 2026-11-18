@@ -45,12 +45,12 @@ class Units2125SourceIntakeTest {
 
     private val preservedContentDigests = mapOf(
         // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
-        3 to "6bab7d2e2ce96eaf3df9de6de69c05d38c757059b9788e4f4f033ddf8a88d485",
-        16 to "502ce558a34b9c17a702bf987750167fb8f83f5e52ea78a2ec84b6e647ed1d8a",
-        17 to "7498ced568466bdb593389b30617350ab49a594271392f132fff4aa6f939de1b",
+        3 to "b1986b784279091d9183563d38c06aa0eacb60fa3aff196a5d2faf86f3083540",
+        16 to "17e7a6412dacd4644ddc4376bdba627fc7d9d28540ce0de69a1124b71cc878b7",
+        17 to "6b680bdaec7f726328c3eba3052143d6cd31f249a60401caef1a2e7a6236e022",
         18 to "3c4ae8dd52293871574a5968c224388e31eb8c838e61a63dc2271fdb3e79073a",
-        19 to "d74524375d589637d9e00d0ba079fc53c771599cadcd1f559bb57e8bc6e7a684",
-        20 to "2d11265511650073bde1fb826adfec573bfc32eff9206476941c6a89187a15e5",
+        19 to "fddd2ad0d2c32ba669c53effb93929f8e2a527e0b5a8e8251922756b0b1bd969",
+        20 to "c7d467ab59e13dcf9646974a92013a5d0228bc01b92cc8873740ced770e71194",
     )
 
     private val preservedMappingDigests = mapOf(

@@ -63,14 +63,14 @@ class Units610SourceIntakeTest {
     @Test
     fun earlierUnitDigestsStayPutAndLaterUnitsStayIsolated() {
         val pack = pack()
-        // T15f: the D8 direction templates change Unit 3 (was 9c2ab4f1...; T15e was e6159274...).
-        assertEquals("6bab7d2e2ce96eaf3df9de6de69c05d38c757059b9788e4f4f033ddf8a88d485", V2Validator.unitContentReviewDigest(pack, 3))
+        // D7b: frozen selection records join Unit 3 (was 6bab7d2e...; T15f 9c2ab4f1...; T15e e6159274...).
+        assertEquals("b1986b784279091d9183563d38c06aa0eacb60fa3aff196a5d2faf86f3083540", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
-        // T15f: follows the Unit 3 content-review digest above and the Units 1-30 T15f curriculum commit (was 9a3c5bfe...).
-        assertEquals("7a95a65d39e8a4f16db5eaec081dafe378595a43c4bb6a8db613bd22e61a2029", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        // D7b: follows the Unit 3 content-review digest above and the Units 1-30 D7b curriculum commit (was 7a95a65d...).
+        assertEquals("8e2ea00e1666bcd2384cd650f3162d422323f9b4e685276fd9f33b9a753184b2", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(
