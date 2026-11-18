@@ -24,7 +24,7 @@ sys.path.insert(0, str(ROOT / "catalog"))
 from curriculum_storage import loads, encode  # noqa: E402
 
 ASSET = ROOT / "app/src/main/assets/content/v2-curriculum.json"
-BASELINE_SHA256 = "ce8f85188a5cf0b95f429603ce562786d26624d394b32be199212b7087e5e308"
+BASELINE_SHA256 = "6b801cda7d03f56953757b787f43e5b60281ae20ea96473e3faae82d260e6246"
 
 REPORT_NOTICE = "Marking this done records your own report; it is not scored."
 CHECK_NOTICE = "Marking this done records your own check; it is not scored."

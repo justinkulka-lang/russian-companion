@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT / "catalog"))
 from curriculum_storage import loads, encode  # noqa: E402
 
 ASSET = ROOT / "app/src/main/assets/content/v2-curriculum.json"
-BASELINE_SHA256 = "85dfe55db82c8caadf80d70f8d94655db9262a8f627d399bfae1fafa4ee0f400"
+BASELINE_SHA256 = "24bb64f960e0df20fb04368ed0dfbea8a4b591c9c6c1157e4998472cc401db0b"
 BEFORE_COMMIT = "1bf80b92"  # the pack before T15f
 TASK = "T15f"
 

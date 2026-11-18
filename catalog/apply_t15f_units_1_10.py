@@ -235,6 +235,13 @@ def apply(pack: dict) -> dict:
                 for sentence, sources in facts[session["id"]].items():
                     rem["russianFacts"] = list(rem["russianFacts"]) + [sentence]
                     rem["russianFactSources"] = dict(rem["russianFactSources"], **{sentence: sources})
+            # The objective lists its examples in the order its remediation shows them.
+            restored = {ex_id for ex_id, objective, *_ in RESTORED}
+            for objective in unit["objectives"]:
+                if any(e in restored and next(r[1] for r in RESTORED if r[0] == e) == objective["id"] for e in rem["exampleIds"]):
+                    if not set(objective["exampleIds"]) <= set(rem["exampleIds"]):
+                        raise SystemExit(f"{objective['id']}: an objective example is missing from its remediation")
+                    objective["exampleIds"] = list(rem["exampleIds"])
     return report
 
 
