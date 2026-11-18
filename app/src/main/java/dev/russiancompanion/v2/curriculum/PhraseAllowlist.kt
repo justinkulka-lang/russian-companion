@@ -13,8 +13,6 @@ internal object PhraseAllowlist {
 
     data class Entry(val unit: Int, val ownerField: String, val text: String, val type: String)
 
-    private const val CYR = "\\u0400-\\u04FF\\u0301"
-
     val entries: List<Entry> by lazy { load() }
 
     fun resourceBytes(): ByteArray? =
@@ -34,7 +32,18 @@ internal object PhraseAllowlist {
      */
     fun exempts(unit: Int, region: String, allowlist: List<Entry> = entries): Boolean {
         if (region.isBlank()) return false
-        val word = Regex("(?<![$CYR])${Regex.escape(region)}(?![$CYR])")
-        return allowlist.any { it.unit == unit && (it.text == region || word.containsMatchIn(it.text)) }
+        return allowlist.any { it.unit == unit && (it.text == region || containsWholeWord(it.text, region)) }
     }
+
+    /** Whole-word containment: no Cyrillic letter or combining acute directly before or after the match. */
+    private fun containsWholeWord(text: String, region: String): Boolean {
+        var index = text.indexOf(region)
+        while (index >= 0) {
+            if (!wordChar(text.getOrNull(index - 1)) && !wordChar(text.getOrNull(index + region.length))) return true
+            index = text.indexOf(region, index + 1)
+        }
+        return false
+    }
+
+    private fun wordChar(c: Char?): Boolean = c != null && (c.code in 0x0400..0x04FF || c.code == 0x0301)
 }

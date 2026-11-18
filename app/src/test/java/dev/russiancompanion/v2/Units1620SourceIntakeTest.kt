@@ -149,6 +149,12 @@ class Units1620SourceIntakeTest {
                 }
             } else if (record.sourceId == "src-content-audit-research") {
                 assertContentAuditResearch(record)
+            } else if (record.itemId.startsWith("prov-d7b-") && record.transformation == "selection") {
+                // D7b selection records may cite a frozen page from another unit freeze; the segment must still be
+                // verbatim in the file that a FREEZE.json manifest binds to the recorded revision.
+                val files = frozenFilesForRevision(root, record.sourceRevision)
+                assertTrue("${record.itemId} revision ${record.sourceRevision} has no frozen file", files.isNotEmpty())
+                assertTrue(record.itemId, files.any { it.readText().contains(record.originalSourceText) })
             } else {
                 assertTrue(record.sourceRevision.startsWith("50e210c4803237779cb562bc1abcea529066031c"))
             }
@@ -465,6 +471,27 @@ class Units1620SourceIntakeTest {
 
     private fun frozenFile(root: File, relative: String): File {
         return File(File(root, "catalog/sources/units-16-20"), relative).canonicalFile
+    }
+
+    /** Every file any catalog/sources FREEZE.json binds to this oldid, resolved against its manifest's folder. */
+    private fun frozenFilesForRevision(root: File, revision: String): List<File> {
+        val out = mutableListOf<File>()
+        fun walk(element: kotlinx.serialization.json.JsonElement, base: File) {
+            when (element) {
+                is kotlinx.serialization.json.JsonObject -> {
+                    val oldid = (element["oldid"] as? kotlinx.serialization.json.JsonPrimitive)?.content
+                    val file = (element["file"] as? kotlinx.serialization.json.JsonPrimitive)?.content
+                    if (oldid == revision && file != null) out += File(base, file).canonicalFile
+                    element.values.forEach { walk(it, base) }
+                }
+                is kotlinx.serialization.json.JsonArray -> element.forEach { walk(it, base) }
+                else -> Unit
+            }
+        }
+        File(root, "catalog/sources").listFiles()!!.mapNotNull { File(it, "FREEZE.json").takeIf(File::isFile) }.forEach {
+            walk(Json.parseToJsonElement(it.readText()), it.parentFile)
+        }
+        return out.filter { it.isFile }.distinct()
     }
 
     private fun mediaWiki(text: String): Boolean {
