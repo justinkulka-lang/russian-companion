@@ -1,0 +1,273 @@
+Inspected c773acd6c04708c9d42b13819eb631cbb1a73f65. No tracked files changed; nothing committed or pushed.
+
+A frozen-only rebuild can preserve the future-main-action requirement. Besides the suggested past example, the stored Wikisource text contains примете, выслушав его: future acceptance after hearing the proposal. The blockers are the current capability bindings and validator rules, rather than missing Russian material.
+
+Frozen-source aliases
+
+Paths are relative to catalog/sources/.
+
+Alias	Frozen file	Relevant evidence
+
+R11	units-26-30/wikipedia/russian-grammar-1369617627.txt	2163–2169: verbal-adverb explanation and Пообедав, я пошёл гулять; 2181–2198: taught forms
+R13	units-3-5/openrussian/verbs.csv	105: принять, perfective, second-person plural future при́мете; 816: выслушать, perfective, “listen, hear out”; 2209: пообедать
+R14	units-26-30/wikisource/vechera-5336197.txt	47: resting/reading and standing passages; 1135–1139: proposal context and future acceptance after hearing
+R15	units-11-15/wikibooks/past-tense-4567337.txt	106: Он улыба́лся, a witness for that separate phrase—not the composed reading-and-smiling sentence
+
+
+R11/R15 use their recorded CC BY-SA routes. R13 uses the frozen OpenRussian 50e210c… inventory. R14 uses the existing work-specific public-domain route; it must not be relabelled CC BY-SA.
+
+1. A2-24 items
+
+Fresh Kotlin diagnostics report five exact-key-in-teaching findings:
+
+Item	Finding	Fix candidate
+
+u28-i-imperfective-adverb-1	Exact key in teaching	Rebuild around R14:47’s actual resting-and-reading passage; ask about overlapping actions without reproducing the answer wording in its checking session.
+u28-i-perfective-adverb-1	Exact key; answer-in-instruction signal	Use the future example at R14:1139, with the timing distinction described below.
+u28-i-perfective-adverb-2	Exact key in teaching	Use the same attested future clause to identify the shared actor, with new appropriate distractors.
+u28-i-readings-1	Exact key; answer-in-instruction signal; two-option advisory	Remove “For стоит, select…” coaching. Add a distinct witnessed alternative, such as устав писать, R14:47.
+u28-i-readings-2	Exact key; two-option advisory	Remove the explicit cue-to-key mapping. ложился на диван, R14:47, is an available third option, with a rationale distinguishing main action from preceding circumstance.
+
+
+u28-i-imperfective-adverb-2 has no automatic A2-24 finding, but its synthesized sentence still needs replacement.
+
+There are zero automatic label/position, shown-cue-only or key-in-prompt findings. All six current required checks return structure=[], feature=true; that does not establish frozen-source compliance.
+
+Keep guided and independent cues distinct. The current capability checks explicitly require that distinction.
+
+2. A2-23 and typed candidates
+
+Current result: six checked, six required, zero typed.
+
+Keeping all six closed checks requires 14 additions to reach 20. Making those additions required typed checks gives 20 checked, 14 typed—70%.
+
+Typed-key candidate	Frozen witness	Stress result / teaching
+
+думая	R11:2181	Exact unstressed form; already shown
+учась	R11:2190	Exact unstressed form; already shown
+сказав	R11:2186	Exact unstressed form; already shown
+научившись	R11:2195	Exact unstressed form; already shown
+войдя	R11:2198	Exact unstressed form; already shown
+читая	R14:47	Exact unstressed form
+устав	R14:47	Exact substring; teach its retrieval separately from the longer phrase
+устав писать	R14:47	Exact phrase; already taught
+ложился	R14:47	Exact substring; establish the standalone recall target first
+ложился на диван	R14:47	Exact phrase, including source spacing
+отдыхал	R14:47	Exact substring; establish the standalone recall target first
+отдыхал читая	R14:47	Exact phrase; already taught
+стоит	R14:47	Exact form; already taught
+сложа руки	R14:47	Exact phrase; already taught
+
+
+No acute marks should be added. All these candidates are witnessed without them.
+
+Use distinct retrieval prompts and separate checking sessions; do not place a key in its own session. The bare-form and longer-phrase items need distinct taught purposes, rather than counting an unexplained substring as another skill.
+
+Adding typed checks directly to either currently pinned timing capability would violate its exact two-independent-check constraint. A separately taught recall objective, or an approved capability redesign, is needed.
+
+3. English-only fact inventory
+
+Scope: Unit 28 feedback/remediation entries in audit/T15-n0-unmarked-russian-facts.csv.
+
+There are 78 entries overall; 46 English-only entries, representing 39 distinct sentence texts. The other 32 contain Cyrillic and are already protected by that rule.
+
+Recommended dispositions under the frozen-only rebuild:
+
+CSV physical rows, English-only entries	MARK	REWORD	REMOVE
+
+3836–3861: imperfective	11	3	2
+3863–3888: perfective	10	5	3
+3890–3911: reading passage	9	1	2
+Total	30	9	7
+
+
+MARK: support the contextual readings with R14:47/1139 and the bounded verbal-adverb explanation with R11:2163–2169. Use R13 where aspect or finite-form identification is part of the claim. Strip source narration before retaining and marking the substantive sentence.
+
+REWORD:
+
+Rows	Replacement direction
+
+3842,3847	Replace reading-and-smiling assertions with the witnessed reading-and-resting relationship.
+3861	Explain that the surrounding passage supplies the actor; do not claim the extracted clause itself has an explicit subject.
+3871–3874	Replace writing/sending/she with hearing/acceptance/the addressee. Explain that hearing precedes the prospective acceptance.
+3884	State the relative ordering in this particular future clause, rather than another absolute-time label.
+3904	Use an instruction such as “Use the forms taught here; check unfamiliar expressions before using them.”
+
+
+REMOVE: rows 3853,3854,3881,3882,3888,3897,3903—source/extraction narration, answer coaching or wording made incorrect by the replacement.
+
+Row3888 is especially important: the replacement future clause has an implied second-person subject. Its current rationale about an explicitly displayed subject must not survive.
+
+PENDING-S1/PENDING-INTAKE: zero for this bounded rebuild. S2 remains useful for fuller general teaching, but is unnecessary to supply the two checked temporal relationships.
+
+4. Teaching errors and qualifications
+
+Owner/field	Finding and correction
+
+u28-st-teach-perfective-adverb-2.body, corresponding remediation	The letter-writing/sending example has no frozen witness. Replace the complete example and its explanation.
+u28-st-teach-imperfective-adverb-1–2.body, corresponding remediation	читая письмо, он улыбался is a synthesized composition. Separate witnesses for its spans do not attest the whole sentence. Replace it with the actual R14:47 passage.
+Timing-context teaching/remediation	Remove claims about extraction, source punctuation and what the assessment demonstrates. Retain the actual contextual interpretation.
+General tense teaching	R11:2165’s “usually present” / “can only be past” terminology must not be taught as absolute sentence time. R14:1139 supplies a concrete future-main-action counterexample.
+Shared-subject teaching	In the future replacement, distinguish the person saying “I hope” from the addressee who hears and accepts. Do not attach the verbal adverb to the wrong predicate.
+Reading practice	Keep сложа руки as the witnessed expression in this episode; do not turn it into an unrestricted formation model.
+
+
+5. A2-26 lint and missed text
+
+Automatic results: 23 governance hits, zero markup hits, zero narration hits.
+
+Governance owners:
+
+- obj-u28-readings.title, u28-s-readings.title.
+- Orientation session title, step title/body, unit topic summary.
+- Both guided timing-item prompts.
+- Imperfective teaching1 body; timing-context title/body; remediation body.
+- Perfective teaching1 body; teaching3 title/body; timing-context title/body; remediation body.
+- Reading teaching1 and remediation bodies.
+- ref-ca-verbal-adverb.title/summary/detail.
+
+(a) Missed source narration
+
+Owners	Fields / wording
+
+Imperfective/perfective objectives and their session titles	“the time relationship the source states…”
+u28-st-teach-imperfective-adverb-1	body: retained examples
+u28-st-teach-perfective-adverb-1,3	body: retained forms/examples
+Both u28-st-teach-*-timing-context steps	body: retained paragraph, “The source marks…”, exact clause selection, punctuation/spacing narration
+u28-st-teach-readings-1	body: retained-reading framing
+All three corresponding remediation steps	body: repeated source framing
+
+
+Some separately receive governance hits; the narration detector reports none.
+
+(b) Missed exercise/assessment commentary
+
+Owners	Fields / issue
+
+u28-st-teach-imperfective-adverb-2	body: what these checks demonstrate
+Both timing-context teaching steps	body: compare the already-taught check, later reuse, unseen-evidence and production-mastery commentary
+u28-st-teach-perfective-adverb-2	body: naming the matching English answer
+u28-st-teach-readings-1–2	body: “choose…”, “For стоит, select…”, and explicit cue/key mappings
+Corresponding remediation steps	body: duplicated assessment commentary
+Book-work/book steps	body, bookDirection: licensing, mapping approval and demonstrated-check commentary
+Anki/binder/tutor/cumulative directions	Repeated body/companionDirection notices about demonstrated ability
+
+
+Keep short retry/navigation instructions and the single neutral self-attestation notice allowed by D8.
+
+(c) Raw table-cell markup
+
+None found in current learner-facing Unit 28 fields.
+
+6. Phrases, extraction checks and exact rebuild
+
+Corrected phrase scan:
+
+Phrases: 11
+Attested: 9
+UNATTESTED: написав письмо; она отправит его завтра
+Displayed stressed forms: 0
+FALSE-FAIL: 0
+
+Each failure appears in:
+
+- u28-st-teach-perfective-adverb-2.body
+- u28-st-rem-perfective-adverb.body
+- u28-i-perfective-adverb-1.promptLetter/feedback
+- u28-i-perfective-adverb-2.promptLetter/feedback
+
+That is 12 owner/field/text entries, affecting two required checks. Neither extraction bug explains them.
+
+Preferred frozen-only rebuild
+
+Component	Rebuild
+
+Past guided context	Keep устав писать ложился на диван, R14:47. Alternatively teach Пообедав, я пошёл гулять, R11:2169. Both supply anteriority relative to a past main action.
+Future teaching	Quote the original context and use the exact excerpt примете, выслушав его, R14:1139. R14:1135–1139 establishes the proposal and addressee.
+u28-i-perfective-adverb-1	Use that excerpt; ask which action precedes the prospective acceptance. Key: hearing precedes the future acceptance. Distractors reverse the order or treat hearing as simultaneous.
+u28-i-perfective-adverb-2	Ask who performs the hearing and prospective acceptance. Key: the same addressee. Distractors assign hearing to the speaker who hopes, or assign the two actions to different people.
+Future morphology support	R13:105 identifies примете as the perfective verb’s second-person plural future form; R13:816 identifies выслушать as perfective. Keep the quoted learner forms unstressed.
+Imperfective independent context	Replace the synthetic letter/smile sentence with the actual R14:47 resting-and-reading episode. Use a longer witnessed excerpt than the guided отдыхал читая, preserving the required guided/independent distinction.
+
+
+The future clause’s subject is understood from примете and its context. Do not retain the current distractor rationale claiming an explicit pronoun.
+
+Future requirement: it can be met with frozen material. No narrowing is necessary. Using only R11:2169 would supply a past example and would not meet it.
+
+What S2 “Деепричастие” would need to supply
+
+For a fuller general account, it should explicitly support:
+
+- relative timing rather than an absolute past/present interpretation;
+- perfective verbal adverbs with future main predicates;
+- the shared-subject relationship and relevant qualifications;
+- a verbatim example if a simpler future sentence is desired.
+
+An isolated form, headword or general definition would not witness the old letter/sending sentence. If S2 supplies no suitable example, the R14 future rebuild remains available.
+
+7. Shared references
+
+Reference	Units linking to it
+
+ref-u2630-attribution	26–30
+ref-ca-verbal-adverb	28 only
+
+
+Keep attribution in the shared notice. Clean the governance wording from the linguistic reference.
+
+8. Synthesis reliance and validator constraints
+
+Unit 28 has 451 provenance records:
+
+- 413 content-audit synthesis
+- 18 Russian-grammar records
+- 16 public-domain reading records
+- Four OpenRussian records
+- Zero current russian-fact markers
+
+Synthesis-only Russian and claims
+
+Owner/field	Text or claim	Admitting records
+
+Perfective teaching/remediation and both required cues/feedback, listed above	написав письмо; она отправит его завтра; their full composed sentence	prov-ca-28-389/390 and repeated copies; live bound sentence prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8
+Imperfective teaching1–2/remediation; both required cues/feedback	читая письмо, он улыбался	prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7; timing-rebind copy
+Perfective explanation	Future writing/sending chronology and shared writer/sender	Corrected perfective capability corpus
+Imperfective explanation	Shared reader/smiler in the composed sentence	Corrected imperfective capability corpus
+
+
+The imperfective sentence is an additional complete-sentence witness gap: its separate spans pass the existing phrase segmentation, but their combination is not frozen. R14:747 witnesses читая письмо; R15:106 witnesses Он улыба́лся. Neither witnesses the composed sentence.
+
+The admitting routes are V2Validator.kt:5233–5264, particularly5263, plus content-audit relation/identity checks at3372–3395 and5673–5678. These validate synthesis membership, not frozen attestation. New fact markers cannot rely on synthesis alone:5534–5539.
+
+Every identified rebuild constraint
+
+File:line	Constraint
+
+ContentAuditCapabilityPins.kt:13–14	Exact imperfective/perfective capability hashes and identities. The perfective pin is 7bac1b52….
+ContentAuditCapabilityChecks.kt:19–23	Changing the bound corpus without updating its legitimate admission fails identity/hash validation.
+:25–37	Current capability hosts must be matching content-audit records with the required synthesis metadata. A licensed reading record cannot simply replace one participant.
+:49–55	Named independent features must remain represented by applications bound to those hosts.
+:59–65	Applications must remain valid, stated, and explain their answers and competing options.
+:126–130	Exactly one guided and two independent timing applications; independent cues must differ from the guided cue. Adding typed checks here or reusing its cue fails.
+:133–139	Exact cue/answer/distractor tuples must match the hashed corpus.
+:142–144	Every teaching/remediation body must occur in that corpus.
+V2Validator.kt:1357–1378	A directly licensed replacement capability needs a matching source/span record attached to the correct unit/objective.
+:1409–1415, :1812–1834, :2101–2110	Direct late-unit capability admission uses an exact source-identity allowlist. R14:1139 is frozen but is not currently an admitted capability span.
+:3165–3169	The direct route demands literal “usually present” / “can only be past” wording. An appropriate new example fails this obsolete content guard.
+:1415–1417	The replacement must have a reviewable instruction/check chain.
+
+
+The public-domain provenance guard at 5831–5848 requires the existing revision, licence and attribution route; it does not restrict records to the previously selected paragraph.
+
+Fresh direct-rebinding probe:
+
+Current perfective capability => []
+
+Frozen future excerpt as replacement capability =>
+- an isolated adverbial example does not state the present-versus-past relationship
+- is not an admitted frozen source
+- has no reviewable instruction and check chain
+
+The probe confirms that an attested example alone cannot clear the existing capability machinery. Implementation needs an evidence-backed admission/binding update that preserves anteriority and shared-subject checks; it must not merely label another synthesis as frozen evidence.
+
+Feasibility: a frozen-only Unit 28 can retain the future-main-action requirement and reach 20 checked/14 typed. Pending source claims under this rebuild: zero. Completion remains blocked by capability admission/binding rules, the literal tense-wording guard, and the required A2-24/lint cleanup.
