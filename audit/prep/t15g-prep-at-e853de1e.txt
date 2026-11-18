@@ -1,0 +1,205 @@
+Read-only preparation at e853de1e7748eb94e18a1389c8b2e435188a9866. No tracked files changed, committed or pushed.
+
+1. A2-36 references
+
+There are 35 reference entries at this head. In Units 6–10, only ref-ca-cases provides grammar instruction: one agreement sentence. Unit 6 links it; Units 7–10 link attribution notices rather than substantive grammar references.
+
+The following aliases identify exact frozen files:
+
+Alias	Frozen file under catalog/sources/
+
+A	units-6-10/wikibooks/accusative-4330404.txt
+J	units-6-10/wikibooks/adjectives-4292379.txt
+G	units-6-10/wikibooks/genitive-4567338.txt
+R	units-6-10/wikibooks/numbers-4371358.txt
+N	units-3-5/wikibooks/nominative-4213267.txt
+V	units-6-10/ruwiki/narechie-152437423.txt
+D	units-6-10/wikibooks/adverbs-3197995.txt
+OA	units-6-10/openrussian/adjectives.csv
+ON	units-3-5/openrussian/nouns.csv
+OX	units-3-5/openrussian/others.csv
+
+
+These are drafts of substance, not proposed new source material. Russian quotations below are verbatim frozen text.
+
+Unit 6
+
+Topic	Substance of reference entry and support
+
+Agreeing possessives	Possessives change with the noun they modify. Explain the supplied gender, number and case forms, distinguishing informal singular from formal/plural “your.” A:111, 120–126; OA:8, 23. Quote existing table cells separately rather than composing a phrase.
+Third-person possessives	Explain the meanings of его, её, их and that these possessives do not change with the possessed noun’s gender or number. A:129. Attested examples: “Я хочу его кота” and “Я хочу его котов,” A:132–133.
+Subject and direct object	Case helps identify grammatical roles; English word order is not a sufficient guide to Russian roles. A:4–8. Contrast “Собаки ненавидят котов.” with “Коты ненавидят собак.” A:52–53. Do not copy A:6’s absolute claims about emphasis.
+Accusative of the supplied first-declension nouns	Explain the singular ending changes described in A:35, with the masculine first-declension exception illustrated by N:14 and ON:378. Avoid presenting this as a rule restricted to feminine gender.
+Masculine accusative and animacy	In the supplied singular masculine patterns, inanimate accusative matches nominative; animate accusative matches genitive. A:23–31. Retain the object-role distinction despite matching forms. Individual paradigms: ON:14, 32, 99.
+Object pronouns	Give a nominative/accusative table with object meanings, using A:89–108. For example, quote “Я” and “Меня” as separate cells from A:91; explain “I/me” as the table does.
+Direction versus location	Explain the accusative/prepositional contrast with the two prepositions discussed in A:15. Attested examples include “Я шёл в дом” and “Я жил в Лондоне.” Keep the complete examples and their meanings together.
+
+
+ref-ca-cases can be extended into a substantive accusative-and-agreement reference for Unit 6. The direction contrast could extend ref-u5-prepositional only with Unit 6 visibility for the added section; otherwise create a Unit 6 entry. Likewise, extending ref-u4-pronouns must not expose accusative instruction prematurely.
+
+Unit 7
+
+Topic	Substance of reference entry and support
+
+Adjective dictionary form	The dictionary form is masculine singular nominative. Explain the supplied alternatives rather than treating every ending as interchangeable. J:6; OA:16, 18, 109.
+Nominative adjective agreement	Adjectives agree with the noun’s gender and number. J:1, 11–14. Use “новый карандаш,” “новая машина,” “новое платье” and “эти хорошие новые студенты” from those respective lines.
+Supplied soft adjective paradigm	Show the supplied blue adjective’s feminine, neuter and plural forms and their noun agreement. J:18–21; OA:109. Do not repeat J:17’s misleading generalization about all adjectives ending in the same letters.
+Adjective spelling	Explain the seven-letter spelling rule and the unstressed-vowel rule within the supplied adjective forms. J:24, 26; OA:18. “хорошее письмо” is attested at J:26.
+Question adjective	Explain the meaning and supplied gender/number/case forms of the question adjective. OA:7, using the named decl_* columns. Do not construct a new question sentence.
+Demonstrative agreement	Explain the supplied demonstrative’s gender, number and case forms. OA:4. Distinguish the plural meaning “these” from the dictionary’s lemma gloss “this.”
+Prepositional adjective forms	Explain the supplied masculine/neuter, feminine and plural forms. J:109, 111, 113; OA:16, 18, 109. A complete witness is “Она́ в си́ней кварти́ре, не в бе́лой кварти́ре,” J:124.
+Accusative adjective agreement	Explain the feminine accusative endings and the supplied animacy contrasts. A:57–63; J:31–35. Use “Анна встретила новую учительницу.” A:79, preserving adjective–noun agreement.
+Adverb meaning and function	Adverbs describe an action; give the taught lexical meanings separately. D:1; V:3; OX:80, 108, 158, 164.
+Adverb invariance	Explain that adverbs do not decline or conjugate for gender and number, while the qualified comparison discussion remains separate. V:8, 32–36. Invariance must not be paraphrased as “comparatives cannot exist.”
+Attested adjective–adverb formation pairs	Present the two suffixal pairs actually supplied at V:44: “быстрый — быстро” and “творческий — творчески.” Explain those pairs without claiming an unrestricted conversion rule.
+
+
+A substantive adjective reference can combine the first eight topics; an adverb reference can combine the last three. ref-ca-cases can supply the shared agreement introduction, but later case sections need appropriate visibility. ref-u7-ruwiki-attribution must remain an attribution notice.
+
+Unit 8
+
+Topic	Substance of reference entry and support
+
+Nominative noun plurals	Explain the basic supplied masculine, feminine and neuter patterns, explicitly allowing exceptions. N:31–35, corroborated by the relevant sg_nom/pl_nom columns in ON.
+Seven-letter spelling rule for nouns	Explain the alternative plural ending after the seven named consonants. N:42–44; J:24. “книга” and “книги” occur together at N:44.
+Irregular plurals	Present the attested exceptions as lexical forms to learn, rather than predicting them through the regular rule. N:35–38, 63–65; ON:14, 74, 99.
+Positive existence	Explain that the positive existence construction is followed by nominative. G:49. Quote “На э́той у́лице есть францу́зы” and “В Москве́ есть ста́рые зда́ния,” G:50–51.
+
+
+Plural adjective agreement is review of Unit 7, not a newly introduced topic; link the Unit 7 adjective entry, supported by J:14, 21.
+
+Existence questions, negative existence and buying are not demonstrated Unit 8 grammar coverage merely because its book lesson includes them. That distinction belongs in the CC032 disposition.
+
+Unit 9
+
+Topic	Substance of reference entry and support
+
+Cardinal-number families and compound numbers	Provide the taught values: units, teens, tens, hundreds, thousands and larger examples. R:12–81. Complete compound witnesses include “два́дцать оди́н” and “сто оди́н,” R:73–74.
+Forms of one and two	Explain agreement of one and the masculine/neuter versus feminine forms of two, including the supplied plural-only example. R:88–90.
+Noun case after a number	Explain the basic nominative/inanimate-accusative counting construction, the final-digit patterns and the teen exception. R:86–98; G:8–18. Do not extend that rule to every sentence case.
+Supplied genitive singular/plural noun forms	Explain the specific taught forms with their nominative counterparts and counting uses. G:80–109; ON:32, 36, 51, 99. Use bounded paradigms rather than copying the source’s exception-heavy summaries as universal rules.
+Counting patterns and currency examples	Show complete examples, including “Два рубля́,” G:12, “Два́дцать пять копе́ек,” G:16, and “пять лет,” R:121. Explain which part of the complete count determines the noun pattern.
+
+
+These fit a numbers-and-counting reference plus a genitive-noun reference. Existing ref-ca-cases may link to them; its current one-sentence agreement text cannot stand in for either.
+
+Unit 10
+
+Topic	Substance of reference entry and support
+
+Possession	Explain the genitive possessor and nominative possessed thing in the simple positive construction. G:42–47. Quote “У вас есть сын?” and “Да, у меня есть сын.”
+Absence and negative existence	Explain the genitive absent thing, distinguishing it from the possessor or location. G:53–60. Quote “Нет рестора́нов” and “У меня́ нет сы́на” with meanings that add no absent response word.
+Genitive pronouns	Explain the case forms using G:132–138, and the third-person forms after prepositions using G:141–143. Keep object/genitive English meanings distinct from nominative labels.
+Genitive prepositions	Explain the meanings and governed case of the supplied prepositions. G:63–78. Complete witnesses include “Ко́фе без молока́,” G:73, and “Я из А́нглии,” G:75.
+Genitive adjectives	Explain the supplied gender/number endings with bounded paradigms. J:45–55; G:120–126; OA:16, 18. Use “Я пришёл из моего старого дома,” J:62, as a complete agreement example.
+Animate plural accusative	Explain the nominative-subject versus accusative-object contrast and its genitive-shaped plural forms. A:23, 28–29, 63. The complete women examples at A:28–29 provide the contrast.
+
+
+The Unit 9 genitive reference and Unit 8 existence reference could be extended with Unit 10-gated sections. Otherwise use separate entries. The accusative reference can gain an animate-plural section with the same visibility safeguard.
+
+For implementation, each entry also needs meaningful search terms, appropriate introduction level, source/provenance bindings and lesson/remediation deep links under MA2-069/070. Coverage records alone cannot support its claims.
+
+2. A2-28 due review
+
+I ran the current Kotlin allocation policy through Units 1–10 with fresh, correct governed attempts, current step identities and assignment-bound review completions. Each completed unit was checked against currentCompletedUnitNumbers; no eligibility or allocation rule was bypassed.
+
+Target unit	Items	Earlier objectives	Skills	Earlier-unit items	Maximum consecutive appearances ending here	Result
+
+6	8	6	5	8/8	2	PASS
+7	8	8	7	8/8	1	PASS
+8	8	8	7	8/8	2	PASS
+9	8	8	8	8/8	3	PASS
+10	8	8	8	8/8	3	PASS
+
+
+Every four-review intersection was empty. The repeat limiter excluded one candidate at Unit 6 and two at Unit 10.
+
+Evidence: allocation output, V2CumulativeReview.kt:582, CumulativeReviewA228Test.kt:56.
+
+No allocation fix is indicated. T15g needs to record this measurement. These numbers describe the exercised history; other histories can select different items, and insufficient pools correctly refuse allocation.
+
+3. Missing findings dispositions
+
+I reconciled the archived whole-curriculum ledger with the earlier IA ledger. Scope includes findings whose descriptions name Block 2 entities even when their units column omits them. Unrelated app/build findings are excluded.
+
+Ledger aliases:
+
+- F: archive/audit-history-2026-10-29:audit/gpt61-sol-high-comprehensive-2026-10-19/whole-curriculum-audit-results/2026-10-29-claude-code/FINDINGS.csv
+- I: same archive branch, audit/independent-gpt61-2026-10-12/received-results/FINDINGS.csv
+
+25 findings lack a Units 6–10 disposition. None should be closed merely because the automatic diagnostics are clean.
+
+Finding; evidence	Current Block 2 disposition needed
+
+CC008, F:9	Unit 7 manner applications have a tuple pin, but the broader binding finding needs a bounded written disposition. T15b–T15f do not close every synthesis path.
+CC010, F:11	Still needs work/disposition. All four listed Unit 8/10 duplicate groups remain identical in cue, key and option set; listed below.
+CC011, F:12	Partial: 0dfb44f4 removes position/layout questions. The two items still recognize definition wording; record what evidence that supplies or add a lawful application check.
+CC016, F:17	Previously resolved; preserved by 0dfb44f4 and baa055b8. Current teaching distinguishes phrase meaning from a whole-sentence translation. Needs a closure row.
+CC017, F:18	Open: substantive references remain missing. Section 1 supplies the implementation map.
+CC025, F:26	Open: the two demonstrative examples still say “this”; Unit 10 examples still say “genetive.”
+CC026, F:27	Partial: 0dfb44f4 removes Unit 7 position recall. Disposition the remaining definition-recognition construct rather than equating a clear A2-24 report with full application evidence.
+CC029, F:30	Partial: 0dfb44f4, 481f749f, 50f77c28, baa055b8, 34d23e50 remove extensive jargon. Residual source/assessment commentary remains, as listed in the T15f verification.
+CC030, F:31	Partial: 50f77c28 separates the Unit 9 required cues; T15b/T15c separate several spelling tuples. Other duplicated tuples remain and need individual dispositions.
+CC032, F:33	Open/partial: Unit 8 book-only coverage remains; Unit 9 genitive formation is bounded; Unit 10 preposition checks still ask for forms without presenting a preposition. Do not close this through extra reference text alone.
+CC033, F:48	Open: mappings still omit Unit 8 exercise 8/3 and Unit 10 exercise 10/1. Record locators and the applicable owner mapping decision; copy no book content.
+CC034, F:49	Rendering was fixed earlier, including ff450b72; current session, lab and cumulative UI call the selected-option rationale helper. Needs a closure row, separate from rationale quality.
+CC035, F:50	Partial: T15a hardening and 0dfb44f4 improve frozen-source fact bindings. Unit 7 capability/synthesis and final qualification scope still need explicit disposition.
+CC036, F:56	Written dispositions needed: 71 required binary checks remain: Unit 6 8, Unit 7 14, Unit 8 3, Unit 9 31, Unit 10 15. Binary checks are advisory, but that does not dispose the finding.
+CC037, F:57	Unit 7’s stale summary was corrected in 0dfb44f4. Needs a Block 2 closure row.
+CC043, F:63	Fixed earlier by 127f81b3/T07: current review copy is pack-driven. Needs a Block 2 closure row.
+CC045, F:65	Open/partial: ref-ca-cases now has direct teaching wording, but remains one sentence with identical summary/detail and an ID-only search term.
+WC002, F:70	Written scope disposition needed: Unit 9 supports recognition/recall of supplied counts. Do not claim unseen productive counting from these results; reconcile with CC032.
+WC004, F:72	Open: Unit 6 self-glosses, Unit 9 self-glossed counting examples, Unit 8 plural gloss problems and Unit 10 pronoun/absence gloss problems remain.
+WC006, F:74	Open: forward past-tense chunks remain in Units 6–10. Record the required chunk treatment or replace them lawfully. T15b–T15f source attestation does not itself establish sequencing approval.
+WC008, F:76	Written final-review disposition needed: the Unit 7 cinema/film interpretation remains a qualified-review question. Record it for the final review chain; do not invent a pre-block approval stage.
+WC011, F:79	Partial: 34d23e50 fixes governance-heavy direction templates. Binder/tutor bodies remain generic across units; disposition their relationship to the unit-specific tasks.
+IA008, I:9	The incomplete existence/possession option fragments were replaced by complete explanations in 481f749f and baa055b8. Needs a closure row.
+IA009, I:10	The old literal-feedback pattern is absent from the inspected Block 2 items. Needs written closure after checking the current explanatory feedback and lab remediation/reference routes.
+IA016, I:17	Open/partial: the four Unit 8/10 duplicate groups remain. Reconcile jointly with CC010 rather than creating contradictory dispositions.
+
+
+The four unchanged CC010/IA016 groups are:
+
+u8-g-spelling-0 = u8-i-plural-6
+u10-i-have-1 = u10-i-absence-3
+u10-g-absence-0 = u10-i-have-3
+u10-i-have-4 = u10-i-absence-4
+
+Other surviving listed tuples include:
+
+u6-i-animacy-2 = u10-i-preposition-2
+u9-g-quantity-0 = u9-g-pattern-0
+
+Examples of unresolved gloss defects are ex-or-u7-demonstrative-3, ex-or-u8-agreement-7, ex-or-u10-pronoun-13/14, ex-u6-third-0/1 and ex-u9-quantity-0/1/2/3/4/10.
+
+CC047’s request to conserve old development histories is superseded by A2-08–A2-11 and the schema-retirement work. It is not a reason to recreate historical Unit 6–10 evidence.
+
+The exact existing CSV format is:
+
+finding_id,scope,disposition,task,decided_by,date,note
+
+These are proposed rows only, not written changes. OPEN preserves unresolved or partly resolved scope:
+
+CC008,Unit 7 manner application binding,OPEN,T15g,,2026-11-18,"Current tuple pin exists; write a bounded current binding disposition without claiming all synthesis paths are closed."
+CC010,Units 8 and 10 duplicate checks,OPEN,T15g,,2026-11-18,"Four archived duplicate groups remain identical in cue key and option set; fix or disposition each group."
+CC011,Unit 7 invariance checks,OPEN,T15g,,2026-11-18,"0dfb44f4 removes position recall; definition recognition still needs an evidence-scope disposition or a lawful application check."
+CC016,Units 7 and 10 phrase gloss scope,FIXED,T15g,,2026-11-18,"Previously resolved; 0dfb44f4 and baa055b8 preserve phrase-scoped teaching rather than treating a fragment as a whole sentence."
+CC017,Units 6-10 substantive references,OPEN,T15g,,2026-11-18,"Add the A2-36 topic references with frozen provenance search terms and lesson/remediation links."
+CC025,Units 7 8 and 10 glosses and spelling,OPEN,T15g,,2026-11-18,"Demonstrative examples still say this and Unit 10 examples still contain genetive."
+CC026,Unit 7 definition-recognition construct,OPEN,T15g,,2026-11-18,"0dfb44f4 removes layout recall; record or repair the remaining bounded definition-recognition construct."
+CC029,Units 6-10 learner voice,OPEN,T15g,,2026-11-18,"T15b-T15f remove substantial jargon; residual source and assessment commentary remains in the T15f verification list."
+CC030,Units 6-10 repeated tuples,OPEN,T15g,,2026-11-18,"50f77c28 separates the Unit 9 required cues; surviving same-task tuples need individual dispositions."
+CC032,Units 8-10 curriculum scope,OPEN,T15g,,2026-11-18,"Reconcile Unit 8 book-only topics Unit 9 genitive formation and Unit 10 preposition/application coverage."
+CC033,Units 8 and 10 owned-edition locators,OPEN,T15g,,2026-11-18,"Exercise 8/3 and exercise 10/1 remain absent from mapping locator lists; record the applicable owner mapping decision."
+CC034,Units 6-10 selected wrong-option rationale rendering,FIXED,T15g,,2026-11-18,"Earlier implementation including ff450b72 renders the selected authored rationale in session lab and cumulative review; rationale quality is separate."
+CC035,Unit 7 source and provenance qualification,OPEN,T15g,,2026-11-18,"Frozen fact bindings improved; disposition the remaining capability/synthesis scope and final qualification separately."
+CC036,Units 6-10 binary required checks,OPEN,T15g,,2026-11-18,"Required binary counts are 8 14 3 31 15 respectively; justify bounded binary constructs individually."
+CC037,Unit 7 stale development summary,FIXED,T15g,,2026-11-18,"0dfb44f4 replaces the stale summary with current coverage wording."
+CC043,Units 6-10 cumulative-review copy,FIXED,T15g,,2026-11-18,"127f81b3 and T07 move current review copy into the versioned pack."
+CC045,Block 2 reference-entry hygiene,OPEN,T15g,,2026-11-18,"ref-ca-cases still needs substantive detail and meaningful search terms alongside the new topic entries."
+WC002,Unit 9 counting evidence scope,OPEN,T15g,,2026-11-18,"Record supplied-count recognition and recall accurately; reconcile unseen productive-counting coverage with CC032."
+WC004,Units 6 8 9 and 10 teaching meanings,OPEN,T15g,,2026-11-18,"Correct self-glosses plural meanings genitive-pronoun meanings and absence translations using frozen support."
+WC006,Units 6-10 forward-reference chunks,OPEN,T15g,,2026-11-18,"Attested past-tense chunks remain before Unit 11; record required chunk treatment or replace them lawfully."
+WC008,Unit 7 cinema interpretation,OPEN,T15g,,2026-11-18,"Carry the interpretation question into the final qualified review chain without creating a per-block approval stage."
+WC011,Units 6-10 companion directions,OPEN,T15
+[COORDINATOR NOTE: this delivery was truncated in the proposed CSV rows at WC011. The WC011, IA008, IA009 and IA016 rows and the Unit 1 orientation recommendation were requested separately.]

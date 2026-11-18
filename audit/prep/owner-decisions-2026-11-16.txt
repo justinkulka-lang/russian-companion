@@ -108,3 +108,12 @@ D18a. Code's validator simulation found 70 (unit, text) regions that only synthe
 D18b. Allowlist matching in the validator is by unit and text. A region is exempt when it equals an allowlisted text in the same unit, or is a whole-word substring of one. This covers "написав" (Unit 28) and "Закончив" (Unit 29), which disappear with D15a and D16b. No new allowlist lines.
 D18c. Approved build change: package audit/d7b-phrase-allowlist.txt as a non-learner resource that V2Validator loads at runtime. A test asserts that the resource and the audit file are byte-identical. The file must not be shown to learners.
 D18d. The T15f check failed on items 1(c), 2 and 8 (t15f-codex-check-at-e853de1e.txt). Fix task T15f-n1 runs after D7b: treat every block element as a boundary (pre, header, main, aside, section, article, nav, footer, blockquote, figure, table parts, dl/dt/dd, ul/ol, hr and the rest); narrow the lint exemptions so that only the notice or direction sentence itself is exempt, never a sentence just because it contains a keyword such as "contributors"; rewrite or remove the manual misses Codex found in Units 6-9; update the ContentAuditCorrectionTest assertion; add regression tests for each gap.
+
+D19 (11/18, under D6). D7b restart 2 and T15g scope.
+D19a. Under D18a, a selection record counts as "taken verbatim" when the region passes the two-part phrase rule against one frozen line: case-insensitive, ё and е kept distinct, and exact stress required only on words the learner sees with a stress mark. A form shown without stress may cite a stressed source form. originalSourceText holds the frozen line verbatim; shippedText holds the region exactly as the learner sees it. This covers Извини́ (verbs.csv:308), Садовая (adjectives.csv:936) and стою (verbs.csv:11).
+D19b. "сущ" (Unit 30, synthetic dictionary-entry POS label) has no witness. As a one-time baseline exception, add it to the allowlist (type UNATTESTED). The Unit 30 rebuild (D17) removes it. From here the allowlist only shrinks.
+D19c. T15f-n1 is merged into T15g. T15g covers the D18d fixes and the full Block 2 close-out from t15g-prep-at-e853de1e.txt:
+  - A2-36 references, using section 1's map;
+  - the recorded A2-28 measurement;
+  - the 25 findings dispositions, fixing the OPEN items that are content fixes (CC010/IA016 duplicate groups, CC025 glosses and typos, WC004 glosses, CC029 residual commentary) and writing dispositions for the rest;
+  - the Unit 1 "Qualified review is still pending." line.

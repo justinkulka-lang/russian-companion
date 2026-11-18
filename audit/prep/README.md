@@ -28,5 +28,6 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - unit-29-prep-at-c773acd6.txt: Unit 29. S1 clears the punctuation checks; register and reading are rebuilt from G:2169, G:44 and V:47. See D16. S2 is now 2 pages.
 - unit-30-prep-at-c773acd6.txt: Unit 30, plus the Units 11-30 summary table. The dictionary check is rebuilt from R14:135; see D17. Prep is complete.
 - t15f-codex-check-at-e853de1e.txt: Codex check of T15f. FAIL on block tags, lint exemptions and manual misses; fixes go to T15f-n1, see D18d.
+- t15g-prep-at-e853de1e.txt: T15g prep (A2-36 reference map, A2-28 measurements, 25 findings dispositions). TRUNCATED at the WC011 CSV row.
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
 - t15f-changed-learner-fields.csv: T15f, every changed learner field in Units 1-30 (442 rows: unit, owner, field, old, new) between 1bf80b92 and 34b714dd, for the Codex check of T15f.
