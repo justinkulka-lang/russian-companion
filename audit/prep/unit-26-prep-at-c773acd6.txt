@@ -1,0 +1,271 @@
+Inspected c773acd6c04708c9d42b13819eb631cbb1a73f65, the same CI-passed head as Unit 25. No tracked files changed; nothing committed or pushed.
+
+Unit 26 still has two real D7b phrase failures, affecting three required checks. Уважаемый Иван Иванович is a false failure caused by inline-HTML extraction. Beyond phrase attestation, several teaching claims and capability bindings still depend on synthesis.
+
+Frozen-source aliases
+
+Paths are relative to catalog/sources/.
+
+Alias	Frozen file	Relevant evidence
+
+R1	units-26-30/wikipedia/russian-grammar-1369617627.txt	54–58: definiteness and word order; 419: respectful address/capitalization; 2335–2344: shop sentences and contextual readings
+R2	units-26-30/wikibooks/various-stuff-3353858.txt	153: address abbreviations; 155–157: actual address example; 160: recipient in dative; 162–164: postcode/international-address discussion
+R3	units-26-30/ruwiki/neopredelennoe-mestoimenie-149963314.txt	130–146: indefinite-series meanings, examples and overlap
+R4	readyrussian/letter.html	62–67: letter elements; 75–77: greetings; 80: enclosure; 82: closing
+R5	units-21-25/wikibooks/names-4660786.txt	7: Василий Иванович—a possible personal-name label, not a postal-address witness
+R6	units-3-5/openrussian/nouns.csv	11630: Татарстан, including stressed headword and case forms; dataset revision 50e210c…
+
+
+R1–R5 use the recorded CC BY-SA 4.0 routes. R6 uses the inventory’s OpenRussian licence and attribution.
+
+1. A2-24 items
+
+Fresh Kotlin diagnostics report 23 exact-key-in-teaching findings, covering every required check.
+
+Required item IDs	Additional flag	Fix candidate and frozen evidence
+
+u26-i-word-order-1–2	—	Keep the contextual distinctions, replace the verbatim teaching-to-answer mapping with meaning-based choices, and put checks in a later session. R1:2335–2344.
+u26-i-vy-capital-1–2	LABEL_OR_POSITION; constant required key	Test respectful address in a specified written context, rather than asking which label describes the initial letter. R1:419.
+u26-i-address-notation-1	LABEL_OR_POSITION	Replace “first mark” with an address-component interpretation question. R2:153,157.
+u26-i-address-notation-2	—	Test the distinction between building and apartment components without reproducing the English answer in its session. R2:153,157.
+u26-i-indefinite-1–2	—	Use contextual meaning choices rather than copying the Russian technical classification from teaching. R3:130–146.
+u26-i-letter-writing-1	Fewer than three options	Retain greeting-function recognition; add a distinct English meaning distractor. R4:75–77.
+u26-i-letter-writing-2	No Cyrillic in required display	Rebuild around a witnessed Russian correspondence fragment and its function, rather than the English layout label “Body”. R4:75–82.
+u26-i-correspondence-1	LABEL_OR_POSITION; fewer than three options	Ask what the expression communicates, with three meaning choices. R4:82.
+u26-i-correspondence-2	Fewer than three options	Retain the enclosure/closing distinction; add a separately sourced greeting option from R4:75 or76.
+u26-i-postal-1	—	Use the actual recipient Борису Иванову, R2:155, with its explanation at160. See section6.
+u26-i-postal-2	—	Replace the synthetic street line with ул. Петрова, д. 14, кв. 15, R2:157.
+u26-i-postal-3	No Cyrillic in required display	Show the witnessed line 115114 г. Москва, R2:156; distinguish the postcode from the locality component.
+u26-i-postal-4	—	Use the witnessed greeting at R4:75 and the actual address example at R2:155–157. A general postal-format claim still needs evidence.
+u26-i-postal-5	No Cyrillic in required display	Show actual frozen address material instead of “the short sample”. Do not infer that every shorter address is incomplete.
+u26-i-postal-6	—	Blocked pending regional evidence, not repaired by substituting the R6 label alone.
+u26-i-postal-7	—	R2:156 supplies Moscow, but does not establish the federal-city/oblast rule. Needs postal evidence.
+u26-i-postal-8	—	R2:164 supports discussion of destination-country identification, with its international context retained.
+u26-i-postal-9	—	The post-office-box conditional claim needs postal evidence.
+u26-i-postal-10	No Cyrillic in required display	The apartment-conditional claim needs postal evidence; an English placeholder is insufficient.
+u26-i-postal-11	—	Blocked pending a supported complete-model rebuild. R2’s shorter example cannot satisfy the current capability unchanged.
+
+
+All 23 current closed checks nevertheless return structure=[], feature=true. Those results do not establish frozen-source compliance.
+
+2. A2-23 and typed candidates
+
+Current result: 23 checked, 0 typed. Keeping every closed check requires 10 typed additions: 33 checked, 10 typed = 30.30%.
+
+These forms are already shown in Unit 26:
+
+Typed-key candidate	Frozen witness	Exact stress result
+
+В магазин пошёл я.	R1:2341	Exact; retain ё
+Пошёл я в магазин.	R1:2338	Exact; retain ё
+Я пошёл в магазин.	R1:2336	Exact; retain ё
+В ко́мнату вбежа́л ма́льчик	R1:58	All three acute positions match
+Ма́льчик вбежа́л в ко́мнату	R1:58	All three acute positions match
+Здравствуйте	R4:75	Unstressed visible form; add no acute
+Уважаемый Иван Иванович	R4:76	Unstressed visible form after correct inline joining
+к настоящему письму прилагается	R4:80	Exact unstressed form
+С уважением	R4:82	Exact unstressed form
+куда-нибудь	R3:141	Exact unstressed form
+
+
+Their teaching already exists. Each needs a separate later checking session, an appropriate meaning/context prompt, and reviewed exact keys; its own session must not display its answer. No additional Russian teaching forms are necessary for these candidates.
+
+3. English-only fact inventory
+
+Scope: Unit 26 feedback/remediation entries in audit/T15-n0-unmarked-russian-facts.csv.
+
+There are 309 entries overall; 230 contain no Cyrillic, representing 181 distinct English sentence texts. The other 79 are already protected by the Cyrillic rule.
+
+Recommended dispositions, not applied:
+
+CSV physical rows, English-only entries	MARK	REWORD	REMOVE	PENDING-INTAKE
+
+3409–3447: word order	14	3	15	0
+3448–3473: capitalization	6	8	10	0
+3474–3505: address notation	11	2	10	0
+3506–3539: indefinites	4	0	2	0
+3540–3565: letter writing	8	13	1	0
+3566–3583: correspondence	2	2	2	0
+3584–3716: postal model	16	18	44	39
+Total	61	46	84	39
+
+
+MARK: cite R1:54–58,419,2335–2344; R2:153–164; R3:130–146; or R4:62–82, as appropriate. Remove source narration while retaining the supported claim. Where the inventory contains a sentence fragment, repair the complete host sentence before marking it.
+
+REWORD: remove answer-label narration and unsupported generalizations. Examples:
+
+- Rows3462–3463: replace the unfrozen “Current Gramota guidance…” and sentence-initial discussion with the bounded written-address convention actually stated at R1:419.
+- Rows3540–3547: present a problem/request sequence as an exercise instruction, not a national Russian letter-writing rule. Preserve independently sourced letter elements from R4:62–67.
+- Rows3594,3604,3654–3657: rebuild around the actual R2 recipient/model, rather than preserving claims tied to the synthetic name.
+- Rows3630–3631,3674–3679: describe only the displayed comparison; remove claims about mandatory completeness unless intake supports them.
+
+REMOVE: duplicated key fragments, repeated “The option … does not describe…” boilerplate, and assessment commentary. Preserve substantive explanations elsewhere.
+
+PENDING-INTAKE: postal-format claims at rows:
+
+3596–3597, 3615, 3617, 3625–3629, 3632, 3636–3637, 3641, 3644–3646, 3651, 3669–3670, 3672, 3681–3682, 3684, 3686–3688, 3690–3691, 3700–3701, 3703, 3705–3707, 3709–3710, 3712–3713, 3715.
+
+These 39 entries include repeated claims. They need the proposed postal/Tatarstan intake or a supported rebuild. PENDING-S1: 0 in this disposition plan.
+
+4. Teaching errors and qualifications
+
+Owner/field	Issue and correction
+
+u26-st-teach-vy-capital-3.body, corresponding remediation	“Current Gramota guidance” has no frozen Gramota file here. Re-cite and bound the teaching to R1:419, or admit the needed source.
+u26-st-teach-letter-writing-1.body, corresponding remediation	R4:71–72 contains overbroad statements about “dear” and Russian facts-first organization. Current teaching qualifies these, appropriately, but its particular reason/facts/request framework remains an application decision rather than a quoted frozen rule.
+u26-st-teach-letter-writing-2.body	Keep the greeting examples, but do not turn their English glosses into universal rules about intimacy or recipient eligibility.
+Postal teaching/remediation	References to Russian Post and UPU are bibliography inside synthesis, not frozen evidence. Do not promote them to sourced learner facts.
+Postal model	R2:155–157 uses recipient → postcode/locality → street. It does not establish the current six-component sequence or the regional/conditional rules.
+u26-st-teach-indefinite-1–3.body	Preserve the overlap qualification: R3:131 explicitly permits a -то use resembling -нибудь. Do not teach a rigid suffix-to-single-meaning rule.
+
+
+5. A2-26 lint and missed text
+
+Fresh automatic results: 47 governance hits, 0 markup hits, 0 narration hits. Two governance hits belong to the shared attribution notice; that leaves 45 outside that notice.
+
+Automatic owner groups:
+
+- u26-g-vy-capital-0, u26-i-vy-capital-1–2: prompts, feedback, rationales1–2.
+- u26-g-address-notation-0, u26-i-address-notation-1–2: prompts, rationales1–2.
+- u26-g-correspondence-0, u26-i-correspondence-1–2: prompts.
+- Orientation: session title, step title/body, unit topic summary.
+- Check-step bodies: vy-capital, address-notation, correspondence.
+- Remediation bodies: word-order, vy-capital, address-notation, indefinite, letter-writing, correspondence.
+- Teaching bodies: word-order2/4, vy-capital2, address-notation3, indefinite3, letter-writing2, correspondence1/2.
+- ref-u2630-attribution.summary/detail.
+
+The following tables identify text missed by the relevant automatic category; some fields separately receive a governance hit.
+
+(a) Source narration
+
+Owners	Fields / missed wording
+
+u26-st-teach-word-order-1–2,4, u26-st-rem-word-order	body: older literal labels, retained examples/source commentary
+u26-st-teach-vy-capital-2–3, u26-st-rem-vy-capital	body: “retained grammar note”, “Current Gramota guidance”
+u26-st-teach-address-notation-3, corresponding remediation	body: retained-example framing
+u26-g-indefinite-0, u26-i-indefinite-1–2	feedback, rationales1–2: “The source says/assigns”, “keyed phrase”
+u26-st-teach-indefinite-3, corresponding remediation	body: retained-note framing
+u26-st-teach-letter-writing-1–2, corresponding remediation	body: source contrast/retained example commentary
+u26-st-teach-correspondence-1–2, corresponding remediation	body: “retained pair”, “source-supplied pairs”
+u26-g-correspondence-0, u26-i-correspondence-1–2	feedback, rationale1: “The source pairs…”
+u26-g-vy-capital-0, u26-i-vy-capital-1–2	feedback, rationales1–2: “The frozen line…”
+u26-g-address-notation-0, u26-i-address-notation-1–2	rationales1–2: “The frozen gloss…”
+u26-postal-teach-1–2, u26-postal-remediate	body: UPU/Russian Post narration
+
+
+(b) Exercise/assessment commentary
+
+Owners	Fields / issue
+
+Word-order guided/required items	feedback, nonempty rationales: commentary about selecting an English arrangement label or changing the supplied reading
+Vy-capital teaching1–3/remediation	body: what the answer/option describes; what recognition checks demonstrate
+Address-notation teaching1–3/remediation	body: “first mark”, answer/option discussion and limits of what checks prove
+Indefinite guided/required items	feedback: “The keyed phrase…” and selection instructions mixed into explanations
+Letter-writing guided/required items	feedback, rationales: claims about the demonstrated framework and what inference the choice supports
+Correspondence teaching2/remediation	body: “When the cue is … choose …”, explicit answer mapping
+Postal guided item and required1–11	feedback, rationales: repeated requested-component/option commentary
+u26-postal-teach-2, u26-postal-remediate	body: “Other labels”, “Competing readings”, comparison/assessment explanation
+u26-st-book-work, u26-st-book	body, bookDirection: licensing, mapping/approval and assessment commentary
+u26-st-{anki,binder,tutor,cumulative}-direction	body and repeated companionDirection notices about demonstrated ability
+
+
+Keep short retry/navigation instructions and the single neutral self-attestation notice allowed by D8.
+
+(c) Raw table-cell markup
+
+None found in Unit 26 learner-facing fields.
+
+6. Phrases, extraction bugs and postal rebuild
+
+Corrected scan output:
+
+PHRASES 16
+UNATTESTED: Анна Петрова; Республика Татарстан
+STRESSED FORMS 4
+MISSING STRESS: none
+
+That is 14 passing phrases, two real failures, plus one identified false-failure case that passes after correct extraction.
+
+Text	Owners/fields	Current admitting record
+
+Анна Петрова	u26-postal-teach-1.body, -teach-2.body, -remediate.body; ex-u26-postal-1.display; u26-i-postal-1.promptLetter, -11.promptLetter	prov-ca-u26-postal-coverage-20; full model -90
+Республика Татарстан	Same teaching/remediation/example fields; u26-i-postal-6.promptLetter, -11.promptLetter	prov-ca-u26-postal-coverage-50; full model -90
+Уважаемый Иван Иванович	u26-st-teach-letter-writing-2.body, u26-st-rem-letter-writing.body, ex-u26-letter-writing-1.display	prov-ex-u26-letter-writing-1-ru; genuine R4:76 witness
+
+
+The real failures produce 12 owner/field/text entries and occur in three required checks: postal1,6,11.
+
+An additional issue outside the phrase/stressed-single-form totals is Садовая, an unstressed single word without a frozen witness. Replace the whole street line with R2:157 rather than retaining it.
+
+Exact rebuild plan
+
+Case	Frozen-material rebuild	What S2 must supply
+
+Анна Петрова	Prefer Борису Иванову, R2:155, because R2:160 explicitly identifies its recipient/dative function. Василий Иванович, R5:7, is a lawful label candidate, but that line alone does not establish postal use or supply a dative version. Update teaching, example, check1 and complete-model copies together.	“Почтовый адрес” must support the recipient’s role and the chosen model’s organization. If a different Russian recipient form is wanted, it needs its own verbatim witness.
+Республика Татарстан	R6 supplies Татарстан as a label candidate. It does not establish republic status, Kazan’s association with it, or its address-line role. Do not merely change the string and retain the old explanation.	“Татарстан” must supply the exact desired Russian name and the relevant status/locality relationship. “Почтовый адрес” must supply when/how the regional component applies.
+Уважаемый Иван Иванович	Keep the learner text. Repair extraction and add a regression; use existing R4:76 provenance.	Nothing. This is already witnessed.
+
+
+S2 also needs to support any retained complete-format, postcode, federal-city, apartment and post-office-box claims. Neither proposed page should be assumed to contain those claims before inspection.
+
+If S2 supplies nothing
+
+- u26-i-postal-1: can become a sourced recipient-role check using Борису Иванову, R2:155,160, with premises/locality alternatives grounded in153,156–157.
+- u26-i-postal-6: remains blocked as REGIONAL_UNIT_AS_APPLICABLE. Bare Татарстан recognition would change the requirement.
+- u26-i-postal-11: remains blocked as COMPLETE_GOVERNED_ADDRESS. R2’s three-line example can support a narrower example-order exercise, but cannot silently replace the current required region/country capability.
+
+Third extraction bug: confirmed. R4:76 contains:
+
+<span ...> Иван Иван</span><span ...>ов</span><span ...>ич</span>
+
+Replacing every tag with a space produces an artificial split inside Иванович. The matcher must concatenate adjacent inline text nodes while retaining actual whitespace and block boundaries.
+
+At this head, Unit6FactProvenanceTest.kt:258–261 replaces HTML tags with spaces. BatchARemainingSources.kt:171–180 already strips inline tags without inserting spaces. The phrase matcher needs equivalent handling and a regression for this line. Neither piped-link handling nor bold-vowel stress explains Unit 26’s two real failures. No displayed acute was found to depend on bold formatting.
+
+7. Shared references
+
+Unit 26 links only to ref-u2630-attribution, shared with Units27–30. Keep licence/attribution information there; do not use that notice as provenance for substantive claims.
+
+8. Synthesis reliance and validator constraints
+
+Unit 26 has 398 provenance records:
+
+Route	Records
+
+Content-audit synthesis	230
+Original research synthesis	98
+Frozen-source routes	70
+
+
+There are zero current russian-fact markers in Unit 26.
+
+Synthesis-admitted Russian
+
+Owner/field	Russian admitted through synthesis	Record	Validator route
+
+Postal owners listed in section6	Анна Петрова	prov-ca-u26-postal-coverage-20, full-model -90	V2Validator.kt:5233–5264, particularly5263; synthesis identity5673–5678
+Postal owners listed in section6	Республика Татарстан	…-50, full-model -90	Same
+Postal teaching/remediation, u26-i-postal-2.promptLetter, complete-model copies	ул. Садовая, д. 12, кв. 4	…-26, full-model -90	Same; Садовая itself remains unwitnessed
+
+
+Claims also rely on synthesis—not just phrases:
+
+- Postal capability cap-obj-u26-postal-address uses ca-corrected-capability:cap-obj-u26-postal-address, pinned in ContentAuditCapabilityPins.kt:8.
+- Its recipient, regional and complete-order answers use records …-22, …-52, …-92.
+- The 98 legacy original records use phase3:postal-address, defined in Phase3Sources.kt:23–42.
+- Word-order and letter-writing capability bindings are also content-audit synthesis (ContentAuditCapabilityPins.kt:9–10). R1 supports the principal contextual word-order claims, and R4 supports greeting/letter-part facts, but those bindings are not themselves frozen evidence.
+- The Gramota claim is carried by prov-ca-u26-written-vy-capital-6 and remediation coverage -10; no frozen Gramota source was found.
+
+V2Validator.kt:3372–3395 admits content-audit application relations; membership in synthetic shippedText then satisfies the Russian check at5263. These routes do not prove frozen attestation. New fact markers cannot rely on them alone: isFrozenSourceRecord,5534–5539.
+
+The postal rebuild faces explicit constraints:
+
+- 1457–1460: incomplete address organization cannot clear the capability.
+- 2537–2573: requires one complete-model check, a six-digit code, and conditional post-office-box/federal-city/apartment checks.
+- 2576–2585: requires the answer order recipient → premises → locality → region → country → postcode.
+- 1601–1605,1915: letter fragments, correspondence and address marks alone cannot substitute.
+- Aud57CorrectionTest.kt:32–51 also pins the corrected capability and complete-check expectations.
+
+Those requirements must be resolved explicitly if frozen intake cannot support them.
+
+Feasibility: A2-23 is numerically achievable with frozen material—33 checked, 10 typed, 30.30%. Full Unit 26 completion remains blocked by postal evidence/capability requirements, especially checks6 and11. Pending: 39 English-only inventory entries, all PENDING-INTAKE; two real D7b phrase failures remain.
