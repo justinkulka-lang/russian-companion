@@ -1,0 +1,328 @@
+Inspected c773acd6c04708c9d42b13819eb631cbb1a73f65. No tracked files changed; nothing committed or pushed.
+
+All four punctuation sentences are present intact in their cached source spans. S1 freezing the approved revisions should supply their witnesses. The Anna reading/register material needs rebuilding; existing frozen material supplies replacements.
+
+Counting clarification: the current prep-branch allowlist contains 99 Unit29 lines: 72 UNATTESTED + 27 COMPOSED, covering 22 distinct texts. The two groups are 65 punctuation entries and 34 reading/register entries.
+
+Frozen-source aliases
+
+Paths are relative to catalog/sources/.
+
+Alias	Source
+
+G	units-26-30/wikipedia/russian-grammar-1369617627.txt
+P	units-26-30/ruwiki/prichastie-153078996.txt
+V	units-26-30/wikisource/vechera-5336197.txt
+N	units-3-5/wikibooks/nominative-4213267.txt
+U-O	Unfrozen Обособление, oldid144053197; cached native records
+U-B	Unfrozen Больтраффио, oldid149826784; cached native records
+
+
+G/P/N use their recorded CC BY-SA routes. V uses the existing public-domain route. U-O/U-B require S1’s actual frozen files, verified licence, attribution and hashes.
+
+1. A2-24 items
+
+Fresh Kotlin diagnostics: 17 exact-key-in-teaching findings, four label/position findings, and one constant-key signal.
+
+Items	Findings and fix
+
+u29-i-active-1–2	Exact-key, label/position; both keys are “in the present”. Replace source-label recall with interpretation of the attested examples at G:1725 and1582. Teach their sentence context first.
+u29-i-bookish-note-1–2	Exact-key and label/position. Test the construction/meaning distinction at G:2169, rather than where an English label appears.
+u29-i-punctuation-1	Exact-key exposure. Keep P:98’s example; remove answer-selection coaching and separate checking from teaching.
+u29-i-punctuation-after/cause/pronoun/terminal	Exact-key exposure. Preserve the contextual distinctions; S1 supplies the expected Russian witnesses.
+u29-i-reading-2–3	Exact-key exposure plus unsupported passage. Rebuild as section6 describes.
+u29-i-register-1–2,5	Exact-key exposure. Rebuild the pair from G:2169; the policy-format check5 also needs attention.
+u29-i-short-agreement-f/n/pl	Exact-key exposure. Retain sourced forms and teach agreement, but remove verbatim cue-to-answer coaching from the checking session.
+
+
+Additional signals:
+
+- Two-option advisories: u29-i-adjective-function-a/p.
+- No Cyrillic in required display: u29-i-register-4–5.
+- Teaching/remediation transfer signals: u29-i-register-4.
+
+2. A2-23 and typed candidates
+
+Current result: 24 checked, 24 required, zero typed.
+
+Keeping all current closed checks requires 11 typed additions: 35 checked, 11 typed = 31.43%.
+
+Key	Frozen witness	Exact stress result
+
+чита́вшая	G:1722	Exact acute
+чита́ющая	G:1725	Exact acute
+живу́щие	G:1582	Exact acute
+но́вый	G:249	Exact acute
+нов	G:249	Exact unstressed form
+нова́	G:249	Exact acute
+но́во	G:249	Exact acute
+новы́	G:249	Exact acute
+беж	G:249	Exact unstressed form
+новая книга	N:73	Exact unstressed phrase
+новое письмо	N:74	Exact unstressed phrase
+
+
+These are already taught. Use distinct recall prompts and later checking sessions that do not display their keys. Typed responses assess form recall; stress remains optional under the current scorer.
+
+Adding them to pinned objectives requires corresponding objective/check-chain updates; they cannot simply be appended while leaving exact pins unchanged.
+
+3. English-only fact inventory
+
+Scope: Unit29 feedback/remediation entries in audit/T15-n0-unmarked-russian-facts.csv.
+
+There are 259 entries overall; 186 English-only entries, representing 141 distinct sentence texts. The remaining 73 contain Cyrillic.
+
+Recommended dispositions:
+
+CSV physical rows, English-only entries	MARK	REWORD	REMOVE	PENDING-S1
+
+3913–3935: active participles	10	4	4	0
+3937–4024: adjective distinctions	49	1	14	0
+4025–4044: bookish note	14	1	3	0
+4051–4107: punctuation	30	0	4	1
+4108–4136: register applications	0	13	13	0
+4137–4157: reading applications	0	9	10	0
+4159–4166: adjective meanings	6	0	0	0
+Total	109	28	48	1
+
+
+- MARK: use G:249,296–298,1582,1722–1725,2169; N:27–28,72–76; P:94,97–98. Remove source narration while retaining the supported claim.
+- REWORD: replace Anna/post-office assertions with the new passage’s actual events; replace label-selection commentary with direct explanations or instructions.
+- REMOVE: repeated key fragments, “Admitted/Rejected reading” boilerplate and assessment commentary.
+- PENDING-S1: row4086—the distinction between the internal list comma and the modifier boundary in the Boltraffio sentence. Its cached witness is U-B, not a current frozen file.
+
+The one English-only pending entry is separate from the 20 native provenance records awaiting the two-page freeze.
+
+4. Teaching errors and qualifications
+
+Owner/field	Finding
+
+u29-st-teach-active-2.body, remediation	Explicit “For … select …” mappings teach answer labels. Replace with the action/tense distinction in complete examples.
+Active teaching	Preserve the distinction between participial tense and the tense/actor of an otherwise unspecified sentence.
+Short-adjective teaching	Preserve modern-use qualifications. G:249 supports predicative/nominative short forms; G:296–298 warns against a universal truncation or stress recipe.
+u29-register-teach-1–2.body, remediation	The Anna pair and passive letter/table sentence lack frozen witnesses. Replace all corresponding examples and explanations.
+u29-reading-teach-1–2.body, remediation	Entirely dependent on the invented letter/post-office episode. Its chronology and locations cannot survive the passage replacement.
+Punctuation teaching3	Correctly distinguishes the comma inside the names list from the modifier boundary. S1 must supply the actual sentence before this becomes frozen-backed teaching.
+
+
+The register replacement is the bounded comparison actually supplied at G:2169. Do not infer that every verbal adverb is bookish in every context or that appearing in writing establishes register.
+
+5. A2-26 lint and missed text
+
+Automatic results: 76 governance hits, two narration hits, zero markup hits.
+
+The narration hits are:
+
+- u29-st-teach-short-adjective-1.body
+- u29-st-rem-short-adjective.body
+
+(a) Source narration missed by the narration detector
+
+Owners	Fields / patterns
+
+Active guided/required items	Prompts, feedback and rationales: “frozen line”, “written on the line”, source labels
+Bookish-note guided/required items	Prompts, feedback and rationales: source-given speech labels and gloss locations
+u29-g-punctuation-0, u29-i-punctuation-1–2	Feedback/rationales: “The source says/assigns/reserves…”
+Active, adjective and bookish teaching/remediation	body: retained examples, source-comparison narration
+u29-st-teach-punctuation-3, remediation	body: retained-rule narration
+u29-i-punctuation-cause.feedback, ex-u29-punctuation-context-cause.note	“The retained row explicitly…”
+Register/reading items	Feedback: “Admitted reading…”
+
+
+Some separately receive governance hits.
+
+(b) Exercise/assessment commentary
+
+Owners	Fields / issue
+
+Active teaching2/remediation	Label-selection and reversal-instruction discussion
+Short-agreement items	Feedback: commentary about applying a paradigm without inventing a sentence
+Short-adjective teaching/remediation	Limits of what the exercises assess
+Bookish-note teaching/remediation	Label-versus-gloss coaching
+Punctuation feedback	Repeated “The answer is…” statements
+Register teaching2/remediation	Recognizing an opening word versus judging unfamiliar style
+Reading teaching2/remediation	What the check or separate register objective can answer
+Book/companion directions	Repeated licensing, mapping-approval and demonstrated-ability commentary
+
+
+Keep short operating instructions and the single neutral self-attestation notice allowed by D8.
+
+(c) Raw table-cell markup
+
+None found in current learner-facing Unit29 fields.
+
+6. The two allowlist groups
+
+Group A: punctuation checks
+
+Cached original source text, not merely shippedText, contains each complete sentence on one line after proper wiki rendering.
+
+Check	Displayed sentence	Cached witness	Expected result after S1
+
+u29-i-punctuation-after	Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком	prov-u29-punctuation-native-after-ru, U-O, cached line2	PASS
+u29-i-punctuation-cause	Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол	…-native-cause-ru, U-O, cached line2; includes “оттенок причины”	PASS
+u29-i-punctuation-pronoun	Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.	…-native-pronoun-ru, U-B, cached line1	PASS
+u29-i-punctuation-terminal	Вдали виднеется маяк, стоящий у моря	…-native-terminal-ru, U-O, cached line1	PASS
+
+
+Probe output:
+
+after:    full sentence match=True; revision=144053197
+cause:    full sentence match=True; revision=144053197
+pronoun:  full sentence match=True; revision=149826784
+terminal: full sentence match=True; revision=144053197
+
+Cached source hashes begin respectively:
+
+a2c8e66f…, 60ab6e0a…, 04798a91…, 875206a0….
+
+None should still fail for sentence composition once those exact source lines are frozen. S1 must confirm the downloaded revisions actually contain the cached spans; the U-pin itself is not frozen evidence.
+
+Fallbacks, if that confirmation fails:
+
+- After: P:97, Программа, написанная в спешке, выполнила недопустимую операцию. Tests a postposed modifier bounded by two commas before the predicate continues.
+- Pronoun: V:751, окруженная в нем поклонниками, она полюбит которого-нибудь из них. Tests separation of a preposed modifier attached to a personal pronoun.
+- Cause: NONE identified for the same causal distinction.
+- Terminal: NONE identified for the same terminal-modifier distinction.
+
+A pronoun example must not substitute for the independent causal exception.
+
+Group B: register and reading
+
+Register pair—D11c
+
+Use the two exact constructions already frozen and already introduced in Unit29:
+
+Пообедав, я пошёл гулять
+Я пообедал и пошёл гулять
+
+Both are at G:2169, with the source’s bookish/colloquial comparison.
+
+Item	Rebuild
+
+u29-g-register-1	Use Пообедав, an exact substring, for guided recognition of the verbal-adverb opening.
+u29-i-register-1	Use the full first construction; ask which expression supplies the bookish verbal-adverb version of these events.
+u29-i-register-2	Use the coordinated finite construction; test its contrasting expression of the same event order.
+u29-i-register-3	Replace Написанное письмо лежит на столе. with письмо написано Иваном, G:44. Test passive construction versus verbal adverb, not table location.
+u29-i-register-4–5	Their current English-only policy format remains problematic. Do not silently delete their required rejection features; the capability redesign must resolve them explicitly.
+
+
+Exact reading rebuild
+
+Use two separate excerpts, each contiguous in V:47. Do not join them into a new Russian sentence.
+
+Actor excerpt:
+
+Павел Сергеич Вязовский
+
+Routine excerpt:
+
+сидел за рабочим столом и писал, устав писать ложился на диван и отдыхал читая, потом опять садился писать
+
+English framing can explain that the same paragraph names the actor and describes this routine.
+
+Item	New comprehension question	Key	Distractor distinctions
+
+Guided reading	Who performs the quoted routine?	The man named in the paragraph	Not the housekeeper; not different unrelated actors
+u29-i-reading-1	What happens before he lies down?	He grows tired of writing	Reverse the order; substitute reading
+u29-i-reading-2	Which activities happen together during his rest?	Resting and reading	Writing while resting; reading before the rest only
+u29-i-reading-3	What does he resume afterward?	Writing	Continued rest; another activity absent from the excerpt
+
+
+Use distinct contiguous cue excerpts for those three checks, with the complete passage available as context. Teach the meaning first, then check it in a later session.
+
+Replace both reading teaching cards, remediation, guided/required items, examples, feedback and provenance together. Retire the old finishing-before-departure / post-office / sending-letter facts.
+
+V:47 is already used in Unit28. This is further reading of familiar material, not unseen reading.
+
+D15c and extraction results
+
+At this head:
+
+- Phrase scan: 33 distinct phrases; 16 unattested.
+- D15c adds six distinct complete sequences at 27 locations.
+- All seven displayed stressed forms have exact frozen stress evidence.
+- No Unit29 failure is explained by the three extraction bugs.
+- After S1, the nine punctuation fragments and four complete punctuation sequences should clear.
+- The seven Anna/register/reading fragments and two complete sequences require the rebuild.
+
+7. Shared references
+
+Only ref-u2630-attribution, shared with Units26–30. Preserve its attribution function; do not treat it as evidence for the synthesized applications.
+
+8. Synthesis reliance and blocking constraints
+
+Unit29 has 418 provenance records:
+
+Route	Records
+
+Content-audit synthesis	246
+Original synthesis	79
+Currently frozen licensed routes	73
+U-O/U-B awaiting freeze	20
+
+
+There are zero current russian-fact markers.
+
+Synthesis-backed Russian	Current record
+
+Закончив письмо, Анна пошла на почту.	prov-obj-u29-register-4
+Анна закончила письмо и пошла на почту.	prov-obj-u29-register-6
+Написанное письмо лежит на столе.	prov-obj-u29-register-23
+Закончив письмо, Анна пошла на почту и отправила его.	prov-obj-u29-reading-3
+
+
+These appear in the corresponding examples, teaching/remediation and item cues. Their action, chronology and register claims also rely on synthesis.
+
+Russian membership is admitted through V2Validator.kt:5233–5264; original-synthesis validation uses5738–5758. Membership in those records is not a frozen witness. New markers require the frozen-source route at5534–5539.
+
+Constraints affecting S1/punctuation
+
+File:line	Constraint
+
+FrozenSourceBindingTest.kt:40–67	Exact 24-record unfrozen allowlist; the test asserts those records remain unbound. S1 must remove the 20 newly bound Unit29 records from that exception and update the exact counts.
+V2ContentChecks.kt:68–104,128–138	Exact native sources, objective/check lists, prompts/features and source identities.
+V2Validator.kt:2239–2244,2785–2786	Punctuation capability requires that native application chain.
+CompleteRuleContextPins.kt:68–71,99–145	Four punctuation application tuples are pinned. Changing cues/answers/options requires a legitimate pin update.
+
+
+Freezing unchanged native spans should preserve their existing span hashes. It does not require replacing the four sentences.
+
+Every identified reading/register rebuild blocker
+
+File:line	Constraint
+
+V2Validator.kt:1117–1122	Both capabilities remain required; dropping one does not complete the unit.
+Phase3Sources.kt:70–97	Exact original-synthesis identities and named feature sets. Reading explicitly requires post-office and letter-sending features.
+V2Validator.kt:1329–1331	A new licensed source identity fails the current Phase3 admission requirement.
+:1357–1378	Replacement source/span records must match the capability and its unit/objective.
+:1409–1417, :1812–1834, :2101–2110	Late-unit source admission and reviewable chain checks.
+:1931	Direct bookish-register route expressly rejects the adverbial bookish note.
+:1957–1960,2035	Direct bookish-reading admission set is empty.
+:1639–1665	Original application identity/binding and all applications must match the old synthesis span.
+OriginalApplicationTuplePins.kt:7,16–24	Reading application tuples have an additional immutable hash.
+V2Validator.kt:1684–1689	Named independent features and stated-application relations must be preserved or legitimately replaced—not merely relabelled.
+:1694–1714	Answer-specific feedback, competing-option explanations and remediation remain required.
+:1716–1724	Guided/independent prompts, cues and answers must remain distinct.
+:1726–1732	Label/source-layout recall cannot substitute for the application.
+Aud57CorrectionTest.kt:55–56	Tests currently pin the two original capability hashes.
+
+
+In particular, V:47 needs new reading features reflecting its actual events, not retained post-office feature names.
+
+Fresh direct-rebinding probes:
+
+Current register capability => []
+Current reading capability  => []
+
+G-based register replacement =>
+  no independent bookish-register admission
+  not an admitted frozen source
+  adverbial bookish note does not clear bookish-register
+  no reviewable instruction and check chain
+
+V-based reading replacement =>
+  no independent bookish-reading admission
+  no reviewable instruction and check chain
+
+Feasibility: Unit29 can reach A2-23 using frozen material: 35 checked, 11 typed while retaining the current closed-check count. S1 is expected to clear all four punctuation sentences. Reading/register need no S2 witness, but require evidence-backed capability/feature rebinding, resolution of register4–5, and A2-24/lint cleanup. PENDING-S1: one English-only inventory entry, plus the 20 native records awaiting the two-page freeze.
