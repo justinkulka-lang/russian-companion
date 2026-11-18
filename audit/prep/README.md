@@ -19,10 +19,11 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - scan-units-1-30-part1-at-1f8777d1.txt: Units 1-30 no-witness Russian scan, Part 1 (Units 1-15). No lexical failures; only alphabet lists, which D9 exempts.
 - scan-units-1-30-part2-at-1f8777d1.txt: Units 1-30 scan, Part 2 (16-30), with the full accounting and the D7b allowlist. The remainder is in scan-units-1-30-part2-remainder.txt. 41 real failures, 28 required checks. See D10.
 - scan-units-1-30-part2-remainder.txt: the rest of the Part 2 allowlist (Units 28-30) and the section 4 intake pages.
-- d7b-allowlist.txt: the complete D7b blocking-audit allowlist, 183 lines (unit | owner.field | text | type).
+- d7b-allowlist.txt: the complete D7b blocking-audit allowlist, 227 lines (183 from the scan plus 44 COMPOSED from the D15c rescan) (unit | owner.field | text | type).
 - unit-25-prep-at-c773acd6.txt: Unit 25. No Russian witness failures; 23 checked / 7 typed is feasible. The name-form policy check depends on synthesis; see D12.
 - unit-26-prep-at-c773acd6.txt: Unit 26. A third extraction bug (inline HTML spans). The postal capability is synthesis-only; see D13.
 - unit-27-prep-at-c773acd6.txt: Unit 27. Rebuild from frozen sources only (Ivan/book). The stress and comprehension capabilities get rebound; see D14. S2 is reduced to 3 pages.
 - unit-28-prep-at-c773acd6.txt: Unit 28. Frozen-only rebuild from Gogol (R14) keeps the future-main-action check. Exposes the composed-sentence audit gap; see D15.
+- rescan-d15c-composed-at-c773acd6.txt: D15c sentence-level rescan. 44 new COMPOSED entries, all in Units 27-29; Units 1-26 and 30 are clean.
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
 - t15f-changed-learner-fields.csv: T15f, every changed learner field in Units 1-30 (442 rows: unit, owner, field, old, new) between 1bf80b92 and 34b714dd, for the Codex check of T15f.

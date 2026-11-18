@@ -181,3 +181,47 @@
 30 | u30-dictionary-remediate.body | Книга лежит на столе | UNATTESTED
 30 | u30-dictionary-teach-1.body | Книга лежит на столе | UNATTESTED
 30 | u30-i-dictionary-3.promptLetter | Книга лежит на столе | UNATTESTED
+27 | ex-u27-comp-1.display | Письмо, написанное Анной, лежит на столе | COMPOSED
+27 | u27-comp-remediate.body | Письмо, написанное Анной, лежит на столе | COMPOSED
+27 | u27-comp-teach-1.body | Письмо, написанное Анной, лежит на столе | COMPOSED
+27 | u27-g-comp-1.promptLetter | Письмо, написанное Анной, лежит на столе | COMPOSED
+28 | u28-i-imperfective-adverb-1.feedback | читая письмо, он улыбался | COMPOSED
+28 | u28-i-imperfective-adverb-1.promptLetter | читая письмо, он улыбался | COMPOSED
+28 | u28-i-imperfective-adverb-2.feedback | читая письмо, он улыбался | COMPOSED
+28 | u28-i-imperfective-adverb-2.promptLetter | читая письмо, он улыбался | COMPOSED
+28 | u28-i-perfective-adverb-1.feedback | написав письмо, она отправит его завтра | COMPOSED
+28 | u28-i-perfective-adverb-1.promptLetter | написав письмо, она отправит его завтра | COMPOSED
+28 | u28-i-perfective-adverb-2.feedback | написав письмо, она отправит его завтра | COMPOSED
+28 | u28-i-perfective-adverb-2.promptLetter | написав письмо, она отправит его завтра | COMPOSED
+28 | u28-st-rem-imperfective-adverb.body | читая письмо, он улыбался | COMPOSED
+28 | u28-st-rem-perfective-adverb.body | написав письмо, она отправит его завтра | COMPOSED
+28 | u28-st-teach-imperfective-adverb-1.body | читая письмо, он улыбался | COMPOSED
+28 | u28-st-teach-imperfective-adverb-2.body | читая письмо, он улыбался | COMPOSED
+28 | u28-st-teach-perfective-adverb-2.body | написав письмо, она отправит его завтра | COMPOSED
+29 | ex-u29-punctuation-context-after.display | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED
+29 | ex-u29-punctuation-context-cause.display | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
+29 | ex-u29-punctuation-context-pronoun.display | Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо | COMPOSED
+29 | ex-u29-punctuation-context-terminal.display | Вдали виднеется маяк, стоящий у моря | COMPOSED
+29 | ex-u29-reading-1.display | Закончив письмо, Анна пошла на почту и отправила его | COMPOSED
+29 | ex-u29-register-1.display | Закончив письмо, Анна пошла на почту | COMPOSED
+29 | u29-i-punctuation-after.feedback | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED
+29 | u29-i-punctuation-after.promptLetter | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED
+29 | u29-i-punctuation-cause.feedback | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
+29 | u29-i-punctuation-cause.promptLetter | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
+29 | u29-i-punctuation-pronoun.feedback | Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо | COMPOSED
+29 | u29-i-punctuation-pronoun.promptLetter | Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо | COMPOSED
+29 | u29-i-punctuation-terminal.feedback | Вдали виднеется маяк, стоящий у моря | COMPOSED
+29 | u29-i-punctuation-terminal.promptLetter | Вдали виднеется маяк, стоящий у моря | COMPOSED
+29 | u29-i-register-1.promptLetter | Закончив письмо, Анна пошла на почту | COMPOSED
+29 | u29-reading-remediate.body | Закончив письмо, Анна пошла на почту и отправила его | COMPOSED
+29 | u29-reading-teach-1.body | Закончив письмо, Анна пошла на почту и отправила его | COMPOSED
+29 | u29-register-remediate.body | Закончив письмо, Анна пошла на почту | COMPOSED
+29 | u29-register-teach-1.body | Закончив письмо, Анна пошла на почту | COMPOSED
+29 | u29-st-rem-punctuation.body | Вдали виднеется маяк, стоящий у моря | COMPOSED
+29 | u29-st-rem-punctuation.body | Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо | COMPOSED
+29 | u29-st-rem-punctuation.body | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
+29 | u29-st-rem-punctuation.body | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED
+29 | u29-st-teach-punctuation-3.body | Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо | COMPOSED
+29 | u29-st-teach-punctuation-3.body | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
+29 | u29-st-teach-punctuation-4.body | Вдали виднеется маяк, стоящий у моря | COMPOSED
+29 | u29-st-teach-punctuation-4.body | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED

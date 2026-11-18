@@ -1,0 +1,103 @@
+Scanned c773acd6c04708c9d42b13819eb631cbb1a73f65, the newest successful Build at scan start: 44010475272. The newer run44280640592 was still in progress.
+
+Baseline: the 183-line allowlist and D15c on owner/prep-reports at dcbcb9f9775538d6f3e8797f1c3a50b43a542937. Nothing tracked changed; nothing committed or pushed.
+
+1. New-failure totals
+
+Counts deduplicate by unit, owner, field and full text. Longer joined sequences count as additions even where their constituent fragments were already allowlisted.
+
+Unit	New allowlist entries	Entries in required checks	Distinct required checks affected
+
+1–26, each	0	0	0
+27	4	0	0
+28	13	8	4
+29	27	9	5
+30	0	0	0
+Total	44	17	9
+
+
+These are nine distinct joined texts. Repeated appearances within one field count once.
+
+All three extraction fixes were applied. D9 letter lists remain excluded. Case/stress normalization preserves the distinction between ё and е. There are no additional stress failures: the Unit20 у́летят result is the known bold-vowel false failure.
+
+Form enumerations, dictionary mappings and separately quoted examples inside English explanations were not treated as Russian clause sequences.
+
+2. Texts, component witnesses and replacements
+
+Source aliases:
+
+Alias	Frozen file under catalog/sources/
+
+G	units-26-30/wikipedia/russian-grammar-1369617627.txt
+P	units-26-30/ruwiki/prichastie-153078996.txt
+V	units-26-30/wikisource/vechera-5336197.txt
+T	units-11-15/wikibooks/past-tense-4567337.txt
+
+
+Exact owners and fields for every occurrence appear in section3. Terminal punctuation is omitted consistently with the existing allowlist; internal punctuation is retained.
+
+Unit / full text	Separately attested spans	Contiguous frozen replacement
+
+27: Письмо, написанное Анной, лежит на столе	письмо, G:44; написанное, G:1984 after inline joining and stress normalization. написанное Анной and лежит на столе: NONE.	письмо написано Иваном, G:44. Rebuild the meaning/check; the location clause disappears.
+28: читая письмо, он улыбался	читая письмо, V:747; Он улыба́лся, T:106. Their combination occurs nowhere in one frozen line.	отдыхал читая, V:47, with the surrounding passage supplying the actor.
+28: написав письмо, она отправит его завтра	Neither complete component is frozen. письмо alone is witnessed at G:44. Both larger fragments were already baseline failures.	примете, выслушав его, V:1139. This preserves a future main action after the verbal-adverb action.
+29: Закончив письмо, Анна пошла на почту	Закончив письмо and Анна пошла на почту: NONE.	Пообедав, я пошёл гулять, G:2169; its coordinated counterpart Я пообедал и пошёл гулять is on the same line.
+29: Закончив письмо, Анна пошла на почту и отправила его	Neither component has a frozen witness.	устав писать ложился на диван и отдыхал читая, V:47. The passage and comprehension questions need rebuilding around those actions.
+29: Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком	The participial phrase and continuing predicate have no frozen witness.	Программа, написанная в спешке, выполнила недопустимую операцию, P:97, preserves the intervening postposed-modifier construction.
+29: Вдали виднеется маяк, стоящий у моря	Neither clause component has a frozen witness.	NONE identified for the same terminal-modifier contrast.
+29: Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо	None of the three comma-delimited components has a frozen witness.	окруженная в нем поклонниками, она полюбит которого-нибудь из них, V:751, supplies a witnessed modifier attached to a personal pronoun. Retain the original нем spelling.
+29: Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол	Neither component has a frozen witness.	NONE identified for the same causal-modifier contrast. A pronoun example would not independently demonstrate that exception.
+
+
+The four Unit29 punctuation examples currently depend on the unstored source routes previously reported. Those records do not provide frozen file:line witnesses. The table therefore distinguishes the genuine separately-attested composition in Unit28 from longer sequences whose fragments were already unsupported.
+
+3. Allowlist additions
+
+27 | ex-u27-comp-1.display | Письмо, написанное Анной, лежит на столе | COMPOSED
+27 | u27-comp-remediate.body | Письмо, написанное Анной, лежит на столе | COMPOSED
+27 | u27-comp-teach-1.body | Письмо, написанное Анной, лежит на столе | COMPOSED
+27 | u27-g-comp-1.promptLetter | Письмо, написанное Анной, лежит на столе | COMPOSED
+28 | u28-i-imperfective-adverb-1.feedback | читая письмо, он улыбался | COMPOSED
+28 | u28-i-imperfective-adverb-1.promptLetter | читая письмо, он улыбался | COMPOSED
+28 | u28-i-imperfective-adverb-2.feedback | читая письмо, он улыбался | COMPOSED
+28 | u28-i-imperfective-adverb-2.promptLetter | читая письмо, он улыбался | COMPOSED
+28 | u28-i-perfective-adverb-1.feedback | написав письмо, она отправит его завтра | COMPOSED
+28 | u28-i-perfective-adverb-1.promptLetter | написав письмо, она отправит его завтра | COMPOSED
+28 | u28-i-perfective-adverb-2.feedback | написав письмо, она отправит его завтра | COMPOSED
+28 | u28-i-perfective-adverb-2.promptLetter | написав письмо, она отправит его завтра | COMPOSED
+28 | u28-st-rem-imperfective-adverb.body | читая письмо, он улыбался | COMPOSED
+28 | u28-st-rem-perfective-adverb.body | написав письмо, она отправит его завтра | COMPOSED
+28 | u28-st-teach-imperfective-adverb-1.body | читая письмо, он улыбался | COMPOSED
+28 | u28-st-teach-imperfective-adverb-2.body | читая письмо, он улыбался | COMPOSED
+28 | u28-st-teach-perfective-adverb-2.body | написав письмо, она отправит его завтра | COMPOSED
+29 | ex-u29-punctuation-context-after.display | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED
+29 | ex-u29-punctuation-context-cause.display | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
+29 | ex-u29-punctuation-context-pronoun.display | Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо | COMPOSED
+29 | ex-u29-punctuation-context-terminal.display | Вдали виднеется маяк, стоящий у моря | COMPOSED
+29 | ex-u29-reading-1.display | Закончив письмо, Анна пошла на почту и отправила его | COMPOSED
+29 | ex-u29-register-1.display | Закончив письмо, Анна пошла на почту | COMPOSED
+29 | u29-i-punctuation-after.feedback | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED
+29 | u29-i-punctuation-after.promptLetter | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED
+29 | u29-i-punctuation-cause.feedback | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
+29 | u29-i-punctuation-cause.promptLetter | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
+29 | u29-i-punctuation-pronoun.feedback | Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо | COMPOSED
+29 | u29-i-punctuation-pronoun.promptLetter | Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо | COMPOSED
+29 | u29-i-punctuation-terminal.feedback | Вдали виднеется маяк, стоящий у моря | COMPOSED
+29 | u29-i-punctuation-terminal.promptLetter | Вдали виднеется маяк, стоящий у моря | COMPOSED
+29 | u29-i-register-1.promptLetter | Закончив письмо, Анна пошла на почту | COMPOSED
+29 | u29-reading-remediate.body | Закончив письмо, Анна пошла на почту и отправила его | COMPOSED
+29 | u29-reading-teach-1.body | Закончив письмо, Анна пошла на почту и отправила его | COMPOSED
+29 | u29-register-remediate.body | Закончив письмо, Анна пошла на почту | COMPOSED
+29 | u29-register-teach-1.body | Закончив письмо, Анна пошла на почту | COMPOSED
+29 | u29-st-rem-punctuation.body | Вдали виднеется маяк, стоящий у моря | COMPOSED
+29 | u29-st-rem-punctuation.body | Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо | COMPOSED
+29 | u29-st-rem-punctuation.body | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
+29 | u29-st-rem-punctuation.body | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED
+29 | u29-st-teach-punctuation-3.body | Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо | COMPOSED
+29 | u29-st-teach-punctuation-3.body | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
+29 | u29-st-teach-punctuation-4.body | Вдали виднеется маяк, стоящий у моря | COMPOSED
+29 | u29-st-teach-punctuation-4.body | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED
+
+4. Combined total
+
+183 existing + 44 additions = 227 allowlist lines.
