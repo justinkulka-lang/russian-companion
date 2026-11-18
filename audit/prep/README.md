@@ -22,5 +22,6 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - d7b-allowlist.txt: the complete D7b blocking-audit allowlist, 183 lines (unit | owner.field | text | type).
 - unit-25-prep-at-c773acd6.txt: Unit 25. No Russian witness failures; 23 checked / 7 typed is feasible. The name-form policy check depends on synthesis; see D12.
 - unit-26-prep-at-c773acd6.txt: Unit 26. A third extraction bug (inline HTML spans). The postal capability is synthesis-only; see D13.
+- unit-27-prep-at-c773acd6.txt: Unit 27. Rebuild from frozen sources only (Ivan/book). The stress and comprehension capabilities get rebound; see D14. S2 is reduced to 3 pages.
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
 - t15f-changed-learner-fields.csv: T15f, every changed learner field in Units 1-30 (442 rows: unit, owner, field, old, new) between 1bf80b92 and 34b714dd, for the Codex check of T15f.

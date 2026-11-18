@@ -1,0 +1,314 @@
+Inspected c773acd6c04708c9d42b13819eb631cbb1a73f65, the same head as Unit 26. No tracked files changed; nothing committed or pushed.
+
+Unit 27 has four unattested phrases and four forms without lawful stress evidence. D10c requires removing the wrong-stress forms wherever learners see them. The current stress validator conflicts with both permitted redesigns.
+
+Frozen-source aliases
+
+Paths are relative to catalog/sources/. All use the inventory’s CC BY-SA 4.0 routes.
+
+Alias	Frozen file	Relevant lines
+
+R7	units-26-30/wiktionary/ostavlyaemyj-74231596.txt	4,7: оставля́емый; 9: present passive of оставля́ть
+R8	units-26-30/wiktionary/obsuzhdaemyj-74233962.txt	4,7: обсужда́емый; 9: present passive of обсужда́ть
+R9	units-26-30/wiktionary/napisannyj-74228228.txt	4,7: напи́санный; 9: past passive of написа́ть
+R10	units-26-30/wiktionary/prochitannyj-74232159.txt	4,7: прочи́танный; 9: past passive of прочита́ть
+R11	units-26-30/wikipedia/russian-grammar-1369617627.txt	44: письмо написано Иваном; 1882–1887: present passive; 1960–1987: past passive forms
+R12	units-26-30/ruwiki/prichastie-153078996.txt	20–24: formation/short forms; 86: книга прочитана; 97–98: witnessed participial sentences
+R13	units-3-5/openrussian/verbs.csv	62: читать, explicitly imperfective; frozen dataset 50e210c…
+
+
+1. A2-24 items and D10c redesign
+
+Fresh Kotlin diagnostics:
+
+- Seven exact-key-in-teaching findings: u27-i-passive-1–2, u27-i-comp-2–3, u27-i-stress-2–4.
+- Zero automatic label/position, shown-cue-only or key-in-prompt findings.
+- Three fewer-than-three-options advisories: u27-i-stress-2–4.
+- One no-Cyrillic-required-display signal: u27-i-stress-4.
+
+Items	Fix
+
+u27-i-passive-1–2	Retain the writing/killing/doing distinctions, but remove verbatim answer-selection coaching and put checks after teaching in a separate session. R11:1960,1965,1969.
+u27-i-comp-1–3	Rebuild from the actual passive sentences described in section6.
+u27-i-stress-2–3	Apply D10c redesign below; separate checking from teaching.
+u27-i-stress-4	Currently tests an English policy statement. Rewrite its learner wording as an instruction, but do not silently remove the required REJECTED_PRODUCTIVE_STRESS capability feature. Its assessment treatment needs resolution.
+
+
+All 11 current independent items nevertheless return structure=[], feature=true.
+
+Exact D10c-safe choice redesign
+
+The following retains each target form and uses only distinct, attested Russian options. Prompts should ask for the indicated form with its learned stress; English meaning cues distinguish the words. These assess recognition of the attested form, rather than discrimination between correct and fabricated stress on the same word.
+
+Item	Prompt target	Key	Other options	Blocking constraints
+
+u27-g-stress-1	Present passive of оставлять	оставля́емый	обсужда́емый; напи́санный	Existing synthesis application must be rebound. R7–R9 supply the forms.
+u27-g-stress-past	Past passive meaning “written”	напи́санный	прочи́танный; сде́ланный	Same-word stress rule; old synthesis binding; duplicate-answer rule when paired with independent stress2.
+u27-i-stress-1	Present passive meaning “being discussed”	обсужда́емый	оставля́емый; напи́санный	Existing synthesis application must be rebound. This remains optional.
+u27-i-stress-2	Past passive meaning “written”	напи́санный	сде́ланный; прочи́танный	Same-word stress rule; old synthesis binding; guided/independent duplicate-answer rule.
+u27-i-stress-3	Past passive meaning “read”	прочи́танный	напи́санный; сде́ланный	Same-word stress rule and old synthesis binding.
+
+
+The first four forms are witnessed by R7–R10; сде́ланный is R11:1960.
+
+Exact blocking rules
+
+- V2Validator.kt:2418–2431: hasParticipleStressDistinction requires at least two accented options whose stress-folded texts are identical. Distinct attested words fail that condition.
+- V2Validator.kt:1447–1450: failure of that predicate blocks participle-stress.
+- V2Validator.kt:2355–2383: only independent checks bound to the capability’s exact source identity count. Changing the optional present-passive checks cannot repair the required stress gate.
+- V2Validator.kt:1330–1331, Phase3Sources.kt:44–55: the required stress capability is bound to the old synthesis identity.
+- V2Validator.kt:1659–1665: replacement applications must occur in that bound span; new lawful option combinations are not automatically admitted.
+- V2Validator.kt:1717–1724: duplicate answers across guided and independent assessments are rejected. Straight conversion of both write checks to the identical Russian key encounters this additional constraint.
+
+These require a focused D10c-compatible rule/admission update, not a workaround preserving a wrong-stress option.
+
+Typed-recall alternative—and its limitation
+
+Typed keys could be R7–R10’s exact headwords, retaining the five item targets above. However:
+
+- V2TypedResponse.kt:39–46 removes acute marks.
+- Scoring compares those normalized values.
+- Typed items cannot retain options: V2TypedResponse.kt:63–67.
+- Consequently, the stress predicate also rejects them because it requires options.
+
+Fresh JVM probe:
+
+current capability stress predicate=true
+typed normalization correct/wrong stress equal=true
+typed normalization correct/unaccented equal=true
+distinct attested choices folded identity count=2
+
+Thus ordinary typed recall can assess the word, but cannot currently assess its stress. Genuine typed stress assessment needs an explicitly approved response rule. It must not be reported as working under the existing normalizer.
+
+2. A2-23 and typed candidates
+
+Current Kotlin result: 11 checked, eight required, zero typed. Three independent checks belong to optional present-passive material.
+
+Keeping the existing checks and adding nine required typed items gives:
+
+- 20 checked
+- 17 required
+- Nine typed required: 52.94%
+
+These can assess form recall without claiming to score stress.
+
+Typed key	Frozen witness	Exact stress / teaching
+
+сде́ланный	R11:1960	Exact acute; already taught
+напи́санный	R9:4,7	Exact acute; already taught
+уби́тый	R11:1969	Exact acute; already taught
+напи́сан	R11:1965	Exact acute; already taught
+прочи́танный	R10:4,7	Exact acute; already taught
+письмо написано Иваном	R11:44	Exact unstressed sentence; already taught
+напи́санная	R11:1981	Exact after joining inline spans; add teaching first
+напи́санное	R11:1984	Exact after joining inline spans; add teaching first
+напи́санные	R11:1987	Exact after joining inline spans; add teaching first
+
+
+Add a sourced long-form gender/number teaching card before the last three checks. Keep all typed checks outside sessions displaying their keys. None requires active-participle teaching.
+
+3. English-only fact inventory
+
+Scope: Unit 27 feedback/remediation entries in audit/T15-n0-unmarked-russian-facts.csv.
+
+There are 118 entries overall; 79 English-only entries, representing 76 distinct sentence texts. The other 39 contain Cyrillic and are already protected by that rule.
+
+Recommended dispositions under the frozen-material rebuild:
+
+CSV physical rows, English-only entries	MARK	REWORD	REMOVE
+
+3718–3748: past passive	18	2	0
+3749–3776: optional present passive	16	1	3
+3779–3816: comprehension	1	20	11
+3821–3834: stress	2	4	1
+Total	37	27	15
+
+
+MARK: use R11’s meaning/form lines, R7–R10’s lexical evidence, and R12’s passive-form explanations. Remove source narration while preserving the supported fact.
+
+Specific qualifications:
+
+- Row3731, imperfective past passives: R12:20 supplies читанный; R13:62 identifies its verb as imperfective. Do not cite R11:1962 alone as a universal formation rule.
+- Rows3737–3738 and3791: R11:44 supports the affected letter and explicitly named writer.
+- Rows3821/3823: R9/R10 support the actual second-syllable placements; remove references to fabricated alternatives.
+
+REWORD rows:
+
+3730, 3740, 3765, 3779–3780, 3785, 3787–3790, 3793, 3795–3798, 3800–3802, 3806, 3808–3809, 3812–3813, 3826–3829.
+
+Use the Ivan/book examples in section6. Replace broad extrapolation claims with instructions such as “Check an unfamiliar form in its dictionary entry.” Do not preserve Anna, putting-away or table-location assertions after removing their unsupported Russian sentences.
+
+REMOVE rows:
+
+3760, 3762, 3768, 3781–3783, 3799, 3803–3804, 3810–3811, 3814–3816, 3834.
+
+These are answer-selection coaching, fabricated-alternative discussion, rejected-answer fragments or assessment commentary.
+
+PENDING-S1/PENDING-INTAKE: zero under this replacement plan. Retaining the original Anna/letter examples instead would require new intake. Capability rebinding remains a separate blocker.
+
+4. Teaching errors and qualifications
+
+Owner/field	Finding
+
+u27-st-teach-present-passive-2.body, corresponding remediation	Shows both prohibited present-passive wrong-stress forms. Remove them and their explanations completely.
+u27-stress-teach-1.body, u27-stress-remediate.body	Shows prohibited past-passive wrong-stress forms. Teach only the witnessed placements.
+u27-st-teach-passive-2.body	Correctly qualifies R11’s perfective-only formation statement. Preserve that qualification; support it with R12/R13.
+u27-st-teach-present-passive-2.body	Keep the formation example bounded. R11:1884’s recipe must not become an unrestricted rule for every verb.
+u27-comp-teach-1–2.body, remediation	Meanings are internally coherent, but their Russian sentences have no frozen witness. Replace the examples, not merely their provenance labels.
+Comprehension teaching	Keep the distinction between a main-action subject and an explicitly named passive agent. Do not transfer the “put away after reading” chronology to a replacement sentence that does not express it.
+
+
+Required instruction remains passive-only. Present-passive material stays optional; active participles remain outside this unit’s required scope.
+
+5. A2-26 lint and missed text
+
+Automatic results: 37 governance hits, zero markup hits, zero narration hits.
+
+Governance owners:
+
+- u27-g-present-passive-0, u27-i-present-passive-1–2: feedback.
+- u27-g-stress-1, u27-i-stress-1–3: prompt and feedback.
+- u27-g-stress-past: prompt.
+- u27-i-stress-4: feedback and option0.
+- u27-g-comp-1, u27-i-comp-1,3: feedback.
+- ex-u27-stress-2.note.
+- Orientation session title, step title/body, unit topic summary.
+- Teaching passive2–4 bodies; passive4 title.
+- Teaching present-passive2 title/body.
+- Passive/present-passive remediation bodies.
+- Stress-reference body; stress teaching1–2 bodies; stress remediation body.
+- ref-ca-participles.title/summary/detail.
+
+(a) Missed source narration
+
+Owners	Fields / wording
+
+u27-st-teach-passive-2–4, u27-st-rem-passive	body: retained examples/source/sentence framing
+u27-st-teach-present-passive-1–2, corresponding remediation	body: “The source also permits…”, “retained source…”
+u27-g-present-passive-0, u27-i-present-passive-1–2	feedback: “The frozen line says/writes…”
+Stress guided/independent items	Prompts/feedback: “admitted”, “Admitted reading…”
+Stress teaching/reference/remediation	body: admitted/retained placements and reference-policy narration
+
+
+Some of these separately receive governance hits; none receives a narration hit.
+
+(b) Missed exercise/assessment commentary
+
+Owners	Fields / issue
+
+Passive teaching1/3 and remediation	body: choosing named English options; what checks test
+Present-passive teaching1–2 and remediation	body: explicit “Choose …” mappings, checked-option discussion and repeated gating commentary
+Comprehension teaching2/remediation	body: what recognizing these examples demonstrates
+Stress-reference step	body: headword-versus-infinitive assessment commentary
+Stress teaching2/remediation	body: competing policy statement and meaning-versus-accent task commentary
+Stress items	Feedback/rationales consisting of “Admitted/Rejected reading…”
+Book-work/book steps	body, bookDirection: licensing, mapping approval and demonstrated-check commentary
+Anki/binder/tutor/cumulative directions	Repeated body/companionDirection assessment disclaimers
+
+
+Keep short retry/navigation instructions and the single neutral self-attestation notice allowed by D8.
+
+(c) Raw table-cell markup
+
+None found in current learner-facing Unit 27 fields.
+
+6. Phrases, extraction bugs and comprehension rebuild
+
+Corrected scan:
+
+Multi-word phrases: 5
+Attested: 1
+UNATTESTED: 4
+
+Stressed forms: 13
+Exact stress witnessed: 9
+MISSING STRESS evidence: 4
+
+The eight failing texts occupy 39 owner/field/text entries. They affect five required checks, plus optional/guided material.
+
+Failure	Owners/fields
+
+написанное Анной	u27-comp-teach-1.body, u27-comp-remediate.body, u27-g-comp-1.promptLetter, u27-i-comp-1.promptLetter, ex-u27-comp-1.display
+Анна убрала прочитанное письмо	u27-comp-teach-2.body, remediation body, u27-i-comp-2.promptLetter/feedback, ex-u27-comp-2.display
+прочитанное письмо	Same second-example hosts, plus u27-i-comp-3.promptLetter
+лежит на столе	First comprehension teaching/remediation, guided cue and example
+Four prohibited wrong-stress forms	Present/past stress teaching and remediation; affected options/rationales; guided past feedback also repeats its wrong form
+
+
+Extraction check: none of these eight failures is explained by the piped-link or bold-vowel bugs. FALSE-FAIL count: zero. Inline spans in R11’s paradigm must nevertheless be joined correctly when extracting the proposed typed forms.
+
+Frozen-material rebuild
+
+Current material	Replacement and assessment
+
+написанное Анной	Use письмо написано Иваном, R11:44. Rebuild u27-i-comp-1 to identify Ivan as writer, rather than reader or affected entity.
+Анна убрала прочитанное письмо	Use книга прочитана, R12:86. Rebuild u27-i-comp-2 around the fact that the reader is unspecified. Remove the putting-away action and its chronology.
+прочитанное письмо	Use the same witnessed book example in teaching; u27-i-comp-3 can check the completed reading expressed by прочитана, an exact substring of R12:86. Do not claim a letter or Anna.
+лежит на столе	No in-place frozen replacement identified. Drop the location clause and use R11’s complete witnessed passive sentence. Do not substitute the application-only “Книга лежит на столе.”
+Guided full Anna/table sentence	Rebuild with R11:44; show its actual English reading. Put independent checks in later sessions.
+
+
+Update both comprehension teaching cards, remediation, guided item, required items, examples and provenance together.
+
+What S2 would need to supply
+
+- Wikibooks “Russian/Grammar/Participles”: witnessed passive constructions and explicit explanations supporting any retained agent, completed-reading and main-action distinctions.
+- Wiktionary “написанный”: actual stored inflected forms and, if retaining Anna, a verbatim witness for the desired phrase/sentence. A headword or declension template alone does not attest написанное Анной.
+- Wiktionary “прочитанный”: actual stored forms and phrase examples. A headword alone does not attest прочитанное письмо or the full putting-away sentence.
+- Neither page should be assumed to supply the table-location clause or Anna’s action. If absent, use the frozen rebuild above.
+
+R9/R10 already supply the correct masculine headword stress; S2 is unnecessary for those keys.
+
+7. Shared references
+
+Reference	Units linking to it
+
+ref-u2630-attribution	26–30
+ref-ca-participles	27 only
+
+
+The latter is classified as linguistic instruction and contains governance wording in all three display fields. It needs learner-facing cleanup; it is not a frozen-source witness.
+
+8. Synthesis reliance and validator constraints
+
+Unit 27 has 317 provenance records:
+
+- 210 content-audit synthesis
+- 80 original research synthesis
+- 27 frozen-source records
+- Zero current russian-fact markers
+
+Synthesis-admitted Russian
+
+Russian	Admitting records
+
+написанное Анной	prov-obj-u27-comprehension-14; live corrected record prov-ca-u27-remaining-comprehension-host-7
+Анна убрала прочитанное письмо.	prov-obj-u27-comprehension-5; live corrected record …-host-5
+прочитанное письмо	prov-obj-u27-comprehension-28; live corrected record …-host-21
+лежит на столе	prov-obj-u27-comprehension-39; also admitted within the synthetic full sentence
+оставляемы́й	prov-obj-u27-stress-10; prov-ca-repair-27-10906
+обсуждаемы́й	prov-obj-u27-stress-16; prov-ca-repair-27-10913
+написа́нный	prov-obj-u27-stress-21; prov-ca-27-160
+прочита́нный	prov-obj-u27-stress-27
+
+
+Russian membership is accepted at V2Validator.kt:5233–5264, particularly5263. Content-audit relations/identity use3372–3395 and5673–5678; original-synthesis identity uses5738–5758. These routes establish membership in the application’s synthesis, not a frozen witness.
+
+Claims also rely on synthesis:
+
+- Required stress capability: phase3:participle-stress, hash e4dad2bc…, Phase3Sources.kt:44–55.
+- Corrected comprehension capability: ca-corrected-capability:cap-obj-u27-comprehension, hash 74f96df3…, ContentAuditCapabilityPins.kt:16.
+- Anna-specific explanations and the put-away/read interpretation are carried by those synthetic applications.
+- Correct headwords have real frozen evidence, but that does not validate the fabricated alternatives or full comprehension sentences.
+- New fact markers must use the frozen-source route; synthesis alone is excluded by V2Validator.kt:5534–5539.
+
+Additional comprehension rebuild blockers
+
+- ContentAuditCapabilityChecks.kt:19–23: exact corrected capability identity/hash.
+- :49–61: independent applications must remain bound to its host records and named features.
+- :119–141: exact cue/answer/distractor tuples must match the hashed application corpus.
+- :144–147: teaching and remediation bodies must occur in that corpus.
+
+Therefore the Ivan/book rebuild cannot pass merely by editing learner text and adding citations. It needs a legitimate frozen-source capability/admission update. The existing source and application pins must not be disguised as evidence for the replacement.
+
+Feasibility: frozen material can supply 20 checked items and nine typed required checks, without S2 or active-participle teaching. Full completion is blocked by the stress predicate/admission constraints, guided/independent duplicate-answer restriction, comprehension rebinding and the required policy check’s treatment. The proposed content rebuild leaves zero PENDING source claims; retaining the Anna examples would require S2 witnesses.
