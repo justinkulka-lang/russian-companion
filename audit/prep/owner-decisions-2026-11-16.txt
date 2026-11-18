@@ -58,3 +58,8 @@ D11b. Hold a second source intake, S2, before the Units 26-30 block. S2 covers t
   - ru Wikipedia "Деепричастие"
 S1 stays scoped to Units 11-25 plus the Unit 21/29 pages and the pages approved in D3, D5 and D6a.
 D11c. Unit 29's letter/post-office reading passage has no attested equivalent. Replace it with attested passage material: the S1 Больтраффио/Обособление pages, or S2 "Деепричастие". Rebuild the register pair from R13 (Russian grammar:2169).
+
+D12 (11/18, under D6). Unit 25, documented-name-form capability.
+D12a. Retire the policy check (u25-i-name-form-3). It claims a suffix does not mechanically produce a valid form for every name and that unfamiliar forms must be checked in a names dictionary. Both claims are synthesis with no frozen line behind them. Approved validator change: remove the REJECTED_ARBITRARY_NAME feature requirement (V2Validator.kt:3248, Phase2Sources.kt:49). Replace it with an attested name-form classification check from L:284/286 (for example Маруся), taught first. Report the new binding and hashes.
+D12b. Do not keep CSV 3386/3407 as Russian facts. Turn them into the instruction "Use only the forms taught in this exercise." with no marker.
+D12c. Re-cite every synthesis-backed claim the frozen sources support: Извини́ and the suffix те to V:308 and G:1169; name questions to G:419; classifications to L:284/286. Wherever frozen support exists, synthesis records must no longer be the support.

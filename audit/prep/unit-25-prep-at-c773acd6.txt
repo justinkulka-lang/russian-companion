@@ -1,0 +1,265 @@
+Head: c773acd6c04708c9d42b13819eb631cbb1a73f65, the newest exact commit with successful CI: 44010475272. Branch head 1f8777d1 adds only queue changes.
+
+No tracked files changed; no commits or pushes.
+
+Unit 25 still has zero real Russian-witness failures. It nevertheless relies on synthesis records for several claims and assessment relationships.
+
+Paths below are relative to catalog/sources/.
+
+Alias	Frozen file	Relevant lines
+
+N	units-21-25/wikibooks/names-4660786.txt	5, 7, 18, 30, 46
+U	units-21-25/wikibooks/useful-words-3353859.txt	11–15, 20, 25–26
+L	units-21-25/supplemental/lichnoe-imya-154915954.txt	248, 264–268, 284, 286, 296, 301
+A	units-21-25/supplemental/obraschenie-153012874.txt	25, 78–85, 89, 94
+G	units-26-30/wikipedia/russian-grammar-1369617627.txt	419, 1169
+V	units-3-5/openrussian/verbs.csv	308, извинить
+
+
+V belongs to frozen OpenRussian revision 50e210c….
+
+1. A2-24 items
+
+Fresh Kotlin diagnostics:
+
+16 checked; 16 required; 0 typed
+A2_24_EXACT_KEY_IN_TEACHING = 16
+A2_24_LABEL_OR_POSITION = 2
+NO_CYRILLIC_IN_REQUIRED_DISPLAY = 3
+
+All 16 current closed checks return structure=[]; feature=true.
+
+Move independent checks into a later session after teaching, retaining every closed check and remediation link.
+
+Required item IDs	Findings	Fix candidate and frozen evidence
+
+u25-i-name-structure-1–2	Exact-key exposure; label/position	Ask directly which component is father-derived or identifies the family, rather than “Which Russian label…”. Existing Russian options are at N:5.
+u25-i-diminutives-1–2	Exact-key exposure; no Cyrillic	Include the already-taught Russian full name in the prompt: Алексей, N:30; Дмитрий, N:46. Existing English short-form keys and mappings remain supported by N:18.
+u25-i-courtesy-1–2	Exact-key exposure	Keep request/thanks/apology and address distinctions; check later. U:11–15; G:1169; V:308.
+u25-i-name-question-1–2	Exact-key exposure	Retain the question/reply distinction using U:25–26; check later.
+u25-i-nickname-rule-1–2	Exact-key exposure	Retain documented derivational-base versus social-coloring classifications. L:284,286.
+u25-i-address-1–3	Exact-key exposure	Retain full/short/affectionate forms and bounded register interpretation. A:78,80,82,85.
+u25-i-name-form-1–3	Exact-key exposure; item 3 has no Cyrillic	Items 1–2 can cite L:284/286 directly. Item 3 needs a substantive sourced contrast, not decorative Cyrillic added to its policy question. Маруся, L:284, is one candidate requiring teaching first. The capability binding blocks a straightforward replacement; see section 8.
+
+
+Advisories:
+
+- u25-i-name-form-3: fewer than three options.
+- obj-u25-name-question: both required checks have the same answer.
+
+2. A2-23 and typed candidates
+
+With all 16 closed checks retained, seven typed checks give 23 checked, seven typed: 30.43%.
+
+Typed key	Frozen evidence	Stress comparison
+
+имя	N:5	Exact unstressed form
+отчество	N:5	Exact unstressed form
+фамилия	N:5	Exact unstressed form
+Пожа́луйста	U:11	Exact acute placement
+Спаси́бо	U:12	Exact acute placement
+Извини́те	U:15	Exact acute placement; grammatical address explanation comes from G:1169/V:308
+извини́	V:308, imperative singular извини'	Exact apostrophe-to-acute conversion
+
+
+All seven forms are already taught. The last appears capitalized in teaching; the proposed lowercase key follows the frozen CSV.
+
+Use meaningful English retrieval prompts, source every accepted key, and put retrieval after teaching. No inferred Cyrillic short-name spelling is needed for this expansion.
+
+3. English-only fact inventory
+
+Scope: 142 English-only entries, 101 distinct sentence texts, in audit/T15-n0-unmarked-russian-facts.csv:3146–3407.
+
+These are recommendations, not applied dispositions. MARK means retain the supported fact, removing provenance narration where necessary, and cite a real frozen record.
+
+CSV range¹	MARK	REWORD	REMOVE	PENDING-INTAKE	Main evidence
+
+3146–3184: name structure	17	1	4	0	N:5,7
+3185–3214: conventional short forms	22	1	6	0	N:18; L:264–268,284; A:82,85
+3215–3246: courtesy	12	0	4	0	U:11–15; G:419,1169; V:308
+3247–3295: name questions/replies	12	0	21	0	U:14,20,25–26; G:419
+3300–3328: name-form classifications	4	1	5	0	L:284,286; A:89
+3335–3367: address/register	4	1	4	0	A:25,78–85,89,94
+3373–3407: documented-name-form	10	2	9	2	L:264,284,286; A:82–85,89
+Total	81	6	53	2	PENDING-S1: 0
+
+
+¹ Only English-only inventory entries within each range are counted.
+
+REWORD
+
+CSV line	Suggested non-fact instruction
+
+3162	“Use only these examples.”
+3200	“Check how the person wishes to be addressed.”
+3315	“Use a form the person prefers.”
+3345	“Use the documented forms shown here.”
+3387	“Use only the forms taught in this exercise.”
+3403	“Check an unfamiliar form before using it in this exercise.”
+
+
+Rows 3387/3403 require the assessment/capability decision discussed below; wording changes alone do not repair that check.
+
+PENDING-INTAKE: 3386 and 3407
+
+Both contain the claim that a suffix does not mechanically generate an acceptable form for every name. L:284 establishes suffixes, bases and examples; it does not explicitly establish that universal validity limit. Retaining it as a Russian fact needs evidence. An instruction limiting this exercise to documented examples is an alternative.
+
+REMOVE
+
+3149,3165,3170,3179,3186,3188,3202,3204,3209,3211,3218,3232,3236,3243,3247–3250,3252,3254–3256,3272–3275,3279–3281,3284–3286,3290,3294–3295,3300,3311,3313,3320,3328,3335,3353,3360,3367,3374,3380–3381,3388,3392,3399,3404–3406.
+
+These are generic mismatch statements, cue/key narration, source fragments or assessment commentary. Several name-question fragments result from punctuation splitting the old feedback; rewrite the feedback coherently while retaining its sourced meaning.
+
+Unit 25 currently has zero russian-fact markers.
+
+4. Teaching errors and qualifications
+
+- Misleading example note: ex-u25-name-structure-3.note is “For instance”. It is a source fragment, not a meaning for Василий Иванович. N:5,7 supports a first-name/patronymic explanation.
+- Register versus grammatical address: U:15 labels its apology “informal.” That does not establish familiar singular grammar. Keep the singular versus polite/plural distinction grounded in G:1169 and V:308, and resolve the mixed wording in u25-i-courtesy-1.feedback and .distractorRationales[2].
+- “Full name” ambiguity: N:5 discusses the three-component personal name; A:78–80 contrasts full and short given-name forms. Prefer “full given-name form” in the address topic.
+- Dismissive coloring needs context: preserve L:286’s qualifications and A:89’s intonation/context distinction when removing “the source says…” wording. Do not turn the supplied classification into an assertion that every use is insulting.
+- Dictionary verification is currently presented as a requirement: u25-i-name-form-3 and teaching/remediation require an unfamiliar form to be verified in a names dictionary. That requirement comes from synthesis, not an identified frozen grammar line.
+- Recognition is not productive formation: the frozen examples establish particular forms and classifications. The current unit should not gain productive-name-formation credit from them.
+
+5. A2-26 and missed-lint tables
+
+Automatic counts: 67 governance, zero markup, two narration.
+
+All abbreviated owners below begin u25-.
+
+Governance owners	Fields
+
+g-name-structure-0, i-name-structure-1–2	Feedback; rationales [1–3]
+g-diminutives-0, i-diminutives-1–2	Feedback; rationales [1–2]
+g-courtesy-0	Feedback; rationale [1]
+i-courtesy-1	Feedback; rationales [1–2]
+g-name-question-0, i-name-question-1–2	Feedback; rationales [1–2]
+g-address-0, i-address-1–3	Feedback; rationales [1–2]
+g-name-form-1, i-name-form-1–2	Feedback; rationales [1–2]
+s-orient; st-orient; unit-25	Session title; step title/body; topicSummary
+st-rem-{diminutives,name-structure,nickname-rule}; st-teach-diminutives-2; st-teach-name-structure-2; st-teach-nickname-rule-1,3	Body
+
+
+The two automatic narration hits are u25-st-teach-address-3.body and u25-st-rem-address.body.
+
+(a) Missed source narration
+
+Some fields below already receive a governance finding; their narration is not caught by the narration detector.
+
+Owners	Field	Wording
+
+Name-structure item family above	Feedback/rationales	“The frozen sentence says/pairs/gives…”
+Diminutives item family	Feedback/rationales	“The frozen list includes/pairs…”
+Courtesy g-…-0, i-…-1	Feedback and affected rationales	“The frozen list says/pairs…”
+Name-question item family	Feedback/rationales	“The frozen list pairs…”
+g-nickname-rule-0, i-nickname-rule-1–2	Feedback; rationales [1–2]	“The source says/assigns…”; “The keyed phrase…”
+Address item family	Feedback/rationales	“The frozen source pairs…”
+g-name-form-1, i-name-form-1–2	Feedback/rationales	“in this admitted material”
+st-teach-name-structure-2–3; st-rem-name-structure	Body	“retained introductory pattern”; “older note…source fragment”
+st-teach-diminutives-2; st-rem-diminutives	Body	“The retained list…”
+st-teach-courtesy-3; st-rem-courtesy	Body	“the pronunciation label…in the older source”
+st-teach-nickname-rule-1,3; st-rem-nickname-rule	Body	“retained examples/text”; “source’s classification”
+
+
+(b) Missed exercise/assessment commentary
+
+Owners	Field	Wording
+
+All 23 Unit 25 items	Feedback	Cue/key “matches the requested function or classification” narration
+Their 48 nonempty rationale fields	Rationales	Repeated generic “This differs from the classification or conversational function requested here.”
+st-teach-name-structure-3	Body	“The choices recognize…do not ask you to construct…”
+st-teach-diminutives-1–3	Body	“checked conventional pairs”; “These checks use English transliterations…”
+st-teach-courtesy-1–3	Body	“The checks use…”; “checked descriptions/contrast”
+st-teach-name-question-2	Body	“The check recognizes…”; completed-introduction assessment commentary
+st-teach-nickname-rule-2	Body	“The question asks for the classification documented…”
+st-teach-address-2–3	Body	What the examples/check recognize or license
+st-teach-name-form-1,3	Body	“These English descriptions classify…”; checked answer, alternative and production-limit commentary
+All seven corresponding st-rem-* owners	Body	Repeats the teaching commentary above
+st-book-work	Body	Licensing narration; “No audio is mapped here.”
+st-book-work, st-book	Book direction/body	Pending reviewer/mapping/approval wording
+st-{anki,binder,tutor,cumulative}-direction	Body/companion direction	Repeated statements about demonstrated ability, scoring and self-report
+
+
+D8 permits short navigation, retry and neutral self-attestation instructions. The shared-template repetition and approval language should be handled consistently with that decision.
+
+(c) Raw table-cell markup
+
+None found in Unit 25 learner-facing fields.
+
+6. Russian witnesses, extraction bugs and synthesis reliance
+
+Fresh scan:
+
+Multi-word phrases: 14 checked, 0 failures
+Stressed forms:      9 checked, 0 failures
+Russian forms:      52 checked, 0 failures
+FALSE-FAIL:           0
+
+Phrase group	Frozen witness
+
+Василий Иванович	N:7
+Как Вас зову́т, Меня́ зову́т, Прошу́ проще́ния, Как дела́	U:25,26,14,20
+от полной формы имени, от краткой формы	L:284
+оттенок пренебрежения	L:286
+полные имена, краткие имена	A:78
+полному имени, отстранённо-официального регистра, полуофициальной обстановке	A:80
+дружески-неофициальном общении	A:82
+
+
+Neither known extraction bug explains a Unit 25 failure. No displayed Unit 25 stress mark was identified as originating from bold-vowel conversion.
+
+Russian currently admitted only through synthesis records
+
+There is no witness-less Russian in this table. It identifies current provenance bindings that should be replaced with the available frozen evidence.
+
+Owner and field	Russian	Admitting record	Validator line	Available witness
+
+u25-st-teach-courtesy-2.body	Извини́	prov-ca-25-235 / 591	5263; synthesis identity 5673–5678	V:308
+u25-st-rem-courtesy.body	Извини́	Same	Same	V:308
+u25-g-courtesy-0.distractorRationales[2]	Извини́	Same	Same	V:308
+u25-i-courtesy-2.distractorRationales[1]	Извини́	Same	Same	V:308
+ex-u25-courtesy-2.note	Извини́	Same; note claim in prov-ca-25-233	Same	V:308; G:1169
+u25-i-courtesy-2.feedback	Suffix те	prov-ca-25-592 / 594	Same	G:1169
+u25-i-courtesy-2.distractorRationales[1]	Suffix те	Same	Same	G:1169
+
+
+Claims and relationships relying on synthesis
+
+Unit 25 contains 161 content-audit synthesis records and 21 original-synthesis records, among 272 provenance records.
+
+Owners/claim	Current dependency	Frozen support or gap
+
+u25-i-courtesy-2; corrected apology example note	prov-ca-25-581…594, including claim record 585; note record 233	G:1169/V:308 supports the grammatical distinction; re-cite it
+u25-st-teach-name-question-1.body, u25-st-rem-name-question.body	prov-ca-u25-instruction-name-question-{teach-1,rem}-body	G:419 supports the bounded written-capitalization distinction
+u25-g-name-form-1, u25-i-name-form-1–2	Original phase2:documented-name-form; cue records prov-u25-name-form-10, 8, 9	L:284/286 supports the actual classifications
+u25-st-teach-name-form-3, remediation, u25-i-name-form-3	prov-u25-name-form-2,3,14,15,20; corresponding coverage records	The dictionary-verification requirement and universal mechanical-validity limit are not established by an identified frozen line
+
+
+These pathways accept original-note applications at V2Validator.kt:3372–3395 and 3406–3427, with identity checks at 5673–5678 and 5738–5758.
+
+They cannot satisfy new fact markers: V2Validator.kt:5534 excludes synthesis and coverage records from frozen-source provenance.
+
+7. Shared references
+
+ref-u2125-attribution is shared by Units 21–25. Editing it affects all five units.
+
+It is a licence/attribution notice and is exempt from the learner-voice cleanup. It does not supply provenance for the synthesis-only claims.
+
+8. Validator constraints and feasibility
+
+The main blocker is explicit:
+
+> Bounded diminutive recognition does not clear documented-name-form.
+
+
+
+That rejection is at V2Validator.kt:3248. Its existing synthesis admission is pinned at Phase2Sources.kt:49, including the required REJECTED_ARBITRARY_NAME feature.
+
+Consequences:
+
+- Re-citing the demonstrated full/short/dismissive classifications is supported by frozen sources.
+- Replacing the policy check with another documented-name contrast needs a capability/requirement decision; it must not silently remove the required feature.
+- Adding Cyrillic to the existing policy question would clear a display signal without repairing its assessment purpose.
+- The source-note hash is pinned; NAME_FORM is not separately covered by an immutable application-list hash in OriginalApplicationTuplePins.
+
+Feasibility: Unit 25 can reach A2-23 with frozen sources only—23 checked, seven typed, 30.43%. It has zero Russian witness failures. Full completion still requires claim re-citation, two PENDING-INTAKE entries representing one distinct claim, lint/assessment cleanup, and a decision on the documented-name-form capability binding.

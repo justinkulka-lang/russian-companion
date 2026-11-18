@@ -20,4 +20,5 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - scan-units-1-30-part2-at-1f8777d1.txt: Units 1-30 scan, Part 2 (16-30), with the full accounting and the D7b allowlist. The remainder is in scan-units-1-30-part2-remainder.txt. 41 real failures, 28 required checks. See D10.
 - scan-units-1-30-part2-remainder.txt: the rest of the Part 2 allowlist (Units 28-30) and the section 4 intake pages.
 - d7b-allowlist.txt: the complete D7b blocking-audit allowlist, 183 lines (unit | owner.field | text | type).
+- unit-25-prep-at-c773acd6.txt: Unit 25. No Russian witness failures; 23 checked / 7 typed is feasible. The name-form policy check depends on synthesis; see D12.
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
