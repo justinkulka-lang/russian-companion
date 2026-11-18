@@ -16,8 +16,16 @@ internal object TwoPartPhraseRule {
     private const val CYR = "\\u0400-\\u04FF"
     private val pipedLink = Regex("\\[\\[[^\\[\\]|]*\\|([^\\[\\]|]*)\\]\\]")
 
+    // T15f (owner decision D13a): block-level HTML boundaries and <br> separate text; inline tags (span, a, b, i, em, ...)
+    // join their adjacent text nodes directly, as BatchARemainingSources.htmlVisible does. Real whitespace is kept.
+    private val blockTag = Regex("(?i)</?(?:p|li|ul|ol|br|td|th|tr|table|thead|tbody|div|h[1-6]|blockquote|section|article|dd|dt|dl)\\b[^>]*>")
+    private val anyTag = Regex("<[^>]+>")
+
+    /** A block boundary becomes U+2029, which the whitespace collapse below keeps, so no phrase spans two blocks. */
+    fun htmlText(text: String): String = anyTag.replace(blockTag.replace(text, "\u2029"), "")
+
     fun unstressed(text: String): String {
-        val noHtml = Regex("<[^>]+>").replace(text, " ")
+        val noHtml = htmlText(text)
         val displayed = pipedLink.replace(noHtml) { it.groupValues[1] }
         val noMarkup = Regex("'{2,}|\\[\\[|\\]\\]").replace(displayed, "")
         val stressMarks = Regex("(?<=[$CYR])'(?!')").replace(noMarkup, "́").replace("́", "")

@@ -64,4 +64,41 @@ class TwoPartPhraseRuleTest {
         // Unpiped links and bold markup read as before.
         assertEquals(legacyPresent(poltora(16), "полу́тора"), TwoPartPhraseRule.present(poltora(16), "полу́тора"))
     }
+
+    /** T15f (owner decision D13a): adjacent inline HTML text nodes join directly; block boundaries still separate words. */
+    @Test fun inlineHtmlSpansJoinAndBlockBoundariesStaySeparate() {
+        val letter76 = line("catalog/sources/readyrussian/letter.html", 76)
+        assertTrue("Иван</span><span class=\"T10\" lang=\"ru\">ов</span>" in letter76)
+        // Regression: the old matcher put a space for every tag, giving "Иван Иван ов ич".
+        assertFalse(legacyPresentHtml(letter76, "Уважаемый Иван Иванович"))
+        assertTrue(TwoPartPhraseRule.present(letter76, "Уважаемый Иван Иванович"))
+        assertTrue(TwoPartPhraseRule.attests(letter76, "Уважаемый Иван Иванович", stress))
+        assertFalse(TwoPartPhraseRule.present(letter76, "Иван ов"))
+        // Words from two separate block elements are not joined, whatever the tag.
+        for (tag in listOf("p", "li", "td", "h3", "div")) {
+            val blocks = "<$tag>Уважаемый</$tag><$tag>Иван</$tag>"
+            assertFalse(tag, TwoPartPhraseRule.present(blocks, "Уважаемый Иван"))
+            assertFalse(tag, TwoPartPhraseRule.present(blocks, "УважаемыйИван"))
+        }
+        assertFalse(TwoPartPhraseRule.present("Уважаемый<br>Иван", "Уважаемый Иван"))
+        assertFalse(TwoPartPhraseRule.present("Уважаемый<br/>Иван", "Уважаемый Иван"))
+        // Real whitespace between inline nodes is kept.
+        assertTrue(TwoPartPhraseRule.present("<span>Уважаемый</span> <span>Иван</span>", "Уважаемый Иван"))
+        assertFalse(TwoPartPhraseRule.present("<span>Уважаемый</span> <span>Иван</span>", "УважаемыйИван"))
+        // Stress and ё/е stay as strict: an unattested stress still fails, ё is not е.
+        assertFalse(TwoPartPhraseRule.attests("<span>Ива́н</span>", "Ива́н", setOf()))
+        assertFalse(TwoPartPhraseRule.present("<span>нё</span>", "не"))
+    }
+
+    /** The matcher before D13a: every HTML tag became a space. */
+    private fun legacyPresentHtml(line: String, phrase: String): Boolean {
+        fun strip(text: String): String {
+            val noHtml = Regex("<[^>]+>").replace(text, " ")
+            val displayed = Regex("\\[\\[[^\\[\\]|]*\\|([^\\[\\]|]*)\\]\\]").replace(noHtml) { it.groupValues[1] }
+            val noMarkup = Regex("'{2,}|\\[\\[|\\]\\]").replace(displayed, "")
+            val marks = Regex("(?<=[\\u0400-\\u04FF])'(?!')").replace(noMarkup, "\u0301").replace("\u0301", "")
+            return Regex("[\\s\\u00a0\\u2009\\u202f]+").replace(marks, " ").lowercase()
+        }
+        return Regex("(?<![\\u0400-\\u04FF])${Regex.escape(strip(phrase))}(?![\\u0400-\\u04FF])").containsMatchIn(strip(line))
+    }
 }
