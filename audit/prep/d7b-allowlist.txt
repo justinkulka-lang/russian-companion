@@ -225,3 +225,4 @@
 29 | u29-st-teach-punctuation-3.body | Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол | COMPOSED
 29 | u29-st-teach-punctuation-4.body | Вдали виднеется маяк, стоящий у моря | COMPOSED
 29 | u29-st-teach-punctuation-4.body | Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком | COMPOSED
+30 | u30-i-dictionary-4.promptLetter | сущ | UNATTESTED
