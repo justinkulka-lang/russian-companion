@@ -63,14 +63,14 @@ class Units610SourceIntakeTest {
     @Test
     fun earlierUnitDigestsStayPutAndLaterUnitsStayIsolated() {
         val pack = pack()
-        // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
-        assertEquals("9c2ab4f1f11a7e813be0779b5b512d4fc398274271eae5937581f1566ab1488c", V2Validator.unitContentReviewDigest(pack, 3))
+        // T15f: the D8 direction templates change Unit 3 (was 9c2ab4f1...; T15e was e6159274...).
+        assertEquals("6bab7d2e2ce96eaf3df9de6de69c05d38c757059b9788e4f4f033ddf8a88d485", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
-        // T15e: follows the Unit 3 content-review digest above (was a4d2462a...).
-        assertEquals("9a3c5bfe16f016d5132505fa44968e50568da416a78582ea13b1bfa113d5173e", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        // T15f: follows the Unit 3 content-review digest above and the Units 1-30 T15f curriculum commit (was 9a3c5bfe...).
+        assertEquals("7a95a65d39e8a4f16db5eaec081dafe378595a43c4bb6a8db613bd22e61a2029", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(

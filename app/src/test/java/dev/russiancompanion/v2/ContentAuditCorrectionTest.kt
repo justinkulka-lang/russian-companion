@@ -256,7 +256,8 @@ class ContentAuditCorrectionTest {
         // T15b: the unattested phrases хоро́шая книга / хоро́шую книгу become single sourced forms.
         assertTrue(text.contains("the adjective хоро́шая becomes хоро́шую, and the noun кни́га becomes кни́гу"))
         assertTrue(text.contains("change both words"))
-        assertTrue(text.contains("all the options are already correctly spelled"))
+        // T15f (owner decision D6c): the sentence keeps only its fact, "All the options are already correctly spelled."
+        assertTrue(text.contains("All the options are already correctly spelled"))
         assertEquals(22, unit.advancement!!.minimumDistinctChecks)
     }
 

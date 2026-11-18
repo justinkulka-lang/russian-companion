@@ -31,17 +31,17 @@ import java.security.MessageDigest
 class Units2630SourceIntakeTest {
     private val preservedContentDigests = mapOf(
         // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
-        3 to "9c2ab4f1f11a7e813be0779b5b512d4fc398274271eae5937581f1566ab1488c",
-        16 to "31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87",
-        17 to "415d0ecc0e4e8ce649dff17aef09851beddc39f191f6bedf783af07904481c62",
-        18 to "603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac",
-        19 to "3096baba4cdc192ac7d701f6eedd3c8ca0be12c54ab64efa52b0c25fdbf83a5e",
-        20 to "6c11d3dd467846f5aabf034024f7d27d3ed9a5cc9eec4a8462cd8be3c54069eb",
-        21 to "987a27a7a3de52fa7965c6b81b5ef3ab74221b62d96f52b98e5b093c8e39ae56",
-        22 to "886c572c8d1adf2e0e508fe20e872afd81c49510db28bf46d2c16823c5f83f08",
-        23 to "e7cf730b6ed8317979d7c9f59c23b360f28081d0461fe7a0864643a3d855f683",
-        24 to "d5cb2b37f1000c8728b529e4167f3ab06fb216cb12c7a6d317531f1b309c2e66",
-        25 to "57470dadfa8a6184a38538a4bae84430e8e6d6ba2ad491d1e926690777050142",
+        3 to "6bab7d2e2ce96eaf3df9de6de69c05d38c757059b9788e4f4f033ddf8a88d485",
+        16 to "502ce558a34b9c17a702bf987750167fb8f83f5e52ea78a2ec84b6e647ed1d8a",
+        17 to "7498ced568466bdb593389b30617350ab49a594271392f132fff4aa6f939de1b",
+        18 to "3c4ae8dd52293871574a5968c224388e31eb8c838e61a63dc2271fdb3e79073a",
+        19 to "d74524375d589637d9e00d0ba079fc53c771599cadcd1f559bb57e8bc6e7a684",
+        20 to "2d11265511650073bde1fb826adfec573bfc32eff9206476941c6a89187a15e5",
+        21 to "85c0e292bcefcf152a80b0db80fce092737553ed8d8ce66444239c3f60dbbc34",
+        22 to "3af1050955bf9d86e162360eca3a06cf51ad0e1327226daab4a7aead8dd46954",
+        23 to "817b1d8ff8a53907f5daaa378216687d4adc19a569a63762bd6840e560be1c53",
+        24 to "cd335d5c9d926884f5830b088785b58a0bc1f7ef08eee877db0dda8cabbb484d",
+        25 to "404a2ea48d043ee4511b15890035a55b33aad771401e1c4c3a09473fd4d044bb",
     )
 
     private val preservedMappingDigests = mapOf(
