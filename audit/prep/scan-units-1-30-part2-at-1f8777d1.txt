@@ -1,0 +1,366 @@
+Head: 1f8777d1b1e745f4f830824e9c281f8571b6e975. No tracked files changed; no commits or pushes.
+
+After D9 exclusions, the whole-course result is 41 distinct unit/text failures across 183 owner/field locations: 35 UNATTESTED phrases and six MISSING_STRESS forms. They affect 28 required checks.
+
+Counts deduplicate by unit, text and failure type. The allowlist below additionally distinguishes every owner/field. Punctuation separates phrase spans; stress is checked on individual words. Case and stress are ignored for phrase presence; ё and е remain distinct.
+
+Admission paths and pin notation
+
+Every real finding can pass the unit-wide shippedText membership check at V2Validator.kt:5233, particularly line 5263. The admitting record need not be the owner’s direct citation.
+
+Additional paths used below:
+
+Code	Validator path
+
+C	Content-audit synthesis: lines 3372–3395, 3496–3498, 5673–5678, 5707–5718, 5810
+O	Original synthesis: lines 3406–3427, 3499–3501, 5732–5758, 5809
+U	Unfrozen native records: lines 5141–5143 for Unit 21; 5147–5148 for Unit 29. The file-binding test retains their exact exceptions at FrozenSourceBindingTest.kt:123.
+
+
+Pin notation:
+
+- T: explicit CompleteRuleContextPins tuple.
+- A: OriginalApplicationTuplePins application list.
+- C-pin: corrected capability hash/application binding.
+- N: original synthesis source-note hash; no separate immutable tuple.
+- U-pin: exact unfrozen-record ID/source/text-hash exception.
+- —: no specific tuple/application pin identified.
+
+Pins preserve identity; they do not establish a frozen witness.
+
+Required-check status
+
+Every field belonging to these owners is inside a required check. Other owners in the allowlist are teaching, remediation, guided work or examples.
+
+Unit	Required owners affected
+
+21	u21-i-object-reference-2
+23	u23-i-completion-1–2
+24	u24-i-alternation-1–2, u24-i-stand-ins-2
+26	u26-i-postal-1, u26-i-postal-6, u26-i-postal-11
+27	u27-i-comp-1–3, u27-i-stress-1–3
+28	u28-i-perfective-adverb-1–2
+29	u29-i-punctuation-{after,cause,pronoun,terminal}, u29-i-reading-1–3, u29-i-register-1–3
+30	u30-i-dictionary-3
+
+
+Frozen replacement references
+
+Paths are under catalog/sources/.
+
+Ref	Verbatim candidate	Frozen file:line
+
+R1	Я люблю́ (свою́) жену́	units-26-30/wikipedia/russian-grammar-1369617627.txt:508
+R2	Я не ви́жу кни́гу	Same file:55
+R3	Я не ви́жу кни́ги	Same file:55
+R4	кни́гу	units-3-5/openrussian/nouns.csv:60, sg_acc
+R5	Василий Иванович	units-21-25/wikibooks/names-4660786.txt:7
+R6	Татарстан	units-3-5/openrussian/nouns.csv:11630, bare form
+R7	оставля́емый	units-26-30/wikipedia/russian-grammar-1369617627.txt:1887
+R8	обсужда́емый	units-6-10/openrussian/adjectives.csv:9075, accented field
+R9	напи́санный	units-26-30/wikipedia/russian-grammar-1369617627.txt:1965
+R10	прочи́танный	units-6-10/openrussian/adjectives.csv:11884
+R11	письмо написано Иваном	units-26-30/wikipedia/russian-grammar-1369617627.txt:44
+R12	прочи́танное	units-6-10/openrussian/adjectives.csv:11884, decl_n_nom
+R13	Пообедав, я пошёл гулять / Я пообедал и пошёл гулять	units-26-30/wikipedia/russian-grammar-1369617627.txt:2169
+R14	Книга и вещи лежат на столе	units-3-5/wikibooks/prepositions-4446858.txt:135
+
+
+OpenRussian apostrophes are converted to combining acute marks.
+
+These are rebuilding candidates. R5/R6 attest labels, not the complete postal model. R11/R12 change the construction shown. R13 supplies a bookish/plain pair, not the existing letter/post-office passage. Their use requires corresponding teaching, check and provenance changes.
+
+Full failure accounting
+
+The owner/field locations are enumerated exhaustively in the allowlist block. Each line inherits the admission path, record, pin and replacement from the matching unit/text row below.
+
+Unit 21
+
+Text	Admitting record; path	Pin	Replacement
+
+Я люблю́ свою́ жену́	prov-ca-21-262; C	—	R1, restoring the source’s parentheses
+Он поранил себя	prov-u21-object-transfer-native-self; U. The check additionally uses prov-ca-u21-object-transfer-u21-i-object-reference-2-0; C	T on the check; U-pin on native record	NONE suitable as a distinct replacement
+Он поранил его	prov-u21-object-transfer-native-other; U; comparison also appears in the check’s C context	T on the check; U-pin on native record	NONE
+
+
+The already approved “Reflexive pronoun,” oldid 1374712982 intake is the direct resolution for the last two. Я люблю́ себя́ is frozen at Russian grammar:509, but is already used and does not provide a fresh transfer pair.
+
+Unit 22 — all previous failures are FALSE-FAIL
+
+All three pass after resolving piped links. No Russian replacement is needed.
+
+Text	Every owner/field	Record	Validator; pin	Frozen witness
+
+полтора́ рубля́	u22-st-teach-half-forms-1.body; u22-st-rem-half-forms.body; u22-g-half-forms-0.promptLetter; .feedback; ex-u22-half-forms-0.display	prov-ex-u22-half-forms-0-ru	2875–2876, 5263; frozen-source admission pin, no synthetic tuple	units-21-25/supplemental/poltora-89737719.txt:14
+из полу́тора рубле́й	u22-st-teach-half-forms-3.body; u22-st-rem-half-forms.body; u22-i-half-forms-2.promptLetter; .feedback; ex-u22-half-forms-2.display	prov-ex-u22-half-forms-2-ru	Same	Same file:16
+к полу́тора рубля́м	u22-st-teach-half-forms-3.body; u22-st-rem-half-forms.body; u22-i-half-forms-3.promptLetter; .feedback; ex-u22-half-forms-3.display	prov-ex-u22-half-forms-3-ru	Same	Same file:17
+
+
+The latter two occur in required checks. The first occurs in guided work.
+
+Unit 23
+
+Text	Admitting record; path	Pin	Replacement
+
+Анна читала статью два часа	prov-u23-completion-5; O	A	NONE preserving the required contrast
+Борис писал письмо час	prov-u23-completion-7; O	A	NONE
+Анна прочитала статью за два часа	prov-u23-completion-6; O	A	NONE preserving the required contrast
+
+
+The capability also passes the explicit synthesis exception at V2Validator.kt:3106–3107. D6b already directs the approved intake search for an attested duration/completion pair.
+
+Unit 24
+
+Text	Admitting record; path	Pin	Replacement
+
+Я не ви́жу э́ту кни́гу	prov-ca-repair-24-10815 / 10823; C	—	R2, removing the demonstrative as D7c directs
+Я не ви́жу книг	prov-ca-repair-24-10827 / 10835; C	—	R3; rebuild the number/case reading rather than treating it as unambiguous genitive plural
+не́кого спросить	prov-ca-u24-absence-participant-0; C	—	NONE as a construction
+не́кому	prov-ca-24-166; C	—	NONE
+не́кем	prov-ca-24-167; C	—	NONE
+э́ту кни́гу	prov-ca-24-566; C	—	R4, word-only; full context can use R2
+
+
+The approved Wiktionary “некого” intake must verify the construction and stress forms before those entries can leave the allowlist.
+
+Unit 26
+
+Text	Admitting record; path	Pin	Replacement
+
+Анна Петрова	prov-ca-u26-postal-coverage-20; C; legacy record prov-obj-u26-postal-address-14 uses O	C-pin/N	R5, name-label candidate only
+Республика Татарстан	prov-ca-u26-postal-coverage-50; C; legacy record prov-obj-u26-postal-address-38 uses O	C-pin/N	R6, region-label candidate only
+
+
+Neither candidate establishes the complete address or the administrative/address-format claims.
+
+Additional FALSE-FAIL: Уважаемый Иван Иванович is witnessed at readyrussian/letter.html:76. Inline spans divide Иванович; stripping them must preserve word continuity. Record: prov-ex-u26-letter-writing-1-ru; validator 2881–2882. Locations: u26-st-teach-letter-writing-2.body, u26-st-rem-letter-writing.body, ex-u26-letter-writing-1.display. It is excluded from the allowlist.
+
+Unit 27
+
+Text	Admitting record; path	Pin	Replacement
+
+оставляемы́й	prov-obj-u27-stress-10; O; also C contrast records	N	R7
+обсуждаемы́й	prov-obj-u27-stress-16; O; also C contrast records	N	R8
+написанное Анной	prov-obj-u27-comprehension-14; O; live check uses prov-ca-u27-remaining-comprehension-host-7; C	C-pin/N	R11, writer-identification rebuilding candidate
+лежит на столе	prov-obj-u27-comprehension-39; O	N	NONE preserving the existing letter passage
+Анна убрала прочитанное письмо	prov-obj-u27-comprehension-40; O; live record prov-ca-u27-remaining-comprehension-host-5; C	C-pin/N	NONE
+прочитанное письмо	prov-obj-u27-comprehension-28; O; live record prov-ca-u27-remaining-comprehension-host-21; C	C-pin/N	NONE as a phrase; R12 is a word-only candidate
+написа́нный	prov-obj-u27-stress-21; O	N	R9
+прочита́нный	prov-obj-u27-stress-27; O	N	R10
+
+
+The four missing-stress forms are deliberately presented as rejected variants. They still fail the strict rule. Replacing them directly with R7–R10 would duplicate the correct answers, so those stress contrasts require redesign.
+
+Unit 28
+
+Text	Admitting record; path	Pin	Replacement
+
+написав письмо	prov-ca-28-389; C	C-pin on the live perfective capability	NONE preserving the future-main-action check
+она отправит его завтра	prov-ca-28-390; C	Same	NONE
+
+
+The live checks bind the complete sentence through prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8. That capability is pinned at ContentAuditCapabilityPins.kt:14.
+
+Unit 29
+
+All nine native punctuation spans below lack frozen files. The records are covered by the existing exact unfrozen-record exception; the four required punctuation contexts also have T pins.
+
+Text	Admitting native record; path	Pin	Replacement
+
+Воспитанный в традициях Фоппы	prov-u29-punctuation-native-pronoun-region-0; U	T/U-pin	NONE
+Бернардо Дзенале и Амброджо Бергоньоне	prov-u29-punctuation-native-pronoun-region-1; U	T/U-pin	NONE
+он прошёл обучение в мастерской Леонардо	prov-u29-punctuation-native-pronoun-region-2; U	T/U-pin	NONE
+Изумлённый этим хохотом	prov-u29-punctuation-native-cause-region-0; U	T/U-pin	NONE
+Павел сел на пол и смотрел куда-то в угол	prov-u29-punctuation-native-cause-ru, with cause-region-1/2 supplying coverage across the hyphen; U	T/U-pin	NONE
+нависшая над высокими вершинами тополей	prov-u29-punctuation-native-after-region-1; U	T/U-pin	NONE
+уже сыпала дождиком	prov-u29-punctuation-native-after-region-2; U	T/U-pin	NONE
+Вдали виднеется маяк	prov-u29-punctuation-native-terminal-region-0; U	T/U-pin	NONE
+стоящий у моря	prov-u29-punctuation-native-terminal-region-1; U	T/U-pin	NONE
+
+
+The already approved “Больтраффио,” oldid 149826784, and “Обособление,” oldid 144053197, intake covers the intended witnesses.
+
+Other text	Admitting record; path	Pin	Replacement
+
+Закончив письмо	prov-obj-u29-register-35; prov-obj-u29-reading-16; O	N for register; A for reading	R13 for rebuilding the register pair; NONE preserving the existing reading passage
+Анна пошла на почту	prov-obj-u29-register-37; O	N	R13, rebuilding the register pair
+Анна закончила письмо и пошла на почту	prov-obj-u29-register-38; O	N	R13, rebuilding the register pair
+Написанное письмо лежит на столе	prov-obj-u29-register-39; O	N	R11, rebuilding the passive-participle foil
+Анна пошла на почту и отправила его	prov-obj-u29-reading-38; O	A	NONE
+отправила его	prov-obj-u29-reading-5; O	A	NONE
+пошла на почту	prov-obj-u29-reading-24; O	A	NONE
+
+
+Unit 30
+
+Text	Admitting record; path	Pin	Replacement
+
+Книга лежит на столе	prov-obj-u30-dictionary-24 / 46; O	A	R14, rebuilding the furniture-sense example
+
+
+Other FALSE-FAILs
+
+Unit	Text	Cause and frozen witness
+
+19	Затме́ние должно́ наступи́ть в три часа́	Piped link; units-16-20/wiktionary/dolzhen-84965088.txt:41
+19	Слу́жащие должны́ во́время явля́ться на рабо́ту	Piped links; same file:38
+20	Они у́летят из Владивостока через месяц	Bold-vowel conversion; Russian grammar:1383 contains Они '''у'''летят…. With the extraction fix, the manufactured acute is absent.
+
+
+D9-excluded lists
+
+Units	List	Owner/field
+
+1	Е Ё Ю Я	obj-u1-iotated.title; u1-st-iotated.title; ref-iotated.summary
+1	Ь Ъ Й	obj-u1-signs.title
+1, 2	В Н Р С У Х	ref-confusable.summary, linked in both units
+
+
+These four unit/text findings are excluded from all totals and the allowlist.
+
+1. Per-unit totals: Units 16–30
+
+“Required texts” counts distinct failing texts occurring inside required checks. “Checks” counts distinct affected required item IDs.
+
+Unit	Real failures	FALSE-FAIL	Required texts	Checks
+
+16	0	0	0	0
+17	0	0	0	0
+18	0	0	0	0
+19	0	2	0	0
+20	0	1	0	0
+21	3	0	2	1
+22	0	3	0	0
+23	3	0	2	2
+24	6	0	3	3
+25	0	0	0	0
+26	2	1	2	3
+27	8	0	6	6
+28	2	0	2	2
+29	16	0	15	10
+30	1	0	1	1
+Total	41	7	33	28
+
+
+2. Whole-course grand totals: Units 1–30
+
+D9 changes Part 1’s four findings to exclusions. Units 1–15 therefore contribute zero to these totals.
+
+- 41 real unit/text failures: 35 UNATTESTED, six MISSING_STRESS.
+- 183 distinct unit/owner/field/text/type entries.
+- 33 failing texts occur in 28 required checks, across 63 owner/field entries.
+- Seven FALSE-FAILs, excluded.
+- Four D9 unit/text exclusions, representing three alphabet lists.
+
+3. Complete D7b allowlist
+
+UNATTESTED means no frozen phrase witness. MISSING_STRESS means no exact frozen evidence for the displayed stress.
+
+The same complete block is available as codex-d7b-allowlist.txt.
+
+21 | u21-i-object-reference-2.distractorRationales[1] | Он поранил его | UNATTESTED
+21 | u21-i-object-reference-2.distractorRationales[1] | Он поранил себя | UNATTESTED
+21 | u21-i-object-reference-2.feedback | Он поранил его | UNATTESTED
+21 | u21-i-object-reference-2.feedback | Он поранил себя | UNATTESTED
+21 | u21-i-object-reference-2.promptLetter | Он поранил себя | UNATTESTED
+21 | u21-st-rem-object-reference.body | Он поранил его | UNATTESTED
+21 | u21-st-rem-object-reference.body | Он поранил себя | UNATTESTED
+21 | u21-st-rem-object-reference.body | Я люблю́ свою́ жену́ | UNATTESTED
+21 | u21-st-teach-object-reference-2.body | Я люблю́ свою́ жену́ | UNATTESTED
+21 | u21-st-teach-object-reference-3.body | Он поранил его | UNATTESTED
+21 | u21-st-teach-object-reference-3.body | Он поранил себя | UNATTESTED
+23 | ex-u23-completion-0.display | Анна читала статью два часа | UNATTESTED
+23 | ex-u23-completion-1.display | Анна прочитала статью за два часа | UNATTESTED
+23 | u23-g-completion-1.feedback | Борис писал письмо час | UNATTESTED
+23 | u23-g-completion-1.promptLetter | Борис писал письмо час | UNATTESTED
+23 | u23-i-completion-1.feedback | Анна читала статью два часа | UNATTESTED
+23 | u23-i-completion-1.promptLetter | Анна читала статью два часа | UNATTESTED
+23 | u23-i-completion-2.feedback | Анна прочитала статью за два часа | UNATTESTED
+23 | u23-i-completion-2.promptLetter | Анна прочитала статью за два часа | UNATTESTED
+23 | u23-st-rem-completion.body | Анна прочитала статью за два часа | UNATTESTED
+23 | u23-st-rem-completion.body | Анна читала статью два часа | UNATTESTED
+23 | u23-st-rem-completion.body | Борис писал письмо час | UNATTESTED
+23 | u23-st-teach-completion-1.body | Анна читала статью два часа | UNATTESTED
+23 | u23-st-teach-completion-1.body | Борис писал письмо час | UNATTESTED
+23 | u23-st-teach-completion-2.body | Анна прочитала статью за два часа | UNATTESTED
+24 | ex-u24-alternation-0.display | Я не ви́жу книг | UNATTESTED
+24 | ex-u24-stand-ins-2.display | не́кого спросить | UNATTESTED
+24 | u24-g-alternation-0.distractorRationales[1] | э́ту кни́гу | UNATTESTED
+24 | u24-g-alternation-0.feedback | Я не ви́жу э́ту кни́гу | UNATTESTED
+24 | u24-g-alternation-0.feedback | э́ту кни́гу | UNATTESTED
+24 | u24-g-alternation-0.promptLetter | Я не ви́жу э́ту кни́гу | UNATTESTED
+24 | u24-i-alternation-1.distractorRationales[1] | Я не ви́жу книг | UNATTESTED
+24 | u24-i-alternation-2.distractorRationales[1] | э́ту кни́гу | UNATTESTED
+24 | u24-i-alternation-2.feedback | Я не ви́жу книг | UNATTESTED
+24 | u24-i-alternation-2.promptLetter | Я не ви́жу книг | UNATTESTED
+24 | u24-i-stand-ins-2.feedback | не́кого спросить | UNATTESTED
+24 | u24-i-stand-ins-2.promptLetter | не́кого спросить | UNATTESTED
+24 | u24-st-rem-alternation.body | Я не ви́жу книг | UNATTESTED
+24 | u24-st-rem-alternation.body | Я не ви́жу э́ту кни́гу | UNATTESTED
+24 | u24-st-rem-stand-ins.body | не́кем | MISSING_STRESS
+24 | u24-st-rem-stand-ins.body | не́кого спросить | UNATTESTED
+24 | u24-st-rem-stand-ins.body | не́кому | MISSING_STRESS
+24 | u24-st-teach-alternation-1.body | Я не ви́жу книг | UNATTESTED
+24 | u24-st-teach-alternation-1.body | Я не ви́жу э́ту кни́гу | UNATTESTED
+24 | u24-st-teach-stand-ins-2.body | не́кого спросить | UNATTESTED
+24 | u24-st-teach-stand-ins-3.body | не́кем | MISSING_STRESS
+24 | u24-st-teach-stand-ins-3.body | не́кому | MISSING_STRESS
+26 | ex-u26-postal-1.display | Анна Петрова | UNATTESTED
+26 | ex-u26-postal-1.display | Республика Татарстан | UNATTESTED
+26 | u26-i-postal-1.promptLetter | Анна Петрова | UNATTESTED
+26 | u26-i-postal-11.promptLetter | Анна Петрова | UNATTESTED
+26 | u26-i-postal-11.promptLetter | Республика Татарстан | UNATTESTED
+26 | u26-i-postal-6.promptLetter | Республика Татарстан | UNATTESTED
+26 | u26-postal-remediate.body | Анна Петрова | UNATTESTED
+26 | u26-postal-remediate.body | Республика Татарстан | UNATTESTED
+26 | u26-postal-teach-1.body | Анна Петрова | UNATTESTED
+26 | u26-postal-teach-1.body | Республика Татарстан | UNATTESTED
+26 | u26-postal-teach-2.body | Анна Петрова | UNATTESTED
+26 | u26-postal-teach-2.body | Республика Татарстан | UNATTESTED
+27 | ex-u27-comp-1.display | лежит на столе | UNATTESTED
+27 | ex-u27-comp-1.display | написанное Анной | UNATTESTED
+27 | ex-u27-comp-2.display | Анна убрала прочитанное письмо | UNATTESTED
+27 | u27-comp-remediate.body | Анна убрала прочитанное письмо | UNATTESTED
+27 | u27-comp-remediate.body | лежит на столе | UNATTESTED
+27 | u27-comp-remediate.body | написанное Анной | UNATTESTED
+27 | u27-comp-remediate.body | прочитанное письмо | UNATTESTED
+27 | u27-comp-teach-1.body | лежит на столе | UNATTESTED
+27 | u27-comp-teach-1.body | написанное Анной | UNATTESTED
+27 | u27-comp-teach-2.body | Анна убрала прочитанное письмо | UNATTESTED
+27 | u27-comp-teach-2.body | прочитанное письмо | UNATTESTED
+27 | u27-g-comp-1.promptLetter | лежит на столе | UNATTESTED
+27 | u27-g-comp-1.promptLetter | написанное Анной | UNATTESTED
+27 | u27-g-stress-1.distractorRationales[1] | оставляемы́й | MISSING_STRESS
+27 | u27-g-stress-1.options[1] | оставляемы́й | MISSING_STRESS
+27 | u27-g-stress-past.distractorRationales[1] | написа́нный | MISSING_STRESS
+27 | u27-g-stress-past.feedback | написа́нный | MISSING_STRESS
+27 | u27-g-stress-past.options[1] | написа́нный | MISSING_STRESS
+27 | u27-i-comp-1.promptLetter | написанное Анной | UNATTESTED
+27 | u27-i-comp-2.feedback | Анна убрала прочитанное письмо | UNATTESTED
+27 | u27-i-comp-2.promptLetter | Анна убрала прочитанное письмо | UNATTESTED
+27 | u27-i-comp-3.promptLetter | прочитанное письмо | UNATTESTED
+27 | u27-i-stress-1.distractorRationales[1] | обсуждаемы́й | MISSING_STRESS
+27 | u27-i-stress-1.options[1] | обсуждаемы́й | MISSING_STRESS
+27 | u27-i-stress-2.distractorRationales[1] | написа́нный | MISSING_STRESS
+27 | u27-i-stress-2.options[1] | написа́нный | MISSING_STRESS
+27 | u27-i-stress-3.distractorRationales[1] | прочита́нный | MISSING_STRESS
+27 | u27-i-stress-3.options[1] | прочита́нный | MISSING_STRESS
+27 | u27-st-rem-present-passive.body | обсуждаемы́й | MISSING_STRESS
+27 | u27-st-rem-present-passive.body | оставляемы́й | MISSING_STRESS
+27 | u27-st-teach-present-passive-2.body | обсуждаемы́й | MISSING_STRESS
+27 | u27-st-teach-present-passive-2.body | оставляемы́й | MISSING_STRESS
+27 | u27-stress-remediate.body | написа́нный | MISSING_STRESS
+27 | u27-stress-remediate.body | прочита́нный | MISSING_STRESS
+27 | u27-stress-teach-1.body | написа́нный | MISSING_STRESS
+27 | u27-stress-teach-1.body | прочита́нный | MISSING_STRESS
+28 | u28-i-perfective-adverb-1.feedback | написав письмо | UNATTESTED
+28 | u28-i-perfective-adverb-1.feedback | она отправит его завтра | UNATTESTED
+28 | u28-i-perfective-adverb-1.promptLetter | написав письмо | UNATTESTED
+28 | u28-i-perfective-adverb-1.promptLetter | она отправит его завтра | UNATTESTED
+28 | u28-i-perfective-adverb-2.feedback | написав письмо | UNATTESTED
+28 | u28-i-perfective-adverb-2.feedback | она отправит его завтра | UNATTESTED
+28 | u28-i-perfective-adverb-2.promptLetter | написав письмо | UNATTESTED
+28 | u28-i-perfective-adverb-2.promptLetter | она отправит его завтра | UNATTESTED
+28 | u28-st-rem-perfective-adverb.body | написав письмо | UNATTESTED
+28 | u28-st-rem-perfective-adverb.body | она отправит его завтра | UNATT
+[COORDINATOR NOTE: this delivery was truncated in the allowlist at the Unit 28 rem-perfective-adverb line. The remainder (rest of 28, 29, 30, and section 4 intake pages) is in a separate file.]
