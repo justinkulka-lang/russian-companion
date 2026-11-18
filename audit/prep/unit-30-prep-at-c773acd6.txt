@@ -1,0 +1,279 @@
+Inspected c773acd6c04708c9d42b13819eb631cbb1a73f65. No tracked files changed; nothing committed or pushed. Only Unit30 was rescanned. The closing table uses the earlier reports and recorded decisions.
+
+The dictionary sentence has a lawful replacement. It preserves the noun-sense question, but its capability and application bindings need updating. A separate length guard currently rejects the short glosses supplied by the frozen dictionary rows.
+
+Frozen-source aliases
+
+Paths are relative to catalog/sources/.
+
+Alias	Frozen file
+
+R14	units-3-5/wikibooks/prepositions-4446858.txt
+A	units-26-30/wikipedia/russian-alphabet-1371795481.txt
+G	units-26-30/wikipedia/russian-grammar-1369617627.txt
+M	units-21-25/supplemental/morfologiya-148939075.txt
+W	units-26-30/wikibooks/various-stuff-3353858.txt
+N/V	units-3-5/openrussian/nouns.csv / verbs.csv, revision 50e210c…
+R	readyrussian/reading5.html
+
+
+1. A2-24 items
+
+Fresh Kotlin diagnostics: 12 exact-key-in-teaching findings and seven label/position findings.
+
+Items	Finding and fix
+
+u30-i-native-name-b/v	Exact-key exposure. Preserve Russian-name recognition; separate teaching from retrieval.
+u30-i-address-marks-1–2	Exact-key exposure; item1 also asks about the “first mark”. Test the component’s meaning instead of position. W:153–157.
+u30-i-abbreviation-1–2	Exact-key and label/position. Test the attested treatment of the abbreviation, not retrieval of a classification label. M:319 explicitly permits both declined and undeclined use of МИД.
+u30-i-particle-1–2	Exact-key and label/position; two-option advisories. Ask what the supplied construction expresses, with meaning-based alternatives. M:900–903.
+u30-i-capstone-1–2	Exact-key exposure; two-option advisories. Use distinct event questions/cues from the complete frozen story. R:87.
+u30-i-dictionary-1–2	Exact-key exposure. Preserve genuine entry-to-sense lookup; remove explicit answer-selection coaching.
+u30-i-dictionary-4–5	Label/position findings. Their required information-limit features conflict with their current label-only format; see section8.
+
+
+The furniture-example check, u30-i-dictionary-3, has no automatic A2-24 finding, but its Russian sentence fails frozen attestation.
+
+2. A2-23 and typed candidates
+
+Current: 17 checked, 17 required, zero typed.
+
+Keeping that closed-check count requires eight typed additions: 25 checked, eight typed = 32%.
+
+A sourced letter-name review route avoids introducing new vocabulary or inferred stress:
+
+Typed key	Frozen witness	Teaching needed
+
+бэ	A:59	Already taught
+вэ	A:63	Already taught
+гэ	A:67	Add Unit30 review teaching first
+дэ	A:71	Add review teaching
+жэ	A:83	Add review teaching
+зэ	A:87	Add review teaching
+ка	A:99	Add review teaching
+эль	A:103	Add review teaching
+
+
+Every key matches the source’s Russian-name column exactly; no acute marks are added. Show the corresponding printed letter and ask for its Russian name. These keys differ from the displayed letter identities.
+
+Keep the existing closed checks. Add later retrieval sessions and update exact objective/data pins without weakening their existing constraints.
+
+3. English-only fact inventory
+
+Scope: Unit30 feedback/remediation in audit/T15-n0-unmarked-russian-facts.csv.
+
+There are 183 entries overall; 105 English-only entries, representing 81 distinct sentence texts. The other 78 contain Cyrillic.
+
+Recommended dispositions:
+
+CSV physical rows, English-only entries	MARK	REWORD	REMOVE
+
+4173–4187: letter-name commentary	0	0	6
+4191–4217: initialisms	15	0	8
+4218–4244: address marks	16	0	5
+4252–4263: abbreviation treatment	5	0	2
+4279–4287: particles	3	1	3
+4299–4305: reading	4	0	0
+4312–4339: dictionary skills	0	10	12
+4340–4354: reference wording	10	0	5
+Total	53	11	41
+
+
+- MARK: cite A’s actual name rows; G:233–240; W:153–162; M:319,900–903; R:87. Strip source narration before retaining the factual explanation.
+- REWORD dictionary entries: use the witnessed example and licensed dictionary glosses. Replace the unsupported long-definition wording and answer boilerplate.
+- REWORD row4284: use a bounded instruction about reading the complete conditional example, rather than extending its translation into an unsourced general statement.
+- REMOVE: repeated answer fragments, assessment commentary and “Admitted/Rejected reading” boilerplate.
+
+PENDING-S1/PENDING-INTAKE: zero under this rewrite plan. Capability changes remain necessary.
+
+4. Teaching errors and qualifications
+
+Owner/field	Finding
+
+u30-dictionary-teach-1.body, remediation	Uses the unattested singular book sentence. Replace the complete sentence, including plural лежат.
+Dictionary entries and explanations	“A piece of furniture with a flat top” and “remaining upright on a base” are independently authored synthesis wording. No matching frozen wording was found. N:32 supplies table, desk…; V:11 supplies stand.
+u30-dictionary-teach-2.body	Ваза стоит на столе. is already witnessed at R14:134 and can stay.
+Abbreviation teaching	Preserve M:319’s allowance for both в МИД and в МИДе. Do not teach one as universally forbidden.
+Initialism teaching	Keep grammatical agreement separate from changing the initialism’s form. G:233–240 supports the bounded СССР/США treatment.
+Capstone teaching	Preserve the story’s actor and event sequence, including the grammatical reference of the dog’s description.
+
+
+5. A2-26 lint and missed text
+
+Automatic results: 98 governance hits, two narration hits, zero markup hits.
+
+The narration hits are obj-u30-dictionary.title and u30-s-dictionary.title.
+
+(a) Source narration missed by the narration detector
+
+Owners	Fields / patterns
+
+Letter-name reference items	Prompts, feedback, rationales: “frozen table”, row/respelling placement
+Address-mark items	Prompts/rationales: “frozen note glosses…”
+Abbreviation items and teaching	Source-assigned categories and retained-example framing
+Particle items and teaching	Source-given labels rather than direct meaning
+Capstone teaching/remediation	Retained-story framing
+Dictionary teaching/remediation	“The retained entry…”
+Dictionary items	“Admitted reading…” and rejected-reading narration
+
+
+Some receive separate governance hits.
+
+(b) Exercise/assessment commentary
+
+Owners	Fields / issue
+
+Letter-name teaching/remediation and feedback	What textual recognition demonstrates; English respelling comparisons
+Address-mark teaching/remediation	“first mark” coaching and what the checks prove
+Abbreviation/particle remediation	What the small example set does or does not assess
+Dictionary teaching2/remediation	Instructions to select an information-limit answer from a label or row
+Dictionary items	Repeated answer/rejected-answer fragments
+Book and companion directions	Repeated licensing, approval and demonstrated-ability commentary
+
+
+Keep short operating instructions and the single neutral self-attestation notice allowed by D8.
+
+(c) Raw table-cell markup
+
+None found in Unit30 learner-facing fields.
+
+6. Phrase scan and exact dictionary rebuild
+
+Fresh results:
+
+- 22 distinct phrase spans: 21 pass, one fails.
+- Nine stressed forms: all have exact frozen stress.
+- No additional D15c composed-sentence failure.
+- No extraction-bug false failure.
+
+The known failure has four allowlist locations:
+
+Owner.field	Current text
+
+ex-u30-dictionary-1.display	Книга лежит на столе
+u30-dictionary-teach-1.body	Книга лежит на столе
+u30-dictionary-remediate.body	Книга лежит на столе
+u30-i-dictionary-3.promptLetter	Книга лежит на столе.
+
+
+Replace it everywhere with:
+
+> Книга и вещи лежат на столе.
+
+
+
+R14:135 contains that complete sentence and its translation on one frozen line. Do not retain the singular verb from the old sentence or shorten the source into another unwitnessed sentence.
+
+The dictionary block, teaching, remediation, example, assessment cue and provenance/application tuple must move together.
+
+What the rebuilt question tests
+
+Ask the learner to resolve столе to the noun entry and select its contextual sense—table/desk, rather than the standing verb.
+
+It tests:
+
+1. recognising an inflected form belonging to стол;
+2. consulting that entry’s meaning;
+3. applying that meaning within the witnessed sentence.
+
+The plural subjects and лежат do not change the target noun sense. The question should focus on столе, not test plural-verb agreement or identify a dictionary field heading.
+
+Use the frozen gloss rather than retaining the synthetic flat-top definition.
+
+Fresh JVM probe:
+
+Old sentence: furniture-sense predicate=true
+Frozen replacement: furniture-sense predicate=true
+Entries accepted with short licensed glosses=0
+
+Thus the Russian replacement preserves the existing semantic check. The last result exposes the separate minimum-length restriction.
+
+7. Shared references
+
+Only ref-u2630-attribution, shared with Units26–30. Preserve its attribution function; it is not a witness for the dictionary synthesis.
+
+8. Synthesis reliance and blocking constraints
+
+Unit30 has 298 provenance records:
+
+- 156 content-audit synthesis
+- 56 original synthesis
+- 86 licensed-source records
+- Zero current russian-fact markers
+
+The dictionary capability remains bound to phase3:dictionary-use, hash 3ff0ca9b….
+
+Material	Admitting record
+
+Complete synthetic noun entry	prov-obj-u30-dictionary-0
+Synthetic verb entry	prov-obj-u30-dictionary-1
+Unattested sentence cue	prov-obj-u30-dictionary-24
+Unpunctuated sentence coverage	prov-obj-u30-dictionary-46
+Long English sense wording	Records7,15,17,25 and corresponding applications
+
+
+The Russian membership shortcut is V2Validator.kt:5233–5264; original-synthesis identity validation is5738–5758. These do not prove frozen attestation. Marker enforcement excludes synthesis-only support at5534–5539.
+
+Every identified rebuild constraint
+
+File:line	Constraint
+
+V2Validator.kt:1125	Dictionary-use remains a required capability.
+Phase3Sources.kt:98–110	Exact synthesis identity and five named independent features.
+V2Validator.kt:1329–1331	A directly licensed replacement fails the current Phase3 admission requirement.
+:1357–1378	Capability identity/span must resolve to matching provenance for the correct unit/objective.
+:1409–1417, :1812–1834, :2101–2110	Exact late-unit admission and reviewable instructional-chain requirements.
+:1932–1935	The direct dictionary route admits the existing narrow dictionary span; other replacements fail that route.
+:1452–1455,2497–2506	Practical entry-to-sense application must remain; a heading or form row cannot substitute.
+:2456–2465	Entry parser requires headword, part of speech, distinct forms—and sense length ≥12. This rejects licensed short glosses such as “table, desk” and “stand”.
+:2513–2528	Requires a substantive answer, one governing entry, an inflected form in the cue and that entry’s sense in the answer. Field-label recall and bare headwords/form rows do not qualify.
+:1639–1665	Original application binding and applications must match the original synthesis span.
+OriginalApplicationTuplePins.kt:9,16–24	Additional dictionary application-tuple hash prevents changing the example under the old identity.
+V2Validator.kt:1684–1689	Named independent features and stated-application relations must survive or be explicitly redesigned.
+:1694–1714	Answer-specific feedback, competing-option explanations and remediation remain required.
+:1716–1732	Distinct guided/independent checks; no source-layout recall substitution.
+Aud57CorrectionTest.kt:39–46	Explicitly asserts the old example and both synthetic long definitions. These expectations must change with an approved rebuild.
+V2Validator.kt:1607–1608	The capstone reading cannot substitute for dictionary-use evidence.
+
+
+Two issues need explicit treatment:
+
+- Short licensed senses: remove the arbitrary length obstacle while retaining actual form-to-entry-to-sense checks. Padding a gloss to satisfy it would not supply evidence.
+- Dictionary4–5: POS_LABEL_INSUFFICIENT and FORMS_ROW_INSUFFICIENT currently require independent checks that the A2-24 diagnostics flag as label/position tasks. Their assessment design/features need resolution; they must not simply be deleted.
+
+Feasibility: Unit30 has sufficient frozen material for 25 checked/eight typed, and needs no S1/S2 source for the proposed rebuild. Completion requires dictionary capability/tuple rebinding, short-gloss handling, resolution of the two label-only checks, and A2-24/lint cleanup. D12–D16 contain no Unit30-specific authorization for these rule changes.
+
+Units 11–30 summary
+
+Earlier reports were used without rescanning Units11–29. Allowlist figures are owner/field/text lines, not distinct Russian strings. Counts are feasible targets, not completed-unit claims.
+
+Unit27’s target accounts for retiring stress4 under D14. Unit29’s target accounts for retiring register4–5 under D16.
+
+Unit	Feasible checked/typed	Real allowlist entries	Intake needed	Capability/validator changes
+
+11	20/12	0	None	None identified
+12	20/8	0	S1: Grammatical aspect; Вид (лингвистика)	None identified
+13	20/11	0	S1: Sequence of tenses; aspect pages	None identified
+14	20/14	0	S1: aspect pages	None identified
+15	20/14	0	None for bounded plan; aspect-in-requests gap accepted under D4	None
+16	20/8	0	S1: Wiktionary под	None identified
+17	36/11	0	S1: ReadyRussian Grammar24—Capitalization, licensed portions only	Yes: count-question rule; earlier D1
+18	20/16	0	None	None identified
+19	20/12	0	S1: Сослагательное наклонение; Wiktionary бы	Yes: probability binding; earlier D2
+20	20/12	0	None	Data-pin update only; no semantic rule change
+21	20/14	11	S1: Reflexive pronoun1374712982; Wiktionary чтобы/дабы	Native/application pin updates; no D12–D16 rule change
+22	20/6	0	S1: двое; Имя числительное в русском языке	None identified
+23	20/8*	14	S1: aspect pages; назад; за; attested duration/completion pair	Yes: completion admission/tuple; earlier D6b
+24	20/6*	22	S1: Wiktionary некого; frozen G:55 rebuild	Application rebinding; earlier D7c
+25	23/7	0	None	Yes — D12
+26	33/10†	12	S2: Почтовый адрес; Татарстан	Yes, conditional — D13
+27	20/10	40	None	Yes — D14
+28	20/14	25	None; Деепричастие removed from S2 by D16e	Yes — D15
+29	33/11	99	S1: Обособление144053197; Больтраффио149826784	Yes — D16
+30	25/8	4	None for proposed rebuild	Yes; no D12–D16 authorization yet
+
+
+* Numerical feasibility only: unresolved witnesses/admission still block completion.
+† If S2 supplies nothing and D13’s fallback retires postal6/11, retaining ten typed additions gives 31/10 instead.
+
+The recorded combined allowlist remains 227 entries.

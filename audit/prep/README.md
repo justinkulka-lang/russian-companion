@@ -26,5 +26,6 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - unit-28-prep-at-c773acd6.txt: Unit 28. Frozen-only rebuild from Gogol (R14) keeps the future-main-action check. Exposes the composed-sentence audit gap; see D15.
 - rescan-d15c-composed-at-c773acd6.txt: D15c sentence-level rescan. 44 new COMPOSED entries, all in Units 27-29; Units 1-26 and 30 are clean.
 - unit-29-prep-at-c773acd6.txt: Unit 29. S1 clears the punctuation checks; register and reading are rebuilt from G:2169, G:44 and V:47. See D16. S2 is now 2 pages.
+- unit-30-prep-at-c773acd6.txt: Unit 30, plus the Units 11-30 summary table. The dictionary check is rebuilt from R14:135; see D17. Prep is complete.
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
 - t15f-changed-learner-fields.csv: T15f, every changed learner field in Units 1-30 (442 rows: unit, owner, field, old, new) between 1bf80b92 and 34b714dd, for the Codex check of T15f.
