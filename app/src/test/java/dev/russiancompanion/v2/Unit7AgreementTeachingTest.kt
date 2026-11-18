@@ -24,13 +24,14 @@ class Unit7AgreementTeachingTest {
         val teaching = s.steps.filter { it.kind == "TEACH" }; val rem = p.step("u7-st-rem-endings")!!.second
         assertEquals(teaching.joinToString("\n\n") { it.body }, rem.body)
         val examples = p.unit(7)!!.objectives.single { it.id == "obj-u7-endings" }.exampleIds
-        assertEquals(11, examples.size)
+        // T15f: two attested case-phrase examples restored (accusative-4330404.txt:79, adjectives-4292379.txt:62): 11 -> 13.
+        assertEquals(13, examples.size)
         assertEquals(examples, rem.exampleIds)
         // T15b: the unattested book and window phrases become single sourced adjective and noun forms.
         assertTrue(s.steps[0].body.contains("но́вая becomes но́вую") && s.steps[0].body.contains("кни́га becomes кни́гу"))
         assertTrue(s.steps[1].body.contains("но́вое becomes но́вого") && s.steps[1].body.contains("окно́ becomes окна́"))
         assertTrue(rem.body.contains("Both words change in these supplied case pairs."))
-        assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u7-endings" && it.shippedText == rem.body && it.itemId == "prov-ca-u7-agreement-u7-st-rem-endings-complete-v1" })
+        assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u7-endings" && it.shippedText == rem.body && it.itemId == "prov-ca-t15f-u7-st-rem-endings-body" }) // T15f coverage of the new wording (was prov-ca-u7-agreement-u7-st-rem-endings-complete-v1)
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
     @Test fun wrongGenitiveChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer() = repairUi("u7-i-endings-1")
