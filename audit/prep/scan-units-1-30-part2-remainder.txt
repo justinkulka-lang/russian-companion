@@ -1,0 +1,97 @@
+28 | u28-st-rem-perfective-adverb.body | она отправит его завтра | UNATTESTED
+28 | u28-st-teach-perfective-adverb-2.body | написав письмо | UNATTESTED
+28 | u28-st-teach-perfective-adverb-2.body | она отправит его завтра | UNATTESTED
+29 | ex-u29-punctuation-context-after.display | нависшая над высокими вершинами тополей | UNATTESTED
+29 | ex-u29-punctuation-context-after.display | уже сыпала дождиком | UNATTESTED
+29 | ex-u29-punctuation-context-cause.display | Изумлённый этим хохотом | UNATTESTED
+29 | ex-u29-punctuation-context-cause.display | Павел сел на пол и смотрел куда-то в угол | UNATTESTED
+29 | ex-u29-punctuation-context-pronoun.display | Бернардо Дзенале и Амброджо Бергоньоне | UNATTESTED
+29 | ex-u29-punctuation-context-pronoun.display | Воспитанный в традициях Фоппы | UNATTESTED
+29 | ex-u29-punctuation-context-pronoun.display | он прошёл обучение в мастерской Леонардо | UNATTESTED
+29 | ex-u29-punctuation-context-terminal.display | Вдали виднеется маяк | UNATTESTED
+29 | ex-u29-punctuation-context-terminal.display | стоящий у моря | UNATTESTED
+29 | ex-u29-reading-1.display | Анна пошла на почту и отправила его | UNATTESTED
+29 | ex-u29-reading-1.display | Закончив письмо | UNATTESTED
+29 | ex-u29-reading-2.display | отправила его | UNATTESTED
+29 | ex-u29-register-1.display | Анна пошла на почту | UNATTESTED
+29 | ex-u29-register-1.display | Закончив письмо | UNATTESTED
+29 | ex-u29-register-2.display | Анна закончила письмо и пошла на почту | UNATTESTED
+29 | u29-i-punctuation-after.feedback | нависшая над высокими вершинами тополей | UNATTESTED
+29 | u29-i-punctuation-after.feedback | уже сыпала дождиком | UNATTESTED
+29 | u29-i-punctuation-after.promptLetter | нависшая над высокими вершинами тополей | UNATTESTED
+29 | u29-i-punctuation-after.promptLetter | уже сыпала дождиком | UNATTESTED
+29 | u29-i-punctuation-cause.feedback | Изумлённый этим хохотом | UNATTESTED
+29 | u29-i-punctuation-cause.feedback | Павел сел на пол и смотрел куда-то в угол | UNATTESTED
+29 | u29-i-punctuation-cause.promptLetter | Изумлённый этим хохотом | UNATTESTED
+29 | u29-i-punctuation-cause.promptLetter | Павел сел на пол и смотрел куда-то в угол | UNATTESTED
+29 | u29-i-punctuation-pronoun.feedback | Бернардо Дзенале и Амброджо Бергоньоне | UNATTESTED
+29 | u29-i-punctuation-pronoun.feedback | Воспитанный в традициях Фоппы | UNATTESTED
+29 | u29-i-punctuation-pronoun.feedback | он прошёл обучение в мастерской Леонардо | UNATTESTED
+29 | u29-i-punctuation-pronoun.promptLetter | Бернардо Дзенале и Амброджо Бергоньоне | UNATTESTED
+29 | u29-i-punctuation-pronoun.promptLetter | Воспитанный в традициях Фоппы | UNATTESTED
+29 | u29-i-punctuation-pronoun.promptLetter | он прошёл обучение в мастерской Леонардо | UNATTESTED
+29 | u29-i-punctuation-terminal.feedback | Вдали виднеется маяк | UNATTESTED
+29 | u29-i-punctuation-terminal.feedback | стоящий у моря | UNATTESTED
+29 | u29-i-punctuation-terminal.promptLetter | Вдали виднеется маяк | UNATTESTED
+29 | u29-i-punctuation-terminal.promptLetter | стоящий у моря | UNATTESTED
+29 | u29-i-reading-1.promptLetter | Закончив письмо | UNATTESTED
+29 | u29-i-reading-2.promptLetter | пошла на почту | UNATTESTED
+29 | u29-i-reading-3.promptLetter | отправила его | UNATTESTED
+29 | u29-i-register-1.promptLetter | Анна пошла на почту | UNATTESTED
+29 | u29-i-register-1.promptLetter | Закончив письмо | UNATTESTED
+29 | u29-i-register-2.promptLetter | Анна закончила письмо и пошла на почту | UNATTESTED
+29 | u29-i-register-3.promptLetter | Написанное письмо лежит на столе | UNATTESTED
+29 | u29-reading-remediate.body | Анна пошла на почту и отправила его | UNATTESTED
+29 | u29-reading-remediate.body | Закончив письмо | UNATTESTED
+29 | u29-reading-remediate.body | отправила его | UNATTESTED
+29 | u29-reading-teach-1.body | Анна пошла на почту и отправила его | UNATTESTED
+29 | u29-reading-teach-1.body | Закончив письмо | UNATTESTED
+29 | u29-reading-teach-2.body | отправила его | UNATTESTED
+29 | u29-register-remediate.body | Анна закончила письмо и пошла на почту | UNATTESTED
+29 | u29-register-remediate.body | Анна пошла на почту | UNATTESTED
+29 | u29-register-remediate.body | Закончив письмо | UNATTESTED
+29 | u29-register-remediate.body | Написанное письмо лежит на столе | UNATTESTED
+29 | u29-register-teach-1.body | Анна закончила письмо и пошла на почту | UNATTESTED
+29 | u29-register-teach-1.body | Анна пошла на почту | UNATTESTED
+29 | u29-register-teach-1.body | Закончив письмо | UNATTESTED
+29 | u29-register-teach-2.body | Написанное письмо лежит на столе | UNATTESTED
+29 | u29-st-rem-punctuation.body | Бернардо Дзенале и Амброджо Бергоньоне | UNATTESTED
+29 | u29-st-rem-punctuation.body | Вдали виднеется маяк | UNATTESTED
+29 | u29-st-rem-punctuation.body | Воспитанный в традициях Фоппы | UNATTESTED
+29 | u29-st-rem-punctuation.body | Изумлённый этим хохотом | UNATTESTED
+29 | u29-st-rem-punctuation.body | Павел сел на пол и смотрел куда-то в угол | UNATTESTED
+29 | u29-st-rem-punctuation.body | нависшая над высокими вершинами тополей | UNATTESTED
+29 | u29-st-rem-punctuation.body | он прошёл обучение в мастерской Леонардо | UNATTESTED
+29 | u29-st-rem-punctuation.body | стоящий у моря | UNATTESTED
+29 | u29-st-rem-punctuation.body | уже сыпала дождиком | UNATTESTED
+29 | u29-st-teach-punctuation-3.body | Бернардо Дзенале и Амброджо Бергоньоне | UNATTESTED
+29 | u29-st-teach-punctuation-3.body | Воспитанный в традициях Фоппы | UNATTESTED
+29 | u29-st-teach-punctuation-3.body | Изумлённый этим хохотом | UNATTESTED
+29 | u29-st-teach-punctuation-3.body | Павел сел на пол и смотрел куда-то в угол | UNATTESTED
+29 | u29-st-teach-punctuation-3.body | он прошёл обучение в мастерской Леонардо | UNATTESTED
+29 | u29-st-teach-punctuation-4.body | Вдали виднеется маяк | UNATTESTED
+29 | u29-st-teach-punctuation-4.body | нависшая над высокими вершинами тополей | UNATTESTED
+29 | u29-st-teach-punctuation-4.body | стоящий у моря | UNATTESTED
+29 | u29-st-teach-punctuation-4.body | уже сыпала дождиком | UNATTESTED
+30 | ex-u30-dictionary-1.display | Книга лежит на столе | UNATTESTED
+30 | u30-dictionary-remediate.body | Книга лежит на столе | UNATTESTED
+30 | u30-dictionary-teach-1.body | Книга лежит на столе | UNATTESTED
+30 | u30-i-dictionary-3.promptLetter | Книга лежит на столе | UNATTESTED
+
+4. Candidate intake pages
+
+Already approved pages from owner-decisions-2026-11-16.txt are omitted. These candidates require checking for the needed examples before admission.
+
+Source/page	Needed coverage
+
+Russian Wikipedia “Почтовый адрес”	A verbatim complete postal model and explicit component/ordering support for Unit 26
+Russian Wikipedia “Татарстан”	Official regional name and the Kazan/region relationship used by the postal model
+Wikibooks “Russian/Grammar/Participles”	Attested passive-participle phrases/passages supporting Unit 27’s writer, reader and separate-action distinctions
+Russian Wiktionary “написанный”	Attested passive-agent usage examples; any explicitly documented stress contrast
+Russian Wiktionary “прочитанный”	Attested read-object/result-state phrases; any explicitly documented stress contrast
+Russian Wikipedia “Деепричастие”	An attested verbal-adverb construction with a future main predicate, and suitable bookish passage examples for Units 28–29
+
+
+No frozen replacement preserving the current Unit 29 letter/post-office reading passage was found. The existing frozen register pair at Russian grammar:2169 can support a register rewrite, but does not attest that passage.
+
+Total allowlist lines across both segments: 183 — 104 before this continuation, plus 79 here.

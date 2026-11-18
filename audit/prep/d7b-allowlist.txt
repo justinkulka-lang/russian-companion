@@ -1,0 +1,183 @@
+21 | u21-i-object-reference-2.distractorRationales[1] | Он поранил его | UNATTESTED
+21 | u21-i-object-reference-2.distractorRationales[1] | Он поранил себя | UNATTESTED
+21 | u21-i-object-reference-2.feedback | Он поранил его | UNATTESTED
+21 | u21-i-object-reference-2.feedback | Он поранил себя | UNATTESTED
+21 | u21-i-object-reference-2.promptLetter | Он поранил себя | UNATTESTED
+21 | u21-st-rem-object-reference.body | Он поранил его | UNATTESTED
+21 | u21-st-rem-object-reference.body | Он поранил себя | UNATTESTED
+21 | u21-st-rem-object-reference.body | Я люблю́ свою́ жену́ | UNATTESTED
+21 | u21-st-teach-object-reference-2.body | Я люблю́ свою́ жену́ | UNATTESTED
+21 | u21-st-teach-object-reference-3.body | Он поранил его | UNATTESTED
+21 | u21-st-teach-object-reference-3.body | Он поранил себя | UNATTESTED
+23 | ex-u23-completion-0.display | Анна читала статью два часа | UNATTESTED
+23 | ex-u23-completion-1.display | Анна прочитала статью за два часа | UNATTESTED
+23 | u23-g-completion-1.feedback | Борис писал письмо час | UNATTESTED
+23 | u23-g-completion-1.promptLetter | Борис писал письмо час | UNATTESTED
+23 | u23-i-completion-1.feedback | Анна читала статью два часа | UNATTESTED
+23 | u23-i-completion-1.promptLetter | Анна читала статью два часа | UNATTESTED
+23 | u23-i-completion-2.feedback | Анна прочитала статью за два часа | UNATTESTED
+23 | u23-i-completion-2.promptLetter | Анна прочитала статью за два часа | UNATTESTED
+23 | u23-st-rem-completion.body | Анна прочитала статью за два часа | UNATTESTED
+23 | u23-st-rem-completion.body | Анна читала статью два часа | UNATTESTED
+23 | u23-st-rem-completion.body | Борис писал письмо час | UNATTESTED
+23 | u23-st-teach-completion-1.body | Анна читала статью два часа | UNATTESTED
+23 | u23-st-teach-completion-1.body | Борис писал письмо час | UNATTESTED
+23 | u23-st-teach-completion-2.body | Анна прочитала статью за два часа | UNATTESTED
+24 | ex-u24-alternation-0.display | Я не ви́жу книг | UNATTESTED
+24 | ex-u24-stand-ins-2.display | не́кого спросить | UNATTESTED
+24 | u24-g-alternation-0.distractorRationales[1] | э́ту кни́гу | UNATTESTED
+24 | u24-g-alternation-0.feedback | Я не ви́жу э́ту кни́гу | UNATTESTED
+24 | u24-g-alternation-0.feedback | э́ту кни́гу | UNATTESTED
+24 | u24-g-alternation-0.promptLetter | Я не ви́жу э́ту кни́гу | UNATTESTED
+24 | u24-i-alternation-1.distractorRationales[1] | Я не ви́жу книг | UNATTESTED
+24 | u24-i-alternation-2.distractorRationales[1] | э́ту кни́гу | UNATTESTED
+24 | u24-i-alternation-2.feedback | Я не ви́жу книг | UNATTESTED
+24 | u24-i-alternation-2.promptLetter | Я не ви́жу книг | UNATTESTED
+24 | u24-i-stand-ins-2.feedback | не́кого спросить | UNATTESTED
+24 | u24-i-stand-ins-2.promptLetter | не́кого спросить | UNATTESTED
+24 | u24-st-rem-alternation.body | Я не ви́жу книг | UNATTESTED
+24 | u24-st-rem-alternation.body | Я не ви́жу э́ту кни́гу | UNATTESTED
+24 | u24-st-rem-stand-ins.body | не́кем | MISSING_STRESS
+24 | u24-st-rem-stand-ins.body | не́кого спросить | UNATTESTED
+24 | u24-st-rem-stand-ins.body | не́кому | MISSING_STRESS
+24 | u24-st-teach-alternation-1.body | Я не ви́жу книг | UNATTESTED
+24 | u24-st-teach-alternation-1.body | Я не ви́жу э́ту кни́гу | UNATTESTED
+24 | u24-st-teach-stand-ins-2.body | не́кого спросить | UNATTESTED
+24 | u24-st-teach-stand-ins-3.body | не́кем | MISSING_STRESS
+24 | u24-st-teach-stand-ins-3.body | не́кому | MISSING_STRESS
+26 | ex-u26-postal-1.display | Анна Петрова | UNATTESTED
+26 | ex-u26-postal-1.display | Республика Татарстан | UNATTESTED
+26 | u26-i-postal-1.promptLetter | Анна Петрова | UNATTESTED
+26 | u26-i-postal-11.promptLetter | Анна Петрова | UNATTESTED
+26 | u26-i-postal-11.promptLetter | Республика Татарстан | UNATTESTED
+26 | u26-i-postal-6.promptLetter | Республика Татарстан | UNATTESTED
+26 | u26-postal-remediate.body | Анна Петрова | UNATTESTED
+26 | u26-postal-remediate.body | Республика Татарстан | UNATTESTED
+26 | u26-postal-teach-1.body | Анна Петрова | UNATTESTED
+26 | u26-postal-teach-1.body | Республика Татарстан | UNATTESTED
+26 | u26-postal-teach-2.body | Анна Петрова | UNATTESTED
+26 | u26-postal-teach-2.body | Республика Татарстан | UNATTESTED
+27 | ex-u27-comp-1.display | лежит на столе | UNATTESTED
+27 | ex-u27-comp-1.display | написанное Анной | UNATTESTED
+27 | ex-u27-comp-2.display | Анна убрала прочитанное письмо | UNATTESTED
+27 | u27-comp-remediate.body | Анна убрала прочитанное письмо | UNATTESTED
+27 | u27-comp-remediate.body | лежит на столе | UNATTESTED
+27 | u27-comp-remediate.body | написанное Анной | UNATTESTED
+27 | u27-comp-remediate.body | прочитанное письмо | UNATTESTED
+27 | u27-comp-teach-1.body | лежит на столе | UNATTESTED
+27 | u27-comp-teach-1.body | написанное Анной | UNATTESTED
+27 | u27-comp-teach-2.body | Анна убрала прочитанное письмо | UNATTESTED
+27 | u27-comp-teach-2.body | прочитанное письмо | UNATTESTED
+27 | u27-g-comp-1.promptLetter | лежит на столе | UNATTESTED
+27 | u27-g-comp-1.promptLetter | написанное Анной | UNATTESTED
+27 | u27-g-stress-1.distractorRationales[1] | оставляемы́й | MISSING_STRESS
+27 | u27-g-stress-1.options[1] | оставляемы́й | MISSING_STRESS
+27 | u27-g-stress-past.distractorRationales[1] | написа́нный | MISSING_STRESS
+27 | u27-g-stress-past.feedback | написа́нный | MISSING_STRESS
+27 | u27-g-stress-past.options[1] | написа́нный | MISSING_STRESS
+27 | u27-i-comp-1.promptLetter | написанное Анной | UNATTESTED
+27 | u27-i-comp-2.feedback | Анна убрала прочитанное письмо | UNATTESTED
+27 | u27-i-comp-2.promptLetter | Анна убрала прочитанное письмо | UNATTESTED
+27 | u27-i-comp-3.promptLetter | прочитанное письмо | UNATTESTED
+27 | u27-i-stress-1.distractorRationales[1] | обсуждаемы́й | MISSING_STRESS
+27 | u27-i-stress-1.options[1] | обсуждаемы́й | MISSING_STRESS
+27 | u27-i-stress-2.distractorRationales[1] | написа́нный | MISSING_STRESS
+27 | u27-i-stress-2.options[1] | написа́нный | MISSING_STRESS
+27 | u27-i-stress-3.distractorRationales[1] | прочита́нный | MISSING_STRESS
+27 | u27-i-stress-3.options[1] | прочита́нный | MISSING_STRESS
+27 | u27-st-rem-present-passive.body | обсуждаемы́й | MISSING_STRESS
+27 | u27-st-rem-present-passive.body | оставляемы́й | MISSING_STRESS
+27 | u27-st-teach-present-passive-2.body | обсуждаемы́й | MISSING_STRESS
+27 | u27-st-teach-present-passive-2.body | оставляемы́й | MISSING_STRESS
+27 | u27-stress-remediate.body | написа́нный | MISSING_STRESS
+27 | u27-stress-remediate.body | прочита́нный | MISSING_STRESS
+27 | u27-stress-teach-1.body | написа́нный | MISSING_STRESS
+27 | u27-stress-teach-1.body | прочита́нный | MISSING_STRESS
+28 | u28-i-perfective-adverb-1.feedback | написав письмо | UNATTESTED
+28 | u28-i-perfective-adverb-1.feedback | она отправит его завтра | UNATTESTED
+28 | u28-i-perfective-adverb-1.promptLetter | написав письмо | UNATTESTED
+28 | u28-i-perfective-adverb-1.promptLetter | она отправит его завтра | UNATTESTED
+28 | u28-i-perfective-adverb-2.feedback | написав письмо | UNATTESTED
+28 | u28-i-perfective-adverb-2.feedback | она отправит его завтра | UNATTESTED
+28 | u28-i-perfective-adverb-2.promptLetter | написав письмо | UNATTESTED
+28 | u28-i-perfective-adverb-2.promptLetter | она отправит его завтра | UNATTESTED
+28 | u28-st-rem-perfective-adverb.body | написав письмо | UNATTESTED
+28 | u28-st-rem-perfective-adverb.body | она отправит его завтра | UNATTESTED
+28 | u28-st-teach-perfective-adverb-2.body | написав письмо | UNATTESTED
+28 | u28-st-teach-perfective-adverb-2.body | она отправит его завтра | UNATTESTED
+29 | ex-u29-punctuation-context-after.display | нависшая над высокими вершинами тополей | UNATTESTED
+29 | ex-u29-punctuation-context-after.display | уже сыпала дождиком | UNATTESTED
+29 | ex-u29-punctuation-context-cause.display | Изумлённый этим хохотом | UNATTESTED
+29 | ex-u29-punctuation-context-cause.display | Павел сел на пол и смотрел куда-то в угол | UNATTESTED
+29 | ex-u29-punctuation-context-pronoun.display | Бернардо Дзенале и Амброджо Бергоньоне | UNATTESTED
+29 | ex-u29-punctuation-context-pronoun.display | Воспитанный в традициях Фоппы | UNATTESTED
+29 | ex-u29-punctuation-context-pronoun.display | он прошёл обучение в мастерской Леонардо | UNATTESTED
+29 | ex-u29-punctuation-context-terminal.display | Вдали виднеется маяк | UNATTESTED
+29 | ex-u29-punctuation-context-terminal.display | стоящий у моря | UNATTESTED
+29 | ex-u29-reading-1.display | Анна пошла на почту и отправила его | UNATTESTED
+29 | ex-u29-reading-1.display | Закончив письмо | UNATTESTED
+29 | ex-u29-reading-2.display | отправила его | UNATTESTED
+29 | ex-u29-register-1.display | Анна пошла на почту | UNATTESTED
+29 | ex-u29-register-1.display | Закончив письмо | UNATTESTED
+29 | ex-u29-register-2.display | Анна закончила письмо и пошла на почту | UNATTESTED
+29 | u29-i-punctuation-after.feedback | нависшая над высокими вершинами тополей | UNATTESTED
+29 | u29-i-punctuation-after.feedback | уже сыпала дождиком | UNATTESTED
+29 | u29-i-punctuation-after.promptLetter | нависшая над высокими вершинами тополей | UNATTESTED
+29 | u29-i-punctuation-after.promptLetter | уже сыпала дождиком | UNATTESTED
+29 | u29-i-punctuation-cause.feedback | Изумлённый этим хохотом | UNATTESTED
+29 | u29-i-punctuation-cause.feedback | Павел сел на пол и смотрел куда-то в угол | UNATTESTED
+29 | u29-i-punctuation-cause.promptLetter | Изумлённый этим хохотом | UNATTESTED
+29 | u29-i-punctuation-cause.promptLetter | Павел сел на пол и смотрел куда-то в угол | UNATTESTED
+29 | u29-i-punctuation-pronoun.feedback | Бернардо Дзенале и Амброджо Бергоньоне | UNATTESTED
+29 | u29-i-punctuation-pronoun.feedback | Воспитанный в традициях Фоппы | UNATTESTED
+29 | u29-i-punctuation-pronoun.feedback | он прошёл обучение в мастерской Леонардо | UNATTESTED
+29 | u29-i-punctuation-pronoun.promptLetter | Бернардо Дзенале и Амброджо Бергоньоне | UNATTESTED
+29 | u29-i-punctuation-pronoun.promptLetter | Воспитанный в традициях Фоппы | UNATTESTED
+29 | u29-i-punctuation-pronoun.promptLetter | он прошёл обучение в мастерской Леонардо | UNATTESTED
+29 | u29-i-punctuation-terminal.feedback | Вдали виднеется маяк | UNATTESTED
+29 | u29-i-punctuation-terminal.feedback | стоящий у моря | UNATTESTED
+29 | u29-i-punctuation-terminal.promptLetter | Вдали виднеется маяк | UNATTESTED
+29 | u29-i-punctuation-terminal.promptLetter | стоящий у моря | UNATTESTED
+29 | u29-i-reading-1.promptLetter | Закончив письмо | UNATTESTED
+29 | u29-i-reading-2.promptLetter | пошла на почту | UNATTESTED
+29 | u29-i-reading-3.promptLetter | отправила его | UNATTESTED
+29 | u29-i-register-1.promptLetter | Анна пошла на почту | UNATTESTED
+29 | u29-i-register-1.promptLetter | Закончив письмо | UNATTESTED
+29 | u29-i-register-2.promptLetter | Анна закончила письмо и пошла на почту | UNATTESTED
+29 | u29-i-register-3.promptLetter | Написанное письмо лежит на столе | UNATTESTED
+29 | u29-reading-remediate.body | Анна пошла на почту и отправила его | UNATTESTED
+29 | u29-reading-remediate.body | Закончив письмо | UNATTESTED
+29 | u29-reading-remediate.body | отправила его | UNATTESTED
+29 | u29-reading-teach-1.body | Анна пошла на почту и отправила его | UNATTESTED
+29 | u29-reading-teach-1.body | Закончив письмо | UNATTESTED
+29 | u29-reading-teach-2.body | отправила его | UNATTESTED
+29 | u29-register-remediate.body | Анна закончила письмо и пошла на почту | UNATTESTED
+29 | u29-register-remediate.body | Анна пошла на почту | UNATTESTED
+29 | u29-register-remediate.body | Закончив письмо | UNATTESTED
+29 | u29-register-remediate.body | Написанное письмо лежит на столе | UNATTESTED
+29 | u29-register-teach-1.body | Анна закончила письмо и пошла на почту | UNATTESTED
+29 | u29-register-teach-1.body | Анна пошла на почту | UNATTESTED
+29 | u29-register-teach-1.body | Закончив письмо | UNATTESTED
+29 | u29-register-teach-2.body | Написанное письмо лежит на столе | UNATTESTED
+29 | u29-st-rem-punctuation.body | Бернардо Дзенале и Амброджо Бергоньоне | UNATTESTED
+29 | u29-st-rem-punctuation.body | Вдали виднеется маяк | UNATTESTED
+29 | u29-st-rem-punctuation.body | Воспитанный в традициях Фоппы | UNATTESTED
+29 | u29-st-rem-punctuation.body | Изумлённый этим хохотом | UNATTESTED
+29 | u29-st-rem-punctuation.body | Павел сел на пол и смотрел куда-то в угол | UNATTESTED
+29 | u29-st-rem-punctuation.body | нависшая над высокими вершинами тополей | UNATTESTED
+29 | u29-st-rem-punctuation.body | он прошёл обучение в мастерской Леонардо | UNATTESTED
+29 | u29-st-rem-punctuation.body | стоящий у моря | UNATTESTED
+29 | u29-st-rem-punctuation.body | уже сыпала дождиком | UNATTESTED
+29 | u29-st-teach-punctuation-3.body | Бернардо Дзенале и Амброджо Бергоньоне | UNATTESTED
+29 | u29-st-teach-punctuation-3.body | Воспитанный в традициях Фоппы | UNATTESTED
+29 | u29-st-teach-punctuation-3.body | Изумлённый этим хохотом | UNATTESTED
+29 | u29-st-teach-punctuation-3.body | Павел сел на пол и смотрел куда-то в угол | UNATTESTED
+29 | u29-st-teach-punctuation-3.body | он прошёл обучение в мастерской Леонардо | UNATTESTED
+29 | u29-st-teach-punctuation-4.body | Вдали виднеется маяк | UNATTESTED
+29 | u29-st-teach-punctuation-4.body | нависшая над высокими вершинами тополей | UNATTESTED
+29 | u29-st-teach-punctuation-4.body | стоящий у моря | UNATTESTED
+29 | u29-st-teach-punctuation-4.body | уже сыпала дождиком | UNATTESTED
+30 | ex-u30-dictionary-1.display | Книга лежит на столе | UNATTESTED
+30 | u30-dictionary-remediate.body | Книга лежит на столе | UNATTESTED
+30 | u30-dictionary-teach-1.body | Книга лежит на столе | UNATTESTED
+30 | u30-i-dictionary-3.promptLetter | Книга лежит на столе | UNATTESTED

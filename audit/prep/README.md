@@ -17,5 +17,7 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - unit-23-prep-at-19608a79.txt: Unit 23, report 1 of 2 for Units 23-24. Blocked: three unattested Russian example sentences for the completion check (Анна читала/прочитала…, Борис писал…), on a legacy synthesis exception. The completion claims need S1 aspect pages plus attested examples. Intake candidates: Wiktionary "назад" and "за".
 - unit-24-prep-at-19608a79.txt: Unit 24, report 2 of 2. Four unattested phrases and two unsupported stresses (не́кому, не́кем), admitted through the synthesis/coverage path. Key finding: V2Validator.kt:5233-5264 accepts Russian that matches any provenance shippedText, not only frozen files. See D7.
 - scan-units-1-30-part1-at-1f8777d1.txt: Units 1-30 no-witness Russian scan, Part 1 (Units 1-15). No lexical failures; only alphabet lists, which D9 exempts.
-- scan-units-1-30-part2-at-1f8777d1.txt: Units 1-30 scan, Part 2 (16-30), with the full accounting and the D7b allowlist. TRUNCATED; see the remainder file once it is saved. 41 real failures, 28 required checks. See D10.
+- scan-units-1-30-part2-at-1f8777d1.txt: Units 1-30 scan, Part 2 (16-30), with the full accounting and the D7b allowlist. The remainder is in scan-units-1-30-part2-remainder.txt. 41 real failures, 28 required checks. See D10.
+- scan-units-1-30-part2-remainder.txt: the rest of the Part 2 allowlist (Units 28-30) and the section 4 intake pages.
+- d7b-allowlist.txt: the complete D7b blocking-audit allowlist, 183 lines (unit | owner.field | text | type).
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake

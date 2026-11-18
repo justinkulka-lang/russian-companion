@@ -47,3 +47,14 @@ D10a. The D7b blocking-audit allowlist is the complete Codex list: the Part 2 fi
 D10b. Rebuild candidates R1-R14 from the Part 2 report are approved where a unit task uses them, along with the matching teaching, check and provenance changes. Where the replacement is NONE, the unit task waits for S1 or the approved intake pages. If those don't supply a witness either, the check is redesigned around attested material. It is never kept by composing new Russian.
 D10c. Unit 27's stress checks currently use deliberately mis-stressed options (оставляемы́й, обсуждаемы́й, написа́нный, прочита́нный). Wrong stress shown to learners is unattested Russian, so those options are not allowed. Redesign these checks as typed recall of the correctly stressed form (R7-R10), or as a choice between distinct attested words. Do not display any invented stress.
 D10d. Units 26-30 use invented "Anna writes a letter / goes to the post office" sentences, which are original synthesis. Rebuild them from frozen witnesses: R11 and R13 from the Russian grammar page, R14 from the prepositions page, and attested address and letter material for Unit 26. Each unit task handles its own unit.
+
+D11 (11/18, under D6).
+D11a. audit/prep/d7b-allowlist.txt is the D7b allowlist: 183 lines (160 UNATTESTED, 23 MISSING_STRESS), with no duplicates. It was assembled from the Part 2 file plus its remainder.
+D11b. Hold a second source intake, S2, before the Units 26-30 block. S2 covers these pages, each checked for the needed examples before admission:
+  - ru Wikipedia "Почтовый адрес"
+  - ru Wikipedia "Татарстан"
+  - Wikibooks "Russian/Grammar/Participles"
+  - ru Wiktionary "написанный" and "прочитанный"
+  - ru Wikipedia "Деепричастие"
+S1 stays scoped to Units 11-25 plus the Unit 21/29 pages and the pages approved in D3, D5 and D6a.
+D11c. Unit 29's letter/post-office reading passage has no attested equivalent. Replace it with attested passage material: the S1 Больтраффио/Обособление pages, or S2 "Деепричастие". Rebuild the register pair from R13 (Russian grammar:2169).
