@@ -85,6 +85,43 @@ class CumulativeReviewA228Test {
         }
     }
 
+    /**
+     * T15g: the recorded A2-28 measurement for Block 2 (Units 6-10), re-runnable. A fresh learner completes Units 1-10
+     * with correct governed attempts, current step identities and assignment-bound review completions; no eligibility
+     * or allocation rule is bypassed. Per target unit: items, distinct earlier objectives, distinct skills, earlier-unit
+     * items, the longest run of consecutive reviews ending at that unit for any of its items, and the candidates the
+     * repeat limiter excluded. These numbers describe this exercised history; other histories can select other items.
+     */
+    @Test fun block2DueReviewMeasurementIsRecorded() {
+        val p = pack()
+        isolatedStore("block2").use { s ->
+            val a = walk(p, s, 10)
+            val expected = mapOf(
+                6 to listOf(8, 6, 5, 8, 2, 1), 7 to listOf(8, 8, 7, 8, 1, 0), 8 to listOf(8, 8, 7, 8, 2, 0),
+                9 to listOf(8, 8, 8, 8, 3, 0), 10 to listOf(8, 8, 8, 8, 3, 2),
+            )
+            for ((t, e) in expected) {
+                val slots = a.getValue(t).slots
+                val run = slots.maxOf { slot ->
+                    var k = 0; var u = t
+                    while (u >= 3 && a.getValue(u).slots.any { it.itemId == slot.itemId }) { k++; u-- }
+                    k
+                }
+                val excluded = cumulativeReviewRepeatExcluded(learnerBefore(s, a.getValue(t)), t).size
+                val measured = listOf(slots.size, slots.map { it.objectiveId }.distinct().size, slots.map { it.skill }.distinct().size,
+                    slots.count { it.ownerUnit < t }, run, excluded)
+                println("A228-BLOCK2 unit $t items/objectives/skills/earlier/run/excluded=$measured " +
+                    slots.joinToString { "${it.objectiveId}/${it.itemId}" })
+                assertEquals("unit $t", e, measured)
+            }
+            // Every four-review window ending in Units 6-10 shares no item.
+            for (end in 6..10) {
+                val window = (end - 3..end).map { t -> a.getValue(t).slots.map { it.itemId }.toSet() }
+                assertTrue("units ${end - 3}..$end", window.reduce { x, y -> x intersect y }.isEmpty())
+            }
+        }
+    }
+
     @Test fun insufficientPoolIsRefusedAndNoShortTaskStandsIn() {
         val p = pack()
         isolatedStore("short").use { s ->

@@ -90,6 +90,31 @@ class WidenedLearnerVoiceLintTest {
         assertTrue(referenceHit("ref-ca-cases"))
     }
 
+    /** T15g (D18d): every manual miss the T15f check found in Units 6-9 is now caught by the widened lint. */
+    @Test fun theT15fManualMissesAreCaught() {
+        for (text in listOf(
+            "Compare the friend with the source chair clause",
+            "These steps ask you to recognize the supplied forms only, not to produce endings for other nouns.",
+            "Guided practice chooses the supplied object form, without inventing a sentence or new stress.",
+            "The independent teacher check retains this exact pair.",
+            "The new independent check classifies that inanimate context rather than repeating the teacher answer.",
+            "This check does not establish completed action; no aspect or full-translation claim is tested.",
+            "Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.",
+            "Recognize these supplied contexts; no universal all-case or completed-action claim.",
+            "A singular noun does not take the plural form in these choices.",
+            "на́ши is plural and does not mark the feminine singular object row.",
+            "When the task shows но́вая and asks for that dictionary form, choose но́вый rather than neuter но́вое.",
+            "All the options are already correctly spelled.",
+            "Use this explanation to understand the rule; do not infer a general adverb-formation rule from these choices.",
+            "an unrestricted rule for every adjective goes beyond this check; it asks only about the pair shown.",
+            "These two supplied examples do not establish an unrestricted sentence-generation rule.",
+            "Guided practice uses мальчик.",
+        )) assertTrue(text, signals(text, "LEARNER_PROVENANCE_NARRATION").isNotEmpty())
+        // None of the misses remains in Units 6-9.
+        val shown = V2DesignDiagnostics.audit(current).signals
+        assertTrue(shown.none { it.rule == "LEARNER_PROVENANCE_NARRATION" && (it.unit ?: 0) in 1..10 })
+    }
+
     @Test fun exemptNoticesAndPlainTeachingAreNotCaught() {
         for (text in listOf(
             "These words are masculine.",

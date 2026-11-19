@@ -256,8 +256,10 @@ class ContentAuditCorrectionTest {
         // T15b: the unattested phrases хоро́шая книга / хоро́шую книгу become single sourced forms.
         assertTrue(text.contains("the adjective хоро́шая becomes хоро́шую, and the noun кни́га becomes кни́гу"))
         assertTrue(text.contains("change both words"))
-        // T15f (owner decision D6c): the sentence keeps only its fact, "All the options are already correctly spelled."
-        assertTrue(text.contains("All the options are already correctly spelled"))
+        // T15g (owner decision D18d): the exercise commentary "All the options are already correctly spelled." is removed;
+        // the teaching keeps the forms and the spelling rules only.
+        assertFalse(text.contains("All the options are already correctly spelled"))
+        assertFalse(text.contains("options"))
         assertEquals(22, unit.advancement!!.minimumDistinctChecks)
     }
 
@@ -336,10 +338,13 @@ class ContentAuditCorrectionTest {
     fun unitEightChecksAssessNominativeFormsAndRetainCompleteRemediation() {
         val pack = pack()
         val ids = listOf("u8-g-spelling-0", "u8-i-spelling-1", "u8-i-spelling-2", "u8-i-spelling-3", "u8-i-spelling-4")
-        val answers = listOf("кни́ги", "кни́га", "хоро́шие", "хоро́шее", "хоро́ший")
+        // T15g (CC010/IA016): the guided spelling check moved from кни́га (the plural check u8-i-plural-6's exact tuple) to
+        // the adjective хоро́ший, so only u8-i-spelling-1 still assesses a noun number form.
+        val answers = listOf("хоро́шие", "кни́га", "хоро́шие", "хоро́шее", "хоро́ший")
+        assertEquals("хоро́ший", pack.item("u8-g-spelling-0")!!.promptLetter)
         ids.forEachIndexed { index, id ->
             val item = pack.item(id)!!
-            assertEquals(if (index < 2) "NOUN_NOMINATIVE_NUMBER_FORM" else "ADJECTIVE_NOMINATIVE_FORM", item.assessment!!.testedFeature)
+            assertEquals(if (index == 1) "NOUN_NOMINATIVE_NUMBER_FORM" else "ADJECTIVE_NOMINATIVE_FORM", item.assessment!!.testedFeature)
             assertEquals(answers[index], item.answer)
             assertEquals("SAME_LEMMA_DIFFERENT_FIELD", item.assessment!!.relationKind)
             assertEquals(index != 0, item.assessment!!.independent)

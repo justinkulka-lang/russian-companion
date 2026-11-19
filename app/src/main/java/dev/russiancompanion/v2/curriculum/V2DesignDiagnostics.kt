@@ -64,8 +64,10 @@ internal object V2DesignDiagnostics {
             "\\bthe (?:note|source|dictionary|grammar|page|table|entry|record|wordlist|glossary)s? (?:says|said|pairs|classif(?:y|ies)|lists?|gives?|" +
             "records?|places?|shows?|marks?|states?|labels?|glosses|spells?|translates?|writes|names|uses|illustrates|introduces|identifies)\\b|" +
             "\\bsource (?:example|line|row|table|text|note|span|entry|page)s?\\b|\\btable forms?\\b|" +
-            "\\b(?:nominative|genitive|dative|accusative|instrumental|prepositional|plural|singular|table|other|same|bare) (?:table )?rows?\\b|" +
-            "\\bproposed records?\\b|\\blicensed set\\b|\\baudio is mapped\\b",
+            "\\b(?:nominative|genitive|dative|accusative|instrumental|prepositional|plural|singular|table|other|same|bare|object) (?:table )?rows?\\b|" +
+            "\\bproposed records?\\b|\\blicensed set\\b|\\baudio is mapped\\b|" +
+            // T15g (D18d): source framing of a single clause or sentence ("the source chair clause").
+            "\\bthe source (?:\\w+ )?(?:clause|sentence|phrase|pair)s?\\b",
         RegexOption.IGNORE_CASE,
     )
     private val assessmentCommentary = Regex(
@@ -74,7 +76,13 @@ internal object V2DesignDiagnostics {
             "\\bchecks? recogni[sz]e\\b|\\bdoes(?: not|n't) demonstrate\\b|\\bseparate from\\b[^.]*\\bchecks?\\b|" +
             "\\b(?:this|the) unit does(?: not|n't) teach\\b|\\bstays? out of this unit\\b|" +
             "\\bdemonstrated (?:app |in-app )?(?:check|ability)\\b|\\bpending reviewer\\b|\\breviewer assignment\\b|" +
-            "\\bapproved mapping\\b|\\bapprove (?:a|the) (?:mapping|proposed records)\\b|\\bdo(?:es)? not replace (?:that|the|this) lesson\\b",
+            "\\bapproved mapping\\b|\\bapprove (?:a|the) (?:mapping|proposed records)\\b|\\bdo(?:es)? not replace (?:that|the|this) lesson\\b|" +
+            // T15g (owner decision D18d): the manual misses from the T15f check, as patterns.
+            "\\b(?:these|this|the) steps? (?:asks?|requests?|tests?|checks?)\\b|\\bguided practice (?:chooses|uses|asks|keeps|checks)\\b|" +
+            "\\b(?:independent|guided|typed|closed|new) (?:\\w+ )?checks? (?:retains?|keeps?|classif(?:y|ies)|repeats?|uses?)\\b|" +
+            "\\bdo(?:es)?(?: not|n't) establish\\b|\\bclaim is tested\\b|\\bproductive mastery\\b|\\bno universal\\b[^.]*\\bclaim\\b|" +
+            "\\b(?:in|from) (?:these|the|this) choices\\b|\\bwhen the (?:task|question|exercise) (?:shows|asks)\\b|" +
+            "\\b(?:all )?(?:the|these) options are\\b|\\bbeyond (?:this|the) check\\b|\\bit asks only\\b",
         RegexOption.IGNORE_CASE,
     )
     private val tableCell = Regex("\\|{1,2}[ \\t]*\\p{L}")

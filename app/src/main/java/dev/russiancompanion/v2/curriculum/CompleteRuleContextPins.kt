@@ -16,7 +16,7 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u10-g-have-0" to "491543136e5d0103914655386150d3d8968ef58b0be8ad34ea1cf897022fd1ea",
         "ca-rule-context:u10-i-have-1" to "aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97",
         "ca-rule-context:u10-i-have-2" to "125f6734d187e827eaee0f761146d8f7d56f723213c353bc5dcbafd148df1082",
-        "ca-rule-context:u10-i-have-3" to "9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f",
+        "ca-rule-context:u10-i-have-3" to "c827f5469086714a3fdca1cda20e0845668c79b5d368bf45b9a2094f2fdb839f",
         "ca-rule-context:u10-i-have-4" to "d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8",
         "ca-rule-context:u10-g-absence-0" to "9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f",
         "ca-rule-context:u10-i-absence-1" to "b8d9bca0cf40ae4e8d7610a43c514c9fbe25a6b876729b74de4375f33a593b00",
@@ -33,7 +33,7 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u9-i-quantity-7" to "d47c4cb2b1cb8ec3eb22f758df601e0989ff2f12692c982358f8593ef1c08e0c",
         "ca-rule-context:u9-i-quantity-8" to "61b4c87827f1a7396c6f8fb99109088e6df85ce3a8ad363c7b3d87cefe01ac34",
         "ca-rule-context:u9-i-quantity-9" to "4381b1e305641449e427937df95d0e97fb57fa537f894de2cc314e13b2b8a6c4",
-        "ca-rule-context:u9-g-pattern-0" to "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+        "ca-rule-context:u9-g-pattern-0" to "c65945fcaf9bb61dde4ffeff25c87a54380af8d3a876995f07dda8daa2c1ebb1",
         "ca-rule-context:u9-i-pattern-1" to "37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b",
         "ca-rule-context:u9-i-pattern-2" to "40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358",
         // T15d, owner direction 11/16/2026: re-pinned because the cue is now the frozen five-years example at
