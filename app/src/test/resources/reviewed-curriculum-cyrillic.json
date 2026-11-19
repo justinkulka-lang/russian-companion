@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "a5ba8c849d62f59e05e3e18ce51d795b0026dec30515fafa3a7e84ce03415dab",
+      "sha256": "6c3111c3009b8204fc15158617674db27c4d2d46395d0013173170fa88ff255a",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3434,6 +3434,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "T15g (approved rule change, owner decision D20): the Russian-coverage scan reads exactly the learner-facing field set (V2LearnerFields, the blocking phrase audit's set) plus the item assessment metadata it already checked; the per-unit host builder addItemHosts is removed. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T15g D23",
+      "previousRecordedSha256": "a5ba8c849d62f59e05e3e18ce51d795b0026dec30515fafa3a7e84ce03415dab",
+      "sha256": "6c3111c3009b8204fc15158617674db27c4d2d46395d0013173170fa88ff255a",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T15g (approved rule change, owner decision D23): a Unit 1 provenance record is admitted only when it passes isFrozenSourceRecord (the D22a letter-name selection records); every other record stays within Units 2-30, and the English-coverage scan and English provenance hosts stay limited to Units 2-30. The authored-English limit is unchanged. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

@@ -46,7 +46,8 @@ class Units2125SourceIntakeTest {
     private val preservedContentDigests = mapOf(
         // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
         3 to "b1986b784279091d9183563d38c06aa0eacb60fa3aff196a5d2faf86f3083540",
-        16 to "17e7a6412dacd4644ddc4376bdba627fc7d9d28540ce0de69a1124b71cc878b7",
+        // T15g A4: prov-d7b-u16-029 re-cited to adjectives-4292379.txt:67 (was 17e7a641...).
+        16 to "16d20fdf3587db1128b4bb923c938074db69f4ba28976914067b40939a90e9c4",
         17 to "6b680bdaec7f726328c3eba3052143d6cd31f249a60401caef1a2e7a6236e022",
         18 to "3c4ae8dd52293871574a5968c224388e31eb8c838e61a63dc2271fdb3e79073a",
         19 to "fddd2ad0d2c32ba669c53effb93929f8e2a527e0b5a8e8251922756b0b1bd969",
