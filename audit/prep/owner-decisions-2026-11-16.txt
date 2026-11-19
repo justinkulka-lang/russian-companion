@@ -117,3 +117,5 @@ D19c. T15f-n1 is merged into T15g. T15g covers the D18d fixes and the full Block
   - the recorded A2-28 measurement;
   - the 25 findings dispositions, fixing the OPEN items that are content fixes (CC010/IA016 duplicate groups, CC025 glosses and typos, WC004 glosses, CC029 residual commentary) and writing dispositions for the rest;
   - the Unit 1 "Qualified review is still pending." line.
+
+D20 (11/18, under D6). The D7b final report found a coverage gap: the validator's Russian-coverage check does not scan unit shortLabel, step dominantAction, items reached only through their objective, or examples linked only by objectiveId. A single unwitnessed word in those fields would pass both the validator and the audit. Fix: the validator's Russian-coverage scan must cover exactly the learner-facing field set the PhraseAudit uses, with a test that asserts the two sets are identical. The audit keeps its current scope for single unstressed words, because the validator covers them once every field is scanned. Add a regression test: put сущ into each of the four field kinds and show the validator rejects it. This goes in T15g, Part A.
