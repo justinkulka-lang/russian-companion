@@ -26,8 +26,8 @@ unit,region,record_id,frozen_file_line,source_id
 12,будете,prov-d7b-u12-025,catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt:34,src-wikibooks-russian-cc-by-sa
 12,будут,prov-d7b-u12-026,catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt:34,src-wikibooks-russian-cc-by-sa
 12,говорить,prov-d7b-u12-027,catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt:34,src-wikibooks-russian-cc-by-sa
-12,сказать,prov-d7b-u12-028,catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt:7,src-wikibooks-russian-cc-by-sa
-16,им,prov-d7b-u16-029,catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt:96,src-wikibooks-russian-cc-by-sa
+12,сказать,prov-d7b-u12-028,catalog/sources/units-3-5/openrussian/verbs.csv:3,src-openrussian-50e210c4
+16,им,prov-d7b-u16-029,catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt:67,src-wikibooks-russian-cc-by-sa
 17,мая,prov-d7b-u17-030,catalog/sources/units-21-25/supplemental/lichnoe-imya-154915954.txt:177,src-ruwiki-lichnoe-imya-154915954
 19,поспала́,prov-d7b-u19-031,catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt:1215,src-wikipedia-russian-grammar-1369617627
 19,я,prov-d7b-u19-032,catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt:24,src-wikibooks-russian-cc-by-sa
@@ -36,10 +36,10 @@ unit,region,record_id,frozen_file_line,source_id
 21,дабы,prov-d7b-u21-035,catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt:2479,src-wikipedia-russian-grammar-1369617627
 24,нечего,prov-d7b-u24-036,catalog/sources/units-21-25/supplemental/otritsatelnye-141256493.txt:49,src-ruwiki-otritsatelnye-141256493
 25,Извини́,prov-d7b-u25-037,catalog/sources/units-3-5/openrussian/verbs.csv:308,src-openrussian-50e210c4
-25,те,prov-d7b-u25-038,catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt:232,src-wikibooks-russian-cc-by-sa
+25,те,prov-d7b-u25-038,catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt:1169,src-wikipedia-russian-grammar-1369617627
 26,Садовая,prov-d7b-u26-039,catalog/sources/units-6-10/openrussian/adjectives.csv:936,src-openrussian-50e210c4
 26,Казань,prov-d7b-u26-040,catalog/sources/units-3-5/openrussian/nouns.csv:6643,src-openrussian-50e210c4
-26,Россия,prov-d7b-u26-041,catalog/sources/units-21-25/supplemental/lichnoe-imya-154915954.txt:286,src-ruwiki-lichnoe-imya-154915954
+26,Россия,prov-d7b-u26-041,catalog/sources/units-3-5/openrussian/nouns.csv:52,src-openrussian-50e210c4
 26,а,prov-d7b-u26-042,catalog/sources/readyrussian/letter.html:90,src-readyrussian-letter
 26,я,prov-d7b-u26-043,catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt:64,src-wikipedia-russian-grammar-1369617627
 26,Здравствуйте,prov-d7b-u26-044,catalog/sources/readyrussian/letter.html:75,src-readyrussian-letter
@@ -53,6 +53,30 @@ unit,region,record_id,frozen_file_line,source_id
 30,столом,prov-d7b-u30-052,catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt:190,src-ruwiki-morfologiya-148939075
 30,стоять,prov-d7b-u30-053,catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt:835,src-wikipedia-russian-grammar-1369617627
 30,стою,prov-d7b-u30-054,catalog/sources/units-3-5/openrussian/verbs.csv:11,src-openrussian-50e210c4
-30,стоит,prov-d7b-u30-055,catalog/sources/units-26-30/ruwiki/neopredelennoe-mestoimenie-149963314.txt:143,src-ruwiki-neopredelennoe-mestoimenie-149963314
-30,стоял,prov-d7b-u30-056,catalog/sources/units-26-30/wikisource/vechera-5336197.txt:1091,src-ruwikisource-vechera-5336197
+30,стоит,prov-d7b-u30-055,catalog/sources/units-3-5/wikibooks/prepositions-4446858.txt:134,src-wikibooks-russian-cc-by-sa
+30,стоял,prov-d7b-u30-056,catalog/sources/units-3-5/openrussian/verbs.csv:11,src-openrussian-50e210c4
 30,Ваза стоит на столе,prov-d7b-u30-057,catalog/sources/units-3-5/wikibooks/prepositions-4446858.txt:134,src-wikibooks-russian-cc-by-sa
+1,бэ,prov-t15g-u1-name-01,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:59,src-wikipedia-russian-alphabet-1371795481
+1,вэ,prov-t15g-u1-name-02,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:63,src-wikipedia-russian-alphabet-1371795481
+1,гэ,prov-t15g-u1-name-03,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:67,src-wikipedia-russian-alphabet-1371795481
+1,дэ,prov-t15g-u1-name-04,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:71,src-wikipedia-russian-alphabet-1371795481
+1,жэ,prov-t15g-u1-name-05,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:83,src-wikipedia-russian-alphabet-1371795481
+1,зэ,prov-t15g-u1-name-06,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:87,src-wikipedia-russian-alphabet-1371795481
+1,и краткое,prov-t15g-u1-name-07,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:95,src-wikipedia-russian-alphabet-1371795481
+1,ка,prov-t15g-u1-name-08,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:99,src-wikipedia-russian-alphabet-1371795481
+1,эль,prov-t15g-u1-name-09,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:103,src-wikipedia-russian-alphabet-1371795481
+1,эм,prov-t15g-u1-name-10,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:107,src-wikipedia-russian-alphabet-1371795481
+1,эн,prov-t15g-u1-name-11,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:111,src-wikipedia-russian-alphabet-1371795481
+1,пэ,prov-t15g-u1-name-12,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:119,src-wikipedia-russian-alphabet-1371795481
+1,эр,prov-t15g-u1-name-13,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:123,src-wikipedia-russian-alphabet-1371795481
+1,эс,prov-t15g-u1-name-14,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:127,src-wikipedia-russian-alphabet-1371795481
+1,тэ,prov-t15g-u1-name-15,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:131,src-wikipedia-russian-alphabet-1371795481
+1,эф,prov-t15g-u1-name-16,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:139,src-wikipedia-russian-alphabet-1371795481
+1,ха,prov-t15g-u1-name-17,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:143,src-wikipedia-russian-alphabet-1371795481
+1,цэ,prov-t15g-u1-name-18,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:147,src-wikipedia-russian-alphabet-1371795481
+1,че,prov-t15g-u1-name-19,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:151,src-wikipedia-russian-alphabet-1371795481
+1,ша,prov-t15g-u1-name-20,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:155,src-wikipedia-russian-alphabet-1371795481
+1,ща,prov-t15g-u1-name-21,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:159,src-wikipedia-russian-alphabet-1371795481
+1,твёрдый знак,prov-t15g-u1-name-22,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:163,src-wikipedia-russian-alphabet-1371795481
+1,мягкий знак,prov-t15g-u1-name-23,catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt:171,src-wikipedia-russian-alphabet-1371795481
+4,они,prov-t15g-u4-oni,catalog/sources/units-3-5/openrussian/others.csv:15,src-openrussian-50e210c4
