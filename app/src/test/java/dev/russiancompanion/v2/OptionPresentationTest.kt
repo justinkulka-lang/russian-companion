@@ -26,9 +26,12 @@ class OptionPresentationTest {
         // Unit 2 print pairs with six concept checks and adds one guided concept item. T15a removes four Unit 6
         // cue-only items (earlier in the list) and appends eight typed Unit 6 items. T15b appends fifteen typed
         // Unit 7 items with no options.
-        assertEquals(730, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
+        // T15g (CC010/IA016): u10-i-absence-3 and u10-i-absence-4 (list positions 213-214) are retired, so the count is
+        // 730 -> 728 and the four guided targets move from 618 to 616. The answer-first count stays 558: the retired
+        // u10-i-absence-3 led with its answer and the re-cued u10-i-have-3 now does.
+        assertEquals(728, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
-            p.items.drop(618).take(4).map { it.id }.toSet())
+            p.items.drop(616).take(4).map { it.id }.toSet())
         assertEquals(558, p.items.count { it.options.firstOrNull() == it.answer })
         val routes = p.units.flatMap { it.sessions }.flatMap { it.steps }
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
@@ -43,7 +46,7 @@ class OptionPresentationTest {
             "review" to p.items.map { it to presentedOptions(it, reviewOptionContext("corpus-distribution", 0)) },
         )) {
             if (name == "required") {
-                assertEquals(527, displays.size) // T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
+                assertEquals(525, displays.size) // T15g: the two retired Unit 10 duplicates leave the required set (527 -> 525); T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
                 assertEquals(376, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
             }
             displays.forEach { (item, order) ->

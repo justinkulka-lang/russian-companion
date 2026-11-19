@@ -5222,7 +5222,9 @@ internal object V2Validator {
                 errors += "Provenance ${record.itemId} has unrecognized review status ${record.reviewStatus}"
             }
             // Unit 2 carries the owner's 2026-11-11 stress and final-consonant pairs (T14-a).
-            if (record.unitNumber !in 2..30) {
+            // T15g (owner decision D23, approved rule change): Unit 1 admits frozen-source records only (the letter-name
+            // selection records of D22a); every other provenance record stays within Units 2-30.
+            if (record.unitNumber !in 2..30 && !(record.unitNumber == 1 && isFrozenSourceRecord(pack, record))) {
                 errors += "Provenance ${record.itemId} is outside the proposed Units 2-30 source intake"
             }
             if ((record.objectiveId to record.unitNumber) !in objectiveKeys) {
@@ -5233,11 +5235,12 @@ internal object V2Validator {
         // D7b (approved rule change): Russian coverage counts only frozen-file records (isFrozenSourceRecord) and the
         // D7b allowlist. Content-audit and original synthesis records no longer admit Russian through their shippedText.
         val frozenShippedByUnit = frozenShippedTextByUnit(pack)
-        // T15g (owner decision D20, approved rule change): the scan reads exactly the learner-facing field set
-        // (V2LearnerFields, the blocking phrase audit's set), plus the item assessment metadata it already checked.
+        // T15g (owner decisions D20 and D21e, approved rule change): the scan reads exactly the shared learner field set
+        // (V2LearnerFields: every pack field the app renders, the blocking phrase audit's set), plus the item assessment
+        // metadata it already checked, in every unit, including a unit with no provenance records (Unit 1).
         val hostsByUnit = (V2LearnerFields.fields(pack) + V2LearnerFields.assessmentMetadata(pack))
             .groupBy({ it.unit }, { it.text })
-        pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
+        pack.units.forEach { unit ->
             val shipped = frozenShippedByUnit[unit.number].orEmpty()
             hostsByUnit[unit.number].orEmpty().forEach { host ->
                 CYRILLIC_REGION.findAll(host).forEach { match ->
@@ -5308,7 +5311,8 @@ internal object V2Validator {
         errors += markedSentenceSourceErrors(pack)
         errors += frozenFactSourceErrors(pack)
         val hostsByUnit = englishProvenanceHosts(pack).groupBy { it.unitNumber }
-        pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
+        // T15g (D23): the English-coverage scope is unchanged by Unit 1's frozen letter-name records (Units 2-30 only).
+        pack.units.filter { unit -> unit.number in shippedByUnit && unit.number in 2..30 }.forEach { unit ->
             val shipped = shippedByUnit.getValue(unit.number)
             val scaffolds = pack.authoredEnglishRecords.filter { it.unitNumber == unit.number }.map { it.text }
             val spans = shipped + scaffolds
@@ -5403,7 +5407,8 @@ internal object V2Validator {
 
     /** Every English host the source-record rule reads, in the same order and with the same coverage as before T15-n0. */
     internal fun englishProvenanceHosts(pack: V2CurriculumPack, includeAllUnits: Boolean = false): List<EnglishProvenanceHost> {
-        val units = pack.provenanceRecords.map { it.unitNumber }.toSet()
+        // T15g (D23): Unit 1's frozen letter-name records do not bring Unit 1 into the English-provenance hosts.
+        val units = pack.provenanceRecords.map { it.unitNumber }.filter { it in 2..30 }.toSet()
         val result = mutableListOf<EnglishProvenanceHost>()
         pack.units.filter { includeAllUnits || it.number in units }.forEach { unit ->
             var owner = ""

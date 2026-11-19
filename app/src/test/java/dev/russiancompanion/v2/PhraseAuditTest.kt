@@ -80,6 +80,25 @@ class PhraseAuditTest {
         // Form enumerations are not clause sequences; a quoted example's subject word in English is not part of one.
         assertTrue(fail("стол, стола, столу").none { it.first == "COMPOSED" })
         assertTrue(fail("In мой стол, стол is masculine singular.").none { it.first == "COMPOSED" })
+        assertTrue(fail("In моя собака, собака is feminine singular.").none { it.first == "COMPOSED" })
+        // T15g (D21b): the English boundary drops only a final word already shown earlier in the same sequence.
+        assertTrue(("COMPOSED" to "он улыбался, читая") in fail("он улыбался, читая is the complete Russian example."))
+        assertTrue(("COMPOSED" to "он улыбался, читая") in fail("он улыбался, читая"))
+        // T15g (D21c): dashes, semicolons and colons between words join a sequence too.
+        assertTrue(("COMPOSED" to "читая письмо — он улыбался") in fail("читая письмо — он улыбался"))
+        assertTrue(("COMPOSED" to "читая письмо – он улыбался") in fail("читая письмо – он улыбался"))
+        assertTrue(("COMPOSED" to "читая письмо - он улыбался") in fail("читая письмо - он улыбался"))
+        assertTrue(("COMPOSED" to "читая письмо; он улыбался") in fail("читая письмо; он улыбался"))
+        assertTrue(("COMPOSED" to "читая письмо: он улыбался") in fail("читая письмо: он улыбался"))
+        // T15g (D22c): a list of letters, upper/lower pairs or alphabet-page letter names is a list, whatever the separator.
+        assertTrue(fail("Й is named и краткое; К is named ка; Ъ is named твёрдый знак; Ы").none { it.first == "COMPOSED" })
+        assertTrue(fail("Е, Ё; Ю — Я").isEmpty())
+        assertTrue(fail("М м; Т т").isEmpty())
+        // A name list item next to ordinary words is still a clause join (D21c).
+        assertTrue(("COMPOSED" to "и краткое; читая письмо") in fail("и краткое; читая письмо"))
+        // A dash pair contiguous on one frozen line still passes (narechie-152437423.txt:44 and :8).
+        assertTrue(fail("быстрый — быстро").isEmpty())
+        assertTrue(fail("Наречия — неизменяемые слова").isEmpty())
         // D9: single-letter lists attested on the alphabet page are exempt; a word list is not.
         assertTrue(fail("Е Ё Ю Я").isEmpty())
         assertTrue(fail("М м, Т т, К к").isEmpty())

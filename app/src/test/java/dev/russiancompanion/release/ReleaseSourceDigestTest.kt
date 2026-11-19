@@ -21,6 +21,22 @@ class ReleaseSourceDigestTest {
         assertEquals(before, computeReleaseSourceDigest(root, replacements))
     }
 
+    /** T15g (owner decision D21d): the packaged phrase allowlist is release source, so changing it changes the digest. */
+    @Test
+    fun changingThePackagedPhraseAllowlistChangesTheDigest() {
+        val root = repositoryRoot()
+        val path = "audit/d7b-phrase-allowlist.txt"
+        assertTrue(File(root, "app/build.gradle.kts").readText().contains(path))
+        assertTrue(isReleaseSourceRelative(path))
+        assertTrue(path in listReleaseSourceRelatives(root))
+        val before = computeReleaseSourceDigest(root)
+        val bytes = File(root, path).readBytes()
+        assertEquals(before, computeReleaseSourceDigest(root, mapOf(path to bytes)))
+        assertNotEquals(before, computeReleaseSourceDigest(root, mapOf(path to bytes + "\n".toByteArray())))
+        val dropped = bytes.toString(Charsets.UTF_8).lines().filter { it.isNotBlank() }.drop(1).joinToString("\n", postfix = "\n")
+        assertNotEquals(before, computeReleaseSourceDigest(root, mapOf(path to dropped.toByteArray())))
+    }
+
     @Test
     fun committedCandidateRecordsTheCurrentSourceDigestAndIdentity() {
         val root = repositoryRoot()

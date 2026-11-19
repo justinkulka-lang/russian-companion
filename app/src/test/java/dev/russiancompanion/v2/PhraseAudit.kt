@@ -13,10 +13,12 @@ import java.io.File
  *    as whole words in any one frozen line (case and stress ignored, ё and е kept distinct);
  *  - MISSING_STRESS: a word shown with a stress mark has no frozen form with exactly that stress (OpenRussian apostrophes
  *    and Wikibooks bold stress, under the T15f bold-vowel rule, count as stress marks);
- *  - COMPOSED (D15c): a displayed clause sequence (word runs joined by ", ") is not one contiguous substring of a single
- *    frozen line. Form enumerations (every comma part a single word) are not clause sequences, and when a sequence runs
- *    straight into English text, a single-word last part is that English sentence's subject, not part of the sequence;
- *  - D9: a run or sequence made only of single letters, each attested on the frozen Russian-alphabet page, is exempt.
+ *  - COMPOSED (D15c, D21c): a displayed clause sequence (word runs joined by a comma, semicolon, colon or dash) is not one
+ *    contiguous substring of a single frozen line. Form enumerations (every part a single word) are not clause sequences,
+ *    and (D21b) when a sequence runs straight into English text, a final comma part that is one word already shown
+ *    earlier in the sequence is that English sentence's subject, not part of the sequence;
+ *  - D9: a run or sequence made only of single letters, each attested on the frozen Russian-alphabet page, is exempt;
+ *    D22c extends this to sequences whose items are single letters, upper/lower pairs or alphabet-page letter names.
  */
 internal object PhraseAudit {
     data class Field(val unit: Int, val ownerField: String, val text: String)
@@ -26,7 +28,10 @@ internal object PhraseAudit {
     private const val ACUTE = '́'
     private const val WORD = "[$CYR][$CYR\\u0301]*(?:-[$CYR][$CYR\\u0301]*)?"
     private val span = Regex("$WORD(?:[ \\u00a0]+$WORD)+")
-    private val sequence = Regex("$WORD(?:(?:[ \\u00a0]+|,[ \\u00a0]+)$WORD)+")
+    // T15g (owner decision D21c): commas, semicolons, colons and dashes between words all join a clause sequence.
+    private const val JOIN = "[,;:][ \\u00a0]+|[ \\u00a0]*[\\u2014\\u2013][ \\u00a0]*|[ \\u00a0]+-[ \\u00a0]+"
+    private val join = Regex(JOIN)
+    private val sequence = Regex("$WORD(?:(?:[ \\u00a0]+|$JOIN)$WORD)+")
     private val word = Regex(WORD)
     private val form = Regex("[$CYR][$CYR\\u0301]*")
     private val apostrophe = Regex("(?<=[$CYR])'(?!')")
@@ -102,64 +107,61 @@ internal object PhraseAudit {
 
     fun stressAttested(stressed: String): Boolean = stressed.lowercase() in stressForms
 
+    /** The letter rows of the frozen Russian-alphabet page (one row per letter, with its image), for D22c names. */
+    private val alphabetText: String by lazy {
+        frozenFiles.filter { "russian-alphabet" in it.name }.flatMap { it.readText().split('\n') }
+            .filter { "Russian alphabet-" in it }.joinToString("\n") { TwoPartPhraseRule.unstressed(it) }
+    }
+
+    private fun onAlphabetPage(item: String): Boolean {
+        val q = TwoPartPhraseRule.unstressed(item)
+        var index = alphabetText.indexOf(q)
+        while (index >= 0) {
+            val before = alphabetText.getOrNull(index - 1); val after = alphabetText.getOrNull(index + q.length)
+            if ((before == null || before.code !in 0x0400..0x04FF) && (after == null || after.code !in 0x0400..0x04FF)) return true
+            index = alphabetText.indexOf(q, index + 1)
+        }
+        return false
+    }
+
+    /**
+     * T15g (owner decision D22c, extending D9): a sequence whose every item (between commas, semicolons, colons, dashes or
+     * spaces) is a single letter, an upper/lower letter pair or a letter name attested on the alphabet page is a list,
+     * not a clause sequence.
+     */
+    private fun letterOrNameList(sequence: String): Boolean = sequence.split(join).map { it.trim() }.filter { it.isNotEmpty() }.let { items ->
+        items.isNotEmpty() && items.all { item -> letterList(item) || onAlphabetPage(item) }
+    }
+
     private fun letterList(text: String): Boolean = word.findAll(text).toList().let { words ->
         words.isNotEmpty() && words.all { w -> w.value.replace("́", "").length == 1 && w.value.replace("́", "").lowercase() in alphabetLetters }
     }
 
-    /** Learner-facing fields with their "owner.field" names, each attributed to the unit that shows it. */
-    fun fields(pack: V2CurriculumPack): List<Field> {
-        val out = mutableListOf<Field>()
-        val objectiveUnit = pack.units.flatMap { u -> u.objectives.map { it.id to u.number } }.toMap()
-        val exampleUnits = mutableMapOf<String, MutableSet<Int>>()
-        val referenceUnits = mutableMapOf<String, MutableSet<Int>>()
-        fun add(unit: Int, owner: String, field: String, text: String?) { if (!text.isNullOrEmpty()) out += Field(unit, "$owner.$field", text) }
-        pack.units.forEach { u ->
-            val n = u.number
-            add(n, u.id, "title", u.title); add(n, u.id, "shortLabel", u.shortLabel); add(n, u.id, "topicSummary", u.topicSummary)
-            // T15g (D20): the mapping note is shown on the unit screen (V2Screens), so it is learner-facing.
-            add(n, u.id, "mappingNote", u.mappingNote)
-            u.objectives.forEach { o -> add(n, o.id, "title", o.title); o.exampleIds.forEach { exampleUnits.getOrPut(it) { mutableSetOf() } += n } }
-            u.sessions.forEach { s ->
-                add(n, s.id, "title", s.title)
-                s.steps.forEach { st ->
-                    add(n, st.id, "title", st.title); add(n, st.id, "body", st.body); add(n, st.id, "bookDirection", st.bookDirection)
-                    add(n, st.id, "companionDirection", st.companionDirection); add(n, st.id, "unavailableReason", st.unavailableReason)
-                    add(n, st.id, "dominantAction", st.dominantAction)
-                    st.exampleIds.forEach { exampleUnits.getOrPut(it) { mutableSetOf() } += n }
-                    st.referenceIds.forEach { referenceUnits.getOrPut(it) { mutableSetOf() } += n }
-                }
-            }
-        }
-        pack.items.forEach { item ->
-            val n = objectiveUnit[item.objectiveId] ?: return@forEach
-            add(n, item.id, "prompt", item.prompt); add(n, item.id, "promptLetter", item.promptLetter)
-            add(n, item.id, "answer", item.answer); add(n, item.id, "feedback", item.feedback)
-            item.options.forEachIndexed { i, v -> add(n, item.id, "options[$i]", v) }
-            item.distractorRationales.forEachIndexed { i, v -> add(n, item.id, "distractorRationales[$i]", v) }
-            item.typedAnswerKey?.acceptedAnswers?.forEachIndexed { i, v -> add(n, item.id, "acceptedAnswers[$i]", v) }
-        }
-        pack.examples.forEach { e ->
-            val units = exampleUnits[e.id] ?: setOfNotNull(objectiveUnit[e.objectiveId])
-            units.sorted().forEach { n -> add(n, e.id, "display", e.display); add(n, e.id, "note", e.note) }
-        }
-        pack.references.forEach { r ->
-            referenceUnits[r.id].orEmpty().sorted().forEach { n -> add(n, r.id, "title", r.title); add(n, r.id, "summary", r.summary); add(n, r.id, "detail", r.detail) }
-        }
-        return out
-    }
+    /**
+     * T15g (owner decision D21e): the audit reads the shared learner field set, V2LearnerFields.fields, which the
+     * validator's Russian-coverage scan also reads; V2LearnerFieldsTest derives it from the UI rendering code.
+     */
+    fun fields(pack: V2CurriculumPack): List<Field> =
+        dev.russiancompanion.v2.curriculum.V2LearnerFields.fields(pack).map { Field(it.unit, it.ownerField, it.text) }
 
     fun failures(fields: List<Field>): Set<Failure> {
         val failures = linkedSetOf<Failure>()
         fields.forEach { (n, owner, text) ->
             sequence.findAll(text).forEach { m ->
                 var sq = m.value
+                // T15g (owner decision D21b): when a sequence runs straight into English, its final comma part is dropped
+                // only if it is one word that already appears earlier in the same sequence ("In мой стол, стол is ...").
                 val runsIntoEnglish = Regex("^[ \\u00a0]+[A-Za-z]").containsMatchIn(text.substring(m.range.last + 1))
-                if (runsIntoEnglish && ',' in sq && sq.substring(sq.lastIndexOf(',') + 1).trim().split(Regex("\\s+")).size == 1) {
-                    sq = sq.substring(0, sq.lastIndexOf(','))
+                if (runsIntoEnglish && ',' in sq) {
+                    val last = sq.substring(sq.lastIndexOf(',') + 1).trim()
+                    val head = sq.substring(0, sq.lastIndexOf(','))
+                    val earlier = word.findAll(head).map { TwoPartPhraseRule.unstressed(it.value) }.toSet()
+                    if (word.matches(last) && TwoPartPhraseRule.unstressed(last) in earlier) sq = head
                 }
-                if (',' !in sq) return@forEach
-                if (sq.split(',').all { it.trim().split(Regex("\\s+")).size == 1 }) return@forEach
-                if (letterList(sq)) return@forEach
+                val parts = sq.split(join)
+                if (parts.size < 2) return@forEach
+                if (parts.all { it.trim().split(Regex("\\s+")).size == 1 }) return@forEach
+                if (letterList(sq) || letterOrNameList(sq)) return@forEach
                 if (!present(sq)) failures += Failure(n, owner, sq, "COMPOSED")
             }
             span.findAll(text).forEach { m ->

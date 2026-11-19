@@ -25,6 +25,9 @@ private val includedRoots = listOf(
     ".github/workflows",
     "release/acceptance/DEVICE_ACCEPTANCE.md",
     "release/acceptance/templates",
+    // T15g (owner decision D21d): the phrase allowlist is packaged as a runtime resource (app/build.gradle.kts), so it
+    // is release source.
+    "audit/d7b-phrase-allowlist.txt",
 )
 
 internal data class ReleaseBinding(
