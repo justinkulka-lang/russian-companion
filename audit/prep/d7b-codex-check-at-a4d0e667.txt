@@ -1,0 +1,171 @@
+Verified a4d0e6679ffdb640afd74f32797befc06e9742b9 read-only. No tracked files changed, committed or pushed.
+
+CI 44429294209 passed on exactly 6391b87d298dc6af0b29cc0bf7455cf60d2ed926. 19 targeted tests passed locally.
+
+1. Validator rule — PASS.
+
+Both coverage paths now use frozenShippedTextByUnit, which filters through isFrozenSourceRecord:
+
+- Learner-field coverage: V2Validator.kt:5233.
+- Cyrillic in authored English: V2Validator.kt:5328.
+- Same-unit, exact-text/whole-word allowlist matching: PhraseAllowlist.kt:33.
+
+I reran the invented-sentence regression in Units 16 and 27. Synthesis backing did not prevent:
+
+Russian text has no admitted source record: Кошка читает газету под столом.
+
+The independent quoted-English probe returned:
+
+SYNTHESIS_BACKING_FROZEN=false
+QUOTED_PATH_ERRORS=[independently authored English makes a linguistic claim]
+
+The fact-marker enforcement and FrozenSourceBindingTest’s exact 24-record exception are unchanged. The unchanged pack returns V2Validation(ok=true, errors=[]).
+
+2. Allowlist — PASS.
+
+I ran copyDebugPhraseAllowlist and compared its generated resource with the repository and prep-branch copies. All contain 228 lines and have SHA-256:
+
+a7b94ea4ac56431d18a615424546a92ecc04671050d066cf74d6b901e4dcba16
+
+Fresh audit comparison:
+
+Failures:             227
+Failures − allowlist: empty
+Allowlist − failures: 30 | u30-i-dictionary-4.promptLetter | сущ | UNATTESTED
+
+Thus сущ is the sole entry held only by the existence check. Assertions are at PhraseAuditTest.kt:25.
+
+3. Selection records — FAIL on witness quality; formal D19a checks PASS.
+
+For all 57 records, I confirmed:
+
+- originalSourceText equals the cited frozen line verbatim;
+- shippedText equals the listed region;
+- both hashes recompute;
+- the region passes D19a against that line.
+
+The following citations nevertheless need attention:
+
+Record suffix	Finding	Better frozen witness
+
+u16-029, им	The cited dative page :96 describes dative plural, while the learner text discusses instrumental singular. Same ending text, wrong grammatical context.	units-6-10/wikibooks/adjectives-4292379.txt:67, explicitly instrumental.
+u25-038, те	lesson3-4460699.txt:232 is the demonstrative “those”, not the imperative polite/plural suffix.	units-26-30/wikipedia/russian-grammar-1369617627.txt:1169, explicitly the imperative suffix.
+u30-055, стоит	The cited neopredelennoe-mestoimenie-149963314.txt:143 uses figurative “a story stands behind…”. It is the same verb, but a weak witness for the displayed upright-on-a-base sense.	units-3-5/wikibooks/prepositions-4446858.txt:134 supplies the physical vase example; openrussian/verbs.csv:11 supplies the verb and form.
+u30-056, стоял	vechera-5336197.txt:1091 describes where Toulon was situated, rather than an object remaining upright.	units-3-5/openrussian/verbs.csv:11, with the “stand” sense and past form.
+
+
+Two suggested examples are not different-word homographs:
+
+- u26-041, Россия: lichnoe-imya-154915954.txt:286 explicitly quotes “[Россия] … страны”; this refers to the country. It does not attest the postal model, but it is not another proper name. A clearer lexical citation is openrussian/nouns.csv:52.
+- u12-028, сказать: dative-case-4289617.txt:7 contains the same verb in the “speak/say to” construction. It does not establish the aspect-pair claim. openrussian/verbs.csv:3 is clearer: “say, tell, speak, talk,” perfective, with its partner.
+
+All six suggested replacement citations pass D19a. The May citation u17-030 is also genuinely the month: its line contains 1 мая.
+
+4. English-boundary rule — FAIL.
+
+The exact condition is:
+
+1. the Cyrillic sequence is followed immediately by spaces and a Latin letter;
+2. it contains a comma;
+3. its last comma-separated part is one word;
+4. that final part is removed before the COMPOSED check.
+
+There is no requirement for preceding English context or a quotation boundary. See PhraseAudit.kt:154.
+
+I checked all 28 applications:
+
+Unit	Owner fields	Applications	Outcomes changed
+
+2	u2-st-devoicing.body	1	0
+4	ref-u4-pronouns.summary	1	0
+5	u5-st-teach-indeclinable-2.body, remediation, ref-u5-indeclinable.detail	3	0
+6	u6-st-teach-possessive-1.body, u6-st-rem-possessive.body; two matches each	4	4
+7	u7-st-teach-endings-7.body, remediation	2	0
+8	u8-st-teach-spelling-2.body, remediation; two matches each	4	0
+11	u11-st-teach-past-aspect-2.body, remediation	2	0
+21	u21-st-teach-svoy-1.body, remediation	2	0
+24	u24-g-verbal-ne-0.feedback	1	0
+26	u26-st-teach-vy-capital-1.body, -3.body, remediation twice	4	0
+30	Both dictionary teaching bodies; remediation twice	4	0
+
+
+The four current outcome changes are legitimate English explanations: “In мой стол, стол is…” and “In моя собака, собака is…”, each in teaching and remediation.
+
+But the generic rule wrongly exempts composed Russian:
+
+он улыбался, читая
+→ COMPOSED
+
+он улыбался, читая is the complete Russian example.
+→ no failures
+
+The spans are separately attested at past-tense-4567337.txt:106 and vechera-5336197.txt:47; the combination is not contiguous.
+
+I also found an independent D15c hole:
+
+читая письмо, он улыбался
+→ COMPOSED
+
+читая письмо — он улыбался
+→ no failures
+
+The sequence regex handles commas, but not dash joins. Both gaps need regressions and fixes.
+
+5. D20 gap — PASS: confirmed, with additional omissions.
+
+Putting the unallowlisted single word сущ into each reported field kind in Unit 16 passed the full validator and produced no audit failure.
+
+“Items reached only through their objective” needs precise wording: objective.checkItemIds are scanned. What is missed is an item associated through item.objectiveId but absent from both objective check lists and step item lists.
+
+Additional results:
+
+Field kind	Validator	Phrase audit
+
+Session title	Missed	Field included; unstressed single word not checked
+Binder prompt	Missed	Missed
+Binder model answer	Missed	Missed
+Tutor bring text	Missed	Missed
+Review-copy title	Missed	Missed
+Visible but unlinked reference title	Missed	Missed
+Unit mappingNote	Rejected	Missed
+
+
+All ten missed-field probes—including the original four—returned ok=true. The mappingNote control returned the expected Russian-source error.
+
+The same static omissions cover review introductions/messages and unlinked references’ summary/detail fields. Binder/model/tutor text is rendered at V2UnitTestScreen.kt:17.
+
+Compare validator hosts:5238 with audit fields:115. Merely making the validator match the current audit set would leave shared omissions. Preserve the existing mappingNote guard when unifying them.
+
+6. Units1620SourceIntakeTest — PASS.
+
+The three cross-freeze records contain their cited lines verbatim. The added branch requires a prov-d7b- selection record, a manifest-bound revision and literal containment of originalSourceText in that file.
+
+Existing non-D7b records retain their previous branches. Source-ID/revision identity remains independently checked by the unchanged FrozenSourceBindingTest.
+
+Evidence: Units1620SourceIntakeTest.kt:152. The changed source-span test and the full nine-test class passed locally.
+
+7. Pins, hashes and tests — FAIL on release-digest coverage; numerical values PASS.
+
+All changed recorded values recompute correctly:
+
+Value	Recomputed prefix
+
+Validator hash	ebd140ac
+Unit 3 content / review package	b1986b78 / 8e2ea00e
+Units 16, 17, 19, 20 content	17e7a641, 6b680bda, fddd2ad0, c7d467ab
+Units 21, 24, 25 content	566c3430, 500af59a, 4bc90e89
+Intermediate source digest	77ef92e7
+Final source digest	a5499b4d
+
+
+The curriculum pin at 97a93432 has pack bytes identical to head. All six source-guard hashes match. No existing test/assertion was deleted or newly skipped.
+
+However, the runtime allowlist is omitted from the release source digest. Its file is under audit/, outside ReleaseSourceDigest.kt:13, although app/build.gradle.kts:72 packages it.
+
+The digest probe returned the same value before and after replacing the allowlist input:
+
+a5499b4df3fb95ff265c2f674909f7f38de27800d6340415718b18f3c916ceb3
+
+That runtime input needs explicit digest coverage and a regression test.
+
+Overall: FAIL. Required corrections are the mismatched/weak selection witnesses, English-boundary and dash-composition bypasses, and release-digest coverage for the packaged allowlist. D20 is confirmed but needs a broader shared field set than the four originally recorded omissions.
