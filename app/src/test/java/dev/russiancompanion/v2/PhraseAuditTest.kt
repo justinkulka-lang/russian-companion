@@ -5,6 +5,7 @@ import dev.russiancompanion.v2.curriculum.Phase2Sources
 import dev.russiancompanion.v2.curriculum.PhraseAllowlist
 import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.V2Validator
+import dev.russiancompanion.v2.curriculum.V2LearnerFields
 import org.junit.Assert.*
 import org.junit.Test
 import java.io.File
@@ -96,6 +97,52 @@ class PhraseAuditTest {
         assertFalse(PhraseAllowlist.exempts(28, "писав"))
         assertFalse(PhraseAllowlist.exempts(27, "написав"))
         assertFalse(PhraseAllowlist.exempts(28, "написав", emptyList()))
+    }
+
+    /** T15g (owner decision D20): the validator's Russian-coverage scan reads exactly the audit's learner-facing fields. */
+    @Test fun validatorScanAndPhraseAuditUseTheSameLearnerFields() {
+        val audit = PhraseAudit.fields(pack).map { Triple(it.unit, it.ownerField, it.text) }
+        val validator = V2LearnerFields.fields(pack).map { Triple(it.unit, it.ownerField, it.text) }
+        assertEquals(audit.toSet(), validator.toSet())
+        assertEquals(audit.size, validator.size)
+        // The four field kinds D20 adds are in the set.
+        val names = validator.map { it.second }
+        assertTrue(names.any { it.endsWith(".shortLabel") })
+        assertTrue(names.any { it.endsWith(".dominantAction") })
+        val placed = pack.units.flatMap { u -> u.objectives.flatMap { it.checkItemIds } + u.sessions.flatMap { s -> s.steps.flatMap { it.itemIds } } }.toSet()
+        val objectiveOnlyItems = pack.items.map { it.id }.filterNot { it in placed }
+        assertTrue(objectiveOnlyItems.isNotEmpty() && objectiveOnlyItems.all { id -> names.any { it.startsWith("$id.") } })
+        val linkedExamples = pack.units.flatMap { u -> u.objectives.flatMap { it.exampleIds } + u.sessions.flatMap { s -> s.steps.flatMap { it.exampleIds } } }.toSet()
+        val objectiveOnlyExamples = pack.examples.map { it.id }.filterNot { it in linkedExamples }
+        assertTrue(objectiveOnlyExamples.isNotEmpty() && objectiveOnlyExamples.all { id -> "$id.display" in names })
+    }
+
+    /** T15g (D20) regression: сущ (allowlisted for Unit 30 only) placed in each newly scanned field kind of Unit 29 is rejected. */
+    @Test fun aWordWithoutWitnessInAnyNewlyScannedFieldIsRejected() {
+        val word = "сущ"
+        val error = "Russian text has no admitted source record: $word"
+        fun rejected(changed: dev.russiancompanion.v2.curriculum.V2CurriculumPack) = V2Validator.validate(changed).errors.contains(error)
+        assertFalse(rejected(pack))
+        val u29 = pack.units.single { it.number == 29 }
+        // 1. unit shortLabel
+        assertTrue(rejected(pack.copy(units = pack.units.map { if (it.number == 29) it.copy(shortLabel = it.shortLabel + " ($word)") else it })))
+        // 2. step dominantAction
+        val step = u29.sessions.flatMap { it.steps }.first { it.dominantAction != null }
+        assertTrue(rejected(pack.copy(units = pack.units.map { u -> if (u.number != 29) u else u.copy(sessions = u.sessions.map { s ->
+            s.copy(steps = s.steps.map { if (it.id == step.id) it.copy(dominantAction = it.dominantAction + " ($word)") else it }) }) })))
+        // 3. an item reached only through its objective
+        val placed = pack.units.flatMap { u -> u.objectives.flatMap { it.checkItemIds } + u.sessions.flatMap { s -> s.steps.flatMap { it.itemIds } } }.toSet()
+        val objective29 = u29.objectives.map { it.id }.toSet()
+        val item = pack.items.first { it.objectiveId in objective29 && it.id !in placed }
+        assertTrue(rejected(pack.copy(items = pack.items.map { if (it.id == item.id) it.copy(feedback = it.feedback + " ($word)") else it })))
+        // 4. an example linked only by its objectiveId
+        val linked = pack.units.flatMap { u -> u.objectives.flatMap { it.exampleIds } + u.sessions.flatMap { s -> s.steps.flatMap { it.exampleIds } } }.toSet()
+        val example = pack.examples.first { it.id !in linked }
+        val exampleUnit = pack.units.single { u -> u.objectives.any { it.id == example.objectiveId } }.number
+        assertTrue(exampleUnit != 30)
+        assertTrue(rejected(pack.copy(examples = pack.examples.map { if (it.id == example.id) it.copy(note = it.note + " ($word)") else it })))
+        // Control: in Unit 30, where сущ is allowlisted, the same insertion passes the coverage rule.
+        assertFalse(rejected(pack.copy(units = pack.units.map { if (it.number == 30) it.copy(shortLabel = it.shortLabel + " ($word)") else it })))
     }
 
     /**

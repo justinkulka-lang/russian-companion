@@ -30,7 +30,7 @@ internal object PhraseAudit {
     private val word = Regex(WORD)
     private val form = Regex("[$CYR][$CYR\\u0301]*")
     private val apostrophe = Regex("(?<=[$CYR])'(?!')")
-    private val block = Regex("(?i)</?(?:p|li|ul|ol|br|td|th|tr|table|thead|tbody|div|h[1-6]|blockquote|section|article|dd|dt|dl)\\b[^>]*>")
+    private val block = TwoPartPhraseRule.blockTag
     private val tag = Regex("<[^>]+>")
     private val bold = Regex("'''([\\u0430\\u0435\\u0451\\u0438\\u043e\\u0443\\u044b\\u044d\\u044e\\u044f\\u0410\\u0415\\u0401\\u0418\\u041e\\u0423\\u042b\\u042d\\u042e\\u042f])'''")
 
@@ -116,6 +116,8 @@ internal object PhraseAudit {
         pack.units.forEach { u ->
             val n = u.number
             add(n, u.id, "title", u.title); add(n, u.id, "shortLabel", u.shortLabel); add(n, u.id, "topicSummary", u.topicSummary)
+            // T15g (D20): the mapping note is shown on the unit screen (V2Screens), so it is learner-facing.
+            add(n, u.id, "mappingNote", u.mappingNote)
             u.objectives.forEach { o -> add(n, o.id, "title", o.title); o.exampleIds.forEach { exampleUnits.getOrPut(it) { mutableSetOf() } += n } }
             u.sessions.forEach { s ->
                 add(n, s.id, "title", s.title)

@@ -9,8 +9,8 @@ import java.io.File
 
 /**
  * T15f (owner decision D6c, an approved rule change): the A2-26 narration lint also catches source narration,
- * commentary about exercises and assessment, and raw table-cell markup. Self-attestation, licence and attribution
- * notices and the learner's own book and binder directions are exempt. Blocking for Units 1-10; Units 11-30 are
+ * commentary about exercises and assessment, and raw table-cell markup. T15g (D18d): only the notice sentences are exempt,
+ * the ref-*-attribution licence notices by owner and the D8 self-attestation sentence by exact template. Blocking for Units 1-10; Units 11-30 are
  * reported here and each later unit task makes them blocking for its own unit.
  */
 class WidenedLearnerVoiceLintTest {
@@ -59,13 +59,39 @@ class WidenedLearnerVoiceLintTest {
             assertTrue(text, signals(text, "LEARNER_TABLE_CELL_MARKUP").isNotEmpty())
     }
 
-    @Test fun exemptNoticesAndPlainTeachingAreNotCaught() {
+    /**
+     * T15g (owner decision D18d): an exemption keyword no longer excuses a sentence. The T15f check's bypass examples and
+     * the five sentences this test used to list as exempt (each a pattern hit next to a keyword) are now caught.
+     */
+    @Test fun anExemptionKeywordNoLongerExcusesNarration() {
         for (text in listOf(
+            "The source pairs this answer with this cue.",
+            "The source pairs this answer with this cue for contributors.",
+            "The guided choice asks which form matches and credits the contributors.",
+            "The source pairs this answer with this cue under the CC BY-SA 4.0 attribution.",
+            "Your book: the dictionary lists this form.",
             "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check.",
             "Wikibooks contributors, CC BY-SA 4.0, and the source lists every contributor in its page history.",
             "Licence notice: the source gives the attribution required by its licence.",
             "Open your binder: the table shows your own notes.",
             "In your book, the table lists the endings.",
+        )) assertTrue(text, signals(text, "LEARNER_PROVENANCE_NARRATION").isNotEmpty())
+        assertTrue(signals("| Дательный (contributors)", "LEARNER_TABLE_CELL_MARKUP").isNotEmpty())
+        // A notice template only exempts itself: the sentence next to it is still linted.
+        assertTrue(signals("Marking this done records your own report; it is not scored. The source pairs this answer with this cue.",
+            "LEARNER_PROVENANCE_NARRATION").isNotEmpty())
+        // The licence notices themselves are exempt by owner, not by wording: the same text in a ref-*-attribution detail
+        // passes, and in a teaching reference it is caught.
+        val licence = "Licence notice: the source gives the attribution required by its licence."
+        fun referenceHit(id: String) = V2DesignDiagnostics.audit(current.copy(references = current.references.map {
+            if (it.id == id) it.copy(detail = licence) else it
+        })).signals.any { it.rule == "LEARNER_PROVENANCE_NARRATION" && id in it.entityIds }
+        assertFalse(referenceHit("ref-u610-attribution"))
+        assertTrue(referenceHit("ref-ca-cases"))
+    }
+
+    @Test fun exemptNoticesAndPlainTeachingAreNotCaught() {
+        for (text in listOf(
             "These words are masculine.",
             "Answer without looking back.",
             // D8 keeps short operating instructions and the one-sentence self-attestation notice.

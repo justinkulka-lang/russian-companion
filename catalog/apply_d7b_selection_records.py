@@ -40,7 +40,10 @@ AC = "́"
 REGION = re.compile(f"[{CYR}{AC}](?:[{CYR}{AC}]|[ \\t]+(?=[{CYR}]))*[?!.,]*")
 FORM = re.compile(f"[{CYR}][{CYR}{AC}]*")
 PIPED = re.compile(r"\[\[[^\[\]|]*\|([^\[\]|]*)\]\]")
-BLOCK = re.compile(r"(?i)</?(?:p|li|ul|ol|br|td|th|tr|table|thead|tbody|div|h[1-6]|blockquote|section|article|dd|dt|dl)\b[^>]*>")
+# T15g (D18d): every HTML block-level element is a boundary (same list as TwoPartPhraseRule.BLOCK_TAGS).
+BLOCK_TAGS = ("address article aside blockquote br caption col colgroup dd details dialog div dl dt fieldset figcaption figure footer form "
+              "h1 h2 h3 h4 h5 h6 header hgroup hr legend li main menu nav ol p pre section summary table tbody td tfoot th thead tr ul").split()
+BLOCK = re.compile(r"(?i)</?(?:" + "|".join(BLOCK_TAGS) + r")\b[^>]*>")
 CONTENT_AUDIT = "src-content-audit-research"
 
 

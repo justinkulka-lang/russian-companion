@@ -75,13 +75,24 @@ class TwoPartPhraseRuleTest {
         assertTrue(TwoPartPhraseRule.attests(letter76, "Уважаемый Иван Иванович", stress))
         assertFalse(TwoPartPhraseRule.present(letter76, "Иван ов"))
         // Words from two separate block elements are not joined, whatever the tag.
-        for (tag in listOf("p", "li", "td", "h3", "div")) {
+        // T15g (D18d): every block element, including the ones the T15f check found joined (pre, header, main, aside).
+        val blockElements = listOf(
+            "p", "div", "pre", "header", "main", "aside", "section", "article", "nav", "footer", "blockquote", "figure",
+            "figcaption", "address", "table", "thead", "tbody", "tfoot", "tr", "td", "th", "caption", "dl", "dt", "dd",
+            "ul", "ol", "li", "h1", "h2", "h3", "h4", "h5", "h6", "details", "summary", "fieldset", "form", "hgroup", "menu",
+            "dialog", "legend",
+        )
+        for (tag in blockElements) {
             val blocks = "<$tag>Уважаемый</$tag><$tag>Иван</$tag>"
             assertFalse(tag, TwoPartPhraseRule.present(blocks, "Уважаемый Иван"))
             assertFalse(tag, TwoPartPhraseRule.present(blocks, "УважаемыйИван"))
+            assertFalse(tag, TwoPartPhraseRule.present("<$tag class=\"x\">Уважаемый</$tag>Иван", "УважаемыйИван"))
+            assertTrue(tag, tag in TwoPartPhraseRule.BLOCK_TAGS)
         }
-        assertFalse(TwoPartPhraseRule.present("Уважаемый<br>Иван", "Уважаемый Иван"))
-        assertFalse(TwoPartPhraseRule.present("Уважаемый<br/>Иван", "Уважаемый Иван"))
+        for (void in listOf("br", "br/", "br /", "hr", "hr/", "hr /")) {
+            assertFalse(void, TwoPartPhraseRule.present("Уважаемый<$void>Иван", "Уважаемый Иван"))
+            assertFalse(void, TwoPartPhraseRule.present("Уважаемый<$void>Иван", "УважаемыйИван"))
+        }
         // Real whitespace between inline nodes is kept.
         assertTrue(TwoPartPhraseRule.present("<span>Уважаемый</span> <span>Иван</span>", "Уважаемый Иван"))
         assertFalse(TwoPartPhraseRule.present("<span>Уважаемый</span> <span>Иван</span>", "УважаемыйИван"))

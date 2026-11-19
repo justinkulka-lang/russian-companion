@@ -5233,33 +5233,13 @@ internal object V2Validator {
         // D7b (approved rule change): Russian coverage counts only frozen-file records (isFrozenSourceRecord) and the
         // D7b allowlist. Content-audit and original synthesis records no longer admit Russian through their shippedText.
         val frozenShippedByUnit = frozenShippedTextByUnit(pack)
+        // T15g (owner decision D20, approved rule change): the scan reads exactly the learner-facing field set
+        // (V2LearnerFields, the blocking phrase audit's set), plus the item assessment metadata it already checked.
+        val hostsByUnit = (V2LearnerFields.fields(pack) + V2LearnerFields.assessmentMetadata(pack))
+            .groupBy({ it.unit }, { it.text })
         pack.units.filter { unit -> unit.number in shippedByUnit }.forEach { unit ->
             val shipped = frozenShippedByUnit[unit.number].orEmpty()
-            val hosts = mutableListOf(unit.topicSummary, unit.mappingNote, unit.title)
-            unit.objectives.forEach { objective ->
-                hosts += objective.title
-                objective.exampleIds.forEach { id ->
-                    pack.example(id)?.let { hosts += it.display; hosts += it.note }
-                }
-                objective.checkItemIds.forEach { id -> addItemHosts(pack, id, hosts) }
-            }
-            unit.sessions.forEach { session ->
-                session.steps.forEach { step ->
-                    hosts += step.title
-                    hosts += step.body
-                    step.bookDirection?.let { hosts += it }
-                    step.companionDirection?.let { hosts += it }
-                    step.unavailableReason?.let { hosts += it }
-                    step.exampleIds.forEach { id ->
-                        pack.example(id)?.let { hosts += it.display; hosts += it.note }
-                    }
-                    step.itemIds.forEach { id -> addItemHosts(pack, id, hosts) }
-                    step.referenceIds.forEach { id ->
-                        pack.reference(id)?.let { hosts += it.title; hosts += it.summary; hosts += it.detail }
-                    }
-                }
-            }
-            hosts.forEach { host ->
+            hostsByUnit[unit.number].orEmpty().forEach { host ->
                 CYRILLIC_REGION.findAll(host).forEach { match ->
                     val text = match.value.trim()
                     val trimmed = text.trimEnd { it == '?' || it == '!' || it == '.' || it == ',' }
@@ -5277,21 +5257,6 @@ internal object V2Validator {
     private fun frozenShippedTextByUnit(pack: V2CurriculumPack): Map<Int, Set<String>> =
         pack.provenanceRecords.filter { isFrozenSourceRecord(pack, it) }.groupBy { it.unitNumber }
             .mapValues { (_, rows) -> rows.mapTo(HashSet()) { it.shippedText } }
-
-    private fun addItemHosts(pack: V2CurriculumPack, itemId: String, hosts: MutableList<String>) {
-        val item = pack.item(itemId) ?: return
-        hosts += item.prompt
-        item.promptLetter?.let { hosts += it }
-        hosts += item.answer
-        hosts += item.typedAnswerKey?.acceptedAnswers.orEmpty()
-        hosts += item.feedback
-        hosts += item.options
-        hosts += item.distractorRationales
-        item.assessment?.let { assessment ->
-            hosts += assessment.whyAnswerDemonstratesObjective
-            hosts += assessment.distractorDifference
-        }
-    }
 
     private val LINGUISTIC_CLAIM = Regex(
         "(?i)(\\brussian\\b.*\\b(has|have|is|are)\\b|\\b(has|have)\\b.*\\b(gender|genders|cases|tense)\\b|\\bten genders\\b|\\b\\d+\\s+genders\\b)",
