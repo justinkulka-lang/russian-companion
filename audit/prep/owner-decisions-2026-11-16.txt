@@ -133,3 +133,18 @@ D22b. Unit 4 unstressed они. Under D19a, an unstressed displayed form may cit
 D22c. Semicolon-separated letter-name lists. A sequence whose every item is a single letter, an upper/lower letter pair, or a letter name attested on the alphabet page is a list, not a clause sequence. That holds whether the separators are commas, semicolons or spaces. It is exempt from the D15c composed check, as D9 extends to it. Each item must still be attested on the alphabet page. A semicolon or dash between words is still a clause join (D21c).
 
 D23 (11/19, under D6). V2Validator.kt:5225 limits provenance records to Units 2-30. This is an approved rule change: allow Unit 1 provenance records only when they pass isFrozenSourceRecord, i.e. frozen selection records such as the D22a letter-name rows. All other provenance keeps the Units 2-30 limit. The authored-English limit at 5291 stays unchanged. Update the guard hash and history entry. List every Unit 1 digest or review-package pin that changes.
+
+D24 (11/19, under D6). Order after T15g (DONE a61f0bf6; Block 2 not complete).
+D24a. Code runs S1 intake next. It doesn't depend on the Block 2 remainder. Meanwhile Codex checks T15g, then prepares the Block 2 remainder.
+D24b. The Block 2 remainder becomes task T15h, which runs after Codex's prep. It covers:
+  - closure records for 13 HIGH findings: CC012, CC031, WC005, WC001, IA015, CC023; cross-unit CC020, CC021, CC022, CC027, IA003; app-wide CC018, CC019;
+  - restoring the Unit 10 absence objective's possession counterexample, using attested material only;
+  - generating the Block 2 listen-check sheet.
+D24c. S1 page list (18 pages):
+  - Units 12-14: en Grammatical aspect 1384289498; ru Вид (лингвистика) 153277825; en Sequence of tenses 1363198135; ru Повелительное наклонение 152579064.
+  - Units 21/29: en Reflexive pronoun 1374712982; ru Обособление 144053197; ru Больтраффио 149826784.
+  - D3: Wiktionary под; ReadyRussian Grammar 24 Capitalization (licensed parts only); ru Сослагательное наклонение; Wiktionary бы.
+  - D5: Wiktionary чтобы, дабы.
+  - D6a: Wiktionary двое; ru Имя числительное в русском языке; Wiktionary назад, за.
+  - D7c: Wiktionary некого.
+  Pages with no oldid recorded yet: freeze the current revision and record its oldid. Use the Wiktionary edition the prep reports name; if a report doesn't name one, use English Wiktionary and record that.
