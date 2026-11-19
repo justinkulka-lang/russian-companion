@@ -1,0 +1,5 @@
+Prep citations that differ at a4d0e667 (all others identical: catalog/sources/ and every cited code/test file are byte-identical between e853de1e and a4d0e667):
+- t15f-codex-check item 7: Unit1ReviewPackage.kt:199 -> now :201 (D7b added UNITS_1_30_D7B; the consolidated pin points to 97a93432, not 420f55e1).
+- t15f-codex-check item 7: candidate.json:11 sourceDigest 8959aecf... -> a5499b4d... (D7b).
+- t15f-codex-check items 3, 9: WORK_QUEUE.md:2760 -> 2761 and :2766 -> 2767 (D7b row inserted at 190).
+- Pack: v2-curriculum.json changed only by the D7b provenance records (57 selection records); no learner field changed.

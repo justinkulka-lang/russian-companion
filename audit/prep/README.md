@@ -35,3 +35,5 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - d7b-valsim-at-e853de1e.out: D7b validator simulation at e853de1e (Code). Regions only synthesis records admitted, as (unit, text, allowlisted) and occurrence count; 100 distinct, 70 not allowlisted. See D18.
 - d7b-selection-records.csv: D7b frozen selection records (Code): unit, region, record ID, frozen file:line, source ID for the 57 records added under D18a/D19a. The 10 D18b-exempt regions and сущ (D19b allowlist line) have none.
 - d7b-allowlist.txt: now 228 lines, with the D19b сущ line appended; byte-identical to audit/d7b-phrase-allowlist.txt on the content branch.
+- t15g-changed-learner-fields.csv: T15g, every changed, added or removed learner field (241 rows: unit, owner.field, change, old, new) between a4d0e667 and c4c65b24 (Unit 1 orientation and Units 6-10), including reference entries, their searchTerms and introducedInUnit, and step referenceIds.
+- t15g-prep-citations-at-a4d0e667.txt: T15g re-verification of the T15f check and T15g prep citations at a4d0e667; lists the four that differ.

@@ -1,0 +1,574 @@
+unit,owner.field,change,old,new
+1,u1-st-orient.body,CHANGED,"This is a proposed Lesson 1 mapping, not an approved owned-edition alignment. The development unit teaches printed letter identities with public-domain letter forms. Example words and model audio are not part of this unit. Qualified review is still pending.","This is a proposed Lesson 1 mapping, not an approved owned-edition alignment. The development unit teaches printed letter identities with public-domain letter forms. Example words and model audio are not part of this unit. Start with the printed letters."
+6,ex-u6-third-0.note,CHANGED,его,his
+6,ex-u6-third-1.note,CHANGED,её,her
+6,ex-u6-third-2.note,CHANGED,их,their
+6,ref-ca-cases.detail,CHANGED,"Adjectives change to fit the noun they modify, taking on their noun's gender, number, and case.","Case shows a noun's role in the sentence, so a Russian sentence relies less on word order than an English one. Compare Собаки ненавидят котов. — Dogs hate cats. with Коты ненавидят собак. — Cats hate dogs.
+
+The accusative marks the direct object. Feminine nouns change the ending -а to -у and the ending -я to -ю; feminine nouns ending in the soft sign -ь do not change.
+
+Masculine nouns follow animacy. An inanimate noun keeps its nominative form: Я де́лал стул. — I made a chair. An animate noun takes the same form as its genitive: Я люблю этого кота. — I like this cat. The form matches the genitive, but the noun is still the direct object.
+
+Object pronouns: Я — I, Меня — me. Мы — we, Нас — us. Ты — you, Тебя — you. Вы — you, Вас — you. Он — he, Его — him. Она — she, Её — her. Они — they, Их — them.
+
+Adjectives and possessives change to fit the noun they describe, taking on its gender, number and case."
+6,ref-ca-cases.searchTerms,CHANGED,ref-ca-cases,accusative | direct object | case | animate | inanimate | object pronouns | me | him | her | agreement
+6,ref-ca-cases.summary,CHANGED,"Adjectives change to fit the noun they modify, taking on their noun's gender, number, and case.","How case marks a noun's role, the accusative of direct objects, animacy and object pronouns."
+6,ref-ca-cases.title,CHANGED,Object agreement,Cases and the accusative
+6,ref-u6-direction.detail,ADDED,,"With the accusative, в means to or into, and на means onto or toward: Я шёл в дом — I walked into the house. Я шёл на улицу — I walked onto the street.
+
+With the prepositional case, в means in or at, and на means upon or at: Я жил в Лондоне — I lived in London. Оно на столе — It's on the table.
+
+The accusative shows direction; the prepositional shows location."
+6,ref-u6-direction.introducedInUnit,ADDED,,6
+6,ref-u6-direction.searchTerms,ADDED,,direction | location | into | onto | accusative | prepositional | в | на
+6,ref-u6-direction.summary,ADDED,,в and на with the accusative for direction and the prepositional for location.
+6,ref-u6-direction.title,ADDED,,Direction and location
+6,ref-u6-possessives.detail,ADDED,,"Possessives such as Мой, Твой, Наш and Ваш act like adjectives: they change to match the noun they describe, not the owner. Твой is the informal or singular your; Ваш is the formal or plural your.
+
+In the accusative, my has the forms Мой and Моего (masculine, inanimate and animate), мою (feminine), Моё (neuter), and Мои and Моих (plural, inanimate and animate). Our follows the same pattern: Наш, Нашего, нашу, Наше, Наши, Наших.
+
+The third-person possessives его (his), её (her) and их (their) do not change with the noun they describe: Я хочу его кота — I want his cat. Я хочу его котов — I want his cats."
+6,ref-u6-possessives.introducedInUnit,ADDED,,6
+6,ref-u6-possessives.searchTerms,ADDED,,possessive | my | your | our | his | her | their | agreement
+6,ref-u6-possessives.summary,ADDED,,"My, your, our and his, her, their with the nouns they describe."
+6,ref-u6-possessives.title,ADDED,,Possessives
+6,u6-i-animacy-3.feedback,CHANGED,"In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.","In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case."
+6,u6-i-possessive-2.distractorRationales[2],CHANGED,на́ши is plural and does not mark the feminine singular object row.,"на́ши is plural, so it does not agree with a feminine singular direct object."
+6,u6-st-rem-animacy.body,CHANGED,"сто́л is the supplied masculine inanimate form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Treat the English notes as dictionary senses, not full sentence translations.
+
+In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. These steps ask you to recognize the supplied forms only, not to produce endings for other nouns.
+
+до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. Use the requested case or the supplied context to decide a word’s sentence role.
+
+брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+
+учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Answer with the case the task names.
+
+друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. This check does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.","сто́л is the supplied masculine inanimate form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Treat the English notes as dictionary senses, not full sentence translations.
+
+In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role.
+
+до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. Use the requested case or the supplied context to decide a word’s sentence role.
+
+брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped.
+
+учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. Answer with the case the task names.
+
+друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative."
+6,u6-st-rem-direction.referenceIds,CHANGED,ref-ca-cases,ref-ca-cases | ref-u6-direction
+6,u6-st-rem-possessive.body,CHANGED,"Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+
+In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+
+In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+
+моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.
+
+Наш means our; Ваш means your (formal or plural). на́ша is the feminine singular nominative form of наш, and сестра́ is a feminine singular noun. In the direct-object accusative, change both words: на́ша becomes на́шу, and сестра́ becomes сестру́. Keep the same noun and feminine singular agreement. на́шего is the masculine and neuter genitive form, and на́ши is plural.
+
+тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́.","Possessives such as мо́й and тво́й agree with the noun they describe in gender, number and case. Choose the form from the noun, not from the gender of its owner. Start with the nominative forms below, then compare the feminine accusative example.
+
+In мой стол, стол is masculine singular. In моя собака, собака is feminine singular. Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.
+
+In the nominative singular, мо́й is masculine and моя́ is feminine. For стол choose мо́й; for собака choose моя́. The form follows the noun being described.
+
+моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form.
+
+Наш means our; Ваш means your (formal or plural). на́ша is the feminine singular nominative form of наш, and сестра́ is a feminine singular noun. In the direct-object accusative, change both words: на́ша becomes на́шу, and сестра́ becomes сестру́. Keep the same noun and feminine singular agreement. на́шего is the masculine and neuter genitive form, and на́ши is plural.
+
+тво́й is masculine singular nominative; твоя́ is feminine singular nominative. Both mean your. To change the masculine form to the feminine form while keeping nominative singular, choose твоя́."
+6,u6-st-rem-possessive.referenceIds,CHANGED,ref-ca-cases,ref-ca-cases | ref-u6-possessives
+6,u6-st-rem-third.referenceIds,CHANGED,ref-ca-cases,ref-ca-cases | ref-u6-possessives
+6,u6-st-teach-animacy-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-ca-cases
+6,u6-st-teach-animacy-2.body,CHANGED,"In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. These steps ask you to recognize the supplied forms only, not to produce endings for other nouns.","In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role."
+6,u6-st-teach-animacy-4.body,CHANGED,"брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.",брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped.
+6,u6-st-teach-animacy-5.body,CHANGED,учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Answer with the case the task names.,учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. Answer with the case the task names.
+6,u6-st-teach-animacy-6.body,CHANGED,"друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. This check does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.",друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative.
+6,u6-st-teach-animacy-6.title,CHANGED,Compare the friend with the source chair clause,Compare the friend with the chair clause
+6,u6-st-teach-direction-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u6-direction
+6,u6-st-teach-feminine-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-ca-cases
+6,u6-st-teach-object-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-ca-cases
+6,u6-st-teach-possessive-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u6-possessives
+6,u6-st-teach-possessive-5.body,CHANGED,моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form in these choices.,моё is the neuter singular nominative form of my. мои́ is the plural nominative form. A singular noun does not take the plural form.
+6,u6-st-teach-pronoun-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-ca-cases
+6,u6-st-teach-third-1.body,CHANGED,его — его. её — её. ,его — his. её — her. 
+6,u6-st-teach-third-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u6-possessives
+6,u6-st-teach-third-3.body,CHANGED,их — их. ,их — their. 
+7,ex-or-u7-demonstrative-3.note,CHANGED,this,these
+7,ref-u7-adjectives.detail,ADDED,,"The dictionary form of an adjective is masculine singular nominative, ending in -ый, -ий or -ой.
+
+An adjective agrees with its noun in gender, number and case: новый карандаш — new pencil; новая машина — new car; новое платье — new dress; эти хорошие новые студенты — these good new students.
+
+Soft adjectives keep the soft ending: синий стол. — the dark blue table; синяя книга — the dark blue book; синее письмо — the dark blue letter; синие книги — the dark blue books.
+
+Spelling: after г, ж, к, х, ч, ш or щ, write и rather than ы. After ж, ц, ч, ш or щ, an unstressed о in an ending is written е: хорошее письмо — the good letter.
+
+како́й means which, what or what kind of. э́тот means this; its plural э́ти means these, as in эти хорошие новые студенты.
+
+In the prepositional, masculine and neuter adjectives end in -ом (-ем after a soft ending or ш, щ, ч, ж, ц), feminine adjectives in -ой (-ей), and plural adjectives in -ых (-их): Она́ в си́ней кварти́ре, не в бе́лой кварти́ре — She's in the blue apartment, not the white apartment.
+
+In the accusative, feminine adjectives end in -ую (-юю after a soft ending): Анна встретила новую учительницу. — Anna met the new teacher. Masculine and plural adjectives follow the animacy of their noun."
+7,ref-u7-adjectives.introducedInUnit,ADDED,,7
+7,ref-u7-adjectives.searchTerms,ADDED,,adjective | agreement | dictionary form | soft adjective | spelling rule | this | these | which | prepositional | accusative
+7,ref-u7-adjectives.summary,ADDED,,"Dictionary form, agreement, spelling and case forms of adjectives."
+7,ref-u7-adjectives.title,ADDED,,Adjectives
+7,ref-u7-adverbs.detail,ADDED,,"Adverbs describe a verb much like adjectives describe nouns.
+
+Наречия — неизменяемые слова: adverbs do not decline or conjugate, and they do not change for gender or number. This does not mean that comparative forms cannot exist.
+
+Two adjective and adverb pairs are taught here: быстрый — быстро and творческий — творчески. Learn each pair as it is taught."
+7,ref-u7-adverbs.introducedInUnit,ADDED,,7
+7,ref-u7-adverbs.searchTerms,ADDED,,adverb | manner | invariable | how | быстро
+7,ref-u7-adverbs.summary,ADDED,,"What adverbs describe, why they do not change, and the two taught adjective and adverb pairs."
+7,ref-u7-adverbs.title,ADDED,,Adverbs
+7,u7-i-manner-1.distractorRationales[2],CHANGED,an unrestricted rule for every adjective goes beyond this check; it asks only about the pair shown.,an unrestricted rule for every adjective is not what this pair shows; it links one adjective with one adverb.
+7,u7-st-rem-adverb-invariance.body,CHANGED,"Наречия — неизменяемые слова.
+
+Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+
+Adverbs do not decline or conjugate: they do not change for case, gender or number agreement. This grammatical invariance does not mean that comparative forms cannot exist. Use this explanation to understand the rule; do not infer a general adverb-formation rule from these choices.","Наречия — неизменяемые слова.
+
+Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+
+Adverbs do not decline or conjugate: they do not change for case, gender or number agreement. This grammatical invariance does not mean that comparative forms cannot exist. Learn each adjective and adverb pair as it is taught."
+7,u7-st-rem-adverb-invariance.referenceIds,ADDED,,ref-u7-adverbs
+7,u7-st-rem-adverb-pairs.referenceIds,ADDED,,ref-u7-adverbs
+7,u7-st-rem-adverb.referenceIds,ADDED,,ref-u7-adverbs
+7,u7-st-rem-default.referenceIds,ADDED,,ref-u7-adjectives
+7,u7-st-rem-demonstrative.referenceIds,ADDED,,ref-u7-adjectives
+7,u7-st-rem-endings.body,CHANGED,"новый карандаш is masculine singular nominative; новая машина is feminine singular nominative. The adjective agrees with the noun in the phrase, so the car phrase uses the feminine form но́вая rather than masculine но́вый or plural но́вые. To make a feminine singular noun phrase accusative, change both words: the adjective но́вая becomes но́вую, and the noun кни́га becomes кни́гу. Both words change in these supplied case pairs. In Анна встретила новую учительницу (Anna met the new teacher), the adjective новую and the noun учительницу are both accusative.
+
+The dictionary form of this adjective is masculine singular nominative но́вый. A phrase can need another gender, number or case even though the dictionary form is masculine singular nominative. In the neuter, the adjective но́вое becomes но́вого in the genitive, and the noun окно́ becomes окна́. Both adjective and noun change case while remaining neuter singular. In Я пришёл из моего старого дома (I arrived from my old house), the words моего старого дома are all genitive.
+
+новое платье is neuter singular nominative. Compare the adjective with the masculine pencil and feminine car examples above: the noun controls the agreement required in that phrase. синий стол uses the masculine nominative form of a different adjective meaning dark blue. Learn the forms of each adjective as you meet them.
+
+синяя книга and синее письмо show feminine and neuter singular nominative agreement for the adjective meaning dark blue. Keep the noun and the requested agreement in view. Use these nominative examples as models, then check the case the task names.
+
+синие книги has plural nominative agreement. For the adjective meaning new, но́вый is masculine singular nominative and но́вые is plural nominative. For the plural nominative of the same adjective as но́вый, choose но́вые rather than feminine singular но́вая. The comparison changes number; it does not change the adjective to a different vocabulary item.
+
+но́вая and но́вое are feminine and neuter singular nominative forms of the same adjective. The corresponding dictionary form is masculine singular nominative но́вый. When the task shows но́вая and asks for that dictionary form, choose но́вый rather than neuter но́вое. Use the requested gender, number and case to decide the answer.
+
+но́вые is plural nominative of this adjective. Compare all four nominative forms: но́вый, но́вая, но́вое and но́вые. A feminine singular phrase such as новая машина needs но́вая, not the masculine dictionary form or the plural form.","новый карандаш is masculine singular nominative; новая машина is feminine singular nominative. The adjective agrees with the noun in the phrase, so the car phrase uses the feminine form но́вая rather than masculine но́вый or plural но́вые. To make a feminine singular noun phrase accusative, change both words: the adjective но́вая becomes но́вую, and the noun кни́га becomes кни́гу. Both words change in these supplied case pairs. In Анна встретила новую учительницу (Anna met the new teacher), the adjective новую and the noun учительницу are both accusative.
+
+The dictionary form of this adjective is masculine singular nominative но́вый. A phrase can need another gender, number or case even though the dictionary form is masculine singular nominative. In the neuter, the adjective но́вое becomes но́вого in the genitive, and the noun окно́ becomes окна́. Both adjective and noun change case while remaining neuter singular. In Я пришёл из моего старого дома (I arrived from my old house), the words моего старого дома are all genitive.
+
+новое платье is neuter singular nominative. Compare the adjective with the masculine pencil and feminine car examples above: the noun controls the agreement required in that phrase. синий стол uses the masculine nominative form of a different adjective meaning dark blue. Learn the forms of each adjective as you meet them.
+
+синяя книга and синее письмо show feminine and neuter singular nominative agreement for the adjective meaning dark blue. Keep the noun and the requested agreement in view. Use these nominative examples as models, then check the case the task names.
+
+синие книги has plural nominative agreement. For the adjective meaning new, но́вый is masculine singular nominative and но́вые is plural nominative. For the plural nominative of the same adjective as но́вый, choose но́вые rather than feminine singular но́вая. The comparison changes number; it does not change the adjective to a different vocabulary item.
+
+но́вая and но́вое are feminine and neuter singular nominative forms of the same adjective. The corresponding dictionary form is masculine singular nominative но́вый. The dictionary form for но́вая is но́вый, not neuter но́вое. Use the requested gender, number and case to decide the answer.
+
+но́вые is plural nominative of this adjective. Compare all four nominative forms: но́вый, но́вая, но́вое and но́вые. A feminine singular phrase such as новая машина needs но́вая, not the masculine dictionary form or the plural form."
+7,u7-st-rem-endings.referenceIds,ADDED,,ref-u7-adjectives
+7,u7-st-rem-manner.referenceIds,ADDED,,ref-u7-adverbs
+7,u7-st-rem-objectadj.referenceIds,ADDED,,ref-u7-adjectives
+7,u7-st-rem-place.referenceIds,ADDED,,ref-u7-adjectives
+7,u7-st-rem-question.referenceIds,ADDED,,ref-u7-adjectives
+7,u7-st-rem-spelling.body,CHANGED,"An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.
+
+After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.
+
+хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. To make a feminine singular noun phrase accusative, change both words: the adjective хоро́шая becomes хоро́шую, and the noun кни́га becomes кни́гу. Keep the same noun when you change the case. хоро́шего is masculine singular genitive; хоро́шие is plural nominative. In Оно́ под хоро́шими кни́гами (It's under the good books), the adjective хоро́шими and the noun кни́гами are both instrumental plural.
+
+хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. All the options are already correctly spelled.","An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.
+
+After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.
+
+хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. To make a feminine singular noun phrase accusative, change both words: the adjective хоро́шая becomes хоро́шую, and the noun кни́га becomes кни́гу. Keep the same noun when you change the case. хоро́шего is masculine singular genitive; хоро́шие is plural nominative. In Оно́ под хоро́шими кни́гами (It's under the good books), the adjective хоро́шими and the noun кни́гами are both instrumental plural.
+
+хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший."
+7,u7-st-rem-spelling.referenceIds,ADDED,,ref-u7-adjectives
+7,u7-st-teach-adverb-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u7-adverbs
+7,u7-st-teach-adverb-invariance-1.referenceIds,CHANGED,ref-u7-ruwiki-attribution,ref-u7-ruwiki-attribution | ref-u7-adverbs
+7,u7-st-teach-adverb-invariance-english.body,CHANGED,"Adverbs do not decline or conjugate: they do not change for case, gender or number agreement. This grammatical invariance does not mean that comparative forms cannot exist. Use this explanation to understand the rule; do not infer a general adverb-formation rule from these choices.","Adverbs do not decline or conjugate: they do not change for case, gender or number agreement. This grammatical invariance does not mean that comparative forms cannot exist. Learn each adjective and adverb pair as it is taught."
+7,u7-st-teach-adverb-pairs-1.referenceIds,CHANGED,ref-u7-ruwiki-attribution,ref-u7-ruwiki-attribution | ref-u7-adverbs
+7,u7-st-teach-default-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u7-adjectives
+7,u7-st-teach-demonstrative-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u7-adjectives
+7,u7-st-teach-demonstrative-3.body,CHANGED,э́тот — this. э́то — this. э́ти — this. ,э́тот — this. э́то — this. э́ти — these. 
+7,u7-st-teach-endings-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u7-adjectives
+7,u7-st-teach-endings-6.body,CHANGED,"но́вая and но́вое are feminine and neuter singular nominative forms of the same adjective. The corresponding dictionary form is masculine singular nominative но́вый. When the task shows но́вая and asks for that dictionary form, choose но́вый rather than neuter но́вое. Use the requested gender, number and case to decide the answer.","но́вая and но́вое are feminine and neuter singular nominative forms of the same adjective. The corresponding dictionary form is masculine singular nominative но́вый. The dictionary form for но́вая is но́вый, not neuter но́вое. Use the requested gender, number and case to decide the answer."
+7,u7-st-teach-manner-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u7-adverbs
+7,u7-st-teach-objectadj-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u7-adjectives
+7,u7-st-teach-place-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u7-adjectives
+7,u7-st-teach-question-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u7-adjectives
+7,u7-st-teach-spelling-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u7-adjectives
+7,u7-st-teach-spelling-4.body,CHANGED,"хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. All the options are already correctly spelled.","хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший."
+8,ex-or-u8-agreement-7.note,CHANGED,this,these
+8,ex-or-u8-irregular-2.note,CHANGED,brother,brothers
+8,ex-or-u8-irregular-4.note,CHANGED,friend,friends
+8,ex-or-u8-irregular-6.note,CHANGED,person,people
+8,ex-or-u8-irregular-8.note,CHANGED,son,sons
+8,ref-u7-adjectives.detail,ADDED,,"The dictionary form of an adjective is masculine singular nominative, ending in -ый, -ий or -ой.
+
+An adjective agrees with its noun in gender, number and case: новый карандаш — new pencil; новая машина — new car; новое платье — new dress; эти хорошие новые студенты — these good new students.
+
+Soft adjectives keep the soft ending: синий стол. — the dark blue table; синяя книга — the dark blue book; синее письмо — the dark blue letter; синие книги — the dark blue books.
+
+Spelling: after г, ж, к, х, ч, ш or щ, write и rather than ы. After ж, ц, ч, ш or щ, an unstressed о in an ending is written е: хорошее письмо — the good letter.
+
+како́й means which, what or what kind of. э́тот means this; its plural э́ти means these, as in эти хорошие новые студенты.
+
+In the prepositional, masculine and neuter adjectives end in -ом (-ем after a soft ending or ш, щ, ч, ж, ц), feminine adjectives in -ой (-ей), and plural adjectives in -ых (-их): Она́ в си́ней кварти́ре, не в бе́лой кварти́ре — She's in the blue apartment, not the white apartment.
+
+In the accusative, feminine adjectives end in -ую (-юю after a soft ending): Анна встретила новую учительницу. — Anna met the new teacher. Masculine and plural adjectives follow the animacy of their noun."
+8,ref-u7-adjectives.introducedInUnit,ADDED,,7
+8,ref-u7-adjectives.searchTerms,ADDED,,adjective | agreement | dictionary form | soft adjective | spelling rule | this | these | which | prepositional | accusative
+8,ref-u7-adjectives.summary,ADDED,,"Dictionary form, agreement, spelling and case forms of adjectives."
+8,ref-u7-adjectives.title,ADDED,,Adjectives
+8,ref-u8-existence.detail,ADDED,,"Есть can say there is or there are. It is followed by the nominative case.
+
+На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow.
+
+The noun naming what exists is nominative; the place phrase is separate."
+8,ref-u8-existence.introducedInUnit,ADDED,,8
+8,ref-u8-existence.searchTerms,ADDED,,there is | there are | exists | есть | nominative
+8,ref-u8-existence.summary,ADDED,,есть with the nominative to say that something exists somewhere.
+8,ref-u8-existence.title,ADDED,,"There is, there are"
+8,ref-u8-plurals.detail,ADDED,,"Masculine nouns add -ы: стол — table, столы — tables. Feminine nouns ending in -а replace it with -ы: машина — car, машины — cars. Feminine nouns ending in -я or -ь take -и. Neuter nouns ending in -о take -а: письмо — letter, письма — letters.
+
+After к, г, х, ш, щ, ж or ч, use -и instead of -ы. книга (book) has the stem книг-, so it follows this rule.
+
+Some plurals are learned as words: Сын and Сыновья (son, sons); Брат and Братья (brother, brothers); Друг and Друзья (friend, friends).
+
+Plural adjectives end in -ые or -ие; see Adjectives."
+8,ref-u8-plurals.introducedInUnit,ADDED,,8
+8,ref-u8-plurals.searchTerms,ADDED,,plural | nominative plural | seven-letter rule | spelling | irregular plural
+8,ref-u8-plurals.summary,ADDED,,"Nominative plural endings, the seven-letter spelling rule, and plurals to learn as words."
+8,ref-u8-plurals.title,ADDED,,Noun plurals
+8,u8-g-spelling-0.answer,CHANGED,кни́ги,хоро́шие
+8,u8-g-spelling-0.distractorRationales[1],CHANGED,"кни́га is the singular nominative form, so it does not supply the requested plural nominative form.","хоро́ший is the masculine singular nominative form, so it does not supply the requested plural nominative form."
+8,u8-g-spelling-0.distractorRationales[2],CHANGED,"кни́ге is the singular dative form, so it does not supply the requested plural nominative form.","хоро́шая is the feminine singular nominative form, so it does not supply the requested plural nominative form."
+8,u8-g-spelling-0.feedback,CHANGED,кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.,хоро́ший is the masculine singular nominative form; хоро́шие is the plural nominative form of the same adjective.
+8,u8-g-spelling-0.options[0],CHANGED,кни́ги,хоро́шие
+8,u8-g-spelling-0.options[1],CHANGED,кни́га,хоро́ший
+8,u8-g-spelling-0.options[2],CHANGED,кни́ге,хоро́шая
+8,u8-g-spelling-0.prompt,CHANGED,Which plural nominative form of the same noun corresponds to the shown form?,Which plural nominative form of the same adjective corresponds to the shown form?
+8,u8-g-spelling-0.promptLetter,CHANGED,кни́га,хоро́ший
+8,u8-st-rem-agreement.referenceIds,ADDED,,ref-u7-adjectives
+8,u8-st-rem-availability.body,CHANGED,"На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+
+В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole line with its own translation.
+
+In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.","На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+
+В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole line with its own translation.
+
+In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here."
+8,u8-st-rem-availability.referenceIds,ADDED,,ref-u8-existence
+8,u8-st-rem-irregular.body,CHANGED,"пять столов — five tables. брат — brother.
+
+Table, five tables - Стол, пять столов
+
+бра́тья — brother. друг — friend. 
+
+друзья́ — friend. челове́к — person. 
+
+лю́ди — person. сы́н — son. 
+
+сыновья́ — son. ","пять столов — five tables. брат — brother.
+
+Table, five tables - Стол, пять столов
+
+бра́тья — brothers. друг — friend. 
+
+друзья́ — friends. челове́к — person. 
+
+лю́ди — people. сы́н — son. 
+
+сыновья́ — sons. "
+8,u8-st-rem-irregular.referenceIds,ADDED,,ref-u8-plurals
+8,u8-st-rem-plural.referenceIds,ADDED,,ref-u8-plurals
+8,u8-st-rem-spelling.referenceIds,ADDED,,ref-u8-plurals
+8,u8-st-teach-agreement-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u7-adjectives
+8,u8-st-teach-availability-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u8-existence
+8,u8-st-teach-availability-3.body,CHANGED,"In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.","In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here."
+8,u8-st-teach-irregular-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u8-plurals
+8,u8-st-teach-irregular-3.body,CHANGED,бра́тья — brother. друг — friend. ,бра́тья — brothers. друг — friend. 
+8,u8-st-teach-irregular-4.body,CHANGED,друзья́ — friend. челове́к — person. ,друзья́ — friends. челове́к — person. 
+8,u8-st-teach-irregular-5.body,CHANGED,лю́ди — person. сы́н — son. ,лю́ди — people. сы́н — son. 
+8,u8-st-teach-irregular-6.body,CHANGED,сыновья́ — son. ,сыновья́ — sons. 
+8,u8-st-teach-plural-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u8-plurals
+8,u8-st-teach-spelling-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u8-plurals
+9,ex-u9-quantity-0.note,CHANGED,один час,one hour
+9,ex-u9-quantity-1.note,CHANGED,два часа,two hours
+9,ex-u9-quantity-10.note,CHANGED,пять лет,five years
+9,ex-u9-quantity-2.note,CHANGED,пять часов,five hours
+9,ex-u9-quantity-3.note,CHANGED,двадцать один час,twenty-one hours
+9,ex-u9-quantity-4.note,CHANGED,двадцать два часа,twenty-two hours
+9,ref-u9-genitive.detail,ADDED,,"Genitive singular: masculine nouns ending in a consonant add -а, and -й or -ь becomes -я. Neuter -о becomes -а and -е becomes -я. Feminine -а becomes -ы, -я and -ь become -и, and after the seven consonants -а becomes -и.
+
+Genitive plural, with the forms used after a number: Стол, пять столов — Table, five tables. Музе́й, шесть музе́ев — Museum, six museums. Вещь, десять веще́й — Thing, ten things. Неде́ля, семь неде́ль — Week, seven weeks. Кни́га, во́семь книг — Book, eight books.
+
+The genitive plural has many exceptions; learn each new form as it is taught."
+9,ref-u9-genitive.introducedInUnit,ADDED,,9
+9,ref-u9-genitive.searchTerms,ADDED,,genitive | genitive plural | genitive singular | counting | numbers
+9,ref-u9-genitive.summary,ADDED,,Genitive singular and plural noun endings used after numbers.
+9,ref-u9-genitive.title,ADDED,,Genitive nouns
+9,ref-u9-numbers.detail,ADDED,,"Numbers: 1 оди́н, 2 два, 3 три, 4 четы́ре, 5 пять, 6 шесть, 7 семь, 8 во́семь, 9 де́вять, 10 де́сять, 11 оди́ннадцать, 20 два́дцать, 100 сто, 1,000 ты́сяча. Compound numbers: два́дцать оди́н — 21; сто оди́н — 101; две́сти пятна́дцать — 215.
+
+One agrees with its noun: один мальчик — one boy; одна девушка — one girl. Two is два with masculine and neuter nouns and две with feminine nouns.
+
+In the nominative and the inanimate accusative, the last digit decides the noun's case. A number ending in один takes the nominative singular: Есть оди́н кот — There is one cat. A number ending in 2, 3 or 4 takes the genitive singular: Два рубля́ — Two roubles; Два́дцать две копе́йки — 22 kopecks. A number ending in 5 to 9 or 0, and every teen, takes the genitive plural: Пять рубле́й — Five roubles; Два́дцать пять копе́ек — 25 kopecks; шестнадцать рублей — sixteen rubles.
+
+Above 99, the last two digits decide: двести три собаки — two hundred and three dogs; двести тринадцать собак — two hundred and thirteen dogs. In other sentence cases the number itself also changes."
+9,ref-u9-numbers.introducedInUnit,ADDED,,9
+9,ref-u9-numbers.searchTerms,ADDED,,numbers | counting | one | two | cardinal | how many | genitive after numbers
+9,ref-u9-numbers.summary,ADDED,,"Cardinal numbers, the forms of one and two, and the noun case after a number."
+9,ref-u9-numbers.title,ADDED,,Numbers and counting
+9,u9-g-pattern-0.promptLetter,CHANGED,один час,Есть оди́н кот
+9,u9-st-rem-cardinal.referenceIds,ADDED,,ref-u9-numbers
+9,u9-st-rem-hundreds.referenceIds,ADDED,,ref-u9-numbers
+9,u9-st-rem-odindva.body,CHANGED,"один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+
+два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+
+одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+
+одна́ and одно́ both represent 1 in the cardinal table. They are feminine and neuter singular forms, respectively.
+
+одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+
+оди́н — one and два — two. The additional example один час uses masculine singular один with час; feminine singular одна is the form shown with девушка.","один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one.
+
+два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+
+одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+
+одна́ and одно́ both represent 1 in the cardinal table. They are feminine and neuter singular forms, respectively.
+
+одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+
+оди́н — one and два — two. The additional example один час uses masculine singular один with час; feminine singular одна is the form shown with девушка."
+9,u9-st-rem-odindva.referenceIds,ADDED,,ref-u9-numbers
+9,u9-st-rem-pattern.body,CHANGED,"These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — один час. три кошки — three cats. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All teen counts in the supplied basic examples take genitive plural.
+
+Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. пять лет — пять лет. 
+
+The I saw two friends sentence has an animate accusative object. Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule. The one-cat example below instead states existence in the basic nominative context. Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. 
+
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Пять рубле́й — Five roubles. ","These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — one hour. три кошки — three cats. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All teen counts in the supplied basic examples take genitive plural.
+
+Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. пять лет — five years. 
+
+The I saw two friends sentence has an animate accusative object. Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule. The one-cat example below instead states existence in the basic nominative context. Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. 
+
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Пять рубле́й — Five roubles. "
+9,u9-st-rem-pattern.referenceIds,ADDED,,ref-u9-numbers | ref-u9-genitive
+9,u9-st-rem-quantity.body,CHANGED,"These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — один час. два часа — два часа. 
+
+A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction. This is a grammatical singular form even though the count is greater than one.
+
+Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — пять часов. двадцать один час — двадцать один час. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — двадцать два часа. две девушки — two girls. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All counts from 11 through19 use genitive plural here. For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+
+The example with 41 follows the final-one pattern and uses nominative singular for the counted noun. The example with 10 follows the zero-ending pattern and uses genitive plural. десять копеек — ten kopeks. сорок один год — forty-one years. 
+
+The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — пять лет. двести три собаки — two hundred and three dogs. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare the supplied 203 and 213 examples and the two kopeck examples. Read the whole example before answering. двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. 
+
+The isolated forms below illustrate genitive singular and genitive plural noun forms. Read the complete counting example. Два́дцать пять копе́ек — 25 kopecks. стола́ — table. 
+
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. столо́в — table. ","These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — one hour. два часа — two hours. 
+
+A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction. This is a grammatical singular form even though the count is greater than one.
+
+Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — five hours. двадцать один час — twenty-one hours. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — twenty-two hours. две девушки — two girls. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All counts from 11 through19 use genitive plural here. For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. 
+
+The example with 41 follows the final-one pattern and uses nominative singular for the counted noun. The example with 10 follows the zero-ending pattern and uses genitive plural. десять копеек — ten kopeks. сорок один год — forty-one years. 
+
+The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — five years. двести три собаки — two hundred and three dogs. 
+
+For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare the supplied 203 and 213 examples and the two kopeck examples. Read the whole example before answering. двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. 
+
+The isolated forms below illustrate genitive singular and genitive plural noun forms. Read the complete counting example. Два́дцать пять копе́ек — 25 kopecks. стола́ — table. 
+
+These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. столо́в — table. "
+9,u9-st-rem-quantity.referenceIds,ADDED,,ref-u9-numbers | ref-u9-genitive
+9,u9-st-rem-teens.referenceIds,ADDED,,ref-u9-numbers
+9,u9-st-rem-tens.referenceIds,ADDED,,ref-u9-numbers
+9,u9-st-rem-thousands.referenceIds,ADDED,,ref-u9-numbers
+9,u9-st-teach-cardinal-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u9-numbers
+9,u9-st-teach-hundreds-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u9-numbers
+9,u9-st-teach-odindva-1.body,CHANGED,"один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.","один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one."
+9,u9-st-teach-odindva-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u9-numbers
+9,u9-st-teach-pattern-1.body,CHANGED,"These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — один час. три кошки — three cats. ","These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — one hour. три кошки — three cats. "
+9,u9-st-teach-pattern-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u9-numbers | ref-u9-genitive
+9,u9-st-teach-pattern-3.body,CHANGED,Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. пять лет — пять лет. ,Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. пять лет — five years. 
+9,u9-st-teach-quantity-1.body,CHANGED,"These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — один час. два часа — два часа. ","These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — one hour. два часа — two hours. "
+9,u9-st-teach-quantity-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u9-numbers | ref-u9-genitive
+9,u9-st-teach-quantity-3.body,CHANGED,Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — пять часов. двадцать один час — двадцать один час. ,Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — five hours. двадцать один час — twenty-one hours. 
+9,u9-st-teach-quantity-4.body,CHANGED,"For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — двадцать два часа. две девушки — two girls. ","For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — twenty-two hours. две девушки — two girls. "
+9,u9-st-teach-quantity-7.body,CHANGED,"The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — пять лет. двести три собаки — two hundred and three dogs. ","The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — five years. двести три собаки — two hundred and three dogs. "
+9,u9-st-teach-teens-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u9-numbers
+9,u9-st-teach-tens-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u9-numbers
+9,u9-st-teach-thousands-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u9-numbers
+10,ex-or-u10-pronoun-13.note,CHANGED,"genetive of ""he""","of him, of it"
+10,ex-or-u10-pronoun-14.note,CHANGED,"genetive of ""she""",her
+10,ex-u10-absence-0.note,CHANGED,"No, I don't have a son",I don't have a son
+10,ex-u10-have-5.note,CHANGED,"No, I don't have a son",I don't have a son
+10,ex-u10-pronoun-2.note,CHANGED,I,Me
+10,ex-u10-pronoun-3.note,CHANGED,He/she/it,Him/her/it
+10,ex-u10-pronoun-4.note,CHANGED,They,Them
+10,ex-u10-pronoun-7.note,CHANGED,We,Us
+10,ref-u10-genitive.detail,ADDED,,"Genitive pronouns: Я → Меня́, Мы → Нас, Ты → Тебя́, Вы → Вас, Он/она/оно → Его́/её, Они → Их. The genitive for of him and of it is the same, его́. After a preposition, его, её and их gain н: Для него́ — For him/it. Без неё — Without her.
+
+Prepositions that take the genitive: Для — for; У — by, near; Без — without; Из — from, out of; От — away from. Я хочу́ пода́рок для моего́ дру́га — I want a present for my friend. Ко́фе без молока́ — Black coffee. Я из А́нглии — I'm from England.
+
+Genitive adjectives: masculine and neuter -ого (-его after a hushing consonant), feminine -ой (-ей), plural -ых (-их): Кило́ хоро́шего ру́сского сы́ра — A kilogram of good Russian cheese. Кило́ хоро́шей ру́сской колбасы́ — A kilogram of good Russian sausage. Кило́ чи́стых све́жих я́блок — A kilogram of clean fresh apples. Я пришёл из моего старого дома — I arrived from my old house.
+
+An animate plural direct object takes the genitive-shaped accusative: Эти женщины любят меня. — These women like me. Я люблю этих женщин. — I like these women."
+10,ref-u10-genitive.introducedInUnit,ADDED,,10
+10,ref-u10-genitive.searchTerms,ADDED,,genitive | pronouns | prepositions | without | from | for | adjectives | animate plural
+10,ref-u10-genitive.summary,ADDED,,"Genitive pronouns, prepositions that take the genitive, genitive adjectives and animate plural objects."
+10,ref-u10-genitive.title,ADDED,,"The genitive: pronouns, prepositions and adjectives"
+10,ref-u10-possession.detail,ADDED,,"To say someone has something, put the owner in the genitive after у and follow it with есть and the thing owned in the nominative: У вас есть сын? — Do you have a son? Да, у меня есть сын. — Yes, I have a son. У твоего́ му́жа есть оди́н друг — Your husband has one friend.
+
+To say that something is absent, use нет followed by the genitive: Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. У меня́ нет сы́на — I don't have a son. У моего́ бра́та нет де́нег — My brother doesn't have any money."
+10,ref-u10-possession.introducedInUnit,ADDED,,10
+10,ref-u10-possession.searchTerms,ADDED,,have | possession | absence | there is no | у меня есть | нет | genitive
+10,ref-u10-possession.summary,ADDED,,у with the genitive and есть or нет to say what someone has or lacks.
+10,ref-u10-possession.title,ADDED,,Having and not having
+10,u10-g-pronoun-0.feedback,CHANGED,"Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent in the genitive.",Меня́ is the genitive form of Я (I); in English it corresponds to me. Нас is the genitive form of Мы (we); in English it corresponds to us. Keep the same first-person singular referent in the genitive.
+10,u10-i-absence-3.answer,REMOVED,"In this line, the possessor is genitive and the possessed thing is nominative.",
+10,u10-i-absence-3.distractorRationales[1],REMOVED,The other explanation describes absence rather than the presence or simple possession shown here.,
+10,u10-i-absence-3.feedback,REMOVED,"Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.",
+10,u10-i-absence-3.options[0],REMOVED,"In this line, the possessor is genitive and the possessed thing is nominative.",
+10,u10-i-absence-3.options[1],REMOVED,"In this line, the absent thing is in the genitive case.",
+10,u10-i-absence-3.prompt,REMOVED,Which explanation accounts for the noun cases in the shown line?,
+10,u10-i-absence-3.promptLetter,REMOVED,"Да, у меня есть сын.",
+10,u10-i-absence-4.answer,REMOVED,"In this line, the absent thing is in the genitive case.",
+10,u10-i-absence-4.distractorRationales[0],REMOVED,The other explanation asserts presence or simple possession rather than the absence shown here.,
+10,u10-i-absence-4.feedback,REMOVED,"У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+10,u10-i-absence-4.options[0],REMOVED,"In this line, the possessor is genitive and the possessed thing is nominative.",
+10,u10-i-absence-4.options[1],REMOVED,"In this line, the absent thing is in the genitive case.",
+10,u10-i-absence-4.prompt,REMOVED,Which explanation accounts for the noun cases in the shown line?,
+10,u10-i-absence-4.promptLetter,REMOVED,У моего́ бра́та нет де́нег,
+10,u10-i-have-3.answer,CHANGED,"In this line, the absent thing is in the genitive case.","In this line, the possessor is genitive and the possessed thing is nominative."
+10,u10-i-have-3.distractorRationales[0],REMOVED,The other explanation asserts presence or simple possession rather than the absence shown here.,
+10,u10-i-have-3.distractorRationales[1],ADDED,,The other explanation describes absence rather than the presence or simple possession shown here.
+10,u10-i-have-3.feedback,CHANGED,"У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.","У твоего́ му́жа есть оди́н друг uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing is nominative. The absence explanation would deny possession, which this line does not do."
+10,u10-i-have-3.promptLetter,CHANGED,У меня́ нет сы́на,У твоего́ му́жа есть оди́н друг
+10,u10-i-preposition-2.answer,CHANGED,дру́га,му́жа
+10,u10-i-preposition-2.distractorRationales[1],CHANGED,"друг is the singular nominative form, so it does not supply the requested singular genitive form.","муж is the singular nominative form, so it does not supply the requested singular genitive form."
+10,u10-i-preposition-2.distractorRationales[2],CHANGED,"дру́гу is the singular dative form, so it does not supply the requested singular genitive form.","му́жу is the singular dative form, so it does not supply the requested singular genitive form."
+10,u10-i-preposition-2.feedback,CHANGED,друг is the singular nominative form; дру́га is the singular genitive form of the same noun.,муж is the singular nominative form; му́жа is the singular genitive form of the same noun.
+10,u10-i-preposition-2.options[0],CHANGED,дру́га,му́жа
+10,u10-i-preposition-2.options[1],CHANGED,друг,муж
+10,u10-i-preposition-2.options[2],CHANGED,дру́гу,му́жу
+10,u10-i-preposition-2.promptLetter,CHANGED,друг,муж
+10,u10-i-pronoun-1.feedback,CHANGED,"Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.","Нас is the genitive form of Мы (we); in English it corresponds to us. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker."
+10,u10-st-rem-absence.body,CHANGED,"In an absence line, the absent thing is genitive. An absence line may describe what a person does not have or what does not exist at a place. У меня́ нет сы́на — No, I don't have a son. Нет рестора́нов — There are no restaurants. 
+
+The absence construction uses a genitive noun for the absent thing. The simple positive possession construction instead uses a genitive possessor and a nominative possessed thing. Choose from the meaning and construction of the whole supplied line.
+
+Both negative examples below use the genitive for the absent thing. Keep the absent thing separate from any possessor or place mentioned in the line. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+
+The positive son example below affirms possession. Its possessed noun is nominative, so the genitive absence explanation does not classify this line. Да, у меня есть сын. — Yes, I have a son. ","In an absence line, the absent thing is genitive. An absence line may describe what a person does not have or what does not exist at a place. У меня́ нет сы́на — I don't have a son. Нет рестора́нов — There are no restaurants. 
+
+The absence construction uses a genitive noun for the absent thing. The simple positive possession construction instead uses a genitive possessor and a nominative possessed thing. Choose from the meaning and construction of the whole supplied line.
+
+Both negative examples below use the genitive for the absent thing. Keep the absent thing separate from any possessor or place mentioned in the line. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. У моего́ бра́та нет де́нег — My brother doesn't have any money. 
+
+The positive son example below affirms possession. Its possessed noun is nominative, so the genitive absence explanation does not classify this line. Да, у меня есть сын. — Yes, I have a son. "
+10,u10-st-rem-absence.referenceIds,ADDED,,ref-u10-possession
+10,u10-st-rem-adjective.referenceIds,ADDED,,ref-u10-genitive
+10,u10-st-rem-animate.body,CHANGED,"этих женщин means these women: an accusative or genitive plural phrase. Compare the two displayed phrases. Эти женщины means these women in the nominative plural. Read the displayed phrase carefully. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence.
+
+For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the example.
+
+же́нщин — woman. же́нщины — woman. 
+
+бра́тья — brother. бра́тьев — brother. 
+
+друзе́й — friend. ","этих женщин means these women: an accusative or genitive plural phrase. Compare the two displayed phrases. Эти женщины means these women in the nominative plural. Read the displayed phrase carefully. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence.
+
+For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the example.
+
+же́нщин — woman. же́нщины — woman. 
+
+бра́тья — brothers. бра́тьев — brother. 
+
+друзе́й — friend. "
+10,u10-st-rem-animate.referenceIds,ADDED,,ref-u10-genitive
+10,u10-st-rem-have.body,CHANGED,"In the simple possession pattern shown here, the possessor after the possession preposition is genitive. The thing possessed is nominative. The schematic slot in the first example represents that possessed thing. У меня есть Х — I have X. У вас есть сын? — Do you have a son? 
+
+A simple positive possession line places the possessed thing in the nominative. An absence line places the absent thing in the genitive. Decide whether the whole shown line affirms or denies possession.
+
+The son examples keep the same simple possession pattern in a statement or question: genitive possessor and nominative possessed thing. The form of a question does not turn the noun into an absence construction. Да, у меня есть сын. — Yes, I have a son. У твоего́ му́жа есть оди́н друг — Your husband has one friend. 
+
+The many-friends example includes a quantity expression. Quantity patterns are separate from the simple nominative possessed thing. The no-son example below denies possession and uses the genitive for the absent thing. У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — No, I don't have a son. 
+
+The no-money example also denies possession. Choose the genitive absence explanation, rather than the simple positive possession explanation. У моего́ бра́та нет де́нег — My brother doesn't have any money. ","In the simple possession pattern shown here, the possessor after the possession preposition is genitive. The thing possessed is nominative. The schematic slot in the first example represents that possessed thing. У меня есть Х — I have X. У вас есть сын? — Do you have a son? 
+
+A simple positive possession line places the possessed thing in the nominative. An absence line places the absent thing in the genitive. Decide whether the whole shown line affirms or denies possession.
+
+The son examples keep the same simple possession pattern in a statement or question: genitive possessor and nominative possessed thing. The form of a question does not turn the noun into an absence construction. Да, у меня есть сын. — Yes, I have a son. У твоего́ му́жа есть оди́н друг — Your husband has one friend. 
+
+The many-friends example includes a quantity expression. Quantity patterns are separate from the simple nominative possessed thing. The no-son example below denies possession and uses the genitive for the absent thing. У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — I don't have a son. 
+
+The no-money example also denies possession. Choose the genitive absence explanation, rather than the simple positive possession explanation. У моего́ бра́та нет де́нег — My brother doesn't have any money. "
+10,u10-st-rem-have.referenceIds,ADDED,,ref-u10-possession
+10,u10-st-rem-preposition.referenceIds,ADDED,,ref-u10-genitive
+10,u10-st-rem-pronoun.body,CHANGED,"Для него́ — For him/it. Без неё — Without her. 
+
+For him/it - Для него́
+
+Меня́ — I. Его́/её — He/she/it. 
+
+Их — They. Я — I. 
+
+Мы — We. Нас — We. 
+
+Ты — You. Вы — You. 
+
+Тебя́ — You. Вас — You. 
+
+Они — They. его́ — genetive of ""he"". 
+
+её — genetive of ""she"". их — their. ","Для него́ — For him/it. Без неё — Without her. 
+
+For him/it - Для него́
+
+Меня́ — Me. Его́/её — Him/her/it. 
+
+Их — Them. Я — I. 
+
+Мы — We. Нас — Us. 
+
+Ты — You. Вы — You. 
+
+Тебя́ — You. Вас — You. 
+
+Они — They. его́ — of him, of it. 
+
+её — her. их — their. "
+10,u10-st-rem-pronoun.referenceIds,ADDED,,ref-u10-genitive
+10,u10-st-teach-absence-1.body,CHANGED,"In an absence line, the absent thing is genitive. An absence line may describe what a person does not have or what does not exist at a place. У меня́ нет сы́на — No, I don't have a son. Нет рестора́нов — There are no restaurants. ","In an absence line, the absent thing is genitive. An absence line may describe what a person does not have or what does not exist at a place. У меня́ нет сы́на — I don't have a son. Нет рестора́нов — There are no restaurants. "
+10,u10-st-teach-absence-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u10-possession
+10,u10-st-teach-adjective-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u10-genitive
+10,u10-st-teach-animate-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u10-genitive
+10,u10-st-teach-animate-4.body,CHANGED,бра́тья — brother. бра́тьев — brother. ,бра́тья — brothers. бра́тьев — brother. 
+10,u10-st-teach-have-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u10-possession
+10,u10-st-teach-have-4.body,CHANGED,"The many-friends example includes a quantity expression. Quantity patterns are separate from the simple nominative possessed thing. The no-son example below denies possession and uses the genitive for the absent thing. У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — No, I don't have a son. ",The many-friends example includes a quantity expression. Quantity patterns are separate from the simple nominative possessed thing. The no-son example below denies possession and uses the genitive for the absent thing. У моего нового мужа есть много друзе́й — My new husband has many friends. У меня́ нет сы́на — I don't have a son. 
+10,u10-st-teach-preposition-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u10-genitive
+10,u10-st-teach-pronoun-1.referenceIds,CHANGED,ref-u610-attribution,ref-u610-attribution | ref-u10-genitive
+10,u10-st-teach-pronoun-3.body,CHANGED,Меня́ — I. Его́/её — He/she/it. ,Меня́ — Me. Его́/её — Him/her/it. 
+10,u10-st-teach-pronoun-4.body,CHANGED,Их — They. Я — I. ,Их — Them. Я — I. 
+10,u10-st-teach-pronoun-5.body,CHANGED,Мы — We. Нас — We. ,Мы — We. Нас — Us. 
+10,u10-st-teach-pronoun-8.body,CHANGED,"Они — They. его́ — genetive of ""he"". ","Они — They. его́ — of him, of it. "
+10,u10-st-teach-pronoun-9.body,CHANGED,"её — genetive of ""she"". их — their. ",её — her. их — their. 
