@@ -21,7 +21,7 @@ class Unit6AnimacyTransferTest {
  @Test fun completeTeachingPrecedesPracticeAndRemediationRestoresElevenExamples() {
   val p=pack();val s=p.unit(6)!!.sessions.single{it.id=="u6-s-animacy"};val t=s.steps.filter{it.kind=="TEACH"};val r=s.steps.single{it.kind=="REMEDIATE"}
   assertEquals(6,s.steps.takeWhile{it.kind!="GUIDED"}.count{it.kind=="TEACH"});assertEquals(t.joinToString("\n\n"){it.body},r.body);assertEquals(t.flatMap{it.exampleIds}.distinct(),r.exampleIds);assertEquals(11,r.exampleIds.size)
-  assertTrue(r.body.contains("Matching a genitive form does not change the accusative"));assertTrue(r.body.contains("does not establish completed action"));assertTrue(r.body.contains("not unseen or unrestricted productive mastery"))
+  assertTrue(r.body.contains("Matching a genitive form does not change the accusative"));/* T15g (D18d): the check and mastery commentary is removed */ assertFalse(r.body.contains("does not establish completed action"));assertFalse(r.body.contains("not unseen or unrestricted productive mastery"))
   val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
  }
  @Test fun teacherAndFriendAnswersCannotReplaceRequiredInanimateClassification() {

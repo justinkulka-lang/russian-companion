@@ -43,11 +43,9 @@
       "ownerId": "u6-st-rem-possessive",
       "field": "remediation body",
       "baselineSentence": "A singular noun does not take the plural form in these choices.",
-      "disposition": "MARKED",
-      "sourceRecordIds": [
-        "prov-t15an1-u6-w57"
-      ],
-      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-w57."
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "T15g (D18d): the sentence is reworded to \"A singular noun does not take the plural form.\"; that new marker cites the same frozen records (prov-t15an1-u6-w57) and has its own marker review."
     },
     {
       "entry": "U6-E05",
@@ -1376,12 +1374,13 @@
     },
     {
       "ownerId": "u6-st-rem-possessive",
-      "sentence": "A singular noun does not take the plural form in these choices.",
+      "sentence": "A singular noun does not take the plural form.",
       "evidence": [
         {
           "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
           "line": 57,
-          "quote": "taking on their noun's gender, number, and case"
+          "quote": "Adjectives change to fit the noun they modify, taking on their noun's gender, number, and case.",
+          "record": "prov-t15an1-u6-w57"
         }
       ]
     },

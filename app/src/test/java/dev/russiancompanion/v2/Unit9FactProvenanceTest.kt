@@ -196,7 +196,7 @@ class Unit9FactProvenanceTest {
         val listed = Json.parseToJsonElement(File(repo(), "app/src/test/resources/unit9-phrase-attestations.json").readText())
             .jsonObject.getValue("phrases").jsonArray.map { it.jsonObject }
         assertEquals(shown, listed.map { it.getValue("phrase").jsonPrimitive.content }.toSet())
-        assertEquals(30, shown.size)
+        assertEquals(36, shown.size) // T15g: the A2-36 references add 6 attested phrases (30 -> 36)
         listed.forEach { entry ->
             val phrase = entry.getValue("phrase").jsonPrimitive.content
             val path = entry.getValue("file").jsonPrimitive.content

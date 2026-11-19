@@ -42,6 +42,20 @@ class RepeatedTaskCreditTest {
         }
     }
 
+    /** T15g (CC010/IA016): the archived Units 8 and 10 groups no longer share cue, key and option set. */
+    @Test fun blockTwoGroupsAreNoLongerRepeated() {
+        val p = pack()
+        for ((a, b) in listOf("u8-g-spelling-0" to "u8-i-plural-6", "u10-g-absence-0" to "u10-i-have-3")) {
+            val first = p.item(a)!!; val second = p.item(b)!!
+            assertNotEquals(first.promptLetter, second.promptLetter)
+        }
+        assertNull(p.item("u10-i-absence-3"))
+        assertNull(p.item("u10-i-absence-4"))
+        val tuples = p.items.filter { it.objectiveId.startsWith("obj-u8-") || it.objectiveId.startsWith("obj-u10-") }
+            .filter { !it.isTypedResponse() }.map { Triple(it.promptLetter, it.answer, it.options.toSet()) }
+        assertEquals(tuples.size, tuples.toSet().size)
+    }
+
     @Test fun wrongResponsesRemainSeparateAndSurviveBackupResumeAndReopen() {
         val p = pack()
         for ((index, pair) in pairs.withIndex()) {
@@ -86,7 +100,7 @@ class RepeatedTaskCreditTest {
         val p = pack()
         val repeated = pairs.flatMap { listOf(it.first, it.second) }.toSet()
         val objectives = pairs.flatMap { listOf(p.item(it.first)!!.objectiveId, p.item(it.second)!!.objectiveId) }.toSet()
-        assertEquals(8, objectives.size)
+        assertEquals(4, objectives.size) // T15g: 8 -> 4 objectives, the Block 2 pairs are no longer repeated
         for (id in objectives) {
             val objective = p.units.flatMap { it.objectives }.single { it.id == id }
             assertTrue(objective.checkItemIds.any { it !in repeated })
@@ -112,9 +126,8 @@ class RepeatedTaskCreditTest {
     private fun context(): Context = ApplicationProvider.getApplicationContext()
     private fun pack() = V2PackLoader.parse(File(if (File("app").isDirectory) "." else "..",
         "app/src/main/assets/content/v2-curriculum.json").readText())
+    // T15g (CC010/IA016): the four Units 8 and 10 groups were separated or retired; see blockTwoGroupsAreNoLongerRepeated.
     private val pairs = listOf(
-        "u8-g-spelling-0" to "u8-i-plural-6", "u10-i-have-1" to "u10-i-absence-3",
-        "u10-g-absence-0" to "u10-i-have-3", "u10-i-have-4" to "u10-i-absence-4",
         "u23-g-ranges-0" to "u23-i-ranges-2", "u23-g-during-event-0" to "u23-i-during-event-2",
         "u23-g-duration-0" to "u23-i-duration-2", "u24-g-concord-0" to "u24-i-concord-2",
     )

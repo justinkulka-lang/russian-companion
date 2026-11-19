@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "ebd140ac6b314ec4b8a1e8dc5326fc6049c1af81c1faf2b1fb87810a7f0130bc",
+      "sha256": "a5ba8c849d62f59e05e3e18ce51d795b0026dec30515fafa3a7e84ce03415dab",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3423,6 +3423,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "D7b (approved rule change, owner decisions D7b, D18, D19): Russian region coverage and Cyrillic quoted in authored English count only frozen-file records (isFrozenSourceRecord) and the packaged D7b phrase allowlist (PhraseAllowlist, by unit and whole words). No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T15g",
+      "previousRecordedSha256": "ebd140ac6b314ec4b8a1e8dc5326fc6049c1af81c1faf2b1fb87810a7f0130bc",
+      "sha256": "a5ba8c849d62f59e05e3e18ce51d795b0026dec30515fafa3a7e84ce03415dab",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T15g (approved rule change, owner decision D20): the Russian-coverage scan reads exactly the learner-facing field set (V2LearnerFields, the blocking phrase audit's set) plus the item assessment metadata it already checked; the per-unit host builder addItemHosts is removed. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

@@ -67,6 +67,136 @@
     "step:u8-st-rem-spelling:russianFacts",
     "step:u8-st-teach-spelling-1:body"
    ]
+  },
+  {
+   "phrase": "Анна встретила новую учительницу",
+   "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+   "line": 79,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
+  },
+  {
+   "phrase": "Она́ в си́ней кварти́ре",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 124,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
+  },
+  {
+   "phrase": "не в бе́лой кварти́ре",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 124,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
+  },
+  {
+   "phrase": "новая машина",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 12,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
+  },
+  {
+   "phrase": "новое платье",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 13,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
+  },
+  {
+   "phrase": "новый карандаш",
+   "file": "catalog/sources/units-3-5/wikibooks/nominative-4213267.txt",
+   "line": 72,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
+  },
+  {
+   "phrase": "синее письмо",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 20,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
+  },
+  {
+   "phrase": "синий стол",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 18,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
+  },
+  {
+   "phrase": "синяя книга",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 19,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
+  },
+  {
+   "phrase": "эти хорошие новые студенты",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 14,
+   "shownIn": [
+    "example:ex-u8-availability-1:display",
+    "item:u8-i-availability-1:promptLetter",
+    "item:u8-i-availability-3:promptLetter",
+    "step:u8-st-rem-availability:body",
+    "step:u8-st-rem-availability:russianFacts",
+    "step:u8-st-teach-availability-2:body"
+   ]
   }
  ]
 }

@@ -169,6 +169,36 @@
         "step:u6-st-rem-possessive:russianFacts",
         "step:u6-st-teach-possessive-1:body"
       ]
+    },
+    {
+      "phrase": "Я люблю этого кота",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 27,
+      "shownIn": [
+        "example:ex-u6-object-4:display",
+        "item:u6-i-object-3:promptLetter",
+        "step:u6-st-teach-object-4:body"
+      ]
+    },
+    {
+      "phrase": "Я хочу его кота",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 132,
+      "shownIn": [
+        "example:ex-u6-object-4:display",
+        "item:u6-i-object-3:promptLetter",
+        "step:u6-st-teach-object-4:body"
+      ]
+    },
+    {
+      "phrase": "Я хочу его котов",
+      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "line": 133,
+      "shownIn": [
+        "example:ex-u6-object-4:display",
+        "item:u6-i-object-3:promptLetter",
+        "step:u6-st-teach-object-4:body"
+      ]
     }
   ]
 }

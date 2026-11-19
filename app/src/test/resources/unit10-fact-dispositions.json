@@ -5,9 +5,10 @@
  "inventory": "audit/T15-n0-unmarked-russian-facts.csv (T15-n0 baseline at 9decefb2); csvLine is the physical line",
  "scope": "All 68 English-only Unit 10 entries of the T15-n0 inventory (41 distinct sentences). MARK: the sentence is kept and its russian-fact marker cites frozen-source records; where the report also removes governance narration (lines 1230 and 1275), currentSentence is the marked learner wording. REWORD: the baseline sentence is gone and its replacement is a reviewed instruction that states no Russian fact. REMOVE: the sentence is gone. Content-audit coverage records never satisfy a marker.",
  "totals": {
-  "MARK": 62,
+  "MARK": 52,
   "REWORD": 2,
-  "REMOVE": 4
+  "REMOVE": 7,
+  "RETIRED": 7
  },
  "entries": [
   {
@@ -327,11 +328,9 @@
    "ownerId": "u10-i-have-3",
    "field": "item feedback",
    "baselineSentence": "The noun naming the absent thing is genitive.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t15e-u10-g53"
-   ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g53."
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "T15g: the sentence is no longer shown (the check moved to a distinct attested cue (CC010/IA016))."
   },
   {
    "entry": "U10-E026",
@@ -339,12 +338,9 @@
    "ownerId": "u10-i-have-3",
    "field": "item feedback",
    "baselineSentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t15e-u10-g43",
-    "prov-t15e-u10-g53"
-   ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g43, prov-t15e-u10-g53."
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "T15g: the sentence is no longer shown (the check moved to a distinct attested cue (CC010/IA016))."
   },
   {
    "entry": "U10-E027",
@@ -352,12 +348,9 @@
    "ownerId": "u10-i-have-3",
    "field": "item distractor rationale",
    "baselineSentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t15e-u10-g43",
-    "prov-t15e-u10-g53"
-   ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g43, prov-t15e-u10-g53."
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "T15g: the sentence is no longer shown (the check moved to a distinct attested cue (CC010/IA016))."
   },
   {
    "entry": "U10-E028",
@@ -618,13 +611,9 @@
    "ownerId": "u10-i-absence-3",
    "field": "item feedback",
    "baselineSentence": "uses the simple possession construction.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t15e-u10-g43",
-    "prov-t15e-u10-g45",
-    "prov-t15e-u10-g46"
-   ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g43, prov-t15e-u10-g45, prov-t15e-u10-g46."
+   "disposition": "RETIRED",
+   "sourceRecordIds": [],
+   "reason": "T15g (CC010/IA016): u10-i-absence-3 is retired as a duplicate of another Unit 10 check; the sentence is no longer shown."
   },
   {
    "entry": "U10-E049",
@@ -632,12 +621,9 @@
    "ownerId": "u10-i-absence-3",
    "field": "item feedback",
    "baselineSentence": "The possessor after the possession preposition is genitive; the possessed thing or slot is nominative.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t15e-u10-g42",
-    "prov-t15e-u10-g43"
-   ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g42, prov-t15e-u10-g43."
+   "disposition": "RETIRED",
+   "sourceRecordIds": [],
+   "reason": "T15g (CC010/IA016): u10-i-absence-3 is retired as a duplicate of another Unit 10 check; the sentence is no longer shown."
   },
   {
    "entry": "U10-E050",
@@ -645,12 +631,9 @@
    "ownerId": "u10-i-absence-3",
    "field": "item feedback",
    "baselineSentence": "The absence explanation would deny possession, which this line does not do.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t15e-u10-g43",
-    "prov-t15e-u10-g53"
-   ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g43, prov-t15e-u10-g53."
+   "disposition": "RETIRED",
+   "sourceRecordIds": [],
+   "reason": "T15g (CC010/IA016): u10-i-absence-3 is retired as a duplicate of another Unit 10 check; the sentence is no longer shown."
   },
   {
    "entry": "U10-E051",
@@ -658,12 +641,9 @@
    "ownerId": "u10-i-absence-3",
    "field": "item distractor rationale",
    "baselineSentence": "The other explanation describes absence rather than the presence or simple possession shown here.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t15e-u10-g43",
-    "prov-t15e-u10-g53"
-   ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g43, prov-t15e-u10-g53."
+   "disposition": "RETIRED",
+   "sourceRecordIds": [],
+   "reason": "T15g (CC010/IA016): u10-i-absence-3 is retired as a duplicate of another Unit 10 check; the sentence is no longer shown."
   },
   {
    "entry": "U10-E052",
@@ -671,11 +651,9 @@
    "ownerId": "u10-i-absence-4",
    "field": "item feedback",
    "baselineSentence": "The noun naming the absent thing is genitive.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t15e-u10-g53"
-   ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g53."
+   "disposition": "RETIRED",
+   "sourceRecordIds": [],
+   "reason": "T15g (CC010/IA016): u10-i-absence-4 is retired as a duplicate of another Unit 10 check; the sentence is no longer shown."
   },
   {
    "entry": "U10-E053",
@@ -683,12 +661,9 @@
    "ownerId": "u10-i-absence-4",
    "field": "item feedback",
    "baselineSentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t15e-u10-g43",
-    "prov-t15e-u10-g53"
-   ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g43, prov-t15e-u10-g53."
+   "disposition": "RETIRED",
+   "sourceRecordIds": [],
+   "reason": "T15g (CC010/IA016): u10-i-absence-4 is retired as a duplicate of another Unit 10 check; the sentence is no longer shown."
   },
   {
    "entry": "U10-E054",
@@ -696,12 +671,9 @@
    "ownerId": "u10-i-absence-4",
    "field": "item distractor rationale",
    "baselineSentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t15e-u10-g43",
-    "prov-t15e-u10-g53"
-   ],
-   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15e): prov-t15e-u10-g43, prov-t15e-u10-g53."
+   "disposition": "RETIRED",
+   "sourceRecordIds": [],
+   "reason": "T15g (CC010/IA016): u10-i-absence-4 is retired as a duplicate of another Unit 10 check; the sentence is no longer shown."
   },
   {
    "entry": "U10-E055",
@@ -1094,271 +1066,7 @@
   },
   {
    "ownerId": "u10-i-have-3",
-   "sentence": "The noun naming the absent thing is genitive.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-have-3",
-   "sentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-have-3",
-   "sentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-have-4",
-   "sentence": "The noun naming the absent thing is genitive.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-have-4",
-   "sentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-have-4",
-   "sentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-g-absence-0",
-   "sentence": "The noun naming the absent thing is genitive.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-g-absence-0",
-   "sentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-g-absence-0",
-   "sentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-absence-1",
-   "sentence": "The noun naming the absent thing is genitive.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-absence-1",
-   "sentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-absence-1",
-   "sentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-absence-2",
-   "sentence": "The noun naming the absent thing is genitive.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-absence-2",
-   "sentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-absence-2",
-   "sentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 53,
-     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
-     "record": "prov-t15e-u10-g53"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-absence-3",
-   "sentence": "uses the simple possession construction.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 43,
-     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
-     "record": "prov-t15e-u10-g43"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 44,
-     "quote": "To turn this into a question, place an inflection on '''есть''', just as you place an inflection on the verb in a normal question.",
-     "record": "prov-t15e-u10-g45"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
-     "line": 46,
-     "quote": ":Yes, I have a son - '''Да, у меня есть сын.'''",
-     "record": "prov-t15e-u10-g46"
-    }
-   ]
-  },
-  {
-   "ownerId": "u10-i-absence-3",
-   "sentence": "The possessor after the possession preposition is genitive; the possessed thing or slot is nominative.",
+   "sentence": "The possessor after the possession preposition is genitive; the possessed thing is nominative.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
@@ -1375,7 +1083,7 @@
    ]
   },
   {
-   "ownerId": "u10-i-absence-3",
+   "ownerId": "u10-i-have-3",
    "sentence": "The absence explanation would deny possession, which this line does not do.",
    "evidence": [
     {
@@ -1393,7 +1101,7 @@
    ]
   },
   {
-   "ownerId": "u10-i-absence-3",
+   "ownerId": "u10-i-have-3",
    "sentence": "The other explanation describes absence rather than the presence or simple possession shown here.",
    "evidence": [
     {
@@ -1411,7 +1119,7 @@
    ]
   },
   {
-   "ownerId": "u10-i-absence-4",
+   "ownerId": "u10-i-have-4",
    "sentence": "The noun naming the absent thing is genitive.",
    "evidence": [
     {
@@ -1423,7 +1131,7 @@
    ]
   },
   {
-   "ownerId": "u10-i-absence-4",
+   "ownerId": "u10-i-have-4",
    "sentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
    "evidence": [
     {
@@ -1441,7 +1149,151 @@
    ]
   },
   {
-   "ownerId": "u10-i-absence-4",
+   "ownerId": "u10-i-have-4",
+   "sentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 43,
+     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
+     "record": "prov-t15e-u10-g43"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 53,
+     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
+     "record": "prov-t15e-u10-g53"
+    }
+   ]
+  },
+  {
+   "ownerId": "u10-g-absence-0",
+   "sentence": "The noun naming the absent thing is genitive.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 53,
+     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
+     "record": "prov-t15e-u10-g53"
+    }
+   ]
+  },
+  {
+   "ownerId": "u10-g-absence-0",
+   "sentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 43,
+     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
+     "record": "prov-t15e-u10-g43"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 53,
+     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
+     "record": "prov-t15e-u10-g53"
+    }
+   ]
+  },
+  {
+   "ownerId": "u10-g-absence-0",
+   "sentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 43,
+     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
+     "record": "prov-t15e-u10-g43"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 53,
+     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
+     "record": "prov-t15e-u10-g53"
+    }
+   ]
+  },
+  {
+   "ownerId": "u10-i-absence-1",
+   "sentence": "The noun naming the absent thing is genitive.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 53,
+     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
+     "record": "prov-t15e-u10-g53"
+    }
+   ]
+  },
+  {
+   "ownerId": "u10-i-absence-1",
+   "sentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 43,
+     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
+     "record": "prov-t15e-u10-g43"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 53,
+     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
+     "record": "prov-t15e-u10-g53"
+    }
+   ]
+  },
+  {
+   "ownerId": "u10-i-absence-1",
+   "sentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 43,
+     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
+     "record": "prov-t15e-u10-g43"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 53,
+     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
+     "record": "prov-t15e-u10-g53"
+    }
+   ]
+  },
+  {
+   "ownerId": "u10-i-absence-2",
+   "sentence": "The noun naming the absent thing is genitive.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 53,
+     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
+     "record": "prov-t15e-u10-g53"
+    }
+   ]
+  },
+  {
+   "ownerId": "u10-i-absence-2",
+   "sentence": "The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 43,
+     "quote": "This literally means, 'By me exists X'. Since the preposition '''у''' calls the genitive case, the person or thing that has the object in question is placed in the genitive. The thing that is possessed remains in the nominative: '''У''' + ''gen'' + '''есть''' + ''nom''",
+     "record": "prov-t15e-u10-g43"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 53,
+     "quote": "Conversely, to say 'There isn't...', 'There aren't...', we use the word '''нет''' followed by the genitive case. Note that this use of the word '''нет''' is quite different from its usual meaning of 'no', and is closer to its original meaning as a contraction of '''не есть'''.",
+     "record": "prov-t15e-u10-g53"
+    }
+   ]
+  },
+  {
+   "ownerId": "u10-i-absence-2",
    "sentence": "The other explanation asserts presence or simple possession rather than the absence shown here.",
    "evidence": [
     {

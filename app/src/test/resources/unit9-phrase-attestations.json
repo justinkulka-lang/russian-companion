@@ -401,6 +401,72 @@
     "step:u9-st-teach-pattern-3:body",
     "step:u9-st-teach-quantity-5:body"
    ]
+  },
+  {
+   "phrase": "Два рубля́",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 12,
+   "shownIn": [
+    "example:ex-u9-quantity-13:display",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-8:body"
+   ]
+  },
+  {
+   "phrase": "во́семь книг",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 107,
+   "shownIn": [
+    "example:ex-u9-quantity-13:display",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-8:body"
+   ]
+  },
+  {
+   "phrase": "десять веще́й",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 103,
+   "shownIn": [
+    "example:ex-u9-quantity-13:display",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-8:body"
+   ]
+  },
+  {
+   "phrase": "пять столов",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 99,
+   "shownIn": [
+    "example:ex-u9-quantity-13:display",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-8:body"
+   ]
+  },
+  {
+   "phrase": "семь неде́ль",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 105,
+   "shownIn": [
+    "example:ex-u9-quantity-13:display",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-8:body"
+   ]
+  },
+  {
+   "phrase": "шесть музе́ев",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 101,
+   "shownIn": [
+    "example:ex-u9-quantity-13:display",
+    "step:u9-st-rem-quantity:body",
+    "step:u9-st-rem-quantity:russianFacts",
+    "step:u9-st-teach-quantity-8:body"
+   ]
   }
  ]
 }

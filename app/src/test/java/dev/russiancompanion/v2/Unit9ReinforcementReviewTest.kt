@@ -16,7 +16,8 @@ class Unit9ReinforcementReviewTest {
   val p=pack();val u=p.unit(9)!!;val quantity=objective(p,"quantity");val pattern=objective(p,"pattern")
   assertTrue(u.sessions.indexOfFirst{it.id=="u9-s-quantity"}<u.sessions.indexOfFirst{it.id=="u9-s-pattern"})
   val first=p.item("u9-g-quantity-0")!!;val later=p.item("u9-g-pattern-0")!!
-  assertEquals(first.prompt,later.prompt);assertEquals(first.promptLetter,later.promptLetter);assertEquals(first.answer,later.answer);assertEquals(first.options,later.options)
+  // T15g (CC030): the pattern guide no longer repeats the quantity guide; it shows the attested Есть оди́н кот (genitive-4567338.txt:9).
+  assertEquals(first.prompt,later.prompt);assertEquals("один час",first.promptLetter);assertEquals("Есть оди́н кот",later.promptLetter);assertNotEquals(first.promptLetter,later.promptLetter);assertEquals(first.answer,later.answer);assertEquals(first.options,later.options)
   LocalStore.openInMemory(context()).use { store ->
    record(p,store,quantity.practiceStepIds.flatMap{p.step(it)!!.second.itemIds}+quantity.checkItemIds)
    assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(quantity,store.v2LearnerView(),p));assertEquals(10,creditItemIds(p,store.v2LearnerView()).size)

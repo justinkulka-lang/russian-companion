@@ -27,7 +27,8 @@ class Unit8PluralInstructionTest {
  }
  @Test fun earlierSevenAnswerPluralCompletionCannotCreditLaterSpellingReinforcement() {
   val p=pack();val u=p.unit(8)!!;assertTrue(u.sessions.indexOfFirst{it.id=="u8-s-plural"}<u.sessions.indexOfFirst{it.id=="u8-s-spelling"});val o=objective(p,"plural")
-  assertEquals(p.item("u8-i-plural-6")!!.promptLetter,p.item("u8-g-spelling-0")!!.promptLetter)
+  // T15g (CC010): the spelling guide moved from кни́га (u8-i-plural-6's cue) to the adjective хоро́ший.
+  assertEquals("кни́га",p.item("u8-i-plural-6")!!.promptLetter);assertEquals("хоро́ший",p.item("u8-g-spelling-0")!!.promptLetter)
   LocalStore.openInMemory(context()).use { store ->
    record(p,store,o.practiceStepIds.flatMap{p.step(it)!!.second.itemIds}+o.checkItemIds);assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),p));assertEquals(13,creditItemIds(p,store.v2LearnerView()).size) /* T15c: 1 guided + 6 closed + 6 typed plural checks */
    assertFalse("u8-g-spelling-0" in creditItemIds(p,store.v2LearnerView()));assertTrue(objective(p,"spelling").checkItemIds.none{it in creditItemIds(p,store.v2LearnerView())});assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(objective(p,"spelling"),store.v2LearnerView(),p))

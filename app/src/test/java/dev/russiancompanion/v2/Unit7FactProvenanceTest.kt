@@ -27,9 +27,10 @@ class Unit7FactProvenanceTest {
         "Read the cat and dog sentence separately from the fragment.",
         "The choices below ask which Russian expression names the kind of words adverbs are.",
         "That wording task does not demonstrate applying invariance in a sentence.",
-        "Use this explanation to understand the rule; do not infer a general adverb-formation rule from these choices.",
+        // T15g (D18d): the reworded instruction and rationale replace the two commentary sentences.
+        "Learn each adjective and adverb pair as it is taught.",
         "Check each lexical pair rather than applying an unrestricted generator.",
-        "an unrestricted rule for every adjective goes beyond this check; it asks only about the pair shown.",
+        "an unrestricted rule for every adjective is not what this pair shows; it links one adjective with one adverb.",
         "This question covers only the pairs taught in this unit; it makes no claim about other Russian words.",
         "the unit establishes a general conversion rule goes beyond this unit; use only the adjective and adverb pairs it teaches.",
         // An app-scope statement about this unit's lexical evidence; it states no fact about Russian.
@@ -80,7 +81,8 @@ class Unit7FactProvenanceTest {
         val totals = dispositions.groupingBy { it.string("disposition") }.eachCount()
         // T15f: U7-E16 drops its assessment commentary (D6c) and U7-E23 its source framing (D8); both keep their marked
         // facts and records: MARK 21 -> 19, REWORD 15 -> 17.
-        assertEquals(mapOf("MARK" to 19, "REWORD" to 17, "REMOVE" to 2), totals)
+        // T15g (D18d): U7 "All the options are already correctly spelled." (a REWORD replacement) is removed: REWORD 17 -> 16, REMOVE 2 -> 3.
+        assertEquals(mapOf("MARK" to 19, "REWORD" to 16, "REMOVE" to 3), totals)
         assertEquals(totals, json.getValue("totals").jsonObject.mapValues { it.value.jsonPrimitive.int })
         val hosts = hosts(pack)
         dispositions.forEach { disposition ->

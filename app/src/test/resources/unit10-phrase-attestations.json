@@ -316,6 +316,39 @@
     "step:u10-st-rem-animate:russianFacts",
     "step:u10-st-teach-animate-1:body"
    ]
+  },
+  {
+   "phrase": "Кило́ чи́стых све́жих я́блок",
+   "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+   "line": 126,
+   "shownIn": [
+    "example:ex-u10-pronoun-1:display",
+    "step:u10-st-rem-pronoun:body",
+    "step:u10-st-rem-pronoun:russianFacts",
+    "step:u10-st-teach-pronoun-1:body"
+   ]
+  },
+  {
+   "phrase": "Эти женщины любят меня",
+   "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+   "line": 28,
+   "shownIn": [
+    "example:ex-u10-pronoun-1:display",
+    "step:u10-st-rem-pronoun:body",
+    "step:u10-st-rem-pronoun:russianFacts",
+    "step:u10-st-teach-pronoun-1:body"
+   ]
+  },
+  {
+   "phrase": "Я люблю этих женщин",
+   "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+   "line": 29,
+   "shownIn": [
+    "example:ex-u10-pronoun-1:display",
+    "step:u10-st-rem-pronoun:body",
+    "step:u10-st-rem-pronoun:russianFacts",
+    "step:u10-st-teach-pronoun-1:body"
+   ]
   }
  ]
 }

@@ -339,6 +339,28 @@
     "step:u7-st-rem-spelling:body",
     "step:u7-st-rem-spelling:russianFacts"
    ]
+  },
+  {
+   "phrase": "Она́ в си́ней кварти́ре",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 124,
+   "shownIn": [
+    "example:ex-u7-objectadj-2:display",
+    "step:u7-st-rem-objectadj:body",
+    "step:u7-st-rem-objectadj:russianFacts",
+    "step:u7-st-teach-objectadj-3:body"
+   ]
+  },
+  {
+   "phrase": "не в бе́лой кварти́ре",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 124,
+   "shownIn": [
+    "example:ex-u7-objectadj-2:display",
+    "step:u7-st-rem-objectadj:body",
+    "step:u7-st-rem-objectadj:russianFacts",
+    "step:u7-st-teach-objectadj-3:body"
+   ]
   }
  ],
  "restoredT15f": "T15f Part C (owner direction 11/17/2026): complete adjective-noun case phrases restored from verbatim frozen lines (C:79, W:62, W:82). No frozen file attests a neuter adjective-noun case phrase, so the window pair stays as single forms."

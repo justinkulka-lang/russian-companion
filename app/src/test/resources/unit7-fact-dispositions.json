@@ -5,8 +5,8 @@
  "scope": "All 38 English-only Unit 7 entries of the T15-n0 inventory. MARK: the exact baseline sentence is kept and its russian-fact marker cites frozen-source records. REWORD: the baseline sentence is gone and its replacement is either marked with frozen-source records (MARKED) or is a reviewed instruction that states no Russian fact (INSTRUCTION). REMOVE: the sentence is gone. Content-audit coverage records never satisfy a marker.",
  "totals": {
   "MARK": 19,
-  "REWORD": 17,
-  "REMOVE": 2
+  "REWORD": 16,
+  "REMOVE": 3
  },
  "entries": [
   {
@@ -216,18 +216,9 @@
    "ownerId": "u7-st-rem-spelling",
    "field": "remediation body",
    "baselineSentence": "These choices test the requested form of the adjective; all the options are already correctly spelled.",
-   "disposition": "REWORD",
-   "replacement": "All the options are already correctly spelled.",
-   "replacementKind": "MARKED",
-   "sourceRecordIds": [
-    "prov-ex-or-u7-spelling-1",
-    "prov-ex-or-u7-spelling-2",
-    "prov-ex-or-u7-spelling-3",
-    "prov-ex-or-u7-spelling-4",
-    "prov-t15b-u7-a24",
-    "prov-t15b-u7-a26"
-   ],
-   "reason": "T15f (owner decision D6c): the widened A2-26 lint flags the assessment commentary \"These choices test the requested form of the adjective\"; the sentence keeps only its fact, marked with the same frozen-source records: prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-t15b-u7-a24, prov-t15b-u7-a26."
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "T15f (owner decision D6c): the widened A2-26 lint flags the assessment commentary \"These choices test the requested form of the adjective\"; the sentence keeps only its fact, marked with the same frozen-source records: prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-t15b-u7-a24, prov-t15b-u7-a26. T15g (D18d): the replacement sentence is removed as exercise commentary."
   },
   {
    "entry": "U7-E17",
@@ -482,10 +473,10 @@
    "field": "item distractor rationale",
    "baselineSentence": "an unrestricted rule for every adjective is not established by one documented lexical pair.",
    "disposition": "REWORD",
-   "replacement": "an unrestricted rule for every adjective goes beyond this check; it asks only about the pair shown.",
+   "replacement": "an unrestricted rule for every adjective is not what this pair shows; it links one adjective with one adverb.",
    "replacementKind": "INSTRUCTION",
    "sourceRecordIds": [],
-   "reason": "The examples do not state this claim about the limits of proof; reworded to an instruction that keeps the distractor text."
+   "reason": "The examples do not state this claim about the limits of proof; reworded to an instruction that keeps the distractor text. T15g (D18d): the replacement is now \"an unrestricted rule for every adjective is not what this pair shows; it links one adjective with one adverb.\"."
   },
   {
    "entry": "U7-E36",
@@ -927,48 +918,6 @@
      "line": 1,
      "quote": "The endings of adjectives change according to the gender, number, and case of the nouns they modify.",
      "record": "prov-t15b-u7-a1"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
-     "line": 24,
-     "quote": "if the stem ends in '''г, ж, к, х, ч, ш''', or '''щ''', you add '''и''', not '''ы'''. This 7-letter spelling rule also applies to adjectives.",
-     "record": "prov-t15b-u7-a24"
-    },
-    {
-     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
-     "line": 26,
-     "quote": "if the stem ends in '''ж, ц, ч, ш''', or '''щ''', any unstressed '''o''' in an ending is instead written as '''e'''.",
-     "record": "prov-t15b-u7-a26"
-    }
-   ]
-  },
-  {
-   "ownerId": "u7-st-rem-spelling",
-   "sentence": "All the options are already correctly spelled.",
-   "evidence": [
-    {
-     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
-     "line": 18,
-     "quote": "хороший\t",
-     "record": "prov-ex-or-u7-spelling-1"
-    },
-    {
-     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
-     "line": 18,
-     "quote": "хороший\t",
-     "record": "prov-ex-or-u7-spelling-2"
-    },
-    {
-     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
-     "line": 18,
-     "quote": "хороший\t",
-     "record": "prov-ex-or-u7-spelling-3"
-    },
-    {
-     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
-     "line": 18,
-     "quote": "хороший\t",
-     "record": "prov-ex-or-u7-spelling-4"
     },
     {
      "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",

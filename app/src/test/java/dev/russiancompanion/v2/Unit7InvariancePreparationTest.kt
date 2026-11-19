@@ -17,7 +17,9 @@ class Unit7InvariancePreparationTest {
         // T15f (owner decision D6c): commentary about what the choices ask and do not demonstrate is gone.
         assertFalse(body.contains("does not demonstrate"))
         assertFalse(body.contains("choices below ask"))
-        assertTrue(body.contains("do not infer a general adverb-formation rule"))
+        // T15g (D18d): the "from these choices" commentary becomes a plain instruction.
+        assertFalse(body.contains("do not infer a general adverb-formation rule"))
+        assertTrue(body.contains("Learn each adjective and adverb pair as it is taught."))
         assertEquals(listOf("u7-i-adverb-invariance-1", "u7-i-adverb-invariance-2"),
             p.unit(7)!!.objectives.single { it.id == "obj-u7-adverb-invariance" }.checkItemIds)
     }

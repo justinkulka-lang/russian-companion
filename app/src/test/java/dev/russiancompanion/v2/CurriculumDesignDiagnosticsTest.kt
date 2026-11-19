@@ -10,8 +10,8 @@ class CurriculumDesignDiagnosticsTest {
     @Test fun currentCorpusHasLocatedSignalsWhileCompatibilityValidationStillPasses() {
         val report = V2DesignDiagnostics.audit(current)
         assertEquals(30, report.counts["units"])
-        assertEquals(730, report.counts["items"]) // T15b appends 15 typed Unit 7 checks; T15c 9 typed Unit 8 checks; T15d 15 typed Unit 9 checks; T15e 10 typed Unit 10 checks
-        assertEquals(527, report.counts["requiredChecks"])
+        assertEquals(728, report.counts["items"]) // T15b appends 15 typed Unit 7 checks; T15c 9 typed Unit 8 checks; T15d 15 typed Unit 9 checks; T15e 10 typed Unit 10 checks; T15g retires u10-i-absence-3 and u10-i-absence-4 (730 -> 728)
+        assertEquals(525, report.counts["requiredChecks"]) // T15g: 527 -> 525, the two retired duplicates
         assertEquals("NEEDS_CORRECTION_OR_REVIEW", report.verdict)
         assertTrue(report.signals.any { it.rule == "LEARNER_MARKUP" && "u14-st-teach-impersonal-2" in it.entityIds })
         assertTrue(report.signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" && "u13-i-tense-keep-2" in it.entityIds })
@@ -43,7 +43,12 @@ class CurriculumDesignDiagnosticsTest {
 
     @Test fun sameSurfaceFormsInDifferentGrammaticalQuestionsAreNotIdenticalTasks() {
         val a = current.item("u6-i-animacy-2")!!.copy(id = "a", objectiveId = objectiveId)
-        val b = current.item("u10-i-preposition-2")!!.copy(id = "b", objectiveId = objectiveId)
+        // T15g (CC030): the live Unit 10 item moved to муж, so this fixture keeps the Unit 10 genitive question and gives
+        // it the Unit 6 surface forms explicitly; the diagnostic must still separate the two grammatical questions.
+        val live = current.item("u10-i-preposition-2")!!
+        assertEquals("муж", live.promptLetter)
+        assertEquals(listOf("му́жа", "муж", "му́жу"), live.options)
+        val b = live.copy(id = "b", objectiveId = objectiveId, promptLetter = a.promptLetter, options = a.options, answer = a.answer)
         // Expected values are stated independently (T15a-n1): T15a added the frozen dative дру́гу to the Unit 6 item.
         assertEquals(listOf("дру́га", "друг", "дру́гу"), a.options)
         // T15e adds the frozen dative дру́гу (nouns.csv:14) to the Unit 10 item as its A2-24 third option.
