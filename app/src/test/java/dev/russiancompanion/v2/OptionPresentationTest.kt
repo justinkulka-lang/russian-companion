@@ -31,10 +31,12 @@ class OptionPresentationTest {
         // u10-i-absence-3 led with its answer and the re-cued u10-i-have-3 now does.
         // T15h (D25i): u10-i-absence-5 is appended (728 -> 729; the guided targets stay at 616) and leads with its answer
         // (answer-first 558 -> 559).
-        assertEquals(729, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
+        // T15i (CC027): u7-i-manner-4, before the guided targets and led by its answer, is retired (729 -> 728; the guided
+        // targets move from 616 to 615; answer-first 559 -> 558).
+        assertEquals(728, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
-            p.items.drop(616).take(4).map { it.id }.toSet())
-        assertEquals(559, p.items.count { it.options.firstOrNull() == it.answer })
+            p.items.drop(615).take(4).map { it.id }.toSet())
+        assertEquals(558, p.items.count { it.options.firstOrNull() == it.answer })
         val routes = p.units.flatMap { it.sessions }.flatMap { it.steps }
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
         for ((name, displays) in listOf(
@@ -48,9 +50,10 @@ class OptionPresentationTest {
             "review" to p.items.map { it to presentedOptions(it, reviewOptionContext("corpus-distribution", 0)) },
         )) {
             if (name == "required") {
-                assertEquals(526, displays.size) // T15h: u10-i-absence-5 joins the required set (525 -> 526); T15g: the two retired Unit 10 duplicates leave the required set (527 -> 525); T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
+                assertEquals(525, displays.size) // T15i: u7-i-manner-4 leaves the required set (526 -> 525); T15h: u10-i-absence-5 joins the required set (525 -> 526); T15g: the two retired Unit 10 duplicates leave the required set (527 -> 525); T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
                 // T15h: u10-i-absence-5 stores its answer first (376 -> 377); displays still disperse (checked below).
-                assertEquals(377, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
+                // T15i: the retired u7-i-manner-4 stored its answer first (377 -> 376).
+                assertEquals(376, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
             }
             displays.forEach { (item, order) ->
                 assertEquals(item.id, item.options.sorted(), order.sorted())
