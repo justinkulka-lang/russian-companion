@@ -18,15 +18,215 @@ class V2LearnerFieldsTest {
             .associate { it.name to it.readText() }
     }
 
-    // Identifier and state properties the UI reads for logic, not as learner text.
-    private val notText = setOf("id", "kind", "sourceId", "reviewStatus", "language", "objectiveId", "mappingStatus",
-        "installState", "readiness", "classification", "promptLetterRole", "audioAssetId", "exampleWordId", "letterId")
-
     // Learner text is a String or a List<String>; lists of entities and ID lists are structure, not text.
     private fun textProperties(type: Class<*>): Set<String> = type.declaredFields.filter { f ->
         f.type == String::class.java || (List::class.java.isAssignableFrom(f.type) &&
             (f.genericType as? java.lang.reflect.ParameterizedType)?.actualTypeArguments?.singleOrNull() == String::class.java)
-    }.map { it.name }.filter { it !in notText && !it.endsWith("Ids") && !it.endsWith("Id") }.toSet()
+    }.map { it.name }.filter { !it.endsWith("Ids") }.toSet()
+
+    /**
+     * T15h (owner decision D25e): the rendered set derived from the UI rendering dataflow, not from a list of property
+     * accesses. Sinks are the arguments of every composable call (the @Composable functions of the ui package and Text).
+     * A pack-entity text property counts as rendered when it is read inside a sink argument, or inside the body of a
+     * function whose result a sink argument calls (transitively: helpers such as topicLabel() and the answer-feedback
+     * builders). Reads used only for a comparison or a call, and code inside lambda blocks of an argument (click handlers,
+     * semantics), are not dataflow into the text. Only functions that return text are followed, and digest, hash, seed and
+     * canonical/fold helpers are not (their strings order or compare content and are never shown). The offline notice is followed through OfflineSourceNotice: each notice
+     * property the attributions screen renders is traced to the pack source or provenance field sourceNotice() builds it from.
+     */
+    private fun renderedByDataflow(extra: Map<String, String> = emptyMap()): Set<String> {
+        val main = File(root, "app/src/main/java/dev/russiancompanion/v2")
+        val uiFiles = File(main, "ui").listFiles()!!.filter { it.extension == "kt" }.map { it.name }.toSet() + extra.keys
+        val files = (File(main, "ui").listFiles()!!.filter { it.extension == "kt" } + File(main, "curriculum").listFiles()!!.filter { it.extension == "kt" } +
+            listOf(File(main, "notices/V2OfflineNotices.kt"))).associate { it.name to it.readText() } + extra
+        fun balanced(text: String, open: Int, l: Char, r: Char): Int {
+            var depth = 0
+            for (i in open until text.length) { if (text[i] == l) depth++ else if (text[i] == r) { depth--; if (depth == 0) return i } }
+            return text.length - 1
+        }
+        fun withoutBlocks(text: String): String {
+            val out = StringBuilder(); var i = 0
+            while (i < text.length) { if (text[i] == '{' && (i == 0 || text[i - 1] != '$')) i = balanced(text, i, '{', '}') + 1 else { out.append(text[i]); i++ } }
+            return out.toString()
+        }
+        // Functions: name -> body (to the next declaration at the same or lower indentation).
+        val declaration = Regex("(?m)^(\\s*)(?:@Composable\\s+)?(?:(?:internal|private|public|inline)\\s+)*fun\\s+(?:<[^>]+>\\s*)?(?:([A-Za-z0-9_]+)\\.)?([a-zA-Z0-9_]+)\\s*\\(")
+        val bodies = HashMap<String, String>(); val extensionOf = HashMap<String, String>(); val composables = mutableSetOf("Text")
+        val returnsText = mutableSetOf<String>()
+        files.forEach { (_, text) ->
+            val found = declaration.findAll(text).toList()
+            found.forEachIndexed { i, m ->
+                val stop = found.drop(i + 1).firstOrNull { it.groupValues[1].length <= m.groupValues[1].length }?.range?.first ?: text.length
+                val name = m.groupValues[3]
+                bodies[name] = (bodies[name] ?: "") + text.substring(m.range.first, stop)
+                if (m.groupValues[2].isNotEmpty()) extensionOf[name] = m.groupValues[2]
+                // Only a function that returns text can carry pack text into a sink.
+                val afterParams = text.substring(balanced(text, m.range.last, '(', ')') + 1).take(40)
+                // Digest, hash, seed and canonical/fold helpers return strings that order or compare content; they are never shown.
+                val opaque = Regex("(?i)digest|hash|seed|canonical|fold").containsMatchIn(name)
+                if (!opaque && Regex("^\\s*:\\s*(?:String\\??|List<String>)\\s*[={]").containsMatchIn(afterParams)) returnsText += name
+                if (text.substring(maxOf(0, m.range.first - 40), m.range.first + m.value.length).contains("@Composable")) composables += name
+            }
+        }
+        val receivers = mapOf(
+            "unit" to ("unit" to V2Unit::class.java), "session" to ("session" to V2Session::class.java),
+            "step" to ("step" to V2Step::class.java), "item" to ("item" to V2CheckItem::class.java),
+            "example" to ("example" to V2Example::class.java), "entry" to ("reference" to V2ReferenceEntry::class.java),
+            "objective" to ("objective" to V2Objective::class.java), "letter" to ("letter" to V2Letter::class.java),
+            "binderTask" to ("binderTask" to V2BinderTask::class.java), "tutorTask" to ("tutorTask" to V2TutorTask::class.java),
+        )
+        // A read compared with == or != is a condition, not text (lookbehind and lookahead).
+        val access = Regex("(?<![!=]=\\s{0,2})\\b(unit|session|step|item|example|entry|objective|letter|task|source|reviewCopy)\\??\\.([a-zA-Z]+)\\b(?!\\s*(?:[!=]=|\\())")
+        // Branch conditions decide which text shows; their reads are not the shown text.
+        fun withoutConditions(text: String): String {
+            val out = StringBuilder(text); val condition = Regex("\\b(?:if|when|while)\\s*\\(")
+            condition.findAll(text).toList().asReversed().forEach { m ->
+                val open = m.range.last; out.replace(open + 1, balanced(text, open, '(', ')'), "")
+            }
+            return out.toString()
+        }
+        val call = Regex("\\b([a-zA-Z0-9_]+)\\s*\\(")
+        val noticeProperties = mutableSetOf<String>(); val derived = mutableSetOf<String>()
+        fun reads(text: String) {
+            access.findAll(text).forEach { m ->
+                val (receiver, property) = m.destructured
+                when (receiver) {
+                    "task" -> {
+                        if (property in textProperties(V2BinderTask::class.java)) derived += "binderTask.$property"
+                        if (property in textProperties(V2TutorTask::class.java)) derived += "tutorTask.$property"
+                    }
+                    "source" -> noticeProperties += property
+                    "reviewCopy" -> when (property) { "introductions" -> derived += "reviewCopy.introduction"; "titles" -> derived += "reviewCopy.title" }
+                    else -> receivers[receiver]?.let { (kind, type) -> if (property in textProperties(type)) derived += "$kind.$property" }
+                }
+            }
+            if (Regex("typedAnswerKey(?:!!|\\?)?\\.acceptedAnswers").containsMatchIn(text)) derived += "item.acceptedAnswers"
+        }
+        val localValue = Regex("\\b(?:val|var)\\s+(\\w+)\\s*(?::[^=]+)?=\\s*(.+)")
+        val visited = mutableSetOf<String>()
+        // String literal text is not code: keep only its ${...} templates.
+        fun withoutLiterals(text: String): String = Regex("\"(?:[^\"\\\\]|\\\\.)*\"").replace(text) { m ->
+            Regex("\\$\\{([^}]*)\\}|\\$(\\w+)").findAll(m.value).joinToString(" ") { it.groupValues[1] + it.groupValues[2] }
+        }
+        // Arguments passed to a project function flow into its body, which is followed; they are not shown at the call.
+        fun withoutProjectArguments(text: String): String {
+            val out = StringBuilder(text)
+            call.findAll(text).toList().asReversed().filter { it.groupValues[1] in bodies && it.groupValues[1] !in composables }.forEach { m ->
+                val open = m.range.last; val close = balanced(text, open, '(', ')')
+                if (close > open + 1) out.replace(open + 1, close, "")
+            }
+            return out.toString()
+        }
+        fun follow(raw: String, scope: String) {
+            val text = withoutProjectArguments(withoutConditions(raw))
+            reads(text)
+            // A local value rendered as itself (not used as a receiver or callee): follow its initializer in the same function.
+            Regex("(?<![.\\w])([a-z]\\w*)\\b(?!\\s*[.(?])").findAll(withoutLiterals(text)).map { it.groupValues[1] }.distinct().forEach { name ->
+                localValue.findAll(scope).filter { it.groupValues[1] == name && visited.add("val:$name:${scope.hashCode()}:${it.range.first}") }
+                    .forEach { follow(withoutBlocks(it.groupValues[2]), scope) }
+            }
+            call.findAll(text).map { it.groupValues[1] }.filter { it in returnsText && it !in composables && visited.add(it) }.forEach { name ->
+                // A function's whole body (its result is what the sink shows); an extension's bare receiver properties.
+                val body = bodies.getValue(name)
+                val bodyText = body.substring(body.indexOf(')').coerceAtLeast(0))
+                follow(bodyText, body)
+                val type = mapOf("V2Unit" to V2Unit::class.java, "V2Step" to V2Step::class.java, "V2CheckItem" to V2CheckItem::class.java)[extensionOf[name]]
+                if (type != null) {
+                    val kind = mapOf(V2Unit::class.java to "unit", V2Step::class.java to "step", V2CheckItem::class.java to "item").getValue(type)
+                    Regex("(?<![.\\w])([a-z]\\w*)\\b").findAll(withoutConditions(bodyText)).map { it.groupValues[1] }
+                        .filter { it in textProperties(type) }.forEach { derived += "$kind.$it" }
+                }
+            }
+        }
+        // Arguments of a call, split at top-level commas, each with the parameter it binds (named, else by position).
+        fun arguments(call: String): List<Pair<String?, String>> {
+            val out = mutableListOf<Pair<String?, String>>(); var depth = 0; var quote = false; var startAt = 0
+            fun push(end: Int) {
+                val a = call.substring(startAt, end).trim()
+                if (a.isNotEmpty()) Regex("^([a-zA-Z]\\w*)\\s*=(?!=)\\s*([\\s\\S]*)$").find(a)?.let { out += it.groupValues[1] to it.groupValues[2] } ?: run { out += null to a }
+            }
+            for (i in call.indices) {
+                val c = call[i]
+                if (c == '"' && (i == 0 || call[i - 1] != '\\')) quote = !quote
+                if (quote) continue
+                if (c in "([{") depth++ else if (c in ")]}") depth-- else if (c == ',' && depth == 0) { push(i); startAt = i + 1 }
+            }
+            push(call.length)
+            return out
+        }
+        // Parameter names of each composable, and which parameters reach visible text (fixed point from Text's text).
+        val parameters = composables.associateWith { name ->
+            val body = bodies[name] ?: return@associateWith listOf("text")
+            val open = body.indexOf('(')
+            arguments(body.substring(open + 1, balanced(body, open, '(', ')'))).map { (_, a) -> a.substringBefore(':').trim().removePrefix("vararg ").trim() }
+        }
+        val renderedParameters = HashMap<String, MutableSet<String>>().apply { put("Text", mutableSetOf("text")) }
+        data class Site(val file: String, val text: String, val callee: String, val at: IntRange, val args: List<Pair<String, String>>)
+        val sites = files.filterKeys { it in uiFiles }.flatMap { (file, text) ->
+            call.findAll(text).filter { it.groupValues[1] in composables && !text.substring(0, it.range.first).trimEnd().endsWith("fun") }.map { m ->
+                val open = m.range.last
+                val args = arguments(text.substring(open + 1, balanced(text, open, '(', ')')))
+                val names = parameters.getValue(m.groupValues[1])
+                Site(file, text, m.groupValues[1], m.range, args.mapIndexed { i, (named, a) -> (named ?: names.getOrNull(i) ?: "") to a })
+            }.toList()
+        }
+        fun enclosing(site: Site): String? = bodies.entries.filter { (name, body) -> name in composables && body in site.text &&
+            site.text.indexOf(body).let { at -> site.at.first in at until at + body.length } }.minByOrNull { it.value.length }?.key
+        var changed = true
+        while (changed) {
+            changed = false
+            sites.forEach { site ->
+                val owner = enclosing(site) ?: return@forEach
+                site.args.filter { (param, _) -> param in renderedParameters[site.callee].orEmpty() }.forEach { (_, a) ->
+                    parameters.getValue(owner).filter { p -> Regex("\\b$p\\b").containsMatchIn(withoutBlocks(a)) }.forEach { p ->
+                        if (renderedParameters.getOrPut(owner) { mutableSetOf() }.add(p)) changed = true
+                    }
+                }
+            }
+        }
+        // A value rendered through a scope-function parameter (x?.let { Text(it) }, xs.forEach { o -> Text(o) }).
+        val scope = Regex("(?m)^[ \\t]*(.*?)(?:\\?\\.|\\.)(?:let|forEach|forEachIndexed|also|map)\\s*\\{\\s*(?:(\\w+)(?:\\s*,\\s*(\\w+))?\\s*->)?")
+        val scopesByFile = files.filterKeys { it in uiFiles }.mapValues { (_, text) ->
+            scope.findAll(text).map { m ->
+                val open = m.range.last.let { e -> text.lastIndexOf('{', e) }
+                Triple(open..balanced(text, open, '{', '}'), m.groupValues[1], listOf(m.groupValues[2], m.groupValues[3]).filter { it.isNotEmpty() }.ifEmpty { listOf("it") })
+            }.toList()
+        }
+        sites.forEach { site ->
+            site.args.filter { (param, _) -> param in renderedParameters[site.callee].orEmpty() }.forEach { (_, a) ->
+                val argument = withoutBlocks(a)
+                val scopeText = enclosing(site)?.let { bodies.getValue(it) } ?: ""
+                follow(argument, scopeText)
+                scopesByFile.getValue(site.file).filter { (range, _, params) -> site.at.first in range && params.any { p -> Regex("\\b$p\\b").containsMatchIn(withoutLiterals(argument)) } }
+                    .forEach { (_, receiver, _) -> follow(receiver, scopeText) }
+            }
+        }
+        // The offline notice: OfflineSourceNotice(name = expr) in sourceNotice(), each expr traced to the pack field.
+        val notices = files.getValue("V2OfflineNotices.kt")
+        val builder = bodies.getValue("sourceNotice")
+        val construction = builder.substring(builder.indexOf("OfflineSourceNotice("))
+        Regex("(\\w+) = ([^,\\n]+)").findAll(construction.substring(0, balanced(construction, construction.indexOf('('), '(', ')'))).forEach { m ->
+            val (name, expr) = m.destructured
+            if (name !in noticeProperties) return@forEach
+            val direct = Regex("^source\\.(\\w+)$").find(expr.trim())?.groupValues?.get(1)
+            when {
+                direct == "id" -> derived += "notice.sourceId"
+                direct != null && direct in textProperties(V2SourceRecord::class.java) -> derived += "notice.$direct"
+                else -> {
+                    // A local value built from provenance records: follow it (and the values it uses) to record fields.
+                    val local = Regex("val ${Regex.escape(expr.trim())} = ([\\s\\S]*?)\\n    (?:val|return)").find(builder)?.groupValues?.get(1).orEmpty()
+                    val used = Regex("\\b(\\w+)\\.isNotEmpty\\(\\)|\\b(\\w+)\\.joinToString").findAll(local).flatMap { it.groupValues.drop(1) }.filter { it.isNotEmpty() }
+                    val chain = local + used.joinToString("\n") { v -> Regex("val $v = (.*)").find(builder)?.groupValues?.get(1).orEmpty() }
+                    Regex("\\bit\\.(\\w+)").findAll(chain).map { it.groupValues[1] }.filter { it in textProperties(V2ProvenanceRecord::class.java) }.forEach {
+                        derived += when (it) { "licenseUrl" -> "notice.licenseUrl"; "shareAlikeTreatment" -> "notice.shareAlike"; else -> "notice.$it" }
+                    }
+                }
+            }
+        }
+        assertTrue(notices.contains("OfflineSourceNotice("))
+        if (files.values.any { "reviewCopy.text(" in it }) derived += "reviewCopy.message"
+        return derived
+    }
 
     @Test fun theSharedFieldSetIsTheSetTheUiRenders() {
         // 1. Each rendered kind names the UI file and expression that renders it.
@@ -34,35 +234,17 @@ class V2LearnerFieldsTest {
             val (file, expression) = where
             assertTrue("$kind: $file does not contain $expression", ui.getValue(file).contains(expression))
         }
-        // 2. Derived from the UI code: every learner-text property the screens read on a pack entity is a shared kind.
-        val receivers = mapOf(
-            "unit" to ("unit" to V2Unit::class.java), "session" to ("session" to V2Session::class.java),
-            "step" to ("step" to V2Step::class.java), "item" to ("item" to V2CheckItem::class.java),
-            "example" to ("example" to V2Example::class.java), "entry" to ("reference" to V2ReferenceEntry::class.java),
-            "objective" to ("objective" to V2Objective::class.java), "letter" to ("letter" to V2Letter::class.java),
-        )
-        val derived = mutableSetOf<String>()
-        val access = Regex("\\b(unit|session|step|item|example|entry|objective|letter|task)\\??\\.([a-zA-Z]+)\\b")
-        ui.values.forEach { text ->
-            access.findAll(text).forEach { m ->
-                val (receiver, property) = m.destructured
-                if (receiver == "task") {
-                    if (property in textProperties(V2BinderTask::class.java)) derived += "binderTask.$property"
-                    if (property in textProperties(V2TutorTask::class.java)) derived += "tutorTask.$property"
-                } else {
-                    val (kind, type) = receivers.getValue(receiver)
-                    if (property in textProperties(type)) derived += "$kind.$property"
-                }
-            }
-        }
-        if (ui.values.any { "typedAnswerKey!!.acceptedAnswers" in it || "typedAnswerKey?.acceptedAnswers" in it }) derived += "item.acceptedAnswers"
-        if (ui.values.any { "cumulativeReviewTitle" in it }) derived += "reviewCopy.title"
-        if (ui.values.any { "reviewCopy.introductions" in it }) derived += "reviewCopy.introduction"
-        if (ui.values.any { "reviewCopy.text(" in it }) derived += "reviewCopy.message"
-        assertEquals(V2LearnerFields.RENDERED.keys, derived)
-        // 3. The shared set is the rendered set plus the owner-declared unit fields; nothing else.
-        assertEquals(setOf("unit.shortLabel", "unit.topicSummary"), V2LearnerFields.DECLARED_NOT_RENDERED)
-        assertTrue(V2LearnerFields.DECLARED_NOT_RENDERED.none { kind -> ui.values.any { kind in it } })
+        // 2. T15h (D25e): the set derived from the UI rendering dataflow equals the shared rendered set.
+        assertEquals(V2LearnerFields.RENDERED.keys.sorted(), renderedByDataflow().sorted())
+        // 2b. The analysis is sensitive: a composable that renders a field, directly or through a helper's result, adds it;
+        // reading the same field only to branch or as a key does not.
+        val probe = "@Composable\ninternal fun ProbeScreen(unit: V2Unit, step: V2Step) {\n    if (unit.topicSummary.isNotEmpty()) Text(\"Unit\", modifier = Modifier.semantics { testTag = step.id })\n}\n"
+        assertFalse("unit.topicSummary" in renderedByDataflow(mapOf("Probe.kt" to probe)))
+        val shown = "@Composable\ninternal fun ProbeScreen(unit: V2Unit) {\n    Text(probeLabel(unit))\n}\ninternal fun probeLabel(unit: V2Unit): String = \"About: \${unit.topicSummary}\"\n"
+        assertTrue("unit.topicSummary" in renderedByDataflow(mapOf("Probe.kt" to shown)))
+        // 3. The shared set is the rendered set plus the declared, scanned fields no screen renders; nothing else.
+        assertEquals(setOf("unit.topicSummary", "item.answer"), V2LearnerFields.DECLARED_NOT_RENDERED)
+        assertTrue(V2LearnerFields.DECLARED_NOT_RENDERED.none { it in renderedByDataflow() })
         // Every kind the shared set emits for the current pack is declared; binderTask.modelAnswer and
         // step.unavailableReason have no value in the current pack, and the regression below shows they are scanned.
         val produced = V2LearnerFields.fields(pack).map { it.kind }.toSet()
@@ -86,20 +268,26 @@ class V2LearnerFieldsTest {
         val baseline = V2Validator.validate(pack)
         assertTrue(baseline.errors.joinToString("\n"), baseline.ok)
         val baselineAudit = PhraseAudit.failures(PhraseAudit.fields(pack))
-        val kinds = (V2LearnerFields.KINDS - setOf("letter.uppercase", "letter.lowercase", "letter.group", "letter.latinLookalike")).sorted()
+        // T15h (D25e): every declared kind, including the four letter kinds and the notice kinds (was 30 of 34 kinds).
+        val kinds = V2LearnerFields.KINDS.sorted()
+        assertEquals(V2LearnerFields.RENDERED.keys + V2LearnerFields.DECLARED_NOT_RENDERED, kinds.toSet())
         for (kind in kinds) {
+            if (kind.startsWith("notice.")) {
+                // The offline notice is app-wide (unit 0), outside the validator's per-unit scan; its Cyrillic is accepted only
+                // as text a FREEZE.json records for that source, so the audit rejects any other Cyrillic, word or phrase.
+                for (text in listOf("($word)", "($phrase)")) {
+                    val audit = PhraseAudit.failures(PhraseAudit.fields(insert(pack, kind, text))) - baselineAudit
+                    assertTrue("$kind: $audit", audit.any { it.unit == V2LearnerFields.NOTICE_UNIT && it.type == "NOTICE_UNRECORDED" && text in it.text })
+                }
+                continue
+            }
+            // Letters: an unattested letter name (сущ is no letter or name cell of the alphabet table) is rejected.
             val withWord = insert(pack, kind, "($word)")
             val errors = V2Validator.validate(withWord).errors
             assertTrue("$kind: $errors", errors.any { it == "Russian text has no admitted source record: $word" })
             val withPhrase = insert(pack, kind, "($phrase)")
             val audit = PhraseAudit.failures(PhraseAudit.fields(withPhrase)) - baselineAudit
             assertTrue("$kind: $audit", audit.any { it.unit != 30 && it.text == phrase && it.type == "UNATTESTED" })
-        }
-        // Letters render on the Unit 1 alphabet screens: a letter field that is not a letter form is rejected there.
-        val letter = pack.letters.first()
-        for (kind in listOf("group", "latinLookalike")) {
-            val changed = pack.copy(letters = pack.letters.map { if (it.id != letter.id) it else if (kind == "group") it.copy(group = it.group + " ($word)") else it.copy(latinLookalike = "($word)") })
-            assertTrue(kind, V2Validator.validate(changed).errors.any { it == "Russian text has no admitted source record: $word" })
         }
     }
 
@@ -164,6 +352,32 @@ class V2LearnerFieldsTest {
             "reviewCopy.title" -> p.copy(reviewCopy = p.reviewCopy.copy(titles = p.reviewCopy.titles + (n to (p.reviewCopy.titles[n].orEmpty() + " $text"))))
             "reviewCopy.introduction" -> p.copy(reviewCopy = p.reviewCopy.copy(introductions = p.reviewCopy.introductions + (n to (p.reviewCopy.introductions[n].orEmpty() + " $text"))))
             "reviewCopy.message" -> p.copy(reviewCopy = p.reviewCopy.copy(messages = p.reviewCopy.messages + ("t15gProbe" to "Probe $text")))
+            "step.kind" -> steps { it.copy(kind = it.kind + " $text") }
+            "reference.reviewStatus" -> reference { it.copy(reviewStatus = "Probe $text") }
+            "letter.uppercase", "letter.lowercase", "letter.group", "letter.latinLookalike" -> {
+                val target = p.letters.first()
+                p.copy(letters = p.letters.map { l -> if (l.id != target.id) l else when (kind) {
+                    "letter.uppercase" -> l.copy(uppercase = "${l.uppercase} $text")
+                    "letter.lowercase" -> l.copy(lowercase = "${l.lowercase} $text")
+                    "letter.group" -> l.copy(group = "${l.group} $text")
+                    else -> l.copy(latinLookalike = text)
+                } })
+            }
+            "notice.sourceId", "notice.title", "notice.license", "notice.attribution", "notice.modification" -> {
+                val target = p.sources.first { s -> p.provenanceRecords.any { it.sourceId == s.id } }
+                p.copy(sources = p.sources.map { s -> if (s.id != target.id) s else when (kind) {
+                    "notice.sourceId" -> s.copy(id = "${s.id} $text")
+                    "notice.title" -> s.copy(title = "${s.title} $text")
+                    "notice.license" -> s.copy(license = "${s.license} $text")
+                    "notice.attribution" -> s.copy(attribution = "${s.attribution} $text")
+                    else -> s.copy(modification = "${s.modification} $text")
+                } })
+            }
+            "notice.licenseUrl", "notice.shareAlike" -> {
+                val target = p.provenanceRecords.first()
+                p.copy(provenanceRecords = p.provenanceRecords.map { r -> if (r !== target) r else
+                    if (kind == "notice.licenseUrl") r.copy(licenseUrl = "${r.licenseUrl}#$text") else r.copy(shareAlikeTreatment = "${r.shareAlikeTreatment} $text") })
+            }
             else -> fail("No insertion for $kind") as Nothing
         }
     }

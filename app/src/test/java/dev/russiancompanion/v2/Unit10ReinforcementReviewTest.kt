@@ -33,12 +33,22 @@ class Unit10ReinforcementReviewTest {
   assertEquals("В Москве́ нет ста́рых зда́ний",p.item("u10-i-absence-2")!!.promptLetter)
   // T15g (CC010/IA016): u10-i-absence-3 (a copy of u10-i-have-1) and u10-i-absence-4 (a copy of u10-i-have-4) are retired.
   assertNull(p.item("u10-i-absence-3"));assertNull(p.item("u10-i-absence-4"))
+  // T15h (D25i): the positive counterexample is restored as u10-i-absence-5, the frozen У него есть дом
+  // (personal-pronouns-3598527.txt:28), keyed to the possession explanation.
+  val positive="In this line, the possessor is genitive and the possessed thing is nominative."
+  assertEquals(listOf("u10-i-absence-1","u10-i-absence-2","u10-i-absence-5"),o.checkItemIds)
+  assertEquals("У него есть дом",p.item("u10-i-absence-5")!!.promptLetter)
+  assertEquals(positive,p.item("u10-i-absence-5")!!.answer)
+  assertTrue("In this line, the absent thing is in the genitive case." in p.item("u10-i-absence-5")!!.options)
   val guideCue=p.item(guided.single())!!.promptLetter
-  assertTrue(listOf("u10-i-absence-1","u10-i-absence-2").all{p.item(it)!!.promptLetter!=guideCue})
+  assertTrue(o.checkItemIds.all{p.item(it)!!.promptLetter!=guideCue})
+  assertTrue(p.items.filter{it.id!="u10-i-absence-5"}.none{it.promptLetter=="У него есть дом"})
   LocalStore.openInMemory(context()).use { store ->
    record(p,store,guided+listOf("u10-i-absence-1"));assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),p))
-   record(p,store,listOf("u10-i-absence-2"));assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),p))
-   assertEquals(3,store.v2Attempts().size)
+   // Regression (D25i): the guide and both negative contexts alone do not complete the objective.
+   record(p,store,listOf("u10-i-absence-2"));assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),p))
+   record(p,store,listOf("u10-i-absence-5"));assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,store.v2LearnerView(),p))
+   assertEquals(4,store.v2Attempts().size)
   }
  }
  @Test fun wrongPositiveCaseExplanationCannotCreditAnyNegativeContext() {

@@ -87,8 +87,23 @@ class TwoPartPhraseRuleTest {
             assertFalse(tag, TwoPartPhraseRule.present(blocks, "Уважаемый Иван"))
             assertFalse(tag, TwoPartPhraseRule.present(blocks, "УважаемыйИван"))
             assertFalse(tag, TwoPartPhraseRule.present("<$tag class=\"x\">Уважаемый</$tag>Иван", "УважаемыйИван"))
-            assertTrue(tag, tag in TwoPartPhraseRule.BLOCK_TAGS)
+            // T15h (D25c): was "tag in BLOCK_TAGS"; boundaries are now every tag outside INLINE_TAGS.
+            assertTrue(tag, TwoPartPhraseRule.isBoundary(tag))
         }
+        // T15h (D25c): elements outside the inline list are boundaries even when no list names them.
+        for (tag in listOf("center", "dir", "search", "xqzblock", "nowiki", "ref", "poem")) {
+            assertTrue(tag, TwoPartPhraseRule.isBoundary(tag))
+            assertFalse(tag, TwoPartPhraseRule.present("<$tag>Уважаемый</$tag><$tag>Иван</$tag>", "Уважаемый Иван"))
+            assertFalse(tag, TwoPartPhraseRule.present("<$tag>Уважаемый</$tag><$tag>Иван</$tag>", "УважаемыйИван"))
+            assertFalse(tag, TwoPartPhraseRule.present("Уважаемый<$tag/>Иван", "УважаемыйИван"))
+        }
+        // The 20 inline elements still join their adjacent text nodes; a longer name that starts with one does not.
+        for (tag in TwoPartPhraseRule.INLINE_TAGS) {
+            assertFalse(tag, TwoPartPhraseRule.isBoundary(tag))
+            assertTrue(tag, TwoPartPhraseRule.present("<$tag>Иван</$tag>ович", "Иванович"))
+        }
+        assertFalse(TwoPartPhraseRule.present("<bdox>Иван</bdox>ович", "Иванович"))
+        assertFalse(TwoPartPhraseRule.present("<spanner>Иван</spanner>ович", "Иванович"))
         for (void in listOf("br", "br/", "br /", "hr", "hr/", "hr /")) {
             assertFalse(void, TwoPartPhraseRule.present("Уважаемый<$void>Иван", "Уважаемый Иван"))
             assertFalse(void, TwoPartPhraseRule.present("Уважаемый<$void>Иван", "УважаемыйИван"))

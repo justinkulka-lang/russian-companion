@@ -84,11 +84,18 @@ class PhraseAuditTest {
         assertTrue(fail("Пообедав, я пошёл гулять").isEmpty())
         // Form enumerations are not clause sequences; a quoted example's subject word in English is not part of one.
         assertTrue(fail("стол, стола, столу").none { it.first == "COMPOSED" })
-        assertTrue(fail("In мой стол, стол is masculine singular.").none { it.first == "COMPOSED" })
-        assertTrue(fail("In моя собака, собака is feminine singular.").none { it.first == "COMPOSED" })
-        // T15g (D21b): the English boundary drops only a final word already shown earlier in the same sequence.
+        // T15h (D25b): the English-boundary rule is deleted, so a repeated word after the comma no longer leaves the
+        // sequence (these two were expected to pass under D21b); the reworded Unit 6 form keeps English between them.
+        assertTrue(("COMPOSED" to "мой стол, стол") in fail("In мой стол, стол is masculine singular."))
+        assertTrue(("COMPOSED" to "моя собака, собака") in fail("In моя собака, собака is feminine singular."))
+        assertTrue(fail("In мой стол, the noun стол is masculine singular.").none { it.first == "COMPOSED" })
+        assertTrue(("COMPOSED" to "он улыбался, улыбался") in fail("он улыбался, улыбался is the complete Russian example."))
         assertTrue(("COMPOSED" to "он улыбался, читая") in fail("он улыбался, читая is the complete Russian example."))
         assertTrue(("COMPOSED" to "он улыбался, читая") in fail("он улыбался, читая"))
+        // T15h (D25a): a comma, semicolon or colon joins with or without following spaces.
+        assertTrue(("COMPOSED" to "читая письмо;он улыбался") in fail("читая письмо;он улыбался"))
+        assertTrue(("COMPOSED" to "читая письмо,он улыбался") in fail("читая письмо,он улыбался"))
+        assertTrue(("COMPOSED" to "читая письмо:он улыбался") in fail("читая письмо:он улыбался"))
         // T15g (D21c): dashes, semicolons and colons between words join a sequence too.
         assertTrue(("COMPOSED" to "читая письмо — он улыбался") in fail("читая письмо — он улыбался"))
         assertTrue(("COMPOSED" to "читая письмо – он улыбался") in fail("читая письмо – он улыбался"))
@@ -99,6 +106,9 @@ class PhraseAuditTest {
         assertTrue(fail("Й is named и краткое; К is named ка; Ъ is named твёрдый знак; Ы").none { it.first == "COMPOSED" })
         assertTrue(fail("Е, Ё; Ю — Я").isEmpty())
         assertTrue(fail("М м; Т т").isEmpty())
+        // T15h (D25f): only exact letter and letter-name cells count; a word inside a name cell is not a letter name.
+        assertTrue(("COMPOSED" to "твёрдый знак; знак") in fail("твёрдый знак; знак"))
+        assertTrue(fail("твёрдый знак; мягкий знак").none { it.first == "COMPOSED" })
         // A name list item next to ordinary words is still a clause join (D21c).
         assertTrue(("COMPOSED" to "и краткое; читая письмо") in fail("и краткое; читая письмо"))
         // A dash pair contiguous on one frozen line still passes (narechie-152437423.txt:44 and :8).

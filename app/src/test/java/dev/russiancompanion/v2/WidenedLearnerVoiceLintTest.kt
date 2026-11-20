@@ -9,8 +9,8 @@ import java.io.File
 
 /**
  * T15f (owner decision D6c, an approved rule change): the A2-26 narration lint also catches source narration,
- * commentary about exercises and assessment, and raw table-cell markup. T15g (D18d): only the notice sentences are exempt,
- * the ref-*-attribution licence notices by owner and the D8 self-attestation sentence by exact template. Blocking for Units 1-10; Units 11-30 are
+ * commentary about exercises and assessment, and raw table-cell markup. T15h (D25d): only exact notice and direction
+ * sentences are exempt (V2DesignDiagnostics.NOTICE_TEMPLATES, each matched as a whole sentence); no owner is exempt. Blocking for Units 1-10; Units 11-30 are
  * reported here and each later unit task makes them blocking for its own unit.
  */
 class WidenedLearnerVoiceLintTest {
@@ -80,14 +80,23 @@ class WidenedLearnerVoiceLintTest {
         // A notice template only exempts itself: the sentence next to it is still linted.
         assertTrue(signals("Marking this done records your own report; it is not scored. The source pairs this answer with this cue.",
             "LEARNER_PROVENANCE_NARRATION").isNotEmpty())
-        // The licence notices themselves are exempt by owner, not by wording: the same text in a ref-*-attribution detail
-        // passes, and in a teaching reference it is caught.
+        // T15h (D25d): no owner is exempt (this was assertFalse for ref-u610-attribution under the D18d owner exemption).
+        // The same narration is caught in an attribution reference and in a teaching reference.
         val licence = "Licence notice: the source gives the attribution required by its licence."
-        fun referenceHit(id: String) = V2DesignDiagnostics.audit(current.copy(references = current.references.map {
-            if (it.id == id) it.copy(detail = licence) else it
+        fun referenceHit(id: String, detail: (String) -> String) = V2DesignDiagnostics.audit(current.copy(references = current.references.map {
+            if (it.id == id) it.copy(detail = detail(it.detail)) else it
         })).signals.any { it.rule == "LEARNER_PROVENANCE_NARRATION" && id in it.entityIds }
-        assertFalse(referenceHit("ref-u610-attribution"))
-        assertTrue(referenceHit("ref-ca-cases"))
+        assertTrue(referenceHit("ref-u610-attribution") { licence })
+        assertTrue(referenceHit("ref-ca-cases") { licence })
+        // Regression (D25d): commentary appended to the real ref-u610-attribution detail is caught; the detail as shipped,
+        // whose only narration sentence is the exact licence notice template, passes.
+        assertFalse(referenceHit("ref-u610-attribution") { it })
+        assertTrue(referenceHit("ref-u610-attribution") { "$it The independent check retains this exact pair." })
+        assertTrue(referenceHit("ref-u610-attribution") { "$it The source pairs this answer with this cue." })
+        // A template is exempt only as a whole sentence, not as part of a longer one.
+        val notice = "The course records in these units are a separate licensed set and do not copy the book."
+        assertFalse(referenceHit("ref-ca-cases") { notice })
+        assertTrue(referenceHit("ref-ca-cases") { notice.dropLast(1) + " in any unit." })
     }
 
     /** T15g (D18d): every manual miss the T15f check found in Units 6-9 is now caught by the widened lint. */
@@ -170,7 +179,7 @@ class WidenedLearnerVoiceLintTest {
             if (unit.number >= 3) assertTrue(unit.number.toString(), steps.any { it.kind == "BOOK" &&
                 it.body.endsWith("mark it done here. Marking this done records your own report; it is not scored.") })
         }
-        // The licensing sentence moved to the batch attribution notices, which the added patterns exempt.
+        // The licensing sentence moved to the batch attribution notices; that exact sentence is a notice template (D25d).
         val notices = current.references.filter { it.id.endsWith("-attribution") && "separate licensed set" in it.detail }
         assertEquals(6, notices.size)
         assertTrue(V2DesignDiagnostics.audit(current).signals.none { it.rule == "LEARNER_PROVENANCE_NARRATION" && it.entityIds.any { id -> id in notices.map { n -> n.id } } })

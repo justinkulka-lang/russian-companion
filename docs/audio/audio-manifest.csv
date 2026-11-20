@@ -406,17 +406,18 @@ A10-021,P2,10,10,PHRASE,Она сидит у окна́,NEEDS_RECORDING,,,,"exam
 A10-022,P2,10,10,PHRASE,Отойти от травы,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
 A10-023,P2,10,10,PHRASE,У меня есть Х,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A10-024,P2,10,10,PHRASE,У меня́ нет сы́на,NEEDS_RECORDING,,,,"example,item,reference,teaching"
-A10-025,P2,10,10,PHRASE,Эти женщины,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A10-026,P2,10,10,PHRASE,Я из А́нглии,NEEDS_RECORDING,,,,"example,reference,teaching"
-A10-027,P2,10,10,PHRASE,Я стою́ у забо́ра,NEEDS_RECORDING,,,,"example,teaching"
-A10-028,P2,10,10,SENTENCE,У вас есть сын,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
-A10-029,P2,10,10,SENTENCE,у меня есть сын,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
-A10-030,P2,10,10,SENTENCE,У моего́ бра́та нет де́нег,NEEDS_RECORDING,,,,"example,item,reference,teaching"
-A10-031,P2,10,10,SENTENCE,У моего нового мужа есть много друзе́й,NEEDS_RECORDING,,,,"example,teaching"
-A10-032,P2,10,10,SENTENCE,У твоего́ му́жа есть оди́н друг,NEEDS_RECORDING,,,,"example,item,reference,teaching"
-A10-033,P2,10,10,SENTENCE,Эти женщины любят меня,NEEDS_RECORDING,,,course text has no stress mark,reference
-A10-034,P2,10,10,SENTENCE,Я люблю этих женщин,NEEDS_RECORDING,,,course text has no stress mark,reference
-A10-035,P2,10,10,SENTENCE,Я хочу́ пода́рок для моего́ дру́га,NEEDS_RECORDING,,,,"example,reference,teaching"
+A10-025,P2,10,10,PHRASE,У него есть дом,NEEDS_RECORDING,,,course text has no stress mark,item
+A10-026,P2,10,10,PHRASE,Эти женщины,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A10-027,P2,10,10,PHRASE,Я из А́нглии,NEEDS_RECORDING,,,,"example,reference,teaching"
+A10-028,P2,10,10,PHRASE,Я стою́ у забо́ра,NEEDS_RECORDING,,,,"example,teaching"
+A10-029,P2,10,10,SENTENCE,У вас есть сын,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A10-030,P2,10,10,SENTENCE,у меня есть сын,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A10-031,P2,10,10,SENTENCE,У моего́ бра́та нет де́нег,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A10-032,P2,10,10,SENTENCE,У моего нового мужа есть много друзе́й,NEEDS_RECORDING,,,,"example,teaching"
+A10-033,P2,10,10,SENTENCE,У твоего́ му́жа есть оди́н друг,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A10-034,P2,10,10,SENTENCE,Эти женщины любят меня,NEEDS_RECORDING,,,course text has no stress mark,reference
+A10-035,P2,10,10,SENTENCE,Я люблю этих женщин,NEEDS_RECORDING,,,course text has no stress mark,reference
+A10-036,P2,10,10,SENTENCE,Я хочу́ пода́рок для моего́ дру́га,NEEDS_RECORDING,,,,"example,reference,teaching"
 A11-001,P2,11,"11,13",WORD,бы́л,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"
 A11-002,P2,11,11,WORD,была́,NEEDS_RECORDING,,,,"example,item,teaching"
 A11-003,P2,11,11,WORD,бы́ли,NEEDS_RECORDING,,,,"example,item,teaching"

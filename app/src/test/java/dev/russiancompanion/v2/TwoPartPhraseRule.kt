@@ -18,14 +18,17 @@ internal object TwoPartPhraseRule {
 
     // T15f (owner decision D13a): block-level HTML boundaries and <br> separate text; inline tags (span, a, b, i, em, ...)
     // join their adjacent text nodes directly, as BatchARemainingSources.htmlVisible does. Real whitespace is kept.
-    // T15g (owner decision D18d): every HTML block-level element is a boundary, not just the original five-tag set.
-    val BLOCK_TAGS: List<String> = listOf(
-        "address", "article", "aside", "blockquote", "br", "caption", "col", "colgroup", "dd", "details", "dialog", "div",
-        "dl", "dt", "fieldset", "figcaption", "figure", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "header",
-        "hgroup", "hr", "legend", "li", "main", "menu", "nav", "ol", "p", "pre", "section", "summary", "table", "tbody",
-        "td", "tfoot", "th", "thead", "tr", "ul",
+    // T15h (owner decision D25c, replacing the D18d block list): every HTML tag is a boundary except this fixed inline
+    // list, so an unlisted or unknown element (center, dir, search, ...) never joins the words on either side of it.
+    val INLINE_TAGS: List<String> = listOf(
+        "span", "b", "i", "em", "strong", "a", "small", "sub", "sup", "u", "s", "abbr", "cite", "code", "mark", "q", "bdi",
+        "bdo", "font", "wbr",
     )
-    val blockTag = Regex("(?i)</?(?:${BLOCK_TAGS.joinToString("|")})\\b[^>]*>")
+    val blockTag = Regex("(?i)</?(?!(?:${INLINE_TAGS.joinToString("|")})(?![A-Za-z0-9-]))[A-Za-z][^>]*>")
+
+    /** True when the named element separates text (anything outside INLINE_TAGS). */
+    fun isBoundary(tag: String): Boolean = tag.lowercase() !in INLINE_TAGS
+
     private val anyTag = Regex("<[^>]+>")
 
     /** A block boundary becomes U+2029, which the whitespace collapse below keeps, so no phrase spans two blocks. */

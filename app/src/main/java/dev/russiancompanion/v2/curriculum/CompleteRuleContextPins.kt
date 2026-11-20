@@ -23,6 +23,8 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u10-i-absence-2" to "f71fdb0cf1147171f2def872d028382337d74641aa2f94a4b20d0cb781bc51fc",
         "ca-rule-context:u10-i-absence-3" to "aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97",
         "ca-rule-context:u10-i-absence-4" to "d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8",
+        // T15h (owner decision D25i): the possession counterexample with the frozen cue at personal-pronouns-3598527.txt:28.
+        "ca-rule-context:u10-i-absence-5" to "6249ce8eda477dec708c73da288e237a325f093063d2c0e8590d040fefdcca59",
         "ca-rule-context:u9-g-quantity-0" to "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
         "ca-rule-context:u9-i-quantity-1" to "d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690",
         "ca-rule-context:u9-i-quantity-2" to "4c7a0cc8ef8593c47555c350c46289dfec00a23853e8a1db1c5b61ba36568280",

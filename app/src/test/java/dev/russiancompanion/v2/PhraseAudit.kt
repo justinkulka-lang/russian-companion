@@ -13,15 +13,15 @@ import java.io.File
  *    as whole words in any one frozen line (case and stress ignored, ё and е kept distinct);
  *  - MISSING_STRESS: a word shown with a stress mark has no frozen form with exactly that stress (OpenRussian apostrophes
  *    and Wikibooks bold stress, under the T15f bold-vowel rule, count as stress marks);
- *  - COMPOSED (D15c, D21c): a displayed clause sequence (word runs joined by a comma, semicolon, colon or dash) is not one
- *    contiguous substring of a single frozen line. Form enumerations (every part a single word) are not clause sequences,
- *    and (D21b) when a sequence runs straight into English text, a final comma part that is one word already shown
- *    earlier in the sequence is that English sentence's subject, not part of the sequence;
+ *  - COMPOSED (D15c, D21c, D25a): a displayed clause sequence (word runs joined by a comma, semicolon or colon, with or
+ *    without following spaces, or by a dash) is not one contiguous substring of a single frozen line. Form enumerations
+ *    (every part a single word) are not clause sequences. (The D21b English-boundary rule is deleted under D25b.)
  *  - D9: a run or sequence made only of single letters, each attested on the frozen Russian-alphabet page, is exempt;
- *    D22c extends this to sequences whose items are single letters, upper/lower pairs or alphabet-page letter names.
+ *    D22c extends this to sequences whose items are single letters, upper/lower pairs or exact letter-name cells of the
+ *    alphabet table (D25f).
  */
 internal object PhraseAudit {
-    data class Field(val unit: Int, val ownerField: String, val text: String)
+    data class Field(val unit: Int, val ownerField: String, val text: String, val kind: String = "")
     data class Failure(val unit: Int, val ownerField: String, val text: String, val type: String)
 
     private const val CYR = "\\u0400-\\u04FF"
@@ -29,7 +29,8 @@ internal object PhraseAudit {
     private const val WORD = "[$CYR][$CYR\\u0301]*(?:-[$CYR][$CYR\\u0301]*)?"
     private val span = Regex("$WORD(?:[ \\u00a0]+$WORD)+")
     // T15g (owner decision D21c): commas, semicolons, colons and dashes between words all join a clause sequence.
-    private const val JOIN = "[,;:][ \\u00a0]+|[ \\u00a0]*[\\u2014\\u2013][ \\u00a0]*|[ \\u00a0]+-[ \\u00a0]+"
+    // T15h (owner decision D25a): a comma, semicolon or colon joins with or without following spaces.
+    private const val JOIN = "[ \\u00a0]*[,;:][ \\u00a0]*|[ \\u00a0]*[\\u2014\\u2013][ \\u00a0]*|[ \\u00a0]+-[ \\u00a0]+"
     private val join = Regex(JOIN)
     private val sequence = Regex("$WORD(?:(?:[ \\u00a0]+|$JOIN)$WORD)+")
     private val word = Regex(WORD)
@@ -107,22 +108,23 @@ internal object PhraseAudit {
 
     fun stressAttested(stressed: String): Boolean = stressed.lowercase() in stressForms
 
-    /** The letter rows of the frozen Russian-alphabet page (one row per letter, with its image), for D22c names. */
-    private val alphabetText: String by lazy {
+    /**
+     * T15h (owner decision D25f): the exact cells of the frozen alphabet table's letter column (the pair, e.g. "Б б", and
+     * each of its letters) and modern letter-name column (each {{lang|ru|...}} value, e.g. "бэ", "твёрдый знак"). Only a
+     * whole cell value counts, never a word inside one; the pre-1708 name column is not included.
+     */
+    private val alphabetCells: Set<String> by lazy {
+        val langValue = Regex("\\{\\{lang\\|ru\\|([^}|]+)\\}\\}")
         frozenFiles.filter { "russian-alphabet" in it.name }.flatMap { it.readText().split('\n') }
-            .filter { "Russian alphabet-" in it }.joinToString("\n") { TwoPartPhraseRule.unstressed(it) }
+            .filter { it.startsWith("|") && "Russian alphabet-" in it }
+            .flatMap { row ->
+                val cells = row.split("||")
+                val pair = TwoPartPhraseRule.unstressed(cells[1].replace("''", "")).trim()
+                listOf(pair) + pair.split(' ') + langValue.findAll(cells[2]).map { TwoPartPhraseRule.unstressed(it.groupValues[1]).trim() }
+            }.filter { it.isNotEmpty() }.toSet()
     }
 
-    private fun onAlphabetPage(item: String): Boolean {
-        val q = TwoPartPhraseRule.unstressed(item)
-        var index = alphabetText.indexOf(q)
-        while (index >= 0) {
-            val before = alphabetText.getOrNull(index - 1); val after = alphabetText.getOrNull(index + q.length)
-            if ((before == null || before.code !in 0x0400..0x04FF) && (after == null || after.code !in 0x0400..0x04FF)) return true
-            index = alphabetText.indexOf(q, index + 1)
-        }
-        return false
-    }
+    private fun onAlphabetPage(item: String): Boolean = TwoPartPhraseRule.unstressed(item).trim() in alphabetCells
 
     /**
      * T15g (owner decision D22c, extending D9): a sequence whose every item (between commas, semicolons, colons, dashes or
@@ -142,22 +144,55 @@ internal object PhraseAudit {
      * validator's Russian-coverage scan also reads; V2LearnerFieldsTest derives it from the UI rendering code.
      */
     fun fields(pack: V2CurriculumPack): List<Field> =
-        dev.russiancompanion.v2.curriculum.V2LearnerFields.fields(pack).map { Field(it.unit, it.ownerField, it.text) }
+        dev.russiancompanion.v2.curriculum.V2LearnerFields.fields(pack).map { Field(it.unit, it.ownerField, it.text, it.kind) }
+
+    /**
+     * T15h (owner decision D25e): Cyrillic in an offline notice field is accepted only if the whole field value exactly
+     * equals a title or attribution that a catalog/sources FREEZE.json records for that source (its page entry, or the
+     * title of the licence route that names it). A licence-URL field may also equal the url that licence route records
+     * (owner decision 2026-11-20).
+     */
+    private val routeUrls = HashMap<String, MutableSet<String>>()
+    private val recordedNoticeText: Map<String, Set<String>> by lazy {
+        val out = HashMap<String, MutableSet<String>>()
+        fun walk(element: kotlinx.serialization.json.JsonElement) {
+            when (element) {
+                is kotlinx.serialization.json.JsonObject -> {
+                    val source = (element["sourceId"] as? kotlinx.serialization.json.JsonPrimitive)?.content
+                    val values = listOfNotNull(element["title"], element["attribution"]).mapNotNull { (it as? kotlinx.serialization.json.JsonPrimitive)?.content }
+                    if (source != null) out.getOrPut(source) { HashSet() } += values
+                    (element["appliesToSourceIds"] as? kotlinx.serialization.json.JsonArray)?.forEach { id ->
+                        val sid = (id as kotlinx.serialization.json.JsonPrimitive).content
+                        (element["title"] as? kotlinx.serialization.json.JsonPrimitive)?.content?.let { out.getOrPut(sid) { HashSet() } += it }
+                        (element["url"] as? kotlinx.serialization.json.JsonPrimitive)?.content?.let { routeUrls.getOrPut(sid) { HashSet() } += it }
+                    }
+                    element.values.forEach(::walk)
+                }
+                is kotlinx.serialization.json.JsonArray -> element.forEach(::walk)
+                else -> Unit
+            }
+        }
+        File(root, "catalog/sources").listFiles()!!.mapNotNull { File(it, "FREEZE.json").takeIf(File::isFile) }
+            .forEach { walk(kotlinx.serialization.json.Json.parseToJsonElement(it.readText())) }
+        out
+    }
+
+    fun noticeAccepted(sourceId: String, value: String, kind: String = ""): Boolean =
+        value.none { it.code in 0x0400..0x04FF } || value in recordedNoticeText[sourceId].orEmpty() ||
+            (kind == "notice.licenseUrl" && value in recordedNoticeText.let { routeUrls[sourceId].orEmpty() })
 
     fun failures(fields: List<Field>): Set<Failure> {
         val failures = linkedSetOf<Failure>()
-        fields.forEach { (n, owner, text) ->
+        fields.forEach { (n, owner, text, kind) ->
+            if (kind.startsWith("notice.")) {
+                // Notice fields are not phrase-audited; their Cyrillic must be recorded text (D25e).
+                val sourceId = owner.substringBeforeLast('.')
+                if (!noticeAccepted(sourceId, text, kind)) failures += Failure(n, owner, text, "NOTICE_UNRECORDED")
+                return@forEach
+            }
             sequence.findAll(text).forEach { m ->
-                var sq = m.value
-                // T15g (owner decision D21b): when a sequence runs straight into English, its final comma part is dropped
-                // only if it is one word that already appears earlier in the same sequence ("In мой стол, стол is ...").
-                val runsIntoEnglish = Regex("^[ \\u00a0]+[A-Za-z]").containsMatchIn(text.substring(m.range.last + 1))
-                if (runsIntoEnglish && ',' in sq) {
-                    val last = sq.substring(sq.lastIndexOf(',') + 1).trim()
-                    val head = sq.substring(0, sq.lastIndexOf(','))
-                    val earlier = word.findAll(head).map { TwoPartPhraseRule.unstressed(it.value) }.toSet()
-                    if (word.matches(last) && TwoPartPhraseRule.unstressed(last) in earlier) sq = head
-                }
+                // T15h (owner decision D25b): the D21b English-boundary rule is deleted; every sequence is audited whole.
+                val sq = m.value
                 val parts = sq.split(join)
                 if (parts.size < 2) return@forEach
                 if (parts.all { it.trim().split(Regex("\\s+")).size == 1 }) return@forEach

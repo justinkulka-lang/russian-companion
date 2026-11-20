@@ -89,17 +89,18 @@ internal object V2DesignDiagnostics {
     // T15g (owner decision D18d, approved rule change): only the notice or direction sentence itself is exempt, identified
     // by owner (the ref-*-attribution licence notices) or by exact template (the D8 self-attestation sentence). A sentence
     // is never exempt merely because it contains a word such as "contributors", "attribution" or "your book".
+    // T15h (owner decision D25d, approved rule change): no owner is exempt. A sentence is exempt only when the whole
+    // sentence is exactly one of these notice or direction sentences; anything else in the same field is linted.
     internal val NOTICE_TEMPLATES: List<String> = listOf(
         "Marking this done records your own report; it is not scored.",
         "Marking this done records your own check; it is not scored.",
+        // The licence notice of the batch attribution references (ref-u35, -u610, -u1115, -u1620, -u2125, -u2630).
+        "The course records in these units are a separate licensed set and do not copy the book.",
     )
-    // The batch and page attribution notices (ref-*-attribution) are licence notices, exempt from the added patterns.
-    private val attributionNotice = Regex("ref-.*-attribution")
-    private fun withoutNotices(value: String): String = NOTICE_TEMPLATES.fold(value) { acc, notice -> acc.replace(notice, " ") }
-    private fun widenedNarration(value: String): Boolean = withoutNotices(value).split(sentenceBreak)
+    private fun lintedSentences(value: String): List<String> = value.split(sentenceBreak).filter { it.trim() !in NOTICE_TEMPLATES }
+    private fun widenedNarration(value: String): Boolean = lintedSentences(value)
         .any { sourceNarration.containsMatchIn(it) || assessmentCommentary.containsMatchIn(it) }
-    private fun tableCellMarkup(value: String): Boolean = withoutNotices(value).split(sentenceBreak)
-        .any { tableCell.containsMatchIn(it) }
+    private fun tableCellMarkup(value: String): Boolean = lintedSentences(value).any { tableCell.containsMatchIn(it) }
     private val answerInstruction = Regex("\\b(?:choose|select|selecting|the answer|matching description|is the matching)\\b", RegexOption.IGNORE_CASE)
     private val sentenceBreak = Regex("(?<=[.;!?])\\s+")
 
@@ -136,10 +137,10 @@ internal object V2DesignDiagnostics {
             if (value != null && (governance.containsMatchIn(value) || sourceIds.any { it.containsMatchIn(value) }))
                 add("LEARNER_GOVERNANCE_TERM", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
                     "Learner text contains a governance term or source ID prohibited by A2-26.")
-            if (value != null && (provenanceNarration.containsMatchIn(value) || (!attributionNotice.matches(id) && widenedNarration(value))))
+            if (value != null && (provenanceNarration.containsMatchIn(value) || widenedNarration(value)))
                 add("LEARNER_PROVENANCE_NARRATION", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
                     "Learner text narrates provenance or talks about the app's checks (A2-26 learner voice); keep attribution in the records.")
-            if (value != null && !attributionNotice.matches(id) && tableCellMarkup(value))
+            if (value != null && tableCellMarkup(value))
                 add("LEARNER_TABLE_CELL_MARKUP", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
                     "Learner text contains a raw table-cell separator (A2-26 learner voice); present the forms as plain teaching text.")
         }
