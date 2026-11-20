@@ -1,0 +1,224 @@
+Checked 89fcd5b3e8bcc38697d3743e1764d013499c8c58, the newest head, including later T15i changes. I also checked the S1 and T15h DONE snapshots separately. No tracked files changed; nothing committed or pushed.
+
+Overall: FAIL — item 6 has a new HTML-boundary bypass. The other checks pass with the qualifications below. All 25 targeted tests passed, and the full validator returned ok=true, errors=[].
+
+S1: content cdfba75e, pins 753bace2, DONE a50b3fe2; CI 44653230621 passed on exactly 753bace2.
+
+T15h: content 1b0dd1cc, pins faeb7618, DONE 37b64227; CI 44683585115 passed on exactly faeb7618. Both DONE commits change only WORK_QUEUE.md.
+
+1. S1 frozen pages — PASS, with a live-verification limit.
+
+All 17 retained files match their manifest SHA-256. All 16 MediaWiki files also match their retained revision metadata’s title, revision, SHA-1 and byte count. Licence routes and attribution entries are consistent.
+
+Paths below are relative to catalog/sources/s1-intake/:
+
+Frozen file	Revision
+
+wikipedia/grammatical-aspect-1384289498.txt	1384289498
+ruwiki/vid-lingvistika-153277825.txt	153277825
+Scha	wikipedia/sequence-of-tenses-1363198135.txt
+ruwiki/povelitelnoe-naklonenie-152579064.txt	152579064
+wikipedia/reflexive-pronoun-1374712982.txt	1374712982
+ruwiki/obosoblenie-144053197.txt	144053197
+ruwiki/boltraffio-149826784.txt	149826784
+ruwiki/soslagatelnoe-naklonenie-140019162.txt	140019162
+wiktionary/pod-92761073.txt	92761073
+wiktionary/by-94001807.txt	94001807
+wiktionary/chtoby-91135223.txt	91135223
+wiktionary/daby-83982684.txt	83982684
+wiktionary/dvoe-83716615.txt	83716615
+wiktionary/nazad-93809546.txt	93809546
+wiktionary/za-94001837.txt	94001837
+wiktionary/nekogo-80719285.txt	80719285
+../readyrussian/grammar24.html	SHA-256 933d0deb0742…
+
+
+The recorded licence is CC BY-SA 4.0. ReadyRussian’s handout is explicitly marked CC BY-SA at grammar24.html:117; the home-page route supplies the version. Images, scripts and linked PDF/ODT downloads are excluded from admission.
+
+The sole D24c omission is “Имя числительное в русском языке”: revision 34831725 is a redirect to another page. The recorded reason is that freezing the target needs an owner decision.
+
+Evidence: FREEZE.json:174, page entries beginning at line 182.
+
+Live Wikipedia metadata independently matched all eight retained Wikipedia revisions. The Wiktionary API returned 403, so those eight checks rely on the retained revision metadata and licence evidence.
+
+2. Formerly unfrozen bindings — PASS.
+
+All 24 now bind. Every original span occurs verbatim in its named frozen revision, with its original cached text and hash unchanged.
+
+Record prefix and suffixes	Count	Frozen witness
+
+prov-u21-object-transfer-native-{other,personal,reflexive,self}	4	reflexive-pronoun:676 onward
+prov-u29-punctuation-native-after-{head,region-1,region-2,ru}	4	obosoblenie:21
+prov-u29-punctuation-native-cause-{head,region-0,region-1,region-2,ru}	5	obosoblenie:28
+prov-u29-punctuation-native-pronoun-{boundary-bergognone,head,list-foppa,region-0,region-1,region-2,ru}	7	boltraffio:7
+prov-u29-punctuation-native-terminal-{head,region-0,region-1,ru}	4	obosoblenie:199
+
+
+The four punctuation hashes still begin a2c8e66f, 60ab6e0a, 04798a91, 875206a0, respectively.
+
+FrozenSourceBindingTest has an empty exception map and explicitly checks all 24 bound IDs. Its revision, altered-text, relabelling and fabricated-record regressions pass.
+
+Evidence: FrozenSourceBindingTest.kt:34.
+
+3. Allowlist — PASS under the existing D19b exception.
+
+Fresh results:
+
+Removed entries: 78
+Removed entries still failing: 0
+Current audit failures: 149
+Unlisted failures: 0
+Remaining recheckable entries now passing: 0
+
+The remaining 150th entry is сущ, retained under D19b’s existence-only check rather than the phrase recheck. That exception is unchanged.
+
+Repository, prep-branch and actual Gradle-generated resource copies are byte-identical:
+
+SHA-256 e28ef71892e5cb95242f7e398e96e22a08556d426676cd77f03febb82c54c91e
+
+I ran :app:copyDebugPhraseAllowlist successfully. Evidence: PhraseAuditTest.kt:40.
+
+4. Claim-verification CSV — PASS.
+
+I checked 25 rows across ten units against the cited frozen passages:
+
+Units	CSV rows checked
+
+12–14	2, 3, 7, 11, 16
+16–17	18–20
+19	22–23
+21–22	24, 28–33
+23–24	34–35, 50–55
+
+
+I agree with the 12 SUPPORTED, 10 PARTIAL and 3 NOT_SUPPORTED verdicts checked.
+
+Notable correct limitations include sentence versus clause placement of бы, incomplete support for collective-numeral restrictions, and missing general-factual aspect explanations. The final row supports the infinitive construction; it does not establish attestation of its parenthetical example.
+
+Evidence: s1-claim-verification.csv:2.
+
+5. D6b candidate pairs — PASS as a negative finding.
+
+S1 reports no qualifying pair, and I found no basis to promote its fragments into one:
+
+- za-94001837.txt:288 supplies the time expression only.
+- nazad-93809546.txt:151 supplies an “ago” expression without a verb.
+- lichnoe-imya-154915954.txt:440 supplies an isolated perfective example, without the needed imperfective partner.
+
+Thus no pair has been falsely certified for contiguity, aspect or case. Unit 23’s completion contrast remains blocked.
+
+Evidence: WORK_QUEUE.md:2816.
+
+6. Bypass probes — FAIL.
+
+All requested old probes now fail correctly:
+
+- zero-space comma, semicolon and colon joins → COMPOSED;
+- repeated-word English boundary → COMPOSED;
+- center, dir, search, unknown tags, nowiki, ref, poem → boundaries;
+- appended attribution commentary → lint finding;
+- exact notice followed by commentary, with or without a separating space → lint finding.
+
+However, new probes expose an inconsistency:
+
+TAG span:probe  isBoundary=true  joins=true
+TAG span_probe  isBoundary=true  joins=true
+TAG b:probe     isBoundary=true  joins=true
+
+These unlisted names must be boundaries under D25c. The regex accepts the allowed inline prefix because its delimiter check excludes only letters, digits and hyphens.
+
+The same defect exists in both:
+
+- TwoPartPhraseRule.kt:28
+- apply_d7b_selection_records.py:45
+
+Needed change: compare complete tag names against the inline set, or require a genuine tag-name terminator after an allowed name. Add colon/underscore regressions in both implementations.
+
+I found no further bypass in the whole-sentence notice templates.
+
+7. Shared field set and notices — PASS.
+
+Independent tracing through the screens and helpers gives 41 rendered string-field kinds, plus 2 scanned but unrendered kinds: unit.topicSummary and item.answer. This matches the current table.
+
+The previously omitted short label, step kind, reference status and seven notice kinds are present. All 43 declared kinds pass insertion regressions, including letters and notices. The queue’s statement “42” is an off-by-one reporting error.
+
+For all seven notice kinds, inserted unrecorded Cyrillic is rejected as NOTICE_UNRECORDED.
+
+The Cyrillic licence-URL exception uses exact, source-specific recorded-route equality. The recorded URL passes; an added fragment, added query parameter or changed revision fails. Ordinary ASCII text remains outside this Cyrillic-only restriction.
+
+Evidence: V2LearnerFields.kt:22, V2Screens.kt:584,816,947–953, V2OfflineNotices.kt:114–121, and PhraseAudit.kt:179.
+
+8. D22c exact cells — PASS.
+
+твёрдый знак; знак → COMPOSED
+
+The implementation now selects exact letter and modern-name cells, excluding the pre-1708 column and substring matches.
+
+Evidence: PhraseAudit.kt:111.
+
+9. Citations and Unit 6 coverage — PASS.
+
+- prov-t15g-u10-107: original text equals genitive:141 exactly.
+- prov-t15g-u10-116: equals genitive:121 exactly.
+- ref-u10-genitive now includes soft adjectives, supported by adjectives:45–47.
+- All six Unit 6 coverage records contain the rewording and recompute both hashes:
+
+prov-ca-u6-worked-teach-1-body
+prov-ca-u6-worked-rem-body
+prov-u6-current-fact-003
+prov-u6-current-fact-004
+prov-t15an2-u6-possessive-remediation-body
+prov-ca-t15g-u6-st-rem-possessive-body
+
+These six remain unchanged at the newest head.
+
+Evidence: catalog/apply_t15h.py:38–40,92–115; records in v2-curriculum.json:1.
+
+10. Dispositions and binary checks — PASS.
+
+At T15h DONE, WC011 truthfully records the absent tasks and defers their addition. At current head, T15i has supplied all five unit-specific binder/tutor task pairs, making its updated FIXED note true.
+
+The CSV contains 70 rows. At T15h these covered 70 active checks, with u7-i-manner-4 explicitly OPEN. Current head has 69 active checks plus that retired row. Active IDs, cues, keys and distractors match the pack exactly; none is missing.
+
+I spot-checked rows 2, 3, 7, 10, 16, 20, 24, 45, 57 and 71, spanning every Block 2 unit. Their explanations identify the actual contrast and bound the evidence to recognition.
+
+Evidence: cc036-binary-required-checks.csv:2, retired row 23; FINDINGS_DISPOSITION.csv:49.
+
+11. Unit 10 counterexample — PASS.
+
+u10-i-absence-5 uses the exact frozen cue У него есть дом, with prov-t15h-u10-u-nego-est-dom bound to personal-pronouns-3598527.txt:28.
+
+Its context pin recomputes:
+
+6249ce8eda477dec708c73da288e237a325f093063d2c0e8590d040fefdcca59
+
+Independent governed-state probe:
+
+NEGATIVES_ONLY=REVIEW_REQUIRED
+WITH_POSITIVE=DEMONSTRATED_IN_APP_CHECKS
+
+Unit 10 has 31 checked / 10 typed — 32.26%.
+
+Evidence: Unit10ReinforcementReviewTest.kt:36, CompleteRuleContextPins.kt:27.
+
+12. Pins, hashes and tests — PASS.
+
+Recomputed values match their respective snapshots:
+
+Value	S1	T15h	Current head
+
+Release digest	0384545711e3…	375dc9a6d797…	0c12b91540c3…
+Unit 3 review package	a81a842bb4f1…	6c5a3bb3a79a…	df28cdd775bd…
+Unit 6 content	745f81832cd7…	7a8f230eecb6…	06a776377540…
+Unit 10 content	25daeb159494…	392af92a729a…	8a19d587a268…
+Unit 24 content	e35b8db2e9d9…	unchanged	unchanged
+Unit 29 content	bc38f33516f1…	11209339a40f…	unchanged
+
+
+All six source guards and 76 context pins match. The RemainingSources guard is 6292da57d7a6…. T15h and head audio manifests reproduce byte-for-byte at 844 rows.
+
+I found no weakened requirement in the S1/T15h expectation changes. The unfrozen exception shrinks to zero; its old exception-specific regression is replaced by frozen-revision/text/relabel checks. Field insertion coverage expands, and the positive-counterexample gate is restored.
+
+Current T15i CI 44739058606 was still running at the final check; its pending status does not affect the confirmed S1/T15h CI results.
+
+Overall: FAIL. Fix the complete-tag-name handling in both Kotlin and the D19a Python helper, add the namespace/underscore regressions, and correct the queue’s field-kind count from 42 to 43.
