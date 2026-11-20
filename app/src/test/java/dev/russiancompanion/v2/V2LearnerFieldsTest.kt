@@ -245,11 +245,12 @@ class V2LearnerFieldsTest {
         // 3. The shared set is the rendered set plus the declared, scanned fields no screen renders; nothing else.
         assertEquals(setOf("unit.topicSummary", "item.answer"), V2LearnerFields.DECLARED_NOT_RENDERED)
         assertTrue(V2LearnerFields.DECLARED_NOT_RENDERED.none { it in renderedByDataflow() })
-        // Every kind the shared set emits for the current pack is declared; binderTask.modelAnswer and
-        // step.unavailableReason have no value in the current pack, and the regression below shows they are scanned.
+        // Every kind the shared set emits for the current pack is declared; step.unavailableReason has no value in the
+        // current pack, and the regression below shows it is scanned. T15i (WC011): the Units 6-10 binder tasks give
+        // binderTask.modelAnswer values, so it leaves the unproduced set (was {binderTask.modelAnswer, step.unavailableReason}).
         val produced = V2LearnerFields.fields(pack).map { it.kind }.toSet()
         assertTrue(V2LearnerFields.KINDS.containsAll(produced))
-        assertEquals(setOf("binderTask.modelAnswer", "step.unavailableReason"), V2LearnerFields.KINDS - produced)
+        assertEquals(setOf("step.unavailableReason"), V2LearnerFields.KINDS - produced)
         // The audit and the validator read the same list.
         assertEquals(V2LearnerFields.fields(pack).map { Triple(it.unit, it.ownerField, it.text) },
             PhraseAudit.fields(pack).map { Triple(it.unit, it.ownerField, it.text) })

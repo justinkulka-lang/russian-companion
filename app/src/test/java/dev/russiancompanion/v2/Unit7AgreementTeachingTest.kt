@@ -34,7 +34,7 @@ class Unit7AgreementTeachingTest {
         assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u7-endings" && it.shippedText == rem.body && it.itemId == "prov-ca-t15g-u7-st-rem-endings-body" }) // T15g coverage of the new wording (was prov-ca-t15f-u7-st-rem-endings-body; before T15f prov-ca-u7-agreement-u7-st-rem-endings-complete-v1)
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
-    @Test fun wrongGenitiveChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer() = repairUi("u7-i-endings-1")
+    @Test fun wrongNeuterNominativeChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer() = repairUi("u7-i-endings-1") // T15i (CC031): was wrongGenitiveChoice...; u7-i-endings-1 now asks for the neuter nominative
     @Test fun wrongNominativeChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer() = repairUi("u7-i-endings-4")
     private fun repairUi(itemId: String) {
         val p = pack(); val item = p.item(itemId)!!; val check = p.step("u7-st-check-endings")!!

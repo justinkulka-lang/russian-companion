@@ -82,11 +82,19 @@ class Unit7FactProvenanceTest {
         // T15f: U7-E16 drops its assessment commentary (D6c) and U7-E23 its source framing (D8); both keep their marked
         // facts and records: MARK 21 -> 19, REWORD 15 -> 17.
         // T15g (D18d): U7 "All the options are already correctly spelled." (a REWORD replacement) is removed: REWORD 17 -> 16, REMOVE 2 -> 3.
-        assertEquals(mapOf("MARK" to 19, "REWORD" to 16, "REMOVE" to 3), totals)
+        // T15i (CC027): u7-i-manner-4 is retired as a policy question, like D12a: REWORD 16 -> 14, RETIRED 0 -> 2.
+        assertEquals(mapOf("MARK" to 19, "REWORD" to 14, "REMOVE" to 3, "RETIRED" to 2), totals)
         assertEquals(totals, json.getValue("totals").jsonObject.mapValues { it.value.jsonPrimitive.int })
         val hosts = hosts(pack)
         dispositions.forEach { disposition ->
             val owner = disposition.string("ownerId")
+            if (disposition.string("disposition") == "RETIRED") {
+                // T15i: the retired policy question is gone from the pack, so none of its sentences can be shown.
+                assertEquals("u7-i-manner-4", owner)
+                assertTrue(owner, pack.items.none { it.id == owner })
+                assertTrue(disposition.getValue("sourceRecordIds").jsonArray.isEmpty())
+                return@forEach
+            }
             val matching = hosts.filter { it.ownerId == owner && it.field == disposition.string("field") }
             assertTrue(owner, matching.isNotEmpty())
             val baseline = disposition.string("baselineSentence")

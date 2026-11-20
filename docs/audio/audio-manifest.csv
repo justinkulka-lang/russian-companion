@@ -390,8 +390,8 @@ A10-005,P2,10,10,WORD,же́нщин,NEEDS_RECORDING,,,,"example,item,teaching"
 A10-006,P2,10,10,WORD,же́нщины,NEEDS_RECORDING,,,,"example,item,teaching"
 A10-007,P2,10,10,WORD,из,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,reference,teaching"
 A10-008,P2,10,10,WORD,молока́,NEEDS_RECORDING,,,,"example,item,teaching"
-A10-009,P2,10,10,WORD,муж,EXISTING_CLIP_CANDIDATE,rus-a86af01a,муж,,item
-A10-010,P2,10,10,WORD,му́жа,NEEDS_RECORDING,,,,item
+A10-009,P2,10,10,WORD,муж,EXISTING_CLIP_CANDIDATE,rus-a86af01a,муж,,"item,teaching"
+A10-010,P2,10,10,WORD,му́жа,NEEDS_RECORDING,,,,"item,teaching"
 A10-011,P2,10,10,WORD,но́вой,NEEDS_RECORDING,,,,"example,teaching"
 A10-012,P2,10,10,WORD,но́вых,NEEDS_RECORDING,,,,"example,teaching"
 A10-013,P2,10,10,WORD,от,EXISTING_CLIP_CANDIDATE,rus-5345a3cd,от,,"example,reference,teaching"

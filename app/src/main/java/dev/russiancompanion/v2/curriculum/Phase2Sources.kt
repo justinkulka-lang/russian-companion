@@ -31,7 +31,6 @@ internal object Phase2Sources {
             "DOCUMENTED_MANNER_PAIR",
             "ADVERBIAL_FUNCTION",
             "PREDICATIVE_CONTRAST",
-            "REJECTED_ARBITRARY_ADVERB",
         ),
     )
     val COMPLETION = Admission(

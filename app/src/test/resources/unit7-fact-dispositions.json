@@ -5,8 +5,9 @@
  "scope": "All 38 English-only Unit 7 entries of the T15-n0 inventory. MARK: the exact baseline sentence is kept and its russian-fact marker cites frozen-source records. REWORD: the baseline sentence is gone and its replacement is either marked with frozen-source records (MARKED) or is a reviewed instruction that states no Russian fact (INSTRUCTION). REMOVE: the sentence is gone. Content-audit coverage records never satisfy a marker.",
  "totals": {
   "MARK": 19,
-  "REWORD": 16,
-  "REMOVE": 3
+  "REWORD": 14,
+  "REMOVE": 3,
+  "RETIRED": 2
  },
  "entries": [
   {
@@ -498,11 +499,9 @@
    "ownerId": "u7-i-manner-4",
    "field": "item feedback",
    "baselineSentence": "This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.",
-   "disposition": "REWORD",
-   "replacement": "This question covers only the pairs taught in this unit; it makes no claim about other Russian words.",
-   "replacementKind": "INSTRUCTION",
+   "disposition": "RETIRED",
    "sourceRecordIds": [],
-   "reason": "An app-inventory boundary, not a Russian fact; reworded to an instruction."
+   "reason": "T15i (CC027, owner decision D25j): u7-i-manner-4 is retired as a policy question, like D12a; the sentence is no longer shown."
   },
   {
    "entry": "U7-E38",
@@ -510,11 +509,9 @@
    "ownerId": "u7-i-manner-4",
    "field": "item distractor rationale",
    "baselineSentence": "the unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs.",
-   "disposition": "REWORD",
-   "replacement": "the unit establishes a general conversion rule goes beyond this unit; use only the adjective and adverb pairs it teaches.",
-   "replacementKind": "INSTRUCTION",
+   "disposition": "RETIRED",
    "sourceRecordIds": [],
-   "reason": "No frozen file makes this statement about the unit; reworded to an instruction that keeps the distractor text."
+   "reason": "T15i (CC027, owner decision D25j): u7-i-manner-4 is retired as a policy question, like D12a; the sentence is no longer shown."
   }
  ],
  "markerReviewsNote": "Each Unit 7 marker with no Cyrillic word names, for every cited frozen-source record, the frozen file, line and an exact quote of that line (OpenRussian rows are quoted by their bare headword and tab). The listed lines state the marked claim; the test checks that the lines exist and hold a cited record.",
