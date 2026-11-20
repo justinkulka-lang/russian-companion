@@ -1,0 +1,266 @@
+Overall FAIL. The content and recorded CI results largely check out, but I found a typed-check test regression, inconsistent tag parsing between implementations, and learner-facing wording that the lint misses.
+
+Verified at 6abc9ec40ce939682da8c6260470f391e908cb3a. No tracked files changed; nothing committed or pushed.
+
+Paths below are relative to the repository. The curriculum JSON is minified, so its evidence is at line 1; owner IDs identify the fields.
+
+Work	Commits and exact-commit CI
+
+T15i	Content d74e3d9f; pins 34a95eee; sheet/dispositions 89fcd5b3; test fix a4769f55; queue-only DONE 71878d70. CI 44739058606 failed on 89fcd5b3; 44760319892 passed on a4769f55.
+D27a	36f0eb0c. Its run 44783796280 was cancelled; the commit is included in the passing T16 run.
+T16 Unit 11	Content 8b1ee268; pins 8164b54b; queue-only DONE 6abc9ec4. CI 44790966562 passed on exactly 8164b54b.
+
+
+Queue evidence: WORK_QUEUE.md:194–196,2830–2844.
+
+T15i
+
+1. CC031 — PASS, with a correction about the pin.
+
+u7-i-endings-1 now uses cue но́вые, key но́вое, and distractors но́вый / но́вая. All four match their nominative cells in catalog/sources/units-6-10/openrussian/adjectives.csv:16. Assessment, provenance and relation participants agree.
+
+There was no ca-rule-context pin for this item before or after T15i. The queue and disposition correctly disclose this; a matching context pin must not be claimed.
+
+Evidence: catalog/apply_t15i.py:129; audit/FINDINGS_DISPOSITION.csv:54.
+
+2. WC005 — PASS.
+
+Primary teaching supplies gender, number and case labels before the question-, demonstrative- and place-adjective checks. The 18 labelled forms match the cited cells in adjectives.csv:4,7,16,18.
+
+Owners include u7-st-teach-question-1/-3, u7-st-teach-demonstrative-1/-3/-4, and u7-st-teach-place-3/-4/-5.
+
+Evidence: catalog/apply_t15i.py:40,84,122; disposition row 55.
+
+3. CC021 — PASS.
+
+- u6-st-rem-feminine states а → у, я → ю, supported by accusative-4330404.txt:35. The prep’s lines 52–53 were not the supporting lines.
+- u6-st-rem-third gives the his/her/their meanings, backed by accusative-4330404.txt:129 and frozen form records.
+- u10-st-rem-preposition repeats the taught муж / му́жа distinction, from nouns.csv:127.
+
+Evidence: catalog/apply_t15i.py:40,75,82; disposition row 60.
+
+4. CC027 — PASS.
+
+u7-i-manner-4 and its links are retired. The main-source changes remove only REJECTED_ARBITRARY_ADVERB from:
+
+- curriculum/ContentAuditCapabilityPins.kt:15;
+- curriculum/Phase2Sources.kt:31–34.
+
+No V2Validator logic changed for this retirement. The remaining invariance recognition checks are explicitly BOUNDED_SCOPE, not presented as productive application.
+
+Evidence: disposition row 62; audit/cc036-binary-required-checks.csv:23. The immutable-tuple mutation regression still rejects a coherent manner-label rebinding.
+
+5. CC023 — PASS.
+
+The eight direction/demonstrative/place/adverb teaching and remediation fields were cleaned. Their Cyrillic token sequences are unchanged. I found no invented Russian introduced by those prose edits.
+
+Evidence: catalog/apply_t15i.py:40–74; disposition row 58.
+
+6. Binder and tutor tasks — PASS.
+
+Units 6–10 have English prompts. Their Russian model forms and phrases resolve to frozen witnesses with provenance. The shared-field tests, phrase audit and automatic lint pass for these tasks.
+
+Evidence: catalog/apply_t15i.py:91,202; curriculum owners binder-u6-direction through binder-u10-genitive and corresponding tutor tasks.
+
+7. Block 2 listen sheet — PASS.
+
+Regeneration produced a byte-identical audit/listen-check/block2.html:
+
+- 12 clips;
+- 37 uses across Units 6–10;
+- no selected listening decisions;
+- no new audio bindings.
+
+It uses the same generator as Block 1. Reproduced SHA-256:
+
+695839c6782c5fb3dd98b9dec6aa9b4e1db66d8206578b787862b148c5f950ab
+
+Evidence: ListenCheckCli.kt:50; generated sheet.
+
+8. Thirteen HIGH dispositions — PASS within their stated scope.
+
+All 13 FIXED rows have corresponding implementation evidence:
+
+Findings	Verified basis
+
+CC012, CC031, WC005, WC001	Existence boundary, nominative retarget, prerequisite labels, renderable wrong-option rationales
+IA015, CC022, CC027	Immutable tuple rejection, zero required-check exposure findings, retired policy item
+CC023, CC021	Prose cleanup and remediation repairs
+CC020, IA003	Fresh cumulative-review progression and required due review
+CC018, CC019	Insets and selectable-control implementations from 8e53775a
+
+
+CC018/CC019 correctly retain physical-device and TalkBack acceptance LAST.
+
+Evidence: audit/FINDINGS_DISPOSITION.csv:53–65; V2Chrome.kt:75,94,125,142; V2Screens.kt:220,239,627; V2PracticeFlows.kt:176.
+
+9. Block 2 genuinely complete — FAIL on remaining learner-facing governance prose.
+
+The numerical gates reproduce:
+
+Unit	Checked / typed	Review items / earlier objectives / skills	Maximum consecutive reviews
+
+6	23 / 8	8 / 6 / 5	2
+7	47 / 15	8 / 8 / 7	1
+8	28 / 9	8 / 8 / 7	2
+9	50 / 15	8 / 8 / 8	3
+10	31 / 10	8 / 8 / 8	3
+
+
+Unit tests contain at least 20 items; references, binder tasks and the listen sheet exist. Required-check A2-24 and automatic A2-26 results are zero.
+
+However, ref-u610-attribution.detail still says “Review is pending.” This is learner-facing governance prose, rather than attribution substance. It remains at the T15i DONE commit and escapes the automatic lint. Therefore I cannot certify literal compliance with every Block 2 rule.
+
+Evidence: WORK_QUEUE.md:161–166; v2-curriculum.json:1, owner ref-u610-attribution; A2-26 authority at MASTER_AUTHORITY_v2.0_AMENDMENT_2.md:119.
+
+10. Merged-marker transformer bug — PASS.
+
+The 12 added or changed remediation marker entries are attached to their own sentences. I found no residual merged sentence carrying an older marker accidentally. The third-person meanings and the two husband-form sentences are separately covered.
+
+Evidence: catalog/apply_t15i.py:75–82,153–178.
+
+D27a
+
+11. Complete inline tag names — FAIL for cross-implementation parity.
+
+All requested ordinary probes behave correctly in both implementations:
+
+Input	Result
+
+span:probe, span_probe, b:probe, em:x, a_b	Boundary
+Uppercase valid inline names	Join
+Newline or tab after a valid name	Join
+spanclass=x, span=foo	Boundary
+Valid name followed by attributes	Join
+
+
+Further probes expose inconsistent \s handling:
+
+<span[NBSP]class=x>Иван</span[NBSP]class=x>ович
+Python helper: joins
+Kotlin matcher: boundary
+
+<span[EM SPACE]class=x>Иван</span[EM SPACE]class=x>ович
+Python helper: joins
+Kotlin matcher: boundary
+
+Python’s Unicode \s accepts these separators; Kotlin’s regex does not. This contradicts the shared complete-name rule.
+
+Evidence: catalog/apply_d7b_selection_records.py:46; TwoPartPhraseRule.kt:29.
+
+Needed: use the same explicit HTML-whitespace definition in both implementations and add parity regressions for these characters.
+
+T16 — Unit 11
+
+12. Counts, keys and placement — PASS.
+
+Unit 11 has 20 checked / 12 typed, or 60% typed. All required checks are in u11-s-checks, after teaching. Required-check A2-24 findings: 0.
+
+Every typed key matches its cited CSV cell character for character after the inventory’s apostrophe-to-acute conversion:
+
+verbs.csv line	Fields	Keys
+
+62	past_m/f/n/pl	чита́л, чита́ла, чита́ло, чита́ли
+2	past_m/f	бы́л, была́
+353	past_m/f/n	прочита́л, прочита́ла, прочита́ло
+142	past_f	улыба́лась
+209	past_m/f	учи́лся, учи́лась
+
+
+File: catalog/sources/units-3-5/openrussian/verbs.csv.
+
+13. Facts and prep corrections — PASS.
+
+The 12 inventory entries reproduce 7 MARK / 5 REWORD. All 79 marker instances resolve to frozen-source records; none relies only on content-audit coverage.
+
+Entry 1290 now reads:
+
+> “The cue shows the feminine singular form, but the requested form is masculine singular of the same verb.”
+
+
+
+Its form comparison is supported by verbs.csv:62 and the past-tense teaching span.
+
+The past-of-быть wording uses its actual past forms. The broader “conjugates as all regular verbs do” claim has been bounded to the supported past-tense formation. The Wikibooks misclassification of быть as perfective is not shipped.
+
+Evidence: catalog/apply_t16_unit_11.py:96–100; Unit11FactProvenanceTest passed.
+
+14. Phrases and automatic lint PASS; manual missed-lint scan FAIL.
+
+All eight shown Unit 11 phrases pass. Unit 11 is included in the blocking lint range, with zero automatic hits.
+
+Manual misses remain:
+
+Owner.field	Text or issue
+
+u11-i-reflexive-2.feedback	“the question requires feminine singular agreement.” — assessment commentary; requires escapes the pattern
+ref-u1115-attribution.detail	“Review is pending.” — surplus governance prose
+Unit 11 mappingNote	Rendered engineering prose including PENDING_CURRICULUM_REVIEWER and discussion of approval/verification
+
+
+The mapping note is rendered at V2Screens.kt:439–440, but the unit-text lint scan omits that field at V2DesignDiagnostics.kt:212–215. The commentary pattern’s verb list is at lines 74–79.
+
+I found no additional raw-table-markup miss in Unit 11.
+
+15. References, tasks and review PASS; literal course-wide aspect-sequencing condition FAIL.
+
+Both Unit 11 references have frozen support:
+
+- ref-u11-past: past-tense source lines 38, 56, 65, 68–71, 118 and frozen verb rows.
+- ref-u11-reflexive: lines 104, 106–109, 111–115 and the cited verb rows.
+
+Their gates, search terms and links resolve. Binder/tutor models use taught frozen material. Fresh Unit 11 review reproduces 8 items, 8 earlier objectives, 8 skills, maximum consecutive run 2.
+
+Unit 11 itself contains no aspect terminology. But the literal “no aspect terminology before Unit 12” condition is already violated by these unchanged Unit 4 fields:
+
+- u4-st-teach-present-1.body;
+- u4-st-rem-present.body;
+- ref-u4-present.detail.
+
+They say:
+
+> “So, to form the present tense, you simply take the imperfective aspect of the verb and add the appropriate endings.”
+
+
+
+This is a pre-existing issue, not introduced by T16.
+
+Evidence: catalog/apply_t16_unit_11.py:156,180; CumulativeReviewA228Test.kt:129; curriculum JSON owners above.
+
+16. Pins and hashes PASS; test-strength preservation FAIL.
+
+Recomputed values match:
+
+Value	Result
+
+T15i release digest	0c12b91540c34237fad7327c845a69d5ad2ab14e5daf708dcbd55a2860b42169
+D27a release digest	1f63ee310cd123e5d350149e173733de14f7701e34eab820ecafae7631baab43
+Current release digest	7c7956ce2f8abd2186f82eeb42ad1dddf2091a0a5fb9b517ab4858e82a8538ac
+Validator SHA-256	6c3111c3009b8204fc15158617674db27c4d2d46395d0013173170fa88ff255a
+
+
+All 76 context pins, six source guards and curriculum pins match. The regenerated 851-row audio manifest is byte-identical.
+
+However, Units1115InstructionalValidityTest.kt:414–417 returns early for typed items, bypassing common assertions at lines 420 and 422.
+
+Actual fault-injection results:
+
+u11-i-type-chital.reviewStatus = REJECTED
+everyAdvancementCheckNamesOneExplicitTarget:
+TEST_RUN=1 FAILURES=[]
+
+Prompt appended: "Use another cell of the same table."
+everyAdvancementCheckNamesOneExplicitTarget:
+TEST_RUN=1 FAILURES=[]
+
+Second mutation, full validator:
+V2Validation(ok=true, errors=[])
+UNIT11_A224_A226=[]
+
+The T15a precedent excluded typed items from closed-assessment operations; it did not justify bypassing prompt-quality and review-status assertions.
+
+Needed: retain common assertions for typed items and skip only the closed-check-specific assertions.
+
+The targeted baseline runs passed: 19 tests across the fact, phrase, lint and field-set suites, plus the additional focused regressions and Python tag-boundary tests. Passing CI does not catch the demonstrated typed-test weakening.
+
+The remaining changes needed are: restore those common typed assertions; make tag whitespace handling identical; remove or appropriately separate the missed governance/assessment prose; and resolve the pre-existing Unit 4 aspect wording if the global sequencing condition is required.
