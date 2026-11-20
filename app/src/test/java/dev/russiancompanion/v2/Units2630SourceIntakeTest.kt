@@ -41,7 +41,8 @@ class Units2630SourceIntakeTest {
         21 to "566c3430551943fbe3f3cf284496e4c16b074a8907aaa4df951840336c46384c",
         22 to "3af1050955bf9d86e162360eca3a06cf51ad0e1327226daab4a7aead8dd46954",
         23 to "817b1d8ff8a53907f5daaa378216687d4adc19a569a63762bd6840e560be1c53",
-        24 to "500af59a99d4e13c285ae569b37687cc4be0ebc76529b499b979b3de546505b4",
+        // S1: Unit 24 gains frozen records for the dative and instrumental of nekogo (was 500af59a...).
+        24 to "e35b8db2e9d9f1755192eb21b31480eee01a45224664850966f2d1dee816617b",
         // T15g A4: prov-d7b-u25-038 re-cited to russian-grammar-1369617627.txt:1169 (was 4bc90e89...).
         25 to "a3d5745c0beb03c3153608925d8c108316a619c5ff4d9778d18ba601a69a20a7",
     )

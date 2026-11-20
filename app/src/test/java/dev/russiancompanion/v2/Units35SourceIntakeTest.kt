@@ -57,6 +57,8 @@ class Units35SourceIntakeTest {
             "src-enwiki-reflexive-pronoun-1374712982",
             "src-ruwiki-obosoblenie-144053197",
             "src-ruwiki-boltraffio-149826784",
+            // S1 (approved 2026-11-19): English Wiktionary nekogo oldid 80719285, frozen under catalog/sources/s1-intake.
+            "src-enwiktionary-nekogo-80719285",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)
