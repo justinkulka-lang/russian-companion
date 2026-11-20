@@ -10,8 +10,8 @@ class CurriculumDesignDiagnosticsTest {
     @Test fun currentCorpusHasLocatedSignalsWhileCompatibilityValidationStillPasses() {
         val report = V2DesignDiagnostics.audit(current)
         assertEquals(30, report.counts["units"])
-        assertEquals(728, report.counts["items"]) // T15i retires u7-i-manner-4 (729 -> 728); T15h appends u10-i-absence-5 (728 -> 729); T15b appends 15 typed Unit 7 checks; T15c 9 typed Unit 8 checks; T15d 15 typed Unit 9 checks; T15e 10 typed Unit 10 checks; T15g retires u10-i-absence-3 and u10-i-absence-4 (730 -> 728)
-        assertEquals(525, report.counts["requiredChecks"]) // T15g: 527 -> 525, the two retired duplicates; T15h: 525 -> 526 (u10-i-absence-5); T15i: 526 -> 525 (u7-i-manner-4 retired)
+        assertEquals(740, report.counts["items"]) // T16 appends 12 typed Unit 11 checks (728 -> 740); T15i retires u7-i-manner-4 (729 -> 728); T15h appends u10-i-absence-5 (728 -> 729); T15b appends 15 typed Unit 7 checks; T15c 9 typed Unit 8 checks; T15d 15 typed Unit 9 checks; T15e 10 typed Unit 10 checks; T15g retires u10-i-absence-3 and u10-i-absence-4 (730 -> 728)
+        assertEquals(537, report.counts["requiredChecks"]) // T16: 525 -> 537 (12 typed Unit 11 checks); T15g: 527 -> 525, the two retired duplicates; T15h: 525 -> 526 (u10-i-absence-5); T15i: 526 -> 525 (u7-i-manner-4 retired)
         assertEquals("NEEDS_CORRECTION_OR_REVIEW", report.verdict)
         assertTrue(report.signals.any { it.rule == "LEARNER_MARKUP" && "u14-st-teach-impersonal-2" in it.entityIds })
         assertTrue(report.signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" && "u13-i-tense-keep-2" in it.entityIds })

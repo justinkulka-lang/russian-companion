@@ -409,6 +409,13 @@ class Units1115InstructionalValidityTest {
             unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
                 objective.checkItemIds.forEach { id ->
                     val item = pack.items.first { it.id == id }
+                    // T16 (as T15a for Units 6-10): typed checks have no assessment and are never feature-valid closed checks;
+                    // they keep their typed kind, no options and a reviewed key. Every closed check stays feature-valid.
+                    if (item.typedAnswerKey != null) {
+                        assertEquals(item.id, "TYPED_FORM", item.kind)
+                        assertTrue(item.id, item.options.isEmpty() && item.typedAnswerKey!!.acceptedAnswers.contains(item.answer))
+                        return@forEach
+                    }
                     assertTrue("${item.id} is not feature-valid", V2Validator.featureValid(pack, item))
                     assertFalse("${item.id} uses a source co-location prompt", colocated.containsMatchIn(item.prompt))
                     assertEquals(1, item.options.count { it == item.answer })

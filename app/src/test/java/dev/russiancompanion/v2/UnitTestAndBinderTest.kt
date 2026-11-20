@@ -32,7 +32,8 @@ class UnitTestAndBinderTest {
             // T15c: Unit 8 reaches 28 checked items with 9 typed, so it also has a unit test.
             // T15d: Unit 9 reaches 50 checked items with 15 typed, so it also has a unit test.
             // T15e: Unit 10 reaches 32 checked items with 10 typed, so it also has a unit test.
-            if (unit.number <= 10) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
+            // T16: Unit 11 reaches 20 checked items with 12 typed, so it also has a unit test (was <= 10).
+            if (unit.number <= 11) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
             else { assertNull(unitTestPlan(p, unit)); assertNotNull(unitTestUnavailableReason(p, unit)) }
         }
         unitTestPlan(p, p.unit(1)!!)!!.let { assertEquals(10, it.itemIds.size); assertEquals(3, it.typedCount) }
@@ -46,7 +47,8 @@ class UnitTestAndBinderTest {
         unitTestPlan(p, p.unit(8)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(9, it.typedCount) }
         unitTestPlan(p, p.unit(9)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(15, it.typedCount) }
         unitTestPlan(p, p.unit(10)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(10, it.typedCount) }
-        // T15b: Unit 7 now has typed items. T15c: Unit 8 too. T15d: Unit 9 too. T15e: Unit 10 too. Unit 11 has 8 checks, so
+        unitTestPlan(p, p.unit(11)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(12, it.typedCount) }
+        // T15b: Unit 7 now has typed items. T15c: Unit 8 too. T15d: Unit 9 too. T15e: Unit 10 too. T16: Unit 11 too.
         // Unit 12 (12 checks) is the first unit whose only shortfall is having no typed items.
         assertTrue(unitTestUnavailableReason(p, p.unit(12)!!)!!.contains("0 typed items"))
         val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })

@@ -530,7 +530,8 @@ class ContentAuditCorrectionTest {
             assertEquals(item.answer, pack.provenanceRecords.single { it.itemId == assessment.answerSourceIds.single() }.shippedText)
         }
         val required = unit.objectives.filter { it.gating }.flatMap { it.checkItemIds }.toSet()
-        assertEquals(8, required.size)
+        // T16: Unit 11 has 20 required checks (8 closed, 12 typed; was 8); its gate is unchanged.
+        assertEquals(20, required.size)
         assertEquals(8, unit.advancement!!.minimumDistinctChecks)
         val correct = pack.items.filter { it.objectiveId in unit.objectives.filter { objective -> objective.gating }.map { objective -> objective.id } }
             .map { it.id }.toSet()
@@ -566,8 +567,9 @@ class ContentAuditCorrectionTest {
             val objective = pack.unit(number)!!.objectives.single {
                 teach.id in it.instructionStepIds && remediation.id in it.remediationStepIds
             }
+            // T16: Unit 11 past-read remediation repeats its whole session's teaching (was equal to u11-st-teach-past-read-2).
             if ((number == 3 && topic == "gender") || (number == 13 && topic == "past-aspect") ||
-                (number == 11 && topic == "past-aspect") || (number == 28 && topic in listOf("imperfective-adverb", "perfective-adverb")) || (number == 21 && topic == "purpose") ||
+                (number == 11 && topic in listOf("past-aspect", "past-read")) || (number == 28 && topic in listOf("imperfective-adverb", "perfective-adverb")) || (number == 21 && topic == "purpose") ||
                 (number == 24 && topic in listOf("stand-ins", "word-order-contrast")) ||
                 (number == 26 && topic == "letter-writing")) {
                 val session = pack.unit(number)!!.sessions.single { it.steps.any { step -> step.id == teach.id } }

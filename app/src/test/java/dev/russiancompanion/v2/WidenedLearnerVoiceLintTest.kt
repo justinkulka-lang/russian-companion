@@ -121,7 +121,7 @@ class WidenedLearnerVoiceLintTest {
         )) assertTrue(text, signals(text, "LEARNER_PROVENANCE_NARRATION").isNotEmpty())
         // None of the misses remains in Units 6-9.
         val shown = V2DesignDiagnostics.audit(current).signals
-        assertTrue(shown.none { it.rule == "LEARNER_PROVENANCE_NARRATION" && (it.unit ?: 0) in 1..10 })
+        assertTrue(shown.none { it.rule == "LEARNER_PROVENANCE_NARRATION" && (it.unit ?: 0) in 1..11 }) // T16: was 1..10
     }
 
     @Test fun exemptNoticesAndPlainTeachingAreNotCaught() {
@@ -145,16 +145,18 @@ class WidenedLearnerVoiceLintTest {
         assertTrue(signals("Self-attest: the dictionary gives this meaning.", "LEARNER_PROVENANCE_NARRATION").isNotEmpty())
     }
 
-    @Test fun unitsOneToTenHaveNoWidenedLintHits() {
-        val hits = V2DesignDiagnostics.audit(current).signals.filter { it.rule in rules && (it.unit ?: 0) in 1..10 }
+    // T16 (owner direction 2026-11-20): Unit 11 joins the blocking set (was Units 1-10).
+    @Test fun unitsOneToElevenHaveNoWidenedLintHits() {
+        val hits = V2DesignDiagnostics.audit(current).signals.filter { it.rule in rules && (it.unit ?: 0) in 1..11 }
         assertTrue(hits.joinToString("\n") { "${it.unit} ${it.rule} ${it.entityIds} ${it.field}" }, hits.isEmpty())
     }
 
-    @Test fun unitsElevenToThirtyAreReportedNotBlocking() {
+    // T16: Units 12-30 stay advisory (was Units 11-30).
+    @Test fun unitsTwelveToThirtyAreReportedNotBlocking() {
         val signals = V2DesignDiagnostics.audit(current).signals.filter { it.rule in rules }
-        val counts = (11..30).associateWith { unit -> rules.associateWith { rule -> signals.count { it.unit == unit && it.rule == rule } } }
-        println("T15f advisory widened A2-26 hits, Units 11-30: $counts")
-        assertEquals((11..30).toSet(), counts.keys)
+        val counts = (12..30).associateWith { unit -> rules.associateWith { rule -> signals.count { it.unit == unit && it.rule == rule } } }
+        println("T15f advisory widened A2-26 hits, Units 12-30: $counts")
+        assertEquals((12..30).toSet(), counts.keys)
     }
 
     @Test fun companionAndBookDirectionsKeepOneNoticeAndNoApprovalLanguage() {

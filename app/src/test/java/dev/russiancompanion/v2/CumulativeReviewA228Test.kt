@@ -122,6 +122,32 @@ class CumulativeReviewA228Test {
         }
     }
 
+    /**
+     * T16: the recorded A2-28 measurement for Unit 11, measured as block2DueReviewMeasurementIsRecorded measures Block 2:
+     * a fresh learner completes Units 1-11 with correct governed attempts and assignment-bound review completions.
+     */
+    @Test fun unit11DueReviewMeasurementIsRecorded() {
+        val p = pack()
+        isolatedStore("unit11").use { s ->
+            val a = walk(p, s, 11)
+            val t = 11
+            val slots = a.getValue(t).slots
+            val run = slots.maxOf { slot ->
+                var k = 0; var u = t
+                while (u >= 3 && a.getValue(u).slots.any { it.itemId == slot.itemId }) { k++; u-- }
+                k
+            }
+            val excluded = cumulativeReviewRepeatExcluded(learnerBefore(s, a.getValue(t)), t).size
+            val measured = listOf(slots.size, slots.map { it.objectiveId }.distinct().size, slots.map { it.skill }.distinct().size,
+                slots.count { it.ownerUnit < t }, run, excluded)
+            println("A228-UNIT11 items/objectives/skills/earlier/run/excluded=$measured " + slots.joinToString { "${it.objectiveId}/${it.itemId}" })
+            assertEquals(listOf(8, 8, 8, 8, 2, 1), measured)
+            // The four-review window ending at Unit 11 shares no item.
+            val window = (8..11).map { u -> a.getValue(u).slots.map { it.itemId }.toSet() }
+            assertTrue(window.reduce { x, y -> x intersect y }.isEmpty())
+        }
+    }
+
     @Test fun insufficientPoolIsRefusedAndNoShortTaskStandsIn() {
         val p = pack()
         isolatedStore("short").use { s ->
