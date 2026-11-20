@@ -69,8 +69,8 @@ class Units610SourceIntakeTest {
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
-        // T15i: follows the Units 1-30 curriculum commit d74e3d9f (was 6c5a3bb3... at 1b0dd1cc; a81a842b... at cdfba75e; abe8771d... at 6db5f5b2; fd93b562... at c4c65b24; 8e2ea00e...; D7b 7a95a65d...).
-        assertEquals("df28cdd775bd6c24f6f23a579804dc941507639f1a9adb6c0dd21bcb248ad661", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        // T16: follows the Units 1-30 curriculum commit 8b1ee268 (was df28cdd7... at d74e3d9f; 6c5a3bb3... at 1b0dd1cc; a81a842b... at cdfba75e; abe8771d... at 6db5f5b2; fd93b562... at c4c65b24; 8e2ea00e...; D7b 7a95a65d...).
+        assertEquals("d11cab3c68e18453d8955ef95a1d76b5b675291d7c3746dd43fd664871358f0c", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(

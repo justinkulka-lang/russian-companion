@@ -33,7 +33,8 @@ class OptionPresentationTest {
         // (answer-first 558 -> 559).
         // T15i (CC027): u7-i-manner-4, before the guided targets and led by its answer, is retired (729 -> 728; the guided
         // targets move from 616 to 615; answer-first 559 -> 558).
-        assertEquals(728, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
+        // T16: twelve typed Unit 11 checks with no options are appended (728 -> 740; guided targets and answer-first unchanged).
+        assertEquals(740, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
             p.items.drop(615).take(4).map { it.id }.toSet())
         assertEquals(558, p.items.count { it.options.firstOrNull() == it.answer })
@@ -50,7 +51,7 @@ class OptionPresentationTest {
             "review" to p.items.map { it to presentedOptions(it, reviewOptionContext("corpus-distribution", 0)) },
         )) {
             if (name == "required") {
-                assertEquals(525, displays.size) // T15i: u7-i-manner-4 leaves the required set (526 -> 525); T15h: u10-i-absence-5 joins the required set (525 -> 526); T15g: the two retired Unit 10 duplicates leave the required set (527 -> 525); T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
+                assertEquals(537, displays.size) // T16: twelve typed Unit 11 checks join the required set (525 -> 537); T15i: u7-i-manner-4 leaves the required set (526 -> 525); T15h: u10-i-absence-5 joins the required set (525 -> 526); T15g: the two retired Unit 10 duplicates leave the required set (527 -> 525); T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
                 // T15h: u10-i-absence-5 stores its answer first (376 -> 377); displays still disperse (checked below).
                 // T15i: the retired u7-i-manner-4 stored its answer first (377 -> 376).
                 assertEquals(376, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
