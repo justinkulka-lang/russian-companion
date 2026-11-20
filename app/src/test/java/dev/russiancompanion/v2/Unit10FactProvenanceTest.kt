@@ -169,7 +169,7 @@ class Unit10FactProvenanceTest {
         fun JsonObject.string(key: String) = getValue(key).jsonPrimitive.content
         val owners = owners(pack)
         val needed = owners.flatMap { (owner, facts, _) -> facts.filter { fact -> fact.none { it in 'Ѐ'..'ӿ' } }.map { owner to it } }
-        assertEquals(55, needed.size) // T15g: 62 -> 55 with the two retired checks and the re-cued u10-i-have-3
+        assertEquals(58, needed.size) // T15g: 62 -> 55 with the two retired checks and the re-cued u10-i-have-3; T15h: 55 -> 58 (u10-i-absence-5)
         assertEquals(needed.toSet(), reviews.map { it.string("ownerId") to it.string("sentence") }.toSet())
         assertEquals(needed.size, reviews.size)
         val records = pack.provenanceRecords.associateBy { it.itemId }
@@ -205,7 +205,7 @@ class Unit10FactProvenanceTest {
         val listed = Json.parseToJsonElement(File(repo(), "app/src/test/resources/unit10-phrase-attestations.json").readText())
             .jsonObject.getValue("phrases").jsonArray.map { it.jsonObject }
         assertEquals(shown, listed.map { it.getValue("phrase").jsonPrimitive.content }.toSet())
-        assertEquals(26, shown.size) // T15g: the A2-36 references add 3 attested phrases (23 -> 26)
+        assertEquals(27, shown.size) // T15g: the A2-36 references add 3 attested phrases (23 -> 26); T15h: У него есть дом (26 -> 27)
         listed.forEach { entry ->
             val phrase = entry.getValue("phrase").jsonPrimitive.content
             val path = entry.getValue("file").jsonPrimitive.content

@@ -349,6 +349,16 @@
     "step:u10-st-rem-pronoun:russianFacts",
     "step:u10-st-teach-pronoun-1:body"
    ]
+  },
+  {
+   "phrase": "У него есть дом",
+   "file": "catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt",
+   "line": 28,
+   "shownIn": [
+    "item:u10-i-absence-5:promptLetter",
+    "item:u10-i-absence-5:feedback",
+    "item:u10-i-absence-5:russianFacts"
+   ]
   }
  ]
 }
