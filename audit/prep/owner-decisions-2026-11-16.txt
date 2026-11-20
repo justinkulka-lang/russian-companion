@@ -168,3 +168,8 @@ D25j. T15i covers the content items:
   - Unit-specific binder tasks for Units 6-10 (WC011). English prompts; any Russian model answers verbatim from frozen sources.
   - Generate the Block 2 listen-check sheet.
   - The 13 HIGH disposition rows.
+
+D26 (11/20, under D6). T15h DONE (CI 44683585115 on faeb7618; DONE 37b64227).
+D26a. Recorded: during T15h the owner approved aligning the Обособление and Больтраффио attributions with their FREEZE.json text, and allowing licence-URL notice fields to equal the licence route's recorded url.
+D26b. Pre-1708 letter names (буки, веди…) stay out of the D22c exact set. Unit 1 teaches the modern names only.
+D26c. Next steps: Codex checks S1 and T15h together, read-only, while Code runs T15i (D25j).
