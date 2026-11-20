@@ -272,12 +272,12 @@ A07-064,P2,7,7,SENTENCE,Я хочу новый стул и новое письм
 A08-001,P2,8,"8,10",WORD,бра́тья,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A08-002,P2,8,8,WORD,города́,NEEDS_RECORDING,,,,"example,item,teaching"
 A08-003,P2,8,8,WORD,дни,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,teaching"
-A08-004,P2,8,"8,12",WORD,дома́,NEEDS_RECORDING,,,,"example,item,teaching"
+A08-004,P2,8,"8,12",WORD,дома́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A08-005,P2,8,8,WORD,друзья́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A08-006,P2,8,"8,10,24",WORD,есть,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A08-007,P2,8,8,WORD,ие,NEEDS_RECORDING,,,"course text has no stress mark; short: check it is a word, not an ending",reference
 A08-008,P2,8,8,WORD,книг,NEEDS_RECORDING,,,,reference
-A08-009,P2,8,"8,12,29",WORD,кни́ги,NEEDS_RECORDING,,,,"example,item,teaching"
+A08-009,P2,8,"8,12,29",WORD,кни́ги,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A08-010,P2,8,8,WORD,лю́ди,NEEDS_RECORDING,,,,"example,item,teaching"
 A08-011,P2,8,8,WORD,ма́мы,NEEDS_RECORDING,,,,"example,item,teaching"
 A08-012,P2,8,8,WORD,машины,NEEDS_RECORDING,,,course text has no stress mark,reference
@@ -458,24 +458,24 @@ A12-003,P2,12,12,WORD,будете,NEEDS_RECORDING,,,course text has no stress m
 A12-004,P2,12,12,WORD,будешь,NEEDS_RECORDING,,,course text has no stress mark,teaching
 A12-005,P2,12,12,WORD,буду,NEEDS_RECORDING,,,course text has no stress mark,teaching
 A12-006,P2,12,12,WORD,будут,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A12-007,P2,12,12,WORD,дома́х,NEEDS_RECORDING,,,,"example,item,teaching"
-A12-008,P2,12,"12,16",WORD,до́му,NEEDS_RECORDING,,,,"example,item,teaching"
-A12-009,P2,12,"12,16",WORD,кни́гах,NEEDS_RECORDING,,,,"example,item,teaching"
+A12-007,P2,12,12,WORD,дома́х,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A12-008,P2,12,"12,16",WORD,до́му,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A12-009,P2,12,"12,16",WORD,кни́гах,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A12-010,P2,12,"12,13,15,19",WORD,сде́лать,NEEDS_RECORDING,,,,"example,item,teaching"
 A12-011,P2,12,12,WORD,ска́жем,NEEDS_RECORDING,,,,"example,item,teaching"
-A12-012,P2,12,12,WORD,ска́жешь,NEEDS_RECORDING,,,,"example,teaching"
+A12-012,P2,12,12,WORD,ска́жешь,NEEDS_RECORDING,,,,"example,item,teaching"
 A12-013,P2,12,"12,14",WORD,скажу́,NEEDS_RECORDING,,,,"example,item,teaching"
 A12-014,P2,12,"12,13,15,19",WORD,сказа́ть,NEEDS_RECORDING,,,,"example,item,teaching"
-A12-015,P2,12,12,WORD,стола́х,NEEDS_RECORDING,,,,"example,item,teaching"
-A12-016,P2,12,"12,16,30",WORD,столу́,NEEDS_RECORDING,,,,"example,item,teaching"
-A12-017,P2,12,12,PHRASE,Вы бу́дете говори́ть,NEEDS_RECORDING,,,,item
-A12-018,P2,12,"12,14",PHRASE,Мы бу́дем говори́ть,NEEDS_RECORDING,,,,"example,item,teaching"
-A12-019,P2,12,12,PHRASE,Мы ска́жем,NEEDS_RECORDING,,,,"example,item,teaching"
-A12-020,P2,12,12,PHRASE,Он бу́дет говори́ть,NEEDS_RECORDING,,,,"example,teaching"
-A12-021,P2,12,12,PHRASE,Ты бу́дешь говори́ть,NEEDS_RECORDING,,,,"example,item,teaching"
-A12-022,P2,12,12,PHRASE,хорошое письмо,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
-A12-023,P2,12,"12,14",PHRASE,Я бу́ду говори́ть,NEEDS_RECORDING,,,,"example,item,teaching"
-A12-024,P2,12,12,PHRASE,Я скажу́,NEEDS_RECORDING,,,,"example,item,teaching"
+A12-015,P2,12,12,WORD,стола́х,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A12-016,P2,12,"12,16,30",WORD,столу́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A12-017,P2,12,12,PHRASE,Вы бу́дете говори́ть,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A12-018,P2,12,"12,14",PHRASE,Мы бу́дем говори́ть,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A12-019,P2,12,12,PHRASE,Мы ска́жем,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A12-020,P2,12,12,PHRASE,Он бу́дет говори́ть,NEEDS_RECORDING,,,,"example,reference,teaching"
+A12-021,P2,12,12,PHRASE,Ты бу́дешь говори́ть,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A12-022,P2,12,"12,14",PHRASE,Я бу́ду говори́ть,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A12-023,P2,12,12,PHRASE,Я скажу́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A12-024,P2,12,12,SENTENCE,хорошое письмо,NEEDS_RECORDING,,,course text has no stress mark,"item,reference,teaching"
 A13-001,P2,13,13,WORD,англича́нином,NEEDS_RECORDING,,,,example
 A13-002,P2,13,13,PHRASE,Он сказа́л,NEEDS_RECORDING,,,,"example,item,teaching"
 A13-003,P2,13,13,PHRASE,что он,NEEDS_RECORDING,,,course text has no stress mark,example

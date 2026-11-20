@@ -394,8 +394,10 @@ class ContentAuditCorrectionTest {
         assertTrue(text.contains("говори́ть is imperfective; сказа́ть is perfective"))
         assertTrue(text.contains("де́лать is imperfective; сде́лать is perfective"))
         assertTrue(text.contains("not a universal pair for the English verb speak"))
-        assertTrue(text.contains("not choose aspect in a sentence"))
-        assertTrue(text.contains("Given де́лать and a request for its perfective counterpart, choose сде́лать"))
+        // T16b (prep section 1 and A2-26): the check-commentary sentence and the sentence that states u12-i-aspect-2's answer as
+        // an instruction are removed (were assertTrue(contains(...)) for both); the pairs stay taught above.
+        assertFalse(text.contains("not choose aspect in a sentence"))
+        assertFalse(text.contains("Given де́лать and a request for its perfective counterpart, choose сде́лать"))
         assertTrue(text.contains("rather than assuming every prefix changes only aspect"))
         assertEquals(12, unit.advancement!!.minimumDistinctChecks)
     }

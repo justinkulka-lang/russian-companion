@@ -148,6 +148,28 @@ class CumulativeReviewA228Test {
         }
     }
 
+    /** T16b: the recorded A2-28 measurement for Unit 12, measured as unit11DueReviewMeasurementIsRecorded. */
+    @Test fun unit12DueReviewMeasurementIsRecorded() {
+        val p = pack()
+        isolatedStore("unit12").use { s ->
+            val a = walk(p, s, 12)
+            val t = 12
+            val slots = a.getValue(t).slots
+            val run = slots.maxOf { slot ->
+                var k = 0; var u = t
+                while (u >= 3 && a.getValue(u).slots.any { it.itemId == slot.itemId }) { k++; u-- }
+                k
+            }
+            val excluded = cumulativeReviewRepeatExcluded(learnerBefore(s, a.getValue(t)), t).size
+            val measured = listOf(slots.size, slots.map { it.objectiveId }.distinct().size, slots.map { it.skill }.distinct().size,
+                slots.count { it.ownerUnit < t }, run, excluded)
+            println("A228-UNIT12 items/objectives/skills/earlier/run/excluded=$measured " + slots.joinToString { "${it.objectiveId}/${it.itemId}" })
+            assertEquals(listOf(8, 8, 7, 8, 3, 0), measured)
+            val window = (9..12).map { u -> a.getValue(u).slots.map { it.itemId }.toSet() }
+            assertTrue(window.reduce { x, y -> x intersect y }.isEmpty())
+        }
+    }
+
     @Test fun insufficientPoolIsRefusedAndNoShortTaskStandsIn() {
         val p = pack()
         isolatedStore("short").use { s ->
