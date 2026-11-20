@@ -1,0 +1,285 @@
+Verified a61f0bf6f1824af47f682feffb09c3b4ef57ca7b, read-only. No tracked files changed, committed or pushed.
+
+CI 44604971247 passed on exactly 6e35353c8912366a2915ecdb41d933067e5fc11a. Locally, 21 targeted tests passed; the full validator returned ok=true, errors=[]. Independent probes nevertheless found failures.
+
+1. Part A and A4–A8 — FAIL.
+
+The six re-citations pass: each contains the selected text in the correct grammatical sense, with matching frozen text and hashes. The release digest now includes the allowlist. The original invented-sentence, English-boundary and dash bypasses are rejected.
+
+Fresh probe output:
+
+invented sentence backed only by synthesis → rejected
+quoted Cyrillic in authored English → rejected
+он улыбался, читая is the complete Russian example. → COMPOSED
+читая письмо — он улыбался → COMPOSED
+читая письмо; он улыбался → COMPOSED
+читая письмо: он улыбался → COMPOSED
+
+Four gaps remain:
+
+Probe	Actual result	Needed change
+
+читая письмо;он улыбался	No failure	Allow zero spaces after comma, semicolon and colon joins.
+он улыбался, улыбался is the complete Russian example.	No failure, although the full sequence is unattested	Repetition alone cannot establish that the last word belongs to English commentary.
+Adjacent <center>, <dir> or <search> elements	Their words are joined	Complete the block-boundary handling.
+Assessment commentary appended to ref-u610-attribution.detail	No lint finding	The owner exemption currently exempts the entire reference, including unrelated commentary.
+
+
+Evidence: PhraseAudit.kt:31, its English-boundary logic at line 154; TwoPartPhraseRule.kt:23; V2DesignDiagnostics.kt:89, especially owner exclusions at lines 139–142.
+
+The English-boundary implementation follows D21b’s stated condition, but the new repetition probe shows that condition remains insufficient for D15c.
+
+2. A8 field set — FAIL.
+
+The shared collector fixes the previously identified omissions, including objective-only items and examples. It does not equal everything the UI renders.
+
+Field	Independent rendering evidence	Shared-set result
+
+unit.shortLabel	topicLabel() returns it; used by Today, course cards and unit headings	Scanned, but incorrectly declared “not rendered”
+step.kind	V2Screens.kt:584 interpolates it into the step status	Missing
+reference.reviewStatus	V2Screens.kt:816 interpolates it into review status	Missing
+Source ID, title, licence, attribution and modification	V2OfflineNotices.kt:114–121 → V2Screens.kt:947–953	Missing
+Provenance licence URLs and share-alike treatment	Same notice construction/rendering path	Missing
+
+
+unit.topicSummary is the declared field I found genuinely unrendered.
+
+The status fields are constrained metadata, and attribution text may deserve a separate exemption. That does not make the claimed UI/shared-set equality true.
+
+Evidence: V2Models.kt:509, V2Screens.kt:584, V2OfflineNotices.kt:114.
+
+The insertion regressions also do not cover every declared kind:
+
+- сущ: 32 of 34 kinds; uppercase/lowercase are excluded.
+- Unattested phrase: 30 of 34 kinds; all four letter kinds are excluded.
+
+V2LearnerFieldsTest.kt:89–102 establishes those exclusions. Its UI comparison excludes kind and reviewStatus and checks selected property accesses rather than complete rendering dataflow.
+
+3. D22 and D23 — FAIL overall; the records and scope changes PASS.
+
+All 23 Unit 1 records plus Unit 4’s они record pass D19a against their cited rows. Across the selection CSV’s 81 records, I found no frozen-line, hash or D19a mismatch.
+
+The scope changes are correct:
+
+- Unit 1 provenance is admitted only through isFrozenSourceRecord.
+- English coverage and ordinary English hosts remain Units 2–30.
+- The former line-5291 authored-English restriction remains Units 2–30, now at V2Validator.kt:5293.
+
+The D22c list exemption is broader than letter names. It accepts whole-word substrings anywhere in qualifying alphabet rows, rather than exact letter/name cells.
+
+твёрдый знак; знак
+present=false
+failures=[]
+
+знак alone is not a letter name. The implementation is at PhraseAudit.kt:111. Build an exact set from the intended table columns instead of substring matching.
+
+4. Part B learner text — PASS.
+
+All 16 previously reported Units 6–9 manual misses are removed or rewritten. The widened lint catches their old wording, and its current Units 1–10 report is empty.
+
+The two reference rewordings preserve their Cyrillic token sequences exactly:
+
+ref-u7-adjectives: Russian unchanged=true
+ref-u10-genitive:  Russian unchanged=true
+
+Evidence: catalog/apply_t15g_block2.py:41–77; catalog/apply_t15g_d22.py:8–10; passing theT15fManualMissesAreCaught.
+
+5. Eleven references — FAIL on citation quality; structure and links PASS.
+
+I checked all eleven entries. Their gates are 6, 7, 8, 9 or 10 as appropriate; search terms describe their subjects; every intended first-teaching and remediation link resolves. Unit 8 agreement also links to the Unit 7 adjective reference.
+
+The support map is:
+
+Reference	Frozen support
+
+ref-ca-cases	accusative:4–8, 15, 23–35, 52–57, 89–105
+ref-u6-possessives	accusative:111, 116–133
+ref-u6-direction	accusative:15
+ref-u7-adjectives	adjectives:6, 11–26, 109–124; OpenRussian adjectives:4, 7; accusative:61, 63, 79
+ref-u7-adverbs	adverbs:1; narechie:8, 44
+ref-u8-plurals	nominative:31–42; adjectives:14
+ref-u8-existence	genitive:47–49
+ref-u9-numbers	numbers:12–98; genitive:8–17
+ref-u9-genitive	genitive:82–107
+ref-u10-possession	genitive:41–56, 70
+ref-u10-genitive	genitive:63–78, 120–143; adjectives:62; accusative:28–29
+
+
+These are the frozen files identified in catalog/apply_t15g_block2.py:261–264. The Russian examples have witnesses; the new reference phrases add no failures to the fresh audit.
+
+However, two new selection bindings repeat the same-spelling/wrong-grammatical-sense problem D21a prohibits:
+
+- prov-t15g-u10-107, shipped его, cites genitive:120, the adjective ending -его. That does not witness the pronoun occurrence. Use the pronoun passage at genitive:141, preserving any separately needed ending witness.
+- prov-t15g-u10-116, shipped ей, cites genitive:102, a noun plural ending. The reference discusses the feminine adjective ending; use genitive:121.
+
+Both records are in v2-curriculum.json:1. Also qualify the adjective-ending explanation to include soft adjectives, supported explicitly by adjectives:45–47, rather than mentioning only hushing consonants.
+
+Reference construction: apply_t15g_block2.py:104. Visibility: V2ProgressRules.kt:404–406.
+
+6. A2-28 — PASS.
+
+Fresh governed progression reproduces CumulativeReviewA228Test.kt:99–102 exactly:
+
+Unit	Items	Earlier objectives	Skills	Earlier-unit items	Maximum consecutive run	Repeat-excluded
+
+6	8	6	5	8	2	1
+7	8	8	7	8	1	0
+8	8	8	7	8	2	0
+9	8	8	8	8	3	0
+10	8	8	8	8	3	2
+
+
+No item appears in four consecutive reviews.
+
+7. Dispositions — FAIL.
+
+All 13 FIXED rows have an identifiable implementation:
+
+Finding	Fix evidence
+
+CC010	c4c65b24: Unit 8 spelling guide, Unit 10 possession cue and duplicate retirements
+CC016	0dfb44f4, baa055b8, c4c65b24: phrase-scoped glosses and absence translation
+CC017	c4c65b24: eleven substantive references; citation corrections above remain
+CC025	c4c65b24: demonstrative and pronoun example notes
+CC029	c4c65b24: the 16 residual learner-text misses
+CC030	50f77c28, c4c65b24: Unit 9 cues and remaining repeated tuples
+CC034	ff450b72: selected wrong-option rationale rendering
+CC037	0dfb44f4: Unit 7 summary
+CC043	127f81b3: versioned cumulative-review copy
+CC045	c4c65b24: ref-ca-cases summary, detail and search terms
+WC004	c4c65b24: possessive, count, plural and pronoun meanings
+IA008	481f749f, baa055b8: complete option explanations
+IA016	c4c65b24: guided/independent tuple separation
+
+
+The bounded/deferred notes generally acknowledge their remaining limits honestly. Two need correction:
+
+- WC011, CSV line 49, is false. Loaded Units 6–10 all have binderTask=null and tutorTask=null. Their unit-specific work therefore cannot reside in those fields as claimed. Generic binder directions remain.
+- CC036, line 41, overgeneralizes its justification. u7-i-manner-4 remains a question about the unit’s evidence/scope, not simply a grammatical explanation or form-pair contrast. Give individual justifications or preserve that unresolved scope explicitly.
+
+The other deferred notes—CC032, CC033, CC035, WC006, WC008 and IA009—are bounded acknowledgements, not evidence those requirements are complete.
+
+Evidence: FINDINGS_DISPOSITION.csv:28.
+
+8. Unit 10 contrasts — FAIL, confirmed.
+
+Only two required checks were removed anywhere in this change range:
+
+obj-u10-absence:
+  u10-i-absence-3
+  u10-i-absence-4
+
+Its remaining closed checks, absence-1 and absence-2, both require the absence explanation. It has no possession counterexample.
+
+No other objective lost required check IDs. The other retargetings preserve their relevant contrasts. Unit 10 still meets A2-23 at 30 checked / 10 typed, but that does not repair this construct loss.
+
+Evidence: Unit10ReinforcementReviewTest.kt:29. Despite the test’s name mentioning “PositiveCounterexampleEvidence”, lines 39–40 now allow completion after the guide and two negative checks alone.
+
+9. Pins, hashes and tests — FAIL overall; numerical checks PASS.
+
+Recomputed values match:
+
+Value	Recomputed result
+
+Validator SHA-256	6c3111c3009b8204fc15158617674db27c4d2d46395d0013173170fa88ff255a
+Release source digest	8b71c203863abb6fe1b1ebc7c5f72e245ae15b2e7865d497ce631501c90c8474
+Six guarded source files	All match
+75 context pins	All match their stored original-text hashes
+Unit 1 content/review digests	80459577… / 019e500c…; mapping b85c056f… unchanged
+Unit 3 review package	abe8771d…
+Unit 16 / 25 content digests	16d20fdf… / a3d5745c…
+Changed Unit 10 / Unit 9 context pins	c827f546… / c65945fc…
+Curriculum pin	6db5f5b2; its pack bytes equal head
+Audio manifest	Reproduces byte-for-byte: 843 rows, SHA-256 ab5f70a9…
+
+
+Replacing the allowlist input changes the release digest to 5a2b52e6…, confirming the new digest root is effective. a61f0bf6 changes only WORK_QUEUE.md.
+
+Most expectation changes follow legitimate wording, references or tuple changes. The blanket “nothing weakened” claim fails because:
+
+- The positive-counterexample completion requirement was removed without replacement.
+- The field-kind assertion does not prove UI equality.
+- Insertion coverage is incomplete as described in item 2.
+
+Allowing absent binderTask.modelAnswer and step.unavailableReason in the produced-kind assertion is reasonable: their insertion branches explicitly create them. That justification does not cover the other omissions.
+
+Overall: FAIL. T15g delivers substantial valid fixes, but the bypasses, field-set claim, D22c exemption, citation issues, inaccurate disposition and Unit 10 contrast need correction. Block 2 remains incomplete.
+
+T15h prep
+
+The following states are scoped to Units 6–10, except the two explicitly app-wide UI findings. Pack entities below are in app/src/main/assets/content/v2-curriculum.json:1.
+
+HIGH finding	Current state	Closure or fix needed
+
+CC012	Fixed assigned-boundary defect	Unit 8 app teaching remains positive existence, supported by genitive:47–49. Record this scoped closure; keep book-only coverage questions under CC032.
+CC031	Open	u7-i-endings-1 still tests genitive но́вого before Unit 9. Retarget to an in-scope nominative gender form from adjectives.csv:16; update its assessment and binding.
+WC005	Partly fixed	Unit 6 meanings improved. Unit 7 question, demonstrative and place teaching still needs explicit gender/number/case labels before the relevant checks. Use OpenRussian adjectives:4, 7, 16 and Wikibooks adjectives:109–124. A reference alone is insufficient primary teaching.
+WC001	Fixed in Unit 7’s current authored/rendered rationale path	All 66 wrong-option choices return a renderable rationale; no old splice/suppression cases found. Record bounded Unit 7 closure, retaining final linguistic review.
+IA015	Fixed for the Unit 7 manner tuple	Fresh coherent-rebinding probe fails with immutable-tuple errors. Record that result without claiming all course synthesis paths closed. Test: CurrentPhase2TupleMutationTest.kt:18, introduced in 39de4988.
+CC023	Fixed raw-markup defect in Block 2	Record the scoped zero-markup result. Separately clean remaining awkward fragments, including u7-st-teach-demonstrative-2.body; zero markup is not a prose-quality certificate.
+CC020	Fixed current cumulative-review requirement	Record the fresh A2-28 table. It demonstrates mixed review of taught objectives, not unseen productive transfer. Relevant implementation includes e22c40b1 and subsequent T11 work.
+CC021	Partly fixed	Restore useful repair for remaining gaps. In particular, u6-st-rem-feminine.body names the declension but omits the actual ending change; u6-st-rem-third.body omits his/her/their meanings. Use accusative:52–53 and :129. Unit 10’s husband-form check also needs corresponding repair, supported by nouns.csv:127.
+CC022	Fixed under the owner’s session-local A2-24 rule	Record zero required-check findings and separate end-of-unit check sessions. Do not claim this demonstrates unseen transfer.
+CC027	Partly fixed/open	Typed additions and redesigned options improve discrimination. Constant-key invariance recognition and u7-i-manner-4’s policy question remain. Narechie:8,44 supports the rule and lexical pairs; it does not itself supply an unseen contextual application. Redesign or obtain an explicit bounded construct decision.
+IA003	Fixed	Units 6–10 all have requireDueReview=true; fresh governed progression exercises the gate. Record closure.
+CC018	Fixed in code; device acceptance pending	8e53775a adds safe-area/IME padding and consumed insets. V2Chrome.kt:75,94,125,142. Retain physical acceptance LAST.
+CC019	Fixed in code; device acceptance pending	8e53775a puts selectable/toggleable roles on rows and removes inner-control click handlers. V2Screens.kt:220,239,627; V2PracticeFlows.kt:176. Retain physical TalkBack acceptance LAST.
+
+
+For CC021, the old literal cue/key coverage measurement now produces 14 NEITHER flags across Block 2: Unit 6 eight, Unit 7 five, Unit 10 one; Units 8–9 zero. These are inspection flags, not proof that every flagged transfer item needs its exact answer copied into remediation. The concrete missing explanations above do need repair.
+
+Proposed rows, not written:
+
+finding_id,scope,disposition,task,decided_by,date,note
+CC012,Unit 8 first-introduction boundary,FIXED,T15h,,2026-11-19,"App existence teaching is positive-only; genitive:47-49 supports it. Book-only coverage remains under CC032."
+CC031,Unit 7 early genitive,OPEN,T15h,,2026-11-19,"Retarget u7-i-endings-1 to an in-scope nominative form from adjectives.csv:16; do not introduce analysed genitive here."
+WC005,Units 6-7 prerequisite teaching,OPEN,T15h,,2026-11-19,"Unit 6 meanings improved; add missing Unit 7 gender number and case labels in primary teaching before checks."
+WC001,Unit 7 wrong-option rationales,FIXED,T15h,,2026-11-19,"All 66 wrong-option choices have renderable rationales; old splice and shown-form mismatch patterns are absent. Final linguistic review remains."
+IA015,Unit 7 manner tuple identity,FIXED,T15h,,2026-11-19,"Fresh coherent rebinding is rejected by immutable tuple guards; no closure claim for other course synthesis paths."
+CC023,Units 6-10 raw learner markup,FIXED,T15h,,2026-11-19,"Raw wiki and table-markup defect cleared in Block 2; remaining prose-quality edits are tracked separately."
+CC020,Units 6-10 cumulative review,FIXED,T15h,,2026-11-19,"Fresh governed progression meets A2-28 for every unit; evidence is review of supplied taught items."
+CC021,Units 6-10 remediation coverage,OPEN,T15h,,2026-11-19,"Repair remaining explanations including Unit 6 feminine endings and third-person possessive meanings and Unit 10 husband forms."
+CC022,Units 6-10 session-local check exposure,FIXED,T15h,,2026-11-19,"Required checks have zero A2-24 exposure findings under T14-n1; no unseen-transfer claim."
+CC027,Units 6-10 diagnostic checks,OPEN,T15h,,2026-11-19,"Resolve remaining Unit 7 constant-key invariance and policy constructs; clean A2-24 alone does not establish diagnostic application."
+IA003,Units 6-10 due-review advancement,FIXED,T15h,,2026-11-19,"Due review is required and exercised by fresh governed progression."
+CC018,App safe-area implementation,FIXED,T15h,,2026-11-19,"8e53775a applies safeDrawing and IME insets with consumption; physical device acceptance remains LAST."
+CC019,App selectable-control semantics,FIXED,T15h,,2026-11-19,"8e53775a supplies row roles and single click targets; physical TalkBack acceptance remains LAST."
+
+The OPEN rows must be resolved before treating these as complete HIGH-finding closure. T15h should also correct WC011 and provide the missing unit-specific binder tasks.
+
+Unit 10 possession counterexample
+
+Use the contiguous frozen sentence У него есть дом, from:
+
+catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt:28
+
+It is explicitly glossed “He has a house”. No current check uses that exact cue.
+
+A restored absence-objective check can ask which existing case explanation fits:
+
+- Existing positive key: “In this line, the possessor is genitive and the possessed thing is nominative.”
+- Existing absence explanation as the distractor.
+
+The construction is supported by genitive:42–44. Add same-sense frozen provenance, rebuild the context pin, and require this positive case alongside the two negative contexts. Add a regression proving that answering only the negatives cannot complete the objective.
+
+That gives Unit 10 31 checked / 10 typed, 32.26%, while avoiding the retired duplicate tuple.
+
+Block 2 listen-check sheet
+
+Fresh candidate enumeration finds 12 clips: брат, для, дом, друг, мой, муж, от, пять, стол, сын, твой, шесть. The sheet must enumerate every associated Unit 6–10 target/use, including clips shared across units.
+
+Model it on audit/listen-check/block1.html, with:
+
+- clip ID, SHA-256, candidate text and all unit/target uses;
+- embedded original Ogg and metadata-free WAV fallback, with matching PCM shape;
+- MATCH / NO_MATCH / UNSURE decisions;
+- owner/verifier identity and timestamp;
+- exported schema, sheet ID, candidate digest and per-clip results.
+
+Generator: ListenCheckCli.kt:50, using ListenCheckSheet.kt.
+
+Command for the implementer:
+
+./gradlew :app:generateListenCheckSheet -PlistenCheckBlock=2
+
+It writes audit/listen-check/block2.html. Generation supplies no owner listening decision and creates no verified audio binding.

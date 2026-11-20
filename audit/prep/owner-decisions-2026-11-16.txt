@@ -148,3 +148,23 @@ D24c. S1 page list (18 pages):
   - D6a: Wiktionary двое; ru Имя числительное в русском языке; Wiktionary назад, за.
   - D7c: Wiktionary некого.
   Pages with no oldid recorded yet: freeze the current revision and record its oldid. Use the Wiktionary edition the prep reports name; if a report doesn't name one, use English Wiktionary and record that.
+
+D25 (11/19, under D6). The Codex T15g check failed on items 1, 2, 3, 5, 7, 8 and 9. The Block 2 remainder is split into T15h (rules and fixes) and T15i (content, binder tasks, listen-check sheet).
+D25a. Joins: a comma, semicolon or colon counts as a join with or without following spaces.
+D25b. English-boundary rule: delete it from PhraseAudit. Reword the 4 Unit 6 English sentences so the noun doesn't follow the comma directly (e.g. "In мой стол, the noun стол is masculine singular"). The Russian stays unchanged.
+D25c. Block boundaries: invert the rule. Every HTML tag is a boundary except a fixed inline list: span, b, i, em, strong, a, small, sub, sup, u, s, abbr, cite, code, mark, q, bdi, bdo, font, wbr. A regression test covers center, dir, search and a random unknown tag.
+D25d. Lint owner exemption: exempt only the exact notice and direction sentences, never an entire owner. Regression: commentary appended to ref-u610-attribution.detail is caught.
+D25e. Shared field set: add step.kind, reference.reviewStatus and the offline notice fields (source ID, title, licence, attribution, modification, licence URL, share-alike). Declare shortLabel as rendered. In notice fields, Cyrillic is accepted only if it exactly matches the title or attribution recorded in that source's FREEZE.json or inventory. Insertion regressions must cover all declared kinds, including the 4 letter kinds (for those, insert an unattested letter name, which must be rejected). The equality test checks the UI rendering dataflow, not just a list of property accesses.
+D25f. D22c: build an exact set from the alphabet table's letter and letter-name columns; no substring matching. Regression: "твёрдый знак; знак" fails.
+D25g. Re-cite prov-t15g-u10-107 его to genitive:141 and prov-t15g-u10-116 ей to genitive:121. Qualify the adjective-ending explanation to cover soft adjectives (adjectives:45-47).
+D25h. Dispositions: correct WC011 (Units 6-10 have no binderTask or tutorTask). Give CC036 individual justifications, and keep u7-i-manner-4 explicitly open until T15i retires it.
+D25i. Unit 10: add the possession counterexample check using У него есть дом (personal-pronouns-3598527.txt:28) as the Codex prep describes. Restore the positive-counterexample requirement in Unit10ReinforcementReviewTest, with a regression showing that the negatives alone cannot complete the objective.
+D25j. T15i covers the content items:
+  - CC031: retarget u7-i-endings-1 to an in-scope nominative form (adjectives.csv:16).
+  - WC005: Unit 7 gender, number and case labels in primary teaching.
+  - CC021: remediation repairs for u6 feminine, u6 third-person and the u10 husband form.
+  - CC027: retire u7-i-manner-4 as a policy question, the same as D12a. The invariance recognition checks stay as BOUNDED_SCOPE.
+  - CC023: prose fragments.
+  - Unit-specific binder tasks for Units 6-10 (WC011). English prompts; any Russian model answers verbatim from frozen sources.
+  - Generate the Block 2 listen-check sheet.
+  - The 13 HIGH disposition rows.
