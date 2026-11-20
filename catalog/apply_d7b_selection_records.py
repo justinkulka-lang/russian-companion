@@ -42,7 +42,8 @@ FORM = re.compile(f"[{CYR}][{CYR}{AC}]*")
 PIPED = re.compile(r"\[\[[^\[\]|]*\|([^\[\]|]*)\]\]")
 # T15h (D25c): every HTML tag is a boundary except the fixed inline list (same list as TwoPartPhraseRule.INLINE_TAGS).
 INLINE_TAGS = "span b i em strong a small sub sup u s abbr cite code mark q bdi bdo font wbr".split()
-BLOCK = re.compile(r"(?i)</?(?!(?:" + "|".join(INLINE_TAGS) + r")(?![A-Za-z0-9-]))[A-Za-z][^>]*>")
+# T16 (D27a): only a complete inline name is inline (it must end at whitespace, "/" or ">"); span:probe is a boundary.
+BLOCK = re.compile(r"(?i)</?(?!(?:" + "|".join(INLINE_TAGS) + r")(?=[\s/>]))[A-Za-z][^>]*>")
 CONTENT_AUDIT = "src-content-audit-research"
 
 

@@ -104,6 +104,17 @@ class TwoPartPhraseRuleTest {
         }
         assertFalse(TwoPartPhraseRule.present("<bdox>Иван</bdox>ович", "Иванович"))
         assertFalse(TwoPartPhraseRule.present("<spanner>Иван</spanner>ович", "Иванович"))
+        // T16 (D27a): a name that only starts with an inline name, joined by a colon or underscore, is a boundary.
+        for (tag in listOf("span:probe", "span_probe", "b:probe", "b_probe", "em:x", "a_b")) {
+            assertTrue(tag, TwoPartPhraseRule.isBoundary(tag))
+            assertFalse(tag, TwoPartPhraseRule.present("<$tag>Иван</$tag>ович", "Иванович"))
+            assertFalse(tag, TwoPartPhraseRule.present("<$tag class=\"x\">Иван</$tag>ович", "Иванович"))
+            assertFalse(tag, TwoPartPhraseRule.present("Иван<$tag/>ович", "Иванович"))
+        }
+        // Complete inline names with attributes or self-closing slashes stay inline.
+        assertTrue(TwoPartPhraseRule.present("<span class=\"x\">Иван</span>ович", "Иванович"))
+        assertTrue(TwoPartPhraseRule.present("<b>Иван</b >ович", "Иванович"))
+        assertTrue(TwoPartPhraseRule.present("Иван<wbr/>ович", "Иванович"))
         for (void in listOf("br", "br/", "br /", "hr", "hr/", "hr /")) {
             assertFalse(void, TwoPartPhraseRule.present("Уважаемый<$void>Иван", "Уважаемый Иван"))
             assertFalse(void, TwoPartPhraseRule.present("Уважаемый<$void>Иван", "УважаемыйИван"))

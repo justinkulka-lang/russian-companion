@@ -24,7 +24,9 @@ internal object TwoPartPhraseRule {
         "span", "b", "i", "em", "strong", "a", "small", "sub", "sup", "u", "s", "abbr", "cite", "code", "mark", "q", "bdi",
         "bdo", "font", "wbr",
     )
-    val blockTag = Regex("(?i)</?(?!(?:${INLINE_TAGS.joinToString("|")})(?![A-Za-z0-9-]))[A-Za-z][^>]*>")
+    // T16 (owner decision D27a): only a complete inline name is inline; the name must end at whitespace, "/" or ">", so
+    // span:probe, span_probe and b:probe are boundaries (was: any name not followed by a letter, digit or hyphen).
+    val blockTag = Regex("(?i)</?(?!(?:${INLINE_TAGS.joinToString("|")})(?=[\\s/>]))[A-Za-z][^>]*>")
 
     /** True when the named element separates text (anything outside INLINE_TAGS). */
     fun isBoundary(tag: String): Boolean = tag.lowercase() !in INLINE_TAGS
