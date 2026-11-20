@@ -1,0 +1,91 @@
+{{also|Appendix:Variations of "by"}}
+==Belarusian==
+
+===Alternative forms===
+* {{alt|be|б||used after vowels}}
+* {{alt|be|by||Łacinka (Belarusian Latin alphabet)}}
+
+===Etymology===
+{{inh+|be|zle-ort|бы}}, from {{inh|be|sla-pro|*by}}, originally the aorist third-person singular of {{m|sla-pro|*byti||to be}}. Cognate with {{cog|uk|би}}, {{cog|ru|бы}}, {{cog|pl|by}}.
+
+===Pronunciation===
+* {{be-IPA|бы}}
+* {{hyph|be|бы}}
+
+===Particle===
+{{head|be|particle}}
+
+# {{non-gloss|used with past-tense verb forms to form the [[conditional mood]]}}: [[would]]
+#: {{ux|be|Я паеха́ў '''бы''', калі́ б быў час.|I '''would''' go if I had time.}}
+# {{non-gloss|used with an infinitive or a past-tense verb form to express a wish}}: [[if only]]
+# {{non-gloss|used with a past-tense verb form to express a polite suggestion or request}}: [[why don't you]], [[could]]
+
+===Conjunction===
+{{head|be|conjunction}}
+
+# {{lb|be|colloquial}} [[like]], [[as if]] {{gloss|introduces a comparison}}
+#: {{syn|be|як|нібы|бы́ццам}}
+
+===References===
+* {{R:be:TSBM|бы}}
+* {{R:be:ESBM|бы||1|by}}
+
+==Russian==
+
+===Alternative forms===
+* {{alt|ru|б||abbreviation, especially after vowels}}
+* {{alt|ru|кабы́||colloquial}}
+
+===Etymology===
+{{inh+|ru|orv|бꙑ}}, from {{inh|ru|sla-pro|*by}}.
+
+===Pronunciation===
+* {{ru-IPA}}
+* {{audio|ru|Ru-бы.ogg}}
+
+===Particle===
+{{head|ru|particle|head=бы}}
+
+# {{non-gloss|A verbal particle used to render [[conditional]] and [[subjunctive]] mood}}
+#: {{uxi|ru|[[я|Я]] [[говорить|говори́л(а)]].|I spoke.}}
+#: {{uxi|ru|[[я|Я]] '''бы''' [[говорить|говори́л(a)]].|I would (should) have spoken.; I would speak.; I might speak.}}
+#* {{quote-book|ru|year= {{circa| 1827 - 1828}}|year_published= 1837|author= w:Alexander Pushkin|title= w:ru:Арап Петра Великого|trans-title= {{w|The Moor of Peter the Great}}|chapter= 4
+|text= — Сказа́л '''бы''' слове́чко, да волк недале́чко, — сказа́л, нахму́рясь, Гаври́ла Афана́сьевич.|translation= “I’'''d''' add a word or two of my own, but even the walls have ears,” said Gavrila Afanasevich, frowning.}}
+#* {{quote-song|ru|year= 1958|lyricist= [[w:Lev Oshanin (poet)|Lev Oshanin]]|composer= w:Aleksandra Pakhmutova|title= w:ru:Песня о тревожной молодости|trans-title= Song of the Restless Youth|text=Забо́та у нас проста́я,<br>Забо́та на́ша така́я:<br>Жила́ '''бы''' страна́ родна́я,<br>И не́ту други́х забо́т!|t=Our concern is simple;<br>Our concern is this:<br>That our dear country '''would''' live,<br>And there are no other concerns!|url= https://youtu.be/2FxqPYFT0uU}}
+
+====Usage notes====
+* The particle '''бы''' is often shortened to {{l|ru|б}}.
+* The particle '''бы''' may appear in any place within a sentence except the beginning. In colloquial speech it can be heard used multiple times within the same clause, but this usage is considered erroneous.
+* The particle '''бы''' is, in some expressions, omitted in colloquial settings. For example:
+:* [[словно бы]] → [[словно]] (бы)
+
+====Related terms====
+* {{l|ru|е́сли бы то́лько}}
+* {{l|ru|ка́к бы не}}
+* {{l|ru|сло́вно бы}}
+* {{l|ru|что́бы}}
+* {{l|ru|я́кобы}}
+
+====Descendants====
+* {{desc|sjd|пэ|bor=1}}
+
+==West Circassian==
+
+===Pronunciation===
+* {{IPA|ady|[bəː]}}
+* {{audio|ady|Adygheб.ogg}}
+
+===Noun===
+{{h|ady|noun}}
+
+# {{Cyrl-def|ady|name|Б|б}}
+
+===Noun===
+{{h|ady|noun}}
+
+# [[den]]
+# [[haunt]]
+# [[nest]]
+
+====Declension====
+{{ady-decl-noun4}}

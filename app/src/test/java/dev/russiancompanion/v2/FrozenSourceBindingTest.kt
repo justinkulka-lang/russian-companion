@@ -33,38 +33,34 @@ class FrozenSourceBindingTest {
     private data class FrozenFile(val file: File, val sha256: String)
 
     /**
-     * T15a-n3: the exact records whose source has no frozen file under catalog/sources/ (reported to the owner; Units 21
-     * and 29), each pinned to its source and to the SHA-256 of its originalSourceText. Any other unbound record fails,
-     * including a new record under one of these source IDs, and so does a listed record whose text changes.
+     * T15a-n3: the exact records whose source has no frozen file under catalog/sources/, each pinned to its source and to
+     * the SHA-256 of its originalSourceText. S1 (owner decisions D16a, D24c) froze Reflexive pronoun oldid 1374712982,
+     * Обособление oldid 144053197 and Больтраффио oldid 149826784 under catalog/sources/s1-intake, and all 24 records
+     * that were listed here (4 Unit 21, 20 Unit 29) now bind to those files, so the list is empty. It only shrinks.
      */
-    private val unfrozenRecords: Map<String, Pair<String, String>> = run {
-        val reflexive = "src-enwiki-reflexive-pronoun-1374712982" to "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50"
-        val obosoblenieAfter = "src-ruwiki-obosoblenie-144053197" to "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d"
-        val obosoblenieCause = "src-ruwiki-obosoblenie-144053197" to "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd"
-        val boltraffio = "src-ruwiki-boltraffio-149826784" to "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf"
-        val obosoblenieTerminal = "src-ruwiki-obosoblenie-144053197" to "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e"
-        listOf("other", "personal", "reflexive", "self").associate { "prov-u21-object-transfer-native-$it" to reflexive } +
-            listOf("head", "region-1", "region-2", "ru").associate { "prov-u29-punctuation-native-after-$it" to obosoblenieAfter } +
-            listOf("head", "region-0", "region-1", "region-2", "ru").associate { "prov-u29-punctuation-native-cause-$it" to obosoblenieCause } +
+    private val unfrozenRecords: Map<String, Pair<String, String>> = emptyMap()
+
+    /** S1: the 24 records that were excepted before S1, each now bound to its frozen revision. */
+    private val boundInS1: Set<String> =
+        listOf("other", "personal", "reflexive", "self").map { "prov-u21-object-transfer-native-$it" }.toSet() +
+            listOf("head", "region-1", "region-2", "ru").map { "prov-u29-punctuation-native-after-$it" } +
+            listOf("head", "region-0", "region-1", "region-2", "ru").map { "prov-u29-punctuation-native-cause-$it" } +
             listOf("boundary-bergognone", "head", "list-foppa", "region-0", "region-1", "region-2", "ru")
-                .associate { "prov-u29-punctuation-native-pronoun-$it" to boltraffio } +
-            listOf("head", "region-0", "region-1", "ru").associate { "prov-u29-punctuation-native-terminal-$it" to obosoblenieTerminal }
-    }
+                .map { "prov-u29-punctuation-native-pronoun-$it" } +
+            listOf("head", "region-0", "region-1", "ru").map { "prov-u29-punctuation-native-terminal-$it" }
 
     @Test
     fun everyRecordNamingAFrozenSourceIsBoundToTheNamedFrozenFile() {
         val pack = pack()
-        assertEquals(24, unfrozenRecords.size)
+        // S1: the exception is empty (was 24 records before S1).
+        assertEquals(0, unfrozenRecords.size)
         val errors = violations(pack, pack.provenanceRecords)
         assertTrue(errors.joinToString("\n"), errors.isEmpty())
-        // Every allowlisted record is present, unbound, unchanged, and cited by no russian-fact marker.
-        val listed = pack.provenanceRecords.filter { it.itemId in unfrozenRecords }
-        assertEquals(unfrozenRecords.keys, listed.map { it.itemId }.toSet())
-        assertTrue(bindingErrors(pack, listed).all { it.contains("names no frozen file") })
-        assertEquals(24, bindingErrors(pack, listed).size)
-        val cited = (pack.items.flatMap { it.russianFactSources.values.flatten() } +
-            pack.units.flatMap { it.sessions }.flatMap { it.steps }.flatMap { it.russianFactSources.values.flatten() }).toSet()
-        assertTrue(listed.none { it.itemId in cited })
+        // The 24 records excepted before S1 are present and each binds to its frozen revision with no error.
+        val formerlyExcepted = pack.provenanceRecords.filter { it.itemId in boundInS1 }
+        assertEquals(24, boundInS1.size)
+        assertEquals(boundInS1, formerlyExcepted.map { it.itemId }.toSet())
+        assertEquals(emptyList<String>(), bindingErrors(pack, formerlyExcepted))
         assertTrue(pack.provenanceRecords.count { !isOriginal(pack, it) } > 2000)
     }
 
@@ -81,15 +77,20 @@ class FrozenSourceBindingTest {
     }
 
     @Test
-    fun aTwentyFifthRecordUnderAnAllowedUnfrozenSourceFails() {
+    fun anS1RecordOffItsFrozenRevisionOrTextFails() {
+        // S1 replaces aTwentyFifthRecordUnderAnAllowedUnfrozenSourceFails: with no exception left, a record under an S1
+        // source binds only through its frozen revision and only with text that is in that file.
         val pack = pack()
-        val listed = pack.provenanceRecords.single { it.itemId == "prov-u29-punctuation-native-pronoun-head" }
-        assertTrue(violations(pack, listOf(listed)).isEmpty())
-        val extra = listed.copy(itemId = "prov-u29-punctuation-native-pronoun-extra")
-        assertTrue(violations(pack, listOf(extra)).any { it.contains("names no frozen file") })
-        // A listed record whose text changes no longer matches its pinned hash.
-        val changed = listed.copy(originalSourceText = listed.originalSourceText + " ")
-        assertTrue(violations(pack, listOf(changed)).any { it.contains("names no frozen file") })
+        val bound = pack.provenanceRecords.single { it.itemId == "prov-u29-punctuation-native-pronoun-head" }
+        assertTrue(bindingErrors(pack, listOf(bound)).isEmpty())
+        val otherRevision = bound.copy(sourceRevision = "149826783")
+        assertTrue(violations(pack, listOf(otherRevision)).any { it.contains("names no frozen file") })
+        val changed = bound.copy(originalSourceText = bound.originalSourceText + " Probe.")
+        assertTrue(violations(pack, listOf(changed)).any { it.contains("not in the frozen file") })
+        val reflexive = pack.provenanceRecords.single { it.itemId == "prov-u21-object-transfer-native-self" }
+        assertTrue(bindingErrors(pack, listOf(reflexive)).isEmpty())
+        val relabelled = reflexive.copy(sourceId = "src-ruwiki-obosoblenie-144053197")
+        assertTrue(violations(pack, listOf(relabelled)).any { it.contains("names no frozen file") })
     }
 
     @Test

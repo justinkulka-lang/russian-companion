@@ -1,0 +1,708 @@
+{{Short description|Grammatical category expressing how a verb extends over time}}
+{{redirect|Aspect (linguistics)|the semantic property|Lexical aspect}}
+{{more footnotes|date=March 2013}}
+{{Use dmy dates|date=October 2020}}
+{{Grammatical categories}}
+
+In [[linguistics]], '''aspect''' is a [[grammatical category]] that expresses how a [[verb|verbal]] action, event, or state, extends over time. For instance, [[perfective aspect]] is used in referring to an event conceived as [[boundedness (linguistics)|bounded]] and only once occurring, without reference to any flow of time during the event ("I helped him"). [[Imperfective aspect]] is used for situations conceived as existing continuously or habitually as time flows ("I was helping him"; "I used to help people").
+
+Further distinctions can be made, for example, to distinguish [[stative verb|states]] and ongoing actions ([[continuous and progressive aspects]]) from repetitive actions ([[habitual aspect]]).
+
+Certain aspectual distinctions express a relation between the time of the event and the time of reference. This is the case with the [[Perfect (grammar)#Perfect as aspect|perfect aspect]], which indicates that an event occurred prior to but has continuing relevance at the time of reference: "I have eaten"; "I had eaten"; "I will have eaten".<ref>Henk J. Verkuyl, Henriette De Swart, Angeliek Van Hout, ''Perspectives on Aspect'', Springer 2006, p. 118.</ref>
+
+Different languages make different grammatical aspectual distinctions; some (such as [[Standard German]]; see [[#German vernacular and colloquial|below]]) do not make any. The marking of aspect is often conflated with the marking of [[grammatical tense|tense]] and [[grammatical mood|mood]] (see [[tense–aspect–mood]]). Aspectual distinctions may be restricted to certain tenses: in [[Latin]] and the [[Romance languages]], for example, the perfective–imperfective distinction is marked in the [[past tense]], by the division between [[preterite]]s and [[imperfect]]s. Explicit consideration of aspect as a category first arose out of study of the [[Slavic languages]]; here verbs often occur in pairs, with two related verbs being used respectively for imperfective and perfective meanings.
+
+The concept of grammatical aspect (or '''verbal aspect''') should not be confused with [[perfect (grammar)|perfect]] and [[imperfect]] ''verb forms''; the meanings of the latter terms are somewhat different, and in some languages, the common names used for verb forms may not follow the actual aspects precisely. For example, English and German have perfect tenses that are wholly parallel in form but do not always have equivalent meaning because the aspect is not always identical.
+
+==Basic concept==
+
+===History===
+The Indian linguist [[Yaska]] (circa 7th century BCE) dealt with grammatical aspect, distinguishing actions that are processes (''bhāva''), from those where the action is considered as a completed whole (''mūrta''). This is the key distinction between the imperfective and perfective. Yaska also applied this distinction to a verb versus an action nominal.<ref>{{cite web |title=Yaska's Nirukta: the quest for a new interpretation | url=https://ia800408.us.archive.org/13/items/indologicataurinensia_202204/volumes/vol12/vol12_art11_KAHRS_text.pdf | publisher=Indologica Taurinensia | access-date=2026-09-13}}</ref>
+
+Grammarians of the Greek and Latin languages also showed an interest in aspect, but the idea did not enter into the modern Western grammatical tradition until the 19th century via the study of the grammar of the [[Slavic languages]]. The earliest use of the term recorded in the [[Oxford English Dictionary]] dates from 1853.<ref name="Binnick1991">
+{{cite book|author=Robert I. Binnick|title=Time and the verb: a guide to tense and aspect|url=https://books.google.com/books?id=A1fSUowGY8kC&pg=PA135|year=1991|publisher=Oxford University Press US|isbn=978-0-19-506206-9|pages=135–6 |access-date=12 August 2011}}
+</ref>
+
+===Modern usage===
+Aspect is often confused with the closely related concept of [[Grammatical tense|tense]], because they both convey information about time. While tense relates the time of [[referent]] to some other time, commonly the speech event, aspect conveys other temporal information, such as duration, completion, or frequency, as it relates to the time of action. Thus tense refers to {{em|temporally when}} while aspect refers to {{em|temporally how}}. Aspect can be said to describe the texture of the time in which a situation occurs, such as a single point of time, a continuous range of time, a sequence of discrete points in time, etc., whereas tense indicates its location in time.
+
+For example, consider the following sentences: "I eat", "I am eating", "I have eaten", and "I have been eating". All are in the [[present tense]], indicated by the present-tense verb of each sentence (''eat'', ''am'', and ''have''). Yet since they differ in aspect, each conveys different information or points of view as to how the action pertains to the present.
+
+Grammatical aspect is a {{em|formal}} property of a [[language]], distinguished through overt [[inflection]], [[derivational affix]]es, or independent words that serve as grammatically required [[marker (linguistics)|marker]]s of those aspects. For example, the [[Kʼicheʼ language]] spoken in Guatemala has the inflectional prefixes {{lang|quc|k}}- and {{lang|quc|x}}- to mark [[Incompletive aspect|incompletive]] and [[completive aspect]];<ref name="pye1">{{cite journal | journal=Kansas Working Papers in Linguistics |editor1=Stacey Stowers |editor2=Nathan Poell | volume=26 | year=2008 | last=Pye | first=Clifton | publisher=University of Kansas |title=Mayan Morphosyntax}}</ref><ref name="pye2">Pye, Clifton (2001). "The Acquisition of Finiteness in Kʼicheʼ Maya". ''BUCLD 25: Proceedings of the 25th annual Boston University Conference on Language Development'', pp. 645–656. Somerville, MA: Cascadilla Press.</ref> [[Mandarin Chinese]] has the aspect markers -{{translit|cmn|le}} {{lang|cmn|了}}, -{{translit|cmn|zhe}} {{lang|cmn|着}}, {{translit|cmn|zài}}- {{lang|cmn|在}}, and -{{translit|cmn|guò}} {{lang|cmn|过}} to mark the [[perfective]], [[durative]] [[Stative verb|stative]], durative [[Progressive aspect|progressive]], and [[Experiential aspect|experiential]] aspects,<ref name="lithomp">Li, Charles, and Sandra Thompson (1981). "Aspect". ''Mandarin Chinese: A Functional Reference Grammar''. Los Angeles: University of California Press. pp. 184–237.</ref> and also marks aspect with [[adverb]]s;<ref name="zhangandzhang">{{cite journal | last1=Zhang | first1=Yaxu | last2=Zhang | first2=Jingting | s2cid=35873020 | title=Brain responses to agreement violations of Chinese grammatical aspect | date=2 July 2008 | journal=[[NeuroReport]] | volume=19 | issue=10 | pmid=18580575 | doi=10.1097/WNR.0b013e328302f14f | pages=1039–43}}</ref> and English marks the [[continuous aspect]] with the verb ''to be'' coupled with [[present participle]] and the [[perfect (grammar)|perfect]] with the verb ''to have'' coupled with [[past participle]]. Even languages that do not mark aspect [[Morphology (linguistics)|morphologically]] or through [[auxiliary verb]]s, however, can convey such distinctions by the use of adverbs or other [[Syntax|syntactic]] constructions.<ref name="gabriele">{{cite journal | last=Gabriele | first=Alison | title=Transfer and Transition in the L2 Acquisition of Aspect | year=2008 | journal=Studies in Second Language Acquisition | pages=6}}</ref>
+
+Grammatical aspect is distinguished from [[lexical aspect]] or ''Aktionsart'', which is an inherent feature of verbs or verb phrases and is determined by the nature of the situation that the verb describes.
+
+==Common aspectual distinctions==
+{{Unreferenced section|date=January 2024}}
+The most fundamental aspectual distinction, represented in many languages, is between '''perfective''' aspect and '''imperfective''' aspect. This is the basic aspectual distinction in most [[Slavic languages|Slavic]] and [[Romance languages|Romance]] languages.
+
+It semantically corresponds to the distinction between the [[Morphology (linguistics)|morphological forms]] known respectively as the [[aorist]] and imperfect in [[Greek language|Greek]], the preterite and imperfect in Spanish, the [[simple past]] ({{lang|fr|passé simple}}) and imperfect in French, and the perfect and imperfect in Latin (from the Latin {{lang|la|perfectus}}, meaning "completed").
+
+{| class="wikitable" style="text-align: center;"
+! Language
+! Perfective Aspect
+! Imperfective Aspect
+|-
+! Latin
+| {{lang|la|Perfect}}
+|rowspan=5| Imperfect
+|-
+! Spanish
+| {{lang|es|Pretérito}}
+|-
+! French
+| {{lang|fr|Passé simple}}
+|-
+! Greek
+| {{lang|el-latn|Aorist}}
+|-
+! Portuguese
+| {{lang|pt|Pretérito perfeito}}
+|}
+
+Essentially, the perfective aspect looks at an event as a complete action, while the imperfective aspect views an event as the process of unfolding or a repeated or habitual event (thus corresponding to the progressive/continuous aspect for events of short-term duration and to habitual aspect for longer terms).
+
+For events of short durations in the past, the distinction often coincides with the distinction in the English language between the simple past "X-ed," as compared to the progressive "was X-ing".  Compare "I wrote the letters this morning" (i.e. finished writing the letters: an action completed) and "I was writing the letters this morning" (the letters may still be unfinished).
+
+In describing longer time periods, English needs context to maintain the distinction between the habitual ("I called him often in the past" – a habit that has no point of completion) and perfective ("I called him once" – an action completed), although the construct "used to" marks both habitual aspect and past tense and can be used if the aspectual distinction otherwise is not clear.
+
+Sometimes, English has a lexical distinction where other languages may use the distinction in grammatical aspect. For example, the English verbs "to know" (the state of knowing) and "to find out" (knowing viewed as a "completed action") correspond to the imperfect and perfect forms of the equivalent verbs in French and Spanish, {{lang|fr|savoir}} and {{lang|es|saber}}. This is also true when the sense of verb "to know" is "to know somebody", in this case opposed in aspect to the verb "to meet" (or even to the construction "to get to know"). These correspond to imperfect and perfect forms of {{lang|es|conocer}} in Spanish, and {{lang|fr|connaître}} in French. In German, on the other hand, the distinction is also lexical (as in English) through verbs {{lang|de|kennen}} and {{lang|de|kennenlernen}}, although the semantic relation between both forms is much more straightforward since {{lang|de|kennen}} means "to know" and {{lang|de|lernen}} means "to learn".
+
+==Aspect vis-à-vis tense==
+The [[Germanic languages]] combine the concept of aspect with the concept of [[grammatical tense|tense]]. Although English largely separates tense and aspect formally, its aspects (neutral, progressive, perfect, progressive perfect, and [in the past tense] habitual) do not correspond very closely to the distinction of [[perfective and imperfective|perfective vs. imperfective]] that is found in most languages with aspect. Furthermore, the separation of tense and aspect in English is not maintained rigidly. One instance of this is the alternation, in some forms of English, between sentences such as "Have you eaten?" and "Did you eat?".
+
+In European languages, rather than locating an event time, the way tense does, aspect describes "the internal temporal constituency of a situation", or in other words, aspect is a way "of conceiving the flow of the process itself".<ref name=Comrie>Bernard Comrie, 1976. ''Aspect''. Cambridge University Press</ref> English aspectual distinctions in the past tense include "I went, I used to go, I was going, I had gone"; in the present tense "I lose, I am losing, I have lost, I have been losing, I am going to lose"; and with the future modal "I will see, I will be seeing, I will have seen, I am going to see". What distinguishes these aspects within each tense is not (necessarily) when the event occurs, but how the time in which it occurs is viewed: as complete, ongoing, consequential, planned, etc.
+
+In most dialects of Ancient Greek, aspect is indicated uniquely by verbal morphology. For example, the very frequently used [[aorist]], though a functional [[preterite]] in the indicative mood, conveys historic or 'immediate' aspect in the subjunctive and optative. The perfect in all moods is used as an aspectual marker, conveying the sense of a resultant state. E.g. {{lang|grc|ὁράω}} – I see (present); {{lang|grc|εἶδον}} – I saw (aorist); {{lang|grc|οἶδα}} – I am in a state of having seen = I know (perfect). Turkish has a same/similar aspect, such as in <span dir="ltr" lang="tr">Görmüş bulunuyorum/durumdayım</span>, where <span dir="ltr" lang="tr">görmüş</span> means "having seen" and <span dir="ltr" lang="tr">bulunuyorum/durumdayım</span> means "I am in the state".{{Citation needed|date=May 2023}} 
+
+In many Sino-Tibetan languages, such as [[Mandarin Chinese|Mandarin]], verbs lack grammatical markers of tense, but are rich in aspect (Heine, Kuteva 2010,{{Full citation needed|date=December 2018}} p.&nbsp;10). Markers of aspect are attached to verbs to indicate aspect. Event time is inferred through use of these aspectual markers, along with optional inclusion of adverbs.<ref>{{Cite web|last=Liu|first=Meichun|editor1-first=William S-Y|editor1-last=Wang|editor2-first=Chaofen|editor2-last=Sun|date=2015-04-01|title=Tense and Aspect in Mandarin Chinese|url=https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199856336.001.0001/oxfordhb-9780199856336-e-70|access-date=2021-08-14|website=The Oxford Handbook of Chinese Linguistics|language=en|doi=10.1093/oxfordhb/9780199856336.001.0001|isbn=978-0-19-985633-6}}</ref>
+
+==Lexical vis-à-vis grammatical aspect==
+{{Main|Lexical aspect}}
+There is a distinction between grammatical aspect, as described here, and [[lexical aspect]]. Other terms for the contrast ''lexical vs. grammatical'' include: ''situation vs. viewpoint'' and ''inner vs. outer''.<ref>MacDonald, Jonathan Eric. (2006). ''The Syntax of Inner Aspect (Doctoral dissertation)'' (p. 1). Stony Brook University.</ref><ref>Kiyota, Masaru. (2008). ''Situation aspect and viewpoint aspect: From Salish to Japanese (Doctoral dissertation)''. University of British Columbia.</ref> Lexical aspect, also known as '''Aktionsart''', is an inherent property of a verb or verb-complement phrase, and is not marked formally. The distinctions made as part of lexical aspect are different from those of grammatical aspect. Typical distinctions are between states ("I owned"), activities ("I shopped"), accomplishments ("I painted a picture"), achievements ("I bought"), and punctual, or [[semelfactive]], events ("I sneezed"). These distinctions are often relevant syntactically. For example, states and activities, but not usually achievements, can be used in English with a prepositional ''for''-phrase describing a time duration: "I had a car for five hours", "I shopped for five hours", but not "*I bought a car for five hours". Lexical aspect is sometimes called ''[[Lexical aspect|Aktionsart]]'', especially by German and [[Slavist|Slavic]] linguists. Lexical or situation aspect is marked in [[Athabaskan languages]].
+
+One of the factors in situation aspect is [[telicity]]. Telicity might be considered a kind of lexical aspect, except that it is typically not a property of a verb in isolation, but rather a property of an entire verb ''phrase''. Achievements, accomplishments and [[semelfactive]]s have telic situation aspect, while states and activities have atelic situation aspect.
+
+The other factor in situation aspect is duration, which is also a property of a verb phrase. Accomplishments, states, and activities have duration, while achievements and semelfactives do not.
+
+==Indicating aspect==
+In some languages, aspect and time are very clearly separated, making them much more distinct to their speakers. There are a number of languages that mark aspect much more saliently than time. Prominent in this category are Chinese and [[American Sign Language]], which both differentiate many aspects but rely exclusively on optional time-indicating terms to pinpoint an action with respect to time. In other language groups, for example in most modern [[Indo-European languages]] (except [[Slavic languages]] and some Indo-Aryan languages like [[Hindustani grammar|Hindi]]<ref name=":13">{{Cite journal|last=VAN OLPHEN|first=HERMAN|title=Aspect, Tense, and Mood in the Hindi Verb|date=1975|url=http://www.jstor.org/stable/24651488|journal=Indo-Iranian Journal|volume=16|issue=4|pages=284–301|doi=10.1163/000000075791615397|jstor=24651488|s2cid=161530848 |issn=0019-7246|url-access=subscription}}</ref>), aspect has become almost entirely conflated, in the verbal morphological system, with time.
+
+In [[Russian language|Russian]], aspect is more salient than tense in narrative. Russian, like other Slavic languages, uses different lexical entries for the different aspects, whereas other languages mark them [[morphology (linguistics)|morphologically]], and still others with [[auxiliary verb|auxiliaries]] (e.g., English).
+
+In [[Hindustani grammar|Hindi]], the aspect marker is overtly separated from the tense/mood marker. [[Periphrasis|Periphrastic]] Hindi verb forms consist of two elements. The first of these two elements is the aspect marker and the second element (the copula) is the common tense/mood marker.
+
+In [[Modern Standard Arabic|literary Arabic]] ({{lang|ar|الْفُصْحَى}} ''al-fuṣḥā'') the verb has two aspect-tenses: perfective (past), and imperfective (non-past). There is some disagreement among grammarians whether to view the distinction as a distinction in aspect, or tense, or both. The past verb ({{lang|ar|الْفِعْل الْمَاضِي}} ''al-fiʿl al-māḍī'') denotes an event ({{lang|ar|حَدَث}} ''ḥadaṯ'') completed in the past, but it says nothing about the relation of this past event to present status. For example, {{lang|ar|وَصَلَ}} ''waṣala'', "arrived", indicates that arrival occurred in the past without saying anything about the present status of the arriver – maybe they stuck around, maybe they turned around and left, etc. – nor about the aspect of the past event except insofar as completeness can be considered aspectual. This past verb is clearly similar if not identical to the Greek aorist, which is considered a tense but is more of an aspect marker. In Arabic, aorist aspect is the logical consequence of past tense. By contrast, the "Verb of Similarity" ({{lang|ar|الْفِعْل الْمُضَارِع}} ''al-fiʿl al-muḍāriʿ''), so called because of its resemblance to the active participial noun, is considered to denote an event in the present or future without committing to a specific aspectual sense beyond the incompleteness implied by the tense: {{lang|ar|يَضْرِبُ}} (''yaḍribu'', he strikes/is striking/will strike/etc.). Those are the only two "tenses" in Arabic (not counting {{lang|ar|أَمْر}} ''amr'', command or imperative, which is traditionally considered as denoting future events.) To explicitly mark aspect, Arabic uses a variety of lexical and syntactic devices.
+
+Contemporary Arabic dialects are another matter. One major change from al-fuṣḥā is the use of a prefix particle ({{lang|ar|بِ}} ''bi'' in Egyptian and Levantine dialects—though it may have a slightly different range of functions in each dialect) to explicitly mark progressive, continuous, or habitual aspect: {{lang|ar|بيكتب}}, ''bi-yiktib'', he is now writing, writes all the time, etc.
+
+Aspect can mark the stage of an action. The [[prospective aspect]] is a combination of tense and aspect that indicates the action is in preparation to take place. The inceptive aspect identifies the beginning stage of an action (e.g. [[Esperanto]] uses ''[[wikt:ek-|ek-]]'', e.g. ''Mi ekmanĝas'', "I am beginning to eat".) and inchoative and ingressive aspects identify a change of state (''The flowers started blooming'') or the start of an action (''He started running''). Aspects of stage continue through progressive, pausative, resumptive, cessive, and terminative.
+
+Important qualifications:
+
+*Although the perfective is often thought of as representing a "momentary action", this is not strictly correct. It can equally well be used for an action that took time, as long as it is ''conceived of'' as a unit, with a clearly defined start and end, such as "Last summer I visited France".
+*Grammatical aspect represents a formal distinction encoded in the grammar of a language. Although languages that are described as having imperfective and perfective aspects agree in most cases in their use of these aspects, they may not agree in every situation. For example:
+**Some languages have additional grammatical aspects. Spanish and Ancient Greek, for example, have a [[perfect (grammar)|perfect]] (not the same as the perfective), which refers to a state resulting from a previous action (also described as a previous action with relevance to a particular time, or a previous action viewed from the perspective of a later time). This corresponds (roughly) to the "have X-ed" construction in English, as in "I have recently eaten". Languages that lack this aspect (such as Portuguese, which is closely related to Spanish) often use the past perfective to render the present perfect (compare the roughly synonymous English sentences "Have you eaten yet?" and "Did you eat yet?").
+**In some languages, the formal representation of aspect is optional, and can be omitted when the aspect is clear from context or does not need to be emphasized. This is the case, for example, in Mandarin Chinese, with the perfective suffix ''le'' and (especially) the imperfective ''zhe''.
+**For some verbs in some languages, the difference between perfective and imperfective conveys an additional meaning difference; in such cases, the two aspects are typically translated using separate verbs in English. In Greek, for example, the imperfective sometimes adds the notion of "try to do something" (the so-called ''conative imperfect''); hence, the same verb, in the imperfective (present or imperfect) and aorist, respectively, is used to convey ''look'' and ''see'', ''search'' and ''find'', ''listen'' and ''hear''. (For example, ἠκούομεν (''ēkouomen'', "we listened") vs. ἠκούσαμεν (''ēkousamen'', "we heard").) Spanish has similar pairs for certain verbs, such as (imperfect and preterite, respectively) ''sabía'' ("I knew") vs. ''supe'' ("I found out"), ''podía'' ("I was able to") vs. ''pude'' ("I succeeded (in doing something)"), ''quería'' ("I wanted to") vs. ''quise'' ("I tried to"), and ''no quería'' ("I did not want to") vs. ''no quise'' ("I refused (to do something)"). Such differences are often highly language-specific.
+
+==By language==
+
+===Germanic languages===
+
+====English====
+
+The [[Uses of English verb forms#Tenses, aspects and moods|English tense–aspect system]] has two morphologically distinct tenses, [[Past tense#English|past]] and [[Nonpast tense|non-past]], the latter of which is also known as the ''present-future'' or, more commonly and less formally, simply the ''present''. No marker of a distinct future tense exists on the verb itself in English; the futurity of an event may be expressed through the use of the [[auxiliary verb]]s "[[will future|will]]" and "[[shall]]", by a non-past form plus an [[adverb]], as in "tomorrow we go to New York City", or by some other means. Past is distinguished from non-past, in contrast, with internal modifications of the verb. These two tenses may be modified further for [[progressive aspect]] (also called ''continuous'' aspect), for the [[perfect (grammar)|perfect]], or for both. These two aspectual forms are also referred to as BE +ING<ref>See, for example, {{cite journal | title=Why ''swimming'' is just as difficult as ''dying'' for Japanese learners of English | last1=Gabriele | first1=Allison | year=2003 | url=https://netfiles.uiuc.edu/tionin/www/MyDownloads/gabriele_2003.pdf | last2=McClure | first2=William | journal=ZAS Papers in Linguistics | volume=29 | page=1 | doi=10.21248/zaspil.29.2003.170 }} {{Dead link|date=May 2010}}</ref> and HAVE +EN,<ref>See, for example, {{cite journal | title=Some Structural Analogies between Tenses and Pronouns in English | last=Partee | first=Barbara H | journal=Journal of Philosophy | volume=70 | issue=18 | pages=601–609 | year=1973 | jstor=2025024 | doi=10.2307/2025024}}</ref> respectively, which avoids what may be unfamiliar terminology.
+
+Aspects of the present tense:
+* [[Present simple]] (not progressive, not perfect): "I eat"
+* [[Present progressive]] (progressive, not perfect): "I am eating"
+* [[Present perfect]] (not progressive, perfect): "I have eaten"
+* [[Present perfect progressive]] (progressive, perfect): "I have been eating"
+(While many elementary discussions of English grammar classify the present perfect as a past tense, it relates the action to the present time. One cannot say of someone now deceased that they "have eaten" or "have been eating". The present auxiliary implies that they are in some way ''present'' (alive), even when the action denoted is completed (perfect) or partially completed (progressive perfect).)
+
+Aspects of the past tense:
+* [[Past simple]] (not progressive, not perfect): "I ate"
+* [[Past progressive]] (progressive, not perfect): "I was eating"
+* [[Past perfect]] (not progressive, perfect): "I had eaten"
+* [[Past perfect progressive]] (progressive, perfect): "I had been eating"
+
+Aspects can also be marked on [[non-finite verb|non-finite]] forms of the verb: "(to) be eating" ([[infinitive]] with progressive aspect), "(to) have eaten" (infinitive with perfect aspect), "having eaten" ([[present participle]] or [[gerund]] with perfect aspect), etc. The perfect infinitive can further be governed by [[English modal verbs|modal verbs]] to express various meanings, mostly combining modality with past reference: "I should have eaten" etc. In particular, the modals ''will'' and ''shall'' and their subjunctive forms ''would'' and ''should'' are used to combine future or hypothetical reference with aspectual meaning: 
+* [[Simple future]], [[simple conditional]]: "I will eat", "I would eat"
+* [[Future progressive]], [[conditional progressive]]: "I will be eating", "I would be eating"
+* [[Future perfect]], [[conditional perfect]]: "I will have eaten", "I would have eaten"
+* [[Future perfect progressive]], [[conditional perfect progressive]]: "I will have been eating", "I would have been eating"
+
+The uses of the progressive and perfect aspects are quite complex. They may refer to the viewpoint of the speaker:
+
+:I was walking down the road when I met Michael Jackson's lawyer. (Speaker viewpoint in middle of action)
+:I have traveled widely, but I have never been to [[Moscow]]. (Speaker viewpoint at end of action)
+
+But they can have other [[illocutionary act|illocutionary forces]] or additional modal components:
+
+:You are being stupid now. (You are doing it deliberately)
+:You are not having chocolate with your sausages! (I forbid it)
+:I am having lunch with Mike tomorrow. (It is decided)
+
+English expresses some other aspectual distinctions with other constructions. ''[[Used to]]'' + VERB is a past [[Habitual aspect|habitual]], as in "I used to go to school," and ''[[going to]] / gonna'' + VERB is a [[prospective aspect|prospective]], a future situation highlighting current intention or expectation, as in "I'm going to go to school next year."
+
+==== African American Vernacular English ====
+The aspectual systems of certain dialects of English, such as [[African-American Vernacular English]] (see for example [[habitual be]]), and of [[English-based creole language|creoles]] based on English vocabulary, such as [[Hawaiian Creole English]], are quite different from those of standard English, and often reflect a more elaborate paradigm of aspectual distinctions (often at the expense of tense).<ref>Green, L. (1998). Aspect and predicate phrases in African-American vernacular English. ''African-American English: Structure, history, and use'', 37-68.</ref> The following table, appearing originally in Green (2002)<ref>{{Cite book|last=Green|first=Lisa J.|url=https://www.cambridge.org/core/product/identifier/9780511800306/type/book|title=African American English: A Linguistic Introduction|date=2002-08-08|publisher=Cambridge University Press|isbn=978-0-521-81449-2|edition=1|doi=10.1017/cbo9780511800306}}</ref> shows the possible aspectual distinctions in AAVE in their prototypical, negative and [[Stress (linguistics)|stressed]]/emphatic affirmative forms:
+{| class="wikitable"
+|+Aspectual Marking in AAVE
+!Aspect/Tense
+!Prototypical
+!Stressed / Emphatic Affirmative
+!Negative
+|-
+|[[Habitual aspect|Habitual]]
+|'be eating'
+(see [[Habitual be]])
+|'DO be eating'
+|'don('t) be eating'
+|-
+|[[Remote past tense|Remote Past]]
+|'BEEN eating'
+(see <ref>Harris, Alysia and Jim Wood. 2013. Stressed BIN. ''Yale Grammatical Diversity Project: English in North America''. (Available online at http://ygdp.yale.edu/phenomena/stressed-bin . Accessed on 2020-06-10). Updated by Tom McCoy (2015) and Katie Martin (2018).</ref>)
+|'HAVE BEEN eating'
+|'ain('t)/haven't BEEN eating'
+|-
+|Remote Past [[Completive aspect|Completive]]
+|'BEEN ate'
+|'HAD BEEN ate'
+|'ain('t)/haven't BEEN ate'
+|-
+|[[Preterite|Remote Past Perfect]]
+|'had BEEN ate'
+|'HAD BEEN ate'
+|'hadn't BEEN ate'
+|-
+|[[Resultative|Resultant State]]
+|'done ate'
+|'HAVE done ate'
+|'ain('t) done ate'
+|-
+|Past Perfect Resultant State
+|'had done ate'
+|'HAD done ate'
+|'hadn't done ate'
+|-
+|[[Modal verb|Modal]] Resultant State
+|'should'a done ate'
+| --
+| --
+|-
+|Remote Past Resultant State
+|'BEEN done ate'
+|'HAVE BEEN done ate'
+|'ain('t)/haven't BEEN done ate'
+|-
+|Remote Past Perfect Resultant State
+|'had BEEN done ate'
+| --
+| --
+|-
+|Future Resultant State/[[Conditional sentence|Conditional]]
+|' 'a be done ate'
+|'WILL be done ate'
+|'won't be done ate'
+|-
+|Modal Resultant State
+|'might/may be done ate'
+|'MIGHT/MAY be done ate'
+|'might/may not be done ate'
+|}
+
+==== German vernacular and colloquial ====
+{{Unreferenced section|date=December 2023}}
+Although [[Standard German]] does not have aspects, many [[Upper German]] and all [[West Central German]] dialects,{{citation needed|date=December 2023}} and some more vernacular forms of German do make an aspectual distinction which partly corresponds with the English [[continuous aspect|continuous form]]: alongside the standard present tense ''Ich esse'' ('I eat') and past ''Ich aß'' ('I ate') there is the form ''Ich bin/war am essen/Essen'' ('I am/was at the eating'; capitalization varies). This is formed by the conjugated auxiliary verb ''sein'' ("to be") followed by the preposition and article ''am'' (=''an dem'') and the infinitive, which German uses in many constructions as a verbal noun.
+
+In the Tyrolean and other Bavarian regiolect the prefix *da can be found, which form perfective aspects. "I hu's gleant" (Ich habe es gelernt = I learnt it) vs. "I hu's daleant" (*Ich habe es DAlernt = I succeeded in learning).{{citation needed|date=December 2023}}
+
+==== Dutch ====
+In [[Dutch language|Dutch]] (a [[West Germanic languages|West Germanic language]]), two types of [[continuous aspect|continuous form]] are used. Both types are considered Standard Dutch.
+
+The first type is very similar to the non-standard German type. It is formed by the conjugated auxiliary verb ''zijn'' ("to be"), followed by ''aan het'' and the [[gerund]] (which in Dutch matches the infinitive). For example:
+
+* [[Present progressive]]: ''Ik ben aan het werken'' ("I am working")
+* [[Past progressive]]: ''Ik was aan het werken'' ("I was working")
+* [[Future progressive]]: ''Ik zal aan het werken zijn'' ("I will be working")
+
+The second type is formed by one of the conjugated auxiliary verbs ''liggen'' ("to lie"), ''zitten'' ("to sit"), ''hangen'' ("to hang"), ''staan'' ("to stand") or ''lopen'' ("to walk"), followed by the preposition ''te'' and the infinitive. The conjugated verbs indicate the stance of the subject performing or undergoing the action.
+
+* [[Present progressive]]: ''Ik zit te eten'' ("I am eating [while sitting]"), ''De was hangt te drogen'' ("The laundry is drying [while hanging]")
+* [[Past progressive]]: ''Ik lag te lezen'' ("I was reading [while lying]"), ''Ik stond te kijken'' ("I was watching [while standing]")
+* [[Future progressive]]: ''Ik zal zitten werken'' ("I will be working [while sitting]")
+
+Sometimes the meaning of the auxiliary verb is diminished to 'being engaged in'. Take for instance these examples:
+
+* ''De leraar zit steeds te zeggen dat we moeten luisteren'' ("The teacher keeps telling us to listen")
+* ''Iedereen loopt te beweren dat het goed was'' ("Everyone keeps on saying that it was good")
+* ''Zit niet zo te zeuren'' ("Stop whining")
+
+In these cases, there is generally an undertone of irritation.
+
+===Slavic languages===
+{{main|Grammatical aspect in Slavic languages}}
+The [[Slavic languages]] make a clear distinction between perfective and imperfective aspects; it was in relation to these languages that the modern concept of aspect originally developed.
+
+In Slavic languages, a given verb is, in itself, either perfective or imperfective. Consequently, each language contains many pairs of verbs, corresponding to each other in meaning, except that one expresses perfective aspect and the other imperfective. (This may be considered a form of [[lexical aspect]].) Perfective verbs are commonly formed from imperfective ones by the addition of a prefix, or else the imperfective verb is formed from the perfective one by modification of the stem or ending. [[Suppletion]] also plays a small role. Perfective verbs cannot generally be used with the meaning of a present tense – their present-tense forms in fact have future reference. An example of such a pair of verbs, from [[Polish language|Polish]], is given below:
+*Infinitive (and [[dictionary form]]): ''pisać'' ("to write", imperfective); ''napisać'' ("to write", perfective)
+*Present/simple future tense: ''pisze'' ("writes"); ''napisze'' ("will write", perfective)
+*Compound future tense (imperfective only): ''będzie pisać'' ("will write, will be writing")
+*Past tense: ''pisał'' ("was writing, used to write, wrote", imperfective); ''napisał'' ("wrote", perfective)
+
+In at least the East Slavic and West Slavic languages, there is a three-way aspect differentiation for verbs of motion with the determinate imperfective, indeterminate imperfective, and perfective. The two forms of imperfective can be used in all three tenses (past, present, and future), but the perfective can only be used with past and future. The indeterminate imperfective expresses [[habitual aspect]] (or motion in no single direction), while the determinate imperfective expresses [[progressive aspect]]. The difference corresponds closely to that between the English "I (regularly) go to school" and "I am going to school (now)". The three-way difference is given below for the [[Russian grammar#Verbs of motion|Russian basic (unprefixed) verbs of motion]].
+
+When [[prefix]]es are attached to Russian verbs of motion they become more or less normal imperfective/perfective pairs, with the indeterminate imperfective becoming the prefixed imperfective and the determinate imperfective becoming the prefixed perfective. For example, prefix ''при-'' ''pri-'' + indeterminate ''ходи́ть'' ''khodít{{'}}'' = ''приходи́ть'' ''prikhodít{{'}}'' (to arrive (on foot), impf.); and prefix ''при-'' ''pri-'' + determinate ''идти́'' ''idtí'' = ''прийти'' ''prijtí'' (to arrive (on foot), pf.).
+
+ {| class="wikitable"
+|-
+! colspan="4" | Russian verbs of motion
+|-
+! colspan="2" | Imperfective 
+! rowspan="2" | Perfective
+! rowspan="2" | Translation
+|-
+! Indeterminate !! Determinate
+|-
+| ходи́ть<br />''khodít{{'}}'' || идти́<br />''idtí'' || пойти́<br />''pojtí'' || to go by foot (walk)
+|-
+| е́здить<br />''jézdit{{'}}'' || е́хать<br />''jékhat{{'}}'' || пое́хать<br />''pojékhat{{'}}'' || to go by transport (drive, train, bus, etc.)
+|-
+| бе́гать<br />''bégat{{'}}'' || бежа́ть<br />''bezhát{{'}}'' || побежа́ть<br />''pobezhát{{'}}'' || to run
+|-
+| броди́ть<br />''brodít{{'}}'' || брести́<br />''brestí'' || побрести́<br />''pobrestí'' || to stroll, to wander
+|-
+| гоня́ть<br />''gonját{{'}}'' || гнать<br />''gnat{{'}}'' || погна́ть<br />''pognát{{'}}'' || to chase, to drive (cattle, etc.)
+|-
+| ла́зить<br />''lázit{{'}}'' || лезть<br />''lezt{{'}}'' || поле́зть<br />''polézt{{'}}'' || to climb
+|-
+| лета́ть<br />''letát{{'}}'' || лете́ть<br />''letét{{'}}'' || полете́ть<br />''poletét{{'}}'' || to fly
+|-
+| пла́вать<br />''plávat{{'}}'' || плыть<br />''plyt{{'}}'' || поплы́ть<br />''poplýt{{'}}'' || to swim, to sail
+|-
+| по́лзать<br />''pólzat{{'}}'' || ползти́<br />''polztí'' || поползти́<br />''popolztí'' || to crawl
+|-
+| вози́ть<br />''vozít{{'}}'' || везти́<br />''veztí'' || повезти́<br />''poveztí'' || to carry (by vehicle)
+|-
+| носи́ть<br />''nosít{{'}}'' || нести́<br />''nestí'' || понести́<br />''ponestí'' || to carry, to wear
+|-
+| води́ть<br />''vodít{{'}}'' || вести́<br />''vestí'' || повести́<br />''povestí'' || to lead, to accompany, to drive (a car)
+|-
+| таска́ть<br />''taskát{{'}}'' || тащи́ть<br />''tashchít{{'}}'' || потащи́ть<br />''potashchít{{'}}'' || to drag, to pull
+|-
+| ката́ть<br />''katát{{'}}'' || кати́ть<br />''katít{{'}}'' || покати́ть<br />''pokatít{{'}}'' || to roll
+|}
+
+===Romance languages===
+Modern Romance languages merge the concepts of aspect and tense but consistently distinguish perfective and imperfective aspects in the past tense. This derives directly from the way the [[Latin language]] used to render both aspects and ''[[consecutio temporum]]''.
+
+==== Italian ====
+Italian language example using the verb ''mangiare'' ("to eat"):
+{| class="wikitable"
+| colspan="4" |'''Mood: ''indicativo'' (indicative)'''
+|-
+|'''Tense'''
+|'''Italian'''
+|'''English'''
+|'''Explanation'''
+|-
+|''Presente''<br>(Present)
+|io mangio 
+|"I eat", "I'm eating"
+|merges habitual and continuous aspects, among others
+|-
+|''Passato prossimo''<br>(Recent past)
+|io ho mangiato
+|"I ate", "I have eaten"
+|merges perfective and perfect
+|-
+|''Imperfetto''<br>(Imperfect)
+|io mangiavo
+|"I was eating", "I usually ate"
+|merges habitual and progressive aspects
+|-
+|''Trapassato prossimo''<br>(Recent pluperfect)
+|io avevo mangiato
+|"I had eaten"
+|tense, not ordinarily marked for aspect
+|-
+|''Passato remoto''<br>(Far past)
+|io mangiai
+|"I ate"
+|perfective aspect
+|-
+|''Trapassato remoto''<br>(Far pluperfect)
+|io ebbi mangiato 
+|"I had eaten"
+|tense
+|-
+|''Futuro semplice''<br>(Simple future)
+|io mangerò
+|"I shall eat"
+|tense
+|-
+|''Futuro anteriore''<br>(Future perfect)
+|io avrò mangiato 
+|"I shall have eaten"
+|future tense and perfect tense/aspect
+|}
+The ''imperfetto''/''trapassato prossimo'' contrasts with the ''passato remoto''/''trapassato remoto'' in that ''imperfetto'' renders an imperfective (continuous) past while ''passato remoto'' expresses an aorist (punctual/historical) past.
+
+Other aspects in Italian are rendered with other periphrases, like [[prospective aspect|prospective]] (''io sto per mangiare'' "I'm about to eat", ''io starò per mangiare'' "I shall be about to eat"), or [[Continuous aspect|continuous]]/[[Progressive aspect|progressive]] (''io sto mangiando'' "I'm eating", ''io starò mangiando'' "I shall be eating").
+
+=== Hindi ===
+{{main|Hindi verbs#Aspects}}
+[[Hindi]] has three aspects, [[habitual aspect]], [[perfective aspect]] and the [[Continuous and progressive aspects|progressive aspect]]. Each of these three aspects are formed from their participles. The aspects of Hindi when conjugated into their personal forms can be put into five grammatical moods: [[Realis mood|indicative]], [[Irrealis mood|presumptive]], [[Subjunctive mood|subjunctive]], [[Counterfactual conditional|contrafactual]], and [[Imperative mood|imperative]]. In Hindi, the aspect marker is overtly separated from the tense/mood marker. [[Periphrasis|Periphrastic]] Hindi verb forms consist of two elements. The first of these two elements is the aspect marker. The second element (the copula) is the common tense/mood marker.<ref name=":13" />
+
+There are a couple of verbs which can be used as the copula to the aspectual participles: होना (honā) [to be, happen], रहना (rêhnā) [to stay, remain], आना (ānā) [to come], and जाना (jānā) [to go]. Each of these copulas provide a unique nuance to the aspect. The default (unmarked) copula is होना (honā) [to be]. These copulas can themselves be conjugated into an aspectual participle and used with another copula, hence forming subaspects. (Seeː [[Hindi verbs]])<ref name=":13" /><ref name=":22">{{Cite book|last=Shapiro|first=Michael C.|title=A Primer of Modern Standard Hindi|publisher=Motilal Banarsidass|year=1989|isbn=81-208-0475-9|location=New Delhi|pages=216–246}}</ref> 
+{| class="wikitable"
+!''Simple''
+''Aspect''
+! colspan="3" |''Perfective''
+''Aspect''
+! colspan="4" |''Habitual''
+''Aspect''
+! colspan="2" |''Progressive''
+''Aspect''
+!''Translation''
+|-
+|''होना'' 
+''honā''
+|''हुआ होना''
+''huā honā''
+|''हुआ रहना''
+''huā rêhnā''
+|''हुआ जाना''
+''huā jānā''
+|''होता होना''
+''hotā honā''
+|''होता रहना''
+''hotā rêhnā''
+|''होता आना''
+''hotā ānā''
+|''होता जाना''
+''hotā jānā''
+|''हो रहा होना''
+''ho rahā honā''
+|''हो रहा रहना''
+''ho rahā rêhnā''
+|''to happen''
+|-
+|''करना''
+''karnā''
+|''किया होना''
+''kiyā honā''
+|''किया रहना''
+''kiyā rêhnā''
+|''किया जाना''
+''kiyā jānā''
+|''करता होना''
+''kartā honā''
+|''करता रहना''
+''kartā rêhnā''
+|''करता आना''
+''kartā ānā''
+|''करता जाना''
+''kartā jānā''
+|''कर रहा होना''
+''kar rahā honā''
+|''कर रहा रहना''
+''kar rahā rêhnā''
+|''to do''
+|-
+|''मरना''
+''marnā''
+|''मरा होना''
+''marā honā''
+|''मरा रहना''
+''marā rêhnā''
+|''मरा जाना''
+''marā jānā''
+|''मरता होना''
+''martā honā''
+|''मरता रहना''
+''martā rêhnā''
+|''मरता आना''
+''martā ānā''
+|''मरता जाना''
+''martā jānā''
+|''मर रहा होना''
+''mar rahā honā''
+|''मर रहा रहना''
+''mar rahā rêhnā''
+|''to die''
+|}
+
+===Finnic languages===
+[[Finnish language|Finnish]] and [[Estonian language|Estonian]], among others, have a grammatical aspect contrast of [[telicity]] between telic and atelic. Telic sentences signal that the intended goal of an action is achieved. Atelic sentences do not signal whether any such goal has been achieved. The aspect is indicated by the [[List of grammatical cases|case]] of the object: [[accusative]] is telic and [[partitive]] is atelic. For example, the (implicit) purpose of shooting is to kill, such that:
+* ''Ammuin karhun'' -- "I shot the bear (succeeded; it is done)" i.e., "I shot the bear dead".
+* ''Ammuin karhua'' -- "I shot at the bear" i.e. the bear may have survived.
+In rare cases corresponding telic and atelic forms can be unrelated by meaning.
+
+Derivational suffixes exist for various aspects. Examples:
+*''-ahta-'' ("once"), as in ''huudahtaa'' ("to yell once") (used for emotive verbs like "laugh", "smile", "growl", "bark"; is not used for verbs like "shoot", "say", "drink")
+*''-ele-'' "repeatedly" as in ''ammuskella'' "to go shooting around"
+
+There are derivational suffixes for verbs, which carry [[frequentative]], [[momentane]], [[causative]], and [[inchoative]] aspect meanings. Also, pairs of verbs differing only in [[transitivity (grammatical category)|transitivity]] exist.
+
+===Austronesian languages===
+
+==== Rapa ====
+<section begin="list-of-glossing-abbreviations"/>
+<div style="display:none;">
+DIR:directional
+</div>
+<section end="list-of-glossing-abbreviations"/>
+[[Rapa language|Rapa]] is a French Polynesian language of the island of [[Rapa Iti]].<ref name="Walworth">{{cite thesis |last1=Walworth |first1=Mary E. |title=The Language of Rapa Iti: Description of a Language in Change |degree=PhD |date=May 2015 |publisher=University of Hawaiʻi at Mānoa |location=Honolulu |url=http://ling.hawaii.edu/wp-content/uploads/MaryWalworthFinal.pdf |archive-url=https://web.archive.org/web/20150825115109/http://ling.hawaii.edu/wp-content/uploads/MaryWalworthFinal.pdf |archive-date=2015-08-25 |url-status=dead |access-date=20 October 2025}}</ref>{{Rp|vi}} Verbs in the indigenous Old Rapa{{Efn|text="Very little of Old Rapa is still spoken, the modern language ('Reo Rapa') has become heavily Tahitianized, and a 'new' Rapa ('New Rapa') is emerging from revitalization efforts.&nbsp;.&nbsp;.&nbsp;."<ref name="Walworth" />{{Rp|vi}}}} occur with a TAM (tense, aspect, or mood) marker which can be followed by directional or [[Deixis|deictic]] particles. "The primary tense–aspect markers used in Old Rapa are the imperfective, progressive, perfective, past, imperative, and subjunctive."<ref name="Walworth"/>{{Rp|99}} However, specific tense–aspect–modality (TAM) markers and the type of deictic or directional particle that follows express different types of meaning.<ref name="Walworth"/>{{Rp|105–106}}
+
+The imperfective TAM particle ''e'' "denotes actions that have not yet occurred but are certain to occur, and inherent qualities".<ref name="Walworth"/>{{Rp|99}}
+
+{{interlinear
+|e naku mai te 'āikete anana'i
+|IPFV come DIR INDEF teacher tomorrow
+|'The teacher is coming tomorrow.'}}
+
+{{interlinear
+|e mānea tō pē'ā ra
+|IPFV pretty DEF woman DEI
+|'That woman is beautiful.'}}
+
+The progressive TAM particle ''e'' denotes either "action occurring at that exact moment" or "habitual action" when used with deictic particle ''na'', and actions just witnessed and presumed to still be occurring (but "not readily available for the speaker or addressee to see") when used with deictic particle ''ra''.<ref name="Walworth"/>{{Rp|99–100}}
+
+{{interlinear
+|e 'āikete na 'ōna i te tamariki
+|IPFV learn DEI 3S ACC INDEF child/children
+|'He is teaching some children.'}}
+
+{{interlinear
+|e kai na ou i kota'i kororio eika
+|IPFV eat DEI 1S ACC one small fish
+|'I am eating a small fish.'}}
+
+{{interlinear
+|e tunu na ou i te mīkaka tonga te pōpongi
+|IPFV cook DEI 1S ACC INDEF taro all INDEF morning
+|'I cook taro every morning.'}}
+
+{{interlinear
+|e kaikai ra te kurī i te moa
+|IPFV eat.continuously DEI INDEF dog ACC INDEF chicken
+|'The dog is eating a chicken.'}}
+
+{{interlinear
+|e mate atu ra 'ōna
+|IPFV die DIR DEI 3S
+|'She has just died.'}}
+
+The perfective TAM particle ''ka'' denotes actions that have already occurred or have finished. "It can also be used to mark habitual past (i.e., 'used to do something [every day], but no longer do') when used with deictic ''na''."<ref name="Walworth"/>{{Rp|101–103}}
+
+{{interlinear
+|ka ngurunguru te kurī
+|PFV growl INDEF dog
+|'A dog growled.'}}
+
+{{interlinear
+|ka tākave tō tangata i te mango
+|PFV kill DEF man ACC INDEF shark
+|'The man killed the shark.'}}
+
+{{interlinear
+|ka tunu na ou i te mīkaka tonga te pōpongi
+|PFV cook DEI 1S ACC INDEF taro all INDEF morning
+|'I used to cook taro every morning'}}
+
+"TAM particle ''i'' marks past action. It is rarely used as a matrix TAM and is more frequently observed in past embedded clauses."<ref name="Walworth"/>{{Rp|103}}
+
+{{interlinear
+|i komo mātou
+|PST sleep 1PL.EXCL
+|'We slept.'}}
+
+{{interlinear
+|e a'a koe i 'aka-ineine
+|IPFV what 2S PST CAUS-ready
+|'What did you prepare?'}}
+
+====Hawaiian====
+The [[Hawaiian language]] conveys aspect as follows:<ref>[[Östen Dahl]], ''Tense and Aspect Systems'', Blackwell, 1985: ch. 6.</ref><ref>Schütz, Albert J., ''All about Hawaiian'', Univ. of Hawaii Press, 1995: pp. 23–25.</ref><ref>Pukui, Mary Kawena, and Elbert, Samuel H., ''New Pocket Hawaiian Dictionary'', Univ. of Hawaii Press, 1992: pp. 228–231.</ref>
+
+*The unmarked verb, frequently used, can indicate habitual aspect or perfective aspect in the past.
+*''ke'' + verb + ''nei'' is frequently used and conveys the progressive aspect in the present.
+*''e'' + verb + ''ana'' conveys the progressive aspect in any tense.
+*''ua'' + verb conveys the perfective aspect but is frequently omitted.
+
+====Wuvulu====
+{{main|Wuvulu-Aua language}}
+Wuvulu is a minority language spoken in the Pacific. The Wuvulu verbal aspect is hard to organize because of its number of morpheme combinations and the interaction of semantics between morphemes.<ref name=":1">{{Cite journal|last=Hafford|first=James|year=2015|title=Verb Morphology|journal=Wuvulu Grammar and Vocabulary|pages=91}}</ref> Perfective, imperfective negation, simultaneous and habitual are four aspects markers in Wuvulu language.
+
+* '''Perfective''': The perfective marker ''-li'' indicates the action is done before another action. 
+{{interlinear|indent=2|
+|maʔua ʔi{{=}}na-'''li'''-ware-fa-rawani ʔaʔa roʔou, Barafi
+|but 3SG{{=}}REAL-PERF-talk-CAUS-good with them Barafi
+|'But, Barafi had already clearly told them.'
+}} <ref name=":1" />
+
+* '''Imperfect negation''': The marker ''ta-'' indicates the action has not done and also doesn't show anything about the action will be done in the future. 
+{{interlinear|indent=2|
+|ʔi{{=}}ta-no-mai
+|3SG{{=}}not.yet-move-{{gcl|DIR|directional}}
+|'It has not yet come.'
+}}<ref name=":2">{{Cite journal|last=Hafford|first=James|year=2015|title=Verb Morphology|journal=Wuvulu Grammar and Vocabulary|pages=92}}</ref>
+
+* '''Simultaneous''': The marker ''fi'' indicates the two actions are done at the same time or one action occurs while other action is in progress.
+{{interlinear|indent=2|
+|ʔi{{=}}na-panaro-puluʔi-na ruapalo ʔei pani Puleafo ma ʔi{{=}}fi-unu
+|3SG{{=}}REAL-hold-together-TR two the.PL hand Puleafo and 3SG{{=}}{{gcl|SIM|simultaneous}}-drink 
+|'He held together the two hands of Puleafo while drinking.' (Note: marker ''ta-'' is only for singular subject. When the subject is dual or plural, the marker ''ʔei'' and ''i-'' are used in same situation.)<ref name=":2" />
+}}
+
+* '''Habitual''': The marker fane- can indicate a habitual activity, which means "keep doing something" in English. Example: 
+{{interlinear|indent=2|
+|ʔi{{=}}na-fane-naranara fei nara Faninilo ba, ʔaleʔena ba ini liai mei ramaʔa mei
+|3SG{{=}}REAL-HAB-think(REDUP) the thought Faninilo COMP like COMP who again the person the 
+|'And the thought kept occurring to Faninilo, "who is this particular person?"' <ref>{{Cite journal|last=Hafford|first=James|year=2015|title=Verb Morphology|journal=Wuvulu Grammar and Vocabulary|pages=93}}</ref>
+}}
+
+====Tokelauan====
+{{main|Tokelauan language}}
+There are three types of aspects one must consider when analyzing the Tokelauan language: inherent aspect, situation aspect, and viewpoint aspect.<ref name=":0">{{Cite book|title=Studies in Tokelauan syntax|last=Hooper|first=Robin|publisher=University Microfilms International|year=1994|location=Ann Arbor, Michigan|pages=137–143}}</ref>
+
+The inherent aspect describes the purpose of a verb and what separates verbs from one another. According to Vendler, inherent aspect can be categorized into four different types: activities, achievements, accomplishments, and states. Simple activities include verbs such as pull, jump, and punch. Some achievements are continue and win. Drive-a-car is an accomplishment while hate is an example of a state. Another way to recognize a state inherent aspect is to note whether or not it changes. For example, if someone were to hate vegetables because they are allergic, this state of hate is unchanging and thus, a state inherent aspect. On the other hand, an achievement, unlike a state, only lasts for a short amount of time. Achievement is the highpoint of an action.<ref name=":0" />
+
+Another type of aspect is situation aspect. Situation aspect is described to be what one is experiencing in his or her life through that circumstance. Therefore, it is his or her understanding of the situation. Situation aspect are abstract terms that are not physically tangible. They are also used based upon one's point of view. For example, a professor may say that a student who comes a minute before each class starts is a punctual student. Based upon the professor's judgment of what punctuality is, he or she may make that assumption of the situation with the student. Situation aspect is firstly divided into states and occurrences, then later subdivided under occurrences into processes and events, and lastly, under events, there are accomplishments and achievements.<ref name=":0" />
+
+The third type of aspect is viewpoint aspect. Viewpoint aspect can be likened to situation aspect such that they both take into consideration one's inferences. However, viewpoint aspect diverges from situation aspect because it is where one decides to view or see such event. A perfect example is the glass metaphor: [[Is the glass half empty or half full?|Is the glass half full or is it half empty]]. The choice of being half full represents an optimistic viewpoint while the choice of being half empty represents a pessimistic viewpoint. Not only does viewpoint aspect separate into negative and positive, but rather different point of views. Having two people describe a painting can bring about two different viewpoints. One may describe a situation aspect as a perfect or imperfect. A perfect situation aspect entails an event with no reference to time, while an imperfect situation aspect makes a reference to time with the observation.<ref name=":0" />
+
+==== Torau ====
+{{main|Torau language}}
+Aspect in Torau is marked with post-verbal particles or clitics. While the system for marking the imperfective aspect is complex and highly developed, it is unclear if Torau marks the perfective and neutral viewpoints. The imperfective clitics index one of the core arguments, usually the nominative subject, and follow the rightmost element in a syntactic structure larger than the word. The two distinct forms for marking the imperfective aspect are ''(i)sa-'' and ''e-''. While more work needs to be done on this language, the preliminary hypothesis is that ''(i)sa-'' encodes the stative imperfective and ''e-'' encodes the active imperfective. Reduplication always cooccurs with ''e-'', but it usually does not with ''(i)sa-.'' This example below shows these two imperfective aspect markers giving different meanings to similar sentences.
+
+{{interlinear
+| indent = 2|Pita ma-to mate{{=}}'''sa-la'''.|Peter REAL.3SG.SUBJ-PST be.dead{{=}}IPFV-3SG|'Peter was dead.'
+}}
+
+{{interlinear
+| indent = 2|Pita ma-to '''maa'''≈mate{{=}}'''e-la'''.|Peter REAL.3SG.SUBJ-PST {REDUP}≈be.dead{{=}}IPFV-3SG|'Peter was dying.'
+}}
+
+In Torau, the suffix -''to'', which must attach to a preverbal particle, may indicate similar meaning to the perfective aspect. In realis clauses, this suffix conveys an event that is entirely in the past and no longer occurring. When ''-to'' is used in irrealis clauses, the speaker conveys that the event will definitely occur (Palmer, 2007). Although this suffix is not explicitly stated as a perfective viewpoint marker, the meaning that it contributes is very similar to the perfective viewpoint.<ref>{{Cite journal|last=Palmer|first=Bill|date=December 2007|title=Imperfective Aspect and the Interplay of Aspect, Tense, and Modality in Torau|journal=Oceanic Linguistics|volume=46|issue=2|pages=499–519|doi=10.1353/ol.2008.0000|jstor=20172325|hdl=1959.13/803129|s2cid=145227019|hdl-access=free}}</ref>
+
+====Malay/Indonesian====
+{{main|Malay grammar}}
+Like many [[Austronesian languages]], the verbs of the [[Malay language]] follow a system of affixes to express changes in meaning. To express the aspects, Malay uses a number of [[auxiliary verbs]]:
+
+:*''sudah'': [[perfective aspect|perfective]], 'saya sudah makan' = 'I have [already] eaten'
+:*''baru'': near perfective, 'saya baru makan' = 'I have just eaten'
+:*''belum'': [[imperfective aspect|imperfective]], 'saya belum makan' = 'I have not eaten'
+:*''sedang'': [[Continuous and progressive aspects|progressive]] not implicating an end
+:*''masih'': progressive implicating an end
+:*''pernah'': [[semelfactive]]
+
+====Philippine languages====
+{{main|Tagalog grammar#Verbs}}
+
+Like many [[Austronesian languages]], the verbs of the [[Philippine languages]] follow a complex system of affixes to express subtle changes in meaning. However, the verbs in this family of languages are conjugated to express the aspects and not the tenses. Though many of the [[Philippine languages]] do not have a fully codified grammar, most of them follow the verb aspects that are demonstrated by [[Filipino language|Filipino]] or [[Tagalog language|Tagalog]].
+
+===Creole languages===
+[[Creole language]]s<ref>Holm, John, ''An Introduction to Pidgins and Creoles'', Cambridge Univ. Press, 2000: pp. 173–189.</ref> typically use the unmarked verb for timeless habitual aspect, or for stative aspect, or for perfective aspect in the past. Invariant pre-verbal markers are often used. Non-stative verbs typically can optionally be marked for the progressive, habitual, completive, or irrealis aspect. The progressive in English-based [[Atlantic Creole]]s often uses ''de'' (from English "be"). [[Jamaican Creole]] uses ''a'' (from English "are") or ''de'' for the present progressive and a combination of the past time marker (''did'', ''behn'', ''ehn'' or ''wehn'') and the progressive marker (''a'' or ''de'') for the past progressive (e.g. ''did a'' or ''wehn de''). [[Haitian Creole]] uses the progressive marker ''ap''. Some Atlantic Creoles use one marker for both the habitual and progressive aspects. In [[Tok Pisin]], the optional progressive marker follows the verb. Completive markers tend to come from superstrate words like "done" or "finish", and some creoles model the future/irrealis marker on the superstrate word for "go".
+
+===American Sign Language===
+[[American Sign Language]] (ASL) is similar to many other sign languages in that it has no grammatical tense but many verbal aspects produced by modifying the base verb sign.
+
+An example is illustrated with the verb [[wikt:1@Chin-PalmBack 1@FromChin-PalmUp|TELL]]. The basic form of this sign is produced with the initial posture of the index finger on the chin, followed by a movement of the hand and finger tip toward the indirect object (the recipient of the telling). Inflected into the unrealized inceptive aspect ("to be just about to tell"), the sign begins with the hand moving from in front of the trunk in an arc to the initial posture of the base sign (i.e., index finger touching the chin) while inhaling through the mouth, dropping the jaw, and directing eye gaze toward the verb's object. The posture is then held rather than moved toward the indirect object. During the hold, the signer also stops the breath by closing the glottis. Other verbs (such as "look at", "wash the dishes", "yell", "flirt") are inflected into the unrealized inceptive aspect similarly: The hands used in the base sign move in an arc from in front of the trunk to the initial posture of the underlying verb sign while inhaling, dropping the jaw, and directing eye gaze toward the verb's object (if any), but subsequent movements and postures are dropped as the posture and breath are held.{{citation needed|date=November 2020}}
+
+Other aspects in ASL include the following: stative, inchoative ("to begin to..."), predispositional ("to tend to..."), susceptative ("to... easily"), frequentative ("to... often"), protractive ("to... continuously"), incessant ("to... incessantly"), durative ("to... for a long time"), iterative ("to... over and over again"), intensive ("to... very much"), resultative ("to... completely"), approximative ("to... somewhat"), semblitive ("to appear to..."), increasing ("to... more and more"). Some aspects combine with others to create yet finer distinctions.
+
+Aspect is unusual in ASL in that transitive verbs derived for aspect lose their grammatical transitivity. They remain semantically transitive, typically assuming an object made prominent using a topic marker or mentioned in a previous sentence. See [[American Sign Language grammar#DP syntax|Syntax in ASL]] for details.
+
+==Terms for various aspects==
+The following aspectual terms are found in the literature. Approximate English equivalents are given.
+* [[Perfective aspect|Perfective]]: 'I struck the bell' (an event viewed in its entirety, without reference to its temporal structure during its occurrence)
+** [[Momentane|Momentane/semelfactive]]: 'The mouse squeaked once' (contrasted to 'The mouse squeaked / was squeaking')
+* [[Perfect (grammar)|Perfect]] (a common conflation of aspect and tense): 'I have arrived' (brings attention to the consequences of a situation in the past)
+** [[Recent perfect]], also known as ''after perfect'': 'I just ate' or 'I am after eating' ([[Hiberno-English]])
+* [[Discontinuous past]]: In English a sentence such as "I put it on the table" is neutral in implication (the object could still be on the table or not), but in some languages such as [[Chewa language|Chichewa]] the equivalent tense carries an implication that the object is no longer there. It is thus the opposite of the perfect aspect.
+* [[Prospective aspect|Prospective]] (a conflation of aspect and tense): 'He is about to fall', 'I am going to cry" (brings attention to the anticipation of a future situation)
+* [[Imperfective aspect|Imperfective]] (an activity with ongoing nature: combines the meanings of both the continuous and the habitual aspects): 'I was walking to work' (continuous) or 'I walked (used to walk, would walk) to work every day' (habitual).
+** [[Habitual aspect|Habitual]]: 'I used to walk home from work', 'I would walk home from work every day', 'I walk home from work every day' (a subtype of imperfective)
+** [[Continuous aspect|Continuous]]: 'I am eating' or 'I know' (situation is described as ongoing and either evolving or unevolving; a subtype of imperfective)
+*** [[Progressive aspect|Progressive]]: 'I am eating' (action is described as ongoing and evolving; a subtype of continuous)
+*** [[Stative verb|Stative]]: 'I know French' (situation is described as ongoing but not evolving; a subtype of continuous)
+* [[Gnomic aspect|Gnomic/generic]]: 'Fish swim and birds fly' (general truths)
+* [[Episodic aspect|Episodic]]: 'The bird flew' (non-gnomic)
+* [[Continuative aspect|Continuative]]: 'I am still eating'
+* [[Inceptive aspect|Inceptive/ingressive]]: 'I started to run' (beginning of a new action: dynamic)
+* [[Inchoative]]: 'The flowers started to bloom' (beginning of a new state: static)
+* [[Terminative aspect|Terminative/cessative]]: 'I finished eating/reading'
+* [[Defective aspect|Defective]]: 'I almost fell'
+* [[Pausative aspect|Pausative]]: 'I stopped working for a while'
+* [[Resumptive aspect|Resumptive]]: 'I resumed sleeping'
+* [[Punctual aspect|Punctual]]: 'I slept'
+* [[Delimitative aspect|Durative/Delimitative]]: 'I slept for a while'
+* [[Protractive aspect|Protractive]]: 'The argument went on and on'
+* [[Iterative aspect|Iterative]]: 'I read the same books again and again'
+* [[Frequentative]]: 'It sparkled', contrasted with 'It sparked'. Or, 'I run around', vs. 'I run'
+* Experiential: 'I have gone to school many times' (see for example [[Chinese grammar#Aspects|Chinese aspects]])
+* [[Intentional aspect|Intentional]]: 'I listened carefully'
+* [[Accidental aspect|Accidental]]: 'I accidentally knocked over the chair'
+* [[Intensive]]: 'It glared'
+* [[Attenuative aspect|Attenuative]]: 'It glimmered'
+* [[Segmentative aspect|Segmentative]]: 'It is coming out in successive multitudes'<ref>{{cite journal | last1 = Whorf | first1 = Benjamin Lee | year = 1936 | title = The punctual and segmentative aspects of verbs in Hopi | journal = Language | volume = 12 | issue = 2| pages = 127–131 | doi = 10.2307/408755 | jstor = 408755 }}</ref>
+
+== See also ==
+* {{lang|de|[[Lexical aspect|Aktionsart]]}}
+* {{slink|Ancient Greek grammar#Time and aspect}}
+* {{slink|Chinese grammar#Aspects}}
+* [[Grammatical conjugation]]
+* [[Grammatical tense]]
+* [[Grammatical mood]]
+* [[Nominal TAM]] (tense–aspect–mood)
+* [[Tense–aspect–mood]]
+
+== Notes ==
+{{Notelist}}
+== References ==
+{{Reflist}}
+
+==Other references==
+*''Routledge Dictionary of Language and Linguistics'' ({{ISBN|0-415-20319-8}}), by Hadumod Bussmann, edited by Gregory P. Trauth and Kerstin Kazzazi, Routledge, London 1996. Translation of German ''Lexikon der Sprachwissenschaft'' Kröner Verlag, [[Stuttgart]] 1990.
+* [http://www.ling.helsinki.fi/~lcarlson/02-03/ctl104/ctl104h03facit.html Morfofonologian harjoituksia] {{Webarchive|url=https://web.archive.org/web/20051212142820/http://www.ling.helsinki.fi/~lcarlson/02-03/ctl104/ctl104h03facit.html |date=12 December 2005 }}, Lauri Carlson
+*{{cite journal | last1 = Bache | first1 = C | year = 1982 | title = Aspect and Aktionsart: Towards a semantic distinction | journal = Journal of Linguistics | volume = 18 | issue = 1| pages = 57–72 | doi=10.1017/s0022226700007234| s2cid = 144397004 }}
+*Berdinetto, P. M., & Delfitto, D. (2000). "Aspect vs. Actionality: Some reasons for keeping them apart". In O. Dahl (Ed.), ''Tense and Aspect in the Languages of Europe'' (pp.&nbsp;189–226). Berlin: Mouton de Gruyter.
+*Binnick, R. I. (1991). ''Time and the verb: A guide to tense and aspect''. New York: Oxford University Press.
+*Binnick, R. I. (2006). "Aspect and Aspectuality". In B. Aarts & A. M. S. McMahon (Eds.), ''The Handbook of English Linguistics'' (pp.&nbsp;244–268). Malden, MA: Blackwell Publishing.
+*{{cite journal | last1 = Chertkova | first1 = M. Y. | year = 2004 | title = "Vid or Aspect? On the Typology of a Slavic and Romance Category" [Using Russian and Spanish Material] | journal = Vestnik Moskovskogo Universiteta, Filologiya | volume = 58 | issue = 9–1| pages = 97–122 }}
+*Comrie, B. (1976). ''Aspect: An introduction to the study of verbal aspect and related problems''. Cambridge; New York: Cambridge University Press.
+*Frawley, W. (1992). ''Linguistic semantics''. Hillsdale, NJ: Lawrence Erlbaum Associates.
+*Johanson, Lars (2023) "Aspect in the languages of Europe". Ankara: Nobel.
+*Kabakciev, K. (2000). [https://www.springer.com/gp/book/9780792365389 ''Aspect in English: a "common-sense" view of the interplay between verbal and nominal referents''] (Studies in Linguistics and Philosophy). Springer. Retrieved 2016-05-18.
+*{{cite journal | last1 = Kortmann | first1 = B | year = 1991 | title = The Triad 'Tense–Aspect–Aktionsart' | url = https://www.freidok.uni-freiburg.de/dnb/download/5207| journal = Belgian Journal of Linguistics | volume = 6 | pages = 9–30 | doi=10.1075/bjl.6.02kor| url-access = subscription }}
+*MacDonald, J. E. (2008). ''The syntactic nature of inner aspect: A minimalist perspective''. Amsterdam; Philadelphia: John Benjamins Pub. Co.
+*Maslov, I. S. (1998). "Vid glagol'nyj" ["Aspect of the verb"]. In V. N. Yartseva (Ed.), ''Jazykoznanie: Bol'shoj entsyklopedicheskij slovar{{'}}'' (pp.&nbsp;83–84). Moscow: Bol'shaja Rossijskaja Entsyklopedija.
+*Richardson, K. (2007). ''Case and aspect in Slavic''. Oxford; New York: Oxford University Press.
+*{{cite journal | last1 = Sasse | first1 = H.-J. | year = 2002 | title = Recent activity in the theory of aspect: Accomplishments, achievements, or just non-progressive state? | url = http://publikationen.ub.uni-frankfurt.de/files/24552/AP40NF-Sasse%282001%29.pdf | journal = Linguistic Typology | volume = 6 | issue = 2 | pages = 199–271 | doi = 10.1515/lity.2002.007 }}{{Dead link|date=May 2026 |bot=InternetArchiveBot }}
+*Sasse, H.-J. (2006). "Aspect and Aktionsart". In E. K. Brown (Ed.), ''Encyclopedia of language and linguistics'' (Vol. 1, pp.&nbsp;535–538). Boston: Elsevier.
+*[[Carlota S. Smith|Smith, Carlota S.]] (1991). ''The parameter of aspect''. Dordrecht; Boston: Kluwer Academic Publishers.
+*{{cite journal | last1 = Tatevosov | first1 = S | year = 2002 | title = The parameter of actionality | journal = Linguistic Typology | volume = 6 | issue = 3| pages = 317–401 | doi=10.1515/lity.2003.003}}
+*Travis, Lisa deMena (2010). "Inner aspect", Dordrecht, Springer..
+*Verkuyl, H. (1972). ''On the Compositional Nature of the Aspects'', Reidel, Dordrecht.
+*Verkuyl, H. (1993). ''A Theory of Aspectuality: the interaction between temporal and atemporal structure''. Cambridge: Cambridge University Press.
+*Verkuyl, H. (2005). "How (in-)sensitive is tense to aspectual information?" In B. Hollebrandse, A. van Hout & C. Vet (Eds.), ''Crosslinguistic views on tense, aspect and modality'' (pp.&nbsp;145–169). Amsterdam: Rodopi.
+*Zalizniak, A. A., & Shmelev, A. D. (2000). ''Vvedenie v russkuiu aspektologiiu'' [''Introduction to Russian aspectology'']. Moskva: IAzyki russkoi kul’tury.
+
+== External links ==
+* [https://web.archive.org/web/20220409080419/https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.471.8160&rep=rep1&type=pdf Robert Binnick, Annotated tense/aspect bibliography] (around 9000 entries)
+* [http://calleteach.wordpress.com/2010/02/01/aspect/ TAMPA: Aspect Explained]
+* Anna Kibort, [http://www.smg.surrey.ac.uk/features/morphosemantic/aspect/ Aspekt] {{doi|10.15126/SMG.18/1.08}}
+* [https://web.archive.org/web/20060628003141/http://igitur-archive.library.uu.nl/dissertations/2004-0309-140804/inhoud.htm Anna Katarzyna Młynarczyk: Aspectual Pairing in Polish], a pdf version of the book
+* [http://www.lbt-languages.de/english/lernhilfe/lernhilfe.html Grammar Tutorials] - a column overview of the English tenses
+* [http://www.bcbsr.com/greek/gtense.html Greek tenses]
+* [https://web.archive.org/web/20091130145020/http://www.rickharrison.com/language/aspect.html Verb Aspect]
+
+{{Grammatical aspects}}
+{{Authority control}}
+
+{{DEFAULTSORT:Grammatical Aspect}}
+[[Category:Grammatical aspects| ]]

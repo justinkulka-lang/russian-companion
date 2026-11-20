@@ -1,0 +1,86 @@
+{{also|двоє|двое-}}
+==Belarusian==
+
+===Etymology===
+{{inh+|be|sla-pro|*dъvojь}}.
+Cognates include {{cog|uk|дво́є}} and {{cog|ru|дво́е}}.
+
+===Pronunciation===
+* {{be-IPA|дво́е}}
+
+===Determiner===
+{{head|be|determiner|head=дво́е}}
+
+# [[two]]
+#: {{qualifier|with pluralia tantum}} {{ux|be|У нас дво́е [[саней|сане́й]]|t=We have two sleds}}
+#: {{qualifier|with people}} {{ux|be|У яго́ дво́е дзяце́й|t=He has two children}}
+# [[two]] of...
+#: {{ux|be|Дво́е з іх|t=Two of them}}
+
+====Usage notes====
+'''{{m|ru||Дво́е}}''' is used with nouns that only have a plural form (pluralia tantum). It can also be used to denote a number of people. The nominative and accusative cases of a [[collective]] [[numeral]] govern the [[genitive case|genitive]] plural of the noun, pronoun, or adjective. The other cases agree with that of the noun, pronoun, or adjective.
+
+====Declension====
+{{be-adecl-manual|special=plonly
+|nom_p=дво́е
+|gen_p=дваі́х
+|dat_p=дваі́м
+|ins_p=дваі́мі
+|loc_p=дваі́х
+}}
+
+===See also===
+* {{qualifier|collective numerals}} {{l|be|дво́е}}, {{l|be|тро́е}}, {{l|be|чацвёра}}, {{l|be|пяцёра}}, {{l|be|шасцёра}}, {{l|be|сямёра}}, {{l|be|васьмёра}}, {{l|be|дзявя́цера}}, {{l|be|дзяся́цера}}
+
+==Russian==
+{{number box|ru|2}}
+
+===Etymology===
+{{inh+|ru|sla-pro|*dъvojь}}.
+
+===Pronunciation===
+* {{ru-IPA|дво́е|pos=num}}
+* {{audio|ru|Ru-двое.ogg}}
+
+===Numeral===
+{{head|ru|numeral|head=дво́е}}
+
+# [[two]] (in a group together), [[two]] of them
+#: {{uxi|ru|'''дво́е''' [[дети|дете́й]]|'''two''' children}}
+#: {{uxi|ru|'''дво́е''' [[часы|часо́в]]|'''two''' watches}}
+#: {{uxi|ru|'''дво́е''' [[очки|очко́в]]|'''two''' pairs of glasses}}
+#: {{uxi|ru|'''дво́е''' [[из]] [[мы|нас]]|'''two''' of us}}
+#: {{uxi|ru|[[мы|нас]] [[быть|бы́ло]] '''дво́е'''|there were '''two''' of us}}
+
+====Usage notes====
+{{U:ru:collective numeral}}
+
+Examples:
+* In the nominative, governing a genitive plural:
+*: {{ux|ru|[[навстречу|Навстре́чу]] [[я|мне]] [[идти|шли]] '''дво́е''' [[парень|парне́й]].|'''Two''' guys came to meet me.}}
+*: {{ux|ru|[[у|У]] [[я|меня́]] [[найтись|найдётся]] '''дво́е''' [[ножницы|но́жниц]].|I have '''two''' (pairs of) scissors.|lit=With me are '''two''' (pairs of) scissors.}}
+* In the accusative, governing a genitive plural when meaning "a pair of":
+*: {{ux|ru|[[надо|На́до]] [[взять]] [[с]] [[себя|собо́й]] '''дво́е''' [[носок|носко́в]].|You need to take '''a pair of''' socks with you.}}
+* In the accusative, governing an accusative plural when meaning "two":
+*: {{ux|ru|[[я|Я]] [[там]] [[встретить|встре́тил]] '''двои́х''' [[сослуживец|сослужи́вцев]].|I met '''two''' of my colleagues there.}}
+
+====Declension====
+{{ru-decl-noun-irreg-unc|n=pl|дво́е
+|двои́х
+|двои́м
+|
+|двои́ми
+|двои́х}}
+
+====Related terms====
+* {{l|ru|два}}
+* {{l|ru|дво́йка}}
+* {{l|ru|двойно́й}}, {{l|ru|дво́йственный}}, {{l|ru|двои́чный}}, {{l|ru|раздвое́ние}}, {{l|ru|раздво́енность}}, {{l|ru|удвое́ние}}
+* {{l|ru|удво́ить}}, {{l|ru|удва́ивать}}
+* {{l|ru|вдвойне́}}, {{l|ru|два́жды}}, {{l|ru|вдво́е}}, {{l|ru|вдвоём}}
+
+====See also====
+* {{l|ru|о́ба}}
+{{list:collective numbers/ru}}
+
+{{topics|ru|Two}}

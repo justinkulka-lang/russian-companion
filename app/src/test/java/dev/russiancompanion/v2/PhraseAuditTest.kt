@@ -29,9 +29,11 @@ class PhraseAuditTest {
         assertArrayEquals(allowlistFile.readBytes(), packaged)
         assertEquals(allowlist, PhraseAllowlist.entries)
         // D11a + D15d + D19b: 183 baseline lines, 44 COMPOSED additions and the one сущ line; no duplicates.
-        assertEquals(228, allowlist.size)
+        // S1: 78 lines removed (was 228).
+        assertEquals(150, allowlist.size)
         assertEquals(allowlist.size, allowlist.toSet().size)
-        assertEquals(mapOf("UNATTESTED" to 161, "MISSING_STRESS" to 23, "COMPOSED" to 44), allowlist.groupingBy { it.type }.eachCount())
+        // S1 removed 54 UNATTESTED (was 161), 4 MISSING_STRESS (was 23) and 20 COMPOSED (was 44).
+        assertEquals(mapOf("UNATTESTED" to 107, "MISSING_STRESS" to 19, "COMPOSED" to 24), allowlist.groupingBy { it.type }.eachCount())
     }
 
     @Test fun everyUnitPassesThePhraseAuditExceptExactlyTheAllowlist() {
@@ -57,14 +59,17 @@ class PhraseAuditTest {
             }
         }
         assertTrue("Allowlisted owner.field or text no longer exists:\n" + stale.joinToString("\n"), stale.isEmpty())
-        assertEquals(227, failures.size)
+        // S1: 78 entries now pass against the frozen S1 pages and were removed (was 227).
+        assertEquals(149, failures.size)
         assertTrue(fields.map { it.unit }.toSet().containsAll((1..30).toSet()))
     }
 
     @Test fun eachAuditRuleCatchesWhatItShould() {
         fun fail(text: String) = PhraseAudit.failures(listOf(PhraseAudit.Field(16, "probe.body", text))).map { it.type to it.text }.toSet()
-        // UNATTESTED: a run not present in any frozen line; an attested run passes.
-        assertTrue(("UNATTESTED" to "Он поранил себя") in fail("Он поранил себя."))
+        // UNATTESTED: a run not present in any frozen line; an attested run passes. S1: "Он поранил себя" is attested by
+        // the frozen Reflexive pronoun page (oldid 1374712982), so the unattested probe is now "Кошка читает газету".
+        assertTrue(("UNATTESTED" to "Кошка читает газету") in fail("Кошка читает газету."))
+        assertTrue(fail("Он поранил себя.").isEmpty())
         assertTrue(fail("Ваза стоит на столе.").isEmpty())
         // ё and е stay distinct; case is ignored.
         assertTrue(fail("Без неё").isEmpty())
