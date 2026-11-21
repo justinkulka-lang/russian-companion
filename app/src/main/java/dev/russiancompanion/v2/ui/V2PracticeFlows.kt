@@ -1,6 +1,7 @@
 package dev.russiancompanion.v2.ui
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -29,6 +30,11 @@ import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.practiceLabSnapshot
 import dev.russiancompanion.v2.curriculum.savedWorkEntries
+import dev.russiancompanion.v2.curriculum.V2CheckItem
+import dev.russiancompanion.v2.curriculum.V2Step
+import dev.russiancompanion.v2.curriculum.example
+import dev.russiancompanion.v2.curriculum.labPresentedOptions
+import dev.russiancompanion.v2.curriculum.isTypedResponse
 
 @Composable
 internal fun V2SavedWorkScreen(
@@ -82,16 +88,25 @@ internal fun V2LabScreen(
     onBack: () -> Unit,
     onSubmit: (String, String) -> Boolean,
 ) {
-    val snapshot = rememberGoverned(pack, learner, label = "practice-lab") {
-        practiceLabSnapshot(pack, learner, labId)
+    var spacedIds by rememberSaveable(labId, learner.storageEpoch) { mutableStateOf<List<String>?>(null) }
+    val boundary = rememberSaveable(labId, learner.storageEpoch) { learner.governedAttempts.orEmpty().maxOfOrNull { it.acceptedOrder } ?: 0L }
+    val minute = rememberReviewMinute()
+    val capturedIds = spacedIds
+    val published = rememberGoverned(pack, learner, label = "practice-lab", refreshKey = listOf(labId, learner.storageEpoch, capturedIds, minute)) {
+        practiceLabSnapshot(pack, learner, labId, capturedIds)
+    }
+    val snapshot = published?.takeIf { it.storageEpoch == learner.storageEpoch }
+    androidx.compose.runtime.LaunchedEffect(labId, learner.storageEpoch, snapshot) {
+        if (labId == "spaced" && spacedIds == null && snapshot?.offer?.id == "spaced" && snapshot.items.isNotEmpty()) spacedIds = snapshot.items.map { it.id }
     }
     val offer = snapshot?.offer
     val items = snapshot?.items.orEmpty()
-    var index by rememberSaveable(labId) { mutableIntStateOf(0) }
-    var chosen by rememberSaveable(labId, index) { mutableStateOf<String?>(null) }
+    var index by rememberSaveable(labId, learner.storageEpoch) { mutableIntStateOf(0) }
+    var chosen by rememberSaveable(labId, learner.storageEpoch, index) { mutableStateOf<String?>(null) }
     val item = items.getOrNull(index.coerceAtMost(items.lastIndex.coerceAtLeast(0)))
-    val recorded = item?.let { snapshot?.recordedByItem[it.id] }
+    val recorded = item?.let { snapshot?.recordedByItem[it.id] }?.takeIf { labId != "spaced" || it.acceptedOrder > boundary }
     val itemId = item?.id
+    var explanationOpen by rememberSaveable(labId, learner.storageEpoch, index, itemId) { mutableStateOf(false) }
     val pending = itemId != null && pendingKeys.any { it.startsWith("practice:$labId:$itemId:") }
     V2Scaffold(
         title = offer?.title ?: "Practice",
@@ -102,7 +117,7 @@ internal fun V2LabScreen(
             Box(Modifier.padding(16.dp)) {
                 val differentAnswer = chosen != null && chosen != recorded?.selected
                 val showSubmit = item != null && (recorded == null || differentAnswer)
-                if (!showSubmit) {
+                if (item?.isTypedResponse() == true || !showSubmit) {
                     val atEnd = items.isEmpty() || index >= items.lastIndex
                     V2PrimaryButton(
                         text = if (items.isEmpty() || atEnd) "Done" else "Next item",
@@ -111,6 +126,7 @@ internal fun V2LabScreen(
                             else onBack()
                         },
                         tag = "v2-lab-next",
+                        enabled = item?.isTypedResponse() != true || (recorded != null && !pending),
                     )
                 } else {
                     V2PrimaryButton(
@@ -137,7 +153,7 @@ internal fun V2LabScreen(
         }
         if (item == null) {
             Text(
-                "No closed-response items are available for the units you have reached. Nothing was marked complete.",
+                if (labId == "spaced") "No app review items are due. Required unit reviews still apply." else "No closed-response items are available for the units you have reached. Nothing was marked complete.",
                 modifier = Modifier.semantics { testTag = "v2-lab-empty" },
             )
             return@V2Scaffold
@@ -147,23 +163,26 @@ internal fun V2LabScreen(
             modifier = Modifier.semantics { heading(); testTag = "v2-lab-progress" },
         )
         Spacer(Modifier.height(8.dp))
+        V2QuestionCue(item, "v2-lab-cue")
         Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-lab-prompt" })
-        item.options.forEach { option ->
+        if (item.isTypedResponse()) {
+            V2TypedResponseInput(item, "$labId:${learner.storageEpoch}:$index", recorded?.selected, !pending,
+                tag = "v2-lab-typed-${item.id}") { value -> onSubmit(item.id, value) }
+        } else labPresentedOptions(item, labId).forEach { option ->
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
                     .heightIn(min = 48.dp)
-                    .semantics {
-                        role = Role.RadioButton
-                        this.selected = (chosen ?: recorded?.selected) == option
-                    },
+                    .selectable(selected = (chosen ?: recorded?.selected) == option,
+                        enabled = !pending, role = Role.RadioButton,
+                        onClick = { chosen = option })
+                    .semantics { testTag = "v2-lab-option-$option" },
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 RadioButton(
                     selected = (chosen ?: recorded?.selected) == option,
                     enabled = !pending,
-                    onClick = { chosen = option },
-                    modifier = Modifier.semantics { testTag = "v2-lab-option-$option" },
+                    onClick = null,
                 )
                 Text(option)
             }
@@ -177,6 +196,41 @@ internal fun V2LabScreen(
                 },
                 modifier = Modifier.semantics { testTag = "v2-lab-feedback" },
             )
+            selectedWrongOptionRationale(item, recorded.selected)?.let { rationale ->
+                Text(rationale, Modifier.semantics { testTag = "v2-lab-rationale" })
+            }
+            val teaching = labExplanationSteps(pack, item)
+            if (teaching.isNotEmpty()) {
+                V2SecondaryButton(
+                    text = if (explanationOpen) "Close explanation" else "Review explanation",
+                    onClick = { explanationOpen = !explanationOpen },
+                    tag = if (explanationOpen) "v2-lab-close-explanation" else "v2-lab-review",
+                )
+                if (explanationOpen) {
+                    teaching.forEach { step ->
+                        Text(step.title, style = MaterialTheme.typography.titleMedium)
+                        Text(step.body, modifier = Modifier.semantics { testTag = "v2-lab-explanation-${step.id}" })
+                    }
+                    teaching.flatMap { it.exampleIds }.distinct().forEach { id ->
+                        pack.example(id)?.let { example ->
+                            Text(example.display, style = MaterialTheme.typography.titleLarge,
+                                modifier = Modifier.semantics { testTag = "v2-lab-explanation-example-$id" })
+                            if (example.note.isNotBlank()) Text(example.note)
+                        }
+                    }
+                }
+            }
         }
+    }
+}
+
+/** Only the queued item's own declared teaching; no navigation or progress write is available. */
+internal fun labExplanationSteps(pack: V2CurriculumPack, item: V2CheckItem): List<V2Step> {
+    val unit = pack.units.firstOrNull { u -> u.objectives.any { it.id == item.objectiveId } } ?: return emptyList()
+    val objective = unit.objectives.singleOrNull { it.id == item.objectiveId } ?: return emptyList()
+    val steps = unit.sessions.flatMap { it.steps }
+    val teaching = objective.instructionStepIds.mapNotNull { id -> steps.firstOrNull { it.id == id && it.kind == "TEACH" } }
+    return teaching.ifEmpty {
+        objective.remediationStepIds.mapNotNull { id -> steps.firstOrNull { it.id == id && it.kind == "REMEDIATE" } }
     }
 }

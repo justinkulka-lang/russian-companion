@@ -17,6 +17,7 @@ internal class AndroidPracticeAudio(
     private val audioManager: AudioManager = context.applicationContext
         .getSystemService(Context.AUDIO_SERVICE) as AudioManager,
     playerFactory: PlaybackPlayerFactory = PlaybackPlayerFactory { MediaPlaybackPlayer() },
+    private val recorderFactory: () -> MediaRecorder = { createRecorder(context.applicationContext) },
 ) : PracticeAudio {
     private val appContext: Context
         get() = context.applicationContext
@@ -115,10 +116,14 @@ internal class AndroidPracticeAudio(
         stopCapture(keep = false)
         if (!requestFocus()) return null
         val directory = File(appContext.filesDir, RECORDINGS_DIR)
-        if (!directory.exists() && !directory.mkdirs()) return null
+        if (!directory.exists() && !directory.mkdirs()) {
+            abandonFocus()
+            return null
+        }
         val file = File(directory, "${UUID.randomUUID()}.m4a")
+        var mediaRecorder: MediaRecorder? = null
         val created = try {
-            val mediaRecorder = newRecorder()
+            mediaRecorder = recorderFactory()
             mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC)
             mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
             mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC)
@@ -129,7 +134,9 @@ internal class AndroidPracticeAudio(
             captureFile = file
             true
         } catch (_: Exception) {
+            releaseRecorder(mediaRecorder)
             file.delete()
+            abandonFocus()
             false
         }
         if (!created) return null
@@ -218,16 +225,11 @@ internal class AndroidPracticeAudio(
         return File(appContext.filesDir, localFileReference)
     }
 
-    @Suppress("DEPRECATION")
-    private fun newRecorder(): MediaRecorder {
-        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            MediaRecorder(appContext)
-        } else {
-            MediaRecorder()
-        }
-    }
-
     private companion object {
+        @Suppress("DEPRECATION")
+        fun createRecorder(context: Context): MediaRecorder =
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) MediaRecorder(context) else MediaRecorder()
+
         const val RECORDINGS_DIR = "recordings"
         const val RECORDING_SPEED = 1.0f
     }

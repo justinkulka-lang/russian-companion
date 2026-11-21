@@ -1,0 +1,346 @@
+{
+ "task": "T16 (Claude Code, 2026-11-20); dispositions from audit/prep/units-11-12-prep-at-9a9b9760.txt, Unit 11 section 3",
+ "totals": {
+  "MARK": 6,
+  "REWORD": 6
+ },
+ "entries": [
+  {
+   "entry": "U11-E01",
+   "csvLine": 1283,
+   "ownerId": "u11-g-past-read-0",
+   "field": "item feedback",
+   "baselineSentence": "The past form matches the subject in gender and number; choose feminine singular for this question.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16-u11-p38",
+    "prov-t16-u11-p56"
+   ],
+   "reason": "Retained exact sentence; marker cites past-tense:38 and :56."
+  },
+  {
+   "entry": "U11-E02",
+   "csvLine": 1290,
+   "ownerId": "u11-i-past-read-1",
+   "field": "item feedback",
+   "baselineSentence": "The cue shows the feminine singular form, but the question asks for masculine singular of the same verb.",
+   "disposition": "REWORD",
+   "replacement": "The cue shows the feminine singular form, but the requested form is masculine singular of the same verb.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-ex-or-u11-past-read-0",
+    "prov-ex-or-u11-past-read-1",
+    "prov-t16-u11-p56"
+   ],
+   "reason": "\"the question asks\" is A2-26 assessment commentary; the reworded sentence keeps the fact and cites verbs.csv чита́ть past_f/past_m and past-tense:56."
+  },
+  {
+   "entry": "U11-E03",
+   "csvLine": 1294,
+   "ownerId": "u11-i-past-read-2",
+   "field": "item feedback",
+   "baselineSentence": "The question asks for the feminine singular line, not the plural line.",
+   "disposition": "REWORD",
+   "replacement": "Choose the requested sentence.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Item-direction commentary, not needed teaching; reworded to an instruction (report section 3)."
+  },
+  {
+   "entry": "U11-E04",
+   "csvLine": 1303,
+   "ownerId": "u11-i-past-be-1",
+   "field": "item feedback",
+   "baselineSentence": "The cue shows feminine singular, but the requested row is plural; past agreement follows the subject number.",
+   "disposition": "REWORD",
+   "replacement": "The cue shows feminine singular, but the requested form is plural; past agreement follows the subject number.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-ex-or-u11-past-be-1",
+    "prov-ex-or-u11-past-be-3",
+    "prov-t16-u11-p38",
+    "prov-t16-u11-p65"
+   ],
+   "reason": "\"row\" wording removed (report section 3); marker cites verbs.csv быть and past-tense:38, :65."
+  },
+  {
+   "entry": "U11-E05",
+   "csvLine": 1307,
+   "ownerId": "u11-i-past-be-2",
+   "field": "item feedback",
+   "baselineSentence": "The cue shows neuter singular, but the question asks for the plural form of the same verb.",
+   "disposition": "REWORD",
+   "replacement": "Check the requested gender and number.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "The baseline wording is stale after the constant-key repair of u11-i-past-be-2 (report sections 1 and 3)."
+  },
+  {
+   "entry": "U11-E06",
+   "csvLine": 1311,
+   "ownerId": "u11-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "In the singular, a past-tense verb agrees with its subject in gender.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16-u11-p38",
+    "prov-t16-u11-p65",
+    "prov-ex-or-u11-past-aspect-2",
+    "prov-ex-or-u11-past-aspect-3",
+    "prov-ex-or-u11-past-aspect-4"
+   ],
+   "reason": "Retained exact sentence; marker cites past-tense:38, :65 and verbs.csv прочита́ть."
+  },
+  {
+   "entry": "U11-E07",
+   "csvLine": 1313,
+   "ownerId": "u11-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "The pronoun I does not select one past-tense gender for every speaker.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16-u11-p62",
+    "prov-t16-u11-p65"
+   ],
+   "reason": "Retained exact sentence; marker cites past-tense:62 and :65."
+  },
+  {
+   "entry": "U11-E08",
+   "csvLine": 1315,
+   "ownerId": "u11-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "These are masculine, feminine and neuter singular forms of the same verb, respectively.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u11-past-aspect-2",
+    "prov-ex-or-u11-past-aspect-3",
+    "prov-ex-or-u11-past-aspect-4",
+    "prov-t16-u11-p38"
+   ],
+   "reason": "Retained exact sentence; marker cites verbs.csv прочита́ть past_m/f/n and past-tense:38."
+  },
+  {
+   "entry": "U11-E09",
+   "csvLine": 1326,
+   "ownerId": "u11-g-reflexive-0",
+   "field": "item feedback",
+   "baselineSentence": "The reflexive ending remains on the past verb; choose feminine singular agreement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16-u11-p104",
+    "prov-t16-u11-p107"
+   ],
+   "reason": "Retained exact sentence; marker cites past-tense:104 and :107."
+  },
+  {
+   "entry": "U11-E10",
+   "csvLine": 1329,
+   "ownerId": "u11-st-rem-reflexive",
+   "field": "remediation body",
+   "baselineSentence": "Keep the reflexive ending with the verb.",
+   "disposition": "REWORD",
+   "replacement": "Copy the whole form.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "A pure instruction; the formation explanation stays sourced in the teaching (report section 3)."
+  },
+  {
+   "entry": "U11-E11",
+   "csvLine": 1333,
+   "ownerId": "u11-i-reflexive-1",
+   "field": "item feedback",
+   "baselineSentence": "Both verbs keep their reflexive ending, but only the first line is feminine singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16-u11-p107",
+    "prov-t16-u11-p109"
+   ],
+   "reason": "Retained exact sentence; marker cites past-tense:107 and :109."
+  },
+  {
+   "entry": "U11-E12",
+   "csvLine": 1337,
+   "ownerId": "u11-i-reflexive-2",
+   "field": "item feedback",
+   "baselineSentence": "Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.",
+   "disposition": "REWORD",
+   "replacement": "Both retain the reflexive ending, so that ending alone does not distinguish them; the past ending shows gender and number.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-ex-or-u11-reflexive-7",
+    "prov-ex-or-u11-reflexive-8",
+    "prov-t16-u11-p113",
+    "prov-t16-u11-p115",
+    "prov-t16-u11-p38"
+   ],
+   "reason": "T16-n1 (D28c): \"the question requires\" is A2-26 assessment commentary; the reworded sentence keeps the fact and cites verbs.csv учи́ться past_f/past_pl and past-tense:38, :113, :115."
+  }
+ ],
+ "markerReviews": [
+  {
+   "ownerId": "u11-g-past-read-0",
+   "sentence": "The past form matches the subject in gender and number; choose feminine singular for this question.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 38,
+     "quote": "So now that you know which aspect of the verb you want to use, we can conjugate it. To form the past tense of either asp"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 56,
+     "quote": "| Он чита́л<br>He was reading || Она чита́ла<br>She was reading || Оно чита́ло<br>It was reading || Они чита́ли<br>They "
+    }
+   ]
+  },
+  {
+   "ownerId": "u11-i-past-read-1",
+   "sentence": "The cue shows the feminine singular form, but the requested form is masculine singular of the same verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 62,
+     "quote": "читать\tчита'ть"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 56,
+     "quote": "| Он чита́л<br>He was reading || Она чита́ла<br>She was reading || Оно чита́ло<br>It was reading || Они чита́ли<br>They "
+    }
+   ]
+  },
+  {
+   "ownerId": "u11-i-past-be-1",
+   "sentence": "The cue shows feminine singular, but the requested form is plural; past agreement follows the subject number.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 2,
+     "quote": "быть\tбыть"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 38,
+     "quote": "So now that you know which aspect of the verb you want to use, we can conjugate it. To form the past tense of either asp"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 65,
+     "quote": "Although verbs change by person and ignore gender in the [[Russian/Grammar/Verbs|present]] and [[Russian/Grammar/Future "
+    }
+   ]
+  },
+  {
+   "ownerId": "u11-g-reflexive-0",
+   "sentence": "The reflexive ending remains on the past verb; choose feminine singular agreement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 104,
+     "quote": "For instance, though there is no verb '''улыбать''', that is what we get when we remove the reflexive ending from '''улы"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 107,
+     "quote": ":She was smiling - '''Она улыба́лась'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u11-i-reflexive-1",
+   "sentence": "Both verbs keep their reflexive ending, but only the first line is feminine singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 107,
+     "quote": ":She was smiling - '''Она улыба́лась'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 109,
+     "quote": ":They were smiling - '''Они улыба́лись'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u11-i-reflexive-2",
+   "sentence": "Both retain the reflexive ending, so that ending alone does not distinguish them; the past ending shows gender and number.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 209,
+     "quote": "учиться\tучи'ться"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 113,
+     "quote": ":She was studying - '''Она учи́лась'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 115,
+     "quote": ":They were studying - '''Они учи́лись'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 38,
+     "quote": "So now that you know which aspect of the verb you want to use, we can conjugate it. To form the past tense of either asp"
+    }
+   ]
+  },
+  {
+   "ownerId": "u11-st-rem-past-aspect",
+   "sentence": "In the singular, a past-tense verb agrees with its subject in gender.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 38,
+     "quote": "So now that you know which aspect of the verb you want to use, we can conjugate it. To form the past tense of either asp"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 65,
+     "quote": "Although verbs change by person and ignore gender in the [[Russian/Grammar/Verbs|present]] and [[Russian/Grammar/Future "
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 353,
+     "quote": "прочитать\tпрочита'ть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u11-st-rem-past-aspect",
+   "sentence": "The pronoun I does not select one past-tense gender for every speaker.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 62,
+     "quote": ":I was writing a letter - '''Я письмо писал(а)'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 65,
+     "quote": "Although verbs change by person and ignore gender in the [[Russian/Grammar/Verbs|present]] and [[Russian/Grammar/Future "
+    }
+   ]
+  },
+  {
+   "ownerId": "u11-st-rem-past-aspect",
+   "sentence": "These are masculine, feminine and neuter singular forms of the same verb, respectively.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 353,
+     "quote": "прочитать\tпрочита'ть"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 38,
+     "quote": "So now that you know which aspect of the verb you want to use, we can conjugate it. To form the past tense of either asp"
+    }
+   ]
+  }
+ ],
+ "markerReviewsNote": "Each Unit 11 marker with no Cyrillic word names the frozen files and lines of its cited records: a Wikibooks past-tense line by line number and exact quote, an OpenRussian verbs.csv row by its bare and accented headwords. Lines are 1-based."
+}

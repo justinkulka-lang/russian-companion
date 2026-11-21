@@ -1,0 +1,889 @@
+{
+ "task": "T16b (Claude Code, 2026-11-20); dispositions from audit/prep/units-11-12-prep-at-9a9b9760.txt, Unit 12 section 3, and audit/prep/s1-claim-verification.csv",
+ "totals": {
+  "MARK": 17,
+  "REWORD": 13
+ },
+ "entries": [
+  {
+   "entry": "U12-E01",
+   "csvLine": 1341,
+   "ownerId": "u12-g-future-imp-0",
+   "field": "item feedback",
+   "baselineSentence": "Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-f34",
+    "prov-t16b-u12-f41"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E02",
+   "csvLine": 1347,
+   "ownerId": "u12-i-future-imp-1",
+   "field": "item feedback",
+   "baselineSentence": "The imperfective infinitive stays the same while the subject and auxiliary change.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-f41",
+    "prov-t16b-u12-f44",
+    "prov-t16b-u12-f47"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E03",
+   "csvLine": 1350,
+   "ownerId": "u12-i-future-imp-2",
+   "field": "item feedback",
+   "baselineSentence": "This form can also address one person politely.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-vb8"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E04",
+   "csvLine": 1352,
+   "ownerId": "u12-i-future-imp-2",
+   "field": "item feedback",
+   "baselineSentence": "The same imperfective infinitive follows each auxiliary.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-f41",
+    "prov-t16b-u12-f44",
+    "prov-t16b-u12-f47"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E05",
+   "csvLine": 1356,
+   "ownerId": "u12-g-future-perf-0",
+   "field": "item feedback",
+   "baselineSentence": "These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-f53",
+    "prov-t16b-u12-f60"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E06",
+   "csvLine": 1358,
+   "ownerId": "u12-st-rem-future-perf",
+   "field": "remediation body",
+   "baselineSentence": "Forming the future tense with perfective verbs is relative straight-forward: just conjugate the verb according to the standard rules of verbal conjugation.",
+   "disposition": "REWORD",
+   "replacement": "Use the person forms taught here.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "The unrestricted perfective-future recipe is replaced by the bounded teaching (report section 4); an instruction remains."
+  },
+  {
+   "entry": "U12-E07",
+   "csvLine": 1361,
+   "ownerId": "u12-i-future-perf-1",
+   "field": "item feedback",
+   "baselineSentence": "The cue shows first-person singular, but the requested table row is first-person plural.",
+   "disposition": "REWORD",
+   "replacement": "Choose the requested person and number.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Table-position commentary; reworded to an instruction (report section 3)."
+  },
+  {
+   "entry": "U12-E08",
+   "csvLine": 1365,
+   "ownerId": "u12-i-future-perf-2",
+   "field": "item feedback",
+   "baselineSentence": "Both refer to the future with a single conjugated perfective verb; the question asks for one speaker.",
+   "disposition": "REWORD",
+   "replacement": "Both refer to the future with a single conjugated perfective verb; the singular form refers to one speaker.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16b-u12-f53",
+    "prov-t16b-u12-f60"
+   ],
+   "reason": "A2-26 assessment commentary (\"the question asks\" / \"table forms\") removed; the fact stays marked."
+  },
+  {
+   "entry": "U12-E09",
+   "csvLine": 1369,
+   "ownerId": "u12-st-rem-aspect",
+   "field": "remediation body",
+   "baselineSentence": "Aspect describes how an action is viewed, not when it happens.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-ga74",
+    "prov-t16b-u12-ga7"
+   ],
+   "reason": "S1 SUPPORTED: grammatical-aspect-1384289498.txt:74 and :7."
+  },
+  {
+   "entry": "U12-E10",
+   "csvLine": 1370,
+   "ownerId": "u12-st-rem-aspect",
+   "field": "remediation body",
+   "baselineSentence": "Imperfective can focus on an activity, repetition, or the fact that an action occurred without emphasizing its endpoint.",
+   "disposition": "REWORD",
+   "replacement": "Imperfective can present an action as a process or as a repeated or habitual event.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16b-u12-ga63",
+    "prov-t16b-u12-ga7"
+   ],
+   "reason": "S1 PARTIAL: reworded to what grammatical-aspect-1384289498.txt:63 and :7 state (process; repeated or habitual event); the general-factual clause is not stated and is removed."
+  },
+  {
+   "entry": "U12-E11",
+   "csvLine": 1371,
+   "ownerId": "u12-st-rem-aspect",
+   "field": "remediation body",
+   "baselineSentence": "Perfective presents an event with its boundary or result.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-b6",
+    "prov-t16b-u12-b17"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E12",
+   "csvLine": 1372,
+   "ownerId": "u12-st-rem-aspect",
+   "field": "remediation body",
+   "baselineSentence": "Imperfective does not by itself mean unfinished.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-b12"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E13",
+   "csvLine": 1374,
+   "ownerId": "u12-st-rem-aspect",
+   "field": "remediation body",
+   "baselineSentence": "These infinitives do not specify tense on their own.",
+   "disposition": "REWORD",
+   "replacement": "Learn the two supplied infinitives.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "No frozen statement supports the tense-free formulation; reworded to an instruction (report section 3)."
+  },
+  {
+   "entry": "U12-E14",
+   "csvLine": 1375,
+   "ownerId": "u12-st-rem-aspect",
+   "field": "remediation body",
+   "baselineSentence": "Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-b6",
+    "prov-t16b-u12-b25",
+    "prov-t16b-u12-b26",
+    "prov-t16b-u12-b27",
+    "prov-t16b-u12-b28",
+    "prov-t16b-u12-b29"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E15",
+   "csvLine": 1379,
+   "ownerId": "u12-st-rem-aspect",
+   "field": "remediation body",
+   "baselineSentence": "Both concern doing or making.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-b7",
+    "prov-t16b-u12-v-3b647b63-accented",
+    "prov-t16b-u12-v-c3925fb3-accented"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E16",
+   "csvLine": 1380,
+   "ownerId": "u12-st-rem-aspect",
+   "field": "remediation body",
+   "baselineSentence": "The perfective focuses on accomplishing the action; the imperfective can describe the activity or its occurrence without that focus.",
+   "disposition": "REWORD",
+   "replacement": "The perfective presents the action as a complete whole; the imperfective presents it as a process.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16b-u12-ga63",
+    "prov-t16b-u12-ga20",
+    "prov-t16b-u12-b12"
+   ],
+   "reason": "S1 PARTIAL: reworded to what grammatical-aspect-1384289498.txt:63 and :20 and verbal-aspect:12 state (complete whole; process); the occurrence clause is removed."
+  },
+  {
+   "entry": "U12-E17",
+   "csvLine": 1383,
+   "ownerId": "u12-st-rem-aspect",
+   "field": "remediation body",
+   "baselineSentence": "Learn the shown pair rather than assuming every prefix changes only aspect.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-b25",
+    "prov-t16b-u12-b26",
+    "prov-t16b-u12-b27",
+    "prov-t16b-u12-b28",
+    "prov-t16b-u12-b29"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E18",
+   "csvLine": 1390,
+   "ownerId": "u12-g-dative-0",
+   "field": "item feedback",
+   "baselineSentence": "This question asks for the dative singular row; the same spelling as the answer can also be prepositional singular in a sentence.",
+   "disposition": "REWORD",
+   "replacement": "The same spelling as the dative singular can also be prepositional singular in a sentence.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-ex-or-u12-dative-1",
+    "prov-t16b-u12-n-baa1c2a9-sg_prep"
+   ],
+   "reason": "A2-26 assessment commentary (\"the question asks\" / \"table forms\") removed; the fact stays marked."
+  },
+  {
+   "entry": "U12-E19",
+   "csvLine": 1392,
+   "ownerId": "u12-st-rem-dative",
+   "field": "remediation body",
+   "baselineSentence": "The '''dative case''' is traditionally the third grammatical case, and denotes the indirect object of a verb.",
+   "disposition": "REWORD",
+   "replacement": "The dative case is traditionally the third grammatical case, and denotes the indirect object of a verb.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16b-u12-d1",
+    "prov-t16b-u12-d6"
+   ],
+   "reason": "Wiki emphasis markup removed (report section 3); dative-case:1 and :6."
+  },
+  {
+   "entry": "U12-E20",
+   "csvLine": 1395,
+   "ownerId": "u12-i-dative-1",
+   "field": "item feedback",
+   "baselineSentence": "Keep the noun singular and select its dative row, rather than selecting the plural nominative row.",
+   "disposition": "REWORD",
+   "replacement": "Keep the noun singular and select its dative form, rather than the plural nominative form.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-ex-or-u12-dative-4",
+    "prov-ex-or-u12-dative-5"
+   ],
+   "reason": "\"row\" wording removed (report section 3); nouns.csv стол sg_dat and pl_nom."
+  },
+  {
+   "entry": "U12-E21",
+   "csvLine": 1399,
+   "ownerId": "u12-i-dative-2",
+   "field": "item feedback",
+   "baselineSentence": "The requested row changes case while keeping the noun singular; the plural option changes number instead.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u12-dative-6",
+    "prov-ex-or-u12-dative-7",
+    "prov-ex-or-u12-dative-8"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E22",
+   "csvLine": 1402,
+   "ownerId": "u12-g-spelling-0",
+   "field": "item feedback",
+   "baselineSentence": "The adjective stem ends in the consonant transliterated sh; its unstressed neuter ending uses e rather than o under the five-letter spelling rule.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-w26",
+    "prov-t16b-u12-al156"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E23",
+   "csvLine": 1409,
+   "ownerId": "u12-i-spelling-1",
+   "field": "item feedback",
+   "baselineSentence": "The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-w1",
+    "prov-t16b-u12-w26"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E24",
+   "csvLine": 1412,
+   "ownerId": "u12-i-spelling-2",
+   "field": "item feedback",
+   "baselineSentence": "Its unstressed adjective ending uses o where the five-letter rule requires e after the stem-final consonant transliterated sh.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-w26",
+    "prov-t16b-u12-al156"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E25",
+   "csvLine": 1414,
+   "ownerId": "u12-i-spelling-2",
+   "field": "item feedback",
+   "baselineSentence": "The keyed counterexample is incorrect Russian, not a form to use.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-w26"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E26",
+   "csvLine": 1418,
+   "ownerId": "u12-g-prep-plural-0",
+   "field": "item feedback",
+   "baselineSentence": "Neither singular use matches the plural row requested.",
+   "disposition": "REWORD",
+   "replacement": "Neither singular use matches the plural form requested.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-ex-or-u12-prep-plural-1",
+    "prov-ex-or-u12-prep-plural-2"
+   ],
+   "reason": "A2-26 assessment commentary (\"the question asks\" / \"table forms\") removed; the fact stays marked."
+  },
+  {
+   "entry": "U12-E27",
+   "csvLine": 1419,
+   "ownerId": "u12-g-prep-plural-0",
+   "field": "item feedback",
+   "baselineSentence": "These are table forms; the prepositional case is used with a governing preposition in a sentence.",
+   "disposition": "REWORD",
+   "replacement": "The prepositional case is used with a governing preposition in a sentence.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16b-u12-q4"
+   ],
+   "reason": "A2-26 assessment commentary (\"the question asks\" / \"table forms\") removed; the fact stays marked."
+  },
+  {
+   "entry": "U12-E28",
+   "csvLine": 1424,
+   "ownerId": "u12-i-prep-plural-1",
+   "field": "item feedback",
+   "baselineSentence": "The question requires both prepositional case and plural number; the singular dative option changes both features.",
+   "disposition": "REWORD",
+   "replacement": "The prepositional plural differs from the singular dative in both case and number.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-ex-or-u12-prep-plural-4",
+    "prov-ex-or-u12-prep-plural-5"
+   ],
+   "reason": "T16-n1 (D28c): \"the question requires\" is A2-26 assessment commentary; the fact stays marked (nouns.csv стол pl_prep and sg_dat)."
+  },
+  {
+   "entry": "U12-E29",
+   "csvLine": 1425,
+   "ownerId": "u12-i-prep-plural-1",
+   "field": "item feedback",
+   "baselineSentence": "In a sentence the prepositional form follows a governing preposition.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16b-u12-q4"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U12-E30",
+   "csvLine": 1429,
+   "ownerId": "u12-i-prep-plural-2",
+   "field": "item feedback",
+   "baselineSentence": "These are table forms; a sentence uses the prepositional case after a governing preposition.",
+   "disposition": "REWORD",
+   "replacement": "A sentence uses the prepositional case after a governing preposition.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16b-u12-q4"
+   ],
+   "reason": "A2-26 assessment commentary (\"the question asks\" / \"table forms\") removed; the fact stays marked."
+  }
+ ],
+ "markerReviews": [
+  {
+   "ownerId": "u12-g-future-imp-0",
+   "sentence": "Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 34,
+     "quote": "Imperfective verbs form the future by preceding the imperfective infinitive with the appropriate conjugation of the perf"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 41,
+     "quote": "| Я бу́ду говори́ть<br>I will be speaking || Мы бу́дем говори́ть<br>We will be speaking"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-future-imp-1",
+   "sentence": "The imperfective infinitive stays the same while the subject and auxiliary change.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 41,
+     "quote": "| Я бу́ду говори́ть<br>I will be speaking || Мы бу́дем говори́ть<br>We will be speaking"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 44,
+     "quote": "| Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will be speaking"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 47,
+     "quote": "| Он бу́дет говори́ть<br>He will be speaking || Они бу́дут говори́ть<br>They will be speaking"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-future-imp-2",
+   "sentence": "This form can also address one person politely.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/verbs-4233876.txt",
+     "line": 8,
+     "quote": "Like English verbs, Russian verbs also conjugate according to who is doing the verb: when on its own the default ''infin"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-future-imp-2",
+   "sentence": "The same imperfective infinitive follows each auxiliary.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 41,
+     "quote": "| Я бу́ду говори́ть<br>I will be speaking || Мы бу́дем говори́ть<br>We will be speaking"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 44,
+     "quote": "| Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You will be speaking"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 47,
+     "quote": "| Он бу́дет говори́ть<br>He will be speaking || Они бу́дут говори́ть<br>They will be speaking"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-g-future-perf-0",
+   "sentence": "These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 53,
+     "quote": "Forming the future tense with perfective verbs is relative straight-forward: just conjugate the verb according to the st"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 60,
+     "quote": "| Я скажу́<br>I will speak || Мы ска́жем<br>We will speak"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-future-perf-2",
+   "sentence": "Both refer to the future with a single conjugated perfective verb; the singular form refers to one speaker.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 53,
+     "quote": "Forming the future tense with perfective verbs is relative straight-forward: just conjugate the verb according to the st"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 60,
+     "quote": "| Я скажу́<br>I will speak || Мы ска́жем<br>We will speak"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-g-dative-0",
+   "sentence": "The same spelling as the dative singular can also be prepositional singular in a sentence.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\tкни'га"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-dative-1",
+   "sentence": "Keep the noun singular and select its dative form, rather than the plural nominative form.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 32,
+     "quote": "стол\tстол"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-dative-2",
+   "sentence": "The requested row changes case while keeping the noun singular; the plural option changes number instead.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 15,
+     "quote": "дом\tдом"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-g-spelling-0",
+   "sentence": "The adjective stem ends in the consonant transliterated sh; its unstressed neuter ending uses e rather than o under the five-letter spelling rule.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 26,
+     "quote": "Four of these letters are also in the 5-letter spelling rule. This states that, if the stem ends in '''ж, ц, ч, ш''', or"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt",
+     "line": 156,
+     "quote": "|sh, š|| similar to \"sh\" in hu'''sh''' ||{{lang|ru|ва'''ш'''}} ''vash''<br/>\"yours\" || {{n/a}} || U+0428 / U+0448"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-spelling-1",
+   "sentence": "The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 1,
+     "quote": "Adjectives in Russian are simply words that modify nouns. The endings of adjectives change according to the gender, numb"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 26,
+     "quote": "Four of these letters are also in the 5-letter spelling rule. This states that, if the stem ends in '''ж, ц, ч, ш''', or"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-spelling-2",
+   "sentence": "Its unstressed adjective ending uses o where the five-letter rule requires e after the stem-final consonant transliterated sh.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 26,
+     "quote": "Four of these letters are also in the 5-letter spelling rule. This states that, if the stem ends in '''ж, ц, ч, ш''', or"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt",
+     "line": 156,
+     "quote": "|sh, š|| similar to \"sh\" in hu'''sh''' ||{{lang|ru|ва'''ш'''}} ''vash''<br/>\"yours\" || {{n/a}} || U+0428 / U+0448"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-spelling-2",
+   "sentence": "The keyed counterexample is incorrect Russian, not a form to use.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 26,
+     "quote": "Four of these letters are also in the 5-letter spelling rule. This states that, if the stem ends in '''ж, ц, ч, ш''', or"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-g-prep-plural-0",
+   "sentence": "Neither singular use matches the plural form requested.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\tкни'га"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-g-prep-plural-0",
+   "sentence": "The prepositional case is used with a governing preposition in a sentence.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt",
+     "line": 4,
+     "quote": "Words decline into a case for two broad reasons: because they match that case's primary function (the [[Russian/Grammar/"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-prep-plural-1",
+   "sentence": "The prepositional plural differs from the singular dative in both case and number.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 32,
+     "quote": "стол\tстол"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-prep-plural-1",
+   "sentence": "In a sentence the prepositional form follows a governing preposition.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt",
+     "line": 4,
+     "quote": "Words decline into a case for two broad reasons: because they match that case's primary function (the [[Russian/Grammar/"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-i-prep-plural-2",
+   "sentence": "A sentence uses the prepositional case after a governing preposition.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt",
+     "line": 4,
+     "quote": "Words decline into a case for two broad reasons: because they match that case's primary function (the [[Russian/Grammar/"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-future-perf",
+   "sentence": "A perfective verb's person forms have future meaning.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 53,
+     "quote": "Forming the future tense with perfective verbs is relative straight-forward: just conjugate the verb according to the st"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 60,
+     "quote": "| Я скажу́<br>I will speak || Мы ска́жем<br>We will speak"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-future-perf",
+   "sentence": "They use a single conjugated verb without a separate future auxiliary.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 53,
+     "quote": "Forming the future tense with perfective verbs is relative straight-forward: just conjugate the verb according to the st"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 60,
+     "quote": "| Я скажу́<br>I will speak || Мы ска́жем<br>We will speak"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-aspect",
+   "sentence": "Aspect describes how an action is viewed, not when it happens.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/grammatical-aspect-1384289498.txt",
+     "line": 74,
+     "quote": "In European languages, rather than locating an event time, the way tense does, aspect describes \"the internal temporal c"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/grammatical-aspect-1384289498.txt",
+     "line": 7,
+     "quote": "In [[linguistics]], '''aspect''' is a [[grammatical category]] that expresses how a [[verb|verbal]] action, event, or st"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-aspect",
+   "sentence": "Imperfective can present an action as a process or as a repeated or habitual event.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/grammatical-aspect-1384289498.txt",
+     "line": 63,
+     "quote": "Essentially, the perfective aspect looks at an event as a complete action, while the imperfective aspect views an event "
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/grammatical-aspect-1384289498.txt",
+     "line": 7,
+     "quote": "In [[linguistics]], '''aspect''' is a [[grammatical category]] that expresses how a [[verb|verbal]] action, event, or st"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-aspect",
+   "sentence": "Perfective presents an event with its boundary or result.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 6,
+     "quote": "All verbs in Russian have an aspect. Some verbs exist in aspectual pairs, but certainly not most of them. In the case of"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 17,
+     "quote": "In this example, it's the outcome of the action that is of importance.  The first speaker could be Misha's father, wonde"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-aspect",
+   "sentence": "Imperfective does not by itself mean unfinished.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 12,
+     "quote": "Note that the verbs here describe a process.  It is also possible to consider this as a complete action, but as written "
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-aspect",
+   "sentence": "Many Russian verbs are learned in an aspect pair, but not every verb has two words, and a pair is not automatic.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 6,
+     "quote": "All verbs in Russian have an aspect. Some verbs exist in aspectual pairs, but certainly not most of them. In the case of"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 28,
+     "quote": ": '''договариваться''' (impf.) and '''договориться''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 29,
+     "quote": "In other words, the easiest way to remember aspectual pairs is to learn the imperfective and learn the 'perfective prefi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-aspect",
+   "sentence": "Both concern doing or making.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 7,
+     "quote": "Rather than expound more theory here, we shall proceed by considering an example. Let us take the verbs \"to speak\" (impe"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 19,
+     "quote": "делать\tде'лать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 20,
+     "quote": "сделать\tсде'лать"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-aspect",
+   "sentence": "The perfective presents the action as a complete whole; the imperfective presents it as a process.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/grammatical-aspect-1384289498.txt",
+     "line": 63,
+     "quote": "Essentially, the perfective aspect looks at an event as a complete action, while the imperfective aspect views an event "
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/grammatical-aspect-1384289498.txt",
+     "line": 20,
+     "quote": "The Indian linguist [[Yaska]] (circa 7th century BCE) dealt with grammatical aspect, distinguishing actions that are pro"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 12,
+     "quote": "Note that the verbs here describe a process.  It is also possible to consider this as a complete action, but as written "
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-aspect",
+   "sentence": "Learn the shown pair rather than assuming every prefix changes only aspect.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 28,
+     "quote": ": '''договариваться''' (impf.) and '''договориться''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 29,
+     "quote": "In other words, the easiest way to remember aspectual pairs is to learn the imperfective and learn the 'perfective prefi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u12-st-rem-dative",
+   "sentence": "The dative case is traditionally the third grammatical case, and denotes the indirect object of a verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt",
+     "line": 1,
+     "quote": "The '''dative case''' is traditionally the third grammatical case, and denotes the indirect object of a verb. This page "
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt",
+     "line": 6,
+     "quote": "The indirect object refers to objects that are not being directly acted upon. For example, 'I wrote a letter to you' - '"
+    }
+   ]
+  }
+ ],
+ "markerReviewsNote": "Each Unit 12 marker with no Cyrillic word names the frozen files and lines of its cited records: a page line by number and exact quote, an OpenRussian row by its bare and accented headwords. Lines are 1-based."
+}

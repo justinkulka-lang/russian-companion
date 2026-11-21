@@ -1,0 +1,470 @@
+{
+  "retrieved": "2026-11-19",
+  "license": {
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "packagedLegalText": "app/src/main/assets/licenses/cc-by-sa-4.0.txt",
+    "routes": {
+      "wikipedia": {
+        "appliesToSourceIds": [
+          "src-enwiki-grammatical-aspect-1384289498",
+          "src-enwiki-sequence-of-tenses-1363198135",
+          "src-enwiki-reflexive-pronoun-1374712982"
+        ],
+        "title": "Wikipedia:Copyrights",
+        "oldid": "1369466282",
+        "url": "https://en.wikipedia.org/w/index.php?title=Wikipedia:Copyrights&oldid=1369466282",
+        "file": "../units-26-30/wikipedia/copyrights-1369466282.txt",
+        "revisionFile": "../units-26-30/wikipedia/copyrights-1369466282.revision.json",
+        "sha256": "79be61298fb5e458a485eb4ad72c68b73d5284de99807cf4561bcff9ace36210",
+        "requiredStatement": "Most of Wikipedia's text and many of its images are co-licensed under the [[Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License|Creative Commons Attribution-ShareAlike 4.0 International License]] (CC BY-SA) and the [[Wikipedia:Text of the GNU Free Documentation License|GNU Free Documentation License]] (GFDL)"
+      },
+      "ruwiki": {
+        "appliesToSourceIds": [
+          "src-ruwiki-vid-lingvistika-153277825",
+          "src-ruwiki-povelitelnoe-naklonenie-152579064",
+          "src-ruwiki-obosoblenie-144053197",
+          "src-ruwiki-boltraffio-149826784",
+          "src-ruwiki-soslagatelnoe-naklonenie-140019162"
+        ],
+        "title": "Википедия:Авторские права",
+        "oldid": "154562152",
+        "url": "https://ru.wikipedia.org/w/index.php?title=Википедия:Авторские_права&oldid=154562152",
+        "file": "../units-6-10/ruwiki/copyrights-154562152.txt",
+        "revisionFile": "../units-6-10/ruwiki/copyrights-154562152.revision.json",
+        "sha256": "a91323abe9ea35f846bf1fffd4feae46dc6bf7420cdce782e016d5c1141fb3bf",
+        "requiredStatement": "лицензиями [[Википедия:Лицензия|Creative Commons «С указанием авторства — С сохранением условий»]] (CC BY-SA 4.0)"
+      },
+      "wiktionary": {
+        "appliesToSourceIds": [
+          "src-enwiktionary-pod-92761073",
+          "src-enwiktionary-by-94001807",
+          "src-enwiktionary-chtoby-91135223",
+          "src-enwiktionary-daby-83982684",
+          "src-enwiktionary-dvoe-83716615",
+          "src-enwiktionary-nazad-93809546",
+          "src-enwiktionary-za-94001837",
+          "src-enwiktionary-nekogo-80719285"
+        ],
+        "title": "Wiktionary:Copyrights",
+        "oldid": "87545419",
+        "url": "https://en.wiktionary.org/w/index.php?title=Wiktionary:Copyrights&oldid=87545419",
+        "file": "../units-16-20/wiktionary/copyrights-87545419.txt",
+        "revisionFile": "../units-16-20/wiktionary/copyrights-87545419.revision.json",
+        "sha256": "d184773bca30b7b23245a50d1d07c3d672b378a1e51757640e97b994b50c3689",
+        "requiredStatement": "The original texts of Wiktionary entries are dual-licensed to the public under both the '''[[WT:CC-BY-SA|Creative Commons Attribution-ShareAlike 4.0 International License]]''' (CC-BY-SA)"
+      },
+      "readyrussian": {
+        "appliesToSourceIds": [
+          "src-readyrussian-grammar24"
+        ],
+        "title": "ReadyRussian",
+        "url": "https://www.readyrussian.org/",
+        "file": "../readyrussian/home.html",
+        "sha256": "1ffd2c5a8f4b0dad271a5fd79fb545c8c6b629507ba39677825ffde4c66fe7d1",
+        "requiredStatement": "Creative Commons Attribution-ShareAlike 4.0 International License",
+        "licenseId": "CC BY-SA 4.0"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "id": "enwiki-grammatical-aspect-1384289498",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Units 12-14 aspect explanations (D24c). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "ruwiki-vid-lingvistika-153277825",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Units 12-14 Russian aspect explanation (D24c). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "enwiki-sequence-of-tenses-1363198135",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 13 sequence of tenses (D24c). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "ruwiki-povelitelnoe-naklonenie-152579064",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 15 imperative formation (D24c). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "enwiki-reflexive-pronoun-1374712982",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 21 object-transfer records prov-u21-object-transfer-native-* (D24c). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "ruwiki-obosoblenie-144053197",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 29 punctuation records after, cause and terminal (D16a). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "ruwiki-boltraffio-149826784",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 29 punctuation records pronoun (D16a). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "ruwiki-soslagatelnoe-naklonenie-140019162",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Subjunctive claims (D3). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "enwiktionary-pod-92761073",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Preposition под claims (D3). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "enwiktionary-by-94001807",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Particle бы claims (D3). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "enwiktionary-chtoby-91135223",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 21 purpose clause with чтобы (D5). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "enwiktionary-daby-83982684",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 21 bookish дабы (D5). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "enwiktionary-dvoe-83716615",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 22 collective numeral claims (D6a). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "enwiktionary-nazad-93809546",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 23 case rule for назад (D6a). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "enwiktionary-za-94001837",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 23 completion within a period (D6a). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "enwiktionary-nekogo-80719285",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "Unit 24 некого, некому, некем (D7c). The whole revision is retained so spans can be verified; nothing is ingested as curriculum until a unit task binds a span to a provenance record under the D19a and D7b rules."
+    },
+    {
+      "id": "readyrussian-grammar24",
+      "disposition": "RETAINED",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "D3: the handout text under its footer marking \"©2014--2016 ReadyRussian.org, CC BY-SA\", which covers the whole handout; no part of the text is marked otherwise. The image, scripts and linked PDF/ODT downloads are not admitted. Nothing is ingested as curriculum until a unit task binds a span."
+    },
+    {
+      "id": "ruwiki-imya-chislitelnoe-v-russkom-yazyke-34831725",
+      "disposition": "NOT_FROZEN",
+      "licenseId": "CC BY-SA 4.0",
+      "scope": "D6a names ru Wikipedia \"Имя числительное в русском языке\". Its current revision 34831725 (2011-05-29) is only \"#REDIRECT [[Имя числительное]]\". The redirect target is a different page and is not frozen without an owner decision."
+    }
+  ],
+  "pages": [
+    {
+      "key": "aspect",
+      "title": "Grammatical aspect",
+      "oldid": "1384289498",
+      "url": "https://en.wikipedia.org/w/index.php?title=Grammatical_aspect&oldid=1384289498",
+      "file": "wikipedia/grammatical-aspect-1384289498.txt",
+      "sha256": "c09e5413c611822e3e6ff0ec471208db1533975d6b49b1f599613e4afc7d4551",
+      "revisionFile": "wikipedia/grammatical-aspect-1384289498.revision.json",
+      "mediawikiSha1": "ff98b6af07fbf4f5a1dc43d38e893875eb7749cc",
+      "parentid": 1378370038,
+      "timestamp": "2026-11-07T15:07:38Z",
+      "size": 70842,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiki-grammatical-aspect-1384289498",
+      "licenseRoute": "wikipedia",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1384289498 identifies the contributors."
+    },
+    {
+      "key": "vid",
+      "title": "Вид (лингвистика)",
+      "oldid": "153277825",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Вид_(лингвистика)&oldid=153277825",
+      "file": "ruwiki/vid-lingvistika-153277825.txt",
+      "sha256": "bb599aa20cd919be246c5ab633a8465712e9388f777bfc904d0d890b25195353",
+      "revisionFile": "ruwiki/vid-lingvistika-153277825.revision.json",
+      "mediawikiSha1": "2bd903a60355f6b81f1585ff1ff41f2b350c2508",
+      "parentid": 153269383,
+      "timestamp": "2026-05-25T21:05:05Z",
+      "size": 27002,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-ruwiki-vid-lingvistika-153277825",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153277825 identifies the contributors."
+    },
+    {
+      "key": "sequence",
+      "title": "Sequence of tenses",
+      "oldid": "1363198135",
+      "url": "https://en.wikipedia.org/w/index.php?title=Sequence_of_tenses&oldid=1363198135",
+      "file": "wikipedia/sequence-of-tenses-1363198135.txt",
+      "sha256": "76630bad1824ba08ec2e0ab204d92882706c1eabd289e80f7dcc9c190f7ef950",
+      "revisionFile": "wikipedia/sequence-of-tenses-1363198135.revision.json",
+      "mediawikiSha1": "ac4ba39e0c5a5310480903345e3d13847f07a250",
+      "parentid": 1330958370,
+      "timestamp": "2026-07-08T17:45:43Z",
+      "size": 18096,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiki-sequence-of-tenses-1363198135",
+      "licenseRoute": "wikipedia",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1363198135 identifies the contributors."
+    },
+    {
+      "key": "povelitelnoe",
+      "title": "Повелительное наклонение",
+      "oldid": "152579064",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Повелительное_наклонение&oldid=152579064",
+      "file": "ruwiki/povelitelnoe-naklonenie-152579064.txt",
+      "sha256": "713c20fbf289f1ae4c8174833ef89fe21361b51118108a2352f2ad409dcf26e8",
+      "revisionFile": "ruwiki/povelitelnoe-naklonenie-152579064.revision.json",
+      "mediawikiSha1": "635d1ee787b0b3777288891cf875028342bdea83",
+      "parentid": 152578902,
+      "timestamp": "2026-04-04T15:02:02Z",
+      "size": 15735,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-ruwiki-povelitelnoe-naklonenie-152579064",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 152579064 identifies the contributors."
+    },
+    {
+      "key": "reflexive",
+      "title": "Reflexive pronoun",
+      "oldid": "1374712982",
+      "url": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+      "file": "wikipedia/reflexive-pronoun-1374712982.txt",
+      "sha256": "0d3aa40c1f8ccc9b3468b0d36273a104360640af336a598d31dda0eaffbdb12d",
+      "revisionFile": "wikipedia/reflexive-pronoun-1374712982.revision.json",
+      "mediawikiSha1": "64b35f5856e88d58e8140de214d3aa14d2d26892",
+      "parentid": 1372861810,
+      "timestamp": "2026-09-13T18:04:57Z",
+      "size": 48253,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+      "licenseRoute": "wikipedia",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies the contributors."
+    },
+    {
+      "key": "obosoblenie",
+      "title": "Обособление",
+      "oldid": "144053197",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+      "file": "ruwiki/obosoblenie-144053197.txt",
+      "sha256": "0f5a33ffba100e7a6d5bf2c80987ce72f69e970f004b09e815ebf73ebe3ed638",
+      "revisionFile": "ruwiki/obosoblenie-144053197.revision.json",
+      "mediawikiSha1": "85dae76161377cc4fc3c008813936e850dddd1c1",
+      "parentid": 130457977,
+      "timestamp": "2025-03-18T00:49:51Z",
+      "size": 26266,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-ruwiki-obosoblenie-144053197",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies the contributors."
+    },
+    {
+      "key": "boltraffio",
+      "title": "Больтраффио, Джованни",
+      "oldid": "149826784",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+      "file": "ruwiki/boltraffio-149826784.txt",
+      "sha256": "e2ab8bd93324e7c77f86336c0780ce46314fa9e6fdbee0ba13fd148f143943c1",
+      "revisionFile": "ruwiki/boltraffio-149826784.revision.json",
+      "mediawikiSha1": "55d87a3229d44de0ea30269822fc0c4d2b66350a",
+      "parentid": 146217015,
+      "timestamp": "2025-11-15T11:25:03Z",
+      "size": 3395,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-ruwiki-boltraffio-149826784",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149826784 identifies the contributors."
+    },
+    {
+      "key": "soslagatelnoe",
+      "title": "Сослагательное наклонение",
+      "oldid": "140019162",
+      "url": "https://ru.wikipedia.org/w/index.php?title=Сослагательное_наклонение&oldid=140019162",
+      "file": "ruwiki/soslagatelnoe-naklonenie-140019162.txt",
+      "sha256": "ffc11224e3a6d040d261e7828655fdd7ab4a0634999c93453c162c4c342290e7",
+      "revisionFile": "ruwiki/soslagatelnoe-naklonenie-140019162.revision.json",
+      "mediawikiSha1": "627828a22bf980cd32596b142eef57ac5f0b28d9",
+      "parentid": 140000076,
+      "timestamp": "2024-09-06T01:59:23Z",
+      "size": 14941,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-ruwiki-soslagatelnoe-naklonenie-140019162",
+      "licenseRoute": "ruwiki",
+      "attribution": "Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 140019162 identifies the contributors."
+    },
+    {
+      "key": "pod",
+      "title": "под",
+      "oldid": "92761073",
+      "url": "https://en.wiktionary.org/w/index.php?title=под&oldid=92761073",
+      "file": "wiktionary/pod-92761073.txt",
+      "sha256": "eb11f736755a016d6e890efa815aeca2ffaa3702e29210756a2190619a78425a",
+      "revisionFile": "wiktionary/pod-92761073.revision.json",
+      "mediawikiSha1": "793867eeed6fa5818a852fe98205b00fc78d099c",
+      "parentid": 92466640,
+      "timestamp": "2026-09-22T13:24:25Z",
+      "size": 10455,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiktionary-pod-92761073",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 92761073 identifies the contributors."
+    },
+    {
+      "key": "by",
+      "title": "бы",
+      "oldid": "94001807",
+      "url": "https://en.wiktionary.org/w/index.php?title=бы&oldid=94001807",
+      "file": "wiktionary/by-94001807.txt",
+      "sha256": "e4ee9ff20234d699c29a6245a7a8b092b211c1e6ccce5739758725626d6a2bda",
+      "revisionFile": "wiktionary/by-94001807.revision.json",
+      "mediawikiSha1": "be1f4015d42357fdf7b9decafc8da07c6c051769",
+      "parentid": 92733523,
+      "timestamp": "2026-10-26T22:47:21Z",
+      "size": 3722,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiktionary-by-94001807",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 94001807 identifies the contributors."
+    },
+    {
+      "key": "chtoby",
+      "title": "чтобы",
+      "oldid": "91135223",
+      "url": "https://en.wiktionary.org/w/index.php?title=чтобы&oldid=91135223",
+      "file": "wiktionary/chtoby-91135223.txt",
+      "sha256": "6ac3fb31cac14dd4ed7c2baba83bf48927809f006a137175699ee64a965a2ce6",
+      "revisionFile": "wiktionary/chtoby-91135223.revision.json",
+      "mediawikiSha1": "0398b2bc20ab0dc8ba2f5fde04ab8089aa356a17",
+      "parentid": 91118371,
+      "timestamp": "2026-06-08T11:25:54Z",
+      "size": 1897,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiktionary-chtoby-91135223",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 91135223 identifies the contributors."
+    },
+    {
+      "key": "daby",
+      "title": "дабы",
+      "oldid": "83982684",
+      "url": "https://en.wiktionary.org/w/index.php?title=дабы&oldid=83982684",
+      "file": "wiktionary/daby-83982684.txt",
+      "sha256": "02bfb0be4d0a6d456fd9f540db6552350f244f8275c9f6e3b79b9a310a78f6c7",
+      "revisionFile": "wiktionary/daby-83982684.revision.json",
+      "mediawikiSha1": "11a04bad1bbd579cdf2f85c0a1b2c0ad2788d87e",
+      "parentid": 79564663,
+      "timestamp": "2025-02-20T06:44:02Z",
+      "size": 1915,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiktionary-daby-83982684",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 83982684 identifies the contributors."
+    },
+    {
+      "key": "dvoe",
+      "title": "двое",
+      "oldid": "83716615",
+      "url": "https://en.wiktionary.org/w/index.php?title=двое&oldid=83716615",
+      "file": "wiktionary/dvoe-83716615.txt",
+      "sha256": "2415e6c2abd1c0bf4449e9b148f4f839a67fa62b940b5687c4e930084449bfab",
+      "revisionFile": "wiktionary/dvoe-83716615.revision.json",
+      "mediawikiSha1": "ae904a2e6f0d3b927c21af5e851840b1abfe5efe",
+      "parentid": 79574049,
+      "timestamp": "2025-01-25T01:01:00Z",
+      "size": 3677,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiktionary-dvoe-83716615",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 83716615 identifies the contributors."
+    },
+    {
+      "key": "nazad",
+      "title": "назад",
+      "oldid": "93809546",
+      "url": "https://en.wiktionary.org/w/index.php?title=назад&oldid=93809546",
+      "file": "wiktionary/nazad-93809546.txt",
+      "sha256": "2392ea818856c48aff7a8a62e70c00bdabf028582e967e36fb548fff3a9113c7",
+      "revisionFile": "wiktionary/nazad-93809546.revision.json",
+      "mediawikiSha1": "105db5af0b14f7b66fce2f68b74d61d3760b15bd",
+      "parentid": 93590252,
+      "timestamp": "2026-10-24T16:25:44Z",
+      "size": 5698,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiktionary-nazad-93809546",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 93809546 identifies the contributors."
+    },
+    {
+      "key": "za",
+      "title": "за",
+      "oldid": "94001837",
+      "url": "https://en.wiktionary.org/w/index.php?title=за&oldid=94001837",
+      "file": "wiktionary/za-94001837.txt",
+      "sha256": "384adb1aa7538fd5a447b36c3cba517e18039fccad94f880c666c49e47357837",
+      "revisionFile": "wiktionary/za-94001837.revision.json",
+      "mediawikiSha1": "08621b99654399a0eeb5aaf199a2061e0d88da1a",
+      "parentid": 92733525,
+      "timestamp": "2026-10-26T22:47:23Z",
+      "size": 39181,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiktionary-za-94001837",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 94001837 identifies the contributors."
+    },
+    {
+      "key": "nekogo",
+      "title": "некого",
+      "oldid": "80719285",
+      "url": "https://en.wiktionary.org/w/index.php?title=некого&oldid=80719285",
+      "file": "wiktionary/nekogo-80719285.txt",
+      "sha256": "3fae7dc2bb33ccfb67cd5d27687fd90e2cfd989cf38be59d96d67c537ea030c1",
+      "revisionFile": "wiktionary/nekogo-80719285.revision.json",
+      "mediawikiSha1": "e3db7537241d40afdf1f38cb5552c0a51585ed14",
+      "parentid": 71982170,
+      "timestamp": "2024-07-15T08:51:41Z",
+      "size": 1050,
+      "retrieved": "2026-11-19",
+      "sourceId": "src-enwiktionary-nekogo-80719285",
+      "licenseRoute": "wiktionary",
+      "attribution": "Wiktionary contributors, CC BY-SA 4.0, via Wiktionary:Copyrights oldid 87545419. Page history for oldid 80719285 identifies the contributors."
+    }
+  ],
+  "supplemental": [
+    {
+      "key": "grammar24",
+      "title": "Grammar 24 — Capitalization",
+      "oldid": "933d0deb0742157fcc8eb469f448146f73c3d7e211ec8706ae9632198feefc85",
+      "file": "../readyrussian/grammar24.html",
+      "sha256": "933d0deb0742157fcc8eb469f448146f73c3d7e211ec8706ae9632198feefc85",
+      "byteCount": 12506,
+      "retrieved": "2026-11-19T22:21:12Z",
+      "sourceId": "src-readyrussian-grammar24",
+      "url": "https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html",
+      "licenseRoute": "readyrussian",
+      "transform": "readyrussian-html",
+      "attribution": "ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Grammar 24 — Capitalization HTML sha256 933d0deb0742157fcc8eb469f448146f73c3d7e211ec8706ae9632198feefc85 retrieved 2026-11-19T22:21:12Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. The image, scripts and linked PDF/ODT downloads are not admitted."
+    }
+  ]
+}

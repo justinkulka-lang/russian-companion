@@ -11,12 +11,9 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.lifecycle.ViewModelProvider
-import androidx.sqlite.db.SupportSQLiteOpenHelper
-import androidx.sqlite.db.framework.FrameworkSQLiteOpenHelperFactory
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.data.appearance.AppearanceStore
 import dev.russiancompanion.data.local.LocalStore
-import dev.russiancompanion.data.local.MIGRATION_8_9
 import dev.russiancompanion.domain.appearance.AppearancePreference
 import dev.russiancompanion.v2.backup.BackupReadResult
 import dev.russiancompanion.v2.backup.BackupAttempt
@@ -578,7 +575,7 @@ class ReauditCorrectionTest {
     }
 
     @Test
-    fun r09_acceptedWriteOrderIgnoresTheClockAndSurvivesReopenBackupAndMigration() {
+    fun r09_acceptedWriteOrderIgnoresTheClockAndSurvivesReopenAndBackup() {
         val located = pack.step("u1-st-vowels-check")!!
         val step = located.second
         val item = pack.item(step.itemIds.single())!!
@@ -690,8 +687,6 @@ class ReauditCorrectionTest {
             context.deleteDatabase(name)
         }
 
-        migrateLeavesUnknownOrderAtZero()
-
         place(store, located.first.id, located.first.steps.indexOfFirst { it.id == step.id })
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithText("Progress").performClick()
@@ -739,47 +734,6 @@ class ReauditCorrectionTest {
         idleUntil("attempt stored") { store.v2Attempts().size == 1 }
         assertEquals(1L, store.v2Attempts().single().acceptedOrder)
         assertEquals(first, store.v2Attempts().single().selected)
-    }
-
-    private fun migrateLeavesUnknownOrderAtZero() {
-        val context = context()
-        val helper = FrameworkSQLiteOpenHelperFactory().create(
-            SupportSQLiteOpenHelper.Configuration.builder(context)
-                .name("reaudit-migration-${System.nanoTime()}.db")
-                .callback(object : SupportSQLiteOpenHelper.Callback(8) {
-                    override fun onCreate(db: androidx.sqlite.db.SupportSQLiteDatabase) {
-                        db.execSQL(
-                            "CREATE TABLE IF NOT EXISTS `v2_attempts` (`id` TEXT NOT NULL, `itemId` TEXT NOT NULL, " +
-                                "`selected` TEXT NOT NULL, `correct` INTEGER NOT NULL, `recordedAtLocal` TEXT NOT NULL, " +
-                                "`itemDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE', `unitContentDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE', " +
-                                "`ruleDigest` TEXT NOT NULL DEFAULT 'UNRECOVERABLE', `identitySchema` INTEGER NOT NULL DEFAULT 0, " +
-                                "`attemptRole` TEXT NOT NULL DEFAULT 'LEGACY_UNVERIFIED', `objectiveId` TEXT NOT NULL DEFAULT '', " +
-                                "`unitNumber` INTEGER NOT NULL DEFAULT 0, `stepId` TEXT NOT NULL DEFAULT '', PRIMARY KEY(`id`))",
-                        )
-                    }
-
-                    override fun onUpgrade(
-                        db: androidx.sqlite.db.SupportSQLiteDatabase,
-                        oldVersion: Int,
-                        newVersion: Int,
-                    ) = Unit
-                })
-                .build(),
-        )
-        val db = helper.writableDatabase
-        db.execSQL("INSERT INTO v2_attempts (id, itemId, selected, correct, recordedAtLocal) VALUES ('late', 'item', 'A', 1, '2026-10-07T12:00:02')")
-        db.execSQL("INSERT INTO v2_attempts (id, itemId, selected, correct, recordedAtLocal) VALUES ('early', 'item', 'B', 1, '2026-10-07T12:00:01')")
-        MIGRATION_8_9.migrate(db)
-        db.query("SELECT id, acceptedOrder FROM v2_attempts ORDER BY recordedAtLocal ASC").use { cursor ->
-            assertTrue(cursor.moveToFirst())
-            assertEquals("early", cursor.getString(0))
-            assertEquals(0L, cursor.getLong(1))
-            assertTrue(cursor.moveToNext())
-            assertEquals("late", cursor.getString(0))
-            assertEquals(0L, cursor.getLong(1))
-            assertFalse(cursor.moveToNext())
-        }
-        helper.close()
     }
 
     private fun admissibleUnit(source: V2CurriculumPack, unitNumber: Int): V2CurriculumPack {

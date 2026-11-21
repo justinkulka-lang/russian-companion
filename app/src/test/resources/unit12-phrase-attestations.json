@@ -1,0 +1,50 @@
+{
+ "task": "T16b (Claude Code, 2026-11-20)",
+ "phrases": [
+  {
+   "phrase": "Вы бу́дете говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 44
+  },
+  {
+   "phrase": "Мы бу́дем говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 41
+  },
+  {
+   "phrase": "Мы ска́жем",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 60
+  },
+  {
+   "phrase": "Он бу́дет говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 47
+  },
+  {
+   "phrase": "Ты бу́дешь говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 44
+  },
+  {
+   "phrase": "Я бу́ду говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 17
+  },
+  {
+   "phrase": "Я скажу́",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 29
+  },
+  {
+   "phrase": "хорошее письмо",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 26
+  },
+  {
+   "phrase": "хорошое письмо",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 26
+  }
+ ]
+}

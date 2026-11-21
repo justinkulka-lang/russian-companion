@@ -12,6 +12,7 @@ import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotEquals
+import org.junit.Assert.assertThrows
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
@@ -402,6 +403,32 @@ class Units1115InstructionalValidityTest {
         val pack = pack()
         val validation = V2Validator.validate(pack)
         assertTrue(validation.errors.joinToString("\n"), validation.ok)
+        assertAdvancementChecks(pack)
+    }
+
+    /**
+     * T16-n1 (owner decision D28a): every required check, typed or closed, keeps the common assertions (review status, no
+     * source co-location prompt, one explicit target); only the closed-check-specific ones (feature validity, option-type
+     * consistency) are skipped for typed checks. Codex's two fault injections fail.
+     */
+    @Test
+    fun typedChecksKeepTheCommonAssertionsAndCodexFaultInjectionsFail() {
+        val pack = pack()
+        fun mutate(change: (V2CheckItem) -> V2CheckItem) =
+            pack.copy(items = pack.items.map { if (it.id == "u11-i-type-chital") change(it) else it })
+        val rejected = assertThrows(AssertionError::class.java) { assertAdvancementChecks(mutate { it.copy(reviewStatus = "REJECTED") }) }
+        assertTrue(rejected.message, rejected.message.orEmpty().contains("u11-i-type-chital"))
+        val colocated = assertThrows(AssertionError::class.java) {
+            assertAdvancementChecks(mutate { it.copy(prompt = it.prompt + " Use another cell of the same table.") })
+        }
+        assertTrue(colocated.message, colocated.message.orEmpty().contains("u11-i-type-chital uses a source co-location prompt"))
+        val twoKeys = assertThrows(AssertionError::class.java) {
+            assertAdvancementChecks(mutate { it.copy(answer = "") })
+        }
+        assertTrue(twoKeys.message, twoKeys.message.orEmpty().contains("u11-i-type-chital"))
+    }
+
+    private fun assertAdvancementChecks(pack: V2CurriculumPack) {
         val colocated = Regex("(?i)\\bother row\\b|\\bother line\\b|same frozen record|another cell of the same")
         (11..15).forEach { number ->
             val unit = pack.unit(number)!!
@@ -409,10 +436,19 @@ class Units1115InstructionalValidityTest {
             unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
                 objective.checkItemIds.forEach { id ->
                     val item = pack.items.first { it.id == id }
-                    assertTrue("${item.id} is not feature-valid", V2Validator.featureValid(pack, item))
+                    // Common to every required check (T16-n1, D28a; was skipped for typed checks in T16).
                     assertFalse("${item.id} uses a source co-location prompt", colocated.containsMatchIn(item.prompt))
-                    assertEquals(1, item.options.count { it == item.answer })
-                    assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", item.reviewStatus)
+                    assertEquals(item.id, "IMPLEMENTED_PENDING_FINAL_AUDIT", item.reviewStatus)
+                    val key = item.typedAnswerKey
+                    if (key != null) {
+                        // One explicit target for a typed check: a non-blank key that its reviewed answer key accepts.
+                        assertEquals(item.id, "TYPED_FORM", item.kind)
+                        assertTrue(item.id, item.answer.isNotBlank() && item.options.isEmpty() && item.answer in key.acceptedAnswers)
+                        assertEquals(item.id, item.reviewStatus, key.review?.status)
+                        return@forEach // typed checks have no assessment: the closed-check-specific assertions below do not apply
+                    }
+                    assertTrue("${item.id} is not feature-valid", V2Validator.featureValid(pack, item))
+                    assertEquals(item.id, 1, item.options.count { it == item.answer })
                     val answerCyrillic = item.answer.any { it.code in 0x0400..0x04FF }
                     assertTrue(
                         "${item.id} mixes response types",

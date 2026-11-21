@@ -1,0 +1,210 @@
+{{Short description|Set of grammatical rules}}
+The '''sequence of tenses''' (known in [[Latin language|Latin]] as '''''consecutio temporum''''', and also known as '''agreement of tenses''', '''succession of tenses''' and '''tense harmony''') is a set of [[grammar|grammatical]] rules of a particular language, governing the [[agreement (linguistics)|agreement]] between the [[grammatical tense|tense]]s of verbs in related [[clause]]s or [[Sentence (linguistics)|sentence]]s.
+
+A hypothetical context in which rules of sequence of tenses apply is that of [[indirect speech]]. If, at some past time, someone spoke a sentence in a particular tense (say the present tense), and that act of speaking is now being reported, the tense used in the clause that corresponds to the words spoken may or may not be the same as the tense that was used by the original speaker. In some languages the tense tends to be "shifted back", so that what was originally spoken in the present tense is reported using the past tense (since what was in the present at the time of the original sentence is in the past relative to the time of reporting). [[English grammar|English]] is one of the languages in which this often occurs. For example, if someone said "I '''need''' a drink", this may be reported in the form "She said she '''needed''' a drink", with the tense of the verb ''need'' changed from present to past.
+
+The "shifting back" of tense as described in the previous paragraph may be called '''backshifting''' or an '''attracted sequence''' of tenses. In languages and contexts where such a shift does not occur, there may be said by contrast to be a '''natural sequence'''.
+
+== English ==
+In [[English grammar|English]], an ''attracted sequence'' of tenses (backshifting) is often used in [[indirect speech]] and similar contexts. The attracted sequence can be summarized as follows:  If the main verb of a sentence is in the [[past tense]], then other verbs must also express a past viewpoint, except when a general truth is being expressed.<ref name=LePan>{{cite book|title=The Broadview Book of Common Errors in English: A Guide to Righting Wrongs|author=Don LePan|pages=30&ndash;31|year=2003|publisher=Broadview Press|isbn=1-55111-586-7}}</ref>
+
+For example, if [[Batman]] speaks the following words:
+::I '''need''' a special key for the Batmobile.
+the speech act may be reported using the following words:
+::Batman '''said''' that he '''needed''' a special key for the Batmobile.
+with the [[present tense]] ''need'' replaced by the [[past tense]] ''needed'', since the main verb of saying (''said'') is in the past tense. Further examples can be found at {{slink|Uses of English verb forms|Indirect speech}}.
+
+In some cases, though, a ''natural sequence'' of tenses is more appropriate. Here the tense of a verb in a [[subordinate clause]] is not determined by the tense of the verb in the superordinate clause, but is determined simply according to the sense of the clause taken apart from the rest of the sentence.<ref name=MW /> The rule for writers following the natural sequence of tenses can be expressed as follows: imagine yourself at the point in time denoted by the main verb, and use the tense for the subordinate verb that you would have used ''at that time''.<ref>{{cite book|title=How To Speak And Write Correctly|author=Joseph Devlin|pages=141&ndash;142|year=1910|publisher=Plain Label Books|location=New York|isbn=1-60303-053-0}}</ref> Thus the tense used in the indirect speech remains the same as it was in the words as originally spoken. This is normal when the main verb is in the present or [[future tense]] (as opposed to past tense or [[conditional mood]]). For example:
+::Batman '''says''' that he '''needs''' a special key for the Batmobile. (main verb in present tense)
+::Batman '''has said''' that he '''needs''' a special key for the Batmobile. (main verb in [[present perfect]], not past tense, so no backshifting)
+
+However it is also possible to use the natural sequence even if the main verb is past or conditional:
+::Batman '''said''' that he '''needs''' a special key for the Batmobile.
+This option is more likely to be used when the circumstance being expressed remains equally true now as it did when the speech act took place, and especially if the person reporting the words agrees that they are true or valid.
+
+Debate amongst [[prescriptive grammar|grammarians]] over the appropriateness of the two types of sequence of tenses goes back as far as the 18th century.<ref name=MW>{{cite encyclopedia|article=sequence of tenses|encyclopedia=Merriam-Webster's Dictionary of English Usage|author=Merriam-Webster|pages=838|year=1994|publisher=Merriam-Webster|isbn=0-87779-132-5}}</ref> Use of the attracted sequence sometimes leads to additional problems when the grammatical construction of [[indirect speech]] includes an incorporated quotation – that is, when an attempt is made (though using indirect rather than [[direct speech]]) to report the words actually spoken. For example, if a minister spoke the words "Such a policy is not without its drawbacks", then a writer may attempt to report this as follows:<ref name=LePan />
+:The minister admitted that "such a policy is not without its drawbacks".
+using [[quotation marks]] to denote that that portion of the sentence represents the minister's actual words. This, however, requires use of the natural sequence of tenses, which might not be felt appropriate in the given situation. There are various possible solutions to this problem:<ref name=LePan />
+* Rearrange the sentence so that the incorporated quotations become set off, possibly as [[direct speech]]:
+::The minister did not claim perfection: "such a policy is not without its drawbacks", he admitted.
+* Cut down the incorporated quotation to exclude the verb:
+::The minister admitted that such a policy was "not without its drawbacks".
+* Use [[square brackets]] to indicate where the words deviate from those actually spoken:
+::The minister admitted that "such a policy [was] not without its drawbacks".
+Similar problems arise from the other changes that typically occur in indirect speech, such as changes of pronoun (depending on speaker).
+
+For more details, see the article on [[indirect speech]], and also the article on [[uses of English verb forms]], particularly the sections on [[Uses of English verb forms#Indirect speech|indirect speech]] and [[Uses of English verb forms#Dependent clauses|dependent clauses]].
+
+==Russian==
+Indirect speech in Russian and other [[Slavic languages]] generally uses the natural sequence of tenses (there is no backshifting). For examples, see {{slink|Indirect speech|Russian}}.
+
+== Latin ==
+{{Further|Latin tenses#Sequence of tenses rule|Latin indirect speech}}
+In [[Latin language|Latin]], the sequence of tenses rule affects dependent verbs in the subjunctive mood, mainly in indirect questions, indirect commands, and purpose clauses.<ref>Woodcock, E. C. (1959) ''A New Latin Syntax'', pp. 101–3, 135–6, 223–4.</ref> If the main verb is in one of the non-past tenses, the subordinate verb is usually in the present or perfect subjunctive (primary sequence); if the main verb is in one of the past tenses, the subordinate verb is usually in the imperfect or pluperfect subjunctive (historic sequence). For example, when the subordinate verb refers to a time contemporaneous or later than the time of the main verb, the present or imperfect subjunctive is used:
+:{{lang|la|quaerit ubi <u>sit</u>}} (present  subjunctive)
+:'he asks where it is'
+
+:{{lang|la|quaesivit ubi <u>esset</u>}} (imperfect subjunctive)
+:'he asked where it was'
+
+When the subordinate verb refers to a time earlier than that of the main verb, the perfect or pluperfect subjunctive is used:
+:{{lang|la|nescio quid <u>fecerit</u>}} (perfect subjunctive)
+:'I don't know what he did/has done/was doing'
+
+:{{lang|la|nesciebam quid <u>fecisset</u>}} (pluperfect subjunctive)
+:'I didn't know what he had done/had been doing'
+
+If the main verb is a historic present (i.e. a present tense with a past meaning), either primary or historic sequence may be used, or in a long sentence even a mixture of the two:
+:{{lang|la|legatos mittunt qui pacem <u>petant/peterent</u>}} (present or imperfect subjunctive)
+:'they send (i.e. sent) ambassadors to ask for peace'
+
+If the main verb is a perfect tense, it is usually followed by the historic sequence, but if the meaning is equivalent to an English present perfect (i.e. "have done"), it may be followed by primary sequence:
+
+:{{lang|la|me praemisit haec ut <u>nuntiem</u>}} (present subjunctive)
+:'he has sent me ahead to announce these things'
+
+There are frequent exceptions to the sequence of tenses rule (see [[Latin tenses#Sequence of tenses rule]]). For example, verbs in conditional clauses do not usually follow the rule:
+
+:{{lang|la|dic quid facturus <u>fueris</u> si censor <u>fuisses</u>?}} (perfect subjunctive + pluperfect subjunctive)
+:'tell us what you would have done if you had been censor'
+
+Consecutive clauses also do not always follow the rule:
+:{{lang|la|Siciliam ita vexavit ut restitui non <u>possit</u>}} (present subjunctive)
+:'he harassed Sicily so much (during his governorship) that it cannot be restored'
+
+When the sentence is an indirect statement (which uses the [[accusative and infinitive]] construction in Latin), the main verb of the reported sentence is an infinitive which remains unchanged, no matter what the tense of the main verb. The present infinitive is used for a situation contemporaneous with the main verb:<ref>Woodcock, E. C. (1959), ''A New Latin Syntax'', pp. 19–20.</ref>
+:{{lang|la|dicit hostes <u>adesse</u>}} (present infinitive)
+:'he says the enemy are present'
+
+:{{lang|la|dixit hostes <u>adesse</u>}} (present infinitive)
+:'he said the enemy were present'
+
+The perfect infinitive is used for an event or situation earlier than the time of the main verb:
+:{{lang|la|dicit Caesarem <u>venisse</u>}} (perfect infinitive)
+:'he says that Caesar has come'
+
+:{{lang|la|dixit Caesarem <u>venisse</u>}} (perfect infinitive)
+:'he said that Caesar had come'
+
+However, subordinate clauses in an indirect statement use the subjunctive mood, which is subject to the sequence of tenses rule:
+:{{lang|la|locum ubi <u>esset</u> facile inventūrōs}} (Nepos)<ref>Nepos, ''Hann.'' 12.3.</ref>
+:'(he said) they would easily find the place where <u>he was</u>'
+
+== Greek ==
+In [[Classical Greek language|Classical Greek]], the tenses in subordinate clauses must correspond to those in the superordinate clauses governing them.<ref name=Kuehner>{{cite book|title=Grammar of the Greek Language, for the Use of High Schools and Colleges|url=https://archive.org/details/grammarofgree00khne|author=Raphael Kühner|pages=[https://archive.org/details/grammarofgree00khne/page/505 505]&ndash;506|others=translated by Samuel Harvey Taylor and Bela Bates Edwards|year=1844|publisher=Mark H. Newman|location=New York|chapter=Succession of Tenses}}</ref>
+
+A principal tense ([[present tense]], [[future tense]], or [[perfect tense]]) in the superordinate clause is followed by a principal tense in the [[indicative mood]] or [[subjunctive mood]].  Such a principal tense is followed by:<ref name=Kuehner />
+*the [[present tense]] when the action of the subordinate verb refers to the same time as the superordinate verb
+*the [[perfect (grammar)|perfect]] when the action of the subordinate verb has been completed before the time of the superordinate verb
+*the [[future tense]] when the action of the subordinate verb is in the future of the time of the superordinate verb
+
+A historical tense ([[imperfect]], [[pluperfect]], or [[aorist]]) in the superordinate clause is followed by a historical tense in the indicative mood or [[optative mood]].  Such a historic tense is followed by:<ref name=Kuehner />
+*the [[imperfect]] when the action of the subordinate verb refers to the same time as the superordinate verb
+*the [[pluperfect]] when the action of the subordinate verb has been completed before the time of the superordinate verb
+*the [[aorist]]
+*the [[future tense]] in the optative mood when the action of the subordinate verb is in the future of the time of the superordinate verb.
+
+== Italian ==
+The set of rules comprising the sequence of tenses (and modes of the main and subordinate clauses) in the [[Italian language]] corresponds in general to the "consecutio temporum" of the Latin grammar.
+
+To determine the form of the verb in the subordinate clause it is necessary to know:
+
+#if the verb in the main clause is in the indicative or subjunctive mood,
+#if the verb in the main clause is in the present or past tense, and
+#if the verb in the subordinate clause expresses an action which unfolds before, at the same time, or after the action indicated in the main clause.
+
+The various combinations are summarized in four tables (see below).
+
+===Sequence of tenses of the indicative===
+
+====The verb of the main clause is in the present tense====
+{| class="wikitable" 
+| style="background: #BBFFCC;" | '''Main clause'''
+| style="background: #BBFFCC;" | '''Subordinate clause'''
+|  '''Temporal relationship'''
+|- 
+|rowspan=3| Luisa '''sa''' ([[Present tense|present]])   
+|che ieri '''sono andato''' a Roma ([[present perfect]])
+| style="background: #BBFFCC;"|  ''anteriority''
+|- 
+|che adesso '''vado''' a Roma ([[Present tense|present]])
+| style="background: #BBFFCC;"|  ''contemporaneity''
+|- 
+|che domani '''andrò''' a Roma ([[Simple future tense|simple future]])
+| style="background: #BBFFCC;"|  ''posteriority''
+|}
+
+====The verb of the main clause is a past tense====
+If the verb of the main clause is in the past (simple past, imperfect, or past perfect), the verbal forms of the subordinate clause refer to the moment indicated in the main clause and adapt accordingly.  The present in the subordinate clase will transform to imperfect, the past will become past perfect, etc.:
+
+{| class="wikitable" 
+| style="background: #FFBBBB;" | '''Main clause'''
+| style="background: #FFBBBB;" | '''Subordinate clause'''
+|  '''Temporal relationship'''
+|- 
+|rowspan=3| Luisa '''sapeva''' ([[Imperfect tense|imperfect]])   
+|che '''ero andato''' a Roma ([[Pluperfect|past perfect]])
+| style="background: #FFBBBB;"|  ''anteriority''
+|- 
+|che '''andavo''' a Roma ([[Imperfect tense|imperfect]])
+| style="background: #FFBBBB;"|  ''contemporaneity''
+|- 
+|che '''sarei andato''' a Roma ([[conditional perfect]])
+| style="background: #FFBBBB;"|  ''posteriority''
+|}
+
+===Sequence of tenses of the subjunctive===
+Despite the use of the subjunctive, the verbal tenses follow rules similar to those of the Indicative mood.  The Present Indicative of the subordinate clause will be substituted with the [[Subjunctive present tense|subjunctive present]]; similarly, the [[Present perfect tense|present perfect]] will be substituted with its correspondent form, that of the [[Past subjunctive tense|past subjunctive]] and the [[Past perfect tense]] with the [[Subjunctive past perfect tense|subjunctive past perfect]].
+
+====The verb of the main clause is in the present tense====
+{| class="wikitable" 
+| style="background: #BBFFCC;" | '''Main clause'''
+| style="background: #BBFFCC;" | '''Subordinate clause'''
+|  '''Temporal relationship'''
+|- 
+|rowspan=3| Luisa '''pensa''' ([[Present tense|present]])   
+|che io '''sia andato''' a Roma ([[English subjunctive|past subjunctive]])
+| style="background: #BBFFCC;"|  ''anteriority''
+|- 
+|che io '''vada''' a Roma ([[present subjunctive]])
+| style="background: #BBFFCC;"|  ''contemporaneity''
+|- 
+|che '''andrò''' a Roma ([[Simple future tense|simple future]])
+| style="background: #BBFFCC;"|  ''posteriority''
+|}
+
+====The verb of the main clause is a past tense====
+If the verb of the main clause is in the past tense, the verbal forms of the subordinate will be adapted to that of the main clause:
+
+{| class="wikitable" 
+| style="background: #FFBBBB;" | '''Main clause'''
+| style="background: #FFBBBB;" | '''Subordinate clause'''
+|  '''Temporal relationship'''
+|- 
+|rowspan=3| Luisa '''pensava''' ([[Imperfect tense|imperfect]])   
+|che '''fossi andato''' a Roma ([[English subjunctive|past perfect subjunctive]])
+| style="background: #FFBBBB;"|  ''anteriority''
+|- 
+|che '''andassi''' a Roma ([[Subjunctive mood|subjunctive imperfect]])
+| style="background: #FFBBBB;"|  ''contemporaneity''
+|- 
+|che '''sarei andato'''{{citation needed|reason=This verb is the same as above, but there it is said to be '''conditional perfect''' and not past conditional|date=October 2017}} a Roma ([[Past Conditional tense|past conditional]])
+| style="background: #FFBBBB;"|  ''posteriority''
+|}
+
+== References ==
+{{reflist}}
+
+== Further reading ==
+* {{cite book|title=English Review Grammar|author=Walter Kay Smart|year=1925|publisher=F.S. Crofts & co.|location=New York|chapter=Tenses|page=185ff}}
+* {{cite journal|title=Sequence of Tenses: A Useful Principle?|author=Rodger A. Farley|journal=Hispania|volume=48|issue=3|date=September 1965|pages=549–553|doi=10.2307/336482|publisher=Hispania, Vol. 48, No. 3|jstor=336482}}
+* {{cite journal|title=Tense and Its Relation to Participants|author=Robin Lakoff|journal=Language|volume=46|issue=4|date=December 1970|pages=838–849|doi=10.2307/412259|publisher=Language, Vol. 46, No. 4|jstor=412259}}
+* {{cite book|chapter=Event Structure and the Perfect|author=Paul Kiparsky|chapter-url=http://stanford.edu./~kiparsky/Papers/semanticsfest.pdf|editor1=David I. Beaver |editor2=Luis D. Casillas Martínez |editor3=Brady Z. Clark |editor4=Stefan Kaufmann |title=The Construction of Meaning|publisher=CSLI Publications|year=2002}}
+* {{cite journal|title=Sequence of Tenses, or Was James Thurber the First Transformational Grammarian?|author=David DeCamp|journal=College Composition and Communication|volume=18|issue=1|date=February 1967|pages=7–13|doi=10.2307/354487|publisher=College Composition and Communication, Vol. 18, No. 1|jstor=354487}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Sequence Of Tenses}}
+[[Category:Grammar]]
+[[Category:Grammatical tenses]]
+[[Category:Syntactic relationships]]

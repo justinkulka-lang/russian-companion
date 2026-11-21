@@ -25,7 +25,17 @@ class DeviceAcceptancePackageTest {
         val manifest = Json.parseToJsonElement(
             File(root, RELEASE_EVIDENCE_MANIFEST).readText(),
         ).jsonObject
-        val workflow = File(root, ".github/workflows/build.yml").readText()
+        val currentWorkflow = File(root, ".github/workflows/build.yml").readText()
+        listOf("compileDebugSources", "lintDebug", "verifyReleaseGateAttachment", "testDebugUnitTest",
+            "engineering-verification-source", "engineering-test-reports").forEach {
+            assertTrue("Current verification CI must retain $it", currentWorkflow.contains(it))
+        }
+        listOf("assembleDebug", "packageDebug", "bundleDebug", "signDebug",
+            "acceptance-candidate-debug-apk", "artifact-identity.json", "|| true").forEach {
+            assertFalse("Engineering CI must not create or hide failure for $it", currentWorkflow.contains(it))
+        }
+        assertFalse("Host CI must run the full suite without test-name inclusion filters",
+            currentWorkflow.contains("--tests"))
         val formPaths = listOf(
             "release/acceptance/forms/AT-001.md",
             "release/acceptance/forms/AT-002.md",
@@ -71,13 +81,6 @@ class DeviceAcceptancePackageTest {
         assertTrue(instructions.contains("assembleDebug"))
         assertTrue(instructions.contains("NOT_APPROVED"))
         assertFalse(instructions.contains("\"state\": \"RETAINED\""))
-
-        assertTrue(workflow.contains("actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02"))
-        assertTrue(workflow.contains("acceptance-candidate-debug-apk"))
-        assertTrue(workflow.contains("artifact-identity.json"))
-        assertTrue(workflow.contains("if-no-files-found: error"))
-        assertTrue(workflow.contains("lintDebug"))
-        assertTrue(workflow.contains("verifyReleaseGateAttachment"))
 
         assertEquals("physical-device-acceptance-candidate", candidate.getValue("kind").jsonPrimitive.content)
         assertEquals("NOT_APPROVED", candidate.getValue("publicRelease").jsonPrimitive.content)

@@ -1,0 +1,252 @@
+{{also|Appendix:Variations of "pod"|под-|под.}}
+==Bulgarian==
+
+===Alternative forms===
+* {{alter|bg|подъ||pre-1945}}
+
+===Pronunciation===
+* {{bg-IPA}}
+* {{audio|bg|LL-Q7918 (bul)-Kiril kovachev-под.wav|a=Standard Bulgarian}}
+* {{homophones|bg|пот}}
+
+===Etymology 1===
+{{ety|bg|:inh|sla-pro:*podъ|text=+|tree=1}}
+
+====Noun====
+{{bg-noun|под|m}}
+
+# [[floor]] (ground)
+
+=====Declension=====
+{{bg-ndecl|под<>}}
+
+===Etymology 2===
+From {{inh|bg|cu|подъ}}, from {{inh|bg|sla-pro|*podъ}}. Equivalent to {{affix|bg|по|t1=upon, at|-д}}.
+
+====Preposition====
+{{head|bg|preposition}}
+
+# [[under]]
+# [[below]]
+
+===References===
+* {{R:bg:RBE}}
+* {{R:bg:RBE2}}
+
+===Anagrams===
+* {{anagrams|bg|a=доп|под-}}
+
+==Eastern Mari==
+
+===Etymology===
+From {{inh|mhr|chm-pro|*påt}}, from {{inh|mhr|urj-pro|*pata}}.
+
+===Pronunciation===
+{{mhr-pr}}
+
+===Noun===
+{{mhr-noun}} 
+
+# [[pot]], [[cauldron]]
+# [[boiler]]
+
+====Declension====
+{{mhr-decl|type=пуч}}
+
+====Derived terms====
+{{col1|mhr|title=nouns|кишпод}}
+
+===References===
+* {{R:mhr:ML|+}}
+
+{{C|mhr|Food and drink containers}}
+
+==Macedonian==
+
+===Pronunciation===
+* {{mk-IPA}}
+* {{homophones|mk|пот}}
+
+===Noun===
+{{mk-noun|m|adj=поден}}
+
+# [[floor]] (ground)
+
+====Declension====
+{{mk-decl-noun-m||подов|pov=1}}
+
+===Preposition===
+{{head|mk|preposition}}
+
+# [[under]]
+#: {{uxi|mk|Кучето се скри '''под''' столот.|The dog hid '''under''' the chair.}}
+# [[below]]
+#: {{uxi|mk|Тоа е закопано '''под''' земјата.|It is buried '''below''' the ground.}}
+
+==Russian==
+
+===Etymology 1===
+{{inh+|ru|sla-pro|*podъ}}.
+
+====Alternative forms====
+* {{alter|ru|подъ||ru-PRO}}
+* {{l|ru|подо}} {{q|before words beginning with certain awkward consonant clusters such as {{m|ru||мн-}}, {{m|ru||вс-}}, and {{m|ru||сн-}}}}
+
+====Pronunciation====
+* {{ru-IPA}}
+* {{ru-IPA|pɐt}} {{q|before a stressed syllable}}
+* {{ru-IPA|по́д}} {{q|when stressed}}
+* {{audio|ru|Ru-под.ogg}}
+* {{homophones|ru|пот}} {{q|when stressed}}
+
+====Preposition====
+{{head|ru|preposition}}
+
+# {{+obj|ru|acc|catpos=prep}}
+## [[under]], [[below]], [[beneath]] ({{n-g|movement to beneath a location}})
+##: {{uxi|ru|[[нырну́ть]] '''под''' [[во́ду]]|to dive '''under'''water}}
+##: {{uxi|ru|[[положи́ть]] '''под''' [[крова́ть]]|to put '''under''' a bed}}
+## [[under]] ({{n-g|beginning to fall under a condition, state or period of action}})
+##: {{uxi|ru|[[попа́сть]] '''под''' [[обстре́л]]|to fall/come '''under''' fire}}
+## [[towards]], [[to]]
+## [[approaching]], [[slightly]] [[less than]] (a quantitative characteristic, such as weight, age, etc.)
+##: {{uxi|ru|[[лет]] '''под''' [[со́рок]]|'''approaching''' forty years old}}
+## [[shortly]] [[before]], [[towards]], [[approaching]] (a time)
+##: {{uxi|ru|'''под''' [[ве́чер]]|'''towards'''/'''in''' the evening}}
+##: {{uxi|ru|'''под''' [[коне́ц]]|'''towards'''/'''in'''/'''at'''/'''by''' the end}}
+## in [[imitation]] of, [[à la]]
+##: {{uxi|ru|[[раскра́шенный]] '''под''' [[леопа́рда]]|painted '''to look like''' a leopard}}
+##: {{uxi|ru|[[га́лстук]] '''под''' [[цвет]] [[фо́рмы]]|a tie '''to match''' the colour/color of a uniform}}
+##: {{uxi|ru|[[под стать|'''под''' стать]]|to match}}
+## [[for]], [[suitable]] as
+##: {{uxi|ru|[[уча́сток]] '''под''' [[строи́тельство]] | land '''for''' construction}}
+##: {{uxi|ru|[[оста́вить]] [[уча́сток]] '''под''' [[карто́фель]] | to leave a plot for potatoes}}
+##: {{uxi|ru|[[отвести́]] [[помеще́ние]] '''под''' [[музе́й]] | to set aside a room for a museum}}
+<!-- ##: {{uxi|ru|[[приспосо́бить]] [[я́щик]] '''под''' [[стол]] | adapt a drawer for a table }} -->
+##: {{uxi|ru|[[ту́мбочка]] '''под''' [[телеви́зор]] | a bedside table for a television}}
+##: {{uxi|ru|[[земля́]] '''под''' [[хлеб]] | ground for bread}}
+##: {{uxi|ru|[[гото́вый]] '''под''' [[посе́в]] | ready for sowing}}
+##: {{uxi|ru|[[маленький|маленькую]] [[комната|ко́мнату]] [[отвести|отвели́]] '''под''' [[спальня|спа́льню]] | a small room was taken as a bedroom}}
+<!-- ##: {{uxi|ru|[[участок]] [[решено]] [[отдать]] '''под''' [[строительство]] [[бассейна]]| the plot is decided to give for building a swimming pool : it is planned to use the plot to build a swimming pool }} -->
+##: {{uxi|ru|[[корзи́на]] '''под''' [[картошка|карто́шку]] | basket for potatoes}}
+## [[to]] (a piece of music, the sound of...)
+##: {{uxi|ru|[[засыпа́ть]] '''под''' [[пе́сню]]|to fall asleep '''to''' a song}}
+# {{+obj|ru|ins|catpos=prep}}
+## [[under]], [[below]], [[beneath]] ({{n-g|being beneath a location}})
+##: {{uxi|ru|[[пла́вать]] '''под''' [[водо́й]]|to swim '''under'''water}}
+##: {{uxi|ru|'''под''' [[кры́шей]]|'''under''' a roof}}
+## [[under]] ({{n-g|being under a condition, state or period of action}})
+##: {{uxi|ru|'''под''' [[руково́дством]]|'''under''' the leadership (of)}}
+##: {{uxi|ru|'''под''' [[ви́дом]]|'''under''' the guise (of)}}
+##: {{uxi|ru|'''под''' [[прикры́тием]]|'''under'''cover / '''under''' the cover (of)}}
+## [[near]], [[by]]
+##: {{uxi|ru|[[сражение|Сражéние]] '''под''' [[Прохоровка|Прóхоровкой]]|The [[w:Battle of Prokhorovka|Battle of Prokhorovka]]|lit=The Battle '''near''' Prokhorovka}}
+##: {{uxi|ru|'''под''' [[руко́й]]|'''at'''/'''on''' hand}}
+## [[at]] (an angle)
+##: {{uxi|ru|'''под''' [[острый|о́стрым]] [[угло́м]]|'''at''' an acute angle}}
+
+=====Usage notes=====
+* {{m|ru|подо}} is used before words beginning with certain awkward consonant clusters such as {{m|ru||мн-}}, {{m|ru||вс-}}, and {{m|ru||сн-}}.
+
+====See also====
+* {{l|ru|под-}}
+
+===Etymology 2===
+{{inh+|ru|sla-pro|*podъ}}.
+
+====Alternative forms====
+* {{alter|ru|подъ||ru-PRO}}
+
+====Pronunciation====
+* {{ru-IPA|по́д}}
+
+====Noun====
+{{ru-noun+|c|loc=поду́}}
+
+# {{lb|ru|dated|rare}} [[hearth]], [[hearthstone]]
+# {{lb|ru|dated|rare}} [[floor]]
+
+=====Declension=====
+{{ru-noun-table|c|loc=поду́}}
+
+==Serbo-Croatian==
+
+===Etymology 1===
+{{inh+|sh|sla-pro|*podъ}}.
+
+====Pronunciation====
+* {{IPA|sh|/pôd/}}
+
+====Noun====
+{{sh-noun|по̏д|m-in}}
+
+# [[floor]]
+#: {{ux|sh|пасти на '''под'''|to fall to the '''floor'''|inline=1}}
+# [[ground]]
+
+=====Declension=====
+{{sh-decl-noun
+|по̏д|по̀дови
+|по̀да|подова
+|по̀ду|подовима
+|под|подове
+|поде|подови
+|по̀ду|подовима
+|подом|подовима
+}}
+
+===Etymology 2===
+{{inh+|sh|sla-pro|*podъ}}.
+
+====Alternative forms====
+* {{alt|sh|пода||}}
+
+====Pronunciation====
+* {{IPA|sh|/pod/}}
+
+====Preposition====
+{{sh-prep|под}}
+
+# [[under]], [[beneath]] (with change of position, answering the question {{m|sh|ку̀да}}) {{+obj|sh|acc}}
+#: {{ant|sh|и̏знад|над}}
+#: {{uxi|sh|с(ј)ела је '''под''' стабло|she sat '''under''' the tree}}
+#: {{uxi|sh|пао је '''под''' влак|he fell '''under''' the train}}
+# [[under]], [[beneath]] (stationary, answering the question {{m|sh|гдје̏}}/{{m|sh|где̏}}) {{+obj|sh|ins}}
+#: {{ant|sh|и̏знад|над}}
+#: {{uxi|sh|она с(ј)еди '''под''' стаблом|she is sitting '''under''' the tree}}
+#: {{uxi|sh|'''под''' сунцем|'''under''' the sun}}
+# [[under]], [[beneath]] (being in a particular condition) {{+obj|sh|ins}}
+#: {{uxi|sh|бити '''под''' сумњом|to be '''under''' suspicion}}
+#: {{uxi|sh|бити '''под''' притиском|to be '''under''' pressure}}
+#: {{uxi|sh|бити '''под''' дојмом|to be '''under''' impression}}
+#: {{uxi|sh|'''под''' оружјем|'''under''' arms}}
+#: {{uxi|sh|бити '''под''' надзором|to be '''under''' supervision/surveillance}}
+#: {{uxi|sh|бити '''под''' нечијом заштитом|to be '''under''' someone's protection}}
+#: {{uxi|sh|бити '''под''' нагласком|to be accented (stressed), to be '''under''' the accent (stress)}}
+#: {{uxi|sh|писати '''под''' псеудонимом|to write '''under''' the pen name, pseudonymously}}
+#: {{uxi|sh|бити '''под''' заклетвом|to be '''under''' oath}}
+# [[near]], [[toward]], [[in]] (temporal, with nouns denoting a final temporal segment) {{+obj|sh|acc}}
+#: {{uxi|sh|'''под''' јесен|'''toward''' fall}}
+#: {{uxi|sh|'''под''' крај|'''near''' the end}}
+#: {{uxi|sh|'''под''' старост|'''in''' one's old age}}
+# [[during]] (temporal) {{+obj|sh|ins}}
+#: {{uxi|sh|'''под''' одмором|'''during''' the (school) break}}
+#: {{uxi|sh|'''под''' паузом|'''during''' the (job) break}}
+#: {{uxi|sh|'''под''' сатом|'''during''' the (school) lesson}}
+#: {{uxi|sh|'''под''' владавином|'''during''' the reign of}}
+# [[as]], [[instead of]], [[in lieu of]] {{+obj|sh|acc}}
+#: {{uxi|sh|покушати продати мркву '''под''' роткву|to try selling carrot '''as''' radish}}
+# {{non-gloss|miscellaneous idiomatic meanings}}
+#: {{uxi|sh|то је '''под''' морање|that is obligatory}}
+#: {{uxi|sh|бацити '''под''' ноге|to reject, throw away}}
+#: {{uxi|sh|небу '''под''' облаке|far away}}
+#: {{uxi|sh|'''под''' ув(ј)етом/условом да|under the condition of, on the condition that}}
+#: {{uxi|sh|'''под''' изговором|under the pretext}}
+#: {{uxi|sh|'''под''' Загребом|near Zagreb}}
+#: {{uxi|sh|'''под''' Велебитом|at the foot of Velebit, on the foothills of Velebit}}
+#: {{uxi|sh|'''под''' коровом|covered/overgrown with weed}}
+#: {{uxi|sh|ништа '''под''' (милим) богом|absolutely nothing}}
+#: {{uxi|sh|'''под''' контролом (wитх генитиве)|under the control (of)}}
+#: {{uxi|sh|'''под''' тим(е) мислим|by that I mean}}
+#: {{uxi|sh|бити '''под''' антибиотицима|to be on antibiotics}}
+#: {{uxi|sh|'''под''' правим кутом|perpendicular}}

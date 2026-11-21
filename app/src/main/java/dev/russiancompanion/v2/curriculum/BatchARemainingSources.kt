@@ -41,6 +41,9 @@ internal object BatchARemainingSources {
     val INVARIANCE_ANSWER = "\u043d\u0435\u0438\u0437\u043c\u0435\u043d\u044f\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430"
     val INVARIANCE_DASH_LINE = "\u041d\u0430\u0440\u0435\u0447\u0438\u044f\u00a0\u2014 \u043d\u0435\u0438\u0437\u043c\u0435\u043d\u044f\u0435\u043c\u044b\u0435 \u0441\u043b\u043e\u0432\u0430:"
     const val INVARIANCE_RELATION = "immediately after the dash and before the colon"
+    /** T15b owner decision (11/16/2026): the checks ask what the dash-colon wording names, not where it is written. */
+    const val INVARIANCE_MEANING = "names the kind of words that adverbs are"
+    const val INVARIANCE_DISTRACTOR_REASON = "it does not name the kind of words they are"
     val INVARIANCE_POST_COLON = mapOf(
         "\u043d\u0435 \u0441\u043a\u043b\u043e\u043d\u044f\u044e\u0442\u0441\u044f" to ": \u043e\u043d\u0438 \u043d\u0435 \u0441\u043a\u043b\u043e\u043d\u044f\u044e\u0442\u0441\u044f",
         "\u043d\u0435 \u0441\u043f\u0440\u044f\u0433\u0430\u044e\u0442\u0441\u044f" to "\u0438 \u043d\u0435 \u0441\u043f\u0440\u044f\u0433\u0430\u044e\u0442\u0441\u044f",

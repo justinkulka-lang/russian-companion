@@ -26,6 +26,9 @@ class Units610InstructionalValidityTest {
             val unit = pack.unit(number)!!
             unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
                 val checks = objective.checkItemIds.map { id -> pack.items.first { it.id == id } }
+                // T16-n1 (D28a): the common assertions apply to every required check, typed or closed (the prompt and status
+                // checks below were applied only to feature-valid closed checks, so typed checks escaped them).
+                checks.forEach { item -> assertCommon(item) }
                 val qualifying = checks.filter { V2Validator.featureValid(pack, it) }
                 assertTrue("${objective.id} has no independent feature-valid check", qualifying.isNotEmpty())
                 qualifying.forEach { item ->
@@ -122,12 +125,39 @@ class Units610InstructionalValidityTest {
     }
 
     @Test
+    fun typedChecksKeepTheCommonAssertionsAndFaultInjectionsFail() {
+        // T16-n1 (D28a): the Codex fault injections, applied to a Units 6-10 typed check, fail.
+        val item = pack().items.single { it.id == "u10-i-type-nas" }
+        assertCommon(item)
+        val rejected = org.junit.Assert.assertThrows(AssertionError::class.java) { assertCommon(item.copy(reviewStatus = "REJECTED")) }
+        assertTrue(rejected.message, rejected.message.orEmpty().contains(item.id))
+        val colocated = org.junit.Assert.assertThrows(AssertionError::class.java) {
+            assertCommon(item.copy(prompt = item.prompt + " Use another cell of the same table."))
+        }
+        assertTrue(colocated.message, colocated.message.orEmpty().contains("${item.id} uses a source co-location prompt"))
+    }
+
+    private fun assertCommon(item: dev.russiancompanion.v2.curriculum.V2CheckItem) {
+        val colocated = Regex("(?i)\\bother row\\b|\\bother line\\b|same frozen record|another cell of the same")
+        val englishCue = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
+        assertFalse("${item.id} uses a source co-location prompt", colocated.containsMatchIn(item.prompt))
+        assertFalse("${item.id} keeps a recorded-for prompt", englishCue.containsMatchIn(item.prompt))
+        assertEquals(item.id, "IMPLEMENTED_PENDING_FINAL_AUDIT", item.reviewStatus)
+        item.typedAnswerKey?.let { key ->
+            assertEquals(item.id, "TYPED_FORM", item.kind)
+            assertTrue(item.id, item.answer.isNotBlank() && item.options.isEmpty() && item.answer in key.acceptedAnswers)
+            assertEquals(item.id, item.reviewStatus, key.review?.status)
+        } ?: assertEquals(item.id, 1, item.options.count { it == item.answer })
+    }
+
+    @Test
     fun guidedOnlyContrastsDoNotSatisfyARecognitionObjective() {
         val pack = pack()
         val objective = pack.unit(6)!!.objectives.first { it.id == "obj-u6-possessive" }
         val guidedOnly = pack.copy(
             items = pack.items.map { item ->
-                if (item.id in objective.checkItemIds) {
+                // T15a: typed items have no assessment and are never feature-valid closed checks.
+                if (item.id in objective.checkItemIds && item.assessment != null) {
                     item.copy(assessment = item.assessment!!.copy(independent = false))
                 } else {
                     item
@@ -370,7 +400,7 @@ class Units610InstructionalValidityTest {
         val pack = pack()
         val replacement = "a different frozen span that keeps the truncated record id"
         val hash = sha256(replacement)
-        listOf("u6-i-third-1" to "SOURCE_SUPPLIED_PAIR", "u8-i-availability-2" to "RULE_CLASSIFIES_SOURCE_EXAMPLE").forEach { (itemId, kind) ->
+        listOf("u6-i-third-1" to "SOURCE_SUPPLIED_PAIR", "u8-i-availability-2" to "STATED_APPLICATION").forEach { (itemId, kind) ->
             val seed = pack.items.first { it.id == itemId }
             assertEquals(kind, seed.assessment!!.relationKind)
             val answerId = seed.assessment.relationParticipantIds[1]
@@ -469,16 +499,16 @@ class Units610InstructionalValidityTest {
         val pack = pack()
         data class Boundary(val feature: String, val shown: String, val answer: String)
         val required = listOf(
-            Boundary("FINAL_DIGIT_ONE", "сорок один год", "1 -> nominative"),
-            Boundary("COMPOUND_22", "двадцать два часа", "2, 3, 4 -> genitive singular"),
-            Boundary("FINAL_DIGIT_FIVE_PLUS", "пять часов", "5 and more -> genitive plural"),
-            Boundary("FINAL_ZERO_OR_TEN", "десять копеек", "5 and more -> genitive plural"),
-            Boundary("TEENS_OVERRIDE", "двести тринадцать собак", "5 and more -> genitive plural"),
-            Boundary("TEEN_VALUE", "шестнадцать рублей", "5 and more -> genitive plural"),
-            Boundary("COMPOUND_21", "двадцать один час", "1 -> nominative"),
+            Boundary("FINAL_DIGIT_ONE", "сорок один год", "In this basic counting phrase, the noun is nominative singular."),
+            Boundary("COMPOUND_22", "двадцать два часа", "In this basic counting phrase, the noun is genitive singular."),
+            Boundary("FINAL_DIGIT_FIVE_PLUS", "пять часов", "In this basic counting phrase, the noun is genitive plural."),
+            Boundary("FINAL_ZERO_OR_TEN", "десять копеек", "In this basic counting phrase, the noun is genitive plural."),
+            Boundary("TEENS_OVERRIDE", "двести тринадцать собак", "In this basic counting phrase, the noun is genitive plural."),
+            Boundary("TEEN_VALUE", "шестнадцать рублей", "In this basic counting phrase, the noun is genitive plural."),
+            Boundary("COMPOUND_21", "двадцать один час", "In this basic counting phrase, the noun is nominative singular."),
             Boundary("HUNDREDS_COMPOSITION", "215", "две́сти пятна́дцать"),
             Boundary("THOUSANDS_COMPOSITION", "1,984", "ты́сяча девятьсо́т во́семьдесят четы́ре"),
-            Boundary("ODIN_MASCULINE", "мальчик", "один"),
+            Boundary("ODIN_MASCULINE", "час", "один"),
             Boundary("ODIN_FEMININE", "девушка", "одна"),
             Boundary("ODIN_NEUTER", "животное", "одно"),
             Boundary("ODIN_PLURAL", "джинсы", "одни"),
@@ -502,11 +532,12 @@ class Units610InstructionalValidityTest {
             assertFalse(V2Validator.isDirectEnglishMatch(match))
         }
         val pattern = independent.filter { it.objectiveId == "obj-u9-pattern" }
-        assertTrue(pattern.any { it.answer.contains("must be declined") })
+        assertTrue(pattern.any { it.answer.contains("both numeral and noun are declined") })
         val unit7 = pack.unit(7)!!
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit7.readiness)
         val lesson = unit7.sessions.flatMap { it.steps }.joinToString("\n") { it.body + (it.bookDirection ?: "") }
-        assertTrue(lesson.contains("short-form adjective section stays out"))
+        // T15f (owner decision D8): what the unit does not teach leaves the book direction.
+        assertFalse(lesson.contains("short-form adjective section stays out"))
         assertTrue(lesson.contains("the correspondence is not a universal generator"))
         assertFalse(lesson.contains("most adverbs are formed"))
         assertFalse(lesson.contains("хорошое"))

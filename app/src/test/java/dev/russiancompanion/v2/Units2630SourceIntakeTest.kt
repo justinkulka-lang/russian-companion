@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.testing.pythonProcess
+
 import dev.russiancompanion.release.ReleaseDecision
 import dev.russiancompanion.release.assessRepositoryRelease
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
@@ -28,31 +30,29 @@ import java.security.MessageDigest
 
 class Units2630SourceIntakeTest {
     private val preservedContentDigests = mapOf(
-        1 to "9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a",
-        2 to "d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b",
-        3 to "deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86",
-        4 to "5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c",
-        5 to "9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d",
-        6 to "fa6501022bd7ff4a2eca1e47c0ad488d96254cab0eafbecc61a8420835a3ab9c",
-        7 to "ec283b3bc0e58306d84e536947ab747d5ea264cea729bf4838124404ca958359",
-        8 to "e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78",
-        9 to "d0f135c408fc429392cf695a8122134013fca69637a4f9c1587db3fec6b3c65f",
-        10 to "6845b398da6ad901b06443dd0f56ee6ace4ba4e2da6af9e36d33934dc286c526",
-        11 to "7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324",
-        12 to "c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb",
-        13 to "e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5",
-        14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
-        15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
-        16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
-        17 to "a3d3b89b7359bac0dc1ba33483c819e31f22f69c0344be860dbac286637a404c",
-        18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
-        19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
-        20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
-        21 to "be229fd6909ee2663ef49f2a88741a44b4d1ffddfc93cb916494e505ba853731",
-        22 to "5eedc53e9a70ce5450ad9ee6f4925047b94eab0517421114d742d605f730c3e7",
-        23 to "c36a981c973461d21ecd043d5206e79176991693633eec901ee912442cc4ef89",
-        24 to "d557dba12bf09b845df91a5f49bbc3a91a7008607a9183995c2ae36cbd088221",
-        25 to "3c6c42830c7ae91ad1450a91535652175ffa9389e89a21cb26d51591852fbd52",
+        // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
+        // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
+        3 to "f39c7b5fee5302433ae0fe158f12bcb3c4d04c928efa11c45db04645d5f7218a",
+        // T15g A4: prov-d7b-u16-029 re-cited to adjectives-4292379.txt:67 (was 17e7a641...).
+        16 to "16d20fdf3587db1128b4bb923c938074db69f4ba28976914067b40939a90e9c4",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 17 was 6b680bda...).
+        17 to "1a196e20f918ad53c13bed5b4f593763fecbb3a9c1d7047fb94d572be4e158e0",
+        18 to "3c4ae8dd52293871574a5968c224388e31eb8c838e61a63dc2271fdb3e79073a",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
+        19 to "2b598d3eae9d945a6971cc67c0d6a234a882049517cdde75dbbfacf7ad98105f",
+        20 to "c7d467ab59e13dcf9646974a92013a5d0228bc01b92cc8873740ced770e71194",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 21 was 566c3430...).
+        21 to "d12264d17367012c70155c9a941f1f7d299efd6474add69ae555639c5a85bd06",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 22 was 3af10509...).
+        22 to "633e8b20d1e693fb5f0eb4895af733eaa233808d441f90dc85c49baf8ed5c897",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 23 was 817b1d8f...).
+        23 to "a48cbf45c83b04add2bb09d154cd9f9b6171820c8ba32dee2dc97a30fd92a2e2",
+        // S1: Unit 24 gains frozen records for the dative and instrumental of nekogo (was 500af59a...).
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 24 was e35b8db2...).
+        24 to "4e9dddb979aa7c0add34bd399e0a3746c6d1d75db0ddfe0c7d4258d7ec3e1a32",
+        // T15g A4: prov-d7b-u25-038 re-cited to russian-grammar-1369617627.txt:1169 (was 4bc90e89...).
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 25 was a3d5745c...).
+        25 to "a3a51fdf4e1866e7996ac8c617cda0916bf469f33ba1f37a56acb3518562aaa5",
     )
 
     private val preservedMappingDigests = mapOf(
@@ -192,6 +192,8 @@ class Units2630SourceIntakeTest {
                 assertFalse(host.attribution.contains("Wiktionary:Copyrights"))
                 assertTrue(host.sourceUrl.contains("readyrussian.org"))
                 assertNull(host.audioAssetId)
+            } else if (host.sourceId == "src-content-audit-research") {
+                assertContentAuditResearch(host)
             } else if (host.sourceId == "src-original-research-synthesis") {
                 assertEquals("Original app text", host.licenseId)
                 assertEquals("urn:russian-companion:license:original-app-text", host.licenseUrl)
@@ -346,7 +348,7 @@ class Units2630SourceIntakeTest {
             assert any('does not state CC BY-SA 4.0' in error for error in missing_statement), missing_statement
             print('ok')
         """.trimIndent()
-        val process = ProcessBuilder("python3", "-c", script)
+        val process = pythonProcess("-c", script)
             .directory(File(root, "catalog"))
             .redirectErrorStream(true)
             .start()
@@ -388,7 +390,7 @@ class Units2630SourceIntakeTest {
             assert admitted.startswith('Basic word order')
             print('ok')
         """.trimIndent()
-        val process = ProcessBuilder("python3", "-c", script)
+        val process = pythonProcess("-c", script)
             .directory(File(root, "catalog"))
             .redirectErrorStream(true)
             .start()
@@ -398,8 +400,14 @@ class Units2630SourceIntakeTest {
 
     @Test
     fun forgedMutableWrongAndExcludedSourcesStayClosed() {
-        val pack = pack()
-        val host = pack.sourceCapabilities.single { it.id == "cap-obj-u26-word-order" }
+        val live = pack()
+        // Preserve the original frozen-source mutation coverage after the live claim moves to pending contextual synthesis.
+        val historical = live.provenanceRecords.first { it.sourceHash == "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6" }
+        val host = live.sourceCapabilities.single { it.id == "cap-obj-u26-word-order" }.copy(
+            sourceId=historical.sourceId,sourceRevision=historical.sourceRevision,sourceRecordId=historical.sourceRecordId,
+            sourceHash=historical.sourceHash,exactSpan=historical.originalSourceText,
+        )
+        val pack = live.copy(sourceCapabilities=live.sourceCapabilities.map { if(it.id==host.id)host else it })
         val provenance = pack.provenanceRecords.first {
             it.sourceRecordId == host.sourceRecordId && it.originalSourceText == host.exactSpan
         }
@@ -493,7 +501,32 @@ class Units2630SourceIntakeTest {
         assertTrue(generatedErrors.joinToString("\n"), generatedErrors.any { it.contains("generated") || it.contains(generated.id) })
         val curriculum = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(curriculum.contains("The New Penguin Russian Course"))
-        assertFalse(curriculum.contains(".pdf"))
+        // A verified primary-reference URL in research metadata is not a bundled PDF.
+        val cornellReference = "https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf"
+        val upuReference = "https://www.upu.int/UPU/media/upu/PostalEntitiesFiles/addressingUnit/rusEn.pdf"
+        assertFalse(curriculum.replace(cornellReference, "").replace(upuReference, "").contains(".pdf"))
+        assertTrue(pack.provenanceRecords.filter { it.originalSourceText.contains(upuReference) }.all {
+            it.itemId.startsWith("prov-ca-u26-postal-") && it.unitNumber == 26 &&
+                it.objectiveId == "obj-u26-postal-address" && it.sourceId == "src-content-audit-research"
+        })
+        assertTrue(pack.provenanceRecords.filter { it.originalSourceText.contains(cornellReference) }.all {
+            ((it.itemId.startsWith("prov-ca-u6-worked-") && it.unitNumber == 6 && it.objectiveId == "obj-u6-possessive") ||
+                (it.itemId.startsWith("prov-ca-u7-worked-") && it.unitNumber == 7 && it.objectiveId == "obj-u7-spelling")) &&
+                it.sourceId == "src-content-audit-research"
+        })
+        assertTrue(pack.provenanceRecords.none { it.shippedText.contains(".pdf") })
+        assertTrue(pack.units.flatMap { it.sessions }.flatMap { it.steps }.none { step ->
+            listOf(step.title, step.body, step.bookDirection.orEmpty(), step.companionDirection.orEmpty())
+                .any { it.contains(".pdf") }
+        })
+        assertTrue(pack.items.none { item ->
+            (listOf(item.prompt, item.promptLetter.orEmpty(), item.feedback, item.answer) +
+                item.options + item.distractorRationales).any { it.contains(".pdf") }
+        })
+        assertTrue(pack.examples.none { it.display.contains(".pdf") || it.note.contains(".pdf") })
+        assertFalse(File(root, "app/src/main/assets").walkTopDown().any {
+            it.isFile && it.extension.equals("pdf", ignoreCase = true)
+        })
         assertFalse(curriculum.contains("not vital"))
         assertFalse(curriculum.contains("predictible"))
         assertFalse(File(root, "app/src/main/AndroidManifest.xml").readText().contains("android.permission.INTERNET"))
@@ -705,7 +738,7 @@ class Units2630SourceIntakeTest {
         assertTrue(readings.exampleIds.size >= 2)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
         val unit28 = pack.unit(28)!!
-        val advanced = advancementDecision(
+        val advanced = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
             pack,
             unit28,
             learner(28, book = true).copy(
@@ -717,6 +750,19 @@ class Units2630SourceIntakeTest {
             ),
         )
         assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+            val advancedFull = advancementDecision(
+            pack,
+            unit28,
+            learner(28, book = true).copy(
+                completedStepIds = unit28.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+                correctItemIds = (
+                    unit28.objectives.flatMap { it.checkItemIds } +
+                        unit28.sessions.flatMap { it.steps }.flatMap { it.itemIds }
+                    ).toSet(),
+            ),
+        )
+            assertFalse(advancedFull.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), advancedFull.remaining)
         assertFalse(advanced.remaining.any { it.contains("verbal-adverb-reading") })
 
         listOf(27, 29, 30).forEach { number ->
@@ -864,6 +910,10 @@ class Units2630SourceIntakeTest {
     private fun V2SourceCapability.sourceUrlBound(pack: V2CurriculumPack): Boolean {
         return pack.provenanceRecords.any {
             it.sourceId == sourceId && it.sourceRevision == sourceRevision && (
+                (it.sourceId == "src-content-audit-research" &&
+                    it.sourceUrl == "urn:russian-companion:content-audit-research:2026-10-08" &&
+                    sourceRevision == "content-audit-2026-10-08" &&
+                    it.synthesis != null) ||
                 it.sourceUrl.contains("oldid=$sourceRevision") ||
                     (it.sourceId.startsWith("src-readyrussian-") &&
                         it.sourceUrl.contains("readyrussian.org") &&

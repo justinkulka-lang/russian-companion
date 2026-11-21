@@ -1,0 +1,20 @@
+==Russian==
+
+===Etymology===
+{{bor+|ru|cu|[[да]] [[бꙑти|бꙑ]]}}. {{surf|ru|да|бы}}.
+
+===Pronunciation===
+* {{ru-IPA|да́бы}}
+* {{audio|ru|Ru-дабы.ogg}}
+* {{qualifier|dated}} {{ru-IPA|дабы́}}
+
+===Conjunction===
+{{head|ru|conjunction|head=да́бы|head2=дабы́}}
+
+# {{lb|ru|archaic|non-standard colloquial}} [[in order to]], [[in order that]], [[so that]]
+#: {{syn|ru|что́бы<q:common term>}}
+#: {{ux|ru|'''да́бы''' [[я]] [[этот|э́то]] [[знать|знал]]|t='''in order that''' I might know it}}
+#* {{quote-book|ru|year=1836|author=w:ru:Александр Пушкин|title=w:ru:Капитанская дочка|chapter=[[s:ru:Капитанская_дочка_(Пушкин)/1960_(СО)/Глава_VI|Глава VI. Пугачёвщина]]|location=London|publisher=Henry S. King & Co.|newversion=English translation from|translator2=Ekaterina Telfer|title2=The Captain's Daughter|location2=|publisher2=|year2=1875|page2=|pageurl2=|text=Василиса Егоровна сделала ему несколько замечаний касательно хозяйства, как судия, начинающий следствие вопросами посторонними, '''дабы''' сперва усыпить осторожность ответчика.|t=Vassilissa Yegorovna made some remarks having reference to housekeeping, like a judge who prefaces his interrogatory by putting irrelevant questions '''in order to''' throw the accused off his guard.}}
+
+====Usage notes====
+* Particularly since the 21st century, this conjunction (stressed as ''да́бы'') has re-entered colloquial usage as a more flavorful or intimate synonym to {{l|ru|чтобы}}. This is often seen as improper by older speakers. Historically, ''дабы'' became increasingly archaic following the end of the 18th century, but it remains amply attested in literature.

@@ -1,0 +1,1572 @@
+{
+  "baselineCommit": "9decefb23cd1cdb2ee780e79f5964a54944554fd",
+  "upstreamCommit": "T15a-n1",
+  "scope": "All 67 English-only Unit 6 entries from the immutable T15-n0 inventory. Removed entries stay absent; replacement facts are independently required to be marked and sourced. T15a-n1: sourceRecordIds now name frozen-source records only (OpenRussian row cells, Wikibooks spans); coverage records never satisfy a marker.",
+  "entries": [
+    {
+      "entry": "U6-E01",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "Choose the form from the noun, not from the gender of its owner.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-w111"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-w111."
+    },
+    {
+      "entry": "U6-E02",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-possessive-rem",
+        "prov-ex-u6-possessive-0-en",
+        "prov-ex-u6-possessive-1-en"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-possessive-rem, prov-ex-u6-possessive-0-en, prov-ex-u6-possessive-1-en."
+    },
+    {
+      "entry": "U6-E03",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "The form follows the noun being described.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-w111"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-w111."
+    },
+    {
+      "entry": "U6-E04",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "A singular noun does not take the plural form in these choices.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "T15g (D18d): the sentence is reworded to \"A singular noun does not take the plural form.\"; that new marker cites the same frozen records (prov-t15an1-u6-w57) and has its own marker review."
+    },
+    {
+      "entry": "U6-E05",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "Keep the same noun and feminine singular agreement.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-w57"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-w57."
+    },
+    {
+      "entry": "U6-E06",
+      "ownerId": "u6-st-rem-possessive",
+      "field": "remediation body",
+      "baselineSentence": "Both mean your.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-or-u6-possessive-8-gloss",
+        "prov-ex-or-u6-possessive-9-gloss"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-or-u6-possessive-8-gloss, prov-ex-or-u6-possessive-9-gloss."
+    },
+    {
+      "entry": "U6-E07",
+      "ownerId": "u6-g-third-0",
+      "field": "item feedback",
+      "baselineSentence": "These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-third-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-third-rem."
+    },
+    {
+      "entry": "U6-E08",
+      "ownerId": "u6-st-rem-third",
+      "field": "remediation body",
+      "baselineSentence": "These do not decline according to the gender or number of the modified noun.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-third-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-third-rem."
+    },
+    {
+      "entry": "U6-E09",
+      "ownerId": "u6-i-third-1",
+      "field": "item feedback",
+      "baselineSentence": "These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-third-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-third-rem."
+    },
+    {
+      "entry": "U6-E10",
+      "ownerId": "u6-i-third-2",
+      "field": "item feedback",
+      "baselineSentence": "These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-third-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-third-rem."
+    },
+    {
+      "entry": "U6-E11",
+      "ownerId": "u6-g-object-0",
+      "field": "item feedback",
+      "baselineSentence": "Both have the same meaning, I love you: the subject and object keep their roles and forms.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-u6-object-1-en",
+        "prov-ex-u6-object-2-en",
+        "prov-t15an1-u6-w6"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-u6-object-1-en, prov-ex-u6-object-2-en, prov-t15an1-u6-w6."
+    },
+    {
+      "entry": "U6-E12",
+      "ownerId": "u6-g-object-0",
+      "field": "item distractor rationale",
+      "baselineSentence": "This option repeats the shown order instead of moving the object before or after the verb.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-u6-object-1-ru",
+        "prov-ex-u6-object-2-ru"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-u6-object-1-ru, prov-ex-u6-object-2-ru."
+    },
+    {
+      "entry": "U6-E13",
+      "ownerId": "u6-i-object-1",
+      "field": "item feedback",
+      "baselineSentence": "Both have the same meaning, I love you: the subject and object keep their roles and forms.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Removed by upstream typed-item replacement."
+    },
+    {
+      "entry": "U6-E14",
+      "ownerId": "u6-i-object-1",
+      "field": "item distractor rationale",
+      "baselineSentence": "This option repeats the shown order instead of moving the object before or after the verb.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Removed by upstream typed-item replacement."
+    },
+    {
+      "entry": "U6-E15",
+      "ownerId": "u6-i-object-2",
+      "field": "item feedback",
+      "baselineSentence": "means cats hate dogs.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E16",
+      "ownerId": "u6-i-object-2",
+      "field": "item feedback",
+      "baselineSentence": "The cats are the subject and the dogs the accusative object.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E17",
+      "ownerId": "u6-i-object-2",
+      "field": "item feedback",
+      "baselineSentence": "Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E18",
+      "ownerId": "u6-i-object-2",
+      "field": "item feedback",
+      "baselineSentence": "The other option repeats dogs hate cats.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E19",
+      "ownerId": "u6-i-object-2",
+      "field": "item distractor rationale",
+      "baselineSentence": "This option repeats the shown subject and object roles instead of reversing who hates whom.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E20",
+      "ownerId": "u6-i-object-3",
+      "field": "item feedback",
+      "baselineSentence": "means dogs hate cats.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E21",
+      "ownerId": "u6-i-object-3",
+      "field": "item feedback",
+      "baselineSentence": "The dogs are the subject and the cats the accusative object.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E22",
+      "ownerId": "u6-i-object-3",
+      "field": "item feedback",
+      "baselineSentence": "Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E23",
+      "ownerId": "u6-i-object-3",
+      "field": "item feedback",
+      "baselineSentence": "The other option repeats cats hate dogs.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E24",
+      "ownerId": "u6-i-object-3",
+      "field": "item distractor rationale",
+      "baselineSentence": "This option repeats the shown subject and object roles instead of reversing who hates whom.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E25",
+      "ownerId": "u6-st-rem-feminine",
+      "field": "remediation body",
+      "baselineSentence": "Feminine gender is not the only group with that ending.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-papa-gender",
+        "prov-t15an1-u6-papa-sg-acc"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-papa-gender, prov-t15an1-u6-papa-sg-acc."
+    },
+    {
+      "entry": "U6-E26",
+      "ownerId": "u6-g-animacy-0",
+      "field": "item feedback",
+      "baselineSentence": "For this masculine animate noun, the singular accusative has the same form as the genitive.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-brat-gender",
+        "prov-t15an1-u6-brat-animate",
+        "prov-t15an1-u6-brat-sg-gen",
+        "prov-ex-or-u6-animacy-5",
+        "prov-u6-animacy-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-brat-gender, prov-t15an1-u6-brat-animate, prov-t15an1-u6-brat-sg-gen, prov-ex-or-u6-animacy-5, prov-u6-animacy-rem."
+    },
+    {
+      "entry": "U6-E27",
+      "ownerId": "u6-g-animacy-0",
+      "field": "item feedback",
+      "baselineSentence": "The nominative names the subject or dictionary entry.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E28",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Its singular nominative and accusative have the same spelling and stress.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-or-u6-animacy-0",
+        "prov-ex-or-u6-animacy-1"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-or-u6-animacy-0, prov-ex-or-u6-animacy-1."
+    },
+    {
+      "entry": "U6-E29",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "A direct object can be accusative even when its form matches nominative.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-animacy-x-0",
+        "prov-t15an1-u6-w4"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-animacy-x-0, prov-t15an1-u6-w4."
+    },
+    {
+      "entry": "U6-E30",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Dictionary English notes name a sense; they are not complete sentence translations.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Reworded in T15a-n1 (owner decision 11/14/2026) to instruction or scope text that states no Russian fact, identically in the remediation and its teaching step: no frozen file under catalog/sources states the original claim."
+    },
+    {
+      "entry": "U6-E31",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-animacy-x-0",
+        "prov-u6-animacy-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-animacy-x-0, prov-u6-animacy-rem."
+    },
+    {
+      "entry": "U6-E32",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Matching a genitive form does not change the accusative syntactic role.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-animacy-rem",
+        "prov-t15an1-u6-w4"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-animacy-rem, prov-t15an1-u6-w4."
+    },
+    {
+      "entry": "U6-E33",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Reworded in T15a-n1 (owner decision 11/14/2026) to instruction or scope text that states no Russian fact, identically in the remediation and its teaching step: no frozen file under catalog/sources states the original claim."
+    },
+    {
+      "entry": "U6-E34",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Its singular accusative matches its singular nominative.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-or-u6-animacy-2",
+        "prov-ex-or-u6-animacy-3"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-or-u6-animacy-2, prov-ex-or-u6-animacy-3."
+    },
+    {
+      "entry": "U6-E35",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Reworded in T15a-n1 (owner decision 11/14/2026) to instruction or scope text that states no Russian fact, identically in the remediation and its teaching step: no frozen file under catalog/sources states the original claim."
+    },
+    {
+      "entry": "U6-E36",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Brother is masculine animate; this accusative is genitive-shaped.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-brat-gender",
+        "prov-t15an1-u6-brat-animate",
+        "prov-t15an1-u6-brat-sg-gen",
+        "prov-ex-or-u6-animacy-5",
+        "prov-u6-animacy-rem",
+        "prov-ex-or-u6-animacy-4-gloss"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-brat-gender, prov-t15an1-u6-brat-animate, prov-t15an1-u6-brat-sg-gen, prov-ex-or-u6-animacy-5, prov-u6-animacy-rem, prov-ex-or-u6-animacy-4-gloss."
+    },
+    {
+      "entry": "U6-E37",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Teacher is masculine animate; its singular accusative has the same form as its singular genitive.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-uchitel-gender",
+        "prov-t15an1-u6-uchitel-animate",
+        "prov-t15an1-u6-uchitel-sg-gen",
+        "prov-ex-or-u6-animacy-7",
+        "prov-ex-or-u6-animacy-6-gloss"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-uchitel-gender, prov-t15an1-u6-uchitel-animate, prov-t15an1-u6-uchitel-sg-gen, prov-ex-or-u6-animacy-7, prov-ex-or-u6-animacy-6-gloss."
+    },
+    {
+      "entry": "U6-E38",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "Do not treat form syncretism as two different semantic case roles being interchangeable.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Reworded in T15a-n1 (owner decision 11/14/2026) to instruction or scope text that states no Russian fact, identically in the remediation and its teaching step: no frozen file under catalog/sources states the original claim."
+    },
+    {
+      "entry": "U6-E39",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "instead contains a masculine inanimate chair as direct object: its accusative matches nominative.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-animacy-transfer-native-chair",
+        "prov-t15an1-u6-stul-gender",
+        "prov-t15an1-u6-stul-animate",
+        "prov-t15an1-u6-stul-sg-nom",
+        "prov-t15an1-u6-stul-sg-acc"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-animacy-transfer-native-chair, prov-t15an1-u6-stul-gender, prov-t15an1-u6-stul-animate, prov-t15an1-u6-stul-sg-nom, prov-t15an1-u6-stul-sg-acc."
+    },
+    {
+      "entry": "U6-E40",
+      "ownerId": "u6-st-rem-animacy",
+      "field": "remediation body",
+      "baselineSentence": "The imperfective verb does not establish completed action; no aspect or full-translation claim is tested.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Reworded in T15a-n1 (owner decision 11/14/2026) to instruction or scope text that states no Russian fact, identically in the remediation and its teaching step: no frozen file under catalog/sources states the original claim."
+    },
+    {
+      "entry": "U6-E41",
+      "ownerId": "u6-i-animacy-1",
+      "field": "item feedback",
+      "baselineSentence": "For this masculine animate noun, the singular accusative has the same form as the genitive.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-uchitel-gender",
+        "prov-t15an1-u6-uchitel-animate",
+        "prov-t15an1-u6-uchitel-sg-gen",
+        "prov-ex-or-u6-animacy-7",
+        "prov-u6-animacy-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-uchitel-gender, prov-t15an1-u6-uchitel-animate, prov-t15an1-u6-uchitel-sg-gen, prov-ex-or-u6-animacy-7, prov-u6-animacy-rem."
+    },
+    {
+      "entry": "U6-E42",
+      "ownerId": "u6-i-animacy-1",
+      "field": "item feedback",
+      "baselineSentence": "The nominative names the subject or dictionary entry.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E43",
+      "ownerId": "u6-i-animacy-2",
+      "field": "item feedback",
+      "baselineSentence": "For this masculine animate noun, the singular accusative has the same form as the genitive.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-drug-gender",
+        "prov-t15an1-u6-drug-animate",
+        "prov-t15an1-u6-drug-sg-gen",
+        "prov-ex-or-u6-animacy-9",
+        "prov-u6-animacy-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-drug-gender, prov-t15an1-u6-drug-animate, prov-t15an1-u6-drug-sg-gen, prov-ex-or-u6-animacy-9, prov-u6-animacy-rem."
+    },
+    {
+      "entry": "U6-E44",
+      "ownerId": "u6-i-animacy-2",
+      "field": "item feedback",
+      "baselineSentence": "The nominative names the subject or dictionary entry.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E45",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item feedback",
+      "baselineSentence": "In the supplied chair clause, the direct object is masculine singular and inanimate.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-animacy-transfer-native-chair",
+        "prov-t15an1-u6-stul-gender",
+        "prov-t15an1-u6-stul-animate"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-animacy-transfer-native-chair, prov-t15an1-u6-stul-gender, prov-t15an1-u6-stul-animate."
+    },
+    {
+      "entry": "U6-E46",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item feedback",
+      "baselineSentence": "The masculine inanimate direct object keeps the nominative form.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-animacy-x-0"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-animacy-x-0."
+    },
+    {
+      "entry": "U6-E47",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item feedback",
+      "baselineSentence": "The accusative role does not require a different spelling here.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-animacy-x-0",
+        "prov-t15an1-u6-stul-sg-nom",
+        "prov-t15an1-u6-stul-sg-acc"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-animacy-x-0, prov-t15an1-u6-stul-sg-nom, prov-t15an1-u6-stul-sg-acc."
+    },
+    {
+      "entry": "U6-E48",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item feedback",
+      "baselineSentence": "The teacher and friend examples are animate and instead have genitive-shaped singular accusatives.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-uchitel-animate",
+        "prov-t15an1-u6-uchitel-sg-gen",
+        "prov-ex-or-u6-animacy-7",
+        "prov-t15an1-u6-drug-animate",
+        "prov-t15an1-u6-drug-sg-gen",
+        "prov-ex-or-u6-animacy-9",
+        "prov-u6-animacy-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-uchitel-animate, prov-t15an1-u6-uchitel-sg-gen, prov-ex-or-u6-animacy-7, prov-t15an1-u6-drug-animate, prov-t15an1-u6-drug-sg-gen, prov-ex-or-u6-animacy-9, prov-u6-animacy-rem."
+    },
+    {
+      "entry": "U6-E49",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item feedback",
+      "baselineSentence": "Form identity does not turn the chair into a subject or change this into a genitive case.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-animacy-transfer-native-chair",
+        "prov-t15an1-u6-w4"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-animacy-transfer-native-chair, prov-t15an1-u6-w4."
+    },
+    {
+      "entry": "U6-E50",
+      "ownerId": "u6-i-animacy-3",
+      "field": "item distractor rationale",
+      "baselineSentence": "The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-t15an1-u6-uchitel-animate",
+        "prov-t15an1-u6-drug-animate",
+        "prov-t15an1-u6-stul-animate",
+        "prov-u6-animacy-rem",
+        "prov-u6-animacy-x-0"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-t15an1-u6-uchitel-animate, prov-t15an1-u6-drug-animate, prov-t15an1-u6-stul-animate, prov-u6-animacy-rem, prov-u6-animacy-x-0."
+    },
+    {
+      "entry": "U6-E51",
+      "ownerId": "u6-g-pronoun-0",
+      "field": "item feedback",
+      "baselineSentence": "Match the same person and number across the nominative and accusative table columns.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-u6-pronoun-0-ru",
+        "prov-ex-u6-pronoun-1-ru"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-u6-pronoun-0-ru, prov-ex-u6-pronoun-1-ru."
+    },
+    {
+      "entry": "U6-E52",
+      "ownerId": "u6-i-pronoun-1",
+      "field": "item feedback",
+      "baselineSentence": "Match the same person and number across the nominative and accusative table columns.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Removed by upstream typed-item replacement."
+    },
+    {
+      "entry": "U6-E53",
+      "ownerId": "u6-i-pronoun-2",
+      "field": "item feedback",
+      "baselineSentence": "Match the same person, number and gender across the nominative and accusative table columns.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-u6-pronoun-5-ru",
+        "prov-ex-u6-pronoun-4-ru"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-u6-pronoun-5-ru, prov-ex-u6-pronoun-4-ru."
+    },
+    {
+      "entry": "U6-E54",
+      "ownerId": "u6-i-pronoun-3",
+      "field": "item feedback",
+      "baselineSentence": "Match the same person and number across the nominative and accusative table columns.",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Removed by upstream typed-item replacement."
+    },
+    {
+      "entry": "U6-E55",
+      "ownerId": "u6-g-direction-0",
+      "field": "item feedback",
+      "baselineSentence": "Here the preposition takes the accusative, so the function is direction.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-u6-direction-0-ru",
+        "prov-u6-direction-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-u6-direction-0-ru, prov-u6-direction-rem."
+    },
+    {
+      "entry": "U6-E56",
+      "ownerId": "u6-g-direction-0",
+      "field": "item feedback",
+      "baselineSentence": "Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-direction-x-1",
+        "prov-ex-u6-direction-1-ru"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-direction-x-1, prov-ex-u6-direction-1-ru."
+    },
+    {
+      "entry": "U6-E57",
+      "ownerId": "u6-g-direction-0",
+      "field": "item distractor rationale",
+      "baselineSentence": "Location describes being at a place instead of moving toward a destination in this example.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-direction-x-1",
+        "prov-u6-direction-x-0"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-direction-x-1, prov-u6-direction-x-0."
+    },
+    {
+      "entry": "U6-E58",
+      "ownerId": "u6-st-rem-direction",
+      "field": "remediation body",
+      "baselineSentence": "generally the accusative case denotes ''direction''",
+      "disposition": "REMOVED",
+      "sourceRecordIds": [],
+      "reason": "Original sentence removed/reworded upstream; all remaining replacement facts are marked and sourced."
+    },
+    {
+      "entry": "U6-E59",
+      "ownerId": "u6-i-direction-1",
+      "field": "item feedback",
+      "baselineSentence": "Here the preposition takes the prepositional case.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-u6-direction-1-ru",
+        "prov-u6-direction-x-1"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-u6-direction-1-ru, prov-u6-direction-x-1."
+    },
+    {
+      "entry": "U6-E60",
+      "ownerId": "u6-i-direction-1",
+      "field": "item feedback",
+      "baselineSentence": "Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-u6-direction-0-ru",
+        "prov-u6-direction-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-u6-direction-0-ru, prov-u6-direction-rem."
+    },
+    {
+      "entry": "U6-E61",
+      "ownerId": "u6-i-direction-1",
+      "field": "item distractor rationale",
+      "baselineSentence": "Direction describes moving toward a destination instead of being at a place in this example.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-direction-x-0",
+        "prov-u6-direction-x-1"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-direction-x-0, prov-u6-direction-x-1."
+    },
+    {
+      "entry": "U6-E62",
+      "ownerId": "u6-i-direction-2",
+      "field": "item feedback",
+      "baselineSentence": "Here the preposition takes the accusative, so the function is direction.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-u6-direction-2-ru",
+        "prov-u6-direction-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-u6-direction-2-ru, prov-u6-direction-rem."
+    },
+    {
+      "entry": "U6-E63",
+      "ownerId": "u6-i-direction-2",
+      "field": "item feedback",
+      "baselineSentence": "Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-direction-x-1",
+        "prov-ex-u6-direction-1-ru"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-direction-x-1, prov-ex-u6-direction-1-ru."
+    },
+    {
+      "entry": "U6-E64",
+      "ownerId": "u6-i-direction-2",
+      "field": "item distractor rationale",
+      "baselineSentence": "Location describes being at a place instead of moving toward a destination in this example.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-direction-x-1",
+        "prov-u6-direction-x-0"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-direction-x-1, prov-u6-direction-x-0."
+    },
+    {
+      "entry": "U6-E65",
+      "ownerId": "u6-i-direction-3",
+      "field": "item feedback",
+      "baselineSentence": "Here the preposition takes the prepositional case.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-u6-direction-3-ru",
+        "prov-u6-direction-x-1"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-u6-direction-3-ru, prov-u6-direction-x-1."
+    },
+    {
+      "entry": "U6-E66",
+      "ownerId": "u6-i-direction-3",
+      "field": "item feedback",
+      "baselineSentence": "Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-ex-u6-direction-0-ru",
+        "prov-u6-direction-rem"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-ex-u6-direction-0-ru, prov-u6-direction-rem."
+    },
+    {
+      "entry": "U6-E67",
+      "ownerId": "u6-i-direction-3",
+      "field": "item distractor rationale",
+      "baselineSentence": "Direction describes moving toward a destination instead of being at a place in this example.",
+      "disposition": "MARKED",
+      "sourceRecordIds": [
+        "prov-u6-direction-x-0",
+        "prov-u6-direction-x-1"
+      ],
+      "reason": "Retained exact sentence; marker cites frozen-source records (T15a-n1): prov-u6-direction-x-0, prov-u6-direction-x-1."
+    }
+  ],
+  "markerReviews": [
+    {
+      "ownerId": "u6-i-possessive-3",
+      "sentence": "This is the plural nominative form instead, so it does not agree with a feminine singular noun.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+          "line": 23,
+          "quote": "твои'"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 57,
+          "quote": "taking on their noun's gender, number, and case"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-g-third-0",
+      "sentence": "These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 129,
+          "quote": "These do not decline according to the gender or number of the modified noun."
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-third-1",
+      "sentence": "These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 129,
+          "quote": "These do not decline according to the gender or number of the modified noun."
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-third-2",
+      "sentence": "These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 129,
+          "quote": "These do not decline according to the gender or number of the modified noun."
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-g-object-0",
+      "sentence": "Both have the same meaning, I love you: the subject and object keep their roles and forms.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 6,
+          "quote": "While you can say \"I love you\" as '''Я люблю тебя''' and be grammatically correct, it is more commonly said as '''Я тебя люблю'''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-g-object-0",
+      "sentence": "This option repeats the shown order instead of moving the object before or after the verb.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 6,
+          "quote": "they can move words around more freely than in English"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 6,
+          "quote": "While you can say \"I love you\" as '''Я люблю тебя''' and be grammatically correct, it is more commonly said as '''Я тебя люблю'''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-object-2",
+      "sentence": "In this sentence the dogs are the subject and the cats are the accusative object, so it means dogs hate cats.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 52,
+          "quote": ":* Dogs hate cats. - '''Собаки ненавидят котов.'''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-object-2",
+      "sentence": "The other option reverses the subject and object roles.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 52,
+          "quote": ":* Dogs hate cats. - '''Собаки ненавидят котов.'''"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 53,
+          "quote": ":* Cats hate dogs. - '''Коты ненавидят собак.'''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-object-2",
+      "sentence": "This option reverses the subject and object roles instead of keeping who hates whom.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 52,
+          "quote": ":* Dogs hate cats. - '''Собаки ненавидят котов.'''"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 53,
+          "quote": ":* Cats hate dogs. - '''Коты ненавидят собак.'''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-object-3",
+      "sentence": "In this sentence the cats are the subject and the dogs are the accusative object, so it means cats hate dogs.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 53,
+          "quote": ":* Cats hate dogs. - '''Коты ненавидят собак.'''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-object-3",
+      "sentence": "The other option reverses the subject and object roles.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 52,
+          "quote": ":* Dogs hate cats. - '''Собаки ненавидят котов.'''"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 53,
+          "quote": ":* Cats hate dogs. - '''Коты ненавидят собак.'''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-object-3",
+      "sentence": "This option reverses the subject and object roles instead of keeping who hates whom.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 52,
+          "quote": ":* Dogs hate cats. - '''Собаки ненавидят котов.'''"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 53,
+          "quote": ":* Cats hate dogs. - '''Коты ненавидят собак.'''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-feminine-1",
+      "sentence": "This is the singular genitive form instead, so it does not supply the requested singular accusative form.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 83,
+          "quote": "ма'мы"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-g-animacy-0",
+      "sentence": "For this masculine animate noun, the singular accusative has the same form as the genitive.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 99,
+          "quote": "бра'та"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "If they're animated nouns, they follow the genitive rules"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-animacy-1",
+      "sentence": "For this masculine animate noun, the singular accusative has the same form as the genitive.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 369,
+          "quote": "учи'теля"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "If they're animated nouns, they follow the genitive rules"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-animacy-1",
+      "sentence": "This is the singular dative form instead, so it does not supply the requested singular accusative form.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 369,
+          "quote": "учи'телю"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-animacy-2",
+      "sentence": "For this masculine animate noun, the singular accusative has the same form as the genitive.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 14,
+          "quote": "дру'га"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "If they're animated nouns, they follow the genitive rules"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-animacy-2",
+      "sentence": "This is the singular dative form instead, so it does not supply the requested singular accusative form.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 14,
+          "quote": "дру'гу"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-animacy-3",
+      "sentence": "In the supplied chair clause, the direct object is masculine singular and inanimate.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 342,
+          "quote": "сту'л"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 25,
+          "quote": ":*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-animacy-3",
+      "sentence": "The masculine inanimate direct object keeps the nominative form.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-animacy-3",
+      "sentence": "The accusative role does not require a different spelling here.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case"
+        },
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 342,
+          "quote": "сту'л"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-animacy-3",
+      "sentence": "The teacher and friend examples are animate and instead have genitive-shaped singular accusatives.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "If they're animated nouns, they follow the genitive rules"
+        },
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 369,
+          "quote": "учи'теля"
+        },
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 14,
+          "quote": "дру'га"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-animacy-3",
+      "sentence": "Form identity does not turn the chair into a subject or change this into a genitive case.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 25,
+          "quote": ":*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-animacy-3",
+      "sentence": "The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "If they're animated nouns, they follow the genitive rules"
+        },
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 369,
+          "quote": "учи'теля"
+        },
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 14,
+          "quote": "дру'га"
+        },
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 342,
+          "quote": "сту'л"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-g-pronoun-0",
+      "sentence": "Match the same person and number across the nominative and accusative table columns.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 89,
+          "quote": "!  !! Nominative !! Accusative"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 91,
+          "quote": "| I/me || Я || Меня"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 93,
+          "quote": "| We/us || Мы || Нас"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-pronoun-2",
+      "sentence": "Match the same person, number and gender across the nominative and accusative table columns.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 89,
+          "quote": "!  !! Nominative !! Accusative"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 99,
+          "quote": "| He/him || Он || Его"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 101,
+          "quote": "| She/her || Она || Её"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-g-direction-0",
+      "sentence": "Here the preposition takes the accusative, so the function is direction.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "When followed by the accusative case, '''в''' means 'to' or 'into'"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "generally the accusative case denotes ''direction''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-g-direction-0",
+      "sentence": "Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "both prepositions can also use the [[Russian/Grammar/Prepositional case|prepositional case]]"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "while the prepositional case denotes ''location''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-g-direction-0",
+      "sentence": "Location describes being at a place instead of moving toward a destination in this example.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "while the prepositional case denotes ''location''"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "generally the accusative case denotes ''direction''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-direction-1",
+      "sentence": "Here the preposition takes the prepositional case.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "both prepositions can also use the [[Russian/Grammar/Prepositional case|prepositional case]]"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-direction-1",
+      "sentence": "Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "When followed by the accusative case, '''в''' means 'to' or 'into'"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "generally the accusative case denotes ''direction''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-direction-1",
+      "sentence": "Direction describes moving toward a destination instead of being at a place in this example.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "generally the accusative case denotes ''direction''"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "while the prepositional case denotes ''location''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-direction-2",
+      "sentence": "Here the preposition takes the accusative, so the function is direction.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "When followed by the accusative case, '''в''' means 'to' or 'into'"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "generally the accusative case denotes ''direction''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-direction-2",
+      "sentence": "Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "both prepositions can also use the [[Russian/Grammar/Prepositional case|prepositional case]]"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "while the prepositional case denotes ''location''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-direction-2",
+      "sentence": "Location describes being at a place instead of moving toward a destination in this example.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "while the prepositional case denotes ''location''"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "generally the accusative case denotes ''direction''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-direction-3",
+      "sentence": "Here the preposition takes the prepositional case.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "both prepositions can also use the [[Russian/Grammar/Prepositional case|prepositional case]]"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-direction-3",
+      "sentence": "Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "When followed by the accusative case, '''в''' means 'to' or 'into'"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "generally the accusative case denotes ''direction''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-direction-3",
+      "sentence": "Direction describes moving toward a destination instead of being at a place in this example.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "generally the accusative case denotes ''direction''"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "while the prepositional case denotes ''location''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-i-type-object-order",
+      "sentence": "Both orders have the same meaning, I love you: the subject and object keep their roles.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 6,
+          "quote": "While you can say \"I love you\" as '''Я люблю тебя''' and be grammatically correct, it is more commonly said as '''Я тебя люблю'''"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-possessive",
+      "sentence": "Choose the form from the noun, not from the gender of its owner.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 111,
+          "quote": "changing to suit the noun they modify"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-possessive",
+      "sentence": "Both phrases mean my plus a noun, but the Russian form of my changes to match the noun.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/wikibooks/gender-4310736.txt",
+          "line": 12,
+          "quote": "the 'my' in 'my dog' ('''моя собака''') and 'my table' ('''мой стол''') are different"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-possessive",
+      "sentence": "The form follows the noun being described.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 111,
+          "quote": "changing to suit the noun they modify"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-possessive",
+      "sentence": "A singular noun does not take the plural form.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 57,
+          "quote": "Adjectives change to fit the noun they modify, taking on their noun's gender, number, and case.",
+          "record": "prov-t15an1-u6-w57"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-possessive",
+      "sentence": "Keep the same noun and feminine singular agreement.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 57,
+          "quote": "taking on their noun's gender, number, and case"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-possessive",
+      "sentence": "Both mean your.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+          "line": 23,
+          "quote": "your, yours"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-third",
+      "sentence": "These do not decline according to the gender or number of the modified noun.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 129,
+          "quote": "These do not decline according to the gender or number of the modified noun."
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-feminine",
+      "sentence": "Feminine gender is not the only group with that ending.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 378,
+          "quote": "па'пу"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 35,
+          "quote": "Feminine words are the only words to have their own accusative ending"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-animacy",
+      "sentence": "Its singular nominative and accusative have the same spelling and stress.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 32,
+          "quote": "сто'л"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-animacy",
+      "sentence": "A direct object can be accusative even when its form matches nominative.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 4,
+          "quote": "the primary use of the accusative case is to denote the object of a verb"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-animacy",
+      "sentence": "In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "If they're animated nouns, they follow the genitive rules"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-animacy",
+      "sentence": "Matching a genitive form does not change the accusative syntactic role.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "If they're animated nouns, they follow the genitive rules"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 4,
+          "quote": "the primary use of the accusative case is to denote the object of a verb"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-animacy",
+      "sentence": "Its singular accusative matches its singular nominative.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 15,
+          "quote": "до'м"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-animacy",
+      "sentence": "Brother is masculine animate; this accusative is genitive-shaped.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 99,
+          "quote": "бра'та"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "If they're animated nouns, they follow the genitive rules"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-animacy",
+      "sentence": "Teacher is masculine animate; its singular accusative has the same form as its singular genitive.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 369,
+          "quote": "учи'теля"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "If they're animated nouns, they follow the genitive rules"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-animacy",
+      "sentence": "instead contains a masculine inanimate chair as direct object: its accusative matches nominative.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 25,
+          "quote": ":*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun"
+        },
+        {
+          "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+          "line": 342,
+          "quote": "сту'л"
+        },
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 31,
+          "quote": "masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case"
+        }
+      ]
+    },
+    {
+      "ownerId": "u6-st-rem-direction",
+      "sentence": "Generally, the accusative case denotes direction.",
+      "evidence": [
+        {
+          "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+          "line": 15,
+          "quote": "generally the accusative case denotes ''direction''"
+        }
+      ]
+    }
+  ],
+  "markerReviewsNote": "T15a-n2 (owner direction 11/15/2026): every Unit 6 russian-fact marker with no Cyrillic word cannot be checked mechanically; each has a review entry naming the frozen file, line and exact quote that state the claim. Lines are 1-based. OpenRussian evidence is the row of the named bare form; gender and animacy are that row's columns."
+}

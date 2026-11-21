@@ -1,0 +1,1115 @@
+{
+ "task": "T15c (Claude Code, owner direction 11/16/2026)",
+ "baselineCommit": "5c9bd9d6",
+ "plan": "audit/prep/unit-08-prep-at-9a9b9760.txt (branch owner/prep-reports), section 3",
+ "inventory": "audit/T15-n0-unmarked-russian-facts.csv (T15-n0 baseline at 9decefb2); csvLine is the physical line",
+ "scope": "All 47 English-only Unit 8 entries of the T15-n0 inventory. MARK: the exact baseline sentence is kept and its russian-fact marker cites frozen-source records. REWORD: the baseline sentence is gone and its replacement is either marked with frozen-source records (MARKED) or is a reviewed instruction that states no Russian fact (INSTRUCTION). REMOVE: the sentence is gone. Content-audit coverage records never satisfy a marker.",
+ "totals": {
+  "MARK": 27,
+  "REWORD": 15,
+  "REMOVE": 5
+ },
+ "entries": [
+  {
+   "entry": "U8-E01",
+   "csvLine": 790,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "In the selected table sense, the plural refers to tables.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u8-plural-1",
+    "prov-ex-or-u8-plural-1-gloss"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-plural-1, prov-ex-or-u8-plural-1-gloss."
+  },
+  {
+   "entry": "U8-E02",
+   "csvLine": 791,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "The English notes beside these examples are dictionary labels, not plural English translations or complete sentences.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Prep report: dictionary/source commentary."
+  },
+  {
+   "entry": "U8-E03",
+   "csvLine": 792,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "Both the ending and the supplied stress matter; do not insert a new stress pattern.",
+   "disposition": "REWORD",
+   "replacement": "Copy the displayed form carefully.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: retain the instruction without an additional linguistic assertion about stress patterns; reworded to an instruction."
+  },
+  {
+   "entry": "U8-E04",
+   "csvLine": 793,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-d9",
+    "prov-t15c-u8-d17",
+    "prov-u8-plural-rem",
+    "prov-t15c-u8-w14"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-d9, prov-t15c-u8-d17, prov-u8-plural-rem, prov-t15c-u8-w14."
+  },
+  {
+   "entry": "U8-E05",
+   "csvLine": 794,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "The source’s single plural agreement category is not a claim that nouns lose lexical gender.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Prep report: source commentary; the teaching is kept by the marked sentence 793."
+  },
+  {
+   "entry": "U8-E06",
+   "csvLine": 795,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "Gender alone is not a complete algorithm for unfamiliar plural endings or stress.",
+   "disposition": "REWORD",
+   "replacement": "Use the forms taught here.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: finite OpenRussian rows do not establish the unrestricted algorithm claim; reworded to an instruction."
+  },
+  {
+   "entry": "U8-E07",
+   "csvLine": 797,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "The plural ending differs from the table pair and its supplied stress is on the final syllable.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u8-plural-3",
+    "prov-ex-or-u8-plural-1"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-plural-3, prov-ex-or-u8-plural-1."
+  },
+  {
+   "entry": "U8-E08",
+   "csvLine": 798,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "These patterns are word-specific recognition evidence, not permission to generate an unlisted form.",
+   "disposition": "REWORD",
+   "replacement": "Practise the displayed pairs.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: assessment and provenance commentary, not a Russian fact; reworded to an instruction."
+  },
+  {
+   "entry": "U8-E09",
+   "csvLine": 800,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "The supplied plural retains its stress.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u8-plural-4",
+    "prov-ex-or-u8-plural-5"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-plural-4, prov-ex-or-u8-plural-5."
+  },
+  {
+   "entry": "U8-E10",
+   "csvLine": 801,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u8-plural-5",
+    "prov-t15c-u8-w24"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-plural-5, prov-t15c-u8-w24."
+  },
+  {
+   "entry": "U8-E11",
+   "csvLine": 803,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "Notice the supplied stress moves to the first syllable.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u8-plural-6",
+    "prov-ex-or-u8-plural-7"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-plural-6, prov-ex-or-u8-plural-7."
+  },
+  {
+   "entry": "U8-E12",
+   "csvLine": 804,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.",
+   "disposition": "REWORD",
+   "replacement": "Copy the whole displayed form.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: avoids an unsupported general algorithm discussion; reworded to an instruction."
+  },
+  {
+   "entry": "U8-E13",
+   "csvLine": 806,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "The ending changes while the supplied stress stays in place.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u8-plural-8",
+    "prov-ex-or-u8-plural-9"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-plural-8, prov-ex-or-u8-plural-9."
+  },
+  {
+   "entry": "U8-E14",
+   "csvLine": 807,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "A feminine dictionary label alone does not prove every feminine noun has this ending.",
+   "disposition": "REWORD",
+   "replacement": "Use this taught pair for the item.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: avoids generalizing beyond the cited pair; reworded to an instruction."
+  },
+  {
+   "entry": "U8-E15",
+   "csvLine": 809,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Prep report: source and gloss-format commentary."
+  },
+  {
+   "entry": "U8-E16",
+   "csvLine": 811,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "Preserve its final stress.",
+   "disposition": "REWORD",
+   "replacement": "Copy the displayed form carefully.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: kept as a pure instruction; the stress fact is carried by the marked form сло́во/слова́ sentence."
+  },
+  {
+   "entry": "U8-E17",
+   "csvLine": 812,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case.",
+   "disposition": "REWORD",
+   "replacement": "Review these seven pairs.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: scope and algorithm commentary, not a Russian fact; reworded to an instruction."
+  },
+  {
+   "entry": "U8-E18",
+   "csvLine": 813,
+   "ownerId": "u8-st-rem-plural",
+   "field": "remediation body",
+   "baselineSentence": "A missed choice returns to all cards and fourteen original worked forms.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Prep report: app and check narration."
+  },
+  {
+   "entry": "U8-E19",
+   "csvLine": 828,
+   "ownerId": "u8-st-rem-spelling",
+   "field": "remediation body",
+   "baselineSentence": "Adjectives agree with their nouns in gender, number and case.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-w1"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-w1."
+  },
+  {
+   "entry": "U8-E20",
+   "csvLine": 832,
+   "ownerId": "u8-st-rem-spelling",
+   "field": "remediation body",
+   "baselineSentence": "The seven-letter condition is required.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-w24"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-w24."
+  },
+  {
+   "entry": "U8-E21",
+   "csvLine": 833,
+   "ownerId": "u8-st-rem-spelling",
+   "field": "remediation body",
+   "baselineSentence": "This rule applies to the spelling of noun and adjective endings.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-w24"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-w24."
+  },
+  {
+   "entry": "U8-E22",
+   "csvLine": 835,
+   "ownerId": "u8-st-rem-spelling",
+   "field": "remediation body",
+   "baselineSentence": "The rule controls spelling, but the question determines the required gender, number and case.",
+   "disposition": "REWORD",
+   "replacement": "Read the requested form before answering.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: separates the instruction from the sourced rule (W:24, marked separately)."
+  },
+  {
+   "entry": "U8-E23",
+   "csvLine": 847,
+   "ownerId": "u8-st-rem-spelling",
+   "field": "remediation body",
+   "baselineSentence": "All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.",
+   "disposition": "REWORD",
+   "replacement": "Choose the requested form.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: assessment commentary; the form contrasts are taught elsewhere. Reworded to an instruction."
+  },
+  {
+   "entry": "U8-E24",
+   "csvLine": 869,
+   "ownerId": "u8-st-rem-agreement",
+   "field": "remediation body",
+   "baselineSentence": "These supplied examples introduce plural modifiers or plural referents.",
+   "disposition": "REWORD",
+   "replacement": "Compare the examples.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: the Cyrillic examples carry the sourced classifications; reworded to an instruction."
+  },
+  {
+   "entry": "U8-E25",
+   "csvLine": 871,
+   "ownerId": "u8-st-rem-agreement",
+   "field": "remediation body",
+   "baselineSentence": "The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.",
+   "disposition": "REWORD",
+   "replacement": "Read the whole phrase before answering.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: avoids the additional universal-case warning; reworded to an instruction."
+  },
+  {
+   "entry": "U8-E26",
+   "csvLine": 874,
+   "ownerId": "u8-st-rem-agreement",
+   "field": "remediation body",
+   "baselineSentence": "The requested plural is a number distinction, not a different owner or a change of English meaning.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u8-agreement-2-gloss",
+    "prov-ex-or-u8-agreement-3",
+    "prov-ex-or-u8-agreement-3-gloss",
+    "prov-t15c-u8-p81"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-agreement-2-gloss, prov-ex-or-u8-agreement-3, prov-ex-or-u8-agreement-3-gloss, prov-t15c-u8-p81."
+  },
+  {
+   "entry": "U8-E27",
+   "csvLine": 878,
+   "ownerId": "u8-st-rem-agreement",
+   "field": "remediation body",
+   "baselineSentence": "In ordinary English the plural demonstrative reading is these.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u8-agreement-7",
+    "prov-t15c-u8-w14b"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-agreement-7, prov-t15c-u8-w14b."
+  },
+  {
+   "entry": "U8-E28",
+   "csvLine": 880,
+   "ownerId": "u8-st-rem-agreement",
+   "field": "remediation body",
+   "baselineSentence": "The plural does not have a feminine-only gender.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-w14",
+    "prov-ex-or-u8-agreement-7"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-w14, prov-ex-or-u8-agreement-7."
+  },
+  {
+   "entry": "U8-E29",
+   "csvLine": 882,
+   "ownerId": "u8-st-rem-agreement",
+   "field": "remediation body",
+   "baselineSentence": "This source prints these words without written stress; no stress mark is inserted.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Prep report: source-printing commentary; the supplied forms are unchanged."
+  },
+  {
+   "entry": "U8-E30",
+   "csvLine": 883,
+   "ownerId": "u8-st-rem-agreement",
+   "field": "remediation body",
+   "baselineSentence": "These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.",
+   "disposition": "REWORD",
+   "replacement": "Practise the shown forms.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: assessment-scope commentary; reworded to an instruction."
+  },
+  {
+   "entry": "U8-E31",
+   "csvLine": 890,
+   "ownerId": "u8-i-agreement-3",
+   "field": "item feedback",
+   "baselineSentence": "The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.",
+   "disposition": "REWORD",
+   "replacement": "Compare the shown singular and plural forms.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: removes source and assessment narration (and the A2-26 term 'retained' from the same feedback); reworded to an instruction."
+  },
+  {
+   "entry": "U8-E32",
+   "csvLine": 892,
+   "ownerId": "u8-g-availability-0",
+   "field": "item feedback",
+   "baselineSentence": "The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g50"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g50."
+  },
+  {
+   "entry": "U8-E33",
+   "csvLine": 893,
+   "ownerId": "u8-g-availability-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "This alternative describes a question, while the supplied line makes a positive statement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g50"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g50."
+  },
+  {
+   "entry": "U8-E34",
+   "csvLine": 895,
+   "ownerId": "u8-st-rem-availability",
+   "field": "remediation body",
+   "baselineSentence": "This positive line states that something exists at the named place.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g50"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g50."
+  },
+  {
+   "entry": "U8-E35",
+   "csvLine": 896,
+   "ownerId": "u8-st-rem-availability",
+   "field": "remediation body",
+   "baselineSentence": "It is a statement, not a question asking where something is.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g50"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g50."
+  },
+  {
+   "entry": "U8-E36",
+   "csvLine": 898,
+   "ownerId": "u8-st-rem-availability",
+   "field": "remediation body",
+   "baselineSentence": "This line states that old buildings exist in Moscow.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g51."
+  },
+  {
+   "entry": "U8-E37",
+   "csvLine": 899,
+   "ownerId": "u8-st-rem-availability",
+   "field": "remediation body",
+   "baselineSentence": "Compare its full meaning with the street example: the things and the named place differ.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g50",
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g50, prov-t15c-u8-g51."
+  },
+  {
+   "entry": "U8-E38",
+   "csvLine": 900,
+   "ownerId": "u8-st-rem-availability",
+   "field": "remediation body",
+   "baselineSentence": "In both supplied positive statements, the noun naming what exists is nominative.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g50",
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g50, prov-t15c-u8-g51."
+  },
+  {
+   "entry": "U8-E39",
+   "csvLine": 901,
+   "ownerId": "u8-st-rem-availability",
+   "field": "remediation body",
+   "baselineSentence": "The previously introduced prepositional case is not the case of the noun naming what exists here.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g51."
+  },
+  {
+   "entry": "U8-E40",
+   "csvLine": 902,
+   "ownerId": "u8-i-availability-1",
+   "field": "item feedback",
+   "baselineSentence": "The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g51."
+  },
+  {
+   "entry": "U8-E41",
+   "csvLine": 903,
+   "ownerId": "u8-i-availability-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "This alternative describes a question, while the supplied line makes a positive statement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g51."
+  },
+  {
+   "entry": "U8-E42",
+   "csvLine": 904,
+   "ownerId": "u8-i-availability-2",
+   "field": "item feedback",
+   "baselineSentence": "The source pairs this line with There are Frenchmen on this street.",
+   "disposition": "REWORD",
+   "replacement": "На э́той у́лице есть францу́зы means There are Frenchmen on this street.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g50",
+    "prov-ex-u8-availability-0-ru"
+   ],
+   "reason": "Prep report: MARK G:50 but remove 'The source pairs…' from learner wording; the replacement states the same pairing and is marked with G:50."
+  },
+  {
+   "entry": "U8-E43",
+   "csvLine": 905,
+   "ownerId": "u8-i-availability-2",
+   "field": "item feedback",
+   "baselineSentence": "The other source translation concerns different things in a different place.",
+   "disposition": "REWORD",
+   "replacement": "The other meaning concerns different things in a different place.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g50",
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Prep report: MARK G:50–51 but remove the source-narration phrasing; the replacement is marked with G:50 and G:51."
+  },
+  {
+   "entry": "U8-E44",
+   "csvLine": 906,
+   "ownerId": "u8-i-availability-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "The other supplied meaning concerns old buildings in Moscow rather than Frenchmen on this street.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g50",
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g50, prov-t15c-u8-g51."
+  },
+  {
+   "entry": "U8-E45",
+   "csvLine": 907,
+   "ownerId": "u8-i-availability-3",
+   "field": "item feedback",
+   "baselineSentence": "The noun naming the old buildings is nominative in this positive existence statement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g51."
+  },
+  {
+   "entry": "U8-E46",
+   "csvLine": 908,
+   "ownerId": "u8-i-availability-3",
+   "field": "item feedback",
+   "baselineSentence": "The location phrase is a separate part of the line.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g51."
+  },
+  {
+   "entry": "U8-E47",
+   "csvLine": 909,
+   "ownerId": "u8-i-availability-3",
+   "field": "item distractor rationale",
+   "baselineSentence": "This alternative confuses the location phrase with the noun naming what exists.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15c-u8-g49",
+    "prov-t15c-u8-g51"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-t15c-u8-g49, prov-t15c-u8-g51."
+  }
+ ],
+ "markerReviewsNote": "Each Unit 8 marker with no Cyrillic word names, for every cited frozen-source record, the frozen file, line and an exact quote of that line (OpenRussian rows are quoted by their bare headword and tab). The listed lines state the marked claim; the test checks that the lines exist and hold a cited record.",
+ "markerReviews": [
+  {
+   "ownerId": "u8-g-availability-0",
+   "sentence": "The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 50,
+     "quote": ":There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''",
+     "record": "prov-t15c-u8-g50"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-g-availability-0",
+   "sentence": "This alternative describes a question, while the supplied line makes a positive statement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 50,
+     "quote": ":There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''",
+     "record": "prov-t15c-u8-g50"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-i-availability-1",
+   "sentence": "The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-i-availability-1",
+   "sentence": "This alternative describes a question, while the supplied line makes a positive statement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-i-availability-2",
+   "sentence": "The other meaning concerns different things in a different place.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 50,
+     "quote": ":There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''",
+     "record": "prov-t15c-u8-g50"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-i-availability-2",
+   "sentence": "The other supplied meaning concerns old buildings in Moscow rather than Frenchmen on this street.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 50,
+     "quote": ":There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''",
+     "record": "prov-t15c-u8-g50"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-i-availability-3",
+   "sentence": "The noun naming the old buildings is nominative in this positive existence statement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-i-availability-3",
+   "sentence": "The location phrase is a separate part of the line.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-i-availability-3",
+   "sentence": "This alternative confuses the location phrase with the noun naming what exists.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-plural",
+   "sentence": "In the selected table sense, the plural refers to tables.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 32,
+     "quote": "стол\t",
+     "record": "prov-ex-or-u8-plural-1"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 32,
+     "quote": "стол\t",
+     "record": "prov-ex-or-u8-plural-1-gloss"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-plural",
+   "sentence": "Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/gender-4310736.txt",
+     "line": 9,
+     "quote": "So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter.",
+     "record": "prov-t15c-u8-d9"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/gender-4310736.txt",
+     "line": 17,
+     "quote": "However, the important thing here is that the rules are largely the same for all nouns, regardless of gender. This carries over into adjectives too: the endings they take on when their noun is plural, are independent  of gender.",
+     "record": "prov-t15c-u8-d17"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/gender-4310736.txt",
+     "line": 17,
+     "quote": "There's no 'masculine plural' and 'feminine plural' - there's just, 'plural'.",
+     "record": "prov-u8-plural-rem"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 14,
+     "quote": "With plural nouns, regardless of gender, the adjective replaces '''-ый''' or '''-ой''' with '''-ые'''",
+     "record": "prov-t15c-u8-w14"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-plural",
+   "sentence": "The plural ending differs from the table pair and its supplied stress is on the final syllable.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 24,
+     "quote": "город\t",
+     "record": "prov-ex-or-u8-plural-3"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 32,
+     "quote": "стол\t",
+     "record": "prov-ex-or-u8-plural-1"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-plural",
+   "sentence": "The supplied plural retains its stress.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\t",
+     "record": "prov-ex-or-u8-plural-4"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\t",
+     "record": "prov-ex-or-u8-plural-5"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-plural",
+   "sentence": "Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\t",
+     "record": "prov-ex-or-u8-plural-5"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 24,
+     "quote": "When forming the nominative plural of nouns, recall that if the stem ends in '''г, ж, к, х, ч, ш''', or '''щ''', you add '''и''', not '''ы'''. This 7-letter spelling rule also applies to adjectives.",
+     "record": "prov-t15c-u8-w24"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-plural",
+   "sentence": "Notice the supplied stress moves to the first syllable.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 51,
+     "quote": "окно\t",
+     "record": "prov-ex-or-u8-plural-6"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 51,
+     "quote": "окно\t",
+     "record": "prov-ex-or-u8-plural-7"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-plural",
+   "sentence": "The ending changes while the supplied stress stays in place.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 83,
+     "quote": "мама\t",
+     "record": "prov-ex-or-u8-plural-8"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 83,
+     "quote": "мама\t",
+     "record": "prov-ex-or-u8-plural-9"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-spelling",
+   "sentence": "Adjectives agree with their nouns in gender, number and case.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 1,
+     "quote": "The endings of adjectives change according to the gender, number, and case of the nouns they modify.",
+     "record": "prov-t15c-u8-w1"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-spelling",
+   "sentence": "The seven-letter condition is required.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 24,
+     "quote": "When forming the nominative plural of nouns, recall that if the stem ends in '''г, ж, к, х, ч, ш''', or '''щ''', you add '''и''', not '''ы'''. This 7-letter spelling rule also applies to adjectives.",
+     "record": "prov-t15c-u8-w24"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-spelling",
+   "sentence": "This rule applies to the spelling of noun and adjective endings.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 24,
+     "quote": "When forming the nominative plural of nouns, recall that if the stem ends in '''г, ж, к, х, ч, ш''', or '''щ''', you add '''и''', not '''ы'''. This 7-letter spelling rule also applies to adjectives.",
+     "record": "prov-t15c-u8-w24"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-agreement",
+   "sentence": "The requested plural is a number distinction, not a different owner or a change of English meaning.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 8,
+     "quote": "мой\t",
+     "record": "prov-ex-or-u8-agreement-2-gloss"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 8,
+     "quote": "мой\t",
+     "record": "prov-ex-or-u8-agreement-3"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 8,
+     "quote": "мой\t",
+     "record": "prov-ex-or-u8-agreement-3-gloss"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt",
+     "line": 81,
+     "quote": "Unlike personal pronouns, but like adjectives, possessive pronouns also change to match the gender and number of the noun they modify.",
+     "record": "prov-t15c-u8-p81"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-agreement",
+   "sentence": "In ordinary English the plural demonstrative reading is these.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 4,
+     "quote": "этот\t",
+     "record": "prov-ex-or-u8-agreement-7"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 14,
+     "quote": "\"these good new students\" is '''эти хорошие новые студенты'''",
+     "record": "prov-t15c-u8-w14b"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-agreement",
+   "sentence": "The plural does not have a feminine-only gender.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 14,
+     "quote": "With plural nouns, regardless of gender, the adjective replaces '''-ый''' or '''-ой''' with '''-ые'''",
+     "record": "prov-t15c-u8-w14"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 4,
+     "quote": "этот\t",
+     "record": "prov-ex-or-u8-agreement-7"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-availability",
+   "sentence": "This positive line states that something exists at the named place.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 50,
+     "quote": ":There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''",
+     "record": "prov-t15c-u8-g50"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-availability",
+   "sentence": "It is a statement, not a question asking where something is.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 50,
+     "quote": ":There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''",
+     "record": "prov-t15c-u8-g50"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-availability",
+   "sentence": "This line states that old buildings exist in Moscow.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-availability",
+   "sentence": "Compare its full meaning with the street example: the things and the named place differ.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 50,
+     "quote": ":There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''",
+     "record": "prov-t15c-u8-g50"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-availability",
+   "sentence": "In both supplied positive statements, the noun naming what exists is nominative.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 50,
+     "quote": ":There are Frenchmen on this street - '''На э́той у́лице есть францу́зы'''",
+     "record": "prov-t15c-u8-g50"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  },
+  {
+   "ownerId": "u8-st-rem-availability",
+   "sentence": "The previously introduced prepositional case is not the case of the noun naming what exists here.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 49,
+     "quote": "'''Есть''' on its own can also be used to say 'There is...', 'There are...', or 'There exists...'. It is followed by the nominative case:",
+     "record": "prov-t15c-u8-g49"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 51,
+     "quote": ":There are old buildings in Moscow - '''В Москве́ есть ста́рые зда́ния'''",
+     "record": "prov-t15c-u8-g51"
+    }
+   ]
+  }
+ ]
+}

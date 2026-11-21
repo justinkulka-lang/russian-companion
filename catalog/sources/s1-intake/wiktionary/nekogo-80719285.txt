@@ -1,0 +1,39 @@
+==Macedonian==
+
+===Pronunciation===
+* {{mk-IPA}}
+
+===Pronoun===
+{{head|mk|pronoun form}}
+
+# {{inflection of|mk|некој||dir|obj|form}}
+
+==Russian==
+
+===Etymology===
+From {{af|ru|не|кого́}} or another case form of {{m|ru|кто}}.
+
+===Pronunciation===
+* {{ru-IPA|не́кого}}
+
+===Predicative===
+{{head|ru|predicative|head=не́кого}}
+
+# there is [[no one]] {{+obj|ru|dat<for someone> + inf<to do something>}}
+#: {{uxi|ru|[[я|Мне]] '''не́кого''' [[вини́ть]]|t=I have no one to blame.}}
+#: {{uxi|ru|[[я|Мне]] не́кому [[писа́ть]]|t=I have no one to write to.|q=dative case}}
+
+====Declension====
+{{ru-noun-table|не́кого|manual|n=sg|lemma=не́кого|allow_unaccented=true
+|nom_sg=-
+|gen_sg=не́кого, [[не́]] от [[кого]]
+|dat_sg=не́кому, [[не́]] к [[кому]]
+|ins_sg=не́кем, [[не́]] с [[кем]]
+|pre_sg=[[не́]] о [[ком]]
+}}
+
+====See also====
+* {{l|ru|не́где}}
+* {{l|ru|не́когда}}
+* {{l|ru|не́куда}}
+* {{l|ru|не́чего}}

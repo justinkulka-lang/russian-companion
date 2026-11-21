@@ -60,7 +60,7 @@ class ReleaseGateTest {
     }
 
     @Test
-    fun aPartialOrMissingLessonStaysBlocked() {
+    fun aPartialOrMissingLessonDoesNotDependOnTheLegacyPathway() {
         val (root, manifest) = retainedFixture()
         val complete = preparedCatalog(shareAlike = "CONFIRMED")
         val missingLesson = complete.copy(
@@ -86,27 +86,29 @@ class ReleaseGateTest {
             planDefinitions = emptyList(),
             gateDefinitions = emptyList(),
         )
-        for (catalog in listOf(missingLesson, missingListen, missingGate, missingAudioBinding)) {
+        for (catalog in listOf(missingLesson, missingListen, missingGate, missingAudioBinding, emptyPathway)) {
             val assessment = assessPackagedRelease(SeedJson.encode(catalog), manifest, root)
-            assertEquals(ReleaseDecision.NOT_APPROVED, assessment.decision)
-            assertTrue(assessment.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
+            assertEquals(ReleaseDecision.APPROVED, assessment.decision)
+            assertEquals(emptyList<ReleaseBlocker>(), assessment.blockers)
+            assertFalse(assessment.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
+            assertFalse(assessment.blockers.contains(ReleaseBlocker.PATHWAY_NOT_INSTALLED))
+            assertFalse(assessment.blockers.contains(ReleaseBlocker.PLAN_DEFINITIONS_NOT_INSTALLED))
+            assertFalse(assessment.blockers.contains(ReleaseBlocker.DEFAULT_GATE_NOT_INSTALLED))
+            assertFalse(assessment.blockers.contains(ReleaseBlocker.LICENSED_AUDIO_NOT_PREPARED))
         }
-        val empty = assessPackagedRelease(SeedJson.encode(emptyPathway), manifest, root)
-        assertEquals(ReleaseDecision.NOT_APPROVED, empty.decision)
-        assertTrue(empty.blockers.contains(ReleaseBlocker.PATHWAY_NOT_INSTALLED))
-        assertFalse(empty.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
     }
 
     @Test
-    fun onlyTheCompleteBeginnerArcClearsThePathwayIncompleteBlocker() {
+    fun beginnerArcLengthDoesNotBlockRelease() {
         val (root, manifest) = retainedFixture()
         val incomplete = assessPackagedRelease(
             SeedJson.encode(preparedCatalog(shareAlike = "CONFIRMED", lessonCount = 29)),
             manifest,
             root,
         )
-        assertEquals(ReleaseDecision.NOT_APPROVED, incomplete.decision)
-        assertEquals(listOf(ReleaseBlocker.PATHWAY_INCOMPLETE), incomplete.blockers)
+        assertEquals(ReleaseDecision.APPROVED, incomplete.decision)
+        assertEquals(emptyList<ReleaseBlocker>(), incomplete.blockers)
+        assertFalse(incomplete.blockers.contains(ReleaseBlocker.PATHWAY_INCOMPLETE))
         val complete = assessPackagedRelease(
             SeedJson.encode(preparedCatalog(shareAlike = "CONFIRMED")),
             manifest,
@@ -469,7 +471,7 @@ class ReleaseGateTest {
     }
 
     @Test
-    fun aTutorOnlyGateAndAPartialPlanStayBlocked() {
+    fun aTutorOnlyGateAndAPartialPlanDoNotDependOnTheLegacyPathway() {
         val (root, manifest) = retainedFixture()
         val tutorGate = preparedCatalog(shareAlike = "CONFIRMED").copy(
             gateDefinitions = listOf(
@@ -480,21 +482,15 @@ class ReleaseGateTest {
                 ),
             ),
         )
-        assertEquals(
-            true,
-            assessPackagedRelease(SeedJson.encode(tutorGate), manifest, root)
-                .blockers
-                .contains(ReleaseBlocker.DEFAULT_GATE_NOT_INSTALLED),
-        )
+        val tutorAssessment = assessPackagedRelease(SeedJson.encode(tutorGate), manifest, root)
+        assertEquals(ReleaseDecision.APPROVED, tutorAssessment.decision)
+        assertFalse(tutorAssessment.blockers.contains(ReleaseBlocker.DEFAULT_GATE_NOT_INSTALLED))
         val bookOnly = preparedCatalog(shareAlike = "CONFIRMED").copy(
             planDefinitions = listOf(plan("plan-book", "BOOK", 1)),
         )
-        assertEquals(
-            true,
-            assessPackagedRelease(SeedJson.encode(bookOnly), manifest, root)
-                .blockers
-                .contains(ReleaseBlocker.PLAN_DEFINITIONS_NOT_INSTALLED),
-        )
+        val planAssessment = assessPackagedRelease(SeedJson.encode(bookOnly), manifest, root)
+        assertEquals(ReleaseDecision.APPROVED, planAssessment.decision)
+        assertFalse(planAssessment.blockers.contains(ReleaseBlocker.PLAN_DEFINITIONS_NOT_INSTALLED))
     }
 
     private fun committedManifest(): String {
