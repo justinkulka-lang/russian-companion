@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "988a0e878acbc9f0c7ea579ff4bb8edccd52833793f4418a9d046492f8df07bd",
+      "sha256": "c800faf97c58050d621302353f48239baf348dda86ede12d9386231037979fc5",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3467,6 +3467,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "T16c (owner decision D29a, approved rule change): the ru-Wikipedia, Wiktionary and ReadyRussian licence routes also admit, and the new English Wikipedia route admits only, a revision listed in S1IntakeSources (the catalog/sources/s1-intake FREEZE.json entries), matched by exact source ID and revision; no wildcard. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T16c CI fix",
+      "previousRecordedSha256": "988a0e878acbc9f0c7ea579ff4bb8edccd52833793f4418a9d046492f8df07bd",
+      "sha256": "c800faf97c58050d621302353f48239baf348dda86ede12d9386231037979fc5",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T16c CI fix (exact-commit CI 44946188080, Unit29PunctuationContextRegressionTest): the two Unit 29 native-punctuation ru-Wikipedia sources keep their per-record chain check; the D29a S1 admission applies to every other ru-Wikipedia source. Restores the pre-D29a strictness for those two sources; no other route changes.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

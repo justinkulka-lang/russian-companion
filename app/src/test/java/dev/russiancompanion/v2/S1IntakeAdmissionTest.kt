@@ -76,7 +76,19 @@ class S1IntakeAdmissionTest {
             )
         }
         val errors = V2Validator.validate(pack.copy(provenanceRecords = pack.provenanceRecords + admitted + unlisted)).errors
-        admitted.forEach { record ->
+        // T16c CI fix: the two Unit 29 native-punctuation sources keep their per-record chain check, so a new probe record of
+        // those pages is rejected even at the frozen revision; their admission is checked on the pack's own records instead.
+        val chainChecked = setOf("src-ruwiki-obosoblenie-144053197", "src-ruwiki-boltraffio-149826784")
+        chainChecked.forEach { id ->
+            val own = pack.provenanceRecords.filter { it.sourceId == id }
+            assertTrue(id, own.isNotEmpty())
+            own.forEach { record ->
+                assertTrue(record.itemId, errors.none { "Provenance ${record.itemId} " in it && routeError.containsMatchIn(it) })
+            }
+            assertTrue("$id probe at the frozen revision", errors.any { "Provenance probe-s1-" in it && routeError.containsMatchIn(it) &&
+                admitted.any { r -> r.sourceId == id && "Provenance ${r.itemId} " in it } })
+        }
+        admitted.filter { it.sourceId !in chainChecked }.forEach { record ->
             val hits = errors.filter { "Provenance ${record.itemId} " in it && routeError.containsMatchIn(it) }
             assertTrue("${record.sourceId} ${record.sourceRevision}: $hits", hits.isEmpty())
         }

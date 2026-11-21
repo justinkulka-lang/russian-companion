@@ -173,7 +173,7 @@ class SelectedOptionRationaleUiTest {
             compose.waitUntil(30_000) { compose.onAllNodesWithTag(tag).fetchSemanticsNodes().isNotEmpty() }
             compose.onNodeWithTag(tag).performScrollTo().performClick()
             compose.onNodeWithTag("v2-review-feedback-$index").performScrollTo()
-                .assertTextEquals("Not the reviewed answer. ${item.feedback}")
+                .assertTextEquals("Try again. ${item.feedback}") // T16-n2 (D31c): the review-copy message (was "Not the reviewed answer.")
             compose.onNodeWithTag("v2-review-rationale-$index").performScrollTo().assertTextEquals(rationale).assertIsDisplayed()
             assertEquals(wrong, store.cumulativeReviewHistory().second.last().selected)
             assertFalse(index in completedReviewSlots(p, assignment, store.cumulativeReviewHistory().second))

@@ -25,7 +25,7 @@ class Unit5GrammarReviewUiTest {
             assertEquals("unit5-prior-gender-subject-v2", cumulativeReviewDeclaredPolicy(pack, 5)!!.id)
             show(store)
             compose.onNodeWithText("Review earlier noun genders and supplied subjects").assertExists()
-            compose.onNodeWithText("Review recorded noun genders from Unit 3", substring = true).performScrollTo().assertIsDisplayed()
+            compose.onNodeWithText("Review noun genders from Unit 3", substring = true) /* T16-n2 (D31c): was "Review recorded noun genders from Unit 3" */.performScrollTo().assertIsDisplayed()
             compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
         }
     }

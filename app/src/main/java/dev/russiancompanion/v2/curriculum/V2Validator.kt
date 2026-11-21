@@ -5145,14 +5145,15 @@ internal object V2Validator {
             if (record.sourceId.startsWith("src-ruwiki-")) {
                 val copyright = "\u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u044f:\u0410\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0435 \u043f\u0440\u0430\u0432\u0430 oldid ${BatchARemainingSources.RU_COPYRIGHT_OLDID}"
                 // T16c (owner decision D29a, approved rule change): an S1-frozen revision is admitted by exact source ID and
-                // revision (S1IntakeSources, the s1-intake FREEZE.json list).
-                val revisionAllowed = S1IntakeSources.admits(record.sourceId, record.sourceRevision, S1IntakeSources.Route.RU_WIKIPEDIA) ||
-                    if (record.sourceId in setOf("src-ruwiki-obosoblenie-144053197", "src-ruwiki-boltraffio-149826784")) {
-                        V2ContentChecks.admittedNative(pack, "obj-u29-punctuation", record)
-                    } else {
+                // revision (S1IntakeSources, the s1-intake FREEZE.json list). The two Unit 29 native-punctuation sources keep
+                // their stricter per-record chain check (T16c CI fix: the S1 admission must not let a ghost record through).
+                val revisionAllowed = if (record.sourceId in setOf("src-ruwiki-obosoblenie-144053197", "src-ruwiki-boltraffio-149826784")) {
+                    V2ContentChecks.admittedNative(pack, "obj-u29-punctuation", record)
+                } else {
+                    S1IntakeSources.admits(record.sourceId, record.sourceRevision, S1IntakeSources.Route.RU_WIKIPEDIA) ||
                         record.sourceRevision == BatchARemainingSources.RU_REVISION ||
-                            record.sourceRevision in BatchBSources.RU_REVISIONS
-                    }
+                        record.sourceRevision in BatchBSources.RU_REVISIONS
+                }
                 if (!revisionAllowed ||
                     !record.sourceUrl.contains("oldid=${record.sourceRevision}") ||
                     !record.attribution.contains(copyright) ||
