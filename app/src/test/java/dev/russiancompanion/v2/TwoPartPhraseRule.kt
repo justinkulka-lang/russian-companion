@@ -26,7 +26,10 @@ internal object TwoPartPhraseRule {
     )
     // T16 (owner decision D27a): only a complete inline name is inline; the name must end at whitespace, "/" or ">", so
     // span:probe, span_probe and b:probe are boundaries (was: any name not followed by a letter, digit or hyphen).
-    val blockTag = Regex("(?i)</?(?!(?:${INLINE_TAGS.joinToString("|")})(?=[\\s/>]))[A-Za-z][^>]*>")
+    // T16-n1 (D28b): the terminators are exactly HTML whitespace (space, tab, LF, FF, CR) plus "/" and ">", as in
+    // apply_d7b_selection_records.BLOCK; NBSP, em space, vertical tab and other Unicode spaces make the tag a boundary.
+    const val TAG_NAME_TERMINATORS = " \t\n\u000C\r/>"
+    val blockTag = Regex("(?i)</?(?!(?:${INLINE_TAGS.joinToString("|")})(?=[$TAG_NAME_TERMINATORS]))[A-Za-z][^>]*>")
 
     /** True when the named element separates text (anything outside INLINE_TAGS). */
     fun isBoundary(tag: String): Boolean = tag.lowercase() !in INLINE_TAGS

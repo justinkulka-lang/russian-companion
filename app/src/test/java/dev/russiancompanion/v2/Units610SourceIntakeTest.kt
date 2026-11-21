@@ -64,7 +64,8 @@ class Units610SourceIntakeTest {
     fun earlierUnitDigestsStayPutAndLaterUnitsStayIsolated() {
         val pack = pack()
         // D7b: frozen selection records join Unit 3 (was 6bab7d2e...; T15f 9c2ab4f1...; T15e e6159274...).
-        assertEquals("b1986b784279091d9183563d38c06aa0eacb60fa3aff196a5d2faf86f3083540", V2Validator.unitContentReviewDigest(pack, 3))
+        // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
+        assertEquals("f39c7b5fee5302433ae0fe158f12bcb3c4d04c928efa11c45db04645d5f7218a", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,

@@ -27,6 +27,16 @@ class TagBoundaryTest(unittest.TestCase):
             with self.subTest(tag=tag):
                 self.assertFalse(joined(f"<{tag}>Иван</{tag}>ович", "Иванович"))
 
+    def test_only_html_whitespace_ends_an_inline_name(self):
+        """T16-n1 (D28b): parity with TwoPartPhraseRule.TAG_NAME_TERMINATORS (the same table as TwoPartPhraseRuleTest)."""
+        for ws in (" ", "\t", "\n", "\f", "\r"):
+            with self.subTest(ws=f"U+{ord(ws):04X}"):
+                self.assertTrue(joined(f"<span{ws}class=x>Иван</span{ws}class=x>ович", "Иванович"))
+        for ws in ("\u00a0", "\u2003", "\u2002", "\u3000", "\u000b", "\u0085", "\u2028", "\u202f"):
+            with self.subTest(ws=f"U+{ord(ws):04X}"):
+                self.assertFalse(joined(f"<span{ws}class=x>Иван</span{ws}class=x>ович", "Иванович"))
+                self.assertFalse(joined(f"<b{ws}>Иван</b{ws}>ович", "Иванович"))
+
     def test_complete_inline_names_still_join(self):
         for tag in d7b.INLINE_TAGS:
             with self.subTest(tag=tag):

@@ -45,7 +45,7 @@ DISPOSITIONS = {
     1399: M, 1402: M, 1409: M, 1412: M, 1414: M,
     1418: rw("Neither singular use matches the plural form requested."),
     1419: rw("The prepositional case is used with a governing preposition in a sentence."),
-    1424: M, 1425: M,
+    1424: rw("The prepositional plural differs from the singular dative in both case and number."), 1425: M,
     1429: rw("A sentence uses the prepositional case after a governing preposition."),
 }
 REASONS = {
@@ -59,6 +59,7 @@ REASONS = {
     1395: "\"row\" wording removed (report section 3); nouns.csv стол sg_dat and pl_nom.",
 }
 COMMENTARY = "A2-26 assessment commentary (\"the question asks\" / \"table forms\") removed; the fact stays marked."
+REASONS[1424] = "T16-n1 (D28c): \"the question requires\" is A2-26 assessment commentary; the fact stays marked (nouns.csv стол pl_prep and sg_dat)."
 for _n in (1365, 1390, 1418, 1419, 1429):
     REASONS[_n] = COMMENTARY
 

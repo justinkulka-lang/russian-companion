@@ -72,7 +72,8 @@ internal object V2DesignDiagnostics {
     )
     private val assessmentCommentary = Regex(
         "\\b(?:the|these|this|that) (?:guided |typed |closed |review |later |unit |final |wording )?(?:choice|check|question|exercise|task|item|test|quiz)" +
-            "(?:e?s)? (?:below |above )?(?:asks?|requests?|recogni[sz]es?|accepts?|tests?|scores?|counts?|marks?|wants?|expects?|keys?|practi[sc]es?)\\b|" +
+            // T16-n1 (owner decision D28c): "requires" and its close variants ("the question requires", "this check requires").
+            "(?:e?s)? (?:below |above )?(?:asks?|requests?|requir(?:es?|ed)|recogni[sz]es?|accepts?|tests?|scores?|counts?|marks?|wants?|expects?|keys?|practi[sc]es?)\\b|" +
             "\\bchecks? recogni[sz]e\\b|\\bdoes(?: not|n't) demonstrate\\b|\\bseparate from\\b[^.]*\\bchecks?\\b|" +
             "\\b(?:this|the) unit does(?: not|n't) teach\\b|\\bstays? out of this unit\\b|" +
             "\\bdemonstrated (?:app |in-app )?(?:check|ability)\\b|\\bpending reviewer\\b|\\breviewer assignment\\b|" +
@@ -213,6 +214,8 @@ internal object V2DesignDiagnostics {
             inspectLearnerText(unit.id, unit.number, "title", unit.title)
             inspectLearnerText(unit.id, unit.number, "shortLabel", unit.shortLabel)
             inspectLearnerText(unit.id, unit.number, "topicSummary", unit.topicSummary)
+            // T16-n1 (owner decision D28c): the mapping note is rendered (V2Screens), so the learner-text lint reads it too.
+            inspectLearnerText(unit.id, unit.number, "mappingNote", unit.mappingNote)
             unit.objectives.forEach { inspectLearnerText(it.id, unit.number, "title", it.title) }
             unit.sessions.forEach { inspectLearnerText(it.id, unit.number, "title", it.title) }
         }

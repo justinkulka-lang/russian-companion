@@ -62,7 +62,9 @@ class Units1115ReviewStatusLayoutTest {
         compose.onNodeWithText("Content complete, review pending").assertIsDisplayed()
         compose.onNodeWithTag("v2-mapping-pending").assertIsDisplayed()
         compose.onNodeWithText("printed pages 122-132", substring = true).assertIsDisplayed()
-        compose.onNodeWithText("PENDING_CURRICULUM_REVIEWER", substring = true).assertIsDisplayed()
+        // T16-n1 (D28c): the mapping note is plain learner text; the review token stays in mappingStatus metadata and is not
+        // rendered (was assertIsDisplayed()). The status line above still says the content is review pending.
+        compose.onNodeWithText("PENDING_CURRICULUM_REVIEWER", substring = true).assertDoesNotExist()
         assertRenderedContentGutter(name)
     }
 

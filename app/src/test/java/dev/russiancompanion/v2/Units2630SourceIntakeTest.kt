@@ -31,20 +31,28 @@ import java.security.MessageDigest
 class Units2630SourceIntakeTest {
     private val preservedContentDigests = mapOf(
         // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
-        3 to "b1986b784279091d9183563d38c06aa0eacb60fa3aff196a5d2faf86f3083540",
+        // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
+        3 to "f39c7b5fee5302433ae0fe158f12bcb3c4d04c928efa11c45db04645d5f7218a",
         // T15g A4: prov-d7b-u16-029 re-cited to adjectives-4292379.txt:67 (was 17e7a641...).
         16 to "16d20fdf3587db1128b4bb923c938074db69f4ba28976914067b40939a90e9c4",
-        17 to "6b680bdaec7f726328c3eba3052143d6cd31f249a60401caef1a2e7a6236e022",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 17 was 6b680bda...).
+        17 to "1a196e20f918ad53c13bed5b4f593763fecbb3a9c1d7047fb94d572be4e158e0",
         18 to "3c4ae8dd52293871574a5968c224388e31eb8c838e61a63dc2271fdb3e79073a",
-        19 to "fddd2ad0d2c32ba669c53effb93929f8e2a527e0b5a8e8251922756b0b1bd969",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
+        19 to "2b598d3eae9d945a6971cc67c0d6a234a882049517cdde75dbbfacf7ad98105f",
         20 to "c7d467ab59e13dcf9646974a92013a5d0228bc01b92cc8873740ced770e71194",
-        21 to "566c3430551943fbe3f3cf284496e4c16b074a8907aaa4df951840336c46384c",
-        22 to "3af1050955bf9d86e162360eca3a06cf51ad0e1327226daab4a7aead8dd46954",
-        23 to "817b1d8ff8a53907f5daaa378216687d4adc19a569a63762bd6840e560be1c53",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 21 was 566c3430...).
+        21 to "d12264d17367012c70155c9a941f1f7d299efd6474add69ae555639c5a85bd06",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 22 was 3af10509...).
+        22 to "633e8b20d1e693fb5f0eb4895af733eaa233808d441f90dc85c49baf8ed5c897",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 23 was 817b1d8f...).
+        23 to "a48cbf45c83b04add2bb09d154cd9f9b6171820c8ba32dee2dc97a30fd92a2e2",
         // S1: Unit 24 gains frozen records for the dative and instrumental of nekogo (was 500af59a...).
-        24 to "e35b8db2e9d9f1755192eb21b31480eee01a45224664850966f2d1dee816617b",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 24 was e35b8db2...).
+        24 to "4e9dddb979aa7c0add34bd399e0a3746c6d1d75db0ddfe0c7d4258d7ec3e1a32",
         // T15g A4: prov-d7b-u25-038 re-cited to russian-grammar-1369617627.txt:1169 (was 4bc90e89...).
-        25 to "a3d5745c0beb03c3153608925d8c108316a619c5ff4d9778d18ba601a69a20a7",
+        // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 25 was a3d5745c...).
+        25 to "a3a51fdf4e1866e7996ac8c617cda0916bf469f33ba1f37a56acb3518562aaa5",
     )
 
     private val preservedMappingDigests = mapOf(

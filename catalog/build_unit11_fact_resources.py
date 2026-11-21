@@ -40,7 +40,8 @@ DISPOSITIONS = {
     1326: ("MARK", None, None, "Retained exact sentence; marker cites past-tense:104 and :107."),
     1329: ("REWORD", "Copy the whole form.", "INSTRUCTION", "A pure instruction; the formation explanation stays sourced in the teaching (report section 3)."),
     1333: ("MARK", None, None, "Retained exact sentence; marker cites past-tense:107 and :109."),
-    1337: ("MARK", None, None, "Retained exact sentence; marker cites verbs.csv учи́ться past_f/past_pl and past-tense:113, :115."),
+    1337: ("REWORD", "Both retain the reflexive ending, so that ending alone does not distinguish them; the past ending shows gender and number.", "MARKED",
+           "T16-n1 (D28c): \"the question requires\" is A2-26 assessment commentary; the reworded sentence keeps the fact and cites verbs.csv учи́ться past_f/past_pl and past-tense:38, :113, :115."),
 }
 
 

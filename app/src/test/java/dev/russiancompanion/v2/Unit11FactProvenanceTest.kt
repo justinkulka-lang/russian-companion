@@ -71,7 +71,8 @@ class Unit11FactProvenanceTest {
         }.toSet())
         val totals = dispositions.groupingBy { it.string("disposition") }.eachCount()
         // Report section 3: 8 MARK and 4 REWORD; 1290 is reworded too ("the question asks" is A2-26 assessment commentary).
-        assertEquals(mapOf("MARK" to 7, "REWORD" to 5), totals)
+        // T16-n1 (D28c): 1337 loses "the question requires" commentary (MARK 7 -> 6, REWORD 5 -> 6).
+        assertEquals(mapOf("MARK" to 6, "REWORD" to 6), totals)
         assertEquals(totals, json.getValue("totals").jsonObject.mapValues { it.value.jsonPrimitive.int })
         val hosts = hosts(pack)
         dispositions.forEach { disposition ->

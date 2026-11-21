@@ -43,7 +43,10 @@ class Units1115MappingGapTest {
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(pages.getValue(number)))
-            assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // T16-n1 (D28c): Units 1-12 mapping notes are plain learner text; the pending status stays in mappingStatus (asserted
+            // above). Units 13-15 keep their notes until their own unit tasks (was assertTrue for 11-15).
+            if (number <= 12) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            else assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertTrue(unit.sessions.isNotEmpty())
             assertTrue(unit.objectives.any { it.kind == "RECOGNITION" })
@@ -69,7 +72,8 @@ class Units1115MappingGapTest {
         val pack = pack()
         assertEquals(
             // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
-            "b1986b784279091d9183563d38c06aa0eacb60fa3aff196a5d2faf86f3083540",
+            // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
+            "f39c7b5fee5302433ae0fe158f12bcb3c4d04c928efa11c45db04645d5f7218a",
             V2Validator.unitContentReviewDigest(pack, 3),
         )
         val shifted = pack.copy(

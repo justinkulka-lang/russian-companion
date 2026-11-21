@@ -1,8 +1,8 @@
 {
  "task": "T16 (Claude Code, 2026-11-20); dispositions from audit/prep/units-11-12-prep-at-9a9b9760.txt, Unit 11 section 3",
  "totals": {
-  "MARK": 7,
-  "REWORD": 5
+  "MARK": 6,
+  "REWORD": 6
  },
  "entries": [
   {
@@ -163,14 +163,17 @@
    "ownerId": "u11-i-reflexive-2",
    "field": "item feedback",
    "baselineSentence": "Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.",
-   "disposition": "MARK",
+   "disposition": "REWORD",
+   "replacement": "Both retain the reflexive ending, so that ending alone does not distinguish them; the past ending shows gender and number.",
+   "replacementKind": "MARKED",
    "sourceRecordIds": [
     "prov-ex-or-u11-reflexive-7",
     "prov-ex-or-u11-reflexive-8",
     "prov-t16-u11-p113",
-    "prov-t16-u11-p115"
+    "prov-t16-u11-p115",
+    "prov-t16-u11-p38"
    ],
-   "reason": "Retained exact sentence; marker cites verbs.csv учи́ться past_f/past_pl and past-tense:113, :115."
+   "reason": "T16-n1 (D28c): \"the question requires\" is A2-26 assessment commentary; the reworded sentence keeps the fact and cites verbs.csv учи́ться past_f/past_pl and past-tense:38, :113, :115."
   }
  ],
  "markerReviews": [
@@ -261,7 +264,7 @@
   },
   {
    "ownerId": "u11-i-reflexive-2",
-   "sentence": "Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.",
+   "sentence": "Both retain the reflexive ending, so that ending alone does not distinguish them; the past ending shows gender and number.",
    "evidence": [
     {
      "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
@@ -277,6 +280,11 @@
      "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
      "line": 115,
      "quote": ":They were studying - '''Они учи́лись'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 38,
+     "quote": "So now that you know which aspect of the verb you want to use, we can conjugate it. To form the past tense of either asp"
     }
    ]
   },

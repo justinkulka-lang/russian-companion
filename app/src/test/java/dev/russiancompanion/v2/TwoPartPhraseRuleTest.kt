@@ -111,6 +111,15 @@ class TwoPartPhraseRuleTest {
             assertFalse(tag, TwoPartPhraseRule.present("<$tag class=\"x\">Иван</$tag>ович", "Иванович"))
             assertFalse(tag, TwoPartPhraseRule.present("Иван<$tag/>ович", "Иванович"))
         }
+        // T16-n1 (D28b): only HTML whitespace (space, tab, LF, FF, CR), "/" or ">" ends an inline name; the same table as
+        // catalog/test_d7b_tag_boundaries.py (parity with apply_d7b_selection_records.BLOCK).
+        for (ws in listOf(" ", "\t", "\n", "\u000C", "\r")) {
+            assertTrue("U+%04X".format(ws[0].code), TwoPartPhraseRule.present("<span${ws}class=x>Иван</span${ws}class=x>ович", "Иванович"))
+        }
+        for (ws in listOf("\u00A0", "\u2003", "\u2002", "\u3000", "\u000B", "\u0085", "\u2028", "\u202F")) {
+            assertFalse("U+%04X".format(ws[0].code), TwoPartPhraseRule.present("<span${ws}class=x>Иван</span${ws}class=x>ович", "Иванович"))
+            assertFalse("U+%04X".format(ws[0].code), TwoPartPhraseRule.present("<b${ws}>Иван</b${ws}>ович", "Иванович"))
+        }
         // Complete inline names with attributes or self-closing slashes stay inline.
         assertTrue(TwoPartPhraseRule.present("<span class=\"x\">Иван</span>ович", "Иванович"))
         assertTrue(TwoPartPhraseRule.present("<b>Иван</b >ович", "Иванович"))

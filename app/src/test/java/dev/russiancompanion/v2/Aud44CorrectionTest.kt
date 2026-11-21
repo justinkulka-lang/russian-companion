@@ -514,7 +514,8 @@ class Aud44CorrectionTest {
             // T15g A4: prov-d7b-u16-029 re-cited to adjectives-4292379.txt:67 (was 17e7a641...).
             16 to "16d20fdf3587db1128b4bb923c938074db69f4ba28976914067b40939a90e9c4",
             18 to "3c4ae8dd52293871574a5968c224388e31eb8c838e61a63dc2271fdb3e79073a",
-            19 to "fddd2ad0d2c32ba669c53effb93929f8e2a527e0b5a8e8251922756b0b1bd969",
+            // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
+            19 to "2b598d3eae9d945a6971cc67c0d6a234a882049517cdde75dbbfacf7ad98105f",
         )
     }
 }

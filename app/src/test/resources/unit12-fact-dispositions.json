@@ -1,8 +1,8 @@
 {
  "task": "T16b (Claude Code, 2026-11-20); dispositions from audit/prep/units-11-12-prep-at-9a9b9760.txt, Unit 12 section 3, and audit/prep/s1-claim-verification.csv",
  "totals": {
-  "MARK": 18,
-  "REWORD": 12
+  "MARK": 17,
+  "REWORD": 13
  },
  "entries": [
   {
@@ -383,12 +383,14 @@
    "ownerId": "u12-i-prep-plural-1",
    "field": "item feedback",
    "baselineSentence": "The question requires both prepositional case and plural number; the singular dative option changes both features.",
-   "disposition": "MARK",
+   "disposition": "REWORD",
+   "replacement": "The prepositional plural differs from the singular dative in both case and number.",
+   "replacementKind": "MARKED",
    "sourceRecordIds": [
     "prov-ex-or-u12-prep-plural-4",
     "prov-ex-or-u12-prep-plural-5"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records."
+   "reason": "T16-n1 (D28c): \"the question requires\" is A2-26 assessment commentary; the fact stays marked (nouns.csv стол pl_prep and sg_dat)."
   },
   {
    "entry": "U12-E29",
@@ -635,7 +637,7 @@
   },
   {
    "ownerId": "u12-i-prep-plural-1",
-   "sentence": "The question requires both prepositional case and plural number; the singular dative option changes both features.",
+   "sentence": "The prepositional plural differs from the singular dative in both case and number.",
    "evidence": [
     {
      "file": "catalog/sources/units-3-5/openrussian/nouns.csv",

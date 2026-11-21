@@ -26,6 +26,9 @@ class Units610InstructionalValidityTest {
             val unit = pack.unit(number)!!
             unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
                 val checks = objective.checkItemIds.map { id -> pack.items.first { it.id == id } }
+                // T16-n1 (D28a): the common assertions apply to every required check, typed or closed (the prompt and status
+                // checks below were applied only to feature-valid closed checks, so typed checks escaped them).
+                checks.forEach { item -> assertCommon(item) }
                 val qualifying = checks.filter { V2Validator.featureValid(pack, it) }
                 assertTrue("${objective.id} has no independent feature-valid check", qualifying.isNotEmpty())
                 qualifying.forEach { item ->
@@ -119,6 +122,32 @@ class Units610InstructionalValidityTest {
             errors.joinToString("\n"),
             errors.any { it.contains(swapped.id) && it.contains("distractor is unrelated") },
         )
+    }
+
+    @Test
+    fun typedChecksKeepTheCommonAssertionsAndFaultInjectionsFail() {
+        // T16-n1 (D28a): the Codex fault injections, applied to a Units 6-10 typed check, fail.
+        val item = pack().items.single { it.id == "u10-i-type-nas" }
+        assertCommon(item)
+        val rejected = org.junit.Assert.assertThrows(AssertionError::class.java) { assertCommon(item.copy(reviewStatus = "REJECTED")) }
+        assertTrue(rejected.message, rejected.message.orEmpty().contains(item.id))
+        val colocated = org.junit.Assert.assertThrows(AssertionError::class.java) {
+            assertCommon(item.copy(prompt = item.prompt + " Use another cell of the same table."))
+        }
+        assertTrue(colocated.message, colocated.message.orEmpty().contains("${item.id} uses a source co-location prompt"))
+    }
+
+    private fun assertCommon(item: dev.russiancompanion.v2.curriculum.V2CheckItem) {
+        val colocated = Regex("(?i)\\bother row\\b|\\bother line\\b|same frozen record|another cell of the same")
+        val englishCue = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
+        assertFalse("${item.id} uses a source co-location prompt", colocated.containsMatchIn(item.prompt))
+        assertFalse("${item.id} keeps a recorded-for prompt", englishCue.containsMatchIn(item.prompt))
+        assertEquals(item.id, "IMPLEMENTED_PENDING_FINAL_AUDIT", item.reviewStatus)
+        item.typedAnswerKey?.let { key ->
+            assertEquals(item.id, "TYPED_FORM", item.kind)
+            assertTrue(item.id, item.answer.isNotBlank() && item.options.isEmpty() && item.answer in key.acceptedAnswers)
+            assertEquals(item.id, item.reviewStatus, key.review?.status)
+        } ?: assertEquals(item.id, 1, item.options.count { it == item.answer })
     }
 
     @Test

@@ -69,7 +69,8 @@ class Unit12FactProvenanceTest {
         val totals = dispositions.groupingBy { it.string("disposition") }.eachCount()
         // Report section 3 and the S1 verdicts (1369 SUPPORTED; 1370, 1380 PARTIAL, reworded and marked); 1365, 1390, 1418, 1419
         // and 1429 lose A2-26 assessment commentary; 1392 and 1395 lose markup and "row" wording.
-        assertEquals(mapOf("MARK" to 18, "REWORD" to 12), totals)
+        // T16-n1 (D28c): 1424 loses "the question requires" commentary (MARK 18 -> 17, REWORD 12 -> 13).
+        assertEquals(mapOf("MARK" to 17, "REWORD" to 13), totals)
         assertEquals(totals, json.getValue("totals").jsonObject.mapValues { it.value.jsonPrimitive.int })
         val hosts = hosts(pack)
         dispositions.forEach { disposition ->
