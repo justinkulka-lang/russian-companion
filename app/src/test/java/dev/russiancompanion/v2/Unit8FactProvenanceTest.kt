@@ -24,9 +24,9 @@ class Unit8FactProvenanceTest {
         "Use this taught pair for the item.",
         "Review these seven pairs.",
         "This lesson compares singular and plural nominative forms, then explains the spelling in the plurals.",
-        "Read the requested form before answering.",
-        "Identify number from the requested form and context.",
-        "Choose the requested form.",
+        "Read the form carefully before answering.", // T16-n2 (D31c): was "Read the requested form before answering."
+        "Identify number from the form and its context.", // T16-n2 (D31c): was "Identify number from the requested form and context."
+        "Choose the form with the specified grammatical features.", // T16-n2 (D31c): was "Choose the requested form."
         "Compare the examples.",
         "Read the whole phrase before answering.",
         "Practise the shown forms.",
@@ -93,9 +93,13 @@ class Unit8FactProvenanceTest {
             val cited = disposition.getValue("sourceRecordIds").jsonArray.map { it.jsonPrimitive.content }
             when (disposition.string("disposition")) {
                 "MARK" -> {
-                    assertTrue(baseline, baseline in current)
-                    assertTrue(baseline, matching.any { baseline in it.russianFacts })
-                    assertEquals(baseline, factSources(pack, owner).getValue(baseline).toSet(), cited.toSet())
+                    // T16-n2 (D31c): where the learner wording of a marked sentence changed, currentSentence names it; the
+                    // baseline must then be gone and the new wording marked with the same records (as in Unit11FactProvenanceTest).
+                    val marked = disposition["currentSentence"]?.jsonPrimitive?.content ?: baseline
+                    if (marked != baseline) assertFalse("Replaced sentence survives: $baseline", baseline in current)
+                    assertTrue(marked, marked in current)
+                    assertTrue(marked, matching.any { marked in it.russianFacts })
+                    assertEquals(marked, factSources(pack, owner).getValue(marked).toSet(), cited.toSet())
                 }
                 "REWORD" -> {
                     assertFalse("Reworded sentence survives: $baseline", baseline in current)

@@ -130,10 +130,10 @@
    "field": "remediation body",
    "baselineSentence": "All these options are recorded forms, so the requested gender, number and case decide the answer; merely recognizing a valid-looking ending does not.",
    "disposition": "REWORD",
-   "replacement": "Use the requested gender, number and case to decide the answer.",
+   "replacement": "Use the gender, number and case of the phrase to decide the answer.",
    "replacementKind": "INSTRUCTION",
    "sourceRecordIds": [],
-   "reason": "An app-inventory and answer-strategy assertion no frozen source states; reworded to an instruction."
+   "reason": "An app-inventory and answer-strategy assertion no frozen source states; reworded to an instruction. T16-n2 (D31c): replacement now \"Use the gender, number and case of the phrase to decide the answer.\" (was \"Use the requested gender, number and case to decide the answer.\")."
   },
   {
    "entry": "U7-E10",
@@ -356,7 +356,8 @@
     "prov-ex-or-u7-objectadj-6",
     "prov-ex-or-u7-objectadj-4"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-u7-default-rem, prov-t15b-u7-a33, prov-ex-or-u7-objectadj-6, prov-ex-or-u7-objectadj-4."
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-u7-default-rem, prov-t15b-u7-a33, prov-ex-or-u7-objectadj-6, prov-ex-or-u7-objectadj-4. T16-n2 (D31c): marked wording now \"Keep feminine singular agreement; a masculine dictionary form changes gender.\" (was \"Keep feminine singular agreement; the masculine dictionary form changes gender and does not answer this question.\"); the same frozen records.",
+   "currentSentence": "Keep feminine singular agreement; a masculine dictionary form changes gender."
   },
   {
    "entry": "U7-E27",
@@ -614,7 +615,7 @@
   },
   {
    "ownerId": "u7-i-objectadj-3",
-   "sentence": "Keep feminine singular agreement; the masculine dictionary form changes gender and does not answer this question.",
+   "sentence": "Keep feminine singular agreement; a masculine dictionary form changes gender.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",

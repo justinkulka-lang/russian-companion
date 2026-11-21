@@ -243,7 +243,9 @@ class V2LearnerFieldsTest {
         val shown = "@Composable\ninternal fun ProbeScreen(unit: V2Unit) {\n    Text(probeLabel(unit))\n}\ninternal fun probeLabel(unit: V2Unit): String = \"About: \${unit.topicSummary}\"\n"
         assertTrue("unit.topicSummary" in renderedByDataflow(mapOf("Probe.kt" to shown)))
         // 3. The shared set is the rendered set plus the declared, scanned fields no screen renders; nothing else.
-        assertEquals(setOf("unit.topicSummary", "item.answer"), V2LearnerFields.DECLARED_NOT_RENDERED)
+        // T16-n2 (D31b): reference.reviewStatus is shown only through its plain label, so it moves from RENDERED to the
+        // declared, scanned set (was setOf("unit.topicSummary", "item.answer")).
+        assertEquals(setOf("unit.topicSummary", "item.answer", "reference.reviewStatus"), V2LearnerFields.DECLARED_NOT_RENDERED)
         assertTrue(V2LearnerFields.DECLARED_NOT_RENDERED.none { it in renderedByDataflow() })
         // Every kind the shared set emits for the current pack is declared; step.unavailableReason has no value in the
         // current pack, and the regression below shows it is scanned. T15i (WC011): the Units 6-10 binder tasks give

@@ -86,6 +86,22 @@ internal object V2DesignDiagnostics {
             "\\b(?:all )?(?:the|these) options are\\b|\\bbeyond (?:this|the) check\\b|\\bit asks only\\b",
         RegexOption.IGNORE_CASE,
     )
+    // T16-n2 (owner decision D30b, approved rule change): review and workflow status, table and record framing, and question
+    // framing. Ordinary grammar wording stays allowed: "dictionary form", the furniture noun "table" in a gloss ("... — table",
+    // "on the table"), and the learner's own binder directions ("make a table ... with rows for ...").
+    private val workflowAndFraming = Regex(
+        // (a) review and workflow status
+        "\\bpending (?:qualified )?review\\b|\\bqualified review\\b|\\breviewed examples\\b|\\breviewers?\\b|\\bapprov(?:e|es|ed|ing)\\b|" +
+            "\\bsigns? an app note\\b|\\brelease (?:stays|remains|is) blocked\\b|" +
+            // (b) table and record framing
+            "\\brows?\\b(?! for\\b)|" +
+            "\\b(?:in|from|of) (?:this|the|that) table\\b|\\bthis table\\b|\\btable (?:rows?|numbers?|cells?|fields?|positions?)\\b|" +
+            "\\brecorded (?:\\w+ ){0,3}forms?\\b|\\brequested (?:[\\w-]+ ){0,4}(?:forms?|rows?)\\b|\\bthe requested\\b|\\brequested here\\b|\\bkeyed\\b|\\bcells?\\b|" +
+            "\\bfrom the dictionary\\b|" +
+            // (c) question framing
+            "\\bthe question here is\\b|\\brequested by (?:this|the) question\\b",
+        RegexOption.IGNORE_CASE,
+    )
     private val tableCell = Regex("\\|{1,2}[ \\t]*\\p{L}")
     // T15g (owner decision D18d, approved rule change): only the notice or direction sentence itself is exempt, identified
     // by owner (the ref-*-attribution licence notices) or by exact template (the D8 self-attestation sentence). A sentence
@@ -100,7 +116,7 @@ internal object V2DesignDiagnostics {
     )
     private fun lintedSentences(value: String): List<String> = value.split(sentenceBreak).filter { it.trim() !in NOTICE_TEMPLATES }
     private fun widenedNarration(value: String): Boolean = lintedSentences(value)
-        .any { sourceNarration.containsMatchIn(it) || assessmentCommentary.containsMatchIn(it) }
+        .any { sourceNarration.containsMatchIn(it) || assessmentCommentary.containsMatchIn(it) || workflowAndFraming.containsMatchIn(it) }
     private fun tableCellMarkup(value: String): Boolean = lintedSentences(value).any { tableCell.containsMatchIn(it) }
     private val answerInstruction = Regex("\\b(?:choose|select|selecting|the answer|matching description|is the matching)\\b", RegexOption.IGNORE_CASE)
     private val sentenceBreak = Regex("(?<=[.;!?])\\s+")

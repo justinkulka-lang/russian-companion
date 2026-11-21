@@ -26,7 +26,7 @@ class Unit6FactProvenanceTest {
         // T15a-n1: unsourced animacy claims reworded to instruction or scope text, identically in teaching and remediation.
         "Treat the English notes as dictionary senses, not full sentence translations.",
         "These steps ask you to recognize the supplied forms only, not to produce endings for other nouns.",
-        "Use the requested case or the supplied context to decide a word’s sentence role.",
+        "Use the case or the supplied context to decide a word’s sentence role.", // T16-n2 (D31c): was "Use the requested case or the supplied context to decide a word’s sentence role."
         "Answer with the case the task names.",
         "This check does not establish completed action; no aspect or full-translation claim is tested.",
     )
@@ -60,8 +60,12 @@ class Unit6FactProvenanceTest {
             } }
             when (disposition.string("disposition")) {
                 "MARKED" -> {
-                    assertTrue(baseline in currentSentences)
-                    assertTrue(matching.any { baseline in it.russianFacts })
+                    // T16-n2 (D31c): where the learner wording of a marked sentence changed, currentSentence names it; the
+                    // baseline must then be gone and the new wording marked with the same records (as in Unit11FactProvenanceTest).
+                    val marked = disposition["currentSentence"]?.jsonPrimitive?.content ?: baseline
+                    if (marked != baseline) assertFalse("Replaced sentence survives: $baseline", baseline in currentSentences)
+                    assertTrue(marked, marked in currentSentences)
+                    assertTrue(marked, matching.any { marked in it.russianFacts })
                     assertTrue(disposition.getValue("sourceRecordIds").jsonArray.isNotEmpty())
                 }
                 "REMOVED" -> assertFalse("Removed standalone sentence survives unaccounted: $baseline", baseline in currentSentences)
@@ -70,7 +74,8 @@ class Unit6FactProvenanceTest {
             // T15a-n1: a MARKED entry cites exactly the frozen-source records its marker names (owner decision 11/14/2026).
             val cited = disposition.getValue("sourceRecordIds").jsonArray.map { it.jsonPrimitive.content }
             if (disposition.string("disposition") == "MARKED") {
-                assertEquals(baseline, factSources(pack, disposition.string("ownerId")).getValue(baseline).toSet(), cited.toSet())
+                val marked = disposition["currentSentence"]?.jsonPrimitive?.content ?: baseline
+                assertEquals(marked, factSources(pack, disposition.string("ownerId")).getValue(marked).toSet(), cited.toSet())
             } else assertTrue(cited.isEmpty())
             cited.forEach { source ->
                 val record = pack.provenanceRecords.single { it.itemId == source }

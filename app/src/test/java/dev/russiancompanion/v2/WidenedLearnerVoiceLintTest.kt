@@ -145,6 +145,71 @@ class WidenedLearnerVoiceLintTest {
         assertTrue(signals("Self-attest: the dictionary gives this meaning.", "LEARNER_PROVENANCE_NARRATION").isNotEmpty())
     }
 
+    /**
+     * T16-n2 (owner decision D30b, approved rule change): review and workflow status, table and record framing, and question
+     * framing are caught, including every manual miss of the Codex check at 62b4b084 (items 3 and 9).
+     */
+    @Test fun workflowTableAndQuestionFramingIsCaught() {
+        for (text in listOf(
+            // (a) review and workflow status
+            "English sound notes are pending qualified review.",
+            "English sound notes are pending review.",
+            "Detailed phonetics remain in the book until a reviewer signs an app note.",
+            "Word, phrase, and sign reading wait for reviewed examples.",
+            "Public release stays blocked until review and device evidence exist.",
+            "Some units contain proposed lesson bodies that still require qualified review.",
+            "This reference does not approve the packaged records.",
+            "This is a proposed Lesson 1 mapping, not an approved owned-edition alignment.",
+            "A reviewer signs off on this note.",
+            // (b) table and record framing
+            "Вы бу́дете говори́ть is the second-person plural future row: the auxiliary agrees with you in that row.",
+            "Я бу́ду говори́ть is first-person singular and changes the person as well as the table number.",
+            "Мы ска́жем is the first-person plural future of the perfective verb in this table, agreeing with we.",
+            "столу́ is the recorded dative singular form of сто́л.",
+            "The requested row changes case while keeping the noun singular.",
+            "Я бу́ду говори́ть is first-person singular future, not the requested second-person plural future row.",
+            "стола́х is the recorded prepositional plural form of the shown noun.",
+            "The keyed counterexample is incorrect Russian, not a form to use.",
+            "Written stress mark from the dictionary",
+            "Read the requested form before answering.",
+            "до́ма is the singular dative form, so it does not supply the requested plural nominative form.",
+            "бы́л is masculine singular past, not the plural past requested here.",
+            "Use the requested case or the supplied context to decide a word's sentence role.",
+            "Read the ending in each cell.",
+            "Two speaker rows",
+            "The plural ending differs from the table pair.",
+            // (c) question framing
+            "Recognizing the English sentence meaning is useful, but the question here is whether the noun is the subject.",
+            "хорошое письмо is the rejected spelling requested by this question.",
+        )) assertTrue(text, signals(text, "LEARNER_PROVENANCE_NARRATION").isNotEmpty())
+    }
+
+    /** T16-n2: ordinary grammar terms, the furniture noun, and the learner's own book and binder directions still pass. */
+    @Test fun dictionaryFormFurnitureTableAndBinderDirectionsPass() {
+        for (text in listOf(
+            "The dictionary form of this adjective is masculine singular nominative.",
+            "Look up the dictionary form before you choose.",
+            "стол — table",
+            "сто́л means table.",
+            "The book is on the table.",
+            "Put the letter on the table, then sit down.",
+            "In your binder, make a table of the six cases with rows for singular and plural.",
+            "Make a table with rows for each person, then fill it in from your book.",
+            "Open the matching lesson in your book and read the dialogue aloud.",
+            "Choose the correct form.",
+            "до́ма is the singular dative form, not the plural nominative form.",
+            "The cue shows feminine singular, but the answer is plural; past agreement follows the subject number.",
+            "Recognizing the English sentence meaning is useful, but also decide whether the noun is the subject or the direct object.",
+            "This counterexample is incorrect Russian, not a form to use.",
+            "Write the throw and the arrow.",
+        )) {
+            assertTrue(text, signals(text, "LEARNER_PROVENANCE_NARRATION").isEmpty())
+            assertTrue(text, signals(text, "LEARNER_TABLE_CELL_MARKUP").isEmpty())
+        }
+        // Letter notes (unit null) carry no review status either.
+        assertTrue(current.letters.none { "review" in it.englishNote.lowercase() })
+    }
+
     // T16 (owner direction 2026-11-20): Unit 11 joins the blocking set (was Units 1-10); T16b: Unit 12 too (was 1..11).
     @Test fun unitsOneToTwelveHaveNoWidenedLintHits() {
         val hits = V2DesignDiagnostics.audit(current).signals.filter { it.rule in rules && (it.unit ?: 0) in 1..12 }

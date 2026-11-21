@@ -19,7 +19,7 @@ class Unit12FactProvenanceTest {
         "Compare your answer with the worked examples for this form, then try again.",
         "Stress marks are optional when you type.",
         "Use the person forms taught here.",
-        "Choose the requested person and number.",
+        "Choose the correct person and number.", // T16-n2 (D31c): was "Choose the requested person and number."
         "Learn the two supplied infinitives.",
         "Select the prepositional plural form while keeping the plural number of the cue.",
     )

@@ -813,7 +813,8 @@ internal fun V2ReferenceDetailScreen(
         Text(entry.summary, style = MaterialTheme.typography.titleMedium)
         Spacer(Modifier.height(8.dp))
         Text(entry.detail)
-        V2Status("Review status: ${entry.reviewStatus}")
+        // T16-n2 (D31b): one plain learner label per status; the raw enum value is never shown.
+        V2Status(V2ReviewStatusLabels.label(entry.reviewStatus))
         V2SecondaryButton("Bookmark", { onBookmark(entry.id, "REFERENCE") })
     }
 }

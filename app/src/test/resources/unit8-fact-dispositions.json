@@ -93,7 +93,8 @@
     "prov-ex-or-u8-plural-3",
     "prov-ex-or-u8-plural-1"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-plural-3, prov-ex-or-u8-plural-1."
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-plural-3, prov-ex-or-u8-plural-1. T16-n2 (D31c): marked wording now \"The plural ending differs from the pair meaning table, and its supplied stress is on the final syllable.\" (was \"The plural ending differs from the table pair and its supplied stress is on the final syllable.\"); the same frozen records.",
+   "currentSentence": "The plural ending differs from the pair meaning table, and its supplied stress is on the final syllable."
   },
   {
    "entry": "U8-E08",
@@ -270,10 +271,10 @@
    "field": "remediation body",
    "baselineSentence": "The rule controls spelling, but the question determines the required gender, number and case.",
    "disposition": "REWORD",
-   "replacement": "Read the requested form before answering.",
+   "replacement": "Read the form carefully before answering.",
    "replacementKind": "INSTRUCTION",
    "sourceRecordIds": [],
-   "reason": "Prep report: separates the instruction from the sourced rule (W:24, marked separately)."
+   "reason": "Prep report: separates the instruction from the sourced rule (W:24, marked separately). T16-n2 (D31c): replacement now \"Read the form carefully before answering.\" (was \"Read the requested form before answering.\")."
   },
   {
    "entry": "U8-E23",
@@ -282,10 +283,10 @@
    "field": "remediation body",
    "baselineSentence": "All these options are correctly spelled: the questions test form recognition rather than choosing between correct and incorrect spellings.",
    "disposition": "REWORD",
-   "replacement": "Choose the requested form.",
+   "replacement": "Choose the form with the specified grammatical features.",
    "replacementKind": "INSTRUCTION",
    "sourceRecordIds": [],
-   "reason": "Prep report: assessment commentary; the form contrasts are taught elsewhere. Reworded to an instruction."
+   "reason": "Prep report: assessment commentary; the form contrasts are taught elsewhere. Reworded to an instruction. T16-n2 (D31c): replacement now \"Choose the form with the specified grammatical features.\" (was \"Choose the requested form.\")."
   },
   {
    "entry": "U8-E24",
@@ -324,7 +325,8 @@
     "prov-ex-or-u8-agreement-3-gloss",
     "prov-t15c-u8-p81"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-agreement-2-gloss, prov-ex-or-u8-agreement-3, prov-ex-or-u8-agreement-3-gloss, prov-t15c-u8-p81."
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15c): prov-ex-or-u8-agreement-2-gloss, prov-ex-or-u8-agreement-3, prov-ex-or-u8-agreement-3-gloss, prov-t15c-u8-p81. T16-n2 (D31c): marked wording now \"The plural changes number, not the owner or the English meaning.\" (was \"The requested plural is a number distinction, not a different owner or a change of English meaning.\"); the same frozen records.",
+   "currentSentence": "The plural changes number, not the owner or the English meaning."
   },
   {
    "entry": "U8-E27",
@@ -813,7 +815,7 @@
   },
   {
    "ownerId": "u8-st-rem-plural",
-   "sentence": "The plural ending differs from the table pair and its supplied stress is on the final syllable.",
+   "sentence": "The plural ending differs from the pair meaning table, and its supplied stress is on the final syllable.",
    "evidence": [
     {
      "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
@@ -939,7 +941,7 @@
   },
   {
    "ownerId": "u8-st-rem-agreement",
-   "sentence": "The requested plural is a number distinction, not a different owner or a change of English meaning.",
+   "sentence": "The plural changes number, not the owner or the English meaning.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",

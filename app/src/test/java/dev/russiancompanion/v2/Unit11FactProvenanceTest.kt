@@ -18,13 +18,13 @@ class Unit11FactProvenanceTest {
     private val reviewedNonFacts = setOf(
         "Compare your answer with the worked examples for this form, then try again.",
         "Stress marks are optional when you type.",
-        "Choose the requested sentence.",
-        "Check the requested gender and number.",
+        "Choose the correct sentence.", // T16-n2 (D31c): was "Choose the requested sentence."
+        "Check the gender and number.", // T16-n2 (D31c): was "Check the requested gender and number."
         "Copy the whole form.",
         "Compare the endings of the same verb.",
-        "Use the gender requested in the question.",
+        "Match the past form to the specified gender.", // T16-n2 (D31c): was "Use the gender requested in the question."
         "Compare the past forms in the worked examples.",
-        "Choose the past form with the feminine singular agreement requested here.",
+        "Choose the feminine singular past form.", // T16-n2 (D31c): was "Choose the past form with the feminine singular agreement requested here."
     )
 
     @Test

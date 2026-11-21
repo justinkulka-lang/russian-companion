@@ -16,7 +16,8 @@
     "prov-t16-u11-p38",
     "prov-t16-u11-p56"
    ],
-   "reason": "Retained exact sentence; marker cites past-tense:38 and :56."
+   "reason": "Retained exact sentence; marker cites past-tense:38 and :56. T16-n2 (D31c): marked wording now \"The past form matches the subject in gender and number; choose feminine singular.\" (was \"The past form matches the subject in gender and number; choose feminine singular for this question.\"); the same frozen records.",
+   "currentSentence": "The past form matches the subject in gender and number; choose feminine singular."
   },
   {
    "entry": "U11-E02",
@@ -25,14 +26,14 @@
    "field": "item feedback",
    "baselineSentence": "The cue shows the feminine singular form, but the question asks for masculine singular of the same verb.",
    "disposition": "REWORD",
-   "replacement": "The cue shows the feminine singular form, but the requested form is masculine singular of the same verb.",
+   "replacement": "The cue is feminine singular; change it to masculine singular of the same verb.",
    "replacementKind": "MARKED",
    "sourceRecordIds": [
     "prov-ex-or-u11-past-read-0",
     "prov-ex-or-u11-past-read-1",
     "prov-t16-u11-p56"
    ],
-   "reason": "\"the question asks\" is A2-26 assessment commentary; the reworded sentence keeps the fact and cites verbs.csv чита́ть past_f/past_m and past-tense:56."
+   "reason": "\"the question asks\" is A2-26 assessment commentary; the reworded sentence keeps the fact and cites verbs.csv чита́ть past_f/past_m and past-tense:56. T16-n2 (D31c): replacement now \"The cue is feminine singular; change it to masculine singular of the same verb.\" (was \"The cue shows the feminine singular form, but the requested form is masculine singular of the same verb.\")."
   },
   {
    "entry": "U11-E03",
@@ -41,10 +42,10 @@
    "field": "item feedback",
    "baselineSentence": "The question asks for the feminine singular line, not the plural line.",
    "disposition": "REWORD",
-   "replacement": "Choose the requested sentence.",
+   "replacement": "Choose the correct sentence.",
    "replacementKind": "INSTRUCTION",
    "sourceRecordIds": [],
-   "reason": "Item-direction commentary, not needed teaching; reworded to an instruction (report section 3)."
+   "reason": "Item-direction commentary, not needed teaching; reworded to an instruction (report section 3). T16-n2 (D31c): replacement now \"Choose the correct sentence.\" (was \"Choose the requested sentence.\")."
   },
   {
    "entry": "U11-E04",
@@ -53,7 +54,7 @@
    "field": "item feedback",
    "baselineSentence": "The cue shows feminine singular, but the requested row is plural; past agreement follows the subject number.",
    "disposition": "REWORD",
-   "replacement": "The cue shows feminine singular, but the requested form is plural; past agreement follows the subject number.",
+   "replacement": "The cue is feminine singular; change it to plural, since past agreement follows the subject’s number.",
    "replacementKind": "MARKED",
    "sourceRecordIds": [
     "prov-ex-or-u11-past-be-1",
@@ -61,7 +62,7 @@
     "prov-t16-u11-p38",
     "prov-t16-u11-p65"
    ],
-   "reason": "\"row\" wording removed (report section 3); marker cites verbs.csv быть and past-tense:38, :65."
+   "reason": "\"row\" wording removed (report section 3); marker cites verbs.csv быть and past-tense:38, :65. T16-n2 (D31c): replacement now \"The cue is feminine singular; change it to plural, since past agreement follows the subject’s number.\" (was \"The cue shows feminine singular, but the requested form is plural; past agreement follows the subject number.\")."
   },
   {
    "entry": "U11-E05",
@@ -70,10 +71,10 @@
    "field": "item feedback",
    "baselineSentence": "The cue shows neuter singular, but the question asks for the plural form of the same verb.",
    "disposition": "REWORD",
-   "replacement": "Check the requested gender and number.",
+   "replacement": "Check the gender and number.",
    "replacementKind": "INSTRUCTION",
    "sourceRecordIds": [],
-   "reason": "The baseline wording is stale after the constant-key repair of u11-i-past-be-2 (report sections 1 and 3)."
+   "reason": "The baseline wording is stale after the constant-key repair of u11-i-past-be-2 (report sections 1 and 3). T16-n2 (D31c): replacement now \"Check the gender and number.\" (was \"Check the requested gender and number.\")."
   },
   {
    "entry": "U11-E06",
@@ -179,7 +180,7 @@
  "markerReviews": [
   {
    "ownerId": "u11-g-past-read-0",
-   "sentence": "The past form matches the subject in gender and number; choose feminine singular for this question.",
+   "sentence": "The past form matches the subject in gender and number; choose feminine singular.",
    "evidence": [
     {
      "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
@@ -195,7 +196,7 @@
   },
   {
    "ownerId": "u11-i-past-read-1",
-   "sentence": "The cue shows the feminine singular form, but the requested form is masculine singular of the same verb.",
+   "sentence": "The cue is feminine singular; change it to masculine singular of the same verb.",
    "evidence": [
     {
      "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
@@ -211,7 +212,7 @@
   },
   {
    "ownerId": "u11-i-past-be-1",
-   "sentence": "The cue shows feminine singular, but the requested form is plural; past agreement follows the subject number.",
+   "sentence": "The cue is feminine singular; change it to plural, since past agreement follows the subject’s number.",
    "evidence": [
     {
      "file": "catalog/sources/units-3-5/openrussian/verbs.csv",

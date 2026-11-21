@@ -845,11 +845,11 @@
    "field": "item feedback",
    "baselineSentence": "The other row requested here is the nominative subject form.",
    "disposition": "MARK",
-   "currentSentence": "The phrase requested here is the nominative subject form.",
+   "currentSentence": "Use the nominative phrase for the subject.",
    "sourceRecordIds": [
     "prov-t15e-u10-c28"
    ],
-   "reason": "Prep report: MARK with accusative-4330404.txt:28; the wording now matches the repaired nominative-plural prompt instead of 'other row'."
+   "reason": "Prep report: MARK with accusative-4330404.txt:28; the wording now matches the repaired nominative-plural prompt instead of 'other row'. T16-n2 (D31c): marked wording now \"Use the nominative phrase for the subject.\" (was \"The phrase requested here is the nominative subject form.\"); the same frozen records."
   }
  ],
  "markerReviewsNote": "Each Unit 10 marker with no Cyrillic word names, for every cited frozen-source record, the frozen file, line and an exact quote of that line (OpenRussian rows are quoted by their bare headword and tab). The listed lines state the marked claim; the test checks that the lines exist and hold a cited record.",
@@ -1432,7 +1432,7 @@
   },
   {
    "ownerId": "u10-i-animate-1",
-   "sentence": "The phrase requested here is the nominative subject form.",
+   "sentence": "Use the nominative phrase for the subject.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",

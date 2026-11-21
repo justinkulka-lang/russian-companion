@@ -16,7 +16,8 @@
     "prov-t16b-u12-f34",
     "prov-t16b-u12-f41"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records."
+   "reason": "Retained exact sentence; marker cites frozen-source records. T16-n2 (D31c): marked wording now \"Both use a future auxiliary plus the same imperfective infinitive; choose the plural sentence.\" (was \"Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.\"); the same frozen records.",
+   "currentSentence": "Both use a future auxiliary plus the same imperfective infinitive; choose the plural sentence."
   },
   {
    "entry": "U12-E02",
@@ -69,7 +70,8 @@
     "prov-t16b-u12-f53",
     "prov-t16b-u12-f60"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records."
+   "reason": "Retained exact sentence; marker cites frozen-source records. T16-n2 (D31c): marked wording now \"These perfective future forms use a single conjugated verb without a separate future auxiliary; choose the plural form.\" (was \"These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.\"); the same frozen records.",
+   "currentSentence": "These perfective future forms use a single conjugated verb without a separate future auxiliary; choose the plural form."
   },
   {
    "entry": "U12-E06",
@@ -90,10 +92,10 @@
    "field": "item feedback",
    "baselineSentence": "The cue shows first-person singular, but the requested table row is first-person plural.",
    "disposition": "REWORD",
-   "replacement": "Choose the requested person and number.",
+   "replacement": "Choose the correct person and number.",
    "replacementKind": "INSTRUCTION",
    "sourceRecordIds": [],
-   "reason": "Table-position commentary; reworded to an instruction (report section 3)."
+   "reason": "Table-position commentary; reworded to an instruction (report section 3). T16-n2 (D31c): replacement now \"Choose the correct person and number.\" (was \"Choose the requested person and number.\")."
   },
   {
    "entry": "U12-E08",
@@ -295,7 +297,8 @@
     "prov-ex-or-u12-dative-7",
     "prov-ex-or-u12-dative-8"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records."
+   "reason": "Retained exact sentence; marker cites frozen-source records. T16-n2 (D31c): marked wording now \"Changing to dative singular changes case while keeping the noun singular; a plural form changes number instead.\" (was \"The requested row changes case while keeping the noun singular; the plural option changes number instead.\"); the same frozen records.",
+   "currentSentence": "Changing to dative singular changes case while keeping the noun singular; a plural form changes number instead."
   },
   {
    "entry": "U12-E22",
@@ -321,7 +324,8 @@
     "prov-t16b-u12-w1",
     "prov-t16b-u12-w26"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records."
+   "reason": "Retained exact sentence; marker cites frozen-source records. T16-n2 (D31c): marked wording now \"The adjective agrees with the gender of the noun it modifies; the neuter form is also the form used with the neuter noun in the good-letter example.\" (was \"The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.\"); the same frozen records.",
+   "currentSentence": "The adjective agrees with the gender of the noun it modifies; the neuter form is also the form used with the neuter noun in the good-letter example."
   },
   {
    "entry": "U12-E24",
@@ -346,7 +350,8 @@
    "sourceRecordIds": [
     "prov-t16b-u12-w26"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records."
+   "reason": "Retained exact sentence; marker cites frozen-source records. T16-n2 (D31c): marked wording now \"This counterexample is incorrect Russian, not a form to use.\" (was \"The keyed counterexample is incorrect Russian, not a form to use.\"); the same frozen records.",
+   "currentSentence": "This counterexample is incorrect Russian, not a form to use."
   },
   {
    "entry": "U12-E26",
@@ -355,13 +360,13 @@
    "field": "item feedback",
    "baselineSentence": "Neither singular use matches the plural row requested.",
    "disposition": "REWORD",
-   "replacement": "Neither singular use matches the plural form requested.",
+   "replacement": "Neither singular use is a plural form.",
    "replacementKind": "MARKED",
    "sourceRecordIds": [
     "prov-ex-or-u12-prep-plural-1",
     "prov-ex-or-u12-prep-plural-2"
    ],
-   "reason": "A2-26 assessment commentary (\"the question asks\" / \"table forms\") removed; the fact stays marked."
+   "reason": "A2-26 assessment commentary (\"the question asks\" / \"table forms\") removed; the fact stays marked. T16-n2 (D31c): replacement now \"Neither singular use is a plural form.\" (was \"Neither singular use matches the plural form requested.\")."
   },
   {
    "entry": "U12-E27",
@@ -422,7 +427,7 @@
  "markerReviews": [
   {
    "ownerId": "u12-g-future-imp-0",
-   "sentence": "Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.",
+   "sentence": "Both use a future auxiliary plus the same imperfective infinitive; choose the plural sentence.",
    "evidence": [
     {
      "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
@@ -491,7 +496,7 @@
   },
   {
    "ownerId": "u12-g-future-perf-0",
-   "sentence": "These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.",
+   "sentence": "These perfective future forms use a single conjugated verb without a separate future auxiliary; choose the plural form.",
    "evidence": [
     {
      "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
@@ -545,7 +550,7 @@
   },
   {
    "ownerId": "u12-i-dative-2",
-   "sentence": "The requested row changes case while keeping the noun singular; the plural option changes number instead.",
+   "sentence": "Changing to dative singular changes case while keeping the noun singular; a plural form changes number instead.",
    "evidence": [
     {
      "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
@@ -572,7 +577,7 @@
   },
   {
    "ownerId": "u12-i-spelling-1",
-   "sentence": "The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.",
+   "sentence": "The adjective agrees with the gender of the noun it modifies; the neuter form is also the form used with the neuter noun in the good-letter example.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
@@ -604,7 +609,7 @@
   },
   {
    "ownerId": "u12-i-spelling-2",
-   "sentence": "The keyed counterexample is incorrect Russian, not a form to use.",
+   "sentence": "This counterexample is incorrect Russian, not a form to use.",
    "evidence": [
     {
      "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
@@ -615,7 +620,7 @@
   },
   {
    "ownerId": "u12-g-prep-plural-0",
-   "sentence": "Neither singular use matches the plural form requested.",
+   "sentence": "Neither singular use is a plural form.",
    "evidence": [
     {
      "file": "catalog/sources/units-3-5/openrussian/nouns.csv",

@@ -48,7 +48,6 @@ internal object V2LearnerFields {
         "reference.title" to ("V2Screens.kt" to "entry.title"),
         "reference.summary" to ("V2Screens.kt" to "entry.summary"),
         "reference.detail" to ("V2Screens.kt" to "entry.detail"),
-        "reference.reviewStatus" to ("V2Screens.kt" to "entry.reviewStatus"),
         "reviewCopy.title" to ("V2CumulativeReviewScreen.kt" to "cumulativeReviewTitle"),
         "reviewCopy.introduction" to ("V2CumulativeReviewScreen.kt" to "reviewCopy.introductions"),
         "reviewCopy.message" to ("V2CumulativeReviewScreen.kt" to "reviewCopy.text("),
@@ -74,7 +73,9 @@ internal object V2LearnerFields {
     /** Owner direction (D20, D21e): kept in the shared set although no screen renders it at present (D25e: shortLabel is rendered). */
     // T15h (D25e): item.answer is never rendered as its own field (the UI compares it; its text is shown as one of the
     // options or as the typed accepted answer), so it is declared and scanned, not rendered.
-    val DECLARED_NOT_RENDERED: Set<String> = setOf("unit.topicSummary", "item.answer")
+    // T16-n2 (owner decision D31b): the raw reference.reviewStatus value is no longer rendered; the UI shows one plain label
+    // for it (V2ReviewStatusLabels). The field stays scanned here (was RENDERED via V2Screens.kt entry.reviewStatus).
+    val DECLARED_NOT_RENDERED: Set<String> = setOf("unit.topicSummary", "item.answer", "reference.reviewStatus")
 
     val KINDS: Set<String> get() = RENDERED.keys + DECLARED_NOT_RENDERED
 
