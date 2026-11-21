@@ -1,0 +1,603 @@
+unit,owner.field,current text,category,suggested rewrite
+1,ref-ca-letter-names.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+1,ref-confusable.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+1,ref-cyrillic-print.detail,English sound notes are pending review.,review/workflow status,Use your book for English explanations of the sounds.
+1,ref-cyrillic-print.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+1,ref-decoding.detail,"Word, phrase, and sign reading wait for reviewed examples.",review/workflow status,"Practise reading words, phrases and signs in your book."
+1,ref-decoding.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+1,ref-decoding.summary,This pack decodes letters and print pairs only.,exercise/assessment commentary,Practise recognising letters and matching their print pairs.
+1,ref-iotated.detail,Detailed phonetics remain in the book until a reviewer signs an app note.,review/workflow status,Use your book for detailed phonetics.
+1,ref-iotated.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+1,ref-limits.detail,Handwriting study uses your book until verified images exist.,review/workflow status,Use your book for handwriting study.
+1,ref-limits.detail,Public release stays blocked until review and device evidence exist.,review/workflow status,Continue using the available lessons and your own book.
+1,ref-limits.detail,Unit 2 reviews Unit 1 letters and does not teach Lesson 3 grammar.,exercise/assessment commentary,Review Unit 1 letters in Unit 2; study Lesson 3 grammar in your book.
+1,ref-limits.detail,Unrelated catalog audio is not assigned to Units 1–2.,source narration,Use your book for pronunciation practice alongside Units 1–2.
+1,ref-limits.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+1,ref-pronunciation.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+1,ref-pronunciation.summary,Model audio is used only when a file is licensed and mapped to the current objective.,source narration,Play model audio when it is available for the current topic.
+1,ref-signs.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+1,ref-stress.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+1,ref-stress.summary,Stress is part of Russian reading and is not guessed by the app.,exercise/assessment commentary,Learn each word’s stress as part of reading Russian.
+1,ref-study.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+1,ref-transliteration.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+1,u1-st-cons.body,This unit does not play model audio.,exercise/assessment commentary,Use your book for pronunciation practice.
+1,u1-st-decoding.body,This unit does not introduce words.,exercise/assessment commentary,Start by recognising the printed letters.
+1,u1-st-guided-confusable.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+1,u1-st-guided-decoding.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+1,u1-st-guided-decoding.body,This unit does not introduce words.,exercise/assessment commentary,Start by recognising the printed letters.
+1,u1-st-guided-iotated.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+1,u1-st-guided-letter-names.body,Choose that name before the independent check.,exercise/assessment commentary,Choose the name of the printed letter.
+1,u1-st-guided-print.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+1,u1-st-guided-signs.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+1,u1-st-orient.body,Example words and model audio are not part of this unit.,exercise/assessment commentary,Start with printed letters; use your book for words and pronunciation practice.
+1,u1-st-orient.body,The development unit teaches printed letter identities with public-domain letter forms.,source narration,Learn the identities of the printed letters.
+1,u1-st-orient.body,"This is a proposed Lesson 1 mapping, not an approved owned-edition alignment.",review/workflow status,Start Lesson 1 with printed letter identities.
+1,u1-st-pronunciation.body,This unit does not play model audio.,exercise/assessment commentary,Use your book for pronunciation practice.
+1,u1-st-vowels.body,English sound notes are pending qualified review.,review/workflow status,Use your book for English explanations of the sounds.
+2,ref-confusable.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+2,ref-cyrillic-print.detail,English sound notes are pending review.,review/workflow status,Use your book for English explanations of the sounds.
+2,ref-cyrillic-print.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+2,ref-decoding.detail,"Word, phrase, and sign reading wait for reviewed examples.",review/workflow status,"Practise reading words, phrases and signs in your book."
+2,ref-decoding.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+2,ref-decoding.summary,This pack decodes letters and print pairs only.,exercise/assessment commentary,Practise recognising letters and matching their print pairs.
+2,ref-limits.detail,Handwriting study uses your book until verified images exist.,review/workflow status,Use your book for handwriting study.
+2,ref-limits.detail,Public release stays blocked until review and device evidence exist.,review/workflow status,Continue using the available lessons and your own book.
+2,ref-limits.detail,Unit 2 reviews Unit 1 letters and does not teach Lesson 3 grammar.,exercise/assessment commentary,Review Unit 1 letters in Unit 2; study Lesson 3 grammar in your book.
+2,ref-limits.detail,Unrelated catalog audio is not assigned to Units 1–2.,source narration,Use your book for pronunciation practice alongside Units 1–2.
+2,ref-limits.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+2,ref-pronunciation.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+2,ref-pronunciation.summary,Model audio is used only when a file is licensed and mapped to the current objective.,source narration,Play model audio when it is available for the current topic.
+2,ref-u2-pairs.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+2,u2-st-alphabet-guided.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+2,u2-st-final-letters-guided.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+2,u2-st-orient.body,"Verified handwriting images and mapped pronunciation audio are not in the app, so those parts stay in the book you own.",review/workflow status,Use your book for handwriting and pronunciation practice.
+2,u2-st-pairs-guided.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+3,ref-book-topics.detail,A unit's Course status shows whether its lesson body is prepared.,review/workflow status,Choose a unit with available lessons.
+3,ref-book-topics.detail,This reference does not approve the packaged records.,review/workflow status,Use this reference to find the matching lesson.
+3,ref-book-topics.detail,Units marked Not prepared or Not yet installed do not contain a usable lesson body.,review/workflow status,"If a unit is unavailable, open the matching lesson in your own book."
+3,ref-book-topics.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+3,ref-book-topics.summary,Some units contain proposed lesson bodies that still require qualified review.,review/workflow status,Open a unit to find its available lessons.
+3,ref-book-topics.title,Where lesson bodies are packaged,review/workflow status,Find a lesson
+3,ref-u3-gender.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+3,ref-u35-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+3,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+3,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+3,u3-st-check-gender.body,These checks use only words taught in this unit.,exercise/assessment commentary,Answer using the words you learned in this unit.
+3,u3-st-check-naming.body,These checks use only words taught in this unit.,exercise/assessment commentary,Answer using the words you learned in this unit.
+3,u3-st-check-phrases.body,These checks use only words taught in this unit.,exercise/assessment commentary,Answer using the words you learned in this unit.
+3,u3-st-guided-typing.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+3,u3-st-teach-gender-2.title,Recorded masculine nouns,table/record framing,Masculine nouns
+3,u3-st-teach-gender-3.title,Recorded feminine nouns,table/record framing,Feminine nouns
+4,ex-u4-stress-1f37b6b2.note,Written stress mark from the dictionary,source narration,Written stress mark
+4,ex-u4-stress-2114b12f.note,Written stress mark from the dictionary,source narration,Written stress mark
+4,ex-u4-stress-6f15e9f1.note,Written stress mark from the dictionary,source narration,Written stress mark
+4,ref-book-topics.detail,A unit's Course status shows whether its lesson body is prepared.,review/workflow status,Choose a unit with available lessons.
+4,ref-book-topics.detail,This reference does not approve the packaged records.,review/workflow status,Use this reference to find the matching lesson.
+4,ref-book-topics.detail,Units marked Not prepared or Not yet installed do not contain a usable lesson body.,review/workflow status,"If a unit is unavailable, open the matching lesson in your own book."
+4,ref-book-topics.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+4,ref-book-topics.summary,Some units contain proposed lesson bodies that still require qualified review.,review/workflow status,Open a unit to find its available lessons.
+4,ref-book-topics.title,Where lesson bodies are packaged,review/workflow status,Find a lesson
+4,ref-u35-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+4,ref-u4-nominative.detail,"Recognizing the English sentence meaning is useful, but the question here is whether the noun is the subject or the direct object.",question framing,Distinguish the noun’s subject or direct-object role from the meaning of the sentence.
+4,ref-u4-nominative.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+4,ref-u4-present.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+4,ref-u4-pronouns.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+4,reviewCopy.introductions[4],"Complete both checks before continuing; these supplied choices do not demonstrate whole-word reading, speaking or writing.",exercise/assessment commentary,"Complete both checks before continuing; practise whole-word reading, speaking and writing separately."
+4,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+4,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+4,u4-g-nom-role.distractorRationales[1],The requested noun is the subject here; the clause does not present it as a direct object.,table/record framing,The noun is the subject here; the clause does not present it as a direct object.
+4,u4-g-nom-role.feedback,Knowing the English translation alone does not answer the requested role.,table/record framing,Distinguish the noun’s sentence role from the English translation.
+4,u4-i-nom-role-student.distractorRationales[1],The requested noun is the subject here; the clause does not present it as a direct object.,table/record framing,The noun is the subject here; the clause does not present it as a direct object.
+4,u4-i-nom-role-student.feedback,Knowing the English translation alone does not answer the requested role.,table/record framing,Distinguish the noun’s sentence role from the English translation.
+4,u4-i-nom-role-train.distractorRationales[1],The requested noun is the subject here; the clause does not present it as a direct object.,table/record framing,The noun is the subject here; the clause does not present it as a direct object.
+4,u4-i-nom-role-train.feedback,Knowing the English translation alone does not answer the requested role.,table/record framing,Distinguish the noun’s sentence role from the English translation.
+4,u4-st-check-present.body,These checks use only words taught in this unit.,exercise/assessment commentary,Answer using the words you learned in this unit.
+4,u4-st-check-pronouns.body,These checks use only words taught in this unit.,exercise/assessment commentary,Answer using the words you learned in this unit.
+4,u4-st-check-stress.body,These checks use only words taught in this unit.,exercise/assessment commentary,Answer using the words you learned in this unit.
+4,u4-st-guided-present-видеть.title,Practise I before the independent he check,exercise/assessment commentary,Practise the I form
+4,u4-st-guided-present-говорить.title,Practise I before the independent we check,exercise/assessment commentary,Practise the I form
+4,u4-st-guided-present-идти.title,Practise I before the independent they check,exercise/assessment commentary,Practise the I form
+4,u4-st-guided-present-писать.title,Practise I before the independent you (plural) check,exercise/assessment commentary,Practise the I form
+4,u4-st-guided-type-present.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+4,u4-st-rem-nominative.body,"Recognizing the English sentence meaning is useful, but the question here is whether the noun is the subject or the direct object.",question framing,Distinguish the noun’s subject or direct-object role from the meaning of the sentence.
+4,u4-st-rem-present.body,Learn these whole forms; this lesson does not teach how to choose between motion verbs in context.,exercise/assessment commentary,Learn these whole forms; practise choosing motion verbs in context separately.
+4,u4-st-teach-nominative-1.body,"Recognizing the English sentence meaning is useful, but the question here is whether the noun is the subject or the direct object.",question framing,Distinguish the noun’s subject or direct-object role from the meaning of the sentence.
+4,u4-st-teach-present-идти.body,Learn these whole forms; this lesson does not teach how to choose between motion verbs in context.,exercise/assessment commentary,Learn these whole forms; practise choosing motion verbs in context separately.
+4,u4-st-teach-pronouns-1.title,Two speaker rows,table/record framing,Two speaker pronouns
+4,u4-st-teach-pronouns-2.title,Two addressee rows,table/record framing,Two addressee pronouns
+4,u4-st-teach-pronouns-3.title,Four other-person rows,table/record framing,Four third-person pronouns
+5,ref-book-topics.detail,A unit's Course status shows whether its lesson body is prepared.,review/workflow status,Choose a unit with available lessons.
+5,ref-book-topics.detail,This reference does not approve the packaged records.,review/workflow status,Use this reference to find the matching lesson.
+5,ref-book-topics.detail,Units marked Not prepared or Not yet installed do not contain a usable lesson body.,review/workflow status,"If a unit is unavailable, open the matching lesson in your own book."
+5,ref-book-topics.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+5,ref-book-topics.summary,Some units contain proposed lesson bodies that still require qualified review.,review/workflow status,Open a unit to find its available lessons.
+5,ref-book-topics.title,Where lesson bodies are packaged,review/workflow status,Find a lesson
+5,ref-u35-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+5,ref-u5-indeclinable.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+5,ref-u5-prepositional.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+5,ref-u5-questions.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+5,reviewCopy.introductions[5],Review recorded noun genders from Unit 3 and nominative subjects in supplied Unit 4 clauses.,table/record framing,Review noun genders from Unit 3 and nominative subjects in supplied Unit 4 clauses.
+5,reviewCopy.introductions[5],"These supplied recognitions do not demonstrate unseen reading, productive grammar, speaking or writing.",exercise/assessment commentary,"Practise recognising the examples here; practise unfamiliar reading, creating sentences, speaking and writing separately."
+5,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+5,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+5,u5-st-check-prepositional.body,These checks use only words taught in this unit.,exercise/assessment commentary,Answer using the words you learned in this unit.
+5,u5-st-check-questions.body,These checks use only words taught in this unit.,exercise/assessment commentary,Answer using the words you learned in this unit.
+5,u5-st-guided-type-questions.body,"This is practice, not the independent check.",exercise/assessment commentary,Practise with the explanation in view.
+5,u5-st-orient.body,It does not teach question intonation or supply audio.,exercise/assessment commentary,Use your book to practise question intonation and listening.
+6,ref-ca-cases.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+6,ref-u6-direction.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+6,ref-u6-possessives.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+6,ref-u610-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+6,reviewCopy.introductions[6],"These finite recognitions do not demonstrate productive conjugation, unseen reading, motion-verb choice, speaking or writing.",exercise/assessment commentary,"Practise recognising the taught forms; practise conjugating verbs, unfamiliar reading, choosing motion verbs, speaking and writing separately."
+6,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+6,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+6,u6-g-animacy-0.distractorRationales[1],"брат is the singular nominative form, so it does not supply the requested singular accusative form.",table/record framing,"брат is the singular nominative form, not the singular accusative form."
+6,u6-g-feminine-0.distractorRationales[1],"кни́га is the singular nominative form, so it does not supply the requested singular accusative form.",table/record framing,"кни́га is the singular nominative form, not the singular accusative form."
+6,u6-g-pronoun-0.feedback,Match the same person and number across the nominative and accusative table columns.,table/record framing,Keep person and number the same when changing between nominative and accusative.
+6,u6-i-animacy-1.distractorRationales[1],"учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.",table/record framing,"учи́тель is the singular nominative form, not the singular accusative form."
+6,u6-i-animacy-1.distractorRationales[2],"This is the singular dative form instead, so it does not supply the requested singular accusative form.",table/record framing,"This is the singular dative form instead, not the singular accusative form."
+6,u6-i-animacy-2.distractorRationales[1],"друг is the singular nominative form, so it does not supply the requested singular accusative form.",table/record framing,"друг is the singular nominative form, not the singular accusative form."
+6,u6-i-animacy-2.distractorRationales[2],"This is the singular dative form instead, so it does not supply the requested singular accusative form.",table/record framing,"This is the singular dative form instead, not the singular accusative form."
+6,u6-i-feminine-1.distractorRationales[1],"ма́ма is the singular nominative form, so it does not supply the requested singular accusative form.",table/record framing,"ма́ма is the singular nominative form, not the singular accusative form."
+6,u6-i-feminine-1.distractorRationales[2],"This is the singular genitive form instead, so it does not supply the requested singular accusative form.",table/record framing,"This is the singular genitive form instead, not the singular accusative form."
+6,u6-i-possessive-3.distractorRationales[1],"тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form.",table/record framing,"тво́й is the masculine singular nominative form, not the feminine singular nominative form."
+6,u6-i-pronoun-2.feedback,"Match the same person, number and gender across the nominative and accusative table columns.",table/record framing,"Keep person, number and gender the same when changing between nominative and accusative."
+7,ref-u610-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+7,ref-u7-adjectives.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+7,ref-u7-adverbs.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+7,ref-u7-ruwiki-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+7,reviewCopy.introductions[7],Review recorded noun genders from Unit 3 and the supplied inanimate-object classification from Unit 6.,table/record framing,Review noun genders from Unit 3 and the supplied inanimate-object classification from Unit 6.
+7,reviewCopy.introductions[7],"These finite recognitions do not demonstrate unseen reading, productive agreement, inferring animacy from an unfamiliar sentence, speaking or writing.",exercise/assessment commentary,"Practise the taught forms; practise unfamiliar reading, adjective agreement, interpreting animacy in unfamiliar sentences, speaking and writing separately."
+7,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+7,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+7,u7-g-default-0.distractorRationales[1],"но́вая is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"но́вая is the feminine singular nominative form, not the masculine singular nominative form."
+7,u7-g-endings-0.distractorRationales[1],"си́нее is the neuter singular nominative form, so it does not supply the requested feminine singular accusative form.",table/record framing,"си́нее is the neuter singular nominative form, not the feminine singular accusative form."
+7,u7-g-endings-0.distractorRationales[2],"си́ние is the plural nominative form, so it does not supply the requested feminine singular accusative form.",table/record framing,"си́ние is the plural nominative form, not the feminine singular accusative form."
+7,u7-g-objectadj-0.distractorRationales[1],"но́вую is the feminine singular accusative form, so it does not supply the requested masculine animate accusative form.",table/record framing,"но́вую is the feminine singular accusative form, not the masculine animate accusative form."
+7,u7-g-place-0.distractorRationales[1],"но́вую is the feminine singular accusative form, so it does not supply the requested masculine singular prepositional form.",table/record framing,"но́вую is the feminine singular accusative form, not the masculine singular prepositional form."
+7,u7-g-question-0.distractorRationales[1],"кака́я is the feminine singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"кака́я is the feminine singular nominative form, not the plural nominative form."
+7,u7-g-spelling-0.distractorRationales[1],"хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"хоро́шее is the neuter singular nominative form, not the plural nominative form."
+7,u7-i-default-1.distractorRationales[1],"но́вое is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"но́вое is the neuter singular nominative form, not the masculine singular nominative form."
+7,u7-i-default-1.distractorRationales[2],"но́вая is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"но́вая is the feminine singular nominative form, not the masculine singular nominative form."
+7,u7-i-default-2.distractorRationales[1],"хоро́шая is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"хоро́шая is the feminine singular nominative form, not the masculine singular nominative form."
+7,u7-i-default-2.distractorRationales[2],"хоро́шее is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"хоро́шее is the neuter singular nominative form, not the masculine singular nominative form."
+7,u7-i-default-3.distractorRationales[1],"си́няя is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"си́няя is the feminine singular nominative form, not the masculine singular nominative form."
+7,u7-i-default-3.distractorRationales[2],"си́нее is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"си́нее is the neuter singular nominative form, not the masculine singular nominative form."
+7,u7-i-default-4.distractorRationales[1],"кака́я is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"кака́я is the feminine singular nominative form, not the masculine singular nominative form."
+7,u7-i-default-4.distractorRationales[2],"како́е is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"како́е is the neuter singular nominative form, not the masculine singular nominative form."
+7,u7-i-demonstrative-1.distractorRationales[1],"э́та is the feminine singular nominative form, so it does not supply the requested feminine singular accusative form.",table/record framing,"э́та is the feminine singular nominative form, not the feminine singular accusative form."
+7,u7-i-demonstrative-1.distractorRationales[2],"э́ти is the plural nominative form, so it does not supply the requested feminine singular accusative form.",table/record framing,"э́ти is the plural nominative form, not the feminine singular accusative form."
+7,u7-i-demonstrative-2.distractorRationales[1],"э́то is the neuter singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"э́то is the neuter singular nominative form, not the plural nominative form."
+7,u7-i-demonstrative-2.distractorRationales[2],"э́та is the feminine singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"э́та is the feminine singular nominative form, not the plural nominative form."
+7,u7-i-demonstrative-3.distractorRationales[1],"э́ту is the feminine singular accusative form, so it does not supply the requested feminine singular nominative form.",table/record framing,"э́ту is the feminine singular accusative form, not the feminine singular nominative form."
+7,u7-i-demonstrative-3.distractorRationales[2],"э́ти is the plural nominative form, so it does not supply the requested feminine singular nominative form.",table/record framing,"э́ти is the plural nominative form, not the feminine singular nominative form."
+7,u7-i-endings-1.distractorRationales[1],"но́вый is the masculine singular nominative form, so it does not supply the requested neuter singular nominative form.",table/record framing,"но́вый is the masculine singular nominative form, not the neuter singular nominative form."
+7,u7-i-endings-1.distractorRationales[2],"но́вая is the feminine singular nominative form, so it does not supply the requested neuter singular nominative form.",table/record framing,"но́вая is the feminine singular nominative form, not the neuter singular nominative form."
+7,u7-i-endings-2.distractorRationales[1],"но́вая is the feminine singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"но́вая is the feminine singular nominative form, not the plural nominative form."
+7,u7-i-endings-3.distractorRationales[1],"но́вое is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"но́вое is the neuter singular nominative form, not the masculine singular nominative form."
+7,u7-i-objectadj-1.distractorRationales[1],"но́вую is the feminine singular accusative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"но́вую is the feminine singular accusative form, not the masculine singular nominative form."
+7,u7-i-objectadj-2.distractorRationales[1],"но́вого is the masculine singular genitive form, so it does not supply the requested masculine singular nominative form.",table/record framing,"но́вого is the masculine singular genitive form, not the masculine singular nominative form."
+7,u7-i-objectadj-3.distractorRationales[1],"но́вый is the masculine singular nominative form, so it does not supply the requested feminine singular accusative form.",table/record framing,"но́вый is the masculine singular nominative form, not the feminine singular accusative form."
+7,u7-i-objectadj-3.feedback,Keep feminine singular agreement; the masculine dictionary form changes gender and does not answer this question.,question framing,Keep feminine singular agreement; a masculine dictionary form changes gender.
+7,u7-i-place-1.distractorRationales[1],"но́вую is the feminine singular accusative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"но́вую is the feminine singular accusative form, not the masculine singular nominative form."
+7,u7-i-place-2.distractorRationales[1],"хоро́ший is the masculine singular nominative form, so it does not supply the requested masculine singular prepositional form.",table/record framing,"хоро́ший is the masculine singular nominative form, not the masculine singular prepositional form."
+7,u7-i-place-2.distractorRationales[2],"хоро́шая is the feminine singular nominative form, so it does not supply the requested masculine singular prepositional form.",table/record framing,"хоро́шая is the feminine singular nominative form, not the masculine singular prepositional form."
+7,u7-i-place-3.distractorRationales[1],"хоро́шем is the masculine singular prepositional form, so it does not supply the requested masculine singular nominative form.",table/record framing,"хоро́шем is the masculine singular prepositional form, not the masculine singular nominative form."
+7,u7-i-place-3.distractorRationales[2],"хоро́шая is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"хоро́шая is the feminine singular nominative form, not the masculine singular nominative form."
+7,u7-i-question-1.distractorRationales[1],"како́й is the masculine singular nominative form, so it does not supply the requested neuter singular nominative form.",table/record framing,"како́й is the masculine singular nominative form, not the neuter singular nominative form."
+7,u7-i-question-1.distractorRationales[2],"кака́я is the feminine singular nominative form, so it does not supply the requested neuter singular nominative form.",table/record framing,"кака́я is the feminine singular nominative form, not the neuter singular nominative form."
+7,u7-i-question-2.distractorRationales[1],"каки́е is the plural nominative form, so it does not supply the requested feminine singular nominative form.",table/record framing,"каки́е is the plural nominative form, not the feminine singular nominative form."
+7,u7-i-question-3.distractorRationales[1],"како́е is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"како́е is the neuter singular nominative form, not the masculine singular nominative form."
+7,u7-i-spelling-1.distractorRationales[1],"хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.",table/record framing,"хоро́шие is the plural nominative form, not the neuter singular nominative form."
+7,u7-i-spelling-1.distractorRationales[2],"хоро́шая is the feminine singular nominative form, so it does not supply the requested neuter singular nominative form.",table/record framing,"хоро́шая is the feminine singular nominative form, not the neuter singular nominative form."
+7,u7-i-spelling-2.distractorRationales[1],"хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"хоро́шие is the plural nominative form, not the masculine singular nominative form."
+7,u7-i-spelling-3.distractorRationales[1],"хоро́шего is the masculine singular genitive form, so it does not supply the requested feminine singular accusative form.",table/record framing,"хоро́шего is the masculine singular genitive form, not the feminine singular accusative form."
+7,u7-i-spelling-3.distractorRationales[2],"хоро́шие is the plural nominative form, so it does not supply the requested feminine singular accusative form.",table/record framing,"хоро́шие is the plural nominative form, not the feminine singular accusative form."
+7,u7-st-guided-spelling-1.body,Choose the requested adjective form.,table/record framing,Choose the adjective form with the specified grammatical features.
+7,u7-st-rem-endings.body,Keep the noun and the requested agreement in view.,table/record framing,Keep the noun and the agreement in view.
+7,u7-st-teach-endings-4.body,Keep the noun and the requested agreement in view.,table/record framing,Keep the noun and the agreement in view.
+8,ref-u610-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+8,ref-u7-adjectives.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+8,ref-u8-existence.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+8,ref-u8-plurals.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+8,reviewCopy.introductions[8],"These finite recognitions do not demonstrate unseen reading, productive conjugation, new inflection, speaking or writing.",exercise/assessment commentary,"Practise the taught forms; practise unfamiliar reading, conjugation, inflection, speaking and writing separately."
+8,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+8,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+8,u8-g-agreement-0.distractorRationales[1],"но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"но́вый is the masculine singular nominative form, not the plural nominative form."
+8,u8-g-irregular-0.distractorRationales[1],"брат is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"брат is the singular nominative form, not the plural nominative form."
+8,u8-g-plural-0.distractorRationales[1],"сто́л is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"сто́л is the singular nominative form, not the plural nominative form."
+8,u8-g-spelling-0.distractorRationales[1],"хоро́ший is the masculine singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"хоро́ший is the masculine singular nominative form, not the plural nominative form."
+8,u8-g-spelling-0.distractorRationales[2],"хоро́шая is the feminine singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"хоро́шая is the feminine singular nominative form, not the plural nominative form."
+8,u8-i-agreement-1.distractorRationales[1],"мо́й is the masculine singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"мо́й is the masculine singular nominative form, not the plural nominative form."
+8,u8-i-agreement-1.distractorRationales[2],"моя́ is the feminine singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"моя́ is the feminine singular nominative form, not the plural nominative form."
+8,u8-i-agreement-2.distractorRationales[1],"э́та is the feminine singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"э́та is the feminine singular nominative form, not the plural nominative form."
+8,u8-i-agreement-2.distractorRationales[2],"э́то is the neuter singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"э́то is the neuter singular nominative form, not the plural nominative form."
+8,u8-i-agreement-3.distractorRationales[1],"синий is the supplied masculine singular form, so it does not provide the requested plural nominative form.",table/record framing,"синий is the supplied masculine singular form, not the plural nominative form."
+8,u8-i-agreement-3.distractorRationales[2],"си́няя is the feminine singular nominative form, so it does not provide the requested plural nominative form.",table/record framing,"си́няя is the feminine singular nominative form, not the plural nominative form."
+8,u8-i-irregular-1.distractorRationales[1],"челове́к is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"челове́к is the singular nominative form, not the plural nominative form."
+8,u8-i-irregular-1.distractorRationales[2],"челове́ку is the singular dative form, so it does not supply the requested plural nominative form.",table/record framing,"челове́ку is the singular dative form, not the plural nominative form."
+8,u8-i-irregular-2.distractorRationales[1],"друг is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"друг is the singular nominative form, not the plural nominative form."
+8,u8-i-irregular-2.distractorRationales[2],"дру́гу is the singular dative form, so it does not supply the requested plural nominative form.",table/record framing,"дру́гу is the singular dative form, not the plural nominative form."
+8,u8-i-irregular-3.distractorRationales[1],"сы́н is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"сы́н is the singular nominative form, not the plural nominative form."
+8,u8-i-irregular-3.distractorRationales[2],"сы́ну is the singular dative form, so it does not supply the requested plural nominative form.",table/record framing,"сы́ну is the singular dative form, not the plural nominative form."
+8,u8-i-plural-1.distractorRationales[1],"го́род is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"го́род is the singular nominative form, not the plural nominative form."
+8,u8-i-plural-1.distractorRationales[2],"го́роду is the singular dative form, so it does not supply the requested plural nominative form.",table/record framing,"го́роду is the singular dative form, not the plural nominative form."
+8,u8-i-plural-2.distractorRationales[1],"окно́ is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"окно́ is the singular nominative form, not the plural nominative form."
+8,u8-i-plural-2.distractorRationales[2],"окну́ is the singular dative form, so it does not supply the requested plural nominative form.",table/record framing,"окну́ is the singular dative form, not the plural nominative form."
+8,u8-i-plural-3.distractorRationales[1],"ма́ма is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"ма́ма is the singular nominative form, not the plural nominative form."
+8,u8-i-plural-3.distractorRationales[2],"ма́ме is the singular dative form, so it does not supply the requested plural nominative form.",table/record framing,"ма́ме is the singular dative form, not the plural nominative form."
+8,u8-i-plural-4.distractorRationales[1],"до́м is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"до́м is the singular nominative form, not the plural nominative form."
+8,u8-i-plural-4.distractorRationales[2],"до́му is the singular dative form, so it does not supply the requested plural nominative form.",table/record framing,"до́му is the singular dative form, not the plural nominative form."
+8,u8-i-plural-5.distractorRationales[1],"сло́во is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"сло́во is the singular nominative form, not the plural nominative form."
+8,u8-i-plural-5.distractorRationales[2],"сло́ву is the singular dative form, so it does not supply the requested plural nominative form.",table/record framing,"сло́ву is the singular dative form, not the plural nominative form."
+8,u8-i-plural-6.distractorRationales[1],"кни́га is the singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"кни́га is the singular nominative form, not the plural nominative form."
+8,u8-i-plural-6.distractorRationales[2],"кни́ге is the singular dative form, so it does not supply the requested plural nominative form.",table/record framing,"кни́ге is the singular dative form, not the plural nominative form."
+8,u8-i-spelling-1.distractorRationales[1],"кни́ги is the plural nominative form, so it does not supply the requested singular nominative form.",table/record framing,"кни́ги is the plural nominative form, not the singular nominative form."
+8,u8-i-spelling-1.distractorRationales[2],"кни́ге is the singular dative form, so it does not supply the requested singular nominative form.",table/record framing,"кни́ге is the singular dative form, not the singular nominative form."
+8,u8-i-spelling-2.distractorRationales[1],"хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"хоро́шее is the neuter singular nominative form, not the plural nominative form."
+8,u8-i-spelling-2.distractorRationales[2],"хоро́шая is the feminine singular nominative form, so it does not supply the requested plural nominative form.",table/record framing,"хоро́шая is the feminine singular nominative form, not the plural nominative form."
+8,u8-i-spelling-3.distractorRationales[1],"хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form.",table/record framing,"хоро́шие is the plural nominative form, not the neuter singular nominative form."
+8,u8-i-spelling-3.distractorRationales[2],"хоро́ший is the masculine singular nominative form, so it does not supply the requested neuter singular nominative form.",table/record framing,"хоро́ший is the masculine singular nominative form, not the neuter singular nominative form."
+8,u8-i-spelling-4.distractorRationales[1],"хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"хоро́шие is the plural nominative form, not the masculine singular nominative form."
+8,u8-i-spelling-4.distractorRationales[2],"хоро́шая is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"хоро́шая is the feminine singular nominative form, not the masculine singular nominative form."
+8,u8-st-guided-spelling-1.body,Choose the requested singular or plural nominative form.,table/record framing,Choose the singular or plural nominative form.
+8,u8-st-rem-agreement.body,"The requested plural is a number distinction, not a different owner or a change of English meaning.",table/record framing,"The plural changes number, not the owner or the English meaning."
+8,u8-st-rem-spelling.body,Choose the requested form.,table/record framing,Choose the form with the specified grammatical features.
+8,u8-st-rem-spelling.body,Identify number from the requested form and context.,table/record framing,Identify number from the form and its context.
+8,u8-st-rem-spelling.body,Read the requested form before answering.,table/record framing,Read the form carefully before answering.
+8,u8-st-teach-agreement-3.body,"The requested plural is a number distinction, not a different owner or a change of English meaning.",table/record framing,"The plural changes number, not the owner or the English meaning."
+8,u8-st-teach-spelling-2.body,Read the requested form before answering.,table/record framing,Read the form carefully before answering.
+8,u8-st-teach-spelling-4.body,Identify number from the requested form and context.,table/record framing,Identify number from the form and its context.
+8,u8-st-teach-spelling-5.body,Choose the requested form.,table/record framing,Choose the form with the specified grammatical features.
+9,ref-u610-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+9,ref-u9-genitive.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+9,ref-u9-numbers.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+9,reviewCopy.introductions[9],Noun-behavior repair restores all four teaching cards and eight examples; guided practice does not complete the assigned check.,exercise/assessment commentary,"After a miss, read all four noun-behavior explanations and eight examples, then answer the assigned check."
+9,reviewCopy.introductions[9],"Review the behavior of supplied nouns from Unit 5, the supplied window nominative plural from Unit 8 and recorded noun genders from Unit 3.",table/record framing,"Review the behavior of supplied nouns from Unit 5, the supplied window nominative plural from Unit 8 and noun genders from Unit 3."
+9,reviewCopy.introductions[9],"These finite recognitions do not demonstrate unseen reading, productive inflection, speaking or writing.",exercise/assessment commentary,"Practise the taught forms; practise unfamiliar reading, inflection, speaking and writing separately."
+9,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+9,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+9,u9-st-rem-odindva.body,одна́ and одно́ both represent 1 in the cardinal table.,table/record framing,одна́ and одно́ both represent 1.
+9,u9-st-teach-cardinal-2.title,Table entry,table/record framing,Numbers 0–10
+9,u9-st-teach-hundreds-2.title,Table entry,table/record framing,Hundreds
+9,u9-st-teach-odindva-4.body,одна́ and одно́ both represent 1 in the cardinal table.,table/record framing,одна́ and одно́ both represent 1.
+9,u9-st-teach-teens-2.title,Table entry,table/record framing,Numbers 11–20
+9,u9-st-teach-tens-2.title,Table entry,table/record framing,Tens
+9,u9-st-teach-thousands-2.title,Table entry,table/record framing,Thousands and compound numbers
+10,ref-u10-genitive.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+10,ref-u10-possession.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+10,ref-u610-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+10,reviewCopy.introductions[10],"These finite recognitions do not demonstrate unseen reading, productive conjugation, new inflection, speaking or writing.",exercise/assessment commentary,"Practise the taught forms; practise unfamiliar reading, conjugation, inflection, speaking and writing separately."
+10,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+10,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+10,u10-g-adjective-0.distractorRationales[1],"но́вой is the feminine singular genitive form, so it does not supply the requested masculine singular nominative form.",table/record framing,"но́вой is the feminine singular genitive form, not the masculine singular nominative form."
+10,u10-g-animate-0.distractorRationales[1],"Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here.",table/record framing,"Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase."
+10,u10-g-preposition-0.distractorRationales[1],"молоко́ is the singular nominative form, so it does not supply the requested singular genitive form.",table/record framing,"молоко́ is the singular nominative form, not the singular genitive form."
+10,u10-i-adjective-1.distractorRationales[1],"хоро́шей is the feminine singular genitive form, so it does not supply the requested masculine singular nominative form.",table/record framing,"хоро́шей is the feminine singular genitive form, not the masculine singular nominative form."
+10,u10-i-adjective-2.distractorRationales[1],"но́вой is the feminine singular genitive form, so it does not supply the requested masculine singular genitive form.",table/record framing,"но́вой is the feminine singular genitive form, not the masculine singular genitive form."
+10,u10-i-adjective-2.distractorRationales[2],"но́вых is the plural genitive form, so it does not supply the requested masculine singular genitive form.",table/record framing,"но́вых is the plural genitive form, not the masculine singular genitive form."
+10,u10-i-adjective-3.distractorRationales[1],"хоро́шей is the feminine singular genitive form, so it does not supply the requested masculine singular genitive form.",table/record framing,"хоро́шей is the feminine singular genitive form, not the masculine singular genitive form."
+10,u10-i-animate-1.distractorRationales[1],этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested phrase is the nominative subject phrase.,table/record framing,этих женщин repeats the animate plural accusative object phrase shown in the cue; use the nominative subject phrase.
+10,u10-i-animate-1.feedback,The phrase requested here is the nominative subject form.,table/record framing,Use the nominative phrase for the subject.
+10,u10-i-animate-2.distractorRationales[1],"же́нщины is the plural nominative form, so it does not supply the requested plural accusative form.",table/record framing,"же́нщины is the plural nominative form, not the plural accusative form."
+10,u10-i-animate-2.distractorRationales[2],"же́нщине is the singular dative form, so it does not supply the requested plural accusative form.",table/record framing,"же́нщине is the singular dative form, not the plural accusative form."
+10,u10-i-animate-3.distractorRationales[1],"бра́тья is the plural nominative form, so it does not supply the requested plural accusative form.",table/record framing,"бра́тья is the plural nominative form, not the plural accusative form."
+10,u10-i-animate-3.distractorRationales[2],"бра́ту is the singular dative form, so it does not supply the requested plural accusative form.",table/record framing,"бра́ту is the singular dative form, not the plural accusative form."
+10,u10-i-preposition-1.distractorRationales[1],"окно́ is the singular nominative form, so it does not supply the requested singular genitive form.",table/record framing,"окно́ is the singular nominative form, not the singular genitive form."
+10,u10-i-preposition-1.distractorRationales[2],"окну́ is the singular dative form, so it does not supply the requested singular genitive form.",table/record framing,"окну́ is the singular dative form, not the singular genitive form."
+10,u10-i-preposition-2.distractorRationales[1],"муж is the singular nominative form, so it does not supply the requested singular genitive form.",table/record framing,"муж is the singular nominative form, not the singular genitive form."
+10,u10-i-preposition-2.distractorRationales[2],"му́жу is the singular dative form, so it does not supply the requested singular genitive form.",table/record framing,"му́жу is the singular dative form, not the singular genitive form."
+10,u10-i-preposition-3.distractorRationales[1],"моя́ is the feminine singular nominative form, so it does not supply the requested masculine singular genitive form.",table/record framing,"моя́ is the feminine singular nominative form, not the masculine singular genitive form."
+10,u10-i-preposition-4.distractorRationales[1],"моего́ is the masculine singular genitive form, so it does not supply the requested masculine singular nominative form.",table/record framing,"моего́ is the masculine singular genitive form, not the masculine singular nominative form."
+10,u10-i-preposition-4.distractorRationales[2],"моя́ is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form.",table/record framing,"моя́ is the feminine singular nominative form, not the masculine singular nominative form."
+11,ref-u11-past.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+11,ref-u11-reflexive.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+11,ref-u1115-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+11,reviewCopy.introductions[11],"These finite recognitions do not demonstrate unseen reading, productive declension, new sentence formation, speaking or writing.",exercise/assessment commentary,"Practise the taught forms; practise unfamiliar reading, declension, forming new sentences, speaking and writing separately."
+11,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+11,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+11,u11-g-past-aspect-0.distractorRationales[1],"прочита́ла is feminine past (singular), so it does not supply the requested neuter past form.",table/record framing,"прочита́ла is feminine past (singular), not the neuter past form."
+11,u11-g-past-be-0.feedback,Choose the past form with the feminine singular agreement requested here.,table/record framing,Choose the feminine singular past form.
+11,u11-g-past-read-0.feedback,The past form matches the subject in gender and number; choose feminine singular for this question.,question framing,The past form matches the subject in gender and number; choose feminine singular.
+11,u11-i-past-aspect-1.distractorRationales[1],"прочита́ла is feminine past (singular), so it does not supply the requested masculine past form.",table/record framing,"прочита́ла is feminine past (singular), not the masculine past form."
+11,u11-i-past-aspect-2.distractorRationales[1],"прочита́ло is neuter past (singular), so it does not supply the requested feminine past form.",table/record framing,"прочита́ло is neuter past (singular), not the feminine past form."
+11,u11-i-past-be-1.distractorRationales[1],"бы́л is masculine singular past, not the plural past requested here.",table/record framing,"бы́л is masculine singular past, not the plural past."
+11,u11-i-past-be-1.feedback,"The cue shows feminine singular, but the requested form is plural; past agreement follows the subject number.",table/record framing,"The cue is feminine singular; change it to plural, since past agreement follows the subject’s number."
+11,u11-i-past-be-2.distractorRationales[1],"бы́ли is plural past, not the masculine singular past requested here.",table/record framing,"бы́ли is plural past, not the masculine singular past."
+11,u11-i-past-be-2.distractorRationales[2],"бы́ло is neuter singular past, not the masculine singular past requested here.",table/record framing,"бы́ло is neuter singular past, not the masculine singular past."
+11,u11-i-past-read-1.feedback,"The cue shows the feminine singular form, but the requested form is masculine singular of the same verb.",table/record framing,The cue is feminine singular; change it to masculine singular of the same verb.
+11,u11-st-rem-past-aspect.body,Use the gender requested in the question.,question framing,Match the past form to the specified gender.
+11,u11-st-teach-past-aspect-2.body,Use the gender requested in the question.,question framing,Match the past form to the specified gender.
+12,ref-ca-aspect.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+12,ref-u1115-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+12,ref-u12-dative-prepositional.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+12,ref-u12-future.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+12,ref-u12-spelling.reviewStatus,IMPLEMENTED_PENDING_FINAL_AUDIT,review/workflow status,Reference
+12,reviewCopy.introductions[12],Review recorded noun genders from Unit 3 and supplied singular past-gender forms from Unit 11.,table/record framing,Review noun genders from Unit 3 and supplied singular past-gender forms from Unit 11.
+12,reviewCopy.introductions[12],"These finite recognitions do not demonstrate unseen reading, productive agreement, aspect mastery, speaking or writing.",exercise/assessment commentary,"Practise the taught forms; practise unfamiliar reading, agreement, choosing aspect, speaking and writing separately."
+12,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+12,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+12,u12-g-dative-0.distractorRationales[1],"кни́ги is nominative plural, not the requested dative singular.",table/record framing,"кни́ги is nominative plural, not the dative singular."
+12,u12-g-future-imp-0.distractorRationales[1],"Я бу́ду говори́ть has a first-person singular subject and auxiliary, rather than the requested first-person plural future.",table/record framing,"Я бу́ду говори́ть has a first-person singular subject and auxiliary, rather than the first-person plural future."
+12,u12-g-future-imp-0.feedback,Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.,table/record framing,Both use a future auxiliary plus the same imperfective infinitive; choose the plural sentence.
+12,u12-g-future-perf-0.feedback,These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.,exercise/assessment commentary,These perfective future forms use a single conjugated verb without a separate future auxiliary; choose the plural form.
+12,u12-g-future-perf-0.feedback,"Мы ска́жем is the first-person plural future of the perfective verb in this table, agreeing with we.",table/record framing,"Мы ска́жем is the first-person plural future of the perfective verb, agreeing with we."
+12,u12-g-prep-plural-0.feedback,Neither singular use matches the plural form requested.,table/record framing,Neither singular use is a plural form.
+12,u12-i-dative-1.distractorRationales[1],"столы́ is nominative plural, not the requested dative singular.",table/record framing,"столы́ is nominative plural, not the dative singular."
+12,u12-i-dative-1.feedback,столу́ is the recorded dative singular form of сто́л.,table/record framing,столу́ is the dative singular form of сто́л.
+12,u12-i-dative-2.distractorRationales[1],"дома́ is nominative plural, not the requested dative singular.",table/record framing,"дома́ is nominative plural, not the dative singular."
+12,u12-i-dative-2.feedback,The requested row changes case while keeping the noun singular; the plural option changes number instead.,table/record framing,Changing to dative singular changes case while keeping the noun singular; a plural form changes number instead.
+12,u12-i-dative-2.feedback,до́му is the recorded dative singular form of до́м.,table/record framing,до́му is the dative singular form of до́м.
+12,u12-i-future-imp-1.distractorRationales[1],"Мы бу́дем говори́ть has a first-person plural subject and auxiliary, rather than the requested first-person singular future.",table/record framing,"Мы бу́дем говори́ть has a first-person plural subject and auxiliary, rather than the first-person singular future."
+12,u12-i-future-imp-2.distractorRationales[1],"Я бу́ду говори́ть is first-person singular future, not the requested second-person plural future row.",table/record framing,"Я бу́ду говори́ть is first-person singular future, not second-person plural future."
+12,u12-i-future-imp-2.feedback,Вы бу́дете говори́ть is the second-person plural future row: the auxiliary agrees with you in that row.,table/record framing,Вы бу́дете говори́ть is the second-person plural future: the auxiliary agrees with you.
+12,u12-i-future-imp-2.feedback,Я бу́ду говори́ть is first-person singular and changes the person as well as the table number.,table/record framing,Я бу́ду говори́ть is first-person singular and changes the person as well as the grammatical number.
+12,u12-i-future-perf-1.distractorRationales[1],"ска́жешь is second-person singular future, rather than the first-person plural future requested here.",table/record framing,"ска́жешь is second-person singular future, rather than the first-person plural future."
+12,u12-i-prep-plural-1.feedback,стола́х is the recorded prepositional plural form of the shown noun.,table/record framing,стола́х is the prepositional plural form of the shown noun.
+12,u12-i-spelling-1.distractorRationales[1],"хоро́шая is feminine singular, not the requested neuter form.",table/record framing,"хоро́шая is feminine singular, not a neuter form."
+12,u12-i-spelling-1.feedback,The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.,table/record framing,The adjective agrees with the gender of the noun it modifies; the neuter form is also the form used with the neuter noun in the good-letter example.
+12,u12-i-spelling-2.distractorRationales[1],"хорошее письмо is the accepted spelling, not the rejected spelling requested here.",table/record framing,"хорошее письмо is the accepted spelling, not the rejected spelling."
+12,u12-i-spelling-2.feedback,"The keyed counterexample is incorrect Russian, not a form to use.",table/record framing,"This counterexample is incorrect Russian, not a form to use."
+12,u12-i-spelling-2.feedback,хорошое письмо is the rejected spelling requested by this question.,question framing,хорошое письмо is incorrect spelling.
+13,obj-u13-infinitive.title,Choose the admitted infinitive partner,source narration,Infinitive partner
+13,obj-u13-past-aspect.title,Choose the admitted past aspect line,source narration,Past aspect example
+13,obj-u13-tense-keep.title,Choose the admitted report label,source narration,Report description
+13,ref-u1115-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+13,reviewCopy.introductions[13],Repairs restore the full taught form sets; guided practice does not complete any fresh review check.,exercise/assessment commentary,"After a miss, read the full taught form sets, then answer the assigned review check."
+13,reviewCopy.introductions[13],"These finite recognitions do not demonstrate unseen reading, productive conjugation, sentence-context aspect selection, speaking or writing.",exercise/assessment commentary,"Practise the taught forms; practise unfamiliar reading, conjugation, choosing aspect in sentences, speaking and writing separately."
+13,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+13,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+13,u13-g-infinitive-0.prompt,Which admitted line is the perfective partner?,source narration,Which verb is the perfective partner?
+13,u13-g-past-aspect-0.distractorRationales[1],"я читал uses the imperfective past, not the perfective past form requested here.",table/record framing,"я читал uses the imperfective past, not the perfective past form."
+13,u13-g-past-aspect-0.feedback,English simple past wording alone does not determine Russian aspect; the question explicitly asks for the perfective form.,question framing,English simple past wording alone does not determine Russian aspect; identify the perfective form.
+13,u13-g-past-aspect-0.prompt,Which admitted line is the perfective past?,source narration,Which sentence is the perfective past?
+13,u13-g-tense-keep-0.prompt,Which admitted label keeps the same tense?,source narration,Which description keeps the same tense?
+13,u13-i-infinitive-1.feedback,Learn this recorded pair rather than assuming that adding any prefix gives the matching perfective of any verb.,table/record framing,Learn this pair rather than assuming that adding any prefix gives the matching perfective of any verb.
+13,u13-i-infinitive-1.feedback,сде́лать is the perfective partner of де́лать in the retained do/make pair.,source narration,сде́лать is the perfective partner of де́лать in the do/make pair.
+13,u13-i-infinitive-1.prompt,Which admitted line is the perfective partner?,source narration,Which verb is the perfective partner?
+13,u13-i-infinitive-2.feedback,"The question asks for the imperfective member of this recorded pairing, not any verb of another meaning.",question framing,Identify the imperfective member of the verb pair while keeping the meaning the same.
+13,u13-i-infinitive-2.prompt,Which admitted line is the imperfective partner?,source narration,Which verb is the imperfective partner?
+13,u13-i-past-aspect-1.distractorRationales[1],"я прочитал is perfective past and presents a completed whole, rather than the imperfective past requested here.",table/record framing,"я прочитал is perfective past and presents a completed whole, rather than the imperfective past."
+13,u13-i-past-aspect-1.prompt,Which admitted line is the imperfective past?,source narration,Which sentence is the imperfective past?
+13,u13-i-past-aspect-2.distractorRationales[1],"чита́ла is feminine past, not the requested masculine past form of the same verb.",table/record framing,"чита́ла is feminine past, not a masculine past form of the same verb."
+13,u13-i-past-aspect-2.feedback,Both belong to the same imperfective verb; this question changes gender agreement rather than selecting a different aspect.,question framing,Both forms belong to the same imperfective verb; changing gender agreement does not change aspect.
+13,u13-i-past-aspect-2.prompt,Which admitted row is the masculine past?,source narration,Which form is the masculine past?
+13,u13-i-reported-1.distractorRationales[1],"Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски describes a future plan about Moscow, not the direct evening statement requested here.",table/record framing,"Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски describes a future plan about Moscow, not the direct evening statement."
+13,u13-i-reported-1.prompt,Which admitted line is the direct evening?,source narration,Which sentence is the direct evening?
+13,u13-i-reported-2.feedback,Neither option is itself a past reporting frame; identify the Moscow plan requested here.,table/record framing,Neither option is itself a past reporting frame; identify the Moscow plan.
+13,u13-i-reported-2.prompt,Which admitted line is the future plan about Moscow?,source narration,Which sentence is the future plan about Moscow?
+13,u13-i-tense-keep-1.prompt,Which admitted line is the reported evening?,source narration,Which sentence is the reported evening?
+13,u13-i-tense-keep-2.distractorRationales[1],"we keep the tense the same describes retention, not changing the reported tense in the English comparison requested here.",table/record framing,"we keep the tense the same describes retention, not changing the reported tense in the English comparison."
+13,u13-i-tense-keep-2.feedback,"English backshift can follow a past reporting verb, but is not mandatory in every report; the question classifies the supplied labels rather than imposing an always-change rule.",question framing,"English backshift can follow a past reporting verb, but is not mandatory in every report; compare the two labels without assuming an always-change rule."
+13,u13-i-tense-keep-2.feedback,we usually change the tense is the source label for changing the reported tense in its English backshift comparison.,source narration,The label we usually change the tense describes English backshift after a past reporting verb.
+13,u13-i-tense-keep-2.prompt,Which admitted label is about changing the reported tense?,source narration,Which description is about changing the reported tense?
+13,u13-s-infinitive.title,Choose the admitted infinitive partner,source narration,Infinitive partner
+13,u13-s-orient.title,Admitted past aspect and report lines,source narration,Past aspect and report lines
+13,u13-s-past-aspect.title,Choose the admitted past aspect line,source narration,Past aspect example
+13,u13-s-reported.title,Choose the admitted reported line,source narration,Reported statement
+13,u13-s-tense-keep.title,Choose the admitted report label,source narration,Report description
+13,u13-st-check-infinitive.body,These checks use only admitted records.,source narration,Answer using the examples taught here.
+13,u13-st-check-past-aspect.body,These checks use only admitted records.,source narration,Answer using the examples taught here.
+13,u13-st-check-tense-keep.body,These checks use only admitted records.,source narration,Answer using the examples taught here.
+13,u13-st-guided-infinitive-1.body,Choose the admitted record.,source narration,Choose an answer.
+13,u13-st-guided-infinitive-1.body,The feedback states the frozen field.,source narration,Read the explanation after answering.
+13,u13-st-guided-past-aspect-1.body,Choose the admitted record.,source narration,Choose an answer.
+13,u13-st-guided-past-aspect-1.body,The feedback states the frozen field.,source narration,Read the explanation after answering.
+13,u13-st-guided-tense-keep-1.body,Choose the admitted record.,source narration,Choose an answer.
+13,u13-st-guided-tense-keep-1.body,The feedback states the frozen field.,source narration,Read the explanation after answering.
+13,u13-st-orient.body,"Proposed Unit 13 uses frozen records for past aspect lines, report labels, and infinitive partners.",source narration,"Unit 13 covers past-tense aspect, reported speech and infinitive partners."
+13,u13-st-orient.body,Qualified review is pending.,review/workflow status,Work through the explanations and examples.
+13,u13-st-orient.title,Admitted past aspect and report lines,source narration,Past aspect and report lines
+13,u13-st-rem-infinitive.body,A verb from the other pair is not a valid answer merely because it has the requested aspect.,exercise/assessment commentary,Match both the aspect and the meaning of the verb pair.
+13,u13-st-rem-infinitive.body,Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.,table/record framing,Learn the two taught pairs rather than assuming that any prefix gives the corresponding perfective of any verb.
+13,u13-st-rem-infinitive.body,"The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak.",source narration,"The gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak."
+13,u13-st-rem-infinitive.body,These checks recognize the retained pairs; they do not establish sentence-context aspect choice or unrestricted verb production.,exercise/assessment commentary,"Learn the two verb pairs, then practise choosing aspect in sentence contexts and producing verbs separately."
+13,u13-st-rem-past-aspect.body,A question requesting masculine past asks for чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.,question framing,The masculine past form is чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.
+13,u13-st-rem-past-aspect.body,Recognize the requested aspect in these supplied choices; this is not unrestricted sentence production.,exercise/assessment commentary,Identify the aspect in each example; practise constructing sentences separately.
+13,u13-st-rem-past-aspect.body,The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive.,source narration,The English gloss read alone does not distinguish past tense from infinitive.
+13,u13-st-rem-past-aspect.body,The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form.,exercise/assessment commentary,The pronoun I does not determine past-tense gender for every speaker; match the past form to the speaker’s gender.
+13,u13-st-rem-past-aspect.body,These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.,source narration,These English labels describe the examples; they do not match every English past tense to one Russian aspect.
+13,u13-st-rem-reported.body,English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged.,source narration,English backshift is not compulsory in every report; preserving these readings is not a universal rule that every tense or word stays unchanged.
+13,u13-st-rem-reported.body,Existing independent choices distinguish this supplied Moscow plan and the direct evening statement.,exercise/assessment commentary,Distinguish the Moscow plan from the direct evening statement.
+13,u13-st-rem-reported.body,The added independent check must also interpret the evening report’s past reporting verb and future embedded action.,exercise/assessment commentary,"In the evening report, distinguish the past reporting verb from the future embedded action."
+13,u13-st-rem-reported.body,The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.,source narration,Pronoun choice depends on the speaker; do not mechanically replace every I with she or manufacture reported clauses.
+13,u13-st-rem-reported.body,The source’s alternative with a past copula changes the stated reading.,source narration,The alternative with a past copula changes the stated reading.
+13,u13-st-rem-reported.body,"This nationality context was also taught earlier, so it is not unseen evidence.",exercise/assessment commentary,Review the nationality example you learned earlier.
+13,u13-st-rem-reported.body,"This small set supports recognition of supplied contexts, not unrestricted reported-speech production.",exercise/assessment commentary,Study these examples in context; practise creating reports separately.
+13,u13-st-rem-tense-keep.body,"In the source comparison, English can shift a present statement to a past form after a past reporting verb.",source narration,"In this comparison, English can shift a present statement to a past form after a past reporting verb."
+13,u13-st-rem-tense-keep.body,It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking.,source narration,It corresponds to the direct evening statement by the event described; pronoun changes depend on who is speaking.
+13,u13-st-rem-tense-keep.body,Recognize these supplied contexts; this check does not ask you to construct a new report.,exercise/assessment commentary,Interpret each example in its context; practise constructing reports separately.
+13,u13-st-rem-tense-keep.body,The retained direct evening example is Я скажу ему ве́чером.,source narration,The direct evening statement is Я скажу ему ве́чером.
+13,u13-st-rem-tense-keep.body,The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense.,source narration,Keeping the tense the same describes this Russian reporting comparison; it does not mean every verb in a report has the same tense.
+13,u13-st-teach-infinitive-1.body,"The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak.",source narration,"The gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak."
+13,u13-st-teach-infinitive-1.title,Admitted lines,source narration,Examples
+13,u13-st-teach-infinitive-2.body,A verb from the other pair is not a valid answer merely because it has the requested aspect.,exercise/assessment commentary,Match both the aspect and the meaning of the verb pair.
+13,u13-st-teach-infinitive-2.body,These checks recognize the retained pairs; they do not establish sentence-context aspect choice or unrestricted verb production.,exercise/assessment commentary,"Learn the two verb pairs, then practise choosing aspect in sentence contexts and producing verbs separately."
+13,u13-st-teach-infinitive-2.title,Admitted instruction,source narration,Explanation
+13,u13-st-teach-infinitive-3.body,Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.,table/record framing,Learn the two taught pairs rather than assuming that any prefix gives the corresponding perfective of any verb.
+13,u13-st-teach-infinitive-3.title,Admitted lines,source narration,Examples
+13,u13-st-teach-past-aspect-1.body,These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.,source narration,These English labels describe the examples; they do not match every English past tense to one Russian aspect.
+13,u13-st-teach-past-aspect-1.title,Admitted lines,source narration,Examples
+13,u13-st-teach-past-aspect-2.body,Recognize the requested aspect in these supplied choices; this is not unrestricted sentence production.,exercise/assessment commentary,Identify the aspect in each example; practise constructing sentences separately.
+13,u13-st-teach-past-aspect-2.title,Admitted instruction,source narration,Explanation
+13,u13-st-teach-past-aspect-3.body,A question requesting masculine past asks for чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.,question framing,The masculine past form is чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.
+13,u13-st-teach-past-aspect-3.body,The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive.,source narration,The English gloss read alone does not distinguish past tense from infinitive.
+13,u13-st-teach-past-aspect-3.title,Admitted lines,source narration,Examples
+13,u13-st-teach-past-aspect-4.body,The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form.,exercise/assessment commentary,The pronoun I does not determine past-tense gender for every speaker; match the past form to the speaker’s gender.
+13,u13-st-teach-past-aspect-4.title,Admitted lines,source narration,Examples
+13,u13-st-teach-reported-1.body,The source’s alternative with a past copula changes the stated reading.,source narration,The alternative with a past copula changes the stated reading.
+13,u13-st-teach-reported-1.body,"This nationality context was also taught earlier, so it is not unseen evidence.",exercise/assessment commentary,Review the nationality example you learned earlier.
+13,u13-st-teach-reported-2.body,The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.,source narration,Pronoun choice depends on the speaker; do not mechanically replace every I with she or manufacture reported clauses.
+13,u13-st-teach-reported-3.body,English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged.,source narration,English backshift is not compulsory in every report; preserving these readings is not a universal rule that every tense or word stays unchanged.
+13,u13-st-teach-reported-3.body,Existing independent choices distinguish this supplied Moscow plan and the direct evening statement.,exercise/assessment commentary,Distinguish the Moscow plan from the direct evening statement.
+13,u13-st-teach-reported-3.body,The added independent check must also interpret the evening report’s past reporting verb and future embedded action.,exercise/assessment commentary,"In the evening report, distinguish the past reporting verb from the future embedded action."
+13,u13-st-teach-reported-3.body,"This small set supports recognition of supplied contexts, not unrestricted reported-speech production.",exercise/assessment commentary,Study these examples in context; practise creating reports separately.
+13,u13-st-teach-tense-keep-1.body,The retained direct evening example is Я скажу ему ве́чером.,source narration,The direct evening statement is Я скажу ему ве́чером.
+13,u13-st-teach-tense-keep-1.body,The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense.,source narration,Keeping the tense the same describes this Russian reporting comparison; it does not mean every verb in a report has the same tense.
+13,u13-st-teach-tense-keep-1.title,Admitted lines,source narration,Examples
+13,u13-st-teach-tense-keep-2.body,"In the source comparison, English can shift a present statement to a past form after a past reporting verb.",source narration,"In this comparison, English can shift a present statement to a past form after a past reporting verb."
+13,u13-st-teach-tense-keep-2.title,Admitted instruction,source narration,Explanation
+13,u13-st-teach-tense-keep-3.body,It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking.,source narration,It corresponds to the direct evening statement by the event described; pronoun changes depend on who is speaking.
+13,u13-st-teach-tense-keep-3.body,Recognize these supplied contexts; this check does not ask you to construct a new report.,exercise/assessment commentary,Interpret each example in its context; practise constructing reports separately.
+13,u13-st-teach-tense-keep-3.title,Admitted lines,source narration,Examples
+13,unit-13.mappingNote,"Independently stated topic scope: Aspect in past-tense contexts, tense selection, infinitive aspect, and reported speech.",review/workflow status,"Topics: Aspect in past-tense contexts, tense selection, infinitive aspect, and reported speech."
+13,unit-13.mappingNote,Mapping status is PENDING_CURRICULUM_REVIEWER.,review/workflow status,Use the explanations and examples alongside your book.
+13,unit-13.mappingNote,"Proposed Lesson 13, printed pages 149-161.",review/workflow status,"This unit goes with Lesson 13 in your book, printed pages 149-161."
+13,unit-13.mappingNote,That assertion is not reviewer verification.,review/workflow status,Read the matching lesson in your own book.
+13,unit-13.mappingNote,The Product Owner asserts that the inspected file is a legally owned copy.,review/workflow status,Use the copy of the book you own.
+13,unit-13.mappingNote,"This note does not approve coverage, variance, or alignment.",review/workflow status,Compare this unit with the matching lesson in your own book.
+14,obj-u14-future-aspect.title,Choose the admitted future aspect line,source narration,Future aspect example
+14,obj-u14-future-person.title,Choose the admitted future person line,source narration,Future person form
+14,obj-u14-impersonal.title,Choose the admitted impersonal line,source narration,Impersonal example
+14,ref-u1115-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+14,reviewCopy.introductions[14],"These finite recognitions do not demonstrate unseen reading, productive inflection, unrestricted reported speech, speaking or writing.",exercise/assessment commentary,"Practise the taught forms; practise unfamiliar reading, inflection, creating reported speech, speaking and writing separately."
+14,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+14,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+14,u14-g-future-aspect-0.prompt,Which admitted line is the bounded future?,source narration,Which sentence is the bounded future?
+14,u14-g-future-person-0.distractorRationales[1],"Я бу́ду говори́ть is first-person singular future, not the first-person plural future requested here.",table/record framing,"Я бу́ду говори́ть is first-person singular future, not the first-person plural future."
+14,u14-g-future-person-0.feedback,The imperfective infinitive stays the same; the subject and auxiliary distinguish the number requested.,table/record framing,The imperfective infinitive stays the same; the subject and auxiliary distinguish the number.
+14,u14-g-future-person-0.prompt,Which admitted line is the first-person plural future?,source narration,Which sentence is the first-person plural future?
+14,u14-g-impersonal-0.distractorRationales[1],"Им было скучно is also impersonal past, but it describes plural experiencers who were bored, not the singular cold person requested here.",table/record framing,"Им было скучно is also impersonal past, but it describes plural experiencers who were bored, not the singular cold person."
+14,u14-g-impersonal-0.feedback,Both options are impersonal past and keep the same neuter singular verb; the requested person and state distinguish them.,table/record framing,Both options are impersonal past and keep the same neuter singular verb; the person and state distinguish them.
+14,u14-g-impersonal-0.prompt,Which admitted line is the impersonal past for one person who was cold?,source narration,Which sentence is the impersonal past for one person who was cold?
+14,u14-i-future-aspect-1.prompt,Which admitted line is the bounded future?,source narration,Which sentence is the bounded future?
+14,u14-i-future-aspect-2.distractorRationales[1],"Я поговорю три́дцать мину́т is the bounded future option with a stated thirty-minute limit, rather than the unbounded future example requested here.",table/record framing,"Я поговорю три́дцать мину́т is the bounded future option with a stated thirty-minute limit, rather than the unbounded future example."
+14,u14-i-future-aspect-2.prompt,Which admitted line is the unbounded future?,source narration,Which sentence is the unbounded future?
+14,u14-i-future-person-1.distractorRationales[1],"скажу́ is first-person singular future, not the requested third-person plural future.",table/record framing,"скажу́ is first-person singular future, not the third-person plural future."
+14,u14-i-future-person-1.feedback,"The cue shows third-person singular, but the question asks for third-person plural of the same verb.",question framing,The cue shows third-person singular; change it to third-person plural of the same verb.
+14,u14-i-future-person-1.prompt,Which admitted row is the third-person plural future?,source narration,Which form is the third-person plural future?
+14,u14-i-future-person-2.distractorRationales[1],"Мы бу́дем говори́ть is first-person plural future, not the first-person singular future requested here.",table/record framing,"Мы бу́дем говори́ть is first-person plural future, not the first-person singular future."
+14,u14-i-future-person-2.prompt,Which admitted line is the first-person singular future?,source narration,Which sentence is the first-person singular future?
+14,u14-i-impersonal-1.distractorRationales[1],"Ему было холодно is also impersonal past, but it describes one male experiencer who was cold, not the plural bored experiencers requested here.",table/record framing,"Ему было холодно is also impersonal past, but it describes one male experiencer who was cold, not the plural bored experiencers."
+14,u14-i-impersonal-1.prompt,Which admitted line is the impersonal past for more than one bored person?,source narration,Which sentence is the impersonal past for more than one bored person?
+14,u14-i-impersonal-2.distractorRationales[1],"Ему было холодно is also impersonal past, but the supplied example refers to a male experiencer, not the woman requested here.",table/record framing,"Ему было холодно is also impersonal past, but the supplied example refers to a male experiencer, not the woman."
+14,u14-i-impersonal-2.feedback,"Both options are impersonal past; the woman in the question changes the experiencer pronoun, not the verb to feminine agreement.",question framing,"Both forms are impersonal past; a female experiencer changes the pronoun, not the verb to feminine agreement."
+14,u14-i-impersonal-2.prompt,Which admitted line is the impersonal past for one woman who was cold?,source narration,Which sentence is the impersonal past for one woman who was cold?
+14,u14-s-future-aspect.title,Choose the admitted future aspect line,source narration,Future aspect example
+14,u14-s-future-person.title,Choose the admitted future person line,source narration,Future person form
+14,u14-s-impersonal.title,Choose the admitted impersonal line,source narration,Impersonal example
+14,u14-s-orient.title,Admitted future aspect and state lines,source narration,Future aspect and state lines
+14,u14-st-check-future-aspect.body,These checks use only admitted records.,source narration,Answer using the examples taught here.
+14,u14-st-check-future-person.body,These checks use only admitted records.,source narration,Answer using the examples taught here.
+14,u14-st-check-impersonal.body,These checks use only admitted records.,source narration,Answer using the examples taught here.
+14,u14-st-guided-future-aspect-1.body,Choose the admitted record.,source narration,Choose an answer.
+14,u14-st-guided-future-aspect-1.body,The feedback states the frozen field.,source narration,Read the explanation after answering.
+14,u14-st-guided-future-person-1.body,Choose the admitted record.,source narration,Choose an answer.
+14,u14-st-guided-future-person-1.body,The feedback states the frozen field.,source narration,Read the explanation after answering.
+14,u14-st-guided-impersonal-1.body,Choose the admitted record.,source narration,Choose an answer.
+14,u14-st-guided-impersonal-1.body,The feedback states the frozen field.,source narration,Read the explanation after answering.
+14,u14-st-orient.body,Proposed Unit 14 uses frozen records for future aspect lines and state lines.,source narration,Unit 14 covers future-tense aspect and impersonal constructions.
+14,u14-st-orient.body,Qualified review is pending.,review/workflow status,Work through the explanations and examples.
+14,u14-st-orient.title,Admitted future aspect and state lines,source narration,Future aspect and state lines
+14,u14-st-rem-impersonal.body,Activity is not demonstrated ability.,exercise/assessment commentary,"Practise first, then answer without the explanation in view."
+14,u14-st-rem-impersonal.body,Read this as a review-pending explanation.,review/workflow status,Read the explanation and compare the examples.
+14,u14-st-rem-impersonal.body,"Worked examples come before the guided choice, and the independent check is separate.",exercise/assessment commentary,"Read the worked examples, then practise before answering independently."
+14,u14-st-teach-future-aspect-1.title,Admitted lines,source narration,Examples
+14,u14-st-teach-future-aspect-2.title,Admitted instruction,source narration,Explanation
+14,u14-st-teach-future-aspect-3.title,Admitted lines,source narration,Examples
+14,u14-st-teach-future-person-1.title,Admitted lines,source narration,Examples
+14,u14-st-teach-future-person-2.title,Admitted instruction,source narration,Explanation
+14,u14-st-teach-future-person-3.title,Admitted lines,source narration,Examples
+14,u14-st-teach-future-person-4.title,Admitted lines,source narration,Examples
+14,u14-st-teach-impersonal-1.body,Activity is not demonstrated ability.,exercise/assessment commentary,"Practise first, then answer without the explanation in view."
+14,u14-st-teach-impersonal-1.body,Read this as a review-pending explanation.,review/workflow status,Read the explanation and compare the examples.
+14,u14-st-teach-impersonal-1.body,"Worked examples come before the guided choice, and the independent check is separate.",exercise/assessment commentary,"Read the worked examples, then practise before answering independently."
+14,u14-st-teach-impersonal-1.title,Admitted lines,source narration,Examples
+14,u14-st-teach-impersonal-2.title,Admitted instruction,source narration,Explanation
+14,u14-st-teach-impersonal-3.title,Admitted lines,source narration,Examples
+14,unit-14.mappingNote,Independently stated topic scope: Aspect in future-tense contexts and impersonal constructions.,review/workflow status,Topics: Aspect in future-tense contexts and impersonal constructions.
+14,unit-14.mappingNote,Mapping status is PENDING_CURRICULUM_REVIEWER.,review/workflow status,Use the explanations and examples alongside your book.
+14,unit-14.mappingNote,"Proposed Lesson 14, printed pages 162-170.",review/workflow status,"This unit goes with Lesson 14 in your book, printed pages 162-170."
+14,unit-14.mappingNote,That assertion is not reviewer verification.,review/workflow status,Read the matching lesson in your own book.
+14,unit-14.mappingNote,The Product Owner asserts that the inspected file is a legally owned copy.,review/workflow status,Use the copy of the book you own.
+14,unit-14.mappingNote,"This note does not approve coverage, variance, or alignment.",review/workflow status,Compare this unit with the matching lesson in your own book.
+15,obj-u15-aspect-consolidate.title,Choose the admitted aspect pair,source narration,Aspect pair
+15,obj-u15-imperative.title,Choose the admitted request row,source narration,Request form
+15,obj-u15-say-request.title,Choose the admitted say-request row,source narration,Say-request form
+15,ref-u1115-attribution.reviewStatus,NOT_REQUIRED,review/workflow status,Reference
+15,reviewCopy.introductions[15],"Recognition of these supplied examples does not establish unseen reading, unrestricted grammar production, speaking or writing.",exercise/assessment commentary,"Practise recognising the examples here; practise unfamiliar reading, creating sentences, speaking and writing separately."
+15,reviewCopy.introductions[15],Repair restores all three state cards and four examples; guided male-cold practice does not complete the female-cold check.,exercise/assessment commentary,"After a miss, read all three state explanations and four examples, then answer the female-cold review check."
+15,reviewCopy.messages[unverifiedRule],The cumulative-review rule cannot be verified,review/workflow status,This review is unavailable. Return to the unit list.
+15,reviewCopy.messages[wrongFeedback],Not the reviewed answer.,review/workflow status,Try again.
+15,u15-g-aspect-consolidate-0.prompt,Which admitted line is the perfective partner?,source narration,Which verb is the perfective partner?
+15,u15-g-imperative-0.distractorRationales[1],"чита́ть is the infinitive, not the requested inflected plural imperative form.",table/record framing,"чита́ть is the infinitive, not an inflected plural imperative form."
+15,u15-g-imperative-0.feedback,"чита́ть is the infinitive, not the inflected plural imperative requested.",table/record framing,"чита́ть is the infinitive, not an inflected plural imperative."
+15,u15-g-imperative-0.prompt,Which admitted row is the plural imperative?,source narration,Which form is the plural imperative?
+15,u15-g-say-request-0.distractorRationales[1],"сказа́ть is the infinitive, not the requested inflected plural imperative form.",table/record framing,"сказа́ть is the infinitive, not an inflected plural imperative form."
+15,u15-g-say-request-0.feedback,The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.,table/record framing,The singular and plural imperative forms keep the stress shown in these examples; politeness also depends on context.
+15,u15-g-say-request-0.feedback,"сказа́ть is the infinitive, not the inflected plural imperative form requested.",table/record framing,"сказа́ть is the infinitive, not the inflected plural imperative form."
+15,u15-g-say-request-0.prompt,Which admitted row is the plural imperative?,source narration,Which form is the plural imperative?
+15,u15-i-aspect-consolidate-1.feedback,"The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.",question framing,Identify the imperfective member of the verb pair while keeping the meaning the same.
+15,u15-i-aspect-consolidate-1.prompt,Which admitted line is the imperfective partner?,source narration,Which verb is the imperfective partner?
+15,u15-i-aspect-consolidate-2.feedback,сде́лать is the perfective partner of де́лать in the recorded do/make pair.,table/record framing,сде́лать is the perfective partner of де́лать in the do/make pair.
+15,u15-i-aspect-consolidate-2.prompt,Which admitted line is the perfective partner?,source narration,Which verb is the perfective partner?
+15,u15-i-imperative-1.distractorRationales[1],"чита́ть is the infinitive, not the requested inflected singular imperative form.",table/record framing,"чита́ть is the infinitive, not an inflected singular imperative form."
+15,u15-i-imperative-1.feedback,"The cue shows the plural/polite form, while this question asks for the singular imperative table row.",question framing,The cue shows the plural/polite imperative; choose the singular imperative.
+15,u15-i-imperative-1.prompt,Which admitted row is the singular imperative?,source narration,Which form is the singular imperative?
+15,u15-i-imperative-2.distractorRationales[1],"чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person.",table/record framing,"чита́йте is the plural/polite imperative form, not the singular imperative; polite use can still address one person."
+15,u15-i-imperative-2.feedback,"Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",table/record framing,"Both forms are imperatives of the shown infinitive; the singular form is informal, while spelling alone does not identify the actual number of listeners."
+15,u15-i-imperative-2.prompt,Which admitted row is the singular imperative?,source narration,Which form is the singular imperative?
+15,u15-i-say-request-1.distractorRationales[1],"дать is the infinitive, not the requested inflected plural imperative form.",table/record framing,"дать is the infinitive, not an inflected plural imperative form."
+15,u15-i-say-request-1.feedback,Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.,table/record framing,"Select the plural imperative of this verb; its dictionary form is an infinitive, not a command."
+15,u15-i-say-request-1.feedback,"дать is the infinitive, not the inflected imperative form requested.",table/record framing,"дать is the infinitive, not the inflected imperative form."
+15,u15-i-say-request-1.prompt,Which admitted row is the plural imperative?,source narration,Which form is the plural imperative?
+15,u15-i-say-request-2.distractorRationales[1],"сказа́ть is the infinitive, not the requested inflected singular imperative form.",table/record framing,"сказа́ть is the infinitive, not an inflected singular imperative form."
+15,u15-i-say-request-2.feedback,"The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.",question framing,"The cue shows the plural/polite imperative; choose the singular imperative of the same say/tell verb, keeping meaning and aspect the same."
+15,u15-i-say-request-2.prompt,Which admitted row is the singular imperative?,source narration,Which form is the singular imperative?
+15,u15-s-aspect-consolidate.title,Choose the admitted aspect pair,source narration,Aspect pair
+15,u15-s-imperative.title,Choose the admitted request row,source narration,Request form
+15,u15-s-orient.title,Admitted request rows and aspect pairs,source narration,Request forms and aspect pairs
+15,u15-s-say-request.title,Choose the admitted say-request row,source narration,Say-request form
+15,u15-st-check-aspect-consolidate.body,These checks use only admitted records.,source narration,Answer using the examples taught here.
+15,u15-st-check-imperative.body,These checks use only admitted records.,source narration,Answer using the examples taught here.
+15,u15-st-check-say-request.body,These checks use only admitted records.,source narration,Answer using the examples taught here.
+15,u15-st-guided-aspect-consolidate-1.body,Choose the admitted record.,source narration,Choose an answer.
+15,u15-st-guided-aspect-consolidate-1.body,The feedback states the frozen field.,source narration,Read the explanation after answering.
+15,u15-st-guided-imperative-1.body,Choose the admitted record.,source narration,Choose an answer.
+15,u15-st-guided-imperative-1.body,The feedback states the frozen field.,source narration,Read the explanation after answering.
+15,u15-st-guided-say-request-1.body,Choose the admitted record.,source narration,Choose an answer.
+15,u15-st-guided-say-request-1.body,The feedback states the frozen field.,source narration,Read the explanation after answering.
+15,u15-st-orient.body,Proposed Unit 15 uses frozen records for request rows and aspect pairs.,source narration,"Unit 15 covers requests, imperative forms and aspect pairs."
+15,u15-st-orient.body,Qualified review is pending.,review/workflow status,Work through the explanations and examples.
+15,u15-st-orient.title,Admitted request rows and aspect pairs,source narration,Request forms and aspect pairs
+15,u15-st-rem-aspect-consolidate.body,Compare the requested aspect and the meaning group before selecting a supplied form.,table/record framing,Compare the aspect and the meaning group before selecting a supplied form.
+15,u15-st-rem-aspect-consolidate.body,"Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill.",exercise/assessment commentary,"Learn the lexical partner, then practise choosing aspect in context separately."
+15,u15-st-rem-aspect-consolidate.body,Recognize the requested member of this supplied pair.,table/record framing,Recognize the member of this supplied pair.
+15,u15-st-rem-aspect-consolidate.body,The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation.,table/record framing,The supplied infinitives говори́ть and сказа́ть form an imperfective/perfective pair for the say/tell relation.
+15,u15-st-rem-aspect-consolidate.body,The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair.,table/record framing,The supplied infinitives де́лать and сде́лать form an imperfective/perfective do/make pair.
+15,u15-st-rem-aspect-consolidate.body,These choices ask for members of the supplied infinitive pairs.,exercise/assessment commentary,Identify each member of the two infinitive pairs.
+15,u15-st-rem-imperative.body,Activity is not demonstrated ability.,exercise/assessment commentary,"Practise first, then answer without the explanation in view."
+15,u15-st-rem-imperative.body,"Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",table/record framing,"Both are imperative forms of the shown infinitive; the singular form is informal, while spelling alone does not identify the actual number of listeners."
+15,u15-st-rem-imperative.body,Read this as a review-pending explanation.,review/workflow status,Read the explanation and compare the examples.
+15,u15-st-rem-imperative.body,"The cue shows the plural/polite form, while this question asks for the singular imperative table row.",question framing,The cue shows the plural/polite imperative; choose the singular imperative.
+15,u15-st-rem-imperative.body,"Worked examples come before the guided choice, and the independent check is separate.",exercise/assessment commentary,"Read the worked examples, then practise before answering independently."
+15,u15-st-rem-imperative.body,"чита́ть is the infinitive, not the inflected plural imperative requested.",table/record framing,"чита́ть is the infinitive, not an inflected plural imperative."
+15,u15-st-teach-aspect-consolidate-1.body,Recognize the requested member of this supplied pair.,table/record framing,Recognize the member of this supplied pair.
+15,u15-st-teach-aspect-consolidate-1.body,The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation.,table/record framing,The supplied infinitives говори́ть and сказа́ть form an imperfective/perfective pair for the say/tell relation.
+15,u15-st-teach-aspect-consolidate-2.body,The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair.,table/record framing,The supplied infinitives де́лать and сде́лать form an imperfective/perfective do/make pair.
+15,u15-st-teach-aspect-consolidate-3.body,Compare the requested aspect and the meaning group before selecting a supplied form.,table/record framing,Compare the aspect and the meaning group before selecting a supplied form.
+15,u15-st-teach-aspect-consolidate-3.body,"Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill.",exercise/assessment commentary,"Learn the lexical partner, then practise choosing aspect in context separately."
+15,u15-st-teach-aspect-consolidate-3.body,These choices ask for members of the supplied infinitive pairs.,exercise/assessment commentary,Identify each member of the two infinitive pairs.
+15,u15-st-teach-imperative-1.body,Activity is not demonstrated ability.,exercise/assessment commentary,"Practise first, then answer without the explanation in view."
+15,u15-st-teach-imperative-1.body,Read this as a review-pending explanation.,review/workflow status,Read the explanation and compare the examples.
+15,u15-st-teach-imperative-1.body,"Worked examples come before the guided choice, and the independent check is separate.",exercise/assessment commentary,"Read the worked examples, then practise before answering independently."
+15,u15-st-teach-imperative-1.title,Admitted lines,source narration,Examples
+15,u15-st-teach-imperative-2.title,Admitted instruction,source narration,Explanation
+15,u15-st-teach-imperative-3.title,Admitted lines,source narration,Examples
+15,u15-st-teach-imperative-contrast.body,"Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",table/record framing,"Both are imperative forms of the shown infinitive; the singular form is informal, while spelling alone does not identify the actual number of listeners."
+15,u15-st-teach-imperative-contrast.body,"The cue shows the plural/polite form, while this question asks for the singular imperative table row.",question framing,The cue shows the plural/polite imperative; choose the singular imperative.
+15,u15-st-teach-imperative-contrast.body,"чита́ть is the infinitive, not the inflected plural imperative requested.",table/record framing,"чита́ть is the infinitive, not an inflected plural imperative."
+15,u15-st-teach-imperative-contrast.title,Admitted instruction,source narration,Explanation
+15,u15-st-teach-say-request-1.body,Activity is not demonstrated ability.,exercise/assessment commentary,"Practise first, then answer without the explanation in view."
+15,u15-st-teach-say-request-1.body,Read this as a review-pending explanation.,review/workflow status,Read the explanation and compare the examples.
+15,u15-st-teach-say-request-1.body,"Worked examples come before the guided choice, and the independent check is separate.",exercise/assessment commentary,"Read the worked examples, then practise before answering independently."
+15,u15-st-teach-say-request-1.title,Admitted lines,source narration,Examples
+15,u15-st-teach-say-request-2.title,Admitted instruction,source narration,Explanation
+15,u15-st-teach-say-request-3.title,Admitted lines,source narration,Examples
+15,u15-st-teach-say-request-4.title,Admitted lines,source narration,Examples
+15,unit-15.mappingNote,"Independently stated topic scope: Requests, imperative forms, and consolidation of aspect use.",review/workflow status,"Topics: Requests, imperative forms, and consolidation of aspect use."
+15,unit-15.mappingNote,Mapping status is PENDING_CURRICULUM_REVIEWER.,review/workflow status,Use the explanations and examples alongside your book.
+15,unit-15.mappingNote,"Proposed Lesson 15, printed pages 171-187.",review/workflow status,"This unit goes with Lesson 15 in your book, printed pages 171-187."
+15,unit-15.mappingNote,That assertion is not reviewer verification.,review/workflow status,Read the matching lesson in your own book.
+15,unit-15.mappingNote,The Product Owner asserts that the inspected file is a legally owned copy.,review/workflow status,Use the copy of the book you own.
+15,unit-15.mappingNote,"This note does not approve coverage, variance, or alignment.",review/workflow status,Compare this unit with the matching lesson in your own book.

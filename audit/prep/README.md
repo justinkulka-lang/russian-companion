@@ -43,3 +43,5 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - t15g-prep-citations-at-a4d0e667.txt: T15g re-verification of the T15f check and T15g prep citations at a4d0e667; lists the four that differ.
 - s1-claim-verification.csv: S1 (Code). Every claim the prep reports route to an S1 page (PENDING-S1, and the PENDING-INTAKE claims D3, D5, D6a and D7c send to S1), for Units 12-14, 16, 17, 19 and 21-24, with a verdict against the frozen S1 revisions under catalog/sources/s1-intake (SUPPORTED, PARTIAL or NOT_SUPPORTED), the evidence as file:line and a note on what is missing. claims_csv_line is the line in audit/T15-n0-unmarked-russian-facts.csv.
 - s1-allowlist-removed.txt: S1 (Code), the 78 allowlist lines removed because they pass the D7b audit against the frozen S1 pages (Unit 21: 9 UNATTESTED; Unit 24: 4 MISSING_STRESS; Unit 29: 45 UNATTESTED and 20 COMPOSED).
+
+- learner-text-sweep-units-01-15.csv: D30a rendered learner-text sweep at 62b4b084, Units 1-15; 602 rows with categories and suggested rewrites (D31a).
