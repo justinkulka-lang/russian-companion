@@ -33,6 +33,7 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - t15g-codex-check-and-t15h-prep-at-a61f0bf6.txt: Codex check of T15g (FAIL) plus T15h prep for the 13 HIGH findings, the Unit 10 counterexample and the listen-check sheet. See D25.
 - s1-t15h-codex-check-at-89fcd5b3.txt: Codex check of S1 and T15h. PASS except the tag-name bypass; see D27. Imya chislitelnoe is a redirect; D6b found no pair.
 - t15i-d27a-t16-codex-check-at-6abc9ec4.txt: Codex check of T15i, D27a and T16. FAIL: weakened typed tests, tag-whitespace parity, lint gaps (attribution, requires, mappingNote), Unit 4 aspect wording. See D28.
+- t16n1-t16b-codex-check-at-62b4b084.txt: Codex check of T16-n1 and T16b. PASS except manual lint misses in Units 1-5 and 12; see D30.
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
 - t15f-changed-learner-fields.csv: T15f, every changed learner field in Units 1-30 (442 rows: unit, owner, field, old, new) between 1bf80b92 and 34b714dd, for the Codex check of T15f.
 - d7b-valsim-at-e853de1e.out: D7b validator simulation at e853de1e (Code). Regions only synthesis records admitted, as (unit, text, allowlisted) and occurrence count; 100 distinct, 70 not allowlisted. See D18.

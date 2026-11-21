@@ -1,0 +1,203 @@
+Overall **FAIL**: the typed assertions and tag-whitespace fixes work, but the manual scan found learner-facing governance and source/assessment narration that still escapes lint.
+
+Checked **`62b4b0847472eae4c25ac3c159f0289e0a065556`** in an isolated checkout. No tracked files changed; nothing committed or pushed.
+
+CI confirmed:
+
+| Run | Exact commit | Result |
+|---|---|---|
+| 44825173504 | `38bee8a6c1463618185db3b92be3158a70f69d3a` | FAILED |
+| 44853099403 | `fd0122ef04790aa70202a441209bbbac55a991bc` | PASSED |
+
+Both DONE commits change only `WORK_QUEUE.md`.
+
+### T16-n1
+
+**1. Typed assertions — PASS.**
+
+All four independent fault injections now fail:
+
+```text
+u11-i-type-chital + REJECTED status → assertion failure
+u11-i-type-chital + co-location prompt → assertion failure
+u10-i-type-nas + REJECTED status → assertion failure
+u10-i-type-nas + co-location prompt → assertion failure
+```
+
+The injected prompt suffix was exactly: “Use another cell of the same table.”
+
+Common prompt/status/key assertions execute before the typed branch. Only closed-check assertions are skipped. I found no equivalent unsafe skip elsewhere in the instructional-validity tests.
+
+Evidence: `Units1115InstructionalValidityTest.kt:415,431–459`; `Units610InstructionalValidityTest.kt:28,128–152`. Both regression methods passed.
+
+**2. Tag whitespace — PASS.**
+
+Kotlin and Python produced identical results:
+
+| Separator after `span` | Join inline text? |
+|---|---|
+| NBSP, em-space, VT | No |
+| Zero-width space, BOM | No |
+| CR-LF | Yes |
+| Space, tab, LF, FF, CR | Yes |
+
+Only HTML whitespace, `/` or `>` terminates an allowed inline name. The previously requested colon/underscore names remain boundaries.
+
+Evidence: `TwoPartPhraseRule.kt:29–32`; `catalog/apply_d7b_selection_records.py:47–49`; `TwoPartPhraseRuleTest.kt:114`; Python boundary suite: **4 tests passed**.
+
+**3. Lint and mapping notes — FAIL on manual misses; requested fixes pass.**
+
+Verified:
+
+- “Review is pending.” is absent from every attribution notice.
+- Independent `requires`, `require` and `required` probes each produce `LEARNER_PROVENANCE_NARRATION`.
+- Units 1–12 mapping notes are plain lesson/topic descriptions.
+- `mappingStatus` remains `PENDING_CURRICULUM_REVIEWER` in metadata.
+- Automatic learner lint reports **zero hits in Units 1–12**.
+
+Evidence: `V2DesignDiagnostics.kt:74–77,214–219`; `catalog/apply_t16n1.py:29–57,88–95`; `WidenedLearnerVoiceLintTest.kt:149`.
+
+The manual scan nevertheless found these misses:
+
+| Owner.field | Remaining wording |
+|---|---|
+| `u1-st-vowels.body` | “English sound notes are pending qualified review.” |
+| `ref-cyrillic-print.detail` — Units 1–2 | “English sound notes are pending review.” |
+| `ref-iotated.detail` | “…until a reviewer signs an app note.” |
+| `ref-decoding.detail` — Units 1–2 | “…wait for reviewed examples.” |
+| `ref-limits.detail` — Units 1–2 | “Public release stays blocked until review and device evidence exist.” |
+| `ref-book-topics.summary` — Units 3–5 | “…still require qualified review.” |
+| `ref-book-topics.detail` — Units 3–5 | “This reference does not approve the packaged records.” |
+| `u4-st-teach-nominative-1.body`, `u4-st-rem-nominative.body`, `ref-u4-nominative.detail` | “…the question here is whether the noun is the subject or the direct object.” |
+| `ex-u4-stress-6f15e9f1.note`, `ex-u4-stress-1f37b6b2.note`, `ex-u4-stress-2114b12f.note` | “Written stress mark from the dictionary” |
+
+Additionally, Units **1–5 `topicSummary`** retain development/review-pending prose. These are declared audit fields, **not currently rendered UI fields**.
+
+Unit 12 misses are listed under item 9. All content evidence is in `app/src/main/assets/content/v2-curriculum.json:1`, identified by owner and field above.
+
+**Needed:** remove or reword the prose misses, preserve truthful workflow status in metadata/status UI, and add regression coverage.
+
+**4. Unit 4 present-tense wording — PASS.**
+
+The replacement keeps the two supported claims: add the appropriate endings; Russian verbs conjugate in two ways.
+
+Frozen witness: `catalog/sources/units-3-5/wikibooks/verbs-4233876.txt:44`.
+
+A fresh scan of the shared learner-field set found:
+
+```text
+ASPECT_BEFORE12=[]
+```
+
+The historical provenance quotation still contains aspect terminology, but it is not learner-facing. Evidence: `catalog/apply_t16n1.py:30–31,96–105`.
+
+**5. Block 2 at `a96569bd` — PASS.**
+
+The attribution-prose defect reported previously is removed. I found no remaining equivalent manual miss in Units 6–10.
+
+The checked/typed counts remain **23/8, 47/15, 28/9, 50/15, 31/10**. Fresh review allocation meets A2-28 for each unit; validator, phrase audit, required-check validity and automatic lint pass. References, binder tasks, unit tests, dispositions and the listen-check sheet remain present.
+
+Physical acceptance remains **LAST**, as required. The tree after `a96569bd` differs from head only in `WORK_QUEUE.md`.
+
+Evidence: `WORK_QUEUE.md:161–166`; T16-n1 DONE log; fresh governed-progression probe.
+
+### T16b — Unit 12
+
+**6. Counts, typed keys and placement — PASS.**
+
+Unit 12 has **20 checked / 8 typed: 40% typed**. Every required check is in `u12-s-checks`, after teaching. A2-24 findings: **zero**.
+
+All eight keys match their cited cells character for character, converting only the inventory’s apostrophe stress notation:
+
+| Frozen CSV | Line / field | Key |
+|---|---|---|
+| `units-3-5/openrussian/nouns.csv` | 60 / `sg_dat` | кни́ге |
+| Same | 32 / `sg_dat` | столу́ |
+| Same | 15 / `sg_dat` | до́му |
+| Same | 60 / `pl_prep` | кни́гах |
+| Same | 32 / `pl_prep` | стола́х |
+| Same | 15 / `pl_prep` | дома́х |
+| `units-3-5/openrussian/verbs.csv` | 3 / `presfut_sg1` | скажу́ |
+| Same | 3 / `presfut_sg2` | ска́жешь |
+
+Paths are under `catalog/sources/`. Construction evidence: `catalog/apply_t16b_unit_12.py:170–190,452–460`.
+
+**7. Facts and S1 dispositions — PASS.**
+
+Fresh totals are **17 MARK / 13 REWORD**, with exactly **92 marker instances**. Every marker resolves to frozen-source records; none relies only on coverage records.
+
+The cited text supports:
+
+- **1369:** aspect concerns how an event is viewed rather than locating its time — `grammatical-aspect-1384289498.txt:74,7`.
+- **1370:** imperfective as process, repeated or habitual event — lines **63,7**. The unsupported general-factual clause was removed.
+- **1380:** perfective as complete whole versus imperfective as process — lines **63,20**, supplemented by `verbal-aspect-4059032.txt:12`. The unsupported occurrence clause was removed.
+
+Evidence: `Unit12FactProvenanceTest.kt:57,120–155`; `unit12-fact-dispositions.json`; transformer citations at `catalog/apply_t16b_unit_12.py:268–275`.
+
+**8. CI citation fix and source admission — PASS.**
+
+`prov-t16b-u12-ga20` now contains the contiguous claim span from frozen line 20, excluding the later citation containing the PDF URL. Both hashes match that span, and frozen binding succeeds.
+
+`Units35SourceIntakeTest` adds the specific already-frozen source ID `src-enwiki-grammatical-aspect-1384289498`; its other admission/binding checks remain.
+
+Independent result:
+
+```text
+ADMISSION RUN=1 FAILURES=[]
+```
+
+Evidence: `catalog/apply_t16b_fix.py:24–44`; `Units35SourceIntakeTest.kt:62–66`.
+
+**9. Phrases, references, tasks and review PASS; learner wording FAIL.**
+
+Verified:
+
+- All **9 shown phrases** pass the phrase/stress/composed-sentence audit.
+- Automatic Unit 12 lint: **zero**; blocking coverage extends through Unit 12.
+- The three references have frozen support, correct Unit 12 visibility, meaningful search terms and resolving links.
+- Binder/tutor Russian uses taught frozen witnesses.
+- Fresh A2-28 result is exactly **`[8, 8, 7, 8, 3, 0]`**.
+
+Evidence: `Unit12FactProvenanceTest.kt:195`; `catalog/apply_t16b_unit_12.py:192–218`; `CumulativeReviewA228Test.kt:152–169`.
+
+Manual misses:
+
+| Owner.field | Missed narration |
+|---|---|
+| `u12-i-future-imp-2.feedback` | “future row”, “in that row”, “table number” |
+| `u12-i-future-imp-2.distractorRationales[1]` | “…requested second-person plural future row.” |
+| `u12-g-future-perf-0.feedback` | “…the perfective verb in this table…” |
+| `u12-i-dative-1.feedback` | “…the recorded dative singular form…” |
+| `u12-i-dative-2.feedback` | “…the recorded dative singular form…” and “The requested row changes case…” |
+| `u12-i-prep-plural-1.feedback` | “…the recorded prepositional plural form…” |
+| `u12-i-spelling-2.feedback` | “…requested by this question” and “The keyed counterexample…” |
+
+Evidence: curriculum JSON line 1, owners above.
+
+**Needed:** express the grammatical distinctions directly, removing table/record framing and assessment commentary; add lint regressions.
+
+**10. Pins, hashes and test strength — PASS.**
+
+Recomputed current values match:
+
+| Value | Recomputed result |
+|---|---|
+| Release source digest | `19a7a1da4886bff45232f516d5d83d450738838efc23583fd5b0fbb5c0ebc895` |
+| Validator SHA-256 | `6c3111c3009b8204fc15158617674db27c4d2d46395d0013173170fa88ff255a` |
+| Unit 3 review-package digest | `5d3236364f5e24d7e83be9205e35e809eb55de30edb97329c251c0dbdf7ffb5e` |
+
+All six source guards, changed unit-content digest expectations and context-record pins match. The regenerated **851-row audio manifest is byte-identical**.
+
+The assertion changes strengthen typed checks, replace obsolete learner-text expectations with the owner-directed replacements, and update measured counts/digests. I found no deleted, skipped or weakened requirement.
+
+Fresh validation:
+
+```text
+V2Validation(ok=true, errors=[])
+PHRASEFAIL_1_12=[]
+LEARNER_SIGNALS_1_12=[]
+```
+
+The targeted fact, phrase and lint suites passed **17 tests**, alongside the focused mutation/admission checks and Python boundary tests.
+
+The remaining failures are **items 3 and 9**: manual wording defects that the automatic lint does not yet detect.

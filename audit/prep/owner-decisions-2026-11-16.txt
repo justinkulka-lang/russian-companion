@@ -191,3 +191,12 @@ D28e. Block 2 counts as complete once D28c(1) is fixed for ref-u610-attribution.
 
 D29 (11/21, under D6). T16-n1 DONE a96569bd and T16b (Unit 12) DONE 62b4b084; CI 44853099403 passed; Block 2 is re-recorded as complete.
 D29a. In T16b, Code could not cite Вид (лингвистика) because its S1 revision falls outside the validator's ru-Wikipedia route. Approved rule change: every revision frozen in S1 (the s1-intake FREEZE.json entries) is admitted to its licence route (ru-Wikipedia, en-Wikipedia, Wiktionary, ReadyRussian), matched by exact source ID and revision. Admission comes only from that list: no wildcard, and no revision outside FREEZE.json. Add a test that every s1-intake FREEZE.json revision is admitted and that an unlisted revision of the same page is rejected. Do this as the first commit of T16c, separate from the unit work.
+
+D30 (11/21, under D6). The Codex T16-n1/T16b check failed only on manual lint misses (items 3 and 9). Each check round keeps finding new wording, so we stop fixing one round at a time.
+D30a. Codex runs one comprehensive read-only learner-text sweep over all rendered fields in Units 1-30, using the D6c, D8 and D28c categories plus three more:
+  (1) review and workflow status: "pending review", "qualified review", "reviewer", "approve", "signs an app note", "release stays blocked";
+  (2) table and record framing: "row", "table", "recorded form", "requested form/row", "keyed", "cell", "from the dictionary";
+  (3) question framing: "the question here is", "requested by this question".
+For each hit it gives a direct replacement. The output is a per-unit CSV (unit, owner.field, text, category, suggested rewrite), used as the fix list for each unit task.
+D30b. Code does T16-n2 as a separate commit after the D29a commit and before the Unit 13 content. It extends the lint patterns to cover those categories, with regressions; fixes every Units 1-12 hit from the Codex T16-n1/T16b check, plus any extra Units 1-12 hits in the D30a CSV if it is ready; keeps truthful workflow status in metadata and the status UI. Learners never see review or release status.
+D30c. Each later unit task (Units 13-30) clears its unit's D30a rows.
