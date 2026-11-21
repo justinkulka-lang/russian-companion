@@ -200,3 +200,8 @@ D30a. Codex runs one comprehensive read-only learner-text sweep over all rendere
 For each hit it gives a direct replacement. The output is a per-unit CSV (unit, owner.field, text, category, suggested rewrite), used as the fix list for each unit task.
 D30b. Code does T16-n2 as a separate commit after the D29a commit and before the Unit 13 content. It extends the lint patterns to cover those categories, with regressions; fixes every Units 1-12 hit from the Codex T16-n1/T16b check, plus any extra Units 1-12 hits in the D30a CSV if it is ready; keeps truthful workflow status in metadata and the status UI. Learners never see review or release status.
 D30c. Each later unit task (Units 13-30) clears its unit's D30a rows.
+
+D31 (11/21, under D6). Sweep results so far: Units 1-15 have 602 rows.
+D31a. Codex may push the sweep CSVs (audit/prep/learner-text-sweep-units-01-15.csv and -16-30.csv) to owner/prep-reports only. That branch holds reports only. Codex stays read-only on cursor/content-audit-corrections-964f.
+D31b. Reference review status (reference.reviewStatus) stays visible, because the app must be honest about content that hasn't had its final review. The UI maps each enum to one plain learner label, e.g. IMPLEMENTED_PENDING_FINAL_AUDIT -> "Not yet checked by a qualified reviewer." Raw enum values are never shown. The mapping lives in UI code, and the metadata stays unchanged. Teaching, feedback and reference text never narrate review or workflow status. This refines D30b's "learners never see review status": the one plain label is the only status a learner sees.
+D31c. T16-n2 applies the Units 1-12 rows of the sweep CSV along with the D31b label mapping. Units 13-30 rows go to their unit tasks.
