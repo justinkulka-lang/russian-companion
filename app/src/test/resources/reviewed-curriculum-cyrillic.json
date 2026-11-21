@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "6c3111c3009b8204fc15158617674db27c4d2d46395d0013173170fa88ff255a",
+      "sha256": "988a0e878acbc9f0c7ea579ff4bb8edccd52833793f4418a9d046492f8df07bd",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3456,6 +3456,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "S1 (approved rule change, owner decision 2026-11-19): WIKTIONARY_REVISIONS admits src-enwiktionary-nekogo-80719285 at oldid 80719285, frozen under catalog/sources/s1-intake, so Unit 24's dative and instrumental forms of nekogo can bind to frozen selection records. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T16c D29a",
+      "previousRecordedSha256": "6c3111c3009b8204fc15158617674db27c4d2d46395d0013173170fa88ff255a",
+      "sha256": "988a0e878acbc9f0c7ea579ff4bb8edccd52833793f4418a9d046492f8df07bd",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T16c (owner decision D29a, approved rule change): the ru-Wikipedia, Wiktionary and ReadyRussian licence routes also admit, and the new English Wikipedia route admits only, a revision listed in S1IntakeSources (the catalog/sources/s1-intake FREEZE.json entries), matched by exact source ID and revision; no wildcard. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

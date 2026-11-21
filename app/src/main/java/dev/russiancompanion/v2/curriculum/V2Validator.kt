@@ -5144,12 +5144,15 @@ internal object V2Validator {
             }
             if (record.sourceId.startsWith("src-ruwiki-")) {
                 val copyright = "\u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u044f:\u0410\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0435 \u043f\u0440\u0430\u0432\u0430 oldid ${BatchARemainingSources.RU_COPYRIGHT_OLDID}"
-                val revisionAllowed = if (record.sourceId in setOf("src-ruwiki-obosoblenie-144053197", "src-ruwiki-boltraffio-149826784")) {
-                    V2ContentChecks.admittedNative(pack, "obj-u29-punctuation", record)
-                } else {
-                    record.sourceRevision == BatchARemainingSources.RU_REVISION ||
-                        record.sourceRevision in BatchBSources.RU_REVISIONS
-                }
+                // T16c (owner decision D29a, approved rule change): an S1-frozen revision is admitted by exact source ID and
+                // revision (S1IntakeSources, the s1-intake FREEZE.json list).
+                val revisionAllowed = S1IntakeSources.admits(record.sourceId, record.sourceRevision, S1IntakeSources.Route.RU_WIKIPEDIA) ||
+                    if (record.sourceId in setOf("src-ruwiki-obosoblenie-144053197", "src-ruwiki-boltraffio-149826784")) {
+                        V2ContentChecks.admittedNative(pack, "obj-u29-punctuation", record)
+                    } else {
+                        record.sourceRevision == BatchARemainingSources.RU_REVISION ||
+                            record.sourceRevision in BatchBSources.RU_REVISIONS
+                    }
                 if (!revisionAllowed ||
                     !record.sourceUrl.contains("oldid=${record.sourceRevision}") ||
                     !record.attribution.contains(copyright) ||
@@ -5161,6 +5164,11 @@ internal object V2Validator {
                 ) {
                     errors += "Provenance ${record.itemId} Russian Wikipedia license route is missing"
                 }
+            }
+            // T16c (D29a): an English Wikipedia record is admitted only at an S1-frozen revision, by exact source ID and revision,
+            // under the Wikipedia licence route.
+            if (record.sourceId.startsWith("src-enwiki-") && !admittedEnglishWikipediaProvenance(record)) {
+                errors += "Provenance ${record.itemId} English Wikipedia license route is missing"
             }
             if (record.sourceId.startsWith("src-enwiktionary-") && !admittedWiktionaryProvenance(record)) {
                 errors += "Provenance ${record.itemId} Wiktionary license route is missing"
@@ -5796,8 +5804,20 @@ internal object V2Validator {
         return license == "Public domain" && sourceId == RemainingSources.VECHERA_SOURCE
     }
 
+    /** T16c (D29a): English Wikipedia at an S1-frozen revision only, under the Wikipedia:Copyrights licence route. */
+    private fun admittedEnglishWikipediaProvenance(record: V2ProvenanceRecord): Boolean {
+        if (!S1IntakeSources.admits(record.sourceId, record.sourceRevision, S1IntakeSources.Route.WIKIPEDIA)) return false
+        val url = record.sourceUrl
+        if (!url.contains("en.wikipedia.org") || !url.contains("oldid=${record.sourceRevision}")) return false
+        if (!record.attribution.contains("Wikipedia:Copyrights oldid 1369466282") || !record.attribution.contains("CC BY-SA 4.0")) return false
+        if (record.attribution.contains("Wiktionary:Copyrights") || record.attribution.contains("Wikibooks:Copyrights")) return false
+        if (record.audioAssetId != null) return false
+        return isShareAlikeLicense(record.licenseId)
+    }
+
     private fun admittedReadyRussianProvenance(record: V2ProvenanceRecord): Boolean {
-        val revision = RemainingSources.READY_REVISIONS[record.sourceId] ?: return false
+        val revision = RemainingSources.READY_REVISIONS[record.sourceId]
+            ?: S1IntakeSources.revision(record.sourceId, S1IntakeSources.Route.READY_RUSSIAN) ?: return false // T16c (D29a)
         if (record.sourceRevision != revision) return false
         if (!record.sourceUrl.contains("readyrussian.org")) return false
         if (!record.attribution.contains("ReadyRussian.org") || !record.attribution.contains(revision)) return false
@@ -5835,7 +5855,8 @@ internal object V2Validator {
         val revision = when (record.sourceId) {
             BatchARemainingSources.WIKTIONARY_SOURCE -> BatchARemainingSources.WIKTIONARY_REVISION
             BatchBSources.POLTORA_SOURCE -> BatchBSources.POLTORA_REVISION
-            else -> RemainingSources.WIKTIONARY_REVISIONS[record.sourceId] ?: return false
+            else -> RemainingSources.WIKTIONARY_REVISIONS[record.sourceId]
+                ?: S1IntakeSources.revision(record.sourceId, S1IntakeSources.Route.WIKTIONARY) ?: return false // T16c (D29a)
         }
         if (record.sourceRevision != revision) return false
         val url = record.sourceUrl
@@ -5851,7 +5872,8 @@ internal object V2Validator {
     private fun admittedWiktionarySource(sourceId: String): Boolean {
         return sourceId == BatchARemainingSources.WIKTIONARY_SOURCE ||
             sourceId == BatchBSources.POLTORA_SOURCE ||
-            sourceId in RemainingSources.WIKTIONARY_REVISIONS
+            sourceId in RemainingSources.WIKTIONARY_REVISIONS ||
+            S1IntakeSources.revision(sourceId, S1IntakeSources.Route.WIKTIONARY) != null // T16c (D29a)
     }
 
     private fun isExcludedSource(vararg parts: String): Boolean {
