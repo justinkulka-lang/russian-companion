@@ -512,10 +512,10 @@ class Aud44CorrectionTest {
     private companion object {
         val PRIOR_CONTENT_DIGESTS = mapOf(
             // T15g A4: prov-d7b-u16-029 re-cited to adjectives-4292379.txt:67 (was 17e7a641...).
-            16 to "16d20fdf3587db1128b4bb923c938074db69f4ba28976914067b40939a90e9c4",
-            18 to "3c4ae8dd52293871574a5968c224388e31eb8c838e61a63dc2271fdb3e79073a",
+            16 to "7db670f54ce630e32d8b7ebbf01ff573d4b962589593ed4268008fa98b075ac7",
+            18 to "a82a7ebfb08005efef182b596fcad6031aedd75909c109712f2ed06f5cce5370",
             // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
-            19 to "2b598d3eae9d945a6971cc67c0d6a234a882049517cdde75dbbfacf7ad98105f",
+            19 to "0006fdf52d572fb5c7c6ba9d85d94cb1badcb61d4922bc628eeb94b2042ad657",
         )
     }
 }

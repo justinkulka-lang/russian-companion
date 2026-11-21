@@ -46,15 +46,15 @@ class Units2125SourceIntakeTest {
     private val preservedContentDigests = mapOf(
         // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
         // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
-        3 to "f39c7b5fee5302433ae0fe158f12bcb3c4d04c928efa11c45db04645d5f7218a",
+        3 to "81f65bc5ddb8a339d4dc1e1cd7f60f3e0eace42777b3705eb99c109d89a228d0",
         // T15g A4: prov-d7b-u16-029 re-cited to adjectives-4292379.txt:67 (was 17e7a641...).
-        16 to "16d20fdf3587db1128b4bb923c938074db69f4ba28976914067b40939a90e9c4",
+        16 to "7db670f54ce630e32d8b7ebbf01ff573d4b962589593ed4268008fa98b075ac7",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 17 was 6b680bda...).
-        17 to "1a196e20f918ad53c13bed5b4f593763fecbb3a9c1d7047fb94d572be4e158e0",
-        18 to "3c4ae8dd52293871574a5968c224388e31eb8c838e61a63dc2271fdb3e79073a",
+        17 to "2b8138570602b6022e7230f7ef786d6f61dfaaa3f6ceba7e6603f90ebae425e3",
+        18 to "a82a7ebfb08005efef182b596fcad6031aedd75909c109712f2ed06f5cce5370",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
-        19 to "2b598d3eae9d945a6971cc67c0d6a234a882049517cdde75dbbfacf7ad98105f",
-        20 to "c7d467ab59e13dcf9646974a92013a5d0228bc01b92cc8873740ced770e71194",
+        19 to "0006fdf52d572fb5c7c6ba9d85d94cb1badcb61d4922bc628eeb94b2042ad657",
+        20 to "380eb1318f46f25b826b99255250660178a3095d0263970b3c075fe7770d33e3",
     )
 
     private val preservedMappingDigests = mapOf(

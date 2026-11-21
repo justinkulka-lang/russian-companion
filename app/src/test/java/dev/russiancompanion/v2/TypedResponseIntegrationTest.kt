@@ -114,7 +114,7 @@ class TypedResponseIntegrationTest {
             assertTrue(s.v2Attempts().isEmpty())
             compose.onNodeWithTag("v2-typed-${item.id}-submit").performScrollTo().performClick()
             assertFalse(s.v2Attempts().last().correct)
-            compose.onNodeWithTag("v2-item-feedback-${item.id}").assertTextContains("Not the reviewed answer.", substring = true)
+            compose.onNodeWithTag("v2-item-feedback-${item.id}").assertTextContains("Try again.", substring = true)
             input.performScrollTo().performTextReplacement(" Hi ")
             compose.onNodeWithTag("v2-typed-${item.id}-submit").performScrollTo().performClick()
             assertTrue(s.v2Attempts().last().correct)

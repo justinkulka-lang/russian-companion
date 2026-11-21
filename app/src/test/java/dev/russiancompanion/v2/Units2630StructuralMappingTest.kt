@@ -267,7 +267,7 @@ class Units2630StructuralMappingTest {
             assertTrue(rangedDecision.remaining.joinToString("\n"), rangedDecision.allowed)
             val rangedDecisionFull = advancementDecision(ranged, ranged.unit(number)!!, learner(number, book = true))
             assertFalse(rangedDecisionFull.allowed)
-            assertEquals(listOf("The cumulative-review rule cannot be verified"), rangedDecisionFull.remaining)
+            assertEquals(listOf("This review is unavailable. Return to the unit list." /* T16-n2 (D31c): was "The cumulative-review rule cannot be verified" */), rangedDecisionFull.remaining)
             assertFalse(emptyDecision.remaining.any { it.contains("unresolved authority variance") })
             assertFalse(attestedDecision.remaining.any { it.contains("unresolved authority variance") })
             assertFalse(rangedDecision.remaining.any { it.contains("unresolved authority variance") })
@@ -290,7 +290,7 @@ class Units2630StructuralMappingTest {
                 assertTrue("$number $readiness ${decision.remaining}", decision.allowed)
                 val decisionFull = advancementDecision(prepared, prepared.unit(number)!!, learner(number, book = false))
                 assertFalse(decisionFull.allowed)
-                assertEquals(listOf("The cumulative-review rule cannot be verified"), decisionFull.remaining)
+                assertEquals(listOf("This review is unavailable. Return to the unit list." /* T16-n2 (D31c): was "The cumulative-review rule cannot be verified" */), decisionFull.remaining)
                 assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
             }
         }

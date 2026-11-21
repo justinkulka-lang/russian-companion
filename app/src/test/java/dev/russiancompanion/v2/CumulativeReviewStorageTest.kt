@@ -275,12 +275,12 @@ class CumulativeReviewStorageTest {
                 advancement = it.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit3CumulativeReviewPolicy.id)) else it })
             assertFalse(cumulativeReviewDeclarationValid(flagOnly, 1))
             assertTrue(currentUnitRequirements(flagOnly, flagOnly.unit(1)!!, s.v2LearnerView()).remaining
-                .contains("The cumulative-review rule cannot be verified"))
+                .contains("This review is unavailable. Return to the unit list.")) // T16-n2 (D31c): was "The cumulative-review rule cannot be verified"
             assertTrue(V2Validator.validate(flagOnly).errors.contains("Unit 1 has no verified cumulative-review policy"))
             val emptyFlag = flagOnly.copy(units = flagOnly.units.map { if (it.number == 1) it.copy(
                 advancement = it.advancement!!.copy(cumulativeReviewPolicyId = null)) else it })
             assertTrue(currentUnitRequirements(emptyFlag, emptyFlag.unit(1)!!, s.v2LearnerView()).remaining
-                .contains("The cumulative-review rule cannot be verified"))
+                .contains("This review is unavailable. Return to the unit list.")) // T16-n2 (D31c): was "The cumulative-review rule cannot be verified"
             assertNull(s.openCumulativeReview(emptyFlag, 1, s.learnerMutationEpoch()))
             assertNull(s.openCumulativeReview(flagOnly, 1, s.learnerMutationEpoch()))
             assertEquals(before, s.governedLearnerFingerprint())

@@ -174,7 +174,7 @@ class CumulativeReviewGateTest {
             waitTag("v2-review-count")
             val a=s.cumulativeReviewHistory().first.single(); val first=p.item(a.slots[0].itemId)!!
             compose.onNodeWithTag("v2-review-option-0-${first.options.first { it != first.answer }}").performScrollTo().performClick()
-            waitTag("v2-review-feedback-0"); compose.onNodeWithTag("v2-review-feedback-0").assertTextEquals("Not the reviewed answer. ${first.feedback}")
+            waitTag("v2-review-feedback-0"); compose.onNodeWithTag("v2-review-feedback-0").assertTextEquals("Try again. ${first.feedback}")
             compose.onNodeWithTag("v2-review-remediate-0").performScrollTo().performClick()
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
             waitTag("v2-return-to-check"); compose.onNodeWithTag("v2-return-to-check").assertIsDisplayed().performClick()

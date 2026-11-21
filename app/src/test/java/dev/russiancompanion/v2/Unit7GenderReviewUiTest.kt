@@ -30,7 +30,7 @@ class Unit7GenderReviewUiTest {
             compose.setContent { V2CumulativeReviewScreen(pack, store.v2LearnerView(), 7, false, {}, {}, {}, { _, _, _ -> }, { requested = it }, {}, {}) }
             waitTag("v2-review-insufficient")
             compose.onNodeWithText(newTitle).assertExists()
-            compose.onNodeWithText("These finite recognitions do not demonstrate unseen reading", substring = true).performScrollTo().assertIsDisplayed()
+            compose.onNodeWithText("Practise the taught forms; practise unfamiliar reading", substring = true) // T16-n2 (D31c): was "These finite recognitions do not demonstrate unseen reading".performScrollTo().assertIsDisplayed()
             compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
             compose.onNodeWithTag("v2-review-repair").performScrollTo().assertTextEquals("Open earlier Unit 3 instruction and checks").performClick()
             assertEquals(3, requested)
@@ -77,7 +77,7 @@ class Unit7GenderReviewUiTest {
             val wrong = item.options.first { it != item.answer }
             compose.onNodeWithTag("v2-review-option-0-$wrong").performScrollTo().performClick()
             waitTag("v2-review-feedback-0")
-            compose.onNodeWithTag("v2-review-feedback-0").assertTextEquals("Not the reviewed answer. ${item.feedback}")
+            compose.onNodeWithTag("v2-review-feedback-0").assertTextEquals("Try again. ${item.feedback}")
             compose.onNodeWithTag("v2-review-remediate-0").performScrollTo().performClick()
             waitTag("v2-review-practice")
             val repair = pack.step("u3-st-rem-gender")!!.second.body

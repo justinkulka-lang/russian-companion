@@ -66,7 +66,7 @@ class Unit13CumulativeReviewTest {
             compose.onNode(hasText(noun.promptLetter!!) and !hasClickAction()).performScrollTo().assertIsDisplayed()
             val wrong = noun.options.first { it != noun.answer }
             compose.onNodeWithTag("v2-review-option-1-$wrong").performScrollTo().performClick()
-            waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Not the reviewed answer. ${noun.feedback}")
+            waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Try again. ${noun.feedback}")
             compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
             waitTag("v2-example-ex-u12-aspect-3"); compose.onNodeWithTag("v2-example-ex-u12-aspect-3").performScrollTo().assertIsDisplayed()
             compose.onNodeWithText("not a universal pair for the English verb speak", substring = true).performScrollTo().assertIsDisplayed()

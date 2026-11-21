@@ -31,7 +31,7 @@ class Unit7AgreementTeachingTest {
         assertTrue(s.steps[0].body.contains("но́вая becomes но́вую") && s.steps[0].body.contains("кни́га becomes кни́гу"))
         assertTrue(s.steps[1].body.contains("но́вое becomes но́вого") && s.steps[1].body.contains("окно́ becomes окна́"))
         assertTrue(rem.body.contains("Both words change in these supplied case pairs."))
-        assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u7-endings" && it.shippedText == rem.body && it.itemId == "prov-ca-t15g-u7-st-rem-endings-body" }) // T15g coverage of the new wording (was prov-ca-t15f-u7-st-rem-endings-body; before T15f prov-ca-u7-agreement-u7-st-rem-endings-complete-v1)
+        assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u7-endings" && it.shippedText == rem.body && it.itemId == "prov-ca-t16n2-u7-st-rem-endings-body" }) // T16-n2: coverage of the reworded remediation (was prov-ca-t15g-u7-st-rem-endings-body); T15g coverage of the new wording (was prov-ca-t15f-u7-st-rem-endings-body; before T15f prov-ca-u7-agreement-u7-st-rem-endings-complete-v1)
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
     @Test fun wrongNeuterNominativeChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer() = repairUi("u7-i-endings-1") // T15i (CC031): was wrongGenitiveChoice...; u7-i-endings-1 now asks for the neuter nominative

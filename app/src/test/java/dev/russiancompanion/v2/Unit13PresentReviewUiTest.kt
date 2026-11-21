@@ -88,7 +88,7 @@ class Unit13PresentReviewUiTest {
             val wrong = item.options.first { it != item.answer }
             compose.onNodeWithTag("v2-review-option-$slotIndex-$wrong").performScrollTo().performClick()
             waitTag("v2-review-feedback-$slotIndex")
-            compose.onNodeWithTag("v2-review-feedback-$slotIndex").assertTextEquals("Not the reviewed answer. ${item.feedback}")
+            compose.onNodeWithTag("v2-review-feedback-$slotIndex").assertTextEquals("Try again. ${item.feedback}")
             compose.onNodeWithTag("v2-review-remediate-$slotIndex").performScrollTo().performClick()
             waitTag("v2-review-practice")
             val repair = pack.step(repairId)!!.second.body

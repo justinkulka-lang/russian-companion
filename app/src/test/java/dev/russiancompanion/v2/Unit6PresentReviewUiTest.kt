@@ -27,7 +27,7 @@ class Unit6PresentReviewUiTest {
         LocalStore.openInMemory(context()).use { store ->
             compose.setContent { V2CumulativeReviewScreen(pack, store.v2LearnerView(), 6, false, {}, {}, {}, { _, _, _ -> }, {}, {}, {}) }
             compose.onNodeWithText(newTitle).assertExists()
-            compose.onNodeWithText("These finite recognitions do not demonstrate productive conjugation", substring = true).performScrollTo().assertIsDisplayed()
+            compose.onNodeWithText("Practise recognising the taught forms; practise conjugating verbs", substring = true) // T16-n2 (D31c): was "These finite recognitions do not demonstrate productive conjugation".performScrollTo().assertIsDisplayed()
             compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
         }
     }
@@ -53,7 +53,7 @@ class Unit6PresentReviewUiTest {
             val wrong = item.options.first { it != item.answer }
             compose.onNodeWithTag("v2-review-option-0-$wrong").performScrollTo().performClick()
             waitTag("v2-review-feedback-0")
-            compose.onNodeWithTag("v2-review-feedback-0").assertTextEquals("Not the reviewed answer. ${item.feedback}")
+            compose.onNodeWithTag("v2-review-feedback-0").assertTextEquals("Try again. ${item.feedback}")
             compose.onNodeWithTag("v2-review-remediate-0").performScrollTo().performClick()
             waitTag("v2-review-practice")
             val repair = pack.step("u4-st-rem-present")!!.second.body

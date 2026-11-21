@@ -329,11 +329,12 @@ class Units1115InstructionalValidityTest {
         assertFalse(falselyClaimed.contains(30))
         val reference = pack.references.first { it.id == "ref-book-topics" }
         assertEquals(
-            "Some units contain proposed lesson bodies that still require qualified review.",
+            "Open a unit to find its available lessons.", // T16-n2 (D31c): was "Some units contain proposed lesson bodies that still require qualified review."
             reference.summary,
         )
         assertEquals(
-            "A unit's Course status shows whether its lesson body is prepared. Units marked Not prepared or Not yet installed do not contain a usable lesson body. Open the matching lesson in the copy you own. This reference does not approve the packaged records.",
+            // T16-n2 (D31c): was "A unit's Course status shows whether its lesson body is prepared. Units marked Not prepared or Not yet installed do not contain a usable lesson body. Open the matching lesson in the copy you own. This reference does not approve the packaged records."
+            "Choose a unit with available lessons. If a unit is unavailable, open the matching lesson in your own book. Open the matching lesson in the copy you own. Use this reference to find the matching lesson.",
             reference.detail,
         )
         val text = "${reference.title}. ${reference.summary}. ${reference.detail}"

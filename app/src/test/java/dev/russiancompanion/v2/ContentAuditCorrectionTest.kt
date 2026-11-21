@@ -330,7 +330,7 @@ class ContentAuditCorrectionTest {
         assertTrue(text.contains("Not every plural ending in и comes from the seven-letter rule"))
         // T15c: inventory entry 847 (assessment commentary) is reworded to an instruction.
         assertFalse(text.contains("All these options are correctly spelled"))
-        assertTrue(text.contains("Choose the requested form."))
+        assertTrue(text.contains("Choose the form with the specified grammatical features.")) // T16-n2 (D31c): was "Choose the requested form."
         assertEquals(18, unit.advancement!!.minimumDistinctChecks)
     }
 

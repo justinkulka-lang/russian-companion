@@ -47,7 +47,7 @@ class Unit21ObjectTransferTest {
             compose.setContent { V2App(store=store,pack=p,onRetryOpen={}) }
             compose.onNodeWithTag("v2-continue").performClick()
             compose.onNodeWithTag("v2-option-${item.id}-He has wounded him (someone else).").performScrollTo().performClick()
-            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Not the reviewed answer. ${item.feedback}")
+            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Try again. ${item.feedback}")
             assertFalse(item.id in creditItemIds(p,store.v2LearnerView()))
         }
     }

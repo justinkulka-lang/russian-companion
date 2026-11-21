@@ -56,7 +56,7 @@ class Unit12FeedbackCorrectionTest {
             compose.setContent { V2App(store = store, pack = p, onRetryOpen = {}) }
             compose.onNodeWithTag("v2-continue").performClick()
             compose.onNodeWithTag("v2-option-${item.id}-хорошее письмо").performScrollTo().performClick()
-            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Not the reviewed answer. ${item.feedback}")
+            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Try again. ${item.feedback}")
             assertFalse(item.id in creditItemIds(p, store.v2LearnerView()))
         }
     }
@@ -71,7 +71,7 @@ class Unit12FeedbackCorrectionTest {
             compose.setContent { V2App(store = store, pack = p, onRetryOpen = {}) }
             compose.onNodeWithTag("v2-continue").performClick()
             compose.onNodeWithTag("v2-option-${item.id}-Я бу́ду говори́ть").performScrollTo().performClick()
-            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Not the reviewed answer. ${item.feedback}")
+            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Try again. ${item.feedback}")
             assertFalse(item.id in creditItemIds(p, store.v2LearnerView()))
         }
     }

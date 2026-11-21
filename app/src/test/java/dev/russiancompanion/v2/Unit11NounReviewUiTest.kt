@@ -30,7 +30,7 @@ class Unit11NounReviewUiTest {
             compose.setContent { V2CumulativeReviewScreen(pack, store.v2LearnerView(), 11, false, {}, {}, {}, { _, _, _ -> }, { requested = it }, {}, {}) }
             waitTag("v2-review-insufficient")
             compose.onNodeWithText(newTitle).assertExists()
-            compose.onNodeWithText("These finite recognitions do not demonstrate unseen reading", substring = true).performScrollTo().assertIsDisplayed()
+            compose.onNodeWithText("Practise the taught forms; practise unfamiliar reading", substring = true) // T16-n2 (D31c): was "These finite recognitions do not demonstrate unseen reading".performScrollTo().assertIsDisplayed()
             compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
             compose.onNodeWithTag("v2-review-repair").performScrollTo().assertTextEquals("Open earlier Unit 5 instruction and checks").performClick()
             assertEquals(5, requested)
@@ -83,7 +83,7 @@ class Unit11NounReviewUiTest {
             val wrong = item.options.first { it != item.answer }
             compose.onNodeWithTag("v2-review-option-$slotIndex-$wrong").performScrollTo().performClick()
             waitTag("v2-review-feedback-$slotIndex")
-            compose.onNodeWithTag("v2-review-feedback-$slotIndex").assertTextEquals("Not the reviewed answer. ${item.feedback}")
+            compose.onNodeWithTag("v2-review-feedback-$slotIndex").assertTextEquals("Try again. ${item.feedback}")
             compose.onNodeWithTag("v2-review-remediate-$slotIndex").performScrollTo().performClick()
             waitTag("v2-review-practice")
             val repair = pack.step(repairId)!!.second.body

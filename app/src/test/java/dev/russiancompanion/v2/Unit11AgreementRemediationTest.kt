@@ -26,7 +26,7 @@ class Unit11AgreementRemediationTest {
         assertEquals(listOf("ex-or-u11-past-aspect-2", "ex-or-u11-past-aspect-3", "ex-or-u11-past-aspect-4"), rem.exampleIds)
         assertEquals(listOf("прочита́л", "прочита́ла", "прочита́ло"), rem.exampleIds.map { p.example(it)!!.display })
         assertTrue(rem.body.contains("The pronoun I does not select one past-tense gender for every speaker."))
-        assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u11-past-aspect" && it.shippedText == rem.body && it.itemId == "prov-ca-t16-u11-st-rem-past-aspect-body" }) // T16: coverage of the new teaching wording (was prov-ca-u11-agreement-remediation-complete-v1)
+        assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u11-past-aspect" && it.shippedText == rem.body && it.itemId == "prov-ca-t16n2-u11-st-rem-past-aspect-body" }) // T16-n2: coverage of the reworded remediation (was prov-ca-t16-u11-st-rem-past-aspect-body); T16: coverage of the new teaching wording (was prov-ca-u11-agreement-remediation-complete-v1)
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
     @Test fun wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer() {

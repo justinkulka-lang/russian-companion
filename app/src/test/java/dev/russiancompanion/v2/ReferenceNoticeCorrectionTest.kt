@@ -9,7 +9,7 @@ class ReferenceNoticeCorrectionTest {
         val earlier=p.references.single { it.id=="ref-u2125-attribution" }
         val later=p.references.single { it.id=="ref-u2630-attribution" }
         assertFalse(earlier.detail.contains("Completion over a period is not prepared"))
-        assertTrue(earlier.detail.contains("Bounded practice for completion over a period is implemented and review-pending"))
+        assertTrue(earlier.detail.contains("Practice for completion over a period covers the bounded examples here")) // T16-n2 (D30): was "Bounded practice for completion over a period is implemented and review-pending" (workflow status left the notice)
         assertFalse(later.detail.contains("dictionary use are not prepared"))
         assertTrue(later.detail.contains("broad dictionary proficiency are not supplied"))
         assertTrue(later.detail.contains("Bounded postal practice, past-passive stress, and a two-entry dictionary task are implemented and review-pending"))

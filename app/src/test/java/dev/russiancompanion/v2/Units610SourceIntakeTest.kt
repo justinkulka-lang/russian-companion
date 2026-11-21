@@ -65,13 +65,13 @@ class Units610SourceIntakeTest {
         val pack = pack()
         // D7b: frozen selection records join Unit 3 (was 6bab7d2e...; T15f 9c2ab4f1...; T15e e6159274...).
         // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
-        assertEquals("f39c7b5fee5302433ae0fe158f12bcb3c4d04c928efa11c45db04645d5f7218a", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("81f65bc5ddb8a339d4dc1e1cd7f60f3e0eace42777b3705eb99c109d89a228d0", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
-        // T16b CI fix: follows the Units 1-30 curriculum commit e95b504c (was a1266aa0... at b5abd07b; 92f69ed5... at 35c6bc4c; d11cab3c... at 8b1ee268; df28cdd7... at d74e3d9f; 6c5a3bb3... at 1b0dd1cc; a81a842b... at cdfba75e; abe8771d... at 6db5f5b2; fd93b562... at c4c65b24; 8e2ea00e...; D7b 7a95a65d...).
-        assertEquals("5d3236364f5e24d7e83be9205e35e809eb55de30edb97329c251c0dbdf7ffb5e", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        // T16-n2: follows the Units 1-30 curriculum commit b1c94322 (was 5d323636... at e95b504c). T16b CI fix: follows the Units 1-30 curriculum commit e95b504c (was a1266aa0... at b5abd07b; 92f69ed5... at 35c6bc4c; d11cab3c... at 8b1ee268; df28cdd7... at d74e3d9f; 6c5a3bb3... at 1b0dd1cc; a81a842b... at cdfba75e; abe8771d... at 6db5f5b2; fd93b562... at c4c65b24; 8e2ea00e...; D7b 7a95a65d...).
+        assertEquals("513b9271a332d7b28ea52ba8eefbdd608f9d587869a1088682544c1b92f3c593", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(

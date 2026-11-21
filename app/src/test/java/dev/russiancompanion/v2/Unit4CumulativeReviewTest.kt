@@ -95,7 +95,7 @@ class Unit4CumulativeReviewTest {
             val gender = p.item(a.slots[1].itemId)!!
             compose.onNodeWithText(gender.promptLetter!!).performScrollTo().assertIsDisplayed()
             compose.onNodeWithTag("v2-review-option-1-feminine").performScrollTo().performClick()
-            waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Not the reviewed answer. ${gender.feedback}")
+            waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Try again. ${gender.feedback}")
             compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
             waitTag("v2-example-ex-u3-город"); compose.onNodeWithTag("v2-example-ex-u3-город").performScrollTo().assertIsDisplayed()
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
