@@ -1,0 +1,1765 @@
+{
+ "task": "T16c (Claude Code, 2026-11-21); dispositions from audit/prep/units-13-15-prep-at-4c402ef7.txt, Unit 13 section 3, and audit/prep/s1-claim-verification.csv",
+ "totals": {
+  "MARK": 37,
+  "REWORD": 28,
+  "REMOVE": 3
+ },
+ "entries": [
+  {
+   "entry": "U13-E01",
+   "csvLine": 1433,
+   "ownerId": "u13-g-past-aspect-0",
+   "field": "item feedback",
+   "baselineSentence": "Both are past forms.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-p4",
+    "prov-ex-or-u13-past-aspect-3",
+    "prov-t16c-u13-v-2dd8c1b2-past_m"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E02",
+   "csvLine": 1434,
+   "ownerId": "u13-g-past-aspect-0",
+   "field": "item feedback",
+   "baselineSentence": "English simple past wording alone does not determine Russian aspect; the question explicitly asks for the perfective form.",
+   "disposition": "MARK",
+   "currentSentence": "English simple past wording alone does not determine Russian aspect; identify the perfective form.",
+   "sourceRecordIds": [
+    "prov-t16c-u13-p4",
+    "prov-t16c-u13-p14",
+    "prov-t16c-u13-p15",
+    "prov-t16c-u13-p16",
+    "prov-t16c-u13-p17",
+    "prov-t16c-u13-b6",
+    "prov-t16c-u13-b12"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E03",
+   "csvLine": 1436,
+   "ownerId": "u13-g-past-aspect-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "Its process focus does not mean the activity could never have finished.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-p16",
+    "prov-t16c-u13-p17",
+    "prov-t16c-u13-b12"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E04",
+   "csvLine": 1439,
+   "ownerId": "u13-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "The first presents reading as activity or process; the second presents it as a completed whole.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-p4",
+    "prov-t16c-u13-b12"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E05",
+   "csvLine": 1440,
+   "ownerId": "u13-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.",
+   "disposition": "MARK",
+   "currentSentence": "These English labels describe the examples; they do not match every English past tense to one Russian aspect.",
+   "sourceRecordIds": [
+    "prov-t16c-u13-p4",
+    "prov-t16c-u13-p14",
+    "prov-t16c-u13-p15",
+    "prov-t16c-u13-p16",
+    "prov-t16c-u13-p17"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E06",
+   "csvLine": 1441,
+   "ownerId": "u13-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "Do not treat English past progressive and simple past as a fixed Russian aspect code.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-p4",
+    "prov-t16c-u13-p14",
+    "prov-t16c-u13-p15",
+    "prov-t16c-u13-p16",
+    "prov-t16c-u13-p17",
+    "prov-t16c-u13-b6",
+    "prov-t16c-u13-b12"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E07",
+   "csvLine": 1442,
+   "ownerId": "u13-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "The imperfective does not always mean the action was unfinished.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-p16",
+    "prov-t16c-u13-p17",
+    "prov-t16c-u13-b12"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E08",
+   "csvLine": 1443,
+   "ownerId": "u13-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "An activity may have ended and still be described imperfectively when the focus is its process or occurrence rather than its endpoint.",
+   "disposition": "REWORD",
+   "replacement": "The imperfective presents an event as a process, or as a repeated or habitual event.",
+   "replacementKind": "MARKED",
+   "s1Verdict": "PARTIAL",
+   "sourceRecordIds": [
+    "prov-t16c-u13-ga63"
+   ],
+   "reason": "S1 PARTIAL: reworded to what grammatical-aspect-1384289498.txt:63 states (process; repeated or habitual event); the ended-activity clause is not stated and is removed."
+  },
+  {
+   "entry": "U13-E09",
+   "csvLine": 1445,
+   "ownerId": "u13-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Dictionary-label commentary removed (report section 3)."
+  },
+  {
+   "entry": "U13-E10",
+   "csvLine": 1449,
+   "ownerId": "u13-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "This contrast changes gender agreement, not aspect.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u13-past-aspect-3",
+    "prov-ex-or-u13-past-aspect-4",
+    "prov-t16c-u13-v-17e671fa-aspect"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E11",
+   "csvLine": 1450,
+   "ownerId": "u13-st-rem-past-aspect",
+   "field": "remediation body",
+   "baselineSentence": "The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form.",
+   "disposition": "MARK",
+   "currentSentence": "The pronoun I does not determine past-tense gender for every speaker; match the past form to the speaker’s gender.",
+   "sourceRecordIds": [
+    "prov-t16c-u13-p62",
+    "prov-t16c-u13-p65"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E12",
+   "csvLine": 1453,
+   "ownerId": "u13-i-past-aspect-1",
+   "field": "item feedback",
+   "baselineSentence": "A completed activity can still be described with imperfective aspect when the focus is on the process; English simple past can also translate an imperfective verb.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-p14",
+    "prov-t16c-u13-p15",
+    "prov-t16c-u13-p16",
+    "prov-t16c-u13-p17",
+    "prov-t16c-u13-b12"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E13",
+   "csvLine": 1457,
+   "ownerId": "u13-i-past-aspect-2",
+   "field": "item feedback",
+   "baselineSentence": "Both belong to the same imperfective verb; this question changes gender agreement rather than selecting a different aspect.",
+   "disposition": "MARK",
+   "currentSentence": "Both forms belong to the same imperfective verb; changing gender agreement does not change aspect.",
+   "sourceRecordIds": [
+    "prov-ex-or-u13-past-aspect-3",
+    "prov-ex-or-u13-past-aspect-4",
+    "prov-t16c-u13-v-17e671fa-aspect"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E14",
+   "csvLine": 1459,
+   "ownerId": "u13-g-tense-keep-0",
+   "field": "item feedback",
+   "baselineSentence": "The same tense label fits this nationality report: we keep the tense the same.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E15",
+   "csvLine": 1461,
+   "ownerId": "u13-g-tense-keep-0",
+   "field": "item feedback",
+   "baselineSentence": "The other label describes changing the reported tense in the English comparison.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E16",
+   "csvLine": 1462,
+   "ownerId": "u13-g-tense-keep-0",
+   "field": "item feedback",
+   "baselineSentence": "This is the shown example, not a rule that every report must preserve every tense or word unchanged.",
+   "disposition": "MARK",
+   "s1Verdict": "SUPPORTED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-sot4",
+    "prov-t16c-u13-sot34"
+   ],
+   "reason": "S1 SUPPORTED: sequence-of-tenses-1363198135.txt:4 and :34."
+  },
+  {
+   "entry": "U13-E17",
+   "csvLine": 1463,
+   "ownerId": "u13-g-tense-keep-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "we usually change the tense is the label for the English backshift comparison, not the same tense classification of the shown Russian nationality report.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E18",
+   "csvLine": 1465,
+   "ownerId": "u13-st-rem-tense-keep",
+   "field": "remediation body",
+   "baselineSentence": "The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense.",
+   "disposition": "MARK",
+   "currentSentence": "Keeping the tense the same describes this Russian reporting comparison; it does not mean every verb in a report has the same tense.",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22",
+    "prov-t16c-u13-f30"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E19",
+   "csvLine": 1467,
+   "ownerId": "u13-st-rem-tense-keep",
+   "field": "remediation body",
+   "baselineSentence": "It expresses a future act of telling him in the evening.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f29"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E20",
+   "csvLine": 1468,
+   "ownerId": "u13-st-rem-tense-keep",
+   "field": "remediation body",
+   "baselineSentence": "In the source comparison, English can shift a present statement to a past form after a past reporting verb.",
+   "disposition": "MARK",
+   "currentSentence": "In this comparison, English can shift a present statement to a past form after a past reporting verb.",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E21",
+   "csvLine": 1469,
+   "ownerId": "u13-st-rem-tense-keep",
+   "field": "remediation body",
+   "baselineSentence": "The label we usually change the tense names that English backshift comparison.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E22",
+   "csvLine": 1470,
+   "ownerId": "u13-st-rem-tense-keep",
+   "field": "remediation body",
+   "baselineSentence": "Backshift is not mandatory in every English report.",
+   "disposition": "MARK",
+   "s1Verdict": "SUPPORTED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-sot21",
+    "prov-t16c-u13-sot22"
+   ],
+   "reason": "S1 SUPPORTED: sequence-of-tenses-1363198135.txt:21 and :22."
+  },
+  {
+   "entry": "U13-E23",
+   "csvLine": 1471,
+   "ownerId": "u13-st-rem-tense-keep",
+   "field": "remediation body",
+   "baselineSentence": "The contrasting Russian example does not require automatic English-style backshift of the embedded statement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E24",
+   "csvLine": 1473,
+   "ownerId": "u13-st-rem-tense-keep",
+   "field": "remediation body",
+   "baselineSentence": "It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking.",
+   "disposition": "REWORD",
+   "replacement": "Compare the supplied direct and reported evening examples.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E25",
+   "csvLine": 1476,
+   "ownerId": "u13-i-tense-keep-1",
+   "field": "item feedback",
+   "baselineSentence": "The reporting verb is past while the embedded verb remains future.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f30"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E26",
+   "csvLine": 1477,
+   "ownerId": "u13-i-tense-keep-1",
+   "field": "item feedback",
+   "baselineSentence": "The Moscow option instead gives a future time clause and a plan to speak Russian, without a past reporting frame.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f24",
+    "prov-t16c-u13-f31"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E27",
+   "csvLine": 1478,
+   "ownerId": "u13-i-tense-keep-1",
+   "field": "item feedback",
+   "baselineSentence": "Recognize the supplied examples; pronoun changes depend on who is speaking.",
+   "disposition": "REWORD",
+   "replacement": "Compare the supplied examples.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E28",
+   "csvLine": 1480,
+   "ownerId": "u13-i-tense-keep-2",
+   "field": "item feedback",
+   "baselineSentence": "we usually change the tense is the source label for changing the reported tense in its English backshift comparison.",
+   "disposition": "REWORD",
+   "replacement": "In English, the reported verb usually changes tense after a past reporting verb.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22",
+    "prov-t16c-u13-sot9"
+   ],
+   "reason": "u13-i-tense-keep-2 now chooses between the two Russian nationality reports of F:22 (report section 1); the English label sentence becomes the backshift statement it names (F:22, SOT:9)."
+  },
+  {
+   "entry": "U13-E29",
+   "csvLine": 1481,
+   "ownerId": "u13-i-tense-keep-2",
+   "field": "item feedback",
+   "baselineSentence": "we keep the tense the same labels the contrasting Russian example.",
+   "disposition": "REWORD",
+   "replacement": "In Russian, this report keeps the tense of the original statement.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22",
+    "prov-t16c-u13-sot39"
+   ],
+   "reason": "Redesigned check (report section 1): the label sentence becomes the Russian statement it names (F:22, SOT:39)."
+  },
+  {
+   "entry": "U13-E30",
+   "csvLine": 1482,
+   "ownerId": "u13-i-tense-keep-2",
+   "field": "item feedback",
+   "baselineSentence": "English backshift can follow a past reporting verb, but is not mandatory in every report; the question classifies the supplied labels rather than imposing an always-change rule.",
+   "disposition": "MARK",
+   "currentSentence": "English backshift can follow a past reporting verb, but is not mandatory in every report.",
+   "s1Verdict": "SUPPORTED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-sot9",
+    "prov-t16c-u13-sot21"
+   ],
+   "reason": "S1 SUPPORTED: sequence-of-tenses-1363198135.txt:9 and :21. The redesigned check (report section 1) keeps the supported clause; the clause about what the question classifies describes the item and is removed."
+  },
+  {
+   "entry": "U13-E31",
+   "csvLine": 1483,
+   "ownerId": "u13-i-tense-keep-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "we keep the tense the same describes retention, not changing the reported tense in the English comparison requested here.",
+   "disposition": "REWORD",
+   "replacement": "Он сказа́л, что он был англича́нином adds a past copula, so it does not keep the same tense as the original statement.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22",
+    "prov-ex-u13-tense-keep-0-ru"
+   ],
+   "reason": "Redesigned check (report section 1): the rationale names the rejected Russian alternative (F:22)."
+  },
+  {
+   "entry": "U13-E32",
+   "csvLine": 1486,
+   "ownerId": "u13-g-infinitive-0",
+   "field": "item feedback",
+   "baselineSentence": "The pairing here does not mean every use of speak or talk can be replaced by the same perfective verb.",
+   "disposition": "REWORD",
+   "replacement": "Use the saying/telling pair shown here.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E33",
+   "csvLine": 1489,
+   "ownerId": "u13-st-rem-infinitive",
+   "field": "remediation body",
+   "baselineSentence": "The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak.",
+   "disposition": "REWORD",
+   "replacement": "Use the saying/telling pair shown here.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E34",
+   "csvLine": 1490,
+   "ownerId": "u13-st-rem-infinitive",
+   "field": "remediation body",
+   "baselineSentence": "Infinitives by themselves do not specify tense.",
+   "disposition": "REWORD",
+   "replacement": "Learn the supplied infinitives.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E35",
+   "csvLine": 1491,
+   "ownerId": "u13-st-rem-infinitive",
+   "field": "remediation body",
+   "baselineSentence": "A request for a perfective or imperfective partner asks for the named aspect within the supplied vocabulary pair.",
+   "disposition": "REWORD",
+   "replacement": "Keep both the aspect and the meaning of the pair in view.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E36",
+   "csvLine": 1492,
+   "ownerId": "u13-st-rem-infinitive",
+   "field": "remediation body",
+   "baselineSentence": "A verb from the other pair is not a valid answer merely because it has the requested aspect.",
+   "disposition": "REWORD",
+   "replacement": "Learn the two verb pairs, then practise choosing aspect in sentence contexts and producing verbs separately.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E37",
+   "csvLine": 1496,
+   "ownerId": "u13-st-rem-infinitive",
+   "field": "remediation body",
+   "baselineSentence": "Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.",
+   "disposition": "MARK",
+   "currentSentence": "Learn the two taught pairs rather than assuming that any prefix gives the corresponding perfective of any verb.",
+   "sourceRecordIds": [
+    "prov-t16c-u13-b25",
+    "prov-t16c-u13-b26",
+    "prov-t16c-u13-b27",
+    "prov-t16c-u13-b28",
+    "prov-t16c-u13-b29"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E38",
+   "csvLine": 1499,
+   "ownerId": "u13-i-infinitive-1",
+   "field": "item feedback",
+   "baselineSentence": "Learn this recorded pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+   "disposition": "MARK",
+   "currentSentence": "Learn this pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+   "sourceRecordIds": [
+    "prov-t16c-u13-b25",
+    "prov-t16c-u13-b26",
+    "prov-t16c-u13-b27",
+    "prov-t16c-u13-b28",
+    "prov-t16c-u13-b29"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E39",
+   "csvLine": 1503,
+   "ownerId": "u13-i-infinitive-2",
+   "field": "item feedback",
+   "baselineSentence": "The question asks for the imperfective member of this recorded pairing, not any verb of another meaning.",
+   "disposition": "REWORD",
+   "replacement": "Identify the imperfective member of the verb pair while keeping the meaning the same.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E40",
+   "csvLine": 1506,
+   "ownerId": "u13-g-reported-0",
+   "field": "item feedback",
+   "baselineSentence": "The reporting verb is past and the nationality statement has no past copula.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E41",
+   "csvLine": 1508,
+   "ownerId": "u13-g-reported-0",
+   "field": "item feedback",
+   "baselineSentence": "Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
+   "disposition": "REWORD",
+   "replacement": "English backshift after a past reporting verb is optional; Russian indirect speech generally keeps the tense of the original statement.",
+   "replacementKind": "MARKED",
+   "s1Verdict": "PARTIAL",
+   "sourceRecordIds": [
+    "prov-t16c-u13-sot21",
+    "prov-t16c-u13-sot39"
+   ],
+   "reason": "S1 PARTIAL: reworded to what sequence-of-tenses-1363198135.txt:21 and :39 state (English backshift optional; Russian indirect speech generally keeps the natural sequence)."
+  },
+  {
+   "entry": "U13-E42",
+   "csvLine": 1509,
+   "ownerId": "u13-g-reported-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "Past reporting verb with past nationality statement.",
+   "disposition": "REWORD",
+   "replacement": "A past nationality statement does not describe this report, whose nationality statement has no past copula.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "The complete rejecting explanation is one marked sentence; the wrong alternative is not marked as a positive assertion (report section 3)."
+  },
+  {
+   "entry": "U13-E43",
+   "csvLine": 1510,
+   "ownerId": "u13-g-reported-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "This does not describe the finite forms in the supplied target context.",
+   "disposition": "REWORD",
+   "replacement": "A past nationality statement does not describe this report, whose nationality statement has no past copula.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "The complete rejecting explanation is one marked sentence (report section 3)."
+  },
+  {
+   "entry": "U13-E44",
+   "csvLine": 1511,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "A past reporting frame can contain a statement whose tense is interpreted from the reported speaker’s perspective.",
+   "disposition": "MARK",
+   "s1Verdict": "SUPPORTED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-sot17",
+    "prov-t16c-u13-sot39"
+   ],
+   "reason": "S1 SUPPORTED: sequence-of-tenses-1363198135.txt:17 and :39."
+  },
+  {
+   "entry": "U13-E45",
+   "csvLine": 1513,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "The supplied original is “I am English”.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E46",
+   "csvLine": 1514,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "Past reporting verb with present nationality statement.",
+   "disposition": "REWORD",
+   "replacement": "It has a past reporting verb with a present nationality statement.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "The description becomes a full sentence (F:22)."
+  },
+  {
+   "entry": "U13-E47",
+   "csvLine": 1515,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "is the matching description.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "The fragment \"is the matching description\" removed (report section 3); the description is now a sentence (1514)."
+  },
+  {
+   "entry": "U13-E48",
+   "csvLine": 1516,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "The source’s alternative with a past copula changes the stated reading.",
+   "disposition": "MARK",
+   "currentSentence": "The alternative with a past copula changes the stated reading.",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f22"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E49",
+   "csvLine": 1517,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "That alternative can be grammatical in a different context; it is not this supplied present-nationality report.",
+   "disposition": "REMOVE",
+   "s1Verdict": "NOT_SUPPORTED",
+   "sourceRecordIds": [],
+   "reason": "S1 NOT_SUPPORTED: no frozen text supports the past-copula alternative being grammatical elsewhere; removed."
+  },
+  {
+   "entry": "U13-E50",
+   "csvLine": 1518,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "This nationality context was also taught earlier, so it is not unseen evidence.",
+   "disposition": "REWORD",
+   "replacement": "Review the nationality example you learned earlier.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E51",
+   "csvLine": 1521,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "Past reporting verb with a future embedded action.",
+   "disposition": "REWORD",
+   "replacement": "It has a past reporting verb with a future embedded action.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f30"
+   ],
+   "reason": "The description becomes a full sentence (F:30)."
+  },
+  {
+   "entry": "U13-E52",
+   "csvLine": 1522,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "describes its two finite verbs: said is past, and the embedded telling action retains future form within reported content.",
+   "disposition": "REWORD",
+   "replacement": "The reporting verb said is past, and the embedded telling action keeps its future form.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f30"
+   ],
+   "reason": "The fragment joins its sentence (F:30)."
+  },
+  {
+   "entry": "U13-E53",
+   "csvLine": 1523,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "This does not imply the action must still be future compared with the present moment.",
+   "disposition": "REWORD",
+   "replacement": "Russian indirect speech generally keeps the tense of the original statement.",
+   "replacementKind": "MARKED",
+   "s1Verdict": "PARTIAL",
+   "sourceRecordIds": [
+    "prov-t16c-u13-sot39",
+    "prov-t16c-u13-sot17"
+   ],
+   "reason": "S1 PARTIAL: reworded to what sequence-of-tenses-1363198135.txt:39 and :17 state."
+  },
+  {
+   "entry": "U13-E54",
+   "csvLine": 1524,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.",
+   "disposition": "REWORD",
+   "replacement": "Use the supplied examples.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E55",
+   "csvLine": 1526,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "It has no past reporting frame.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f31"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E56",
+   "csvLine": 1527,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "Existing independent choices distinguish this supplied Moscow plan and the direct evening statement.",
+   "disposition": "REWORD",
+   "replacement": "Distinguish the Moscow plan from the direct evening statement.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E57",
+   "csvLine": 1528,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged.",
+   "disposition": "MARK",
+   "currentSentence": "English backshift is not compulsory in every report; preserving these readings is not a universal rule that every tense or word stays unchanged.",
+   "s1Verdict": "SUPPORTED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-sot21",
+    "prov-t16c-u13-sot4",
+    "prov-t16c-u13-sot34"
+   ],
+   "reason": "S1 SUPPORTED: sequence-of-tenses-1363198135.txt:21, :4 and :34 (sweep wording)."
+  },
+  {
+   "entry": "U13-E58",
+   "csvLine": 1529,
+   "ownerId": "u13-st-rem-reported",
+   "field": "remediation body",
+   "baselineSentence": "This small set supports recognition of supplied contexts, not unrestricted reported-speech production.",
+   "disposition": "REWORD",
+   "replacement": "Study these examples in context; practise creating reports separately.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3; D31c sweep wording where the sweep gave one)."
+  },
+  {
+   "entry": "U13-E59",
+   "csvLine": 1531,
+   "ownerId": "u13-i-reported-1",
+   "field": "item feedback",
+   "baselineSentence": "It has a first-person future verb without a past reporting frame.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f29"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E60",
+   "csvLine": 1532,
+   "ownerId": "u13-i-reported-1",
+   "field": "item feedback",
+   "baselineSentence": "The shown reported example instead says that she said she would tell him.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f30"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E61",
+   "csvLine": 1533,
+   "ownerId": "u13-i-reported-1",
+   "field": "item feedback",
+   "baselineSentence": "The Moscow option describes a different future plan, not this direct evening statement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f31"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E62",
+   "csvLine": 1536,
+   "ownerId": "u13-i-reported-2",
+   "field": "item feedback",
+   "baselineSentence": "Both clauses refer to the future, including the clause meaning when.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f24",
+    "prov-t16c-u13-f31"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E63",
+   "csvLine": 1538,
+   "ownerId": "u13-i-reported-2",
+   "field": "item feedback",
+   "baselineSentence": "Neither option is itself a past reporting frame; identify the Moscow plan requested here.",
+   "disposition": "REWORD",
+   "replacement": "Only the evening report has a past reporting frame.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f30",
+    "prov-t16c-u13-f31"
+   ],
+   "reason": "u13-i-reported-2 takes the evening report as its foil (report section 1); the sentence states the contrast (F:30, :31)."
+  },
+  {
+   "entry": "U13-E64",
+   "csvLine": 1541,
+   "ownerId": "u13-i-report-frame-time",
+   "field": "item feedback",
+   "baselineSentence": "The reporting verb said is past; the embedded verb about telling him retains future form.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f30"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U13-E65",
+   "csvLine": 1542,
+   "ownerId": "u13-i-report-frame-time",
+   "field": "item feedback",
+   "baselineSentence": "Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed.",
+   "disposition": "REWORD",
+   "replacement": "In the natural sequence of tenses, the embedded verb's tense follows the sense of its own clause.",
+   "replacementKind": "MARKED",
+   "s1Verdict": "PARTIAL",
+   "sourceRecordIds": [
+    "prov-t16c-u13-sot17",
+    "prov-t16c-u13-sot39"
+   ],
+   "reason": "S1 PARTIAL: reworded to what sequence-of-tenses-1363198135.txt:17 and :39 state (the natural sequence); the completion clause is removed."
+  },
+  {
+   "entry": "U13-E66",
+   "csvLine": 1543,
+   "ownerId": "u13-i-report-frame-time",
+   "field": "item feedback",
+   "baselineSentence": "Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
+   "disposition": "REWORD",
+   "replacement": "English backshift after a past reporting verb is optional; Russian indirect speech generally keeps the tense of the original statement.",
+   "replacementKind": "MARKED",
+   "s1Verdict": "PARTIAL",
+   "sourceRecordIds": [
+    "prov-t16c-u13-sot21",
+    "prov-t16c-u13-sot39"
+   ],
+   "reason": "S1 PARTIAL: reworded to what sequence-of-tenses-1363198135.txt:21 and :39 state."
+  },
+  {
+   "entry": "U13-E67",
+   "csvLine": 1544,
+   "ownerId": "u13-i-report-frame-time",
+   "field": "item distractor rationale",
+   "baselineSentence": "Future reporting verb with a past embedded action.",
+   "disposition": "REWORD",
+   "replacement": "A future reporting verb with a past embedded action does not describe this report, whose reporting verb is past and whose embedded verb is future.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f30"
+   ],
+   "reason": "The complete rejecting explanation is one marked sentence (report section 3)."
+  },
+  {
+   "entry": "U13-E68",
+   "csvLine": 1545,
+   "ownerId": "u13-i-report-frame-time",
+   "field": "item distractor rationale",
+   "baselineSentence": "This does not describe the finite forms in the supplied target context.",
+   "disposition": "REWORD",
+   "replacement": "A future reporting verb with a past embedded action does not describe this report, whose reporting verb is past and whose embedded verb is future.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16c-u13-f30"
+   ],
+   "reason": "The complete rejecting explanation is one marked sentence (report section 3)."
+  }
+ ],
+ "markerReviews": [
+  {
+   "ownerId": "u13-g-past-aspect-0",
+   "sentence": "Both are past forms.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 4,
+     "quote": "Forming the Russian past tense is relatively straightforward, but first we have to decide which aspect of the verb we wa"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 62,
+     "quote": "читать\tчита'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 353,
+     "quote": "прочитать\tпрочита'ть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-g-past-aspect-0",
+   "sentence": "English simple past wording alone does not determine Russian aspect; identify the perfective form.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 4,
+     "quote": "Forming the Russian past tense is relatively straightforward, but first we have to decide which aspect of the verb we wa"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 14,
+     "quote": "* She wrote a letter to me every day - '''Она мне каждый день писала письмо''' - ''indefinitely repeated''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 15,
+     "quote": "* She wrote me interesting letters - '''Она писала мне интересные письма''' - ''no mention of time, but repetition is im"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 16,
+     "quote": "* She wrote for a long time - '''Она долго писала''' - ''completed action, but with a time duration, so imperfective. 'F"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 17,
+     "quote": "* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. "
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 6,
+     "quote": "All verbs in Russian have an aspect. Some verbs exist in aspectual pairs, but certainly not most of them. In the case of"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 12,
+     "quote": "Note that the verbs here describe a process.  It is also possible to consider this as a complete action, but as written "
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-g-past-aspect-0",
+   "sentence": "Its process focus does not mean the activity could never have finished.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 16,
+     "quote": "* She wrote for a long time - '''Она долго писала''' - ''completed action, but with a time duration, so imperfective. 'F"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 17,
+     "quote": "* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. "
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 12,
+     "quote": "Note that the verbs here describe a process.  It is also possible to consider this as a complete action, but as written "
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-past-aspect-1",
+   "sentence": "A completed activity can still be described with imperfective aspect when the focus is on the process; English simple past can also translate an imperfective verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 14,
+     "quote": "* She wrote a letter to me every day - '''Она мне каждый день писала письмо''' - ''indefinitely repeated''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 15,
+     "quote": "* She wrote me interesting letters - '''Она писала мне интересные письма''' - ''no mention of time, but repetition is im"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 16,
+     "quote": "* She wrote for a long time - '''Она долго писала''' - ''completed action, but with a time duration, so imperfective. 'F"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 17,
+     "quote": "* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. "
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 12,
+     "quote": "Note that the verbs here describe a process.  It is also possible to consider this as a complete action, but as written "
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-past-aspect-2",
+   "sentence": "Both forms belong to the same imperfective verb; changing gender agreement does not change aspect.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 62,
+     "quote": "читать\tчита'ть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-g-tense-keep-0",
+   "sentence": "The same tense label fits this nationality report: we keep the tense the same.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-g-tense-keep-0",
+   "sentence": "The other label describes changing the reported tense in the English comparison.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-g-tense-keep-0",
+   "sentence": "This is the shown example, not a rule that every report must preserve every tense or word unchanged.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 4,
+     "quote": "A hypothetical context in which rules of sequence of tenses apply is that of [[indirect speech]]. If, at some past time,"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 34,
+     "quote": "Similar problems arise from the other changes that typically occur in indirect speech, such as changes of pronoun (depen"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-g-tense-keep-0",
+   "sentence": "we usually change the tense is the label for the English backshift comparison, not the same tense classification of the shown Russian nationality report.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-tense-keep-1",
+   "sentence": "The reporting verb is past while the embedded verb remains future.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 30,
+     "quote": ":She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfectiv"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-tense-keep-1",
+   "sentence": "The Moscow option instead gives a future time clause and a plan to speak Russian, without a past reporting frame.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 24,
+     "quote": "Another nuance between English and Russian is using prepositions and time. In English, after 'if', 'until', 'while', 'wh"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 31,
+     "quote": ":When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-tense-keep-2",
+   "sentence": "In English, the reported verb usually changes tense after a past reporting verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 9,
+     "quote": "In [[English grammar|English]], an ''attracted sequence'' of tenses (backshifting) is often used in [[indirect speech]] "
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-tense-keep-2",
+   "sentence": "In Russian, this report keeps the tense of the original statement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 39,
+     "quote": "Indirect speech in Russian and other [[Slavic languages]] generally uses the natural sequence of tenses (there is no bac"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-tense-keep-2",
+   "sentence": "English backshift can follow a past reporting verb, but is not mandatory in every report.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 9,
+     "quote": "In [[English grammar|English]], an ''attracted sequence'' of tenses (backshifting) is often used in [[indirect speech]] "
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 21,
+     "quote": "However it is also possible to use the natural sequence even if the main verb is past or conditional:"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-infinitive-1",
+   "sentence": "Learn this pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 28,
+     "quote": ": '''договариваться''' (impf.) and '''договориться''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 29,
+     "quote": "In other words, the easiest way to remember aspectual pairs is to learn the imperfective and learn the 'perfective prefi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-g-reported-0",
+   "sentence": "The reporting verb is past and the nationality statement has no past copula.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-g-reported-0",
+   "sentence": "English backshift after a past reporting verb is optional; Russian indirect speech generally keeps the tense of the original statement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 21,
+     "quote": "However it is also possible to use the natural sequence even if the main verb is past or conditional:"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 39,
+     "quote": "Indirect speech in Russian and other [[Slavic languages]] generally uses the natural sequence of tenses (there is no bac"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-g-reported-0",
+   "sentence": "A past nationality statement does not describe this report, whose nationality statement has no past copula.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-reported-1",
+   "sentence": "It has a first-person future verb without a past reporting frame.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 29,
+     "quote": ":I will tell him in the evening - '''Я скажу ему ве́чером'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-reported-1",
+   "sentence": "The shown reported example instead says that she said she would tell him.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 30,
+     "quote": ":She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfectiv"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-reported-1",
+   "sentence": "The Moscow option describes a different future plan, not this direct evening statement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 31,
+     "quote": ":When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-reported-2",
+   "sentence": "Both clauses refer to the future, including the clause meaning when.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 24,
+     "quote": "Another nuance between English and Russian is using prepositions and time. In English, after 'if', 'until', 'while', 'wh"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 31,
+     "quote": ":When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-reported-2",
+   "sentence": "Only the evening report has a past reporting frame.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 30,
+     "quote": ":She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfectiv"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 31,
+     "quote": ":When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-report-frame-time",
+   "sentence": "The reporting verb said is past; the embedded verb about telling him retains future form.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 30,
+     "quote": ":She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfectiv"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-report-frame-time",
+   "sentence": "In the natural sequence of tenses, the embedded verb's tense follows the sense of its own clause.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 17,
+     "quote": "In some cases, though, a ''natural sequence'' of tenses is more appropriate. Here the tense of a verb in a [[subordinate"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 39,
+     "quote": "Indirect speech in Russian and other [[Slavic languages]] generally uses the natural sequence of tenses (there is no bac"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-report-frame-time",
+   "sentence": "English backshift after a past reporting verb is optional; Russian indirect speech generally keeps the tense of the original statement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 21,
+     "quote": "However it is also possible to use the natural sequence even if the main verb is past or conditional:"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 39,
+     "quote": "Indirect speech in Russian and other [[Slavic languages]] generally uses the natural sequence of tenses (there is no bac"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-i-report-frame-time",
+   "sentence": "A future reporting verb with a past embedded action does not describe this report, whose reporting verb is past and whose embedded verb is future.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 30,
+     "quote": ":She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfectiv"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-past-aspect",
+   "sentence": "The first presents reading as activity or process; the second presents it as a completed whole.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 4,
+     "quote": "Forming the Russian past tense is relatively straightforward, but first we have to decide which aspect of the verb we wa"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 12,
+     "quote": "Note that the verbs here describe a process.  It is also possible to consider this as a complete action, but as written "
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-past-aspect",
+   "sentence": "These English labels describe the examples; they do not match every English past tense to one Russian aspect.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 4,
+     "quote": "Forming the Russian past tense is relatively straightforward, but first we have to decide which aspect of the verb we wa"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 14,
+     "quote": "* She wrote a letter to me every day - '''Она мне каждый день писала письмо''' - ''indefinitely repeated''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 15,
+     "quote": "* She wrote me interesting letters - '''Она писала мне интересные письма''' - ''no mention of time, but repetition is im"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 16,
+     "quote": "* She wrote for a long time - '''Она долго писала''' - ''completed action, but with a time duration, so imperfective. 'F"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 17,
+     "quote": "* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. "
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-past-aspect",
+   "sentence": "Do not treat English past progressive and simple past as a fixed Russian aspect code.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 4,
+     "quote": "Forming the Russian past tense is relatively straightforward, but first we have to decide which aspect of the verb we wa"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 14,
+     "quote": "* She wrote a letter to me every day - '''Она мне каждый день писала письмо''' - ''indefinitely repeated''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 15,
+     "quote": "* She wrote me interesting letters - '''Она писала мне интересные письма''' - ''no mention of time, but repetition is im"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 16,
+     "quote": "* She wrote for a long time - '''Она долго писала''' - ''completed action, but with a time duration, so imperfective. 'F"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 17,
+     "quote": "* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. "
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 6,
+     "quote": "All verbs in Russian have an aspect. Some verbs exist in aspectual pairs, but certainly not most of them. In the case of"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 12,
+     "quote": "Note that the verbs here describe a process.  It is also possible to consider this as a complete action, but as written "
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-past-aspect",
+   "sentence": "The imperfective does not always mean the action was unfinished.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 16,
+     "quote": "* She wrote for a long time - '''Она долго писала''' - ''completed action, but with a time duration, so imperfective. 'F"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 17,
+     "quote": "* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. "
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 12,
+     "quote": "Note that the verbs here describe a process.  It is also possible to consider this as a complete action, but as written "
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-past-aspect",
+   "sentence": "The imperfective presents an event as a process, or as a repeated or habitual event.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/grammatical-aspect-1384289498.txt",
+     "line": 63,
+     "quote": "Essentially, the perfective aspect looks at an event as a complete action, while the imperfective aspect views an event "
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-past-aspect",
+   "sentence": "This contrast changes gender agreement, not aspect.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 62,
+     "quote": "читать\tчита'ть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-past-aspect",
+   "sentence": "The pronoun I does not determine past-tense gender for every speaker; match the past form to the speaker’s gender.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 62,
+     "quote": ":I was writing a letter - '''Я письмо писал(а)'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 65,
+     "quote": "Although verbs change by person and ignore gender in the [[Russian/Grammar/Verbs|present]] and [[Russian/Grammar/Future "
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-tense-keep",
+   "sentence": "Keeping the tense the same describes this Russian reporting comparison; it does not mean every verb in a report has the same tense.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 30,
+     "quote": ":She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfectiv"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-tense-keep",
+   "sentence": "It expresses a future act of telling him in the evening.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 29,
+     "quote": ":I will tell him in the evening - '''Я скажу ему ве́чером'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-tense-keep",
+   "sentence": "In this comparison, English can shift a present statement to a past form after a past reporting verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-tense-keep",
+   "sentence": "The label we usually change the tense names that English backshift comparison.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-tense-keep",
+   "sentence": "Backshift is not mandatory in every English report.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 21,
+     "quote": "However it is also possible to use the natural sequence even if the main verb is past or conditional:"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 22,
+     "quote": "::Batman '''said''' that he '''needs''' a special key for the Batmobile."
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-tense-keep",
+   "sentence": "The contrasting Russian example does not require automatic English-style backshift of the embedded statement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-infinitive",
+   "sentence": "Each Russian verb is either perfective or imperfective, apart from a small number of verbs that are both.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/ruwiki/vid-lingvistika-153277825.txt",
+     "line": 9,
+     "quote": "В русском языке, как и во многих других [[славянские языки|славянских]], вид является грамматической категорией: это зна"
+    },
+    {
+     "file": "catalog/sources/s1-intake/ruwiki/vid-lingvistika-153277825.txt",
+     "line": 9,
+     "quote": "(за исключением небольшого числа ''двувидовых'' глаголов вроде «жениться», «обжаловать»)."
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 6,
+     "quote": "All verbs in Russian have an aspect. Some verbs exist in aspectual pairs, but certainly not most of them. In the case of"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-infinitive",
+   "sentence": "Learn the two taught pairs rather than assuming that any prefix gives the corresponding perfective of any verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 28,
+     "quote": ": '''договариваться''' (impf.) and '''договориться''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 29,
+     "quote": "In other words, the easiest way to remember aspectual pairs is to learn the imperfective and learn the 'perfective prefi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-reported",
+   "sentence": "A past reporting frame can contain a statement whose tense is interpreted from the reported speaker’s perspective.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 17,
+     "quote": "In some cases, though, a ''natural sequence'' of tenses is more appropriate. Here the tense of a verb in a [[subordinate"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 39,
+     "quote": "Indirect speech in Russian and other [[Slavic languages]] generally uses the natural sequence of tenses (there is no bac"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-reported",
+   "sentence": "The supplied original is “I am English”.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-reported",
+   "sentence": "It has a past reporting verb with a present nationality statement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-reported",
+   "sentence": "The alternative with a past copula changes the stated reading.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 22,
+     "quote": "There is also the decision whether to use the future tense at all, and there are three nuances between English and Russi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-reported",
+   "sentence": "It has a past reporting verb with a future embedded action.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 30,
+     "quote": ":She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfectiv"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-reported",
+   "sentence": "The reporting verb said is past, and the embedded telling action keeps its future form.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 30,
+     "quote": ":She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfectiv"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-reported",
+   "sentence": "Russian indirect speech generally keeps the tense of the original statement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 39,
+     "quote": "Indirect speech in Russian and other [[Slavic languages]] generally uses the natural sequence of tenses (there is no bac"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 17,
+     "quote": "In some cases, though, a ''natural sequence'' of tenses is more appropriate. Here the tense of a verb in a [[subordinate"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-reported",
+   "sentence": "It has no past reporting frame.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 31,
+     "quote": ":When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u13-st-rem-reported",
+   "sentence": "English backshift is not compulsory in every report; preserving these readings is not a universal rule that every tense or word stays unchanged.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 21,
+     "quote": "However it is also possible to use the natural sequence even if the main verb is past or conditional:"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 4,
+     "quote": "A hypothetical context in which rules of sequence of tenses apply is that of [[indirect speech]]. If, at some past time,"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/sequence-of-tenses-1363198135.txt",
+     "line": 34,
+     "quote": "Similar problems arise from the other changes that typically occur in indirect speech, such as changes of pronoun (depen"
+    }
+   ]
+  }
+ ],
+ "markerReviewsNote": "Each Unit 13 marker with no Cyrillic word names the frozen files and lines of its cited records: a page line by number and exact quote, an OpenRussian row by its bare and accented headwords. Lines are 1-based."
+}
