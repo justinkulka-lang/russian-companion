@@ -45,3 +45,4 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - s1-allowlist-removed.txt: S1 (Code), the 78 allowlist lines removed because they pass the D7b audit against the frozen S1 pages (Unit 21: 9 UNATTESTED; Unit 24: 4 MISSING_STRESS; Unit 29: 45 UNATTESTED and 20 COMPOSED).
 
 - learner-text-sweep-units-01-15.csv: D30a rendered learner-text sweep at 62b4b084, Units 1-15; 602 rows with categories and suggested rewrites (D31a).
+- learner-text-sweep-units-16-30.csv: D30a rendered learner-text sweep at 62b4b084, Units 16-30; 1647 rows with categories and suggested rewrites; plain reference-status labels follow D31b (D31a publication).
