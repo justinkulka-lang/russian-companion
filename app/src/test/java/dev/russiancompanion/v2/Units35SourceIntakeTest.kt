@@ -62,6 +62,10 @@ class Units35SourceIntakeTest {
             // T16b (owner direction 2026-11-20): English Wikipedia Grammatical aspect oldid 1384289498, frozen by S1 under
             // catalog/sources/s1-intake, cited for the Unit 12 aspect claims (S1 claim verification 1369, 1370, 1380).
             "src-enwiki-grammatical-aspect-1384289498",
+            // T16c (owner direction 2026-11-21): Sequence of tenses oldid 1363198135 and Вид (лингвистика) oldid 153277825, frozen by
+            // S1 and admitted to their routes by D29a, cited for the Unit 13 S1 claims (1462, 1470, 1482, 1508, 1511, 1523, 1528, 1542, 1543).
+            "src-enwiki-sequence-of-tenses-1363198135",
+            "src-ruwiki-vid-lingvistika-153277825",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)

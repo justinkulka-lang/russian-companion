@@ -32,14 +32,14 @@ class Unit13FeedbackCorrectionTest {
         }
         assertTrue(p.item("u13-g-past-aspect-0")!!.feedback.contains("English simple past wording alone does not determine Russian aspect"))
         assertTrue(p.item("u13-i-past-aspect-1")!!.feedback.contains("completed activity can still be described with imperfective"))
-        assertTrue(p.item("u13-i-past-aspect-2")!!.feedback.contains("gender agreement rather than selecting a different aspect"))
+        assertTrue(p.item("u13-i-past-aspect-2")!!.feedback.contains("changing gender agreement does not change aspect")) // T16c (D31c sweep): was "gender agreement rather than selecting a different aspect"
         assertTrue(p.item("u13-g-tense-keep-0")!!.feedback.contains("present-time nationality"))
         assertTrue(p.item("u13-i-tense-keep-1")!!.feedback.contains("embedded verb remains future"))
         assertTrue(p.item("u13-i-tense-keep-2")!!.feedback.contains("not mandatory in every report"))
         for (id in listOf("u13-g-infinitive-0", "u13-i-infinitive-2"))
             assertTrue(p.item(id)!!.feedback.contains("say/tell meaning"))
         assertTrue(p.item("u13-i-infinitive-1")!!.feedback.contains("rather than assuming that adding any prefix"))
-        assertTrue(p.item("u13-g-reported-0")!!.feedback.contains("not automatic rules for every report"))
+        assertTrue(p.item("u13-g-reported-0")!!.feedback.contains("English backshift after a past reporting verb is optional")) // T16c (S1 1508 PARTIAL, reworded): was "not automatic rules for every report"
         assertTrue(p.item("u13-i-reported-1")!!.feedback.contains("without a past reporting frame"))
         assertTrue(p.item("u13-i-reported-2")!!.feedback.contains("Both clauses refer to the future"))
         val validation = V2Validator.validate(p)
@@ -56,7 +56,7 @@ class Unit13FeedbackCorrectionTest {
             compose.setContent { V2App(store = store, pack = p, onRetryOpen = {}) }
             compose.onNodeWithTag("v2-continue").performClick()
             compose.onNodeWithTag("v2-option-${item.id}-Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски").performScrollTo().performClick()
-            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Try again. ${item.feedback}")
+            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Not the reviewed answer. ${item.feedback}")
             assertFalse(item.id in creditItemIds(p, store.v2LearnerView()))
         }
     }
@@ -71,7 +71,7 @@ class Unit13FeedbackCorrectionTest {
             compose.setContent { V2App(store = store, pack = p, onRetryOpen = {}) }
             compose.onNodeWithTag("v2-continue").performClick()
             compose.onNodeWithTag("v2-option-${item.id}-я прочитал").performScrollTo().performClick()
-            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Try again. ${item.feedback}")
+            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Not the reviewed answer. ${item.feedback}")
             assertFalse(item.id in creditItemIds(p, store.v2LearnerView()))
         }
     }

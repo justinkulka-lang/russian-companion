@@ -31,7 +31,8 @@ class Unit13PresentReviewPersistenceTest {
                 prepare(store, pack)
                 assertTrue(ordinaryUnitRequirements(pack, pack.unit(13)!!, store.v2LearnerView()).allowed)
                 assertEquals(8, pack.unit(13)!!.advancement!!.minimumDistinctChecks)
-                assertEquals(9, pack.unit(13)!!.sessions.flatMap { it.steps }.filter { it.kind == "CHECK" }.flatMap { it.itemIds }.distinct().size)
+                // T16c: eleven typed checks join the nine closed checks (A2-23; was 9).
+                assertEquals(20, pack.unit(13)!!.sessions.flatMap { it.steps }.filter { it.kind == "CHECK" }.flatMap { it.itemIds }.distinct().size)
                 assertEquals(4, pack.unit(13)!!.sessions.flatMap { it.steps }.filter { it.kind == "GUIDED" }.flatMap { it.itemIds }.distinct().size)
                 assertEquals((1..12).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 val prerequisites = store.cumulativeReviewHistory().first

@@ -42,7 +42,7 @@ class OptionalGlossRemediationTest {
                 val wrong = item.options.first { it != item.answer }
                 waitTag("v2-option-${item.id}-$wrong")
                 compose.onNodeWithTag("v2-option-${item.id}-$wrong").performScrollTo().performClick()
-                waitText("Try again. ${item.feedback}")
+                waitText("Not the reviewed answer. ${item.feedback}")
                 val before = store.governedLearnerDocument()
                 assertEquals(1, before.attempts.size)
                 compose.onNodeWithTag("v2-remediation-${item.id}").performScrollTo().performClick()

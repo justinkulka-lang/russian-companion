@@ -10,11 +10,12 @@ class CurriculumDesignDiagnosticsTest {
     @Test fun currentCorpusHasLocatedSignalsWhileCompatibilityValidationStillPasses() {
         val report = V2DesignDiagnostics.audit(current)
         assertEquals(30, report.counts["units"])
-        assertEquals(748, report.counts["items"]) // T16b appends 8 typed Unit 12 checks (740 -> 748); T16 appends 12 typed Unit 11 checks (728 -> 740); T15i retires u7-i-manner-4 (729 -> 728); T15h appends u10-i-absence-5 (728 -> 729); T15b appends 15 typed Unit 7 checks; T15c 9 typed Unit 8 checks; T15d 15 typed Unit 9 checks; T15e 10 typed Unit 10 checks; T15g retires u10-i-absence-3 and u10-i-absence-4 (730 -> 728)
-        assertEquals(545, report.counts["requiredChecks"]) // T16b: 537 -> 545 (8 typed Unit 12 checks); T16: 525 -> 537 (12 typed Unit 11 checks); T15g: 527 -> 525, the two retired duplicates; T15h: 525 -> 526 (u10-i-absence-5); T15i: 526 -> 525 (u7-i-manner-4 retired)
+        assertEquals(759, report.counts["items"]) // T16c appends 11 typed Unit 13 checks (748 -> 759); T16b appends 8 typed Unit 12 checks (740 -> 748); T16 appends 12 typed Unit 11 checks (728 -> 740); T15i retires u7-i-manner-4 (729 -> 728); T15h appends u10-i-absence-5 (728 -> 729); T15b appends 15 typed Unit 7 checks; T15c 9 typed Unit 8 checks; T15d 15 typed Unit 9 checks; T15e 10 typed Unit 10 checks; T15g retires u10-i-absence-3 and u10-i-absence-4 (730 -> 728)
+        assertEquals(556, report.counts["requiredChecks"]) // T16c: 545 -> 556 (11 typed Unit 13 checks); T16b: 537 -> 545 (8 typed Unit 12 checks); T16: 525 -> 537 (12 typed Unit 11 checks); T15g: 527 -> 525, the two retired duplicates; T15h: 525 -> 526 (u10-i-absence-5); T15i: 526 -> 525 (u7-i-manner-4 retired)
         assertEquals("NEEDS_CORRECTION_OR_REVIEW", report.verdict)
         assertTrue(report.signals.any { it.rule == "LEARNER_MARKUP" && "u14-st-teach-impersonal-2" in it.entityIds })
-        assertTrue(report.signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" && "u13-i-tense-keep-2" in it.entityIds })
+        // T16c: u13-i-tense-keep-2 now chooses between two Russian reports (prep section 1), so the finding is gone (was assertTrue).
+        assertFalse(report.signals.any { it.rule == "NO_CYRILLIC_IN_REQUIRED_DISPLAY" && "u13-i-tense-keep-2" in it.entityIds })
         // New authoring standards do not silently change app startup or claim the course is good.
         assertTrue(V2Validator.validate(current).ok)
     }

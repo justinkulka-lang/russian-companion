@@ -36,7 +36,7 @@ class Unit4PresentRepairUiTest {
             tag("v2-continue").performClick()
             val wrong = item.options.first { it != item.answer }
             tag("v2-option-$id-$wrong").performScrollTo().performClick()
-            tag("v2-item-feedback-$id").performScrollTo().assertTextEquals("Try again. ${item.feedback}")
+            tag("v2-item-feedback-$id").performScrollTo().assertTextEquals("Not the reviewed answer. ${item.feedback}")
             tag("v2-remediation-$id").performScrollTo().performClick()
             val rem = p.step("u4-st-rem-present")!!.second
             compose.onNodeWithText(rem.body).performScrollTo().assertIsDisplayed()

@@ -30,7 +30,7 @@ class Unit13PresentReviewUiTest {
             compose.setContent { V2CumulativeReviewScreen(pack, store.v2LearnerView(), 13, false, {}, {}, {}, { _, _, _ -> }, { requested = it }, {}, {}) }
             waitTag("v2-review-insufficient")
             compose.onNodeWithText(newTitle).assertExists()
-            compose.onNodeWithText("These finite recognitions do not demonstrate unseen reading", substring = true).performScrollTo().assertIsDisplayed()
+            compose.onNodeWithText("Practise the taught forms; practise unfamiliar reading", substring = true) // T16c (D31c): was "These finite recognitions do not demonstrate unseen reading".performScrollTo().assertIsDisplayed()
             compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
             compose.onNodeWithTag("v2-review-repair").performScrollTo().assertTextEquals("Open earlier Unit 4 instruction and checks").performClick()
             assertEquals(4, requested)

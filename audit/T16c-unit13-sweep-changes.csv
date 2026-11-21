@@ -1,0 +1,105 @@
+owner.field,old,new
+obj-u13-infinitive.title,Choose the admitted infinitive partner,Infinitive partner
+obj-u13-past-aspect.title,Choose the admitted past aspect line,Past aspect example
+obj-u13-tense-keep.title,Choose the admitted report label,Report description
+reviewCopy.introductions[13],Repairs restore the full taught form sets; guided practice does not complete any fresh review check.,"After a miss, read the full taught form sets, then answer the assigned review check."
+reviewCopy.introductions[13],"These finite recognitions do not demonstrate unseen reading, productive conjugation, sentence-context aspect selection, speaking or writing.","Practise the taught forms; practise unfamiliar reading, conjugation, choosing aspect in sentences, speaking and writing separately."
+u13-g-infinitive-0.prompt,Which admitted line is the perfective partner?,Which verb is the perfective partner?
+u13-g-past-aspect-0.distractorRationales[1],"я читал uses the imperfective past, not the perfective past form requested here.","я читал uses the imperfective past, not the perfective past form."
+u13-g-past-aspect-0.feedback,English simple past wording alone does not determine Russian aspect; the question explicitly asks for the perfective form.,English simple past wording alone does not determine Russian aspect; identify the perfective form.
+u13-g-past-aspect-0.prompt,Which admitted line is the perfective past?,Which sentence is the perfective past?
+u13-g-tense-keep-0.prompt,Which admitted label keeps the same tense?,Which description keeps the same tense?
+u13-i-infinitive-1.feedback,Learn this recorded pair rather than assuming that adding any prefix gives the matching perfective of any verb.,Learn this pair rather than assuming that adding any prefix gives the matching perfective of any verb.
+u13-i-infinitive-1.feedback,сде́лать is the perfective partner of де́лать in the retained do/make pair.,сде́лать is the perfective partner of де́лать in the do/make pair.
+u13-i-infinitive-1.prompt,Which admitted line is the perfective partner?,Which verb is the perfective partner?
+u13-i-infinitive-2.feedback,"The question asks for the imperfective member of this recorded pairing, not any verb of another meaning.",Identify the imperfective member of the verb pair while keeping the meaning the same.
+u13-i-infinitive-2.prompt,Which admitted line is the imperfective partner?,Which verb is the imperfective partner?
+u13-i-past-aspect-1.distractorRationales[1],"я прочитал is perfective past and presents a completed whole, rather than the imperfective past requested here.","я прочитал is perfective past and presents a completed whole, rather than the imperfective past."
+u13-i-past-aspect-1.prompt,Which admitted line is the imperfective past?,Which sentence is the imperfective past?
+u13-i-past-aspect-2.distractorRationales[1],"чита́ла is feminine past, not the requested masculine past form of the same verb.","чита́ла is feminine past, not a masculine past form of the same verb."
+u13-i-past-aspect-2.feedback,Both belong to the same imperfective verb; this question changes gender agreement rather than selecting a different aspect.,Both forms belong to the same imperfective verb; changing gender agreement does not change aspect.
+u13-i-past-aspect-2.prompt,Which admitted row is the masculine past?,Which form is the masculine past?
+u13-i-reported-1.distractorRationales[1],"Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски describes a future plan about Moscow, not the direct evening statement requested here.","Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски describes a future plan about Moscow, not the direct evening statement."
+u13-i-reported-1.prompt,Which admitted line is the direct evening?,Which sentence is the direct evening?
+u13-i-reported-2.feedback,Neither option is itself a past reporting frame; identify the Moscow plan requested here.,Neither option is itself a past reporting frame; identify the Moscow plan.
+u13-i-reported-2.prompt,Which admitted line is the future plan about Moscow?,Which sentence is the future plan about Moscow?
+u13-i-tense-keep-1.prompt,Which admitted line is the reported evening?,Which sentence is the reported evening?
+u13-i-tense-keep-2.distractorRationales[1],"we keep the tense the same describes retention, not changing the reported tense in the English comparison requested here.","we keep the tense the same describes retention, not changing the reported tense in the English comparison."
+u13-i-tense-keep-2.feedback,"English backshift can follow a past reporting verb, but is not mandatory in every report; the question classifies the supplied labels rather than imposing an always-change rule.","English backshift can follow a past reporting verb, but is not mandatory in every report; compare the two labels without assuming an always-change rule."
+u13-i-tense-keep-2.feedback,we usually change the tense is the source label for changing the reported tense in its English backshift comparison.,The label we usually change the tense describes English backshift after a past reporting verb.
+u13-i-tense-keep-2.prompt,Which admitted label is about changing the reported tense?,Which description is about changing the reported tense?
+u13-s-infinitive.title,Choose the admitted infinitive partner,Infinitive partner
+u13-s-orient.title,Admitted past aspect and report lines,Past aspect and report lines
+u13-s-past-aspect.title,Choose the admitted past aspect line,Past aspect example
+u13-s-reported.title,Choose the admitted reported line,Reported statement
+u13-s-tense-keep.title,Choose the admitted report label,Report description
+u13-st-check-infinitive.body,These checks use only admitted records.,Answer using the examples taught here.
+u13-st-check-past-aspect.body,These checks use only admitted records.,Answer using the examples taught here.
+u13-st-check-tense-keep.body,These checks use only admitted records.,Answer using the examples taught here.
+u13-st-guided-infinitive-1.body,Choose the admitted record.,Choose an answer.
+u13-st-guided-infinitive-1.body,The feedback states the frozen field.,Read the explanation after answering.
+u13-st-guided-past-aspect-1.body,Choose the admitted record.,Choose an answer.
+u13-st-guided-past-aspect-1.body,The feedback states the frozen field.,Read the explanation after answering.
+u13-st-guided-tense-keep-1.body,Choose the admitted record.,Choose an answer.
+u13-st-guided-tense-keep-1.body,The feedback states the frozen field.,Read the explanation after answering.
+u13-st-orient.body,"Proposed Unit 13 uses frozen records for past aspect lines, report labels, and infinitive partners.","Unit 13 covers past-tense aspect, reported speech and infinitive partners."
+u13-st-orient.body,Qualified review is pending.,Work through the explanations and examples.
+u13-st-orient.title,Admitted past aspect and report lines,Past aspect and report lines
+u13-st-rem-infinitive.body,A verb from the other pair is not a valid answer merely because it has the requested aspect.,Match both the aspect and the meaning of the verb pair.
+u13-st-rem-infinitive.body,Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.,Learn the two taught pairs rather than assuming that any prefix gives the corresponding perfective of any verb.
+u13-st-rem-infinitive.body,"The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak.","The gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak."
+u13-st-rem-infinitive.body,These checks recognize the retained pairs; they do not establish sentence-context aspect choice or unrestricted verb production.,"Learn the two verb pairs, then practise choosing aspect in sentence contexts and producing verbs separately."
+u13-st-rem-past-aspect.body,A question requesting masculine past asks for чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.,The masculine past form is чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.
+u13-st-rem-past-aspect.body,Recognize the requested aspect in these supplied choices; this is not unrestricted sentence production.,Identify the aspect in each example; practise constructing sentences separately.
+u13-st-rem-past-aspect.body,The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive.,The English gloss read alone does not distinguish past tense from infinitive.
+u13-st-rem-past-aspect.body,The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form.,The pronoun I does not determine past-tense gender for every speaker; match the past form to the speaker’s gender.
+u13-st-rem-past-aspect.body,These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.,These English labels describe the examples; they do not match every English past tense to one Russian aspect.
+u13-st-rem-reported.body,English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged.,English backshift is not compulsory in every report; preserving these readings is not a universal rule that every tense or word stays unchanged.
+u13-st-rem-reported.body,Existing independent choices distinguish this supplied Moscow plan and the direct evening statement.,Distinguish the Moscow plan from the direct evening statement.
+u13-st-rem-reported.body,The added independent check must also interpret the evening report’s past reporting verb and future embedded action.,"In the evening report, distinguish the past reporting verb from the future embedded action."
+u13-st-rem-reported.body,The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.,Pronoun choice depends on the speaker; do not mechanically replace every I with she or manufacture reported clauses.
+u13-st-rem-reported.body,The source’s alternative with a past copula changes the stated reading.,The alternative with a past copula changes the stated reading.
+u13-st-rem-reported.body,"This nationality context was also taught earlier, so it is not unseen evidence.",Review the nationality example you learned earlier.
+u13-st-rem-reported.body,"This small set supports recognition of supplied contexts, not unrestricted reported-speech production.",Study these examples in context; practise creating reports separately.
+u13-st-rem-tense-keep.body,"In the source comparison, English can shift a present statement to a past form after a past reporting verb.","In this comparison, English can shift a present statement to a past form after a past reporting verb."
+u13-st-rem-tense-keep.body,It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking.,It corresponds to the direct evening statement by the event described; pronoun changes depend on who is speaking.
+u13-st-rem-tense-keep.body,Recognize these supplied contexts; this check does not ask you to construct a new report.,Interpret each example in its context; practise constructing reports separately.
+u13-st-rem-tense-keep.body,The retained direct evening example is Я скажу ему ве́чером.,The direct evening statement is Я скажу ему ве́чером.
+u13-st-rem-tense-keep.body,The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense.,Keeping the tense the same describes this Russian reporting comparison; it does not mean every verb in a report has the same tense.
+u13-st-teach-infinitive-1.body,"The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak.","The gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak."
+u13-st-teach-infinitive-1.title,Admitted lines,Examples
+u13-st-teach-infinitive-2.body,A verb from the other pair is not a valid answer merely because it has the requested aspect.,Match both the aspect and the meaning of the verb pair.
+u13-st-teach-infinitive-2.body,These checks recognize the retained pairs; they do not establish sentence-context aspect choice or unrestricted verb production.,"Learn the two verb pairs, then practise choosing aspect in sentence contexts and producing verbs separately."
+u13-st-teach-infinitive-2.title,Admitted instruction,Explanation
+u13-st-teach-infinitive-3.body,Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.,Learn the two taught pairs rather than assuming that any prefix gives the corresponding perfective of any verb.
+u13-st-teach-infinitive-3.title,Admitted lines,Examples
+u13-st-teach-past-aspect-1.body,These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.,These English labels describe the examples; they do not match every English past tense to one Russian aspect.
+u13-st-teach-past-aspect-1.title,Admitted lines,Examples
+u13-st-teach-past-aspect-2.body,Recognize the requested aspect in these supplied choices; this is not unrestricted sentence production.,Identify the aspect in each example; practise constructing sentences separately.
+u13-st-teach-past-aspect-2.title,Admitted instruction,Explanation
+u13-st-teach-past-aspect-3.body,A question requesting masculine past asks for чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.,The masculine past form is чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.
+u13-st-teach-past-aspect-3.body,The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive.,The English gloss read alone does not distinguish past tense from infinitive.
+u13-st-teach-past-aspect-3.title,Admitted lines,Examples
+u13-st-teach-past-aspect-4.body,The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form.,The pronoun I does not determine past-tense gender for every speaker; match the past form to the speaker’s gender.
+u13-st-teach-past-aspect-4.title,Admitted lines,Examples
+u13-st-teach-reported-1.body,The source’s alternative with a past copula changes the stated reading.,The alternative with a past copula changes the stated reading.
+u13-st-teach-reported-1.body,"This nationality context was also taught earlier, so it is not unseen evidence.",Review the nationality example you learned earlier.
+u13-st-teach-reported-2.body,The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.,Pronoun choice depends on the speaker; do not mechanically replace every I with she or manufacture reported clauses.
+u13-st-teach-reported-3.body,English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged.,English backshift is not compulsory in every report; preserving these readings is not a universal rule that every tense or word stays unchanged.
+u13-st-teach-reported-3.body,Existing independent choices distinguish this supplied Moscow plan and the direct evening statement.,Distinguish the Moscow plan from the direct evening statement.
+u13-st-teach-reported-3.body,The added independent check must also interpret the evening report’s past reporting verb and future embedded action.,"In the evening report, distinguish the past reporting verb from the future embedded action."
+u13-st-teach-reported-3.body,"This small set supports recognition of supplied contexts, not unrestricted reported-speech production.",Study these examples in context; practise creating reports separately.
+u13-st-teach-tense-keep-1.body,The retained direct evening example is Я скажу ему ве́чером.,The direct evening statement is Я скажу ему ве́чером.
+u13-st-teach-tense-keep-1.body,The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense.,Keeping the tense the same describes this Russian reporting comparison; it does not mean every verb in a report has the same tense.
+u13-st-teach-tense-keep-1.title,Admitted lines,Examples
+u13-st-teach-tense-keep-2.body,"In the source comparison, English can shift a present statement to a past form after a past reporting verb.","In this comparison, English can shift a present statement to a past form after a past reporting verb."
+u13-st-teach-tense-keep-2.title,Admitted instruction,Explanation
+u13-st-teach-tense-keep-3.body,It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking.,It corresponds to the direct evening statement by the event described; pronoun changes depend on who is speaking.
+u13-st-teach-tense-keep-3.body,Recognize these supplied contexts; this check does not ask you to construct a new report.,Interpret each example in its context; practise constructing reports separately.
+u13-st-teach-tense-keep-3.title,Admitted lines,Examples
+unit-13.mappingNote,"Independently stated topic scope: Aspect in past-tense contexts, tense selection, infinitive aspect, and reported speech.","Topics: Aspect in past-tense contexts, tense selection, infinitive aspect, and reported speech."
+unit-13.mappingNote,Mapping status is PENDING_CURRICULUM_REVIEWER.,Use the explanations and examples alongside your book.
+unit-13.mappingNote,"Proposed Lesson 13, printed pages 149-161.","This unit goes with Lesson 13 in your book, printed pages 149-161."
+unit-13.mappingNote,That assertion is not reviewer verification.,Read the matching lesson in your own book.
+unit-13.mappingNote,The Product Owner asserts that the inspected file is a legally owned copy.,Use the copy of the book you own.
+unit-13.mappingNote,"This note does not approve coverage, variance, or alignment.",Compare this unit with the matching lesson in your own book.

@@ -41,7 +41,8 @@ class Unit13ReportedTransferTest {
  @Test fun threeCardsPrecedePracticeAndFullRemediationQualifiesBothLanguages() {
   val p=pack();val s=p.unit(13)!!.sessions.single{it.id=="u13-s-reported"};val teach=s.steps.filter{it.kind=="TEACH"};val rem=s.steps.single{it.kind=="REMEDIATE"}
   assertEquals(3,s.steps.takeWhile{it.kind!="GUIDED"}.count{it.kind=="TEACH"});assertEquals(teach.joinToString("\n\n"){it.body},rem.body);assertEquals(teach.flatMap{it.exampleIds}.distinct(),rem.exampleIds)
-  assertTrue(rem.body.contains("not compulsory"));assertTrue(rem.body.contains("not unseen evidence"));assertTrue(rem.body.contains("present moment"));assertTrue(rem.body.contains("not unrestricted"))
+  // T16c: was "not unseen evidence", "present moment", "not unrestricted" (D31c sweep wording and the S1 1523 PARTIAL reword).
+  assertTrue(rem.body.contains("not compulsory"));assertTrue(rem.body.contains("Review the nationality example you learned earlier"));assertTrue(rem.body.contains("generally keeps the tense of the original statement"));assertTrue(rem.body.contains("practise creating reports separately"))
  }
  @Test fun playerRejectsReversingPastReportingAndFutureEmbeddedTime() {
   val p=pack();val i=p.item("u13-i-report-frame-time")!!;val step=p.unit(13)!!.sessions.flatMap{it.steps}.single{i.id in it.itemIds};val owner=p.step(step.id)!!
@@ -50,7 +51,7 @@ class Unit13ReportedTransferTest {
    compose.setContent { V2App(store=store,pack=p,onRetryOpen={}) };compose.onNodeWithTag("v2-continue").performClick()
    // The existing direct/Moscow checks share this step; the final item remains reachable.
    compose.onNodeWithTag("v2-option-${i.id}-${i.options[1]}").performScrollTo().performClick()
-   compose.onNodeWithTag("v2-item-feedback-${i.id}").performScrollTo().assertTextEquals("Try again. ${i.feedback}")
+   compose.onNodeWithTag("v2-item-feedback-${i.id}").performScrollTo().assertTextEquals("Not the reviewed answer. ${i.feedback}")
    assertFalse(i.id in creditItemIds(p,store.v2LearnerView()))
   }
  }

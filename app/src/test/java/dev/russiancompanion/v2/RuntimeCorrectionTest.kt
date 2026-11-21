@@ -129,7 +129,7 @@ class RuntimeCorrectionTest {
         val third = pack.item(step.itemIds[2])!!
         choose(first, wrong = true)
         compose.onNodeWithTag("v2-item-feedback-${first.id}").performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("Try again. ${first.feedback}", substring = true).assertIsDisplayed()
+        compose.onNodeWithText("Not the reviewed answer. ${first.feedback}", substring = true).assertIsDisplayed()
         assertDoesNotExist("v2-item-feedback-${second.id}")
         assertDoesNotExist("v2-item-feedback-${third.id}")
         choose(second, wrong = false)
