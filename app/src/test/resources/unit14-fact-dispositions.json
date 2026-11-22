@@ -1,0 +1,498 @@
+{
+ "task": "T16d (Claude Code, 2026-11-22); dispositions from audit/prep/units-13-15-prep-at-4c402ef7.txt, Unit 14 section 3, and audit/prep/s1-claim-verification.csv",
+ "totals": {
+  "MARK": 10,
+  "REWORD": 3
+ },
+ "entries": [
+  {
+   "entry": "U14-E01",
+   "csvLine": 1548,
+   "ownerId": "u14-g-future-aspect-0",
+   "field": "item feedback",
+   "baselineSentence": "Both refer to the future, not to an event already completed.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16d-u14-f15",
+    "prov-t16d-u14-f16",
+    "prov-t16d-u14-f17",
+    "prov-t16d-u14-f18"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U14-E02",
+   "csvLine": 1549,
+   "ownerId": "u14-g-future-aspect-0",
+   "field": "item feedback",
+   "baselineSentence": "A stated duration does not automatically require perfective aspect in every sentence.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16d-u14-p16",
+    "prov-t16d-u14-p17"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U14-E03",
+   "csvLine": 1551,
+   "ownerId": "u14-st-rem-future-aspect",
+   "field": "remediation body",
+   "baselineSentence": "Quite simply, the future tense in Russian corresponds to things happening in the future.",
+   "disposition": "REWORD",
+   "replacement": "Read the two future examples.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "The unqualified future definition is bounded to the supplied statements (report section 4); an instruction remains, and the teaching states that both statements refer to future situations (F:15-18)."
+  },
+  {
+   "entry": "U14-E04",
+   "csvLine": 1554,
+   "ownerId": "u14-i-future-aspect-1",
+   "field": "item feedback",
+   "baselineSentence": "The limit describes this work period, not necessarily completion of a task.",
+   "disposition": "REWORD",
+   "replacement": "A limited stretch of an activity is different from doing it to completion.",
+   "replacementKind": "MARKED",
+   "s1Verdict": "PARTIAL",
+   "sourceRecordIds": [
+    "prov-t16d-u14-vid4",
+    "prov-t16d-u14-f16"
+   ],
+   "reason": "S1 PARTIAL: reworded to what vid-lingvistika-153277825.txt:4 states (a delimitative way of acting, separate from completion; F:16 is the supplied example); the claim about this item's work period is not stated and is removed."
+  },
+  {
+   "entry": "U14-E05",
+   "csvLine": 1555,
+   "ownerId": "u14-i-future-aspect-1",
+   "field": "item feedback",
+   "baselineSentence": "A definite time period does not by itself force perfective aspect.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16d-u14-p16",
+    "prov-t16d-u14-p17"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U14-E06",
+   "csvLine": 1559,
+   "ownerId": "u14-i-future-aspect-2",
+   "field": "item feedback",
+   "baselineSentence": "Unbounded here describes the supplied option; it does not mean the activity lasts forever or that imperfective future can never have a duration.",
+   "disposition": "REWORD",
+   "replacement": "Unbounded here describes only the supplied option, which states no duration; an activity can still have a duration.",
+   "replacementKind": "MARKED",
+   "s1Verdict": "PARTIAL",
+   "sourceRecordIds": [
+    "prov-t16d-u14-f17",
+    "prov-t16d-u14-ga86",
+    "prov-t16d-u14-p17"
+   ],
+   "reason": "S1 PARTIAL: reworded to what grammatical-aspect-1384289498.txt:86 and past-tense:17 state (activities have duration; an imperfective verb takes a duration phrase) and to the supplied option (F:17)."
+  },
+  {
+   "entry": "U14-E07",
+   "csvLine": 1563,
+   "ownerId": "u14-g-future-person-0",
+   "field": "item feedback",
+   "baselineSentence": "The imperfective infinitive stays the same; the subject and auxiliary distinguish the number requested.",
+   "disposition": "MARK",
+   "currentSentence": "The imperfective infinitive stays the same; the subject and auxiliary distinguish the number.",
+   "sourceRecordIds": [
+    "prov-t16d-u14-f41"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U14-E08",
+   "csvLine": 1568,
+   "ownerId": "u14-i-future-person-1",
+   "field": "item feedback",
+   "baselineSentence": "The cue shows third-person singular, but the question asks for third-person plural of the same verb.",
+   "disposition": "MARK",
+   "currentSentence": "The cue shows third-person singular; change it to third-person plural of the same verb.",
+   "sourceRecordIds": [
+    "prov-ex-or-u14-future-person-3",
+    "prov-ex-or-u14-future-person-4"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U14-E09",
+   "csvLine": 1569,
+   "ownerId": "u14-i-future-person-1",
+   "field": "item feedback",
+   "baselineSentence": "These forms refer to future events, not events already completed.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16d-u14-f53",
+    "prov-t16d-u14-f60",
+    "prov-t16d-u14-f63",
+    "prov-t16d-u14-f66"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U14-E10",
+   "csvLine": 1573,
+   "ownerId": "u14-i-future-person-2",
+   "field": "item feedback",
+   "baselineSentence": "Both use the same imperfective infinitive after the future auxiliary; choose singular agreement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16d-u14-f41"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U14-E11",
+   "csvLine": 1577,
+   "ownerId": "u14-g-impersonal-0",
+   "field": "item feedback",
+   "baselineSentence": "Both options are impersonal past and keep the same neuter singular verb; the requested person and state distinguish them.",
+   "disposition": "MARK",
+   "currentSentence": "Both options are impersonal past and keep the same neuter singular verb; the person and state distinguish them.",
+   "sourceRecordIds": [
+    "prov-t16d-u14-p24",
+    "prov-t16d-u14-p25",
+    "prov-t16d-u14-p26",
+    "prov-ex-or-u14-impersonal-3"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U14-E12",
+   "csvLine": 1586,
+   "ownerId": "u14-i-impersonal-1",
+   "field": "item feedback",
+   "baselineSentence": "Both options are impersonal past; plural experiencers do not turn the verb into a plural form in this construction.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16d-u14-p24",
+    "prov-t16d-u14-p25",
+    "prov-t16d-u14-p26"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U14-E13",
+   "csvLine": 1590,
+   "ownerId": "u14-i-impersonal-2",
+   "field": "item feedback",
+   "baselineSentence": "Both options are impersonal past; the woman in the question changes the experiencer pronoun, not the verb to feminine agreement.",
+   "disposition": "MARK",
+   "currentSentence": "Both forms are impersonal past; a female experiencer changes the pronoun, not the verb to feminine agreement.",
+   "sourceRecordIds": [
+    "prov-t16d-u14-p24",
+    "prov-t16d-u14-p25"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  }
+ ],
+ "markerReviews": [
+  {
+   "ownerId": "u14-g-future-aspect-0",
+   "sentence": "Both refer to the future, not to an event already completed.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 15,
+     "quote": ":I will work - '''Я бу́ду рабо́тать'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 16,
+     "quote": ":I will work for three hours - '''Я порабо́таю три ча́са'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 17,
+     "quote": ":I will speak - '''Я бу́ду говори́ть'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 18,
+     "quote": ":I will speak for 30 minutes - '''Я поговорю три́дцать мину́т'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-g-future-aspect-0",
+   "sentence": "A stated duration does not automatically require perfective aspect in every sentence.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 16,
+     "quote": "* She wrote for a long time - '''Она долго писала''' - ''completed action, but with a time duration, so imperfective. 'F"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 17,
+     "quote": "* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. "
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-i-future-aspect-1",
+   "sentence": "A limited stretch of an activity is different from doing it to completion.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/ruwiki/vid-lingvistika-153277825.txt",
+     "line": 4,
+     "quote": "Категория вида близка категории [[способ действия|способа действия]] (''Aktionsart'', акциональности), связанной с тем, "
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 16,
+     "quote": ":I will work for three hours - '''Я порабо́таю три ча́са'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-i-future-aspect-1",
+   "sentence": "A definite time period does not by itself force perfective aspect.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 16,
+     "quote": "* She wrote for a long time - '''Она долго писала''' - ''completed action, but with a time duration, so imperfective. 'F"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 17,
+     "quote": "* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. "
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-i-future-aspect-2",
+   "sentence": "Unbounded here describes only the supplied option, which states no duration; an activity can still have a duration.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 17,
+     "quote": ":I will speak - '''Я бу́ду говори́ть'''"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wikipedia/grammatical-aspect-1384289498.txt",
+     "line": 86,
+     "quote": "The other factor in situation aspect is duration, which is also a property of a verb phrase. Accomplishments, states, an"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 17,
+     "quote": "* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. "
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-g-future-person-0",
+   "sentence": "The imperfective infinitive stays the same; the subject and auxiliary distinguish the number.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 41,
+     "quote": "| Я бу́ду говори́ть<br>I will be speaking || Мы бу́дем говори́ть<br>We will be speaking"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-i-future-person-1",
+   "sentence": "The cue shows third-person singular; change it to third-person plural of the same verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 3,
+     "quote": "сказать\tсказа'ть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-i-future-person-1",
+   "sentence": "These forms refer to future events, not events already completed.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 53,
+     "quote": "Forming the future tense with perfective verbs is relative straight-forward: just conjugate the verb according to the st"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 60,
+     "quote": "| Я скажу́<br>I will speak || Мы ска́жем<br>We will speak"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 63,
+     "quote": "| Ты ска́жешь<br>You will speak || Вы ска́жете<br>You will speak"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 66,
+     "quote": "| Он ска́жет<br>He will speak || Они ска́жут<br>They will speak"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-i-future-person-2",
+   "sentence": "Both use the same imperfective infinitive after the future auxiliary; choose singular agreement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 41,
+     "quote": "| Я бу́ду говори́ть<br>I will be speaking || Мы бу́дем говори́ть<br>We will be speaking"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-g-impersonal-0",
+   "sentence": "Both options are impersonal past and keep the same neuter singular verb; the person and state distinguish them.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 24,
+     "quote": "To refer to states, use the [[Russian/Grammar/Dative case|dative]] for the person or thing; literally 'to me it is inter"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 25,
+     "quote": ":He was cold - '''Ему было холодно'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 26,
+     "quote": ":They were bored - '''Им было скучно'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 2,
+     "quote": "быть\tбыть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-i-impersonal-1",
+   "sentence": "Both options are impersonal past; plural experiencers do not turn the verb into a plural form in this construction.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 24,
+     "quote": "To refer to states, use the [[Russian/Grammar/Dative case|dative]] for the person or thing; literally 'to me it is inter"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 25,
+     "quote": ":He was cold - '''Ему было холодно'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 26,
+     "quote": ":They were bored - '''Им было скучно'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-i-impersonal-2",
+   "sentence": "Both forms are impersonal past; a female experiencer changes the pronoun, not the verb to feminine agreement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 24,
+     "quote": "To refer to states, use the [[Russian/Grammar/Dative case|dative]] for the person or thing; literally 'to me it is inter"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 25,
+     "quote": ":He was cold - '''Ему было холодно'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-st-rem-future-aspect",
+   "sentence": "Both supplied statements refer to future situations.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 15,
+     "quote": ":I will work - '''Я бу́ду рабо́тать'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 16,
+     "quote": ":I will work for three hours - '''Я порабо́таю три ча́са'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 17,
+     "quote": ":I will speak - '''Я бу́ду говори́ть'''"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 18,
+     "quote": ":I will speak for 30 minutes - '''Я поговорю три́дцать мину́т'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-st-rem-future-aspect",
+   "sentence": "A stated duration does not by itself require perfective aspect.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 16,
+     "quote": "* She wrote for a long time - '''Она долго писала''' - ''completed action, but with a time duration, so imperfective. 'F"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+     "line": 17,
+     "quote": "* They were flying for three hours - '''Они летели три часа''' - ''complete action with time duration, so imperfective. "
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-st-rem-future-aspect",
+   "sentence": "Russian also has verbs that present an activity for a limited stretch, which is different from doing it to completion.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/ruwiki/vid-lingvistika-153277825.txt",
+     "line": 4,
+     "quote": "Категория вида близка категории [[способ действия|способа действия]] (''Aktionsart'', акциональности), связанной с тем, "
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-st-rem-future-aspect",
+   "sentence": "Both are perfective.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 245,
+     "quote": "поговорить\tпоговори'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 1485,
+     "quote": "поработать\tпорабо'тать"
+    }
+   ]
+  },
+  {
+   "ownerId": "u14-st-rem-future-person",
+   "sentence": "A perfective verb forms its future by conjugating it, with no separate future auxiliary.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 53,
+     "quote": "Forming the future tense with perfective verbs is relative straight-forward: just conjugate the verb according to the st"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+     "line": 60,
+     "quote": "| Я скажу́<br>I will speak || Мы ска́жем<br>We will speak"
+    }
+   ]
+  }
+ ],
+ "markerReviewsNote": "Each Unit 14 marker with no Cyrillic word names the frozen files and lines of its cited records: a page line by number and exact quote, an OpenRussian row by its bare and accented headwords. Lines are 1-based."
+}

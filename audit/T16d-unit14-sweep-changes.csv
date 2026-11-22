@@ -1,0 +1,63 @@
+owner.field,old,new
+obj-u14-future-aspect.title,Choose the admitted future aspect line,Future aspect example
+obj-u14-future-person.title,Choose the admitted future person line,Future person form
+obj-u14-impersonal.title,Choose the admitted impersonal line,Impersonal example
+reviewCopy.introductions[14],"These finite recognitions do not demonstrate unseen reading, productive inflection, unrestricted reported speech, speaking or writing.","Practise the taught forms; practise unfamiliar reading, inflection, creating reported speech, speaking and writing separately."
+u14-g-future-aspect-0.prompt,Which admitted line is the bounded future?,Which sentence is the bounded future?
+u14-g-future-person-0.distractorRationales[1],"Я бу́ду говори́ть is first-person singular future, not the first-person plural future requested here.","Я бу́ду говори́ть is first-person singular future, not the first-person plural future."
+u14-g-future-person-0.feedback,The imperfective infinitive stays the same; the subject and auxiliary distinguish the number requested.,The imperfective infinitive stays the same; the subject and auxiliary distinguish the number.
+u14-g-future-person-0.prompt,Which admitted line is the first-person plural future?,Which sentence is the first-person plural future?
+u14-g-impersonal-0.distractorRationales[1],"Им было скучно is also impersonal past, but it describes plural experiencers who were bored, not the singular cold person requested here.","Им было скучно is also impersonal past, but it describes plural experiencers who were bored, not the singular cold person."
+u14-g-impersonal-0.feedback,Both options are impersonal past and keep the same neuter singular verb; the requested person and state distinguish them.,Both options are impersonal past and keep the same neuter singular verb; the person and state distinguish them.
+u14-g-impersonal-0.prompt,Which admitted line is the impersonal past for one person who was cold?,Which sentence is the impersonal past for one person who was cold?
+u14-i-future-aspect-1.prompt,Which admitted line is the bounded future?,Which sentence is the bounded future?
+u14-i-future-aspect-2.distractorRationales[1],"Я поговорю три́дцать мину́т is the bounded future option with a stated thirty-minute limit, rather than the unbounded future example requested here.","Я поговорю три́дцать мину́т is the bounded future option with a stated thirty-minute limit, rather than the unbounded future example."
+u14-i-future-aspect-2.prompt,Which admitted line is the unbounded future?,Which sentence is the unbounded future?
+u14-i-future-person-1.distractorRationales[1],"скажу́ is first-person singular future, not the requested third-person plural future.","скажу́ is first-person singular future, not the third-person plural future."
+u14-i-future-person-1.feedback,"The cue shows third-person singular, but the question asks for third-person plural of the same verb.",The cue shows third-person singular; change it to third-person plural of the same verb.
+u14-i-future-person-1.prompt,Which admitted row is the third-person plural future?,Which form is the third-person plural future?
+u14-i-future-person-2.distractorRationales[1],"Мы бу́дем говори́ть is first-person plural future, not the first-person singular future requested here.","Мы бу́дем говори́ть is first-person plural future, not the first-person singular future."
+u14-i-future-person-2.prompt,Which admitted line is the first-person singular future?,Which sentence is the first-person singular future?
+u14-i-impersonal-1.distractorRationales[1],"Ему было холодно is also impersonal past, but it describes one male experiencer who was cold, not the plural bored experiencers requested here.","Ему было холодно is also impersonal past, but it describes one male experiencer who was cold, not the plural bored experiencers."
+u14-i-impersonal-1.prompt,Which admitted line is the impersonal past for more than one bored person?,Which sentence is the impersonal past for more than one bored person?
+u14-i-impersonal-2.distractorRationales[1],"Ему было холодно is also impersonal past, but the supplied example refers to a male experiencer, not the woman requested here.","Ему было холодно is also impersonal past, but the supplied example refers to a male experiencer, not the woman."
+u14-i-impersonal-2.feedback,"Both options are impersonal past; the woman in the question changes the experiencer pronoun, not the verb to feminine agreement.","Both forms are impersonal past; a female experiencer changes the pronoun, not the verb to feminine agreement."
+u14-i-impersonal-2.prompt,Which admitted line is the impersonal past for one woman who was cold?,Which sentence is the impersonal past for one woman who was cold?
+u14-s-future-aspect.title,Choose the admitted future aspect line,Future aspect example
+u14-s-future-person.title,Choose the admitted future person line,Future person form
+u14-s-impersonal.title,Choose the admitted impersonal line,Impersonal example
+u14-s-orient.title,Admitted future aspect and state lines,Future aspect and state lines
+u14-st-check-future-aspect.body,These checks use only admitted records.,Answer using the examples taught here.
+u14-st-check-future-person.body,These checks use only admitted records.,Answer using the examples taught here.
+u14-st-check-impersonal.body,These checks use only admitted records.,Answer using the examples taught here.
+u14-st-guided-future-aspect-1.body,Choose the admitted record.,Choose an answer.
+u14-st-guided-future-aspect-1.body,The feedback states the frozen field.,Read the explanation after answering.
+u14-st-guided-future-person-1.body,Choose the admitted record.,Choose an answer.
+u14-st-guided-future-person-1.body,The feedback states the frozen field.,Read the explanation after answering.
+u14-st-guided-impersonal-1.body,Choose the admitted record.,Choose an answer.
+u14-st-guided-impersonal-1.body,The feedback states the frozen field.,Read the explanation after answering.
+u14-st-orient.body,Proposed Unit 14 uses frozen records for future aspect lines and state lines.,Unit 14 covers future-tense aspect and impersonal constructions.
+u14-st-orient.body,Qualified review is pending.,Work through the explanations and examples.
+u14-st-orient.title,Admitted future aspect and state lines,Future aspect and state lines
+u14-st-rem-impersonal.body,Activity is not demonstrated ability.,"Practise first, then answer without the explanation in view."
+u14-st-rem-impersonal.body,Read this as a review-pending explanation.,Read the explanation and compare the examples.
+u14-st-rem-impersonal.body,"Worked examples come before the guided choice, and the independent check is separate.","Read the worked examples, then practise before answering independently."
+u14-st-teach-future-aspect-1.title,Admitted lines,Examples
+u14-st-teach-future-aspect-2.title,Admitted instruction,Explanation
+u14-st-teach-future-aspect-3.title,Admitted lines,Examples
+u14-st-teach-future-person-1.title,Admitted lines,Examples
+u14-st-teach-future-person-2.title,Admitted instruction,Explanation
+u14-st-teach-future-person-3.title,Admitted lines,Examples
+u14-st-teach-future-person-4.title,Admitted lines,Examples
+u14-st-teach-impersonal-1.body,Activity is not demonstrated ability.,"Practise first, then answer without the explanation in view."
+u14-st-teach-impersonal-1.body,Read this as a review-pending explanation.,Read the explanation and compare the examples.
+u14-st-teach-impersonal-1.body,"Worked examples come before the guided choice, and the independent check is separate.","Read the worked examples, then practise before answering independently."
+u14-st-teach-impersonal-1.title,Admitted lines,Examples
+u14-st-teach-impersonal-2.title,Admitted instruction,Explanation
+u14-st-teach-impersonal-3.title,Admitted lines,Examples
+unit-14.mappingNote,Independently stated topic scope: Aspect in future-tense contexts and impersonal constructions.,Topics: Aspect in future-tense contexts and impersonal constructions.
+unit-14.mappingNote,Mapping status is PENDING_CURRICULUM_REVIEWER.,Use the explanations and examples alongside your book.
+unit-14.mappingNote,"Proposed Lesson 14, printed pages 162-170.","This unit goes with Lesson 14 in your book, printed pages 162-170."
+unit-14.mappingNote,That assertion is not reviewer verification.,Read the matching lesson in your own book.
+unit-14.mappingNote,The Product Owner asserts that the inspected file is a legally owned copy.,Use the copy of the book you own.
+unit-14.mappingNote,"This note does not approve coverage, variance, or alignment.",Compare this unit with the matching lesson in your own book.
