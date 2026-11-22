@@ -116,7 +116,7 @@ class Unit15CumulativeReviewTest {
             waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Try again. ${noun.feedback}")
             compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
             waitTag("v2-example-ex-u14-impersonal-2"); compose.onNodeWithTag("v2-example-ex-u14-impersonal-2").performScrollTo().assertIsDisplayed()
-            compose.onNodeWithText("To refer to these states in the past tense", substring = true).performScrollTo().assertIsDisplayed()
+            compose.onNodeWithText("For the cold and bored states shown here" /* T16d: Unit 14 impersonal explanation, scoped to the states shown (prep section 4; was "To refer to these states in the past tense") */, substring = true).performScrollTo().assertIsDisplayed()
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
             val practice = reviewedGuidedPractice(p, "u14-st-rem-impersonal")
             assertEquals(listOf("u14-st-guided-impersonal-1"), practice)

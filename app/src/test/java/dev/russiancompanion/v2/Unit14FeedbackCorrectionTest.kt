@@ -31,14 +31,14 @@ class Unit14FeedbackCorrectionTest {
             assertTrue(id, item.distractorRationales.drop(1).all { !it.startsWith("Does") })
         }
         assertTrue(p.item("u14-g-future-aspect-0")!!.feedback.contains("does not automatically require perfective"))
-        assertTrue(p.item("u14-i-future-aspect-1")!!.feedback.contains("not necessarily completion of a task"))
-        assertTrue(p.item("u14-i-future-aspect-2")!!.feedback.contains("does not mean the activity lasts forever"))
+        assertTrue(p.item("u14-i-future-aspect-1")!!.feedback.contains("different from doing it to completion")) // T16d (S1 1554 PARTIAL, reworded): was "not necessarily completion of a task"
+        assertTrue(p.item("u14-i-future-aspect-2")!!.feedback.contains("an activity can still have a duration")) // T16d (S1 1559 PARTIAL, reworded): was "does not mean the activity lasts forever"
         assertTrue(p.item("u14-g-future-person-0")!!.feedback.contains("auxiliary agrees with that plural subject"))
         assertTrue(p.item("u14-i-future-person-1")!!.feedback.contains("third-person plural future"))
         assertTrue(p.item("u14-i-future-person-2")!!.distractorRationales[1].contains("first-person plural"))
         for (id in ids.takeLast(3)) {
             val item = p.item(id)!!
-            assertTrue(id, item.feedback.contains("Both options are impersonal past"))
+            assertTrue(id, item.feedback.contains("are impersonal past")) // T16d (D31c sweep): u14-i-impersonal-2 now reads "Both forms are impersonal past" (was "Both options are impersonal past")
             assertTrue(id, item.feedback.contains("neuter singular"))
             assertTrue(id, item.distractorRationales[1].contains("also impersonal past"))
         }

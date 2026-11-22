@@ -181,7 +181,8 @@ class Unit14PluralPossessionReviewPersistenceTest {
     private fun assertOrdinary14(store: LocalStore, p: V2CurriculumPack) {
         val unit = p.unit(14)!!; val steps = unit.sessions.flatMap { it.steps }
         assertEquals(6, unit.advancement!!.minimumDistinctChecks)
-        assertEquals(6, steps.filter { it.kind == "CHECK" }.flatMap { it.itemIds }.distinct().size)
+        // T16d: fourteen typed checks join the six closed checks (A2-23; was 6).
+        assertEquals(20, steps.filter { it.kind == "CHECK" }.flatMap { it.itemIds }.distinct().size)
         assertEquals(3, steps.filter { it.kind == "GUIDED" }.flatMap { it.itemIds }.distinct().size)
         assertTrue(ordinaryUnitRequirements(p, unit, store.v2LearnerView()).allowed)
     }

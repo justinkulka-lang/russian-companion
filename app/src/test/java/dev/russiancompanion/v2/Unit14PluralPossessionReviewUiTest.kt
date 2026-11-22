@@ -32,7 +32,7 @@ class Unit14PluralPossessionReviewUiTest {
             var requested=0;val before=store.governedLearnerDocument()
             compose.setContent { V2CumulativeReviewScreen(pack,store.v2LearnerView(),14,false,{},{},{},{_,_,_->},{requested=it},{},{}) }
             waitTag("v2-review-insufficient");compose.onNodeWithText(newTitle).assertExists()
-            compose.onNodeWithText("These finite recognitions do not demonstrate unseen reading",substring=true).performScrollTo().assertIsDisplayed()
+            compose.onNodeWithText("Practise the taught forms; practise unfamiliar reading",substring=true) /* T16d (D31c): was "These finite recognitions do not demonstrate unseen reading" */.performScrollTo().assertIsDisplayed()
             compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
             for(owner in listOf(8,10,13)) {
                 val tag=if(owner==8) "v2-review-repair" else "v2-review-repair-$owner"

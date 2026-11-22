@@ -70,8 +70,8 @@ class Units610SourceIntakeTest {
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
-        // T16c: follows the Units 1-30 curriculum commit e4245f3b (was 513b9271... at b1c94322). T16-n2: follows the Units 1-30 curriculum commit b1c94322 (was 5d323636... at e95b504c). T16b CI fix: follows the Units 1-30 curriculum commit e95b504c (was a1266aa0... at b5abd07b; 92f69ed5... at 35c6bc4c; d11cab3c... at 8b1ee268; df28cdd7... at d74e3d9f; 6c5a3bb3... at 1b0dd1cc; a81a842b... at cdfba75e; abe8771d... at 6db5f5b2; fd93b562... at c4c65b24; 8e2ea00e...; D7b 7a95a65d...).
-        assertEquals("f075c3d8bf6b8ace85ff6518872448258b4994b2b6e29bebed683496be198cb4", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        // T16d: follows the Units 1-30 curriculum commit f5861810 (was f075c3d8... at e4245f3b). T16c: follows the Units 1-30 curriculum commit e4245f3b (was 513b9271... at b1c94322). T16-n2: follows the Units 1-30 curriculum commit b1c94322 (was 5d323636... at e95b504c). T16b CI fix: follows the Units 1-30 curriculum commit e95b504c (was a1266aa0... at b5abd07b; 92f69ed5... at 35c6bc4c; d11cab3c... at 8b1ee268; df28cdd7... at d74e3d9f; 6c5a3bb3... at 1b0dd1cc; a81a842b... at cdfba75e; abe8771d... at 6db5f5b2; fd93b562... at c4c65b24; 8e2ea00e...; D7b 7a95a65d...).
+        assertEquals("ab51a887e64bbe789d8a1f385216d06fc3f50703bdb0e61a6954a61fd97b9957", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(
