@@ -66,6 +66,9 @@ class Units35SourceIntakeTest {
             // S1 and admitted to their routes by D29a, cited for the Unit 13 S1 claims (1462, 1470, 1482, 1508, 1511, 1523, 1528, 1542, 1543).
             "src-enwiki-sequence-of-tenses-1363198135",
             "src-ruwiki-vid-lingvistika-153277825",
+            // T16e: Повелительное наклонение oldid 152579064, frozen by S1 and admitted by D29a, cited for the Unit 15 plural/polite
+            // imperative claims (inventory lines 1593, 1600, 1627).
+            "src-ruwiki-povelitelnoe-naklonenie-152579064",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)

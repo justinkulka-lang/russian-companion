@@ -45,8 +45,8 @@ class Units1115MappingGapTest {
             assertTrue(unit.mappingNote.contains(pages.getValue(number)))
             // T16-n1 (D28c): Units 1-12 mapping notes are plain learner text; the pending status stays in mappingStatus (asserted
             // above). Units 13-15 keep their notes until their own unit tasks (was assertTrue for 11-15).
-            // T16c: Unit 13's note follows the Units 1-12 style too (was number <= 12); T16d: Unit 14 too (was <= 13).
-            if (number <= 14) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // T16c: Unit 13's note follows the Units 1-12 style too (was number <= 12); T16d: Unit 14 too (was <= 13); T16e: Unit 15 too (was <= 14).
+            if (number <= 15) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             else assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertTrue(unit.sessions.isNotEmpty())
