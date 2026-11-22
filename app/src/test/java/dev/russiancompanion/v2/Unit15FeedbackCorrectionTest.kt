@@ -38,7 +38,10 @@ class Unit15FeedbackCorrectionTest {
             assertTrue(p.item(id)!!.feedback.contains("one informal addressee"))
             assertTrue(p.item(id)!!.distractorRationales[1].contains("infinitive"))
         }
-        assertTrue(p.item("u15-i-imperative-2")!!.distractorRationales[1].contains("polite use can still address one person"))
+        // T16e: u15-i-imperative-2 now asks for the plural imperative (A2-24 constant-key repair); the polite-use point moves from the
+        // rationale ("polite use can still address one person") to the feedback, and the rationale names the singular foil.
+        assertTrue(p.item("u15-i-imperative-2")!!.feedback.contains("one person politely"))
+        assertTrue(p.item("u15-i-imperative-2")!!.distractorRationales[1].contains("singular imperative, not the plural imperative"))
         for (id in listOf("u15-g-aspect-consolidate-0", "u15-i-aspect-consolidate-1"))
             assertTrue(p.item(id)!!.feedback.contains("say/tell meaning shown here"))
         assertTrue(p.item("u15-i-aspect-consolidate-2")!!.feedback.contains("rather than assuming that adding any prefix"))
