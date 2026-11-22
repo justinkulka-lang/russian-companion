@@ -690,7 +690,7 @@ class ReauditCorrectionTest {
         place(store, located.first.id, located.first.steps.indexOfFirst { it.id == step.id })
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithText("Progress").performClick()
-        compose.onNodeWithText("This count includes historical rows and is not current prescribed credit.", substring = true)
+        compose.onNodeWithText("This count includes earlier answers, not only the checks this unit requires.", substring = true) // T16d (D32b): was "This count includes historical rows and is not current prescribed credit."
             .performScrollTo()
             .assertIsDisplayed()
     }

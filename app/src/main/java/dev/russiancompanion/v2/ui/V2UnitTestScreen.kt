@@ -21,7 +21,7 @@ internal fun V2UnitCourseworkSection(pack: V2CurriculumPack, learner: V2LearnerV
         if (!checked) {
             V2SecondaryButton("I did this in my binder", onBinderSelfCheck, tag = "v2-binder-self-check")
         } else {
-            Text("Self-check recorded. This is your own check, not a demonstrated app check.", modifier = Modifier.semantics { testTag = "v2-binder-status" })
+            Text("Self-check recorded. Marking this done records your own check; it is not scored.", modifier = Modifier.semantics { testTag = "v2-binder-status" })
             task.modelAnswer?.let { Text("Model answer for comparison: $it", modifier = Modifier.semantics { testTag = "v2-binder-model" }) }
         }
     }

@@ -56,7 +56,7 @@ class Unit28TimingTransferTest {
             store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted=true,currentUnitNumber=28,startingPoint="RESUME_FROM_BOOK",currentSessionId=owner.first.id,currentStepIndex=owner.first.steps.indexOf(step)).verifiedResume(p))
             compose.setContent { V2App(store=store,pack=p,onRetryOpen={}) };compose.onNodeWithTag("v2-continue").performClick()
             compose.onNodeWithTag("v2-option-${i.id}-an absolute present label").performScrollTo().performClick()
-            compose.onNodeWithTag("v2-item-feedback-${i.id}").performScrollTo().assertTextEquals("Not the reviewed answer. ${i.feedback}")
+            compose.onNodeWithTag("v2-item-feedback-${i.id}").performScrollTo().assertTextEquals("Not quite. Try again. ${i.feedback}")
             assertFalse(i.id in creditItemIds(p,store.v2LearnerView()))
         }
     }

@@ -118,6 +118,15 @@ internal object V2DesignDiagnostics {
     private fun widenedNarration(value: String): Boolean = lintedSentences(value)
         .any { sourceNarration.containsMatchIn(it) || assessmentCommentary.containsMatchIn(it) || workflowAndFraming.containsMatchIn(it) }
     private fun tableCellMarkup(value: String): Boolean = lintedSentences(value).any { tableCell.containsMatchIn(it) }
+    /**
+     * T16d (owner decision D32b): the learner-voice rules applied to one hardcoded UI string (governance terms, provenance and
+     * widened narration, table-cell markup), with the same patterns and notice exemptions as the pack fields above.
+     */
+    internal fun learnerVoiceRules(value: String): List<String> = buildList {
+        if (governance.containsMatchIn(value)) add("LEARNER_GOVERNANCE_TERM")
+        if (provenanceNarration.containsMatchIn(value) || widenedNarration(value)) add("LEARNER_PROVENANCE_NARRATION")
+        if (tableCellMarkup(value)) add("LEARNER_TABLE_CELL_MARKUP")
+    }
     private val answerInstruction = Regex("\\b(?:choose|select|selecting|the answer|matching description|is the matching)\\b", RegexOption.IGNORE_CASE)
     private val sentenceBreak = Regex("(?<=[.;!?])\\s+")
 

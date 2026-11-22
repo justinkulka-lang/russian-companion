@@ -40,7 +40,7 @@ class Unit6AnimacyTransferTest {
   val p=pack();val i=p.item("u6-i-animacy-3")!!;val step=p.unit(6)!!.sessions.flatMap{it.steps}.single{i.id in it.itemIds};val owner=p.step(step.id)!!
   LocalStore.openInMemory(context()).use { store ->
    store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted=true,currentUnitNumber=6,startingPoint="RESUME_FROM_BOOK",currentSessionId=owner.first.id,currentStepIndex=owner.first.steps.indexOf(step)).verifiedResume(p));compose.setContent{V2App(store=store,pack=p,onRetryOpen={})};compose.onNodeWithTag("v2-continue").performClick()
-   compose.onNodeWithTag("v2-option-${i.id}-${i.options[1]}").performScrollTo().performClick();compose.onNodeWithTag("v2-item-feedback-${i.id}").performScrollTo().assertTextEquals("Not the reviewed answer. ${i.feedback}");assertFalse(i.id in creditItemIds(p,store.v2LearnerView()))
+   compose.onNodeWithTag("v2-option-${i.id}-${i.options[1]}").performScrollTo().performClick();compose.onNodeWithTag("v2-item-feedback-${i.id}").performScrollTo().assertTextEquals("Not quite. Try again. ${i.feedback}");assertFalse(i.id in creditItemIds(p,store.v2LearnerView()))
    compose.onNodeWithTag("v2-remediation-${i.id}").performScrollTo().performClick();compose.onNodeWithTag("v2-step-title").assertTextEquals("Review animate pairs and the inanimate chair");compose.onNodeWithTag("v2-example-ex-u6-animacy-transfer-chair").performScrollTo().assertIsDisplayed()
   }
  }

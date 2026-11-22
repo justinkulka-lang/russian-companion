@@ -192,7 +192,7 @@ internal fun V2LabScreen(
                 if (recorded.correct) {
                     "Recorded as correct. This optional practice does not complete a required check. ${item.feedback}"
                 } else {
-                    "Not the reviewed answer. ${item.feedback}"
+                    "Not quite. Try again. ${item.feedback}"
                 },
                 modifier = Modifier.semantics { testTag = "v2-lab-feedback" },
             )

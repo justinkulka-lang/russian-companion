@@ -74,7 +74,7 @@ class Unit29ShortAdjectiveCorrectionTest {
             compose.onNodeWithTag("v2-option-${item.id}-${item.options.single { it.startsWith("Long adjective") }}").assertDoesNotExist()
             compose.onNodeWithTag("v2-continue").performClick()
             compose.onNodeWithTag("v2-option-${item.id}-${item.options.single { it.startsWith("Long adjective") }}").performScrollTo().performClick()
-            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Not the reviewed answer. ${item.feedback}")
+            compose.onNodeWithTag("v2-item-feedback-${item.id}").performScrollTo().assertTextEquals("Not quite. Try again. ${item.feedback}")
             assertFalse(item.id in creditItemIds(p, store.v2LearnerView()))
         }
     }

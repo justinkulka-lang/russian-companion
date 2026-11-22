@@ -51,7 +51,7 @@ class Unit13ReportedTransferTest {
    compose.setContent { V2App(store=store,pack=p,onRetryOpen={}) };compose.onNodeWithTag("v2-continue").performClick()
    // The existing direct/Moscow checks share this step; the final item remains reachable.
    compose.onNodeWithTag("v2-option-${i.id}-${i.options[1]}").performScrollTo().performClick()
-   compose.onNodeWithTag("v2-item-feedback-${i.id}").performScrollTo().assertTextEquals("Not the reviewed answer. ${i.feedback}")
+   compose.onNodeWithTag("v2-item-feedback-${i.id}").performScrollTo().assertTextEquals("Not quite. Try again. ${i.feedback}")
    assertFalse(i.id in creditItemIds(p,store.v2LearnerView()))
   }
  }

@@ -198,7 +198,7 @@ class UnitTestAndBinderTest {
                 } else compose.onNodeWithTag("v2-test-option-$index-$value").performScrollTo().performClick()
                 compose.waitUntil(30_000) { s.v2LearnerView().unitTestAttempts.single().answers.size == index + 1 }
             }
-            assertTrue(compose.onAllNodesWithText("Not the reviewed answer.", substring = true).fetchSemanticsNodes().isEmpty())
+            assertTrue(compose.onAllNodesWithText("Not quite. Try again.", substring = true).fetchSemanticsNodes().isEmpty())
             compose.onNodeWithTag("v2-unit-test-submit").performScrollTo().assertIsEnabled().performClick()
             waitTag("v2-unit-test-result")
             compose.onNodeWithTag("v2-unit-test-result").assertTextEquals("15 of 20 correct. Pass mark 80 percent. Not passed.")

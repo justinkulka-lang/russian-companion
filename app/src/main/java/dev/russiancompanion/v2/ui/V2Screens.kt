@@ -641,7 +641,7 @@ internal fun V2SessionScreen(
             if (selected != null) {
                 val correct = scoreCheckedResponse(item, selected) == true
                 Text(
-                    if (correct) "Recorded as correct. ${item.feedback}" else "Not the reviewed answer. ${item.feedback}",
+                    if (correct) "Recorded as correct. ${item.feedback}" else "Not quite. Try again. ${item.feedback}",
                     modifier = Modifier.semantics { testTag = "v2-item-feedback-${item.id}" },
                 )
                 selectedWrongOptionRationale(item, selected)?.let { rationale ->
@@ -758,7 +758,7 @@ internal fun V2AlphabetLabScreen(
         Text("Letter board", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-section-letter-board" })
         V2LetterBoard(pack.letters, selectedId) { selectedId = it.id }
         selected?.let { letter ->
-            V2Status("${letter.uppercase} ${letter.lowercase} · ${letter.group} · pending review")
+            V2Status("${letter.uppercase} ${letter.lowercase} · ${letter.group}")
         }
         Spacer(Modifier.height(12.dp))
         Text("Print pairs", style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-section-print-pairs" })
@@ -846,7 +846,7 @@ internal fun V2ProgressScreen(
             V2Status("Past completion records need current evidence: ${historicalOnly.sorted().joinToString()}")
         }
         V2Status("Book self-attestations: ${learner.bookAttestedUnits.sorted().joinToString().ifBlank { "none" }}")
-        V2Status("In-app checks marked correct: ${learner.correctItemIds.size}. This count includes historical rows and is not current prescribed credit.")
+        V2Status("In-app checks answered correctly: ${learner.correctItemIds.size}. This count includes earlier answers, not only the checks this unit requires.")
         if (objectiveLines == null) {
             V2Status("Preparing objective state")
         } else {
