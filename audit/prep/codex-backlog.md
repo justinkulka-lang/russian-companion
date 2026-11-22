@@ -24,7 +24,7 @@ Checks, using the full prompt the coordinator gave on 11/21 19:09:
 10. References, tasks and A2-28.
 11. CI fix, plus pins and hashes.
 
-## 2. T16d check: D32b UI strings, Unit 14 (due once T16d is DONE)
+## 2. T16d check: D32b UI strings, Unit 14 (DUE NOW: DONE 91b8bf27, CI 44978133107 passed on 860e96e4)
 Commits: d8af77f8 (D32b UI strings), f5861810 (Unit 14 content), 860e96e4 (pins). Head when pushed: 860e96e4; CI pending.
 - D32b: confirm "Not the reviewed answer." is gone (V2PracticeFlows.kt:195, V2Screens.kt:644) and that the three further fixes are present (V2Screens.kt:761, :849; V2UnitTestScreen.kt:24). Then check the three exemption kinds in UiStringLintTest:
   - the D31b labels;
@@ -41,5 +41,7 @@ Commits: d8af77f8 (D32b UI strings), f5861810 (Unit 14 content), 860e96e4 (pins)
   - The transformer trim fix for trailing spaces in teaching cards changes nothing else.
 - Pins and hashes, recomputed.
 
-## 3. Later unit checks
+## 3. T16e check: Unit 15 (due once T16e is DONE)
+
+## 4. Later unit checks
 Add one entry each time a unit task reports DONE.
