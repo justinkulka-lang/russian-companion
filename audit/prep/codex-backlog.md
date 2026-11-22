@@ -24,12 +24,22 @@ Checks, using the full prompt the coordinator gave on 11/21 19:09:
 10. References, tasks and A2-28.
 11. CI fix, plus pins and hashes.
 
-## 2. T16d check: D32b UI strings, Unit 14 (due when T16d is DONE)
-Check:
-- Every learner-visible UI string literal has been linted and fixed.
-- "Not the reviewed answer." is gone.
-- A UI-literal lint test exists.
-- Then the standard unit check for Unit 14, with S1 verdicts (aspect and Повелительное наклонение) and the Unit 14 sweep rows.
+## 2. T16d check: D32b UI strings, Unit 14 (due once T16d is DONE)
+Commits: d8af77f8 (D32b UI strings), f5861810 (Unit 14 content), 860e96e4 (pins). Head when pushed: 860e96e4; CI pending.
+- D32b: confirm "Not the reviewed answer." is gone (V2PracticeFlows.kt:195, V2Screens.kt:644) and that the three further fixes are present (V2Screens.kt:761, :849; V2UnitTestScreen.kt:24). Then check the three exemption kinds in UiStringLintTest:
+  - the D31b labels;
+  - the V2AnswerFeedback.kt rationale fragments. Code says these are "never displayed". Verify that independently: no path renders them.
+  - the identifier-like literals. The exemption must not hide learner-visible text.
+  Finally, run your own probe over every UI literal.
+- Unit 14:
+  - 20/14 counts; typed keys and their exact stress.
+  - The full future paradigms are taught before the checks: future-tense:41/44/47, verbs.csv:3/245/1485.
+  - Facts: 10 MARK / 3 REWORD. Check S1 PARTIAL 1554 and 1559 against Вид:4, Grammatical aspect:86 and past-tense:16-17.
+  - быть is taught as imperfective, and the source's "perfective быть" clause is not used.
+  - 18 phrases; the 62 sweep rows; zero lint hits.
+  - References, binder, tutor; A2-28 record 8,8,8,8,1,0.
+  - The transformer trim fix for trailing spaces in teaching cards changes nothing else.
+- Pins and hashes, recomputed.
 
 ## 3. Later unit checks
 Add one entry each time a unit task reports DONE.
