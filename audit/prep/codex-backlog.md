@@ -41,7 +41,15 @@ Commits: d8af77f8 (D32b UI strings), f5861810 (Unit 14 content), 860e96e4 (pins)
   - The transformer trim fix for trailing spaces in teaching cards changes nothing else.
 - Pins and hashes, recomputed.
 
-## 3. T16e check: Unit 15 (due once T16e is DONE)
+## 3. T16e check: Unit 15 (DUE NOW: abaaa6b4, 1454d95f, 558155f3; DONE 25b3ade2; CI 45047956901 passed on 558155f3)
+- 20 checked / 14 typed. Check the keys (verbs.csv:3/6/19/20/30/62) and the new teaching card u15-st-teach-aspect-consolidate-4.
+- u15-i-imperative-2 is redesigned to the plural imperative. Confirm it no longer duplicates another check's answer.
+- 87 of 90 sweep rows applied. Confirm that the 3 skipped rows really were already met.
+- Facts: 7 MARK / 12 REWORD / 2 REMOVE. Check the Повелительное наклонение (152579064) citations on markers 1593, 1600 and 1627.
+- D4 gap sentence; references, binder and tutor; A2-28 record 8,8,8,8,2,0.
+- Test changes in Unit15AspectPreparationTest and Unit15FeedbackCorrectionTest are legitimate. Recompute pins and hashes.
 
-## 4. Later unit checks
+## 4. T16f check: Block 3 close-out (due once T16f is DONE)
+
+## 5. Later unit checks
 Add one entry each time a unit task reports DONE.
