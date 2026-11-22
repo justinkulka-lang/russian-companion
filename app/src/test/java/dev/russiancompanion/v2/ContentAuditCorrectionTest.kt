@@ -570,7 +570,8 @@ class ContentAuditCorrectionTest {
                 teach.id in it.instructionStepIds && remediation.id in it.remediationStepIds
             }
             // T16: Unit 11 past-read remediation repeats its whole session's teaching (was equal to u11-st-teach-past-read-2).
-            if ((number == 3 && topic == "gender") || (number == 13 && topic == "past-aspect") ||
+            // T16f (CC021): Unit 12 future-imp remediation repeats its whole session's teaching (was equal to u12-st-teach-future-imp-2).
+            if ((number == 3 && topic == "gender") || (number == 13 && topic == "past-aspect") || (number == 12 && topic == "future-imp") ||
                 (number == 11 && topic in listOf("past-aspect", "past-read")) || (number == 28 && topic in listOf("imperfective-adverb", "perfective-adverb")) || (number == 21 && topic == "purpose") ||
                 (number == 24 && topic in listOf("stand-ins", "word-order-contrast")) ||
                 (number == 26 && topic == "letter-writing")) {
