@@ -59,9 +59,11 @@ class UnitTestAndBinderTest {
         unitTestPlan(p, p.unit(16)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(8, it.typedCount) }
         unitTestPlan(p, p.unit(17)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(11, it.typedCount) }
         // T15b: Unit 7 now has typed items. T15c: Unit 8 too. T15d: Unit 9 too. T15e: Unit 10 too. T16: Unit 11 too. T16b: Unit 12
-        // too; T16c: Unit 13 too; T16d: Unit 14 too; T16e: Unit 15 too; T17a: Unit 16 too; T17b: Unit 17 too. Units 11-17 all have unit tests, so Unit 18 is
-        // now the first unit whose only shortfall is having no typed items (was Unit 17; before that Unit 16, then Unit 12).
-        assertTrue(unitTestUnavailableReason(p, p.unit(18)!!)!!.contains("0 typed items"))
+        // too; T16c: Unit 13 too; T16d: Unit 14 too; T16e: Unit 15 too; T17a: Unit 16 too; T17b: Unit 17 too. Units 11-17 all have unit tests. Units 18-21 have
+        // fewer than 10 checked items, so Unit 22 (14 checks) is now the first unit whose only shortfall is having no typed items
+        // (was Unit 17; before that Unit 16, then Unit 12).
+        assertTrue(unitTestUnavailableReason(p, p.unit(18)!!)!!.contains("at least 10 are needed"))
+        assertTrue(unitTestUnavailableReason(p, p.unit(22)!!)!!.contains("0 typed items"))
         val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })
         assertTrue(unitTestUnavailableReason(few, few.unit(2)!!)!!.contains("at least 10 are needed"))
         assertTrue(courseworkDefects(p).isEmpty())

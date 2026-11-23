@@ -274,7 +274,8 @@ class CumulativeReviewA228Test {
             val measured = listOf(slots.size, slots.map { it.objectiveId }.distinct().size, slots.map { it.skill }.distinct().size,
                 slots.count { it.ownerUnit < t }, run, excluded)
             println("A228-UNIT17 items/objectives/skills/earlier/run/excluded=$measured " + slots.joinToString { "${it.objectiveId}/${it.itemId}" })
-            assertEquals(listOf(8, 8, 8, 8, 2, 0), measured)
+            // T17b: the measured record (the longest consecutive-unit run is 3, below the four-unit window checked next).
+            assertEquals(listOf(8, 8, 8, 8, 3, 0), measured)
             val window = (14..17).map { u -> a.getValue(u).slots.map { it.itemId }.toSet() }
             assertTrue(window.reduce { x, y -> x intersect y }.isEmpty())
         }
