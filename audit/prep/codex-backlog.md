@@ -49,7 +49,19 @@ Commits: d8af77f8 (D32b UI strings), f5861810 (Unit 14 content), 860e96e4 (pins)
 - D4 gap sentence; references, binder and tutor; A2-28 record 8,8,8,8,2,0.
 - Test changes in Unit15AspectPreparationTest and Unit15FeedbackCorrectionTest are legitimate. Recompute pins and hashes.
 
-## 4. T16f check: Block 3 close-out (due once T16f is DONE)
+## 4. T16f check: Block 3 close-out (DUE NOW: 16350eb1, 64d04b4b, 143e5730; DONE f2ad5aad marks Block 3 complete; CI 45067573646 passed on 143e5730)
+- block3.html: 3 clips (дать, дом, стол). Confirm that leaving out cue/teaching-only uses (быть, ли) is correct under the listen-check rule.
+- WC005: labels in Units 12, 14 and 15 come from frozen table fields. CC021: all 100 Units 11-15 checks are covered by remediation. CC024: сказа́ть is glossed "say, tell". WC004: the nationality reports use the source's English. WC009: links.
+- 22 disposition rows: 16 FIXED (check each fix exists), and BOUNDED_SCOPE or DEFERRED rows that are honest. 40 CC036 rows, justified individually.
+- Block 3 is literally complete against WORK_QUEUE.md lines 161-166.
 
-## 5. Later unit checks
+## 5. T17a check: D34 and Unit 16 (due once T17a is DONE)
+Commits: 6d6fd938 (D34), 569341cc (Unit 16), 43996033 (pins), then later commits.
+- D34: locators §15.8 p177/PDF189, ex 8/3 p89/PDF101 and ex 10/1 p109/PDF121. Check the +12 offset against the existing mappings. The CC032 book-only lists per unit are accurate.
+- Unit 16: 20/8; 52 MARK / 12 REWORD / 2 REMOVE; the S1 claim (line 1766) cites Wiktionary под 92761073 lines 106, 135 and 136.
+- Shipped text takes the "longest clean stretch" of each cited line. Confirm each one is still a verbatim contiguous substring of the frozen line.
+- Departures: the two means checks stay at 2 options (prompt-letter rule), and the "became" explanations stay. Confirm neither is a weakening.
+- ref-u1620-attribution edits ("frozen" changed to "pinned", "Proposed" dropped). The Units 18-20 digests move only because of that.
+
+## 6. Later unit checks
 Add one entry each time a unit task reports DONE.
