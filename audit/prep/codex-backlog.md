@@ -64,5 +64,10 @@ Commits: 6d6fd938 (D34), 569341cc (Unit 16), 43996033 (pins), then later commits
 - ref-u1620-attribution edits ("frozen" changed to "pinned", "Proposed" dropped). The Units 18-20 digests move only because of that.
 - CI fix f9d776ae (run 45091734015 failed on a03fe699): Units1620SourceIntakeTest now accepts T17a records from the S1 and Units 21-25 freezes through the D7b verified path (verbatim in the manifest-named file). Confirm this is no weaker than D7b, that only those four records use it, and that a record from an unlisted freeze or revision is still rejected.
 
-## 6. Later unit checks
+## 6. T17b check: D1 and Unit 17 (due once T17b is DONE; head 102e0ed9; CI 45178861958 pending)
+- D1: the validator's count-question rule moves from layout wording ("two-hour row") to meaning. It still rejects a wrong count and a missing count context. Guard hash c800faf9 -> ba035cd3. Run your own probes.
+- Unit 17: counts, the 208 sweep rows, the ReadyRussian Grammar 24 citations (only the CC BY-SA handout portion), facts, phrases, references, the A2-28 record [8,8,8,8,3,0].
+- Test moves in UnitTestAndBinderTest (examples shift to Units 18 and 22) are legitimate. Recompute the pins.
+
+## 7. Later unit checks
 Add one entry each time a unit task reports DONE.
