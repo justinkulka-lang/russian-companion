@@ -1,0 +1,78 @@
+Checked 23c636c45d1129dd3a637b07c753f0471a9d1490, the fetched branch head. No tracked files changed; nothing committed or pushed.
+
+Fresh verification: 17 tests passed, full Kotlin validator returned zero errors, and the phrase audit returned no Unit 14–15 failures. Probe and test output.
+
+Item 2 — T16d: overall FAIL
+
+Checklist item	Result	Evidence
+
+Five D32b wording changes	PASS	Both feedback prefixes and the three additional replacements are present: V2PracticeFlows.kt:195, V2Screens.kt:644, :761, :849; V2UnitTestScreen.kt:24.
+D31b label exemption	PASS for existing labels	Existing labels match the approved status mapping. The test exempts the entire file, however, rather than just those labels: UiStringLintTest.kt:27.
+Rationale fragments never displayed	PASS	Every matching rationale returns null at V2AnswerFeedback.kt:21. All three rendering paths use this function: V2Screens.kt:647, V2PracticeFlows.kt:199, V2CumulativeReviewScreen.kt:63. Five fragment probes each returned null.
+Identifier exemption cannot hide learner text	FAIL	UiStringLintTest.kt:28 exempts by spelling alone. Text("review-pending") and Text("APPROVED") would be exempt despite triggering the lint. Restrict exemptions to actual identifier uses.
+Every UI literal is checked	FAIL	Independent extraction found 582 literals; the test extracts 574. It discards raw strings at UiStringLintTest.kt:75 and neutralizes nested interpolation literals. A nested "Release stays blocked." is consequently hidden. Also, the scan omits rendered helper strings outside its two directories.
+Counts, keys and exact stress	PASS	20 checked / 14 typed, 70%. All 14 keys match their cited frozen forms. See the definitions at apply_t16d_unit_14.py:132. Every check is in u14-s-checks; fresh A2-24 findings: 0.
+Future paradigms taught first	PASS	All six forms of each paradigm precede the checks. Frozen witnesses: future-tense-3353822.txt:41,44,47; verbs.csv:3 for the six perfective forms, :245 and :1485 for the two additional keys.
+Facts and S1 qualifications	PASS	10 MARK / 3 REWORD. Entries 1554 and 1559 retain only the supported distinctions: dispositions:50, :79; witnesses vid-lingvistika:4, grammatical-aspect:86, past-tense:16–17. All current 72 markers pass the frozen-source tests.
+Classification of быть	PASS	Teaching explicitly calls it imperfective; the erroneous Wikibooks “perfective быть” clause is absent from learner text. Transformer:89; verbs.csv:2.
+Phrases, sweep and automatic lint	PASS	18 phrases, all attested; broader shared-field phrase audit also clean. 62 sweep rows applied, with subsequent documented content rewrites replacing some intermediate wording. Automatic learner-lint findings: 0. Phrase test:214.
+Manual learner-text scan	FAIL	Misses listed below remain despite zero automatic hits.
+References, binder and tutor	PASS	All three references and both tasks resolve; Russian examples/forms have frozen witnesses and their claims are supported. Definitions:145.
+A2-28	PASS	Fresh measurement [8,8,8,8,1,0], matching CumulativeReviewA228Test.kt:211.
+Teaching-card trim	PASS	Controlled replay with/without the trim:388 showed only whitespace changes to five teaching bodies, consequent joined-remediation changes and derived coverage records. No Russian or factual wording changed.
+Pins, hashes and CI	PASS	Recomputed values match; details below. CI 44978133107 succeeded on exactly 860e96e4. 91b8bf27 changes only WORK_QUEUE.md.
+
+
+The manual misses are:
+
+- Unit readiness: both Units 14 and 15 display “Content complete, review pending” through V2ProgressRules.kt:76 → V2Screens.kt:435. This is outside the D31b reference-label exception and outside the UI-literal scan.
+- reviewCopy.introductions[14]: “Repairs restore all eight plural cards…” and “guided practice does not complete any fresh review check” retain assessment commentary. “Complete one assigned answer from each of the three pools” also describes the old allocation rather than the current eight-objective assignment. catalog/review-copy.json:44.
+
+Required changes: tighten the lint-test exemptions and literal extraction, include rendered helper strings, remove the readiness workflow wording, and rewrite the review introduction as plain instructions reflecting the current assignment.
+
+Item 3 — T16e: overall FAIL
+
+Checklist item	Result	Evidence
+
+Counts, typed keys and teaching order	PASS	20 checked / 14 typed, 70%. All keys match the exact stressed CSV cells at verbs.csv:3,6,19,20,30,62. All checks are in u15-s-checks; A2-24 findings: 0. The new card precedes checks: apply_t16e_unit_15.py:97; keys at :122.
+u15-i-imperative-2 repair	PASS	It now asks for the plural imperative; the two original closed checks have different answers. The typed recall counterpart intentionally retains the same plural key. Definition:103, :111.
+Sweep: 87 applied, three already met	PASS	The three omissions are exactly ref-u1115-attribution.reviewStatus and global messages unverifiedRule / wrongFeedback. The D31b mapping and earlier global replacements satisfy them. Sweep application:173.
+Facts and imperative citations	PASS	7 MARK / 12 REWORD / 2 REMOVE. Entries 1593,1600,1627 cite povelitelnoe-naklonenie-152579064.txt:58 and russian-grammar-1369617627.txt:1169. The former supports plural formation; the latter explicitly supports polite address. All current 61 markers pass frozen-source checks. Dispositions:9, :37, :153.
+D4 gap	PASS	The book-directed sentence remains; no request-context assessment is claimed. Definition:82.
+References, binder, tutor and phrases	PASS	Both references and tasks are supported. The listed phrase and the broader shared-field phrase audit pass. Definitions:143.
+A2-28	PASS	Fresh measurement [8,8,8,8,2,0], matching CumulativeReviewA228Test.kt:233.
+Named test changes	PASS	Preparation assertions expand to four teaching cards, eight examples and ten objective checks while retaining ordering and remediation equality. The feedback test follows the redesigned plural check and still checks polite use and the singular foil. Preparation test:12; feedback test:41.
+Automatic lint / manual scan	FAIL	Automatic hits: 0. The shared readiness workflow leak remains. Additionally, “Complete both review checks before continuing” is stale: the actual assignment contains eight checks. catalog/review-copy.json:45.
+Pins, hashes and CI	PASS	Recomputed values match. CI 45047956901 succeeded on exactly 558155f3. 25b3ade2 changes only WORK_QUEUE.md.
+
+
+Required change: replace the stale “both review checks” instruction with an instruction to complete every assigned item, and remove the shared readiness workflow leak.
+
+Pin and hash recomputation
+
+Tree	Release source digest	Unit 3 review-package digest
+
+T16d 860e96e4	2828ec966198ca970787bfee77b7e00a69aa893a21c6b714927764cebfa0c81a	ab51a887e64bbe789d8a1f385216d06fc3f50703bdb0e61a6954a61fd97b9957
+T16e 558155f3	f9012372005c285f56ab59bfddac89e2308850eb16d970e51247e63144003ad5	d3b04bbc40dbf00ad1fdc60a22724c5d735ab3203b61edc26f046bab11b9a657
+Current head	2589c83ec03b65266219057ccdbe9585638ac31eeffdd36421078c9f230acf46	c48824999d8866c415b4dd62bb1bbf3172a5bf327e621940002cac12aee5392a
+
+
+Also verified: D32b digest 823e8575…; both historical curriculum commit pins; all six guarded-file hashes at both task heads and current head; Unit 14–15 provenance hashes; all 28 typed-key review hashes; and equality of packaged review copy with catalog/review-copy.json.
+
+Whole-test-tree disabled-chain scan: FAIL
+
+Across 301 test source files, exactly these eight chains remain swallowed by trailing // comments:
+
+File	Line
+
+Unit6PresentReviewUiTest.kt	30
+Unit7GenderReviewUiTest.kt	33
+Unit8PresentReviewUiTest.kt	33
+Unit9NounBehaviorReviewUiTest.kt	33
+Unit10PresentReviewUiTest.kt	33
+Unit11NounReviewUiTest.kt	33
+Unit12GenderReviewUiTest.kt	33
+Unit13PresentReviewUiTest.kt	33
+
+
+Each loses .performScrollTo().assertIsDisplayed(). No additional instances found. These are the existing D36c defects, not newly introduced by T16d or T16e.

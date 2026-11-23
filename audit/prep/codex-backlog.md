@@ -24,7 +24,7 @@ Checks, using the full prompt the coordinator gave on 11/21 19:09:
 10. References, tasks and A2-28.
 11. CI fix, plus pins and hashes.
 
-## 2. T16d check: D32b UI strings, Unit 14 (DUE NOW: DONE 91b8bf27, CI 44978133107 passed on 860e96e4)
+## 2. T16d check: DONE 11/23 (FAIL on lint-test coverage and leaks; fixes in T16c-n1 per D37). Report: t16d-t16e-codex-check-at-23c636c4.txt
 Commits: d8af77f8 (D32b UI strings), f5861810 (Unit 14 content), 860e96e4 (pins). Head when pushed: 860e96e4; CI pending.
 - D32b: confirm "Not the reviewed answer." is gone (V2PracticeFlows.kt:195, V2Screens.kt:644) and that the three further fixes are present (V2Screens.kt:761, :849; V2UnitTestScreen.kt:24). Then check the three exemption kinds in UiStringLintTest:
   - the D31b labels;
@@ -41,7 +41,7 @@ Commits: d8af77f8 (D32b UI strings), f5861810 (Unit 14 content), 860e96e4 (pins)
   - The transformer trim fix for trailing spaces in teaching cards changes nothing else.
 - Pins and hashes, recomputed.
 
-## 3. T16e check: Unit 15 (DUE NOW: abaaa6b4, 1454d95f, 558155f3; DONE 25b3ade2; CI 45047956901 passed on 558155f3)
+## 3. T16e check: DONE 11/23 (content PASS; review-copy and readiness leaks go to D37)
 - 20 checked / 14 typed. Check the keys (verbs.csv:3/6/19/20/30/62) and the new teaching card u15-st-teach-aspect-consolidate-4.
 - u15-i-imperative-2 is redesigned to the plural imperative. Confirm it no longer duplicates another check's answer.
 - 87 of 90 sweep rows applied. Confirm that the 3 skipped rows really were already met.
