@@ -1,0 +1,1791 @@
+{
+ "task": "T17c (Claude Code, 2026-11-23); dispositions from audit/prep/unit-18-prep-at-20bfde5c.txt, section 3",
+ "totals": {
+  "MARK": 44,
+  "REMOVE": 1
+ },
+ "entries": [
+  {
+   "entry": "U18-E001",
+   "csvLine": 2132,
+   "ownerId": "u18-g-comparison-0",
+   "field": "item feedback",
+   "baselineSentence": "The retained full adjective compares size.",
+   "disposition": "MARK",
+   "currentSentence": "The full adjective compares size.",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "A sweep row removes the provenance narration (retained); the claim is marked."
+  },
+  {
+   "entry": "U18-E002",
+   "csvLine": 2133,
+   "ownerId": "u18-g-comparison-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "better compares quality rather than size.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E003",
+   "csvLine": 2134,
+   "ownerId": "u18-g-comparison-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "redder compares redness rather than size.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E004",
+   "csvLine": 2137,
+   "ownerId": "u18-st-rem-comparison",
+   "field": "remediation body",
+   "baselineSentence": "These retained forms concern degree of a quality, rather than naming an unrelated object.",
+   "disposition": "MARK",
+   "currentSentence": "These forms concern degree of a quality, rather than naming an unrelated object.",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "A sweep row removes the provenance narration (retained); the claim is marked."
+  },
+  {
+   "entry": "U18-E005",
+   "csvLine": 2138,
+   "ownerId": "u18-st-rem-comparison",
+   "field": "remediation body",
+   "baselineSentence": "The first compares size.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E006",
+   "csvLine": 2139,
+   "ownerId": "u18-st-rem-comparison",
+   "field": "remediation body",
+   "baselineSentence": "The second is the source gloss used by the existing choice; it can mean best in context, so better here is not a universal translation.",
+   "disposition": "MARK",
+   "currentSentence": "The second gloss can mean best in context; better is not its universal translation.",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-ad-6a2512ec-translations_en"
+   ],
+   "reason": "A sweep row removes the provenance narration (source gloss, existing choice); the better/best qualification is marked with OpenRussian лучший."
+  },
+  {
+   "entry": "U18-E007",
+   "csvLine": 2140,
+   "ownerId": "u18-st-rem-comparison",
+   "field": "remediation body",
+   "baselineSentence": "These full adjective forms can change for gender, number and case; they are not the same construction as an unchanging short comparative.",
+   "disposition": "MARK",
+   "currentSentence": "These full adjective forms can change for gender, number and case; they are not the same construction as an unchanging simple comparative.",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-mor488-comparison"
+   ],
+   "reason": "Prep section 4: simple comparative replaces short comparative; the claim is marked."
+  },
+  {
+   "entry": "U18-E008",
+   "csvLine": 2143,
+   "ownerId": "u18-st-rem-comparison",
+   "field": "remediation body",
+   "baselineSentence": "The first is a short comparative with an ending expressing a higher degree of redness; this short form does not change for gender, number or case.",
+   "disposition": "MARK",
+   "currentSentence": "The first is a simple comparative with an ending expressing a higher degree of redness; this simple comparative does not change for gender, number or case.",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-mor488-comparison"
+   ],
+   "reason": "Prep section 4: simple comparative replaces short comparative and short form; the claim is marked."
+  },
+  {
+   "entry": "U18-E009",
+   "csvLine": 2144,
+   "ownerId": "u18-st-rem-comparison",
+   "field": "remediation body",
+   "baselineSentence": "The second combines a word meaning more with the ordinary long adjective meaning kind.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E010",
+   "csvLine": 2145,
+   "ownerId": "u18-st-rem-comparison",
+   "field": "remediation body",
+   "baselineSentence": "In this two-word construction the adjective still changes for agreement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g249-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E011",
+   "csvLine": 2146,
+   "ownerId": "u18-st-rem-comparison",
+   "field": "remediation body",
+   "baselineSentence": "Not every adjective has a one-word comparative, and these examples do not give a complete formation rule for unfamiliar adjectives.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E012",
+   "csvLine": 2148,
+   "ownerId": "u18-st-rem-comparison",
+   "field": "remediation body",
+   "baselineSentence": "This retained superlative identifies the greatest size in the relevant group, rather than just a greater degree.",
+   "disposition": "MARK",
+   "currentSentence": "This superlative identifies the highest degree in the relevant group, rather than just a greater degree; besides the biggest it can mean the greatest or the largest.",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-ad-2e394cd3-translations_en"
+   ],
+   "reason": "A sweep row removes retained; prep section 4: the biggest is the example gloss, not a restriction to size (OpenRussian наибольший: the greatest, the largest)."
+  },
+  {
+   "entry": "U18-E013",
+   "csvLine": 2150,
+   "ownerId": "u18-st-rem-comparison",
+   "field": "remediation body",
+   "baselineSentence": "More and less express comparison; least identifies the lowest degree.",
+   "disposition": "MARK",
+   "currentSentence": "More and less express comparison; most identifies the highest degree and least the lowest.",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Most (наибо́лее, G:303) joins the contrast so the cue of the least check is taught; the claim is marked."
+  },
+  {
+   "entry": "U18-E014",
+   "csvLine": 2154,
+   "ownerId": "u18-i-comparison-1",
+   "field": "item feedback",
+   "baselineSentence": "This superlative identifies the greatest size in the relevant group.",
+   "disposition": "MARK",
+   "currentSentence": "This superlative identifies the highest degree in the relevant group.",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Prep section 4: the superlative is not limited to physical size; the claim is marked."
+  },
+  {
+   "entry": "U18-E015",
+   "csvLine": 2155,
+   "ownerId": "u18-i-comparison-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "more indicates a greater degree without identifying a maximum.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E016",
+   "csvLine": 2156,
+   "ownerId": "u18-i-comparison-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "less indicates a lower degree rather than a maximum.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E017",
+   "csvLine": 2158,
+   "ownerId": "u18-i-comparison-2",
+   "field": "item feedback",
+   "baselineSentence": "The word meaning more combines with the adjective meaning kind.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E018",
+   "csvLine": 2159,
+   "ownerId": "u18-i-comparison-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "least identifies the lowest degree rather than a higher degree of kindness.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E019",
+   "csvLine": 2160,
+   "ownerId": "u18-i-comparison-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "bigger compares size rather than kindness.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-g301-comparison",
+    "prov-t17c-u18-g303-comparison"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E020",
+   "csvLine": 2162,
+   "ownerId": "u18-g-relative-0",
+   "field": "item feedback",
+   "baselineSentence": "means Which apple is mine?.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E021",
+   "csvLine": 2163,
+   "ownerId": "u18-g-relative-0",
+   "field": "item feedback",
+   "baselineSentence": "This direct question selects an apple and asks about ownership.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E022",
+   "csvLine": 2164,
+   "ownerId": "u18-g-relative-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "Which book do you want?",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E023",
+   "csvLine": 2165,
+   "ownerId": "u18-g-relative-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "asks about a wanted book, not ownership of an apple.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E024",
+   "csvLine": 2166,
+   "ownerId": "u18-g-relative-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "The man who changed the world describes a person rather than asking which apple is owned.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E025",
+   "csvLine": 2168,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "— Which apple is mine?",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E026",
+   "csvLine": 2170,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "— Which book do you want?",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E027",
+   "csvLine": 2171,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "These are direct questions asking which member is selected, not relative clauses modifying an earlier noun.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E028",
+   "csvLine": 2172,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "In the apple question the selecting form agrees with a neuter singular subject in the nominative.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-g17-relative",
+    "prov-t17c-u18-g18-relative",
+    "prov-t17c-u18-n-c7a38b90-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E029",
+   "csvLine": 2173,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "In the book question it agrees with a feminine singular direct object in the accusative.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-g21-relative",
+    "prov-t17c-u18-g22-relative",
+    "prov-t17c-u18-n-23ea35f2-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E030",
+   "csvLine": 2174,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "Match the whole question: ownership of an apple differs from wanting a book.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E031",
+   "csvLine": 2176,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "The clause following the comma describes the preceding person; it does not ask which person.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E032",
+   "csvLine": 2177,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "The relative form takes masculine singular agreement from that noun, and nominative case because it is the subject of changed inside its own clause.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q173-relative",
+    "prov-t17c-u18-g17-relative",
+    "prov-t17c-u18-g18-relative",
+    "prov-t17c-u18-n-12ae9257-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E033",
+   "csvLine": 2178,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "For a relative form, gender and number come from the noun it describes; case comes from the role inside the relative clause, not automatically from the preceding noun.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E034",
+   "csvLine": 2180,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "The relative clause describes the woman.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E035",
+   "csvLine": 2181,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "Its relative form has feminine singular agreement and instrumental case after the preposition meaning with.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-g42-relative",
+    "prov-t17c-u18-g49-relative",
+    "prov-t17c-u18-n-c568bdeb-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E036",
+   "csvLine": 2182,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "Russian keeps this preposition before the relative form, while the retained English rendering places with at the end.",
+   "disposition": "MARK",
+   "currentSentence": "Russian keeps this preposition before the relative form, while the English translation places with at the end.",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "A sweep row replaces the retained English rendering with the English translation; the claim is marked."
+  },
+  {
+   "entry": "U18-E037",
+   "csvLine": 2183,
+   "ownerId": "u18-st-rem-relative",
+   "field": "remediation body",
+   "baselineSentence": "Recognizing these meanings does not demonstrate independently choosing a relative case or producing a new clause.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Commentary about what recognition demonstrates is removed (prep section 3); a practice instruction takes its place."
+  },
+  {
+   "entry": "U18-E038",
+   "csvLine": 2185,
+   "ownerId": "u18-i-relative-1",
+   "field": "item feedback",
+   "baselineSentence": "The relative clause describes the woman; its preposition meaning with takes instrumental case.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E039",
+   "csvLine": 2186,
+   "ownerId": "u18-i-relative-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "The man who changed the world describes a different person and action.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E040",
+   "csvLine": 2187,
+   "ownerId": "u18-i-relative-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "Which apple is mine?",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E041",
+   "csvLine": 2188,
+   "ownerId": "u18-i-relative-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "asks a direct question about ownership, rather than describing the woman.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E042",
+   "csvLine": 2190,
+   "ownerId": "u18-i-relative-2",
+   "field": "item feedback",
+   "baselineSentence": "The relative clause describes the man; the relative form is the subject of changed in its own clause.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E043",
+   "csvLine": 2191,
+   "ownerId": "u18-i-relative-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "The woman (who) I'm friends with describes a different person and relationship.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E044",
+   "csvLine": 2192,
+   "ownerId": "u18-i-relative-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "Which book do you want?",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U18-E045",
+   "csvLine": 2193,
+   "ownerId": "u18-i-relative-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "asks a direct question about a book rather than describing the man.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17c-u18-q40-relative",
+    "prov-t17c-u18-q168-relative",
+    "prov-t17c-u18-q170-relative",
+    "prov-t17c-u18-q172-relative",
+    "prov-t17c-u18-q173-relative"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  }
+ ],
+ "markerReviews": [
+  {
+   "ownerId": "u18-g-comparison-0",
+   "sentence": "The full adjective compares size.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-g-comparison-0",
+   "sentence": "better compares quality rather than size.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-g-comparison-0",
+   "sentence": "redder compares redness rather than size.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-comparison-1",
+   "sentence": "This superlative identifies the highest degree in the relevant group.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-comparison-1",
+   "sentence": "more indicates a greater degree without identifying a maximum.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-comparison-1",
+   "sentence": "less indicates a lower degree rather than a maximum.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-comparison-2",
+   "sentence": "The word meaning more combines with the adjective meaning kind.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-comparison-2",
+   "sentence": "least identifies the lowest degree rather than a higher degree of kindness.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-comparison-2",
+   "sentence": "bigger compares size rather than kindness.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-g-relative-0",
+   "sentence": "means Which apple is mine?.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-g-relative-0",
+   "sentence": "This direct question selects an apple and asks about ownership.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-g-relative-0",
+   "sentence": "Which book do you want?",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-g-relative-0",
+   "sentence": "asks about a wanted book, not ownership of an apple.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-g-relative-0",
+   "sentence": "The man who changed the world describes a person rather than asking which apple is owned.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-relative-1",
+   "sentence": "The relative clause describes the woman; its preposition meaning with takes instrumental case.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-relative-1",
+   "sentence": "The man who changed the world describes a different person and action.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-relative-1",
+   "sentence": "Which apple is mine?",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-relative-1",
+   "sentence": "asks a direct question about ownership, rather than describing the woman.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-relative-2",
+   "sentence": "The relative clause describes the man; the relative form is the subject of changed in its own clause.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-relative-2",
+   "sentence": "The woman (who) I'm friends with describes a different person and relationship.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-relative-2",
+   "sentence": "Which book do you want?",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-i-relative-2",
+   "sentence": "asks a direct question about a book rather than describing the man.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "These forms concern degree of a quality, rather than naming an unrelated object.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "The first compares size.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "The second gloss can mean best in context; better is not its universal translation.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 64,
+     "quote": "лучший\tлу'чший"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "These full adjective forms can change for gender, number and case; they are not the same construction as an unchanging simple comparative.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 488,
+     "quote": "Форма сравнительной степени является неизменяемой, прилагательные превосходной (как и положительной) степени характеризу"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "The first is a simple comparative with an ending expressing a higher degree of redness; this simple comparative does not change for gender, number or case.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 488,
+     "quote": "Форма сравнительной степени является неизменяемой, прилагательные превосходной (как и положительной) степени характеризу"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "The second combines a word meaning more with the ordinary long adjective meaning kind.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "In this two-word construction the adjective still changes for agreement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 249,
+     "quote": "A Russian adjective ({{wikt-lang|ru|имя прилагательное|и́мя прилага́тельное}}) is usually placed before the noun it qual"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "This two-word way is rarely used when a one-word comparative exists.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 72,
+     "quote": "добрый\tдо'брый"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "Not every adjective has a one-word comparative, and these examples do not give a complete formation rule for unfamiliar adjectives.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "This superlative identifies the highest degree in the relevant group, rather than just a greater degree; besides the biggest it can mean the greatest or the largest.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 1017,
+     "quote": "наибольший\tнаибо'льший"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-comparison",
+   "sentence": "More and less express comparison; most identifies the highest degree and least the lowest.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 301,
+     "quote": "[[Comparison (grammar)|Comparison]] forms are usual only for qualitative adjectives and adverbs. Comparative and superla"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 303,
+     "quote": "An alternative is to add an adverb to the positive form of the adjective. The adverbs used for this are бо́лее 'more' / "
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "— Which apple is mine?",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "— Which book do you want?",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "These are direct questions asking which member is selected, not relative clauses modifying an earlier noun.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "In the apple question the selecting form agrees with a neuter singular subject in the nominative.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 1090,
+     "quote": "яблоко\tя'блоко"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "In the book question it agrees with a feminine singular direct object in the accusative.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 21,
+     "quote": "* [[accusative]] ({{lang|ru|вини́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 22,
+     "quote": "** direct object;"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\tкни'га"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "— What time is it?",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 169,
+     "quote": ":What time is it? - '''Который час?'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": ", where the selecting form agrees with a masculine singular subject.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 169,
+     "quote": ":What time is it? - '''Который час?'''"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 26,
+     "quote": "час\tчас"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "Match the whole question: ownership of an apple differs from wanting a book.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "The clause following the comma describes the preceding person; it does not ask which person.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "The relative form takes masculine singular agreement from that noun, and nominative case because it is the subject of changed inside its own clause.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 2,
+     "quote": "человек\tчелове'к"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "For a relative form, gender and number come from the noun it describes; case comes from the role inside the relative clause, not automatically from the preceding noun.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "The relative clause describes the woman.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "Its relative form has feminine singular agreement and instrumental case after the preposition meaning with.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 42,
+     "quote": "* [[Instrumental case|instrumental]] ({{lang|ru|твори́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 49,
+     "quote": "** prepositions of position: {{lang|ru|за}} 'behind', {{lang|ru|перед}} 'in front of', {{lang|ru|над}} 'above', {{lang|r"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 36,
+     "quote": "женщина\tже'нщина"
+    }
+   ]
+  },
+  {
+   "ownerId": "u18-st-rem-relative",
+   "sentence": "Russian keeps this preposition before the relative form, while the English translation places with at the end.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 40,
+     "quote": "You may notice that '''какой''' ('what kind'), '''который''' ('what/which'), and '''чей''' ('whose'), are adjectives. Th"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 168,
+     "quote": ":Which apple is mine? - '''Которое яблоко моё?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 170,
+     "quote": ":Which book do you want? - '''Которую книгу вы хотите?'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 172,
+     "quote": ":The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''"
+    },
+    {
+     "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+     "line": 173,
+     "quote": ":The man who changed the world - '''Человек, который изменил мир'''"
+    }
+   ]
+  }
+ ],
+ "markerReviewsNote": "Each Unit 18 marker with no Cyrillic word names the frozen files and lines of its cited records: a page line by number and exact quote, an OpenRussian row by its bare and accented headwords. Lines are 1-based."
+}

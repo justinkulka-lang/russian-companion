@@ -37,7 +37,8 @@ class UnitTestAndBinderTest {
             // T16c: Unit 13 reaches 20 checked items with 11 typed, so it also has a unit test (was <= 12).
             // T16d: Unit 14 reaches 20 checked items with 14 typed (was <= 13); T16e: Unit 15 likewise (was <= 14).
             // T17a: Unit 16 reaches 20 checked items with 8 typed (was <= 15); T17b: Unit 17 reaches 36 checked items with 11 typed (was <= 16).
-            if (unit.number <= 17) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
+            // T17c: Unit 18 reaches 20 checked items with 16 typed (was <= 17).
+            if (unit.number <= 18) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
             else { assertNull(unitTestPlan(p, unit)); assertNotNull(unitTestUnavailableReason(p, unit)) }
         }
         unitTestPlan(p, p.unit(1)!!)!!.let { assertEquals(10, it.itemIds.size); assertEquals(3, it.typedCount) }
@@ -58,11 +59,13 @@ class UnitTestAndBinderTest {
         unitTestPlan(p, p.unit(15)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(14, it.typedCount) }
         unitTestPlan(p, p.unit(16)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(8, it.typedCount) }
         unitTestPlan(p, p.unit(17)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(11, it.typedCount) }
+        unitTestPlan(p, p.unit(18)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(16, it.typedCount) }
         // T15b: Unit 7 now has typed items. T15c: Unit 8 too. T15d: Unit 9 too. T15e: Unit 10 too. T16: Unit 11 too. T16b: Unit 12
-        // too; T16c: Unit 13 too; T16d: Unit 14 too; T16e: Unit 15 too; T17a: Unit 16 too; T17b: Unit 17 too. Units 11-17 all have unit tests. Units 18-21 have
+        // too; T16c: Unit 13 too; T16d: Unit 14 too; T16e: Unit 15 too; T17a: Unit 16 too; T17b: Unit 17 too; T17c: Unit 18 too. Units 11-18 all have unit tests. Units 19-21 have
         // fewer than 10 checked items, so Unit 22 (14 checks) is now the first unit whose only shortfall is having no typed items
         // (was Unit 17; before that Unit 16, then Unit 12).
-        assertTrue(unitTestUnavailableReason(p, p.unit(18)!!)!!.contains("at least 10 are needed"))
+        // T17c: Unit 19 (8 checks) is now the first unit below the minimum (was Unit 18, which now has a unit test).
+        assertTrue(unitTestUnavailableReason(p, p.unit(19)!!)!!.contains("at least 10 are needed"))
         assertTrue(unitTestUnavailableReason(p, p.unit(22)!!)!!.contains("0 typed items"))
         val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })
         assertTrue(unitTestUnavailableReason(few, few.unit(2)!!)!!.contains("at least 10 are needed"))

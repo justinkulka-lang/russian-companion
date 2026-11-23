@@ -200,7 +200,12 @@ class BatchAUnits71620Test {
     @Test
     fun currentBatchAExplainsEveryRetainedAndExpandedConstructAndRejectsWrongKeys() {
         val live = pack()
-        val current = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
+        // T17c: the 16 typed Unit 18 checks and 2 typed Unit 18 guided items (no options, a frozen Russian key) are counted
+        // separately; every check below still applies to the 47 closed Batch A items (was: all Batch A items, 47).
+        val typed = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES && it.kind == "TYPED_FORM" }
+        assertEquals(18, typed.size)
+        assertTrue(typed.all { it.objectiveId.startsWith("obj-u18-") && it.options.isEmpty() })
+        val current = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES && it.kind != "TYPED_FORM" }
         val referenceIds = setOf("u17-g-clock-0", "u17-i-clock-1", "u17-i-clock-2")
         val expandedFeatures = mapOf(
             "u17-g-question-apple" to "QUESTION_OBJECT_SELECTION_GUIDED",

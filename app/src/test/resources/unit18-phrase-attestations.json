@@ -1,0 +1,60 @@
+{
+ "task": "T17c (Claude Code, 2026-11-23)",
+ "phrases": [
+  {
+   "phrase": "Которое яблоко моё",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 168
+  },
+  {
+   "phrase": "Которую книгу вы хотите",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 170
+  },
+  {
+   "phrase": "Который час",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 169
+  },
+  {
+   "phrase": "бо́лее до́брый",
+   "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+   "line": 303
+  },
+  {
+   "phrase": "изменил мир",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 173
+  },
+  {
+   "phrase": "книгу вы хотите",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 170
+  },
+  {
+   "phrase": "который изменил мир",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 173
+  },
+  {
+   "phrase": "с кото́рой я дружу́",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 172
+  },
+  {
+   "phrase": "са́мый до́брый",
+   "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+   "line": 303
+  },
+  {
+   "phrase": "я дружу́",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 172
+  },
+  {
+   "phrase": "яблоко моё",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 168
+  }
+ ]
+}

@@ -46,8 +46,8 @@ class Units1620SourceIntakeTest {
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
             // T17a: Unit 16's note follows the Units 1-15 plain style (was asserted for all of Units 16-20); the pending status
-            // stays in mappingStatus (asserted above). T17b: Unit 17 too (was number <= 16).
-            if (number <= 17) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // stays in mappingStatus (asserted above). T17b: Unit 17 too (was number <= 16). T17c: Unit 18 too (was number <= 17).
+            if (number <= 18) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             else assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertEquals(range, "${facts.printedPageStart}-${facts.printedPageEnd}")
@@ -152,7 +152,8 @@ class Units1620SourceIntakeTest {
                 }
             } else if (record.sourceId == "src-content-audit-research") {
                 assertContentAuditResearch(record)
-            } else if ((record.itemId.startsWith("prov-d7b-") || record.itemId.startsWith("prov-t17a-") || record.itemId.startsWith("prov-t17b-")) &&
+            } else if ((record.itemId.startsWith("prov-d7b-") || record.itemId.startsWith("prov-t17a-") || record.itemId.startsWith("prov-t17b-") ||
+                record.itemId.startsWith("prov-t17c-")) &&
                 record.transformation in setOf("selection", "readyrussian markup selection")) {
                 // D7b selection records may cite a frozen page from another unit freeze; the segment must still be
                 // verbatim in the file that a FREEZE.json manifest binds to the recorded revision.
@@ -160,7 +161,8 @@ class Units1620SourceIntakeTest {
                 // are checked the same way (was D7b records only).
                 // T17b: the Unit 17 evidence records of Wikibooks Numbers 4371358, Interrogative 4220316 and Wikipedia Russian grammar
                 // 1369617627 (other unit freezes), and ReadyRussian Grammar 24 (S1; a whole frozen HTML line, "readyrussian markup
-                // selection"), are checked the same way (was prov-d7b- and prov-t17a- selection records only).
+                // selection"), are checked the same way (was prov-d7b- and prov-t17a- selection records only). T17c: the Unit 18 evidence
+                // records of Wikipedia Russian grammar 1369617627, Interrogative 4220316 and Морфология 148939075 too.
                 val files = frozenFilesForRevision(root, record.sourceRevision)
                 assertTrue("${record.itemId} revision ${record.sourceRevision} has no frozen file", files.isNotEmpty())
                 assertTrue(record.itemId, files.any { it.readText().contains(record.originalSourceText) })

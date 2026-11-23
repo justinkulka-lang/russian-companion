@@ -127,8 +127,17 @@ class Unit19CumulativeReviewTest {
             for (n in 1..3) assertTrue(remediation.body.contains(p.step("u18-st-teach-relative-$n")!!.second.body))
             practice.forEach { step ->
                 p.step(step)!!.second.itemIds.forEach { id ->
-                    val i = p.item(id)!!; waitTag("v2-option-$id-${i.answer}")
-                    compose.onNodeWithTag("v2-option-$id-${i.answer}").performScrollTo().performClick()
+                    val i = p.item(id)!!
+                    if (i.kind == "TYPED_FORM") {
+                        // T17c: the relative guided step also holds a typed practice item (u18-g-type-kotoryi-chas); it is answered
+                        // by typing its key and submitting (was: every guided item answered by clicking its option).
+                        waitTag("v2-typed-$id-input")
+                        compose.onNodeWithTag("v2-typed-$id-input").performScrollTo().performTextInput(i.answer)
+                        compose.onNodeWithTag("v2-typed-$id-submit").performScrollTo().performClick()
+                    } else {
+                        waitTag("v2-option-$id-${i.answer}")
+                        compose.onNodeWithTag("v2-option-$id-${i.answer}").performScrollTo().performClick()
+                    }
                 }
             }
             waitTag("v2-return-to-check"); compose.onNodeWithTag("v2-return-to-check").performClick()

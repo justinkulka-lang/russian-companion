@@ -34,8 +34,8 @@ class OptionPresentationTest {
         // T15i (CC027): u7-i-manner-4, before the guided targets and led by its answer, is retired (729 -> 728; the guided
         // targets move from 616 to 615; answer-first 559 -> 558).
         // T16: twelve typed Unit 11 checks with no options are appended (728 -> 740; guided targets and answer-first unchanged).
-        // T16b: eight typed Unit 12 checks with no options are appended (740 -> 748); T16c: eleven typed Unit 13 checks (748 -> 759); T16d: fourteen typed Unit 14 checks (759 -> 773); T16e: fourteen typed Unit 15 checks (773 -> 787); T17a: eight typed Unit 16 checks (787 -> 795); T17b: eleven typed Unit 17 checks (795 -> 806).
-        assertEquals(806, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
+        // T16b: eight typed Unit 12 checks with no options are appended (740 -> 748); T16c: eleven typed Unit 13 checks (748 -> 759); T16d: fourteen typed Unit 14 checks (759 -> 773); T16e: fourteen typed Unit 15 checks (773 -> 787); T17a: eight typed Unit 16 checks (787 -> 795); T17b: eleven typed Unit 17 checks (795 -> 806); T17c: sixteen typed Unit 18 checks and two typed Unit 18 guided items (806 -> 824).
+        assertEquals(824, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
             p.items.drop(615).take(4).map { it.id }.toSet())
         assertEquals(558, p.items.count { it.options.firstOrNull() == it.answer })
@@ -52,7 +52,7 @@ class OptionPresentationTest {
             "review" to p.items.map { it to presentedOptions(it, reviewOptionContext("corpus-distribution", 0)) },
         )) {
             if (name == "required") {
-                assertEquals(603, displays.size) // T17b: eleven typed Unit 17 checks (592 -> 603); T17a: eight typed Unit 16 checks (584 -> 592); T16e: fourteen typed Unit 15 checks (570 -> 584); T16d: fourteen typed Unit 14 checks (556 -> 570); T16c: eleven typed Unit 13 checks (545 -> 556); T16b: eight typed Unit 12 checks (537 -> 545); T16: twelve typed Unit 11 checks join the required set (525 -> 537); T15i: u7-i-manner-4 leaves the required set (526 -> 525); T15h: u10-i-absence-5 joins the required set (525 -> 526); T15g: the two retired Unit 10 duplicates leave the required set (527 -> 525); T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
+                assertEquals(619, displays.size) // T17c: sixteen typed Unit 18 checks (603 -> 619); T17b: eleven typed Unit 17 checks (592 -> 603); T17a: eight typed Unit 16 checks (584 -> 592); T16e: fourteen typed Unit 15 checks (570 -> 584); T16d: fourteen typed Unit 14 checks (556 -> 570); T16c: eleven typed Unit 13 checks (545 -> 556); T16b: eight typed Unit 12 checks (537 -> 545); T16: twelve typed Unit 11 checks join the required set (525 -> 537); T15i: u7-i-manner-4 leaves the required set (526 -> 525); T15h: u10-i-absence-5 joins the required set (525 -> 526); T15g: the two retired Unit 10 duplicates leave the required set (527 -> 525); T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
                 // T15h: u10-i-absence-5 stores its answer first (376 -> 377); displays still disperse (checked below).
                 // T15i: the retired u7-i-manner-4 stored its answer first (377 -> 376).
                 assertEquals(376, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })

@@ -14,7 +14,9 @@ class Unit18ComparisonRelativeInstructionTest {
             assertEquals(3, teaches.size)
             val body = teaches.joinToString("\n") { it.body }
             p.items.filter { it.objectiveId == "obj-u18-$slug" }.forEach { item ->
-                assertTrue("${item.id} cue not taught", body.contains(item.promptLetter!!))
+                // T17c: typed items join (16 checks, 2 guided). A typed cue may be its taught example with the key blanked ("___"),
+                // so the cue is checked with the key restored (was: the cue as shown); the typed key is the taught Russian answer.
+                assertTrue("${item.id} cue not taught", body.contains(item.promptLetter!!.replace("___", item.answer)))
                 assertTrue("${item.id} meaning not taught", body.contains(item.answer))
             }
             val rem = session.steps.first { it.kind == "REMEDIATE" }
@@ -28,16 +30,26 @@ class Unit18ComparisonRelativeInstructionTest {
         assertTrue(comparison.contains("does not change for gender, number or case"))
         assertTrue(comparison.contains("the adjective still changes for agreement"))
         assertTrue(comparison.contains("best in context"))
-        assertTrue(comparison.contains("Qualified review"))
+        // T17c: the sweep row (A2-26 governance) replaces the pending-review sentence with an instruction (was: contains "Qualified review").
+        assertFalse(comparison.contains("Qualified review"))
+        assertTrue(comparison.contains("Interpret the gloss in its sentence context."))
         val relative = p.unit(18)!!.sessions.first { it.id == "u18-s-relative" }.steps.joinToString("\n") { it.body }
         assertTrue(relative.contains("direct questions"))
         assertTrue(relative.contains("case comes from the role inside the relative clause"))
         assertTrue(relative.contains("instrumental case"))
-        assertTrue(relative.contains("does not demonstrate independently"))
+        // T17c: prep section 3 removes the commentary on what recognition demonstrates (line 2183); the unit now practises the
+        // relative forms it checks by typing (was: contains "does not demonstrate independently").
+        assertFalse(relative.contains("does not demonstrate independently"))
+        assertTrue(relative.contains("then write only its form of the word for which"))
     }
     @Test fun feedbackExplainsTheRequestedMeaningAndPreservesCitation() {
         val p = pack()
-        val items = p.items.filter { it.objectiveId in listOf("obj-u18-comparison", "obj-u18-relative") }
+        // T17c: the 16 typed checks and 2 typed guided items have no options and a Russian key; the six closed items keep every
+        // assertion below (was: all 6 Unit 18 items, before typed items existed).
+        val all = p.items.filter { it.objectiveId in listOf("obj-u18-comparison", "obj-u18-relative") }
+        assertEquals(24, all.size)
+        assertEquals(18, all.count { it.kind == "TYPED_FORM" })
+        val items = all.filter { it.kind != "TYPED_FORM" }
         assertEquals(6, items.size)
         items.forEach { item ->
             assertEquals("Which English meaning matches the shown form?", item.prompt)

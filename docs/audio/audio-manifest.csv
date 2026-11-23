@@ -161,7 +161,7 @@ A06-003,P2,6,6,WORD,Ваш,NEEDS_RECORDING,,,"short: check it is a word, not an 
 A06-004,P2,6,"6,10",WORD,дру́га,NEEDS_RECORDING,,,,"example,item,teaching"
 A06-005,P2,6,"6,10",WORD,Его́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,reference,teaching"
 A06-006,P2,6,"6,10",WORD,её,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,reference,teaching"
-A06-007,P2,6,"6,18",WORD,же́нщина,NEEDS_RECORDING,,,,"example,item,teaching"
+A06-007,P2,6,"6,18",WORD,же́нщина,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A06-008,P2,6,6,WORD,же́нщину,NEEDS_RECORDING,,,,"example,item,teaching"
 A06-009,P2,6,"6,7,10",WORD,их,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,reference,teaching"
 A06-010,P2,6,"6,7",WORD,кни́гу,NEEDS_RECORDING,,,,"example,item,teaching"
@@ -235,7 +235,7 @@ A07-027,P2,7,"7,10",WORD,хоро́шего,NEEDS_RECORDING,,,,"example,item,tea
 A07-028,P2,7,"7,8,12",WORD,хоро́шее,NEEDS_RECORDING,,,,"example,item,teaching"
 A07-029,P2,7,7,WORD,хоро́шем,NEEDS_RECORDING,,,,"example,item,teaching"
 A07-030,P2,7,"7,8,16",WORD,хоро́шие,NEEDS_RECORDING,,,,"example,item,teaching"
-A07-031,P2,7,"7,8,10,12,16",WORD,хоро́ший,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A07-031,P2,7,"7,8,10,12,16,18",WORD,хоро́ший,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A07-032,P2,7,"7,16",WORD,хоро́шими,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A07-033,P2,7,7,WORD,хорошо,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A07-034,P2,7,7,WORD,хоро́шую,NEEDS_RECORDING,,,,"item,teaching"
@@ -288,7 +288,7 @@ A08-016,P2,8,8,WORD,сло́во,NEEDS_RECORDING,,,,"example,item,teaching"
 A08-017,P2,8,"8,12",WORD,столы́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A08-018,P2,8,8,WORD,сы́н,EXISTING_CLIP_CANDIDATE,rus-a346d7b8,сын,,"example,item,reference,teaching"
 A08-019,P2,8,8,WORD,сыновья́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
-A08-020,P2,8,"8,18",WORD,челове́к,NEEDS_RECORDING,,,,"example,item,teaching"
+A08-020,P2,8,"8,18",WORD,челове́к,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A08-021,P2,8,"8,10",PHRASE,Нет рестора́нов,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A08-022,P2,8,"8,9",PHRASE,пять столов,NEEDS_RECORDING,,,course text has no stress mark,"example,reference,teaching"
 A08-023,P2,8,8,SENTENCE,В Москве́ есть ста́рые зда́ния,NEEDS_RECORDING,,,,"example,item,reference,teaching"
@@ -339,7 +339,7 @@ A09-042,P2,9,9,WORD,три́дцать,NEEDS_RECORDING,,,,"example,item,teaching
 A09-043,P2,9,9,WORD,трина́дцать,NEEDS_RECORDING,,,,"example,teaching"
 A09-044,P2,9,9,WORD,три́ста,NEEDS_RECORDING,,,,"example,item,teaching"
 A09-045,P2,9,9,WORD,ты́сяча,NEEDS_RECORDING,,,,"example,reference,teaching"
-A09-046,P2,9,"9,17",WORD,час,EXISTING_CLIP_CANDIDATE,rus-8af002ca,час,,"example,item,teaching"
+A09-046,P2,9,"9,17,18",WORD,час,EXISTING_CLIP_CANDIDATE,rus-8af002ca,час,,"example,item,teaching"
 A09-047,P2,9,"9,22",WORD,четы́ре,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A09-048,P2,9,9,WORD,четы́реста,NEEDS_RECORDING,,,,"example,teaching"
 A09-049,P2,9,9,WORD,четы́рнадцать,NEEDS_RECORDING,,,,"example,item,teaching"
@@ -551,7 +551,7 @@ A17-006,P3,17,"17,22",WORD,второ́й,NEEDS_RECORDING,,,,"example,item,refer
 A17-007,P3,17,17,WORD,Декабрь,NEEDS_RECORDING,,,course text has no stress mark,"item,reference,teaching"
 A17-008,P3,17,17,WORD,Июль,NEEDS_RECORDING,,,course text has no stress mark,teaching
 A17-009,P3,17,17,WORD,Июнь,NEEDS_RECORDING,,,course text has no stress mark,"item,reference,teaching"
-A17-010,P3,17,17,WORD,который,NEEDS_RECORDING,,,course text has no stress mark,teaching
+A17-010,P3,17,"17,18",WORD,который,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
 A17-011,P3,17,17,WORD,Март,NEEDS_RECORDING,,,,"example,teaching"
 A17-012,P3,17,17,WORD,мая,NEEDS_RECORDING,,,"course text has no stress mark; short: check it is a word, not an ending","item,teaching"
 A17-013,P3,17,17,WORD,пе́рвый,NEEDS_RECORDING,,,,"example,item,reference,teaching"
@@ -578,9 +578,9 @@ A17-033,P3,17,17,SENTENCE,два года,NEEDS_RECORDING,,,course text has no s
 A17-034,P3,17,17,SENTENCE,двадцать лет,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A17-035,P3,17,17,SENTENCE,две минуты,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
 A17-036,P3,17,17,SENTENCE,Концерт начинается в шесть часов,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A17-037,P3,17,"17,18",SENTENCE,Которое яблоко моё,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A17-038,P3,17,"17,18",SENTENCE,Которую книгу вы хотите,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A17-039,P3,17,17,SENTENCE,Который час,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A17-037,P3,17,"17,18",SENTENCE,Которое яблоко моё,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A17-038,P3,17,"17,18",SENTENCE,Которую книгу вы хотите,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A17-039,P3,17,"17,18",SENTENCE,Который час,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
 A17-040,P3,17,17,SENTENCE,Мы будем свободны в полвторого,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
 A17-041,P3,17,17,SENTENCE,Наш рейс уезжает в половине пятого,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A17-042,P3,17,17,SENTENCE,одна минута,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
@@ -590,16 +590,29 @@ A17-045,P3,17,17,SENTENCE,Она обычно приходит на работу
 A17-046,P3,17,17,SENTENCE,Передача начинается без четверти три,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A17-047,P3,17,17,SENTENCE,пять минут,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
 A17-048,P3,17,17,SENTENCE,Я приду в четверть восьмого,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A18-001,P3,18,18,WORD,бо́лее,NEEDS_RECORDING,,,,teaching
-A18-002,P3,18,18,WORD,бо́льший,NEEDS_RECORDING,,,,"example,item,teaching"
-A18-003,P3,18,18,WORD,красне́е,NEEDS_RECORDING,,,,"example,teaching"
-A18-004,P3,18,18,WORD,лу́чший,NEEDS_RECORDING,,,,"example,teaching"
-A18-005,P3,18,18,WORD,ме́нее,NEEDS_RECORDING,,,,teaching
-A18-006,P3,18,18,WORD,наибо́льший,NEEDS_RECORDING,,,,"example,item,teaching"
-A18-007,P3,18,18,WORD,наиме́нее,NEEDS_RECORDING,,,,teaching
-A18-008,P3,18,18,PHRASE,бо́лее до́брый,NEEDS_RECORDING,,,,"item,teaching"
-A18-009,P3,18,18,PHRASE,который изменил мир,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A18-010,P3,18,18,PHRASE,с кото́рой я дружу́,NEEDS_RECORDING,,,,"example,item,teaching"
+A18-001,P3,18,18,WORD,бо́лее,NEEDS_RECORDING,,,,"item,reference,teaching"
+A18-002,P3,18,18,WORD,бо́льший,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A18-003,P3,18,18,WORD,большо́й,NEEDS_RECORDING,,,,"item,reference,teaching"
+A18-004,P3,18,18,WORD,до́брый,NEEDS_RECORDING,,,,"item,reference,teaching"
+A18-005,P3,18,18,WORD,Которое,NEEDS_RECORDING,,,course text has no stress mark,item
+A18-006,P3,18,18,WORD,кото́рой,NEEDS_RECORDING,,,,item
+A18-007,P3,18,18,WORD,Которую,NEEDS_RECORDING,,,course text has no stress mark,item
+A18-008,P3,18,18,WORD,красне́е,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A18-009,P3,18,18,WORD,кра́сный,NEEDS_RECORDING,,,,"item,reference,teaching"
+A18-010,P3,18,18,WORD,лу́чший,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A18-011,P3,18,18,WORD,ме́нее,NEEDS_RECORDING,,,,"item,reference,teaching"
+A18-012,P3,18,18,WORD,наибо́лее,NEEDS_RECORDING,,,,"item,reference,teaching"
+A18-013,P3,18,18,WORD,наибо́льший,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A18-014,P3,18,18,WORD,наиме́нее,NEEDS_RECORDING,,,,"item,reference,teaching"
+A18-015,P3,18,18,WORD,са́мый,NEEDS_RECORDING,,,,teaching
+A18-016,P3,18,18,PHRASE,бо́лее до́брый,NEEDS_RECORDING,,,,"item,reference,teaching"
+A18-017,P3,18,18,PHRASE,изменил мир,NEEDS_RECORDING,,,course text has no stress mark,item
+A18-018,P3,18,18,PHRASE,который изменил мир,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A18-019,P3,18,18,PHRASE,с кото́рой я дружу́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A18-020,P3,18,18,PHRASE,са́мый до́брый,NEEDS_RECORDING,,,,"item,reference,teaching"
+A18-021,P3,18,18,PHRASE,я дружу́,NEEDS_RECORDING,,,,item
+A18-022,P3,18,18,SENTENCE,книгу вы хотите,NEEDS_RECORDING,,,course text has no stress mark,item
+A18-023,P3,18,18,SENTENCE,яблоко моё,NEEDS_RECORDING,,,course text has no stress mark,item
 A19-001,P3,19,19,WORD,договориться,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A19-002,P3,19,19,WORD,должна,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A19-003,P3,19,19,WORD,должно,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
