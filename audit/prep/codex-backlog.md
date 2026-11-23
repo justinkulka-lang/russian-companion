@@ -2,7 +2,7 @@
 
 Send these in order when Codex resets. Each is read-only. Combining items into one check is fine if they become due together.
 
-## 1. T16c check: D29a, T16-n2, Unit 13, CI fix (due now)
+## 1. T16c check: DONE 11/23 (FAIL on items 1, 3, 11; fixes in T16c-n1 per D36). Report: t16c-codex-check-at-4732787a.txt
 Branch cursor/content-audit-corrections-964f at 4732787a. Commits:
 - adbc7a80: D29a
 - b1c94322 + ab5e8633: T16-n2
@@ -84,5 +84,7 @@ Commits: 6d6fd938 (D34), 569341cc (Unit 16), 43996033 (pins), then later commits
 - D2: governedRelation now lets probability-1's wrong options be competing meanings from other verified frozen records (not content-audit, synthesis or coverage, and displayed as frozen text). The cue and answer must still come from W:39-41. Guard hash ba035cd3 -> 7dd3d3c4. Run your own probes against Unit19ProbabilityBindingRuleTest: an unsourced meaning, a tampered record, a Russian distractor, an answer outside the span. Confirm no other governed span changed.
 - Unit 19: 20/12; facts 53/7/7. S1 claims: 2225 (Сослагательное:18), 2234 reworded to "sentence" (бы:58). 48 sweep rows. "Choose <answer>." sentences are treated as non-facts; confirm none carries a claim. The builder's unstressed() is now aligned with the Kotlin phrase rule for plain [[...]] links.
 
-## 9. Later unit checks
+## 9. T16c-n1 check (due once T16c-n1 is DONE): D36a-c. Re-run the S1 wrong-revision, row/table and disabled-assertion probes, and scan for any other disabled assertions.
+
+## 10. Later unit checks
 Add one entry each time a unit task reports DONE.

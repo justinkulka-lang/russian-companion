@@ -1,0 +1,193 @@
+Overall FAIL on items 1, 3 and 11. The Unit 13 content checks pass.
+
+Verified at 4732787a400905195e8a8ea4ad9ffbc5e3e1e6e7. No tracked files changed; nothing committed or pushed.
+
+CI confirmed: 44946188080 failed on ea7c5669; 44959344968 passed on exactly c15e0bdb. The DONE commit changes only WORK_QUEUE.md.
+
+1. Exact S1 admission — FAIL in the runtime integration.
+
+S1IntakeSources.kt:13–39 correctly lists exactly the 17 manifest entries. Its lookup rejects a different ID, revision or route.
+
+However, V2Validator.kt:5150–5156 combines S1 admission with the legacy Russian Wikipedia revision allowlist. A listed S1 source can therefore pass with an unlisted revision that happens to match a legacy revision.
+
+Probe:
+
+sourceId: src-ruwiki-vid-lingvistika-153277825
+sourceRevision: 152437423
+sourceUrl: same page, changed to that oldid
+
+WRONG_REV_ONLY=V2Validation(ok=true, errors=[])
+
+The build-time binding check rejects that record, but the runtime admission requirement is not met.
+
+Needed: for known S1 source IDs, require their exact S1 revision. Preserve legacy admission for other sources and the stricter native chains.
+
+2. D33 and existing source-specific guards — PASS.
+
+The remaining source-specific guard implementations are unchanged. I checked these families:
+
+Guard family	Coverage retained
+
+Native record chains	Unit 21 reflexive object; Unit 29 punctuation
+Other V2ContentChecks chains	Units 4 nominative, 6 animacy, 8 agreement, 9 numeral agreement, 13 reporting, 17 clock, 20 motion, 24 word order, 28 timing, 29 short adjectives, 30 letter names and abbreviation examples
+Cross-freeze binding	Units 16–20 selection records still require verbatim text in a frozen file bound to the revision
+Units 25–30 capabilities	All 24 capabilities listed below retain their span/hash and instructional-chain checks
+Other provenance controls	OpenRussian binding, synthesis/context pins, licence routes, exclusion rules and media restrictions
+
+
+The 24 capability checks cover:
+
+- 25: diminutive classification, register, documented name forms.
+- 26: word order, indefinite pronouns, letter writing, correspondence, postal addresses.
+- 27: passive participles, stress, comprehension.
+- 28: imperfective verbal adverbs, perfective verbal adverbs, reading.
+- 29: active participles, short adjectives, punctuation, bookish register, reading.
+- 30: letter names, abbreviations, particles, capstone reading, dictionary use.
+
+All 24 self-consistent span/hash mutations were rejected.
+
+Ghost-record probes covered every S1 source:
+
+Sources	Runtime record-specific result	Frozen-file binding
+
+Reflexive pronoun; Обособление; Больтраффио	Rejected by existing native-chain guards	Rejected
+Grammatical aspect; Вид; Sequence of tenses; imperative mood; conditional mood	No record-specific runtime error	Rejected
+Wiktionary pod/by/chtoby/daby/dvoe/nazad/za/nekogo	No record-specific runtime error	Rejected
+ReadyRussian grammar24	No record-specific runtime error	Rejected
+
+
+Thus all 17 fabricated records fail build-time witness binding. Runtime licence admission alone does not establish that their text exists in the frozen file.
+
+Evidence: V2ContentChecks.kt:71,108–140; V2Validator.kt:1272,5141–5156; Units1620SourceIntakeTest.kt:153–158; FrozenSourceBindingTest.kt:53–115.
+
+3. Lint categories and exclusions — FAIL.
+
+Earlier misses are caught, and the requested ordinary cases behave as follows:
+
+Probe	Result
+
+Furniture gloss table	Pass
+dictionary form	Pass
+Binder instruction with rows for	Pass
+The row of soldiers is outside.	Incorrectly flagged
+Read the row for this case.	Incorrectly passes
+Furniture phrase the surface of the table	Incorrectly flagged
+
+
+The unqualified rows? pattern flags ordinary meanings, while (?! for\b) exempts table framing outside binder directions.
+
+Evidence: V2DesignDiagnostics.kt:92–105, especially lines 97–98.
+
+Needed: distinguish table framing from ordinary row/furniture meanings and scope the binder exemption to binder directions.
+
+4. Units 1–12 applied changes — PASS.
+
+The counts reconcile:
+
+- 284 per-unit sweep occurrences = 248 unique owner/field substitutions.
+- 57 further fixes.
+- The change log therefore contains 305 records.
+
+All 305 preserve their Russian. All 144 rewritten marker entries retain the same source-ID sets.
+
+I spot-checked 30 records across both groups, including physical CSV lines 2, 12, 22, 32, 42, 52, 62, 72, 82, 92, 102, 112, 122, 132, 142, 152, 162, 172, 182, 192, 202, 212, 232, 249, 250, 304, 342, 352, 362 and 378. The grammatical claims retain their support; navigation and workflow rewrites introduce no new Russian facts.
+
+Evidence: audit/T16-n2-learner-text-changes.csv; catalog/apply_t16n2.py:34–40,186–210.
+
+5. D31b labels and metadata — PASS.
+
+All eight closed review-status values have one plain label; unknown values use the cautious fallback. No raw enum is rendered through the reference-status path. Existing metadata values are unchanged.
+
+Evidence: ui/V2ReviewStatusLabels.kt:16–36; ui/V2Screens.kt:817. Moving the raw field to declared-but-scanned follows D32a.
+
+6. Fresh manual scan, Units 1–13 — PASS for rendered pack text.
+
+I found no additional D30-category misses in rendered pack fields. Remaining matches were ordinary grammar, furniture meanings, navigation or progress confirmations.
+
+The known hardcoded “Not the reviewed answer.” remains at V2Screens.kt:644 and V2PracticeFlows.kt:195. D32b explicitly assigns those strings and the wider hardcoded-UI scan to T16d.
+
+7. Unit 13 counts, teaching and typed keys — PASS.
+
+Fresh results: 20 checked / 11 typed (55%), all required checks in u13-s-checks, with zero required-check A2-24 findings.
+
+verbs.csv line	Fields	Exact keys
+
+62	past_m/f/n/pl	чита́л, чита́ла, чита́ло, чита́ли
+353	past_m/f/n	прочита́л, прочита́ла, прочита́ло
+6	accented	говори́ть
+3	accented	сказа́ть
+19	accented	де́лать
+20	accented	сде́лать
+
+
+File: catalog/sources/units-3-5/openrussian/verbs.csv.
+
+The five additional past forms are taught in u13-st-teach-past-aspect-5 before the checks. Evidence: catalog/apply_t16c_unit_13.py:122,183–205.
+
+8. Facts and S1 verdicts — PASS.
+
+The totals reproduce 37 MARK / 28 REWORD / 3 REMOVE.
+
+- SUPPORTED: 1462, 1470, 1482, 1511, 1528.
+- PARTIAL, appropriately reworded: 1443, 1508, 1523, 1542, 1543.
+- NOT_SUPPORTED, removed: 1517.
+
+The Sequence of tenses lines support optional English backshift and the natural sequence generally used in Russian. Grammatical aspect line 63 supports the revised process/repetition/habitual wording.
+
+Entry 1507 also loses the unsupported “not universally ungrammatical” clause. Its remaining past-copula distinction is supported by future-tense-3353822.txt:22.
+
+The Вид sentence is supported by the main claim and exception at vid-lingvistika-153277825.txt:9. Both recorded spans occur verbatim there and exclude the intervening <ref> citation.
+
+Evidence: catalog/build_unit13_fact_resources.py:80–94; catalog/apply_t16c_unit_13.py:56–63,135–138; Unit13FactProvenanceTest.kt:71,151,189.
+
+9. Unit 13 sweep and lint — PASS.
+
+The log contains 104 English-only substitutions, with no Russian changes. Subsequent S1 and redesign edits refine some intermediate wording.
+
+The three other baseline sweep occurrences are accounted for: one reference-status label and two shared review messages already handled globally.
+
+The mapping note follows the Units 1–12 style. Automatic Unit 13 lint reports zero hits.
+
+Evidence: audit/T16c-unit13-sweep-changes.csv; catalog/apply_t16c_unit_13.py; fresh diagnostics.
+
+10. References, binder/tutor and A2-28 — PASS.
+
+The three references resolve, retain frozen support and quote attested Russian. Binder/tutor models use taught frozen material. All 10 shown phrases pass their attestation checks.
+
+Fresh governed progression reproduces:
+
+A228 13 [8, 8, 8, 8, 2, 1]
+
+Evidence: catalog/apply_t16c_unit_13.py:208–240; Unit13FactProvenanceTest.kt:226; CumulativeReviewA228Test.kt:174.
+
+11. CI fix, hashes and test strength — FAIL on eight weakened UI assertions.
+
+The review-copy synchronization and the two CI-fix expectation changes are legitimate. Their assertions remain executable.
+
+Recomputed values match:
+
+Value	Result
+
+Release digest	29e8b076d898339b1a25bff0ca2d12ea32d0bff2a1508279b400ba1e6b3a6fc5
+Validator hash	c800faf97c58050d621302353f48239baf348dda86ede12d9386231037979fc5
+Unit 3 review-package digest	f075c3d8bf6b8ace85ff6518872448258b4994b2b6e29bebed683496be198cb4
+
+
+Changed unit digests and all six source guards match. The regenerated 850-row audio manifest is byte-identical.
+
+However, these lines place the assertion chain after //, so it never executes:
+
+- Unit6PresentReviewUiTest.kt:30
+- Unit7GenderReviewUiTest.kt:33
+- Unit8PresentReviewUiTest.kt:33
+- Unit9NounBehaviorReviewUiTest.kt:33
+- Unit10PresentReviewUiTest.kt:33
+- Unit11NounReviewUiTest.kt:33
+- Unit12GenderReviewUiTest.kt:33
+- Unit13PresentReviewUiTest.kt:33
+
+Each now only creates a node selector; .performScrollTo().assertIsDisplayed() is commented out.
+
+Needed: restore all eight executable assertion chains and move the comments onto separate lines.
+
+The targeted suites passed 17 tests, and exact-commit CI passed. The remaining changes needed are the runtime S1 revision restriction, the lint false-positive/false-negative fixes, and restoration of those eight UI assertions.
