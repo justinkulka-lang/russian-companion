@@ -12,7 +12,8 @@ class Unit16InstrumentalInstructionTest {
         val sessions = pack.unit(16)!!.sessions
         val required = mapOf(
             "inst-sg" to listOf("instrumental singular", "dative singular", "prepositional singular", "столо́м", "до́мом"),
-            "inst-pl" to listOf("instrumental plural", "dative plural", "prepositional plural", "wrong number", "стола́ми"),
+            // T17a: "wrong number" -> "instrumental singular rather than plural" (sweep row for inventory line 1703).
+            "inst-pl" to listOf("instrumental plural", "dative plural", "prepositional plural", "instrumental singular rather than plural", "стола́ми"),
             "inst-adj" to listOf("masculine", "neuter", "instrumental plural", "spelling restriction", "хоро́шим"),
         )
         for ((slug, claims) in required) {
@@ -33,7 +34,8 @@ class Unit16InstrumentalInstructionTest {
             val remediation = session.steps.first { it.kind == "REMEDIATE" }
             assertEquals(teaching.joinToString("\n\n") { it.body }, remediation.body)
             assertEquals(teaching.flatMap { it.exampleIds }.distinct(), remediation.exampleIds)
-            for (item in pack.items.filter { it.objectiveId == "obj-u16-$slug" }) {
+            // T17a: the closed items only (the new typed checks have no options and no assessment).
+            for (item in pack.items.filter { it.objectiveId == "obj-u16-$slug" && it.options.isNotEmpty() }) {
                 assertFalse(item.feedback.contains("Does this"))
                 assertEquals(item.feedback, item.assessment!!.whyAnswerDemonstratesObjective)
                 assertEquals(item.distractorRationales, item.assessment!!.distractorDifference)

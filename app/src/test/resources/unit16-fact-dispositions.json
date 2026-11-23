@@ -1,0 +1,1726 @@
+{
+ "task": "T17a (Claude Code, 2026-11-22); dispositions from audit/prep/units-16-17-prep-at-20bfde5c.txt, Unit 16 section 3, and audit/prep/s1-claim-verification.csv",
+ "totals": {
+  "MARK": 52,
+  "REWORD": 12,
+  "REMOVE": 2
+ },
+ "entries": [
+  {
+   "entry": "U16-E01",
+   "csvLine": 1656,
+   "ownerId": "u16-st-rem-inst-sg",
+   "field": "remediation body",
+   "baselineSentence": "The instrumental case can mark the means used to do something.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i4"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E02",
+   "csvLine": 1658,
+   "ownerId": "u16-st-rem-inst-sg",
+   "field": "remediation body",
+   "baselineSentence": "The word still names a table: the ending marks its grammatical role, not a new vocabulary meaning.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i4",
+    "prov-ex-or-u16-inst-sg-0",
+    "prov-ex-or-u16-inst-sg-1",
+    "prov-t17a-u16-n-b83c32a5-sense"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E03",
+   "csvLine": 1663,
+   "ownerId": "u16-st-rem-inst-sg",
+   "field": "remediation body",
+   "baselineSentence": "Both belong to the same noun, but neither has the instrumental singular ending.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u16-inst-sg-2",
+    "prov-ex-or-u16-inst-sg-3",
+    "prov-ex-or-u16-inst-sg-1"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E04",
+   "csvLine": 1668,
+   "ownerId": "u16-st-rem-inst-sg",
+   "field": "remediation body",
+   "baselineSentence": "This is the same ending pattern as the table form.",
+   "disposition": "REWORD",
+   "replacement": "до́мом has the same ending pattern as столо́м.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-ex-or-u16-inst-sg-5",
+    "prov-ex-or-u16-inst-sg-1"
+   ],
+   "reason": "\"table form\" is source framing for the widened lint; the same fact names the forms (до́мом, столо́м; nouns.csv sg_inst)."
+  },
+  {
+   "entry": "U16-E05",
+   "csvLine": 1670,
+   "ownerId": "u16-st-rem-inst-sg",
+   "field": "remediation body",
+   "baselineSentence": "They do not answer an instrumental singular request.",
+   "disposition": "MARK",
+   "currentSentence": "These forms are not instrumental singular.",
+   "sourceRecordIds": [
+    "prov-ex-or-u16-inst-sg-6",
+    "prov-ex-or-u16-inst-sg-7",
+    "prov-ex-or-u16-inst-sg-5"
+   ],
+   "reason": "Sweep row (assessment commentary) rewords the sentence; the marked wording cites nouns.csv дом sg_dat, sg_prep and sg_inst."
+  },
+  {
+   "entry": "U16-E06",
+   "csvLine": 1673,
+   "ownerId": "u16-st-rem-inst-sg",
+   "field": "remediation body",
+   "baselineSentence": "Its other options refer to train and husband.",
+   "disposition": "REWORD",
+   "replacement": "Distinguish the pencil meaning from train and husband.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Departure: the sweep row rewrites this answer-option narration as an instruction (prep: MARK)."
+  },
+  {
+   "entry": "U16-E07",
+   "csvLine": 1674,
+   "ownerId": "u16-st-rem-inst-sg",
+   "field": "remediation body",
+   "baselineSentence": "A correct case alone does not identify the requested noun.",
+   "disposition": "REWORD",
+   "replacement": "Identify both the noun and its case.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Departure: the sweep row rewrites this framing as an instruction (prep: MARK)."
+  },
+  {
+   "entry": "U16-E08",
+   "csvLine": 1677,
+   "ownerId": "u16-st-rem-inst-sg",
+   "field": "remediation body",
+   "baselineSentence": "Do not attach the same ending to every noun.",
+   "disposition": "REWORD",
+   "replacement": "Review the noun forms above before retrying.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (prep section 3)."
+  },
+  {
+   "entry": "U16-E09",
+   "csvLine": 1678,
+   "ownerId": "u16-st-rem-inst-sg",
+   "field": "remediation body",
+   "baselineSentence": "These examples introduce selected singular patterns, not the full instrumental paradigm.",
+   "disposition": "REWORD",
+   "replacement": "Review the noun forms above before retrying.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (prep section 3)."
+  },
+  {
+   "entry": "U16-E10",
+   "csvLine": 1688,
+   "ownerId": "u16-st-rem-inst-pl",
+   "field": "remediation body",
+   "baselineSentence": "Instrumental plural refers to more than one.",
+   "disposition": "REWORD",
+   "replacement": "Compare the singular and plural forms above before retrying.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (prep section 3); the unrestricted plural formulation is removed."
+  },
+  {
+   "entry": "U16-E11",
+   "csvLine": 1694,
+   "ownerId": "u16-st-rem-inst-pl",
+   "field": "remediation body",
+   "baselineSentence": "This is a noun ending; adjectives have their own agreement endings.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i51",
+    "prov-t17a-u16-i76",
+    "prov-t17a-u16-i78"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E12",
+   "csvLine": 1696,
+   "ownerId": "u16-st-rem-inst-pl",
+   "field": "remediation body",
+   "baselineSentence": "Neither is instrumental plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u16-inst-pl-2",
+    "prov-ex-or-u16-inst-pl-3",
+    "prov-ex-or-u16-inst-pl-1",
+    "prov-ex-or-u16-inst-pl-10",
+    "prov-ex-or-u16-inst-pl-11",
+    "prov-ex-or-u16-inst-pl-9"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E13",
+   "csvLine": 1703,
+   "ownerId": "u16-st-rem-inst-pl",
+   "field": "remediation body",
+   "baselineSentence": "The first has the wrong case; the second has the right case but the wrong number for an instrumental plural request.",
+   "disposition": "MARK",
+   "currentSentence": "The first is not instrumental; the second is instrumental singular rather than plural.",
+   "sourceRecordIds": [
+    "prov-ex-or-u16-inst-pl-6",
+    "prov-ex-or-u16-inst-pl-7",
+    "prov-ex-or-u16-inst-pl-5"
+   ],
+   "reason": "Sweep row rewords the sentence; the marked wording cites nouns.csv дом pl_dat, sg_inst and pl_inst."
+  },
+  {
+   "entry": "U16-E14",
+   "csvLine": 1709,
+   "ownerId": "u16-st-rem-inst-pl",
+   "field": "remediation body",
+   "baselineSentence": "Neither meets both parts of an instrumental plural request.",
+   "disposition": "MARK",
+   "currentSentence": "Neither is instrumental plural.",
+   "sourceRecordIds": [
+    "prov-ex-or-u16-inst-pl-2",
+    "prov-ex-or-u16-inst-pl-3",
+    "prov-ex-or-u16-inst-pl-1",
+    "prov-ex-or-u16-inst-pl-10",
+    "prov-ex-or-u16-inst-pl-11",
+    "prov-ex-or-u16-inst-pl-9"
+   ],
+   "reason": "Sweep row rewords the sentence; the marked wording cites nouns.csv кни́га and стол dative, prepositional and instrumental fields."
+  },
+  {
+   "entry": "U16-E15",
+   "csvLine": 1720,
+   "ownerId": "u16-st-rem-inst-adj",
+   "field": "remediation body",
+   "baselineSentence": "An adjective agrees with its noun in case and number, and in gender in the singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-g249",
+    "prov-t17a-u16-i76"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E16",
+   "csvLine": 1724,
+   "ownerId": "u16-st-rem-inst-adj",
+   "field": "remediation body",
+   "baselineSentence": "These are adjective declension endings.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i76",
+    "prov-t17a-u16-i78",
+    "prov-t17a-u16-a67"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E17",
+   "csvLine": 1729,
+   "ownerId": "u16-st-rem-inst-adj",
+   "field": "remediation body",
+   "baselineSentence": "Neither is the masculine instrumental singular form requested here.",
+   "disposition": "MARK",
+   "currentSentence": "Neither is the masculine instrumental singular form.",
+   "sourceRecordIds": [
+    "prov-ex-or-u16-inst-adj-2",
+    "prov-ex-or-u16-inst-adj-3",
+    "prov-ex-or-u16-inst-adj-1"
+   ],
+   "reason": "Sweep row removes the question framing; the marked wording cites adjectives.csv хоро́ший decl_m_dat, decl_pl_nom and decl_m_inst."
+  },
+  {
+   "entry": "U16-E18",
+   "csvLine": 1733,
+   "ownerId": "u16-st-rem-inst-adj",
+   "field": "remediation body",
+   "baselineSentence": "Recognizing these forms does not by itself demonstrate using adjective agreement in a sentence.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Commentary about what recognition demonstrates is removed (prep section 3); the sweep instruction takes its place."
+  },
+  {
+   "entry": "U16-E19",
+   "csvLine": 1740,
+   "ownerId": "u16-g-inst-means-0",
+   "field": "item feedback",
+   "baselineSentence": "The accompaniment line describes a meeting with a person, not an instrument used to perform an action.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a69",
+    "prov-t17a-u16-i14"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E20",
+   "csvLine": 1741,
+   "ownerId": "u16-g-inst-means-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "The sentence about living between two houses describes location, not an accompaniment line.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a81",
+    "prov-t17a-u16-i17"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E21",
+   "csvLine": 1743,
+   "ownerId": "u16-st-rem-inst-means",
+   "field": "remediation body",
+   "baselineSentence": "The pencil is the tool used for writing: this is the means instrumental, without a preposition before the tool phrase.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a67",
+    "prov-t17a-u16-i4",
+    "prov-t17a-u16-i14"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E22",
+   "csvLine": 1745,
+   "ownerId": "u16-st-rem-inst-means",
+   "field": "remediation body",
+   "baselineSentence": "Here with introduces the person involved in the meeting: this is the accompaniment line, using a preposition followed by instrumental forms.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a69",
+    "prov-t17a-u16-i13",
+    "prov-t17a-u16-i14"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E23",
+   "csvLine": 1746,
+   "ownerId": "u16-st-rem-inst-means",
+   "field": "remediation body",
+   "baselineSentence": "For a means instrumental request, choose the writing sentence because its pencil is the instrument.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a67",
+    "prov-t17a-u16-i14"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E24",
+   "csvLine": 1747,
+   "ownerId": "u16-st-rem-inst-means",
+   "field": "remediation body",
+   "baselineSentence": "For an accompaniment line request, choose the meeting sentence because it describes being with a person.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a69",
+    "prov-t17a-u16-i14"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E25",
+   "csvLine": 1748,
+   "ownerId": "u16-st-rem-inst-means",
+   "field": "remediation body",
+   "baselineSentence": "English with can express both roles; its presence alone does not decide which Russian construction is used.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i14"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E26",
+   "csvLine": 1750,
+   "ownerId": "u16-st-rem-inst-means",
+   "field": "remediation body",
+   "baselineSentence": "This is the between line: the phrase locates the speaker relative to two houses.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a81",
+    "prov-t17a-u16-i17"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E27",
+   "csvLine": 1751,
+   "ownerId": "u16-st-rem-inst-means",
+   "field": "remediation body",
+   "baselineSentence": "The houses are neither a writing tool nor a companion.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a81",
+    "prov-t17a-u16-a67",
+    "prov-t17a-u16-a69"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E28",
+   "csvLine": 1752,
+   "ownerId": "u16-i-inst-means-1",
+   "field": "item feedback",
+   "baselineSentence": "The means instrumental in the writing sentence names the pencil used as the tool.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a67",
+    "prov-t17a-u16-i4"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E29",
+   "csvLine": 1753,
+   "ownerId": "u16-i-inst-means-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "The sentence about living between two houses describes location, not a means instrumental naming a tool.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a81",
+    "prov-t17a-u16-i17"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E30",
+   "csvLine": 1754,
+   "ownerId": "u16-i-inst-means-2",
+   "field": "item feedback",
+   "baselineSentence": "The between line locates the speaker relative to two houses.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a81",
+    "prov-t17a-u16-i17"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E31",
+   "csvLine": 1755,
+   "ownerId": "u16-i-inst-means-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "The meeting sentence is an accompaniment line describing a person involved in a meeting, not location between houses.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-a69",
+    "prov-t17a-u16-a81"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E32",
+   "csvLine": 1756,
+   "ownerId": "u16-g-inst-prep-0",
+   "field": "item feedback",
+   "baselineSentence": "The over label identifies the meaning of the shown preposition: above something.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E33",
+   "csvLine": 1757,
+   "ownerId": "u16-g-inst-prep-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "The under label places something below, not above.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E34",
+   "csvLine": 1758,
+   "ownerId": "u16-g-inst-prep-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "The before label describes being in front of, not above.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15",
+    "prov-t17a-u16-i16"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E35",
+   "csvLine": 1761,
+   "ownerId": "u16-st-rem-inst-prep",
+   "field": "remediation body",
+   "baselineSentence": "These spatial meanings contrast vertical positions.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E36",
+   "csvLine": 1762,
+   "ownerId": "u16-st-rem-inst-prep",
+   "field": "remediation body",
+   "baselineSentence": "The over label belongs to the first preposition; the under label belongs to the second.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E37",
+   "csvLine": 1763,
+   "ownerId": "u16-st-rem-inst-prep",
+   "field": "remediation body",
+   "baselineSentence": "In a location construction, both can govern instrumental forms.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i13",
+    "prov-t17a-u16-i15"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E38",
+   "csvLine": 1764,
+   "ownerId": "u16-st-rem-inst-prep",
+   "field": "remediation body",
+   "baselineSentence": "The same preposition can govern different cases in different uses.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15",
+    "prov-t17a-u16-i18"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E39",
+   "csvLine": 1765,
+   "ownerId": "u16-st-rem-inst-prep",
+   "field": "remediation body",
+   "baselineSentence": "For the preposition meaning under, instrumental describes location, while accusative can describe a destination under something.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15",
+    "prov-t17a-u16-pod106",
+    "prov-t17a-u16-pod135"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E40",
+   "csvLine": 1766,
+   "ownerId": "u16-st-rem-inst-prep",
+   "field": "remediation body",
+   "baselineSentence": "Movement within a location does not by itself require accusative: distinguish where something is from where it is going.",
+   "disposition": "MARK",
+   "s1Verdict": "SUPPORTED",
+   "sourceRecordIds": [
+    "prov-t17a-u16-pod106",
+    "prov-t17a-u16-pod135",
+    "prov-t17a-u16-pod136"
+   ],
+   "reason": "S1 SUPPORTED (audit/prep/s1-claim-verification.csv): marker cites Wiktionary под 92761073 lines 106, 135 and 136 (accusative for movement to beneath a place; instrumental for being beneath it, including swimming underwater)."
+  },
+  {
+   "entry": "U16-E41",
+   "csvLine": 1769,
+   "ownerId": "u16-st-rem-inst-prep",
+   "field": "remediation body",
+   "baselineSentence": "In the spatial use introduced here, before means in front of; it is not a universal translation for every English time expression with before.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i16"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E42",
+   "csvLine": 1770,
+   "ownerId": "u16-st-rem-inst-prep",
+   "field": "remediation body",
+   "baselineSentence": "Between places something relative to two things.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i17"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E43",
+   "csvLine": 1771,
+   "ownerId": "u16-st-rem-inst-prep",
+   "field": "remediation body",
+   "baselineSentence": "Learn the meaning first; sentence use still requires the appropriate case.",
+   "disposition": "REWORD",
+   "replacement": "Review these examples before trying again.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (prep section 3)."
+  },
+  {
+   "entry": "U16-E44",
+   "csvLine": 1772,
+   "ownerId": "u16-i-inst-prep-1",
+   "field": "item feedback",
+   "baselineSentence": "The under label identifies the meaning of the shown preposition: below something.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E45",
+   "csvLine": 1773,
+   "ownerId": "u16-i-inst-prep-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "The over label places something above, not below.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E46",
+   "csvLine": 1774,
+   "ownerId": "u16-i-inst-prep-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "The behind label places something at the back, not below.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15",
+    "prov-t17a-u16-i18"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E47",
+   "csvLine": 1775,
+   "ownerId": "u16-i-inst-prep-2",
+   "field": "item feedback",
+   "baselineSentence": "The before label identifies the spatial meaning of the shown preposition: in front of something.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i16"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E48",
+   "csvLine": 1776,
+   "ownerId": "u16-i-inst-prep-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "The over label places something above, not in front of.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i15",
+    "prov-t17a-u16-i16"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E49",
+   "csvLine": 1777,
+   "ownerId": "u16-i-inst-prep-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "The between label places something relative to two things, not in front of.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-i16",
+    "prov-t17a-u16-i17"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E50",
+   "csvLine": 1779,
+   "ownerId": "u16-g-complements-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "to remain expresses continuation, not a change of state.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-v-4e82e30a-sense",
+    "prov-t17a-u16-v-90018e4d-sense"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E51",
+   "csvLine": 1780,
+   "ownerId": "u16-g-complements-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "to turn out to be expresses what something proves to be, not becoming.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-v-8c4e2995-sense",
+    "prov-t17a-u16-v-90018e4d-sense"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E52",
+   "csvLine": 1783,
+   "ownerId": "u16-st-rem-complements",
+   "field": "remediation body",
+   "baselineSentence": "Both are infinitives: they name an action or state without marking a past event.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-mor838",
+    "prov-t17a-u16-v-98caffd1-accented",
+    "prov-t17a-u16-v-c2278a9f-accented"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E53",
+   "csvLine": 1784,
+   "ownerId": "u16-st-rem-complements",
+   "field": "remediation body",
+   "baselineSentence": "Becoming expresses a change; remaining expresses continuation.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-v-90018e4d-sense",
+    "prov-t17a-u16-v-4e82e30a-sense"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E54",
+   "csvLine": 1785,
+   "ownerId": "u16-st-rem-complements",
+   "field": "remediation body",
+   "baselineSentence": "For the first form choose to become.",
+   "disposition": "REWORD",
+   "replacement": "Review the verb meanings above before retrying.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Answer-selection script reworded to an instruction (prep section 3)."
+  },
+  {
+   "entry": "U16-E55",
+   "csvLine": 1786,
+   "ownerId": "u16-st-rem-complements",
+   "field": "remediation body",
+   "baselineSentence": "For the second form choose remain among the displayed choices.",
+   "disposition": "REWORD",
+   "replacement": "The second form means remain.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t17a-u16-v-4e82e30a-sense"
+   ],
+   "reason": "Departure: the sweep row rewrites the script as \"The second form means remain.\", a marked fact citing verbs.csv оста́ться (remain) (prep: instruction)."
+  },
+  {
+   "entry": "U16-E56",
+   "csvLine": 1787,
+   "ownerId": "u16-st-rem-complements",
+   "field": "remediation body",
+   "baselineSentence": "The English past-tense word became does not correctly label either infinitive.",
+   "disposition": "REWORD",
+   "replacement": "Review the verb meanings above before retrying.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to the same instruction (prep section 3)."
+  },
+  {
+   "entry": "U16-E57",
+   "csvLine": 1788,
+   "ownerId": "u16-st-rem-complements",
+   "field": "remediation body",
+   "baselineSentence": "An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-g42",
+    "prov-t17a-u16-g43",
+    "prov-t17a-u16-g45",
+    "prov-t17a-u16-g48"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E58",
+   "csvLine": 1789,
+   "ownerId": "u16-st-rem-complements",
+   "field": "remediation body",
+   "baselineSentence": "The verbs shown in this lesson can occur in that construction.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-g48"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E59",
+   "csvLine": 1790,
+   "ownerId": "u16-st-rem-complements",
+   "field": "remediation body",
+   "baselineSentence": "Recognizing a verb meaning is a first step; it does not demonstrate forming a complete sentence with an instrumental complement.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Commentary about what recognition demonstrates is removed (prep section 3); the sweep instruction takes its place."
+  },
+  {
+   "entry": "U16-E60",
+   "csvLine": 1793,
+   "ownerId": "u16-st-rem-complements",
+   "field": "remediation body",
+   "baselineSentence": "The first concerns how something seems; the second concerns what it proves to be.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-v-0a47c85e-sense",
+    "prov-t17a-u16-v-8c4e2995-sense"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E61",
+   "csvLine": 1794,
+   "ownerId": "u16-st-rem-complements",
+   "field": "remediation body",
+   "baselineSentence": "A displayed infinitive still does not specify a past event.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-mor838"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E62",
+   "csvLine": 1796,
+   "ownerId": "u16-i-complements-1",
+   "field": "item feedback",
+   "baselineSentence": "It belongs to the connective verbs introduced here.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-g48"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E63",
+   "csvLine": 1797,
+   "ownerId": "u16-i-complements-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "became is an English past-tense word and does not correctly label the shown infinitive.",
+   "disposition": "REWORD",
+   "replacement": "became is a past-tense English form, not the meaning of this infinitive.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t17a-u16-g48",
+    "prov-t17a-u16-mor838",
+    "prov-t17a-u16-v-90018e4d-sense"
+   ],
+   "reason": "Departure: V2Validator requires a distractor rationale to name its competing gloss, so the rationale keeps became and is marked (russian-grammar:48, Морфология:838, verbs.csv стать become) (prep: instruction)."
+  },
+  {
+   "entry": "U16-E64",
+   "csvLine": 1798,
+   "ownerId": "u16-i-complements-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "turn out to be expresses what something proves to be, not continuation.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-v-8c4e2995-sense",
+    "prov-t17a-u16-v-4e82e30a-sense"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U16-E65",
+   "csvLine": 1800,
+   "ownerId": "u16-i-complements-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "became is an English past-tense word and does not correctly label the shown infinitive.",
+   "disposition": "REWORD",
+   "replacement": "became is a past-tense English form, not the meaning of this infinitive.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t17a-u16-g48",
+    "prov-t17a-u16-mor838",
+    "prov-t17a-u16-v-90018e4d-sense"
+   ],
+   "reason": "Departure: V2Validator requires a distractor rationale to name its competing gloss, so the rationale keeps became and is marked (russian-grammar:48, Морфология:838, verbs.csv стать become) (prep: instruction)."
+  },
+  {
+   "entry": "U16-E66",
+   "csvLine": 1801,
+   "ownerId": "u16-i-complements-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "remain expresses continuation of a state, not what something proves to be.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17a-u16-v-4e82e30a-sense",
+    "prov-t17a-u16-v-8c4e2995-sense"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  }
+ ],
+ "markerReviews": [
+  {
+   "ownerId": "u16-g-inst-means-0",
+   "sentence": "The accompaniment line describes a meeting with a person, not an instrument used to perform an action.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 69,
+     "quote": "Feminine adjectives end in '''-ой'''. For adjectives ending in the 5-letter rule or soft ending, the instrumental ending"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 14,
+     "quote": "*'''C(o)''' + ''inst'' means 'with'. This may be confusing, as the primary meaning of the instrumental case on its own i"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-g-inst-means-0",
+   "sentence": "The sentence about living between two houses describes location, not an accompaniment line.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 81,
+     "quote": ":I live between two new houses - '''Я живу́ ме́жду двумя но́выми дома́ми'''"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 17,
+     "quote": "*'''Между''' means 'between' or 'among', similar to '''среди''' + ''gen'', 'among' (e.g., 'He stood between them')."
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-inst-means-1",
+   "sentence": "The means instrumental in the writing sentence names the pencil used as the tool.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 67,
+     "quote": "To form masculine and neuter adjectives, the ending is '''-ым'''. If the adjective ends in the 5-letter rule ('''ш, щ, ч"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 4,
+     "quote": "The instrumental case is used to denote the means by which some actions is carried out. In the phrase, 'Boris wrote the "
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-inst-means-1",
+   "sentence": "The sentence about living between two houses describes location, not a means instrumental naming a tool.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 81,
+     "quote": ":I live between two new houses - '''Я живу́ ме́жду двумя но́выми дома́ми'''"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 17,
+     "quote": "*'''Между''' means 'between' or 'among', similar to '''среди''' + ''gen'', 'among' (e.g., 'He stood between them')."
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-inst-means-2",
+   "sentence": "The between line locates the speaker relative to two houses.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 81,
+     "quote": ":I live between two new houses - '''Я живу́ ме́жду двумя но́выми дома́ми'''"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 17,
+     "quote": "*'''Между''' means 'between' or 'among', similar to '''среди''' + ''gen'', 'among' (e.g., 'He stood between them')."
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-inst-means-2",
+   "sentence": "The meeting sentence is an accompaniment line describing a person involved in a meeting, not location between houses.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 69,
+     "quote": "Feminine adjectives end in '''-ой'''. For adjectives ending in the 5-letter rule or soft ending, the instrumental ending"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 81,
+     "quote": ":I live between two new houses - '''Я живу́ ме́жду двумя но́выми дома́ми'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-g-inst-prep-0",
+   "sentence": "The over label identifies the meaning of the shown preposition: above something.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-g-inst-prep-0",
+   "sentence": "The under label places something below, not above.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-g-inst-prep-0",
+   "sentence": "The before label describes being in front of, not above.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 16,
+     "quote": "*'''Перед''' means 'before' or 'in front of' in terms of positioning, and can also indicate responsibility ('The dog is "
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-inst-prep-1",
+   "sentence": "The under label identifies the meaning of the shown preposition: below something.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-inst-prep-1",
+   "sentence": "The over label places something above, not below.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-inst-prep-1",
+   "sentence": "The behind label places something at the back, not below.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 18,
+     "quote": "*'''За''' generally means 'behind' or 'beyond', but has a few nuances to it. Like '''под''', when no motion is involved,"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-inst-prep-2",
+   "sentence": "The before label identifies the spatial meaning of the shown preposition: in front of something.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 16,
+     "quote": "*'''Перед''' means 'before' or 'in front of' in terms of positioning, and can also indicate responsibility ('The dog is "
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-inst-prep-2",
+   "sentence": "The over label places something above, not in front of.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 16,
+     "quote": "*'''Перед''' means 'before' or 'in front of' in terms of positioning, and can also indicate responsibility ('The dog is "
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-inst-prep-2",
+   "sentence": "The between label places something relative to two things, not in front of.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 16,
+     "quote": "*'''Перед''' means 'before' or 'in front of' in terms of positioning, and can also indicate responsibility ('The dog is "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 17,
+     "quote": "*'''Между''' means 'between' or 'among', similar to '''среди''' + ''gen'', 'among' (e.g., 'He stood between them')."
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-g-complements-0",
+   "sentence": "to remain expresses continuation, not a change of state.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 28,
+     "quote": "остаться\tоста'ться"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 14828,
+     "quote": "стать\tстать"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-g-complements-0",
+   "sentence": "to turn out to be expresses what something proves to be, not becoming.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 32,
+     "quote": "оказаться\tоказа'ться"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 14828,
+     "quote": "стать\tстать"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-complements-1",
+   "sentence": "It belongs to the connective verbs introduced here.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 48,
+     "quote": "** associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{l"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-complements-1",
+   "sentence": "became is a past-tense English form, not the meaning of this infinitive.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 48,
+     "quote": "** associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{l"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 838,
+     "quote": "Исходная (неопределённая) форма глагольной парадигмы — [[инфинитив]], по своим синтаксическим функциям сходный с именем "
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 14828,
+     "quote": "стать\tстать"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-complements-1",
+   "sentence": "turn out to be expresses what something proves to be, not continuation.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 32,
+     "quote": "оказаться\tоказа'ться"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 28,
+     "quote": "остаться\tоста'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-complements-2",
+   "sentence": "became is a past-tense English form, not the meaning of this infinitive.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 48,
+     "quote": "** associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{l"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 838,
+     "quote": "Исходная (неопределённая) форма глагольной парадигмы — [[инфинитив]], по своим синтаксическим функциям сходный с именем "
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 14828,
+     "quote": "стать\tстать"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-i-complements-2",
+   "sentence": "remain expresses continuation of a state, not what something proves to be.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 28,
+     "quote": "остаться\tоста'ться"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 32,
+     "quote": "оказаться\tоказа'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-sg",
+   "sentence": "The instrumental case can mark the means used to do something.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 4,
+     "quote": "The instrumental case is used to denote the means by which some actions is carried out. In the phrase, 'Boris wrote the "
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-sg",
+   "sentence": "The word still names a table: the ending marks its grammatical role, not a new vocabulary meaning.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 4,
+     "quote": "The instrumental case is used to denote the means by which some actions is carried out. In the phrase, 'Boris wrote the "
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 32,
+     "quote": "стол\tстол"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-sg",
+   "sentence": "Both belong to the same noun, but neither has the instrumental singular ending.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 32,
+     "quote": "стол\tстол"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-sg",
+   "sentence": "These forms are not instrumental singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 15,
+     "quote": "дом\tдом"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-pl",
+   "sentence": "This is a noun ending; adjectives have their own agreement endings.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 51,
+     "quote": "There are two general endings for the instrumental plural: '''ами''' and '''ями'''. If the noun ends in a consonant, '''"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 76,
+     "quote": "Adjectives modifying masculine or neuter nouns in the instrumental case have two endings: adjectives which have the defa"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 78,
+     "quote": "The plural ending is '''ыми'''. For adjectives that end in '''ий''', the ending is '''ими'''."
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-pl",
+   "sentence": "Neither is instrumental plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\tкни'га"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 32,
+     "quote": "стол\tстол"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-pl",
+   "sentence": "The first is not instrumental; the second is instrumental singular rather than plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 15,
+     "quote": "дом\tдом"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-adj",
+   "sentence": "An adjective agrees with its noun in case and number, and in gender in the singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 249,
+     "quote": "A Russian adjective ({{wikt-lang|ru|имя прилагательное|и́мя прилага́тельное}}) is usually placed before the noun it qual"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 76,
+     "quote": "Adjectives modifying masculine or neuter nouns in the instrumental case have two endings: adjectives which have the defa"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-adj",
+   "sentence": "These are adjective declension endings.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 76,
+     "quote": "Adjectives modifying masculine or neuter nouns in the instrumental case have two endings: adjectives which have the defa"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 78,
+     "quote": "The plural ending is '''ыми'''. For adjectives that end in '''ий''', the ending is '''ими'''."
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 67,
+     "quote": "To form masculine and neuter adjectives, the ending is '''-ым'''. If the adjective ends in the 5-letter rule ('''ш, щ, ч"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-adj",
+   "sentence": "Neither is the masculine instrumental singular form.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 18,
+     "quote": "хороший\tхоро'ший"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-means",
+   "sentence": "The pencil is the tool used for writing: this is the means instrumental, without a preposition before the tool phrase.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 67,
+     "quote": "To form masculine and neuter adjectives, the ending is '''-ым'''. If the adjective ends in the 5-letter rule ('''ш, щ, ч"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 4,
+     "quote": "The instrumental case is used to denote the means by which some actions is carried out. In the phrase, 'Boris wrote the "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 14,
+     "quote": "*'''C(o)''' + ''inst'' means 'with'. This may be confusing, as the primary meaning of the instrumental case on its own i"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-means",
+   "sentence": "Here with introduces the person involved in the meeting: this is the accompaniment line, using a preposition followed by instrumental forms.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 69,
+     "quote": "Feminine adjectives end in '''-ой'''. For adjectives ending in the 5-letter rule or soft ending, the instrumental ending"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 13,
+     "quote": "Like the other cases, there are prepositions which can place whatever comes after them in the instrumental case. There a"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 14,
+     "quote": "*'''C(o)''' + ''inst'' means 'with'. This may be confusing, as the primary meaning of the instrumental case on its own i"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-means",
+   "sentence": "For a means instrumental request, choose the writing sentence because its pencil is the instrument.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 67,
+     "quote": "To form masculine and neuter adjectives, the ending is '''-ым'''. If the adjective ends in the 5-letter rule ('''ш, щ, ч"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 14,
+     "quote": "*'''C(o)''' + ''inst'' means 'with'. This may be confusing, as the primary meaning of the instrumental case on its own i"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-means",
+   "sentence": "For an accompaniment line request, choose the meeting sentence because it describes being with a person.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 69,
+     "quote": "Feminine adjectives end in '''-ой'''. For adjectives ending in the 5-letter rule or soft ending, the instrumental ending"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 14,
+     "quote": "*'''C(o)''' + ''inst'' means 'with'. This may be confusing, as the primary meaning of the instrumental case on its own i"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-means",
+   "sentence": "English with can express both roles; its presence alone does not decide which Russian construction is used.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 14,
+     "quote": "*'''C(o)''' + ''inst'' means 'with'. This may be confusing, as the primary meaning of the instrumental case on its own i"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-means",
+   "sentence": "This is the between line: the phrase locates the speaker relative to two houses.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 81,
+     "quote": ":I live between two new houses - '''Я живу́ ме́жду двумя но́выми дома́ми'''"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 17,
+     "quote": "*'''Между''' means 'between' or 'among', similar to '''среди''' + ''gen'', 'among' (e.g., 'He stood between them')."
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-means",
+   "sentence": "The houses are neither a writing tool nor a companion.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 81,
+     "quote": ":I live between two new houses - '''Я живу́ ме́жду двумя но́выми дома́ми'''"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 67,
+     "quote": "To form masculine and neuter adjectives, the ending is '''-ым'''. If the adjective ends in the 5-letter rule ('''ш, щ, ч"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 69,
+     "quote": "Feminine adjectives end in '''-ой'''. For adjectives ending in the 5-letter rule or soft ending, the instrumental ending"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-prep",
+   "sentence": "These spatial meanings contrast vertical positions.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-prep",
+   "sentence": "The over label belongs to the first preposition; the under label belongs to the second.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-prep",
+   "sentence": "In a location construction, both can govern instrumental forms.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 13,
+     "quote": "Like the other cases, there are prepositions which can place whatever comes after them in the instrumental case. There a"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-prep",
+   "sentence": "The same preposition can govern different cases in different uses.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 18,
+     "quote": "*'''За''' generally means 'behind' or 'beyond', but has a few nuances to it. Like '''под''', when no motion is involved,"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-prep",
+   "sentence": "For the preposition meaning under, instrumental describes location, while accusative can describe a destination under something.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 15,
+     "quote": "*'''Над''' means 'over' or 'above', and '''под''' means 'under' or 'beneath'. '''Под''' + ''inst'' means 'under' if ther"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wiktionary/pod-92761073.txt",
+     "line": 106,
+     "quote": "## [[under]], [[below]], [[beneath]] ({{n-g|movement to beneath a location}})"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wiktionary/pod-92761073.txt",
+     "line": 135,
+     "quote": "## [[under]], [[below]], [[beneath]] ({{n-g|being beneath a location}})"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-prep",
+   "sentence": "Movement within a location does not by itself require accusative: distinguish where something is from where it is going.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wiktionary/pod-92761073.txt",
+     "line": 106,
+     "quote": "## [[under]], [[below]], [[beneath]] ({{n-g|movement to beneath a location}})"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wiktionary/pod-92761073.txt",
+     "line": 135,
+     "quote": "## [[under]], [[below]], [[beneath]] ({{n-g|being beneath a location}})"
+    },
+    {
+     "file": "catalog/sources/s1-intake/wiktionary/pod-92761073.txt",
+     "line": 136,
+     "quote": "##: {{uxi|ru|[[пла́вать]] '''под''' [[водо́й]]|to swim '''under'''water}}"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-prep",
+   "sentence": "In the spatial use introduced here, before means in front of; it is not a universal translation for every English time expression with before.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 16,
+     "quote": "*'''Перед''' means 'before' or 'in front of' in terms of positioning, and can also indicate responsibility ('The dog is "
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-inst-prep",
+   "sentence": "Between places something relative to two things.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+     "line": 17,
+     "quote": "*'''Между''' means 'between' or 'among', similar to '''среди''' + ''gen'', 'among' (e.g., 'He stood between them')."
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-complements",
+   "sentence": "Both are infinitives: they name an action or state without marking a past event.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 838,
+     "quote": "Исходная (неопределённая) форма глагольной парадигмы — [[инфинитив]], по своим синтаксическим функциям сходный с именем "
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 14828,
+     "quote": "стать\tстать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 28,
+     "quote": "остаться\tоста'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-complements",
+   "sentence": "Becoming expresses a change; remaining expresses continuation.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 14828,
+     "quote": "стать\tстать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 28,
+     "quote": "остаться\tоста'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-complements",
+   "sentence": "The second form means remain.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 28,
+     "quote": "остаться\tоста'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-complements",
+   "sentence": "An instrumental complement can describe the role or state of the subject after a linking verb, rather than an instrument used to carry out an action.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 42,
+     "quote": "* [[Instrumental case|instrumental]] ({{lang|ru|твори́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 43,
+     "quote": "** instrument used in the action or means by which action is carried out – 'by' (I. noun);"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 45,
+     "quote": "** secondary direct object: {{lang|ru|его считают студентом}} – 'he is considered (to be) a student';"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 48,
+     "quote": "** associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{l"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-complements",
+   "sentence": "The verbs shown in this lesson can occur in that construction.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 48,
+     "quote": "** associates of connective verbs: {{lang|ru|быть}} 'be', {{lang|ru|стать}} 'became', {{lang|ru|остаться}} 'remain', {{l"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-complements",
+   "sentence": "The first concerns how something seems; the second concerns what it proves to be.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 23,
+     "quote": "казаться\tказа'ться"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 32,
+     "quote": "оказаться\tоказа'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-complements",
+   "sentence": "The second form means turn out to be, rather than the meaning of continuation.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 32,
+     "quote": "оказаться\tоказа'ться"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 28,
+     "quote": "остаться\tоста'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u16-st-rem-complements",
+   "sentence": "A displayed infinitive still does not specify a past event.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 838,
+     "quote": "Исходная (неопределённая) форма глагольной парадигмы — [[инфинитив]], по своим синтаксическим функциям сходный с именем "
+    }
+   ]
+  }
+ ],
+ "markerReviewsNote": "Each Unit 16 marker with no Cyrillic word names the frozen files and lines of its cited records: a page line by number and exact quote, an OpenRussian row by its bare and accented headwords. Lines are 1-based."
+}

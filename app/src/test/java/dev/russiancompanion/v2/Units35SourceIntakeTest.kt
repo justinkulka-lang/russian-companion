@@ -69,6 +69,9 @@ class Units35SourceIntakeTest {
             // T16e: Повелительное наклонение oldid 152579064, frozen by S1 and admitted by D29a, cited for the Unit 15 plural/polite
             // imperative claims (inventory lines 1593, 1600, 1627).
             "src-ruwiki-povelitelnoe-naklonenie-152579064",
+            // T17a: Wiktionary под oldid 92761073, frozen by S1 and admitted by D29a, cited for the Unit 16 claim on movement within
+            // a location (inventory line 1766, S1 SUPPORTED).
+            "src-enwiktionary-pod-92761073",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)

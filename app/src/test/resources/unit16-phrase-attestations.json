@@ -1,0 +1,20 @@
+{
+ "task": "T17a (Claude Code, 2026-11-22)",
+ "phrases": [
+  {
+   "phrase": "Я живу́ ме́жду двумя но́выми дома́ми",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 81
+  },
+  {
+   "phrase": "Я написал хорошим новым карандашом",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 67
+  },
+  {
+   "phrase": "Я хочу встречу с интересной русской женщиной",
+   "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+   "line": 69
+  }
+ ]
+}

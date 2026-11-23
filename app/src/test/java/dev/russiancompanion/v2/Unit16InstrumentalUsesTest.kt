@@ -10,8 +10,10 @@ class Unit16InstrumentalUsesTest {
         val pack = pack()
         val claims = mapOf(
             "inst-means" to listOf("tool", "accompaniment line", "between line", "without a preposition"),
-            "inst-prep" to listOf("location", "accusative", "destination", "Movement within a location", "in front of", "isolated-word"),
-            "complements" to listOf("role or state of the subject", "infinitives", "change", "continuation", "does not demonstrate"),
+            // T17a: "isolated-word" -> "isolated prepositions" and "does not demonstrate" -> "practise complete sentences" (sweep rows
+            // replacing assessment commentary; inventory line 1790 is removed).
+            "inst-prep" to listOf("location", "accusative", "destination", "Movement within a location", "in front of", "isolated prepositions"),
+            "complements" to listOf("role or state of the subject", "infinitives", "change", "continuation", "practise complete sentences"),
         )
         for ((slug, required) in claims) {
             val session = pack.unit(16)!!.sessions.first { it.id == "u16-s-$slug" }
@@ -41,7 +43,9 @@ class Unit16InstrumentalUsesTest {
             val index = item.options.indexOf("became")
             assertTrue(index >= 0)
             assertTrue(item.distractorRationales[index].contains("past-tense"))
-            assertTrue(item.distractorRationales[index].contains("does not correctly label"))
+            // T17a (inventory lines 1797, 1800): "does not correctly label" -> "not the meaning of this infinitive"; the rationale still
+            // names the became gloss, as V2Validator requires.
+            assertTrue(item.distractorRationales[index].contains("not the meaning of this infinitive"))
             assertTrue(item.prompt.contains("infinitive"))
         }
     }
