@@ -34,13 +34,17 @@ class Units2630SourceIntakeTest {
         // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
         3 to "81f65bc5ddb8a339d4dc1e1cd7f60f3e0eace42777b3705eb99c109d89a228d0",
         // T15g A4: prov-d7b-u16-029 re-cited to adjectives-4292379.txt:67 (was 17e7a641...).
-        16 to "7db670f54ce630e32d8b7ebbf01ff573d4b962589593ed4268008fa98b075ac7",
+        // T17a: Unit 16 content (was 7db670f5...).
+        16 to "d08a9c1a11557d77c4845780c7b7872f08539037d32e171a32a7c70a8728053a",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 17 was 6b680bda...).
         17 to "2b8138570602b6022e7230f7ef786d6f61dfaaa3f6ceba7e6603f90ebae425e3",
-        18 to "a82a7ebfb08005efef182b596fcad6031aedd75909c109712f2ed06f5cce5370",
+        // T17a: the shared ref-u1620-attribution notice (was a82a7ebf...).
+        18 to "04147a354d8206c6573392d6293ca5db3dc40532530f5b39ab1fef7acadfafb2",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
-        19 to "0006fdf52d572fb5c7c6ba9d85d94cb1badcb61d4922bc628eeb94b2042ad657",
-        20 to "380eb1318f46f25b826b99255250660178a3095d0263970b3c075fe7770d33e3",
+        // T17a: the shared ref-u1620-attribution notice (was 0006fdf5...).
+        19 to "26e89ab24316060f89ba2110975b2112883d9b5700b569b2698a147594b666ae",
+        // T17a: the shared ref-u1620-attribution notice (was 380eb131...).
+        20 to "cd1ef77d45a91a06be957569e4cc01b157acd476c03bd888b9be6b80262e37c4",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 21 was 566c3430...).
         21 to "bc4a91db180e105da41941969919dc57b9bdbe75b6ce9e6c5a169129bf351e39",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 22 was 3af10509...).
