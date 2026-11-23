@@ -36,6 +36,7 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - t16n1-t16b-codex-check-at-62b4b084.txt: Codex check of T16-n1 and T16b. PASS except manual lint misses in Units 1-5 and 12; see D30.
 - codex-backlog.md: queued Codex checks while Codex is paused (credits). Send in order when it resets.
 - book-audio-reference-index.csv: for each audio-manifest row, where the owner's purchased books (Russian Alphabet/Grammar/Level 1/Level 2 Made Easy) pronounce it: book, track, seconds. Locators only; no book audio is stored. A private reference for listen-checks and AI-audio review.
+- owner-listen-check-2026-11-23.json: owner listen-check, all 34 candidate clips MATCH (D35).
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
 - t15f-changed-learner-fields.csv: T15f, every changed learner field in Units 1-30 (442 rows: unit, owner, field, old, new) between 1bf80b92 and 34b714dd, for the Codex check of T15f.
 - d7b-valsim-at-e853de1e.out: D7b validator simulation at e853de1e (Code). Regions only synthesis records admitted, as (unit, text, allowlisted) and occurrence count; 100 distinct, 70 not allowlisted. See D18.

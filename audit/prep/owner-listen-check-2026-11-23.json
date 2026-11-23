@@ -1,0 +1,246 @@
+{
+ "schema": "book-reference-listen-check/1",
+ "verifier": "Justin (owner)",
+ "completedAt": "2026-11-23T21:22:00Z",
+ "reportedVia": "owner statement in coordinator chat: ALL MATCH",
+ "results": [
+  {
+   "id": "A02-004",
+   "clip": "rus-8b8ad1e8",
+   "sha256": "fb15d8f57bedcc58377abba81dc0e52671f8880a637788259ec327bd1260c84f",
+   "decision": "MATCH",
+   "bookReferences": 1
+  },
+  {
+   "id": "A03-001",
+   "clip": "rus-f526c3a2",
+   "sha256": "35f479fce59ad582a23cd10d7515d964dfb68a0a92b9fe8176f7ba936797db30",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A03-004",
+   "clip": "rus-8f1e46da",
+   "sha256": "bdbffe58be434ae235ceef0726cdca7cab27a5789b5256a8374c5957e8e4839a",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A03-006",
+   "clip": "rus-ecc04363",
+   "sha256": "251edc54224be30b68f84d28f99ce53d0aa2d019f956847344bcb95f86ce45b8",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A03-007",
+   "clip": "rus-714ae1d2",
+   "sha256": "8ffa17c3c0218fcd6a3e217dfbecefb291c274d2b12fd46507400c0364f2edcd",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A03-021",
+   "clip": "rus-a7afa14d",
+   "sha256": "39c5cfaebc304d2670902228ca76cbc4645bf897ed0229837d5d367102b4ab01",
+   "decision": "MATCH",
+   "bookReferences": 1
+  },
+  {
+   "id": "A04-006",
+   "clip": "rus-2383e20d",
+   "sha256": "853aa485cf7055ec1540f435f60c24b1efd3838c56b3f417244636e553299fc4",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A04-015",
+   "clip": "rus-1267a652",
+   "sha256": "444505d921d4107385448427e7288b83d8bf36e709fbfdd0e7e9571cda73f588",
+   "decision": "MATCH",
+   "bookReferences": 0
+  },
+  {
+   "id": "A04-016",
+   "clip": "rus-d5ac2c6b",
+   "sha256": "4d57a086a798a9d3deab8912068b84d379e7543c580600505082fd8b56010e7f",
+   "decision": "MATCH",
+   "bookReferences": 1
+  },
+  {
+   "id": "A04-024",
+   "clip": "rus-291dcf07",
+   "sha256": "af962af6213f1da8e8e883cecb0c41991121df6e2b2f236397edd060f9fcbc50",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A04-025",
+   "clip": "rus-fc38bfb1",
+   "sha256": "279aa4ee5badef89c15c57a0152961eb63054277dee91163dca997760f165ab5",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A04-042",
+   "clip": "rus-bf5460f8",
+   "sha256": "5432ffe1d5b4346b8cda242b7c5501b97c62e4d7483433dd8155e7f1050a5648",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A05-001",
+   "clip": "rus-2aaba201",
+   "sha256": "86ae395ace7ce62efd2f7d2317d8f0c888b83d61f7cb62a95bbd0b01be7418d8",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A05-002",
+   "clip": "rus-b00d753d",
+   "sha256": "b8a10ee9a75cdb08a5273ec7a8987c7235f2e155a327bf75f333a14ecb09d55f",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A05-009",
+   "clip": "rus-2833e7bf",
+   "sha256": "4a67b86c3f038c7b574f850825660e26927b8c4e1efdfc440f8bca069035197d",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A05-013",
+   "clip": "rus-80cf7d55",
+   "sha256": "83129692f3619fea7e6a61b4e0b331cc79019fade9f7fb8668e9cd21922851e4",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A05-021",
+   "clip": "rus-bade482d",
+   "sha256": "45cd80ad63259a6fcfa48c124c2088bbdec005a12de13d3ec52acfc138f3e5d3",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A06-016",
+   "clip": "rus-acdafc2d",
+   "sha256": "3d035c1c96d903590bcd197a51a7397b88743c7f2e3271e1cb20fc78f73c8bc4",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A06-032",
+   "clip": "rus-1234b1df",
+   "sha256": "440a91fec0eaa89c0edea1ae0188d9185f2ad35b86db06572ad3f37dd7c69980",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A08-018",
+   "clip": "rus-a346d7b8",
+   "sha256": "a36ce5b9f8d8b9c1dea469fe8e69e07553e8fc895ed354e2edbb793ba048c63f",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A09-001",
+   "clip": "rus-12eda911",
+   "sha256": "eddd25beb337ed9e89a3aa1ba9ee0578a6cf3e29adecedc246093674e983f580",
+   "decision": "MATCH",
+   "bookReferences": 0
+  },
+  {
+   "id": "A09-030",
+   "clip": "rus-5fa254b2",
+   "sha256": "6a6ff3ec1e70148e4498b592d09a61cfdf4b88a380dc942cf4930f14669ab032",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A09-046",
+   "clip": "rus-8af002ca",
+   "sha256": "a4e4c67d0a0854f6443081849de7272425f6eddd6783bc44afa82c697e86aa96",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A09-051",
+   "clip": "rus-af1444a2",
+   "sha256": "04acfef6c73f360773ebb69b683740c6403a383451d30b0522608e4fcfb8025c",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A10-003",
+   "clip": "rus-4cc0d1df",
+   "sha256": "985b54d1b28411a0c650e24abd89a2c39ca0b462957ed9395bdb8a5e084fb01a",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A10-009",
+   "clip": "rus-a86af01a",
+   "sha256": "7ca5a5b2f3127b83d9271ad9df744b275ba14d69971cecd0ad51cdd588293e66",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A10-013",
+   "clip": "rus-5345a3cd",
+   "sha256": "875b4a70d0b9bcf79a4e508a17e66ac80891b09faccfb175cd1cd0ff33adaf3d",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A11-005",
+   "clip": "rus-fa1d892f",
+   "sha256": "d8173218e1864053b5aaefee99e1bdf4e0d710741e64d1000a772088578303c8",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A11-007",
+   "clip": "rus-8a9989d5",
+   "sha256": "fd4379578e179dd7b5fe26678678ad8dd86a4a589ff340d0f61551a7a1dc4843",
+   "decision": "MATCH",
+   "bookReferences": 0
+  },
+  {
+   "id": "A15-003",
+   "clip": "rus-b588fcba",
+   "sha256": "c9bb6bd977f42a3be981385cfb1311f5c4962bc3511d8de85f4aef9b2b0ed644",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A16-012",
+   "clip": "rus-e595842a",
+   "sha256": "4fa1467419598a74712b826943ba97ee09222a06a23525c6837d2a2b03ae2549",
+   "decision": "MATCH",
+   "bookReferences": 0
+  },
+  {
+   "id": "A16-018",
+   "clip": "rus-f5c42b28",
+   "sha256": "fbb3158bef2822155665e272dfe525679d7e8bdd19f0448cd63da1e656219b25",
+   "decision": "MATCH",
+   "bookReferences": 1
+  },
+  {
+   "id": "A24-001",
+   "clip": "rus-f0a589da",
+   "sha256": "d90088360e9d778a479839580c091ca7de89137127e0eb25328ef7034b9408bc",
+   "decision": "MATCH",
+   "bookReferences": 2
+  },
+  {
+   "id": "A24-007",
+   "clip": "rus-8e14f567",
+   "sha256": "06fec13072e802cd1e4826cfa0a22ec07436c29b08d610632990639ae47899df",
+   "decision": "MATCH",
+   "bookReferences": 2
+  }
+ ]
+}
