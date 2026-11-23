@@ -71,7 +71,13 @@ Commits: 6d6fd938 (D34), 569341cc (Unit 16), 43996033 (pins), then later commits
 - Departures: no third options were added, and the "Choose <answer>" sentences are removed. Confirm the binary checks are justified under CC036. Check the Aud44CorrectionTest change.
 - Test moves in UnitTestAndBinderTest (examples shift to Units 18 and 22) are legitimate. Recompute the pins.
 
-## 7. T17c check: Unit 18 (due once T17c is DONE)
+## 7. T17c check: Unit 18 (due once T17c is DONE; local commits so far 6810533d content, 70aaf80e pin)
+- Test changes to verify as not weakened:
+  - Unit18ComparisonRelativeInstructionTest: governance and scope expectations removed. Confirm the six closed-item protections are intact.
+  - BatchAUnits71620Test: 47 closed items are still checked as before, and 18 typed items are asserted separately. Confirm the typed items get real assertions.
+  - Unit19CumulativeReviewTest: typed guided items are typed in through v2-typed-<id>. Confirm the closed path still clicks.
+- Wording: positive forms in parentheses, са́мый in the "most" contrast, and practice/check instructions that cover typed answers. Confirm no Russian was composed.
+- Unit 18 digest 04147a35 -> 114c6675 (pinned in Aud44, Units2125 and Units2630 intake tests).
 
 ## 8. Later unit checks
 Add one entry each time a unit task reports DONE.
