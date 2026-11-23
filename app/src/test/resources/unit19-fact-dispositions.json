@@ -1,0 +1,3376 @@
+{
+ "task": "T17d (Claude Code, 2026-11-23); dispositions from audit/prep/unit-19-prep-at-20bfde5c.txt, section 3, and audit/prep/s1-claim-verification.csv",
+ "totals": {
+  "MARK": 53,
+  "REMOVE": 7,
+  "REWORD": 7
+ },
+ "entries": [
+  {
+   "entry": "U19-E001",
+   "csvLine": 2195,
+   "ownerId": "u19-g-prefix-caution-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "to agree is the meaning of the agreement verb.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-va23-prefix-caution",
+    "prov-t17d-u19-va25-prefix-caution",
+    "prov-t17d-u19-va26-prefix-caution",
+    "prov-t17d-u19-va27-prefix-caution",
+    "prov-t17d-u19-v-a86de8e8-translations_en",
+    "prov-t17d-u19-v-ee149732-translations_en",
+    "prov-t17d-u19-v-348dd82b-translations_en"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E002",
+   "csvLine": 2196,
+   "ownerId": "u19-g-prefix-caution-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "to write is the meaning of the writing verb.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-va23-prefix-caution",
+    "prov-t17d-u19-va25-prefix-caution",
+    "prov-t17d-u19-va26-prefix-caution",
+    "prov-t17d-u19-va27-prefix-caution",
+    "prov-t17d-u19-v-a86de8e8-translations_en",
+    "prov-t17d-u19-v-ee149732-translations_en",
+    "prov-t17d-u19-v-348dd82b-translations_en"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E003",
+   "csvLine": 2199,
+   "ownerId": "u19-st-rem-prefix-caution",
+   "field": "remediation body",
+   "baselineSentence": "These are different meanings, even though the words share material with a verb of speaking.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-va23-prefix-caution",
+    "prov-t17d-u19-va25-prefix-caution",
+    "prov-t17d-u19-va26-prefix-caution",
+    "prov-t17d-u19-va27-prefix-caution",
+    "prov-t17d-u19-v-a86de8e8-translations_en",
+    "prov-t17d-u19-v-ee149732-translations_en",
+    "prov-t17d-u19-v-348dd82b-translations_en"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E004",
+   "csvLine": 2200,
+   "ownerId": "u19-st-rem-prefix-caution",
+   "field": "remediation body",
+   "baselineSentence": "A prefix is not always just an aspect marker: learn the whole verb and its meaning.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-va23-prefix-caution",
+    "prov-t17d-u19-va25-prefix-caution",
+    "prov-t17d-u19-va26-prefix-caution",
+    "prov-t17d-u19-va27-prefix-caution",
+    "prov-t17d-u19-v-a86de8e8-translations_en",
+    "prov-t17d-u19-v-ee149732-translations_en",
+    "prov-t17d-u19-v-348dd82b-translations_en"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E005",
+   "csvLine": 2202,
+   "ownerId": "u19-st-rem-prefix-caution",
+   "field": "remediation body",
+   "baselineSentence": "The retained source explicitly identifies this pair.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Provenance narration is removed (prep section 3); the sweep instruction takes its place."
+  },
+  {
+   "entry": "U19-E006",
+   "csvLine": 2208,
+   "ownerId": "u19-st-rem-prefix-caution",
+   "field": "remediation body",
+   "baselineSentence": "Neither expresses dissuading or agreeing.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-va23-prefix-caution",
+    "prov-t17d-u19-va25-prefix-caution",
+    "prov-t17d-u19-va26-prefix-caution",
+    "prov-t17d-u19-va27-prefix-caution",
+    "prov-t17d-u19-v-a86de8e8-translations_en",
+    "prov-t17d-u19-v-ee149732-translations_en",
+    "prov-t17d-u19-v-348dd82b-translations_en"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E007",
+   "csvLine": 2209,
+   "ownerId": "u19-st-rem-prefix-caution",
+   "field": "remediation body",
+   "baselineSentence": "When a question asks for a meaning, translate the displayed verb.",
+   "disposition": "REWORD",
+   "replacement": "Translate the verb when identifying its meaning.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (prep section 3); the sweep row supplies the wording."
+  },
+  {
+   "entry": "U19-E008",
+   "csvLine": 2210,
+   "ownerId": "u19-st-rem-prefix-caution",
+   "field": "remediation body",
+   "baselineSentence": "When it asks for an aspect partner, preserve the lexical meaning while changing aspect.",
+   "disposition": "MARK",
+   "currentSentence": "When finding an aspect partner, preserve the lexical meaning while changing aspect.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-va23-prefix-caution",
+    "prov-t17d-u19-va25-prefix-caution",
+    "prov-t17d-u19-va26-prefix-caution",
+    "prov-t17d-u19-va27-prefix-caution",
+    "prov-t17d-u19-v-a86de8e8-translations_en",
+    "prov-t17d-u19-v-ee149732-translations_en",
+    "prov-t17d-u19-v-348dd82b-translations_en"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E009",
+   "csvLine": 2212,
+   "ownerId": "u19-i-prefix-caution-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "to dissuade is the meaning of a different prefixed verb.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-va23-prefix-caution",
+    "prov-t17d-u19-va25-prefix-caution",
+    "prov-t17d-u19-va26-prefix-caution",
+    "prov-t17d-u19-va27-prefix-caution",
+    "prov-t17d-u19-v-a86de8e8-translations_en",
+    "prov-t17d-u19-v-ee149732-translations_en",
+    "prov-t17d-u19-v-348dd82b-translations_en"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E010",
+   "csvLine": 2213,
+   "ownerId": "u19-i-prefix-caution-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "to do is the meaning of the doing verb.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-va23-prefix-caution",
+    "prov-t17d-u19-va25-prefix-caution",
+    "prov-t17d-u19-va26-prefix-caution",
+    "prov-t17d-u19-va27-prefix-caution",
+    "prov-t17d-u19-v-a86de8e8-translations_en",
+    "prov-t17d-u19-v-ee149732-translations_en",
+    "prov-t17d-u19-v-348dd82b-translations_en"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E011",
+   "csvLine": 2215,
+   "ownerId": "u19-i-prefix-caution-2",
+   "field": "item feedback",
+   "baselineSentence": "The retained source explicitly pairs these two verbs with the same dissuading meaning.",
+   "disposition": "MARK",
+   "currentSentence": "Learn these two verbs as a pair with the same dissuading meaning.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-va23-prefix-caution",
+    "prov-t17d-u19-va25-prefix-caution",
+    "prov-t17d-u19-va26-prefix-caution",
+    "prov-t17d-u19-va27-prefix-caution",
+    "prov-t17d-u19-v-a86de8e8-translations_en",
+    "prov-t17d-u19-v-ee149732-translations_en",
+    "prov-t17d-u19-v-348dd82b-translations_en"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E012",
+   "csvLine": 2218,
+   "ownerId": "u19-g-conditional-0",
+   "field": "item feedback",
+   "baselineSentence": "a male speaker is marked by the masculine past form, not supplied as the sentence translation.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E013",
+   "csvLine": 2219,
+   "ownerId": "u19-g-conditional-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "a female speaker would require feminine past agreement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E014",
+   "csvLine": 2220,
+   "ownerId": "u19-g-conditional-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "I would like to sleep is a sentence meaning rather than a speaker-agreement label.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E015",
+   "csvLine": 2222,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "These labels describe the speaker marked by the past-form agreement; they are not translations of the whole expressions.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E016",
+   "csvLine": 2223,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "Both use the first-person pronoun, a past-form verb and the conditional particle.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E017",
+   "csvLine": 2224,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "In this construction the past form need not report an actual past event: it can express a hypothetical situation, such as I would sleep.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E018",
+   "csvLine": 2225,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "Context supplies the time reference.",
+   "disposition": "MARK",
+   "s1Verdict": "SUPPORTED",
+   "sourceRecordIds": [
+    "prov-t17d-u19-sos18-conditional",
+    "prov-t17d-u19-g1215-conditional"
+   ],
+   "reason": "S1 SUPPORTED (audit/prep/s1-claim-verification.csv): marker cites ru Сослагательное наклонение 140019162 line 18 (time is shown lexically or by the situation) and Russian grammar line 1215."
+  },
+  {
+   "entry": "U19-E019",
+   "csvLine": 2226,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "The feminine past form has a final vowel that the masculine form lacks.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E020",
+   "csvLine": 2227,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "For the first choose a male speaker; for the second choose a female speaker.",
+   "disposition": "REWORD",
+   "replacement": "Review the agreement examples before retrying.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (prep section 3): the answer-selection script is removed."
+  },
+  {
+   "entry": "U19-E021",
+   "csvLine": 2228,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "I would like to sleep is a sentence meaning, not a label identifying the gender marked by the shown past form.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E022",
+   "csvLine": 2229,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "Speaker agreement and sentence meaning are different questions.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Commentary about kinds of assessment question is removed (prep section 3)."
+  },
+  {
+   "entry": "U19-E023",
+   "csvLine": 2232,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "The first-person pronoun identifies the speaker, rather than another person.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E024",
+   "csvLine": 2233,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "These retained wish expressions have the conditional particle before the verb, whereas the earlier examples put it after the verb.",
+   "disposition": "MARK",
+   "currentSentence": "These wish expressions have the conditional particle before the verb, whereas the earlier examples put it after the verb.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E025",
+   "csvLine": 2234,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "It cannot begin its clause.",
+   "disposition": "REWORD",
+   "replacement": "The particle cannot begin a sentence.",
+   "replacementKind": "MARKED",
+   "s1Verdict": "PARTIAL",
+   "sourceRecordIds": [
+    "prov-t17d-u19-by58-conditional"
+   ],
+   "reason": "S1 PARTIAL (audit/prep/s1-claim-verification.csv): Wiktionary бы 94001807 line 58 says the particle may appear anywhere in a sentence except the beginning, not clause; reworded to that frozen text and marked with line 58."
+  },
+  {
+   "entry": "U19-E026",
+   "csvLine": 2235,
+   "ownerId": "u19-st-rem-conditional",
+   "field": "remediation body",
+   "baselineSentence": "The wish reading comes from the construction and context, not from translating every conditional particle as would like.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E027",
+   "csvLine": 2236,
+   "ownerId": "u19-i-conditional-1",
+   "field": "item feedback",
+   "baselineSentence": "a female speaker is marked by the feminine past form; the pronoun identifies the speaker.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E028",
+   "csvLine": 2237,
+   "ownerId": "u19-i-conditional-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "a male speaker would require masculine past agreement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E029",
+   "csvLine": 2238,
+   "ownerId": "u19-i-conditional-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "I would like to sleep is a sentence meaning rather than a speaker-agreement label.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E030",
+   "csvLine": 2239,
+   "ownerId": "u19-i-conditional-2",
+   "field": "item feedback",
+   "baselineSentence": "The first-person pronoun identifies the speaker; the feminine past form marks feminine agreement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E031",
+   "csvLine": 2240,
+   "ownerId": "u19-i-conditional-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "the speaker is marked masculine would require masculine past agreement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E032",
+   "csvLine": 2241,
+   "ownerId": "u19-i-conditional-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "the sentence is about another person does not match the first-person pronoun.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g1215-conditional",
+    "prov-t17d-u19-l580-conditional",
+    "prov-t17d-u19-l582-conditional",
+    "prov-t17d-u19-mor901-conditional",
+    "prov-t17d-u19-mor903-conditional"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E033",
+   "csvLine": 2242,
+   "ownerId": "u19-g-obligation-0",
+   "field": "item feedback",
+   "baselineSentence": "The retained first-person phrase expresses obligation with masculine singular agreement.",
+   "disposition": "MARK",
+   "currentSentence": "The first-person phrase expresses obligation with masculine singular agreement.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E034",
+   "csvLine": 2243,
+   "ownerId": "u19-g-obligation-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "If the subject is feminine is an agreement label rather than the meaning of this first-person phrase.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E035",
+   "csvLine": 2244,
+   "ownerId": "u19-g-obligation-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "If the subject is plural is an agreement label rather than the meaning of this first-person phrase.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E036",
+   "csvLine": 2246,
+   "ownerId": "u19-st-rem-obligation",
+   "field": "remediation body",
+   "baselineSentence": "This retained phrase expresses obligation for a masculine singular speaker.",
+   "disposition": "MARK",
+   "currentSentence": "This phrase expresses obligation for a masculine singular speaker.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E037",
+   "csvLine": 2247,
+   "ownerId": "u19-st-rem-obligation",
+   "field": "remediation body",
+   "baselineSentence": "The short adjective agrees with the subject, and an infinitive can name the required action.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-w38-obligation",
+    "prov-t17d-u19-mor838-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E038",
+   "csvLine": 2248,
+   "ownerId": "u19-st-rem-obligation",
+   "field": "remediation body",
+   "baselineSentence": "The subject is nominative.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation",
+    "prov-t17d-u19-l723-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E039",
+   "csvLine": 2249,
+   "ownerId": "u19-st-rem-obligation",
+   "field": "remediation body",
+   "baselineSentence": "The shown phrase does not name an action, so do not infer a particular task from it.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E040",
+   "csvLine": 2253,
+   "ownerId": "u19-st-rem-obligation",
+   "field": "remediation body",
+   "baselineSentence": "These retained English labels describe agreement; they are not literal translations of each Russian word.",
+   "disposition": "MARK",
+   "currentSentence": "These English labels describe agreement; they are not literal translations of each Russian word.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E041",
+   "csvLine": 2254,
+   "ownerId": "u19-st-rem-obligation",
+   "field": "remediation body",
+   "baselineSentence": "The short adjective changes with the subject, while the infinitive naming the action does not acquire a gender ending.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-w38-obligation",
+    "prov-t17d-u19-mor838-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E042",
+   "csvLine": 2255,
+   "ownerId": "u19-st-rem-obligation",
+   "field": "remediation body",
+   "baselineSentence": "I have to is the meaning of the retained first-person phrase.",
+   "disposition": "MARK",
+   "currentSentence": "I have to is the meaning of the first-person phrase.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E043",
+   "csvLine": 2256,
+   "ownerId": "u19-st-rem-obligation",
+   "field": "remediation body",
+   "baselineSentence": "If the subject is feminine and If the subject is plural are labels describing which form to use.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E044",
+   "csvLine": 2257,
+   "ownerId": "u19-st-rem-obligation",
+   "field": "remediation body",
+   "baselineSentence": "Obligation is one use of this adjective; an expected-event reading is taught separately.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E045",
+   "csvLine": 2258,
+   "ownerId": "u19-i-obligation-1",
+   "field": "item feedback",
+   "baselineSentence": "This is the retained subject-agreement label for the feminine form, not its literal translation.",
+   "disposition": "MARK",
+   "currentSentence": "This is the subject-agreement label for the feminine form, not its literal translation.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E046",
+   "csvLine": 2259,
+   "ownerId": "u19-i-obligation-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "I have to is a phrase meaning rather than the requested subject-agreement label.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Departure: the I have to option leaves the obligation check (prep section 1), so its rationale is removed."
+  },
+  {
+   "entry": "U19-E047",
+   "csvLine": 2260,
+   "ownerId": "u19-i-obligation-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "If the subject is plural names plural agreement rather than feminine singular agreement.",
+   "disposition": "REWORD",
+   "replacement": "If the subject is plural calls for a different form of the adjective.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Departure: the option set now contrasts feminine, neuter and plural subjects (prep section 1); the rationale names the plural option against the new contrast and is marked."
+  },
+  {
+   "entry": "U19-E048",
+   "csvLine": 2261,
+   "ownerId": "u19-i-obligation-2",
+   "field": "item feedback",
+   "baselineSentence": "This is the retained subject-agreement label for the plural form, not its literal translation.",
+   "disposition": "MARK",
+   "currentSentence": "This is the subject-agreement label for the plural form, not its literal translation.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E049",
+   "csvLine": 2262,
+   "ownerId": "u19-i-obligation-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "I have to is a phrase meaning rather than the requested subject-agreement label.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Departure: the I have to option leaves the obligation check (prep section 1), so its rationale is removed."
+  },
+  {
+   "entry": "U19-E050",
+   "csvLine": 2263,
+   "ownerId": "u19-i-obligation-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "If the subject is feminine names feminine singular agreement rather than plural agreement.",
+   "disposition": "REWORD",
+   "replacement": "If the subject is feminine calls for a different form of the adjective.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t17d-u19-l723-obligation",
+    "prov-t17d-u19-w36-obligation",
+    "prov-t17d-u19-g17-obligation",
+    "prov-t17d-u19-g18-obligation"
+   ],
+   "reason": "Departure: the option set now contrasts plural, feminine and neuter subjects (prep section 1); the rationale names the feminine option against the new contrast and is marked."
+  },
+  {
+   "entry": "U19-E051",
+   "csvLine": 2264,
+   "ownerId": "u19-g-probability-0",
+   "field": "item feedback",
+   "baselineSentence": "The eclipse example predicts an expected event.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E052",
+   "csvLine": 2266,
+   "ownerId": "u19-g-probability-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "states an employee obligation rather than the expected eclipse.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E053",
+   "csvLine": 2268,
+   "ownerId": "u19-st-rem-probability",
+   "field": "remediation body",
+   "baselineSentence": "— The eclipse should occur at three o'clock.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E054",
+   "csvLine": 2269,
+   "ownerId": "u19-st-rem-probability",
+   "field": "remediation body",
+   "baselineSentence": "Here should expresses an expected event, not a duty imposed on the eclipse.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E055",
+   "csvLine": 2270,
+   "ownerId": "u19-st-rem-probability",
+   "field": "remediation body",
+   "baselineSentence": "The short adjective agrees with the neuter subject and the infinitive names the event.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E056",
+   "csvLine": 2271,
+   "ownerId": "u19-st-rem-probability",
+   "field": "remediation body",
+   "baselineSentence": "The retained usage description is (with a verb) Used to express likelihood.",
+   "disposition": "MARK",
+   "currentSentence": "With a verb, this form can express likelihood.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E057",
+   "csvLine": 2272,
+   "ownerId": "u19-st-rem-probability",
+   "field": "remediation body",
+   "baselineSentence": "Usually translated as \"should\".",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E058",
+   "csvLine": 2274,
+   "ownerId": "u19-st-rem-probability",
+   "field": "remediation body",
+   "baselineSentence": "— Employees must report to work on time.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E059",
+   "csvLine": 2275,
+   "ownerId": "u19-st-rem-probability",
+   "field": "remediation body",
+   "baselineSentence": "This states an obligation for plural employees.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E060",
+   "csvLine": 2276,
+   "ownerId": "u19-st-rem-probability",
+   "field": "remediation body",
+   "baselineSentence": "The English label an obligation describes a required action; an expected event describes a prediction such as the eclipse.",
+   "disposition": "REWORD",
+   "replacement": "Obligation describes a required action, likelihood an expected event such as the eclipse, and indebtedness owing something to someone.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Departure: the sentence named the old option labels; it now names the three senses the probability check contrasts (W:33, W:36, W:39) and is marked."
+  },
+  {
+   "entry": "U19-E061",
+   "csvLine": 2277,
+   "ownerId": "u19-st-rem-probability",
+   "field": "remediation body",
+   "baselineSentence": "Context determines which sense the shared adjective-plus-infinitive structure expresses.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E062",
+   "csvLine": 2278,
+   "ownerId": "u19-i-probability-1",
+   "field": "item feedback",
+   "baselineSentence": "The complete sentence gives an expected eclipse and its time.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E063",
+   "csvLine": 2279,
+   "ownerId": "u19-i-probability-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "(with a verb) Used to express likelihood.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "The dictionary-description distractor is replaced by complete translations (prep section 3, D2); its rationale is removed."
+  },
+  {
+   "entry": "U19-E064",
+   "csvLine": 2280,
+   "ownerId": "u19-i-probability-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "Usually translated as \"should\".",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "The dictionary-description distractor is replaced by complete translations (prep section 3, D2); its rationale is removed."
+  },
+  {
+   "entry": "U19-E065",
+   "csvLine": 2281,
+   "ownerId": "u19-i-probability-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "is a dictionary sense description, not the full sentence meaning.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "The dictionary-description distractor is replaced by complete translations (prep section 3, D2); its rationale is removed."
+  },
+  {
+   "entry": "U19-E066",
+   "csvLine": 2283,
+   "ownerId": "u19-i-probability-2",
+   "field": "item feedback",
+   "baselineSentence": "expresses an obligation: the employees must report on time.",
+   "disposition": "MARK",
+   "currentSentence": "expresses obligation: the employees must report on time.",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U19-E067",
+   "csvLine": 2284,
+   "ownerId": "u19-i-probability-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "an expected event describes a prediction rather than the required employee action.",
+   "disposition": "REWORD",
+   "replacement": "likelihood describes an expected event such as the eclipse, not the required employee action.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t17d-u19-w33-probability",
+    "prov-t17d-u19-w35-probability",
+    "prov-t17d-u19-w36-probability",
+    "prov-t17d-u19-w38-probability",
+    "prov-t17d-u19-w39-probability",
+    "prov-t17d-u19-w41-probability",
+    "prov-t17d-u19-l723-probability",
+    "prov-t17d-u19-n-03111f42-gender"
+   ],
+   "reason": "Departure: the option set is now obligation, likelihood and indebtedness (prep section 1, W:36, W:39, W:33); the rationale is reworded for the likelihood option and marked."
+  }
+ ],
+ "markerReviews": [
+  {
+   "ownerId": "u19-g-prefix-caution-0",
+   "sentence": "to agree is the meaning of the agreement verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 23,
+     "quote": "Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a pre"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5440,
+     "quote": "отговаривать\tотгова'ривать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5917,
+     "quote": "отговорить\tотговори'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 567,
+     "quote": "договориться\tдоговори'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-g-prefix-caution-0",
+   "sentence": "to write is the meaning of the writing verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 23,
+     "quote": "Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a pre"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5440,
+     "quote": "отговаривать\tотгова'ривать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5917,
+     "quote": "отговорить\tотговори'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 567,
+     "quote": "договориться\tдоговори'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-prefix-caution-1",
+   "sentence": "to dissuade is the meaning of a different prefixed verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 23,
+     "quote": "Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a pre"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5440,
+     "quote": "отговаривать\tотгова'ривать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5917,
+     "quote": "отговорить\tотговори'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 567,
+     "quote": "договориться\tдоговори'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-prefix-caution-1",
+   "sentence": "to do is the meaning of the doing verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 23,
+     "quote": "Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a pre"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5440,
+     "quote": "отговаривать\tотгова'ривать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5917,
+     "quote": "отговорить\tотговори'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 567,
+     "quote": "договориться\tдоговори'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-prefix-caution-2",
+   "sentence": "Learn these two verbs as a pair with the same dissuading meaning.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 23,
+     "quote": "Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a pre"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5440,
+     "quote": "отговаривать\tотгова'ривать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5917,
+     "quote": "отговорить\tотговори'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 567,
+     "quote": "договориться\tдоговори'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-g-conditional-0",
+   "sentence": "a male speaker is marked by the masculine past form, not supplied as the sentence translation.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-g-conditional-0",
+   "sentence": "a female speaker would require feminine past agreement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-g-conditional-0",
+   "sentence": "I would like to sleep is a sentence meaning rather than a speaker-agreement label.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-conditional-1",
+   "sentence": "a female speaker is marked by the feminine past form; the pronoun identifies the speaker.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-conditional-1",
+   "sentence": "a male speaker would require masculine past agreement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-conditional-1",
+   "sentence": "I would like to sleep is a sentence meaning rather than a speaker-agreement label.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-conditional-2",
+   "sentence": "The first-person pronoun identifies the speaker; the feminine past form marks feminine agreement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-conditional-2",
+   "sentence": "the speaker is marked masculine would require masculine past agreement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-conditional-2",
+   "sentence": "the sentence is about another person does not match the first-person pronoun.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-g-obligation-0",
+   "sentence": "The first-person phrase expresses obligation with masculine singular agreement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-g-obligation-0",
+   "sentence": "If the subject is feminine is an agreement label rather than the meaning of this first-person phrase.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-g-obligation-0",
+   "sentence": "If the subject is plural is an agreement label rather than the meaning of this first-person phrase.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-obligation-1",
+   "sentence": "This is the subject-agreement label for the feminine form, not its literal translation.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-obligation-1",
+   "sentence": "If the subject is neuter calls for a different form of the adjective.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-obligation-1",
+   "sentence": "If the subject is plural calls for a different form of the adjective.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-obligation-2",
+   "sentence": "This is the subject-agreement label for the plural form, not its literal translation.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-obligation-2",
+   "sentence": "If the subject is feminine calls for a different form of the adjective.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-obligation-2",
+   "sentence": "If the subject is neuter calls for a different form of the adjective.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-g-probability-0",
+   "sentence": "The eclipse example predicts an expected event.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-g-probability-0",
+   "sentence": "states an employee obligation rather than the expected eclipse.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-probability-1",
+   "sentence": "The complete sentence gives an expected eclipse and its time.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-probability-1",
+   "sentence": "Employees must report to work on time.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-probability-1",
+   "sentence": "translates the employee obligation sentence, not the eclipse sentence.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-probability-1",
+   "sentence": "He owes me five thousand rubles.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-probability-1",
+   "sentence": "translates a sentence about owing money, not the eclipse sentence.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-probability-2",
+   "sentence": "expresses obligation: the employees must report on time.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-probability-2",
+   "sentence": "likelihood describes an expected event such as the eclipse, not the required employee action.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-i-probability-2",
+   "sentence": "indebtedness describes owing something, not the required employee action.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-prefix-caution",
+   "sentence": "These are different meanings, even though the words share material with a verb of speaking.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 23,
+     "quote": "Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a pre"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5440,
+     "quote": "отговаривать\tотгова'ривать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5917,
+     "quote": "отговорить\tотговори'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 567,
+     "quote": "договориться\tдоговори'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-prefix-caution",
+   "sentence": "A prefix is not always just an aspect marker: learn the whole verb and its meaning.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 23,
+     "quote": "Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a pre"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5440,
+     "quote": "отговаривать\tотгова'ривать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5917,
+     "quote": "отговорить\tотговори'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 567,
+     "quote": "договориться\tдоговори'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-prefix-caution",
+   "sentence": "Neither expresses dissuading or agreeing.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 23,
+     "quote": "Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a pre"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5440,
+     "quote": "отговаривать\tотгова'ривать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5917,
+     "quote": "отговорить\tотговори'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 567,
+     "quote": "договориться\tдоговори'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-prefix-caution",
+   "sentence": "When finding an aspect partner, preserve the lexical meaning while changing aspect.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 23,
+     "quote": "Many verbs come in pairs like '''делать/сделать''', with the perfective variant simply being the imperfective with a pre"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5440,
+     "quote": "отговаривать\tотгова'ривать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 5917,
+     "quote": "отговорить\tотговори'ть"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 567,
+     "quote": "договориться\tдоговори'ться"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-conditional",
+   "sentence": "These labels describe the speaker marked by the past-form agreement; they are not translations of the whole expressions.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-conditional",
+   "sentence": "Both use the first-person pronoun, a past-form verb and the conditional particle.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-conditional",
+   "sentence": "In this construction the past form need not report an actual past event: it can express a hypothetical situation, such as I would sleep.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-conditional",
+   "sentence": "Context supplies the time reference.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/ruwiki/soslagatelnoe-naklonenie-140019162.txt",
+     "line": 18,
+     "quote": "У [[Глаголы|глаголов]] в сослагательном наклонении нет морфологических показателей [[Время (лингвистика)|времени]] и [[Л"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-conditional",
+   "sentence": "The feminine past form has a final vowel that the masculine form lacks.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-conditional",
+   "sentence": "I would like to sleep is a sentence meaning, not a label identifying the gender marked by the shown past form.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-conditional",
+   "sentence": "The first-person pronoun identifies the speaker, rather than another person.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-conditional",
+   "sentence": "These wish expressions have the conditional particle before the verb, whereas the earlier examples put it after the verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-conditional",
+   "sentence": "The particle cannot begin a sentence.",
+   "evidence": [
+    {
+     "file": "catalog/sources/s1-intake/wiktionary/by-94001807.txt",
+     "line": 58,
+     "quote": "* The particle '''бы''' may appear in any place within a sentence except the beginning. In colloquial speech it can be h"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-conditional",
+   "sentence": "The wish reading comes from the construction and context, not from translating every conditional particle as would like.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1215,
+     "quote": "The [[conditional mood]] in Russian is formed by adding the particle бы after the word which marks the supposed subject "
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 580,
+     "quote": "Past tense verbs are somewhat simpler. They conjugate with the gender (or number) of the pronoun. Thus, \"I understood\" c"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 582,
+     "quote": "To form a past tense verb, drop the ть and add л (pronounced \"l\") for masculine pronouns (\"I,\" \"you,\" \"he\"), ла (pronoun"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 901,
+     "quote": "Повелительное наклонение может быть выражено также при помощи частиц ''пусть (пускай)'' или ''да'': ''Пусть он читает'';"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 903,
+     "quote": "Формы сослагательного наклонения образуются аналитически при помощи частицы ''бы'' (''б''), дополняющей форму глагола на"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-obligation",
+   "sentence": "This phrase expresses obligation for a masculine singular speaker.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-obligation",
+   "sentence": "The short adjective agrees with the subject, and an infinitive can name the required action.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 838,
+     "quote": "Исходная (неопределённая) форма глагольной парадигмы — [[инфинитив]], по своим синтаксическим функциям сходный с именем "
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-obligation",
+   "sentence": "The subject is nominative.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-obligation",
+   "sentence": "The shown phrase does not name an action, so do not infer a particular task from it.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-obligation",
+   "sentence": "These English labels describe agreement; they are not literal translations of each Russian word.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-obligation",
+   "sentence": "The short adjective changes with the subject, while the infinitive naming the action does not acquire a gender ending.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+     "line": 838,
+     "quote": "Исходная (неопределённая) форма глагольной парадигмы — [[инфинитив]], по своим синтаксическим функциям сходный с именем "
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-obligation",
+   "sentence": "I have to is the meaning of the first-person phrase.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-obligation",
+   "sentence": "If the subject is feminine and If the subject is plural are labels describing which form to use.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-obligation",
+   "sentence": "Obligation is one use of this adjective; an expected-event reading is taught separately.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 17,
+     "quote": "* [[nominative]] ({{lang|ru|имени́тельный}}):"
+    },
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 18,
+     "quote": "** main subject;"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-probability",
+   "sentence": "— The eclipse should occur at three o'clock.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-probability",
+   "sentence": "Here should expresses an expected event, not a duty imposed on the eclipse.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-probability",
+   "sentence": "The short adjective agrees with the neuter subject and the infinitive names the event.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-probability",
+   "sentence": "With a verb, this form can express likelihood.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-probability",
+   "sentence": "Usually translated as \"should\".",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-probability",
+   "sentence": "— Employees must report to work on time.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-probability",
+   "sentence": "This states an obligation for plural employees.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-probability",
+   "sentence": "— He owes me five thousand rubles.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-probability",
+   "sentence": "Obligation describes a required action, likelihood an expected event such as the eclipse, and indebtedness owing something to someone.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  },
+  {
+   "ownerId": "u19-st-rem-probability",
+   "sentence": "Context determines which sense the shared adjective-plus-infinitive structure expresses.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 33,
+     "quote": "# {{n-g|Used to express [[indebtedness]]. Usually translated as the verb \"to [[owe]]\", with the person indebted to in {{"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 35,
+     "quote": "#: {{uxi|ru|[[он|Он]] '''до́лжен''' [[я|мне]] [[пять]] [[тысяча|ты́сяч]] [[рубль|рубле́й]].|He owes me five thousand rub"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 36,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[obligation]] or [[suggestion]]. Usually translated as \"[[must]]\","
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 38,
+     "quote": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must re"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 39,
+     "quote": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+     "line": 41,
+     "quote": "#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+     "line": 723,
+     "quote": "\"I have to\" translates to я должен (pronounced \"dol-zhen,\" sort of like \"dolphin\")&#x2014;if the subject is masculine! I"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 7748,
+     "quote": "затмение\tзатме'ние"
+    }
+   ]
+  }
+ ],
+ "markerReviewsNote": "Each Unit 19 marker with no Cyrillic word names the frozen files and lines of its cited records: a page line by number and exact quote, an OpenRussian row by its bare and accented headwords. Lines are 1-based."
+}

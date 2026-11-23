@@ -1,0 +1,45 @@
+{
+ "task": "T17d (Claude Code, 2026-11-23)",
+ "phrases": [
+  {
+   "phrase": "Затме́ние должно́ наступи́ть в три часа́",
+   "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+   "line": 41
+  },
+  {
+   "phrase": "Он до́лжен мне пять ты́сяч рубле́й",
+   "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+   "line": 35
+  },
+  {
+   "phrase": "Слу́жащие должны́ во́время явля́ться на рабо́ту",
+   "file": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+   "line": 38
+  },
+  {
+   "phrase": "я бы поспа́л",
+   "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+   "line": 1215
+  },
+  {
+   "phrase": "я бы поспала́",
+   "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+   "line": 1215
+  },
+  {
+   "phrase": "я должен",
+   "file": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+   "line": 723
+  },
+  {
+   "phrase": "я спал бы",
+   "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+   "line": 1215
+  },
+  {
+   "phrase": "я спала́ бы",
+   "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+   "line": 1215
+  }
+ ]
+}

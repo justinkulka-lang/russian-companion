@@ -27,16 +27,26 @@ class Unit19ConditionalObligationInstructionTest {
         fun body(slug: String) = p.unit(19)!!.sessions.first { it.id == "u19-s-$slug" }.steps.joinToString("\n") { it.body }
         assertTrue(body("conditional").contains("not translations"))
         assertTrue(body("conditional").contains("need not report an actual past event"))
-        assertTrue(body("conditional").contains("It cannot begin its clause"))
+        // T17d: S1 PARTIAL (Wiktionary бы 94001807 line 58 says sentence, not clause): the claim is reworded to the frozen text
+        // (was: contains "It cannot begin its clause").
+        assertFalse(body("conditional").contains("It cannot begin its clause"))
+        assertTrue(body("conditional").contains("The particle cannot begin a sentence."))
         assertTrue(body("obligation").contains("not literal translations"))
         assertTrue(body("obligation").contains("subject is nominative"))
         assertTrue(body("probability").contains("not a duty imposed on the eclipse"))
-        assertTrue(body("probability").contains("other classifies the employee obligation"))
+        // T17d: the sweep row (A2-26 assessment commentary) replaces the description of the two checks with an instruction
+        // (was: contains "other classifies the employee obligation").
+        assertFalse(body("probability").contains("other classifies the employee obligation"))
+        assertTrue(body("probability").contains("Distinguish the eclipse sentence’s meaning from the employee’s obligation."))
         assertNotEquals(p.item("u19-i-probability-1")!!.promptLetter, p.item("u19-i-probability-2")!!.promptLetter)
     }
     @Test fun feedbackAndPromptsAskForTheActualRetainedAnswerType() {
         val p = pack()
-        val items = p.items.filter { it.objectiveId in listOf("obj-u19-conditional", "obj-u19-obligation", "obj-u19-probability") }
+        // T17d: the 7 typed checks and 1 typed guided item of these objectives have no options and a Russian key; the nine closed
+        // items keep every assertion below (was: all 9 items, before typed items existed).
+        val all = p.items.filter { it.objectiveId in listOf("obj-u19-conditional", "obj-u19-obligation", "obj-u19-probability") }
+        assertEquals(17, all.size)
+        val items = all.filter { it.kind != "TYPED_FORM" }
         assertEquals(9, items.size)
         items.forEach { item ->
             assertTrue(item.feedback.contains(item.answer))
@@ -46,7 +56,9 @@ class Unit19ConditionalObligationInstructionTest {
             item.options.forEachIndexed { n, option -> if (option != item.answer) assertTrue(item.distractorRationales[n].contains(option)) }
         }
         assertTrue(p.item("u19-i-conditional-1")!!.prompt.contains("speaker description"))
-        assertTrue(p.item("u19-i-obligation-1")!!.prompt.contains("subject-agreement label"))
+        // T17d (prep section 1, A2-24 label/position finding): the obligation checks ask which subject description matches the
+        // agreement form (was: the prompt asked for a "subject-agreement label").
+        assertTrue(p.item("u19-i-obligation-1")!!.prompt.contains("subject description matches the shown agreement form"))
     }
     @Test fun synthesisAndSourceChainsValidateWithoutApprovingReview() {
         val p = pack()

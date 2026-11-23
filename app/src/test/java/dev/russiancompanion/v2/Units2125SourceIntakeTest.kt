@@ -55,8 +55,8 @@ class Units2125SourceIntakeTest {
         // T17a: the shared ref-u1620-attribution notice (was a82a7ebf...). T17c: Unit 18 content (was 04147a35...).
         18 to "114c6675620c872dd6a5599a00336c5102c59a2d74df1116daad9aa44f9ce431",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
-        // T17a: the shared ref-u1620-attribution notice (was 0006fdf5...).
-        19 to "26e89ab24316060f89ba2110975b2112883d9b5700b569b2698a147594b666ae",
+        // T17a: the shared ref-u1620-attribution notice (was 0006fdf5...). T17d: Unit 19 content (was 26e89ab2...).
+        19 to "cd6db68a92de0fe31c3e66e06e47ddcf9affc65cc54db1a51c75c46a6e0f45c2",
         // T17a: the shared ref-u1620-attribution notice (was 380eb131...).
         20 to "cd1ef77d45a91a06be957569e4cc01b157acd476c03bd888b9be6b80262e37c4",
     )

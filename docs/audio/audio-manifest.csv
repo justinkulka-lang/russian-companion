@@ -80,11 +80,11 @@ A04-005,P1,4,4,WORD,ви́жу,NEEDS_RECORDING,,,,"item,teaching"
 A04-006,P1,4,"4,6,10,26",WORD,Вы,EXISTING_CLIP_CANDIDATE,rus-2383e20d,вы,,"example,item,reference,teaching"
 A04-007,P1,4,4,WORD,говори́м,NEEDS_RECORDING,,,,"example,item,teaching"
 A04-008,P1,4,4,WORD,говори́т,NEEDS_RECORDING,,,,teaching
-A04-009,P1,4,"4,12,13,15",WORD,говори́ть,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A04-009,P1,4,"4,12,13,15,19",WORD,говори́ть,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A04-010,P1,4,4,WORD,говори́шь,NEEDS_RECORDING,,,,teaching
 A04-011,P1,4,"4,24",WORD,говорю́,NEEDS_RECORDING,,,,"example,item,teaching"
 A04-012,P1,4,4,WORD,де́лаем,NEEDS_RECORDING,,,,item
-A04-013,P1,4,"4,12,13,15",WORD,де́лать,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A04-013,P1,4,"4,12,13,15,19",WORD,де́лать,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A04-014,P1,4,4,WORD,де́лаю,NEEDS_RECORDING,,,,"item,reference,teaching"
 A04-015,P1,4,4,WORD,жить,EXISTING_CLIP_CANDIDATE,rus-1267a652,жить,,teaching
 A04-016,P1,4,4,WORD,знать,EXISTING_CLIP_CANDIDATE,rus-d5ac2c6b,знать,,"example,item,teaching"
@@ -100,7 +100,7 @@ A04-025,P1,4,"4,6,10,29",WORD,он,EXISTING_CLIP_CANDIDATE,rus-fc38bfb1,он,,"e
 A04-026,P1,4,"4,6,10",WORD,она́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,reference,teaching"
 A04-027,P1,4,"4,6,10",WORD,они́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,reference,teaching"
 A04-028,P1,4,"4,10",WORD,оно́,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,reference,teaching"
-A04-029,P1,4,4,WORD,писа́ть,NEEDS_RECORDING,,,,"example,item,teaching"
+A04-029,P1,4,"4,19",WORD,писа́ть,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A04-030,P1,4,4,WORD,пи́шет,NEEDS_RECORDING,,,,teaching
 A04-031,P1,4,4,WORD,пи́шете,NEEDS_RECORDING,,,,"example,item,teaching"
 A04-032,P1,4,4,WORD,пи́шешь,NEEDS_RECORDING,,,,teaching
@@ -613,20 +613,24 @@ A18-020,P3,18,18,PHRASE,са́мый до́брый,NEEDS_RECORDING,,,,"item,ref
 A18-021,P3,18,18,PHRASE,я дружу́,NEEDS_RECORDING,,,,item
 A18-022,P3,18,18,SENTENCE,книгу вы хотите,NEEDS_RECORDING,,,course text has no stress mark,item
 A18-023,P3,18,18,SENTENCE,яблоко моё,NEEDS_RECORDING,,,course text has no stress mark,item
-A19-001,P3,19,19,WORD,договориться,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A19-002,P3,19,19,WORD,должна,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A19-003,P3,19,19,WORD,должно,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
-A19-004,P3,19,19,WORD,должны,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A19-005,P3,19,"19,27",WORD,написать,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A19-006,P3,19,19,WORD,отговаривать,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
-A19-007,P3,19,19,WORD,отговорить,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A19-008,P3,19,19,PHRASE,я бы поспа́л,NEEDS_RECORDING,,,,"example,teaching"
-A19-009,P3,19,19,PHRASE,я бы поспала́,NEEDS_RECORDING,,,,"example,item,teaching"
-A19-010,P3,19,19,PHRASE,я должен,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A19-011,P3,19,19,PHRASE,я спал бы,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A19-012,P3,19,19,SENTENCE,Затме́ние должно́ наступи́ть в три часа́,NEEDS_RECORDING,,,,"example,item,teaching"
-A19-013,P3,19,19,SENTENCE,Слу́жащие должны́ во́время явля́ться на рабо́ту,NEEDS_RECORDING,,,,"example,item,teaching"
-A19-014,P3,19,19,SENTENCE,я спала́ бы,NEEDS_RECORDING,,,,"example,item,teaching"
+A19-001,P3,19,19,WORD,договариваться,NEEDS_RECORDING,,,course text has no stress mark,"item,reference,teaching"
+A19-002,P3,19,19,WORD,договориться,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A19-003,P3,19,19,WORD,должна,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A19-004,P3,19,19,WORD,должно,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A19-005,P3,19,19,WORD,должны,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A19-006,P3,19,"19,27",WORD,написать,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A19-007,P3,19,19,WORD,отговаривать,NEEDS_RECORDING,,,course text has no stress mark,"item,reference,teaching"
+A19-008,P3,19,19,WORD,отговорить,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A19-009,P3,19,19,WORD,поспа́л,NEEDS_RECORDING,,,,teaching
+A19-010,P3,19,19,WORD,спал,NEEDS_RECORDING,,,,teaching
+A19-011,P3,19,19,PHRASE,я бы поспа́л,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A19-012,P3,19,19,PHRASE,я должен,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A19-013,P3,19,19,PHRASE,я спал бы,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A19-014,P3,19,19,SENTENCE,Затме́ние должно́ наступи́ть в три часа́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A19-015,P3,19,19,SENTENCE,Он до́лжен мне пять ты́сяч рубле́й,NEEDS_RECORDING,,,,teaching
+A19-016,P3,19,19,SENTENCE,Слу́жащие должны́ во́время явля́ться на рабо́ту,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A19-017,P3,19,19,SENTENCE,я бы поспала́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A19-018,P3,19,19,SENTENCE,я спала́ бы,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A20-001,P3,20,20,WORD,везти́,NEEDS_RECORDING,,,,teaching
 A20-002,P3,20,20,WORD,вести́,NEEDS_RECORDING,,,,"example,teaching"
 A20-003,P3,20,20,WORD,е́хать,NEEDS_RECORDING,,,,"example,teaching"

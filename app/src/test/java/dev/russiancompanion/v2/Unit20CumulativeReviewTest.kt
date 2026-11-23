@@ -116,7 +116,9 @@ class Unit20CumulativeReviewTest {
             waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Try again. ${noun.feedback}")
             compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
             waitTag("v2-example-ex-u19-conditional-1"); compose.onNodeWithTag("v2-example-ex-u19-conditional-1").performScrollTo().assertIsDisplayed()
-            compose.onNodeWithText("Speaker agreement and sentence meaning are different questions", substring = true).performScrollTo().assertIsDisplayed()
+            // T17d: prep section 3 removes the assessment commentary of inventory line 2229; the remediation still shows the
+            // agreement teaching (was: "Speaker agreement and sentence meaning are different questions").
+            compose.onNodeWithText("The feminine past form has a final vowel that the masculine form lacks", substring = true).performScrollTo().assertIsDisplayed()
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
             val practice = reviewedGuidedPractice(p, "u19-st-rem-conditional")
             assertEquals(listOf("u19-st-guided-conditional-1"), practice)

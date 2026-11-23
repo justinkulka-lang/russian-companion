@@ -46,8 +46,8 @@ class Units1620SourceIntakeTest {
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
             // T17a: Unit 16's note follows the Units 1-15 plain style (was asserted for all of Units 16-20); the pending status
-            // stays in mappingStatus (asserted above). T17b: Unit 17 too (was number <= 16). T17c: Unit 18 too (was number <= 17).
-            if (number <= 18) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // stays in mappingStatus (asserted above). T17b: Unit 17 too (was number <= 16). T17c: Unit 18 too (was number <= 17). T17d: Unit 19 too (was number <= 18).
+            if (number <= 19) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             else assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertEquals(range, "${facts.printedPageStart}-${facts.printedPageEnd}")
@@ -153,7 +153,7 @@ class Units1620SourceIntakeTest {
             } else if (record.sourceId == "src-content-audit-research") {
                 assertContentAuditResearch(record)
             } else if ((record.itemId.startsWith("prov-d7b-") || record.itemId.startsWith("prov-t17a-") || record.itemId.startsWith("prov-t17b-") ||
-                record.itemId.startsWith("prov-t17c-")) &&
+                record.itemId.startsWith("prov-t17c-") || record.itemId.startsWith("prov-t17d-")) &&
                 record.transformation in setOf("selection", "readyrussian markup selection")) {
                 // D7b selection records may cite a frozen page from another unit freeze; the segment must still be
                 // verbatim in the file that a FREEZE.json manifest binds to the recorded revision.

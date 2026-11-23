@@ -75,6 +75,10 @@ class Units35SourceIntakeTest {
             // T17b: ReadyRussian Grammar 24 — Capitalization, frozen by S1 (CC BY-SA handout text only), cited for the Unit 17
             // weekday and month capitalization claims (inventory lines 1920, 1947, 1948, S1 SUPPORTED).
             "src-readyrussian-grammar24",
+            // T17d: ru Сослагательное наклонение oldid 140019162 and Wiktionary бы oldid 94001807, frozen by S1 and admitted by D29a,
+            // cited for the Unit 19 conditional claims (inventory lines 2225, S1 SUPPORTED, and 2234, S1 PARTIAL).
+            "src-ruwiki-soslagatelnoe-naklonenie-140019162",
+            "src-enwiktionary-by-94001807",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)

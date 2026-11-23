@@ -28,9 +28,16 @@ class Unit19PrefixUnit20MotionInstructionTest {
         val employees = p.item("u19-i-probability-2")!!
         assertNotEquals(eclipse.promptLetter, employees.promptLetter)
         assertNotEquals(eclipse.assessment!!.testedFeature, employees.assessment!!.testedFeature)
-        assertEquals("an obligation", employees.answer)
+        // T17d (prep section 1): the employee check names the sense from the frozen entry (W:36) against likelihood and
+        // indebtedness (W:39, W:33), classified on the W:33-41 excerpt (was "an obligation" against "an expected event", a
+        // content-audit stated application).
+        assertEquals("obligation", employees.answer)
+        assertEquals(listOf("obligation", "likelihood", "indebtedness"), employees.options)
         assertTrue(employees.promptLetter!!.startsWith("Слу́жащие"))
-        assertEquals("STATED_APPLICATION", employees.assessment!!.relationKind)
+        assertEquals("RULE_CLASSIFIES_SOURCE_EXAMPLE", employees.assessment!!.relationKind)
+        // D2: the eclipse check keeps its likelihood-span pair and adds two frozen competing meanings (W:38, W:35).
+        assertEquals("EXPLICIT_SOURCE_PAIR", eclipse.assessment!!.relationKind)
+        assertEquals(3, eclipse.options.size)
     }
     @Test fun completePrefixAndMotionInstructionPrecedesPracticeAndRemediation() {
         val p = pack()

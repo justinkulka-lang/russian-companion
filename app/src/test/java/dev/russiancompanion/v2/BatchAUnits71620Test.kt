@@ -202,9 +202,12 @@ class BatchAUnits71620Test {
         val live = pack()
         // T17c: the 16 typed Unit 18 checks and 2 typed Unit 18 guided items (no options, a frozen Russian key) are counted
         // separately; every check below still applies to the 47 closed Batch A items (was: all Batch A items, 47).
+        // T17d: the typed Unit 19 items of the Batch A objectives join them: 4 conditional and 3 obligation checks and the typed
+        // obligation guided item (18 -> 26; the prefix-caution objective is not a Batch A objective).
         val typed = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES && it.kind == "TYPED_FORM" }
-        assertEquals(18, typed.size)
-        assertTrue(typed.all { it.objectiveId.startsWith("obj-u18-") && it.options.isEmpty() })
+        assertEquals(26, typed.size)
+        assertTrue(typed.all { (it.objectiveId.startsWith("obj-u18-") || it.objectiveId in setOf("obj-u19-conditional", "obj-u19-obligation")) &&
+            it.options.isEmpty() })
         val current = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES && it.kind != "TYPED_FORM" }
         val referenceIds = setOf("u17-g-clock-0", "u17-i-clock-1", "u17-i-clock-2")
         val expandedFeatures = mapOf(
