@@ -71,7 +71,9 @@ class Unit17AgeCalendarInstructionTest {
         assertTrue(date.contains("neuter ordinal"))
         assertTrue(date.contains("15 May 1996"))
         val production = p.unit(17)!!.sessions.first { it.id == "u17-s-clock-productive" }.steps.joinToString("\n") { it.body }
-        assertTrue(production.contains("do not demonstrate independently producing"))
+        // T17b: the A2-26 lint removes "does not demonstrate" commentary; the sweep instruction keeps production separate
+        // (was contains("do not demonstrate independently producing")).
+        assertTrue(production.contains("practise producing new clock expressions separately"))
     }
 
     private fun pack(): V2CurriculumPack {

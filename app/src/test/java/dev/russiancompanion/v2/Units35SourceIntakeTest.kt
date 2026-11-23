@@ -72,6 +72,9 @@ class Units35SourceIntakeTest {
             // T17a: Wiktionary под oldid 92761073, frozen by S1 and admitted by D29a, cited for the Unit 16 claim on movement within
             // a location (inventory line 1766, S1 SUPPORTED).
             "src-enwiktionary-pod-92761073",
+            // T17b: ReadyRussian Grammar 24 — Capitalization, frozen by S1 (CC BY-SA handout text only), cited for the Unit 17
+            // weekday and month capitalization claims (inventory lines 1920, 1947, 1948, S1 SUPPORTED).
+            "src-readyrussian-grammar24",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)

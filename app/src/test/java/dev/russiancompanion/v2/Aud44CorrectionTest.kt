@@ -289,7 +289,10 @@ class Aud44CorrectionTest {
             }
         }
         val unit17 = pack.references.first { it.id == "ref-u17-attribution" }
-        assertTrue(unit17.detail.contains("calendar-date relationships remain admitted"))
+        // T17b: the A2-26 lint blocks Unit 17 governance wording, so the notice names the calendar-date source instead of saying the
+        // relationships "remain admitted" (was: contains("calendar-date relationships remain admitted")).
+        assertTrue(unit17.detail.contains("The calendar-date examples come from Wikipedia oldid 1357134172"))
+        assertFalse(unit17.detail.contains("admitted"))
         assertTrue(unit17.detail.contains("bounded recognition"))
         assertTrue(unit17.detail.contains("Productive clock-time is the ReadyRussian Grammar 20 system"))
         assertFalse(unit17.detail.contains("remains unresolved"))

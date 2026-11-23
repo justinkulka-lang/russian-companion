@@ -119,7 +119,9 @@ class Unit18CumulativeReviewTest {
             waitTag("v2-review-feedback-0"); compose.onNodeWithTag("v2-review-feedback-0").assertTextEquals("Try again. ${noun.feedback}")
             compose.onNodeWithTag("v2-review-remediate-0").performScrollTo().performClick()
             waitTag("v2-example-ex-u17-question-book"); compose.onNodeWithTag("v2-example-ex-u17-question-book").performScrollTo().assertIsDisplayed()
-            compose.onNodeWithText("The independent clock and book cues are different complete questions from the guided apple cue", substring = true).performScrollTo().assertIsDisplayed()
+            // T17b: Unit 17 remediation repeats its whole teaching; the question-distinction sentence is the teaching one (was "The
+            // independent clock and book cues are different complete questions from the guided apple cue").
+            compose.onNodeWithText("Forms of который do not by themselves identify a clock question", substring = true).performScrollTo().assertIsDisplayed()
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
             val practice = reviewedGuidedPractice(p, "u17-st-rem-clock")
             assertEquals(listOf("u17-st-guided-clock-1"), practice)

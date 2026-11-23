@@ -9,7 +9,8 @@ class Unit17NumberInstructionTest {
     @Test fun meaningsRulesAndLimitsPrecedePractice() {
         val p = pack()
         val claims = mapOf(
-            "ordinals" to listOf("first", "second", "third", "fourth", "gender, number and case", "fragment alone"),
+            // T17b: prep line 1814 rewords the fragment commentary to "Review the complete example above." (was "fragment alone").
+            "ordinals" to listOf("first", "second", "third", "fourth", "gender, number and case", "Review the complete example above."),
             "hours" to listOf("one hour", "two hours", "five hours", "genitive singular", "11, 12, 13 or 14", "clock"),
             "years" to listOf("five years", "different stem", "forty-one years", "11 through 14", "calendar-year"),
             "minutes" to listOf("feminine", "genitive plural", "11 through 14", "minutes past"),
@@ -28,12 +29,17 @@ class Unit17NumberInstructionTest {
 
     @Test fun choicesReceiveSpecificMeaningFeedback() {
         val p = pack()
-        val items = p.items.filter { it.objectiveId in listOf("ordinals", "hours", "years", "minutes").map { "obj-u17-$it" } }
+        // T17b: eleven typed checks join these objectives (23 items); the twelve closed items are checked here (was all items, 12).
+        val all = p.items.filter { it.objectiveId in listOf("ordinals", "hours", "years", "minutes").map { "obj-u17-$it" } }
+        assertEquals(23, all.size)
+        assertEquals(11, all.count { it.kind == "TYPED_FORM" })
+        val items = all.filter { it.kind != "TYPED_FORM" }
         assertEquals(12, items.size)
         for (i in items) {
             assertTrue(i.feedback.contains(i.answer))
             assertTrue(i.feedback.contains("means"))
-            assertTrue(i.feedback.contains("shown cue differs"))
+            // T17b: the Units 16-30 sweep rewords the cue sentence (was contains("shown cue differs")).
+            assertTrue(i.feedback.contains("rather than copying a different"))
             assertEquals(i.feedback, i.assessment!!.whyAnswerDemonstratesObjective)
             assertEquals(i.distractorRationales, i.assessment!!.distractorDifference)
             i.options.forEachIndexed { index, option -> if (option != i.answer) assertTrue(i.distractorRationales[index].contains(option)) }
