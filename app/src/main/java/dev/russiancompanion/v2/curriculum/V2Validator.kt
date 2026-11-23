@@ -3761,18 +3761,27 @@ internal object V2Validator {
         "FIRST_ORDINAL" to "first ordinal",
         "SECOND_ORDINAL" to "second ordinal",
         "THIRD_ORDINAL" to "third ordinal",
-        "ONE_HOUR_ROW" to "one-hour row",
-        "TWO_HOUR_ROW" to "two-hour row",
-        "FIVE_HOUR_ROW" to "five-hour row",
-        "ONE_YEAR_ROW" to "one-year row",
-        "TWO_YEAR_ROW" to "two-year row",
-        "FIVE_YEAR_ROW" to "five-year row",
-        "ONE_MINUTE_ROW" to "one-minute row",
-        "TWO_MINUTE_ROW" to "two-minute row",
-        "FIVE_MINUTE_ROW" to "five-minute row",
+        // T17b (owner decision D1, approved rule change): the Unit 17 count questions name the counting meaning ("two hours"),
+        // not the source layout ("two-hour row"). The feature identifiers keep their names; COUNT_FAMILIES below rejects a
+        // prompt that names a competing count of the same unit, and a prompt or rationale without its count still fails.
+        "ONE_HOUR_ROW" to "one hour",
+        "TWO_HOUR_ROW" to "two hours",
+        "FIVE_HOUR_ROW" to "five hours",
+        "ONE_YEAR_ROW" to "one year",
+        "TWO_YEAR_ROW" to "two years",
+        "FIVE_YEAR_ROW" to "five years",
+        "ONE_MINUTE_ROW" to "one minute",
+        "TWO_MINUTE_ROW" to "two minutes",
+        "FIVE_MINUTE_ROW" to "five minutes",
         "DISSUADE_MEANING" to "dissuade meaning",
         "AGREE_MEANING" to "agree meaning",
         "DISSUADE_PERFECTIVE" to "dissuade perfective",
+    )
+    /** T17b (D1): the count features of each Unit 17 counting objective; a prompt may name only its own count. */
+    private val COUNT_FAMILIES = listOf(
+        listOf("ONE_HOUR_ROW", "TWO_HOUR_ROW", "FIVE_HOUR_ROW"),
+        listOf("ONE_YEAR_ROW", "TWO_YEAR_ROW", "FIVE_YEAR_ROW"),
+        listOf("ONE_MINUTE_ROW", "TWO_MINUTE_ROW", "FIVE_MINUTE_ROW"),
     )
     private val RESPONSE_KINDS = setOf(
         "RUSSIAN_TOKEN",
@@ -4501,6 +4510,13 @@ internal object V2Validator {
             }
             if (phrase != null && !assessment.whyAnswerDemonstratesObjective.contains(phrase)) {
                 errors += "Item ${item.id} answer rationale is not tied to the target"
+            }
+            // T17b (D1): a count question that also names a competing count of its unit asks for the wrong count.
+            COUNT_FAMILIES.firstOrNull { feature in it }?.filter { it != feature }?.forEach { other ->
+                val competing = TARGET_PHRASES.getValue(other)
+                if (Regex("(?i)\\b${Regex.escape(competing)}\\b").containsMatchIn(item.prompt)) {
+                    errors += "Item ${item.id} prompt names a competing count"
+                }
             }
         }
         if (item.options.count { it == item.answer } != 1) {

@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "c800faf97c58050d621302353f48239baf348dda86ede12d9386231037979fc5",
+      "sha256": "ba035cd3981f184d096d9de47b446a1fdd28b2544c8d45da3e58da3b38cf2179",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3370,7 +3370,7 @@
       "scope": "Owner direction 11/15/2026: the frozen text cited by a russian-fact marker must contain every Cyrillic word form the marked sentence shows, compared without stress marks, and a form shown with a stress mark must appear with that stress (OpenRussian stress apostrophes read as acute accents). No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
-        },
+    },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
       "task": "T15b",
@@ -3478,6 +3478,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "T16c CI fix (exact-commit CI 44946188080, Unit29PunctuationContextRegressionTest): the two Unit 29 native-punctuation ru-Wikipedia sources keep their per-record chain check; the D29a S1 admission applies to every other ru-Wikipedia source. Restores the pre-D29a strictness for those two sources; no other route changes.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T17b D1",
+      "previousRecordedSha256": "c800faf97c58050d621302353f48239baf348dda86ede12d9386231037979fc5",
+      "sha256": "ba035cd3981f184d096d9de47b446a1fdd28b2544c8d45da3e58da3b38cf2179",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T17b (owner decision D1, approved rule change): the nine Unit 17 count features (ONE/TWO/FIVE_HOUR_ROW, _YEAR_ROW, _MINUTE_ROW) require the counting meaning in the prompt and rationale (\"two hours\") instead of the table-layout wording (\"two-hour row\"); a prompt that names a competing count of the same unit is rejected (COUNT_FAMILIES). No Russian is constructed or rendered; no other target changes.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }
