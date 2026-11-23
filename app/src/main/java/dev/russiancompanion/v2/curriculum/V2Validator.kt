@@ -3350,11 +3350,18 @@ internal object V2Validator {
         }
         val table = BatchARemainingSources.GOVERNED_GLOSSES[cue.originalSourceText] ?: return null
         val allowed = table[cue.shippedText]
+        // T17d (owner decision D2, approved rule change): the Unit 19 probability binding (W:39-41, the likelihood span) keeps its
+        // cue and keyed answer on that span, and its distractors may be competing meanings drawn from other frozen sources (the
+        // same page's other senses, an S1 page): each must be a verified frozen record that is not content-audit research,
+        // synthesis or coverage, displayed in its frozen text, and English like the keyed gloss. Every other span still requires
+        // all participants on the cue's span (was: all participants on the cue's span for the likelihood span too).
+        val competing = cue.originalSourceText == BatchARemainingSources.LIKELIHOOD_SPAN
         if (
             allowed != null &&
             answer.shippedText in allowed &&
             cue.shippedText != answer.shippedText &&
-            group.all { sameFrozenSpan(cue, it) } &&
+            sameFrozenSpan(cue, answer) &&
+            distractors.all { sameFrozenSpan(cue, it) || (competing && frozenCompetingMeaning(it, answer)) } &&
             group.all { displayedInFrozen(it) } &&
             distractors.all { it.shippedText != answer.shippedText }
         ) {
@@ -3362,6 +3369,16 @@ internal object V2Validator {
         }
         return ""
     }
+
+    /** D2: a competing meaning from a frozen source file, never research synthesis, a coverage record or Russian text. */
+    private fun frozenCompetingMeaning(record: V2ProvenanceRecord, answer: V2ProvenanceRecord): Boolean =
+        verifiedFrozen(record) &&
+            record.synthesis == null &&
+            record.sourceId != ContentAuditSources.SOURCE_ID &&
+            record.licenseId != ContentAuditSources.LICENSE &&
+            record.transformation != ContentAuditSources.TRANSFORMATION &&
+            !record.sourceRecordId.startsWith("ca-coverage:") &&
+            !hasCyrillic(record.shippedText) && !hasCyrillic(answer.shippedText)
 
     /**
      * Content-audit synthesis states each corrected cue, answer, and distractor set.

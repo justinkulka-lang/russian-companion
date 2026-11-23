@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "ba035cd3981f184d096d9de47b446a1fdd28b2544c8d45da3e58da3b38cf2179",
+      "sha256": "7dd3d3c40911c176ecb056e2506e75110ddb07c017a891ee85df319b3ca265d6",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3489,6 +3489,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "T17b (owner decision D1, approved rule change): the nine Unit 17 count features (ONE/TWO/FIVE_HOUR_ROW, _YEAR_ROW, _MINUTE_ROW) require the counting meaning in the prompt and rationale (\"two hours\") instead of the table-layout wording (\"two-hour row\"); a prompt that names a competing count of the same unit is rejected (COUNT_FAMILIES). No Russian is constructed or rendered; no other target changes.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T17d D2",
+      "previousRecordedSha256": "ba035cd3981f184d096d9de47b446a1fdd28b2544c8d45da3e58da3b38cf2179",
+      "sha256": "7dd3d3c40911c176ecb056e2506e75110ddb07c017a891ee85df319b3ca265d6",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T17d (owner decision D2, approved rule change): the Unit 19 probability binding (BatchARemainingSources.LIKELIHOOD_SPAN, Wiktionary dolzhen 84965088 W:39-41) keeps its cue and keyed answer on that span; its distractors may be competing English meanings from other verified frozen records that are not content-audit research, synthesis or coverage (frozenCompetingMeaning). Every other governed span still requires all participants on the cue's span. No Russian is constructed or rendered.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }
