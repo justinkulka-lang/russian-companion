@@ -116,7 +116,9 @@ class Unit17CumulativeReviewTest {
             waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Try again. ${noun.feedback}")
             compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
             waitTag("v2-example-ex-or-u16-inst-pl-7"); compose.onNodeWithTag("v2-example-ex-or-u16-inst-pl-7").performScrollTo().assertIsDisplayed()
-            compose.onNodeWithText("The first has the wrong case; the second has the right case but the wrong number", substring = true).performScrollTo().assertIsDisplayed()
+            // T17a: the Unit 16 sweep row for inventory line 1703 rewords this remediation sentence (was "The first has the wrong case;
+            // the second has the right case but the wrong number").
+            compose.onNodeWithText("The first is not instrumental; the second is instrumental singular rather than plural", substring = true).performScrollTo().assertIsDisplayed()
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
             val practice = reviewedGuidedPractice(p, "u16-st-rem-inst-pl")
             assertEquals(listOf("u16-st-guided-inst-pl-1"), practice)
