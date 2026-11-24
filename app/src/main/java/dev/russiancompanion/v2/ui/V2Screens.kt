@@ -581,7 +581,7 @@ internal fun V2SessionScreen(
         },
     ) {
         Text(step.title, style = MaterialTheme.typography.headlineSmall, modifier = Modifier.semantics { heading(); testTag = "v2-step-title" })
-        V2Status("Step ${index + 1} of ${session.steps.size} · ${step.kind}")
+        V2Status(stepStatus(index, session.steps.size, step.kind))
             Text(step.body)
             if (requiredItemIds.any { selectedAnswer(step.id, it) == null }) {
                 V2Status(if (requiredItemIds.size == step.itemIds.size) {
@@ -1017,3 +1017,17 @@ internal fun V2UnitTargetControl(unitNumber: Int, targetEpochDay: Long?, onSetUn
         ) { androidx.compose.material3.DatePicker(state = state) }
     }
 }
+
+/**
+ * T16c-n2 (owner decisions D37a/D37b): the step status line names the kind of step in plain words, never the raw kind value
+ * (was "Step 2 of 5 · TEACH"). An unknown kind shows the position only.
+ */
+private val STEP_KIND_LABELS = mapOf(
+    "ORIENT" to "Orientation", "TEACH" to "Teaching", "GUIDED" to "Guided practice", "CHECK" to "Check",
+    "REMEDIATE" to "Another look", "BOOK" to "Book work", "ANKI" to "AnkiDroid practice", "BINDER" to "Binder",
+    "TUTOR" to "Tutor task", "SPEAK" to "Speaking",
+)
+
+internal fun stepStatus(index: Int, count: Int, kind: String): String =
+    "Step ${index + 1} of $count" + (STEP_KIND_LABELS[kind]?.let { " · $it" } ?: "")
+

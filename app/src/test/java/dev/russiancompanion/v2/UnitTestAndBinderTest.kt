@@ -171,7 +171,8 @@ class UnitTestAndBinderTest {
             assertEquals(V2AssignmentStatus.TODO, entry().status)
             assertTrue(s.recordBinderSelfCheck(f, 4, "now", epoch))
             assertEquals(V2AssignmentStatus.DONE, entry().status)
-            assertEquals("Self-check only; not shown as demonstrated ability.", entry().detail)
+            // T16c-n2 (D37a): the note is a plain instruction (was "Self-check only; not shown as demonstrated ability.").
+            assertEquals("Check this yourself against the model answer.", entry().detail)
             // A self-check is never demonstrated ability: progress and objective states are unchanged.
             val view = s.v2LearnerView()
             assertEquals(currentCompletedUnitNumbers(f, view.copy(binderSelfChecks = emptyList())), currentCompletedUnitNumbers(f, view))

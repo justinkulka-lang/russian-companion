@@ -1,0 +1,198 @@
+item	prompt	key	citation	sourceId	sourceRecordId
+u1-i-type-й	Type the printed letter that has this name.	й	prov-t16cn2-key-u1-i-type-й	src-wikipedia-russian-alphabet-1371795481	alphabet:! style="text-align: center;" | <big>{{lang|ru|[[Й]]й}}</big>
+u1-i-type-ъ	Type the printed letter that has this name.	ъ	prov-t16cn2-key-u1-i-type-ъ	src-wikipedia-russian-alphabet-1371795481	alphabet:! style="text-align: center;" | <big>{{lang|ru|[[Ъ]]ъ}}</big>
+u1-i-type-ь	Type the printed letter that has this name.	ь	prov-t16cn2-key-u1-i-type-ь	src-wikipedia-russian-alphabet-1371795481	alphabet:! style="text-align: center;" | <big>{{lang|ru|[[Ь]]ь}}</big>
+u2-i-type-луг	Type the word from this unit that has this meaning.	луг	prov-u2-key-луг	src-openrussian-50e210c4	nouns.csv:луг#accented
+u2-i-type-лук	Type the word from this unit that has this meaning.	лук	prov-u2-key-лук	src-openrussian-50e210c4	nouns.csv:лук#accented
+u2-i-type-код	Type the word from this unit that has this meaning.	код	prov-u2-key-код	src-openrussian-50e210c4	nouns.csv:код#accented
+u2-i-type-плод	Type the word from this unit that has this meaning.	плод	prov-u2-key-плод	src-openrussian-50e210c4	nouns.csv:плод#accented
+u2-i-type-плот	Type the word from this unit that has this meaning.	плот	prov-u2-key-плот	src-openrussian-50e210c4	nouns.csv:плот#accented
+u2-g-type-castle	Practice: type the word from this unit that has this meaning. The stress mark is optional.	за́мок	prov-u2-key-castle	src-openrussian-50e210c4	nouns.csv:замок#accented
+u3-i-type-вода	Type the word from this unit that has this meaning.	вода́	prov-u3-key-вода	src-openrussian-50e210c4	nouns.csv:вода#accented
+u3-i-type-работа	Type the word from this unit that has this meaning.	рабо́та	prov-u3-key-работа	src-openrussian-50e210c4	nouns.csv:работа#accented
+u3-i-type-книга	Type the word from this unit that has this meaning.	кни́га	prov-u3-key-книга	src-openrussian-50e210c4	nouns.csv:книга#accented
+u3-i-type-школа	Type the word from this unit that has this meaning.	шко́ла	prov-u3-key-школа	src-openrussian-50e210c4	nouns.csv:школа#accented
+u3-i-type-окно	Type the word from this unit that has this meaning.	окно́	prov-u3-key-окно	src-openrussian-50e210c4	nouns.csv:окно#accented
+u3-i-type-молоко	Type the word from this unit that has this meaning.	молоко́	prov-u3-key-молоко	src-openrussian-50e210c4	nouns.csv:молоко#accented
+u3-g-type-письмо	Practice: type the word from this unit that has this meaning.	письмо́	prov-u3-key-письмо	src-openrussian-50e210c4	nouns.csv:письмо#accented
+u4-i-type-знать-я	Type the present form of the shown word that goes with я.	зна́ю	prov-u4-key-знать-я	src-openrussian-50e210c4	verbs.csv:знать#presfut_sg1
+u4-i-type-знать-они	Type the present form of the shown word that goes with они́.	зна́ют	prov-u4-key-знать-они	src-openrussian-50e210c4	verbs.csv:знать#presfut_pl3
+u4-i-type-работать-мы	Type the present form of the shown word that goes with мы.	рабо́таем	prov-u4-key-работать-мы	src-openrussian-50e210c4	verbs.csv:рабо'тать#presfut_pl1
+u4-i-type-понимать-ты	Type the present form of the shown word that goes with ты.	понима́ешь	prov-u4-key-понимать-ты	src-openrussian-50e210c4	verbs.csv:понима'ть#presfut_sg2
+u4-i-type-слушать-он	Type the present form of the shown word that goes with он.	слу́шает	prov-u4-key-слушать-он	src-openrussian-50e210c4	verbs.csv:слу'шать#presfut_sg3
+u4-i-type-слушать-вы	Type the present form of the shown word that goes with вы.	слу́шаете	prov-u4-key-слушать-вы	src-openrussian-50e210c4	verbs.csv:слу'шать#presfut_pl2
+u4-g-type-делать-мы	Practice: type the present form of the shown word that goes with мы.	де́лаем	prov-u4-key-делать-мы	src-openrussian-50e210c4	verbs.csv:де'лать#presfut_pl1
+u5-i-type-kto	Type the question word that has this meaning.	Кто	prov-u5-q-kto	src-wikibooks-russian-cc-by-sa	interrogative:| Кто || ''kto'' || Who
+u5-i-type-chto	Type the question word that has this meaning.	Что	prov-u5-q-chto	src-wikibooks-russian-cc-by-sa	interrogative:| Что || ''što'' || What
+u5-i-type-kuda	Type the question word that has this meaning.	Куда́	prov-u5-key-kuda-stressed	src-openrussian-50e210c4	others.csv:куда#accented
+u5-i-type-otkuda	Type the question word that has this meaning.	Отку́да	prov-u5-key-otkuda-stressed	src-openrussian-50e210c4	others.csv:откуда#accented
+u5-i-type-skolko	Type the question word that has this meaning.	Ско́лько	prov-u5-key-skolko-stressed	src-openrussian-50e210c4	others.csv:сколько#accented
+u5-i-type-kakoy	Type the question word that has this meaning.	Како́й	prov-u5-key-kakoy-stressed	src-openrussian-50e210c4	adjectives.csv:какой#accented
+u5-g-type-gde	Practice: type the question word that has this meaning.	Где	prov-u5-q-gde	src-wikibooks-russian-cc-by-sa	interrogative:| Где || ''gde'' || Where (location)
+u6-i-type-moy-neuter	Type the neuter singular nominative form of the shown possessive.	моё	prov-ex-or-u6-possessive-6	src-openrussian-50e210c4	adjectives.csv:мой#decl_n_nom
+u6-i-type-moy-plural	Type the plural nominative form of the shown possessive.	мои́	prov-ex-or-u6-possessive-7	src-openrussian-50e210c4	adjectives.csv:мой#decl_pl_nom
+u6-i-type-tvoy-neuter	Type the neuter singular nominative form of the shown possessive.	твоё	prov-t15a-u6-tvoy-n-nom	src-openrussian-50e210c4	adjectives.csv:твой#decl_n_nom
+u6-i-type-kniga-acc	Type the singular accusative form of the shown noun.	кни́гу	prov-ex-or-u6-feminine-1	src-openrussian-50e210c4	nouns.csv:книга#sg_acc
+u6-i-type-zhenshchina-acc	Type the singular accusative form of the shown noun.	же́нщину	prov-ex-or-u6-feminine-5	src-openrussian-50e210c4	nouns.csv:женщина#sg_acc
+u6-i-type-object-order	Type the same sentence with the object after the verb.	Я люблю тебя	prov-ex-u6-object-2-ru	src-wikibooks-russian-cc-by-sa	accusative:I love you" as '''Я люблю тебя''' and be grammatically correct, it is more commo
+u6-i-type-pronoun-my	Type the object form of the shown subject pronoun.	Нас	prov-ex-u6-pronoun-1-ru	src-wikibooks-russian-cc-by-sa	accusative:| We/us || Мы || Нас
+u6-i-type-pronoun-oni	Type the object form of the shown subject pronoun.	Их	prov-ex-u6-pronoun-6-ru	src-wikibooks-russian-cc-by-sa	accusative:| They/them || Они || Их
+u7-i-type-novaya	Type the feminine singular nominative form of the shown adjective.	но́вая	prov-ex-or-u7-default-1	src-openrussian-50e210c4	adjectives.csv:новый#decl_f_nom
+u7-i-type-novoe	Type the neuter singular nominative form of the shown adjective.	но́вое	prov-ex-or-u7-endings-9	src-openrussian-50e210c4	adjectives.csv:новый#decl_n_nom
+u7-i-type-novye	Type the plural nominative form of the shown adjective.	но́вые	prov-ex-or-u7-endings-10	src-openrussian-50e210c4	adjectives.csv:новый#decl_pl_nom
+u7-i-type-novogo	Type the masculine singular genitive form of the shown adjective.	но́вого	prov-ex-or-u7-objectadj-5	src-openrussian-50e210c4	adjectives.csv:новый#decl_m_gen
+u7-i-type-novuyu	Type the feminine singular accusative form of the shown adjective.	но́вую	prov-ex-or-u7-objectadj-6	src-openrussian-50e210c4	adjectives.csv:новый#decl_f_acc
+u7-i-type-novom	Type the masculine singular prepositional form of the shown adjective.	но́вом	prov-ex-or-u7-place-4	src-openrussian-50e210c4	adjectives.csv:новый#decl_m_prep
+u7-i-type-khoroshaya	Type the feminine singular nominative form of the shown adjective.	хоро́шая	prov-ex-or-u7-spelling-2	src-openrussian-50e210c4	adjectives.csv:хороший#decl_f_nom
+u7-i-type-khoroshee	Type the neuter singular nominative form of the shown adjective.	хоро́шее	prov-ex-or-u7-spelling-3	src-openrussian-50e210c4	adjectives.csv:хороший#decl_n_nom
+u7-i-type-khoroshie	Type the plural nominative form of the shown adjective.	хоро́шие	prov-ex-or-u7-spelling-4	src-openrussian-50e210c4	adjectives.csv:хороший#decl_pl_nom
+u7-i-type-khoroshem	Type the masculine singular prepositional form of the shown adjective.	хоро́шем	prov-ex-or-u7-place-7	src-openrussian-50e210c4	adjectives.csv:хороший#decl_m_prep
+u7-i-type-kakaya	Type the feminine singular nominative form of the shown adjective.	кака́я	prov-ex-or-u7-question-1	src-openrussian-50e210c4	adjectives.csv:какой#decl_f_nom
+u7-i-type-kakoe	Type the neuter singular nominative form of the shown adjective.	како́е	prov-ex-or-u7-question-2	src-openrussian-50e210c4	adjectives.csv:какой#decl_n_nom
+u7-i-type-eta	Type the feminine singular nominative form of the shown demonstrative.	э́та	prov-ex-or-u7-demonstrative-1	src-openrussian-50e210c4	adjectives.csv:этот#decl_f_nom
+u7-i-type-etu	Type the feminine singular accusative form of the shown demonstrative.	э́ту	prov-ex-or-u7-demonstrative-4	src-openrussian-50e210c4	adjectives.csv:этот#decl_f_acc
+u7-i-type-eti	Type the plural nominative form of the shown demonstrative.	э́ти	prov-ex-or-u7-demonstrative-3	src-openrussian-50e210c4	adjectives.csv:этот#decl_pl_nom
+u8-i-type-goroda	Type the plural nominative form of the shown noun.	города́	prov-ex-or-u8-plural-3	src-openrussian-50e210c4	nouns.csv:город#pl_nom
+u8-i-type-okna	Type the plural nominative form of the shown noun.	о́кна	prov-ex-or-u8-plural-7	src-openrussian-50e210c4	nouns.csv:окно#pl_nom
+u8-i-type-mamy	Type the plural nominative form of the shown noun.	ма́мы	prov-ex-or-u8-plural-9	src-openrussian-50e210c4	nouns.csv:мама#pl_nom
+u8-i-type-doma	Type the plural nominative form of the shown noun.	дома́	prov-ex-or-u8-plural-11	src-openrussian-50e210c4	nouns.csv:дом#pl_nom
+u8-i-type-slova	Type the plural nominative form of the shown noun.	слова́	prov-ex-or-u8-plural-13	src-openrussian-50e210c4	nouns.csv:слово#pl_nom
+u8-i-type-knigi	Type the plural nominative form of the shown noun.	кни́ги	prov-ex-or-u8-plural-5	src-openrussian-50e210c4	nouns.csv:книга#pl_nom
+u8-i-type-lyudi	Type the plural nominative form of the shown noun.	лю́ди	prov-ex-or-u8-irregular-6	src-openrussian-50e210c4	nouns.csv:человек#pl_nom
+u8-i-type-druzya	Type the plural nominative form of the shown noun.	друзья́	prov-ex-or-u8-irregular-4	src-openrussian-50e210c4	nouns.csv:друг#pl_nom
+u8-i-type-synovya	Type the plural nominative form of the shown noun.	сыновья́	prov-ex-or-u8-irregular-8	src-openrussian-50e210c4	nouns.csv:сын#pl_nom
+u9-i-type-1	Type the shown number in Russian words.	оди́н	prov-ex-u9-cardinal-1-ru	src-wikibooks-russian-cc-by-sa	numbers:1 оди́н (одна́, одно́, одни́)
+u9-i-type-5	Type the shown number in Russian words.	пять	prov-ex-u9-cardinal-5-ru	src-wikibooks-russian-cc-by-sa	numbers:5 пять
+u9-i-type-10	Type the shown number in Russian words.	де́сять	prov-ex-u9-cardinal-10-ru	src-wikibooks-russian-cc-by-sa	numbers:10 де́сять
+u9-i-type-4	Type the shown number in Russian words.	четы́ре	prov-ex-u9-cardinal-4-ru	src-wikibooks-russian-cc-by-sa	numbers:4 четы́ре
+u9-i-type-14	Type the shown number in Russian words.	четы́рнадцать	prov-ex-u9-teens-3-ru	src-wikibooks-russian-cc-by-sa	numbers:14 четы́рнадцать
+u9-i-type-19	Type the shown number in Russian words.	девятна́дцать	prov-ex-u9-teens-8-ru	src-wikibooks-russian-cc-by-sa	numbers:19 девятна́дцать
+u9-i-type-12	Type the shown number in Russian words.	двена́дцать	prov-ex-u9-teens-1-ru	src-wikibooks-russian-cc-by-sa	numbers:12 двена́дцать
+u9-i-type-50	Type the shown number in Russian words.	пятьдеся́т	prov-ex-u9-tens-2-ru	src-wikibooks-russian-cc-by-sa	numbers:50 пятьдеся́т
+u9-i-type-90	Type the shown number in Russian words.	девяно́сто	prov-ex-u9-tens-6-ru	src-wikibooks-russian-cc-by-sa	numbers:90 девяно́сто
+u9-i-type-20	Type the shown number in Russian words.	два́дцать	prov-ex-u9-tens-7-ru	src-wikibooks-russian-cc-by-sa	numbers:20 два́дцать
+u9-i-type-300	Type the shown number in Russian words.	три́ста	prov-ex-u9-hundreds-2-ru	src-wikibooks-russian-cc-by-sa	numbers:300 три́ста
+u9-i-type-500	Type the shown number in Russian words.	пятьсо́т	prov-ex-u9-hundreds-4-ru	src-wikibooks-russian-cc-by-sa	numbers:500 пятьсо́т
+u9-i-type-900	Type the shown number in Russian words.	девятьсо́т	prov-ex-u9-hundreds-8-ru	src-wikibooks-russian-cc-by-sa	numbers:900 девятьсо́т
+u9-i-type-21	Type the shown number in Russian words.	два́дцать оди́н	prov-ex-u9-thousands-1-ru	src-wikibooks-russian-cc-by-sa	numbers:21 два́дцать оди́н
+u9-i-type-101	Type the shown number in Russian words.	сто оди́н	prov-ex-u9-thousands-2-ru	src-wikibooks-russian-cc-by-sa	numbers:101 сто оди́н
+u10-i-type-nas	Type the genitive form of the shown pronoun.	Нас	prov-ex-u10-pronoun-7-ru	src-wikibooks-russian-cc-by-sa	genitive:'''English''' || I || We || You || You || He/she/it|| They\n|-\n! '''Nominative'''
+u10-i-type-tebya	Type the genitive form of the shown pronoun.	Тебя́	prov-ex-u10-pronoun-10-ru	src-wikibooks-russian-cc-by-sa	genitive:'''English''' || I || We || You || You || He/she/it|| They\n|-\n! '''Nominative'''
+u10-i-type-vas	Type the genitive form of the shown pronoun.	Вас	prov-ex-u10-pronoun-11-ru	src-wikibooks-russian-cc-by-sa	genitive:'''English''' || I || We || You || You || He/she/it|| They\n|-\n! '''Nominative'''
+u10-i-type-ikh	Type the genitive form of the shown pronoun.	Их	prov-ex-u10-pronoun-4-ru	src-wikibooks-russian-cc-by-sa	genitive:'''English''' || I || We || You || You || He/she/it|| They\n|-\n! '''Nominative'''
+u10-i-type-okna	Type the singular genitive form of the shown noun.	окна́	prov-ex-or-u10-preposition-14	src-openrussian-50e210c4	nouns.csv:окно#sg_gen
+u10-i-type-druga	Type the singular genitive form of the shown noun.	дру́га	prov-ex-or-u10-preposition-16	src-openrussian-50e210c4	nouns.csv:друг#sg_gen
+u10-i-type-moego	Type the masculine singular genitive form of the shown adjective.	моего́	prov-ex-or-u10-preposition-18	src-openrussian-50e210c4	adjectives.csv:мой#decl_m_gen
+u10-i-type-zhenshchin	Type the plural accusative form of the shown noun.	же́нщин	prov-ex-or-u10-animate-2	src-openrussian-50e210c4	nouns.csv:женщина#pl_acc
+u10-i-type-khoroshego	Type the masculine singular genitive form of the shown adjective.	хоро́шего	prov-ex-or-u10-adjective-8	src-openrussian-50e210c4	adjectives.csv:хороший#decl_m_gen
+u10-i-type-bratev	Type the plural accusative form of the shown noun.	бра́тьев	prov-ex-or-u10-animate-5	src-openrussian-50e210c4	nouns.csv:брат#pl_acc
+u11-i-type-chital	Type the masculine singular past form of the shown verb.	чита́л	prov-ex-or-u11-past-read-0	src-openrussian-50e210c4	verbs.csv:чита'ть#past_m
+u11-i-type-chitala	Type the feminine singular past form of the shown verb.	чита́ла	prov-ex-or-u11-past-read-1	src-openrussian-50e210c4	verbs.csv:чита'ть#past_f
+u11-i-type-chitalo	Type the neuter singular past form of the shown verb.	чита́ло	prov-ex-or-u11-past-read-2	src-openrussian-50e210c4	verbs.csv:чита'ть#past_n
+u11-i-type-chitali	Type the plural past form of the shown verb.	чита́ли	prov-ex-or-u11-past-read-3	src-openrussian-50e210c4	verbs.csv:чита'ть#past_pl
+u11-i-type-byl	Type the masculine singular past form of the shown verb.	бы́л	prov-ex-or-u11-past-be-0	src-openrussian-50e210c4	verbs.csv:быть#past_m
+u11-i-type-byla	Type the feminine singular past form of the shown verb.	была́	prov-ex-or-u11-past-be-1	src-openrussian-50e210c4	verbs.csv:быть#past_f
+u11-i-type-prochital	Type the masculine singular past form of the shown verb.	прочита́л	prov-ex-or-u11-past-aspect-2	src-openrussian-50e210c4	verbs.csv:прочита'ть#past_m
+u11-i-type-prochitala	Type the feminine singular past form of the shown verb.	прочита́ла	prov-ex-or-u11-past-aspect-3	src-openrussian-50e210c4	verbs.csv:прочита'ть#past_f
+u11-i-type-prochitalo	Type the neuter singular past form of the shown verb.	прочита́ло	prov-ex-or-u11-past-aspect-4	src-openrussian-50e210c4	verbs.csv:прочита'ть#past_n
+u11-i-type-ulybalas	Type the feminine singular past form of the shown verb.	улыба́лась	prov-ex-or-u11-reflexive-2	src-openrussian-50e210c4	verbs.csv:улыба'ться#past_f
+u11-i-type-uchilsya	Type the masculine singular past form of the shown verb.	учи́лся	prov-ex-or-u11-reflexive-6	src-openrussian-50e210c4	verbs.csv:учи'ться#past_m
+u11-i-type-uchilas	Type the feminine singular past form of the shown verb.	учи́лась	prov-ex-or-u11-reflexive-7	src-openrussian-50e210c4	verbs.csv:учи'ться#past_f
+u12-i-type-knige	Type the dative singular form of the shown noun.	кни́ге	prov-ex-or-u12-dative-1	src-openrussian-50e210c4	nouns.csv:кни'га#sg_dat
+u12-i-type-stolu	Type the dative singular form of the shown noun.	столу́	prov-ex-or-u12-dative-4	src-openrussian-50e210c4	nouns.csv:стол#sg_dat
+u12-i-type-domu	Type the dative singular form of the shown noun.	до́му	prov-ex-or-u12-dative-7	src-openrussian-50e210c4	nouns.csv:дом#sg_dat
+u12-i-type-knigakh	Type the prepositional plural form of the shown noun.	кни́гах	prov-ex-or-u12-prep-plural-1	src-openrussian-50e210c4	nouns.csv:кни'га#pl_prep
+u12-i-type-stolakh	Type the prepositional plural form of the shown noun.	стола́х	prov-ex-or-u12-prep-plural-4	src-openrussian-50e210c4	nouns.csv:стол#pl_prep
+u12-i-type-domakh	Type the prepositional plural form of the shown noun.	дома́х	prov-ex-or-u12-prep-plural-7	src-openrussian-50e210c4	nouns.csv:дом#pl_prep
+u12-i-type-skazhu	Type the first-person singular future form of the shown verb.	скажу́	prov-ex-or-u12-future-perf-2	src-openrussian-50e210c4	verbs.csv:сказа'ть#presfut_sg1
+u12-i-type-skazhesh	Type the second-person singular future form of the shown verb.	ска́жешь	prov-ex-or-u12-future-perf-4	src-openrussian-50e210c4	verbs.csv:сказа'ть#presfut_sg2
+u13-i-type-chital	Type the masculine singular past form of the shown verb.	чита́л	prov-ex-or-u13-past-aspect-3	src-openrussian-50e210c4	verbs.csv:чита'ть#past_m
+u13-i-type-chitala	Type the feminine singular past form of the shown verb.	чита́ла	prov-ex-or-u13-past-aspect-4	src-openrussian-50e210c4	verbs.csv:чита'ть#past_f
+u13-i-type-chitalo	Type the neuter singular past form of the shown verb.	чита́ло	prov-ex-or-u13-past-aspect-5	src-openrussian-50e210c4	verbs.csv:чита'ть#past_n
+u13-i-type-chitali	Type the plural past form of the shown verb.	чита́ли	prov-ex-or-u13-past-aspect-6	src-openrussian-50e210c4	verbs.csv:чита'ть#past_pl
+u13-i-type-prochital	Type the masculine singular past form of the shown verb.	прочита́л	prov-ex-or-u13-past-aspect-8	src-openrussian-50e210c4	verbs.csv:прочита'ть#past_m
+u13-i-type-prochitala	Type the feminine singular past form of the shown verb.	прочита́ла	prov-ex-or-u13-past-aspect-9	src-openrussian-50e210c4	verbs.csv:прочита'ть#past_f
+u13-i-type-prochitalo	Type the neuter singular past form of the shown verb.	прочита́ло	prov-ex-or-u13-past-aspect-10	src-openrussian-50e210c4	verbs.csv:прочита'ть#past_n
+u13-i-type-govorit	Type the imperfective partner of the shown verb.	говори́ть	prov-t16c-u13-v-5149fe34-accented	src-openrussian-50e210c4	verbs.csv:говори'ть#accented
+u13-i-type-skazat	Type the perfective partner of the shown verb.	сказа́ть	prov-t16c-u13-v-44e15ca6-accented	src-openrussian-50e210c4	verbs.csv:сказа'ть#accented
+u13-i-type-delat	Type the imperfective partner of the shown verb.	де́лать	prov-t16c-u13-v-3b647b63-accented	src-openrussian-50e210c4	verbs.csv:де'лать#accented
+u13-i-type-sdelat	Type the perfective partner of the shown verb.	сде́лать	prov-t16c-u13-v-c3925fb3-accented	src-openrussian-50e210c4	verbs.csv:сде'лать#accented
+u14-i-type-budu	Type the future form of the shown verb for I (first-person singular).	бу́ду	prov-t16d-u14-f41-aec1c8b0	src-wikibooks-russian-cc-by-sa	future:| Я бу́ду говори́ть<br>I will be speaking || Мы бу́дем говори́ть<br>We will be s
+u14-i-type-budem	Type the future form of the shown verb for we (first-person plural).	бу́дем	prov-t16d-u14-f41-5c31c551	src-wikibooks-russian-cc-by-sa	future:| Я бу́ду говори́ть<br>I will be speaking || Мы бу́дем говори́ть<br>We will be s
+u14-i-type-budesh	Type the future form of the shown verb for you, one person (second-person singular).	бу́дешь	prov-t16d-u14-f44-b6d8d689	src-wikibooks-russian-cc-by-sa	future:| Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You wi
+u14-i-type-budete	Type the future form of the shown verb for you, more than one person (second-person plural).	бу́дете	prov-t16d-u14-f44-4fb07653	src-wikibooks-russian-cc-by-sa	future:| Ты бу́дешь говори́ть<br>You will be speaking || Вы бу́дете говори́ть<br>You wi
+u14-i-type-budet	Type the future form of the shown verb for he (third-person singular).	бу́дет	prov-t16d-u14-f47-2e7d40d0	src-wikibooks-russian-cc-by-sa	future:| Он бу́дет говори́ть<br>He will be speaking || Они бу́дут говори́ть<br>They wil
+u14-i-type-budut	Type the future form of the shown verb for they (third-person plural).	бу́дут	prov-t16d-u14-f47-d5cd01b0	src-wikibooks-russian-cc-by-sa	future:| Он бу́дет говори́ть<br>He will be speaking || Они бу́дут говори́ть<br>They wil
+u14-i-type-skazhu	Type the future form of the shown verb for I (first-person singular).	скажу́	prov-ex-or-u14-future-person-2	src-openrussian-50e210c4	verbs.csv:сказа'ть#presfut_sg1
+u14-i-type-skazhem	Type the future form of the shown verb for we (first-person plural).	ска́жем	prov-t16d-u14-v-59c7abef-presfut_pl1	src-openrussian-50e210c4	verbs.csv:сказа'ть#presfut_pl1
+u14-i-type-skazhesh	Type the future form of the shown verb for you, one person (second-person singular).	ска́жешь	prov-t16d-u14-v-52ab3b40-presfut_sg2	src-openrussian-50e210c4	verbs.csv:сказа'ть#presfut_sg2
+u14-i-type-skazhete	Type the future form of the shown verb for you, more than one person (second-person plural).	ска́жете	prov-t16d-u14-v-68415c11-presfut_pl2	src-openrussian-50e210c4	verbs.csv:сказа'ть#presfut_pl2
+u14-i-type-skazhet	Type the future form of the shown verb for he (third-person singular).	ска́жет	prov-ex-or-u14-future-person-3	src-openrussian-50e210c4	verbs.csv:сказа'ть#presfut_sg3
+u14-i-type-skazhut	Type the future form of the shown verb for they (third-person plural).	ска́жут	prov-ex-or-u14-future-person-4	src-openrussian-50e210c4	verbs.csv:сказа'ть#presfut_pl3
+u14-i-type-pogovoryu	Type the future form of the shown verb for I (first-person singular).	поговорю́	prov-ex-or-u14-future-aspect-5	src-openrussian-50e210c4	verbs.csv:поговори'ть#presfut_sg1
+u14-i-type-porabotayu	Type the future form of the shown verb for I (first-person singular).	порабо́таю	prov-ex-or-u14-future-aspect-7	src-openrussian-50e210c4	verbs.csv:порабо'тать#presfut_sg1
+u15-i-type-chitai	Type the singular imperative of the shown verb.	чита́й	prov-ex-or-u15-imperative-0	src-openrussian-50e210c4	verbs.csv:чита'ть#imperative_sg
+u15-i-type-chitaite	Type the plural imperative of the shown verb.	чита́йте	prov-ex-or-u15-imperative-1	src-openrussian-50e210c4	verbs.csv:чита'ть#imperative_pl
+u15-i-type-skazhi	Type the singular imperative of the shown verb.	скажи́	prov-ex-or-u15-say-request-0	src-openrussian-50e210c4	verbs.csv:сказа'ть#imperative_sg
+u15-i-type-skazhite	Type the plural imperative of the shown verb.	скажи́те	prov-ex-or-u15-say-request-1	src-openrussian-50e210c4	verbs.csv:сказа'ть#imperative_pl
+u15-i-type-dai	Type the singular imperative of the shown verb.	да́й	prov-ex-or-u15-say-request-3	src-openrussian-50e210c4	verbs.csv:дать#imperative_sg
+u15-i-type-daite	Type the plural imperative of the shown verb.	да́йте	prov-ex-or-u15-say-request-4	src-openrussian-50e210c4	verbs.csv:дать#imperative_pl
+u15-i-type-govorit	Type the imperfective verb paired with the shown perfective verb.	говори́ть	prov-t16e-u15-v-5149fe34-accented	src-openrussian-50e210c4	verbs.csv:говори'ть#accented
+u15-i-type-skazat	Type the perfective verb paired with the shown imperfective verb.	сказа́ть	prov-t16e-u15-v-44e15ca6-accented	src-openrussian-50e210c4	verbs.csv:сказа'ть#accented
+u15-i-type-delat	Type the imperfective verb paired with the shown perfective verb.	де́лать	prov-t16e-u15-v-3b647b63-accented	src-openrussian-50e210c4	verbs.csv:де'лать#accented
+u15-i-type-sdelat	Type the perfective verb paired with the shown imperfective verb.	сде́лать	prov-t16e-u15-v-c3925fb3-accented	src-openrussian-50e210c4	verbs.csv:сде'лать#accented
+u15-i-type-delai	Type the singular imperative of the shown verb.	де́лай	prov-ex-or-u15-aspect-consolidate-4	src-openrussian-50e210c4	verbs.csv:де'лать#imperative_sg
+u15-i-type-delaite	Type the plural imperative of the shown verb.	де́лайте	prov-ex-or-u15-aspect-consolidate-5	src-openrussian-50e210c4	verbs.csv:де'лать#imperative_pl
+u15-i-type-sdelai	Type the singular imperative of the shown verb.	сде́лай	prov-ex-or-u15-aspect-consolidate-6	src-openrussian-50e210c4	verbs.csv:сде'лать#imperative_sg
+u15-i-type-sdelaite	Type the plural imperative of the shown verb.	сде́лайте	prov-ex-or-u15-aspect-consolidate-7	src-openrussian-50e210c4	verbs.csv:сде'лать#imperative_pl
+u16-i-type-domom	Type the instrumental singular form of the shown noun.	до́мом	prov-ex-or-u16-inst-sg-5	src-openrussian-50e210c4	nouns.csv:дом#sg_inst
+u16-i-type-stolom	Type the instrumental singular form of the shown noun.	столо́м	prov-ex-or-u16-inst-sg-1	src-openrussian-50e210c4	nouns.csv:стол#sg_inst
+u16-i-type-karandashom	Type the instrumental singular form of the shown noun.	карандашом	prov-ex-u16-inst-sg-9-ru	src-wikibooks-russian-cc-by-sa	instrumental:Train - '''поезд''' --> '''поездом'''\n:: Morning - '''утро''' --> '''утром'''\n::
+u16-i-type-knigami	Type the instrumental plural form of the shown noun.	кни́гами	prov-ex-or-u16-inst-pl-1	src-openrussian-50e210c4	nouns.csv:кни'га#pl_inst
+u16-i-type-domami	Type the instrumental plural form of the shown noun.	дома́ми	prov-ex-or-u16-inst-pl-5	src-openrussian-50e210c4	nouns.csv:дом#pl_inst
+u16-i-type-stolami	Type the instrumental plural form of the shown noun.	стола́ми	prov-ex-or-u16-inst-pl-9	src-openrussian-50e210c4	nouns.csv:стол#pl_inst
+u16-i-type-khoroshim	Type the masculine instrumental singular form of the shown adjective.	хоро́шим	prov-ex-or-u16-inst-adj-1	src-openrussian-50e210c4	adjectives.csv:хоро'ший#decl_m_inst
+u16-i-type-khoroshimi	Type the instrumental plural form of the shown adjective.	хоро́шими	prov-ex-or-u16-inst-adj-4	src-openrussian-50e210c4	adjectives.csv:хоро'ший#decl_pl_inst
+u17-i-type-pervyi	Type the masculine form of the Russian ordinal for first.	пе́рвый	prov-t17b-u17-ad-2f76d153-decl_m_nom	src-openrussian-50e210c4	adjectives.csv:пе'рвый#decl_m_nom
+u17-i-type-vtoroi	Type the masculine form of the Russian ordinal for second.	второ́й	prov-t17b-u17-ad-d0336bcd-decl_m_nom	src-openrussian-50e210c4	adjectives.csv:второ'й#decl_m_nom
+u17-i-type-odin-chas	Type the Russian phrase for one hour.	один час	prov-ex-u17-hours-0-en	src-wikibooks-russian-cc-by-sa	numbers:* один час\n* два часа\n* пять часов \n* двадцать один час\n* двадцать два часа\n* дв
+u17-i-type-dva-chasa	Type the Russian phrase for two hours.	два часа	prov-ex-u17-hours-1-en	src-wikibooks-russian-cc-by-sa	numbers:* один час\n* два часа\n* пять часов \n* двадцать один час\n* двадцать два часа\n* дв
+u17-i-type-pyat-chasov	Type the Russian phrase for five hours.	пять часов	prov-ex-u17-hours-2-en	src-wikibooks-russian-cc-by-sa	numbers:* один час\n* два часа\n* пять часов \n* двадцать один час\n* двадцать два часа\n* дв
+u17-i-type-odin-god	Type the Russian phrase for one year.	один год	prov-ex-u17-years-0-en	src-wikibooks-russian-cc-by-sa	numbers:* один год\n* два года\n* три года\n* четыре года\n* пять лет
+u17-i-type-dva-goda	Type the Russian phrase for two years.	два года	prov-ex-u17-years-1-en	src-wikibooks-russian-cc-by-sa	numbers:* один год\n* два года\n* три года\n* четыре года\n* пять лет
+u17-i-type-pyat-let	Type the Russian phrase for five years.	пять лет	prov-ex-u17-years-2-en	src-wikibooks-russian-cc-by-sa	numbers:* один год\n* два года\n* три года\n* четыре года\n* пять лет
+u17-i-type-odna-minuta	Type the Russian phrase for one minute.	одна минута	prov-ex-u17-minutes-0-en	src-wikibooks-russian-cc-by-sa	numbers:* одна минута\n* две минуты\n* три минуты\n* четыре минуты\n* пять минут\n* шесть мин
+u17-i-type-dve-minuty	Type the Russian phrase for two minutes.	две минуты	prov-ex-u17-minutes-1-en	src-wikibooks-russian-cc-by-sa	numbers:* одна минута\n* две минуты\n* три минуты\n* четыре минуты\n* пять минут\n* шесть мин
+u17-i-type-pyat-minut	Type the Russian phrase for five minutes.	пять минут	prov-ex-u17-minutes-2-en	src-wikibooks-russian-cc-by-sa	numbers:* одна минута\n* две минуты\n* три минуты\n* четыре минуты\n* пять минут\n* шесть мин
+u18-g-type-samyi-dobryi	Practice: type the two-word superlative that means the kindest.	са́мый до́брый	prov-t17c-u18-g303-d8955291	src-wikipedia-russian-grammar-1369617627	grammar:An alternative is to add an adverb to the positive form of the adjective. The ad
+u18-g-type-kotoryi-chas	Practice: type the missing word of the question for: What time is it?	Который	prov-t17c-u18-q169-ff0eafbf	src-wikibooks-russian-cc-by-sa	interrogative::What time is it? - '''Который час?'''
+u18-i-type-bolshii	Type the full adjective that means bigger.	бо́льший	prov-ex-u18-comparison-0-ru	src-wikipedia-russian-grammar-1369617627	grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+u18-i-type-luchshii	Type the full adjective that means better.	лу́чший	prov-ex-u18-comparison-1-ru	src-wikipedia-russian-grammar-1369617627	grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+u18-i-type-krasnee	Type the one-word comparative that means redder.	красне́е	prov-ex-u18-comparison-2-ru	src-wikipedia-russian-grammar-1369617627	grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+u18-i-type-naibolshii	Type the full adjective that means the biggest.	наибо́льший	prov-ex-u18-comparison-3-ru	src-wikipedia-russian-grammar-1369617627	grammar:forms are usual only for qualitative adjectives and adverbs. Comparative and sup
+u18-i-type-bolee	Type the word that means more in a two-word comparison.	бо́лее	prov-t17c-u18-g303-8a953452	src-wikipedia-russian-grammar-1369617627	grammar:An alternative is to add an adverb to the positive form of the adjective. The ad
+u18-i-type-menee	Type the word that means less in a two-word comparison.	ме́нее	prov-t17c-u18-g303-6310b2a1	src-wikipedia-russian-grammar-1369617627	grammar:An alternative is to add an adverb to the positive form of the adjective. The ad
+u18-i-type-naimenee	Type the word that means least in a two-word comparison.	наиме́нее	prov-t17c-u18-g303-6ccd2902	src-wikipedia-russian-grammar-1369617627	grammar:An alternative is to add an adverb to the positive form of the adjective. The ad
+u18-i-type-bolee-dobryi	Type the two-word comparison that means kinder.	бо́лее до́брый	prov-t17c-u18-g303-cab0b993	src-wikipedia-russian-grammar-1369617627	grammar:An alternative is to add an adverb to the positive form of the adjective. The ad
+u18-i-type-apple	Type the Russian question for: Which apple is mine?	Которое яблоко моё?	prov-ex-u18-relative-0-ru	src-wikibooks-russian-cc-by-sa	interrogative:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который 
+u18-i-type-book	Type the Russian question for: Which book do you want?	Которую книгу вы хотите?	prov-ex-u18-relative-1-ru	src-wikibooks-russian-cc-by-sa	interrogative:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который 
+u18-i-type-woman	Type the Russian phrase for: The woman (who) I'm friends with	Же́нщина, с кото́рой я дружу́	prov-ex-u18-relative-2-ru	src-wikibooks-russian-cc-by-sa	interrogative:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который 
+u18-i-type-man	Type the Russian phrase for: The man who changed the world	Человек, который изменил мир	prov-ex-u18-relative-3-ru	src-wikibooks-russian-cc-by-sa	interrogative:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который 
+u18-i-type-kotoroe	Type the missing word of the question for: Which apple is mine?	Которое	prov-t17c-u18-q168-d3ac833b	src-wikibooks-russian-cc-by-sa	interrogative::Which apple is mine? - '''Которое яблоко моё?'''
+u18-i-type-kotoruyu	Type the missing word of the question for: Which book do you want?	Которую	prov-t17c-u18-q170-a0ac9036	src-wikibooks-russian-cc-by-sa	interrogative::Which book do you want? - '''Которую книгу вы хотите?'''
+u18-i-type-kotoroi	Type the missing word of the phrase for: The woman (who) I'm friends with	кото́рой	prov-t17c-u18-q172-6267207e	src-wikibooks-russian-cc-by-sa	interrogative::The woman (who) I'm friends with - '''Же́нщина, с кото́рой я дружу́'''
+u18-i-type-kotoryi	Type the missing word of the phrase for: The man who changed the world	который	prov-t17c-u18-q173-574a1c6a	src-wikibooks-russian-cc-by-sa	interrogative::The man who changed the world - '''Человек, который изменил мир'''
+u19-g-type-skazat	Practice: type the perfective verb paired with the shown imperfective in this unit.	сказать	prov-t17d-u19-va26-b876f3f4	src-wikibooks-russian-cc-by-sa	aspect:: '''говорить''' (impf.) and '''сказать''' (pf.)
+u19-g-type-dolzhen	Practice: type the phrase that means I have to, for a masculine subject.	я должен	prov-ex-u19-obligation-0-ru	src-wikibooks-russian-cc-by-sa	lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+u19-i-type-otgovorit	Type the perfective verb that means to dissuade.	отговорить	prov-ex-u19-prefix-caution-0-ru	src-wikibooks-russian-cc-by-sa	aspect:Many verbs come in pairs like '''делать/сделать''', with the perfective variant 
+u19-i-type-otgovarivat	Type the imperfective partner of the verb that means to dissuade.	отговаривать	prov-t17d-u19-va25-f9000060	src-wikibooks-russian-cc-by-sa	aspect:However, one has to be careful with prefixes. While the perfective can be formed
+u19-i-type-dogovoritsya	Type the perfective verb that means to agree.	договориться	prov-ex-u19-prefix-caution-1-ru	src-wikibooks-russian-cc-by-sa	aspect:Many verbs come in pairs like '''делать/сделать''', with the perfective variant 
+u19-i-type-napisat	Type the perfective verb that means to write.	написать	prov-ex-u19-prefix-caution-2-ru	src-wikibooks-russian-cc-by-sa	aspect:Many verbs come in pairs like '''делать/сделать''', with the perfective variant 
+u19-i-type-sdelat	Type the perfective verb that means to do.	сделать	prov-ex-u19-prefix-caution-3-ru	src-wikibooks-russian-cc-by-sa	aspect:Many verbs come in pairs like '''делать/сделать''', with the perfective variant 
+u19-i-type-spal-by	Type the conditional a male speaker uses, with the particle after the verb.	я спал бы	prov-ex-u19-conditional-0-ru	src-wikipedia-russian-grammar-1369617627	grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+u19-i-type-spala-by	Type the conditional a female speaker uses, with the particle after the verb.	я спала́ бы	prov-ex-u19-conditional-1-ru	src-wikipedia-russian-grammar-1369617627	grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+u19-i-type-by-pospal	Type the conditional a male speaker uses, with the particle before the verb.	я бы поспа́л	prov-ex-u19-conditional-2-ru	src-wikipedia-russian-grammar-1369617627	grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+u19-i-type-by-pospala	Type the conditional a female speaker uses, with the particle before the verb.	я бы поспала́	prov-ex-u19-conditional-3-ru	src-wikipedia-russian-grammar-1369617627	grammar:The [[conditional mood]] in Russian is formed by adding the particle бы after th
+u19-i-type-dolzhna	Type the obligation form used with a feminine subject.	должна	prov-ex-u19-obligation-1-ru	src-wikibooks-russian-cc-by-sa	lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+u19-i-type-dolzhno	Type the obligation form used with a neuter subject.	должно	prov-ex-u19-obligation-2-ru	src-wikibooks-russian-cc-by-sa	lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+u19-i-type-dolzhny	Type the obligation form used with a plural subject.	должны	prov-ex-u19-obligation-3-ru	src-wikibooks-russian-cc-by-sa	lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin

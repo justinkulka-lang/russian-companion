@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "7456909aff0944f3c7a32211c044b3088a9281dc514ae9506017891a3f111c29",
+      "sha256": "be39eec47da042581bdfa31500cecbb0d1aace7004c48510451c8d40d98600fe",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3511,6 +3511,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "T16c-n1 (owner decisions D36a, D38a, D39a, approved rule changes): an S1 source ID is admitted only at its exact S1 revision on every route (S1IntakeSources.listed), never at a legacy revision; a count feature names its quantity as a whole expression (quantityExpressions) and any other quantity in the prompt is competing, whatever the number; a shipped selection starts and ends on word boundaries within its displayed frozen text (containsWhole, for every caller of displayedInFrozen; a content-audit record's canonical application tuple is read field by field, so a byte-length prefix is a boundary). No Russian is constructed or rendered.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T16c-n2 D39b D41a D41b D41c D41d D42a",
+      "previousRecordedSha256": "7456909aff0944f3c7a32211c044b3088a9281dc514ae9506017891a3f111c29",
+      "sha256": "be39eec47da042581bdfa31500cecbb0d1aace7004c48510451c8d40d98600fe",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T16c-n2 (owner decisions D41a-D41d, approved rule changes): quantity text is normalized to ASCII spaces and hyphens before it is read, every count item is pinned to its exact phrase (COUNT_ITEM_PHRASES), and any other number word, digit, joined token or count noun makes a different or competing quantity; selection edges are judged in context inside the frozen line (contextWordChar); yo and ye stay distinct in foldGoverned; the display check also reads an OpenRussian stress apostrophe as the stress mark and joins inline HTML; the Russian token pattern includes yo; every typed item cites the frozen record its key comes from (keyCitation) and the key must equal the cited text exactly, stress included, except the first letter's case where the prompt asks for a question word (D42a). No Russian is constructed or rendered.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

@@ -71,11 +71,13 @@ internal fun installLabel(unit: V2Unit): String = when (unit.installState) {
     else -> "Not yet installed"
 }
 
+// T16c-n2 (owner decision D37b): readiness is shown as a plain D31b-style label, not workflow wording; the readiness metadata
+// is unchanged. Was "Content complete, review pending", "Review approved" and "Mapping approved".
 internal fun readinessLabel(unit: V2Unit): String = when (unit.readiness) {
     "NOT_PREPARED" -> "Not prepared"
-    "CONTENT_COMPLETE_REVIEW_PENDING" -> "Content complete, review pending"
-    "REVIEW_APPROVED" -> "Review approved"
-    "MAPPING_APPROVED" -> "Mapping approved"
+    "CONTENT_COMPLETE_REVIEW_PENDING" -> "Not yet checked by a qualified reviewer."
+    "REVIEW_APPROVED" -> "Checked by a qualified reviewer."
+    "MAPPING_APPROVED" -> "Checked and matched to your book."
     "INSTALLABLE" -> "Ready to install"
     else -> ""
 }

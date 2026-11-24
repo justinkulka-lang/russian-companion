@@ -65,17 +65,21 @@ def displayed(raw: str) -> str:
 
 
 def _word_char(text: str, i: int) -> bool:
+    """T16c-n2 (owner decision D41b): a character of the frozen text is a word character if it is a letter, a digit or the stress
+    mark, or an apostrophe with a letter (or stressed letter) before it and a letter after it in that text. Mirrors
+    V2Validator.contextWordChar."""
     if i < 0 or i >= len(text):
         return False
     c = text[i]
     if c in "'\u2019":
-        return 0 < i < len(text) - 1 and (text[i - 1].isalnum() or text[i - 1] == AC) and text[i + 1].isalnum()
-    return c.isalnum() or c == AC
+        return 0 < i < len(text) - 1 and (text[i - 1].isalpha() or text[i - 1] == AC) and text[i + 1].isalpha()
+    return c.isalpha() or c.isdigit() or c == AC
 
 
 def contains_whole(text: str, part: str) -> bool:
-    """T16c-n1 (owner decision D39a): part occurs in text starting and ending on word boundaries (letters, digits, the stress
-    mark and a word-internal apostrophe are word characters; a quotation apostrophe is not). Mirrors V2Validator.containsWhole."""
+    """D39a/D41b: part occurs in text and neither of its edges cuts through a word of text: at each edge, the characters of text
+    on the two sides of the cut are not both word characters, judged in context ("'clock" and "o'" from "o'clock" fail;
+    "o'clock" passes; a selection that starts or ends with punctuation cuts no word). Mirrors V2Validator.containsWhole."""
     if not part:
         return False
     start = 0
@@ -83,7 +87,8 @@ def contains_whole(text: str, part: str) -> bool:
         i = text.find(part, start)
         if i < 0:
             return False
-        if not (_word_char(text, i - 1) and _word_char(part, 0)) and not (_word_char(text, i + len(part)) and _word_char(part, len(part) - 1)):
+        end = i + len(part)
+        if not (_word_char(text, i - 1) and _word_char(text, i)) and not (_word_char(text, end - 1) and _word_char(text, end)):
             return True
         start = i + 1
 

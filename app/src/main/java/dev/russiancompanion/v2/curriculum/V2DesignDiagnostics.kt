@@ -110,8 +110,21 @@ internal object V2DesignDiagnostics {
             "\\bthe question here is\\b|\\brequested by (?:this|the) question\\b",
         RegexOption.IGNORE_CASE,
     )
-    /** D36b: "rows for" frames a table; the learner's own binder directions ("make a table ... with rows for ...") are exempt. */
+    /** D36b/D41e: "rows for" frames a table, in every field; only the learner's own table ([ownTable]) is exempt, in binder fields. */
     private val rowsFor = Regex("\\brows? for\\b", RegexOption.IGNORE_CASE)
+    /**
+     * T16c-n2 (owner decision D40c, approved rule change): in a binder-direction field, wording about the learner's own binder
+     * table ("in each row of your table", "the first column of your table") is a direction, not table framing, and is removed
+     * before the framing patterns run. Framing that points back to a source table still fails ("Copy the genitive row into your
+     * binder.").
+     */
+    private val ownTable = Regex(
+        "\\b(?:(?:in|into|on|across|down) )?(?:each|every|the|a|one|that|this|its|first|second|last|next) (?:[a-z-]+ )?(?:rows?|columns?) " +
+            "of your (?:own )?(?:binder )?table\\b|" +
+            // T16c-n2 (owner decision D41e): the learner's own table being made ("make a table of ... with rows for ...").
+            "\\b(?:make|draw|set up|build|start) (?:a|your own|a new) (?:binder )?table\\b[^.;]*?\\bwith (?:rows?|columns?) (?:for|headed)\\b",
+        RegexOption.IGNORE_CASE,
+    )
     private val tableCell = Regex("\\|{1,2}[ \\t]*\\p{L}")
     // T15g (owner decision D18d, approved rule change): only the notice or direction sentence itself is exempt, identified
     // by owner (the ref-*-attribution licence notices) or by exact template (the D8 self-attestation sentence). A sentence
@@ -126,8 +139,11 @@ internal object V2DesignDiagnostics {
     )
     private fun lintedSentences(value: String): List<String> = value.split(sentenceBreak).filter { it.trim() !in NOTICE_TEMPLATES }
     private fun widenedNarration(value: String, binder: Boolean = false): Boolean = lintedSentences(value)
+        .map { if (binder) ownTable.replace(it, "") else it }
+        // T16c-n2 (owner decision D41e, approved rule change): in a binder field the only exemption is the learner's own table
+        // (ownTable, removed above); "rows for" is otherwise flagged in every field (was: exempt in every binder field).
         .any { sourceNarration.containsMatchIn(it) || assessmentCommentary.containsMatchIn(it) || workflowAndFraming.containsMatchIn(it) ||
-            (!binder && rowsFor.containsMatchIn(it)) }
+            rowsFor.containsMatchIn(it) }
     private fun tableCellMarkup(value: String): Boolean = lintedSentences(value).any { tableCell.containsMatchIn(it) }
     /**
      * T16d (owner decision D32b): the learner-voice rules applied to one hardcoded UI string (governance terms, provenance and
@@ -252,6 +268,11 @@ internal object V2DesignDiagnostics {
             inspectLearnerText(unit.id, unit.number, "topicSummary", unit.topicSummary)
             // T16-n1 (owner decision D28c): the mapping note is rendered (V2Screens), so the learner-text lint reads it too.
             inspectLearnerText(unit.id, unit.number, "mappingNote", unit.mappingNote)
+            // T16c-n2 (owner decision D40c): the binder task is rendered learner text, linted as a binder-direction field.
+            unit.binderTask?.let { task ->
+                inspectLearnerText(task.id, unit.number, "binderTask.prompt", task.prompt, binder = true)
+                inspectLearnerText(task.id, unit.number, "binderTask.modelAnswer", task.modelAnswer, binder = true)
+            }
             unit.objectives.forEach { inspectLearnerText(it.id, unit.number, "title", it.title) }
             unit.sessions.forEach { inspectLearnerText(it.id, unit.number, "title", it.title) }
         }

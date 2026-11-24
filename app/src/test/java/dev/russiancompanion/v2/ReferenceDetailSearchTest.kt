@@ -31,7 +31,10 @@ class ReferenceDetailSearchTest {
 
     @Test fun searchingDetailsDoesNotExposeUnreachedNoticesOrReclassifyThem() {
         val p = pack()
-        val query = "completion over a period"
+        // T16c-n2 expectation change (owner decision D38c): query "completion over a period" -> "Unit 23 time expressions".
+        // The old phrase was assessment-scope narration and moved from ref-u2125-attribution to the internal dispositions file
+        // (audit/T16c-n2-attribution-dispositions.csv, row 7); the new phrase is attribution text that stays in the same notice.
+        val query = "Unit 23 time expressions"
         assertTrue(searchReferences(visibleReferences(p, referenceSearchLearner(1)), query).isEmpty())
         val found = searchReferences(visibleReferences(p, referenceSearchLearner(21)), query)
         assertTrue(found.any { it.id == "ref-u2125-attribution" })

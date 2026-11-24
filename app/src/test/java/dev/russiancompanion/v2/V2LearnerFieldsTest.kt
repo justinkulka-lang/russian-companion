@@ -245,7 +245,9 @@ class V2LearnerFieldsTest {
         // 3. The shared set is the rendered set plus the declared, scanned fields no screen renders; nothing else.
         // T16-n2 (D31b): reference.reviewStatus is shown only through its plain label, so it moves from RENDERED to the
         // declared, scanned set (was setOf("unit.topicSummary", "item.answer")).
-        assertEquals(setOf("unit.topicSummary", "item.answer", "reference.reviewStatus"), V2LearnerFields.DECLARED_NOT_RENDERED)
+        // T16c-n2 (D37a/D37b): step.kind is no longer rendered raw (stepStatus shows a plain label); it stays scanned as a declared
+        // field (was: the first three only, with step.kind in RENDERED).
+        assertEquals(setOf("unit.topicSummary", "item.answer", "reference.reviewStatus", "step.kind"), V2LearnerFields.DECLARED_NOT_RENDERED)
         assertTrue(V2LearnerFields.DECLARED_NOT_RENDERED.none { it in renderedByDataflow() })
         // Every kind the shared set emits for the current pack is declared; step.unavailableReason has no value in the
         // current pack, and the regression below shows it is scanned. T15i (WC011): the Units 6-10 binder tasks give

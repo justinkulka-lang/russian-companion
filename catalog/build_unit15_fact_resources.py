@@ -71,7 +71,7 @@ for _n in (1636, 1639, 1641):
 
 def unstressed(text: str) -> str:
     text = re.sub(r"\[\[[^\[\]|]*\|([^\[\]|]*)\]\]", r"\1", text).replace("'''", "").replace("''", "")
-    return unicodedata.normalize("NFC", unicodedata.normalize("NFD", text).replace("́", "")).replace("ё", "е").lower()
+    return unicodedata.normalize("NFC", unicodedata.normalize("NFD", text).replace("́", "")).lower()  # T16c-n2 (D41c): yo and ye stay distinct
 
 
 def main() -> None:

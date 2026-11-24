@@ -24,6 +24,32 @@ class ReviewCopyTest {
     private val root = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
     private fun pack() = V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText())
 
+    /**
+     * T16c-n2 (owner decision D37c): an introduction is a plain instruction. The real assignment size depends on the learner's
+     * history (A2-28 records 8, 8, 8, 8, 2 and 1), so an introduction names no count: no digit outside a unit reference, and no
+     * number word ("both", "three", "all eight"). It carries no assessment commentary either.
+     */
+    @Test fun introductionsNameNoCountAndNoAssessmentCommentary() {
+        val p = pack()
+        val unitReference = Regex("\\bUnits? \\d+(?:(?:,| and| or) \\d+)*\\b")
+        val numberWord = Regex("\\b(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|" +
+            "sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|hundred|both|single|dozen)\\b", RegexOption.IGNORE_CASE)
+        val commentary = Regex("\\b(?:does(?: not|n't) (?:complete|establish|demonstrate)|do(?: not|n't) establish|restores?|pools?|" +
+            "fresh review check|counts? toward)\\b", RegexOption.IGNORE_CASE)
+        p.reviewCopy.introductions.forEach { (unit, text) ->
+            val rest = unitReference.replace(text, "Unit")
+            assertFalse("$unit: $text", rest.any(Char::isDigit))
+            assertFalse("$unit: $text", numberWord.containsMatchIn(rest))
+            assertFalse("$unit: $text", commentary.containsMatchIn(text))
+            assertTrue("$unit: $text", V2DesignDiagnostics.learnerVoiceRules(text).isEmpty())
+        }
+        // Regressions: the stale counts and the intro 14 commentary D37c names are refused.
+        for (stale in listOf("Repairs restore all eight plural cards and fourteen examples.", "Complete one assigned answer from each of the three pools.",
+                "Complete both review checks before continuing.", "Guided practice does not complete any fresh review check.")) {
+            assertTrue(stale, numberWord.containsMatchIn(stale) || commentary.containsMatchIn(stale))
+        }
+    }
+
     @Test fun catalogAndPackCopyAgreeAndCurrentCopyIsBoundIntoTheReviewDigest() {
         val p = pack()
         val data = Json.decodeFromString(V2ReviewCopy.serializer(), File(root, "catalog/review-copy.json").readText())

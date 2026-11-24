@@ -146,7 +146,10 @@ class TypedResponseTest {
         assertFalse(V2Validator.validate(p.copy(items = p.items + sourced)).errors.any { it.contains("accepted answer has no admitted source binding") })
         val unbound = sourced.copy(sourceId = "src-app-english-v2")
         assertTrue(V2Validator.validate(p.copy(items = p.items + unbound)).errors.any { it.contains("accepted answer has no admitted source binding") })
-        val noTypedErrors = V2Validator.validate(p.copy(items = p.items + valid)).errors.filter { it.contains("Typed item") }
-        assertEquals(emptyList<String>(), noTypedErrors)
+        // T16c-n2 expectation change (owner decision D39b): old: the synthetic English fixture produced no "Typed item" errors.
+        // New: every typed item must cite the frozen cell or line its key comes from, and this synthetic key has no frozen
+        // source, so the only typed error is the missing citation; every other typed check still passes.
+        val typedErrors = V2Validator.validate(p.copy(items = p.items + valid)).errors.filter { it.contains("Typed item") }
+        assertEquals(listOf("Typed item typed-fixture cites no frozen cell or line for its key"), typedErrors)
     }
 }

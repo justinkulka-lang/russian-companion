@@ -65,7 +65,7 @@ def unstressed(text: str) -> str:
     # HTML lines (Pressbooks, ReadyRussian) are compared by their visible text: tags removed, entities decoded.
     text = re.sub("<[^>]+>", "", re.sub("(?i)<br\\s*/?>", "\n", text)).replace("&nbsp;", "\u00a0").replace("&amp;", "&")
     text = re.sub(r"\[\[[^\[\]|]*\|([^\[\]|]*)\]\]", r"\1", text).replace("'''", "").replace("''", "")
-    return unicodedata.normalize("NFC", unicodedata.normalize("NFD", text).replace("́", "")).replace("ё", "е").lower()
+    return unicodedata.normalize("NFC", unicodedata.normalize("NFD", text).replace("́", "")).lower()  # T16c-n2 (D41c): yo and ye stay distinct
 
 
 def main() -> None:

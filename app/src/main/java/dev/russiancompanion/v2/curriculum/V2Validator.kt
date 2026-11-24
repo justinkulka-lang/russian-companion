@@ -2734,7 +2734,8 @@ internal object V2Validator {
     private val LEMMA_RECORD = Regex("^(nouns|adjectives|others|verbs)\\.csv:(.+)#([A-Za-z0-9_]+)$")
     private val OPENRUSSIAN_SOURCE = "src-openrussian-50e210c4"
     private val WIKIBOOKS_SOURCE = "src-wikibooks-russian-cc-by-sa"
-    private val TOKEN = Regex("[0-9]+|[a-z\\u0430-\\u044f]+")
+    // T16c-n2 (owner decision D41c): yo is a letter of its own (it was only reached through the yo-to-ye fold).
+    private val TOKEN = Regex("[0-9]+|[a-z\\x{0430}-\\x{044f}\\x{0451}]+")
     private val LATIN_LOOKALIKE = mapOf(
         "e" to "\u0435",
         "y" to "\u0443",
@@ -2835,8 +2836,10 @@ internal object V2Validator {
         return null
     }
 
+    // T16c-n2 (owner decision D41c, approved rule change): yo (U+0451) and ye (U+0435) stay distinct; only the stress mark and
+    // letter case fold (was: yo and capital yo also folded to ye).
     private fun foldGoverned(text: String): String =
-        text.replace("\u0301", "").replace("\u0451", "\u0435").replace("\u0401", "\u0435").lowercase()
+        text.replace("\u0301", "").lowercase()
 
     private fun governedTokens(text: String): List<String> =
         TOKEN.findAll(foldGoverned(text)).map { it.value }.toList()
@@ -2873,7 +2876,7 @@ internal object V2Validator {
     // displayed frozen text, for every caller ("port" cut from "report" is refused). Letters, digits and the stress mark are word
     // characters, and so is an apostrophe inside a word (o'clock, OpenRussian stress apostrophes); an apostrophe used as a
     // quotation mark around a gloss ('my table') is not (was: any substring).
-    private fun displayedInFrozen(record: V2ProvenanceRecord): Boolean {
+    internal fun displayedInFrozen(record: V2ProvenanceRecord): Boolean {
         val original = record.originalSourceText
         val shipped = record.shippedText
         if (record.transformation == "wiktionary template selection") {
@@ -2889,8 +2892,16 @@ internal object V2Validator {
         val folded = foldGoverned(shipped)
         if (folded.isNotEmpty() && folded == foldGoverned(original.replace("'", ""))) return true
         if (folded.isNotEmpty() && wholeInSegments(original, folded) { foldGoverned(formatWikibooksEmphasis(it)) }) return true
+        // T16c-n2 (owner decision D41d): the display normalization of every frozen line also reads an OpenRussian stress apostrophe
+        // after a Cyrillic letter as the stress mark, and joins inline HTML into its visible text.
+        if (folded.isNotEmpty() && wholeInSegments(original, folded) { foldGoverned(openRussianStress(it)) }) return true
+        if (folded.isNotEmpty() && '<' in original &&
+            wholeInSegments(original, folded) { foldGoverned(BatchARemainingSources.htmlVisible(it)) }) return true
         return folded.isNotEmpty() && wholeInSegments(original, folded) { foldGoverned(unfoldWikiLabels(it)) }
     }
+
+    private val openRussianApostrophe = Regex("(?<=[\\x{0400}-\\x{04FF}])'(?!')")
+    private fun openRussianStress(text: String): String = openRussianApostrophe.replace(text, "\u0301")
 
     /**
      * D39a: a content-audit record's text ends with its canonical application tuple ("tuple-v1:", then UTF-8 byte-length-prefixed
@@ -2931,26 +2942,36 @@ internal object V2Validator {
         return fields
     }
 
-    private fun selectionWordChar(text: String, index: Int): Boolean {
+    /**
+     * T16c-n2 (owner decision D41b, approved rule change): a character of the frozen text is a word character if it is a letter, a
+     * digit or the stress mark, or an apostrophe with a letter (or a stressed letter) before it and a letter after it in that
+     * text. Selection edges are judged in context, inside the frozen text, never on the detached selection.
+     */
+    private fun contextWordChar(text: String, index: Int): Boolean {
         if (index < 0 || index >= text.length) return false
         val c = text[index]
         if (c == '\'' || c == '\u2019') {
-            return index > 0 && index + 1 < text.length && (text[index - 1].isLetterOrDigit() || text[index - 1] == '\u0301') &&
-                text[index + 1].isLetterOrDigit()
+            return index > 0 && index + 1 < text.length && (text[index - 1].isLetter() || text[index - 1] == '\u0301') &&
+                text[index + 1].isLetter()
         }
         return c.isLetterOrDigit() || c == '\u0301'
     }
 
-    /** D39a: [part] occurs in [text] starting and ending on word boundaries. */
+    /**
+     * D39a/D41b: [part] occurs in [text] and neither of its edges cuts through a word of [text]: at each edge, the characters of
+     * [text] on the two sides of the cut are not both word characters, judged in context ("'clock" and "o'" from "o'clock" are
+     * refused; the whole "o'clock" passes; a selection that starts or ends with punctuation cuts no word).
+     */
     internal fun containsWhole(text: String, part: String): Boolean {
         if (part.isEmpty()) return false
         var from = 0
         while (true) {
             val i = text.indexOf(part, from)
             if (i < 0) return false
-            val startOk = !(selectionWordChar(text, i - 1) && selectionWordChar(part, 0))
-            val endOk = !(selectionWordChar(text, i + part.length) && selectionWordChar(part, part.length - 1))
-            if (startOk && endOk) return true
+            val end = i + part.length
+            val startCut = contextWordChar(text, i - 1) && contextWordChar(text, i)
+            val endCut = contextWordChar(text, end - 1) && contextWordChar(text, end)
+            if (!startCut && !endCut) return true
             from = i + 1
         }
     }
@@ -3868,13 +3889,86 @@ internal object V2Validator {
     private val COUNT_FEATURES = COUNT_FAMILIES.flatten().toSet()
     private const val NUMBER_WORD = "(?:\\d+|zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|" +
         "fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|million|" +
-        "and|a|an)"
+        "billion|trillion|and|a|an)"
     private val QUANTITY = Regex("(?i)(?<![\\w-])($NUMBER_WORD(?:[ -]+$NUMBER_WORD)*)\\s+(hours?|years?|minutes?)(?![\\w-])")
 
     /** T16c-n1 (D38a): every complete quantity expression of hours, years or minutes, with its whole (compound) numeral. */
-    internal fun quantityExpressions(text: String): List<String> = QUANTITY.findAll(text).map { match ->
+    internal fun quantityExpressions(text: String): List<String> = QUANTITY.findAll(normalizeQuantityText(text)).map { match ->
         match.groupValues[1].lowercase().replace(Regex(" +"), " ") + " " + match.groupValues[2].lowercase()
     }.toList()
+
+    /**
+     * T16c-n2 (owner decision D41a, approved rule change): every Unicode space and line break becomes an ASCII space and every
+     * dash or hyphen (soft hyphen included) an ASCII hyphen before a quantity is read.
+     */
+    internal fun normalizeQuantityText(text: String): String = buildString {
+        text.forEach { c ->
+            val type = Character.getType(c)
+            append(when {
+                c == '\n' || c == '\r' || c == '\t' || c == '\u000B' || c == '\u000C' || c == '\u0085' || c == '\u2028' || c == '\u2029' ||
+                    type == Character.SPACE_SEPARATOR.toInt() -> ' '
+                type == Character.DASH_PUNCTUATION.toInt() || c == '\u00AD' || c == '\u2212' -> '-'
+                else -> c
+            })
+        }
+    }
+
+    /** D41a: the exact expected quantity phrase of every count item. */
+    internal val COUNT_ITEM_PHRASES = mapOf(
+        "u17-g-hours-0" to "one hour", "u17-i-hours-1" to "two hours", "u17-i-hours-2" to "five hours",
+        "u17-g-years-0" to "one year", "u17-i-years-1" to "two years", "u17-i-years-2" to "five years",
+        "u17-g-minutes-0" to "one minute", "u17-i-minutes-1" to "two minutes", "u17-i-minutes-2" to "five minutes",
+    )
+    private val NUMBERISH = Regex("(?i)^(?:\\d.*|zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|" +
+        "fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|million|" +
+        "[a-z]*illion|dozen|score|and)$")
+    private val COUNT_NOUN = Regex("(?i)(?<![\\p{L}\\p{N}])(?:hours?|years?|minutes?)(?![\\p{L}\\p{N}])")
+
+    /**
+     * D41a, strict by construction: the prompt names exactly the pinned phrase, preceded by the start of the text or an ASCII
+     * space and not by a number word, digit or "and", and followed by the end of a word. Any other number token, digit or count
+     * noun anywhere in the prompt makes it a different or competing quantity.
+     */
+    internal fun namesExactQuantity(text: String, phrase: String): Boolean {
+        val normalized = normalizeQuantityText(text)
+        val lower = normalized.lowercase()
+        var at = lower.indexOf(phrase)
+        var found = 0
+        var ok = false
+        while (at >= 0) {
+            found++
+            val beforeOk = at == 0 || lower[at - 1] == ' '
+            val end = at + phrase.length
+            val afterOk = end == lower.length || !(lower[end].isLetterOrDigit() || lower[end] == '-' || lower[end] == '\'' || lower[end] == '\u2019')
+            val previous = lower.substring(0, at).trimEnd(' ').split(' ', '-').lastOrNull().orEmpty()
+            ok = beforeOk && afterOk && !NUMBERISH.matches(previous)
+            at = lower.indexOf(phrase, at + 1)
+        }
+        return found == 1 && ok
+    }
+
+    /** D41a: the rationale names the pinned phrase at least once with a clean boundary (it may also name the phrase again). */
+    private fun namesExactQuantityIn(text: String, phrase: String): Boolean {
+        val lower = normalizeQuantityText(text).lowercase()
+        var at = lower.indexOf(phrase)
+        while (at >= 0) {
+            val end = at + phrase.length
+            val previous = lower.substring(0, at).trimEnd(' ').split(' ', '-').lastOrNull().orEmpty()
+            if ((at == 0 || lower[at - 1] == ' ') && (end == lower.length || !(lower[end].isLetterOrDigit() || lower[end] == '-')) &&
+                !NUMBERISH.matches(previous)) return true
+            at = lower.indexOf(phrase, at + 1)
+        }
+        return false
+    }
+
+    /** D41a: the prompt holds no number token, digit or count noun beyond the pinned phrase's own. */
+    internal fun namesCompetingQuantity(text: String, phrase: String): Boolean {
+        val lower = normalizeQuantityText(text).lowercase()
+        val tokens = lower.split(Regex("[^\\p{L}\\p{N}]+")).filter { it.isNotEmpty() }
+        val numberTokens = tokens.count { NUMBERISH.matches(it) && it != "and" } + tokens.count { it == "and" }
+        val ownNumbers = phrase.split(' ').count { NUMBERISH.matches(it) }
+        return numberTokens != ownNumbers || COUNT_NOUN.findAll(lower).count() != 1 || lower.any(Char::isDigit) && !phrase.any(Char::isDigit)
+    }
 
     private val RESPONSE_KINDS = setOf(
         "RUSSIAN_TOKEN",
@@ -4598,14 +4692,19 @@ internal object V2Validator {
             // T16c-n1 (owner decision D38a, approved rule change): a count feature names its quantity as a whole expression, never
             // as a substring of a longer numeral ("two hours" inside "twenty-two hours"); was: plain substring matching.
             val count = feature in COUNT_FEATURES
-            val named = phrase != null && (if (count) phrase in quantityExpressions(item.prompt) else item.prompt.contains(phrase))
+            // T16c-n2 (owner decision D41a, approved rule change): a count item has a pinned phrase, and the prompt must name exactly
+            // that quantity (namesExactQuantity); was: the phrase as one of the parsed quantity expressions.
+            val pinned = COUNT_ITEM_PHRASES[item.id]
+            if (count && (pinned == null || pinned != phrase)) errors += "Item ${item.id} count phrase is not pinned"
+            val named = phrase != null && (if (count) pinned == phrase && namesExactQuantity(item.prompt, phrase) else item.prompt.contains(phrase))
             if (feature.isBlank() || phrase == null || (!named && !prepositionMeaningTarget && !prefixMeaningTarget)) {
                 errors += "Item ${item.id} has no explicit target"
             }
             if (item.objectiveId == "obj-u16-inst-prep" && item.prompt.contains(item.answer, ignoreCase = true)) {
                 errors += "Item ${item.id} prompt discloses the preposition meaning"
             }
-            val tied = phrase != null && (if (count) phrase in quantityExpressions(assessment.whyAnswerDemonstratesObjective)
+            val tied = phrase != null && (if (count) phrase in quantityExpressions(assessment.whyAnswerDemonstratesObjective) &&
+                    namesExactQuantityIn(assessment.whyAnswerDemonstratesObjective, phrase)
                 else assessment.whyAnswerDemonstratesObjective.contains(phrase))
             if (phrase != null && !tied) {
                 errors += "Item ${item.id} answer rationale is not tied to the target"
@@ -4613,7 +4712,7 @@ internal object V2Validator {
             // T17b (D1): a count question that also names a competing count asks for the wrong count. T16c-n1 (D38a): any quantity
             // in the prompt other than the key's own is competing, whatever the number (was: only the one/two/five counts of the
             // same unit).
-            if (count && phrase != null && quantityExpressions(item.prompt).any { it != phrase }) {
+            if (count && phrase != null && (quantityExpressions(item.prompt).any { it != phrase } || namesCompetingQuantity(item.prompt, phrase))) {
                 errors += "Item ${item.id} prompt names a competing count"
             }
         }
@@ -4903,6 +5002,7 @@ internal object V2Validator {
         if (item.containsGeneratedRussian) errors += "Item ${item.id} marks generated Russian"
         if (item.language != "en") errors += "Item ${item.id} is not independently authored English"
         errors += typedItemDefects(item)
+        if (item.isTypedResponse()) errors += typedKeyCitationErrors(pack, item)
         item.typedAnswerKey?.acceptedAnswers?.forEach { answer ->
             if (hasCyrillic(answer)) {
                 val sourceBound = pack.provenanceRecords.any { record ->
@@ -5642,6 +5742,42 @@ internal object V2Validator {
      * Wikibooks span, with a verified source hash. Content-audit research synthesis, coverage records and original app
      * text are never frozen-source provenance (owner decision 11/14/2026, T15a-n1).
      */
+    /** D42a: the prompts that ask for the word as it starts a question; only there may the key's first letter differ in case. */
+    internal val FIRST_LETTER_CASE_PROMPTS = setOf("Type the question word that has this meaning.")
+
+    /**
+     * T16c-n2 (owner decisions D39b, D40a, D42a, approved rule change): a typed item cites, in keyCitation, the frozen-source
+     * record its key comes from. That record ships the key, and the key occurs as a whole word with its exact stress in the
+     * record's frozen line under the display views (raw line, OpenRussian stress apostrophe as the stress mark, Wikibooks bold
+     * stress, wiki labels unfolded, inline HTML joined, Wiktionary templates unfolded); stress and case are not folded, except
+     * the first letter's case where the prompt asks for the word as it starts a question (D42a).
+     */
+    internal fun typedKeyCitationErrors(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
+        val id = item.keyCitation ?: return listOf("Typed item ${item.id} cites no frozen cell or line for its key")
+        val record = pack.provenanceRecords.singleOrNull { it.itemId == id }
+            ?: return listOf("Typed item ${item.id} key citation $id is not one provenance record")
+        if (!isFrozenSourceRecord(pack, record)) return listOf("Typed item ${item.id} key citation $id is not a frozen source record")
+        if (record.shippedText != item.answer || !keyDisplayedExactly(record, item)) {
+            return listOf("Typed item ${item.id} key does not equal its cited frozen text exactly")
+        }
+        return emptyList()
+    }
+
+    private fun keyDisplayedExactly(record: V2ProvenanceRecord, item: V2CheckItem): Boolean {
+        val key = item.answer
+        if (key.isEmpty()) return false
+        val keys = if (item.prompt in FIRST_LETTER_CASE_PROMPTS) {
+            setOf(key, key.substring(0, 1).lowercase() + key.substring(1), key.substring(0, 1).uppercase() + key.substring(1))
+        } else setOf(key)
+        val original = record.originalSourceText
+        val views = buildList {
+            add(original); add(openRussianStress(original)); add(formatWikibooksEmphasis(original)); add(unfoldWikiLabels(original))
+            if ('<' in original) add(BatchARemainingSources.htmlVisible(original))
+            if (record.transformation == "wiktionary template selection") add(BatchARemainingSources.unfoldWiktionary(original))
+        }
+        return keys.any { k -> views.any { containsWhole(it, k) } }
+    }
+
     internal fun isFrozenSourceRecord(pack: V2CurriculumPack, record: V2ProvenanceRecord): Boolean =
         record.sourceId != ContentAuditSources.SOURCE_ID &&
             record.licenseId != ContentAuditSources.LICENSE &&

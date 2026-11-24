@@ -95,14 +95,15 @@ internal fun unitAssignmentChecklist(pack: V2CurriculumPack, unit: V2Unit, learn
         val checked = learner.binderSelfChecks.any { it.unitNumber == unit.number && binderSelfCheckCurrent(pack, it) }
         entries += V2AssignmentEntry("binder-task-${binderTask.id}", V2AssignmentKind.BINDER_TASK, "Binder task: ${binderTask.prompt}",
             if (checked) V2AssignmentStatus.DONE else V2AssignmentStatus.TODO,
-            "Self-check only; not shown as demonstrated ability.")
+            // T16c-n2 (owner decision D37a): plain instruction (was "Self-check only; not shown as demonstrated ability.").
+            "Check this yourself against the model answer.")
     } else if (binder.isEmpty()) {
         entries += V2AssignmentEntry("binder", V2AssignmentKind.BINDER_TASK, "Binder task",
             V2AssignmentStatus.NOT_ASSIGNED, "No binder task is assigned for this unit yet.")
     } else binder.forEach { step ->
         entries += V2AssignmentEntry("binder-${step.id}", V2AssignmentKind.BINDER_TASK, "Binder task: ${step.title}",
             if (completedStepCounts(pack, learner, step.id)) V2AssignmentStatus.DONE else V2AssignmentStatus.TODO,
-            "Self-check only; not shown as demonstrated ability.")
+            "Check this yourself.") // T16c-n2 (D37a): was "Self-check only; not shown as demonstrated ability."
     }
     if (cumulativeReviewPolicy(unit.number) != null) {
         entries += V2AssignmentEntry("review-due", V2AssignmentKind.REVIEW_DUE, "Review due: cumulative review",

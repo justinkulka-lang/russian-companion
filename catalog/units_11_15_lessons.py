@@ -12,7 +12,7 @@ from units_6_10_lessons import _check, _other
 
 O = "src-openrussian-50e210c4"
 W = "src-wikibooks-russian-cc-by-sa"
-_TOKEN = re.compile(r"[0-9]+|[a-zа-я]+")
+_TOKEN = re.compile(r"[0-9]+|[a-zа-яё]+")  # T16c-n2 (D41c): yo is a letter of its own
 _CLAUSE_START = {
     "он", "она", "оно", "они", "я", "ты", "вы", "мы",
     "ему", "ей", "им", "мне", "тебе", "вам", "нам", "когда",
@@ -28,7 +28,7 @@ def _field(record, name):
 
 
 def _fold_tokens(text: str) -> list[str]:
-    folded = text.replace("\u0301", "").replace("ё", "е").replace("Ё", "е").lower()
+    folded = text.replace("\u0301", "").lower()  # T16c-n2 (D41c): yo and ye stay distinct, as in V2Validator.foldGoverned
     return _TOKEN.findall(folded)
 
 

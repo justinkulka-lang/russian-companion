@@ -36,7 +36,6 @@ internal object V2LearnerFields {
         "step.companionDirection" to ("V2Screens.kt" to "step.companionDirection"),
         "step.unavailableReason" to ("V2Screens.kt" to "step.unavailableReason"),
         "step.dominantAction" to ("V2Screens.kt" to "step.dominantAction"),
-        "step.kind" to ("V2Screens.kt" to "step.kind"),
         "item.prompt" to ("V2PracticeFlows.kt" to "item.prompt"),
         "item.promptLetter" to ("V2Screens.kt" to "item.promptLetter"),
         "item.feedback" to ("V2CumulativeReviewScreen.kt" to "item.feedback"),
@@ -75,7 +74,9 @@ internal object V2LearnerFields {
     // options or as the typed accepted answer), so it is declared and scanned, not rendered.
     // T16-n2 (owner decision D31b): the raw reference.reviewStatus value is no longer rendered; the UI shows one plain label
     // for it (V2ReviewStatusLabels). The field stays scanned here (was RENDERED via V2Screens.kt entry.reviewStatus).
-    val DECLARED_NOT_RENDERED: Set<String> = setOf("unit.topicSummary", "item.answer", "reference.reviewStatus")
+    // T16c-n2 (owner decisions D37a/D37b): the step status line shows a plain label for the step kind (stepStatus), not the raw
+    // value, so step.kind moves from RENDERED to declared-but-scanned (it is still scanned).
+    val DECLARED_NOT_RENDERED: Set<String> = setOf("unit.topicSummary", "item.answer", "reference.reviewStatus", "step.kind")
 
     val KINDS: Set<String> get() = RENDERED.keys + DECLARED_NOT_RENDERED
 

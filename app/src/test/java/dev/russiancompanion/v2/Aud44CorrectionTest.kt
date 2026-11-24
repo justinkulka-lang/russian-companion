@@ -293,8 +293,12 @@ class Aud44CorrectionTest {
         // relationships "remain admitted" (was: contains("calendar-date relationships remain admitted")).
         assertTrue(unit17.detail.contains("The calendar-date examples come from Wikipedia oldid 1357134172"))
         assertFalse(unit17.detail.contains("admitted"))
-        assertTrue(unit17.detail.contains("bounded recognition"))
-        assertTrue(unit17.detail.contains("Productive clock-time is the ReadyRussian Grammar 20 system"))
+        // T16c-n2 (owner decision D38c): the notice keeps attribution only. The assessment-scope sentences ("The three clock
+        // phrases are bounded recognition." and "Productive clock-time is the ReadyRussian Grammar 20 system ... applied to ...")
+        // moved to audit/T16c-n2-attribution-dispositions.csv (was: assertTrue for both); the ReadyRussian source stays named.
+        assertFalse(unit17.detail.contains("bounded recognition"))
+        assertFalse(unit17.detail.contains("Productive clock-time"))
+        assertTrue(unit17.detail.contains("Clock-time practice uses ReadyRussian Grammar 20 — Telling Time (ReadyRussian.org, CC BY-SA 4.0)."))
         assertFalse(unit17.detail.contains("remains unresolved"))
         assertTrue(pack.sourceCapabilities.any { it.unitNumber == 17 && it.supportedClaim == "calendar-date" })
         assertFalse(unresolved(pack, 17).contains("calendar-date"))

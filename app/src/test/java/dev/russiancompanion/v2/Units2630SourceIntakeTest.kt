@@ -37,7 +37,7 @@ class Units2630SourceIntakeTest {
         // T17a: Unit 16 content (was 7db670f5...).
         16 to "d08a9c1a11557d77c4845780c7b7872f08539037d32e171a32a7c70a8728053a",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 17 was 6b680bda...).
-        17 to "b48912f285cc633282a2e2bc8ba234d072c623d42e3a7e7786d3edbff68bad5e", // T17b: Unit 17 content (was 2b8138570602b6022e7230f7ef786d6f61dfaaa3f6ceba7e6603f90ebae425e3)
+        17 to "9370d8b84c046c5f7890ed002386ee76a19dfcf2ec934edbb829d6db9f56a0a5", // T17b: Unit 17 content (was 2b8138570602b6022e7230f7ef786d6f61dfaaa3f6ceba7e6603f90ebae425e3) // T16c-n2 (was b48912f2...)
         // T17a: the shared ref-u1620-attribution notice (was a82a7ebf...). T17c: Unit 18 content (was 04147a35...).
         18 to "114c6675620c872dd6a5599a00336c5102c59a2d74df1116daad9aa44f9ce431",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
@@ -46,17 +46,17 @@ class Units2630SourceIntakeTest {
         // T17a: the shared ref-u1620-attribution notice (was 380eb131...).
         20 to "cd1ef77d45a91a06be957569e4cc01b157acd476c03bd888b9be6b80262e37c4",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 21 was 566c3430...).
-        21 to "bc4a91db180e105da41941969919dc57b9bdbe75b6ce9e6c5a169129bf351e39",
+        21 to "eba4de8e1d7b88cbc48363693383786863e9451b7fdb1f18fa034f4f75bef87c", // T16c-n2: attribution notice / binder text (was bc4a91db...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 22 was 3af10509...).
-        22 to "b51726d454588f9cb13d2caac4b23122939256f5920f49b648832f1f17425c5d",
+        22 to "542de66ceaccb58b2cdc8018b11b9b6dbfb20e288cc19a6c3ec189deea729b71", // T16c-n2: attribution notice / binder text (was b51726d4...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 23 was 817b1d8f...).
-        23 to "1a29b09bb2e059e2838554269c8264291996c360e1b0bfd894bf992569621d47",
+        23 to "2069bea3179d443c6f1023ad6eb316c0142b67166715ebf07e21276436ec1109", // T16c-n2: attribution notice / binder text (was 1a29b09b...)
         // S1: Unit 24 gains frozen records for the dative and instrumental of nekogo (was 500af59a...).
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 24 was e35b8db2...).
-        24 to "1379741c842a2b64609a4d2df92cb43746f6be6adb35b4477cacf9c765e55718",
+        24 to "d9563eac73a7639cc0112a22eece48c4e5a0a35acf4ea0a68bdf157f3f1845a1", // T16c-n2: attribution notice / binder text (was 1379741c...)
         // T15g A4: prov-d7b-u25-038 re-cited to russian-grammar-1369617627.txt:1169 (was 4bc90e89...).
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 25 was a3d5745c...).
-        25 to "c8a946d6632bd898f39f838dd11066961633d23dc385e444362baa65c9e766e3",
+        25 to "719848deb0d35cae4f53efad7bec15044ff245065f1bf8397284c4d800a05a86", // T16c-n2: attribution notice / binder text (was c8a946d6...)
     )
 
     private val preservedMappingDigests = mapOf(

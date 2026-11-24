@@ -55,6 +55,55 @@ class WidenedLearnerVoiceLintTest {
         assertTrue(binderSignals("Copy the genitive row into your binder.", rule).isNotEmpty())
     }
 
+    /** T16c-n2 (D40c): the same text in Unit 3's binder task prompt, linted as a binder-direction field. */
+    private fun binderTaskSignals(text: String, rule: String) = V2DesignDiagnostics.audit(
+        current.copy(units = current.units.map { u -> if (u.number != 3) u else u.copy(binderTask = u.binderTask!!.copy(prompt = text)) }),
+    ).signals.filter { it.rule == rule && it.unit == 3 && it.field == "binderTask.prompt" }
+
+    /**
+     * T16c-n2 (owner decision D40c, approved rule change): binder tasks are linted. In a binder-direction field, wording about
+     * the learner's own table passes; framing that points back to a source table still fails, in binder fields too.
+     */
+    @Test fun binderTasksAreLintedAndOnlyOwnTableWordingIsExempt() {
+        val rule = "LEARNER_PROVENANCE_NARRATION"
+        val own = listOf(
+            "Write the nominative form from this unit in each row of your table.",
+            "Fill in every column of your table, then compare it with the model answer.",
+            "Write the genitive form in the second row of your binder table.",
+        )
+        for (text in own) {
+            assertTrue(text, binderTaskSignals(text, rule).isEmpty())
+            assertTrue(text, binderSignals(text, rule).isEmpty())
+            // Outside a binder field the same row wording is table framing.
+            if ("each row" in text) assertTrue(text, signals(text, rule).isNotEmpty())
+        }
+        // T16c-n2 (owner decision D41e): Codex's three binder probes. A binder task prompt carrying source framing is caught; own-table
+        // wording in a BINDER step passes; "rows for" pointing back to a source is caught in a BINDER step (it passed before D41e).
+        assertTrue(binderTaskSignals("Copy the genitive row into your binder.", rule).isNotEmpty())
+        assertTrue(binderSignals("Write each form in each row of your table.", rule).isEmpty())
+        assertTrue(binderSignals("Copy the rows for each case from the source.", rule).isNotEmpty())
+        // The learner's own table being made, with rows for its labels, passes in both binder fields.
+        for (text in listOf("In your binder, make a table of the six cases with rows for singular and plural.",
+                "Make a table with rows for each person, then fill it in from your book.")) {
+            assertTrue(text, binderTaskSignals(text, rule).isEmpty())
+            assertTrue(text, binderSignals(text, rule).isEmpty())
+        }
+        // The model answer is linted too.
+        val modelAnswer = V2DesignDiagnostics.audit(current.copy(units = current.units.map { u ->
+            if (u.number != 3) u else u.copy(binderTask = u.binderTask!!.copy(modelAnswer = "Copy the rows for each case from the source."))
+        })).signals.filter { it.rule == rule && it.unit == 3 && it.field == "binderTask.modelAnswer" }
+        assertTrue(modelAnswer.isNotEmpty())
+        for (text in listOf("Copy the genitive row into your binder.", "Read the row for this case, then write it in your binder.",
+                "Copy the requested form from the table.", "Copy the rows for each case from the source.")) {
+            assertTrue(text, binderTaskSignals(text, rule).isNotEmpty())
+            assertTrue(text, binderSignals(text, rule).isNotEmpty())
+        }
+        // The shipped binder tasks have no hits, Unit 7's reworded "of your table" prompt included.
+        val shipped = V2DesignDiagnostics.audit(current).signals.filter { it.field.startsWith("binderTask.") }
+        assertTrue(shipped.joinToString("\n"), shipped.isEmpty())
+        assertTrue(current.units.first { it.number == 7 }.binderTask!!.prompt.contains("in each row of your table"))
+    }
+
     @Test fun eachWidenedCategoryIsCaught() {
         for (text in listOf(
             "The frozen note says two, three, and four take the genitive.",

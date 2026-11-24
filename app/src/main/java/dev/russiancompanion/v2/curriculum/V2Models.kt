@@ -337,6 +337,11 @@ internal data class V2CheckItem(
     val distractorRationales: List<String> = emptyList(),
     val assessment: V2Assessment? = null,
     val typedAnswerKey: V2TypedAnswerKey? = null,
+    /**
+     * T16c-n2 (owner decisions D39b, D42a): for a typed item, the frozen-source provenance record (its cell or line) the key
+     * comes from. V2Validator requires the key to equal that cited text exactly, stress included.
+     */
+    val keyCitation: String? = null,
     val dictationAudioAssetId: String? = null,
     /**
      * The "russian-fact" marker (T15-n0, owner ruling 11/12/2026): sentences of [feedback] or [distractorRationales]

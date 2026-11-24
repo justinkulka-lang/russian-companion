@@ -77,4 +77,35 @@ class Unit17CountMeaningRuleTest {
         assertEquals(emptyList<String>(), targetErrors("u17-i-hours-1", "Which phrase means two hours?", "This phrase means two hours."))
         assertEquals(listOf("twenty-two hours"), V2Validator.quantityExpressions("Which phrase means twenty-two hours?"))
     }
+
+    /**
+     * T16c-n2 (owner decision D41a, approved rule change): spaces, dashes, hyphens and line breaks are normalized to ASCII before
+     * the quantity is read, any number word (scale words included), digit or joined token makes a different quantity, and every
+     * count item's expected phrase is pinned. Codex's five T16c-n1-check probes all fail and no longer count as feature-valid
+     * checks; the shipped prompts pass.
+     */
+    @Test fun codexQuantityProbesFailAndEveryCountItemIsPinned() {
+        val item = pack.item("u17-i-hours-1")!!
+        val why = "This phrase means two hours."
+        for (prompt in listOf("Which phrase means one billion two hours?", "Which phrase means twenty\u2013two hours?",
+                "Which phrase means twenty\u2011two hours?", "Which phrase means twenty\u00a0two hours?", "Which phrase means twenty\ntwo hours?",
+                "Which phrase means 22 hours?", "Which phrase means x-two hours?", "Which phrase means two hours or 3 hours?",
+                "Which phrase means one trillion and two hours?")) {
+            val errors = targetErrors("u17-i-hours-1", prompt, why)
+            assertTrue("$prompt: $errors", errors.any { "no explicit target" in it || "competing count" in it })
+            val probe = item.copy(prompt = prompt)
+            assertFalse(prompt, V2Validator.featureValid(pack.copy(items = pack.items.map { if (it.id == item.id) probe else it }), probe))
+        }
+        assertEquals("twenty-two hours", V2Validator.normalizeQuantityText("twenty\u2011two\u00a0hours"))
+        // Every count item is pinned to its exact phrase, and every shipped count prompt names exactly that phrase.
+        val countItems = pack.items.filter { it.assessment?.testedFeature?.matches(Regex("(ONE|TWO|FIVE)_(HOUR|YEAR|MINUTE)_ROW")) == true }
+        assertEquals(9, countItems.size)
+        assertEquals(countItems.map { it.id }.toSet(), V2Validator.COUNT_ITEM_PHRASES.keys)
+        countItems.forEach { count ->
+            val phrase = V2Validator.COUNT_ITEM_PHRASES.getValue(count.id)
+            assertTrue(count.id, V2Validator.namesExactQuantity(count.prompt, phrase))
+            assertFalse(count.id, V2Validator.namesCompetingQuantity(count.prompt, phrase))
+            assertEquals(count.id, emptyList<String>(), V2Validator.structureValid(pack, count))
+        }
+    }
 }

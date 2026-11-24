@@ -59,7 +59,8 @@ class Units1115ReviewStatusLayoutTest {
         compose.onNodeWithTag("v2-content").performScrollToIndex(11)
         compose.onNodeWithTag("v2-unit-row-11").performScrollTo().performClick()
         compose.onNodeWithTag("v2-unit-heading").assertIsDisplayed()
-        compose.onNodeWithText("Content complete, review pending").assertIsDisplayed()
+        // T16c-n2 (D37b): the readiness label is plain wording (was "Content complete, review pending").
+        compose.onNodeWithText("Not yet checked by a qualified reviewer.").assertIsDisplayed()
         compose.onNodeWithTag("v2-mapping-pending").assertIsDisplayed()
         compose.onNodeWithText("printed pages 122-132", substring = true).assertIsDisplayed()
         // T16-n1 (D28c): the mapping note is plain learner text; the review token stays in mappingStatus metadata and is not
