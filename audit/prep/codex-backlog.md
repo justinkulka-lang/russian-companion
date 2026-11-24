@@ -71,7 +71,7 @@ Commits: 6d6fd938 (D34), 569341cc (Unit 16), 43996033 (pins), then later commits
 - Departures: no third options were added, and the "Choose <answer>" sentences are removed. Confirm the binary checks are justified under CC036. Check the Aud44CorrectionTest change.
 - Test moves in UnitTestAndBinderTest (examples shift to Units 18 and 22) are legitimate. Recompute the pins.
 
-## 7. T17c check: Unit 18 (DUE NOW: 6810533d, 70aaf80e, 675d531b; DONE ac0b7766; CI 45228317272 passed)
+## 7. T17c check: DONE 11/23 (FAIL: typed-key test sensitivity; fix in D39b)
 - 20 checked / 16 typed. Typed keys: grammar:301, 303 and interrogative:168-173. Two typed guided items (са́мый до́брый, Который). Facts 44 MARK / 1 REMOVE. Check the section 4 corrections (simple comparative; the superlative gloss; бо́лее до́брый is rare).
 - Test changes to verify as not weakened:
   - Unit18ComparisonRelativeInstructionTest: governance and scope expectations removed. Confirm the six closed-item protections are intact.
@@ -80,7 +80,7 @@ Commits: 6d6fd938 (D34), 569341cc (Unit 16), 43996033 (pins), then later commits
 - Wording: positive forms in parentheses, са́мый in the "most" contrast, and practice/check instructions that cover typed answers. Confirm no Russian was composed.
 - Unit 18 digest 04147a35 -> 114c6675 (pinned in Aud44, Units2125 and Units2630 intake tests).
 
-## 8. T17d check: D2 and Unit 19 (due once T17d is DONE; D2 commit fecc7ab4)
+## 8. T17d check: DONE 11/23 at 23c636c4 before its DONE commit (FAIL: D2 mid-word bypass; fix in D39a). Confirm the T17d DONE commit and CI later.
 - D2: governedRelation now lets probability-1's wrong options be competing meanings from other verified frozen records (not content-audit, synthesis or coverage, and displayed as frozen text). The cue and answer must still come from W:39-41. Guard hash ba035cd3 -> 7dd3d3c4. Run your own probes against Unit19ProbabilityBindingRuleTest: an unsourced meaning, a tampered record, a Russian distractor, an answer outside the span. Confirm no other governed span changed.
 - Unit 19: 20/12; facts 53/7/7. S1 claims: 2225 (Сослагательное:18), 2234 reworded to "sentence" (бы:58). 48 sweep rows. "Choose <answer>." sentences are treated as non-facts; confirm none carries a claim. The builder's unstressed() is now aligned with the Kotlin phrase rule for plain [[...]] links.
 

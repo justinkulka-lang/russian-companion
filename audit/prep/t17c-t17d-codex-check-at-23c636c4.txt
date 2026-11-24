@@ -1,0 +1,103 @@
+Checked 23c636c45d1129dd3a637b07c753f0471a9d1490. Nothing changed, committed or pushed.
+
+Both verification verdicts are FAIL. Two new gaps were confirmed: a D2 substring bypass and insufficient sensitivity to a wrong Unit 18 typed key. The actual content, stress, provenance and hash checks pass.
+
+T17c — Unit 18
+
+Checklist item	Result	Evidence
+
+Counts and placement	PASS	20 checked / 16 typed, 80%. Required checks are in u18-s-checks; fresh A2-24 findings: 0.
+Typed keys and stress	PASS	All 16 required keys match russian-grammar:301,303 or interrogative:168,170,172,173, character for character. Both additional guided keys are attested and taught first. Key evidence.
+Facts	PASS	44 MARK / 1 REMOVE. Frozen-source and unmarked-fact tests pass. Unit18FactProvenanceTest.kt:60.
+Teaching corrections	PASS	Simple comparatives are distinguished from declining full adjectives; the superlative gloss includes greatest/largest; the rarity qualification is retained. russian-grammar:301,303 supports these distinctions.
+Six closed-item protections	PASS	All six remain subject to prompt, feedback, citation and distractor assertions. Governance/scope assertions were replaced consistently with the approved cleanup. Instruction test:45.
+Batch A: 47 closed items	PASS	Their checks remain intact. Typed items are separated without removing existing closed-item coverage.
+New typed-item test sensitivity	FAIL	The separate Batch A block checks counts, ownership and empty options, but not the prompt–key relationship. A wrong-key injection passed full validation and all ten Unit 18 fact/instruction tests. Details below. BatchAUnits71620Test.kt:207.
+Review UI typed path	PASS	Typed guided answers use the input and submit controls; the closed path still clicks its option. Unit19CumulativeReviewTest.kt:130.
+Added wording and Russian	PASS	Positive forms, the “most” contrast, and typed instructions are present. All 11 listed phrases and the broader shared-field phrase audit pass. No unattested composition found.
+Sweep, references and coursework	PASS	31 applied + 3 already satisfied = 34 sweep rows. References, binder and tutor tasks resolve.
+A2-28	PASS	Fresh measurement: [8,8,8,8,2,1].
+Manual learner-text scan	FAIL	Stale review-count wording and the readiness workflow label remain. See the shared findings below.
+Pins, hashes and CI	PASS	Unit 18 digest recomputes to 114c6675… at all three pins. CI 45228317272 passed on exactly 675d531b. DONE ac0b7766 is queue-only.
+
+
+The typed-key fault injection changed u18-i-type-luchshii while retaining its prompt, “Type the full adjective that means better.” It substituted the already-taught key бо́льший, updating the finite-key review digest consistently.
+
+TYPED_WRONG_KEY_FULL=V2Validation(ok=true, errors=[])
+Unit18FactProvenanceTest +
+Unit18ComparisonRelativeInstructionTest: OK (10 tests)
+
+The shipped key is correct. The tests need a per-item prompt/key/source expectation and a regression proving that substitution of another taught form fails.
+
+T17d — D2 and Unit 19
+
+First, T17d is not recorded as completed at this head:
+
+- D2: fecc7ab4
+- Content: 0f839433
+- Pins: aed0dc39
+- Package/candidate digests: 23c636c4
+- No DONE commit or T17d queue log exists.
+- CI 45283753870 was still in progress on exactly 23c636c4 at the final check. WORK_QUEUE.md:203 still lists Unit 19 among the remaining work.
+
+Checklist item	Result	Evidence
+
+D2 scope	PASS	Cross-span distractors are enabled only for the likelihood span. Cue and answer must still share W:39–41. The condition for every other governed span remains equivalent. V2Validator.kt:3353.
+Standard rejection probes	PASS	Unsourced synthesis, stale-hash tampering, a Russian distractor and an off-span answer all return null.
+Substring probe	FAIL	port, selected from inside report, passes the classifier, item structure, full validation and frozen-file binding guard.
+Compound append probe	PASS	Appending an unattested extra meaning is rejected.
+Counts and keys	PASS	20 checked / 12 typed, 60%; all required checks are in u19-s-checks. Required and guided keys have exact frozen witnesses and preceding teaching. Key evidence.
+Facts	PASS	53 MARK / 7 REWORD / 7 REMOVE. Frozen-source and unmarked-fact tests pass.
+S1 entry 2225	PASS	soslagatelnoe-naklonenie:18 explicitly supplies lexical/situational time reference. Disposition:293.
+S1 entry 2234	PASS	“Clause” becomes “sentence”, matching by-94001807.txt:58; the revised sentence remains marked. Disposition:394.
+Sweep and “Choose…” exceptions	PASS	All 48 logged rows are applied. The exact “Choose…” exceptions are directives; accompanying grammar claims remain separately marked. Unit19FactProvenanceTest.kt:20.
+Plain-link extraction	PASS	Unpiped [[text]] links now yield their text. The Python helper still folds ё/е; the actual Kotlin phrase audit preserves the distinction and passes. Builder:87.
+Phrases, references and coursework	PASS	All 8 listed phrases and the broader shared-field audit pass. References, binder and tutor tasks resolve.
+A2-28	PASS	Fresh measurement: [8,8,8,8,2,0].
+Existing test changes	PASS	Existing closed-item protections remain. Updated expectations follow the sourced employee-sense classification, sentence/clause correction and learner-text cleanup.
+New D2 test coverage	FAIL	The new tests omit the substring case accepted by the full validator.
+Manual learner-text scan	FAIL	Stale review-count wording and readiness status remain. Attribution notices contain legal/source attribution without the assessment-scope leak found previously in Unit 17.
+Pins and hashes	PASS	All recompute correctly. Completion and exact-commit CI passage remain unconfirmed.
+
+
+The independent D2 results were:
+
+valid                 EXPLICIT_SOURCE_PAIR
+unsourced             null
+tampered              null
+Russian               null
+offspan_answer        null
+appended_compound     null
+midword_port          EXPLICIT_SOURCE_PAIR
+MIDWORD_STRUCTURE     []
+MIDWORD_FULL          V2Validation(ok=true, errors=[])
+FROZEN_GUARD port     []
+
+The cited record contains “Employees must report to work on time.” It contains no whole-word port.
+
+Cause: displayedInFrozen:2872 accepts substring selections. The build guard binds originalSourceText to the frozen file but does not reject this cut-through-word shippedText.
+
+A fabricated record with recomputed hashes also passes the classifier, but the frozen-file build guard rejects that forgery. The port case survives both layers. Add a regression and require competing meanings to respect word boundaries.
+
+Manual learner-text findings
+
+Owner/field	Finding
+
+Units 18–19 readiness UI	“Content complete, review pending” remains. D37b already governs its replacement. V2ProgressRules.kt:76.
+reviewCopy.introductions[18]	Repair-card counts and “Complete both review checks” describe the old assignment. The fresh assignment contains eight items. review-copy.json:48.
+reviewCopy.introductions[19]	The same stale “both” instruction and repair counts remain. Its assignment also contains eight items. review-copy.json:49.
+
+
+Use plain instructions to complete every assigned item and consult its linked teaching after a miss. No additional source-narration, raw-table or attribution-scope leak was found in either unit.
+
+Recomputed pins and hashes
+
+Tree	Release source digest	Unit 3 review-package digest
+
+T17c 675d531b	014ce632…	9d1a6cb3…
+Current/T17d 23c636c4	2589c83e…	c4882499…
+
+
+Also matched: all six guarded-file hashes at both heads, curriculum commit pins, unit-content pins (U18 114c6675…, U19 cd6db68a…), all 32 required/guided typed-key hashes, and Unit 18–19 provenance hashes. D2’s validator hash correctly changes ba035cd3… → 7dd3d3c4….
+
+28 baseline targeted tests passed. The wrong-key fixture’s ten tests also passed, demonstrating the coverage gap. Full verification output.
