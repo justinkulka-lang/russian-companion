@@ -93,15 +93,25 @@ internal object V2DesignDiagnostics {
         // (a) review and workflow status
         "\\bpending (?:qualified )?review\\b|\\bqualified review\\b|\\breviewed examples\\b|\\breviewers?\\b|\\bapprov(?:e|es|ed|ing)\\b|" +
             "\\bsigns? an app note\\b|\\brelease (?:stays|remains|is) blocked\\b|" +
-            // (b) table and record framing
-            "\\brows?\\b(?! for\\b)|" +
-            "\\b(?:in|from|of) (?:this|the|that) table\\b|\\bthis table\\b|\\btable (?:rows?|numbers?|cells?|fields?|positions?)\\b|" +
+            // (b) table and record framing. T16c-n1 (owner decision D36b, approved rule change): "row" is flagged only as table
+            // framing (a row of/in a table, a case, form or count row, "read the row", "this row", "the requested row", "in the
+            // row"); ordinary meanings ("the row of soldiers") and furniture ("the surface of the table") pass. "rows for" is
+            // checked separately (rowsFor) and exempt only in binder-direction fields (was: every "row" except before "for",
+            // in every field, and "of the table").
+            "\\brows? (?:of|in) (?:a|the|this|that) table\\b|" +
+            "\\b(?:case|form|table|source|requested|this|that|each|every|next|previous|following|last|nominative|genitive|dative|" +
+            "accusative|instrumental|prepositional|locative|singular|plural|masculine|feminine|neuter|future|past|present|person|speaker|" +
+            "object|subject|answer|[a-z]+-(?:hour|year|minute)) rows?\\b|" +
+            "\\bread (?:the|this|that|each) rows?\\b|\\b(?:in|from) (?:the|this|that|its|another|which) rows?\\b|" +
+            "\\b(?:in|from) (?:this|the|that) table\\b|\\bthis table\\b|\\btable (?:rows?|numbers?|cells?|fields?|positions?)\\b|" +
             "\\brecorded (?:\\w+ ){0,3}forms?\\b|\\brequested (?:[\\w-]+ ){0,4}(?:forms?|rows?)\\b|\\bthe requested\\b|\\brequested here\\b|\\bkeyed\\b|\\bcells?\\b|" +
             "\\bfrom the dictionary\\b|" +
             // (c) question framing
             "\\bthe question here is\\b|\\brequested by (?:this|the) question\\b",
         RegexOption.IGNORE_CASE,
     )
+    /** D36b: "rows for" frames a table; the learner's own binder directions ("make a table ... with rows for ...") are exempt. */
+    private val rowsFor = Regex("\\brows? for\\b", RegexOption.IGNORE_CASE)
     private val tableCell = Regex("\\|{1,2}[ \\t]*\\p{L}")
     // T15g (owner decision D18d, approved rule change): only the notice or direction sentence itself is exempt, identified
     // by owner (the ref-*-attribution licence notices) or by exact template (the D8 self-attestation sentence). A sentence
@@ -115,8 +125,9 @@ internal object V2DesignDiagnostics {
         "The course records in these units are a separate licensed set and do not copy the book.",
     )
     private fun lintedSentences(value: String): List<String> = value.split(sentenceBreak).filter { it.trim() !in NOTICE_TEMPLATES }
-    private fun widenedNarration(value: String): Boolean = lintedSentences(value)
-        .any { sourceNarration.containsMatchIn(it) || assessmentCommentary.containsMatchIn(it) || workflowAndFraming.containsMatchIn(it) }
+    private fun widenedNarration(value: String, binder: Boolean = false): Boolean = lintedSentences(value)
+        .any { sourceNarration.containsMatchIn(it) || assessmentCommentary.containsMatchIn(it) || workflowAndFraming.containsMatchIn(it) ||
+            (!binder && rowsFor.containsMatchIn(it)) }
     private fun tableCellMarkup(value: String): Boolean = lintedSentences(value).any { tableCell.containsMatchIn(it) }
     /**
      * T16d (owner decision D32b): the learner-voice rules applied to one hardcoded UI string (governance terms, provenance and
@@ -157,13 +168,13 @@ internal object V2DesignDiagnostics {
         val sourceIds = pack.sources.map { it.id }.filter { it.isNotBlank() }.map {
             Regex("(?<![a-zA-Z0-9_-])${Regex.escape(it)}(?![a-zA-Z0-9_-])")
         }
-        fun inspectLearnerText(id: String, unit: Int?, field: String, value: String?) {
+        fun inspectLearnerText(id: String, unit: Int?, field: String, value: String?, binder: Boolean = false) {
             if (value != null && (markup.containsMatchIn(value) || rawHtml.containsMatchIn(value) || sourceLink.containsMatchIn(value))) add("LEARNER_MARKUP", V2DesignSignalKind.STRUCTURAL_ERROR,
                 unit, listOf(id), field, "A learner text field contains source-markup syntax; inspect the rendering and correct the governed text.")
             if (value != null && (governance.containsMatchIn(value) || sourceIds.any { it.containsMatchIn(value) }))
                 add("LEARNER_GOVERNANCE_TERM", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
                     "Learner text contains a governance term or source ID prohibited by A2-26.")
-            if (value != null && (provenanceNarration.containsMatchIn(value) || widenedNarration(value)))
+            if (value != null && (provenanceNarration.containsMatchIn(value) || widenedNarration(value, binder)))
                 add("LEARNER_PROVENANCE_NARRATION", V2DesignSignalKind.REVIEW_SIGNAL, unit, listOf(id), field,
                     "Learner text narrates provenance or talks about the app's checks (A2-26 learner voice); keep attribution in the records.")
             if (value != null && tableCellMarkup(value))
@@ -251,8 +262,9 @@ internal object V2DesignDiagnostics {
         pack.reviewCopy.introductions.forEach { (unit, value) -> inspectLearnerText("review-introduction-$unit", unit, "introduction", value) }
         pack.reviewCopy.messages.forEach { (key, value) -> inspectLearnerText("review-message-$key", null, "message", value) }
         for ((number, step) in stepRows) {
-            inspectLearnerText(step.id, number, "title", step.title); inspectLearnerText(step.id, number, "body", step.body)
-            inspectLearnerText(step.id, number, "bookDirection", step.bookDirection); inspectLearnerText(step.id, number, "companionDirection", step.companionDirection)
+            val binder = step.kind == "BINDER" // D36b: binder-direction fields
+            inspectLearnerText(step.id, number, "title", step.title, binder); inspectLearnerText(step.id, number, "body", step.body, binder)
+            inspectLearnerText(step.id, number, "bookDirection", step.bookDirection); inspectLearnerText(step.id, number, "companionDirection", step.companionDirection, binder)
             inspectLearnerText(step.id, number, "unavailableReason", step.unavailableReason)
             inspectLearnerText(step.id, number, "dominantAction", step.dominantAction)
         }

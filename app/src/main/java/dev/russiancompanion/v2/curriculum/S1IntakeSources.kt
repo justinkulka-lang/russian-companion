@@ -34,4 +34,10 @@ internal object S1IntakeSources {
     fun revision(sourceId: String, route: Route): String? = ENTRIES.singleOrNull { it.sourceId == sourceId && it.route == route }?.revision
 
     fun admits(sourceId: String, revision: String, route: Route): Boolean = revision(sourceId, route) == revision
+
+    /**
+     * T16c-n1 (owner decision D36a): an S1 source ID, on any route. Such an ID is admitted only at its exact S1 revision; a legacy
+     * revision allowlist never admits it at another revision.
+     */
+    fun listed(sourceId: String): Boolean = ENTRIES.any { it.sourceId == sourceId }
 }

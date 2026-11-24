@@ -98,5 +98,28 @@ class S1IntakeAdmissionTest {
         }
     }
 
+    /**
+     * T16c-n1 (owner decision D36a, approved rule change): an S1 source ID is admitted only at its exact S1 revision. A legacy
+     * revision allowlist (here the ru-Wikipedia legacy revision 152437423) no longer admits it. Codex's T16c-check probe.
+     */
+    @Test
+    fun anS1SourceIdAtALegacyRevisionIsRejected() {
+        val pack = V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText())
+        val page = pages.single { it.string("sourceId") == "src-ruwiki-vid-lingvistika-153277825" }
+        val template = pack.provenanceRecords.first { it.sourceId == "src-ruwiki-narechie-152437423" }
+        assertEquals("152437423", template.sourceRevision) // the legacy ru-Wikipedia revision
+        val frozen = template.copy(itemId = "probe-d36a-frozen", sourceId = page.string("sourceId"), sourceRevision = page.string("oldid"),
+            sourceUrl = page.string("url"), attribution = page.string("attribution"))
+        val legacy = frozen.copy(itemId = "probe-d36a-legacy", sourceRevision = "152437423",
+            sourceUrl = frozen.sourceUrl.replace("oldid=${page.string("oldid")}", "oldid=152437423"))
+        val errors = V2Validator.validate(pack.copy(provenanceRecords = pack.provenanceRecords + frozen + legacy)).errors
+        assertTrue(errors.joinToString("\n"), errors.any { "Provenance probe-d36a-legacy " in it && routeError.containsMatchIn(it) })
+        assertTrue(errors.none { "Provenance probe-d36a-frozen " in it && routeError.containsMatchIn(it) })
+        // The legacy revision still admits a source that S1 does not list (every existing narechie record).
+        pack.provenanceRecords.filter { it.sourceId == "src-ruwiki-narechie-152437423" }.forEach { record ->
+            assertTrue(record.itemId, errors.none { "Provenance ${record.itemId} " in it && routeError.containsMatchIn(it) })
+        }
+    }
+
     private fun kotlinx.serialization.json.JsonObject.string(key: String) = getValue(key).jsonPrimitive.content
 }

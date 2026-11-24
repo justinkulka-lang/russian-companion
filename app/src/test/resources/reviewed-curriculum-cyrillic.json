@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "7dd3d3c40911c176ecb056e2506e75110ddb07c017a891ee85df319b3ca265d6",
+      "sha256": "7456909aff0944f3c7a32211c044b3088a9281dc514ae9506017891a3f111c29",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3500,6 +3500,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "T17d (owner decision D2, approved rule change): the Unit 19 probability binding (BatchARemainingSources.LIKELIHOOD_SPAN, Wiktionary dolzhen 84965088 W:39-41) keeps its cue and keyed answer on that span; its distractors may be competing English meanings from other verified frozen records that are not content-audit research, synthesis or coverage (frozenCompetingMeaning). Every other governed span still requires all participants on the cue's span. No Russian is constructed or rendered.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T16c-n1 D36a D38a D39a",
+      "previousRecordedSha256": "7dd3d3c40911c176ecb056e2506e75110ddb07c017a891ee85df319b3ca265d6",
+      "sha256": "7456909aff0944f3c7a32211c044b3088a9281dc514ae9506017891a3f111c29",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T16c-n1 (owner decisions D36a, D38a, D39a, approved rule changes): an S1 source ID is admitted only at its exact S1 revision on every route (S1IntakeSources.listed), never at a legacy revision; a count feature names its quantity as a whole expression (quantityExpressions) and any other quantity in the prompt is competing, whatever the number; a shipped selection starts and ends on word boundaries within its displayed frozen text (containsWhole, for every caller of displayedInFrozen; a content-audit record's canonical application tuple is read field by field, so a byte-length prefix is a boundary). No Russian is constructed or rendered.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

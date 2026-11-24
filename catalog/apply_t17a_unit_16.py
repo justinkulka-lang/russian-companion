@@ -334,7 +334,7 @@ class Builder:
 
     def select(self, page: str, number: int, text: str, objective: str, record_type: str = "example") -> str:
         raw = (SRC / PAGES[page][0]).read_text(encoding="utf-8").split("\n")[number - 1].strip()
-        if text not in d7b.displayed(raw):
+        if not d7b.selectable(raw, text):  # T16c-n1 (D39a): whole words only (was: any substring)
             raise SystemExit(f"{text!r} is not displayed on {page}:{number}")
         record_id = f"prov-t17a-u16-{page.lower()}{number}-{sha(text + objective)[:8]}"
         if record_id in self.records:

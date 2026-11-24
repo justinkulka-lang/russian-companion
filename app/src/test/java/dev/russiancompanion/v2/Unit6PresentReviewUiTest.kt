@@ -27,7 +27,9 @@ class Unit6PresentReviewUiTest {
         LocalStore.openInMemory(context()).use { store ->
             compose.setContent { V2CumulativeReviewScreen(pack, store.v2LearnerView(), 6, false, {}, {}, {}, { _, _, _ -> }, {}, {}, {}) }
             compose.onNodeWithText(newTitle).assertExists()
-            compose.onNodeWithText("Practise recognising the taught forms; practise conjugating verbs", substring = true) // T16-n2 (D31c): was "These finite recognitions do not demonstrate productive conjugation".performScrollTo().assertIsDisplayed()
+            // T16-n2 (D31c): was "These finite recognitions do not demonstrate productive conjugation"
+            // T16c-n1 (D36c): the assertion chain runs again (it was commented out by this note).
+            compose.onNodeWithText("Practise recognising the taught forms; practise conjugating verbs", substring = true).performScrollTo().assertIsDisplayed()
             compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
         }
     }

@@ -369,7 +369,7 @@ class Builder:
         if original is not None and original not in self.text(page):
             raise SystemExit(f"{page}: the excerpt is not in its frozen file")
         shown = BATCHA_UNFOLD(raw) if transformation == "wiktionary template selection" else d7b.displayed(raw)
-        if text not in shown:
+        if not d7b.contains_whole(shown, text):  # T16c-n1 (D39a): whole words only (was: any substring)
             raise SystemExit(f"{text!r} is not displayed on {page}:{number}")
         record_id = f"{PREFIX}-{page.lower()}{number}-{sha(text + objective + raw[:40])[:8]}"
         if record_id in self.records:

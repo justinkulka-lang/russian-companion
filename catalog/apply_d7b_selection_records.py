@@ -64,6 +64,35 @@ def displayed(raw: str) -> str:
     return re.sub(f"(?<=[{CYR}])'(?!')", AC, text)
 
 
+def _word_char(text: str, i: int) -> bool:
+    if i < 0 or i >= len(text):
+        return False
+    c = text[i]
+    if c in "'\u2019":
+        return 0 < i < len(text) - 1 and (text[i - 1].isalnum() or text[i - 1] == AC) and text[i + 1].isalnum()
+    return c.isalnum() or c == AC
+
+
+def contains_whole(text: str, part: str) -> bool:
+    """T16c-n1 (owner decision D39a): part occurs in text starting and ending on word boundaries (letters, digits, the stress
+    mark and a word-internal apostrophe are word characters; a quotation apostrophe is not). Mirrors V2Validator.containsWhole."""
+    if not part:
+        return False
+    start = 0
+    while True:
+        i = text.find(part, start)
+        if i < 0:
+            return False
+        if not (_word_char(text, i - 1) and _word_char(part, 0)) and not (_word_char(text, i + len(part)) and _word_char(part, len(part) - 1)):
+            return True
+        start = i + 1
+
+
+def selectable(raw: str, text: str) -> bool:
+    """D39a: a selection is a whole-word stretch of the displayed frozen line."""
+    return contains_whole(displayed(raw), text)
+
+
 def folded(text: str) -> str:
     return re.sub(r"[ \t\n   ]+", " ", text.replace(AC, "")).lower()
 

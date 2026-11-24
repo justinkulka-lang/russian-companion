@@ -2869,25 +2869,90 @@ internal object V2Validator {
             left.sourceId == right.sourceId &&
             left.sourceRevision == right.sourceRevision
 
+    // T16c-n1 (owner decision D39a, approved rule change): a shipped selection starts and ends on word boundaries within its
+    // displayed frozen text, for every caller ("port" cut from "report" is refused). Letters, digits and the stress mark are word
+    // characters, and so is an apostrophe inside a word (o'clock, OpenRussian stress apostrophes); an apostrophe used as a
+    // quotation mark around a gloss ('my table') is not (was: any substring).
     private fun displayedInFrozen(record: V2ProvenanceRecord): Boolean {
         val original = record.originalSourceText
         val shipped = record.shippedText
         if (record.transformation == "wiktionary template selection") {
-            return shipped.isNotEmpty() && shipped in BatchARemainingSources.unfoldWiktionary(original)
+            return shipped.isNotEmpty() && containsWhole(BatchARemainingSources.unfoldWiktionary(original), shipped)
         }
         if (record.transformation == "readyrussian text extraction") {
-            return shipped.isNotEmpty() && "<" !in original && ">" !in original && shipped in original
+            return shipped.isNotEmpty() && "<" !in original && ">" !in original && containsWhole(original, shipped)
         }
         if (record.transformation == "pressbooks markup selection" || record.transformation == "readyrussian markup selection") {
-            return shipped.isNotEmpty() && shipped in BatchARemainingSources.htmlVisible(original)
+            return shipped.isNotEmpty() && containsWhole(BatchARemainingSources.htmlVisible(original), shipped)
         }
-        if (shipped.isNotEmpty() && (shipped in original || foldGoverned(shipped) in foldGoverned(original))) return true
+        if (shipped.isNotEmpty() && (wholeInSegments(original, shipped) { it } || wholeInSegments(original, foldGoverned(shipped)) { foldGoverned(it) })) return true
         val folded = foldGoverned(shipped)
         if (folded.isNotEmpty() && folded == foldGoverned(original.replace("'", ""))) return true
-        val formatted = foldGoverned(formatWikibooksEmphasis(original))
-        if (folded.isNotEmpty() && folded in formatted) return true
-        val unfolded = foldGoverned(unfoldWikiLabels(original))
-        return folded.isNotEmpty() && folded in unfolded
+        if (folded.isNotEmpty() && wholeInSegments(original, folded) { foldGoverned(formatWikibooksEmphasis(it)) }) return true
+        return folded.isNotEmpty() && wholeInSegments(original, folded) { foldGoverned(unfoldWikiLabels(it)) }
+    }
+
+    /**
+     * D39a: a content-audit record's text ends with its canonical application tuple ("tuple-v1:", then UTF-8 byte-length-prefixed
+     * fields, as CompleteRuleContextPins and OriginalApplicationTuplePins build it). Each tuple field is its own segment, so a
+     * field's length prefix is a boundary and not a word character; every other text is one segment.
+     */
+    private fun wholeInSegments(original: String, part: String, view: (String) -> String): Boolean =
+        displaySegments(original).any { containsWhole(view(it), part) }
+
+    internal fun displaySegments(original: String): List<String> {
+        val marker = "\nTuple-v1:"
+        val at = original.lastIndexOf(marker)
+        if (at < 0) return listOf(original)
+        val fields = tupleFields(original.substring(at + marker.length)) ?: return listOf(original)
+        return listOf(original.substring(0, at)) + fields
+    }
+
+    private fun tupleFields(tuple: String): List<String>? {
+        if (!tuple.startsWith("tuple-v1:")) return null
+        val bytes = tuple.removePrefix("tuple-v1:").toByteArray(Charsets.UTF_8)
+        val fields = mutableListOf<String>()
+        var i = 0
+        while (i < bytes.size) {
+            var n = 0
+            val start = i
+            while (i < bytes.size && bytes[i] in '0'.code.toByte()..'9'.code.toByte()) { n = n * 10 + (bytes[i] - '0'.code.toByte()); i++ }
+            if (i == start || i >= bytes.size) return null
+            when (bytes[i].toInt().toChar()) {
+                ';' -> i++
+                ':' -> {
+                    if (i + 1 + n > bytes.size) return null
+                    fields += String(bytes, i + 1, n, Charsets.UTF_8)
+                    i += 1 + n
+                }
+                else -> return null
+            }
+        }
+        return fields
+    }
+
+    private fun selectionWordChar(text: String, index: Int): Boolean {
+        if (index < 0 || index >= text.length) return false
+        val c = text[index]
+        if (c == '\'' || c == '\u2019') {
+            return index > 0 && index + 1 < text.length && (text[index - 1].isLetterOrDigit() || text[index - 1] == '\u0301') &&
+                text[index + 1].isLetterOrDigit()
+        }
+        return c.isLetterOrDigit() || c == '\u0301'
+    }
+
+    /** D39a: [part] occurs in [text] starting and ending on word boundaries. */
+    internal fun containsWhole(text: String, part: String): Boolean {
+        if (part.isEmpty()) return false
+        var from = 0
+        while (true) {
+            val i = text.indexOf(part, from)
+            if (i < 0) return false
+            val startOk = !(selectionWordChar(text, i - 1) && selectionWordChar(part, 0))
+            val endOk = !(selectionWordChar(text, i + part.length) && selectionWordChar(part, part.length - 1))
+            if (startOk && endOk) return true
+            from = i + 1
+        }
     }
 
     private val wikiStressMark = Regex(
@@ -3800,6 +3865,17 @@ internal object V2Validator {
         listOf("ONE_YEAR_ROW", "TWO_YEAR_ROW", "FIVE_YEAR_ROW"),
         listOf("ONE_MINUTE_ROW", "TWO_MINUTE_ROW", "FIVE_MINUTE_ROW"),
     )
+    private val COUNT_FEATURES = COUNT_FAMILIES.flatten().toSet()
+    private const val NUMBER_WORD = "(?:\\d+|zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|" +
+        "fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|million|" +
+        "and|a|an)"
+    private val QUANTITY = Regex("(?i)(?<![\\w-])($NUMBER_WORD(?:[ -]+$NUMBER_WORD)*)\\s+(hours?|years?|minutes?)(?![\\w-])")
+
+    /** T16c-n1 (D38a): every complete quantity expression of hours, years or minutes, with its whole (compound) numeral. */
+    internal fun quantityExpressions(text: String): List<String> = QUANTITY.findAll(text).map { match ->
+        match.groupValues[1].lowercase().replace(Regex(" +"), " ") + " " + match.groupValues[2].lowercase()
+    }.toList()
+
     private val RESPONSE_KINDS = setOf(
         "RUSSIAN_TOKEN",
         "RUSSIAN_PHRASE",
@@ -4519,21 +4595,26 @@ internal object V2Validator {
             val prefixMeaningTarget = item.objectiveId == "obj-u19-prefix-caution" &&
                 feature in setOf("DISSUADE_MEANING", "AGREE_MEANING") &&
                 item.prompt == "Which English meaning matches the shown Russian verb?"
-            if (feature.isBlank() || phrase == null || (!item.prompt.contains(phrase) && !prepositionMeaningTarget && !prefixMeaningTarget)) {
+            // T16c-n1 (owner decision D38a, approved rule change): a count feature names its quantity as a whole expression, never
+            // as a substring of a longer numeral ("two hours" inside "twenty-two hours"); was: plain substring matching.
+            val count = feature in COUNT_FEATURES
+            val named = phrase != null && (if (count) phrase in quantityExpressions(item.prompt) else item.prompt.contains(phrase))
+            if (feature.isBlank() || phrase == null || (!named && !prepositionMeaningTarget && !prefixMeaningTarget)) {
                 errors += "Item ${item.id} has no explicit target"
             }
             if (item.objectiveId == "obj-u16-inst-prep" && item.prompt.contains(item.answer, ignoreCase = true)) {
                 errors += "Item ${item.id} prompt discloses the preposition meaning"
             }
-            if (phrase != null && !assessment.whyAnswerDemonstratesObjective.contains(phrase)) {
+            val tied = phrase != null && (if (count) phrase in quantityExpressions(assessment.whyAnswerDemonstratesObjective)
+                else assessment.whyAnswerDemonstratesObjective.contains(phrase))
+            if (phrase != null && !tied) {
                 errors += "Item ${item.id} answer rationale is not tied to the target"
             }
-            // T17b (D1): a count question that also names a competing count of its unit asks for the wrong count.
-            COUNT_FAMILIES.firstOrNull { feature in it }?.filter { it != feature }?.forEach { other ->
-                val competing = TARGET_PHRASES.getValue(other)
-                if (Regex("(?i)\\b${Regex.escape(competing)}\\b").containsMatchIn(item.prompt)) {
-                    errors += "Item ${item.id} prompt names a competing count"
-                }
+            // T17b (D1): a count question that also names a competing count asks for the wrong count. T16c-n1 (D38a): any quantity
+            // in the prompt other than the key's own is competing, whatever the number (was: only the one/two/five counts of the
+            // same unit).
+            if (count && phrase != null && quantityExpressions(item.prompt).any { it != phrase }) {
+                errors += "Item ${item.id} prompt names a competing count"
             }
         }
         if (item.options.count { it == item.answer } != 1) {
@@ -5182,9 +5263,12 @@ internal object V2Validator {
                 // their stricter per-record chain check (T16c CI fix: the S1 admission must not let a ghost record through).
                 val revisionAllowed = if (record.sourceId in setOf("src-ruwiki-obosoblenie-144053197", "src-ruwiki-boltraffio-149826784")) {
                     V2ContentChecks.admittedNative(pack, "obj-u29-punctuation", record)
+                } else if (S1IntakeSources.listed(record.sourceId)) {
+                    // T16c-n1 (owner decision D36a, approved rule change): an S1 source ID is admitted only at its exact S1
+                    // revision; the legacy revision allowlists below never admit it (was: S1 or legacy revision, for every ID).
+                    S1IntakeSources.admits(record.sourceId, record.sourceRevision, S1IntakeSources.Route.RU_WIKIPEDIA)
                 } else {
-                    S1IntakeSources.admits(record.sourceId, record.sourceRevision, S1IntakeSources.Route.RU_WIKIPEDIA) ||
-                        record.sourceRevision == BatchARemainingSources.RU_REVISION ||
+                    record.sourceRevision == BatchARemainingSources.RU_REVISION ||
                         record.sourceRevision in BatchBSources.RU_REVISIONS
                 }
                 if (!revisionAllowed ||
@@ -5850,8 +5934,9 @@ internal object V2Validator {
     }
 
     private fun admittedReadyRussianProvenance(record: V2ProvenanceRecord): Boolean {
-        val revision = RemainingSources.READY_REVISIONS[record.sourceId]
-            ?: S1IntakeSources.revision(record.sourceId, S1IntakeSources.Route.READY_RUSSIAN) ?: return false // T16c (D29a)
+        // T16c-n1 (D36a): an S1 source ID is admitted only at its S1 revision, never at a legacy revision (was: legacy first).
+        val revision = (if (S1IntakeSources.listed(record.sourceId)) S1IntakeSources.revision(record.sourceId, S1IntakeSources.Route.READY_RUSSIAN)
+            else RemainingSources.READY_REVISIONS[record.sourceId]) ?: return false // T16c (D29a)
         if (record.sourceRevision != revision) return false
         if (!record.sourceUrl.contains("readyrussian.org")) return false
         if (!record.attribution.contains("ReadyRussian.org") || !record.attribution.contains(revision)) return false
@@ -5889,8 +5974,9 @@ internal object V2Validator {
         val revision = when (record.sourceId) {
             BatchARemainingSources.WIKTIONARY_SOURCE -> BatchARemainingSources.WIKTIONARY_REVISION
             BatchBSources.POLTORA_SOURCE -> BatchBSources.POLTORA_REVISION
-            else -> RemainingSources.WIKTIONARY_REVISIONS[record.sourceId]
-                ?: S1IntakeSources.revision(record.sourceId, S1IntakeSources.Route.WIKTIONARY) ?: return false // T16c (D29a)
+            // T16c-n1 (D36a): an S1 source ID is admitted only at its S1 revision, never at a legacy revision (was: legacy first).
+            else -> (if (S1IntakeSources.listed(record.sourceId)) S1IntakeSources.revision(record.sourceId, S1IntakeSources.Route.WIKTIONARY)
+                else RemainingSources.WIKTIONARY_REVISIONS[record.sourceId]) ?: return false // T16c (D29a)
         }
         if (record.sourceRevision != revision) return false
         val url = record.sourceUrl

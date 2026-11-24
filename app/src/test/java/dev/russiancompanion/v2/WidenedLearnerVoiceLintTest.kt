@@ -24,6 +24,37 @@ class WidenedLearnerVoiceLintTest {
         current.copy(units = current.units.map { u -> if (u.number != 3) u else u.copy(topicSummary = text) }),
     ).signals.filter { it.rule == rule && it.unit == 3 && it.field == "topicSummary" }
 
+    /** T16c-n1 (D36b): the same text in a binder-direction field (the body of Unit 3's BINDER step, u3-st-binder-direction). */
+    private fun binderSignals(text: String, rule: String) = V2DesignDiagnostics.audit(
+        current.copy(units = current.units.map { u -> if (u.number != 3) u else u.copy(sessions = u.sessions.map { s ->
+            s.copy(steps = s.steps.map { if (it.id == "u3-st-binder-direction") it.copy(body = text) else it })
+        }) }),
+    ).signals.filter { it.rule == rule && it.unit == 3 && "u3-st-binder-direction" in it.entityIds && it.field == "body" }
+
+    /**
+     * T16c-n1 (owner decision D36b, approved rule change): "row" is flagged only as table framing; ordinary meanings and the
+     * furniture noun pass; "rows for" is exempt only in binder-direction fields. The six probes of the Codex T16c check.
+     */
+    @Test fun rowLintFlagsTableFramingOnly() {
+        val rule = "LEARNER_PROVENANCE_NARRATION"
+        // Probes 1-2: a furniture gloss and the dictionary form pass.
+        assertTrue(signals("стол — table", rule).isEmpty())
+        assertTrue(signals("The dictionary form of this adjective is masculine singular nominative.", rule).isEmpty())
+        // Probe 3: a binder instruction with "rows for" passes in a binder field, and is table framing anywhere else.
+        val binder = "In your binder, make a table of the six cases with rows for singular and plural."
+        assertTrue(binderSignals(binder, rule).isEmpty())
+        assertTrue(signals(binder, rule).isNotEmpty())
+        // Probe 4: an ordinary row passes.
+        assertTrue(signals("The row of soldiers is outside.", rule).isEmpty())
+        // Probe 5: reading a table row is table framing (it passed before D36b).
+        assertTrue(signals("Read the row for this case.", rule).isNotEmpty())
+        assertTrue(binderSignals("Read the row for this case.", rule).isNotEmpty())
+        // Probe 6: the furniture phrase passes (it was flagged before D36b).
+        assertTrue(signals("Wipe the surface of the table.", rule).isEmpty())
+        // The binder exemption is "rows for" only: other table framing in a binder field is still caught.
+        assertTrue(binderSignals("Copy the genitive row into your binder.", rule).isNotEmpty())
+    }
+
     @Test fun eachWidenedCategoryIsCaught() {
         for (text in listOf(
             "The frozen note says two, three, and four take the genitive.",
@@ -193,8 +224,6 @@ class WidenedLearnerVoiceLintTest {
             "сто́л means table.",
             "The book is on the table.",
             "Put the letter on the table, then sit down.",
-            "In your binder, make a table of the six cases with rows for singular and plural.",
-            "Make a table with rows for each person, then fill it in from your book.",
             "Open the matching lesson in your book and read the dialogue aloud.",
             "Choose the correct form.",
             "до́ма is the singular dative form, not the plural nominative form.",
@@ -206,6 +235,11 @@ class WidenedLearnerVoiceLintTest {
             assertTrue(text, signals(text, "LEARNER_PROVENANCE_NARRATION").isEmpty())
             assertTrue(text, signals(text, "LEARNER_TABLE_CELL_MARKUP").isEmpty())
         }
+        // T16c-n1 (D36b): the binder "rows for" directions pass in a binder-direction field (was: in any field).
+        for (text in listOf(
+            "In your binder, make a table of the six cases with rows for singular and plural.",
+            "Make a table with rows for each person, then fill it in from your book.",
+        )) assertTrue(text, binderSignals(text, "LEARNER_PROVENANCE_NARRATION").isEmpty())
         // Letter notes (unit null) carry no review status either.
         assertTrue(current.letters.none { "review" in it.englishNote.lowercase() })
     }

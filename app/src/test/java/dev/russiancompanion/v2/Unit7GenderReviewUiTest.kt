@@ -30,7 +30,9 @@ class Unit7GenderReviewUiTest {
             compose.setContent { V2CumulativeReviewScreen(pack, store.v2LearnerView(), 7, false, {}, {}, {}, { _, _, _ -> }, { requested = it }, {}, {}) }
             waitTag("v2-review-insufficient")
             compose.onNodeWithText(newTitle).assertExists()
-            compose.onNodeWithText("Practise the taught forms; practise unfamiliar reading", substring = true) // T16-n2 (D31c): was "These finite recognitions do not demonstrate unseen reading".performScrollTo().assertIsDisplayed()
+            // T16-n2 (D31c): was "These finite recognitions do not demonstrate unseen reading"
+            // T16c-n1 (D36c): the assertion chain runs again (it was commented out by this note).
+            compose.onNodeWithText("Practise the taught forms; practise unfamiliar reading", substring = true).performScrollTo().assertIsDisplayed()
             compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
             compose.onNodeWithTag("v2-review-repair").performScrollTo().assertTextEquals("Open earlier Unit 3 instruction and checks").performClick()
             assertEquals(3, requested)
