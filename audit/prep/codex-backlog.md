@@ -49,13 +49,13 @@ Commits: d8af77f8 (D32b UI strings), f5861810 (Unit 14 content), 860e96e4 (pins)
 - D4 gap sentence; references, binder and tutor; A2-28 record 8,8,8,8,2,0.
 - Test changes in Unit15AspectPreparationTest and Unit15FeedbackCorrectionTest are legitimate. Recompute pins and hashes.
 
-## 4. T16f check: Block 3 close-out (DUE NOW: 16350eb1, 64d04b4b, 143e5730; DONE f2ad5aad marks Block 3 complete; CI 45067573646 passed on 143e5730)
+## 4. T16f check: DONE 11/23 (mechanics PASS; learner-voice leaks go to D37/D38)
 - block3.html: 3 clips (дать, дом, стол). Confirm that leaving out cue/teaching-only uses (быть, ли) is correct under the listen-check rule.
 - WC005: labels in Units 12, 14 and 15 come from frozen table fields. CC021: all 100 Units 11-15 checks are covered by remediation. CC024: сказа́ть is glossed "say, tell". WC004: the nationality reports use the source's English. WC009: links.
 - 22 disposition rows: 16 FIXED (check each fix exists), and BOUNDED_SCOPE or DEFERRED rows that are honest. 40 CC036 rows, justified individually.
 - Block 3 is literally complete against WORK_QUEUE.md lines 161-166.
 
-## 5. T17a check: D34 and Unit 16 (due once T17a is DONE)
+## 5. T17a check: DONE 11/23 (PASS except intro-16 leak, covered by D37)
 Commits: 6d6fd938 (D34), 569341cc (Unit 16), 43996033 (pins), then later commits.
 - D34: locators §15.8 p177/PDF189, ex 8/3 p89/PDF101 and ex 10/1 p109/PDF121. Check the +12 offset against the existing mappings. The CC032 book-only lists per unit are accurate.
 - Unit 16: 20/8; 52 MARK / 12 REWORD / 2 REMOVE; the S1 claim (line 1766) cites Wiktionary под 92761073 lines 106, 135 and 136.
@@ -64,7 +64,7 @@ Commits: 6d6fd938 (D34), 569341cc (Unit 16), 43996033 (pins), then later commits
 - ref-u1620-attribution edits ("frozen" changed to "pinned", "Proposed" dropped). The Units 18-20 digests move only because of that.
 - CI fix f9d776ae (run 45091734015 failed on a03fe699): Units1620SourceIntakeTest now accepts T17a records from the S1 and Units 21-25 freezes through the D7b verified path (verbatim in the manifest-named file). Confirm this is no weaker than D7b, that only those four records use it, and that a record from an unlisted freeze or revision is still rejected.
 
-## 6. T17b check: D1 and Unit 17 (DUE NOW: 246cc437 D1, b0216798, 561aa5af, 102e0ed9; DONE e88562bd; CI 45178861958 passed)
+## 6. T17b check: DONE 11/23 (FAIL: D1 substring bypass, fix D38a; CC036 Unit 17 rows go to T17f)
 - D1: the validator's count-question rule moves from layout wording ("two-hour row") to meaning. It still rejects a wrong count and a missing count context. Guard hash c800faf9 -> ba035cd3. Run your own probes.
 - Unit 17: counts, the 208 sweep rows, the ReadyRussian Grammar 24 citations (only the CC BY-SA handout portion), facts, phrases, references, the A2-28 record [8,8,8,8,3,0].
 - Facts: 180 MARK / 11 REWORD / 6 REMOVE. The S1 claims 1920, 1947 and 1948 cite ReadyRussian Grammar 24. Typed keys come from numbers-4371358.txt:109-130.

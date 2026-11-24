@@ -39,6 +39,7 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - owner-listen-check-2026-11-23.json: owner listen-check, all 34 candidate clips MATCH (D35).
 - t16c-codex-check-at-4732787a.txt: Codex check of T16c. FAIL on runtime S1 revision, row lint and 8 disabled UI assertions; see D36.
 - t16d-t16e-codex-check-at-23c636c4.txt: Codex check of T16d and T16e. Content PASS; lint-test coverage and three learner-text leaks FAIL; see D37.
+- t16f-t17a-t17b-codex-check-at-23c636c4.txt: Codex check of T16f, T17a and T17b. D1 count-rule bypass; review-intro and attribution leaks; see D38.
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
 - t15f-changed-learner-fields.csv: T15f, every changed learner field in Units 1-30 (442 rows: unit, owner, field, old, new) between 1bf80b92 and 34b714dd, for the Codex check of T15f.
 - d7b-valsim-at-e853de1e.out: D7b validator simulation at e853de1e (Code). Regions only synthesis records admitted, as (unit, text, allowlisted) and occurrence count; 100 distinct, 70 not allowlisted. See D18.

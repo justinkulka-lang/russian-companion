@@ -1,0 +1,136 @@
+Verified 23c636c45d1129dd3a637b07c753f0471a9d1490. No tracked files changed; nothing committed or pushed.
+
+27 targeted tests passed. The fresh phrase audit is clean for Units 11–17. All final task pins and hashes recompute correctly. A new D1 bypass accepts a wrong count even under full validation.
+
+Complete probe, test and hash output.
+
+Item 4 — T16f: overall FAIL for an unqualified Block 3 close-out
+
+Checklist item	Result	Evidence
+
+Listen-check sheet	PASS	Fresh regeneration matches block3.html: three clips, дать, дом, стол, with the correct uses. Block3CloseoutTest.kt:104.
+Omitted cue/teaching-only uses	PASS	Audio binding supports letters, example displays, and item answers/options—not cues or teaching bodies. Therefore excluding быть and ли is consistent with the binding rule. V2AudioVerification.kt:54.
+WC005 labels	PASS	Labels match the frozen grammatical fields and future-tense headings. apply_t16f_block3.py:51; Block3CloseoutTest.kt:51.
+CC021 remediation	PASS	All 100 checks are covered: 93 BOTH, 7 KEY_ONLY, 0 NEITHER. Whole-session remediation equality also passes. Block3CloseoutTest.kt:25.
+CC024, WC004, WC009	PASS	The three infinitive glosses are “say, tell”; nationality glosses match future-tense:22; remediation reference links resolve by topic. Block3CloseoutTest.kt:79, :51.
+Forty CC036 rows	PASS	Every row matches its actual cue, key and distractor. The individual notes acknowledge binary guessing, pronoun shortcuts and limits of recognition. cc036-binary-required-checks.csv.
+A2-23, coursework and references	PASS	Units 11–15: 20/12, 20/8, 20/11, 20/14, 20/14 checked/typed. Binder tasks, unit-test plans and topic references exist.
+A2-24 and automatic A2-26	PASS	Fresh findings: zero for Units 11–15.
+A2-28	PASS	All five recorded measurements reproduce; table below.
+Manual learner-text scan	FAIL	Stale review introductions and readiness workflow wording remain; detailed below.
+Pins, hashes and protocol	PASS	CI 45067573646 passed on exactly 143e5730. DONE f2ad5aad changes only WORK_QUEUE.md.
+
+
+The 16 FIXED disposition rows check as follows:
+
+Finding	Result	Verified fix
+
+CC001	PASS	Display permutation works: key first in 20/41 closed lesson displays, matching the recorded distribution.
+CC020	PASS	Fresh A2-28 progression reproduces.
+CC021	PASS	All 100 checks have remediation coverage.
+CC022	PASS	Required checks occupy end-of-unit check sessions.
+CC023	PASS	No markup findings; the cited cleanup exists.
+CC024	PASS	The three infinitive gloss corrections exist.
+CC025	PASS	Listed spelling/gloss corrections exist; listed typo scan is clean.
+CC026	PASS	Unit 13’s redesigned checks retain meaningful targets; A2-24 is clean.
+CC027	PASS	No constant-key objective or cue-as-option remains in Block 3.
+CC029	FAIL	Automatic lint is clean, but learner-voice cleanup is incomplete.
+WC004	PASS	Nationality translations match the frozen source.
+WC005	PASS	Required grammatical labels are taught.
+WC006	PASS	The instrumental forward reference is removed.
+WC007	PASS	Every required check displays Cyrillic.
+WC009	PASS	Topic-specific remediation links exist.
+WC011	PASS for the tasks	Unit-specific binder/tutor tasks exist. Its broader no-status-wording claim needs qualification because the UI still displays readiness workflow text.
+
+
+Evidence and original commit pointers: FINDINGS_DISPOSITION.csv:67 through :87.
+
+PASS for the bounded/deferred dispositions: CC003, CC030, CC036 and CC047 accurately bound their claims. CC032/CC033 describe their historical state truthfully; D34’s later rows supersede them. Disposition rows:78, :88.
+
+The mechanical completion measurements pass. The unqualified learner-voice closure does not. D34c’s recorded BLOCK_COMPLETE status remains unchanged; D37 assigns the outstanding repairs to T16c-n1.
+
+Item 5 — T17a: overall FAIL on the manual learner-text check
+
+Checklist item	Result	Evidence
+
+D34 locators	PASS	Correct additions: §15.8 177/189, exercise 8/3 89/101, exercise 10/1 109/121. Every existing mapped pair checked also uses +12. Only ownedEditionMappings changed in the D34 pack edit. apply_t17a_d34.py:24.
+CC032 book-only lists	PASS	All ten unit lists agree with the app’s bounded objectives and recorded gaps. They make no claim that the book-only material is assessed. FINDINGS_DISPOSITION.csv:88.
+Counts, keys and teaching order	PASS	20 checked / 8 typed, 40%; every key has exact frozen stress evidence and preceding teaching. All checks are in u16-s-checks; A2-24 findings: 0. Key evidence.
+Facts	PASS	52 MARK / 12 REWORD / 2 REMOVE. All current 140 markers pass the frozen-source checks.
+S1 entry 1766	PASS	Cites под:106,135,136: movement to beneath a location versus being beneath it, including swimming underwater. Disposition:530.
+“Longest clean stretch” selections	PASS	All 24 new selection records’ shipped text remains a contiguous substring of its original source text.
+Two means checks / “became” wording	PASS	The two binary checks retain distinct, sourced role contrasts. The infinitive explanations remain supported and distinguish the supplied meanings from English past-tense “became.” Transformer:94.
+Shared attribution and Units 18–20	PASS	Only the shared reference’s “frozen” → “pinned” wording and “Proposed” removal affect those units. Their unit structures, items and examples did not change.
+CI cross-freeze admission	PASS	Exactly four T17a records use this path: pod106, pod135, pod136, mor838. All bind verbatim. Ghost text is rejected; an unlisted revision produces 0 files; a mismatched revision does not supply the text. Units1620SourceIntakeTest.kt:155.
+Sweep, phrases, references and coursework	PASS	54 applied + 3 already satisfied = 57 sweep rows. All 3 phrases pass, including the broader shared-field audit. References, binder and tutor tasks resolve.
+A2-28	PASS	Fresh result [8,8,8,8,2,0]. Assertion:255.
+Manual scan	FAIL	Introduction 16 still says “Complete both review checks”; actual assignment size is eight. The readiness leak also remains.
+Pins, hashes and protocol	PASS	DONE is 69c8f2de, queue-only. CI 45105628346 passed on exactly f9d776ae, following failed run 45091734015.
+
+
+Item 6 — T17b: overall FAIL
+
+Checklist item	Result	Evidence
+
+Authorized D1 change and scope	PASS	Layout targets became counting meanings; the change is confined to the count features and competing-count guard.
+Standard D1 regressions	PASS	Correct counting prompt passes; wrong-five, missing-prompt-context and missing-rationale-context probes fail.
+Independent D1 bypass probes	FAIL	Wrong compound counts and unlisted competing counts pass. Full-validator confirmation below.
+Counts and typed keys	PASS	36 required checks / 11 typed, 30.56%. The separate unit-test plan selects 20/11. All keys are taught first, stress-exact and in u17-s-checks; A2-24 findings: 0. Key evidence.
+Key-source correction to backlog	PASS for provenance	The nine count phrases come from numbers:109–130. The two ordinal keys actually come from adjectives.csv:14,21, not those Numbers lines. Transformer:110.
+Sweep	PASS	204 applied + 4 already satisfied = 208 rows. The four are two D31b status mappings and two previously replaced global messages.
+Facts	PASS	180 MARK / 11 REWORD / 6 REMOVE; all current 318 markers pass frozen-source checks.
+ReadyRussian claims and licence boundary	PASS	Entries 1920, 1947 and 1948 match handout lines 60,62,64,65. These are within the handout bearing the CC BY-SA footer at :117; scripts/images/downloads are not used as claim evidence. Frozen hash recomputes to 933d0deb….
+Phrases, references and coursework	PASS	All 33 listed phrases pass, as does the broader shared-field audit. References, binder and tutor tasks resolve.
+Departures and tests	PASS for content/test changes	No third options were added; the duplicated “Choose <answer>” feedback scripts are removed. The Aud44 attribution expectation follows the wording change. UnitTestAndBinderTest preserves its positive and negative checks while moving examples to units that still meet their respective conditions.
+CC036 documentation	FAIL for documented closure	The ten binary required checks have sourced contrasts, but no Unit 17 per-item CC036 rows exist yet. These remain Block 4 close-out work.
+A2-28	PASS	Fresh result [8,8,8,8,3,0]. Assertion:278.
+Manual scan	FAIL	Stale introduction 17, readiness wording, and assessment-scope narration in ref-u17-attribution.detail remain.
+Pins, hashes and protocol	PASS	CI 45178861958 passed on exactly 102e0ed9. DONE e88562bd is queue-only.
+
+
+The decisive D1 output:
+
+valid:          featureValid=true
+wrong_five:     featureValid=false
+missing_prompt: featureValid=false
+missing_reason: featureValid=false
+twenty_two:     featureValid=true
+competing_four: featureValid=true
+
+ONLY_PROMPT_CHANGED=true
+FULL_WRONG_COUNT_VALIDATION=V2Validation(ok=true, errors=[])
+
+The full-validator probe changes only u17-i-hours-1.prompt to “Which phrase means twenty-two hours?”. Its key still means two hours.
+
+Cause: substring target matching at V2Validator.kt:4522, combined with the fixed one/two/five competitor list at :4532. Add regressions for complete quantities and competing counts outside that list.
+
+The ten missing CC036 entries are u17-i-hours-1–2, years-1–2, minutes-1–2, age-1–2, and clock-productive-1–2.
+
+Manual learner-text findings
+
+Scope	Remaining hit	Needed change
+
+Units 11–17 status UI	“Content complete, review pending”	Apply D37b’s plain label. V2ProgressRules.kt:76 → V2Screens.kt:435.
+Introductions 11–12	Repair-card inventories and “guided practice does not complete either review check”	Plain instructions matching the eight-item assignment.
+Introductions 13–14	“each of the three pools”; Unit 14 also retains repair inventories and assessment commentary	Apply D37c.
+Introductions 15–17	“Complete both review checks”	Require every assigned review item.
+ref-u17-attribution.detail	“The three clock phrases are bounded recognition”; “Productive clock-time is the ReadyRussian Grammar 20 system … applied to …”	Keep attribution in the notice; move assessment-scope statements to internal dispositions.
+
+
+Review-copy evidence: catalog/review-copy.json:41 through :47. Unit 17 attribution evidence: apply_t17b_unit_17.py:156.
+
+Pins and hashes
+
+All final values match:
+
+Task head	Release source digest	Unit 3 review-package digest
+
+T16f 143e5730	19c1b870…	aaf3ae36…
+T17a f9d776ae	2ab6c169…	5f1018d6…
+T17b 102e0ed9	0fa48af6…	98bd3f59…
+Current head	2589c83e…	c4882499…
+
+
+Also recomputed successfully: all six guarded-file hashes at each final task head and current head; curriculum commit pins; affected unit-content pins, including Units 18–20’s historical attribution changes; typed-key hashes; and 2,943 provenance records across Units 11–17.
+
+The D1 validator hash correctly changed c800faf9… → ba035cd3…. Current 7dd3d3c4… correctly includes the later D2 change.
