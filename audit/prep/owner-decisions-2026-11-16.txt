@@ -281,3 +281,8 @@ D44e. Letters (33 LETTER rows) need their own written policy, which T-AUDIO-2 dr
 D44f. Listen-check sheets play the private book reference next to the candidate wherever book-audio-reference-index.csv has one (319 rows). The book audio stays out of the repo and the app; the sheet is built locally and given to the owner.
 D44g. The rights review covers the actual account plan and the current ElevenLabs terms for distributing generated audio inside the APK. Its findings are recorded before any generated clip ships.
 D44h. Order: T-AUDIO-2 (tooling plus a dry run; no credits spent) comes after T17f. Generation starts with Units 1-19, whose content is settled, and Units 20-30 follow after their content is DONE.
+
+D45 (11/24, under D6). T16c-n2 CI strike count.
+D45a. A CI failure caused by infrastructure (a dependency or plugin download failing before the code compiles, while the build files are unchanged since the last green run) does not count as a strike under the fix-once rule. The re-run that followed was correct. The CourseworkChecklistTest failure on d2068195 (run 45408223291, attempt 2) is therefore the first real failure, and one fix is allowed.
+D45b. Approved fix: change CourseworkChecklistTest.kt:44 to check for the new D37a wording "Check this yourself", with an old-to-new comment. Before pushing, search every test source for each learner-visible string changed in T16c-n2, and add every test that checks one of them to the targeted set. Then push the fix together with 6dcfe6b3 (the T-AUDIO-2 queue entry) and run CI on that exact head. A green run allows the queue-only DONE commit. A real failure after this stops the task.
+D45c. The cancelled run 45400426888 on 91ed4bcd needs no re-run, because the new head contains 91ed4bcd.
