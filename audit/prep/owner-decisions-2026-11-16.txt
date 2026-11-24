@@ -263,3 +263,11 @@ D42a. Item 10, the capitalized Unit 5 typed keys: a typed key may differ from it
 D42b. The Unit 11 and 12 fact-resource builders already fail at HEAD: they look up sentences that later tasks reworded. That is a reproducibility gap, logged as a MEDIUM finding. Fix it in T17f (the Block 4 close-out): update both builders so they regenerate their committed outputs byte for byte. Don't fix it in T16c-n2.
 D42c. Confirmed: the A2-21 typed-answer normalization keeps folding ё for learner input. D41c applies to source and attestation comparisons only, not to how typed answers are graded.
 D42d. Confirmed: step.kind moves to declared-but-scanned now that the raw kind no longer renders.
+
+D43 (11/24, under D6). Rulings on Code's T16c-n2 confirmation items.
+D43a. D41b edge rule: a selection fails only where its boundary cuts through a word. Leading or trailing punctuation is not a cut. The literal reading of D41b failed about 16 valid selections that begin with punctuation.
+D43b. D42a scope: the first-letter case allowance applies only to the prompt "Type the question word that has this meaning."
+D43c. ё is part of the word pattern in the Kotlin and Python tokenizers. D41c requires this.
+D43d. The citations for the letters й, ъ and ь point to the raw frozen alphabet line (e.g. [[Й]]й). Two conditions: the typed key must equal the letter within that line, and no [[ or ]] markup may reach learner-visible text. Code found that the markup condition was not blocking for Unit 1, because the validator's markup rule covers only Units 16-30 and the pack-wide lint is not blocking. Code closed the gap with test-only commit d2068195 (TypedKeyCitationTest, 4 tests). That commit changes no content, rule, guard hash or digest.
+D43e. The rewritten review-copy introductions for Units 3-30 are approved, subject to D37c: counts must be accurate or left out.
+D43f. Step-kind status labels are plain words, never the raw kind name (D31b).
