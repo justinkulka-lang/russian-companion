@@ -1,0 +1,129 @@
+Overall FAIL at 8ccff26d7d4adaef97b270886a1896813244a574.
+
+T16c-n1’s content commit is 860d42ea, based on 24f56e71. CI 45333913169 passed on that exact commit; 8ccff26d changes only WORK_QUEUE.md. My targeted rerun passed 19 tests, but additional probes found gaps.
+
+No tracked files changed; nothing committed or pushed. Probe output.
+
+Item	Result	Finding
+
+1. Review assertions	PASS	All eight restored chains execute. No other disabled chains found across 302 test-source files.
+2. S1 revisions	PASS	Wrong S1 revision rejected; exact revision and non-S1 legacy admission retained.
+3. Row/table and binder lint	FAIL	Six original probes pass, but rendered binder tasks escape linting; D40c exceptions remain incomplete.
+7. D1 quantities	FAIL	Original regressions pass; additional quantities can still masquerade as “two hours.”
+9. Selection boundaries	FAIL	Mid-word “port” rejected, but apostrophe-edge cuts pass. The existing-selection test does not check every record directly.
+Pins and test changes	PASS, with coverage limitation	Recomputed values match; no existing assertion weakened. The new selection test overstates its coverage.
+
+
+1. Eight UI assertions
+
+The executable .performScrollTo().assertIsDisplayed() chains are present in:
+
+- Unit6PresentReviewUiTest.kt:32
+- Units 7–13’s corresponding review UI tests, each at line 35.
+
+The explanatory comments now occupy separate lines. My whole-tree scan returned DISABLED_CHAINS=[]. Execution evidence is the passing exact-commit CI.
+
+2. S1 wrong-revision probe
+
+S1IntakeAdmissionTest.kt:106 passed when rerun:
+
+- src-ruwiki-vid-lingvistika-153277825 at legacy revision 152437423: rejected.
+- Its exact S1 revision 153277825: admitted.
+- Existing non-S1 src-ruwiki-narechie-152437423 records: still admitted.
+
+The S1-first branch is at V2Validator.kt:5266.
+
+3. Row/table probes and binder cases
+
+All six original results are correct:
+
+Probe	Result
+
+Furniture gloss “стол — table”	Pass
+“The dictionary form…”	Pass
+Binder instruction with “rows for”	Pass in BINDER step; flagged elsewhere
+“The row of soldiers…”	Pass
+“Read the row for this case.”	Flagged
+“Wipe the surface of the table.”	Pass
+
+
+D40c cases fail:
+
+- In an actual binderTask.prompt, “Copy the genitive row into your binder.” produces no hit.
+- In a BINDER step, “Write each form in each row of your table.” is incorrectly flagged.
+- In a BINDER step, “Copy the rows for each case from the source.” incorrectly passes.
+
+The scan handles BINDER step fields at V2DesignDiagnostics.kt:265, but omits rendered binder tasks. Those fields are explicitly declared at V2LearnerFields.kt:28.
+
+Required change: scan binder tasks, narrowly exempt the learner’s own table wording, and retain source-framing rejection.
+
+7. D1 quantity probes
+
+“Twenty-two,” competing “four,” numeric 22, and “one hundred and two” correctly fail against the two-hour key.
+
+These additional prompts incorrectly remain feature-valid:
+
+one billion two hours → parsed as [two hours]
+twenty–two hours      → parsed as [two hours]
+twenty‑two hours      → parsed as [two hours]
+twenty two hours      → parsed as [two hours]  (NBSP)
+twenty<LF>two hours   → parsed as [two hours]
+
+Changing only the prompt to “Which phrase means one billion two hours?” also passes the full validator:
+
+V2Validation(ok=true, errors=[])
+
+Cause: the finite number-word list and ASCII separators at V2Validator.kt:3869 allow suffix matching. Required change: reject these complete competing quantities rather than extracting their final “two hours.”
+
+9. Selection-boundary probes
+
+Correct results:
+
+- port from report: rejected.
+- report from report: accepted.
+- clock from o'clock: rejected.
+- Quotation marks surrounding a whole gloss: accepted.
+- Mid-component hyphen cuts: rejected; whole hyphen-separated components are accepted under the stated character rule.
+
+Failures in both Kotlin and Python:
+
+o'clock → 'clock   accepted
+o'clock → o'       accepted
+o’clock → ’clock   accepted
+
+Using a genuine frozen W:39–41 record with only its shipped selection changed, both o' and 'clock still classify as EXPLICIT_SOURCE_PAIR.
+
+The helpers classify selection-edge apostrophes using the detached selection, losing their original word-internal context: V2Validator.kt:2951, Python helper:86.
+
+The ё/е probe also exposes a comparison discrepancy:
+
+containsWhole("моё", "мое") = false
+displayedInFrozen(...)     = true
+Python selectable(...)    = false
+
+Kotlin’s fallback collapses ё to е at V2Validator.kt:2838. This demonstrates a helper discrepancy, not a proven bypass of the separate phrase audit.
+
+Finally, directly checking all 2,839 selection records returned three failures:
+
+Record	Displayed selection	Frozen witness
+
+prov-d7b-u26-039	Садовая	adjectives.csv:936
+prov-d7b-u26-044	Здравствуйте	readyrussian/letter.html:75
+prov-d7b-u30-056	стоял	verbs.csv:11
+
+
+These appear to be display-normalization false negatives involving OpenRussian stress apostrophes or inline HTML, rather than missing witnesses. Nevertheless, the claimed complete recheck is unsupported: SelectionWordBoundaryRuleTest.kt:40 only validates the pack.
+
+Required changes: fix contextual apostrophe boundaries, preserve ё/е consistently, and test every selection directly with the proper display normalization.
+
+Pins, tests and T17d
+
+All six source-guard hashes match. Recomputed values:
+
+Validator SHA-256: 7456909aff0944f3c7a32211c044b3088a9281dc514ae9506017891a3f111c29
+Release digest:    12268ab63d854642dfc6601d8fdba2b8965e07c7a4dfccdb5535b11834df9ded
+Unit 3 review:     c48824999d8866c415b4dd62bb1bbf3172a5bf327e621940002cac12aee5392a
+
+Pack and audio manifest are unchanged. Existing assertions were not weakened; the binder test relocation implements the authorized field distinction, although its coverage is incomplete.
+
+T17d is DONE: queue-only commit 24f56e71; CI 45283753870 passed on exact code commit 23c636c45d1129dd3a637b07c753f0471a9d1490. Recorded in WORK_QUEUE.md:2962.

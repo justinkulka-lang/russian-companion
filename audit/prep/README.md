@@ -41,6 +41,7 @@ Owner-supplied copies of Codex's read-only preparation reports, for the implemen
 - t16d-t16e-codex-check-at-23c636c4.txt: Codex check of T16d and T16e. Content PASS; lint-test coverage and three learner-text leaks FAIL; see D37.
 - t16f-t17a-t17b-codex-check-at-23c636c4.txt: Codex check of T16f, T17a and T17b. D1 count-rule bypass; review-intro and attribution leaks; see D38.
 - t17c-t17d-codex-check-at-23c636c4.txt: Codex check of T17c and T17d. Mid-word selection bypass and typed-key binding gap; see D39.
+- t16c-n1-codex-check-at-8ccff26d.txt: Codex check of T16c-n1. Items 1-2 PASS; edge cases in quantities, selection boundaries and binder lint; see D41 (including the stopping rule).
 - s1-intake-research-units-11-15-at-9a9b9760.txt: S1 source intake
 - t15f-changed-learner-fields.csv: T15f, every changed learner field in Units 1-30 (442 rows: unit, owner, field, old, new) between 1bf80b92 and 34b714dd, for the Codex check of T15f.
 - d7b-valsim-at-e853de1e.out: D7b validator simulation at e853de1e (Code). Regions only synthesis records admitted, as (unit, text, allowlisted) and occurrence count; 100 distinct, 70 not allowlisted. See D18.
