@@ -41,7 +41,10 @@ class CourseworkChecklistTest {
                 before.count { it.kind == V2AssignmentKind.APP_SESSION })
             assertTrue(before.filter { it.kind == V2AssignmentKind.APP_SESSION }.all { it.status == V2AssignmentStatus.TODO })
             assertEquals(V2AssignmentStatus.TODO, before.single { it.id == "review-due" }.status)
-            assertTrue(before.single { it.kind == V2AssignmentKind.BINDER_TASK }.detail!!.contains("Self-check"))
+            // T16c-n2 expectation change (owner decisions D37a, D45b): "Self-check" -> "Check this yourself". The binder-task note
+            // is now the plain instruction "Check this yourself against the model answer." (was "Self-check only; not shown as
+            // demonstrated ability.").
+            assertTrue(before.single { it.kind == V2AssignmentKind.BINDER_TASK }.detail!!.contains("Check this yourself"))
 
             // English-only fixture: named exercises bind into the checklist and the pack identity.
             val fixture = p.copy(ownedEditionMappings = p.ownedEditionMappings.map {
