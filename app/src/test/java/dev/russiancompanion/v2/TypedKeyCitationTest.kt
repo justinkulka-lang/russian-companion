@@ -77,4 +77,38 @@ class TypedKeyCitationTest {
             assertTrue(V2Validator.containsWhole(cited.originalSourceText, letter.answer))
         }
     }
+
+    @Test fun letterCellCitationsCheckTheLetterAndKeepWikiMarkupOutOfLearnerText() {
+        // D43d (owner approval of the raw letter-cell citation, with two conditions).
+        // (1) Typed-key equality is checked against the letter within the cited line (V2Validator.typedKeyCitationErrors: the
+        //     record's shipped text must equal the key, and the key must occur as a whole word in the frozen line): a letter
+        //     key cited to another letter's cell fails, as does a key that is not the cell's letter.
+        val ids = listOf("u1-i-type-й", "u1-i-type-ъ", "u1-i-type-ь")
+        val letters = ids.map { pack.item(it)!! }
+        for (letter in letters) {
+            val own = pack.provenanceRecords.single { it.itemId == letter.keyCitation }
+            assertEquals(letter.answer, own.shippedText)
+            for (other in letters.filter { it.id != letter.id }) {
+                assertTrue("${letter.id} cited to ${other.keyCitation}",
+                    V2Validator.typedKeyCitationErrors(pack, letter.copy(keyCitation = other.keyCitation)).isNotEmpty())
+                val moved = pack.copy(provenanceRecords = pack.provenanceRecords.map {
+                    if (it.itemId == own.itemId) it.copy(shippedText = other.answer) else it
+                })
+                assertTrue("${letter.id} keyed ${other.answer}", V2Validator.typedKeyCitationErrors(moved,
+                    letter.copy(answer = other.answer)).isNotEmpty())
+            }
+        }
+        // (2) No [[ or ]] reaches learner-visible text: the frozen line and record locator are provenance data, never a
+        //     learner field (the offline notice shows only a record's licence URL and share-alike text), and no learner
+        //     field anywhere in the pack (rendered or declared-but-scanned, Units 1-30 and the notices) contains either marker.
+        assertTrue(V2LearnerFields.KINDS.none { "originalSourceText" in it || "sourceRecordId" in it || "provenance" in it })
+        val wiki = Regex("\\[\\[|\\]\\]")
+        val leaks = V2LearnerFields.fields(pack).filter { wiki.containsMatchIn(it.text) }.map { "${it.unit} ${it.ownerField}" }
+        assertTrue(leaks.joinToString("\n"), leaks.isEmpty())
+        val typedFields = typed.flatMap { listOf(it.prompt, it.answer, it.feedback, it.promptLetter.orEmpty()) +
+            it.options + it.typedAnswerKey!!.acceptedAnswers }
+        assertTrue(typedFields.none { wiki.containsMatchIn(it) })
+        // Regression: the cited line itself does carry the markup, so a leak of it would be caught above.
+        assertTrue(wiki.containsMatchIn(pack.provenanceRecords.single { it.itemId == letters.first().keyCitation }.originalSourceText))
+    }
 }
