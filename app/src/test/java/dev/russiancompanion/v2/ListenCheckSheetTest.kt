@@ -31,6 +31,8 @@ class ListenCheckSheetTest {
             // Every use really shows this text (stress marks ignored, nothing else normalized).
             // T-AUDIO-1 expectation change (owner ruling 2026-11-24): stressFree equality -> audioMatchKey equality, which
             // also ignores the case of the first letter only.
+            // T-AUDIO-1a expectation change (owner decision D48): audioMatchKey ignores stress marks only in a one-vowel word
+            // (was: in every word); the Block 1 candidates are all one-vowel words, so the same 21 still match.
             for (use in c.uses) assertTrue(audioTargetTexts(pack, use.targetKind, use.targetId)!!.any { audioMatchKey(it) == audioMatchKey(c.text) })
         }
         assertTrue(candidates.any { c -> c.uses.any { it.targetKind == "LETTER" } })

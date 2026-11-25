@@ -49,13 +49,30 @@ internal fun sha256Hex(bytes: ByteArray): String =
 internal fun stressFree(text: String): String =
     Normalizer.normalize(Normalizer.normalize(text, Normalizer.Form.NFD).replace("́", ""), Normalizer.Form.NFC).trim()
 
+/** The Russian vowel letters, lowercase and uppercase, as code points (no Cyrillic literal in main sources). */
+private val VOWEL_LETTERS = setOf(0x0430, 0x0435, 0x0451, 0x0438, 0x043E, 0x0443, 0x044B, 0x044D, 0x044E, 0x044F,
+    0x0410, 0x0415, 0x0401, 0x0418, 0x041E, 0x0423, 0x042B, 0x042D, 0x042E, 0x042F)
+
+/**
+ * T-AUDIO-1a (owner decision D48, approved rule change): a stress-mark difference is allowed only in a word with exactly one
+ * vowel letter, where the mark cannot move the stress. A text with more than one vowel letter keeps its stress marks, so
+ * zamok stressed on the first syllable (castle) and on the second (lock), or either and the unmarked form, are different texts. Whitespace is trimmed at the ends only; yo and ye stay
+ * distinct (was: stressFree, which dropped every stress mark whatever the word).
+ */
+internal fun stressNormalized(text: String): String {
+    val trimmed = Normalizer.normalize(text, Normalizer.Form.NFC).trim()
+    val plain = stressFree(trimmed)
+    return if (plain.codePoints().filter { it in VOWEL_LETTERS }.count() == 1L) plain else trimmed
+}
+
 /**
  * Text used to match a clip to a target (owner ruling 2026-11-24, T-AUDIO-1): stress marks aside, the two texts are equal
  * or differ only in the case of their first letter (a sentence-initial question word or pronoun shows a capital the clip's
  * catalog text does not have). Nothing else is normalized; any other case difference is a different text.
+ * D48: "stress marks aside" holds only for a one-vowel word (stressNormalized); a longer word must match its stress exactly.
  */
 internal fun audioMatchKey(text: String): String {
-    val plain = stressFree(text)
+    val plain = stressNormalized(text)
     if (plain.isEmpty()) return plain
     val first = plain.codePointAt(0)
     return String(Character.toChars(Character.toLowerCase(first))) + plain.substring(Character.charCount(first))
@@ -85,7 +102,8 @@ internal fun audioVerificationDefects(registry: V2AudioVerificationRegistry, pac
         val clip = clips[r.clipId]
         if (clip == null) { errors += "$label names a missing clip"; continue }
         if (clip.sha256 != r.clipSha256) errors += "$label does not match the bundled clip bytes"
-        if (stressFree(clip.text) != stressFree(r.text)) errors += "$label text differs from the clip's catalog text"
+        // D48: the record's text is the clip's catalog text; a stress mark may differ only in a one-vowel word.
+        if (stressNormalized(clip.text) != stressNormalized(r.text)) errors += "$label text differs from the clip's catalog text"
         val targets = audioTargetTexts(pack, r.targetKind, r.targetId)
         if (targets == null) errors += "$label names a missing target"
         else if (targets.none { audioMatchKey(it) == audioMatchKey(r.text) }) errors += "$label text is not the target's text"

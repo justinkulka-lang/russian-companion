@@ -94,13 +94,55 @@ class AudioVerificationBindingTest {
         val map = clips.associateBy { it.id }
         assertEquals(emptyList<String>(), audioVerificationDefects(V2AudioVerificationRegistry(records = listOf(ok)), pack, map))
         assertEquals(audioMatchKey("Где"), audioMatchKey("где"))
+        // T-AUDIO-1a expectation change (owner decision D48): old: any stress-mark difference matched (stressFree). New: only in
+        // a word with exactly one vowel letter; где has one, so the stressed and plain forms still match.
         assertEquals(audioMatchKey("где́"), audioMatchKey("Где"))
+        assertEquals(audioMatchKey("до́м"), audioMatchKey("дом"))
+        // A word with more than one vowel letter must match its stress exactly: за́мок (castle) is not замо́к (lock), and
+        // neither is the unmarked замок; ё is not е.
+        assertNotEquals(audioMatchKey("за́мок"), audioMatchKey("замо́к"))
+        assertNotEquals(audioMatchKey("за́мок"), audioMatchKey("замок"))
+        assertNotEquals(audioMatchKey("её"), audioMatchKey("ее"))
+        assertNotEquals(audioMatchKey("ёж"), audioMatchKey("еж"))
+        // Whitespace is trimmed at the ends only.
+        assertEquals(audioMatchKey(" дом "), audioMatchKey("дом"))
+        assertNotEquals(audioMatchKey("мой стол"), audioMatchKey("мой  стол"))
+        // A multi-vowel record whose stress differs from its target fails the registry check; with matching stress it binds.
+        val zamokPack = pack.copy(examples = pack.examples.map { if (it.id == "ex-u5-q-gde") it.copy(display = "за́мок") else it })
+        val zamokClip = V2CatalogClip(gde.id, "замо́к", gde.sha256)
+        val zamokMap = map + (gde.id to zamokClip)
+        val zamok = ok.copy(text = "замо́к")
+        assertTrue(audioVerificationDefects(V2AudioVerificationRegistry(records = listOf(zamok)), zamokPack, zamokMap)
+            .any { "is not the target's text" in it })
+        val castlePack = pack.copy(examples = pack.examples.map { if (it.id == "ex-u5-q-gde") it.copy(display = "замо́к") else it })
+        assertEquals(emptyList<String>(), audioVerificationDefects(V2AudioVerificationRegistry(records = listOf(zamok)), castlePack, zamokMap))
+        // A record text that differs from a multi-vowel catalog text by its stress mark is not the clip's text either.
+        assertTrue(audioVerificationDefects(V2AudioVerificationRegistry(records = listOf(zamok.copy(text = "за́мок"))), castlePack, zamokMap)
+            .any { "differs from the clip's catalog text" in it })
         // Any other case difference, or a different letter, is a different text.
         for (other in listOf("ГДЕ", "гДе", "гдЕ", "Гда")) assertNotEquals(other, audioMatchKey("где"), audioMatchKey(other))
         val shouted = pack.copy(examples = pack.examples.map { if (it.id == "ex-u5-q-gde") it.copy(display = "ГДЕ") else it })
         assertTrue(audioVerificationDefects(V2AudioVerificationRegistry(records = listOf(ok)), shouted, map).isNotEmpty())
         // The record's own text must still equal the clip's catalog text (stress marks aside), not merely its key.
         assertTrue(audioVerificationDefects(V2AudioVerificationRegistry(records = listOf(ok.copy(text = "Где"))), pack, map).isNotEmpty())
+    }
+
+    /**
+     * D48: the narrowed stress rule keeps every binding. All 27 bound clips are one-vowel words; 104 records bound before and
+     * 104 bind after, 25 of them to a target that differs from the clip's text only by a stress mark (до́м / дом).
+     */
+    @Test fun everyBindingSurvivesTheNarrowedStressRule() {
+        val registry = Json.decodeFromString(V2AudioVerificationRegistry.serializer(), File(assets, "content/audio-verification.json").readText())
+        assertEquals(104, registry.records.size)
+        assertEquals(emptyList<String>(), audioVerificationDefects(registry, pack, clips.associateBy { it.id }))
+        val vowels = "аеёиоуыэюяАЕЁИОУЫЭЮЯ"
+        assertTrue(registry.records.map { it.text }.distinct().all { t -> stressFree(t).count { it in vowels } == 1 })
+        val stressOnly = registry.records.count { r ->
+            val targets = audioTargetTexts(pack, r.targetKind, r.targetId)!!
+            targets.none { audioMatchKey(it) == audioMatchKey(r.text) && stressFree(it) == it } &&
+                targets.any { audioMatchKey(it) == audioMatchKey(r.text) }
+        }
+        assertEquals(25, stressOnly)
     }
 
     @Test fun manifestStatusesFollowTheOwnerResultsAndTheRegistry() {
