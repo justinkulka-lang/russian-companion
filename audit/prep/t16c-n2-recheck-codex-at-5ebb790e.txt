@@ -1,0 +1,27 @@
+Codex read-only recheck of T16c-n2 (single pass under D41f), at 5ebb790e (code 9f8f6e4b, content 53fcc674, CI 45483710309 green).
+Verdict: FAIL. 5 BLOCKING findings, 1 LOW finding. No repository files changed. Disposition: D46.
+
+1. BLOCKING (D37a). Rendered literals can get past the UI lint. UiStringLintTest.kt:133 exempts identifier-like text whenever the immediate call is not recognized as rendering. These probes returned no findings:
+   val label = "review-pending"; Text(label)
+   Text(buildString { append("APPROVED") })
+   Text("${if (blocked) { "APPROVED" } else { "Ready" }}")
+   Text("APPROVED")   (UiLiteralScanner.kt:76 does not decode the escape)
+   Direct Text("APPROVED") correctly fails.
+
+2. BLOCKING (D37c). The no-count check admits inaccurate counts. ReviewCopyTest.kt:35 omits number words such as sixty and seventy.
+   Probe: replace the Unit 3 introduction in memory with "Answer sixty review checks before continuing." Every assertion still passes.
+
+3. BLOCKING (D38a/D41a). Fractional and multiplier quantities still pass. V2Validator.kt:3922 does not detect fraction or multiplier words.
+   Probe: set u17-i-hours-1.prompt to "Which phrase means half of two hours?" while keeping the two-hour key. structureValid returns [], featureValid returns true, and full validation returns no errors. "Double two hours" also passes.
+
+4. BLOCKING (D39b/D43b). Citation enforcement skips accepted answers. TypedKeyCitationTest.kt:25 and V2Validator.kt:5760 check only the primary answer.
+   Probe: u18-i-type-luchshii with acceptedAnswers ["бо́льший", "лу́чший"] and the review digest recomputed. Citation errors: none. Validation errors: none. The pin test passes, and submitting бо́льший is scored correct. If бо́льший is listed first, "Show answer" displays it.
+
+5. BLOCKING (D40c/D41e). The binder exemption swallows source framing. V2DesignDiagnostics.kt:125 removes everything between "make a table" and "with rows for". These probes produce no signal:
+   "Make a table by copying the genitive row with rows for each case."
+   "Make a table from the source table with rows for singular and plural."
+   The standalone "Copy the genitive row into your binder" correctly fails.
+
+6. LOW (D41c/D43c). The older helper units_6_10_lessons.py still folds ё into е. Line 62 does the fold, the tokenizer at line 66 excludes ё, and _displayed_in_frozen at line 153 still matches substrings. Probes: _tokens("ёлка") == _tokens("елка"); the helper accepts мое for моё and port inside report. The canonical helpers reject all of these.
+
+Checks that passed: readiness and step labels; the 10 attribution dispositions; all 197 primary keys; selection boundaries in the canonical helpers; direct checks on all 2,842 selection records; wrong-letter citations and markup injection; the changed test expectations.
