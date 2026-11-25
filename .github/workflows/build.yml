@@ -3,6 +3,8 @@ name: Engineering verification
 on:
   workflow_dispatch:
   push:
+    branches-ignore:
+      - owner/prep-reports
     paths-ignore:
       - WORK_QUEUE.md
 

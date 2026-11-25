@@ -297,3 +297,8 @@ D46f. Finding 1: UI lint decodes Unicode escapes before checking. It also drops 
 D46g. Finding 6 is LOW. If redirecting units_6_10_lessons.py to the canonical helper takes only a few lines, do it in T16c-n3. If not, log it as a disposition and leave it.
 D46h. Codex's follow-up check after T16c-n3 is limited to these five fixes and the accepted-answer audit. Any further finding is LOW unless it shows wrong content shipping now. That ends the T16c series.
 D46i. Order: T16c-n3 runs after T-AUDIO-1 and before T17e.
+
+D47 (11/24, under D6). T-AUDIO-1 rulings.
+D47a. The owner ruling of 2026-11-24 approved for T-AUDIO-1 is recorded here as D47a. A verified clip may be bound to on-screen text that differs from the clip's catalog text only in the case of the first letter (Где / где). Nothing else is normalized.
+D47b. CI push builds skip owner/prep-reports. The skip is mirrored in that branch's own build.yml, because GitHub reads the workflow from the branch being pushed. Manual runs still work.
+D47c. The seven single-letter clips (а, в, и, к, о, с, я) have no listen-check result. They remain an open owner item. They stay unverified and unbound until the owner listen-checks them.
