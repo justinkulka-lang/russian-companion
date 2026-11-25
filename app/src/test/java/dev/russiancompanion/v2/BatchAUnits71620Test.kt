@@ -205,8 +205,9 @@ class BatchAUnits71620Test {
         // T17d: the typed Unit 19 items of the Batch A objectives join them: 4 conditional and 3 obligation checks and the typed
         // obligation guided item (18 -> 26; the prefix-caution objective is not a Batch A objective).
         val typed = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES && it.kind == "TYPED_FORM" }
-        assertEquals(26, typed.size)
-        assertTrue(typed.all { (it.objectiveId.startsWith("obj-u18-") || it.objectiveId in setOf("obj-u19-conditional", "obj-u19-obligation")) &&
+        // T17e: the 12 typed Unit 20 checks and 2 typed Unit 20 guided items of obj-u20-motion join them (26 -> 40).
+        assertEquals(40, typed.size)
+        assertTrue(typed.all { (it.objectiveId.startsWith("obj-u18-") || it.objectiveId in setOf("obj-u19-conditional", "obj-u19-obligation", "obj-u20-motion")) &&
             it.options.isEmpty() })
         val current = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES && it.kind != "TYPED_FORM" }
         val referenceIds = setOf("u17-g-clock-0", "u17-i-clock-1", "u17-i-clock-2")

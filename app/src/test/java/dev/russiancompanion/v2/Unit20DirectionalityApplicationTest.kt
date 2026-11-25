@@ -28,7 +28,9 @@ class Unit20DirectionalityApplicationTest {
                 store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, p.item(id)!!.answer, PRESCRIBED_CHECK, step.id, "2026-10-13T09:00")!!)
             }
             assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS, objectiveState(o, store.v2LearnerView(), p))
-            val features = o.checkItemIds.map { p.item(it)!!.assessment!!.testedFeature }.toSet()
+            // T17e: the twelve typed checks carry no closed-item assessment, so the features are read from the checks that have one
+            // (was: every check, when all eight checks were closed items).
+            val features = o.checkItemIds.mapNotNull { p.item(it)!!.assessment?.testedFeature }.toSet()
             assertTrue("A completed motion objective must require independent contextual directionality, not guided labels and lexical or prefixed readings alone",
                 features.containsAll(setOf("MOTION_DIRECTIONAL_APPLICATION")))
         }

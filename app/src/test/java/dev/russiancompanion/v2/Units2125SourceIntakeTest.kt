@@ -58,7 +58,7 @@ class Units2125SourceIntakeTest {
         // T17a: the shared ref-u1620-attribution notice (was 0006fdf5...). T17d: Unit 19 content (was 26e89ab2...).
         19 to "cd6db68a92de0fe31c3e66e06e47ddcf9affc65cc54db1a51c75c46a6e0f45c2",
         // T17a: the shared ref-u1620-attribution notice (was 380eb131...).
-        20 to "cd1ef77d45a91a06be957569e4cc01b157acd476c03bd888b9be6b80262e37c4",
+        20 to "68d42e6e99080b6360f84dd1fc9e29a24530b382cbef3f99dc17047b5a5d9a53", // T17e: Unit 20 content (was cd1ef77d...)
     )
 
     private val preservedMappingDigests = mapOf(

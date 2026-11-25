@@ -685,7 +685,19 @@
           "u20-i-direction-birds",
           "u20-i-direction-city",
           "u20-i-direction-weekly",
-          "u20-i-direction-round"
+          "u20-i-direction-round",
+          "u20-i-type-idti",
+          "u20-i-type-ekhat",
+          "u20-i-type-nesti",
+          "u20-i-type-vesti",
+          "u20-i-type-vezti",
+          "u20-i-type-poshel",
+          "u20-i-type-shel",
+          "u20-i-type-otoshel",
+          "u20-i-type-idem",
+          "u20-i-type-letyat",
+          "u20-i-type-khodit",
+          "u20-i-type-ezdil"
         ],
         "requiredGuidedItemIds": [
           "u20-g-direction-library",

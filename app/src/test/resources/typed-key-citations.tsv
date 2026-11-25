@@ -200,3 +200,17 @@ u19-i-type-by-pospala	Type the conditional a female speaker uses, with the parti
 u19-i-type-dolzhna	Type the obligation form used with a feminine subject.	должна	prov-ex-u19-obligation-1-ru	src-wikibooks-russian-cc-by-sa	lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
 u19-i-type-dolzhno	Type the obligation form used with a neuter subject.	должно	prov-ex-u19-obligation-2-ru	src-wikibooks-russian-cc-by-sa	lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
 u19-i-type-dolzhny	Type the obligation form used with a plural subject.	должны	prov-ex-u19-obligation-3-ru	src-wikibooks-russian-cc-by-sa	lesson3:"I have to" translates to я должен (pronounced "dol-zhen," sort of like "dolphin
+u20-g-type-nosit	Practice: type the multidirectional partner of the shown verb.	носи́ть	prov-t17e-u20-g1276-64bbc212	src-wikipedia-russian-grammar-1369617627	grammar:| to carry || нести́ || носи́ть
+u20-g-type-vodit	Practice: type the multidirectional partner of the shown verb.	води́ть	prov-t17e-u20-g1262-298be778	src-wikipedia-russian-grammar-1369617627	grammar:| to lead || вести́ || води́ть
+u20-i-type-idti	Type the unidirectional partner of the shown verb (to go, walk).	идти́	prov-t17e-u20-g1268-4344f950	src-wikipedia-russian-grammar-1369617627	grammar:| to go, walk || идти́ || ходи́ть
+u20-i-type-ekhat	Type the unidirectional partner of the shown verb (to go by vehicle, ride).	е́хать	prov-t17e-u20-g1266-5858294f	src-wikipedia-russian-grammar-1369617627	grammar:| to go by vehicle, ride || е́хать || е́здить
+u20-i-type-nesti	Type the unidirectional partner of the shown verb (to carry).	нести́	prov-t17e-u20-g1276-8a6a8979	src-wikipedia-russian-grammar-1369617627	grammar:| to carry || нести́ || носи́ть
+u20-i-type-vesti	Type the unidirectional partner of the shown verb (to lead).	вести́	prov-t17e-u20-g1262-c55ccc15	src-wikipedia-russian-grammar-1369617627	grammar:| to lead || вести́ || води́ть
+u20-i-type-vezti	Type the unidirectional partner of the shown verb (to convey, transport).	везти́	prov-t17e-u20-g1260-c9652f6b	src-wikipedia-russian-grammar-1369617627	grammar:| to convey, transport || везти́ || вози́ть
+u20-i-type-poshel	Type the masculine past form of the shown verb.	пошёл	prov-t17e-u20-v-b9f19499-past_m	src-openrussian-50e210c4	verbs.csv:пойти'#past_m
+u20-i-type-shel	Type the masculine past form of the shown verb.	шёл	prov-t17e-u20-v-c1e67736-past_m	src-openrussian-50e210c4	verbs.csv:идти'#past_m
+u20-i-type-otoshel	Type the masculine past form of the shown verb.	отошёл	prov-t17e-u20-v-694974c1-past_m	src-openrussian-50e210c4	verbs.csv:отойти'#past_m
+u20-i-type-idem	Type the we form of the shown verb.	идём	prov-t17e-u20-v-c7e0c45d-presfut_pl1	src-openrussian-50e210c4	verbs.csv:идти'#presfut_pl1
+u20-i-type-letyat	Type the unidirectional they form that matches the shown multidirectional form.	летят	prov-t17e-u20-g1289-c1fdb9b5	src-wikipedia-russian-grammar-1369617627	grammar:* The birds are flying south.<br />Птицы летят на юг.
+u20-i-type-khodit	Type the he or she form of the shown verb.	ходит	prov-t17e-u20-g1292-96c7e33a	src-wikipedia-russian-grammar-1369617627	grammar:#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+u20-i-type-ezdil	Type the masculine past form of the shown verb.	ездил	prov-t17e-u20-g1299-8929adcb	src-wikipedia-russian-grammar-1369617627	grammar:#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Росс

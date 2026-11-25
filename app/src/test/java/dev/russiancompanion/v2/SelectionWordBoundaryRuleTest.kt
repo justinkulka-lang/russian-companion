@@ -83,8 +83,10 @@ class SelectionWordBoundaryRuleTest {
         val selections = pack.provenanceRecords.filter { it.transformation.contains("selection") }
         // T16c-n2 expectation change: 2839 -> 2842. The 2,839 records named in D41d plus the three D40a letter-cell records
         // (prov-t16cn2-key-u1-i-type-{short i, hard sign, soft sign}) added by this task; all 2,842 are checked.
-        assertEquals(2842, selections.size)
-        assertEquals(2839, selections.count { !it.itemId.startsWith("prov-t16cn2-key-") })
+        // T17e expectation change: 2842 -> 2888. The T17e Unit 20 selection records (prov-t17e-u20-*: cues, keys, forms and fact
+        // evidence lines) join them; all are checked.
+        assertEquals(2888, selections.size)
+        assertEquals(2839, selections.count { !it.itemId.startsWith("prov-t16cn2-key-") && !it.itemId.startsWith("prov-t17e-u20-") })
         val failing = selections.filterNot { V2Validator.displayedInFrozen(it) }
             .map { "${it.itemId} ${it.transformation} \"${it.shippedText}\"" }
         assertTrue(failing.joinToString("\n"), failing.isEmpty())

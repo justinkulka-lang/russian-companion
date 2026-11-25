@@ -122,7 +122,9 @@ class Unit21CumulativeReviewTest {
             assertEquals(listOf("u20-st-guided-motion-1"), practice)
             assertEquals(14, p.step("u20-st-rem-motion")!!.second.exampleIds.size)
             val guidedIds = p.step(practice.single())!!.second.itemIds
-            assertEquals(listOf("u20-g-motion-0", "u20-g-direction-library", "u20-g-direction-ability"), guidedIds)
+            // T17e expectation change: the two typed Unit 20 guided items join the guided step (was the three closed items only).
+            assertEquals(listOf("u20-g-motion-0", "u20-g-direction-library", "u20-g-direction-ability", "u20-g-type-nosit",
+                "u20-g-type-vodit"), guidedIds)
             guidedIds.forEach { id ->
                 assertNotEquals(noun.promptLetter, p.item(id)!!.promptLetter)
                 assertNotEquals(noun.answer, p.item(id)!!.answer)
@@ -132,8 +134,17 @@ class Unit21CumulativeReviewTest {
             teaching.forEach { id -> assertTrue(remediation.body.contains(p.step(id)!!.second.body)) }
             practice.forEach { step ->
                 p.step(step)!!.second.itemIds.forEach { id ->
-                    val i = p.item(id)!!; waitTag("v2-option-$id-${i.answer}")
-                    compose.onNodeWithTag("v2-option-$id-${i.answer}").performScrollTo().performClick()
+                    val i = p.item(id)!!
+                    if (i.kind == "TYPED_FORM") {
+                        // T17e: the motion guided step also holds two typed practice items (u20-g-type-nosit, u20-g-type-vodit); they
+                        // are answered by typing the key and submitting (was: every guided item answered by clicking its option).
+                        waitTag("v2-typed-$id-input")
+                        compose.onNodeWithTag("v2-typed-$id-input").performScrollTo().performTextInput(i.answer)
+                        compose.onNodeWithTag("v2-typed-$id-submit").performScrollTo().performClick()
+                    } else {
+                        waitTag("v2-option-$id-${i.answer}")
+                        compose.onNodeWithTag("v2-option-$id-${i.answer}").performScrollTo().performClick()
+                    }
                 }
             }
             waitTag("v2-return-to-check"); compose.onNodeWithTag("v2-return-to-check").performClick()

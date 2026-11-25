@@ -41,7 +41,9 @@ class Unit19PrefixUnit20MotionInstructionTest {
     }
     @Test fun completePrefixAndMotionInstructionPrecedesPracticeAndRemediation() {
         val p = pack()
-        for ((number, slug, count) in listOf(Triple(19,"prefix-caution",3),Triple(20,"motion",7))) {
+        // T17e expectation change: Unit 20 teaches in 8 steps (was 7): the forms step (partners, past and present forms) precedes
+        // guided practice and is repeated in remediation.
+        for ((number, slug, count) in listOf(Triple(19,"prefix-caution",3),Triple(20,"motion",8))) {
             val s = p.unit(number)!!.sessions.first { it.id == "u$number-s-$slug" }
             val teaches = s.steps.takeWhile { it.kind != "GUIDED" }.filter { it.kind == "TEACH" }
             assertEquals(count, teaches.size)

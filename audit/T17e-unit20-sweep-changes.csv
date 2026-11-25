@@ -1,0 +1,33 @@
+owner.field,old,new
+reviewCopy.introductions[20],"(superseded by the T16c-n2 introduction rewrite, D37c/D43e)",
+ref-ca-motion.detail,"Offline reference for motion, review-pending.",Offline reference for motion.
+ref-ca-motion.summary,"Offline reference for motion, review-pending.",Offline reference for motion.
+ref-ca-motion.title,"Offline reference for motion, review-pending.",Offline reference for motion.
+u20-g-direction-ability.feedback,Read this whole source example rather than translating an isolated verb or naming a table column.,"Interpret the whole sentence, rather than translating an isolated verb or naming its directionality category."
+u20-g-direction-library.feedback,Read this whole source example rather than translating an isolated verb or naming a table column.,"Interpret the whole sentence, rather than translating an isolated verb or naming its directionality category."
+u20-g-motion-0.feedback,идти́ is unidirectional in the retained table: it describes motion in one direction.,идти́ is unidirectional: it describes motion in one direction.
+u20-i-direction-birds.feedback,Read this whole source example rather than translating an isolated verb or naming a table column.,"Interpret the whole sentence, rather than translating an isolated verb or naming its directionality category."
+u20-i-direction-city.feedback,Read this whole source example rather than translating an isolated verb or naming a table column.,"Interpret the whole sentence, rather than translating an isolated verb or naming its directionality category."
+u20-i-direction-round.feedback,Read this whole source example rather than translating an isolated verb or naming a table column.,"Interpret the whole sentence, rather than translating an isolated verb or naming its directionality category."
+u20-i-direction-round.feedback,The retained past example is a completed round trip in the supplied interpretation; its unprefixed verb is still imperfective.,The past example is a completed round trip in the supplied interpretation; its unprefixed verb is still imperfective.
+u20-i-direction-weekly.feedback,Read this whole source example rather than translating an isolated verb or naming a table column.,"Interpret the whole sentence, rather than translating an isolated verb or naming its directionality category."
+u20-s-orient.title,Admitted motion lines,Motion lines
+u20-st-orient.body,"Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths.","Unit 20 covers direction, motion on foot and by transport, carrying and leading, setting out and prefixed paths."
+u20-st-orient.body,Qualified review is pending.,Work through the explanations and examples.
+u20-st-orient.title,Admitted motion lines,Motion lines
+u20-st-rem-motion.body,A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms.,A completed trip does not make these verb forms perfective.
+u20-st-rem-motion.body,A question about its meaning is different from a question about directionality.,Distinguish a motion verb’s meaning from its directionality.
+u20-st-rem-motion.body,In the retained supplied context this is One completed round trip in the past (imperfective).,In the context this is One completed round trip in the past (imperfective).
+u20-st-rem-motion.body,The table places идти́ in the unidirectional column: motion in one direction.,Classify идти́ as unidirectional: motion in one direction.
+u20-st-rem-motion.body,This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way.,This English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way.
+u20-st-teach-direction-return.body,A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms.,A completed trip does not make these verb forms perfective.
+u20-st-teach-direction-return.body,In the retained supplied context this is One completed round trip in the past (imperfective).,In the context this is One completed round trip in the past (imperfective).
+u20-st-teach-motion-2.body,The table places идти́ in the unidirectional column: motion in one direction.,Classify идти́ as unidirectional: motion in one direction.
+u20-st-teach-motion-3.body,A question about its meaning is different from a question about directionality.,Distinguish a motion verb’s meaning from its directionality.
+u20-st-teach-motion-4.body,This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way.,This English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way.
+unit-20.mappingNote,Independently stated topic scope: Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying/leading motion pairs; selected prefixed motion verbs; cumulative review through Lesson 20.,Topics: Unidirectional and multidirectional verbs of motion; motion by foot or transport; carrying/leading motion pairs; selected prefixed motion verbs; cumulative review through Lesson 20.
+unit-20.mappingNote,Mapping status is PENDING_CURRICULUM_REVIEWER.,Use the explanations and examples alongside your book.
+unit-20.mappingNote,"Proposed Lesson 20, printed pages 240-256.","This unit goes with Lesson 20 in your book, printed pages 240-256."
+unit-20.mappingNote,That assertion is not reviewer verification.,Read the matching lesson in your own book.
+unit-20.mappingNote,The Product Owner asserts that the inspected file is a legally owned copy.,Use the copy of the book you own.
+unit-20.mappingNote,"This note does not approve coverage, variance, or alignment.",Compare this unit with the matching lesson in your own book.
