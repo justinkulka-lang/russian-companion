@@ -3,6 +3,10 @@ name: Engineering verification
 on:
   workflow_dispatch:
   push:
+    # owner/prep-reports holds decision-log text only; a full build there costs 1-2 h of runner time per commit (owner
+    # direction 2026-11-24). Manual runs (workflow_dispatch) stay available on every branch.
+    branches-ignore:
+      - owner/prep-reports
     paths-ignore:
       - WORK_QUEUE.md
 

@@ -118,6 +118,30 @@ for t, note in PLANNED:
     rows.append(dict(id='', kind='WORD', text=t, first_unit=2, units='2', priority='P1', status='PLANNED_T14',
         clip=';'.join(x[0] for x in c) if c else '', clip_text=';'.join(x[1] for x in c) if c else '',
         flags='planned addition: ' + note + ('; existing clip candidate' if c else ''), where='planned'))
+# T-AUDIO-1 (D35, owner ruling 2026-11-24): a candidate clip the owner verified (listen-check MATCH, same SHA-256 as the
+# bundled file) is VERIFIED; it is BOUND when the governed registry (audio-verification.json beside the pack, written only
+# from listen-check results) binds it to at least one letter, example or item. Nothing else changes a status.
+import os, hashlib
+ASSETS = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[2])))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+def clip_sha(cid):
+    path = os.path.join(ASSETS, 'audio', cid + '.ogg')
+    return hashlib.sha256(open(path, 'rb').read()).hexdigest() if os.path.isfile(path) else None
+registry_path = os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), 'audio-verification.json')
+registry = json.load(open(registry_path, encoding='utf-8'))['records'] if os.path.isfile(registry_path) else []
+bound = collections.Counter(r['clipId'] for r in registry if r['clipSha256'] == clip_sha(r['clipId']))
+owner_path = os.path.join(REPO, 'audit', 'listen-check', 'owner-verified-clips.json')
+owner = json.load(open(owner_path, encoding='utf-8'))['results'] if os.path.isfile(owner_path) else []
+verified = {r['clipId'] for r in owner if r['decision'] == 'MATCH' and r['clipSha256'] == clip_sha(r['clipId'])}
+for r in rows:
+    ids = [c for c in r['clip'].split(';') if c]
+    if r['status'] != 'EXISTING_CLIP_CANDIDATE' or len(ids) != 1 or ids[0] not in verified: continue
+    note = 'owner listen-check MATCH (D35)'
+    if bound[ids[0]]:
+        r['status'] = 'BOUND'; n = bound[ids[0]]; note += f"; bound to {n} letter, example or item target{'' if n == 1 else 's'}"
+    else:
+        r['status'] = 'VERIFIED'; note += '; not bound: no letter, example or item shows this text'
+    r['flags'] = '; '.join(x for x in [r['flags'], note] if x)
 ALPHA = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
 rows.sort(key=lambda r: (r['first_unit'], {'LETTER':0,'WORD':1,'PHRASE':2,'SENTENCE':3}[r['kind']],
     ALPHA.index(r['text'][0]) if r['kind'] == 'LETTER' else 0, key(r['text'])))

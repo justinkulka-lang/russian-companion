@@ -18,7 +18,10 @@ class ListenCheckSheetTest {
 
     @Test fun block1CandidatesAreExactTextMatchesShownInUnitsOneToFive() {
         assertEquals(1..5, blockUnits(1)); assertEquals(26..30, blockUnits(6))
-        assertEquals(17, candidates.size)
+        // T-AUDIO-1 expectation change (owner ruling 2026-11-24): 17 -> 21. A clip now also matches a shown text that differs
+        // from its catalog text only in the case of the first letter, which adds the Unit 5 question words (где, как, кто,
+        // что) shown capitalized; the 17 clips matched before are still candidates.
+        assertEquals(21, candidates.size)
         assertEquals(candidates.map { it.clipId }.distinct(), candidates.map { it.clipId })
         val byId = clips.associateBy { it.id }
         for (c in candidates) {
@@ -26,7 +29,9 @@ class ListenCheckSheetTest {
             assertEquals(sha256Hex(clipFile(assets, c.clipId).readBytes()), c.clipSha256)
             assertTrue(c.uses.isNotEmpty() && c.uses.all { it.unitNumber in 1..5 })
             // Every use really shows this text (stress marks ignored, nothing else normalized).
-            for (use in c.uses) assertTrue(audioTargetTexts(pack, use.targetKind, use.targetId)!!.any { stressFree(it) == stressFree(c.text) })
+            // T-AUDIO-1 expectation change (owner ruling 2026-11-24): stressFree equality -> audioMatchKey equality, which
+            // also ignores the case of the first letter only.
+            for (use in c.uses) assertTrue(audioTargetTexts(pack, use.targetKind, use.targetId)!!.any { audioMatchKey(it) == audioMatchKey(c.text) })
         }
         assertTrue(candidates.any { c -> c.uses.any { it.targetKind == "LETTER" } })
         // A later block draws its own candidates; nothing from Units 1–5 leaks into it.
@@ -110,13 +115,19 @@ class ListenCheckSheetTest {
         assertTrue(listenCheckRecords(export(good.copy(results = emptyList())), "block1", candidates).first.isEmpty())
     }
 
-    @Test fun committedRegistryIsEmptyAndCatalogFlagsNeverCountAsVerification() {
+    @Test fun committedRegistryHoldsOnlyListenCheckRecordsAndCatalogFlagsNeverCountAsVerification() {
         val registry = Json.decodeFromString(V2AudioVerificationRegistry.serializer(), File(assets, "content/audio-verification.json").readText())
         assertEquals(AUDIO_VERIFICATION_SCHEMA, registry.schema)
-        assertTrue(registry.records.isEmpty())
-        assertTrue(verifiedAudioByUnit(registry).isEmpty())
-        // The legacy catalog marks clips matchVerified; that never creates a verification record.
+        // T-AUDIO-1 expectation change (D35, D36d): old: the committed registry was empty (no owner listen-check yet). New:
+        // it holds exactly the OWNER_LISTEN_VERIFIED records the committed block results produce (AudioVerificationBindingTest
+        // pins the equality); every record came from a listen-check sheet, none from a catalog flag.
+        assertTrue(registry.records.isNotEmpty())
+        assertTrue(registry.records.all { it.status == OWNER_LISTEN_VERIFIED && it.verifier == "OWNER" && it.sheet != null })
+        assertEquals(registry.records.groupBy { it.unitNumber }.mapValues { (_, r) -> r.map { it.clipId }.toSet() }, verifiedAudioByUnit(registry))
+        // The legacy catalog marks clips matchVerified; that never creates a verification record: catalog-flagged clips that no
+        // listen-check result decided (the single-letter clips) have no record.
         assertTrue(File(assets, "content/bundled-content.json").readText().contains("\"matchVerified\": true"))
+        assertTrue(registry.records.none { it.clipId == "rus-0b80646c" || it.clipId == "rus-a4fd7810" })
         val clipMap = clips.associateBy { it.id }
         assertEquals(emptyList<String>(), audioVerificationDefects(registry, pack, clipMap))
         val c = candidates.first(); val use = c.uses.first()

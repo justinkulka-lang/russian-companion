@@ -1,0 +1,312 @@
+{
+  "schema": 1,
+  "source": "D35 (owner decision 2026-11-23) and D36d; owner listen-check results audit/prep/owner-listen-check-2026-11-23.json on owner/prep-reports",
+  "results": [
+    {
+      "manifestId": "A02-004",
+      "clipId": "rus-8b8ad1e8",
+      "clipSha256": "fb15d8f57bedcc58377abba81dc0e52671f8880a637788259ec327bd1260c84f",
+      "text": "кот",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A03-001",
+      "clipId": "rus-f526c3a2",
+      "clipSha256": "35f479fce59ad582a23cd10d7515d964dfb68a0a92b9fe8176f7ba936797db30",
+      "text": "брат",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A03-004",
+      "clipId": "rus-8f1e46da",
+      "clipSha256": "bdbffe58be434ae235ceef0726cdca7cab27a5789b5256a8374c5957e8e4839a",
+      "text": "да",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A03-006",
+      "clipId": "rus-ecc04363",
+      "clipSha256": "251edc54224be30b68f84d28f99ce53d0aa2d019f956847344bcb95f86ce45b8",
+      "text": "дом",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A03-007",
+      "clipId": "rus-714ae1d2",
+      "clipSha256": "8ffa17c3c0218fcd6a3e217dfbecefb291c274d2b12fd46507400c0364f2edcd",
+      "text": "друг",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A03-021",
+      "clipId": "rus-a7afa14d",
+      "clipSha256": "39c5cfaebc304d2670902228ca76cbc4645bf897ed0229837d5d367102b4ab01",
+      "text": "стол",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A04-006",
+      "clipId": "rus-2383e20d",
+      "clipSha256": "853aa485cf7055ec1540f435f60c24b1efd3838c56b3f417244636e553299fc4",
+      "text": "вы",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A04-015",
+      "clipId": "rus-1267a652",
+      "clipSha256": "444505d921d4107385448427e7288b83d8bf36e709fbfdd0e7e9571cda73f588",
+      "text": "жить",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A04-016",
+      "clipId": "rus-d5ac2c6b",
+      "clipSha256": "4d57a086a798a9d3deab8912068b84d379e7543c580600505082fd8b56010e7f",
+      "text": "знать",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A04-024",
+      "clipId": "rus-291dcf07",
+      "clipSha256": "af962af6213f1da8e8e883cecb0c41991121df6e2b2f236397edd060f9fcbc50",
+      "text": "мы",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A04-025",
+      "clipId": "rus-fc38bfb1",
+      "clipSha256": "279aa4ee5badef89c15c57a0152961eb63054277dee91163dca997760f165ab5",
+      "text": "он",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A04-042",
+      "clipId": "rus-bf5460f8",
+      "clipSha256": "5432ffe1d5b4346b8cda242b7c5501b97c62e4d7483433dd8155e7f1050a5648",
+      "text": "ты",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A05-001",
+      "clipId": "rus-2aaba201",
+      "clipSha256": "86ae395ace7ce62efd2f7d2317d8f0c888b83d61f7cb62a95bbd0b01be7418d8",
+      "text": "где",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A05-002",
+      "clipId": "rus-b00d753d",
+      "clipSha256": "b8a10ee9a75cdb08a5273ec7a8987c7235f2e155a327bf75f333a14ecb09d55f",
+      "text": "как",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A05-009",
+      "clipId": "rus-2833e7bf",
+      "clipSha256": "4a67b86c3f038c7b574f850825660e26927b8c4e1efdfc440f8bca069035197d",
+      "text": "кто",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A05-013",
+      "clipId": "rus-80cf7d55",
+      "clipSha256": "83129692f3619fea7e6a61b4e0b331cc79019fade9f7fb8668e9cd21922851e4",
+      "text": "на",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A05-021",
+      "clipId": "rus-bade482d",
+      "clipSha256": "45cd80ad63259a6fcfa48c124c2088bbdec005a12de13d3ec52acfc138f3e5d3",
+      "text": "что",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A06-016",
+      "clipId": "rus-acdafc2d",
+      "clipSha256": "3d035c1c96d903590bcd197a51a7397b88743c7f2e3271e1cb20fc78f73c8bc4",
+      "text": "мой",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A06-032",
+      "clipId": "rus-1234b1df",
+      "clipSha256": "440a91fec0eaa89c0edea1ae0188d9185f2ad35b86db06572ad3f37dd7c69980",
+      "text": "твой",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A08-018",
+      "clipId": "rus-a346d7b8",
+      "clipSha256": "a36ce5b9f8d8b9c1dea469fe8e69e07553e8fc895ed354e2edbb793ba048c63f",
+      "text": "сын",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A09-001",
+      "clipId": "rus-12eda911",
+      "clipSha256": "eddd25beb337ed9e89a3aa1ba9ee0578a6cf3e29adecedc246093674e983f580",
+      "text": "вещь",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A09-030",
+      "clipId": "rus-5fa254b2",
+      "clipSha256": "6a6ff3ec1e70148e4498b592d09a61cfdf4b88a380dc942cf4930f14669ab032",
+      "text": "пять",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A09-046",
+      "clipId": "rus-8af002ca",
+      "clipSha256": "a4e4c67d0a0854f6443081849de7272425f6eddd6783bc44afa82c697e86aa96",
+      "text": "час",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A09-051",
+      "clipId": "rus-af1444a2",
+      "clipSha256": "04acfef6c73f360773ebb69b683740c6403a383451d30b0522608e4fcfb8025c",
+      "text": "шесть",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A10-003",
+      "clipId": "rus-4cc0d1df",
+      "clipSha256": "985b54d1b28411a0c650e24abd89a2c39ca0b462957ed9395bdb8a5e084fb01a",
+      "text": "для",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A10-009",
+      "clipId": "rus-a86af01a",
+      "clipSha256": "7ca5a5b2f3127b83d9271ad9df744b275ba14d69971cecd0ad51cdd588293e66",
+      "text": "муж",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A10-013",
+      "clipId": "rus-5345a3cd",
+      "clipSha256": "875b4a70d0b9bcf79a4e508a17e66ac80891b09faccfb175cd1cd0ff33adaf3d",
+      "text": "от",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A11-005",
+      "clipId": "rus-fa1d892f",
+      "clipSha256": "d8173218e1864053b5aaefee99e1bdf4e0d710741e64d1000a772088578303c8",
+      "text": "быть",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A11-007",
+      "clipId": "rus-8a9989d5",
+      "clipSha256": "fd4379578e179dd7b5fe26678678ad8dd86a4a589ff340d0f61551a7a1dc4843",
+      "text": "ли",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A15-003",
+      "clipId": "rus-b588fcba",
+      "clipSha256": "c9bb6bd977f42a3be981385cfb1311f5c4962bc3511d8de85f4aef9b2b0ed644",
+      "text": "дать",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A16-012",
+      "clipId": "rus-e595842a",
+      "clipSha256": "4fa1467419598a74712b826943ba97ee09222a06a23525c6837d2a2b03ae2549",
+      "text": "над",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A16-018",
+      "clipId": "rus-f5c42b28",
+      "clipSha256": "fbb3158bef2822155665e272dfe525679d7e8bdd19f0448cd63da1e656219b25",
+      "text": "стать",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A24-001",
+      "clipId": "rus-f0a589da",
+      "clipSha256": "d90088360e9d778a479839580c091ca7de89137127e0eb25328ef7034b9408bc",
+      "text": "не",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "manifestId": "A24-007",
+      "clipId": "rus-8e14f567",
+      "clipSha256": "06fec13072e802cd1e4826cfa0a22ec07436c29b08d610632990639ae47899df",
+      "text": "ни",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    }
+  ]
+}

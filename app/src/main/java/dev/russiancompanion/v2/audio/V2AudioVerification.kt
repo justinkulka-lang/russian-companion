@@ -49,6 +49,18 @@ internal fun sha256Hex(bytes: ByteArray): String =
 internal fun stressFree(text: String): String =
     Normalizer.normalize(Normalizer.normalize(text, Normalizer.Form.NFD).replace("́", ""), Normalizer.Form.NFC).trim()
 
+/**
+ * Text used to match a clip to a target (owner ruling 2026-11-24, T-AUDIO-1): stress marks aside, the two texts are equal
+ * or differ only in the case of their first letter (a sentence-initial question word or pronoun shows a capital the clip's
+ * catalog text does not have). Nothing else is normalized; any other case difference is a different text.
+ */
+internal fun audioMatchKey(text: String): String {
+    val plain = stressFree(text)
+    if (plain.isEmpty()) return plain
+    val first = plain.codePointAt(0)
+    return String(Character.toChars(Character.toLowerCase(first))) + plain.substring(Character.charCount(first))
+}
+
 /** The learner-visible text a target carries, used to confirm the verified text is really there. */
 internal fun audioTargetTexts(pack: V2CurriculumPack, kind: String, id: String): List<String>? = when (kind) {
     "LETTER" -> pack.letters.singleOrNull { it.id == id }?.let { listOf(it.lowercase, it.uppercase) }
@@ -76,7 +88,7 @@ internal fun audioVerificationDefects(registry: V2AudioVerificationRegistry, pac
         if (stressFree(clip.text) != stressFree(r.text)) errors += "$label text differs from the clip's catalog text"
         val targets = audioTargetTexts(pack, r.targetKind, r.targetId)
         if (targets == null) errors += "$label names a missing target"
-        else if (targets.none { stressFree(it) == stressFree(r.text) }) errors += "$label text is not the target's text"
+        else if (targets.none { audioMatchKey(it) == audioMatchKey(r.text) }) errors += "$label text is not the target's text"
     }
     return errors
 }

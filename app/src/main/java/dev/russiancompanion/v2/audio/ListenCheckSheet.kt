@@ -40,7 +40,7 @@ internal data class ListenCheckExport(
 private fun blockTexts(pack: V2CurriculumPack, units: IntRange): Map<String, List<ListenCheckUse>> {
     val out = linkedMapOf<String, MutableList<ListenCheckUse>>()
     fun add(text: String, use: ListenCheckUse) {
-        val key = stressFree(text)
+        val key = audioMatchKey(text)
         // One use per target: binding a clip to a letter, example or item does not depend on the unit.
         if (key.isNotEmpty()) out.getOrPut(key) { mutableListOf() }.let { uses ->
             if (uses.none { it.targetKind == use.targetKind && it.targetId == use.targetId }) uses += use }
@@ -60,13 +60,13 @@ private fun blockTexts(pack: V2CurriculumPack, units: IntRange): Map<String, Lis
 }
 
 /**
- * Candidates for a block: every bundled clip whose catalog text, ignoring stress marks, equals a
- * string the block shows. Exact text only; no similarity, ranking or file-name matching.
+ * Candidates for a block: every bundled clip whose catalog text, ignoring stress marks and the case of the first letter
+ * only (audioMatchKey), equals a string the block shows. Exact text otherwise; no similarity, ranking or file-name matching.
  */
 internal fun listenCheckCandidates(pack: V2CurriculumPack, units: IntRange, clips: List<V2CatalogClip>): List<ListenCheckCandidate> {
     val texts = blockTexts(pack, units)
-    return clips.filter { stressFree(it.text) in texts }.sortedWith(compareBy({ stressFree(it.text) }, { it.id }))
-        .map { ListenCheckCandidate(it.id, it.sha256, it.text, texts.getValue(stressFree(it.text))) }
+    return clips.filter { audioMatchKey(it.text) in texts }.sortedWith(compareBy({ stressFree(it.text) }, { it.id }))
+        .map { ListenCheckCandidate(it.id, it.sha256, it.text, texts.getValue(audioMatchKey(it.text))) }
 }
 
 internal fun listenCheckCandidatesDigest(sheet: String, candidates: List<ListenCheckCandidate>): String =

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "sheet": "block3",
+  "candidatesDigest": "32cdaf302934ef67e573680d0d7703eae472b8c627693b64b2ccc8f8dae47059",
+  "results": [
+    {
+      "clipId": "rus-b588fcba",
+      "clipSha256": "c9bb6bd977f42a3be981385cfb1311f5c4962bc3511d8de85f4aef9b2b0ed644",
+      "text": "дать",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "clipId": "rus-ecc04363",
+      "clipSha256": "251edc54224be30b68f84d28f99ce53d0aa2d019f956847344bcb95f86ce45b8",
+      "text": "дом",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    },
+    {
+      "clipId": "rus-a7afa14d",
+      "clipSha256": "39c5cfaebc304d2670902228ca76cbc4645bf897ed0229837d5d367102b4ab01",
+      "text": "стол",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    }
+  ]
+}

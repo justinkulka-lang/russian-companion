@@ -10,9 +10,11 @@ Built from: curriculum pack at commit 877f4145 (11/11/2026), and the 1,000 bundl
 
 ## 1. Where things stand
 
-- The app plays audio and records takes (T04, T04-n1). No lesson has audio bound to it yet.
-- 1,000 licensed Shtooka word clips are bundled. Only 30 of them match a word the course actually uses.
-- No clip is verified yet. Verification needs the listen-check sheet (T13) and the owner's listen-check (T13-O).
+- The app plays audio and records takes (T04, T04-n1). The lesson screens do not play bound clips yet (T14-A).
+- 1,000 licensed Shtooka word clips are bundled. 34 of them matched a course word as EXISTING_CLIP_CANDIDATE.
+- Owner listen-check (D35, 2026-11-23): the owner listened to all 34 and marked every one MATCH. T-AUDIO-1 recorded the results per block sheet (audit/listen-check/block1-6-results.json, schema 1, verifier OWNER; owner-verified-clips.json lists all 34 with SHA-256) and bound them in app/src/main/assets/content/audio-verification.json: 27 clips, 104 OWNER_LISTEN_VERIFIED records, one per letter, example or item that shows the clip's text. 7 clips (жить, знать, на, вещь, быть, ли, ни) are VERIFIED but not bound: no letter, example or item shows them; they appear only in teaching or reference text.
+- Matching rule (owner ruling 2026-11-24): a clip matches a shown text when, stress marks aside, the two are equal or differ only in the case of the first letter (Где on screen, где in the catalog). Nothing else is normalized.
+- Still open on the sheets: 7 single-letter clips (а, в, и, к, о, с, я) were not among the 34 and have no decision. All 7 are on block 1; я is also on block 2, and а and в on block 6.
 - AI-generated audio is not used. Russian stress is unmarked in normal text, text-to-speech can misplace it, and a beginner cannot catch those errors. Native recordings are the plan.
 
 ## 2. What needs audio
@@ -22,7 +24,9 @@ Built from: curriculum pack at commit 877f4145 (11/11/2026), and the 1,000 bundl
 | Status | Rows | Meaning |
 |---|---|---|
 | NEEDS_RECORDING | 767 | No matching clip. A native speaker records it. |
-| EXISTING_CLIP_CANDIDATE | 30 | A bundled Shtooka clip has the same text. It still needs the owner's listen-check before binding. |
+| EXISTING_CLIP_CANDIDATE | 0 | A bundled Shtooka clip has the same text and still needs the owner's listen-check before binding. All 34 were checked (D35). |
+| VERIFIED | 7 | Owner listen-check MATCH, same SHA-256 as the bundled clip; no letter, example or item shows the text, so nothing is bound. |
+| BOUND | 27 | Owner listen-check MATCH; audio-verification.json binds the clip to every letter, example or item that shows its text. |
 | PLANNED_T14 | 10 | Homograph and final-devoicing pairs approved for Units 1–2, recorded once T14 adds them from a licensed source. |
 
 | Kind | Rows |
@@ -107,7 +111,7 @@ How:
 - One file per unit, named by unit, such as unit-03.wav.
 - Ask the tutor to mark any line that looks wrong to them: a misspelling, a wrong stress mark or an odd phrase. That gives the course a partial native-speaker check at no extra cost.
 
-Recording also covers the 30 existing clip candidates. It keeps one voice throughout. The Shtooka clips stay as a backup.
+Recording also covers the 34 owner-verified Shtooka clips. It keeps one voice throughout. The Shtooka clips stay as a backup.
 
 ## 6. Permission
 
