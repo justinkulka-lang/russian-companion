@@ -50,6 +50,31 @@ class ReviewCopyTest {
         }
     }
 
+    /**
+     * T16c-n3 (owner decision D46e, approved rule change): the validator (reviewCopyDefects) rejects an introduction naming any
+     * numeral or number word, by a complete cardinal pattern. Probes cover each class the old test list missed (tens above
+     * fifty, compounds, joined compounds, scale words, Unicode digits) and the classes it had.
+     */
+    @Test fun introductionsRejectEveryCardinalClass() {
+        val p = pack()
+        p.reviewCopy.introductions.forEach { (unit, text) -> assertFalse("$unit: $text", introductionNamesACount(text)) }
+        assertEquals(emptyList<String>(), reviewCopyDefects(p.reviewCopy))
+        val probes = listOf("Answer sixty review questions.", "Answer seventy-five review questions.", "Answer ninety nine questions.",
+            "Answer eightyfour questions.", "Answer twenty-one questions.", "Answer one hundred questions.", "Answer a thousand cards.",
+            "Answer a million cards.", "Answer zero cards.", "Answer the four cards.", "Answer the thirteen cards.", "Answer the 12 cards.",
+            "Answer the ١٢ cards.", "Answer a dozen cards.", "Answer both cards.", "Answer a couple of cards.",
+            "Answer a single card.", "Answer the Eleven cards.")
+        for (probe in probes) {
+            assertTrue(probe, introductionNamesACount(probe))
+            val changed = p.reviewCopy.copy(introductions = p.reviewCopy.introductions + (14 to probe))
+            assertTrue(probe, reviewCopyDefects(changed).any { "Unit 14 review introduction names a count" in it })
+        }
+        // A unit reference and ordinary words that contain number letters pass ("someone", "often", "tonight", "none").
+        for (text in listOf("Review what Unit 4 taught before Units 5 and 6.", "Someone often reviews tonight; none are skipped.")) {
+            assertFalse(text, introductionNamesACount(text))
+        }
+    }
+
     @Test fun catalogAndPackCopyAgreeAndCurrentCopyIsBoundIntoTheReviewDigest() {
         val p = pack()
         val data = Json.decodeFromString(V2ReviewCopy.serializer(), File(root, "catalog/review-copy.json").readText())

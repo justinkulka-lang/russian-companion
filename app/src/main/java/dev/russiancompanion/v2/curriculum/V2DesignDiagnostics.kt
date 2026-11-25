@@ -120,11 +120,23 @@ internal object V2DesignDiagnostics {
      */
     private val ownTable = Regex(
         "\\b(?:(?:in|into|on|across|down) )?(?:each|every|the|a|one|that|this|its|first|second|last|next) (?:[a-z-]+ )?(?:rows?|columns?) " +
-            "of your (?:own )?(?:binder )?table\\b|" +
-            // T16c-n2 (owner decision D41e): the learner's own table being made ("make a table of ... with rows for ...").
-            "\\b(?:make|draw|set up|build|start) (?:a|your own|a new) (?:binder )?table\\b[^.;]*?\\bwith (?:rows?|columns?) (?:for|headed)\\b",
+            "of your (?:own )?(?:binder )?table\\b",
         RegexOption.IGNORE_CASE,
     )
+    /**
+     * T16c-n2 (owner decision D41e): the learner's own table being made ("make a table of ... with rows for ...").
+     * T16c-n3 (owner decision D46c, approved rule change): only the two exact phrases are exempt, "make a table" and the
+     * "with rows for" that follows it in the same sentence; everything between and after them is linted normally (was: the
+     * whole span from "make a table" to "with rows for" was removed unread).
+     */
+    private val makeTable = Regex("\\b(?:make|draw|set up|build|start) (?:a|your own|a new) (?:binder )?table\\b", RegexOption.IGNORE_CASE)
+    private val withRowsFor = Regex("\\bwith (?:rows?|columns?) (?:for|headed)\\b", RegexOption.IGNORE_CASE)
+    private fun withoutOwnTable(sentence: String): String {
+        var text = ownTable.replace(sentence, " ")
+        val made = makeTable.find(text) ?: return text
+        withRowsFor.find(text, made.range.last + 1)?.let { text = text.replaceRange(it.range, " ") }
+        return text.replaceRange(made.range, " ")
+    }
     private val tableCell = Regex("\\|{1,2}[ \\t]*\\p{L}")
     // T15g (owner decision D18d, approved rule change): only the notice or direction sentence itself is exempt, identified
     // by owner (the ref-*-attribution licence notices) or by exact template (the D8 self-attestation sentence). A sentence
@@ -139,7 +151,7 @@ internal object V2DesignDiagnostics {
     )
     private fun lintedSentences(value: String): List<String> = value.split(sentenceBreak).filter { it.trim() !in NOTICE_TEMPLATES }
     private fun widenedNarration(value: String, binder: Boolean = false): Boolean = lintedSentences(value)
-        .map { if (binder) ownTable.replace(it, "") else it }
+        .map { if (binder) withoutOwnTable(it) else it }
         // T16c-n2 (owner decision D41e, approved rule change): in a binder field the only exemption is the learner's own table
         // (ownTable, removed above); "rows for" is otherwise flagged in every field (was: exempt in every binder field).
         .any { sourceNarration.containsMatchIn(it) || assessmentCommentary.containsMatchIn(it) || workflowAndFraming.containsMatchIn(it) ||

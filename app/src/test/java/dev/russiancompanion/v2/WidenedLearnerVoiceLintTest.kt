@@ -88,6 +88,17 @@ class WidenedLearnerVoiceLintTest {
             assertTrue(text, binderTaskSignals(text, rule).isEmpty())
             assertTrue(text, binderSignals(text, rule).isEmpty())
         }
+        // T16c-n3 (owner decision D46c): only the exact phrases "make a table" and "with rows for" are exempt; framing between
+        // them, or after them, is linted (these passed before D46c, when the whole span was removed). Two probes per position.
+        for (text in listOf("Make a table of the requested source rows with rows for each case.",
+                "In your binder, make a table of the genitive row from the dictionary with rows for each case.",
+                "Make a table with rows for each case, then copy the requested form from the table.",
+                "Make a table with rows for each person and read the row for this case.")) {
+            assertTrue(text, binderTaskSignals(text, rule).isNotEmpty())
+            assertTrue(text, binderSignals(text, rule).isNotEmpty())
+        }
+        // "with rows for" without the learner's own "make a table" is not exempt.
+        assertTrue(binderSignals("Copy the source table with rows for each case.", rule).isNotEmpty())
         // The model answer is linted too.
         val modelAnswer = V2DesignDiagnostics.audit(current.copy(units = current.units.map { u ->
             if (u.number != 3) u else u.copy(binderTask = u.binderTask!!.copy(modelAnswer = "Copy the rows for each case from the source."))

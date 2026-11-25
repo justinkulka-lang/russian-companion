@@ -15,17 +15,24 @@ class TypedKeyCitationTest {
     private val root = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
     private val pack by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()) }
     private val typed by lazy { pack.items.filter { it.isTypedResponse() } }
+    // T16c-n3: the filter also keeps the D46b accepted-answer messages ("accepted answer ... citation", "... does not equal").
     private fun citationErrors(p: V2CurriculumPack, id: String) =
-        V2Validator.validate(p).errors.filter { "Typed item $id " in it && ("cites" in it || "key citation" in it || "key does not equal" in it) }
+        V2Validator.validate(p).errors.filter { "Typed item $id " in it && ("cites" in it || "citation" in it || "does not equal" in it) }
 
     @Test fun everyTypedItemIsPinnedToItsCitation() {
         val clean = { s: String -> s.replace("\t", " ").replace("\n", "\\n") }
-        val rows = typed.map { item ->
-            val record = pack.provenanceRecords.single { it.itemId == item.keyCitation }
-            listOf(item.id, item.prompt, item.answer, record.itemId, record.sourceId, record.sourceRecordId).joinToString("\t") { clean(it) }
+        // T16c-n3 expectation change (owner decision D46b): old: one pinned row per typed item (its key). New: the key row, then
+        // one row per other accepted answer with its own citation (197 key rows + 4 accepted-answer rows = 201).
+        val rows = typed.flatMap { item ->
+            val cited = listOf(item.answer to item.keyCitation!!) + item.acceptedAnswerCitations.toList()
+            cited.map { (text, citation) ->
+                val record = pack.provenanceRecords.single { it.itemId == citation }
+                listOf(item.id, item.prompt, text, record.itemId, record.sourceId, record.sourceRecordId).joinToString("\t") { clean(it) }
+            }
         }
         val pinned = File(root, "app/src/test/resources/typed-key-citations.tsv").readLines().drop(1).filter { it.isNotEmpty() }
         assertEquals(197, typed.size)
+        assertEquals(201, rows.size)
         assertEquals(pinned, rows)
         typed.forEach { assertEquals(it.id, emptyList<String>(), V2Validator.typedKeyCitationErrors(pack, it)) }
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
@@ -76,6 +83,45 @@ class TypedKeyCitationTest {
             assertEquals(letter.answer, cited.shippedText)
             assertTrue(V2Validator.containsWhole(cited.originalSourceText, letter.answer))
         }
+    }
+
+    @Test fun everyAcceptedAnswerMeetsTheKeyRule() {
+        // D46b audit: the only accepted answers other than a key are the four unstressed Unit 5 question words, each an exact
+        // frozen OpenRussian cell (first-letter case under the question-word prompt). No shipped item accepts an uncited form.
+        val extra = typed.flatMap { i -> i.typedAnswerKey!!.acceptedAnswers.filter { it != i.answer }.map { i.id to it } }
+        assertEquals(listOf("u5-i-type-kuda" to "Куда", "u5-i-type-otkuda" to "Откуда", "u5-i-type-skolko" to "Сколько",
+            "u5-i-type-kakoy" to "Какой"), extra)
+        for ((id, answer) in extra) {
+            val item = pack.item(id)!!
+            assertEquals(setOf(answer), item.acceptedAnswerCitations.keys)
+            assertEquals(answer, pack.provenanceRecords.single { it.itemId == item.acceptedAnswerCitations.getValue(answer) }.shippedText)
+        }
+        val kuda = pack.item("u5-i-type-kuda")!!
+        fun with(item: V2CheckItem) = pack.copy(items = pack.items.map { if (it.id == item.id) item else it })
+        fun acceptAlso(answer: String, citations: Map<String, String> = kuda.acceptedAnswerCitations) = kuda.copy(
+            typedAnswerKey = kuda.typedAnswerKey!!.copy(acceptedAnswers = kuda.typedAnswerKey!!.acceptedAnswers + answer),
+            acceptedAnswerCitations = citations)
+        // Probes: an uncited extra form; a wrong form cited to a real record; a form cited to a record that ships other text;
+        // a citation to a content-audit record; the citation removed from a shipped variant; a stray citation.
+        val otherForm = "Откуда"
+        val otkudaCell = pack.item("u5-i-type-otkuda")!!.acceptedAnswerCitations.getValue(otherForm)
+        val synthesis = pack.provenanceRecords.first { it.sourceId == "src-content-audit-research" }.itemId
+        val probes = listOf(
+            acceptAlso("Кудаа"),
+            acceptAlso(otherForm),
+            acceptAlso("Кудаа", kuda.acceptedAnswerCitations + ("Кудаа" to otkudaCell)),
+            acceptAlso("Кудаа", kuda.acceptedAnswerCitations + ("Кудаа" to synthesis)),
+            kuda.copy(acceptedAnswerCitations = emptyMap()),
+            kuda.copy(acceptedAnswerCitations = kuda.acceptedAnswerCitations + ("Куда́" to kuda.keyCitation!!)),
+            kuda.copy(acceptedAnswerCitations = kuda.acceptedAnswerCitations + ("Куды" to otkudaCell)),
+        )
+        for (probe in probes) {
+            assertTrue(probe.toString(), V2Validator.typedKeyCitationErrors(with(probe), probe).isNotEmpty())
+            assertTrue(citationErrors(with(probe), probe.id).isNotEmpty())
+        }
+        // The same answer under another prompt loses the first-letter allowance and fails too.
+        assertTrue(V2Validator.typedKeyCitationErrors(pack, kuda.copy(prompt = "Type the word that has this meaning.")).isNotEmpty())
+        assertTrue(V2Validator.typedKeyCitationErrors(pack, kuda).isEmpty())
     }
 
     @Test fun letterCellCitationsCheckTheLetterAndKeepWikiMarkupOutOfLearnerText() {

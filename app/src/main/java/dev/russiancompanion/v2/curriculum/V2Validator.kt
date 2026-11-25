@@ -3962,7 +3962,35 @@ internal object V2Validator {
     }
 
     /** D41a: the prompt holds no number token, digit or count noun beyond the pinned phrase's own. */
+    /**
+     * T16c-n3 (owner decision D46d, approved rule change): a quantity modifier changes the count, so a count prompt naming one
+     * is a different or competing quantity. Matched as classes, not a probe list: English fractions (half, quarter, a third, the
+     * ordinal fractions fifth to tenth and their plurals), multipliers (double, triple, treble, quadruple, twice, thrice, "times",
+     * any "-fold"), digit fractions, decimals and percentages, Unicode fraction characters, and the Russian fraction and
+     * multiplier forms used with hours, years and minutes (the pol- prefix before those nouns, poltora, polovina, chetvert',
+     * tret', and the vdvoe/vtroe/dvojnoj/trojnoj families).
+     */
+    private val QUANTITY_MODIFIER = Regex(
+        "(?iu)(?<![\\p{L}\\p{N}])(?:halfs?|halves|half-|quarters?|thirds?|fourths?|fifths?|sixths?|sevenths?|eighths?|ninths?|tenths?|" +
+            "double[ds]?|doubling|triple[ds]?|tripling|treble[ds]?|quadruple[ds]?|twice|thrice|times|\\p{L}*-?fold|multiplied|" +
+            "percent|per cent|fraction(?:al|s)?)(?![\\p{L}\\p{N}])|" +
+            "\\d+\\s*/\\s*\\d+|\\d+[.,]\\d+|\\d+\\s*%|\\d+\\s*[x\\x{00D7}](?![\\p{L}])|[\\x{00BC}-\\x{00BE}\\x{2150}-\\x{215F}\\x{2189}]|" +
+            // Russian: pol-/polu- before the count nouns (half an hour, half a year, half a minute), poltora/poltory, polovina,
+            // chetvert', tret', vdvoe/vtroe/vchetvero, dvojn-/trojn-/chetvern- (double, triple, quadruple).
+            "(?<![\\p{L}])\\x{043F}\\x{043E}\\x{043B}(?:\\x{0443})?-?(?:\\x{0447}\\x{0430}\\x{0441}|\\x{0433}\\x{043E}\\x{0434}|" +
+            "\\x{043C}\\x{0438}\\x{043D}\\x{0443}\\x{0442}|\\x{043B}\\x{0435}\\x{0442})\\p{L}*|" +
+            "(?<![\\p{L}])(?:\\x{043F}\\x{043E}\\x{043B}\\x{0442}\\x{043E}\\x{0440}|\\x{043F}\\x{043E}\\x{043B}\\x{043E}\\x{0432}\\x{0438}\\x{043D}|" +
+            "\\x{0447}\\x{0435}\\x{0442}\\x{0432}\\x{0435}\\x{0440}\\x{0442}|\\x{0442}\\x{0440}\\x{0435}\\x{0442}(?=[\\x{044C}\\x{0438}])|" +
+            "\\x{0432}\\x{0434}\\x{0432}\\x{043E}\\x{0435}|\\x{0432}\\x{0442}\\x{0440}\\x{043E}\\x{0435}|\\x{0432}\\x{0447}\\x{0435}\\x{0442}\\x{0432}\\x{0435}\\x{0440}\\x{043E}|" +
+            "\\x{0434}\\x{0432}\\x{043E}\\x{0439}\\x{043D}|\\x{0442}\\x{0440}\\x{043E}\\x{0439}\\x{043D}|\\x{0447}\\x{0435}\\x{0442}\\x{0432}\\x{0435}\\x{0440}\\x{043D})\\p{L}*",
+    )
+
+    /** D46d: true where the text names any quantity modifier (fraction, multiplier, fractional or percentage numeral). */
+    internal fun namesQuantityModifier(text: String): Boolean =
+        QUANTITY_MODIFIER.containsMatchIn(normalizeQuantityText(text).replace("\u0301", ""))
+
     internal fun namesCompetingQuantity(text: String, phrase: String): Boolean {
+        if (namesQuantityModifier(text)) return true
         val lower = normalizeQuantityText(text).lowercase()
         val tokens = lower.split(Regex("[^\\p{L}\\p{N}]+")).filter { it.isNotEmpty() }
         val numberTokens = tokens.count { NUMBERISH.matches(it) && it != "and" } + tokens.count { it == "and" }
@@ -5754,17 +5782,34 @@ internal object V2Validator {
      */
     internal fun typedKeyCitationErrors(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
         val id = item.keyCitation ?: return listOf("Typed item ${item.id} cites no frozen cell or line for its key")
-        val record = pack.provenanceRecords.singleOrNull { it.itemId == id }
-            ?: return listOf("Typed item ${item.id} key citation $id is not one provenance record")
-        if (!isFrozenSourceRecord(pack, record)) return listOf("Typed item ${item.id} key citation $id is not a frozen source record")
-        if (record.shippedText != item.answer || !keyDisplayedExactly(record, item)) {
-            return listOf("Typed item ${item.id} key does not equal its cited frozen text exactly")
+        val errors = citedTextErrors(pack, item, item.answer, id, "key")
+        // T16c-n3 (owner decision D46b): every accepted answer meets the key's rule. The key itself is covered by keyCitation;
+        // any other accepted answer cites a frozen record of its own and equals that record's text exactly.
+        val accepted = item.typedAnswerKey?.acceptedAnswers.orEmpty()
+        for (answer in accepted.filter { it != item.answer }) {
+            val citation = item.acceptedAnswerCitations[answer]
+            if (citation == null) errors += "Typed item ${item.id} accepted answer \"$answer\" cites no frozen cell or line"
+            else errors += citedTextErrors(pack, item, answer, citation, "accepted answer \"$answer\"")
         }
-        return emptyList()
+        for (answer in item.acceptedAnswerCitations.keys.filter { it == item.answer || it !in accepted }) {
+            errors += "Typed item ${item.id} cites \"$answer\", which is not an accepted answer other than the key"
+        }
+        return errors
     }
 
-    private fun keyDisplayedExactly(record: V2ProvenanceRecord, item: V2CheckItem): Boolean {
-        val key = item.answer
+    /** The cited record exists once, is frozen-source provenance, ships [text], and shows it whole and exactly (stress included). */
+    private fun citedTextErrors(pack: V2CurriculumPack, item: V2CheckItem, text: String, id: String, what: String): MutableList<String> {
+        val record = pack.provenanceRecords.singleOrNull { it.itemId == id }
+            ?: return mutableListOf("Typed item ${item.id} $what citation $id is not one provenance record")
+        if (!isFrozenSourceRecord(pack, record)) return mutableListOf("Typed item ${item.id} $what citation $id is not a frozen source record")
+        if (record.shippedText != text || !keyDisplayedExactly(record, item, text)) {
+            return mutableListOf(if (what == "key") "Typed item ${item.id} key does not equal its cited frozen text exactly"
+                else "Typed item ${item.id} $what does not equal its cited frozen text exactly")
+        }
+        return mutableListOf()
+    }
+
+    private fun keyDisplayedExactly(record: V2ProvenanceRecord, item: V2CheckItem, key: String = item.answer): Boolean {
         if (key.isEmpty()) return false
         val keys = if (item.prompt in FIRST_LETTER_CASE_PROMPTS) {
             setOf(key, key.substring(0, 1).lowercase() + key.substring(1), key.substring(0, 1).uppercase() + key.substring(1))

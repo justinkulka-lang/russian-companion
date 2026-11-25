@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "be39eec47da042581bdfa31500cecbb0d1aace7004c48510451c8d40d98600fe",
+      "sha256": "26a0c58d0e50212530931e45b97b57b5eee54052ed4515d702b0b1a833ff0258",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3522,6 +3522,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "T16c-n2 (owner decisions D41a-D41d, approved rule changes): quantity text is normalized to ASCII spaces and hyphens before it is read, every count item is pinned to its exact phrase (COUNT_ITEM_PHRASES), and any other number word, digit, joined token or count noun makes a different or competing quantity; selection edges are judged in context inside the frozen line (contextWordChar); yo and ye stay distinct in foldGoverned; the display check also reads an OpenRussian stress apostrophe as the stress mark and joins inline HTML; the Russian token pattern includes yo; every typed item cites the frozen record its key comes from (keyCitation) and the key must equal the cited text exactly, stress included, except the first letter's case where the prompt asks for a question word (D42a). No Russian is constructed or rendered.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T16c-n3 D46b D46d",
+      "previousRecordedSha256": "be39eec47da042581bdfa31500cecbb0d1aace7004c48510451c8d40d98600fe",
+      "sha256": "26a0c58d0e50212530931e45b97b57b5eee54052ed4515d702b0b1a833ff0258",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T16c-n3 (owner decisions D46b, D46d, approved rule changes): every accepted answer of a typed item other than its key cites its own frozen-source record (acceptedAnswerCitations) and equals that record's text exactly under the key's rule (citedTextErrors); a citation for anything that is not such an accepted answer is refused; a count prompt naming any quantity modifier (fractions, multipliers, fractional, decimal or percentage numerals, Unicode fractions, and the Russian fraction and multiplier forms, matched by code-point escapes in a detection pattern) names a competing quantity (namesQuantityModifier). The Russian forms are detected, never constructed or rendered.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

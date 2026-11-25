@@ -342,6 +342,11 @@ internal data class V2CheckItem(
      * comes from. V2Validator requires the key to equal that cited text exactly, stress included.
      */
     val keyCitation: String? = null,
+    /**
+     * T16c-n3 (owner decision D46b): for each accepted answer other than [answer], the frozen-source provenance record it
+     * comes from. Each accepted answer meets the key's rule: it equals its cited frozen text exactly.
+     */
+    val acceptedAnswerCitations: Map<String, String> = emptyMap(),
     val dictationAudioAssetId: String? = null,
     /**
      * The "russian-fact" marker (T15-n0, owner ruling 11/12/2026): sentences of [feedback] or [distractorRationales]

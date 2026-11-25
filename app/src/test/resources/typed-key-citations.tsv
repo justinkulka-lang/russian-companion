@@ -25,9 +25,13 @@ u4-g-type-делать-мы	Practice: type the present form of the shown word th
 u5-i-type-kto	Type the question word that has this meaning.	Кто	prov-u5-q-kto	src-wikibooks-russian-cc-by-sa	interrogative:| Кто || ''kto'' || Who
 u5-i-type-chto	Type the question word that has this meaning.	Что	prov-u5-q-chto	src-wikibooks-russian-cc-by-sa	interrogative:| Что || ''što'' || What
 u5-i-type-kuda	Type the question word that has this meaning.	Куда́	prov-u5-key-kuda-stressed	src-openrussian-50e210c4	others.csv:куда#accented
+u5-i-type-kuda	Type the question word that has this meaning.	Куда	prov-u5-key-kuda-unstressed	src-openrussian-50e210c4	others.csv:куда#bare
 u5-i-type-otkuda	Type the question word that has this meaning.	Отку́да	prov-u5-key-otkuda-stressed	src-openrussian-50e210c4	others.csv:откуда#accented
+u5-i-type-otkuda	Type the question word that has this meaning.	Откуда	prov-u5-key-otkuda-unstressed	src-openrussian-50e210c4	others.csv:откуда#bare
 u5-i-type-skolko	Type the question word that has this meaning.	Ско́лько	prov-u5-key-skolko-stressed	src-openrussian-50e210c4	others.csv:сколько#accented
+u5-i-type-skolko	Type the question word that has this meaning.	Сколько	prov-u5-key-skolko-unstressed	src-openrussian-50e210c4	others.csv:сколько#bare
 u5-i-type-kakoy	Type the question word that has this meaning.	Како́й	prov-u5-key-kakoy-stressed	src-openrussian-50e210c4	adjectives.csv:какой#accented
+u5-i-type-kakoy	Type the question word that has this meaning.	Какой	prov-u5-key-kakoy-unstressed	src-openrussian-50e210c4	adjectives.csv:какой#bare
 u5-g-type-gde	Practice: type the question word that has this meaning.	Где	prov-u5-q-gde	src-wikibooks-russian-cc-by-sa	interrogative:| Где || ''gde'' || Where (location)
 u6-i-type-moy-neuter	Type the neuter singular nominative form of the shown possessive.	моё	prov-ex-or-u6-possessive-6	src-openrussian-50e210c4	adjectives.csv:мой#decl_n_nom
 u6-i-type-moy-plural	Type the plural nominative form of the shown possessive.	мои́	prov-ex-or-u6-possessive-7	src-openrussian-50e210c4	adjectives.csv:мой#decl_pl_nom

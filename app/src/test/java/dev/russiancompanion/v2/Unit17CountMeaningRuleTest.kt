@@ -108,4 +108,37 @@ class Unit17CountMeaningRuleTest {
             assertEquals(count.id, emptyList<String>(), V2Validator.structureValid(pack, count))
         }
     }
+
+    /**
+     * T16c-n3 (owner decision D46d, approved rule change): a quantity modifier makes a different or competing quantity, as a class
+     * (fractions, multipliers, fractional and percentage numerals, Unicode fractions, and the Russian fraction and multiplier
+     * forms), not as a list of probes. Each probe keeps the item's own phrase, so only the modifier can fail it.
+     */
+    @Test fun quantityModifiersAreCompetingQuantities() {
+        for ((id, phrase) in listOf("u17-g-hours-0" to "one hour", "u17-i-years-1" to "two years", "u17-i-minutes-2" to "five minutes")) {
+            val item = pack.item(id)!!
+            val why = "This phrase means $phrase."
+            val prompts = listOf("half of $phrase", "a quarter of $phrase", "a third of $phrase", "two thirds of $phrase",
+                "three fifths of $phrase", "double $phrase", "triple $phrase", "treble $phrase", "quadruple $phrase", "twice $phrase",
+                "thrice $phrase", "$phrase times three", "a threefold $phrase", "$phrase and a half", "1/2 of $phrase", "1.5 times $phrase",
+                "50% of $phrase", "½ of $phrase", "2x $phrase", "$phrase, not полчаса", "$phrase or полтора часа", "$phrase or полго́да",
+                "$phrase, not четверть часа", "$phrase, not треть года", "$phrase, not половина", "$phrase вдвое", "$phrase or полминуты")
+                .map { "Which phrase means $it?" }
+            for (prompt in prompts) {
+                val errors = targetErrors(id, prompt, why)
+                assertTrue("$prompt: $errors", errors.any { "competing count" in it || "no explicit target" in it })
+                assertTrue(prompt, V2Validator.namesQuantityModifier(prompt))
+                val probe = item.copy(prompt = prompt)
+                assertFalse(prompt, V2Validator.featureValid(pack.copy(items = pack.items.map { if (it.id == item.id) probe else it }), probe))
+            }
+            // The shipped prompt names no modifier and still passes.
+            assertFalse(id, V2Validator.namesQuantityModifier(item.prompt))
+            assertFalse(id, V2Validator.namesCompetingQuantity(item.prompt, phrase))
+            assertEquals(id, emptyList<String>(), V2Validator.structureValid(pack, item))
+        }
+        // Ordinary words that only look like modifiers do not trip the rule: "three", "the phrase", a Russian word with pol-.
+        for (text in listOf("Which phrase means three hours?", "Which phrase means one hour?", "пол", "полный час")) {
+            assertFalse(text, V2Validator.namesQuantityModifier(text))
+        }
+    }
 }

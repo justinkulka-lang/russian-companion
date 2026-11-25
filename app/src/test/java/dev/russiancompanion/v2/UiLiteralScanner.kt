@@ -5,6 +5,9 @@ package dev.russiancompanion.v2
  * strings. Ordinary and raw (triple-quoted) literals are both extracted, and so is every literal nested inside a template
  * expression (`"${if (x) "Release stays blocked." else ""}"`), each as its own literal. Each literal carries the name of the
  * innermost call it is an argument of, so an identifier-like literal is exempt only where it is used as an identifier.
+ *
+ * T16c-n3 (owner decision D46f): escapes (\uXXXX, \n, \t, \r, \b, \", \', \\, \$) are decoded in ordinary literals; the call
+ * name no longer exempts anything (UiStringLintTest uses it only to refuse an exemption for text passed straight to a renderer).
  */
 internal object UiLiteralScanner {
     /** [argument] is the 0-based position among the call's arguments; [named] is the parameter name of a named argument. */
@@ -73,7 +76,17 @@ internal object UiLiteralScanner {
             if (raw && s.startsWith("\"\"\"", i)) { i += 3; while (i < to && s[i] == '"') { sb.append('"'); i++ }; return sb.toString() to i }
             val d = s[i]
             if (!raw && d == '"') return sb.toString() to i + 1
-            if (!raw && d == '\\') { sb.append(s.getOrNull(i + 1) ?: ' '); i += 2; continue }
+            if (!raw && d == '\\') {
+                // T16c-n3 (owner decision D46f): escapes are decoded before the lint reads the text, so an escaped word is
+                // checked as the word it renders (was: the escape letter was kept and the rest copied, "A" read as "u0041").
+                val e = s.getOrNull(i + 1) ?: ' '
+                val hex = s.substring(minOf(i + 2, to), minOf(i + 6, to))
+                when {
+                    e == 'u' && hex.length == 4 && hex.all { it.isDigit() || it.lowercaseChar() in 'a'..'f' } -> { sb.append(hex.toInt(16).toChar()); i += 6 }
+                    else -> { sb.append(when (e) { 'n' -> '\n'; 't' -> '\t'; 'r' -> '\r'; 'b' -> '\b'; else -> e }); i += 2 }
+                }
+                continue
+            }
             if (d == '$' && s.getOrNull(i + 1) == '{') {
                 // The template expression is code: its own literals are extracted separately.
                 var depth = 1
