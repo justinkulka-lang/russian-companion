@@ -93,3 +93,6 @@ Add one entry each time a unit task reports DONE.
 ## 10. T16c-n2 single recheck (D41f): SENT 11/24
 - Code DONE 11/24: content 53fcc674, fix head 9f8f6e4b, DONE commit 5ebb790e, CI 45483710309 green.
 - This is the only Codex recheck under D41f. Any edge case that cannot let shipped content through is logged as a LOW disposition, not another fix round.
+
+## 11. T16c-n3 final check: DONE 11/25
+- 0 BLOCKING, 5 LOW. Report saved: t16c-n3-final-codex-check-at-bcf754b4.md. Dispositions are recorded in D49. T16c is closed.
