@@ -7369,7 +7369,7 @@
   },
   {
    "ownerId": "u17-i-calendar-date-1",
-   "sentence": "Both the expanded form and the all-numeric date write the day, then the month, then the year.",
+   "sentence": "Both written forms give the day, then the month, then the year.",
    "evidence": [
     {
      "file": "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",
@@ -7385,7 +7385,7 @@
   },
   {
    "ownerId": "u17-i-calendar-date-1",
-   "sentence": "the all-numeric date writes the day, month and year in figures only; the shown date is the expanded form.",
+   "sentence": "the all-numeric date writes the day, month and year in figures only; the shown date writes the month as a word.",
    "evidence": [
     {
      "file": "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",

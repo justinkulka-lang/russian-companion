@@ -2,7 +2,7 @@
 """T17f-n1 (owner decision D53, Codex recheck of T17f): Block 4 content fixes.
 
 - D53d, u17-i-calendar-date-1: the old check keyed the order "day month year" against two options that are not orders (a
-  date component and the all-numeric form). It now asks which written form of the date is shown. The frozen date-notation
+  date component and the all-numeric form). It now asks which English term names the written form of the shown date. The frozen date-notation
   span names exactly two written forms, each with its example: "the all-numeric date (for example 28.08.17)" and "the
   expanded form (for example 28 августа 2017 г.)". The shown date is the expanded form's example, so the key is "the expanded
   form" and the only distractor "the all-numeric date", both on the cue's own span (frozen selection records). The Unit 17
@@ -40,10 +40,10 @@ DATE_FROM = "prov-ex-u17-calendar-date-1-en"
 EXPANDED, ALL_NUMERIC = "the expanded form", "the all-numeric date"
 EXPANDED_RECORD, ALL_NUMERIC_RECORD = "prov-t17fn1-u17-calendar-date-expanded", "prov-t17fn1-u17-calendar-date-all-numeric"
 DATE_FACTS = ["prov-t17b-u17-f10-calendar-date", "prov-t17b-u17-f12-calendar-date"]
-DATE_PROMPT = "Which written form of the date is shown?"
-DATE_FEEDBACK_TAIL = ("is the expanded form of the date. Both the expanded form and the all-numeric date write the day, then the"
-                      " month, then the year.")
-DATE_RATIONALE = "the all-numeric date writes the day, month and year in figures only; the shown date is the expanded form."
+DATE_PROMPT = "Which English term names the written form of the shown date?"  # ENGLISH_CLASSIFICATION prompt
+# The explanation names only the key and the shown form, and the rationale only its own option (keyedGlossErrors).
+DATE_FEEDBACK_TAIL = "is the expanded form of the date. Both written forms give the day, then the month, then the year."
+DATE_RATIONALE = "the all-numeric date writes the day, month and year in figures only; the shown date writes the month as a word."
 DATE_TEACH_AFTER = "15 мая 1996 г. means 15 May 1996."
 DATE_TEACH_NEW = ("Written with the month as a word, a date is in the expanded form; the all-numeric date writes the same day, month"
                   " and year in figures only.")
@@ -133,7 +133,11 @@ def apply(pack: dict) -> list[dict]:
     mark(item, " ".join(rest + [DATE_RATIONALE]), DATE_FACTS)
     log.append({"task": TASK, "finding": "D53d", "owner.field": DATE_ITEM, "old": json.dumps(before, ensure_ascii=False),
                 "new": json.dumps({k: item.get(k) for k in before}, ensure_ascii=False)})
-    for k, text in (("prompt", DATE_PROMPT), ("feedback", feedback), ("rationale1", DATE_RATIONALE)):
+    # Each English sentence of the feedback is covered whole (markedSentenceSourceErrors reads whole sentences).
+    whole = [f"{cue['shippedText']} {DATE_FEEDBACK_TAIL.split('. ')[0]}.", DATE_FEEDBACK_TAIL.split(". ", 1)[1]]
+    first_tail = DATE_FEEDBACK_TAIL.split(". ")[0] + "."  # the marker piece after the year abbreviation
+    for k, text in (("prompt", DATE_PROMPT), ("feedback", feedback), ("rationale1", DATE_RATIONALE),
+                    ("feedback-s0", whole[0]), ("feedback-s1", whole[1]), ("feedback-s0-tail", first_tail)):
         coverage(pack, records, 17, item["objectiveId"], f"{DATE_ITEM}-{k}", text)
     for sid in ("u17-st-teach-calendar-date-1", "u17-st-rem-calendar-date"):
         step = steps[sid]

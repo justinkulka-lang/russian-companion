@@ -275,7 +275,7 @@ class Block4CloseoutTest {
         assertEquals(5, binders.map { it.prompt }.distinct().size)
         assertEquals(5, tutors.map { it.id }.distinct().size)
         assertTrue(tutors.all { it.id.startsWith("tutor-u") && it.bring.isNotBlank() })
-        val text = binders.flatMap { listOf(it.prompt, it.modelAnswer) } + tutors.map { it.bring }
+        val text = (binders.flatMap { listOf(it.prompt, it.modelAnswer) } + tutors.map { it.bring }).filterNotNull()
         assertTrue(text.none { Regex("(?i)\\bpdf\\b|\\bindex\\b|\\breview(?:er|ed)?\\b").containsMatchIn(it) })
     }
 
