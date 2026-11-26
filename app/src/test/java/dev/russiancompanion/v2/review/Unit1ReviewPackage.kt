@@ -107,8 +107,8 @@ internal const val UNITS_1_30_T16C_N2_CURRICULUM_COMMIT = "53fcc674a8c81d56871cd
 internal const val UNITS_1_30_T16C_N3_CURRICULUM_COMMIT = "fc91121ac31203bb6d0711efa730313198583a79"
 // T17e: Unit 20 content (A2-23/24/26, facts, typed checks, references, binder task); Units 1-30 bind here.
 internal const val UNITS_1_30_T17E_CURRICULUM_COMMIT = "80c7219be47e31bfe24e45c251ca03e1c4d34aa3"
-// T17f: Block 4 close-out content (WC001, WC005, WC004, CC028); Units 1-30 bind here.
-internal const val UNITS_1_30_T17F_CURRICULUM_COMMIT = "5818180c3f593fc1780aae4d730506019e0fc1b6"
+// T17f: Block 4 close-out content (WC001, WC005, WC004, CC028) and its fix-up (98a95ab3; was 5818180c); Units 1-30 bind here.
+internal const val UNITS_1_30_T17F_CURRICULUM_COMMIT = "98a95ab35cb0203d437646e79f8ec38278f360ba"
 
 // T15a Unit 6 (A2-23/24/26): Unit 6 binds here; earlier pins stay historical.
 internal const val UNIT6_T15A_CURRICULUM_COMMIT = "454c1d94c0ba61cb3713269de6c3a49421786128"
