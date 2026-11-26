@@ -75,7 +75,8 @@ class Units610SourceIntakeTest {
         // T17g expectation change, old -> new: e6f84850 -> 8c83ed9f (Unit 3 review package: Unit 3 binder wording and the T17g curriculum pin).
         // T17f-n1 expectation change, old -> new: 8c83ed9f -> af6cf1ff (Unit 3 review package follows the T17f-n1 curriculum pin).
         // T18a-1 expectation change, old -> new: af6cf1ff -> 18907666 (Unit 3 review package follows the T18a-1 curriculum pin ad00f774).
-        assertEquals("1890766686adfa2d964174c4e60261d123e99ef31996e303e8791e663c1774bd", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        // T18a-2 expectation change, old -> new: 18907666 -> 84b3f914 (Unit 3 review package follows the T18a-2 curriculum pin 9043034a).
+        assertEquals("84b3f9148e59a15d12e73a9ff2625432b601b7b75aaff560125749b1c8c7af67", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(
