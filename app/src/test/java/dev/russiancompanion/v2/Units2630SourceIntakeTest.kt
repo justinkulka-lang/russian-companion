@@ -32,7 +32,8 @@ class Units2630SourceIntakeTest {
     private val preservedContentDigests = mapOf(
         // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
         // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
-        3 to "81f65bc5ddb8a339d4dc1e1cd7f60f3e0eace42777b3705eb99c109d89a228d0",
+        // T17g expectation change, old -> new: 81f65bc5 -> c5166e9b (Unit 3 binder task own-table wording (column lint)).
+        3 to "c5166e9b288371b8333d2b8393e32fedc80ac2d415d74dd812b46dcacb7564a4",
         // T15g A4: prov-d7b-u16-029 re-cited to adjectives-4292379.txt:67 (was 17e7a641...).
         // T17a: Unit 16 content (was 7db670f5...).
         // T17f (WC005): u16-st-teach-inst-sg-6 and u16-st-rem-inst-sg teach the instrumental forms of husband and morning
@@ -47,11 +48,13 @@ class Units2630SourceIntakeTest {
         // T17a: the shared ref-u1620-attribution notice (was 0006fdf5...). T17d: Unit 19 content (was 26e89ab2...).
         19 to "cd6db68a92de0fe31c3e66e06e47ddcf9affc65cc54db1a51c75c46a6e0f45c2",
         // T17a: the shared ref-u1620-attribution notice (was 380eb131...).
-        20 to "68d42e6e99080b6360f84dd1fc9e29a24530b382cbef3f99dc17047b5a5d9a53", // T17e: Unit 20 content (was cd1ef77d...)
+        // T17g expectation change, old -> new: 68d42e6e -> e0876766 (Unit 20 column phrasings, D51b).
+        20 to "e08767662dda22661b2aa10204f93a47d9d08266a21f0e7db4690f2284b5c212", // T17e: Unit 20 content (was cd1ef77d...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 21 was 566c3430...).
         21 to "eba4de8e1d7b88cbc48363693383786863e9451b7fdb1f18fa034f4f75bef87c", // T16c-n2: attribution notice / binder text (was bc4a91db...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 22 was 3af10509...).
-        22 to "542de66ceaccb58b2cdc8018b11b9b6dbfb20e288cc19a6c3ec189deea729b71", // T16c-n2: attribution notice / binder text (was b51726d4...)
+        // T17g expectation change, old -> new: 542de66c -> 78528098 (Unit 22 collective column wording (column lint)).
+        22 to "78528098fae94478c72d156f0d176b7f1058fa55d38a1625257395bc83c5cbb5", // T16c-n2: attribution notice / binder text (was b51726d4...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 23 was 817b1d8f...).
         23 to "2069bea3179d443c6f1023ad6eb316c0142b67166715ebf07e21276436ec1109", // T16c-n2: attribution notice / binder text (was 1a29b09b...)
         // S1: Unit 24 gains frozen records for the dative and instrumental of nekogo (was 500af59a...).
@@ -67,7 +70,8 @@ class Units2630SourceIntakeTest {
         27 to "3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0",
         28 to "0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8",
         29 to "a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071",
-        30 to "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2",
+        // T17g expectation change, old -> new: 97f4c8be -> b03aa07d (Unit 30 letter-name rationales (column lint)).
+        30 to "b03aa07d1e54906049a7c913a7844db7676407f6f9036e523904cf23297b33d6",
     )
 
     @Test

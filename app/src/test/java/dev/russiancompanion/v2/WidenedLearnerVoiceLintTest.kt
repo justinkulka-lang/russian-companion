@@ -162,8 +162,16 @@ class WidenedLearnerVoiceLintTest {
      * learner's own-table wording.
      */
     @Test fun noUnitOneToThirtySignalIsDueToColumnWording() {
-        val text = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
-        val neutral = V2PackLoader.parse(Regex("(?i)\\b(c)(olumns?)\\b").replace(text) { "k" + it.groupValues[2] })
+        val word = Regex("(?i)\\b(c)(olumns?)\\b")
+        fun neutralize(e: kotlinx.serialization.json.JsonElement): kotlinx.serialization.json.JsonElement = when (e) {
+            is kotlinx.serialization.json.JsonObject -> kotlinx.serialization.json.JsonObject(e.mapValues { (k, v) -> if (k == "sourceTextPool") v else neutralize(v) })
+            is kotlinx.serialization.json.JsonArray -> kotlinx.serialization.json.JsonArray(e.map(::neutralize))
+            is kotlinx.serialization.json.JsonPrimitive -> if (e.isString) kotlinx.serialization.json.JsonPrimitive(word.replace(e.content) { "k" + it.groupValues[2] }) else e
+            else -> e
+        }
+        // The hashed source pool (frozen texts) is left as it is; every other string, learner text included, is neutralized.
+        val neutral = V2PackLoader.parse(neutralize(kotlinx.serialization.json.Json.parseToJsonElement(
+            File(root, "app/src/main/assets/content/v2-curriculum.json").readText())).toString())
         fun shown(p: V2CurriculumPack) = V2DesignDiagnostics.audit(p).signals.filter { it.rule in rules && (it.unit ?: 0) in 1..30 }
         assertEquals(shown(neutral), shown(current))
         val u20 = current.units.first { it.number == 20 }.sessions.flatMap { it.steps }.filter { it.id in setOf("u20-st-teach-motion-2", "u20-st-rem-motion") }

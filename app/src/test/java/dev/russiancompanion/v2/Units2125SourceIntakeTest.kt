@@ -46,7 +46,8 @@ class Units2125SourceIntakeTest {
     private val preservedContentDigests = mapOf(
         // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
         // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
-        3 to "81f65bc5ddb8a339d4dc1e1cd7f60f3e0eace42777b3705eb99c109d89a228d0",
+        // T17g expectation change, old -> new: 81f65bc5 -> c5166e9b (Unit 3 binder task own-table wording (column lint)).
+        3 to "c5166e9b288371b8333d2b8393e32fedc80ac2d415d74dd812b46dcacb7564a4",
         // T15g A4: prov-d7b-u16-029 re-cited to adjectives-4292379.txt:67 (was 17e7a641...).
         // T17a: Unit 16 content (was 7db670f5...).
         // T17f (WC005): u16-st-teach-inst-sg-6 and u16-st-rem-inst-sg teach the instrumental forms of husband and morning
@@ -61,7 +62,8 @@ class Units2125SourceIntakeTest {
         // T17a: the shared ref-u1620-attribution notice (was 0006fdf5...). T17d: Unit 19 content (was 26e89ab2...).
         19 to "cd6db68a92de0fe31c3e66e06e47ddcf9affc65cc54db1a51c75c46a6e0f45c2",
         // T17a: the shared ref-u1620-attribution notice (was 380eb131...).
-        20 to "68d42e6e99080b6360f84dd1fc9e29a24530b382cbef3f99dc17047b5a5d9a53", // T17e: Unit 20 content (was cd1ef77d...)
+        // T17g expectation change, old -> new: 68d42e6e -> e0876766 (Unit 20 column phrasings, D51b).
+        20 to "e08767662dda22661b2aa10204f93a47d9d08266a21f0e7db4690f2284b5c212", // T17e: Unit 20 content (was cd1ef77d...)
     )
 
     private val preservedMappingDigests = mapOf(

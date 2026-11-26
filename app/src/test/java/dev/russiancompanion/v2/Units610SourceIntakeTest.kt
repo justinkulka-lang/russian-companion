@@ -65,13 +65,15 @@ class Units610SourceIntakeTest {
         val pack = pack()
         // D7b: frozen selection records join Unit 3 (was 6bab7d2e...; T15f 9c2ab4f1...; T15e e6159274...).
         // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
-        assertEquals("81f65bc5ddb8a339d4dc1e1cd7f60f3e0eace42777b3705eb99c109d89a228d0", V2Validator.unitContentReviewDigest(pack, 3))
+        // T17g expectation change, old -> new: 81f65bc5 -> c5166e9b (Unit 3 binder task own-table wording (column lint)).
+        assertEquals("c5166e9b288371b8333d2b8393e32fedc80ac2d415d74dd812b46dcacb7564a4", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
         // T17f: follows the Units 1-30 curriculum commit 98a95ab3 (was 89e18e86... at 80c7219b). T17e: follows the Units 1-30 curriculum commit 80c7219b (was e472f63a... at fc91121a). T16c-n3: follows the Units 1-30 curriculum commit fc91121a (was 4c784718... at 53fcc674). T16c-n2: follows the Units 1-30 curriculum commit 53fcc674 (was c4882499... at 0f839433). T17d: follows the Units 1-30 curriculum commit 0f839433 (was 9d1a6cb3... at 6810533d). T17c: follows the Units 1-30 curriculum commit 6810533d (was 98bd3f59... at b0216798). T17b: follows the Units 1-30 curriculum commit b0216798 (was 5f1018d6... at 569341cc). T17a: follows the Units 1-30 curriculum commit 569341cc (was aaf3ae36... at 16350eb1). T16f: follows the Units 1-30 curriculum commit 16350eb1 (was d3b04bbc... at abaaa6b4). T16e: follows the Units 1-30 curriculum commit abaaa6b4 (was ab51a887... at f5861810). T16d: follows the Units 1-30 curriculum commit f5861810 (was f075c3d8... at e4245f3b). T16c: follows the Units 1-30 curriculum commit e4245f3b (was 513b9271... at b1c94322). T16-n2: follows the Units 1-30 curriculum commit b1c94322 (was 5d323636... at e95b504c). T16b CI fix: follows the Units 1-30 curriculum commit e95b504c (was a1266aa0... at b5abd07b; 92f69ed5... at 35c6bc4c; d11cab3c... at 8b1ee268; df28cdd7... at d74e3d9f; 6c5a3bb3... at 1b0dd1cc; a81a842b... at cdfba75e; abe8771d... at 6db5f5b2; fd93b562... at c4c65b24; 8e2ea00e...; D7b 7a95a65d...).
-        assertEquals("e6f84850d5916e62ea15b3dacbd8a12fb51cd8a8839764dd9720a22c89dad46c", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        // T17g expectation change, old -> new: e6f84850 -> 8c83ed9f (Unit 3 review package: Unit 3 binder wording and the T17g curriculum pin).
+        assertEquals("8c83ed9f3bdeea584a7dcb10a3efeb91e6af01a6c25b6d7a7e9f9c5278dbe58b", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(
