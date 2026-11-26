@@ -111,8 +111,8 @@ internal const val UNITS_1_30_T17E_CURRICULUM_COMMIT = "80c7219be47e31bfe24e45c2
 internal const val UNITS_1_30_T17F_CURRICULUM_COMMIT = "98a95ab35cb0203d437646e79f8ec38278f360ba"
 // T17g: Unit 20 column phrasings (D51b) and the column-lint rewords in Units 3, 6, 22 and 30; Units 1-30 bind here.
 internal const val UNITS_1_30_T17G_CURRICULUM_COMMIT = "ee665dd1459350d3a034ad8a50bbccc98b46ddb7"
-// T17f-n1: the Codex recheck fixes (D53d date check, D53f stray cues and age remediation) and the date-wording fix (ffc690b7; was fe318330); Units 1-30 bind here.
-internal const val UNITS_1_30_T17F_N1_CURRICULUM_COMMIT = "ffc690b7f383e65d2019fed7ab85f8526e51e528"
+// T17f-n1: the Codex recheck fixes (D53d date check, D53f stray cues and age remediation) the date-wording fix and the age-teaching fix-up (da0742ef; was ffc690b7, fe318330); Units 1-30 bind here.
+internal const val UNITS_1_30_T17F_N1_CURRICULUM_COMMIT = "da0742ef662e846208f505f9c582c0101bbad85e"
 
 // T15a Unit 6 (A2-23/24/26): Unit 6 binds here; earlier pins stay historical.
 internal const val UNIT6_T15A_CURRICULUM_COMMIT = "454c1d94c0ba61cb3713269de6c3a49421786128"
