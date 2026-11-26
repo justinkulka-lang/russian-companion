@@ -38,10 +38,12 @@ class Units2630SourceIntakeTest {
         // T17a: Unit 16 content (was 7db670f5...).
         // T17f (WC005): u16-st-teach-inst-sg-6 and u16-st-rem-inst-sg teach the instrumental forms of husband and morning
         // (was d08a9c1a...).
-        16 to "e0a99c97f6b064b9fd69186c2b26cd9fe1684ade3b37e5250cc457b21463d4e9",
+        // T17f-n1 expectation change, old -> new: e0a99c97 -> 4cc55e2d (Unit 16 stray-cue prompts, D53f).
+        16 to "4cc55e2d9f829c7c239e94f2d296fb0cd3402a59e8f2dac769104d59f4d235ef",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 17 was 6b680bda...).
         // T17f: Unit 17 content (WC001 rationales, WC004 glosses, CC028 age checks; was 9370d8b8...).
-        17 to "ec7542b3de8fa602f7bb2fa3b7878e952f71200fa4fb9845928f210cc8ad7170", // T17b: Unit 17 content (was 2b8138570602b6022e7230f7ef786d6f61dfaaa3f6ceba7e6603f90ebae425e3) // T16c-n2 (was b48912f2...)
+        // T17f-n1 expectation change, old -> new: ec7542b3 -> 455028d9 (Unit 17 date check D53d and age remediation D53f).
+        17 to "455028d9c410aba03bea6a8f6f5a9fbf17c98dfb90014bd6113cb94ed94a166b", // T17b: Unit 17 content (was 2b8138570602b6022e7230f7ef786d6f61dfaaa3f6ceba7e6603f90ebae425e3) // T16c-n2 (was b48912f2...)
         // T17a: the shared ref-u1620-attribution notice (was a82a7ebf...). T17c: Unit 18 content (was 04147a35...).
         18 to "114c6675620c872dd6a5599a00336c5102c59a2d74df1116daad9aa44f9ce431",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
@@ -49,7 +51,8 @@ class Units2630SourceIntakeTest {
         19 to "cd6db68a92de0fe31c3e66e06e47ddcf9affc65cc54db1a51c75c46a6e0f45c2",
         // T17a: the shared ref-u1620-attribution notice (was 380eb131...).
         // T17g expectation change, old -> new: 68d42e6e -> e0876766 (Unit 20 column phrasings, D51b).
-        20 to "e08767662dda22661b2aa10204f93a47d9d08266a21f0e7db4690f2284b5c212", // T17e: Unit 20 content (was cd1ef77d...)
+        // T17f-n1 expectation change, old -> new: e0876766 -> b61e9d0d (T17f-n1: u20-i-motion-3 names the shown sentence, D53f).
+        20 to "b61e9d0ddc6fdc904ddee2e145f05c0eb214c13f7de276aadf7603c0485c0c42", // T17e: Unit 20 content (was cd1ef77d...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 21 was 566c3430...).
         21 to "eba4de8e1d7b88cbc48363693383786863e9451b7fdb1f18fa034f4f75bef87c", // T16c-n2: attribution notice / binder text (was bc4a91db...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 22 was 3af10509...).

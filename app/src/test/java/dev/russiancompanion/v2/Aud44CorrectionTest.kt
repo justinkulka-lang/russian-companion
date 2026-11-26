@@ -522,7 +522,8 @@ class Aud44CorrectionTest {
             // T17a: Unit 16 content (was 7db670f5...).
             // T17f (WC005): u16-st-teach-inst-sg-6 and u16-st-rem-inst-sg teach the instrumental forms of husband and morning
             // (was d08a9c1a...).
-            16 to "e0a99c97f6b064b9fd69186c2b26cd9fe1684ade3b37e5250cc457b21463d4e9",
+            // T17f-n1 expectation change, old -> new: e0a99c97 -> 4cc55e2d (Unit 16 stray-cue prompts, D53f).
+            16 to "4cc55e2d9f829c7c239e94f2d296fb0cd3402a59e8f2dac769104d59f4d235ef",
             // T17a: the shared ref-u1620-attribution notice (was a82a7ebf...). T17c: Unit 18 content (was 04147a35...).
             18 to "114c6675620c872dd6a5599a00336c5102c59a2d74df1116daad9aa44f9ce431",
             // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
