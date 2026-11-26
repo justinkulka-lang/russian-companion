@@ -1,0 +1,90 @@
+Checked head c922fefeb438ef1fa22330fba7311e6170ef05c8. Nothing changed, committed or pushed.
+
+No new BLOCKING findings. T-AUDIO-1a and Unit 20’s current content pass. The known D49b BLOCKING guard gap remains queued for T17f. Two LOW observations are below.
+
+Full probe output.
+
+A. T-AUDIO-1a — PASS
+
+Fresh results:
+
+Registry records:                 104
+Distinct bound clips:              27
+Verification defects:               0
+Stress-only target differences:    25
+Registry text equals catalog:     104
+
+All 27 bound clips are one-vowel words. The 25 differences concern displayed targets, not changed catalog text.
+
+Probe	Result
+
+дом / до́м	Match
+за́мок / замо́к / замок, pairwise	Reject
+му́ка / мука́	Reject
+Где / где	Match
+ГДЕ or гДе / где	Reject
+ёж / еж; её / ее	Reject
+Leading/trailing whitespace	Trimmed
+Interior double space, tab, NBSP or newline	Remains distinct
+U+0341 versus U+0301, same position	Canonically equivalent through NFC
+Those acute variants on different syllables	Reject
+Grave accent, spacing acute, modifier acute or inserted U+034F	Remains distinct
+
+
+Evidence: V2AudioVerification.kt:62.
+
+Sheets and registry target matching use audioMatchKey; record-versus-catalog checking uses its shared stressNormalized implementation. The latter deliberately requires the stored record’s catalog casing, while the displayed target receives D47a’s first-letter allowance. See verification checks:106 and sheet matching:68.
+
+All six committed sheets reproduce, and their results reproduce the registry. CI 45663464260 passed on exactly c8e6e3dd; DONE is 81a8623c.
+
+B. T17e — current content and implemented guards PASS
+
+Check	Evidence and reproduction
+
+Counts and placement	20 checked, 12 typed (60%); all required checks are in u20-s-checks; zero A2-24 findings. Unit20FactProvenanceTest.kt:47
+Frozen-source binding	Unit 20 records pass the frozen-file binding check. A self-consistent record with fabricated source text is rejected as absent from the bound file. FrozenSourceBindingTest.kt:132
+Contiguous phrases	Zero Unit 20 phrase failures. Joining the separately attested library and birds sentences with a comma produces COMPOSED. An invented phrase added to teaching fails full validation.
+Selection boundaries	port from report, 'clock and o' from o'clock, and ’clock from o’clock reject. Whole-word selections and surrounding quotation marks pass. All 2,888 selection records pass the direct regression. V2Validator.kt:2965
+Typed keys and accepted answers	All 14 typed items, including guided practice, match their citations. All accepted-answer lists contain only their primary key. Wrong keys, an uncited extra answer, a wrong answer citation, added unsupported stress and authored идем replacing идём reject. V2Validator.kt:5783
+Fact markers	110 marker occurrences, 95 distinct sentences resolve to frozen Unit 20 provenance. A new marker citing only content-audit coverage fails full validation.
+Binder exemption	Own-table wording passes. Source framing, dictionary narration and “requested form” wording remain flagged—even between “make a table” and “with rows for.” V2DesignDiagnostics.kt:134
+Review introduction	Current introduction passes. Injected 20, twenty, twenty-one, dozen and both all reject. V2ReviewCopy.kt:38
+
+
+The keys пошёл, шёл, отошёл and идём equal the named CSV cells at verbs.csv:27, :10, :417 and :10. The other keys match their cited grammar lines exactly, including unstressed летят, ходит, ездил. Citation pins are at typed-key-citations.tsv:203.
+
+Findings
+
+1. BLOCKING — known D49b gap, already assigned to T17f.
+
+   Reproduction: change only u20-i-motion-1.assessment.independent to false.
+
+   featureValid = false
+   full-pack validation = ok=true, errors=[]
+
+   D49b is not implemented at this head. The current validator includes this item’s structural checks but does not universally reject every failed feature check. Evidence: V2Validator.kt:2819, item-validation dispatch:5082.
+
+   This is not a new T17e regression; the shipped item currently has the correct flag. T17f must close the known guard gap.
+
+2. LOW — table-column framing remains in three rendered fields.
+
+   - u20-st-teach-motion-2.body
+   - u20-st-rem-motion.body
+   - u20-g-motion-0.distractorRationales[1]
+
+   Wording includes “Its other column is multidirectional,” “forms in these columns,” and “the other motion column.” The first two sentences recur in remediation: five sentence occurrences altogether.
+
+   Reproduction: pass those sentences to learnerVoiceRules; each returns []. They should describe the verbs directly. The underlying grammatical claims are supported.
+
+   Evidence: rendered-field projection:22, :54, :97; retained wording also appears at builder:222.
+
+3. LOW — audio normalization counts vowels across the entire string.
+
+   audioMatchKey("мой до́м") == audioMatchKey("мой дом")
+   → false
+
+   Both words individually have one vowel, but their combined string has two. This conservatively rejects a potential phrase match; it does not admit wrong audio or affect any current binding. Evidence: V2AudioVerification.kt:65.
+
+Local targeted tests: 16 passed. Recomputed source guards, both capability hashes, Unit 20 digest 68d42e6e…, Unit 3 package digest 89e18e86… and release digest 16fd78b3… match. No weakened assertion found in the task diffs.
+
+CI 45726840060 passed on exactly 0234c116; DONE c922fefe changes only WORK_QUEUE.md.
