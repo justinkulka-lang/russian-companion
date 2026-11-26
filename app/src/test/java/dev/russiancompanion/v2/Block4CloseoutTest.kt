@@ -63,7 +63,9 @@ class Block4CloseoutTest {
             val shown = closed.count { item -> lessonPresentedOptions(item, checks.single { item.id in it.itemIds }.id).first() == item.answer }
             unit.number to listOf(closed.size, closed.count { it.options.first() == it.answer }, shown)
         }
-        assertEquals(mapOf(16 to listOf(12, 12, 3), 17 to listOf(24, 22, 11), 18 to listOf(4, 4, 3), 19 to listOf(8, 8, 4),
+        // T17f-n1 expectation change (owner decision D53d), old -> new: Unit 17 [24, 22, 11] -> [24, 22, 12]; the redesigned
+        // u17-i-calendar-date-1 has two options and its lesson permutation now shows the key first.
+        assertEquals(mapOf(16 to listOf(12, 12, 3), 17 to listOf(24, 22, 12), 18 to listOf(4, 4, 3), 19 to listOf(8, 8, 4),
             20 to listOf(8, 8, 4)), measured)
     }
 

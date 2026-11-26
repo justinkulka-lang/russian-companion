@@ -12,7 +12,7 @@
   the set). Each prompt now says what the shown form is, in the unit's own teaching terms, before it asks its question;
   u20-i-motion-3 now names the shown sentence it asks about.
 - D53f, CC028 (u17-g-age-0): the guided age item's two misreadings (ownership; people performing an action) are now both named
-  in u17-st-rem-age (was: ownership only).
+  in the age teaching and in u17-st-rem-age (was: ownership only).
 No Russian is added or changed. New English wording gets a coverage record (prov-ca-t17fn1-). Every change is logged in
 audit/T17f-n1-block4-changes.csv.
 """
@@ -174,6 +174,16 @@ def apply(pack: dict) -> list[dict]:
     log.append({"task": TASK, "finding": "CC028", "owner.field": f"{AGE_REM}.body", "old": old, "new": step["body"]})
     coverage(pack, records, 17, "obj-u17-age", f"{AGE_REM}-body", step["body"])
     coverage(pack, records, 17, "obj-u17-age", f"{AGE_REM}-misreadings", AGE_NEW)
+    # The remediation repeats the age teaching word for word (Unit17AgeCalendarInstructionTest), so the teaching step that
+    # carries the sentence names both misreadings too, before the guided practice.
+    taught = [sid for sid, st in steps.items() if sid.startswith("u17-st-teach-age-") and AGE_OLD in st["body"]]
+    if len(taught) != 1:
+        raise SystemExit(f"age teaching anchor: {taught}")
+    step = steps[taught[0]]
+    old = step["body"]
+    step["body"] = old.replace(AGE_OLD, AGE_NEW)
+    log.append({"task": TASK, "finding": "CC028", "owner.field": f"{taught[0]}.body", "old": old, "new": step["body"]})
+    coverage(pack, records, 17, "obj-u17-age", f"{taught[0]}-body", step["body"])
     assert unit17
     return log
 

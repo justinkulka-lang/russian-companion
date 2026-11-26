@@ -87,7 +87,9 @@ class SelectionWordBoundaryRuleTest {
         // evidence lines) join them; all are checked.
         // T17f expectation change: 2888 -> 2889. The D50g frozen selection record prov-t17f-u17-age-forty-one-years (the numbers
         // page record prov-ex-u17-years-3-en bound to obj-u17-age) joins them; all are checked, and the D41d count excludes it.
-        assertEquals(2889, selections.size)
+        // T17f-n1 expectation change (owner decision D53d), old -> new: 2889 -> 2891; the two frozen selection records of the
+        // redesigned date check (the expanded form, the all-numeric date) are whole-word selections of their date-notation span.
+        assertEquals(2891, selections.size)
         assertEquals(2839, selections.count { !it.itemId.startsWith("prov-t16cn2-key-") && !it.itemId.startsWith("prov-t17e-u20-") &&
             !it.itemId.startsWith("prov-t17f-u17-age-") })
         val failing = selections.filterNot { V2Validator.displayedInFrozen(it) }

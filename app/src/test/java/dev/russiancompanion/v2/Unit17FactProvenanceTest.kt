@@ -107,7 +107,9 @@ class Unit17FactProvenanceTest {
         val totals = dispositions.groupingBy { it.string("disposition") }.eachCount()
         // Report section 3 (181 MARK, 7 REWORD, 6 REMOVE, 3 PENDING-INTAKE) with S1 1920, 1947 and 1948 SUPPORTED and marked;
         // sweep rows turn 1918, 1919, 2016 and 2035 into instructions (REWORD, a departure from the prep's MARK).
-        assertEquals(mapOf("MARK" to 180, "REWORD" to 11, "REMOVE" to 6), totals)
+        // T17f-n1 expectation change (owner decision D53d), old -> new: MARK 180 -> 177, REMOVE 6 -> 9; the three baseline
+        // sentences of the old u17-i-calendar-date-1 order check left with its redesign.
+        assertEquals(mapOf("MARK" to 177, "REWORD" to 11, "REMOVE" to 9), totals)
         assertEquals(totals, json.getValue("totals").jsonObject.mapValues { it.value.jsonPrimitive.int })
         val hosts = hosts(pack)
         // The S1 verdicts (audit/prep/s1-claim-verification.csv, Unit 17 rows): SUPPORTED -> marked; PARTIAL -> reworded to the
@@ -231,7 +233,9 @@ class Unit17FactProvenanceTest {
         val needed = owners.flatMap { (owner, facts, _) -> facts.filter { fact -> fact.none { it in 'Ѐ'..'ӿ' } }.map { owner to it } }
         // T17f expectation change (owner decision D50c, CC028): 185 -> 184 English-only markers (the u17-i-age-2 label rationale
         // left with the label distractor; the T17f WC001 rewrites replace their markers one for one).
-        assertEquals(184, needed.size)
+        // T17f-n1 expectation change (owner decisions D53d, D53f), old -> new: 184 -> 185; the redesigned date check marks three
+        // English sentences and the date remediation one (the forms sentence), and the old check's three marked sentences left.
+        assertEquals(185, needed.size)
         assertEquals(needed.toSet(), reviews.map { it.string("ownerId") to it.string("sentence") }.toSet())
         assertEquals(needed.size, reviews.size)
         val records = pack.provenanceRecords.associateBy { it.itemId }
