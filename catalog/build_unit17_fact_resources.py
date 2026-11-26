@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT / "catalog"))
 from curriculum_storage import loads  # noqa: E402
 import apply_t17b_unit_17 as t  # noqa: E402
 import apply_t17f_block4 as wc001  # noqa: E402
+import apply_t17fn1_block4 as fn1  # noqa: E402
 
 PACK = ROOT / "app/src/main/assets/content/v2-curriculum.json"
 OUT = ROOT / "app/src/test/resources"
@@ -120,6 +121,19 @@ def main() -> None:
         row = inv[n - 1]
         owner, field, sentence = row[1], row[2], row[3]
         disp, replacement, kind = disposition(n, sentence)
+        # T17f-n1 (D53d, D53f): the redesigned date check retires its old sentences; the age remediation names both guided
+        # misreadings (the marked wording changes, the same frozen records).
+        if owner == fn1.DATE_ITEM:
+            disp, replacement, kind = ("REMOVE", None, None)
+            CURRENT.pop(n, None)
+            REASONS[n] = ("T17f-n1 (D53d): u17-i-calendar-date-1 is redesigned to ask which written form of the date is shown "
+                          "(the expanded form or the all-numeric date, both named on its frozen date-notation span); this sentence "
+                          "left with the old order check.")
+        elif owner == fn1.AGE_REM and CURRENT.get(n, sentence) == fn1.AGE_OLD:
+            CURRENT[n] = fn1.AGE_NEW
+            REASONS[n] = (REASONS.get(n, "Retained exact sentence; marker cites frozen-source records.") +
+                          f" T17f-n1 (D53f, CC028): the sentence also names the guided agent misreading; marked wording now "
+                          f"\"{fn1.AGE_NEW}\" (was \"{fn1.AGE_OLD}\"); the same frozen records.")
         rewritten = t17f_current(owner, CURRENT[n]) if n in CURRENT else None
         if rewritten:
             REASONS[n] = (REASONS.get(n, "Retained exact sentence; marker cites frozen-source records.") +

@@ -70,8 +70,7 @@ class Units2630SourceIntakeTest {
         27 to "3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0",
         28 to "0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8",
         29 to "a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071",
-        // T17g expectation change, old -> new: 97f4c8be -> b03aa07d (Unit 30 letter-name rationales (column lint)).
-        30 to "b03aa07d1e54906049a7c913a7844db7676407f6f9036e523904cf23297b33d6",
+        30 to "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2",
     )
 
     @Test

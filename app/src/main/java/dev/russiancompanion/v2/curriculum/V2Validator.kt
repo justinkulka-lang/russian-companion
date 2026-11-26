@@ -2716,6 +2716,14 @@ internal object V2Validator {
             errors += "Unit 4 nominative objective has no frozen distinct subject-role evidence chain"
         }
         if (unit.number in 6..30) validateGovernedChecks(pack, unit, errors)
+        // T17f-n1 (owner decision D53b, approved rule change): a required check that carries an assessment target must be
+        // feature-valid (independent and structure-valid); an assessed required check that only fails featureValid (for example
+        // independent=false) fails full validation. Was: only structureValid failures failed validation (D49b), and a required
+        // check that was not feature-valid only stopped counting toward its objective. Guided practice is not a required check
+        // and keeps its independent=false.
+        unit.objectives.flatMap { it.checkItemIds }.distinct().mapNotNull { pack.item(it) }
+            .filter { it.assessment != null && !featureValid(pack, it) }
+            .forEach { errors += "Item ${it.id} is a required assessed check but is not feature-valid" }
     }
 
     private val ENGLISH_CUE = Regex("(?i)which admitted\\b.{0,80}\\brecorded for\\b")
@@ -3459,11 +3467,18 @@ internal object V2Validator {
     /** D50g: the obj-u17-age records on the Russian grammar age-statement line (an ASCII record-id prefix; no Cyrillic literal). */
     private const val AGE_OBJECTIVE = "obj-u17-age"
     private const val AGE_LINE_SOURCE = "src-wikipedia-russian-grammar-1369617627"
-    private const val AGE_LINE_RECORD_PREFIX = "grammar:age statements:"
+    /**
+     * T17f-n1 (owner decision D53c, approved rule change): the age-statement line is identified by its frozen source, revision and
+     * the exact hash of its retained span (Russian grammar line 38, russian-grammar-1369617627.txt), and the record's text must
+     * hash to it. Was: the source id and the record-id prefix "grammar:age statements:", which any record could carry (Codex's
+     * spoof put the line-37 impersonal-clause span under that prefix).
+     */
+    private const val AGE_LINE_REVISION = "1369617627"
+    private const val AGE_LINE_SPAN_SHA256 = "991c7c5a28608135551068c8c149a4f7aae7f1f89cbffe4b612761e8ebf8ffaa"
 
     private fun ageStatementLine(record: V2ProvenanceRecord): Boolean =
         record.objectiveId == AGE_OBJECTIVE && record.unitNumber == 17 && record.sourceId == AGE_LINE_SOURCE &&
-            record.sourceRecordId.startsWith(AGE_LINE_RECORD_PREFIX)
+            record.sourceRevision == AGE_LINE_REVISION && record.sourceHash == AGE_LINE_SPAN_SHA256 && verifiedFrozen(record)
 
     /** D50g: a competing English meaning for the age check: frozen, Unit 17, bound to obj-u17-age, and not nested with the key. */
     private fun ageCompetingMeaning(record: V2ProvenanceRecord, answer: V2ProvenanceRecord): Boolean {

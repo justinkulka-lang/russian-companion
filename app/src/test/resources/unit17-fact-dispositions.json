@@ -1,9 +1,9 @@
 {
  "task": "T17b (Claude Code, 2026-11-23); dispositions from audit/prep/units-16-17-prep-at-20bfde5c.txt, Unit 17 section 3, and audit/prep/s1-claim-verification.csv",
  "totals": {
-  "MARK": 180,
+  "MARK": 177,
   "REWORD": 11,
-  "REMOVE": 6
+  "REMOVE": 9
  },
  "entries": [
   {
@@ -722,11 +722,12 @@
    "field": "remediation body",
    "baselineSentence": "This is an age statement, not a statement of ownership.",
    "disposition": "MARK",
+   "currentSentence": "This is an age statement, not a statement of ownership, and it does not describe people performing an action.",
    "sourceRecordIds": [
     "prov-t17b-u17-g35-age",
     "prov-t17b-u17-g38-age"
    ],
-   "reason": "Retained exact sentence; marker cites frozen-source records."
+   "reason": "Retained exact sentence; marker cites frozen-source records. T17f-n1 (D53f, CC028): the sentence also names the guided agent misreading; marked wording now \"This is an age statement, not a statement of ownership, and it does not describe people performing an action.\" (was \"This is an age statement, not a statement of ownership.\"); the same frozen records."
   },
   {
    "entry": "U17-E042",
@@ -3305,12 +3306,9 @@
    "ownerId": "u17-i-calendar-date-1",
    "field": "item feedback",
    "baselineSentence": "corresponds to day month year.",
-   "disposition": "MARK",
-   "sourceRecordIds": [
-    "prov-t17b-u17-f10-calendar-date",
-    "prov-t17b-u17-f12-calendar-date"
-   ],
-   "reason": "Retained exact sentence; marker cites frozen-source records."
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "T17f-n1 (D53d): u17-i-calendar-date-1 is redesigned to ask which written form of the date is shown (the expanded form or the all-numeric date, both named on its frozen date-notation span); this sentence left with the old order check."
   },
   {
    "entry": "U17-E181",
@@ -3318,13 +3316,9 @@
    "ownerId": "u17-i-calendar-date-1",
    "field": "item distractor rationale",
    "baselineSentence": "the month in genitive case is a different meaning or construction and does not match the requested reading of the shown form.",
-   "disposition": "MARK",
-   "currentSentence": "the month in genitive case describes one part of the date, not the order of the whole date.",
-   "sourceRecordIds": [
-    "prov-t17b-u17-f10-calendar-date",
-    "prov-t17b-u17-f12-calendar-date"
-   ],
-   "reason": "Retained exact sentence; marker cites frozen-source records. T17f (WC001): the template rationale is rewritten to explain this option; marked wording now \"the month in genitive case describes one part of the date, not the order of the whole date.\" (was \"the month in genitive case is a different meaning or construction and does not match the reading of the shown form.\"); the same frozen records."
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "T17f-n1 (D53d): u17-i-calendar-date-1 is redesigned to ask which written form of the date is shown (the expanded form or the all-numeric date, both named on its frozen date-notation span); this sentence left with the old order check."
   },
   {
    "entry": "U17-E182",
@@ -3332,13 +3326,9 @@
    "ownerId": "u17-i-calendar-date-1",
    "field": "item distractor rationale",
    "baselineSentence": "17 is a different meaning or construction and does not match the requested reading of the shown form.",
-   "disposition": "MARK",
-   "currentSentence": "17 is the all-numeric form of the date, not the order of its parts.",
-   "sourceRecordIds": [
-    "prov-t17b-u17-f10-calendar-date",
-    "prov-t17b-u17-f12-calendar-date"
-   ],
-   "reason": "Retained exact sentence; marker cites frozen-source records. T17f (WC001): the template rationale is rewritten to explain this option; marked wording now \"17 is the all-numeric form of the date, not the order of its parts.\" (was \"17 is a different meaning or construction and does not match the reading of the shown form.\"); the same frozen records."
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "T17f-n1 (D53d): u17-i-calendar-date-1 is redesigned to ask which written form of the date is shown (the expanded form or the all-numeric date, both named on its frozen date-notation span); this sentence left with the old order check."
   },
   {
    "entry": "U17-E183",
@@ -7363,7 +7353,7 @@
   },
   {
    "ownerId": "u17-i-calendar-date-1",
-   "sentence": "corresponds to day month year.",
+   "sentence": "is the expanded form of the date.",
    "evidence": [
     {
      "file": "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",
@@ -7379,7 +7369,7 @@
   },
   {
    "ownerId": "u17-i-calendar-date-1",
-   "sentence": "the month in genitive case describes one part of the date, not the order of the whole date.",
+   "sentence": "Both the expanded form and the all-numeric date write the day, then the month, then the year.",
    "evidence": [
     {
      "file": "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",
@@ -7395,7 +7385,7 @@
   },
   {
    "ownerId": "u17-i-calendar-date-1",
-   "sentence": "17 is the all-numeric form of the date, not the order of its parts.",
+   "sentence": "the all-numeric date writes the day, month and year in figures only; the shown date is the expanded form.",
    "evidence": [
     {
      "file": "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",
@@ -8706,7 +8696,7 @@
   },
   {
    "ownerId": "u17-st-rem-age",
-   "sentence": "This is an age statement, not a statement of ownership.",
+   "sentence": "This is an age statement, not a statement of ownership, and it does not describe people performing an action.",
    "evidence": [
     {
      "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
@@ -11376,6 +11366,22 @@
   {
    "ownerId": "u17-st-rem-calendar-date",
    "sentence": "means 15 May 1996.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",
+     "line": 10,
+     "quote": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric dat"
+    },
+    {
+     "file": "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",
+     "line": 12,
+     "quote": "When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gende"
+    }
+   ]
+  },
+  {
+   "ownerId": "u17-st-rem-calendar-date",
+   "sentence": "Written with the month as a word, a date is in the expanded form; the all-numeric date writes the same day, month and year in figures only.",
    "evidence": [
     {
      "file": "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",

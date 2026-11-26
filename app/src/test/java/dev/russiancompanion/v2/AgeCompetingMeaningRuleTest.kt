@@ -77,6 +77,43 @@ class AgeCompetingMeaningRuleTest {
         assertTrue(itemErrors(otherSpan).isNotEmpty())
     }
 
+    /**
+     * T17f-n1 (owner decision D53c): the allowance is bound to the frozen source, revision and exact span hash of Russian grammar
+     * line 38, not to the record-id prefix. Codex's spoof: the line-37 impersonal-clause span (frozen, verified, same source and
+     * revision) filed under the age-statement prefix, with the competing distractor "forty-one years", fails full validation.
+     */
+    @Test fun aLine37RecordUnderTheAgePrefixDoesNotGetTheAllowance() {
+        val root = File(if (File("app").isDirectory) "." else "..")
+        val lines = File(root, "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt").readLines()
+        val line38 = lines[37].removePrefix("** ").removeSuffix("';")
+        val (cue, answer) = participants().take(2)
+        assertEquals(line38, cue.originalSourceText) // the shipped binding is line 38
+        val line37 = lines[36].removePrefix("** ").removeSuffix(";")
+        assertTrue(line37, line37.startsWith("impersonal clauses:"))
+        val shown = Regex("\\{\\{lang\\|ru\\|([^}]+)\\}\\}").find(line37)!!.groupValues[1]
+        val meaning = Regex("'([^']+)'").find(line37)!!.groupValues[1]
+        val prefixed = "grammar:age statements: " + line37.take(60)
+        fun spoof(r: V2ProvenanceRecord, text: String) = r.copy(sourceRecordId = prefixed, originalSourceText = line37,
+            sourceHash = sha(line37), shippedText = text, contentHash = sha(text))
+        val spoofed = pack.copy(
+            provenanceRecords = pack.provenanceRecords.map {
+                when (it.itemId) { cue.itemId -> spoof(it, shown); answer.itemId -> spoof(it, meaning); else -> it }
+            },
+            items = pack.items.map {
+                if (it.id != item.id) it else it.copy(promptLetter = shown, answer = meaning, options = listOf(meaning, "forty-one years"),
+                    assessment = it.assessment!!.copy(contrastMembers = listOf(meaning, "forty-one years")))
+            },
+        )
+        assertEquals(listOf(meaning, "forty-one years"), spoofed.item(item.id)!!.options)
+        assertNotEquals("RULE_CLASSIFIES_SOURCE_EXAMPLE", relation(spoofed))
+        assertFalse(V2Validator.featureValid(spoofed, spoofed.item(item.id)!!))
+        assertFalse(V2Validator.validate(spoofed).ok)
+        // The same spoof keeps the line-38 hash but not its text: the record no longer verifies, so it fails too.
+        val forged = withRecord(cue.itemId) { it.copy(sourceRecordId = prefixed, originalSourceText = line37) }
+        assertNotEquals("RULE_CLASSIFIES_SOURCE_EXAMPLE", relation(forged))
+        assertFalse(V2Validator.validate(forged).ok)
+    }
+
     @Test fun aDistractorThatNestsInOrAroundTheKeyIsRejected() {
         // "years" (inside the key's tokens) and a gloss that would contain the whole key are both rejected by the allowance.
         val inside = withRecord(bound) { it.copy(shippedText = "years", contentHash = sha("years")) }

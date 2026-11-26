@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "fbaaeae8343d8b617081303fa34b6cfa58c40cdf0977c72f685322977aa8923d",
+      "sha256": "2fc3832090c6d2dbc1b5d326259c6adb65f4ace129763bc87b471304999af9aa",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -2772,7 +2772,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/ExplicitSourcePairs.kt",
-      "sha256": "9e61aeed9c6d52b5d3e1535adc11a7155983012304a630c9cb7d92b0358211b5",
+      "sha256": "ccc8b4e7d1b2975ecfa34150e94ae0db627026ead8ff23dc90f659cdda4efd70",
       "purpose": "Exact existing escaped source comparison implementation; no directory exemption or source acceptance",
       "bindings": [
         {
@@ -3544,6 +3544,28 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "T17f (owner decisions D49b, D50a, D50g, approved rule changes): D49b, structureValid now applies to every grammar-kind or assessed item in every unit (was Units 6-15, 21-30, the Batch A objectives and obj-u16-inst-prep), so one invalid item fails full-pack validation; D50a, the pinned target phrase of PENCIL_INSTRUMENTAL is pencil (was pencil instrumental); D50g, for obj-u17-age only, with cue and key on the Russian grammar age-statement line (record prefix grammar:age statements:), a distractor may be a competing English meaning from another verified frozen Unit 17 record bound to obj-u17-age that is not content-audit research, synthesis or coverage and does not nest in or around the key (ageStatementLine, ageCompetingMeaning). Every other governed span still requires all participants on the cue's span. No Russian is constructed or rendered.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T17f-n1 D53b D53c",
+      "previousRecordedSha256": "fbaaeae8343d8b617081303fa34b6cfa58c40cdf0977c72f685322977aa8923d",
+      "sha256": "2fc3832090c6d2dbc1b5d326259c6adb65f4ace129763bc87b471304999af9aa",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T17f-n1 (owner decisions D53b, D53c, approved rule changes): D53b, a required check that carries an assessment target must be feature-valid (independent and structure-valid), so a required assessed check that fails only featureValid fails full validation (was: only structureValid failures did, D49b); guided practice is not a required check. D53c, the obj-u17-age allowance identifies the age-statement line by its frozen source, revision 1369617627 and the exact sha256 of its retained span (Russian grammar line 38), and the record must verify against it (was: the source id and the record-id prefix grammar:age statements:). No Russian is constructed or rendered.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/ExplicitSourcePairs.kt",
+      "task": "T17f-n1 D53d",
+      "previousRecordedSha256": "9e61aeed9c6d52b5d3e1535adc11a7155983012304a630c9cb7d92b0358211b5",
+      "sha256": "ccc8b4e7d1b2975ecfa34150e94ae0db627026ead8ff23dc90f659cdda4efd70",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T17f-n1 (owner decision D53d): the date-notation span's expanded-form example admits the ASCII answer 'the expanded form', which that span names for it; the escaped span and every existing literal are unchanged. No new Cyrillic literal or escape; no Russian is constructed or rendered.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }
