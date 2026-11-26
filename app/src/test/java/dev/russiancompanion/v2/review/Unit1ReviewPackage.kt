@@ -113,6 +113,8 @@ internal const val UNITS_1_30_T17F_CURRICULUM_COMMIT = "98a95ab35cb0203d437646e7
 internal const val UNITS_1_30_T17G_CURRICULUM_COMMIT = "ee665dd1459350d3a034ad8a50bbccc98b46ddb7"
 // T17f-n1: the Codex recheck fixes (D53d date check, D53f stray cues and age remediation) the date-wording fix and the age-teaching fix-up (da0742ef; was ffc690b7, fe318330); Units 1-30 bind here.
 internal const val UNITS_1_30_T17F_N1_CURRICULUM_COMMIT = "da0742ef662e846208f505f9c582c0101bbad85e"
+// T18a-1: the Unit 21 love example restored to the frozen G:508 form (D54d); Units 1-30 bind here.
+internal const val UNITS_1_30_T18A1_CURRICULUM_COMMIT = "ad00f7745aeae69a9f43d94a1e1c38a710745122"
 
 // T15a Unit 6 (A2-23/24/26): Unit 6 binds here; earlier pins stay historical.
 internal const val UNIT6_T15A_CURRICULUM_COMMIT = "454c1d94c0ba61cb3713269de6c3a49421786128"
@@ -251,7 +253,8 @@ internal const val UNIT5_T15N1_CURRICULUM_COMMIT = "792344b957ad174cebc1e9907411
 
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
     // T15a also rewords the Units 6-10 attribution reference, so Units 7-10 bind to the same commit.
-    if (unitNumber in 1..30) UNITS_1_30_T17F_N1_CURRICULUM_COMMIT
+    if (unitNumber in 1..30) UNITS_1_30_T18A1_CURRICULUM_COMMIT
+    else if (unitNumber in 1..30) UNITS_1_30_T17F_N1_CURRICULUM_COMMIT
     else if (unitNumber in 1..30) UNITS_1_30_T17G_CURRICULUM_COMMIT
     else if (unitNumber in 1..30) UNITS_1_30_T17F_CURRICULUM_COMMIT
     else if (unitNumber in 1..30) UNITS_1_30_T17E_CURRICULUM_COMMIT
