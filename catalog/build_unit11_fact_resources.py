@@ -44,6 +44,33 @@ DISPOSITIONS = {
            "T16-n1 (D28c): \"the question requires\" is A2-26 assessment commentary; the reworded sentence keeps the fact and cites verbs.csv учи́ться past_f/past_pl and past-tense:38, :113, :115."),
 }
 
+# T17f (owner decision D42b): the T16-n2 (D31c) rewording that update_t16n2_fact_resources.py carried into the committed
+# resource, by CSV line: a MARK sentence's current wording, or a REWORD sentence's new replacement. With it the builder
+# regenerates app/src/test/resources/unit11-*.json byte for byte from the current pack (it used to look markers up under
+# the pre-T16-n2 wording and stop). FactResourceBuildersReproducibleTest checks the round trip.
+T16N2 = {
+    1283: "The past form matches the subject in gender and number; choose feminine singular.",
+    1290: "The cue is feminine singular; change it to masculine singular of the same verb.",
+    1294: "Choose the correct sentence.",
+    1303: "The cue is feminine singular; change it to plural, since past agreement follows the subject’s number.",
+    1307: "Check the gender and number.",
+}
+
+
+def carry_t16n2(entry: dict, n: int) -> None:
+    """Apply the recorded T16-n2 rewording to an entry exactly as update_t16n2_fact_resources.py did."""
+    new = T16N2.get(n)
+    if new is None:
+        return
+    if entry["disposition"] == "MARK":
+        old = entry["baselineSentence"]
+        entry["reason"] += f" T16-n2 (D31c): marked wording now \"{new}\" (was \"{old}\"); the same frozen records."
+        entry["currentSentence"] = new
+    else:
+        old = entry["replacement"]
+        entry["replacement"] = new
+        entry["reason"] += f" T16-n2 (D31c): replacement now \"{new}\" (was \"{old}\")."
+
 
 def lines(rel: str) -> list[str]:
     return (ROOT / rel).read_text(encoding="utf-8").split("\n")
@@ -55,6 +82,9 @@ def unstressed(text: str) -> str:
 
 
 def main() -> None:
+    global OUT
+    if len(sys.argv) == 3 and sys.argv[1] == "--out":  # T17f (D42b): write to another directory, for the reproducibility test
+        OUT = Path(sys.argv[2])
     pack = loads(PACK.read_text(encoding="utf-8"))
     records = {r["itemId"]: r for r in pack["provenanceRecords"]}
     unit = next(u for u in pack["units"] if u["number"] == 11)
@@ -68,7 +98,7 @@ def main() -> None:
         row = inv[n - 1]
         assert row[0] == "11" and row[4].startswith("English-only"), (n, row)
         owner, field, sentence = row[1], row[2], row[3]
-        target = replacement if kind == "MARKED" else sentence
+        target = T16N2.get(n, replacement if kind == "MARKED" else sentence)
         cited = owners[owner].get("russianFactSources", {}).get(target, []) if disp == "MARK" or kind == "MARKED" else []
         entry = {"entry": f"U11-E{len(entries) + 1:02d}", "csvLine": n, "ownerId": owner, "field": field, "baselineSentence": sentence,
                  "disposition": disp}
@@ -77,6 +107,7 @@ def main() -> None:
         entry.update({"sourceRecordIds": cited, "reason": reason})
         if (disp == "MARK" or kind == "MARKED") and not cited:
             raise SystemExit(f"{n}: no marker for {target}")
+        carry_t16n2(entry, n)
         entries.append(entry)
     totals = {}
     for e in entries:

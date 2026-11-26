@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "catalog"))
 from curriculum_storage import loads  # noqa: E402
 import apply_t17b_unit_17 as t  # noqa: E402
+import apply_t17f_block4 as wc001  # noqa: E402
 
 PACK = ROOT / "app/src/main/assets/content/v2-curriculum.json"
 OUT = ROOT / "app/src/test/resources"
@@ -91,6 +92,14 @@ def disposition(n: int, sentence: str):
     return ("MARK", None, None)
 
 
+def t17f_current(owner: str, current: str):
+    """T17f (WC001): the marked wording that replaced a Unit 17 template rationale sentence, or None."""
+    for (item_id, option), new in wc001.REWRITES.items():
+        if item_id == owner and wc001.lettered(option + wc001.OLD_TAIL)[-1] == current:
+            return wc001.lettered(new)[-1]
+    return None
+
+
 def unstressed(text: str) -> str:
     # HTML lines (Pressbooks, ReadyRussian) are compared by their visible text: tags removed, entities decoded.
     text = re.sub("<[^>]+>", "", re.sub("(?i)<br\\s*/?>", "\n", text)).replace("&nbsp;", "\u00a0").replace("&amp;", "&")
@@ -111,6 +120,12 @@ def main() -> None:
         row = inv[n - 1]
         owner, field, sentence = row[1], row[2], row[3]
         disp, replacement, kind = disposition(n, sentence)
+        rewritten = t17f_current(owner, CURRENT[n]) if n in CURRENT else None
+        if rewritten:
+            REASONS[n] = (REASONS.get(n, "Retained exact sentence; marker cites frozen-source records.") +
+                          f" T17f (WC001): the template rationale is rewritten to explain this option; marked wording now \"{rewritten}\" "
+                          f"(was \"{CURRENT[n]}\"); the same frozen records.")
+            CURRENT[n] = rewritten
         target = replacement if kind == "MARKED" else CURRENT.get(n, sentence)
         cited = owners[owner].get("russianFactSources", {}).get(target, []) if disp == "MARK" or kind == "MARKED" else []
         if (disp == "MARK" or kind == "MARKED") and not cited:

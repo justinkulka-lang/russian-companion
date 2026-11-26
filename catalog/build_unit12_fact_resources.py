@@ -63,6 +63,35 @@ REASONS[1424] = "T16-n1 (D28c): \"the question requires\" is A2-26 assessment co
 for _n in (1365, 1390, 1418, 1419, 1429):
     REASONS[_n] = COMMENTARY
 
+# T17f (owner decision D42b): the T16-n2 (D31c) rewording that update_t16n2_fact_resources.py carried into the committed
+# resource, by CSV line: a MARK sentence's current wording, or a REWORD sentence's new replacement. With it the builder
+# regenerates app/src/test/resources/unit12-*.json byte for byte from the current pack (it used to look markers up under
+# the pre-T16-n2 wording and stop). FactResourceBuildersReproducibleTest checks the round trip.
+T16N2 = {
+    1341: "Both use a future auxiliary plus the same imperfective infinitive; choose the plural sentence.",
+    1356: "These perfective future forms use a single conjugated verb without a separate future auxiliary; choose the plural form.",
+    1361: "Choose the correct person and number.",
+    1399: "Changing to dative singular changes case while keeping the noun singular; a plural form changes number instead.",
+    1409: "The adjective agrees with the gender of the noun it modifies; the neuter form is also the form used with the neuter noun in the good-letter example.",
+    1414: "This counterexample is incorrect Russian, not a form to use.",
+    1418: "Neither singular use is a plural form.",
+}
+
+
+def carry_t16n2(entry: dict, n: int) -> None:
+    """Apply the recorded T16-n2 rewording to an entry exactly as update_t16n2_fact_resources.py did."""
+    new = T16N2.get(n)
+    if new is None:
+        return
+    if entry["disposition"] == "MARK":
+        old = entry["baselineSentence"]
+        entry["reason"] += f" T16-n2 (D31c): marked wording now \"{new}\" (was \"{old}\"); the same frozen records."
+        entry["currentSentence"] = new
+    else:
+        old = entry["replacement"]
+        entry["replacement"] = new
+        entry["reason"] += f" T16-n2 (D31c): replacement now \"{new}\" (was \"{old}\")."
+
 
 def unstressed(text: str) -> str:
     text = re.sub(r"\[\[[^\[\]|]*\|([^\[\]|]*)\]\]", r"\1", text).replace("'''", "").replace("''", "")
@@ -70,6 +99,9 @@ def unstressed(text: str) -> str:
 
 
 def main() -> None:
+    global OUT
+    if len(sys.argv) == 3 and sys.argv[1] == "--out":  # T17f (D42b): write to another directory, for the reproducibility test
+        OUT = Path(sys.argv[2])
     pack = loads(PACK.read_text(encoding="utf-8"))
     records = {r["itemId"]: r for r in pack["provenanceRecords"]}
     unit = next(u for u in pack["units"] if u["number"] == UNIT)
@@ -81,7 +113,7 @@ def main() -> None:
         row = inv[n - 1]
         assert row[0] == str(UNIT) and row[4].startswith("English-only"), (n, row)
         owner, field, sentence = row[1], row[2], row[3]
-        target = replacement if kind == "MARKED" else sentence
+        target = T16N2.get(n, replacement if kind == "MARKED" else sentence)
         cited = owners[owner].get("russianFactSources", {}).get(target, []) if disp == "MARK" or kind == "MARKED" else []
         if (disp == "MARK" or kind == "MARKED") and not cited:
             raise SystemExit(f"{n}: no marker for {target}")
@@ -90,6 +122,7 @@ def main() -> None:
         if replacement:
             entry.update({"replacement": replacement, "replacementKind": kind})
         entry.update({"sourceRecordIds": cited, "reason": REASONS.get(n, "Retained exact sentence; marker cites frozen-source records.")})
+        carry_t16n2(entry, n)
         entries.append(entry)
         totals[disp] = totals.get(disp, 0) + 1
 

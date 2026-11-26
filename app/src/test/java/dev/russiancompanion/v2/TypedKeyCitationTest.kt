@@ -33,8 +33,10 @@ class TypedKeyCitationTest {
         val pinned = File(root, "app/src/test/resources/typed-key-citations.tsv").readLines().drop(1).filter { it.isNotEmpty() }
         // T17e expectation change: 197 -> 211 typed items and 201 -> 215 pinned rows (Unit 20's twelve typed checks and two typed
         // guided items, each citing the frozen G line or OpenRussian cell its key comes from).
-        assertEquals(211, typed.size)
-        assertEquals(215, rows.size)
+        // T17f expectation change (owner decision D50c, CC028): 211 -> 212 typed items and 215 -> 216 pinned rows (u17-i-age-2
+        // becomes a typed check keyed двадцать лет, cited to its frozen Russian grammar record).
+        assertEquals(212, typed.size)
+        assertEquals(216, rows.size)
         assertEquals(pinned, rows)
         typed.forEach { assertEquals(it.id, emptyList<String>(), V2Validator.typedKeyCitationErrors(pack, it)) }
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)

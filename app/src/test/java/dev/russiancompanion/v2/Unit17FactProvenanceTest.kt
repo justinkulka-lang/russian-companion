@@ -216,7 +216,9 @@ class Unit17FactProvenanceTest {
                 }
             }
         }
-        assertTrue(markers >= 318) // the 318 Unit 17 markers at T17b
+        // T17f expectation change (owner decision D50c, CC028): 318 -> 317 markers; u17-i-age-2 became a typed check and its one
+        // distractor rationale ("age statements is a section label ...") left with the label distractor.
+        assertTrue(markers >= 317) // the 318 Unit 17 markers at T17b, 317 since T17f
     }
 
     @Test
@@ -227,7 +229,9 @@ class Unit17FactProvenanceTest {
         fun JsonObject.string(key: String) = getValue(key).jsonPrimitive.content
         val owners = owners(pack)
         val needed = owners.flatMap { (owner, facts, _) -> facts.filter { fact -> fact.none { it in 'Ѐ'..'ӿ' } }.map { owner to it } }
-        assertEquals(185, needed.size)
+        // T17f expectation change (owner decision D50c, CC028): 185 -> 184 English-only markers (the u17-i-age-2 label rationale
+        // left with the label distractor; the T17f WC001 rewrites replace their markers one for one).
+        assertEquals(184, needed.size)
         assertEquals(needed.toSet(), reviews.map { it.string("ownerId") to it.string("sentence") }.toSet())
         assertEquals(needed.size, reviews.size)
         val records = pack.provenanceRecords.associateBy { it.itemId }

@@ -1,4 +1,5 @@
 item	prompt	key	citation	sourceId	sourceRecordId
+u17-i-age-2	Type the Russian quantity phrase that means 20 years.	двадцать лет	prov-ex-u17-age-1-ru	src-wikipedia-russian-grammar-1369617627	grammar:age statements: {{lang|ru|мне двадцать лет}} – 'I am 20 (years old)', lit. 'to_m
 u1-i-type-й	Type the printed letter that has this name.	й	prov-t16cn2-key-u1-i-type-й	src-wikipedia-russian-alphabet-1371795481	alphabet:! style="text-align: center;" | <big>{{lang|ru|[[Й]]й}}</big>
 u1-i-type-ъ	Type the printed letter that has this name.	ъ	prov-t16cn2-key-u1-i-type-ъ	src-wikipedia-russian-alphabet-1371795481	alphabet:! style="text-align: center;" | <big>{{lang|ru|[[Ъ]]ъ}}</big>
 u1-i-type-ь	Type the printed letter that has this name.	ь	prov-t16cn2-key-u1-i-type-ь	src-wikipedia-russian-alphabet-1371795481	alphabet:! style="text-align: center;" | <big>{{lang|ru|[[Ь]]ь}}</big>

@@ -33,6 +33,9 @@ class Unit17AgeCalendarInstructionTest {
             assertTrue(i.feedback.contains(i.answer))
             assertFalse(i.feedback.contains("||"))
             assertFalse(i.feedback.contains("frozen source"))
+            // T17f expectation change (owner decision D50c, CC028): u17-i-age-2 is a typed check with no closed-item assessment,
+            // so the rationale assertions apply to the closed items only (was: every item, when all nine were closed).
+            if (i.isTypedResponse()) continue
             assertTrue(i.assessment!!.whyAnswerDemonstratesObjective.endsWith(i.feedback))
             assertEquals(i.distractorRationales, i.assessment!!.distractorDifference)
             i.options.forEachIndexed { n, option -> if (option != i.answer) assertTrue(i.distractorRationales[n].contains(option)) }

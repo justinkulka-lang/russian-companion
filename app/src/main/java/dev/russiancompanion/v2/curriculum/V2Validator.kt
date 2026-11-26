@@ -3456,6 +3456,23 @@ internal object V2Validator {
         return ""
     }
 
+    /** D50g: the obj-u17-age records on the Russian grammar age-statement line (an ASCII record-id prefix; no Cyrillic literal). */
+    private const val AGE_OBJECTIVE = "obj-u17-age"
+    private const val AGE_LINE_SOURCE = "src-wikipedia-russian-grammar-1369617627"
+    private const val AGE_LINE_RECORD_PREFIX = "grammar:age statements:"
+
+    private fun ageStatementLine(record: V2ProvenanceRecord): Boolean =
+        record.objectiveId == AGE_OBJECTIVE && record.unitNumber == 17 && record.sourceId == AGE_LINE_SOURCE &&
+            record.sourceRecordId.startsWith(AGE_LINE_RECORD_PREFIX)
+
+    /** D50g: a competing English meaning for the age check: frozen, Unit 17, bound to obj-u17-age, and not nested with the key. */
+    private fun ageCompetingMeaning(record: V2ProvenanceRecord, answer: V2ProvenanceRecord): Boolean {
+        if (record.objectiveId != AGE_OBJECTIVE || record.unitNumber != 17 || !frozenCompetingMeaning(record, answer)) return false
+        val left = governedTokens(record.shippedText)
+        val right = governedTokens(answer.shippedText)
+        return left.isNotEmpty() && right.isNotEmpty() && !tokenSequenceContained(left, right) && !tokenSequenceContained(right, left)
+    }
+
     /** D2: a competing meaning from a frozen source file, never research synthesis, a coverage record or Russian text. */
     private fun frozenCompetingMeaning(record: V2ProvenanceRecord, answer: V2ProvenanceRecord): Boolean =
         verifiedFrozen(record) &&
@@ -3630,11 +3647,18 @@ internal object V2Validator {
         val stated = statedApplication(cue, answer, distractors)
         if (stated == "") return null
         if (stated != null) return stated
+        // T17f (owner decision D50g, approved rule change; D2 precedent): for obj-u17-age only, the cue and keyed answer stay on
+        // the Russian grammar age-statement line (line 38), and a distractor may be a competing English meaning from another
+        // verified frozen Unit 17 record (never content-audit research, synthesis or coverage), bound to obj-u17-age by a frozen
+        // selection record, that neither nests in nor around the keyed answer. Every other objective and span still requires
+        // all participants on the cue's span (was: all participants on the cue's span for the age line too).
+        val ageCompeting = ageStatementLine(cue) && ageStatementLine(answer)
         if (
             hasCyrillic(cue.shippedText) &&
             !hasCyrillic(answer.shippedText) &&
             distractors.all { !hasCyrillic(it.shippedText) } &&
-            group.all { sameFrozenSpan(cue, it) } &&
+            sameFrozenSpan(cue, answer) &&
+            distractors.all { sameFrozenSpan(cue, it) || (ageCompeting && ageCompetingMeaning(it, answer)) } &&
             cue.shippedText != answer.shippedText &&
             group.all { displayedInFrozen(it) }
         ) {
@@ -3854,7 +3878,10 @@ internal object V2Validator {
         "INSTRUMENTAL_PLURAL" to "instrumental plural",
         "MASCULINE_INSTRUMENTAL" to "masculine instrumental",
         "PLURAL_INSTRUMENTAL" to "plural instrumental",
-        "PENCIL_INSTRUMENTAL" to "pencil instrumental",
+        // T17f (D49b): the pinned phrase follows the T17a prompt "Which instrumental singular noun means pencil?" (sweep row; the
+        // old prompt "Which admitted line is the pencil instrumental?" was A2-26 commentary). Was "pencil instrumental", which
+        // the shipped prompt no longer contained, so u16-i-inst-sg-2 failed its item check unreported until D49b.
+        "PENCIL_INSTRUMENTAL" to "pencil",
         "ACCOMPANIMENT_LINE" to "accompaniment line",
         "MEANS_INSTRUMENTAL" to "means instrumental",
         "BETWEEN_LINE" to "between line",
@@ -5078,11 +5105,14 @@ internal object V2Validator {
                     }
                 }
             }
-            val governedUnit = item.objectiveId.removePrefix("obj-u").substringBefore("-").toIntOrNull()
-            if (governedUnit in 6..15 || governedUnit in 21..30 || item.objectiveId in BATCH_A_OBJECTIVES ||
-                item.objectiveId == "obj-u16-inst-prep") {
-                errors += structureValid(pack, item)
-            }
+        }
+        // T17f (owner decision D49b, approved rule change): an item that fails its item-level check fails full-pack validation,
+        // whatever its unit; an invalid item may not ship because the objective's aggregate requirements are still met. Every
+        // grammar-kind item and every item that carries an assessment target (and so can count as feature-valid) must be
+        // structure-valid. Was: structureValid errors were reported only for Units 6-15 and 21-30, the Batch A objectives and
+        // obj-u16-inst-prep; elsewhere a failing item only stopped counting toward the objective's feature-valid check.
+        if (item.kind in GRAMMAR_ITEM_KINDS || item.assessment != null) {
+            errors += structureValid(pack, item)
         }
         if (item.isGovernancePrompt()) {
             errors += "Item ${item.id} is a governance or policy prompt, not a Russian-learning check"
