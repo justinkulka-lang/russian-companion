@@ -50,6 +50,8 @@ class AudioVerificationBindingTest {
             assertEquals(id, sha256Hex(clipFile(assets, id).readBytes()), field(r, "clipSha256"))
             assertEquals(id, byId.getValue(id).text, field(r, "text"))
             assertEquals(listOf("MATCH", "OWNER", d35At), listOf(field(r, "decision"), field(r, "verifier"), field(r, "recordedAt")))
+            // D52a: the manifestId is a locator only (binding is by clip ID and SHA-256, OwnerResultsBindByClipTest); it must still
+            // point at the clip's current row, so a renumbering is caught and the locator updated.
             assertEquals(id, 1, manifest.count { it.startsWith(field(r, "manifestId") + ",") && it.contains(",$id,") })
         }
     }
@@ -149,9 +151,11 @@ class AudioVerificationBindingTest {
         val header = File(root, "docs/audio/audio-manifest.csv").readLines().first().split(",")
         assertEquals(listOf("id", "priority", "first_unit", "units", "kind", "text", "status", "clip", "clip_text", "flags", "where"), header)
         val rows = csvRows(File(root, "docs/audio/audio-manifest.csv").readText()).drop(1)
-        val byId = rows.associateBy { it[0] }
+        // T17g (owner decision D52a) expectation change, old -> new: the owner result's row was looked up by its manifestId; now
+        // by its clip (a result binds by clip ID and SHA-256; manifestId is a locator only, checked for currency in
+        // theThirtyFourOwnerResultsMatchTheBundledClipsAndTheManifest). The status and note assertions are unchanged.
         for (r in ownerResults) {
-            val row = byId.getValue(field(r, "manifestId"))
+            val row = rows.single { it[7] == field(r, "clipId") }
             val status = if (field(r, "clipId") in unbound) "VERIFIED" else "BOUND"
             assertEquals(row[0], status, row[6])
             assertTrue(row[0], row[9].contains("owner listen-check MATCH (D35)"))

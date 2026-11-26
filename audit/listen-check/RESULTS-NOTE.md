@@ -15,3 +15,7 @@ owner listen-check of the 34 EXISTING_CLIP_CANDIDATE clips.
 - The registry app/src/main/assets/content/audio-verification.json holds exactly the records these results produce
   (listenCheckRecords). Seven of the 34 clips appear on no sheet, because no letter, example or item shows their text;
   owner-verified-clips.json records them, and the audio manifest lists them as VERIFIED, not bound.
+- Binding (owner decision D52a, 2026-11-26): each result binds by its clip ID and SHA-256. Its manifestId is a locator only;
+  manifest row IDs are positional and renumber when a course word is added, so a renumbering never changes which clip a
+  decision applies to (OwnerResultsBindByClipTest). A stale locator is updated without changing the decision (T17f re-pointed
+  A16-012 -> A16-013 and A16-018 -> A16-019; D52a confirmed it).

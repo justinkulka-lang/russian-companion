@@ -115,6 +115,63 @@ class WidenedLearnerVoiceLintTest {
         assertTrue(current.units.first { it.number == 7 }.binderTask!!.prompt.contains("in each row of your table"))
     }
 
+    /**
+     * T17g (owner decision D51b, approved rule change): a column is table framing in every field, Codex's Unit 20 phrasings
+     * included; the learner's own binder table ("make a table with columns headed ...", "... column of your table") is exempt in
+     * binder-direction fields only.
+     */
+    @Test fun columnFramingIsCaughtAndOnlyTheLearnersOwnTableIsExempt() {
+        val rule = "LEARNER_PROVENANCE_NARRATION"
+        for (text in listOf(
+            "Its other column is multidirectional, covering repeated, return or different-direction movement according to context.",
+            "The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.",
+            "multidirectional is the other motion column, covering different-direction or repeated movement according to context.",
+            "Selecting the collective column does not demonstrate choosing its use with every noun.",
+            "father is written in another column.",
+            "Copy the genitive column into your binder.",
+        )) {
+            assertTrue(text, signals(text, rule).isNotEmpty())
+            assertTrue(text, binderSignals(text, rule).isNotEmpty())
+            assertTrue(text, binderTaskSignals(text, rule).isNotEmpty())
+            assertTrue(text, V2DesignDiagnostics.learnerVoiceRules(text).isNotEmpty())
+        }
+        for (text in listOf(
+            "In your binder, make a table with columns headed masculine, feminine and neuter.",
+            "Write each word in the right column of your table with its meaning.",
+            "Add the two nouns to the masculine column of your table.",
+            "Fill in every column of your table, then compare it with the model answer.",
+        )) {
+            assertTrue(text, binderSignals(text, rule).isEmpty())
+            assertTrue(text, binderTaskSignals(text, rule).isEmpty())
+            // Outside a binder field the same wording is table framing.
+            assertTrue(text, signals(text, rule).isNotEmpty())
+        }
+        // The exemption is the learner's own table only: a column pointing back to a source still fails in a binder field.
+        assertTrue(binderTaskSignals("Make a table with columns headed singular and plural, then copy the source column.", rule).isNotEmpty())
+        // The D51b rewrites describe the verbs directly and pass in any field.
+        for (text in listOf(
+            "Its multidirectional partner covers repeated, return or different-direction movement according to context.",
+            "The basic unprefixed unidirectional and multidirectional verbs are both imperfective; unidirectional does not itself mean perfective or arrival.",
+            "multidirectional describes a partner verb that covers different-direction or repeated movement according to context, not motion in one direction.",
+        )) assertTrue(text, signals(text, rule).isEmpty())
+    }
+
+    /**
+     * T17g: the extended lint over Units 1-30. No signal of Units 1-30 is due to column wording: neutralizing every "column" in the
+     * pack changes no signal (Units 21-30 stay advisory for their other narration). The shipped binder tasks still use only the
+     * learner's own-table wording.
+     */
+    @Test fun noUnitOneToThirtySignalIsDueToColumnWording() {
+        val text = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
+        val neutral = V2PackLoader.parse(Regex("(?i)\\b(c)(olumns?)\\b").replace(text) { "k" + it.groupValues[2] })
+        fun shown(p: V2CurriculumPack) = V2DesignDiagnostics.audit(p).signals.filter { it.rule in rules && (it.unit ?: 0) in 1..30 }
+        assertEquals(shown(neutral), shown(current))
+        val u20 = current.units.first { it.number == 20 }.sessions.flatMap { it.steps }.filter { it.id in setOf("u20-st-teach-motion-2", "u20-st-rem-motion") }
+        assertEquals(2, u20.size)
+        assertTrue(u20.none { "column" in it.body })
+        assertTrue(current.units.first { it.number == 3 }.binderTask!!.prompt.contains("column of your table"))
+    }
+
     @Test fun eachWidenedCategoryIsCaught() {
         for (text in listOf(
             "The frozen note says two, three, and four take the genitive.",

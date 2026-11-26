@@ -113,6 +113,13 @@ internal object V2DesignDiagnostics {
     /** D36b/D41e: "rows for" frames a table, in every field; only the learner's own table ([ownTable]) is exempt, in binder fields. */
     private val rowsFor = Regex("\\brows? for\\b", RegexOption.IGNORE_CASE)
     /**
+     * T17g (owner decision D51b, approved rule change): a column is table framing in every field ("the other motion column",
+     * "Selecting the collective column", "in another column for father"); teach the forms directly instead. As for "rows for",
+     * the only exemption is the learner's own table in a binder-direction field ([ownTable], "make a table" with "with columns
+     * headed"), removed before this pattern runs (was: "column" was not flagged anywhere).
+     */
+    private val columnFraming = Regex("\\bcolumns?\\b", RegexOption.IGNORE_CASE)
+    /**
      * T16c-n2 (owner decision D40c, approved rule change): in a binder-direction field, wording about the learner's own binder
      * table ("in each row of your table", "the first column of your table") is a direction, not table framing, and is removed
      * before the framing patterns run. Framing that points back to a source table still fails ("Copy the genitive row into your
@@ -155,7 +162,7 @@ internal object V2DesignDiagnostics {
         // T16c-n2 (owner decision D41e, approved rule change): in a binder field the only exemption is the learner's own table
         // (ownTable, removed above); "rows for" is otherwise flagged in every field (was: exempt in every binder field).
         .any { sourceNarration.containsMatchIn(it) || assessmentCommentary.containsMatchIn(it) || workflowAndFraming.containsMatchIn(it) ||
-            rowsFor.containsMatchIn(it) }
+            rowsFor.containsMatchIn(it) || columnFraming.containsMatchIn(it) }
     private fun tableCellMarkup(value: String): Boolean = lintedSentences(value).any { tableCell.containsMatchIn(it) }
     /**
      * T16d (owner decision D32b): the learner-voice rules applied to one hardcoded UI string (governance terms, provenance and
