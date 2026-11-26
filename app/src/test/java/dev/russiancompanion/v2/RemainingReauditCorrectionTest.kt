@@ -1597,8 +1597,8 @@ class RemainingReauditCorrectionTest {
         )
         helper.close()
         val migrated = LocalStore.openNamed(context, name).also { stores += it }
-        val historical = migrated.v2Attempts().associate { it.id to it.acceptedOrder }
-        assertEquals(mapOf("late" to 0L, "early" to 0L), historical)
+        // Schema 8 dev rows are discarded by the clean reset. A new attempt still records.
+        assertTrue(migrated.v2Attempts().isEmpty())
         val located = pack.step("u1-st-vowels-check")!!
         val item = pack.item(located.second.itemIds.single())!!
         migrated.v2RecordGovernedAttempt(
@@ -1611,9 +1611,7 @@ class RemainingReauditCorrectionTest {
                 "2026-10-08T18:00:00",
             )!!,
         )
-        assertEquals(0L, migrated.v2Attempts().first { it.id == "early" }.acceptedOrder)
-        assertEquals(0L, migrated.v2Attempts().first { it.id == "late" }.acceptedOrder)
-        assertEquals(1L, migrated.v2Attempts().first { it.id != "early" && it.id != "late" }.acceptedOrder)
+        assertEquals(1L, migrated.v2Attempts().single().acceptedOrder)
         migrated.close()
         context.deleteDatabase(name)
     }

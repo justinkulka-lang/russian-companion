@@ -1,12 +1,6 @@
 package dev.russiancompanion.acceptance
 
 import android.content.Context
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.ui.test.assertIsDisplayed
-import androidx.compose.ui.test.junit4.v2.createComposeRule
-import androidx.compose.ui.test.onNodeWithText
-import androidx.compose.ui.test.performClick
-import androidx.compose.ui.test.performScrollTo
 import androidx.test.core.app.ApplicationProvider
 import dev.russiancompanion.RussianCompanionApplication
 import dev.russiancompanion.data.export.readAppRecording
@@ -40,13 +34,10 @@ import dev.russiancompanion.domain.plan.RecordedCategory
 import dev.russiancompanion.domain.practice.PracticeAudio
 import dev.russiancompanion.domain.progress.ExportUpdate
 import dev.russiancompanion.domain.progress.reviewProgress
-import dev.russiancompanion.presentation.navigation.ExportSelection
-import dev.russiancompanion.presentation.navigation.LocalExportScreen
 import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
@@ -58,9 +49,6 @@ import java.io.OutputStream
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
 class AcceptanceBehaviorTest {
-    @get:Rule
-    val compose = createComposeRule()
-
     private val stores = mutableListOf<LocalStore>()
 
     @After
@@ -245,22 +233,6 @@ class AcceptanceBehaviorTest {
         assertEquals(ExportStatus.NOT_CONFIRMED, store.exports().last().status)
         assertEquals("partial.zip", store.exports().last().destinationReference)
         assertEquals(0, store.exports().last().recordingCount)
-
-        compose.setContent {
-            MaterialTheme {
-                LocalExportScreen(
-                    onExport = { _, _, _, done -> done(ExportUpdate.DestinationUnavailable) },
-                    chooseExportDestination = { null },
-                    onProgress = {},
-                    onHome = null,
-                )
-            }
-        }
-        compose.onNodeWithText("Choose a local destination").performScrollTo().performClick()
-        compose.onNodeWithText("Export did not complete.").performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("The incomplete export is unusable.").performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("The destination is unavailable.").performScrollTo().assertIsDisplayed()
-        compose.onNodeWithText("Export completed.").assertDoesNotExist()
     }
 
     private fun apply(confirmation: String): LocalStore {

@@ -106,7 +106,6 @@
     <string name="attributions_modification">Modification status: %1$s</string>
     <string name="attributions_share_treatment">Share-alike treatment: %1$s</string>
     <string name="attributions_share_confirmation">Share-alike confirmation: %1$s</string>
-    <string name="attributions_release_block">Public release is blocked until share-alike confirmation is recorded.</string>
     <string name="attributions_asset">Asset: %1$s</string>
     <string name="attributions_license_status">License status: %1$s</string>
     <string name="attributions_compatibility">Compatibility: %1$s</string>

@@ -1,0 +1,195 @@
+==Belarusian==
+
+===Etymology===
+From {{af|be|на-|зад}}.
+
+===Pronunciation===
+* {{be-IPA|наза́д}}
+* {{audio|be|Be-назад.ogg}}
+
+===Adverb===
+{{be-adv|наза́д}}
+
+# [[back#Adverb|back]], [[backward#Adverb|backward]], [[backwards#Adverb|backwards]] {{gl|to an opposite or reverse direction}}
+# [[back#Adverb|back]] {{gl|to a previous condition or place}}
+# {{lb|be|postpositive}} [[back#Adverb|back]], [[ago]]
+#: {{syn|be|таму́ наза́д<q:formal>}}
+
+===References===
+* {{R:be:slounik.org}}
+
+{{C|be|Directions}}
+
+==Bulgarian==
+
+===Alternative forms===
+* {{alter|bg|наза́де||fossilized locative case}}
+
+===Etymology===
+{{ety|bg|:af|на-|зад|text=+|tree=1}}
+
+===Pronunciation===
+* {{bg-pr|наза́д|a=[KK]}}
+
+===Adverb===
+{{bg-adv|наза́д|-}}
+
+# [[back]], [[backwards]]
+#: {{ant|bg|напре́д}}
+#: {{uxi|bg|Объ́рна се '''наза́д'''.|He turned '''back'''.}}
+
+====Related terms====
+* {{l|bg|изза́д}}
+* {{l|bg|отза́д||from the back}}
+
+===See also===
+* {{l|bg|напре́д||towards the front, forwards}}
+* {{l|bg|надя́сно||towards the right}}
+* {{l|bg|наля́во||towards the left}}
+
+===References===
+* {{R:bg:RBE}}
+* {{R:bg:RBE2}}
+* {{R:bg:Gerov|наза́дъ, наза́дѣ|160|3}}
+* {{R:bg:BERON|579e75a82453ef77faf09546a55fe2c3|назад}}
+
+===Anagrams===
+* {{anagrams|bg|a=аадзн|задна}}
+
+{{C|bg|Directions}}
+
+==Macedonian==
+
+===Pronunciation===
+* {{mk-IPA}}
+
+===Adverb===
+{{mk-adv|-}}
+
+# [[backward]], in the back
+
+==Pannonian Rusyn==
+
+===Etymology===
+{{ety|rsk|:inh|zlw-osk:nazad|text=+|tree=1}}
+
+===Pronunciation===
+* {{rsk-IPA}}
+* {{rhymes|rsk|azat|s=2}}
+* {{hyph|rsk|на|зад}}
+
+===Adverb===
+{{head|rsk|adverb}}
+
+# [[back]], [[backward]]
+#: {{ant|rsk|напредок}}
+#* {{quote-journal|rsk
+|date=14-12-2024
+|author=М. Афич
+|title=Ремесло хторе ше отримало вецей як сто роки
+|work=Руске Слово
+|url=https://www.ruskeslovo.com/remeslo-htore-se-otrimalo-vecej-jak-sto-roki/
+|text=И заш ше так трафело же сом убег до тей старей Надьордьовей карчми, а вон бул там, та ми гварел: „Яй Владимире, Владимире, нє будзеш ти бановац? Нє придзеш '''назад'''?”
+|t=And it happened again that I ran to the old Nađorđ tavern, and he was there, saying to me: "Hey Vladimir, Vladimir, won't you regret it? Won't you come '''back'''?"|archiveurl=https://web.archive.org/web/20260116192319/https://www.ruskeslovo.com/remeslo-htore-se-otrimalo-vecej-jak-sto-roki/|archivedate=16 January 2026}}
+#* {{quote-journal|rsk
+|date=23-02-2025
+|author=Вл. Дїтко
+|title=Нє щезли памятки на велького фаховца и ерудиту
+|work=Руске Слово
+|url=https://www.ruskeslovo.com/nje-scezli-pamjatki-na-veljkoho-fahovca-i-eruditu/
+|text=Подприємство у хторим Александар роби ма коло 30 камиони, а накадзи ше враци зоз драги, наш собешеднїк на авту приходзи до Шиду, а так ше ознова и враца '''назад''' на роботу.
+|t=The company where Aleksandar works has around 30 trucks, and as soon as he returns from the road, our interlocutor comes to Šid by car, and so he returns '''back''' to work again.}}
+# {{synonym of|rsk|назадок}}
+
+====Related terms====
+{{col|rsk|title=adjectives|назадни}}
+{{col|rsk|title=adverbs|назадку|назадок}}
+{{col|rsk|title=nouns|назадняк<g:m-pr>}}
+{{col|rsk|title=verbs|назадовац<g:impf>}}
+
+===References===
+* {{R:rsk:RSS|+|471}}
+* {{R:rsk:ARS|back|33}}
+
+{{cln|rsk|location adverbs}}
+
+==Russian==
+
+===Alternative forms===
+* {{alter|ru|наза́дъ||ru-PRO}}
+
+===Etymology===
+{{af|ru|на-|зад}}
+
+===Pronunciation===
+* {{ru-IPA|наза́д}}
+* {{audio|ru|Ru-назад.ogg}}
+* {{rhymes|ru|at|s=2}}
+
+===Adverb===
+{{ru-adv|наза́д}}
+
+# [[back]], [[backward]], [[backwards]]
+
+====Derived terms====
+* [[w:Order No. 227|Ни шагу назад]]
+
+====Related terms====
+* {{l|ru|назади́}}
+* {{l|ru|тому́ наза́д}}
+
+===Interjection===
+{{head|ru|interjection|head=наза́д}}
+
+# [[get back]]
+#: {{uxi|ru|'''Наза́д'''!|'''Get back'''! (often with an intensified form of emotion)}}
+
+===Postposition===
+{{head|ru|preposition|head=наза́д}}
+
+# [[ago]], [[back]]
+#: {{uxi|ru|[[пять|Пять]] [[минута|мину́т]] '''наза́д'''|Five minutes '''ago'''}}
+
+{{topics|ru|Directions}}
+
+==Serbo-Croatian==
+
+===Pronunciation===
+* {{IPA|sh|/nâzaːd/}}
+* {{hyphenation|sh|на|зад}}
+
+===Adverb===
+{{sh-adv|на̏за̄д}}
+
+# [[back]], [[backwards]]
+#: {{syn|sh|на̏тра̄г}}
+#: {{ant|sh|[[на̏прије̄д]] / [[на̏пре̄д]]}}
+#: {{uxi|sh|ићи '''назад'''|to go '''back'''}}
+
+==Ukrainian==
+
+===Etymology===
+{{ety|uk|:af|на-|зад|text=+|tree=1}}
+
+===Pronunciation===
+* {{uk-IPA|наза́д}}
+* {{audio|uk|Uk-назад.ogg}}
+
+===Adverb===
+{{uk-adv|наза́д}}
+
+# [[back#Adverb|back]], [[backward#Adverb|backward]], [[backwards#Adverb|backwards]] {{gl|to an opposite or reverse direction}}
+# [[back#Adverb|back]] {{gl|to a previous condition or place}}
+# {{lb|uk|postpositive|colloquial}} [[back#Adverb|back]], [[ago]]
+#: {{syn|uk|тому́<q:noncolloquial>}}
+#: {{uxi|uk|[[пара|па́ру]] [[тиждень|ти́жнів]] '''наза́д'''|A couple of weeks '''back'''}}
+
+===Further reading===
+* {{R:uk:SUM-11}}
+* {{R:uk:SUM-20}}
+* {{R:uk:R2U}}
+* {{R:uk:E2U}}
+* {{R:uk:Horokh}}
+* {{R:uk:Slovnyk}}
+
+{{C|uk|Directions}}

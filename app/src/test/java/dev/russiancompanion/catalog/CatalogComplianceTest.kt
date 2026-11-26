@@ -1,5 +1,7 @@
 package dev.russiancompanion.catalog
 
+import dev.russiancompanion.testing.pythonProcess
+
 import dev.russiancompanion.acceptance.ACCEPTANCE_DISPOSITION
 import dev.russiancompanion.acceptance.AcceptanceDisposition
 import dev.russiancompanion.data.local.seed.SeedJson
@@ -193,7 +195,7 @@ class CatalogComplianceTest {
         val root = File(System.getProperty("java.io.tmpdir"), "compliance-regen-${System.nanoTime()}")
         copyRegenSurface(sourceRoot, root)
         File(root, "catalog/compliance/share-alike-package.json").writeText("{}\n")
-        val process = ProcessBuilder("python3", "catalog/write_compliance_package.py")
+        val process = pythonProcess("catalog/write_compliance_package.py")
             .directory(root)
             .redirectErrorStream(true)
             .start()

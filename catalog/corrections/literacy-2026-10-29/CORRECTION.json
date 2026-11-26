@@ -1,0 +1,166 @@
+{
+  "baselineAssetSha256": "02202d37e0aa2c51182e4db22feff177124b6db2c270a67a93ef85e188916c19",
+  "baselineCommit": "f653da03d1bc657e8acaeef52141552c531e42ce",
+  "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+  "rationales": {
+    "u1-i-а-identity": [
+      "The capital shapes can look the same, but this card belongs to the Cyrillic alphabet. Latin A is a letter of a different alphabet.",
+      "",
+      "Р has a vertical stem and an upper loop. А has two sloping sides and a crossbar."
+    ],
+    "u1-i-м-identity": [
+      "",
+      "Н has two upright strokes joined by a horizontal crossbar. М has inner diagonal strokes.",
+      "Т has a top bar and a central stem. It does not have the inner diagonal strokes of М."
+    ],
+    "u1-i-р-not-p": [
+      "The capital shapes can look the same, but this is a Cyrillic letter card. The Latin name P does not name the Russian letter.",
+      "",
+      "П has two uprights joined across the top. Р has an upper loop attached to its stem."
+    ],
+    "u1-i-н-not-h": [
+      "The similar capital shape does not give this Cyrillic letter the Latin name H. Identify it within the Russian alphabet.",
+      "",
+      "И joins its uprights with a diagonal. Н uses a horizontal crossbar instead."
+    ],
+    "u1-i-с-not-c": [
+      "The similar capital shapes belong to different alphabets. The Latin name C does not identify this Cyrillic letter.",
+      "",
+      "К has diagonal arms extending from a straight stem. С is an open curved shape."
+    ],
+    "u1-i-в-not-b": [
+      "The Latin capital B looks similar, but this is a Cyrillic letter card. A Latin letter name does not identify it.",
+      "",
+      "Б has a top horizontal stroke and one lower bowl. В has two bowls."
+    ],
+    "u1-i-у-not-y": [
+      "The Latin capital Y may look similar, but this card belongs to the Cyrillic alphabet. Use the Cyrillic identity.",
+      "",
+      "И has two upright strokes joined diagonally. У has an upper fork and a descending tail."
+    ],
+    "u1-i-х-not-x": [
+      "The matching shape does not make this the Latin letter X. This card belongs to the Cyrillic alphabet.",
+      "",
+      "К has a vertical stem with two arms. Х consists of two crossing diagonal strokes."
+    ],
+    "u1-i-е-identity": [
+      "",
+      "Э opens toward the left. Е has its upright stroke on the left and its horizontal strokes extend to the right.",
+      "Ё has two dots above the Е shape. The shown Е has no dots."
+    ],
+    "u1-i-ё-identity": [
+      "",
+      "Е has the same main shape but no dots. The two dots distinguish the shown Ё.",
+      "Э opens toward the left and has no dots. Ё has the Е shape with two dots above it."
+    ],
+    "u1-i-ю-identity": [
+      "",
+      "У has an upper fork and a descending tail. Ю has an upright joined to a rounded part.",
+      "Я has a loop and a diagonal leg. Ю has an upright and a rounded part side by side."
+    ],
+    "u1-i-я-identity": [
+      "",
+      "Р has its loop on the right of the stem. Я has a loop on the left and a diagonal leg.",
+      "А has two sloping sides and a crossbar. Я combines a stem, a loop and a diagonal leg."
+    ],
+    "u1-i-ь-not-vowel": [
+      "The soft sign does not supply a separate vowel sound. Compare it with the vowel letters in the signs explanation.",
+      "",
+      "Ъ is the hard sign. Ь is the soft sign; they are different letters with different functions."
+    ],
+    "u1-i-ъ-not-vowel": [
+      "The hard sign does not supply a separate vowel sound. It is distinct from the vowel letters.",
+      "",
+      "Ь is the soft sign. The shown Ъ has an additional upper stroke and is the hard sign."
+    ],
+    "u1-i-й-not-vowel": [
+      "Й is short I and is classified here as a consonant. It is distinct from the vowel И.",
+      "",
+      "Ь is the soft sign. Й has a short mark above the И shape and is a different letter."
+    ],
+    "u1-i-print-pair": [
+      "",
+      "Р pairs with р; п pairs with П. This option joins two different letters.",
+      "Н pairs with н; и pairs with И. The diagonal in и is different from the crossbar of н."
+    ],
+    "u1-i-decode-pair": [
+      "",
+      "А and О are different letters. Changing the case of А produces а, not О.",
+      "М and Т are different letters. Their lowercase partners are м and т, respectively."
+    ],
+    "u1-i-name-be": [
+      "",
+      "This is the name of В (VE), not Б (BE). The printed card shows Б.",
+      "This names П (PE), whose capital has two uprights and a top bar. The printed card shows Б (BE)."
+    ],
+    "u2-i-в-not-b": [
+      "Б pairs with б. The shown в pairs with В; compare the two bowls of в with the shape of б.",
+      "",
+      "Р pairs with р, which has a stem and a loop. It does not pair with the two-bowl в."
+    ],
+    "u2-i-у-not-y": [
+      "Ч pairs with ч. The shown у has the descending tail of the У / у pair.",
+      "",
+      "Ц pairs with ц, with two uprights and a short lower extension. The shown у belongs to У / у."
+    ],
+    "u2-i-х-not-x": [
+      "Ж pairs with ж, whose strokes branch on both sides. The shown х has two crossing diagonals and pairs with Х.",
+      "",
+      "К pairs with к, with arms extending from an upright. The shown х has two crossing diagonals."
+    ],
+    "u2-i-я-identity": [
+      "Р pairs with р. The loop and diagonal leg in я identify the Я / я pair.",
+      "",
+      "А pairs with а. The shown я is the lowercase partner of Я."
+    ],
+    "u2-i-print-б": [
+      "",
+      "В pairs with в, not б. The lowercase б is the partner of Б.",
+      "Б pairs with б, not в. The lowercase в is the partner of В."
+    ]
+  },
+  "unitTwoCaseVariants": {
+    "u2-i-в-not-b": {
+      "promptLetter": "в",
+      "options": [
+        "Cyrillic Б",
+        "Cyrillic В",
+        "Cyrillic Р"
+      ]
+    },
+    "u2-i-у-not-y": {
+      "promptLetter": "у",
+      "options": [
+        "Cyrillic Ч",
+        "Cyrillic У",
+        "Cyrillic Ц"
+      ]
+    },
+    "u2-i-х-not-x": {
+      "promptLetter": "х",
+      "options": [
+        "Cyrillic Ж",
+        "Cyrillic Х",
+        "Cyrillic К"
+      ]
+    },
+    "u2-i-я-identity": {
+      "promptLetter": "я",
+      "options": [
+        "Cyrillic Р",
+        "Cyrillic Я",
+        "Cyrillic А"
+      ]
+    }
+  },
+  "variantPrompt": "Which uppercase Cyrillic letter pairs with this lowercase print form?",
+  "unitTwoTeachingBody": "Match each lowercase print form to its uppercase partner. Compare the strokes in both parts of each letter-board pair. A similar-looking letter from the Latin alphabet is not a substitute for a Cyrillic letter. Use the worked examples to practise the case pairs, then identify the pair for the form on the check card.",
+  "unitTwoTeachingExampleIds": [
+    "ex-letter-0412",
+    "ex-letter-0423",
+    "ex-letter-0425",
+    "ex-print-letter-0411",
+    "ex-letter-042f"
+  ],
+  "remainingScope": "Missing model audio/pronunciation, true decoding, Latin-script ambiguity and other weak Unit1 tasks remain OPEN. These 46 authored explanations are pending independent linguistic review, not accepted facts merely because display tests pass."
+}

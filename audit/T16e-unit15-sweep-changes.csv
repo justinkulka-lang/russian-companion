@@ -1,0 +1,88 @@
+owner.field,old,new
+obj-u15-aspect-consolidate.title,Choose the admitted aspect pair,Aspect pair
+obj-u15-imperative.title,Choose the admitted request row,Request form
+obj-u15-say-request.title,Choose the admitted say-request row,Say-request form
+reviewCopy.introductions[15],"Recognition of these supplied examples does not establish unseen reading, unrestricted grammar production, speaking or writing.","Practise recognising the examples here; practise unfamiliar reading, creating sentences, speaking and writing separately."
+reviewCopy.introductions[15],Repair restores all three state cards and four examples; guided male-cold practice does not complete the female-cold check.,"After a miss, read all three state explanations and four examples, then answer the female-cold review check."
+u15-g-aspect-consolidate-0.prompt,Which admitted line is the perfective partner?,Which verb is the perfective partner?
+u15-g-imperative-0.distractorRationales[1],"чита́ть is the infinitive, not the requested inflected plural imperative form.","чита́ть is the infinitive, not an inflected plural imperative form."
+u15-g-imperative-0.feedback,"чита́ть is the infinitive, not the inflected plural imperative requested.","чита́ть is the infinitive, not an inflected plural imperative."
+u15-g-imperative-0.prompt,Which admitted row is the plural imperative?,Which form is the plural imperative?
+u15-g-say-request-0.distractorRationales[1],"сказа́ть is the infinitive, not the requested inflected plural imperative form.","сказа́ть is the infinitive, not an inflected plural imperative form."
+u15-g-say-request-0.feedback,The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.,The singular and plural imperative forms keep the stress shown in these examples; politeness also depends on context.
+u15-g-say-request-0.feedback,"сказа́ть is the infinitive, not the inflected plural imperative form requested.","сказа́ть is the infinitive, not the inflected plural imperative form."
+u15-g-say-request-0.prompt,Which admitted row is the plural imperative?,Which form is the plural imperative?
+u15-i-aspect-consolidate-1.feedback,"The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.",Identify the imperfective member of the verb pair while keeping the meaning the same.
+u15-i-aspect-consolidate-1.prompt,Which admitted line is the imperfective partner?,Which verb is the imperfective partner?
+u15-i-aspect-consolidate-2.feedback,сде́лать is the perfective partner of де́лать in the recorded do/make pair.,сде́лать is the perfective partner of де́лать in the do/make pair.
+u15-i-aspect-consolidate-2.prompt,Which admitted line is the perfective partner?,Which verb is the perfective partner?
+u15-i-imperative-1.distractorRationales[1],"чита́ть is the infinitive, not the requested inflected singular imperative form.","чита́ть is the infinitive, not an inflected singular imperative form."
+u15-i-imperative-1.feedback,"The cue shows the plural/polite form, while this question asks for the singular imperative table row.",The cue shows the plural/polite imperative; choose the singular imperative.
+u15-i-imperative-1.prompt,Which admitted row is the singular imperative?,Which form is the singular imperative?
+u15-i-imperative-2.distractorRationales[1],"чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person.","чита́йте is the plural/polite imperative form, not the singular imperative; polite use can still address one person."
+u15-i-imperative-2.feedback,"Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.","Both forms are imperatives of the shown infinitive; the singular form is informal, while spelling alone does not identify the actual number of listeners."
+u15-i-imperative-2.prompt,Which admitted row is the singular imperative?,Which form is the singular imperative?
+u15-i-say-request-1.distractorRationales[1],"дать is the infinitive, not the requested inflected plural imperative form.","дать is the infinitive, not an inflected plural imperative form."
+u15-i-say-request-1.feedback,Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.,"Select the plural imperative of this verb; its dictionary form is an infinitive, not a command."
+u15-i-say-request-1.feedback,"дать is the infinitive, not the inflected imperative form requested.","дать is the infinitive, not the inflected imperative form."
+u15-i-say-request-1.prompt,Which admitted row is the plural imperative?,Which form is the plural imperative?
+u15-i-say-request-2.distractorRationales[1],"сказа́ть is the infinitive, not the requested inflected singular imperative form.","сказа́ть is the infinitive, not an inflected singular imperative form."
+u15-i-say-request-2.feedback,"The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.","The cue shows the plural/polite imperative; choose the singular imperative of the same say/tell verb, keeping meaning and aspect the same."
+u15-i-say-request-2.prompt,Which admitted row is the singular imperative?,Which form is the singular imperative?
+u15-s-aspect-consolidate.title,Choose the admitted aspect pair,Aspect pair
+u15-s-imperative.title,Choose the admitted request row,Request form
+u15-s-orient.title,Admitted request rows and aspect pairs,Request forms and aspect pairs
+u15-s-say-request.title,Choose the admitted say-request row,Say-request form
+u15-st-check-aspect-consolidate.body,These checks use only admitted records.,Answer using the examples taught here.
+u15-st-check-imperative.body,These checks use only admitted records.,Answer using the examples taught here.
+u15-st-check-say-request.body,These checks use only admitted records.,Answer using the examples taught here.
+u15-st-guided-aspect-consolidate-1.body,Choose the admitted record.,Choose an answer.
+u15-st-guided-aspect-consolidate-1.body,The feedback states the frozen field.,Read the explanation after answering.
+u15-st-guided-imperative-1.body,Choose the admitted record.,Choose an answer.
+u15-st-guided-imperative-1.body,The feedback states the frozen field.,Read the explanation after answering.
+u15-st-guided-say-request-1.body,Choose the admitted record.,Choose an answer.
+u15-st-guided-say-request-1.body,The feedback states the frozen field.,Read the explanation after answering.
+u15-st-orient.body,Proposed Unit 15 uses frozen records for request rows and aspect pairs.,"Unit 15 covers requests, imperative forms and aspect pairs."
+u15-st-orient.body,Qualified review is pending.,Work through the explanations and examples.
+u15-st-orient.title,Admitted request rows and aspect pairs,Request forms and aspect pairs
+u15-st-rem-aspect-consolidate.body,Compare the requested aspect and the meaning group before selecting a supplied form.,Compare the aspect and the meaning group before selecting a supplied form.
+u15-st-rem-aspect-consolidate.body,"Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill.","Learn the lexical partner, then practise choosing aspect in context separately."
+u15-st-rem-aspect-consolidate.body,Recognize the requested member of this supplied pair.,Recognize the member of this supplied pair.
+u15-st-rem-aspect-consolidate.body,The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation.,The supplied infinitives говори́ть and сказа́ть form an imperfective/perfective pair for the say/tell relation.
+u15-st-rem-aspect-consolidate.body,The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair.,The supplied infinitives де́лать and сде́лать form an imperfective/perfective do/make pair.
+u15-st-rem-aspect-consolidate.body,These choices ask for members of the supplied infinitive pairs.,Identify each member of the two infinitive pairs.
+u15-st-rem-imperative.body,Activity is not demonstrated ability.,"Practise first, then answer without the explanation in view."
+u15-st-rem-imperative.body,"Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.","Both are imperative forms of the shown infinitive; the singular form is informal, while spelling alone does not identify the actual number of listeners."
+u15-st-rem-imperative.body,Read this as a review-pending explanation.,Read the explanation and compare the examples.
+u15-st-rem-imperative.body,"The cue shows the plural/polite form, while this question asks for the singular imperative table row.",The cue shows the plural/polite imperative; choose the singular imperative.
+u15-st-rem-imperative.body,"Worked examples come before the guided choice, and the independent check is separate.","Read the worked examples, then practise before answering independently."
+u15-st-rem-imperative.body,"чита́ть is the infinitive, not the inflected plural imperative requested.","чита́ть is the infinitive, not an inflected plural imperative."
+u15-st-teach-aspect-consolidate-1.body,Recognize the requested member of this supplied pair.,Recognize the member of this supplied pair.
+u15-st-teach-aspect-consolidate-1.body,The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation.,The supplied infinitives говори́ть and сказа́ть form an imperfective/perfective pair for the say/tell relation.
+u15-st-teach-aspect-consolidate-2.body,The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair.,The supplied infinitives де́лать and сде́лать form an imperfective/perfective do/make pair.
+u15-st-teach-aspect-consolidate-3.body,Compare the requested aspect and the meaning group before selecting a supplied form.,Compare the aspect and the meaning group before selecting a supplied form.
+u15-st-teach-aspect-consolidate-3.body,"Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill.","Learn the lexical partner, then practise choosing aspect in context separately."
+u15-st-teach-aspect-consolidate-3.body,These choices ask for members of the supplied infinitive pairs.,Identify each member of the two infinitive pairs.
+u15-st-teach-imperative-1.body,Activity is not demonstrated ability.,"Practise first, then answer without the explanation in view."
+u15-st-teach-imperative-1.body,Read this as a review-pending explanation.,Read the explanation and compare the examples.
+u15-st-teach-imperative-1.body,"Worked examples come before the guided choice, and the independent check is separate.","Read the worked examples, then practise before answering independently."
+u15-st-teach-imperative-1.title,Admitted lines,Examples
+u15-st-teach-imperative-2.title,Admitted instruction,Explanation
+u15-st-teach-imperative-3.title,Admitted lines,Examples
+u15-st-teach-imperative-contrast.body,"Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.","Both are imperative forms of the shown infinitive; the singular form is informal, while spelling alone does not identify the actual number of listeners."
+u15-st-teach-imperative-contrast.body,"The cue shows the plural/polite form, while this question asks for the singular imperative table row.",The cue shows the plural/polite imperative; choose the singular imperative.
+u15-st-teach-imperative-contrast.body,"чита́ть is the infinitive, not the inflected plural imperative requested.","чита́ть is the infinitive, not an inflected plural imperative."
+u15-st-teach-imperative-contrast.title,Admitted instruction,Explanation
+u15-st-teach-say-request-1.body,Activity is not demonstrated ability.,"Practise first, then answer without the explanation in view."
+u15-st-teach-say-request-1.body,Read this as a review-pending explanation.,Read the explanation and compare the examples.
+u15-st-teach-say-request-1.body,"Worked examples come before the guided choice, and the independent check is separate.","Read the worked examples, then practise before answering independently."
+u15-st-teach-say-request-1.title,Admitted lines,Examples
+u15-st-teach-say-request-2.title,Admitted instruction,Explanation
+u15-st-teach-say-request-3.title,Admitted lines,Examples
+u15-st-teach-say-request-4.title,Admitted lines,Examples
+unit-15.mappingNote,"Independently stated topic scope: Requests, imperative forms, and consolidation of aspect use.","Topics: Requests, imperative forms, and consolidation of aspect use."
+unit-15.mappingNote,Mapping status is PENDING_CURRICULUM_REVIEWER.,Use the explanations and examples alongside your book.
+unit-15.mappingNote,"Proposed Lesson 15, printed pages 171-187.","This unit goes with Lesson 15 in your book, printed pages 171-187."
+unit-15.mappingNote,That assertion is not reviewer verification.,Read the matching lesson in your own book.
+unit-15.mappingNote,The Product Owner asserts that the inspected file is a legally owned copy.,Use the copy of the book you own.
+unit-15.mappingNote,"This note does not approve coverage, variance, or alignment.",Compare this unit with the matching lesson in your own book.

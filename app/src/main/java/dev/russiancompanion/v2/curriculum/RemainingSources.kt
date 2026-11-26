@@ -35,6 +35,8 @@ internal object RemainingSources {
         "src-enwiktionary-obsuzhdaemyj-74233962" to "74233962",
         "src-enwiktionary-napisannyj-74228228" to "74228228",
         "src-enwiktionary-prochitannyj-74232159" to "74232159",
+        // S1 (owner decision 2026-11-19): English Wiktionary "nekogo" oldid 80719285, frozen under catalog/sources/s1-intake.
+        "src-enwiktionary-nekogo-80719285" to "80719285",
         GUIDE_SOURCE to GUIDE_REVISION,
     )
 

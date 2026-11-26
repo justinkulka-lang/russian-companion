@@ -1,0 +1,1025 @@
+{
+ "task": "T15b (Claude Code, owner direction 11/16/2026)",
+ "baselineCommit": "e0623a49",
+ "inventory": "audit/T15-n0-unmarked-russian-facts.csv (T15-n0 baseline at 9decefb2); csvLine is the physical line",
+ "scope": "All 38 English-only Unit 7 entries of the T15-n0 inventory. MARK: the exact baseline sentence is kept and its russian-fact marker cites frozen-source records. REWORD: the baseline sentence is gone and its replacement is either marked with frozen-source records (MARKED) or is a reviewed instruction that states no Russian fact (INSTRUCTION). REMOVE: the sentence is gone. Content-audit coverage records never satisfy a marker.",
+ "totals": {
+  "MARK": 19,
+  "REWORD": 14,
+  "REMOVE": 3,
+  "RETIRED": 2
+ },
+ "entries": [
+  {
+   "entry": "U7-E01",
+   "csvLine": 606,
+   "ownerId": "u7-st-rem-default",
+   "field": "remediation body",
+   "baselineSentence": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-u7-default-rem"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-u7-default-rem."
+  },
+  {
+   "entry": "U7-E02",
+   "csvLine": 621,
+   "ownerId": "u7-st-rem-endings",
+   "field": "remediation body",
+   "baselineSentence": "Both words change in these supplied case pairs.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15b-u7-a1",
+    "prov-ex-or-u7-endings-8",
+    "prov-t15b-u7-endings-novyy-decl-f-acc",
+    "prov-t15b-u7-endings-kniga-sg-nom",
+    "prov-t15b-u7-endings-kniga-sg-acc"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-t15b-u7-a1, prov-ex-or-u7-endings-8, prov-t15b-u7-endings-novyy-decl-f-acc, prov-t15b-u7-endings-kniga-sg-nom, prov-t15b-u7-endings-kniga-sg-acc."
+  },
+  {
+   "entry": "U7-E03",
+   "csvLine": 624,
+   "ownerId": "u7-st-rem-endings",
+   "field": "remediation body",
+   "baselineSentence": "A phrase can need another gender, number or case even though its dictionary entry uses that form.",
+   "disposition": "REWORD",
+   "replacement": "A phrase can need another gender, number or case even though the dictionary form is masculine singular nominative.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t15b-u7-a1",
+    "prov-u7-default-rem"
+   ],
+   "reason": "The baseline wording says 'dictionary entry', an A2-26 provenance-narration term; the reworded sentence keeps the claim and is marked with the frozen sources the prep report names (A:1, A:6)."
+  },
+  {
+   "entry": "U7-E04",
+   "csvLine": 626,
+   "ownerId": "u7-st-rem-endings",
+   "field": "remediation body",
+   "baselineSentence": "Both adjective and noun change case while remaining neuter singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15b-u7-a1",
+    "prov-ex-or-u7-endings-9",
+    "prov-t15b-u7-endings-novyy-decl-n-gen",
+    "prov-t15b-u7-endings-okno-sg-nom",
+    "prov-t15b-u7-endings-okno-sg-gen",
+    "prov-t15b-u7-endings-okno-gender"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-t15b-u7-a1, prov-ex-or-u7-endings-9, prov-t15b-u7-endings-novyy-decl-n-gen, prov-t15b-u7-endings-okno-sg-nom, prov-t15b-u7-endings-okno-sg-gen, prov-t15b-u7-endings-okno-gender."
+  },
+  {
+   "entry": "U7-E05",
+   "csvLine": 629,
+   "ownerId": "u7-st-rem-endings",
+   "field": "remediation body",
+   "baselineSentence": "Compare the adjective with the masculine pencil and feminine car examples above: the noun controls the agreement required in that phrase.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15b-u7-a1",
+    "prov-t15b-u7-a11",
+    "prov-t15b-u7-a12",
+    "prov-ex-u7-endings-0-en",
+    "prov-ex-u7-endings-1-en"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-t15b-u7-a1, prov-t15b-u7-a11, prov-t15b-u7-a12, prov-ex-u7-endings-0-en, prov-ex-u7-endings-1-en."
+  },
+  {
+   "entry": "U7-E06",
+   "csvLine": 631,
+   "ownerId": "u7-st-rem-endings",
+   "field": "remediation body",
+   "baselineSentence": "Learn each recorded adjective family; similar meanings or dictionary endings alone do not license every inflection.",
+   "disposition": "REWORD",
+   "replacement": "Learn the forms of each adjective as you meet them.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "A:17 documents one exception, not this broad claim about meanings and every inflection; reworded to an instruction that states no Russian fact."
+  },
+  {
+   "entry": "U7-E07",
+   "csvLine": 633,
+   "ownerId": "u7-st-rem-endings",
+   "field": "remediation body",
+   "baselineSentence": "These are supplied nominative examples; they do not by themselves answer a question asking for an object or genitive phrase.",
+   "disposition": "REWORD",
+   "replacement": "Use these nominative examples as models, then check the case the task names.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "No frozen source states what the app's examples answer; reworded to an instruction."
+  },
+  {
+   "entry": "U7-E08",
+   "csvLine": 637,
+   "ownerId": "u7-st-rem-endings",
+   "field": "remediation body",
+   "baselineSentence": "The comparison changes number; it does not change the adjective to a different vocabulary item.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u7-endings-7",
+    "prov-ex-or-u7-endings-10"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-ex-or-u7-endings-7, prov-ex-or-u7-endings-10."
+  },
+  {
+   "entry": "U7-E09",
+   "csvLine": 641,
+   "ownerId": "u7-st-rem-endings",
+   "field": "remediation body",
+   "baselineSentence": "All these options are recorded forms, so the requested gender, number and case decide the answer; merely recognizing a valid-looking ending does not.",
+   "disposition": "REWORD",
+   "replacement": "Use the gender, number and case of the phrase to decide the answer.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "An app-inventory and answer-strategy assertion no frozen source states; reworded to an instruction. T16-n2 (D31c): replacement now \"Use the gender, number and case of the phrase to decide the answer.\" (was \"Use the requested gender, number and case to decide the answer.\")."
+  },
+  {
+   "entry": "U7-E10",
+   "csvLine": 645,
+   "ownerId": "u7-st-rem-endings",
+   "field": "remediation body",
+   "baselineSentence": "Case changes in the book and window pairs above are a separate contrast.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Redundant app-specific narration tied to the removed book and window phrase pairs."
+  },
+  {
+   "entry": "U7-E11",
+   "csvLine": 655,
+   "ownerId": "u7-i-endings-4",
+   "field": "item feedback",
+   "baselineSentence": "Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.",
+   "disposition": "REWORD",
+   "replacement": "Match the form to the noun, not to the dictionary form or a plural form.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Exercise guidance, not a Russian fact; reworded to an instruction."
+  },
+  {
+   "entry": "U7-E12",
+   "csvLine": 660,
+   "ownerId": "u7-st-rem-spelling",
+   "field": "remediation body",
+   "baselineSentence": "An adjective agrees with its noun in gender, number and case.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15b-u7-a1"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-t15b-u7-a1."
+  },
+  {
+   "entry": "U7-E13",
+   "csvLine": 663,
+   "ownerId": "u7-st-rem-spelling",
+   "field": "remediation body",
+   "baselineSentence": "The following forms belong to the same adjective meaning good.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u7-spelling-1",
+    "prov-ex-or-u7-spelling-2",
+    "prov-ex-or-u7-spelling-3",
+    "prov-ex-or-u7-spelling-4",
+    "prov-ex-or-u7-spelling-1-gloss"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-ex-or-u7-spelling-1-gloss."
+  },
+  {
+   "entry": "U7-E14",
+   "csvLine": 668,
+   "ownerId": "u7-st-rem-spelling",
+   "field": "remediation body",
+   "baselineSentence": "Spelling limits the letters in an ending; gender, number and case determine which form is needed.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15b-u7-a1",
+    "prov-t15b-u7-a24",
+    "prov-t15b-u7-a26"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-t15b-u7-a1, prov-t15b-u7-a24, prov-t15b-u7-a26."
+  },
+  {
+   "entry": "U7-E15",
+   "csvLine": 672,
+   "ownerId": "u7-st-rem-spelling",
+   "field": "remediation body",
+   "baselineSentence": "Keep the same noun and feminine singular agreement.",
+   "disposition": "REWORD",
+   "replacement": "Keep the same noun when you change the case.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Exercise guidance; the complete book pair is not attested in any frozen file. Reworded to an instruction."
+  },
+  {
+   "entry": "U7-E16",
+   "csvLine": 678,
+   "ownerId": "u7-st-rem-spelling",
+   "field": "remediation body",
+   "baselineSentence": "These choices test the requested form of the adjective; all the options are already correctly spelled.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "T15f (owner decision D6c): the widened A2-26 lint flags the assessment commentary \"These choices test the requested form of the adjective\"; the sentence keeps only its fact, marked with the same frozen-source records: prov-ex-or-u7-spelling-1, prov-ex-or-u7-spelling-2, prov-ex-or-u7-spelling-3, prov-ex-or-u7-spelling-4, prov-t15b-u7-a24, prov-t15b-u7-a26. T15g (D18d): the replacement sentence is removed as exercise commentary."
+  },
+  {
+   "entry": "U7-E17",
+   "csvLine": 684,
+   "ownerId": "u7-i-spelling-3",
+   "field": "item feedback",
+   "baselineSentence": "Both words change while the same noun and feminine singular agreement are kept.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15b-u7-a1",
+    "prov-ex-or-u7-spelling-2",
+    "prov-t15b-u7-spelling-khoroshiy-decl-f-acc",
+    "prov-t15b-u7-spelling-kniga-sg-nom",
+    "prov-t15b-u7-spelling-kniga-sg-acc"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-t15b-u7-a1, prov-ex-or-u7-spelling-2, prov-t15b-u7-spelling-khoroshiy-decl-f-acc, prov-t15b-u7-spelling-kniga-sg-nom, prov-t15b-u7-spelling-kniga-sg-acc."
+  },
+  {
+   "entry": "U7-E18",
+   "csvLine": 689,
+   "ownerId": "u7-st-rem-question",
+   "field": "remediation body",
+   "baselineSentence": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-u7-default-rem"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-u7-default-rem."
+  },
+  {
+   "entry": "U7-E19",
+   "csvLine": 696,
+   "ownerId": "u7-g-demonstrative-0",
+   "field": "item feedback",
+   "baselineSentence": "The shown line means these good new students and refers to more than one student.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-u7-demonstrative-0-en",
+    "prov-t15b-u7-a14"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-ex-u7-demonstrative-0-en, prov-t15b-u7-a14."
+  },
+  {
+   "entry": "U7-E20",
+   "csvLine": 717,
+   "ownerId": "u7-g-objectadj-0",
+   "field": "item feedback",
+   "baselineSentence": "It has the same form as the masculine singular genitive.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15b-u7-a31",
+    "prov-ex-or-u7-objectadj-5"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-t15b-u7-a31, prov-ex-or-u7-objectadj-5."
+  },
+  {
+   "entry": "U7-E21",
+   "csvLine": 718,
+   "ownerId": "u7-g-objectadj-0",
+   "field": "item feedback",
+   "baselineSentence": "Feminine agreement uses a different ending.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15b-u7-a29",
+    "prov-t15b-u7-a33",
+    "prov-ex-or-u7-objectadj-6"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-t15b-u7-a29, prov-t15b-u7-a33, prov-ex-or-u7-objectadj-6."
+  },
+  {
+   "entry": "U7-E22",
+   "csvLine": 722,
+   "ownerId": "u7-st-rem-objectadj",
+   "field": "remediation body",
+   "baselineSentence": "— I want a new rabbit.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-u7-objectadj-1-en",
+    "prov-t15b-u7-a31"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-ex-u7-objectadj-1-en, prov-t15b-u7-a31."
+  },
+  {
+   "entry": "U7-E23",
+   "csvLine": 726,
+   "ownerId": "u7-st-rem-objectadj",
+   "field": "remediation body",
+   "baselineSentence": "Its plural forms can be accusative or genitive; the source illustrates an animate accusative object.",
+   "disposition": "REWORD",
+   "replacement": "Its plural forms can be accusative or genitive; the example illustrates an animate accusative object.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-ex-u7-objectadj-3-ru",
+    "prov-t15b-u7-objectadj-zhenshchina-pl-acc",
+    "prov-t15b-u7-objectadj-zhenshchina-pl-gen",
+    "prov-t15b-u7-objectadj-zhenshchina-animate"
+   ],
+   "reason": "T15f (owner decision D8): \"the source illustrates\" becomes \"the example illustrates\"; the marker keeps the same frozen-source records: prov-ex-u7-objectadj-3-ru, prov-t15b-u7-objectadj-zhenshchina-pl-acc, prov-t15b-u7-objectadj-zhenshchina-pl-gen, prov-t15b-u7-objectadj-zhenshchina-animate."
+  },
+  {
+   "entry": "U7-E24",
+   "csvLine": 727,
+   "ownerId": "u7-st-rem-objectadj",
+   "field": "remediation body",
+   "baselineSentence": "The fragment alone is not a complete sentence and supplies no predicate or first-person subject.",
+   "disposition": "REWORD",
+   "replacement": "Treat the fragment as a phrase on its own, not as a complete sentence.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "C:29 supplies the complete source sentence, not this fragment analysis; reworded to an instruction."
+  },
+  {
+   "entry": "U7-E25",
+   "csvLine": 728,
+   "ownerId": "u7-st-rem-objectadj",
+   "field": "remediation body",
+   "baselineSentence": "The preceding complete cat and dog sentence has its own predicate; do not carry that meaning into the separate fragment.",
+   "disposition": "REWORD",
+   "replacement": "Read the cat and dog sentence separately from the fragment.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "No frozen source states the app-specific relation between the displayed excerpts; reworded to an instruction."
+  },
+  {
+   "entry": "U7-E26",
+   "csvLine": 737,
+   "ownerId": "u7-i-objectadj-3",
+   "field": "item feedback",
+   "baselineSentence": "Keep feminine singular agreement; the masculine dictionary form changes gender and does not answer this question.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-u7-default-rem",
+    "prov-t15b-u7-a33",
+    "prov-ex-or-u7-objectadj-6",
+    "prov-ex-or-u7-objectadj-4"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-u7-default-rem, prov-t15b-u7-a33, prov-ex-or-u7-objectadj-6, prov-ex-or-u7-objectadj-4. T16-n2 (D31c): marked wording now \"Keep feminine singular agreement; a masculine dictionary form changes gender.\" (was \"Keep feminine singular agreement; the masculine dictionary form changes gender and does not answer this question.\"); the same frozen records.",
+   "currentSentence": "Keep feminine singular agreement; a masculine dictionary form changes gender."
+  },
+  {
+   "entry": "U7-E27",
+   "csvLine": 753,
+   "ownerId": "u7-st-rem-adverb-invariance",
+   "field": "remediation body",
+   "baselineSentence": "Adverbs do not decline or conjugate: they do not change for case, gender or number agreement.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-u7-adverb-invariance-rem"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-u7-adverb-invariance-rem."
+  },
+  {
+   "entry": "U7-E28",
+   "csvLine": 754,
+   "ownerId": "u7-st-rem-adverb-invariance",
+   "field": "remediation body",
+   "baselineSentence": "This grammatical invariance does not mean that comparative forms cannot exist.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-u7-adverb-invariance-rem",
+    "prov-t15b-u7-r8b"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-u7-adverb-invariance-rem, prov-t15b-u7-r8b."
+  },
+  {
+   "entry": "U7-E29",
+   "csvLine": 755,
+   "ownerId": "u7-st-rem-adverb-invariance",
+   "field": "remediation body",
+   "baselineSentence": "The retained explanation treats comparison of qualitative adverbs separately.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Provenance narration; the comparison fact is carried by the marked sentence before it."
+  },
+  {
+   "entry": "U7-E30",
+   "csvLine": 770,
+   "ownerId": "u7-g-manner-1",
+   "field": "item feedback",
+   "baselineSentence": "The documented creative pair is a separate admitted manner-adverb relationship.",
+   "disposition": "REWORD",
+   "replacement": "творческий — творчески: the adverb творчески is formed from the adjective творческий with a suffix.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t15b-u7-manner-tvorcheskiy"
+   ],
+   "reason": "The baseline sentence contains the A2-26 governance term 'admitted', and u7-g-manner-1 is rebuilt on the frozen Russian Wikipedia suffixal pair (R:44) instead of the pinned Phase 2 labels; the new feedback is marked with R:44."
+  },
+  {
+   "entry": "U7-E31",
+   "csvLine": 771,
+   "ownerId": "u7-g-manner-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "The documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.",
+   "disposition": "REWORD",
+   "replacement": "быстро is formed from быстрый, so it is not the adverb asked for here.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t15b-u7-manner-tvorcheskiy"
+   ],
+   "reason": "R:44 gives examples; it does not state a general restriction on every adjective. Replaced by a marked statement of the documented pair."
+  },
+  {
+   "entry": "U7-E32",
+   "csvLine": 772,
+   "ownerId": "u7-g-manner-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "Adding an adverb ending to an unstudied adjective invents an unsupported form.",
+   "disposition": "REWORD",
+   "replacement": "быстрый is an adjective, not an adverb formed from творческий.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t15b-u7-manner-tvorcheskiy"
+   ],
+   "reason": "No frozen source states this unsupported-form assertion. Replaced by a marked statement that быстрый is an adjective (OpenRussian adjectives.csv)."
+  },
+  {
+   "entry": "U7-E33",
+   "csvLine": 773,
+   "ownerId": "u7-st-rem-manner",
+   "field": "remediation body",
+   "baselineSentence": "Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.",
+   "disposition": "REWORD",
+   "replacement": "бы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-u7-adverb-pairs-rem",
+    "prov-t15b-u7-b1",
+    "prov-t15b-u7-adverb-paradigm-bystro-accented",
+    "prov-t15b-u7-adverb-paradigm-bystryy-accented"
+   ],
+   "reason": "No frozen source states this conversion checklist. The remediation now repeats the capability's documented-pair sentence (marked with R:44 and B:1) and its instruction to check each lexical pair."
+  },
+  {
+   "entry": "U7-E34",
+   "csvLine": 775,
+   "ownerId": "u7-i-manner-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "two forms of the same noun would remain noun forms; this pair links an adjective with an adverb.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-u7-adverb-pairs-rem",
+    "prov-t15b-u7-b1",
+    "prov-t15b-u7-adverb-paradigm-bystryy-accented",
+    "prov-t15b-u7-adverb-paradigm-bystro-accented"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-u7-adverb-pairs-rem, prov-t15b-u7-b1, prov-t15b-u7-adverb-paradigm-bystryy-accented, prov-t15b-u7-adverb-paradigm-bystro-accented."
+  },
+  {
+   "entry": "U7-E35",
+   "csvLine": 776,
+   "ownerId": "u7-i-manner-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "an unrestricted rule for every adjective is not established by one documented lexical pair.",
+   "disposition": "REWORD",
+   "replacement": "an unrestricted rule for every adjective is not what this pair shows; it links one adjective with one adverb.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "The examples do not state this claim about the limits of proof; reworded to an instruction that keeps the distractor text. T15g (D18d): the replacement is now \"an unrestricted rule for every adjective is not what this pair shows; it links one adjective with one adverb.\"."
+  },
+  {
+   "entry": "U7-E36",
+   "csvLine": 781,
+   "ownerId": "u7-i-manner-3",
+   "field": "item feedback",
+   "baselineSentence": "They have different grammatical jobs.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15b-u7-b1",
+    "prov-t15b-u7-adverb-paradigm-bystryy-accented",
+    "prov-t15b-u7-adverb-paradigm-bystro-accented"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records (T15b): prov-t15b-u7-b1, prov-t15b-u7-adverb-paradigm-bystryy-accented, prov-t15b-u7-adverb-paradigm-bystro-accented."
+  },
+  {
+   "entry": "U7-E37",
+   "csvLine": 785,
+   "ownerId": "u7-i-manner-4",
+   "field": "item feedback",
+   "baselineSentence": "This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.",
+   "disposition": "RETIRED",
+   "sourceRecordIds": [],
+   "reason": "T15i (CC027, owner decision D25j): u7-i-manner-4 is retired as a policy question, like D12a; the sentence is no longer shown."
+  },
+  {
+   "entry": "U7-E38",
+   "csvLine": 786,
+   "ownerId": "u7-i-manner-4",
+   "field": "item distractor rationale",
+   "baselineSentence": "the unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs.",
+   "disposition": "RETIRED",
+   "sourceRecordIds": [],
+   "reason": "T15i (CC027, owner decision D25j): u7-i-manner-4 is retired as a policy question, like D12a; the sentence is no longer shown."
+  }
+ ],
+ "markerReviewsNote": "Each Unit 7 marker with no Cyrillic word names, for every cited frozen-source record, the frozen file, line and an exact quote of that line (OpenRussian rows are quoted by their bare headword and tab). The listed lines state the marked claim; the test checks that the lines exist and hold a cited record.",
+ "markerReviews": [
+  {
+   "ownerId": "u7-i-spelling-3",
+   "sentence": "Both words change while the same noun and feminine singular agreement are kept.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 1,
+     "quote": "The endings of adjectives change according to the gender, number, and case of the nouns they modify.",
+     "record": "prov-t15b-u7-a1"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 18,
+     "quote": "хороший\t",
+     "record": "prov-ex-or-u7-spelling-2"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 18,
+     "quote": "хороший\t",
+     "record": "prov-t15b-u7-spelling-khoroshiy-decl-f-acc"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\t",
+     "record": "prov-t15b-u7-spelling-kniga-sg-nom"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\t",
+     "record": "prov-t15b-u7-spelling-kniga-sg-acc"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-g-demonstrative-0",
+   "sentence": "The shown line means these good new students and refers to more than one student.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 14,
+     "quote": "these good new students\" is '''эти хорошие новые студенты'''",
+     "record": "prov-ex-u7-demonstrative-0-en"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 14,
+     "quote": "With plural nouns, regardless of gender, the adjective replaces '''-ый''' or '''-ой''' with '''-ые'''",
+     "record": "prov-t15b-u7-a14"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-g-objectadj-0",
+   "sentence": "It has the same form as the masculine singular genitive.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 31,
+     "quote": "However, if the modified masculine noun is a person or animal, then both it and its adjectives take the genitive form.",
+     "record": "prov-t15b-u7-a31"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 16,
+     "quote": "новый\t",
+     "record": "prov-ex-or-u7-objectadj-5"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-g-objectadj-0",
+   "sentence": "Feminine agreement uses a different ending.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 29,
+     "quote": "Adjectival endings in the accusative case are similar to noun endings, in that they all use endings from other cases, with the exception of feminine nouns.",
+     "record": "prov-t15b-u7-a29"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 33,
+     "quote": "Feminine adjectives simply have '''-ую''' in the accusative.",
+     "record": "prov-t15b-u7-a33"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 16,
+     "quote": "новый\t",
+     "record": "prov-ex-or-u7-objectadj-6"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-i-objectadj-3",
+   "sentence": "Keep feminine singular agreement; a masculine dictionary form changes gender.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 6,
+     "quote": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+     "record": "prov-u7-default-rem"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 33,
+     "quote": "Feminine adjectives simply have '''-ую''' in the accusative.",
+     "record": "prov-t15b-u7-a33"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 16,
+     "quote": "новый\t",
+     "record": "prov-ex-or-u7-objectadj-6"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 16,
+     "quote": "новый\t",
+     "record": "prov-ex-or-u7-objectadj-4"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-i-manner-1",
+   "sentence": "two forms of the same noun would remain noun forms; this pair links an adjective with an adverb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/ruwiki/narechie-152437423.txt",
+     "line": 44,
+     "quote": "* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+     "record": "prov-u7-adverb-pairs-rem"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adverbs-3197995.txt",
+     "line": 1,
+     "quote": "Adverbs describe a verb much like adjectives describe nouns.",
+     "record": "prov-t15b-u7-b1"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 125,
+     "quote": "быстрый\t",
+     "record": "prov-t15b-u7-adverb-paradigm-bystryy-accented"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/others.csv",
+     "line": 108,
+     "quote": "быстро\t",
+     "record": "prov-t15b-u7-adverb-paradigm-bystro-accented"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-i-manner-3",
+   "sentence": "They have different grammatical jobs.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adverbs-3197995.txt",
+     "line": 1,
+     "quote": "Adverbs describe a verb much like adjectives describe nouns.",
+     "record": "prov-t15b-u7-b1"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 125,
+     "quote": "быстрый\t",
+     "record": "prov-t15b-u7-adverb-paradigm-bystryy-accented"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/others.csv",
+     "line": 108,
+     "quote": "быстро\t",
+     "record": "prov-t15b-u7-adverb-paradigm-bystro-accented"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-default",
+   "sentence": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 6,
+     "quote": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+     "record": "prov-u7-default-rem"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-endings",
+   "sentence": "Both words change in these supplied case pairs.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 1,
+     "quote": "The endings of adjectives change according to the gender, number, and case of the nouns they modify.",
+     "record": "prov-t15b-u7-a1"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 16,
+     "quote": "новый\t",
+     "record": "prov-ex-or-u7-endings-8"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 16,
+     "quote": "новый\t",
+     "record": "prov-t15b-u7-endings-novyy-decl-f-acc"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\t",
+     "record": "prov-t15b-u7-endings-kniga-sg-nom"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 60,
+     "quote": "книга\t",
+     "record": "prov-t15b-u7-endings-kniga-sg-acc"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-endings",
+   "sentence": "A phrase can need another gender, number or case even though the dictionary form is masculine singular nominative.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 1,
+     "quote": "The endings of adjectives change according to the gender, number, and case of the nouns they modify.",
+     "record": "prov-t15b-u7-a1"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 6,
+     "quote": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+     "record": "prov-u7-default-rem"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-endings",
+   "sentence": "Both adjective and noun change case while remaining neuter singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 1,
+     "quote": "The endings of adjectives change according to the gender, number, and case of the nouns they modify.",
+     "record": "prov-t15b-u7-a1"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 16,
+     "quote": "новый\t",
+     "record": "prov-ex-or-u7-endings-9"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 16,
+     "quote": "новый\t",
+     "record": "prov-t15b-u7-endings-novyy-decl-n-gen"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 51,
+     "quote": "окно\t",
+     "record": "prov-t15b-u7-endings-okno-sg-nom"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 51,
+     "quote": "окно\t",
+     "record": "prov-t15b-u7-endings-okno-sg-gen"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 51,
+     "quote": "окно\t",
+     "record": "prov-t15b-u7-endings-okno-gender"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-endings",
+   "sentence": "Compare the adjective with the masculine pencil and feminine car examples above: the noun controls the agreement required in that phrase.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 1,
+     "quote": "The endings of adjectives change according to the gender, number, and case of the nouns they modify.",
+     "record": "prov-t15b-u7-a1"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 11,
+     "quote": "When adjectives modify a masculine noun, they use their default ending.",
+     "record": "prov-t15b-u7-a11"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 12,
+     "quote": "With feminine nouns, the adjective ends in '''-ая'''.",
+     "record": "prov-t15b-u7-a12"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 11,
+     "quote": "\"new pencil\" is '''новый карандаш'''",
+     "record": "prov-ex-u7-endings-0-en"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 12,
+     "quote": "\"new car\" is '''новая машина'''",
+     "record": "prov-ex-u7-endings-1-en"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-endings",
+   "sentence": "The comparison changes number; it does not change the adjective to a different vocabulary item.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 16,
+     "quote": "новый\t",
+     "record": "prov-ex-or-u7-endings-7"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 16,
+     "quote": "новый\t",
+     "record": "prov-ex-or-u7-endings-10"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-spelling",
+   "sentence": "An adjective agrees with its noun in gender, number and case.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 1,
+     "quote": "The endings of adjectives change according to the gender, number, and case of the nouns they modify.",
+     "record": "prov-t15b-u7-a1"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-spelling",
+   "sentence": "The following forms belong to the same adjective meaning good.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 18,
+     "quote": "хороший\t",
+     "record": "prov-ex-or-u7-spelling-1"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 18,
+     "quote": "хороший\t",
+     "record": "prov-ex-or-u7-spelling-2"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 18,
+     "quote": "хороший\t",
+     "record": "prov-ex-or-u7-spelling-3"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 18,
+     "quote": "хороший\t",
+     "record": "prov-ex-or-u7-spelling-4"
+    },
+    {
+     "file": "catalog/sources/units-6-10/openrussian/adjectives.csv",
+     "line": 18,
+     "quote": "хороший\t",
+     "record": "prov-ex-or-u7-spelling-1-gloss"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-spelling",
+   "sentence": "Spelling limits the letters in an ending; gender, number and case determine which form is needed.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 1,
+     "quote": "The endings of adjectives change according to the gender, number, and case of the nouns they modify.",
+     "record": "prov-t15b-u7-a1"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 24,
+     "quote": "if the stem ends in '''г, ж, к, х, ч, ш''', or '''щ''', you add '''и''', not '''ы'''. This 7-letter spelling rule also applies to adjectives.",
+     "record": "prov-t15b-u7-a24"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 26,
+     "quote": "if the stem ends in '''ж, ц, ч, ш''', or '''щ''', any unstressed '''o''' in an ending is instead written as '''e'''.",
+     "record": "prov-t15b-u7-a26"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-question",
+   "sentence": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 6,
+     "quote": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+     "record": "prov-u7-default-rem"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-objectadj",
+   "sentence": "— I want a new rabbit.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 31,
+     "quote": "I want a new rabbit - '''Я хочу нового кролика.'''",
+     "record": "prov-ex-u7-objectadj-1-en"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+     "line": 31,
+     "quote": "However, if the modified masculine noun is a person or animal, then both it and its adjectives take the genitive form.",
+     "record": "prov-t15b-u7-a31"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-objectadj",
+   "sentence": "Its plural forms can be accusative or genitive; the example illustrates an animate accusative object.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+     "line": 29,
+     "quote": "I like these women. - '''Я люблю ''этих женщин.'''",
+     "record": "prov-ex-u7-objectadj-3-ru"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 36,
+     "quote": "женщина\t",
+     "record": "prov-t15b-u7-objectadj-zhenshchina-pl-acc"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 36,
+     "quote": "женщина\t",
+     "record": "prov-t15b-u7-objectadj-zhenshchina-pl-gen"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 36,
+     "quote": "женщина\t",
+     "record": "prov-t15b-u7-objectadj-zhenshchina-animate"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-adverb-invariance",
+   "sentence": "Adverbs do not decline or conjugate: they do not change for case, gender or number agreement.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/ruwiki/narechie-152437423.txt",
+     "line": 8,
+     "quote": "Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.",
+     "record": "prov-u7-adverb-invariance-rem"
+    }
+   ]
+  },
+  {
+   "ownerId": "u7-st-rem-adverb-invariance",
+   "sentence": "This grammatical invariance does not mean that comparative forms cannot exist.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/ruwiki/narechie-152437423.txt",
+     "line": 8,
+     "quote": "Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.",
+     "record": "prov-u7-adverb-invariance-rem"
+    },
+    {
+     "file": "catalog/sources/units-6-10/ruwiki/narechie-152437423.txt",
+     "line": 8,
+     "quote": "И только качественные наречия, образованные от прилагательных, имеют степени сравнения и формы субъективной оценки",
+     "record": "prov-t15b-u7-r8b"
+    }
+   ]
+  }
+ ]
+}

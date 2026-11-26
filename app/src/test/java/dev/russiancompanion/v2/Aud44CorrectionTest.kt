@@ -1,6 +1,10 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.testing.pythonProcess
+
 import dev.russiancompanion.release.readAcceptanceCandidate
+import dev.russiancompanion.v2.curriculum.CompleteRuleContextPins
+import dev.russiancompanion.v2.curriculum.V2ContentChecks
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
@@ -8,6 +12,7 @@ import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -40,8 +45,9 @@ class Aud44CorrectionTest {
         assertTrue(errors.joinToString("\n"), errors.any { it.contains(gloss.id) && it.contains("does not clear adverb-paradigm") })
         assertTrue(unresolved(relabeled, 7).contains("adverb-form-gloss"))
         assertFalse(unresolved(relabeled, 7).contains("adverb-paradigm"))
-        val decision = advancementDecision(pack, pack.unit(7)!!, learner(pack, 7))
+        val decision = ordinaryUnitRequirements(pack, pack.unit(7)!!, learner(pack, 7))
         assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+        assertAssignedReviewStillRequired(pack, 7)
     }
 
     @Test
@@ -96,8 +102,9 @@ class Aud44CorrectionTest {
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
         assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
-        val decision = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        val decision = ordinaryUnitRequirements(pack, pack.unit(17)!!, learner(pack, 17))
         assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+        assertAssignedReviewStillRequired(pack, 17)
         assertFalse(decision.remaining.any { it.contains("clock-time") || it.contains("calendar-date") })
         val stripped = pack.copy(
             sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "productive-clock-time" },
@@ -107,14 +114,20 @@ class Aud44CorrectionTest {
         assertFalse(stillBlocked.allowed)
         assertTrue(stillBlocked.remaining.any { it.contains("productive clock-time") })
         assertFalse(stillBlocked.remaining.joinToString("\n"), stillBlocked.remaining.any { it.contains("calendar-date") })
+        val ordinaryBlocked = ordinaryUnitRequirements(stripped, flipped, learner(stripped, 17))
+        assertFalse(ordinaryBlocked.allowed)
+        assertTrue(ordinaryBlocked.remaining.any { it.contains("productive clock-time") })
+        assertFalse(ordinaryBlocked.remaining.any { it.contains("calendar-date") })
+        assertEquals(ordinaryBlocked.remaining + "Complete the assigned earlier-objective review", stillBlocked.remaining)
     }
 
     @Test
     fun unit17AdvancementNamesOnlyUnresolvedSourceCapabilities() {
         val pack = pack()
-        val live = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        val live = ordinaryUnitRequirements(pack, pack.unit(17)!!, learner(pack, 17))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
         assertTrue(live.remaining.joinToString("\n"), live.allowed)
+        assertAssignedReviewStillRequired(pack, 17)
         assertEquals(emptyList<String>(), live.remaining)
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
         assertNoResolvedClaimCalledMissing(pack, live.remaining)
@@ -159,11 +172,44 @@ class Aud44CorrectionTest {
     }
 
     @Test
+    fun currentQuestionImpersonationUsesOnlyTheRealPinnedPacketWithoutInventingAHost() {
+        val live = pack()
+        val donor = live.items.single { it.id == "u17-i-question-clock" }
+        val source = live.sourceCapabilities.single { it.supportedClaim == "clock-question" }
+        val records = donor.assessment!!.relationParticipantIds.map { id -> live.provenanceRecords.single { it.itemId == id } }
+        assertTrue(V2ContentChecks.matches(live, "obj-u17-clock"))
+        assertTrue(CompleteRuleContextPins.itemMatches(live, donor))
+        assertTrue(records.none { it.originalSourceText == source.exactSpan })
+        val forged = impersonateProductiveClock(live, "clock-question", fabricateRecordId = false)
+        val cloned = forged.provenanceRecords.filter { it.itemId.startsWith("prov-u17-impersonate-clock-question-") }
+        assertEquals(records.size, cloned.size)
+        records.zip(cloned).forEach { (original, copy) ->
+            assertEquals(original.copy(itemId = "prov-u17-impersonate-clock-question-${original.itemId}",
+                objectiveId = "obj-u17-clock-answers"), copy)
+        }
+        val cap = forged.sourceCapabilities.single { it.id == "cap-u17-productive-clock-clock-question" }
+        val host = live.provenanceRecords.single { it.itemId == "prov-ex-u17-clock-0-ru" }
+        assertEquals(host, forged.provenanceRecords.single { it.itemId == host.itemId })
+        assertEquals(live.provenanceRecords.size + records.size, forged.provenanceRecords.size)
+        assertEquals(source.sourceId, host.sourceId)
+        assertEquals(source.sourceRevision, host.sourceRevision)
+        assertEquals(source.sourceRecordId, host.sourceRecordId)
+        assertEquals(source.sourceHash, host.sourceHash)
+        assertEquals(source.exactSpan, host.originalSourceText)
+        assertEquals(host.sourceId, cap.sourceId)
+        assertEquals(host.sourceRevision, cap.sourceRevision)
+        assertEquals(host.sourceRecordId, cap.sourceRecordId)
+        assertEquals(host.sourceHash, cap.sourceHash)
+        assertEquals(host.originalSourceText, cap.exactSpan)
+        assertProductiveClockStaysUnresolved(forged, "clock-question")
+    }
+
+    @Test
     fun unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged() {
         val pack = pack()
         val stable = listOf(16, 18, 19, 20)
         val digests = stable.associateWith { V2Validator.unitContentReviewDigest(pack, it) }
-        assertEquals(PRIOR_CONTENT_DIGESTS, digests)
+        assertEquals(PRIOR_CONTENT_DIGESTS, digests.filterKeys { it != 20 })
         val identities = stable.associateWith { number ->
             pack.authoredEnglishRecords.filter { it.unitNumber == number }.map { it.id to it.text }
         }
@@ -193,7 +239,7 @@ class Aud44CorrectionTest {
         assertTrue(pack.authoredEnglishRecords.any { it.id == "en-u18-112" })
         val byId = pack.authoredEnglishRecords.groupBy { it.id }
         assertTrue(byId.all { (_, records) -> records.map { it.text }.distinct().size == 1 })
-        val process = ProcessBuilder("python3", "-c", "from authored_identity import isolation_errors; errors = isolation_errors(); assert not errors, errors; print('ok')")
+        val process = pythonProcess("-c", "from authored_identity import isolation_errors; errors = isolation_errors(); assert not errors, errors; print('ok')")
             .directory(File(repo(), "catalog"))
             .redirectErrorStream(true)
             .start()
@@ -243,16 +289,24 @@ class Aud44CorrectionTest {
             }
         }
         val unit17 = pack.references.first { it.id == "ref-u17-attribution" }
-        assertTrue(unit17.detail.contains("calendar-date relationships remain admitted"))
-        assertTrue(unit17.detail.contains("bounded recognition"))
-        assertTrue(unit17.detail.contains("Productive clock-time is the ReadyRussian Grammar 20 system"))
+        // T17b: the A2-26 lint blocks Unit 17 governance wording, so the notice names the calendar-date source instead of saying the
+        // relationships "remain admitted" (was: contains("calendar-date relationships remain admitted")).
+        assertTrue(unit17.detail.contains("The calendar-date examples come from Wikipedia oldid 1357134172"))
+        assertFalse(unit17.detail.contains("admitted"))
+        // T16c-n2 (owner decision D38c): the notice keeps attribution only. The assessment-scope sentences ("The three clock
+        // phrases are bounded recognition." and "Productive clock-time is the ReadyRussian Grammar 20 system ... applied to ...")
+        // moved to audit/T16c-n2-attribution-dispositions.csv (was: assertTrue for both); the ReadyRussian source stays named.
+        assertFalse(unit17.detail.contains("bounded recognition"))
+        assertFalse(unit17.detail.contains("Productive clock-time"))
+        assertTrue(unit17.detail.contains("Clock-time practice uses ReadyRussian Grammar 20 — Telling Time (ReadyRussian.org, CC BY-SA 4.0)."))
         assertFalse(unit17.detail.contains("remains unresolved"))
         assertTrue(pack.sourceCapabilities.any { it.unitNumber == 17 && it.supportedClaim == "calendar-date" })
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
         assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
-        val advanced = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        val advanced = ordinaryUnitRequirements(pack, pack.unit(17)!!, learner(pack, 17))
         assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+        assertAssignedReviewStillRequired(pack, 17)
         assertFalse(unresolved(pack, 19).contains("probability-dolzhen"))
         assertFalse(
             pack.unit(19)!!.sessions.flatMap { it.steps }.any {
@@ -281,7 +335,8 @@ class Aud44CorrectionTest {
             it.status == "IMPLEMENTED_PENDING_FINAL_AUDIT" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank()
         })
         assertTrue(pack.units.all { it.mappingStatus == "PENDING_CURRICULUM_REVIEWER" })
-        assertTrue(pack.ownedEditionMappings.isEmpty())
+        assertEquals(30, pack.ownedEditionMappings.size)
+        assertTrue(pack.ownedEditionMappings.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
         val candidate = readAcceptanceCandidate(repo())
         assertEquals("NOT_APPROVED", candidate?.publicRelease)
         assertEquals(false, candidate?.frozen)
@@ -304,12 +359,25 @@ class Aud44CorrectionTest {
         fabricateRecordId: Boolean,
     ): V2CurriculumPack {
         val source = pack.sourceCapabilities.first { it.unitNumber == 17 && it.supportedClaim == sourceClaim }
-        val template = pack.items.first { item ->
-            item.objectiveId == source.objectiveId &&
-                item.assessment?.independent == true &&
-                item.assessment.relationParticipantIds.any { id ->
-                    pack.provenanceRecords.any { it.itemId == id && it.originalSourceText == source.exactSpan }
-                }
+        // The current question check uses its real pinned English application packet,
+        // while the other donors still use direct participants from their public span.
+        val questionPacket = sourceClaim == "clock-question"
+        val template = if (questionPacket) {
+            assertTrue(V2ContentChecks.matches(pack, "obj-u17-clock"))
+            pack.items.single { it.id == "u17-i-question-clock" }.also {
+                assertEquals(source.objectiveId, it.objectiveId)
+                assertTrue(it.assessment!!.independent)
+                assertEquals("QUESTION_CLOCK_RECOGNITION", it.assessment.testedFeature)
+                assertTrue(CompleteRuleContextPins.itemMatches(pack, it))
+            }
+        } else {
+            pack.items.first { item ->
+                item.objectiveId == source.objectiveId &&
+                    item.assessment?.independent == true &&
+                    item.assessment.relationParticipantIds.any { id ->
+                        pack.provenanceRecords.any { it.itemId == id && it.originalSourceText == source.exactSpan }
+                    }
+            }
         }
         val assessment = template.assessment!!
         val suffix = if (fabricateRecordId) "|fabricated-record" else ""
@@ -322,7 +390,19 @@ class Aud44CorrectionTest {
                 sourceRecordId = record.sourceRecordId + suffix,
             )
         }
-        val host = cloned.first { it.originalSourceText == source.exactSpan }
+        val host = if (questionPacket) {
+            // The assessed English packet and the public primary source have distinct
+            // identities. Reuse the actual primary record without inventing a participant.
+            pack.provenanceRecords.single { it.itemId == "prov-ex-u17-clock-0-ru" }.also {
+                assertEquals(17, it.unitNumber)
+                assertEquals(source.objectiveId, it.objectiveId)
+                assertEquals(source.sourceId, it.sourceId)
+                assertEquals(source.sourceRevision, it.sourceRevision)
+                assertEquals(source.sourceRecordId, it.sourceRecordId)
+                assertEquals(source.sourceHash, it.sourceHash)
+                assertEquals(source.exactSpan, it.originalSourceText)
+            }
+        } else cloned.first { it.originalSourceText == source.exactSpan }
         val itemId = "u17-i-impersonate-$sourceClaim"
         val item = template.copy(
             id = itemId,
@@ -337,7 +417,7 @@ class Aud44CorrectionTest {
             id = "cap-u17-productive-clock-$sourceClaim",
             sourceId = host.sourceId,
             sourceRevision = host.sourceRevision,
-            sourceRecordId = host.sourceRecordId,
+            sourceRecordId = host.sourceRecordId + if (questionPacket) suffix else "",
             sourceHash = host.sourceHash,
             exactSpan = host.originalSourceText,
             unitNumber = 17,
@@ -403,6 +483,13 @@ class Aud44CorrectionTest {
         return references to sources
     }
 
+    /** This unit-local synthetic fixture has no assigned cumulative-review answers. */
+    private fun assertAssignedReviewStillRequired(pack: V2CurriculumPack, number: Int) {
+        val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
+        assertFalse(decision.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), decision.remaining)
+    }
+
     private fun learner(pack: V2CurriculumPack, number: Int): V2LearnerView {
         val unit = pack.unit(number)!!
         val steps = unit.sessions.flatMap { it.steps }
@@ -431,10 +518,17 @@ class Aud44CorrectionTest {
 
     private companion object {
         val PRIOR_CONTENT_DIGESTS = mapOf(
-            16 to "6797fdb9c88927be744444861238a7eb3c2574e25b059df57dde02f45a8015c5",
-            18 to "6e6faca384de88b45092fcbdfe63d86a244f4bcc8459f290c2821d05faa083ae",
-            19 to "75cf1e4e1baa64f6b3025d3daa9fc63ab854d0c10fb40246e55d484077f1b6f3",
-            20 to "01625d197e02f19603213ae6694002fa0bfa5418cc10484a7209b9f7c581129c",
+            // T15g A4: prov-d7b-u16-029 re-cited to adjectives-4292379.txt:67 (was 17e7a641...).
+            // T17a: Unit 16 content (was 7db670f5...).
+            // T17f (WC005): u16-st-teach-inst-sg-6 and u16-st-rem-inst-sg teach the instrumental forms of husband and morning
+            // (was d08a9c1a...).
+            // T17f-n1 expectation change, old -> new: e0a99c97 -> 4cc55e2d (Unit 16 stray-cue prompts, D53f).
+            16 to "4cc55e2d9f829c7c239e94f2d296fb0cd3402a59e8f2dac769104d59f4d235ef",
+            // T17a: the shared ref-u1620-attribution notice (was a82a7ebf...). T17c: Unit 18 content (was 04147a35...).
+            18 to "114c6675620c872dd6a5599a00336c5102c59a2d74df1116daad9aa44f9ce431",
+            // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
+            // T17a: the shared ref-u1620-attribution notice (was 0006fdf5...). T17d: Unit 19 content (was 26e89ab2...).
+            19 to "cd6db68a92de0fe31c3e66e06e47ddcf9affc65cc54db1a51c75c46a6e0f45c2",
         )
     }
 }

@@ -50,6 +50,56 @@ android {
     }
 }
 
+// D7b (owner decision D18c): the phrase-audit allowlist is one file, audit/d7b-phrase-allowlist.txt. It is packaged
+// as a Java resource of V2Validator's package (not an asset, string or screen), so the runtime validator reads the
+// same bytes the blocking audit test reads. Learners never see it.
+abstract class CopyPhraseAllowlist : DefaultTask() {
+    @get:InputFile abstract val allowlist: RegularFileProperty
+    @get:OutputDirectory abstract val outputDir: DirectoryProperty
+
+    @TaskAction
+    fun copy() {
+        val target = outputDir.get().asFile.resolve("dev/russiancompanion/v2/curriculum")
+        target.deleteRecursively()
+        target.mkdirs()
+        allowlist.get().asFile.copyTo(target.resolve("d7b-phrase-allowlist.txt"), overwrite = true)
+    }
+}
+
+androidComponents {
+    onVariants { variant ->
+        val copy = tasks.register<CopyPhraseAllowlist>("copy${variant.name.replaceFirstChar { it.uppercase() }}PhraseAllowlist") {
+            allowlist.set(rootProject.layout.projectDirectory.file("audit/d7b-phrase-allowlist.txt"))
+        }
+        variant.sources.resources?.addGeneratedSourceDirectory(copy, CopyPhraseAllowlist::outputDir)
+    }
+}
+
+// Robolectric loads the full curriculum and retains Android sandboxes between
+// classes. Give each worker room for those fixtures and bound sandbox retention.
+tasks.withType<Test>().configureEach {
+    maxHeapSize = "3g"
+    maxParallelForks = 1
+    forkEvery = 8L
+    failFast = false
+    val configuredTemp = providers.gradleProperty("hostTestTempRoot")
+        .orElse(providers.environmentVariable("RC_TEST_TEMP")).orNull
+    val shortTemp = configuredTemp?.let { rootProject.file(it) }
+        ?: if (System.getProperty("os.name").startsWith("Windows"))
+            File(System.getProperty("java.io.tmpdir")).toPath().root.resolve("rc-test-tmp").toFile()
+        else null
+    if (shortTemp != null) systemProperty("java.io.tmpdir", shortTemp.absolutePath)
+    doFirst {
+        if (shortTemp != null) {
+            check(shortTemp.isDirectory || shortTemp.mkdirs()) {
+                "Cannot create short host test temp root $shortTemp; set -PhostTestTempRoot to a writable short path"
+            }
+            logger.lifecycle("Host test temp root: ${shortTemp.absolutePath}")
+        }
+        logger.lifecycle("Host test resources: heap=$maxHeapSize, forks=$maxParallelForks, recycle after $forkEvery classes")
+    }
+}
+
 tasks.register<JavaExec>("checkReleaseGate") {
     group = "verification"
     description = "Refuses a public release until the packaged catalog and retained-evidence manifest clear the release gate."
@@ -69,6 +119,43 @@ tasks.register<JavaExec>("checkReleaseGate") {
         if (exitValue != 0 || !text.startsWith("APPROVED")) {
             throw GradleException("Public release is not approved.\n$text")
         }
+    }
+}
+
+// Explicit authoring checks, separate from startup validation and release acceptance.
+// A fresh output path prevents accidental replacement of retained verification evidence.
+for ((taskName, strict) in listOf("reportCurriculumDesign" to false, "checkCurriculumDesign" to true)) {
+    tasks.register<JavaExec>(taskName) {
+        group = "verification"
+        description = if (strict) "Reports curriculum design signals and fails while any remain unresolved."
+            else "Writes assessment/teaching diagnostics without claiming curriculum acceptance."
+        val compileKotlin = tasks.named("compileDebugKotlin")
+        dependsOn(compileKotlin)
+        workingDir = rootProject.layout.projectDirectory.asFile
+        mainClass.set("dev.russiancompanion.v2.curriculum.CurriculumDesignCliKt")
+        classpath(compileKotlin.map { it.outputs.files }, configurations.named("debugRuntimeClasspath"), androidComponents.sdkComponents.bootClasspath)
+        doFirst {
+            val reportPath = providers.gradleProperty("curriculumDesignOutput").orNull
+                ?: throw GradleException("Provide -PcurriculumDesignOutput=/absolute/fresh-report.json")
+            args("--input", rootProject.file("app/src/main/assets/content/v2-curriculum.json").absolutePath,
+                "--output", reportPath)
+            if (strict) args("--check")
+        }
+    }
+}
+
+tasks.register<JavaExec>("generateListenCheckSheet") {
+    group = "verification"
+    description = "Writes the offline A2-18 listen-check sheet for one block (-PlistenCheckBlock=1)."
+    val compileKotlin = tasks.named("compileDebugKotlin")
+    dependsOn(compileKotlin)
+    workingDir = rootProject.layout.projectDirectory.asFile
+    mainClass.set("dev.russiancompanion.v2.audio.ListenCheckCliKt")
+    classpath(compileKotlin.map { it.outputs.files }, configurations.named("debugRuntimeClasspath"), androidComponents.sdkComponents.bootClasspath)
+    doFirst {
+        val block = providers.gradleProperty("listenCheckBlock").orNull ?: throw GradleException("Provide -PlistenCheckBlock=1")
+        args("--repo", rootProject.projectDir.absolutePath, "--block", block,
+            "--output", rootProject.file("audit/listen-check/block$block.html").absolutePath)
     }
 }
 

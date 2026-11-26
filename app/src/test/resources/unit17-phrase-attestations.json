@@ -1,0 +1,170 @@
+{
+ "task": "T17b (Claude Code, 2026-11-23)",
+ "phrases": [
+  {
+   "phrase": "Двадцать восьмое августа",
+   "file": "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",
+   "line": 12
+  },
+  {
+   "phrase": "Концерт начинается в шесть часов",
+   "file": "catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html",
+   "line": 224
+  },
+  {
+   "phrase": "Которое яблоко моё",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 168
+  },
+  {
+   "phrase": "Которую книгу вы хотите",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 170
+  },
+  {
+   "phrase": "Который час",
+   "file": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+   "line": 169
+  },
+  {
+   "phrase": "Мы будем свободны в полвторого",
+   "file": "catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html",
+   "line": 242
+  },
+  {
+   "phrase": "Наш рейс уезжает в половине пятого",
+   "file": "catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html",
+   "line": 241
+  },
+  {
+   "phrase": "Он нам позвонил в пятнадцать минут десятого",
+   "file": "catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html",
+   "line": 231
+  },
+  {
+   "phrase": "Она была дома в час",
+   "file": "catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html",
+   "line": 225
+  },
+  {
+   "phrase": "Она обычно приходит на работу без пятнадцати девять",
+   "file": "catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html",
+   "line": 253
+  },
+  {
+   "phrase": "Передача начинается без четверти три",
+   "file": "catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html",
+   "line": 252
+  },
+  {
+   "phrase": "Я приду в четверть восьмого",
+   "file": "catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html",
+   "line": 230
+  },
+  {
+   "phrase": "без двадцати пяти два",
+   "file": "catalog/sources/readyrussian/grammar20.html",
+   "line": 151
+  },
+  {
+   "phrase": "без четверти восемь",
+   "file": "catalog/sources/units-16-20/wikipedia/date-time-country-1366690592.txt",
+   "line": 41
+  },
+  {
+   "phrase": "в двенадцать часов десять минут",
+   "file": "catalog/sources/readyrussian/grammar20.html",
+   "line": 118
+  },
+  {
+   "phrase": "в десять минут первого",
+   "file": "catalog/sources/readyrussian/grammar20.html",
+   "line": 119
+  },
+  {
+   "phrase": "в пятнадцать минут второго",
+   "file": "catalog/sources/readyrussian/grammar20.html",
+   "line": 127
+  },
+  {
+   "phrase": "в час пятнадцать минут",
+   "file": "catalog/sources/readyrussian/grammar20.html",
+   "line": 126
+  },
+  {
+   "phrase": "в час тридцать пять минут",
+   "file": "catalog/sources/readyrussian/grammar20.html",
+   "line": 150
+  },
+  {
+   "phrase": "восемнадцатую девушку",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 139
+  },
+  {
+   "phrase": "два года",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 118
+  },
+  {
+   "phrase": "два часа",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 110
+  },
+  {
+   "phrase": "двадцать лет",
+   "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+   "line": 38
+  },
+  {
+   "phrase": "две минуты",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 127
+  },
+  {
+   "phrase": "мне двадцать лет",
+   "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+   "line": 38
+  },
+  {
+   "phrase": "один год",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 94
+  },
+  {
+   "phrase": "один час",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 109
+  },
+  {
+   "phrase": "одна минута",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 126
+  },
+  {
+   "phrase": "пять лет",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 121
+  },
+  {
+   "phrase": "пять минут",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 130
+  },
+  {
+   "phrase": "пять часов",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 111
+  },
+  {
+   "phrase": "сорок один год",
+   "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+   "line": 94
+  },
+  {
+   "phrase": "четверть восьмого",
+   "file": "catalog/sources/units-16-20/wikipedia/date-time-country-1366690592.txt",
+   "line": 41
+  }
+ ]
+}

@@ -7,6 +7,7 @@ import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.assertTextContains
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
 import androidx.activity.ComponentActivity
 import androidx.compose.ui.test.junit4.v2.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithTag
@@ -331,7 +332,7 @@ class FullAuditCorrectionTest {
         val target = continueTarget(pack, store.v2LearnerView())
         compose.onNodeWithText(target.title).assertIsDisplayed()
         compose.onNodeWithText("Progress").performClick()
-        compose.onNodeWithText(objective.title, substring = true).performScrollTo().assertIsDisplayed()
+        compose.onAllNodesWithText(objective.title, substring = true).onFirst().performScrollTo().assertIsDisplayed()
     }
 
     @Test

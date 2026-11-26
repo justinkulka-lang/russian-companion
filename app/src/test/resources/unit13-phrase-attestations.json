@@ -1,0 +1,55 @@
+{
+ "task": "T16c (Claude Code, 2026-11-21)",
+ "phrases": [
+  {
+   "phrase": "Когда́ я бу́ду в Москве́",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 31
+  },
+  {
+   "phrase": "Он сказа́л",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 22
+  },
+  {
+   "phrase": "Она́ сказа́ла",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 30
+  },
+  {
+   "phrase": "Я скажу ему ве́чером",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 29
+  },
+  {
+   "phrase": "что он англича́нин",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 22
+  },
+  {
+   "phrase": "что он был англича́нином",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 22
+  },
+  {
+   "phrase": "что она́ ска́жет ему́ ве́чером",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 30
+  },
+  {
+   "phrase": "я бу́ду говори́ть то́лько по-ру́сски",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 31
+  },
+  {
+   "phrase": "я прочитал",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 4
+  },
+  {
+   "phrase": "я читал",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 4
+  }
+ ]
+}

@@ -31,19 +31,6 @@ class Units1115MappingGapTest {
         15 to "Requests, the imperative, and consolidation of aspect use",
     )
 
-    private val preservedContentDigests = mapOf(
-        1 to "9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a",
-        2 to "d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b",
-        3 to "deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86",
-        4 to "5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c",
-        5 to "9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d",
-        6 to "fa6501022bd7ff4a2eca1e47c0ad488d96254cab0eafbecc61a8420835a3ab9c",
-        7 to "ec283b3bc0e58306d84e536947ab747d5ea264cea729bf4838124404ca958359",
-        8 to "e1dd456abf8a7b961f2f8471f35d4178961a53147c354f3e410e88d75f025c78",
-        9 to "d0f135c408fc429392cf695a8122134013fca69637a4f9c1587db3fec6b3c65f",
-        10 to "6845b398da6ad901b06443dd0f56ee6ace4ba4e2da6af9e36d33934dc286c526",
-    )
-
     @Test
     fun unitsElevenThroughFifteenRecordPendingMappingAndReviewPendingContent() {
         val pack = pack()
@@ -56,7 +43,11 @@ class Units1115MappingGapTest {
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(pages.getValue(number)))
-            assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // T16-n1 (D28c): Units 1-12 mapping notes are plain learner text; the pending status stays in mappingStatus (asserted
+            // above). Units 13-15 keep their notes until their own unit tasks (was assertTrue for 11-15).
+            // T16c: Unit 13's note follows the Units 1-12 style too (was number <= 12); T16d: Unit 14 too (was <= 13); T16e: Unit 15 too (was <= 14).
+            if (number <= 15) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            else assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertTrue(unit.sessions.isNotEmpty())
             assertTrue(unit.objectives.any { it.kind == "RECOGNITION" })
@@ -66,7 +57,8 @@ class Units1115MappingGapTest {
             assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
             assertNull(facts.isbn)
             assertEquals("UNRESOLVED", facts.isbnObservation)
-            assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
+            assertTrue(pack.ownedEditionMappings.filter { it.unitNumber == number }.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+            assertEquals(1, pack.ownedEditionMappings.count { it.unitNumber == number })
             assertTrue(pack.provenanceRecords.any { it.unitNumber == number })
         }
         assertTrue(pack.units.drop(25).all { it.installState == "DEVELOPMENT" && it.sessions.isNotEmpty() })
@@ -79,15 +71,19 @@ class Units1115MappingGapTest {
     @Test
     fun preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded() {
         val pack = pack()
-        preservedContentDigests.forEach { (number, digest) ->
-            assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
-        }
+        assertEquals(
+            // T15e: the Unit 3 gender prompts no longer narrate the dictionary (was e6159274...).
+            // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
+            // T17g expectation change, old -> new: 81f65bc5 -> c5166e9b (Unit 3 binder task own-table wording (column lint)).
+            "c5166e9b288371b8333d2b8393e32fedc80ac2d415d74dd812b46dcacb7564a4",
+            V2Validator.unitContentReviewDigest(pack, 3),
+        )
         val shifted = pack.copy(
             units = pack.units.map { unit ->
                 if (unit.number != 11) unit else unit.copy(mappingNote = unit.mappingNote + " extra gap note")
             },
         )
-        preservedContentDigests.keys.forEach { number ->
+        (1..10).forEach { number ->
             assertEquals(V2Validator.unitContentReviewDigest(pack, number), V2Validator.unitContentReviewDigest(shifted, number))
         }
         assertFalse(V2Validator.unitContentReviewDigest(pack, 11) == V2Validator.unitContentReviewDigest(shifted, 11))

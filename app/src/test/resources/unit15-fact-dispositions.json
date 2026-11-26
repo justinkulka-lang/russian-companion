@@ -1,0 +1,484 @@
+{
+ "task": "T16e (Claude Code, 2026-11-22); dispositions from audit/prep/units-13-15-prep-at-4c402ef7.txt and units-13-15-prep-unit-15-remainder.txt, Unit 15 section 3, and audit/prep/s1-claim-verification.csv",
+ "totals": {
+  "MARK": 7,
+  "REWORD": 12,
+  "REMOVE": 2
+ },
+ "entries": [
+  {
+   "entry": "U15-E01",
+   "csvLine": 1593,
+   "ownerId": "u15-g-imperative-0",
+   "field": "item feedback",
+   "baselineSentence": "It extends the shown singular form with the plural/polite ending.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16e-u15-rg1169",
+    "prov-t16e-u15-pn58",
+    "prov-ex-or-u15-imperative-0",
+    "prov-ex-or-u15-imperative-1"
+   ],
+   "reason": "Retained exact sentence; marker cites russian-grammar:1169 (claim span), povelitelnoe-naklonenie:58 (S1) and verbs.csv чита́ть imperative fields."
+  },
+  {
+   "entry": "U15-E02",
+   "csvLine": 1595,
+   "ownerId": "u15-g-imperative-0",
+   "field": "item feedback",
+   "baselineSentence": "This identifies the supplied form, not every possible way to express a command.",
+   "disposition": "REWORD",
+   "replacement": "Use the imperative form shown here.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Assessment-scope commentary removed (report section 3); the prep's instruction \"Use the imperative form requested here\" is written without \"requested here\" (widened lint)."
+  },
+  {
+   "entry": "U15-E03",
+   "csvLine": 1600,
+   "ownerId": "u15-st-rem-imperative",
+   "field": "remediation body",
+   "baselineSentence": "It extends the shown singular form with the plural/polite ending.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16e-u15-rg1169",
+    "prov-t16e-u15-pn58",
+    "prov-ex-or-u15-imperative-0",
+    "prov-ex-or-u15-imperative-1"
+   ],
+   "reason": "Retained exact sentence; marker cites russian-grammar:1169 (claim span), povelitelnoe-naklonenie:58 (S1) and verbs.csv чита́ть imperative fields."
+  },
+  {
+   "entry": "U15-E04",
+   "csvLine": 1602,
+   "ownerId": "u15-st-rem-imperative",
+   "field": "remediation body",
+   "baselineSentence": "This identifies the supplied form, not every possible way to express a command.",
+   "disposition": "REWORD",
+   "replacement": "Use the imperative form shown here.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Assessment-scope commentary removed (report section 3); the prep's instruction is written without \"requested here\" (widened lint)."
+  },
+  {
+   "entry": "U15-E05",
+   "csvLine": 1605,
+   "ownerId": "u15-st-rem-imperative",
+   "field": "remediation body",
+   "baselineSentence": "The cue shows the plural/polite form, while this question asks for the singular imperative table row.",
+   "disposition": "REWORD",
+   "replacement": "The cue shows the plural/polite imperative; choose the singular imperative.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Table-row narration removed (report section 3); the D31c sweep instruction replaces the prep's \"Choose the requested singular form\" (widened lint)."
+  },
+  {
+   "entry": "U15-E06",
+   "csvLine": 1608,
+   "ownerId": "u15-st-rem-imperative",
+   "field": "remediation body",
+   "baselineSentence": "Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+   "disposition": "MARK",
+   "currentSentence": "Both are imperative forms of the shown infinitive; the singular form is informal, while spelling alone does not identify the actual number of listeners.",
+   "sourceRecordIds": [
+    "prov-t16e-u15-rg1169",
+    "prov-ex-or-u15-imperative-0",
+    "prov-ex-or-u15-imperative-1"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U15-E07",
+   "csvLine": 1611,
+   "ownerId": "u15-st-rem-imperative",
+   "field": "remediation body",
+   "baselineSentence": "— Please, buy fresh fruits.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16e-u15-c81"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U15-E08",
+   "csvLine": 1614,
+   "ownerId": "u15-i-imperative-1",
+   "field": "item feedback",
+   "baselineSentence": "The cue shows the plural/polite form, while this question asks for the singular imperative table row.",
+   "disposition": "REWORD",
+   "replacement": "The cue shows the plural/polite imperative; choose the singular imperative.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Table-row narration removed (report section 3); the D31c sweep instruction replaces the prep's \"Choose the requested singular form\" (widened lint)."
+  },
+  {
+   "entry": "U15-E09",
+   "csvLine": 1618,
+   "ownerId": "u15-i-imperative-2",
+   "field": "item feedback",
+   "baselineSentence": "Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+   "disposition": "REWORD",
+   "replacement": "Both are imperative forms of the same imperfective verb.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16e-u15-v-17e671fa-aspect",
+    "prov-ex-or-u15-imperative-0",
+    "prov-ex-or-u15-imperative-1"
+   ],
+   "reason": "u15-i-imperative-2 now asks for the plural imperative (prep section 1, constant-key repair); the sentence states what both forms share (verbs.csv чита́ть aspect and imperative fields)."
+  },
+  {
+   "entry": "U15-E10",
+   "csvLine": 1622,
+   "ownerId": "u15-g-say-request-0",
+   "field": "item feedback",
+   "baselineSentence": "The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.",
+   "disposition": "REWORD",
+   "replacement": "Copy the displayed stress.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "The generalized pragmatics claim is removed; the exact imperative stress is in verbs.csv сказа́ть (report section 3)."
+  },
+  {
+   "entry": "U15-E11",
+   "csvLine": 1625,
+   "ownerId": "u15-st-rem-say-request",
+   "field": "remediation body",
+   "baselineSentence": ") - 'to say, speak, tell'",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "The malformed gloss fragment is removed; u15-st-teach-say-request-2 gives the complete pairing and gloss of verbal-aspect:42."
+  },
+  {
+   "entry": "U15-E12",
+   "csvLine": 1627,
+   "ownerId": "u15-i-say-request-1",
+   "field": "item feedback",
+   "baselineSentence": "It can address multiple people or one person politely.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16e-u15-rg1169",
+    "prov-t16e-u15-pn58"
+   ],
+   "reason": "Retained exact sentence; marker cites russian-grammar:1169 (claim span) and povelitelnoe-naklonenie:58 (S1)."
+  },
+  {
+   "entry": "U15-E13",
+   "csvLine": 1632,
+   "ownerId": "u15-i-say-request-2",
+   "field": "item feedback",
+   "baselineSentence": "The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.",
+   "disposition": "MARK",
+   "currentSentence": "The cue shows the plural/polite imperative; choose the singular imperative of the same say/tell verb, keeping meaning and aspect the same.",
+   "sourceRecordIds": [
+    "prov-ex-or-u15-say-request-0",
+    "prov-ex-or-u15-say-request-1",
+    "prov-t16e-u15-v-718aaa0c-aspect"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  },
+  {
+   "entry": "U15-E14",
+   "csvLine": 1636,
+   "ownerId": "u15-g-aspect-consolidate-0",
+   "field": "item feedback",
+   "baselineSentence": "This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.",
+   "disposition": "REWORD",
+   "replacement": "Use the saying/telling pair shown here.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3)."
+  },
+  {
+   "entry": "U15-E15",
+   "csvLine": 1639,
+   "ownerId": "u15-st-rem-aspect-consolidate",
+   "field": "remediation body",
+   "baselineSentence": "The short English label beside both examples does not mean that every use of speaking has this same partner.",
+   "disposition": "REWORD",
+   "replacement": "Use the saying/telling pair shown here.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3)."
+  },
+  {
+   "entry": "U15-E16",
+   "csvLine": 1641,
+   "ownerId": "u15-st-rem-aspect-consolidate",
+   "field": "remediation body",
+   "baselineSentence": "Preserve their supplied spelling and stress.",
+   "disposition": "REWORD",
+   "replacement": "Copy each displayed form carefully.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3)."
+  },
+  {
+   "entry": "U15-E17",
+   "csvLine": 1642,
+   "ownerId": "u15-st-rem-aspect-consolidate",
+   "field": "remediation body",
+   "baselineSentence": "This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.",
+   "disposition": "REWORD",
+   "replacement": "Adding a prefix does not always produce the partner of a verb; learn each pair as it is taught.",
+   "replacementKind": "MARKED",
+   "sourceRecordIds": [
+    "prov-t16e-u15-b25",
+    "prov-t16e-u15-b26",
+    "prov-t16e-u15-b27",
+    "prov-t16e-u15-b28",
+    "prov-t16e-u15-b29"
+   ],
+   "reason": "\"does not establish\" is A2-26 assessment commentary (widened lint); the prefix fact stays marked on verbal-aspect:25-29."
+  },
+  {
+   "entry": "U15-E18",
+   "csvLine": 1643,
+   "ownerId": "u15-st-rem-aspect-consolidate",
+   "field": "remediation body",
+   "baselineSentence": "These choices ask for members of the supplied infinitive pairs.",
+   "disposition": "REWORD",
+   "replacement": "Identify each member of the two infinitive pairs.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3); the D31c sweep instruction replaces the prep's \"Choose the requested partner\" (widened lint)."
+  },
+  {
+   "entry": "U15-E19",
+   "csvLine": 1644,
+   "ownerId": "u15-st-rem-aspect-consolidate",
+   "field": "remediation body",
+   "baselineSentence": "Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Assessment-scope commentary removed (report section 3). The contextual skill is a documented gap (owner decision D4): the teaching directs aspect in requests to the book."
+  },
+  {
+   "entry": "U15-E20",
+   "csvLine": 1647,
+   "ownerId": "u15-i-aspect-consolidate-1",
+   "field": "item feedback",
+   "baselineSentence": "The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.",
+   "disposition": "REWORD",
+   "replacement": "Identify the imperfective member of the verb pair while keeping the meaning the same.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Reworded to an instruction (report section 3); the D31c sweep instruction replaces the prep's \"Use the requested pair and aspect\" (widened lint)."
+  },
+  {
+   "entry": "U15-E21",
+   "csvLine": 1651,
+   "ownerId": "u15-i-aspect-consolidate-2",
+   "field": "item feedback",
+   "baselineSentence": "Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t16e-u15-b25",
+    "prov-t16e-u15-b26",
+    "prov-t16e-u15-b27",
+    "prov-t16e-u15-b28",
+    "prov-t16e-u15-b29"
+   ],
+   "reason": "Retained exact sentence; marker cites frozen-source records."
+  }
+ ],
+ "markerReviews": [
+  {
+   "ownerId": "u15-g-imperative-0",
+   "sentence": "It extends the shown singular form with the plural/polite ending.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1169,
+     "quote": "The [[imperative mood]] second-person singular is formed from the future-present base of most verbs by adding -и (stress"
+    },
+    {
+     "file": "catalog/sources/s1-intake/ruwiki/povelitelnoe-naklonenie-152579064.txt",
+     "line": 58,
+     "quote": "Форма множественного числа образуется путём присоединения [[постфикс]]а ''-те'': ''верь'' — верьте'', ''ляг'' — ''лягте'"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 62,
+     "quote": "читать\tчита'ть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u15-i-imperative-2",
+   "sentence": "Both are imperative forms of the same imperfective verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 62,
+     "quote": "читать\tчита'ть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u15-i-say-request-1",
+   "sentence": "It can address multiple people or one person politely.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1169,
+     "quote": "The [[imperative mood]] second-person singular is formed from the future-present base of most verbs by adding -и (stress"
+    },
+    {
+     "file": "catalog/sources/s1-intake/ruwiki/povelitelnoe-naklonenie-152579064.txt",
+     "line": 58,
+     "quote": "Форма множественного числа образуется путём присоединения [[постфикс]]а ''-те'': ''верь'' — верьте'', ''ляг'' — ''лягте'"
+    }
+   ]
+  },
+  {
+   "ownerId": "u15-i-say-request-1",
+   "sentence": "Select the plural imperative of this verb; its dictionary form is an infinitive, not a command.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 30,
+     "quote": "дать\tдать"
+    }
+   ]
+  },
+  {
+   "ownerId": "u15-i-say-request-2",
+   "sentence": "The cue shows the plural/polite imperative; choose the singular imperative of the same say/tell verb, keeping meaning and aspect the same.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 3,
+     "quote": "сказать\tсказа'ть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u15-i-aspect-consolidate-2",
+   "sentence": "Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 28,
+     "quote": ": '''договариваться''' (impf.) and '''договориться''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 29,
+     "quote": "In other words, the easiest way to remember aspectual pairs is to learn the imperfective and learn the 'perfective prefi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u15-st-rem-imperative",
+   "sentence": "It extends the shown singular form with the plural/polite ending.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1169,
+     "quote": "The [[imperative mood]] second-person singular is formed from the future-present base of most verbs by adding -и (stress"
+    },
+    {
+     "file": "catalog/sources/s1-intake/ruwiki/povelitelnoe-naklonenie-152579064.txt",
+     "line": 58,
+     "quote": "Форма множественного числа образуется путём присоединения [[постфикс]]а ''-те'': ''верь'' — верьте'', ''ляг'' — ''лягте'"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 62,
+     "quote": "читать\tчита'ть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u15-st-rem-imperative",
+   "sentence": "Both are imperative forms of the shown infinitive; the singular form is informal, while spelling alone does not identify the actual number of listeners.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+     "line": 1169,
+     "quote": "The [[imperative mood]] second-person singular is formed from the future-present base of most verbs by adding -и (stress"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 62,
+     "quote": "читать\tчита'ть"
+    }
+   ]
+  },
+  {
+   "ownerId": "u15-st-rem-imperative",
+   "sentence": "— Please, buy fresh fruits.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+     "line": 81,
+     "quote": ":*  Купи, пожалуйста, свежие фрукты.- ''' Please, buy fresh fruits.'''"
+    }
+   ]
+  },
+  {
+   "ownerId": "u15-st-rem-aspect-consolidate",
+   "sentence": "Adding a prefix does not always produce the partner of a verb; learn each pair as it is taught.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 25,
+     "quote": "However, one has to be careful with prefixes. While the perfective can be formed by a prefix, other prefixes can be appl"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 26,
+     "quote": ": '''говорить''' (impf.) and '''сказать''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 27,
+     "quote": ": '''отговаривать''' (impf.) and '''отговорить''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 28,
+     "quote": ": '''договариваться''' (impf.) and '''договориться''' (pf.)"
+    },
+    {
+     "file": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+     "line": 29,
+     "quote": "In other words, the easiest way to remember aspectual pairs is to learn the imperfective and learn the 'perfective prefi"
+    }
+   ]
+  },
+  {
+   "ownerId": "u15-st-rem-aspect-consolidate",
+   "sentence": "Each imperative keeps the aspect of its verb.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 19,
+     "quote": "делать\tде'лать"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/verbs.csv",
+     "line": 20,
+     "quote": "сделать\tсде'лать"
+    }
+   ]
+  }
+ ],
+ "markerReviewsNote": "Each Unit 15 marker with no Cyrillic word names the frozen files and lines of its cited records: a page line by number and exact quote, an OpenRussian row by its bare and accented headwords. Lines are 1-based."
+}

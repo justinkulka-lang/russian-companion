@@ -1,0 +1,535 @@
+{{also|за-|Appendix:Variations of "za"}}
+
+==Belarusian==
+
+===Alternative forms===
+* {{alt|be|za||Łacinka (Belarusian Latin alphabet)}}
+
+===Etymology===
+{{inh+|be|zle-ort|за}}, from {{inh|be|sla-pro|*za}}. Cognate with {{cog|uk|за}}, {{cog|ru|за}}, {{cog|pl|za}}.
+
+===Pronunciation===
+* {{be-IPA|за}}
+* {{hyph|be|за}}
+
+===Preposition===
+{{head|be|preposition}}
+
+# {{+obj|be|acc|catpos=prep}}
+## {{lb|be|of motion}} [[behind]], [[beyond]], [[past]] {{gloss|to the other side of}}
+## {{lb|be|of motion}} [[at]], [[to]] {{gloss|to a place next to something, or to begin an activity}}
+## [[by]] {{gloss|indicating the part that is grasped or touched}}
+## [[for]] {{gloss|in exchange for; at the price of}}
+## [[for]], [[in favour of]]
+## [[for]] {{gloss|because of, in reward or punishment for}}
+## [[than]] {{gloss|with comparatives}}
+##: {{uxi|be|старэ́йшы за бра́та|older than one's brother}}
+## [[over]], [[past]] {{gloss|exceeding a limit}}
+## [[in]], [[within]], [[during]] {{gloss|over a period of time}}
+## {{lb|be|with {{m|be|да}}}} [[before]] {{gloss|a given time before an event}}
+## [[away]] {{gloss|at a distance of}}
+## [[instead of]], [[for]]; [[as]]
+## {{lb|be|of a woman's marriage}} [[to]] {{gloss|in {{m|be|вы́йсці за́муж за||to marry}}}}
+## {{lb|be|of profession}} [[as]], to be {{gloss|in {{m|be|вучы́цца за||to study to be}}}}
+# {{+obj|be|ins|catpos=prep}}
+## {{lb|be|of location}} [[behind]], [[beyond]], on the other side of
+## [[at]] {{gloss|next to something; engaged in an activity}}
+## [[after]] {{gloss|in succession}}
+## [[for]] {{gloss|in order to fetch or obtain}}
+## [[after]], [[over]] {{gloss|with verbs of watching and caring}}
+## [[under]], in the time of
+## [[up to]], [[with]] {{gloss|indicating whose turn, responsibility or debt something is}}
+## [[with]], [[under]] {{gloss|bearing a signature, number, etc.}}
+## [[because of]]
+
+===References===
+* {{R:be:TSBM|за}}
+* {{R:be:ESBM|за||3|za}}
+
+==Bulgarian==
+
+===Etymology===
+{{ety|bg|:inh|sla-pro:*za|text=+|tree=1}}
+
+===Pronunciation===
+* {{audio|bg|LL-Q7918 (bul)-Kiril kovachev-за.wav}}
+* {{qualifier|stressed}} {{bg-IPA}}
+* {{qualifier|unstressed}} {{IPA|bg|[zə]}}
+
+===Preposition===
+{{head|bg|preposition}}
+
+# {{n-g|used to indicate the place someone or something is going to or toward}}; [[for#Preposition|for]], [[to#Preposition|to]]
+#: {{ux|bg|[[заминавам|Заминавам]] '''за''' [[Англия]].|I am leaving '''for''' England.}}
+#: {{ux|bg|[[пътувам|Пътувам]] '''за''' [[Варна]]|I am travelling '''to''' Varna.}}
+#: {{ux|bg|[[кога|Кога]] [[е]] [[следващият]] [[влак]] '''за''' [[Лондон]]?|When's the next train '''for''' London?}}
+# {{n-g|used to indicate an amount of time}}; [[for#Preposition|for]], [[in#Preposition|in]], [[during#Preposition|during]]
+#: {{ux|bg|[[ще|Ще]] [[остана]] [[тук]] '''за''' [[известно]] [[време]].|I'll stay here '''for''' a while.}}
+#: {{ux|bg|[[отивам|Отивам]] [[на]] [[почивка]] '''за''' [[няколко]] [[дни]].|I'm going on holiday '''for''' a few days.}}
+#: {{ux|bg|[[ще|Ще]] [[свърша]] [[тази]] [[работа]] '''за''' [[един]] [[ден]].|I shall do this work '''in''' a day.}}
+#: {{ux|bg|[[той|Той]] [[пробяга]] [[сто]] [[метра]] '''за''' [[единадесет]] [[секунди]].|He ran a hundred metres '''in''' eleven seconds.}}
+#: {{ux|bg|'''За''' [[последните]] [[пет]] [[години]] [[инфлацията]] [[се]] [[е]] [[покачила]] [[с]] 8%.|'''During''' the last five years inflation has risen by 8%.}}
+# {{n-g|used to indicate the time when something is arranged or intended to happen}}; [[for#Preposition|for]]
+#: {{ux|bg|[[сватбата|Сватбата]] [[е]] [[насрочена]] '''за''' [[следващия]] [[април]].|The wedding is planned '''for''' next April.}}
+#: {{ux|bg|[[среща]] '''за''' 12 [[май]]|an appointment '''for''' May 12}}
+# {{n-g|used to show the occasion when something happens}}; [[for#Preposition|for]]
+#: {{ux|bg|[[прибирам|Прибирам]] [[се]] '''за''' [[Коледа]].|I'm coming home '''for''' Christmas.}}
+# {{n-g|used to indicate the order of occurrence of an action or event}}; [[for#Preposition|for]]
+#: {{ux|bg|'''За''' [[пръв]] [[път]] [[в]] [[човешката]] [[история]] [[имаме]] [[изглед]] [[на]] [[цялото]] [[слънце]].|'''For''' the first time in human history we have a view of the entire Sun.}}
+#: {{ux|bg|'''За''' [[последен]] [[път]], [[моля]] [[те]], [[престани]]!|'''For''' the last time, please stop!}}
+# {{n-g|used to indicate the time that a statement refers to}}; [[for#Preposition|for]]
+#: {{ux|bg|[[това|Това]] [[е]] [[всичко]] '''за''' [[сега]]/[[днес]].|That's all '''for''' now/today.}}
+# {{n-g|used to indicate the part of something/somebody that is held, grasped, etc. or to show that something is attached to something else}}; [[by#Preposition|by]], [[to#Preposition|to]]
+#: {{ux|bg|[[той|Той]] [[хвана]] [[лопатата]] '''за''' [[дръжката]]|He grasped the shovel '''by''' the handle.}}
+#: {{ux|bg|[[тя|Тя]] [[го]] [[сграбчи]] '''за''' [[ръката]].|She grabbed him '''by''' the arm.}}
+#: {{ux|bg|[[той|Той]] [[завърза]] [[каишката]] [[на]] [[кучето]] '''за''' [[стълба]].|He tied the dog's leash '''to''' the post.}}
+#: {{ux|bg|[[държа]] [[се]] '''за''' [[перилата]]|to hold on '''to''' the bannister/to hold the rail}}
+# {{n-g|on the subject of somebody/something, in connection with somebody/something}}; [[about#Preposition|about]]
+#: {{ux|bg|'''За''' [[какво]] [[си]] [[мислиш]]?|What are you thinking '''about'''?}}
+#: {{ux|bg|[[тревожа|Тревожа]] [[се]] '''за''' [[нея]].|I'm worried '''about''' her.}}
+#: {{ux|bg|[[тя|Тя]] [[ми]] [[разказа]] [[всичко]] '''за''' [[ваканцията]] [[си]].|She told me all '''about''' her vacation.}}
+#: {{ux|bg|[[книги]] '''за''' [[птици]]|books '''about''' birds}}
+#: {{ux|bg|[[роман]] '''за''' [[Испания]]|a novel '''about''' Spain}}
+# {{n-g|used to indicate the person that a statement refers to}}; [[for#Preposition|for]], [[to#Preposition|to]]
+#: {{ux|bg|'''За''' [[него]] [[е]] [[важно]] [[да]] [[има]] [[пари]].|It's important '''for''' him to have money.}}
+#: {{ux|bg|[[ще|Ще]] [[е]] [[по-]][[добре]] '''за''' [[теб]], [[ако]] [[си]] [[държиш]] [[устата]] [[затворена]].|It will be better '''for''' you if you keep your mouth shut.}}
+#: {{ux|bg|[[това|Това]] [[е]] [[важно]]/[[интересно]]/[[полезно]] '''за''' [[нас]].|It is of importance/interest/use '''to''' us.}}
+#: {{ux|bg|[[това|Това]] [[е]] [[ново]] '''за''' [[мен]].|This is quite new '''to''' me.}}
+# {{n-g|used to indicate the person who should use or have something}}; [[for#Preposition|for]]
+#: {{ux|bg|[[има|Има]] [[писно]] '''за''' [[теб]].|There's a letter '''for''' you.}}
+#: {{ux|bg|[[това|Това]] [[е]] [[книга]] '''за''' [[деца]].|It's a book '''for''' children.}}
+#: {{ux|bg|[[тази|Тази]] [[работа]] [[не]] [[е]] '''за''' [[мен]].|That job is not '''for''' me.}}
+# {{n-g|used to indicate the thing that something is meant to be used with}}; [[for#Preposition|for]]
+#: {{ux|bg|[[купихме|Купихме]] [[нова]] [[маса]] '''за''' [[трапезарията]].|We bought a new table '''for''' the dining room.}}
+#: {{ux|bg|[[тези|Тези]] [[гуми]] '''за''' [[тази]] [[кола]] [[ли]] [[са]]?|Are these the tires '''for''' this car?}}
+#: {{ux|bg|[[тази|Тази]] [[храна]] [[е]] '''за''' [[партито]].|This food is '''for''' the party.}}
+# {{n-g|used to indicate the use of something}}; [[for#Preposition|for]]
+#: {{ux|bg|[[инструмент]] '''за''' [[измерване]] [[на]] [[скорост]]|an instrument '''for''' measuring speed}}
+#: {{ux|bg|[[машина]] '''за''' [[рязане]] [[на]] [[хляб]]|a machine '''for''' slicing bread}}
+#: {{ux|bg|[[вода]] '''за''' [[пиене]]|drinking water}}
+#: {{ux|bg|[[четка]] '''за''' [[зъби]]|toothbrush}}
+# {{n-g|used to indicate purpose}}; [[for#Preposition|for]], [[to#Particle|to]] + [[infinitive]]
+#: {{ux|bg|'''За''' удоволствие ли учиш английски?|Are you learning English '''for''' pleasure?}}
+#: {{ux|bg|[[тя|Тя]] [[се]] [[облича]] '''за''' [[вечеря]].|She's dressing '''for''' dinner.}}
+#: {{ux|bg|[[катерици|Катерици]] [[събираха]] [[орехи]] '''за''' [[зимата]].|Squirrels were storing nuts '''for''' the winter.}}
+#: {{ux|bg|[[уча]] '''за''' [[изпити]]|to study '''for''' examinations}}
+#: {{ux|bg|[[време|Време]] [[е]] '''за''' [[вечеря]].|It’s time '''for''' dinner.}}
+#: {{ux|bg|[[отивам|Отивам]] '''за''' [[хляб]].|I’m going '''to''' get bread.}}
+# {{n-g|used to indicate a reason or cause}}; [[for#Preposition|for]]
+#: {{ux|bg|[[съдят|Съдят]] [[го]] '''за''' убийство.|He is being tried '''for''' murder.}}
+#: {{ux|bg|[[тя|Тя]] [[ми]] [[подари]] [[часовник]] '''за''' [[рождения]] [[ми]] [[ден]].|She gave me a watch '''for''' my birthday.}}
+#: {{ux|bg|[[той|Той]] [[получи]] [[награда]] '''за''' [[храброст]].|He got an award '''for''' bravery.}}
+# {{n-g|in order to help somebody/something}}; [[for#Preposition|for]], [[of#Preposition|of]]
+#: {{ux|bg|[[какво|Какво]] [[мога]] [[да]] [[направя]] '''за''' [[Вас]]?|What can I do '''for''' you?}}
+#: {{ux|bg|[[работим|Работим]] '''за''' [[доброто]] [[на]] [[човечеството]].|We are working '''for''' the good of humanity.}}
+#: {{ux|bg|[[това|Това]] [[е]] '''за''' [[твое]] [[добро]].|This is '''for''' your own good.}}
+#: {{ux|bg|[[те|Те]] [[се]] [[биха]] [[и]] [[умряха]] '''за''' [[страната]] [[си]].|They fought and died '''for''' their country.}}
+#: {{ux|bg|[[грижа]] [[се]] '''за''' [[някого]]|to take care '''of''' someone}}
+# {{n-g|in order to get (something)}}; [[for#Preposition|for]]
+#: {{ux|bg|[[той|Той]] [[дойде]] [[при]] [[мен]] '''за''' [[съвет]].|He came to me '''for''' advice.}}
+#: {{ux|bg|'''За''' [[повече]] [[информация]] [[се]] [[обадете]] [[на]] [[този]] [[номер]].|'''For''' more information, call this number.}}
+# {{n-g|in support of somebody/something}}; [[for#Preposition|for]]
+#: {{ux|bg|'''За''' [[или]] [[против]] [[предложението]] [[си]]?|Are you '''for''' or against the proposal?}}
+#: {{ux|bg|[[гласуваха|Гласуваха]] '''за''' [[независимост]] [[на]] [[референдум]].|They voted '''for''' independence in a referendum.}}
+#: {{ux|bg|'''За''' [[кой]] [[кандидат]] [[си]]?|Which candidate are you '''for'''?}}
+#: {{ux|bg|[[напълно|Напълно]] [[съм]] '''за''' [[свободата]] [[на]] [[словото]].|I am all '''for''' freedom of speech.}}
+# {{n-g|used to indicate the person or thing toward which feelings, thoughts, etc., are directed}}; [[for#Preposition|for]]
+#: {{ux|bg|[[той|Той]] [[жадуваше]] '''за''' [[слава]].|He was hungry '''for''' fame.}}
+#: {{ux|bg|[[те|Те]] [[копнеят]] '''за''' [[дома]] [[си]].|They are longing '''for''' home.}}
+#: {{ux|bg|[[жал|Жал]] [[ми]] [[е]] '''за''' [[него]].|I feel sorry '''for''' him.}}
+#: {{ux|bg|[[безпокоят|Безпокоят]] [[се]] '''за''' [[безопасността]] [[ѝ]].|They are anxious '''for''' her safety.}}
+# {{n-g|in exchange for something}}; [[for#Preposition|for]]
+#: {{ux|bg|[[око]] '''за''' [[око]] [[и]] [[зъб]] '''за''' [[зъб]]|an eye '''for''' an eye and a tooth '''for''' a tooth}}
+#: {{ux|bg|[[копия|Копия]] [[са]] [[достъпни]] '''за''' [[два]] [[долара]] [[всяко]].|Copies are available '''for''' two dollars each.}}
+#: {{ux|bg|[[ще|Ще]] [[си]] [[купя]] [[обувки]] '''за''' 1000 лв.|I'll buy shoes '''for''' 1000 levs.}}
+#: {{ux|bg|[[ще|Ще]] [[разменя]] [[тези]] [[две]] [[бутилки]] '''за''' [[онази]].|I'll swap these two bottles '''for''' that one.}}
+# {{n-g|as an employee, member, player, etc., of something}}; [[for#Preposition|for]]
+#: {{ux|bg|[[тя|Тя]] [[работи]] '''за''' [[правителството]]|She works '''for''' the government.}}
+#: {{ux|bg|[[той|Той]] [[играе]] '''за''' [[Денвър]].|He plays '''for''' Denver.}}
+# {{n-g|considering what can be expected from somebody/something}}; [[for#Preposition|for]]
+#: {{ux|bg|[[времето|Времето]] [[беше]] [[топло]] '''за''' [[този]] [[период]] [[от]] [[годината]].|The weather was warm '''for''' the time of year.}}
+#: {{ux|bg|[[тя|Тя]] [[е]] [[висока]] '''за''' [[възрастта]] [[си]].|She's tall '''for''' her age.}}
+#: {{ux|bg|[[той|Той]] [[не]] [[е]] [[зле]] '''за''' [[начинаещ]].|He's not bad '''for''' a beginner.}}
+#: {{ux|bg|[[той|Той]] [[яде]] '''за''' [[двама]].|He eats '''for''' two.}}
+# {{n-g|used with certain verbs}}
+#: {{ux|bg|[[женя]] [[се]]/[[омъжвам]] [[се]] '''за''' [[някого]]|to marry someone}}
+#: {{ux|bg|[[сгоден]]/[[сгодена]] [[съм]] '''за''' [[някого]]|to be engaged '''to''' someone}}
+#: {{ux|bg|'''За''' [[глупак]] [[ли]] [[ме]] [[мислиш]]?|Do you take me '''for''' a fool?}}
+#: {{ux|bg|[[избраха|Избраха]] [[я]] '''за''' [[капитан]] [[на]] [[отбора]].|They chose her '''as''' the team captain.}}
+#: {{ux|bg|[[той|Той]] [[владее]] [[езика]] [[толкова]] [[добре]], [[че]] [[лесно]] [[може]] [[да]] [[мине]] '''за''' [[германец]].|He speaks the language so well he could easily pass '''for''' a German.}}
+#: {{ux|bg|[[той|Той]] [[се]] [[смята]] '''за''' [[експерт]] [[по]] [[темата]].|He considers himself ('''as''') an expert on the subject.}}
+#: {{ux|bg|[[отговарям]] '''за'''|to be responsible '''for'''/to be in charge '''of'''}}
+# {{n-g|used in certain wishes}}
+#: {{ux|bg|'''За''' [[много]] [[години]]!|Many happy returns (of the day)!}}
+#: {{ux|bg|'''За''' [[твое]] [[здраве]]!|'''To''' your health!}}
+
+===See also===
+* {{l|bg|за да}}
+* {{l|bg|за да не}}
+* {{l|bg|за-}}
+
+===Anagrams===
+* {{anagrams|bg|a=аз|аз}}
+
+==Macedonian==
+
+===Etymology===
+{{inh+|mk|sla-pro|*za}}.
+
+===Pronunciation===
+* {{mk-IPA}}
+
+===Preposition===
+{{head|mk|preposition}}
+
+# [[for]]
+#: {{uxi|mk|[[купив|Купив]] [[подарок]] за [[брат]] [[ти]].|I bought a gift '''for''' your brother.}}
+# [[about]]
+#: {{uxi|mk|[[веќе|Веќе]] [[не]] зборуваме [[за]] [[тебе]].|We're not talking '''about''' you anymore.}}
+# in [[exchange]] for, at the [[price]] of
+
+==Mongolian==
+
+===Etymology===
+{{rfe|mn|is it a cognate of Manchu {{l|mnc|ᠵᡝ}}?}}
+
+===Pronunciation===
+* {{IPA|mn|/tsaː/|}}
+
+===Interjection===
+{{mn-head|intj|ᠵᠠ}}
+
+# [[okay]]; [[alright]]
+
+==Pannonian Rusyn==
+
+===Etymology===
+{{ety|rsk|:inh|zlw-osk:za<ety:inh<sla-pro:*za>>|text=2|tree=1}} Cognates include {{cog|rue|за}} and {{cog|sk|za}}.
+
+===Pronunciation===
+* {{rsk-IPA}}
+* {{rhymes|rsk|a|s=1}}
+* {{hyph|rsk|за}}
+* {{homophones|rsk|за-}}
+
+===Preposition===
+{{head|rsk|preposition}}
+
+# [[during]], [[while]], [[in]] {{gl|denotes simultaneity}} {{+obj|rsk|gen}}
+#: {{syn|rsk|под час}}
+#: {{uxa|rsk|зробел вельо '''за''' живота|he did a lot '''in''' his life}}
+#: {{uxa|rsk|'''за''' роси|'''while''' there is still dew}}
+#: {{uxa|rsk|'''за''' жимушнїх вечарох|'''during''' winter evenings}}
+#: {{uxa|rsk|'''за''' панованя краля|'''during''' the reign of the king}}
+# [[behind]] {{gl|denotes direction behind something}} {{+obj|rsk|acc}}
+#: {{ant|rsk|пред}}
+#: {{uxa|rsk|скрил ше '''за''' древо|he hid '''behind''' a tree}}
+#: {{uxa|rsk|слунко зашло '''за''' гору|the sun has set '''behind''' the mountain}}
+# {{lb|rsk|sometimes not translated}} [[for]] {{gl|denotes reason, purpose}} {{+obj|rsk|acc}}
+#: {{syn|rsk|на}}
+#: {{coi|rsk|одац ше '''за''' дакого|to marry someone|lit=to give oneself '''for''' someone}}
+#: {{uxa|rsk|жертвовац ше '''за''' дакого|to sacrifice oneself '''for''' someone}}
+#: {{uxa|rsk|камень '''за''' мурованє хижи|stone '''for''' building a house}}
+#: {{uxa|rsk|шмати '''за''' роботу (до роботи)|work clothes|lit=clothes '''for''' work}}
+#: {{uxa|rsk|мац ше бої '''за''' дзеци|the mother fears '''for''' her children}}
+#: {{uxa|rsk|заплациш ти '''за''' тото|you will pay '''for''' this}}
+#: {{uxa|rsk|офировал пенєжи '''за''' школу|he bequeathed money '''for''' the school}}
+#: {{uxa|rsk|чули зме '''за''' ньго же є вредни|we heard that he is diligent|lit=we heard '''for''' him that he is diligent}}
+# [[for]] {{gl|denotes goal, target}} {{+obj|rsk|acc}}
+#: {{syn|rsk|ґу}}
+#: {{uxa|rsk|рихта ше '''за''' испит|he is preparing '''for''' the exam}}
+#: {{uxa|rsk|родичи женя сина, рихтаю ше '''за''' свадзбу (ґу свадзби)|parents of the son's wife, preparing '''for''' the wedding}}
+# [[for]], [[up for]] {{gl|denotes ability}} {{+obj|rsk|acc}}
+#: {{uxa|rsk|ти нє '''за''' тоту роботу|you are not '''up for''' this job}}
+# [[for]] {{gl|in support of}} {{+obj|rsk|acc}}
+#: {{ant|rsk|процив}}
+#: {{uxa|rsk|'''за''' и процив|'''for''' and against}}
+# [[for]], [[towards]] {{gl|denotes direction of travel}} {{+obj|rsk|acc}}
+#: {{syn|rsk|до}}
+# {{lb|rsk|of time}} [[in]], [[within]] {{gl|denotes temporal interval}} {{+obj|rsk|acc}}
+#: {{syn|rsk|на|о|до}}
+#: {{uxa|rsk|'''за''' три днї шицко зробел|he did everything '''in''' three days}}
+#: {{uxa|rsk|вона ше '''за''' рок ода|she will get married '''in''' a year}}
+#: {{uxa|rsk|одложел драгу '''за''' пар днї|he postponed the trip '''for''' a couple of days}}
+# {{lb|rsk|obsolete}} [[about]] {{+obj|rsk|acc}}
+#: {{syn|rsk|о}}
+#: {{uxa|rsk|дїдо приповедал унуком '''за''' кральох и юнакох|the grandfather told his grandchildren '''about''' kings and heroes}}
+# [[behind]] {{gl|denotes spatial position}} {{+obj|rsk|instr}}
+#: {{uxa|rsk|'''за''' хижу заграда|the garden is '''behind''' the house}}
+# [[for]], [[to]] {{gl|denotes object}} {{+obj|rsk|instr}}
+#: {{uxa|rsk|бановац '''за''' школскима днями|to grieve '''for''' school days}}
+#: {{uxa|rsk|пойсц '''за''' роботу|to go '''to''' work}}
+
+===References===
+* {{R:rsk:SRS|за|284|1}}
+* {{R:rsk:RSS|+|286}}
+* {{R:rsk:ARS|against|20}}
+* {{R:rsk:ARS|for|118}}
+
+==Russian==
+
+===Etymology===
+{{inh+|ru|sla-pro|*za}}.
+
+===Pronunciation===
+* {{ru-IPA}}
+* {{ru-IPA|zɐ}} {{q|before a stressed syllable}}
+* {{ru-IPA|за́}} {{q|when stressed}}
+* {{audio|ru|Ru-за.ogg}}
+
+===Preposition===
+{{head|ru|preposition}}
+
+# {{+obj|ru|acc|catpos=prep}}
+## {{lb|ru|of motion}} [[to]]
+## {{lb|ru|of time}} [[during]] {{gloss|close to {{l|ru|в течение}}}}
+##: {{uxi|ru|'''за''' [[вре́мя]] [[пребывание|пребыва́ния]] [[в]] [[Москва|Москве́]]|'''during''' his stay in Moscow}}
+##: {{uxi|ru|'''за''' [[последний|после́дние]] [[два́дцать]] [[лет]]|for the past twenty years (lt. '''during''' the last twenty years)}}
+##: {{uxi|ru|'''за́''' [[три]] [[день|дня]]|in three days}}
+## {{lb|ru|of time|with {{m|ru|до}}}} time before an event
+##: {{uxi|ru|'''за''' [[два|две]] [[минута|мину́ты]] [[до]] [[урок|уро́ка]]|2 minutes ('''left''') before the lecture}}
+##: {{uxi|ru|'''за́''' [[день]] до [[отъезд|отъе́зда]]|one day before departure}}
+## [[for]]; [[to]]; [[by]]; [[after]]; [[over]]
+##: {{uxi|ru|[[он|Он]] [[играть|игра́ет]] '''за''' [[команда|кома́нду]] [[а|А]].|He's playing '''for''' team A.}}
+##: {{uxi|ru|[[боро́ться]] '''за''' [[мир]]|to fight '''for''' peace}}
+##: {{uxi|ru|[[она|Она́]] [[работать|рабо́тает]] '''за''' [[деньги|де́ньги]].|She works '''for''' money.}}
+## [[instead of]]
+##: {{uxi|ru|[[сегодня|Сего́дня]] [[он]] [[читать|чита́л]] [[лекция|ле́кцию]] '''за''' [[заболевший|заболе́вшего]] [[коллега|колле́гу]].|Today he gave a lecture '''for''' a sick colleague.}}
+## {{lb|ru|of voting}} [[in favor of]]
+##: {{uxi|ru|[[он|Он]] [[проголосовать|проголосова́л]] '''за''' [[строи́тельство]] [[новый|но́вой]] [[школа|шко́лы]].|He voted '''for''' the construction of a new school.}}
+## {{lb|ru|colloquial|dialectal}} [[about]]
+##: {{syn|ru|о|об|про}}
+##: {{uxi|ru|[[думать]] '''за''' [[работа|рабо́ту]]|to think '''about''' work}}
+##: {{uxi|ru|говорить '''за''' [[жизнь]]|to speak '''about''' life}}
+##* {{quote-book|ru|year=1931|author=[[w:Isaac Babel|Isaac Babel]]|title=[[w:Odessa Stories|Odessa Stories]]|passage=Беня знает '''за''' облаву
+|translation=[[w:Benya Krik|Benya]] knows '''about''' the police razzia}}
+## {{qualifier|used in expressions}}
+##: {{uxi|ru|[[ра́доваться]] '''за''' [[кто-либо|кого́-либо]]|to be happy '''for''' someone}}
+##: {{uxi|ru|[[боя́ться]] '''за''' [[кто-либо|кого́-либо]]|to be afraid '''for''' someone}}
+##: {{uxi|ru|[[брать]] [[кто-либо|кого́-либо]] '''за́''' [[рука|руку]]|to take someone '''by''' the hand}}
+##: {{uxi|ru|[[вести́]] [[кто-либо|кого́-либо]] '''за́''' [[рука|руку]]|to lead someone '''by''' the hand}}
+##:: ''Note the stress on'' '''за́''' ''but not on'' руку ''in these expressions''
+# {{+obj|ru|ins|catpos=prep}}
+## {{lb|ru|of location}} [[behind]]; [[beyond]]; on the other [[side]] of
+##: {{ux|ru|'''За''' [[река|реко́й]] [[со́лнышко]] [[садиться|сади́тся]].|The sun is setting'' '''''across''' the river}}
+## [[at]]; [[while]]
+##: {{uxi|ru|'''за''' [[обед|обе́дом]] [[разгово́р]] [[идти|шёл]] [[о]] [[театр|теа́тре]]|'''at''' dinner the conversation turned to the theater}}
+##: {{uxi|ru|'''за''' [[стол|столо́м]]|'''at''' the table}}
+##: {{uxi|ru|'''за''' [[игра|игро́й]]|'''while''' playing}}
+##: {{uxi|ru|'''за''' [[книга|кни́гой]]|'''while''' reading (specifically a book)}}
+##: {{uxi|ru|'''за''' [[работа|рабо́той]]|'''while''' working}}
+##: {{uxi|ru|'''за''' [[ужин|у́жином]]|'''while''' eating dinner}}
+##: {{uxi|ru|'''за''' [[чтение|чте́нием]]|'''while''' reading (nothing specific implied)}}
+##: {{uxi|ru|'''за''' [[рулём|рулём]]|'''at''' the wheel (driving a vehicle)}}
+## [[owing to]]
+##: {{syn|ru|всле́дствие|в результа́те|и́з-за|по причи́не}}
+##* {{quote-book|ru|year=1846|author=w:ru:Фёдор Достоевский<t:{{w|Fyodor Dostoevsky}}>|title=w:ru:[[Бедные люди]]|chapter=s:ru:[[Бедные люди (Достоевский)/Июнь/Тетрадь2|Июнь. Тетрадь. II]]|location=|publisher=|newversion=English translation from|translator2=w:Constance Garnett|title2=s:en:[[The Gambler and Other Stories/Poor People|Poor People]]|location2=|publisher2=|year2=1914|page2=|pageurl2=|text='''За''' расстро́енным здоро́вьем свои́м Покро́вский не мог продолжа́ть заня́тий свои́х в университе́те.|t='''Owing to''' the breakdown of his health Pokrovsky could not continue his studies at the university.}}
+
+====Related terms====
+* {{l|ru|за-}}
+* {{l|ru|что́ за}}
+
+==Serbo-Croatian==
+
+===Etymology===
+{{inh+|sh|sla-pro|*za}}. Cognate with {{cog|xcl|զ-}}.
+
+===Pronunciation===
+* {{IPA|sh|/za/}}
+
+===Preposition===
+{{sh-prep}}
+
+# [[for]] {{qualifier|expressing a reason}} {{+obj|sh|acc}}
+#: {{coi|sh|гласати '''за''' некога|to vote for somebody}}
+#: {{coi|sh|продати нешто '''за''' 100 долара|to sell something for a hundred dollars}}
+#: {{coi|sh|платити '''за''' радозналост|to pay for one's curiosity}}
+#: {{coi|sh|бојати се '''за''' некога|to fear for somebody}}
+#: {{coi|sh|доћи кући '''за''' празнике|to come home for the holiday season}}
+# [[behind]], [[in back of]], [[at]] {{qualifier|without change of position, answering the question {{m|sh|гдје̏}}/{{m|sh|где̏}}}} {{+obj|sh|ins}}
+#: {{coi|sh|сједити/седети '''за''' столом|to sit at the table}}
+#: {{uxi|sh|Иди '''за''' мном.|Follow me. (Go behind me.)}}
+# [[during]] {{+obj|sh|gen}}
+#: {{coi|sh|'''за''' дана|during the day, during daylight}}
+#: {{coi|sh|'''за''' живота|during one's life}}
+#: {{coi|sh|'''за''' вр(иј)еме рата|during the war}}
+# [[to]], [[toward]] {{+obj|sh|acc}}
+#: {{coi|sh|цеста '''за''' Беч|the road to Vienna}}
+#: {{coi|sh|путовати '''за''' Беч|to travel to Vienna}}
+# [[in]] {{qualifier|in expressions with time}} {{+obj|sh|acc}}
+#: {{coi|sh|доћи опет '''за''' неколико дана|to come back in a few days}}
+#: {{coi|sh|претрчати 100 метара '''за''' 9 секунди|to run 100 meters in 9 seconds}}
+# [[by]] {{+obj|sh|acc}}
+#: {{coi|sh|узети '''за''' руку|to take by the hand}}
+#: {{coi|sh|ухватити '''за''' руку|to grab by the arm}}
+#: {{coi|sh|вући '''за''' уши|to pull by the ears}}
+# [[for]], [[as]] {{qualifier|with verbs denoting naming, appointing, declaring, considering etc}} {{+obj|sh|acc}}
+#: {{coi|sh|поставити некога '''за''' предс(ј)едника|to appoint somebody president}}
+#: {{coi|sh|држати некога '''за''' паметног чов(ј)ека|to consider somebody a smart person}}
+# [[after]] {{+obj|sh|ins}}
+#: {{coi|sh|један '''за''' другим|one after another}}
+#: {{coi|sh|правити грешку '''за''' грешком|to make one error after another; to make errors repeatedly}}
+#: {{uxi|sh|поновите '''за''' мном.|Repeat after me.}}
+# [[for]] {{+obj|sh|ins}}
+#: {{coi|sh|туговати '''за''' неким|to grieve for somebody}}
+#: {{coi|sh|чезнути '''за''' срећом|to yearn for happiness}}
+
+==Ubykh==
+{{cardinalbox|uby|0|1|2||тҟәа}}
+
+===Pronunciation===
+* {{IPA|uby|[za]}}
+
+===Numeral===
+{{head|uby|numeral}}
+
+# {{cln|uby|cardinal numbers}} [[one]] {{gl|1}}
+
+==Udihe==
+
+===Pronunciation===
+* {{IPA|ude|/d͡za/}}
+
+===Numeral===
+{{head|ude|numeral|tr=za|sc=Cyrl}}
+
+# [[ten]]
+
+===References===
+* Irina Nikolaeva, Elena Perekhvalskaya, and Maria Tolskaya, ''Udeghe Texts''
+
+==Ukrainian==
+
+===Etymology===
+{{ety|uk|:inh|sla-pro:*za|text=+|tree=1}}
+
+===Pronunciation===
+* {{uk-IPA}}
+* {{audio|uk|Uk-за.ogg}}
+
+===Preposition===
+{{head|uk|preposition}}
+
+#  {{+obj|uk|gen|catpos=prep}}
+## {{n-g|indicating period or circumstance in which something happened or is happening}}: [[during]], [[in]], [[under]]
+##: {{uxi|uk|'''за''' [[час|часі́в]] [[Гетьманщина|Гетьма́нщини]]|'''during''' the times of the Hetmanate}}
+##: {{coi|uk|'''за''' [[жодний|жо́дних]] [[обставина|обста́вин]]|'''under''' no circumstances}}
+##: {{coi|uk|'''за''' [[будь-який|будь-яки́х]] [[умова|умо́в]]|'''in''' any conditions}}
+#  {{+obj|uk|acc|catpos=prep}}
+<!--SPATIAL-->
+## {{n-g|indicating movement to the other side of something}}: [[behind]], [[beyond]], [[over]]
+##: {{uxi|uk|[[сонце|Со́нце]] [[зайти|зайшло́]] '''за''' [[о́брій]].|The sun set '''over''' the horizon.}}
+## {{n-g|indicating taking a standing or seated position next to something}}: [[at]], [[to]]
+##: {{coi|uk|[[сі́сти]] '''за''' [[стіл]]|to sit down '''at''' a table}}
+<!--TEMPORAL-->
+## {{n-g|indicating period when something happened or is happening}}: [[during]], [[in]], [[over]]
+##: {{coi|uk|'''за''' [[цей]] [[час]]|'''during''' this time}}
+## {{n-g|indicating future time interval}}: [[in]]
+##: {{coi|uk|'''за''' [[мить]]|'''in''' a moment}}
+## {{n-g|indicating time interval before an event}}:
+##: {{uxi|uk|'''за''' [[ти́ждень]] [[до]] [[їхній|ї́хнього]] [[від'їзд|від'їзду]]|a week before their departure}}
+<!--CAUSAL-->
+## {{n-g|Indicating reason for positive or negative reaction or verdict}}: [[for]]
+##: {{uxi|uk|[[дякую|Дя́кую]] '''за''' [[допомога|допомо́гу]].|Thank you '''for''' your help.}}
+##: {{uxi|uk|Я [[вдя́чний]] '''за''' [[ваш|ва́шу]] [[підтримка|підтри́мку]].|I am grateful '''for''' your support.}}
+##: {{coi|uk|[[нема за що|нема́ '''за́''' що]]|[[don't mention it]], [[not at all]]}}
+##: {{uxi|uk|[[перепрошувати|Перепро́шую]] '''за''' [[помилка|по́ми́лку]].|Sorry '''for''' the mistake.}}
+##: {{uxi|uk|[[просити|Про́симо]] [[ви́бачення]] '''за''' [[незручність|незру́чності]].|We apologize '''for''' the inconvenience.}}
+##: {{coi|uk|[[засуди́ти]] [[хтось|кого́сь]] '''за'''|q=+ accusative|to convict somebody '''of'''; to condemn somebody '''for'''}}
+##: {{coi|uk|[[критикува́ти]] [[хтось|кого́сь]] '''за'''|q=+ accusative|to criticize somebody '''for'''}}
+##: {{coi|uk|[[хвали́ти]] [[хтось|кого́сь]] '''за'''|q=+ accusative|to praise somebody '''for'''}}
+##: {{coi|uk|[[w:uk:Нагрудний знак «За військову доблесть»|«'''За''' військову доблесть»]]|"'''For''' Military Valour"}}
+<!--QUANTITATIVE-->
+## [[past]]
+##: {{uxi|uk|[[дале́ко]] '''за''' [[пі́вніч]]|well/way '''past''' midnight}}
+##: {{uxi|uk|[[він|Йому́]] [[було́]] [[дале́ко]] '''за''' [[вісімдеся́т]].|He was well '''past''' eighty years old.}}
+## {{n-g|measuring distance}}: [[away]]
+##: {{uxi|uk|'''за''' [[два]] [[крок|кро́ки]] [[від]] [[готель|готе́лю]]|two steps '''away''' from the hotel}}
+<!--OBJECTIVE-->
+## {{n-g|indicating place of holding}}: [[by]]
+##: {{coi|uk|[[трима́ти]] [[кого́сь]] '''за''' [[ру́ку]]|to hold somebody '''by''' the hand}}
+##: {{coi|uk|[[схопи́ти]] [[кого́сь]] '''за''' [[го́рло]]|to grab somebody '''by''' the throat}}
+## {{n-g|indicating advocacy, support, etc.}}: [[for]], [[in favour of]]
+##: {{coi|uk|[[голосува́ти]] '''за''' [[кого́сь]]|to vote '''for''' somebody}}
+##: {{coi|uk|Він [[висловитися|ви́словився]] '''за''' [[збі́льшення]] [[витрати|ви́трат]] на [[армія|а́рмію]].|He spoke '''in favour of''' spending more on the army.}}
+## {{n-g|indicating focus of feelings}}: [[for]], [[about]], [[of]]
+##: {{uxi|uk|Я [[хвилюватися|хвилю́юся]] '''за''' [[ти|те́бе]].|I'm worried '''for''' you.}}
+##: {{uxi|uk|[[вони|Вони́]] [[боятися|боя́ться]] '''за''' [[свій|свою́]] [[безпека|безпе́ку]].|They fear '''for''' their safety.}}
+##: {{uxi|uk|[[їй|Їй]] [[со́ромно]] '''за''' [[поведінка|поведі́нку]] [[батько|батькі́в]].|She is ashamed '''of''' her parents' behaviour.}}
+## {{n-g|indicating exchange value}}: [[for]]
+##: {{uxi|uk|Я [[працювати|працю́ю]] '''за''' [[гро́ші]].|I work '''for''' money.}}
+##: {{uxi|uk|[[ми|Ми]] [[купити|купи́ли]] [[він|його́]] '''за''' [[тисяча|ти́сячу]] [[гривня|гри́вень]].|We bought it '''for''' a thousand hryvnia.}}
+##: {{coi|uk|'''за''' [[високий|висо́ку]] [[ціна|ціну́]]|'''for''' a high price}}
+##: {{coi|uk|'''за''' [[бе́зцінь]]|'''for''' a pittance, '''for''' a song, '''for''' next to nothing}}
+## {{n-g|indicating responsibility}}: [[for]]
+##: {{coi|uk|[[відповіда́ти]] '''за'''|q=+ accusative|to be responsible '''for'''}}
+##: {{coi|uk|[[нести́]] [[відповіда́льність]] '''за'''|q=+ accusative|to bear responsibility '''for'''}}
+## {{n-g|indicating allegiance, interest, moral cause, etc.}}: [[for]]
+##: {{coi|uk|[[боре́ць]] '''за''' [[свобода|свобо́ду]]|[[freedom fighter]]|lit=fighter '''for''' freedom}}
+##: {{coi|uk|[[вона|Вона́]] [[грати|гра́є]] '''за''' [[наш|на́шу]] [[команда|кома́нду]].|She plays '''for''' our team.}}
+##: {{uxi|uk|[[вони|Вони́]] [[воювати|вою́ють]] '''за''' [[свій|свою́]] [[батьківщина|батьківщи́ну]].|They are fighting '''for''' their homeland.}}
+##: {{uxi|uk|[[оди́н|Оди́н]] '''за''' [[всі|всіх]] і всі '''за''' одного́!|[[one for all, all for one|One '''for''' all and all '''for''' one]]!}}
+##: {{uxi|uk|'''за''' [[ваш|ва́ше]] [[здоро́в'я]]!|To your health!}}
+## [[as]], [[for]] {{q|somebody or something else}}
+##: {{coi|uk|[[ви́дати]] [[себе́]] '''за'''|q=+ accusative|to [[pass off|pass oneself off]] '''as''', to [[pose]] '''as'''}}
+## [[than]]
+##: {{uxi|uk|[[Ки́їв]] [[бі́льший]] '''за''' [[Ха́рків]].|Kyiv is bigger '''than''' Kharkiv.}}
+##: {{coi|uk|[[скоріш за все|скорі́ш '''за''' все]]|most likely|lit=sooner '''than''' anything}}
+##: {{coi|uk|[[перш]] '''за''' [[все]]|[[first of all]]}}
+# {{lb|uk|+|{{glossary|instrumental case}}}}
+## {{n-g|indicating position on the other side of something}}: [[behind]], [[over]]
+##: {{coi|uk|'''за''' [[кордон|кордо́ном]]|abroad|lit='''over''' the border}}
+##: {{coi|uk|'''за''' [[куліса|кулі́сами]]|[[behind the scenes|'''behind''' the scenes]]}}
+## {{n-g|indicating standing or seated position next to something}}: [[at]], [[behind]]
+##: {{uxi|uk|[[сиді́ти]] '''за''' [[стіл|столо́м]]|to sit '''at''' a table}}
+##: {{uxi|uk|[[сиді́ти]] '''за''' [[кермо|кермо́м]]|to sit '''at'''/'''behind''' the steering wheel}}
+## {{n-g|indicating following, supervision, tracking, etc.}}:
+##: {{coi|uk|[[слі́дом]] '''за'''|q=+ instrumental|following, after}}
+##: {{coi|uk|[[слі́дувати]] '''за'''|q=+ instrumental|to follow}}
+##: {{coi|uk|[[слідкува́ти]] '''за'''|q=+ instrumental|to follow, to track}}
+##: {{coi|uk|[[спостеріга́ти]] '''за'''|q=+ instrumental|to watch}}
+##: {{coi|uk|[[сте́жити]] '''за'''|q=+ instrumental|to watch}}
+##: {{coi|uk|[[догляда́ти]] '''за'''|q=+ instrumental|to look after}}
+## {{n-g|indicating succession}}: [[after]], [[by]]
+##: {{coi|uk|[[день]] '''за''' [[днем]]|day '''after''' day, day '''by''' day}}
+##: {{coi|uk|[[крок]] '''за''' [[кро́ком]]|[[step by step|step '''by''' step]]}}
+##: {{coi|uk|[[село́]] '''за''' [[село́м]]|village '''after''' village, village '''by''' village}}
+## {{n-g|indicating objectives and wants}}: [[for]]
+##: {{coi|uk|[[посла́ти]] '''за''' [[лікар|лі́карем]]|to send '''for''' a doctor}}
+##: {{uxi|uk|[[вони|Вони́]] [[звернутися|зверну́лися]] '''за''' [[допомога|допомо́гою]] [[до]] [[влада|вла́ди]].|They turned to the authorities '''for''' help.}}
+##: {{uxi|uk|[[я|Я]] [[скучити|ску́чила]] '''за''' [[ти|тобо́ю]].|I've missed you. I have longed '''for''' you.}}
+## {{n-g|indicating basis for assessment, judgement, knowledge}}: [[according to]], [[by]]
+##: {{uxi|uk|'''за''' [[останній|оста́нніми]] [[дані|да́ними]]|'''according to''' the latest data}}
+##: {{uxi|uk|'''за''' [[всі|всіма́]] [[ознака|озна́ками]]|'''by''' all indications}}
+## {{n-g|indicating basis for action}}: [[according to]], [[in accordance with]]
+##: {{syn|uk|[[згідно|згі́дно з]]<q:with instrumental>|[[відповідно|відпові́дно до]]<q:with genitive>}}
+##: {{coi|uk|'''за''' [[звичай|зви́чаєм]]|'''according to''' custom}}
+##: {{coi|uk|'''за''' [[традиція|тради́цією]]|'''according to''' tradition}}
+## {{n-g|indicating parallel or simultaneous activity}}: [[while]]
+##: {{uxi|uk|'''за''' [[читання|чита́нням]]|'''while''' reading}}
+## {{n-g|in expressions indicating condition or circumstance}}: [[with]], [[on]]
+##: {{coi|uk|[[за винятком|'''за''' ви́нятком]]|q=+ genitive|'''with''' the exception of}}
+##: {{coi|uk|'''за''' [[допомога|допомо́гою]]|q=+ genitive|'''with''' the help of}}
+##: {{uxi|uk|'''за''' [[участь|у́частю]]|q=+ genitive|'''with''' the participation of, involving}}
+##: {{uxi|uk|'''за''' [[підозра|підо́зрою]] [[в]]|q=+ locative|'''on''' suspicion of}}
+
+===Adverb===
+{{uk-adv}}
+
+# [[for]] {{gl|in favour}}
+#: {{coi|uk|'''за''' [[і]] [[про́ти]]|'''for''' and against}}
+#: {{coi|uk|[[ні]] '''за''' ні [[про́ти]]|neither '''for''' nor against}}
+#: {{uxi|uk|«'''За'''» [[проголосувати|проголосува́ли]] [[сто]] [[депутат|депутатів]].|A hundred deputies voted "'''for'''".}}
+
+===Particle===
+{{head|uk|particle}}
+
+# {{n-g|Used in the set expression {{m|uk|[[що]] ([[то]]) за...|tr=-||what a... what kind/sort of...}}}}
+
+===Further reading===
+* {{R:uk:SUM-11}}
+* {{R:uk:SUM-20|3=5}}
+* {{R:uk:R2U}}
+* {{R:uk:E2U}}
+* {{R:uk:Horokh}}
+* {{R:uk:Slovnyk}}

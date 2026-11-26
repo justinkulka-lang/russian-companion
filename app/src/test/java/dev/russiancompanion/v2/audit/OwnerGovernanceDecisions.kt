@@ -23,9 +23,6 @@ import java.time.format.DateTimeParseException
  * this file. A passing evaluation does not activate a variance, accept a
  * mapping, or write a final-audit artifact.
  */
-internal const val OWNER_GOVERNANCE_PREPARATION_PATH =
-    "audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json"
-
 internal const val PREPARATION_DISPOSITION = "NOT_RECORDED"
 
 internal const val RETAINED_PRIVATE_FILE_SHA_UNITS_11_20 =
@@ -184,7 +181,6 @@ internal fun renderFinalAuditPreparationManifest(
         append("  \"kind\": \"final-curriculum-audit-preparation\",\n")
         append("  \"disposition\": \"$PREPARATION_DISPOSITION\",\n")
         append("  \"futureRetentionDirectory\": \"$AUTHORIZED_FINAL_AUDIT_DIRECTORY\",\n")
-        append("  \"preparationPath\": \"$OWNER_GOVERNANCE_PREPARATION_PATH\",\n")
         append("  \"modelVersion\": \"\",\n")
         append("  \"date\": \"\",\n")
         append("  \"packContentReviewDigest\": \"$packDigest\",\n")

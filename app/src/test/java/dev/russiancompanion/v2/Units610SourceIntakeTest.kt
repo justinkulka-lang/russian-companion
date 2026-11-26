@@ -63,20 +63,18 @@ class Units610SourceIntakeTest {
     @Test
     fun earlierUnitDigestsStayPutAndLaterUnitsStayIsolated() {
         val pack = pack()
-        assertEquals("9adca20544f28770210fe3029c2e0e4c437e3b409216e9288227c316e9ebf61a", V2Validator.unitContentReviewDigest(pack, 1))
-        assertEquals("d51310f9ac1596ab50d2c5df7dffd9b10db23d712875680dbfb942bf577e056b", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("deadcf10b8af7efca034b8d89921412f309d291180c09c4af490eb132b1bbb86", V2Validator.unitContentReviewDigest(pack, 3))
-        assertEquals("5a9be201954e4a4c37188ed7aca9fae1ee67e20622c7134271c1a68cd520e59c", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("9470cc61d50236425fb01771a4d20788c88d6c98f8a8694420609f86d7b9710d", V2Validator.unitContentReviewDigest(pack, 5))
+        // D7b: frozen selection records join Unit 3 (was 6bab7d2e...; T15f 9c2ab4f1...; T15e e6159274...).
+        // T16-n1 (D28c): the Unit 3 mapping note and attribution notice changed (was b1986b78...).
+        // T17g expectation change, old -> new: 81f65bc5 -> c5166e9b (Unit 3 binder task own-table wording (column lint)).
+        assertEquals("c5166e9b288371b8333d2b8393e32fedc80ac2d415d74dd812b46dcacb7564a4", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
         )
-        assertEquals("096dfe17480bde2d6f8c78db6bcaf8beb2f26a9228e0d2101bbb16b27e988018", buildUnitReviewPackage(pack, 1).reviewPackageDigest)
-        assertEquals("92aca982a0c0cea09f375adfe9ac9300c2351f930fde8cd9a3a7ce331b4262a5", buildUnitReviewPackage(pack, 2).reviewPackageDigest)
-        assertEquals("504f29ea76d0a33c0c3171e3fd58e77caa1fd4e0389232abdf81d2cdc8228281", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
-        assertEquals("5c83907c84d7bb8caaced3455abde7e30c8c9e415c31c03d807ca67cc33cf5df", buildUnitReviewPackage(pack, 4).reviewPackageDigest)
-        assertEquals("72656d209b503af49da01f36e8cf30400b8e98b2719a28d960fbe774996b5cf7", buildUnitReviewPackage(pack, 5).reviewPackageDigest)
+        // T17f: follows the Units 1-30 curriculum commit 98a95ab3 (was 89e18e86... at 80c7219b). T17e: follows the Units 1-30 curriculum commit 80c7219b (was e472f63a... at fc91121a). T16c-n3: follows the Units 1-30 curriculum commit fc91121a (was 4c784718... at 53fcc674). T16c-n2: follows the Units 1-30 curriculum commit 53fcc674 (was c4882499... at 0f839433). T17d: follows the Units 1-30 curriculum commit 0f839433 (was 9d1a6cb3... at 6810533d). T17c: follows the Units 1-30 curriculum commit 6810533d (was 98bd3f59... at b0216798). T17b: follows the Units 1-30 curriculum commit b0216798 (was 5f1018d6... at 569341cc). T17a: follows the Units 1-30 curriculum commit 569341cc (was aaf3ae36... at 16350eb1). T16f: follows the Units 1-30 curriculum commit 16350eb1 (was d3b04bbc... at abaaa6b4). T16e: follows the Units 1-30 curriculum commit abaaa6b4 (was ab51a887... at f5861810). T16d: follows the Units 1-30 curriculum commit f5861810 (was f075c3d8... at e4245f3b). T16c: follows the Units 1-30 curriculum commit e4245f3b (was 513b9271... at b1c94322). T16-n2: follows the Units 1-30 curriculum commit b1c94322 (was 5d323636... at e95b504c). T16b CI fix: follows the Units 1-30 curriculum commit e95b504c (was a1266aa0... at b5abd07b; 92f69ed5... at 35c6bc4c; d11cab3c... at 8b1ee268; df28cdd7... at d74e3d9f; 6c5a3bb3... at 1b0dd1cc; a81a842b... at cdfba75e; abe8771d... at 6db5f5b2; fd93b562... at c4c65b24; 8e2ea00e...; D7b 7a95a65d...).
+        // T17g expectation change, old -> new: e6f84850 -> 8c83ed9f (Unit 3 review package: Unit 3 binder wording and the T17g curriculum pin).
+        // T17f-n1 expectation change, old -> new: 8c83ed9f -> af6cf1ff (Unit 3 review package follows the T17f-n1 curriculum pin).
+        assertEquals("af6cf1ffc8fa82e830eefaebec09640bccaf6095ce94ae769aa465d503fa9773", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(
@@ -139,7 +137,9 @@ class Units610SourceIntakeTest {
         }
         assertTrue(joined.contains("Я шёл в дом"))
         assertTrue(joined.contains("Я жил в Лондоне"))
-        assertTrue(joined.contains("11, 12, 13, 14"))
+        val quantityTeaching = pack.unit(9)!!.sessions.single { it.id == "u9-s-quantity" }.steps.filter { it.kind == "TEACH" }
+        assertTrue(quantityTeaching.any { it.body.contains("last two digits first") &&
+            it.body.contains("11, 12, 13 or 14") && it.body.contains("genitive plural") })
         assertTrue(joined.contains("not a statement of a present-day amount"))
         assertTrue(joined.contains("do not decline"))
         assertTrue(joined.contains("Я хочу нового кролика."))

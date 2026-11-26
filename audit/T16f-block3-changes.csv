@@ -1,0 +1,109 @@
+owner.field,old,new
+u12-st-teach-future-imp-1.body,Я бу́ду говори́ть — I will be speaking. Мы бу́дем говори́ть — We will be speaking. Вы бу́дете говори́ть — You will be speaking. ,"Я бу́ду говори́ть — I will be speaking. Мы бу́дем говори́ть — We will be speaking. Вы бу́дете говори́ть — You will be speaking. Я бу́ду говори́ть is the first-person singular, Мы бу́дем говори́ть the first-person plural and Вы бу́дете говори́ть the second-person plural compound future."
+u12-st-teach-future-imp-3.body,Ты бу́дешь говори́ть — You will be speaking. Он бу́дет говори́ть — He will be speaking. ,Ты бу́дешь говори́ть — You will be speaking. Он бу́дет говори́ть — He will be speaking. Ты бу́дешь говори́ть is the second-person singular and Он бу́дет говори́ть the third-person singular compound future.
+u12-st-teach-future-perf-1.body,Я скажу́ — I will speak. Мы ска́жем — We will speak. ,Я скажу́ — I will speak. Мы ска́жем — We will speak. Я скажу́ is the first-person singular and Мы ска́жем the first-person plural future of сказа́ть.
+u12-st-teach-future-perf-4.body,ска́жешь — say. ,ска́жешь — say. ска́жешь is the second-person singular future of сказа́ть.
+u12-st-teach-dative-1.body,кни́га — book. кни́ге — book. ,кни́га — book. кни́ге — book. кни́ге is the dative singular of кни́га.
+u12-st-teach-dative-4.body,столу́ — table. столы́ — table. ,"столу́ — table. столы́ — table. столу́ is the dative singular of сто́л, and столы́ is its nominative plural."
+u12-st-teach-dative-5.body,до́м — house. до́му — house. ,до́м — house. до́му — house. до́му is the dative singular of до́м.
+u12-st-teach-dative-6.body,дома́ — house. ,дома́ — house. дома́ is the nominative plural of до́м.
+u12-st-teach-spelling-1.body,хоро́ший — good. хоро́шее — good. ,хоро́ший — good. хоро́шее — good. хоро́шее is the neuter nominative singular of хоро́ший.
+u12-st-teach-spelling-3.body,хоро́шая — good. хорошее письмо — the good letter. ,хоро́шая — good. хорошее письмо — the good letter. хоро́шая is the feminine nominative singular of хоро́ший.
+u12-st-teach-prep-plural-1.body,кни́ги — book. кни́гах — book. ,"кни́ги — book. кни́гах — book. кни́ги is the nominative plural of кни́га, and кни́гах is its prepositional plural."
+u12-st-teach-prep-plural-3.body,кни́ге — book. столы́ — table. ,"кни́ге — book. столы́ — table. кни́ге is the dative singular of кни́га, and столы́ is the nominative plural of сто́л."
+u12-st-teach-prep-plural-4.body,стола́х — table. столу́ — table. ,"стола́х — table. столу́ — table. стола́х is the prepositional plural of сто́л, and столу́ is its dative singular."
+u12-st-teach-prep-plural-5.body,дома́ — house. дома́х — house. ,"дома́ — house. дома́х — house. дома́ is the nominative plural of до́м, and дома́х is its prepositional plural."
+u12-st-teach-prep-plural-6.body,до́му — house. ,до́му — house. до́му is the dative singular of до́м.
+u12-st-rem-future-imp.body,"быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.","Я бу́ду говори́ть — I will be speaking. Мы бу́дем говори́ть — We will be speaking. Вы бу́дете говори́ть — You will be speaking. Я бу́ду говори́ть is the first-person singular, Мы бу́дем говори́ть the first-person plural and Вы бу́дете говори́ть the second-person plural compound future.
+
+быть is imperfective. Its future forms буду, будешь, будет, будем, будете, and будут combine with an imperfective infinitive to make the compound future.
+
+Ты бу́дешь говори́ть — You will be speaking. Он бу́дет говори́ть — He will be speaking. Ты бу́дешь говори́ть is the second-person singular and Он бу́дет говори́ть the third-person singular compound future."
+u12-st-rem-future-imp.exampleIds,"ex-u12-future-imp-0,ex-u12-future-imp-1","ex-u12-future-imp-0,ex-u12-future-imp-1,ex-u12-future-imp-4,ex-u12-future-imp-2,ex-u12-future-imp-3"
+u12-st-rem-future-imp.referenceIds,ref-ca-aspect,ref-u12-future
+u12-st-rem-future-perf.body,A perfective verb's person forms have future meaning. They use a single conjugated verb without a separate future auxiliary. Use the person forms taught here.,"Я скажу́ — I will speak. Мы ска́жем — We will speak. Я скажу́ is the first-person singular and Мы ска́жем the first-person plural future of сказа́ть.
+
+A perfective verb's person forms have future meaning. They use a single conjugated verb without a separate future auxiliary. Use the person forms taught here.
+
+скажу́ — say. ска́жем — say.
+
+ска́жешь — say. ска́жешь is the second-person singular future of сказа́ть."
+u12-st-rem-future-perf.exampleIds,"ex-u12-future-perf-0,ex-u12-future-perf-1","ex-u12-future-perf-0,ex-u12-future-perf-1,ex-or-u12-future-perf-2,ex-or-u12-future-perf-3,ex-or-u12-future-perf-4"
+u12-st-rem-future-perf.referenceIds,ref-ca-aspect,ref-u12-future
+u12-st-rem-dative.body,"The dative case is traditionally the third grammatical case, and denotes the indirect object of a verb.","кни́га — book. кни́ге — book. кни́ге is the dative singular of кни́га.
+
+The dative case is traditionally the third grammatical case, and denotes the indirect object of a verb.
+
+кни́ги — book. сто́л — table.
+
+столу́ — table. столы́ — table. столу́ is the dative singular of сто́л, and столы́ is its nominative plural.
+
+до́м — house. до́му — house. до́му is the dative singular of до́м.
+
+дома́ — house. дома́ is the nominative plural of до́м."
+u12-st-rem-dative.exampleIds,"ex-or-u12-dative-0,ex-or-u12-dative-1","ex-or-u12-dative-0,ex-or-u12-dative-1,ex-or-u12-dative-2,ex-or-u12-dative-3,ex-or-u12-dative-4,ex-or-u12-dative-5,ex-or-u12-dative-6,ex-or-u12-dative-7,ex-or-u12-dative-8"
+u12-st-rem-dative.referenceIds,ref-ca-aspect,ref-u12-dative-prepositional
+u12-st-rem-spelling.body,"If the stem ends in ж, ц, ч, ш, or щ, any unstressed o in an ending is instead written as e. For example, the good letter is written хорошее письмо, not хорошое письмо.","хоро́ший — good. хоро́шее — good. хоро́шее is the neuter nominative singular of хоро́ший.
+
+If the stem ends in ж, ц, ч, ш, or щ, any unstressed o in an ending is instead written as e. For example, the good letter is written хорошее письмо, not хорошое письмо.
+
+хоро́шая — good. хорошее письмо — the good letter. хоро́шая is the feminine nominative singular of хоро́ший."
+u12-st-rem-spelling.exampleIds,"ex-or-u12-spelling-0,ex-or-u12-spelling-1","ex-or-u12-spelling-0,ex-or-u12-spelling-1,ex-or-u12-spelling-2,ex-u12-spelling-3"
+u12-st-rem-spelling.referenceIds,ref-ca-aspect,ref-u12-spelling
+u12-st-rem-prep-plural.body,"The prepositional plural ending is ах or ях. After a consonant the ending is ах. A noun ending in ь or й, in е or я, or with an irregular nominative plural ending in я, takes ях.","кни́ги — book. кни́гах — book. кни́ги is the nominative plural of кни́га, and кни́гах is its prepositional plural.
+
+The prepositional plural ending is ах or ях. After a consonant the ending is ах. A noun ending in ь or й, in е or я, or with an irregular nominative plural ending in я, takes ях.
+
+кни́ге — book. столы́ — table. кни́ге is the dative singular of кни́га, and столы́ is the nominative plural of сто́л.
+
+стола́х — table. столу́ — table. стола́х is the prepositional plural of сто́л, and столу́ is its dative singular.
+
+дома́ — house. дома́х — house. дома́ is the nominative plural of до́м, and дома́х is its prepositional plural.
+
+до́му — house. до́му is the dative singular of до́м."
+u12-st-rem-prep-plural.exampleIds,"ex-or-u12-prep-plural-0,ex-or-u12-prep-plural-1","ex-or-u12-prep-plural-0,ex-or-u12-prep-plural-1,ex-or-u12-prep-plural-2,ex-or-u12-prep-plural-3,ex-or-u12-prep-plural-4,ex-or-u12-prep-plural-5,ex-or-u12-prep-plural-6,ex-or-u12-prep-plural-7,ex-or-u12-prep-plural-8"
+u12-st-rem-prep-plural.referenceIds,ref-ca-aspect,ref-u12-dative-prepositional
+u14-st-teach-future-person-1.body,Я бу́ду говори́ть — I will be speaking. Мы бу́дем говори́ть — We will be speaking.,Я бу́ду говори́ть — I will be speaking. Мы бу́дем говори́ть — We will be speaking. Я бу́ду говори́ть is the first-person singular and Мы бу́дем говори́ть the first-person plural compound future.
+u14-st-teach-future-person-5.body,Ты бу́дешь говори́ть — You will be speaking. Вы бу́дете говори́ть — You will be speaking. Он бу́дет говори́ть — He will be speaking. Они бу́дут говори́ть — They will be speaking.,"Ты бу́дешь говори́ть — You will be speaking. Вы бу́дете говори́ть — You will be speaking. Он бу́дет говори́ть — He will be speaking. Они бу́дут говори́ть — They will be speaking. Ты бу́дешь говори́ть is the second-person singular, Вы бу́дете говори́ть the second-person plural, Он бу́дет говори́ть the third-person singular and Они бу́дут говори́ть the third-person plural compound future."
+u14-st-teach-future-person-3.body,"A perfective verb forms its future by conjugating it, with no separate future auxiliary. Я скажу́ — I will speak. Мы ска́жем — We will speak.","A perfective verb forms its future by conjugating it, with no separate future auxiliary. Я скажу́ — I will speak. Мы ска́жем — We will speak. Я скажу́ is the first-person singular and Мы ска́жем the first-person plural future."
+u14-st-teach-future-person-4.body,Ты ска́жешь — You will speak. Вы ска́жете — You will speak. Он ска́жет — He will speak. Они ска́жут — They will speak.,"Ты ска́жешь — You will speak. Вы ска́жете — You will speak. Он ска́жет — He will speak. Они ска́жут — They will speak. Ты ска́жешь is the second-person singular, Вы ска́жете the second-person plural, Он ска́жет the third-person singular and Они ска́жут the third-person plural future."
+u14-st-rem-future-person.body,"Я бу́ду говори́ть — I will be speaking. Мы бу́дем говори́ть — We will be speaking.
+
+Ты бу́дешь говори́ть — You will be speaking. Вы бу́дете говори́ть — You will be speaking. Он бу́дет говори́ть — He will be speaking. Они бу́дут говори́ть — They will be speaking.
+
+The compound future puts a future form of быть before the imperfective infinitive, and the form of быть agrees with the subject. быть itself is an imperfective verb.
+
+A perfective verb forms its future by conjugating it, with no separate future auxiliary. Я скажу́ — I will speak. Мы ска́жем — We will speak.
+
+Ты ска́жешь — You will speak. Вы ска́жете — You will speak. Он ска́жет — He will speak. Они ска́жут — They will speak.","Я бу́ду говори́ть — I will be speaking. Мы бу́дем говори́ть — We will be speaking. Я бу́ду говори́ть is the first-person singular and Мы бу́дем говори́ть the first-person plural compound future.
+
+Ты бу́дешь говори́ть — You will be speaking. Вы бу́дете говори́ть — You will be speaking. Он бу́дет говори́ть — He will be speaking. Они бу́дут говори́ть — They will be speaking. Ты бу́дешь говори́ть is the second-person singular, Вы бу́дете говори́ть the second-person plural, Он бу́дет говори́ть the third-person singular and Они бу́дут говори́ть the third-person plural compound future.
+
+The compound future puts a future form of быть before the imperfective infinitive, and the form of быть agrees with the subject. быть itself is an imperfective verb.
+
+A perfective verb forms its future by conjugating it, with no separate future auxiliary. Я скажу́ — I will speak. Мы ска́жем — We will speak. Я скажу́ is the first-person singular and Мы ска́жем the first-person plural future.
+
+Ты ска́жешь — You will speak. Вы ска́жете — You will speak. Он ска́жет — He will speak. Они ска́жут — They will speak. Ты ска́жешь is the second-person singular, Вы ска́жете the second-person plural, Он ска́жет the third-person singular and Они ска́жут the third-person plural future."
+u15-st-teach-say-request-1.body,"скажи́ — say. скажи́те — say. Read the explanation and compare the examples. Read the worked examples, then practise before answering independently. A wrong answer returns to this contrast. Practise first, then answer without the explanation in view.","скажи́ — say. скажи́те — say. Read the explanation and compare the examples. Read the worked examples, then practise before answering independently. A wrong answer returns to this contrast. Practise first, then answer without the explanation in view. скажи́ is the singular imperative and скажи́те the plural imperative of сказа́ть."
+u15-st-teach-say-request-4.body,да́йте — give. дать — give.,да́йте — give. дать — give. да́й is the singular imperative and да́йте the plural imperative of дать.
+u15-st-rem-say-request.body,"скажи́ — say. скажи́те — say. Read the explanation and compare the examples. Read the worked examples, then practise before answering independently. A wrong answer returns to this contrast. Practise first, then answer without the explanation in view.
+
+говори́ть is imperfective and сказа́ть is perfective; both can mean to say, speak or tell.
+
+сказа́ть — say. да́й — give.
+
+да́йте — give. дать — give.","скажи́ — say. скажи́те — say. Read the explanation and compare the examples. Read the worked examples, then practise before answering independently. A wrong answer returns to this contrast. Practise first, then answer without the explanation in view. скажи́ is the singular imperative and скажи́те the plural imperative of сказа́ть.
+
+говори́ть is imperfective and сказа́ть is perfective; both can mean to say, speak or tell.
+
+сказа́ть — say. да́й — give.
+
+да́йте — give. дать — give. да́й is the singular imperative and да́йте the plural imperative of дать."
+ex-u12-aspect-1.note,to speak,"say, tell"
+ex-u13-infinitive-1.note,to speak,"say, tell"
+ex-u15-aspect-consolidate-1.note,to speak,"say, tell"
+u13-g-tense-keep-0.assessment.answerSourceIds,prov-ex-u13-tense-keep-0-en,prov-t16f-u13-tense-keep-label
+u13-g-tense-keep-0.assessment.relationParticipantIds,prov-ex-u13-tense-keep-0-en,prov-t16f-u13-tense-keep-label
+ex-u13-tense-keep-0.note,we keep the tense the same,He said he is English
+ex-u13-reported-2.note,we keep the tense the same,He said he is English
+ex-u13-reported-3.note,был,He said he was English

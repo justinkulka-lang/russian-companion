@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 1,
+  "packId": "v2-curriculum-foundation",
+  "records": [
+    {
+      "itemId": "prov-cc003-preparation-u15-st-rem-aspect-consolidate-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-rem-aspect-consolidate-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-1-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-1-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-2-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-2-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-3-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-3-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc011-preparation-u7-st-rem-adverb-invariance-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc011-preparation-u7-st-rem-adverb-invariance-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc011-preparation-u7-st-teach-adverb-invariance-english-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc011-preparation-u7-st-teach-adverb-invariance-english-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-check-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-guided-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-objective-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-repair-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-repair-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-teach-1-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-teach-1-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-teach-2-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-teach-2-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-teach-3-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-teach-3-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-g-availability-0-0",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-g-availability-0-1",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-g-availability-0-2",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-g-availability-0-feedback",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-g-availability-0-prompt",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-g-availability-0-rationale",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-1-0",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-1-1",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-1-2",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-1-feedback",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-1-prompt",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-1-rationale",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-2-0",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-2-1",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-2-2",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-2-feedback",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-2-prompt",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-2-rationale",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-3-0",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-3-1",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-3-2",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-3-feedback",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-3-prompt",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc012-u8-i-availability-3-rationale",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-complete-repair",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-видеть-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-видеть-example-note",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-видеть-guide-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-видеть-guide-feedback",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-видеть-guide-prompt",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-видеть-guide-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-видеть-rationale-0",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-видеть-rationale-2",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-видеть-rationale-3",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-видеть-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-говорить-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-говорить-example-note",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-говорить-guide-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-говорить-guide-feedback",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-говорить-guide-prompt",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-говорить-guide-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-говорить-rationale-0",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-говорить-rationale-2",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-говорить-rationale-3",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-говорить-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-идти-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-идти-example-note",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-идти-guide-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-идти-guide-feedback",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-идти-guide-prompt",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-идти-guide-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-идти-rationale-0",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-идти-rationale-2",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-идти-rationale-3",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-идти-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-писать-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-писать-example-note",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-писать-guide-body",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-писать-guide-feedback",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-писать-guide-prompt",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-писать-guide-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-писать-rationale-0",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-писать-rationale-2",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-писать-rationale-3",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc015-писать-title",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc016-u10-st-rem-animate",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc016-u10-st-teach-animate-1",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc016-u10-st-teach-animate-2",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc016-u7-st-rem-objectadj",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc016-u7-st-teach-objectadj-3",
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    }
+  ]
+}

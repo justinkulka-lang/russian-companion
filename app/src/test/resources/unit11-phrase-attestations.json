@@ -1,0 +1,45 @@
+{
+ "task": "T16 (Claude Code, 2026-11-20)",
+ "phrases": [
+  {
+   "phrase": "Он был в Москве́",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 69
+  },
+  {
+   "phrase": "Он улыба́лся",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 106
+  },
+  {
+   "phrase": "Он чита́л",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 56
+  },
+  {
+   "phrase": "Она была́ краси́вая",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 71
+  },
+  {
+   "phrase": "Она улыба́лась",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 107
+  },
+  {
+   "phrase": "Она чита́ла",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 56
+  },
+  {
+   "phrase": "Они улыба́лись",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 109
+  },
+  {
+   "phrase": "Они чита́ли",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 56
+  }
+ ]
+}

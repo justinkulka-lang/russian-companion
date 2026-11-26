@@ -53,10 +53,38 @@ class Units35SourceIntakeTest {
             "src-enwiktionary-russian-entry-guidelines-92541199",
             "src-ruwikisource-vechera-5336197",
             "src-original-research-synthesis",
+            "src-content-audit-research",
+            "src-enwiki-reflexive-pronoun-1374712982",
+            "src-ruwiki-obosoblenie-144053197",
+            "src-ruwiki-boltraffio-149826784",
+            // S1 (approved 2026-11-19): English Wiktionary nekogo oldid 80719285, frozen under catalog/sources/s1-intake.
+            "src-enwiktionary-nekogo-80719285",
+            // T16b (owner direction 2026-11-20): English Wikipedia Grammatical aspect oldid 1384289498, frozen by S1 under
+            // catalog/sources/s1-intake, cited for the Unit 12 aspect claims (S1 claim verification 1369, 1370, 1380).
+            "src-enwiki-grammatical-aspect-1384289498",
+            // T16c (owner direction 2026-11-21): Sequence of tenses oldid 1363198135 and Вид (лингвистика) oldid 153277825, frozen by
+            // S1 and admitted to their routes by D29a, cited for the Unit 13 S1 claims (1462, 1470, 1482, 1508, 1511, 1523, 1528, 1542, 1543).
+            "src-enwiki-sequence-of-tenses-1363198135",
+            "src-ruwiki-vid-lingvistika-153277825",
+            // T16e: Повелительное наклонение oldid 152579064, frozen by S1 and admitted by D29a, cited for the Unit 15 plural/polite
+            // imperative claims (inventory lines 1593, 1600, 1627).
+            "src-ruwiki-povelitelnoe-naklonenie-152579064",
+            // T17a: Wiktionary под oldid 92761073, frozen by S1 and admitted by D29a, cited for the Unit 16 claim on movement within
+            // a location (inventory line 1766, S1 SUPPORTED).
+            "src-enwiktionary-pod-92761073",
+            // T17b: ReadyRussian Grammar 24 — Capitalization, frozen by S1 (CC BY-SA handout text only), cited for the Unit 17
+            // weekday and month capitalization claims (inventory lines 1920, 1947, 1948, S1 SUPPORTED).
+            "src-readyrussian-grammar24",
+            // T17d: ru Сослагательное наклонение oldid 140019162 and Wiktionary бы oldid 94001807, frozen by S1 and admitted by D29a,
+            // cited for the Unit 19 conditional claims (inventory lines 2225, S1 SUPPORTED, and 2234, S1 PARTIAL).
+            "src-ruwiki-soslagatelnoe-naklonenie-140019162",
+            "src-enwiktionary-by-94001807",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)
-            if (record.sourceId.startsWith("src-readyrussian-")) {
+            if (record.sourceId == "src-content-audit-research") {
+                assertContentAuditResearch(record)
+            } else if (record.sourceId.startsWith("src-readyrussian-")) {
                 assertTrue(record.itemId, record.sourceUrl.contains("readyrussian.org"))
             } else if (record.sourceId == "src-original-research-synthesis") {
                 assertEquals(
@@ -64,6 +92,14 @@ class Units35SourceIntakeTest {
                     "urn:russian-companion:original-research-synthesis:${record.sourceRevision}",
                     record.sourceUrl,
                 )
+            } else if (record.sourceId == "src-enwiki-reflexive-pronoun-1374712982") {
+                assertEquals(record.itemId, "1374712982", record.sourceRevision)
+                assertEquals(record.itemId, "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982", record.sourceUrl)
+            } else if (record.sourceId == "src-openrussian-50e210c4") {
+                assertEquals(record.itemId, "50e210c4803237779cb562bc1abcea529066031c", record.sourceRevision)
+                assertTrue(record.itemId, record.sourceUrl in listOf("nouns.csv", "adjectives.csv", "others.csv", "verbs.csv").map {
+                    "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/$it"
+                })
             } else if (record.unitNumber in 26..30) {
                 assertTrue(record.itemId, record.sourceUrl.contains("oldid=${record.sourceRevision}"))
             }
@@ -72,7 +108,7 @@ class Units35SourceIntakeTest {
             assertTrue(record.attribution.isNotBlank())
             if (record.sourceId == "src-ruwikisource-vechera-5336197") {
                 assertEquals("Public domain", record.licenseId)
-            } else if (record.sourceId == "src-original-research-synthesis") {
+            } else if (record.sourceId in setOf("src-original-research-synthesis", "src-content-audit-research")) {
                 assertEquals("Original app text", record.licenseId)
                 assertEquals("urn:russian-companion:license:original-app-text", record.licenseUrl)
             } else {
@@ -85,7 +121,7 @@ class Units35SourceIntakeTest {
             assertEquals(null, record.audioAssetId)
             val expectedLicense = when (record.sourceId) {
                 "src-ruwikisource-vechera-5336197" -> "Public domain"
-                "src-original-research-synthesis" -> "Original app text"
+                "src-original-research-synthesis", "src-content-audit-research" -> "Original app text"
                 else -> "CC BY-SA 4.0"
             }
             assertTrue(pack.sources.any { it.id == record.sourceId && it.license == expectedLicense })

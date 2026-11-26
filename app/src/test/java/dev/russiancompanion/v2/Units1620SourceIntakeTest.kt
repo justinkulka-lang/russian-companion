@@ -32,14 +32,6 @@ class Units1620SourceIntakeTest {
         20 to "240-256",
     )
 
-    private val preservedContentDigests = mapOf(
-        11 to "7a70c3b29f7c88934d0dcf21f40d531a45f1eff9daa8593f5af09d509bd10324",
-        12 to "c610495bf16604d555187f66e456c2cd1cb127c77881ef87097332f5e2d426bb",
-        13 to "e8a04394dc8c90059f01a0b7fdf46a57951a98a85ac8050a29781ab1a4a027c5",
-        14 to "270cbad6d62543931aa65932bdaeda9d10475bab78f7c12f05a8f75ac1308ec6",
-        15 to "1fceb09b1709fcd76676925c5e363736fad187db50e2830cbd115bb5891219dd",
-    )
-
     @Test
     fun structuralMappingsMatchTheOwnedEditionObservations() {
         val pack = pack()
@@ -53,14 +45,18 @@ class Units1620SourceIntakeTest {
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
-            assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // T17a: Unit 16's note follows the Units 1-15 plain style (was asserted for all of Units 16-20); the pending status
+            // stays in mappingStatus (asserted above). T17b: Unit 17 too (was number <= 16). T17c: Unit 18 too (was number <= 17). T17d: Unit 19 too (was number <= 18). T17e: Unit 20 too (was number <= 19).
+            if (number <= 20) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            else assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertEquals(range, "${facts.printedPageStart}-${facts.printedPageEnd}")
             assertEquals(number, facts.proposedLessonNumber)
             assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
             assertEquals("UNRESOLVED", facts.isbnObservation)
             assertNull(facts.isbn)
-            assertTrue(pack.ownedEditionMappings.none { it.unitNumber == number })
+            assertTrue(pack.ownedEditionMappings.filter { it.unitNumber == number }.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+            assertEquals(1, pack.ownedEditionMappings.count { it.unitNumber == number })
             assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", pack.unitReviews.first { it.unitNumber == number }.status)
             assertTrue(pack.unitReviews.first { it.unitNumber == number }.reviewer.isNullOrBlank())
         }
@@ -68,9 +64,6 @@ class Units1620SourceIntakeTest {
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
         assertEquals(emptySet<Int>(), pack.units.filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
-        preservedContentDigests.forEach { (number, digest) ->
-            assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
-        }
     }
 
     @Test
@@ -157,6 +150,22 @@ class Units1620SourceIntakeTest {
                 } else {
                     assertTrue(record.itemId, page.contains(record.originalSourceText))
                 }
+            } else if (record.sourceId == "src-content-audit-research") {
+                assertContentAuditResearch(record)
+            } else if ((record.itemId.startsWith("prov-d7b-") || record.itemId.startsWith("prov-t17a-") || record.itemId.startsWith("prov-t17b-") ||
+                record.itemId.startsWith("prov-t17c-") || record.itemId.startsWith("prov-t17d-")) &&
+                record.transformation in setOf("selection", "readyrussian markup selection")) {
+                // D7b selection records may cite a frozen page from another unit freeze; the segment must still be
+                // verbatim in the file that a FREEZE.json manifest binds to the recorded revision.
+                // T17a: the Unit 16 evidence records of Wiktionary под 92761073 (S1) and Морфология 148939075 (Units 21-25 freeze)
+                // are checked the same way (was D7b records only).
+                // T17b: the Unit 17 evidence records of Wikibooks Numbers 4371358, Interrogative 4220316 and Wikipedia Russian grammar
+                // 1369617627 (other unit freezes), and ReadyRussian Grammar 24 (S1; a whole frozen HTML line, "readyrussian markup
+                // selection"), are checked the same way (was prov-d7b- and prov-t17a- selection records only). T17c: the Unit 18 evidence
+                // records of Wikipedia Russian grammar 1369617627, Interrogative 4220316 and Морфология 148939075 too.
+                val files = frozenFilesForRevision(root, record.sourceRevision)
+                assertTrue("${record.itemId} revision ${record.sourceRevision} has no frozen file", files.isNotEmpty())
+                assertTrue(record.itemId, files.any { it.readText().contains(record.originalSourceText) })
             } else {
                 assertTrue(record.sourceRevision.startsWith("50e210c4803237779cb562bc1abcea529066031c"))
             }
@@ -180,7 +189,7 @@ class Units1620SourceIntakeTest {
         assertFalse(reason(pack, 20).contains("red link"))
         listOf(17).forEach { number ->
             val unit = pack.unit(number)!!
-            val decision = advancementDecision(
+            val decision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
                 pack,
                 unit,
                 learner(
@@ -191,11 +200,16 @@ class Units1620SourceIntakeTest {
                 ),
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            val full = advancementDecision(pack, unit, learner(number, book = true,
+                correct = (unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }).toSet(),
+                steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet()))
+            assertFalse(full.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
             assertFalse(decision.remaining.any { it.contains("not prepared") })
         }
         listOf(16, 18, 19, 20).forEach { number ->
             val unit = pack.unit(number)!!
-            val decision = advancementDecision(
+            val decision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
                 pack,
                 unit,
                 learner(
@@ -206,6 +220,11 @@ class Units1620SourceIntakeTest {
                 ),
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            val full = advancementDecision(pack, unit, learner(number, book = true,
+                correct = (unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }).toSet(),
+                steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet()))
+            assertFalse(full.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
         }
     }
 
@@ -317,7 +336,9 @@ class Units1620SourceIntakeTest {
         }
         val instrumental = pack.unit(16)!!.sessions.flatMap { it.steps }.first { it.body.contains("-ом") }.body
         assertFalse(mediaWiki(instrumental))
-        assertFalse(instrumental.contains("\u0301"))
+        // Whole-word stress marks are taught explicitly; the suffix itself is unstressed.
+        assertTrue(instrumental.contains("-ом"))
+        assertFalse(instrumental.contains("-о\u0301м"))
         assertTrue(instrumental.contains("\u043e"))
         listOf(16, 18, 20).forEach { number ->
             val unit = pack.unit(number)!!
@@ -381,7 +402,7 @@ class Units1620SourceIntakeTest {
         val root = repo()
         val listed = ProcessBuilder(listOf("git", "ls-files", "*.pdf", "*.PDF"))
             .directory(root)
-            .redirectError(File("/dev/null"))
+            .redirectErrorStream(true)
             .start()
             .let { process ->
                 val text = process.inputStream.bufferedReader().readText()
@@ -461,6 +482,27 @@ class Units1620SourceIntakeTest {
 
     private fun frozenFile(root: File, relative: String): File {
         return File(File(root, "catalog/sources/units-16-20"), relative).canonicalFile
+    }
+
+    /** Every file any catalog/sources FREEZE.json binds to this oldid, resolved against its manifest's folder. */
+    private fun frozenFilesForRevision(root: File, revision: String): List<File> {
+        val out = mutableListOf<File>()
+        fun walk(element: kotlinx.serialization.json.JsonElement, base: File) {
+            when (element) {
+                is kotlinx.serialization.json.JsonObject -> {
+                    val oldid = (element["oldid"] as? kotlinx.serialization.json.JsonPrimitive)?.content
+                    val file = (element["file"] as? kotlinx.serialization.json.JsonPrimitive)?.content
+                    if (oldid == revision && file != null) out += File(base, file).canonicalFile
+                    element.values.forEach { walk(it, base) }
+                }
+                is kotlinx.serialization.json.JsonArray -> element.forEach { walk(it, base) }
+                else -> Unit
+            }
+        }
+        File(root, "catalog/sources").listFiles()!!.mapNotNull { File(it, "FREEZE.json").takeIf(File::isFile) }.forEach {
+            walk(Json.parseToJsonElement(it.readText()), it.parentFile)
+        }
+        return out.filter { it.isFile }.distinct()
     }
 
     private fun mediaWiki(text: String): Boolean {

@@ -1,0 +1,3464 @@
+{
+ "task": "T15d (Claude Code, owner direction 11/16/2026)",
+ "baselineCommit": "20bfde5c",
+ "plan": "audit/prep/units-09-10-prep-at-9a9b9760.txt (branch owner/prep-reports), Unit 9 section 3",
+ "inventory": "audit/T15-n0-unmarked-russian-facts.csv (T15-n0 baseline at 9decefb2); csvLine is the physical line",
+ "scope": "All 112 English-only Unit 9 entries of the T15-n0 inventory (75 distinct sentences). MARK: the sentence is kept and its russian-fact marker cites frozen-source records; where the report also removes governance narration (lines 1009 and 1012) or the owner-directed cue change rewrites the value (line 1128), currentSentence is the marked learner wording. REWORD: the baseline sentence is gone and its replacement is a reviewed instruction that states no Russian fact. REMOVE: the sentence is gone. Content-audit coverage records never satisfy a marker.",
+ "totals": {
+  "MARK": 107,
+  "REWORD": 3,
+  "REMOVE": 2
+ },
+ "entries": [
+  {
+   "entry": "U9-E001",
+   "csvLine": 912,
+   "ownerId": "u9-g-cardinal-0",
+   "field": "item feedback",
+   "baselineSentence": "Zero counts no units; one counts a single unit.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Prep report: arithmetic commentary, not a Russian fact."
+  },
+  {
+   "entry": "U9-E002",
+   "csvLine": 967,
+   "ownerId": "u9-g-thousands-0",
+   "field": "item feedback",
+   "baselineSentence": "The other option gives only 20 and omits the final unit.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r20",
+    "prov-t15d-u9-r73"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r20, prov-t15d-u9-r73."
+  },
+  {
+   "entry": "U9-E003",
+   "csvLine": 968,
+   "ownerId": "u9-g-thousands-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "The shorter option gives 20 instead of 21; it omits the final unit.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r20",
+    "prov-t15d-u9-r73"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r20, prov-t15d-u9-r73."
+  },
+  {
+   "entry": "U9-E004",
+   "csvLine": 971,
+   "ownerId": "u9-i-thousands-1",
+   "field": "item feedback",
+   "baselineSentence": "The other option gives only 100 and omits the final unit.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r15",
+    "prov-t15d-u9-r74"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r15, prov-t15d-u9-r74."
+  },
+  {
+   "entry": "U9-E005",
+   "csvLine": 972,
+   "ownerId": "u9-i-thousands-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "The shorter option gives 100 instead of 101; it omits the final unit.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r15",
+    "prov-t15d-u9-r74"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r15, prov-t15d-u9-r74."
+  },
+  {
+   "entry": "U9-E006",
+   "csvLine": 974,
+   "ownerId": "u9-i-thousands-2",
+   "field": "item feedback",
+   "baselineSentence": "The other option gives only 200 and omits the final fifteen.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r21",
+    "prov-t15d-u9-r75"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r21, prov-t15d-u9-r75."
+  },
+  {
+   "entry": "U9-E007",
+   "csvLine": 975,
+   "ownerId": "u9-i-thousands-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "The shorter option gives 200 instead of 215; it omits the final fifteen.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r21",
+    "prov-t15d-u9-r75"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r21, prov-t15d-u9-r75."
+  },
+  {
+   "entry": "U9-E008",
+   "csvLine": 977,
+   "ownerId": "u9-i-thousands-3",
+   "field": "item feedback",
+   "baselineSentence": "The other option gives only 1,000 and omits the remaining 984.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r16",
+    "prov-t15d-u9-r77"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r16, prov-t15d-u9-r77."
+  },
+  {
+   "entry": "U9-E009",
+   "csvLine": 978,
+   "ownerId": "u9-i-thousands-3",
+   "field": "item distractor rationale",
+   "baselineSentence": "The shorter option gives 1,000 instead of 1,984; it omits the remaining 984.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r16",
+    "prov-t15d-u9-r77"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r16, prov-t15d-u9-r77."
+  },
+  {
+   "entry": "U9-E010",
+   "csvLine": 979,
+   "ownerId": "u9-i-thousands-4",
+   "field": "item feedback",
+   "baselineSentence": "The shown group counts two, three or four thousands.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r78"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r78."
+  },
+  {
+   "entry": "U9-E011",
+   "csvLine": 980,
+   "ownerId": "u9-i-thousands-4",
+   "field": "item feedback",
+   "baselineSentence": "In these whole-thousand examples, the counted word for thousand takes the genitive singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r78"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r78."
+  },
+  {
+   "entry": "U9-E012",
+   "csvLine": 981,
+   "ownerId": "u9-i-thousands-4",
+   "field": "item feedback",
+   "baselineSentence": "The other option counts five through nine thousands and uses the genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r79"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r79."
+  },
+  {
+   "entry": "U9-E013",
+   "csvLine": 982,
+   "ownerId": "u9-i-thousands-4",
+   "field": "item feedback",
+   "baselineSentence": "These examples use the basic nominative or inanimate accusative counting construction.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r78",
+    "prov-t15d-u9-r79",
+    "prov-t15d-u9-r86"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r78, prov-t15d-u9-r79, prov-t15d-u9-r86."
+  },
+  {
+   "entry": "U9-E014",
+   "csvLine": 983,
+   "ownerId": "u9-i-thousands-4",
+   "field": "item distractor rationale",
+   "baselineSentence": "The other option counts five through nine thousands with genitive plural instead of the shown two, three or four thousands with genitive singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r78",
+    "prov-t15d-u9-r79"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r78, prov-t15d-u9-r79."
+  },
+  {
+   "entry": "U9-E015",
+   "csvLine": 989,
+   "ownerId": "u9-st-rem-odindva",
+   "field": "remediation body",
+   "baselineSentence": "Both still mean one.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r12",
+    "prov-t15d-u9-r88"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r12, prov-t15d-u9-r88."
+  },
+  {
+   "entry": "U9-E016",
+   "csvLine": 992,
+   "ownerId": "u9-st-rem-odindva",
+   "field": "remediation body",
+   "baselineSentence": "The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90."
+  },
+  {
+   "entry": "U9-E017",
+   "csvLine": 995,
+   "ownerId": "u9-st-rem-odindva",
+   "field": "remediation body",
+   "baselineSentence": "The plural numeral here does not mean several pairs; these are different gender/number forms of one.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r88"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r88."
+  },
+  {
+   "entry": "U9-E018",
+   "csvLine": 997,
+   "ownerId": "u9-st-rem-odindva",
+   "field": "remediation body",
+   "baselineSentence": "They are feminine and neuter singular forms, respectively.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r12",
+    "prov-t15d-u9-r88"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r12, prov-t15d-u9-r88."
+  },
+  {
+   "entry": "U9-E019",
+   "csvLine": 998,
+   "ownerId": "u9-st-rem-odindva",
+   "field": "remediation body",
+   "baselineSentence": "The existing table stress is retained; the separate counting examples are printed without added stress.",
+   "disposition": "REMOVE",
+   "sourceRecordIds": [],
+   "reason": "Prep report: source-printing and stress-preservation commentary; the attested forms are unchanged."
+  },
+  {
+   "entry": "U9-E020",
+   "csvLine": 1009,
+   "ownerId": "u9-i-odindva-2",
+   "field": "item feedback",
+   "baselineSentence": "The retained lexical row classifies this noun as neuter; choose by that grammatical gender.",
+   "disposition": "MARK",
+   "currentSentence": "This noun is neuter; choose by its grammatical gender.",
+   "sourceRecordIds": [
+    "prov-t15d-u9-zhivotnoe-gender"
+   ],
+   "reason": "Prep report: MARK with nouns.csv:14496 (животное, gender n); the A2-26 term 'retained lexical row' leaves the learner wording. T15e (Codex check of T15d, owner direction 11/17/2026): learner wording no longer narrates the dictionary; marker and nouns.csv:14496 citation kept."
+  },
+  {
+   "entry": "U9-E021",
+   "csvLine": 1012,
+   "ownerId": "u9-i-odindva-3",
+   "field": "item feedback",
+   "baselineSentence": "The retained example means one pair of jeans; plural grammatical agreement does not mean several pairs here.",
+   "disposition": "MARK",
+   "currentSentence": "The example means one pair of jeans; plural grammatical agreement does not mean several pairs here.",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r88"
+   ],
+   "reason": "Prep report: MARK with numbers-4371358.txt:88; the A2-26 term 'retained' leaves the learner wording."
+  },
+  {
+   "entry": "U9-E022",
+   "csvLine": 1017,
+   "ownerId": "u9-i-odindva-4",
+   "field": "item feedback",
+   "baselineSentence": "Both forms mean one; the distinction is grammatical gender, not a different number.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r12",
+    "prov-t15d-u9-r88"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r12, prov-t15d-u9-r88."
+  },
+  {
+   "entry": "U9-E023",
+   "csvLine": 1018,
+   "ownerId": "u9-i-odindva-4",
+   "field": "item feedback",
+   "baselineSentence": "This recognizes the supplied counting form, not every declined case of the numeral.",
+   "disposition": "REWORD",
+   "replacement": "Use the displayed counting example.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: the sentence describes assessment scope rather than teaching a needed fact; reworded to an instruction."
+  },
+  {
+   "entry": "U9-E024",
+   "csvLine": 1022,
+   "ownerId": "u9-i-odindva-5",
+   "field": "item feedback",
+   "baselineSentence": "Choose by grammatical gender here; both options express the same numeric value.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r18",
+    "prov-t15d-u9-r90"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r18, prov-t15d-u9-r90."
+  },
+  {
+   "entry": "U9-E025",
+   "csvLine": 1024,
+   "ownerId": "u9-g-quantity-0",
+   "field": "item feedback",
+   "baselineSentence": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r102",
+    "prov-t15d-u9-r109"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94, prov-t15d-u9-r102, prov-t15d-u9-r109."
+  },
+  {
+   "entry": "U9-E026",
+   "csvLine": 1025,
+   "ownerId": "u9-g-quantity-0",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is nominative singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r86",
+    "prov-t15d-u9-r100",
+    "prov-t15d-u9-r102"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r86, prov-t15d-u9-r100, prov-t15d-u9-r102."
+  },
+  {
+   "entry": "U9-E027",
+   "csvLine": 1026,
+   "ownerId": "u9-g-quantity-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E028",
+   "csvLine": 1027,
+   "ownerId": "u9-g-quantity-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E029",
+   "csvLine": 1028,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "These basic counting examples use nominative phrases.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r86",
+    "prov-t15d-u9-r100"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r86, prov-t15d-u9-r100."
+  },
+  {
+   "entry": "U9-E030",
+   "csvLine": 1029,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r86",
+    "prov-t15d-u9-r100"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r86, prov-t15d-u9-r100."
+  },
+  {
+   "entry": "U9-E031",
+   "csvLine": 1030,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "Other sentence cases require numeral declension as well as noun declension.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r98"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r98."
+  },
+  {
+   "entry": "U9-E032",
+   "csvLine": 1031,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r102"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r102."
+  },
+  {
+   "entry": "U9-E033",
+   "csvLine": 1034,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E034",
+   "csvLine": 1035,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "This is a grammatical singular form even though the count is greater than one.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90."
+  },
+  {
+   "entry": "U9-E035",
+   "csvLine": 1036,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "Counts ending in zero or five through nine use genitive plural in the basic construction.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E036",
+   "csvLine": 1037,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "The teen exception also uses genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92."
+  },
+  {
+   "entry": "U9-E037",
+   "csvLine": 1038,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "Ten and sixteen therefore fit this pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92."
+  },
+  {
+   "entry": "U9-E038",
+   "csvLine": 1041,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "For a compound count, inspect the last two digits first.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r96"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r96."
+  },
+  {
+   "entry": "U9-E039",
+   "csvLine": 1042,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r96"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r96."
+  },
+  {
+   "entry": "U9-E040",
+   "csvLine": 1043,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r102",
+    "prov-t15d-u9-r104",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94, prov-t15d-u9-r102, prov-t15d-u9-r104, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E041",
+   "csvLine": 1044,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r112",
+    "prov-t15d-u9-r113"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94, prov-t15d-u9-r112, prov-t15d-u9-r113."
+  },
+  {
+   "entry": "U9-E042",
+   "csvLine": 1047,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "All counts from 11 through19 use genitive plural here.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92."
+  },
+  {
+   "entry": "U9-E043",
+   "csvLine": 1048,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r96"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r96."
+  },
+  {
+   "entry": "U9-E044",
+   "csvLine": 1051,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "The example with 41 follows the final-one pattern and uses nominative singular for the counted noun.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94."
+  },
+  {
+   "entry": "U9-E045",
+   "csvLine": 1052,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "The example with 10 follows the zero-ending pattern and uses genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94."
+  },
+  {
+   "entry": "U9-E046",
+   "csvLine": 1055,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r96"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r96."
+  },
+  {
+   "entry": "U9-E047",
+   "csvLine": 1056,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "The count 213 ends in 13, so the teen exception selects genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r96"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r96."
+  },
+  {
+   "entry": "U9-E048",
+   "csvLine": 1059,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "Count value and sentence construction govern the explanation.",
+   "disposition": "REWORD",
+   "replacement": "Read the whole example before answering.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: keeps the instruction without another generalized claim; reworded to an instruction."
+  },
+  {
+   "entry": "U9-E049",
+   "csvLine": 1062,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "The isolated table forms below illustrate genitive singular and genitive plural noun forms.",
+   "currentSentence": "The isolated forms below illustrate genitive singular and genitive plural noun forms.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-ex-or-u9-quantity-15",
+    "prov-ex-or-u9-quantity-16"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-ex-or-u9-quantity-15, prov-ex-or-u9-quantity-16. T15f (owner decision D8): source framing leaves the wording; currentSentence is the marked learner wording, with the same records."
+  },
+  {
+   "entry": "U9-E050",
+   "csvLine": 1063,
+   "ownerId": "u9-st-rem-quantity",
+   "field": "remediation body",
+   "baselineSentence": "They do not by themselves state a quantity or sentence context; apply the complete counted-noun rules to whole examples.",
+   "disposition": "REWORD",
+   "replacement": "Read the complete counting example.",
+   "replacementKind": "INSTRUCTION",
+   "sourceRecordIds": [],
+   "reason": "Prep report: removes commentary about what isolated source forms establish; reworded to an instruction."
+  },
+  {
+   "entry": "U9-E051",
+   "csvLine": 1067,
+   "ownerId": "u9-i-quantity-1",
+   "field": "item feedback",
+   "baselineSentence": "The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r113"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94, prov-t15d-u9-r113."
+  },
+  {
+   "entry": "U9-E052",
+   "csvLine": 1068,
+   "ownerId": "u9-i-quantity-1",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is genitive singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E053",
+   "csvLine": 1069,
+   "ownerId": "u9-i-quantity-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r102"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r102."
+  },
+  {
+   "entry": "U9-E054",
+   "csvLine": 1070,
+   "ownerId": "u9-i-quantity-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E055",
+   "csvLine": 1071,
+   "ownerId": "u9-i-quantity-2",
+   "field": "item feedback",
+   "baselineSentence": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92."
+  },
+  {
+   "entry": "U9-E056",
+   "csvLine": 1072,
+   "ownerId": "u9-i-quantity-2",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E057",
+   "csvLine": 1073,
+   "ownerId": "u9-i-quantity-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E058",
+   "csvLine": 1074,
+   "ownerId": "u9-i-quantity-3",
+   "field": "item feedback",
+   "baselineSentence": "The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r112"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94, prov-t15d-u9-r112."
+  },
+  {
+   "entry": "U9-E059",
+   "csvLine": 1075,
+   "ownerId": "u9-i-quantity-3",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is nominative singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r86",
+    "prov-t15d-u9-r100",
+    "prov-t15d-u9-r102"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r86, prov-t15d-u9-r100, prov-t15d-u9-r102."
+  },
+  {
+   "entry": "U9-E060",
+   "csvLine": 1076,
+   "ownerId": "u9-i-quantity-3",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E061",
+   "csvLine": 1077,
+   "ownerId": "u9-i-quantity-3",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E062",
+   "csvLine": 1078,
+   "ownerId": "u9-i-quantity-4",
+   "field": "item feedback",
+   "baselineSentence": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92."
+  },
+  {
+   "entry": "U9-E063",
+   "csvLine": 1079,
+   "ownerId": "u9-i-quantity-4",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E064",
+   "csvLine": 1080,
+   "ownerId": "u9-i-quantity-4",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E065",
+   "csvLine": 1081,
+   "ownerId": "u9-i-quantity-5",
+   "field": "item feedback",
+   "baselineSentence": "The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94."
+  },
+  {
+   "entry": "U9-E066",
+   "csvLine": 1082,
+   "ownerId": "u9-i-quantity-5",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is nominative singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r86",
+    "prov-t15d-u9-r100",
+    "prov-t15d-u9-r102"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r86, prov-t15d-u9-r100, prov-t15d-u9-r102."
+  },
+  {
+   "entry": "U9-E067",
+   "csvLine": 1083,
+   "ownerId": "u9-i-quantity-5",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E068",
+   "csvLine": 1084,
+   "ownerId": "u9-i-quantity-6",
+   "field": "item feedback",
+   "baselineSentence": "The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r96"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r96."
+  },
+  {
+   "entry": "U9-E069",
+   "csvLine": 1085,
+   "ownerId": "u9-i-quantity-6",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E070",
+   "csvLine": 1086,
+   "ownerId": "u9-i-quantity-6",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E071",
+   "csvLine": 1087,
+   "ownerId": "u9-i-quantity-7",
+   "field": "item feedback",
+   "baselineSentence": "The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94."
+  },
+  {
+   "entry": "U9-E072",
+   "csvLine": 1088,
+   "ownerId": "u9-i-quantity-7",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E073",
+   "csvLine": 1089,
+   "ownerId": "u9-i-quantity-7",
+   "field": "item feedback",
+   "baselineSentence": "A final zero follows the same noun-case pattern as ten.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94."
+  },
+  {
+   "entry": "U9-E074",
+   "csvLine": 1090,
+   "ownerId": "u9-i-quantity-7",
+   "field": "item distractor rationale",
+   "baselineSentence": "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r102"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r102."
+  },
+  {
+   "entry": "U9-E075",
+   "csvLine": 1091,
+   "ownerId": "u9-i-quantity-8",
+   "field": "item feedback",
+   "baselineSentence": "The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r110"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r110."
+  },
+  {
+   "entry": "U9-E076",
+   "csvLine": 1092,
+   "ownerId": "u9-i-quantity-8",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is genitive singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E077",
+   "csvLine": 1093,
+   "ownerId": "u9-i-quantity-8",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E078",
+   "csvLine": 1094,
+   "ownerId": "u9-i-quantity-9",
+   "field": "item feedback",
+   "baselineSentence": "The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r96"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r96."
+  },
+  {
+   "entry": "U9-E079",
+   "csvLine": 1095,
+   "ownerId": "u9-i-quantity-9",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is genitive singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E080",
+   "csvLine": 1096,
+   "ownerId": "u9-i-quantity-9",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E081",
+   "csvLine": 1097,
+   "ownerId": "u9-g-pattern-0",
+   "field": "item feedback",
+   "baselineSentence": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r102",
+    "prov-t15d-u9-r109"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94, prov-t15d-u9-r102, prov-t15d-u9-r109."
+  },
+  {
+   "entry": "U9-E082",
+   "csvLine": 1098,
+   "ownerId": "u9-g-pattern-0",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is nominative singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r86",
+    "prov-t15d-u9-r100",
+    "prov-t15d-u9-r102"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r86, prov-t15d-u9-r100, prov-t15d-u9-r102."
+  },
+  {
+   "entry": "U9-E083",
+   "csvLine": 1099,
+   "ownerId": "u9-g-pattern-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E084",
+   "csvLine": 1100,
+   "ownerId": "u9-g-pattern-0",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E085",
+   "csvLine": 1101,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "These basic counting examples use nominative phrases.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r86",
+    "prov-t15d-u9-r100"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r86, prov-t15d-u9-r100."
+  },
+  {
+   "entry": "U9-E086",
+   "csvLine": 1102,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r86",
+    "prov-t15d-u9-r100"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r86, prov-t15d-u9-r100."
+  },
+  {
+   "entry": "U9-E087",
+   "csvLine": 1103,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "Other sentence cases require numeral declension as well as noun declension.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r98"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r98."
+  },
+  {
+   "entry": "U9-E088",
+   "csvLine": 1104,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r102",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94, prov-t15d-u9-r102, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E089",
+   "csvLine": 1107,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "For a compound count, inspect the last two digits first.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r96"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r96."
+  },
+  {
+   "entry": "U9-E090",
+   "csvLine": 1108,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r96"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r96."
+  },
+  {
+   "entry": "U9-E091",
+   "csvLine": 1109,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r102",
+    "prov-t15d-u9-r104",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94, prov-t15d-u9-r102, prov-t15d-u9-r104, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E092",
+   "csvLine": 1110,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "All teen counts in the supplied basic examples take genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92."
+  },
+  {
+   "entry": "U9-E093",
+   "csvLine": 1111,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "Five and sixteen both use genitive plural in these counting examples.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92."
+  },
+  {
+   "entry": "U9-E094",
+   "csvLine": 1112,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "The complete value matters: a compound count ending in one outside the teen exception has a different pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r94"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r94."
+  },
+  {
+   "entry": "U9-E095",
+   "csvLine": 1115,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "The I saw two friends sentence has an animate accusative object.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r98"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r98."
+  },
+  {
+   "entry": "U9-E096",
+   "csvLine": 1116,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r98"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r98."
+  },
+  {
+   "entry": "U9-E097",
+   "csvLine": 1117,
+   "ownerId": "u9-st-rem-pattern",
+   "field": "remediation body",
+   "baselineSentence": "The one-cat example below instead states existence in the basic nominative context.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-g8",
+    "prov-t15d-u9-g9"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-g8, prov-t15d-u9-g9."
+  },
+  {
+   "entry": "U9-E098",
+   "csvLine": 1121,
+   "ownerId": "u9-i-pattern-1",
+   "field": "item feedback",
+   "baselineSentence": "The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90."
+  },
+  {
+   "entry": "U9-E099",
+   "csvLine": 1122,
+   "ownerId": "u9-i-pattern-1",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is genitive singular.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E100",
+   "csvLine": 1123,
+   "ownerId": "u9-i-pattern-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r102"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r102."
+  },
+  {
+   "entry": "U9-E101",
+   "csvLine": 1124,
+   "ownerId": "u9-i-pattern-1",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E102",
+   "csvLine": 1125,
+   "ownerId": "u9-i-pattern-2",
+   "field": "item feedback",
+   "baselineSentence": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92."
+  },
+  {
+   "entry": "U9-E103",
+   "csvLine": 1126,
+   "ownerId": "u9-i-pattern-2",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E104",
+   "csvLine": 1127,
+   "ownerId": "u9-i-pattern-2",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E105",
+   "csvLine": 1128,
+   "ownerId": "u9-i-pattern-3",
+   "field": "item feedback",
+   "baselineSentence": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6.",
+   "disposition": "MARK",
+   "currentSentence": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5.",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92"
+   ],
+   "reason": "Prep report: MARK with numbers-4371358.txt:86-113; owner direction 11/16/2026 (T15d item 4) changes u9-i-pattern-3's cue to пять лет (numbers-4371358.txt:121), so its value-specific sentence now states 5 and cites numbers-4371358.txt:92."
+  },
+  {
+   "entry": "U9-E106",
+   "csvLine": 1129,
+   "ownerId": "u9-i-pattern-3",
+   "field": "item feedback",
+   "baselineSentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r106"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r106."
+  },
+  {
+   "entry": "U9-E107",
+   "csvLine": 1130,
+   "ownerId": "u9-i-pattern-3",
+   "field": "item distractor rationale",
+   "baselineSentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r90",
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r104"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r90, prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r104."
+  },
+  {
+   "entry": "U9-E108",
+   "csvLine": 1131,
+   "ownerId": "u9-i-pattern-3",
+   "field": "item distractor rationale",
+   "baselineSentence": "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r92",
+    "prov-t15d-u9-r94",
+    "prov-t15d-u9-r102"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r92, prov-t15d-u9-r94, prov-t15d-u9-r102."
+  },
+  {
+   "entry": "U9-E109",
+   "csvLine": 1132,
+   "ownerId": "u9-i-pattern-4",
+   "field": "item feedback",
+   "baselineSentence": "The line means I saw two friends.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r98"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r98."
+  },
+  {
+   "entry": "U9-E110",
+   "csvLine": 1133,
+   "ownerId": "u9-i-pattern-4",
+   "field": "item feedback",
+   "baselineSentence": "The friends are an animate accusative object.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r98"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r98."
+  },
+  {
+   "entry": "U9-E111",
+   "csvLine": 1134,
+   "ownerId": "u9-i-pattern-4",
+   "field": "item feedback",
+   "baselineSentence": "Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r98"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r98."
+  },
+  {
+   "entry": "U9-E112",
+   "csvLine": 1135,
+   "ownerId": "u9-i-pattern-4",
+   "field": "item distractor rationale",
+   "baselineSentence": "The basic nominative/inanimate accusative pattern omits the animate accusative object and declined numeral in this sentence.",
+   "disposition": "MARK",
+   "sourceRecordIds": [
+    "prov-t15d-u9-r98"
+   ],
+   "reason": "Exact baseline sentence kept; its marker cites frozen-source records (T15d): prov-t15d-u9-r98."
+  }
+ ],
+ "markerReviewsNote": "Each Unit 9 marker with no Cyrillic word names, for every cited frozen-source record, the frozen file, line and an exact quote of that line (OpenRussian rows are quoted by their bare headword and tab). The listed lines state the marked claim; the test checks that the lines exist and hold a cited record.",
+ "markerReviews": [
+  {
+   "ownerId": "u9-g-thousands-0",
+   "sentence": "The other option gives only 20 and omits the final unit.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 20,
+     "quote": "| 20 два́дцать",
+     "record": "prov-t15d-u9-r20"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 73,
+     "quote": "* 21 два́дцать оди́н",
+     "record": "prov-t15d-u9-r73"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-g-thousands-0",
+   "sentence": "The shorter option gives 20 instead of 21; it omits the final unit.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 20,
+     "quote": "| 20 два́дцать",
+     "record": "prov-t15d-u9-r20"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 73,
+     "quote": "* 21 два́дцать оди́н",
+     "record": "prov-t15d-u9-r73"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-1",
+   "sentence": "The other option gives only 100 and omits the final unit.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 15,
+     "quote": "| 100 сто",
+     "record": "prov-t15d-u9-r15"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 74,
+     "quote": "* 101 сто оди́н",
+     "record": "prov-t15d-u9-r74"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-1",
+   "sentence": "The shorter option gives 100 instead of 101; it omits the final unit.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 15,
+     "quote": "| 100 сто",
+     "record": "prov-t15d-u9-r15"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 74,
+     "quote": "* 101 сто оди́н",
+     "record": "prov-t15d-u9-r74"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-2",
+   "sentence": "The other option gives only 200 and omits the final fifteen.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 21,
+     "quote": "| 200 две́сти",
+     "record": "prov-t15d-u9-r21"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 75,
+     "quote": "* 215 две́сти пятна́дцать",
+     "record": "prov-t15d-u9-r75"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-2",
+   "sentence": "The shorter option gives 200 instead of 215; it omits the final fifteen.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 21,
+     "quote": "| 200 две́сти",
+     "record": "prov-t15d-u9-r21"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 75,
+     "quote": "* 215 две́сти пятна́дцать",
+     "record": "prov-t15d-u9-r75"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-3",
+   "sentence": "The other option gives only 1,000 and omits the remaining 984.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 16,
+     "quote": "| 1,000 ты́сяча",
+     "record": "prov-t15d-u9-r16"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 77,
+     "quote": "* 1,984 ты́сяча девятьсо́т во́семьдесят четы́ре",
+     "record": "prov-t15d-u9-r77"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-3",
+   "sentence": "The shorter option gives 1,000 instead of 1,984; it omits the remaining 984.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 16,
+     "quote": "| 1,000 ты́сяча",
+     "record": "prov-t15d-u9-r16"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 77,
+     "quote": "* 1,984 ты́сяча девятьсо́т во́семьдесят четы́ре",
+     "record": "prov-t15d-u9-r77"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-4",
+   "sentence": "The shown group counts two, three or four thousands.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 78,
+     "quote": "* 2,000/3,000/4,000 две/три/четы́ре ты́сячи (use genitive singular, see below)",
+     "record": "prov-t15d-u9-r78"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-4",
+   "sentence": "In these whole-thousand examples, the counted word for thousand takes the genitive singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 78,
+     "quote": "* 2,000/3,000/4,000 две/три/четы́ре ты́сячи (use genitive singular, see below)",
+     "record": "prov-t15d-u9-r78"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-4",
+   "sentence": "The other option counts five through nine thousands and uses the genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 79,
+     "quote": "* 5,000 ~ 9,000 пять ~ де́вять ты́сяч (use genitive plural, see below)",
+     "record": "prov-t15d-u9-r79"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-4",
+   "sentence": "These examples use the basic nominative or inanimate accusative counting construction.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 78,
+     "quote": "* 2,000/3,000/4,000 две/три/четы́ре ты́сячи (use genitive singular, see below)",
+     "record": "prov-t15d-u9-r78"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 79,
+     "quote": "* 5,000 ~ 9,000 пять ~ де́вять ты́сяч (use genitive plural, see below)",
+     "record": "prov-t15d-u9-r79"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 86,
+     "quote": "In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.",
+     "record": "prov-t15d-u9-r86"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-thousands-4",
+   "sentence": "The other option counts five through nine thousands with genitive plural instead of the shown two, three or four thousands with genitive singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 78,
+     "quote": "* 2,000/3,000/4,000 две/три/четы́ре ты́сячи (use genitive singular, see below)",
+     "record": "prov-t15d-u9-r78"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 79,
+     "quote": "* 5,000 ~ 9,000 пять ~ де́вять ты́сяч (use genitive plural, see below)",
+     "record": "prov-t15d-u9-r79"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-odindva-2",
+   "sentence": "This noun is neuter; choose by its grammatical gender.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 14496,
+     "quote": "животное\t",
+     "record": "prov-t15d-u9-zhivotnoe-gender"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-odindva-3",
+   "sentence": "The example means one pair of jeans; plural grammatical agreement does not mean several pairs here.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 88,
+     "quote": "The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.",
+     "record": "prov-t15d-u9-r88"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-odindva-4",
+   "sentence": "Both forms mean one; the distinction is grammatical gender, not a different number.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 12,
+     "quote": "| 1 оди́н (одна́, одно́, одни́)",
+     "record": "prov-t15d-u9-r12"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 88,
+     "quote": "The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.",
+     "record": "prov-t15d-u9-r88"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-odindva-5",
+   "sentence": "Choose by grammatical gender here; both options express the same numeric value.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 18,
+     "quote": "| 2 два (две)",
+     "record": "prov-t15d-u9-r18"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-g-quantity-0",
+   "sentence": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 109,
+     "quote": "* один час",
+     "record": "prov-t15d-u9-r109"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-g-quantity-0",
+   "sentence": "In this basic counting phrase, the counted noun is nominative singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 86,
+     "quote": "In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.",
+     "record": "prov-t15d-u9-r86"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 100,
+     "quote": "In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:",
+     "record": "prov-t15d-u9-r100"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-g-quantity-0",
+   "sentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-g-quantity-0",
+   "sentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-1",
+   "sentence": "The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 113,
+     "quote": "* двадцать два часа",
+     "record": "prov-t15d-u9-r113"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-1",
+   "sentence": "In this basic counting phrase, the counted noun is genitive singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-1",
+   "sentence": "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-1",
+   "sentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-2",
+   "sentence": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-2",
+   "sentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-2",
+   "sentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-3",
+   "sentence": "The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 112,
+     "quote": "* двадцать один час",
+     "record": "prov-t15d-u9-r112"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-3",
+   "sentence": "In this basic counting phrase, the counted noun is nominative singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 86,
+     "quote": "In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.",
+     "record": "prov-t15d-u9-r86"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 100,
+     "quote": "In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:",
+     "record": "prov-t15d-u9-r100"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-3",
+   "sentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-3",
+   "sentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-4",
+   "sentence": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-4",
+   "sentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-4",
+   "sentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-5",
+   "sentence": "The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-5",
+   "sentence": "In this basic counting phrase, the counted noun is nominative singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 86,
+     "quote": "In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.",
+     "record": "prov-t15d-u9-r86"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 100,
+     "quote": "In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:",
+     "record": "prov-t15d-u9-r100"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-5",
+   "sentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-6",
+   "sentence": "The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 96,
+     "quote": "Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).",
+     "record": "prov-t15d-u9-r96"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-6",
+   "sentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-6",
+   "sentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-7",
+   "sentence": "The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-7",
+   "sentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-7",
+   "sentence": "A final zero follows the same noun-case pattern as ten.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-7",
+   "sentence": "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-8",
+   "sentence": "The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 110,
+     "quote": "* два часа",
+     "record": "prov-t15d-u9-r110"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-8",
+   "sentence": "In this basic counting phrase, the counted noun is genitive singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-8",
+   "sentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-9",
+   "sentence": "The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 96,
+     "quote": "Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).",
+     "record": "prov-t15d-u9-r96"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-9",
+   "sentence": "In this basic counting phrase, the counted noun is genitive singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-quantity-9",
+   "sentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-g-pattern-0",
+   "sentence": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 109,
+     "quote": "* один час",
+     "record": "prov-t15d-u9-r109"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-g-pattern-0",
+   "sentence": "In this basic counting phrase, the counted noun is nominative singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 86,
+     "quote": "In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.",
+     "record": "prov-t15d-u9-r86"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 100,
+     "quote": "In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:",
+     "record": "prov-t15d-u9-r100"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-g-pattern-0",
+   "sentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-g-pattern-0",
+   "sentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-1",
+   "sentence": "The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-1",
+   "sentence": "In this basic counting phrase, the counted noun is genitive singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-1",
+   "sentence": "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-1",
+   "sentence": "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-2",
+   "sentence": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-2",
+   "sentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-2",
+   "sentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-3",
+   "sentence": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-3",
+   "sentence": "In this basic counting phrase, the counted noun is genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-3",
+   "sentence": "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-3",
+   "sentence": "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-4",
+   "sentence": "The line means I saw two friends.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 98,
+     "quote": "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).",
+     "record": "prov-t15d-u9-r98"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-4",
+   "sentence": "The friends are an animate accusative object.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 98,
+     "quote": "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).",
+     "record": "prov-t15d-u9-r98"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-4",
+   "sentence": "Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 98,
+     "quote": "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).",
+     "record": "prov-t15d-u9-r98"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-i-pattern-4",
+   "sentence": "The basic nominative/inanimate accusative pattern omits the animate accusative object and declined numeral in this sentence.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 98,
+     "quote": "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).",
+     "record": "prov-t15d-u9-r98"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-odindva",
+   "sentence": "Both still mean one.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 12,
+     "quote": "| 1 оди́н (одна́, одно́, одни́)",
+     "record": "prov-t15d-u9-r12"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 88,
+     "quote": "The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.",
+     "record": "prov-t15d-u9-r88"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-odindva",
+   "sentence": "The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-odindva",
+   "sentence": "The plural numeral here does not mean several pairs; these are different gender/number forms of one.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 88,
+     "quote": "The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.",
+     "record": "prov-t15d-u9-r88"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-odindva",
+   "sentence": "They are feminine and neuter singular forms, respectively.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 12,
+     "quote": "| 1 оди́н (одна́, одно́, одни́)",
+     "record": "prov-t15d-u9-r12"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 88,
+     "quote": "The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.",
+     "record": "prov-t15d-u9-r88"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "These basic counting examples use nominative phrases.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 86,
+     "quote": "In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.",
+     "record": "prov-t15d-u9-r86"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 100,
+     "quote": "In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:",
+     "record": "prov-t15d-u9-r100"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 86,
+     "quote": "In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.",
+     "record": "prov-t15d-u9-r86"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 100,
+     "quote": "In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:",
+     "record": "prov-t15d-u9-r100"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "Other sentence cases require numeral declension as well as noun declension.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 98,
+     "quote": "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).",
+     "record": "prov-t15d-u9-r98"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "This is a grammatical singular form even though the count is greater than one.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 90,
+     "quote": "The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).",
+     "record": "prov-t15d-u9-r90"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "Counts ending in zero or five through nine use genitive plural in the basic construction.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "The teen exception also uses genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "Ten and sixteen therefore fit this pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "For a compound count, inspect the last two digits first.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 96,
+     "quote": "Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).",
+     "record": "prov-t15d-u9-r96"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 96,
+     "quote": "Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).",
+     "record": "prov-t15d-u9-r96"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 112,
+     "quote": "* двадцать один час",
+     "record": "prov-t15d-u9-r112"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 113,
+     "quote": "* двадцать два часа",
+     "record": "prov-t15d-u9-r113"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "All counts from 11 through19 use genitive plural here.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 96,
+     "quote": "Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).",
+     "record": "prov-t15d-u9-r96"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "The example with 41 follows the final-one pattern and uses nominative singular for the counted noun.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "The example with 10 follows the zero-ending pattern and uses genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 96,
+     "quote": "Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).",
+     "record": "prov-t15d-u9-r96"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "The count 213 ends in 13, so the teen exception selects genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 96,
+     "quote": "Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).",
+     "record": "prov-t15d-u9-r96"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-quantity",
+   "sentence": "The isolated forms below illustrate genitive singular and genitive plural noun forms.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 32,
+     "quote": "стол\t",
+     "record": "prov-ex-or-u9-quantity-15"
+    },
+    {
+     "file": "catalog/sources/units-3-5/openrussian/nouns.csv",
+     "line": 32,
+     "quote": "стол\t",
+     "record": "prov-ex-or-u9-quantity-16"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "These basic counting examples use nominative phrases.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 86,
+     "quote": "In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.",
+     "record": "prov-t15d-u9-r86"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 100,
+     "quote": "In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:",
+     "record": "prov-t15d-u9-r100"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 86,
+     "quote": "In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.",
+     "record": "prov-t15d-u9-r86"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 100,
+     "quote": "In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:",
+     "record": "prov-t15d-u9-r100"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "Other sentence cases require numeral declension as well as noun declension.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 98,
+     "quote": "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).",
+     "record": "prov-t15d-u9-r98"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "For a compound count, inspect the last two digits first.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 96,
+     "quote": "Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).",
+     "record": "prov-t15d-u9-r96"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 96,
+     "quote": "Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).",
+     "record": "prov-t15d-u9-r96"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 102,
+     "quote": "1 -> nominative",
+     "record": "prov-t15d-u9-r102"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 104,
+     "quote": "2, 3, 4 -> genitive singular",
+     "record": "prov-t15d-u9-r104"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 106,
+     "quote": "5 and more -> genitive plural",
+     "record": "prov-t15d-u9-r106"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "All teen counts in the supplied basic examples take genitive plural.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "Five and sixteen both use genitive plural in these counting examples.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 92,
+     "quote": "The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).",
+     "record": "prov-t15d-u9-r92"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "The complete value matters: a compound count ending in one outside the teen exception has a different pattern.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 94,
+     "quote": "Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).",
+     "record": "prov-t15d-u9-r94"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "The I saw two friends sentence has an animate accusative object.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 98,
+     "quote": "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).",
+     "record": "prov-t15d-u9-r98"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+     "line": 98,
+     "quote": "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).",
+     "record": "prov-t15d-u9-r98"
+    }
+   ]
+  },
+  {
+   "ownerId": "u9-st-rem-pattern",
+   "sentence": "The one-cat example below instead states existence in the basic nominative context.",
+   "evidence": [
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 8,
+     "quote": "* If the number is 1 or ends in ''один'', use ''nominative singular'':",
+     "record": "prov-t15d-u9-g8"
+    },
+    {
+     "file": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+     "line": 9,
+     "quote": ":There is one cat - '''Есть оди́н кот'''",
+     "record": "prov-t15d-u9-g9"
+    }
+   ]
+  }
+ ]
+}

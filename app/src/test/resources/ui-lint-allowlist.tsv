@@ -1,0 +1,336 @@
+file	literal	reason
+v2/ui/V2AnswerFeedback.kt	does not match the category or whole-phrase meaning requested here	matcher fragment: compared against pack rationales to find one that does not explain; never shown
+v2/ui/V2AnswerFeedback.kt	CUE	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2App.kt	completion-evidence	record, route, schema or rule identifier; not shown
+v2/ui/V2App.kt	onboarding-resume	record, route, schema or rule identifier; not shown
+v2/ui/V2App.kt	step:$stepId	storage, identity or route key; not shown
+v2/ui/V2App.kt	attempt:$stepId:$itemId:	storage, identity or route key; not shown
+v2/ui/V2App.kt	attempt:$stepId:$itemId:$selected	storage, identity or route key; not shown
+v2/ui/V2App.kt	review:open:$targetUnit	storage, identity or route key; not shown
+v2/ui/V2App.kt	review:answer:$assignment:$slot	storage, identity or route key; not shown
+v2/ui/V2App.kt	practice:$labId:$itemId:	storage, identity or route key; not shown
+v2/ui/V2App.kt	practice:$labId:$itemId:$selected	storage, identity or route key; not shown
+v2/ui/V2App.kt	bookmark:$targetId	storage, identity or route key; not shown
+v2/ui/V2App.kt	note:$targetId	storage, identity or route key; not shown
+v2/ui/V2App.kt	STEP	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2App.kt	tutor:$targetId	storage, identity or route key; not shown
+v2/ui/V2App.kt	book:$unit	storage, identity or route key; not shown
+v2/ui/V2App.kt	unit-test:start:$unit	storage, identity or route key; not shown
+v2/ui/V2App.kt	unit-test:answer:$attempt:$index	storage, identity or route key; not shown
+v2/ui/V2App.kt	unit-test:submit:$attempt	storage, identity or route key; not shown
+v2/ui/V2App.kt	binder:$unit	storage, identity or route key; not shown
+v2/ui/V2App.kt	target:$unit	storage, identity or route key; not shown
+v2/ui/V2App.kt	advance:$unit	storage, identity or route key; not shown
+v2/ui/V2App.kt	position:$sessionId:$index	storage, identity or route key; not shown
+v2/ui/V2BackupCoordinator.kt	russian-companion-staging	thread name of the backup staging I/O executor; not shown
+v2/ui/V2BackupCoordinator.kt	backup-${}	storage, identity or route key; not shown
+v2/ui/V2BackupCoordinator.kt	local-backup	record, route, schema or rule identifier; not shown
+v2/ui/V2BackupCoordinator.kt	backup-format-1	record, route, schema or rule identifier; not shown
+v2/ui/V2BackupCoordinator.kt	incoming-${}	storage, identity or route key; not shown
+v2/ui/V2BackupCoordinator.kt	restore-cancelled	error code carried by an exception; mapped to a message before display
+v2/ui/V2BackupCoordinator.kt	staging-delete-hold	developer error diagnostic (IllegalStateException from a test fault hold); not shown
+v2/ui/V2BackupCoordinator.kt	UNCHECKED_CAST	@Suppress annotation argument
+v2/ui/V2BackupCoordinator.kt	backup-recovery	record, route, schema or rule identifier; not shown
+v2/ui/V2BackupCoordinator.kt	v2-backup-${}	ViewModel key; not shown
+v2/ui/V2BackupScreen.kt	v2-backup-heading	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2BackupScreen.kt	v2-backup-message	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2BackupScreen.kt	v2-backup-confirm	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2BackupScreen.kt	v2-backup-create	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2BackupScreen.kt	russian-companion-backup.zip	learner-visible suggested save filename (approved)
+v2/ui/V2BackupScreen.kt	v2-backup-restore	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2BackupScreen.kt	application/octet-stream	MIME type for the document picker
+v2/ui/V2BackupScreen.kt	v2-backup-cancel	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Chrome.kt	v2-scaffold	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Chrome.kt	v2-content	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Chrome.kt	v2-persistence-state	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Chrome.kt	v2-back	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Chrome.kt	v2-bottom-nav	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Chrome.kt	v2-unit-row-$number	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Chrome.kt	v2-letter-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Chrome.kt	v2-letter-board	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Chrome.kt	v2-print-pair-grid	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Chrome.kt	v2-confusable-$cyrillic	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	cumulative-review	record, route, schema or rule identifier; not shown
+v2/ui/V2CumulativeReviewScreen.kt	eligibility-preview	record, route, schema or rule identifier; not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-insufficient	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-repair	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-repair-$number	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-start	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-count	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	CUE	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2CumulativeReviewScreen.kt	${}:$index	storage, identity or route key; not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-typed-$index	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-option-$index-$option	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-feedback-$index	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-rationale-$index	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-remediate-$index	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2CumulativeReviewScreen.kt	v2-review-gate	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2ListenPanel.kt	v2-play-model	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2ListenPanel.kt	v2-play-slowly	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2ListenPanel.kt	v2-record	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2ListenPanel.kt	v2-stop-recording	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2ListenPanel.kt	v2-replay-take	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2ListenPanel.kt	v2-compare-take	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2NavHost.kt	unit-test:	storage, identity or route key; not shown
+v2/ui/V2PracticeFlows.kt	saved-work	record, route, schema or rule identifier; not shown
+v2/ui/V2PracticeFlows.kt	v2-saved-heading	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-saved-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	practice-lab	record, route, schema or rule identifier; not shown
+v2/ui/V2PracticeFlows.kt	practice:$labId:$itemId:	storage, identity or route key; not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-next	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-submit	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-preparing	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-blocked	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-empty	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-progress	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-cue	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-prompt	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	$labId:${}:$index	storage, identity or route key; not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-typed-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-option-$option	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-feedback	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-rationale	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-close-explanation	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-review	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-explanation-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	v2-lab-explanation-example-$id	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2PracticeFlows.kt	TEACH	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2PracticeFlows.kt	REMEDIATE	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2ReviewStatusLabels.kt	APPROVED	status enum key of the D31b label map; the label, not the key, is shown
+v2/ui/V2ReviewStatusLabels.kt	REJECTED	status enum key of the D31b label map; the label, not the key, is shown
+v2/ui/V2ReviewStatusLabels.kt	NOT_REQUIRED	status enum key of the D31b label map; the label, not the key, is shown
+v2/ui/V2Screens.kt	$label:scheduled	storage, identity or route key; not shown
+v2/ui/V2Screens.kt	v2-retry	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-start-unit-1	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-onboarding-next	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-onboarding-welcome	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	today-checklist	record, route, schema or rule identifier; not shown
+v2/ui/V2Screens.kt	today-plan	record, route, schema or rule identifier; not shown
+v2/ui/V2Screens.kt	v2-continue	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-today-unit	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-today-objective	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-open-saved-work	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-checklist	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-checklist-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-course-intro	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-unit-heading	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-unit-state	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-unit-install	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-readiness	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	PENDING_CURRICULUM_REVIEWER	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	v2-mapping-pending	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-section-letter-board	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-section-sessions	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-advancement-rule	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-open-cumulative-review	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-advance	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-review-practice	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-next-practice	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-return-to-check	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	step:${}	storage, identity or route key; not shown
+v2/ui/V2Screens.kt	v2-session-continue	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-step-title	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-example-$exampleId	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-example-note-$exampleId	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-prompt-letter	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-item-prompt-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-option-${}-$option	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-item-feedback-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-item-rationale-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-remediation-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	STEP	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	v2-note-draft	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	note:${}	storage, identity or route key; not shown
+v2/ui/V2Screens.kt	v2-save-note	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	tutor:${}	storage, identity or route key; not shown
+v2/ui/V2Screens.kt	v2-tutor	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-saved-note-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-saved-tutor-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-practice-heading	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-section-confusable	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-section-print-pairs	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-alphabet-recognition	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-reference-search	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-reference-heading	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	REFERENCE	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	v2-progress-heading	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-open-backup	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-gradebook	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-gradebook-note	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-gradebook-unit-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-gradebook-objective-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-settings-heading	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-attributions-heading	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	source:${}	storage, identity or route key; not shown
+v2/ui/V2Screens.kt	license:${}	storage, identity or route key; not shown
+v2/ui/V2Screens.kt	CUE	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	v2-today-target	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-target-set	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-target-clear	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	v2-target-save	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2Screens.kt	CHECK	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	GUIDED	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	ORIENT	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	TEACH	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	ANKI	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	BINDER	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	BOOK	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	REMEDIATE	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	SPEAK	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2Screens.kt	TUTOR	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2TypedResponseInput.kt	v2-typed-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2TypedResponseInput.kt	$tag-input	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2TypedResponseInput.kt	$tag-submit	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2TypedResponseInput.kt	$tag-retry	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2TypedResponseInput.kt	$tag-reveal	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2TypedResponseInput.kt	$tag-answer	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2TypedResponseInput.kt	$tag-first-attempt	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-binder-prompt	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-binder-self-check	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-binder-status	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-binder-model	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-tutor-task	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-unavailable	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-summary	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-last	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-open	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-passmark	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-result	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-remediate-${}	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-retake	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-start	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-count	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	CUE	enum or status identifier (stored, compared or when label); not shown
+v2/ui/V2UnitTestScreen.kt	v2-test-option-$index-$option	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-unit-test-submit	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-test-typed-$index	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2UnitTestScreen.kt	v2-test-typed-save-$index	Compose test tag (Modifier.testTag / tag parameter); not shown
+v2/ui/V2WriteCoordinator.kt	attempt:${}:${}:	storage, identity or route key; not shown
+v2/ui/V2WriteCoordinator.kt	UNCHECKED_CAST	@Suppress annotation argument
+v2/backup/V2BackupFormat.kt	backup-write-failed	error code carried by an exception; mapped to a message before display
+v2/backup/V2BackupFormat.kt	staging-directory	developer error diagnostic (IllegalStateException when the staging directory cannot be created); not shown
+v2/backup/V2BackupFormat.kt	staging-create-hold	developer error diagnostic (IllegalStateException from a test fault hold); not shown
+v2/backup/V2BackupFormat.kt	incoming-	record, route, schema or rule identifier; not shown
+v2/backup/V2BackupFormat.kt	unsupported-backup-schema	error code carried by an exception; mapped to a message before display
+v2/backup/V2BackupFormat.kt	backup-size-limit	error code carried by an exception; mapped to a message before display
+v2/backup/V2BackupFormat.kt	DARK	enum or status identifier (stored, compared or when label); not shown
+v2/backup/V2BackupFormat.kt	FOLLOW_SYSTEM	enum or status identifier (stored, compared or when label); not shown
+v2/backup/V2BackupFormat.kt	${}.bin	asset or file path
+v2/backup/V2BackupFormat.kt	SHA-256	MessageDigest algorithm name
+v2/backup/V2BackupFormat.kt	recordings/$id.$safe	asset or file path
+v2/backup/V2BackupFormat.kt	CAN_READ_CYRILLIC	enum or status identifier (stored, compared or when label); not shown
+v2/backup/V2BackupFormat.kt	NEW_TO_CYRILLIC	enum or status identifier (stored, compared or when label); not shown
+v2/backup/V2BackupFormat.kt	RESUME_FROM_BOOK	enum or status identifier (stored, compared or when label); not shown
+v2/backup/V2BackupFormat.kt	^[a-f0-9]{64}$	regex pattern; not text
+v2/curriculum/V2Coursework.kt	book-pages	record, route, schema or rule identifier; not shown
+v2/curriculum/V2Coursework.kt	book-pages-${}	storage, identity or route key; not shown
+v2/curriculum/V2Coursework.kt	book-exercises	record, route, schema or rule identifier; not shown
+v2/curriculum/V2Coursework.kt	book-exercise-$index	storage, identity or route key; not shown
+v2/curriculum/V2Coursework.kt	BINDER	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2Coursework.kt	TUTOR	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2Coursework.kt	session-${}	storage, identity or route key; not shown
+v2/curriculum/V2Coursework.kt	binder-task-${}	storage, identity or route key; not shown
+v2/curriculum/V2Coursework.kt	binder-${}	storage, identity or route key; not shown
+v2/curriculum/V2Coursework.kt	review-due	record, route, schema or rule identifier; not shown
+v2/curriculum/V2Coursework.kt	spaced-due	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	UNRECOVERABLE	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	PRESCRIBED_CHECK	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	OPTIONAL_PRACTICE	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	LEGACY_UNVERIFIED	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	closed-response-exact-option	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u1-st-confusable	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u1-st-guided-confusable	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u1-st-guided-iotated	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u1-st-iotated	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u1-st-guided-signs	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u1-st-signs	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u1-st-guided-print	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u1-st-print	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u1-st-decoding	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u1-st-guided-decoding	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u4-st-guided-nominative	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	u4-st-rem-nominative	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	$size:$value	storage, identity or route key; not shown
+v2/curriculum/V2GovernedIdentity.kt	missing:$id	storage, identity or route key; not shown
+v2/curriculum/V2GovernedIdentity.kt	session-absent	record, route, schema or rule identifier; not shown
+v2/curriculum/V2GovernedIdentity.kt	step-identity-schema:$STEP_IDENTITY_SCHEMA	storage, identity or route key; not shown
+v2/curriculum/V2GovernedIdentity.kt	reference-identity-schema:1	storage, identity or route key; not shown
+v2/curriculum/V2GovernedIdentity.kt	STEP	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	REFERENCE	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	$itemId:$role:$stepId:$recordedAt:$responseIdentity	storage, identity or route key; not shown
+v2/curriculum/V2GovernedIdentity.kt	UNSUPPORTED_VERSION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	V2_MAPPED_AUDIO_ABSENT	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	HANDWRITING_ABSENT	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	practice:$labId	storage, identity or route key; not shown
+v2/curriculum/V2GovernedIdentity.kt	resume:$sessionId	storage, identity or route key; not shown
+v2/curriculum/V2GovernedIdentity.kt	STALE	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	RESUME	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	note:${}	storage, identity or route key; not shown
+v2/curriculum/V2GovernedIdentity.kt	NOTE	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	tutor:${}	storage, identity or route key; not shown
+v2/curriculum/V2GovernedIdentity.kt	TUTOR	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	bookmark:${}	storage, identity or route key; not shown
+v2/curriculum/V2GovernedIdentity.kt	BOOKMARK	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	CONFUSABLE	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	LETTER_IDENTITY	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	PRINT_PAIR	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	SIGN	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	SOURCE_STRESS	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	TYPED_FORM	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	TYPED_TRANSFORMATION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	FORM_SELECTION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	CASE_RECOGNITION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	PATTERN_CLASSIFICATION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	NUMBER_FORM_SELECTION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	SOURCE_CASE	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	SOURCE_INDECLINABLE	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	CONTRAST_SELECTION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	SOURCE_FORM	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	SOURCE_GENDER	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	SOURCE_MEANING	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	SOURCE_QUESTION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	TYPED_TRANSLATION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2GovernedIdentity.kt	SHA-256	MessageDigest algorithm name
+v2/curriculum/V2GovernedIdentity.kt	UNCHECKED_CAST	@Suppress annotation argument
+v2/curriculum/V2Gradebook.kt	RECOGNITION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	INSTALLED	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	DEVELOPMENT	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	NOT_PREPARED	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	CONTENT_COMPLETE_REVIEW_PENDING	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	REVIEW_APPROVED	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	MAPPING_APPROVED	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	INSTALLABLE	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	GUIDED	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	SELF_ATTESTATION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	ORIENT	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	TEACH	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	RECOGNITION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2ProgressRules.kt	obj-u2-review	record, route, schema or rule identifier; not shown
+v2/curriculum/V2ReviewCopy.kt	{$name}	template token: the {name} placeholder replaced with its value before display; not shown
+v2/curriculum/V2ReviewCopy.kt	\\bUnits? \\d+(?:(?:,| and| or) \\d+)*\\b	regex pattern; not text
+v2/curriculum/V2ReviewCopy.kt	(?i)(?<![\\p{L}])(?:zero|nought|(?:twenty|thirty|forty|fourty|fifty|sixty|seventy|eighty|ninety)(?:[- ]?(?:one|two|three|four|five|six|seven|eight|nine))?|	regex pattern; not text
+v2/curriculum/V2ReviewCopy.kt	ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|one|two|three|four|five|six|seven|eight|nine|	regex pattern; not text
+v2/curriculum/V2ReviewCopy.kt	hundreds?|thousands?|\\p{L}*illions?|both|single|dozens?|couple)(?![\\p{L}])	regex pattern; not text
+v2/curriculum/V2TypedResponse.kt	TYPED_DICTATION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2TypedResponse.kt	TYPED_FORM	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2TypedResponse.kt	TYPED_TRANSFORMATION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2TypedResponse.kt	TYPED_TRANSLATION	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2TypedResponse.kt	typed-answer-key	record, route, schema or rule identifier; not shown
+v2/curriculum/V2TypedResponse.kt	a2-21-owner-trim-v2	record, route, schema or rule identifier; not shown
+v2/curriculum/V2TypedResponse.kt	closed-typed-response-v2	record, route, schema or rule identifier; not shown
+v2/curriculum/V2UnitTest.kt	SELF_CHECK	enum or status identifier (stored, compared or when label); not shown
+v2/curriculum/V2UnitTest.kt	unit-test	record, route, schema or rule identifier; not shown
+v2/notices/V2OfflineNotices.kt	licenses/$name	asset or file path
+v2/notices/V2OfflineNotices.kt	content/catalog-notice.txt	asset or file path
+v2/notices/V2OfflineNotices.kt	catalog-notice.txt	asset or file path
+v2/notices/V2OfflineNotices.kt	Offline attribution notices do not match the source records	developer diagnostic added to an errors list; never shown
+v2/notices/V2OfflineNotices.kt	cc-by-3.0-us.html	asset or file path
+v2/notices/V2OfflineNotices.kt	cc-by-2.0-fr.html	asset or file path
+v2/notices/V2OfflineNotices.kt	public-domain-notice.txt	asset or file path
+v2/notices/V2OfflineNotices.kt	shtooka-readme-sakhno.txt	asset or file path
+v2/notices/V2OfflineNotices.kt	shtooka-readme-streit.txt	asset or file path
+v2/notices/V2OfflineNotices.kt	units-3-5-curriculum-notice.txt	asset or file path
+v2/notices/V2OfflineNotices.kt	units-6-10-curriculum-notice.txt	asset or file path
+v2/notices/V2OfflineNotices.kt	units-26-30-curriculum-notice.txt	asset or file path
+v2/notices/V2OfflineNotices.kt	cc-by-sa-4.0.txt	asset or file path
+v2/notices/V2OfflineNotices.kt	app/src/main/assets/content/catalog-notice.txt	asset or file path

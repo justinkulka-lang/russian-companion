@@ -24,6 +24,12 @@ import androidx.room.TypeConverters
         GateTutorRequirementEntity::class,
         GateDecisionEntity::class,
         ExportRecordEntity::class,
+        dev.russiancompanion.v2.data.V2SpacedReviewEntity::class,
+        dev.russiancompanion.v2.data.V2UnitTargetEntity::class,
+        dev.russiancompanion.v2.data.V2UnitTestAttemptEntity::class,
+        dev.russiancompanion.v2.data.V2BinderSelfCheckEntity::class,
+        dev.russiancompanion.v2.data.V2ReviewAssignmentEntity::class,
+        dev.russiancompanion.v2.data.V2ReviewAnswerEntity::class,
         dev.russiancompanion.v2.data.V2ProfileEntity::class,
         dev.russiancompanion.v2.data.V2StepProgressEntity::class,
         dev.russiancompanion.v2.data.V2AttemptEntity::class,
@@ -33,7 +39,7 @@ import androidx.room.TypeConverters
         dev.russiancompanion.v2.data.V2BookAttestationEntity::class,
         dev.russiancompanion.v2.data.V2UnitCompletionEntity::class,
     ],
-    version = 9,
+    version = 15,
     exportSchema = true,
 )
 @TypeConverters(StoredValueConverters::class)

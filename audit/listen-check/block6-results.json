@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "sheet": "block6",
+  "candidatesDigest": "a421055292313b782ab1dc0615dcaa240c98459f0d3a4543b573bd1715ec05db",
+  "results": [
+    {
+      "clipId": "rus-2383e20d",
+      "clipSha256": "853aa485cf7055ec1540f435f60c24b1efd3838c56b3f417244636e553299fc4",
+      "text": "вы",
+      "decision": "MATCH",
+      "verifier": "OWNER",
+      "recordedAt": "2026-11-23T21:22:00Z"
+    }
+  ]
+}

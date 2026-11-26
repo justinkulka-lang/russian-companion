@@ -1,0 +1,95 @@
+{
+ "task": "T16d (Claude Code, 2026-11-22)",
+ "phrases": [
+  {
+   "phrase": "Вы бу́дете говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 44
+  },
+  {
+   "phrase": "Вы ска́жете",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 63
+  },
+  {
+   "phrase": "Ему было холодно",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 25
+  },
+  {
+   "phrase": "Им было скучно",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 26
+  },
+  {
+   "phrase": "Мы бу́дем говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 41
+  },
+  {
+   "phrase": "Мы ска́жем",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 60
+  },
+  {
+   "phrase": "Он бу́дет говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 47
+  },
+  {
+   "phrase": "Он ска́жет",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 66
+  },
+  {
+   "phrase": "Они бу́дут говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 47
+  },
+  {
+   "phrase": "Они ска́жут",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 66
+  },
+  {
+   "phrase": "Ты бу́дешь говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 44
+  },
+  {
+   "phrase": "Ты ска́жешь",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 63
+  },
+  {
+   "phrase": "Я бу́ду говори́ть",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 17
+  },
+  {
+   "phrase": "Я бу́ду рабо́тать",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 15
+  },
+  {
+   "phrase": "Я поговорю три́дцать мину́т",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 18
+  },
+  {
+   "phrase": "Я порабо́таю три ча́са",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 16
+  },
+  {
+   "phrase": "Я скажу́",
+   "file": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+   "line": 29
+  },
+  {
+   "phrase": "ей было холодно",
+   "file": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+   "line": 24
+  }
+ ]
+}
