@@ -56,8 +56,8 @@ class Units2125SourceIntakeTest {
         16 to "4cc55e2d9f829c7c239e94f2d296fb0cd3402a59e8f2dac769104d59f4d235ef",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 17 was 6b680bda...).
         // T17f: Unit 17 content (WC001 rationales, WC004 glosses, CC028 age checks; was 9370d8b8...).
-        // T17f-n1 expectation change, old -> new: ec7542b3 -> 455028d9 (Unit 17 date check D53d and age remediation D53f).
-        17 to "455028d9c410aba03bea6a8f6f5a9fbf17c98dfb90014bd6113cb94ed94a166b", // T17b: Unit 17 content (was 2b8138570602b6022e7230f7ef786d6f61dfaaa3f6ceba7e6603f90ebae425e3) // T16c-n2 (was b48912f2...)
+        // T17f-n1 expectation change, old -> new: ec7542b3 -> 197ee50a (Unit 17 date check D53d and age teaching and remediation D53f).
+        17 to "197ee50a7637b269619ed4df23df043c59fe05eeece757932858b4fd3d24d32c", // T17b: Unit 17 content (was 2b8138570602b6022e7230f7ef786d6f61dfaaa3f6ceba7e6603f90ebae425e3) // T16c-n2 (was b48912f2...)
         // T17a: the shared ref-u1620-attribution notice (was a82a7ebf...). T17c: Unit 18 content (was 04147a35...).
         18 to "114c6675620c872dd6a5599a00336c5102c59a2d74df1116daad9aa44f9ce431",
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 19 was fddd2ad0...).
