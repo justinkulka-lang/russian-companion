@@ -2,12 +2,14 @@ name: Build
 
 on:
   push:
+    branches:
+      - main
   pull_request:
 
-# Superseded pull_request runs are cancelled. Push runs, including main and
-# release branches, keep cancel-in-progress false because the event is not
-# pull_request. head_ref is only set on pull_request, so a branch push and the
-# pull_request run it opens are different groups and do not cancel each other.
+# Push runs only for main. Feature-branch pushes do not start this workflow,
+# so an open pull request is covered by pull_request alone. This repo has no
+# release branches. Superseded pull_request runs are cancelled. A push to main
+# is not a pull_request event, so that push is not cancelled.
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
@@ -75,7 +77,7 @@ jobs:
             fi
           elif [ "$EVENT_NAME" = "push" ]; then
             if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
-              full "New branch or unknown push range; running full CI."
+              full "Push to main has no parent commit; running full CI."
               exit 0
             fi
             if ! git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
