@@ -90,9 +90,13 @@ class SelectionWordBoundaryRuleTest {
         // T17f-n1 expectation change (owner decision D53d), old -> new: 2889 -> 2891; the two frozen selection records of the
         // redesigned date check (the expanded form, the all-numeric date) are whole-word selections of their date-notation span;
         // the D41d count excludes them as it excludes the earlier tasks' records.
-        assertEquals(2891, selections.size)
+        // T18a-2 expectation change (owner decision D54e), old -> new: 2891 -> 2942; the 51 frozen selection records of the Unit 21
+        // typed keys, their cues and the Russian the new teaching shows (prov-t18a2-u21-) are whole-word selections of their lines;
+        // the D41d count excludes them as it excludes the earlier tasks' records.
+        assertEquals(2942, selections.size)
         assertEquals(2839, selections.count { !it.itemId.startsWith("prov-t16cn2-key-") && !it.itemId.startsWith("prov-t17e-u20-") &&
-            !it.itemId.startsWith("prov-t17f-u17-age-") && !it.itemId.startsWith("prov-t17fn1-u17-calendar-date-") })
+            !it.itemId.startsWith("prov-t17f-u17-age-") && !it.itemId.startsWith("prov-t17fn1-u17-calendar-date-") &&
+            !it.itemId.startsWith("prov-t18a2-u21-") })
         val failing = selections.filterNot { V2Validator.displayedInFrozen(it) }
             .map { "${it.itemId} ${it.transformation} \"${it.shippedText}\"" }
         assertTrue(failing.joinToString("\n"), failing.isEmpty())

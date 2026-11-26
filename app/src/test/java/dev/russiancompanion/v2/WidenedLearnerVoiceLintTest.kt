@@ -277,7 +277,7 @@ class WidenedLearnerVoiceLintTest {
         )) assertTrue(text, signals(text, "LEARNER_PROVENANCE_NARRATION").isNotEmpty())
         // None of the misses remains in Units 6-9.
         val shown = V2DesignDiagnostics.audit(current).signals
-        assertTrue(shown.none { it.rule == "LEARNER_PROVENANCE_NARRATION" && (it.unit ?: 0) in 1..20 }) // T16: was 1..10; T16b: 1..11 -> 1..12; T16c: 1..12 -> 1..13; T16d: 1..13 -> 1..14; T16e: 1..14 -> 1..15; T17a: 1..15 -> 1..16; T17b: 1..16 -> 1..17; T17c: 1..17 -> 1..18; T17d: 1..18 -> 1..19; T17e: 1..19 -> 1..20
+        assertTrue(shown.none { it.rule == "LEARNER_PROVENANCE_NARRATION" && (it.unit ?: 0) in 1..21 }) // T18a-2: 1..20 -> 1..21; T16: was 1..10; T16b: 1..11 -> 1..12; T16c: 1..12 -> 1..13; T16d: 1..13 -> 1..14; T16e: 1..14 -> 1..15; T17a: 1..15 -> 1..16; T17b: 1..16 -> 1..17; T17c: 1..17 -> 1..18; T17d: 1..18 -> 1..19; T17e: 1..19 -> 1..20
     }
 
     @Test fun exemptNoticesAndPlainTeachingAreNotCaught() {
@@ -372,18 +372,20 @@ class WidenedLearnerVoiceLintTest {
     // T16 (owner direction 2026-11-20): Unit 11 joins the blocking set (was Units 1-10); T16b: Unit 12 too (was 1..11);
     // T16c: Unit 13 too (was 1..12); T16d: Unit 14 too (was 1..13); T16e: Unit 15 too (was 1..14); T17a: Unit 16 too (was 1..15);
     // T17b: Unit 17 too (was 1..16); T17c: Unit 18 too (was 1..17); T17d: Unit 19 too (was 1..18); T17e: Unit 20 too (was 1..19).
+    // T18a-2 (owner decision D54g): Unit 21 too (was 1..20).
     @Test fun unitsOneToNineteenHaveNoWidenedLintHits() {
-        val hits = V2DesignDiagnostics.audit(current).signals.filter { it.rule in rules && (it.unit ?: 0) in 1..20 }
+        val hits = V2DesignDiagnostics.audit(current).signals.filter { it.rule in rules && (it.unit ?: 0) in 1..21 }
         assertTrue(hits.joinToString("\n") { "${it.unit} ${it.rule} ${it.entityIds} ${it.field}" }, hits.isEmpty())
     }
 
     // T16: Units 12-30 stay advisory (was Units 11-30); T16b: Units 13-30; T16c: Units 14-30; T16d: Units 15-30; T16e: Units 16-30; T17a: Units 17-30;
-    // T17b: Units 18-30 (was 17-30); T17c: Units 19-30 (was 18-30); T17d: Units 20-30 (was 19-30).
+    // T17b: Units 18-30 (was 17-30); T17c: Units 19-30 (was 18-30); T17d: Units 20-30 (was 19-30); T18a-2: Units 22-30 (was 20-30;
+    // Units 20 and 21 are blocking above).
     @Test fun unitsTwentyToThirtyAreReportedNotBlocking() {
         val signals = V2DesignDiagnostics.audit(current).signals.filter { it.rule in rules }
-        val counts = (20..30).associateWith { unit -> rules.associateWith { rule -> signals.count { it.unit == unit && it.rule == rule } } }
-        println("T15f advisory widened A2-26 hits, Units 20-30: $counts")
-        assertEquals((20..30).toSet(), counts.keys)
+        val counts = (22..30).associateWith { unit -> rules.associateWith { rule -> signals.count { it.unit == unit && it.rule == rule } } }
+        println("T15f advisory widened A2-26 hits, Units 22-30: $counts")
+        assertEquals((22..30).toSet(), counts.keys)
     }
 
     @Test fun companionAndBookDirectionsKeepOneNoticeAndNoApprovalLanguage() {

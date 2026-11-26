@@ -1,5 +1,3 @@
-21 | u21-st-rem-object-reference.body | Я люблю́ свою́ жену́ | UNATTESTED
-21 | u21-st-teach-object-reference-2.body | Я люблю́ свою́ жену́ | UNATTESTED
 23 | ex-u23-completion-0.display | Анна читала статью два часа | UNATTESTED
 23 | ex-u23-completion-1.display | Анна прочитала статью за два часа | UNATTESTED
 23 | u23-g-completion-1.feedback | Борис писал письмо час | UNATTESTED

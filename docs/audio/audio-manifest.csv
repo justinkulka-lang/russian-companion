@@ -311,7 +311,7 @@ A09-014,P2,9,9,WORD,девятна́дцать,NEEDS_RECORDING,,,,"example,item,
 A09-015,P2,9,9,WORD,де́вять,NEEDS_RECORDING,,,,"example,reference,teaching"
 A09-016,P2,9,9,WORD,девятьсо́т,NEEDS_RECORDING,,,,"example,item,teaching"
 A09-017,P2,9,9,WORD,де́сять,NEEDS_RECORDING,,,,"example,item,reference,teaching"
-A09-018,P2,9,9,WORD,джинсы,NEEDS_RECORDING,,,course text has no stress mark,item
+A09-018,P2,9,"9,21",WORD,джи́нсы,NEEDS_RECORDING,,,,item
 A09-019,P2,9,9,WORD,животное,NEEDS_RECORDING,,,course text has no stress mark,item
 A09-020,P2,9,9,WORD,мальчик,NEEDS_RECORDING,,,course text has no stress mark,item
 A09-021,P2,9,9,WORD,Музе́й,NEEDS_RECORDING,,,,reference
@@ -662,28 +662,41 @@ A20-027,P3,20,20,SENTENCE,Она ходит в супермаркет кажду
 A20-028,P3,20,20,SENTENCE,Они улетят из Владивостока через месяц,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
 A20-029,P3,20,20,SENTENCE,Птицы летят на юг,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A20-030,P3,20,20,SENTENCE,Ребёнок ходит шесть месяцев,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
-A21-001,P3,21,21,WORD,дабы,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A21-002,P3,21,21,WORD,если,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A21-003,P3,21,21,WORD,жену́,NEEDS_RECORDING,,,,"example,item,teaching"
-A21-004,P3,21,21,WORD,свои,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A21-005,P3,21,21,WORD,свой,NEEDS_RECORDING,,,,teaching
-A21-006,P3,21,21,WORD,свою́,NEEDS_RECORDING,,,,"example,item,teaching"
-A21-007,P3,21,21,WORD,своя,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A21-008,P3,21,21,WORD,своё,NEEDS_RECORDING,,,,teaching
-A21-009,P3,21,21,WORD,себя,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A21-010,P3,21,21,WORD,хотя,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
-A21-011,P3,21,21,WORD,чтобы,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A21-012,P3,21,21,PHRASE,Он поранил его,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A21-013,P3,21,21,PHRASE,Он поранил себя,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
-A21-014,P3,21,21,PHRASE,потому что,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A21-015,P3,21,21,PHRASE,Я люблю́,NEEDS_RECORDING,,,,"example,item,teaching"
-A21-016,P3,21,21,SENTENCE,А́нна наде́ла свои́ джи́нсы,NEEDS_RECORDING,,,,"example,item,teaching"
-A21-017,P3,21,21,SENTENCE,А́нна рассказа́ла о своём люби́мом фи́льме,NEEDS_RECORDING,,,,"example,item,teaching"
-A21-018,P3,21,21,SENTENCE,Бо́ря наде́л свои́ джи́нсы,NEEDS_RECORDING,,,,"example,item,teaching"
-A21-019,P3,21,21,SENTENCE,Бо́ря рассказа́л о своём люби́мом фи́льме,NEEDS_RECORDING,,,,"example,item,teaching"
-A21-020,P3,21,21,SENTENCE,Свое́й кни́ги он никогда́ не написа́л,NEEDS_RECORDING,,,,"example,item,teaching"
-A21-021,P3,21,21,SENTENCE,Свое́й кни́ги она́ никогда́ не написа́ла,NEEDS_RECORDING,,,,"example,item,teaching"
-A21-022,P3,21,21,SENTENCE,Я люблю́ себя́,NEEDS_RECORDING,,,,"example,item,teaching"
+A21-001,P3,21,"21,29",WORD,А́нна,NEEDS_RECORDING,,,,item
+A21-002,P3,21,21,WORD,дабы,NEEDS_RECORDING,,,course text has no stress mark,"reference,teaching"
+A21-003,P3,21,21,WORD,если,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A21-004,P3,21,21,WORD,жену́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A21-005,P3,21,21,WORD,наде́л,NEEDS_RECORDING,,,,teaching
+A21-006,P3,21,21,WORD,наде́ла,NEEDS_RECORDING,,,,"item,teaching"
+A21-007,P3,21,21,WORD,рассказа́л,NEEDS_RECORDING,,,,teaching
+A21-008,P3,21,21,WORD,рассказа́ла,NEEDS_RECORDING,,,,"item,teaching"
+A21-009,P3,21,21,WORD,Свое́й,NEEDS_RECORDING,,,,item
+A21-010,P3,21,21,WORD,свои́,NEEDS_RECORDING,,,,"item,reference,teaching"
+A21-011,P3,21,21,WORD,свой,NEEDS_RECORDING,,,,"item,reference,teaching"
+A21-012,P3,21,21,WORD,свою́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A21-013,P3,21,21,WORD,своя,NEEDS_RECORDING,,,course text has no stress mark,"item,reference,teaching"
+A21-014,P3,21,21,WORD,своё,NEEDS_RECORDING,,,,"item,reference,teaching"
+A21-015,P3,21,21,WORD,своём,NEEDS_RECORDING,,,,item
+A21-016,P3,21,21,WORD,себя́,NEEDS_RECORDING,,,,"item,teaching"
+A21-017,P3,21,21,WORD,хотя,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A21-018,P3,21,21,WORD,чтобы,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A21-019,P3,21,21,PHRASE,Бо́ря наде́л,NEEDS_RECORDING,,,,item
+A21-020,P3,21,21,PHRASE,Бо́ря рассказа́л о,NEEDS_RECORDING,,,,item
+A21-021,P3,21,21,PHRASE,Он поранил его,NEEDS_RECORDING,,,course text has no stress mark,"reference,teaching"
+A21-022,P3,21,21,PHRASE,Он поранил себя,NEEDS_RECORDING,,,course text has no stress mark,"item,reference,teaching"
+A21-023,P3,21,21,PHRASE,потому что,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A21-024,P3,21,21,PHRASE,Я люблю́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A21-025,P3,21,21,SENTENCE,А́нна наде́ла свои́ джи́нсы,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A21-026,P3,21,21,SENTENCE,А́нна рассказа́ла о своём люби́мом фи́льме,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A21-027,P3,21,21,SENTENCE,Бо́ря наде́л свои́ джи́нсы,NEEDS_RECORDING,,,,"example,item,teaching"
+A21-028,P3,21,21,SENTENCE,Бо́ря рассказа́л о своём люби́мом фи́льме,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A21-029,P3,21,21,SENTENCE,кни́ги он никогда́ не написа́л,NEEDS_RECORDING,,,,item
+A21-030,P3,21,21,SENTENCE,люби́мом фи́льме,NEEDS_RECORDING,,,,item
+A21-031,P3,21,21,SENTENCE,о своём люби́мом фи́льме,NEEDS_RECORDING,,,,item
+A21-032,P3,21,21,SENTENCE,Свое́й кни́ги он никогда́ не написа́л,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A21-033,P3,21,21,SENTENCE,Свое́й кни́ги она́ никогда́ не написа́ла,NEEDS_RECORDING,,,,"example,item,teaching"
+A21-034,P3,21,21,SENTENCE,свои́ джи́нсы,NEEDS_RECORDING,,,,item
+A21-035,P3,21,21,SENTENCE,Я люблю́ себя́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A22-001,P3,22,22,WORD,Дательный,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
 A22-002,P3,22,22,WORD,дво́е,NEEDS_RECORDING,,,,"item,teaching"
 A22-003,P3,22,22,WORD,двум,NEEDS_RECORDING,,,,"example,item,teaching"
@@ -833,42 +846,41 @@ A28-015,P3,28,28,PHRASE,устав писать ложился на,NEEDS_RECORD
 A28-016,P3,28,28,PHRASE,читая письмо,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
 A28-017,P3,28,28,SENTENCE,сложа руки,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
 A28-018,P3,28,28,SENTENCE,устав писать,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-001,P3,29,29,WORD,Анна,NEEDS_RECORDING,,,course text has no stress mark,item
-A29-002,P3,29,29,WORD,Бергоньоне,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A29-003,P3,29,29,WORD,живу́щие,NEEDS_RECORDING,,,,"example,item,teaching"
-A29-004,P3,29,29,WORD,Закончив,NEEDS_RECORDING,,,course text has no stress mark,item
-A29-005,P3,29,29,WORD,маяк,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A29-006,P3,29,29,WORD,нова́,NEEDS_RECORDING,,,,"example,item,teaching"
-A29-007,P3,29,29,WORD,но́во,NEEDS_RECORDING,,,,"example,item,teaching"
-A29-008,P3,29,29,WORD,новы́,NEEDS_RECORDING,,,,"example,item,teaching"
-A29-009,P3,29,29,WORD,Пообедав,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-010,P3,29,29,WORD,Туча,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A29-011,P3,29,29,WORD,Фоппы,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A29-012,P3,29,29,WORD,чита́вшая,NEEDS_RECORDING,,,,"example,item,teaching"
-A29-013,P3,29,29,WORD,чита́ющая,NEEDS_RECORDING,,,,"example,item,teaching"
-A29-014,P3,29,29,PHRASE,Вдали виднеется маяк,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-015,P3,29,29,PHRASE,запятые не ставятся,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
-A29-016,P3,29,29,PHRASE,кроме тех случаев,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
-A29-017,P3,29,29,PHRASE,личным местоимением,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-018,P3,29,29,PHRASE,новая книга,NEEDS_RECORDING,,,course text has no stress mark,"example,item"
-A29-019,P3,29,29,PHRASE,новое письмо,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-020,P3,29,29,PHRASE,новые книги,NEEDS_RECORDING,,,course text has no stress mark,"example,item"
-A29-021,P3,29,29,PHRASE,отправила его,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-022,P3,29,29,PHRASE,пошла на почту,NEEDS_RECORDING,,,course text has no stress mark,item
-A29-023,P3,29,29,PHRASE,стоящий у моря,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-024,P3,29,29,PHRASE,я пошёл гулять,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-025,P3,29,29,SENTENCE,Анна закончила письмо и пошла на почту,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-026,P3,29,29,SENTENCE,Анна пошла на почту,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-027,P3,29,29,SENTENCE,"Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо",NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-028,P3,29,29,SENTENCE,выделяется запятыми с двух сторон,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
-A29-029,P3,29,29,SENTENCE,Закончив письмо,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-030,P3,29,29,SENTENCE,"Закончив письмо, Анна пошла на почту и отправила его",NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
-A29-031,P3,29,29,SENTENCE,"Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол",NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-032,P3,29,29,SENTENCE,Написанная в спешке программа выполнила недопустимую операцию,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-033,P3,29,29,SENTENCE,Написанное письмо лежит на столе,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
-A29-034,P3,29,29,SENTENCE,"Программа, написанная в спешке, выполнила недопустимую операцию",NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-035,P3,29,29,SENTENCE,"Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком",NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A29-036,P3,29,29,SENTENCE,Я пообедал и пошёл гулять,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-001,P3,29,29,WORD,Бергоньоне,NEEDS_RECORDING,,,course text has no stress mark,teaching
+A29-002,P3,29,29,WORD,живу́щие,NEEDS_RECORDING,,,,"example,item,teaching"
+A29-003,P3,29,29,WORD,Закончив,NEEDS_RECORDING,,,course text has no stress mark,item
+A29-004,P3,29,29,WORD,маяк,NEEDS_RECORDING,,,course text has no stress mark,teaching
+A29-005,P3,29,29,WORD,нова́,NEEDS_RECORDING,,,,"example,item,teaching"
+A29-006,P3,29,29,WORD,но́во,NEEDS_RECORDING,,,,"example,item,teaching"
+A29-007,P3,29,29,WORD,новы́,NEEDS_RECORDING,,,,"example,item,teaching"
+A29-008,P3,29,29,WORD,Пообедав,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-009,P3,29,29,WORD,Туча,NEEDS_RECORDING,,,course text has no stress mark,teaching
+A29-010,P3,29,29,WORD,Фоппы,NEEDS_RECORDING,,,course text has no stress mark,teaching
+A29-011,P3,29,29,WORD,чита́вшая,NEEDS_RECORDING,,,,"example,item,teaching"
+A29-012,P3,29,29,WORD,чита́ющая,NEEDS_RECORDING,,,,"example,item,teaching"
+A29-013,P3,29,29,PHRASE,Вдали виднеется маяк,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-014,P3,29,29,PHRASE,запятые не ставятся,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
+A29-015,P3,29,29,PHRASE,кроме тех случаев,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
+A29-016,P3,29,29,PHRASE,личным местоимением,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-017,P3,29,29,PHRASE,новая книга,NEEDS_RECORDING,,,course text has no stress mark,"example,item"
+A29-018,P3,29,29,PHRASE,новое письмо,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-019,P3,29,29,PHRASE,новые книги,NEEDS_RECORDING,,,course text has no stress mark,"example,item"
+A29-020,P3,29,29,PHRASE,отправила его,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-021,P3,29,29,PHRASE,пошла на почту,NEEDS_RECORDING,,,course text has no stress mark,item
+A29-022,P3,29,29,PHRASE,стоящий у моря,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-023,P3,29,29,PHRASE,я пошёл гулять,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-024,P3,29,29,SENTENCE,Анна закончила письмо и пошла на почту,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-025,P3,29,29,SENTENCE,Анна пошла на почту,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-026,P3,29,29,SENTENCE,"Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо",NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-027,P3,29,29,SENTENCE,выделяется запятыми с двух сторон,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
+A29-028,P3,29,29,SENTENCE,Закончив письмо,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-029,P3,29,29,SENTENCE,"Закончив письмо, Анна пошла на почту и отправила его",NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
+A29-030,P3,29,29,SENTENCE,"Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол",NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-031,P3,29,29,SENTENCE,Написанная в спешке программа выполнила недопустимую операцию,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-032,P3,29,29,SENTENCE,Написанное письмо лежит на столе,NEEDS_RECORDING,,,course text has no stress mark,"item,teaching"
+A29-033,P3,29,29,SENTENCE,"Программа, написанная в спешке, выполнила недопустимую операцию",NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-034,P3,29,29,SENTENCE,"Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком",NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
+A29-035,P3,29,29,SENTENCE,Я пообедал и пошёл гулять,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A30-001,P3,30,30,WORD,ГАИ,NEEDS_RECORDING,,,"course text has no stress mark; short: check it is a word, not an ending","example,teaching"
 A30-002,P3,30,30,WORD,гороно,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
 A30-003,P3,30,30,WORD,СНГ,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,teaching"

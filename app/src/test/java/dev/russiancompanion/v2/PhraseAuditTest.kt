@@ -30,10 +30,13 @@ class PhraseAuditTest {
         assertEquals(allowlist, PhraseAllowlist.entries)
         // D11a + D15d + D19b: 183 baseline lines, 44 COMPOSED additions and the one сущ line; no duplicates.
         // S1: 78 lines removed (was 228).
-        assertEquals(150, allowlist.size)
+        // T18a-1/T18a-2 expectation change (owner decision D54d), old -> new: the allowlist only shrinks; the two Unit 21 lines for the
+        // unparenthesized love example left with that text (T18a-1 restored the frozen G:508 form), so 150 -> 148 lines and
+        // UNATTESTED 107 -> 105.
+        assertEquals(148, allowlist.size)
         assertEquals(allowlist.size, allowlist.toSet().size)
         // S1 removed 54 UNATTESTED (was 161), 4 MISSING_STRESS (was 23) and 20 COMPOSED (was 44).
-        assertEquals(mapOf("UNATTESTED" to 107, "MISSING_STRESS" to 19, "COMPOSED" to 24), allowlist.groupingBy { it.type }.eachCount())
+        assertEquals(mapOf("UNATTESTED" to 105, "MISSING_STRESS" to 19, "COMPOSED" to 24), allowlist.groupingBy { it.type }.eachCount())
     }
 
     @Test fun everyUnitPassesThePhraseAuditExceptExactlyTheAllowlist() {
@@ -60,7 +63,9 @@ class PhraseAuditTest {
         }
         assertTrue("Allowlisted owner.field or text no longer exists:\n" + stale.joinToString("\n"), stale.isEmpty())
         // S1: 78 entries now pass against the frozen S1 pages and were removed (was 227).
-        assertEquals(149, failures.size)
+        // T18a-1/T18a-2 expectation change (owner decision D54d), old -> new: 149 -> 147; the two Unit 21 failures of the unparenthesized
+        // love example are gone with that text.
+        assertEquals(147, failures.size)
         assertTrue(fields.map { it.unit }.toSet().containsAll((1..30).toSet()))
     }
 

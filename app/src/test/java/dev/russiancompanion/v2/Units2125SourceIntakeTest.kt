@@ -114,7 +114,10 @@ class Units2125SourceIntakeTest {
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
             assertFalse(unit.mappingNote.contains(packagedMappingNotePages.getValue(number)))
-            assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // T18a-2 expectation change (owner decision D54g), old -> new: Unit 21's mapping note follows the Units 1-20 style without
+            // the status token (as Units1620SourceIntakeTest for Units 16-20); its mappingStatus stays PENDING_CURRICULUM_REVIEWER.
+            if (number == 21) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            else assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertFalse(unit.mappingNote.contains("ISBN"))
             assertFalse(unit.mappingNote.contains("2bcc0c45"))
