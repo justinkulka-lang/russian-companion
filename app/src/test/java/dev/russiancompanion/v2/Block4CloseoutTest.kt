@@ -41,7 +41,9 @@ class Block4CloseoutTest {
                     rem.body + "\n" + rem.exampleIds.mapNotNull { examples[it] }.joinToString("\n") { it.display + " " + it.note }
                 }
                 for (item in objective.checkItemIds.map { pack.item(it)!! }) {
-                    val cue = item.promptLetter.orEmpty().let { cue -> cue.isNotEmpty() && contains(text, cue) }
+                    // A hidden answer reference (promptLetterRole ANSWER_REFERENCE, u17-i-age-2) is not a cue the learner sees.
+                    val cue = item.promptLetter.orEmpty().takeIf { item.promptLetterRole == "CUE" }.orEmpty()
+                        .let { cue -> cue.isNotEmpty() && contains(text, cue) }
                     val key = contains(text, item.answer)
                     assertTrue("${item.id}: neither cue nor key is in its remediation", cue || key)
                     if (cue && key) both++ else if (key) keyOnly++

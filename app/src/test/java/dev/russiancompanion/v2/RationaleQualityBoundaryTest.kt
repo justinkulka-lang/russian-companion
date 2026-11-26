@@ -9,10 +9,18 @@ import java.io.File
 /** Presentation-boundary regressions from WC001; no linguistic or rights acceptance. */
 class RationaleQualityBoundaryTest {
     @Test fun sourceTemplateMustNotBePresentedAsAnOptionExplanation() {
-        val item = pack.item("u17-g-clock-0")!!
-        val wrong = item.options.first { it != item.answer }
+        // T17f (WC001) expectation change, old -> new: the test read the template splice from the live u17-g-clock-0 rationale;
+        // T17f rewrote all 26 Unit 17 splices ("Which book do you want? asks which book someone wants, not the current clock
+        // time."), so no live item carries it. As in differentShownFormMustNotBePresentedAsTheDisplayedCue, the retired splice is
+        // kept as a fixture on a copy of the item; the boundary assertion (template text falls back to null) is unchanged, and the
+        // live rewritten rationale is now presented.
+        val live = pack.item("u17-g-clock-0")!!
+        val wrong = live.options.first { it != live.answer }
+        val retired = "$wrong is a different meaning or construction and does not match the reading of the shown form."
+        val item = live.copy(distractorRationales = live.options.map { if (it == wrong) retired else "" })
         assertTrue(item.distractorRationales[item.options.indexOf(wrong)].contains("is a different meaning or construction and does not match"))
         assertNull("Known boilerplate must use explanation/reference fallback", selectedWrongOptionRationale(item, wrong))
+        assertEquals(live.distractorRationales[live.options.indexOf(wrong)], selectedWrongOptionRationale(live, wrong))
     }
 
     @Test fun rejectedReadingRestatementMustNotBePresentedAsAnExplanation() {

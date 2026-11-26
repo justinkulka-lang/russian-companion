@@ -217,6 +217,8 @@ COMPETITOR = "forty-one years"
 COMPETITOR_SOURCE = "prov-ex-u17-years-3-en"
 COMPETITOR_RECORD = "prov-t17f-u17-age-forty-one-years"  # D50g: frozen selection record binding the gloss to obj-u17-age
 AGE1_RATIONALE = "forty-one years counts a different number of years and does not say whose age is given."
+# The item keeps its former shown form двадцать лет as an answer reference (promptLetterRole ANSWER_REFERENCE, which the
+# validator admits for a typed item whose promptLetter equals its key): the screens do not show it, so the key is not given away.
 AGE2 = ("Type the Russian quantity phrase that means 20 years.", "двадцать лет", "prov-ex-u17-age-1-ru")
 
 
@@ -253,15 +255,15 @@ def cc028_unit17(pack: dict, records: dict) -> list[dict]:
     item = items["u17-i-age-2"]
     prompt, key, citation = AGE2
     assert records[citation]["shippedText"] == key
-    before = {f: item.get(f) for f in ("kind", "prompt", "promptLetter", "options")}
-    item.update({"kind": "TYPED_FORM", "prompt": prompt, "promptLetter": "", "options": [], "answer": key,
+    before = {f: item.get(f) for f in ("kind", "prompt", "promptLetter", "promptLetterRole", "options")}
+    item.update({"kind": "TYPED_FORM", "prompt": prompt, "promptLetter": key, "promptLetterRole": "ANSWER_REFERENCE", "options": [], "answer": key,
                  "distractorRationales": [], "typedAnswerKey": typed_key("key-u17-i-age-2", [key]), "keyCitation": citation})
     item.pop("assessment", None)
     keep = [f for f in item["russianFacts"] if f in item["feedback"]]
     item["russianFacts"] = keep
     item["russianFactSources"] = {f: item["russianFactSources"][f] for f in keep}
     log.append({"task": TASK, "finding": "CC028", "owner.field": "u17-i-age-2", "old": json.dumps(before, ensure_ascii=False),
-                "new": json.dumps({"kind": "TYPED_FORM", "prompt": prompt, "answer": key, "keyCitation": citation}, ensure_ascii=False)})
+                "new": json.dumps({"kind": "TYPED_FORM", "prompt": prompt, "promptLetterRole": "ANSWER_REFERENCE", "answer": key, "keyCitation": citation}, ensure_ascii=False)})
     coverage(pack, records, item["objectiveId"], "u17-i-age-2-prompt-cc028", prompt)
     print("CC028: u17-i-age-1 takes a competing frozen count gloss; u17-i-age-2 is a typed check")
     return log

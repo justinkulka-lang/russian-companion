@@ -206,8 +206,11 @@ class BatchAUnits71620Test {
         // obligation guided item (18 -> 26; the prefix-caution objective is not a Batch A objective).
         val typed = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES && it.kind == "TYPED_FORM" }
         // T17e: the 12 typed Unit 20 checks and 2 typed Unit 20 guided items of obj-u20-motion join them (26 -> 40).
-        assertEquals(40, typed.size)
-        assertTrue(typed.all { (it.objectiveId.startsWith("obj-u18-") || it.objectiveId in setOf("obj-u19-conditional", "obj-u19-obligation", "obj-u20-motion")) &&
+        // T17f expectation change (CC028, owner decisions D50c/D50f): the age check u17-i-age-2 becomes a typed check keyed
+        // двадцать лет (40 -> 41), and obj-u17-age joins the objectives whose typed items are allowed here. The closed Batch A
+        // items lose it (47 -> 46; retained 38 -> 37).
+        assertEquals(41, typed.size)
+        assertTrue(typed.all { (it.objectiveId.startsWith("obj-u18-") || it.objectiveId in setOf("obj-u17-age", "obj-u19-conditional", "obj-u19-obligation", "obj-u20-motion")) &&
             it.options.isEmpty() })
         val current = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES && it.kind != "TYPED_FORM" }
         val referenceIds = setOf("u17-g-clock-0", "u17-i-clock-1", "u17-i-clock-2")
@@ -222,9 +225,9 @@ class BatchAUnits71620Test {
             "u20-i-direction-weekly" to "MOTION_DIRECTIONAL_APPLICATION",
             "u20-i-direction-round" to "MOTION_DIRECTIONAL_APPLICATION",
         )
-        assertEquals(47, current.size)
+        assertEquals(46, current.size)
         val retained = current.filter { it.id !in expandedFeatures }
-        assertEquals(38, retained.size)
+        assertEquals(37, retained.size)
         val reference = live.unit(17)!!.objectives.single { it.id == "obj-u17-clock-vocabulary" }
         assertFalse(reference.gating)
         assertEquals("GUIDANCE", reference.kind)

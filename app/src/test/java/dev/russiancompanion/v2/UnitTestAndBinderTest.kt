@@ -59,7 +59,8 @@ class UnitTestAndBinderTest {
         unitTestPlan(p, p.unit(14)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(14, it.typedCount) }
         unitTestPlan(p, p.unit(15)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(14, it.typedCount) }
         unitTestPlan(p, p.unit(16)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(8, it.typedCount) }
-        unitTestPlan(p, p.unit(17)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(11, it.typedCount) }
+        // T17f expectation change (CC028, D50c/D50f): u17-i-age-2 is a typed check, so Unit 17 has 12 typed (was 11).
+        unitTestPlan(p, p.unit(17)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(12, it.typedCount) }
         unitTestPlan(p, p.unit(18)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(16, it.typedCount) }
         unitTestPlan(p, p.unit(19)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(12, it.typedCount) }
         unitTestPlan(p, p.unit(20)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(12, it.typedCount) }

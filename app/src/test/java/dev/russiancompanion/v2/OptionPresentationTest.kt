@@ -39,7 +39,9 @@ class OptionPresentationTest {
         assertEquals(852, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
             p.items.drop(615).take(4).map { it.id }.toSet())
-        assertEquals(558, p.items.count { it.options.firstOrNull() == it.answer })
+        // T17f expectation change: 558 -> 557. u17-i-age-2, which led with its answer, is a typed check with no options (CC028,
+        // D50c/D50f); the item count is unchanged.
+        assertEquals(557, p.items.count { it.options.firstOrNull() == it.answer })
         val routes = p.units.flatMap { it.sessions }.flatMap { it.steps }
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
         for ((name, displays) in listOf(
@@ -56,7 +58,8 @@ class OptionPresentationTest {
                 assertEquals(643, displays.size) // T17e: twelve typed Unit 20 checks (631 -> 643). T17d: twelve typed Unit 19 checks (619 -> 631); T17c: sixteen typed Unit 18 checks (603 -> 619); T17b: eleven typed Unit 17 checks (592 -> 603); T17a: eight typed Unit 16 checks (584 -> 592); T16e: fourteen typed Unit 15 checks (570 -> 584); T16d: fourteen typed Unit 14 checks (556 -> 570); T16c: eleven typed Unit 13 checks (545 -> 556); T16b: eight typed Unit 12 checks (537 -> 545); T16: twelve typed Unit 11 checks join the required set (525 -> 537); T15i: u7-i-manner-4 leaves the required set (526 -> 525); T15h: u10-i-absence-5 joins the required set (525 -> 526); T15g: the two retired Unit 10 duplicates leave the required set (527 -> 525); T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
                 // T15h: u10-i-absence-5 stores its answer first (376 -> 377); displays still disperse (checked below).
                 // T15i: the retired u7-i-manner-4 stored its answer first (377 -> 376).
-                assertEquals(376, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
+                // T17f: u17-i-age-2, which stored its answer first, is a typed check with no options (376 -> 375; CC028, D50c/D50f).
+                assertEquals(375, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
             }
             displays.forEach { (item, order) ->
                 assertEquals(item.id, item.options.sorted(), order.sorted())

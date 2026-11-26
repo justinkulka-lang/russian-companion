@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "26a0c58d0e50212530931e45b97b57b5eee54052ed4515d702b0b1a833ff0258",
+      "sha256": "fbaaeae8343d8b617081303fa34b6cfa58c40cdf0977c72f685322977aa8923d",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3533,6 +3533,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "T16c-n3 (owner decisions D46b, D46d, approved rule changes): every accepted answer of a typed item other than its key cites its own frozen-source record (acceptedAnswerCitations) and equals that record's text exactly under the key's rule (citedTextErrors); a citation for anything that is not such an accepted answer is refused; a count prompt naming any quantity modifier (fractions, multipliers, fractional, decimal or percentage numerals, Unicode fractions, and the Russian fraction and multiplier forms, matched by code-point escapes in a detection pattern) names a competing quantity (namesQuantityModifier). The Russian forms are detected, never constructed or rendered.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T17f D49b D50a D50g",
+      "previousRecordedSha256": "26a0c58d0e50212530931e45b97b57b5eee54052ed4515d702b0b1a833ff0258",
+      "sha256": "fbaaeae8343d8b617081303fa34b6cfa58c40cdf0977c72f685322977aa8923d",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "T17f (owner decisions D49b, D50a, D50g, approved rule changes): D49b, structureValid now applies to every grammar-kind or assessed item in every unit (was Units 6-15, 21-30, the Batch A objectives and obj-u16-inst-prep), so one invalid item fails full-pack validation; D50a, the pinned target phrase of PENCIL_INSTRUMENTAL is pencil (was pencil instrumental); D50g, for obj-u17-age only, with cue and key on the Russian grammar age-statement line (record prefix grammar:age statements:), a distractor may be a competing English meaning from another verified frozen Unit 17 record bound to obj-u17-age that is not content-audit research, synthesis or coverage and does not nest in or around the key (ageStatementLine, ageCompetingMeaning). Every other governed span still requires all participants on the cue's span. No Russian is constructed or rendered.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

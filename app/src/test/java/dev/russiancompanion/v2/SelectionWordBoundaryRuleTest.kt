@@ -85,8 +85,11 @@ class SelectionWordBoundaryRuleTest {
         // (prov-t16cn2-key-u1-i-type-{short i, hard sign, soft sign}) added by this task; all 2,842 are checked.
         // T17e expectation change: 2842 -> 2888. The T17e Unit 20 selection records (prov-t17e-u20-*: cues, keys, forms and fact
         // evidence lines) join them; all are checked.
-        assertEquals(2888, selections.size)
-        assertEquals(2839, selections.count { !it.itemId.startsWith("prov-t16cn2-key-") && !it.itemId.startsWith("prov-t17e-u20-") })
+        // T17f expectation change: 2888 -> 2889. The D50g frozen selection record prov-t17f-u17-age-forty-one-years (the numbers
+        // page record prov-ex-u17-years-3-en bound to obj-u17-age) joins them; all are checked, and the D41d count excludes it.
+        assertEquals(2889, selections.size)
+        assertEquals(2839, selections.count { !it.itemId.startsWith("prov-t16cn2-key-") && !it.itemId.startsWith("prov-t17e-u20-") &&
+            !it.itemId.startsWith("prov-t17f-u17-age-") })
         val failing = selections.filterNot { V2Validator.displayedInFrozen(it) }
             .map { "${it.itemId} ${it.transformation} \"${it.shippedText}\"" }
         assertTrue(failing.joinToString("\n"), failing.isEmpty())
