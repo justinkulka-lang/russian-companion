@@ -1,0 +1,128 @@
+Overall FAIL at efa4c597affd60a358ba109d7e99af609e91800e: four BLOCKING findings.
+
+No tracked changes, commits or pushes. Full report, including every disposition row · Probe output
+
+Check	Verdict
+
+1. D49b full-validation enforcement	FAIL
+2. D50g bounded allowance	FAIL — ordinary scope probes pass, but line identity can be spoofed
+3. D52b hidden reference	PASS
+4. D50a pencil target	PASS
+5. Disposition evidence	FAIL
+6. Fact-builder reproducibility	PASS
+7. BLOCK_COMPLETE claim	FAIL
+
+
+BLOCKING 1 — D49b still misses feature-only invalidity.
+
+The hours probes now fail full validation:
+
+half of two hours → rejected
+double two hours  → rejected
+
+An empty rationale on u16-i-inst-sg-2, outside the old coverage list, also rejects.
+
+But the exact required probe still passes:
+
+u20-i-motion-1.assessment.independent = false
+structureValid = []
+featureValid   = false
+full validation = true, errors=[]
+
+The new dispatch calls only structureValid: V2Validator.kt:5114. Independence is checked separately by featureValid at line 2819. The new regression tests mutate rationale text rather than exercising this flag.
+
+Required change: reject feature-invalid required assessed checks while preserving legitimate guided practice, and add the exact independent-flag regression.
+
+BLOCKING 2 — the age exception trusts a location prefix instead of grammar line 38.
+
+Other-objective, other-unit, off-unit, content-audit, unsourced, Russian-distractor and nested-option probes reject.
+
+However, ageStatementLine:3464 checks sourceRecordId.startsWith("grammar:age statements:").
+
+Reproduction:
+
+- Keep the existing valid age check.
+- Add a required age-objective check using the real frozen line 37, мне холодно / I am cold.
+- Retain the age-record prefix, with correct line-37 bytes and hashes.
+- Use the legitimate Unit 17 distractor forty-one years.
+
+Result:
+
+relation:       RULE_CLASSIFIES_SOURCE_EXAMPLE
+structure:      []
+featureValid:   true
+full validation:true, errors=[]
+frozen binding: []
+
+The added check was placed in u17-st-check-age. The original age check keeps the aggregate capability satisfied.
+
+Reproduction source · Frozen grammar:37
+
+Required change: bind every use of this exception to the approved source, revision and actual age-line span/hash. Snapshot expectations were not updated or rerun for this hypothetical addition; full validation and frozen-file binding were exercised.
+
+BLOCKING 3 — a current calendar question still has the wrong question/key relationship.
+
+u17-i-calendar-date-1 ships:
+
+Field	Text
+
+Prompt	“What does the shown form mean in English?”
+Cue	28 августа 2017 г.
+Key	day month year
+Other option	28.08.17
+
+
+The key describes format rather than translating the date. The source expressly identifies the expanded and numeric forms as equivalent. The rewritten rationale rejects the numeric option because it is “not the order of its parts”—a question the prompt never asks.
+
+full validation = true
+featureValid = true
+scoreCheckedResponse(item, "28.08.17") = false
+
+Evidence: observed item:164, frozen source:10, changed rationale:45.
+
+This invalidates the relevant WC001 and CC026 FIXED claims. Removing template wording and getting zero mechanical lint hits does not establish this semantic fix.
+
+Required change: redesign the question with one defensible, frozen-backed key and test the actual prompt/key/options relationship.
+
+BLOCKING 4 — A2-23 dictation is missing despite verified audio.
+
+Supplying the actual, valid verification registry produces:
+
+Unit	Verified clips	Dictation items
+
+16	4	0
+17	1	0
+
+
+Both report A2_23_DICTATION_MINIMUM. Registry verification defects are empty; these are OWNER_LISTEN_VERIFIED clips.
+
+Reproduction:
+
+V2DesignDiagnostics.audit(pack, verifiedAudioByUnit(registry))
+
+Evidence: A2-23 requirement:102, diagnostic:59.
+
+No explicit accepted reason deferring this condition was found. Implement the dictations or record an explicit owner-accepted shortfall. Omitting the registry input suppresses the diagnostic without satisfying the requirement.
+
+PASS details
+
+- Hidden reference: lesson/lab use the role guard at V2Screens.kt:970; unit tests and cumulative review have equivalent guards at lines 88 and 50. rememberSaveable uses the reference as an internal state key, not input contents. Normal post-attempt answer feedback/reveal remains separate.
+- Pencil target: the changed target matches the approved prompt; the item is structure- and feature-valid. Enumerating every shipped grammar-kind/assessed item found no remaining structural errors or stale target-phrase failures.
+- Builders: both builders ran twice into fresh temporary directories. All four generated resources match their committed bytes on both runs.
+- Sheet: Block 4’s sheet reproduces byte for byte: five candidates, five OWNER/MATCH results, all covered.
+- BOUNDED_SCOPE: CC005, CC007 and CC032 contain topic descriptions and locators, not copied book explanations or exercises. CC036’s eleven per-check rows match the current binary checks. D50d deferrals remain explicit.
+
+LOW disposition findings
+
+The complete row review flags:
+
+- CC027: the cited test checks cue equality and constant keys, but not decoy-cue relevance. The unrelated утром cue survives in the pencil question.
+- CC028: its focused test covers the two required age checks, not u17-g-age-0, which the original finding names.
+- CC001/CC022: cited tests alone establish less than the full claimed display/order coverage; additional existing tests should be cited.
+- IA003/WC002/WC011: incomplete commit/test references.
+- WC004: the stress fix predates the cited 80c7219b; it occurred in 34d23e50.
+- Counts: CC027 says twelve binary checks; there are eleven. Unit 17 has 36 checked/12 typed; 20/12 is its unit-test plan.
+
+The checked/typed floors otherwise pass. A2-28’s five measurement tests remain in the passing full CI gate; those Android-backed progression methods were inspected rather than rerun locally. D51b’s column-framing work remains explicitly assigned to T17g.
+
+Locally, 17 targeted tests passed. CI 45773883406 passed on exactly 1c4bf995; efa4c597 changes only WORK_QUEUE.md. The observed failures prevent verifying the blanket BLOCK_COMPLETE claim against the stated criteria.
