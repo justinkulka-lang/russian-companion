@@ -467,7 +467,8 @@ class BatchBUnits2125Test {
     @Test
     fun completionOverPeriodClearsOnlyForACompleteMatchingAdmission() {
         // T18c-1 (D57a, D58b): live completion admission mutations -> planted baseline objective.
-        val pack = withRetiredUnit23Completion(pack())
+        val current = pack()
+        val pack = withRetiredUnit23Completion(current)
         val span = "A frozen source states the completion-over-period distinction."
         val admission = dev.russiancompanion.v2.curriculum.GovernedSourceAdmission(
             sourceId = "src-pressbooks-diverse-russian-usa-grammar",
@@ -520,9 +521,11 @@ class BatchBUnits2125Test {
             sourceCapabilities = withoutCompletion.sourceCapabilities + wrong,
         )
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(rebound, 23).any { it.claim == "completion-over-period" })
-        assertTrue(V2Validator.contentCompletenessErrors(rebound, rebound.unit(23)!!).any {
-            it.contains("without an admitted completion-over-period source capability")
-        })
+        // T18c-1 (D57a, D59): completion requirement retired; assertion inverted, old -> new
+        val currentUnit = current.unit(23)!!
+        assertFalse(currentUnit.objectives.any { it.id == "obj-u23-completion" })
+        assertFalse(current.sourceCapabilities.any { it.id == "cap-u23-completion-over-period" })
+        assertFalse(V2Validator.contentCompletenessErrors(current, currentUnit).any { it.contains("completion-over-period") })
     }
 
     @Test

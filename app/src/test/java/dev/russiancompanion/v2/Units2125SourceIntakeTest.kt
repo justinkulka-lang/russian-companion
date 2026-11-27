@@ -421,7 +421,10 @@ class Units2125SourceIntakeTest {
             ),
         ).errors.joinToString("\n")
         assertTrue(bookErrors, bookErrors.contains("no independent completion-over-period admission"))
-        assertTrue(bookErrors, bookErrors.contains("without an admitted completion-over-period source capability"))
+        // T18c-1 (D57a, D59): completion requirement retired; assertion inverted, old -> new
+        assertFalse(unit.objectives.any { it.id == "obj-u23-completion" })
+        assertFalse(pack.sourceCapabilities.any { it.id == "cap-u23-completion-over-period" })
+        assertFalse(V2Validator.contentCompletenessErrors(pack, unit).any { it.contains("completion-over-period") })
         assertFalse(bookErrors, bookErrors.contains("book self-attestation clears"))
     }
 

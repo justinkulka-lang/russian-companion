@@ -152,7 +152,15 @@ class Phase2BoundedClaimsTest {
                 },
             )
             assertTrue(unresolved(flipped, admission.unitNumber).contains(admission.claim))
-            assertTrue(errors(flipped), V2Validator.contentCompletenessErrors(flipped, flipped.unit(admission.unitNumber)!!).isNotEmpty())
+            // T18c-1 (D57a, D59): completion requirement retired; assertion inverted, old -> new
+            if (completion) {
+                val currentUnit = current.unit(23)!!
+                assertFalse(currentUnit.objectives.any { it.id == "obj-u23-completion" })
+                assertFalse(current.sourceCapabilities.any { it.id == "cap-u23-completion-over-period" })
+                assertFalse(V2Validator.contentCompletenessErrors(current, currentUnit).any { it.contains("completion-over-period") })
+            } else {
+                assertTrue(errors(flipped), V2Validator.contentCompletenessErrors(flipped, flipped.unit(admission.unitNumber)!!).isNotEmpty())
+            }
             val decision = advancementDecision(flipped, flipped.unit(admission.unitNumber)!!, learner(flipped.unit(admission.unitNumber)!!))
             assertFalse(decision.allowed)
         }
