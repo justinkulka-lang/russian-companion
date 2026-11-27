@@ -37,8 +37,10 @@ class TypedKeyCitationTest {
         // becomes a typed check keyed двадцать лет, cited to its frozen Russian grammar record).
         // T18a-2 expectation change (owner decision D54e): 212 -> 227 typed items and 216 -> 231 pinned rows (Unit 21's fifteen
         // typed checks, each citing its frozen P, G or OpenRussian record).
-        assertEquals(227, typed.size)
-        assertEquals(231, rows.size)
+        // T18b expectation change (owner decision D56c, D56f): 227 -> 233 typed items and 231 -> 237 pinned rows (Unit 22's six typed
+        // checks, each citing its frozen Морфология table cell line; rows regenerated from pack order).
+        assertEquals(233, typed.size)
+        assertEquals(237, rows.size)
         assertEquals(pinned, rows)
         typed.forEach { assertEquals(it.id, emptyList<String>(), V2Validator.typedKeyCitationErrors(pack, it)) }
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)

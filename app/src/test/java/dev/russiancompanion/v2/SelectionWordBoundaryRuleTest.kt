@@ -93,10 +93,13 @@ class SelectionWordBoundaryRuleTest {
         // T18a-2 expectation change (owner decision D54e), old -> new: 2891 -> 2942; the 51 frozen selection records of the Unit 21
         // typed keys, their cues and the Russian the new teaching shows (prov-t18a2-u21-) are whole-word selections of their lines;
         // the D41d count excludes them as it excludes the earlier tasks' records.
-        assertEquals(2942, selections.size)
+        // T18b expectation change (owner decision D56c), old -> new: 2942 -> 2959; the 17 frozen selection records of the Unit 22
+        // typed keys, their nominative cues and the forms the new teaching shows (prov-t18b-u22-) join them; the D41d count
+        // excludes them.
+        assertEquals(2959, selections.size)
         assertEquals(2839, selections.count { !it.itemId.startsWith("prov-t16cn2-key-") && !it.itemId.startsWith("prov-t17e-u20-") &&
             !it.itemId.startsWith("prov-t17f-u17-age-") && !it.itemId.startsWith("prov-t17fn1-u17-calendar-date-") &&
-            !it.itemId.startsWith("prov-t18a2-u21-") })
+            !it.itemId.startsWith("prov-t18a2-u21-") && !it.itemId.startsWith("prov-t18b-u22-") })
         val failing = selections.filterNot { V2Validator.displayedInFrozen(it) }
             .map { "${it.itemId} ${it.transformation} \"${it.shippedText}\"" }
         assertTrue(failing.joinToString("\n"), failing.isEmpty())

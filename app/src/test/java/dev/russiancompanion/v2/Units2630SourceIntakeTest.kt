@@ -59,7 +59,8 @@ class Units2630SourceIntakeTest {
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 22 was 3af10509...).
         // T17g expectation change, old -> new: 542de66c -> 78528098 (Unit 22 collective column wording (column lint)).
         // T18a-2 expectation change (owner decision D54g), old -> new: 78528098 -> dddf9c27 (the shared ref-u2125-attribution notice).
-        22 to "dddf9c27ebe8a87cb223987e1be9d313e44cc0fd2d33fb393058fbb3afd14fa7", // T16c-n2: attribution notice / binder text (was b51726d4...)
+        // T18b expectation change, old -> new: dddf9c27 -> 83be9453 (Unit 22 content, D56).
+        22 to "83be945365358acd4c211554569c668a82fcb32c6119f7a4e99b043f4523bc5d", // T16c-n2: attribution notice / binder text (was b51726d4...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 23 was 817b1d8f...).
         // T18a-2 expectation change (owner decision D54g), old -> new: 2069bea3 -> 43526f2d (the shared ref-u2125-attribution notice).
         23 to "43526f2d89a7f47d685da72eaa8640b970575b14115e55c7b0191144c0f78350", // T16c-n2: attribution notice / binder text (was 1a29b09b...)
