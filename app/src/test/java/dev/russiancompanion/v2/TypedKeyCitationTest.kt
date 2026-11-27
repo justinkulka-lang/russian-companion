@@ -35,8 +35,10 @@ class TypedKeyCitationTest {
         // guided items, each citing the frozen G line or OpenRussian cell its key comes from).
         // T17f expectation change (owner decision D50c, CC028): 211 -> 212 typed items and 215 -> 216 pinned rows (u17-i-age-2
         // becomes a typed check keyed двадцать лет, cited to its frozen Russian grammar record).
-        assertEquals(212, typed.size)
-        assertEquals(216, rows.size)
+        // T18a-2 expectation change (owner decision D54e): 212 -> 227 typed items and 216 -> 231 pinned rows (Unit 21's fifteen
+        // typed checks, each citing its frozen P, G or OpenRussian record).
+        assertEquals(227, typed.size)
+        assertEquals(231, rows.size)
         assertEquals(pinned, rows)
         typed.forEach { assertEquals(it.id, emptyList<String>(), V2Validator.typedKeyCitationErrors(pack, it)) }
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)

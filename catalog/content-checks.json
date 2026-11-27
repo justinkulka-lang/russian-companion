@@ -828,7 +828,10 @@
         "gating": true,
         "checkItemIds": [
           "u21-i-object-reference-1",
-          "u21-i-object-reference-2"
+          "u21-i-object-reference-2",
+          "u21-i-type-sebya",
+          "u21-i-type-svoyu",
+          "u21-i-type-zhenu"
         ],
         "guidedItemIds": [
           "u21-g-object-reference-0"
