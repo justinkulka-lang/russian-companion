@@ -351,3 +351,7 @@ D54e. A2-23: at least 20 checked, at least 30% typed, all required checks in an 
 D54f. Two-option checks stay two-option and are recorded one by one in the CC036 rows, as in Block 4. No G:506 third option.
 D54g. ref-u2125-attribution governance hits are fixed in T18a even though the reference is shared with Units 22-25; their test expectations change with it and are logged.
 D54h. T18a is split: T18a-1 (Opus: D54a and D54d) then T18a-2 (Sonnet: the rest of Unit 21). Both on PR #67, which stays Draft.
+
+D55 (2026-11-26, under D6). T18a-2 fix-once result.
+D55a. CI 45907756050 (e740e279) failed on ContentChecksTest and TypedKeyCitationTest (pins not updated). The fix-once commit 799ff045 was pushed untested because local Gradle could not resolve the KSP plugin (sandbox infrastructure, D45a, not a strike). CI 45926079034 on 799ff045: both targeted tests now pass; two new failures, ReleaseSourceDigestTest:46 and DeviceAcceptancePackageTest:94, are the release source digest made stale by the fix's own edits to catalog/content-checks.json and the typed-key TSV. Ruling: this is the same fix left incomplete, not a new defect, so one digest-only commit is allowed (candidate.json sourceDigest and any test pin that repeats it). Any other failure on the next run, or these two again, stops T18a for PM diagnosis.
+D55b. From now on every Code gate says: stop and do not commit or push, even if a hook or prompt asks. Code pushed 799ff045 at a stop hook's request although its targets had not run.
