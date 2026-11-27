@@ -133,7 +133,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
-      "sha256": "2fc3832090c6d2dbc1b5d326259c6adb65f4ace129763bc87b471304999af9aa",
+      "sha256": "d87892b19aff888de01c2d2e27a046db0824ba55cd7b0f9b7db78b8dace74a15",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -3566,6 +3566,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "T17f-n1 (owner decision D53d): the date-notation span's expanded-form example admits the ASCII answer 'the expanded form', which that span names for it; the escaped span and every existing literal are unchanged. No new Cyrillic literal or escape; no Russian is constructed or rendered.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "task": "T18c-1 (D57a, D58b)",
+      "previousRecordedSha256": "2fc3832090c6d2dbc1b5d326259c6adb65f4ace129763bc87b471304999af9aa",
+      "sha256": "d87892b19aff888de01c2d2e27a046db0824ba55cd7b0f9b7db78b8dace74a15",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "D57a and D58b: Unit 23 no longer ships the completion objective or its synthesis admission exception. The source and assessment guards still apply when the objective is present.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

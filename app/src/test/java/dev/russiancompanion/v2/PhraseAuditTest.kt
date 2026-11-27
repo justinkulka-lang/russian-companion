@@ -33,10 +33,11 @@ class PhraseAuditTest {
         // T18a-1/T18a-2 expectation change (owner decision D54d), old -> new: the allowlist only shrinks; the two Unit 21 lines for the
         // unparenthesized love example left with that text (T18a-1 restored the frozen G:508 form), so 150 -> 148 lines and
         // UNATTESTED 107 -> 105.
-        assertEquals(148, allowlist.size)
+        // T18c-1 (D57a, D58b, D58c): 148 -> 134 entries and 105 -> 91 UNATTESTED (14 fields for three sentences).
+        assertEquals(134, allowlist.size)
         assertEquals(allowlist.size, allowlist.toSet().size)
         // S1 removed 54 UNATTESTED (was 161), 4 MISSING_STRESS (was 23) and 20 COMPOSED (was 44).
-        assertEquals(mapOf("UNATTESTED" to 105, "MISSING_STRESS" to 19, "COMPOSED" to 24), allowlist.groupingBy { it.type }.eachCount())
+        assertEquals(mapOf("UNATTESTED" to 91, "MISSING_STRESS" to 19, "COMPOSED" to 24), allowlist.groupingBy { it.type }.eachCount())
     }
 
     @Test fun everyUnitPassesThePhraseAuditExceptExactlyTheAllowlist() {

@@ -39,6 +39,8 @@ class BatchECapabilityResearchTest {
             Triple(25, "obj-u25-nickname-rule", "productive-diminutive"),
         )
         claims.forEach { (unitNumber, objectiveId, claim) ->
+            // T18c-1 (D57a, D58b): live completion evidence probes -> planted baseline objective.
+            val target = if (claim == "completion-over-period") withRetiredUnit23Completion(pack) else pack
             val keyword = when (claim) {
                 "adverb-paradigm" -> "adverb paradigm co-occurrence"
                 "productive-clock-time" -> "productive clock co-occurrence"
@@ -46,22 +48,22 @@ class BatchECapabilityResearchTest {
                 "negation-scope" -> "negation scope co-occurrence"
                 else -> "productive diminutive co-occurrence"
             }
-            val keywordErrors = planted(pack, probe(unitNumber, objectiveId, claim, keyword))
+            val keywordErrors = planted(target, probe(unitNumber, objectiveId, claim, keyword))
             assertTrue(keywordErrors, keywordErrors.contains("keyword or co-occurrence evidence does not clear $claim"))
             assertTrue(keywordErrors, keywordErrors.contains("no independent $claim admission"))
             val dictionary = probe(unitNumber, objectiveId, claim, "dictionary row").copy(
                 sourceId = "src-openrussian-50e210c4",
                 sourceRecordId = "dictionary-row",
             )
-            assertTrue(errors(pack, dictionary).contains("a dictionary row does not clear $claim"))
+            assertTrue(errors(target, dictionary).contains("a dictionary row does not clear $claim"))
             val book = probe(unitNumber, objectiveId, claim, "Self-attest only after the Lesson work in your copy.")
-            assertTrue(errors(pack, book).contains("book self-attestation does not clear $claim"))
+            assertTrue(errors(target, book).contains("book self-attestation does not clear $claim"))
             val wrongObjective = probe(unitNumber, "obj-u1-alphabet", claim, "wrong objective")
-            assertTrue(errors(pack, wrongObjective).contains("wrong unit or objective"))
+            assertTrue(errors(target, wrongObjective).contains("wrong unit or objective"))
             val wrongUnit = probe(if (unitNumber == 7) 8 else 7, objectiveId, claim, "wrong unit")
-            assertTrue(errors(pack, wrongUnit).contains("wrong unit or objective"))
+            assertTrue(errors(target, wrongUnit).contains("wrong unit or objective"))
             val wrongClaim = probe(unitNumber, objectiveId, "register", "wrong claim")
-            assertTrue(errors(pack, wrongClaim).contains("wrong unit or objective"))
+            assertTrue(errors(target, wrongClaim).contains("wrong unit or objective"))
         }
 
         val gloss = pack.sourceCapabilities.single { it.id == "cap-u7-adverb-form-gloss" }
@@ -94,7 +96,8 @@ class BatchECapabilityResearchTest {
             objectiveId = "obj-u23-completion",
             supportedClaim = "completion-over-period",
         )
-        assertTrue(planted(pack, relabeledDuration).contains("duration evidence does not clear completion-over-period"))
+        // T18c-1 (D57a, D58b): duration relabel on live completion -> duration relabel on the planted objective.
+        assertTrue(planted(withRetiredUnit23Completion(pack), relabeledDuration).contains("duration evidence does not clear completion-over-period"))
         val alternation = pack.sourceCapabilities.single { it.supportedClaim == "negation-alternation" }
         val relabeledAlternation = alternation.copy(
             id = "cap-e-relabel-scope",
@@ -136,6 +139,9 @@ class BatchECapabilityResearchTest {
             24 to "negation-scope",
             25 to "documented-name-form",
         )
+        // T18c-1 (D57a, D58b): live Unit 23 completion blocker -> absent; blocker mutation moves to the fixture.
+        assertFalse(pack.sourceCapabilities.any { it.unitNumber == 23 && it.supportedClaim == "completion-over-period" })
+        assertFalse(V2Validator.unresolvedPartialUnitAdvancementBlockers(pack, pack.unit(23)!!).any { it.contains("completion-over-period") })
         val closed = setOf(7, 17, 23, 24, 25)
         gaps.forEach { (unitNumber, gap) ->
             val unit = pack.unit(unitNumber)!!
@@ -154,8 +160,9 @@ class BatchECapabilityResearchTest {
                 assertTrue(blocked.remaining.any { it.contains(blockers.getValue(unitNumber)) })
             }
 
-            val stripped = pack.copy(
-                units = pack.units.map { current ->
+            val target = if (unitNumber == 23) withRetiredUnit23Completion(pack) else pack
+            val stripped = target.copy(
+                units = target.units.map { current ->
                     if (current.number != unitNumber) {
                         current
                     } else {

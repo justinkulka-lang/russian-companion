@@ -18,7 +18,7 @@ import java.io.File
 import java.security.MessageDigest
 
 /**
- * Phase 2 admits three bounded claims and keeps the retired broad claims closed.
+ * Phase 2 ships two bounded claims and keeps the retired broad claims closed.
  * A wrong identity, a cloned check, or a readiness edit does not clear them.
  */
 class Phase2BoundedClaimsTest {
@@ -48,8 +48,14 @@ class Phase2BoundedClaimsTest {
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "adverb-paradigm" })
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
         assertTrue(pack.unit(25)!!.objectives.none { it.id == "obj-u25-productive-formation" })
+        // T18c-1 (D57a, D58b): a live completion capability and records -> neither is shipped.
+        assertFalse(pack.sourceCapabilities.any { it.unitNumber == 23 && it.supportedClaim == "completion-over-period" })
+        assertFalse(pack.provenanceRecords.any { it.objectiveId == "obj-u23-completion" })
+        val completionFixture = withRetiredUnit23Completion(pack)
         Phase2Sources.ADMISSIONS.forEach { admission ->
-            val records = pack.provenanceRecords.filter { it.sourceRecordId == admission.recordId }
+            // T18c-1 (D57a, D58b): live completion records -> metadata assertions on the planted records.
+            val target = if (admission == Phase2Sources.COMPLETION) completionFixture else pack
+            val records = target.provenanceRecords.filter { it.sourceRecordId == admission.recordId }
             assertTrue(records.isNotEmpty())
             records.forEach { record ->
                 val synthesis = record.synthesis!!
@@ -69,8 +75,12 @@ class Phase2BoundedClaimsTest {
 
     @Test
     fun identitySpanAndRelabelMutationsStayClosed() {
-        val pack = pack()
+        val current = pack()
+        val completionFixture = withRetiredUnit23Completion(current)
         Phase2Sources.ADMISSIONS.forEach { admission ->
+            // T18c-1 (D57a, D58b): live synthesis identity mutations -> baseline fixture for completion.
+            val completion = admission == Phase2Sources.COMPLETION
+            val pack = if (completion) completionFixture else current
             val live = pack.sourceCapabilities.single { it.supportedClaim == admission.claim }
             listOf(
                 live.copy(id = "cap-phase2-source", sourceId = "src-openrussian-50e210c4"),
@@ -129,7 +139,12 @@ class Phase2BoundedClaimsTest {
                 provenanceRecords = pack.provenanceRecords.map { it.copy(reviewStatus = "APPROVED") },
                 admissions = pack.admissions.copy(penguinProseAssets = 3, generatedRussianWords = 2),
             )
-            assertFalse(unresolved(stamped, admission.unitNumber).contains(admission.claim))
+            // T18c-1 (D57a, D58b): stamped legacy completion resolved -> stamped fixture still lacks a frozen admission.
+            assertEquals(completion, unresolved(stamped, admission.unitNumber).contains(admission.claim))
+            if (completion) {
+                val admissionError = "Source capability ${live.id} has no independent ${admission.claim} admission"
+                assertTrue(errors(stamped), errors(stamped).contains(admissionError))
+            }
             val removed = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.id != live.id })
             val flipped = removed.copy(
                 units = removed.units.map { unit ->
@@ -142,6 +157,7 @@ class Phase2BoundedClaimsTest {
             assertFalse(decision.allowed)
         }
 
+        val pack = current
         val invariance = pack.sourceCapabilities.single { it.supportedClaim == "adverb-invariance" }
         val manner = pack.sourceCapabilities.single { it.supportedClaim == "bounded-manner-adverb-formation" }
         val relabeledManner = replace(
@@ -165,9 +181,10 @@ class Phase2BoundedClaimsTest {
         assertTrue(unresolved(relabeledName, 25).contains("documented-name-form"))
 
         val duration = pack.sourceCapabilities.single { it.supportedClaim == "elapsed-time-duration" }
-        val completion = pack.sourceCapabilities.single { it.supportedClaim == "completion-over-period" }
+        // T18c-1 (D57a, D58b): live completion relabel target -> planted baseline objective.
+        val completion = completionFixture.sourceCapabilities.single { it.supportedClaim == "completion-over-period" }
         val relabeledDuration = replace(
-            retarget(pack, duration.exactSpan, completion.objectiveId),
+            retarget(completionFixture, duration.exactSpan, completion.objectiveId),
             completion.id,
             duration.copy(id = completion.id, objectiveId = completion.objectiveId, supportedClaim = completion.supportedClaim),
         )
@@ -186,14 +203,19 @@ class Phase2BoundedClaimsTest {
         assertTrue(duplicateErrors, duplicateErrors.contains("duplicate assessment checks do not clear bounded-manner-adverb-formation") || duplicateErrors.contains("duplicates its independent check"))
         assertTrue(unresolved(duplicated, 7).contains("bounded-manner-adverb-formation"))
 
-        val layout = pack.copy(items = pack.items.map { item ->
+        // T18c-1 (D57a, D58b): live layout and distractor mutations -> planted baseline completion items.
+        val completionFixture = withRetiredUnit23Completion(pack)
+        val controlErrors = errors(completionFixture)
+        assertFalse(controlErrors, controlErrors.contains("label or source-layout recall does not clear completion-over-period"))
+        assertFalse(controlErrors, controlErrors.contains("distractor does not explain aspect and construction"))
+        val layout = completionFixture.copy(items = completionFixture.items.map { item ->
             if (item.id == "u23-i-completion-1") item.copy(prompt = "Which admitted line label is written beside the shown form?") else item
         })
         val layoutErrors = errors(layout)
         assertTrue(layoutErrors, layoutErrors.contains("label or source-layout recall does not clear completion-over-period"))
         assertTrue(unresolved(layout, 23).contains("completion-over-period"))
 
-        val thinDistractor = pack.copy(items = pack.items.map { item ->
+        val thinDistractor = completionFixture.copy(items = completionFixture.items.map { item ->
             if (item.id != "u23-i-completion-1") {
                 item
             } else {

@@ -63,7 +63,8 @@ class Units2630SourceIntakeTest {
         22 to "83be945365358acd4c211554569c668a82fcb32c6119f7a4e99b043f4523bc5d", // T16c-n2: attribution notice / binder text (was b51726d4...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 23 was 817b1d8f...).
         // T18a-2 expectation change (owner decision D54g), old -> new: 2069bea3 -> 43526f2d (the shared ref-u2125-attribution notice).
-        23 to "43526f2d89a7f47d685da72eaa8640b970575b14115e55c7b0191144c0f78350", // T16c-n2: attribution notice / binder text (was 1a29b09b...)
+        // T18c-1 (D57a, D58b): 43526f2d -> ee8c4aa3 for the Unit 23 retirement.
+        23 to "ee8c4aa39de14a89e6eff866cf4dee0b3935512454b85b4d88c9886d3722edff", // T16c-n2: attribution notice / binder text (was 1a29b09b...)
         // S1: Unit 24 gains frozen records for the dative and instrumental of nekogo (was 500af59a...).
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 24 was e35b8db2...).
         // T18a-2 expectation change (owner decision D54g), old -> new: d9563eac -> a1917516 (the shared ref-u2125-attribution notice).

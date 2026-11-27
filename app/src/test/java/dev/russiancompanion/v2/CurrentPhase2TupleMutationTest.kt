@@ -9,8 +9,9 @@ class CurrentPhase2TupleMutationTest {
         val result = V2Validator.validate(pack())
         assertTrue("Unchanged positive control: ${result.errors}", result.ok)
     }
-    @Test fun fullValidatorRejectsSwappedCompletionAnswersWithFrozenNarrative() {
-        rejectsMutableTupleRebinding("u23-i-completion-1", "u23-i-completion-2", "application tuple")
+    @Test fun fullValidatorRejectsSwappedDictionaryAnswersWithFrozenNarrative() {
+        // T18c-1 (D57a, D58b): u23-i-completion-1/2 -> u30-i-dictionary-1/2 (pinned application tuples).
+        rejectsMutableTupleRebinding("u30-i-dictionary-1", "u30-i-dictionary-2", "application tuple")
     }
     @Test fun fullValidatorRejectsSwappedNameAnswersEvenWhenAllMutableApplicationsAgree() {
         rejectsMutableTupleRebinding("u25-i-name-form-1", "u25-i-name-form-2", "conflicting governed descriptions")

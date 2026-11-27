@@ -261,7 +261,8 @@ class Units2125SourceIntakeTest {
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
         assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
         assertTrue(unit.mappingNote.contains("completion over a period"))
-        assertTrue(unit.topicSummary.contains("duration-versus-completion contrast"))
+        // T18c-1 (D57a, D58b): live completion summary -> admitted time-expression summary.
+        assertTrue(unit.topicSummary.contains("Admitted time-expression spans await qualified review."))
         assertFalse(unit.topicSummary.contains("Completion over a period has no admitted frozen span"))
         assertTrue(unit.topicSummary.contains("Book self-attestation does not replace the app checks"))
         assertTrue(unit.topicSummary.contains("not installed"))
@@ -275,7 +276,11 @@ class Units2125SourceIntakeTest {
             assertTrue(objective.checkItemIds.size >= 2)
         }
         assertTrue(reason(pack, 23).isBlank())
-        val completion = unit.objectives.single { it.id == "obj-u23-completion" }
+        // T18c-1 (D57a, D58b): live completion objective and checks -> live objective and capability absent.
+        assertFalse(unit.objectives.any { it.id == "obj-u23-completion" })
+        assertFalse(pack.sourceCapabilities.any { it.unitNumber == 23 && it.supportedClaim == "completion-over-period" })
+        val completionFixture = withRetiredUnit23Completion(pack)
+        val completion = completionFixture.unit(23)!!.objectives.single { it.id == "obj-u23-completion" }
         assertEquals("RECOGNITION", completion.kind)
         assertTrue(completion.checkItemIds.size >= 2)
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 23).any { it.claim == "completion-over-period" })
@@ -316,10 +321,11 @@ class Units2125SourceIntakeTest {
         val review = pack.unitReviews.single { it.unitNumber == 23 }
         assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", review.status)
         assertTrue(review.reviewer.isNullOrBlank())
+        // T18c-1 (D57a, D58b): duration plus completion gap -> duration gap alone in the live unit.
         val stripped = withoutCapabilities(pack, 23)
         val numbersHour = sample(pack, 23, "4371358", "src-wikibooks-russian-cc-by-sa", "one hour one year one minute elapsed during ago")
         val stretched = V2Validator.validate(claimComplete(stripped.copy(provenanceRecords = stripped.provenanceRecords + numbersHour), 23)).errors
-        assertTrue(stretched.joinToString("\n"), stretched.any { it.contains("without admitted elapsed-time-duration and completion-over-period source capabilities") })
+        assertTrue(stretched.joinToString("\n"), stretched.any { it.contains("without an admitted elapsed-time-duration source capability") })
         val dictionary = sample(pack, 23, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", keywordBlob)
             .copy(objectiveId = "obj-u23-duration")
         val dictionaryCapability = capability(dictionary, "cap-dictionary-duration", 23, "obj-u23-duration", "elapsed-time-duration")
@@ -332,10 +338,10 @@ class Units2125SourceIntakeTest {
                 23,
             ),
         ).errors.joinToString("\n")
-        assertTrue(fromRows, fromRows.contains("without admitted elapsed-time-duration and completion-over-period source capabilities"))
+        assertTrue(fromRows, fromRows.contains("without an admitted elapsed-time-duration source capability"))
         assertTrue(fromRows, fromRows.contains("no independent elapsed-time-duration admission"))
         val bare = V2Validator.validate(claimComplete(stripped, 23)).errors
-        assertTrue(bare.joinToString("\n"), bare.any { it.contains("without admitted elapsed-time-duration and completion-over-period source capabilities") })
+        assertTrue(bare.joinToString("\n"), bare.any { it.contains("without an admitted elapsed-time-duration source capability") })
         assertTrue(bare.none { it.contains("no teach step") })
         val ago = pack.provenanceRecords.first().copy(
             itemId = "prov-u23-ago-span",
@@ -365,16 +371,17 @@ class Units2125SourceIntakeTest {
         assertTrue(overreach, overreach.contains("bounded time expression does not clear elapsed-time-duration"))
         assertTrue(overreach, overreach.contains("partial duration evidence does not clear elapsed-time-duration"))
         val host = pack.provenanceRecords.first { it.originalSourceText == elapsed.exactSpan }
+        // T18c-1 (D57a, D58b): live completion capability mutations -> planted baseline objective.
         val wrongObjective = V2Validator.validate(
-            pack.copy(sourceCapabilities = pack.sourceCapabilities + capability(host, "cap-wrong-objective", 23, "obj-u23-duration", "completion-over-period")),
+            completionFixture.copy(sourceCapabilities = completionFixture.sourceCapabilities + capability(host, "cap-wrong-objective", 23, "obj-u23-duration", "completion-over-period")),
         ).errors.joinToString("\n")
         assertTrue(wrongObjective, wrongObjective.contains("attached to the wrong unit or objective"))
         val wrongUnit = V2Validator.validate(
-            pack.copy(sourceCapabilities = pack.sourceCapabilities + capability(host, "cap-wrong-unit", 24, "obj-u23-completion", "completion-over-period")),
+            completionFixture.copy(sourceCapabilities = completionFixture.sourceCapabilities + capability(host, "cap-wrong-unit", 24, "obj-u23-completion", "completion-over-period")),
         ).errors.joinToString("\n")
         assertTrue(wrongUnit, wrongUnit.contains("attached to the wrong unit or objective"))
         val wrongClaim = V2Validator.validate(
-            pack.copy(sourceCapabilities = pack.sourceCapabilities + capability(host, "cap-wrong-claim", 23, "obj-u23-completion", "elapsed-time-duration")),
+            completionFixture.copy(sourceCapabilities = completionFixture.sourceCapabilities + capability(host, "cap-wrong-claim", 23, "obj-u23-completion", "elapsed-time-duration")),
         ).errors.joinToString("\n")
         assertTrue(wrongClaim, wrongClaim.contains("attached to the wrong unit or objective"))
         val moved = host.copy(objectiveId = "obj-u23-completion", itemId = "prov-u23-completion-host")
@@ -386,23 +393,23 @@ class Units2125SourceIntakeTest {
             forged.copy(exactSpan = "not the frozen span"),
         ).forEach { broken ->
             val errors = V2Validator.validate(
-                pack.copy(
-                    provenanceRecords = pack.provenanceRecords + moved,
-                    sourceCapabilities = pack.sourceCapabilities + broken,
+                completionFixture.copy(
+                    provenanceRecords = completionFixture.provenanceRecords + moved,
+                    sourceCapabilities = completionFixture.sourceCapabilities + broken,
                 ),
             ).errors.joinToString("\n")
             assertTrue(errors, errors.contains("revision does not match the frozen record") || errors.contains("span is not in the frozen record"))
             assertTrue(errors, errors.contains("no independent completion-over-period admission"))
-            val withoutCompletion = pack.sourceCapabilities.filter { it.id != "cap-u23-completion-over-period" }
+            val withoutCompletion = completionFixture.sourceCapabilities.filter { it.id != "cap-u23-completion-over-period" }
             assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(
-                pack.copy(provenanceRecords = pack.provenanceRecords + moved, sourceCapabilities = withoutCompletion + broken),
+                completionFixture.copy(provenanceRecords = completionFixture.provenanceRecords + moved, sourceCapabilities = withoutCompletion + broken),
                 23,
             ).any { it.claim == "completion-over-period" })
         }
         val bookText = unit.sessions.flatMap { it.steps }.first { it.kind == "BOOK" }.body
         val bookRecord = sample(pack, 23, elapsed.sourceRevision, elapsed.sourceId, bookText).copy(objectiveId = "obj-u23-completion")
-        val withoutCompletion = pack.copy(
-            sourceCapabilities = pack.sourceCapabilities.filter { it.id != "cap-u23-completion-over-period" },
+        val withoutCompletion = completionFixture.copy(
+            sourceCapabilities = completionFixture.sourceCapabilities.filter { it.id != "cap-u23-completion-over-period" },
         )
         val bookErrors = V2Validator.validate(
             claimComplete(
