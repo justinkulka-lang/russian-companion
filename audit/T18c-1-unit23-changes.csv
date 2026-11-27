@@ -60,3 +60,4 @@ T18c-1,"T18c-1 (D57a, D58b)",OptionPresentationTest,873 items; guided targets at
 T18c-1,"T18c-1 (D57a, D58b)",Units610SourceIntakeTest:Unit 3 review package digest,fe90e42e8d8c975d5150396d59ed233785856e5f248a2959bca596f5ade0c193,15d50bae0f0942a5b00249cb564690b74d00d07c025084c6285d9caddf1ed796
 T18c-1,"T18c-1 (D57a, D58b)",Units2630SourceIntakeTest:Unit 23 content digest,43526f2d89a7f47d685da72eaa8640b970575b14115e55c7b0191144c0f78350,ee8c4aa39de14a89e6eff866cf4dee0b3935512454b85b4d88c9886d3722edff
 T18c-1,"T18c-1 (D57a, D58b)",V2Validator.kt guard hash,2fc3832090c6d2dbc1b5d326259c6adb65f4ace129763bc87b471304999af9aa,d87892b19aff888de01c2d2e27a046db0824ba55cd7b0f9b7db78b8dace74a15
+T18c-1,"T18c-1 (D57a, D58b)",PhraseAuditTest: detected phrase failures,147,133 after 14 retired field entries are removed

@@ -100,8 +100,8 @@ private val retiredUnit23Completion by lazy {
     val fixture = Json.parseToJsonElement(resource.readText()).jsonObject
     val root = File(if (File("app").isDirectory) "." else "..")
     val live = Json.parseToJsonElement(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).jsonObject
-    val sourcePool = JsonObject(live.getValue("sourceTextPool").jsonObject + fixture.getValue("sourceTextPool").jsonObject)
-    V2PackLoader.parse(JsonObject(live + fixture + ("sourceTextPool" to sourcePool)).toString())
+    // The fixture provenance and its source pool replace the live pair together.
+    V2PackLoader.parse(JsonObject(live + fixture).toString())
 }
 
 internal fun withRetiredUnit23Completion(pack: V2CurriculumPack): V2CurriculumPack {

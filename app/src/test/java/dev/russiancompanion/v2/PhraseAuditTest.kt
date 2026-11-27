@@ -66,7 +66,8 @@ class PhraseAuditTest {
         // S1: 78 entries now pass against the frozen S1 pages and were removed (was 227).
         // T18a-1/T18a-2 expectation change (owner decision D54d), old -> new: 149 -> 147; the two Unit 21 failures of the unparenthesized
         // love example are gone with that text.
-        assertEquals(147, failures.size)
+        // T18c-1 (D57a, D58b, D58c): 147 -> 133 phrase failures after removing the 14 retired fields.
+        assertEquals(133, failures.size)
         assertTrue(fields.map { it.unit }.toSet().containsAll((1..30).toSet()))
     }
 
