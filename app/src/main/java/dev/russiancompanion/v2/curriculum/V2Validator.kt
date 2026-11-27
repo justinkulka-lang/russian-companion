@@ -1085,7 +1085,6 @@ internal object V2Validator {
         ),
         23 to listOf(
             RequiredSourceCapability("obj-u23-duration", "elapsed-time-duration"),
-            RequiredSourceCapability("obj-u23-completion", "completion-over-period"),
         ),
         24 to listOf(
             RequiredSourceCapability("obj-u24-alternation", "negation-alternation"),
@@ -1203,14 +1202,7 @@ internal object V2Validator {
 
     private fun lateUnitSourceGap(pack: V2CurriculumPack, unit: V2Unit): List<String> {
         if (unit.number !in 26..30) return emptyList()
-        val missing = REQUIRED_SOURCE_CAPABILITIES[unit.number].orEmpty().filter { requirement ->
-            pack.sourceCapabilities.none { capability ->
-                capability.unitNumber == unit.number &&
-                    capability.objectiveId == requirement.objectiveId &&
-                    capability.supportedClaim == requirement.claim &&
-                    capabilityDefects(pack, capability).isEmpty()
-            }
-        }.map { it.claim }
+        val missing = unresolvedRequiredSourceCapabilities(pack, unit.number).map { it.claim }
         if (missing.isEmpty()) return emptyList()
         val listed = when (missing.size) {
             1 -> missing[0]
@@ -1283,7 +1275,7 @@ internal object V2Validator {
         if (capability.supportedClaim == "postal-address" && capability.sourceHash == "546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97") {
             errors += "Source capability ${capability.id} retired universal postal-order intake requires the exact contextual correction"
         }
-        val binding = REQUIRED_SOURCE_CAPABILITIES[capability.unitNumber].orEmpty().firstOrNull {
+        val binding = sourceRequirements(pack, capability.unitNumber).firstOrNull {
             it.objectiveId == capability.objectiveId && it.claim == capability.supportedClaim
         }
         val productiveClassificationRelabel =
@@ -3197,9 +3189,8 @@ internal object V2Validator {
             "diminutive-form-classification" -> BatchBSources.ADMITTED_DIMINUTIVE_FORM_CLASSIFICATION
             else -> return emptyList()
         }
-        if (claim == "completion-over-period" && Phase2Sources.matches(capability)) {
-            return emptyList()
-        }
+        // T18c-1 (owner decision D57a, path B): the legacy Phase 2 synthesis exception for completion-over-period is removed; a
+        // completion capability now clears only through a frozen admission (BatchBSources.ADMITTED_COMPLETION_OVER_PERIOD, empty).
         val admittedRecord = when (claim) {
             "negation-scope" -> BatchBSources.clearsNegationScope(capability, admitted)
             "productive-diminutive" -> BatchBSources.clearsProductiveDiminutive(capability, admitted)
@@ -6314,12 +6305,25 @@ internal object V2Validator {
         }
     }
 
+    private fun sourceRequirements(pack: V2CurriculumPack, unitNumber: Int): List<RequiredSourceCapability> {
+        val required = REQUIRED_SOURCE_CAPABILITIES[unitNumber].orEmpty()
+        // T18c-1 (D57a, D58b): the retired objective gates only packs that explicitly contain it.
+        val completion = Phase2Sources.COMPLETION
+        return if (unitNumber == completion.unitNumber &&
+            pack.unit(unitNumber)?.objectives?.any { it.id == completion.objectiveId } == true
+        ) {
+            required + RequiredSourceCapability(completion.objectiveId, completion.claim)
+        } else {
+            required
+        }
+    }
+
     /** A claim is resolved only when a defect-free capability names that claim. Keyword text is not evidence. */
     internal fun unresolvedRequiredSourceCapabilities(
         pack: V2CurriculumPack,
         unitNumber: Int,
     ): List<SourceCapabilityRequirement> {
-        return REQUIRED_SOURCE_CAPABILITIES[unitNumber].orEmpty().filter { requirement ->
+        return sourceRequirements(pack, unitNumber).filter { requirement ->
             pack.sourceCapabilities.none { capability ->
                 capability.unitNumber == unitNumber &&
                     capability.objectiveId == requirement.objectiveId &&
