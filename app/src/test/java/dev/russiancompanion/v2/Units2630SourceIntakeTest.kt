@@ -76,7 +76,8 @@ class Units2630SourceIntakeTest {
         // T18a-2 expectation change (owner decision D54g), old -> new: d9563eac -> a1917516 (the shared ref-u2125-attribution notice).
         // T18c-2 (D57d, D60): a1917516 -> 9aedca81 after the Units 21–25 source notice update.
         // T18d (D62): 9aedca81 -> b8f90fdd after updating the shared Units 21–25 attribution.
-        24 to "b8f90fdd64395ce4968f1b925037835926d85674ba9c97cadba2f3fe63c2f484", // T16c-n2: attribution notice / binder text (was 1379741c...)
+        // T18d (D62): b8f90fdd -> c2a3a2f8 after the Unit 24 phrase-audit fix.
+        24 to "c2a3a2f85b7b570299d7b530bd68af2285154cd3873ebbd941ddb5fe8420c745", // T16c-n2: attribution notice / binder text (was 1379741c...)
         // T15g A4: prov-d7b-u25-038 re-cited to russian-grammar-1369617627.txt:1169 (was 4bc90e89...).
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 25 was a3d5745c...).
         // T18a-2 expectation change (owner decision D54g), old -> new: 719848de -> e8acc32b (the shared ref-u2125-attribution notice).

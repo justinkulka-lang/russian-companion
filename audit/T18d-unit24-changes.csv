@@ -795,3 +795,8 @@ T18d,T18d (D62),Unit24NegationInstructionTest: assessed closed items / wording r
 T18d,T18d (D62),Unit24ContextTransferTest: guided example explanation,independent mastery commentary,speaker is the person in focus
 T18d,T18d (D62) / D56f,candidate.json: sourceDigest,2a5ba706bcc625fc3b4f60a1c6a31677bdf7003ea48228a37e0c3a4f67428bff,a77d27a32dec151c44bb765ce81bcdbd5e5d04b3d273f27fdd0a20e0937913b3
 T18d,T18d (D62),Unit24NegationInstructionTest: guided binding,independent feature validity,non-independent and structurally valid
+T18d,T18d (D62),Units610SourceIntakeTest: Unit 3 review digest after fix,73128f2a31bd7553470601a99b1790d45016140fae484e9c1bed02994ef5e061,0ebf78d2e01c1fc90f38cfe776501bec219616c6412750b55c838c5b5f066f63
+T18d,T18d (D62),Units2630SourceIntakeTest: Unit 24 digest after fix,b8f90fdd64395ce4968f1b925037835926d85674ba9c97cadba2f3fe63c2f484,c2a3a2f85b7b570299d7b530bd68af2285154cd3873ebbd941ddb5fe8420c745
+T18d,T18d (D62),Unit1ReviewPackage: curriculum commit after fix,e4403dd2167cc736586d068c3105c7292223fa88,03c670dfd51ad193bf885662711294e65f87e7da
+T18d,T18d (D62),Unit24CumulativeReviewTest: A2-28 measured assignment,no recorded measurement,"8 items, 8 objectives, 8 skills, 8 earlier-unit slots, longest run 2, 0 excluded"
+T18d,T18d (D62) / D56f,candidate.json: sourceDigest after fix,a77d27a32dec151c44bb765ce81bcdbd5e5d04b3d273f27fdd0a20e0937913b3,d525489396d34e8d61f96a128c62f403e270a1221b34a28d6362b6a63c4c6df6

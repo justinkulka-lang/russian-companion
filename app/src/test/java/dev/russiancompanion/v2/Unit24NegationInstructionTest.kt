@@ -27,7 +27,9 @@ class Unit24NegationInstructionTest {
         assertTrue(p.examples.none { it.id == "ex-u24-alternation-0" || it.id == "ex-u24-stand-ins-2" })
         val guided = p.item("u24-g-alternation-0")!!
         assertEquals(p.examples.single { it.id == "ex-u24-alternation-genitive" }.display, guided.promptLetter)
-        assertTrue(V2Validator.featureValid(p, guided))
+        // T18d (D62): independent feature validation -> guided structure and source binding.
+        assertFalse(guided.assessment!!.independent)
+        assertEquals(emptyList<String>(), V2Validator.structureValid(p, guided))
         assertTrue(text("alternation").contains("not unambiguous genitive plural"));assertTrue(text("alternation").contains("not a mechanical rule"))
         // T18d (D62): source commentary and unwitnessed paradigm -> pronunciation cue and the attested nominative gap.
         assertTrue(text("absence").contains("The pronunciation of не is shown as nye."))
