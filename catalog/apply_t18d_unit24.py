@@ -214,7 +214,7 @@ def apply(pack: dict) -> list[dict]:
         set_text(items[iid], "prompt", "Which English meaning matches the sentence?", "A2-24 / prep 5", "placement")
     for iid, item in items.items():
         slug = item["objectiveId"].removeprefix("obj-u24-")
-        feedback = f"{item['answer']} — {EXPLANATIONS[item['answer']]}."
+        feedback = f"{item['promptLetter']} — {item['answer']}. This is {EXPLANATIONS[item['answer']]}."
         rationales = ["" if x == item["answer"] else f"{x} — {EXPLANATIONS[x]}." for x in item["options"]]
         if iid == "u24-g-verbal-ne-0":
             rationales[1] += " " + REWORD[2876]
@@ -226,7 +226,7 @@ def apply(pack: dict) -> list[dict]:
         for n, rationale in enumerate(rationales):
             if rationale:
                 authored[f"{iid}.rationale{n}"] = slug, rationale
-        if item.get("assessment"):
+        if slug == "alternation" and item.get("assessment"):
             item["assessment"].update(distractorDifference=rationales, whyAnswerDemonstratesObjective=feedback)
 
     lines = {
