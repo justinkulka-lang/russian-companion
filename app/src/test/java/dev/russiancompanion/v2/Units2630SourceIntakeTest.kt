@@ -55,24 +55,29 @@ class Units2630SourceIntakeTest {
         20 to "b61e9d0ddc6fdc904ddee2e145f05c0eb214c13f7de276aadf7603c0485c0c42", // T17e: Unit 20 content (was cd1ef77d...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 21 was 566c3430...).
         // T18a-2 expectation change, old -> new: eba4de8e -> 2b4139bd (Unit 21 content, D54b-g).
-        21 to "2b4139bdbed7d675d866278279aa21c3d302e012298f3508d937b14b80d123c7", // T16c-n2: attribution notice / binder text (was bc4a91db...)
+        // T18c-2 (D57d, D60): 2b4139bd -> b0ab60e8 after the Units 21–25 source notice update.
+        21 to "b0ab60e805af0c8eaa3a987c819708fb32fddc49b80a9541c7dde12bb15dfaee", // T16c-n2: attribution notice / binder text (was bc4a91db...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 22 was 3af10509...).
         // T17g expectation change, old -> new: 542de66c -> 78528098 (Unit 22 collective column wording (column lint)).
         // T18a-2 expectation change (owner decision D54g), old -> new: 78528098 -> dddf9c27 (the shared ref-u2125-attribution notice).
         // T18b expectation change, old -> new: dddf9c27 -> 83be9453 (Unit 22 content, D56).
-        22 to "83be945365358acd4c211554569c668a82fcb32c6119f7a4e99b043f4523bc5d", // T16c-n2: attribution notice / binder text (was b51726d4...)
+        // T18c-2 (D57d, D60): 83be9453 -> 49fe3d96 after the Units 21–25 source notice update.
+        22 to "49fe3d96c6ae171fa6945d8c7c4226ac2e3b55741cc910fee69fd3f1a74d71eb", // T16c-n2: attribution notice / binder text (was b51726d4...)
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 23 was 817b1d8f...).
         // T18a-2 expectation change (owner decision D54g), old -> new: 2069bea3 -> 43526f2d (the shared ref-u2125-attribution notice).
         // T18c-1 (D57a, D58b): 43526f2d -> ee8c4aa3 for the Unit 23 retirement.
-        23 to "ee8c4aa39de14a89e6eff866cf4dee0b3935512454b85b4d88c9886d3722edff", // T16c-n2: attribution notice / binder text (was 1a29b09b...)
+        // T18c-2 (D57d, D60): ee8c4aa3 -> a3e912f8 after the Units 21–25 source notice update.
+        23 to "a3e912f8eca6ed7b0f13f4a97f176c595087c1641877a33059bfdd306b77a389", // T16c-n2: attribution notice / binder text (was 1a29b09b...)
         // S1: Unit 24 gains frozen records for the dative and instrumental of nekogo (was 500af59a...).
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 24 was e35b8db2...).
         // T18a-2 expectation change (owner decision D54g), old -> new: d9563eac -> a1917516 (the shared ref-u2125-attribution notice).
-        24 to "a1917516da2b491377641d9aef8d0360f64f1c9689266dae9b9ea87b3a34eb33", // T16c-n2: attribution notice / binder text (was 1379741c...)
+        // T18c-2 (D57d, D60): a1917516 -> 9aedca81 after the Units 21–25 source notice update.
+        24 to "9aedca8189d172f648639c38cb70457e0a6c09f52b82e05bf196bcc48be99f31", // T16c-n2: attribution notice / binder text (was 1379741c...)
         // T15g A4: prov-d7b-u25-038 re-cited to russian-grammar-1369617627.txt:1169 (was 4bc90e89...).
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 25 was a3d5745c...).
         // T18a-2 expectation change (owner decision D54g), old -> new: 719848de -> e8acc32b (the shared ref-u2125-attribution notice).
-        25 to "e8acc32becce10e3e30a53015fb7a6b6db9622139f71c05f713ecdd5432bff5b", // T16c-n2: attribution notice / binder text (was c8a946d6...)
+        // T18c-2 (D57d, D60): e8acc32b -> 06a7498b after the Units 21–25 source notice update.
+        25 to "06a7498b4e19cc03fdb7c970ff9d70bf44018bb7fb0d7c1c93c76af788182224", // T16c-n2: attribution notice / binder text (was c8a946d6...)
     )
 
     private val preservedMappingDigests = mapOf(

@@ -7,23 +7,6 @@ import org.junit.Test
 import java.io.File
 
 class Unit23TimeInstructionTest {
-    @Test fun inspectT18c2Content() {
-        val p = pack()
-        val root = File(if (File("app").isDirectory) "." else "..")
-        println("T18C2_UNIT3_REVIEW=" + dev.russiancompanion.v2.review.buildUnitReviewPackage(p, 3).reviewPackageDigest)
-        (21..25).forEach { unit -> println("T18C2_UNIT${unit}_CONTENT=" + V2Validator.unitContentReviewDigest(p, unit)) }
-        println("T18C2_RELEASE=" + dev.russiancompanion.release.currentReleaseBinding(root)!!.sourceDigest)
-        val result = V2Validator.validate(p)
-        result.errors.forEach { println("T18C2_VALIDATOR=" + it) }
-        val (summaries, signals) = V2AssessmentDiagnostics.audit(p)
-        println("T18C2_COUNTS=" + summaries.single { it.unit == 23 })
-        signals.filter { it.unit == 23 }.forEach { println("T18C2_ASSESSMENT=" + it) }
-        V2DesignDiagnostics.audit(p).signals.filter {
-            (it.unit == 23 || it.entityIds.any { id -> "ref-u2125-attribution" in id }) &&
-                (it.rule.startsWith("LEARNER_") || it.rule.startsWith("A2_"))
-        }.forEach { println("T18C2_LINT=" + it) }
-    }
-
     @Test fun eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation() {
         val p=pack()
         val completionFixture = withRetiredUnit23Completion(p)

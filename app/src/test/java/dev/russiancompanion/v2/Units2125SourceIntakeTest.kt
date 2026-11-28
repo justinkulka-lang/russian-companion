@@ -9,6 +9,7 @@ import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.review.buildUnitReviewPackage
 import dev.russiancompanion.v2.review.governedMappingFacts

@@ -287,3 +287,12 @@ T18c-2,"MARK 2813–2843 / U:387–408, G:21–25",u23-i-elapsed-2.russianFacts[
 T18c-2,"MARK 2813–2843 / U:387–408, G:21–25",u23-i-elapsed-2.russianFacts[1],"matches ago: an event before the reference time, not completion within a period.",prov-t18c2-u23-elapsed-evidence
 T18c-2,"MARK 2813–2843 / U:387–408, G:21–25",u23-i-elapsed-2.russianFacts[2],"in (a period of time): an event after the forward-looking interval, not the duration of the activity.",prov-t18c2-u23-elapsed-evidence
 T18c-2,A2-28,Unit23CumulativeReviewTest,No Unit 23 measurement recorded,"8 items, 8 objectives, 8 skills, 8 earlier-unit slots, longest repeat run 2, 0 excluded"
+T18c-2,D56f / D60 pins,Units610SourceIntakeTest: Unit 3 review package digest,15d50bae0f0942a5b00249cb564690b74d00d07c025084c6285d9caddf1ed796,615745582cef29cc51fbb144150ef29f77ccb570d2e3d094e371e76dac409d9c
+T18c-2,D56f / D60 pins,Units2630SourceIntakeTest: Unit 21 content digest,2b4139bdbed7d675d866278279aa21c3d302e012298f3508d937b14b80d123c7,b0ab60e805af0c8eaa3a987c819708fb32fddc49b80a9541c7dde12bb15dfaee
+T18c-2,D56f / D60 pins,Units2630SourceIntakeTest: Unit 22 content digest,83be945365358acd4c211554569c668a82fcb32c6119f7a4e99b043f4523bc5d,49fe3d96c6ae171fa6945d8c7c4226ac2e3b55741cc910fee69fd3f1a74d71eb
+T18c-2,D56f / D60 pins,Units2630SourceIntakeTest: Unit 23 content digest,ee8c4aa39de14a89e6eff866cf4dee0b3935512454b85b4d88c9886d3722edff,a3e912f8eca6ed7b0f13f4a97f176c595087c1641877a33059bfdd306b77a389
+T18c-2,D56f / D60 pins,Units2630SourceIntakeTest: Unit 24 content digest,a1917516da2b491377641d9aef8d0360f64f1c9689266dae9b9ea87b3a34eb33,9aedca8189d172f648639c38cb70457e0a6c09f52b82e05bf196bcc48be99f31
+T18c-2,D56f / D60 pins,Units2630SourceIntakeTest: Unit 25 content digest,e8acc32becce10e3e30a53015fb7a6b6db9622139f71c05f713ecdd5432bff5b,06a7498b4e19cc03fdb7c970ff9d70bf44018bb7fb0d7c1c93c76af788182224
+T18c-2,D56f / D60 pins,Unit1ReviewPackage: curriculum content commit,fa7d6c1d87a2947db32a9f2a2e36fc88be262ea3,639d4b8399e0ed438a0ed42565cd289f28c8018f
+T18c-2,D56f / D60 pins,TypedKeyCitationTest: typed items / pinned citation rows,233 / 237,243 / 247
+T18c-2,D56f / D60 pins,candidate.json: sourceDigest,ab28788576992b7d5680451e4fc80827d89c309390fa0eb10a3b6f9f68a169ce,2a5ba706bcc625fc3b4f60a1c6a31677bdf7003ea48228a37e0c3a4f67428bff
