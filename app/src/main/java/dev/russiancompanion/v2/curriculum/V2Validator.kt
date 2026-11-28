@@ -1482,29 +1482,31 @@ internal object V2Validator {
         val errors = mutableListOf<String>()
         val id = capability.id
         val claim = admission.claim
-        val synthesis = spanHost.synthesis
-        if (synthesis == null || synthesis.objectiveOrClaimBinding != admission.binding) {
-            errors += "Source capability $id synthesis binding does not match"
-        }
-        if (synthesis == null || synthesis.bibliography.isBlank() || synthesis.authorshipDeclaration.isBlank()) {
-            errors += "Source capability $id original synthesis evidence is incomplete"
-        }
-        if (synthesis == null || synthesis.sourceDateOrVersion != Phase2Sources.DATE) {
-            errors += "Source capability $id original synthesis date does not match"
-        }
-        val audit = synthesis?.finalAudit
-        if (audit != null && (audit.artifactIdentity.isNotBlank() || audit.disposition.isNotBlank())) {
-            errors += "Source capability $id records a final audit before the final audit"
-        }
-        if (synthesis == null || synthesis.applications.isEmpty()) {
-            errors += "Source capability $id has no stated applications"
-        } else {
-            synthesis.applications.forEach { application ->
-                val outside = application.cue !in spanHost.originalSourceText ||
-                    application.answer !in spanHost.originalSourceText ||
-                    application.distractors.any { it !in spanHost.originalSourceText }
-                if (outside) {
-                    errors += "Source capability $id stated application is outside the frozen span"
+        if (admission != Phase2Sources.NAME_FORM) {
+            val synthesis = spanHost.synthesis
+            if (synthesis == null || synthesis.objectiveOrClaimBinding != admission.binding) {
+                errors += "Source capability $id synthesis binding does not match"
+            }
+            if (synthesis == null || synthesis.bibliography.isBlank() || synthesis.authorshipDeclaration.isBlank()) {
+                errors += "Source capability $id original synthesis evidence is incomplete"
+            }
+            if (synthesis == null || synthesis.sourceDateOrVersion != Phase2Sources.DATE) {
+                errors += "Source capability $id original synthesis date does not match"
+            }
+            val audit = synthesis?.finalAudit
+            if (audit != null && (audit.artifactIdentity.isNotBlank() || audit.disposition.isNotBlank())) {
+                errors += "Source capability $id records a final audit before the final audit"
+            }
+            if (synthesis == null || synthesis.applications.isEmpty()) {
+                errors += "Source capability $id has no stated applications"
+            } else {
+                synthesis.applications.forEach { application ->
+                    val outside = application.cue !in spanHost.originalSourceText ||
+                        application.answer !in spanHost.originalSourceText ||
+                        application.distractors.any { it !in spanHost.originalSourceText }
+                    if (outside) {
+                        errors += "Source capability $id stated application is outside the frozen span"
+                    }
                 }
             }
         }
@@ -1568,7 +1570,7 @@ internal object V2Validator {
             }
         }
         if (claim == "documented-name-form") {
-            errors += documentedNameFormCoherenceErrors(pack, id, synthesis, checks + practiceItems)
+            errors += documentedNameFormCoherenceErrors(pack, id, checks + practiceItems)
         }
         if (independent.any { item ->
                 SOURCE_LAYOUT_RECALL.containsMatchIn(item.prompt) ||
@@ -1726,73 +1728,50 @@ internal object V2Validator {
         return errors
     }
 
-    /**
-     * The admitted nickname record keeps one form dismissive.
-     * Full-name, short-form, and dismissive readings cannot be swapped.
-     */
+    // T18e (D64, D65): exact classifications on L:284–286, scoped to the documented-name objective.
+    private val NAME_FORM_APPLICATIONS = mapOf(
+        "\u041c\u0430\u0440\u044e\u043d\u044f" to ("\u043e\u0442 \u043f\u043e\u043b\u043d\u043e\u0439 \u0444\u043e\u0440\u043c\u044b \u0438\u043c\u0435\u043d\u0438" to setOf("\u043e\u0442 \u043a\u0440\u0430\u0442\u043a\u043e\u0439 \u0444\u043e\u0440\u043c\u044b", "\u043e\u0442\u0442\u0435\u043d\u043e\u043a \u043f\u0440\u0435\u043d\u0435\u0431\u0440\u0435\u0436\u0435\u043d\u0438\u044f")),
+        "\u041c\u0430\u0448\u0435\u043d\u044c\u043a\u0430" to ("\u043e\u0442 \u043a\u0440\u0430\u0442\u043a\u043e\u0439 \u0444\u043e\u0440\u043c\u044b" to setOf("\u043e\u0442 \u043f\u043e\u043b\u043d\u043e\u0439 \u0444\u043e\u0440\u043c\u044b \u0438\u043c\u0435\u043d\u0438", "\u043e\u0442\u0442\u0435\u043d\u043e\u043a \u043f\u0440\u0435\u043d\u0435\u0431\u0440\u0435\u0436\u0435\u043d\u0438\u044f")),
+        "\u0421\u0430\u0448\u043a\u0430" to ("\u043e\u0442\u0442\u0435\u043d\u043e\u043a \u043f\u0440\u0435\u043d\u0435\u0431\u0440\u0435\u0436\u0435\u043d\u0438\u044f" to setOf("\u043e\u0442 \u043f\u043e\u043b\u043d\u043e\u0439 \u0444\u043e\u0440\u043c\u044b \u0438\u043c\u0435\u043d\u0438", "\u043e\u0442 \u043a\u0440\u0430\u0442\u043a\u043e\u0439 \u0444\u043e\u0440\u043c\u044b")),
+        "\u041c\u0430\u0440\u0443\u0441\u044f" to ("\u041c\u0430\u0440\u0438\u044f" to setOf("\u041c\u0430\u0448\u0430", "\u041c\u0430\u043d\u044f")),
+    )
+    private val NAME_FORM_ITEMS = mapOf(
+        "\u041c\u0430\u0440\u044e\u043d\u044f" to "u25-g-name-form-1",
+        "\u041c\u0430\u0448\u0435\u043d\u044c\u043a\u0430" to "u25-i-name-form-1",
+        "\u0421\u0430\u0448\u043a\u0430" to "u25-i-name-form-2",
+        "\u041c\u0430\u0440\u0443\u0441\u044f" to "u25-i-name-form-base",
+    )
+
     private fun documentedNameFormCoherenceErrors(
         pack: V2CurriculumPack,
         id: String,
-        synthesis: V2OriginalSynthesisEvidence?,
         assessed: List<V2CheckItem>,
-    ): List<String> {
-        val errors = mutableListOf<String>()
-        val governedDismissive = pack.provenanceRecords.any {
-            it.itemId == "prov-ex-u25-nickname-rule-2-en" &&
-                it.unitNumber == 25 &&
-                it.sourceId != Phase2Sources.SOURCE_ID &&
-                it.shippedText.isNotBlank()
-        }
-        val applications = synthesis?.applications.orEmpty()
-        fun application(cue: String) = applications.firstOrNull { it.cue == cue }
-        fun item(cue: String) = assessed.firstOrNull { it.promptLetter == cue }
-        val required = mapOf(
-            "\u041c\u0430\u0440\u044e\u043d\u044f" to "full name",
-            "\u041c\u0430\u0448\u0435\u043d\u044c\u043a\u0430" to "short form",
-            "\u0421\u0430\u0448\u043a\u0430" to "dismissive",
-        )
-        if (governedDismissive) {
-            required.forEach { (cue, anchor) ->
-                val reading = item(cue)
-                val stated = application(cue)
-                val answer = reading?.answer.orEmpty()
-                if (stated == null || reading == null || !answer.contains(anchor) || stated.answer != answer) {
-                    errors += "Source capability $id conflicting governed descriptions for $cue"
-                }
-                if (answer == "documented familiar short-form coloring" || stated?.answer == "documented familiar short-form coloring") {
-                    errors += "Source capability $id familiar short-form coloring does not preserve the dismissive reading of \u0421\u0430\u0448\u043a\u0430"
-                }
-                if (reading != null && !reading.feedback.contains(answer)) {
-                    errors += "Source capability $id feedback does not agree with the keyed answer"
-                }
-                if (reading != null && stated != null) {
-                    reading.options.forEachIndexed { index, option ->
-                        if (option == answer) return@forEachIndexed
-                        val rationale = reading.distractorRationales.getOrElse(index) { "" }
-                        if (!rationale.contains(option) || stated.distractors.none { it == option }) {
-                            errors += "Source capability $id distractor rationale does not agree with the competing application"
-                        }
-                    }
-                }
+    ): List<String> = buildList {
+        NAME_FORM_APPLICATIONS.forEach { (cue, application) ->
+            val (key, alternatives) = application
+            val item = assessed.firstOrNull { it.id == NAME_FORM_ITEMS.getValue(cue) }
+            val answer = item?.answer
+            val participants = item?.assessment?.relationParticipantIds.orEmpty().mapNotNull { recordId ->
+                pack.provenanceRecords.firstOrNull { it.itemId == recordId }
             }
-            val sashka = item("\u0421\u0430\u0448\u043a\u0430")?.answer
-            val others = listOfNotNull(item("\u041c\u0430\u0440\u044e\u043d\u044f")?.answer, item("\u041c\u0430\u0448\u0435\u043d\u044c\u043a\u0430")?.answer)
-            if (sashka != null && sashka in others) {
-                errors += "Source capability $id swaps the \u0421\u0430\u0448\u043a\u0430 interpretation"
+            if (item == null || item.promptLetter != cue || answer != key ||
+                participants.size != alternatives.size + 2 ||
+                participants.map { it.shippedText } != listOf(cue, key) + item.options.filter { it != key } ||
+                statedApplication(participants.first(), participants[1], participants.drop(2)) != "STATED_APPLICATION" ||
+                structureValid(pack, item).isNotEmpty()
+            ) {
+                add("Source capability $id conflicting governed descriptions for $cue")
+            }
+            if (item != null && answer != null && !item.feedback.contains(answer)) {
+                add("Source capability $id feedback does not agree with the keyed answer")
+            }
+            if (item != null && item.options.withIndex().any { (index, option) ->
+                    option != key && (!item.distractorRationales.getOrElse(index) { "" }.contains(option) || option !in alternatives)
+                }
+            ) {
+                add("Source capability $id distractor rationale does not agree with the competing application")
             }
         }
-        val rejected = item("an unstudied personal name")
-        val rejectedApplication = application("an unstudied personal name")
-        if (
-            rejected == null ||
-            rejectedApplication == null ||
-            rejected.answer != rejectedApplication.answer ||
-            !rejected.answer.contains("names dictionary") ||
-            rejectedApplication.distractors.none { it.contains("mechanically") }
-        ) {
-            errors += "Source capability $id arbitrary name-form generation is not rejected"
-        }
-        return errors
     }
 
     private val STRUCTURAL_PAGE_RANGE = Regex("""^\d{2,3}-\d{2,3}$""")
@@ -3336,7 +3315,9 @@ internal object V2Validator {
         ) {
             errors += "Source capability ${capability.id} bounded diminutive recognition does not clear documented-name-form"
         }
-        if (capability.supportedClaim == "productive-diminutive" && capability.sourceHash == Phase2Sources.NAME_FORM.sourceHash) {
+        if (capability.supportedClaim == "productive-diminutive" &&
+            capability.sourceHash in setOf(Phase2Sources.NAME_FORM.sourceHash, Phase2Sources.RETIRED_NAME_FORM_SYNTHESIS_HASH)
+        ) {
             errors += "Source capability ${capability.id} documented name-form evidence does not clear productive-diminutive"
         }
         if (capability.supportedClaim == "productive-clock-time" &&
@@ -3565,7 +3546,19 @@ internal object V2Validator {
         answer: V2ProvenanceRecord,
         distractors: List<V2ProvenanceRecord>,
     ): String? {
-        val table = STATED_APPLICATIONS[cue.originalSourceText] ?: return null
+        val admission = Phase2Sources.NAME_FORM
+        val table = if (cue.objectiveId == admission.objectiveId &&
+            cue.unitNumber == admission.unitNumber && cue.sourceId == Phase2Sources.NAME_FORM_SOURCE &&
+            cue.sourceRevision == Phase2Sources.NAME_FORM_REVISION && cue.sourceRecordId == admission.recordId &&
+            cue.sourceHash == admission.sourceHash
+        ) {
+            if ((listOf(answer) + distractors).any { it.objectiveId != admission.objectiveId || it.unitNumber != admission.unitNumber }) {
+                return ""
+            }
+            NAME_FORM_APPLICATIONS
+        } else {
+            STATED_APPLICATIONS[cue.originalSourceText] ?: return null
+        }
         val spec = table[cue.shippedText] ?: return ""
         val keyed = spec.first
         val allowed = spec.second

@@ -136,3 +136,10 @@ CC029,Unit 24 learner voice,FIXED,T18d,,2026-11-28,"D62 rewrites implementation,
 CC036,Unit 24 binary required checks,BOUNDED_SCOPE,T18d,,2026-11-28,Five retained two-option checks have their own rows in audit/cc036-binary-required-checks.csv.
 WC011,Unit 24 companion directions,FIXED,T18d,,2026-11-28,Unit-specific binder model and tutor task support the taught forms and refer to the Penguin book for additional practice.
 A2-28,Unit 24 cumulative review,FIXED,T18d,,2026-11-28,"Unit24CumulativeReviewTest measures 8 items, 8 objectives, 8 skills, 8 earlier-unit slots, longest run 2 and 0 excluded."
+D64a,Unit 25 frozen citations,FIXED,T18e,,2026-11-28,"Names N:5,7, courtesy G:419,1169 and V:308, name forms L:284–286 and address A:89."
+D64c/D65,Unit 25 documented name forms,FIXED,T18e,,2026-11-28,Retired the dictionary requirement and kept four frozen stated applications. No productive-formation capability.
+CC022,Unit 25 session-local check exposure,FIXED,T18e,,2026-11-28,All 23 checks sit in the final session. The seven typed checks precede the closed checks.
+CC021,Unit 25 remediation coverage,FIXED,T18e,,2026-11-28,Each remediation revisits the associated teaching and cites frozen evidence.
+CC029,Unit 25 learner voice,FIXED,T18e,,2026-11-28,Replaced evidence and assessment commentary with teaching and task directions. The shared licence notice stays.
+CC036,Unit 25 binary required checks,BOUNDED_SCOPE,T18e,,2026-11-28,The V:308 courtesy form comparison has its own CC036 disposition.
+WC011,Unit 25 companion directions,FIXED,T18e,,2026-11-28,Added a binder model and tutor work for names and courtesy.
