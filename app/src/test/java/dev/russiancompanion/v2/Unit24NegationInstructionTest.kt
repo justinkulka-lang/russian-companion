@@ -43,7 +43,8 @@ class Unit24NegationInstructionTest {
     @Test fun existingKeysStayBoundAndSourceAndReviewRestrictionsRemainClosed() {
         val p=pack();val items=p.items.filter { it.objectiveId.startsWith("obj-u24-") && it.assessment != null }
         // T18d (D62): 21 -> 19 assessed closed items after two unsupported checks retired.
-        assertEquals(19,items.size)
+        // T18de (D71): 19 -> 21 assessed closed items.
+        assertEquals(21,items.size)
         assertEquals(1,p.items.count { it.objectiveId=="obj-u24-persuasion-reference" && it.kind=="SOURCE_MEANING" })
         for(i in items) {
             if(i.assessment!!.independent)assertTrue(i.id,V2Validator.featureValid(p,i))
@@ -68,7 +69,8 @@ class Unit24NegationInstructionTest {
         assertEquals(unit.objectives.flatMap { it.checkItemIds }.toSet(), checks.map { it.id }.toSet())
         val (counts, signals) = V2AssessmentDiagnostics.audit(p)
         val summary = counts.single { it.unit == 24 }
-        assertEquals(listOf(20, 20, 8), listOf(summary.checkedItems, summary.requiredChecks, summary.typedRequiredChecks))
+        // T18de (D71): 20 -> 22 checked and required, eight typed.
+        assertEquals(listOf(22, 22, 8), listOf(summary.checkedItems, summary.requiredChecks, summary.typedRequiredChecks))
         assertTrue(signals.toString(), signals.none { it.unit == 24 && it.rule.startsWith("A2_24") })
         val typed = checks.take(8)
         assertTrue(typed.all { it.isTypedResponse() })

@@ -37,7 +37,8 @@ class AudioVerificationBindingTest {
 
     /** Owner-verified clips no letter, example or item shows (manifest uses are teaching or reference text only). */
     private val unbound = mapOf("rus-1267a652" to "A04-015", "rus-d5ac2c6b" to "A04-016", "rus-80cf7d55" to "A05-013",
-        "rus-12eda911" to "A09-001", "rus-fa1d892f" to "A11-005", "rus-8a9989d5" to "A11-007", "rus-8e14f567" to "A24-007")
+        // T18de (D52a, D66): A24-007 -> A24-005 for the same clip.
+        "rus-12eda911" to "A09-001", "rus-fa1d892f" to "A11-005", "rus-8a9989d5" to "A11-007", "rus-8e14f567" to "A24-005")
 
     @Test fun theThirtyFourOwnerResultsMatchTheBundledClipsAndTheManifest() {
         assertEquals(1, owner.getValue("schema").jsonPrimitive.int)

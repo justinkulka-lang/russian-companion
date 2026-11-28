@@ -120,7 +120,8 @@ class Unit26CumulativeReviewTest {
             waitTag("v2-review-feedback-0"); compose.onNodeWithTag("v2-review-feedback-0").assertTextEquals("Try again. ${noun.feedback}")
             compose.onNodeWithTag("v2-review-remediate-0").performScrollTo().performClick()
             waitTag("v2-example-ex-u25-name-question-3"); compose.onNodeWithTag("v2-example-ex-u25-name-question-3").performScrollTo().assertIsDisplayed()
-            compose.onNodeWithText("It starts the name reply and must be followed by a name", substring = true).performScrollTo().assertIsDisplayed()
+            // T18de (D64, D66): old name-reply phrase -> the current Unit 25 remediation text.
+            compose.onNodeWithText("It begins the reply and must be followed by a name", substring = true).performScrollTo().assertIsDisplayed()
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
             val practice = reviewedGuidedPractice(p, "u25-st-rem-name-question")
             assertEquals(listOf("u25-st-guided-name-question-1"), practice)

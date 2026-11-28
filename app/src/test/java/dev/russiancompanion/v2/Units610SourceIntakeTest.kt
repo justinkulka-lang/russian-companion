@@ -84,7 +84,8 @@ class Units610SourceIntakeTest {
         // T18cd-fix (D63 correction): 0ebf78d2 -> b72dd319 after binding the corrected curriculum commit.
         // T18e (D64): b72dd319 -> 19fbe297 after binding the Unit 25 content commit.
         // T18e (D64): 19fbe297 -> 66a56763 after the verification fix.
-        assertEquals("66a567631a42701f00c801327afb36fef21ed8a2d7519cab1f1f469cc51b6241", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        // T18de (D67, D71): 66a56763 -> 7221a600 for the verified content update.
+        assertEquals("7221a60032c19389fc3fa5feefbb9a4cf49881183da8a36d7b14aca781f9793b", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(

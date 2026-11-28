@@ -130,7 +130,8 @@ class Unit25CumulativeReviewTest {
             waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Try again. ${noun.feedback}")
             compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
             waitTag("v2-example-ex-u24-verbal-ne-4"); compose.onNodeWithTag("v2-example-ex-u24-verbal-ne-4").performScrollTo().assertIsDisplayed()
-            compose.onNodeWithText("This complete sentence identifies Boris as the subject and coming as the action", substring = true).performScrollTo().assertIsDisplayed()
+            // T18de (D66, D67): old Boris explanation -> live Unit 24 remediation.
+            compose.onNodeWithText("The negative particle precedes the verb for coming.", substring = true).performScrollTo().assertIsDisplayed()
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
             val practice = reviewedGuidedPractice(p, "u24-st-rem-verbal-ne")
             assertEquals(listOf("u24-st-guided-verbal-ne-1"), practice)

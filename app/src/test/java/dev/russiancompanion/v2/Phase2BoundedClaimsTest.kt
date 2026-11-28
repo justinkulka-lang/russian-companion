@@ -111,15 +111,20 @@ class Phase2BoundedClaimsTest {
             assertTrue(bookErrors, bookErrors.contains("span is not in the frozen record") || bookErrors.contains("Source capability ${book.id} corrected intake"))
             assertTrue(unresolved(replace(pack, live.id, book), admission.unitNumber).contains(admission.claim))
             val keywordSpan = "${admission.claim} co-occurrence"
+            // T18de (D65, D67): for the frozen name-form claim, forge the record on its real source and revision.
+            // The exact admission must reject the invented record even with a resolving source, rights and objective.
+            val frozenNameForm = admission == Phase2Sources.NAME_FORM
             val keyword = live.copy(
                 id = "cap-phase2-keyword",
-                sourceId = "src-phase2-keyword",
-                sourceRevision = "keyword",
+                sourceId = if (frozenNameForm) live.sourceId else "src-phase2-keyword",
+                sourceRevision = if (frozenNameForm) live.sourceRevision else "keyword",
                 sourceRecordId = "keyword:${admission.claim}",
                 sourceHash = sha256(keywordSpan),
                 exactSpan = keywordSpan,
             )
-            val keywordHost = pack.provenanceRecords.first { it.sourceRecordId == admission.recordId }.copy(
+            val keywordHost = pack.provenanceRecords.first {
+                it.sourceRecordId == admission.recordId && it.objectiveId == live.objectiveId && it.sourceHash == live.sourceHash
+            }.copy(
                 itemId = "prov-${keyword.id}",
                 sourceId = keyword.sourceId,
                 sourceRevision = keyword.sourceRevision,
@@ -135,7 +140,13 @@ class Phase2BoundedClaimsTest {
             )
             val keywordErrors = errors(keywordPack)
             assertTrue(keywordErrors, keywordErrors.contains("keyword or co-occurrence evidence does not clear ${admission.claim}"))
-            assertTrue(keywordErrors, keywordErrors.contains("no independent ${admission.claim} admission"))
+            assertTrue(keywordErrors, keywordErrors.contains("Source capability ${keyword.id} has no independent ${admission.claim} admission"))
+            if (frozenNameForm) {
+                assertFalse(keywordErrors, keywordErrors.contains("attached to the wrong unit or objective"))
+                assertFalse(keywordErrors, keywordErrors.contains("source does not resolve"))
+                assertFalse(keywordErrors, keywordErrors.contains("rights do not resolve"))
+                assertTrue(unresolved(keywordPack, 25).contains(admission.claim))
+            }
             val stamped = pack.copy(
                 provenanceRecords = pack.provenanceRecords.map { it.copy(reviewStatus = "APPROVED") },
                 admissions = pack.admissions.copy(penguinProseAssets = 3, generatedRussianWords = 2),

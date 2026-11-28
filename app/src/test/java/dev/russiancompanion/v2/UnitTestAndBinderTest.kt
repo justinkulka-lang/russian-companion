@@ -93,7 +93,8 @@ class UnitTestAndBinderTest {
         unitTestPlan(p, p.unit(24)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(8, it.typedCount) }
         // T18e (D64): Unit 25 without a plan -> 23 items, seven typed.
         assertNull(unitTestUnavailableReason(p, p.unit(24)!!))
-        unitTestPlan(p, p.unit(25)!!)!!.let { assertEquals(23, it.itemIds.size); assertEquals(7, it.typedCount) }
+        // T18de (D67): 23 source checks -> capped plan of 20, including all seven typed checks.
+        unitTestPlan(p, p.unit(25)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(7, it.typedCount) }
         assertNull(unitTestUnavailableReason(p, p.unit(25)!!))
         val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })
         assertTrue(unitTestUnavailableReason(few, few.unit(2)!!)!!.contains("at least 10 are needed"))

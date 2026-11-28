@@ -79,7 +79,8 @@ class Units2630SourceIntakeTest {
         // T18d (D62): 9aedca81 -> b8f90fdd after updating the shared Units 21–25 attribution.
         // T18d (D62): b8f90fdd -> c2a3a2f8 after the Unit 24 phrase-audit fix.
         // T18cd-fix (D63 correction): c2a3a2f8 -> b8d94d2c after correcting the mapping note.
-        24 to "b8d94d2c2aad244ff60518abf395dd34f4dc69de969a3eb97d9ac3909b8626f9", // T16c-n2: attribution notice / binder text (was 1379741c...)
+        // T18de (D67, D71): b8d94d2c -> cd7cb3ba for the verified content update.
+        24 to "cd7cb3baaafa02a92439ba71147b9c2a63b252694df90e2e15fedb639e6c928b", // T16c-n2: attribution notice / binder text (was 1379741c...)
         // T15g A4: prov-d7b-u25-038 re-cited to russian-grammar-1369617627.txt:1169 (was 4bc90e89...).
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 25 was a3d5745c...).
         // T18a-2 expectation change (owner decision D54g), old -> new: 719848de -> e8acc32b (the shared ref-u2125-attribution notice).
@@ -87,7 +88,8 @@ class Units2630SourceIntakeTest {
         // T18d (D62): 06a7498b -> c06c6112 after updating the shared Units 21–25 attribution.
         // T18e (D64): c06c6112 -> 1e8eeed3 after the Unit 25 update.
         // T18e (D64): 1e8eeed3 -> 5ab08492 after the verification fix.
-        25 to "5ab08492a099afd9ca2ff3a465994bbca06a574cc36e7ac2c29dcb6f498118bb", // T16c-n2: attribution notice / binder text (was c8a946d6...)
+        // T18de (D67, D71): 5ab08492 -> 72586cf0 for the verified content update.
+        25 to "72586cf011e1a2d429b716093cf30846948a36abac6be845b727fca4aac41e07", // T16c-n2: attribution notice / binder text (was c8a946d6...)
     )
 
     private val preservedMappingDigests = mapOf(
