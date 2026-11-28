@@ -8,6 +8,7 @@ import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.item
+import dev.russiancompanion.v2.curriculum.isTypedResponse
 import dev.russiancompanion.v2.curriculum.requiredInstructionSteps
 import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA
@@ -18,6 +19,7 @@ import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotEquals
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
