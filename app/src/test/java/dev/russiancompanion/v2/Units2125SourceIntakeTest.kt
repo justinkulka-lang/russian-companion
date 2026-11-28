@@ -117,7 +117,8 @@ class Units2125SourceIntakeTest {
             // T18a-2 expectation change (owner decision D54g), old -> new: Unit 21's mapping note follows the Units 1-20 style without
             // the status token (as Units1620SourceIntakeTest for Units 16-20); its mappingStatus stays PENDING_CURRICULUM_REVIEWER.
             // T18b: Unit 22 too (was number == 21).
-            if (number in 21..22) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // T18c-2 (D57d): mapping-note status text removed in 21–22 -> 21–23.
+            if (number in 21..23) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             else assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertFalse(unit.mappingNote.contains("ISBN"))
@@ -261,11 +262,10 @@ class Units2125SourceIntakeTest {
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
         assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
         assertTrue(unit.mappingNote.contains("completion over a period"))
-        // T18c-1 (D57a, D58b): live completion summary -> admitted time-expression summary.
-        assertTrue(unit.topicSummary.contains("Admitted time-expression spans await qualified review."))
+        // T18c-2 (D57d): review/install commentary -> learner-facing topic; self-attestation stays in the book step.
+        assertEquals("Study how Russian expressions place an event in a decade, within a period or in relation to another event.", unit.topicSummary)
         assertFalse(unit.topicSummary.contains("Completion over a period has no admitted frozen span"))
-        assertTrue(unit.topicSummary.contains("Book self-attestation does not replace the app checks"))
-        assertTrue(unit.topicSummary.contains("not installed"))
+        assertTrue(pack.step("u23-st-book")!!.second.body.contains("mark it done here"))
         assertTrue(unit.sessions.flatMap { it.steps }.any { it.kind == "TEACH" })
         assertTrue(unit.sessions.flatMap { it.steps }.any { it.kind == "BOOK" })
         assertTrue(unit.objectives.single { it.id == "obj-u23-book" }.checkItemIds.isEmpty())

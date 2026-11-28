@@ -7,6 +7,23 @@ import org.junit.Test
 import java.io.File
 
 class Unit23TimeInstructionTest {
+    @Test fun inspectT18c2Content() {
+        val p = pack()
+        val root = File(if (File("app").isDirectory) "." else "..")
+        println("T18C2_UNIT3_REVIEW=" + dev.russiancompanion.v2.review.buildUnitReviewPackage(p, 3).reviewPackageDigest)
+        (21..25).forEach { unit -> println("T18C2_UNIT${unit}_CONTENT=" + V2Validator.unitContentReviewDigest(p, unit)) }
+        println("T18C2_RELEASE=" + dev.russiancompanion.release.currentReleaseBinding(root)!!.sourceDigest)
+        val result = V2Validator.validate(p)
+        result.errors.forEach { println("T18C2_VALIDATOR=" + it) }
+        val (summaries, signals) = V2AssessmentDiagnostics.audit(p)
+        println("T18C2_COUNTS=" + summaries.single { it.unit == 23 })
+        signals.filter { it.unit == 23 }.forEach { println("T18C2_ASSESSMENT=" + it) }
+        V2DesignDiagnostics.audit(p).signals.filter {
+            (it.unit == 23 || it.entityIds.any { id -> "ref-u2125-attribution" in id }) &&
+                (it.rule.startsWith("LEARNER_") || it.rule.startsWith("A2_"))
+        }.forEach { println("T18C2_LINT=" + it) }
+    }
+
     @Test fun eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation() {
         val p=pack()
         val completionFixture = withRetiredUnit23Completion(p)
@@ -17,7 +34,7 @@ class Unit23TimeInstructionTest {
             val teaches=s.steps.takeWhile { it.kind!="GUIDED" }.filter { it.kind=="TEACH" }
             assertEquals(slug,count,teaches.size)
             val body=teaches.joinToString("\n") { it.body }
-            target.items.filter { it.objectiveId==obj }.forEach { i ->
+            target.items.filter { it.objectiveId==obj && !it.isTypedResponse() }.forEach { i ->
                 assertTrue("${i.id} cue",body.contains(i.promptLetter!!))
                 i.options.forEach { assertTrue("${i.id} option $it",body.contains(it)) }
             }
@@ -32,7 +49,9 @@ class Unit23TimeInstructionTest {
         // T18c-1 (D57a, D58b): live completion contrast -> byte-for-byte baseline teaching text.
         fun text(slug:String)=(if (slug == "completion") completionFixture else p).unit(23)!!.sessions.single { "obj-u23-$slug" in it.objectiveIds && it.steps.any { st->st.kind=="TEACH" } }.steps.filter { it.kind=="TEACH" }.joinToString("\n") { it.body }
         assertTrue(text("elapsed").contains("takes accusative, not genitive"))
-        assertTrue(text("elapsed").contains("Ago follows an accusative time expression"))
+        // T18c-2 (D57b): general accusative claim -> the attested order of the time span before ago.
+        assertTrue(text("elapsed").contains("the time span comes before the word for ago"))
+        assertFalse(text("elapsed").contains("Ago follows an accusative time expression"))
         assertTrue(text("completion").contains("does not mean asserting that the task was never finished"))
         assertTrue(text("completion").contains("completion interval differs from the forward-looking time until"))
         assertTrue(text("during-event").contains("does not mean that the birth or meeting continued for the entire"))
@@ -45,10 +64,11 @@ class Unit23TimeInstructionTest {
         val completionFixture = withRetiredUnit23Completion(p)
         val items = p.items.filter { it.objectiveId.startsWith("obj-u23-") }
         // T18c-1 (D57a, D58b): 18 live items -> 15 live items plus 3 baseline fixture items.
-        assertEquals(15, items.size)
+        // T18c-2 (D57e): 15 -> 25 live items, including 10 new typed checks.
+        assertEquals(25, items.size)
         val completionItems = completionFixture.items.filter { it.objectiveId == "obj-u23-completion" }
         assertEquals(3, completionItems.size)
-        for (i in items + completionItems) {
+        for (i in items.filterNot { it.isTypedResponse() } + completionItems) {
             val target = if (i in completionItems) completionFixture else p
             if (i.assessment!!.independent) assertTrue(i.id, V2Validator.featureValid(target, i))
             assertTrue(i.id, i.feedback.contains(i.promptLetter!!) && i.feedback.contains(i.answer))
@@ -61,9 +81,10 @@ class Unit23TimeInstructionTest {
             val bad = item.copy(answer = item.options[1])
             assertFalse(id, V2Validator.featureValid(target.copy(items = target.items.map { if (it.id == id) bad else it }), bad))
         }
-        val records = p.provenanceRecords.filter { it.itemId.startsWith("prov-ca-u23-") }
+        val records = p.provenanceRecords.filter { it.itemId.startsWith("prov-ca-u23-") || it.itemId.startsWith("prov-ca-t18c2-") }
         // T18c-1 (D57a, D58b): 81 live content-audit records -> 68 live records plus 13 planted records.
-        assertEquals(68, records.size)
+        // T18c-2 (D57d/e): 68 -> 192 live content-audit records for the updated wording.
+        assertEquals(192, records.size)
         val completionRecords = completionFixture.provenanceRecords.filter {
             it.objectiveId == "obj-u23-completion" && it.itemId.startsWith("prov-ca-u23-")
         }
@@ -77,6 +98,35 @@ class Unit23TimeInstructionTest {
         val result=V2Validator.validate(p);assertTrue(result.errors.joinToString("\n"),result.ok)
         assertEquals("DEVELOPMENT",p.unit(23)!!.installState)
     }
+    @Test fun allRequiredChecksFollowInstructionWithTypedRetrievalFirst() {
+        val p = pack()
+        val unit = p.unit(23)!!
+        val session = unit.sessions.last()
+        assertEquals("u23-s-checks", session.id)
+        assertTrue(unit.sessions.dropLast(1).flatMap { it.steps }.none { it.kind == "CHECK" })
+        val checks = session.steps.flatMap { it.itemIds }.map { p.item(it)!! }
+        assertEquals(unit.objectives.flatMap { it.checkItemIds }.toSet(), checks.map { it.id }.toSet())
+        val (counts, signals) = V2AssessmentDiagnostics.audit(p)
+        val summary = counts.single { it.unit == 23 }
+        assertEquals(listOf(20, 20, 10), listOf(summary.checkedItems, summary.requiredChecks, summary.typedRequiredChecks))
+        assertTrue(signals.filter { it.unit == 23 && it.rule.startsWith("A2_24") }.toString(),
+            signals.none { it.unit == 23 && it.rule.startsWith("A2_24") })
+        val typed = checks.take(10)
+        assertTrue(typed.all { it.isTypedResponse() })
+        assertTrue(checks.drop(10).all { it.options.size == 2 })
+        val typedDisplay = typed.joinToString(" ") { it.prompt + " " + it.promptLetter.orEmpty() }
+        for (item in typed) {
+            assertEquals(item.id, emptyList<String>(), V2Validator.typedKeyCitationErrors(p, item))
+            assertEquals(item.id, listOf(item.answer), item.typedAnswerKey!!.acceptedAnswers)
+            assertFalse(item.id, item.answer.contains('\u0301'))
+            assertFalse(item.id, typedDisplay.contains(item.answer))
+            val owner = unit.objectives.single { it.id == item.objectiveId }
+            assertTrue(item.id, owner.instructionStepIds.any { p.step(it)!!.second.body.contains(item.answer) })
+        }
+        assertTrue(unit.tutorTask!!.bring.contains("completion within a period"))
+        assertNotNull(unit.binderTask)
+    }
+
     @Test fun omittedContinueAndEmptyStepListsHaveIdenticalTypedMeaning() {
         val file=File(if(File("app").isDirectory) "." else "..","app/src/main/assets/content/v2-curriculum.json")
         val raw=Json.parseToJsonElement(file.readText()).jsonObject
