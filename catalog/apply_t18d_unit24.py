@@ -214,7 +214,12 @@ def apply(pack: dict) -> list[dict]:
         set_text(items[iid], "prompt", "Which English meaning matches the sentence?", "A2-24 / prep 5", "placement")
     for iid, item in items.items():
         slug = item["objectiveId"].removeprefix("obj-u24-")
-        feedback = f"{item['promptLetter']} — {item['answer']}. This is {EXPLANATIONS[item['answer']]}."
+        cue, answer = item["promptLetter"], item["answer"]
+        feedback = f"{cue} — {answer}. This is {EXPLANATIONS[answer]}."
+        if iid == "u24-g-verbal-ne-0":
+            feedback = f"{cue} is an affirmative reply. {answer} puts the negative particle before the verb."
+        elif iid == "u24-i-verbal-ne-2":
+            feedback = f"{cue} is about speaking. {answer} is the full sentence saying Boris is not coming."
         rationales = ["" if x == item["answer"] else f"{x} — {EXPLANATIONS[x]}." for x in item["options"]]
         if iid == "u24-g-verbal-ne-0":
             rationales[1] += " " + REWORD[2876]
