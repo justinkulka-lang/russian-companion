@@ -30,7 +30,7 @@ Read this whole file before any work. It replaces nothing in MASTER_AUTHORITY v2
 4. Unit 3 review package digest (Units610SourceIntakeTest) and unit content digests (Units2125SourceIntakeTest / Units2630SourceIntakeTest).
 5. Guard hashes if V2Validator.kt or other guarded files changed.
 6. If pack reviewCopy changed: regenerate catalog/review-copy.json from the pack (ReviewCopyTest).
-7. Never change a unit's printed page range in its mappingNote; the governed ranges live in governedMappingFacts and ProductOwnerAcceptanceBoundaryTest (hyphen form, e.g. 285-295).
+7. Never change a unit's printed page range in its mappingNote; the governed ranges live in governedMappingFacts and ProductOwnerAcceptanceBoundaryTest (plain hyphen, never an en dash; e.g. Unit 23 is 283-293).
 8. release/acceptance/candidate.json sourceDigest LAST (ReleaseSourceDigestTest, DeviceAcceptancePackageTest).
 Every changed test expectation gets a comment old -> new with the task id and decision.
 
