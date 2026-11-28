@@ -41,7 +41,9 @@ class UnitTestAndBinderTest {
             // T17e: Unit 20 reaches 20 checked items with 12 typed (was <= 19).
             // T18a-2 expectation change (owner decision D54e), old -> new: <= 20 -> <= 21; Unit 21 reaches 21 checked items with 15 typed.
             // T18b expectation change (owner decision D56c), old -> new: <= 21 -> <= 22; Unit 22 reaches 20 checked items with 6 typed.
-            if (unit.number <= 22) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
+            // T18c-2 expectation change (D57e, D61): old -> new
+            // Units 1–22 -> Units 1–23 have unit test plans.
+            if (unit.number <= 23) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
             else { assertNull(unitTestPlan(p, unit)); assertNotNull(unitTestUnavailableReason(p, unit)) }
         }
         unitTestPlan(p, p.unit(1)!!)!!.let { assertEquals(10, it.itemIds.size); assertEquals(3, it.typedCount) }
@@ -81,7 +83,10 @@ class UnitTestAndBinderTest {
         // T18b expectation change (owner decision D56c), old -> new: Unit 22 (0 typed items) -> Unit 22 has a unit test; Unit 23
         // (12 checks, 0 typed) is now the first unit whose only shortfall is having no typed items.
         assertNull(unitTestUnavailableReason(p, p.unit(22)!!))
-        assertTrue(unitTestUnavailableReason(p, p.unit(23)!!)!!.contains("0 typed items"))
+        // T18c-2 expectation change (D57e, D61): old -> new
+        // Unit 23 unavailable with zero typed items -> 20 checked items, including 10 typed.
+        unitTestPlan(p, p.unit(23)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(10, it.typedCount) }
+        assertNull(unitTestUnavailableReason(p, p.unit(23)!!))
         val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })
         assertTrue(unitTestUnavailableReason(few, few.unit(2)!!)!!.contains("at least 10 are needed"))
         assertTrue(courseworkDefects(p).isEmpty())

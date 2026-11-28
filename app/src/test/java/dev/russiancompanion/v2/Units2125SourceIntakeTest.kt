@@ -31,7 +31,9 @@ class Units2125SourceIntakeTest {
     private val pages = mapOf(
         21 to "257-268",
         22 to "269-282",
-        23 to "283-293",
+        // T18c-2 expectation change (D57e, D61): old -> new
+        // 283-293 -> 283–293 in the packaged mapping note.
+        23 to "283–293",
         24 to "294-304",
         25 to "305-319",
     )
@@ -124,7 +126,7 @@ class Units2125SourceIntakeTest {
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertFalse(unit.mappingNote.contains("ISBN"))
             assertFalse(unit.mappingNote.contains("2bcc0c45"))
-            assertEquals(range, "${facts.printedPageStart}-${facts.printedPageEnd}")
+            assertEquals(range.replace('–', '-'), "${facts.printedPageStart}-${facts.printedPageEnd}")
             assertEquals(number, facts.proposedLessonNumber)
             assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
             assertEquals("UNRESOLVED", facts.isbnObservation)
