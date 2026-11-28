@@ -29,11 +29,13 @@ Read this whole file before any work. It replaces nothing in MASTER_AUTHORITY v2
 3. Curriculum pin in app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt naming the content commit (commit content first, pin after).
 4. Unit 3 review package digest (Units610SourceIntakeTest) and unit content digests (Units2125SourceIntakeTest / Units2630SourceIntakeTest).
 5. Guard hashes if V2Validator.kt or other guarded files changed.
-6. release/acceptance/candidate.json sourceDigest LAST (ReleaseSourceDigestTest, DeviceAcceptancePackageTest).
+6. If pack reviewCopy changed: regenerate catalog/review-copy.json from the pack (ReviewCopyTest).
+7. Never change a unit's printed page range in its mappingNote; the governed ranges live in governedMappingFacts and ProductOwnerAcceptanceBoundaryTest (hyphen form, e.g. 285-295).
+8. release/acceptance/candidate.json sourceDigest LAST (ReleaseSourceDigestTest, DeviceAcceptancePackageTest).
 Every changed test expectation gets a comment old -> new with the task id and decision.
 
 ## Test and CI rules
-- Locally run ONLY ./gradlew testDebugUnitTest --quiet --tests <Class> for classes you changed or whose pins moved, plus FrozenSourceBindingTest, ContentChecksTest, TypedKeyCitationTest, ReleaseSourceDigestTest, DeviceAcceptancePackageTest, PhraseAuditTest. Never the full suite. No verbose Gradle output.
+- Locally run ONLY ./gradlew testDebugUnitTest --quiet --tests <Class> for classes you changed or whose pins moved, plus FrozenSourceBindingTest, ContentChecksTest, TypedKeyCitationTest, ReleaseSourceDigestTest, DeviceAcceptancePackageTest, PhraseAuditTest, ReviewCopyTest, ProductOwnerAcceptanceBoundaryTest. Never the full suite. No verbose Gradle output.
 - GitHub CI (about 3 hours) runs the full suite on every push to the PR. A newer push cancels the older run; the later run then covers both.
 - Fix once. A second real failure: STOP and report. Infrastructure failures (downloads, environment) are not strikes.
 - If Gradle cannot start: STOP and report; do not push untested work.
