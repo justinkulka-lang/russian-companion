@@ -6,3 +6,6 @@ T18de,D71,prov-t18de-u24-stand-ins-2,,ничто́
 T18de,D71,prov-t18de-u24-stand-ins-3,,не́кого
 T18de,D71,u24-i-stand-ins-nobody,,"['никто́', 'ничто́', 'не́кого']"
 T18de,D67 / D8,u25-st-book.body,"When you finish the work in your book, mark it done here.","When you finish the work in your book, mark it done here. Marking this done records your own report; it is not scored."
+T18de,D52a / D66,block5-results.json candidatesDigest,0a2434b2b2ea0fe03cfd4dfdbb3d8e0da83e3d82d3cc6a99518681af0c78804b,c6e207a00089026711999eff9c334d89f1d09acd3a57d0b4144f4fd89966de1e
+T18de,D52a / D66,audio-verification.json,104 derived bindings,105: added the current typed target for an unchanged owner-verified clip
+T18de,D65 / D67,Phase2 keyword host,exact-capability lookup also applied to legacy fixtures,exact live lookup only for the frozen name-form capability

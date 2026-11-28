@@ -136,7 +136,8 @@ class AudioVerificationBindingTest {
      */
     @Test fun everyBindingSurvivesTheNarrowedStressRule() {
         val registry = Json.decodeFromString(V2AudioVerificationRegistry.serializer(), File(assets, "content/audio-verification.json").readText())
-        assertEquals(104, registry.records.size)
+        // T18de (D52a, D66): 104 -> 105 target bindings when the owner-verified clip also binds to the typed particle.
+        assertEquals(105, registry.records.size)
         assertEquals(emptyList<String>(), audioVerificationDefects(registry, pack, clips.associateBy { it.id }))
         val vowels = "аеёиоуыэюяАЕЁИОУЫЭЮЯ"
         assertTrue(registry.records.map { it.text }.distinct().all { t -> stressFree(t).count { it in vowels } == 1 })

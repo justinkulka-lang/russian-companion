@@ -123,7 +123,8 @@ class Phase2BoundedClaimsTest {
                 exactSpan = keywordSpan,
             )
             val keywordHost = pack.provenanceRecords.first {
-                it.sourceRecordId == admission.recordId && it.objectiveId == live.objectiveId && it.sourceHash == live.sourceHash
+                it.sourceRecordId == admission.recordId &&
+                    (!frozenNameForm || (it.objectiveId == live.objectiveId && it.sourceHash == live.sourceHash))
             }.copy(
                 itemId = "prov-${keyword.id}",
                 sourceId = keyword.sourceId,

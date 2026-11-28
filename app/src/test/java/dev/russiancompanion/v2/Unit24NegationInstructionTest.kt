@@ -84,7 +84,8 @@ class Unit24NegationInstructionTest {
             val owner = unit.objectives.single { it.id == item.objectiveId }
             assertTrue(item.id, owner.instructionStepIds.any { p.step(it)!!.second.body.contains(item.answer) })
         }
-        assertEquals(5, checks.count { it.options.size == 2 })
+        // T18de (D71): five -> six binary checks after adding the second G:55 reading.
+        assertEquals(6, checks.count { it.options.size == 2 })
         assertNotNull(unit.binderTask)
         assertTrue(unit.tutorTask!!.bring.contains("Penguin book"))
     }
