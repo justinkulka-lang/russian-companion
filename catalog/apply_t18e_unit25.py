@@ -189,9 +189,9 @@ def apply(pack):
 
     verb = dict(zip(source_lines["V"][0].split("\t"), source_lines["V"][307].split("\t")))
 
-    def verb_form(field):
-        raw = verb[field]
-        return citation("courtesy", "V", 308, stressed(raw), record_id=f"verbs.csv:{verb['accented']}#{field}",
+    def verb_form(field, whole_row=False):
+        raw = source_lines["V"][307] if whole_row else verb[field]
+        return citation("courtesy", "V", 308, stressed(verb[field]), record_id=f"verbs.csv:{verb['accented']}#{field}",
                         transformation="formatting", raw=raw)
 
     retired_id = "u25-i-name-form-3"
@@ -239,12 +239,17 @@ def apply(pack):
     for step in steps.values():
         if retired_id in step.get("itemIds", []):
             step["itemIds"] = [new_name["id"] if i == retired_id else i for i in step["itemIds"]]
-    for ident, cue, answer, distractors in name_applications:
+    name_prompts = (
+        "How would you classify this name form?",
+        "Which description fits this name form?",
+        "Which classification applies to this form?",
+        "Which full given-name form is a base for this derivative?",
+    )
+    for (ident, cue, answer, distractors), prompt in zip(name_applications, name_prompts):
         item = items[ident]
         log(f"{ident}.options", item["options"], [answer, *distractors], "D65")
         item.update(promptLetter=cue, answer=answer, options=[answer, *distractors])
-        write(item, "prompt", "Which full given-name form is a base for this derivative?" if item is new_name else
-              "How would you classify this name form?", form_topic, "D65")
+        write(item, "prompt", prompt, form_topic, "D65")
         ids = [citation(form_topic, "L", 284, value, 286) for value in (cue, answer, *distractors)]
         bind(item, ids, "STATED_APPLICATION", "RUSSIAN_TOKEN" if item is new_name else "RUSSIAN_PHRASE")
 
@@ -259,7 +264,8 @@ def apply(pack):
         example["sourceId"] = source["sourceId"]
 
     courtesy = items["u25-i-courtesy-2"]
-    cue_id, polite_id, familiar_id = [verb_form(field) for field in ("accented", "imperative_pl", "imperative_sg")]
+    cue_id, polite_id, familiar_id = [verb_form(field, whole_row=True) for field in ("accented", "imperative_pl", "imperative_sg")]
+    familiar_key_id = verb_form("imperative_sg")
     log(f"{courtesy['id']}.options", courtesy["options"], [records[polite_id]["shippedText"], records[familiar_id]["shippedText"]], "D64a / V:308")
     courtesy.update(promptLetter=records[cue_id]["shippedText"], answer=records[polite_id]["shippedText"],
                     options=[records[polite_id]["shippedText"], records[familiar_id]["shippedText"]])
@@ -272,12 +278,23 @@ def apply(pack):
         "u25-g-name-structure-0": "Which component is a person’s given name?",
         "u25-i-name-structure-1": "Which component is derived from the father’s given name?",
         "u25-i-name-structure-2": "Which component identifies the family?",
-        "u25-i-diminutives-1": "Which short form goes with Алексей?",
-        "u25-i-diminutives-2": "Which short form goes with Дмитрий?",
+        "u25-i-diminutives-1": "Which English short form goes with Алексей?",
+        "u25-i-diminutives-2": "Which English short form goes with Дмитрий?",
         "u25-i-address-3": "Which register can address by the full given-name form convey?",
     }.items():
         write(items[ident], "prompt", prompt, items[ident]["objectiveId"].removeprefix("obj-u25-"), "D64 / A2-24")
 
+    rationale_evidence = {
+        "u25-g-name-structure-0": "first name, or имя",
+        "u25-i-name-structure-1": "patronymic name, or отчество",
+        "u25-g-diminutives-0": "Sasha for Alexander",
+        "u25-i-diminutives-1": "Alyosha for Alexei",
+        "u25-i-diminutives-2": "Dima for Dmitri",
+        "u25-i-courtesy-1": "Спаси́бо (Spasiba) :thanks",
+        "u25-i-courtesy-2": verb["translations_en"],
+        "u25-i-address-3": "полному имени",
+        "u25-i-name-form-base": "от полной формы имени",
+    }
     for item in items.values():
         topic = item["objectiveId"].removeprefix("obj-u25-")
         answer = item["answer"]
@@ -294,7 +311,11 @@ def apply(pack):
         material = ["" if option == answer else f"{option} — {MEANINGS[option]}." for option in item["options"]]
         log(f"{item['id']}.distractorRationales", item["distractorRationales"], material, "D64 / A2-26")
         item["distractorRationales"] = material
-        item["assessment"].update(distractorDifference=material, whyAnswerDemonstratesObjective=feedback)
+        witness = rationale_evidence.get(item["id"])
+        rationale = feedback if witness is None else f'{feedback} Frozen evidence: "{witness}".'
+        item["assessment"].update(distractorDifference=material, whyAnswerDemonstratesObjective=rationale)
+        if witness is not None:
+            authored[f"{item['id']}.assessment-evidence"] = topic, rationale
         for n, rationale in enumerate(material):
             if rationale:
                 authored[f"{item['id']}.rationale{n}"] = (topic, rationale)
@@ -325,9 +346,12 @@ def apply(pack):
                     + [citation(form_topic, "A", 89, "интонация")],
     }
 
+    evidence["name-question"].append(citation("name-question", "G", 419, "Вас"))
+    evidence[form_topic].append(citation(form_topic, "L", 284, "Манечка"))
+
     typed = {topic: [] for topic in TOPICS}
     for topic, suffix, page, line, key, cue in TYPED:
-        ident = familiar_id if page == "V" else citation(topic, page, line, key)
+        ident = familiar_key_id if page == "V" else citation(topic, page, line, key)
         assert records[ident]["shippedText"] == key
         evidence[topic].append(ident)
         i = typed_item(f"u25-i-type-{suffix}", objectives[topic]["id"], "Type the single Russian form described.",

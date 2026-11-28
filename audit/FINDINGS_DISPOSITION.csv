@@ -143,3 +143,4 @@ CC021,Unit 25 remediation coverage,FIXED,T18e,,2026-11-28,Each remediation revis
 CC029,Unit 25 learner voice,FIXED,T18e,,2026-11-28,Replaced evidence and assessment commentary with teaching and task directions. The shared licence notice stays.
 CC036,Unit 25 binary required checks,BOUNDED_SCOPE,T18e,,2026-11-28,The V:308 courtesy form comparison has its own CC036 disposition.
 WC011,Unit 25 companion directions,FIXED,T18e,,2026-11-28,Added a binder model and tutor work for names and courtesy.
+A2-28,Unit 25 cumulative review,FIXED,T18e,,2026-11-28,"Unit25CumulativeReviewTest records assigned earlier items, objectives, skills, repeat run and exclusions, and checks the anchors."
