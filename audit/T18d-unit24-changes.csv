@@ -776,3 +776,21 @@ T18d,D62d / REMOVE,prep:3141:u24-g-word-order-contrast-0.item feedback,is the re
 T18d,D62d / MARK,prep:3142:u24-g-word-order-contrast-0.item feedback,the supplied interpretation where the speaker would never agree.,G:2347–2348
 T18d,D62d / MARK,prep:3143:u24-g-word-order-contrast-0.item distractor rationale,There is no need to persuade me: the supplied interpretation where the speaker will do it anyway.,G:2347–2348
 T18d,D62d / REMOVE,prep:3144:u24-g-word-order-contrast-0.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,T18d (D62),Units610SourceIntakeTest: Unit 3 review digest,615745582cef29cc51fbb144150ef29f77ccb570d2e3d094e371e76dac409d9c,73128f2a31bd7553470601a99b1790d45016140fae484e9c1bed02994ef5e061
+T18d,T18d (D62),Units2630SourceIntakeTest: Unit 21 content digest,b0ab60e805af0c8eaa3a987c819708fb32fddc49b80a9541c7dde12bb15dfaee,a9720cd7886a937690d108ba489ec3060238852615ff6ddfdd986c877ca16480
+T18d,T18d (D62),Units2630SourceIntakeTest: Unit 22 content digest,49fe3d96c6ae171fa6945d8c7c4226ac2e3b55741cc910fee69fd3f1a74d71eb,de3b56c7decbf424742c1d281d15d87606738ee486b294c3974dc65316144f26
+T18d,T18d (D62),Units2630SourceIntakeTest: Unit 23 content digest,a3e912f8eca6ed7b0f13f4a97f176c595087c1641877a33059bfdd306b77a389,c31fc7c5aee66b114a302879478ba1d9a1b57185e283ee2c032762b032c16cde
+T18d,T18d (D62),Units2630SourceIntakeTest: Unit 24 content digest,9aedca8189d172f648639c38cb70457e0a6c09f52b82e05bf196bcc48be99f31,b8f90fdd64395ce4968f1b925037835926d85674ba9c97cadba2f3fe63c2f484
+T18d,T18d (D62),Units2630SourceIntakeTest: Unit 25 content digest,06a7498b4e19cc03fdb7c970ff9d70bf44018bb7fb0d7c1c93c76af788182224,c06c61129a4a6af8dcfc22f14f7763433502cca3bb39e412708d1402de13c51a
+T18d,T18d (D62),Unit1ReviewPackage: curriculum commit,639d4b8399e0ed438a0ed42565cd289f28c8018f,e4403dd2167cc736586d068c3105c7292223fa88
+T18d,T18d (D62),TypedKeyCitationTest: typed items / citation rows,243 / 247,251 / 255
+T18d,T18d (D62),SelectionWordBoundaryRuleTest: total / historical selection records,2979 / 2839,2983 / 2837
+T18d,T18d (D62),UnitTestAndBinderTest: Units with plans; Unit 24 checks / typed,1–23; no plan,1–24; 20 / 8
+T18d,T18d (D62),Units2125SourceIntakeTest: Unit 24 mapping note and review status,294-304; status in note,294–304; status stays in mapping metadata
+T18d,T18d (D62),CurriculumDesignDiagnosticsTest: total items / required checks,880 / 672,886 / 678
+T18d,T18d (D62),OptionPresentationTest: total / guided start / answer-first / required displays / answer-first required,880 / 612 / 554 / 672 / 373,886 / 610 / 552 / 678 / 371
+T18d,T18d (D62),WidenedLearnerVoiceLintTest: blocking / advisory,1–23 / 24–30,1–24 / 25–30
+T18d,T18d (D62),PhraseAuditTest: allowlist / UNATTESTED / detected failures,134 / 91 / 133,116 / 73 / 115
+T18d,T18d (D62),Unit24NegationInstructionTest: assessed closed items / wording records,21 / 119,19 / 301
+T18d,T18d (D62),Unit24ContextTransferTest: guided example explanation,independent mastery commentary,speaker is the person in focus
+T18d,T18d (D62) / D56f,candidate.json: sourceDigest,2a5ba706bcc625fc3b4f60a1c6a31677bdf7003ea48228a37e0c3a4f67428bff,a77d27a32dec151c44bb765ce81bcdbd5e5d04b3d273f27fdd0a20e0937913b3

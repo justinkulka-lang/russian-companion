@@ -58,7 +58,10 @@ class Unit24ContextTransferTest {
     @Test fun allThreeCardsPrecedePracticeAndFullRemediationKeepsAmbiguity() {
         val p=pack();val s=p.unit(24)!!.sessions.single { it.id=="u24-s-word-order-contrast" };val teach=s.steps.filter { it.kind=="TEACH" };assertEquals(3,teach.size);assertEquals(3,s.steps.takeWhile { it.kind!="GUIDED" }.count { it.kind=="TEACH" })
         val rem=s.steps.single { it.kind=="REMEDIATE" };assertEquals(teach.joinToString("\n\n") { it.body },rem.body);assertEquals(teach.flatMap { it.exampleIds }.distinct(),rem.exampleIds)
-        assertTrue(rem.body.contains("Intonation and discourse context"));assertTrue(teach.last().body.contains("not an independently demonstrated skill"));assertEquals(2,rem.exampleIds.size)
+        // T18d (D62): mastery commentary -> direct explanation of the contextual subject focus.
+        assertTrue(rem.body.contains("Intonation and discourse context"))
+        assertTrue(teach.last().body.contains("the speaker is the person in focus"))
+        assertEquals(2,rem.exampleIds.size)
     }
     @Test fun coordinatedGuidedKeyAndApplicationCannotReverseSubjectAndDestinationFocus() {
         val p=pack();val i=p.item("u24-g-context-subject-focus")!!;val a=i.assessment!!;val ids=a.relationParticipantIds;val wrong=i.options[1];val reasons=listOf(i.distractorRationales[1],"")

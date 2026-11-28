@@ -40,12 +40,13 @@ class OptionPresentationTest {
         // T18b expectation change, old -> new: 867 -> 873; six typed Unit 22 checks are appended (D56c).
         // T18c-1 (D57a, D58b): 873 -> 870 items, guided targets start at index 615 -> 612, and answer-first items 557 -> 554.
         // T18c-2 (D57e): 870 -> 880 total items and 662 -> 672 required displays; the ten typed items have no options.
-        assertEquals(880, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
+        // T18d (D62): 880 -> 886 items, guided index 612 -> 610, answer-first 554 -> 552.
+        assertEquals(886, p.items.size) // T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
-            p.items.drop(612).take(4).map { it.id }.toSet())
+            p.items.drop(610).take(4).map { it.id }.toSet())
         // T17f expectation change: 558 -> 557. u17-i-age-2, which led with its answer, is a typed check with no options (CC028,
         // D50c/D50f); the item count is unchanged.
-        assertEquals(554, p.items.count { it.options.firstOrNull() == it.answer })
+        assertEquals(552, p.items.count { it.options.firstOrNull() == it.answer })
         val routes = p.units.flatMap { it.sessions }.flatMap { it.steps }
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
         for ((name, displays) in listOf(
@@ -60,11 +61,12 @@ class OptionPresentationTest {
         )) {
             if (name == "required") {
                 // T18c-1 (D57a, D58b): 664 -> 662 required displays and 375 -> 373 with the stored answer first.
-                assertEquals(672, displays.size) // T18b expectation change, old -> new: 658 -> 664 (six typed Unit 22 checks). T18a-2 expectation change, old -> new: 643 -> 658 (fifteen typed Unit 21 checks). T17e: twelve typed Unit 20 checks (631 -> 643). T17d: twelve typed Unit 19 checks (619 -> 631); T17c: sixteen typed Unit 18 checks (603 -> 619); T17b: eleven typed Unit 17 checks (592 -> 603); T17a: eight typed Unit 16 checks (584 -> 592); T16e: fourteen typed Unit 15 checks (570 -> 584); T16d: fourteen typed Unit 14 checks (556 -> 570); T16c: eleven typed Unit 13 checks (545 -> 556); T16b: eight typed Unit 12 checks (537 -> 545); T16: twelve typed Unit 11 checks join the required set (525 -> 537); T15i: u7-i-manner-4 leaves the required set (526 -> 525); T15h: u10-i-absence-5 joins the required set (525 -> 526); T15g: the two retired Unit 10 duplicates leave the required set (527 -> 525); T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
+                // T18d (D62): 672 -> 678 required displays and 373 -> 371 with the answer first.
+                assertEquals(678, displays.size) // T18b expectation change, old -> new: 658 -> 664 (six typed Unit 22 checks). T18a-2 expectation change, old -> new: 643 -> 658 (fifteen typed Unit 21 checks). T17e: twelve typed Unit 20 checks (631 -> 643). T17d: twelve typed Unit 19 checks (619 -> 631); T17c: sixteen typed Unit 18 checks (603 -> 619); T17b: eleven typed Unit 17 checks (592 -> 603); T17a: eight typed Unit 16 checks (584 -> 592); T16e: fourteen typed Unit 15 checks (570 -> 584); T16d: fourteen typed Unit 14 checks (556 -> 570); T16c: eleven typed Unit 13 checks (545 -> 556); T16b: eight typed Unit 12 checks (537 -> 545); T16: twelve typed Unit 11 checks join the required set (525 -> 537); T15i: u7-i-manner-4 leaves the required set (526 -> 525); T15h: u10-i-absence-5 joins the required set (525 -> 526); T15g: the two retired Unit 10 duplicates leave the required set (527 -> 525); T15b: fifteen typed Unit 7 checks, no options; T15c: nine typed Unit 8 checks; T15d: fifteen typed Unit 9 checks; T15e: ten typed Unit 10 checks
                 // T15h: u10-i-absence-5 stores its answer first (376 -> 377); displays still disperse (checked below).
                 // T15i: the retired u7-i-manner-4 stored its answer first (377 -> 376).
                 // T17f: u17-i-age-2, which stored its answer first, is a typed check with no options (376 -> 375; CC028, D50c/D50f).
-                assertEquals(373, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
+                assertEquals(371, displays.count { (item, _) -> item.options.firstOrNull() == item.answer })
             }
             displays.forEach { (item, order) ->
                 assertEquals(item.id, item.options.sorted(), order.sorted())

@@ -41,7 +41,20 @@ class Unit24CumulativeReviewTest {
             assertEquals(23, earlier.targetUnit)
             assertTrue(ordinaryUnitRequirements(p, p.unit(24)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(24)!!, s.v2LearnerView()).allowed)
+            val excluded = cumulativeReviewRepeatExcluded(s.v2LearnerView(), 24).size
             val a = open(p, s)
+            val byUnit = s.cumulativeReviewHistory().first.associateBy { it.targetUnit }
+            val longestRun = a.slots.maxOf { slot ->
+                generateSequence(24) { it - 1 }.takeWhile { number ->
+                    byUnit[number]?.slots?.any { it.itemId == slot.itemId } == true
+                }.count()
+            }
+            val measured = listOf(a.slots.size, a.slots.map { it.objectiveId }.distinct().size,
+                a.slots.map { it.skill }.distinct().size, a.slots.count { it.ownerUnit < 24 }, longestRun, excluded)
+            // T18d (D62): record and check Unit 24's A2-28 assignment and repeat boundary.
+            println("A228-UNIT24 items/objectives/skills/earlier/run/excluded=$measured")
+            assertEquals(listOf(8, 8, 8, 8), measured.take(4))
+            assertTrue(longestRun in 1..3)
             assertEquals(listOf("obj-u1-decoding", "obj-u23-beginning"), a.slots.take(2).map { it.objectiveId })
             assertEquals(listOf("BOUNDED_READING", "SUPPLIED_PERIOD_POSITION_PHRASE_RECOGNITION"), a.slots.take(2).map { it.skill })
             assertEquals("u23-i-beginning-2", a.slots[1].itemId)

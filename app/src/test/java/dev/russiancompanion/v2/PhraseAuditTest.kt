@@ -34,10 +34,11 @@ class PhraseAuditTest {
         // unparenthesized love example left with that text (T18a-1 restored the frozen G:508 form), so 150 -> 148 lines and
         // UNATTESTED 107 -> 105.
         // T18c-1 (D57a, D58b, D58c): 148 -> 134 entries and 105 -> 91 UNATTESTED (14 fields for three sentences).
-        assertEquals(134, allowlist.size)
+        // T18d (D62): 134 -> 116 entries and 91 -> 73 UNATTESTED after removing Unit 24's 18 fields.
+        assertEquals(116, allowlist.size)
         assertEquals(allowlist.size, allowlist.toSet().size)
         // S1 removed 54 UNATTESTED (was 161), 4 MISSING_STRESS (was 23) and 20 COMPOSED (was 44).
-        assertEquals(mapOf("UNATTESTED" to 91, "MISSING_STRESS" to 19, "COMPOSED" to 24), allowlist.groupingBy { it.type }.eachCount())
+        assertEquals(mapOf("UNATTESTED" to 73, "MISSING_STRESS" to 19, "COMPOSED" to 24), allowlist.groupingBy { it.type }.eachCount())
     }
 
     @Test fun everyUnitPassesThePhraseAuditExceptExactlyTheAllowlist() {
@@ -67,7 +68,8 @@ class PhraseAuditTest {
         // T18a-1/T18a-2 expectation change (owner decision D54d), old -> new: 149 -> 147; the two Unit 21 failures of the unparenthesized
         // love example are gone with that text.
         // T18c-1 (D57a, D58b, D58c): 147 -> 133 phrase failures after removing the 14 retired fields.
-        assertEquals(133, failures.size)
+        // T18d (D62): 133 -> 115 detected phrase failures after the Unit 24 removals.
+        assertEquals(115, failures.size)
         assertTrue(fields.map { it.unit }.toSet().containsAll((1..30).toSet()))
     }
 

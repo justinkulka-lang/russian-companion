@@ -79,7 +79,8 @@ class Units610SourceIntakeTest {
         // T18b expectation change, old -> new: 84b3f914 -> fe90e42e (Unit 3 review package follows the T18b curriculum pin a1e9d21e).
         // T18c-1 (D57a, D58b): fe90e42e -> 15d50bae after pinning the content commit.
         // T18c-2 (D57b–e, D60): 15d50bae -> 61574558 after binding the Unit 23 content commit.
-        assertEquals("615745582cef29cc51fbb144150ef29f77ccb570d2e3d094e371e76dac409d9c", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        // T18d (D62): 61574558 -> 73128f2a with the Unit 24 content commit.
+        assertEquals("73128f2a31bd7553470601a99b1790d45016140fae484e9c1bed02994ef5e061", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(

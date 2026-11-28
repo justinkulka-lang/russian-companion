@@ -34,7 +34,8 @@ class Units2125SourceIntakeTest {
         // T18c-2 expectation change (D57e, D61): old -> new
         // 283-293 -> 283–293 in the packaged mapping note.
         23 to "283–293",
-        24 to "294-304",
+        // T18d (D62): 294-304 -> 294–304 in Unit 24's learner-facing mapping note.
+        24 to "294–304",
         25 to "305-319",
     )
 
@@ -121,7 +122,8 @@ class Units2125SourceIntakeTest {
             // the status token (as Units1620SourceIntakeTest for Units 16-20); its mappingStatus stays PENDING_CURRICULUM_REVIEWER.
             // T18b: Unit 22 too (was number == 21).
             // T18c-2 (D57d): mapping-note status text removed in 21–22 -> 21–23.
-            if (number in 21..23) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // T18d (D62): Units 21–23 -> Units 21–24 omit reviewer status text in the learner note.
+            if (number in 21..24) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             else assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertFalse(unit.mappingNote.contains("ISBN"))

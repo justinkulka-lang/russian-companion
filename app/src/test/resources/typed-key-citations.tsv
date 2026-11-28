@@ -246,3 +246,11 @@ u23-i-type-before-dinner	Type the complete Russian time expression for this mean
 u23-i-type-after-work	Type the complete Russian time expression for this meaning.	После работы	prov-t18c2-u23-u396-key	src-pressbooks-diverse-russian-usa-grammar	usa-grammar:<td style="width: 41.4712%;height: 15px">После работы я смотрела фильм.</td>
 u23-i-type-in-year	Type the complete Russian time expression for this meaning.	через год	prov-t18c2-u23-u402-key	src-pressbooks-diverse-russian-usa-grammar	usa-grammar:<td style="width: 41.4712%;height: 31px">Мы едем в Латвию через год.</td>
 u23-i-type-year-ago	Type the complete Russian time expression for this meaning.	год назад	prov-t18c2-u23-u408-key	src-pressbooks-diverse-russian-usa-grammar	usa-grammar:<td style="width: 41.4712%;height: 15px">Мы ездили в Казахстан год назад.</td>
+u24-i-type-predicate-ne	Type the single Russian form described.	не	prov-t18d-u24-or4-accented	src-openrussian-50e210c4	others.csv:не#accented
+u24-i-type-absence-net	Type the single Russian form described.	нет	prov-t18d-u24-or41-accented	src-openrussian-50e210c4	others.csv:нет#accented
+u24-i-type-existence-est	Type the single Russian form described.	есть	prov-t18d-u24-or4992-accented	src-openrussian-50e210c4	others.csv:есть#accented
+u24-i-type-book-accusative	Type the single Russian form described.	кни́гу	prov-t18d-u24-g55-book-accusative	src-wikipedia-russian-grammar-1369617627	grammar:The use of a direct object in the genitive instead of the accusative in negation
+u24-i-type-nobody	Type the single Russian form described.	никто́	prov-t18d-u24-o16-nobody	src-ruwiki-otritsatelnye-141256493	otritsatelnye:|никто́
+u24-i-type-nothing	Type the single Russian form described.	ничто́	prov-t18d-u24-o20-nothing	src-ruwiki-otritsatelnye-141256493	otritsatelnye:|ничто́
+u24-i-type-nobody-available	Type the single Russian form described.	не́кого	prov-t18d-u24-o55-nobody-available	src-ruwiki-otritsatelnye-141256493	otritsatelnye:* У местоимений '''''не́кого''''', '''''не́чего''''', [[Субстантивация|субстанти
+u24-i-type-someone	Type the single Russian form described.	не́кто	prov-t18d-u24-o17-someone	src-ruwiki-otritsatelnye-141256493	otritsatelnye:|не́кто

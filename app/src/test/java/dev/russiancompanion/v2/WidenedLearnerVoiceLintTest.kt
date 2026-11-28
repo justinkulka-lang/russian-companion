@@ -278,7 +278,8 @@ class WidenedLearnerVoiceLintTest {
         // None of the misses remains in Units 6-9.
         val shown = V2DesignDiagnostics.audit(current).signals
         // T18c-2 (D57d): Units 1–22 -> Units 1–23.
-        assertTrue(shown.none { it.rule == "LEARNER_PROVENANCE_NARRATION" && (it.unit ?: 0) in 1..23 }) // T18b: 1..21 -> 1..22; T18a-2: 1..20 -> 1..21; T16: was 1..10; T16b: 1..11 -> 1..12; T16c: 1..12 -> 1..13; T16d: 1..13 -> 1..14; T16e: 1..14 -> 1..15; T17a: 1..15 -> 1..16; T17b: 1..16 -> 1..17; T17c: 1..17 -> 1..18; T17d: 1..18 -> 1..19; T17e: 1..19 -> 1..20
+        // T18d (D62): Units 1–23 -> Units 1–24.
+        assertTrue(shown.none { it.rule == "LEARNER_PROVENANCE_NARRATION" && (it.unit ?: 0) in 1..24 }) // T18b: 1..21 -> 1..22; T18a-2: 1..20 -> 1..21; T16: was 1..10; T16b: 1..11 -> 1..12; T16c: 1..12 -> 1..13; T16d: 1..13 -> 1..14; T16e: 1..14 -> 1..15; T17a: 1..15 -> 1..16; T17b: 1..16 -> 1..17; T17c: 1..17 -> 1..18; T17d: 1..18 -> 1..19; T17e: 1..19 -> 1..20
     }
 
     @Test fun exemptNoticesAndPlainTeachingAreNotCaught() {
@@ -376,7 +377,8 @@ class WidenedLearnerVoiceLintTest {
     // T18a-2 (owner decision D54g): Unit 21 too (was 1..20). T18b: Unit 22 too (was 1..21).
     @Test fun unitsOneToNineteenHaveNoWidenedLintHits() {
         // T18c-2 (D57d): Units 1–22 -> Units 1–23 blocking.
-        val hits = V2DesignDiagnostics.audit(current).signals.filter { it.rule in rules && (it.unit ?: 0) in 1..23 }
+        // T18d (D62): Units 1–23 -> Units 1–24 blocking.
+        val hits = V2DesignDiagnostics.audit(current).signals.filter { it.rule in rules && (it.unit ?: 0) in 1..24 }
         assertTrue(hits.joinToString("\n") { "${it.unit} ${it.rule} ${it.entityIds} ${it.field}" }, hits.isEmpty())
     }
 
@@ -387,9 +389,10 @@ class WidenedLearnerVoiceLintTest {
         val signals = V2DesignDiagnostics.audit(current).signals.filter { it.rule in rules }
         // T18b expectation change, old -> new: Units 22-30 -> Units 23-30 (Unit 22 is blocking above).
         // T18c-2 (D57d): Units 23–30 -> Units 24–30 advisory.
-        val counts = (24..30).associateWith { unit -> rules.associateWith { rule -> signals.count { it.unit == unit && it.rule == rule } } }
-        println("T15f advisory widened A2-26 hits, Units 24-30: $counts")
-        assertEquals((24..30).toSet(), counts.keys)
+        // T18d (D62): Units 24–30 -> Units 25–30 advisory.
+        val counts = (25..30).associateWith { unit -> rules.associateWith { rule -> signals.count { it.unit == unit && it.rule == rule } } }
+        println("T15f advisory widened A2-26 hits, Units 25-30: $counts")
+        assertEquals((25..30).toSet(), counts.keys)
     }
 
     @Test fun companionAndBookDirectionsKeepOneNoticeAndNoApprovalLanguage() {
