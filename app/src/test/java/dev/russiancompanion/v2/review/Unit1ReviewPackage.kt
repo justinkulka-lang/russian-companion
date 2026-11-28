@@ -128,7 +128,8 @@ internal const val UNITS_1_30_T18D_CURRICULUM_COMMIT = "03c670dfd51ad193bf885662
 // T18cd-fix (D63 correction): 03c670df -> 54fffead for the Unit 23 and 24 mapping notes.
 internal const val UNITS_1_30_T18CD_FIX_CURRICULUM_COMMIT = "54fffead90cdbec751fd94d576ba300d632da478"
 // T18e (D64, D65): 54fffead -> d8060593 for the Unit 25 content and guard.
-internal const val UNITS_1_30_T18E_CURRICULUM_COMMIT = "d806059391e1e8456ae1e6f9c1b89651743a1062"
+// T18e (D64): d80605939 -> fd76d8aea after correcting frozen rationale evidence.
+internal const val UNITS_1_30_T18E_CURRICULUM_COMMIT = "fd76d8aeaa9491e35b8ab13c4ca8105c6b58e36f"
 
 // T15a Unit 6 (A2-23/24/26): Unit 6 binds here; earlier pins stay historical.
 internal const val UNIT6_T15A_CURRICULUM_COMMIT = "454c1d94c0ba61cb3713269de6c3a49421786128"

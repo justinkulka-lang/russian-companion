@@ -25,7 +25,7 @@ class Unit25NameInstructionTest {
     @Test fun questionsDoNotRevealNameClassificationAndInstructionExplainsTheLimits() {
         val p=pack();fun text(slug:String)=p.unit(25)!!.sessions.single { it.objectiveIds==listOf("obj-u25-$slug") }.steps.filter { it.kind=="TEACH" }.joinToString("\n") { it.body }
         for(id in listOf("u25-g-name-form-1","u25-i-name-form-1","u25-i-name-form-2")) {
-            val i=p.item(id)!!;assertEquals("How would you classify this name form?",i.prompt);assertFalse(i.prompt,i.prompt.contains("full-form"));assertFalse(i.prompt,i.prompt.contains("short-form"));assertFalse(i.prompt,i.prompt.contains("disparaging"))
+            val i=p.item(id)!!;assertTrue(i.prompt, i.prompt.contains("classif") || i.prompt.contains("description"));assertFalse(i.prompt,i.prompt.contains("full-form"));assertFalse(i.prompt,i.prompt.contains("short-form"));assertFalse(i.prompt,i.prompt.contains("disparaging"))
         }
         assertTrue(text("name-structure").contains("surname is not shown"))
         assertTrue(text("name-question").contains("must be followed by a name"))

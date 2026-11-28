@@ -315,7 +315,7 @@ class Phase2BoundedClaimsTest {
 
         val familiar = replaceNameAnswer(pack, "u25-i-name-form-2", "documented familiar short-form coloring")
         val familiarErrors = errors(familiar)
-        assertFalse(V2Validator.featureValid(familiar, familiar.item(sashka.id)!!))
+        assertFalse(V2Validator.featureValid(familiar, familiar.items.single { it.id == sashka.id }))
         assertTrue(familiarErrors, familiarErrors.contains("conflicting governed descriptions"))
         assertTrue(unresolved(familiar, 25).contains("documented-name-form"))
         assertFalse(advancementDecision(familiar, familiar.unit(25)!!, learner(familiar.unit(25)!!)).allowed)
