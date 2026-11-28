@@ -144,3 +144,4 @@ CC029,Unit 25 learner voice,FIXED,T18e,,2026-11-28,Replaced evidence and assessm
 CC036,Unit 25 binary required checks,BOUNDED_SCOPE,T18e,,2026-11-28,The V:308 courtesy form comparison has its own CC036 disposition.
 WC011,Unit 25 companion directions,FIXED,T18e,,2026-11-28,Added a binder model and tutor work for names and courtesy.
 A2-28,Unit 25 cumulative review,FIXED,T18e,,2026-11-28,"Unit25CumulativeReviewTest records assigned earlier items, objectives, skills, repeat run and exclusions, and checks the anchors."
+D71,Unit 24 alternation and stand-ins,FIXED,T18de,,2026-11-28,"Retained both objectives. G:55 and O:16,20,55 supply the additional closed contrasts. Unit 24 has 22 required checks, including eight typed. BatchBUnits2125Test and Unit24NegationInstructionTest."

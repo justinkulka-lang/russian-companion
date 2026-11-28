@@ -139,3 +139,4 @@ unit,item_id,objective_id,cue,key,distractor,status,justification
 24,u24-i-placement-1,obj-u24-placement,Не мне холодно.,It is not to me that it is cold.,To me it is not cold.,BOUNDED_SCOPE,D62 preserves the two frozen options for recognition of negating the state and contrasting the experiencer.
 24,u24-i-placement-2,obj-u24-placement,Не мне холодно.,It is not to me that it is cold.,I am not cold.,BOUNDED_SCOPE,D62 preserves the two frozen options for recognition of negating the state and contrasting the experiencer.
 25,u25-i-courtesy-2,obj-u25-courtesy,извини́ть,извини́те,извини́,BOUNDED_SCOPE,V:308 lists the singular and plural forms. G:1169 distinguishes familiar singular address from polite singular or plural address.
+24,u24-i-alternation-genitive,obj-u24-alternation,Я не ви́жу кни́ги,I don't see any books,I don't see the book,BOUNDED_SCOPE,G:55 distinguishes the indefinite genitive reading from the definite accusative reading.

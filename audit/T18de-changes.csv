@@ -1,0 +1,8 @@
+task,decision,entity,old,new
+T18de,D71,u24-i-alternation-genitive,,"[""I don't see any books"", ""I don't see the book""]"
+T18de,D71,prov-t18de-u24-stand-ins-0,,кто
+T18de,D71,prov-t18de-u24-stand-ins-1,,никто́
+T18de,D71,prov-t18de-u24-stand-ins-2,,ничто́
+T18de,D71,prov-t18de-u24-stand-ins-3,,не́кого
+T18de,D71,u24-i-stand-ins-nobody,,"['никто́', 'ничто́', 'не́кого']"
+T18de,D67 / D8,u25-st-book.body,"When you finish the work in your book, mark it done here.","When you finish the work in your book, mark it done here. Marking this done records your own report; it is not scored."
