@@ -41,7 +41,20 @@ class Unit25CumulativeReviewTest {
             assertEquals(24, earlier.targetUnit)
             assertTrue(ordinaryUnitRequirements(p, p.unit(25)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(25)!!, s.v2LearnerView()).allowed)
+            val excluded = cumulativeReviewRepeatExcluded(s.v2LearnerView(), 25).size
             val a = open(p, s)
+            val byUnit = s.cumulativeReviewHistory().first.associateBy { it.targetUnit }
+            val longestRun = a.slots.maxOf { slot ->
+                generateSequence(25) { it - 1 }.takeWhile { number ->
+                    byUnit[number]?.slots?.any { it.itemId == slot.itemId } == true
+                }.count()
+            }
+            // T18e (D64): record the A2-28 assignment alongside the existing anchor assertions.
+            val counts = listOf(a.slots.size, a.slots.map { it.objectiveId }.distinct().size,
+                a.slots.map { it.skill }.distinct().size, a.slots.count { it.ownerUnit < 25 })
+            println("A228-UNIT25 items/objectives/skills/earlier/run/excluded=${counts + listOf(longestRun, excluded)}")
+            assertTrue(counts.toString(), counts[0] >= 8 && counts[1] >= 3 && counts[2] >= 2 && counts[0] == counts[3])
+            assertTrue(longestRun in 1..3)
             assertEquals(listOf("obj-u1-decoding", "obj-u24-verbal-ne"), a.slots.take(2).map { it.objectiveId })
             assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NEGATIVE_SENTENCE_RECOGNITION"), a.slots.take(2).map { it.skill })
             assertEquals("u24-i-verbal-ne-2", a.slots[1].itemId)

@@ -254,3 +254,10 @@ u24-i-type-nobody	Type the single Russian form described.	никто́	prov-t18d
 u24-i-type-nothing	Type the single Russian form described.	ничто́	prov-t18d-u24-o20-nothing	src-ruwiki-otritsatelnye-141256493	otritsatelnye:|ничто́
 u24-i-type-nobody-available	Type the single Russian form described.	не́кого	prov-t18d-u24-o55-nobody-available	src-ruwiki-otritsatelnye-141256493	otritsatelnye:* У местоимений '''''не́кого''''', '''''не́чего''''', [[Субстантивация|субстанти
 u24-i-type-someone	Type the single Russian form described.	не́кто	prov-t18d-u24-o17-someone	src-ruwiki-otritsatelnye-141256493	otritsatelnye:|не́кто
+u25-i-type-given-name	Type the single Russian form described.	имя	prov-t18e-u25-n5-name-structure-35	src-wikibooks-russian-cc-by-sa	names:Russians use three names: first name, or имя; middle or patronymic name, or отче
+u25-i-type-patronymic	Type the single Russian form described.	отчество	prov-t18e-u25-n5-name-structure-36	src-wikibooks-russian-cc-by-sa	names:Russians use three names: first name, or имя; middle or patronymic name, or отче
+u25-i-type-family-name	Type the single Russian form described.	фамилия	prov-t18e-u25-n5-name-structure-37	src-wikibooks-russian-cc-by-sa	names:Russians use three names: first name, or имя; middle or patronymic name, or отче
+u25-i-type-please	Type the single Russian form described.	Пожа́луйста	prov-t18e-u25-u11-courtesy-38	src-wikibooks-russian-cc-by-sa	useful:;Пожа́луйста (''Pozhalusta'') :please; also used for saying "you are welcome" as
+u25-i-type-thanks	Type the single Russian form described.	Спаси́бо	prov-t18e-u25-u12-courtesy-39	src-wikibooks-russian-cc-by-sa	useful:;Спаси́бо (''Spasiba'') :thanks
+u25-i-type-polite-apology	Type the single Russian form described.	Извини́те	prov-t18e-u25-u15-courtesy-40	src-wikibooks-russian-cc-by-sa	useful:;Извини́те (''Izvinitye'') :I'm sorry / excuse me (informal)
+u25-i-type-familiar-apology	Type the single Russian form described.	извини́	prov-t18e-u25-v308-courtesy-13	src-openrussian-50e210c4	verbs.csv:извини'ть#imperative_sg

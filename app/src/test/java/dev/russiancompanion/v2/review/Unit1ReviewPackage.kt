@@ -127,6 +127,8 @@ internal const val UNITS_1_30_T18C2_CURRICULUM_COMMIT = "639d4b8399e0ed438a0ed42
 internal const val UNITS_1_30_T18D_CURRICULUM_COMMIT = "03c670dfd51ad193bf885662711294e65f87e7da"
 // T18cd-fix (D63 correction): 03c670df -> 54fffead for the Unit 23 and 24 mapping notes.
 internal const val UNITS_1_30_T18CD_FIX_CURRICULUM_COMMIT = "54fffead90cdbec751fd94d576ba300d632da478"
+// T18e (D64, D65): 54fffead -> d8060593 for the Unit 25 content and guard.
+internal const val UNITS_1_30_T18E_CURRICULUM_COMMIT = "d806059391e1e8456ae1e6f9c1b89651743a1062"
 
 // T15a Unit 6 (A2-23/24/26): Unit 6 binds here; earlier pins stay historical.
 internal const val UNIT6_T15A_CURRICULUM_COMMIT = "454c1d94c0ba61cb3713269de6c3a49421786128"
@@ -265,7 +267,8 @@ internal const val UNIT5_T15N1_CURRICULUM_COMMIT = "792344b957ad174cebc1e9907411
 
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
     // T15a also rewords the Units 6-10 attribution reference, so Units 7-10 bind to the same commit.
-    if (unitNumber in 1..30) UNITS_1_30_T18CD_FIX_CURRICULUM_COMMIT
+    if (unitNumber in 1..30) UNITS_1_30_T18E_CURRICULUM_COMMIT
+    else if (unitNumber in 1..30) UNITS_1_30_T18CD_FIX_CURRICULUM_COMMIT
     else if (unitNumber in 1..30) UNITS_1_30_T18D_CURRICULUM_COMMIT
     else if (unitNumber in 1..30) UNITS_1_30_T18C2_CURRICULUM_COMMIT
     else if (unitNumber in 1..30) UNITS_1_30_T18C1_CURRICULUM_COMMIT

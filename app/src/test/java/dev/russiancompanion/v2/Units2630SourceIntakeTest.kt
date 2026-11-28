@@ -85,7 +85,8 @@ class Units2630SourceIntakeTest {
         // T18a-2 expectation change (owner decision D54g), old -> new: 719848de -> e8acc32b (the shared ref-u2125-attribution notice).
         // T18c-2 (D57d, D60): e8acc32b -> 06a7498b after the Units 21–25 source notice update.
         // T18d (D62): 06a7498b -> c06c6112 after updating the shared Units 21–25 attribution.
-        25 to "c06c61129a4a6af8dcfc22f14f7763433502cca3bb39e412708d1402de13c51a", // T16c-n2: attribution notice / binder text (was c8a946d6...)
+        // T18e (D64): c06c6112 -> 1e8eeed3 after the Unit 25 update.
+        25 to "1e8eeed3558417f0d93ad6b6dde914ce1568ffe46d700921e4e6efe4fc9c0972", // T16c-n2: attribution notice / binder text (was c8a946d6...)
     )
 
     private val preservedMappingDigests = mapOf(

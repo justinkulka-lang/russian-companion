@@ -41,8 +41,9 @@ class TypedKeyCitationTest {
         // checks, each citing its frozen Морфология table cell line; rows regenerated from pack order).
         // T18c-2 (D57e, D56f): 233 -> 243 typed items and 237 -> 247 frozen citation rows.
         // T18d (D62): 243 -> 251 typed items and 247 -> 255 citation rows.
-        assertEquals(251, typed.size)
-        assertEquals(255, rows.size)
+        // T18e (D64): 251 -> 258 typed items and 255 -> 262 citation rows.
+        assertEquals(258, typed.size)
+        assertEquals(262, rows.size)
         assertEquals(pinned, rows)
         typed.forEach { assertEquals(it.id, emptyList<String>(), V2Validator.typedKeyCitationErrors(pack, it)) }
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)

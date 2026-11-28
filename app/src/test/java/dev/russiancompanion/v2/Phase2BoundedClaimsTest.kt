@@ -77,7 +77,8 @@ class Phase2BoundedClaimsTest {
     fun identitySpanAndRelabelMutationsStayClosed() {
         val current = pack()
         val completionFixture = withRetiredUnit23Completion(current)
-        Phase2Sources.ADMISSIONS.forEach { admission ->
+        // T18e (D64, D65): also exercise identity and relabel mutations on the frozen Unit 25 admission.
+        (Phase2Sources.ADMISSIONS + Phase2Sources.NAME_FORM).forEach { admission ->
             // T18c-1 (D57a, D58b): live synthesis identity mutations -> baseline fixture for completion.
             val completion = admission == Phase2Sources.COMPLETION
             val pack = if (completion) completionFixture else current
@@ -286,23 +287,35 @@ class Phase2BoundedClaimsTest {
         val sashka = pack.items.single { it.id == "u25-i-name-form-2" }
         val mashenka = pack.items.single { it.id == "u25-i-name-form-1" }
         val maryunya = pack.items.single { it.id == "u25-g-name-form-1" }
-        val rejected = pack.items.single { it.id == "u25-i-name-form-3" }
+        // T18e (D64, D65): English synthesis applications -> frozen L:284–286 applications.
+        val marusya = pack.items.single { it.id == "u25-i-name-form-base" }
+        assertTrue(pack.items.none { it.id == "u25-i-name-form-3" })
         assertEquals("\u0421\u0430\u0448\u043a\u0430", sashka.promptLetter)
-        assertTrue(sashka.answer.contains("dismissive"))
-        assertFalse(sashka.answer == "documented familiar short-form coloring")
+        assertEquals(governed.shippedText, sashka.answer)
         assertTrue(sashka.feedback.contains(sashka.answer))
-        assertTrue(mashenka.answer.contains("short form"))
-        assertTrue(maryunya.answer.contains("full name"))
-        assertTrue(rejected.answer.contains("names dictionary"))
-        assertEquals(setOf(sashka.answer, mashenka.answer, maryunya.answer).size, 3)
-        val application = pack.provenanceRecords.first { it.sourceRecordId == "phase2:documented-name-form" }
-            .synthesis!!.applications.single { it.cue == "\u0421\u0430\u0448\u043a\u0430" }
-        assertEquals(sashka.answer, application.answer)
-        assertEquals("documented dismissive coloring", pack.examples.single { it.id == "ex-u25-name-form-1" }.note)
+        assertEquals("от краткой формы", mashenka.answer)
+        assertEquals("от полной формы имени", maryunya.answer)
+        assertEquals("Маруся", marusya.promptLetter)
+        assertEquals("Мария", marusya.answer)
+        assertEquals(setOf(sashka.answer, mashenka.answer, maryunya.answer, marusya.answer).size, 4)
+        val source = File(repo(), "catalog/sources/units-21-25/supplemental/lichnoe-imya-154915954.txt")
+            .readLines().slice(283..285).joinToString("\n")
+        val records = pack.provenanceRecords.associateBy { it.itemId }
+        for (item in listOf(sashka, mashenka, maryunya, marusya)) {
+            val assessment = item.assessment!!
+            assertEquals("STATED_APPLICATION", assessment.relationKind)
+            val participants = assessment.relationParticipantIds.map(records::getValue)
+            for (record in participants) {
+                assertEquals(source, record.originalSourceText)
+                assertTrue(V2Validator.isFrozenSourceRecord(pack, record))
+            }
+            assertEquals("STATED_APPLICATION", V2Validator.classifyRelation(participants[0], participants[1], participants.drop(2)))
+        }
+        assertEquals(governed.shippedText, pack.examples.single { it.id == "ex-u25-name-form-1" }.note)
 
         val familiar = replaceNameAnswer(pack, "u25-i-name-form-2", "documented familiar short-form coloring")
         val familiarErrors = errors(familiar)
-        assertTrue(familiarErrors, familiarErrors.contains("familiar short-form coloring does not preserve the dismissive reading"))
+        assertFalse(V2Validator.featureValid(familiar, familiar.item(sashka.id)!!))
         assertTrue(familiarErrors, familiarErrors.contains("conflicting governed descriptions"))
         assertTrue(unresolved(familiar, 25).contains("documented-name-form"))
         assertFalse(advancementDecision(familiar, familiar.unit(25)!!, learner(familiar.unit(25)!!)).allowed)
@@ -313,19 +326,16 @@ class Phase2BoundedClaimsTest {
 
         val swapped = replaceNameAnswer(pack, "u25-i-name-form-2", mashenka.answer)
         val swappedErrors = errors(swapped)
-        assertTrue(swappedErrors, swappedErrors.contains("swaps the"))
+        assertTrue(swappedErrors, swappedErrors.contains("conflicting governed descriptions"))
         assertTrue(unresolved(swapped, 25).contains("documented-name-form"))
         val swappedWithMaryunya = replaceNameAnswer(pack, "u25-i-name-form-2", maryunya.answer)
-        assertTrue(errors(swappedWithMaryunya), errors(swappedWithMaryunya).contains("swaps the"))
+        assertTrue(errors(swappedWithMaryunya), errors(swappedWithMaryunya).contains("conflicting governed descriptions"))
 
-        val generated = replaceNameAnswer(
-            pack,
-            "u25-i-name-form-3",
-            "the suffix mechanically generates an acceptable name",
-        )
-        val generatedErrors = errors(generated)
-        assertTrue(generatedErrors, generatedErrors.contains("arbitrary name-form generation is not rejected"))
-        assertTrue(unresolved(generated, 25).contains("documented-name-form"))
+        // T18e (D64, D65): the retired dictionary-policy probe -> wrong attested base must fail.
+        val wrongBase = replaceNameAnswer(pack, marusya.id, marusya.options[1])
+        val wrongBaseErrors = errors(wrongBase)
+        assertTrue(wrongBaseErrors, wrongBaseErrors.contains("conflicting governed descriptions"))
+        assertTrue(unresolved(wrongBase, 25).contains("documented-name-form"))
     }
 
     private fun replaceNameAnswer(

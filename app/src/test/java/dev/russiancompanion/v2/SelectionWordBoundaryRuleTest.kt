@@ -100,11 +100,13 @@ class SelectionWordBoundaryRuleTest {
         // 2959 -> 2979: 10 typed-key, 9 fact/grammar and 1 tutor-direction selection records in Unit 23.
         // T18d (D62): 2979 -> 2983 selection records (six new, two Unit 24 S1 records removed).
         // The historical subset also moves 2839 -> 2837 because it included those two removed records.
-        assertEquals(2983, selections.size)
+        // T18e (D64): 2983 -> 3020 whole-word selection records, all 37 additions in Unit 25.
+        assertEquals(3020, selections.size)
         assertEquals(2837, selections.count { !it.itemId.startsWith("prov-t16cn2-key-") && !it.itemId.startsWith("prov-t17e-u20-") &&
             !it.itemId.startsWith("prov-t17f-u17-age-") && !it.itemId.startsWith("prov-t17fn1-u17-calendar-date-") &&
             !it.itemId.startsWith("prov-t18a2-u21-") && !it.itemId.startsWith("prov-t18b-u22-") &&
-            !it.itemId.startsWith("prov-t18c2-u23-") && !it.itemId.startsWith("prov-t18d-u24-") })
+            // T18e (D64): exclude the new Unit 25 selections from the historical subset.
+            !it.itemId.startsWith("prov-t18c2-u23-") && !it.itemId.startsWith("prov-t18d-u24-") && !it.itemId.startsWith("prov-t18e-u25-") })
         val failing = selections.filterNot { V2Validator.displayedInFrozen(it) }
             .map { "${it.itemId} ${it.transformation} \"${it.shippedText}\"" }
         assertTrue(failing.joinToString("\n"), failing.isEmpty())

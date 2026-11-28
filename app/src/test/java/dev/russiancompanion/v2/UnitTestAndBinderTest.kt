@@ -44,7 +44,8 @@ class UnitTestAndBinderTest {
             // T18c-2 expectation change (D57e, D61): old -> new
             // Units 1–22 -> Units 1–23 have unit test plans.
             // T18d (D62): Units 1–23 -> Units 1–24 have a unit test plan.
-            if (unit.number <= 24) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
+            // T18e (D64): Units 1–24 -> Units 1–25 have a unit test plan.
+            if (unit.number <= 25) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
             else { assertNull(unitTestPlan(p, unit)); assertNotNull(unitTestUnavailableReason(p, unit)) }
         }
         unitTestPlan(p, p.unit(1)!!)!!.let { assertEquals(10, it.itemIds.size); assertEquals(3, it.typedCount) }
@@ -90,7 +91,10 @@ class UnitTestAndBinderTest {
         assertNull(unitTestUnavailableReason(p, p.unit(23)!!))
         // T18d (D62): Unit 24 without a plan -> 20 items, eight typed.
         unitTestPlan(p, p.unit(24)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(8, it.typedCount) }
+        // T18e (D64): Unit 25 without a plan -> 23 items, seven typed.
         assertNull(unitTestUnavailableReason(p, p.unit(24)!!))
+        unitTestPlan(p, p.unit(25)!!)!!.let { assertEquals(23, it.itemIds.size); assertEquals(7, it.typedCount) }
+        assertNull(unitTestUnavailableReason(p, p.unit(25)!!))
         val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })
         assertTrue(unitTestUnavailableReason(few, few.unit(2)!!)!!.contains("at least 10 are needed"))
         assertTrue(courseworkDefects(p).isEmpty())

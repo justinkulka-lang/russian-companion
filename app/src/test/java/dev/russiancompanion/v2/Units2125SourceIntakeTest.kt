@@ -123,8 +123,8 @@ class Units2125SourceIntakeTest {
             // T18b: Unit 22 too (was number == 21).
             // T18c-2 (D57d): mapping-note status text removed in 21–22 -> 21–23.
             // T18d (D62): Units 21–23 -> Units 21–24 omit reviewer status text in the learner note.
-            if (number in 21..24) assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
-            else assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // T18e (D64): Units 21–24 -> Units 21–25 omit reviewer status text in the learner note.
+            assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertFalse(unit.mappingNote.contains("ISBN"))
             assertFalse(unit.mappingNote.contains("2bcc0c45"))
