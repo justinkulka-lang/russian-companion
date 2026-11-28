@@ -46,6 +46,7 @@ Situation -> decision
 - Test references a retired item/record/example -> retarget to the live item carrying the same guard; if none exists, assert absence. Never delete the test.
 - Guard counts something the data does not mark (flags, links, session placement) -> fix the data to match Units 21-23; never change the guard.
 - Russian with no frozen witness -> remove it. Objective left with fewer than two required checks -> retire it with an OWNER_ACCEPTED "taught by the Penguin book; deferred to S2" row (bounded validator/pin change for that objective only).
+- Objective has fewer than two flagged closed independent checks (typed checks are not counted and stay unflagged) -> add closed checks built only from frozen forms already taught in that unit, keyed differently from its existing checks; if that is impossible, retire the objective as above (D71).
 - A claim with no frozen evidence -> REMOVE it (or turn it into a plain exercise instruction).
 - Validator/pin needs changing for one named objective to match a retirement or re-citation -> allowed; record the guard-hash change.
 - Mirror/pin file out of date (content-checks.json, review-copy.json, typed TSV, digests, candidate.json, listen-check locators) -> regenerate.
