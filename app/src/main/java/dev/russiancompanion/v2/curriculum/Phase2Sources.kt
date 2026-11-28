@@ -45,9 +45,13 @@ internal object Phase2Sources {
             "COMPLETED_WITHIN_PERIOD",
         ),
     )
+    // T18e (D64, D65): the exact L:284–286 span replaces the synthesis capability.
+    const val NAME_FORM_SOURCE = "src-ruwiki-lichnoe-imya-154915954"
+    const val NAME_FORM_REVISION = "154915954"
+    const val RETIRED_NAME_FORM_SYNTHESIS_HASH = "3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb"
     val NAME_FORM = Admission(
-        recordId = "phase2:documented-name-form",
-        sourceHash = "3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb",
+        recordId = "lichnoe-imya:\u0412 \u0441\u043b\u043e\u0432\u043e\u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u043d\u0438\u0438 \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u0438 \u043b\u0430\u0441\u043a\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u0444\u043e\u0440\u043c \u0438\u043c\u0451\u043d \u0443\u0447\u0430\u0441\u0442\u0432\u0443\u044e\u0442 \u0440\u0430\u0437\u043d\u043e\u043e\u0431\u0440\u0430\u0437\u043d",
+        sourceHash = "c1f43fe3614ab1d4e16ee53f8bdd1a0bb94c7181dee6077954d84e523f0d8f10",
         unitNumber = 25,
         objectiveId = "obj-u25-documented-name-form",
         claim = "documented-name-form",
@@ -55,17 +59,21 @@ internal object Phase2Sources {
         independentFeatures = setOf(
             "DOCUMENTED_SHORT_FORM_DERIVATIVE",
             "DOCUMENTED_DISMISSIVE_COLORING",
-            "REJECTED_ARBITRARY_NAME",
+            "DOCUMENTED_BASE_NAME",
         ),
     )
-    val ADMISSIONS = listOf(MANNER, COMPLETION, NAME_FORM)
+    val ADMISSIONS = listOf(MANNER, COMPLETION)
 
-    fun admission(claim: String): Admission? = ADMISSIONS.firstOrNull { it.claim == claim }
+    private val CAPABILITY_ADMISSIONS = ADMISSIONS + NAME_FORM
+
+    fun admission(claim: String): Admission? = CAPABILITY_ADMISSIONS.firstOrNull { it.claim == claim }
 
     fun matches(capability: V2SourceCapability): Boolean {
         val admitted = admission(capability.supportedClaim) ?: return false
-        return capability.sourceId == SOURCE_ID &&
-            capability.sourceRevision == REVISION &&
+        val sourceId = if (admitted == NAME_FORM) NAME_FORM_SOURCE else SOURCE_ID
+        val revision = if (admitted == NAME_FORM) NAME_FORM_REVISION else REVISION
+        return capability.sourceId == sourceId &&
+            capability.sourceRevision == revision &&
             capability.sourceRecordId == admitted.recordId &&
             capability.sourceHash == admitted.sourceHash &&
             capability.unitNumber == admitted.unitNumber &&

@@ -327,6 +327,52 @@ class CumulativeReviewA228Test {
         }
     }
 
+    /** T18b: the recorded A2-28 measurement for Unit 22, measured as unit21DueReviewMeasurementIsRecorded. */
+    @Test fun unit22DueReviewMeasurementIsRecorded() {
+        val p = pack()
+        isolatedStore("unit22").use { s ->
+            val a = walk(p, s, 22)
+            val t = 22
+            val slots = a.getValue(t).slots
+            val run = slots.maxOf { slot ->
+                var k = 0; var u = t
+                while (u >= 3 && a.getValue(u).slots.any { it.itemId == slot.itemId }) { k++; u-- }
+                k
+            }
+            val excluded = cumulativeReviewRepeatExcluded(learnerBefore(s, a.getValue(t)), t).size
+            val measured = listOf(slots.size, slots.map { it.objectiveId }.distinct().size, slots.map { it.skill }.distinct().size,
+                slots.count { it.ownerUnit < t }, run, excluded)
+            println("A228-UNIT22 items/objectives/skills/earlier/run/excluded=$measured " + slots.joinToString { "${it.objectiveId}/${it.itemId}" })
+            // T18b: the measured record (one earlier item is excluded by the repeat limit; the longest consecutive-unit run is 2).
+            assertEquals(listOf(8, 8, 8, 8, 2, 1), measured)
+            val window = (19..22).map { u -> a.getValue(u).slots.map { it.itemId }.toSet() }
+            assertTrue(window.reduce { x, y -> x intersect y }.isEmpty())
+        }
+    }
+
+    /** T18a-2: the recorded A2-28 measurement for Unit 21, measured as unit20DueReviewMeasurementIsRecorded. */
+    @Test fun unit21DueReviewMeasurementIsRecorded() {
+        val p = pack()
+        isolatedStore("unit21").use { s ->
+            val a = walk(p, s, 21)
+            val t = 21
+            val slots = a.getValue(t).slots
+            val run = slots.maxOf { slot ->
+                var k = 0; var u = t
+                while (u >= 3 && a.getValue(u).slots.any { it.itemId == slot.itemId }) { k++; u-- }
+                k
+            }
+            val excluded = cumulativeReviewRepeatExcluded(learnerBefore(s, a.getValue(t)), t).size
+            val measured = listOf(slots.size, slots.map { it.objectiveId }.distinct().size, slots.map { it.skill }.distinct().size,
+                slots.count { it.ownerUnit < t }, run, excluded)
+            println("A228-UNIT21 items/objectives/skills/earlier/run/excluded=$measured " + slots.joinToString { "${it.objectiveId}/${it.itemId}" })
+            // T18a-2: the measured record (the longest consecutive-unit run is 3; no item is excluded by the repeat limit).
+            assertEquals(listOf(8, 8, 8, 8, 3, 0), measured)
+            val window = (18..21).map { u -> a.getValue(u).slots.map { it.itemId }.toSet() }
+            assertTrue(window.reduce { x, y -> x intersect y }.isEmpty())
+        }
+    }
+
     /** T17d: the recorded A2-28 measurement for Unit 19, measured as unit18DueReviewMeasurementIsRecorded. */
     @Test fun unit19DueReviewMeasurementIsRecorded() {
         val p = pack()

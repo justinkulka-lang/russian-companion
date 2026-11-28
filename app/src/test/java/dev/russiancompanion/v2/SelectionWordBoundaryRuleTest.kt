@@ -90,9 +90,24 @@ class SelectionWordBoundaryRuleTest {
         // T17f-n1 expectation change (owner decision D53d), old -> new: 2889 -> 2891; the two frozen selection records of the
         // redesigned date check (the expanded form, the all-numeric date) are whole-word selections of their date-notation span;
         // the D41d count excludes them as it excludes the earlier tasks' records.
-        assertEquals(2891, selections.size)
-        assertEquals(2839, selections.count { !it.itemId.startsWith("prov-t16cn2-key-") && !it.itemId.startsWith("prov-t17e-u20-") &&
-            !it.itemId.startsWith("prov-t17f-u17-age-") && !it.itemId.startsWith("prov-t17fn1-u17-calendar-date-") })
+        // T18a-2 expectation change (owner decision D54e), old -> new: 2891 -> 2942; the 51 frozen selection records of the Unit 21
+        // typed keys, their cues and the Russian the new teaching shows (prov-t18a2-u21-) are whole-word selections of their lines;
+        // the D41d count excludes them as it excludes the earlier tasks' records.
+        // T18b expectation change (owner decision D56c), old -> new: 2942 -> 2959; the 17 frozen selection records of the Unit 22
+        // typed keys, their nominative cues and the forms the new teaching shows (prov-t18b-u22-) join them; the D41d count
+        // excludes them.
+        // T18c-2 expectation change (D57e, D61): old -> new
+        // 2959 -> 2979: 10 typed-key, 9 fact/grammar and 1 tutor-direction selection records in Unit 23.
+        // T18d (D62): 2979 -> 2983 selection records (six new, two Unit 24 S1 records removed).
+        // The historical subset also moves 2839 -> 2837 because it included those two removed records.
+        // T18e (D64): 2983 -> 3022 whole-word selection records, all 39 additions in Unit 25.
+        // T18de (D71): 3022 -> 3026 frozen selections; four Unit 24 contrast participants.
+        assertEquals(3026, selections.size)
+        assertEquals(2837, selections.count { !it.itemId.startsWith("prov-t16cn2-key-") && !it.itemId.startsWith("prov-t17e-u20-") &&
+            !it.itemId.startsWith("prov-t17f-u17-age-") && !it.itemId.startsWith("prov-t17fn1-u17-calendar-date-") &&
+            !it.itemId.startsWith("prov-t18a2-u21-") && !it.itemId.startsWith("prov-t18b-u22-") &&
+            // T18e (D64): exclude the new Unit 25 selections from the historical subset.
+            !it.itemId.startsWith("prov-t18c2-u23-") && !it.itemId.startsWith("prov-t18d-u24-") && !it.itemId.startsWith("prov-t18e-u25-") && !it.itemId.startsWith("prov-t18de-u24-") })
         val failing = selections.filterNot { V2Validator.displayedInFrozen(it) }
             .map { "${it.itemId} ${it.transformation} \"${it.shippedText}\"" }
         assertTrue(failing.joinToString("\n"), failing.isEmpty())

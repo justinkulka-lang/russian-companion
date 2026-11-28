@@ -7,6 +7,8 @@ on:
     # direction 2026-11-24). Manual runs (workflow_dispatch) stay available on every branch.
     branches-ignore:
       - owner/prep-reports
+      # WIP branches are unreviewed; no CI (D59)
+      - "wip/**"
     paths-ignore:
       - WORK_QUEUE.md
 

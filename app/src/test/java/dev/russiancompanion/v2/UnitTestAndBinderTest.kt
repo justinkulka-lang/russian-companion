@@ -39,7 +39,13 @@ class UnitTestAndBinderTest {
             // T17a: Unit 16 reaches 20 checked items with 8 typed (was <= 15); T17b: Unit 17 reaches 36 checked items with 11 typed (was <= 16).
             // T17c: Unit 18 reaches 20 checked items with 16 typed (was <= 17). T17d: Unit 19 reaches 20 checked items with 12 typed (was <= 18).
             // T17e: Unit 20 reaches 20 checked items with 12 typed (was <= 19).
-            if (unit.number <= 20) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
+            // T18a-2 expectation change (owner decision D54e), old -> new: <= 20 -> <= 21; Unit 21 reaches 21 checked items with 15 typed.
+            // T18b expectation change (owner decision D56c), old -> new: <= 21 -> <= 22; Unit 22 reaches 20 checked items with 6 typed.
+            // T18c-2 expectation change (D57e, D61): old -> new
+            // Units 1–22 -> Units 1–23 have unit test plans.
+            // T18d (D62): Units 1–23 -> Units 1–24 have a unit test plan.
+            // T18e (D64): Units 1–24 -> Units 1–25 have a unit test plan.
+            if (unit.number <= 25) { assertNotNull(unitTestPlan(p, unit)); assertNull(unitTestUnavailableReason(p, unit)) }
             else { assertNull(unitTestPlan(p, unit)); assertNotNull(unitTestUnavailableReason(p, unit)) }
         }
         unitTestPlan(p, p.unit(1)!!)!!.let { assertEquals(10, it.itemIds.size); assertEquals(3, it.typedCount) }
@@ -64,6 +70,8 @@ class UnitTestAndBinderTest {
         unitTestPlan(p, p.unit(18)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(16, it.typedCount) }
         unitTestPlan(p, p.unit(19)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(12, it.typedCount) }
         unitTestPlan(p, p.unit(20)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(12, it.typedCount) }
+        unitTestPlan(p, p.unit(21)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(15, it.typedCount) } // T18a-2
+        unitTestPlan(p, p.unit(22)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(6, it.typedCount) } // T18b
         // T15b: Unit 7 now has typed items. T15c: Unit 8 too. T15d: Unit 9 too. T15e: Unit 10 too. T16: Unit 11 too. T16b: Unit 12
         // too; T16c: Unit 13 too; T16d: Unit 14 too; T16e: Unit 15 too; T17a: Unit 16 too; T17b: Unit 17 too; T17c: Unit 18 too; T17d: Unit 19 too. Units 11-19 all have unit tests. Units 20-21 have
         // fewer than 10 checked items, so Unit 22 (14 checks) is now the first unit whose only shortfall is having no typed items
@@ -71,8 +79,23 @@ class UnitTestAndBinderTest {
         // T17c: Unit 19 (8 checks) is now the first unit below the minimum (was Unit 18, which now has a unit test). T17d: Unit 20
         // (8 checks) is (was Unit 19, which now has a unit test).
         // T17e: Unit 21 is now the first unit below the minimum (was Unit 20, which now has a unit test).
-        assertTrue(unitTestUnavailableReason(p, p.unit(21)!!)!!.contains("at least 10 are needed"))
-        assertTrue(unitTestUnavailableReason(p, p.unit(22)!!)!!.contains("0 typed items"))
+        // T18a-2 expectation change (owner decision D54e), old -> new: Unit 21 below the minimum -> Unit 21 has a unit test (21 checked,
+        // 15 typed); Unit 22 (14 checks, 0 typed) is the first unit without one.
+        assertNull(unitTestUnavailableReason(p, p.unit(21)!!))
+        // T18b expectation change (owner decision D56c), old -> new: Unit 22 (0 typed items) -> Unit 22 has a unit test; Unit 23
+        // (12 checks, 0 typed) is now the first unit whose only shortfall is having no typed items.
+        assertNull(unitTestUnavailableReason(p, p.unit(22)!!))
+        // T18c-2 expectation change (D57e, D61): old -> new
+        // Unit 23 unavailable with zero typed items -> 20 checked items, including 10 typed.
+        unitTestPlan(p, p.unit(23)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(10, it.typedCount) }
+        assertNull(unitTestUnavailableReason(p, p.unit(23)!!))
+        // T18d (D62): Unit 24 without a plan -> 20 items, eight typed.
+        unitTestPlan(p, p.unit(24)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(8, it.typedCount) }
+        // T18e (D64): Unit 25 without a plan -> 23 items, seven typed.
+        assertNull(unitTestUnavailableReason(p, p.unit(24)!!))
+        // T18de (D67): 23 source checks -> capped plan of 20, including all seven typed checks.
+        unitTestPlan(p, p.unit(25)!!)!!.let { assertEquals(20, it.itemIds.size); assertEquals(7, it.typedCount) }
+        assertNull(unitTestUnavailableReason(p, p.unit(25)!!))
         val few = p.copy(units = p.units.map { if (it.number != 2) it else it.copy(objectives = it.objectives.map { o -> o.copy(checkItemIds = o.checkItemIds.take(2)) }) })
         assertTrue(unitTestUnavailableReason(few, few.unit(2)!!)!!.contains("at least 10 are needed"))
         assertTrue(courseworkDefects(p).isEmpty())

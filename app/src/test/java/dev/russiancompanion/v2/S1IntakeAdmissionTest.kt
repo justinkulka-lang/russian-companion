@@ -56,7 +56,8 @@ class S1IntakeAdmissionTest {
             when (route) {
                 "wikipedia" -> it.sourceId == "src-enwiki-grammatical-aspect-1384289498"
                 "ruwiki" -> it.sourceId == "src-ruwiki-narechie-152437423"
-                "wiktionary" -> it.sourceId == "src-enwiktionary-nekogo-80719285"
+                // T18de (D62a, D66): retired nekogo template -> live Wiktionary template; the S1 revision probes stay.
+                "wiktionary" -> it.sourceId == "src-enwiktionary-poltora-89737719"
                 else -> it.sourceId == "src-readyrussian-grammar20"
             }
         }

@@ -74,7 +74,18 @@ class Units610SourceIntakeTest {
         // T17f: follows the Units 1-30 curriculum commit 98a95ab3 (was 89e18e86... at 80c7219b). T17e: follows the Units 1-30 curriculum commit 80c7219b (was e472f63a... at fc91121a). T16c-n3: follows the Units 1-30 curriculum commit fc91121a (was 4c784718... at 53fcc674). T16c-n2: follows the Units 1-30 curriculum commit 53fcc674 (was c4882499... at 0f839433). T17d: follows the Units 1-30 curriculum commit 0f839433 (was 9d1a6cb3... at 6810533d). T17c: follows the Units 1-30 curriculum commit 6810533d (was 98bd3f59... at b0216798). T17b: follows the Units 1-30 curriculum commit b0216798 (was 5f1018d6... at 569341cc). T17a: follows the Units 1-30 curriculum commit 569341cc (was aaf3ae36... at 16350eb1). T16f: follows the Units 1-30 curriculum commit 16350eb1 (was d3b04bbc... at abaaa6b4). T16e: follows the Units 1-30 curriculum commit abaaa6b4 (was ab51a887... at f5861810). T16d: follows the Units 1-30 curriculum commit f5861810 (was f075c3d8... at e4245f3b). T16c: follows the Units 1-30 curriculum commit e4245f3b (was 513b9271... at b1c94322). T16-n2: follows the Units 1-30 curriculum commit b1c94322 (was 5d323636... at e95b504c). T16b CI fix: follows the Units 1-30 curriculum commit e95b504c (was a1266aa0... at b5abd07b; 92f69ed5... at 35c6bc4c; d11cab3c... at 8b1ee268; df28cdd7... at d74e3d9f; 6c5a3bb3... at 1b0dd1cc; a81a842b... at cdfba75e; abe8771d... at 6db5f5b2; fd93b562... at c4c65b24; 8e2ea00e...; D7b 7a95a65d...).
         // T17g expectation change, old -> new: e6f84850 -> 8c83ed9f (Unit 3 review package: Unit 3 binder wording and the T17g curriculum pin).
         // T17f-n1 expectation change, old -> new: 8c83ed9f -> af6cf1ff (Unit 3 review package follows the T17f-n1 curriculum pin).
-        assertEquals("af6cf1ffc8fa82e830eefaebec09640bccaf6095ce94ae769aa465d503fa9773", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
+        // T18a-1 expectation change, old -> new: af6cf1ff -> 18907666 (Unit 3 review package follows the T18a-1 curriculum pin ad00f774).
+        // T18a-2 expectation change, old -> new: 18907666 -> 84b3f914 (Unit 3 review package follows the T18a-2 curriculum pin 9043034a).
+        // T18b expectation change, old -> new: 84b3f914 -> fe90e42e (Unit 3 review package follows the T18b curriculum pin a1e9d21e).
+        // T18c-1 (D57a, D58b): fe90e42e -> 15d50bae after pinning the content commit.
+        // T18c-2 (D57b–e, D60): 15d50bae -> 61574558 after binding the Unit 23 content commit.
+        // T18d (D62): 61574558 -> 73128f2a with the Unit 24 content commit.
+        // T18d (D62): 73128f2a -> 0ebf78d2 after the Unit 24 phrase-audit fix.
+        // T18cd-fix (D63 correction): 0ebf78d2 -> b72dd319 after binding the corrected curriculum commit.
+        // T18e (D64): b72dd319 -> 19fbe297 after binding the Unit 25 content commit.
+        // T18e (D64): 19fbe297 -> 66a56763 after the verification fix.
+        // T18de (D67, D71): 66a56763 -> 7221a600 for the verified content update.
+        assertEquals("7221a60032c19389fc3fa5feefbb9a4cf49881183da8a36d7b14aca781f9793b", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         val unitSix = V2Validator.unitContentReviewDigest(pack, 6)
         val unitSeven = V2Validator.unitContentReviewDigest(pack, 7)
         val localSix = pack.copy(

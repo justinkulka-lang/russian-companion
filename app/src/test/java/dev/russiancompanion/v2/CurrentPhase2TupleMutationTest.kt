@@ -9,10 +9,12 @@ class CurrentPhase2TupleMutationTest {
         val result = V2Validator.validate(pack())
         assertTrue("Unchanged positive control: ${result.errors}", result.ok)
     }
-    @Test fun fullValidatorRejectsSwappedCompletionAnswersWithFrozenNarrative() {
-        rejectsMutableTupleRebinding("u23-i-completion-1", "u23-i-completion-2", "application tuple")
+    @Test fun fullValidatorRejectsSwappedDictionaryAnswersWithFrozenNarrative() {
+        // T18c-1 (D57a, D58b): u23-i-completion-1/2 -> u30-i-dictionary-1/2 (pinned application tuples).
+        rejectsMutableTupleRebinding("u30-i-dictionary-1", "u30-i-dictionary-2", "application tuple")
     }
     @Test fun fullValidatorRejectsSwappedNameAnswersEvenWhenAllMutableApplicationsAgree() {
+        // T18e (D64, D65): rebind to competing exact L:284–286 records; the frozen tuples cannot be changed with the item.
         rejectsMutableTupleRebinding("u25-i-name-form-1", "u25-i-name-form-2", "conflicting governed descriptions")
     }
     @Test fun fullValidatorRejectsSwappedMannerLabelsWithFrozenNarrative() {
@@ -88,8 +90,8 @@ class CurrentPhase2TupleMutationTest {
             )
         }
         val records=p.provenanceRecords.map { r ->
-            if(r.sourceRecordId!=cap.sourceRecordId || r.sourceHash!=cap.sourceHash)r
-            else r.copy(synthesis=r.synthesis!!.copy(applications=r.synthesis.applications.map { application ->
+            if(r.sourceRecordId!=cap.sourceRecordId || r.sourceHash!=cap.sourceHash || r.synthesis==null)r
+            else r.copy(synthesis=r.synthesis.copy(applications=r.synthesis.applications.map { application ->
                 val donor=when(application.cue) { first.promptLetter->last;last.promptLetter->first;else->null }
                 if(donor==null)application else application.copy(answer=donor.answer,distractors=donor.options.filter { it!=donor.answer })
             }))

@@ -18,7 +18,7 @@ import java.io.File
 import java.security.MessageDigest
 
 /**
- * Phase 2 admits three bounded claims and keeps the retired broad claims closed.
+ * Phase 2 ships two bounded claims and keeps the retired broad claims closed.
  * A wrong identity, a cloned check, or a readiness edit does not clear them.
  */
 class Phase2BoundedClaimsTest {
@@ -48,8 +48,14 @@ class Phase2BoundedClaimsTest {
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "adverb-paradigm" })
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
         assertTrue(pack.unit(25)!!.objectives.none { it.id == "obj-u25-productive-formation" })
+        // T18c-1 (D57a, D58b): a live completion capability and records -> neither is shipped.
+        assertFalse(pack.sourceCapabilities.any { it.unitNumber == 23 && it.supportedClaim == "completion-over-period" })
+        assertFalse(pack.provenanceRecords.any { it.objectiveId == "obj-u23-completion" })
+        val completionFixture = withRetiredUnit23Completion(pack)
         Phase2Sources.ADMISSIONS.forEach { admission ->
-            val records = pack.provenanceRecords.filter { it.sourceRecordId == admission.recordId }
+            // T18c-1 (D57a, D58b): live completion records -> metadata assertions on the planted records.
+            val target = if (admission == Phase2Sources.COMPLETION) completionFixture else pack
+            val records = target.provenanceRecords.filter { it.sourceRecordId == admission.recordId }
             assertTrue(records.isNotEmpty())
             records.forEach { record ->
                 val synthesis = record.synthesis!!
@@ -69,8 +75,13 @@ class Phase2BoundedClaimsTest {
 
     @Test
     fun identitySpanAndRelabelMutationsStayClosed() {
-        val pack = pack()
-        Phase2Sources.ADMISSIONS.forEach { admission ->
+        val current = pack()
+        val completionFixture = withRetiredUnit23Completion(current)
+        // T18e (D64, D65): also exercise identity and relabel mutations on the frozen Unit 25 admission.
+        (Phase2Sources.ADMISSIONS + Phase2Sources.NAME_FORM).forEach { admission ->
+            // T18c-1 (D57a, D58b): live synthesis identity mutations -> baseline fixture for completion.
+            val completion = admission == Phase2Sources.COMPLETION
+            val pack = if (completion) completionFixture else current
             val live = pack.sourceCapabilities.single { it.supportedClaim == admission.claim }
             listOf(
                 live.copy(id = "cap-phase2-source", sourceId = "src-openrussian-50e210c4"),
@@ -100,15 +111,21 @@ class Phase2BoundedClaimsTest {
             assertTrue(bookErrors, bookErrors.contains("span is not in the frozen record") || bookErrors.contains("Source capability ${book.id} corrected intake"))
             assertTrue(unresolved(replace(pack, live.id, book), admission.unitNumber).contains(admission.claim))
             val keywordSpan = "${admission.claim} co-occurrence"
+            // T18de (D65, D67): for the frozen name-form claim, forge the record on its real source and revision.
+            // The exact admission must reject the invented record even with a resolving source, rights and objective.
+            val frozenNameForm = admission == Phase2Sources.NAME_FORM
             val keyword = live.copy(
                 id = "cap-phase2-keyword",
-                sourceId = "src-phase2-keyword",
-                sourceRevision = "keyword",
+                sourceId = if (frozenNameForm) live.sourceId else "src-phase2-keyword",
+                sourceRevision = if (frozenNameForm) live.sourceRevision else "keyword",
                 sourceRecordId = "keyword:${admission.claim}",
                 sourceHash = sha256(keywordSpan),
                 exactSpan = keywordSpan,
             )
-            val keywordHost = pack.provenanceRecords.first { it.sourceRecordId == admission.recordId }.copy(
+            val keywordHost = pack.provenanceRecords.first {
+                it.sourceRecordId == admission.recordId &&
+                    (!frozenNameForm || (it.objectiveId == live.objectiveId && it.sourceHash == live.sourceHash))
+            }.copy(
                 itemId = "prov-${keyword.id}",
                 sourceId = keyword.sourceId,
                 sourceRevision = keyword.sourceRevision,
@@ -124,12 +141,23 @@ class Phase2BoundedClaimsTest {
             )
             val keywordErrors = errors(keywordPack)
             assertTrue(keywordErrors, keywordErrors.contains("keyword or co-occurrence evidence does not clear ${admission.claim}"))
-            assertTrue(keywordErrors, keywordErrors.contains("no independent ${admission.claim} admission"))
+            assertTrue(keywordErrors, keywordErrors.contains("Source capability ${keyword.id} has no independent ${admission.claim} admission"))
+            if (frozenNameForm) {
+                assertFalse(keywordErrors, keywordErrors.contains("attached to the wrong unit or objective"))
+                assertFalse(keywordErrors, keywordErrors.contains("source does not resolve"))
+                assertFalse(keywordErrors, keywordErrors.contains("rights do not resolve"))
+                assertTrue(unresolved(keywordPack, 25).contains(admission.claim))
+            }
             val stamped = pack.copy(
                 provenanceRecords = pack.provenanceRecords.map { it.copy(reviewStatus = "APPROVED") },
                 admissions = pack.admissions.copy(penguinProseAssets = 3, generatedRussianWords = 2),
             )
-            assertFalse(unresolved(stamped, admission.unitNumber).contains(admission.claim))
+            // T18c-1 (D57a, D58b): stamped legacy completion resolved -> stamped fixture still lacks a frozen admission.
+            assertEquals(completion, unresolved(stamped, admission.unitNumber).contains(admission.claim))
+            if (completion) {
+                val admissionError = "Source capability ${live.id} has no independent ${admission.claim} admission"
+                assertTrue(errors(stamped), errors(stamped).contains(admissionError))
+            }
             val removed = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.id != live.id })
             val flipped = removed.copy(
                 units = removed.units.map { unit ->
@@ -137,11 +165,20 @@ class Phase2BoundedClaimsTest {
                 },
             )
             assertTrue(unresolved(flipped, admission.unitNumber).contains(admission.claim))
-            assertTrue(errors(flipped), V2Validator.contentCompletenessErrors(flipped, flipped.unit(admission.unitNumber)!!).isNotEmpty())
+            // T18c-1 (D57a, D59): completion requirement retired; assertion inverted, old -> new
+            if (completion) {
+                val currentUnit = current.unit(23)!!
+                assertFalse(currentUnit.objectives.any { it.id == "obj-u23-completion" })
+                assertFalse(current.sourceCapabilities.any { it.id == "cap-u23-completion-over-period" })
+                assertFalse(V2Validator.contentCompletenessErrors(current, currentUnit).any { it.contains("completion-over-period") })
+            } else {
+                assertTrue(errors(flipped), V2Validator.contentCompletenessErrors(flipped, flipped.unit(admission.unitNumber)!!).isNotEmpty())
+            }
             val decision = advancementDecision(flipped, flipped.unit(admission.unitNumber)!!, learner(flipped.unit(admission.unitNumber)!!))
             assertFalse(decision.allowed)
         }
 
+        val pack = current
         val invariance = pack.sourceCapabilities.single { it.supportedClaim == "adverb-invariance" }
         val manner = pack.sourceCapabilities.single { it.supportedClaim == "bounded-manner-adverb-formation" }
         val relabeledManner = replace(
@@ -165,9 +202,10 @@ class Phase2BoundedClaimsTest {
         assertTrue(unresolved(relabeledName, 25).contains("documented-name-form"))
 
         val duration = pack.sourceCapabilities.single { it.supportedClaim == "elapsed-time-duration" }
-        val completion = pack.sourceCapabilities.single { it.supportedClaim == "completion-over-period" }
+        // T18c-1 (D57a, D58b): live completion relabel target -> planted baseline objective.
+        val completion = completionFixture.sourceCapabilities.single { it.supportedClaim == "completion-over-period" }
         val relabeledDuration = replace(
-            retarget(pack, duration.exactSpan, completion.objectiveId),
+            retarget(completionFixture, duration.exactSpan, completion.objectiveId),
             completion.id,
             duration.copy(id = completion.id, objectiveId = completion.objectiveId, supportedClaim = completion.supportedClaim),
         )
@@ -186,14 +224,19 @@ class Phase2BoundedClaimsTest {
         assertTrue(duplicateErrors, duplicateErrors.contains("duplicate assessment checks do not clear bounded-manner-adverb-formation") || duplicateErrors.contains("duplicates its independent check"))
         assertTrue(unresolved(duplicated, 7).contains("bounded-manner-adverb-formation"))
 
-        val layout = pack.copy(items = pack.items.map { item ->
+        // T18c-1 (D57a, D58b): live layout and distractor mutations -> planted baseline completion items.
+        val completionFixture = withRetiredUnit23Completion(pack)
+        val controlErrors = errors(completionFixture)
+        assertFalse(controlErrors, controlErrors.contains("label or source-layout recall does not clear completion-over-period"))
+        assertFalse(controlErrors, controlErrors.contains("distractor does not explain aspect and construction"))
+        val layout = completionFixture.copy(items = completionFixture.items.map { item ->
             if (item.id == "u23-i-completion-1") item.copy(prompt = "Which admitted line label is written beside the shown form?") else item
         })
         val layoutErrors = errors(layout)
         assertTrue(layoutErrors, layoutErrors.contains("label or source-layout recall does not clear completion-over-period"))
         assertTrue(unresolved(layout, 23).contains("completion-over-period"))
 
-        val thinDistractor = pack.copy(items = pack.items.map { item ->
+        val thinDistractor = completionFixture.copy(items = completionFixture.items.map { item ->
             if (item.id != "u23-i-completion-1") {
                 item
             } else {
@@ -256,23 +299,35 @@ class Phase2BoundedClaimsTest {
         val sashka = pack.items.single { it.id == "u25-i-name-form-2" }
         val mashenka = pack.items.single { it.id == "u25-i-name-form-1" }
         val maryunya = pack.items.single { it.id == "u25-g-name-form-1" }
-        val rejected = pack.items.single { it.id == "u25-i-name-form-3" }
+        // T18e (D64, D65): English synthesis applications -> frozen L:284–286 applications.
+        val marusya = pack.items.single { it.id == "u25-i-name-form-base" }
+        assertTrue(pack.items.none { it.id == "u25-i-name-form-3" })
         assertEquals("\u0421\u0430\u0448\u043a\u0430", sashka.promptLetter)
-        assertTrue(sashka.answer.contains("dismissive"))
-        assertFalse(sashka.answer == "documented familiar short-form coloring")
+        assertEquals(governed.shippedText, sashka.answer)
         assertTrue(sashka.feedback.contains(sashka.answer))
-        assertTrue(mashenka.answer.contains("short form"))
-        assertTrue(maryunya.answer.contains("full name"))
-        assertTrue(rejected.answer.contains("names dictionary"))
-        assertEquals(setOf(sashka.answer, mashenka.answer, maryunya.answer).size, 3)
-        val application = pack.provenanceRecords.first { it.sourceRecordId == "phase2:documented-name-form" }
-            .synthesis!!.applications.single { it.cue == "\u0421\u0430\u0448\u043a\u0430" }
-        assertEquals(sashka.answer, application.answer)
-        assertEquals("documented dismissive coloring", pack.examples.single { it.id == "ex-u25-name-form-1" }.note)
+        assertEquals("от краткой формы", mashenka.answer)
+        assertEquals("от полной формы имени", maryunya.answer)
+        assertEquals("Маруся", marusya.promptLetter)
+        assertEquals("Мария", marusya.answer)
+        assertEquals(setOf(sashka.answer, mashenka.answer, maryunya.answer, marusya.answer).size, 4)
+        val source = File(repo(), "catalog/sources/units-21-25/supplemental/lichnoe-imya-154915954.txt")
+            .readLines().slice(283..285).joinToString("\n")
+        val records = pack.provenanceRecords.associateBy { it.itemId }
+        for (item in listOf(sashka, mashenka, maryunya, marusya)) {
+            val assessment = item.assessment!!
+            assertEquals("STATED_APPLICATION", assessment.relationKind)
+            val participants = assessment.relationParticipantIds.map(records::getValue)
+            for (record in participants) {
+                assertEquals(source, record.originalSourceText)
+                assertTrue(V2Validator.isFrozenSourceRecord(pack, record))
+            }
+            assertEquals("STATED_APPLICATION", V2Validator.classifyRelation(participants[0], participants[1], participants.drop(2)))
+        }
+        assertEquals(governed.shippedText, pack.examples.single { it.id == "ex-u25-name-form-1" }.note)
 
         val familiar = replaceNameAnswer(pack, "u25-i-name-form-2", "documented familiar short-form coloring")
         val familiarErrors = errors(familiar)
-        assertTrue(familiarErrors, familiarErrors.contains("familiar short-form coloring does not preserve the dismissive reading"))
+        assertFalse(V2Validator.featureValid(familiar, familiar.items.single { it.id == sashka.id }))
         assertTrue(familiarErrors, familiarErrors.contains("conflicting governed descriptions"))
         assertTrue(unresolved(familiar, 25).contains("documented-name-form"))
         assertFalse(advancementDecision(familiar, familiar.unit(25)!!, learner(familiar.unit(25)!!)).allowed)
@@ -283,19 +338,16 @@ class Phase2BoundedClaimsTest {
 
         val swapped = replaceNameAnswer(pack, "u25-i-name-form-2", mashenka.answer)
         val swappedErrors = errors(swapped)
-        assertTrue(swappedErrors, swappedErrors.contains("swaps the"))
+        assertTrue(swappedErrors, swappedErrors.contains("conflicting governed descriptions"))
         assertTrue(unresolved(swapped, 25).contains("documented-name-form"))
         val swappedWithMaryunya = replaceNameAnswer(pack, "u25-i-name-form-2", maryunya.answer)
-        assertTrue(errors(swappedWithMaryunya), errors(swappedWithMaryunya).contains("swaps the"))
+        assertTrue(errors(swappedWithMaryunya), errors(swappedWithMaryunya).contains("conflicting governed descriptions"))
 
-        val generated = replaceNameAnswer(
-            pack,
-            "u25-i-name-form-3",
-            "the suffix mechanically generates an acceptable name",
-        )
-        val generatedErrors = errors(generated)
-        assertTrue(generatedErrors, generatedErrors.contains("arbitrary name-form generation is not rejected"))
-        assertTrue(unresolved(generated, 25).contains("documented-name-form"))
+        // T18e (D64, D65): the retired dictionary-policy probe -> wrong attested base must fail.
+        val wrongBase = replaceNameAnswer(pack, marusya.id, marusya.options[1])
+        val wrongBaseErrors = errors(wrongBase)
+        assertTrue(wrongBaseErrors, wrongBaseErrors.contains("conflicting governed descriptions"))
+        assertTrue(unresolved(wrongBase, 25).contains("documented-name-form"))
     }
 
     private fun replaceNameAnswer(

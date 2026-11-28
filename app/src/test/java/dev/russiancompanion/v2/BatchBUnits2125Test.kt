@@ -70,9 +70,8 @@ class BatchBUnits2125Test {
                 assertTrue(record.sourceUrl.contains("oldid=${capability.sourceRevision}"))
             }
         }
-        assertTrue(pack.sourceCapabilities.any {
-            it.supportedClaim == "completion-over-period" && it.sourceId == "src-original-research-synthesis"
-        })
+        // T18c-1 (D57a, D58b): live synthesis capability present -> live completion capability absent.
+        assertFalse(pack.sourceCapabilities.any { it.unitNumber == 23 && it.supportedClaim == "completion-over-period" })
         assertTrue(pack.sourceCapabilities.any { it.supportedClaim == "negation-scope" && it.objectiveId == "obj-u24-placement" })
         val classification = pack.sourceCapabilities.single { it.supportedClaim == "diminutive-form-classification" }
         assertEquals("obj-u25-nickname-rule", classification.objectiveId)
@@ -467,7 +466,9 @@ class BatchBUnits2125Test {
 
     @Test
     fun completionOverPeriodClearsOnlyForACompleteMatchingAdmission() {
-        val pack = pack()
+        // T18c-1 (D57a, D58b): live completion admission mutations -> planted baseline objective.
+        val current = pack()
+        val pack = withRetiredUnit23Completion(current)
         val span = "A frozen source states the completion-over-period distinction."
         val admission = dev.russiancompanion.v2.curriculum.GovernedSourceAdmission(
             sourceId = "src-pressbooks-diverse-russian-usa-grammar",
@@ -520,9 +521,11 @@ class BatchBUnits2125Test {
             sourceCapabilities = withoutCompletion.sourceCapabilities + wrong,
         )
         assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(rebound, 23).any { it.claim == "completion-over-period" })
-        assertTrue(V2Validator.contentCompletenessErrors(rebound, rebound.unit(23)!!).any {
-            it.contains("without an admitted completion-over-period source capability")
-        })
+        // T18c-1 (D57a, D59): completion requirement retired; assertion inverted, old -> new
+        val currentUnit = current.unit(23)!!
+        assertFalse(currentUnit.objectives.any { it.id == "obj-u23-completion" })
+        assertFalse(current.sourceCapabilities.any { it.id == "cap-u23-completion-over-period" })
+        assertFalse(V2Validator.contentCompletenessErrors(current, currentUnit).any { it.contains("completion-over-period") })
     }
 
     @Test
@@ -715,6 +718,8 @@ class BatchBUnits2125Test {
             Triple(24, "obj-u24-placement", "negation-scope"),
             Triple(25, "obj-u25-nickname-rule", "productive-diminutive"),
         ).forEach { (unitNumber, objectiveId, claim) ->
+            // T18c-1 (D57a, D58b): live completion dictionary/book probes -> planted baseline objective.
+            val target = if (claim == "completion-over-period") withRetiredUnit23Completion(pack) else pack
             val row = V2SourceCapability(
                 id = "cap-dict-$claim",
                 sourceId = "src-openrussian-50e210c4",
@@ -726,10 +731,10 @@ class BatchBUnits2125Test {
                 objectiveId = objectiveId,
                 supportedClaim = claim,
             )
-            val errors = V2Validator.validate(pack.copy(sourceCapabilities = pack.sourceCapabilities + row)).errors.joinToString("\n")
+            val errors = V2Validator.validate(target.copy(sourceCapabilities = target.sourceCapabilities + row)).errors.joinToString("\n")
             assertTrue(errors, errors.contains("a dictionary row does not clear $claim"))
             val attested = row.copy(id = "cap-book-$claim", sourceId = frozenHost.sourceId, exactSpan = "Self-attest only after the Lesson work in your copy.")
-            val bookErrors = V2Validator.validate(pack.copy(sourceCapabilities = pack.sourceCapabilities + attested)).errors.joinToString("\n")
+            val bookErrors = V2Validator.validate(target.copy(sourceCapabilities = target.sourceCapabilities + attested)).errors.joinToString("\n")
             assertTrue(bookErrors, bookErrors.contains("book self-attestation does not clear $claim"))
         }
 
@@ -955,10 +960,12 @@ class BatchBUnits2125Test {
         claim: String,
         id: String,
     ): String {
-        val existing = pack.provenanceRecords.any { it.originalSourceText == span }
+        // T18c-1 (D57a, D58b): live completion evidence probes -> planted baseline objective.
+        val target = if (claim == "completion-over-period") withRetiredUnit23Completion(pack) else pack
+        val existing = target.provenanceRecords.any { it.originalSourceText == span }
         val base = if (existing) {
-            pack.copy(
-                provenanceRecords = pack.provenanceRecords.map { record ->
+            target.copy(
+                provenanceRecords = target.provenanceRecords.map { record ->
                     if (record.originalSourceText == span) {
                         record.copy(unitNumber = unitNumber, objectiveId = objectiveId)
                     } else {
@@ -967,7 +974,7 @@ class BatchBUnits2125Test {
                 },
             )
         } else {
-            val template = pack.provenanceRecords.first { it.unitNumber == unitNumber }
+            val template = target.provenanceRecords.first { it.unitNumber == unitNumber }
             val visible = span.lineSequence().first { it.any { char -> char.isLetter() } }.take(48)
             val record = template.copy(
                 itemId = "prov-$id",
@@ -979,7 +986,7 @@ class BatchBUnits2125Test {
                 sourceHash = sha256(span),
                 contentHash = sha256(visible),
             )
-            pack.copy(provenanceRecords = pack.provenanceRecords + record)
+            target.copy(provenanceRecords = target.provenanceRecords + record)
         }
         val host = base.provenanceRecords.first { it.originalSourceText == span && it.objectiveId == objectiveId }
         val capability = V2SourceCapability(

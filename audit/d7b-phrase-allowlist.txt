@@ -1,37 +1,3 @@
-21 | u21-st-rem-object-reference.body | Я люблю́ свою́ жену́ | UNATTESTED
-21 | u21-st-teach-object-reference-2.body | Я люблю́ свою́ жену́ | UNATTESTED
-23 | ex-u23-completion-0.display | Анна читала статью два часа | UNATTESTED
-23 | ex-u23-completion-1.display | Анна прочитала статью за два часа | UNATTESTED
-23 | u23-g-completion-1.feedback | Борис писал письмо час | UNATTESTED
-23 | u23-g-completion-1.promptLetter | Борис писал письмо час | UNATTESTED
-23 | u23-i-completion-1.feedback | Анна читала статью два часа | UNATTESTED
-23 | u23-i-completion-1.promptLetter | Анна читала статью два часа | UNATTESTED
-23 | u23-i-completion-2.feedback | Анна прочитала статью за два часа | UNATTESTED
-23 | u23-i-completion-2.promptLetter | Анна прочитала статью за два часа | UNATTESTED
-23 | u23-st-rem-completion.body | Анна прочитала статью за два часа | UNATTESTED
-23 | u23-st-rem-completion.body | Анна читала статью два часа | UNATTESTED
-23 | u23-st-rem-completion.body | Борис писал письмо час | UNATTESTED
-23 | u23-st-teach-completion-1.body | Анна читала статью два часа | UNATTESTED
-23 | u23-st-teach-completion-1.body | Борис писал письмо час | UNATTESTED
-23 | u23-st-teach-completion-2.body | Анна прочитала статью за два часа | UNATTESTED
-24 | ex-u24-alternation-0.display | Я не ви́жу книг | UNATTESTED
-24 | ex-u24-stand-ins-2.display | не́кого спросить | UNATTESTED
-24 | u24-g-alternation-0.distractorRationales[1] | э́ту кни́гу | UNATTESTED
-24 | u24-g-alternation-0.feedback | Я не ви́жу э́ту кни́гу | UNATTESTED
-24 | u24-g-alternation-0.feedback | э́ту кни́гу | UNATTESTED
-24 | u24-g-alternation-0.promptLetter | Я не ви́жу э́ту кни́гу | UNATTESTED
-24 | u24-i-alternation-1.distractorRationales[1] | Я не ви́жу книг | UNATTESTED
-24 | u24-i-alternation-2.distractorRationales[1] | э́ту кни́гу | UNATTESTED
-24 | u24-i-alternation-2.feedback | Я не ви́жу книг | UNATTESTED
-24 | u24-i-alternation-2.promptLetter | Я не ви́жу книг | UNATTESTED
-24 | u24-i-stand-ins-2.feedback | не́кого спросить | UNATTESTED
-24 | u24-i-stand-ins-2.promptLetter | не́кого спросить | UNATTESTED
-24 | u24-st-rem-alternation.body | Я не ви́жу книг | UNATTESTED
-24 | u24-st-rem-alternation.body | Я не ви́жу э́ту кни́гу | UNATTESTED
-24 | u24-st-rem-stand-ins.body | не́кого спросить | UNATTESTED
-24 | u24-st-teach-alternation-1.body | Я не ви́жу книг | UNATTESTED
-24 | u24-st-teach-alternation-1.body | Я не ви́жу э́ту кни́гу | UNATTESTED
-24 | u24-st-teach-stand-ins-2.body | не́кого спросить | UNATTESTED
 26 | ex-u26-postal-1.display | Анна Петрова | UNATTESTED
 26 | ex-u26-postal-1.display | Республика Татарстан | UNATTESTED
 26 | u26-i-postal-1.promptLetter | Анна Петрова | UNATTESTED

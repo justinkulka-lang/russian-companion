@@ -41,7 +41,20 @@ class Unit23CumulativeReviewTest {
             assertEquals(22, earlier.targetUnit)
             assertTrue(ordinaryUnitRequirements(p, p.unit(23)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(23)!!, s.v2LearnerView()).allowed)
+            val repeatExcluded = cumulativeReviewRepeatExcluded(s.v2LearnerView(), 23).size
             val a = open(p, s)
+            val reviewByUnit = s.cumulativeReviewHistory().first.associateBy { it.targetUnit }
+            val longestRun = a.slots.maxOf { slot ->
+                generateSequence(23) { it - 1 }.takeWhile { unit ->
+                    reviewByUnit[unit]?.slots?.any { it.itemId == slot.itemId } == true
+                }.count()
+            }
+            val measured = listOf(a.slots.size, a.slots.map { it.objectiveId }.distinct().size,
+                a.slots.map { it.skill }.distinct().size, a.slots.count { it.ownerUnit < 23 }, longestRun, repeatExcluded)
+            // T18c-2 (A2-28): record the eight-slot Unit 23 assignment and its repeat limits.
+            assertEquals(listOf(8, 8, 8, 8, 2, 0), measured)
+            val window = (20..23).map { unit -> reviewByUnit.getValue(unit).slots.map { it.itemId }.toSet() }
+            assertTrue(window.reduce { previous, next -> previous intersect next }.isEmpty())
             assertEquals(listOf("obj-u1-decoding", "obj-u22-half-forms"), a.slots.take(2).map { it.objectiveId })
             assertEquals(listOf("BOUNDED_READING", "SUPPLIED_HALF_QUANTITY_PHRASE_RECOGNITION"), a.slots.take(2).map { it.skill })
             assertEquals("u22-i-half-forms-2", a.slots[1].itemId)

@@ -8,6 +8,7 @@ import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
 import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.item
+import dev.russiancompanion.v2.curriculum.isTypedResponse
 import dev.russiancompanion.v2.curriculum.requiredInstructionSteps
 import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.GOVERNED_IDENTITY_SCHEMA
@@ -18,6 +19,7 @@ import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotEquals
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
@@ -456,22 +458,23 @@ class ContentAuditCorrectionTest {
         val pack = pack()
         val unit = pack.unit(24)!!
         val session = unit.sessions.single { it.id == "u24-s-stand-ins" }
-        val item = pack.item("u24-i-stand-ins-2")!!
-        assertEquals("не́кого спросить", item.promptLetter)
-        assertEquals("there is nobody to ask", item.answer)
-        assertEquals(listOf("there is nobody to ask", "an unspecified person", "there is nothing to ask"), item.options)
-        assertEquals("NEGATIVE_ABSENCE_NEKOGO", item.assessment!!.testedFeature)
+        // T18de (D62a, D66): unsupported absence sentence/example -> absent; cited single-form retrieval keeps the case boundary.
+        assertNull(pack.item("u24-i-stand-ins-2"))
+        assertTrue(pack.examples.none { it.id == "ex-u24-stand-ins-2" })
+        val item = pack.item("u24-i-type-nobody-available")!!
+        assertEquals("не́кого", item.answer)
+        assertTrue(item.isTypedResponse())
         assertFalse(item.prompt.contains("genitive", ignoreCase = true))
-        val example = pack.examples.single { it.id == "ex-u24-stand-ins-2" }
-        assertEquals("there is nobody to ask; negative absence construction", example.note)
-        val explanation = session.steps.single { it.id == "u24-st-teach-stand-ins-3" }.body
-        assertTrue(explanation.contains("same form in the genitive and accusative"))
-        assertTrue(explanation.contains("sentence determines the case"))
+        assertFalse(item.promptLetter.orEmpty().contains("genitive", ignoreCase = true))
+        val cited = pack.provenanceRecords.single { it.itemId == item.keyCitation }
+        assertEquals(item.answer, cited.shippedText)
+        assertTrue(V2Validator.isFrozenSourceRecord(pack, cited))
+        val explanation = session.steps.single { it.id == "u24-st-teach-stand-ins-2" }.body
+        assertTrue(explanation.contains("This negative form belongs to a set with no nominative."))
         val remediation = session.steps.single { it.id == "u24-st-rem-stand-ins" }
         val teaching = session.steps.filter { it.kind == "TEACH" }
         assertEquals(teaching.joinToString("\n\n") { it.body }, remediation.body)
         assertEquals(teaching.flatMap { it.exampleIds }.distinct(), remediation.exampleIds)
-        assertTrue(remediation.exampleIds.contains(example.id))
         val guidedIndex = session.steps.indexOfFirst { it.kind == "GUIDED" }
         assertTrue(session.steps.take(guidedIndex).count { it.kind == "TEACH" } == 3)
         assertTrue(session.steps.drop(guidedIndex).none { it.kind == "TEACH" })
@@ -489,25 +492,29 @@ class ContentAuditCorrectionTest {
         val guidedIndex = session.steps.indexOfFirst { it.kind == "GUIDED" }
         assertTrue(session.steps.indexOf(worked) < guidedIndex)
         assertTrue(session.steps.drop(guidedIndex).none { it.kind == "TEACH" })
-        val corrected = "Извини́те is the polite or plural form. The familiar singular is Извини́."
+        // T18de (D64a, D66): synthesis wording and English options -> current frozen singular/plural forms.
+        val corrected = "The ending -те marks polite or plural address. Use извини́ in familiar singular address."
         assertTrue(worked.body.contains("Извини́те means excuse me with polite or plural address"))
-        assertTrue(worked.body.contains("Извини́ is the familiar singular form"))
+        assertTrue(worked.body.contains("извини́ is the familiar singular form"))
         val remediation = pack.step("u25-st-rem-courtesy")!!.second
         assertEquals(teaching.joinToString("\n\n") { it.body }, remediation.body)
         assertEquals(teaching.flatMap { it.exampleIds }.distinct(), remediation.exampleIds)
         assertEquals(setOf("ex-u25-courtesy-0", "ex-u25-courtesy-1", "ex-u25-courtesy-2"), remediation.exampleIds.toSet())
         val guided = pack.item("u25-g-courtesy-0")!!
         assertEquals("Пожа́луйста", guided.answer)
-        assertTrue(guided.distractorRationales[2].contains(corrected))
+        assertTrue(guided.distractorRationales[2].contains("polite or plural address"))
         assertTrue(guided.distractorRationales[2].contains("Извини́те"))
         assertEquals(guided.distractorRationales[2], guided.assessment!!.distractorDifference[2])
-        assertEquals("excuse me, polite or plural", pack.item("u25-i-courtesy-2")!!.answer)
+        val apology = pack.item("u25-i-courtesy-2")!!
+        assertEquals("извини́те", apology.answer)
+        assertTrue(apology.options.contains("извини́"))
+        assertEquals(corrected, pack.examples.single { it.id == "ex-u25-courtesy-2" }.note)
         assertTrue(pack.provenanceRecords.any {
             it.unitNumber == 25 && it.objectiveId == "obj-u25-courtesy" && it.shippedText == corrected
         })
         assertTrue(unit.objectives.single { it.id == "obj-u25-courtesy" }.gating)
         assertEquals(listOf("u25-i-courtesy-1", "u25-i-courtesy-2"),
-            unit.objectives.single { it.id == "obj-u25-courtesy" }.checkItemIds)
+            unit.objectives.single { it.id == "obj-u25-courtesy" }.checkItemIds.filterNot { pack.item(it)!!.isTypedResponse() })
     }
 
     @Test
@@ -637,8 +644,11 @@ class ContentAuditCorrectionTest {
         val pack = pack()
         val result = V2Validator.validate(pack)
         assertTrue(result.errors.joinToString("\n"), result.ok)
-        assertNotEquals("не́кто", pack.item("u24-i-stand-ins-2")!!.answer)
-        assertEquals("there is nobody to ask", pack.item("u24-i-stand-ins-2")!!.answer)
+        // T18de (D62a, D66): retired absent-person sentence -> frozen single-form key, kept distinct from an indefinite person.
+        assertNull(pack.item("u24-i-stand-ins-2"))
+        val absentPerson = pack.item("u24-i-type-nobody-available")!!
+        assertNotEquals("не́кто", absentPerson.answer)
+        assertEquals("не́кого", absentPerson.answer)
         assertEquals("учи́теля", pack.item("u6-i-animacy-1")!!.answer)
         assertEquals("на́шу", pack.item("u6-i-possessive-2")!!.answer)
         assertEquals("но́вую", pack.item("u7-i-objectadj-3")!!.answer)

@@ -9,6 +9,7 @@ import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.step
 import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.review.buildUnitReviewPackage
 import dev.russiancompanion.v2.review.governedMappingFacts
@@ -30,7 +31,10 @@ class Units2125SourceIntakeTest {
     private val pages = mapOf(
         21 to "257-268",
         22 to "269-282",
+        // T18cd-fix (D63 correction): D61 literal matched an en-dash note; restored plain hyphen
+        // 283–293 -> 283-293.
         23 to "283-293",
+        // T18cd-fix (D63 correction): 294–304 -> 294-304.
         24 to "294-304",
         25 to "305-319",
     )
@@ -114,11 +118,17 @@ class Units2125SourceIntakeTest {
             assertEquals(number, unit.penguinLesson)
             assertTrue(unit.mappingNote.contains(range))
             assertFalse(unit.mappingNote.contains(packagedMappingNotePages.getValue(number)))
-            assertTrue(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
+            // T18a-2 expectation change (owner decision D54g), old -> new: Unit 21's mapping note follows the Units 1-20 style without
+            // the status token (as Units1620SourceIntakeTest for Units 16-20); its mappingStatus stays PENDING_CURRICULUM_REVIEWER.
+            // T18b: Unit 22 too (was number == 21).
+            // T18c-2 (D57d): mapping-note status text removed in 21–22 -> 21–23.
+            // T18d (D62): Units 21–23 -> Units 21–24 omit reviewer status text in the learner note.
+            // T18e (D64): Units 21–24 -> Units 21–25 omit reviewer status text in the learner note.
+            assertFalse(unit.mappingNote.contains("PENDING_CURRICULUM_REVIEWER"))
             assertFalse(unit.mappingNote.contains("APPROVED"))
             assertFalse(unit.mappingNote.contains("ISBN"))
             assertFalse(unit.mappingNote.contains("2bcc0c45"))
-            assertEquals(range, "${facts.printedPageStart}-${facts.printedPageEnd}")
+            assertEquals(range.replace('–', '-'), "${facts.printedPageStart}-${facts.printedPageEnd}")
             assertEquals(number, facts.proposedLessonNumber)
             assertEquals("PENDING_CURRICULUM_REVIEWER", facts.mappingDisposition)
             assertEquals("UNRESOLVED", facts.isbnObservation)
@@ -257,10 +267,10 @@ class Units2125SourceIntakeTest {
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
         assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
         assertTrue(unit.mappingNote.contains("completion over a period"))
-        assertTrue(unit.topicSummary.contains("duration-versus-completion contrast"))
+        // T18c-2 (D57d): review/install commentary -> learner-facing topic; self-attestation stays in the book step.
+        assertEquals("Study how Russian expressions place an event in a decade, within a period or in relation to another event.", unit.topicSummary)
         assertFalse(unit.topicSummary.contains("Completion over a period has no admitted frozen span"))
-        assertTrue(unit.topicSummary.contains("Book self-attestation does not replace the app checks"))
-        assertTrue(unit.topicSummary.contains("not installed"))
+        assertTrue(pack.step("u23-st-book")!!.second.body.contains("mark it done here"))
         assertTrue(unit.sessions.flatMap { it.steps }.any { it.kind == "TEACH" })
         assertTrue(unit.sessions.flatMap { it.steps }.any { it.kind == "BOOK" })
         assertTrue(unit.objectives.single { it.id == "obj-u23-book" }.checkItemIds.isEmpty())
@@ -271,7 +281,11 @@ class Units2125SourceIntakeTest {
             assertTrue(objective.checkItemIds.size >= 2)
         }
         assertTrue(reason(pack, 23).isBlank())
-        val completion = unit.objectives.single { it.id == "obj-u23-completion" }
+        // T18c-1 (D57a, D58b): live completion objective and checks -> live objective and capability absent.
+        assertFalse(unit.objectives.any { it.id == "obj-u23-completion" })
+        assertFalse(pack.sourceCapabilities.any { it.unitNumber == 23 && it.supportedClaim == "completion-over-period" })
+        val completionFixture = withRetiredUnit23Completion(pack)
+        val completion = completionFixture.unit(23)!!.objectives.single { it.id == "obj-u23-completion" }
         assertEquals("RECOGNITION", completion.kind)
         assertTrue(completion.checkItemIds.size >= 2)
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 23).any { it.claim == "completion-over-period" })
@@ -312,10 +326,11 @@ class Units2125SourceIntakeTest {
         val review = pack.unitReviews.single { it.unitNumber == 23 }
         assertEquals("IMPLEMENTED_PENDING_FINAL_AUDIT", review.status)
         assertTrue(review.reviewer.isNullOrBlank())
+        // T18c-1 (D57a, D58b): duration plus completion gap -> duration gap alone in the live unit.
         val stripped = withoutCapabilities(pack, 23)
         val numbersHour = sample(pack, 23, "4371358", "src-wikibooks-russian-cc-by-sa", "one hour one year one minute elapsed during ago")
         val stretched = V2Validator.validate(claimComplete(stripped.copy(provenanceRecords = stripped.provenanceRecords + numbersHour), 23)).errors
-        assertTrue(stretched.joinToString("\n"), stretched.any { it.contains("without admitted elapsed-time-duration and completion-over-period source capabilities") })
+        assertTrue(stretched.joinToString("\n"), stretched.any { it.contains("without an admitted elapsed-time-duration source capability") })
         val dictionary = sample(pack, 23, "50e210c4803237779cb562bc1abcea529066031c", "src-openrussian-50e210c4", keywordBlob)
             .copy(objectiveId = "obj-u23-duration")
         val dictionaryCapability = capability(dictionary, "cap-dictionary-duration", 23, "obj-u23-duration", "elapsed-time-duration")
@@ -328,10 +343,10 @@ class Units2125SourceIntakeTest {
                 23,
             ),
         ).errors.joinToString("\n")
-        assertTrue(fromRows, fromRows.contains("without admitted elapsed-time-duration and completion-over-period source capabilities"))
+        assertTrue(fromRows, fromRows.contains("without an admitted elapsed-time-duration source capability"))
         assertTrue(fromRows, fromRows.contains("no independent elapsed-time-duration admission"))
         val bare = V2Validator.validate(claimComplete(stripped, 23)).errors
-        assertTrue(bare.joinToString("\n"), bare.any { it.contains("without admitted elapsed-time-duration and completion-over-period source capabilities") })
+        assertTrue(bare.joinToString("\n"), bare.any { it.contains("without an admitted elapsed-time-duration source capability") })
         assertTrue(bare.none { it.contains("no teach step") })
         val ago = pack.provenanceRecords.first().copy(
             itemId = "prov-u23-ago-span",
@@ -361,16 +376,17 @@ class Units2125SourceIntakeTest {
         assertTrue(overreach, overreach.contains("bounded time expression does not clear elapsed-time-duration"))
         assertTrue(overreach, overreach.contains("partial duration evidence does not clear elapsed-time-duration"))
         val host = pack.provenanceRecords.first { it.originalSourceText == elapsed.exactSpan }
+        // T18c-1 (D57a, D58b): live completion capability mutations -> planted baseline objective.
         val wrongObjective = V2Validator.validate(
-            pack.copy(sourceCapabilities = pack.sourceCapabilities + capability(host, "cap-wrong-objective", 23, "obj-u23-duration", "completion-over-period")),
+            completionFixture.copy(sourceCapabilities = completionFixture.sourceCapabilities + capability(host, "cap-wrong-objective", 23, "obj-u23-duration", "completion-over-period")),
         ).errors.joinToString("\n")
         assertTrue(wrongObjective, wrongObjective.contains("attached to the wrong unit or objective"))
         val wrongUnit = V2Validator.validate(
-            pack.copy(sourceCapabilities = pack.sourceCapabilities + capability(host, "cap-wrong-unit", 24, "obj-u23-completion", "completion-over-period")),
+            completionFixture.copy(sourceCapabilities = completionFixture.sourceCapabilities + capability(host, "cap-wrong-unit", 24, "obj-u23-completion", "completion-over-period")),
         ).errors.joinToString("\n")
         assertTrue(wrongUnit, wrongUnit.contains("attached to the wrong unit or objective"))
         val wrongClaim = V2Validator.validate(
-            pack.copy(sourceCapabilities = pack.sourceCapabilities + capability(host, "cap-wrong-claim", 23, "obj-u23-completion", "elapsed-time-duration")),
+            completionFixture.copy(sourceCapabilities = completionFixture.sourceCapabilities + capability(host, "cap-wrong-claim", 23, "obj-u23-completion", "elapsed-time-duration")),
         ).errors.joinToString("\n")
         assertTrue(wrongClaim, wrongClaim.contains("attached to the wrong unit or objective"))
         val moved = host.copy(objectiveId = "obj-u23-completion", itemId = "prov-u23-completion-host")
@@ -382,23 +398,23 @@ class Units2125SourceIntakeTest {
             forged.copy(exactSpan = "not the frozen span"),
         ).forEach { broken ->
             val errors = V2Validator.validate(
-                pack.copy(
-                    provenanceRecords = pack.provenanceRecords + moved,
-                    sourceCapabilities = pack.sourceCapabilities + broken,
+                completionFixture.copy(
+                    provenanceRecords = completionFixture.provenanceRecords + moved,
+                    sourceCapabilities = completionFixture.sourceCapabilities + broken,
                 ),
             ).errors.joinToString("\n")
             assertTrue(errors, errors.contains("revision does not match the frozen record") || errors.contains("span is not in the frozen record"))
             assertTrue(errors, errors.contains("no independent completion-over-period admission"))
-            val withoutCompletion = pack.sourceCapabilities.filter { it.id != "cap-u23-completion-over-period" }
+            val withoutCompletion = completionFixture.sourceCapabilities.filter { it.id != "cap-u23-completion-over-period" }
             assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(
-                pack.copy(provenanceRecords = pack.provenanceRecords + moved, sourceCapabilities = withoutCompletion + broken),
+                completionFixture.copy(provenanceRecords = completionFixture.provenanceRecords + moved, sourceCapabilities = withoutCompletion + broken),
                 23,
             ).any { it.claim == "completion-over-period" })
         }
         val bookText = unit.sessions.flatMap { it.steps }.first { it.kind == "BOOK" }.body
         val bookRecord = sample(pack, 23, elapsed.sourceRevision, elapsed.sourceId, bookText).copy(objectiveId = "obj-u23-completion")
-        val withoutCompletion = pack.copy(
-            sourceCapabilities = pack.sourceCapabilities.filter { it.id != "cap-u23-completion-over-period" },
+        val withoutCompletion = completionFixture.copy(
+            sourceCapabilities = completionFixture.sourceCapabilities.filter { it.id != "cap-u23-completion-over-period" },
         )
         val bookErrors = V2Validator.validate(
             claimComplete(
@@ -410,7 +426,10 @@ class Units2125SourceIntakeTest {
             ),
         ).errors.joinToString("\n")
         assertTrue(bookErrors, bookErrors.contains("no independent completion-over-period admission"))
-        assertTrue(bookErrors, bookErrors.contains("without an admitted completion-over-period source capability"))
+        // T18c-1 (D57a, D59): completion requirement retired; assertion inverted, old -> new
+        assertFalse(unit.objectives.any { it.id == "obj-u23-completion" })
+        assertFalse(pack.sourceCapabilities.any { it.id == "cap-u23-completion-over-period" })
+        assertFalse(V2Validator.contentCompletenessErrors(pack, unit).any { it.contains("completion-over-period") })
         assertFalse(bookErrors, bookErrors.contains("book self-attestation clears"))
     }
 
