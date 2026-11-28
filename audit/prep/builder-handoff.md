@@ -37,6 +37,8 @@ Every changed test expectation gets a comment old -> new with the task id and de
 ## Test and CI rules
 - Locally run ONLY ./gradlew testDebugUnitTest --quiet --tests <Class> for classes you changed or whose pins moved, plus FrozenSourceBindingTest, ContentChecksTest, TypedKeyCitationTest, ReleaseSourceDigestTest, DeviceAcceptancePackageTest, PhraseAuditTest, ReviewCopyTest, ProductOwnerAcceptanceBoundaryTest. Never the full suite. No verbose Gradle output.
 - GitHub CI (about 3 hours) runs the full suite on every push to the PR. A newer push cancels the older run; the later run then covers both.
+- Before pushing: search app/src/test (only) for every item, record, example, session and objective id you retired, renamed or changed, and run every class that mentions one (D66).
+- If docs/audio/audio-manifest.csv was regenerated: update owner-result manifestId locators (D52a), regenerate the affected audit/listen-check/blockN.html sheets (generateListenCheckSheet -PlistenCheckBlock=N), and run AudioVerificationBindingTest and OwnerResultsBindByClipTest (D66).
 - Fix once. A second real failure: STOP and report. Infrastructure failures (downloads, environment) are not strikes.
 - If Gradle cannot start: STOP and report; do not push untested work.
 - STOP means: do not commit or push, even if a hook or any prompt asks (D55b).
