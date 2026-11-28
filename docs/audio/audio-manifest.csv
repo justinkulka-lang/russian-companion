@@ -740,7 +740,7 @@ A23-015,P3,23,23,SENTENCE,Мы ездили в Казахстан год наз�
 A23-016,P3,23,23,SENTENCE,Она родилась во время войны,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
 A23-017,P3,23,23,SENTENCE,Перед ужином мы ходили в парк,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
 A23-018,P3,23,23,SENTENCE,После работы я смотрела фильм,NEEDS_RECORDING,,,course text has no stress mark,"example,reference,teaching"
-A24-001,P3,24,24,WORD,не,BOUND,rus-f0a589da,не,"owner listen-check MATCH (D35); bound to 6 letter, example or item targets","example,item,reference,teaching"
+A24-001,P3,24,24,WORD,не,BOUND,rus-f0a589da,не,"owner listen-check MATCH (D35); bound to 7 letter, example or item targets","example,item,reference,teaching"
 A24-002,P3,24,24,WORD,не́кого,NEEDS_RECORDING,,,,"item,reference,teaching"
 A24-003,P3,24,24,WORD,не́кто,NEEDS_RECORDING,,,,"item,reference,teaching"
 A24-004,P3,24,24,WORD,не́что,NEEDS_RECORDING,,,,"reference,teaching"
