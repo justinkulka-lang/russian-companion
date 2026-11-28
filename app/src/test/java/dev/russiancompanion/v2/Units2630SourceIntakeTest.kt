@@ -70,14 +70,16 @@ class Units2630SourceIntakeTest {
         // T18c-1 (D57a, D58b): 43526f2d -> ee8c4aa3 for the Unit 23 retirement.
         // T18c-2 (D57d, D60): ee8c4aa3 -> a3e912f8 after the Units 21–25 source notice update.
         // T18d (D62): a3e912f8 -> c31fc7c5 after updating the shared Units 21–25 attribution.
-        23 to "c31fc7c5aee66b114a302879478ba1d9a1b57185e283ee2c032762b032c16cde", // T16c-n2: attribution notice / binder text (was 1a29b09b...)
+        // T18cd-fix (D63 correction): c31fc7c5 -> bda97620 after correcting the mapping note.
+        23 to "bda97620bd8293710e74d6f66b20a62b367a5dcfd911030fe513ce27a25cedbe", // T16c-n2: attribution notice / binder text (was 1a29b09b...)
         // S1: Unit 24 gains frozen records for the dative and instrumental of nekogo (was 500af59a...).
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 24 was e35b8db2...).
         // T18a-2 expectation change (owner decision D54g), old -> new: d9563eac -> a1917516 (the shared ref-u2125-attribution notice).
         // T18c-2 (D57d, D60): a1917516 -> 9aedca81 after the Units 21–25 source notice update.
         // T18d (D62): 9aedca81 -> b8f90fdd after updating the shared Units 21–25 attribution.
         // T18d (D62): b8f90fdd -> c2a3a2f8 after the Unit 24 phrase-audit fix.
-        24 to "c2a3a2f85b7b570299d7b530bd68af2285154cd3873ebbd941ddb5fe8420c745", // T16c-n2: attribution notice / binder text (was 1379741c...)
+        // T18cd-fix (D63 correction): c2a3a2f8 -> b8d94d2c after correcting the mapping note.
+        24 to "b8d94d2c2aad244ff60518abf395dd34f4dc69de969a3eb97d9ac3909b8626f9", // T16c-n2: attribution notice / binder text (was 1379741c...)
         // T15g A4: prov-d7b-u25-038 re-cited to russian-grammar-1369617627.txt:1169 (was 4bc90e89...).
         // T16-n1 (D28c): attribution notices and Units 1-12 mapping notes changed (unit 25 was a3d5745c...).
         // T18a-2 expectation change (owner decision D54g), old -> new: 719848de -> e8acc32b (the shared ref-u2125-attribution notice).

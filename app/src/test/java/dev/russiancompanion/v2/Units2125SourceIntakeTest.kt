@@ -31,11 +31,11 @@ class Units2125SourceIntakeTest {
     private val pages = mapOf(
         21 to "257-268",
         22 to "269-282",
-        // T18c-2 expectation change (D57e, D61): old -> new
-        // 283-293 -> 283–293 in the packaged mapping note.
-        23 to "283–293",
-        // T18d (D62): 294-304 -> 294–304 in Unit 24's learner-facing mapping note.
-        24 to "294–304",
+        // T18cd-fix (D63 correction): D61 literal matched an en-dash note; restored plain hyphen
+        // 283–293 -> 283-293.
+        23 to "283-293",
+        // T18cd-fix (D63 correction): 294–304 -> 294-304.
+        24 to "294-304",
         25 to "305-319",
     )
 
