@@ -128,3 +128,10 @@ CC029,Unit 23 learner voice,FIXED,T18c-2,,2026-11-28,Unit 23 learner voice and t
 CC036,Unit 23 binary required checks,BOUNDED_SCOPE,T18c-2,,2026-11-28,"D57c retains ten two-option checks, each recorded in audit/cc036-binary-required-checks.csv."
 WC011,Unit 23 companion directions,FIXED,T18c-2,,2026-11-28,Unit 23 has its own binder model and tutor task. The tutor task uses Lesson 23 in the owned Penguin book for completion within a period. Unit23TimeInstructionTest.
 A2-28,Unit 23 cumulative review,FIXED,T18c-2,,2026-11-28,"Unit23CumulativeReviewTest measures 8 items, 8 objectives, 8 skills, 8 earlier-unit slots, a longest repeat run of 2 and 0 excluded."
+D62a,Unit 24 unsupported Russian,FIXED,T18d,,2026-11-28,"Removed the six listed unsupported phrases and forms, their synthesis applications and 18 allowlist entries."
+D62b,Unit 24 object case after negation,FIXED,T18d,,2026-11-28,Retained the alternation objective with the original accusative closed check and a typed accusative form from G:55. The guided question uses the frozen G:55 pair.
+CC022,Unit 24 session-local check exposure,FIXED,T18d,,2026-11-28,All required checks sit in the final u24-s-checks session. Typed retrieval comes before the closed checks. Unit24NegationInstructionTest.
+CC021,Unit 24 remediation coverage,FIXED,T18d,,2026-11-28,Remediation repeats each topic’s teaching and cites frozen evidence. Unit24NegationInstructionTest.
+CC029,Unit 24 learner voice,FIXED,T18d,,2026-11-28,"D62 rewrites implementation, evidence and mastery narration. Licence attribution and learner directions remain. WidenedLearnerVoiceLintTest."
+CC036,Unit 24 binary required checks,BOUNDED_SCOPE,T18d,,2026-11-28,Five retained two-option checks have their own rows in audit/cc036-binary-required-checks.csv.
+WC011,Unit 24 companion directions,FIXED,T18d,,2026-11-28,Unit-specific binder model and tutor task support the taught forms and refer to the Penguin book for additional practice.

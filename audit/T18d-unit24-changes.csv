@@ -1,0 +1,754 @@
+task,finding,owner.field,old,new
+T18d,D62a–c,items:u24-i-alternation-2,Я не ви́жу книг.,REMOVED
+T18d,D62a–c,items:u24-i-stand-ins-2,не́кого спросить,REMOVED
+T18d,D62a–c,examples:ex-u24-alternation-0,Я не ви́жу книг.,REMOVED
+T18d,D62a–c,examples:ex-u24-stand-ins-2,не́кого спросить,REMOVED
+T18d,D62b / G:55,ex-u24-alternation-genitive,,Я не ви́жу кни́ги
+T18d,D62b / G:55,u24-g-alternation-0.promptLetter,Я не ви́жу э́ту кни́гу.,Я не ви́жу кни́ги
+T18d,D62a–d / prep 3 and 5,u24-st-teach-verbal-ne-1.body,"Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word of each reply answers yes or no. The separate negative particle before the speaking verb negates that predicate; it is not merely the initial no reply. The guided choice keeps the speaking action and changes it to a negative reply.","Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word answers yes or no. In the second reply the separate particle before the speaking verb makes it negative. Compare the affirmative and negative replies."
+T18d,D62a–d / prep 3 and 5,u24-st-teach-verbal-ne-2.body,"To negate a verb, simply add не (nye) before the verb: the shown examples illustrate this ordinary predicate-negation pattern. In a present-tense noun predicate, the verb corresponding to is is normally omitted. The negative particle can then stand before the noun predicate itself. That is a different structure from a speaking verb with a negative particle.","To negate a verb, place не before it. The present-tense copula is normally omitted in a noun predicate. The negative particle then stands before the noun predicate."
+T18d,D62a–d / prep 3 and 5,u24-st-teach-verbal-ne-3.body,"Вы говори́те? — Are you speaking? Он не студент — He's not a student. The speaking question is not itself negated. The student statement has a noun predicate and no overt present-tense is. The check asks for that negative nominal sentence, not another speaking reply.",Вы говори́те? — Are you speaking? Он не студент — He's not a student. The question is affirmative. In the student sentence the negative particle precedes the noun.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-verbal-ne-4.body,Борис не приходит — Boris isn't coming. The negative particle precedes the coming verb. This complete sentence identifies Boris as the subject and coming as the action. The options не студент and не говорю́ are shorter fragments about being a student or speaking; they do not express the complete Boris-coming sentence. These choices recognize supplied structures rather than independently constructing every negative predicate.,Борис не приходит — Boris isn't coming. The negative particle precedes the verb for coming. The shorter expressions не студент and не говорю́ are about being a student and speaking.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-absence-1.body,"есть means exists in the supplied existence pattern. нет expresses absence in its negative counterpart. The same word can also be a no reply, but that conversational use is different from the absence construction. Да is a yes reply. The separate particle не negates a predicate; it is not the standalone replacement for existence in this pattern.",есть expresses existence and нет expresses absence. Да is a yes reply. The separate particle не negates a predicate.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-absence-2.body,"If it isn't there, we use нет followed by the genitive. In this construction the person or thing whose existence or possession is denied is expressed in the genitive. Do not replace the existence word with the separate particle and leave the construction unchanged. The checks identify the supplied existence/absence forms, not independently produce a genitive noun phrase.","If it isn't there, we use нет followed by the genitive. The noun naming what is absent goes in the genitive. Review the existence and absence patterns."
+T18d,D62a–d / prep 3 and 5,u24-st-teach-absence-3.body,"не — nye in the retained example is a pronunciation/transliteration label, not an English meaning. This particle is different from нет expressing absence and from есть asserting existence. A reference cue can be shown while the question asks for a contrasting form; read whether the question asks for existence, absence or ordinary predicate negation.",In conversation нет can also mean no. The pronunciation of не is shown as nye.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-alternation-1.body,"Я не ви́жу э́ту кни́гу. — I don't see this book, singular. Я не ви́жу кни́гу — I don't see the book. Я не ви́жу книг. — I don't see any books. The first two show a singular accusative object; the last shows a genitive plural object. Negation remains in every sentence. Changing noun form does not turn the statement into a positive one.",Я не ви́жу кни́гу — I don't see the book. Я не ви́жу кни́ги — I don't see any books. Both sentences are negative. The object in the first sentence is accusative singular. In the second sentence the indefinite reading is associated with genitive.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-alternation-2.body,"A negated direct object can be genitive or accusative depending on meaning, context and usage. Indefinite reference often favors genitive, but this is not a mechanical rule that every negative sentence must use it. The older book ending in the retained source can also be genitive singular or accusative plural; it is not unambiguous genitive plural. The worked example now uses the same explicit plural-genitive phrase as the repaired check. I don't see the one book is still a singular description. I see this book and I see the books are positive descriptions and therefore do not match the negated cues. These choices distinguish supplied meanings and number, not independently choose every case under negation.",A negated direct object can be genitive or accusative. The ending in кни́ги is not unambiguous genitive plural. The specified singular object uses the form кни́гу. Genitive under negation is not a mechanical rule.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-stand-ins-1.body,"кто — никто́. что — ничто́. The first pair concerns a person and nobody; the second concerns a thing and nothing. The indefinite options не́кто and не́что refer to an unspecified person or thing, not the corresponding nobody/nothing form. Do not treat a similar-looking prefix as proof of the same meaning.",кто — никто́. что — ничто́. The first pair concerns a person and nobody. The second concerns a thing and nothing. Compare the meanings before choosing.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-stand-ins-2.body,Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.,не́кого expresses that there is nobody available for an action. This negative form belongs to a set with no nominative.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-stand-ins-3.body,"не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm. The current checks recognize the absence meaning; they do not uniquely identify genitive from the shared genitive/accusative form.",не́кто is an indefinite pronoun for an unspecified person. не́что is an indefinite pronoun for an unspecified thing.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-concord-1.body,"никто́ — не. ничто́ — не. In the supplied negative-concord pattern, the negative pronoun requires the separate negative particle in the predicate. They work together to express one overall negative statement. Do not remove the predicate particle by applying the English idea that two negatives must cancel.",никто́ — не. ничто́ — не. In these patterns the negative pronoun requires the separate particle in the predicate. They work together to express one overall negative statement. Check both parts of the sentence.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-concord-2.body,"The option ни- is a pronoun prefix, not the separate predicate particle. никому is a declined pronoun referring to nobody in the dative; it is not that particle either. The answer не is the required predicate particle in the illustrated pattern. The choices recognize this supplied concord rule; they do not test producing every negative pronoun case or all exceptional constructions.",ни- is a negative-pronoun prefix. никому is a dative form referring to nobody. The separate predicate particle is не.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-word-order-contrast-1.body,Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.,Не надо меня уговаривать. — One should not persuade me when the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me when the speaker will do it anyway.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-word-order-contrast-2.body,"Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.",Word order can change what is in focus or in the scope of a particle. Intonation and discourse context can clarify the intended reading. Use the context supplied with each example.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-word-order-contrast-3.body,"В магазин пошёл я. — It was me who went to the shop. In this supplied example the person who went is highlighted. Compare В магазин я пошёл. — To the shop—that's where I went. in the source’s destination-response context. Guided practice uses the highlighted-person example, with a different complete sentence and requested information from either independent persuasion check. The independent requirements still test both original persuasion contexts:the speaker will do it anyway, or the speaker would never agree. Subject-focus remains introductory guided evidence, not an independently demonstrated skill. Intonation and discourse context can affect readings; these examples do not establish a universal word-order switch or permission to infer present time from a past verb. The original repeated persuasion question remains optional reference practice and cannot credit or prevent the required objective.",В магазин пошёл я. — It was me who went to the shop. Here the speaker is the person in focus. В магазин я пошёл. — To the shop—that's where I went. Here the answer identifies the destination.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-placement-1.body,"Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer; the second contrasts the experiencer, so the person who is cold is not me. The second does not by itself identify that other person.",Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer. The second contrasts the experiencer and does not by itself identify that other person.
+T18d,D62a–d / prep 3 and 5,u24-st-teach-placement-2.body,"Note that the modifier не negates the word which comes right after it. In this supplied pair, its position helps distinguish the state from the experiencer. Wider sentences also depend on construction, emphasis and context; do not apply adjacency as an automatic complete interpretation of every Russian sentence. The check asks for the scope shown in this pair, not free production of every negative-focus construction.",Note that the modifier не negates the word which comes right after it. In this pair its position distinguishes the state from the experiencer. Compare the two complete sentences.
+T18d,D62c,u24-g-stand-ins-0.prompt,Which negative-pronoun form built from the shown word is not called predicative?,"Which form means ""nobody""?"
+T18d,"D62c / O:19–21, OR:51",u24-i-stand-ins-1.prompt,Which negative-pronoun form built from the shown word is not called predicative?,"Which form means ""nothing""?"
+T18d,A2-24 / O:97,u24-i-concord-1.prompt,Which particle does the stated concord rule require in the predicate?,Which separate particle goes before the verb with this negative pronoun?
+T18d,A2-24 / O:97,u24-i-concord-2.prompt,Which predicate particle does negative concord require?,Which separate particle goes before the verb with this negative pronoun?
+T18d,A2-24 / prep 5,u24-g-placement-0.prompt,Which admitted English meaning matches the shown sentence?,Which English meaning matches the sentence?
+T18d,A2-24 / prep 5,u24-i-placement-1.prompt,Which admitted English meaning matches the shown sentence?,Which English meaning matches the sentence?
+T18d,A2-24 / prep 5,u24-i-placement-2.prompt,Which admitted English meaning matches the shown sentence?,Which English meaning matches the sentence?
+T18d,D62d / prep 3 and 5,u24-g-verbal-ne-0.feedback,"The frozen example No, I'm not speaking adds the particle before the speaking reply.
+Да, говорю́ is the reference cue; Нет, не говорю́ matches the requested meaning or structure. a negative first-person speaking reply.","Нет, не говорю́ — a negative first-person reply, with the particle before the speaking verb."
+T18d,D62d / prep 3 and 5,u24-g-verbal-ne-0.distractorRationales,"['', ""Он не студент: a negative noun predicate with an omitted present copula. This differs from the meaning or structure requested in this context. The frozen example He's not a student is omitted in the present form, so the particle stands on its own."", 'Вы говори́те?: a speaking question without negation. This differs from the meaning or structure requested in this context. The frozen example Are you speaking? is the question before the reply.']","['', 'Он не студент — a negative noun predicate with the present copula omitted. Compare the two sentence structures.', 'Вы говори́те? — an affirmative question about speaking.']"
+T18d,D62d / prep 3 and 5,u24-i-verbal-ne-1.feedback,"The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
+Вы говори́те? is the reference cue; Он не студент matches the requested meaning or structure. a negative noun predicate with an omitted present copula.",Он не студент — a negative noun predicate with the present copula omitted. Compare the two sentence structures.
+T18d,D62d / prep 3 and 5,u24-i-verbal-ne-1.distractorRationales,"['', ""Нет, не говорю́: a negative first-person speaking reply. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking adds the particle before the speaking word."", ""Да, говорю́: an affirmative speaking reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking is the agreeing reply, without the particle.""]","['', 'Нет, не говорю́ — a negative first-person reply, with the particle before the speaking verb.', 'Да, говорю́ — an affirmative first-person reply.']"
+T18d,D62d / prep 3 and 5,u24-i-verbal-ne-2.feedback,"The frozen example Boris isn't coming places the particle before the coming word.
+Нет, не говорю́ is the reference cue; Борис не приходит matches the requested meaning or structure. a complete negative sentence about Boris coming.",Борис не приходит — the full sentence saying Boris is not coming.
+T18d,D62d / prep 3 and 5,u24-i-verbal-ne-2.distractorRationales,"['', ""не студент: a negative student-predicate fragment. This differs from the meaning or structure requested in this context. The frozen example He's not a student uses the particle on its own because the present form is omitted."", ""не говорю́: a negative first-person speaking fragment. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.""]","['', 'не студент — a negative noun predicate about a student.', 'не говорю́ — a negative form of the speaking verb.']"
+T18d,D62d / prep 3 and 5,u24-g-absence-0.feedback,"The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
+есть is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.",нет — absence in the existence pattern.
+T18d,D62d / prep 3 and 5,u24-g-absence-0.distractorRationales,"['', 'не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the replacement for the exists word.', ""Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.""]","['', 'не — the separate negative particle in the predicate.', 'Да — an affirmative reply.']"
+T18d,D62d / prep 3 and 5,u24-i-absence-1.feedback,"The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
+нет is the reference cue; есть matches the requested meaning or structure. existence in the positive pattern.",есть — existence in the affirmative pattern.
+T18d,D62d / prep 3 and 5,u24-i-absence-1.distractorRationales,"['', 'не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the form that means exists.', ""Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply.""]","['', 'не — the separate negative particle in the predicate.', 'Да — an affirmative reply.']"
+T18d,D62d / prep 3 and 5,u24-i-absence-2.feedback,"The frozen note says this replacement has a different meaning from the reply that means no.
+не is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.",нет — absence in the existence pattern.
+T18d,D62d / prep 3 and 5,u24-i-absence-2.distractorRationales,"['', ""есть: existence in the positive pattern. This differs from the meaning or structure requested in this context. The frozen note uses this form to mean 'exists' before replacing it."", ""Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply.""]","['', 'есть — existence in the affirmative pattern.', 'Да — an affirmative reply.']"
+T18d,D62d / prep 3 and 5,u24-g-alternation-0.feedback,"The frozen source pairs the shown form ""Я не ви́жу кни́гу"" with the admitted gloss ""I don't see the book"" (""I don't see the book"").
+Я не ви́жу кни́гу is the reference cue; I don't see the book matches the requested meaning or structure. the supplied singular accusative reading.",I don't see any books — an indefinite reading of the genitive example.
+T18d,D62d / prep 3 and 5,u24-g-alternation-0.distractorRationales,"['', ""I don't see any books is the supplied plural reading, illustrated here by Я не ви́жу книг. It differs from the singular-object reading requested by this cue.""]","['', ""I don't see the book — the singular accusative reading.""]"
+T18d,D62d / prep 3 and 5,u24-i-alternation-1.feedback,"The frozen source pairs the shown form ""Я не ви́жу кни́гу"" with the admitted gloss ""I don't see the book"" (""I don't see the book"").
+Я не ви́жу кни́гу is the reference cue; I don't see the book matches the requested meaning or structure. the supplied singular accusative reading.",I don't see the book — the singular accusative reading.
+T18d,D62d / prep 3 and 5,u24-i-alternation-1.distractorRationales,"['', ""I don't see any books is the supplied plural reading, illustrated here by Я не ви́жу книг. It differs from the singular-object reading requested by this cue.""]","['', ""I don't see any books — an indefinite reading of the genitive example.""]"
+T18d,D62d / prep 3 and 5,u24-g-stand-ins-0.feedback,"The frozen source pairs the shown form ""кто"" with the admitted gloss ""никто́"" (""Отрицательные местоимения"").
+кто is the reference cue; никто́ matches the requested meaning or structure. a negative pronoun referring to nobody.",никто́ — the negative pronoun meaning nobody.
+T18d,D62d / prep 3 and 5,u24-g-stand-ins-0.distractorRationales,"['', 'ничто́: a negative pronoun referring to nothing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""что"" with the admitted gloss ""ничто́"" (""Отрицательные местоимения"").', 'не́кто: an indefinite pronoun referring to an unspecified person. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""кто"" with the admitted gloss ""не́кто"" (""называются предикативными"").']","['', 'ничто́ — the negative pronoun meaning nothing.', 'не́кто — the indefinite pronoun for an unspecified person.']"
+T18d,D62d / prep 3 and 5,u24-i-stand-ins-1.feedback,"The frozen source pairs the shown form ""что"" with the admitted gloss ""ничто́"" (""Отрицательные местоимения"").
+что is the reference cue; ничто́ matches the requested meaning or structure. a negative pronoun referring to nothing.",ничто́ — the negative pronoun meaning nothing.
+T18d,D62d / prep 3 and 5,u24-i-stand-ins-1.distractorRationales,"['', 'не́что: an indefinite pronoun referring to an unspecified thing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""что"" with the admitted gloss ""не́что"" (""называются предикативными"").', 'никто́: a negative pronoun referring to nobody. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""кто"" with the admitted gloss ""никто́"" (""Отрицательные местоимения"").']","['', 'не́что — the indefinite pronoun for an unspecified thing.', 'никто́ — the negative pronoun meaning nobody.']"
+T18d,D62d / prep 3 and 5,u24-g-concord-0.feedback,"The frozen source pairs the shown form ""никто́"" with the admitted gloss ""не"" (""отрицательной частицы не"").
+никто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.",не — the separate negative particle in the predicate.
+T18d,D62d / prep 3 and 5,u24-g-concord-0.distractorRationales,"['', 'ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""никто́"" with the admitted gloss ""ни-"" (""Основным правилом"").', 'никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""никто́"" with the admitted gloss ""никому"" (""Основным правилом"").']","['', 'ни- — a negative-pronoun prefix.', 'никому — a dative negative pronoun meaning to nobody.']"
+T18d,D62d / prep 3 and 5,u24-i-concord-1.feedback,"The frozen source pairs the shown form ""ничто́"" with the admitted gloss ""не"" (""отрицательной частицы не"").
+ничто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.",не — the separate negative particle in the predicate.
+T18d,D62d / prep 3 and 5,u24-i-concord-1.distractorRationales,"['', 'ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""никто́"" with the admitted gloss ""ни-"" (""Основным правилом"").', 'никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""никто́"" with the admitted gloss ""никому"" (""Основным правилом"").']","['', 'ни- — a negative-pronoun prefix.', 'никому — a dative negative pronoun meaning to nobody.']"
+T18d,D62d / prep 3 and 5,u24-i-concord-2.feedback,"The frozen source pairs the shown form ""никто́"" with the admitted gloss ""не"" (""отрицательной частицы не"").
+никто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.",не — the separate negative particle in the predicate.
+T18d,D62d / prep 3 and 5,u24-i-concord-2.distractorRationales,"['', 'никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""никто́"" with the admitted gloss ""никому"" (""Основным правилом"").', 'ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""никто́"" with the admitted gloss ""ни-"" (""Основным правилом"").']","['', 'никому — a dative negative pronoun meaning to nobody.', 'ни- — a negative-pronoun prefix.']"
+T18d,D62d / prep 3 and 5,u24-g-word-order-contrast-0.feedback,"The frozen source pairs the shown form ""Не надо меня уговаривать."" with the admitted gloss ""One should not persuade me"" (""as I would never agree to do something"").
+Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.",One should not persuade me — the speaker would never agree.
+T18d,D62d / prep 3 and 5,u24-g-word-order-contrast-0.distractorRationales,"['', 'There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""Меня не надо уговаривать."" with the admitted gloss ""There is no need to persuade me"" (""as I will do it anyway"").']","['', 'There is no need to persuade me — the speaker will do it anyway.']"
+T18d,D62d / prep 3 and 5,u24-i-word-order-contrast-1.feedback,"The frozen source pairs the shown form ""Меня не надо уговаривать."" with the admitted gloss ""There is no need to persuade me"" (""as I will do it anyway"").
+Меня не надо уговаривать. is the reference cue; There is no need to persuade me matches the requested meaning or structure. the supplied interpretation where the speaker will do it anyway.",There is no need to persuade me — the speaker will do it anyway.
+T18d,D62d / prep 3 and 5,u24-i-word-order-contrast-1.distractorRationales,"['', 'One should not persuade me: the supplied interpretation where the speaker would never agree. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""Не надо меня уговаривать."" with the admitted gloss ""One should not persuade me"" (""as I would never agree to do something"").']","['', 'One should not persuade me — the speaker would never agree.']"
+T18d,D62d / prep 3 and 5,u24-i-word-order-contrast-2.feedback,"The frozen source pairs the shown form ""Не надо меня уговаривать."" with the admitted gloss ""One should not persuade me"" (""as I would never agree to do something"").
+Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.",One should not persuade me — the speaker would never agree.
+T18d,D62d / prep 3 and 5,u24-i-word-order-contrast-2.distractorRationales,"['', 'There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""Меня не надо уговаривать."" with the admitted gloss ""There is no need to persuade me"" (""as I will do it anyway"").']","['', 'There is no need to persuade me — the speaker will do it anyway.']"
+T18d,D62d / prep 3 and 5,u24-g-placement-0.feedback,"The frozen source pairs the shown form ""Мне не холодно."" with the admitted gloss ""To me it is not cold."".
+Мне не холодно. is the reference cue; To me it is not cold. matches the requested meaning or structure. negation of the cold state for the experiencer.",To me it is not cold. — negation of the cold state for the experiencer.
+T18d,D62d / prep 3 and 5,u24-g-placement-0.distractorRationales,"['', 'It is not to me that it is cold.: contrastive negation of the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""Не мне холодно."" with the admitted gloss ""It is not to me that it is cold."". Moving the modifier in front of a different word produces that meaning.']","['', 'It is not to me that it is cold. — the experiencer is contrasted.']"
+T18d,D62d / prep 3 and 5,u24-i-placement-1.feedback,"The frozen source pairs the shown form ""Не мне холодно."" with the admitted gloss ""It is not to me that it is cold."".
+Не мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.",It is not to me that it is cold. — the experiencer is contrasted.
+T18d,D62d / prep 3 and 5,u24-i-placement-1.distractorRationales,"['', 'To me it is not cold.: negation of the cold state for the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""Мне не холодно."" with the admitted gloss ""To me it is not cold."". That placement negates the following word.']","['', 'To me it is not cold. — negation of the cold state for the experiencer.']"
+T18d,D62d / prep 3 and 5,u24-i-placement-2.feedback,"The frozen source pairs the shown form ""Не мне холодно."" with the admitted gloss ""It is not to me that it is cold."".
+Не мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.",It is not to me that it is cold. — the experiencer is contrasted.
+T18d,D62d / prep 3 and 5,u24-i-placement-2.distractorRationales,"['', 'I am not cold.: negation of the cold state for the speaker. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form ""Мне не холодно."" with the admitted gloss ""I am not cold."". That parenthetical belongs to the other placement.']","['', 'I am not cold. — negation of the cold state for the speaker.']"
+T18d,D62d / prep 3 and 5,u24-g-context-subject-focus.feedback,"В магазин пошёл я. has the supplied subject-focus interpretation It was me who went to the shop. The context highlights the speaker as the person who went. This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.",It was me who went to the shop. — the speaker is the person in focus.
+T18d,D62d / prep 3 and 5,u24-g-context-subject-focus.distractorRationales,"['', ""To the shop—that's where I went. is the source’s destination-focus interpretation for В магазин я пошёл. in its supplied response context, rather than the highlighted-person reading requested here.""]","['', ""To the shop—that's where I went. — the reply identifies the destination.""]"
+T18d,D62e / OR:4,u24-i-type-predicate-ne,,не
+T18d,D62e / OR:41,u24-i-type-absence-net,,нет
+T18d,D62e / OR:4992,u24-i-type-existence-est,,есть
+T18d,D62e / G:55,u24-i-type-book-accusative,,кни́гу
+T18d,D62e / O:16,u24-i-type-nobody,,никто́
+T18d,D62e / O:20,u24-i-type-nothing,,ничто́
+T18d,D62e / O:55,u24-i-type-nobody-available,,не́кого
+T18d,D62e / O:17,u24-i-type-someone,,не́кто
+T18d,A2-24 / D62,u24-st-check-verbal-ne.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.",Read the context and choose the matching answer.
+T18d,A2-24,u24-st-check-verbal-ne,u24-s-verbal-ne,u24-s-checks
+T18d,D62e / A2-24,u24-st-check-type-verbal-ne,,u24-i-type-predicate-ne
+T18d,A2-24 / D62,u24-st-check-absence.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.",Read the context and choose the matching answer.
+T18d,A2-24,u24-st-check-absence,u24-s-absence,u24-s-checks
+T18d,D62e / A2-24,u24-st-check-type-absence,,"u24-i-type-absence-net, u24-i-type-existence-est"
+T18d,A2-24 / D62,u24-st-check-alternation.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.",Read the context and choose the matching answer.
+T18d,A2-24,u24-st-check-alternation,u24-s-alternation,u24-s-checks
+T18d,D62e / A2-24,u24-st-check-type-alternation,,u24-i-type-book-accusative
+T18d,A2-24 / D62,u24-st-check-stand-ins.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.",Read the context and choose the matching answer.
+T18d,A2-24,u24-st-check-stand-ins,u24-s-stand-ins,u24-s-checks
+T18d,D62e / A2-24,u24-st-check-type-stand-ins,,"u24-i-type-nobody, u24-i-type-nothing, u24-i-type-nobody-available, u24-i-type-someone"
+T18d,A2-24 / D62,u24-st-check-concord.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.",Read the context and choose the matching answer.
+T18d,A2-24,u24-st-check-concord,u24-s-concord,u24-s-checks
+T18d,A2-24 / D62,u24-st-check-word-order-contrast.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.",Read the context and choose the matching answer.
+T18d,A2-24,u24-st-check-word-order-contrast,u24-s-word-order-contrast,u24-s-checks
+T18d,A2-24 / D62,u24-st-check-placement.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.",Read the context and choose the matching answer.
+T18d,A2-24,u24-st-check-placement,u24-s-placement,u24-s-checks
+T18d,D62e / prep 5,u24-st-guided-verbal-ne-1.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.","Read the examples, then cover them and write the forms from their meanings. Read the context and choose the matching answer."
+T18d,CC021 / D62,u24-st-rem-verbal-ne.body,"Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word of each reply answers yes or no. The separate negative particle before the speaking verb negates that predicate; it is not merely the initial no reply. The guided choice keeps the speaking action and changes it to a negative reply.
+
+To negate a verb, simply add не (nye) before the verb: the shown examples illustrate this ordinary predicate-negation pattern. In a present-tense noun predicate, the verb corresponding to is is normally omitted. The negative particle can then stand before the noun predicate itself. That is a different structure from a speaking verb with a negative particle.
+
+Вы говори́те? — Are you speaking? Он не студент — He's not a student. The speaking question is not itself negated. The student statement has a noun predicate and no overt present-tense is. The check asks for that negative nominal sentence, not another speaking reply.
+
+Борис не приходит — Boris isn't coming. The negative particle precedes the coming verb. This complete sentence identifies Boris as the subject and coming as the action. The options не студент and не говорю́ are shorter fragments about being a student or speaking; they do not express the complete Boris-coming sentence. These choices recognize supplied structures rather than independently constructing every negative predicate.","Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word answers yes or no. In the second reply the separate particle before the speaking verb makes it negative. Compare the affirmative and negative replies.
+
+To negate a verb, place не before it. The present-tense copula is normally omitted in a noun predicate. The negative particle then stands before the noun predicate.
+
+Вы говори́те? — Are you speaking? Он не студент — He's not a student. The question is affirmative. In the student sentence the negative particle precedes the noun.
+
+Борис не приходит — Boris isn't coming. The negative particle precedes the verb for coming. The shorter expressions не студент and не говорю́ are about being a student and speaking."
+T18d,D62e / prep 5,u24-st-guided-absence-1.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.","Read the examples, then cover them and write the forms from their meanings. Read the context and choose the matching answer."
+T18d,CC021 / D62,u24-st-rem-absence.body,"есть means exists in the supplied existence pattern. нет expresses absence in its negative counterpart. The same word can also be a no reply, but that conversational use is different from the absence construction. Да is a yes reply. The separate particle не negates a predicate; it is not the standalone replacement for existence in this pattern.
+
+If it isn't there, we use нет followed by the genitive. In this construction the person or thing whose existence or possession is denied is expressed in the genitive. Do not replace the existence word with the separate particle and leave the construction unchanged. The checks identify the supplied existence/absence forms, not independently produce a genitive noun phrase.
+
+не — nye in the retained example is a pronunciation/transliteration label, not an English meaning. This particle is different from нет expressing absence and from есть asserting existence. A reference cue can be shown while the question asks for a contrasting form; read whether the question asks for existence, absence or ordinary predicate negation.","есть expresses existence and нет expresses absence. Да is a yes reply. The separate particle не negates a predicate.
+
+If it isn't there, we use нет followed by the genitive. The noun naming what is absent goes in the genitive. Review the existence and absence patterns.
+
+In conversation нет can also mean no. The pronunciation of не is shown as nye."
+T18d,D62e / prep 5,u24-st-guided-alternation-1.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.","Read the examples, then cover them and write the forms from their meanings. Read the context and choose the matching answer."
+T18d,CC021 / D62,u24-st-rem-alternation.body,"Я не ви́жу э́ту кни́гу. — I don't see this book, singular. Я не ви́жу кни́гу — I don't see the book. Я не ви́жу книг. — I don't see any books. The first two show a singular accusative object; the last shows a genitive plural object. Negation remains in every sentence. Changing noun form does not turn the statement into a positive one.
+
+A negated direct object can be genitive or accusative depending on meaning, context and usage. Indefinite reference often favors genitive, but this is not a mechanical rule that every negative sentence must use it. The older book ending in the retained source can also be genitive singular or accusative plural; it is not unambiguous genitive plural. The worked example now uses the same explicit plural-genitive phrase as the repaired check. I don't see the one book is still a singular description. I see this book and I see the books are positive descriptions and therefore do not match the negated cues. These choices distinguish supplied meanings and number, not independently choose every case under negation.","Я не ви́жу кни́гу — I don't see the book. Я не ви́жу кни́ги — I don't see any books. Both sentences are negative. The object in the first sentence is accusative singular. In the second sentence the indefinite reading is associated with genitive.
+
+A negated direct object can be genitive or accusative. The ending in кни́ги is not unambiguous genitive plural. The specified singular object uses the form кни́гу. Genitive under negation is not a mechanical rule."
+T18d,D62e / prep 5,u24-st-guided-stand-ins-1.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.","Read the examples, then cover them and write the forms from their meanings. Read the context and choose the matching answer."
+T18d,CC021 / D62,u24-st-rem-stand-ins.body,"кто — никто́. что — ничто́. The first pair concerns a person and nobody; the second concerns a thing and nothing. The indefinite options не́кто and не́что refer to an unspecified person or thing, not the corresponding nobody/nothing form. Do not treat a similar-looking prefix as proof of the same meaning.
+
+Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.
+
+не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm. The current checks recognize the absence meaning; they do not uniquely identify genitive from the shared genitive/accusative form.","кто — никто́. что — ничто́. The first pair concerns a person and nobody. The second concerns a thing and nothing. Compare the meanings before choosing.
+
+не́кого expresses that there is nobody available for an action. This negative form belongs to a set with no nominative.
+
+не́кто is an indefinite pronoun for an unspecified person. не́что is an indefinite pronoun for an unspecified thing."
+T18d,D62e / prep 5,u24-st-guided-concord-1.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.",Read the context and choose the matching answer.
+T18d,CC021 / D62,u24-st-rem-concord.body,"никто́ — не. ничто́ — не. In the supplied negative-concord pattern, the negative pronoun requires the separate negative particle in the predicate. They work together to express one overall negative statement. Do not remove the predicate particle by applying the English idea that two negatives must cancel.
+
+The option ни- is a pronoun prefix, not the separate predicate particle. никому is a declined pronoun referring to nobody in the dative; it is not that particle either. The answer не is the required predicate particle in the illustrated pattern. The choices recognize this supplied concord rule; they do not test producing every negative pronoun case or all exceptional constructions.","никто́ — не. ничто́ — не. In these patterns the negative pronoun requires the separate particle in the predicate. They work together to express one overall negative statement. Check both parts of the sentence.
+
+ни- is a negative-pronoun prefix. никому is a dative form referring to nobody. The separate predicate particle is не."
+T18d,D62e / prep 5,u24-st-guided-word-order-contrast-1.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.",Read the context and choose the matching answer.
+T18d,CC021 / D62,u24-st-rem-word-order-contrast.body,"Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
+
+Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.
+
+В магазин пошёл я. — It was me who went to the shop. In this supplied example the person who went is highlighted. Compare В магазин я пошёл. — To the shop—that's where I went. in the source’s destination-response context. Guided practice uses the highlighted-person example, with a different complete sentence and requested information from either independent persuasion check. The independent requirements still test both original persuasion contexts:the speaker will do it anyway, or the speaker would never agree. Subject-focus remains introductory guided evidence, not an independently demonstrated skill. Intonation and discourse context can affect readings; these examples do not establish a universal word-order switch or permission to infer present time from a past verb. The original repeated persuasion question remains optional reference practice and cannot credit or prevent the required objective.","Не надо меня уговаривать. — One should not persuade me when the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me when the speaker will do it anyway.
+
+Word order can change what is in focus or in the scope of a particle. Intonation and discourse context can clarify the intended reading. Use the context supplied with each example.
+
+В магазин пошёл я. — It was me who went to the shop. Here the speaker is the person in focus. В магазин я пошёл. — To the shop—that's where I went. Here the answer identifies the destination."
+T18d,D62e / prep 5,u24-st-guided-placement-1.body,"Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.",Read the context and choose the matching answer.
+T18d,CC021 / D62,u24-st-rem-placement.body,"Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer; the second contrasts the experiencer, so the person who is cold is not me. The second does not by itself identify that other person.
+
+Note that the modifier не negates the word which comes right after it. In this supplied pair, its position helps distinguish the state from the experiencer. Wider sentences also depend on construction, emphasis and context; do not apply adjacency as an automatic complete interpretation of every Russian sentence. The check asks for the scope shown in this pair, not free production of every negative-focus construction.","Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer. The second contrasts the experiencer and does not by itself identify that other person.
+
+Note that the modifier не negates the word which comes right after it. In this pair its position distinguishes the state from the experiencer. Compare the two complete sentences."
+T18d,D62 / prep 5,unit-24.topicSummary,"Proposed Unit 24 is in development. Admitted negation lines, the book compare, the prefix table, a bounded word-order contrast, and the admitted ReadyRussian placement contrast await qualified review. It is not installed and the owned-edition mapping is not signed.","Study how Russian expresses negation, absence, and contrast."
+T18d,D62 / prep 5,unit-24.mappingNote,"Proposed Lesson 24, printed pages 294-304. Independently stated topic scope: Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.","Lesson 24 in your book, printed pages 294–304, covers negation, case and the position of не."
+T18d,D62 / prep 5,u24-s-orient.title,Admitted negation lines,Negation
+T18d,D62 / prep 5,u24-st-orient.title,Admitted negation lines,Negation
+T18d,D62 / prep 5,u24-st-orient.body,"Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, a bounded word-order contrast, and the admitted ReadyRussian placement contrast. Qualified review is pending.","Read the examples, practise writing the forms, and do Lesson 24 in your book."
+T18d,D62 / prep 5,u24-st-book-work.bookDirection,"Owned-book assignment for Lesson 24: printed pages 294-304. PDF indexes 306-316 are file locators, not printed pages. Observed section locators: §24.1 p294 (PDF 306); §24.2 p294 (PDF 306); §24.3 p296 (PDF 308); §24.4 p296 (PDF 308); §24.5 p297 (PDF 309); §24.6 p298 (PDF 310); §24.7 p299 (PDF 311); §24.8 p299 (PDF 311); §24.9 p301 (PDF 313); §24.10 p302 (PDF 314). Observed exercise locators: 24/1 p297/PDF309; 24/2 p297/PDF309; 24/4 p299/PDF311; 24/5 p300/PDF312; 24/6 p303/PDF315. Do the work in the copy you own.","Do Lesson 24, printed pages 294–304, in the copy you own."
+T18d,D62 / prep 5,u24-st-book.bookDirection,"Owned-book assignment for Lesson 24: printed pages 294-304. PDF indexes 306-316 are file locators, not printed pages. Observed section locators: §24.1 p294 (PDF 306); §24.2 p294 (PDF 306); §24.3 p296 (PDF 308); §24.4 p296 (PDF 308); §24.5 p297 (PDF 309); §24.6 p298 (PDF 310); §24.7 p299 (PDF 311); §24.8 p299 (PDF 311); §24.9 p301 (PDF 313); §24.10 p302 (PDF 314). Observed exercise locators: 24/1 p297/PDF309; 24/2 p297/PDF309; 24/4 p299/PDF311; 24/5 p300/PDF312; 24/6 p303/PDF315. Do the work in the copy you own.","Do Lesson 24, printed pages 294–304, in the copy you own."
+T18d,WC011,u24-st-binder-direction.body,Write one form from this unit that you missed and the correction you will use.,"Write the forms in your binder, then compare them with the model answer."
+T18d,WC011,u24-st-tutor-direction.body,Tutor work for this unit is optional.,Bring your binder work to your tutor if you have one.
+T18d,D62 / prep 5,u24-st-cumulative-direction.body,Review completed objectives from earlier units. Open the offline grammar reference for this unit when one is linked.,Complete your assigned review of earlier lessons before moving on.
+T18d,D62 / prep 5,review-introduction-24.introduction,"Review earlier printed letter pairs from Unit 1 and the supplied time expressions from Unit 23. After a miss, read the explanations and examples again, then answer the assigned check. Answer every review check before continuing. Practise unfamiliar reading, forming time expressions, speaking and writing separately.","Review earlier letter pairs and time expressions. After a miss, read the explanation and examples again, then retry. Finish the assigned review before moving on."
+T18d,WC011,binder-u24-negation.prompt,,"Write the Russian forms from their meanings, then compare them with the model answer."
+T18d,WC011,binder-u24-negation.modelAnswer,,"не — the separate particle that negates a verb
+нет — the word for absence in the existence pattern
+есть — the word meaning there is or there are
+кни́гу — the accusative singular of book
+никто́ — the negative pronoun meaning nobody
+ничто́ — the negative pronoun meaning nothing
+не́кого — the form meaning there is nobody available for an action
+не́кто — the indefinite pronoun meaning an unspecified person"
+T18d,WC011,tutor-u24-negation.bring,,"Bring your binder forms to read aloud. With your tutor, use Lesson 24 in your Penguin book to practise when negation affects object case and how to use forms for the absence of a person."
+T18d,D62 / shared source notice affects Units 21–25,ref-u2125-attribution.detail,"Wikibooks excerpts are pinned by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not included. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Unit 21 reflexive-object sentences come from English Wikipedia Reflexive pronoun oldid 1374712982 under that same route. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is pinned at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not included. Unit 23 time expressions are pinned Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. The documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note come from Russian Wikipedia personal-name page oldid 154915954, under the Russian Wikipedia copyrights page oldid 154562152. The Unit 24 word-order pair comes from English Wikipedia Russian grammar oldid 1369617627. The statement that the modifier negates the following word, and that page's two-sentence contrast, come from ReadyRussian Language Generator 3 under the ReadyRussian CC BY-SA 4.0 route. The course records in these units are a separate licensed set and do not copy the book.","Wikibooks excerpts are pinned by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not included. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Unit 21 reflexive-object sentences come from English Wikipedia Reflexive pronoun oldid 1374712982 under that same route. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is pinned at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not included. Unit 23 time expressions are pinned Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. The documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note come from Russian Wikipedia personal-name page oldid 154915954, under the Russian Wikipedia copyrights page oldid 154562152. The Unit 24 word-order pair comes from English Wikipedia Russian grammar oldid 1369617627. The statement that the modifier negates the following word, and that page's two-sentence contrast, come from ReadyRussian Language Generator 3 under the ReadyRussian CC BY-SA 4.0 route. The course records in these units are a separate licensed set and do not copy the book."
+T18d,A2-36,ref-u24-particle.title,,The negative particle and absence
+T18d,A2-36,ref-u24-particle.summary,,The negative particle and absence in Russian.
+T18d,A2-36,ref-u24-particle.detail,,"Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word answers yes or no. In the second reply the separate particle before the speaking verb makes it negative. Compare the affirmative and negative replies.
+
+To negate a verb, place не before it. The present-tense copula is normally omitted in a noun predicate. The negative particle then stands before the noun predicate.
+
+Вы говори́те? — Are you speaking? Он не студент — He's not a student. The question is affirmative. In the student sentence the negative particle precedes the noun.
+
+Борис не приходит — Boris isn't coming. The negative particle precedes the verb for coming. The shorter expressions не студент and не говорю́ are about being a student and speaking.
+
+есть expresses existence and нет expresses absence. Да is a yes reply. The separate particle не negates a predicate.
+
+If it isn't there, we use нет followed by the genitive. The noun naming what is absent goes in the genitive. Review the existence and absence patterns.
+
+In conversation нет can also mean no. The pronunciation of не is shown as nye.
+
+Я не ви́жу кни́гу — I don't see the book. Я не ви́жу кни́ги — I don't see any books. Both sentences are negative. The object in the first sentence is accusative singular. In the second sentence the indefinite reading is associated with genitive.
+
+A negated direct object can be genitive or accusative. The ending in кни́ги is not unambiguous genitive plural. The specified singular object uses the form кни́гу. Genitive under negation is not a mechanical rule."
+T18d,A2-36,ref-u24-pronouns.title,,Negative pronouns and predicate negation
+T18d,A2-36,ref-u24-pronouns.summary,,Negative pronouns and predicate negation in Russian.
+T18d,A2-36,ref-u24-pronouns.detail,,"кто — никто́. что — ничто́. The first pair concerns a person and nobody. The second concerns a thing and nothing. Compare the meanings before choosing.
+
+не́кого expresses that there is nobody available for an action. This negative form belongs to a set with no nominative.
+
+не́кто is an indefinite pronoun for an unspecified person. не́что is an indefinite pronoun for an unspecified thing.
+
+никто́ — не. ничто́ — не. In these patterns the negative pronoun requires the separate particle in the predicate. They work together to express one overall negative statement. Check both parts of the sentence.
+
+ни- is a negative-pronoun prefix. никому is a dative form referring to nobody. The separate predicate particle is не."
+T18d,A2-36,ref-u24-scope.title,,Negation and context
+T18d,A2-36,ref-u24-scope.summary,,Negation and context in Russian.
+T18d,A2-36,ref-u24-scope.detail,,"Не надо меня уговаривать. — One should not persuade me when the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me when the speaker will do it anyway.
+
+Word order can change what is in focus or in the scope of a particle. Intonation and discourse context can clarify the intended reading. Use the context supplied with each example.
+
+В магазин пошёл я. — It was me who went to the shop. Here the speaker is the person in focus. В магазин я пошёл. — To the shop—that's where I went. Here the answer identifies the destination.
+
+Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer. The second contrasts the experiencer and does not by itself identify that other person.
+
+Note that the modifier не negates the word which comes right after it. In this pair its position distinguishes the state from the experiencer. Compare the two complete sentences."
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[0],"Да, говорю́ — Yes, I'm speaking.","prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[1],"Нет, не говорю́ — No, I'm not speaking.","prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[2],The first word answers yes or no.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[3],In the second reply the separate particle before the speaking verb makes it negative.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[4],"To negate a verb, place не before it.","prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[5],The present-tense copula is normally omitted in a noun predicate.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[6],The negative particle then stands before the noun predicate.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[7],Вы говори́те?,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[8],— Are you speaking?,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[9],Он не студент — He's not a student.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[10],The question is affirmative.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[11],In the student sentence the negative particle precedes the noun.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[12],Борис не приходит — Boris isn't coming.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[13],The negative particle precedes the verb for coming.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented"
+T18d,D62d / MARK,u24-st-rem-verbal-ne.russianFacts[14],The shorter expressions не студент and не говорю́ are about being a student and speaking.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-g-verbal-ne-0.russianFacts[0],"Нет, не говорю́ — a negative first-person reply, with the particle before the speaking verb.","prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-g-verbal-ne-0.russianFacts[1],Он не студент — a negative noun predicate with the present copula omitted.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-g-verbal-ne-0.russianFacts[2],Вы говори́те?,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-g-verbal-ne-0.russianFacts[3],— an affirmative question about speaking.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented"
+T18d,D62d / MARK,u24-i-verbal-ne-1.russianFacts[0],Он не студент — a negative noun predicate with the present copula omitted.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-i-verbal-ne-1.russianFacts[1],"Нет, не говорю́ — a negative first-person reply, with the particle before the speaking verb.","prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-i-verbal-ne-1.russianFacts[2],"Да, говорю́ — an affirmative first-person reply.","prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-i-verbal-ne-2.russianFacts[0],Борис не приходит — the full sentence saying Boris is not coming.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-i-verbal-ne-2.russianFacts[1],не студент — a negative noun predicate about a student.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-i-verbal-ne-2.russianFacts[2],не говорю́ — a negative form of the speaking verb.,"prov-u24-verbal-ne-rem, prov-t18d-u24-or4-accented, prov-ex-u24-verbal-ne-0-ru"
+T18d,D62d / MARK,u24-st-rem-absence.russianFacts[0],есть expresses existence and нет expresses absence.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-st-rem-absence.russianFacts[1],Да is a yes reply.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-st-rem-absence.russianFacts[2],The separate particle не negates a predicate.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-st-rem-absence.russianFacts[3],"If it isn't there, we use нет followed by the genitive.","prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-st-rem-absence.russianFacts[4],The noun naming what is absent goes in the genitive.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented"
+T18d,D62d / MARK,u24-st-rem-absence.russianFacts[5],In conversation нет can also mean no.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-st-rem-absence.russianFacts[6],The pronunciation of не is shown as nye.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-g-absence-0.russianFacts[0],нет — absence in the existence pattern.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-g-absence-0.russianFacts[1],не — the separate negative particle in the predicate.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-g-absence-0.russianFacts[2],Да — an affirmative reply.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-i-absence-1.russianFacts[0],есть — existence in the affirmative pattern.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-i-absence-1.russianFacts[1],не — the separate negative particle in the predicate.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-i-absence-1.russianFacts[2],Да — an affirmative reply.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-i-absence-2.russianFacts[0],нет — absence in the existence pattern.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-i-absence-2.russianFacts[1],есть — existence in the affirmative pattern.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-i-absence-2.russianFacts[2],Да — an affirmative reply.,"prov-u24-verbal-ne-rem, prov-u24-absence-rem, prov-t18d-u24-or41-accented, prov-t18d-u24-or4992-accented, prov-ex-u24-absence-0-ru"
+T18d,D62d / MARK,u24-st-rem-alternation.russianFacts[0],Я не ви́жу кни́гу — I don't see the book.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative, prov-ex-u24-alternation-0-ru"
+T18d,D62d / MARK,u24-st-rem-alternation.russianFacts[1],Я не ви́жу кни́ги — I don't see any books.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative, prov-ex-u24-alternation-0-ru"
+T18d,D62d / MARK,u24-st-rem-alternation.russianFacts[2],Both sentences are negative.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative"
+T18d,D62d / MARK,u24-st-rem-alternation.russianFacts[3],The object in the first sentence is accusative singular.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative"
+T18d,D62d / MARK,u24-st-rem-alternation.russianFacts[4],In the second sentence the indefinite reading is associated with genitive.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative"
+T18d,D62d / MARK,u24-st-rem-alternation.russianFacts[5],A negated direct object can be genitive or accusative.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative"
+T18d,D62d / MARK,u24-st-rem-alternation.russianFacts[6],The ending in кни́ги is not unambiguous genitive plural.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative, prov-ex-u24-alternation-0-ru"
+T18d,D62d / MARK,u24-st-rem-alternation.russianFacts[7],The specified singular object uses the form кни́гу.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative, prov-ex-u24-alternation-0-ru"
+T18d,D62d / MARK,u24-st-rem-alternation.russianFacts[8],Genitive under negation is not a mechanical rule.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative"
+T18d,D62d / MARK,u24-g-alternation-0.russianFacts[0],I don't see any books — an indefinite reading of the genitive example.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative"
+T18d,D62d / MARK,u24-g-alternation-0.russianFacts[1],I don't see the book — the singular accusative reading.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative"
+T18d,D62d / MARK,u24-i-alternation-1.russianFacts[0],I don't see the book — the singular accusative reading.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative"
+T18d,D62d / MARK,u24-i-alternation-1.russianFacts[1],I don't see any books — an indefinite reading of the genitive example.,"prov-u24-alternation-rem, prov-t18d-u24-n60-sg_acc, prov-t18d-u24-n60-sg_gen, prov-t18d-u24-n60-pl_gen, prov-t18d-u24-n60-pl_acc, prov-u24-verbal-ne-rem, prov-t18d-u24-g55-book-accusative"
+T18d,D62d / MARK,u24-st-rem-stand-ins.russianFacts[0],кто — никто́.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone, prov-ex-u24-stand-ins-0-ru"
+T18d,D62d / MARK,u24-st-rem-stand-ins.russianFacts[1],что — ничто́.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone, prov-ex-u24-stand-ins-0-ru"
+T18d,D62d / MARK,u24-st-rem-stand-ins.russianFacts[2],The first pair concerns a person and nobody.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone"
+T18d,D62d / MARK,u24-st-rem-stand-ins.russianFacts[3],The second concerns a thing and nothing.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone"
+T18d,D62d / MARK,u24-st-rem-stand-ins.russianFacts[4],не́кого expresses that there is nobody available for an action.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone"
+T18d,D62d / MARK,u24-st-rem-stand-ins.russianFacts[5],This negative form belongs to a set with no nominative.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone"
+T18d,D62d / MARK,u24-st-rem-stand-ins.russianFacts[6],не́кто is an indefinite pronoun for an unspecified person.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone, prov-ex-u24-stand-ins-0-ru"
+T18d,D62d / MARK,u24-st-rem-stand-ins.russianFacts[7],не́что is an indefinite pronoun for an unspecified thing.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone, prov-ex-u24-stand-ins-0-ru"
+T18d,D62d / MARK,u24-g-stand-ins-0.russianFacts[0],никто́ — the negative pronoun meaning nobody.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone, prov-ex-u24-stand-ins-0-ru"
+T18d,D62d / MARK,u24-g-stand-ins-0.russianFacts[1],ничто́ — the negative pronoun meaning nothing.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone, prov-ex-u24-stand-ins-0-ru"
+T18d,D62d / MARK,u24-g-stand-ins-0.russianFacts[2],не́кто — the indefinite pronoun for an unspecified person.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone, prov-ex-u24-stand-ins-0-ru"
+T18d,D62d / MARK,u24-i-stand-ins-1.russianFacts[0],ничто́ — the negative pronoun meaning nothing.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone, prov-ex-u24-stand-ins-0-ru"
+T18d,D62d / MARK,u24-i-stand-ins-1.russianFacts[1],не́что — the indefinite pronoun for an unspecified thing.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone, prov-ex-u24-stand-ins-0-ru"
+T18d,D62d / MARK,u24-i-stand-ins-1.russianFacts[2],никто́ — the negative pronoun meaning nobody.,"prov-u24-stand-ins-rem, prov-t18d-u24-or51-translations_en, prov-t18d-u24-or72-translations_en, prov-t18d-u24-or451-translations_en, prov-t18d-u24-i15-18, prov-t18d-u24-o16-nobody, prov-t18d-u24-o20-nothing, prov-t18d-u24-o55-nobody-available, prov-t18d-u24-o17-someone, prov-ex-u24-stand-ins-0-ru"
+T18d,D62d / MARK,u24-st-rem-concord.russianFacts[0],никто́ — не.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-st-rem-concord.russianFacts[1],ничто́ — не.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-st-rem-concord.russianFacts[2],In these patterns the negative pronoun requires the separate particle in the predicate.,"prov-u24-concord-rem, prov-u24-stand-ins-rem"
+T18d,D62d / MARK,u24-st-rem-concord.russianFacts[3],They work together to express one overall negative statement.,"prov-u24-concord-rem, prov-u24-stand-ins-rem"
+T18d,D62d / MARK,u24-st-rem-concord.russianFacts[4],ни- is a negative-pronoun prefix.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-st-rem-concord.russianFacts[5],никому is a dative form referring to nobody.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-st-rem-concord.russianFacts[6],The separate predicate particle is не.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-g-concord-0.russianFacts[0],не — the separate negative particle in the predicate.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-g-concord-0.russianFacts[1],ни- — a negative-pronoun prefix.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-g-concord-0.russianFacts[2],никому — a dative negative pronoun meaning to nobody.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-i-concord-1.russianFacts[0],не — the separate negative particle in the predicate.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-i-concord-1.russianFacts[1],ни- — a negative-pronoun prefix.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-i-concord-1.russianFacts[2],никому — a dative negative pronoun meaning to nobody.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-i-concord-2.russianFacts[0],не — the separate negative particle in the predicate.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-i-concord-2.russianFacts[1],никому — a dative negative pronoun meaning to nobody.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-i-concord-2.russianFacts[2],ни- — a negative-pronoun prefix.,"prov-u24-concord-rem, prov-u24-stand-ins-rem, prov-ex-u24-concord-0-ru"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[0],Не надо меня уговаривать.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem, prov-ex-u24-word-order-contrast-0-ru"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[1],— One should not persuade me when the speaker would never agree.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[2],Меня не надо уговаривать.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem, prov-ex-u24-word-order-contrast-0-ru"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[3],— There is no need to persuade me when the speaker will do it anyway.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[4],Word order can change what is in focus or in the scope of a particle.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[5],Intonation and discourse context can clarify the intended reading.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[6],В магазин пошёл я.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[7],— It was me who went to the shop.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[8],Here the speaker is the person in focus.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[9],В магазин я пошёл.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[10],— To the shop—that's where I went.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-st-rem-word-order-contrast.russianFacts[11],Here the answer identifies the destination.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-i-word-order-contrast-1.russianFacts[0],There is no need to persuade me — the speaker will do it anyway.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-i-word-order-contrast-1.russianFacts[1],One should not persuade me — the speaker would never agree.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-i-word-order-contrast-2.russianFacts[0],One should not persuade me — the speaker would never agree.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-i-word-order-contrast-2.russianFacts[1],There is no need to persuade me — the speaker will do it anyway.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-g-context-subject-focus.russianFacts[0],It was me who went to the shop.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-g-context-subject-focus.russianFacts[1],— the speaker is the person in focus.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-g-context-subject-focus.russianFacts[2],To the shop—that's where I went.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-g-context-subject-focus.russianFacts[3],— the reply identifies the destination.,"prov-u24-word-order-contrast-rem, prov-u24-context-transfer-native-guide-ru, prov-u24-placement-rem"
+T18d,D62d / MARK,u24-st-rem-placement.russianFacts[0],Мне не холодно.,"prov-u24-placement-rem, prov-ex-u24-placement-0-ru"
+T18d,D62d / MARK,u24-st-rem-placement.russianFacts[1],— To me it is not cold.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-st-rem-placement.russianFacts[2],This can also be expressed in English as I am not cold.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-st-rem-placement.russianFacts[3],Не мне холодно.,"prov-u24-placement-rem, prov-ex-u24-placement-0-ru"
+T18d,D62d / MARK,u24-st-rem-placement.russianFacts[4],— It is not to me that it is cold.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-st-rem-placement.russianFacts[5],The first negates the cold state for the experiencer.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-st-rem-placement.russianFacts[6],The second contrasts the experiencer and does not by itself identify that other person.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-st-rem-placement.russianFacts[7],Note that the modifier не negates the word which comes right after it.,"prov-u24-placement-rem, prov-ex-u24-placement-0-ru"
+T18d,D62d / MARK,u24-st-rem-placement.russianFacts[8],In this pair its position distinguishes the state from the experiencer.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-g-placement-0.russianFacts[0],To me it is not cold.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-g-placement-0.russianFacts[1],— negation of the cold state for the experiencer.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-g-placement-0.russianFacts[2],It is not to me that it is cold.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-g-placement-0.russianFacts[3],— the experiencer is contrasted.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-i-placement-1.russianFacts[0],It is not to me that it is cold.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-i-placement-1.russianFacts[1],— the experiencer is contrasted.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-i-placement-1.russianFacts[2],To me it is not cold.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-i-placement-1.russianFacts[3],— negation of the cold state for the experiencer.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-i-placement-2.russianFacts[0],It is not to me that it is cold.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-i-placement-2.russianFacts[1],— the experiencer is contrasted.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-i-placement-2.russianFacts[2],I am not cold.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-i-placement-2.russianFacts[3],— negation of the cold state for the speaker.,prov-u24-placement-rem
+T18d,D62d / MARK,u24-g-word-order-contrast-0.russianFacts[0],One should not persuade me — the speaker would never agree.,prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-0-ru
+T18d,D62d / MARK,u24-g-word-order-contrast-0.russianFacts[1],There is no need to persuade me — the speaker will do it anyway.,prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-0-ru
+T18d,D62a–c,provenanceRecords:prov-ca-24-163,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-164,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-165,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-166,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-167,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-168,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-169,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-170,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-172,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-173,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-174,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-175,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-176,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-177,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-178,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-179,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-180,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-181,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-182,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-183,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-184,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-185,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-186,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-187,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-188,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-189,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-556,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-557,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-558,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-559,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-560,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-561,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-562,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-563,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-564,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-565,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-566,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-567,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-568,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-569,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-570,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-571,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-572,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-573,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-574,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-575,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-576,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-577,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-578,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-579,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-24-580,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10719,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10720,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10815,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10816,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10817,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10818,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10819,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10820,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10821,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10822,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10823,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10824,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10825,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10826,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10827,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10828,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10829,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10830,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10831,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10832,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10833,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10834,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10835,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10836,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10837,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10838,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10839,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10840,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10841,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10842,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10843,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10844,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10845,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10846,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10847,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10848,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10849,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10850,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10851,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-repair-24-10852,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-absence-participant-0,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-absence-participant-1,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-absence-participant-2,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-absence-participant-3,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-absence-explanation,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-alternation-teach-1-body,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-alternation-rem-body,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-stand-ins-teach-2-body,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-stand-ins-teach-3-body,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-stand-ins-rem-body,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-u24-g-alternation-0-feedback,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-u24-g-alternation-0-wrong-0,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-u24-i-alternation-1-wrong-0,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-u24-i-alternation-2-feedback,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-u24-i-alternation-2-wrong-0,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-ca-u24-instruction-u24-i-stand-ins-2-feedback,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-s1-u24-nekomu,,REMOVED
+T18d,D62a–c,provenanceRecords:prov-s1-u24-nekem,,REMOVED
+T18d,D62a,application:prov-ca-24-163,"не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form such as не́кого for the genitive, не́кому for the dative, or не́кем for the instrumental. There is no nominative некого.",REMOVED
+T18d,D62a,application:prov-ca-24-164,кто.,REMOVED
+T18d,D62a,application:prov-ca-24-165,не́кого,REMOVED
+T18d,D62a,application:prov-ca-24-166,не́кому,REMOVED
+T18d,D62a,application:prov-ca-24-167,не́кем,REMOVED
+T18d,D62a,application:prov-ca-24-168,некого.,REMOVED
+T18d,D62a,application:prov-ca-24-169,некого,REMOVED
+T18d,D62a,application:prov-ca-24-170,не́кого спросить,REMOVED
+T18d,D62a,application:prov-ca-24-172,"не́кого спросить — there is nobody to ask, genitive absence",REMOVED
+T18d,D62a,application:prov-ca-24-173,не́кого спросить,REMOVED
+T18d,D62a,application:prov-ca-24-174,there is nobody to ask,REMOVED
+T18d,D62a,application:prov-ca-24-175,Which reading is the genitive absence construction?,REMOVED
+T18d,D62a,application:prov-ca-24-176,"не́кого спросить means there is nobody to ask. не́кто would mean an unspecified person, and that is not this construction.",REMOVED
+T18d,D62a,application:prov-ca-24-177,The genitive absence form не́кого with an infinitive means there is nobody to ask.,REMOVED
+T18d,D62a,application:prov-ca-24-178,an unspecified person,REMOVED
+T18d,D62a,application:prov-ca-24-179,there is nothing to ask,REMOVED
+T18d,D62a,application:prov-ca-24-180,"an unspecified person is the reading of не́кто, not of не́кого.",REMOVED
+T18d,D62a,application:prov-ca-24-181,"there is nothing to ask would be a нечего construction, not не́кого.",REMOVED
+T18d,D62a,application:prov-ca-24-182,не́кто,REMOVED
+T18d,D62a,application:prov-ca-24-183,не́кого,REMOVED
+T18d,D62a,application:prov-ca-24-184,"не́кто,",REMOVED
+T18d,D62a,application:prov-ca-24-185,не́кого.,REMOVED
+T18d,D62a,application:prov-ca-24-186,нечего,REMOVED
+T18d,D62a,application:prov-ca-24-187,"не́кто is indefinite. For genitive absence use не́кого, as in не́кого спросить, there is nobody to ask.",REMOVED
+T18d,D62a,application:prov-ca-24-188,"не́кого,",REMOVED
+T18d,D62a,application:prov-ca-24-189,"не́кого спросить,",REMOVED
+T18d,D62a,application:prov-ca-24-556,Я не ви́жу э́ту кни́гу.,REMOVED
+T18d,D62a,application:prov-ca-24-557,"I don't see this book, singular",REMOVED
+T18d,D62a,application:prov-ca-24-558,Which reading matches the singular object in the shown sentence?,REMOVED
+T18d,D62a,application:prov-ca-24-559,"э́ту кни́гу is a singular object, so the reading is I don't see this book, singular.",REMOVED
+T18d,D62a,application:prov-ca-24-560,The demonstrative and the accusative singular specify one book.,REMOVED
+T18d,D62a,application:prov-ca-24-561,I don't see any books,REMOVED
+T18d,D62a,application:prov-ca-24-562,I see this book,REMOVED
+T18d,D62a,application:prov-ca-24-563,"I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.",REMOVED
+T18d,D62a,application:prov-ca-24-564,I see this book drops the negation.,REMOVED
+T18d,D62a,application:prov-ca-24-565,Я не ви́жу э́ту кни́гу,REMOVED
+T18d,D62a,application:prov-ca-24-566,э́ту кни́гу,REMOVED
+T18d,D62a,application:prov-ca-24-567,э́ту кни́гу.,REMOVED
+T18d,D62a,application:prov-ca-24-568,Я не ви́жу книг.,REMOVED
+T18d,D62a,application:prov-ca-24-569,I don't see any books,REMOVED
+T18d,D62a,application:prov-ca-24-570,Which reading matches the bare plural genitive?,REMOVED
+T18d,D62a,application:prov-ca-24-571,книг in Я не ви́жу книг is the plural genitive reading I don't see any books.,REMOVED
+T18d,D62a,application:prov-ca-24-572,The bare genitive plural specifies the plural reading.,REMOVED
+T18d,D62a,application:prov-ca-24-573,I don't see the one book,REMOVED
+T18d,D62a,application:prov-ca-24-574,I see the books,REMOVED
+T18d,D62a,application:prov-ca-24-575,I don't see the one book would need a singular object such as э́ту кни́гу.,REMOVED
+T18d,D62a,application:prov-ca-24-576,I see the books drops the negation.,REMOVED
+T18d,D62a,application:prov-ca-24-577,Я не ви́жу книг,REMOVED
+T18d,D62a,application:prov-ca-24-578,книг,REMOVED
+T18d,D62a,application:prov-ca-24-579,э́ту кни́гу.,REMOVED
+T18d,D62a,application:prov-ca-24-580,э́ту кни́гу,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10719,"не́кто is an indefinite pronoun, an unspecified person. In не́кого спросить, there is nobody to ask: не́кого is the negative construction, not не́кто. Choose the construction and case from its sentence rather than changing a nominative mechanically.",REMOVED
+T18d,D62a,application:prov-ca-repair-24-10720,не́кто.,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10815,Я не ви́жу э́ту кни́гу.,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10816,"I don't see this book, singular",REMOVED
+T18d,D62a,application:prov-ca-repair-24-10817,Which reading matches the singular object in the shown sentence?,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10818,"Я не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.",REMOVED
+T18d,D62a,application:prov-ca-repair-24-10819,I don't see any books,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10820,I see this book,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10821,"I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.",REMOVED
+T18d,D62a,application:prov-ca-repair-24-10822,I see this book drops the negation.,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10823,Я не ви́жу э́ту кни́гу,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10824,э́ту кни́гу,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10825,не,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10826,э́ту кни́гу.,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10827,Я не ви́жу книг.,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10828,I don't see any books,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10829,Which reading matches the bare plural genitive?,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10830,"Я не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.",REMOVED
+T18d,D62a,application:prov-ca-repair-24-10831,I don't see the one book,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10832,I see the books,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10833,I don't see the one book would need a singular object such as э́ту кни́гу.,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10834,I see the books drops the negation.,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10835,Я не ви́жу книг,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10836,книг,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10837,не,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10838,э́ту кни́гу.,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10839,э́ту кни́гу,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10840,не́кого спросить,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10841,there is nobody to ask,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10842,Which reading is the genitive absence construction?,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10843,не́кого спросить means there is nobody to ask. не́кого expresses absence of a person available for the infinitive action.,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10844,an unspecified person,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10845,there is nothing to ask,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10846,"an unspecified person is the reading of не́кто, not of не́кого.",REMOVED
+T18d,D62a,application:prov-ca-repair-24-10847,"there is nothing to ask would be a нечего construction, not не́кого.",REMOVED
+T18d,D62a,application:prov-ca-repair-24-10848,не́кого,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10849,"не́кто,",REMOVED
+T18d,D62a,application:prov-ca-repair-24-10850,не́кто,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10851,не́кого.,REMOVED
+T18d,D62a,application:prov-ca-repair-24-10852,нечего,REMOVED
+T18d,D62a,application:prov-ca-u24-absence-participant-0,не́кого спросить,REMOVED
+T18d,D62a,application:prov-ca-u24-absence-participant-1,there is nobody to ask,REMOVED
+T18d,D62a,application:prov-ca-u24-absence-participant-2,an unspecified person,REMOVED
+T18d,D62a,application:prov-ca-u24-absence-participant-3,there is nothing to ask,REMOVED
+T18d,D62a,application:prov-ca-u24-absence-explanation,"не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.",REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-alternation-teach-1-body,"Я не ви́жу э́ту кни́гу. — I don't see this book, singular. Я не ви́жу кни́гу — I don't see the book. Я не ви́жу книг. — I don't see any books. The first two show a singular accusative object; the last shows a genitive plural object. Negation remains in every sentence. Changing noun form does not turn the statement into a positive one.",REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-alternation-rem-body,"Я не ви́жу э́ту кни́гу. — I don't see this book, singular. Я не ви́жу кни́гу — I don't see the book. Я не ви́жу книг. — I don't see any books. The first two show a singular accusative object; the last shows a genitive plural object. Negation remains in every sentence. Changing noun form does not turn the statement into a positive one.
+
+A negated direct object can be genitive or accusative depending on meaning, context and usage. Indefinite reference often favors genitive, but this is not a mechanical rule that every negative sentence must use it. The older book ending in the retained source can also be genitive singular or accusative plural; it is not unambiguous genitive plural. The worked example now uses the same explicit plural-genitive phrase as the repaired check. I don't see the one book is still a singular description. I see this book and I see the books are positive descriptions and therefore do not match the negated cues. These choices distinguish supplied meanings and number, not independently choose every case under negation.",REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-stand-ins-teach-2-body,Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.,REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-stand-ins-teach-3-body,"не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm. The current checks recognize the absence meaning; they do not uniquely identify genitive from the shared genitive/accusative form.",REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-stand-ins-rem-body,"кто — никто́. что — ничто́. The first pair concerns a person and nobody; the second concerns a thing and nothing. The indefinite options не́кто and не́что refer to an unspecified person or thing, not the corresponding nobody/nothing form. Do not treat a similar-looking prefix as proof of the same meaning.
+
+Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.
+
+не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm. The current checks recognize the absence meaning; they do not uniquely identify genitive from the shared genitive/accusative form.",REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-u24-g-alternation-0-feedback,"Я не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.
+Я не ви́жу э́ту кни́гу. is the reference cue; I don't see this book, singular matches the requested meaning or structure. negation with one specified accusative object.",REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-u24-g-alternation-0-wrong-0,"I don't see any books: the explicit genitive-plural reading. This differs from the meaning or structure requested in this context. I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.",REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-u24-i-alternation-1-wrong-0,"I don't see any books is the supplied plural reading, illustrated here by Я не ви́жу книг. It differs from the singular-object reading requested by this cue.",REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-u24-i-alternation-2-feedback,"Я не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.
+Я не ви́жу книг. is the reference cue; I don't see any books matches the requested meaning or structure. the explicit genitive-plural reading.",REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-u24-i-alternation-2-wrong-0,I don't see the one book: a singular-object reading. This differs from the meaning or structure requested in this context. I don't see the one book would need a singular object such as э́ту кни́гу.,REMOVED
+T18d,D62a,application:prov-ca-u24-instruction-u24-i-stand-ins-2-feedback,"не́кого спросить means there is nobody to ask. не́кого expresses absence of a person available for the infinitive action.
+не́кого спросить is the reference cue; there is nobody to ask matches the requested meaning or structure. absence of a person available for the infinitive action.",REMOVED
+T18d,D62a,application:prov-s1-u24-nekomu,не́кому,REMOVED
+T18d,D62a,application:prov-s1-u24-nekem,не́кем,REMOVED
+T18d,D62d / MARK,prep:2871:u24-g-verbal-ne-0.item feedback,"The frozen example No, I'm not speaking adds the particle before the speaking reply.","V:18–19,26–31"
+T18d,D62d / MARK,prep:2873:u24-g-verbal-ne-0.item feedback,a negative first-person speaking reply.,"V:18–19,26–31"
+T18d,D62d / REMOVE,prep:2875:u24-g-verbal-ne-0.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / REWORD,prep:2876:u24-g-verbal-ne-0.item distractor rationale,"The frozen example He's not a student is omitted in the present form, so the particle stands on its own.",Compare the two sentence structures.
+T18d,D62d / MARK,prep:2878:u24-g-verbal-ne-0.item distractor rationale,: a speaking question without negation.,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2879:u24-g-verbal-ne-0.item distractor rationale,The frozen example Are you speaking?,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2880:u24-g-verbal-ne-0.item distractor rationale,is the question before the reply.,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2883:u24-st-rem-verbal-ne.remediation body,The first word of each reply answers yes or no.,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2884:u24-st-rem-verbal-ne.remediation body,The separate negative particle before the speaking verb negates that predicate; it is not merely the initial no reply.,"V:18–19,26–31"
+T18d,D62d / REWORD,prep:2885:u24-st-rem-verbal-ne.remediation body,The guided choice keeps the speaking action and changes it to a negative reply.,Compare the affirmative and negative replies.
+T18d,D62d / MARK,prep:2887:u24-st-rem-verbal-ne.remediation body,"In a present-tense noun predicate, the verb corresponding to is is normally omitted.","V:18–19,26–31"
+T18d,D62d / MARK,prep:2888:u24-st-rem-verbal-ne.remediation body,The negative particle can then stand before the noun predicate itself.,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2889:u24-st-rem-verbal-ne.remediation body,That is a different structure from a speaking verb with a negative particle.,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2891:u24-st-rem-verbal-ne.remediation body,— Are you speaking?,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2893:u24-st-rem-verbal-ne.remediation body,The speaking question is not itself negated.,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2894:u24-st-rem-verbal-ne.remediation body,The student statement has a noun predicate and no overt present-tense is.,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2896:u24-st-rem-verbal-ne.remediation body,The negative particle precedes the coming verb.,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2897:u24-st-rem-verbal-ne.remediation body,This complete sentence identifies Boris as the subject and coming as the action.,"V:18–19,26–31"
+T18d,D62d / REWORD,prep:2899:u24-i-verbal-ne-1.item feedback,"The frozen example He's not a student is the one omitted in the present form, with the particle on its own.",Compare the two sentence structures.
+T18d,D62d / MARK,prep:2902:u24-i-verbal-ne-1.item feedback,a negative noun predicate with an omitted present copula.,"V:18–19,26–31"
+T18d,D62d / REMOVE,prep:2904:u24-i-verbal-ne-1.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:2905:u24-i-verbal-ne-1.item distractor rationale,"The frozen example No, I'm not speaking adds the particle before the speaking word.","V:18–19,26–31"
+T18d,D62d / MARK,prep:2907:u24-i-verbal-ne-1.item distractor rationale,"The frozen example Yes, I'm speaking is the agreeing reply, without the particle.","V:18–19,26–31"
+T18d,D62d / MARK,prep:2908:u24-i-verbal-ne-2.item feedback,The frozen example Boris isn't coming places the particle before the coming word.,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2910:u24-i-verbal-ne-2.item feedback,a complete negative sentence about Boris coming.,"V:18–19,26–31"
+T18d,D62d / REMOVE,prep:2912:u24-i-verbal-ne-2.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:2913:u24-i-verbal-ne-2.item distractor rationale,The frozen example He's not a student uses the particle on its own because the present form is omitted.,"V:18–19,26–31"
+T18d,D62d / MARK,prep:2915:u24-i-verbal-ne-2.item distractor rationale,"The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.","V:18–19,26–31"
+T18d,D62d / MARK,prep:2916:u24-g-absence-0.item feedback,"The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.","V:26,28,33"
+T18d,D62d / MARK,prep:2918:u24-g-absence-0.item feedback,absence in the existence pattern.,"V:26,28,33"
+T18d,D62d / REMOVE,prep:2920:u24-g-absence-0.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:2921:u24-g-absence-0.item distractor rationale,The frozen note adds this particle before a word.,"V:26,28,33"
+T18d,D62d / MARK,prep:2922:u24-g-absence-0.item distractor rationale,It is not the replacement for the exists word.,"V:26,28,33"
+T18d,D62d / MARK,prep:2924:u24-g-absence-0.item distractor rationale,"The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.","V:26,28,33"
+T18d,D62d / MARK,prep:2927:u24-st-rem-absence.remediation body,"The same word can also be a no reply, but that conversational use is different from the absence construction.","V:26,28,33"
+T18d,D62d / MARK,prep:2931:u24-st-rem-absence.remediation body,In this construction the person or thing whose existence or possession is denied is expressed in the genitive.,"V:26,28,33"
+T18d,D62d / REWORD,prep:2932:u24-st-rem-absence.remediation body,Do not replace the existence word with the separate particle and leave the construction unchanged.,Review the existence and absence patterns.
+T18d,D62d / MARK,prep:2935:u24-i-absence-1.item feedback,"The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.","V:26,28,33"
+T18d,D62d / MARK,prep:2937:u24-i-absence-1.item feedback,existence in the positive pattern.,"V:26,28,33"
+T18d,D62d / REMOVE,prep:2939:u24-i-absence-1.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:2940:u24-i-absence-1.item distractor rationale,The frozen note adds this particle before a word.,"V:26,28,33"
+T18d,D62d / MARK,prep:2941:u24-i-absence-1.item distractor rationale,It is not the form that means exists.,"V:26,28,33"
+T18d,D62d / MARK,prep:2943:u24-i-absence-1.item distractor rationale,"The frozen example Yes, I'm speaking uses this as the agreeing reply.","V:26,28,33"
+T18d,D62d / MARK,prep:2944:u24-i-absence-2.item feedback,The frozen note says this replacement has a different meaning from the reply that means no.,"V:26,28,33"
+T18d,D62d / MARK,prep:2946:u24-i-absence-2.item feedback,absence in the existence pattern.,"V:26,28,33"
+T18d,D62d / REMOVE,prep:2948:u24-i-absence-2.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:2949:u24-i-absence-2.item distractor rationale,The frozen note uses this form to mean 'exists' before replacing it.,"V:26,28,33"
+T18d,D62d / MARK,prep:2951:u24-i-absence-2.item distractor rationale,"The frozen example Yes, I'm speaking uses this as the agreeing reply.","V:26,28,33"
+T18d,D62d / REMOVE,prep:2953:u24-g-alternation-0.item feedback,"means I don't see this book, singular.",REMOVED
+T18d,D62d / REMOVE,prep:2955:u24-g-alternation-0.item feedback,"is the reference cue; I don't see this book, singular matches the requested meaning or structure.",REMOVED
+T18d,D62d / REMOVE,prep:2956:u24-g-alternation-0.item feedback,negation with one specified accusative object.,REMOVED
+T18d,D62d / REMOVE,prep:2957:u24-g-alternation-0.item distractor rationale,I don't see any books: the explicit genitive-plural reading.,REMOVED
+T18d,D62d / REMOVE,prep:2958:u24-g-alternation-0.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / REMOVE,prep:2960:u24-g-alternation-0.item distractor rationale,I see this book: a positive singular-object statement.,REMOVED
+T18d,D62d / REMOVE,prep:2961:u24-g-alternation-0.item distractor rationale,I see this book drops the negation.,REMOVED
+T18d,D62d / REMOVE,prep:2963:u24-st-rem-alternation.remediation body,"— I don't see this book, singular.",REMOVED
+T18d,D62d / REMOVE,prep:2966:u24-st-rem-alternation.remediation body,— I don't see any books.,REMOVED
+T18d,D62d / REMOVE,prep:2967:u24-st-rem-alternation.remediation body,The first two show a singular accusative object; the last shows a genitive plural object.,REMOVED
+T18d,D62d / MARK,prep:2968:u24-st-rem-alternation.remediation body,Negation remains in every sentence.,G:55; N:60; V:26
+T18d,D62d / MARK,prep:2969:u24-st-rem-alternation.remediation body,Changing noun form does not turn the statement into a positive one.,G:55; N:60; V:26
+T18d,D62d / MARK,prep:2970:u24-st-rem-alternation.remediation body,"A negated direct object can be genitive or accusative depending on meaning, context and usage.",G:55; N:60; V:26
+T18d,D62d / MARK,prep:2971:u24-st-rem-alternation.remediation body,"Indefinite reference often favors genitive, but this is not a mechanical rule that every negative sentence must use it.",G:55; N:60; V:26
+T18d,D62d / MARK,prep:2972:u24-st-rem-alternation.remediation body,The older book ending in the retained source can also be genitive singular or accusative plural; it is not unambiguous genitive plural.,G:55; N:60; V:26
+T18d,D62d / REMOVE,prep:2973:u24-st-rem-alternation.remediation body,I don't see the one book is still a singular description.,REMOVED
+T18d,D62d / REMOVE,prep:2974:u24-st-rem-alternation.remediation body,I see this book and I see the books are positive descriptions and therefore do not match the negated cues.,REMOVED
+T18d,D62d / MARK,prep:2977:u24-i-alternation-1.item feedback,the supplied singular accusative reading.,G:55; N:60; V:26
+T18d,D62d / REMOVE,prep:2979:u24-i-alternation-1.item distractor rationale,It differs from the singular-object reading requested by this cue.,REMOVED
+T18d,D62d / REMOVE,prep:2981:u24-i-alternation-2.item feedback,means I don't see any books.,REMOVED
+T18d,D62d / REMOVE,prep:2983:u24-i-alternation-2.item feedback,is the reference cue; I don't see any books matches the requested meaning or structure.,REMOVED
+T18d,D62d / REMOVE,prep:2984:u24-i-alternation-2.item feedback,the explicit genitive-plural reading.,REMOVED
+T18d,D62d / REMOVE,prep:2985:u24-i-alternation-2.item distractor rationale,I don't see the one book: a singular-object reading.,REMOVED
+T18d,D62d / REMOVE,prep:2986:u24-i-alternation-2.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / REMOVE,prep:2988:u24-i-alternation-2.item distractor rationale,I see the books: a positive plural-object statement.,REMOVED
+T18d,D62d / REMOVE,prep:2989:u24-i-alternation-2.item distractor rationale,I see the books drops the negation.,REMOVED
+T18d,D62d / MARK,prep:2992:u24-g-stand-ins-0.item feedback,a negative pronoun referring to nobody.,"O:1,15–21,55; I:15–18; OR:51,72,451"
+T18d,D62d / REMOVE,prep:2994:u24-g-stand-ins-0.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:3000:u24-st-rem-stand-ins.remediation body,The first pair concerns a person and nobody; the second concerns a thing and nothing.,"O:1,15–21,55; I:15–18; OR:51,72,451"
+T18d,D62d / REWORD,prep:3002:u24-st-rem-stand-ins.remediation body,Do not treat a similar-looking prefix as proof of the same meaning.,Compare the meanings before choosing.
+T18d,D62d / MARK,prep:3003:u24-st-rem-stand-ins.remediation body,Negative predicative constructions express the absence of a person or thing for an action.,"O:1,15–21,55; I:15–18; OR:51,72,451"
+T18d,D62d / MARK,prep:3004:u24-st-rem-stand-ins.remediation body,The construction selects a case form; it has no nominative form.,"O:1,15–21,55; I:15–18; OR:51,72,451"
+T18d,D62d / REMOVE,prep:3006:u24-st-rem-stand-ins.remediation body,This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.,REMOVED
+T18d,D62d / REMOVE,prep:3010:u24-st-rem-stand-ins.remediation body,The sentence determines the case; absence meaning alone does not.,REMOVED
+T18d,D62d / MARK,prep:3011:u24-st-rem-stand-ins.remediation body,There is no nominative form in this negative paradigm.,"O:1,15–21,55; I:15–18; OR:51,72,451"
+T18d,D62d / MARK,prep:3014:u24-i-stand-ins-1.item feedback,a negative pronoun referring to nothing.,"O:1,15–21,55; I:15–18; OR:51,72,451"
+T18d,D62d / REMOVE,prep:3016:u24-i-stand-ins-1.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / REMOVE,prep:3023:u24-i-stand-ins-2.item feedback,absence of a person available for the infinitive action.,REMOVED
+T18d,D62d / MARK,prep:3024:u24-i-stand-ins-2.item distractor rationale,an unspecified person: indefinite reference to a person.,"O:1,15–21,55; I:15–18; OR:51,72,451"
+T18d,D62d / REMOVE,prep:3025:u24-i-stand-ins-2.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / REMOVE,prep:3027:u24-i-stand-ins-2.item distractor rationale,there is nothing to ask: absence of a thing for the action.,REMOVED
+T18d,D62d / MARK,prep:3031:u24-g-concord-0.item feedback,the separate predicate-negation particle.,O:97–104
+T18d,D62d / REMOVE,prep:3033:u24-g-concord-0.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:3039:u24-st-rem-concord.remediation body,"In the supplied negative-concord pattern, the negative pronoun requires the separate negative particle in the predicate.",O:97–104
+T18d,D62d / MARK,prep:3040:u24-st-rem-concord.remediation body,They work together to express one overall negative statement.,O:97–104
+T18d,D62d / REWORD,prep:3041:u24-st-rem-concord.remediation body,Do not remove the predicate particle by applying the English idea that two negatives must cancel.,Check both parts of the sentence.
+T18d,D62d / MARK,prep:3047:u24-i-concord-1.item feedback,the separate predicate-negation particle.,O:97–104
+T18d,D62d / REMOVE,prep:3049:u24-i-concord-1.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:3055:u24-i-concord-2.item feedback,the separate predicate-negation particle.,O:97–104
+T18d,D62d / REMOVE,prep:3057:u24-i-concord-2.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:3062:u24-g-context-subject-focus.item feedback,has the supplied subject-focus interpretation It was me who went to the shop.,G:2339–2348; R:211
+T18d,D62d / MARK,prep:3063:u24-g-context-subject-focus.item feedback,The context highlights the speaker as the person who went.,G:2339–2348; R:211
+T18d,D62d / REMOVE,prep:3064:u24-g-context-subject-focus.item feedback,"This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.",REMOVED
+T18d,D62d / MARK,prep:3065:u24-g-context-subject-focus.item distractor rationale,To the shop—that's where I went.,G:2339–2348; R:211
+T18d,D62d / MARK,prep:3067:u24-g-context-subject-focus.item distractor rationale,"in its supplied response context, rather than the highlighted-person reading requested here.",G:2339–2348; R:211
+T18d,D62d / MARK,prep:3069:u24-st-rem-word-order-contrast.remediation body,— One should not persuade me in the supplied context where the speaker would never agree.,G:2339–2348; R:211
+T18d,D62d / MARK,prep:3071:u24-st-rem-word-order-contrast.remediation body,— There is no need to persuade me in the supplied context where the speaker will do it anyway.,G:2339–2348; R:211
+T18d,D62d / REMOVE,prep:3072:u24-st-rem-word-order-contrast.remediation body,The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.,REMOVED
+T18d,D62d / MARK,prep:3073:u24-st-rem-word-order-contrast.remediation body,Word order can change what is in focus or in the scope of a particle.,G:2339–2348; R:211
+T18d,D62d / MARK,prep:3074:u24-st-rem-word-order-contrast.remediation body,It does not by itself assign one unique meaning to every sentence.,G:2339–2348; R:211
+T18d,D62d / REWORD,prep:3075:u24-st-rem-word-order-contrast.remediation body,Intonation and discourse context matter as well.,Use the context supplied with each example.
+T18d,D62d / REWORD,prep:3076:u24-st-rem-word-order-contrast.remediation body,The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context.,Use the context supplied with each example.
+T18d,D62d / MARK,prep:3078:u24-st-rem-word-order-contrast.remediation body,— It was me who went to the shop.,G:2339–2348; R:211
+T18d,D62d / MARK,prep:3079:u24-st-rem-word-order-contrast.remediation body,In this supplied example the person who went is highlighted.,G:2339–2348; R:211
+T18d,D62d / MARK,prep:3080:u24-st-rem-word-order-contrast.remediation body,— To the shop—that's where I went.,G:2339–2348; R:211
+T18d,D62d / MARK,prep:3081:u24-st-rem-word-order-contrast.remediation body,in the source’s destination-response context.,G:2339–2348; R:211
+T18d,D62d / REMOVE,prep:3082:u24-st-rem-word-order-contrast.remediation body,"The independent requirements still test both original persuasion contexts:the speaker will do it anyway, or the speaker would never agree.",REMOVED
+T18d,D62d / REMOVE,prep:3083:u24-st-rem-word-order-contrast.remediation body,"Subject-focus remains introductory guided evidence, not an independently demonstrated skill.",REMOVED
+T18d,D62d / REWORD,prep:3084:u24-st-rem-word-order-contrast.remediation body,Intonation and discourse context can affect readings; these examples do not establish a universal word-order switch or permission to infer present time from a past verb.,Use the context supplied with each example.
+T18d,D62d / REMOVE,prep:3087:u24-i-word-order-contrast-1.item feedback,is the reference cue; There is no need to persuade me matches the requested meaning or structure.,REMOVED
+T18d,D62d / MARK,prep:3088:u24-i-word-order-contrast-1.item feedback,the supplied interpretation where the speaker will do it anyway.,G:2339–2348; R:211
+T18d,D62d / MARK,prep:3089:u24-i-word-order-contrast-1.item distractor rationale,One should not persuade me: the supplied interpretation where the speaker would never agree.,G:2339–2348; R:211
+T18d,D62d / REMOVE,prep:3090:u24-i-word-order-contrast-1.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / REMOVE,prep:3094:u24-i-word-order-contrast-2.item feedback,is the reference cue; One should not persuade me matches the requested meaning or structure.,REMOVED
+T18d,D62d / MARK,prep:3095:u24-i-word-order-contrast-2.item feedback,the supplied interpretation where the speaker would never agree.,G:2339–2348; R:211
+T18d,D62d / MARK,prep:3096:u24-i-word-order-contrast-2.item distractor rationale,There is no need to persuade me: the supplied interpretation where the speaker will do it anyway.,G:2339–2348; R:211
+T18d,D62d / REMOVE,prep:3097:u24-i-word-order-contrast-2.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / REMOVE,prep:3101:u24-g-placement-0.item feedback,is the reference cue; To me it is not cold.,REMOVED
+T18d,D62d / REMOVE,prep:3102:u24-g-placement-0.item feedback,matches the requested meaning or structure.,REMOVED
+T18d,D62d / MARK,prep:3103:u24-g-placement-0.item feedback,negation of the cold state for the experiencer.,"R:211,217–222"
+T18d,D62d / MARK,prep:3104:u24-g-placement-0.item distractor rationale,It is not to me that it is cold.,"R:211,217–222"
+T18d,D62d / MARK,prep:3105:u24-g-placement-0.item distractor rationale,: contrastive negation of the experiencer.,"R:211,217–222"
+T18d,D62d / REMOVE,prep:3106:u24-g-placement-0.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:3108:u24-g-placement-0.item distractor rationale,Moving the modifier in front of a different word produces that meaning.,"R:211,217–222"
+T18d,D62d / MARK,prep:3110:u24-st-rem-placement.remediation body,— To me it is not cold.,"R:211,217–222"
+T18d,D62d / MARK,prep:3111:u24-st-rem-placement.remediation body,This can also be expressed in English as I am not cold.,"R:211,217–222"
+T18d,D62d / MARK,prep:3113:u24-st-rem-placement.remediation body,— It is not to me that it is cold.,"R:211,217–222"
+T18d,D62d / MARK,prep:3114:u24-st-rem-placement.remediation body,"The first negates the cold state for the experiencer; the second contrasts the experiencer, so the person who is cold is not me.","R:211,217–222"
+T18d,D62d / MARK,prep:3115:u24-st-rem-placement.remediation body,The second does not by itself identify that other person.,"R:211,217–222"
+T18d,D62d / MARK,prep:3117:u24-st-rem-placement.remediation body,"In this supplied pair, its position helps distinguish the state from the experiencer.","R:211,217–222"
+T18d,D62d / REWORD,prep:3118:u24-st-rem-placement.remediation body,"Wider sentences also depend on construction, emphasis and context; do not apply adjacency as an automatic complete interpretation of every Russian sentence.",Compare the two complete sentences.
+T18d,D62d / REMOVE,prep:3121:u24-i-placement-1.item feedback,is the reference cue; It is not to me that it is cold.,REMOVED
+T18d,D62d / REMOVE,prep:3122:u24-i-placement-1.item feedback,matches the requested meaning or structure.,REMOVED
+T18d,D62d / MARK,prep:3123:u24-i-placement-1.item feedback,contrastive negation of the experiencer.,"R:211,217–222"
+T18d,D62d / MARK,prep:3124:u24-i-placement-1.item distractor rationale,To me it is not cold.,"R:211,217–222"
+T18d,D62d / MARK,prep:3125:u24-i-placement-1.item distractor rationale,: negation of the cold state for the experiencer.,"R:211,217–222"
+T18d,D62d / REMOVE,prep:3126:u24-i-placement-1.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:3128:u24-i-placement-1.item distractor rationale,That placement negates the following word.,"R:211,217–222"
+T18d,D62d / REMOVE,prep:3131:u24-i-placement-2.item feedback,is the reference cue; It is not to me that it is cold.,REMOVED
+T18d,D62d / REMOVE,prep:3132:u24-i-placement-2.item feedback,matches the requested meaning or structure.,REMOVED
+T18d,D62d / MARK,prep:3133:u24-i-placement-2.item feedback,contrastive negation of the experiencer.,"R:211,217–222"
+T18d,D62d / MARK,prep:3134:u24-i-placement-2.item distractor rationale,I am not cold.,"R:211,217–222"
+T18d,D62d / MARK,prep:3135:u24-i-placement-2.item distractor rationale,: negation of the cold state for the speaker.,"R:211,217–222"
+T18d,D62d / REMOVE,prep:3136:u24-i-placement-2.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED
+T18d,D62d / MARK,prep:3138:u24-i-placement-2.item distractor rationale,That parenthetical belongs to the other placement.,"R:211,217–222"
+T18d,D62d / REMOVE,prep:3141:u24-g-word-order-contrast-0.item feedback,is the reference cue; One should not persuade me matches the requested meaning or structure.,REMOVED
+T18d,D62d / MARK,prep:3142:u24-g-word-order-contrast-0.item feedback,the supplied interpretation where the speaker would never agree.,G:2347–2348
+T18d,D62d / MARK,prep:3143:u24-g-word-order-contrast-0.item distractor rationale,There is no need to persuade me: the supplied interpretation where the speaker will do it anyway.,G:2347–2348
+T18d,D62d / REMOVE,prep:3144:u24-g-word-order-contrast-0.item distractor rationale,This differs from the meaning or structure requested in this context.,REMOVED

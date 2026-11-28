@@ -82,7 +82,7 @@ A04-007,P1,4,4,WORD,говори́м,NEEDS_RECORDING,,,,"example,item,teaching"
 A04-008,P1,4,4,WORD,говори́т,NEEDS_RECORDING,,,,teaching
 A04-009,P1,4,"4,12,13,15,19",WORD,говори́ть,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A04-010,P1,4,4,WORD,говори́шь,NEEDS_RECORDING,,,,teaching
-A04-011,P1,4,"4,24",WORD,говорю́,NEEDS_RECORDING,,,,"example,item,teaching"
+A04-011,P1,4,"4,24",WORD,говорю́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A04-012,P1,4,4,WORD,де́лаем,NEEDS_RECORDING,,,,item
 A04-013,P1,4,"4,12,13,15,19",WORD,де́лать,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A04-014,P1,4,4,WORD,де́лаю,NEEDS_RECORDING,,,,"item,reference,teaching"
@@ -164,7 +164,7 @@ A06-006,P2,6,"6,10",WORD,её,NEEDS_RECORDING,,,"short: check it is a word, not 
 A06-007,P2,6,"6,18",WORD,же́нщина,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A06-008,P2,6,6,WORD,же́нщину,NEEDS_RECORDING,,,,"example,item,teaching"
 A06-009,P2,6,"6,7,10",WORD,их,NEEDS_RECORDING,,,"short: check it is a word, not an ending","example,item,reference,teaching"
-A06-010,P2,6,"6,7",WORD,кни́гу,NEEDS_RECORDING,,,,"example,item,teaching"
+A06-010,P2,6,"6,7,24",WORD,кни́гу,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A06-011,P2,6,6,WORD,ма́му,NEEDS_RECORDING,,,,"example,item,teaching"
 A06-012,P2,6,"6,10",WORD,Меня́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A06-013,P2,6,"6,10",WORD,моего́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
@@ -277,7 +277,7 @@ A08-005,P2,8,8,WORD,друзья́,NEEDS_RECORDING,,,,"example,item,reference,te
 A08-006,P2,8,"8,10,24",WORD,есть,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A08-007,P2,8,8,WORD,ие,NEEDS_RECORDING,,,"course text has no stress mark; short: check it is a word, not an ending",reference
 A08-008,P2,8,8,WORD,книг,NEEDS_RECORDING,,,,reference
-A08-009,P2,8,"8,12,29",WORD,кни́ги,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A08-009,P2,8,"8,12,24,29",WORD,кни́ги,NEEDS_RECORDING,,,,"example,item,reference,teaching"
 A08-010,P2,8,8,WORD,лю́ди,NEEDS_RECORDING,,,,"example,item,teaching"
 A08-011,P2,8,8,WORD,ма́мы,NEEDS_RECORDING,,,,"example,item,teaching"
 A08-012,P2,8,8,WORD,машины,NEEDS_RECORDING,,,course text has no stress mark,reference
@@ -740,31 +740,27 @@ A23-015,P3,23,23,SENTENCE,Мы ездили в Казахстан год наз�
 A23-016,P3,23,23,SENTENCE,Она родилась во время войны,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
 A23-017,P3,23,23,SENTENCE,Перед ужином мы ходили в парк,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
 A23-018,P3,23,23,SENTENCE,После работы я смотрела фильм,NEEDS_RECORDING,,,course text has no stress mark,"example,reference,teaching"
-A24-001,P3,24,24,WORD,не,BOUND,rus-f0a589da,не,"owner listen-check MATCH (D35); bound to 6 letter, example or item targets","example,item,teaching"
-A24-002,P3,24,24,WORD,не́кем,NEEDS_RECORDING,,,,teaching
-A24-003,P3,24,24,WORD,не́кого,NEEDS_RECORDING,,,,teaching
-A24-004,P3,24,24,WORD,не́кому,NEEDS_RECORDING,,,,teaching
-A24-005,P3,24,24,WORD,не́кто,NEEDS_RECORDING,,,,teaching
-A24-006,P3,24,24,WORD,не́что,NEEDS_RECORDING,,,,teaching
-A24-007,P3,24,24,WORD,ни,VERIFIED,rus-8e14f567,ни,"owner listen-check MATCH (D35); not bound: no letter, example or item shows this text",teaching
-A24-008,P3,24,24,WORD,никому,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A24-009,P3,24,24,WORD,никто́,NEEDS_RECORDING,,,,"example,item,teaching"
-A24-010,P3,24,24,WORD,ничто́,NEEDS_RECORDING,,,,"example,item,teaching"
-A24-011,P3,24,24,PHRASE,Борис не приходит,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A24-012,P3,24,24,PHRASE,не говорю́,NEEDS_RECORDING,,,,"example,item,teaching"
-A24-013,P3,24,24,PHRASE,не студент,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A24-014,P3,24,24,PHRASE,не́кого спросить,NEEDS_RECORDING,,,,"example,item,teaching"
-A24-015,P3,24,24,PHRASE,Он не студент,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A24-016,P3,24,24,PHRASE,Я не ви́жу кни́гу,NEEDS_RECORDING,,,,"example,item,teaching"
-A24-017,P3,24,"24,26",SENTENCE,В магазин пошёл я,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A24-018,P3,24,24,SENTENCE,В магазин я пошёл,NEEDS_RECORDING,,,course text has no stress mark,teaching
-A24-019,P3,24,24,SENTENCE,Вы говори́те,NEEDS_RECORDING,,,,"example,item,teaching"
-A24-020,P3,24,24,SENTENCE,Меня не надо уговаривать,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A24-021,P3,24,24,SENTENCE,Мне не холодно,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A24-022,P3,24,24,SENTENCE,Не мне холодно,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A24-023,P3,24,24,SENTENCE,Не надо меня уговаривать,NEEDS_RECORDING,,,course text has no stress mark,"example,item,teaching"
-A24-024,P3,24,24,SENTENCE,Я не ви́жу книг,NEEDS_RECORDING,,,,"example,item,teaching"
-A24-025,P3,24,24,SENTENCE,Я не ви́жу э́ту кни́гу,NEEDS_RECORDING,,,,"item,teaching"
+A24-001,P3,24,24,WORD,не,BOUND,rus-f0a589da,не,"owner listen-check MATCH (D35); bound to 6 letter, example or item targets","example,item,reference,teaching"
+A24-002,P3,24,24,WORD,не́кого,NEEDS_RECORDING,,,,"item,reference,teaching"
+A24-003,P3,24,24,WORD,не́кто,NEEDS_RECORDING,,,,"item,reference,teaching"
+A24-004,P3,24,24,WORD,не́что,NEEDS_RECORDING,,,,"reference,teaching"
+A24-005,P3,24,24,WORD,ни,VERIFIED,rus-8e14f567,ни,"owner listen-check MATCH (D35); not bound: no letter, example or item shows this text","reference,teaching"
+A24-006,P3,24,24,WORD,никому,NEEDS_RECORDING,,,course text has no stress mark,"reference,teaching"
+A24-007,P3,24,24,WORD,никто́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A24-008,P3,24,24,WORD,ничто́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A24-009,P3,24,24,PHRASE,Борис не приходит,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A24-010,P3,24,24,PHRASE,не говорю́,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A24-011,P3,24,24,PHRASE,не студент,NEEDS_RECORDING,,,course text has no stress mark,"reference,teaching"
+A24-012,P3,24,24,PHRASE,Он не студент,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A24-013,P3,24,24,PHRASE,Я не ви́жу кни́ги,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A24-014,P3,24,24,PHRASE,Я не ви́жу кни́гу,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A24-015,P3,24,"24,26",SENTENCE,В магазин пошёл я,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A24-016,P3,24,24,SENTENCE,В магазин я пошёл,NEEDS_RECORDING,,,course text has no stress mark,"reference,teaching"
+A24-017,P3,24,24,SENTENCE,Вы говори́те,NEEDS_RECORDING,,,,"example,item,reference,teaching"
+A24-018,P3,24,24,SENTENCE,Меня не надо уговаривать,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A24-019,P3,24,24,SENTENCE,Мне не холодно,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A24-020,P3,24,24,SENTENCE,Не мне холодно,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
+A24-021,P3,24,24,SENTENCE,Не надо меня уговаривать,NEEDS_RECORDING,,,course text has no stress mark,"example,item,reference,teaching"
 A25-001,P3,25,25,WORD,Александр,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
 A25-002,P3,25,25,WORD,Алексей,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
 A25-003,P3,25,25,WORD,Дмитрий,NEEDS_RECORDING,,,course text has no stress mark,"example,teaching"
