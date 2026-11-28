@@ -37,3 +37,19 @@ Keep audit/prep/interim-pm-log.md on branch owner/prep-reports, one entry per ta
 
 ## Hand-back report (when the owner asks, Wednesday)
 Output, under 80 lines: (1) branch heads and CI status for every branch touched; (2) tasks completed with commits and CI runs; (3) every interim decision I1… with its reason; (4) open failures, STOPs and anything left for the PM; (5) the next task you would have run. The owner pastes this to the PM.
+
+## D70 — Decide, don't ask (overrides any instruction above to stop and ask the owner)
+The owner will only ever type "continue". Never ask the owner a question and never wait for a ruling. When a STOP rule fires or a choice is needed, decide it yourself with this table, record it as an I-decision in interim-pm-log.md with the reason, and keep going.
+
+Situation -> decision
+- Test fails because content changed on purpose (counts, ids, wording, plans, digests) -> update the expectation, log old -> new.
+- Test references a retired item/record/example -> retarget to the live item carrying the same guard; if none exists, assert absence. Never delete the test.
+- Guard counts something the data does not mark (flags, links, session placement) -> fix the data to match Units 21-23; never change the guard.
+- Russian with no frozen witness -> remove it. Objective left with fewer than two required checks -> retire it with an OWNER_ACCEPTED "taught by the Penguin book; deferred to S2" row (bounded validator/pin change for that objective only).
+- A claim with no frozen evidence -> REMOVE it (or turn it into a plain exercise instruction).
+- Validator/pin needs changing for one named objective to match a retirement or re-citation -> allowed; record the guard-hash change.
+- Mirror/pin file out of date (content-checks.json, review-copy.json, typed TSV, digests, candidate.json, listen-check locators) -> regenerate.
+- Infrastructure failure (download, 403, runner, environment) -> retry once later; not a strike.
+- Same failure survives two fix attempts -> park that task: push the work to wip/<task>, log exactly what fails and why, and move to the next task in the work order that does not depend on it. If nothing independent remains, stop the session and write the hand-back report.
+
+Hard limits still apply even under D70 (never decide these yourself; park and log): merging into main or marking PR #67 ready; loosening a guard for more than one named objective or for a whole unit; deleting a test class; freezing new sources; composing, translating or editing Russian; changing owner listen-check decisions; spending ElevenLabs or other credits; reviewing your own block as the independent reviewer.
